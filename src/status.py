@@ -71,6 +71,40 @@ RULES: dict[tuple[int, int, int], dict] = {
         "playoff_relegate": (),
         "auto_relegate":    (22, 24),
     },
+
+    # ── COVID / expulsion season overrides ──────────────────────────────────
+    # 2019/20 League One: Bury FC expelled Aug 2019 → 23 clubs, 3 relegated
+    (3, 2020, 2020): {
+        "total_clubs":      23,
+        "auto_promote":     (2, 2),
+        "playoff_promote":  (3, 7),
+        "playoff_relegate": (),
+        "auto_relegate":    (21, 23),
+    },
+    # 2019/20 League Two: only Macclesfield Town relegated (kept 24 clubs)
+    (4, 2020, 2020): {
+        "total_clubs":      24,
+        "auto_promote":     (2, 2),
+        "playoff_promote":  (3, 7),
+        "playoff_relegate": (),
+        "auto_relegate":    (24, 24),
+    },
+    # 2020/21 National League: 22 clubs (Macclesfield expelled), 0 relegated
+    (5, 2021, 2021): {
+        "total_clubs":      22,
+        "auto_promote":     (),
+        "playoff_promote":  (2, 5),
+        "playoff_relegate": (),
+        "auto_relegate":    (),
+    },
+    # 2021/22 National League: 23 clubs (cascading COVID effects), 3 relegated
+    (5, 2022, 2022): {
+        "total_clubs":      23,
+        "auto_promote":     (),
+        "playoff_promote":  (2, 5),
+        "playoff_relegate": (),
+        "auto_relegate":    (21, 23),
+    },
 }
 # fmt: on
 
