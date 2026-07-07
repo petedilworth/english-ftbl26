@@ -30,6 +30,14 @@ python src/pipeline.py --season-start 2010 --season-end 2024
 
 The pipeline prints a report of any unresolved club names at the end. Add missing entries to `club_master.csv` and re-run to resolve them.
 
+Note: SSL certificate verification is disabled for football-data.co.uk downloads — the site's certificate chain trips some Windows/Anaconda setups. This is limited to that one known host.
+
+## Run the tests
+
+```bash
+python -m pytest tests/
+```
+
 ## Project structure
 
 ```
@@ -76,6 +84,8 @@ One row per club per season.
 | `source` | TEXT | e.g. `football-data.co.uk/E0/9394` |
 
 **Status values:** `Champions` · `Promoted` · `Play-off Promoted` · `Stayed` · `Play-off Relegated` · `Relegated`
+
+Statuses are first assigned by league position using the rules config, then **reconciled against the club's actual tier the following season** — so `Play-off Promoted` means the club actually won the play-offs, not just qualified. The latest season keeps provisional positional statuses (play-off eligibility) until next season's data exists. The table also stores `played, won, drawn, lost, gf, ga, gd` per club-season.
 
 ### `club_trajectory`
 Derived table — rebuilt on every pipeline run.

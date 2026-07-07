@@ -19,7 +19,7 @@ DIVISION_NAMES: dict = {
     2: {range(1994, 2004): "First Division", range(2004, 9999): "Championship"},
     3: {range(1994, 2004): "Second Division", range(2004, 9999): "League One"},
     4: {range(1994, 2004): "Third Division", range(2004, 9999): "League Two"},
-    5: {range(2006, 9999): "National League"},
+    5: {range(2006, 2016): "Conference Premier", range(2016, 9999): "National League"},
 }
 
 # Expected minimum matches per season (used for incomplete-season detection)
@@ -44,9 +44,9 @@ def load_csv(path: Path) -> pd.DataFrame | None:
         logger.warning("Missing or empty file: %s", path)
         return None
 
-    for encoding in ("utf-8", "latin-1"):
+    for encoding in ("utf-8", "latin-1", "cp1252"):
         try:
-            df = pd.read_csv(path, encoding=encoding)
+            df = pd.read_csv(path, encoding=encoding, on_bad_lines="skip")
             break
         except Exception as exc:
             logger.debug("Encoding %s failed for %s: %s", encoding, path.name, exc)

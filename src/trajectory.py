@@ -52,7 +52,8 @@ GROUP BY s.club_id
 def _compute_tier_streaks(conn: sqlite3.Connection) -> dict[str, int]:
     """
     For each club, count consecutive seasons at their current tier counting
-    backwards from their most recent season in the DB.
+    backwards from their most recent season in the DB. A gap in seasons
+    (club absent from Tiers 1-5) breaks the streak.
     Returns {club_id: streak}.
     """
     rows = conn.execute(
@@ -66,29 +67,33 @@ def _compute_tier_streaks(conn: sqlite3.Connection) -> dict[str, int]:
     ).fetchall()
 
     streaks: dict[str, int] = {}
+    done: set[str] = set()
     current_club = None
-    current_tier_for_club = None
-    streak = 0
+    prev_season = None
 
-    for club_id, _season, tier, current_tier in rows:
+    for club_id, season, tier, current_tier in rows:
         if club_id != current_club:
-            # Save previous club's streak
-            if current_club is not None:
-                streaks[current_club] = streak
             current_club = club_id
-            current_tier_for_club = current_tier
-            streak = 0
+            prev_season = None
+            streaks[club_id] = 0
+            # Stale club_master detection: most recent tier should match
+            if tier != current_tier:
+                logger.warning(
+                    "club_master.current_tier=%s for %s but most recent "
+                    "standings tier is %s — streak will be 0; "
+                    "update club_master.csv",
+                    current_tier, club_id, tier,
+                )
 
-        if tier == current_tier_for_club:
-            streak += 1
+        if club_id in done:
+            continue
+
+        gap = prev_season is not None and prev_season - season > 1
+        if tier == current_tier and not gap:
+            streaks[club_id] += 1
+            prev_season = season
         else:
-            # Streak broken — stop counting back for this club
-            streaks[club_id] = streak
-            current_club = None  # skip remaining rows for this club
-
-    # Flush last club
-    if current_club is not None and current_club not in streaks:
-        streaks[current_club] = streak
+            done.add(club_id)
 
     return streaks
 
