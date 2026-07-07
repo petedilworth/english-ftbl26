@@ -33,6 +33,9 @@ CREATE TABLE IF NOT EXISTS club_master (
 def seed_club_master(conn: sqlite3.Connection, csv_path: Path) -> None:
     """
     Create club_master table (if absent) and upsert all rows from club_master.csv.
+    Rows in the table that are no longer in the CSV are removed, so the CSV is
+    the single source of truth (stale hand-added entries otherwise persist and
+    cause name-variant collisions).
     """
     conn.execute(CREATE_CLUB_MASTER_SQL)
     conn.commit()
@@ -42,6 +45,29 @@ def seed_club_master(conn: sqlite3.Connection, csv_path: Path) -> None:
     missing = required - set(df.columns)
     if missing:
         raise ValueError(f"club_master.csv missing columns: {missing}")
+
+    csv_ids = {cid.strip() for cid in df["club_id"]}
+    db_ids = {row[0] for row in conn.execute("SELECT club_id FROM club_master")}
+    stale = sorted(db_ids - csv_ids)
+    if stale:
+        logger.warning(
+            "Removing %d club_master row(s) no longer in club_master.csv: %s",
+            len(stale), ", ".join(stale),
+        )
+        placeholders = ",".join("?" * len(stale))
+        has_standings = conn.execute(
+            "SELECT 1 FROM sqlite_master WHERE type='table' AND name='standings'"
+        ).fetchone()
+        if has_standings:
+            # Detach references first (FK constraint); rows re-resolve on this run
+            conn.execute(
+                f"UPDATE standings SET club_id = NULL WHERE club_id IN ({placeholders})",
+                stale,
+            )
+        conn.execute(
+            f"DELETE FROM club_master WHERE club_id IN ({placeholders})", stale
+        )
+        conn.commit()
 
     cursor = conn.cursor()
     for _, row in df.iterrows():
