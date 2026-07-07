@@ -8,15 +8,20 @@ import time
 from pathlib import Path
 
 import requests
+import urllib3
+
+# football-data.co.uk's certificate chain trips some Windows/Anaconda setups;
+# verification is disabled for this one known host.
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 logger = logging.getLogger(__name__)
 
 BASE_URL = "https://www.football-data.co.uk/mmz4281"
 
-# Tier 5 (E4) data only exists from this season onward on the site
+# Tier 5 (EC = Conference/National League) data starts 2005/06 on the site
 TIER5_FIRST_SEASON = 2006
 
-TIER_TO_CODE = {1: "E0", 2: "E1", 3: "E2", 4: "E3", 5: "E4"}
+TIER_TO_CODE = {1: "E0", 2: "E1", 3: "E2", 4: "E3", 5: "EC"}
 
 
 def season_to_str(season_end_year: int) -> str:
@@ -67,7 +72,7 @@ def download_csv(
     client = session or requests
 
     try:
-        resp = client.get(url, timeout=30)
+        resp = client.get(url, timeout=30, verify=False)
     except requests.RequestException as exc:
         logger.error("Network error fetching %s: %s", url, exc)
         return None
@@ -80,12 +85,16 @@ def download_csv(
         return None
 
     if resp.status_code != 200:
-        logger.error("HTTP %s for %s", resp.status_code, url)
+        logger.error("HTTP %s for %s — skipping", resp.status_code, url)
         return None
 
     content = resp.content
     if len(content) < 10:
         logger.warning("Empty/tiny response for %s — skipping", url)
+        return None
+
+    if content.lstrip().startswith(b"<"):
+        logger.warning("HTML error page returned for %s — skipping", url)
         return None
 
     raw_dir.mkdir(parents=True, exist_ok=True)
@@ -114,6 +123,7 @@ def download_all(
 
     downloaded: list[Path] = []
     session = requests.Session()
+    session.verify = False
     session.headers.update({"User-Agent": "english-football-db/1.0"})
 
     total = sum(

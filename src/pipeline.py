@@ -43,6 +43,13 @@ CREATE TABLE IF NOT EXISTS standings (
     club_id          TEXT,
     club_name        TEXT NOT NULL,
     position         INT,
+    played           INT,
+    won              INT,
+    drawn            INT,
+    lost             INT,
+    gf               INT,
+    ga               INT,
+    gd               INT,
     points           INT,
     status           TEXT,
     source           TEXT,
@@ -50,6 +57,18 @@ CREATE TABLE IF NOT EXISTS standings (
     FOREIGN KEY (club_id) REFERENCES club_master(club_id)
 );
 """
+
+STANDINGS_STAT_COLUMNS = ["played", "won", "drawn", "lost", "gf", "ga", "gd"]
+
+
+def _migrate_standings_columns(conn: sqlite3.Connection) -> None:
+    """Add stat columns to standings tables created before they existed."""
+    existing = {row[1] for row in conn.execute("PRAGMA table_info(standings)")}
+    for col in STANDINGS_STAT_COLUMNS:
+        if col not in existing:
+            conn.execute(f"ALTER TABLE standings ADD COLUMN {col} INT")
+            logger.info("Migrated standings table: added column %s", col)
+    conn.commit()
 
 logger = logging.getLogger(__name__)
 
@@ -107,6 +126,13 @@ def _process_season(
             club_id,
             raw_name,
             int(row["position"]),
+            int(row["played"]),
+            int(row["won"]),
+            int(row["drawn"]),
+            int(row["lost"]),
+            int(row["gf"]),
+            int(row["ga"]),
+            int(row["gd"]),
             int(row["points"]),
             row["status"],
             source,
@@ -117,8 +143,9 @@ def _process_season(
             """
             INSERT OR REPLACE INTO standings
                 (season_end_year, tier, division_name, club_id, club_name,
-                 position, points, status, source)
-            VALUES (?,?,?,?,?,?,?,?,?)
+                 position, played, won, drawn, lost, gf, ga, gd,
+                 points, status, source)
+            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
             """,
             rows,
         )
@@ -129,6 +156,61 @@ def _process_season(
         return 0
 
     return len(rows)
+
+
+def _reconcile_statuses(conn: sqlite3.Connection) -> None:
+    """
+    Correct positional status assignments using observed movement.
+
+    Play-off positions mark eligibility, but only the winner goes up; a club's
+    actual tier next season is ground truth. Rows for the latest season, and
+    clubs with no row the following season (folded or dropped below Tier 5),
+    keep their positional status.
+    """
+    pairs = conn.execute(
+        """
+        SELECT s.rowid, s.club_id, s.season_end_year, s.tier, s.status, n.tier
+        FROM standings s
+        JOIN standings n
+          ON n.club_id = s.club_id
+         AND n.season_end_year = s.season_end_year + 1
+        WHERE s.club_id IS NOT NULL
+        """
+    ).fetchall()
+
+    updates: list[tuple[str, int]] = []
+    for rowid, club_id, season, tier, status_val, next_tier in pairs:
+        moved_up = next_tier < tier
+        moved_down = next_tier > tier
+
+        if status_val == "Play-off Promoted" and not moved_up:
+            updates.append(("Stayed", rowid))
+        elif status_val == "Promoted" and not moved_up:
+            logger.warning(
+                "%s marked Promoted in %d (tier %d) but did not move up — "
+                "setting Stayed (check RULES)", club_id, season, tier)
+            updates.append(("Stayed", rowid))
+        elif status_val in ("Relegated", "Play-off Relegated") and not moved_down:
+            logger.warning(
+                "%s marked %s in %d (tier %d) but did not move down — "
+                "setting Stayed (reprieve or RULES gap)",
+                club_id, status_val, season, tier)
+            updates.append(("Stayed", rowid))
+        elif status_val == "Stayed" and moved_up:
+            logger.warning(
+                "%s marked Stayed in %d (tier %d) but moved up — "
+                "setting Promoted (check RULES)", club_id, season, tier)
+            updates.append(("Promoted", rowid))
+        elif status_val == "Stayed" and moved_down:
+            logger.warning(
+                "%s marked Stayed in %d (tier %d) but moved down — "
+                "setting Relegated (check RULES)", club_id, season, tier)
+            updates.append(("Relegated", rowid))
+
+    if updates:
+        conn.executemany("UPDATE standings SET status = ? WHERE rowid = ?", updates)
+        conn.commit()
+    logger.info("Status reconciliation: %d rows corrected", len(updates))
 
 
 def _print_unresolved_report(unresolved_map: dict[str, list[str]]) -> None:
@@ -174,6 +256,7 @@ def run(
     conn.execute("PRAGMA foreign_keys = ON")
     conn.execute(CREATE_STANDINGS_SQL)
     conn.commit()
+    _migrate_standings_columns(conn)
 
     entities.seed_club_master(conn, club_master_csv)
     resolver = entities.build_resolver(conn)
@@ -207,6 +290,8 @@ def run(
         total_rows += n
 
     logger.info("Inserted/updated %d standings rows total", total_rows)
+
+    _reconcile_statuses(conn)
 
     trajectory.rebuild_trajectory(conn)
 

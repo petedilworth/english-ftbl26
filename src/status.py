@@ -12,16 +12,26 @@ import pandas as pd
 
 logger = logging.getLogger(__name__)
 
+# All position ranges verified against Wikipedia season pages, including the
+# 1995 restructure (PL 22→20 clubs, Third Division 22→24) and COVID seasons.
 # fmt: off
 RULES: dict[tuple[int, int, int], dict] = {
     # ── Tier 1: Premier League ──────────────────────────────────────────────
-    # 1993/94 and 1994/95: 22 clubs; 4 relegated as part of PL contraction
-    (1, 1994, 1995): {
+    # 1993/94: 22 clubs, bottom 3 relegated
+    (1, 1994, 1994): {
         "total_clubs":      22,
         "auto_promote":     (),
         "playoff_promote":  (),
         "playoff_relegate": (),
         "auto_relegate":    (20, 22),
+    },
+    # 1994/95: 22 clubs, FOUR relegated to shrink the league to 20
+    (1, 1995, 1995): {
+        "total_clubs":      22,
+        "auto_promote":     (),
+        "playoff_promote":  (),
+        "playoff_relegate": (),
+        "auto_relegate":    (19, 22),
     },
     # 1995/96 onward: 20 clubs, bottom 3 relegated
     (1, 1996, 2099): {
@@ -33,43 +43,161 @@ RULES: dict[tuple[int, int, int], dict] = {
     },
 
     # ── Tier 2: First Division / Championship ───────────────────────────────
-    # Top 2 auto-promoted; positions 3–6 play off; bottom 3 relegated
-    (2, 1994, 2099): {
+    (2, 1994, 1994): {
         "total_clubs":      24,
-        "auto_promote":     (2, 2),    # positions 2..2 (pos 1 = Champions = auto-promoted)
+        "auto_promote":     (2, 2),    # pos 1 = Champions (also promoted)
+        "playoff_promote":  (3, 6),
+        "playoff_relegate": (),
+        "auto_relegate":    (22, 24),
+    },
+    # 1994/95: PL contraction — champion only auto; play-offs 2–5; 4 down
+    (2, 1995, 1995): {
+        "total_clubs":      24,
+        "auto_promote":     (),
+        "playoff_promote":  (2, 5),
+        "playoff_relegate": (),
+        "auto_relegate":    (21, 24),
+    },
+    (2, 1996, 2099): {
+        "total_clubs":      24,
+        "auto_promote":     (2, 2),
         "playoff_promote":  (3, 6),
         "playoff_relegate": (),
         "auto_relegate":    (22, 24),
     },
 
     # ── Tier 3: Second Division / League One ────────────────────────────────
-    # Top 2 auto-promoted; positions 3–7 play off; bottom 4 relegated
-    (3, 1994, 2099): {
+    (3, 1994, 1994): {
         "total_clubs":      24,
         "auto_promote":     (2, 2),
-        "playoff_promote":  (3, 7),
+        "playoff_promote":  (3, 6),
         "playoff_relegate": (),
         "auto_relegate":    (21, 24),
+    },
+    # 1994/95: restructure cascade — champion only auto; play-offs 2–5; 5 down
+    (3, 1995, 1995): {
+        "total_clubs":      24,
+        "auto_promote":     (),
+        "playoff_promote":  (2, 5),
+        "playoff_relegate": (),
+        "auto_relegate":    (20, 24),
+    },
+    (3, 1996, 2099): {
+        "total_clubs":      24,
+        "auto_promote":     (2, 2),
+        "playoff_promote":  (3, 6),
+        "playoff_relegate": (),
+        "auto_relegate":    (21, 24),
+    },
+    # 2019/20 COVID: Bury expelled (23 clubs), 3 relegated not 4
+    (3, 2020, 2020): {
+        "total_clubs":      23,
+        "auto_promote":     (2, 2),
+        "playoff_promote":  (3, 6),
+        "playoff_relegate": (),
+        "auto_relegate":    (21, 23),
     },
 
     # ── Tier 4: Third Division / League Two ─────────────────────────────────
-    # Same structure as Tier 3
-    (4, 1994, 2099): {
-        "total_clubs":      24,
+    # 1993/94: 22 clubs, top 3 auto + play-offs 4–7; 0 relegated
+    # (Conference champions Kidderminster denied on ground grading)
+    (4, 1994, 1994): {
+        "total_clubs":      22,
+        "auto_promote":     (2, 3),
+        "playoff_promote":  (4, 7),
+        "playoff_relegate": (),
+        "auto_relegate":    (),
+    },
+    # 1994/95: 22 clubs, top 2 auto + play-offs 3–6; 0 relegated
+    # (Conference champions Macclesfield denied on ground grading)
+    (4, 1995, 1995): {
+        "total_clubs":      22,
         "auto_promote":     (2, 2),
-        "playoff_promote":  (3, 7),
+        "playoff_promote":  (3, 6),
+        "playoff_relegate": (),
+        "auto_relegate":    (),
+    },
+    # 1995/96: 24 clubs; 0 relegated (Stevenage denied; Torquay reprieved)
+    (4, 1996, 1996): {
+        "total_clubs":      24,
+        "auto_promote":     (2, 3),
+        "playoff_promote":  (4, 7),
+        "playoff_relegate": (),
+        "auto_relegate":    (),
+    },
+    # 1996/97–2001/02: 1 relegated to the Conference
+    (4, 1997, 2002): {
+        "total_clubs":      24,
+        "auto_promote":     (2, 3),
+        "playoff_promote":  (4, 7),
+        "playoff_relegate": (),
+        "auto_relegate":    (24, 24),
+    },
+    # 2002/03 onward: 2 relegated
+    (4, 2003, 2099): {
+        "total_clubs":      24,
+        "auto_promote":     (2, 3),
+        "playoff_promote":  (4, 7),
+        "playoff_relegate": (),
+        "auto_relegate":    (23, 24),
+    },
+    # 2019/20 COVID: only Macclesfield relegated (Stevenage reprieved)
+    (4, 2020, 2020): {
+        "total_clubs":      24,
+        "auto_promote":     (2, 3),
+        "playoff_promote":  (4, 7),
+        "playoff_relegate": (),
+        "auto_relegate":    (24, 24),
+    },
+
+    # ── Tier 5: Conference / National League ────────────────────────────────
+    # (data starts 2005/06) 2005/06: 22 clubs, play-offs 2–5, 3 relegated
+    (5, 2006, 2006): {
+        "total_clubs":      22,
+        "auto_promote":     (),        # position 1 = Champions handles it
+        "playoff_promote":  (2, 5),
+        "playoff_relegate": (),
+        "auto_relegate":    (20, 22),
+    },
+    # 2006/07–2016/17: 24 clubs, play-offs 2–5, 4 relegated
+    (5, 2007, 2017): {
+        "total_clubs":      24,
+        "auto_promote":     (),
+        "playoff_promote":  (2, 5),
         "playoff_relegate": (),
         "auto_relegate":    (21, 24),
     },
-
-    # ── Tier 5: National League (Conference) ────────────────────────────────
-    # 1 auto-promoted; positions 2–3 play off; bottom 3 relegated to Tier 6
-    (5, 2006, 2099): {
+    # 2017/18 onward: play-offs expanded to positions 2–7
+    (5, 2018, 2099): {
         "total_clubs":      24,
-        "auto_promote":     (),        # position 1 = Champions handles it
-        "playoff_promote":  (2, 3),
+        "auto_promote":     (),
+        "playoff_promote":  (2, 7),
+        "playoff_relegate": (),
+        "auto_relegate":    (21, 24),
+    },
+    # 2019/20 COVID (curtailed, PPG): 3 relegated not 4
+    (5, 2020, 2020): {
+        "total_clubs":      24,
+        "auto_promote":     (),
+        "playoff_promote":  (2, 7),
         "playoff_relegate": (),
         "auto_relegate":    (22, 24),
+    },
+    # 2020/21: 23 clubs (Macclesfield expelled), 0 relegated (Tier 6 voided)
+    (5, 2021, 2021): {
+        "total_clubs":      23,
+        "auto_promote":     (),
+        "playoff_promote":  (2, 7),
+        "playoff_relegate": (),
+        "auto_relegate":    (),
+    },
+    # 2021/22: 23 clubs, 3 relegated
+    (5, 2022, 2022): {
+        "total_clubs":      23,
+        "auto_promote":     (),
+        "playoff_promote":  (2, 7),
+        "playoff_relegate": (),
+        "auto_relegate":    (21, 23),
     },
 }
 # fmt: on
