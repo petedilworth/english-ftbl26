@@ -66,7 +66,7 @@ Seeded from `club_master.csv`. Edit this file to add name variants or new clubs,
 | `canonical_name` | TEXT | Current official name |
 | `name_variants` | TEXT | JSON array of known source spellings |
 | `lineage_parent_id` | TEXT | For successor clubs (AFC Wimbledon → Wimbledon FC) |
-| `current_tier` | INT | 0 = defunct/out of scope |
+| `current_tier` | INT | Informational only — not used by the pipeline. `club_trajectory.current_tier` is computed from each club's most recent `standings` row instead, so it never goes stale. |
 
 ### `standings`
 One row per club per season.
