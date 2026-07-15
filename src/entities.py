@@ -5,6 +5,7 @@ Manage the club_master table and provide name-resolution lookups.
 import json
 import logging
 import sqlite3
+import unicodedata
 from pathlib import Path
 
 import pandas as pd
@@ -117,12 +118,22 @@ def build_resolver(conn: sqlite3.Connection) -> dict[str, str]:
 
 def _normalize(name: str) -> str:
     """
-    Normalize a club name for lookup: lowercase, straighten curly
-    apostrophes, and collapse all whitespace (handles non-breaking
-    spaces, tabs, and doubled spaces in source CSVs).
+    Normalize a club name for lookup so cosmetic differences in the source
+    data can't break resolution:
+      - straighten curly apostrophes
+      - drop zero-width / format characters (ZWSP, BOM, soft hyphen, etc.)
+        that survive ordinary whitespace stripping
+      - turn every kind of Unicode space into a plain space
+      - lowercase and collapse runs of whitespace
     """
     name = name.replace("‘", "'").replace("’", "'")
-    return " ".join(name.lower().split())
+    cleaned = []
+    for ch in name:
+        category = unicodedata.category(ch)
+        # Treat format chars (ZWSP, ZWNJ, BOM, ...) and every Unicode space
+        # as a word boundary — collapsing below turns runs into one space.
+        cleaned.append(" " if category in ("Cf", "Zs") else ch)
+    return " ".join("".join(cleaned).lower().split())
 
 
 def _add_variant(resolver: dict[str, str], name: str, club_id: str) -> None:
