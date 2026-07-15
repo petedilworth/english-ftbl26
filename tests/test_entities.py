@@ -53,6 +53,22 @@ def test_stale_rows_are_pruned(tmp_path):
     assert resolve_name("Beta", resolver) is None
 
 
+def test_resolution_normalizes_invisible_characters(tmp_path):
+    csv = tmp_path / "cm.csv"
+    _write_csv(
+        csv,
+        ['kings-lynn-town-fc,King\'s Lynn Town,"[""Kings Lynn"",""King\'s Lynn""]",,5\n'],
+    )
+    conn = sqlite3.connect(":memory:")
+    seed_club_master(conn, csv)
+    resolver = build_resolver(conn)
+    assert resolve_name("Kings Lynn", resolver) == "kings-lynn-town-fc"
+    assert resolve_name("Kings  Lynn", resolver) == "kings-lynn-town-fc"  # double space
+    assert resolve_name("Kings Lynn", resolver) == "kings-lynn-town-fc"  # NBSP
+    assert resolve_name("King’s Lynn", resolver) == "kings-lynn-town-fc"  # curly apostrophe
+    assert resolve_name(" kings lynn ", resolver) == "kings-lynn-town-fc"
+
+
 def test_season_override_wimbledon(tmp_path):
     csv = tmp_path / "cm.csv"
     _write_csv(

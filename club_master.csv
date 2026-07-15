@@ -10,6 +10,7 @@ aston-villa-fc,Aston Villa,"[""Aston Villa""]",,1
 barnet-fc,Barnet,"[""Barnet""]",,5
 barnsley-fc,Barnsley,"[""Barnsley""]",,4
 barrow-afc,Barrow,"[""Barrow"",""Barrow AFC""]",,4
+bath-city-fc,Bath City,"[""Bath City""]",,6
 birmingham-city-fc,Birmingham City,"[""Birmingham"",""Birmingham City""]",,3
 blackburn-rovers-fc,Blackburn Rovers,"[""Blackburn"",""Blackburn Rovers""]",,2
 blackpool-fc,Blackpool,"[""Blackpool""]",,4
@@ -17,8 +18,10 @@ bolton-wanderers-fc,Bolton Wanderers,"[""Bolton"",""Bolton Wanderers""]",,4
 boreham-wood-fc,Boreham Wood,"[""Boreham Wood""]",,5
 boston-united-fc,Boston United,"[""Boston"",""Boston United"",""Boston Utd""]",,6
 bournemouth-fc,Bournemouth,"[""Bournemouth"",""AFC Bournemouth""]",,1
+brackley-town-fc,Brackley Town,"[""Brackley Town"",""Brackley""]",,5
 bradford-city-fc,Bradford City,"[""Bradford"",""Bradford City""]",,4
 bradford-park-avenue-fc,Bradford Park Avenue,"[""Bradford PA"",""Bradford Park Avenue""]",,5
+braintree-town-fc,Braintree Town,"[""Braintree Town"",""Braintree""]",,5
 brentford-fc,Brentford,"[""Brentford""]",,1
 brighton-and-hove-albion-fc,Brighton & Hove Albion,"[""Brighton"",""Brighton & HA"",""Brighton and Hove"",""Brighton & Hove Albion""]",,1
 bristol-city-fc,Bristol City,"[""Bristol City""]",,3
@@ -28,6 +31,7 @@ burnley-fc,Burnley,"[""Burnley""]",,2
 burton-albion-fc,Burton Albion,"[""Burton"",""Burton Albion""]",,4
 bury-fc,Bury,"[""Bury""]",,0
 cambridge-united-fc,Cambridge United,"[""Cambridge"",""Cambridge United""]",,3
+canvey-island-fc,Canvey Island,"[""Canvey Island""]",,6
 cardiff-city-fc,Cardiff City,"[""Cardiff"",""Cardiff City""]",,2
 carlisle-united-fc,Carlisle United,"[""Carlisle"",""Carlisle United""]",,4
 charlton-athletic-fc,Charlton Athletic,"[""Charlton"",""Charlton Athletic"",""Charlton Ath""]",,3
@@ -35,6 +39,7 @@ chelsea-fc,Chelsea,"[""Chelsea""]",,1
 cheltenham-town-fc,Cheltenham Town,"[""Cheltenham"",""Cheltenham Town""]",,4
 chester-city-fc,Chester City,"[""Chester"",""Chester City""]",,0
 chesterfield-fc,Chesterfield,"[""Chesterfield""]",,5
+chorley-fc,Chorley,"[""Chorley""]",,6
 colchester-united-fc,Colchester United,"[""Colchester"",""Colchester United""]",,4
 coventry-city-fc,Coventry City,"[""Coventry"",""Coventry City""]",,2
 crawley-town-fc,Crawley Town,"[""Crawley"",""Crawley Town""]",,4
@@ -42,13 +47,18 @@ crewe-alexandra-fc,Crewe Alexandra,"[""Crewe"",""Crewe Alex"",""Crewe Alexandra"
 crystal-palace-fc,Crystal Palace,"[""Crystal Palace""]",,2
 dagenham-and-redbridge-fc,Dagenham & Redbridge,"[""Dag & Red"",""Dag and Red"",""Dagenham"",""Dagenham & Red"",""Dagenham & Redbridge""]",,5
 darlington-fc,Darlington,"[""Darlington""]",,6
+dartford-fc,Dartford,"[""Dartford""]",,6
 derby-county-fc,Derby County,"[""Derby"",""Derby County""]",,3
 doncaster-rovers-fc,Doncaster Rovers,"[""Doncaster"",""Doncaster Rovers""]",,4
+dorking-wanderers-fc,Dorking Wanderers,"[""Dorking Wanderers"",""Dorking""]",,6
 dover-athletic-fc,Dover Athletic,"[""Dover"",""Dover Athletic""]",,5
+droylsden-fc,Droylsden,"[""Droylsden""]",,6
+eastbourne-borough-fc,Eastbourne Borough,"[""Eastbourne Borough"",""Eastbourne Boro""]",,6
 eastleigh-fc,Eastleigh,"[""Eastleigh""]",,5
 ebbsfleet-united-fc,Ebbsfleet United,"[""Ebbsfleet"",""Ebbsfleet United"",""Gravesend"",""Gravesend & Northfleet"",""Gravesend Northfleet""]",,5
 everton-fc,Everton,"[""Everton""]",,1
 exeter-city-fc,Exeter City,"[""Exeter"",""Exeter City""]",,3
+farsley-celtic-fc,Farsley Celtic,"[""Farsley Celtic"",""Farsley""]",,6
 fc-halifax-town,FC Halifax Town,"[""Halifax"",""Halifax Town"",""FC Halifax Town""]",,5
 fleetwood-town-fc,Fleetwood Town,"[""Fleetwood"",""Fleetwood Town""]",,4
 forest-green-rovers-fc,Forest Green Rovers,"[""Forest Green"",""Forest Green Rovers""]",,4
@@ -62,23 +72,26 @@ guiseley-afc,Guiseley,"[""Guiseley""]",,5
 harrogate-town-afc,Harrogate Town,"[""Harrogate"",""Harrogate Town""]",,4
 hartlepool-united-fc,Hartlepool United,"[""Hartlepool"",""Hartlepool United"",""Hartlepool Utd""]",,5
 havant-and-waterlooville-fc,Havant & Waterlooville,"[""Havant & Waterlooville"",""Havant & W"",""Havant and Waterlooville""]",,5
+hayes-and-yeading-united-fc,Hayes & Yeading United,"[""Hayes & Yeading"",""Hayes and Yeading"",""Hayes & Yeading United""]",,6
 hereford-united-fc,Hereford United,"[""Hereford"",""Hereford United""]",,0
 histon-fc,Histon,"[""Histon""]",,5
 huddersfield-town-fc,Huddersfield Town,"[""Huddersfield"",""Huddersfield Town""]",,3
 hull-city-fc,Hull City,"[""Hull"",""Hull City""]",,3
+hyde-united-fc,Hyde United,"[""Hyde United"",""Hyde""]",,6
 ipswich-town-fc,Ipswich Town,"[""Ipswich"",""Ipswich Town""]",,1
 kettering-town-fc,Kettering Town,"[""Kettering"",""Kettering Town""]",,5
 kidderminster-harriers-fc,Kidderminster Harriers,"[""Kidderminster"",""Kidderminster H"",""Kidderminster Harriers""]",,5
 kings-lynn-town-fc,King's Lynn Town,"[""King's Lynn"",""Kings Lynn"",""King's Lynn Town""]",,5
 leeds-united-fc,Leeds United,"[""Leeds"",""Leeds United"",""Leeds Utd""]",,2
 leicester-city-fc,Leicester City,"[""Leicester"",""Leicester City""]",,2
+lewes-fc,Lewes,"[""Lewes""]",,6
 leyton-orient-fc,Leyton Orient,"[""Leyton Orient"",""Orient""]",,4
 lincoln-city-fc,Lincoln City,"[""Lincoln"",""Lincoln City""]",,3
 liverpool-fc,Liverpool,"[""Liverpool""]",,1
 luton-town-fc,Luton Town,"[""Luton"",""Luton Town""]",,3
 macclesfield-town-fc,Macclesfield Town,"[""Macclesfield"",""Macclesfield Town""]",,0
-maidstone-united-fc,Maidstone United,"[""Maidstone"",""Maidstone United""]",,5
 maidenhead-united-fc,Maidenhead United,"[""Maidenhead"",""Maidenhead United""]",,5
+maidstone-united-fc,Maidstone United,"[""Maidstone"",""Maidstone United""]",,5
 manchester-city-fc,Manchester City,"[""Man City"",""Manchester City""]",,1
 manchester-united-fc,Manchester United,"[""Man United"",""Man Utd"",""Manchester Utd"",""Manchester United""]",,1
 mansfield-town-fc,Mansfield Town,"[""Mansfield"",""Mansfield Town""]",,4
@@ -88,11 +101,15 @@ mk-dons-fc,MK Dons,"[""MK Dons"",""Milton Keynes Dons""]",,3
 morecambe-fc,Morecambe,"[""Morecambe""]",,4
 newcastle-united-fc,Newcastle United,"[""Newcastle"",""Newcastle United"",""Newcastle Utd""]",,1
 newport-county-fc,Newport County,"[""Newport"",""Newport County""]",,4
+north-ferriby-united-fc,North Ferriby United,"[""North Ferriby"",""North Ferriby United"",""North Ferriby Utd""]",,0
 northampton-town-fc,Northampton Town,"[""Northampton"",""Northampton Town""]",,4
+northwich-victoria-fc,Northwich Victoria,"[""Northwich"",""Northwich Victoria""]",,6
 norwich-city-fc,Norwich City,"[""Norwich"",""Norwich City""]",,2
 nottingham-forest-fc,Nottingham Forest,"[""Nottm Forest"",""Nott'm Forest"",""Nottingham Forest""]",,2
 notts-county-fc,Notts County,"[""Notts County"",""Notts Co""]",,5
+nuneaton-town-fc,Nuneaton Town,"[""Nuneaton"",""Nuneaton Town"",""Nuneaton Borough""]",,6
 oldham-athletic-fc,Oldham Athletic,"[""Oldham"",""Oldham Athletic"",""Oldham Ath""]",,5
+oxford-city-fc,Oxford City,"[""Oxford City""]",,6
 oxford-united-fc,Oxford United,"[""Oxford"",""Oxford United"",""Oxford Utd""]",,3
 peterborough-united-fc,Peterborough United,"[""Peterborough"",""Peterborough United"",""Peterboro""]",,3
 plymouth-argyle-fc,Plymouth Argyle,"[""Plymouth"",""Plymouth Argyle""]",,2
@@ -114,6 +131,9 @@ shrewsbury-town-fc,Shrewsbury Town,"[""Shrewsbury"",""Shrewsbury Town""]",,3
 solihull-moors-fc,Solihull Moors,"[""Solihull Moors"",""Solihull""]",,5
 southampton-fc,Southampton,"[""Southampton""]",,2
 southend-united-fc,Southend United,"[""Southend"",""Southend United"",""Southend Utd""]",,5
+southport-fc,Southport,"[""Southport""]",,6
+st-albans-city-fc,St Albans City,"[""St. Albans"",""St Albans"",""St Albans City""]",,6
+stafford-rangers-fc,Stafford Rangers,"[""Stafford Rangers"",""Stafford""]",,6
 stevenage-fc,Stevenage,"[""Stevenage"",""Stevenage Borough""]",,4
 stockport-county-fc,Stockport County,"[""Stockport"",""Stockport County""]",,4
 stoke-city-fc,Stoke City,"[""Stoke"",""Stoke City""]",,3
@@ -125,9 +145,11 @@ tamworth-fc,Tamworth,"[""Tamworth""]",,5
 torquay-united-fc,Torquay United,"[""Torquay"",""Torquay United""]",,5
 tottenham-hotspur-fc,Tottenham Hotspur,"[""Tottenham"",""Spurs"",""Tottenham Hotspur"",""Tottenham H""]",,1
 tranmere-rovers-fc,Tranmere Rovers,"[""Tranmere"",""Tranmere Rovers""]",,4
+truro-city-fc,Truro City,"[""Truro"",""Truro City""]",,5
 walsall-fc,Walsall,"[""Walsall""]",,4
 watford-fc,Watford,"[""Watford""]",,3
 wealdstone-fc,Wealdstone,"[""Wealdstone""]",,5
+welling-united-fc,Welling United,"[""Welling"",""Welling United""]",,6
 west-bromwich-albion-fc,West Bromwich Albion,"[""West Brom"",""WBA"",""West Bromwich"",""West Bromwich Albion""]",,2
 west-ham-united-fc,West Ham United,"[""West Ham"",""West Ham United"",""West Ham Utd""]",,2
 weymouth-fc,Weymouth,"[""Weymouth""]",,5

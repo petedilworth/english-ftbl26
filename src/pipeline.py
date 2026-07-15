@@ -183,34 +183,39 @@ def _reconcile_statuses(conn: sqlite3.Connection) -> None:
         moved_up = next_tier < tier
         moved_down = next_tier > tier
 
+        # Per-row corrections are logged at DEBUG: they recur on every full
+        # rebuild (positional statuses are re-derived, then re-corrected)
+        # and are expected — play-off losers, reprieves, expulsions.
         if status_val == "Play-off Promoted" and not moved_up:
             updates.append(("Stayed", rowid))
         elif status_val == "Promoted" and not moved_up:
-            logger.warning(
+            logger.debug(
                 "%s marked Promoted in %d (tier %d) but did not move up — "
-                "setting Stayed (check RULES)", club_id, season, tier)
+                "setting Stayed", club_id, season, tier)
             updates.append(("Stayed", rowid))
         elif status_val in ("Relegated", "Play-off Relegated") and not moved_down:
-            logger.warning(
+            logger.debug(
                 "%s marked %s in %d (tier %d) but did not move down — "
-                "setting Stayed (reprieve or RULES gap)",
-                club_id, status_val, season, tier)
+                "setting Stayed (reprieve)", club_id, status_val, season, tier)
             updates.append(("Stayed", rowid))
         elif status_val == "Stayed" and moved_up:
-            logger.warning(
+            logger.debug(
                 "%s marked Stayed in %d (tier %d) but moved up — "
-                "setting Promoted (check RULES)", club_id, season, tier)
+                "setting Promoted", club_id, season, tier)
             updates.append(("Promoted", rowid))
         elif status_val == "Stayed" and moved_down:
-            logger.warning(
+            logger.debug(
                 "%s marked Stayed in %d (tier %d) but moved down — "
-                "setting Relegated (check RULES)", club_id, season, tier)
+                "setting Relegated", club_id, season, tier)
             updates.append(("Relegated", rowid))
 
     if updates:
         conn.executemany("UPDATE standings SET status = ? WHERE rowid = ?", updates)
         conn.commit()
-    logger.info("Status reconciliation: %d rows corrected", len(updates))
+    logger.info(
+        "Status reconciliation: %d rows corrected against next-season movement",
+        len(updates),
+    )
 
 
 def _print_unresolved_report(unresolved_map: dict[str, list[str]]) -> None:

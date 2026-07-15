@@ -115,8 +115,18 @@ def build_resolver(conn: sqlite3.Connection) -> dict[str, str]:
     return resolver
 
 
+def _normalize(name: str) -> str:
+    """
+    Normalize a club name for lookup: lowercase, straighten curly
+    apostrophes, and collapse all whitespace (handles non-breaking
+    spaces, tabs, and doubled spaces in source CSVs).
+    """
+    name = name.replace("‘", "'").replace("’", "'")
+    return " ".join(name.lower().split())
+
+
 def _add_variant(resolver: dict[str, str], name: str, club_id: str) -> None:
-    key = name.strip().lower()
+    key = _normalize(name)
     if not key:
         return
     if key in resolver and resolver[key] != club_id:
@@ -145,7 +155,7 @@ def resolve_name(
     Checks SEASON_OVERRIDES first, then the general resolver.
     Pure function — no I/O.
     """
-    key = raw_name.strip().lower()
+    key = _normalize(raw_name)
 
     if season_end_year is not None:
         override = SEASON_OVERRIDES.get((key, season_end_year))
