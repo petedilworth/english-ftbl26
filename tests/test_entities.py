@@ -65,7 +65,8 @@ def test_resolution_normalizes_invisible_characters(tmp_path):
     assert resolve_name("Kings Lynn", resolver) == "kings-lynn-town-fc"
     assert resolve_name("Kings  Lynn", resolver) == "kings-lynn-town-fc"  # double space
     assert resolve_name("Kings\xa0Lynn", resolver) == "kings-lynn-town-fc"  # NBSP
-    assert resolve_name("Kings​Lynn", resolver) == "kings-lynn-town-fc"  # zero-width space
+    assert resolve_name("Kings​Lynn", resolver) == "kings-lynn-town-fc"  # ZWSP as separator
+    assert resolve_name("King​s Lynn", resolver) == "kings-lynn-town-fc"  # ZWSP inside word
     assert resolve_name("﻿Kings Lynn", resolver) == "kings-lynn-town-fc"  # BOM prefix
     assert resolve_name("King’s Lynn", resolver) == "kings-lynn-town-fc"  # curly apostrophe
     assert resolve_name(" kings lynn ", resolver) == "kings-lynn-town-fc"

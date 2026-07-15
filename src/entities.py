@@ -4,6 +4,7 @@ Manage the club_master table and provide name-resolution lookups.
 
 import json
 import logging
+import re
 import sqlite3
 import unicodedata
 from pathlib import Path
@@ -11,6 +12,9 @@ from pathlib import Path
 import pandas as pd
 
 logger = logging.getLogger(__name__)
+
+_APOSTROPHES = "'‘’ʼ´`"
+_NON_ALNUM = re.compile(r"[^a-z0-9]+")
 
 # Override specific (raw_name_lower, season_end_year) → club_id mappings
 # that cannot be handled by static name_variants alone.
@@ -118,22 +122,21 @@ def build_resolver(conn: sqlite3.Connection) -> dict[str, str]:
 
 def _normalize(name: str) -> str:
     """
-    Normalize a club name for lookup so cosmetic differences in the source
-    data can't break resolution:
-      - straighten curly apostrophes
-      - drop zero-width / format characters (ZWSP, BOM, soft hyphen, etc.)
-        that survive ordinary whitespace stripping
-      - turn every kind of Unicode space into a plain space
-      - lowercase and collapse runs of whitespace
+    Reduce a club name to a bare lookup key: just its letters and digits.
+
+    Source CSVs vary in ways that shouldn't affect matching — accents,
+    apostrophes, punctuation, spacing, and even invisible characters
+    (zero-width spaces, byte-order marks) glued into a name. Rather than
+    enumerate those, we fold accents to plain letters, drop apostrophes so
+    "King's" == "Kings", and remove everything that isn't a-z0-9. What
+    remains is stable regardless of cosmetic differences. Verified to
+    produce no collisions across the current club_master.csv.
     """
-    name = name.replace("‘", "'").replace("’", "'")
-    cleaned = []
-    for ch in name:
-        category = unicodedata.category(ch)
-        # Treat format chars (ZWSP, ZWNJ, BOM, ...) and every Unicode space
-        # as a word boundary — collapsing below turns runs into one space.
-        cleaned.append(" " if category in ("Cf", "Zs") else ch)
-    return " ".join("".join(cleaned).lower().split())
+    name = unicodedata.normalize("NFKD", name)
+    name = "".join(c for c in name if not unicodedata.combining(c)).lower()
+    for apostrophe in _APOSTROPHES:
+        name = name.replace(apostrophe, "")
+    return _NON_ALNUM.sub("", name)
 
 
 def _add_variant(resolver: dict[str, str], name: str, club_id: str) -> None:
