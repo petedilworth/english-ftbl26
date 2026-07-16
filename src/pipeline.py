@@ -58,6 +58,21 @@ CREATE TABLE IF NOT EXISTS standings (
 );
 """
 
+CREATE_MATCHES_SQL = """
+CREATE TABLE IF NOT EXISTS matches (
+    season_end_year INT  NOT NULL,
+    tier            INT  NOT NULL,
+    match_date      TEXT,
+    home_club_id    TEXT,
+    away_club_id    TEXT,
+    home_name       TEXT NOT NULL,
+    away_name       TEXT NOT NULL,
+    fthg            INT,
+    ftag            INT,
+    ftr             TEXT
+);
+"""
+
 STANDINGS_STAT_COLUMNS = ["played", "won", "drawn", "lost", "gf", "ga", "gd"]
 
 
@@ -101,11 +116,16 @@ def _process_season(
     unresolved_map: dict,
 ) -> int:
     """
-    Aggregate one season CSV, assign status, resolve names, insert into standings.
-    Returns count of rows inserted.
+    Aggregate one season CSV, assign status, resolve names, insert into
+    standings and matches. Returns count of standings rows inserted.
     """
-    standings_df = aggregate.aggregate_season(csv_path, season_end_year, tier)
-    if standings_df is None:
+    match_df = aggregate.load_csv(csv_path)
+    if match_df is None:
+        return 0
+    try:
+        standings_df = aggregate.compute_standings(match_df, season_end_year, tier)
+    except Exception as exc:
+        logger.error("Failed aggregating %s: %s", csv_path.name, exc)
         return 0
 
     standings_df = status.assign_status(standings_df, season_end_year, tier)
@@ -138,6 +158,21 @@ def _process_season(
             source,
         ))
 
+    match_rows = []
+    for _, m in aggregate.extract_matches(match_df, season_end_year, tier).iterrows():
+        match_rows.append((
+            season_end_year,
+            tier,
+            m["match_date"],
+            entities.resolve_name(m["HomeTeam"], resolver, season_end_year),
+            entities.resolve_name(m["AwayTeam"], resolver, season_end_year),
+            m["HomeTeam"],
+            m["AwayTeam"],
+            int(m["FTHG"]),
+            int(m["FTAG"]),
+            m["FTR"],
+        ))
+
     try:
         conn.executemany(
             """
@@ -148,6 +183,21 @@ def _process_season(
             VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
             """,
             rows,
+        )
+        # matches has no natural unique key across replays of the same
+        # season (dates can be reparsed), so replace the season wholesale
+        conn.execute(
+            "DELETE FROM matches WHERE season_end_year = ? AND tier = ?",
+            (season_end_year, tier),
+        )
+        conn.executemany(
+            """
+            INSERT INTO matches
+                (season_end_year, tier, match_date, home_club_id, away_club_id,
+                 home_name, away_name, fthg, ftag, ftr)
+            VALUES (?,?,?,?,?,?,?,?,?,?)
+            """,
+            match_rows,
         )
         conn.commit()
     except Exception as exc:
@@ -260,6 +310,7 @@ def run(
     conn = sqlite3.connect(db_path)
     conn.execute("PRAGMA foreign_keys = ON")
     conn.execute(CREATE_STANDINGS_SQL)
+    conn.execute(CREATE_MATCHES_SQL)
     conn.commit()
     _migrate_standings_columns(conn)
 

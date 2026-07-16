@@ -2,5 +2,7 @@ __pycache__/
 *.pyc
 *.pyo
 data/raw/
-data/db/
+data/db/*
+!data/db/england.db
+preview/
 .env
