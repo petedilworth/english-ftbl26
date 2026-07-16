@@ -1,6 +1,27 @@
 # English Football Historical Database
 
-SQLite database of English football league standings for Tiers 1–5 from the 1993/94 season to present. Phase 1 — historical data only.
+SQLite database of English football league standings for Tiers 1–5 from the 1993/94 season to present, plus a weekly fixture-preview email digest.
+
+## Weekly digest (Phase 2)
+
+Every Monday a GitHub Actions workflow (`.github/workflows/weekly-digest.yml`):
+1. Refreshes the current season's results and rebuilds standings/trajectory
+2. Fetches the coming week's fixtures from football-data.co.uk
+3. Picks the most interesting matches (storyline scoring: fallen giants, yo-yo clubs, top-of-table clashes, followed clubs) and writes a narrative + stats preview for each, with an embedded two-club position-history chart and head-to-head record since 1993
+4. Emails the digest via [Resend](https://resend.com) and commits the updated `england.db` back to the repo
+
+### One-time setup
+1. Add three repository secrets (Settings → Secrets and variables → Actions):
+   `RESEND_API_KEY`, `EMAIL_TO`, `EMAIL_FROM` (same values as your other Resend project)
+2. Run the workflow manually once with **full_rebuild = true** (Actions tab → Weekly Digest → Run workflow) to build and commit the database
+3. Optionally set a `FOLLOWED_CLUBS` env var (comma-separated club_id slugs) in the workflow, or edit `FOLLOWED_CLUBS` in `src/digest.py` — those clubs are always featured
+
+### Local preview
+```bash
+python src/digest.py --dry-run   # writes preview/digest_preview.html, sends nothing
+```
+
+## Phase 1 — the database
 
 ## Data source
 
@@ -66,7 +87,7 @@ Seeded from `club_master.csv`. Edit this file to add name variants or new clubs,
 | `canonical_name` | TEXT | Current official name |
 | `name_variants` | TEXT | JSON array of known source spellings |
 | `lineage_parent_id` | TEXT | For successor clubs (AFC Wimbledon → Wimbledon FC) |
-| `current_tier` | INT | 0 = defunct/out of scope |
+| `current_tier` | INT | Informational only — not used by the pipeline. `club_trajectory.current_tier` is computed from each club's most recent `standings` row instead, so it never goes stale. |
 
 ### `standings`
 One row per club per season.

@@ -1,0 +1,70 @@
+name: Weekly Digest
+
+on:
+  schedule:
+    - cron: '17 10 * * 1'   # Mondays ~10:17 UTC (GitHub cron is best-effort)
+  workflow_dispatch:
+    inputs:
+      full_rebuild:
+        description: 'Rebuild the entire database from 1993/94 (first run, or repair)'
+        type: boolean
+        default: false
+      dry_run:
+        description: 'Build the digest but do not send the email'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Update database
+        run: |
+          if [ "${{ inputs.full_rebuild }}" = "true" ]; then
+            echo "Full rebuild: downloading all seasons"
+            python src/pipeline.py --force-download
+          else
+            CUR=$(python -c "import datetime as d; t=d.date.today(); print(t.year+1 if t.month>=7 else t.year)")
+            echo "Weekly refresh: season ending $CUR"
+            python src/pipeline.py --season-start "$CUR" --season-end "$CUR" --force-download
+          fi
+
+      - name: Build and send digest
+        if: ${{ inputs.dry_run != true }}
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+        run: python src/digest.py
+
+      - name: Build digest (dry run)
+        if: ${{ inputs.dry_run == true }}
+        run: python src/digest.py --dry-run
+
+      - name: Upload preview artifact (dry run)
+        if: ${{ inputs.dry_run == true }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: digest-preview
+          path: preview/
+          if-no-files-found: ignore
+
+      - name: Commit updated database
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/db/england.db
+          git commit -m "Update england.db (weekly digest run)" || exit 0
+          git push

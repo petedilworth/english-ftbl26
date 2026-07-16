@@ -30,7 +30,9 @@ AGGREGATE_SQL = """
 SELECT
     s.club_id,
     cm.canonical_name,
-    cm.current_tier,
+    (SELECT s2.tier FROM standings s2
+      WHERE s2.club_id = s.club_id
+      ORDER BY s2.season_end_year DESC LIMIT 1)                        AS current_tier,
     MIN(s.tier)                                                         AS highest_tier,
     MAX(s.tier)                                                         AS lowest_tier,
     SUM(CASE WHEN s.tier = 1 THEN 1 ELSE 0 END)                        AS seasons_in_tier1,
@@ -51,16 +53,20 @@ GROUP BY s.club_id
 
 def _compute_tier_streaks(conn: sqlite3.Connection) -> dict[str, int]:
     """
-    For each club, count consecutive seasons at their current tier counting
-    backwards from their most recent season in the DB. A gap in seasons
-    (club absent from Tiers 1-5) breaks the streak.
+    For each club, count consecutive seasons at their most recent tier,
+    counting backwards from their most recent season in the DB. A gap in
+    seasons (club absent from Tiers 1-5) breaks the streak.
+
+    The "current tier" used here is each club's own most recent standings
+    row, not club_master.current_tier — that column is hand-maintained and
+    goes stale every season, so it is not used for this calculation.
+
     Returns {club_id: streak}.
     """
     rows = conn.execute(
         """
-        SELECT s.club_id, s.season_end_year, s.tier, cm.current_tier
+        SELECT s.club_id, s.season_end_year, s.tier
         FROM standings s
-        JOIN club_master cm ON cm.club_id = s.club_id
         WHERE s.club_id IS NOT NULL
         ORDER BY s.club_id, s.season_end_year DESC
         """
@@ -69,21 +75,15 @@ def _compute_tier_streaks(conn: sqlite3.Connection) -> dict[str, int]:
     streaks: dict[str, int] = {}
     done: set[str] = set()
     current_club = None
+    current_tier = None
     prev_season = None
 
-    for club_id, season, tier, current_tier in rows:
+    for club_id, season, tier in rows:
         if club_id != current_club:
             current_club = club_id
+            current_tier = tier
             prev_season = None
             streaks[club_id] = 0
-            # Stale club_master detection: most recent tier should match
-            if tier != current_tier:
-                logger.warning(
-                    "club_master.current_tier=%s for %s but most recent "
-                    "standings tier is %s — streak will be 0; "
-                    "update club_master.csv",
-                    current_tier, club_id, tier,
-                )
 
         if club_id in done:
             continue

@@ -51,7 +51,9 @@ def test_streak_broken_by_season_gap():
     assert _compute_tier_streaks(conn)["gap-fc"] == 2
 
 
-def test_streak_zero_when_club_master_stale():
-    # club_master says tier 3 but most recent season was tier 4
+def test_streak_ignores_stale_club_master_current_tier():
+    # club_master says tier 3 (hand-maintained, stale), but the club's own
+    # standings history shows tier 4 for its two most recent seasons.
+    # Streak calculation must use observed data, not club_master.current_tier.
     conn = _make_db([("stale-fc", 3, [(2023, 4), (2024, 4)])])
-    assert _compute_tier_streaks(conn)["stale-fc"] == 0
+    assert _compute_tier_streaks(conn)["stale-fc"] == 2

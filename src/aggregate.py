@@ -176,6 +176,28 @@ def compute_standings(
     ]
 
 
+def extract_matches(
+    df: pd.DataFrame,
+    season_end_year: int,
+    tier: int,
+) -> pd.DataFrame:
+    """
+    Return one row per match from a loaded CSV: date (ISO or None),
+    home/away raw names, goals, result. Feeds the matches table used for
+    head-to-head and recent-form lookups.
+    """
+    out = df[["HomeTeam", "AwayTeam", "FTHG", "FTAG", "FTR"]].copy()
+    if "Date" in df.columns:
+        dates = pd.to_datetime(df["Date"], dayfirst=True, errors="coerce")
+        out["match_date"] = dates.dt.strftime("%Y-%m-%d")
+        out["match_date"] = out["match_date"].where(dates.notna(), None)
+    else:
+        out["match_date"] = None
+    out["season_end_year"] = season_end_year
+    out["tier"] = tier
+    return out
+
+
 def aggregate_season(
     path: Path,
     season_end_year: int,
