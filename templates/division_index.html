@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Divisions</h1>
+<p class="subtitle">Each tier's complete history on one page.</p>
+<div class="tile-grid">
+  {% for d in divisions %}
+  <a class="tile" href="{{ root }}/division/{{ d.slug }}/index.html">
+    <span class="tile-title">{{ d.name }}</span><br>
+    <span class="tile-sub">Tier {{ d.tier }} · {{ d.season_count }} seasons</span>
+  </a>
+  {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>{{ division_title }}</h1>
+<p class="subtitle">Tier {{ tier }} · every season, newest first. Historical names shown where the division was renamed.</p>
+
+{% for season in seasons %}
+<h2>{{ season.label }} — {{ season.division_name }}</h2>
+<div class="table-scroll">
+<table class="standings">
+  <tr><th>#</th><th>Club</th><th class="num">P</th><th class="num">GD</th><th class="num">Pts</th><th></th></tr>
+  {% for row in season.rows %}
+  <tr class="status-{{ row.status_slug }}">
+    <td class="num">{{ row.position }}</td>
+    <td>{% if row.club_id %}<a href="{{ root }}/team/{{ row.club_id }}/index.html">{{ row.name }}</a>{% else %}{{ row.name }}{% endif %}</td>
+    <td class="num">{{ row.played }}</td>
+    <td class="num">{{ row.gd }}</td>
+    <td class="num"><strong>{{ row.points }}</strong></td>
+    <td><span class="status-tag {{ row.status_dir }}">{{ row.status_label }}</span></td>
+  </tr>
+  {% endfor %}
+</table>
+</div>
+{% endfor %}
+{% endblock %}

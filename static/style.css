@@ -1,0 +1,151 @@
+:root {
+  --ink: #17202a;
+  --muted: #6b7683;
+  --line: #e4e8ec;
+  --accent: #1a5c9a;
+  --bg: #ffffff;
+  --bg-soft: #f6f8fa;
+  --up: #1a7f3c;
+  --down: #b3261e;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 12px 20px;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--line);
+}
+.brand { font-weight: 700; font-size: 17px; color: var(--ink); text-decoration: none; }
+.site-header nav { display: flex; gap: 16px; flex-wrap: wrap; }
+.site-header nav a { color: var(--muted); text-decoration: none; font-size: 14px; }
+.site-header nav a:hover { color: var(--accent); }
+
+main { max-width: 860px; margin: 0 auto; padding: 20px 16px 48px; }
+
+h1 { font-size: 26px; margin: 8px 0 4px; }
+h2 { font-size: 19px; margin: 28px 0 8px; }
+h3 { font-size: 16px; margin: 20px 0 6px; }
+.subtitle { color: var(--muted); margin: 0 0 16px; font-size: 14px; }
+
+a { color: var(--accent); }
+
+table.standings {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  margin: 6px 0 18px;
+}
+table.standings th {
+  text-align: left;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  border-bottom: 2px solid var(--ink);
+  padding: 6px 8px;
+}
+table.standings td { padding: 6px 8px; border-bottom: 1px solid var(--line); }
+table.standings td.num { text-align: right; font-variant-numeric: tabular-nums; }
+table.standings tr.status-champions { background: #f2f9f2; }
+table.standings tr.status-promoted, table.standings tr.status-play-off-promoted { background: #f7fbf7; }
+table.standings tr.status-relegated, table.standings tr.status-play-off-relegated { background: #fdf5f5; }
+.status-tag { font-size: 11px; color: var(--muted); white-space: nowrap; }
+.status-tag.up { color: var(--up); }
+.status-tag.down { color: var(--down); }
+
+.table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+.tile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  margin: 14px 0;
+}
+.tile {
+  display: block;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--ink);
+  background: var(--bg-soft);
+}
+.tile:hover { border-color: var(--accent); }
+.tile .tile-title { font-weight: 600; font-size: 14px; }
+.tile .tile-sub { color: var(--muted); font-size: 12px; }
+
+.club-header {
+  border-left: 10px solid var(--club-primary, var(--accent));
+  padding: 6px 0 6px 14px;
+  margin-bottom: 8px;
+}
+.club-header h1 { margin: 0; }
+
+.stat-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 10px;
+  margin: 14px 0;
+}
+.stat-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px 12px;
+  background: var(--bg-soft);
+}
+.stat-card .stat-value { font-size: 20px; font-weight: 700; }
+.stat-card .stat-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+
+.narrative { max-width: 680px; }
+.narrative-placeholder {
+  color: var(--muted);
+  font-style: italic;
+  border-left: 3px solid var(--line);
+  padding-left: 12px;
+}
+
+.chart-img { max-width: 100%; height: auto; border: 1px solid var(--line); border-radius: 6px; }
+
+.search-input {
+  width: 100%;
+  max-width: 420px;
+  padding: 10px 12px;
+  font-size: 15px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  margin: 8px 0 16px;
+}
+
+.team-list { list-style: none; padding: 0; margin: 0; }
+.team-list li { padding: 5px 0; border-bottom: 1px solid var(--line); }
+.team-list .tier-note { color: var(--muted); font-size: 12px; margin-left: 6px; }
+.color-chip {
+  display: inline-block;
+  width: 10px; height: 10px;
+  border-radius: 2px;
+  margin-right: 8px;
+  background: var(--accent);
+  border: 1px solid rgba(0,0,0,0.25);  /* keeps white-kit clubs visible */
+  vertical-align: baseline;
+}
+
+.az-nav { display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px; margin: 10px 0; }
+
+@media (max-width: 540px) {
+  h1 { font-size: 22px; }
+  table.standings { font-size: 12px; }
+  table.standings th, table.standings td { padding: 5px 6px; }
+}

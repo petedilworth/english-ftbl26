@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Seasons</h1>
+<p class="subtitle">Every season since 1993/94 — all five tiers on each page.</p>
+<div class="tile-grid">
+  {% for s in seasons %}
+  <a class="tile" href="{{ root }}/season/{{ s.slug }}/index.html">
+    <span class="tile-title">{{ s.label }}</span><br>
+    <span class="tile-sub">{{ s.champions }}</span>
+  </a>
+  {% endfor %}
+</div>
+{% endblock %}

@@ -1,6 +1,21 @@
 # English Football Historical Database
 
-SQLite database of English football league standings for Tiers 1–5 from the 1993/94 season to present, plus a weekly fixture-preview email digest.
+SQLite database of English football league standings for Tiers 1–5 from the 1993/94 season to present, plus a weekly fixture-preview email digest and a static website.
+
+## The website (Phase 3)
+
+`src/site_build.py` renders the whole database into a static site (`site/`), deployed to GitHub Pages by `.github/workflows/deploy-site.yml` — weekly after the digest updates the data, and on any push that changes content or code.
+
+Pages: home (current season snapshot) · one page per season · one page per division · teams index with live search, A–Z and by-division listings · a page per club (kit-color header, key stats, position-history chart, season-by-season record, and a narrative section).
+
+**Enable it once:** repo Settings → Pages → Source: **GitHub Actions**. Then run the "Deploy Site" workflow (or push to main).
+
+**Club narratives:** write `content/<club_id>.md` (see `content/README.md`); the club's page picks it up on the next deploy.
+
+**Local preview:**
+```bash
+python src/site_build.py && python -m http.server -d site 8000
+```
 
 ## Weekly digest (Phase 2)
 
