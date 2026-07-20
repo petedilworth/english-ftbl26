@@ -11,6 +11,7 @@ on:
       - 'static/**'
       - 'src/**'
       - 'club_master.csv'
+      - 'data/db/england.db'
   workflow_dispatch:
 
 permissions:
