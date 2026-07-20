@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>{{ heading }}</h1>
+<p class="subtitle">{{ intro }}</p>
+
+{% for section in sections %}
+{% if section.heading %}<h2>{{ section.heading }}</h2>{% endif %}
+{% if section.note %}<p class="subtitle">{{ section.note }}</p>{% endif %}
+<div class="table-scroll">
+<table class="standings">
+  <tr>{% for col in section.columns %}<th>{{ col }}</th>{% endfor %}</tr>
+  {% for row in section.rows %}
+  <tr>
+    {% for cell in row %}
+    <td {% if cell.num %}class="num"{% endif %}>
+      {% if cell.club_id %}<a href="{{ root }}/team/{{ cell.club_id }}/index.html">{{ cell.text }}</a>{% else %}{{ cell.text }}{% endif %}
+    </td>
+    {% endfor %}
+  </tr>
+  {% endfor %}
+</table>
+</div>
+{% endfor %}
+{% endblock %}

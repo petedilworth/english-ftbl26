@@ -6,7 +6,7 @@ SQLite database of English football league standings for Tiers 1–5 from the 19
 
 `src/site_build.py` renders the whole database into a static site (`site/`), deployed to GitHub Pages by `.github/workflows/deploy-site.yml` — weekly after the digest updates the data, and on any push that changes content or code.
 
-Pages: home (current season snapshot) · one page per season · one page per division · teams index with live search, A–Z and by-division listings · a page per club (kit-color header, key stats, position-history chart, season-by-season record, and a narrative section).
+Pages: home (current season snapshot) · one page per season · one page per division · teams index with live search, A–Z and by-division listings · a page per club (kit-color header, key stats, position-history chart, season-by-season record, and a narrative section) · interactive trajectory chart (compare any clubs) · the Matrix (every division × every season, tap a club to highlight its journey) · four insights pages (yo-yo clubs, fallen giants & risers, records & extremes, timeline) · the Groundhop Map (all 162 grounds, season slider, story filters, postcode distances) · an archive of the weekly digests.
 
 **Enable it once:** repo Settings → Pages → Source: **GitHub Actions**. Then run the "Deploy Site" workflow (or push to main).
 

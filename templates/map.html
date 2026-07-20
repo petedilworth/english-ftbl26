@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Groundhop Map</h1>
+<p class="subtitle">Every ground in thirty years of Tiers 1–5. Drag the year slider to watch the pyramid shift; grey markers are lost clubs.</p>
+
+<div class="map-controls">
+  <div class="map-year-row">
+    <input type="range" id="year-slider" min="{{ first_year }}" max="{{ last_year }}" value="{{ last_year }}" step="1">
+    <span id="year-label" class="map-year-label">{{ last_label }}</span>
+  </div>
+  <div class="map-chips">
+    <button class="chip" data-filter="all">All clubs</button>
+    <button class="chip" data-filter="fallen">Fallen giants</button>
+    <button class="chip" data-filter="yoyo">Yo-yo clubs</button>
+    <button class="chip" data-filter="defunct">Lost clubs</button>
+    <button class="chip" data-filter="everpresent">Ever-presents</button>
+  </div>
+  <div class="map-postcode-row">
+    <input class="search-input" id="postcode-input" type="text" placeholder="Your postcode (e.g. SW1A 1AA)" autocomplete="postal-code">
+    <button id="postcode-go" class="chip">Distances</button>
+  </div>
+</div>
+
+<div id="map" class="map-canvas"></div>
+
+<div id="distance-panel" class="distance-panel" hidden>
+  <h2>Grounds from <span id="postcode-label"></span></h2>
+  <p class="subtitle">Straight-line miles — your groundhop checklist.</p>
+  <div class="table-scroll">
+    <table class="standings" id="distance-table"></table>
+  </div>
+</div>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="map-data.js"></script>
+<script src="{{ root }}/static/map.js"></script>
+{% endblock %}

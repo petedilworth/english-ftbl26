@@ -371,7 +371,27 @@ def main() -> int:
 
     import notify
     notify.send_email(subject, html, text, images)
+    _archive_digest(html, images)
     return 0
+
+
+def _archive_digest(html: str, images: list[tuple[Path, str]]) -> None:
+    """
+    Save a browsable copy of the sent digest under content/digests/<date>/
+    so the website's archive page can publish it. Committed back to the
+    repo by the weekly workflow.
+    """
+    import datetime
+    import shutil
+
+    archive_dir = PROJECT_ROOT / "content" / "digests" / datetime.date.today().isoformat()
+    archive_dir.mkdir(parents=True, exist_ok=True)
+    archived_html = html
+    for path, cid in images:
+        shutil.copy(path, archive_dir / path.name)
+        archived_html = archived_html.replace(f"cid:{cid}", path.name)
+    (archive_dir / "index.html").write_text(archived_html, encoding="utf-8")
+    logger.info("Archived digest to %s", archive_dir)
 
 
 if __name__ == "__main__":

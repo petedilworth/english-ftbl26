@@ -80,3 +80,48 @@ def test_team_chart_generated(tmp_path):
     assert (out / "team" / "giant-fc" / "chart.png").exists()
     team = (out / "team" / "giant-fc" / "index.html").read_text()
     assert "chart.png" in team
+
+
+def test_insights_and_map_pages(tmp_path):
+    db = _db_on_disk(tmp_path)
+    out = tmp_path / "site"
+    SiteBuilder(db, out, charts_enabled=False).build()
+
+    for slug in ("yo-yo", "fallen-giants", "records", "timeline"):
+        assert (out / "insights" / slug / "index.html").exists(), slug
+
+    fallen = (out / "insights" / "fallen-giants" / "index.html").read_text()
+    assert "Giant FC" in fallen
+
+    timeline = (out / "insights" / "timeline" / "index.html").read_text()
+    assert "Bury" in timeline
+
+    # Fixture DB has no stadium coordinates -> map is skipped gracefully
+    assert not (out / "map" / "index.html").exists()
+
+    # Digest archive renders its empty state
+    assert (out / "digest" / "index.html").exists()
+
+
+def test_map_page_built_when_coordinates_exist(tmp_path):
+    mem = _make_db()
+    mem.execute("ALTER TABLE club_master ADD COLUMN color_primary TEXT")
+    mem.execute("ALTER TABLE club_master ADD COLUMN color_secondary TEXT")
+    mem.execute("ALTER TABLE club_master ADD COLUMN stadium_name TEXT")
+    mem.execute("ALTER TABLE club_master ADD COLUMN latitude REAL")
+    mem.execute("ALTER TABLE club_master ADD COLUMN longitude REAL")
+    mem.execute(
+        "UPDATE club_master SET stadium_name='Test Park', latitude=52.5,"
+        " longitude=-1.9, color_primary='#123456'"
+    )
+    mem.commit()  # backup() spins forever on a pending write transaction
+    path = tmp_path / "map.db"
+    disk = sqlite3.connect(path)
+    mem.backup(disk)
+    disk.close()
+
+    out = tmp_path / "site"
+    SiteBuilder(path, out, charts_enabled=False).build()
+    assert (out / "map" / "index.html").exists()
+    data = (out / "map" / "map-data.js").read_text()
+    assert "Test Park" in data and "giant-fc" in data

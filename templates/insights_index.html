@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Insights</h1>
+<p class="subtitle">Conclusions drawn from thirty years of league tables.</p>
+<div class="tile-grid">
+  {% for e in entries %}
+  <a class="tile" href="{{ root }}/insights/{{ e.slug }}/index.html">
+    <span class="tile-title">{{ e.name }}</span><br>
+    <span class="tile-sub">{{ e.sub }}</span>
+  </a>
+  {% endfor %}
+</div>
+{% endblock %}

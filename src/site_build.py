@@ -427,21 +427,281 @@ class SiteBuilder:
             title="The Matrix", tiers=tiers,
         )
 
-    def build_insights_stub(self) -> None:
-        # Placeholder until Phase C lands the four insight pages.
+    # ── Insights ───────────────────────────────────────────────────────────
+
+    @staticmethod
+    def _cell(text, club_id=None, num=False):
+        return {"text": text, "club_id": club_id, "num": num}
+
+    def build_insights(self) -> None:
         entries = [
-            {"slug": "yo-yo", "name": "Yo-yo clubs", "sub": "Coming soon"},
-            {"slug": "fallen-giants", "name": "Fallen giants & risers", "sub": "Coming soon"},
-            {"slug": "records", "name": "Records & extremes", "sub": "Coming soon"},
-            {"slug": "timeline", "name": "Timeline of notable events", "sub": "Coming soon"},
+            {"slug": "yo-yo", "name": "Yo-yo clubs", "sub": "The volatility league"},
+            {"slug": "fallen-giants", "name": "Fallen giants & risers",
+             "sub": "Long falls and great climbs"},
+            {"slug": "records", "name": "Records & extremes",
+             "sub": "The best and worst seasons"},
+            {"slug": "timeline", "name": "Timeline", "sub": "Notable events since 1993"},
         ]
         self.render(
-            "division_index.html", self.out / "insights" / "index.html", 1,
-            title="Insights",
-            divisions=[
-                {"slug": e["slug"], "name": e["name"], "tier": "—", "season_count": 0}
-                for e in entries
+            "insights_index.html", self.out / "insights" / "index.html", 1,
+            title="Insights", entries=entries,
+        )
+        self._insight_yo_yo()
+        self._insight_fallen_giants()
+        self._insight_records()
+        self._insight_timeline()
+
+    def _insight_yo_yo(self) -> None:
+        rows = self.conn.execute(
+            """
+            SELECT * FROM (
+                SELECT t.club_id, t.canonical_name, t.yo_yo_score,
+                       t.total_promotions, t.total_relegations,
+                       (SELECT COUNT(*) FROM standings s
+                        WHERE s.club_id = t.club_id) AS n
+                FROM club_trajectory t
+            ) WHERE n >= 5
+            ORDER BY yo_yo_score DESC, n DESC LIMIT 25
+            """
+        ).fetchall()
+        self.render(
+            "insight_table.html", self.out / "insights" / "yo-yo" / "index.html", 2,
+            title="Yo-yo clubs",
+            heading="Yo-yo clubs",
+            intro="Promotions plus relegations per recorded season — the clubs that can't sit still. Minimum five seasons in the database.",
+            sections=[{
+                "columns": ["#", "Club", "Yo-yo score", "Promotions", "Relegations", "Seasons"],
+                "rows": [
+                    [self._cell(i + 1, num=True),
+                     self._cell(r["canonical_name"], r["club_id"]),
+                     self._cell(r["yo_yo_score"], num=True),
+                     self._cell(r["total_promotions"], num=True),
+                     self._cell(r["total_relegations"], num=True),
+                     self._cell(r["n"], num=True)]
+                    for i, r in enumerate(rows)
+                ],
+            }],
+        )
+
+    def _insight_fallen_giants(self) -> None:
+        fallen = self.conn.execute(
+            """
+            SELECT club_id, canonical_name, seasons_in_tier1, last_tier1_season,
+                   current_tier
+            FROM club_trajectory
+            WHERE highest_tier = 1 AND current_tier >= 3
+            ORDER BY current_tier DESC, last_tier1_season
+            """
+        ).fetchall()
+        risers = self.conn.execute(
+            """
+            SELECT * FROM (
+                SELECT t.club_id, t.canonical_name, t.current_tier,
+                       t.first_season_in_db,
+                       (SELECT s.tier FROM standings s WHERE s.club_id = t.club_id
+                        ORDER BY s.season_end_year LIMIT 1) AS first_tier
+                FROM club_trajectory t
+            ) WHERE first_tier >= 4 AND current_tier <= 2
+            ORDER BY current_tier, first_tier DESC
+            """
+        ).fetchall()
+        self.render(
+            "insight_table.html",
+            self.out / "insights" / "fallen-giants" / "index.html", 2,
+            title="Fallen giants & risers",
+            heading="Fallen giants & risers",
+            intro="Clubs a long way from where they once were — in both directions.",
+            sections=[
+                {
+                    "heading": "Fallen giants",
+                    "note": "Former top-flight clubs now in Tier 3 or below.",
+                    "columns": ["Club", "Top-flight seasons", "Last in Tier 1", "Now"],
+                    "rows": [
+                        [self._cell(r["canonical_name"], r["club_id"]),
+                         self._cell(r["seasons_in_tier1"], num=True),
+                         self._cell(season_label(r["last_tier1_season"])),
+                         self._cell(f"Tier {r['current_tier']}")]
+                        for r in fallen
+                    ],
+                },
+                {
+                    "heading": "The risers",
+                    "note": "Clubs that entered the database in Tier 4 or 5 and now play in the top two divisions.",
+                    "columns": ["Club", "Started", "Now"],
+                    "rows": [
+                        [self._cell(r["canonical_name"], r["club_id"]),
+                         self._cell(f"Tier {r['first_tier']} in {season_label(r['first_season_in_db'])}"),
+                         self._cell(f"Tier {r['current_tier']}")]
+                        for r in risers
+                    ],
+                },
             ],
+        )
+
+    def _insight_records(self) -> None:
+        def _standings_section(heading, note, order, limit=10, where="s.played >= 30"):
+            rows = self.conn.execute(
+                f"""
+                SELECT s.club_id, s.club_name, s.season_end_year, s.division_name,
+                       s.position, s.points, s.gd
+                FROM standings s WHERE {where}
+                ORDER BY {order} LIMIT {limit}
+                """
+            ).fetchall()
+            return {
+                "heading": heading,
+                "note": note,
+                "columns": ["Club", "Season", "Division", "Pos", "Pts", "GD"],
+                "rows": [
+                    [self._cell(r["club_name"], r["club_id"]),
+                     self._cell(season_label(r["season_end_year"])),
+                     self._cell(r["division_name"]),
+                     self._cell(r["position"], num=True),
+                     self._cell(r["points"], num=True),
+                     self._cell(r["gd"], num=True)]
+                    for r in rows
+                ],
+            }
+
+        streaks = self.conn.execute(
+            """
+            SELECT club_id, canonical_name, current_tier, current_tier_streak
+            FROM club_trajectory ORDER BY current_tier_streak DESC LIMIT 10
+            """
+        ).fetchall()
+
+        self.render(
+            "insight_table.html", self.out / "insights" / "records" / "index.html", 2,
+            title="Records & extremes",
+            heading="Records & extremes",
+            intro="The outer edges of thirty years of league tables.",
+            sections=[
+                _standings_section("Most points in a season", "Full seasons only.",
+                                   "s.points DESC, s.gd DESC"),
+                _standings_section("Fewest points in a season", "The campaigns to forget.",
+                                   "s.points ASC, s.gd ASC"),
+                _standings_section("Best goal difference", "", "s.gd DESC, s.points DESC"),
+                _standings_section("Worst goal difference", "", "s.gd ASC, s.points ASC"),
+                {
+                    "heading": "Longest unbroken runs at current level",
+                    "note": "Consecutive seasons at the club's current tier.",
+                    "columns": ["Club", "Level", "Seasons"],
+                    "rows": [
+                        [self._cell(r["canonical_name"], r["club_id"]),
+                         self._cell(f"Tier {r['current_tier']}"),
+                         self._cell(r["current_tier_streak"], num=True)]
+                        for r in streaks
+                    ],
+                },
+            ],
+        )
+
+    def _insight_timeline(self) -> None:
+        events = [
+            {"year": 1995, "title": "The Premier League shrinks",
+             "text": "Four clubs relegated in 1994/95 as the top flight cuts from 22 to 20; the Third Division expands to 24 to rebalance the pyramid."},
+            {"year": 1996, "title": "Stevenage denied, Torquay reprieved",
+             "text": "Conference champions Stevenage Borough are refused promotion on ground grading, so nobody goes down from the Football League."},
+            {"year": 2002, "title": "Two-up two-down with the Conference",
+             "text": "From 2002/03 two clubs are exchanged between the Football League and the Conference each season — and the Conference gains play-offs."},
+            {"year": 2003, "title": "Wimbledon leave SW19",
+             "text": "Wimbledon FC relocate 60 miles to Milton Keynes mid-crisis; within a year they are rebranded MK Dons. Fan-founded AFC Wimbledon start seven tiers down and climb back."},
+            {"year": 2010, "title": "Chester City expelled mid-season",
+             "text": "Chester City are wound up in March 2010 and their Conference record is expunged, leaving the division a club short."},
+            {"year": 2011, "title": "Rushden & Diamonds fold",
+             "text": "Expelled from the Conference and liquidated within weeks."},
+            {"year": 2019, "title": "Bury expelled from the Football League",
+             "text": "The first Football League expulsion since 1992. League One plays the season with 23 clubs and only three go down."},
+            {"year": 2020, "title": "COVID stops the game",
+             "text": "Leagues One and Two and the National League end early on points-per-game; Macclesfield Town are relegated by points deduction, then wound up entirely months later."},
+            {"year": 2021, "title": "The season with no relegation",
+             "text": "With the leagues below voided, nobody is relegated from the 23-club National League."},
+            {"year": 2022, "title": "Wrexham go global",
+             "text": "Hollywood ownership turns a National League ever-present into the world's most-watched lower-league club — promotion follows in 2023."},
+        ]
+        self.render(
+            "timeline.html", self.out / "insights" / "timeline" / "index.html", 2,
+            title="Timeline", events=events,
+        )
+
+    # ── Groundhop map ─────────────────────────────────────────────────────
+
+    def build_map(self) -> None:
+        import json
+
+        cols = {r[1] for r in self.conn.execute("PRAGMA table_info(club_master)")}
+        if "latitude" not in cols:
+            logger.warning("No stadium coordinates in club_master — skipping map")
+            return
+
+        clubs = []
+        for r in self.conn.execute(
+            """
+            SELECT cm.club_id, cm.canonical_name, cm.stadium_name,
+                   cm.latitude, cm.longitude, cm.current_tier,
+                   t.highest_tier, t.yo_yo_score,
+                   t.first_season_in_db, t.last_season_in_db
+            FROM club_master cm
+            JOIN club_trajectory t ON t.club_id = cm.club_id
+            WHERE cm.latitude IS NOT NULL
+            """
+        ):
+            tiers = {
+                str(row[0]): row[1]
+                for row in self.conn.execute(
+                    "SELECT season_end_year, tier FROM standings WHERE club_id = ?",
+                    (r["club_id"],),
+                )
+            }
+            n_seasons = len(tiers)
+            clubs.append({
+                "id": r["club_id"],
+                "name": r["canonical_name"],
+                "stadium": r["stadium_name"] or "",
+                "lat": r["latitude"],
+                "lon": r["longitude"],
+                "color": self.color(r["club_id"]),
+                "tier": r["current_tier"],
+                "defunct": r["current_tier"] == 0,
+                "fallen": r["highest_tier"] == 1 and (r["current_tier"] or 9) >= 3,
+                "yoyo": (r["yo_yo_score"] or 0) >= 0.25,
+                "everpresent": n_seasons == len(self.seasons),
+                "tiers": tiers,
+            })
+
+        out_dir = self.out / "map"
+        out_dir.mkdir(parents=True, exist_ok=True)
+        (out_dir / "map-data.js").write_text(
+            "window.MAP_DATA = " + json.dumps({"years": self.seasons, "clubs": clubs}) + ";",
+            encoding="utf-8",
+        )
+        self.render(
+            "map.html", out_dir / "index.html", 1,
+            title="Groundhop Map",
+            first_year=self.seasons[0],
+            last_year=self.seasons[-1],
+            last_label=season_label(self.seasons[-1]),
+        )
+
+    # ── Digest archive ────────────────────────────────────────────────────
+
+    def build_digest_archive(self) -> None:
+        archive_src = PROJECT_ROOT / "content" / "digests"
+        entries = []
+        if archive_src.exists():
+            for item in sorted(archive_src.iterdir(), reverse=True):
+                if item.is_dir() and (item / "index.html").exists():
+                    shutil.copytree(item, self.out / "digest" / item.name)
+                    entries.append({"slug": item.name, "name": item.name,
+                                    "sub": "Weekly preview"})
+        self.render(
+            "insights_index.html", self.out / "digest" / "index.html", 1,
+            title="Digest archive",
+            entries=[
+                {"slug": e["slug"], "name": e["name"], "sub": e["sub"]}
+                for e in entries
+            ] or [{"slug": ".", "name": "No digests archived yet",
+                   "sub": "They appear here after each Monday email"}],
         )
 
     def build(self) -> None:
@@ -457,7 +717,9 @@ class SiteBuilder:
         self.build_teams()
         self.build_chart()
         self.build_matrix()
-        self.build_insights_stub()
+        self.build_insights()
+        self.build_map()
+        self.build_digest_archive()
 
         page_count = sum(1 for _ in self.out.rglob("index.html"))
         logger.info("Site built: %d pages in %s", page_count, self.out)
