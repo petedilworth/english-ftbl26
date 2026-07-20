@@ -30,9 +30,17 @@ CREATE TABLE IF NOT EXISTS club_master (
     canonical_name    TEXT NOT NULL,
     name_variants     TEXT,
     lineage_parent_id TEXT,
-    current_tier      INT
+    current_tier      INT,
+    color_primary     TEXT,
+    color_secondary   TEXT,
+    stadium_name      TEXT,
+    latitude          REAL,
+    longitude         REAL
 );
 """
+
+# Optional CSV columns carried into the DB when present (website styling/map)
+OPTIONAL_COLUMNS = ["color_primary", "color_secondary", "stadium_name", "latitude", "longitude"]
 
 
 def seed_club_master(conn: sqlite3.Connection, csv_path: Path) -> None:
@@ -43,6 +51,14 @@ def seed_club_master(conn: sqlite3.Connection, csv_path: Path) -> None:
     cause name-variant collisions).
     """
     conn.execute(CREATE_CLUB_MASTER_SQL)
+    conn.commit()
+
+    # Migrate pre-existing tables that lack the optional columns
+    existing_cols = {row[1] for row in conn.execute("PRAGMA table_info(club_master)")}
+    for col in OPTIONAL_COLUMNS:
+        if col not in existing_cols:
+            col_type = "REAL" if col in ("latitude", "longitude") else "TEXT"
+            conn.execute(f"ALTER TABLE club_master ADD COLUMN {col} {col_type}")
     conn.commit()
 
     df = pd.read_csv(csv_path, dtype=str, keep_default_na=False)
@@ -74,13 +90,28 @@ def seed_club_master(conn: sqlite3.Connection, csv_path: Path) -> None:
         )
         conn.commit()
 
+    def _optional(row, col):
+        if col not in df.columns:
+            return None
+        value = str(row[col]).strip()
+        if not value:
+            return None
+        if col in ("latitude", "longitude"):
+            try:
+                return float(value)
+            except ValueError:
+                return None
+        return value
+
     cursor = conn.cursor()
     for _, row in df.iterrows():
         cursor.execute(
             """
             INSERT OR REPLACE INTO club_master
-                (club_id, canonical_name, name_variants, lineage_parent_id, current_tier)
-            VALUES (?, ?, ?, ?, ?)
+                (club_id, canonical_name, name_variants, lineage_parent_id,
+                 current_tier, color_primary, color_secondary,
+                 stadium_name, latitude, longitude)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """,
             (
                 row["club_id"].strip(),
@@ -88,6 +119,11 @@ def seed_club_master(conn: sqlite3.Connection, csv_path: Path) -> None:
                 row["name_variants"].strip() or None,
                 row["lineage_parent_id"].strip() or None,
                 int(row["current_tier"]) if row["current_tier"].strip() else None,
+                _optional(row, "color_primary"),
+                _optional(row, "color_secondary"),
+                _optional(row, "stadium_name"),
+                _optional(row, "latitude"),
+                _optional(row, "longitude"),
             ),
         )
     conn.commit()

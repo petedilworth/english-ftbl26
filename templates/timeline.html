@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Timeline of notable events</h1>
+<p class="subtitle">The stories embedded in the data — expulsions, collapses, relocations and rule changes since 1993.</p>
+
+<div class="timeline">
+{% for event in events %}
+  <div class="timeline-event">
+    <div class="timeline-year">{{ event.year }}</div>
+    <div class="timeline-body">
+      <strong>{{ event.title }}</strong>
+      <p>{{ event.text }}</p>
+    </div>
+  </div>
+{% endfor %}
+</div>
+{% endblock %}

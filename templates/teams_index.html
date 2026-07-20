@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Teams</h1>
+<p class="subtitle">{{ teams|length }} clubs to have played in Tiers 1–5 since 1993/94.</p>
+
+<input class="search-input" id="team-search" type="search" placeholder="Search clubs…" autocomplete="off">
+
+<div class="az-nav">
+  {% for letter in letters %}<a href="#letter-{{ letter }}">{{ letter }}</a>{% endfor %}
+</div>
+
+<h2>By current division</h2>
+{% for group in by_tier %}
+<h3>{{ group.label }}</h3>
+<ul class="team-list searchable">
+  {% for t in group.teams %}
+  <li data-name="{{ t.search_key }}"><span class="color-chip" style="background: {{ t.color }}"></span><a href="{{ root }}/team/{{ t.club_id }}/index.html">{{ t.name }}</a></li>
+  {% endfor %}
+</ul>
+{% endfor %}
+
+<h2>A–Z</h2>
+{% for letter, group in az %}
+<h3 id="letter-{{ letter }}">{{ letter }}</h3>
+<ul class="team-list searchable">
+  {% for t in group %}
+  <li data-name="{{ t.search_key }}"><span class="color-chip" style="background: {{ t.color }}"></span><a href="{{ root }}/team/{{ t.club_id }}/index.html">{{ t.name }}</a><span class="tier-note">{{ t.tier_label }}</span></li>
+  {% endfor %}
+</ul>
+{% endfor %}
+
+<script src="{{ root }}/static/search.js"></script>
+{% endblock %}

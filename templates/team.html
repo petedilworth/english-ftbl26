@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="club-header" style="--club-primary: {{ color }}">
+  <h1>{{ name }}</h1>
+  <p class="subtitle">{{ tagline }}</p>
+</div>
+
+<div class="stat-cards">
+  {% for card in stats %}
+  <div class="stat-card"><div class="stat-value">{{ card.value }}</div><div class="stat-label">{{ card.label }}</div></div>
+  {% endfor %}
+</div>
+
+{% if has_chart %}
+<h2>League position, {{ first_season }}–{{ last_season }}</h2>
+<img class="chart-img" src="chart.png" alt="{{ name }} league position history">
+{% endif %}
+
+<h2>The story</h2>
+<div class="narrative">
+{% if narrative_html %}
+{{ narrative_html }}
+{% else %}
+<p class="narrative-placeholder">The written history of {{ name }} is still to come.</p>
+{% endif %}
+</div>
+
+<h2>Season by season</h2>
+<div class="table-scroll">
+<table class="standings">
+  <tr><th>Season</th><th>Division</th><th class="num">Pos</th><th class="num">P</th><th class="num">W</th><th class="num">D</th><th class="num">L</th><th class="num">GD</th><th class="num">Pts</th><th></th></tr>
+  {% for row in seasons %}
+  <tr class="status-{{ row.status_slug }}">
+    <td><a href="{{ root }}/season/{{ row.season_slug }}/index.html">{{ row.season_label }}</a></td>
+    <td>{{ row.division_name }}</td>
+    <td class="num">{{ row.position }}</td>
+    <td class="num">{{ row.played }}</td>
+    <td class="num">{{ row.won }}</td>
+    <td class="num">{{ row.drawn }}</td>
+    <td class="num">{{ row.lost }}</td>
+    <td class="num">{{ row.gd }}</td>
+    <td class="num"><strong>{{ row.points }}</strong></td>
+    <td><span class="status-tag {{ row.status_dir }}">{{ row.status_label }}</span></td>
+  </tr>
+  {% endfor %}
+</table>
+</div>
+{% endblock %}

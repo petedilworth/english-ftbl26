@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>English Football History</h1>
+<p class="subtitle">Standings, stories and trajectories across Tiers 1–5, from 1993/94 to today.</p>
+
+<div class="tile-grid">
+  <a class="tile" href="{{ root }}/seasons/index.html"><span class="tile-title">Seasons</span><br><span class="tile-sub">{{ season_count }} years, every table</span></a>
+  <a class="tile" href="{{ root }}/teams/index.html"><span class="tile-title">Teams</span><br><span class="tile-sub">{{ team_count }} clubs, each with a story</span></a>
+  <a class="tile" href="{{ root }}/division/index.html"><span class="tile-title">Divisions</span><br><span class="tile-sub">Five tiers through time</span></a>
+  <a class="tile" href="{{ root }}/insights/index.html"><span class="tile-title">Insights</span><br><span class="tile-sub">Yo-yo clubs, fallen giants &amp; more</span></a>
+</div>
+
+<h2>The current season — {{ current_label }}</h2>
+{% for division in divisions %}
+<h3>{{ division.name }}</h3>
+<div class="table-scroll">
+<table class="standings">
+  <tr><th>#</th><th>Club</th><th class="num">P</th><th class="num">GD</th><th class="num">Pts</th><th></th></tr>
+  {% for row in division.rows %}
+  <tr class="status-{{ row.status_slug }}">
+    <td class="num">{{ row.position }}</td>
+    <td>{% if row.club_id %}<a href="{{ root }}/team/{{ row.club_id }}/index.html">{{ row.name }}</a>{% else %}{{ row.name }}{% endif %}</td>
+    <td class="num">{{ row.played }}</td>
+    <td class="num">{{ row.gd }}</td>
+    <td class="num"><strong>{{ row.points }}</strong></td>
+    <td><span class="status-tag {{ row.status_dir }}">{{ row.status_label }}</span></td>
+  </tr>
+  {% endfor %}
+</table>
+</div>
+{% endfor %}
+{% endblock %}
