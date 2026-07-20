@@ -65,6 +65,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/db/england.db content/digests
+          git add data/db/england.db
+          if [ -d content/digests ]; then
+            git add content/digests
+          fi
           git commit -m "Update england.db and digest archive (weekly run)" || exit 0
           git push
