@@ -339,6 +339,94 @@ class SiteBuilder:
             letters=sorted(az.keys()),
         )
 
+    def build_chart(self) -> None:
+        import json
+
+        import charts as charts_mod
+
+        tier_floors = {}
+        max_pos = 0
+        for year in self.seasons:
+            counts = self.conn.execute(
+                """
+                SELECT tier, COUNT(*) FROM standings
+                WHERE season_end_year = ? GROUP BY tier ORDER BY tier
+                """,
+                (year,),
+            ).fetchall()
+            floors, running = [], 0
+            for _tier, n in counts:
+                running += n
+                floors.append(running)
+            max_pos = max(max_pos, running)
+            tier_floors[str(year)] = floors[:-1]  # boundaries between tiers
+
+        clubs = []
+        for t in self.conn.execute(
+            "SELECT club_id, canonical_name FROM club_trajectory ORDER BY canonical_name"
+        ):
+            series = charts_mod.overall_positions(self.conn, t["club_id"])
+            if series:
+                clubs.append({
+                    "id": t["club_id"],
+                    "name": t["canonical_name"],
+                    "color": self.color(t["club_id"]),
+                    "series": series,
+                })
+
+        payload = {
+            "years": self.seasons,
+            "maxPos": max_pos,
+            "tierFloors": tier_floors,
+            "clubs": clubs,
+        }
+        out_dir = self.out / "chart"
+        out_dir.mkdir(parents=True, exist_ok=True)
+        (out_dir / "chart-data.js").write_text(
+            "window.CHART_DATA = " + json.dumps(payload) + ";", encoding="utf-8"
+        )
+        self.render(
+            "chart.html", out_dir / "index.html", 1,
+            title="Trajectory chart",
+            first_label=season_label(self.seasons[0]),
+            last_label=season_label(self.seasons[-1]),
+        )
+
+    def build_matrix(self) -> None:
+        tiers = []
+        for tier, (_slug, name) in TIER_SLUGS.items():
+            columns = []
+            for year in self.seasons:
+                rows = self.conn.execute(
+                    """
+                    SELECT club_id, club_name, status FROM standings
+                    WHERE season_end_year = ? AND tier = ? ORDER BY position
+                    """,
+                    (year, tier),
+                ).fetchall()
+                if not rows:
+                    continue
+                columns.append({
+                    "label": season_label(year),
+                    "clubs": [
+                        {
+                            "club_id": r["club_id"],
+                            "name": r["club_name"],
+                            "status_slug": STATUS_PRESENTATION.get(
+                                r["status"], ("stayed", "", "")
+                            )[0],
+                        }
+                        for r in rows
+                    ],
+                })
+            if columns:
+                tiers.append({"name": name, "columns": columns})
+
+        self.render(
+            "matrix.html", self.out / "matrix" / "index.html", 1,
+            title="The Matrix", tiers=tiers,
+        )
+
     def build_insights_stub(self) -> None:
         # Placeholder until Phase C lands the four insight pages.
         entries = [
@@ -367,6 +455,8 @@ class SiteBuilder:
         self.build_seasons()
         self.build_divisions()
         self.build_teams()
+        self.build_chart()
+        self.build_matrix()
         self.build_insights_stub()
 
         page_count = sum(1 for _ in self.out.rglob("index.html"))

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Trajectory chart</h1>
+<p class="subtitle">Overall league position across all five tiers, {{ first_label }}–{{ last_label }}. Pick clubs to compare.</p>
+
+<input class="search-input" id="club-filter" type="search" placeholder="Filter clubs…" autocomplete="off">
+<div id="club-picker" class="club-picker"></div>
+
+<div id="chart-holder" class="chart-holder">
+  <svg id="trajectory-chart" viewBox="0 0 720 420" preserveAspectRatio="xMidYMid meet"></svg>
+</div>
+<p class="subtitle" id="chart-hint">Tick a club above to draw its line.</p>
+
+<script src="chart-data.js"></script>
+<script src="{{ root }}/static/chart.js"></script>
+{% endblock %}
