@@ -82,6 +82,28 @@ def test_team_chart_generated(tmp_path):
     assert "chart.png" in team
 
 
+def test_matrix_is_one_table_most_recent_first(tmp_path):
+    db = _db_on_disk(tmp_path)
+    out = tmp_path / "site"
+    SiteBuilder(db, out, charts_enabled=False).build()
+
+    matrix = (out / "matrix" / "index.html").read_text()
+
+    # Single shared table, not one per division, so every row scrolls together
+    assert matrix.count("<table class=\"matrix\">") == 1
+
+    # Most recent season appears before older ones (left-to-right order)
+    assert matrix.index("2024/25") < matrix.index("2023/24") < matrix.index("2022/23")
+
+    # Every division with any data becomes its own row
+    assert "Premier League" in matrix
+    assert "Championship" in matrix
+    assert "League One" in matrix
+
+    # Clubs still carry data-club for the highlight script, regardless of table shape
+    assert 'data-club="giant-fc"' in matrix
+
+
 def test_insights_and_map_pages(tmp_path):
     db = _db_on_disk(tmp_path)
     out = tmp_path / "site"

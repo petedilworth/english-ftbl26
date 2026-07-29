@@ -393,38 +393,41 @@ class SiteBuilder:
         )
 
     def build_matrix(self) -> None:
-        tiers = []
+        # One shared season axis (most recent first) so every division's row
+        # scrolls in lockstep and a given column always means the same year.
+        season_years = list(reversed(self.seasons))
+        season_columns = [season_label(y) for y in season_years]
+
+        rows = []
         for tier, (_slug, name) in TIER_SLUGS.items():
-            columns = []
-            for year in self.seasons:
-                rows = self.conn.execute(
+            cells = []
+            has_data = False
+            for year in season_years:
+                clubs = self.conn.execute(
                     """
                     SELECT club_id, club_name, status FROM standings
                     WHERE season_end_year = ? AND tier = ? ORDER BY position
                     """,
                     (year, tier),
                 ).fetchall()
-                if not rows:
-                    continue
-                columns.append({
-                    "label": season_label(year),
-                    "clubs": [
-                        {
-                            "club_id": r["club_id"],
-                            "name": r["club_name"],
-                            "status_slug": STATUS_PRESENTATION.get(
-                                r["status"], ("stayed", "", "")
-                            )[0],
-                        }
-                        for r in rows
-                    ],
-                })
-            if columns:
-                tiers.append({"name": name, "columns": columns})
+                if clubs:
+                    has_data = True
+                cells.append([
+                    {
+                        "club_id": r["club_id"],
+                        "name": r["club_name"],
+                        "status_slug": STATUS_PRESENTATION.get(
+                            r["status"], ("stayed", "", "")
+                        )[0],
+                    }
+                    for r in clubs
+                ])
+            if has_data:
+                rows.append({"name": name, "cells": cells})
 
         self.render(
             "matrix.html", self.out / "matrix" / "index.html", 1,
-            title="The Matrix", tiers=tiers,
+            title="The Matrix", season_columns=season_columns, rows=rows,
         )
 
     # ── Insights ───────────────────────────────────────────────────────────
