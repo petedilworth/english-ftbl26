@@ -1,27 +1,28 @@
 {% extends "base.html" %}
 {% block content %}
 <h1>The Matrix</h1>
-<p class="subtitle">Every division, every season. Scroll sideways through time; tap any club to light up its journey.</p>
+<p class="subtitle">Every division, every season — most recent on the left. Scroll sideways through time; tap any club to light up its journey.</p>
 
-{% for tier_block in tiers %}
-<h2>{{ tier_block.name }}</h2>
 <div class="matrix-scroll">
   <table class="matrix">
     <tr>
-      {% for col in tier_block.columns %}<th>{{ col.label }}</th>{% endfor %}
+      <th class="matrix-corner"></th>
+      {% for label in season_columns %}<th>{{ label }}</th>{% endfor %}
     </tr>
+    {% for row in rows %}
     <tr>
-      {% for col in tier_block.columns %}
+      <th class="matrix-row-label">{{ row.name }}</th>
+      {% for cell in row.cells %}
       <td>
-        {% for club in col.clubs %}
+        {% for club in cell %}
         <span class="matrix-club status-{{ club.status_slug }}" data-club="{{ club.club_id or club.name }}">{{ club.name }}</span>
         {% endfor %}
       </td>
       {% endfor %}
     </tr>
+    {% endfor %}
   </table>
 </div>
-{% endfor %}
 
 <script src="{{ root }}/static/matrix.js"></script>
 {% endblock %}
