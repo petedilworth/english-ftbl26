@@ -291,6 +291,8 @@ class SiteBuilder:
                 chart_path = charts.fixture_chart(
                     self.conn, club_id, None, t["canonical_name"], "",
                     out_dir / "chart.png",
+                    show_tier_lines=True,
+                    show_events=True,
                 )
                 has_chart = chart_path is not None
 
@@ -344,22 +346,8 @@ class SiteBuilder:
 
         import charts as charts_mod
 
-        tier_floors = {}
-        max_pos = 0
-        for year in self.seasons:
-            counts = self.conn.execute(
-                """
-                SELECT tier, COUNT(*) FROM standings
-                WHERE season_end_year = ? GROUP BY tier ORDER BY tier
-                """,
-                (year,),
-            ).fetchall()
-            floors, running = [], 0
-            for _tier, n in counts:
-                running += n
-                floors.append(running)
-            max_pos = max(max_pos, running)
-            tier_floors[str(year)] = floors[:-1]  # boundaries between tiers
+        floors_by_year, max_pos = charts_mod.tier_floors(self.conn)
+        tier_floors_json = {str(year): floors for year, floors in floors_by_year.items()}
 
         clubs = []
         for t in self.conn.execute(
@@ -371,13 +359,13 @@ class SiteBuilder:
                     "id": t["club_id"],
                     "name": t["canonical_name"],
                     "color": self.color(t["club_id"]),
-                    "series": series,
+                    "series": series,  # [year, overall_pos, event|null] triples
                 })
 
         payload = {
             "years": self.seasons,
             "maxPos": max_pos,
-            "tierFloors": tier_floors,
+            "tierFloors": tier_floors_json,
             "clubs": clubs,
         }
         out_dir = self.out / "chart"

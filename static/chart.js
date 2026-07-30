@@ -3,11 +3,14 @@
 //   years: [1994, ...],
 //   maxPos: 112,
 //   tierFloors: {"1994": [22, 46, 70, 92], ...},  // cumulative clubs per tier boundary
-//   clubs: [{id, name, color, series: [[year, overallPos], ...]}, ...]
+//   clubs: [{id, name, color, series: [[year, overallPos, event], ...]}, ...]
+//     event is "promoted", "relegated", or null
 // }
 (function () {
   var data = window.CHART_DATA;
   if (!data) return;
+
+  var UP = "#1a7f3c", DOWN = "#b3261e";
 
   var svg = document.getElementById("trajectory-chart");
   var picker = document.getElementById("club-picker");
@@ -47,7 +50,7 @@
         var yy = y(floors[b] + 0.5);
         d += (d ? " L" : "M") + x(years[i]).toFixed(1) + " " + yy.toFixed(1);
       }
-      if (d) svg.appendChild(el("path", {d: d, fill: "none", stroke: "#d9dee3", "stroke-width": 1}));
+      if (d) svg.appendChild(el("path", {d: d, fill: "none", stroke: "#e4e8ec", "stroke-width": 1}));
     }
     // Axes labels
     for (var yr2 = Math.ceil(minYear / 4) * 4; yr2 <= maxYear; yr2 += 4) {
@@ -76,7 +79,18 @@
         prevYear = pt[0];
       });
       svg.appendChild(el("path", {d: d, fill: "none", stroke: club.color,
-        "stroke-width": 2, "stroke-linejoin": "round"}));
+        "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round"}));
+
+      club.series.forEach(function (pt) {
+        if (pt[2] === "promoted") {
+          svg.appendChild(el("circle", {cx: x(pt[0]), cy: y(pt[1]), r: 3.5,
+            fill: UP, stroke: "#fff", "stroke-width": 1}));
+        } else if (pt[2] === "relegated") {
+          svg.appendChild(el("circle", {cx: x(pt[0]), cy: y(pt[1]), r: 3.5,
+            fill: DOWN, stroke: "#fff", "stroke-width": 1}));
+        }
+      });
+
       var last = club.series[club.series.length - 1];
       svg.appendChild(el("circle", {cx: x(last[0]), cy: y(last[1]), r: 3, fill: club.color}));
     });

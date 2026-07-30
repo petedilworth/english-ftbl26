@@ -1,7 +1,12 @@
 """
-Render a two-club "overall league position over time" chart as a PNG,
-in the style of smcgivern/historical-league-positions: one continuous
-y-axis across all tiers, position 1 at the top.
+Render league position charts as PNGs, in the style of
+smcgivern/historical-league-positions: one continuous y-axis across all
+tiers, position 1 at the top.
+
+Styling matches the site's CSS custom properties (static/style.css) so
+this chart and the interactive SVG trajectory chart (static/chart.js)
+read as the same design: --muted for axis text, --line for gridlines,
+white background, no tick marks, unboxed legend, round line joins.
 """
 
 import logging
@@ -17,12 +22,61 @@ logger = logging.getLogger(__name__)
 
 COLORS = ("#2166ac", "#e08214")
 
+MUTED = "#6b7683"
+LINE = "#e4e8ec"
+INK = "#17202a"
+UP = "#1a7f3c"
+DOWN = "#b3261e"
 
-def overall_positions(conn: sqlite3.Connection, club_id: str) -> list[tuple[int, int]]:
+
+def tier_floors(conn: sqlite3.Connection) -> tuple[dict[int, list[int]], int]:
+    """
+    For each season in the standings table, the cumulative club count at
+    each tier boundary (e.g. [20, 44, 68, 92] for a 20+24+24+24-club
+    pyramid that season), omitting the final boundary since there's no
+    tier below it to separate. Also returns the largest overall position
+    seen across all seasons, for y-axis scaling.
+
+    Shared by the interactive SVG chart and this module's PNG charts so
+    tier boundaries are only computed once.
+    """
+    years = [
+        r[0]
+        for r in conn.execute(
+            "SELECT DISTINCT season_end_year FROM standings ORDER BY season_end_year"
+        )
+    ]
+    floors_by_year: dict[int, list[int]] = {}
+    max_pos = 0
+    for year in years:
+        counts = conn.execute(
+            "SELECT tier, COUNT(*) FROM standings WHERE season_end_year = ?"
+            " GROUP BY tier ORDER BY tier",
+            (year,),
+        ).fetchall()
+        floors, running = [], 0
+        for _tier, n in counts:
+            running += n
+            floors.append(running)
+        max_pos = max(max_pos, running)
+        floors_by_year[year] = floors[:-1]
+    return floors_by_year, max_pos
+
+
+def overall_positions(
+    conn: sqlite3.Connection, club_id: str
+) -> list[tuple[int, int, str | None]]:
     """
     A club's overall position per season: league position plus the number
     of clubs in higher tiers that season (league sizes varied over time,
-    so the offset is computed per season rather than assumed).
+    so the offset is computed per season rather than assumed). Each point
+    also carries an event marker, "promoted" or "relegated" or None,
+    derived from the (already-reconciled) standings.status column.
+
+    A Tier 1 "Champions" is a title, not a promotion - there's no tier
+    above the Premier League to move up into - so it does not count as
+    a "promoted" event. This mirrors the same tier > 1 condition used to
+    fix club_trajectory's promotion count.
     """
     rows = conn.execute(
         """
@@ -31,14 +85,20 @@ def overall_positions(conn: sqlite3.Connection, club_id: str) -> list[tuple[int,
                    SELECT COUNT(*) FROM standings s2
                    WHERE s2.season_end_year = s.season_end_year
                      AND s2.tier < s.tier
-               ) AS overall_pos
+               ) AS overall_pos,
+               CASE
+                   WHEN s.status IN ('Champions', 'Promoted', 'Play-off Promoted')
+                        AND s.tier > 1 THEN 'promoted'
+                   WHEN s.status IN ('Relegated', 'Play-off Relegated') THEN 'relegated'
+                   ELSE NULL
+               END AS event
         FROM standings s
         WHERE s.club_id = ?
         ORDER BY s.season_end_year
         """,
         (club_id,),
     ).fetchall()
-    return [(int(season), int(pos)) for season, pos in rows]
+    return [(int(season), int(pos), event) for season, pos, event in rows]
 
 
 def fixture_chart(
@@ -48,10 +108,15 @@ def fixture_chart(
     home_label: str,
     away_label: str,
     out_path: Path,
+    show_tier_lines: bool = False,
+    show_events: bool = False,
 ) -> Path | None:
     """
     Save an overlaid position-history chart for the two clubs in a fixture.
     Returns the path, or None if neither club has any history.
+
+    show_tier_lines/show_events default off so the digest email's two-club
+    comparison chart is unaffected; team pages opt in to both.
     """
     series = []
     for club_id, label, color in (
@@ -68,16 +133,56 @@ def fixture_chart(
         return None
 
     fig, ax = plt.subplots(figsize=(7.2, 3.2), dpi=110)
+    fig.patch.set_facecolor("white")
+    ax.set_facecolor("white")
+
+    if show_tier_lines:
+        all_years = [p[0] for _, _, points in series for p in points]
+        floors_by_year, _ = tier_floors(conn)
+        min_year, max_year = min(all_years), max(all_years)
+        relevant_years = sorted(
+            y for y in floors_by_year if min_year <= y <= max_year
+        )
+        boundary_count = max(
+            (len(floors_by_year[y]) for y in relevant_years), default=0
+        )
+        for b in range(boundary_count):
+            ys = [
+                floors_by_year[y][b] + 0.5 if b < len(floors_by_year[y]) else float("nan")
+                for y in relevant_years
+            ]
+            ax.plot(
+                relevant_years, ys,
+                color=LINE, linewidth=1, drawstyle="steps-post", zorder=0,
+            )
+
     for label, color, points in series:
         years = [p[0] for p in points]
         positions = [p[1] for p in points]
-        ax.plot(years, positions, color=color, linewidth=1.6, label=label)
+        ax.plot(
+            years, positions, color=color, linewidth=1.6, label=label,
+            solid_joinstyle="round", solid_capstyle="round", zorder=2,
+        )
+        if show_events:
+            promoted = [(p[0], p[1]) for p in points if p[2] == "promoted"]
+            relegated = [(p[0], p[1]) for p in points if p[2] == "relegated"]
+            if promoted:
+                px, py = zip(*promoted)
+                ax.scatter(px, py, color=UP, s=28, zorder=3,
+                          edgecolors="white", linewidths=0.6)
+            if relegated:
+                rx, ry = zip(*relegated)
+                ax.scatter(rx, ry, color=DOWN, s=28, zorder=3,
+                          edgecolors="white", linewidths=0.6)
 
     ax.invert_yaxis()
-    ax.set_ylabel("Overall league position")
-    ax.grid(True, alpha=0.25)
-    ax.legend(loc="best", fontsize=9, framealpha=0.9)
+    ax.set_ylabel("Overall league position", color=MUTED, fontsize=10)
+    ax.grid(True, axis="y", color=LINE, linewidth=0.8, zorder=0)
+    ax.tick_params(colors=MUTED, length=0, labelsize=9)
+    ax.legend(loc="best", fontsize=9, frameon=False, labelcolor=INK)
     ax.spines[["top", "right"]].set_visible(False)
+    ax.spines["left"].set_color(LINE)
+    ax.spines["bottom"].set_color(LINE)
     fig.tight_layout()
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
