@@ -109,6 +109,49 @@ table.standings tr.status-relegated, table.standings tr.status-play-off-relegate
 .stat-card .stat-value { font-size: 20px; font-weight: 700; }
 .stat-card .stat-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
 
+/* Club facts panel */
+table.facts {
+  border-collapse: collapse;
+  font-size: 13px;
+  margin: 6px 0 18px;
+  width: 100%;
+  max-width: 680px;
+}
+table.facts th {
+  text-align: left;
+  font-weight: 600;
+  color: var(--muted);
+  padding: 6px 14px 6px 0;
+  border-bottom: 1px solid var(--line);
+  white-space: nowrap;
+  vertical-align: top;
+  width: 1%;
+}
+table.facts td {
+  padding: 6px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+/* Theme chips on a club page */
+.theme-chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 4px; }
+.theme-chip {
+  font-size: 12px;
+  padding: 3px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--bg-soft);
+  color: var(--muted);
+  text-decoration: none;
+}
+.theme-chip:hover { border-color: var(--accent); color: var(--accent); }
+
+.story-heading {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  margin: 22px 0 4px;
+}
 .narrative { max-width: 680px; }
 .narrative-placeholder {
   color: var(--muted);

@@ -22,6 +22,8 @@ from jinja2 import Environment, FileSystemLoader
 _SRC = Path(__file__).parent
 sys.path.insert(0, str(_SRC))
 
+import content  # noqa: E402  (needs _SRC on the path first)
+
 PROJECT_ROOT = _SRC.parent
 
 logger = logging.getLogger(__name__)
@@ -54,6 +56,117 @@ def season_label(year: int) -> str:
     return f"{year - 1}/{year % 100:02d}"
 
 
+OWNERSHIP_LABELS = {
+    "fan_trust": "Fan / supporters' trust",
+    "family": "Family / local dynasty",
+    "benefactor": "Benefactor-funded",
+    "consortium": "Consortium",
+    "foreign_investment": "Foreign investment",
+    "multi_club": "Multi-club group",
+    "celebrity_media": "Celebrity / media ownership",
+    "plc": "Public limited company",
+}
+
+STADIUM_OWNERSHIP_LABELS = {
+    "club": "Owned by the club",
+    "council": "Council-owned",
+    "third_party": "Owned by a third party",
+    "disputed": "Ownership disputed",
+}
+
+ORIGIN_LABELS = {
+    "works": "Works team",
+    "church": "Church team",
+    "pub": "Pub team",
+    "school": "School / old boys",
+    "youth": "Youth / street team",
+    "civic": "Civic founding",
+    "phoenix": "Phoenix club",
+    "other": "Other",
+}
+
+
+def _facts_rows(facts: dict) -> list[dict]:
+    """
+    Turn front-matter into an ordered list of {label, value} rows for the
+    club facts panel. Only facts actually present are returned, so a
+    thinly-researched club shows a short panel rather than a row of blanks.
+    """
+    rows = []
+
+    def add(label, value):
+        if value not in (None, "", [], {}):
+            rows.append({"label": label, "value": str(value)})
+
+    founded = facts.get("founded")
+    if founded:
+        origin = ORIGIN_LABELS.get(facts.get("origin_type"))
+        add("Founded", f"{founded} · {origin}" if origin else founded)
+    elif facts.get("origin_type"):
+        add("Origin", ORIGIN_LABELS.get(facts["origin_type"]))
+    add("Formed as", facts.get("origin_note"))
+
+    owner = facts.get("owner")
+    if owner:
+        since = facts.get("owner_since")
+        add("Owner", f"{owner} (since {since})" if since else owner)
+    add("Ownership model", OWNERSHIP_LABELS.get(facts.get("ownership_model")))
+    add("Multi-club group", facts.get("multi_club_group"))
+
+    stadium = facts.get("stadium")
+    if stadium:
+        opened = facts.get("stadium_opened")
+        add("Stadium", f"{stadium} (opened {opened})" if opened else stadium)
+    add("Ground ownership", STADIUM_OWNERSHIP_LABELS.get(facts.get("stadium_ownership")))
+    if facts.get("capacity"):
+        add("Capacity", f"{int(facts['capacity']):,}")
+    if facts.get("pitch_type") == "artificial_3g":
+        add("Pitch", "Artificial 3G")
+
+    for grounds in (facts.get("previous_grounds") or []):
+        if isinstance(grounds, dict) and grounds.get("name"):
+            years = grounds.get("years")
+            add("Former ground", f"{grounds['name']} ({years})" if years else grounds["name"])
+
+    for spell in (facts.get("exile") or []):
+        if isinstance(spell, dict) and spell.get("venue"):
+            bits = [spell["venue"]]
+            if spell.get("seasons"):
+                bits.append(str(spell["seasons"]))
+            if spell.get("distance_miles"):
+                bits.append(f"~{spell['distance_miles']} miles away")
+            add("Played home games at", " · ".join(bits))
+
+    for event in (facts.get("administration") or []):
+        if isinstance(event, dict) and event.get("year"):
+            pts = event.get("points_deducted")
+            add("Administration", f"{event['year']}"
+                + (f" · −{pts} points" if pts else ""))
+
+    for event in (facts.get("points_deductions") or []):
+        if isinstance(event, dict) and event.get("points"):
+            season = event.get("season_end_year")
+            label = f"−{event['points']} points"
+            if season:
+                label += f" in {season_label(int(season))}"
+            if event.get("reason"):
+                label += f" · {event['reason']}"
+            add("Points deduction", label)
+
+    for denial in (facts.get("ground_grading_denial") or []):
+        if isinstance(denial, dict):
+            season = denial.get("season_end_year")
+            note = denial.get("note") or "Promotion denied on ground grading"
+            add("Ground grading", f"{season_label(int(season))} · {note}" if season else note)
+
+    if facts.get("phoenix_of"):
+        folded = facts.get("predecessor_folded")
+        add("Successor to", f"{facts['phoenix_of']}"
+            + (f" (folded {folded})" if folded else ""))
+
+    return rows
+
+
 def _row_dict(r) -> dict:
     slug, direction, label = STATUS_PRESENTATION.get(r["status"], ("stayed", "", ""))
     return {
@@ -84,6 +197,9 @@ class SiteBuilder:
             loader=FileSystemLoader(PROJECT_ROOT / "templates"), autoescape=True
         )
         self.colors = self._load_colors()
+        # {club_id: [theme_slug, ...]} - filled by build_teams, consumed by
+        # build_themes, so themes always reflect what the club pages rendered
+        self.club_themes: dict[str, list[str]] = {}
         self.seasons = [
             r[0] for r in self.conn.execute(
                 "SELECT DISTINCT season_end_year FROM standings ORDER BY season_end_year"
@@ -278,11 +394,29 @@ class SiteBuilder:
                 d["division_name"] = r["division_name"]
                 seasons.append(d)
 
-            narrative_html = None
-            md_file = content_dir / f"{club_id}.md"
-            if md_file.exists():
+            club_content = content.load_club(content_dir / f"{club_id}.md")
+            story_sections = []
+            facts_rows = []
+            club_themes = []
+            extra_html = None
+            if club_content:
                 from markupsafe import Markup
-                narrative_html = Markup(md.markdown(md_file.read_text(encoding="utf-8")))
+
+                for key, heading in content.SECTIONS.items():
+                    body = club_content["sections"].get(key)
+                    if body:
+                        story_sections.append({
+                            "heading": heading,
+                            "html": Markup(md.markdown(body)),
+                        })
+                if club_content["extra"]:
+                    extra_html = Markup(md.markdown(club_content["extra"]))
+                facts_rows = _facts_rows(club_content["facts"])
+                club_themes = [
+                    {"slug": s, "label": content.THEMES.get(s, s.replace("-", " ").title())}
+                    for s in club_content["themes"]
+                ]
+                self.club_themes[club_id] = club_content["themes"]
 
             out_dir = self.out / "team" / club_id
             has_chart = False
@@ -306,7 +440,10 @@ class SiteBuilder:
                 has_chart=has_chart,
                 first_season=season_label(t["first_season_in_db"]),
                 last_season=season_label(t["last_season_in_db"]),
-                narrative_html=narrative_html,
+                story_sections=story_sections,
+                extra_html=extra_html,
+                facts_rows=facts_rows,
+                club_themes=club_themes,
                 seasons=seasons,
             )
 
@@ -378,6 +515,46 @@ class SiteBuilder:
             title="Trajectory chart",
             first_label=season_label(self.seasons[0]),
             last_label=season_label(self.seasons[-1]),
+        )
+
+    def build_themes(self) -> None:
+        """
+        Cross-club theme pages, from the facts each club's story declares.
+        Runs after build_teams, which populates self.club_themes.
+        """
+        names = {
+            r["club_id"]: r["canonical_name"]
+            for r in self.conn.execute(
+                "SELECT club_id, canonical_name FROM club_trajectory"
+            )
+        }
+
+        by_theme: dict[str, list[dict]] = {}
+        for club_id, themes in self.club_themes.items():
+            for slug in themes:
+                by_theme.setdefault(slug, []).append({
+                    "club_id": club_id,
+                    "name": names.get(club_id, club_id),
+                    "color": self.color(club_id),
+                })
+
+        entries = []
+        for slug in sorted(by_theme):
+            clubs = sorted(by_theme[slug], key=lambda c: c["name"])
+            label = content.THEMES.get(slug, slug.replace("-", " ").capitalize())
+            entries.append({
+                "slug": slug,
+                "name": label,
+                "sub": f"{len(clubs)} club{'s' if len(clubs) != 1 else ''}",
+            })
+            self.render(
+                "theme.html", self.out / "themes" / slug / "index.html", 2,
+                title=label, heading=label, clubs=clubs,
+            )
+
+        self.render(
+            "themes_index.html", self.out / "themes" / "index.html", 1,
+            title="Themes", entries=entries,
         )
 
     def build_matrix(self) -> None:
@@ -706,6 +883,7 @@ class SiteBuilder:
         self.build_seasons()
         self.build_divisions()
         self.build_teams()
+        self.build_themes()   # after build_teams: consumes self.club_themes
         self.build_chart()
         self.build_matrix()
         self.build_insights()

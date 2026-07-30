@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Themes</h1>
+<p class="subtitle">The off-pitch patterns that recur across the pyramid — how clubs are owned, where they play, and what knocked them off course.</p>
+
+{% if entries %}
+<div class="tile-grid">
+  {% for e in entries %}
+  <a class="tile" href="{{ root }}/themes/{{ e.slug }}/index.html">
+    <span class="tile-title">{{ e.name }}</span><br>
+    <span class="tile-sub">{{ e.sub }}</span>
+  </a>
+  {% endfor %}
+</div>
+{% else %}
+<p class="narrative-placeholder">Themes appear here as club stories are written. Each one is derived from the facts a club's story declares, so nothing needs tagging by hand.</p>
+{% endif %}
+{% endblock %}

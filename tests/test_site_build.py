@@ -192,3 +192,108 @@ def test_map_page_built_when_coordinates_exist(tmp_path):
     assert (out / "map" / "index.html").exists()
     data = (out / "map" / "map-data.js").read_text()
     assert "Test Park" in data and "giant-fc" in data
+
+
+def _build_with_content(tmp_path, monkeypatch, files: dict):
+    """
+    Build the site with a temp content/ dir. files maps club_id -> markdown.
+    Templates and static are copied from the real project root.
+    """
+    import shutil
+
+    import site_build as sb
+
+    db = _db_on_disk(tmp_path)
+    content_dir = tmp_path / "content"
+    content_dir.mkdir()
+    for club_id, text in files.items():
+        (content_dir / f"{club_id}.md").write_text(text, encoding="utf-8")
+
+    real_root = Path(__file__).parent.parent
+    shutil.copytree(real_root / "templates", tmp_path / "templates")
+    shutil.copytree(real_root / "static", tmp_path / "static")
+    monkeypatch.setattr(sb, "PROJECT_ROOT", tmp_path)
+
+    out = tmp_path / "site"
+    SiteBuilder(db, out, charts_enabled=False).build()
+    return out
+
+
+RICH_STORY = """---
+founded: 1905
+origin_type: works
+ownership_model: fan_trust
+owner: The Supporters' Trust
+owner_since: 2003
+stadium: Test Park
+capacity: 8696
+stadium_ownership: council
+administration:
+  - year: 2010
+    points_deducted: 9
+exile:
+  - venue: Somewhere Else
+    seasons: 1997-1999
+    distance_miles: 70
+---
+## Origins
+Formed by factory workers.
+
+## Ownership & Finance
+The trust took control after near-collapse.
+
+## Kit history
+An unrecognised section that should still appear.
+"""
+
+
+def test_team_page_renders_sections_facts_and_chips(tmp_path, monkeypatch):
+    out = _build_with_content(tmp_path, monkeypatch, {"giant-fc": RICH_STORY})
+    page = (out / "team" / "giant-fc" / "index.html").read_text()
+
+    # Named sections, in canonical order (Origins before Ownership)
+    assert page.index("Origins") < page.index("Ownership &amp; Finance")
+    assert "Formed by factory workers." in page
+    assert "The trust took control" in page
+
+    # Unrecognised heading kept rather than dropped
+    assert "Kit history" in page
+
+    # Facts panel
+    assert "Club facts" in page
+    assert "Fan / supporters&#39; trust" in page or "Fan / supporters' trust" in page
+    assert "8,696" in page
+    assert "Council-owned" in page
+    assert "Somewhere Else" in page
+
+    # Theme chips link to theme pages
+    assert 'href="../../themes/fan-owned/index.html"' in page
+    assert "placeholder" not in page.lower()
+
+
+def test_theme_pages_generated_from_facts(tmp_path, monkeypatch):
+    out = _build_with_content(tmp_path, monkeypatch, {"giant-fc": RICH_STORY})
+
+    index = (out / "themes" / "index.html").read_text()
+    assert "Fan-owned clubs" in index
+
+    for slug in ("fan-owned", "administration", "exiled", "council-ground"):
+        page = (out / "themes" / slug / "index.html").read_text()
+        assert "Giant FC" in page, slug
+
+    # steady-fc has no story file, so must not appear on any theme page
+    assert "Steady FC" not in (out / "themes" / "fan-owned" / "index.html").read_text()
+
+
+def test_club_without_story_keeps_placeholder(tmp_path, monkeypatch):
+    out = _build_with_content(tmp_path, monkeypatch, {"giant-fc": RICH_STORY})
+    page = (out / "team" / "steady-fc" / "index.html").read_text()
+    assert "still to come" in page
+    assert "Club facts" not in page      # no empty furniture
+    assert "theme-chip" not in page
+
+
+def test_themes_index_renders_empty_state_with_no_stories(tmp_path, monkeypatch):
+    out = _build_with_content(tmp_path, monkeypatch, {})
+    index = (out / "themes" / "index.html").read_text()
+    assert "Themes appear here" in index
