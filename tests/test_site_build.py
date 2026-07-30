@@ -1,9 +1,11 @@
+import json
 import sqlite3
 import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
+import trajectory
 from site_build import SiteBuilder, season_label, season_slug
 from test_digest import _make_db
 
@@ -80,6 +82,49 @@ def test_team_chart_generated(tmp_path):
     assert (out / "team" / "giant-fc" / "chart.png").exists()
     team = (out / "team" / "giant-fc" / "index.html").read_text()
     assert "chart.png" in team
+
+
+def _promotion_db(tmp_path):
+    """A club promoted from tier 2 to tier 1 - a genuine 'promoted' event."""
+    conn = sqlite3.connect(":memory:")
+    conn.execute(
+        "CREATE TABLE club_master (club_id TEXT PRIMARY KEY, canonical_name TEXT,"
+        " name_variants TEXT, lineage_parent_id TEXT, current_tier INT)"
+    )
+    conn.execute(
+        "CREATE TABLE standings (season_end_year INT, tier INT, division_name TEXT,"
+        " club_id TEXT, club_name TEXT, position INT, played INT, won INT, drawn INT,"
+        " lost INT, gf INT, ga INT, gd INT, points INT, status TEXT, source TEXT)"
+    )
+    conn.execute("INSERT INTO club_master VALUES ('riser-fc','Riser FC',NULL,NULL,1)")
+    for year, tier, pos, status in [(2023, 2, 1, "Champions"), (2024, 1, 15, "Stayed")]:
+        conn.execute(
+            "INSERT INTO standings VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+            (year, tier, "Div", "riser-fc", "Riser FC", pos,
+             46, 20, 10, 16, 60, 50, 10, 70, status, "test"),
+        )
+    trajectory.rebuild_trajectory(conn)
+    path = tmp_path / "promo.db"
+    disk = sqlite3.connect(path)
+    conn.backup(disk)
+    disk.close()
+    return path
+
+
+def test_chart_data_includes_events_and_tier_floors(tmp_path):
+    db = _promotion_db(tmp_path)
+    out = tmp_path / "site"
+    SiteBuilder(db, out, charts_enabled=False).build()
+
+    payload = json.loads(
+        (out / "chart" / "chart-data.js")
+        .read_text()
+        .replace("window.CHART_DATA = ", "")
+        .rstrip(";")
+    )
+    assert payload["tierFloors"]
+    riser = next(c for c in payload["clubs"] if c["id"] == "riser-fc")
+    assert [pt[2] for pt in riser["series"]] == ["promoted", None]
 
 
 def test_matrix_is_one_table_most_recent_first(tmp_path):

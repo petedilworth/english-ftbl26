@@ -160,6 +160,25 @@ table.standings tr.status-relegated, table.standings tr.status-play-off-relegate
 .club-check { display: inline-flex; align-items: center; gap: 5px; cursor: pointer; white-space: nowrap; }
 .chart-holder { border: 1px solid var(--line); border-radius: 8px; }
 .chart-holder svg { display: block; width: 100%; height: auto; }
+.chart-holder svg text {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.chart-legend {
+  display: flex;
+  gap: 16px;
+  font-size: 12px;
+  color: var(--muted);
+  margin: 6px 0 0;
+}
+.chart-legend .dot {
+  display: inline-block;
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.chart-legend .dot.up { background: var(--up); }
+.chart-legend .dot.down { background: var(--down); }
 
 /* Matrix view — one shared scroll container so every division's row moves
    together; row labels and the header stay pinned while scrolling. */
