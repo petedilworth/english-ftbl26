@@ -17,10 +17,31 @@
 <p class="chart-legend"><span><span class="dot up"></span>promotion</span><span><span class="dot down"></span>relegation</span></p>
 {% endif %}
 
+{% if club_themes %}
+<div class="theme-chips">
+  {% for theme in club_themes %}
+  <a class="theme-chip" href="{{ root }}/themes/{{ theme.slug }}/index.html">{{ theme.label }}</a>
+  {% endfor %}
+</div>
+{% endif %}
+
+{% if facts_rows %}
+<h2>Club facts</h2>
+<table class="facts">
+  {% for row in facts_rows %}
+  <tr><th>{{ row.label }}</th><td>{{ row.value }}</td></tr>
+  {% endfor %}
+</table>
+{% endif %}
+
 <h2>The story</h2>
 <div class="narrative">
-{% if narrative_html %}
-{{ narrative_html }}
+{% if story_sections or extra_html %}
+  {% for section in story_sections %}
+  <h3 class="story-heading">{{ section.heading }}</h3>
+  {{ section.html }}
+  {% endfor %}
+  {{ extra_html or "" }}
 {% else %}
 <p class="narrative-placeholder">The written history of {{ name }} is still to come.</p>
 {% endif %}

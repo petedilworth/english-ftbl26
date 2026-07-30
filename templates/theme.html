@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>{{ heading }}</h1>
+<p class="subtitle">{{ clubs|length }} club{{ 's' if clubs|length != 1 }} · <a href="{{ root }}/themes/index.html">all themes</a></p>
+
+<ul class="team-list">
+  {% for club in clubs %}
+  <li><span class="color-chip" style="background: {{ club.color }}"></span><a href="{{ root }}/team/{{ club.club_id }}/index.html">{{ club.name }}</a></li>
+  {% endfor %}
+</ul>
+{% endblock %}

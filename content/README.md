@@ -1,22 +1,110 @@
-# Club narratives
+# Club stories
 
-Write one markdown file per club, named by its `club_id` from `club_master.csv`:
+One markdown file per club, named by its `club_id` from `club_master.csv`:
 
 ```
-content/ipswich-town-fc.md
-content/wimbledon-fc.md
+content/charlton-athletic-fc.md
+content/exeter-city-fc.md
 ```
 
-Plain markdown — headings, paragraphs, lists, links all work:
+Each file has two parts, **both optional**: YAML front-matter carrying the
+hard facts, and markdown prose in named sections. A club with only facts,
+only prose, or nothing at all still renders cleanly — the page just shows
+less. Write what you have and come back later.
 
 ```markdown
-Founded in 1878, Ipswich Town spent most of a century as ...
+---
+founded: 1905
+ownership_model: fan_trust
+---
 
-## The Robson years
+## Origins
+Formed by workers at the Singer cycle factory...
 
-Under Bobby Robson the club won the 1978 FA Cup and the 1981 UEFA Cup ...
+## Trajectory
+The 2013 exile cost them a generation of matchday income...
 ```
 
-The website build picks these up automatically and renders them in the
-"The story" section of the club's page. Clubs without a file show a
-placeholder until you write theirs.
+## What goes in the front-matter
+
+Everything here is optional. Facts you record become a **Club facts**
+panel on the team page, and automatically place the club on the relevant
+[theme pages](../src/content.py) — no tagging needed.
+
+### Origins
+| Field | Notes |
+|---|---|
+| `founded` | Year, e.g. `1905` |
+| `origin_type` | `works`, `church`, `pub`, `school`, `civic`, `phoenix`, `other` |
+| `origin_note` | One line, e.g. `"Formed at the Singer cycle works"` |
+
+### Ownership & finance
+| Field | Notes |
+|---|---|
+| `ownership_model` | `fan_trust`, `family`, `benefactor`, `consortium`, `foreign_investment`, `multi_club`, `celebrity_media`, `plc` |
+| `owner` | Name of the owner or holding entity |
+| `owner_since` | Year |
+| `multi_club_group` | e.g. `"City Football Group"` |
+| `administration` | List of `{year, points_deducted, note}` |
+| `points_deductions` | List of `{season_end_year, points, reason}` |
+
+### Infrastructure & environment
+| Field | Notes |
+|---|---|
+| `stadium` / `stadium_opened` / `capacity` | Current ground |
+| `stadium_ownership` | `club`, `council`, `third_party`, `disputed` |
+| `pitch_type` | `grass` or `artificial_3g` (3G blocks EFL promotion) |
+| `previous_grounds` | List of `{name, years}` |
+| `exile` | List of `{venue, seasons, distance_miles}` — playing "home" games elsewhere |
+| `ground_grading_denial` | List of `{season_end_year, note}` |
+
+### Lineage
+| Field | Notes |
+|---|---|
+| `phoenix_of` | Predecessor `club_id` or name |
+| `predecessor_folded` | Year |
+
+`themes: [taylor-report]` adds theme tags manually, for angles the fields
+above can't express.
+
+## The four prose sections
+
+Use these `##` headings. Any you omit simply don't appear; anything under
+a heading not on this list is kept and shown at the end.
+
+**`## Origins`** — how and why the club came to exist. Almost every English
+club began as a works team, a church side, or a pub team. It explains the
+name, the colours and the location.
+
+**`## Trajectory`** — the *off-pitch* causes behind the rise and fall.
+Points deductions and non-sporting relegations. Insolvency. Ground-grading
+denials that blocked a promotion already won on the pitch. Rule changes
+that decided a club's fate — the 1995 Premier League contraction, two-up
+two-down with the Conference from 2002/03, parachute payments splitting
+the Championship into two leagues in one table.
+
+**`## Ownership & Finance`** — who owns the club and who owns the ground,
+which are often not the same and rarely irrelevant. Sale-and-leaseback
+deals done to satisfy profitability rules. Benefactor dependence and what
+happens when the benefactor loses interest. Wage-to-turnover, not transfer
+spend. Fan campaigns, boycotts and trust takeovers.
+
+**`## Infrastructure & Environment`** — the Taylor Report's all-seater
+requirement reshaping the top two tiers by 1994/95, and safe standing's
+return in 2022. Stadium moves that worked and ones that cost a club its
+identity. Exiles and returns. Council landlords. Academy category and the
+2012 EPPP. Travel burden — Carlisle to Plymouth is around 400 miles, and
+that cost is real. Flooding, and clubs building an identity on
+sustainability.
+
+## House style
+
+Aim for the deep, off-pitch, beyond-the-headline story — **less manager
+and player drama**, more of what actually shaped the club. Prefer causes
+over events: not "they were relegated in 2013" (the tables already say
+that) but *why*, and what it cost.
+
+Stick to the documented public record. Where a story involves named
+owners, insolvency or disputes, describe transactions, court rulings and
+regulatory outcomes rather than characterising anyone's motives, and leave
+out contested allegations.
