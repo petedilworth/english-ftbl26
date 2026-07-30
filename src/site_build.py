@@ -79,6 +79,7 @@ ORIGIN_LABELS = {
     "church": "Church team",
     "pub": "Pub team",
     "school": "School / old boys",
+    "youth": "Youth / street team",
     "civic": "Civic founding",
     "phoenix": "Phoenix club",
     "other": "Other",
@@ -103,6 +104,7 @@ def _facts_rows(facts: dict) -> list[dict]:
         add("Founded", f"{founded} · {origin}" if origin else founded)
     elif facts.get("origin_type"):
         add("Origin", ORIGIN_LABELS.get(facts["origin_type"]))
+    add("Formed as", facts.get("origin_note"))
 
     owner = facts.get("owner")
     if owner:

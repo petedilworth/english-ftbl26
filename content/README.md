@@ -36,7 +36,7 @@ panel on the team page, and automatically place the club on the relevant
 |---|---|
 | `founded` | Year, e.g. `1905` |
 | `origin_type` | `works`, `church`, `pub`, `school`, `civic`, `phoenix`, `other` |
-| `origin_note` | One line, e.g. `"Formed at the Singer cycle works"` |
+| `origin_note` | Reads after "Formed as …", so write a noun phrase: `"Singers F.C., by employees of the Singer cycle works"` |
 
 ### Ownership & finance
 | Field | Notes |

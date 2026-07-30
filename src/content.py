@@ -44,7 +44,7 @@ THEMES = {
     "phoenix": "Phoenix clubs",
     "fan-owned": "Fan-owned clubs",
     "administration": "Clubs that entered administration",
-    "points-deductions": "Non-sporting relegations",
+    "points-deductions": "Clubs docked points",
     "exiled": "Clubs exiled from their town",
     "ground-grading": "Promotion denied on ground grading",
     "council-ground": "Council-owned grounds",
