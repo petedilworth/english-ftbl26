@@ -2,7 +2,7 @@ name: Deploy Site
 
 on:
   schedule:
-    - cron: '45 11 * * 1'   # Mondays ~11:45 UTC, after the weekly digest updates the DB
+    - cron: '45 11 * * 1'   # Mondays ~11:45 UTC — fallback in case the workflow_run trigger below is ever missed
   push:
     branches: [main]
     paths:
@@ -12,6 +12,13 @@ on:
       - 'src/**'
       - 'club_master.csv'
       - 'data/db/england.db'
+  workflow_run:
+    # Commits made by the Weekly Digest workflow use the default GITHUB_TOKEN,
+    # and pushes made with that token do NOT trigger the `push` event above
+    # (GitHub's built-in loop-prevention). workflow_run isn't subject to that
+    # restriction, so this is what actually catches the digest's DB update.
+    workflows: ['Weekly Digest']
+    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -25,9 +32,12 @@ concurrency:
 
 jobs:
   build:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.ref }}
 
       - uses: actions/setup-python@v5
         with:
