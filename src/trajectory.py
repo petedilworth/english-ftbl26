@@ -40,7 +40,10 @@ SELECT
     MIN(s.season_end_year)                                              AS first_season_in_db,
     MAX(s.season_end_year)                                              AS last_season_in_db,
     COUNT(DISTINCT s.season_end_year)                                   AS seasons_in_db,
+    -- tier > 1: a Tier 1 "Champions" is a league title, not a promotion —
+    -- there's no tier above the Premier League to move up into
     SUM(CASE WHEN s.status IN ('Champions','Promoted','Play-off Promoted')
+             AND s.tier > 1
              THEN 1 ELSE 0 END)                                        AS total_promotions,
     SUM(CASE WHEN s.status IN ('Relegated','Play-off Relegated')
              THEN 1 ELSE 0 END)                                        AS total_relegations
