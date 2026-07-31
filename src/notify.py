@@ -19,6 +19,30 @@ logger = logging.getLogger(__name__)
 RESEND_URL = "https://api.resend.com/emails"
 
 
+def _required_env(*names: str) -> list[str]:
+    """
+    Fetch required environment variables, failing with a message that names
+    what's missing. GitHub Actions passes unset secrets through as empty
+    strings rather than omitting them, so blank counts as missing - without
+    this check a missing secret surfaces as a bare KeyError, or worse, an
+    empty Authorization header and a confusing 401 from the API.
+    """
+    values, missing = [], []
+    for name in names:
+        value = os.environ.get(name, "").strip()
+        if not value:
+            missing.append(name)
+        values.append(value)
+
+    if missing:
+        raise RuntimeError(
+            f"Missing required environment variable(s): {', '.join(missing)}. "
+            "Set them as repository secrets under "
+            "Settings > Secrets and variables > Actions."
+        )
+    return values
+
+
 def send_email(
     subject: str,
     html: str,
@@ -30,9 +54,10 @@ def send_email(
     pairs referenced from the HTML as <img src="cid:content_id">.
     Returns the Resend message id. Raises on any failure.
     """
-    api_key = os.environ["RESEND_API_KEY"]
-    email_to = [e.strip() for e in os.environ["EMAIL_TO"].split(",") if e.strip()]
-    email_from = os.environ["EMAIL_FROM"]
+    api_key, email_to_raw, email_from = _required_env(
+        "RESEND_API_KEY", "EMAIL_TO", "EMAIL_FROM"
+    )
+    email_to = [e.strip() for e in email_to_raw.split(",") if e.strip()]
 
     payload = {
         "from": email_from,
