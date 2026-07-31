@@ -33,6 +33,20 @@ DIV_TO_NAME = {
 }
 
 
+def _clean_column(name: str) -> str:
+    """
+    Strip byte-order marks and stray whitespace from a column name.
+
+    football-data.co.uk serves fixtures.csv with a UTF-8 BOM. Reading it
+    with the wrong codec turns the first column into 'ï»¿Div', which
+    silently loses the division column while leaving every other column
+    intact - the file then parses "fine" and yields zero fixtures. We now
+    read as utf-8-sig, but this belt-and-braces pass means a stray BOM
+    from any future encoding change can't reintroduce the same bug.
+    """
+    return str(name).replace("﻿", "").replace("ï»¿", "").strip()
+
+
 def current_season_end_year(today: datetime.date | None = None) -> int:
     """Seasons run Aug-May; from July onward we're in the season ending next year."""
     today = today or datetime.date.today()
@@ -53,10 +67,17 @@ def parse_fixtures(
     today = today or datetime.date.today()
     season = current_season_end_year(today)
 
+    df = df.rename(columns=_clean_column)
+
     required = {"Div", "Date", "HomeTeam", "AwayTeam"}
     missing = required - set(df.columns)
     if missing:
-        logger.error("fixtures.csv missing columns: %s", missing)
+        # Log the actual header so a future format change is diagnosable
+        # rather than silently producing "no fixtures this week".
+        logger.error(
+            "fixtures.csv missing columns %s - actual header was: %s",
+            sorted(missing), list(df.columns)[:12],
+        )
         return []
 
     df = df[df["Div"].isin(DIV_TO_TIER)].copy()
@@ -109,7 +130,15 @@ def fetch_fixtures(
         return []
 
     try:
-        df = pd.read_csv(io.BytesIO(resp.content), encoding="latin-1", on_bad_lines="skip")
+        # utf-8-sig strips the BOM this file is served with; without it the
+        # first column parses as 'ï»¿Div' and the division column vanishes.
+        # encoding_errors keeps accented club names from aborting the read.
+        df = pd.read_csv(
+            io.BytesIO(resp.content),
+            encoding="utf-8-sig",
+            encoding_errors="replace",
+            on_bad_lines="skip",
+        )
     except Exception as exc:
         logger.error("Could not parse fixtures.csv: %s", exc)
         return []

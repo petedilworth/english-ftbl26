@@ -3,6 +3,7 @@ Download match-level CSVs from football-data.co.uk for seasons 1993/94 onward.
 Files are cached in data/raw/ and never re-downloaded unless force=True.
 """
 
+import datetime
 import logging
 import time
 from pathlib import Path
@@ -44,6 +45,17 @@ def str_to_season(s: str) -> int:
     return 2000 + yy if yy < 94 else 1900 + yy
 
 
+def _season_published_yet(season_end_year: int, today: datetime.date | None = None) -> bool:
+    """
+    Whether football-data.co.uk should have files for this season yet.
+
+    A season ending in year N starts the previous August. Before then its
+    files simply don't exist, so a 404 is expected rather than a problem.
+    """
+    today = today or datetime.date.today()
+    return today >= datetime.date(season_end_year - 1, 8, 1)
+
+
 def build_url(season_end_year: int, tier: int) -> str:
     season_str = season_to_str(season_end_year)
     code = TIER_TO_CODE[tier]
@@ -78,8 +90,12 @@ def download_csv(
         return None
 
     if resp.status_code == 404:
-        if tier == 5:
-            logger.debug("404 (expected for early Tier 5): %s", url)
+        if tier == 5 and season_end_year < TIER5_FIRST_SEASON:
+            logger.debug("404 (expected - Tier 5 data starts later): %s", url)
+        elif not _season_published_yet(season_end_year):
+            # Pre-season: next season's files don't exist until around August.
+            # Expected every run through the summer, so not worth a warning.
+            logger.info("Not published yet: %s", url)
         else:
             logger.warning("404 unexpected for %s", url)
         return None
@@ -114,8 +130,6 @@ def download_all(
     Download all CSVs for every (season, tier) combination.
     Returns list of successfully downloaded or already-cached Paths.
     """
-    import datetime
-
     if season_end is None:
         season_end = datetime.date.today().year
     if tiers is None:
