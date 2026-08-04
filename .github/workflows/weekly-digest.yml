@@ -17,6 +17,16 @@ on:
 permissions:
   contents: write
 
+# Serialize runs so a double-trigger (accidental double-click, or a manual
+# run overlapping the Monday schedule) queues instead of racing: two runs
+# checking out at the same commit both try to push their DB update, and
+# whichever lands second gets a non-fast-forward rejection and fails the
+# job. cancel-in-progress stays false so a queued run can't cancel one
+# that's already mid-send.
+concurrency:
+  group: weekly-digest
+  cancel-in-progress: false
+
 jobs:
   digest:
     runs-on: ubuntu-latest
@@ -70,4 +80,16 @@ jobs:
             git add content/digests
           fi
           git commit -m "Update england.db and digest archive (weekly run)" || exit 0
-          git push
+
+          # Belt-and-braces alongside the concurrency group above: retry
+          # with a rebase if main moved under us between checkout and push.
+          for attempt in 1 2 3 4 5; do
+            if git push; then
+              exit 0
+            fi
+            echo "Push rejected (attempt $attempt) - rebasing onto latest main and retrying"
+            git fetch origin main
+            git rebase origin/main
+          done
+          echo "::error::Could not push after 5 attempts"
+          exit 1
