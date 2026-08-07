@@ -138,9 +138,13 @@
       (club.events || []).forEach(function (event) {
         var pos = posByYear[event.season_end_year];
         if (!pos) return;
+        // fill:none would leave the ring's interior transparent to hit-testing,
+        // so clicks would fall through to the club line underneath. Filling it
+        // with "none" is the look we want, so pointer-events carries the hit.
         var marker = el("circle", {
           cx: x(event.season_end_year), cy: y(pos), r: 6,
           fill: "none", stroke: STORY, "stroke-width": 2,
+          "pointer-events": "all",
           "class": "event-dot", tabindex: "0", role: "button"
         });
         marker.style.cursor = "pointer";

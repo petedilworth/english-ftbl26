@@ -6,30 +6,16 @@
 // }
 (function () {
   var data = window.MAP_DATA;
-  if (!data || typeof L === "undefined") return;
+  if (!data) return;
 
   var TIER_COLORS = {1: "#5e35b1", 2: "#1e88e5", 3: "#43a047", 4: "#fb8c00", 5: "#e53935"};
   var GHOST = "#9aa3ab";
 
-  var map = L.map("map", {scrollWheelZoom: false}).setView([52.8, -1.7], 6);
-  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    maxZoom: 17,
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-  }).addTo(map);
-
-  var slider = document.getElementById("year-slider");
-  var yearLabel = document.getElementById("year-label");
-  var activeFilter = "all";
-  var markers = {};
-
-  function seasonLabel(year) {
-    var prev = year - 1;
-    return prev + "/" + String(year).slice(-2).padStart(2, "0");
-  }
-
   // Legend is built from TIER_COLORS rather than hand-written in the template,
-  // so the swatches can't drift out of step with the markers themselves.
-  function buildLegend() {
+  // so the swatches can't drift out of step with the markers themselves. It
+  // runs before the Leaflet check because it needs nothing from Leaflet - if
+  // the CDN is unreachable the key should still explain the colour scheme.
+  (function buildLegend() {
     var holder = document.getElementById("map-legend");
     if (!holder) return;
     var names = data.tierNames || {};
@@ -49,6 +35,24 @@
       entry(TIER_COLORS[tier], names[tier] || "Tier " + tier);
     });
     entry(GHOST, "Outside Tiers 1–5 that season, or defunct");
+  })();
+
+  if (typeof L === "undefined") return;
+
+  var map = L.map("map", {scrollWheelZoom: false}).setView([52.8, -1.7], 6);
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 17,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(map);
+
+  var slider = document.getElementById("year-slider");
+  var yearLabel = document.getElementById("year-label");
+  var activeFilter = "all";
+  var markers = {};
+
+  function seasonLabel(year) {
+    var prev = year - 1;
+    return prev + "/" + String(year).slice(-2).padStart(2, "0");
   }
 
   function passesFilter(club) {
@@ -147,6 +151,5 @@
       .catch(function () { alert("Postcode lookup failed — check your connection"); });
   });
 
-  buildLegend();
   refresh();
 })();
