@@ -8,8 +8,19 @@
   var data = window.MAP_DATA;
   if (!data) return;
 
-  var TIER_COLORS = {1: "#5e35b1", 2: "#1e88e5", 3: "#43a047", 4: "#fb8c00", 5: "#e53935"};
-  var GHOST = "#9aa3ab";
+  // Palette lives in style.css (--tier-1 .. --tier-5, --tier-out) so the
+  // markers, this page's legend and the natural-level bar on team pages
+  // can't drift apart. Falls back to the literals if the sheet is missing.
+  function tierColor(tier, fallback) {
+    var v = getComputedStyle(document.documentElement)
+      .getPropertyValue("--tier-" + tier).trim();
+    return v || fallback;
+  }
+  var TIER_COLORS = {
+    1: tierColor(1, "#5e35b1"), 2: tierColor(2, "#1e88e5"), 3: tierColor(3, "#43a047"),
+    4: tierColor(4, "#fb8c00"), 5: tierColor(5, "#e53935")
+  };
+  var GHOST = tierColor("out", "#9aa3ab");
 
   // Legend is built from TIER_COLORS rather than hand-written in the template,
   // so the swatches can't drift out of step with the markers themselves. It

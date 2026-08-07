@@ -203,6 +203,12 @@ class SiteBuilder:
         # theme pages derive their event dots and narrative from.
         self.club_themes: dict[str, list[str]] = {}
         self.club_facts: dict[str, dict] = {}
+        # The database file is committed, so a checkout can carry a
+        # club_trajectory predating the natural-level columns. Cache the
+        # column set once so the build degrades instead of raising.
+        self.trajectory_cols = {
+            r[1] for r in self.conn.execute("PRAGMA table_info(club_trajectory)")
+        }
         self.seasons = [
             r[0] for r in self.conn.execute(
                 "SELECT DISTINCT season_end_year FROM standings ORDER BY season_end_year"
@@ -348,6 +354,65 @@ class SiteBuilder:
             title="Divisions", divisions=index_entries,
         )
 
+    def _natural_level(self, t: sqlite3.Row) -> dict | None:
+        """
+        The club's natural level, ready for the team page, or None when
+        there isn't enough record to say. A thin club gets a shorter page
+        rather than a panel full of dashes - same rule as _facts_rows.
+        """
+        if "natural_level_tier" not in self.trajectory_cols:
+            return None
+        if t["natural_level_tier"] is None:
+            return None
+
+        import json
+
+        import level as level_mod
+
+        dist = json.loads(t["tier_distribution"] or "{}")
+        total = sum(dist.values()) or 1
+        segments = []
+        for key in ["1", "2", "3", "4", "5", "outside"]:
+            n = dist.get(key, 0)
+            if not n:
+                continue
+            outside = key == "outside"
+            segments.append({
+                "key": key,
+                "name": (level_mod.bucket_name(level_mod.OUTSIDE, t["coverage_note"])
+                         if outside else level_mod.TIER_NAMES[int(key)]),
+                "seasons": n,
+                "pct": round(100 * n / total, 2),
+                "outside": outside,
+            })
+
+        recorded, seasons = t["natural_level_recorded"], t["natural_level_seasons"]
+        window = (f"{seasons} seasons, {recorded} of them inside the top five tiers"
+                  if recorded < seasons else f"{seasons} recorded seasons")
+
+        trend_line = None
+        if t["natural_level_trend"] and t["recent_level_tier"]:
+            recent = level_mod.bucket_name(t["recent_level_tier"], t["coverage_note"])
+            trend_line = {
+                "rising": f"Rising — the last five seasons average out at {recent}.",
+                "falling": f"Falling — the last five seasons average out at {recent}.",
+                "level": "Holding steady against the previous decade.",
+            }.get(t["natural_level_trend"])
+
+        gap, gap_line = t["natural_level_gap"], None
+        if gap is not None and gap != 0:
+            n = abs(gap)
+            direction = "below" if gap > 0 else "above"
+            gap_line = f"Currently {n} division{'s' if n > 1 else ''} {direction} that level."
+
+        return {
+            "label": t["natural_level_label"],
+            "window_note": window,
+            "segments": segments,
+            "trend_line": trend_line,
+            "gap_line": gap_line,
+        }
+
     def _team_stats_cards(self, t: sqlite3.Row) -> list[dict]:
         cards = [
             {"value": f"Tier {t['current_tier']}", "label": "Current level"},
@@ -362,10 +427,21 @@ class SiteBuilder:
                 "value": t["seasons_in_tier1"],
                 "label": f"Top-flight seasons (last {t['last_tier1_season']})",
             })
+        if ("natural_level_tier" in self.trajectory_cols
+                and t["natural_level_tier"] is not None):
+            import level as level_mod
+            # Just the division name - the full label would overflow the card
+            cards.insert(0, {
+                "value": level_mod.bucket_name(t["natural_level_tier"], t["coverage_note"]),
+                "label": "Natural level",
+            })
         return cards
 
     def _tagline(self, t: sqlite3.Row) -> str:
         span = f"{season_label(t['first_season_in_db'])}–{season_label(t['last_season_in_db'])}"
+        if ("natural_level_label" in self.trajectory_cols
+                and t["natural_level_label"] and t["natural_level_kind"] != "insufficient"):
+            return f"{t['natural_level_label']} · {span}"
         if t["highest_tier"] == 1 and t["current_tier"] >= 3:
             return f"Fallen giant · {span}"
         if t["yo_yo_score"] and t["yo_yo_score"] >= 0.25:
@@ -440,6 +516,7 @@ class SiteBuilder:
                 name=t["canonical_name"],
                 color=self.color(club_id),
                 tagline=self._tagline(t),
+                natural_level=self._natural_level(t),
                 stats=self._team_stats_cards(t),
                 has_chart=has_chart,
                 first_season=season_label(t["first_season_in_db"]),
@@ -673,14 +750,73 @@ class SiteBuilder:
              "sub": "The best and worst seasons"},
             {"slug": "timeline", "name": "Timeline", "sub": "Notable events since 1993"},
         ]
+        if "natural_level_gap" in self.trajectory_cols:
+            entries.insert(1, {
+                "slug": "natural-level",
+                "name": "Above and below their level",
+                "sub": "Clubs out of step with their own history",
+            })
         self.render(
             "insights_index.html", self.out / "insights" / "index.html", 1,
             title="Insights", entries=entries,
         )
         self._insight_yo_yo()
+        self._insight_natural_level()
         self._insight_fallen_giants()
         self._insight_records()
         self._insight_timeline()
+
+    def _insight_natural_level(self) -> None:
+        """
+        Clubs whose current division is out of step with the level their
+        own record says they belong at.
+        """
+        if "natural_level_gap" not in self.trajectory_cols:
+            return
+
+        import level as level_mod
+
+        def table(where: str, order: str) -> list[list]:
+            rows = self.conn.execute(
+                f"""
+                SELECT club_id, canonical_name, natural_level_label,
+                       natural_level_tier, current_tier, natural_level_gap,
+                       coverage_note
+                FROM club_trajectory
+                WHERE natural_level_gap IS NOT NULL AND {where}
+                ORDER BY {order}, canonical_name LIMIT 25
+                """
+            ).fetchall()
+            return [
+                [self._cell(i + 1, num=True),
+                 self._cell(r["canonical_name"], r["club_id"]),
+                 self._cell(r["natural_level_label"]),
+                 self._cell(level_mod.bucket_name(r["current_tier"], r["coverage_note"])),
+                 self._cell(abs(r["natural_level_gap"]), num=True)]
+                for i, r in enumerate(rows)
+            ]
+
+        columns = ["#", "Club", "Natural level", "Now", "Divisions"]
+        self.render(
+            "insight_table.html",
+            self.out / "insights" / "natural-level" / "index.html", 2,
+            title="Above and below their level",
+            heading="Above and below their level",
+            intro=(
+                "A club's natural level is where the balance of its record since "
+                "1993/94 puts it. These are the clubs furthest from it right now. "
+                "Climbing above your level is usually a moment; falling below it is "
+                "usually structural, and harder to reverse."
+            ),
+            sections=[
+                {"heading": "Playing above their level",
+                 "note": "Climbing, and usually enjoying a moment rather than a new normal.",
+                 "columns": columns, "rows": table("natural_level_gap < 0", "natural_level_gap ASC")},
+                {"heading": "Playing below their level",
+                 "note": "Falling below your level does financial damage that compounds, which is why it is harder to reverse.",
+                 "columns": columns, "rows": table("natural_level_gap > 0", "natural_level_gap DESC")},
+            ],
+        )
 
     def _insight_yo_yo(self) -> None:
         rows = self.conn.execute(

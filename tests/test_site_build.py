@@ -401,3 +401,58 @@ def test_global_chart_still_starts_empty(tmp_path):
         .read_text().replace("window.CHART_DATA = ", "").rstrip(";")
     )
     assert payload["preselect"] == []
+
+
+# ── Natural level ──────────────────────────────────────────────────────
+
+def _level_db(tmp_path):
+    """A club with enough history to be classified, plus a thin one."""
+    conn = _make_db()
+    conn.execute("INSERT INTO club_master VALUES ('longrun-fc','Longrun FC',NULL,NULL,2)")
+    for year in range(2005, 2026):
+        tier = 2 if year < 2020 else 3
+        conn.execute(
+            "INSERT INTO standings (season_end_year, tier, division_name, club_id,"
+            " club_name, position, played, won, drawn, lost, gf, ga, gd, points,"
+            " status, source) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+            (year, tier, "Div", "longrun-fc", "Longrun FC", 5,
+             46, 20, 10, 16, 60, 50, 10, 70, "Stayed", "test"),
+        )
+    trajectory.rebuild_trajectory(conn)
+    conn.commit()
+    path = tmp_path / "level.db"
+    disk = sqlite3.connect(path)
+    conn.backup(disk)
+    disk.close()
+    return path
+
+
+def test_natural_level_panel_rendered(tmp_path):
+    out = tmp_path / "site"
+    SiteBuilder(_level_db(tmp_path), out, charts_enabled=False).build()
+    page = (out / "team" / "longrun-fc" / "index.html").read_text()
+
+    assert "Where they've played" in page
+    assert "Natural level" in page          # the stat card
+    assert "nl-seg" in page                 # the distribution bar
+    # The era caveat must travel with the claim
+    assert "pre-Premier League era" in page
+
+
+def test_thin_club_has_no_natural_level_panel(tmp_path):
+    # giant-fc in the shared fixture has only a couple of seasons
+    out = tmp_path / "site"
+    SiteBuilder(_db_on_disk(tmp_path), out, charts_enabled=False).build()
+    page = (out / "team" / "giant-fc" / "index.html").read_text()
+    # No panel, and no row of dashes pretending to be one
+    assert "Where they've played" not in page
+    assert "nl-seg" not in page
+
+
+def test_natural_level_insight_page_built(tmp_path):
+    out = tmp_path / "site"
+    SiteBuilder(_level_db(tmp_path), out, charts_enabled=False).build()
+    page = (out / "insights" / "natural-level" / "index.html").read_text()
+    assert "Playing above their level" in page
+    assert "Playing below their level" in page
+    assert "Above and below their level" in (out / "insights" / "index.html").read_text()
