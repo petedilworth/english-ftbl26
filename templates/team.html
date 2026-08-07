@@ -11,6 +11,31 @@
   {% endfor %}
 </div>
 
+{% if natural_level %}
+<div class="natural-level">
+  {# The label itself is already the page tagline and a stat card, so this
+     heading names what the bar below shows rather than repeating it. #}
+  <h2>Where they've played</h2>
+  <div class="nl-bar">
+    {% for seg in natural_level.segments %}
+    <span class="nl-seg{% if seg.outside %} nl-outside{% else %} nl-tier-{{ seg.key }}{% endif %}"
+          style="width: {{ seg.pct }}%" title="{{ seg.name }} — {{ seg.seasons }} season{{ 's' if seg.seasons != 1 }}"></span>
+    {% endfor %}
+  </div>
+  <div class="nl-legend">
+    {% for seg in natural_level.segments %}
+    <span class="legend-item"><span class="legend-dot{% if seg.outside %} nl-outside{% else %} nl-tier-{{ seg.key }}{% endif %}"></span>{{ seg.name }} · {{ seg.seasons }}</span>
+    {% endfor %}
+  </div>
+  <p class="nl-note">
+    {{ natural_level.window_note }}.
+    {% if natural_level.gap_line %}{{ natural_level.gap_line }}{% endif %}
+    {% if natural_level.trend_line %}{{ natural_level.trend_line }}{% endif %}
+    <span class="nl-caveat">Measured from 1993/94 — tier 5 only from 2005/06 — so it says nothing about the pre-Premier League era.</span>
+  </p>
+</div>
+{% endif %}
+
 {% if has_chart %}
 <h2>League position, {{ first_season }}–{{ last_season }}</h2>
 <img class="chart-img" src="chart.png" alt="{{ name }} league position history">

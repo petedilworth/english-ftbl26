@@ -104,3 +104,65 @@ def test_build_digest_renders(tmp_path):
     assert "fallen giant" in html  # narrative engaged for ex-tier-1 club
     assert "1 fixtures" in subject
     assert len(images) == 1 and images[0][0].exists()  # chart rendered
+
+
+# ── Natural level ──────────────────────────────────────────────────────
+
+def _level_db():
+    """A club with a Bolton-shaped record: top flight, then a slide."""
+    conn = _make_db()
+    conn.execute("INSERT INTO club_master VALUES ('slider-fc','Slider FC',NULL,NULL,3)")
+    for year in range(2000, 2026):
+        tier = 1 if year < 2012 else 2 if year < 2021 else 3
+        conn.execute(
+            "INSERT INTO standings (season_end_year, tier, division_name, club_id,"
+            " club_name, position, played, won, drawn, lost, gf, ga, gd, points,"
+            " status, source) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+            (year, tier, "Div", "slider-fc", "Slider FC", 10,
+             46, 18, 10, 18, 55, 55, 0, 64, "Stayed", "test"),
+        )
+    trajectory.rebuild_trajectory(conn)
+    return conn
+
+
+def test_level_sentence_replaces_the_fallen_giant_wording():
+    conn = _level_db()
+    ctx = digest.club_context(conn, "slider-fc")
+    sentence = digest._history_sentence(ctx)
+    assert "fallen giant" not in sentence.lower()
+    # Describes the club, then how far it currently sits from that
+    assert "Slider FC" in sentence
+    assert "below that now" in sentence
+
+
+def test_storyline_score_rewards_distance_from_the_natural_level():
+    conn = _level_db()
+    off_level = digest.club_context(conn, "slider-fc")
+    at_level = dict(off_level, natural_level_gap=0)
+    fixture = {"tier": 3, "division_name": "League One"}
+    high = digest.storyline_score(fixture, off_level, None, set())
+    low = digest.storyline_score(fixture, at_level, None, set())
+    assert high > low
+
+
+def test_digest_survives_a_database_without_natural_level_columns():
+    # The database file is committed, so a checkout can carry a
+    # club_trajectory predating this feature. It must degrade, not raise.
+    conn = _make_db()
+    conn.execute("DROP TABLE IF EXISTS club_trajectory")
+    conn.execute(
+        "CREATE TABLE club_trajectory (club_id TEXT PRIMARY KEY, canonical_name TEXT,"
+        " current_tier INT, current_tier_streak INT, highest_tier INT, lowest_tier INT,"
+        " seasons_in_tier1 INT, last_tier1_season INT, first_season_in_db INT,"
+        " last_season_in_db INT, total_promotions INT, total_relegations INT,"
+        " yo_yo_score REAL)"
+    )
+    conn.execute(
+        "INSERT INTO club_trajectory VALUES ('giant-fc','Giant FC',3,2,1,3,5,2015,"
+        "2010,2025,2,3,0.4)"
+    )
+    ctx = digest.club_context(conn, "giant-fc")
+    assert ctx is not None
+    assert ctx["natural_level_tier"] is None      # back-filled, not missing
+    # Falls back to the old fallen-giant wording rather than blowing up
+    assert "fallen giant" in digest._history_sentence(ctx).lower()

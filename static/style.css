@@ -8,6 +8,15 @@
   --up: #1a7f3c;
   --down: #b3261e;
   --story: #8a3ffc;   /* theme event markers — distinct from promotion/relegation */
+  /* Tier palette — the single source of truth. static/map.js reads these
+     via getComputedStyle so the map markers, the map legend and the
+     natural-level bar can never drift apart. */
+  --tier-1: #5e35b1;
+  --tier-2: #1e88e5;
+  --tier-3: #43a047;
+  --tier-4: #fb8c00;
+  --tier-5: #e53935;
+  --tier-out: #9aa3ab;
 }
 
 * { box-sizing: border-box; }
@@ -374,6 +383,46 @@ table.matrix.compact .matrix-highlight {
 .timeline-event { display: flex; gap: 14px; margin-bottom: 14px; }
 .timeline-year { font-weight: 700; min-width: 52px; color: var(--accent); }
 .timeline-body p { margin: 2px 0 0; font-size: 14px; }
+
+/* Natural level — the tier distribution behind a club's headline label */
+.natural-level { margin: 18px 0 4px; }
+.natural-level h2 { margin: 0 0 8px; }
+.nl-bar {
+  display: flex;
+  height: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--bg-soft);
+}
+.nl-seg { display: block; height: 100%; }
+.nl-tier-1 { background: var(--tier-1); }
+.nl-tier-2 { background: var(--tier-2); }
+.nl-tier-3 { background: var(--tier-3); }
+.nl-tier-4 { background: var(--tier-4); }
+.nl-tier-5 { background: var(--tier-5); }
+/* Hatched, not a sixth colour — "outside" means we don't know where they
+   were, not that there is a sixth division. */
+.nl-outside {
+  background: repeating-linear-gradient(
+    45deg, var(--tier-out), var(--tier-out) 3px, #ffffff 3px, #ffffff 6px);
+}
+.nl-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.nl-legend .legend-dot {
+  display: inline-block;
+  width: 9px; height: 9px;
+  border-radius: 2px;
+  margin-right: 5px;
+  border: 1px solid rgba(0,0,0,0.15);
+}
+.nl-note { font-size: 13px; color: var(--muted); margin: 8px 0 0; }
+.nl-caveat { display: block; font-size: 11px; margin-top: 4px; }
 
 /* Groundhop map */
 .map-canvas { height: 68vh; min-height: 380px; border: 1px solid var(--line); border-radius: 8px; }

@@ -25,6 +25,7 @@ sys.path.insert(0, str(_SRC))
 import charts
 import entities
 import fixtures as fixtures_mod
+import level as level_mod
 
 PROJECT_ROOT = Path(__file__).parent.parent
 
@@ -53,16 +54,35 @@ def _followed() -> set[str]:
 
 # ── Club context ────────────────────────────────────────────────────────────
 
+# Natural level columns, added later than the rest of club_trajectory. The
+# database file is committed to the repo, so a checkout can carry a table
+# that predates them - the digest degrades to its older wording rather than
+# raising OperationalError halfway through a scheduled run.
+_LEVEL_COLUMNS = [
+    "natural_level_tier", "natural_level_second_tier", "natural_level_kind",
+    "natural_level_label", "natural_level_share", "natural_level_seasons",
+    "recent_level_tier", "natural_level_trend", "natural_level_gap",
+]
+
+
+def _available(conn: sqlite3.Connection, table: str, wanted: list[str]) -> list[str]:
+    have = {r[1] for r in conn.execute(f"PRAGMA table_info({table})")}
+    return [c for c in wanted if c in have]
+
+
 def club_context(conn: sqlite3.Connection, club_id: str | None) -> dict | None:
     """Everything the narrative needs to know about one club."""
     if club_id is None:
         return None
+
+    extra = _available(conn, "club_trajectory", _LEVEL_COLUMNS)
     row = conn.execute(
-        """
+        f"""
         SELECT canonical_name, current_tier, current_tier_streak, highest_tier,
                lowest_tier, seasons_in_tier1, last_tier1_season,
                first_season_in_db, last_season_in_db,
                total_promotions, total_relegations, yo_yo_score
+               {"".join(", " + c for c in extra)}
         FROM club_trajectory WHERE club_id = ?
         """,
         (club_id,),
@@ -72,9 +92,22 @@ def club_context(conn: sqlite3.Connection, club_id: str | None) -> dict | None:
 
     keys = ["name", "tier", "streak", "highest_tier", "lowest_tier",
             "seasons_in_tier1", "last_tier1_season", "first_season", "last_season",
-            "promotions", "relegations", "yo_yo"]
+            "promotions", "relegations", "yo_yo"] + extra
     ctx = dict(zip(keys, row))
+    for missing in set(_LEVEL_COLUMNS) - set(extra):
+        ctx[missing] = None
     ctx["club_id"] = club_id
+
+    # For the "highest since" clause: the last time they were this far up
+    # before the current season.
+    ctx["highest_since"] = None
+    if ctx["tier"] and ctx["last_season"]:
+        found = conn.execute(
+            "SELECT MAX(season_end_year) FROM standings"
+            " WHERE club_id = ? AND tier <= ? AND season_end_year < ?",
+            (club_id, ctx["tier"], ctx["last_season"]),
+        ).fetchone()
+        ctx["highest_since"] = found[0] if found else None
 
     ctx["recent_seasons"] = conn.execute(
         """
@@ -152,7 +185,16 @@ def storyline_score(fixture: dict, home: dict | None, away: dict | None,
         if ctx is None:
             continue
         score += ctx["yo_yo"]  # volatile histories are interesting
-        if ctx["highest_tier"] == 1 and fixture["tier"] >= 3:
+        gap = ctx.get("natural_level_gap")
+        if gap is not None:
+            # Distance from where the club belongs, in either direction.
+            score += min(abs(gap), 3) * 2.0
+            if gap < 0:
+                score += 1.0  # climbing above your level is rarer than falling below it
+            if ctx.get("natural_level_kind") == "yo-yo":
+                score += 1.0
+        elif ctx["highest_tier"] == 1 and fixture["tier"] >= 3:
+            # Fallback for a thin record, or a database predating natural level
             score += 4  # fallen giant
         if ctx["recent_seasons"] and ctx["recent_seasons"][0][4] not in ("Stayed", None):
             score += 1  # promoted/relegated/champions last season
@@ -173,10 +215,66 @@ def storyline_score(fixture: dict, home: dict | None, away: dict | None,
 
 # ── Narrative ───────────────────────────────────────────────────────────────
 
+def _level_sentence(ctx: dict) -> str | None:
+    """
+    What kind of club this is, and how far they currently sit from it.
+
+    Composed from the structured fields rather than natural_level_label,
+    which is display copy and doesn't decline into a sentence.
+    """
+    tier, kind = ctx.get("natural_level_tier"), ctx.get("natural_level_kind")
+    if not tier or not kind or kind == "insufficient" or tier == level_mod.OUTSIDE:
+        return None
+
+    name = ctx["name"]
+    here = level_mod.the(tier)
+
+    if kind == "ever-present":
+        clause = f"{name} have never played outside {here}"
+    elif kind == "established":
+        pct = round((ctx.get("natural_level_share") or 0) * 100)
+        clause = (f"{name} belong in {here} — {pct}% of their "
+                  f"{ctx.get('natural_level_seasons')} recorded seasons")
+    elif kind == "yo-yo" and ctx.get("natural_level_second_tier"):
+        a, b = sorted([tier, ctx["natural_level_second_tier"]])
+        clause = f"{name} live between {level_mod.the(a)} and {level_mod.the(b)}"
+    elif kind == "broad":
+        clause = (f"{name}'s record runs the length of the pyramid, but its "
+                  f"centre of gravity is {here}")
+    else:
+        clause = f"{name} are, on the balance of their record, a {level_mod.bucket_name(tier)} club"
+
+    # The two directions are not mirror images. Falling below your level is
+    # usually structural, so the deficit is the story; climbing above it is
+    # usually a moment, so anchor it to when they were last this high
+    # rather than implying the club is overachieving on borrowed time.
+    gap = ctx.get("natural_level_gap")
+    if gap and gap > 0:
+        clause += f"; they are {gap} division{'s' if gap > 1 else ''} below that now"
+    elif gap and gap < 0:
+        up = abs(gap)
+        divisions = f"{up} division{'s' if up > 1 else ''} above that"
+        since, streak = ctx.get("highest_since"), ctx.get("streak") or 0
+        if streak >= 3:
+            # Settled at the higher level - the spell is the story, not the
+            # single season, and "highest since last year" says nothing.
+            clause += f"; they are {streak} seasons into a spell {divisions}"
+        elif since and ctx["last_season"] - since >= 2:
+            clause += f"; this season is their highest since {since}"
+        elif since:
+            clause += f"; they are {divisions} this season"
+        else:
+            clause += "; this season is the highest in their record"
+    return clause
+
+
 def _history_sentence(ctx: dict) -> str:
     name = ctx["name"]
     bits = []
-    if ctx["highest_tier"] == 1 and ctx["tier"] >= 3:
+    level_clause = _level_sentence(ctx)
+    if level_clause:
+        bits.append(level_clause)
+    elif ctx["highest_tier"] == 1 and ctx["tier"] >= 3:
         last = ctx["last_tier1_season"]
         bits.append(
             f"{name} are a fallen giant — {ctx['seasons_in_tier1']} top-flight "
@@ -184,9 +282,11 @@ def _history_sentence(ctx: dict) -> str:
             f"now {ctx['tier'] - 1} divisions below"
         )
     elif ctx["yo_yo"] >= 0.25:
+        promos, relgs = ctx["promotions"], ctx["relegations"]
         bits.append(
-            f"{name} are a classic yo-yo club — {ctx['promotions']} promotions and "
-            f"{ctx['relegations']} relegations since {ctx['first_season']}"
+            f"{name} are a classic yo-yo club — {promos} "
+            f"promotion{'s' if promos != 1 else ''} and {relgs} "
+            f"relegation{'s' if relgs != 1 else ''} since {ctx['first_season']}"
         )
     elif ctx["streak"] >= 10:
         bits.append(

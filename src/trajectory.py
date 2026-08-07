@@ -3,8 +3,11 @@ Build the club_trajectory table from the standings table.
 This table is fully derived and is dropped and rebuilt on every pipeline run.
 """
 
+import json
 import logging
 import sqlite3
+
+import level
 
 logger = logging.getLogger(__name__)
 
@@ -22,7 +25,21 @@ CREATE TABLE club_trajectory (
     last_season_in_db   INT,
     total_promotions    INT,
     total_relegations   INT,
-    yo_yo_score         REAL
+    yo_yo_score         REAL,
+    -- Natural level: what kind of club this is, as opposed to where it
+    -- currently sits. See src/level.py.
+    natural_level_tier        INT,
+    natural_level_second_tier INT,
+    natural_level_kind        TEXT,
+    natural_level_label       TEXT,
+    natural_level_share       REAL,
+    natural_level_seasons     INT,
+    natural_level_recorded    INT,
+    tier_distribution         TEXT,
+    coverage_note             TEXT,
+    recent_level_tier         INT,
+    natural_level_trend       TEXT,
+    natural_level_gap         INT
 );
 """
 
@@ -119,6 +136,10 @@ def rebuild_trajectory(conn: sqlite3.Connection) -> None:
     ]
 
     streaks = _compute_tier_streaks(conn)
+    histories = level.load_histories(conn)
+    latest_season = conn.execute(
+        "SELECT MAX(season_end_year) FROM standings"
+    ).fetchone()[0]
 
     insert_rows = []
     for row in rows:
@@ -127,6 +148,12 @@ def rebuild_trajectory(conn: sqlite3.Connection) -> None:
         promo = d["total_promotions"] or 0
         relg = d["total_relegations"] or 0
         yo_yo = round((promo + relg) / seasons, 2)
+
+        nl = level.natural_level(histories.get(d["club_id"], {}))
+        # A club absent from the latest season has a stale "current tier",
+        # so it gets no gap rather than a claim about where it sits today.
+        is_active = d["last_season_in_db"] == latest_season
+        gap = level.level_gap(nl, d["current_tier"], is_active)
 
         insert_rows.append((
             d["club_id"],
@@ -142,6 +169,18 @@ def rebuild_trajectory(conn: sqlite3.Connection) -> None:
             promo,
             relg,
             yo_yo,
+            nl.tier,
+            nl.second_tier,
+            nl.kind,
+            nl.label,
+            nl.share,
+            nl.seasons,
+            nl.recorded,
+            json.dumps(nl.distribution),
+            nl.coverage_note,
+            nl.recent_tier,
+            nl.trend,
+            gap,
         ))
 
     conn.executemany(
@@ -150,8 +189,12 @@ def rebuild_trajectory(conn: sqlite3.Connection) -> None:
             club_id, canonical_name, current_tier, current_tier_streak,
             highest_tier, lowest_tier, seasons_in_tier1, last_tier1_season,
             first_season_in_db, last_season_in_db,
-            total_promotions, total_relegations, yo_yo_score
-        ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)
+            total_promotions, total_relegations, yo_yo_score,
+            natural_level_tier, natural_level_second_tier, natural_level_kind,
+            natural_level_label, natural_level_share, natural_level_seasons,
+            natural_level_recorded, tier_distribution, coverage_note,
+            recent_level_tier, natural_level_trend, natural_level_gap
+        ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
         """,
         insert_rows,
     )

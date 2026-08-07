@@ -114,3 +114,64 @@ def test_streak_ignores_stale_club_master_current_tier():
     # Streak calculation must use observed data, not club_master.current_tier.
     conn = _make_db([("stale-fc", 3, [(2023, 4), (2024, 4)])])
     assert _compute_tier_streaks(conn)["stale-fc"] == 2
+
+
+# ── Natural level ──────────────────────────────────────────────────────
+
+def test_rebuild_writes_natural_level_columns():
+    import json
+    rows = [("steady-fc", "Steady FC", 3, y, 3, "Stayed") for y in range(2010, 2026)]
+    conn = _standings_db(rows)
+    rebuild_trajectory(conn)
+    r = conn.execute(
+        "SELECT natural_level_tier, natural_level_kind, natural_level_label,"
+        " natural_level_seasons, tier_distribution, natural_level_gap"
+        " FROM club_trajectory WHERE club_id='steady-fc'"
+    ).fetchone()
+    assert r[0] == 3
+    assert r[1] == "ever-present"
+    assert r[2] == "League One ever-present"
+    assert r[3] == 16
+    assert json.loads(r[4])["3"] == 16
+    assert r[5] == 0            # sitting exactly at their level
+
+
+def test_absent_seasons_are_counted_against_the_club():
+    # Present 2010-2013 and 2022-2025, i.e. eight years outside the pyramid
+    # in between. The window is what the level is measured against.
+    rows = [("gappy-fc", "Gappy FC", 5, y, 5, "Stayed")
+            for y in list(range(2010, 2014)) + list(range(2022, 2026))]
+    conn = _standings_db(rows)
+    rebuild_trajectory(conn)
+    r = conn.execute(
+        "SELECT natural_level_seasons, natural_level_recorded, natural_level_label"
+        " FROM club_trajectory WHERE club_id='gappy-fc'"
+    ).fetchone()
+    assert r[0] == 16 and r[1] == 8
+    assert "ever-present" not in (r[2] or "")
+
+
+def test_natural_level_null_for_thin_record():
+    rows = [("cameo-fc", "Cameo FC", 5, 2024, 5, "Stayed"),
+            ("cameo-fc", "Cameo FC", 5, 2025, 5, "Relegated")]
+    conn = _standings_db(rows)
+    rebuild_trajectory(conn)
+    r = conn.execute(
+        "SELECT natural_level_tier, natural_level_kind, natural_level_gap"
+        " FROM club_trajectory WHERE club_id='cameo-fc'"
+    ).fetchone()
+    assert r[0] is None and r[1] == "insufficient" and r[2] is None
+
+
+def test_gap_is_null_for_a_club_absent_from_the_latest_season():
+    # A defunct club's "current tier" is a stale last-recorded tier, so
+    # reporting a gap would assert where they sit today.
+    rows = [("gone-fc", "Gone FC", 4, y, 4, "Stayed") for y in range(2000, 2012)]
+    rows += [("alive-fc", "Alive FC", 2, y, 2, "Stayed") for y in range(2000, 2026)]
+    conn = _standings_db(rows)
+    rebuild_trajectory(conn)
+    gone, alive = (conn.execute(
+        "SELECT natural_level_gap FROM club_trajectory WHERE club_id=?", (c,)
+    ).fetchone()[0] for c in ("gone-fc", "alive-fc"))
+    assert gone is None
+    assert alive == 0
