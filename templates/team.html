@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="club-header" style="--club-primary: {{ color }}">
-  <h1>{{ name }}</h1>
+  <h1>{{ name }}{% if nickname %} <span class="nickname">"{{ nickname }}"</span>{% endif %}</h1>
   <p class="subtitle">{{ tagline }}</p>
 </div>
 

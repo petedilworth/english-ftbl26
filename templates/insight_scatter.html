@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>{{ heading }}</h1>
+<p class="subtitle">{{ intro }}</p>
+
+<div class="chart-holder">
+  <svg viewBox="0 0 {{ width }} {{ height }}" preserveAspectRatio="xMidYMid meet">
+    {% for bx in boundary_lines %}
+    <line x1="{{ bx }}" y1="{{ plot_top }}" x2="{{ bx }}" y2="{{ plot_bottom }}"
+          stroke="#e4e8ec" stroke-width="1" stroke-dasharray="4 4"></line>
+    {% endfor %}
+
+    <text x="60" y="{{ plot_top + 4 }}" font-size="10" fill="#6b7683" text-anchor="end">{{ cap_max_label }}</text>
+    <text x="60" y="{{ plot_bottom }}" font-size="10" fill="#6b7683" text-anchor="end">{{ cap_min_label }}</text>
+    <text x="64" y="{{ axis_y }}" font-size="10" fill="#6b7683" text-anchor="start">{{ x_min_label }}</text>
+    <text x="{{ width - 20 }}" y="{{ axis_y }}" font-size="10" fill="#6b7683" text-anchor="end">{{ x_max_label }}</text>
+    <text x="{{ (width) / 2 }}" y="{{ axis_y }}" font-size="10" fill="#6b7683" text-anchor="middle">Overall league position, this season</text>
+
+    {% for p in points %}
+    <circle cx="{{ p.cx }}" cy="{{ p.cy }}" r="5" style="fill: var(--tier-{{ p.tier }})"
+            stroke="#ffffff" stroke-width="1"><title>{{ p.name }} — {{ p.division_name }}, position {{ p.position }} — {{ '{:,}'.format(p.capacity) }} capacity</title></circle>
+    {% endfor %}
+  </svg>
+</div>
+<div class="nl-legend">
+  {% for l in legend %}
+  <span class="legend-item"><span class="legend-dot nl-tier-{{ l.key }}"></span>{{ l.name }}</span>
+  {% endfor %}
+</div>
+{% endblock %}

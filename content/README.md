@@ -37,6 +37,7 @@ panel on the team page, and automatically place the club on the relevant
 | `founded` | Year, e.g. `1905` |
 | `origin_type` | `works`, `church`, `pub`, `school`, `civic`, `phoenix`, `other` |
 | `origin_note` | Reads after "Formed as …", so write a noun phrase: `"Singers F.C., by employees of the Singer cycle works"` |
+| `nickname` | e.g. `"the Posh"` — shown beside the club name on its page, so keep it short |
 
 ### Ownership & finance
 | Field | Notes |
@@ -133,3 +134,11 @@ Stick to the documented public record. Where a story involves named
 owners, insolvency or disputes, describe transactions, court rulings and
 regulatory outcomes rather than characterising anyone's motives, and leave
 out contested allegations.
+
+A club's nickname is often the richest vein of this kind of story — British
+football culture and humour, not just finance and governance. Peterborough
+United's "the Posh" is the model: research where it actually came from
+(cross-reference more than one source; nicknames often have competing folk
+explanations) and tell that story in Origins, not just the fact of the name
+itself. If the true origin is genuinely disputed, say so rather than picking
+the tidiest version.
