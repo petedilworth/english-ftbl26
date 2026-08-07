@@ -37,6 +37,17 @@
     entry(GHOST, "Outside Tiers 1–5 that season, or defunct");
   })();
 
+  // Tier filter chip dots are coloured from the same TIER_COLORS dict, so a
+  // colour change can't leave the legend, chips and markers out of step. As
+  // with the legend, this needs nothing from Leaflet, so it runs first.
+  (function colorTierChips() {
+    Array.prototype.forEach.call(document.querySelectorAll(".map-tier-chips .chip[data-tier]"), function (btn) {
+      var tier = btn.getAttribute("data-tier");
+      var dot = btn.querySelector(".chip-dot");
+      if (dot && TIER_COLORS[tier]) dot.style.background = TIER_COLORS[tier];
+    });
+  })();
+
   if (typeof L === "undefined") return;
 
   var map = L.map("map", {scrollWheelZoom: false}).setView([52.8, -1.7], 6);
@@ -48,6 +59,7 @@
   var slider = document.getElementById("year-slider");
   var yearLabel = document.getElementById("year-label");
   var activeFilter = "all";
+  var activeTier = "all";
   var markers = {};
 
   function seasonLabel(year) {
@@ -64,13 +76,20 @@
     return true;
   }
 
+  // Unlike the story flags above, tier is per-season rather than a fixed
+  // club property, so this takes the year the slider is currently on.
+  function passesTierFilter(club, year) {
+    if (activeTier === "all") return true;
+    return String(club.tiers[year]) === activeTier;
+  }
+
   function refresh() {
     var year = String(slider.value);
     yearLabel.textContent = seasonLabel(Number(year));
     data.clubs.forEach(function (club) {
       var marker = markers[club.id];
       var tier = club.tiers[year];
-      var visible = passesFilter(club);
+      var visible = passesFilter(club) && passesTierFilter(club, year);
       if (!visible) {
         marker.setStyle({opacity: 0, fillOpacity: 0});
         marker.closePopup();
@@ -104,14 +123,27 @@
 
   slider.addEventListener("input", refresh);
 
-  Array.prototype.forEach.call(document.querySelectorAll(".map-chips .chip"), function (btn) {
-    btn.addEventListener("click", function () {
-      activeFilter = btn.getAttribute("data-filter");
-      Array.prototype.forEach.call(document.querySelectorAll(".map-chips .chip"), function (b) {
-        b.classList.toggle("chip-active", b === btn);
+  // Wires up a single-select chip row: clicking a chip marks it active,
+  // clears the others in the same row, and hands its value to onPick. Used
+  // for both the story-filter row and the tier-filter row below.
+  function wireChipGroup(selector, onPick) {
+    var chips = document.querySelectorAll(selector);
+    Array.prototype.forEach.call(chips, function (btn) {
+      btn.addEventListener("click", function () {
+        Array.prototype.forEach.call(chips, function (b) {
+          b.classList.toggle("chip-active", b === btn);
+        });
+        onPick(btn);
+        refresh();
       });
-      refresh();
     });
+  }
+
+  wireChipGroup(".map-chips:not(.map-tier-chips) .chip", function (btn) {
+    activeFilter = btn.getAttribute("data-filter");
+  });
+  wireChipGroup(".map-tier-chips .chip", function (btn) {
+    activeTier = btn.getAttribute("data-tier");
   });
 
   // ── Postcode distances ────────────────────────────────────────────────
