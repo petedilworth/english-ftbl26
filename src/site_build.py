@@ -581,6 +581,7 @@ class SiteBuilder:
                     {
                         "club_id": r["club_id"],
                         "name": r["club_name"],
+                        "color": self.color(r["club_id"]),
                         "status_slug": STATUS_PRESENTATION.get(
                             r["status"], ("stayed", "", "")
                         )[0],
@@ -593,6 +594,7 @@ class SiteBuilder:
         self.render(
             "matrix.html", self.out / "matrix" / "index.html", 1,
             title="The Matrix", season_columns=season_columns, rows=rows,
+            main_class="wide",
         )
 
     # ── Insights ───────────────────────────────────────────────────────────
@@ -839,8 +841,13 @@ class SiteBuilder:
 
         out_dir = self.out / "map"
         out_dir.mkdir(parents=True, exist_ok=True)
+        # Tier names travel with the payload so the map legend and the rest of
+        # the site name divisions from the same place (TIER_SLUGS).
+        tier_names = {str(tier): label for tier, (_slug, label) in TIER_SLUGS.items()}
         (out_dir / "map-data.js").write_text(
-            "window.MAP_DATA = " + json.dumps({"years": self.seasons, "clubs": clubs}) + ";",
+            "window.MAP_DATA = "
+            + json.dumps({"years": self.seasons, "clubs": clubs, "tierNames": tier_names})
+            + ";",
             encoding="utf-8",
         )
         self.render(

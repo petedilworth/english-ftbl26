@@ -27,6 +27,30 @@
     return prev + "/" + String(year).slice(-2).padStart(2, "0");
   }
 
+  // Legend is built from TIER_COLORS rather than hand-written in the template,
+  // so the swatches can't drift out of step with the markers themselves.
+  function buildLegend() {
+    var holder = document.getElementById("map-legend");
+    if (!holder) return;
+    var names = data.tierNames || {};
+
+    function entry(color, label) {
+      var item = document.createElement("span");
+      item.className = "legend-item";
+      var swatch = document.createElement("span");
+      swatch.className = "legend-dot";
+      swatch.style.background = color;
+      item.appendChild(swatch);
+      item.appendChild(document.createTextNode(label));
+      holder.appendChild(item);
+    }
+
+    Object.keys(TIER_COLORS).forEach(function (tier) {
+      entry(TIER_COLORS[tier], names[tier] || "Tier " + tier);
+    });
+    entry(GHOST, "Outside Tiers 1–5 that season, or defunct");
+  }
+
   function passesFilter(club) {
     if (activeFilter === "all") return true;
     if (activeFilter === "fallen") return club.fallen;
@@ -123,5 +147,6 @@
       .catch(function () { alert("Postcode lookup failed — check your connection"); });
   });
 
+  buildLegend();
   refresh();
 })();
