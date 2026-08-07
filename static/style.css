@@ -7,6 +7,7 @@
   --bg-soft: #f6f8fa;
   --up: #1a7f3c;
   --down: #b3261e;
+  --story: #8a3ffc;   /* theme event markers — distinct from promotion/relegation */
 }
 
 * { box-sizing: border-box; }
@@ -254,6 +255,30 @@ table.facts td {
 }
 .chart-legend .dot.up { background: var(--up); }
 .chart-legend .dot.down { background: var(--down); }
+.chart-legend .dot.story { background: transparent; border: 2px solid var(--story); }
+
+/* Theme pages — intro prose, the clickable event dot's detail panel, and
+   the per-club narrative below the chart. */
+.theme-intro { font-size: 15px; margin-bottom: 20px; }
+.theme-intro p { margin: 0 0 12px; }
+.chart-detail {
+  margin: 10px 0 0;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--story);
+  border-radius: 8px;
+  background: var(--bg-soft);
+  font-size: 14px;
+}
+.chart-detail p { margin: 6px 0 0; }
+.event-dot:hover { stroke-width: 3; }
+.theme-club { padding: 14px 0; border-bottom: 1px solid var(--line); }
+.theme-club h3 { margin: 0 0 6px; font-size: 16px; }
+.theme-club p { margin: 0; font-size: 14px; }
+.theme-events { list-style: none; padding: 0; margin: 8px 0 0; font-size: 13px; color: var(--muted); }
+.theme-events li { padding: 2px 0; }
+.theme-events .event-season { font-variant-numeric: tabular-nums; font-weight: 600; color: var(--ink); margin-right: 6px; }
+.theme-events .event-note { font-style: italic; }
 
 /* Matrix view — one shared scroll container so every division's row moves
    together; row labels and the header stay pinned while scrolling. */

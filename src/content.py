@@ -147,6 +147,184 @@ def derive_themes(facts: dict) -> list[str]:
     return sorted(themes)
 
 
+# ── Theme events and narrative ──────────────────────────────────────────
+#
+# Both are derived from the same facts that put the club on the theme in the
+# first place, so a club needs no extra authoring to get a dated dot on the
+# theme chart and a passage explaining why it's there. `theme_notes:` in the
+# front-matter overrides the derived prose where something richer is wanted.
+#
+# Two traps the derivation has to absorb:
+#  - Calendar years and season-end years both appear in the schema.
+#    administration.year is a calendar year; points_deductions.season_end_year
+#    is a season-end year. Coventry has both for the same 2013/14 saga.
+#  - Range fields (exile.seasons, previous_grounds.years) are free text and
+#    use an en-dash, so they can't be split on "-".
+
+_YEAR = re.compile(r"(1[89]\d{2}|20\d{2})")
+
+
+def first_year(value) -> int | None:
+    """
+    First four-digit year in a value, whatever shape it arrives in.
+    Handles the free-text ranges ("1997-1999", en-dash and all) that the
+    exile and previous_grounds fields use.
+    """
+    if value is None:
+        return None
+    if isinstance(value, int):
+        return value if 1800 <= value <= 2100 else None
+    match = _YEAR.search(str(value))
+    return int(match.group(1)) if match else None
+
+
+def to_season_end_year(year: int | None, kind: str) -> int | None:
+    """
+    Put a year on the standings axis, which is keyed by season-end year.
+    A calendar year N sits in the season that ends in N+1, because seasons
+    run August-May.
+    """
+    if year is None:
+        return None
+    return year + 1 if kind == "calendar" else year
+
+
+def _plural(n: int, word: str) -> str:
+    return f"{n} {word}{'' if n == 1 else 's'}"
+
+
+def theme_events(slug: str, facts: dict) -> list[dict]:
+    """
+    Dated events explaining why a club sits on a theme, as
+    [{season_end_year, label, text}] sorted oldest first.
+
+    Themes with no natural date (council-ground, multi-club) return [] -
+    those pages get a narrative but no event dots.
+    """
+    facts = facts or {}
+    events: list[dict] = []
+
+    def add(year, kind, label, text):
+        season = to_season_end_year(first_year(year), kind)
+        if season:
+            events.append({"season_end_year": season, "label": label, "text": text})
+
+    if slug == "administration":
+        for e in facts.get("administration") or []:
+            if not isinstance(e, dict):
+                continue
+            pts = e.get("points_deducted")
+            text = f"Entered administration in {e.get('year')}"
+            if pts:
+                text += f", and was docked {_plural(int(pts), 'point')}"
+            text += "."
+            if e.get("note"):
+                text += f" {e['note']}."
+            add(e.get("year"), "calendar", "Administration", text)
+
+    elif slug == "points-deductions":
+        for e in facts.get("points_deductions") or []:
+            if not isinstance(e, dict) or not e.get("points"):
+                continue
+            text = f"Docked {_plural(int(e['points']), 'point')}"
+            if e.get("season_end_year"):
+                text += f" in {_season_label(int(e['season_end_year']))}"
+            text += "."
+            if e.get("reason"):
+                text += f" {e['reason']}."
+            add(e.get("season_end_year"), "season", "Points deduction", text)
+
+    elif slug == "exiled":
+        for e in facts.get("exile") or []:
+            if not isinstance(e, dict) or not e.get("venue"):
+                continue
+            text = f"Played home games at {e['venue']}"
+            if e.get("seasons"):
+                text += f", {e['seasons']}"
+            if e.get("distance_miles"):
+                text += f" — about {e['distance_miles']} miles from home"
+            text += "."
+            add(e.get("seasons"), "calendar", "Exile begins", text)
+
+    elif slug == "ground-grading":
+        for e in facts.get("ground_grading_denial") or []:
+            if not isinstance(e, dict):
+                continue
+            note = e.get("note") or "Promotion denied on ground grading"
+            add(e.get("season_end_year"), "season", "Ground grading", f"{note}.")
+
+    elif slug == "phoenix":
+        folded = facts.get("predecessor_folded")
+        if folded and facts.get("phoenix_of"):
+            add(folded, "calendar", "Predecessor folded",
+                f"{facts['phoenix_of']} ceased to exist in {folded}.")
+        if facts.get("founded"):
+            text = f"Founded in {facts['founded']}"
+            if facts.get("phoenix_of"):
+                text += f", succeeding {facts['phoenix_of']}"
+            text += "."
+            add(facts.get("founded"), "calendar", "Club founded", text)
+
+    elif slug == "stadium-moves":
+        if facts.get("stadium_opened") and facts.get("stadium"):
+            add(facts["stadium_opened"], "calendar", "Moved in",
+                f"{facts['stadium']} opened in {facts['stadium_opened']}.")
+
+    elif slug == "fan-owned":
+        if facts.get("owner_since"):
+            owner = facts.get("owner") or "The supporters' trust"
+            add(facts["owner_since"], "calendar", "Fans take control",
+                f"{owner} took control in {facts['owner_since']}.")
+
+    events.sort(key=lambda e: e["season_end_year"])
+    return events
+
+
+def theme_narrative(slug: str, facts: dict) -> str:
+    """
+    A passage explaining why this club is on this theme. Derived from the
+    facts, unless the club's front-matter overrides it via
+    `theme_notes: {<slug>: "..."}`.
+    """
+    facts = facts or {}
+
+    notes = facts.get("theme_notes")
+    if isinstance(notes, dict):
+        override = notes.get(slug)
+        if override and str(override).strip():
+            return str(override).strip()
+
+    events = theme_events(slug, facts)
+    if events:
+        return " ".join(e["text"] for e in events)
+
+    # Themes with no dated event still deserve a sentence.
+    if slug == "council-ground" and facts.get("stadium"):
+        return (
+            f"{facts['stadium']} is owned by the local authority; the club "
+            "plays there as a tenant."
+        )
+    if slug == "multi-club" and facts.get("multi_club_group"):
+        return f"Part of {facts['multi_club_group']}."
+    return ""
+
+
+def load_theme(path: Path) -> str:
+    """
+    A theme's introductory prose (content/themes/<slug>.md). Returns "" when
+    there's no file, so a theme without one simply shows no intro.
+    """
+    if not path.exists():
+        return ""
+    _facts, body = parse_front_matter(path.read_text(encoding="utf-8"))
+    return body.strip()
+
+
+def _season_label(year: int) -> str:
+    """Season-end year to display label, e.g. 2014 -> 2013/14."""
+    return f"{year - 1}/{year % 100:02d}"
+
+
 def load_club(path: Path) -> dict | None:
     """
     Read one club narrative file. Returns None if it doesn't exist, so

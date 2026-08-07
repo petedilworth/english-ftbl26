@@ -3,9 +3,38 @@
 <h1>{{ heading }}</h1>
 <p class="subtitle">{{ clubs|length }} club{{ 's' if clubs|length != 1 }} · <a href="{{ root }}/themes/index.html">all themes</a></p>
 
-<ul class="team-list">
-  {% for club in clubs %}
-  <li><span class="color-chip" style="background: {{ club.color }}"></span><a href="{{ root }}/team/{{ club.club_id }}/index.html">{{ club.name }}</a></li>
-  {% endfor %}
-</ul>
+{% if intro_html %}
+<div class="theme-intro">{{ intro_html }}</div>
+{% endif %}
+
+{% if has_chart %}
+<h2>Trajectories</h2>
+<div id="club-picker" class="club-picker"></div>
+<div id="chart-holder" class="chart-holder">
+  <svg id="trajectory-chart" viewBox="0 0 720 420" preserveAspectRatio="xMidYMid meet"></svg>
+</div>
+<p class="chart-legend"><span><span class="dot up"></span>promotion</span><span><span class="dot down"></span>relegation</span><span><span class="dot story"></span>event — click for detail</span></p>
+<p class="subtitle" id="chart-hint">Untick every club to clear the chart.</p>
+<div id="chart-detail" class="chart-detail" hidden></div>
+{% endif %}
+
+<h2>The clubs</h2>
+{% for club in clubs %}
+<div class="theme-club">
+  <h3><span class="color-chip" style="background: {{ club.color }}"></span><a href="{{ root }}/team/{{ club.club_id }}/index.html">{{ club.name }}</a></h3>
+  {% if club.narrative %}<p>{{ club.narrative }}</p>{% endif %}
+  {% if club.events %}
+  <ul class="theme-events">
+    {% for event in club.events %}
+    <li{% if not event.on_chart %} class="off-chart"{% endif %}><span class="event-season">{{ event.season }}</span> {{ event.label }}{% if not event.on_chart %} <span class="event-note">— before the records begin, so not shown on the chart</span>{% endif %}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</div>
+{% endfor %}
+
+{% if has_chart %}
+<script src="chart-data.js"></script>
+<script src="{{ root }}/static/chart.js"></script>
+{% endif %}
 {% endblock %}

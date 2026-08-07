@@ -67,6 +67,31 @@ panel on the team page, and automatically place the club on the relevant
 `themes: [taylor-report]` adds theme tags manually, for angles the fields
 above can't express.
 
+### Theme pages
+
+Dated fields do double duty. Each theme page draws a trajectory chart of its
+clubs and puts a marker on the season the theme's defining event happened —
+`administration.year`, `points_deductions.season_end_year`, the first year in
+an `exile.seasons` range, and so on. Clicking the marker shows what happened.
+Below the chart, each club gets a passage explaining why it's there, composed
+from the same facts. **You don't need to write any of that** — filling in the
+fields above produces it.
+
+Where the derived passage isn't good enough, override it per theme:
+
+```yaml
+theme_notes:
+  administration: >
+    A longer, hand-written account of what the 2013 insolvency actually
+    cost the club.
+```
+
+Events that predate the standings data (1993/94) can't be plotted, so they're
+listed under the chart with a note instead of being dropped.
+
+Theme intros — the "why is this a theme" paragraph at the top of each theme
+page — live in `content/themes/<slug>.md`, one short file per theme.
+
 ## The four prose sections
 
 Use these `##` headings. Any you omit simply don't appear; anything under
