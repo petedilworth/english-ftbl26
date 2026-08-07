@@ -5,9 +5,14 @@ sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
 from content import (
     derive_themes,
+    first_year,
     load_club,
+    load_theme,
     parse_front_matter,
     split_sections,
+    theme_events,
+    theme_narrative,
+    to_season_end_year,
 )
 
 
@@ -168,3 +173,134 @@ def test_load_club_facts_only_has_no_prose(tmp_path):
     club = load_club(path)
     assert club["facts"]["founded"] == 1889
     assert club["has_prose"] is False
+
+
+# ── Year parsing ───────────────────────────────────────────────────────
+# The schema mixes calendar years with season-end years, and the range
+# fields are free text using an en-dash. Both have already caused wrong
+# dates, so they're pinned here.
+
+def test_first_year_handles_every_shape_in_the_corpus():
+    cases = [
+        (2013, 2013),                 # plain int
+        ("1997–1999", 1997),     # en-dash range, as the files actually use
+        ("1985-1991", 1985),          # hyphen range
+        ("2019–2021", 2019),
+        ("opened 1919", 1919),        # year embedded in prose
+        (None, None),
+        ("no year here", None),
+        (42, None),                   # out of plausible range
+    ]
+    for value, expected in cases:
+        assert first_year(value) == expected, value
+
+
+def test_calendar_years_shift_onto_the_season_axis():
+    # A season starting in calendar year N ends in N+1, which is the axis
+    # the standings table and both charts are keyed on.
+    assert to_season_end_year(2013, "calendar") == 2014
+    assert to_season_end_year(2014, "season") == 2014
+    assert to_season_end_year(None, "calendar") is None
+
+
+def test_coventrys_administration_and_deduction_land_on_one_season():
+    # The real trap: administration.year is 2013 (calendar) and
+    # points_deductions.season_end_year is 2014 - the same 2013/14 saga.
+    facts = {
+        "administration": [{"year": 2013, "points_deducted": 10}],
+        "points_deductions": [{"season_end_year": 2014, "points": 10}],
+    }
+    admin = theme_events("administration", facts)
+    deduction = theme_events("points-deductions", facts)
+    assert admin[0]["season_end_year"] == deduction[0]["season_end_year"] == 2014
+
+
+# ── Theme events ───────────────────────────────────────────────────────
+
+def test_theme_events_per_theme():
+    cases = [
+        ("administration", {"administration": [{"year": 2010, "points_deducted": 9}]}, 2011),
+        ("points-deductions", {"points_deductions": [{"season_end_year": 2014, "points": 3}]}, 2014),
+        ("exiled", {"exile": [{"venue": "Elsewhere", "seasons": "1997–1999"}]}, 1998),
+        ("ground-grading", {"ground_grading_denial": [{"season_end_year": 1996}]}, 1996),
+        ("phoenix", {"founded": 2002, "phoenix_of": "Old FC"}, 2003),
+        ("stadium-moves", {"stadium": "New Park", "stadium_opened": 2005}, 2006),
+        ("fan-owned", {"owner_since": 2003, "owner": "The Trust"}, 2004),
+    ]
+    for slug, facts, expected in cases:
+        events = theme_events(slug, facts)
+        assert events, f"{slug} should yield an event"
+        assert events[0]["season_end_year"] == expected, slug
+        assert events[0]["text"], f"{slug} event needs text"
+
+
+def test_themes_without_a_natural_date_yield_no_dots():
+    assert theme_events("council-ground", {"stadium_ownership": "council"}) == []
+    assert theme_events("multi-club", {"multi_club_group": "A Group"}) == []
+
+
+def test_events_are_sorted_oldest_first():
+    facts = {"exile": [
+        {"venue": "Later", "seasons": "2019–2021"},
+        {"venue": "Earlier", "seasons": "2013–2014"},
+    ]}
+    years = [e["season_end_year"] for e in theme_events("exiled", facts)]
+    assert years == sorted(years)
+
+
+def test_undated_entries_are_skipped_not_crashed():
+    assert theme_events("administration", {"administration": [{"note": "no year"}]}) == []
+    assert theme_events("exiled", {"exile": [{"venue": "Nowhere"}]}) == []
+    assert theme_events("points-deductions", {"points_deductions": ["not a dict"]}) == []
+    assert theme_events("administration", {}) == []
+
+
+# ── Theme narrative ────────────────────────────────────────────────────
+
+def test_narrative_derived_from_facts():
+    text = theme_narrative("administration", {
+        "administration": [{"year": 2013, "points_deducted": 10,
+                            "note": "Followed a rent dispute"}],
+    })
+    assert "2013" in text and "10 points" in text and "rent dispute" in text
+
+
+def test_narrative_singular_point_reads_correctly():
+    text = theme_narrative("points-deductions", {
+        "points_deductions": [{"season_end_year": 2014, "points": 1}],
+    })
+    assert "1 point." in text or "1 point " in text
+    assert "1 points" not in text
+
+
+def test_theme_notes_override_the_derived_text():
+    facts = {
+        "administration": [{"year": 2010, "points_deducted": 9}],
+        "theme_notes": {"administration": "A richer hand-written passage."},
+    }
+    assert theme_narrative("administration", facts) == "A richer hand-written passage."
+    # Other themes are unaffected by an override aimed at one of them
+    assert "9 points" in theme_narrative("administration", {
+        "administration": [{"year": 2010, "points_deducted": 9}]})
+
+
+def test_undated_themes_still_get_a_sentence():
+    assert "local authority" in theme_narrative(
+        "council-ground", {"stadium": "St James Park", "stadium_ownership": "council"})
+    assert "A Group" in theme_narrative("multi-club", {"multi_club_group": "A Group"})
+
+
+def test_narrative_empty_when_nothing_to_say():
+    assert theme_narrative("administration", {}) == ""
+
+
+# ── Theme intros ───────────────────────────────────────────────────────
+
+def test_load_theme_missing_file_is_empty(tmp_path):
+    assert load_theme(tmp_path / "nope.md") == ""
+
+
+def test_load_theme_reads_prose(tmp_path):
+    path = tmp_path / "phoenix.md"
+    path.write_text("Why this is a theme.\n", encoding="utf-8")
+    assert load_theme(path) == "Why this is a theme."

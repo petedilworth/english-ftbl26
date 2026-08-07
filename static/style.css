@@ -7,6 +7,7 @@
   --bg-soft: #f6f8fa;
   --up: #1a7f3c;
   --down: #b3261e;
+  --story: #8a3ffc;   /* theme event markers — distinct from promotion/relegation */
 }
 
 * { box-sizing: border-box; }
@@ -29,11 +30,43 @@ body {
   border-bottom: 1px solid var(--line);
 }
 .brand { font-weight: 700; font-size: 17px; color: var(--ink); text-decoration: none; }
-.site-header nav { display: flex; gap: 16px; flex-wrap: wrap; }
+.site-header nav { display: flex; gap: 16px; flex-wrap: wrap; align-items: baseline; }
 .site-header nav a { color: var(--muted); text-decoration: none; font-size: 14px; }
 .site-header nav a:hover { color: var(--accent); }
 
+/* "Browse" disclosure — the one-dimensional index pages, kept a click away
+   so the header leads with the views that actually get used. */
+.nav-more { position: relative; }
+.nav-more > summary {
+  list-style: none;
+  cursor: pointer;
+  color: var(--muted);
+  font-size: 14px;
+}
+.nav-more > summary::-webkit-details-marker { display: none; }
+.nav-more > summary::after { content: " ›"; display: inline-block; transform: rotate(90deg); }
+.nav-more[open] > summary,
+.nav-more > summary:hover { color: var(--accent); }
+.nav-more-menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 8px);
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 140px;
+  padding: 12px 14px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
 main { max-width: 860px; margin: 0 auto; padding: 20px 16px 48px; }
+/* Pages whose content is inherently wide (the matrix) opt out of the
+   reading-width cap rather than being squeezed into it. */
+main.wide { max-width: none; }
 
 h1 { font-size: 26px; margin: 8px 0 4px; }
 h2 { font-size: 19px; margin: 28px 0 8px; }
@@ -222,6 +255,30 @@ table.facts td {
 }
 .chart-legend .dot.up { background: var(--up); }
 .chart-legend .dot.down { background: var(--down); }
+.chart-legend .dot.story { background: transparent; border: 2px solid var(--story); }
+
+/* Theme pages — intro prose, the clickable event dot's detail panel, and
+   the per-club narrative below the chart. */
+.theme-intro { font-size: 15px; margin-bottom: 20px; }
+.theme-intro p { margin: 0 0 12px; }
+.chart-detail {
+  margin: 10px 0 0;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--story);
+  border-radius: 8px;
+  background: var(--bg-soft);
+  font-size: 14px;
+}
+.chart-detail p { margin: 6px 0 0; }
+.event-dot:hover { stroke-width: 3; }
+.theme-club { padding: 14px 0; border-bottom: 1px solid var(--line); }
+.theme-club h3 { margin: 0 0 6px; font-size: 16px; }
+.theme-club p { margin: 0; font-size: 14px; }
+.theme-events { list-style: none; padding: 0; margin: 8px 0 0; font-size: 13px; color: var(--muted); }
+.theme-events li { padding: 2px 0; }
+.theme-events .event-season { font-variant-numeric: tabular-nums; font-weight: 600; color: var(--ink); margin-right: 6px; }
+.theme-events .event-note { font-style: italic; }
 
 /* Matrix view — one shared scroll container so every division's row moves
    together; row labels and the header stay pinned while scrolling. */
@@ -229,7 +286,7 @@ table.facts td {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   margin-bottom: 24px;
-  max-height: 78vh;
+  max-height: 85vh;
   overflow-y: auto;
 }
 table.matrix { border-collapse: collapse; }
@@ -261,23 +318,55 @@ table.matrix th.matrix-row-label {
 }
 table.matrix td {
   vertical-align: top;
-  padding: 4px 6px;
+  padding: 2px 4px;
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
-  min-width: 96px;
+  min-width: 84px;
 }
 .matrix-club {
   display: block;
-  font-size: 10px;
+  font-size: 9px;
   padding: 0 3px;
   border-radius: 3px;
   cursor: pointer;
   white-space: nowrap;
-  line-height: 1.4;
+  line-height: 1.2;
 }
 .matrix-club.status-champions { font-weight: 700; }
 .matrix-club.status-relegated, .matrix-club.status-play-off-relegated { color: var(--down); }
 .matrix-club.status-promoted, .matrix-club.status-play-off-promoted { color: var(--up); }
+
+/* Compact mode — each club becomes a bar in its own kit colour rather than a
+   line of text, which is the only way 24-club divisions × 5 tiers fit on one
+   screen. Names move to the native title tooltip. Applied by matrix.js from a
+   stored preference, so the rendered markup stays mode-agnostic. */
+.matrix-controls { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.matrix-controls .hint { color: var(--muted); font-size: 12px; }
+table.matrix.compact td { min-width: 26px; padding: 2px 3px; }
+table.matrix.compact .matrix-club {
+  font-size: 0;
+  height: 5px;
+  margin-bottom: 1px;
+  padding: 0;
+  border-radius: 1px;
+  background: var(--club-color, var(--muted));
+}
+/* Outcome still readable at 5px: a contrasting cap on the end of the bar. */
+table.matrix.compact .matrix-club.status-relegated,
+table.matrix.compact .matrix-club.status-play-off-relegated {
+  box-shadow: inset 0 -2px 0 var(--down);
+}
+table.matrix.compact .matrix-club.status-promoted,
+table.matrix.compact .matrix-club.status-play-off-promoted {
+  box-shadow: inset 0 2px 0 var(--up);
+}
+table.matrix.compact .matrix-club.status-champions {
+  box-shadow: inset 0 2px 0 var(--up), inset 0 -2px 0 var(--up);
+}
+table.matrix.compact .matrix-highlight {
+  outline: 1px solid var(--ink);
+  background: var(--club-color, var(--muted));
+}
 .matrix-highlight { background: #ffe89e; font-weight: 700; color: var(--ink) !important; }
 .matrix-dim { opacity: 0.35; }
 
@@ -302,6 +391,23 @@ table.matrix td {
   cursor: pointer;
 }
 .chip-active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  margin-bottom: 8px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.map-legend .legend-item { display: inline-flex; align-items: center; }
+.map-legend .legend-dot {
+  display: inline-block;
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  margin-right: 6px;
+  border: 1px solid #fff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15);
+}
 .map-postcode-row { display: flex; gap: 8px; align-items: center; }
 .map-postcode-row .search-input { margin: 0; }
 .distance-panel { margin-top: 16px; }

@@ -198,8 +198,11 @@ class SiteBuilder:
         )
         self.colors = self._load_colors()
         # {club_id: [theme_slug, ...]} - filled by build_teams, consumed by
-        # build_themes, so themes always reflect what the club pages rendered
+        # build_themes, so themes always reflect what the club pages rendered.
+        # club_facts carries the front-matter alongside, which is what the
+        # theme pages derive their event dots and narrative from.
         self.club_themes: dict[str, list[str]] = {}
+        self.club_facts: dict[str, dict] = {}
         self.seasons = [
             r[0] for r in self.conn.execute(
                 "SELECT DISTINCT season_end_year FROM standings ORDER BY season_end_year"
@@ -417,6 +420,7 @@ class SiteBuilder:
                     for s in club_content["themes"]
                 ]
                 self.club_themes[club_id] = club_content["themes"]
+                self.club_facts[club_id] = club_content["facts"]
 
             out_dir = self.out / "team" / club_id
             has_chart = False
@@ -504,6 +508,8 @@ class SiteBuilder:
             "maxPos": max_pos,
             "tierFloors": tier_floors_json,
             "clubs": clubs,
+            # The global chart starts empty - 160 lines at once says nothing.
+            "preselect": [],
         }
         out_dir = self.out / "chart"
         out_dir.mkdir(parents=True, exist_ok=True)
@@ -529,27 +535,82 @@ class SiteBuilder:
             )
         }
 
-        by_theme: dict[str, list[dict]] = {}
+        import json
+
+        import charts as charts_mod
+        import markdown as md
+        from markupsafe import Markup
+
+        floors_by_year, max_pos = charts_mod.tier_floors(self.conn)
+        tier_floors_json = {str(year): floors for year, floors in floors_by_year.items()}
+        themes_dir = PROJECT_ROOT / "content" / "themes"
+
+        by_theme: dict[str, list[str]] = {}
         for club_id, themes in self.club_themes.items():
             for slug in themes:
-                by_theme.setdefault(slug, []).append({
-                    "club_id": club_id,
-                    "name": names.get(club_id, club_id),
-                    "color": self.color(club_id),
-                })
+                by_theme.setdefault(slug, []).append(club_id)
 
         entries = []
         for slug in sorted(by_theme):
-            clubs = sorted(by_theme[slug], key=lambda c: c["name"])
             label = content.THEMES.get(slug, slug.replace("-", " ").capitalize())
+            club_ids = sorted(by_theme[slug], key=lambda c: names.get(c, c))
+
+            clubs, chart_clubs = [], []
+            for club_id in club_ids:
+                facts = self.club_facts.get(club_id, {})
+                events = content.theme_events(slug, facts)
+                series = charts_mod.overall_positions(self.conn, club_id)
+                plotted = {year for year, _pos, _ev in series}
+
+                clubs.append({
+                    "club_id": club_id,
+                    "name": names.get(club_id, club_id),
+                    "color": self.color(club_id),
+                    "narrative": content.theme_narrative(slug, facts),
+                    # Events that predate the standings can't sit on the chart,
+                    # so they're flagged for the narrative to carry instead.
+                    "events": [{
+                        "label": e["label"],
+                        "season": season_label(e["season_end_year"]),
+                        "text": e["text"],
+                        "on_chart": e["season_end_year"] in plotted,
+                    } for e in events],
+                })
+                if series:
+                    chart_clubs.append({
+                        "id": club_id,
+                        "name": names.get(club_id, club_id),
+                        "color": self.color(club_id),
+                        "series": series,
+                        "events": events,
+                    })
+
+            out_dir = self.out / "themes" / slug
+            out_dir.mkdir(parents=True, exist_ok=True)
+            (out_dir / "chart-data.js").write_text(
+                "window.CHART_DATA = " + json.dumps({
+                    "years": self.seasons,
+                    "maxPos": max_pos,
+                    "tierFloors": tier_floors_json,
+                    "clubs": chart_clubs,
+                    # Every club in the theme is drawn on arrival; the picker
+                    # is there to take them away, not to start from nothing.
+                    "preselect": [c["id"] for c in chart_clubs],
+                }) + ";",
+                encoding="utf-8",
+            )
+
+            intro = content.load_theme(themes_dir / f"{slug}.md")
             entries.append({
                 "slug": slug,
                 "name": label,
                 "sub": f"{len(clubs)} club{'s' if len(clubs) != 1 else ''}",
             })
             self.render(
-                "theme.html", self.out / "themes" / slug / "index.html", 2,
+                "theme.html", out_dir / "index.html", 2,
                 title=label, heading=label, clubs=clubs,
+                intro_html=Markup(md.markdown(intro)) if intro else None,
+                has_chart=bool(chart_clubs),
             )
 
         self.render(
@@ -581,6 +642,7 @@ class SiteBuilder:
                     {
                         "club_id": r["club_id"],
                         "name": r["club_name"],
+                        "color": self.color(r["club_id"]),
                         "status_slug": STATUS_PRESENTATION.get(
                             r["status"], ("stayed", "", "")
                         )[0],
@@ -593,6 +655,7 @@ class SiteBuilder:
         self.render(
             "matrix.html", self.out / "matrix" / "index.html", 1,
             title="The Matrix", season_columns=season_columns, rows=rows,
+            main_class="wide",
         )
 
     # ── Insights ───────────────────────────────────────────────────────────
@@ -839,8 +902,13 @@ class SiteBuilder:
 
         out_dir = self.out / "map"
         out_dir.mkdir(parents=True, exist_ok=True)
+        # Tier names travel with the payload so the map legend and the rest of
+        # the site name divisions from the same place (TIER_SLUGS).
+        tier_names = {str(tier): label for tier, (_slug, label) in TIER_SLUGS.items()}
         (out_dir / "map-data.js").write_text(
-            "window.MAP_DATA = " + json.dumps({"years": self.seasons, "clubs": clubs}) + ";",
+            "window.MAP_DATA = "
+            + json.dumps({"years": self.seasons, "clubs": clubs, "tierNames": tier_names})
+            + ";",
             encoding="utf-8",
         )
         self.render(

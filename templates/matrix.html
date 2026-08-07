@@ -3,6 +3,11 @@
 <h1>The Matrix</h1>
 <p class="subtitle">Every division, every season — most recent on the left. Scroll sideways through time; tap any club to light up its journey.</p>
 
+<div class="matrix-controls">
+  <button id="matrix-density" class="chip" type="button">Compact</button>
+  <span class="hint" id="matrix-density-hint">Names shown. Switch to compact to see all five divisions at once.</span>
+</div>
+
 <div class="matrix-scroll">
   <table class="matrix">
     <tr>
@@ -15,7 +20,7 @@
       {% for cell in row.cells %}
       <td>
         {% for club in cell %}
-        <span class="matrix-club status-{{ club.status_slug }}" data-club="{{ club.club_id or club.name }}">{{ club.name }}</span>
+        <span class="matrix-club status-{{ club.status_slug }}" data-club="{{ club.club_id or club.name }}" style="--club-color: {{ club.color }}" title="{{ club.name }}">{{ club.name }}</span>
         {% endfor %}
       </td>
       {% endfor %}

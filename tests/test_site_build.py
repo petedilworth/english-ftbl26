@@ -297,3 +297,107 @@ def test_themes_index_renders_empty_state_with_no_stories(tmp_path, monkeypatch)
     out = _build_with_content(tmp_path, monkeypatch, {})
     index = (out / "themes" / "index.html").read_text()
     assert "Themes appear here" in index
+
+
+# ── Theme pages: intro, chart, events, narrative ───────────────────────
+
+THEMED_STORY = """---
+founded: 1883
+ownership_model: fan_trust
+owner: The Supporters' Trust
+owner_since: 2003
+stadium: Test Park
+administration:
+  - year: 2010
+    points_deducted: 9
+    note: Followed a rent dispute
+exile:
+  - venue: Somewhere Else
+    seasons: 1985-1991
+---
+## Origins
+Formed by factory workers.
+"""
+
+
+def _build_with_theme_intros(tmp_path, monkeypatch, files, intros):
+    """As _build_with_content, but also seeds content/themes/<slug>.md."""
+    import shutil
+
+    import site_build as sb
+
+    db = _db_on_disk(tmp_path)
+    content_dir = tmp_path / "content"
+    (content_dir / "themes").mkdir(parents=True)
+    for club_id, text in files.items():
+        (content_dir / f"{club_id}.md").write_text(text, encoding="utf-8")
+    for slug, text in intros.items():
+        (content_dir / "themes" / f"{slug}.md").write_text(text, encoding="utf-8")
+
+    real_root = Path(__file__).parent.parent
+    shutil.copytree(real_root / "templates", tmp_path / "templates")
+    shutil.copytree(real_root / "static", tmp_path / "static")
+    monkeypatch.setattr(sb, "PROJECT_ROOT", tmp_path)
+
+    out = tmp_path / "site"
+    SiteBuilder(db, out, charts_enabled=False).build()
+    return out
+
+
+def test_theme_page_has_intro_chart_and_derived_narrative(tmp_path, monkeypatch):
+    out = _build_with_theme_intros(
+        tmp_path, monkeypatch,
+        {"giant-fc": THEMED_STORY},
+        {"administration": "Why insolvency reshapes a club."},
+    )
+    page = (out / "themes" / "administration" / "index.html").read_text()
+
+    assert "Why insolvency reshapes a club." in page       # intro prose
+    assert "trajectory-chart" in page                      # the chart
+    assert "chart-detail" in page                          # click-for-detail panel
+    # Narrative derived from facts, no hand-authoring needed
+    assert "2010" in page and "9 points" in page and "rent dispute" in page
+
+
+def test_theme_chart_preselects_every_club_in_the_theme(tmp_path, monkeypatch):
+    out = _build_with_theme_intros(
+        tmp_path, monkeypatch, {"giant-fc": THEMED_STORY}, {})
+    payload = json.loads(
+        (out / "themes" / "administration" / "chart-data.js")
+        .read_text().replace("window.CHART_DATA = ", "").rstrip(";")
+    )
+    assert payload["preselect"] == ["giant-fc"]
+    club = payload["clubs"][0]
+    assert club["events"][0]["season_end_year"] == 2011   # 2010 calendar -> 2010/11
+    assert club["events"][0]["text"]
+
+
+def test_events_before_the_records_are_flagged_not_dropped(tmp_path, monkeypatch):
+    # The exile starts in 1985; the fixture DB's standings start later, so the
+    # dot has nowhere to sit. It must still be reported in the narrative.
+    out = _build_with_theme_intros(
+        tmp_path, monkeypatch, {"giant-fc": THEMED_STORY}, {})
+    page = (out / "themes" / "exiled" / "index.html").read_text()
+    assert "Somewhere Else" in page
+    assert "before the records begin" in page
+
+
+def test_theme_without_intro_file_still_builds(tmp_path, monkeypatch):
+    out = _build_with_theme_intros(
+        tmp_path, monkeypatch, {"giant-fc": THEMED_STORY}, {})
+    page = (out / "themes" / "administration" / "index.html").read_text()
+    assert "theme-intro" not in page       # no empty furniture
+    assert "Giant FC" in page
+
+
+def test_global_chart_still_starts_empty(tmp_path):
+    # The theme charts preselect; the global one must not, or it draws
+    # every club in the database at once.
+    db = _db_on_disk(tmp_path)
+    out = tmp_path / "site"
+    SiteBuilder(db, out, charts_enabled=False).build()
+    payload = json.loads(
+        (out / "chart" / "chart-data.js")
+        .read_text().replace("window.CHART_DATA = ", "").rstrip(";")
+    )
+    assert payload["preselect"] == []

@@ -6,10 +6,38 @@
 // }
 (function () {
   var data = window.MAP_DATA;
-  if (!data || typeof L === "undefined") return;
+  if (!data) return;
 
   var TIER_COLORS = {1: "#5e35b1", 2: "#1e88e5", 3: "#43a047", 4: "#fb8c00", 5: "#e53935"};
   var GHOST = "#9aa3ab";
+
+  // Legend is built from TIER_COLORS rather than hand-written in the template,
+  // so the swatches can't drift out of step with the markers themselves. It
+  // runs before the Leaflet check because it needs nothing from Leaflet - if
+  // the CDN is unreachable the key should still explain the colour scheme.
+  (function buildLegend() {
+    var holder = document.getElementById("map-legend");
+    if (!holder) return;
+    var names = data.tierNames || {};
+
+    function entry(color, label) {
+      var item = document.createElement("span");
+      item.className = "legend-item";
+      var swatch = document.createElement("span");
+      swatch.className = "legend-dot";
+      swatch.style.background = color;
+      item.appendChild(swatch);
+      item.appendChild(document.createTextNode(label));
+      holder.appendChild(item);
+    }
+
+    Object.keys(TIER_COLORS).forEach(function (tier) {
+      entry(TIER_COLORS[tier], names[tier] || "Tier " + tier);
+    });
+    entry(GHOST, "Outside Tiers 1–5 that season, or defunct");
+  })();
+
+  if (typeof L === "undefined") return;
 
   var map = L.map("map", {scrollWheelZoom: false}).setView([52.8, -1.7], 6);
   L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
