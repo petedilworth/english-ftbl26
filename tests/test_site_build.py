@@ -1,4 +1,5 @@
 import json
+import re
 import sqlite3
 import sys
 from pathlib import Path
@@ -6,7 +7,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
 import trajectory
-from site_build import SiteBuilder, season_label, season_slug
+from site_build import SiteBuilder, _facts_rows, season_label, season_slug
 from test_digest import _make_db
 
 
@@ -456,3 +457,111 @@ def test_natural_level_insight_page_built(tmp_path):
     assert "Playing above their level" in page
     assert "Playing below their level" in page
     assert "Above and below their level" in (out / "insights" / "index.html").read_text()
+
+
+# ── Nickname ─────────────────────────────────────────────────────────
+
+def test_facts_rows_includes_nickname_when_present():
+    rows = _facts_rows({"nickname": "the Posh", "founded": 1934})
+    labels = [r["label"] for r in rows]
+    assert "Nickname" in labels
+    assert rows[labels.index("Nickname")]["value"] == "the Posh"
+
+
+def test_facts_rows_omits_nickname_when_absent():
+    rows = _facts_rows({"founded": 1934})
+    assert "Nickname" not in [r["label"] for r in rows]
+
+
+NICKNAME_STORY = """---
+founded: 1934
+nickname: the Posh
+capacity: 8696
+---
+## Origins
+Traditionally attributed to a 1921 remark about wanting posh players.
+"""
+
+
+def test_team_page_header_shows_nickname(tmp_path, monkeypatch):
+    out = _build_with_content(tmp_path, monkeypatch, {"giant-fc": NICKNAME_STORY})
+    page = (out / "team" / "giant-fc" / "index.html").read_text()
+    assert '<span class="nickname">"the Posh"</span>' in page
+
+
+def test_team_page_header_has_no_nickname_span_when_absent(tmp_path, monkeypatch):
+    out = _build_with_content(tmp_path, monkeypatch, {"giant-fc": RICH_STORY})
+    page = (out / "team" / "giant-fc" / "index.html").read_text()
+    assert "nickname" not in page
+
+
+# ── Capacity vs. position insight ───────────────────────────────────────
+
+def test_capacity_insight_plots_a_club_with_capacity_and_current_standings(tmp_path, monkeypatch):
+    # RICH_STORY (giant-fc) already carries capacity: 8696; the shared
+    # fixture DB has giant-fc in tier 3, position 8, in the latest season.
+    out = _build_with_content(tmp_path, monkeypatch, {"giant-fc": RICH_STORY})
+    page = (out / "insights" / "capacity" / "index.html").read_text()
+    assert page.count("<circle") == 1
+    assert "8,696" in page  # tooltip capacity, comma-formatted
+    assert "Stadium size vs" in (out / "insights" / "index.html").read_text()
+
+
+def test_capacity_insight_excludes_a_club_outside_the_current_season(tmp_path, monkeypatch):
+    # A club whose story has capacity but who last appeared in an older
+    # season (not the current one) must not be plotted against this
+    # season's tier-boundary lines - see the comment in _capacity_points.
+    old_season_story = """---
+founded: 1990
+capacity: 5000
+---
+## Origins
+Test club with a stale standings record.
+"""
+    import shutil
+    import site_build as sb
+
+    db = _db_on_disk(tmp_path)
+    conn = sqlite3.connect(db)
+    conn.execute(
+        "INSERT INTO club_master VALUES ('stale-fc','Stale FC',NULL,NULL,5)"
+    )
+    conn.execute(
+        "INSERT INTO standings VALUES (2020,5,'National League','stale-fc','Stale FC',"
+        "10,46,15,10,21,50,60,-10,55,'Stayed','test')"
+    )
+    trajectory.rebuild_trajectory(conn)
+    conn.commit()
+    conn.close()
+
+    content_dir = tmp_path / "content"
+    content_dir.mkdir()
+    (content_dir / "giant-fc.md").write_text(RICH_STORY, encoding="utf-8")
+    (content_dir / "stale-fc.md").write_text(old_season_story, encoding="utf-8")
+    real_root = Path(__file__).parent.parent
+    shutil.copytree(real_root / "templates", tmp_path / "templates")
+    shutil.copytree(real_root / "static", tmp_path / "static")
+    monkeypatch.setattr(sb, "PROJECT_ROOT", tmp_path)
+
+    out = tmp_path / "site"
+    SiteBuilder(db, out, charts_enabled=False).build()
+    page = (out / "insights" / "capacity" / "index.html").read_text()
+    assert page.count("<circle") == 1  # giant-fc only, not stale-fc
+
+
+def test_capacity_insight_absent_when_no_capacity_data(tmp_path, monkeypatch):
+    plain_story = "## Origins\nNo facts at all, just prose.\n"
+    out = _build_with_content(tmp_path, monkeypatch, {"giant-fc": plain_story})
+    assert not (out / "insights" / "capacity" / "index.html").exists()
+    assert "Stadium size vs" not in (out / "insights" / "index.html").read_text()
+
+
+def test_capacity_insight_y_axis_never_goes_negative(tmp_path, monkeypatch):
+    # A small club's padded minimum must clamp at 0, not go negative -
+    # capacity can't be a negative number of people.
+    tiny_story = "---\ncapacity: 500\n---\n## Origins\nA small ground.\n"
+    out = _build_with_content(tmp_path, monkeypatch, {"giant-fc": tiny_story})
+    page = (out / "insights" / "capacity" / "index.html").read_text()
+    axis_labels = re.findall(r'x="60"[^>]*>([\d,]+)</text>', page)
+    assert len(axis_labels) == 2          # cap_min and cap_max labels
+    assert all(not label.startswith("-") for label in axis_labels)

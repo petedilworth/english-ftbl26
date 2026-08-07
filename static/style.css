@@ -135,6 +135,7 @@ table.standings tr.status-relegated, table.standings tr.status-play-off-relegate
   margin-bottom: 8px;
 }
 .club-header h1 { margin: 0; }
+.nickname { color: var(--muted); font-weight: 400; font-style: italic; font-size: 0.65em; }
 
 .stat-cards {
   display: grid;
