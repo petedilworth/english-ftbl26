@@ -4,7 +4,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
-from charts import fixture_chart, overall_positions, tier_floors
+from charts import _tier_segments, fixture_chart, overall_positions, point_tiers, tier_floors
 
 
 def _standings_db(rows):
@@ -108,3 +108,70 @@ def test_fixture_chart_with_tier_lines_and_events(tmp_path):
 def test_fixture_chart_none_when_no_history(tmp_path):
     conn = _standings_db([])
     assert fixture_chart(conn, None, None, "A", "B", tmp_path / "chart.png") is None
+
+
+# ── Tier-coloured line ───────────────────────────────────────────────────
+
+def test_point_tiers_reads_the_clubs_own_tier_per_season():
+    conn = _standings_db([
+        ("target", 2023, 2, 1, "Champions"), ("target", 2024, 1, 10, "Stayed"),
+        ("other", 2023, 3, 1, "Champions"),
+    ])
+    assert point_tiers(conn, "target") == {2023: 2, 2024: 1}
+
+
+def test_tier_segments_groups_a_same_tier_run():
+    points = [(2020, 5, None), (2021, 3, None), (2022, 1, "promoted")]
+    tiers = {2020: 2, 2021: 2, 2022: 2}
+    assert _tier_segments(points, tiers) == [
+        (2, [(2020, 5), (2021, 3), (2022, 1)])
+    ]
+
+
+def test_tier_segments_splits_on_tier_change_and_bridges_the_join():
+    # Each point is coloured by its own recorded tier (2021 is tier 1, the
+    # season the club was promoted into) - the transition segment from the
+    # last tier-2 point to the first tier-1 point is drawn as part of the
+    # tier-1 run, so the join carries the arriving tier's colour.
+    points = [(2020, 5, None), (2021, 1, "promoted"), (2022, 4, None)]
+    tiers = {2020: 2, 2021: 1, 2022: 1}
+    segments = _tier_segments(points, tiers)
+    assert segments == [
+        (2, [(2020, 5)]),
+        (1, [(2020, 5), (2021, 1), (2022, 4)]),
+    ]
+
+
+def test_tier_segments_breaks_on_a_gap_even_within_the_same_tier():
+    # Same tier both sides, but a season missing from the standings table -
+    # this must not be treated as one continuous run.
+    points = [(2020, 5, None), (2023, 3, None)]
+    tiers = {2020: 2, 2023: 2}
+    assert _tier_segments(points, tiers) == [
+        (2, [(2020, 5)]),
+        (2, [(2023, 3)]),
+    ]
+
+
+def test_fixture_chart_color_by_tier_still_produces_output(tmp_path):
+    conn = _standings_db([
+        ("home", 2022, 2, 1, "Champions"),
+        ("home", 2023, 1, 18, "Relegated"),
+        ("home", 2024, 2, 5, "Stayed"),
+    ])
+    out = fixture_chart(
+        conn, "home", None, "Home FC", "", tmp_path / "chart.png",
+        show_tier_lines=True, show_events=True, color_by_tier=True,
+    )
+    assert out is not None and out.exists() and out.stat().st_size > 0
+
+
+def test_fixture_chart_color_by_tier_does_not_affect_the_digest_default(tmp_path):
+    # digest.py never passes color_by_tier - confirm the default keeps the
+    # two-club comparison chart working exactly as before.
+    conn = _standings_db([
+        ("home", 2023, 2, 1, "Champions"), ("home", 2024, 1, 10, "Stayed"),
+        ("away", 2023, 3, 1, "Champions"), ("away", 2024, 2, 15, "Stayed"),
+    ])
+    out = fixture_chart(conn, "home", "away", "Home FC", "Away FC", tmp_path / "chart.png")
+    assert out is not None and out.exists() and out.stat().st_size > 0
