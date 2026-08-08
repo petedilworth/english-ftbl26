@@ -767,6 +767,13 @@ class SiteBuilder:
                 "name": "Stadium size vs. league position",
                 "sub": "Does a bigger ground mean a higher division?",
             })
+        boom_bust_events = self._boom_bust_events()
+        if boom_bust_events:
+            entries.append({
+                "slug": "boom-and-bust",
+                "name": "Boom and bust",
+                "sub": "Why the same clubs keep falling into financial trouble",
+            })
         self.render(
             "insights_index.html", self.out / "insights" / "index.html", 1,
             title="Insights", entries=entries,
@@ -777,6 +784,121 @@ class SiteBuilder:
         self._insight_records()
         self._insight_timeline()
         self._insight_capacity()
+        self._insight_boom_and_bust(boom_bust_events)
+
+    def _boom_bust_events(self) -> list[dict]:
+        """
+        Every administration and points-deduction event across the clubs
+        with a story file, flattened into one chronological list. Reuses
+        content.theme_events() rather than re-parsing the facts, since that
+        function already handles the calendar-year vs season-end-year
+        normalisation that caused a real bug earlier (Coventry's 2013
+        administration and 2013/14 points deduction landing on different
+        seasons if handled naively).
+        """
+        names = dict(self.conn.execute(
+            "SELECT club_id, canonical_name FROM club_trajectory"
+        ))
+        events = []
+        for club_id, facts in self.club_facts.items():
+            for slug in ("administration", "points-deductions"):
+                for e in content.theme_events(slug, facts):
+                    events.append({
+                        "club_id": club_id,
+                        "name": names.get(club_id, club_id),
+                        "kind": slug,
+                        **e,
+                    })
+        events.sort(key=lambda e: e["season_end_year"])
+        return events
+
+    def _insight_boom_and_bust(self, events: list[dict]) -> None:
+        if not events:
+            return
+
+        import markdown as md
+        from markupsafe import Markup
+
+        source = PROJECT_ROOT / "content" / "insights" / "boom-and-bust.md"
+        prose = content.load_theme(source)
+        # load_theme() only returns prose; the case-study club_ids live in
+        # this file's own front-matter, so parse it directly rather than
+        # extending load_theme() for a single caller's sake.
+        page_facts, _body = content.parse_front_matter(
+            source.read_text(encoding="utf-8") if source.exists() else ""
+        )
+
+        def case_study(club_id: str | None) -> dict | None:
+            if not club_id:
+                return None
+            row = self.conn.execute(
+                """
+                SELECT canonical_name, natural_level_label, yo_yo_score,
+                       total_promotions, total_relegations
+                FROM club_trajectory WHERE club_id = ?
+                """,
+                (club_id,),
+            ).fetchone()
+            if not row:
+                return None
+            return {
+                "club_id": club_id,
+                "name": row["canonical_name"],
+                "color": self.color(club_id),
+                "natural_level_label": row["natural_level_label"],
+                "yo_yo_score": row["yo_yo_score"],
+                "total_promotions": row["total_promotions"],
+                "total_relegations": row["total_relegations"],
+            }
+
+        clubs_affected = {e["club_id"] for e in events}
+        # Counted from points_deductions specifically, not administration's
+        # own points_deducted - some clubs (e.g. Aldershot Town) record the
+        # same single penalty in both places, so summing both would double
+        # it. This slightly undercounts a club whose administration-linked
+        # penalty has no separate points_deductions entry (Coventry City's
+        # first ten points, distinct from their later second deduction),
+        # but never overcounts, which matters more for a headline figure.
+        total_points_lost = sum(
+            int(pd.get("points") or 0)
+            for facts in self.club_facts.values()
+            for pd in (facts.get("points_deductions") or [])
+            if isinstance(pd, dict)
+        )
+
+        stats = [
+            {"value": len(clubs_affected), "label": "Clubs affected"},
+            {"value": len(events), "label": "Recorded events"},
+            {"value": total_points_lost, "label": "Points deductions on record"},
+            {"value": f"{events[0]['season_end_year'] - 1}–{events[-1]['season_end_year']}",
+             "label": "Span of the record"},
+        ]
+
+        rows = [
+            [self._cell(season_label(e["season_end_year"])),
+             self._cell(e["name"], e["club_id"]),
+             self._cell("Administration" if e["kind"] == "administration" else "Points deduction"),
+             self._cell(e["text"])]
+            for e in reversed(events)  # most recent first, like the rest of the site
+        ]
+
+        self.render(
+            "insight_table.html", self.out / "insights" / "boom-and-bust" / "index.html", 2,
+            title="Boom and bust",
+            heading="Boom and bust",
+            intro=(
+                "Why promotion pays and relegation can break a club — and every "
+                "recorded administration or points deduction since 1993/94."
+            ),
+            intro_html=Markup(md.markdown(prose)) if prose else None,
+            stats=stats,
+            case_study_promoted=case_study(page_facts.get("case_study_promoted")),
+            case_study_relegated=case_study(page_facts.get("case_study_relegated")),
+            sections=[{
+                "columns": ["Season", "Club", "Event", "What happened"],
+                "rows": rows,
+            }],
+        )
 
     def _capacity_points(self) -> list[dict]:
         """
