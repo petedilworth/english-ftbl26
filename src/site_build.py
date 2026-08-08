@@ -776,11 +776,24 @@ class SiteBuilder:
                 "sub": "Why the same clubs keep falling into financial trouble",
             })
         movement_matches = self._movement_matches()
-        if movement_matches:
+        import movement as movement_mod
+        if any(movement_matches.get(k) for k in (
+            movement_mod.RELEGATION_BACK_TO_BACK, movement_mod.RELEGATION_THREE_PLUS,
+            movement_mod.RELEGATION_HELD, movement_mod.RELEGATION_SANDWICH,
+        )):
             entries.append({
-                "slug": "movements",
-                "name": "Successive promotions & relegations",
-                "sub": "Clubs that moved through the divisions in a tight cluster",
+                "slug": "the-drop",
+                "name": "The drop",
+                "sub": "Clubs that fell fast — and whether they came back",
+            })
+        if any(movement_matches.get(k) for k in (
+            movement_mod.PROMOTION_BACK_TO_BACK, movement_mod.PROMOTION_THREE_PLUS,
+            movement_mod.PROMOTION_PAUSED,
+        )):
+            entries.append({
+                "slug": "the-rise",
+                "name": "The rise",
+                "sub": "Clubs that climbed fast — and whether they held on",
             })
         self.render(
             "insights_index.html", self.out / "insights" / "index.html", 1,
@@ -793,7 +806,8 @@ class SiteBuilder:
         self._insight_timeline()
         self._insight_capacity()
         self._insight_boom_and_bust(boom_bust_events)
-        self._insight_movements(movement_matches)
+        self._insight_the_drop(movement_matches)
+        self._insight_the_rise(movement_matches)
 
     def _boom_bust_events(self) -> list[dict]:
         """
@@ -913,8 +927,8 @@ class SiteBuilder:
         """
         {pattern_key: [match, ...]} across every club - see src/movement.py
         for the pattern rules. Computed once and shared between the
-        insights-index tile guard and the page itself, same as
-        _boom_bust_events()/_insight_boom_and_bust().
+        insights-index tile guard and both pages that render from it, same
+        as _boom_bust_events()/_insight_boom_and_bust().
         """
         import movement
 
@@ -933,81 +947,225 @@ class SiteBuilder:
                 })
         return by_pattern
 
-    def _insight_movements(self, by_pattern: dict[str, list[dict]]) -> None:
-        if not by_pattern:
-            return
+    # Display labels for the pattern keys movement.py returns. Kept here
+    # rather than in movement.py so the module stays presentation-free.
+    _PATTERN_LABELS = {
+        "relegation_back_to_back": "Back-to-back",
+        "relegation_three_plus": "Three in a row",
+        "relegation_held": "Held, then down again",
+        "relegation_sandwich": "Straight back down",
+        "promotion_back_to_back": "Back-to-back",
+        "promotion_three_plus": "Three in a row",
+        "promotion_paused": "Paused, then up again",
+    }
 
+    def _ribbon(self, tiers: dict[int, int], marked: set[int]) -> list[dict]:
+        """
+        One cell per season across the whole record, coloured by the tier
+        the club was in. A season with no standings row is hatched rather
+        than coloured - it means "outside Tiers 1-5", which is not the same
+        as knowing which division they were in.
+        """
+        cells = []
+        for year in self.seasons:
+            tier = tiers.get(year)
+            cells.append({
+                "cls": f"t{tier}" if tier else "out",
+                "marked": year in marked,
+                "title": f"{season_label(year)}: " + (
+                    TIER_SLUGS[tier][1] if tier in TIER_SLUGS else "outside Tiers 1-5"
+                ),
+            })
+        return cells
+
+    def _movement_page(
+        self, by_pattern, *, slug, title, intro, patterns, outcome_of,
+        groups, featured_heading, event_column, stats_fn,
+    ) -> None:
+        """
+        Shared renderer for The drop and The rise. The two pages differ only
+        in which patterns they collect, how an outcome is computed, and how
+        the outcome groups are worded - everything else (ribbons, featured
+        cards, tier key, sorting) is identical, so it lives here once.
+        """
         import movement
         import level as level_mod
-
-        def tier_path(tiers: list[int]) -> str:
-            return " → ".join(level_mod.TIER_NAMES.get(t, f"Tier {t}") for t in tiers)
-
-        def season_path(seasons: list[int]) -> str:
-            return " → ".join(season_label(y) for y in seasons)
-
-        def section(key: str, heading: str, note: str) -> dict | None:
-            entries = by_pattern.get(key)
-            if not entries:
-                return None
-            entries = sorted(entries, key=lambda m: m["seasons"][-1], reverse=True)
-            return {
-                "heading": heading,
-                "note": note,
-                "columns": ["Club", "Seasons", "Divisions"],
-                "rows": [
-                    [self._cell(e["name"], e["club_id"]),
-                     self._cell(season_path(e["seasons"])),
-                     self._cell(tier_path(e["tiers"]))]
-                    for e in entries
-                ],
-            }
-
-        sections = [s for s in [
-            section(movement.RELEGATION_BACK_TO_BACK, "Back-to-back relegations",
-                    "Relegated in consecutive seasons."),
-            section(movement.RELEGATION_THREE_PLUS, "Three relegations in a row",
-                    "Relegated in three or more consecutive seasons."),
-            section(movement.RELEGATION_HELD, "Held, then relegated again",
-                    "Relegated, stayed at the new level for a season, then relegated again."),
-            section(movement.RELEGATION_SANDWICH, "Sandwiched relegation",
-                    "Relegated, promoted straight back up, then relegated again within a year."),
-            section(movement.PROMOTION_BACK_TO_BACK, "Back-to-back promotions",
-                    "Promoted in consecutive seasons."),
-            section(movement.PROMOTION_THREE_PLUS, "Three promotions in a row",
-                    "Promoted in three or more consecutive seasons."),
-            section(movement.PROMOTION_PAUSED, "Promoted, paused, promoted again",
-                    "Promoted, held that level for a season, then promoted again."),
-        ] if s]
-
-        all_matches = [m for ms in by_pattern.values() for m in ms]
-        clubs_involved = {m["club_id"] for m in all_matches}
-        worst = max(all_matches, key=lambda m: len(m["seasons"]))
-
-        stats = [
-            {"value": len(clubs_involved), "label": "Clubs with a pattern on record"},
-            {"value": len(all_matches), "label": "Recorded instances"},
-            {"value": len(worst["seasons"]),
-             "label": f"Longest run of seasons — {worst['name']}"},
-        ]
-
         import markdown as md
         from markupsafe import Markup
 
-        source = PROJECT_ROOT / "content" / "insights" / "movements.md"
+        entries = [e for key in patterns for e in by_pattern.get(key, [])]
+        if not entries:
+            return
+
+        tiers_by_club = level_mod.load_histories(self.conn)
+        latest = self.seasons[-1]
+
+        records = []
+        for e in entries:
+            tiers = tiers_by_club.get(e["club_id"], {})
+            before, floor, peak = movement.sequence_bounds(tiers, e["seasons"])
+            now = tiers.get(latest)
+            records.append({
+                "club_id": e["club_id"],
+                "name": e["name"],
+                "color": self.color(e["club_id"]),
+                "ribbon": self._ribbon(tiers, set(e["seasons"])),
+                "pattern_label": self._PATTERN_LABELS.get(e["pattern"], e["pattern"]),
+                "path": "{} — {} to {}".format(
+                    " → ".join(season_label(y) for y in e["seasons"]),
+                    level_mod.TIER_NAMES.get(e["tiers"][0], "?"),
+                    level_mod.TIER_NAMES.get(
+                        floor if outcome_of is movement.fall_outcome else peak, "?"
+                    ),
+                ),
+                # A run that ends in the most recent season has no season
+                # after it yet, so no outcome can honestly be claimed.
+                "outcome": outcome_of(before, floor, now,
+                                      e["seasons"][-1] < latest)
+                           if outcome_of is movement.fall_outcome
+                           else outcome_of(peak, now, e["seasons"][-1] < latest),
+                "seasons": e["seasons"],
+            })
+
+        records.sort(key=lambda r: r["seasons"][-1], reverse=True)
+
+        sections = []
+        for key, heading, note in groups:
+            rows = [r for r in records if r["outcome"] == key]
+            if rows:
+                sections.append({"heading": heading, "note": note, "rows": rows})
+
+        source = PROJECT_ROOT / "content" / "insights" / f"{slug}.md"
         prose = content.load_theme(source)
+        page_facts, _body = content.parse_front_matter(
+            source.read_text(encoding="utf-8") if source.exists() else ""
+        )
+
+        labels = {key: heading for key, heading, _note in groups}
+        featured = []
+        for item in page_facts.get("featured") or []:
+            if not isinstance(item, dict):
+                continue
+            # Several clubs match more than one pattern (Luton Town have
+            # both a 2007-09 slide out of the League and a 2024-25 one), so
+            # `season` picks which. Without it, the most recent wins.
+            match = next(
+                (r for r in records
+                 if r["club_id"] == item.get("club_id")
+                 and (item.get("season") is None
+                      or r["seasons"][-1] == item["season"])),
+                None,
+            )
+            if match:
+                featured.append({
+                    **match,
+                    "note": item.get("note", ""),
+                    "outcome_class": match["outcome"],
+                    "outcome_label": labels.get(match["outcome"], match["outcome"]),
+                })
+
+        tier_key = [
+            {"cls": f"t{t}", "label": name}
+            for t, name in sorted(level_mod.TIER_NAMES.items())
+        ] + [{"cls": "out", "label": "outside Tiers 1-5"}]
 
         self.render(
-            "insight_table.html", self.out / "insights" / "movements" / "index.html", 2,
-            title="Successive promotions & relegations",
-            heading="Successive promotions & relegations",
-            intro=(
-                "Which clubs have moved through the divisions in a tight "
-                "cluster, for better or worse."
-            ),
+            "insight_movement.html", self.out / "insights" / slug / "index.html", 2,
+            title=title, heading=title, intro=intro,
             intro_html=Markup(md.markdown(prose)) if prose else None,
-            stats=stats,
+            stats=stats_fn(records),
+            featured=featured,
+            featured_heading=featured_heading,
             sections=sections,
+            span_label=f"{season_label(self.seasons[0])}–{season_label(latest)}",
+            event_column=event_column,
+            tier_key=tier_key,
+        )
+
+    def _insight_the_drop(self, by_pattern: dict[str, list[dict]]) -> None:
+        import movement
+
+        def stats(records):
+            back = sum(1 for r in records if r["outcome"] == movement.FALL_RECOVERED)
+            return [
+                {"value": len(records), "label": "Falls on record"},
+                {"value": len({r["club_id"] for r in records}), "label": "Clubs"},
+                {"value": back, "label": "Fully reversed"},
+                {"value": sum(1 for r in records
+                              if r["outcome"] in (movement.FALL_STUCK, movement.OUTSIDE)),
+                 "label": "Still down there"},
+            ]
+
+        self._movement_page(
+            by_pattern,
+            slug="the-drop",
+            title="The drop",
+            intro="Clubs that fell through the divisions in a tight cluster — "
+                  "and whether they ever came back.",
+            patterns=(movement.RELEGATION_BACK_TO_BACK, movement.RELEGATION_THREE_PLUS,
+                      movement.RELEGATION_HELD, movement.RELEGATION_SANDWICH),
+            outcome_of=movement.fall_outcome,
+            groups=[
+                (movement.FALL_RECOVERED, "All the way back",
+                 "Back at the division they fell from, or higher."),
+                (movement.FALL_CLIMBING, "Still climbing",
+                 "Above the level they fell to, but not yet back where they started."),
+                (movement.FALL_STUCK, "Still down there",
+                 "Still at the division the fall took them to."),
+                (movement.FALL_WORSE, "Fell further",
+                 "Lower now than the division the fall itself took them to."),
+                (movement.OUTSIDE, "Out of the pyramid",
+                 "No longer in Tiers 1-5 at all."),
+                (movement.UNFOLDING, "Still unfolding",
+                 "The fall only just finished — the season that would show "
+                 "a recovery has not been played yet."),
+            ],
+            featured_heading="The ones who came back",
+            event_column="The fall",
+            stats_fn=stats,
+        )
+
+    def _insight_the_rise(self, by_pattern: dict[str, list[dict]]) -> None:
+        import movement
+
+        def stats(records):
+            return [
+                {"value": len(records), "label": "Climbs on record"},
+                {"value": len({r["club_id"] for r in records}), "label": "Clubs"},
+                {"value": sum(1 for r in records if r["outcome"] == movement.RISE_HELD),
+                 "label": "Held the new level"},
+                {"value": sum(1 for r in records
+                              if r["outcome"] in (movement.RISE_SLIPPED,
+                                                  movement.RISE_FELL_BACK,
+                                                  movement.OUTSIDE)),
+                 "label": "Slipped back"},
+            ]
+
+        self._movement_page(
+            by_pattern,
+            slug="the-rise",
+            title="The rise",
+            intro="Clubs that climbed through the divisions in a tight cluster — "
+                  "and whether they held on to it.",
+            patterns=(movement.PROMOTION_BACK_TO_BACK, movement.PROMOTION_THREE_PLUS,
+                      movement.PROMOTION_PAUSED),
+            outcome_of=movement.rise_outcome,
+            groups=[
+                (movement.RISE_HELD, "Held the new level",
+                 "Still at the division the climb took them to, or higher."),
+                (movement.RISE_SLIPPED, "Slipped one division",
+                 "One division below the level they reached."),
+                (movement.RISE_FELL_BACK, "Fell back further",
+                 "More than one division below the level they reached."),
+                (movement.OUTSIDE, "Out of the pyramid",
+                 "No longer in Tiers 1-5 at all."),
+                (movement.UNFOLDING, "Still unfolding",
+                 "The climb only just finished — the season at the new "
+                 "level has not been played yet."),
+            ],
+            featured_heading="The ones who kept going",
+            event_column="The climb",
+            stats_fn=stats,
         )
 
     def _capacity_points(self) -> list[dict]:
