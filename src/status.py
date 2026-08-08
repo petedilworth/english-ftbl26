@@ -12,6 +12,31 @@ import pandas as pd
 
 logger = logging.getLogger(__name__)
 
+# assign_status() below only knows a club's final table position, not who
+# actually won a play-off - so every club in a tier's play-off band gets
+# tagged "Play-off Promoted", not just the one that went up. For a season
+# with a following season already in the database, pipeline._reconcile_
+# statuses() fixes this from real movement (a club that didn't actually
+# move up gets corrected to "Stayed"). But the most recently completed
+# season never has a "following season" in the database yet, so that
+# reconciliation has nothing to check it against - the wrong positions
+# stay marked "Play-off Promoted" until a year later.
+#
+# This table is the fix for that gap: the actual play-off final winner for
+# a (tier, season_end_year) that isn't yet followed by real data, verified
+# against BBC Sport / EFL results. pipeline._reconcile_statuses() applies
+# it only when next season's data isn't in the database yet - once it is,
+# real movement takes over and an entry here becomes redundant (harmless
+# to leave, but fine to delete). Add one row per playoff-eligible tier
+# (2-5) after each season's finals, for whichever season just became the
+# most recent in the database.
+CURRENT_SEASON_PLAYOFF_WINNERS: dict[tuple[int, int], str] = {
+    (2, 2026): "hull-city-fc",           # 2026 Championship final: beat Middlesbrough
+    (3, 2026): "bolton-wanderers-fc",    # 2026 League One final: beat Stockport County
+    (4, 2026): "notts-county-fc",        # 2026 League Two final: beat Salford City
+    (5, 2026): "rochdale-fc",            # 2026 National League final: beat Boreham Wood
+}
+
 # All position ranges verified against Wikipedia season pages, including the
 # 1995 restructure (PL 22→20 clubs, Third Division 22→24) and COVID seasons.
 # fmt: off
