@@ -2,6 +2,7 @@
 founded: 1901
 origin_type: civic
 origin_note: "St Sidwell's United, a local parish side"
+nickname: "the Grecians"
 ownership_model: fan_trust
 owner: "Exeter City Supporters' Trust"
 owner_since: 2003
@@ -19,7 +20,12 @@ local rivals Exeter United 3–1, the two clubs merged; the combined side took
 the name Exeter City and continued at Exeter United's ground, St James Park.
 Professional status followed in 1908, and the club joined the Football League
 in 1920 when the Southern League's top division was absorbed as Division
-Three.
+Three. The "Grecians" nickname predates the club itself: residents of the
+St Sidwell's parish, just outside the city walls, were being called
+"Grecians" as far back as 1669, for reasons that are themselves disputed —
+one popular but unverified legend ties it to a 1726 re-enactment of the
+Siege of Troy staged nearby. St Sidwell's United carried the name into the
+1904 merger, and it has stuck to Exeter City ever since.
 
 ## Trajectory
 

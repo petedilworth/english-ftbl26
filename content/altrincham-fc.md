@@ -2,6 +2,7 @@
 founded: 1891
 origin_type: church
 origin_note: "The Rigby Memorial Club, a Sunday school football team in Broadheath, which merged with Grapplers to form Broadheath F.C."
+nickname: "the Robins"
 ownership_model: benefactor
 owner: "Mark Luby"
 owner_since: 2025

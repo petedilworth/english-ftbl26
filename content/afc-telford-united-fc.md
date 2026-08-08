@@ -2,6 +2,7 @@
 founded: 2004
 origin_type: phoenix
 origin_note: "Refounded by Telford United Supporters Limited after Telford United F.C. was liquidated in 2004"
+nickname: "the Bucks"
 stadium: "New Bucks Head"
 stadium_opened: 2003
 capacity: 6300
@@ -28,7 +29,10 @@ liquidation announced a new, wholly fan-owned club — AFC Telford United —
 run on £1 shares and built explicitly to avoid a repeat of one person's
 finances being able to sink it again. It took up the newly built stadium
 on the same site and adopted the motto *numquam obliviscere* — "never
-forget".
+forget". The club's nickname, the Bucks, comes not from the club itself but
+from the ground: the original Bucks Head took its name from the Bucks Head
+Hotel, a coaching inn that stood on the same Wellington site long before
+either Wellington Town or Telford United played there.
 
 ## Trajectory
 

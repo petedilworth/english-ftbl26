@@ -2,6 +2,7 @@
 founded: 1959
 origin_type: other
 origin_note: "A merger of Alfreton Miners Welfare and Alfreton United, reviving the name of an earlier, unrelated 1920s Alfreton Town"
+nickname: "the Reds"
 ownership_model: benefactor
 owner: "Will Rush"
 owner_since: 2025

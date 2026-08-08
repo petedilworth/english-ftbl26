@@ -2,6 +2,7 @@
 founded: 1883
 origin_type: works
 origin_note: "Singers F.C., by employees of the Singer cycle works"
+nickname: "the Sky Blues"
 ownership_model: benefactor
 owner: "Doug King"
 owner_since: 2023
@@ -36,7 +37,12 @@ of the Singer cycle company, in a city whose industrial identity ran from
 bicycles through motorcycles to motor cars. The club played first at Dowell's
 Field off Binley Road, moved to an enclosed ground at Stoke Road in 1887, and
 took the name Coventry City in 1898. Highfield Road opened in time for the
-1899–1900 season.
+1899–1900 season. The "Sky Blues" nickname dates precisely to 18 August
+1962, when new manager Jimmy Hill relaunched the club in an all-sky-blue
+kit for a 2–0 win over Notts County, part of a wider rebrand — including a
+"Sky Blue Special" supporters' train and a Sky Blue Song adapted from the
+Eton Boating Song — that replaced the club's earlier nickname, the
+Bantams.
 
 ## Trajectory
 

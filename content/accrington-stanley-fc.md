@@ -2,6 +2,7 @@
 founded: 1968
 origin_type: phoenix
 origin_note: "Refounded by local supporters, two years after the original Accrington Stanley (1891) folded"
+nickname: "the Reds"
 ownership_model: benefactor
 owner: "Andy Holt"
 owner_since: 2015
@@ -24,7 +25,10 @@ becoming only the second club to do so; it played on in regional football at
 Peel Park before folding altogether in 1966. Two years later, in 1968, local
 supporters met at Bold Street Working Men's Club and formed a new club under
 the same name, keeping the red colours and the town's footballing identity,
-and began developing what became the Crown Ground.
+and began developing what became the Crown Ground. The enduring nickname
+the "Owd Reds" is said to date back further still, to the original 1878
+Accrington club, whose colours were reportedly fixed by a local shopkeeper
+who happened to have only scarlet and black cloth in stock.
 
 ## Trajectory
 

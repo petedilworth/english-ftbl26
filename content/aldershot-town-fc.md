@@ -2,6 +2,7 @@
 founded: 1992
 origin_type: phoenix
 origin_note: "Formed by a committee of fans and local businessmen after Aldershot F.C. was wound up in the High Court"
+nickname: "the Shots"
 ownership_model: benefactor
 owner: "Deane Wood"
 owner_since: 2026
@@ -30,7 +31,9 @@ property developer had failed — forcing the club to resign from the League
 mid-season with its results for the year expunged. Within weeks, a
 committee of local fans and businessmen formed Aldershot Town F.C., managed
 by a former Aldershot F.C. player, and took up the vacant Recreation
-Ground.
+Ground. The new club inherited the nickname "the Shots" unchanged from its
+predecessor — a play on Aldershot's identity as the long-standing garrison
+headquarters of the British Army.
 
 ## Trajectory
 

@@ -2,6 +2,7 @@
 founded: 1874
 origin_type: church
 origin_note: "A Wesleyan chapel cricket team, formed by members of Villa Cross Wesleyan Chapel wanting a winter activity"
+nickname: "the Villans"
 ownership_model: consortium
 owner: "Nassef Sawiris and Wes Edens (V Sports)"
 owner_since: 2018

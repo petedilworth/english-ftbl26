@@ -2,6 +2,7 @@
 founded: 1886
 origin_type: works
 origin_note: "Dial Square, by workers at the Royal Arsenal armaments factory, Woolwich"
+nickname: "the Gunners"
 ownership_model: foreign_investment
 owner: "Kroenke Sports & Entertainment (Stan Kroenke)"
 owner_since: 2011
@@ -28,7 +29,10 @@ By 1913 the club moved some twelve miles north to Highbury, Islington — not
 a footballing decision but a financial one: Woolwich's poor transport links
 and industrial, low-attendance catchment left the club unable to draw the
 crowds a professional side needed, and chairman Henry Norris forced the
-relocation to keep it solvent.
+relocation to keep it solvent. The club's "Gunners" nickname and cannon
+emblem both trace to that armaments-factory origin, though it was likely a
+name first applied by rival towns' journalists and opposing fans rather
+than one the club coined for itself.
 
 ## Trajectory
 
