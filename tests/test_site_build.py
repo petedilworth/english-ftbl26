@@ -565,3 +565,118 @@ def test_capacity_insight_y_axis_never_goes_negative(tmp_path, monkeypatch):
     axis_labels = re.findall(r'x="60"[^>]*>([\d,]+)</text>', page)
     assert len(axis_labels) == 2          # cap_min and cap_max labels
     assert all(not label.startswith("-") for label in axis_labels)
+
+
+# ── Boom and bust insight ────────────────────────────────────────────────
+
+def _build_with_insight_content(tmp_path, monkeypatch, files, insight_prose=None):
+    """As _build_with_content, but also seeds content/insights/boom-and-bust.md."""
+    import shutil
+
+    import site_build as sb
+
+    db = _db_on_disk(tmp_path)
+    content_dir = tmp_path / "content"
+    (content_dir / "insights").mkdir(parents=True)
+    for club_id, text in files.items():
+        (content_dir / f"{club_id}.md").write_text(text, encoding="utf-8")
+    if insight_prose is not None:
+        (content_dir / "insights" / "boom-and-bust.md").write_text(
+            insight_prose, encoding="utf-8"
+        )
+
+    real_root = Path(__file__).parent.parent
+    shutil.copytree(real_root / "templates", tmp_path / "templates")
+    shutil.copytree(real_root / "static", tmp_path / "static")
+    monkeypatch.setattr(sb, "PROJECT_ROOT", tmp_path)
+
+    out = tmp_path / "site"
+    SiteBuilder(db, out, charts_enabled=False).build()
+    return out
+
+
+BOOM_BUST_STORY = """---
+administration:
+  - year: 2013
+    points_deducted: 10
+    note: Followed a rent dispute
+points_deductions:
+  - season_end_year: 2014
+    points: 10
+    reason: Imposed after a rejected CVA
+---
+## Origins
+A club with real financial trouble on record.
+"""
+
+BOOM_BUST_PROSE = """---
+case_study_promoted: giant-fc
+case_study_relegated: steady-fc
+---
+The financial cliff between divisions, explained.
+"""
+
+
+def test_boom_and_bust_page_builds_with_prose_stats_and_events(tmp_path, monkeypatch):
+    out = _build_with_insight_content(
+        tmp_path, monkeypatch, {"giant-fc": BOOM_BUST_STORY}, BOOM_BUST_PROSE
+    )
+    page = (out / "insights" / "boom-and-bust" / "index.html").read_text()
+
+    assert "financial cliff between divisions" in page   # markdown prose rendered
+    assert "Clubs affected" in page                       # stats block
+    assert "Administration" in page and "Points deduction" in page
+    assert "Docked 10 points in 2013/14" in page
+    assert "Boom and bust" in (out / "insights" / "index.html").read_text()
+
+
+def test_boom_and_bust_points_lost_counts_points_deductions_only(tmp_path, monkeypatch):
+    # administration.points_deducted and points_deductions.points both carry
+    # 10 here, describing the SAME real penalty (as several actual club
+    # files do) - the stat must not double it to 20.
+    out = _build_with_insight_content(
+        tmp_path, monkeypatch, {"giant-fc": BOOM_BUST_STORY}, BOOM_BUST_PROSE
+    )
+    page = (out / "insights" / "boom-and-bust" / "index.html").read_text()
+    assert '<div class="stat-value">10</div><div class="stat-label">Points deductions on record</div>' in page
+
+
+def test_boom_and_bust_case_study_uses_live_trajectory_data(tmp_path, monkeypatch):
+    out = _build_with_insight_content(
+        tmp_path, monkeypatch, {"giant-fc": BOOM_BUST_STORY}, BOOM_BUST_PROSE
+    )
+    page = (out / "insights" / "boom-and-bust" / "index.html").read_text()
+    assert "This past summer" in page
+    assert "Promoted" in page and "Relegated" in page
+    assert "Giant FC" in page and "Steady FC" in page
+
+
+def test_boom_and_bust_absent_when_no_events_anywhere(tmp_path, monkeypatch):
+    plain_story = "## Origins\nNo financial facts at all.\n"
+    out = _build_with_insight_content(
+        tmp_path, monkeypatch, {"giant-fc": plain_story}, BOOM_BUST_PROSE
+    )
+    assert not (out / "insights" / "boom-and-bust" / "index.html").exists()
+    assert "Boom and bust" not in (out / "insights" / "index.html").read_text()
+
+
+def test_boom_and_bust_works_without_a_case_study_file(tmp_path, monkeypatch):
+    # No content/insights/boom-and-bust.md at all - the page should still
+    # build from the table data alone, just without prose or a case study.
+    out = _build_with_insight_content(
+        tmp_path, monkeypatch, {"giant-fc": BOOM_BUST_STORY}, insight_prose=None
+    )
+    page = (out / "insights" / "boom-and-bust" / "index.html").read_text()
+    assert "Administration" in page
+    assert "This past summer" not in page
+
+
+def test_insight_table_existing_callers_unaffected_by_new_optional_blocks(tmp_path):
+    # yo-yo, records etc. never pass intro_html/stats/case studies - confirm
+    # those pages still render cleanly with the new template blocks in place.
+    db = _db_on_disk(tmp_path)
+    out = tmp_path / "site"
+    SiteBuilder(db, out, charts_enabled=False).build()
+    yoyo = (out / "insights" / "yo-yo" / "index.html").read_text()
+    assert "This past summer" not in yoyo
+    assert "stat-cards" not in yoyo

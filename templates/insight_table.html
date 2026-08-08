@@ -3,6 +3,38 @@
 <h1>{{ heading }}</h1>
 <p class="subtitle">{{ intro }}</p>
 
+{% if intro_html %}
+<div class="theme-intro">{{ intro_html }}</div>
+{% endif %}
+
+{% if stats %}
+<div class="stat-cards">
+  {% for card in stats %}
+  <div class="stat-card"><div class="stat-value">{{ card.value }}</div><div class="stat-label">{{ card.label }}</div></div>
+  {% endfor %}
+</div>
+{% endif %}
+
+{% if case_study_promoted or case_study_relegated %}
+<h2>This past summer</h2>
+<div class="case-study-grid">
+  {% if case_study_promoted %}
+  <div class="case-study-card">
+    <p class="case-study-tag up">Promoted</p>
+    <h3><span class="color-chip" style="background: {{ case_study_promoted.color }}"></span><a href="{{ root }}/team/{{ case_study_promoted.club_id }}/index.html">{{ case_study_promoted.name }}</a></h3>
+    <p>Natural level: {{ case_study_promoted.natural_level_label }}. {{ case_study_promoted.total_promotions }} promotions and {{ case_study_promoted.total_relegations }} relegations on record, yo-yo score {{ case_study_promoted.yo_yo_score }}.</p>
+  </div>
+  {% endif %}
+  {% if case_study_relegated %}
+  <div class="case-study-card">
+    <p class="case-study-tag down">Relegated</p>
+    <h3><span class="color-chip" style="background: {{ case_study_relegated.color }}"></span><a href="{{ root }}/team/{{ case_study_relegated.club_id }}/index.html">{{ case_study_relegated.name }}</a></h3>
+    <p>Natural level: {{ case_study_relegated.natural_level_label }}. {{ case_study_relegated.total_promotions }} promotions and {{ case_study_relegated.total_relegations }} relegations on record, yo-yo score {{ case_study_relegated.yo_yo_score }}.</p>
+  </div>
+  {% endif %}
+</div>
+{% endif %}
+
 {% for section in sections %}
 {% if section.heading %}<h2>{{ section.heading }}</h2>{% endif %}
 {% if section.note %}<p class="subtitle">{{ section.note }}</p>{% endif %}
