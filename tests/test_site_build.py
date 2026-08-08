@@ -694,3 +694,92 @@ def test_insight_table_existing_callers_unaffected_by_new_optional_blocks(tmp_pa
     yoyo = (out / "insights" / "yo-yo" / "index.html").read_text()
     assert "This past summer" not in yoyo
     assert "stat-cards" not in yoyo
+
+
+# ── Drops/rises as club facts (The drop / The rise featured cards) ───────
+#
+# giant-fc's fixture history (test_digest._make_db) has a real back-to-back
+# relegation: Tier 1 -> Tier 2 in 2022, Tier 2 -> Tier 3 in 2023, then
+# "Stayed" at Tier 3 through 2025 - so a drops: entry with season: 2023
+# matches the pattern's final season, and the outcome is "stuck" (still at
+# the floor it fell to).
+
+DROP_STORY = """---
+drops:
+  - season: 2023
+    note: A real fall, with a real story.
+---
+## Origins
+A club that fell twice.
+"""
+
+DROP_STORY_TWO_NOTES = """---
+drops:
+  - season: 2023
+    note: First note on the same fall.
+  - season: 2023
+    note: Second note on the same fall.
+---
+## Origins
+A club that fell twice.
+"""
+
+DROP_STORY_WRONG_SEASON = """---
+drops:
+  - season: 1999
+    note: This season never happened for this club.
+---
+## Origins
+A club that fell twice.
+"""
+
+
+def test_drops_field_produces_a_featured_card(tmp_path, monkeypatch):
+    out = _build_with_insight_content(tmp_path, monkeypatch, {"giant-fc": DROP_STORY})
+    page = (out / "insights" / "the-drop" / "index.html").read_text()
+    assert "A real fall, with a real story." in page
+    assert "case-study-card" in page
+
+
+def test_drops_field_also_shows_on_the_clubs_own_facts_panel(tmp_path, monkeypatch):
+    out = _build_with_insight_content(tmp_path, monkeypatch, {"giant-fc": DROP_STORY})
+    team = (out / "team" / "giant-fc" / "index.html").read_text()
+    assert "Featured on The drop" in team
+    assert "A real fall, with a real story." in team
+
+
+def test_drops_entry_with_no_matching_season_is_skipped_not_fatal(tmp_path, monkeypatch):
+    out = _build_with_insight_content(
+        tmp_path, monkeypatch, {"giant-fc": DROP_STORY_WRONG_SEASON}
+    )
+    # The page still builds (giant-fc's real pattern still populates the
+    # table), it just has no featured card for this non-match.
+    page = (out / "insights" / "the-drop" / "index.html").read_text()
+    assert "This season never happened" not in page
+    assert "case-study-card" not in page
+    assert "Giant FC" in page  # the underlying pattern still renders below
+
+
+def test_multiple_drops_entries_all_produce_cards(tmp_path, monkeypatch):
+    out = _build_with_insight_content(
+        tmp_path, monkeypatch, {"giant-fc": DROP_STORY_TWO_NOTES}
+    )
+    page = (out / "insights" / "the-drop" / "index.html").read_text()
+    assert "First note on the same fall." in page
+    assert "Second note on the same fall." in page
+    assert page.count("case-study-card") == 2
+
+
+def test_rises_field_is_independent_of_drops(tmp_path, monkeypatch):
+    # steady-fc never moves tier in the fixture, so it has no rise pattern -
+    # a rises: entry on it must not appear anywhere, and must not error.
+    story = """---
+rises:
+  - season: 2023
+    note: Should never appear - steady-fc has no promotion pattern.
+---
+## Origins
+Nothing happens here.
+"""
+    out = _build_with_insight_content(tmp_path, monkeypatch, {"steady-fc": story})
+    assert not (out / "insights" / "the-rise" / "index.html").exists()
