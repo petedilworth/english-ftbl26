@@ -10,6 +10,12 @@ stadium: "Bloomfield Road"
 stadium_opened: 1901
 capacity: 16500
 stadium_ownership: club
+drops:
+  - season: 2016
+    note: >
+      Relegated in successive seasons, from the Championship to League Two,
+      during the Oyston-era decline that would culminate in the 2019
+      court-appointed receivership.
 ---
 
 ## Origins

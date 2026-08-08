@@ -23,6 +23,13 @@ points_deductions:
   - season_end_year: 1997
     points: 2
     reason: "Pitch invasion during a protest against the sale of the Goldstone Ground"
+rises:
+  - season: 2002
+    note: >
+      Champions in successive seasons, 2001 and 2002, took the club from
+      League Two to the Championship — just four years after the 1997
+      escape that spared them becoming the first former top-flight club
+      to drop into the Conference.
 ---
 
 ## Origins

@@ -15,6 +15,12 @@ exile:
   - venue: "Twerton Park, Bath"
     seasons: "1986-1996"
     distance_miles: 12
+rises:
+  - season: 2016
+    note: >
+      A single relegation into the National League in 2014 was reversed
+      immediately — promoted straight back up the following year, then
+      promoted again in 2016 into League One.
 ---
 
 ## Origins

@@ -9,6 +9,13 @@ owner_since: 2003
 stadium: "St James Park"
 capacity: 8696
 stadium_ownership: council
+rises:
+  - season: 2009
+    note: >
+      Promoted in successive seasons, from the Conference to League Two
+      in 2008 and on to League One in 2009 — the fastest part of the
+      climb back from the non-league exile that began the club's
+      supporter-ownership era.
 ---
 
 ## Origins

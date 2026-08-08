@@ -16,6 +16,17 @@ capacity: 6476
 previous_grounds:
   - name: "Christie Park (formerly Roseberry Park)"
     years: "1920-2010"
+drops:
+  - season: 2025
+    note: >
+      Relegated from League One in 2023, held for a season in League Two,
+      then relegated again in 2025 — spanning the worst of the financial
+      crisis under Bond Group Investments.
+  - season: 2026
+    note: >
+      A second consecutive relegation, out of the National League itself,
+      completing a fall from League One to outside the top five tiers of
+      English football in three seasons.
 ---
 
 ## Origins

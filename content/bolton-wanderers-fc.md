@@ -14,6 +14,18 @@ points_deductions:
   - season_end_year: 2020
     points: 12
     reason: "Automatic EFL insolvency penalty for entering administration in May 2019"
+drops:
+  - season: 2020
+    note: >
+      The administration and 12-point deduction sent them down from the
+      Championship to League One in 2019 — and they were relegated again
+      the following season, into League Two, before climbing back up.
+  - season: 1998
+    note: >
+      A much earlier example of the same pattern: promoted to the Premier
+      League in 1997, they were relegated straight back to the
+      Championship the very next season, decades before the 2019
+      administration.
 stadium: "Toughsheet Community Stadium"
 stadium_opened: 1997
 capacity: 28723

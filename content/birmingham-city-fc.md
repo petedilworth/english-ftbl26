@@ -23,6 +23,13 @@ stadium_ownership: club
 previous_grounds:
   - name: "Muntz Street"
     years: "1877–1906"
+drops:
+  - season: 2008
+    note: >
+      Yo-yo form typical of the mid-2000s, before Carson Yeung's takeover:
+      relegated from the Premier League in 2006, promoted straight back the
+      following season, then relegated again in 2008 — three divisions of
+      movement in three years.
 ---
 
 ## Origins

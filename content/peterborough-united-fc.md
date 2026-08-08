@@ -15,6 +15,12 @@ capacity: 15314
 stadium_ownership: third_party
 phoenix_of: "Peterborough & Fletton United"
 predecessor_folded: 1932
+rises:
+  - season: 2009
+    note: >
+      Two promotions in as many seasons, from League Two to League One in
+      2008 and on to the Championship in 2009 — the club's highest level
+      in decades, though they have since slipped back to League One.
 ---
 
 ## Origins
