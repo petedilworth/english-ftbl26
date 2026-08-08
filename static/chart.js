@@ -34,7 +34,14 @@
   var years = data.years;
   var minYear = years[0], maxYear = years[years.length - 1];
   var selected = {};
-  (data.preselect || []).forEach(function (id) { selected[id] = true; });
+  var preselect = data.preselect || [];
+  if (!preselect.length && data.clubs.length) {
+    // Never land on a blank chart - a page with nothing preselected (the
+    // global chart) gets one random club instead. Pages that already
+    // preselect something (e.g. every club in a theme) are untouched.
+    preselect = [data.clubs[Math.floor(Math.random() * data.clubs.length)].id];
+  }
+  preselect.forEach(function (id) { selected[id] = true; });
 
   function x(year) {
     return PAD.left + (year - minYear) / Math.max(1, maxYear - minYear) * (W - PAD.left - PAD.right);

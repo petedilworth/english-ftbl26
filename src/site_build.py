@@ -511,6 +511,7 @@ class SiteBuilder:
                     out_dir / "chart.png",
                     show_tier_lines=True,
                     show_events=True,
+                    color_by_tier=True,
                 )
                 has_chart = chart_path is not None
 
