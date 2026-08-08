@@ -166,6 +166,13 @@ def _facts_rows(facts: dict) -> list[dict]:
         add("Successor to", f"{facts['phoenix_of']}"
             + (f" (folded {folded})" if folded else ""))
 
+    for label, key in (("Featured on The drop", "drops"), ("Featured on The rise", "rises")):
+        for item in (facts.get(key) or []):
+            if isinstance(item, dict) and item.get("note"):
+                season = item.get("season")
+                value = f"{season_label(int(season))} · {item['note']}" if season else item["note"]
+                add(label, value)
+
     return rows
 
 
@@ -980,7 +987,7 @@ class SiteBuilder:
 
     def _movement_page(
         self, by_pattern, *, slug, title, intro, patterns, outcome_of,
-        groups, featured_heading, event_column, stats_fn,
+        groups, featured_heading, event_column, stats_fn, feature_key,
     ) -> None:
         """
         Shared renderer for The drop and The rise. The two pages differ only
@@ -1037,32 +1044,40 @@ class SiteBuilder:
 
         source = PROJECT_ROOT / "content" / "insights" / f"{slug}.md"
         prose = content.load_theme(source)
-        page_facts, _body = content.parse_front_matter(
-            source.read_text(encoding="utf-8") if source.exists() else ""
-        )
 
+        # Featured cards are authored on the club's own page (facts[feature_key]
+        # = "drops" or "rises"), not curated here - same direction of
+        # dependency as every other cross-club page on the site. `season`
+        # picks which pattern a note belongs to, since several clubs match
+        # more than one (Luton Town have both a 2007-09 slide out of the
+        # League and a 2024-25 one). A season that doesn't match a real
+        # pattern is skipped rather than shown, so a typo degrades silently
+        # instead of breaking the build.
         labels = {key: heading for key, heading, _note in groups}
         featured = []
-        for item in page_facts.get("featured") or []:
-            if not isinstance(item, dict):
-                continue
-            # Several clubs match more than one pattern (Luton Town have
-            # both a 2007-09 slide out of the League and a 2024-25 one), so
-            # `season` picks which. Without it, the most recent wins.
-            match = next(
-                (r for r in records
-                 if r["club_id"] == item.get("club_id")
-                 and (item.get("season") is None
-                      or r["seasons"][-1] == item["season"])),
-                None,
-            )
-            if match:
-                featured.append({
-                    **match,
-                    "note": item.get("note", ""),
-                    "outcome_class": match["outcome"],
-                    "outcome_label": labels.get(match["outcome"], match["outcome"]),
-                })
+        for club_id, facts in self.club_facts.items():
+            for item in facts.get(feature_key) or []:
+                if not isinstance(item, dict) or not item.get("note"):
+                    continue
+                match = next(
+                    (r for r in records
+                     if r["club_id"] == club_id and r["seasons"][-1] == item.get("season")),
+                    None,
+                )
+                if match:
+                    featured.append({
+                        **match,
+                        "note": item["note"],
+                        "outcome_class": match["outcome"],
+                        "outcome_label": labels.get(match["outcome"], match["outcome"]),
+                    })
+                else:
+                    logger.warning(
+                        "%s: %s entry for season %s doesn't match any detected "
+                        "pattern - skipped",
+                        club_id, feature_key, item.get("season"),
+                    )
+        featured.sort(key=lambda f: f["seasons"][-1], reverse=True)
 
         tier_key = [
             {"cls": f"t{t}", "label": name}
@@ -1123,6 +1138,7 @@ class SiteBuilder:
             featured_heading="The ones who came back",
             event_column="The fall",
             stats_fn=stats,
+            feature_key="drops",
         )
 
     def _insight_the_rise(self, by_pattern: dict[str, list[dict]]) -> None:
@@ -1166,6 +1182,7 @@ class SiteBuilder:
             featured_heading="The ones who kept going",
             event_column="The climb",
             stats_fn=stats,
+            feature_key="rises",
         )
 
     def _capacity_points(self) -> list[dict]:

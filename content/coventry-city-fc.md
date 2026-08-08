@@ -28,6 +28,12 @@ points_deductions:
   - season_end_year: 2014
     points: 10
     reason: "Imposed when the proposed CVA was rejected and the League share transferred to a new company"
+rises:
+  - season: 2020
+    note: >
+      Promoted twice in three seasons while playing home games outside
+      the city, having lost access to their own stadium — and they have
+      held the level ever since.
 ---
 
 ## Origins

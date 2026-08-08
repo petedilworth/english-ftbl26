@@ -12,6 +12,13 @@ capacity: 48707
 previous_grounds:
   - name: "Roker Park"
     years: "1898-1997"
+drops:
+  - season: 2018
+    note: >
+      Relegated out of the Premier League and then straight out of the
+      Championship, with a documentary crew in the building for both. Four
+      seasons in League One, two promotions, and a 95th-minute Wembley
+      winner later, they were back in the top flight.
 ---
 
 ## Origins

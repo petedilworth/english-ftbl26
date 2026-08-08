@@ -48,6 +48,8 @@ panel on the team page, and automatically place the club on the relevant
 | `multi_club_group` | e.g. `"City Football Group"` |
 | `administration` | List of `{year, points_deducted, note}` |
 | `points_deductions` | List of `{season_end_year, points, reason}` |
+| `drops` | List of `{season, note}` - a promotion/relegation pattern this club appears in on the **The drop** insight page. `season` is the pattern's final season, e.g. `2018` for a relegation completed in 2017/18 - matches automatically against `src/movement.py`'s detected patterns, so a season that doesn't correspond to a real one is silently skipped rather than shown. |
+| `rises` | Same shape, for **The rise**. |
 
 ### Infrastructure & environment
 | Field | Notes |
