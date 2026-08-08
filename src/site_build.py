@@ -774,6 +774,13 @@ class SiteBuilder:
                 "name": "Boom and bust",
                 "sub": "Why the same clubs keep falling into financial trouble",
             })
+        movement_matches = self._movement_matches()
+        if movement_matches:
+            entries.append({
+                "slug": "movements",
+                "name": "Successive promotions & relegations",
+                "sub": "Clubs that moved through the divisions in a tight cluster",
+            })
         self.render(
             "insights_index.html", self.out / "insights" / "index.html", 1,
             title="Insights", entries=entries,
@@ -785,6 +792,7 @@ class SiteBuilder:
         self._insight_timeline()
         self._insight_capacity()
         self._insight_boom_and_bust(boom_bust_events)
+        self._insight_movements(movement_matches)
 
     def _boom_bust_events(self) -> list[dict]:
         """
@@ -898,6 +906,107 @@ class SiteBuilder:
                 "columns": ["Season", "Club", "Event", "What happened"],
                 "rows": rows,
             }],
+        )
+
+    def _movement_matches(self) -> dict[str, list[dict]]:
+        """
+        {pattern_key: [match, ...]} across every club - see src/movement.py
+        for the pattern rules. Computed once and shared between the
+        insights-index tile guard and the page itself, same as
+        _boom_bust_events()/_insight_boom_and_bust().
+        """
+        import movement
+
+        names = dict(self.conn.execute(
+            "SELECT club_id, canonical_name FROM club_trajectory"
+        ))
+        histories = movement.load_status_histories(self.conn)
+
+        by_pattern: dict[str, list[dict]] = {}
+        for club_id, history in histories.items():
+            for m in movement.detect_patterns(history):
+                by_pattern.setdefault(m["pattern"], []).append({
+                    "club_id": club_id,
+                    "name": names.get(club_id, club_id),
+                    **m,
+                })
+        return by_pattern
+
+    def _insight_movements(self, by_pattern: dict[str, list[dict]]) -> None:
+        if not by_pattern:
+            return
+
+        import movement
+        import level as level_mod
+
+        def tier_path(tiers: list[int]) -> str:
+            return " → ".join(level_mod.TIER_NAMES.get(t, f"Tier {t}") for t in tiers)
+
+        def season_path(seasons: list[int]) -> str:
+            return " → ".join(season_label(y) for y in seasons)
+
+        def section(key: str, heading: str, note: str) -> dict | None:
+            entries = by_pattern.get(key)
+            if not entries:
+                return None
+            entries = sorted(entries, key=lambda m: m["seasons"][-1], reverse=True)
+            return {
+                "heading": heading,
+                "note": note,
+                "columns": ["Club", "Seasons", "Divisions"],
+                "rows": [
+                    [self._cell(e["name"], e["club_id"]),
+                     self._cell(season_path(e["seasons"])),
+                     self._cell(tier_path(e["tiers"]))]
+                    for e in entries
+                ],
+            }
+
+        sections = [s for s in [
+            section(movement.RELEGATION_BACK_TO_BACK, "Back-to-back relegations",
+                    "Relegated in consecutive seasons."),
+            section(movement.RELEGATION_THREE_PLUS, "Three relegations in a row",
+                    "Relegated in three or more consecutive seasons."),
+            section(movement.RELEGATION_HELD, "Held, then relegated again",
+                    "Relegated, stayed at the new level for a season, then relegated again."),
+            section(movement.RELEGATION_SANDWICH, "Sandwiched relegation",
+                    "Relegated, promoted straight back up, then relegated again within a year."),
+            section(movement.PROMOTION_BACK_TO_BACK, "Back-to-back promotions",
+                    "Promoted in consecutive seasons."),
+            section(movement.PROMOTION_THREE_PLUS, "Three promotions in a row",
+                    "Promoted in three or more consecutive seasons."),
+            section(movement.PROMOTION_PAUSED, "Promoted, paused, promoted again",
+                    "Promoted, held that level for a season, then promoted again."),
+        ] if s]
+
+        all_matches = [m for ms in by_pattern.values() for m in ms]
+        clubs_involved = {m["club_id"] for m in all_matches}
+        worst = max(all_matches, key=lambda m: len(m["seasons"]))
+
+        stats = [
+            {"value": len(clubs_involved), "label": "Clubs with a pattern on record"},
+            {"value": len(all_matches), "label": "Recorded instances"},
+            {"value": len(worst["seasons"]),
+             "label": f"Longest run of seasons — {worst['name']}"},
+        ]
+
+        import markdown as md
+        from markupsafe import Markup
+
+        source = PROJECT_ROOT / "content" / "insights" / "movements.md"
+        prose = content.load_theme(source)
+
+        self.render(
+            "insight_table.html", self.out / "insights" / "movements" / "index.html", 2,
+            title="Successive promotions & relegations",
+            heading="Successive promotions & relegations",
+            intro=(
+                "Which clubs have moved through the divisions in a tight "
+                "cluster, for better or worse."
+            ),
+            intro_html=Markup(md.markdown(prose)) if prose else None,
+            stats=stats,
+            sections=sections,
         )
 
     def _capacity_points(self) -> list[dict]:
