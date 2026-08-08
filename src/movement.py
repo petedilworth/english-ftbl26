@@ -126,3 +126,96 @@ def detect_patterns(history: list[tuple[int, int, str]]) -> list[dict]:
                 })
 
     return matches
+
+
+# ── What happened next ──────────────────────────────────────────────────
+#
+# A fall or a climb is only half a story: the interesting part is whether
+# the club came back, or held on. That needs no extra data - a club's own
+# tier history (level.load_histories()) already spans every season, so the
+# outcome is a comparison between where a club started, the extreme it
+# reached, and where it sits in the most recent season.
+#
+# Tier numbers count downwards in status: Tier 1 is the Premier League, so
+# a *larger* tier number is a *lower* division. Hence max() finds the floor
+# of a slide and min() finds the peak of a climb.
+
+FALL_RECOVERED = "recovered"
+FALL_CLIMBING = "climbing"
+FALL_STUCK = "stuck"
+FALL_WORSE = "worse"
+
+RISE_HELD = "held"
+RISE_SLIPPED = "slipped"
+RISE_FELL_BACK = "fell_back"
+
+OUTSIDE = "outside"
+# A sequence whose last season is the most recent one on record has no
+# "after" yet - the season at the new level has not been played. Saying
+# such a club is "still down there" is trivially true and misleading, so
+# these are reported separately rather than folded into a real outcome.
+UNFOLDING = "unfolding"
+
+
+def sequence_bounds(
+    tiers: dict[int, int], seasons: list[int]
+) -> tuple[int | None, int | None, int | None]:
+    """
+    (tier before the sequence, lowest tier reached, highest tier reached)
+    for one matched pattern, given the club's full {season: tier} history.
+
+    The window runs to the season *after* the last matched season, because
+    a club relegated in season N first appears in the lower division in
+    N+1 - the level it actually landed at is only visible one season on.
+    """
+    first, last = seasons[0], seasons[-1]
+    before = tiers.get(first - 1)
+    window = [t for year, t in tiers.items() if first <= year <= last + 1]
+    if not window:
+        return before, None, None
+    return before, max(window), min(window)
+
+
+def fall_outcome(
+    start_tier: int | None, floor_tier: int | None, now_tier: int | None,
+    settled: bool = True,
+) -> str:
+    """
+    Where a club ended up after a run of relegations.
+
+    now_tier is None when the club has no row in the most recent season -
+    it has dropped out of the recorded pyramid entirely, which is reported
+    as its own outcome rather than guessed at.
+
+    settled=False means the run only just finished and there is no season
+    after it yet, so no outcome can honestly be claimed.
+    """
+    if not settled:
+        return UNFOLDING
+    if now_tier is None:
+        return OUTSIDE
+    if start_tier is not None and now_tier <= start_tier:
+        return FALL_RECOVERED
+    if floor_tier is not None and now_tier < floor_tier:
+        return FALL_CLIMBING
+    if floor_tier is not None and now_tier == floor_tier:
+        return FALL_STUCK
+    return FALL_WORSE
+
+
+def rise_outcome(
+    peak_tier: int | None, now_tier: int | None, settled: bool = True
+) -> str:
+    """
+    Whether a club held the level a run of promotions took it to.
+    settled=False when the run only just finished - see fall_outcome().
+    """
+    if not settled:
+        return UNFOLDING
+    if now_tier is None:
+        return OUTSIDE
+    if peak_tier is None or now_tier <= peak_tier:
+        return RISE_HELD
+    if now_tier == peak_tier + 1:
+        return RISE_SLIPPED
+    return RISE_FELL_BACK

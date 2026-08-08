@@ -4,6 +4,11 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
 from movement import (
+    FALL_CLIMBING,
+    FALL_RECOVERED,
+    FALL_STUCK,
+    FALL_WORSE,
+    OUTSIDE,
     PROMOTION_BACK_TO_BACK,
     PROMOTION_PAUSED,
     PROMOTION_THREE_PLUS,
@@ -11,8 +16,15 @@ from movement import (
     RELEGATION_HELD,
     RELEGATION_SANDWICH,
     RELEGATION_THREE_PLUS,
+    RISE_FELL_BACK,
+    RISE_HELD,
+    RISE_SLIPPED,
+    UNFOLDING,
     classify,
     detect_patterns,
+    fall_outcome,
+    rise_outcome,
+    sequence_bounds,
 )
 
 
@@ -177,3 +189,84 @@ def test_load_status_histories_reads_standings(tmp_path):
     histories = load_status_histories(conn)
     assert histories["club-a"] == [(1999, 1, "Stayed"), (2000, 1, "Relegated")]
     assert histories["club-b"] == [(2001, 2, "Stayed")]
+
+
+# ── What happened next ──────────────────────────────────────────────────
+
+def test_sequence_bounds_includes_the_season_after_the_last_match():
+    # Relegated in 2017 and 2018, so the club only appears in Tier 3 - the
+    # level it actually landed at - in 2019. That season must be in the
+    # window or the floor reads as Tier 2.
+    tiers = {2016: 1, 2017: 1, 2018: 2, 2019: 3, 2020: 3}
+    before, floor, peak = sequence_bounds(tiers, [2017, 2018])
+    assert before == 1
+    assert floor == 3
+    assert peak == 1
+
+
+def test_sequence_bounds_without_a_prior_season():
+    # A club whose record starts at the pattern has no "before" tier.
+    before, floor, peak = sequence_bounds({2020: 4, 2021: 5}, [2020])
+    assert before is None
+    assert (floor, peak) == (5, 4)
+
+
+def test_fall_outcome_recovered_when_back_to_the_starting_tier():
+    # Sunderland's real shape: fell from Tier 1 to Tier 3, back in Tier 1.
+    assert fall_outcome(1, 3, 1) == FALL_RECOVERED
+    # Better than where they started also counts as recovered.
+    assert fall_outcome(2, 4, 1) == FALL_RECOVERED
+
+
+def test_fall_outcome_climbing_when_above_the_floor_but_short_of_the_start():
+    # Portsmouth: fell Tier 1 -> Tier 3, now Tier 2.
+    assert fall_outcome(1, 3, 2) == FALL_CLIMBING
+
+
+def test_fall_outcome_stuck_at_the_floor():
+    assert fall_outcome(1, 3, 3) == FALL_STUCK
+
+
+def test_fall_outcome_worse_when_below_the_floor():
+    assert fall_outcome(2, 4, 5) == FALL_WORSE
+
+
+def test_fall_outcome_outside_when_no_current_season():
+    # No row in the latest season - the club is out of the recorded
+    # pyramid. Reported as its own outcome rather than guessed at.
+    assert fall_outcome(1, 4, None) == OUTSIDE
+
+
+def test_fall_outcome_unknown_start_still_classifies_off_the_floor():
+    assert fall_outcome(None, 4, 3) == FALL_CLIMBING
+    assert fall_outcome(None, 4, 4) == FALL_STUCK
+
+
+def test_rise_outcome_held_the_new_level():
+    # Wrexham: climbed to Tier 2 and are still there.
+    assert rise_outcome(2, 2) == RISE_HELD
+    # Kept climbing afterwards also counts as holding.
+    assert rise_outcome(2, 1) == RISE_HELD
+
+
+def test_rise_outcome_slipped_one_division():
+    assert rise_outcome(1, 2) == RISE_SLIPPED
+
+
+def test_rise_outcome_fell_back_further():
+    assert rise_outcome(2, 4) == RISE_FELL_BACK
+
+
+def test_rise_outcome_outside_when_no_current_season():
+    assert rise_outcome(4, None) == OUTSIDE
+
+
+def test_a_run_ending_in_the_latest_season_has_no_outcome_yet():
+    # The season at the new level has not been played, so claiming the club
+    # is "still down there" (or "held the level") would be trivially true
+    # and misleading. Both directions report it as unfinished instead.
+    assert fall_outcome(1, 3, 3, settled=False) == UNFOLDING
+    assert rise_outcome(3, 3, settled=False) == UNFOLDING
+    # ...and the flag wins over every other signal, including a missing
+    # current season.
+    assert fall_outcome(1, 3, None, settled=False) == UNFOLDING

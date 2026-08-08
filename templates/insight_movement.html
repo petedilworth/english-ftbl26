@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>{{ heading }}</h1>
+<p class="subtitle">{{ intro }}</p>
+
+{% if intro_html %}
+<div class="theme-intro">{{ intro_html }}</div>
+{% endif %}
+
+{% if stats %}
+<div class="stat-cards">
+  {% for card in stats %}
+  <div class="stat-card"><div class="stat-value">{{ card.value }}</div><div class="stat-label">{{ card.label }}</div></div>
+  {% endfor %}
+</div>
+{% endif %}
+
+{% macro ribbon(cells) %}
+<span class="tier-ribbon" aria-hidden="true">
+  {%- for c in cells -%}
+  <span class="ribbon-cell {{ c.cls }}{% if c.marked %} in-pattern{% endif %}" title="{{ c.title }}"></span>
+  {%- endfor -%}
+</span>
+{% endmacro %}
+
+{% if featured %}
+<h2>{{ featured_heading }}</h2>
+<div class="case-study-grid">
+  {% for f in featured %}
+  <div class="case-study-card">
+    <p class="outcome-tag {{ f.outcome_class }}">{{ f.outcome_label }}</p>
+    <h3><span class="color-chip" style="background: {{ f.color }}"></span><a href="{{ root }}/team/{{ f.club_id }}/index.html">{{ f.name }}</a></h3>
+    {{ ribbon(f.ribbon) }}
+    <p class="movement-path">{{ f.path }}</p>
+    <p>{{ f.note }}</p>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+<p class="ribbon-key">
+  Each strip is one club's {{ span_label }}, a cell per season, coloured by division:
+  {% for k in tier_key %}<span class="ribbon-key-item"><span class="ribbon-cell {{ k.cls }}"></span>{{ k.label }}</span>{% endfor %}
+</p>
+
+{% for section in sections %}
+<h2>{{ section.heading }} <span class="section-count">{{ section.rows | length }}</span></h2>
+{% if section.note %}<p class="subtitle">{{ section.note }}</p>{% endif %}
+<div class="table-scroll">
+<table class="standings movement-table">
+  <tr>
+    <th>Club</th><th>{{ span_label }}</th><th>{{ event_column }}</th><th>Type</th>
+  </tr>
+  {% for r in section.rows %}
+  <tr>
+    <td><span class="color-chip" style="background: {{ r.color }}"></span><a href="{{ root }}/team/{{ r.club_id }}/index.html">{{ r.name }}</a></td>
+    <td>{{ ribbon(r.ribbon) }}</td>
+    <td>{{ r.path }}</td>
+    <td><span class="pattern-tag">{{ r.pattern_label }}</span></td>
+  </tr>
+  {% endfor %}
+</table>
+</div>
+{% endfor %}
+{% endblock %}
