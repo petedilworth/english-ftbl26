@@ -47,9 +47,6 @@ THEMES = {
     "points-deductions": "Clubs docked points",
     "exiled": "Clubs exiled from their town",
     "ground-grading": "Promotion denied on ground grading",
-    "council-ground": "Council-owned grounds",
-    "multi-club": "Part of a multi-club group",
-    "stadium-moves": "Clubs that moved ground",
 }
 
 _FRONT_MATTER = re.compile(r"^---\s*\n(.*?)\n---\s*\n?", re.DOTALL)
@@ -132,12 +129,6 @@ def derive_themes(facts: dict) -> list[str]:
         themes.add("exiled")
     if facts.get("ground_grading_denial"):
         themes.add("ground-grading")
-    if facts.get("stadium_ownership") == "council":
-        themes.add("council-ground")
-    if facts.get("multi_club_group"):
-        themes.add("multi-club")
-    if facts.get("previous_grounds"):
-        themes.add("stadium-moves")
 
     manual = facts.get("themes") or []
     if isinstance(manual, str):
@@ -197,9 +188,6 @@ def theme_events(slug: str, facts: dict) -> list[dict]:
     """
     Dated events explaining why a club sits on a theme, as
     [{season_end_year, label, text}] sorted oldest first.
-
-    Themes with no natural date (council-ground, multi-club) return [] -
-    those pages get a narrative but no event dots.
     """
     facts = facts or {}
     events: list[dict] = []
@@ -265,11 +253,6 @@ def theme_events(slug: str, facts: dict) -> list[dict]:
             text += "."
             add(facts.get("founded"), "calendar", "Club founded", text)
 
-    elif slug == "stadium-moves":
-        if facts.get("stadium_opened") and facts.get("stadium"):
-            add(facts["stadium_opened"], "calendar", "Moved in",
-                f"{facts['stadium']} opened in {facts['stadium_opened']}.")
-
     elif slug == "fan-owned":
         if facts.get("owner_since"):
             owner = facts.get("owner") or "The supporters' trust"
@@ -297,15 +280,6 @@ def theme_narrative(slug: str, facts: dict) -> str:
     events = theme_events(slug, facts)
     if events:
         return " ".join(e["text"] for e in events)
-
-    # Themes with no dated event still deserve a sentence.
-    if slug == "council-ground" and facts.get("stadium"):
-        return (
-            f"{facts['stadium']} is owned by the local authority; the club "
-            "plays there as a tenant."
-        )
-    if slug == "multi-club" and facts.get("multi_club_group"):
-        return f"Part of {facts['multi_club_group']}."
     return ""
 
 
