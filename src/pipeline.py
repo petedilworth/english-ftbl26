@@ -215,7 +215,8 @@ def _reconcile_statuses(conn: sqlite3.Connection) -> None:
     Play-off positions mark eligibility, but only the winner goes up; a club's
     actual tier next season is ground truth. Rows for the latest season, and
     clubs with no row the following season (folded or dropped below Tier 5),
-    keep their positional status.
+    keep their positional status here - see _apply_known_playoff_winners()
+    for how the latest season's play-off rows get corrected instead.
     """
     pairs = conn.execute(
         """
@@ -265,6 +266,53 @@ def _reconcile_statuses(conn: sqlite3.Connection) -> None:
     logger.info(
         "Status reconciliation: %d rows corrected against next-season movement",
         len(updates),
+    )
+
+
+def _apply_known_playoff_winners(conn: sqlite3.Connection) -> None:
+    """
+    Correct "Play-off Promoted" rows that _reconcile_statuses() can't reach.
+
+    That function needs next season's data to know who actually went up;
+    for the most recently completed season, next season hasn't been played
+    yet, so every club in the play-off band is left tagged "Play-off
+    Promoted" instead of just the winner. status.CURRENT_SEASON_PLAYOFF_
+    WINNERS records the real winner for exactly that gap. If next season's
+    data has since been ingested, movement-based reconciliation is more
+    direct evidence than this table and takes precedence - skip it here.
+    """
+    updates: list[tuple[str, int]] = []
+    for (tier, season), winner_id in status.CURRENT_SEASON_PLAYOFF_WINNERS.items():
+        has_next_season = conn.execute(
+            "SELECT 1 FROM standings WHERE season_end_year = ? AND tier = ? LIMIT 1",
+            (season + 1, tier),
+        ).fetchone()
+        if has_next_season:
+            continue
+
+        rows = conn.execute(
+            """
+            SELECT rowid, club_id FROM standings
+            WHERE season_end_year = ? AND tier = ? AND status = 'Play-off Promoted'
+            """,
+            (season, tier),
+        ).fetchall()
+        found_winner = any(club_id == winner_id for _rowid, club_id in rows)
+        if not found_winner:
+            logger.warning(
+                "Known play-off winner %s not found among tier %d %d play-off "
+                "rows - check the club_id in CURRENT_SEASON_PLAYOFF_WINNERS",
+                winner_id, tier, season,
+            )
+        for rowid, club_id in rows:
+            if club_id != winner_id:
+                updates.append(("Stayed", rowid))
+
+    if updates:
+        conn.executemany("UPDATE standings SET status = ? WHERE rowid = ?", updates)
+        conn.commit()
+    logger.info(
+        "Known play-off winners applied: %d row(s) corrected", len(updates)
     )
 
 
@@ -348,6 +396,7 @@ def run(
     logger.info("Inserted/updated %d standings rows total", total_rows)
 
     _reconcile_statuses(conn)
+    _apply_known_playoff_winners(conn)
 
     trajectory.rebuild_trajectory(conn)
 
