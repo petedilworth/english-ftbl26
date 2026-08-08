@@ -2,6 +2,7 @@
 founded: 1901
 origin_type: other
 origin_note: "A new club, at a meeting in the Seven Stars Inn, Ship Street"
+nickname: "the Seagulls"
 ownership_model: benefactor
 owner: "Tony Bloom"
 owner_since: 2009
@@ -33,7 +34,11 @@ the amateur Brighton & Hove Rangers, formed in 1900, handed over its Southern
 League place to the new club and was not heard of again. Albion was
 registered as Brighton & Hove United, then renamed before a ball was kicked
 after objections from Hove F.C. The club moved to the Goldstone Ground in
-1902 and was elected to the Football League in 1920.
+1902 and was elected to the Football League in 1920. Its "Seagulls"
+nickname is much more recent: a short-lived "Dolphins" identity in the
+mid-1970s gave way to a terrace chant war with Crystal Palace fans — their
+"Eagles, Eagles" answered with "Seagulls, Seagulls" — officially adopted,
+badge included, by 1977.
 
 ## Trajectory
 

@@ -2,6 +2,7 @@
 founded: 1905
 origin_type: youth
 origin_note: "A team of teenagers from East Street, Charlton"
+nickname: "the Addicks"
 ownership_model: consortium
 owner: "SE7 Partners / Global Football Partners"
 owner_since: 2023
@@ -26,7 +27,12 @@ mission; Charlton was a street team that simply refused to fold. There is a
 live historical dispute worth acknowledging: several published histories tie
 the club's genesis to the East Street Mission, the Blundell Mission, or a
 side called Charlton Reds, while the club's own museum states it was founded
-as Charlton Athletic from the outset with no such connection.
+as Charlton Athletic from the outset with no such connection. The nickname
+"the Addicks" is traditionally traced to Arthur Bryan, an East Street
+fishmonger who supplied haddock and chips to players after matches —
+"haddock" softening into "addick" in south London dialect — though the tale
+rests on club tradition rather than contemporary record, and competes with
+theories deriving the name from "Addicts" or from "Athletic" itself.
 
 The club moved to The Valley in 1919 — a ground dug out of a disused chalk
 pit and built substantially by the supporters themselves. It is worth

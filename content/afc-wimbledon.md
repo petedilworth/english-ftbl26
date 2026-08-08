@@ -2,6 +2,7 @@
 founded: 2002
 origin_type: phoenix
 origin_note: "A supporter-founded club, after Wimbledon FC was permitted to relocate"
+nickname: "the Dons"
 ownership_model: fan_trust
 owner: "The Dons Trust"
 owner_since: 2002
@@ -46,7 +47,12 @@ League and the FA.
 The commission also considered what supporters might do in response, and
 concluded that fans starting a new club afresh "would not be in the wider
 interests of football." AFC Wimbledon was founded within days, on 30 May 2002.
-The phrase became its founding slogan.
+The phrase became its founding slogan. Alongside "the Dons" — itself simply
+a contraction of the town's name, in use since long before the Milton
+Keynes dispute — the new club inherited the affectionate nickname "the
+Wombles" from the original, a reference to the children's characters
+created by Elisabeth Beresford and set on Wimbledon Common, which the club
+later formalised with its own mascot, Haydon.
 
 Open trials were held on Wimbledon Common that June, attended by 230 hopefuls.
 The club entered the Combined Counties League — nine tiers below where
