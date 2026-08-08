@@ -21,6 +21,13 @@ stadium_ownership: club
 previous_grounds:
   - name: "Castlemain Road, Pokesdown"
     years: "1899-1910"
+rises:
+  - season: 2015
+    note: >
+      Two promotions in three seasons — League One to the Championship in
+      2013, then champions of the Championship in 2015 — completed the
+      club's climb from a relegation battle in League Two to the Premier
+      League in under four years.
 ---
 
 ## Origins

@@ -15,6 +15,12 @@ exile:
     seasons: "1985–1991"
   - venue: "Upton Park, West Ham United"
     seasons: "1991–1992"
+drops:
+  - season: 2009
+    note: >
+      Relegated from the Premier League in 2007, held on for one season
+      in the Championship, then relegated again into League One in 2009
+      — three divisions of decline inside three years.
 ---
 
 ## Origins

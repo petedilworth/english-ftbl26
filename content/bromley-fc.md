@@ -5,6 +5,12 @@ stadium: "Hayes Lane"
 stadium_opened: 1938
 capacity: 6100
 stadium_ownership: club
+rises:
+  - season: 2026
+    note: >
+      League Two champions in 2025-26, a second promotion in three
+      seasons following the play-off win that first took the club into
+      the Football League.
 ---
 
 ## Origins
