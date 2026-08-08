@@ -278,12 +278,26 @@ def test_theme_pages_generated_from_facts(tmp_path, monkeypatch):
     index = (out / "themes" / "index.html").read_text()
     assert "Fan-owned clubs" in index
 
-    for slug in ("fan-owned", "administration", "exiled", "council-ground"):
+    for slug in ("fan-owned", "administration", "exiled"):
         page = (out / "themes" / slug / "index.html").read_text()
         assert "Giant FC" in page, slug
 
     # steady-fc has no story file, so must not appear on any theme page
     assert "Steady FC" not in (out / "themes" / "fan-owned" / "index.html").read_text()
+
+
+def test_retired_theme_pages_are_not_built(tmp_path, monkeypatch):
+    # council-ground, multi-club and stadium-moves were retired. RICH_STORY
+    # carries stadium_ownership: council and administration (which used to
+    # be enough to qualify for council-ground); confirm no page or tile
+    # exists for any of the three even so.
+    out = _build_with_content(tmp_path, monkeypatch, {"giant-fc": RICH_STORY})
+    for slug in ("council-ground", "multi-club", "stadium-moves"):
+        assert not (out / "themes" / slug / "index.html").exists(), slug
+    index = (out / "themes" / "index.html").read_text()
+    assert "Council-owned" not in index
+    assert "multi-club group" not in index.lower()
+    assert "moved ground" not in index.lower()
 
 
 def test_club_without_story_keeps_placeholder(tmp_path, monkeypatch):

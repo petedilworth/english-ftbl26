@@ -112,9 +112,6 @@ def test_themes_derived_from_facts():
         ({"points_deductions": [{"points": 10}]}, "points-deductions"),
         ({"exile": [{"venue": "Elsewhere"}]}, "exiled"),
         ({"ground_grading_denial": [{"season_end_year": 1996}]}, "ground-grading"),
-        ({"stadium_ownership": "council"}, "council-ground"),
-        ({"multi_club_group": "Some Group"}, "multi-club"),
-        ({"previous_grounds": [{"name": "Old Park"}]}, "stadium-moves"),
     ]
     for facts, expected in cases:
         assert expected in derive_themes(facts), f"{facts} should yield {expected}"
@@ -124,8 +121,19 @@ def test_no_facts_yields_no_themes():
     assert derive_themes({}) == []
 
 
-def test_club_owned_stadium_is_not_council_theme():
-    assert "council-ground" not in derive_themes({"stadium_ownership": "club"})
+def test_retired_theme_facts_no_longer_derive_anything():
+    # council-ground, multi-club and stadium-moves were retired as browsable
+    # theme pages - the facts that used to trigger them must not resurrect
+    # them.
+    facts = {
+        "stadium_ownership": "council",
+        "multi_club_group": "Some Group",
+        "previous_grounds": [{"name": "Old Park"}],
+    }
+    themes = derive_themes(facts)
+    assert "council-ground" not in themes
+    assert "multi-club" not in themes
+    assert "stadium-moves" not in themes
 
 
 def test_manual_themes_merged_and_deduped():
@@ -224,7 +232,6 @@ def test_theme_events_per_theme():
         ("exiled", {"exile": [{"venue": "Elsewhere", "seasons": "1997–1999"}]}, 1998),
         ("ground-grading", {"ground_grading_denial": [{"season_end_year": 1996}]}, 1996),
         ("phoenix", {"founded": 2002, "phoenix_of": "Old FC"}, 2003),
-        ("stadium-moves", {"stadium": "New Park", "stadium_opened": 2005}, 2006),
         ("fan-owned", {"owner_since": 2003, "owner": "The Trust"}, 2004),
     ]
     for slug, facts, expected in cases:
@@ -232,11 +239,6 @@ def test_theme_events_per_theme():
         assert events, f"{slug} should yield an event"
         assert events[0]["season_end_year"] == expected, slug
         assert events[0]["text"], f"{slug} event needs text"
-
-
-def test_themes_without_a_natural_date_yield_no_dots():
-    assert theme_events("council-ground", {"stadium_ownership": "council"}) == []
-    assert theme_events("multi-club", {"multi_club_group": "A Group"}) == []
 
 
 def test_events_are_sorted_oldest_first():
@@ -282,12 +284,6 @@ def test_theme_notes_override_the_derived_text():
     # Other themes are unaffected by an override aimed at one of them
     assert "9 points" in theme_narrative("administration", {
         "administration": [{"year": 2010, "points_deducted": 9}]})
-
-
-def test_undated_themes_still_get_a_sentence():
-    assert "local authority" in theme_narrative(
-        "council-ground", {"stadium": "St James Park", "stadium_ownership": "council"})
-    assert "A Group" in theme_narrative("multi-club", {"multi_club_group": "A Group"})
 
 
 def test_narrative_empty_when_nothing_to_say():
