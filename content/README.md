@@ -144,3 +144,14 @@ United's "the Posh" is the model: research where it actually came from
 explanations) and tell that story in Origins, not just the fact of the name
 itself. If the true origin is genuinely disputed, say so rather than picking
 the tidiest version.
+
+That culture runs on pettiness and rivalry as often as on anything grander,
+and it's worth hunting for specifically — a badge changed purely to needle
+a neighbour, a nickname born as a terrace insult and then worn with pride,
+a chant coined in a pub for the sole purpose of drowning out the away end.
+Brighton's "Seagulls" is the second model alongside "the Posh": Crystal
+Palace's own rebrand to "the Eagles" gave Brighton fans something to mock,
+and "Seagulls, Seagulls" was invented specifically to shout it down before
+the club ever adopted it officially. The tell that a story belongs in this
+vein isn't that it's flattering — it's that a rival club, a pub, or a
+crowd's sense of humour is doing the work, not a marketing department.
