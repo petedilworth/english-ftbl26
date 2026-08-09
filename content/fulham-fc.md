@@ -37,6 +37,16 @@ making it London's oldest professional football club. The club has played
 at Craven Cottage, on the bank of the Thames in Fulham, since 1896, and
 takes its nickname, "the Cottagers," directly from the ground's name.
 
+The club's affluent riverside setting has also given it an unusual
+reputation among English football's largely working-class fan culture:
+photographs of Fulham supporters' elaborate away-day food and drink —
+cheese, champagne, on one trip to Sheffield United even caviar — circulate
+widely and draw regular ribbing from rival fans. In May 2022, celebrating
+promotion back to the Premier League, the club's own shop sold a £20
+cheeseboard engraved with the crest and the Championship trophy as part of
+its promotion merchandise range — read by fans and press alike as the club
+knowingly playing up to the stereotype rather than fighting it.
+
 ## Trajectory
 
 Fulham drifted through the lower divisions for most of the twentieth
