@@ -40,9 +40,14 @@ A severe financial crisis in 1992–93 under chairman Stan Flashman left
 wages unpaid, brought a £50,000 Football League fine, and forced a
 tribunal to void player contracts after a near-expulsion vote; accounts
 differ on whether the club formally entered administration or was rescued
-just short of it. A longer-running problem was Underhill's pitch, whose
-pronounced slope fell increasingly short of Football League ground-grading
-standards as they tightened, contributing to the club's eventual move.
+just short of it. A longer-running problem was Underhill's pitch, whose pronounced slope —
+an eleven-foot drop from north to south even after levelling work carried
+out in the late 1980s to appease the FA, having been steeper still before
+it — became a fixture of English football folklore in its own right:
+winning the coin toss and playing downhill in the second half was widely
+reckoned essential on a wet Underhill night, and the slope fell
+increasingly short of Football League ground-grading standards as they
+tightened, contributing to the club's eventual move.
 That move, to a new stadium built in the neighbouring borough of Harrow in
 2013, came with its own regulatory catch: the site's lease initially
 barred Football League fixtures outright, a restriction lifted only by a
