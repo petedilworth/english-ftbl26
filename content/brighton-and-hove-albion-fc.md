@@ -77,14 +77,31 @@ judgment against the directors appears in it, and none should be inferred.
 Their involvement ended in 1997, when a consortium led by lifelong supporter
 Dick Knight took control with liquidation imminent.
 
-The modern era begins in 2009 with Tony Bloom, a Brighton-born gambler and
-sports-analytics entrepreneur who took majority control of his boyhood club
-and put over £90 million of his own money into building its stadium. Bloom
-holds football interests elsewhere, and the distinction matters: these are
-his personal shareholdings, not the club's. He is a minority shareholder in
-Belgian side Royale Union Saint-Gilloise, having reduced his stake when both
-clubs were on course for the same UEFA competition — a reminder that
-multi-club ownership rules bind the individual as well as the institution.
+The modern era begins in 2009 with Tony Bloom, a Brighton-born professional
+gambler who took majority control of his boyhood club and put over £90
+million of his own money into building its stadium. Bloom's fortune comes
+from Starlizard, a private sports-betting analytics syndicate he founded in
+2006, and the same statistical approach runs through Brighton's recruitment:
+proprietary models are used to identify undervalued players in
+under-scouted leagues and positions, sign them cheaply, develop them, and
+sell at a large profit — Moisés Caicedo (bought for £4m, sold to Chelsea
+for £100m), Alexis Mac Allister (£6.9m, sold to Liverpool for £35m) and
+Marc Cucurella (sold to Chelsea for £56m) among the clearest examples.
+Brighton are not unique in this approach — Brentford, under a similarly
+betting-derived ownership model, runs a close parallel — but the two are
+the most prominent examples of it in English football.
+
+Bloom holds football interests elsewhere, and the distinction matters:
+these are his personal shareholdings, not the club's, structured to stay
+within multi-club ownership rules rather than build an integrated network.
+He held a minority stake in Belgian side Royale Union Saint-Gilloise,
+reduced when both clubs were on course for the same UEFA competition; in
+2025 he paid £9.86m for a 29% non-voting stake in Scottish club Heart of
+Midlothian, and separately agreed a stake in Australian side Melbourne
+Victory. Player pathways sometimes cross the stakes directly — winger
+Simon Adingra was loaned to Union Saint-Gilloise to develop before joining
+Brighton's first team, following the same route as Kaoru Mitoma via a loan
+in Belgium.
 
 ## Infrastructure & Environment
 
