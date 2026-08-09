@@ -55,11 +55,17 @@ Voluntary Arrangement in time, the League imposed a further 17-point
 deduction at the very start of 2008-09 — repeatedly cited as one of the
 largest penalties ever handed to an English league club — and the club had
 to accept it without appeal simply to keep playing. Starting the season 17
-points in arrears, the club survived relegation out of the Football League
-only on the final day. The turnaround that followed was driven by a change
-in ownership rather than any single transfer: Maxim Demin's investment from
-2011 provided the sustained backing, under manager Eddie Howe (who had
-first taken charge during the 2008-09 survival fight), that underpinned the
+points in arrears, the club spent the campaign fighting relegation out of
+the Football League altogether, with bailiffs reportedly visiting the club
+every few days to seize property against unpaid debts and players unsure
+when, or if, they would next be paid. Manager Jimmy Quinn was sacked in
+January 2009 and replaced, initially on a caretaker basis, by 31-year-old
+Eddie Howe — his first managerial job. Howe has since credited the
+squad's togetherness for closing the gap match by match; Bournemouth
+secured survival with a final-day win over Grimsby Town on 25 April 2009,
+finishing 18th. The turnaround that followed was driven by a change in
+ownership rather than any single transfer: Maxim Demin's investment from
+2011 provided the sustained backing, under Howe, that underpinned the
 club's climb through four divisions to the Premier League by 2015.
 
 ## Ownership & Finance
