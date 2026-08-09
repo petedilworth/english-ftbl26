@@ -10,6 +10,18 @@ stadium: "Ashton Gate"
 capacity: 27000
 previous_grounds:
   - name: "St John's Lane, Bedminster"
+rivalries:
+  - opponent: "bristol-rovers-fc"
+    name: "The Bristol derby"
+    note: >
+      Predates both clubs' current names: newly formed Bristol South End
+      (the future Bristol City) beat Eastville Rovers (the future Bristol
+      Rovers) 2–1 in a September 1894 friendly at St John's Lane, with
+      competitive meetings following within a couple of seasons as both
+      turned professional. It's usually read as a class divide as much as
+      a footballing one — Rovers rooted in the working-class, industrial
+      Eastville district north-east of the city, City in the more
+      prosperous Bedminster side to the south.
 ---
 
 ## Origins

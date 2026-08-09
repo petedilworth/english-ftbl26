@@ -16,6 +16,18 @@ previous_grounds:
     years: "1874–1876"
   - name: "Wellington Road, Perry Barr"
     years: "1876–1897"
+rivalries:
+  - opponent: "birmingham-city-fc"
+    name: "The Second City derby"
+    note: >
+      First contested in 1879 between Villa and Small Heath Alliance —
+      Birmingham City's earlier name — which makes it one of English
+      football's oldest derbies, older than either club's current
+      identity. Villa Park and St Andrew's sit under two and a half miles
+      apart, and the two clubs have spent most of their history sharing
+      England's top two divisions, keeping the fixture a regular one
+      rather than a rarity. The "Second City" tag comes from
+      Birmingham's own long-standing claim to that title behind London.
 ---
 
 ## Origins
