@@ -64,9 +64,9 @@ Field in 1485; his remains were reinterred at Leicester Cathedral on 26
 March 2015. At the time, Leicester City were bottom of the Premier
 League, seven points from safety with nine games left to play — and won
 seven of those nine to survive, before winning the title outright the
-following season. No credible cause connects the two events, but the
-timing was close enough that it became, and remains, part of the club's
-own folklore.
+following season. Leicester fans have never let a good story go to
+waste: to this day, at least some of the credit for English football's
+greatest-ever upset is given, unofficially, to a dead king.
 
 The second financial-crisis instance came over two decades after the
 first, either side of the club's financial position being transformed by
