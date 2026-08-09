@@ -35,11 +35,26 @@ who happened to have only scarlet and black cloth in stock.
 The reformed club spent much of its history in the shadow of the first
 one's collapse, rebuilding cautiously through non-league football until
 winning the Northern Premier League in 2003 and the Conference title in
-2005–06 to reach the Football League for the first time since 1962. Its
-clearest brush with a repeat crisis came in 2015, when the club was, in
-owner Andy Holt's own words, close to folding under debt before he took
-control that October — averted without the club ever entering formal
-administration or losing points. More recently, a long-running planning and
+2005–06 to reach the Football League for the first time since 1962.
+
+The club's name became far better known than its league position for
+most of that climb, after a 1989 Milk Marketing Board television advert
+had a boy dismiss a friend's football ambitions with the line
+"Accrington Stanley — who are they?", punctured by the reply "Exactly" —
+using the by-then non-league club as the byword for footballing
+obscurity. A club executive later credited the advert with driving
+merchandise sales as far afield as Australia and North America, and the
+club leaned into the joke rather than resisting it: original child actor
+Carl Rice was invited back as guest of honour for the 2005–06 promotion
+that returned the club to the Football League, and when Accrington
+Stanley won a first-ever promotion to League One in 2018, a local
+supermarket marked it by selling milk in bottles printed with the club
+crest and the advert's own punchline.
+
+Its clearest brush with a repeat crisis came in 2015, when the club was,
+in owner Andy Holt's own words, close to folding under debt before he
+took control that October — averted without the club ever entering
+formal administration or losing points. More recently, a long-running planning and
 noise-abatement dispute with Hyndburn Council over an unauthorised
 hospitality suite closed off a revenue stream and left an £850,000
 shortfall, forcing the closure of the club's academy in 2025.

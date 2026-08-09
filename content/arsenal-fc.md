@@ -51,6 +51,16 @@ than the league table put Arsenal in the top flight, and the club has never
 left it since — and the episode is the root of the Arsenal–Tottenham
 rivalry.
 
+A different kind of reputation was earned rather than voted on. Under
+manager George Graham, Arsenal won the 1990-91 league title losing only
+once all season and conceding just 18 goals in 38 matches, a defensive
+record opposition supporters mocked with the chant "boring, boring
+Arsenal." Arsenal's own fans reclaimed the jibe almost immediately,
+singing it back with pride alongside "one-nil to the Arsenal" as Graham's
+teams ground out result after result; both chants have resurfaced
+ironically among Arsenal supporters in later, far more attacking eras of
+the club.
+
 ## Ownership & Finance
 
 Arsenal was boardroom- and family-controlled for most of the twentieth
