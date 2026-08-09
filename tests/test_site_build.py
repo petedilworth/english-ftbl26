@@ -783,3 +783,93 @@ Nothing happens here.
 """
     out = _build_with_insight_content(tmp_path, monkeypatch, {"steady-fc": story})
     assert not (out / "insights" / "the-rise" / "index.html").exists()
+
+
+# ── Rivalries & derbies ────────────────────────────────────────────────
+
+RIVALRY_STORY = """---
+rivalries:
+  - opponent: steady-fc
+    name: The Test Derby
+    note: A grudge born from a real, researched cause.
+---
+## Origins
+A club with a documented rival.
+"""
+
+RIVALRY_STORY_UNNAMED = """---
+rivalries:
+  - opponent: steady-fc
+    note: Unnamed but documented all the same.
+---
+## Origins
+A club with a documented rival.
+"""
+
+RIVALRY_STORY_UNKNOWN_OPPONENT = """---
+rivalries:
+  - opponent: not-a-real-club-fc
+    note: Should be skipped, not fatal.
+---
+## Origins
+A club with a bogus rival.
+"""
+
+
+def test_rivalries_page_builds_with_named_derby(tmp_path, monkeypatch):
+    out = _build_with_insight_content(tmp_path, monkeypatch, {"giant-fc": RIVALRY_STORY})
+    page = (out / "insights" / "rivalries" / "index.html").read_text()
+    assert "The Test Derby" in page
+    assert "A grudge born from a real, researched cause." in page
+    assert "Giant FC" in page and "Steady FC" in page
+
+
+def test_rivalries_page_falls_back_to_club_names_when_unnamed(tmp_path, monkeypatch):
+    out = _build_with_insight_content(
+        tmp_path, monkeypatch, {"giant-fc": RIVALRY_STORY_UNNAMED}
+    )
+    page = (out / "insights" / "rivalries" / "index.html").read_text()
+    assert "Giant FC" in page and "Steady FC" in page
+    assert "Unnamed but documented all the same." in page
+
+
+def test_rivalry_shows_on_the_clubs_own_facts_panel_with_opponent_name(tmp_path, monkeypatch):
+    out = _build_with_insight_content(tmp_path, monkeypatch, {"giant-fc": RIVALRY_STORY})
+    team = (out / "team" / "giant-fc" / "index.html").read_text()
+    assert "Rivalry" in team
+    assert "Steady FC" in team
+    assert "A grudge born from a real, researched cause." in team
+
+
+def test_rivalry_with_unknown_opponent_is_skipped_not_fatal(tmp_path, monkeypatch):
+    out = _build_with_insight_content(
+        tmp_path, monkeypatch, {"giant-fc": RIVALRY_STORY_UNKNOWN_OPPONENT}
+    )
+    assert not (out / "insights" / "rivalries" / "index.html").exists()
+
+
+def test_rivalry_written_on_both_sides_is_deduped_not_doubled(tmp_path, monkeypatch):
+    other_side = """---
+rivalries:
+  - opponent: giant-fc
+    name: The Test Derby
+    note: A shorter note from the other side.
+---
+## Origins
+The other half of the same rivalry.
+"""
+    out = _build_with_insight_content(
+        tmp_path, monkeypatch,
+        {"giant-fc": RIVALRY_STORY, "steady-fc": other_side},
+    )
+    page = (out / "insights" / "rivalries" / "index.html").read_text()
+    # Only the longer, more detailed note survives - shown once, not twice.
+    assert page.count("The Test Derby") == 1
+    assert "A grudge born from a real, researched cause." in page
+    assert "A shorter note from the other side." not in page
+
+
+def test_rivalries_page_absent_when_no_rivalries_anywhere(tmp_path, monkeypatch):
+    out = _build_with_insight_content(tmp_path, monkeypatch, {"giant-fc": DROP_STORY})
+    assert not (out / "insights" / "rivalries" / "index.html").exists()
+    assert "Rivalries" not in (out / "insights" / "index.html").read_text()

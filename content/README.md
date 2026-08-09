@@ -50,6 +50,7 @@ panel on the team page, and automatically place the club on the relevant
 | `points_deductions` | List of `{season_end_year, points, reason}` |
 | `drops` | List of `{season, note}` - a promotion/relegation pattern this club appears in on the **The drop** insight page. `season` is the pattern's final season, e.g. `2018` for a relegation completed in 2017/18 - matches automatically against `src/movement.py`'s detected patterns, so a season that doesn't correspond to a real one is silently skipped rather than shown. |
 | `rises` | Same shape, for **The rise**. |
+| `rivalries` | List of `{opponent, name, note}` - a documented rivalry or derby, shown on this club's facts panel and on the **Rivalries & derbies** insight page. `opponent` is the other club's `club_id`; `name` is optional (omit for an unnamed local rivalry); `note` is the researched story. Write it from either side - if the other club's file also documents the same pairing, the insight page shows the fuller of the two rather than both. |
 
 ### Infrastructure & environment
 | Field | Notes |
@@ -137,8 +138,13 @@ owners, insolvency or disputes, describe transactions, court rulings and
 regulatory outcomes rather than characterising anyone's motives, and leave
 out contested allegations.
 
-A club's nickname is often the richest vein of this kind of story — British
-football culture and humour, not just finance and governance. Peterborough
+The underlying interest here is British culture read through sport — what
+the game's history reveals about the country's humour, class, geography and
+grudges, not just its finance and governance. Nicknames and rivalries are
+the two richest veins found so far, but neither is the whole of it; keep
+watching for others.
+
+A club's nickname is often the richest vein of this kind of story. Peterborough
 United's "the Posh" is the model: research where it actually came from
 (cross-reference more than one source; nicknames often have competing folk
 explanations) and tell that story in Origins, not just the fact of the name
@@ -155,3 +161,15 @@ and "Seagulls, Seagulls" was invented specifically to shout it down before
 the club ever adopted it officially. The tell that a story belongs in this
 vein isn't that it's flattering — it's that a rival club, a pub, or a
 crowd's sense of humour is doing the work, not a marketing department.
+
+Rivalries and derbies are their own category, using the `rivalries` field
+(above). A genuine one has a documented cause, not just proximity — two
+clubs sharing a county isn't a rivalry unless something actually happened:
+a merger or a ground dispute (Exeter City and the old Exeter United), a
+promotion race with real needle, an owner who arrived from, or later ran, a
+rival club, a chant or nickname born specifically to needle the other side
+(Bristol Rovers' "Gasheads," Arsenal's move that founded the Tottenham
+rivalry). Don't manufacture heat a club's own history doesn't support — the
+nearest club in the table isn't automatically "the rivals," and a fixture
+being called a "derby" locally is a starting point for research, not a
+substitute for it.
