@@ -86,7 +86,7 @@ ORIGIN_LABELS = {
 }
 
 
-def _facts_rows(facts: dict) -> list[dict]:
+def _facts_rows(facts: dict, club_names: dict[str, str] | None = None) -> list[dict]:
     """
     Turn front-matter into an ordered list of {label, value} rows for the
     club facts panel. Only facts actually present are returned, so a
@@ -172,6 +172,14 @@ def _facts_rows(facts: dict) -> list[dict]:
                 season = item.get("season")
                 value = f"{season_label(int(season))} · {item['note']}" if season else item["note"]
                 add(label, value)
+
+    for rivalry in (facts.get("rivalries") or []):
+        if isinstance(rivalry, dict) and rivalry.get("opponent"):
+            opponent = (club_names or {}).get(rivalry["opponent"], rivalry["opponent"])
+            bits = [f"vs {opponent}" + (f" ({rivalry['name']})" if rivalry.get("name") else "")]
+            if rivalry.get("note"):
+                bits.append(rivalry["note"])
+            add("Rivalry", " · ".join(bits))
 
     return rows
 
@@ -467,6 +475,13 @@ class SiteBuilder:
         ).fetchall()
 
         content_dir = PROJECT_ROOT / "content"
+        # club_master, not trajectories: a rivalries: opponent may be a
+        # club with no standings row in the tracked tiers (see
+        # _rivalry_pairs), but every club with a content file is in
+        # club_master.
+        club_names = dict(self.conn.execute(
+            "SELECT club_id, canonical_name FROM club_master"
+        ))
 
         teams_meta = []
         for t in trajectories:
@@ -500,7 +515,7 @@ class SiteBuilder:
                         })
                 if club_content["extra"]:
                     extra_html = Markup(md.markdown(club_content["extra"]))
-                facts_rows = _facts_rows(club_content["facts"])
+                facts_rows = _facts_rows(club_content["facts"], club_names)
                 club_themes = [
                     {"slug": s, "label": content.THEMES.get(s, s.replace("-", " ").title())}
                     for s in club_content["themes"]
@@ -782,6 +797,13 @@ class SiteBuilder:
                 "name": "Boom and bust",
                 "sub": "Why the same clubs keep falling into financial trouble",
             })
+        rivalries = self._rivalry_pairs()
+        if rivalries:
+            entries.append({
+                "slug": "rivalries",
+                "name": "Rivalries & derbies",
+                "sub": "The needle behind the fixture list",
+            })
         movement_matches = self._movement_matches()
         import movement as movement_mod
         if any(movement_matches.get(k) for k in (
@@ -815,6 +837,7 @@ class SiteBuilder:
         self._insight_boom_and_bust(boom_bust_events)
         self._insight_the_drop(movement_matches)
         self._insight_the_rise(movement_matches)
+        self._insight_rivalries(rivalries)
 
     def _boom_bust_events(self) -> list[dict]:
         """
@@ -926,6 +949,88 @@ class SiteBuilder:
             case_study_relegated=case_study(page_facts.get("case_study_relegated")),
             sections=[{
                 "columns": ["Season", "Club", "Event", "What happened"],
+                "rows": rows,
+            }],
+        )
+
+    def _rivalry_pairs(self) -> list[dict]:
+        """
+        One entry per documented rivalry, deduped by the unordered pair of
+        clubs involved - a derby is sometimes written up from only one
+        side's file, occasionally from both. Where both sides wrote an
+        entry, the one with a note (or the longer note) wins, since that's
+        the more useful account to show; the other is dropped silently
+        rather than shown twice.
+        """
+        # club_master, not club_trajectory: a rivalry's opponent may be a
+        # club with no standings row in the tracked tiers at all (Bradford
+        # Park Avenue hasn't played in Tiers 1-5 since before the 1993/94
+        # data start), but every club with a content file is in club_master.
+        names = dict(self.conn.execute(
+            "SELECT club_id, canonical_name FROM club_master"
+        ))
+
+        by_pair: dict[frozenset, dict] = {}
+        for club_id, facts in self.club_facts.items():
+            for rivalry in (facts.get("rivalries") or []):
+                if not isinstance(rivalry, dict) or not rivalry.get("opponent"):
+                    continue
+                opponent = rivalry["opponent"]
+                if opponent not in names:
+                    logger.warning(
+                        "%s: rivalry opponent %r is not a known club_id - skipping",
+                        club_id, opponent,
+                    )
+                    continue
+                pair = frozenset((club_id, opponent))
+                entry = {
+                    "club_a": club_id, "name_a": names.get(club_id, club_id),
+                    "club_b": opponent, "name_b": names[opponent],
+                    "name": rivalry.get("name"),
+                    "note": rivalry.get("note") or "",
+                }
+                existing = by_pair.get(pair)
+                if existing is None or len(entry["note"]) > len(existing["note"]):
+                    by_pair[pair] = entry
+
+        return sorted(by_pair.values(), key=lambda e: (e["name_a"], e["name_b"]))
+
+    def _insight_rivalries(self, rivalries: list[dict]) -> None:
+        if not rivalries:
+            return
+
+        clubs_involved = {e["club_a"] for e in rivalries} | {e["club_b"] for e in rivalries}
+        stats = [
+            {"value": len(rivalries), "label": "Documented rivalries"},
+            {"value": len(clubs_involved), "label": "Clubs involved"},
+        ]
+
+        # Only link a club that actually has a team page - build_teams()
+        # renders one per club_trajectory row, which is every club with
+        # standings data in the tracked tiers, not every club_master entry
+        # (e.g. Bradford Park Avenue has a story file but no page, since it
+        # hasn't played Tiers 1-5 since before the 1993/94 data start).
+        has_page = {r[0] for r in self.conn.execute("SELECT club_id FROM club_trajectory")}
+
+        rows = [
+            [self._cell(e["name"] or f"{e['name_a']} – {e['name_b']}"),
+             self._cell(e["name_a"], e["club_a"] if e["club_a"] in has_page else None),
+             self._cell(e["name_b"], e["club_b"] if e["club_b"] in has_page else None),
+             self._cell(e["note"])]
+            for e in rivalries
+        ]
+
+        self.render(
+            "insight_table.html", self.out / "insights" / "rivalries" / "index.html", 2,
+            title="Rivalries & derbies",
+            heading="Rivalries & derbies",
+            intro=(
+                "Local grudges, spite nicknames and boardroom feuds - the needle "
+                "behind the fixture list."
+            ),
+            stats=stats,
+            sections=[{
+                "columns": ["Derby", "Club", "Club", "What's behind it"],
                 "rows": rows,
             }],
         )
