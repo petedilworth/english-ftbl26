@@ -11,6 +11,19 @@ points_deductions:
   - season_end_year: 2024
     points: 4
     reason: "Premier League Profitability and Sustainability Rules breach, losses exceeding the threshold by £34.5m over the three years to 2022/23; appeal rejected"
+rivalries:
+  - opponent: "leicester-city-fc"
+    name: "The East Midlands Derby"
+    note: >
+      Two major Victorian-era East Midlands clubs, roughly twenty miles
+      apart. Nottingham Forest's dominant era under Brian Clough in the
+      1970s and 1980s — two European Cups and consecutive league titles —
+      is now decades past. Leicester has experienced more recent dramatic
+      swings: administration and financial crisis in the early 2000s, and
+      an extraordinary 2015-16 Premier League title win from 5000-1 odds.
+      The fixture history between them is modern: first competitive meeting
+      in 1993, with 24 meetings across competitive tiers in the decades
+      since.
 stadium: "City Ground"
 stadium_opened: 1898
 capacity: 30445
