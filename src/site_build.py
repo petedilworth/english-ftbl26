@@ -475,7 +475,13 @@ class SiteBuilder:
         ).fetchall()
 
         content_dir = PROJECT_ROOT / "content"
-        club_names = {t["club_id"]: t["canonical_name"] for t in trajectories}
+        # club_master, not trajectories: a rivalries: opponent may be a
+        # club with no standings row in the tracked tiers (see
+        # _rivalry_pairs), but every club with a content file is in
+        # club_master.
+        club_names = dict(self.conn.execute(
+            "SELECT club_id, canonical_name FROM club_master"
+        ))
 
         teams_meta = []
         for t in trajectories:
@@ -956,8 +962,12 @@ class SiteBuilder:
         the more useful account to show; the other is dropped silently
         rather than shown twice.
         """
+        # club_master, not club_trajectory: a rivalry's opponent may be a
+        # club with no standings row in the tracked tiers at all (Bradford
+        # Park Avenue hasn't played in Tiers 1-5 since before the 1993/94
+        # data start), but every club with a content file is in club_master.
         names = dict(self.conn.execute(
-            "SELECT club_id, canonical_name FROM club_trajectory"
+            "SELECT club_id, canonical_name FROM club_master"
         ))
 
         by_pair: dict[frozenset, dict] = {}
@@ -995,10 +1005,17 @@ class SiteBuilder:
             {"value": len(clubs_involved), "label": "Clubs involved"},
         ]
 
+        # Only link a club that actually has a team page - build_teams()
+        # renders one per club_trajectory row, which is every club with
+        # standings data in the tracked tiers, not every club_master entry
+        # (e.g. Bradford Park Avenue has a story file but no page, since it
+        # hasn't played Tiers 1-5 since before the 1993/94 data start).
+        has_page = {r[0] for r in self.conn.execute("SELECT club_id FROM club_trajectory")}
+
         rows = [
             [self._cell(e["name"] or f"{e['name_a']} – {e['name_b']}"),
-             self._cell(e["name_a"], e["club_a"]),
-             self._cell(e["name_b"], e["club_b"]),
+             self._cell(e["name_a"], e["club_a"] if e["club_a"] in has_page else None),
+             self._cell(e["name_b"], e["club_b"] if e["club_b"] in has_page else None),
              self._cell(e["note"])]
             for e in rivalries
         ]

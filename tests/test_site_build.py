@@ -873,3 +873,51 @@ def test_rivalries_page_absent_when_no_rivalries_anywhere(tmp_path, monkeypatch)
     out = _build_with_insight_content(tmp_path, monkeypatch, {"giant-fc": DROP_STORY})
     assert not (out / "insights" / "rivalries" / "index.html").exists()
     assert "Rivalries" not in (out / "insights" / "index.html").read_text()
+
+
+def test_rivalry_opponent_with_no_team_page_shows_name_without_a_dead_link(
+    tmp_path, monkeypatch
+):
+    # A club can be in club_master (and have a content file) without a
+    # club_trajectory row - e.g. it hasn't played Tiers 1-5 since before
+    # the 1993/94 data start (Bradford Park Avenue in the real data). Its
+    # name should still resolve, but build_teams() never renders a page
+    # for it, so the rivalries table must not link to one that 404s.
+    import shutil
+
+    import site_build as sb
+
+    db = _db_on_disk(tmp_path)
+    conn = sqlite3.connect(db)
+    conn.execute(
+        "INSERT INTO club_master VALUES ('ghost-fc','Ghost FC',NULL,NULL,7)"
+    )
+    conn.commit()
+    conn.close()
+
+    content_dir = tmp_path / "content"
+    content_dir.mkdir()
+    (content_dir / "giant-fc.md").write_text(
+        """---
+rivalries:
+  - opponent: ghost-fc
+    name: The Haunted Derby
+    note: A rivalry with a club that has no page of its own.
+---
+## Origins
+A club with a ghostly rival.
+""",
+        encoding="utf-8",
+    )
+    real_root = Path(__file__).parent.parent
+    shutil.copytree(real_root / "templates", tmp_path / "templates")
+    shutil.copytree(real_root / "static", tmp_path / "static")
+    monkeypatch.setattr(sb, "PROJECT_ROOT", tmp_path)
+
+    out = tmp_path / "site"
+    SiteBuilder(db, out, charts_enabled=False).build()
+
+    assert not (out / "team" / "ghost-fc").exists()
+    page = (out / "insights" / "rivalries" / "index.html").read_text()
+    assert "Ghost FC" in page
+    assert '<a href="../../team/ghost-fc/index.html">Ghost FC</a>' not in page
