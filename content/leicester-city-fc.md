@@ -56,9 +56,22 @@ the club out of administration via a company voluntary arrangement in
 February 2003; promotion followed that same season, but the club went
 back down again in 2004.
 
-The second instance came over two decades later, either side of the
-club's financial position being transformed by the 2015-16 Premier
-League title and the Champions League football that followed it.
+Between those two crises came the club's defining season, and one of
+English football's stranger coincidences. Archaeologists confirmed in
+February 2013 that a skeleton found the previous year under a Leicester
+city-centre car park was Richard III, the English king killed at Bosworth
+Field in 1485; his remains were reinterred at Leicester Cathedral on 26
+March 2015. At the time, Leicester City were bottom of the Premier
+League, seven points from safety with nine games left to play — and won
+seven of those nine to survive, before winning the title outright the
+following season. No credible cause connects the two events, but the
+timing was close enough that it became, and remains, part of the club's
+own folklore.
+
+The second financial-crisis instance came over two decades after the
+first, either side of the club's financial position being transformed by
+the 2015-16 Premier League title and the Champions League football that
+followed it.
 Relegated in 2023, Leicester won the Championship outright in 2023-24
 and returned to the Premier League — only to be relegated again in
 2024-25. The following season, back in the Championship, the club was
