@@ -50,6 +50,20 @@ club FC Midtjylland, which won the Danish title in his first season of
 ownership; the two clubs shared some personnel and a common statistical
 recruitment philosophy during that period.
 
+The statistical model was enforced as institutional policy, not treated as
+one input among several. Mark Warburton led Brentford to promotion to the
+Championship in 2013-14 and came close to a second promotion, to the
+Premier League, the following season — yet by February 2015 his contract
+was not renewed, over what he described as a "clash of philosophies" with
+Benham on how far recruitment should be driven by statistical modelling
+rather than conventional scouting judgement; his assistant David Weir left
+alongside him, and sporting director Frank McParland was placed on
+gardening leave before his own departure that summer. Warburton and Benham
+both described the split as amicable rather than acrimonious, but the
+episode marked the point at which the data-driven model took precedence
+over an individual manager's authority, even one who had just delivered
+promotion.
+
 ## Infrastructure & Environment
 
 Brentford played at Griffin Park from 1904 until 2020, its first permanent
