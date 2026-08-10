@@ -30,6 +30,11 @@ EXPECTED_MATCHES = {
 }
 
 
+def expected_match_count(n_teams: int) -> int:
+    """Total matches a completed season of this size should contain."""
+    return EXPECTED_MATCHES.get(n_teams, n_teams * (n_teams - 1))
+
+
 def get_division_name(tier: int, season_end_year: int) -> str:
     tier_map = DIVISION_NAMES.get(tier, {})
     for yr_range, name in tier_map.items():
@@ -143,7 +148,7 @@ def compute_standings(
 
     # Incomplete season warning
     n_teams = len(standings)
-    expected = EXPECTED_MATCHES.get(n_teams, n_teams * (n_teams - 1))
+    expected = expected_match_count(n_teams)
     if len(df) < expected * 0.5:
         logger.warning(
             "%s/%s: only %d matches found, expected ~%d — possible incomplete season",

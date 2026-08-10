@@ -14,6 +14,7 @@ import pandas as pd
 import requests
 import urllib3
 
+import download
 import entities
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -22,7 +23,8 @@ logger = logging.getLogger(__name__)
 
 FIXTURES_URL = "https://www.football-data.co.uk/fixtures.csv"
 
-DIV_TO_TIER = {"E0": 1, "E1": 2, "E2": 3, "E3": 4, "EC": 5}
+# Single source of truth, shared with the results ingest.
+DIV_TO_TIER = download.CODE_TO_TIER
 
 DIV_TO_NAME = {
     "E0": "Premier League",

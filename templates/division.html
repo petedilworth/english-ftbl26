@@ -4,7 +4,7 @@
 <p class="subtitle">Tier {{ tier }} · every season, newest first. Historical names shown where the division was renamed.</p>
 
 {% for season in seasons %}
-<h2>{{ season.label }} — {{ season.division_name }}</h2>
+<h2>{{ season.label }} — {{ season.division_name }}{% if season.in_progress %} <span class="season-in-progress">in progress</span>{% endif %}</h2>
 <div class="table-scroll">
 <table class="standings">
   <tr><th>#</th><th>Club</th><th class="num">P</th><th class="num">GD</th><th class="num">Pts</th><th></th></tr>

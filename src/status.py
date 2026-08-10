@@ -247,15 +247,28 @@ def get_rules(tier: int, season_end_year: int) -> dict:
     return rule
 
 
+IN_PROGRESS = "In progress"
+
+
 def assign_status(
     standings: pd.DataFrame,
     season_end_year: int,
     tier: int,
+    is_complete: bool = True,
 ) -> pd.DataFrame:
     """
     Add a 'status' column to the standings DataFrame.
     Expects a 'position' column (1-based integers).
+
+    A season still being played has no promotion or relegation outcomes yet,
+    so every club is marked 'In progress' rather than being judged on a
+    table that is one matchday old.
     """
+    if not is_complete:
+        standings = standings.copy()
+        standings["status"] = IN_PROGRESS
+        return standings
+
     try:
         rules = get_rules(tier, season_end_year)
     except KeyError as exc:

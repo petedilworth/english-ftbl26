@@ -107,6 +107,79 @@ def _build_source(season_end_year: int, tier: int) -> str:
     return f"football-data.co.uk/{code}/{season_str}"
 
 
+def _division_matches_tier(match_df, csv_path: Path, tier: int) -> bool:
+    """
+    Check a loaded CSV really holds the division its filename claims.
+
+    The tier is derived from the filename, which only records what we asked
+    the site for. Every football-data.co.uk row carries its own 'Div' code,
+    and that is what actually determines the division — in August 2026 the
+    site answered requests for not-yet-published Premier League and League
+    Two files with National League data, which was then stored under three
+    different tiers.
+    """
+    if "Div" not in match_df.columns:
+        logger.debug("%s has no Div column — cannot verify division", csv_path.name)
+        return True
+
+    codes = {str(c).strip() for c in match_df["Div"].dropna().unique() if str(c).strip()}
+    if not codes:
+        return True
+
+    expected = download.TIER_TO_CODE[tier]
+    unexpected = codes - {expected}
+    if unexpected:
+        logger.error(
+            "%s claims tier %d (%s) but contains %s data — skipping file",
+            csv_path.name,
+            tier,
+            expected,
+            "/".join(sorted(unexpected)),
+        )
+        return False
+    return True
+
+
+def _season_is_complete(season_end_year: int, n_teams: int, n_matches: int) -> bool:
+    """
+    Whether a season has finished and its final table can be judged.
+
+    Past seasons count as finished however sparse their data — some early
+    football-data.co.uk files hold only part of a season, and those tables
+    are still settled history. Only the season currently being played is
+    tested on how many of its fixtures have actually happened.
+    """
+    if season_end_year < download.current_season_end_year():
+        return True
+    return n_matches >= aggregate.expected_match_count(n_teams) * 0.95
+
+
+def _club_count_plausible(standings_df, season_end_year: int, tier: int, csv_path: Path) -> bool:
+    """
+    Reject a table holding more clubs than the division can contain.
+
+    Fewer clubs than expected is normal early in a season, when some have not
+    played yet, so only an excess is treated as proof the file is wrong.
+    """
+    try:
+        expected = status.get_rules(tier, season_end_year)["total_clubs"]
+    except KeyError:
+        return True
+
+    actual = len(standings_df)
+    if actual > expected:
+        logger.error(
+            "%s produced %d clubs for tier %d %d, which holds %d — skipping file",
+            csv_path.name,
+            actual,
+            tier,
+            season_end_year,
+            expected,
+        )
+        return False
+    return True
+
+
 def _process_season(
     conn: sqlite3.Connection,
     csv_path: Path,
@@ -122,13 +195,31 @@ def _process_season(
     match_df = aggregate.load_csv(csv_path)
     if match_df is None:
         return 0
+
+    if not _division_matches_tier(match_df, csv_path, tier):
+        return 0
+
     try:
         standings_df = aggregate.compute_standings(match_df, season_end_year, tier)
     except Exception as exc:
         logger.error("Failed aggregating %s: %s", csv_path.name, exc)
         return 0
 
-    standings_df = status.assign_status(standings_df, season_end_year, tier)
+    if not _club_count_plausible(standings_df, season_end_year, tier, csv_path):
+        return 0
+
+    is_complete = _season_is_complete(season_end_year, len(standings_df), len(match_df))
+    if not is_complete:
+        logger.info(
+            "%d/%d is still being played (%d matches) — no promotion or "
+            "relegation outcomes assigned yet",
+            season_end_year,
+            tier,
+            len(match_df),
+        )
+    standings_df = status.assign_status(
+        standings_df, season_end_year, tier, is_complete=is_complete
+    )
     source = _build_source(season_end_year, tier)
 
     rows = []
@@ -174,6 +265,12 @@ def _process_season(
         ))
 
     try:
+        # Replace the season wholesale rather than upserting: a club dropping
+        # out of a re-parsed table would otherwise leave a stale row behind.
+        conn.execute(
+            "DELETE FROM standings WHERE season_end_year = ? AND tier = ?",
+            (season_end_year, tier),
+        )
         conn.executemany(
             """
             INSERT OR REPLACE INTO standings
@@ -208,6 +305,22 @@ def _process_season(
     return len(rows)
 
 
+def _in_progress_seasons(conn: sqlite3.Connection) -> set[int]:
+    """
+    Seasons still being played, which prove nothing about promotion yet.
+
+    A part-played table is not evidence of where anyone finished, and must
+    never be used to rewrite a completed season's outcomes.
+    """
+    return {
+        row[0]
+        for row in conn.execute(
+            "SELECT DISTINCT season_end_year FROM standings WHERE status = ?",
+            (status.IN_PROGRESS,),
+        )
+    }
+
+
 def _reconcile_statuses(conn: sqlite3.Connection) -> None:
     """
     Correct positional status assignments using observed movement.
@@ -217,7 +330,13 @@ def _reconcile_statuses(conn: sqlite3.Connection) -> None:
     clubs with no row the following season (folded or dropped below Tier 5),
     keep their positional status here - see _apply_known_playoff_winners()
     for how the latest season's play-off rows get corrected instead.
+
+    A season that is still being played is ignored as evidence: it says where
+    clubs are now, not where they finished, and treating it as ground truth
+    let one bad ingest rewrite the previous season's promotions wholesale.
     """
+    unfinished = _in_progress_seasons(conn)
+
     pairs = conn.execute(
         """
         SELECT s.rowid, s.club_id, s.season_end_year, s.tier, s.status, n.tier
@@ -231,6 +350,8 @@ def _reconcile_statuses(conn: sqlite3.Connection) -> None:
 
     updates: list[tuple[str, int]] = []
     for rowid, club_id, season, tier, status_val, next_tier in pairs:
+        if season + 1 in unfinished or status_val == status.IN_PROGRESS:
+            continue
         moved_up = next_tier < tier
         moved_down = next_tier > tier
 
@@ -281,13 +402,17 @@ def _apply_known_playoff_winners(conn: sqlite3.Connection) -> None:
     data has since been ingested, movement-based reconciliation is more
     direct evidence than this table and takes precedence - skip it here.
     """
+    unfinished = _in_progress_seasons(conn)
+
     updates: list[tuple[str, int]] = []
     for (tier, season), winner_id in status.CURRENT_SEASON_PLAYOFF_WINNERS.items():
         has_next_season = conn.execute(
             "SELECT 1 FROM standings WHERE season_end_year = ? AND tier = ? LIMIT 1",
             (season + 1, tier),
         ).fetchone()
-        if has_next_season:
+        # A season underway can't settle last season's play-offs either, so
+        # the recorded winner is still the better evidence.
+        if has_next_season and season + 1 not in unfinished:
             continue
 
         rows = conn.execute(
