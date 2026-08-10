@@ -43,7 +43,11 @@ STATUS_PRESENTATION = {
     "Stayed": ("stayed", "", ""),
     "Play-off Relegated": ("play-off-relegated", "down", "Play-offs ↓"),
     "Relegated": ("relegated", "down", "Relegated"),
+    # A season still being played has no outcome to tag yet.
+    "In progress": ("in-progress", "", ""),
 }
+
+IN_PROGRESS_STATUS = "In progress"
 
 DEFAULT_COLOR = "#1a5c9a"
 
@@ -359,6 +363,9 @@ class SiteBuilder:
                 seasons.append({
                     "label": season_label(year),
                     "division_name": rows[0]["division_name"],
+                    "in_progress": any(
+                        r["status"] == IN_PROGRESS_STATUS for r in rows
+                    ),
                     "rows": [_row_dict(r) for r in rows],
                 })
             self.render(

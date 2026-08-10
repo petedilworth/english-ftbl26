@@ -1,4 +1,5 @@
 import sqlite3
+from collections import defaultdict
 import sys
 from pathlib import Path
 
@@ -90,15 +91,161 @@ def test_real_table_entries_reference_playoff_promoted_rows_in_the_live_db():
     if not db_path.exists():
         return
     conn = sqlite3.connect(db_path)
+    unfinished = pipeline._in_progress_seasons(conn)
     for (tier, season), winner_id in status.CURRENT_SEASON_PLAYOFF_WINNERS.items():
         has_next_season = conn.execute(
             "SELECT 1 FROM standings WHERE season_end_year = ? AND tier = ? LIMIT 1",
             (season + 1, tier),
         ).fetchone()
-        if has_next_season:
+        # A season still being played can't supersede the recorded winner, so
+        # the entry still has to be valid - mirrors _apply_known_playoff_winners.
+        if has_next_season and season + 1 not in unfinished:
             continue  # superseded by real movement - entry is fine to be stale
         row = conn.execute(
             "SELECT status FROM standings WHERE season_end_year=? AND tier=? AND club_id=?",
             (season, tier, winner_id),
         ).fetchone()
         assert row is not None, f"{winner_id} has no row for tier {tier} {season}"
+
+
+# ── Division-identity guards ────────────────────────────────────────────────
+# In August 2026 football-data.co.uk answered requests for the not-yet-published
+# 2026/27 Premier League and League Two files with National League data, and
+# returned HTTP 200 for both. Tier came from the requested filename, so the same
+# 24-club National League table landed in the database three times, under tiers
+# 1, 4 and 5 - and then rewrote the previous season's promotions.
+
+import pandas as pd
+
+import download
+
+
+CREATE_MATCHES_SQL = """
+CREATE TABLE matches (
+    season_end_year INT, tier INT, match_date TEXT, home_club_id TEXT,
+    away_club_id TEXT, home_name TEXT, away_name TEXT, fthg INT, ftag INT, ftr TEXT
+)
+"""
+
+
+def _frame(div_code, n_clubs=4):
+    """A minimal results frame stamped with a division code."""
+    rows = []
+    for i in range(0, n_clubs, 2):
+        rows.append({
+            "Div": div_code, "Date": "08/08/2026",
+            "HomeTeam": f"Club {i}", "AwayTeam": f"Club {i + 1}",
+            "FTHG": 1, "FTAG": 0, "FTR": "H",
+        })
+    return pd.DataFrame(rows)
+
+
+def test_csv_holding_another_division_is_rejected():
+    # A file named for the Premier League that actually contains National
+    # League results must not be ingested as tier 1.
+    assert not pipeline._division_matches_tier(
+        _frame("EC"), Path("2627_E0.csv"), tier=1
+    )
+
+
+def test_csv_holding_the_expected_division_is_accepted():
+    assert pipeline._division_matches_tier(_frame("E0"), Path("2627_E0.csv"), tier=1)
+
+
+def test_csv_without_a_div_column_is_left_alone():
+    # Nothing to check against, so this guard must not block the ingest.
+    frame = _frame("E0").drop(columns=["Div"])
+    assert pipeline._division_matches_tier(frame, Path("2627_E0.csv"), tier=1)
+
+
+def test_table_with_more_clubs_than_the_division_holds_is_rejected():
+    # The 24-club "Premier League" that gave the incident away.
+    too_many = pd.DataFrame({"club_name": [f"Club {i}" for i in range(24)]})
+    assert not pipeline._club_count_plausible(
+        too_many, 2027, tier=1, csv_path=Path("2627_E0.csv")
+    )
+
+
+def test_table_with_fewer_clubs_is_allowed():
+    # Early in a season not every club has played, so a short table is normal.
+    few = pd.DataFrame({"club_name": [f"Club {i}" for i in range(6)]})
+    assert pipeline._club_count_plausible(
+        few, 2027, tier=1, csv_path=Path("2627_E0.csv")
+    )
+
+
+def test_division_code_is_read_from_the_csv_body():
+    body = b"Div,Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR\nEC,08/08/2026,Woking,Barrow,1,0,H\n"
+    assert download.division_code_in_csv(body) == "EC"
+
+
+def test_division_code_is_none_without_a_div_column():
+    body = b"Date,HomeTeam,AwayTeam\n08/08/2026,Woking,Barrow\n"
+    assert download.division_code_in_csv(body) is None
+
+
+def test_wrong_division_csv_inserts_nothing(tmp_path):
+    # End-to-end version of the incident: the file is named for tier 1 but
+    # holds National League data, so no rows may reach the database.
+    csv_path = tmp_path / "2627_E0.csv"
+    csv_path.write_text(
+        "Div,Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR\n"
+        "EC,08/08/2026,Woking,Barrow,1,0,H\n"
+        "EC,08/08/2026,Altrincham,Southend,1,3,A\n"
+    )
+    conn = sqlite3.connect(":memory:")
+    conn.execute(CREATE_STANDINGS_SQL)
+    conn.execute(CREATE_MATCHES_SQL)
+
+    inserted = pipeline._process_season(
+        conn, csv_path, 2027, tier=1, resolver={}, unresolved_map=defaultdict(list)
+    )
+
+    assert inserted == 0
+    assert conn.execute("SELECT COUNT(*) FROM standings").fetchone()[0] == 0
+    assert conn.execute("SELECT COUNT(*) FROM matches").fetchone()[0] == 0
+
+
+# ── In-progress seasons ─────────────────────────────────────────────────────
+
+
+def test_past_season_counts_as_complete_even_when_sparse():
+    # Some early football-data.co.uk files hold only part of a season; those
+    # tables are still settled history and keep their outcomes.
+    assert pipeline._season_is_complete(2003, n_teams=24, n_matches=335)
+
+
+def test_current_season_with_one_matchday_is_not_complete():
+    live = download.current_season_end_year()
+    assert not pipeline._season_is_complete(live, n_teams=24, n_matches=12)
+
+
+def test_in_progress_season_gets_no_promotion_or_relegation():
+    standings = pd.DataFrame({"position": [1, 2, 23, 24]})
+    result = status.assign_status(standings, 2027, tier=5, is_complete=False)
+    assert set(result["status"]) == {status.IN_PROGRESS}
+
+
+def test_completed_season_is_not_rewritten_by_a_season_still_being_played():
+    # The corruption path: National League clubs appeared in a part-played
+    # season, and last season's table was rewritten to say they went up.
+    conn = _db([
+        (2026, 5, "woking-fc", "Stayed"),
+        (2027, 5, "woking-fc", status.IN_PROGRESS),
+    ])
+    pipeline._reconcile_statuses(conn)
+    assert conn.execute(
+        "SELECT status FROM standings WHERE club_id='woking-fc' AND season_end_year=2026"
+    ).fetchone()[0] == "Stayed"
+
+
+def test_completed_season_is_still_reconciled_against_a_finished_one():
+    # The guard above must not disable genuine movement-based correction.
+    conn = _db([
+        (2025, 5, "promoted-fc", "Stayed"),
+        (2026, 4, "promoted-fc", "Stayed"),
+    ])
+    pipeline._reconcile_statuses(conn)
+    assert conn.execute(
+        "SELECT status FROM standings WHERE club_id='promoted-fc' AND season_end_year=2025"
+    ).fetchone()[0] == "Promoted"

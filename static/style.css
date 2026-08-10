@@ -108,6 +108,12 @@ table.standings tr.status-relegated, table.standings tr.status-play-off-relegate
 .status-tag.up { color: var(--up); }
 .status-tag.down { color: var(--down); }
 
+.season-in-progress {
+  font-size: 12px; font-weight: normal; color: var(--muted);
+  border: 1px solid var(--line); border-radius: 10px;
+  padding: 1px 8px; vertical-align: middle; white-space: nowrap;
+}
+
 .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 
 .tile-grid {

@@ -24,6 +24,50 @@ TIER5_FIRST_SEASON = 2006
 
 TIER_TO_CODE = {1: "E0", 2: "E1", 3: "E2", 4: "E3", 5: "EC"}
 
+# Inverse lookup, used to check a CSV really is the division we asked for.
+CODE_TO_TIER = {code: tier for tier, code in TIER_TO_CODE.items()}
+
+
+def current_season_end_year(today: datetime.date | None = None) -> int:
+    """
+    End year of the season currently in progress. A season starting in
+    August of year N is the 'N+1' season, so July is treated as the rollover.
+    """
+    today = today or datetime.date.today()
+    return today.year + 1 if today.month >= 7 else today.year
+
+
+def division_code_in_csv(content: bytes) -> str | None:
+    """
+    Read the 'Div' value from a raw CSV body, or None if it has no Div column.
+
+    football-data.co.uk stamps every row with its division code, which is the
+    only trustworthy statement of what a file actually contains — the URL is
+    not, since the site has served another division's file for a season that
+    hasn't started yet.
+    """
+    try:
+        text = content.decode("utf-8", errors="replace")
+    except Exception:
+        return None
+
+    lines = [ln for ln in text.splitlines() if ln.strip()]
+    if len(lines) < 2:
+        return None
+
+    header = [h.strip().strip('"') for h in lines[0].split(",")]
+    if "Div" not in header:
+        return None
+
+    idx = header.index("Div")
+    for line in lines[1:]:
+        fields = line.split(",")
+        if idx < len(fields):
+            value = fields[idx].strip().strip('"')
+            if value:
+                return value
+    return None
+
 
 def season_to_str(season_end_year: int) -> str:
     """
@@ -76,7 +120,11 @@ def download_csv(
     tier_digit = tier - 1  # tier 1 → E0 digit
     filename = raw_dir / f"{season_str}_E{tier_digit}.csv"
 
-    if filename.exists() and not force:
+    # The season in progress gains results every week, so a cached copy is
+    # stale by definition — and a bad one would otherwise be reused forever.
+    is_live_season = season_end_year >= current_season_end_year()
+
+    if filename.exists() and not force and not is_live_season:
         logger.debug("Already cached: %s", filename.name)
         return filename
 
@@ -111,6 +159,21 @@ def download_csv(
 
     if content.lstrip().startswith(b"<"):
         logger.warning("HTML error page returned for %s — skipping", url)
+        return None
+
+    # A 200 is not proof we got the division we asked for. When a season's
+    # file doesn't exist yet the site has answered with another division's
+    # data, which previously landed in the database under the wrong tier.
+    expected_code = TIER_TO_CODE[tier]
+    actual_code = division_code_in_csv(content)
+    if actual_code is not None and actual_code != expected_code:
+        logger.error(
+            "%s returned %s data, not %s — refusing to save it as tier %d",
+            url,
+            actual_code,
+            expected_code,
+            tier,
+        )
         return None
 
     raw_dir.mkdir(parents=True, exist_ok=True)
