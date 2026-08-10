@@ -18,6 +18,20 @@ previous_grounds:
 exile:
   - venue: "White Hart Lane, Tottenham Hotspur"
     seasons: "1940–1946"
+rivalries:
+  - opponent: "tottenham-hotspur-fc"
+    name: "The North London Derby"
+    note: >
+      Born from a contentious 1919 Football League vote. Arsenal, having
+      finished fifth in the Second Division in the last full pre-war season,
+      were elected to the expanded First Division ahead of Tottenham, who
+      had the stronger case by precedent as the previous season's First
+      Division club. The election — 18 votes to 8 — was decided not by league
+      table but by lobbying through the trade press; it remains the defining
+      episode in the rivalry's origin. Arsenal have played Tottenham's White
+      Hart Lane as a temporary home during WWII bombing repairs (1940-46),
+      cementing the proximity that makes the rivalry geographically as well
+      as historically rooted.
 ---
 
 ## Origins

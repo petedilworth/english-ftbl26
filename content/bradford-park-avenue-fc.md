@@ -13,6 +13,18 @@ exile:
     seasons: "early 1990s-1996"
 phoenix_of: "Bradford (Park Avenue) A.F.C."
 predecessor_folded: 1974
+rivalries:
+  - opponent: "bradford-city-fc"
+    name: "The Bradford (Wool City) derby"
+    note: >
+      An unusual origin: City's rapid early success after Manningham
+      RFC's 1903 conversion to association football pulled crowds away
+      from neighbouring rugby league side Bradford F.C. at Park Avenue —
+      pressure that led Park Avenue's own members to vote, 3-to-1, to
+      abandon rugby and follow City into association football in 1907.
+      The two met 56 times competitively between 1912 and Park Avenue's
+      exit from the Football League in 1970; the fixture survives today
+      as an annual friendly for the Tom Banks Memorial Trophy.
 ---
 
 ## Origins

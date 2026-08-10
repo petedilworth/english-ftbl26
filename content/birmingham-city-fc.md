@@ -16,6 +16,18 @@ points_deductions:
   - season_end_year: 2024
     points: 2
     reason: "Suspended sanction for an Owners' and Directors' Test breach — allowing individuals to acquire control without prior EFL approval"
+rivalries:
+  - opponent: "aston-villa-fc"
+    name: "The Second City derby"
+    note: >
+      First contested in 1879 between Villa and Small Heath Alliance —
+      Birmingham City's earlier name — which makes it one of English
+      football's oldest derbies, older than either club's current
+      identity. Villa Park and St Andrew's sit under two and a half miles
+      apart, and the two clubs have spent most of their history sharing
+      England's top two divisions, keeping the fixture a regular one
+      rather than a rarity. The "Second City" tag comes from
+      Birmingham's own long-standing claim to that title behind London.
 stadium: "St Andrew's"
 stadium_opened: 1906
 capacity: 29409

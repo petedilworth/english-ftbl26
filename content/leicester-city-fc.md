@@ -13,6 +13,18 @@ points_deductions:
   - season_end_year: 2026
     points: 6
     reason: "EFL Profitability and Sustainability breach for the three-year assessment period to 2023-24, exceeding the threshold by £20.8m; a separate Premier League charge covering an earlier period was dismissed on jurisdiction grounds after the club's relegation left the Premier League without standing to pursue it"
+rivalries:
+  - opponent: "nottingham-forest-fc"
+    name: "The East Midlands Derby"
+    note: >
+      Two major Victorian-era clubs separated by roughly twenty miles.
+      First met competitively on 24 October 1993, and have met 24 times
+      across three decades in competitive fixtures spanning Tiers 1 and 2.
+      Nottingham Forest's historical dominance — a dominant team in the
+      1970s-80s under Brian Clough — contrasts with Leicester's inconsistent
+      history and dramatic modern swings between promotion and financial
+      crisis. The rivalry has settled into a fixture that typically draws
+      Midlands attention when both clubs compete at the top levels.
 drops:
   - season: 2004
     note: >

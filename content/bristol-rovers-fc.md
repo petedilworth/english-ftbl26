@@ -15,6 +15,18 @@ exile:
   - venue: "Twerton Park, Bath"
     seasons: "1986-1996"
     distance_miles: 12
+rivalries:
+  - opponent: "bristol-city-fc"
+    name: "The Bristol derby"
+    note: >
+      Predates both clubs' current names: newly formed Bristol South End
+      (the future Bristol City) beat Eastville Rovers (the future Bristol
+      Rovers) 2–1 in a September 1894 friendly at St John's Lane, with
+      competitive meetings following within a couple of seasons as both
+      turned professional. It's usually read as a class divide as much as
+      a footballing one — Rovers rooted in the working-class, industrial
+      Eastville district north-east of the city, City in the more
+      prosperous Bedminster side to the south.
 rises:
   - season: 2016
     note: >
