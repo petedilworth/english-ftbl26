@@ -3,6 +3,18 @@
 <h1>{{ heading }}</h1>
 <p class="subtitle">{{ intro }}</p>
 
+{% if season_tabs and season_tabs|length > 1 %}
+<div class="map-chips season-tabs">
+  {% for tab in season_tabs %}
+  {% if tab.active %}
+  <span class="chip chip-active">{{ tab.label }}</span>
+  {% else %}
+  <a class="chip" href="{{ root }}/{{ tab.path }}">{{ tab.label }}</a>
+  {% endif %}
+  {% endfor %}
+</div>
+{% endif %}
+
 <div class="chart-holder">
   <svg viewBox="0 0 {{ width }} {{ height }}" preserveAspectRatio="xMidYMid meet">
     {% for bx in boundary_lines %}
@@ -14,7 +26,7 @@
     <text x="60" y="{{ plot_bottom }}" font-size="10" fill="#6b7683" text-anchor="end">{{ cap_min_label }}</text>
     <text x="64" y="{{ axis_y }}" font-size="10" fill="#6b7683" text-anchor="start">{{ x_min_label }}</text>
     <text x="{{ width - 20 }}" y="{{ axis_y }}" font-size="10" fill="#6b7683" text-anchor="end">{{ x_max_label }}</text>
-    <text x="{{ (width) / 2 }}" y="{{ axis_y }}" font-size="10" fill="#6b7683" text-anchor="middle">Overall league position, this season</text>
+    <text x="{{ (width) / 2 }}" y="{{ axis_y }}" font-size="10" fill="#6b7683" text-anchor="middle">Overall league position{% if season_label %}, {{ season_label }}{% endif %}</text>
 
     {% for p in points %}
     <circle cx="{{ p.cx }}" cy="{{ p.cy }}" r="5" style="fill: var(--tier-{{ p.tier }})"

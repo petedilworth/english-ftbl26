@@ -474,6 +474,8 @@ table.matrix.compact .matrix-highlight {
   cursor: pointer;
 }
 .chip-active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.chip[href] { text-decoration: none; color: inherit; }
+.season-tabs { margin-bottom: 16px; }
 .map-tier-chips { margin-bottom: 8px; }
 .chip .chip-dot {
   display: inline-block;

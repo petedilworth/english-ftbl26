@@ -791,7 +791,7 @@ class SiteBuilder:
                 "name": "Above and below their level",
                 "sub": "Clubs out of step with their own history",
             })
-        if self._capacity_points():
+        if self._capacity_points(self.seasons[-1]):
             entries.append({
                 "slug": "capacity",
                 "name": "Stadium size vs. league position",
@@ -1297,21 +1297,19 @@ class SiteBuilder:
             feature_key="rises",
         )
 
-    def _capacity_points(self) -> list[dict]:
+    def _capacity_points(self, season_end_year: int) -> list[dict]:
         """
         Clubs with a stadium capacity on record (from their story file),
-        each mapped to their overall pyramid position in the current
-        season. Only ~12 of 162 clubs have a story file yet, so this is
-        small by design rather than by bug - it grows as more are written.
+        each mapped to their overall pyramid position in the given season.
+        Only ~12 of 162 clubs have a story file yet, so this is small by
+        design rather than by bug - it grows as more are written.
 
-        Restricted to the current season specifically (not "each club's own
-        most recent season") because the chart draws this season's tier
-        boundary lines - a club plotted against an older season's position
-        would sit at the right x for a pyramid shape that no longer existed,
-        misaligned against boundaries that describe a different season. A
-        club currently outside Tiers 1-5 (e.g. relegated to Tier 6) simply
-        has no row this season and is excluded, same as everywhere else
-        "current" standing is used on the site.
+        Capacity itself is not season-scoped data - it's a one-off fact in
+        each club's story front-matter, not a table keyed by season - so a
+        club's capacity is the same on every season's page; only its plotted
+        position moves. A club with no standings row in Tiers 1-5 for the
+        given season (e.g. below the covered pyramid, or a still-unplayed
+        season) simply has no row and is excluded from that season's chart.
         """
         candidates = {
             cid: facts["capacity"]
@@ -1332,9 +1330,9 @@ class SiteBuilder:
                    ) AS overall_pos
             FROM standings s
             WHERE s.club_id IN ({placeholders})
-              AND s.season_end_year = (SELECT MAX(season_end_year) FROM standings)
+              AND s.season_end_year = ?
             """,
-            list(candidates),
+            list(candidates) + [season_end_year],
         ).fetchall()
 
         names = dict(self.conn.execute("SELECT club_id, canonical_name FROM club_trajectory"))
@@ -1353,63 +1351,103 @@ class SiteBuilder:
         return sorted(points, key=lambda p: p["overall_pos"])
 
     def _insight_capacity(self) -> None:
-        points = self._capacity_points()
-        if not points:
-            return
-
+        """
+        Renders one page per season - the current season at the original
+        /insights/capacity/ URL, plus up to five prior seasons at
+        /insights/capacity/<season-slug>/ - each plotting that season's own
+        positions against that season's own tier-boundary lines. Capacity
+        itself never changes between pages, since it isn't season-scoped
+        data; only the x-axis position of each point moves. A season with
+        no plottable points (e.g. none of the storied clubs had a Tiers 1-5
+        row that season) is skipped entirely - no page, no tab.
+        """
         import charts as charts_mod
 
+        candidate_years = list(reversed(self.seasons[-6:]))  # current, then up to 5 prior
         floors_by_year, max_pos = charts_mod.tier_floors(self.conn)
-        latest = max(floors_by_year)
-        boundaries = floors_by_year[latest]
-
-        caps = [p["capacity"] for p in points]
-        cap_min, cap_max = min(caps), max(caps)
-        # A little headroom so the extreme points aren't drawn on the frame.
-        # Clamped at 0 - a stadium can't hold a negative number of people,
-        # and with few points the raw min can be small enough that padding
-        # below it would otherwise cross zero.
-        pad = max(1, round((cap_max - cap_min) * 0.08))
-        cap_min, cap_max = max(0, cap_min - pad), cap_max + pad
-
-        W, H = 760, 380
-        PAD = {"top": 16, "right": 20, "bottom": 36, "left": 64}
-        span_x = max(1, max_pos - 1)
-        span_y = max(1, cap_max - cap_min)
-
-        def x(pos):
-            return PAD["left"] + (pos - 1) / span_x * (W - PAD["left"] - PAD["right"])
-
-        def y(cap):
-            return PAD["top"] + (1 - (cap - cap_min) / span_y) * (H - PAD["top"] - PAD["bottom"])
-
-        for p in points:
-            p["cx"] = round(x(p["overall_pos"]), 1)
-            p["cy"] = round(y(p["capacity"]), 1)
-
-        boundary_lines = [round(x(b + 0.5), 1) for b in boundaries]
         total_clubs = self.conn.execute("SELECT COUNT(*) FROM club_master").fetchone()[0]
 
-        self.render(
-            "insight_scatter.html", self.out / "insights" / "capacity" / "index.html", 2,
-            title="Stadium size vs. league position",
-            heading="Stadium size vs. league position",
-            intro=(
-                f"Ground capacity from the club stories written so far "
-                f"({len(points)} of {total_clubs} clubs) against each club's overall "
-                f"position across all five tiers this season. Dashed lines mark the "
-                f"boundary between divisions. This fills in as more stories are written."
-            ),
-            points=points,
-            boundary_lines=boundary_lines,
-            width=W, height=H,
-            plot_top=PAD["top"], plot_bottom=H - PAD["bottom"],
-            axis_y=H - PAD["bottom"] + 16,
-            x_min_label=1, x_max_label=max_pos,
-            cap_min_label=f"{cap_min:,}", cap_max_label=f"{cap_max:,}",
-            legend=[{"tier": t, "name": name, "key": t}
-                    for t, (_slug, name) in TIER_SLUGS.items()],
-        )
+        by_year = {}
+        for year in candidate_years:
+            points = self._capacity_points(year)
+            if points:
+                by_year[year] = points
+        if not by_year:
+            return
+
+        current_year = self.seasons[-1]
+
+        def page_path(year: int) -> str:
+            if year == current_year:
+                return "insights/capacity/index.html"
+            return f"insights/capacity/{season_slug(year)}/index.html"
+
+        tabs = [
+            {"label": season_label(year), "path": page_path(year), "year": year}
+            for year in by_year
+        ]
+
+        for year, points in by_year.items():
+            boundaries = floors_by_year.get(year, [])
+
+            caps = [p["capacity"] for p in points]
+            cap_min, cap_max = min(caps), max(caps)
+            # A little headroom so the extreme points aren't drawn on the frame.
+            # Clamped at 0 - a stadium can't hold a negative number of people,
+            # and with few points the raw min can be small enough that padding
+            # below it would otherwise cross zero.
+            pad = max(1, round((cap_max - cap_min) * 0.08))
+            cap_min, cap_max = max(0, cap_min - pad), cap_max + pad
+
+            W, H = 760, 380
+            PAD = {"top": 16, "right": 20, "bottom": 36, "left": 64}
+            span_x = max(1, max_pos - 1)
+            span_y = max(1, cap_max - cap_min)
+
+            def x(pos, span_x=span_x):
+                return PAD["left"] + (pos - 1) / span_x * (W - PAD["left"] - PAD["right"])
+
+            def y(cap, span_y=span_y, cap_min=cap_min):
+                return PAD["top"] + (1 - (cap - cap_min) / span_y) * (H - PAD["top"] - PAD["bottom"])
+
+            for p in points:
+                p["cx"] = round(x(p["overall_pos"]), 1)
+                p["cy"] = round(y(p["capacity"]), 1)
+
+            boundary_lines = [round(x(b + 0.5), 1) for b in boundaries]
+
+            is_current = year == current_year
+            out_path = self.out / page_path(year)
+            depth = 2 if is_current else 3
+
+            page_tabs = [
+                {"label": t["label"], "path": t["path"], "active": t["year"] == year}
+                for t in tabs
+            ]
+
+            self.render(
+                "insight_scatter.html", out_path, depth,
+                title=f"Stadium size vs. league position — {season_label(year)}",
+                heading="Stadium size vs. league position",
+                season_label=season_label(year),
+                season_tabs=page_tabs,
+                intro=(
+                    f"Ground capacity from the club stories written so far "
+                    f"({len(points)} of {total_clubs} clubs) against each club's overall "
+                    f"position across all five tiers in {season_label(year)}. Dashed lines "
+                    f"mark the boundary between divisions. This fills in as more stories "
+                    f"are written."
+                ),
+                points=points,
+                boundary_lines=boundary_lines,
+                width=W, height=H,
+                plot_top=PAD["top"], plot_bottom=H - PAD["bottom"],
+                axis_y=H - PAD["bottom"] + 16,
+                x_min_label=1, x_max_label=max_pos,
+                cap_min_label=f"{cap_min:,}", cap_max_label=f"{cap_max:,}",
+                legend=[{"tier": t, "name": name, "key": t}
+                        for t, (_slug, name) in TIER_SLUGS.items()],
+            )
 
     def _insight_natural_level(self) -> None:
         """

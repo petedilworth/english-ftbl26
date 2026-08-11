@@ -521,10 +521,53 @@ def test_capacity_insight_plots_a_club_with_capacity_and_current_standings(tmp_p
     assert "Stadium size vs" in (out / "insights" / "index.html").read_text()
 
 
-def test_capacity_insight_excludes_a_club_outside_the_current_season(tmp_path, monkeypatch):
-    # A club whose story has capacity but who last appeared in an older
-    # season (not the current one) must not be plotted against this
-    # season's tier-boundary lines - see the comment in _capacity_points.
+def _build_capacity_db(tmp_path, extra_rows=(), extra_clubs=()):
+    """
+    The shared fixture DB (test_digest._make_db) plus extra standings rows
+    and extra club_master rows, for tests that need seasons or clubs beyond
+    what the shared fixture provides. extra_rows are full 16-column
+    standings tuples; extra_clubs are (club_id, name, tier) triples.
+    """
+    db = _db_on_disk(tmp_path)
+    conn = sqlite3.connect(db)
+    for club_id, name, tier in extra_clubs:
+        conn.execute(
+            "INSERT INTO club_master VALUES (?,?,NULL,NULL,?)",
+            (club_id, name, tier),
+        )
+    for row in extra_rows:
+        conn.execute(
+            "INSERT INTO standings VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", row
+        )
+    trajectory.rebuild_trajectory(conn)
+    conn.commit()
+    conn.close()
+    return db
+
+
+def _build_site_with_content(tmp_path, monkeypatch, db, files: dict):
+    """Like _build_with_content, but against a caller-supplied db path."""
+    import shutil
+    import site_build as sb
+
+    content_dir = tmp_path / "content"
+    content_dir.mkdir()
+    for club_id, text in files.items():
+        (content_dir / f"{club_id}.md").write_text(text, encoding="utf-8")
+    real_root = Path(__file__).parent.parent
+    shutil.copytree(real_root / "templates", tmp_path / "templates")
+    shutil.copytree(real_root / "static", tmp_path / "static")
+    monkeypatch.setattr(sb, "PROJECT_ROOT", tmp_path)
+    out = tmp_path / "site"
+    SiteBuilder(db, out, charts_enabled=False).build()
+    return out
+
+
+def test_capacity_insight_shows_a_club_only_on_its_own_seasons_page(tmp_path, monkeypatch):
+    # A club whose story has capacity but who only appeared in an older
+    # season must not be plotted on the CURRENT season's page (it has no
+    # row there) - but with the season selector, it should still show up
+    # on its own season's page, since capacity itself isn't season-scoped.
     old_season_story = """---
 founded: 1990
 capacity: 5000
@@ -532,35 +575,104 @@ capacity: 5000
 ## Origins
 Test club with a stale standings record.
 """
-    import shutil
-    import site_build as sb
-
-    db = _db_on_disk(tmp_path)
-    conn = sqlite3.connect(db)
-    conn.execute(
-        "INSERT INTO club_master VALUES ('stale-fc','Stale FC',NULL,NULL,5)"
+    # Shared fixture DB spans 2022-2025 (four seasons); 2020 lands well
+    # inside a 6-season "current + 5 prior" window once added.
+    db = _build_capacity_db(
+        tmp_path,
+        extra_clubs=[("stale-fc", "Stale FC", 5)],
+        extra_rows=[(
+            2020, 5, "National League", "stale-fc", "Stale FC",
+            10, 46, 15, 10, 21, 50, 60, -10, 55, "Stayed", "test",
+        )],
     )
-    conn.execute(
-        "INSERT INTO standings VALUES (2020,5,'National League','stale-fc','Stale FC',"
-        "10,46,15,10,21,50,60,-10,55,'Stayed','test')"
+    out = _build_site_with_content(
+        tmp_path, monkeypatch, db, {"giant-fc": RICH_STORY, "stale-fc": old_season_story}
     )
-    trajectory.rebuild_trajectory(conn)
-    conn.commit()
-    conn.close()
 
-    content_dir = tmp_path / "content"
-    content_dir.mkdir()
-    (content_dir / "giant-fc.md").write_text(RICH_STORY, encoding="utf-8")
-    (content_dir / "stale-fc.md").write_text(old_season_story, encoding="utf-8")
-    real_root = Path(__file__).parent.parent
-    shutil.copytree(real_root / "templates", tmp_path / "templates")
-    shutil.copytree(real_root / "static", tmp_path / "static")
-    monkeypatch.setattr(sb, "PROJECT_ROOT", tmp_path)
+    current_page = (out / "insights" / "capacity" / "index.html").read_text()
+    assert current_page.count("<circle") == 1  # giant-fc only, not stale-fc
+    assert "Stale FC" not in current_page
 
-    out = tmp_path / "site"
-    SiteBuilder(db, out, charts_enabled=False).build()
-    page = (out / "insights" / "capacity" / "index.html").read_text()
-    assert page.count("<circle") == 1  # giant-fc only, not stale-fc
+    own_season_page = (out / "insights" / "capacity" / season_slug(2020) / "index.html").read_text()
+    assert "Stale FC" in own_season_page
+    assert "5,000" in own_season_page  # same capacity as it would show anywhere
+
+
+def test_capacity_insight_omits_a_season_older_than_the_past_five(tmp_path, monkeypatch):
+    # Only the current season plus its five predecessors get pages/tabs;
+    # a club whose only row is further back than that must not appear
+    # anywhere, and no page should exist for its season.
+    old_story = """---
+capacity: 3000
+---
+## Origins
+Older than the six-season window.
+"""
+    # Shared DB seasons: 2022-2025 (4 distinct years). Adding 2019-2021
+    # brings the total to 7 distinct seasons; the window (current + 5
+    # prior) is then the six most recent - 2020-2025 - dropping 2019.
+    # filler-fc pads the season count without ever being a capacity
+    # candidate (it gets no content file), so 2020 exists as a season in
+    # its own right rather than only via edge-fc.
+    db = _build_capacity_db(
+        tmp_path,
+        extra_clubs=[
+            ("edge-fc", "Edge FC", 5),
+            ("ancient-fc", "Ancient FC", 5),
+            ("filler-fc", "Filler FC", 5),
+        ],
+        extra_rows=[
+            (2021, 5, "National League", "edge-fc", "Edge FC",
+             5, 46, 15, 10, 21, 50, 60, -10, 55, "Stayed", "test"),
+            (2019, 5, "National League", "ancient-fc", "Ancient FC",
+             5, 46, 15, 10, 21, 50, 60, -10, 55, "Stayed", "test"),
+            (2020, 5, "National League", "filler-fc", "Filler FC",
+             5, 46, 15, 10, 21, 50, 60, -10, 55, "Stayed", "test"),
+        ],
+    )
+    out = _build_site_with_content(
+        tmp_path, monkeypatch, db, {"edge-fc": old_story, "ancient-fc": old_story}
+    )
+
+    # 2021 is inside the six-season window - it gets a page, and edge-fc
+    # is on it.
+    edge_page = (out / "insights" / "capacity" / season_slug(2021) / "index.html").read_text()
+    assert "Edge FC" in edge_page
+
+    # 2019 falls outside the window entirely - no page, and no tab on any
+    # other season's page links to it.
+    assert not (out / "insights" / "capacity" / season_slug(2019) / "index.html").exists()
+    assert season_slug(2019) not in edge_page
+    assert "Ancient FC" not in edge_page
+
+
+def test_capacity_insight_tabs_omit_a_season_with_no_plottable_points(tmp_path, monkeypatch):
+    # A season none of the storied clubs have a Tiers 1-5 row in (here,
+    # the shared fixture's 2023 season has no *other* standings for our
+    # single custom club) must not get its own page or tab link, even
+    # though it exists in the standings table via an unrelated club.
+    gap_story = """---
+capacity: 6000
+---
+## Origins
+Present in some seasons, absent in others.
+"""
+    db = _build_capacity_db(
+        tmp_path,
+        extra_clubs=[("gap-fc", "Gap FC", 5)],
+        extra_rows=[
+            (2024, 5, "National League", "gap-fc", "Gap FC",
+             3, 46, 15, 10, 21, 50, 60, -10, 55, "Stayed", "test"),
+            # No gap-fc row for 2023, even though 2023 exists in the
+            # standings table (via the shared fixture's other clubs).
+        ],
+    )
+    out = _build_site_with_content(tmp_path, monkeypatch, db, {"gap-fc": gap_story})
+
+    gap_2024_page = (out / "insights" / "capacity" / season_slug(2024) / "index.html").read_text()
+    assert "Gap FC" in gap_2024_page
+    assert season_slug(2023) not in gap_2024_page  # no tab for the gap season
+    assert not (out / "insights" / "capacity" / season_slug(2023) / "index.html").exists()
 
 
 def test_capacity_insight_absent_when_no_capacity_data(tmp_path, monkeypatch):
