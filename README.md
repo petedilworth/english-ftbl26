@@ -87,8 +87,10 @@ src/
   entities.py   Manages club_master table and name resolution
   status.py     Assigns promotion/relegation status (rules in RULES dict)
   trajectory.py Builds derived club_trajectory table
+  finances.py   Loads club_finances from CSV (accounts data)
   pipeline.py   Orchestrates all steps end-to-end
 club_master.csv Canonical club list — manually maintained seed file
+club_finances.csv Club accounts by season — manually maintained seed file
 ```
 
 ## Database schema
@@ -141,6 +143,48 @@ Derived table — rebuilt on every pipeline run.
 | `total_promotions` | INT |
 | `total_relegations` | INT |
 | `yo_yo_score` | REAL |
+
+### `club_finances`
+Seeded from `club_finances.csv`, keyed `(club_id, season_end_year)`. Unlike
+the story front-matter fields, this covers **every club regardless of whether
+its story has been written**, so the financial charts aren't limited to the
+~50 clubs with a `content/*.md` file.
+
+Figures come from statutory accounts filed at **Companies House**, which is
+Crown copyright published under the [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)
+and so may be republished with attribution. **Nothing here is an estimate.**
+Player-salary aggregators (Capology, FBref's wage pages, Transfermarkt) are
+deliberately not used: their terms forbid republication, and their figures are
+estimates and a different quantity from the accounts.
+
+| Column | Notes |
+|---|---|
+| `disclosure` | `full` · `small_company` · `not_filed` · `dissolved` |
+| `turnover`, `staff_costs` | Whole pounds; blank when not disclosed |
+| `staff_costs_definition` | `excl_amortisation` · `incl_amortisation` |
+| `revenue_matchday/broadcast/commercial` | Segmental note, where given |
+| `profit_before_tax`, `net_debt` | Whole pounds; may be negative |
+| `company_number`, `entity_name`, `consolidation_level` | Which entity filed |
+| `period_start`, `period_end`, `period_months` | The actual accounting period |
+| `source_url`, `filing_date`, `flags` | Provenance; `flags` is a JSON array |
+
+Three things are recorded per row because they silently corrupt the data
+otherwise:
+
+- **"Wages" is ambiguous by 20–40%.** The staff-costs note covers all
+  employees and excludes amortisation of transfer fees; some sources include
+  it. `staff_costs_definition` says which a row holds.
+- **Which entity filed changes the answer.** A holding company consolidating
+  a stadium or media arm reports different revenue from the club company, and
+  insolvency starts a new company number, breaking a series mid-window.
+- **Not every period is 12 months.** Year-end changes produce 13-month periods
+  that inflate costs against unchanged revenue; `period_months` surfaces it.
+
+Non-disclosure is stored as a **state, not a null** — a club declining to
+publish its turnover is itself a finding, and roughly a third of League One
+and League Two clubs file under the small-company regime. Rows that
+contradict themselves (a non-disclosing club carrying figures, or staff costs
+with no definition) are rejected at load with a warning rather than imported.
 
 ## Adjusting promotion/relegation rules
 

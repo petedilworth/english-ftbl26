@@ -1033,3 +1033,232 @@ A club with a ghostly rival.
     page = (out / "insights" / "rivalries" / "index.html").read_text()
     assert "Ghost FC" in page
     assert '<a href="../../team/ghost-fc/index.html">Ghost FC</a>' not in page
+
+
+# ── Club finances: loader and the financial scatter metrics ──────────────
+# Figures come from statutory accounts. The two things that silently corrupt
+# this data are recording a figure against the wrong legal entity, and mixing
+# incompatible definitions of "wages" (the staff-costs note excludes transfer
+# amortisation; some sources include it, a ~20-40% difference). Both are
+# columns, and the loader refuses rows that contradict themselves.
+
+import finances
+
+
+def _finances_csv(tmp_path, rows: list[dict]) -> Path:
+    """Write a club_finances.csv with the canonical column order."""
+    import csv as csv_mod
+
+    path = tmp_path / "club_finances.csv"
+    with path.open("w", newline="", encoding="utf-8") as fh:
+        writer = csv_mod.writer(fh)
+        writer.writerow(finances.COLUMNS)
+        for row in rows:
+            writer.writerow([row.get(c, "") for c in finances.COLUMNS])
+    return path
+
+
+def _full_row(club_id, season, **over):
+    row = {
+        "club_id": club_id, "season_end_year": season,
+        "company_number": "01234567", "entity_name": f"{club_id} Ltd",
+        "consolidation_level": "club", "period_start": f"{season - 1}-07-01",
+        "period_end": f"{season}-06-30", "period_months": 12,
+        "disclosure": "full", "turnover": 10_000_000,
+        "staff_costs": 6_000_000, "staff_costs_definition": "excl_amortisation",
+        "source_url": "https://example.invalid", "filing_date": f"{season}-12-01",
+    }
+    row.update(over)
+    return row
+
+
+def _seeded(tmp_path, rows):
+    db = _db_on_disk(tmp_path)
+    conn = sqlite3.connect(db)
+    loaded = finances.seed_club_finances(conn, _finances_csv(tmp_path, rows))
+    conn.commit()
+    return db, conn, loaded
+
+
+def test_finances_csv_round_trips_into_the_table(tmp_path):
+    _db, conn, loaded = _seeded(tmp_path, [_full_row("giant-fc", 2024)])
+    assert loaded == 1
+    row = conn.execute(
+        "SELECT turnover, staff_costs, staff_costs_definition, entity_name"
+        " FROM club_finances WHERE club_id='giant-fc' AND season_end_year=2024"
+    ).fetchone()
+    assert row == (10_000_000, 6_000_000, "excl_amortisation", "giant-fc Ltd")
+
+
+def test_finances_row_absent_from_the_csv_is_removed(tmp_path):
+    # The CSV is the single source of truth, as for club_master.
+    db, conn, _ = _seeded(tmp_path, [_full_row("giant-fc", 2024),
+                                     _full_row("giant-fc", 2023)])
+    assert conn.execute("SELECT COUNT(*) FROM club_finances").fetchone()[0] == 2
+    finances.seed_club_finances(conn, _finances_csv(tmp_path, [_full_row("giant-fc", 2024)]))
+    remaining = conn.execute(
+        "SELECT season_end_year FROM club_finances"
+    ).fetchall()
+    assert remaining == [(2024,)]
+
+
+def test_finances_rejects_a_non_disclosing_row_that_carries_figures(tmp_path):
+    # A club that filed small-company accounts cannot also have published a
+    # turnover; keeping both would attribute real money to a club that never
+    # disclosed any.
+    _db, conn, loaded = _seeded(tmp_path, [
+        _full_row("giant-fc", 2024, disclosure="small_company"),
+    ])
+    assert loaded == 0
+    assert conn.execute("SELECT COUNT(*) FROM club_finances").fetchone()[0] == 0
+
+
+def test_finances_rejects_staff_costs_without_a_definition(tmp_path):
+    _db, _conn, loaded = _seeded(tmp_path, [
+        _full_row("giant-fc", 2024, staff_costs_definition=""),
+    ])
+    assert loaded == 0
+
+
+def test_finances_rejects_a_club_not_in_club_master(tmp_path):
+    _db, _conn, loaded = _seeded(tmp_path, [_full_row("nonexistent-fc", 2024)])
+    assert loaded == 0
+
+
+def test_finances_keeps_a_non_disclosure_row_as_a_state(tmp_path):
+    # Non-disclosure is a finding, not a gap: the row is kept, with no figures.
+    _db, conn, loaded = _seeded(tmp_path, [
+        _full_row("giant-fc", 2024, disclosure="small_company",
+                  turnover="", staff_costs="", staff_costs_definition=""),
+    ])
+    assert loaded == 1
+    assert conn.execute(
+        "SELECT disclosure, turnover FROM club_finances"
+    ).fetchone() == ("small_company", None)
+
+
+def _build_with_finances(tmp_path, monkeypatch, rows, files=None):
+    db = _db_on_disk(tmp_path)
+    conn = sqlite3.connect(db)
+    finances.seed_club_finances(conn, _finances_csv(tmp_path, rows))
+    conn.commit()
+    conn.close()
+    # _finances_csv wrote into tmp_path, which _build_site_with_content also
+    # uses as PROJECT_ROOT - harmless, the site build never reads the CSV.
+    return _build_site_with_content(tmp_path, monkeypatch, db, files or {"giant-fc": RICH_STORY})
+
+
+def test_revenue_metric_renders_its_own_page(tmp_path, monkeypatch):
+    out = _build_with_finances(tmp_path, monkeypatch, [_full_row("giant-fc", 2025)])
+    page = (out / "insights" / "finances" / "revenue" / "index.html").read_text()
+    assert page.count("<circle") == 1
+    assert "£10.0m revenue" in page
+    assert "Revenue vs. league position" in (out / "insights" / "index.html").read_text()
+
+
+def test_log_scale_keeps_a_club_three_orders_smaller_inside_the_frame(tmp_path, monkeypatch):
+    # Revenue spans ~£1.5m in the National League to £700m+ at the top. On a
+    # linear axis everything below the Premier League collapses onto the
+    # baseline, which is why these metrics are logarithmic.
+    db = _build_capacity_db(
+        tmp_path,
+        extra_clubs=[("tiny-fc", "Tiny FC", 5), ("mid-fc", "Mid FC", 3)],
+        extra_rows=[
+            (2025, 5, "National League", "tiny-fc", "Tiny FC",
+             12, 46, 15, 10, 21, 50, 60, -10, 55, "Stayed", "test"),
+            (2025, 3, "League One", "mid-fc", "Mid FC",
+             6, 46, 18, 10, 18, 55, 55, 0, 64, "Stayed", "test"),
+        ],
+    )
+    conn = sqlite3.connect(db)
+    finances.seed_club_finances(conn, _finances_csv(tmp_path, [
+        _full_row("giant-fc", 2025, turnover=600_000_000, staff_costs=300_000_000),
+        _full_row("mid-fc", 2025, turnover=10_000_000, staff_costs=6_000_000),
+        _full_row("tiny-fc", 2025, turnover=1_500_000, staff_costs=1_100_000),
+    ]))
+    conn.commit()
+    conn.close()
+    out = _build_site_with_content(tmp_path, monkeypatch, db, {"giant-fc": RICH_STORY})
+
+    page = (out / "insights" / "finances" / "revenue" / "index.html").read_text()
+    by_name = {
+        m.group(2): float(m.group(1))
+        for m in re.finditer(
+            r'circle cx="[\d.]+" cy="([\d.-]+)"[^>]*>[^<]*<title>([A-Za-z ]+?) —', page
+        )
+    }
+    assert len(by_name) == 3
+    # Frame runs from plot_top=16 to plot_bottom=344.
+    assert all(16 <= cy <= 344 for cy in by_name.values())
+    # The discriminating case: on a linear axis a £10m club against a £600m
+    # maximum sits at ~1.7% of the range, i.e. crushed onto the baseline.
+    # Logarithmic spacing puts it near the middle instead.
+    assert by_name["Mid FC"] < 300, "mid-sized club collapsed onto the baseline"
+    assert by_name["Giant FC"] < by_name["Mid FC"] < by_name["Tiny FC"]
+
+
+def test_profit_metric_plots_a_loss_below_the_zero_line(tmp_path, monkeypatch):
+    out = _build_with_finances(tmp_path, monkeypatch, [
+        _full_row("giant-fc", 2025, profit_before_tax=-20_000_000),
+    ])
+    page = (out / "insights" / "finances" / "profit" / "index.html").read_text()
+    zero_y = float(re.search(r'stroke="#c8ced6"', page) and
+                   re.search(r'y1="([\d.]+)" x2="\d+" y2="[\d.]+"\s*\n?\s*stroke="#c8ced6"', page).group(1))
+    point_y = float(re.search(r'circle cx="[\d.]+" cy="([\d.-]+)"', page).group(1))
+    assert point_y > zero_y  # SVG y grows downward, so a loss sits below
+    assert "−£20.0m" in page
+
+
+def test_wage_ratio_is_derived_and_shows_the_benchmark(tmp_path, monkeypatch):
+    # Two clubs either side of UEFA's 70% line, so the benchmark is on-scale.
+    db = _build_capacity_db(
+        tmp_path,
+        extra_clubs=[("thrifty-fc", "Thrifty FC", 3)],
+        extra_rows=[(2025, 3, "League One", "thrifty-fc", "Thrifty FC",
+                     12, 46, 15, 10, 21, 50, 60, -10, 55, "Stayed", "test")],
+    )
+    conn = sqlite3.connect(db)
+    finances.seed_club_finances(conn, _finances_csv(tmp_path, [
+        _full_row("giant-fc", 2025, turnover=10_000_000, staff_costs=7_300_000),
+        _full_row("thrifty-fc", 2025, turnover=10_000_000, staff_costs=5_000_000),
+    ]))
+    conn.commit()
+    conn.close()
+    out = _build_site_with_content(tmp_path, monkeypatch, db, {"giant-fc": RICH_STORY})
+
+    page = (out / "insights" / "finances" / "wage-ratio" / "index.html").read_text()
+    assert "73%" in page and "50%" in page   # derived, not stored
+    assert "UEFA benchmark" in page
+
+
+def test_wage_ratio_absent_when_an_input_is_missing(tmp_path, monkeypatch):
+    # With no staff_costs there is nothing to divide, so no page at all.
+    out = _build_with_finances(
+        tmp_path, monkeypatch,
+        [_full_row("giant-fc", 2025, staff_costs="", staff_costs_definition="")],
+    )
+    assert not (out / "insights" / "finances" / "wage-ratio" / "index.html").exists()
+    # ...but revenue, which only needs turnover, still renders.
+    assert (out / "insights" / "finances" / "revenue" / "index.html").exists()
+
+
+def test_capacity_urls_are_unchanged_by_the_metric_selector(tmp_path, monkeypatch):
+    # Regression guard: the insights index links /insights/capacity/, and the
+    # season pages were an established contract before financial metrics existed.
+    out = _build_with_finances(tmp_path, monkeypatch, [_full_row("giant-fc", 2025)])
+    assert (out / "insights" / "capacity" / "index.html").exists()
+    assert (out / "insights" / "capacity" / season_slug(2024) / "index.html").exists()
+    page = (out / "insights" / "capacity" / "index.html").read_text()
+    assert "8,696 capacity" in page          # tooltip format unchanged
+    assert "Stadium capacity" in page        # ...and it now offers the metric chips
+    assert "Revenue" in page
+
+
+def test_insights_tile_appears_when_only_an_older_season_has_data(tmp_path, monkeypatch):
+    # The tile used to be gated on the current season alone, so a metric with
+    # data only in earlier seasons built its pages but vanished from the index.
+    out = _build_with_finances(tmp_path, monkeypatch, [_full_row("giant-fc", 2023)])
+    index = (out / "insights" / "index.html").read_text()
+    assert "Revenue vs. league position" in index
+    assert (out / "insights" / "finances" / "revenue" / season_slug(2023) / "index.html").exists()
+    assert not (out / "insights" / "finances" / "revenue" / "index.html").exists()

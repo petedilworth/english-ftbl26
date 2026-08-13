@@ -12,6 +12,7 @@ present. Links are relative so the site works at any base path
 
 import argparse
 import logging
+import math
 import shutil
 import sqlite3
 import sys
@@ -50,6 +51,103 @@ STATUS_PRESENTATION = {
 IN_PROGRESS_STATUS = "In progress"
 
 DEFAULT_COLOR = "#1a5c9a"
+
+
+def _fmt_money(value: float) -> str:
+    """Money at football scale: £661.0m, £8.9m, £450k. Sign kept for losses."""
+    sign = "−" if value < 0 else ""
+    v = abs(value)
+    if v >= 1_000_000:
+        return f"{sign}£{v / 1_000_000:.1f}m"
+    if v >= 1_000:
+        return f"{sign}£{v / 1_000:.0f}k"
+    return f"{sign}£{v:,.0f}"
+
+
+# The scatter insight plots one metric against overall league position.
+# Each entry says where the value comes from, how the y-axis should behave
+# and how to write the number down.
+#
+# Scales are not cosmetic. Revenue and wages span roughly £1.5m in the
+# National League to £700m+ at Manchester United - close to three orders of
+# magnitude - so a linear axis flattens everything below the Premier League
+# onto the baseline; those are logarithmic. Profit and net debt both go
+# negative (a loss, or net cash), which log cannot represent at all, so they
+# use a signed linear axis with a zero line. Capacity keeps its original
+# linear behaviour clamped at zero.
+METRICS = {
+    "capacity": {
+        "label": "Stadium capacity",
+        "heading": "Stadium size vs. league position",
+        "sub": "Does a bigger ground mean a higher division?",
+        "base": "insights/capacity",
+        "source": "facts",
+        "field": "capacity",
+        "scale": "linear",
+        "format": lambda v: f"{int(v):,}",
+        "noun": "capacity",
+    },
+    "revenue": {
+        "label": "Revenue",
+        "heading": "Revenue vs. league position",
+        "sub": "What clubs earn, against where they finish",
+        "base": "insights/finances/revenue",
+        "source": "finances",
+        "field": "turnover",
+        "scale": "log",
+        "format": _fmt_money,
+        "noun": "revenue",
+    },
+    "wages": {
+        "label": "Wage bill",
+        "heading": "Wage bill vs. league position",
+        "sub": "Staff costs from the accounts, against where they finish",
+        "base": "insights/finances/wages",
+        "source": "finances",
+        "field": "staff_costs",
+        "scale": "log",
+        "format": _fmt_money,
+        "noun": "wage bill",
+    },
+    "wage-ratio": {
+        "label": "Wages ÷ revenue",
+        "heading": "Wage bill as a share of revenue vs. league position",
+        "sub": "The overreach metric, comparable across every tier",
+        "base": "insights/finances/wage-ratio",
+        "source": "finances",
+        "field": "wage_ratio",
+        "scale": "linear",
+        "format": lambda v: f"{v:.0f}%",
+        "noun": "wages as a share of revenue",
+        # UEFA treats 70% as the outer edge of sustainable.
+        "benchmark": {"value": 70.0, "label": "70% — UEFA benchmark"},
+    },
+    "profit": {
+        "label": "Profit / loss",
+        "heading": "Profit and loss vs. league position",
+        "sub": "Who makes money, and who does not",
+        "base": "insights/finances/profit",
+        "source": "finances",
+        "field": "profit_before_tax",
+        "scale": "signed",
+        "format": _fmt_money,
+        "noun": "profit before tax",
+    },
+    "net-debt": {
+        "label": "Net debt",
+        "heading": "Net debt vs. league position",
+        "sub": "What clubs owe — negative means net cash",
+        "base": "insights/finances/net-debt",
+        "source": "finances",
+        "field": "net_debt",
+        "scale": "signed",
+        "format": _fmt_money,
+        "noun": "net debt",
+    },
+}
+
+# Capacity keeps the URL it has always had; the insights index links it.
+LEGACY_METRIC = "capacity"
 
 
 def season_slug(year: int) -> str:
@@ -230,6 +328,9 @@ class SiteBuilder:
         self.trajectory_cols = {
             r[1] for r in self.conn.execute("PRAGMA table_info(club_trajectory)")
         }
+        # Same reasoning for club_finances, which a checkout may predate
+        # entirely. Resolved lazily on first use, then cached.
+        self._finances_table: bool | None = None
         self.seasons = [
             r[0] for r in self.conn.execute(
                 "SELECT DISTINCT season_end_year FROM standings ORDER BY season_end_year"
@@ -791,12 +892,18 @@ class SiteBuilder:
                 "name": "Above and below their level",
                 "sub": "Clubs out of step with their own history",
             })
-        if self._capacity_points(self.seasons[-1]):
-            entries.append({
-                "slug": "capacity",
-                "name": "Stadium size vs. league position",
-                "sub": "Does a bigger ground mean a higher division?",
-            })
+        # One tile per metric that has data in *any* season of the window.
+        # Testing only the current season used to hide the tile whenever the
+        # newest season happened to be empty, even though the pages for older
+        # seasons had been built and were reachable.
+        window = self.seasons[-6:]
+        for key, metric in METRICS.items():
+            if any(self._metric_points(key, year) for year in window):
+                entries.append({
+                    "slug": metric["base"].removeprefix("insights/"),
+                    "name": metric["heading"],
+                    "sub": metric["sub"],
+                })
         boom_bust_events = self._boom_bust_events()
         if boom_bust_events:
             entries.append({
@@ -840,7 +947,7 @@ class SiteBuilder:
         self._insight_fallen_giants()
         self._insight_records()
         self._insight_timeline()
-        self._insight_capacity()
+        self._insight_scatter()
         self._insight_boom_and_bust(boom_bust_events)
         self._insight_the_drop(movement_matches)
         self._insight_the_rise(movement_matches)
@@ -1297,29 +1404,135 @@ class SiteBuilder:
             feature_key="rises",
         )
 
-    def _capacity_points(self, season_end_year: int) -> list[dict]:
+    def _has_finances(self) -> bool:
         """
-        Clubs with a stadium capacity on record (from their story file),
-        each mapped to their overall pyramid position in the given season.
-        Only ~12 of 162 clubs have a story file yet, so this is small by
-        design rather than by bug - it grows as more are written.
+        The committed database can predate club_finances, so the financial
+        metrics degrade to absent rather than raising - same approach as
+        trajectory_cols for the natural-level columns.
+        """
+        if self._finances_table is None:
+            self._finances_table = bool(self.conn.execute(
+                "SELECT 1 FROM sqlite_master WHERE type='table' AND name='club_finances'"
+            ).fetchone())
+        return self._finances_table
 
-        Capacity itself is not season-scoped data - it's a one-off fact in
-        each club's story front-matter, not a table keyed by season - so a
-        club's capacity is the same on every season's page; only its plotted
-        position moves. A club with no standings row in Tiers 1-5 for the
-        given season (e.g. below the covered pyramid, or a still-unplayed
-        season) simply has no row and is excluded from that season's chart.
+    def _metric_values(self, metric_key: str, season_end_year: int) -> dict[str, dict]:
         """
-        candidates = {
-            cid: facts["capacity"]
-            for cid, facts in self.club_facts.items()
-            if isinstance(facts.get("capacity"), (int, float))
+        {club_id: {"value": float, "extra": {...}}} for one metric in one
+        season. Only clubs with a real figure are returned; non-disclosure
+        is counted separately by _disclosure_counts() rather than plotted.
+        """
+        metric = METRICS[metric_key]
+
+        if metric["source"] == "facts":
+            # Not season-scoped: a ground's capacity is one fact in the club's
+            # story front-matter, so the same value appears on every season's
+            # page and only the plotted position moves.
+            return {
+                cid: {"value": float(facts[metric["field"]]), "extra": {}}
+                for cid, facts in self.club_facts.items()
+                if isinstance(facts.get(metric["field"]), (int, float))
+            }
+
+        if not self._has_finances():
+            return {}
+
+        rows = self.conn.execute(
+            """
+            SELECT club_id, turnover, staff_costs, profit_before_tax, net_debt,
+                   revenue_matchday, revenue_broadcast, revenue_commercial,
+                   staff_costs_definition, entity_name, period_months
+            FROM club_finances
+            WHERE season_end_year = ? AND disclosure = 'full'
+            """,
+            (season_end_year,),
+        ).fetchall()
+
+        field = metric["field"]
+        values: dict[str, dict] = {}
+        for (club_id, turnover, staff_costs, profit, net_debt,
+             matchday, broadcast, commercial, definition,
+             entity_name, period_months) in rows:
+            if field == "wage_ratio":
+                if not turnover or staff_costs is None:
+                    continue
+                value = staff_costs / turnover * 100
+            else:
+                raw = {
+                    "turnover": turnover,
+                    "staff_costs": staff_costs,
+                    "profit_before_tax": profit,
+                    "net_debt": net_debt,
+                }[field]
+                if raw is None:
+                    continue
+                value = float(raw)
+
+            extra = {}
+            if field == "turnover" and any(
+                x is not None for x in (matchday, broadcast, commercial)
+            ):
+                parts = [
+                    (name, amount)
+                    for name, amount in (("matchday", matchday),
+                                         ("broadcast", broadcast),
+                                         ("commercial", commercial))
+                    if amount is not None
+                ]
+                extra["breakdown"] = " · ".join(
+                    f"{name} {_fmt_money(amount)}" for name, amount in parts
+                )
+            if field in ("staff_costs", "wage_ratio") and definition:
+                extra["definition"] = definition.replace("_", " ")
+            # A period that isn't 12 months long isn't comparable with one
+            # that is, so say so rather than letting it pass as like-for-like.
+            if period_months and period_months != 12:
+                extra["period"] = f"{period_months}-month period"
+            if entity_name:
+                extra["entity"] = entity_name
+
+            values[club_id] = {"value": value, "extra": extra}
+        return values
+
+    def _disclosure_counts(self, season_end_year: int) -> dict:
+        """
+        How many clubs in a season published figures at all. A club filing
+        under the small-company regime hasn't gone missing - it has declined
+        to say - and that distinction is worth showing rather than hiding in
+        a gap on the chart.
+        """
+        in_season = self.conn.execute(
+            "SELECT COUNT(*) FROM standings WHERE season_end_year = ? AND tier <= 5",
+            (season_end_year,),
+        ).fetchone()[0]
+        if not self._has_finances():
+            return {"in_season": in_season, "disclosed": 0, "withheld": 0}
+
+        rows = dict(self.conn.execute(
+            """
+            SELECT CASE WHEN disclosure = 'full' THEN 'disclosed' ELSE 'withheld' END,
+                   COUNT(*)
+            FROM club_finances WHERE season_end_year = ? GROUP BY 1
+            """,
+            (season_end_year,),
+        ).fetchall())
+        return {
+            "in_season": in_season,
+            "disclosed": rows.get("disclosed", 0),
+            "withheld": rows.get("withheld", 0),
         }
-        if not candidates:
+
+    def _metric_points(self, metric_key: str, season_end_year: int) -> list[dict]:
+        """
+        One plottable point per club that has both a value for this metric
+        and a Tier 1-5 standings row in this season. A club outside the
+        covered pyramid that season simply has no row and is left out.
+        """
+        values = self._metric_values(metric_key, season_end_year)
+        if not values:
             return []
 
-        placeholders = ",".join("?" * len(candidates))
+        placeholders = ",".join("?" * len(values))
         rows = self.conn.execute(
             f"""
             SELECT s.club_id, s.tier, s.position,
@@ -1332,12 +1545,14 @@ class SiteBuilder:
             WHERE s.club_id IN ({placeholders})
               AND s.season_end_year = ?
             """,
-            list(candidates) + [season_end_year],
+            list(values) + [season_end_year],
         ).fetchall()
 
         names = dict(self.conn.execute("SELECT club_id, canonical_name FROM club_trajectory"))
+        fmt = METRICS[metric_key]["format"]
         points = []
         for club_id, tier, position, overall_pos in rows:
+            entry = values[club_id]
             points.append({
                 "club_id": club_id,
                 "name": names.get(club_id, club_id),
@@ -1346,108 +1561,184 @@ class SiteBuilder:
                 "division_name": TIER_SLUGS.get(tier, (None, f"Tier {tier}"))[1],
                 "position": position,
                 "overall_pos": overall_pos,
-                "capacity": int(candidates[club_id]),
+                "value": entry["value"],
+                "value_label": fmt(entry["value"]),
+                "extra": entry["extra"],
             })
         return sorted(points, key=lambda p: p["overall_pos"])
 
-    def _insight_capacity(self) -> None:
+    # Kept as a thin alias: the insights index and its tests refer to the
+    # capacity chart by name, and it is still the metric linked from there.
+    def _capacity_points(self, season_end_year: int) -> list[dict]:
+        return self._metric_points(LEGACY_METRIC, season_end_year)
+
+    @staticmethod
+    def _y_axis(values: list[float], scale: str):
         """
-        Renders one page per season - the current season at the original
-        /insights/capacity/ URL, plus up to five prior seasons at
-        /insights/capacity/<season-slug>/ - each plotting that season's own
-        positions against that season's own tier-boundary lines. Capacity
-        itself never changes between pages, since it isn't season-scoped
-        data; only the x-axis position of each point moves. A season with
-        no plottable points (e.g. none of the storied clubs had a Tiers 1-5
-        row that season) is skipped entirely - no page, no tab.
+        (fraction_of_height_fn, min_label_value, max_label_value, zero_fraction).
+
+        zero_fraction is None unless the axis spans zero and a zero line is
+        meaningful - only the signed scales, where a loss below the line is
+        the whole point.
+        """
+        lo, hi = min(values), max(values)
+
+        if scale == "log":
+            lo_l, hi_l = math.log10(lo), math.log10(hi)
+            pad = max(0.05, (hi_l - lo_l) * 0.08)
+            lo_l, hi_l = lo_l - pad, hi_l + pad
+            span = max(1e-9, hi_l - lo_l)
+            return (lambda v: (math.log10(v) - lo_l) / span,
+                    10 ** lo_l, 10 ** hi_l, None)
+
+        if scale == "signed":
+            lo, hi = min(lo, 0.0), max(hi, 0.0)
+            pad = max(1.0, (hi - lo) * 0.08)
+            lo, hi = lo - pad, hi + pad
+            span = max(1e-9, hi - lo)
+            frac = lambda v: (v - lo) / span  # noqa: E731
+            return frac, lo, hi, frac(0.0)
+
+        # Linear. Clamped at zero when every value is positive, because a
+        # stadium can't hold a negative number of people and with few points
+        # the padded minimum would otherwise cross zero.
+        pad = max(1, round((hi - lo) * 0.08))
+        lo = max(0, lo - pad) if lo >= 0 else lo - pad
+        hi = hi + pad
+        span = max(1e-9, hi - lo)
+        return (lambda v: (v - lo) / span), lo, hi, None
+
+    def _insight_scatter(self) -> None:
+        """
+        Renders the metric x season matrix of scatter pages. Capacity keeps
+        its original /insights/capacity/ URLs, since the insights index links
+        there; the financial metrics live under /insights/finances/<metric>/.
+        Each page carries chips for both axes of the matrix, and a metric or
+        season with nothing to plot is skipped rather than rendered empty.
         """
         import charts as charts_mod
 
         candidate_years = list(reversed(self.seasons[-6:]))  # current, then up to 5 prior
         floors_by_year, max_pos = charts_mod.tier_floors(self.conn)
         total_clubs = self.conn.execute("SELECT COUNT(*) FROM club_master").fetchone()[0]
-
-        by_year = {}
-        for year in candidate_years:
-            points = self._capacity_points(year)
-            if points:
-                by_year[year] = points
-        if not by_year:
-            return
-
         current_year = self.seasons[-1]
 
-        def page_path(year: int) -> str:
+        # Gather everything first: a metric with no data anywhere gets no
+        # chip, so the chip row never links to a page that doesn't exist.
+        plotted: dict[str, dict[int, list[dict]]] = {}
+        for key in METRICS:
+            by_year = {}
+            for year in candidate_years:
+                points = self._metric_points(key, year)
+                if points:
+                    by_year[year] = points
+            if by_year:
+                plotted[key] = by_year
+        if not plotted:
+            return
+
+        def page_path(metric_key: str, year: int) -> str:
+            base = METRICS[metric_key]["base"]
             if year == current_year:
-                return "insights/capacity/index.html"
-            return f"insights/capacity/{season_slug(year)}/index.html"
+                return f"{base}/index.html"
+            return f"{base}/{season_slug(year)}/index.html"
 
-        tabs = [
-            {"label": season_label(year), "path": page_path(year), "year": year}
-            for year in by_year
-        ]
-
-        for year, points in by_year.items():
-            boundaries = floors_by_year.get(year, [])
-
-            caps = [p["capacity"] for p in points]
-            cap_min, cap_max = min(caps), max(caps)
-            # A little headroom so the extreme points aren't drawn on the frame.
-            # Clamped at 0 - a stadium can't hold a negative number of people,
-            # and with few points the raw min can be small enough that padding
-            # below it would otherwise cross zero.
-            pad = max(1, round((cap_max - cap_min) * 0.08))
-            cap_min, cap_max = max(0, cap_min - pad), cap_max + pad
-
-            W, H = 760, 380
-            PAD = {"top": 16, "right": 20, "bottom": 36, "left": 64}
-            span_x = max(1, max_pos - 1)
-            span_y = max(1, cap_max - cap_min)
-
-            def x(pos, span_x=span_x):
-                return PAD["left"] + (pos - 1) / span_x * (W - PAD["left"] - PAD["right"])
-
-            def y(cap, span_y=span_y, cap_min=cap_min):
-                return PAD["top"] + (1 - (cap - cap_min) / span_y) * (H - PAD["top"] - PAD["bottom"])
-
-            for p in points:
-                p["cx"] = round(x(p["overall_pos"]), 1)
-                p["cy"] = round(y(p["capacity"]), 1)
-
-            boundary_lines = [round(x(b + 0.5), 1) for b in boundaries]
-
-            is_current = year == current_year
-            out_path = self.out / page_path(year)
-            depth = 2 if is_current else 3
-
-            page_tabs = [
-                {"label": t["label"], "path": t["path"], "active": t["year"] == year}
-                for t in tabs
+        for key, by_year in plotted.items():
+            metric = METRICS[key]
+            season_tabs_all = [
+                {"label": season_label(y), "path": page_path(key, y), "year": y}
+                for y in by_year
             ]
 
-            self.render(
-                "insight_scatter.html", out_path, depth,
-                title=f"Stadium size vs. league position — {season_label(year)}",
-                heading="Stadium size vs. league position",
-                season_label=season_label(year),
-                season_tabs=page_tabs,
-                intro=(
-                    f"Ground capacity from the club stories written so far "
-                    f"({len(points)} of {total_clubs} clubs) against each club's overall "
-                    f"position across all five tiers in {season_label(year)}. Dashed lines "
-                    f"mark the boundary between divisions. This fills in as more stories "
-                    f"are written."
-                ),
-                points=points,
-                boundary_lines=boundary_lines,
-                width=W, height=H,
-                plot_top=PAD["top"], plot_bottom=H - PAD["bottom"],
-                axis_y=H - PAD["bottom"] + 16,
-                x_min_label=1, x_max_label=max_pos,
-                cap_min_label=f"{cap_min:,}", cap_max_label=f"{cap_max:,}",
-                legend=[{"tier": t, "name": name, "key": t}
-                        for t, (_slug, name) in TIER_SLUGS.items()],
-            )
+            for year, points in by_year.items():
+                boundaries = floors_by_year.get(year, [])
+                values = [p["value"] for p in points]
+                frac, y_lo, y_hi, zero_frac = self._y_axis(values, metric["scale"])
+
+                W, H = 760, 380
+                PAD = {"top": 16, "right": 20, "bottom": 36, "left": 64}
+                span_x = max(1, max_pos - 1)
+                plot_h = H - PAD["top"] - PAD["bottom"]
+
+                def x(pos, span_x=span_x):
+                    return PAD["left"] + (pos - 1) / span_x * (W - PAD["left"] - PAD["right"])
+
+                def y(value, frac=frac, plot_h=plot_h):
+                    return PAD["top"] + (1 - frac(value)) * plot_h
+
+                for p in points:
+                    p["cx"] = round(x(p["overall_pos"]), 1)
+                    p["cy"] = round(y(p["value"]), 1)
+                    bits = [
+                        f"{p['name']} — {p['division_name']}, position {p['position']}",
+                        f"{p['value_label']} {metric['noun']}",
+                    ]
+                    extra = p["extra"]
+                    for detail_key in ("breakdown", "definition", "period", "entity"):
+                        if extra.get(detail_key):
+                            bits.append(extra[detail_key])
+                    p["tooltip"] = " — ".join(bits[:2]) + (
+                        f" ({'; '.join(bits[2:])})" if len(bits) > 2 else ""
+                    )
+
+                fmt = metric["format"]
+                zero_y = round(PAD["top"] + (1 - zero_frac) * plot_h, 1) if zero_frac is not None else None
+                benchmark = metric.get("benchmark")
+                benchmark_y = None
+                if benchmark and y_lo <= benchmark["value"] <= y_hi:
+                    benchmark_y = round(y(benchmark["value"]), 1)
+
+                counts = self._disclosure_counts(year)
+                if metric["source"] == "finances":
+                    provenance = (
+                        f"Figures for {len(points)} of {counts['in_season']} clubs in "
+                        f"{season_label(year)}, taken from accounts filed at Companies "
+                        f"House. {counts['withheld']} filed accounts that do not "
+                        f"disclose the figure; the rest are not yet researched."
+                    )
+                else:
+                    provenance = (
+                        f"Ground capacity from the club stories written so far "
+                        f"({len(points)} of {total_clubs} clubs)."
+                    )
+
+                is_current = year == current_year
+                out_path = self.out / page_path(key, year)
+                depth = len(Path(page_path(key, year)).parts) - 1
+
+                self.render(
+                    "insight_scatter.html", out_path, depth,
+                    title=f"{metric['heading']} — {season_label(year)}",
+                    heading=metric["heading"],
+                    season_label=season_label(year),
+                    metric_tabs=[
+                        {"label": METRICS[k]["label"],
+                         "path": page_path(k, year if year in plotted[k] else max(plotted[k])),
+                         "active": k == key}
+                        for k in plotted
+                    ],
+                    season_tabs=[
+                        {"label": t["label"], "path": t["path"], "active": t["year"] == year}
+                        for t in season_tabs_all
+                    ],
+                    intro=(
+                        f"{provenance} Plotted against each club's overall position "
+                        f"across all five tiers in {season_label(year)}. Dashed lines "
+                        f"mark the boundary between divisions."
+                    ),
+                    points=points,
+                    boundary_lines=[round(x(b + 0.5), 1) for b in boundaries],
+                    width=W, height=H,
+                    plot_top=PAD["top"], plot_bottom=H - PAD["bottom"],
+                    axis_y=H - PAD["bottom"] + 16,
+                    x_min_label=1, x_max_label=max_pos,
+                    y_min_label=fmt(y_lo), y_max_label=fmt(y_hi),
+                    zero_line_y=zero_y,
+                    benchmark_line_y=benchmark_y,
+                    benchmark_label=benchmark["label"] if benchmark_y else None,
+                    legend=[{"tier": t, "name": name, "key": t}
+                            for t, (_slug, name) in TIER_SLUGS.items()],
+                )
 
     def _insight_natural_level(self) -> None:
         """

@@ -30,6 +30,7 @@ sys.path.insert(0, str(_SRC))
 import aggregate
 import download
 import entities
+import finances
 import status
 import trajectory
 
@@ -488,6 +489,8 @@ def run(
     _migrate_standings_columns(conn)
 
     entities.seed_club_master(conn, club_master_csv)
+    # After club_master, since finances rows are validated against it.
+    finances.seed_club_finances(conn, PROJECT_ROOT / "club_finances.csv")
     resolver = entities.build_resolver(conn)
 
     if not skip_download:
