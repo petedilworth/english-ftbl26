@@ -186,6 +186,28 @@ and League Two clubs file under the small-company regime. Rows that
 contradict themselves (a non-disclosing club carrying figures, or staff costs
 with no definition) are rejected at load with a warning rather than imported.
 
+**Current coverage and provenance.** The table currently holds the 20
+Premier League clubs for 2023/24 and 2024/25 (40 rows). Every figure is
+**press-reported** — a journalist read the filed account and published the
+number — rather than read from the filing directly, so each row carries a
+`press_reported` flag alongside its `source_url`. Figures were
+cross-referenced across outlets before entry; where sources conflicted
+irreconcilably the field was left blank rather than guessed, which is why
+Aston Villa (2023/24) and Bournemouth (both seasons) have no wage bill.
+Other flags in use:
+
+| Flag | Meaning |
+|---|---|
+| `press_reported` | Sourced from reporting on the filing, not the filing itself |
+| `non_12_month_period` | Accounting period isn't 12 months (see `period_months`) |
+| `profit_label_uncertain` | Sources disagree whether the figure is pre- or post-tax |
+| `figure_disputed` | Outlets report materially different values |
+| `staff_costs_disputed_omitted` | Wage bill deliberately left blank |
+| `profit_includes_one_off_related_party_gain` | Result flattered by an intra-group disposal |
+
+Extending coverage means adding rows for more clubs and seasons; nothing in
+the schema or the charts is Premier League-specific.
+
 ## Adjusting promotion/relegation rules
 
 All cutoff rules live in `src/status.py` in the `RULES` dict. Each key is `(tier, season_end_from, season_end_to_inclusive)`. To change rules for a specific season range, add a new entry — the most recently applicable rule (highest `season_end_from`) takes precedence.
