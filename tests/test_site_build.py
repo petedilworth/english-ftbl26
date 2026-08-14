@@ -688,9 +688,79 @@ def test_capacity_insight_y_axis_never_goes_negative(tmp_path, monkeypatch):
     tiny_story = "---\ncapacity: 500\n---\n## Origins\nA small ground.\n"
     out = _build_with_content(tmp_path, monkeypatch, {"giant-fc": tiny_story})
     page = (out / "insights" / "capacity" / "index.html").read_text()
-    axis_labels = re.findall(r'x="60"[^>]*>([\d,]+)</text>', page)
-    assert len(axis_labels) == 2          # cap_min and cap_max labels
-    assert all(not label.startswith("-") for label in axis_labels)
+    edge_labels = re.findall(r'class="axis-label-edge"[^>]*>([\d,]+)</text>', page)
+    assert len(edge_labels) == 2           # cap_min and cap_max labels
+    assert all(not label.startswith("-") for label in edge_labels)
+
+    tick_labels = re.findall(r'class="axis-label-tick"[^>]*>([\d,]+)</text>', page)
+    assert all(not label.startswith("-") for label in tick_labels)
+
+
+def test_scatter_y_axis_has_intermediate_ticks(tmp_path, monkeypatch):
+    # The min/max labels alone were the only readable values on the axis;
+    # three evenly-spaced ticks in between make the scale legible. Two
+    # clubs with well-separated capacities, so padding can't coincidentally
+    # collapse a tick onto an edge label the way a single data point would.
+    small_story = "---\ncapacity: 2000\n---\n## Origins\nA small ground.\n"
+    out = _build_with_content(
+        tmp_path, monkeypatch, {"giant-fc": RICH_STORY, "steady-fc": small_story}
+    )
+    page = (out / "insights" / "capacity" / "index.html").read_text()
+    ticks = re.findall(r'class="axis-label-tick"[^>]*>([\d,]+)</text>', page)
+    assert len(ticks) == 3
+
+    edge_min, edge_max = (
+        int(v.replace(",", ""))
+        for v in re.findall(r'class="axis-label-edge"[^>]*>([\d,]+)</text>', page)[::-1]
+    )
+    for label in ticks:
+        value = int(label.replace(",", ""))
+        assert edge_min < value < edge_max
+
+
+def test_scatter_page_has_click_and_tier_filter_markup(tmp_path, monkeypatch):
+    small_story = "---\ncapacity: 2000\n---\n## Origins\nA small ground.\n"
+    out = _build_with_content(
+        tmp_path, monkeypatch, {"giant-fc": RICH_STORY, "steady-fc": small_story}
+    )
+    page = (out / "insights" / "capacity" / "index.html").read_text()
+
+    assert 'pointer-events="all"' in page
+    assert 'tabindex="0"' in page
+    assert 'role="button"' in page
+    assert 'id="scatter-detail"' in page
+
+    assert 'data-tier="all"' in page
+    for tier in range(1, 6):
+        assert f'data-tier="{tier}"' in page
+
+    # "All tiers" is the only chip marked active within the tier-filter row
+    # itself (the page may have other active chips, e.g. a season tab).
+    tier_block = re.search(
+        r'<div class="map-chips scatter-tier-chips">.*?</div>', page, re.S
+    ).group(0)
+    assert tier_block.count("chip-active") == 1
+    all_tiers_chip = re.search(r'<button class="([^"]*)" data-tier="all">', tier_block)
+    assert "chip-active" in all_tiers_chip.group(1)
+
+
+def test_scatter_data_js_is_well_formed(tmp_path, monkeypatch):
+    tiny_story = "---\ncapacity: 500\n---\n## Origins\nA small ground.\n"
+    out = _build_with_content(tmp_path, monkeypatch, {"giant-fc": tiny_story})
+    raw = (out / "insights" / "capacity" / "insight-scatter-data.js").read_text()
+    prefix = "window.INSIGHT_SCATTER_DATA = "
+    assert raw.startswith(prefix)
+    payload = json.loads(raw[len(prefix):].rstrip("\n").rstrip(";"))
+
+    assert payload["scale"] == "linear"
+    assert payload["formatKind"] == "count"
+    assert payload["points"]
+    for field in (
+        "id", "name", "color", "tier", "divisionName", "position",
+        "overallPos", "value", "valueLabel", "tooltip",
+    ):
+        assert field in payload["points"][0]
+        assert payload["points"][0][field] is not None
 
 
 # ── Boom and bust insight ────────────────────────────────────────────────

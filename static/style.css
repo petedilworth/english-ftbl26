@@ -478,6 +478,8 @@ table.matrix.compact .matrix-highlight {
 .season-tabs { margin-bottom: 16px; }
 .metric-tabs { margin-bottom: 8px; }
 .map-tier-chips { margin-bottom: 8px; }
+.scatter-tier-chips { margin-bottom: 8px; }
+.scatter-dot:hover { stroke-width: 2; }
 .chip .chip-dot {
   display: inline-block;
   width: 8px; height: 8px;

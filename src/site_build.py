@@ -85,6 +85,7 @@ METRICS = {
         "field": "capacity",
         "scale": "linear",
         "format": lambda v: f"{int(v):,}",
+        "format_kind": "count",
         "noun": "capacity",
     },
     "revenue": {
@@ -96,6 +97,7 @@ METRICS = {
         "field": "turnover",
         "scale": "log",
         "format": _fmt_money,
+        "format_kind": "money",
         "noun": "revenue",
     },
     "wages": {
@@ -107,6 +109,7 @@ METRICS = {
         "field": "staff_costs",
         "scale": "log",
         "format": _fmt_money,
+        "format_kind": "money",
         "noun": "wage bill",
     },
     "wage-ratio": {
@@ -118,6 +121,7 @@ METRICS = {
         "field": "wage_ratio",
         "scale": "linear",
         "format": lambda v: f"{v:.0f}%",
+        "format_kind": "percent",
         "noun": "wages as a share of revenue",
         # UEFA treats 70% as the outer edge of sustainable.
         "benchmark": {"value": 70.0, "label": "70% — UEFA benchmark"},
@@ -131,6 +135,7 @@ METRICS = {
         "field": "profit_before_tax",
         "scale": "signed",
         "format": _fmt_money,
+        "format_kind": "money",
         "noun": "profit before tax",
     },
     "net-debt": {
@@ -142,6 +147,7 @@ METRICS = {
         "field": "net_debt",
         "scale": "signed",
         "format": _fmt_money,
+        "format_kind": "money",
         "noun": "net debt",
     },
 }
@@ -1575,11 +1581,16 @@ class SiteBuilder:
     @staticmethod
     def _y_axis(values: list[float], scale: str):
         """
-        (fraction_of_height_fn, min_label_value, max_label_value, zero_fraction).
+        (fraction_of_height_fn, min_label_value, max_label_value,
+        zero_fraction, inverse_fn).
 
         zero_fraction is None unless the axis spans zero and a zero line is
         meaningful - only the signed scales, where a loss below the line is
-        the whole point.
+        the whole point. inverse_fn maps a height-fraction back to a raw
+        value - the mirror of the fraction fn - used to place intermediate
+        y-axis tick labels without duplicating the padding/domain logic per
+        scale; the client-side tier filter also ports this same function to
+        rescale the axes to only the visible points (see static/insight-scatter.js).
         """
         lo, hi = min(values), max(values)
 
@@ -1589,7 +1600,8 @@ class SiteBuilder:
             lo_l, hi_l = lo_l - pad, hi_l + pad
             span = max(1e-9, hi_l - lo_l)
             return (lambda v: (math.log10(v) - lo_l) / span,
-                    10 ** lo_l, 10 ** hi_l, None)
+                    10 ** lo_l, 10 ** hi_l, None,
+                    lambda t: 10 ** (lo_l + t * span))
 
         if scale == "signed":
             lo, hi = min(lo, 0.0), max(hi, 0.0)
@@ -1597,7 +1609,7 @@ class SiteBuilder:
             lo, hi = lo - pad, hi + pad
             span = max(1e-9, hi - lo)
             frac = lambda v: (v - lo) / span  # noqa: E731
-            return frac, lo, hi, frac(0.0)
+            return frac, lo, hi, frac(0.0), lambda t: lo + t * span
 
         # Linear. Clamped at zero when every value is positive, because a
         # stadium can't hold a negative number of people and with few points
@@ -1606,7 +1618,7 @@ class SiteBuilder:
         lo = max(0, lo - pad) if lo >= 0 else lo - pad
         hi = hi + pad
         span = max(1e-9, hi - lo)
-        return (lambda v: (v - lo) / span), lo, hi, None
+        return (lambda v: (v - lo) / span), lo, hi, None, lambda t: lo + t * span
 
     def _insight_scatter(self) -> None:
         """
@@ -1617,6 +1629,7 @@ class SiteBuilder:
         season with nothing to plot is skipped rather than rendered empty.
         """
         import charts as charts_mod
+        import json
 
         candidate_years = list(reversed(self.seasons[-6:]))  # current, then up to 5 prior
         floors_by_year, max_pos = charts_mod.tier_floors(self.conn)
@@ -1653,7 +1666,7 @@ class SiteBuilder:
             for year, points in by_year.items():
                 boundaries = floors_by_year.get(year, [])
                 values = [p["value"] for p in points]
-                frac, y_lo, y_hi, zero_frac = self._y_axis(values, metric["scale"])
+                frac, y_lo, y_hi, zero_frac, inverse = self._y_axis(values, metric["scale"])
 
                 W, H = 760, 380
                 PAD = {"top": 16, "right": 20, "bottom": 36, "left": 64}
@@ -1688,6 +1701,14 @@ class SiteBuilder:
                 if benchmark and y_lo <= benchmark["value"] <= y_hi:
                     benchmark_y = round(y(benchmark["value"]), 1)
 
+                # Intermediate labels between the existing min/max - purely
+                # a readability aid, so evenly-spaced height-fractions are
+                # enough; no need for "nice round number" tick placement.
+                y_ticks = [
+                    {"y": round(PAD["top"] + (1 - t) * plot_h, 1), "label": fmt(inverse(t))}
+                    for t in (0.25, 0.5, 0.75)
+                ]
+
                 counts = self._disclosure_counts(year)
                 if metric["source"] == "finances":
                     provenance = (
@@ -1705,6 +1726,8 @@ class SiteBuilder:
                 is_current = year == current_year
                 out_path = self.out / page_path(key, year)
                 depth = len(Path(page_path(key, year)).parts) - 1
+                legend = [{"tier": t, "name": name, "key": t}
+                          for t, (_slug, name) in TIER_SLUGS.items()]
 
                 self.render(
                     "insight_scatter.html", out_path, depth,
@@ -1733,11 +1756,41 @@ class SiteBuilder:
                     axis_y=H - PAD["bottom"] + 16,
                     x_min_label=1, x_max_label=max_pos,
                     y_min_label=fmt(y_lo), y_max_label=fmt(y_hi),
+                    y_ticks=y_ticks,
                     zero_line_y=zero_y,
                     benchmark_line_y=benchmark_y,
                     benchmark_label=benchmark["label"] if benchmark_y else None,
-                    legend=[{"tier": t, "name": name, "key": t}
-                            for t, (_slug, name) in TIER_SLUGS.items()],
+                    legend=legend,
+                    tier_chips=legend,
+                )
+
+                # Sibling data file: lets static/insight-scatter.js rebuild
+                # the whole chart client-side (tier filter, axis rescale,
+                # click detail) without a page reload. Written after
+                # render() so the output directory already exists.
+                payload = {
+                    "scale": metric["scale"],
+                    "formatKind": metric["format_kind"],
+                    "noun": metric["noun"],
+                    "maxPos": max_pos,
+                    "boundaries": boundaries,
+                    "benchmarkValue": benchmark["value"] if benchmark else None,
+                    "benchmarkLabel": benchmark["label"] if benchmark else None,
+                    "seasonLabel": season_label(year),
+                    "points": [
+                        {
+                            "id": p["club_id"], "name": p["name"], "color": p["color"],
+                            "tier": p["tier"], "divisionName": p["division_name"],
+                            "position": p["position"], "overallPos": p["overall_pos"],
+                            "value": p["value"], "valueLabel": p["value_label"],
+                            "tooltip": p["tooltip"],
+                        }
+                        for p in points
+                    ],
+                }
+                (out_path.parent / "insight-scatter-data.js").write_text(
+                    "window.INSIGHT_SCATTER_DATA = " + json.dumps(payload) + ";",
+                    encoding="utf-8",
                 )
 
     def _insight_natural_level(self) -> None:
