@@ -186,15 +186,20 @@ and League Two clubs file under the small-company regime. Rows that
 contradict themselves (a non-disclosing club carrying figures, or staff costs
 with no definition) are rejected at load with a warning rather than imported.
 
-**Current coverage and provenance.** The table currently holds the 20
-Premier League clubs for 2023/24 and 2024/25 (40 rows). Every figure is
-**press-reported** — a journalist read the filed account and published the
-number — rather than read from the filing directly, so each row carries a
-`press_reported` flag alongside its `source_url`. Figures were
+**Current coverage and provenance.** The table currently holds the Premier
+League and Championship for 2023/24 and 2024/25 (88 rows: the 20 Premier
+League clubs each season, plus every Championship club for the season(s)
+it wasn't already covered as a Premier League club that year). Every figure
+is **press-reported** — a journalist read the filed account and published
+the number — rather than read from the filing directly, so each row
+carries a `press_reported` flag alongside its `source_url`. Figures were
 cross-referenced across outlets before entry; where sources conflicted
 irreconcilably the field was left blank rather than guessed, which is why
 Aston Villa (2023/24) and Bournemouth (both seasons) have no wage bill.
-Other flags in use:
+Sheffield Wednesday's 2024/25 season is recorded as `not_filed` — the club
+entered administration in October 2025 and its accounts are genuinely
+overdue, the first real (non-synthetic) case of the non-disclosure states
+this schema was built for. Other flags in use:
 
 | Flag | Meaning |
 |---|---|
@@ -203,10 +208,13 @@ Other flags in use:
 | `profit_label_uncertain` | Sources disagree whether the figure is pre- or post-tax |
 | `figure_disputed` | Outlets report materially different values |
 | `staff_costs_disputed_omitted` | Wage bill deliberately left blank |
+| `staff_costs_basis_uncertain` | A wage figure is given but its excl./incl.-amortisation basis isn't confirmed |
 | `profit_includes_one_off_related_party_gain` | Result flattered by an intra-group disposal |
+| `profit_includes_one_off_exceptional_gain` | Result flattered by a non-recurring item outside normal trading (e.g. litigation settlement) |
+| `profit_figure_omitted` | Loss/profit deliberately left blank — sources disagreed on which measure (pre-tax, post-tax, stadium-cost-adjusted) applies |
 
-Extending coverage means adding rows for more clubs and seasons; nothing in
-the schema or the charts is Premier League-specific.
+Extending coverage means adding rows for League One and below; nothing in
+the schema or the charts is tier-specific.
 
 ## Adjusting promotion/relegation rules
 
