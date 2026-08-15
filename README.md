@@ -186,37 +186,41 @@ and League Two clubs file under the small-company regime. Rows that
 contradict themselves (a non-disclosing club carrying figures, or staff costs
 with no definition) are rejected at load with a warning rather than imported.
 
-**Current coverage and provenance.** The table currently holds the Premier
-League, Championship, League One and League Two for 2023/24 and 2024/25
-(163 rows: the 20 Premier League clubs each season, plus every
-Championship/League One/League Two club for the season(s) it wasn't
-already covered by a higher tier that year). Every figure is
-**press-reported** — a journalist read the filed account and published the
-number — rather than read from the filing directly, so each row carries a
-`press_reported` flag alongside its `source_url`. Figures were
-cross-referenced across outlets before entry; where sources conflicted
-irreconcilably the field was left blank rather than guessed, which is why
-Aston Villa (2023/24) and Bournemouth (both seasons) have no wage bill.
-Sheffield Wednesday's 2024/25 season is recorded as `not_filed` — the club
-entered administration in October 2025 and its accounts are genuinely
-overdue.
+**Current coverage and provenance.** The table now covers every tier this
+database tracks — Premier League, Championship, League One, League Two
+and the National League — for 2023/24 and 2024/25 (172 rows: the 20
+Premier League clubs each season, plus every lower-tier club for the
+season(s) it wasn't already covered by a higher tier that year). Every
+figure is **press-reported** — a journalist read the filed account and
+published the number — rather than read from the filing directly, so each
+row carries a `press_reported` flag alongside its `source_url`. Figures
+were cross-referenced across outlets before entry; where sources
+conflicted irreconcilably the field was left blank rather than guessed,
+which is why Aston Villa (2023/24) and Bournemouth (both seasons) have no
+wage bill. Sheffield Wednesday's 2024/25 season is recorded as `not_filed`
+— the club entered administration in October 2025 and its accounts are
+genuinely overdue.
 
-League One's press coverage is markedly thinner than the two tiers above
-it, and League Two's thinner again: club-seasons where research couldn't
-confirm even the disclosure state itself (full accounts vs. small-company
-exemption vs. overdue) get **no row at all**, rather than a `full`
-disclosure with blank figures — a `full` row with nothing in it would
-misreport as "disclosed" in the finance charts' provenance line. Sixteen
-League Two club-seasons hit this, including MK Dons' 2024/25 season: the
-football club now sits inside a diversified group (hotel, arena, car
-parks, a radio station) that only reports the club as an internal revenue
-segment, not a standalone entity, so its figures were left out rather than
-attributed to the club as if they were its own. Notts County's 2023/24
-season is recorded as `small_company` — a confirmed small-company
-Companies House filing with no P&L disclosed, the first real instance of
-that state this schema was built for (as opposed to `not_filed`, used for
-a confirmed-overdue filing, or no row at all, used when the disclosure
-state itself couldn't be confirmed). Other flags in use:
+Disclosure gets thinner every tier down, and the National League — the
+level below the EFL — is the thinnest of all: only 9 of the 48 targeted
+club-seasons yielded anything usable, the lowest hit rate of any batch.
+Club-seasons where research couldn't confirm even the disclosure state
+itself get **no row at all**, rather than a `full` disclosure with blank
+figures — a `full` row with nothing in it would misreport as "disclosed"
+in the finance charts' provenance line. This tier surfaced a specific new
+way that judgement call comes up: "Total exemption full accounts" is a
+genuine Companies House filing category, but it denotes *audit*
+exemption, not the absence of a P&L the way "abridged" or "micro-entity"
+does — several clubs were initially read as `small_company` off that
+label alone with zero figures either way to confirm it, and were left out
+entirely rather than risk mislabeling the field. Notts County's 2023/24
+season (League Two) remains the one confirmed `small_company` case.
+Ebbsfleet United's 2023/24 season is `full` despite the club's own
+statutory accounts omitting the P&L for the second year running — the
+figures came from the club's voluntary pre-emptive statement to press
+ahead of the filing, not from the filing itself, which the
+`disclosed_via_statement_not_filed_accounts` flag records. Other flags in
+use:
 
 | Flag | Meaning |
 |---|---|
@@ -231,9 +235,11 @@ state itself couldn't be confirmed). Other flags in use:
 | `loss_includes_one_off_exceptional_charge` | Result worsened by a non-recurring item outside normal trading |
 | `profit_figure_omitted` | Loss/profit deliberately left blank — sources disagreed on which measure (pre-tax, post-tax, stadium-cost-adjusted) applies |
 | `turnover_may_include_transfer_fees` | Source itself flags that the reported "turnover" may not be pure trading revenue |
+| `disclosed_via_statement_not_filed_accounts` | Figures came from the club's own public statement, not the statutory filing (which omitted the P&L) |
 
-Extending coverage means adding rows for the National League and below;
-nothing in the schema or the charts is tier-specific.
+This is the last tier the database tracks (Tiers 1–5); extending coverage
+further would mean tracking clubs below the pyramid this project follows,
+not just adding rows to the existing schema.
 
 ## Adjusting promotion/relegation rules
 
