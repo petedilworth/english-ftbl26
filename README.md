@@ -187,19 +187,30 @@ contradict themselves (a non-disclosing club carrying figures, or staff costs
 with no definition) are rejected at load with a warning rather than imported.
 
 **Current coverage and provenance.** The table currently holds the Premier
-League and Championship for 2023/24 and 2024/25 (88 rows: the 20 Premier
-League clubs each season, plus every Championship club for the season(s)
-it wasn't already covered as a Premier League club that year). Every figure
-is **press-reported** — a journalist read the filed account and published
-the number — rather than read from the filing directly, so each row
-carries a `press_reported` flag alongside its `source_url`. Figures were
-cross-referenced across outlets before entry; where sources conflicted
-irreconcilably the field was left blank rather than guessed, which is why
-Aston Villa (2023/24) and Bournemouth (both seasons) have no wage bill.
-Sheffield Wednesday's 2024/25 season is recorded as `not_filed` — the club
-entered administration in October 2025 and its accounts are genuinely
-overdue, the first real (non-synthetic) case of the non-disclosure states
-this schema was built for. Other flags in use:
+League, Championship and League One for 2023/24 and 2024/25 (131 rows: the
+20 Premier League clubs each season, plus every Championship and League One
+club for the season(s) it wasn't already covered by a higher tier that
+year). Every figure is **press-reported** — a journalist read the filed
+account and published the number — rather than read from the filing
+directly, so each row carries a `press_reported` flag alongside its
+`source_url`. Figures were cross-referenced across outlets before entry;
+where sources conflicted irreconcilably the field was left blank rather
+than guessed, which is why Aston Villa (2023/24) and Bournemouth (both
+seasons) have no wage bill. Sheffield Wednesday's 2024/25 season is
+recorded as `not_filed` — the club entered administration in October 2025
+and its accounts are genuinely overdue, the first real (non-synthetic) case
+of the non-disclosure states this schema was built for.
+
+League One's press coverage is markedly thinner than the two tiers above
+it: five club-seasons (Stevenage both seasons, Fleetwood Town, Crawley
+Town, Mansfield Town) have **no row at all**, rather than a `full`
+disclosure with blank figures — research couldn't confirm even the
+disclosure state itself (full accounts vs. small-company exemption vs.
+overdue) for those, and a `full` row with nothing in it would misreport as
+"disclosed" in the finance charts' provenance line. That distinction —
+`not_filed`/`small_company` for a *confirmed* non-disclosure vs. no row at
+all for *genuine research uncertainty* — is the one this batch actually
+had to draw in practice, more than once. Other flags in use:
 
 | Flag | Meaning |
 |---|---|
@@ -210,10 +221,12 @@ this schema was built for. Other flags in use:
 | `staff_costs_disputed_omitted` | Wage bill deliberately left blank |
 | `staff_costs_basis_uncertain` | A wage figure is given but its excl./incl.-amortisation basis isn't confirmed |
 | `profit_includes_one_off_related_party_gain` | Result flattered by an intra-group disposal |
-| `profit_includes_one_off_exceptional_gain` | Result flattered by a non-recurring item outside normal trading (e.g. litigation settlement) |
+| `profit_includes_one_off_exceptional_gain` | Result flattered by a non-recurring item outside normal trading (e.g. litigation settlement, debt forgiveness) |
+| `loss_includes_one_off_exceptional_charge` | Result worsened by a non-recurring item outside normal trading |
 | `profit_figure_omitted` | Loss/profit deliberately left blank — sources disagreed on which measure (pre-tax, post-tax, stadium-cost-adjusted) applies |
+| `turnover_may_include_transfer_fees` | Source itself flags that the reported "turnover" may not be pure trading revenue |
 
-Extending coverage means adding rows for League One and below; nothing in
+Extending coverage means adding rows for League Two and below; nothing in
 the schema or the charts is tier-specific.
 
 ## Adjusting promotion/relegation rules
