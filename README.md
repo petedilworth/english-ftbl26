@@ -187,30 +187,36 @@ contradict themselves (a non-disclosing club carrying figures, or staff costs
 with no definition) are rejected at load with a warning rather than imported.
 
 **Current coverage and provenance.** The table currently holds the Premier
-League, Championship and League One for 2023/24 and 2024/25 (131 rows: the
-20 Premier League clubs each season, plus every Championship and League One
-club for the season(s) it wasn't already covered by a higher tier that
-year). Every figure is **press-reported** — a journalist read the filed
-account and published the number — rather than read from the filing
-directly, so each row carries a `press_reported` flag alongside its
-`source_url`. Figures were cross-referenced across outlets before entry;
-where sources conflicted irreconcilably the field was left blank rather
-than guessed, which is why Aston Villa (2023/24) and Bournemouth (both
-seasons) have no wage bill. Sheffield Wednesday's 2024/25 season is
-recorded as `not_filed` — the club entered administration in October 2025
-and its accounts are genuinely overdue, the first real (non-synthetic) case
-of the non-disclosure states this schema was built for.
+League, Championship, League One and League Two for 2023/24 and 2024/25
+(163 rows: the 20 Premier League clubs each season, plus every
+Championship/League One/League Two club for the season(s) it wasn't
+already covered by a higher tier that year). Every figure is
+**press-reported** — a journalist read the filed account and published the
+number — rather than read from the filing directly, so each row carries a
+`press_reported` flag alongside its `source_url`. Figures were
+cross-referenced across outlets before entry; where sources conflicted
+irreconcilably the field was left blank rather than guessed, which is why
+Aston Villa (2023/24) and Bournemouth (both seasons) have no wage bill.
+Sheffield Wednesday's 2024/25 season is recorded as `not_filed` — the club
+entered administration in October 2025 and its accounts are genuinely
+overdue.
 
 League One's press coverage is markedly thinner than the two tiers above
-it: five club-seasons (Stevenage both seasons, Fleetwood Town, Crawley
-Town, Mansfield Town) have **no row at all**, rather than a `full`
-disclosure with blank figures — research couldn't confirm even the
-disclosure state itself (full accounts vs. small-company exemption vs.
-overdue) for those, and a `full` row with nothing in it would misreport as
-"disclosed" in the finance charts' provenance line. That distinction —
-`not_filed`/`small_company` for a *confirmed* non-disclosure vs. no row at
-all for *genuine research uncertainty* — is the one this batch actually
-had to draw in practice, more than once. Other flags in use:
+it, and League Two's thinner again: club-seasons where research couldn't
+confirm even the disclosure state itself (full accounts vs. small-company
+exemption vs. overdue) get **no row at all**, rather than a `full`
+disclosure with blank figures — a `full` row with nothing in it would
+misreport as "disclosed" in the finance charts' provenance line. Sixteen
+League Two club-seasons hit this, including MK Dons' 2024/25 season: the
+football club now sits inside a diversified group (hotel, arena, car
+parks, a radio station) that only reports the club as an internal revenue
+segment, not a standalone entity, so its figures were left out rather than
+attributed to the club as if they were its own. Notts County's 2023/24
+season is recorded as `small_company` — a confirmed small-company
+Companies House filing with no P&L disclosed, the first real instance of
+that state this schema was built for (as opposed to `not_filed`, used for
+a confirmed-overdue filing, or no row at all, used when the disclosure
+state itself couldn't be confirmed). Other flags in use:
 
 | Flag | Meaning |
 |---|---|
@@ -226,8 +232,8 @@ had to draw in practice, more than once. Other flags in use:
 | `profit_figure_omitted` | Loss/profit deliberately left blank — sources disagreed on which measure (pre-tax, post-tax, stadium-cost-adjusted) applies |
 | `turnover_may_include_transfer_fees` | Source itself flags that the reported "turnover" may not be pure trading revenue |
 
-Extending coverage means adding rows for League Two and below; nothing in
-the schema or the charts is tier-specific.
+Extending coverage means adding rows for the National League and below;
+nothing in the schema or the charts is tier-specific.
 
 ## Adjusting promotion/relegation rules
 
