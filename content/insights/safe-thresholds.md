@@ -6,4 +6,8 @@ The truth is that safety is relative. It depends entirely on how poorly the bott
 
 This page explores the extremes of the relegation battle: the clubs that went down despite achieving points totals that would have kept them safe in almost any other year, and the clubs that survived with record-low tallies because the teams below them were even worse.
 
+<<<<<<< Updated upstream
 By looking at the "highest points relegated" and "lowest points survived" for each division, we can see how wide the margin of safety truly is, and how much luck plays a part in which side of the line a club lands on.
+=======
+By looking at the "highest points relegated" and "lowest points survived" for each division, we can see how wide the margin of safety truly is, and how much luck plays a part in which side of the line a club lands on.
+>>>>>>> Stashed changes

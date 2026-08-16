@@ -911,6 +911,12 @@ class SiteBuilder:
                     "name": metric["heading"],
                     "sub": metric["sub"],
                 })
+        if (PROJECT_ROOT / "content" / "insights" / "safe-thresholds.md").exists():
+            entries.append({
+                "slug": "safe-thresholds",
+                "name": "Safe thresholds",
+                "sub": "The points needed to survive relegation",
+            })
         boom_bust_events = self._boom_bust_events()
         if boom_bust_events:
             entries.append({
@@ -1934,8 +1940,54 @@ class SiteBuilder:
             ],
         )
 
+    def _standings_section(
+        self, heading: str, note: str, order: str, limit: int = 10,
+        where: str = "s.played >= 30", include_status: bool = False
+    ) -> dict:
+        cols = "s.club_id, s.club_name, s.season_end_year, s.division_name, s.position, s.points, s.gd"
+        if include_status:
+            cols += ", s.status"
+
+        rows = self.conn.execute(
+            f"""
+            SELECT {cols}
+            FROM standings s WHERE {where}
+            ORDER BY {order} LIMIT {limit}
+            """
+        ).fetchall()
+
+        columns = ["Club", "Season", "Division", "Pos", "Pts", "GD"]
+        if include_status:
+            columns = ["Club", "Season", "Division", "Pts", "Status"]
+
+        def _row(r):
+            res = [
+                self._cell(r["club_name"], r["club_id"]),
+                self._cell(season_label(r["season_end_year"])),
+                self._cell(r["division_name"]),
+            ]
+            if include_status:
+                res.extend([
+                    self._cell(r["points"], num=True),
+                    self._cell(r["status"]),
+                ])
+            else:
+                res.extend([
+                    self._cell(r["position"], num=True),
+                    self._cell(r["points"], num=True),
+                    self._cell(r["gd"], num=True),
+                ])
+            return res
+
+        return {
+            "heading": heading,
+            "note": note,
+            "columns": columns,
+            "rows": [_row(r) for r in rows],
+        }
+
     def _insight_records(self) -> None:
-        def _standings_section(heading, note, order, limit=10, where="s.played >= 30"):
+        def _standings_section_old(heading, note, order, limit=10, where="s.played >= 30"):
             rows = self.conn.execute(
                 f"""
                 SELECT s.club_id, s.club_name, s.season_end_year, s.division_name,
@@ -1972,12 +2024,46 @@ class SiteBuilder:
             heading="Records & extremes",
             intro="The outer edges of thirty years of league tables.",
             sections=[
-                _standings_section("Most points in a season", "Full seasons only.",
+                self._standings_section("Most points in a season", "Full seasons only.",
                                    "s.points DESC, s.gd DESC"),
-                _standings_section("Fewest points in a season", "The campaigns to forget.",
+                self._standings_section("Fewest points in a season", "The campaigns to forget.",
                                    "s.points ASC, s.gd ASC"),
-                _standings_section("Best goal difference", "", "s.gd DESC, s.points DESC"),
-                _standings_section("Worst goal difference", "", "s.gd ASC, s.points ASC"),
+                self._standings_section("Best goal difference", "", "s.gd DESC, s.points DESC"),
+                self._standings_section("Worst goal difference", "", "s.gd ASC, s.points ASC"),
+                {
+                    "heading": "Longest unbroken runs at current level",
+                    "note": "Consecutive seasons at the club's current tier.",
+                    "columns": ["Club", "Level", "Seasons"],
+                    "rows": [
+                        [self._cell(r["canonical_name"], r["club_id"]),
+                         self._cell(f"Tier {r['current_tier']}"),
+                         self._cell(r["current_tier_streak"], num=True)]
+                        for r in streaks
+                    ],
+                },
+            ],
+        )
+
+
+        streaks = self.conn.execute(
+            """
+            SELECT club_id, canonical_name, current_tier, current_tier_streak
+            FROM club_trajectory ORDER BY current_tier_streak DESC LIMIT 10
+            """
+        ).fetchall()
+
+        self.render(
+            "insight_table.html", self.out / "insights" / "records" / "index.html", 2,
+            title="Records & extremes",
+            heading="Records & extremes",
+            intro="The outer edges of thirty years of league tables.",
+            sections=[
+                self._standings_section("Most points in a season", "Full seasons only.",
+                                   "s.points DESC, s.gd DESC"),
+                self._standings_section("Fewest points in a season", "The campaigns to forget.",
+                                   "s.points ASC, s.gd ASC"),
+                self._standings_section("Best goal difference", "", "s.gd DESC, s.points DESC"),
+                self._standings_section("Worst goal difference", "", "s.gd ASC, s.points ASC"),
                 {
                     "heading": "Longest unbroken runs at current level",
                     "note": "Consecutive seasons at the club's current tier.",
@@ -1994,11 +2080,13 @@ class SiteBuilder:
 
 
     def _insight_safe_thresholds(self) -> None:
+        import content as content_mod
+
         source = PROJECT_ROOT / "content" / "insights" / "safe-thresholds.md"
         if not source.exists():
             return
 
-        def _standings_section(heading, note, order, limit=10, where="1=1"):
+        def _standings_section_old(heading, note, order, limit=10, where="1=1"):
             rows = self.conn.execute(
                 f"""
                 SELECT s.club_id, s.club_name, s.season_end_year, s.division_name,
@@ -2025,24 +2113,25 @@ class SiteBuilder:
             "insight_table.html", self.out / "insights" / "safe-thresholds" / "index.html", 2,
             title="Safe thresholds",
             heading="Safe thresholds",
-            intro=source.read_text(encoding="utf-8").split("---")[-1].strip(),
+            intro=content_mod.load_theme(source)[1].strip(),
             sections=[
-                _standings_section(
+                self._standings_section(
                     "Unlucky losers",
                     "Clubs relegated with the highest points totals (excluding COVID seasons).",
                     "s.points DESC, s.gd ASC",
                     15,
-                    "(s.status = 'Relegated' OR s.status = 'Play-off Relegated')"
-                ),
-                _standings_section(
+                    "s.played >= 30 AND s.season_end_year != 2021 AND s.season_end_year != 2020 AND (s.status = 'Relegated' OR s.status = 'Play-off Relegated')",
+                    True),
+                self._standings_section(
                     "Lucky survivors",
                     "Clubs that stayed up with the lowest points totals (excluding COVID seasons).",
                     "s.points ASC, s.gd DESC",
                     15,
-                    "s.status = 'Stayed'"
-                ),
+                    "s.played >= 30 AND s.season_end_year != 2021 AND s.season_end_year != 2020 AND s.status = 'Stayed'",
+                    True),
             ],
         )
+
 
     def _insight_timeline(self) -> None:
         events = [
