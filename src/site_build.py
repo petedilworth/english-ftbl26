@@ -890,6 +890,7 @@ class SiteBuilder:
              "sub": "Long falls and great climbs"},
             {"slug": "records", "name": "Records & extremes",
              "sub": "The best and worst seasons"},
+            {"slug": "safe-thresholds", "name": "Safe thresholds", "sub": "The points needed to survive relegation"},
             {"slug": "timeline", "name": "Timeline", "sub": "Notable events since 1993"},
         ]
         if "natural_level_gap" in self.trajectory_cols:
@@ -952,6 +953,7 @@ class SiteBuilder:
         self._insight_natural_level()
         self._insight_fallen_giants()
         self._insight_records()
+        self._insight_safe_thresholds()
         self._insight_timeline()
         self._insight_scatter()
         self._insight_boom_and_bust(boom_bust_events)
@@ -1987,6 +1989,58 @@ class SiteBuilder:
                         for r in streaks
                     ],
                 },
+            ],
+        )
+
+
+    def _insight_safe_thresholds(self) -> None:
+        source = PROJECT_ROOT / "content" / "insights" / "safe-thresholds.md"
+        if not source.exists():
+            return
+
+        def _standings_section(heading, note, order, limit=10, where="1=1"):
+            rows = self.conn.execute(
+                f"""
+                SELECT s.club_id, s.club_name, s.season_end_year, s.division_name,
+                       s.position, s.points, s.gd, s.status
+                FROM standings s WHERE s.season_end_year != 2021 AND s.season_end_year != 2020 AND {where}
+                ORDER BY {order} LIMIT {limit}
+                """
+            ).fetchall()
+            return {
+                "heading": heading,
+                "note": note,
+                "columns": ["Club", "Season", "Division", "Pts", "Status"],
+                "rows": [
+                    [self._cell(r["club_name"], r["club_id"]),
+                     self._cell(season_label(r["season_end_year"])),
+                     self._cell(r["division_name"]),
+                     self._cell(r["points"], num=True),
+                     self._cell(r["status"])]
+                    for r in rows
+                ],
+            }
+
+        self.render(
+            "insight_table.html", self.out / "insights" / "safe-thresholds" / "index.html", 2,
+            title="Safe thresholds",
+            heading="Safe thresholds",
+            intro=source.read_text(encoding="utf-8").split("---")[-1].strip(),
+            sections=[
+                _standings_section(
+                    "Unlucky losers",
+                    "Clubs relegated with the highest points totals (excluding COVID seasons).",
+                    "s.points DESC, s.gd ASC",
+                    15,
+                    "(s.status = 'Relegated' OR s.status = 'Play-off Relegated')"
+                ),
+                _standings_section(
+                    "Lucky survivors",
+                    "Clubs that stayed up with the lowest points totals (excluding COVID seasons).",
+                    "s.points ASC, s.gd DESC",
+                    15,
+                    "s.status = 'Stayed'"
+                ),
             ],
         )
 
