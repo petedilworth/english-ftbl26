@@ -24,6 +24,7 @@ _SRC = Path(__file__).parent
 sys.path.insert(0, str(_SRC))
 
 import content  # noqa: E402  (needs _SRC on the path first)
+import finances  # noqa: E402  (disclosure states for the club finances table)
 
 PROJECT_ROOT = _SRC.parent
 
@@ -51,6 +52,28 @@ STATUS_PRESENTATION = {
 IN_PROGRESS_STATUS = "In progress"
 
 DEFAULT_COLOR = "#1a5c9a"
+
+
+def _ordinal(n: int) -> str:
+    """1st, 2nd, 3rd, 4th - including the 11th/12th/13th exceptions."""
+    if 10 <= n % 100 <= 20:
+        suffix = "th"
+    else:
+        suffix = {1: "st", 2: "nd", 3: "rd"}.get(n % 10, "th")
+    return f"{n}{suffix}"
+
+
+def _parse_flags(raw: str | None) -> list[str]:
+    """flags is a free-form JSON array; a malformed one shouldn't stop a build."""
+    if not raw:
+        return []
+    import json
+
+    try:
+        parsed = json.loads(raw)
+    except (ValueError, TypeError):
+        return []
+    return parsed if isinstance(parsed, list) else []
 
 
 def _fmt_money(value: float) -> str:
@@ -154,6 +177,52 @@ METRICS = {
 
 # Capacity keeps the URL it has always had; the insights index links it.
 LEGACY_METRIC = "capacity"
+
+
+# Why a figure on a club page can't be read at face value. Only the flags
+# that change how a reader should interpret the number appear here -
+# "press_reported" is deliberately absent because it applies to every row,
+# so it belongs in the one standing provenance line under the table rather
+# than repeated as a per-club caveat.
+FLAG_LABELS = {
+    "non_12_month_period":
+        "One period isn't 12 months long, so it isn't like-for-like with the others.",
+    "figure_disputed":
+        "Outlets reported materially different values for at least one figure.",
+    "profit_label_uncertain":
+        "Sources didn't agree whether a profit figure is before or after tax.",
+    "staff_costs_basis_uncertain":
+        "A wage figure is reported without confirming whether it includes "
+        "amortisation of transfer fees.",
+    "staff_costs_disputed_omitted":
+        "A wage bill is left blank because sources couldn't be reconciled.",
+    "profit_figure_omitted":
+        "A profit figure is left blank because sources disagreed on which "
+        "measure applies.",
+    "profit_includes_one_off_related_party_gain":
+        "A result is flattered by a one-off sale within the owner's group.",
+    "profit_includes_one_off_exceptional_gain":
+        "A result is flattered by a one-off item outside normal trading.",
+    "loss_includes_one_off_exceptional_charge":
+        "A result is worsened by a one-off item outside normal trading.",
+    "turnover_may_include_transfer_fees":
+        "A turnover figure may include transfer income rather than trading "
+        "revenue alone.",
+    "disclosed_via_statement_not_filed_accounts":
+        "Figures come from the club's own statement; the filing itself omitted "
+        "the profit and loss account.",
+}
+
+# Non-disclosure is a state, not a gap - so the table says what the club
+# did rather than showing an empty row.
+DISCLOSURE_NOTES = {
+    finances.DISCLOSURE_SMALL_COMPANY:
+        "Filed under the small-company regime — no profit and loss account disclosed.",
+    finances.DISCLOSURE_NOT_FILED:
+        "Accounts overdue and not filed.",
+    finances.DISCLOSURE_DISSOLVED:
+        "Entity dissolved.",
+}
 
 
 def season_slug(year: int) -> str:
@@ -337,6 +406,9 @@ class SiteBuilder:
         # Same reasoning for club_finances, which a checkout may predate
         # entirely. Resolved lazily on first use, then cached.
         self._finances_table: bool | None = None
+        # Division ranks for every club-season, built once on first use -
+        # build_teams walks every club, so a query per club would be wasteful.
+        self._finance_ranks_cache: dict | None = None
         self.seasons = [
             r[0] for r in self.conn.execute(
                 "SELECT DISTINCT season_end_year FROM standings ORDER BY season_end_year"
@@ -667,6 +739,7 @@ class SiteBuilder:
                 extra_html=extra_html,
                 facts_rows=facts_rows,
                 club_themes=club_themes,
+                finances=self._club_finances(club_id),
                 seasons=seasons,
             )
 
@@ -1429,6 +1502,179 @@ class SiteBuilder:
                 "SELECT 1 FROM sqlite_master WHERE type='table' AND name='club_finances'"
             ).fetchone())
         return self._finances_table
+
+    def _finance_ranks(self) -> dict:
+        """
+        {(club_id, season): {"turnover": (rank, total, division), ...}} -
+        where a club's money sits among the clubs it actually played
+        against that season.
+
+        The denominator is the clubs with a *published* figure, not the
+        clubs in the division. Coverage is partial by design (deliberate
+        omissions, small-company filings, clubs not yet researched), so a
+        rank of "4th of 19" in a 24-club division is the honest form and
+        the template says so; presenting it as 4th of 24 would invent
+        coverage that doesn't exist.
+
+        Built in one pass rather than a query per club, since build_teams
+        walks every club in the database.
+        """
+        if self._finance_ranks_cache is not None:
+            return self._finance_ranks_cache
+
+        ranks: dict = {}
+        if not self._has_finances():
+            self._finance_ranks_cache = ranks
+            return ranks
+
+        # A club-season with no standings row in tiers 1-5 has no division
+        # to be ranked within, so the join drops it rather than ranking it
+        # against an unrelated set.
+        rows = self.conn.execute(
+            """
+            SELECT f.club_id, f.season_end_year, s.tier, s.division_name,
+                   f.turnover, f.staff_costs
+            FROM club_finances f
+            JOIN standings s
+              ON s.club_id = f.club_id AND s.season_end_year = f.season_end_year
+            WHERE f.disclosure = 'full'
+            """
+        ).fetchall()
+
+        groups: dict = {}
+        for club_id, year, tier, division_name, turnover, staff_costs in rows:
+            for field, value in (("turnover", turnover), ("staff_costs", staff_costs)):
+                if value is None:
+                    continue
+                groups.setdefault((year, tier, field), []).append(
+                    (club_id, float(value), division_name)
+                )
+
+        for (year, _tier, field), entries in groups.items():
+            total = len(entries)
+            values = [v for _cid, v, _dn in entries]
+            for club_id, value, division_name in entries:
+                # Ties share a rank: two clubs on the same turnover are
+                # both "4th", not 4th and 5th in arbitrary order.
+                rank = 1 + sum(1 for other in values if other > value)
+                ranks.setdefault((club_id, year), {})[field] = (
+                    rank, total, division_name
+                )
+
+        self._finance_ranks_cache = ranks
+        return ranks
+
+    def _club_finances(self, club_id: str) -> dict | None:
+        """
+        The finance table for one club's page, or None when the club has
+        no rows at all - so the section disappears entirely rather than
+        rendering an empty shell, matching has_chart/club_themes.
+        """
+        if not self._has_finances():
+            return None
+
+        raw = self.conn.execute(
+            """
+            SELECT season_end_year, disclosure, turnover, staff_costs,
+                   staff_costs_definition, profit_before_tax, net_debt,
+                   entity_name, period_months, source_url, flags
+            FROM club_finances
+            WHERE club_id = ?
+            ORDER BY season_end_year DESC
+            """,
+            (club_id,),
+        ).fetchall()
+        if not raw:
+            return None
+
+        ranks = self._finance_ranks()
+        rows, flags_seen, seasons_with_value = [], set(), {}
+
+        def rank_cell(field, year):
+            entry = ranks.get((club_id, year), {}).get(field)
+            if not entry:
+                return None
+            rank, total, division_name = entry
+            noun = "turnover" if field == "turnover" else "wage bill"
+            # "1st highest" reads badly; the top of the table is just "highest".
+            place = "Highest" if rank == 1 else f"{_ordinal(rank)} highest"
+            return {
+                "short": f"{_ordinal(rank)} of {total}",
+                "title": (
+                    f"{place} {noun} of the {total} clubs with published figures "
+                    f"in {division_name}, {season_label(year)}"
+                ),
+            }
+
+        for (year, disclosure, turnover, staff_costs, definition,
+             profit, net_debt, entity_name, period_months,
+             source_url, flags_json) in raw:
+            for flag in _parse_flags(flags_json):
+                if flag in FLAG_LABELS:
+                    flags_seen.add(flag)
+
+            row = {
+                "season_label": season_label(year),
+                "season_end_year": year,
+                "entity_name": entity_name,
+                "source_url": source_url,
+                "disclosure_note": DISCLOSURE_NOTES.get(disclosure),
+            }
+            if disclosure == finances.DISCLOSURE_FULL:
+                row.update({
+                    "turnover": _fmt_money(turnover) if turnover is not None else None,
+                    "turnover_rank": rank_cell("turnover", year),
+                    "staff_costs": (
+                        _fmt_money(staff_costs) if staff_costs is not None else None
+                    ),
+                    "staff_costs_rank": rank_cell("staff_costs", year),
+                    "wage_ratio": (
+                        f"{staff_costs / turnover * 100:.0f}%"
+                        if staff_costs is not None and turnover else None
+                    ),
+                    "profit": (
+                        _fmt_money(profit) if profit is not None else None
+                    ),
+                    "profit_negative": profit is not None and profit < 0,
+                    "net_debt": _fmt_money(net_debt) if net_debt is not None else None,
+                })
+                for field, value in (("turnover", turnover),
+                                     ("staff_costs", staff_costs),
+                                     ("profit_before_tax", profit),
+                                     ("net_debt", net_debt)):
+                    if value is not None:
+                        seasons_with_value.setdefault(field, []).append(year)
+                if period_months and period_months != 12:
+                    row["period_note"] = f"{period_months}-month period"
+            rows.append(row)
+
+        return {
+            "rows": rows,
+            "notes": [FLAG_LABELS[f] for f in sorted(flags_seen)],
+            "chart_links": self._finance_chart_links(seasons_with_value),
+        }
+
+    def _finance_chart_links(self, seasons_with_value: dict) -> list[dict]:
+        """
+        Back into the scatter charts, but only for metrics this club has a
+        value for - a link to a chart the club isn't plotted on is a dead
+        end dressed up as a route.
+        """
+        links = []
+        for key, metric in METRICS.items():
+            if metric["source"] != "finances":
+                continue
+            years = seasons_with_value.get(metric["field"])
+            if metric["field"] == "wage_ratio":
+                # Derived: needs both, so it inherits the wage bill's seasons.
+                years = seasons_with_value.get("staff_costs")
+            if not years:
+                continue
+            links.append({
+                "label": metric["label"],
+                "path": f"{metric['base']}/{season_slug(max(years))}/index.html",
+            })
+        return links
 
     def _metric_values(self, metric_key: str, season_end_year: int) -> dict[str, dict]:
         """

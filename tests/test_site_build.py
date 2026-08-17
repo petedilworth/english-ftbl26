@@ -1332,3 +1332,104 @@ def test_insights_tile_appears_when_only_an_older_season_has_data(tmp_path, monk
     assert "Revenue vs. league position" in index
     assert (out / "insights" / "finances" / "revenue" / season_slug(2023) / "index.html").exists()
     assert not (out / "insights" / "finances" / "revenue" / "index.html").exists()
+
+
+# ── Club finances on the team page ──────────────────────────────────────
+
+def _finances_on_db(tmp_path, monkeypatch, db, rows, files=None):
+    """Seed finances onto a caller-supplied db, then build the site."""
+    conn = sqlite3.connect(db)
+    finances.seed_club_finances(conn, _finances_csv(tmp_path, rows))
+    conn.commit()
+    conn.close()
+    return _build_site_with_content(
+        tmp_path, monkeypatch, db, files or {"giant-fc": RICH_STORY}
+    )
+
+
+def _l1_row(club_id, name, position, points):
+    """A 2024/25 League One standings row, for division-rank fixtures."""
+    return (2025, 3, "League One", club_id, name,
+            position, 46, 15, 10, 21, 50, 60, -10, points, "Stayed", "test")
+
+
+def test_team_page_shows_the_clubs_finances(tmp_path, monkeypatch):
+    out = _build_with_finances(tmp_path, monkeypatch, [
+        _full_row("giant-fc", 2025, turnover=12_000_000, staff_costs=9_000_000),
+        _full_row("giant-fc", 2024),
+    ])
+    page = (out / "team" / "giant-fc" / "index.html").read_text()
+    assert "<h2>Finances</h2>" in page
+    assert "£12.0m" in page and "£9.0m" in page   # newest season
+    assert "£10.0m" in page                       # prior season
+    assert season_label(2025) in page
+    assert "75%" in page                          # 9.0 / 12.0 wage ratio
+
+
+def test_team_page_without_finance_data_has_no_finances_section(tmp_path, monkeypatch):
+    # steady-fc is in the fixture db but gets no club_finances row.
+    out = _build_with_finances(tmp_path, monkeypatch, [_full_row("giant-fc", 2025)])
+    page = (out / "team" / "steady-fc" / "index.html").read_text()
+    assert "<h2>Finances</h2>" not in page
+
+
+def test_team_page_states_non_disclosure_rather_than_showing_a_gap(tmp_path, monkeypatch):
+    # The point of the disclosure column: a club that declined to publish
+    # should read as a finding, not as missing data.
+    out = _build_with_finances(tmp_path, monkeypatch, [
+        _full_row("giant-fc", 2025, disclosure="small_company",
+                  turnover="", staff_costs="", staff_costs_definition=""),
+    ])
+    page = (out / "team" / "giant-fc" / "index.html").read_text()
+    assert "small-company regime" in page
+    assert "£" not in page.split("<h2>Finances</h2>")[1].split("<h2>")[0]
+
+
+def test_finance_rank_is_measured_within_the_division(tmp_path, monkeypatch):
+    db = _build_capacity_db(
+        tmp_path,
+        extra_clubs=[("rich-fc", "Rich FC", 3), ("poor-fc", "Poor FC", 3)],
+        extra_rows=[_l1_row("rich-fc", "Rich FC", 1, 90),
+                    _l1_row("poor-fc", "Poor FC", 20, 40)],
+    )
+    out = _finances_on_db(tmp_path, monkeypatch, db, [
+        _full_row("rich-fc", 2025, turnover=30_000_000),
+        _full_row("giant-fc", 2025, turnover=20_000_000),
+        _full_row("poor-fc", 2025, turnover=10_000_000),
+    ])
+    page = (out / "team" / "giant-fc" / "index.html").read_text()
+    assert "2nd of 3" in page
+    assert "2nd highest turnover of the 3 clubs with published figures" in page
+    # The top of the table reads as "Highest", not "1st highest".
+    rich = (out / "team" / "rich-fc" / "index.html").read_text()
+    assert "Highest turnover of the 3 clubs" in rich
+
+
+def test_finance_rank_denominator_counts_only_published_figures(tmp_path, monkeypatch):
+    # Coverage is partial by design, so the rank must never imply that
+    # every club in the division published a figure.
+    db = _build_capacity_db(
+        tmp_path,
+        extra_clubs=[("rich-fc", "Rich FC", 3), ("poor-fc", "Poor FC", 3),
+                     ("quiet-fc", "Quiet FC", 3)],
+        extra_rows=[_l1_row("rich-fc", "Rich FC", 1, 90),
+                    _l1_row("poor-fc", "Poor FC", 20, 40),
+                    _l1_row("quiet-fc", "Quiet FC", 15, 55)],
+    )
+    out = _finances_on_db(tmp_path, monkeypatch, db, [
+        _full_row("rich-fc", 2025, turnover=30_000_000),
+        _full_row("giant-fc", 2025, turnover=20_000_000),
+        _full_row("poor-fc", 2025, turnover=10_000_000),
+        # In the division and filing, but with no turnover published.
+        _full_row("quiet-fc", 2025, turnover=""),
+    ])
+    page = (out / "team" / "giant-fc" / "index.html").read_text()
+    assert "2nd of 3" in page
+    assert "2nd of 4" not in page
+
+
+def test_team_page_links_back_to_the_finance_charts(tmp_path, monkeypatch):
+    out = _build_with_finances(tmp_path, monkeypatch, [_full_row("giant-fc", 2025)])
+    page = (out / "team" / "giant-fc" / "index.html").read_text()
+    assert "insights/finances/revenue/" in page
+    assert "Compare across the pyramid" in page
