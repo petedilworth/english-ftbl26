@@ -59,6 +59,53 @@
 </table>
 {% endif %}
 
+{% if finances %}
+<h2>Finances</h2>
+<div class="table-scroll">
+<table class="standings">
+  <tr>
+    <th>Season</th><th class="num">Turnover</th><th class="num">Wages</th>
+    <th class="num">Wages ÷ rev</th><th class="num">Profit before tax</th>
+    <th class="num">Net debt</th><th></th>
+  </tr>
+  {% for row in finances.rows %}
+  <tr>
+    <td>{{ row.season_label }}{% if row.period_note %}<span class="finance-rank">{{ row.period_note }}</span>{% endif %}</td>
+    {% if row.disclosure_note %}
+    <td colspan="5" class="finance-withheld">{{ row.disclosure_note }}</td>
+    {% else %}
+    <td class="num">
+      {{ row.turnover or "—" }}
+      {% if row.turnover_rank %}<span class="finance-rank" title="{{ row.turnover_rank.title }}">{{ row.turnover_rank.short }}</span>{% endif %}
+    </td>
+    <td class="num">
+      {{ row.staff_costs or "—" }}
+      {% if row.staff_costs_rank %}<span class="finance-rank" title="{{ row.staff_costs_rank.title }}">{{ row.staff_costs_rank.short }}</span>{% endif %}
+    </td>
+    <td class="num">{{ row.wage_ratio or "—" }}</td>
+    <td class="num{% if row.profit_negative %} finance-loss{% endif %}">{{ row.profit or "—" }}</td>
+    <td class="num">{{ row.net_debt or "—" }}</td>
+    {% endif %}
+    <td>{% if row.source_url %}<a class="finance-source" href="{{ row.source_url }}" title="{{ row.entity_name or 'Source' }}">source</a>{% endif %}</td>
+  </tr>
+  {% endfor %}
+</table>
+</div>
+<p class="finance-note">
+  Figures come from accounts filed at Companies House, as reported in the
+  press — cross-referenced before entry, and left blank rather than guessed
+  where sources couldn't be reconciled.
+  Rankings compare only the clubs in that division whose figures have been
+  collected, which is fewer than the full division.
+  {% for note in finances.notes %}{{ note }} {% endfor %}
+</p>
+{% if finances.chart_links %}
+<p class="finance-note">Compare across the pyramid:
+  {% for link in finances.chart_links %}<a href="{{ root }}/{{ link.path }}">{{ link.label }}</a>{% if not loop.last %} · {% endif %}{% endfor %}
+</p>
+{% endif %}
+{% endif %}
+
 <h2>The story</h2>
 <div class="narrative">
 {% if story_sections or extra_html %}
