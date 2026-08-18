@@ -1433,3 +1433,117 @@ def test_team_page_links_back_to_the_finance_charts(tmp_path, monkeypatch):
     page = (out / "team" / "giant-fc" / "index.html").read_text()
     assert "insights/finances/revenue/" in page
     assert "Compare across the pyramid" in page
+
+
+# ── Safe thresholds insight ──────────────────────────────────────────────
+
+def _build_with_safe_thresholds(tmp_path, monkeypatch, db, intro_prose=None):
+    """Like _build_with_insight_content, but seeds insights/safe-thresholds.md."""
+    import shutil
+    import site_build as sb
+
+    content_dir = tmp_path / "content"
+    (content_dir / "insights").mkdir(parents=True)
+    (content_dir / "giant-fc.md").write_text(RICH_STORY, encoding="utf-8")
+    if intro_prose is not None:
+        (content_dir / "insights" / "safe-thresholds.md").write_text(
+            intro_prose, encoding="utf-8"
+        )
+    real_root = Path(__file__).parent.parent
+    shutil.copytree(real_root / "templates", tmp_path / "templates")
+    shutil.copytree(real_root / "static", tmp_path / "static")
+    monkeypatch.setattr(sb, "PROJECT_ROOT", tmp_path)
+    out = tmp_path / "site"
+    SiteBuilder(db, out, charts_enabled=False).build()
+    return out
+
+
+def _stayed_row(club_id, name, tier, points, played=None, season=2024):
+    played = played or (38 if tier == 1 else 46)
+    return (season, tier, f"Tier {tier}", club_id, name,
+            10, played, 5, 5, 5, 20, 20, 0, points, "Stayed", "test")
+
+
+SAFE_THRESHOLDS_INTRO = "The magic number for staying up, in theory and in practice."
+
+
+def test_safe_thresholds_intro_renders_the_full_paragraph(tmp_path, monkeypatch):
+    # Regression for a real bug: an earlier version indexed into the intro
+    # string instead of using it directly, so the page showed a single
+    # character instead of the paragraph.
+    db = _build_capacity_db(tmp_path)
+    out = _build_with_safe_thresholds(tmp_path, monkeypatch, db, SAFE_THRESHOLDS_INTRO)
+    page = (out / "insights" / "safe-thresholds" / "index.html").read_text()
+    assert SAFE_THRESHOLDS_INTRO in page
+
+
+def test_insights_index_has_exactly_one_safe_thresholds_tile(tmp_path, monkeypatch):
+    # Regression: an earlier version listed the tile unconditionally *and*
+    # conditionally, so it appeared twice whenever the content file existed.
+    db = _build_capacity_db(tmp_path)
+    out = _build_with_safe_thresholds(tmp_path, monkeypatch, db, SAFE_THRESHOLDS_INTRO)
+    index = (out / "insights" / "index.html").read_text()
+    assert index.count("Safe thresholds") == 1
+
+
+def test_safe_thresholds_absent_without_content_file(tmp_path, monkeypatch):
+    db = _build_capacity_db(tmp_path)
+    out = _build_with_safe_thresholds(tmp_path, monkeypatch, db, intro_prose=None)
+    assert not (out / "insights" / "safe-thresholds" / "index.html").exists()
+    assert "Safe thresholds" not in (out / "insights" / "index.html").read_text()
+
+
+def test_records_page_renders_only_once(tmp_path, monkeypatch):
+    # Regression: an earlier version duplicated the whole method body, so
+    # records/index.html was built (harmlessly but wastefully) twice.
+    db = _build_capacity_db(tmp_path)
+    out = _build_with_safe_thresholds(tmp_path, monkeypatch, db, intro_prose=None)
+    page = (out / "insights" / "records" / "index.html").read_text()
+    assert page.count("<h1>Records") == 1
+
+
+def test_safe_thresholds_shows_games_played_per_row(tmp_path, monkeypatch):
+    db = _build_capacity_db(
+        tmp_path,
+        extra_clubs=[("shortseason-fc", "Shortseason FC", 1)],
+        extra_rows=[_stayed_row("shortseason-fc", "Shortseason FC", 1, points=20, played=33)],
+    )
+    out = _build_with_safe_thresholds(tmp_path, monkeypatch, db, SAFE_THRESHOLDS_INTRO)
+    page = (out / "insights" / "safe-thresholds" / "index.html").read_text()
+    assert "Played" in page
+    # The low points total sits directly next to its games-played count, so
+    # a reader can see the season was short rather than a genuine record.
+    row = re.search(r"<tr>\s*<td[^>]*>.*?Shortseason.*?</tr>", page, re.S).group(0)
+    assert re.search(r">\s*33\s*<", row)
+
+
+def test_safe_thresholds_groups_rows_by_division_not_just_points(tmp_path, monkeypatch):
+    # Two tier-1 clubs with higher points than two tier-3 clubs. A pure
+    # points-ascending sort would interleave the tiers (tier-3's 10/15
+    # ahead of tier-1's 20/25); grouped by division, both tier-1 rows must
+    # come first despite their higher points.
+    db = _build_capacity_db(
+        tmp_path,
+        extra_clubs=[
+            ("top-low-fc", "Top Low FC", 1), ("top-high-fc", "Top High FC", 1),
+            ("low-low-fc", "Low Low FC", 3), ("low-high-fc", "Low High FC", 3),
+        ],
+        extra_rows=[
+            _stayed_row("top-low-fc", "Top Low FC", 1, points=20),
+            _stayed_row("top-high-fc", "Top High FC", 1, points=25),
+            _stayed_row("low-low-fc", "Low Low FC", 3, points=10),
+            _stayed_row("low-high-fc", "Low High FC", 3, points=15),
+        ],
+    )
+    out = _build_with_safe_thresholds(tmp_path, monkeypatch, db, SAFE_THRESHOLDS_INTRO)
+    page = (out / "insights" / "safe-thresholds" / "index.html").read_text()
+
+    names_in_order = [
+        m.group(1) for m in re.finditer(
+            r'href="[^"]*/team/(?:top|low)-[a-z]+-fc/index\.html">([^<]+)<', page
+        )
+    ]
+    assert names_in_order == ["Top Low FC", "Top High FC", "Low Low FC", "Low High FC"], (
+        "expected both tier-1 rows before both tier-3 rows, "
+        "each internally still ordered by ascending points"
+    )
