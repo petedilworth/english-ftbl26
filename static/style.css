@@ -605,3 +605,11 @@ table.matrix.compact .matrix-highlight {
 @media (max-width: 540px) {
   .ribbon-cell { width: 5px; height: 14px; }
 }
+
+/* Home page: story hooks, club search, section sub-headings */
+.group-sub { color: var(--muted); font-size: 13px; margin: 2px 0 8px; }
+.home-note { color: var(--muted); font-size: 13px; margin: 6px 0 0; }
+.hook-grid { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+.tile.hook { display: flex; flex-direction: column; gap: 6px; }
+.hook .hook-text { font-weight: 600; font-size: 14px; line-height: 1.4; }
+.home-results { margin: 8px 0 0; }
