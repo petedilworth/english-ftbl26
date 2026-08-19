@@ -3,14 +3,63 @@
 <h1>English Football History</h1>
 <p class="subtitle">Standings, stories and trajectories across Tiers 1–5, from 1993/94 to today.</p>
 
+{% if scale %}
+{# Counted at build time, not written down, so the bar can't drift from
+   the data it describes. A count of zero drops its card entirely. #}
+<div class="stat-cards">
+  {% for card in scale %}
+  <div class="stat-card"><div class="stat-value">{{ card.value }}</div><div class="stat-label">{{ card.label }}</div></div>
+  {% endfor %}
+</div>
+{% endif %}
+
+{% if search_clubs %}
+<h2>Find your club</h2>
+<input class="search-input" id="home-search" type="search"
+       placeholder="Search {{ search_clubs|length }} clubs…" autocomplete="off">
+{# Hidden until a query is typed: the list is here so results are instant,
+   but 162 rows is not what the page should open with. #}
+<ul class="team-list home-results" id="home-results" hidden>
+  {% for club in search_clubs %}
+  <li data-name="{{ club.search_key }}"><a href="{{ root }}/team/{{ club.club_id }}/index.html">{{ club.name }}</a></li>
+  {% endfor %}
+</ul>
+<p class="home-note" id="home-no-match" hidden>No club matches that.</p>
+<p class="home-note">Or <a href="{{ root }}/teams/index.html">browse all {{ search_clubs|length }} clubs</a> by division and A–Z.</p>
+{% endif %}
+
+{% if hooks %}
+<h2>Worth your time</h2>
+<div class="tile-grid hook-grid">
+  {% for hook in hooks %}
+  <a class="tile hook" href="{{ root }}/{{ hook.path }}">
+    <span class="hook-text">{{ hook.text }}</span>
+    <span class="tile-sub">{{ hook.label }}</span>
+  </a>
+  {% endfor %}
+</div>
+{% endif %}
+
+<h2>Explore</h2>
+<div class="tile-grid">
+  <a class="tile" href="{{ root }}/chart/index.html"><span class="tile-title">Trajectory chart</span><br><span class="tile-sub">Compare any clubs' paths</span></a>
+  <a class="tile" href="{{ root }}/matrix/index.html"><span class="tile-title">The Matrix</span><br><span class="tile-sub">Every division × every season</span></a>
+  {% if has_map %}
+  <a class="tile" href="{{ root }}/map/index.html"><span class="tile-title">Groundhop Map</span><br><span class="tile-sub">Every ground, by season and story</span></a>
+  {% endif %}
+</div>
+
+<h2>Browse</h2>
 <div class="tile-grid">
   <a class="tile" href="{{ root }}/seasons/index.html"><span class="tile-title">Seasons</span><br><span class="tile-sub">{{ season_count }} years, every table</span></a>
-  <a class="tile" href="{{ root }}/teams/index.html"><span class="tile-title">Teams</span><br><span class="tile-sub">{{ team_count }} clubs, each with a story</span></a>
+  <a class="tile" href="{{ root }}/teams/index.html"><span class="tile-title">Teams</span><br><span class="tile-sub">{{ team_count }} clubs, each with a page</span></a>
   <a class="tile" href="{{ root }}/division/index.html"><span class="tile-title">Divisions</span><br><span class="tile-sub">Five tiers through time</span></a>
-  <a class="tile" href="{{ root }}/insights/index.html"><span class="tile-title">Insights</span><br><span class="tile-sub">Yo-yo clubs, fallen giants &amp; more</span></a>
+  <a class="tile" href="{{ root }}/themes/index.html"><span class="tile-title">Themes</span><br><span class="tile-sub">Administration, phoenix clubs &amp; more</span></a>
+  <a class="tile" href="{{ root }}/insights/index.html"><span class="tile-title">Insights</span><br><span class="tile-sub">Stories and interactive charts</span></a>
 </div>
 
 <h2>The current season — {{ current_label }}</h2>
+{% if season_note %}<p class="home-note">{{ season_note }}</p>{% endif %}
 {% for division in divisions %}
 <h3>{{ division.name }}</h3>
 <div class="table-scroll">
@@ -29,4 +78,6 @@
 </table>
 </div>
 {% endfor %}
+
+<script src="{{ root }}/static/home-search.js"></script>
 {% endblock %}

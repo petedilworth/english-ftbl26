@@ -551,7 +551,9 @@ def _build_site_with_content(tmp_path, monkeypatch, db, files: dict):
     import site_build as sb
 
     content_dir = tmp_path / "content"
-    content_dir.mkdir()
+    # exist_ok: callers may have already written content/insights/ files
+    # that some pages - and the hooks linking to them - are gated on.
+    content_dir.mkdir(exist_ok=True)
     for club_id, text in files.items():
         (content_dir / f"{club_id}.md").write_text(text, encoding="utf-8")
     real_root = Path(__file__).parent.parent
@@ -1223,7 +1225,11 @@ def test_revenue_metric_renders_its_own_page(tmp_path, monkeypatch):
     page = (out / "insights" / "finances" / "revenue" / "index.html").read_text()
     assert page.count("<circle") == 1
     assert "£10.0m revenue" in page
-    assert "Revenue vs. league position" in (out / "insights" / "index.html").read_text()
+    # The five financial metrics share one tile on the index - they are one
+    # page with chips to switch metric - and it points at a page that exists.
+    index = (out / "insights" / "index.html").read_text()
+    assert "Club finances" in index
+    assert "finances/revenue/index.html" in index
 
 
 def test_log_scale_keeps_a_club_three_orders_smaller_inside_the_frame(tmp_path, monkeypatch):
@@ -1329,9 +1335,14 @@ def test_insights_tile_appears_when_only_an_older_season_has_data(tmp_path, monk
     # data only in earlier seasons built its pages but vanished from the index.
     out = _build_with_finances(tmp_path, monkeypatch, [_full_row("giant-fc", 2023)])
     index = (out / "insights" / "index.html").read_text()
-    assert "Revenue vs. league position" in index
+    assert "Club finances" in index
     assert (out / "insights" / "finances" / "revenue" / season_slug(2023) / "index.html").exists()
+    # Only the *current* season is written to the bare base URL, so for a
+    # metric whose newest data is older than the current season the tile
+    # must link to the season page. It used to link here regardless, which
+    # was a 404 for all five finance tiles on the live site.
     assert not (out / "insights" / "finances" / "revenue" / "index.html").exists()
+    assert f"finances/revenue/{season_slug(2023)}/index.html" in index
 
 
 # ── Club finances on the team page ──────────────────────────────────────
@@ -1547,3 +1558,150 @@ def test_safe_thresholds_groups_rows_by_division_not_just_points(tmp_path, monke
         "expected both tier-1 rows before both tier-3 rows, "
         "each internally still ordered by ascending points"
     )
+
+
+# ── The front door: home page scale bar, hooks and club search ───────────
+
+SAFE_THRESHOLDS_MD = "The magic number for survival is not one number at all.\n"
+
+
+def _front_door(tmp_path, monkeypatch, rows=None, insights=None):
+    """
+    Build the site and return (out, home html). `rows` seeds club_finances;
+    `insights` writes content/insights/<name>.md, which some pages - and so
+    some hooks, which must never link to a page that wasn't built - are
+    gated on.
+    """
+    tmp_path.mkdir(parents=True, exist_ok=True)
+    db = _db_on_disk(tmp_path)
+    if rows:
+        conn = sqlite3.connect(db)
+        finances.seed_club_finances(conn, _finances_csv(tmp_path, rows))
+        conn.commit()
+        conn.close()
+    if insights:
+        target = tmp_path / "content" / "insights"
+        target.mkdir(parents=True)
+        for name, text in insights.items():
+            (target / f"{name}.md").write_text(text, encoding="utf-8")
+    out = _build_site_with_content(
+        tmp_path, monkeypatch, db, {"giant-fc": RICH_STORY}
+    )
+    return out, (out / "index.html").read_text()
+
+
+def _hooks(home):
+    return re.findall(
+        r'class="tile hook" href="([^"]+)">\s*<span class="hook-text">([^<]*)</span>',
+        home,
+    )
+
+
+def test_home_scale_bar_counts_reachable_things(tmp_path, monkeypatch):
+    out, home = _front_door(tmp_path, monkeypatch)
+    # The club count must agree with the number of team pages that exist and
+    # with the teams index. The live database has one club in club_master
+    # with no trajectory row and so no page, which is how home came to
+    # advertise 162 clubs while the teams index said 161.
+    pages = len(list((out / "team").iterdir()))
+    assert f'stat-value">{pages}</div><div class="stat-label">clubs<' in home
+    assert f"{pages} clubs to have played" in (out / "teams" / "index.html").read_text()
+    # Every club count the page states must be the same number - the scale
+    # bar, the search placeholder, the browse-all link and the Teams tile.
+    assert f"Search {pages} clubs" in home
+    assert f"browse all {pages} clubs" in home
+    assert f"{pages} clubs, each with a page" in home
+
+
+def test_home_scale_bar_drops_a_count_that_is_zero(tmp_path, monkeypatch):
+    # No finances seeded, so there are no club-season accounts to boast of.
+    # An empty shelf should say nothing rather than advertise a 0.
+    _, home = _front_door(tmp_path, monkeypatch)
+    assert "club-season accounts" not in home
+    assert '<div class="stat-value">0</div>' not in home
+
+
+def test_home_hooks_carry_a_number_and_a_link_that_resolves(tmp_path, monkeypatch):
+    out, home = _front_door(
+        tmp_path, monkeypatch,
+        rows=[_full_row("giant-fc", 2025, profit_before_tax=-5_000_000)],
+        insights={"safe-thresholds": SAFE_THRESHOLDS_MD},
+    )
+    hooks = _hooks(home)
+    assert hooks, "expected at least one story hook on the home page"
+    for href, text in hooks:
+        assert re.search(r"\d", text), f"hook has no number in it: {text!r}"
+        assert "None" not in text, f"unformatted None leaked into a hook: {text!r}"
+        assert (out / href.removeprefix("./")).exists(), f"hook links nowhere: {href}"
+
+
+def test_home_hooks_survive_without_any_finance_data(tmp_path, monkeypatch):
+    # Three of the five recipes read club_finances. A database without that
+    # table should still get a hook out of standings alone - not an empty
+    # section, and not a traceback.
+    out, home = _front_door(
+        tmp_path, monkeypatch, insights={"safe-thresholds": SAFE_THRESHOLDS_MD},
+    )
+    hooks = _hooks(home)
+    assert hooks
+    for href, _ in hooks:
+        assert (out / href.removeprefix("./")).exists()
+
+
+def test_home_hooks_never_link_to_a_page_that_was_not_built(tmp_path, monkeypatch):
+    # Without the safe-thresholds content file that page isn't built, so the
+    # hook that would point at it must not be offered either.
+    _, home = _front_door(tmp_path, monkeypatch)
+    assert "safe-thresholds" not in home
+
+
+def test_home_build_is_byte_identical_twice(tmp_path, monkeypatch):
+    # Guards against anyone making the hook rotation random later: a deploy
+    # you can't diff is a deploy you can't review.
+    rows = [_full_row("giant-fc", 2025, profit_before_tax=-5_000_000)]
+    first = _front_door(tmp_path / "a", monkeypatch, rows=rows)[1]
+    second = _front_door(tmp_path / "b", monkeypatch, rows=rows)[1]
+    assert first == second
+
+
+def test_home_club_search_is_present_but_closed_until_typed(tmp_path, monkeypatch):
+    out, home = _front_door(tmp_path, monkeypatch)
+    assert 'id="home-search"' in home
+    # The list ships with the page so results are instant, but the page must
+    # not open with every club on screen.
+    assert 'id="home-results" hidden' in home
+    assert home.count('data-name="') == len(list((out / "team").iterdir()))
+
+
+def test_home_names_an_early_season_rather_than_looking_broken(tmp_path, monkeypatch):
+    # The newest season enters the database with its first results, so home
+    # can show one division of P1 rows for weeks. Say so on the page.
+    db = _db_on_disk(tmp_path)
+    conn = sqlite3.connect(db)
+    conn.execute(
+        """
+        INSERT INTO standings (season_end_year, tier, division_name, club_id,
+            club_name, position, played, won, drawn, lost, gf, ga, gd,
+            points, status, source)
+        VALUES (2026, 5, 'National League', 'giant-fc', 'Giant FC',
+                1, 1, 1, 0, 0, 3, 0, 3, 3, 'In progress', 'test')
+        """
+    )
+    conn.commit()
+    conn.close()
+    out = _build_site_with_content(tmp_path, monkeypatch, db, {"giant-fc": RICH_STORY})
+    home = (out / "index.html").read_text()
+    assert "has kicked off" in home
+    assert "1 game in" in home
+
+
+def test_insights_index_groups_and_has_no_duplicate_targets(tmp_path, monkeypatch):
+    out = _build_with_finances(tmp_path, monkeypatch, [_full_row("giant-fc", 2025)])
+    index = (out / "insights" / "index.html").read_text()
+    assert "Interactive charts" in index and "Stories" in index
+    paths = re.findall(r'class="tile" href="([^"]+)"', index)
+    assert len(paths) == len(set(paths)), "duplicate tiles on the insights index"
+    # One tile for all five financial metrics, not five.
+    assert sum(1 for p in paths if "finances/" in p) == 1
+    for path in paths:
+        assert (out / "insights" / path.removeprefix("../insights/")).exists(), path

@@ -76,6 +76,15 @@ def _parse_flags(raw: str | None) -> list[str]:
     return parsed if isinstance(parsed, list) else []
 
 
+def _search_key(name: str) -> str:
+    """
+    Fold a club name to the alphanumeric-and-spaces form both search boxes
+    match against, so the home page and the teams index can never disagree
+    about what "Brighton & Hove Albion" is called.
+    """
+    return "".join(c if c.isalnum() else " " for c in name.lower()).strip()
+
+
 def _fmt_money(value: float) -> str:
     """Money at football scale: £661.0m, £8.9m, £450k. Sign kept for losses."""
     sign = "−" if value < 0 else ""
@@ -409,6 +418,9 @@ class SiteBuilder:
         # Division ranks for every club-season, built once on first use -
         # build_teams walks every club, so a query per club would be wasteful.
         self._finance_ranks_cache: dict | None = None
+        # build_insights, _insight_scatter and the home hooks all ask the
+        # same (metric, season) questions, and each answer walks the season.
+        self._metric_points_cache: dict = {}
         self.seasons = [
             r[0] for r in self.conn.execute(
                 "SELECT DISTINCT season_end_year FROM standings ORDER BY season_end_year"
@@ -469,15 +481,302 @@ class SiteBuilder:
 
     def build_home(self) -> None:
         current = self.seasons[-1]
-        team_count = self.conn.execute("SELECT COUNT(*) FROM club_master").fetchone()[0]
+        divisions = self.season_divisions(current)
+        # Same reachable-things rule as the scale bar: club_master carries a
+        # club with no trajectory row and so no team page.
+        team_count = self.conn.execute(
+            "SELECT COUNT(*) FROM club_trajectory"
+        ).fetchone()[0]
         self.render(
             "home.html", self.out / "index.html", 0,
             title="Home",
             current_label=season_label(current),
-            divisions=self.season_divisions(current),
+            divisions=divisions,
+            season_note=self._season_progress_note(divisions),
+            scale=self._home_scale(),
+            hooks=self._home_hooks(),
+            search_clubs=self._home_search_clubs(),
+            has_map=self._has_grounds(),
             season_count=len(self.seasons),
             team_count=team_count,
         )
+
+    # ── Home page ──────────────────────────────────────────────────────────
+
+    def _has_grounds(self) -> bool:
+        cols = {r[1] for r in self.conn.execute("PRAGMA table_info(club_master)")}
+        return "latitude" in cols and bool(self.conn.execute(
+            "SELECT 1 FROM club_master WHERE latitude IS NOT NULL LIMIT 1"
+        ).fetchone())
+
+    def _home_scale(self) -> list[dict]:
+        """
+        What the site actually holds, for the bar under the title.
+
+        Every figure is counted rather than written down - a hardcoded "162
+        clubs" drifts silently the first time the Monday pipeline adds one -
+        and a figure that comes back zero drops its card instead of
+        advertising an empty shelf. A fresh clone with no story files should
+        say nothing about story files.
+        """
+        content_dir = PROJECT_ROOT / "content"
+        stories = sum(
+            1 for r in self.conn.execute("SELECT club_id FROM club_trajectory")
+            if (content_dir / f"{r[0]}.md").exists()
+        )
+        accounts = 0
+        if self._has_finances():
+            accounts = self.conn.execute(
+                "SELECT COUNT(*) FROM club_finances"
+            ).fetchone()[0]
+        grounds = 0
+        if self._has_grounds():
+            # Joined the same way build_map joins, so the bar counts the pins
+            # the map actually draws rather than every row with a coordinate.
+            grounds = self.conn.execute(
+                """
+                SELECT COUNT(*) FROM club_master cm
+                JOIN club_trajectory t ON t.club_id = cm.club_id
+                WHERE cm.latitude IS NOT NULL
+                """
+            ).fetchone()[0]
+
+        cards = [
+            # club_trajectory, not club_master: a club without a trajectory
+            # row gets no team page, and the teams index counts the same way.
+            # Every figure here should point at something reachable.
+            (self.conn.execute(
+                "SELECT COUNT(*) FROM club_trajectory").fetchone()[0], "clubs"),
+            (len(self.seasons), "seasons"),
+            (stories, "written histories"),
+            (accounts, "club-season accounts"),
+            (grounds, "grounds mapped"),
+        ]
+        return [
+            {"value": f"{n:,}", "label": label} for n, label in cards if n
+        ]
+
+    def _home_search_clubs(self) -> list[dict]:
+        """
+        The club list behind the home search box. build_home runs before
+        build_teams, so this comes straight from the trajectory table rather
+        than from the teams_meta that page assembles - same source, same
+        _search_key, no ordering dependency between the two builders.
+        """
+        return [
+            {
+                "club_id": r["club_id"],
+                "name": r["canonical_name"],
+                "search_key": _search_key(r["canonical_name"]),
+            }
+            for r in self.conn.execute(
+                "SELECT club_id, canonical_name FROM club_trajectory"
+                " ORDER BY canonical_name"
+            )
+        ]
+
+    def _season_progress_note(self, divisions: list[dict]) -> str:
+        """
+        Name an early season for what it is. The newest season enters the
+        database as soon as its first results land, so for weeks the home
+        table can be one division deep with every club on P1 - which reads
+        as a broken page unless the page says otherwise.
+        """
+        started, total = len(divisions), len(TIER_SLUGS)
+        if not started or started >= total:
+            return ""
+        played = max(
+            (row["played"] or 0)
+            for division in divisions for row in division["rows"]
+        ) if any(d["rows"] for d in divisions) else 0
+        opening = (
+            f"{started} of {total} divisions have kicked off"
+            if started > 1 else
+            f"Only {divisions[0]['name']} has kicked off"
+        )
+        if played and played <= 3:
+            return f"{opening}, {played} game{'s' if played != 1 else ''} in."
+        return f"{opening}."
+
+    def _home_hooks(self, limit: int = 4) -> list[dict]:
+        """
+        The "show me something interesting" door: a few findings with real
+        numbers in them, each linking to the page that explains it.
+
+        Computed from the database at build time, never written down. The
+        pipeline refreshes the data every Monday, so a hardcoded figure
+        would go stale silently - and unsourced numbers are against the
+        grain of a site that prints an honest "14th of 15" rather than a
+        flattering "14th of 24".
+
+        Recipes run in a fixed order, strongest first, and each returns None
+        when its data isn't there, so the section shrinks rather than
+        breaks. Deliberately not randomised: two builds of the same database
+        should be byte-identical, or nobody can diff a deploy.
+        """
+        recipes = (
+            self._hook_wage_ratio,
+            self._hook_biggest_loss,
+            self._hook_outspender,
+            self._hook_points_relegated,
+            self._hook_longest_stay,
+        )
+        hooks: list[dict] = []
+        for recipe in recipes:
+            try:
+                hook = recipe()
+            except sqlite3.Error as exc:      # a shape we didn't expect
+                logger.warning("Home hook %s skipped: %s", recipe.__name__, exc)
+                hook = None
+            if hook:
+                hooks.append(hook)
+            if len(hooks) >= limit:
+                break
+        return hooks
+
+    def _hook_wage_ratio(self) -> dict | None:
+        """Wages above turnover - the overreach that precedes the trouble."""
+        path = self._metric_landing_path("wage-ratio") if self._has_finances() else None
+        if not path:
+            return None
+        row = self.conn.execute(
+            """
+            SELECT t.canonical_name AS name, f.season_end_year AS year,
+                   f.turnover AS turnover, f.staff_costs AS staff_costs
+            FROM club_finances f
+            JOIN club_trajectory t ON t.club_id = f.club_id
+            WHERE f.turnover > 0 AND f.staff_costs > 0
+            ORDER BY CAST(f.staff_costs AS REAL) / f.turnover DESC, f.club_id
+            LIMIT 1
+            """
+        ).fetchone()
+        if not row:
+            return None
+        ratio = 100.0 * row["staff_costs"] / row["turnover"]
+        if ratio < 100:
+            # Below 100% this is a chart, not a headline.
+            return None
+        return {
+            "text": (f"{row['name']} paid {ratio:.0f}% of everything they earned "
+                     f"straight back out in wages"),
+            "label": (f"{_fmt_money(row['staff_costs'])} of "
+                      f"{_fmt_money(row['turnover'])}, {season_label(row['year'])}"),
+            "path": path,
+        }
+
+    def _hook_biggest_loss(self) -> dict | None:
+        path = self._metric_landing_path("profit") if self._has_finances() else None
+        if not path:
+            return None
+        row = self.conn.execute(
+            """
+            SELECT t.canonical_name AS name, f.season_end_year AS year,
+                   f.profit_before_tax AS pbt
+            FROM club_finances f
+            JOIN club_trajectory t ON t.club_id = f.club_id
+            WHERE f.profit_before_tax IS NOT NULL AND f.profit_before_tax < 0
+            ORDER BY f.profit_before_tax ASC, f.club_id
+            LIMIT 1
+            """
+        ).fetchone()
+        if not row:
+            return None
+        return {
+            "text": (f"{row['name']} lost {_fmt_money(abs(row['pbt']))} before tax "
+                     f"in a single year"),
+            "label": f"{season_label(row['year'])} accounts",
+            "path": path,
+        }
+
+    def _hook_outspender(self) -> dict | None:
+        """
+        A club paying more in wages than clubs a division above it. Counted
+        only against the clubs in that division whose accounts we hold, and
+        the sentence says so - the same honest denominator the club-page
+        finance ranks use.
+        """
+        path = self._metric_landing_path("wages") if self._has_finances() else None
+        if not path:
+            return None
+        row = self.conn.execute(
+            """
+            SELECT t.canonical_name AS name, f.season_end_year AS year,
+                   f.staff_costs AS wages, s.division_name AS division,
+                   (SELECT COUNT(*) FROM club_finances f2
+                      JOIN standings s2 ON s2.club_id = f2.club_id
+                       AND s2.season_end_year = f2.season_end_year
+                     WHERE f2.season_end_year = f.season_end_year
+                       AND s2.tier = s.tier - 1
+                       AND f2.staff_costs IS NOT NULL
+                       AND f2.staff_costs < f.staff_costs) AS beaten,
+                   (SELECT COUNT(*) FROM club_finances f3
+                      JOIN standings s3 ON s3.club_id = f3.club_id
+                       AND s3.season_end_year = f3.season_end_year
+                     WHERE f3.season_end_year = f.season_end_year
+                       AND s3.tier = s.tier - 1
+                       AND f3.staff_costs IS NOT NULL) AS above_total
+            FROM club_finances f
+            JOIN club_trajectory t ON t.club_id = f.club_id
+            JOIN standings s ON s.club_id = f.club_id
+                            AND s.season_end_year = f.season_end_year
+            WHERE f.staff_costs IS NOT NULL AND s.tier > 1
+            ORDER BY beaten DESC, f.staff_costs DESC, f.club_id
+            LIMIT 1
+            """
+        ).fetchone()
+        if not row or not row["beaten"]:
+            return None
+        return {
+            "text": (f"{row['name']} outspent {row['beaten']} of the "
+                     f"{row['above_total']} clubs a division above them on wages"),
+            "label": (f"{_fmt_money(row['wages'])} in {row['division']}, "
+                      f"{season_label(row['year'])}"),
+            "path": path,
+        }
+
+    def _hook_points_relegated(self) -> dict | None:
+        source = PROJECT_ROOT / "content" / "insights" / "safe-thresholds.md"
+        if not source.exists():
+            return None
+        row = self.conn.execute(
+            """
+            SELECT club_name AS name, season_end_year AS year,
+                   division_name AS division, points AS points
+            FROM standings
+            WHERE status = 'Relegated' AND played >= 30
+            ORDER BY points DESC, club_name
+            LIMIT 1
+            """
+        ).fetchone()
+        if not row:
+            return None
+        return {
+            "text": (f"{row['name']} went down with {row['points']} points — "
+                     f"the highest total ever relegated here"),
+            "label": f"{row['division']}, {season_label(row['year'])}",
+            "path": "insights/safe-thresholds/index.html",
+        }
+
+    def _hook_longest_stay(self) -> dict | None:
+        if "current_tier_streak" not in self.trajectory_cols:
+            return None
+        row = self.conn.execute(
+            """
+            SELECT canonical_name AS name, current_tier_streak AS streak
+            FROM club_trajectory
+            WHERE current_tier = 1 AND current_tier_streak IS NOT NULL
+            ORDER BY current_tier_streak DESC, canonical_name
+            LIMIT 1
+            """
+        ).fetchone()
+        if not row or not row["streak"] or row["streak"] < 5:
+            return None
+        return {
+            "text": (f"{row['name']} have never once left the top flight in "
+                     f"{row['streak']} seasons"),
+            "label": "Who stayed up, who fell, and how far",
+            "path": "insights/fallen-giants/index.html",
+        }
 
     def build_seasons(self) -> None:
         entries = []
@@ -749,7 +1048,7 @@ class SiteBuilder:
                 "tier": t["current_tier"],
                 "tier_label": TIER_SLUGS.get(t["current_tier"], (None, f"Tier {t['current_tier']}"))[1],
                 "color": self.color(club_id),
-                "search_key": "".join(c if c.isalnum() else " " for c in t["canonical_name"].lower()).strip(),
+                "search_key": _search_key(t["canonical_name"]),
             })
 
         by_tier = []
@@ -957,75 +1256,108 @@ class SiteBuilder:
         return {"text": text, "club_id": club_id, "num": num}
 
     def build_insights(self) -> None:
-        entries = [
-            {"slug": "yo-yo", "name": "Yo-yo clubs", "sub": "The volatility league"},
-            {"slug": "fallen-giants", "name": "Fallen giants & risers",
-             "sub": "Long falls and great climbs"},
-            {"slug": "records", "name": "Records & extremes",
-             "sub": "The best and worst seasons"},
-            {"slug": "timeline", "name": "Timeline", "sub": "Notable events since 1993"},
+        """
+        Two kinds of thing live under /insights/: pages that make an
+        argument in prose and tables, and charts you drive yourself. They
+        used to render as one flat grid of fifteen tiles, which buried ten
+        distinct stories among five tiles that were the same scatter chart
+        with a different metric selected - a page that already carries
+        chips to switch metric in place.
+        """
+        def story(slug: str, name: str, sub: str) -> dict:
+            return {"slug": slug, "name": name, "sub": sub,
+                    "path": f"insights/{slug}/index.html"}
+
+        stories = [
+            story("yo-yo", "Yo-yo clubs", "The volatility league"),
+            story("fallen-giants", "Fallen giants & risers",
+                  "Long falls and great climbs"),
+            story("records", "Records & extremes", "The best and worst seasons"),
+            story("timeline", "Timeline", "Notable events since 1993"),
         ]
         if "natural_level_gap" in self.trajectory_cols:
-            entries.insert(1, {
-                "slug": "natural-level",
-                "name": "Above and below their level",
-                "sub": "Clubs out of step with their own history",
-            })
-        # One tile per metric that has data in *any* season of the window.
-        # Testing only the current season used to hide the tile whenever the
-        # newest season happened to be empty, even though the pages for older
-        # seasons had been built and were reachable.
-        window = self.seasons[-6:]
-        for key, metric in METRICS.items():
-            if any(self._metric_points(key, year) for year in window):
-                entries.append({
-                    "slug": metric["base"].removeprefix("insights/"),
-                    "name": metric["heading"],
-                    "sub": metric["sub"],
-                })
+            stories.insert(1, story(
+                "natural-level", "Above and below their level",
+                "Clubs out of step with their own history",
+            ))
         if (PROJECT_ROOT / "content" / "insights" / "safe-thresholds.md").exists():
-            entries.append({
-                "slug": "safe-thresholds",
-                "name": "Safe thresholds",
-                "sub": "The points needed to survive relegation",
-            })
+            stories.append(story(
+                "safe-thresholds", "Safe thresholds",
+                "The points needed to survive relegation",
+            ))
         boom_bust_events = self._boom_bust_events()
         if boom_bust_events:
-            entries.append({
-                "slug": "boom-and-bust",
-                "name": "Boom and bust",
-                "sub": "Why the same clubs keep falling into financial trouble",
-            })
+            stories.append(story(
+                "boom-and-bust", "Boom and bust",
+                "Why the same clubs keep falling into financial trouble",
+            ))
         rivalries = self._rivalry_pairs()
         if rivalries:
-            entries.append({
-                "slug": "rivalries",
-                "name": "Rivalries & derbies",
-                "sub": "The needle behind the fixture list",
-            })
+            stories.append(story(
+                "rivalries", "Rivalries & derbies",
+                "The needle behind the fixture list",
+            ))
         movement_matches = self._movement_matches()
         import movement as movement_mod
         if any(movement_matches.get(k) for k in (
             movement_mod.RELEGATION_BACK_TO_BACK, movement_mod.RELEGATION_THREE_PLUS,
             movement_mod.RELEGATION_HELD, movement_mod.RELEGATION_SANDWICH,
         )):
-            entries.append({
-                "slug": "the-drop",
-                "name": "The drop",
-                "sub": "Clubs that fell fast — and whether they came back",
-            })
+            stories.append(story(
+                "the-drop", "The drop",
+                "Clubs that fell fast — and whether they came back",
+            ))
         if any(movement_matches.get(k) for k in (
             movement_mod.PROMOTION_BACK_TO_BACK, movement_mod.PROMOTION_THREE_PLUS,
             movement_mod.PROMOTION_PAUSED,
         )):
-            entries.append({
-                "slug": "the-rise",
-                "name": "The rise",
-                "sub": "Clubs that climbed fast — and whether they held on",
+            stories.append(story(
+                "the-rise", "The rise",
+                "Clubs that climbed fast — and whether they held on",
+            ))
+
+        # Chart tiles link through _metric_landing_path rather than to
+        # base/index.html, which only exists for the current season.
+        charts = []
+        capacity_path = self._metric_landing_path("capacity")
+        if capacity_path:
+            charts.append({
+                "slug": "capacity",
+                "name": METRICS["capacity"]["heading"],
+                "sub": METRICS["capacity"]["sub"],
+                "path": capacity_path,
             })
+        # One tile for all five financial metrics: they are a single page
+        # with chips to switch between them, so five tiles was one idea
+        # taking a third of the index. Prefers revenue, falling back to
+        # whichever financial metric has data.
+        finance_path = next(
+            (path for path in (
+                self._metric_landing_path(key)
+                for key, metric in METRICS.items() if metric["source"] == "finances"
+            ) if path),
+            None,
+        )
+        if finance_path:
+            charts.append({
+                "slug": "finances",
+                "name": "Club finances",
+                "sub": "Revenue, wages, profit and debt against where clubs finish",
+                "path": finance_path,
+            })
+
+        groups = [g for g in (
+            {"title": "Stories",
+             "sub": "Arguments drawn from thirty years of league tables.",
+             "entries": stories},
+            {"title": "Interactive charts",
+             "sub": "Pick a metric and a season, then read the pyramid.",
+             "entries": charts},
+        ) if g["entries"]]
+
         self.render(
             "insights_index.html", self.out / "insights" / "index.html", 1,
-            title="Insights", entries=entries,
+            title="Insights", groups=groups, entries=stories + charts,
         )
         self._insight_yo_yo()
         self._insight_natural_level()
@@ -1782,6 +2114,37 @@ class SiteBuilder:
         }
 
     def _metric_points(self, metric_key: str, season_end_year: int) -> list[dict]:
+        key = (metric_key, season_end_year)
+        if key not in self._metric_points_cache:
+            self._metric_points_cache[key] = self._compute_metric_points(
+                metric_key, season_end_year
+            )
+        return self._metric_points_cache[key]
+
+    def _metric_landing_path(self, metric_key: str) -> str | None:
+        """
+        Where a link to this metric should actually point.
+
+        The scatter pages are a metric x season matrix, and only the
+        *current* season is written to the bare base URL - every older
+        season lives under base/<season>/. So base/index.html is a 404 for
+        any metric whose newest data predates the current season, which is
+        every financial metric the moment a new season kicks off: 2026/27
+        exists in standings before a single set of accounts covers it.
+        That was live on the insights index - all five finance tiles led
+        nowhere. Returns the newest season page that was actually built, or
+        None when the metric has no data at all.
+        """
+        base = METRICS[metric_key]["base"]
+        current_year = self.seasons[-1]
+        for year in reversed(self.seasons[-6:]):
+            if self._metric_points(metric_key, year):
+                if year == current_year:
+                    return f"{base}/index.html"
+                return f"{base}/{season_slug(year)}/index.html"
+        return None
+
+    def _compute_metric_points(self, metric_key: str, season_end_year: int) -> list[dict]:
         """
         One plottable point per club that has both a value for this metric
         and a Tier 1-5 standings row in this season. A club outside the

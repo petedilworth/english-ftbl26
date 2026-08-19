@@ -2,12 +2,16 @@
 {% block content %}
 <h1>Insights</h1>
 <p class="subtitle">Conclusions drawn from thirty years of league tables.</p>
+{% for group in groups %}
+<h2>{{ group.title }}</h2>
+<p class="group-sub">{{ group.sub }}</p>
 <div class="tile-grid">
-  {% for e in entries %}
-  <a class="tile" href="{{ root }}/insights/{{ e.slug }}/index.html">
+  {% for e in group.entries %}
+  <a class="tile" href="{{ root }}/{{ e.path }}">
     <span class="tile-title">{{ e.name }}</span><br>
     <span class="tile-sub">{{ e.sub }}</span>
   </a>
   {% endfor %}
 </div>
+{% endfor %}
 {% endblock %}
