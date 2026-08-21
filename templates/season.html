@@ -12,7 +12,7 @@
 {% if division.coverage_note %}<p class="coverage-note">{{ division.coverage_note }}</p>{% endif %}
 <div class="table-scroll">
 <table class="standings">
-  <tr><th>#</th><th>Club</th><th class="num">P</th><th class="num">W</th><th class="num">D</th><th class="num">L</th><th class="num">GF</th><th class="num">GA</th><th class="num">GD</th><th class="num">Pts</th><th></th></tr>
+  <tr><th>#</th><th>Club</th><th class="num">P</th><th class="num">W</th><th class="num">D</th><th class="num">L</th><th class="num">GF</th><th class="num">GA</th><th class="num">GD</th>{% if division.has_deductions %}<th class="num" title="Points deducted">Ded</th>{% endif %}<th class="num">Pts</th><th></th></tr>
   {% for row in division.rows %}
   <tr class="status-{{ row.status_slug }}">
     <td class="num">{{ row.position }}</td>
@@ -24,6 +24,7 @@
     <td class="num">{{ row.gf }}</td>
     <td class="num">{{ row.ga }}</td>
     <td class="num">{{ row.gd }}</td>
+    {% if division.has_deductions %}<td class="num">{% if row.points_deducted %}<span class="points-ded">−{{ row.points_deducted }}</span>{% endif %}</td>{% endif %}
     <td class="num"><strong>{{ row.points }}</strong></td>
     <td><span class="status-tag {{ row.status_dir }}">{{ row.status_label }}</span></td>
   </tr>

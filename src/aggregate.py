@@ -114,6 +114,26 @@ def load_csv(path: Path) -> pd.DataFrame | None:
     return df
 
 
+def rank_standings(standings: pd.DataFrame) -> pd.DataFrame:
+    """
+    Order a table and number its positions.
+
+    Split out of compute_standings so it can be re-run after points
+    deductions have been applied: a deduction changes the points a club
+    finished on, and therefore where it finished. Doing it in this order
+    is the whole point - it makes the ordinary positional promotion and
+    relegation rules produce the right answer without anything having to
+    know a sanction happened.
+    """
+    standings = standings.sort_values(
+        ["points", "gd", "gf"], ascending=[False, False, False]
+    ).reset_index(drop=True)
+    if "position" in standings.columns:
+        standings = standings.drop(columns=["position"])
+    standings.insert(0, "position", standings.index + 1)
+    return standings
+
+
 def compute_standings(
     df: pd.DataFrame,
     season_end_year: int,
@@ -158,12 +178,7 @@ def compute_standings(
             }
         )
 
-    standings = pd.DataFrame(records)
-    standings.sort_values(
-        ["points", "gd", "gf"], ascending=[False, False, False], inplace=True
-    )
-    standings.reset_index(drop=True, inplace=True)
-    standings.insert(0, "position", standings.index + 1)
+    standings = rank_standings(pd.DataFrame(records))
 
     # Incomplete season warning
     n_teams = len(standings)

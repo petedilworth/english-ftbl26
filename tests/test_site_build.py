@@ -1813,3 +1813,177 @@ def test_csv_parser_reports_rows_it_drops(tmp_path, caplog):
     assert any("malformed row" in r.getMessage() for r in caplog.records), (
         "but it must no longer be dropped silently"
     )
+
+
+# ── Points deductions ────────────────────────────────────────────────────
+
+DEDUCTIONS_HEADER = ("club_id,season_end_year,tier,points,category,applied,"
+                     "reason,source_url,note\n")
+
+
+def _deductions_csv(tmp_path, lines):
+    path = tmp_path / "points_deductions.csv"
+    path.write_text(DEDUCTIONS_HEADER + "".join(lines), encoding="utf-8")
+    return path
+
+
+def _with_deductions(tmp_path, lines):
+    """Fixture db with points_deductions seeded and applied."""
+    import deductions as ded
+    import pipeline
+    tmp_path.mkdir(parents=True, exist_ok=True)
+    db = _db_on_disk(tmp_path)
+    conn = sqlite3.connect(db)
+    pipeline._migrate_standings_columns(conn)
+    ded.seed_points_deductions(conn, _deductions_csv(tmp_path, lines))
+    pipeline._apply_points_deductions(conn)
+    conn.commit()
+    return db, conn
+
+
+def test_deduction_comes_off_the_points_total(tmp_path):
+    db, conn = _with_deductions(tmp_path, [
+        "giant-fc,2025,3,10,administration,1,Entered administration,https://example.invalid,\n"
+    ])
+    row = conn.execute(
+        "SELECT points, points_deducted, won, drawn FROM standings"
+        " WHERE club_id = 'giant-fc' AND season_end_year = 2025"
+    ).fetchone()
+    conn.close()
+    points, deducted, won, drawn = row
+    assert deducted == 10
+    assert points == won * 3 + drawn - 10, "Pts must be the post-deduction total"
+
+
+def test_a_suspended_penalty_is_recorded_but_never_subtracted(tmp_path):
+    # Six real records are suspended sanctions that never reached a table.
+    db, conn = _with_deductions(tmp_path, [
+        "giant-fc,2025,3,10,other,0,Suspended and never activated,https://example.invalid,\n"
+    ])
+    points, deducted = conn.execute(
+        "SELECT points, points_deducted FROM standings"
+        " WHERE club_id = 'giant-fc' AND season_end_year = 2025"
+    ).fetchone()
+    stored = conn.execute("SELECT COUNT(*) FROM points_deductions").fetchone()[0]
+    won, drawn = conn.execute(
+        "SELECT won, drawn FROM standings WHERE club_id = 'giant-fc'"
+        " AND season_end_year = 2025"
+    ).fetchone()
+    conn.close()
+    assert stored == 1, "the suspended penalty is still part of the record"
+    assert deducted == 0 and points == won * 3 + drawn
+
+
+def test_two_sanctions_in_one_season_are_summed(tmp_path):
+    # Derby took 12 for administration and 9 for accounting breaches in
+    # 2021/22; Macclesfield collected four separate penalties in 2019/20.
+    db, conn = _with_deductions(tmp_path, [
+        "giant-fc,2025,3,4,administration,1,First,https://example.invalid,\n",
+        "giant-fc,2025,3,6,financial-rules,1,Second,https://example.invalid,\n",
+    ])
+    deducted = conn.execute(
+        "SELECT points_deducted FROM standings WHERE club_id = 'giant-fc'"
+        " AND season_end_year = 2025"
+    ).fetchone()[0]
+    conn.close()
+    assert deducted == 10
+
+
+def test_applying_deductions_twice_changes_nothing(tmp_path):
+    # points is always wins*3 + draws before any deduction, so the on-pitch
+    # total is recovered from W/D rather than from the current points value.
+    import pipeline
+    db, conn = _with_deductions(tmp_path, [
+        "giant-fc,2025,3,10,administration,1,Entered administration,https://example.invalid,\n"
+    ])
+    snapshot = list(conn.execute(
+        "SELECT rowid, points, points_deducted, position FROM standings ORDER BY rowid"
+    ))
+    pipeline._apply_points_deductions(conn)
+    pipeline._apply_points_deductions(conn)
+    again = list(conn.execute(
+        "SELECT rowid, points, points_deducted, position FROM standings ORDER BY rowid"
+    ))
+    conn.close()
+    assert snapshot == again
+
+
+def test_a_deduction_can_change_where_a_club_finished(tmp_path):
+    # The whole point of subtracting before ranking: Wigan's 12 turned 13th
+    # into 23rd, and the ordinary positional rules then relegated them
+    # without anything needing to know a sanction happened.
+    (tmp_path / "before").mkdir(parents=True, exist_ok=True)
+    before = sqlite3.connect(_db_on_disk(tmp_path / "before"))
+    top = before.execute(
+        "SELECT club_id FROM standings WHERE season_end_year = 2025 AND tier = 3"
+        " ORDER BY position LIMIT 1"
+    ).fetchone()[0]
+    before.close()
+
+    db, conn = _with_deductions(tmp_path / "after", [
+        f"{top},2025,3,40,administration,1,Enormous penalty,https://example.invalid,\n"
+    ])
+    position = conn.execute(
+        "SELECT position FROM standings WHERE club_id = ? AND season_end_year = 2025",
+        (top,),
+    ).fetchone()[0]
+    conn.close()
+    assert position > 1, "a big enough deduction must move the club down the table"
+
+
+def test_deduction_rows_without_a_source_are_refused(tmp_path):
+    import deductions as ded
+    tmp_path.mkdir(parents=True, exist_ok=True)
+    db = _db_on_disk(tmp_path)
+    conn = sqlite3.connect(db)
+    loaded = ded.seed_points_deductions(conn, _deductions_csv(tmp_path, [
+        "giant-fc,2025,3,10,administration,1,No source given,,\n",
+        "giant-fc,2024,3,3,other,1,Sourced,https://example.invalid,\n",
+    ]))
+    conn.close()
+    assert loaded == 1, "a deduction with no source must not rewrite a table"
+
+
+def test_unknown_club_and_negative_points_are_refused(tmp_path):
+    import deductions as ded
+    tmp_path.mkdir(parents=True, exist_ok=True)
+    conn = sqlite3.connect(_db_on_disk(tmp_path))
+    loaded = ded.seed_points_deductions(conn, _deductions_csv(tmp_path, [
+        "no-such-club-fc,2025,3,10,other,1,Unknown club,https://example.invalid,\n",
+        "giant-fc,2025,3,-5,other,1,Negative would award points,https://example.invalid,\n",
+    ]))
+    conn.close()
+    assert loaded == 0
+
+
+def test_the_deduction_column_appears_only_where_there_is_one(tmp_path, monkeypatch):
+    lines = ["giant-fc,2025,3,10,administration,1,Entered administration,https://example.invalid,\n"]
+    db, conn = _with_deductions(tmp_path, lines)
+    conn.close()
+    out = _build_site_with_content(tmp_path, monkeypatch, db, {"giant-fc": RICH_STORY})
+    docked = (out / "season" / "2024-25" / "index.html").read_text()
+    clean = (out / "season" / "2022-23" / "index.html").read_text()
+    assert ">Ded<" in docked and "−10" in docked
+    assert ">Ded<" not in clean, "a table with no deduction must not gain an empty column"
+
+
+def test_the_real_dataset_loads_and_every_row_matches_a_standings_row():
+    # points_deductions.csv is keyed on club_id and on the season whose table
+    # the points actually came off - which is often not the season of the
+    # offence. A row that matches nothing is a typo, not a deduction.
+    import csv
+    from pathlib import Path
+
+    import site_build as sb
+    path = Path(sb.__file__).parent.parent / "points_deductions.csv"
+    conn = sqlite3.connect(Path(sb.__file__).parent.parent / "data" / "db" / "england.db")
+    orphans = []
+    for row in csv.DictReader(path.open()):
+        hit = conn.execute(
+            "SELECT tier FROM standings WHERE club_id = ? AND season_end_year = ?",
+            (row["club_id"], int(row["season_end_year"])),
+        ).fetchone()
+        if not hit or hit[0] != int(row["tier"]):
+            orphans.append(f"{row['club_id']} {row['season_end_year']}")
+    conn.close()
+    assert not orphans, f"deduction rows matching no standings row: {orphans}"

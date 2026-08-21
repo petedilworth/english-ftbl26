@@ -372,7 +372,13 @@ def _facts_rows(facts: dict, club_names: dict[str, str] | None = None) -> list[d
 
 def _row_dict(r) -> dict:
     slug, direction, label = STATUS_PRESENTATION.get(r["status"], ("stayed", "", ""))
+    keys = r.keys()
+    # points is the final total, deduction already taken off, as every other
+    # published table shows it. The deduction is carried alongside so a
+    # reader can see why w*3 + d doesn't add up to the Pts column.
+    deducted = r["points_deducted"] if "points_deducted" in keys else 0
     return {
+        "points_deducted": deducted or 0,
         "club_id": r["club_id"],
         "name": r["club_name"],
         "position": r["position"],
@@ -478,6 +484,11 @@ class SiteBuilder:
                 "name": rows[0]["division_name"] if rows else TIER_SLUGS[tier][1],
                 "rows": [_row_dict(r) for r in rows],
                 "coverage_note": self._coverage_note(year, tier, len(rows)),
+                # The column only appears in tables that have one, otherwise
+                # every table on the site gains an empty column.
+                "has_deductions": any(
+                    _row_dict(r)["points_deducted"] for r in rows
+                ),
             })
         return divisions
 
@@ -875,6 +886,9 @@ class SiteBuilder:
                         r["status"] == IN_PROGRESS_STATUS for r in rows
                     ),
                     "rows": [_row_dict(r) for r in rows],
+                    "has_deductions": any(
+                        _row_dict(r)["points_deducted"] for r in rows
+                    ),
                 })
             self.render(
                 "division.html", self.out / "division" / slug / "index.html", 2,
@@ -1070,6 +1084,7 @@ class SiteBuilder:
                 club_themes=club_themes,
                 finances=self._club_finances(club_id),
                 seasons=seasons,
+                seasons_have_deductions=any(d["points_deducted"] for d in seasons),
             )
 
             teams_meta.append({

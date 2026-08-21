@@ -620,3 +620,4 @@ table.matrix.compact .matrix-highlight {
   padding-left: 10px;
   margin: 6px 0 10px;
 }
+.points-ded { color: var(--down); font-size: 12px; }

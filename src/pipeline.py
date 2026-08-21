@@ -27,7 +27,10 @@ from pathlib import Path
 _SRC = Path(__file__).parent
 sys.path.insert(0, str(_SRC))
 
+import pandas as pd
+
 import aggregate
+import deductions
 import download
 import entities
 import finances
@@ -75,7 +78,7 @@ CREATE TABLE IF NOT EXISTS matches (
 """
 
 STANDINGS_STAT_COLUMNS = ["played", "won", "drawn", "lost", "gf", "ga", "gd",
-                          "data_complete"]
+                          "data_complete", "points_deducted"]
 
 
 def _migrate_standings_columns(conn: sqlite3.Connection) -> None:
@@ -323,6 +326,99 @@ def _in_progress_seasons(conn: sqlite3.Connection) -> set[int]:
     }
 
 
+def _apply_points_deductions(conn: sqlite3.Connection) -> None:
+    """
+    Subtract points deductions, then re-rank and re-judge every table they
+    touch.
+
+    Order matters. The deduction comes off first, the table is re-sorted,
+    and only then are the positional promotion and relegation rules
+    applied - so the ordinary rules land on the right clubs with nothing
+    needing to know a sanction happened. Wigan Athletic 2019/20 is the
+    worked example: 59 points on the pitch and 13th becomes 47 and 23rd,
+    and the drop zone picks up Charlton, Wigan and Hull, which is exactly
+    what happened.
+
+    Idempotent. standings.points is always wins*3 + draws before any
+    deduction, so the on-pitch total is recovered from the stored W/D
+    rather than from the current points value - running this twice cannot
+    subtract twice.
+    """
+    # Normalise first: a database with no deductions at all should still
+    # read 0 rather than NULL, so nothing downstream has to special-case it.
+    conn.execute(
+        "UPDATE standings SET points_deducted = 0 WHERE points_deducted IS NULL"
+    )
+    conn.commit()
+
+    totals = deductions.applied_by_club_season(conn)
+    if not totals:
+        logger.info("No applied points deductions to apply")
+        return
+
+    affected = {
+        (season, tier)
+        for club_id, season in totals
+        for (tier,) in conn.execute(
+            "SELECT tier FROM standings WHERE club_id = ? AND season_end_year = ?",
+            (club_id, season),
+        )
+    }
+
+    changed = 0
+    for season, tier in sorted(affected):
+        rows = conn.execute(
+            "SELECT rowid, club_id, club_name, won, drawn, gd, gf, status"
+            " FROM standings WHERE season_end_year = ? AND tier = ?",
+            (season, tier),
+        ).fetchall()
+        if not rows:
+            continue
+
+        table = pd.DataFrame([{
+            "rowid": r[0], "club_id": r[1], "club_name": r[2],
+            "on_pitch": r[3] * 3 + r[4], "gd": r[5], "gf": r[6],
+        } for r in rows])
+        table["points_deducted"] = table["club_id"].map(
+            lambda cid: totals.get((cid, season), 0)
+        )
+        table["points"] = table["on_pitch"] - table["points_deducted"]
+        table = aggregate.rank_standings(table)
+
+        # A season still being played has no outcomes to assign; leave the
+        # status alone and just correct the arithmetic.
+        in_progress = any(r[7] == status.IN_PROGRESS for r in rows)
+        if not in_progress:
+            try:
+                table = status.assign_status(table, season, tier, is_complete=True)
+            except Exception as exc:      # unknown rules for this tier/season
+                logger.warning("Could not re-judge %d tier %d: %s", season, tier, exc)
+                table["status"] = [r[7] for r in rows]
+
+        for _, r in table.iterrows():
+            conn.execute(
+                "UPDATE standings SET points = ?, points_deducted = ?,"
+                " position = ?, status = ? WHERE rowid = ?",
+                (int(r["points"]), int(r["points_deducted"]), int(r["position"]),
+                 r.get("status") or None, int(r["rowid"])),
+            )
+        changed += 1
+        docked = table[table.points_deducted > 0]
+        for _, r in docked.iterrows():
+            logger.info(
+                "%d tier %d: %s %d on the pitch, -%d, finished %d",
+                season, tier, r["club_name"], int(r["on_pitch"]),
+                int(r["points_deducted"]), int(r["position"]),
+            )
+
+    conn.commit()
+    logger.info(
+        "Points deductions: %d point(s) removed across %d club-season(s), "
+        "%d division table(s) re-ranked",
+        sum(totals.values()), len(totals), changed,
+    )
+
+
 def _mark_data_completeness(conn: sqlite3.Connection) -> None:
     """
     Flag season/division tables that were built from an incomplete fixture list.
@@ -553,6 +649,7 @@ def run(
     entities.seed_club_master(conn, club_master_csv)
     # After club_master, since finances rows are validated against it.
     finances.seed_club_finances(conn, PROJECT_ROOT / "club_finances.csv")
+    deductions.seed_points_deductions(conn, PROJECT_ROOT / "points_deductions.csv")
     resolver = entities.build_resolver(conn)
 
     if not skip_download:
@@ -586,6 +683,10 @@ def run(
     logger.info("Inserted/updated %d standings rows total", total_rows)
 
     _mark_data_completeness(conn)
+    # Before reconciliation: with the deduction applied the positional
+    # rules are usually right on their own, leaving reconciliation to do
+    # what only it can - play-off losers, reprieves, expulsions.
+    _apply_points_deductions(conn)
     _reconcile_statuses(conn)
     _apply_known_playoff_winners(conn)
 
