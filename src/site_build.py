@@ -618,7 +618,6 @@ class SiteBuilder:
             self._hook_wage_ratio,
             self._hook_biggest_loss,
             self._hook_outspender,
-            self._hook_points_relegated,
             self._hook_longest_stay,
         )
         hooks: list[dict] = []
@@ -734,28 +733,24 @@ class SiteBuilder:
             "path": path,
         }
 
-    def _hook_points_relegated(self) -> dict | None:
-        source = PROJECT_ROOT / "content" / "insights" / "safe-thresholds.md"
-        if not source.exists():
-            return None
-        row = self.conn.execute(
-            """
-            SELECT club_name AS name, season_end_year AS year,
-                   division_name AS division, points AS points
-            FROM standings
-            WHERE status = 'Relegated' AND played >= 30
-            ORDER BY points DESC, club_name
-            LIMIT 1
-            """
-        ).fetchone()
-        if not row:
-            return None
-        return {
-            "text": (f"{row['name']} went down with {row['points']} points — "
-                     f"the highest total ever relegated here"),
-            "label": f"{row['division']}, {season_label(row['year'])}",
-            "path": "insights/safe-thresholds/index.html",
-        }
+    # DISABLED - do not re-enable until points deductions are in the data.
+    #
+    # "The highest points total ever relegated" reads standings.points, which
+    # is computed as w*3 + d from match results alone (src/aggregate.py). A
+    # points deduction happens off the pitch and never appears in a result, so
+    # that column is the pre-deduction total for every club that was ever
+    # docked. The query below therefore surfaces deductions dressed up as
+    # unlucky relegations: its top four answers are Wigan 2019/20 (59 pts,
+    # finished 13th), Bournemouth 2007/08 (58, 15th), Luton 2008/09 (56, 16th)
+    # and Derby 2021/22 (55, 17th) - none of whom needed more points. They had
+    # points taken away.
+    #
+    # The same flaw affects the "highest points relegated" table on the
+    # safe-thresholds insight page, which is a separate, pre-existing bug.
+    #
+    #     def _hook_points_relegated(self) -> dict | None:
+    #         ... SELECT ... WHERE status = 'Relegated' AND played >= 30
+    #             ORDER BY points DESC ...
 
     def _hook_longest_stay(self) -> dict | None:
         if "current_tier_streak" not in self.trajectory_cols:

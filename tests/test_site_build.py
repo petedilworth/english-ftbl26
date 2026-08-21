@@ -1636,14 +1636,25 @@ def test_home_hooks_carry_a_number_and_a_link_that_resolves(tmp_path, monkeypatc
 
 
 def test_home_hooks_survive_without_any_finance_data(tmp_path, monkeypatch):
-    # Three of the five recipes read club_finances. A database without that
-    # table should still get a hook out of standings alone - not an empty
-    # section, and not a traceback.
-    out, home = _front_door(
-        tmp_path, monkeypatch, insights={"safe-thresholds": SAFE_THRESHOLDS_MD},
+    # Three of the four recipes read club_finances. A database without that
+    # table should still get a hook out of club_trajectory alone - not an
+    # empty section, and not a traceback. The fixture's clubs are all tier 3,
+    # so give one the top-flight run the surviving fallback looks for.
+    tmp_path.mkdir(parents=True, exist_ok=True)
+    db = _db_on_disk(tmp_path)
+    conn = sqlite3.connect(db)
+    conn.execute(
+        "UPDATE club_trajectory SET current_tier = 1, current_tier_streak = 20"
+        " WHERE club_id = 'steady-fc'"
     )
+    conn.commit()
+    conn.close()
+    out = _build_site_with_content(
+        tmp_path, monkeypatch, db, {"giant-fc": RICH_STORY}
+    )
+    home = (out / "index.html").read_text()
     hooks = _hooks(home)
-    assert hooks
+    assert hooks, "expected a hook from the non-financial fallback"
     for href, _ in hooks:
         assert (out / href.removeprefix("./")).exists()
 
