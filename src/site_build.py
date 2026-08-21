@@ -421,6 +421,9 @@ class SiteBuilder:
         # build_insights, _insight_scatter and the home hooks all ask the
         # same (metric, season) questions, and each answer walks the season.
         self._metric_points_cache: dict = {}
+        self.standings_cols = {
+            r[1] for r in self.conn.execute("PRAGMA table_info(standings)")
+        }
         self.seasons = [
             r[0] for r in self.conn.execute(
                 "SELECT DISTINCT season_end_year FROM standings ORDER BY season_end_year"
@@ -474,8 +477,40 @@ class SiteBuilder:
                 "tier": tier,
                 "name": rows[0]["division_name"] if rows else TIER_SLUGS[tier][1],
                 "rows": [_row_dict(r) for r in rows],
+                "coverage_note": self._coverage_note(year, tier, len(rows)),
             })
         return divisions
+
+    def _coverage_note(self, year: int, tier: int, n_teams: int) -> str:
+        """
+        Say so, on the table itself, when the table isn't the real one.
+
+        A reader looking at 2002/03 League One sees clubs on 30 games in a
+        46-game season and no explanation. The points and positions shown are
+        what the fixtures we hold add up to, not what settled the division -
+        which is exactly the sort of gap this site prints rather than hides.
+        """
+        if "data_complete" not in self.standings_cols:
+            return ""
+        row = self.conn.execute(
+            "SELECT COALESCE(data_complete, 1) FROM standings"
+            " WHERE season_end_year = ? AND tier = ? LIMIT 1",
+            (year, tier),
+        ).fetchone()
+        if not row or row[0]:
+            return ""
+        found = self.conn.execute(
+            "SELECT COUNT(*) FROM matches WHERE season_end_year = ? AND tier = ?",
+            (year, tier),
+        ).fetchone()[0]
+        expected = n_teams * (n_teams - 1)
+        if not found or not expected or found >= expected:
+            return ""
+        return (
+            f"Only {found} of this division's {expected} fixtures are in the "
+            f"source data, so these totals and positions are not the final "
+            f"table. They are excluded from records elsewhere on the site."
+        )
 
     # ── Pages ──────────────────────────────────────────────────────────────
 
@@ -2573,10 +2608,22 @@ class SiteBuilder:
         if include_played:
             cols += ", s.played"
 
+        # Completeness is enforced here rather than left to each caller: a
+        # superlative drawn from a table missing a chunk of its fixtures is
+        # not a record, it's an artifact. Twenty-odd season/division tables
+        # are affected (see pipeline._mark_data_completeness) - part-season
+        # football-data files, and the 2019/20 divisions abandoned in March
+        # 2020. COALESCE keeps a database built before the flag existed
+        # working as it did.
+        complete_only = (
+            " AND COALESCE(s.data_complete, 1) = 1"
+            if "data_complete" in self.standings_cols else ""
+        )
         rows = self.conn.execute(
             f"""
             SELECT {cols}
-            FROM standings s WHERE {where}
+            FROM standings s
+            WHERE ({where}){complete_only}
             ORDER BY {order} LIMIT {limit}
             """
         ).fetchall()
@@ -2667,24 +2714,25 @@ class SiteBuilder:
             sections=[
                 self._standings_section(
                     "Unlucky losers",
-                    "Clubs relegated with the highest points totals (excluding COVID "
-                    "seasons), grouped by division since divisions play different "
-                    "numbers of games.",
+                    "Clubs relegated with the highest points totals, grouped by "
+                    "division since divisions play different numbers of games. "
+                    "Seasons whose fixture list is incomplete in the source data "
+                    "are left out.",
                     "s.points DESC, s.gd ASC",
                     15,
-                    "s.played >= 30 AND s.season_end_year != 2021 AND s.season_end_year != 2020 "
+                    "s.played >= 30 "
                     "AND (s.status = 'Relegated' OR s.status = 'Play-off Relegated')",
                     include_status=True, include_played=True, group_by_tier=True,
                 ),
                 self._standings_section(
                     "Lucky survivors",
-                    "Clubs that stayed up with the lowest points totals (excluding COVID "
-                    "seasons), grouped by division since divisions play different "
-                    "numbers of games.",
+                    "Clubs that stayed up with the lowest points totals, grouped by "
+                    "division since divisions play different numbers of games. "
+                    "Seasons whose fixture list is incomplete in the source data "
+                    "are left out.",
                     "s.points ASC, s.gd DESC",
                     15,
-                    "s.played >= 30 AND s.season_end_year != 2021 AND s.season_end_year != 2020 "
-                    "AND s.status = 'Stayed'",
+                    "s.played >= 30 AND s.status = 'Stayed'",
                     include_status=True, include_played=True, group_by_tier=True,
                 ),
             ],

@@ -62,6 +62,7 @@
 {% if season_note %}<p class="home-note">{{ season_note }}</p>{% endif %}
 {% for division in divisions %}
 <h3>{{ division.name }}</h3>
+{% if division.coverage_note %}<p class="coverage-note">{{ division.coverage_note }}</p>{% endif %}
 <div class="table-scroll">
 <table class="standings">
   <tr><th>#</th><th>Club</th><th class="num">P</th><th class="num">GD</th><th class="num">Pts</th><th></th></tr>

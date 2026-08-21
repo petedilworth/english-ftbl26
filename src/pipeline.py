@@ -74,7 +74,8 @@ CREATE TABLE IF NOT EXISTS matches (
 );
 """
 
-STANDINGS_STAT_COLUMNS = ["played", "won", "drawn", "lost", "gf", "ga", "gd"]
+STANDINGS_STAT_COLUMNS = ["played", "won", "drawn", "lost", "gf", "ga", "gd",
+                          "data_complete"]
 
 
 def _migrate_standings_columns(conn: sqlite3.Connection) -> None:
@@ -322,6 +323,67 @@ def _in_progress_seasons(conn: sqlite3.Connection) -> set[int]:
     }
 
 
+def _mark_data_completeness(conn: sqlite3.Connection) -> None:
+    """
+    Flag season/division tables that were built from an incomplete fixture list.
+
+    A computed table is only the real table if every fixture behind it is
+    present, and for twenty of ours that isn't so. Two different reasons:
+
+    - Some football-data.co.uk files hold only part of a season. 2002/03
+      League One stops dead on 4 February 2003, a third of the fixtures
+      short; 2004/05 Championship and League One are each about a quarter
+      short. Older files also carry rows the CSV parser drops (see
+      aggregate.load_csv), scattering gaps through an otherwise full range.
+    - The 2019/20 EFL and National League seasons were abandoned in March
+      2020 and settled on points-per-game rather than played out, so the
+      matches simply do not exist.
+
+    Either way the totals computed from them are not the totals that decided
+    anything. West Bromwich Albion's Great Escape shows here as 29 points
+    from 33 games; they actually finished on 34 from 38. That figure has been
+    sitting at the top of the site's "lowest points survived" table.
+
+    This is derived from the matches already stored rather than from the raw
+    CSVs, so it re-derives correctly on any database without needing the
+    downloads again.
+    """
+    marked = 0
+    for season, tier in conn.execute(
+        "SELECT DISTINCT season_end_year, tier FROM standings"
+    ).fetchall():
+        n_teams = conn.execute(
+            "SELECT COUNT(*) FROM standings WHERE season_end_year = ? AND tier = ?",
+            (season, tier),
+        ).fetchone()[0]
+        n_matches = conn.execute(
+            "SELECT COUNT(*) FROM matches WHERE season_end_year = ? AND tier = ?",
+            (season, tier),
+        ).fetchone()[0]
+        if not n_matches:
+            # No match rows at all is no evidence either way - don't condemn
+            # a table on an empty matches import.
+            logger.debug("No matches stored for %d tier %d - completeness unknown",
+                         season, tier)
+            continue
+
+        expected = aggregate.expected_match_count(n_teams)
+        complete = n_matches >= expected
+        conn.execute(
+            "UPDATE standings SET data_complete = ? WHERE season_end_year = ? AND tier = ?",
+            (1 if complete else 0, season, tier),
+        )
+        if not complete:
+            marked += 1
+            logger.warning(
+                "%d tier %d: %d of %d fixtures present (%.0f%%) - table flagged "
+                "incomplete and withheld from records",
+                season, tier, n_matches, expected, 100 * n_matches / expected,
+            )
+    conn.commit()
+    logger.info("Data completeness: %d season/division tables flagged incomplete", marked)
+
+
 def _reconcile_statuses(conn: sqlite3.Connection) -> None:
     """
     Correct positional status assignments using observed movement.
@@ -523,6 +585,7 @@ def run(
 
     logger.info("Inserted/updated %d standings rows total", total_rows)
 
+    _mark_data_completeness(conn)
     _reconcile_statuses(conn)
     _apply_known_playoff_winners(conn)
 

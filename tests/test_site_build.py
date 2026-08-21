@@ -1716,3 +1716,100 @@ def test_insights_index_groups_and_has_no_duplicate_targets(tmp_path, monkeypatc
     assert sum(1 for p in paths if "finances/" in p) == 1
     for path in paths:
         assert (out / "insights" / path.removeprefix("../insights/")).exists(), path
+
+
+# ── Incomplete source data must not become a record ──────────────────────
+
+def _with_fixture_count(tmp_path, n_matches):
+    """
+    Fixture db where 2024/25 tier 3 (two clubs, so two fixtures make a full
+    round) holds exactly n_matches of them - the shape of 2002/03 League One
+    in the real database, which stops on 4 February a third of the way short.
+    """
+    import pipeline
+    tmp_path.mkdir(parents=True, exist_ok=True)
+    db = _db_on_disk(tmp_path)
+    conn = sqlite3.connect(db)
+    pipeline._migrate_standings_columns(conn)
+    conn.execute("DELETE FROM matches WHERE season_end_year = 2025 AND tier = 3")
+    pairs = [("giant-fc", "steady-fc"), ("steady-fc", "giant-fc")]
+    for i in range(n_matches):
+        home, away = pairs[i % 2]
+        conn.execute(
+            "INSERT INTO matches (season_end_year, tier, match_date, home_club_id,"
+            " away_club_id, home_name, away_name, fthg, ftag, ftr)"
+            " VALUES (2025, 3, ?, ?, ?, ?, ?, 1, 0, 'H')",
+            (f"2024-08-{10 + i:02d}", home, away, home, away),
+        )
+    conn.commit()
+    pipeline._mark_data_completeness(conn)
+    conn.commit()
+    flag = conn.execute(
+        "SELECT data_complete FROM standings WHERE season_end_year = 2025 AND tier = 3"
+    ).fetchone()[0]
+    conn.close()
+    return db, flag
+
+
+def test_completeness_flag_follows_the_matches_actually_stored(tmp_path):
+    # Two clubs owe each other two fixtures. One present is a part-played
+    # table; both present is a real one.
+    _, short = _with_fixture_count(tmp_path / "short", 1)
+    _, full = _with_fixture_count(tmp_path / "full", 2)
+    assert short == 0, "a table missing a fixture must be flagged incomplete"
+    assert full == 1, "a table with every fixture must not be flagged"
+
+
+def test_records_exclude_tables_missing_fixtures(tmp_path, monkeypatch):
+    # A superlative drawn from a part-played table is an artifact, not a
+    # record: the real database was offering West Bromwich Albion's "29
+    # points" from 33 games as the lowest total ever survived on.
+    def rows_in_records(sub, n):
+        db, _ = _with_fixture_count(tmp_path / sub, n)
+        out = _build_site_with_content(
+            tmp_path / sub, monkeypatch, db, {"giant-fc": RICH_STORY}
+        )
+        html = (out / "insights" / "records" / "index.html").read_text()
+        return len(re.findall(r"<tr>", html))
+
+    assert rows_in_records("short", 1) < rows_in_records("full", 2), (
+        "rows from a table missing fixtures must be withheld from records"
+    )
+
+
+def test_a_part_played_table_says_so_on_the_page(tmp_path, monkeypatch):
+    db, flag = _with_fixture_count(tmp_path, 1)
+    assert flag == 0
+    out = _build_site_with_content(tmp_path, monkeypatch, db, {"giant-fc": RICH_STORY})
+    season = (out / "season" / "2024-25" / "index.html").read_text()
+    assert "fixtures are in the source data" in season
+    assert "not the final table" in season
+
+
+def test_a_complete_table_carries_no_caveat(tmp_path, monkeypatch):
+    db, flag = _with_fixture_count(tmp_path, 2)
+    assert flag == 1
+    out = _build_site_with_content(tmp_path, monkeypatch, db, {"giant-fc": RICH_STORY})
+    season = (out / "season" / "2024-25" / "index.html").read_text()
+    assert "coverage-note" not in season
+
+
+def test_csv_parser_reports_rows_it_drops(tmp_path, caplog):
+    # on_bad_lines="skip" used to discard malformed rows silently, so a
+    # season could arrive a third short and still look like a clean parse.
+    import logging
+
+    import aggregate
+    path = tmp_path / "9394_E1.csv"
+    path.write_text(
+        "Div,Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR\n"
+        "E1,10/08/02,Cardiff,Bristol City,1,0,H\n"
+        "E1,24/08/02,Crewe,Luton,0,1,A,STRAY,FIELDS\n"
+        "E1,31/08/02,Blackpool,Chesterfield,3,1,H\n"
+    )
+    with caplog.at_level(logging.WARNING):
+        df = aggregate.load_csv(path)
+    assert len(df) == 2, "the malformed row is still dropped"
+    assert any("malformed row" in r.getMessage() for r in caplog.records), (
+        "but it must no longer be dropped silently"
+    )

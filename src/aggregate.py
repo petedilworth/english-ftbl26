@@ -49,15 +49,34 @@ def load_csv(path: Path) -> pd.DataFrame | None:
         logger.warning("Missing or empty file: %s", path)
         return None
 
+    # on_bad_lines used to be the bare string "skip", which drops any row
+    # whose field count doesn't match the header and says nothing about it.
+    # football-data.co.uk grew columns over the years and its older files
+    # carry rows with a different width, so real matches were vanishing with
+    # no trace - a whole season could arrive a third short and still look
+    # like a clean parse. Counting them makes the loss visible.
     for encoding in ("utf-8", "latin-1", "cp1252"):
+        skipped: list[list] = []
         try:
-            df = pd.read_csv(path, encoding=encoding, on_bad_lines="skip")
+            df = pd.read_csv(
+                path,
+                encoding=encoding,
+                engine="python",
+                on_bad_lines=lambda bad, _acc=skipped: (_acc.append(bad), None)[1],
+            )
             break
         except Exception as exc:
             logger.debug("Encoding %s failed for %s: %s", encoding, path.name, exc)
     else:
         logger.error("Could not read %s", path)
         return None
+
+    if skipped:
+        logger.warning(
+            "%s: %d malformed row(s) skipped by the CSV parser - these are "
+            "matches that will be missing from the table. First: %.120s",
+            path.name, len(skipped), skipped[0],
+        )
 
     # Normalise column aliases
     df.rename(columns=COLUMN_ALIASES, inplace=True)

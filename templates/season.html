@@ -9,6 +9,7 @@
 
 {% for division in divisions %}
 <h2>{{ division.name }}</h2>
+{% if division.coverage_note %}<p class="coverage-note">{{ division.coverage_note }}</p>{% endif %}
 <div class="table-scroll">
 <table class="standings">
   <tr><th>#</th><th>Club</th><th class="num">P</th><th class="num">W</th><th class="num">D</th><th class="num">L</th><th class="num">GF</th><th class="num">GA</th><th class="num">GD</th><th class="num">Pts</th><th></th></tr>
