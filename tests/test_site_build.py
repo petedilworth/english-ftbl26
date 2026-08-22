@@ -1794,25 +1794,42 @@ def test_a_complete_table_carries_no_caveat(tmp_path, monkeypatch):
     assert "coverage-note" not in season
 
 
-def test_csv_parser_reports_rows_it_drops(tmp_path, caplog):
-    # on_bad_lines="skip" used to discard malformed rows silently, so a
-    # season could arrive a third short and still look like a clean parse.
+def test_a_too_wide_row_is_trimmed_and_kept_not_dropped(tmp_path, caplog):
+    # This is the real shape of the bug found against the live 2002/03
+    # League One/Two files: rows carrying extra trailing odds columns the
+    # header doesn't declare were being thrown away wholesale, so a file
+    # with all 552 matches on disk still produced a table missing 217 of
+    # them. Every column this pipeline reads sits within the header's own
+    # width, so trimming the row to that width recovers the match.
     import logging
 
+    import aggregate
+    path = tmp_path / "0203_E1.csv"
+    path.write_text(
+        "Div,Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR\n"
+        "E1,10/08/02,Cardiff,Bristol City,1,0,H\n"
+        "E1,15/02/03,Derby,Sheffield Weds,2,2,D,0,1,A,M Ryan,5\n"
+        "E1,31/08/02,Blackpool,Chesterfield,3,1,H\n"
+    )
+    with caplog.at_level(logging.INFO):
+        df = aggregate.load_csv(path)
+    assert len(df) == 3, "the too-wide row must be recovered, not dropped"
+    assert "Derby" in df["HomeTeam"].values
+    assert any("trimmed to fit" in r.getMessage() for r in caplog.records)
+
+
+def test_a_row_missing_required_fields_is_still_dropped(tmp_path):
+    # A too-narrow row can't be recovered - there's no result to trim to.
     import aggregate
     path = tmp_path / "9394_E1.csv"
     path.write_text(
         "Div,Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR\n"
         "E1,10/08/02,Cardiff,Bristol City,1,0,H\n"
-        "E1,24/08/02,Crewe,Luton,0,1,A,STRAY,FIELDS\n"
+        "E1,17/08/02,Wigan,Barnsley\n"
         "E1,31/08/02,Blackpool,Chesterfield,3,1,H\n"
     )
-    with caplog.at_level(logging.WARNING):
-        df = aggregate.load_csv(path)
-    assert len(df) == 2, "the malformed row is still dropped"
-    assert any("malformed row" in r.getMessage() for r in caplog.records), (
-        "but it must no longer be dropped silently"
-    )
+    df = aggregate.load_csv(path)
+    assert len(df) == 2, "a row with no result to read must still be dropped"
 
 
 # ── Points deductions ────────────────────────────────────────────────────
