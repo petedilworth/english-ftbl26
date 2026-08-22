@@ -2614,32 +2614,16 @@ class SiteBuilder:
     def _standings_section(
         self, heading: str, note: str, order: str, limit: int = 10,
         where: str = "s.played >= 30", include_status: bool = False,
-        include_played: bool = False, group_by_tier: bool = False,
     ) -> dict:
         """
         A "most/fewest X" style table. order/limit/where pick the rows -
-        that's the actual selection, e.g. the 15 most extreme points
+        that's the actual selection, e.g. the 10 most extreme points
         totals across every division and era.
-
-        group_by_tier only changes how those already-selected rows are
-        *displayed*: it stable-sorts them by tier after the fetch, so
-        rows sharing a tier keep the order they arrived in (their
-        points-based rank). Doing the tier ordering in the SQL instead
-        (ORDER BY tier, points ... LIMIT) would change the selection
-        itself - it would return whichever rows sort first by tier,
-        discarding more extreme rows from other divisions - so the sort
-        has to happen after LIMIT has already picked the interesting rows.
         """
-        # tier is always fetched (even when group_by_tier is off it's
-        # cheap) since it's the sort key - division_name is the
-        # reader-facing label and isn't stable across eras the way the
-        # numeric tier is.
         cols = ("s.club_id, s.club_name, s.season_end_year, s.division_name, "
                 "s.tier, s.position, s.points, s.gd")
         if include_status:
             cols += ", s.status"
-        if include_played:
-            cols += ", s.played"
 
         # Completeness is enforced here rather than left to each caller: a
         # superlative drawn from a table missing a chunk of its fixtures is
@@ -2660,15 +2644,10 @@ class SiteBuilder:
             ORDER BY {order} LIMIT {limit}
             """
         ).fetchall()
-        if group_by_tier:
-            rows = sorted(rows, key=lambda r: r["tier"])
 
         columns = ["Club", "Season", "Division", "Pos", "Pts", "GD"]
         if include_status:
-            columns = ["Club", "Season", "Division"]
-            if include_played:
-                columns.append("Played")
-            columns.extend(["Pts", "Status"])
+            columns = ["Club", "Season", "Division", "Pts", "Status"]
 
         def _row(r):
             res = [
@@ -2677,8 +2656,6 @@ class SiteBuilder:
                 self._cell(r["division_name"]),
             ]
             if include_status:
-                if include_played:
-                    res.append(self._cell(r["played"], num=True))
                 res.extend([
                     self._cell(r["points"], num=True),
                     self._cell(r["status"]),
@@ -2733,11 +2710,36 @@ class SiteBuilder:
         )
 
     def _insight_safe_thresholds(self) -> None:
+        """
+        How many points it took to survive - asked separately of the
+        38-game Premier League and the 46-game divisions below it.
+
+        A points total is only meaningful against the number of games that
+        produced it, so these used to be one table per question with a
+        Played column and rows clustered by division: a reader could tell a
+        38-game season from a 46-game one, but the ranking itself still
+        mixed them and meant nothing. Splitting on games played makes every
+        row in a table directly comparable to every other row in it, and
+        the ranking honest without any per-row caveat.
+
+        Seasons played over some other number of games are left out
+        entirely rather than shown alongside: the 22-club Premier League
+        and Third Division of 1993/94 and 1994/95 (42 games), and the two
+        23-club National League seasons (44). Within the window this site
+        covers, 38 games means the Premier League and nothing else, and 46
+        means the four divisions below it and nothing else - so filtering
+        on games played says exactly what it means.
+        """
         import content as content_mod
 
         source = PROJECT_ROOT / "content" / "insights" / "safe-thresholds.md"
         if not source.exists():
             return
+
+        top = "Premier League seasons only, which have run to 38 games since 1995/96."
+        rest = ("The Championship, League One, League Two and National League, "
+                "all of which run to 46 games. Ranked purely on points, since "
+                "every row here comes from a season of the same length.")
 
         self.render(
             "insight_table.html", self.out / "insights" / "safe-thresholds" / "index.html", 2,
@@ -2746,27 +2748,28 @@ class SiteBuilder:
             intro=content_mod.load_theme(source),
             sections=[
                 self._standings_section(
-                    "Unlucky losers",
-                    "Clubs relegated with the highest points totals, grouped by "
-                    "division since divisions play different numbers of games. "
-                    "Seasons whose fixture list is incomplete in the source data "
-                    "are left out.",
-                    "s.points DESC, s.gd ASC",
-                    15,
-                    "s.played >= 30 "
-                    "AND (s.status = 'Relegated' OR s.status = 'Play-off Relegated')",
-                    include_status=True, include_played=True, group_by_tier=True,
+                    "Unlucky losers: Premier League", top,
+                    "s.points DESC, s.gd ASC", 10,
+                    "s.played = 38 AND (s.status = 'Relegated' OR s.status = 'Play-off Relegated')",
+                    include_status=True,
                 ),
                 self._standings_section(
-                    "Lucky survivors",
-                    "Clubs that stayed up with the lowest points totals, grouped by "
-                    "division since divisions play different numbers of games. "
-                    "Seasons whose fixture list is incomplete in the source data "
-                    "are left out.",
-                    "s.points ASC, s.gd DESC",
-                    15,
-                    "s.played >= 30 AND s.status = 'Stayed'",
-                    include_status=True, include_played=True, group_by_tier=True,
+                    "Unlucky losers: the 46-game divisions", rest,
+                    "s.points DESC, s.gd ASC", 10,
+                    "s.played = 46 AND (s.status = 'Relegated' OR s.status = 'Play-off Relegated')",
+                    include_status=True,
+                ),
+                self._standings_section(
+                    "Lucky survivors: Premier League", top,
+                    "s.points ASC, s.gd DESC", 10,
+                    "s.played = 38 AND s.status = 'Stayed'",
+                    include_status=True,
+                ),
+                self._standings_section(
+                    "Lucky survivors: the 46-game divisions", rest,
+                    "s.points ASC, s.gd DESC", 10,
+                    "s.played = 46 AND s.status = 'Stayed'",
+                    include_status=True,
                 ),
             ],
         )

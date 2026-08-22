@@ -1513,51 +1513,105 @@ def test_records_page_renders_only_once(tmp_path, monkeypatch):
     assert page.count("<h1>Records") == 1
 
 
-def test_safe_thresholds_shows_games_played_per_row(tmp_path, monkeypatch):
+def _safe_threshold_sections(page):
+    """{heading: [[cell, ...], ...]} for each h2 table on the page."""
+    out = {}
+    for block in re.split(r"<h2>", page)[1:]:
+        heading = block.split("</h2>")[0]
+        rows = []
+        for tr in re.findall(r"<tr>(.*?)</tr>", block, re.S)[1:]:
+            rows.append([
+                re.sub(r"<[^>]+>", "", td).strip()
+                for td in re.findall(r"<td[^>]*>(.*?)</td>", tr, re.S)
+            ])
+        out[heading] = rows
+    return out
+
+
+def test_safe_thresholds_splits_by_games_played(tmp_path, monkeypatch):
+    # A 38-game total and a 46-game total aren't comparable, so they must
+    # not share a ranking. Two clubs on identical points, one from each
+    # length of season, belong in different tables.
     db = _build_capacity_db(
         tmp_path,
-        extra_clubs=[("shortseason-fc", "Shortseason FC", 1)],
-        extra_rows=[_stayed_row("shortseason-fc", "Shortseason FC", 1, points=20, played=33)],
+        extra_clubs=[("top-fc", "Top FC", 1), ("lower-fc", "Lower FC", 3)],
+        extra_rows=[
+            _stayed_row("top-fc", "Top FC", 1, points=3),
+            _stayed_row("lower-fc", "Lower FC", 3, points=3),
+        ],
+    )
+    out = _build_with_safe_thresholds(tmp_path, monkeypatch, db, SAFE_THRESHOLDS_INTRO)
+    sections = _safe_threshold_sections(
+        (out / "insights" / "safe-thresholds" / "index.html").read_text()
+    )
+    pl = [r[0] for r in sections["Lucky survivors: Premier League"]]
+    rest = [r[0] for r in sections["Lucky survivors: the 46-game divisions"]]
+    assert "Top FC" in pl and "Top FC" not in rest
+    assert "Lower FC" in rest and "Lower FC" not in pl
+
+
+def test_safe_thresholds_excludes_seasons_of_any_other_length(tmp_path, monkeypatch):
+    # Anything that isn't 38 or 46 games is left out entirely rather than
+    # shown alongside - a 33-game season has no business in either
+    # ranking, and nor do the 42-game and 44-game seasons in the real data.
+    db = _build_capacity_db(
+        tmp_path,
+        extra_clubs=[("short-fc", "Short FC", 1), ("odd-fc", "Odd FC", 3)],
+        extra_rows=[
+            _stayed_row("short-fc", "Short FC", 1, points=1, played=33),
+            _stayed_row("odd-fc", "Odd FC", 3, points=1, played=44),
+        ],
     )
     out = _build_with_safe_thresholds(tmp_path, monkeypatch, db, SAFE_THRESHOLDS_INTRO)
     page = (out / "insights" / "safe-thresholds" / "index.html").read_text()
-    assert "Played" in page
-    # The low points total sits directly next to its games-played count, so
-    # a reader can see the season was short rather than a genuine record.
-    row = re.search(r"<tr>\s*<td[^>]*>.*?Shortseason.*?</tr>", page, re.S).group(0)
-    assert re.search(r">\s*33\s*<", row)
+    # Both would otherwise top "lucky survivors" on a single point.
+    assert "Short FC" not in page
+    assert "Odd FC" not in page
 
 
-def test_safe_thresholds_groups_rows_by_division_not_just_points(tmp_path, monkeypatch):
-    # Two tier-1 clubs with higher points than two tier-3 clubs. A pure
-    # points-ascending sort would interleave the tiers (tier-3's 10/15
-    # ahead of tier-1's 20/25); grouped by division, both tier-1 rows must
-    # come first despite their higher points.
+def test_safe_thresholds_ranks_by_points_not_division(tmp_path, monkeypatch):
+    # Once every row in a table is the same length of season the totals are
+    # directly comparable, so the table is one ranking - divisions
+    # interleave rather than clustering. Points here deliberately disagree
+    # with tier order.
     db = _build_capacity_db(
         tmp_path,
         extra_clubs=[
-            ("top-low-fc", "Top Low FC", 1), ("top-high-fc", "Top High FC", 1),
-            ("low-low-fc", "Low Low FC", 3), ("low-high-fc", "Low High FC", 3),
+            ("second-a-fc", "Second A FC", 2), ("fourth-a-fc", "Fourth A FC", 4),
+            ("second-b-fc", "Second B FC", 2), ("fourth-b-fc", "Fourth B FC", 4),
         ],
         extra_rows=[
-            _stayed_row("top-low-fc", "Top Low FC", 1, points=20),
-            _stayed_row("top-high-fc", "Top High FC", 1, points=25),
-            _stayed_row("low-low-fc", "Low Low FC", 3, points=10),
-            _stayed_row("low-high-fc", "Low High FC", 3, points=15),
+            _stayed_row("second-a-fc", "Second A FC", 2, points=1),
+            _stayed_row("fourth-a-fc", "Fourth A FC", 4, points=2),
+            _stayed_row("second-b-fc", "Second B FC", 2, points=3),
+            _stayed_row("fourth-b-fc", "Fourth B FC", 4, points=4),
         ],
     )
     out = _build_with_safe_thresholds(tmp_path, monkeypatch, db, SAFE_THRESHOLDS_INTRO)
-    page = (out / "insights" / "safe-thresholds" / "index.html").read_text()
-
-    names_in_order = [
-        m.group(1) for m in re.finditer(
-            r'href="[^"]*/team/(?:top|low)-[a-z]+-fc/index\.html">([^<]+)<', page
-        )
-    ]
-    assert names_in_order == ["Top Low FC", "Top High FC", "Low Low FC", "Low High FC"], (
-        "expected both tier-1 rows before both tier-3 rows, "
-        "each internally still ordered by ascending points"
+    sections = _safe_threshold_sections(
+        (out / "insights" / "safe-thresholds" / "index.html").read_text()
     )
+    names = [r[0] for r in sections["Lucky survivors: the 46-game divisions"]][:4]
+    assert names == ["Second A FC", "Fourth A FC", "Second B FC", "Fourth B FC"], (
+        "expected ascending points order with tiers interleaved, not clustered "
+        "by division"
+    )
+
+
+def test_safe_thresholds_renders_all_four_tables(tmp_path, monkeypatch):
+    db = _build_capacity_db(tmp_path)
+    out = _build_with_safe_thresholds(tmp_path, monkeypatch, db, SAFE_THRESHOLDS_INTRO)
+    page = (out / "insights" / "safe-thresholds" / "index.html").read_text()
+    for heading in (
+        "Unlucky losers: Premier League",
+        "Unlucky losers: the 46-game divisions",
+        "Lucky survivors: Premier League",
+        "Lucky survivors: the 46-game divisions",
+    ):
+        assert f"<h2>{heading}</h2>" in page
+    # The games count is stated in the note, so a column repeating it for
+    # every row would be ten identical values.
+    assert "Played" not in page
 
 
 # ── The front door: home page scale bar, hooks and club search ───────────
