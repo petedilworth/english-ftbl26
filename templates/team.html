@@ -122,7 +122,7 @@
 <h2>Season by season</h2>
 <div class="table-scroll">
 <table class="standings">
-  <tr><th>Season</th><th>Division</th><th class="num">Pos</th><th class="num">P</th><th class="num">W</th><th class="num">D</th><th class="num">L</th><th class="num">GD</th><th class="num">Pts</th><th></th></tr>
+  <tr><th>Season</th><th>Division</th><th class="num">Pos</th><th class="num">P</th><th class="num">W</th><th class="num">D</th><th class="num">L</th><th class="num">GD</th>{% if seasons_have_deductions %}<th class="num" title="Points deducted">Ded</th>{% endif %}<th class="num">Pts</th><th></th></tr>
   {% for row in seasons %}
   <tr class="status-{{ row.status_slug }}">
     <td><a href="{{ root }}/season/{{ row.season_slug }}/index.html">{{ row.season_label }}</a></td>
@@ -133,6 +133,7 @@
     <td class="num">{{ row.drawn }}</td>
     <td class="num">{{ row.lost }}</td>
     <td class="num">{{ row.gd }}</td>
+    {% if seasons_have_deductions %}<td class="num">{% if row.points_deducted %}<span class="points-ded">−{{ row.points_deducted }}</span>{% endif %}</td>{% endif %}
     <td class="num"><strong>{{ row.points }}</strong></td>
     <td><span class="status-tag {{ row.status_dir }}">{{ row.status_label }}</span></td>
   </tr>

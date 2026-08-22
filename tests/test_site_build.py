@@ -1636,14 +1636,25 @@ def test_home_hooks_carry_a_number_and_a_link_that_resolves(tmp_path, monkeypatc
 
 
 def test_home_hooks_survive_without_any_finance_data(tmp_path, monkeypatch):
-    # Three of the five recipes read club_finances. A database without that
-    # table should still get a hook out of standings alone - not an empty
-    # section, and not a traceback.
-    out, home = _front_door(
-        tmp_path, monkeypatch, insights={"safe-thresholds": SAFE_THRESHOLDS_MD},
+    # Three of the four recipes read club_finances. A database without that
+    # table should still get a hook out of club_trajectory alone - not an
+    # empty section, and not a traceback. The fixture's clubs are all tier 3,
+    # so give one the top-flight run the surviving fallback looks for.
+    tmp_path.mkdir(parents=True, exist_ok=True)
+    db = _db_on_disk(tmp_path)
+    conn = sqlite3.connect(db)
+    conn.execute(
+        "UPDATE club_trajectory SET current_tier = 1, current_tier_streak = 20"
+        " WHERE club_id = 'steady-fc'"
     )
+    conn.commit()
+    conn.close()
+    out = _build_site_with_content(
+        tmp_path, monkeypatch, db, {"giant-fc": RICH_STORY}
+    )
+    home = (out / "index.html").read_text()
     hooks = _hooks(home)
-    assert hooks
+    assert hooks, "expected a hook from the non-financial fallback"
     for href, _ in hooks:
         assert (out / href.removeprefix("./")).exists()
 
@@ -1705,3 +1716,291 @@ def test_insights_index_groups_and_has_no_duplicate_targets(tmp_path, monkeypatc
     assert sum(1 for p in paths if "finances/" in p) == 1
     for path in paths:
         assert (out / "insights" / path.removeprefix("../insights/")).exists(), path
+
+
+# ── Incomplete source data must not become a record ──────────────────────
+
+def _with_fixture_count(tmp_path, n_matches):
+    """
+    Fixture db where 2024/25 tier 3 (two clubs, so two fixtures make a full
+    round) holds exactly n_matches of them - the shape of 2002/03 League One
+    in the real database, which stops on 4 February a third of the way short.
+    """
+    import pipeline
+    tmp_path.mkdir(parents=True, exist_ok=True)
+    db = _db_on_disk(tmp_path)
+    conn = sqlite3.connect(db)
+    pipeline._migrate_standings_columns(conn)
+    conn.execute("DELETE FROM matches WHERE season_end_year = 2025 AND tier = 3")
+    pairs = [("giant-fc", "steady-fc"), ("steady-fc", "giant-fc")]
+    for i in range(n_matches):
+        home, away = pairs[i % 2]
+        conn.execute(
+            "INSERT INTO matches (season_end_year, tier, match_date, home_club_id,"
+            " away_club_id, home_name, away_name, fthg, ftag, ftr)"
+            " VALUES (2025, 3, ?, ?, ?, ?, ?, 1, 0, 'H')",
+            (f"2024-08-{10 + i:02d}", home, away, home, away),
+        )
+    conn.commit()
+    pipeline._mark_data_completeness(conn)
+    conn.commit()
+    flag = conn.execute(
+        "SELECT data_complete FROM standings WHERE season_end_year = 2025 AND tier = 3"
+    ).fetchone()[0]
+    conn.close()
+    return db, flag
+
+
+def test_completeness_flag_follows_the_matches_actually_stored(tmp_path):
+    # Two clubs owe each other two fixtures. One present is a part-played
+    # table; both present is a real one.
+    _, short = _with_fixture_count(tmp_path / "short", 1)
+    _, full = _with_fixture_count(tmp_path / "full", 2)
+    assert short == 0, "a table missing a fixture must be flagged incomplete"
+    assert full == 1, "a table with every fixture must not be flagged"
+
+
+def test_records_exclude_tables_missing_fixtures(tmp_path, monkeypatch):
+    # A superlative drawn from a part-played table is an artifact, not a
+    # record: the real database was offering West Bromwich Albion's "29
+    # points" from 33 games as the lowest total ever survived on.
+    def rows_in_records(sub, n):
+        db, _ = _with_fixture_count(tmp_path / sub, n)
+        out = _build_site_with_content(
+            tmp_path / sub, monkeypatch, db, {"giant-fc": RICH_STORY}
+        )
+        html = (out / "insights" / "records" / "index.html").read_text()
+        return len(re.findall(r"<tr>", html))
+
+    assert rows_in_records("short", 1) < rows_in_records("full", 2), (
+        "rows from a table missing fixtures must be withheld from records"
+    )
+
+
+def test_a_part_played_table_says_so_on_the_page(tmp_path, monkeypatch):
+    db, flag = _with_fixture_count(tmp_path, 1)
+    assert flag == 0
+    out = _build_site_with_content(tmp_path, monkeypatch, db, {"giant-fc": RICH_STORY})
+    season = (out / "season" / "2024-25" / "index.html").read_text()
+    assert "fixtures are in the source data" in season
+    assert "not the final table" in season
+
+
+def test_a_complete_table_carries_no_caveat(tmp_path, monkeypatch):
+    db, flag = _with_fixture_count(tmp_path, 2)
+    assert flag == 1
+    out = _build_site_with_content(tmp_path, monkeypatch, db, {"giant-fc": RICH_STORY})
+    season = (out / "season" / "2024-25" / "index.html").read_text()
+    assert "coverage-note" not in season
+
+
+def test_a_too_wide_row_is_trimmed_and_kept_not_dropped(tmp_path, caplog):
+    # This is the real shape of the bug found against the live 2002/03
+    # League One/Two files: rows carrying extra trailing odds columns the
+    # header doesn't declare were being thrown away wholesale, so a file
+    # with all 552 matches on disk still produced a table missing 217 of
+    # them. Every column this pipeline reads sits within the header's own
+    # width, so trimming the row to that width recovers the match.
+    import logging
+
+    import aggregate
+    path = tmp_path / "0203_E1.csv"
+    path.write_text(
+        "Div,Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR\n"
+        "E1,10/08/02,Cardiff,Bristol City,1,0,H\n"
+        "E1,15/02/03,Derby,Sheffield Weds,2,2,D,0,1,A,M Ryan,5\n"
+        "E1,31/08/02,Blackpool,Chesterfield,3,1,H\n"
+    )
+    with caplog.at_level(logging.INFO):
+        df = aggregate.load_csv(path)
+    assert len(df) == 3, "the too-wide row must be recovered, not dropped"
+    assert "Derby" in df["HomeTeam"].values
+    assert any("trimmed to fit" in r.getMessage() for r in caplog.records)
+
+
+def test_a_row_missing_required_fields_is_still_dropped(tmp_path):
+    # A too-narrow row can't be recovered - there's no result to trim to.
+    import aggregate
+    path = tmp_path / "9394_E1.csv"
+    path.write_text(
+        "Div,Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR\n"
+        "E1,10/08/02,Cardiff,Bristol City,1,0,H\n"
+        "E1,17/08/02,Wigan,Barnsley\n"
+        "E1,31/08/02,Blackpool,Chesterfield,3,1,H\n"
+    )
+    df = aggregate.load_csv(path)
+    assert len(df) == 2, "a row with no result to read must still be dropped"
+
+
+# ── Points deductions ────────────────────────────────────────────────────
+
+DEDUCTIONS_HEADER = ("club_id,season_end_year,tier,points,category,applied,"
+                     "reason,source_url,note\n")
+
+
+def _deductions_csv(tmp_path, lines):
+    path = tmp_path / "points_deductions.csv"
+    path.write_text(DEDUCTIONS_HEADER + "".join(lines), encoding="utf-8")
+    return path
+
+
+def _with_deductions(tmp_path, lines):
+    """Fixture db with points_deductions seeded and applied."""
+    import deductions as ded
+    import pipeline
+    tmp_path.mkdir(parents=True, exist_ok=True)
+    db = _db_on_disk(tmp_path)
+    conn = sqlite3.connect(db)
+    pipeline._migrate_standings_columns(conn)
+    ded.seed_points_deductions(conn, _deductions_csv(tmp_path, lines))
+    pipeline._apply_points_deductions(conn)
+    conn.commit()
+    return db, conn
+
+
+def test_deduction_comes_off_the_points_total(tmp_path):
+    db, conn = _with_deductions(tmp_path, [
+        "giant-fc,2025,3,10,administration,1,Entered administration,https://example.invalid,\n"
+    ])
+    row = conn.execute(
+        "SELECT points, points_deducted, won, drawn FROM standings"
+        " WHERE club_id = 'giant-fc' AND season_end_year = 2025"
+    ).fetchone()
+    conn.close()
+    points, deducted, won, drawn = row
+    assert deducted == 10
+    assert points == won * 3 + drawn - 10, "Pts must be the post-deduction total"
+
+
+def test_a_suspended_penalty_is_recorded_but_never_subtracted(tmp_path):
+    # Six real records are suspended sanctions that never reached a table.
+    db, conn = _with_deductions(tmp_path, [
+        "giant-fc,2025,3,10,other,0,Suspended and never activated,https://example.invalid,\n"
+    ])
+    points, deducted = conn.execute(
+        "SELECT points, points_deducted FROM standings"
+        " WHERE club_id = 'giant-fc' AND season_end_year = 2025"
+    ).fetchone()
+    stored = conn.execute("SELECT COUNT(*) FROM points_deductions").fetchone()[0]
+    won, drawn = conn.execute(
+        "SELECT won, drawn FROM standings WHERE club_id = 'giant-fc'"
+        " AND season_end_year = 2025"
+    ).fetchone()
+    conn.close()
+    assert stored == 1, "the suspended penalty is still part of the record"
+    assert deducted == 0 and points == won * 3 + drawn
+
+
+def test_two_sanctions_in_one_season_are_summed(tmp_path):
+    # Derby took 12 for administration and 9 for accounting breaches in
+    # 2021/22; Macclesfield collected four separate penalties in 2019/20.
+    db, conn = _with_deductions(tmp_path, [
+        "giant-fc,2025,3,4,administration,1,First,https://example.invalid,\n",
+        "giant-fc,2025,3,6,financial-rules,1,Second,https://example.invalid,\n",
+    ])
+    deducted = conn.execute(
+        "SELECT points_deducted FROM standings WHERE club_id = 'giant-fc'"
+        " AND season_end_year = 2025"
+    ).fetchone()[0]
+    conn.close()
+    assert deducted == 10
+
+
+def test_applying_deductions_twice_changes_nothing(tmp_path):
+    # points is always wins*3 + draws before any deduction, so the on-pitch
+    # total is recovered from W/D rather than from the current points value.
+    import pipeline
+    db, conn = _with_deductions(tmp_path, [
+        "giant-fc,2025,3,10,administration,1,Entered administration,https://example.invalid,\n"
+    ])
+    snapshot = list(conn.execute(
+        "SELECT rowid, points, points_deducted, position FROM standings ORDER BY rowid"
+    ))
+    pipeline._apply_points_deductions(conn)
+    pipeline._apply_points_deductions(conn)
+    again = list(conn.execute(
+        "SELECT rowid, points, points_deducted, position FROM standings ORDER BY rowid"
+    ))
+    conn.close()
+    assert snapshot == again
+
+
+def test_a_deduction_can_change_where_a_club_finished(tmp_path):
+    # The whole point of subtracting before ranking: Wigan's 12 turned 13th
+    # into 23rd, and the ordinary positional rules then relegated them
+    # without anything needing to know a sanction happened.
+    (tmp_path / "before").mkdir(parents=True, exist_ok=True)
+    before = sqlite3.connect(_db_on_disk(tmp_path / "before"))
+    top = before.execute(
+        "SELECT club_id FROM standings WHERE season_end_year = 2025 AND tier = 3"
+        " ORDER BY position LIMIT 1"
+    ).fetchone()[0]
+    before.close()
+
+    db, conn = _with_deductions(tmp_path / "after", [
+        f"{top},2025,3,40,administration,1,Enormous penalty,https://example.invalid,\n"
+    ])
+    position = conn.execute(
+        "SELECT position FROM standings WHERE club_id = ? AND season_end_year = 2025",
+        (top,),
+    ).fetchone()[0]
+    conn.close()
+    assert position > 1, "a big enough deduction must move the club down the table"
+
+
+def test_deduction_rows_without_a_source_are_refused(tmp_path):
+    import deductions as ded
+    tmp_path.mkdir(parents=True, exist_ok=True)
+    db = _db_on_disk(tmp_path)
+    conn = sqlite3.connect(db)
+    loaded = ded.seed_points_deductions(conn, _deductions_csv(tmp_path, [
+        "giant-fc,2025,3,10,administration,1,No source given,,\n",
+        "giant-fc,2024,3,3,other,1,Sourced,https://example.invalid,\n",
+    ]))
+    conn.close()
+    assert loaded == 1, "a deduction with no source must not rewrite a table"
+
+
+def test_unknown_club_and_negative_points_are_refused(tmp_path):
+    import deductions as ded
+    tmp_path.mkdir(parents=True, exist_ok=True)
+    conn = sqlite3.connect(_db_on_disk(tmp_path))
+    loaded = ded.seed_points_deductions(conn, _deductions_csv(tmp_path, [
+        "no-such-club-fc,2025,3,10,other,1,Unknown club,https://example.invalid,\n",
+        "giant-fc,2025,3,-5,other,1,Negative would award points,https://example.invalid,\n",
+    ]))
+    conn.close()
+    assert loaded == 0
+
+
+def test_the_deduction_column_appears_only_where_there_is_one(tmp_path, monkeypatch):
+    lines = ["giant-fc,2025,3,10,administration,1,Entered administration,https://example.invalid,\n"]
+    db, conn = _with_deductions(tmp_path, lines)
+    conn.close()
+    out = _build_site_with_content(tmp_path, monkeypatch, db, {"giant-fc": RICH_STORY})
+    docked = (out / "season" / "2024-25" / "index.html").read_text()
+    clean = (out / "season" / "2022-23" / "index.html").read_text()
+    assert ">Ded<" in docked and "−10" in docked
+    assert ">Ded<" not in clean, "a table with no deduction must not gain an empty column"
+
+
+def test_the_real_dataset_loads_and_every_row_matches_a_standings_row():
+    # points_deductions.csv is keyed on club_id and on the season whose table
+    # the points actually came off - which is often not the season of the
+    # offence. A row that matches nothing is a typo, not a deduction.
+    import csv
+    from pathlib import Path
+
+    import site_build as sb
+    path = Path(sb.__file__).parent.parent / "points_deductions.csv"
+    conn = sqlite3.connect(Path(sb.__file__).parent.parent / "data" / "db" / "england.db")
+    orphans = []
+    for row in csv.DictReader(path.open()):
+        hit = conn.execute(
+            "SELECT tier FROM standings WHERE club_id = ? AND season_end_year = ?",
+            (row["club_id"], int(row["season_end_year"])),
+        ).fetchone()
+        if not hit or hit[0] != int(row["tier"]):
+            orphans.append(f"{row['club_id']} {row['season_end_year']}")
+    conn.close()
+    assert not orphans, f"deduction rows matching no standings row: {orphans}"

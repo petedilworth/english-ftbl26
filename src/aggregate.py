@@ -49,15 +49,62 @@ def load_csv(path: Path) -> pd.DataFrame | None:
         logger.warning("Missing or empty file: %s", path)
         return None
 
+    # football-data.co.uk's older files are ragged: some rows carry MORE
+    # fields than the header declares - extra trailing odds columns present
+    # for that particular fixture but not for every match that season - and
+    # a handful carry fewer. on_bad_lines used to be the bare string "skip",
+    # which dropped either kind with no word about it, and for years that
+    # meant real, played matches vanishing with no trace: a 2002/03 League
+    # Two file with all 552 matches present on disk still produced a table
+    # with 217 missing, because 217 rows had a stray extra column.
+    #
+    # A too-wide row is recoverable: every column this pipeline actually
+    # reads - Div, Date, HomeTeam, AwayTeam, FTHG, FTAG, FTR - sits within
+    # the header's own declared width in every football-data schema this
+    # project has seen, so trimming the row to that width keeps the match
+    # and only discards odds data nothing here uses. A too-narrow row is
+    # genuinely missing data and still can't be recovered.
+    with open(path, "rb") as fh:
+        header_width = len(fh.readline().decode("latin-1").rstrip("\r\n").split(","))
+
     for encoding in ("utf-8", "latin-1", "cp1252"):
+        skipped: list[list] = []
+        counts = {"truncated": 0}
+
+        def _on_bad_line(bad, _acc=skipped, _counts=counts):
+            if len(bad) > header_width:
+                _counts["truncated"] += 1
+                return bad[:header_width]
+            _acc.append(bad)
+            return None
+
         try:
-            df = pd.read_csv(path, encoding=encoding, on_bad_lines="skip")
+            df = pd.read_csv(
+                path,
+                encoding=encoding,
+                engine="python",
+                on_bad_lines=_on_bad_line,
+            )
             break
         except Exception as exc:
             logger.debug("Encoding %s failed for %s: %s", encoding, path.name, exc)
     else:
         logger.error("Could not read %s", path)
         return None
+
+    if counts["truncated"]:
+        logger.info(
+            "%s: %d row(s) had more fields than the header declares (extra "
+            "trailing columns, commonly odds data not used here) - trimmed "
+            "to fit rather than dropped",
+            path.name, counts["truncated"],
+        )
+    if skipped:
+        logger.warning(
+            "%s: %d malformed row(s) skipped by the CSV parser - these are "
+            "matches that will be missing from the table. First: %.120s",
+            path.name, len(skipped), skipped[0],
+        )
 
     # Normalise column aliases
     df.rename(columns=COLUMN_ALIASES, inplace=True)
@@ -93,6 +140,26 @@ def load_csv(path: Path) -> pd.DataFrame | None:
         return None
 
     return df
+
+
+def rank_standings(standings: pd.DataFrame) -> pd.DataFrame:
+    """
+    Order a table and number its positions.
+
+    Split out of compute_standings so it can be re-run after points
+    deductions have been applied: a deduction changes the points a club
+    finished on, and therefore where it finished. Doing it in this order
+    is the whole point - it makes the ordinary positional promotion and
+    relegation rules produce the right answer without anything having to
+    know a sanction happened.
+    """
+    standings = standings.sort_values(
+        ["points", "gd", "gf"], ascending=[False, False, False]
+    ).reset_index(drop=True)
+    if "position" in standings.columns:
+        standings = standings.drop(columns=["position"])
+    standings.insert(0, "position", standings.index + 1)
+    return standings
 
 
 def compute_standings(
@@ -139,12 +206,7 @@ def compute_standings(
             }
         )
 
-    standings = pd.DataFrame(records)
-    standings.sort_values(
-        ["points", "gd", "gf"], ascending=[False, False, False], inplace=True
-    )
-    standings.reset_index(drop=True, inplace=True)
-    standings.insert(0, "position", standings.index + 1)
+    standings = rank_standings(pd.DataFrame(records))
 
     # Incomplete season warning
     n_teams = len(standings)
