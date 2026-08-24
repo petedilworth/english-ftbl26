@@ -644,7 +644,7 @@ class SiteBuilder:
             return f"{opening}, {played} game{'s' if played != 1 else ''} in."
         return f"{opening}."
 
-    def _home_hooks(self, limit: int = 4) -> list[dict]:
+    def _home_hooks(self, limit: int = 5) -> list[dict]:
         """
         The "show me something interesting" door: a few findings with real
         numbers in them, each linking to the page that explains it.
@@ -661,6 +661,7 @@ class SiteBuilder:
         should be byte-identical, or nobody can diff a deploy.
         """
         recipes = (
+            self._hook_fell_out_of_the_league,
             self._hook_wage_ratio,
             self._hook_biggest_loss,
             self._hook_outspender,
@@ -679,6 +680,76 @@ class SiteBuilder:
             if len(hooks) >= limit:
                 break
         return hooks
+
+    def _hook_fell_out_of_the_league(self) -> dict | None:
+        """
+        The longest fall the pyramid allows: the top flight, then out of the
+        Football League altogether.
+
+        Tier 1 here is the Premier League - the standings begin in 1993/94 -
+        and tier 5 is the National League, outside the Football League. So
+        the finding is simply a club with a tier-1 season and a later tier-5
+        one. The ordering matters and is the whole claim: Luton Town also
+        span both tiers, but their fifth-tier seasons came before their
+        top-flight one, which is a rise, not a fall.
+
+        Two honesty notes, since this prints the word "only".
+
+        Tier-5 coverage starts in 2005/06 rather than 1993/94, so a club that
+        left the Football League between 1994 and 2005 would be invisible
+        here. None of the clubs that did - Halifax, Chester, Barnet, Exeter,
+        Shrewsbury, York, Carlisle, Kidderminster, Cambridge United - had
+        played in the Premier League, so the answer is right; but it rests on
+        that window, and the code should say so rather than leave it to be
+        rediscovered.
+
+        And the recipe retires its own claim. If a second club ever qualifies
+        the sentence becomes a count and the link moves to the page listing
+        them all, so no deploy can leave a stale "only club" on the front
+        page.
+        """
+        rows = self.conn.execute(
+            """
+            SELECT t.canonical_name AS name, s.club_id AS club_id,
+                   t.current_tier   AS now_tier,
+                   MIN(CASE WHEN s.tier = 1 THEN s.season_end_year END) AS first_top,
+                   MIN(CASE WHEN s.tier = 5 THEN s.season_end_year END) AS first_fifth
+            FROM standings s
+            JOIN club_trajectory t ON t.club_id = s.club_id
+            GROUP BY s.club_id
+            HAVING first_top IS NOT NULL AND first_fifth IS NOT NULL
+               AND first_fifth > first_top
+            ORDER BY first_fifth, s.club_id
+            """
+        ).fetchall()
+        if not rows:
+            return None
+        if len(rows) > 1:
+            return {
+                "text": (f"{len(rows)} clubs here have played in the Premier "
+                         f"League and later dropped out of the Football League"),
+                "label": "Every top-flight club that fell, and how far",
+                "path": "insights/fallen-giants/index.html",
+            }
+
+        row = rows[0]
+        # club_trajectory, not club_master: only a club with a trajectory row
+        # gets a team page, so joining that way is what makes the link resolve.
+        if not row["club_id"]:
+            return None
+        now = TIER_SLUGS.get(row["now_tier"])
+        gap = row["first_fifth"] - row["first_top"]
+        label = (f"{season_label(row['first_top'])} to "
+                 f"{season_label(row['first_fifth'])}")
+        if now:
+            label += f", and back in {now[1]} now"
+        return {
+            "text": (f"{row['name']} went from the Premier League to non-league "
+                     f"football in {gap} seasons — the only club here to make "
+                     f"that fall"),
+            "label": label,
+            "path": f"team/{row['club_id']}/index.html",
+        }
 
     def _hook_wage_ratio(self) -> dict | None:
         """Wages above turnover - the overreach that precedes the trouble."""

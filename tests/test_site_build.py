@@ -1689,8 +1689,67 @@ def test_home_hooks_carry_a_number_and_a_link_that_resolves(tmp_path, monkeypatc
         assert (out / href.removeprefix("./")).exists(), f"hook links nowhere: {href}"
 
 
+def _fell_out_of_the_league(tmp_path, monkeypatch, fallers=("giant-fc",)):
+    """
+    Build the site with each named club given a fifth-tier season after its
+    top-flight one - the shape _hook_fell_out_of_the_league looks for. The
+    fixture's giant-fc is already tier 1 in 2021/22, so only the landing
+    needs adding; steady-fc needs both ends of the fall.
+    """
+    tmp_path.mkdir(parents=True, exist_ok=True)
+    db = _db_on_disk(tmp_path)
+    conn = sqlite3.connect(db)
+    for i, club_id in enumerate(fallers):
+        name = club_id.replace("-fc", "").title() + " FC"
+        if club_id != "giant-fc":       # give it a top flight to fall from
+            conn.execute(
+                "INSERT INTO standings VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+                (2021, 1, "Premier League", club_id, name, 20,
+                 38, 5, 5, 28, 20, 70, -50, 20, "Relegated", "test"),
+            )
+        conn.execute(
+            "INSERT INTO standings VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+            (2026 + i, 5, "National League", club_id, name, 12,
+             46, 15, 10, 21, 50, 60, -10, 55, "Stayed", "test"),
+        )
+    trajectory.rebuild_trajectory(conn)
+    conn.commit()
+    conn.close()
+    out = _build_site_with_content(
+        tmp_path, monkeypatch, db, {"giant-fc": RICH_STORY}
+    )
+    return out, (out / "index.html").read_text()
+
+
+def test_home_hook_names_the_only_club_to_fall_out_of_the_league(
+        tmp_path, monkeypatch):
+    # The longest fall the pyramid allows, and the one hook that sends a
+    # reader into a club's written history rather than a table.
+    out, home = _fell_out_of_the_league(tmp_path, monkeypatch)
+    href, text = _hooks(home)[0]
+    assert "Giant FC" in text
+    assert "Premier League" in text and "only club here" in text
+    assert href.removeprefix("./") == "team/giant-fc/index.html"
+    assert (out / "team" / "giant-fc" / "index.html").exists()
+
+
+def test_home_hook_retires_its_only_club_claim_when_a_second_club_falls(
+        tmp_path, monkeypatch):
+    # The claim is true until it isn't. A second qualifying club must turn
+    # the sentence into a count and move the link to the page that lists
+    # them all - otherwise a Monday pipeline run could publish a falsehood
+    # on the front page and nothing would catch it.
+    _, home = _fell_out_of_the_league(
+        tmp_path, monkeypatch, fallers=("giant-fc", "steady-fc")
+    )
+    href, text = _hooks(home)[0]
+    assert "only" not in text
+    assert text.startswith("2 clubs here")
+    assert href.removeprefix("./") == "insights/fallen-giants/index.html"
+
+
 def test_home_hooks_survive_without_any_finance_data(tmp_path, monkeypatch):
-    # Three of the four recipes read club_finances. A database without that
+    # Three of the six recipes read club_finances. A database without that
     # table should still get a hook out of club_trajectory alone - not an
     # empty section, and not a traceback. The fixture's clubs are all tier 3,
     # so give one the top-flight run the surviving fallback looks for.
