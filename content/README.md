@@ -46,7 +46,7 @@ panel on the team page, and automatically place the club on the relevant
 | `owner` | Name of the owner or holding entity |
 | `owner_since` | Year |
 | `multi_club_group` | e.g. `"City Football Group"` |
-| `administration` | List of `{year, points_deducted, note}` |
+| `administration` | List of `{year, month, points_deducted, note}`. `month` is optional but worth finding: seasons run August-May, so a calendar year straddles two of them and only the month says which. Most insolvencies happen between January and May, which is the season ending in that same year - without a month the entry is assumed to fall in the season *starting* that year, and lands a season late. Give a number or a name (`2` or `February`) |
 | `points_deductions` | List of `{season_end_year, points, reason}` |
 | `drops` | List of `{season, note}` - a promotion/relegation pattern this club appears in on the **The drop** insight page. `season` is the pattern's final season, e.g. `2018` for a relegation completed in 2017/18 - matches automatically against `src/movement.py`'s detected patterns, so a season that doesn't correspond to a real one is silently skipped rather than shown. |
 | `rises` | Same shape, for **The rise**. |

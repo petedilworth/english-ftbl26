@@ -14,6 +14,7 @@ previous_grounds:
     years: "1898-2001"
 administration:
   - year: 2009
+    month: 4
     points_deducted: 10
     note: >
       Southampton Leisure Holdings plc, the parent company rather than the

@@ -12,6 +12,7 @@ capacity: 25486
 stadium_ownership: club
 administration:
   - year: 2010
+    month: 1
     points_deducted: 10
     note: >
       Crystal Palace FC (2000) Ltd was placed into administration on 26

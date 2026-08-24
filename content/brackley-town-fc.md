@@ -7,6 +7,7 @@ owner: "Ray Styles and Allan Leighton"
 owner_since: 1999
 administration:
   - year: 1999
+    month: 2
     note: "The club was forced into voluntary liquidation in February 1999 with debts over £100,000; its assets were bought by Ray Styles and Mike Bosher, who reformed the club under the same name"
 stadium: "St James Park"
 stadium_opened: 1974

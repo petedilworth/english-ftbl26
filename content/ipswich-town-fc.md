@@ -11,6 +11,7 @@ stadium_opened: 1884
 stadium_ownership: council
 administration:
   - year: 2003
+    month: 2
     points_deducted: 0
     note: >
       An administration order was made over Ipswich Town Football Club

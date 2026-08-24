@@ -169,15 +169,55 @@ def first_year(value) -> int | None:
     return int(match.group(1)) if match else None
 
 
-def to_season_end_year(year: int | None, kind: str) -> int | None:
+def to_season_end_year(year: int | None, kind: str, month=None) -> int | None:
     """
     Put a year on the standings axis, which is keyed by season-end year.
-    A calendar year N sits in the season that ends in N+1, because seasons
-    run August-May.
+
+    Seasons run August-May, so a calendar year N straddles two of them and
+    the month decides which: August-December of N belongs to the season
+    ending N+1, January-July of N to the season ending N.
+
+    Without a month there is nothing to decide on, and the fallback assumes
+    the second half of the year - right for a club founded or an owner
+    arriving over the summer, which is what the undated fields describe.
+    It is wrong for insolvency, which is overwhelmingly a mid-season event:
+    of the administrations recorded here, most fall between January and May,
+    so they belong to the season ending in their own calendar year. Pass the
+    month whenever the record gives one.
     """
     if year is None:
         return None
+    month = _month_number(month)
+    if month:
+        return year + 1 if month >= 8 else year
     return year + 1 if kind == "calendar" else year
+
+
+_MONTH_LABELS = dict(enumerate(
+    ("January", "February", "March", "April", "May", "June",
+     "July", "August", "September", "October", "November", "December"), 1))
+
+_MONTH_NAMES = {name.lower(): number for number, name in _MONTH_LABELS.items()}
+
+
+def _month_number(value) -> int | None:
+    """
+    A month as 1-12, from an integer or a name ("February", "feb"). Anything
+    else - None, a typo, a number out of range - reads as "not recorded", so
+    a bad value falls back to the undated behaviour rather than throwing.
+    """
+    if value is None or isinstance(value, bool):
+        return None
+    if isinstance(value, int):
+        return value if 1 <= value <= 12 else None
+    text = str(value).strip().lower()
+    if text.isdigit():
+        number = int(text)
+        return number if 1 <= number <= 12 else None
+    for name, number in _MONTH_NAMES.items():
+        if name.startswith(text) and len(text) >= 3:
+            return number
+    return None
 
 
 def _plural(n: int, word: str) -> str:
@@ -192,8 +232,8 @@ def theme_events(slug: str, facts: dict) -> list[dict]:
     facts = facts or {}
     events: list[dict] = []
 
-    def add(year, kind, label, text):
-        season = to_season_end_year(first_year(year), kind)
+    def add(year, kind, label, text, month=None):
+        season = to_season_end_year(first_year(year), kind, month)
         if season:
             events.append({"season_end_year": season, "label": label, "text": text})
 
@@ -202,13 +242,15 @@ def theme_events(slug: str, facts: dict) -> list[dict]:
             if not isinstance(e, dict):
                 continue
             pts = e.get("points_deducted")
-            text = f"Entered administration in {e.get('year')}"
+            month = _month_number(e.get("month"))
+            when = f"{_MONTH_LABELS[month]} {e.get('year')}" if month else f"{e.get('year')}"
+            text = f"Entered administration in {when}"
             if pts:
                 text += f", and was docked {_plural(int(pts), 'point')}"
             text += "."
             if e.get("note"):
                 text += f" {e['note']}."
-            add(e.get("year"), "calendar", "Administration", text)
+            add(e.get("year"), "calendar", "Administration", text, e.get("month"))
 
     elif slug == "points-deductions":
         for e in facts.get("points_deductions") or []:

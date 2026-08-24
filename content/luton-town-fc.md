@@ -8,6 +8,7 @@ owner: "Luton Town Football Club 2020 Ltd (Luton Town 2020 consortium)"
 owner_since: 2008
 administration:
   - year: 2007
+    month: 11
     points_deducted: 10
     note: "Entered administration in November 2007 under chairman David Pinkney"
 points_deductions:

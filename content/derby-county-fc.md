@@ -17,6 +17,7 @@ previous_grounds:
     years: "1895-1997"
 administration:
   - year: 2021
+    month: 9
     points_deducted: 12
     note: >
       Administrators were appointed to The Derby County Football Club

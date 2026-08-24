@@ -211,16 +211,43 @@ def test_calendar_years_shift_onto_the_season_axis():
     assert to_season_end_year(None, "calendar") is None
 
 
-def test_coventrys_administration_and_deduction_land_on_one_season():
-    # The real trap: administration.year is 2013 (calendar) and
-    # points_deductions.season_end_year is 2014 - the same 2013/14 saga.
+def test_a_month_decides_which_season_a_calendar_year_belongs_to():
+    # Seasons run August-May, so a calendar year straddles two of them and
+    # the month is the whole answer. August is the hinge.
+    assert to_season_end_year(2010, "calendar", 7) == 2010     # July: season ends 2010
+    assert to_season_end_year(2010, "calendar", 8) == 2011     # August: 2010/11 begins
+    assert to_season_end_year(2010, "calendar", "February") == 2010
+    assert to_season_end_year(2010, "calendar", "Sept") == 2011
+    # A month that isn't one reads as "not recorded" rather than throwing,
+    # so a typo in a content file degrades to the undated behaviour.
+    for junk in (0, 13, "nonsense", "", True):
+        assert to_season_end_year(2010, "calendar", junk) == 2011
+
+
+def test_coventrys_deduction_lands_a_season_after_its_administration():
+    # This used to assert the opposite - that both events landed on 2014 -
+    # which quietly falsified the most interesting thing about the saga.
+    # Coventry entered administration in March 2013, inside 2012/13, and the
+    # ten points came off 2013/14 because the insolvency fell too late in
+    # the season to be applied to it. Collapsing the two onto one season
+    # hides that the penalty arrived a year after the event that caused it.
     facts = {
-        "administration": [{"year": 2013, "points_deducted": 10}],
+        "administration": [{"year": 2013, "month": 3, "points_deducted": 10}],
         "points_deductions": [{"season_end_year": 2014, "points": 10}],
     }
     admin = theme_events("administration", facts)
     deduction = theme_events("points-deductions", facts)
-    assert admin[0]["season_end_year"] == deduction[0]["season_end_year"] == 2014
+    assert admin[0]["season_end_year"] == 2013
+    assert deduction[0]["season_end_year"] == 2014
+
+
+def test_an_administration_month_reaches_the_derived_text():
+    facts = {"administration": [{"year": 2009, "month": 4, "points_deducted": 10}]}
+    text = theme_events("administration", facts)[0]["text"]
+    assert text.startswith("Entered administration in April 2009")
+    # Undated entries keep the bare year rather than inventing a month.
+    bare = theme_events("administration", {"administration": [{"year": 2009}]})
+    assert bare[0]["text"].startswith("Entered administration in 2009.")
 
 
 # ── Theme events ───────────────────────────────────────────────────────
