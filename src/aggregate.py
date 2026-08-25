@@ -37,6 +37,30 @@ THREE_POINTS_FROM = 1982
 def points_for_win(season_end_year: int) -> int:
     return 3 if season_end_year >= THREE_POINTS_FROM else 2
 
+
+def points_rule(tier: int, season_end_year: int) -> tuple[int, int, int]:
+    """
+    Points for a home win, an away win and a draw.
+
+    Almost everywhere this is (2, 2, 1) or (3, 3, 1) and the venue is
+    irrelevant. The exception is the Alliance Premier League, which for
+    three seasons from 1983/84 tried paying more for winning away from
+    home: two points for a home win, three for an away one. It is the only
+    time an English national division has valued the two differently, and
+    ignoring it does not merely shift totals - it changes who won. Under a
+    flat three-for-a-win, 1984/85 comes out as Bath City; the away-win rule
+    reproduces the published table exactly, Wealdstone 62 and Nuneaton 58.
+
+    Verified by computing all 26 Alliance/Conference seasons and checking
+    the champion against the documented record: 24 of 26 agree, and the
+    two that don't are source errors rather than rule errors (see
+    historical.TIER5_CHAMPIONS).
+    """
+    if tier == 5 and 1984 <= season_end_year <= 1986:
+        return (2, 3, 1)
+    win = points_for_win(season_end_year)
+    return (win, win, 1)
+
 # Expected minimum matches per season (used for incomplete-season detection)
 EXPECTED_MATCHES = {
     20: 380,  # 20-club league
@@ -205,7 +229,8 @@ def compute_standings(
         gf = int(home["FTHG"].sum()) + int(away["FTAG"].sum())
         ga = int(home["FTAG"].sum()) + int(away["FTHG"].sum())
         gd = gf - ga
-        pts = w * points_for_win(season_end_year) + d
+        home_win_pts, away_win_pts, draw_pts = points_rule(tier, season_end_year)
+        pts = hw * home_win_pts + aw * away_win_pts + d * draw_pts
 
         records.append(
             {
@@ -271,6 +296,22 @@ def extract_matches(
     out = df[["HomeTeam", "AwayTeam", "FTHG", "FTAG", "FTR"]].copy()
     if "Date" in df.columns:
         dates = pd.to_datetime(df["Date"], dayfirst=True, errors="coerce")
+        # A date outside the season it is filed under is not a date we can
+        # use. The tier-5 source carries the calendar year of the following
+        # season across the August-December block of 2000/01 and 2001/02,
+        # which would otherwise put a September fixture nine months after
+        # the final. The season the file is for is authoritative; a date
+        # that contradicts it is dropped rather than trusted, leaving the
+        # result intact and only the date unknown.
+        season_start = pd.Timestamp(year=season_end_year - 1, month=7, day=1)
+        season_stop = pd.Timestamp(year=season_end_year, month=8, day=31)
+        plausible = dates.between(season_start, season_stop)
+        dropped = int((dates.notna() & ~plausible).sum())
+        if dropped:
+            logger.warning(
+                "%d/%d: %d match date(s) fall outside the season and were "
+                "dropped; results kept", season_end_year, tier, dropped)
+        dates = dates.where(plausible)
         out["match_date"] = dates.dt.strftime("%Y-%m-%d")
         out["match_date"] = out["match_date"].where(dates.notna(), None)
     else:

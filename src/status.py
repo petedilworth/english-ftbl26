@@ -347,6 +347,54 @@ RULES: dict[tuple[int, int, int], dict] = {
         "auto_relegate":    (24, 24),
     },
 
+    # ── Tier 5, 1979/80-2004/05, backfilled from engsoccerdata ──────────────
+    # Relegation bands here are the Conference norm rather than derived
+    # movement: clubs going down from tier 5 drop into regional feeder
+    # leagues this database does not hold, so they simply vanish and there
+    # is no next-season row to read. _reconcile_statuses supplies real
+    # movement wherever a club does reappear, and promotion is carried by
+    # position 1 = Champions - though note the Football League only opened
+    # to the champion in 1986/87, and even then Kidderminster (1994) and
+    # Macclesfield (1995) won the title and were refused on ground grading.
+    (5, 1980, 1981): {
+        "total_clubs":      20,
+        "auto_promote":     (),
+        "playoff_promote":  (),
+        "playoff_relegate": (),
+        "auto_relegate":    (18, 20),
+    },
+    (5, 1982, 1988): {
+        "total_clubs":      22,
+        "auto_promote":     (),
+        "playoff_promote":  (),
+        "playoff_relegate": (),
+        "auto_relegate":    (20, 22),
+    },
+    # 1988/89: 21 clubs — Newport County were expelled in February 1989 and
+    # their record expunged.
+    (5, 1989, 1989): {
+        "total_clubs":      21,
+        "auto_promote":     (),
+        "playoff_promote":  (),
+        "playoff_relegate": (),
+        "auto_relegate":    (19, 21),
+    },
+    (5, 1990, 2002): {
+        "total_clubs":      22,
+        "auto_promote":     (),
+        "playoff_promote":  (),
+        "playoff_relegate": (),
+        "auto_relegate":    (20, 22),
+    },
+    # 2002/03 onward: a second promotion place decided by play-off.
+    (5, 2003, 2005): {
+        "total_clubs":      22,
+        "auto_promote":     (),
+        "playoff_promote":  (2, 5),
+        "playoff_relegate": (),
+        "auto_relegate":    (20, 22),
+    },
+
     # ── Tier 5: Conference / National League ────────────────────────────────
     # (data starts 2005/06) 2005/06: 22 clubs, play-offs 2–5, 3 relegated
     (5, 2006, 2006): {

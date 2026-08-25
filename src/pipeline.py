@@ -493,6 +493,35 @@ def _mark_data_completeness(conn: sqlite3.Connection) -> None:
     logger.info("Data completeness: %d season/division tables flagged incomplete", marked)
 
 
+def _flag_unreliable_tier5(conn: sqlite3.Connection) -> None:
+    """
+    Mark the backfilled tier-5 seasons whose table cannot be stood behind.
+
+    Tier 5 has no second machine-readable source, so its check is the
+    documented champion list rather than crosscheck.py. Where the computed
+    winner is not the club that actually won, the whole table is suspect,
+    and data_complete = 0 is the flag the rest of the site already reads:
+    the table renders with a note and is withheld from every records
+    comparison. The seasons are still shown, because a club's path through
+    them is real even where the order of the table is not.
+    """
+    wrong = set(historical.check_tier5_champions(conn))
+    # Anything already known to be bad is flagged whether or not the check
+    # caught it this run - the check only sees the top of the table.
+    for season in sorted(wrong | set(historical.TIER5_UNRELIABLE)):
+        reason = historical.TIER5_UNRELIABLE.get(
+            season, "computed champion disagrees with the documented record")
+        n = conn.execute(
+            "UPDATE standings SET data_complete = 0"
+            " WHERE season_end_year = ? AND tier = 5",
+            (season,),
+        ).rowcount
+        if n:
+            logger.warning("Tier 5 %d/%02d flagged not-final: %s",
+                           season - 1, season % 100, reason)
+    conn.commit()
+
+
 def _reconcile_statuses(conn: sqlite3.Connection) -> None:
     """
     Correct positional status assignments using observed movement.
@@ -682,6 +711,13 @@ def run(
                 last_season=min(season_end, historical.LAST_SEASON),
                 force=force_download,
             )
+        if season_start < historical.TIER5_LAST_SEASON + 1:
+            historical.backfill_tier5(
+                raw_dir,
+                first_season=max(season_start, historical.TIER5_FIRST_SEASON),
+                last_season=min(season_end, historical.TIER5_LAST_SEASON),
+                force=force_download,
+            )
 
     csv_files = sorted(raw_dir.glob("*.csv"))
     if not csv_files:
@@ -726,6 +762,7 @@ def run(
     _reconcile_statuses(conn)
     _apply_known_playoff_winners(conn)
 
+    _flag_unreliable_tier5(conn)
     trajectory.rebuild_trajectory(conn)
 
     crosscheck.run(conn, raw_dir)

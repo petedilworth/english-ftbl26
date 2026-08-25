@@ -26,6 +26,7 @@ sys.path.insert(0, str(_SRC))
 import aggregate  # noqa: E402  (points-era boundary for records tables)
 import content  # noqa: E402  (needs _SRC on the path first)
 import finances  # noqa: E402  (disclosure states for the club finances table)
+import historical  # noqa: E402  (why a backfilled table is flagged not-final)
 
 PROJECT_ROOT = _SRC.parent
 
@@ -506,6 +507,16 @@ class SiteBuilder:
         46-game season and no explanation. The points and positions shown are
         what the fixtures we hold add up to, not what settled the division -
         which is exactly the sort of gap this site prints rather than hides.
+
+        There are two ways a table can fail to be the real one, and until
+        tier 5 was backfilled only the first existed. Fixtures can be
+        missing, which the game count makes visible. Or every fixture can be
+        present and one of them wrong, which nothing on the page betrays -
+        the 1990/91 Alliance table has all 462 matches and still puts the
+        wrong club top. Both are flagged the same way in the data; they need
+        different sentences, and a table flagged for the second reason used
+        to render with no note at all, because the fixture count came out
+        even.
         """
         if "data_complete" not in self.standings_cols:
             return ""
@@ -520,14 +531,29 @@ class SiteBuilder:
             "SELECT COUNT(*) FROM matches WHERE season_end_year = ? AND tier = ?",
             (year, tier),
         ).fetchone()[0]
-        expected = n_teams * (n_teams - 1)
-        if not found or not expected or found >= expected:
-            return ""
-        return (
-            f"Only {found} of this division's {expected} fixtures are in the "
-            f"source data, so these totals and positions are not the final "
-            f"table. They are excluded from records elsewhere on the site."
-        )
+        expected = aggregate.expected_match_count(n_teams)
+        if found and expected and found < expected:
+            return (
+                f"Only {found} of this division's {expected} fixtures are in "
+                f"the source data, so these totals and positions are not the "
+                f"final table. They are excluded from records elsewhere on "
+                f"the site."
+            )
+        reason = historical.TIER5_UNRELIABLE.get(year) if tier == 5 else None
+        if reason:
+            return (
+                f"This table is complete but does not match the published "
+                f"record: {reason}. The order shown is what the results in "
+                f"the source add up to, not what settled the division, so it "
+                f"is excluded from records elsewhere on the site."
+            )
+        if found >= expected:
+            return (
+                "This table does not match the published record, so the order "
+                "shown is not the final one. It is excluded from records "
+                "elsewhere on the site."
+            )
+        return ""
 
     # ── Pages ──────────────────────────────────────────────────────────────
 
