@@ -82,17 +82,21 @@ Ferguson, and a century later that remains true. It is worth being precise
 about what being Welsh in the English league system has and has not cost
 them.
 
-When the FAW created the League of Wales for 1992/93, Cardiff, Swansea,
-Wrexham and Newport declined to join, and — this is the part usually told
-backwards — **they were never punished for it**. The FAW's coercion, banning
-clubs from playing home matches in Wales, was aimed at the smaller "Irate
-Eight", and the High Court ruled in 1995 that it was an unlawful restraint of
-trade. What Cardiff actually lost was quieter and permanent: UEFA held that
-the Welsh Cup could only feed a European place if clubs playing in England
-were excluded from it, and from **1995/96 Cardiff were barred from the Welsh
-Cup**. Before that, the Welsh Cup had been their route into Europe. A Welsh
-club in the English pyramid is not penalised for being there. It simply has
-one fewer door than everyone else, and the door it lost was the European one.
+When the FAW created the League of Wales for 1992/93, **Cardiff, Swansea and
+Wrexham declined to join and were never punished for it** — which is the part
+usually told backwards. The FAW's coercion, banning clubs from playing home
+matches in Wales, was aimed at the smaller "Irate Eight", and it worked on
+them: Newport County, among others, was exiled to Gloucester for two seasons
+until three of the eight took the FAW to the High Court and won. Mr Justice
+Blackburne ruled in April 1995 that the ban was an unreasonable restraint of
+trade. Cardiff were never in that fight; they were too big to be leaned on.
+
+What Cardiff actually lost was quieter and permanent: UEFA held that the Welsh
+Cup could only feed a European place if clubs playing in England were excluded
+from it, and from **1995/96 Cardiff were barred from the Welsh Cup**. Before
+that, the Welsh Cup had been their route into Europe. A Welsh club in the
+English pyramid is not penalised for being there. It simply has one fewer door
+than everyone else, and the door it lost was the European one.
 
 Below that, the pattern is one of the most volatile in the country: four
 top-flight seasons in the sixty-nine this site records, forty-four in the
