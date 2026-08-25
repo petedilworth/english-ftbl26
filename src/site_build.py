@@ -1452,8 +1452,15 @@ class SiteBuilder:
             story("fallen-giants", "Fallen giants & risers",
                   "Long falls and great climbs"),
             story("records", "Records & extremes", "The best and worst seasons"),
-            story("timeline", "Timeline", "Notable events since 1993"),
+            story("timeline", "Timeline", "Notable events in the pyramid"),
         ]
+        # Gated on its prose like the other argued pages: the tile must not
+        # offer a page that wasn't built.
+        if (PROJECT_ROOT / "content" / "insights" / "points-eras.md").exists():
+            stories.append(story(
+                "points-eras", "What a point is worth",
+                "When winning away was worth more",
+            ))
         if "natural_level_gap" in self.trajectory_cols:
             stories.insert(1, story(
                 "natural-level", "Above and below their level",
@@ -1544,6 +1551,7 @@ class SiteBuilder:
         self._insight_records()
         self._insight_safe_thresholds()
         self._insight_timeline()
+        self._insight_points_eras()
         self._insight_scatter()
         self._insight_boom_and_bust(boom_bust_events)
         self._insight_the_drop(movement_matches)
@@ -2912,8 +2920,152 @@ class SiteBuilder:
         )
 
 
+    def _insight_points_eras(self) -> None:
+        """
+        Why a points total only means something next to totals from its own
+        era - and the season that proves it.
+
+        Several tables on this site are quietly restricted to 1981/82
+        onward, with a one-line caveat and nowhere explaining it. This is
+        that explanation, and the Alliance Premier League's away-win
+        experiment is the sharpest case available: 1984/85 has a different
+        champion depending on which rule you count it under, so the point of
+        the restriction stops being pedantry and becomes a name.
+
+        Both tables are computed rather than written down. The rules table
+        reads its figures from aggregate.points_rule(), so it cannot drift
+        from what the pipeline actually applied, and the comparison is
+        recomputed from the stored matches.
+        """
+        import markdown as md
+        from markupsafe import Markup
+
+        source = PROJECT_ROOT / "content" / "insights" / "points-eras.md"
+        if not source.exists():
+            return
+        prose = content.load_theme(source)
+
+        current = self.seasons[-1] if self.seasons else 2026
+        spans = [
+            ("Tiers 1-4", 1959, 1981), ("Tiers 1-4", 1982, current),
+            ("Tier 5", 1980, 1981), ("Tier 5", 1982, 1983),
+            ("Tier 5", 1984, 1986), ("Tier 5", 1987, current),
+        ]
+        rule_rows = []
+        for label, first, last in spans:
+            tier = 5 if label == "Tier 5" else 1
+            home, away, draw = aggregate.points_rule(tier, last)
+            span = (f"{season_label(first)}-{season_label(last)}"
+                    if first != last else season_label(first))
+            rule_rows.append([
+                self._cell(label), self._cell(span),
+                self._cell(home, num=True), self._cell(away, num=True),
+                self._cell(draw, num=True),
+            ])
+
+        sections = [{
+            "heading": "What a win was worth",
+            "note": ("Read from the same table the pipeline computes with, so "
+                     "these are the rules actually applied rather than a "
+                     "description of them."),
+            "columns": ["Divisions", "Seasons", "Home win", "Away win", "Draw"],
+            "rows": rule_rows,
+        }]
+
+        comparison = self._away_win_comparison()
+        if comparison:
+            sections.append(comparison)
+
+        self.render(
+            "insight_table.html",
+            self.out / "insights" / "points-eras" / "index.html", 2,
+            title="What a point is worth",
+            heading="What a point is worth",
+            intro="Three seasons when winning away was worth more than winning at home.",
+            intro_html=Markup(md.markdown(prose)) if prose else None,
+            sections=sections,
+        )
+
+    def _away_win_comparison(self, year: int = 1985) -> dict | None:
+        """
+        The Alliance's 1984/85 table beside the same results counted three
+        for a win, which is the version every later season uses.
+        """
+        try:
+            rows = self.conn.execute(
+                "SELECT home_name, away_name, fthg, ftag FROM matches"
+                " WHERE season_end_year = ? AND tier = 5",
+                (year,),
+            ).fetchall()
+        except sqlite3.Error as exc:
+            # A database with no matches table, or one built before the
+            # backfill, still gets the rules half of the page rather than
+            # no page at all.
+            logger.debug("Away-win comparison skipped: %s", exc)
+            return None
+        if not rows:
+            return None
+
+        clubs: dict[str, dict] = {}
+        for home, away, hg, ag in rows:
+            if hg is None or ag is None:
+                continue
+            for name in (home, away):
+                clubs.setdefault(name, {"hw": 0, "aw": 0, "d": 0, "gf": 0, "ga": 0})
+            clubs[home]["gf"] += hg; clubs[home]["ga"] += ag
+            clubs[away]["gf"] += ag; clubs[away]["ga"] += hg
+            if hg > ag:
+                clubs[home]["hw"] += 1
+            elif ag > hg:
+                clubs[away]["aw"] += 1
+            else:
+                clubs[home]["d"] += 1; clubs[away]["d"] += 1
+
+        def ranked(home_pts: int, away_pts: int) -> dict[str, tuple[int, int]]:
+            table = sorted(
+                ((v["hw"] * home_pts + v["aw"] * away_pts + v["d"],
+                  v["gf"] - v["ga"], name) for name, v in clubs.items()),
+                reverse=True,
+            )
+            return {name: (pos, pts) for pos, (pts, _gd, name) in enumerate(table, 1)}
+
+        home_pts, away_pts, _draw = aggregate.points_rule(5, year)
+        as_played = ranked(home_pts, away_pts)
+        flat = ranked(3, 3)
+        ids = dict(self.conn.execute(
+            "SELECT club_name, club_id FROM standings"
+            " WHERE season_end_year = ? AND tier = 5", (year,)))
+
+        out = []
+        for name, (pos, pts) in sorted(as_played.items(), key=lambda kv: kv[1][0])[:8]:
+            flat_pos, flat_pts = flat[name]
+            v = clubs[name]
+            out.append([
+                self._cell(name, ids.get(name)),
+                self._cell(v["hw"], num=True), self._cell(v["aw"], num=True),
+                self._cell(v["d"], num=True),
+                self._cell(pts, num=True), self._cell(pos, num=True),
+                self._cell(flat_pts, num=True), self._cell(flat_pos, num=True),
+            ])
+        return {
+            "heading": f"{season_label(year)}: the same results, counted twice",
+            "note": ("Left, the table as it was decided. Right, the same "
+                     "matches under three points for a win. Wealdstone won "
+                     "the title with the division's best away record; Bath "
+                     "City had the best home record and finished fourth."),
+            "columns": ["Club", "Home wins", "Away wins", "Draws",
+                        "Points", "Pos", "If 3-1-0", "Pos"],
+            "rows": out,
+        }
+
     def _insight_timeline(self) -> None:
         events = [
+            {"year": 1982, "title": "Three points for a win",
+             "text": "The Football League raises a win from two points to three, to make attacking football pay. Every points total before this season is on a different scale from every total after it."},
+            {"year": 1984, "title": "The Alliance pays more for winning away",
+             "text": "For three seasons the Alliance Premier League awards two points for a home win and three for an away one — the only time an English national division has valued them differently. In 1984/85 it decides the title: Wealdstone win it on the division's best away record, and would have finished third under a flat three for a win."},
+            {"year": 1987, "title": "The trapdoor opens",
+             "text": "The Football League finally admits its champions: from 1986/87 the Alliance winner is promoted automatically instead of standing for election. Kidderminster in 1994 and Macclesfield in 1995 still win the title and are refused, on ground grading."},
             {"year": 1995, "title": "The Premier League shrinks",
              "text": "Four clubs relegated in 1994/95 as the top flight cuts from 22 to 20; the Third Division expands to 24 to rebalance the pyramid."},
             {"year": 1996, "title": "Stevenage denied, Torquay reprieved",
