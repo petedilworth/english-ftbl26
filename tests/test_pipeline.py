@@ -249,3 +249,64 @@ def test_completed_season_is_still_reconciled_against_a_finished_one():
     assert conn.execute(
         "SELECT status FROM standings WHERE club_id='promoted-fc' AND season_end_year=2025"
     ).fetchone()[0] == "Promoted"
+
+
+def _curtailed_db(rows):
+    """rows: (club_id, position, points, played, gd, gf, status)."""
+    conn = sqlite3.connect(":memory:")
+    conn.execute(CREATE_STANDINGS_SQL)
+    for club_id, position, points, played, gd, gf, stat in rows:
+        conn.execute(
+            "INSERT INTO standings (season_end_year, tier, club_id, club_name,"
+            " position, played, gf, ga, gd, points, status)"
+            " VALUES (2020, 5, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+            (club_id, club_id, position, played, gf, gf - gd, gd, points, stat),
+        )
+    conn.commit()
+    return conn
+
+
+def test_curtailed_division_is_reranked_on_points_per_game():
+    # The 2019/20 National League in miniature. Barnet played four games
+    # fewer than everyone else and finished eleventh on raw points; on the
+    # rate the division was actually settled by, they were seventh - which
+    # is why they were in the play-offs.
+    conn = _curtailed_db([
+        ("played-more-fc", 1, 58, 39, 10, 50, "Stayed"),
+        ("barnet-fc", 2, 54, 35, 10, 50, "Stayed"),
+    ])
+    pipeline._rerank_curtailed_divisions(conn)
+    order = conn.execute(
+        "SELECT club_id FROM standings WHERE season_end_year = 2020 ORDER BY position"
+    ).fetchall()
+    assert [c for (c,) in order] == ["barnet-fc", "played-more-fc"]
+
+
+def test_reranking_a_curtailed_division_leaves_the_outcomes_alone():
+    # Positions are recomputed; who went up is a matter of record and stays
+    # attached to the club, not to the row it now occupies.
+    conn = _curtailed_db([
+        ("champions-fc", 1, 70, 37, 30, 70, "Champions"),
+        ("slower-fc", 2, 71, 40, 30, 70, "Stayed"),
+    ])
+    pipeline._rerank_curtailed_divisions(conn)
+    rows = dict(conn.execute(
+        "SELECT club_id, status FROM standings WHERE season_end_year = 2020"
+    ).fetchall())
+    assert rows["champions-fc"] == "Champions"
+    assert conn.execute(
+        "SELECT position FROM standings WHERE club_id = 'champions-fc'"
+    ).fetchone()[0] == 1
+
+
+def test_a_full_curtailed_division_is_left_untouched():
+    # Every club played the same number of games, so the rate ordering and
+    # the points ordering are the same table.
+    conn = _curtailed_db([
+        ("first-fc", 1, 70, 40, 30, 70, "Champions"),
+        ("second-fc", 2, 60, 40, 20, 60, "Stayed"),
+    ])
+    pipeline._rerank_curtailed_divisions(conn)
+    assert conn.execute(
+        "SELECT position FROM standings WHERE club_id = 'second-fc'"
+    ).fetchone()[0] == 2
