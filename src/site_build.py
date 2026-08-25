@@ -23,12 +23,18 @@ from jinja2 import Environment, FileSystemLoader
 _SRC = Path(__file__).parent
 sys.path.insert(0, str(_SRC))
 
+import aggregate  # noqa: E402  (points-era boundary for records tables)
 import content  # noqa: E402  (needs _SRC on the path first)
 import finances  # noqa: E402  (disclosure states for the club finances table)
 
 PROJECT_ROOT = _SRC.parent
 
 logger = logging.getLogger(__name__)
+
+# 1992/93, the Premier League's first season. Tier 1 reaches back to
+# 1958/59, so anything that means "the Premier League" rather than "the top
+# flight" has to say which.
+PREMIER_LEAGUE_FROM = 1993
 
 TIER_SLUGS = {
     1: ("premier-league", "Premier League"),
@@ -688,20 +694,27 @@ class SiteBuilder:
 
         Tier 1 here is the Premier League - the standings begin in 1993/94 -
         and tier 5 is the National League, outside the Football League. So
-        the finding is simply a club with a tier-1 season and a later tier-5
-        one. The ordering matters and is the whole claim: Luton Town also
-        span both tiers, but their fifth-tier seasons came before their
+        the finding is a club with a Premier League season and a later
+        tier-5 one. The ordering matters and is the whole claim: Luton Town
+        also span both tiers, but their fifth-tier seasons came before their
         top-flight one, which is a rise, not a fall.
+
+        Tier 1 is no longer the same thing as the Premier League. Backfilling
+        to 1958/59 filled tier 1 with thirty-four seasons of the old First
+        Division, and a bare "tier = 1" quietly turned this into a claim
+        about the top flight in general - it started matching Leyton Orient,
+        who were last in the first division in 1962/63. The sentence says
+        Premier League, so the query has to say so too, which is what the
+        season floor below is for.
 
         Two honesty notes, since this prints the word "only".
 
-        Tier-5 coverage starts in 2005/06 rather than 1993/94, so a club that
-        left the Football League between 1994 and 2005 would be invisible
-        here. None of the clubs that did - Halifax, Chester, Barnet, Exeter,
-        Shrewsbury, York, Carlisle, Kidderminster, Cambridge United - had
-        played in the Premier League, so the answer is right; but it rests on
-        that window, and the code should say so rather than leave it to be
-        rediscovered.
+        Tier-5 coverage starts in 2005/06, so a club that left the Football
+        League between 1993 and 2005 would be invisible here. None of the
+        clubs that did - Halifax, Chester, Barnet, Exeter, Shrewsbury, York,
+        Carlisle, Kidderminster, Cambridge United - had played in the Premier
+        League, so the answer is right; but it rests on that window, and the
+        code should say so rather than leave it to be rediscovered.
 
         And the recipe retires its own claim. If a second club ever qualifies
         the sentence becomes a count and the link moves to the page listing
@@ -712,7 +725,8 @@ class SiteBuilder:
             """
             SELECT t.canonical_name AS name, s.club_id AS club_id,
                    t.current_tier   AS now_tier,
-                   MIN(CASE WHEN s.tier = 1 THEN s.season_end_year END) AS first_top,
+                   MIN(CASE WHEN s.tier = 1 AND s.season_end_year >= ?
+                            THEN s.season_end_year END) AS first_top,
                    MIN(CASE WHEN s.tier = 5 THEN s.season_end_year END) AS first_fifth
             FROM standings s
             JOIN club_trajectory t ON t.club_id = s.club_id
@@ -720,7 +734,8 @@ class SiteBuilder:
             HAVING first_top IS NOT NULL AND first_fifth IS NOT NULL
                AND first_fifth > first_top
             ORDER BY first_fifth, s.club_id
-            """
+            """,
+            (PREMIER_LEAGUE_FROM,),
         ).fetchall()
         if not rows:
             return None
@@ -865,6 +880,8 @@ class SiteBuilder:
         if not source.exists():
             return None
         row = self.conn.execute(
+            # Two points for a win before 1981/82 makes older totals
+            # incomparable with later ones - see _standings_section.
             """
             SELECT club_name AS name, season_end_year AS year,
                    division_name AS division, points AS points,
@@ -873,9 +890,11 @@ class SiteBuilder:
             WHERE status = 'Relegated' AND played >= 30
               AND COALESCE(points_deducted, 0) = 0
               AND COALESCE(data_complete, 1) = 1
+              AND season_end_year >= ?
             ORDER BY points DESC, club_name
             LIMIT 1
-            """
+            """,
+            (aggregate.THREE_POINTS_FROM,),
         ).fetchone()
         if not row:
             return None
@@ -1482,7 +1501,7 @@ class SiteBuilder:
 
         groups = [g for g in (
             {"title": "Stories",
-             "sub": "Arguments drawn from thirty years of league tables.",
+             "sub": "Arguments drawn from almost seventy years of league tables.",
              "entries": stories},
             {"title": "Interactive charts",
              "sub": "Pick a metric and a season, then read the pyramid.",
@@ -2685,11 +2704,22 @@ class SiteBuilder:
     def _standings_section(
         self, heading: str, note: str, order: str, limit: int = 10,
         where: str = "s.played >= 30", include_status: bool = False,
+        points_comparable: bool = False,
     ) -> dict:
         """
         A "most/fewest X" style table. order/limit/where pick the rows -
         that's the actual selection, e.g. the 10 most extreme points
         totals across every division and era.
+
+        points_comparable is for any table ranked on points. The Football
+        League gave two points for a win until 1980/81 and three from
+        1981/82, so a total from either side of that line does not mean the
+        same thing, and ranking them together is not a like-for-like
+        comparison - it reads QPR's 18 points in 1968/69 as a worse season
+        than totals that were genuinely worse, when the same record under
+        three points would have been 22. Those tables are restricted to the
+        three-point era and say so. Tables ranked on goal difference need no
+        such restriction.
         """
         cols = ("s.club_id, s.club_name, s.season_end_year, s.division_name, "
                 "s.tier, s.position, s.points, s.gd")
@@ -2707,11 +2737,19 @@ class SiteBuilder:
             " AND COALESCE(s.data_complete, 1) = 1"
             if "data_complete" in self.standings_cols else ""
         )
+        era = ""
+        if points_comparable:
+            era = f" AND s.season_end_year >= {aggregate.THREE_POINTS_FROM}"
+            caveat = (f"From {aggregate.THREE_POINTS_FROM - 1}/"
+                      f"{aggregate.THREE_POINTS_FROM % 100:02d} only, when three "
+                      f"points for a win came in - earlier totals are not "
+                      f"comparable.")
+            note = f"{note} {caveat}".strip()
         rows = self.conn.execute(
             f"""
             SELECT {cols}
             FROM standings s
-            WHERE ({where}){complete_only}
+            WHERE ({where}){complete_only}{era}
             ORDER BY {order} LIMIT {limit}
             """
         ).fetchall()
@@ -2758,12 +2796,14 @@ class SiteBuilder:
             "insight_table.html", self.out / "insights" / "records" / "index.html", 2,
             title="Records & extremes",
             heading="Records & extremes",
-            intro="The outer edges of thirty years of league tables.",
+            intro="The outer edges of almost seventy years of league tables.",
             sections=[
                 self._standings_section("Most points in a season", "Full seasons only.",
-                                   "s.points DESC, s.gd DESC"),
+                                   "s.points DESC, s.gd DESC",
+                                   points_comparable=True),
                 self._standings_section("Fewest points in a season", "The campaigns to forget.",
-                                   "s.points ASC, s.gd ASC"),
+                                   "s.points ASC, s.gd ASC",
+                                   points_comparable=True),
                 self._standings_section("Best goal difference", "", "s.gd DESC, s.points DESC"),
                 self._standings_section("Worst goal difference", "", "s.gd ASC, s.points ASC"),
                 {
@@ -2822,25 +2862,25 @@ class SiteBuilder:
                     "Unlucky losers: Premier League", top,
                     "s.points DESC, s.gd ASC", 10,
                     "s.played = 38 AND (s.status = 'Relegated' OR s.status = 'Play-off Relegated')",
-                    include_status=True,
+                    include_status=True, points_comparable=True,
                 ),
                 self._standings_section(
                     "Unlucky losers: the 46-game divisions", rest,
                     "s.points DESC, s.gd ASC", 10,
                     "s.played = 46 AND (s.status = 'Relegated' OR s.status = 'Play-off Relegated')",
-                    include_status=True,
+                    include_status=True, points_comparable=True,
                 ),
                 self._standings_section(
                     "Lucky survivors: Premier League", top,
                     "s.points ASC, s.gd DESC", 10,
                     "s.played = 38 AND s.status = 'Stayed'",
-                    include_status=True,
+                    include_status=True, points_comparable=True,
                 ),
                 self._standings_section(
                     "Lucky survivors: the 46-game divisions", rest,
                     "s.points ASC, s.gd DESC", 10,
                     "s.played = 46 AND s.status = 'Stayed'",
-                    include_status=True,
+                    include_status=True, points_comparable=True,
                 ),
             ],
         )

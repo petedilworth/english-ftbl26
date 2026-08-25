@@ -15,12 +15,27 @@ COLUMN_ALIASES = {"HG": "FTHG", "AG": "FTAG"}
 REQUIRED_COLS = {"HomeTeam", "AwayTeam", "FTHG", "FTAG", "FTR"}
 
 DIVISION_NAMES: dict = {
-    1: {range(1994, 9999): "Premier League"},
-    2: {range(1994, 2004): "First Division", range(2004, 9999): "Championship"},
-    3: {range(1994, 2004): "Second Division", range(2004, 9999): "League One"},
-    4: {range(1994, 2004): "Third Division", range(2004, 9999): "League Two"},
+    1: {range(1959, 1993): "First Division",
+        range(1993, 9999): "Premier League"},
+    2: {range(1959, 1993): "Second Division",
+        range(1993, 2004): "First Division", range(2004, 9999): "Championship"},
+    3: {range(1959, 1993): "Third Division",
+        range(1993, 2004): "Second Division", range(2004, 9999): "League One"},
+    4: {range(1959, 1993): "Fourth Division",
+        range(1993, 2004): "Third Division", range(2004, 9999): "League Two"},
     5: {range(2006, 2016): "Conference Premier", range(2016, 9999): "National League"},
 }
+
+# The Football League awarded two points for a win until 1980/81 and three
+# from 1981/82. Every points figure on this site - records, survival
+# thresholds, the tables themselves - depends on getting this right for the
+# season it belongs to, and a single global "3" quietly inflates every
+# pre-1982 season by roughly a third.
+THREE_POINTS_FROM = 1982
+
+
+def points_for_win(season_end_year: int) -> int:
+    return 3 if season_end_year >= THREE_POINTS_FROM else 2
 
 # Expected minimum matches per season (used for incomplete-season detection)
 EXPECTED_MATCHES = {
@@ -190,7 +205,7 @@ def compute_standings(
         gf = int(home["FTHG"].sum()) + int(away["FTAG"].sum())
         ga = int(home["FTAG"].sum()) + int(away["FTHG"].sum())
         gd = gf - ga
-        pts = w * 3 + d
+        pts = w * points_for_win(season_end_year) + d
 
         records.append(
             {

@@ -41,6 +41,178 @@ CURRENT_SEASON_PLAYOFF_WINNERS: dict[tuple[int, int], str] = {
 # 1995 restructure (PL 22→20 clubs, Third Division 22→24) and COVID seasons.
 # fmt: off
 RULES: dict[tuple[int, int, int], dict] = {
+    # Seasons before 1993/94 come from engsoccerdata rather than
+    # football-data.co.uk. Sizes and promotion/relegation counts below were
+    # derived from the movement actually present in that data rather than
+    # from memory, then split at the two dates that change the shape: the
+    # 1986/87 introduction of play-offs, and the 1986/87 start of automatic
+    # relegation from tier 4 to the Conference. Statuses are corrected
+    # afterwards by _reconcile_statuses against real next-season movement,
+    # so these bands decide labels rather than outcomes.
+    # ── Tier 1, 1958/59-1992/93, backfilled from engsoccerdata ──────
+    (1, 1959, 1973): {
+        "total_clubs":      22,
+        "auto_promote":     (),
+        "playoff_promote":  (),
+        "playoff_relegate": (),
+        "auto_relegate":    (21, 22),
+    },
+    (1, 1974, 1987): {
+        "total_clubs":      22,
+        "auto_promote":     (),
+        "playoff_promote":  (),
+        "playoff_relegate": (),
+        "auto_relegate":    (20, 22),
+    },
+    (1, 1988, 1988): {
+        "total_clubs":      21,
+        "auto_promote":     (),
+        "playoff_promote":  (),
+        "playoff_relegate": (),
+        "auto_relegate":    (18, 21),
+    },
+    (1, 1989, 1990): {
+        "total_clubs":      20,
+        "auto_promote":     (),
+        "playoff_promote":  (),
+        "playoff_relegate": (),
+        "auto_relegate":    (18, 20),
+    },
+    (1, 1991, 1991): {
+        "total_clubs":      20,
+        "auto_promote":     (),
+        "playoff_promote":  (),
+        "playoff_relegate": (),
+        "auto_relegate":    (19, 20),
+    },
+    (1, 1992, 1993): {
+        "total_clubs":      22,
+        "auto_promote":     (),
+        "playoff_promote":  (),
+        "playoff_relegate": (),
+        "auto_relegate":    (20, 22),
+    },
+
+    # ── Tier 2, 1958/59-1992/93, backfilled from engsoccerdata ──────
+    (2, 1959, 1973): {
+        "total_clubs":      22,
+        "auto_promote":     (2, 2),
+        "playoff_promote":  (),
+        "playoff_relegate": (),
+        "auto_relegate":    (21, 22),
+    },
+    (2, 1974, 1986): {
+        "total_clubs":      22,
+        "auto_promote":     (2, 3),
+        "playoff_promote":  (),
+        "playoff_relegate": (),
+        "auto_relegate":    (20, 22),
+    },
+    # 1986/87: the play-off included the club above the drop from the
+    # division above, and Charlton won it — so no third club came up from
+    # here, and positions 1-2 are straightforward automatic promotions.
+    (2, 1987, 1987): {
+        "total_clubs":      22,
+        "auto_promote":     (2, 2),
+        "playoff_promote":  (3, 5),
+        "playoff_relegate": (),
+        "auto_relegate":    (20, 22),
+    },
+    (2, 1988, 1988): {
+        "total_clubs":      23,
+        "auto_promote":     (2, 2),
+        "playoff_promote":  (3, 6),
+        "playoff_relegate": (),
+        "auto_relegate":    (21, 23),
+    },
+    (2, 1989, 1990): {
+        "total_clubs":      24,
+        "auto_promote":     (2, 2),
+        "playoff_promote":  (3, 6),
+        "playoff_relegate": (),
+        "auto_relegate":    (22, 24),
+    },
+    (2, 1991, 1991): {
+        "total_clubs":      24,
+        "auto_promote":     (2, 3),
+        "playoff_promote":  (4, 7),
+        "playoff_relegate": (),
+        "auto_relegate":    (23, 24),
+    },
+    (2, 1992, 1993): {
+        "total_clubs":      24,
+        "auto_promote":     (2, 2),
+        "playoff_promote":  (3, 6),
+        "playoff_relegate": (),
+        "auto_relegate":    (22, 24),
+    },
+
+    # ── Tier 3, 1958/59-1992/93, backfilled from engsoccerdata ──────
+    (3, 1959, 1973): {
+        "total_clubs":      24,
+        "auto_promote":     (2, 2),
+        "playoff_promote":  (),
+        "playoff_relegate": (),
+        "auto_relegate":    (21, 24),
+    },
+    (3, 1974, 1986): {
+        "total_clubs":      24,
+        "auto_promote":     (2, 3),
+        "playoff_promote":  (),
+        "playoff_relegate": (),
+        "auto_relegate":    (21, 24),
+    },
+    (3, 1987, 1990): {
+        "total_clubs":      24,
+        "auto_promote":     (2, 2),
+        "playoff_promote":  (3, 6),
+        "playoff_relegate": (),
+        "auto_relegate":    (21, 24),
+    },
+    (3, 1991, 1991): {
+        "total_clubs":      24,
+        "auto_promote":     (2, 3),
+        "playoff_promote":  (4, 7),
+        "playoff_relegate": (),
+        "auto_relegate":    (22, 24),
+    },
+    (3, 1992, 1993): {
+        "total_clubs":      24,
+        "auto_promote":     (2, 2),
+        "playoff_promote":  (3, 6),
+        "playoff_relegate": (),
+        "auto_relegate":    (21, 24),
+    },
+
+    # ── Tier 4, 1958/59-1992/93, backfilled from engsoccerdata ──────
+    (4, 1959, 1986): {
+        "total_clubs":      24,
+        "auto_promote":     (2, 4),
+        "playoff_promote":  (),
+        "playoff_relegate": (),
+        "auto_relegate":    (),
+    },
+    (4, 1987, 1990): {
+        "total_clubs":      24,
+        "auto_promote":     (2, 3),
+        "playoff_promote":  (4, 7),
+        "playoff_relegate": (),
+        "auto_relegate":    (24, 24),
+    },
+    (4, 1991, 1991): {
+        "total_clubs":      24,
+        "auto_promote":     (2, 4),
+        "playoff_promote":  (5, 8),
+        "playoff_relegate": (),
+        "auto_relegate":    (24, 24),
+    },
+    (4, 1992, 1993): {
+        "total_clubs":      22,
+        "auto_promote":     (2, 3),
+        "playoff_promote":  (4, 7),
+        "playoff_relegate": (),
+        "auto_relegate":    (22, 22),
+    },
     # ── Tier 1: Premier League ──────────────────────────────────────────────
     # 1993/94: 22 clubs, bottom 3 relegated
     (1, 1994, 1994): {
