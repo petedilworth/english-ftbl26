@@ -8,6 +8,7 @@ owner: "Srivaddhanaprabha family (King Power)"
 owner_since: 2010
 administration:
   - year: 2002
+    month: 10
     note: "Followed relegation from the Premier League and the £37m cost of the new Walkers Stadium landing the same year the ITV Digital broadcast deal collapsed; no points deduction, since the automatic penalty for entering administration did not exist until 2004-05. Resolved by a CVA in February 2003, backed by a consortium fronted by Gary Lineker"
 points_deductions:
   - season_end_year: 2026

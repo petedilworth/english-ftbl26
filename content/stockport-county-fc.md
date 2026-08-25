@@ -8,6 +8,7 @@ owner: "Mark Stott"
 owner_since: 2020
 administration:
   - year: 2009
+    month: 4
     points_deducted: 10
     note: "Entered administration in April 2009 amid mounting debts, surviving relegation that season despite the penalty"
 drops:

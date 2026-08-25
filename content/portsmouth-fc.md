@@ -11,6 +11,7 @@ stadium_opened: 1899
 stadium_ownership: club
 administration:
   - year: 2010
+    month: 2
     points_deducted: 9
     note: >
       Portsmouth City Football Club Ltd, then a serving Premier League
@@ -21,6 +22,7 @@ administration:
       creditors in full and everyone else twenty pence in the pound, and
       HMRC's challenge to it was dismissed by the High Court
   - year: 2012
+    month: 2
     points_deducted: 10
     note: >
       A second administration on 17 February 2012, this time of the

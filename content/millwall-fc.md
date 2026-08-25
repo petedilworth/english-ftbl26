@@ -8,6 +8,7 @@ owner: "James Berylson (Millwall Holdings)"
 owner_since: 2023
 administration:
   - year: 1997
+    month: 1
     note: "A brief period of financial administration following mounting debt and a poor run of form; resolved without becoming the club's defining crisis"
 stadium: "The Den"
 stadium_opened: 1993

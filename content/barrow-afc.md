@@ -8,6 +8,7 @@ owner: "Paul Hornby"
 owner_since: 2018
 administration:
   - year: 1999
+    month: 1
     note: "Liquidated in January 1999 after owner Stephen Vaughan withdrew backing; despite finishing 11th in the Conference on the pitch, the club was expelled and demoted to the Northern Premier League — this predates the EFL's modern points-deduction-for-insolvency rule, which uses a penalty rather than expulsion"
 stadium: "Holker Street"
 stadium_opened: 1909

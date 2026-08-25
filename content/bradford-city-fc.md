@@ -8,8 +8,10 @@ owner: "Stefan Rupp (ER Sports Group GmbH)"
 owner_since: 2016
 administration:
   - year: 2002
+    month: 5
     note: "Followed heavy transfer and wage spending after Premier League survival in 2000, compounded by the collapse of the ITV Digital deal; resolved via a Creditors' Voluntary Arrangement"
   - year: 2004
+    month: 2
     note: "A second administration within two years; resolved via a further CVA, with Julian Rhodes becoming chairman in December 2004 aided by a supporters' fundraising campaign"
 stadium: "Valley Parade"
 stadium_opened: 1886

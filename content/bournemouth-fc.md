@@ -9,6 +9,7 @@ owner_since: 2022
 multi_club_group: "Black Knight Football Club"
 administration:
   - year: 2008
+    month: 2
     note: "Triggered by an HMRC winding-up petition over around £4m of debt; a 10-point deduction contributed to relegation from League One that season"
 points_deductions:
   - season_end_year: 2009

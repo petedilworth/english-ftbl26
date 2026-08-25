@@ -8,6 +8,7 @@ owner: "Neerav Parekh"
 owner_since: 2022
 administration:
   - year: 2002
+    month: 10
     note: "Followed the collapse of the ITV Digital broadcast deal; no points deduction, since the EFL's automatic administration penalty didn't exist until 2004/05"
 stadium: "Oakwell"
 stadium_opened: 1888

@@ -8,6 +8,7 @@ owner: "49ers Enterprises"
 owner_since: 2023
 administration:
   - year: 2007
+    month: 5
     points_deducted: 10
     note: "Entered administration on 4 May 2007 with the automatic penalty confirming relegation to League One"
 points_deductions:
