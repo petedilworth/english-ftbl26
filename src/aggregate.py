@@ -92,6 +92,30 @@ def tiebreak_rule(tier: int, season_end_year: int) -> str:
         return "goals_scored"
     return "goal_difference"
 
+
+# Divisions whose final table was settled on points per game rather than on
+# points, because the season was curtailed and never played out. All of
+# these are the COVID-19 curtailments of March 2020 onwards: the EFL's
+# League One and League Two and the National League ended 2019/20 that way,
+# and the National League did it again in 2020/21. The Premier League and
+# the Championship played 2019/20 to a finish behind closed doors and are
+# not affected.
+#
+# It matters because ranking a curtailed division on raw points gets the
+# champion wrong. Swindon Town played a game fewer than Crewe Alexandra in
+# 2019/20 League Two and finished level with them on 69 points; on points
+# per game Swindon are champions, which is how the title was actually
+# awarded.
+CURTAILED_BY_PPG = {
+    (2020, 3), (2020, 4), (2020, 5),
+    (2021, 5),
+}
+
+
+def settled_on_ppg(tier: int, season_end_year: int) -> bool:
+    """Whether this division's final table was decided on points per game."""
+    return (season_end_year, tier) in CURTAILED_BY_PPG
+
 # Expected minimum matches per season (used for incomplete-season detection)
 EXPECTED_MATCHES = {
     20: 380,  # 20-club league
@@ -231,9 +255,29 @@ def rank_standings(
     Omitting them falls back to goal difference, which is correct for every
     season from 1999/2000 on.
     """
+    known_era = tier is not None and season_end_year is not None
+
+    if known_era and settled_on_ppg(tier, season_end_year):
+        # A curtailed season is ranked on the rate, not the total, because
+        # the clubs did not all play the same number of games.
+        played = standings["played"].where(standings["played"] != 0, 1)
+        standings = standings.assign(
+            _ppg=standings["points"] / played,
+            _gdpg=standings["gd"] / played,
+            _gfpg=standings["gf"] / played,
+        )
+        standings = standings.sort_values(
+            ["_ppg", "_gdpg", "_gfpg"], ascending=[False, False, False]
+        ).reset_index(drop=True)
+        standings = standings.drop(columns=["_ppg", "_gdpg", "_gfpg"])
+        if "position" in standings.columns:
+            standings = standings.drop(columns=["position"])
+        standings.insert(0, "position", standings.index + 1)
+        return standings
+
     rule = (
         tiebreak_rule(tier, season_end_year)
-        if tier is not None and season_end_year is not None
+        if known_era
         else "goal_difference"
     )
     if rule == "goal_average":

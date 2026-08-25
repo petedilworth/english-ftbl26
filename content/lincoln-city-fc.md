@@ -23,10 +23,14 @@ rivalries:
       Lincoln sits in the East Midlands. The argument is therefore not about
       football at all but about who gets to be Lincolnshire, and it is one
       the two clubs can restage indefinitely because nobody has ever settled
-      it. It is also asymmetric, and honesty requires saying so: Lincoln
-      supporters name Grimsby first, and Grimsby supporters tend to name
-      Hull. Being the rivalry that matters more to one side than the other
-      is itself a version of the same grievance.
+      it. Which club Grimsby supporters put first is contested and moves
+      with the divisions: one study found 82 per cent of them naming
+      Lincoln, while local reporting has described Scunthorpe rather than
+      Hull as the real derby there, and the three Humber clubs are
+      properly a triangle rather than a pair. The older grievance is
+      better evidenced than any of the surveys — Grimsby were readmitted
+      to the Football League in 1911, by one vote, at Lincoln's
+      expense.
 ---
 
 ## Origins
