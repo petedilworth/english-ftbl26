@@ -1456,6 +1456,11 @@ class SiteBuilder:
         ]
         # Gated on its prose like the other argued pages: the tile must not
         # offer a page that wasn't built.
+        if (PROJECT_ROOT / "content" / "insights" / "the-pyramid.md").exists():
+            stories.insert(0, story(
+                "the-pyramid", "How English football is organised",
+                "Eleven levels, and where the money runs out",
+            ))
         if (PROJECT_ROOT / "content" / "insights" / "points-eras.md").exists():
             stories.append(story(
                 "points-eras", "What a point is worth",
@@ -1552,6 +1557,7 @@ class SiteBuilder:
         self._insight_safe_thresholds()
         self._insight_timeline()
         self._insight_points_eras()
+        self._insight_pyramid()
         self._insight_scatter()
         self._insight_boom_and_bust(boom_bust_events)
         self._insight_the_drop(movement_matches)
@@ -3057,6 +3063,207 @@ class SiteBuilder:
                         "Points", "Pos", "If 3-1-0", "Pos"],
             "rows": out,
         }
+
+    # The pyramid below tier 5, which this database does not hold. Counts
+    # are the divisions' published composition for 2026/27 (the FA's club
+    # allocations, 14 May 2026: 996 clubs across 48 divisions, 19 leagues
+    # and six steps). Levels 9 and 10 carry no club total on purpose - the
+    # FA regulations fix the number of divisions at sixteen and seventeen,
+    # but divisions there run anywhere from 18 to 22 clubs and the FA
+    # reprieves clubs each summer to fill them, so any total would be an
+    # estimate dressed as a count.
+    LOWER_PYRAMID = [
+        (6, "National League North, National League South", 2, 48),
+        (7, "Northern Premier, Southern (Central and South) and Isthmian "
+            "leagues \u2014 premier divisions", 4, 88),
+        (8, "The same four leagues, first divisions", 8, 176),
+        (9, "Regional premier divisions", 16, None),
+        (10, "Regional first divisions", 17, None),
+        (11, "Regional feeder leagues, run by county FAs", None, None),
+    ]
+
+    def _insight_pyramid(self) -> None:
+        """
+        What the whole structure looks like, for a site that holds the top
+        five levels of it.
+
+        Two tables, and they answer different questions. The first is the
+        shape: how far down it goes and how the single national divisions
+        at the top give way to parallel regional ones. The second is
+        whether the players are paid, which the accounts answer better than
+        prose can - the wage bill falls by a factor of forty across four
+        divisions that are all fully professional, which is the real answer
+        to "professional or semi-professional": it is a gradient, and the
+        gradient starts long before anyone stops being full-time.
+        """
+        import markdown as md
+        from markupsafe import Markup
+
+        source = PROJECT_ROOT / "content" / "insights" / "the-pyramid.md"
+        if not source.exists():
+            return
+        prose = content.load_theme(source)
+
+        sections = []
+        levels = self._pyramid_levels()
+        if levels:
+            sections.append(levels)
+        wages = self._pyramid_wages()
+        if wages:
+            sections.append(wages)
+
+        self.render(
+            "insight_table.html",
+            self.out / "insights" / "the-pyramid" / "index.html", 2,
+            title="How English football is organised",
+            heading="How English football is organised",
+            intro="Eleven levels, and the point where the money runs out.",
+            intro_html=Markup(md.markdown(prose)) if prose else None,
+            stats=self._pyramid_stats(),
+            sections=sections,
+        )
+
+    def _complete_season(self) -> int | None:
+        """
+        The most recent season with a table for every tier this site holds.
+
+        Not simply the latest season: that one is part-played, and when a
+        download fails it can be short a division entirely, which would
+        quietly drop a row from a table about how many divisions there are.
+        """
+        want = len(TIER_SLUGS)
+        for year in reversed(self.seasons):
+            n = self.conn.execute(
+                "SELECT COUNT(DISTINCT tier) FROM standings"
+                " WHERE season_end_year = ? AND status != 'In progress'",
+                (year,),
+            ).fetchone()[0]
+            if n >= want:
+                return year
+        return None
+
+    def _pyramid_levels(self) -> dict | None:
+        """
+        The levels this site holds, counted, followed by the ones it does
+        not, stated. The two halves are independent on purpose: the lower
+        pyramid is fixed reference data and should render even on a
+        database too sparse to count the top of the table from.
+        """
+        rows = []
+        year = self._complete_season()
+        if year is not None:
+            held = self.conn.execute(
+                "SELECT tier, division_name, COUNT(*) FROM standings"
+                " WHERE season_end_year = ? GROUP BY tier, division_name"
+                " ORDER BY tier",
+                (year,),
+            ).fetchall()
+            for tier, name, clubs in held:
+                rows.append([
+                    self._cell(tier, num=True), self._cell(name),
+                    self._cell(1, num=True), self._cell(clubs, num=True),
+                ])
+        for level, name, divisions, clubs in self.LOWER_PYRAMID:
+            rows.append([
+                self._cell(level, num=True), self._cell(name),
+                self._cell(divisions if divisions else "many", num=True),
+                self._cell(clubs if clubs else "\u2014", num=True),
+            ])
+        if not rows:
+            return None
+        counted = (f"Levels 1-5 are counted from the {season_label(year)} "
+                   f"tables held here, and below that " if year is not None
+                   else "These are levels this site holds no tables for, so ")
+        return {
+            "heading": "The pyramid, level by level",
+            "note": (f"{counted}the figures are the divisions' published "
+                     f"composition. Levels 9 and 10 carry no club total "
+                     f"because their divisions run anywhere from 18 to 22 "
+                     f"clubs and the FA reprieves clubs each summer to fill "
+                     f"them, so any total would be an estimate dressed as a "
+                     f"count."),
+            "columns": ["Level", "Competition", "Divisions", "Clubs"],
+            "rows": rows,
+        }
+
+    def _pyramid_stats(self) -> list[dict]:
+        """
+        Counted where the database can count, stated where it cannot. The
+        92 is this site's own; the 996 is the FA's allocation for 2026/27.
+        """
+        year = self._complete_season()
+        cards = []
+        if year is not None:
+            pro = self.conn.execute(
+                "SELECT COUNT(*) FROM standings"
+                " WHERE season_end_year = ? AND tier <= 4", (year,),
+            ).fetchone()[0]
+            if pro:
+                cards.append({"value": f"{pro}", "label": "fully professional clubs"})
+        cards.append({"value": "996", "label": "clubs in the National League System"})
+        cards.append({"value": "11", "label": "levels before the county leagues"})
+        return cards
+
+    def _pyramid_wages(self, year: int | None = None) -> dict | None:
+        """
+        The wage bill by division, which is the honest answer to whether
+        players are paid. Denominators are shown because they matter: two
+        League Two clubs filing a wage bill is not the League Two average,
+        and a page that printed it as one would be doing the thing this
+        site exists not to do.
+        """
+        if "club_finances" not in self._tables():
+            return None
+        if year is None:
+            year = self.conn.execute(
+                "SELECT MAX(f.season_end_year) FROM club_finances f"
+                " WHERE f.staff_costs > 0"
+            ).fetchone()[0]
+        if year is None:
+            return None
+        rows = self.conn.execute(
+            """
+            SELECT s.tier, s.division_name,
+                   COUNT(*) AS n,
+                   AVG(f.staff_costs) AS avg_wages,
+                   MIN(f.staff_costs) AS lo,
+                   MAX(f.staff_costs) AS hi,
+                   (SELECT COUNT(*) FROM standings s2
+                     WHERE s2.season_end_year = s.season_end_year
+                       AND s2.tier = s.tier) AS in_division
+            FROM club_finances f
+            JOIN standings s ON s.club_id = f.club_id
+                            AND s.season_end_year = f.season_end_year
+            WHERE f.staff_costs > 0 AND f.season_end_year = ?
+            GROUP BY s.tier ORDER BY s.tier
+            """,
+            (year,),
+        ).fetchall()
+        if not rows:
+            return None
+        out = []
+        for tier, name, n, avg_wages, lo, hi, in_division in rows:
+            out.append([
+                self._cell(name),
+                self._cell(f"{n} of {in_division}", num=True),
+                self._cell(_fmt_money(avg_wages), num=True),
+                self._cell(f"{_fmt_money(lo)} - {_fmt_money(hi)}", num=True),
+            ])
+        return {
+            "heading": f"What the wage bills say, {season_label(year)}",
+            "note": ("Only clubs whose accounts this site holds, which is why "
+                     "the second column is there - the lower the division, the "
+                     "fewer clubs file accounts detailed enough to disclose a "
+                     "wage bill at all, and below the Football League almost "
+                     "none do."),
+            "columns": ["Division", "Clubs with accounts",
+                        "Average wage bill", "Range"],
+            "rows": out,
+        }
+
+    def _tables(self) -> set:
+        return {r[0] for r in self.conn.execute(
+            "SELECT name FROM sqlite_master WHERE type = 'table'")}
 
     def _insight_timeline(self) -> None:
         events = [
