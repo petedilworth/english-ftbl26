@@ -2151,3 +2151,40 @@ def test_points_eras_page_is_skipped_without_its_prose(tmp_path, monkeypatch):
     out = _build_site_with_content(tmp_path, monkeypatch, _db_on_disk(tmp_path), {})
     assert not (out / "insights" / "points-eras" / "index.html").exists()
     assert "points-eras" not in (out / "insights" / "index.html").read_text()
+
+
+def test_pyramid_page_counts_what_it_can_and_states_what_it_cannot(
+        tmp_path, monkeypatch):
+    # The page mixes two kinds of figure and the distinction is the point:
+    # levels 1-5 are counted from the tables held here, everything below is
+    # the divisions' published composition. Both must appear, and the note
+    # must say which is which.
+    tmp_path.mkdir(parents=True, exist_ok=True)
+    db = _db_on_disk(tmp_path)
+    insights = tmp_path / "content" / "insights"
+    insights.mkdir(parents=True)
+    (insights / "the-pyramid.md").write_text("The shape of it.\n", encoding="utf-8")
+    out = _build_site_with_content(tmp_path, monkeypatch, db, {})
+    page = (out / "insights" / "the-pyramid" / "index.html").read_text()
+
+    assert "The shape of it." in page
+    assert "published" in page              # the provenance note
+    assert "National League North" in page  # a level below what we hold
+    assert "county FAs" in page             # the bottom of the table
+
+
+def test_pyramid_levels_use_a_season_with_every_tier(tmp_path, monkeypatch):
+    # The latest season is part-played and can be short a whole division
+    # when a download fails, which would silently drop a row from a table
+    # about how many divisions there are.
+    tmp_path.mkdir(parents=True, exist_ok=True)
+    db = _db_on_disk(tmp_path)
+    conn = sqlite3.connect(db)
+    # A newer season carrying one tier only, exactly the failure shape.
+    conn.execute(
+        "INSERT INTO standings VALUES (2030,3,'League One','giant-fc','Giant FC',"
+        "1,46,30,10,6,80,40,40,100,'Stayed','test')")
+    conn.commit(); conn.close()
+    from site_build import SiteBuilder
+    builder = SiteBuilder(db, tmp_path / "site", charts_enabled=False)
+    assert builder._complete_season() != 2030
