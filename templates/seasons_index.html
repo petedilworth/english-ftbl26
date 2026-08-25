@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 <h1>Seasons</h1>
-<p class="subtitle">Every season since 1993/94 — all five tiers on each page.</p>
+<p class="subtitle">Every season since 1958/59 — every division on one page.</p>
 <div class="tile-grid">
   {% for s in seasons %}
   <a class="tile" href="{{ root }}/season/{{ s.slug }}/index.html">

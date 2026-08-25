@@ -30,10 +30,12 @@ sys.path.insert(0, str(_SRC))
 import pandas as pd
 
 import aggregate
+import crosscheck
 import deductions
 import download
 import entities
 import finances
+import historical
 import status
 import trajectory
 
@@ -92,21 +94,31 @@ def _migrate_standings_columns(conn: sqlite3.Connection) -> None:
 
 logger = logging.getLogger(__name__)
 
-_FILENAME_RE = re.compile(r"^(\d{4})_E(\d)\.csv$")
+# The optional _hist marker distinguishes a season backfilled from
+# engsoccerdata from one downloaded from football-data.co.uk. The two are
+# the same shape on disk, so without it standings.source would credit
+# football-data with seasons it has never published.
+_FILENAME_RE = re.compile(r"^(\d{4})_E(\d)(_hist)?\.csv$")
 
 
-def _parse_filename(filename: str) -> tuple[int, int] | None:
-    """Return (season_end_year, tier) from a filename like '9394_E0.csv', or None."""
+def _parse_filename(filename: str) -> tuple[int, int, bool] | None:
+    """
+    Return (season_end_year, tier, is_historical) from a filename like
+    '9394_E0.csv' or '5859_E2_hist.csv', or None if it is neither.
+    """
     m = _FILENAME_RE.match(filename)
     if not m:
         return None
     season_str, tier_digit = m.group(1), int(m.group(2))
     tier = tier_digit + 1
     season_end_year = download.str_to_season(season_str)
-    return season_end_year, tier
+    return season_end_year, tier, bool(m.group(3))
 
 
-def _build_source(season_end_year: int, tier: int) -> str:
+def _build_source(season_end_year: int, tier: int,
+                  is_historical: bool = False) -> str:
+    if is_historical:
+        return historical.source_label(season_end_year, tier)
     code = download.TIER_TO_CODE[tier]
     season_str = download.season_to_str(season_end_year)
     return f"football-data.co.uk/{code}/{season_str}"
@@ -192,6 +204,7 @@ def _process_season(
     tier: int,
     resolver: dict,
     unresolved_map: dict,
+    is_historical: bool = False,
 ) -> int:
     """
     Aggregate one season CSV, assign status, resolve names, insert into
@@ -225,7 +238,7 @@ def _process_season(
     standings_df = status.assign_status(
         standings_df, season_end_year, tier, is_complete=is_complete
     )
-    source = _build_source(season_end_year, tier)
+    source = _build_source(season_end_year, tier, is_historical)
 
     rows = []
     for _, row in standings_df.iterrows():
@@ -659,6 +672,16 @@ def run(
             season_end=season_end,
             force=force_download,
         )
+        # football-data.co.uk starts at 1993/94; anything asked for below
+        # that comes from engsoccerdata instead. Requesting only recent
+        # seasons costs nothing here - the range check leaves it a no-op.
+        if season_start < historical.LAST_SEASON + 1:
+            historical.backfill(
+                raw_dir,
+                first_season=max(season_start, historical.FIRST_SEASON),
+                last_season=min(season_end, historical.LAST_SEASON),
+                force=force_download,
+            )
 
     csv_files = sorted(raw_dir.glob("*.csv"))
     if not csv_files:
@@ -673,11 +696,24 @@ def run(
             logger.debug("Skipping unrecognised file: %s", csv_path.name)
             continue
 
-        year, tier = parsed
+        year, tier, is_historical = parsed
         if not (season_start <= year <= season_end):
             continue
 
-        n = _process_season(conn, csv_path, year, tier, resolver, unresolved_map)
+        # Where a season is on the known-bad list, the backfilled copy is
+        # the one to use and football-data's is skipped outright - rather
+        # than letting both load and relying on which happens to be
+        # processed second.
+        if not is_historical and (year, tier) in historical.OVERRIDES:
+            logger.info(
+                "%d tier %d: using %s instead — %s",
+                year, tier, historical.SOURCE_NAME,
+                historical.OVERRIDES[(year, tier)],
+            )
+            continue
+
+        n = _process_season(conn, csv_path, year, tier, resolver,
+                            unresolved_map, is_historical)
         total_rows += n
 
     logger.info("Inserted/updated %d standings rows total", total_rows)
@@ -691,6 +727,8 @@ def run(
     _apply_known_playoff_winners(conn)
 
     trajectory.rebuild_trajectory(conn)
+
+    crosscheck.run(conn, raw_dir)
 
     conn.close()
 

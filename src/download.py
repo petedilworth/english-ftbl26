@@ -80,13 +80,21 @@ def season_to_str(season_end_year: int) -> str:
     return f"{yy_start:02d}{yy_end:02d}"
 
 
+# Two digits can't say which century they belong to, so the inverse needs a
+# pivot. It used to sit at 94, the earliest season football-data.co.uk
+# publishes, which was right until tiers 1-4 were backfilled to 1958/59 and
+# '5859' started reading as 2059. Moving it to 59 covers 1958/59 through
+# 2057/58; the seasons it reassigns are all ones that had no files anyway.
+_CENTURY_PIVOT = 59
+
+
 def str_to_season(s: str) -> int:
     """
     Inverse of season_to_str.
-    '9394' → 1994, '9900' → 2000, '0001' → 2001, '2324' → 2024
+    '5859' → 1959, '9394' → 1994, '9900' → 2000, '0001' → 2001, '2324' → 2024
     """
     yy = int(s[2:4])
-    return 2000 + yy if yy < 94 else 1900 + yy
+    return 2000 + yy if yy < _CENTURY_PIVOT else 1900 + yy
 
 
 def _season_published_yet(season_end_year: int, today: datetime.date | None = None) -> bool:
