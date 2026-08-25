@@ -2122,3 +2122,32 @@ def test_the_real_dataset_loads_and_every_row_matches_a_standings_row():
             orphans.append(f"{row['club_id']} {row['season_end_year']}")
     conn.close()
     assert not orphans, f"deduction rows matching no standings row: {orphans}"
+
+
+def test_points_eras_page_shows_the_rule_and_its_consequence(tmp_path, monkeypatch):
+    # The page exists to explain a caveat that appears on several other
+    # pages with no explanation, so the two things it must actually carry
+    # are the away-win rule itself and the season where it changed hands.
+    tmp_path.mkdir(parents=True, exist_ok=True)
+    db = _db_on_disk(tmp_path)
+    insights = tmp_path / "content" / "insights"
+    insights.mkdir(parents=True)
+    (insights / "points-eras.md").write_text("Why totals are not comparable.\n",
+                                             encoding="utf-8")
+    out = _build_site_with_content(tmp_path, monkeypatch, db, {})
+    page = (out / "insights" / "points-eras" / "index.html").read_text()
+
+    assert "Why totals are not comparable." in page
+    assert "Home win" in page and "Away win" in page
+    # The one row that makes the point: tier 5, mid-80s, home and away worth
+    # different amounts. Read from aggregate.points_rule, so if the rule
+    # ever changes in code this fails rather than quietly misdescribing it.
+    assert "1983/84" in page
+
+
+def test_points_eras_page_is_skipped_without_its_prose(tmp_path, monkeypatch):
+    # Same rule as every other prose-backed insight: no content file, no
+    # page, and nothing linking to one that was not built.
+    out = _build_site_with_content(tmp_path, monkeypatch, _db_on_disk(tmp_path), {})
+    assert not (out / "insights" / "points-eras" / "index.html").exists()
+    assert "points-eras" not in (out / "insights" / "index.html").read_text()
