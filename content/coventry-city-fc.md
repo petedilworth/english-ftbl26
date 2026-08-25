@@ -22,6 +22,7 @@ exile:
     distance_miles: 19
 administration:
   - year: 2013
+    month: 3
     points_deducted: 10
     note: "Followed a dispute over rent arrears with the stadium's owners"
 points_deductions:

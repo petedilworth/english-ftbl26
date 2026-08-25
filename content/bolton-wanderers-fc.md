@@ -8,6 +8,7 @@ owner: "Football Ventures (Whites) Limited (Sharon Brittan and Michael James)"
 owner_since: 2019
 administration:
   - year: 2019
+    month: 5
     points_deducted: 12
     note: "Followed unpaid wages and an HMRC winding-up petition after a proposed sale to Laurence Bassini repeatedly stalled"
 points_deductions:

@@ -8,6 +8,7 @@ owner: "David Newton"
 owner_since: 2007
 administration:
   - year: 2007
+    month: 5
     points_deducted: 10
     note: "Entered a Company Voluntary Arrangement amid around £3.5m of debt, at the point of relegation from League Two; the Football Conference separately voted to demote the club a further division, to Conference North, after the CVA left football creditors unpaid in breach of league rules"
 points_deductions:

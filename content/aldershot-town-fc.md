@@ -12,6 +12,7 @@ capacity: 7100
 stadium_ownership: council
 administration:
   - year: 2013
+    month: 5
     points_deducted: 10
     note: "Followed relegation from League Two and debts of around £1.4m"
 points_deductions:
