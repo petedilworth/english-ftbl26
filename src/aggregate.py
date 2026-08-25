@@ -61,6 +61,37 @@ def points_rule(tier: int, season_end_year: int) -> tuple[int, int, int]:
     win = points_for_win(season_end_year)
     return (win, win, 1)
 
+
+def tiebreak_rule(tier: int, season_end_year: int) -> str:
+    """
+    How clubs level on points are separated, which has changed twice.
+
+    Points are not the only era-dependent rule in an English league table.
+    The tiebreak has run through three regimes, and getting it wrong does
+    not merely reorder mid-table - it changes who is recorded as champion.
+
+    - To 1975/76 the Football League used goal average, goals scored
+      divided by goals conceded. A club could score fewer and concede
+      fewer and still finish above.
+    - From 1976/77 it used goal difference.
+    - From 1992/93 to 1998/99 the Football League put goals scored ahead
+      of goal difference, reverting for 1999/2000. The Premier League,
+      formed in 1992, used goal difference throughout and never adopted
+      it, so in those seasons the rule reaches tiers 2-4 only. The
+      Conference is not the Football League and is not covered either.
+
+    The case that proves it: in 1996/97 Wigan Athletic and Fulham both
+    finished the Third Division on 87 points. Fulham had the better goal
+    difference, +34 to +33; Wigan had scored more, 84 to 72. Under the
+    rule in force Wigan were champions. Ranking that table by goal
+    difference hands the title to Fulham, which is not what happened.
+    """
+    if season_end_year <= 1976:
+        return "goal_average"
+    if 1993 <= season_end_year <= 1999 and 2 <= tier <= 4:
+        return "goals_scored"
+    return "goal_difference"
+
 # Expected minimum matches per season (used for incomplete-season detection)
 EXPECTED_MATCHES = {
     20: 380,  # 20-club league
@@ -181,7 +212,11 @@ def load_csv(path: Path) -> pd.DataFrame | None:
     return df
 
 
-def rank_standings(standings: pd.DataFrame) -> pd.DataFrame:
+def rank_standings(
+    standings: pd.DataFrame,
+    tier: int | None = None,
+    season_end_year: int | None = None,
+) -> pd.DataFrame:
     """
     Order a table and number its positions.
 
@@ -191,10 +226,32 @@ def rank_standings(standings: pd.DataFrame) -> pd.DataFrame:
     is the whole point - it makes the ordinary positional promotion and
     relegation rules produce the right answer without anything having to
     know a sanction happened.
+
+    tier and season_end_year select the era's tiebreak - see tiebreak_rule.
+    Omitting them falls back to goal difference, which is correct for every
+    season from 1999/2000 on.
     """
+    rule = (
+        tiebreak_rule(tier, season_end_year)
+        if tier is not None and season_end_year is not None
+        else "goal_difference"
+    )
+    if rule == "goal_average":
+        # Conceding nothing across a season does not happen, but guard it
+        # rather than divide by zero on a partial table.
+        standings = standings.assign(
+            _tiebreak=standings["gf"] / standings["ga"].where(standings["ga"] != 0, 1)
+        )
+        keys = ["points", "_tiebreak", "gf"]
+    elif rule == "goals_scored":
+        keys = ["points", "gf", "gd"]
+    else:
+        keys = ["points", "gd", "gf"]
+
     standings = standings.sort_values(
-        ["points", "gd", "gf"], ascending=[False, False, False]
+        keys, ascending=[False] * len(keys)
     ).reset_index(drop=True)
+    standings = standings.drop(columns=["_tiebreak"], errors="ignore")
     if "position" in standings.columns:
         standings = standings.drop(columns=["position"])
     standings.insert(0, "position", standings.index + 1)
@@ -246,7 +303,7 @@ def compute_standings(
             }
         )
 
-    standings = rank_standings(pd.DataFrame(records))
+    standings = rank_standings(pd.DataFrame(records), tier, season_end_year)
 
     # Incomplete season warning
     n_teams = len(standings)

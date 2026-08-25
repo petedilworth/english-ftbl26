@@ -381,7 +381,7 @@ def _apply_points_deductions(conn: sqlite3.Connection) -> None:
     changed = 0
     for season, tier in sorted(affected):
         rows = conn.execute(
-            "SELECT rowid, club_id, club_name, won, drawn, gd, gf, status"
+            "SELECT rowid, club_id, club_name, won, drawn, gd, gf, ga, status"
             " FROM standings WHERE season_end_year = ? AND tier = ?",
             (season, tier),
         ).fetchall()
@@ -390,23 +390,23 @@ def _apply_points_deductions(conn: sqlite3.Connection) -> None:
 
         table = pd.DataFrame([{
             "rowid": r[0], "club_id": r[1], "club_name": r[2],
-            "on_pitch": r[3] * 3 + r[4], "gd": r[5], "gf": r[6],
+            "on_pitch": r[3] * 3 + r[4], "gd": r[5], "gf": r[6], "ga": r[7],
         } for r in rows])
         table["points_deducted"] = table["club_id"].map(
             lambda cid: totals.get((cid, season), 0)
         )
         table["points"] = table["on_pitch"] - table["points_deducted"]
-        table = aggregate.rank_standings(table)
+        table = aggregate.rank_standings(table, tier, season)
 
         # A season still being played has no outcomes to assign; leave the
         # status alone and just correct the arithmetic.
-        in_progress = any(r[7] == status.IN_PROGRESS for r in rows)
+        in_progress = any(r[8] == status.IN_PROGRESS for r in rows)
         if not in_progress:
             try:
                 table = status.assign_status(table, season, tier, is_complete=True)
             except Exception as exc:      # unknown rules for this tier/season
                 logger.warning("Could not re-judge %d tier %d: %s", season, tier, exc)
-                table["status"] = [r[7] for r in rows]
+                table["status"] = [r[8] for r in rows]
 
         for _, r in table.iterrows():
             conn.execute(
