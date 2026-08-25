@@ -339,6 +339,67 @@ def _in_progress_seasons(conn: sqlite3.Connection) -> set[int]:
     }
 
 
+def _rerank_curtailed_divisions(conn: sqlite3.Connection) -> None:
+    """
+    Re-rank the divisions that were curtailed and settled on points per game.
+
+    compute_standings already applies the rule when a division is loaded from
+    its source file, so on a full run this is a no-op. It exists because a run
+    that reprocesses only some files - the usual case when the raw directory
+    holds the historical backfill but not the downloaded modern seasons -
+    leaves the rest of the table exactly as it was last written, including
+    from before the rule existed. Re-ranking from the stored rows is cheap,
+    idempotent, and makes the ordering a property of the database rather than
+    of which files happened to be on disk.
+
+    Positions move; statuses do not. Who went up and who went down is a matter
+    of record and stays attached to the club, not to the row it now occupies.
+    """
+    changed = 0
+    for season, tier in sorted(aggregate.CURTAILED_BY_PPG):
+        rows = conn.execute(
+            "SELECT rowid, club_id, club_name, position, points, gd, gf, ga, played"
+            " FROM standings WHERE season_end_year = ? AND tier = ?",
+            (season, tier),
+        ).fetchall()
+        if not rows:
+            continue
+
+        table = pd.DataFrame([{
+            "rowid": r[0], "club_id": r[1], "club_name": r[2],
+            "points": r[4], "gd": r[5], "gf": r[6], "ga": r[7], "played": r[8],
+        } for r in rows])
+        was = {r[0]: r[3] for r in rows}
+        table = aggregate.rank_standings(table, tier, season)
+
+        moved = [
+            (r["club_name"], was[int(r["rowid"])], int(r["position"]))
+            for _, r in table.iterrows()
+            if was[int(r["rowid"])] != int(r["position"])
+        ]
+        if not moved:
+            continue
+
+        for _, r in table.iterrows():
+            conn.execute(
+                "UPDATE standings SET position = ? WHERE rowid = ?",
+                (int(r["position"]), int(r["rowid"])),
+            )
+        changed += 1
+        logger.info(
+            "%d tier %d settled on points per game: re-ranked %d club(s), %s",
+            season, tier, len(moved),
+            ", ".join(f"{name} {old}->{now}" for name, old, now in moved),
+        )
+
+    if changed:
+        conn.commit()
+    logger.info(
+        "Curtailed divisions: %d of %d needed re-ranking",
+        changed, len(aggregate.CURTAILED_BY_PPG),
+    )
+
+
 def _apply_points_deductions(conn: sqlite3.Connection) -> None:
     """
     Subtract points deductions, then re-rank and re-judge every table they
@@ -759,6 +820,7 @@ def run(
     # Before reconciliation: with the deduction applied the positional
     # rules are usually right on their own, leaving reconciliation to do
     # what only it can - play-off losers, reprieves, expulsions.
+    _rerank_curtailed_divisions(conn)
     _apply_points_deductions(conn)
     _reconcile_statuses(conn)
     _apply_known_playoff_winners(conn)
