@@ -450,8 +450,13 @@ def test_natural_level_panel_rendered(tmp_path):
     assert "Where they've played" in page
     assert "Natural level" in page          # the stat card
     assert "nl-seg" in page                 # the distribution bar
-    # The era caveat must travel with the claim
-    assert "pre-Premier League era" in page
+    # The coverage caveat must travel with the claim. It used to say the
+    # measurement was silent about the pre-Premier League era, which stopped
+    # being true when tiers 1-4 were backfilled to 1958/59; what still
+    # limits it is tier 5 starting in 2005/06, so a club's non-league years
+    # before then leave no trace.
+    assert "1958/59" in page
+    assert "2005/06" in page
 
 
 def test_thin_club_has_no_natural_level_panel(tmp_path):
