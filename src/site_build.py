@@ -735,12 +735,12 @@ class SiteBuilder:
 
         Two honesty notes, since this prints the word "only".
 
-        Tier-5 coverage starts in 2005/06, so a club that left the Football
-        League between 1993 and 2005 would be invisible here. None of the
-        clubs that did - Halifax, Chester, Barnet, Exeter, Shrewsbury, York,
-        Carlisle, Kidderminster, Cambridge United - had played in the Premier
-        League, so the answer is right; but it rests on that window, and the
-        code should say so rather than leave it to be rediscovered.
+        Tier-5 coverage starts in 1979/80, so every club that left the
+        Football League in the Premier League era is visible here - Halifax,
+        Chester, Barnet, Exeter, Shrewsbury, York, Carlisle, Kidderminster
+        and Cambridge United among them. None of them had played in the
+        Premier League, so the answer is the same as it was when this note
+        had to plead a 2005/06 window; it just no longer rests on one.
 
         And the recipe retires its own claim. If a second club ever qualifies
         the sentence becomes a count and the link moves to the page listing

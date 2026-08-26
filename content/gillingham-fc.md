@@ -27,9 +27,12 @@ rivalries:
       race, and the 1987 Third Division play-off final, which took three
       matches — Gillingham won the first leg, lost the second, and lost
       the replay 2-0 at Selhurst Park, in what was their first attempt at
-      the second tier. Southend and Millwall are both geographically
-      plausible and neither turns up in the documented record, so this
-      page does not claim them.
+      the second tier. It is worth saying where this sits: the same 2019
+      supporter survey that several other pages on this site draw on has
+      Gillingham fans naming Millwall first at 69 per cent, Charlton at 63
+      and Southend at 56, with Swindon fourth at 44. So Swindon is the
+      rivalry with the clearest documented cause, and three closer clubs
+      are named ahead of it.
 ---
 
 ## Origins

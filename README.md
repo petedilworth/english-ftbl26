@@ -1,6 +1,6 @@
 # English Football Historical Database
 
-SQLite database of English football league standings — Tiers 1–4 from 1958/59 and Tier 5 from 2005/06, through to the present, plus a weekly fixture-preview email digest and a static website.
+SQLite database of English football league standings — Tiers 1–4 from 1958/59 and Tier 5 from 1979/80, through to the present, plus a weekly fixture-preview email digest and a static website.
 
 ## The website (Phase 3)
 
