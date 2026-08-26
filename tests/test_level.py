@@ -134,14 +134,24 @@ def test_insufficient_record_has_no_tier_or_share():
     assert got["label"] == "Insufficient record"
 
 
-# ── Coverage: the 2006 tier-5 boundary ─────────────────────────────────
+# ── Coverage: the tier-5 boundary ──────────────────────────────────────
 
-def test_pre2006_gap_softens_the_wording():
-    # Tier 5 wasn't recorded before 2006, so a gap then might have been a
+def test_gap_before_tier5_coverage_softens_the_wording():
+    # Tier 5 isn't recorded before 1979/80, so a gap then might have been a
     # Conference season we simply cannot see - never call it "non-league".
-    nl = natural_level({1998: 4, 2003: 4, 2004: 4, 2005: 4, 2006: 4,
-                        2007: 4, 2008: 4, 2009: 4})
-    assert nl.coverage_note == "pre2006-gap"
+    nl = natural_level({1972: 4, 1977: 4, 1978: 4, 1979: 4, 1980: 4,
+                        1981: 4, 1982: 4, 1983: 4})
+    assert nl.coverage_note == "pre-coverage-gap"
+
+
+def test_a_gap_inside_tier5_coverage_is_not_softened():
+    # The boundary used to sit at 2005/06, where football-data.co.uk's files
+    # begin, long after the backfill had pushed the data to 1979/80. A club
+    # missing from the tables in 1999 was outside the top five tiers, and the
+    # page should say so.
+    nl = natural_level({1996: 4, 1997: 4, 1998: 4, 2003: 4, 2004: 4,
+                        2005: 4, 2006: 4, 2007: 4})
+    assert nl.coverage_note is None
 
 
 def test_modern_gap_is_named_non_league():

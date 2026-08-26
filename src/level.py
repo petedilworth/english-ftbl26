@@ -34,9 +34,14 @@ import sqlite3
 import statistics
 from dataclasses import dataclass
 
-# Tier 5 (National League) is only in the source data from 2005/06 onward,
-# so a gap before this is "we can't see it", not "they weren't there".
-TIER5_FIRST_SEASON = 2006
+# Tier 5 (National League) is in the data from 1979/80 onward, so a gap
+# before this is "we can't see it", not "they weren't there". It used to be
+# 2005/06, which is where football-data.co.uk's files start; the
+# engsoccerdata backfill pushed the boundary back twenty-six seasons and
+# this constant did not follow it, which left twenty-seven clubs described
+# as "outside the recorded divisions" for seasons the data can see
+# perfectly well.
+TIER5_FIRST_SEASON = 1980
 
 # The bucket for seasons inside a club's window with no standings row.
 OUTSIDE = 6
@@ -76,7 +81,7 @@ class NaturalLevel:
     seasons: int                # window length — the denominator
     recorded: int               # seasons actually in the standings
     distribution: dict[str, int]
-    coverage_note: str | None   # None | "pre2006-gap"
+    coverage_note: str | None   # None | "pre-coverage-gap"
     recent_tier: int | None
     trend: str | None           # rising|falling|level
 
@@ -84,8 +89,9 @@ class NaturalLevel:
 def bucket_name(bucket: int, coverage_note: str | None = None) -> str:
     """
     Display name for a bucket. The outside bucket softens its wording when
-    the club has pre-2006 gaps, because we can't claim to know those
-    seasons were non-league rather than unseen Conference seasons.
+    the club has gaps from before tier-5 coverage begins, because we can't
+    claim to know those seasons were non-league rather than unseen
+    Conference seasons.
     """
     if bucket == OUTSIDE:
         return OUTSIDE_NAME_AMBIGUOUS if coverage_note else OUTSIDE_NAME
@@ -142,7 +148,7 @@ def _coverage_note(tiers_by_year: dict[int, int]) -> str | None:
     first, last = min(tiers_by_year), max(tiers_by_year)
     for year in range(first, last + 1):
         if year not in tiers_by_year and year < TIER5_FIRST_SEASON:
-            return "pre2006-gap"
+            return "pre-coverage-gap"
     return None
 
 
