@@ -57,7 +57,7 @@ divisional record. No club in any source has more.
 
 The eleven Fourth Division applications can be rebuilt exactly from this site's
 data, which is a better check than a citation. From 1958/59 the bottom four of
-Division Four went to a ballot at the League's June AGM, where the member clubs
+Division Four went to a ballot at the League's AGM in late May, where the members
 voted either to keep them or to admit a non-league applicant instead. Hartlepool
 finished in the bottom four in **1960, 1961, 1962, 1963, 1964, 1970, 1971, 1977,
 1978, 1983 and 1984** — eleven seasons, no more and no fewer, before the system
@@ -72,11 +72,12 @@ Three of those ballots removed a club, and it was never this one:
   more cleanly: the ballot did not reward league position, and was not intended
   to.
 - **1977.** Hartlepool twenty-second. **Workington, bottom, were voted out** and
-  Wimbledon elected — the same June vote that Carlisle's page describes from the
-  other end, and the reason Carlisle became the most isolated club in the League.
-- **1978.** Hartlepool twenty-first. **Southport, bottom, were voted out** after
-  tying with Wigan Athletic on twenty-six votes in the first round and losing the
-  re-vote 29–20.
+  Wimbledon elected — the same vote that Carlisle's page describes from the other
+  end, and the reason Carlisle became the most isolated club in the League.
+- **1978.** Hartlepool twenty-first. **Southport, who finished twenty-third, were
+  voted out** after tying with Wigan Athletic on twenty-six votes in the first
+  round and losing the re-vote 29–20. **Rochdale finished bottom that year and
+  were re-elected** — the same pattern again, one place further down.
 
 In **1963** Hartlepool finished bottom again and nobody lost their place at all.
 
