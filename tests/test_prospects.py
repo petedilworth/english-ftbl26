@@ -143,3 +143,97 @@ def test_normalise_inverts_when_lower_is_better():
 def test_identical_values_do_not_manufacture_a_ranking():
     got = prospects._normalise({"a": 5, "b": 5})
     assert got == {"a": 0.5, "b": 0.5}
+
+
+# ── purchasability ─────────────────────────────────────────────────────
+
+def _with_csv(tmp_path, monkeypatch, rows, header=None):
+    header = header or ["club_id", "ground_tenure", "tenure_source_url",
+                        "purchasable", "ownership_note"]
+    csv_path = tmp_path / "club_prospects.csv"
+    csv_path.write_text(
+        ",".join(header) + "\n" + "\n".join(",".join(r) for r in rows) + "\n")
+    monkeypatch.setattr(prospects, "PROJECT_ROOT", tmp_path)
+    return csv_path
+
+
+def test_a_club_that_cannot_be_bought_is_excluded_not_ranked(tmp_path, monkeypatch):
+    """
+    A supporter-owned club is not a bad investment, it is not an
+    investment. Scoring it low would put it in the same bucket as a club
+    that is merely unattractive, which is a different fact.
+    """
+    _with_csv(tmp_path, monkeypatch, [
+        ["alpha-fc", "freehold", "http://example.test/a", "no",
+         "owned by a supporters' society"],
+    ])
+    conn = _db(FALLEN, SEASONS, catchment_rows=[
+        ("alpha-fc", 900_000, 30_000, 0.1),
+        ("beta-fc", 400_000, 30_000, 0.3),
+    ])
+    result = prospects.screen(conn)
+    reasons = {r["club_id"]: r["excluded"] for r in result["excluded"]}
+    assert "alpha-fc" in reasons
+    assert "supporters" in reasons["alpha-fc"]
+    ranked = {r["club_id"] for band in result["bands"].values() for r in band}
+    assert "alpha-fc" not in ranked
+
+
+def test_unknown_purchasability_still_gets_ranked(tmp_path, monkeypatch):
+    """Not yet researched must not behave like researched-and-refused."""
+    _with_csv(tmp_path, monkeypatch, [
+        ["alpha-fc", "freehold", "http://example.test/a", "unknown", ""],
+    ])
+    conn = _db(FALLEN, SEASONS, catchment_rows=[("alpha-fc", 900_000, 30_000, 0.1)])
+    result = prospects.screen(conn)
+    ranked = {r["club_id"] for band in result["bands"].values() for r in band}
+    assert "alpha-fc" in ranked
+
+
+def test_a_researched_tenure_is_scored_and_leaves_the_missing_list(tmp_path, monkeypatch):
+    _with_csv(tmp_path, monkeypatch, [
+        ["alpha-fc", "freehold", "http://example.test/a", "yes", ""],
+    ])
+    conn = _db(FALLEN, SEASONS, catchment_rows=[
+        ("alpha-fc", 900_000, 30_000, 0.1),
+        ("beta-fc", 400_000, 30_000, 0.3),
+    ])
+    rows = {r["club_id"]: r
+            for band in prospects.screen(conn)["bands"].values() for r in band}
+    alpha = rows["alpha-fc"]
+    assert alpha["tenure"] == "freehold"
+    assert "tenure" not in alpha["missing"]
+    assert alpha["parts"]["tenure"] == 1.0
+
+
+def test_a_half_filled_row_keeps_the_fields_independent(tmp_path, monkeypatch):
+    """Tenure researched, purchasability not - each must stand alone."""
+    _with_csv(tmp_path, monkeypatch, [
+        ["alpha-fc", "council", "http://example.test/a", "", ""],
+    ])
+    conn = _db(FALLEN, SEASONS, catchment_rows=[("alpha-fc", 900_000, 30_000, 0.1)])
+    rows = {r["club_id"]: r
+            for band in prospects.screen(conn)["bands"].values() for r in band}
+    assert rows["alpha-fc"]["tenure"] == "council"
+    assert rows["alpha-fc"]["purchasable"] == "unknown"
+
+
+def test_every_tenure_value_in_the_real_csv_is_one_the_scorer_knows():
+    """
+    Guards the hand-edited file: a typo like `frehold` would silently
+    score as unknown and quietly drop a club down the table.
+    """
+    path = prospects.PROJECT_ROOT / "club_prospects.csv"
+    if not path.exists():
+        pytest.skip("club_prospects.csv not written yet")
+    import csv
+    allowed = set(prospects.TENURE_SCORES) | {"unknown"}
+    with path.open() as fh:
+        for row in csv.DictReader(fh):
+            tenure = (row.get("ground_tenure") or "unknown").strip().lower()
+            assert tenure in allowed, f"{row['club_id']}: unknown tenure {tenure!r}"
+            buyable = (row.get("purchasable") or "unknown").strip().lower()
+            assert buyable in {"yes", "no", "unknown"}, row["club_id"]
+            if tenure != "unknown":
+                assert (row.get("tenure_source_url") or "").strip(), (
+                    f"{row['club_id']}: tenure asserted with no source")

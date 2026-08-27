@@ -86,24 +86,35 @@ def _normalise(values: dict[str, float], invert: bool = False) -> dict[str, floa
     return {k: (1.0 - v if invert else v) for k, v in out.items()}
 
 
-def _load_tenure() -> dict[str, dict]:
+def _load_prospect_facts() -> dict[str, dict]:
     """
-    Ground tenure from club_prospects.csv, which is hand-researched and may
-    not exist. Absence means unknown, for every club, and the screen says
-    so rather than assuming the worst.
+    Hand-researched facts from club_prospects.csv: ground tenure, and
+    whether control of the club can be bought at all.
+
+    The file may not exist, and a row may be half-filled. Absence means
+    unknown - for that field, for that club - and the screen says so
+    rather than assuming the worst. `unknown` is stored explicitly rather
+    than omitted, because "nobody has checked" and "checked and it is bad"
+    must not converge on the same score.
     """
     path = PROJECT_ROOT / "club_prospects.csv"
     if not path.exists():
         return {}
     import csv
-    out = {}
+    out: dict[str, dict] = {}
     with path.open() as fh:
         for row in csv.DictReader(fh):
             cid = (row.get("club_id") or "").strip()
-            tenure = (row.get("ground_tenure") or "").strip().lower()
-            if cid and tenure and tenure != "unknown":
-                out[cid] = {"tenure": tenure,
-                            "source": (row.get("tenure_source_url") or "").strip()}
+            if not cid:
+                continue
+            tenure = (row.get("ground_tenure") or "").strip().lower() or "unknown"
+            buyable = (row.get("purchasable") or "").strip().lower() or "unknown"
+            out[cid] = {
+                "tenure": tenure,
+                "source": (row.get("tenure_source_url") or "").strip(),
+                "purchasable": buyable,
+                "ownership_note": (row.get("ownership_note") or "").strip(),
+            }
     return out
 
 
@@ -140,7 +151,7 @@ def candidates(conn: sqlite3.Connection) -> list[dict]:
             " WHERE lineage_parent_id IS NOT NULL")
     }
 
-    tenure = _load_tenure()
+    facts = _load_prospect_facts()
     out = []
     for club_id, name, current in conn.execute(
         "SELECT club_id, canonical_name, current_tier FROM club_master"
@@ -166,7 +177,7 @@ def candidates(conn: sqlite3.Connection) -> list[dict]:
             continue
 
         row = catch.get(club_id)
-        known = tenure.get(club_id)
+        known = facts.get(club_id)
         out.append({
             "club_id": club_id,
             "name": name,
@@ -181,6 +192,8 @@ def candidates(conn: sqlite3.Connection) -> list[dict]:
             "nearest_rival": row[4] if row else None,
             "nearest_rival_miles": row[5] if row else None,
             "tenure": known["tenure"] if known else "unknown",
+            "purchasable": known["purchasable"] if known else "unknown",
+            "ownership_note": known["ownership_note"] if known else "",
             "was_docked": club_id in docked,
             "successor": successors.get(club_id),
         })
@@ -247,7 +260,14 @@ def screen(conn: sqlite3.Connection) -> dict:
     excluded = []
     live = []
     for r in everything:
-        if r["successor"]:
+        # A club nobody can buy is not a bad investment - it is not an
+        # investment. Kept separate from the score so it cannot be
+        # mistaken for a club that merely ranks badly.
+        if r["purchasable"] == "no":
+            note = r["ownership_note"] or "control cannot be acquired"
+            r["excluded"] = f"not for sale: {note}"
+            excluded.append(r)
+        elif r["successor"]:
             r["excluded"] = f"identity carried on by {r['successor']}"
             excluded.append(r)
         elif (r["seasons_gone"] or 0) > STALE_AFTER_SEASONS:
