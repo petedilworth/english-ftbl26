@@ -114,6 +114,13 @@ def _load_prospect_facts() -> dict[str, dict]:
                 "source": (row.get("tenure_source_url") or "").strip(),
                 "purchasable": buyable,
                 "ownership_note": (row.get("ownership_note") or "").strip(),
+                # Whose ceiling is it? For most fallen clubs the standings
+                # belong to a company that no longer exists, and the thing
+                # on sale is a successor that bought the name. Ranking on
+                # the dead club's peak buys the wrong company's history.
+                "peak_entity": (row.get("peak_tier_entity") or "").strip().lower()
+                               or "unknown",
+                "entity_note": (row.get("entity_note") or "").strip(),
             }
     return out
 
@@ -194,6 +201,8 @@ def candidates(conn: sqlite3.Connection) -> list[dict]:
             "tenure": known["tenure"] if known else "unknown",
             "purchasable": known["purchasable"] if known else "unknown",
             "ownership_note": known["ownership_note"] if known else "",
+            "peak_entity": known["peak_entity"] if known else "unknown",
+            "entity_note": known["entity_note"] if known else "",
             "was_docked": club_id in docked,
             "successor": successors.get(club_id),
         })
@@ -314,6 +323,8 @@ def render(result: dict) -> str:
             notes = []
             if r["nearest_rival_miles"] is not None:
                 notes.append(f"{r['nearest_rival']} {r['nearest_rival_miles']:.0f}mi")
+            if r["peak_entity"] == "predecessor":
+                notes.append("CEILING IS A DEAD PREDECESSOR")
             if r["was_docked"]:
                 notes.append("docked")
             if r["missing"]:
@@ -322,6 +333,16 @@ def render(result: dict) -> str:
                 f"  {r['name'][:26]:26} {score_s:>6} {r['peak_tier']:>4} "
                 f"{r['current_tier']:>4} {pop:>10} {con:>8} "
                 f"{r['tenure']:>9}  {'; '.join(notes)}")
+
+    inherited = [r for band in result["bands"].values() for r in band
+                 if r["peak_entity"] == "predecessor"]
+    if inherited:
+        lines.append("")
+        lines.append("  Ceilings marked above belong to a company that no longer "
+                     "exists. The")
+        lines.append("  successor bought a name, not a record - rank on it and you "
+                     "are pricing")
+        lines.append("  the wrong club's history.")
 
     dropped = result.get("excluded") or []
     if dropped:
