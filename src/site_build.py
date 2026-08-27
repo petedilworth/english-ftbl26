@@ -151,6 +151,42 @@ METRICS = {
         "format_kind": "money",
         "noun": "wage bill",
     },
+    "catchment": {
+        "label": "Catchment population",
+        "heading": "Catchment population vs. league position",
+        "sub": "How many people a club could draw on, after its neighbours take their share",
+        "base": "insights/catchment",
+        "source": "catchment",
+        "field": "catchment_pop_restored",
+        "scale": "log",
+        "format": lambda v: f"{int(v):,}",
+        "format_kind": "count",
+        "noun": "catchment",
+    },
+    "catchment-income": {
+        "label": "Catchment income",
+        "heading": "Catchment income vs. league position",
+        "sub": "What the people in reach earn - modelled by ONS, not measured",
+        "base": "insights/catchment/income",
+        "source": "catchment",
+        "field": "catchment_income",
+        "scale": "linear",
+        "format": _fmt_money,
+        "format_kind": "money",
+        "noun": "catchment income",
+    },
+    "contested": {
+        "label": "Catchment contested",
+        "heading": "How much of a club's own area is taken by its neighbours",
+        "sub": "0% is uncontested ground; 100% is a catchment entirely spoken for",
+        "base": "insights/catchment/contested",
+        "source": "catchment",
+        "field": "contest_ratio",
+        "scale": "linear",
+        "format": lambda v: f"{v:.0f}%",
+        "format_kind": "percent",
+        "noun": "contested share",
+    },
     "wage-ratio": {
         "label": "Wages ÷ revenue",
         "heading": "Wage bill as a share of revenue vs. league position",
@@ -428,6 +464,9 @@ class SiteBuilder:
         # Same reasoning for club_finances, which a checkout may predate
         # entirely. Resolved lazily on first use, then cached.
         self._finances_table: bool | None = None
+        # And for club_catchment, which is empty until the demographics
+        # CSV lands. Caches whether it has ROWS, not just a table.
+        self._catchment_rows: bool | None = None
         # Division ranks for every club-season, built once on first use -
         # build_teams walks every club, so a query per club would be wasteful.
         self._finance_ranks_cache: dict | None = None
@@ -2027,6 +2066,22 @@ class SiteBuilder:
             ).fetchone())
         return self._finances_table
 
+    def _has_catchment(self) -> bool:
+        """
+        Whether the catchment model has actually run. The table is created
+        on every pipeline pass but stays empty until msoa_demographics.csv
+        exists (see docs/catchment-data.md), so existence is not enough -
+        an empty table must read as "no data" and take the metric off the
+        chip row entirely rather than rendering a blank chart.
+        """
+        if self._catchment_rows is None:
+            try:
+                self._catchment_rows = bool(self.conn.execute(
+                    "SELECT 1 FROM club_catchment LIMIT 1").fetchone())
+            except sqlite3.Error:
+                self._catchment_rows = False
+        return self._catchment_rows
+
     def _finance_ranks(self) -> dict:
         """
         {(club_id, season): {"turnover": (rank, total, division), ...}} -
@@ -2217,6 +2272,33 @@ class SiteBuilder:
                 for cid, facts in self.club_facts.items()
                 if isinstance(facts.get(metric["field"]), (int, float))
             }
+
+        if metric["source"] == "catchment":
+            # Not season-scoped, like capacity: a catchment is one figure
+            # per club, so the same value appears on every season's page
+            # and only the plotted position moves.
+            if not self._has_catchment():
+                return {}
+            names = dict(self.conn.execute(
+                "SELECT club_id, canonical_name FROM club_master"))
+            out: dict[str, dict] = {}
+            for (cid, value, rival, miles, contest) in self.conn.execute(
+                f"SELECT club_id, {metric['field']}, nearest_rival_id,"
+                f" nearest_rival_miles, contest_ratio FROM club_catchment"
+            ):
+                if value is None:
+                    continue
+                plotted = float(value) * 100 if metric["field"] == "contest_ratio" \
+                    else float(value)
+                extra = {}
+                if rival and miles is not None:
+                    extra["rival"] = f"nearest club {names.get(rival, rival)}, {miles:.1f} miles"
+                if metric["field"] != "contest_ratio" and contest is not None:
+                    extra["contested"] = f"{contest * 100:.0f}% of its area contested"
+                if metric["field"] == "catchment_income":
+                    extra["caveat"] = "ONS small-area estimate, modelled not measured"
+                out[cid] = {"value": plotted, "extra": extra}
+            return out
 
         if not self._has_finances():
             return {}

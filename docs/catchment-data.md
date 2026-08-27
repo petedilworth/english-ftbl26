@@ -64,3 +64,26 @@ the population column is the wrong vintage or the wrong geography.
 Then run the honesty check in `tests/test_catchment.py` — in particular
 `test_isolation_alone_earns_nothing`, which is there to catch the model
 degenerating into a ranking of emptiness.
+
+## Once it lands
+
+```bash
+python3 src/prospects.py          # the ranked screen
+```
+
+Until then that command prints `NOT RANKED` and the candidate list with
+every input marked missing, which is the intended behaviour: ceiling and
+fall alone would rank on nostalgia, and nostalgia is the half of the
+thesis that is free.
+
+Two exclusions the screen applies before ranking, both reported with
+counts and reasons rather than applied silently:
+
+- **A club whose identity has been carried on by a successor.** What an
+  investor would be buying has already moved. Detected from
+  `club_master.lineage_parent_id`, not from names.
+- **A club absent for more than 25 seasons** (`STALE_AFTER_SEASONS`).
+  Workington left the Football League in 1977 and are 50 seasons gone;
+  their catchment is the most uncontested in the data and their supporters
+  are not. The threshold is judgement and it is a constant so it can be
+  argued with.

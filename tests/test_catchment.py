@@ -172,3 +172,69 @@ def test_income_outside_its_own_interval_is_rejected():
         "net_income": 40000, "income_ci_lower": 20000, "income_ci_upper": 30000,
     })
     assert any("confidence interval" in p for p in problems)
+
+
+# ── the site render ────────────────────────────────────────────────────
+# These use the shared fixture database, the same as tests/test_site_build.py.
+
+sys.path.insert(0, str(Path(__file__).parent))
+
+
+def _site_db(tmp_path, catchment_rows):
+    from test_digest import _make_db
+    mem = _make_db()
+    path = tmp_path / "test.db"
+    disk = sqlite3.connect(path)
+    mem.backup(disk)
+    disk.execute(catchment.CREATE_CLUB_CATCHMENT_SQL)
+    disk.executemany(
+        "INSERT INTO club_catchment (club_id, catchment_pop_restored,"
+        " catchment_income, contest_ratio, nearest_rival_id,"
+        " nearest_rival_miles, model_version) VALUES (?,?,?,?,?,?,?)",
+        catchment_rows,
+    )
+    disk.commit()
+    disk.close()
+    return path
+
+
+def test_catchment_pages_render_when_there_is_data(tmp_path):
+    from site_build import SiteBuilder
+    db = _site_db(tmp_path, [
+        ("giant-fc", 900_000, 34_000, 0.12, "steady-fc", 8.4, "test"),
+        ("steady-fc", 140_000, 27_000, 0.71, "giant-fc", 8.4, "test"),
+    ])
+    out = tmp_path / "site"
+    SiteBuilder(db, out, charts_enabled=False).build()
+
+    page = out / "insights" / "catchment" / "index.html"
+    assert page.exists()
+    assert "900,000" in page.read_text()
+
+
+def test_catchment_pages_are_absent_when_the_table_is_empty(tmp_path):
+    """
+    The demographics CSV cannot be fetched in every environment, so an
+    empty club_catchment must take the metric off the chip row entirely
+    rather than publishing a blank chart with a confident heading.
+    """
+    from site_build import SiteBuilder
+    db = _site_db(tmp_path, [])
+    out = tmp_path / "site"
+    SiteBuilder(db, out, charts_enabled=False).build()
+
+    assert not (out / "insights" / "catchment" / "index.html").exists()
+    index = (out / "insights" / "index.html").read_text()
+    assert "Catchment population" not in index
+
+
+def test_contested_share_is_plotted_as_a_percentage(tmp_path):
+    from site_build import SiteBuilder
+    db = _site_db(tmp_path, [
+        ("giant-fc", 900_000, 34_000, 0.12, "steady-fc", 8.4, "test"),
+        ("steady-fc", 140_000, 27_000, 0.71, "giant-fc", 8.4, "test"),
+    ])
+    out = tmp_path / "site"
+    SiteBuilder(db, out, charts_enabled=False).build()
+    page = (out / "insights" / "catchment" / "contested" / "index.html").read_text()
+    assert "71%" in page
