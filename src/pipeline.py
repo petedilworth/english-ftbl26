@@ -30,6 +30,7 @@ sys.path.insert(0, str(_SRC))
 import pandas as pd
 
 import aggregate
+import catchment
 import crosscheck
 import deductions
 import download
@@ -754,6 +755,10 @@ def run(
     # After club_master, since finances rows are validated against it.
     finances.seed_club_finances(conn, PROJECT_ROOT / "club_finances.csv")
     deductions.seed_points_deductions(conn, PROJECT_ROOT / "points_deductions.csv")
+    # Demographics are club-scoped, not season-scoped, so they seed here
+    # with the other reference data. The derived catchment is rebuilt
+    # after the standings load, since it reads each club's ceiling.
+    catchment.seed_msoa_demographics(conn, PROJECT_ROOT / "msoa_demographics.csv")
     resolver = entities.build_resolver(conn)
 
     if not skip_download:
@@ -826,6 +831,7 @@ def run(
     _apply_known_playoff_winners(conn)
 
     _flag_unreliable_tier5(conn)
+    catchment.rebuild_club_catchment(conn)
     trajectory.rebuild_trajectory(conn)
 
     crosscheck.run(conn, raw_dir)
