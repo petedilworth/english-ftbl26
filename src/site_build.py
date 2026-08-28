@@ -1354,6 +1354,7 @@ class SiteBuilder:
             by_tier=by_tier,
             az=sorted(az.items()),
             letters=sorted(az.keys()),
+            has_club_table=self._has_club_table(),
         )
 
     def build_chart(self) -> None:
@@ -1395,6 +1396,344 @@ class SiteBuilder:
             title="Trajectory chart",
             first_label=season_label(self.seasons[0]),
             last_label=season_label(self.seasons[-1]),
+        )
+
+    # Every column of the all-clubs table, in order: the key used to look
+    # the value up, the header, the group it belongs to, and whether it
+    # sorts as a number. Declared once so the header row, the cells and
+    # the group spans cannot drift apart.
+    CLUB_TABLE_COLUMNS = [
+        ("name", "Club", "", False),
+        ("season", "Season", "Where they finished", False),
+        ("overall", "Overall", "Where they finished", True),
+        ("division", "Division", "Where they finished", False),
+        ("place", "Place", "Where they finished", True),
+        ("natural_level", "Natural level", "Record", False),
+        ("streak", "Seasons at level", "Record", True),
+        ("tier1", "Top-flight seasons", "Record", True),
+        ("range", "Tier range", "Record", False),
+        ("promotions", "Promotions", "Record", True),
+        ("relegations", "Relegations", "Record", True),
+        ("yo_yo", "Yo-yo score", "Record", True),
+        ("first_season", "First recorded", "Record", True),
+        ("last_season", "Last recorded", "Record", True),
+        ("t1", "T1", "Seasons per tier", True),
+        ("t2", "T2", "Seasons per tier", True),
+        ("t3", "T3", "Seasons per tier", True),
+        ("t4", "T4", "Seasons per tier", True),
+        ("t5", "T5", "Seasons per tier", True),
+        ("t6", "T6", "Seasons per tier", True),
+        ("t7", "T7", "Seasons per tier", True),
+        ("tout", "Outside", "Seasons per tier", True),
+        ("founded", "Founded", "Club", True),
+        ("nickname", "Nickname", "Club", False),
+        ("stadium", "Ground", "Ground", False),
+        ("capacity", "Capacity", "Ground", True),
+        ("ground_years", "Years there", "Ground", True),
+        ("ground_ownership", "Ground owned", "Ground", False),
+        ("ownership_model", "Ownership", "Ownership", False),
+        ("owner", "Owner", "Ownership", False),
+        ("owner_since", "Since", "Ownership", True),
+        ("turnover", "Turnover", "accounts", True),
+        ("wages", "Wages", "accounts", True),
+        ("wage_ratio", "Wages \u00f7 rev", "accounts", True),
+        ("profit", "Profit before tax", "accounts", True),
+        ("net_debt", "Net debt", "accounts", True),
+        ("catchment", "Catchment", "Catchment", True),
+        ("catchment_ceiling", "At its ceiling", "Catchment", True),
+        ("catchment_income", "Household income", "Catchment", True),
+        ("contested", "Contested", "Catchment", True),
+        ("nearest", "Nearest club", "Catchment", False),
+        ("nearest_miles", "Miles", "Catchment", True),
+    ]
+
+    def _accounts_season(self) -> int | None:
+        """
+        The most recent season with filed accounts, which is not the most
+        recent season played. Clubs file months after the season ends, so
+        asking club_finances for the complete season returns nothing at
+        all - which is how Arsenal first came out with five blank columns.
+        """
+        try:
+            return self.conn.execute(
+                "SELECT MAX(season_end_year) FROM club_finances"
+                " WHERE disclosure = 'full'").fetchone()[0]
+        except sqlite3.Error:
+            return None
+
+    def _club_table_data(self, season: int) -> dict:
+        """
+        Everything the all-clubs table needs, loaded once rather than once
+        per club: 305 rows times six lookups is 1,800 queries for a page
+        that can be built from six.
+        """
+        conn = self.conn
+        trajectory = {r["club_id"]: r for r in conn.execute(
+            "SELECT * FROM club_trajectory")}
+
+        # A club's most recent season, and where it finished in it. The
+        # offset that turns a place in a division into a place on the
+        # ladder is per season, so it is computed once per season here
+        # rather than per club.
+        offsets: dict[tuple[int, int], int] = {}
+        for year, tier, n in conn.execute(
+                "SELECT season_end_year, tier, COUNT(*) FROM standings"
+                " GROUP BY 1, 2"):
+            offsets[(year, tier)] = n
+        cumulative: dict[tuple[int, int], int] = {}
+        for (year, tier) in offsets:
+            cumulative[(year, tier)] = sum(
+                n for (y, t), n in offsets.items() if y == year and t < tier)
+
+        latest: dict[str, dict] = {}
+        for row in conn.execute(
+                "SELECT club_id, season_end_year, tier, position, tier_position,"
+                " division_name FROM standings WHERE club_id IS NOT NULL"
+                " ORDER BY season_end_year"):
+            place = row[4] if row[4] is not None else row[3]
+            latest[row[0]] = {
+                "season": row[1], "tier": row[2], "place": row[3],
+                "division": row[5],
+                "overall": (place or 0) + cumulative.get((row[1], row[2]), 0),
+            }
+
+        finances = {}
+        accounts_season = self._accounts_season()
+        if accounts_season is not None:
+            for row in conn.execute(
+                    "SELECT club_id, turnover, staff_costs, profit_before_tax,"
+                    " net_debt FROM club_finances"
+                    " WHERE season_end_year = ? AND disclosure = 'full'",
+                    (accounts_season,)):
+                finances[row[0]] = row[1:]
+
+        catchment = {}
+        if self._has_catchment():
+            for row in conn.execute(
+                    "SELECT club_id, catchment_pop_current,"
+                    " catchment_pop_restored, catchment_income, contest_ratio,"
+                    " nearest_rival_id, nearest_rival_miles FROM club_catchment"):
+                catchment[row[0]] = row[1:]
+
+        grounds, names = {}, {}
+        for club_id, name, stadium in conn.execute(
+                "SELECT club_id, canonical_name, stadium_name FROM club_master"):
+            names[club_id] = name
+            if stadium:
+                grounds[club_id] = stadium
+
+        return {"trajectory": trajectory, "latest": latest,
+                "finances": finances, "accounts_season": accounts_season,
+                "catchment": catchment, "grounds": grounds, "names": names}
+
+    def _club_table_row(self, club_id: str, data: dict, season: int) -> list[dict]:
+        """One club's cells, in CLUB_TABLE_COLUMNS order."""
+        import json
+
+        def cell(text=None, sort=None, num=False, club_id=None):
+            # sort defaults to the text, and a missing value carries no
+            # sort key at all - the script puts those last in either
+            # direction rather than treating a blank as a zero.
+            return {"text": text, "sort": sort if sort is not None else text,
+                    "num": num, "club_id": club_id}
+
+        t = data["trajectory"].get(club_id)
+        recent = data["latest"].get(club_id, {})
+        facts = self.club_facts.get(club_id, {})
+        fin = data["finances"].get(club_id)
+        catch = data["catchment"].get(club_id)
+        names = data.get("names", {})
+
+        values = {
+            "name": cell(t["canonical_name"] if t else club_id, club_id=club_id),
+            "season": cell(season_label(recent["season"]) if recent else None,
+                           sort=recent.get("season")),
+            "overall": cell(recent.get("overall"), num=True),
+            "division": cell(recent.get("division")),
+            "place": cell(recent.get("place"), num=True),
+        }
+
+        if t:
+            span = None
+            if t["highest_tier"] is not None and t["lowest_tier"] is not None:
+                span = (str(t["highest_tier"]) if t["highest_tier"] == t["lowest_tier"]
+                        else f"{t['highest_tier']}\u2013{t['lowest_tier']}")
+            values.update({
+                "natural_level": cell(t["natural_level_label"]),
+                "streak": cell(t["current_tier_streak"], num=True),
+                "tier1": cell(t["seasons_in_tier1"], num=True),
+                # Sorted by how wide the range is, not by the text: "1-5"
+                # and "4-5" are not alphabetically meaningful.
+                "range": cell(span, sort=(None if span is None else
+                                          t["lowest_tier"] - t["highest_tier"])),
+                "promotions": cell(t["total_promotions"], num=True),
+                "relegations": cell(t["total_relegations"], num=True),
+                "yo_yo": cell(f"{t['yo_yo_score']:.2f}"
+                              if t["yo_yo_score"] is not None else None,
+                              sort=t["yo_yo_score"], num=True),
+                "first_season": cell(season_label(t["first_season_in_db"])
+                                     if t["first_season_in_db"] else None,
+                                     sort=t["first_season_in_db"], num=True),
+                "last_season": cell(season_label(t["last_season_in_db"])
+                                    if t["last_season_in_db"] else None,
+                                    sort=t["last_season_in_db"], num=True),
+            })
+            # A zero here is a fact - the club played no seasons at that
+            # level - so unlike everywhere else on this row it is shown
+            # and sorted rather than left blank.
+            spread = json.loads(t["tier_distribution"] or "{}")
+            for key, bucket in [("t1", "1"), ("t2", "2"), ("t3", "3"),
+                                ("t4", "4"), ("t5", "5"), ("t6", "6"),
+                                ("t7", "7"), ("tout", "outside")]:
+                values[key] = cell(spread.get(bucket, 0), num=True)
+
+        founded = facts.get("founded")
+        opened = facts.get("stadium_opened")
+        values.update({
+            "founded": cell(founded, num=True),
+            "nickname": cell(facts.get("nickname")),
+            "stadium": cell(facts.get("stadium")
+                            or data["grounds"].get(club_id)),
+            "capacity": cell(f"{facts['capacity']:,}" if facts.get("capacity")
+                             else None, sort=facts.get("capacity"), num=True),
+            "ground_years": cell(season - opened if opened else None, num=True),
+            "ground_ownership": cell(facts.get("stadium_ownership")),
+            "ownership_model": cell(
+                (facts.get("ownership_model") or "").replace("_", " ") or None),
+            "owner": cell(facts.get("owner")),
+            "owner_since": cell(facts.get("owner_since"), num=True),
+        })
+
+        if fin:
+            turnover, wages, profit, net_debt = fin
+            ratio = (wages / turnover) if turnover and wages else None
+            values.update({
+                "turnover": cell(_fmt_money(turnover) if turnover is not None
+                                 else None, sort=turnover, num=True),
+                "wages": cell(_fmt_money(wages) if wages is not None else None,
+                              sort=wages, num=True),
+                "wage_ratio": cell(f"{ratio:.0%}" if ratio is not None else None,
+                                   sort=ratio, num=True),
+                "profit": cell(_fmt_money(profit) if profit is not None else None,
+                               sort=profit, num=True),
+                "net_debt": cell(_fmt_money(net_debt) if net_debt is not None
+                                 else None, sort=net_debt, num=True),
+            })
+
+        if catch:
+            current, restored, income, contested, rival_id, miles = catch
+            values.update({
+                "catchment": cell(f"{current:,}" if current is not None else None,
+                                  sort=current, num=True),
+                "catchment_ceiling": cell(
+                    f"{restored:,}" if restored is not None else None,
+                    sort=restored, num=True),
+                "catchment_income": cell(
+                    f"\u00a3{income:,}" if income is not None else None,
+                    sort=income, num=True),
+                "contested": cell(f"{contested:.0%}" if contested is not None
+                                  else None, sort=contested, num=True),
+                "nearest": cell(names.get(rival_id, rival_id),
+                                club_id=rival_id if rival_id in self.club_pages
+                                else None),
+                "nearest_miles": cell(f"{miles:.1f}" if miles is not None else None,
+                                      sort=miles, num=True),
+            })
+
+        return [values.get(key, cell(num=num))
+                for key, _label, _group, num in self.CLUB_TABLE_COLUMNS]
+
+    def _has_club_table(self) -> bool:
+        """
+        Whether the all-clubs table gets built, which is the same question
+        as whether there is a complete season to anchor it to. Asked in
+        three places - the builder, the teams index and the insights index
+        - because a link to a page that was not built is the one thing
+        this site checks for on every build.
+        """
+        return self._complete_season() is not None
+
+    def build_club_table(self) -> None:
+        """
+        Every club and everything known about it, in one sortable table.
+
+        Two tables rather than one, because the rows would otherwise mean
+        different things in the same sort. The first is the last complete
+        season - _complete_season(), not the latest, which right now holds
+        only three divisions and no Arsenal - where every club has a real
+        position, division and place. The second is every other club on
+        record, each showing where it last finished and when. Chester's
+        2018/19 is not comparable with Arsenal's 2025/26 and one shared
+        ordering would say it is.
+
+        Runs after build_teams, which fills self.club_facts as it goes -
+        the front-matter is read once for the club pages and reused here.
+        """
+        if not self._has_club_table():
+            return
+        season = self._complete_season()
+
+        data = self._club_table_data(season)
+        current = {r[0] for r in self.conn.execute(
+            "SELECT DISTINCT club_id FROM standings"
+            " WHERE season_end_year = ? AND club_id IS NOT NULL", (season,))}
+
+        # Ordered by where they finished, and by name for the clubs whose
+        # last season is long past - the default has to mean something.
+        def rows_for(club_ids, key):
+            return [self._club_table_row(cid, data, season)
+                    for cid in sorted(club_ids, key=key)]
+
+        latest = data["latest"]
+        now_rows = rows_for(
+            [c for c in current if c in latest],
+            lambda c: latest[c]["overall"])
+        past = [c for c in data["trajectory"] if c not in current and c in latest]
+        gone_rows = rows_for(
+            past, lambda c: (-latest[c]["season"], latest[c]["overall"]))
+
+        # The season columns say something different in the second table,
+        # so its header does too.
+        # The accounts group is named for the season it holds rather than
+        # a year written into the column spec, which would be wrong the
+        # moment another year of filings lands.
+        accounts = data["accounts_season"]
+        group_labels = {"accounts": (f"{season_label(accounts)} accounts"
+                                     if accounts else "Accounts")}
+        columns = [{"key": k, "label": label,
+                    "group": group_labels.get(group, group), "num": num}
+                   for k, label, group, num in self.CLUB_TABLE_COLUMNS]
+        groups = []
+        for column in columns:
+            if groups and groups[-1]["label"] == column["group"]:
+                groups[-1]["span"] += 1
+            else:
+                groups.append({"label": column["group"], "span": 1})
+
+        self.render(
+            "club_table.html", self.out / "teams" / "table" / "index.html", 2,
+            title="All clubs, all data",
+            heading="All clubs, all data",
+            intro=(
+                f"Every club with a record here, and every column the data "
+                f"supports. Click a heading to sort by it. A blank is "
+                f"something not recorded rather than a zero, and blanks sort "
+                f"last whichever way the column is ordered."
+            ),
+            columns=columns,
+            groups=groups,
+            tables=[
+                {"heading": f"{season_label(season)}, the last complete season",
+                 "note": f"{len(now_rows)} clubs, each with a final position "
+                         f"in a season played to the end.",
+                 "rows": now_rows},
+                {"heading": "Every other club on record",
+                 "note": f"{len(gone_rows)} clubs, showing where each last "
+                         f"finished and when. These positions are from "
+                         f"different seasons and are not comparable with each "
+                         f"other.",
+                 "rows": gone_rows},
+            ],
         )
 
     def build_themes(self) -> None:
@@ -1661,6 +2000,16 @@ class SiteBuilder:
                 "path": catchment_path,
             })
 
+        # Not an insight and not a chart: the underlying data, for anyone
+        # who would rather sort it themselves than read an argument about
+        # it. Its own group so it is not mistaken for either.
+        data_tables = [{
+            "slug": "all-clubs",
+            "name": "All clubs, all data",
+            "sub": "Every column the data supports, sortable on any of them",
+            "path": "teams/table/index.html",
+        }] if self._has_club_table() else []
+
         groups = [g for g in (
             {"title": "Stories",
              "sub": "Arguments drawn from almost seventy years of league tables.",
@@ -1668,11 +2017,14 @@ class SiteBuilder:
             {"title": "Interactive charts",
              "sub": "Pick a metric and a season, then read the pyramid.",
              "entries": charts},
+            {"title": "The data itself",
+             "sub": "Sort it yourself.",
+             "entries": data_tables},
         ) if g["entries"]]
 
         self.render(
             "insights_index.html", self.out / "insights" / "index.html", 1,
-            title="Insights", groups=groups, entries=stories + charts,
+            title="Insights", groups=groups, entries=stories + charts + data_tables,
         )
         self._insight_yo_yo()
         self._insight_natural_level()
@@ -3803,6 +4155,7 @@ class SiteBuilder:
         self.build_seasons()
         self.build_divisions()
         self.build_teams()
+        self.build_club_table()  # after build_teams: reuses self.club_facts
         self.build_themes()   # after build_teams: consumes self.club_themes
         self.build_chart()
         self.build_matrix()

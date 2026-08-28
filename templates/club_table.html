@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>{{ heading }}</h1>
+<p class="subtitle">{{ intro }}</p>
+
+{% for table in tables %}
+<h2>{{ table.heading }}</h2>
+<p class="finance-note">{{ table.note }}</p>
+<div class="table-scroll">
+<table class="standings club-table sortable">
+  <thead>
+    <tr class="group-row">
+      {% for group in groups %}
+      <th colspan="{{ group.span }}">{{ group.label }}</th>
+      {% endfor %}
+    </tr>
+    <tr>
+      {% for col in columns %}
+      <th{% if col.num %} class="num"{% endif %} data-key="{{ col.key }}" tabindex="0" role="button">{{ col.label }}</th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in table.rows %}
+    <tr>
+      {% for cell in row %}
+      <td{% if cell.num %} class="num"{% endif %}{% if cell.sort is not none %} data-sort="{{ cell.sort }}"{% endif %}>
+        {%- if cell.club_id -%}
+        <a href="{{ root }}/team/{{ cell.club_id }}/">{{ cell.text }}</a>
+        {%- elif cell.text is not none -%}
+        {{ cell.text }}
+        {%- endif -%}
+      </td>
+      {% endfor %}
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>
+{% endfor %}
+
+<p class="finance-note">
+  Coverage is uneven and the blanks say where. Record, position and catchment
+  come from the database and cover every club that has one; the ground and
+  ownership columns come from the clubs with a written story, and the accounts
+  from the clubs whose filings have been collected.
+  <a href="{{ root }}/insights/catchment/method/">How catchment is measured</a>.
+</p>
+
+<script src="{{ root }}/static/club-table.js"></script>
+{% endblock %}

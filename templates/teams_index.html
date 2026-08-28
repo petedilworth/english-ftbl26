@@ -3,6 +3,10 @@
 <h1>Teams</h1>
 <p class="subtitle">{{ teams|length }} clubs to have played in Tiers 1–5 since 1958/59.</p>
 
+{% if has_club_table %}
+<p class="subtitle"><a href="{{ root }}/teams/table/">All clubs, all data</a> — every column in one sortable table.</p>
+{% endif %}
+
 <input class="search-input" id="team-search" type="search" placeholder="Search clubs…" autocomplete="off">
 
 <div class="az-nav">

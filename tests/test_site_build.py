@@ -1833,7 +1833,10 @@ def test_insights_index_groups_and_has_no_duplicate_targets(tmp_path, monkeypatc
     # One tile for all five financial metrics, not five.
     assert sum(1 for p in paths if "finances/" in p) == 1
     for path in paths:
-        assert (out / "insights" / path.removeprefix("../insights/")).exists(), path
+        # Resolved rather than prefix-stripped: a tile may point outside
+        # /insights/ - the all-clubs table lives under /teams/ - and the
+        # check is that the page exists, not that it is a sibling.
+        assert (out / "insights" / path).resolve().exists(), path
 
 
 # ── Incomplete source data must not become a record ──────────────────────
