@@ -11,6 +11,8 @@ from pathlib import Path
 import requests
 import urllib3
 
+import divisions
+
 # football-data.co.uk's certificate chain trips some Windows/Anaconda setups;
 # verification is disabled for this one known host.
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
@@ -22,7 +24,10 @@ BASE_URL = "https://www.football-data.co.uk/mmz4281"
 # Tier 5 (EC = Conference/National League) data starts 2005/06 on the site
 TIER5_FIRST_SEASON = 2006
 
-TIER_TO_CODE = {1: "E0", 2: "E1", 3: "E2", 4: "E3", 5: "EC"}
+# From the registry, so a division added there without a source_code is
+# simply not fetched rather than fetched from a code somebody invented.
+TIER_TO_CODE = {d.tier: d.source_code for d in divisions.DIVISIONS
+                if d.source_code is not None}
 
 # Inverse lookup, used to check a CSV really is the division we asked for.
 CODE_TO_TIER = {code: tier for tier, code in TIER_TO_CODE.items()}

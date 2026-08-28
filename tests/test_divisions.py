@@ -1,0 +1,177 @@
+import sqlite3
+import sys
+from pathlib import Path
+
+import pytest
+
+sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
+
+import divisions
+
+PROJECT_ROOT = Path(__file__).parent.parent
+DB = PROJECT_ROOT / "data" / "db" / "england.db"
+
+
+# ── the registry ───────────────────────────────────────────────────────
+
+def test_every_division_id_is_unique_and_slug_shaped():
+    ids = [d.division_id for d in divisions.DIVISIONS]
+    assert len(ids) == len(set(ids))
+    for division_id in ids:
+        assert division_id == division_id.lower()
+        assert " " not in division_id
+        assert not division_id.startswith("-") and not division_id.endswith("-")
+
+
+def test_the_existing_urls_are_the_division_ids():
+    """
+    The site has published /division/<slug>/ for years. The id is that
+    slug, which is what makes adding the column a change no reader sees.
+    """
+    for tier, slug in [(1, "premier-league"), (2, "championship"),
+                       (3, "league-one"), (4, "league-two"),
+                       (5, "national-league")]:
+        division = divisions.BY_ID[slug]
+        assert division.tier == tier
+        assert divisions.sole_division(tier) is division
+
+
+def test_two_divisions_at_one_level_are_coloured_the_same():
+    """They are the same level. Colouring them apart would say otherwise."""
+    for tier in divisions.tiers():
+        colors = {d.color for d in divisions.by_tier(tier)}
+        assert len(colors) == 1, f"tier {tier} has {len(colors)} colours"
+
+
+def test_a_tier_with_parallel_divisions_has_no_sole_division():
+    assert divisions.sole_division(6) is None
+    assert len(divisions.by_tier(6)) == 2
+    assert len(divisions.by_tier(7)) == 4
+
+
+def test_only_the_downloadable_divisions_carry_a_source_code():
+    """
+    There is no match-level feed below the fifth tier, so a source_code
+    there would send download_all after a file that does not exist.
+    """
+    for division in divisions.DIVISIONS:
+        if division.tier <= 5:
+            assert division.source_code, division.division_id
+        else:
+            assert division.source_code is None, division.division_id
+
+
+def test_the_download_codes_come_from_the_registry():
+    import download
+    assert download.TIER_TO_CODE == {1: "E0", 2: "E1", 3: "E2", 4: "E3", 5: "EC"}
+
+
+# ── the shipped database ───────────────────────────────────────────────
+
+def _conn():
+    if not DB.exists():
+        pytest.skip("no built database")
+    return sqlite3.connect(DB)
+
+
+def test_every_standings_row_knows_its_division():
+    conn = _conn()
+    assert conn.execute(
+        "SELECT COUNT(*) FROM standings WHERE division_id IS NULL").fetchone()[0] == 0
+
+
+def test_no_row_claims_a_division_from_another_tier():
+    conn = _conn()
+    wrong = [
+        (division_id, tier) for division_id, tier in conn.execute(
+            "SELECT DISTINCT division_id, tier FROM standings")
+        if division_id not in divisions.BY_ID
+        or divisions.BY_ID[division_id].tier != tier
+    ]
+    assert not wrong, f"division_id disagrees with tier: {wrong}"
+
+
+def test_tier_position_equals_position_while_every_tier_is_one_division():
+    """
+    The invariant that makes the ladder's switch from position to
+    tier_position provably a no-op. It stops holding the day a tier gains
+    a second division, and this test should then be narrowed to the tiers
+    that still have one - not deleted.
+    """
+    conn = _conn()
+    for (tier,) in conn.execute("SELECT DISTINCT tier FROM standings"):
+        if divisions.sole_division(tier) is None:
+            continue
+        mismatched = conn.execute(
+            "SELECT COUNT(*) FROM standings WHERE tier = ?"
+            " AND tier_position <> position", (tier,)).fetchone()[0]
+        assert mismatched == 0, f"tier {tier}"
+
+
+def test_every_level_is_numbered_from_one_with_no_gaps():
+    """
+    A club's place on the ladder is its tier_position plus everyone
+    above, so a level that skips a number leaves a hole in the ladder and
+    one that repeats puts two clubs in the same place.
+    """
+    conn = _conn()
+    for season, tier in conn.execute(
+            "SELECT DISTINCT season_end_year, tier FROM standings"):
+        places = sorted(r[0] for r in conn.execute(
+            "SELECT tier_position FROM standings"
+            " WHERE season_end_year = ? AND tier = ?", (season, tier)))
+        assert places == list(range(1, len(places) + 1)), f"{season} tier {tier}"
+
+
+def test_the_era_tiebreak_reaches_the_seasons_it_applies_to():
+    """
+    The Football League put goals scored ahead of goal difference from
+    1992/93 to 1998/99, and twenty-one rows in tiers 2 and 3 were still
+    ordered on goal difference - written before the rule was coded and
+    never re-ingested, because those seasons' raw files are no longer on
+    disk. Two clubs level on points in those seasons must now be ordered
+    on goals scored.
+    """
+    conn = _conn()
+    wrong = []
+    for season in range(1993, 2000):
+        for tier in (2, 3, 4):
+            rows = conn.execute(
+                "SELECT club_name, position, points, gf FROM standings"
+                " WHERE season_end_year = ? AND tier = ? ORDER BY position",
+                (season, tier)).fetchall()
+            for above, below in zip(rows, rows[1:]):
+                if above[2] == below[2] and above[3] < below[3]:
+                    wrong.append((season, tier, above[0], below[0]))
+    assert not wrong, f"level on points but ordered against goals scored: {wrong}"
+
+
+# ── the delete bug ─────────────────────────────────────────────────────
+
+def test_loading_one_division_does_not_delete_its_neighbour():
+    """
+    The single most dangerous line in the tier-6 work. Replacing a
+    season's rows keyed on the TIER wipes the other division of that tier
+    - silently, because neither table is malformed and no constraint is
+    violated. Keyed on the division, it does not.
+    """
+    conn = sqlite3.connect(":memory:")
+    conn.execute("CREATE TABLE standings (season_end_year INT, tier INT,"
+                 " division_id TEXT, club_name TEXT)")
+    conn.executemany(
+        "INSERT INTO standings VALUES (?,?,?,?)",
+        [(2027, 6, "national-league-north", "Chester"),
+         (2027, 6, "national-league-north", "Buxton"),
+         (2027, 6, "national-league-south", "Maidstone United"),
+         (2027, 6, "national-league-south", "Chelmsford City")],
+    )
+
+    conn.execute(
+        "DELETE FROM standings WHERE season_end_year = ? AND tier = ?"
+        " AND (division_id = ? OR (division_id IS NULL AND ? IS NULL))",
+        (2027, 6, "national-league-south", "national-league-south"),
+    )
+
+    survivors = {r[0] for r in conn.execute(
+        "SELECT division_id FROM standings WHERE season_end_year = 2027")}
+    assert survivors == {"national-league-north"}

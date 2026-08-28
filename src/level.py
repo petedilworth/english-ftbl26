@@ -44,7 +44,30 @@ from dataclasses import dataclass
 TIER5_FIRST_SEASON = 1980
 
 # The bucket for seasons inside a club's window with no standings row.
-OUTSIDE = 6
+#
+# 99 rather than 6, because tier 6 is a real level of English football and
+# a sentinel that collides with one is a sentinel that lies. The value is
+# PERSISTED - club_trajectory stores it in natural_level_tier,
+# recent_level_tier and natural_level_second_tier - so changing it and
+# rebuilding the trajectory table must happen while no tier-6 standings
+# row exists. In the other order a stored 6 is permanently ambiguous
+# between "outside the pyramid" and "sixth tier", and nothing can tell
+# them apart afterwards.
+OUTSIDE = 99
+
+# The rungs a club's season can land on, in order, ending with the one
+# below the bottom of the recorded pyramid.
+#
+# Span and adjacency are measured along THIS LIST rather than by
+# arithmetic on the numbers, so the sentinel's value stops mattering to
+# either. Tier 5 and "outside" are adjacent because they are neighbours on
+# the ladder, which is what the code always meant - it used to be true
+# only by the accident of the sentinel being 6.
+#
+# Add 6 and 7 when those tiers gain standings rows. tests/test_level.py
+# asserts this covers every tier the database holds, so forgetting is not
+# possible.
+BUCKET_LADDER = [1, 2, 3, 4, 5, OUTSIDE]
 
 # Below these, a computed level is noise: one National League cameo would
 # otherwise read as a confident "National League club".
@@ -66,6 +89,10 @@ TIER_NAMES = {
     3: "League One",
     4: "League Two",
     5: "National League",
+    # Below here a tier is more than one division, so the name is the
+    # level rather than a competition anyone enters.
+    6: "National League North & South",
+    7: "Step 3",
 }
 OUTSIDE_NAME = "non-league"
 OUTSIDE_NAME_AMBIGUOUS = "outside the recorded divisions"
@@ -123,9 +150,15 @@ def window_buckets(tiers_by_year: dict[int, int]) -> list[int]:
 
 
 def distribution(buckets: list[int]) -> dict[str, int]:
-    """Counts per bucket, JSON-ready with string keys."""
-    counts = {str(t): 0 for t in TIER_NAMES}
-    counts["outside"] = 0
+    """
+    Counts per bucket, JSON-ready with string keys.
+
+    Keyed on BUCKET_LADDER rather than TIER_NAMES, which holds names for
+    tiers the standings do not yet reach: naming a level and recording
+    seasons in it are different things, and only the second belongs in a
+    club's distribution.
+    """
+    counts = {("outside" if b == OUTSIDE else str(b)): 0 for b in BUCKET_LADDER}
     for b in buckets:
         key = "outside" if b == OUTSIDE else str(b)
         counts[key] = counts.get(key, 0) + 1
@@ -162,7 +195,11 @@ def _spread(buckets: list[int]) -> int:
     for b in buckets:
         counts[b] = counts.get(b, 0) + 1
     repeated = [b for b, n in counts.items() if n >= 2]
-    return (max(repeated) - min(repeated) + 1) if repeated else 1
+    # Measured in rungs of BUCKET_LADDER, not in bucket numbers: with the
+    # sentinel at 99 the arithmetic would otherwise report a club that
+    # yo-yos in and out of the League as spanning ninety-nine divisions.
+    rungs = [BUCKET_LADDER.index(b) for b in repeated if b in BUCKET_LADDER]
+    return (max(rungs) - min(rungs) + 1) if rungs else 1
 
 
 def _adjacent(counts: dict[int, int], primary: int, n: int) -> tuple[int | None, float]:
@@ -171,7 +208,13 @@ def _adjacent(counts: dict[int, int], primary: int, n: int) -> tuple[int | None,
     the higher division (lower number) rather than falling out of dict order.
     """
     best, best_share = None, 0.0
-    for candidate in (primary - 1, primary + 1):
+    if primary not in BUCKET_LADDER:
+        return best, best_share
+    here = BUCKET_LADDER.index(primary)
+    for rung in (here - 1, here + 1):
+        if not 0 <= rung < len(BUCKET_LADDER):
+            continue
+        candidate = BUCKET_LADDER[rung]
         share = counts.get(candidate, 0) / n
         if share > best_share:
             best, best_share = candidate, share

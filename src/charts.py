@@ -18,6 +18,8 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
+import divisions
+
 logger = logging.getLogger(__name__)
 
 COLORS = ("#2166ac", "#e08214")
@@ -31,13 +33,9 @@ DOWN = "#b3261e"
 # Mirrors static/style.css's --tier-1..--tier-5, for the same reason MUTED/
 # LINE/INK do: matplotlib can't read CSS custom properties, so this is kept
 # in sync by hand.
-TIER_COLORS = {
-    1: "#5e35b1",
-    2: "#1e88e5",
-    3: "#43a047",
-    4: "#fb8c00",
-    5: "#e53935",
-}
+# One colour per level, from the registry. Two divisions at the same
+# level get the same colour, because they are the same level.
+TIER_COLORS = dict(divisions.TIER_COLORS)
 
 
 def tier_floors(conn: sqlite3.Connection) -> tuple[dict[int, list[int]], int]:
@@ -74,15 +72,40 @@ def tier_floors(conn: sqlite3.Connection) -> tuple[dict[int, list[int]], int]:
     return floors_by_year, max_pos
 
 
+def _ladder_position(conn: sqlite3.Connection) -> str:
+    """
+    The SQL for a club's place within its level.
+
+    tier_position where the database has it, position where it does not.
+    The committed database file predates the column and so do the test
+    fixtures, and both describe a pyramid of one division per tier, where
+    a club's position IS its place in the level - so the fallback is a
+    fact about those databases rather than a guess.
+    """
+    columns = {r[1] for r in conn.execute("PRAGMA table_info(standings)")}
+    return ("COALESCE(s.tier_position, s.position)"
+            if "tier_position" in columns else "s.position")
+
+
 def overall_positions(
     conn: sqlite3.Connection, club_id: str
 ) -> list[tuple[int, int, str | None]]:
     """
-    A club's overall position per season: league position plus the number
-    of clubs in higher tiers that season (league sizes varied over time,
-    so the offset is computed per season rather than assumed). Each point
-    also carries an event marker, "promoted" or "relegated" or None,
-    derived from the (already-reconciled) standings.status column.
+    A club's overall position per season: place within its LEVEL plus the
+    number of clubs in higher tiers that season (league sizes varied over
+    time, so the offset is computed per season rather than assumed). Each
+    point also carries an event marker, "promoted" or "relegated" or
+    None, derived from the (already-reconciled) standings.status column.
+
+    tier_position, not position: a tier can hold more than one division,
+    and two divisions each numbering from 1 would put two clubs in the
+    same place on the ladder. For every tier that is one division the two
+    columns hold the same number, which is what makes this line safe to
+    change - see pipeline._rebuild_tier_positions.
+
+    COALESCE because the fallback is not a guess: a database that has not
+    been through the rebuild has one division per tier by construction,
+    and there the club's position IS its place in the level.
 
     A Tier 1 "Champions" is a title, not a promotion - there's no tier
     above the Premier League to move up into - so it does not count as
@@ -90,9 +113,9 @@ def overall_positions(
     fix club_trajectory's promotion count.
     """
     rows = conn.execute(
-        """
+        f"""
         SELECT s.season_end_year,
-               s.position + (
+               {_ladder_position(conn)} + (
                    SELECT COUNT(*) FROM standings s2
                    WHERE s2.season_end_year = s.season_end_year
                      AND s2.tier < s.tier

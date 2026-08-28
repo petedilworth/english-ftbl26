@@ -33,6 +33,7 @@ import aggregate
 import catchment
 import crosscheck
 import deductions
+import divisions
 import download
 import entities
 import finances
@@ -47,6 +48,7 @@ CREATE_STANDINGS_SQL = """
 CREATE TABLE IF NOT EXISTS standings (
     season_end_year  INT  NOT NULL,
     tier             INT  NOT NULL,
+    division_id      TEXT,
     division_name    TEXT,
     club_id          TEXT,
     club_name        TEXT NOT NULL,
@@ -82,15 +84,28 @@ CREATE TABLE IF NOT EXISTS matches (
 """
 
 STANDINGS_STAT_COLUMNS = ["played", "won", "drawn", "lost", "gf", "ga", "gd",
-                          "data_complete", "points_deducted"]
+                          "data_complete", "points_deducted",
+                          # Where the club finished across its whole LEVEL
+                          # rather than its own division. The two are the
+                          # same number for every tier that is one
+                          # division, which is every tier so far.
+                          "tier_position"]
+
+# Which division within the tier. TEXT rather than INT, and separate from
+# the numeric columns above because the migration types them.
+STANDINGS_TEXT_COLUMNS = ["division_id"]
 
 
 def _migrate_standings_columns(conn: sqlite3.Connection) -> None:
-    """Add stat columns to standings tables created before they existed."""
+    """Add columns to standings tables created before they existed."""
     existing = {row[1] for row in conn.execute("PRAGMA table_info(standings)")}
     for col in STANDINGS_STAT_COLUMNS:
         if col not in existing:
             conn.execute(f"ALTER TABLE standings ADD COLUMN {col} INT")
+            logger.info("Migrated standings table: added column %s", col)
+    for col in STANDINGS_TEXT_COLUMNS:
+        if col not in existing:
+            conn.execute(f"ALTER TABLE standings ADD COLUMN {col} TEXT")
             logger.info("Migrated standings table: added column %s", col)
     conn.commit()
 
@@ -241,6 +256,11 @@ def _process_season(
         standings_df, season_end_year, tier, is_complete=is_complete
     )
     source = _build_source(season_end_year, tier, is_historical)
+    # Every tier this path ingests has exactly one division, so its id is
+    # not a decision anybody has to make. A tier with several would have
+    # to say which, and would come in through its own loader.
+    division = divisions.sole_division(tier)
+    division_id = division.division_id if division else None
 
     rows = []
     for _, row in standings_df.iterrows():
@@ -253,6 +273,7 @@ def _process_season(
         rows.append((
             int(row["season_end_year"]),
             int(row["tier"]),
+            division_id,
             row["division_name"],
             club_id,
             raw_name,
@@ -287,17 +308,22 @@ def _process_season(
     try:
         # Replace the season wholesale rather than upserting: a club dropping
         # out of a re-parsed table would otherwise leave a stale row behind.
+        # By DIVISION, not by tier. Once a tier holds more than one, a
+        # delete keyed on the tier wipes the division loaded a moment
+        # earlier - silently, because there is nothing wrong with either
+        # table on its own and no constraint is violated.
         conn.execute(
-            "DELETE FROM standings WHERE season_end_year = ? AND tier = ?",
-            (season_end_year, tier),
+            "DELETE FROM standings WHERE season_end_year = ? AND tier = ?"
+            " AND (division_id = ? OR (division_id IS NULL AND ? IS NULL))",
+            (season_end_year, tier, division_id, division_id),
         )
         conn.executemany(
             """
             INSERT OR REPLACE INTO standings
-                (season_end_year, tier, division_name, club_id, club_name,
-                 position, played, won, drawn, lost, gf, ga, gd,
+                (season_end_year, tier, division_id, division_name, club_id,
+                 club_name, position, played, won, drawn, lost, gf, ga, gd,
                  points, status, source)
-            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
             """,
             rows,
         )
@@ -400,6 +426,151 @@ def _rerank_curtailed_divisions(conn: sqlite3.Connection) -> None:
         "Curtailed divisions: %d of %d needed re-ranking",
         changed, len(aggregate.CURTAILED_BY_PPG),
     )
+
+
+def _backfill_division_ids(conn: sqlite3.Connection) -> None:
+    """
+    Give every standings row the id of the division it was played in.
+
+    Rows written before the column existed have none, and they cannot
+    simply be re-ingested: with --skip-download the raw files for most
+    seasons are not on disk, so the committed database is the only copy.
+    Backfilling is safe precisely because every tier that has rows today
+    has exactly one division, so no row needs anybody to decide which.
+
+    A tier with several divisions is left alone: its rows must carry the
+    id they were loaded with, and a guess here would put clubs in the
+    wrong table.
+    """
+    filled = 0
+    for (tier,) in conn.execute("SELECT DISTINCT tier FROM standings"):
+        division = divisions.sole_division(tier)
+        if division is None:
+            continue
+        cur = conn.execute(
+            "UPDATE standings SET division_id = ? WHERE tier = ? AND division_id IS NULL",
+            (division.division_id, tier),
+        )
+        filled += cur.rowcount
+    conn.commit()
+    if filled:
+        logger.info("Backfilled division_id on %d standings row(s)", filled)
+
+    orphans = conn.execute(
+        "SELECT COUNT(*) FROM standings WHERE division_id IS NULL").fetchone()[0]
+    if orphans:
+        logger.warning("%d standings row(s) still have no division_id", orphans)
+
+
+def _rerank_stale_divisions(conn: sqlite3.Connection) -> None:
+    """
+    Re-rank any table whose stored order disagrees with the era's rules.
+
+    The same idea as _rerank_curtailed_divisions and for the same reason:
+    the committed database holds rows written by older code, most of them
+    from seasons whose raw files are no longer on disk, so a rule added
+    after they were ingested never reached them. Re-ranking from the
+    stored rows on every run fixes that and is a no-op once fixed.
+
+    What it found: twenty-one rows across 1993/94 to 1998/99 in tiers 2
+    and 3, ordered on goal difference where the Football League put goals
+    scored first. That rule is not decorative - it is the one that made
+    Wigan champions of the Third Division in 1996/97 ahead of Fulham, who
+    had the better goal difference.
+    """
+    changed = 0
+    for season, tier in conn.execute(
+            "SELECT DISTINCT season_end_year, tier FROM standings"
+            " ORDER BY season_end_year, tier").fetchall():
+        if len(divisions.by_tier(tier)) > 1:
+            # A merged tier's own tables are ranked by their loader; this
+            # function cannot tell which division a row belongs to from
+            # the whole-tier query it would have to run.
+            continue
+        table = pd.read_sql_query(
+            "SELECT rowid, club_name, position, points, gd, gf, ga, played"
+            " FROM standings WHERE season_end_year = ? AND tier = ?",
+            conn, params=(season, tier),
+        )
+        if table.empty:
+            continue
+        was = dict(zip(table["rowid"], table["position"]))
+        ranked = aggregate.rank_standings(table, tier, season)
+        moved = [(r["club_name"], was[int(r["rowid"])], int(r["position"]))
+                 for _, r in ranked.iterrows()
+                 if was[int(r["rowid"])] != int(r["position"])]
+        if not moved:
+            continue
+        conn.executemany(
+            "UPDATE standings SET position = ? WHERE rowid = ?",
+            [(int(r["position"]), int(r["rowid"])) for _, r in ranked.iterrows()],
+        )
+        changed += len(moved)
+        logger.info(
+            "%d tier %d re-ranked on the era's tiebreak: %s",
+            season, tier,
+            ", ".join(f"{name} {old}->{now}" for name, old, now in moved),
+        )
+    if changed:
+        conn.commit()
+        logger.info("Re-ranked %d stale standings row(s)", changed)
+
+
+def _rebuild_tier_positions(conn: sqlite3.Connection) -> None:
+    """
+    Where each club finished across its whole LEVEL, not its own division.
+
+    A tier of one division has nothing to merge, so tier_position is the
+    position the club already has - which is every tier so far, and which
+    is what makes this safe to run over the whole history. Where a tier
+    holds several divisions, National League North and South at the
+    sixth, the clubs of all of them are ranked together on points so that
+    the level has a single ordering.
+
+    That single ordering is what the rest of the site assumes. A club's
+    place on the ladder is its position plus everyone above it, which
+    needs the position to be unique within a season and a tier; two
+    divisions each numbering 1 to 24 would put two clubs in the same
+    place and leave the bottom half of the level unreachable.
+
+    The merge is aggregate.rank_standings, the same function that orders
+    an ordinary table, so it inherits the era's tiebreak and the
+    points-per-game rule for a curtailed season rather than reimplementing
+    either. It runs after the deductions, so a sanction moves a club down
+    the level as well as down its own table.
+
+    WHAT THIS DOES NOT CLAIM. Clubs in parallel divisions never play each
+    other, so ordering them against each other on points is a comparison
+    the fixtures never made. It can put a champion below a mid-table club
+    from the other division. That is a property of ranking on points, and
+    it belongs on the division pages rather than in a quiet patch here.
+    """
+    merged = 0
+    for season, tier in conn.execute(
+            "SELECT DISTINCT season_end_year, tier FROM standings"
+            " ORDER BY season_end_year, tier").fetchall():
+        if len(divisions.by_tier(tier)) <= 1:
+            conn.execute(
+                "UPDATE standings SET tier_position = position"
+                " WHERE season_end_year = ? AND tier = ?", (season, tier))
+            continue
+        table = pd.read_sql_query(
+            "SELECT rowid, club_name, position, points, gd, gf, ga, played"
+            " FROM standings WHERE season_end_year = ? AND tier = ?",
+            conn, params=(season, tier),
+        )
+        if table.empty:
+            continue
+        ranked = aggregate.rank_standings(table, tier, season)
+        conn.executemany(
+            "UPDATE standings SET tier_position = ? WHERE rowid = ?",
+            [(int(r["position"]), int(r["rowid"])) for _, r in ranked.iterrows()],
+        )
+        merged += 1
+
+    conn.commit()
+    if merged:
+        logger.info("Merged %d tier-season(s) across parallel divisions", merged)
 
 
 def _apply_points_deductions(conn: sqlite3.Connection) -> None:
@@ -829,8 +1000,12 @@ def run(
     # Before reconciliation: with the deduction applied the positional
     # rules are usually right on their own, leaving reconciliation to do
     # what only it can - play-off losers, reprieves, expulsions.
+    _backfill_division_ids(conn)
     _rerank_curtailed_divisions(conn)
+    _rerank_stale_divisions(conn)
     _apply_points_deductions(conn)
+    # After the deductions, so a sanction moves a club down the level too.
+    _rebuild_tier_positions(conn)
     _reconcile_statuses(conn)
     _apply_known_playoff_winners(conn)
 

@@ -2,7 +2,11 @@ import json
 import sys
 from pathlib import Path
 
+import pytest
+
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
+
+import level
 
 from level import (
     MIN_RECORDED,
@@ -218,3 +222,71 @@ def test_the_matches_the_sites_existing_division_phrasing():
     assert the(1) == "the Premier League"
     assert the(3) == "League One"          # bare, as digest.narrative does
     assert the(5) == "the National League"
+
+
+# ── the sentinel and the ladder ────────────────────────────────────────
+
+def test_the_outside_sentinel_cannot_collide_with_a_real_tier():
+    """
+    OUTSIDE was 6 until tier 6 became a real level of this site. The
+    value is persisted in club_trajectory, so a collision would make a
+    stored 6 permanently ambiguous between "outside the pyramid" and
+    "sixth tier" - unrecoverable, because nothing distinguishes them.
+    """
+    assert level.OUTSIDE not in level.BUCKET_LADDER[:-1]
+    assert level.BUCKET_LADDER[-1] == level.OUTSIDE
+    assert level.OUTSIDE > 20, "the sentinel must sort below any real tier"
+
+
+def test_the_ladder_covers_every_tier_the_database_holds():
+    """
+    The forcing function for adding a tier. A tier with standings rows but
+    no rung is invisible to _spread and _adjacent, and is dropped from the
+    distribution bar while still counting in its denominator - so every
+    share on that panel would be wrong, quietly.
+    """
+    import sqlite3
+    db = Path(__file__).parent.parent / "data" / "db" / "england.db"
+    if not db.exists():
+        pytest.skip("no built database")
+    tiers = {t for (t,) in sqlite3.connect(db).execute(
+        "SELECT DISTINCT tier FROM standings")}
+    missing = sorted(tiers - set(level.BUCKET_LADDER))
+    assert not missing, f"tiers with no rung on the ladder: {missing}"
+
+
+def test_every_rung_has_a_name():
+    for bucket in level.BUCKET_LADDER:
+        if bucket == level.OUTSIDE:
+            continue
+        assert bucket in level.TIER_NAMES
+
+
+def test_span_is_measured_in_rungs_not_in_bucket_numbers():
+    """
+    With the sentinel at 99, arithmetic on the numbers would report a club
+    that yo-yos in and out of the League as spanning ninety-nine
+    divisions, which clears every "whole-pyramid range" test there is.
+    """
+    yo_yo = [5, 5, 5, level.OUTSIDE, level.OUTSIDE, 5, level.OUTSIDE]
+    assert level._spread(yo_yo) == 2
+
+    top_to_bottom = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5]
+    assert level._spread(top_to_bottom) == 5
+
+
+def test_the_bottom_tier_and_outside_are_still_neighbours():
+    """
+    They were adjacent only by the accident of the sentinel being one
+    more than the bottom tier. The ladder makes it deliberate, which is
+    what keeps "National League / non-league yo-yo" working.
+    """
+    counts = {5: 6, level.OUTSIDE: 4}
+    neighbour, share = level._adjacent(counts, 5, 10)
+    assert neighbour == level.OUTSIDE
+    assert share == pytest.approx(0.4)
+
+
+def test_the_top_tier_has_only_one_neighbour():
+    counts = {1: 8, 2: 2}
+    assert level._adjacent(counts, 1, 10) == (2, pytest.approx(0.2))
