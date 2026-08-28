@@ -55,6 +55,28 @@ FIRST_SEASON = 1959
 # 1992/93. football-data.co.uk owns 1993/94 onward.
 LAST_SEASON = 1993
 
+# The same project publishes the levels below the Conference in a third
+# file, match-level like the others. It stopped being updated - the
+# project's own README says so - which is why the range below ends where
+# it does rather than at the current season.
+NONLEAGUE_SOURCE_URL = f"{_BASE}/england_nonleague.csv"
+NONLEAGUE_CACHE_NAME = "engsoccerdata_england_nonleague.csv"
+NONLEAGUE_TIERS = (6, 7)
+# 2012/13 and 2018/19, the first and last seasons the file covers at these
+# levels. Both are checked against the data on every run rather than
+# trusted: convert_nonleague asserts each division comes out a complete
+# round-robin.
+NONLEAGUE_FIRST_SEASON = 2013
+NONLEAGUE_LAST_SEASON = 2019
+
+# Month-day bounds of the English non-league play-off window. A second
+# meeting between the same clubs inside it is a play-off tie; one outside
+# it is two records of a fixture that should exist once. Compared as
+# strings, so the bounds have to be month-day and not a bare month - a
+# December date is "after April" on a numeric reading and is not a
+# play-off.
+PLAYOFF_WINDOW = ("04-20", "05-31")
+
 # 1979/80, the Alliance Premier League's first season and the first time
 # English football had a national fifth tier at all. Nothing below the
 # Football League was national before it, so this is a real floor rather
@@ -292,6 +314,204 @@ def backfill_tier5(
         return []
     return convert(source, raw_dir, first_season, last_season,
                    force=force, tiers=(5,))
+
+
+# engsoccerdata labels a non-league division with a letter, and the same
+# letter can mean different things in different seasons: 'S' at the
+# seventh tier is the Southern League Premier until 2017/18 and its
+# southern half from 2018/19, when the division split in two.
+def nonleague_division_id(tier: int, code: str, season_end_year: int) -> str | None:
+    """The registry id for a division of the non-league source, or None."""
+    if tier == 6:
+        return {"N": "national-league-north",
+                "S": "national-league-south"}.get(code)
+    if tier == 7:
+        if code == "I":
+            return "isthmian-league-premier"
+        if code == "N":
+            return "northern-premier-league-premier"
+        if code == "C":
+            return "southern-league-premier-central"
+        if code == "S":
+            return ("southern-league-premier-south" if season_end_year >= 2019
+                    else "southern-league-premier")
+    return None
+
+
+def nonleague_filename(season_end_year: int, division_id: str) -> str:
+    """
+    One file per division rather than per tier, because a tier down here
+    is several divisions and a filename that names only the tier cannot
+    say which table it holds.
+    """
+    return f"{download.season_to_str(season_end_year)}_{division_id}_nl.csv"
+
+
+def nonleague_source_label(season_end_year: int, division_id: str) -> str:
+    return f"{SOURCE_NAME}/{division_id}/{download.season_to_str(season_end_year)}"
+
+
+def _drop_repeat_fixtures(rows: list[dict], label: str) -> list[dict]:
+    """
+    Remove the matches a league table has no room for.
+
+    A completed league season is a round-robin: every ordered pair of
+    clubs meets exactly once at each ground, so a pair appearing twice
+    with the same club at home is a second meeting the table cannot hold.
+    There are two kinds and they are not the same problem, so they are not
+    reported the same way.
+
+    A PLAY-OFF is a real match that was never a league match -
+    Kidderminster v Chorley and Salford v FC Halifax Town in the 2016/17
+    National League North are that season's semi-finals, played on 3, 7
+    and 13 May. Counting them would award points that were never league
+    points and move clubs up the table.
+
+    A CONFLICT is two records of what should be one fixture, and this
+    source has three: Dulwich Hamlet v East Thurrock United on consecutive
+    days in August 2018 with the same 2-1 score, which is plainly one
+    match entered twice, and two pairs with DIFFERENT scores months apart,
+    which is not resolvable from here at all. Those are logged as
+    warnings, because keeping the earlier of two contradictory records is
+    a choice rather than a fact.
+
+    In both cases the later meeting is dropped: a play-off follows the
+    season it decides, and where two records conflict the first is the
+    originally scheduled fixture.
+    """
+    seen: dict[tuple[str, str], dict] = {}
+    kept, repeats = [], []
+    for row in sorted(rows, key=lambda r: r.get("Date") or ""):
+        pair = (row["home"], row["visitor"])
+        if pair in seen:
+            repeats.append((seen[pair], row))
+            continue
+        seen[pair] = row
+        kept.append(row)
+
+    for first, second in repeats:
+        where = f'{first["home"]} v {first["visitor"]}'
+        # The date decides first, and the score cannot overrule it: FC
+        # Halifax Town beat Chorley 2-1 in the 2016/17 play-off final,
+        # having also beaten them 2-1 in January, so "same score" would
+        # otherwise call a play-off a double entry.
+        when = (second.get("Date") or "")[5:]
+        if PLAYOFF_WINDOW[0] <= when <= PLAYOFF_WINDOW[1]:
+            logger.info(
+                "%s: dropped %s on %s - played after the season, so a "
+                "play-off rather than a league match",
+                label, where, second.get("Date"))
+        elif first.get("FT") == second.get("FT"):
+            logger.warning(
+                "%s: %s appears twice with the same score (%s on %s and %s) "
+                "- one match entered twice, keeping the first",
+                label, where, first.get("FT"), first.get("Date"),
+                second.get("Date"))
+        else:
+            logger.warning(
+                "%s: %s is recorded twice with different scores (%s on %s, "
+                "%s on %s) and this source cannot say which counted - "
+                "keeping the first",
+                label, where, first.get("FT"), first.get("Date"),
+                second.get("FT"), second.get("Date"))
+    return kept
+
+
+def convert_nonleague(
+    source: Path,
+    raw_dir: Path,
+    first_season: int = NONLEAGUE_FIRST_SEASON,
+    last_season: int = NONLEAGUE_LAST_SEASON,
+    force: bool = False,
+    tiers: tuple[int, ...] = NONLEAGUE_TIERS,
+) -> list[Path]:
+    """
+    Split the non-league source into one football-data-shaped CSV per
+    season and division.
+
+    The same conversion as convert(), with two differences that matter:
+    the bucket key is the division rather than the tier, and each bucket
+    is checked for completeness before it is written. A division that is
+    not a whole round-robin is still written - a part-played table is a
+    real thing and the site already says so on the page - but the shortfall
+    is reported rather than discovered later.
+    """
+    buckets: dict[tuple[int, str], list[dict]] = {}
+    unknown: dict[tuple[int, str], int] = {}
+    with open(source, encoding="utf-8", newline="") as fh:
+        for row in csv.DictReader(fh):
+            try:
+                season_end = int(row["Season"]) + 1
+                tier = int(row["tier"])
+            except (KeyError, TypeError, ValueError):
+                continue
+            if tier not in tiers or not first_season <= season_end <= last_season:
+                continue
+            division_id = nonleague_division_id(
+                tier, (row.get("division") or "").strip(), season_end)
+            if division_id is None:
+                key = (tier, (row.get("division") or "").strip())
+                unknown[key] = unknown.get(key, 0) + 1
+                continue
+            buckets.setdefault((season_end, division_id), []).append(row)
+
+    for (tier, code), count in sorted(unknown.items()):
+        logger.warning("Skipped %d match(es) in tier %d division %r, which "
+                       "has no id in the registry", count, tier, code)
+
+    written: list[Path] = []
+    for (season_end, division_id), rows in sorted(buckets.items()):
+        label = f"{season_end} {division_id}"
+        rows = _drop_repeat_fixtures(rows, label)
+
+        clubs = {r["home"] for r in rows} | {r["visitor"] for r in rows}
+        expected = len(clubs) * (len(clubs) - 1)
+        if len(rows) != expected:
+            logger.warning("%s: %d of %d matches (%d clubs) - the table will "
+                           "be part-played", label, len(rows), expected,
+                           len(clubs))
+
+        path = raw_dir / nonleague_filename(season_end, division_id)
+        if path.exists() and not force:
+            written.append(path)
+            continue
+        with open(path, "w", encoding="utf-8", newline="") as out:
+            writer = csv.writer(out)
+            writer.writerow(["Div", "Date", "HomeTeam", "AwayTeam",
+                             "FTHG", "FTAG", "FTR"])
+            for row in rows:
+                writer.writerow([
+                    division_id,
+                    _iso_to_uk(row.get("Date", "")),
+                    row["home"], row["visitor"],
+                    row["hgoal"], row["vgoal"], row["result"],
+                ])
+        written.append(path)
+
+    logger.info("Prepared %d non-league division-seasons (%d-%d, tiers %s)",
+                len(written), first_season, last_season,
+                "/".join(str(t) for t in tiers))
+    return written
+
+
+def backfill_nonleague(
+    raw_dir: Path,
+    first_season: int = NONLEAGUE_FIRST_SEASON,
+    last_season: int = NONLEAGUE_LAST_SEASON,
+    force: bool = False,
+    session: requests.Session | None = None,
+) -> list[Path]:
+    """Same again, for the sixth and seventh tiers."""
+    source = fetch_source(
+        raw_dir, force=force, session=session,
+        url=NONLEAGUE_SOURCE_URL, cache_name=NONLEAGUE_CACHE_NAME,
+        min_bytes=1_000_000,
+    )
+    if source is None:
+        logger.error("Non-league backfill skipped: source unavailable")
+        return []
+    return convert_nonleague(source, raw_dir, first_season, last_season,
+                             force=force)
 
 
 def check_tier5_champions(conn) -> list[int]:

@@ -40,11 +40,11 @@ see before. Every figure here is lower than it was.
 
 | Club | Buyable | Tenure | Catchment | Contested | The decisive fact |
 |---|---|---|---|---|---|
-| **Maidstone United** | **yes** | **freehold** | 205,634 | **56%** | Owners actively seeking a majority sale — but have publicly offered to divest the club **while retaining the stadium freehold** |
+| **Maidstone United** | **yes** | **freehold** | 205,634 | 56% | Owners actively seeking a majority sale — but have publicly offered to divest the club **while retaining the stadium freehold** |
 | **Morecambe** | yes | leasehold_long | 148,230 | 33% | Cleanest cap table in the cohort, worst everything else |
 | Southport | unknown | leasehold_long | 156,797 | 35% | Lease term is not on the public record — the single decisive unknown |
 | Macclesfield Town | unknown | freehold | 166,429 | 49% | Control moved to a Jersey vehicle; founder hostile and under investigation |
-| Torquay United | no | leasehold_long | 310,511 | **26%** | Consortium not selling; trust's golden share vetoes even the stadium |
+| Torquay United | no | leasehold_long | 310,511 | 26% | Consortium not selling; trust's golden share vetoes even the stadium |
 | Dagenham & Redbridge | no | unknown | 382,084 | 68% | Control settled Feb 2026; KSI stake; a post-hype price |
 | Darlington | no | leasehold_short | 191,694 | 65% | 91.66% held by a CBS with a 5% individual cap |
 | Bury | no | freehold | 481,230 | 34% | Holding company has no share capital |
@@ -147,7 +147,15 @@ board has concluded that only a new stadium can get it back to the EFL.
 - **Twenty sixth- and seventh-tier clubs are still missing**, four of them in
   the sixth tier, because the ONS gazetteer cannot place a club whose local
   authority is a wide rural one. Their towns are still credited to their
-  neighbours. `docs/roster-data.md` names all twenty.
+  neighbours. `docs/tier-6-7.md` names them.
+- **Band A gained two clubs when the sixth and seventh tiers arrived.**
+  Bradford Park Avenue and Workington were excluded as stale, fifty years
+  gone from the Football League with nothing recent in the data. They have
+  2012/13-2018/19 seasons now, so `STALE_AFTER_SEASONS` measures them against
+  a real recent record instead. Bradford Park Avenue tops the band, which is
+  a result to read carefully: it is three miles from Bradford City, and its
+  266,342 is what it would draw *restored to the third tier* with City held
+  where they are.
 - **Contest ratios before and after the roster are not comparable.** The
   measure asks what share of its own Voronoi cell a club keeps, and adding
   clubs shrinks every cell to a tighter, more local area that its club keeps

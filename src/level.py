@@ -34,6 +34,23 @@ import sqlite3
 import statistics
 from dataclasses import dataclass
 
+# Tiers 6 and 7 are recorded only for the seasons engsoccerdata covers.
+# This does NOT make a gap elsewhere ambiguous: "non-league" means below
+# the Football League, and a club missing from the tables in 1999 was
+# below it whether or not this project can name the division. The
+# coverage note stays about tier 5, where the ambiguity is real.
+TIER67_FIRST_SEASON = 2013
+TIER67_LAST_SEASON = 2019
+
+# What partial coverage costs, stated because it is not obvious. A club
+# that has bounced between the fifth tier and below it now has those
+# below-the-line seasons split in two - tier 6 where the data reaches,
+# OUTSIDE where it does not - so neither bucket is big enough to earn the
+# "National League / non-league yo-yo" label the club plainly deserves.
+# Boston United, Dover Athletic, Tamworth and Welling United all lost it
+# when tiers 6 and 7 arrived. Extending the coverage closes the gap;
+# nothing in this module can.
+
 # Tier 5 (National League) is in the data from 1979/80 onward, so a gap
 # before this is "we can't see it", not "they weren't there". It used to be
 # 2005/06, which is where football-data.co.uk's files start; the
@@ -67,7 +84,12 @@ OUTSIDE = 99
 # Add 6 and 7 when those tiers gain standings rows. tests/test_level.py
 # asserts this covers every tier the database holds, so forgetting is not
 # possible.
-BUCKET_LADDER = [1, 2, 3, 4, 5, OUTSIDE]
+BUCKET_LADDER = [1, 2, 3, 4, 5, 6, 7, OUTSIDE]
+
+# "Whole-pyramid range" has to mean the same fraction of the pyramid
+# however deep the pyramid is recorded. Two thirds of the rungs, rounded
+# up, which is the 4 this was written as when the ladder had six.
+BROAD_SPREAD = -(-len(BUCKET_LADDER) * 2 // 3)
 
 # Below these, a computed level is noise: one National League cameo would
 # otherwise read as a confident "National League club".
@@ -180,7 +202,9 @@ def _coverage_note(tiers_by_year: dict[int, int]) -> str | None:
         return None
     first, last = min(tiers_by_year), max(tiers_by_year)
     for year in range(first, last + 1):
-        if year not in tiers_by_year and year < TIER5_FIRST_SEASON:
+        if year in tiers_by_year:
+            continue
+        if year < TIER5_FIRST_SEASON:
             return "pre-coverage-gap"
     return None
 
@@ -211,10 +235,20 @@ def _adjacent(counts: dict[int, int], primary: int, n: int) -> tuple[int | None,
     if primary not in BUCKET_LADDER:
         return best, best_share
     here = BUCKET_LADDER.index(primary)
-    for rung in (here - 1, here + 1):
-        if not 0 <= rung < len(BUCKET_LADDER):
-            continue
-        candidate = BUCKET_LADDER[rung]
+    candidates = {BUCKET_LADDER[rung] for rung in (here - 1, here + 1)
+                  if 0 <= rung < len(BUCKET_LADDER)}
+
+    # "Outside" is not a rung at a fixed depth: it means below everything
+    # this club's record reaches. Tiers 6 and 7 are recorded for seven
+    # seasons only, so a club whose gaps fall outside that window has an
+    # unrecorded level immediately beneath its own - and Boston United,
+    # Dover, Tamworth and Welling all yo-yo across exactly that line. Take
+    # it away and the label they earn most clearly is the one they lose.
+    recorded = [b for b in counts if b != OUTSIDE and b in BUCKET_LADDER]
+    if recorded and primary == max(recorded, key=BUCKET_LADDER.index):
+        candidates.add(OUTSIDE)
+
+    for candidate in candidates:
         share = counts.get(candidate, 0) / n
         if share > best_share:
             best, best_share = candidate, share
@@ -265,7 +299,7 @@ def classify(buckets: list[int], coverage_note: str | None = None) -> dict:
         kind, second = "yo-yo", adj
     elif share >= 0.60:
         kind, second = "established", None
-    elif _spread(buckets) >= 4:
+    elif _spread(buckets) >= BROAD_SPREAD:
         kind, second = "broad", None
     else:
         kind, second = "mixed", None

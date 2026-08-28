@@ -108,10 +108,24 @@ def test_single_outlier_season_does_not_trigger_broad():
 
 
 def test_genuine_spread_does_trigger_broad():
-    # Luton-shaped: real, repeated time in four or more divisions
-    got = classify([1] * 2 + [2] * 6 + [3] * 7 + [4] * 5 + [5] * 4)
+    # Repeated time from the top of the pyramid to below the bottom of it
+    got = classify([1] * 2 + [2] * 6 + [3] * 7 + [4] * 5 + [5] * 4
+                   + [OUTSIDE] * 3)
     assert got["kind"] == "broad"
     assert "whole-pyramid range" in got["label"]
+
+
+def test_the_top_five_tiers_are_no_longer_the_whole_pyramid():
+    """
+    A behaviour change worth pinning rather than discovering. "Whole-
+    pyramid range" is two thirds of the recorded rungs, and the recorded
+    pyramid is seven tiers deep now, so a club that has been in tiers 1
+    to 5 and nowhere else has covered five rungs of eight - which is a
+    wide range and is not the whole of it.
+    """
+    got = classify([1] * 2 + [2] * 6 + [3] * 7 + [4] * 5 + [5] * 4)
+    assert got["kind"] != "broad"
+    assert level.BROAD_SPREAD == 6
 
 
 def test_ever_present_never_lands_on_the_outside_bucket():
@@ -268,8 +282,10 @@ def test_span_is_measured_in_rungs_not_in_bucket_numbers():
     that yo-yos in and out of the League as spanning ninety-nine
     divisions, which clears every "whole-pyramid range" test there is.
     """
+    # The fifth tier and "outside" are four rungs apart now that the sixth
+    # and seventh sit between them - and four, not ninety-five.
     yo_yo = [5, 5, 5, level.OUTSIDE, level.OUTSIDE, 5, level.OUTSIDE]
-    assert level._spread(yo_yo) == 2
+    assert level._spread(yo_yo) == 4
 
     top_to_bottom = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5]
     assert level._spread(top_to_bottom) == 5

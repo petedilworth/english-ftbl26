@@ -284,14 +284,14 @@ def _club_frame(conn: sqlite3.Connection) -> pd.DataFrame:
     ceiling. The ceiling comes from the standings and falls back to the
     current tier for a club the data has never seen play.
 
-    Two sources, because competition does not stop at the fifth tier.
-    club_master holds the clubs with league history; club_roster holds the
-    sixth- and seventh-tier clubs that have none but are still standing in
-    the same towns. Without the second, a fallen club's neighbours are
-    invisible and its catchment is flattered - see src/roster.py.
+    One source. The sixth- and seventh-tier clubs briefly lived in a
+    separate club_roster table, because a club with no league history had
+    nowhere else to go; they are in club_master now, with standings rows
+    of their own, so the union that used to be here is gone.
 
-    A roster club's ceiling is its current tier by construction: anything
-    that had reached the fifth tier would be in club_master instead.
+    A club with no coordinates is simply absent from the model, which is
+    the right answer for one whose current level this project does not
+    record: it should not be given a pull it cannot justify.
     """
     clubs = pd.read_sql_query(
         "SELECT club_id, current_tier, latitude, longitude"
@@ -304,19 +304,6 @@ def _club_frame(conn: sqlite3.Connection) -> pd.DataFrame:
     )
     clubs = clubs.merge(peaks, on="club_id", how="left")
     clubs["peak_tier"] = clubs["peak_tier"].fillna(clubs["current_tier"])
-
-    if conn.execute("SELECT 1 FROM sqlite_master WHERE type='table'"
-                    " AND name='club_roster'").fetchone():
-        roster = pd.read_sql_query(
-            "SELECT club_id, tier AS current_tier, latitude, longitude,"
-            " tier AS peak_tier FROM club_roster",
-            conn,
-        )
-        if not roster.empty:
-            # seed_club_roster rejects an id that is already in
-            # club_master, so this concat cannot duplicate a club. If it
-            # ever did, the club would compete with itself.
-            clubs = pd.concat([clubs, roster], ignore_index=True)
 
     return clubs
 

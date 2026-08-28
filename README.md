@@ -1,6 +1,6 @@
 # English Football Historical Database
 
-SQLite database of English football league standings — Tiers 1–4 from 1958/59 and Tier 5 from 1979/80, through to the present, plus a weekly fixture-preview email digest and a static website.
+SQLite database of English football league standings — Tiers 1–4 from 1958/59, Tier 5 from 1979/80, and Tiers 6–7 for 2012/13–2018/19, through to the present, plus a weekly fixture-preview email digest and a static website.
 
 ## The website (Phase 3)
 
@@ -104,7 +104,7 @@ Seeded from `club_master.csv`. Edit this file to add name variants or new clubs,
 | `canonical_name` | TEXT | Current official name |
 | `name_variants` | TEXT | JSON array of known source spellings |
 | `lineage_parent_id` | TEXT | For successor clubs (AFC Wimbledon → Wimbledon FC) |
-| `current_tier` | INT | **Used by the pipeline.** `src/catchment.py` reads it as the club's pull in the gravity model, so a wrong value silently hands that club's population to its neighbours. It means *where football under this id is played now*, including below tier 5 — `6` and `7` are ordinary values, and `0` means no successor plays at all. `club_trajectory.current_tier` is a different thing: the tier of the club's most recent `standings` row, which stops at 5. The two legitimately disagree for every club below the fifth tier. |
+| `current_tier` | INT | **Used by the pipeline.** `src/catchment.py` reads it as the club's pull in the gravity model, so a wrong value silently hands that club's population to its neighbours. It means *where football under this id is played now*, including below tier 5 — `6` and `7` are ordinary values, and `0` means no successor plays at all. `club_trajectory.current_tier` is a different thing: the tier of the club's most recent `standings` row, which reaches the seventh tier only for the seasons `docs/tier-6-7.md` covers. The two legitimately disagree for any club whose current level this project does not record. |
 
 ### `standings`
 One row per club per season.

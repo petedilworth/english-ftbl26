@@ -46,7 +46,11 @@ def test_two_divisions_at_one_level_are_coloured_the_same():
 def test_a_tier_with_parallel_divisions_has_no_sole_division():
     assert divisions.sole_division(6) is None
     assert len(divisions.by_tier(6)) == 2
-    assert len(divisions.by_tier(7)) == 4
+    # Five ids at the seventh tier but never five at once: the Southern
+    # League Premier was one division until 2017/18 and two after.
+    assert len(divisions.by_tier(7)) == 5
+    assert len(divisions.by_tier(7, 2015)) == 3
+    assert len(divisions.by_tier(7, 2019)) == 4
 
 
 def test_only_the_downloadable_divisions_carry_a_source_code():
@@ -175,3 +179,77 @@ def test_loading_one_division_does_not_delete_its_neighbour():
     survivors = {r[0] for r in conn.execute(
         "SELECT division_id FROM standings WHERE season_end_year = 2027")}
     assert survivors == {"national-league-north"}
+
+
+# ── the FA allocations, which still settle who plays where now ─────────
+
+ALLOCATIONS = PROJECT_ROOT / "data" / "raw" / "nls-allocations-2026-27.tsv"
+
+
+def _allocations():
+    if not ALLOCATIONS.exists():
+        pytest.skip("no allocations file")
+    rows = []
+    with ALLOCATIONS.open(encoding="utf-8") as fh:
+        for line in fh:
+            if line.startswith("#") or line.startswith("division\t"):
+                continue
+            division, tier, rank, name = line.rstrip("\n").split("\t")
+            rows.append((division, int(tier), int(rank), name))
+    return rows
+
+
+def test_the_allocations_hold_every_division_at_its_real_size():
+    """
+    The parse is geometric - column bands and heights on a page - so what
+    proves it worked is each division coming out the size it actually is.
+    A lost row is a club the site cannot see.
+    """
+    sizes = {}
+    for division, _, _, _ in _allocations():
+        sizes[division] = sizes.get(division, 0) + 1
+    assert sizes == {
+        "National League": 24,
+        "National League North": 24,
+        "National League South": 24,
+        "Isthmian League Premier": 22,
+        "Northern Premier League Premier": 22,
+        "Southern League Premier Central": 22,
+        "Southern League Premier South": 22,
+    }
+
+
+def test_the_fifth_tier_in_the_allocations_matches_this_repos_own_standings():
+    """
+    An independent check on the whole extraction. The FA's step 1 column
+    and this site's in-progress fifth-tier season are unrelated sources
+    for the same 24 clubs, and every name has to resolve.
+    """
+    conn = _conn()
+    sys.path.insert(0, str(PROJECT_ROOT / "src"))
+    import entities
+    resolver = entities.build_resolver(conn)
+
+    season = conn.execute("SELECT MAX(season_end_year) FROM standings").fetchone()[0]
+    from_db = {r[0] for r in conn.execute(
+        "SELECT DISTINCT club_id FROM standings WHERE tier = 5"
+        " AND season_end_year = ?", (season,))}
+    from_pdf = {resolver.get(entities._normalize(name))
+                for _, tier, _, name in _allocations() if tier == 5}
+    assert None not in from_pdf, "a fifth-tier name did not resolve"
+    assert from_pdf == from_db
+
+
+def test_every_club_the_allocations_name_now_has_an_identity():
+    """
+    The roster used to hold these clubs because they had no standings
+    rows to hang an identity on. They are in club_master now, so a name
+    the FA lists and this project cannot resolve is a gap, not a design.
+    """
+    conn = _conn()
+    sys.path.insert(0, str(PROJECT_ROOT / "src"))
+    import entities
+    resolver = entities.build_resolver(conn)
+    missing = [name for _, _, _, name in _allocations()
+               if not resolver.get(entities._normalize(name))]
+    assert not missing, f"named by the FA and unknown here: {sorted(set(missing))}"

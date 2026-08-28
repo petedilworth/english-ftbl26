@@ -38,7 +38,6 @@ import download
 import entities
 import finances
 import historical
-import roster
 import status
 import trajectory
 
@@ -117,23 +116,46 @@ logger = logging.getLogger(__name__)
 # football-data with seasons it has never published.
 _FILENAME_RE = re.compile(r"^(\d{4})_E(\d)(_hist)?\.csv$")
 
+# Below the fifth tier a filename has to name the DIVISION, because the
+# tier is several of them and "1819_E6.csv" could be either half of the
+# National League. The _nl marker plays the same role as _hist: it records
+# where the season came from.
+_NONLEAGUE_FILENAME_RE = re.compile(r"^(\d{4})_([a-z0-9-]+)_nl\.csv$")
 
-def _parse_filename(filename: str) -> tuple[int, int, bool] | None:
+
+def _parse_filename(filename: str) -> tuple[int, int, str | None, bool] | None:
     """
-    Return (season_end_year, tier, is_historical) from a filename like
-    '9394_E0.csv' or '5859_E2_hist.csv', or None if it is neither.
+    Return (season_end_year, tier, division_id, is_historical) from a
+    filename like '9394_E0.csv', '5859_E2_hist.csv' or
+    '1213_national-league-north_nl.csv', or None if it is none of them.
+
+    division_id is None for the tiers whose files name only the tier; the
+    caller fills it from the registry, which is unambiguous there.
     """
     m = _FILENAME_RE.match(filename)
-    if not m:
-        return None
-    season_str, tier_digit = m.group(1), int(m.group(2))
-    tier = tier_digit + 1
-    season_end_year = download.str_to_season(season_str)
-    return season_end_year, tier, bool(m.group(3))
+    if m:
+        season_str, tier_digit = m.group(1), int(m.group(2))
+        return (download.str_to_season(season_str), tier_digit + 1, None,
+                bool(m.group(3)))
+
+    m = _NONLEAGUE_FILENAME_RE.match(filename)
+    if m:
+        division = divisions.BY_ID.get(m.group(2))
+        if division is None:
+            logger.warning("%s names a division that is not in the registry",
+                           filename)
+            return None
+        return (download.str_to_season(m.group(1)), division.tier,
+                division.division_id, True)
+
+    return None
 
 
 def _build_source(season_end_year: int, tier: int,
-                  is_historical: bool = False) -> str:
+                  is_historical: bool = False,
+                  division_id: str | None = None) -> str:
+    if division_id is not None and tier > 5:
+        return historical.nonleague_source_label(season_end_year, division_id)
     if is_historical:
         return historical.source_label(season_end_year, tier)
     code = download.TIER_TO_CODE[tier]
@@ -160,7 +182,12 @@ def _division_matches_tier(match_df, csv_path: Path, tier: int) -> bool:
     if not codes:
         return True
 
-    expected = download.TIER_TO_CODE[tier]
+    expected = download.TIER_TO_CODE.get(tier)
+    if expected is None:
+        # Below the fifth tier the Div column holds the division_id this
+        # project wrote, not a football-data code, and the filename it
+        # came from is the same string.
+        return True
     unexpected = codes - {expected}
     if unexpected:
         logger.error(
@@ -222,6 +249,7 @@ def _process_season(
     resolver: dict,
     unresolved_map: dict,
     is_historical: bool = False,
+    division_id: str | None = None,
 ) -> int:
     """
     Aggregate one season CSV, assign status, resolve names, insert into
@@ -243,6 +271,12 @@ def _process_season(
     if not _club_count_plausible(standings_df, season_end_year, tier, csv_path):
         return 0
 
+    if division_id is not None and divisions.BY_ID[division_id].tier > 5:
+        # aggregate.get_division_name knows the tiers that are a division
+        # and answers "Tier 6" for the ones that are not. The registry
+        # knows which of several this table actually is.
+        standings_df["division_name"] = divisions.BY_ID[division_id].name
+
     is_complete = _season_is_complete(season_end_year, len(standings_df), len(match_df))
     if not is_complete:
         logger.info(
@@ -255,12 +289,13 @@ def _process_season(
     standings_df = status.assign_status(
         standings_df, season_end_year, tier, is_complete=is_complete
     )
-    source = _build_source(season_end_year, tier, is_historical)
-    # Every tier this path ingests has exactly one division, so its id is
-    # not a decision anybody has to make. A tier with several would have
-    # to say which, and would come in through its own loader.
-    division = divisions.sole_division(tier)
-    division_id = division.division_id if division else None
+    source = _build_source(season_end_year, tier, is_historical, division_id)
+    if division_id is None:
+        # The file named only its tier, which is only possible where the
+        # tier is one division. Where it is several the filename says so
+        # and the caller has already resolved it.
+        division = divisions.sole_division(tier)
+        division_id = division.division_id if division else None
 
     rows = []
     for _, row in standings_df.iterrows():
@@ -931,9 +966,6 @@ def run(
     # with the other reference data. The derived catchment is rebuilt
     # after the standings load, since it reads each club's ceiling.
     catchment.seed_msoa_demographics(conn, PROJECT_ROOT / "msoa_demographics.csv")
-    # After club_master, because a roster club that is already in it would
-    # be counted twice by the catchment model and compete with itself.
-    roster.seed_club_roster(conn, PROJECT_ROOT / "club_roster.csv")
     resolver = entities.build_resolver(conn)
 
     if not skip_download:
@@ -960,6 +992,13 @@ def run(
                 last_season=min(season_end, historical.TIER5_LAST_SEASON),
                 force=force_download,
             )
+        if season_end >= historical.NONLEAGUE_FIRST_SEASON:
+            historical.backfill_nonleague(
+                raw_dir,
+                first_season=max(season_start, historical.NONLEAGUE_FIRST_SEASON),
+                last_season=min(season_end, historical.NONLEAGUE_LAST_SEASON),
+                force=force_download,
+            )
 
     csv_files = sorted(raw_dir.glob("*.csv"))
     if not csv_files:
@@ -974,7 +1013,7 @@ def run(
             logger.debug("Skipping unrecognised file: %s", csv_path.name)
             continue
 
-        year, tier, is_historical = parsed
+        year, tier, division_id, is_historical = parsed
         if not (season_start <= year <= season_end):
             continue
 
@@ -991,7 +1030,7 @@ def run(
             continue
 
         n = _process_season(conn, csv_path, year, tier, resolver,
-                            unresolved_map, is_historical)
+                            unresolved_map, is_historical, division_id)
         total_rows += n
 
     logger.info("Inserted/updated %d standings rows total", total_rows)
@@ -1000,6 +1039,9 @@ def run(
     # Before reconciliation: with the deduction applied the positional
     # rules are usually right on their own, leaving reconciliation to do
     # what only it can - play-off losers, reprieves, expulsions.
+    # club_roster held the sixth- and seventh-tier clubs while they had no
+    # standings rows to hang an identity on. They are in club_master now.
+    conn.execute("DROP TABLE IF EXISTS club_roster")
     _backfill_division_ids(conn)
     _rerank_curtailed_divisions(conn)
     _rerank_stale_divisions(conn)
