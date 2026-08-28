@@ -104,7 +104,7 @@ Seeded from `club_master.csv`. Edit this file to add name variants or new clubs,
 | `canonical_name` | TEXT | Current official name |
 | `name_variants` | TEXT | JSON array of known source spellings |
 | `lineage_parent_id` | TEXT | For successor clubs (AFC Wimbledon → Wimbledon FC) |
-| `current_tier` | INT | Informational only — not used by the pipeline. `club_trajectory.current_tier` is computed from each club's most recent `standings` row instead, so it never goes stale. |
+| `current_tier` | INT | **Used by the pipeline.** `src/catchment.py` reads it as the club's pull in the gravity model, so a wrong value silently hands that club's population to its neighbours. It means *where football under this id is played now*, including below tier 5 — `6` and `7` are ordinary values, and `0` means no successor plays at all. `club_trajectory.current_tier` is a different thing: the tier of the club's most recent `standings` row, which stops at 5. The two legitimately disagree for every club below the fifth tier. |
 
 ### `standings`
 One row per club per season.
@@ -250,7 +250,10 @@ All cutoff rules live in `src/status.py` in the `RULES` dict. Each key is `(tier
 - Add a new row for any club that appears in the unresolved name report
 - Add the unrecognised spelling to the `name_variants` JSON array of the correct club
 - `club_id` values are permanent — never change them once assigned
-- Set `current_tier=0` for defunct clubs
+- Set `current_tier` to the tier where football under that id is played now,
+  even below tier 5. Only use `0` when no successor plays anywhere — a club
+  whose phoenix trades at step 3 is a `7`, not a `0`, or the catchment model
+  gives its town away.
 - Set `lineage_parent_id` for re-formed clubs (e.g. AFC Wimbledon → `wimbledon-fc`)
 
 ## Useful queries

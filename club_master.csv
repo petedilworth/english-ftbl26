@@ -33,7 +33,7 @@ bromley-fc,Bromley,"[""Bromley""]",,3,#FFFFFF,#000000,Hayes Lane,51.3907,0.0210
 bromsgrove-rovers-fc,Bromsgrove Rovers,"[""Bromsgrove Rovers"",""Bromsgrove""]",,0,,,,,
 burnley-fc,Burnley,"[""Burnley""]",,2,#6C1D45,#99D6EA,Turf Moor,53.7890,-2.2302
 burton-albion-fc,Burton Albion,"[""Burton"",""Burton Albion""]",,3,#FFF200,#000000,Pirelli Stadium,52.8218,-1.6270
-bury-fc,Bury,"[""Bury""]",,0,#FFFFFF,#0044AA,Gigg Lane,53.5802,-2.2946
+bury-fc,Bury,"[""Bury""]",,7,#FFFFFF,#0044AA,Gigg Lane,53.5802,-2.2946
 cambridge-united-fc,Cambridge United,"[""Cambridge"",""Cambridge United""]",,3,#FFCD00,#000000,Abbey Stadium,52.2122,0.1543
 canvey-island-fc,Canvey Island,"[""Canvey Island""]",,6,#FFD700,#0033A0,Park Lane,51.5218,0.5769
 cardiff-city-fc,Cardiff City,"[""Cardiff"",""Cardiff City""]",,2,#0070B5,#FFFFFF,Cardiff City Stadium,51.4728,-3.2030
@@ -41,7 +41,7 @@ carlisle-united-fc,Carlisle United,"[""Carlisle"",""Carlisle United""]",,5,#1C63
 charlton-athletic-fc,Charlton Athletic,"[""Charlton"",""Charlton Athletic"",""Charlton Ath""]",,2,#E31B23,#FFFFFF,The Valley,51.4865,0.0364
 chelsea-fc,Chelsea,"[""Chelsea""]",,1,#034694,#FFFFFF,Stamford Bridge,51.4817,-0.1910
 cheltenham-town-fc,Cheltenham Town,"[""Cheltenham"",""Cheltenham Town""]",,4,#DA291C,#FFFFFF,Whaddon Road,51.9063,-2.0603
-chester-city-fc,Chester City,"[""Chester"",""Chester City""]",,0,#005EB8,#FFFFFF,Deva Stadium,53.1774,-2.9163
+chester-city-fc,Chester City,"[""Chester"",""Chester City""]",,6,#005EB8,#FFFFFF,Deva Stadium,53.1774,-2.9163
 chesterfield-fc,Chesterfield,"[""Chesterfield""]",,4,#0066B3,#FFFFFF,SMH Group Stadium,53.2535,-1.4272
 chorley-fc,Chorley,"[""Chorley""]",,6,#000000,#FFFFFF,Victory Park,53.6486,-2.6353
 colchester-united-fc,Colchester United,"[""Colchester"",""Colchester United""]",,4,#0055A5,#FFFFFF,JobServe Community Stadium,51.9236,0.8977
@@ -82,7 +82,7 @@ hartlepool-united-fc,Hartlepool United,"[""Hartlepool"",""Hartlepool United"",""
 havant-and-waterlooville-fc,Havant & Waterlooville,"[""Havant & Waterlooville"",""Havant & W"",""Havant and Waterlooville""]",,6,#FFFFFF,#003DA5,Westleigh Park,50.8665,-0.9780
 hayes-and-yeading-united-fc,Hayes & Yeading United,"[""Hayes & Yeading"",""Hayes and Yeading"",""Hayes & Yeading United""]",,6,#DA291C,#FFFFFF,SKYex Community Stadium,51.5225,-0.4070
 hednesford-town-fc,Hednesford Town,"[""Hednesford Town"",""Hednesford""]",,0,,,,,
-hereford-united-fc,Hereford United,"[""Hereford"",""Hereford United""]",,0,#FFFFFF,#000000,Edgar Street,52.0610,-2.7166
+hereford-united-fc,Hereford United,"[""Hereford"",""Hereford United""]",,6,#FFFFFF,#000000,Edgar Street,52.0610,-2.7166
 histon-fc,Histon,"[""Histon""]",,6,#DA291C,#000000,Bridge Road,52.2460,0.1070
 hornchurch-fc,Hornchurch,"[""Hornchurch"",""AFC Hornchurch"",""Hornchurch FC""]",,5,#DA291C,#FFFFFF,Hornchurch Stadium,51.5567,0.2383
 huddersfield-town-fc,Huddersfield Town,"[""Huddersfield"",""Huddersfield Town""]",,3,#0E63AD,#FFFFFF,Kirklees Stadium,53.6543,-1.7683
@@ -102,7 +102,7 @@ leyton-orient-fc,Leyton Orient,"[""Leyton Orient"",""Orient""]",,3,#EF3340,#FFFF
 lincoln-city-fc,Lincoln City,"[""Lincoln"",""Lincoln City""]",,2,#D50032,#FFFFFF,Sincil Bank,53.2185,-0.5408
 liverpool-fc,Liverpool,"[""Liverpool""]",,1,#C8102E,#FFFFFF,Anfield,53.4308,-2.9608
 luton-town-fc,Luton Town,"[""Luton"",""Luton Town""]",,3,#F78F1E,#002D62,Kenilworth Road,51.8843,-0.4316
-macclesfield-town-fc,Macclesfield Town,"[""Macclesfield"",""Macclesfield Town""]",,0,#0057B8,#FFFFFF,Moss Rose,53.2434,-2.1268
+macclesfield-town-fc,Macclesfield Town,"[""Macclesfield"",""Macclesfield Town""]",,6,#0057B8,#FFFFFF,Moss Rose,53.2434,-2.1268
 maidenhead-united-fc,Maidenhead United,"[""Maidenhead"",""Maidenhead United""]",,6,#000000,#FFFFFF,York Road,51.5217,-0.7220
 maidstone-united-fc,Maidstone United,"[""Maidstone"",""Maidstone United""]",,6,#FBB917,#000000,Gallagher Stadium,51.2795,0.5210
 manchester-city-fc,Manchester City,"[""Man City"",""Manchester City""]",,1,#6CABDD,#FFFFFF,Etihad Stadium,53.4831,-2.2004
@@ -138,10 +138,10 @@ redditch-united-fc,Redditch United,"[""Redditch United"",""Redditch""]",,0,,,,,
 rochdale-fc,Rochdale,"[""Rochdale""]",,4,#005CA9,#000000,Crown Oil Arena,53.6210,-2.1800
 rotherham-united-fc,Rotherham United,"[""Rotherham"",""Rotherham United"",""Rotherham Utd""]",,4,#E31B23,#FFFFFF,New York Stadium,53.4279,-1.3620
 runcorn-fc,Runcorn,"[""Runcorn""]",,0,,,,,
-rushden-and-diamonds-fc,Rushden & Diamonds,"[""Rushden"",""Rushden & Diamonds"",""Rushden & D""]",,0,#FFFFFF,#0033A0,Nene Park,52.3200,-0.6080
+rushden-and-diamonds-fc,Rushden & Diamonds,"[""Rushden"",""Rushden & Diamonds"",""Rushden & D""]",,9,#FFFFFF,#0033A0,Nene Park,52.3200,-0.6080
 salford-city-fc,Salford City,"[""Salford"",""Salford City""]",,4,#DA291C,#FFFFFF,Peninsula Stadium,53.5135,-2.2765
 salisbury-city-fc,Salisbury City,"[""Salisbury"",""Salisbury City""]",,6,#FFFFFF,#000000,Raymond McEnhill Stadium,51.1040,-1.7910
-scarborough-fc,Scarborough,"[""Scarborough""]",,0,#DA291C,#FFFFFF,McCain Stadium,54.2655,-0.4182
+scarborough-fc,Scarborough,"[""Scarborough""]",,6,#DA291C,#FFFFFF,McCain Stadium,54.2655,-0.4182
 scunthorpe-united-fc,Scunthorpe United,"[""Scunthorpe"",""Scunthorpe United"",""Scunthorpe Utd""]",,5,#862633,#00A3E0,Glanford Park,53.5866,-0.6952
 sheffield-united-fc,Sheffield United,"[""Sheffield United"",""Sheffield Utd"",""Sheff United"",""Sheff Utd""]",,2,#EE2737,#FFFFFF,Bramall Lane,53.3703,-1.4708
 sheffield-wednesday-fc,Sheffield Wednesday,"[""Sheffield Wednesday"",""Sheffield Weds"",""Sheff Wed"",""Sheff Wednesday""]",,3,#0066B3,#FFFFFF,Hillsborough,53.4114,-1.5006
@@ -180,7 +180,7 @@ witton-albion-fc,Witton Albion,"[""Witton Albion"",""Witton""]",,0,,,,,
 woking-fc,Woking,"[""Woking""]",,5,#DA291C,#FFFFFF,Kingfield Stadium,51.3050,-0.5570
 wolverhampton-wanderers-fc,Wolverhampton Wanderers,"[""Wolves"",""Wolverhampton"",""Wolverhampton W"",""Wolverhampton Wanderers""]",,2,#FDB913,#231F20,Molineux Stadium,52.5903,-2.1301
 worcester-city-fc,Worcester City,"[""Worcester City"",""Worcester""]",,0,,,,,
-workington-afc,Workington,"[""Workington"",""Workington AFC"",""Workington Reds""]",,0,#DA291C,#FFFFFF,Borough Park,54.6470,-3.5490
+workington-afc,Workington,"[""Workington"",""Workington AFC"",""Workington Reds""]",,7,#DA291C,#FFFFFF,Borough Park,54.6470,-3.5490
 worthing-fc,Worthing,"[""Worthing"",""Worthing FC""]",,5,#DA291C,#FFFFFF,Sussex Transport Community Stadium,50.8205,-0.3838
 wrexham-fc,Wrexham,"[""Wrexham""]",,2,#D2202F,#FFFFFF,Racecourse Ground,53.0518,-3.0036
 wycombe-wanderers-fc,Wycombe Wanderers,"[""Wycombe"",""Wycombe Wanderers""]",,3,#002F6C,#5BC2E7,Adams Park,51.6306,-0.8003
