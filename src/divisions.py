@@ -35,6 +35,20 @@ class Division:
     sort_order: int          # position within its own tier, for display
     source_code: str | None  # football-data.co.uk code; None means not fetchable
     color: str               # the tier's colour on the charts
+    # The seasons the division existed, by the year each ended. Both None
+    # for a division that has always been there. The Southern League
+    # Premier was one division until 2017/18 and two from 2018/19, so a
+    # registry that cannot say when is a registry that has to lie about
+    # one of them.
+    first_season: int | None = None
+    last_season: int | None = None
+
+    def existed_in(self, season_end_year: int) -> bool:
+        if self.first_season is not None and season_end_year < self.first_season:
+            return False
+        if self.last_season is not None and season_end_year > self.last_season:
+            return False
+        return True
 
 
 # Colours are per tier rather than per division: two divisions at the same
@@ -65,19 +79,34 @@ DIVISIONS: list[Division] = [
              TIER_COLORS[7]),
     Division("northern-premier-league-premier", 7,
              "Northern Premier League Premier", 2, None, TIER_COLORS[7]),
+    # One division until 2017/18, then two. All three ids are real: the
+    # single one is not a predecessor of either half, it is the thing that
+    # was split, and its seasons belong under its own name.
+    Division("southern-league-premier", 7, "Southern League Premier", 3, None,
+             TIER_COLORS[7], last_season=2018),
     Division("southern-league-premier-central", 7,
-             "Southern League Premier Central", 3, None, TIER_COLORS[7]),
+             "Southern League Premier Central", 4, None, TIER_COLORS[7],
+             first_season=2019),
     Division("southern-league-premier-south", 7,
-             "Southern League Premier South", 4, None, TIER_COLORS[7]),
+             "Southern League Premier South", 5, None, TIER_COLORS[7],
+             first_season=2019),
 ]
 
 BY_ID = {d.division_id: d for d in DIVISIONS}
 
 
-def by_tier(tier: int) -> list[Division]:
-    """Every division at a level, in display order."""
-    return sorted((d for d in DIVISIONS if d.tier == tier),
-                  key=lambda d: d.sort_order)
+def by_tier(tier: int, season_end_year: int | None = None) -> list[Division]:
+    """
+    Every division at a level, in display order.
+
+    With a season, only the divisions that existed in it - which is what
+    "how many divisions does this tier have" means for any question about
+    a particular year.
+    """
+    found = (d for d in DIVISIONS if d.tier == tier)
+    if season_end_year is not None:
+        found = (d for d in found if d.existed_in(season_end_year))
+    return sorted(found, key=lambda d: d.sort_order)
 
 
 def tiers() -> list[int]:
@@ -95,3 +124,8 @@ def sole_division(tier: int) -> Division | None:
     """
     divisions = by_tier(tier)
     return divisions[0] if len(divisions) == 1 else None
+
+
+def parallel_at(tier: int, season_end_year: int) -> bool:
+    """Whether a level held more than one division in a given season."""
+    return len(by_tier(tier, season_end_year)) > 1

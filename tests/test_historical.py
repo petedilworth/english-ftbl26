@@ -34,8 +34,12 @@ def test_historical_filenames_are_distinguishable_from_downloads():
     # standings.source must not credit football-data.co.uk with seasons it
     # never published, so the two kinds of file have to be tellable apart.
     name = historical.historical_filename(1959, 1)
-    assert pipeline._parse_filename(name) == (1959, 1, True)
-    assert pipeline._parse_filename("9394_E0.csv") == (1994, 1, False)
+    assert pipeline._parse_filename(name) == (1959, 1, None, True)
+    assert pipeline._parse_filename("9394_E0.csv") == (1994, 1, None, False)
+    # A file below the fifth tier names its division, because the tier is
+    # several of them.
+    assert pipeline._parse_filename("1213_national-league-north_nl.csv") == (
+        2013, 6, "national-league-north", True)
     assert pipeline._build_source(1959, 1, is_historical=True).startswith(
         historical.SOURCE_NAME)
     assert "football-data" in pipeline._build_source(1994, 1)
@@ -92,3 +96,70 @@ def test_override_seasons_are_emitted_outside_the_historical_range(tmp_path):
     ])
     written = historical.convert(src, tmp_path, 1959, 1993)
     assert [p.name for p in written] == [historical.historical_filename(season, tier)]
+
+
+# ── the sixth and seventh tiers ────────────────────────────────────────
+
+def _nl_row(home, visitor, date, ft="1-0", season=2016, tier="6", division="N"):
+    hg, vg = ft.split("-")
+    return {"Date": date, "Season": str(season), "home": home, "visitor": visitor,
+            "FT": ft, "hgoal": hg, "vgoal": vg, "division": division,
+            "tier": tier, "result": "H"}
+
+
+def test_a_division_letter_means_different_things_in_different_seasons():
+    """
+    'S' at the seventh tier is the Southern League Premier until 2017/18
+    and its southern half from 2018/19, when the division split in two.
+    A mapping that ignores the season files six seasons under the wrong
+    division.
+    """
+    assert historical.nonleague_division_id(7, "S", 2015) == "southern-league-premier"
+    assert historical.nonleague_division_id(7, "S", 2019) == "southern-league-premier-south"
+    assert historical.nonleague_division_id(6, "N", 2015) == "national-league-north"
+    assert historical.nonleague_division_id(6, "X", 2015) is None
+
+
+def test_a_play_off_tie_is_not_a_league_match():
+    """
+    A round-robin holds one meeting per ordered pair. A second one in May
+    is a play-off, and counting it awards points that were never league
+    points.
+    """
+    rows = [_nl_row("Chorley", "Kidderminster Harriers", "2017-01-14"),
+            _nl_row("Chorley", "Kidderminster Harriers", "2017-05-03", ft="2-1")]
+    kept = historical._drop_repeat_fixtures(rows, "test")
+    assert len(kept) == 1
+    assert kept[0]["Date"] == "2017-01-14"
+
+
+def test_the_date_decides_before_the_score_does():
+    """
+    FC Halifax Town beat Chorley 2-1 in the 2016/17 play-off final having
+    also beaten them 2-1 in January. Testing the score first would call a
+    play-off a double entry and say so in the log.
+    """
+    rows = [_nl_row("FC Halifax Town", "Chorley", "2017-01-10", ft="2-1"),
+            _nl_row("FC Halifax Town", "Chorley", "2017-05-13", ft="2-1")]
+    kept = historical._drop_repeat_fixtures(rows, "test")
+    assert len(kept) == 1 and kept[0]["Date"] == "2017-01-10"
+
+
+def test_a_december_repeat_is_not_a_play_off():
+    """
+    The window is compared as month-day, because "12-15" is after "04-20"
+    on a plain string or numeric reading and December is not May. Swindon
+    Supermarine v Basingstoke Town is the real case.
+    """
+    rows = [_nl_row("Swindon Supermarine", "Basingstoke Town", "2018-10-16", ft="4-2"),
+            _nl_row("Swindon Supermarine", "Basingstoke Town", "2018-12-15", ft="5-2")]
+    kept = historical._drop_repeat_fixtures(rows, "test")
+    assert len(kept) == 1
+    lo, hi = historical.PLAYOFF_WINDOW
+    assert not lo <= "12-15" <= hi
+
+
+def test_an_ordinary_season_loses_nothing():
+    rows = [_nl_row("A", "B", "2016-09-01"), _nl_row("B", "A", "2017-02-01"),
+            _nl_row("A", "C", "2016-10-01"), _nl_row("C", "A", "2017-03-01")]
+    assert len(historical._drop_repeat_fixtures(rows, "test")) == 4

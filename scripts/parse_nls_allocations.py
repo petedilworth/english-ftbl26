@@ -33,7 +33,11 @@ from collections import defaultdict
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-OUT = PROJECT_ROOT / "data" / "raw" / "nls-allocations-2026-27.tsv"
+# NOT data/raw/, which is gitignored: that directory is for files the
+# pipeline can fetch again, and this one is extracted from a PDF on a
+# host the proxy refuses. Losing it would mean losing the only record
+# of who plays where now.
+OUT = PROJECT_ROOT / "data" / "nls-allocations-2026-27.tsv"
 
 SOURCE_URL = ("https://www.thefa.com/-/media/thefacom-new/files/competitions/"
               "2026-27/nls/nls-1-to-4-club-allocations-2026-27---v1-140526.ashx")

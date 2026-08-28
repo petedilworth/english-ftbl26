@@ -156,8 +156,6 @@ def candidates(conn: sqlite3.Connection) -> list[dict]:
     # a precision the data does not have.
     try:
         approximate = {r[0] for r in conn.execute(
-            "SELECT club_id FROM club_roster WHERE location_precision = 'town'")}
-        approximate |= {r[0] for r in conn.execute(
             "SELECT club_id FROM club_master WHERE location_precision = 'town'")}
     except sqlite3.Error:
         approximate = set()
