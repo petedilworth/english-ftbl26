@@ -106,6 +106,42 @@
 {% endif %}
 {% endif %}
 
+{% if catchment %}
+<h2>Catchment</h2>
+<table class="facts">
+  <tr>
+    <th>People it can draw on</th>
+    <td>{{ catchment.population or "—" }}{% if catchment.restored %}
+      <span class="finance-rank" title="What the club would draw restored to its highest recorded level, with every other club left where it is">{{ catchment.restored }} restored to its ceiling</span>{% endif %}</td>
+  </tr>
+  {% if catchment.income %}
+  <tr><th>Their net household income</th><td>{{ catchment.income }}</td></tr>
+  {% endif %}
+  {% if catchment.contested %}
+  <tr>
+    <th>Contested</th>
+    <td>{{ catchment.contested }}<span class="finance-rank">of the people nearest to it go elsewhere</span></td>
+  </tr>
+  {% endif %}
+  {% if catchment.rival and catchment.rival.distance %}
+  <tr>
+    <th>Nearest club</th>
+    <td>{% if catchment.rival.club_id %}<a href="{{ root }}/team/{{ catchment.rival.club_id }}/">{{ catchment.rival.name }}</a>{% else %}{{ catchment.rival.name }}{% endif %}<span class="finance-rank">{{ catchment.rival.distance }}</span></td>
+  </tr>
+  {% endif %}
+</table>
+<p class="finance-note">
+  Modelled, not counted: population is split across every club by distance and
+  by level rather than assigned to the nearest one, and the income underneath
+  is itself an ONS estimate with intervals often ±15%.
+  <a href="{{ root }}/insights/catchment/method/">How catchment is measured</a>.</p>
+<p class="finance-note">Compare across the pyramid:
+  <a href="{{ root }}/insights/catchment/">catchment</a> ·
+  <a href="{{ root }}/insights/catchment/income/">income</a> ·
+  <a href="{{ root }}/insights/catchment/contested/">contested</a>
+</p>
+{% endif %}
+
 <h2>The story</h2>
 <div class="narrative">
 {% if story_sections or extra_html %}

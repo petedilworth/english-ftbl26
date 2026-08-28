@@ -188,10 +188,14 @@ def _site_db(tmp_path, catchment_rows):
     mem.backup(disk)
     disk.execute(catchment.CREATE_CLUB_CATCHMENT_SQL)
     disk.executemany(
-        "INSERT INTO club_catchment (club_id, catchment_pop_restored,"
-        " catchment_income, contest_ratio, nearest_rival_id,"
-        " nearest_rival_miles, model_version) VALUES (?,?,?,?,?,?,?)",
-        catchment_rows,
+        "INSERT INTO club_catchment (club_id, catchment_pop_current,"
+        " catchment_pop_restored, catchment_income, contest_ratio,"
+        " nearest_rival_id, nearest_rival_miles, model_version)"
+        " VALUES (?,?,?,?,?,?,?,?)",
+        # The current figure defaults to the restored one, which is what
+        # a club at its ceiling looks like. Rows that want the two to
+        # differ pass eight values instead of seven.
+        [r if len(r) == 8 else (r[0], r[1]) + r[1:] for r in catchment_rows],
     )
     disk.commit()
     disk.close()
@@ -280,3 +284,91 @@ def test_a_club_whose_successor_plays_is_not_flagged_as_exerting_no_pull():
         if got and got[0] == 0:
             wrong.append(row["club_id"])
     assert not wrong, f"successor plays but current_tier is 0: {wrong}"
+
+
+# ── the club panel and the method page ─────────────────────────────────
+
+def _built(tmp_path, rows):
+    from site_build import SiteBuilder
+    out = tmp_path / "site"
+    SiteBuilder(_site_db(tmp_path, rows), out, charts_enabled=False).build()
+    return out
+
+
+CEILING = ("giant-fc", 900_000, 34_000, 0.12, "steady-fc", 8.4, "test")
+FALLEN = ("steady-fc", 140_000, 900_000, 27_000, 0.71, "giant-fc", 8.4, "test")
+
+
+def test_a_club_page_carries_its_catchment(tmp_path):
+    page = (_built(tmp_path, [CEILING, FALLEN])
+            / "team" / "giant-fc" / "index.html").read_text()
+    assert "Catchment" in page
+    assert "900,000" in page
+    assert "12%" in page
+    assert "8.4 miles" in page
+
+
+def test_a_club_with_no_catchment_row_gets_no_panel(tmp_path):
+    """
+    The same rule the finance panel follows: a club the model cannot see
+    gets a shorter page, not a table of dashes.
+    """
+    page = (_built(tmp_path, [CEILING])
+            / "team" / "steady-fc" / "index.html").read_text()
+    assert "<h2>Catchment</h2>" not in page
+
+
+def test_the_restored_figure_appears_only_where_it_differs(tmp_path):
+    """
+    Two identical numbers side by side read as a mistake. A club at its
+    ceiling shows one; a fallen club shows what returning would be worth.
+    """
+    out = _built(tmp_path, [CEILING, FALLEN])
+    at_ceiling = (out / "team" / "giant-fc" / "index.html").read_text()
+    fallen = (out / "team" / "steady-fc" / "index.html").read_text()
+    assert "restored to its ceiling" not in at_ceiling
+    assert "restored to its ceiling" in fallen
+    assert "140,000" in fallen and "900,000" in fallen
+
+
+def test_the_method_page_states_the_weights_the_model_actually_uses(tmp_path):
+    """
+    Read from catchment.TIER_ATTRACTIVENESS rather than written down, so
+    the page cannot describe a model the pipeline is not running.
+    """
+    page = (_built(tmp_path, [CEILING, FALLEN])
+            / "insights" / "catchment" / "method" / "index.html")
+    assert page.exists()
+    text = page.read_text()
+    for weight in catchment.TIER_ATTRACTIVENESS.values():
+        assert f"{weight:g}" in text
+    assert catchment.MODEL_VERSION in text
+    assert f"β = {catchment.BETA:g}" in text
+
+
+def test_the_method_page_is_skipped_without_its_prose(tmp_path, monkeypatch):
+    """
+    The same gate points-eras uses: a page whose argument is missing is
+    not published as tables alone. Three numbers that need explaining
+    least of all deserve a page of tables with no explanation.
+    """
+    from test_site_build import _build_site_with_content
+    out = _build_site_with_content(
+        tmp_path, monkeypatch, _site_db(tmp_path, [CEILING]), {})
+    assert not (out / "insights" / "catchment" / "method" / "index.html").exists()
+
+
+@pytest.mark.parametrize("miles, approximate, expected", [
+    (8.42, False, "8.4 miles"),
+    (43.65, False, "43.6 miles"),
+    (2.26, True, "~2 miles"),
+    # Bury to Radcliffe on town-placed coordinates. Stainton Park is about
+    # three miles from Gigg Lane, so a decimal place here would be a
+    # precision the placement does not have.
+    (0.5, True, "a mile or two"),
+    (1.4, True, "a mile or two"),
+    (None, False, None),
+])
+def test_a_distance_is_said_to_the_precision_it_has(miles, approximate, expected):
+    from site_build import _distance_phrase
+    assert _distance_phrase(miles, approximate) == expected
