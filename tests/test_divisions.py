@@ -183,7 +183,7 @@ def test_loading_one_division_does_not_delete_its_neighbour():
 
 # ── the FA allocations, which still settle who plays where now ─────────
 
-ALLOCATIONS = PROJECT_ROOT / "data" / "raw" / "nls-allocations-2026-27.tsv"
+ALLOCATIONS = PROJECT_ROOT / "data" / "nls-allocations-2026-27.tsv"
 
 
 def _allocations():

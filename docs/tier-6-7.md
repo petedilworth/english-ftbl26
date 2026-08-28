@@ -69,13 +69,13 @@ matches**, so it is part-played and the site says so.
 
 ## What it cost
 
-**153 clubs joined `club_master`** — 118 that appear in these seasons and 35
-more from the FA's 2026/27 allocations. `club_roster.csv` and `src/roster.py`
+**158 clubs joined `club_master`** — 118 that appear in these seasons and 40
+more that the FA's 2026/27 allocations name but this data does not reach. `club_roster.csv` and `src/roster.py`
 are retired: they existed only because a club with no league history had
 nowhere to keep an identity, and now every one of them has standings rows.
 
 The audit that made the fold safe: **no tier-1-to-5 standings row changed.**
-Adding 153 names to the entity resolver could have re-resolved an existing
+Adding 158 names to the entity resolver could have re-resolved an existing
 spelling; it re-resolved none, and the test pins it.
 
 **The `level.py` ladder is seven tiers deep now**, and two consequences are
@@ -118,6 +118,8 @@ for a club whose location this project cannot fix.
 
 **Eighty-two have no `current_tier`.** They played at the sixth or seventh
 tier in these seasons and this project does not record where they are now. The
-FA allocations settle steps 1 to 4 and would answer it for about twenty of
+FA allocations (`data/nls-allocations-2026-27.tsv`, kept out of `data/raw/`
+because that directory is gitignored and this file cannot be fetched again)
+settle steps 1 to 4 and would answer it for about twenty of
 them; the rest are below that. Blank means unknown, and the catchment model
 gives an unknown club no pull rather than a guessed one.
