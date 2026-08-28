@@ -2,6 +2,7 @@
 {% block content %}
 <h1>{{ heading }}</h1>
 <p class="subtitle">{{ intro }}</p>
+<p class="finance-note"><a href="{{ root }}/teams/table/clubs.csv">Download the whole thing as CSV</a> — one row per club, sort values rather than formatted ones.</p>
 
 {% for table in tables %}
 <h2>{{ table.heading }}</h2>
