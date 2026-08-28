@@ -25,6 +25,7 @@ sys.path.insert(0, str(_SRC))
 
 import aggregate  # noqa: E402  (points-era boundary for records tables)
 import content  # noqa: E402  (needs _SRC on the path first)
+import divisions
 import finances  # noqa: E402  (disclosure states for the club finances table)
 import historical  # noqa: E402  (why a backfilled table is flagged not-final)
 
@@ -37,12 +38,15 @@ logger = logging.getLogger(__name__)
 # flight" has to say which.
 PREMIER_LEAGUE_FROM = 1993
 
+# The single-division tiers, derived from the registry rather than
+# restated here. A tier that holds several divisions is deliberately
+# absent: it has no one slug and no one name, and the callers below that
+# use this are all asking a question about a tier that is a division.
+# Division pages themselves are built from divisions.DIVISIONS.
 TIER_SLUGS = {
-    1: ("premier-league", "Premier League"),
-    2: ("championship", "Championship"),
-    3: ("league-one", "League One"),
-    4: ("league-two", "League Two"),
-    5: ("national-league", "National League"),
+    d.tier: (d.division_id, d.name)
+    for d in divisions.DIVISIONS
+    if divisions.sole_division(d.tier) is not None
 }
 
 STATUS_PRESENTATION = {
@@ -1029,12 +1033,30 @@ class SiteBuilder:
 
     def build_divisions(self) -> None:
         index_entries = []
-        for tier, (slug, name) in TIER_SLUGS.items():
+        # By division, not by tier: a tier can hold more than one, and a
+        # page keyed on the tier would concatenate two league tables into
+        # a single list of positions that each start at 1. Divisions with
+        # no rows are skipped, so a registry entry awaiting data costs
+        # nothing.
+        # A committed database can predate the division_id column, and so
+        # can a fixture. Such a database has one division per tier by
+        # construction, so the tier addresses the division unambiguously -
+        # the same degrade-rather-than-raise rule as trajectory_cols.
+        keyed_by_division = "division_id" in self.standings_cols
+
+        for division in divisions.DIVISIONS:
+            slug, name, tier = division.division_id, division.name, division.tier
+            if keyed_by_division:
+                column, key = "division_id", slug
+            elif divisions.sole_division(tier) is not None:
+                column, key = "tier", tier
+            else:
+                continue
             season_years = [
                 r[0] for r in self.conn.execute(
-                    "SELECT DISTINCT season_end_year FROM standings WHERE tier = ?"
-                    " ORDER BY season_end_year DESC",
-                    (tier,),
+                    f"SELECT DISTINCT season_end_year FROM standings"
+                    f" WHERE {column} = ? ORDER BY season_end_year DESC",
+                    (key,),
                 )
             ]
             if not season_years:
@@ -1046,11 +1068,12 @@ class SiteBuilder:
             seasons = []
             for year in season_years:
                 rows = self.conn.execute(
-                    """
+                    f"""
                     SELECT * FROM standings
-                    WHERE season_end_year = ? AND tier = ? ORDER BY position
+                    WHERE season_end_year = ? AND {column} = ?
+                    ORDER BY position
                     """,
-                    (year, tier),
+                    (year, key),
                 ).fetchall()
                 seasons.append({
                     "label": season_label(year),
@@ -1091,7 +1114,12 @@ class SiteBuilder:
         dist = json.loads(t["tier_distribution"] or "{}")
         total = sum(dist.values()) or 1
         segments = []
-        for key in ["1", "2", "3", "4", "5", "outside"]:
+        # From the ladder, not a hardcoded list: a tier added to level.py
+        # and forgotten here would be dropped from the bar while still
+        # counting in its denominator, so every share would be wrong.
+        # Empty buckets are skipped below, so this stays identical output.
+        for key in ["outside" if b == level_mod.OUTSIDE else str(b)
+                    for b in level_mod.BUCKET_LADDER]:
             n = dist.get(key, 0)
             if not n:
                 continue
@@ -1106,7 +1134,10 @@ class SiteBuilder:
             })
 
         recorded, seasons = t["natural_level_recorded"], t["natural_level_seasons"]
-        window = (f"{seasons} seasons, {recorded} of them inside the top five tiers"
+        depth = len(level_mod.BUCKET_LADDER) - 1        # the ladder minus "outside"
+        depth_word = {5: "five", 6: "six", 7: "seven"}.get(depth, str(depth))
+        window = (f"{seasons} seasons, {recorded} of them inside the top"
+                  f" {depth_word} tiers"
                   if recorded < seasons else f"{seasons} recorded seasons")
 
         trend_line = None
@@ -2449,10 +2480,14 @@ class SiteBuilder:
             return []
 
         placeholders = ",".join("?" * len(values))
+        # See charts._ladder_position: a database without the column has
+        # one division per tier, where position is the place in the level.
+        ladder = ("COALESCE(s.tier_position, s.position)"
+                  if "tier_position" in self.standings_cols else "s.position")
         rows = self.conn.execute(
             f"""
             SELECT s.club_id, s.tier, s.position,
-                   s.position + (
+                   {ladder} + (
                        SELECT COUNT(*) FROM standings s2
                        WHERE s2.season_end_year = s.season_end_year
                          AND s2.tier < s.tier
