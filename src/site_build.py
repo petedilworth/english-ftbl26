@@ -1408,15 +1408,36 @@ class SiteBuilder:
         ("overall", "Overall", "Where they finished", True),
         ("division", "Division", "Where they finished", False),
         ("place", "Place", "Where they finished", True),
+        ("current_tier", "Tier now", "Where they finished", True),
         ("natural_level", "Natural level", "Record", False),
+        ("second_level", "Second level", "Record", False),
+        ("level_share", "Share at it", "Record", True),
+        ("trend", "Trend", "Record", False),
+        ("level_gap", "Divisions off it", "Record", True),
         ("streak", "Seasons at level", "Record", True),
-        ("tier1", "Top-flight seasons", "Record", True),
         ("range", "Tier range", "Record", False),
-        ("promotions", "Promotions", "Record", True),
-        ("relegations", "Relegations", "Record", True),
-        ("yo_yo", "Yo-yo score", "Record", True),
+        ("seasons", "Seasons", "Record", True),
+        ("seasons_inside", "Of them recorded", "Record", True),
         ("first_season", "First recorded", "Record", True),
         ("last_season", "Last recorded", "Record", True),
+        ("gaps_ambiguous", "Gaps ambiguous", "Record", False),
+        ("titles", "Titles", "Honours & sanctions", True),
+        ("tier1", "Top-flight seasons", "Honours & sanctions", True),
+        ("last_tier1", "Last top flight", "Honours & sanctions", True),
+        ("promotions", "Promotions", "Honours & sanctions", True),
+        ("relegations", "Relegations", "Honours & sanctions", True),
+        ("yo_yo", "Yo-yo score", "Honours & sanctions", True),
+        ("docked_points", "Points docked", "Honours & sanctions", True),
+        ("docked_times", "Times docked", "Honours & sanctions", True),
+        ("administrations", "Administrations", "Honours & sanctions", True),
+        ("best", "Best finish", "All-time record", True),
+        ("average", "Average finish", "All-time record", True),
+        ("worst", "Worst finish", "All-time record", True),
+        ("played", "Played", "All-time record", True),
+        ("win_rate", "Win rate", "All-time record", True),
+        ("goals_for", "Goals for", "All-time record", True),
+        ("goals_against", "Goals against", "All-time record", True),
+        ("goal_diff", "Goal difference", "All-time record", True),
         ("t1", "T1", "Seasons per tier", True),
         ("t2", "T2", "Seasons per tier", True),
         ("t3", "T3", "Seasons per tier", True),
@@ -1427,10 +1448,15 @@ class SiteBuilder:
         ("tout", "Outside", "Seasons per tier", True),
         ("founded", "Founded", "Club", True),
         ("nickname", "Nickname", "Club", False),
+        ("origin_type", "How it began", "Club", False),
+        ("rivals", "Rivals", "Club", True),
         ("stadium", "Ground", "Ground", False),
         ("capacity", "Capacity", "Ground", True),
+        ("stadium_opened", "Opened", "Ground", True),
         ("ground_years", "Years there", "Ground", True),
+        ("previous_grounds", "Former grounds", "Ground", True),
         ("ground_ownership", "Ground owned", "Ground", False),
+        ("pitch_type", "Pitch", "Ground", False),
         ("ownership_model", "Ownership", "Ownership", False),
         ("owner", "Owner", "Ownership", False),
         ("owner_since", "Since", "Ownership", True),
@@ -1439,12 +1465,18 @@ class SiteBuilder:
         ("wage_ratio", "Wages \u00f7 rev", "accounts", True),
         ("profit", "Profit before tax", "accounts", True),
         ("net_debt", "Net debt", "accounts", True),
+        ("rev_matchday", "Matchday", "accounts", True),
+        ("rev_broadcast", "Broadcast", "accounts", True),
+        ("rev_commercial", "Commercial", "accounts", True),
         ("catchment", "Catchment", "Catchment", True),
         ("catchment_ceiling", "At its ceiling", "Catchment", True),
-        ("catchment_income", "Household income", "Catchment", True),
+        ("voronoi", "People nearest", "Catchment", True),
         ("contested", "Contested", "Catchment", True),
+        ("catchment_income", "Household income", "Catchment", True),
         ("nearest", "Nearest club", "Catchment", False),
+        ("nearest_tier", "Its tier", "Catchment", True),
         ("nearest_miles", "Miles", "Catchment", True),
+        ("located", "Placed at", "Catchment", False),
     ]
 
     def _accounts_season(self) -> int | None:
@@ -1502,18 +1534,58 @@ class SiteBuilder:
         if accounts_season is not None:
             for row in conn.execute(
                     "SELECT club_id, turnover, staff_costs, profit_before_tax,"
-                    " net_debt FROM club_finances"
+                    " net_debt, revenue_matchday, revenue_broadcast,"
+                    " revenue_commercial FROM club_finances"
                     " WHERE season_end_year = ? AND disclosure = 'full'",
                     (accounts_season,)):
                 finances[row[0]] = row[1:]
+
+        # A club's whole record in one pass, and its best, worst and
+        # average place on the LADDER rather than in its own division -
+        # fourth in the Championship and fourth in League Two are not the
+        # same finish, and only the ladder says so.
+        career: dict[str, dict] = {}
+        for club_id, year, tier, place, status, played, won, gf, ga, docked in conn.execute(
+                "SELECT club_id, season_end_year, tier,"
+                " COALESCE(tier_position, position), status, played, won,"
+                " gf, ga, COALESCE(points_deducted, 0) FROM standings"
+                " WHERE club_id IS NOT NULL"):
+            overall = (place or 0) + cumulative.get((year, tier), 0)
+            entry = career.setdefault(club_id, {
+                "seasons": 0, "titles": 0, "played": 0, "won": 0,
+                "gf": 0, "ga": 0, "docked": 0, "places": [],
+            })
+            entry["seasons"] += 1
+            entry["titles"] += 1 if status == "Champions" else 0
+            entry["played"] += played or 0
+            entry["won"] += won or 0
+            entry["gf"] += gf or 0
+            entry["ga"] += ga or 0
+            entry["docked"] += docked or 0
+            entry["places"].append(overall)
+
+        # How many separate times, not how many points: a club docked ten
+        # once and a club docked one point ten times are different stories.
+        docked_times: dict[str, int] = {}
+        try:
+            for club_id, n in conn.execute(
+                    "SELECT club_id, COUNT(*) FROM points_deductions"
+                    " WHERE applied = 1 GROUP BY 1"):
+                docked_times[club_id] = n
+        except sqlite3.Error:
+            pass
 
         catchment = {}
         if self._has_catchment():
             for row in conn.execute(
                     "SELECT club_id, catchment_pop_current,"
                     " catchment_pop_restored, catchment_income, contest_ratio,"
-                    " nearest_rival_id, nearest_rival_miles FROM club_catchment"):
+                    " nearest_rival_id, nearest_rival_miles, voronoi_pop,"
+                    " nearest_rival_tier FROM club_catchment"):
                 catchment[row[0]] = row[1:]
+
+        tiers = dict(conn.execute(
+            "SELECT club_id, current_tier FROM club_master"))
 
         grounds, names = {}, {}
         for club_id, name, stadium in conn.execute(
@@ -1522,13 +1594,22 @@ class SiteBuilder:
             if stadium:
                 grounds[club_id] = stadium
 
+        precision = {}
+        if "location_precision" in self.master_cols:
+            precision = {r[0]: r[1] for r in conn.execute(
+                "SELECT club_id, location_precision FROM club_master")}
+
         return {"trajectory": trajectory, "latest": latest,
                 "finances": finances, "accounts_season": accounts_season,
-                "catchment": catchment, "grounds": grounds, "names": names}
+                "catchment": catchment, "grounds": grounds, "names": names,
+                "career": career, "docked_times": docked_times,
+                "precision": precision, "tiers": tiers}
 
     def _club_table_row(self, club_id: str, data: dict, season: int) -> list[dict]:
         """One club's cells, in CLUB_TABLE_COLUMNS order."""
         import json
+
+        import level as level_mod
 
         def cell(text=None, sort=None, num=False, club_id=None):
             # sort defaults to the text, and a missing value carries no
@@ -1543,6 +1624,12 @@ class SiteBuilder:
         fin = data["finances"].get(club_id)
         catch = data["catchment"].get(club_id)
         names = data.get("names", {})
+        career = data["career"].get(club_id)
+
+        def count_of(key):
+            """A front-matter list's length, or None where nobody looked."""
+            value = facts.get(key)
+            return len(value) if isinstance(value, list) and value else None
 
         values = {
             "name": cell(t["canonical_name"] if t else club_id, club_id=club_id),
@@ -1551,6 +1638,9 @@ class SiteBuilder:
             "overall": cell(recent.get("overall"), num=True),
             "division": cell(recent.get("division")),
             "place": cell(recent.get("place"), num=True),
+            # Where they play NOW, which for a club last recorded in
+            # 2018/19 is the only column that is not seven years old.
+            "current_tier": cell(data["tiers"].get(club_id) or None, num=True),
         }
 
         if t:
@@ -1577,6 +1667,23 @@ class SiteBuilder:
                 "last_season": cell(season_label(t["last_season_in_db"])
                                     if t["last_season_in_db"] else None,
                                     sort=t["last_season_in_db"], num=True),
+                "seasons_inside": cell(t["natural_level_recorded"], num=True),
+                "second_level": cell(
+                    level_mod.bucket_name(t["natural_level_second_tier"],
+                                          t["coverage_note"])
+                    if t["natural_level_second_tier"] else None),
+                "level_share": cell(
+                    f"{t['natural_level_share']:.0%}"
+                    if t["natural_level_share"] is not None else None,
+                    sort=t["natural_level_share"], num=True),
+                "trend": cell(t["natural_level_trend"]),
+                # Positive is below its level, negative above, which is
+                # how level.py computes it - the sign is the direction.
+                "level_gap": cell(t["natural_level_gap"], num=True),
+                "gaps_ambiguous": cell("yes" if t["coverage_note"] else None),
+                "last_tier1": cell(season_label(t["last_tier1_season"])
+                                   if t["last_tier1_season"] else None,
+                                   sort=t["last_tier1_season"], num=True),
             })
             # A zero here is a fact - the club played no seasons at that
             # level - so unlike everywhere else on this row it is shown
@@ -1586,6 +1693,36 @@ class SiteBuilder:
                                 ("t4", "4"), ("t5", "5"), ("t6", "6"),
                                 ("t7", "7"), ("tout", "outside")]:
                 values[key] = cell(spread.get(bucket, 0), num=True)
+
+        if career:
+            places = career["places"]
+            played, won = career["played"], career["won"]
+            values.update({
+                "seasons": cell(career["seasons"], num=True),
+                "titles": cell(career["titles"], num=True),
+                "best": cell(min(places), num=True),
+                "worst": cell(max(places), num=True),
+                "average": cell(f"{sum(places) / len(places):.1f}",
+                                sort=sum(places) / len(places), num=True),
+                "played": cell(f"{played:,}" if played else None,
+                               sort=played or None, num=True),
+                "win_rate": cell(f"{won / played:.0%}" if played else None,
+                                 sort=(won / played) if played else None,
+                                 num=True),
+                "goals_for": cell(f"{career['gf']:,}" if career["gf"] else None,
+                                  sort=career["gf"] or None, num=True),
+                "goals_against": cell(f"{career['ga']:,}" if career["ga"]
+                                      else None,
+                                      sort=career["ga"] or None, num=True),
+                "goal_diff": cell(f"{career['gf'] - career['ga']:+,}"
+                                  if career["played"] else None,
+                                  sort=career["gf"] - career["ga"], num=True),
+                # Blank rather than nought: a club with no deduction has
+                # nothing to say here, and a zero would sort it among the
+                # clubs that were docked and got the points back.
+                "docked_points": cell(career["docked"] or None, num=True),
+                "docked_times": cell(data["docked_times"].get(club_id), num=True),
+            })
 
         founded = facts.get("founded")
         opened = facts.get("stadium_opened")
@@ -1602,10 +1739,18 @@ class SiteBuilder:
                 (facts.get("ownership_model") or "").replace("_", " ") or None),
             "owner": cell(facts.get("owner")),
             "owner_since": cell(facts.get("owner_since"), num=True),
+            "origin_type": cell(
+                (facts.get("origin_type") or "").replace("_", " ") or None),
+            "rivals": cell(count_of("rivalries"), num=True),
+            "previous_grounds": cell(count_of("previous_grounds"), num=True),
+            "administrations": cell(count_of("administration"), num=True),
+            "stadium_opened": cell(opened, num=True),
+            "pitch_type": cell(
+                (facts.get("pitch_type") or "").replace("_", " ") or None),
         })
 
         if fin:
-            turnover, wages, profit, net_debt = fin
+            turnover, wages, profit, net_debt, matchday, broadcast, commercial = fin
             ratio = (wages / turnover) if turnover and wages else None
             values.update({
                 "turnover": cell(_fmt_money(turnover) if turnover is not None
@@ -1618,10 +1763,19 @@ class SiteBuilder:
                                sort=profit, num=True),
                 "net_debt": cell(_fmt_money(net_debt) if net_debt is not None
                                  else None, sort=net_debt, num=True),
+                "rev_matchday": cell(_fmt_money(matchday) if matchday is not None
+                                     else None, sort=matchday, num=True),
+                "rev_broadcast": cell(_fmt_money(broadcast)
+                                      if broadcast is not None else None,
+                                      sort=broadcast, num=True),
+                "rev_commercial": cell(_fmt_money(commercial)
+                                       if commercial is not None else None,
+                                       sort=commercial, num=True),
             })
 
         if catch:
-            current, restored, income, contested, rival_id, miles = catch
+            (current, restored, income, contested, rival_id, miles, voronoi,
+             rival_tier) = catch
             values.update({
                 "catchment": cell(f"{current:,}" if current is not None else None,
                                   sort=current, num=True),
@@ -1638,7 +1792,16 @@ class SiteBuilder:
                                 else None),
                 "nearest_miles": cell(f"{miles:.1f}" if miles is not None else None,
                                       sort=miles, num=True),
+                # The denominator "contested" is a share of. Without it
+                # the percentage cannot be checked against anything.
+                "voronoi": cell(f"{voronoi:,}" if voronoi is not None else None,
+                                sort=voronoi, num=True),
+                "nearest_tier": cell(rival_tier or None, num=True),
             })
+
+        # Whether the club's own coordinate is a surveyed ground or a town
+        # centre, which every catchment figure on this row inherits.
+        values["located"] = cell(data["precision"].get(club_id) or None)
 
         return [values.get(key, cell(num=num))
                 for key, _label, _group, num in self.CLUB_TABLE_COLUMNS]
@@ -1710,6 +1873,8 @@ class SiteBuilder:
             else:
                 groups.append({"label": column["group"], "span": 1})
 
+        self._write_club_csv(columns, now_rows + gone_rows)
+
         self.render(
             "club_table.html", self.out / "teams" / "table" / "index.html", 2,
             title="All clubs, all data",
@@ -1735,6 +1900,37 @@ class SiteBuilder:
                  "rows": gone_rows},
             ],
         )
+
+    def _write_club_csv(self, columns: list[dict], rows: list) -> None:
+        """
+        The same rows as a file, because at seventy-four columns the table
+        cannot be the only way in. Anyone who wants a seventy-fifth field,
+        or a chart, or a join against something else, should not have to
+        scrape the page for it.
+
+        The SORT value is written, not the displayed one: "£1.2m" is for
+        reading and 1200000 is for computing with, and a CSV is for
+        computing with. A blank stays blank rather than becoming a zero,
+        the same rule the table sorts by.
+        """
+        import csv as csv_mod
+
+        path = self.out / "teams" / "table" / "clubs.csv"
+        path.parent.mkdir(parents=True, exist_ok=True)
+        with path.open("w", encoding="utf-8", newline="") as fh:
+            writer = csv_mod.writer(fh)
+            # club_id leads, and only here. The table links to it so it
+            # does not need a column; a file does, because a display name
+            # is not a key and anything joined against this will want the
+            # permanent id rather than "Manchester United".
+            writer.writerow(["club_id"] + [column["label"] for column in columns])
+            for row in rows:
+                writer.writerow(
+                    [row[0]["club_id"] or ""]
+                    + ["" if cell["sort"] is None else cell["sort"]
+                       for cell in row]
+                )
+        logger.info("Wrote %s (%d clubs)", path.name, len(rows))
 
     def build_themes(self) -> None:
         """

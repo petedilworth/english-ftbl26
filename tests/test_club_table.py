@@ -159,3 +159,94 @@ def test_the_accounts_column_is_named_for_the_season_it_holds():
 
 def test_the_sort_script_is_loaded():
     assert "club-table.js" in _page()
+
+
+# ── the all-time columns, checked against the standings they came from ─
+
+CSV = PROJECT_ROOT / "site" / "teams" / "table" / "clubs.csv"
+
+
+def _csv_rows():
+    if not CSV.exists():
+        pytest.skip("site not built")
+    import csv
+    with CSV.open(encoding="utf-8") as fh:
+        return list(csv.DictReader(fh))
+
+
+def test_the_career_columns_match_the_standings_they_are_summed_from():
+    if not DB.exists():
+        pytest.skip("no built database")
+    conn = sqlite3.connect(DB)
+    truth = {r[0]: r[1:] for r in conn.execute(
+        "SELECT club_id, COUNT(*), SUM(status = 'Champions'), SUM(played),"
+        " SUM(won), SUM(gf), SUM(ga), SUM(COALESCE(points_deducted, 0))"
+        " FROM standings WHERE club_id IS NOT NULL GROUP BY 1")}
+
+    checked = 0
+    for row in _csv_rows():
+        seasons, titles, played, won, gf, ga, docked = truth[row["club_id"]]
+        assert int(row["Seasons"]) == seasons
+        assert int(row["Titles"]) == titles
+        assert int(row["Played"] or 0) == (played or 0)
+        assert int(row["Goals for"] or 0) == (gf or 0)
+        assert int(row["Goals against"] or 0) == (ga or 0)
+        assert int(row["Goal difference"] or 0) == (gf or 0) - (ga or 0)
+        # Blank rather than nought where a club was never docked: a zero
+        # would sort it among the clubs that were.
+        assert int(row["Points docked"] or 0) == docked
+        checked += 1
+    assert checked == len(truth)
+
+
+def test_best_is_never_worse_than_average_and_average_never_worse_than_worst():
+    for row in _csv_rows():
+        best, average, worst = (float(row["Best finish"]),
+                                float(row["Average finish"]),
+                                float(row["Worst finish"]))
+        assert best <= average <= worst, row["club_id"]
+
+
+def test_the_csv_is_one_row_per_club_and_leads_with_the_id():
+    """
+    A display name is not a key. Anything joined against this file wants
+    the permanent id, and "Manchester United" is not it.
+    """
+    rows = _csv_rows()
+    ids = [row["club_id"] for row in rows]
+    assert all(ids), "a row has no club_id"
+    assert len(ids) == len(set(ids))
+
+    if DB.exists():
+        conn = sqlite3.connect(DB)
+        assert set(ids) == {r[0] for r in conn.execute(
+            "SELECT DISTINCT club_id FROM standings WHERE club_id IS NOT NULL")}
+
+
+def test_the_csv_holds_sort_values_rather_than_formatted_ones():
+    """
+    "£1.2m" is for reading and 1200000 is for computing with. A CSV is
+    for computing with.
+    """
+    for row in _csv_rows():
+        for column in ("Turnover", "Wages", "Catchment", "Contested"):
+            if row[column]:
+                float(row[column])
+                assert "£" not in row[column] and "%" not in row[column]
+
+
+def test_an_unrecorded_value_is_an_empty_field_not_a_zero():
+    rows = _csv_rows()
+    sparse = [row["Pitch"] for row in rows]
+    assert any(v == "" for v in sparse), "expected a mostly-empty column"
+    assert all(v != "0" for v in sparse)
+
+
+def test_the_csv_and_the_table_carry_the_same_columns():
+    html = _page()
+    labels = re.findall(r'<th[^>]*data-key="[^"]+"[^>]*>(.*?)</th>', html, re.S)
+    labels = [re.sub(r"<[^>]+>", "", x).strip() for x in labels]
+    labels = labels[:len(labels) // 2]          # the header repeats per table
+    header = _csv_rows()[0].keys()
+    # club_id leads the file and has no column in the table.
+    assert list(header)[1:] == labels
