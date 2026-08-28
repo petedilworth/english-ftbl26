@@ -1576,6 +1576,25 @@ class SiteBuilder:
                 "path": finance_path,
             })
 
+        # One tile for the three catchment metrics, same reasoning as the
+        # financial group: they share a page and switch by chip. Absent
+        # entirely until msoa_demographics.csv exists, because
+        # _metric_landing_path returns None when nothing is plotted.
+        catchment_path = next(
+            (path for path in (
+                self._metric_landing_path(key)
+                for key, metric in METRICS.items() if metric["source"] == "catchment"
+            ) if path),
+            None,
+        )
+        if catchment_path:
+            charts.append({
+                "slug": "catchment",
+                "name": "Catchment and competition",
+                "sub": "How many people each club can draw on, and who else wants them",
+                "path": catchment_path,
+            })
+
         groups = [g for g in (
             {"title": "Stories",
              "sub": "Arguments drawn from almost seventy years of league tables.",

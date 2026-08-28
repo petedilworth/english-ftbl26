@@ -1,13 +1,22 @@
-# Catchment data — what to download and where to put it
+# Catchment data — sources and how the file was built
 
-`src/catchment.py` needs one file at the repo root: **`msoa_demographics.csv`**.
-It is not committed, because this environment's network policy blocks
-`ons.gov.uk` and `geoportal.statistics.gov.uk` at the proxy, so the data
-could not be fetched here. The code runs without it — `seed_msoa_demographics`
-logs and returns 0, `club_catchment` stays empty, and the catchment charts
-render nothing rather than something wrong.
+`src/catchment.py` reads **`msoa_demographics.csv`** at the repo root. It is
+now committed: **6,856 English MSOAs, 58,620,101 people**, which is England.
 
-Assembling it is a short manual job for anyone with an unblocked browser.
+The three ONS sources cannot be fetched from this environment —
+`ons.gov.uk` and `geoportal.statistics.gov.uk` are refused at the proxy — so
+they were downloaded by hand and joined by
+`scripts/build_msoa_demographics.py`. Re-run that script when the sources are
+refreshed:
+
+```bash
+python3 scripts/build_msoa_demographics.py CENTROIDS.csv POP.xlsx INCOME.xlsx \
+    --check msoa_latlong.csv
+```
+
+The code still degrades safely if the file is removed:
+`seed_msoa_demographics` logs and returns 0, `club_catchment` stays empty, and
+the catchment charts disappear rather than rendering something wrong.
 
 ## The three sources
 
@@ -30,10 +39,17 @@ Optional but wanted: `msoa_name`, `local_authority`, `population_year`,
 `net_income`, `net_income_year`, `income_ci_lower`, `income_ci_upper`,
 `source_url`.
 
-Centroids must be **WGS84 latitude/longitude**, not British National Grid
-eastings and northings. The portal offers both; taking the wrong one puts
-every club in the North Sea, and the loader will reject the rows as outside
-England rather than quietly mapping them.
+**The centroids arrive as British National Grid eastings and northings**, not
+latitude and longitude — the trap this file warned about before it was built.
+`scripts/bng.py` converts them: inverse transverse Mercator onto the Airy 1830
+ellipsoid, then a Helmert datum shift to WGS84, accurate to about a metre.
+
+A wrong conversion is off by hundreds of miles rather than metres, so the
+build script validates against an independent WGS84 source with `--check`.
+Against `drkane/geo-lookups/msoa_latlong.csv` the **median offset is 0.21
+miles** — that residual is the population-weighted versus geometric centroid
+difference, not a projection error. The script aborts if the median exceeds
+five miles.
 
 ## Why the income confidence interval is a required habit, not a nicety
 
