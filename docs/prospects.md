@@ -34,26 +34,28 @@ in before any further research spend.
 
 Catchment is the gravity model's population at the club's *restored* ceiling —
 what it would draw if it climbed back — and contest is the share of that a
-bigger neighbour takes. Both come from `club_catchment`.
+bigger neighbour takes. Both come from `club_catchment`, and both now include
+the 71 sixth- and seventh-tier clubs of the roster, which the model could not
+see before. Every figure here is lower than it was.
 
 | Club | Buyable | Tenure | Catchment | Contested | The decisive fact |
 |---|---|---|---|---|---|
-| **Maidstone United** | **yes** | **freehold** | 217,489 | **75%** | Owners actively seeking a majority sale — but have publicly offered to divest the club **while retaining the stadium freehold** |
-| **Morecambe** | yes | leasehold_long | 162,464 | 52% | Cleanest cap table in the cohort, worst everything else |
-| Southport | unknown | leasehold_long | 160,275 | 51% | Lease term is not on the public record — the single decisive unknown |
-| Macclesfield Town | unknown | freehold | 170,617 | 60% | Control moved to a Jersey vehicle; founder hostile and under investigation |
-| Torquay United | no | leasehold_long | 314,473 | **29%** | Consortium not selling; trust's golden share vetoes even the stadium |
-| Dagenham & Redbridge | no | unknown | 397,430 | 68% | Control settled Feb 2026; KSI stake; a post-hype price |
-| Darlington | no | leasehold_short | 196,217 | 65% | 91.66% held by a CBS with a 5% individual cap |
-| Bury | no | freehold | 496,396 | 48% | Holding company has no share capital |
-| Hereford United | no | leasehold_long | 335,835 | 43% | Trust 50%, Articles cap others at 49% |
-| Chester City | no | council | 149,053 | 61% | Fan-owned society; funded 2020 bid withdrew over control |
-| Rushden & Diamonds | no | leasehold_short | 255,709 | 64% | CBS; Nene Park demolished, site still vacant |
-| Scarborough | no | council | 94,195 | 59% | 100% fan-owned society |
+| **Maidstone United** | **yes** | **freehold** | 205,634 | **56%** | Owners actively seeking a majority sale — but have publicly offered to divest the club **while retaining the stadium freehold** |
+| **Morecambe** | yes | leasehold_long | 148,230 | 33% | Cleanest cap table in the cohort, worst everything else |
+| Southport | unknown | leasehold_long | 156,797 | 35% | Lease term is not on the public record — the single decisive unknown |
+| Macclesfield Town | unknown | freehold | 166,429 | 49% | Control moved to a Jersey vehicle; founder hostile and under investigation |
+| Torquay United | no | leasehold_long | 310,511 | **26%** | Consortium not selling; trust's golden share vetoes even the stadium |
+| Dagenham & Redbridge | no | unknown | 382,084 | 68% | Control settled Feb 2026; KSI stake; a post-hype price |
+| Darlington | no | leasehold_short | 191,694 | 65% | 91.66% held by a CBS with a 5% individual cap |
+| Bury | no | freehold | 481,230 | 34% | Holding company has no share capital |
+| Hereford United | no | leasehold_long | 316,419 | 36% | Trust 50%, Articles cap others at 49% |
+| Chester City | no | council | 146,457 | 61% | Fan-owned society; funded 2020 bid withdrew over control |
+| Rushden & Diamonds | no | leasehold_short | 246,004 | 45% | CBS; Nene Park demolished, site still vacant |
+| Scarborough | no | council | 93,190 | 60% | 100% fan-owned society |
 
 **The best catchment in the cohort belongs to the club with no share capital,
 and the most open one to the club whose trust can veto the stadium.** Bury's
-half-million is Greater Manchester, Torquay's 29% is the emptiest position
+481,230 is Greater Manchester, Torquay's 26% is the emptiest position
 anywhere in the twelve, and neither can be bought. That is the contradiction
 of the first section restated in numbers.
 
@@ -66,17 +68,25 @@ this is the single result that justifies having built the catchment model.**
 Counting only the fifth tier and above, **Gillingham at 7.4 miles is the only
 club within 20 miles of Maidstone**, where Dagenham has four inside eight — so
 a screen ranking on distance puts Maidstone first. The gravity model puts
-**75% of its catchment in contest, the worst figure of the four clubs that are
-buyable or might be**, against Morecambe's 52%, Southport's 51% and
-Macclesfield's 60%.
+**56% of its catchment in contest, the worst figure of the four clubs that are
+buyable or might be**, against Macclesfield's 49%, Southport's 35% and
+Morecambe's 33%.
 
-Two things the distance test threw away. It ignored the tier below: Ebbsfleet,
-Grays, Dartford and Canvey Island are all within 17 miles, and the gravity
-model counts them because supporters do. And it treated 7.4 miles and 20 miles
-as the same fact, when β = 2 means a club four times closer pulls sixteen times
-harder — **one neighbour in dense commuter Kent takes more than Morecambe's
-four in coastal Lancashire do**. The 217,489 people are real; three quarters of
-them have somewhere else to go.
+Two things the distance test threw away. It ignored the tiers below: Ebbsfleet,
+Grays, Dartford and Canvey Island are all within 17 miles, and the roster adds
+**Tonbridge Angels at about seven** — now Maidstone's nearest neighbour of any
+kind, and a club this model could not see at all until the FA's allocations
+were loaded. And it treated 7.4 miles and 20 miles as the same fact, when
+β = 2 means a club four times closer pulls sixteen times harder. The 205,634
+people are real; more than half of them have somewhere else to go.
+
+**The roster narrowed the finding without overturning it.** Adding the clubs
+below the fifth tier cut every contest ratio, because a club keeps more of a
+smaller Voronoi cell, and it cut Maidstone's as hard as anyone's: −19 points,
+against Morecambe −19, Southport −16 and Macclesfield −11. Maidstone is still
+the most contested of the four, but by **7 points rather than 15**. The
+conclusion survives on a thinner margin than the pre-roster numbers implied,
+and a reader entitled to one caveat should have that one.
 
 Two things to hold against it. The sellers have said publicly that they would
 consider **selling the club while keeping the ground** — which converts the
@@ -129,11 +139,19 @@ board has concluded that only a new stadium can get it back to the EFL.
   the pre-merger parent inflates is the *length* of the record, not its
   height.
 - **The catchment figures are modelled, twice over.** `club_catchment` now
-  holds 165 rows from 6,856 MSOAs and 58.6m people, but the population is
+  holds 245 rows from 6,856 MSOAs and 58.6m people, but the population is
   allocated by a Huff gravity model with a judgement-call β and judgement-call
   tier weights (`gravity-v1-beta2`), and the income layer underneath it is ONS
   *modelled* small-area income with intervals often ±15%. The rank order is
   argued with, not read off.
+- **Twenty sixth- and seventh-tier clubs are still missing**, four of them in
+  the sixth tier, because the ONS gazetteer cannot place a club whose local
+  authority is a wide rural one. Their towns are still credited to their
+  neighbours. `docs/roster-data.md` names all twenty.
+- **Contest ratios before and after the roster are not comparable.** The
+  measure asks what share of its own Voronoi cell a club keeps, and adding
+  clubs shrinks every cell to a tighter, more local area that its club keeps
+  more of. The ordering survived; the level moved for everyone.
 - **The two database defects this research surfaced are now fixed.**
   `club_master.current_tier` was `0` for seven clubs whose successors are
   demonstrably playing — and because `catchment.py` reads that column as the

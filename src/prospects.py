@@ -149,6 +149,19 @@ def candidates(conn: sqlite3.Connection) -> list[dict]:
     except sqlite3.Error:
         catch = {}
 
+    # Clubs the roster placed at a town centroid rather than a surveyed
+    # ground. A distance to one of those is good to a few miles, not to
+    # the mile, and printing "0mi" between Bury and Radcliffe - who share
+    # an authority centroid and are three miles apart in fact - would be
+    # a precision the data does not have.
+    try:
+        approximate = {r[0] for r in conn.execute(
+            "SELECT club_id FROM club_roster WHERE location_precision = 'town'")}
+        approximate |= {r[0] for r in conn.execute(
+            "SELECT club_id FROM club_master WHERE location_precision = 'town'")}
+    except sqlite3.Error:
+        approximate = set()
+
     docked = {r[0] for r in conn.execute(
         "SELECT DISTINCT club_id FROM points_deductions WHERE applied = 1")}
 
@@ -208,6 +221,7 @@ def candidates(conn: sqlite3.Connection) -> list[dict]:
             "contest_ratio": row[3] if row else None,
             "nearest_rival": row[4] if row else None,
             "nearest_rival_miles": row[5] if row else None,
+            "nearest_rival_approx": bool(row) and row[4] in approximate,
             "tenure": known["tenure"] if known else "unknown",
             "purchasable": known["purchasable"] if known else "unknown",
             "ownership_note": known["ownership_note"] if known else "",
@@ -338,7 +352,9 @@ def render(result: dict) -> str:
             con = "—" if r["contest_ratio"] is None else f"{r['contest_ratio']*100:.0f}%"
             notes = []
             if r["nearest_rival_miles"] is not None:
-                notes.append(f"{r['nearest_rival']} {r['nearest_rival_miles']:.0f}mi")
+                about = "~" if r["nearest_rival_approx"] else ""
+                notes.append(
+                    f"{r['nearest_rival']} {about}{r['nearest_rival_miles']:.0f}mi")
             if r["peak_entity"] == "predecessor":
                 sp = r["successor_peak"]
                 notes.append(f"recorded peak {r['peak_tier']} is a dead predecessor"
