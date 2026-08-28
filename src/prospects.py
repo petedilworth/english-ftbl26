@@ -120,6 +120,10 @@ def _load_prospect_facts() -> dict[str, dict]:
                 # the dead club's peak buys the wrong company's history.
                 "peak_entity": (row.get("peak_tier_entity") or "").strip().lower()
                                or "unknown",
+                # The live club's own ceiling, where the recorded one was
+                # reached by a company that no longer exists.
+                "successor_peak": int(row["successor_peak_tier"])
+                                  if (row.get("successor_peak_tier") or "").strip() else None,
                 "entity_note": (row.get("entity_note") or "").strip(),
             }
     return out
@@ -174,7 +178,14 @@ def candidates(conn: sqlite3.Connection) -> list[dict]:
         if peak > 5:
             continue
 
-        if peak <= 4 and current == 0:
+        # Which band depends on WHOSE Football League ceiling it is. This
+        # used to key off current_tier == 0, which stopped identifying a
+        # wound-up company once that column was corrected to record where
+        # the successor actually plays.
+        known = facts.get(club_id)
+        entity = known["peak_entity"] if known else ("predecessor" if current == 0
+                                                     else "unknown")
+        if peak <= 4 and entity == "predecessor":
             band = "B"
         elif peak <= 4:
             band = "A"
@@ -184,7 +195,6 @@ def candidates(conn: sqlite3.Connection) -> list[dict]:
             continue
 
         row = catch.get(club_id)
-        known = facts.get(club_id)
         out.append({
             "club_id": club_id,
             "name": name,
@@ -202,6 +212,7 @@ def candidates(conn: sqlite3.Connection) -> list[dict]:
             "purchasable": known["purchasable"] if known else "unknown",
             "ownership_note": known["ownership_note"] if known else "",
             "peak_entity": known["peak_entity"] if known else "unknown",
+            "successor_peak": known["successor_peak"] if known else None,
             "entity_note": known["entity_note"] if known else "",
             "was_docked": club_id in docked,
             "successor": successors.get(club_id),
@@ -225,7 +236,12 @@ def score(rows: list[dict]) -> list[dict]:
         "uncontested": _normalise(
             {r["club_id"]: r["contest_ratio"] for r in rows}, invert=True),
         # A lower tier number is a higher ceiling, so invert.
-        "ceiling": _normalise({r["club_id"]: r["peak_tier"] for r in rows}, invert=True),
+        # Rank on the ceiling the club being bought actually reached. An
+        # inherited ceiling belongs to a dead company and buying on it
+        # prices the wrong club's history.
+        "ceiling": _normalise(
+            {r["club_id"]: (r["successor_peak"] or r["peak_tier"]) for r in rows},
+            invert=True),
         "fall": _normalise(
             {r["club_id"]: (r["current_tier"] or 7) - r["peak_tier"] for r in rows}),
         "recency": _normalise(
@@ -324,7 +340,9 @@ def render(result: dict) -> str:
             if r["nearest_rival_miles"] is not None:
                 notes.append(f"{r['nearest_rival']} {r['nearest_rival_miles']:.0f}mi")
             if r["peak_entity"] == "predecessor":
-                notes.append("CEILING IS A DEAD PREDECESSOR")
+                sp = r["successor_peak"]
+                notes.append(f"recorded peak {r['peak_tier']} is a dead predecessor"
+                             + (f", live club reached {sp}" if sp else ""))
             if r["was_docked"]:
                 notes.append("docked")
             if r["missing"]:

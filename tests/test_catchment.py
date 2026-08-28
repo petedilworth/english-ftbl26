@@ -238,3 +238,45 @@ def test_contested_share_is_plotted_as_a_percentage(tmp_path):
     SiteBuilder(db, out, charts_enabled=False).build()
     page = (out / "insights" / "catchment" / "contested" / "index.html").read_text()
     assert "71%" in page
+
+
+# ── the current_tier convention ────────────────────────────────────────
+
+def test_every_tier_in_club_master_has_an_explicit_pull_weight():
+    """
+    club_master.current_tier feeds the gravity model. A value with no
+    entry in TIER_ATTRACTIVENESS silently falls back to the default,
+    which would give a step-6 club the same pull as a step-3 one.
+    """
+    import sqlite3
+    db = Path(__file__).parent.parent / "data" / "db" / "england.db"
+    if not db.exists():
+        pytest.skip("no built database")
+    tiers = {t for (t,) in sqlite3.connect(db).execute(
+        "SELECT DISTINCT current_tier FROM club_master WHERE current_tier IS NOT NULL")}
+    missing = sorted(t for t in tiers if t not in catchment.TIER_ATTRACTIVENESS)
+    assert not missing, f"tiers with no explicit weight: {missing}"
+
+
+def test_a_club_whose_successor_plays_is_not_flagged_as_exerting_no_pull():
+    """
+    current_tier = 0 means nobody plays under this id anywhere, and the
+    model gives that club's town to its neighbours. If the prospect
+    research has established a successor's ceiling, somebody is playing,
+    and a 0 would hand away a town that is not free.
+    """
+    import csv, sqlite3
+    root = Path(__file__).parent.parent
+    prospects_csv, db = root / "club_prospects.csv", root / "data" / "db" / "england.db"
+    if not (prospects_csv.exists() and db.exists()):
+        pytest.skip("needs club_prospects.csv and a built database")
+    conn = sqlite3.connect(db)
+    wrong = []
+    for row in csv.DictReader(prospects_csv.open(encoding="utf-8")):
+        if not (row.get("successor_peak_tier") or "").strip():
+            continue
+        got = conn.execute("SELECT current_tier FROM club_master WHERE club_id=?",
+                           (row["club_id"],)).fetchone()
+        if got and got[0] == 0:
+            wrong.append(row["club_id"])
+    assert not wrong, f"successor plays but current_tier is 0: {wrong}"

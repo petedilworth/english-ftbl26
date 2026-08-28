@@ -32,26 +32,51 @@ in before any further research spend.
 
 ## Ranked by what actually survived
 
-| Club | Buyable | Tenure | The decisive fact |
-|---|---|---|---|
-| **Maidstone United** | **yes** | **freehold** | Owners actively seeking a majority sale — but have publicly offered to divest the club **while retaining the stadium freehold** |
-| **Morecambe** | yes | leasehold_long | Cleanest cap table in the cohort, worst everything else |
-| Southport | unknown | leasehold_long | Lease term is not on the public record — the single decisive unknown |
-| Macclesfield Town | unknown | freehold | Control moved to a Jersey vehicle; founder hostile and under investigation |
-| Torquay United | no | leasehold_long | Consortium not selling; trust's golden share vetoes even the stadium |
-| Dagenham & Redbridge | no | unknown | Control settled Feb 2026; KSI stake; a post-hype price |
-| Darlington | no | leasehold_short | 91.66% held by a CBS with a 5% individual cap |
-| Bury | no | freehold | Holding company has no share capital |
-| Hereford United | no | leasehold_long | Trust 50%, Articles cap others at 49% |
-| Chester City | no | council | Fan-owned society; funded 2020 bid withdrew over control |
-| Rushden & Diamonds | no | leasehold_short | CBS; Nene Park demolished, site still vacant |
-| Scarborough | no | council | 100% fan-owned society |
+Catchment is the gravity model's population at the club's *restored* ceiling —
+what it would draw if it climbed back — and contest is the share of that a
+bigger neighbour takes. Both come from `club_catchment`.
+
+| Club | Buyable | Tenure | Catchment | Contested | The decisive fact |
+|---|---|---|---|---|---|
+| **Maidstone United** | **yes** | **freehold** | 217,489 | **75%** | Owners actively seeking a majority sale — but have publicly offered to divest the club **while retaining the stadium freehold** |
+| **Morecambe** | yes | leasehold_long | 162,464 | 52% | Cleanest cap table in the cohort, worst everything else |
+| Southport | unknown | leasehold_long | 160,275 | 51% | Lease term is not on the public record — the single decisive unknown |
+| Macclesfield Town | unknown | freehold | 170,617 | 60% | Control moved to a Jersey vehicle; founder hostile and under investigation |
+| Torquay United | no | leasehold_long | 314,473 | **29%** | Consortium not selling; trust's golden share vetoes even the stadium |
+| Dagenham & Redbridge | no | unknown | 397,430 | 68% | Control settled Feb 2026; KSI stake; a post-hype price |
+| Darlington | no | leasehold_short | 196,217 | 65% | 91.66% held by a CBS with a 5% individual cap |
+| Bury | no | freehold | 496,396 | 48% | Holding company has no share capital |
+| Hereford United | no | leasehold_long | 335,835 | 43% | Trust 50%, Articles cap others at 49% |
+| Chester City | no | council | 149,053 | 61% | Fan-owned society; funded 2020 bid withdrew over control |
+| Rushden & Diamonds | no | leasehold_short | 255,709 | 64% | CBS; Nene Park demolished, site still vacant |
+| Scarborough | no | council | 94,195 | 59% | 100% fan-owned society |
+
+**The best catchment in the cohort belongs to the club with no share capital,
+and the most open one to the club whose trust can veto the stadium.** Bury's
+half-million is Greater Manchester, Torquay's 29% is the emptiest position
+anywhere in the twelve, and neither can be bought. That is the contradiction
+of the first section restated in numbers.
 
 ## Maidstone is the one to look at, and the risk is one clause
 
-The only club in the cohort that is **both for sale and freehold**. It is also
-the least contested position: Gillingham at 7.4 miles is the *only* club within
-20 miles, where Dagenham has four at or above its level inside eight.
+The only club in the cohort that is **both for sale and freehold**.
+
+**On distance it looks like open ground and on people it is the opposite, and
+this is the single result that justifies having built the catchment model.**
+Counting only the fifth tier and above, **Gillingham at 7.4 miles is the only
+club within 20 miles of Maidstone**, where Dagenham has four inside eight — so
+a screen ranking on distance puts Maidstone first. The gravity model puts
+**75% of its catchment in contest, the worst figure of the four clubs that are
+buyable or might be**, against Morecambe's 52%, Southport's 51% and
+Macclesfield's 60%.
+
+Two things the distance test threw away. It ignored the tier below: Ebbsfleet,
+Grays, Dartford and Canvey Island are all within 17 miles, and the gravity
+model counts them because supporters do. And it treated 7.4 miles and 20 miles
+as the same fact, when β = 2 means a club four times closer pulls sixteen times
+harder — **one neighbour in dense commuter Kent takes more than Morecambe's
+four in coastal Lancashire do**. The 217,489 people are real; three quarters of
+them have somewhere else to go.
 
 Two things to hold against it. The sellers have said publicly that they would
 consider **selling the club while keeping the ground** — which converts the
@@ -93,16 +118,34 @@ board has concluded that only a new stadium can get it back to the EFL.
 
 ## Caveats carried in the data
 
-- **Nine of the twelve ceilings belong to a company that no longer exists.**
-  The successor bought a name, not a record. `peak_tier_entity` records this
-  and the screen prints it in capitals, because ranking on an inherited ceiling
-  prices the wrong club's history.
-- **No catchment figures.** `club_catchment` is empty pending
-  `msoa_demographics.csv`, so `prospects.py` refuses to produce a ranking. The
-  scores shown are on ceiling, fall, recency and tenure only — the free half of
-  the thesis.
-- Two database defects surfaced and are logged rather than fixed:
-  `club_master.current_tier = 0` is wrong for Chester (the successor trades at
-  tier 6), and several club ids conflate a dead company with its successor —
-  Chester, Darlington, Maidstone, Bury, Hereford, Macclesfield and, separately,
-  Dagenham with its pre-merger parent.
+- **Eight of the twelve ceilings belong to a company that no longer exists.**
+  The successor bought a name, not a record. `peak_tier_entity` records this,
+  and the screen now ranks on `successor_peak_tier` — the ceiling the company
+  actually for sale reached — rather than on the inherited one, because ranking
+  on an inherited ceiling prices the wrong club's history. Maidstone's tier-4
+  record belongs to the club that folded in 1992; the company on sale has
+  reached the fifth. **Dagenham is the exception and was misfiled here at
+  first**: its tier-3 ceiling was reached by the live club in 2010/11, and what
+  the pre-merger parent inflates is the *length* of the record, not its
+  height.
+- **The catchment figures are modelled, twice over.** `club_catchment` now
+  holds 165 rows from 6,856 MSOAs and 58.6m people, but the population is
+  allocated by a Huff gravity model with a judgement-call β and judgement-call
+  tier weights (`gravity-v1-beta2`), and the income layer underneath it is ONS
+  *modelled* small-area income with intervals often ±15%. The rank order is
+  argued with, not read off.
+- **The two database defects this research surfaced are now fixed.**
+  `club_master.current_tier` was `0` for seven clubs whose successors are
+  demonstrably playing — and because `catchment.py` reads that column as the
+  club's *pull*, a `0` handed the town's population to its neighbours. Chester,
+  Macclesfield, Hereford and Scarborough are now `6`, Bury and Workington `7`,
+  Rushden & Diamonds `9`; the rebuild moved 291,019 people back to the seven
+  towns and reduced the catchment of **156 of the other 158 clubs**, Manchester
+  United and Manchester City by about 19,000 each. The screen's Band B no
+  longer keys off `current_tier == 0` — that stopped meaning "wound-up company"
+  the moment the column was corrected — and reads `peak_tier_entity` instead.
+- The second defect is not fixable by a column. **Several club ids conflate a
+  dead company with its successor** — Chester, Darlington, Maidstone, Bury,
+  Hereford, Macclesfield — so a single id holds two entities' seasons.
+  `successor_peak_tier` and `entity_note` carry the distinction the schema
+  cannot.

@@ -61,8 +61,11 @@ TIER_ATTRACTIVENESS = {
     4: 8.0,     # League Two
     5: 4.0,     # National League
     6: 2.0,     # National League North/South
-    7: 1.0,
-    0: 0.0,     # dead entity: exerts no pull on anybody
+    7: 1.0,     # step 3
+    8: 0.7,
+    9: 0.5,
+    10: 0.35,
+    0: 0.0,     # no successor plays anywhere: exerts no pull
 }
 DEFAULT_ATTRACTIVENESS = 1.0
 
