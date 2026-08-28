@@ -10,25 +10,32 @@ refused at the network proxy - so the roster places a club at the
 population-weighted centroid of its local authority, taken from
 msoa_demographics.csv, and records location_precision = 'town'.
 
-HOW GOOD IS THAT. Measured, not asserted. `--validate` places all 165
-clubs that DO have a surveyed ground coordinate by this same method and
-reports the error:
+HOW GOOD IS THAT. Measured, not asserted. `validate` places the clubs
+that DO have a surveyed ground coordinate by this same method and reports
+the error by how widely their authority's population is spread:
 
-    all 165 clubs                        median 1.8 mi, p90 8.4, max 38.5
-    local authorities spread <= 6 mi     median 1.5 mi, p90 3.0, max 4.4
+    spread  0-4 mi   n= 86   median 1.4   p90  2.8   max  3.7
+    spread  4-6 mi   n= 32   median 2.0   p90  2.9   max  4.4
+    spread  6-9 mi   n= 20   median 2.4   p90  6.8   max  8.0
+    spread  9+ mi    n= 23   median 9.8   p90 16.9   max 35.7
 
-The tail is entirely large rural authorities - Cornwall, Somerset,
-Cumberland, North Yorkshire - where the centroid is not near any
-particular town. So the rule this script enforces is a threshold on the
-authority rather than a judgement about the club: an authority whose
-population is spread over more than MAX_SPREAD_MILES cannot place a club,
-and the club is reported as unplaced rather than put in the wrong town. A
-club the model cannot see is a bug; a club the model can see in the wrong
-place is a worse one.
+The cliff is at nine miles, and everything past it is a large rural
+authority - Cornwall, Somerset, Cumberland, North Yorkshire - whose
+centroid is near no particular town at all. Below it the worst case is
+Guiseley at 8.0 miles: a club in a big city's authority but out at the
+edge of it, which is the failure mode that remains.
 
-WELSH CLUBS CANNOT BE PLACED AT ALL. The gazetteer is English MSOAs, so
-Merthyr Town and anyone else outside England has no authority to sit in.
-They are reported, not guessed.
+So the rule is a threshold on the authority rather than a judgement about
+the club. Past MAX_SPREAD_MILES the club is reported unplaced rather than
+put in the wrong town. The threshold is set where it is because BOTH
+errors are real: a club the model cannot see has its town handed to its
+neighbours, which is the bug this whole layer exists to fix, so excluding
+a club is not the safe option it looks like.
+
+CLUBS OUTSIDE ENGLAND CANNOT BE PLACED AT ALL. The gazetteer is English
+MSOAs, so Merthyr Town has no authority to sit in. They are reported, not
+guessed - and they are easy to spot, because every English ground is
+within 1.5 miles of an MSOA centroid while the Welsh ones are 9 to 31.
 
     python3 scripts/place_clubs.py --validate
     python3 scripts/place_clubs.py --authorities 6
@@ -58,9 +65,15 @@ MSOA_CSV = PROJECT_ROOT / "msoa_demographics.csv"
 DB = PROJECT_ROOT / "data" / "db" / "england.db"
 
 # An authority wider than this cannot stand in for one of its towns. Set
-# from the validation above: below it the worst observed error is 4.4
-# miles, above it errors run to 35.
-MAX_SPREAD_MILES = 6.0
+# from the validation above: below it the worst observed error is 8.0
+# miles and the median 1.6, above it the median alone is 9.8.
+MAX_SPREAD_MILES = 9.0
+
+# A ground further than this from any MSOA centroid is not in England, so
+# the gazetteer cannot place it and it must not appear in the validation
+# either. English grounds are all within 1.5 miles; the Welsh ones are 8.8
+# and up, so nothing sits near this line.
+OUTSIDE_GAZETTEER_MILES = 5.0
 
 SOURCE_URL = ("https://www.ons.gov.uk/peoplepopulationandcommunity/"
               "populationandmigration/populationestimates")
@@ -126,17 +139,22 @@ def cmd_validate(args):
     las = authorities(msoas)
     conn = sqlite3.connect(DB)
 
-    errors = []
+    errors, foreign = [], []
     for cid, lat, lon in conn.execute(
             "SELECT club_id, latitude, longitude FROM club_master"
             " WHERE latitude IS NOT NULL"):
         # Which authority is this ground in? Nearest MSOA centroid, which
         # is exact enough for the assignment even where it is not exact
         # enough for the placement.
-        la = min(msoas, key=lambda m: great_circle_miles(lat, lon, m[0], m[1]))[3]
-        cell = las[la]
+        nearest = min(msoas, key=lambda m: great_circle_miles(lat, lon, m[0], m[1]))
+        if great_circle_miles(lat, lon, nearest[0], nearest[1]) > OUTSIDE_GAZETTEER_MILES:
+            # Not in England. Including it would measure the width of the
+            # Bristol Channel rather than the accuracy of the method.
+            foreign.append(cid)
+            continue
+        cell = las[nearest[3]]
         errors.append((great_circle_miles(lat, lon, cell["lat"], cell["lon"]),
-                       cell["spread"], cid, la))
+                       cell["spread"], cid, nearest[3]))
     errors.sort()
 
     def report(label, rows):
@@ -147,11 +165,16 @@ def cmd_validate(args):
               f"  p90 {es[int(0.9 * (len(es) - 1))]:5.1f}  max {max(es):5.1f}")
 
     print("Error of the town-centroid placement against the real ground, miles\n")
-    report("all clubs with a ground", errors)
-    report(f"authority spread <= {MAX_SPREAD_MILES} mi",
+    report("all English clubs with a ground", errors)
+    report(f"authority spread <= {MAX_SPREAD_MILES} mi (placeable)",
            [e for e in errors if e[1] <= MAX_SPREAD_MILES])
-    report(f"authority spread > {MAX_SPREAD_MILES} mi",
+    report(f"authority spread > {MAX_SPREAD_MILES} mi (refused)",
            [e for e in errors if e[1] > MAX_SPREAD_MILES])
+    print()
+    for lo, hi in [(0, 4), (4, 6), (6, 9), (9, 999)]:
+        report(f"  spread {lo}-{hi} mi", [e for e in errors if lo <= e[1] < hi])
+    if foreign:
+        print(f"\nnot in the gazetteer, excluded: {', '.join(sorted(foreign))}")
 
     print("\nworst placements, all of them in authorities the threshold excludes:")
     for e, spread, cid, la in errors[-10:]:
@@ -201,7 +224,8 @@ def cmd_place(args):
                 club_id, name, tier, division, ground,
                 f"{cell['lat']:.4f}", f"{cell['lon']:.4f}", "town", la,
                 SOURCE_URL,
-                f"placed at the population-weighted centroid of {la}",
+                f"population-weighted centroid of {la}, whose population"
+                f" spreads {cell['spread']:.1f} mi",
             ])
 
     for name, why in unplaced:

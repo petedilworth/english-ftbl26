@@ -35,12 +35,20 @@ CREATE TABLE IF NOT EXISTS club_master (
     color_secondary   TEXT,
     stadium_name      TEXT,
     latitude          REAL,
-    longitude         REAL
+    longitude         REAL,
+    location_precision TEXT
 );
 """
 
-# Optional CSV columns carried into the DB when present (website styling/map)
-OPTIONAL_COLUMNS = ["color_primary", "color_secondary", "stadium_name", "latitude", "longitude"]
+# Optional CSV columns carried into the DB when present (website styling/map).
+# location_precision says whether the coordinate is a surveyed ground or a
+# town centroid. Most rows here are grounds, but a handful of clubs whose
+# only presence is below the fifth tier have never had one recorded, and a
+# town centroid from the ONS data is the difference between the catchment
+# model seeing them and handing their town to a neighbour. Which of the two
+# a coordinate is must be readable, not inferred.
+OPTIONAL_COLUMNS = ["color_primary", "color_secondary", "stadium_name", "latitude",
+                    "longitude", "location_precision"]
 
 
 def seed_club_master(conn: sqlite3.Connection, csv_path: Path) -> None:
@@ -110,8 +118,8 @@ def seed_club_master(conn: sqlite3.Connection, csv_path: Path) -> None:
             INSERT OR REPLACE INTO club_master
                 (club_id, canonical_name, name_variants, lineage_parent_id,
                  current_tier, color_primary, color_secondary,
-                 stadium_name, latitude, longitude)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                 stadium_name, latitude, longitude, location_precision)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """,
             (
                 row["club_id"].strip(),
@@ -124,6 +132,7 @@ def seed_club_master(conn: sqlite3.Connection, csv_path: Path) -> None:
                 _optional(row, "stadium_name"),
                 _optional(row, "latitude"),
                 _optional(row, "longitude"),
+                _optional(row, "location_precision"),
             ),
         )
     conn.commit()

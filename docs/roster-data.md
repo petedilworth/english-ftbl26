@@ -1,64 +1,192 @@
-# The tier-6/7 roster — what is built, and the one thing it needs
+# The tier-6/7 roster — how it was built
 
-`src/roster.py` reads **`club_roster.csv`** at the repo root and
-`catchment._club_frame` unions it with `club_master`. **The file does not
-exist yet**, and the code degrades the way the catchment loader does: the
-seed logs and returns 0, the union finds no roster table, and the model goes
-back to seeing only clubs with league history.
+`src/roster.py` reads **`club_roster.csv`** and `catchment._club_frame` unions
+it with `club_master`, so the gravity model can see clubs that have never
+played in the top five tiers. The model now works over **245 clubs**, up from
+165.
 
-## Why the roster is needed at all
+## Why it exists
 
 This site records tiers 1–5, but the catchment model is a model of
-**competition**, and competition does not stop at the fifth tier. Until the
-roster exists the model cannot see a club that has never been in the top
-five, so it credits that club's neighbours with a town that is not free.
+**competition**, and competition does not stop at the fifth tier. Without the
+roster the model could not see a club that had never been in the top five, so
+it credited that club's neighbours with a town that is not free — the same
+defect as `current_tier = 0`, and larger, because more clubs were missing than
+were ever mislabelled.
 
-The distortion falls hardest exactly where the screen looks. A club that has
-fallen to the sixth tier is surrounded by sixth- and seventh-tier neighbours,
-none of them in the model, so its catchment is flattered and its contest
-ratio understated. This is the same defect class as the `current_tier = 0`
-bug fixed in the previous commit — a club the model cannot see is a town
-given away — and it is larger, because there are more clubs missing than
-there were clubs mislabelled.
-
-## What is needed: one file
+## The source
 
 **The FA's National League System club allocations for 2026/27, steps 1–4.**
-It is the governing body's own list, published each May, and it settles every
-club at tiers 5, 6, 7 and 8 in one document:
+The governing body's own list, settling every club at tiers 5 to 8 in one
+document.
 
 ```
 https://www.thefa.com/-/media/thefacom-new/files/competitions/2026-27/nls/nls-1-to-4-club-allocations-2026-27---v1-140526.ashx
 ```
 
-`www.thefa.com` is refused at the network proxy in this environment, as are
-`en.wikipedia.org` and every league and club site tried. Web *search* works
-and returns summaries; it is not good enough for this job, and the attempt
-proved it. Reconstructing the National League North line-up from search
-snippets produced a list of 24 that contained two clubs which are not in the
-division (Scunthorpe United, who are in the fifth tier — the repo's own
-database says so — and Alfreton Town, allocated to the Northern Premier
-League) and omitted two that are (Chorley and Southport). A roster with two
-clubs in the wrong division puts two towns' populations in the wrong place,
-silently, and there is no downstream check that would catch it.
+`www.thefa.com` is refused at this environment's network proxy, as are
+Wikipedia and every league and club site tried, so the PDF was supplied by
+hand. **Web search was tried first and was not good enough**: reconstructing
+the National League North line-up from search snippets produced 24 clubs of
+which two were not in the division (Scunthorpe United, whom this repo's own
+database puts in the fifth tier, and Alfreton Town) while two that are were
+missing (Chorley, Southport).
 
-The National League South line-up **was** recoverable, and it cross-checks
-cleanly against this repo's own data: search gives 24 clubs including
-Braintree Town and Truro City, and `standings` independently records both as
-relegated from tier 5 in 2026. That is the standard the North list has to
-meet and cannot, from here.
+### Extracting it
 
-**A partial roster is worse than none.** Seeding the South alone would leave
-northern candidates — Morecambe, Southport, Macclesfield, Chester, Darlington
-— competing against an empty map while Maidstone competes against a full one,
-and the screen would report the difference as a fact about the clubs. So
-nothing is seeded until both halves can be.
+`scripts/parse_nls_allocations.py` writes
+**`data/raw/nls-allocations-2026-27.tsv`**. There is no PDF tooling installed
+here — no `pdftotext`, no `pypdf`, no poppler — and none is needed: the pages
+are Flate-compressed streams of ordinary text operators that `zlib` and `re`
+read directly.
 
-## The columns the loader expects
+The parse is geometric, so it needs a check that is not. Two of them:
 
-Required: `club_id`, `canonical_name`, `tier`, `latitude`, `longitude`,
-`location_precision`. Optional: `division`, `ground_name`, `locality`,
-`source_url`, `notes`.
+- **Every division must come out its real size** — 24/24/22/22/22/22. The
+  first run failed this, and the failure was real: a row's rank number and
+  its name are often drawn in *different* content streams, so keying rows by
+  stream lost Carlisle United, Hornchurch and Three Bridges outright.
+- **The step 1 column must equal this repo's own fifth tier.** The FA's list
+  and the site's in-progress 2026/27 standings are unrelated sources for the
+  same 24 clubs, and they agree exactly, every name resolving through
+  `entities.build_resolver`. That validates the column geometry, the fragment
+  joining and the name matching in one shot.
+
+Both are `tests/test_roster.py` tests, not just script assertions.
+
+## What it produced
+
+| | |
+|---|---|
+| Clubs in the allocations at tiers 6 and 7 | 136 |
+| Already in `club_master` | 40 |
+| Successors folded into an existing id | 5 |
+| **Placed in `club_roster.csv`** | **71** (18 at tier 6, 53 at tier 7) |
+| Unplaceable, reported not guessed | 20 |
+
+### Successors, not new clubs
+
+Five clubs the FA names are the successors of companies this site already
+holds an id for, in the same town — so they get a **name variant and a
+corrected tier on the existing row**, not a roster row. A roster row would
+have been the same club twice, competing with itself for its own town. This
+is the rule already applied to Chester, Bury and Hereford.
+
+| The FA's name | Folded into | Tier |
+|---|---|---|
+| Scarborough Athletic | `scarborough-fc` | 6 |
+| Merthyr Town | `merthyr-tydfil-fc` | 6 |
+| Enfield Town | `enfield-fc` | 7 |
+| Bromsgrove Sporting | `bromsgrove-rovers-fc` | 7 |
+| Leamington | `ap-leamington-fc` | 7 |
+
+### Seventeen more tier corrections
+
+The allocations settle every label the previous commit had to leave open.
+Six clubs were recorded as `0` — exerting no pull, their towns handed to
+neighbours — while playing in the sixth or seventh tier: **Farnborough,
+Hednesford Town and Slough Town** at 6, **Leek Town, Redditch United and
+Worcester City** at 7. Seven more were a tier too high: Dartford, Guiseley,
+Havant & Waterlooville, Kettering Town, Lewes, St Albans City and Welling
+United, all at 7 rather than 6. With the four successors above, seventeen
+rows of `club_master.csv` changed tier.
+
+## Coordinates: how a club is placed, and how wrong that is
+
+Ground coordinates for non-league clubs are not reachable from here either, so
+`scripts/place_clubs.py` places a club at the population-weighted centroid of
+its **local authority**, computed from `msoa_demographics.csv`.
+
+That is a guess, so it is published with its measured error. `place_clubs.py
+validate` places the clubs that **do** have a surveyed ground by the same
+method:
+
+| Authority spread | n | median | p90 | max |
+|---|---|---|---|---|
+| 0–4 mi | 86 | 1.4 | 2.8 | 3.7 |
+| 4–6 mi | 32 | 2.0 | 2.9 | 4.4 |
+| 6–9 mi | 21 | 2.3 | 5.3 | 8.0 |
+| **9+ mi** | 22 | **8.9** | **16.8** | **35.7** |
+
+The cliff is at nine miles, which is where `MAX_SPREAD_MILES` sits. Past it
+every case is a large rural authority — Cornwall, Somerset, Cumberland, North
+Yorkshire — whose centroid stands in for no town at all. Below it the worst
+case is Guiseley at 8.0 miles: a club at the edge of a big city's authority,
+which is the failure mode that remains.
+
+**The threshold is a trade between two errors, not a safety margin.** A club
+the model cannot see has its town handed to its neighbours, which is the bug
+this whole layer exists to fix, so excluding a club is not the cautious
+option it looks like. At six miles, 39 of 91 clubs were refused; at nine, 20
+are.
+
+Clubs outside England cannot be placed at all — the gazetteer is English
+MSOAs. They are easy to identify and are excluded from the validation too:
+every English ground is within 1.5 miles of an MSOA centroid, while the Welsh
+ones are 8.8 to 30.8.
+
+### Precision is recorded, never inferred
+
+`club_roster.location_precision` is `ground` or `town`, and `club_master.csv`
+now carries the same column — `ground` for its 165 surveyed grounds, `town`
+for the nine placed by centroid. `src/prospects.py` reads it and prints an
+approximate rival distance as `~7mi`, because Bury and Radcliffe share an
+authority centroid and are three miles apart in fact; printing `0mi` would be
+a precision the data does not have.
+
+### The twenty that are still invisible
+
+Four at tier 6 — **AFC Totton, Chesham United, Spalding United, Spennymoor
+Town** — and sixteen at tier 7: Banbury United, Bury Town, Chichester City,
+Chippenham Town, Evesham United, Frome Town, Gainsborough Trinity, Hitchin
+Town, Leighton Town, Leiston, Malvern Town, Stamford, Stratford Town, Taunton
+Town, Whitby Town, Wimborne Town. Each sits in an authority too wide to stand
+in for its town. A town-level gazetteer would close all twenty at once; the
+count is pinned in `tests/test_roster.py` so it cannot grow unnoticed.
+
+## What it changed
+
+**Every one of the 165 clubs already in the model lost catchment**, which is
+the expected direction: population that had been credited to them is now
+claimed by neighbours the model could not previously see.
+
+The contest ratio mostly *fell*, and that is worth understanding rather than
+celebrating. `contest_ratio` asks what share of its own Voronoi cell a club
+keeps. Adding clubs shrinks every cell to a tighter, more local area, and a
+club keeps more of a smaller cell. So the measure has become stricter about
+what counts as a club's own ground, and the numbers before and after are not
+directly comparable.
+
+| Club | catchment | contested |
+|---|---|---|
+| Maidstone United | 217,868 → 205,634 | 75% → **56%** |
+| Morecambe | 162,718 → 148,230 | 52% → 33% |
+| Southport | 160,710 → 156,797 | 51% → 35% |
+| Macclesfield Town | 171,551 → 166,429 | 60% → 49% |
+| Bury | 499,017 → 481,230 | 48% → 34% |
+| Hereford United | 336,902 → 316,419 | 43% → 36% |
+
+**The conclusion held, on a thinner margin.** Maidstone is still the most
+contested of the four buyable-or-maybe clubs, but its lead narrowed from 15
+points to 7: it fell 19 points, as did Morecambe, against Southport's 16 and
+Macclesfield's 11. Its nearest rival is now Tonbridge Angels rather than
+Gillingham — a club the model could not see at all until today.
+
+## Rebuilding it
+
+```bash
+python3 scripts/parse_nls_allocations.py ALLOCATIONS.pdf
+python3 scripts/place_clubs.py validate          # the error table above
+python3 scripts/place_clubs.py authorities 9     # which authorities qualify
+python3 scripts/place_clubs.py place clubs.tsv > club_roster.csv
+```
+
+The `place` input is one club per line, tab separated. The local authority is
+the only field that cannot be derived from the allocations document:
+
+```
+canonical_name <TAB> local_authority <TAB> tier <TAB> division <TAB> ground_name
+```
 
 `seed_club_roster` refuses a row rather than warning when it would mislead:
 
@@ -70,83 +198,8 @@ Required: `club_id`, `canonical_name`, `tier`, `latitude`, `longitude`,
 | `club_id` that does not start with `slugify(canonical_name)` | A typo in a hand-written id is permanent and invisible |
 | `location_precision` not `ground` or `town` | The reader is entitled to know which they are looking at |
 
-## Coordinates: how a club is placed, and how wrong that is
-
-Ground coordinates for non-league clubs are not reachable from here either,
-so `scripts/place_clubs.py` places a club at the population-weighted centroid
-of its local authority, computed from `msoa_demographics.csv`, and the row
-records `location_precision = town`.
-
-That is a guess, so it is published with its measured error.
-`place_clubs.py validate` places the 165 clubs that **do** have a surveyed
-ground by the same method and compares:
-
-| Set | n | median | p90 | max |
-|---|---|---|---|---|
-| all clubs with a ground | 165 | 1.8 mi | 8.0 | 38.5 |
-| authority spread ≤ 6 mi | 118 | **1.5 mi** | **3.0** | **4.4** |
-| authority spread > 6 mi | 47 | 4.4 mi | 16.2 | 38.5 |
-
-The whole tail is large rural authorities — Cumberland, North Yorkshire,
-Wiltshire — where the centroid is near no particular town. So the threshold
-is on the authority, not on the club: an authority whose population spreads
-more than `MAX_SPREAD_MILES` cannot place anybody, and the club is reported
-unplaced rather than put in the wrong town. Welsh clubs cannot be placed at
-all, since the gazetteer is English MSOAs; Merthyr Town is reported, not
-guessed.
-
-```bash
-python3 scripts/place_clubs.py validate          # the table above
-python3 scripts/place_clubs.py authorities 6     # which authorities qualify
-python3 scripts/place_clubs.py place clubs.tsv > club_roster.csv
-```
-
-The `place` input is one club per line, tab separated:
-
-```
-canonical_name <TAB> local_authority <TAB> tier <TAB> division <TAB> ground_name
-```
-
-## What the roster will and will not change
+## What the roster does not do
 
 It adds **competitors, not candidates**. A club with no `standings` rows
-cannot have a Football League ceiling, so `prospects.candidates()` will never
-return one. What changes is every existing candidate's catchment and contest
-ratio, and the direction is known in advance: catchments fall and contest
-ratios rise, most for the clubs with the most non-league neighbours. Whether
-that reorders the bands is the question the roster exists to answer.
-
-## Also outstanding: the stale sixth-tier labels
-
-Forty-four clubs in `club_master` carried `current_tier = 6`, a label set
-when they were last in the sixth tier and never revisited. Since the previous
-commit made `current_tier` load-bearing, each stale one is a club pulling at
-a step-2 weight from a ground three divisions lower.
-
-Seven were settled by search and are corrected in this commit:
-
-| Club | was | now | Where they actually play |
-|---|---|---|---|
-| Alfreton Town | 6 | 7 | Northern Premier League Premier, step 3 |
-| Bath City | 6 | 7 | Southern League Premier, step 3 — relegated from the South |
-| Eastbourne Borough | 6 | 7 | Isthmian League Premier, step 3 — relegated from the South |
-| Hyde United | 6 | 7 | Northern Premier League Premier, step 3 |
-| Droylsden | 6 | 9 | North West Counties Premier, step 5 |
-| Northwich Victoria | 6 | 9 | Midland League Premier, step 5 |
-| Histon | 6 | 9 | United Counties Premier South, step 5 |
-
-Droylsden, Northwich Victoria and Histon are the ones that were costing the
-most: a step-5 club was pulling at weight 2.0 against a true 0.5, four times
-harder than it should, on three of its neighbours' towns.
-
-Of the thirty-seven still labelled `6`, twenty are corroborated as sixth-tier
-by the two division line-ups above. **Seventeen remain unverified**: Bradford
-Park Avenue, Canvey Island, Dartford, Farsley Celtic, Grays Athletic,
-Guiseley, Havant & Waterlooville, Hayes & Yeading United, Kettering Town,
-King's Lynn Town, Lewes, Nuneaton Town, Oxford City, St Albans City, Stafford
-Rangers, Welling United and Weymouth. Farsley Celtic is the clearest warning
-among them — one search result has them in the National League North and
-another has them refused a step 1–4 licence and relegated to the Northern
-Counties East League, which is a four-division disagreement. The FA
-allocations document settles all seventeen at once, which is the other reason
-to want it.
+cannot have a Football League ceiling, so `prospects.candidates()` never
+returns one. Nothing in this layer changes who is for sale.
