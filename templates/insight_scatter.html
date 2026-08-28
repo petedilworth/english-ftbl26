@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 <h1>{{ heading }}</h1>
-<p class="subtitle">{{ intro }}</p>
+<p class="subtitle">{{ intro }}{% if method_link %} <a href="{{ root }}/{{ method_link.path }}">{{ method_link.label }}</a>.{% endif %}</p>
 
 {% if metric_tabs and metric_tabs|length > 1 %}
 <div class="map-chips metric-tabs">

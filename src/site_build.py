@@ -417,6 +417,26 @@ def _facts_rows(facts: dict, club_names: dict[str, str] | None = None) -> list[d
     return rows
 
 
+def _distance_phrase(miles: float | None, approximate: bool) -> str | None:
+    """
+    A distance between two clubs, said to the precision it actually has.
+
+    Eighty clubs sit at the population-weighted centre of their local
+    authority rather than at a ground, and that placement is good to a
+    median of 1.6 miles. Bury to Radcliffe comes out at 0.5 miles on those
+    coordinates; Stainton Park is about three miles from Gigg Lane. So a
+    distance to a town-placed club is rounded to the mile and marked, and
+    below two miles it is not given as a number at all - the data cannot
+    tell nought from three, and a decimal place would say that it can.
+    """
+    if miles is None:
+        return None
+    if not approximate:
+        return f"{miles:.1f} miles"
+    whole = round(miles)
+    return "a mile or two" if whole <= 1 else f"~{whole} miles"
+
+
 def _row_dict(r) -> dict:
     slug, direction, label = STATUS_PRESENTATION.get(r["status"], ("stayed", "", ""))
     keys = r.keys()
@@ -479,6 +499,19 @@ class SiteBuilder:
         self._metric_points_cache: dict = {}
         self.standings_cols = {
             r[1] for r in self.conn.execute("PRAGMA table_info(standings)")
+        }
+        # Which clubs get a page. club_master holds more clubs than the
+        # site renders - the catchment model knows about clubs with
+        # coordinates but no standings row, and linking to those produces
+        # a page that was never built.
+        self.club_pages = {
+            r[0] for r in self.conn.execute("SELECT club_id FROM club_trajectory")
+        }
+        # location_precision arrived with the non-league clubs; a database
+        # from before it degrades to treating every coordinate as a ground,
+        # which is what it was.
+        self.master_cols = {
+            r[1] for r in self.conn.execute("PRAGMA table_info(club_master)")
         }
         self.seasons = [
             r[0] for r in self.conn.execute(
@@ -1287,6 +1320,7 @@ class SiteBuilder:
                 facts_rows=facts_rows,
                 club_themes=club_themes,
                 finances=self._club_finances(club_id),
+                catchment=self._club_catchment(club_id),
                 seasons=seasons,
                 seasons_have_deductions=any(d["points_deducted"] for d in seasons),
             )
@@ -1622,7 +1656,8 @@ class SiteBuilder:
             charts.append({
                 "slug": "catchment",
                 "name": "Catchment and competition",
-                "sub": "How many people each club can draw on, and who else wants them",
+                "sub": "How many people each club can draw on, and who else "
+                       "wants them \u2014 with the method that produced it",
                 "path": catchment_path,
             })
 
@@ -1646,6 +1681,7 @@ class SiteBuilder:
         self._insight_safe_thresholds()
         self._insight_timeline()
         self._insight_points_eras()
+        self._insight_catchment()
         self._insight_pyramid()
         self._insight_scatter()
         self._insight_boom_and_bust(boom_bust_events)
@@ -2193,6 +2229,71 @@ class SiteBuilder:
         self._finance_ranks_cache = ranks
         return ranks
 
+    def _club_catchment(self, club_id: str) -> dict | None:
+        """
+        The catchment panel for one club's page, or None when the club has
+        no row - so a club the model cannot see gets a shorter page rather
+        than an empty shell, the same rule _club_finances follows.
+
+        The headline is the club's catchment AT THE TIER IT IS IN NOW,
+        because that is a fact about the present. The restored figure sits
+        beside it only where the two differ, which is where the
+        counterfactual is saying something: Arsenal are already at their
+        ceiling and show one number, Leyton Orient show 325,076 and
+        1,665,263.
+        """
+        # The same gate the charts use: the table is created on every
+        # pipeline pass but stays empty without msoa_demographics.csv, and
+        # a database can predate it entirely.
+        if not self._has_catchment():
+            return None
+        row = self.conn.execute(
+            "SELECT catchment_pop_current, catchment_pop_restored,"
+            " catchment_income, contest_ratio, nearest_rival_id,"
+            " nearest_rival_miles, voronoi_pop, model_version"
+            " FROM club_catchment WHERE club_id = ?", (club_id,)
+        ).fetchone()
+        if row is None:
+            return None
+        (current, restored, income, contested, rival_id, rival_miles,
+         voronoi, model_version) = row
+
+        rival = None
+        if rival_id:
+            name = self.conn.execute(
+                "SELECT canonical_name FROM club_master WHERE club_id = ?",
+                (rival_id,)).fetchone()
+            # A club placed at its local authority's centre is good to a
+            # couple of miles, not to one - see _distance_phrase.
+            approximate = False
+            if "location_precision" in self.master_cols:
+                precision = self.conn.execute(
+                    "SELECT location_precision FROM club_master WHERE club_id = ?",
+                    (rival_id,)).fetchone()
+                approximate = bool(precision and precision[0] == "town")
+            rival = {
+                # Only where the club has a page. A club in the model with
+                # no standings row is real and worth naming, and a link to
+                # it would go nowhere.
+                "club_id": rival_id if rival_id in self.club_pages else None,
+                "name": name[0] if name else rival_id,
+                "distance": _distance_phrase(rival_miles, approximate),
+            }
+
+        return {
+            "population": f"{current:,}" if current is not None else None,
+            # Only where it differs: an identical pair of numbers side by
+            # side reads as a mistake rather than as a club at its peak.
+            "restored": (f"{restored:,}"
+                         if restored is not None and restored != current
+                         else None),
+            "income": f"\u00a3{income:,}" if income is not None else None,
+            "contested": f"{contested:.0%}" if contested is not None else None,
+            "voronoi": f"{voronoi:,}" if voronoi is not None else None,
+            "rival": rival,
+            "model_version": model_version,
+        }
+
     def _club_finances(self, club_id: str) -> dict | None:
         """
         The finance table for one club's page, or None when the club has
@@ -2662,6 +2763,17 @@ class SiteBuilder:
                         f"House. {counts['withheld']} filed accounts that do not "
                         f"disclose the figure; the rest are not yet researched."
                     )
+                elif metric["source"] == "catchment":
+                    # Of the clubs playing this season, not of every club
+                    # the database holds - the same denominator the
+                    # finance line uses, and the only one that means
+                    # anything on a page plotting one season.
+                    provenance = (
+                        f"Modelled from ONS population and income for "
+                        f"{len(points)} of {counts['in_season']} clubs in "
+                        f"{season_label(year)} - not counted, and not a "
+                        f"measurement."
+                    )
                 else:
                     provenance = (
                         f"Ground capacity from the club stories written so far "
@@ -2694,6 +2806,12 @@ class SiteBuilder:
                         f"across all five tiers in {season_label(year)}. Dashed lines "
                         f"mark the boundary between divisions."
                     ),
+                    # Three numbers nobody should read at face value get a
+                    # link to what produced them, on every page that plots
+                    # them rather than only on the index.
+                    method_link=({"path": "insights/catchment/method/",
+                                  "label": "How catchment is measured"}
+                                 if metric["source"] == "catchment" else None),
                     points=points,
                     boundary_lines=[round(x(b + 0.5), 1) for b in boundaries],
                     width=W, height=H,
@@ -2959,6 +3077,160 @@ class SiteBuilder:
             "columns": columns,
             "rows": [_row(r) for r in rows],
         }
+
+    def _insight_catchment(self) -> None:
+        """
+        How the three catchment measures are arrived at, and what they are
+        not.
+
+        Every club page carries a catchment figure now, and a number like
+        1,856,061 reads as a count when it is the output of a model with
+        two judgement calls inside it. This is where those calls are
+        named.
+
+        The tables are read from the module and the database rather than
+        written down, the same rule _insight_points_eras follows: the
+        weights come out of catchment.TIER_ATTRACTIVENESS, so the page
+        cannot describe a model the pipeline is not running.
+        """
+        import markdown as md
+        from markupsafe import Markup
+
+        source = PROJECT_ROOT / "content" / "insights" / "catchment.md"
+        if not source.exists() or not self._has_catchment():
+            return
+        prose = content.load_theme(source)
+
+        import catchment as catchment_mod
+        import level as level_mod
+
+        club_names = dict(self.conn.execute(
+            "SELECT club_id, canonical_name FROM club_master"))
+
+        # The pull weights, from the module rather than about it.
+        weight_rows = []
+        for tier, weight in sorted(catchment_mod.TIER_ATTRACTIVENESS.items()):
+            if tier == 0:
+                label = "No successor playing"
+            else:
+                label = level_mod.TIER_NAMES.get(tier, f"Tier {tier}")
+            weight_rows.append([
+                self._cell(label),
+                self._cell(f"{weight:g}", num=True),
+            ])
+
+        sections = [{
+            "heading": "How far each level draws from",
+            "note": (f"Read from the same table the model computes with, so "
+                     f"these are the weights actually applied. "
+                     f"Distance decay \u03b2 = {catchment_mod.BETA:g}, no club "
+                     f"closer than {catchment_mod.MIN_DISTANCE_MILES:g} miles "
+                     f"to an area, model version "
+                     f"{catchment_mod.MODEL_VERSION}."),
+            "columns": ["Level", "Pull"],
+            "rows": weight_rows,
+        }]
+
+        # The areas the model runs over. A database can hold a computed
+        # club_catchment without the demographics it was computed from -
+        # the table is dropped and rebuilt, the source CSV is not always
+        # present - so the section is omitted rather than the page lost.
+        try:
+            msoas, people = self.conn.execute(
+                "SELECT COUNT(*), SUM(population) FROM msoa_demographics").fetchone()
+        except sqlite3.Error:
+            msoas, people = None, None
+        modelled = self.conn.execute(
+            "SELECT COUNT(*) FROM club_catchment").fetchone()[0]
+        total_clubs = self.conn.execute(
+            "SELECT COUNT(*) FROM club_master").fetchone()[0]
+        town = (self.conn.execute(
+            "SELECT COUNT(*) FROM club_master"
+            " WHERE location_precision = 'town'").fetchone()[0]
+            if "location_precision" in self.master_cols else 0)
+        counted = [
+            [self._cell("Clubs with a figure"),
+             self._cell(f"{modelled:,} of {total_clubs:,}", num=True)],
+            [self._cell("Placed at a town centre, not a ground"),
+             self._cell(f"{town:,}", num=True)],
+        ]
+        if msoas:
+            counted = [
+                [self._cell("Areas (MSOAs)"), self._cell(f"{msoas:,}", num=True)],
+                [self._cell("People in them"), self._cell(f"{people:,}", num=True)],
+            ] + counted
+        sections.append({
+            "heading": "What it is computed from",
+            "note": "Population and income are ONS; the income layer is "
+                    "modelled rather than measured, with intervals often "
+                    "\u00b115%.",
+            "columns": ["", "Count"],
+            "rows": counted,
+        })
+
+        def _extremes(sql, fmt):
+            return [[self._cell(club_names.get(cid, cid),
+                                club_id=cid if cid in self.club_pages else None),
+                     self._cell(fmt(value), num=True)]
+                    for cid, value in self.conn.execute(sql)]
+
+        top = _extremes(
+            "SELECT club_id, catchment_pop_current FROM club_catchment"
+            " ORDER BY catchment_pop_current DESC LIMIT 3", lambda v: f"{v:,}")
+        contested = _extremes(
+            "SELECT club_id, contest_ratio FROM club_catchment"
+            " WHERE contest_ratio IS NOT NULL ORDER BY contest_ratio DESC LIMIT 3",
+            lambda v: f"{v:.0%}")
+        clear = _extremes(
+            "SELECT club_id, contest_ratio FROM club_catchment"
+            " WHERE contest_ratio IS NOT NULL ORDER BY contest_ratio LIMIT 3",
+            lambda v: f"{v:.0%}")
+
+        sections.append({
+            "heading": "The largest catchments",
+            "columns": ["Club", "People"],
+            "rows": top,
+        })
+        sections.append({
+            "heading": "Most and least contested",
+            "note": "The share of the people nearest to a club that a bigger "
+                    "neighbour takes. Both ends of the same measure.",
+            "columns": ["Club", "Contested"],
+            "rows": contested + clear,
+        })
+
+        gaps = [
+            [self._cell(club_names.get(cid, cid),
+                        club_id=cid if cid in self.club_pages else None),
+             self._cell(f"{cur:,}", num=True),
+             self._cell(f"{restored:,}", num=True)]
+            for cid, cur, restored in self.conn.execute(
+                "SELECT club_id, catchment_pop_current, catchment_pop_restored"
+                " FROM club_catchment WHERE catchment_pop_current > 0"
+                " ORDER BY catchment_pop_restored - catchment_pop_current DESC"
+                " LIMIT 4")
+        ]
+        sections.append({
+            "heading": "Where the counterfactual bites hardest",
+            "note": "The four clubs whose catchment would change most on "
+                    "returning to their highest recorded level, with every "
+                    "other club left where it is. Clubs that no longer play "
+                    "anywhere are excluded: their present figure is zero by "
+                    "construction, which would top this table without "
+                    "illustrating anything.",
+            "columns": ["Club", "Now", "Restored to its ceiling"],
+            "rows": gaps,
+        })
+
+        self.render(
+            "insight_table.html",
+            self.out / "insights" / "catchment" / "method" / "index.html", 3,
+            title="How catchment is measured",
+            heading="How catchment is measured",
+            intro="Three numbers on every club page, none of them a count.",
+            intro_html=Markup(md.markdown(prose)) if prose else None,
+            sections=sections,
+        )
 
     def _insight_records(self) -> None:
         streaks = self.conn.execute(
