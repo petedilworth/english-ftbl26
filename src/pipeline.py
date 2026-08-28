@@ -37,6 +37,7 @@ import download
 import entities
 import finances
 import historical
+import roster
 import status
 import trajectory
 
@@ -759,6 +760,9 @@ def run(
     # with the other reference data. The derived catchment is rebuilt
     # after the standings load, since it reads each club's ceiling.
     catchment.seed_msoa_demographics(conn, PROJECT_ROOT / "msoa_demographics.csv")
+    # After club_master, because a roster club that is already in it would
+    # be counted twice by the catchment model and compete with itself.
+    roster.seed_club_roster(conn, PROJECT_ROOT / "club_roster.csv")
     resolver = entities.build_resolver(conn)
 
     if not skip_download:
