@@ -283,6 +283,15 @@ def _club_frame(conn: sqlite3.Connection) -> pd.DataFrame:
     Every club with a location, its current tier, and its historical
     ceiling. The ceiling comes from the standings and falls back to the
     current tier for a club the data has never seen play.
+
+    Two sources, because competition does not stop at the fifth tier.
+    club_master holds the clubs with league history; club_roster holds the
+    sixth- and seventh-tier clubs that have none but are still standing in
+    the same towns. Without the second, a fallen club's neighbours are
+    invisible and its catchment is flattered - see src/roster.py.
+
+    A roster club's ceiling is its current tier by construction: anything
+    that had reached the fifth tier would be in club_master instead.
     """
     clubs = pd.read_sql_query(
         "SELECT club_id, current_tier, latitude, longitude"
@@ -295,6 +304,20 @@ def _club_frame(conn: sqlite3.Connection) -> pd.DataFrame:
     )
     clubs = clubs.merge(peaks, on="club_id", how="left")
     clubs["peak_tier"] = clubs["peak_tier"].fillna(clubs["current_tier"])
+
+    if conn.execute("SELECT 1 FROM sqlite_master WHERE type='table'"
+                    " AND name='club_roster'").fetchone():
+        roster = pd.read_sql_query(
+            "SELECT club_id, tier AS current_tier, latitude, longitude,"
+            " tier AS peak_tier FROM club_roster",
+            conn,
+        )
+        if not roster.empty:
+            # seed_club_roster rejects an id that is already in
+            # club_master, so this concat cannot duplicate a club. If it
+            # ever did, the club would compete with itself.
+            clubs = pd.concat([clubs, roster], ignore_index=True)
+
     return clubs
 
 
