@@ -26,6 +26,7 @@ sys.path.insert(0, str(_SRC))
 import aggregate  # noqa: E402  (points-era boundary for records tables)
 import content  # noqa: E402  (needs _SRC on the path first)
 import divisions
+import divisions as divisions_mod
 import finances  # noqa: E402  (disclosure states for the club finances table)
 import historical  # noqa: E402  (why a backfilled table is flagged not-final)
 
@@ -549,33 +550,53 @@ class SiteBuilder:
     # ── Queries ────────────────────────────────────────────────────────────
 
     def season_divisions(self, year: int) -> list[dict]:
-        divisions = []
-        for tier in sorted({
-            r[0] for r in self.conn.execute(
-                "SELECT DISTINCT tier FROM standings WHERE season_end_year = ?", (year,)
-            )
-        }):
+        """
+        Every division played in a season, in ladder order.
+
+        By DIVISION, not by tier. Keyed on the tier this concatenated the
+        National League North and South into one table of forty-four
+        clubs with two at every position, labelled with whichever name
+        came first, and did the same to three divisions at the seventh
+        tier - fourteen season pages, silently, because a table of
+        forty-four rows looks like a table.
+        """
+        divisions_list = []
+        keyed_by_division = "division_id" in self.standings_cols
+        key = "division_id" if keyed_by_division else "tier"
+        found = self.conn.execute(
+            f"SELECT DISTINCT tier, {key} FROM standings WHERE season_end_year = ?",
+            (year,),
+        ).fetchall()
+
+        def order(pair):
+            tier, value = pair
+            division = divisions_mod.BY_ID.get(value) if keyed_by_division else None
+            return (tier, division.sort_order if division else 0)
+
+        for tier, value in sorted(found, key=order):
             rows = self.conn.execute(
-                """
+                f"""
                 SELECT * FROM standings
-                WHERE season_end_year = ? AND tier = ? ORDER BY position
+                WHERE season_end_year = ? AND {key} IS ? ORDER BY position
                 """,
-                (year, tier),
+                (year, value),
             ).fetchall()
-            divisions.append({
+            divisions_list.append({
                 "tier": tier,
                 "name": rows[0]["division_name"] if rows else TIER_SLUGS[tier][1],
                 "rows": [_row_dict(r) for r in rows],
-                "coverage_note": self._coverage_note(year, tier, len(rows)),
+                "coverage_note": self._coverage_note(year, tier, len(rows), value
+                                                     if keyed_by_division else None),
                 # The column only appears in tables that have one, otherwise
                 # every table on the site gains an empty column.
                 "has_deductions": any(
                     _row_dict(r)["points_deducted"] for r in rows
                 ),
             })
-        return divisions
+        return divisions_list
 
-    def _coverage_note(self, year: int, tier: int, n_teams: int) -> str:
+    def _coverage_note(self, year: int, tier: int, n_teams: int,
+                       division_id: str | None = None) -> str:
         """
         Say so, on the table itself, when the table isn't the real one.
 
@@ -596,16 +617,22 @@ class SiteBuilder:
         """
         if "data_complete" not in self.standings_cols:
             return ""
+        # Scoped to the division where the caller knows it: a merged tier
+        # would compare one division's fixtures against a club count of
+        # two, and flag both tables short when neither is.
+        where, params = "tier = ?", (year, tier)
+        if division_id is not None:
+            where, params = "tier = ? AND division_id IS ?", (year, tier, division_id)
         row = self.conn.execute(
             "SELECT COALESCE(data_complete, 1) FROM standings"
-            " WHERE season_end_year = ? AND tier = ? LIMIT 1",
-            (year, tier),
+            f" WHERE season_end_year = ? AND {where} LIMIT 1",
+            params,
         ).fetchone()
         if not row or row[0]:
             return ""
         found = self.conn.execute(
-            "SELECT COUNT(*) FROM matches WHERE season_end_year = ? AND tier = ?",
-            (year, tier),
+            f"SELECT COUNT(*) FROM matches WHERE season_end_year = ? AND {where}",
+            params,
         ).fetchone()[0]
         expected = aggregate.expected_match_count(n_teams)
         if found and expected and found < expected:
@@ -2061,10 +2088,28 @@ class SiteBuilder:
             if has_data:
                 rows.append({"name": name, "cells": cells})
 
+        # TIER_SLUGS holds only the tiers that ARE a division, so the sixth
+        # and seventh drop out of this page by construction: a row here is
+        # one division deep and those levels are two and four wide. That is
+        # the right answer for a grid, but it should be said rather than
+        # left for the reader to notice a pyramid that stops at five.
+        parallel = sorted(
+            {d.tier for d in divisions.DIVISIONS if d.tier not in TIER_SLUGS}
+        )
+        omitted = None
+        if parallel:
+            names = " and ".join(_ordinal(t) for t in parallel)
+            omitted = (
+                f"The {names} tiers are not here. Each is several divisions "
+                "wide, and a grid with one row per level cannot say which of "
+                "them a club was in. They are on the season pages and the "
+                "club pages instead."
+            )
+
         self.render(
             "matrix.html", self.out / "matrix" / "index.html", 1,
             title="The Matrix", season_columns=season_columns, rows=rows,
-            main_class="wide",
+            omitted=omitted, main_class="wide",
         )
 
     # ── Insights ───────────────────────────────────────────────────────────

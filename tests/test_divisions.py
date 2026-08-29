@@ -253,3 +253,61 @@ def test_every_club_the_allocations_name_now_has_an_identity():
     missing = [name for _, _, _, name in _allocations()
                if not resolver.get(entities._normalize(name))]
     assert not missing, f"named by the FA and unknown here: {sorted(set(missing))}"
+
+
+# ── the check that would have caught all of it ─────────────────────────
+
+def _division_seasons(conn):
+    """Every (season, tier, division) with its club count and match count."""
+    for season, tier, division_id, n_clubs in conn.execute(
+            "SELECT season_end_year, tier, division_id, COUNT(*) FROM standings"
+            " GROUP BY season_end_year, tier, division_id"):
+        n_matches = conn.execute(
+            "SELECT COUNT(*) FROM matches WHERE season_end_year = ?"
+            " AND tier = ? AND division_id IS ?",
+            (season, tier, division_id)).fetchone()[0]
+        yield season, tier, division_id, n_clubs, n_matches
+
+
+def test_no_division_season_holds_more_matches_than_it_can_have():
+    """
+    n clubs play n*(n-1) fixtures. More than that is not a short file or a
+    curtailed season, it is the same matches stored twice - which is what
+    happened when the division backfill was run after the ingest rather
+    than before it: the season-replacing DELETE missed the rows that had
+    no division_id yet, and the insert stacked on top of them. Tier 1 went
+    from 28,586 matches to 44,468 without a single error being raised.
+    """
+    conn = _conn()
+    over = [(s, t, d, c, m) for s, t, d, c, m in _division_seasons(conn)
+            if m > c * (c - 1)]
+    assert not over, f"more matches than fixtures exist: {over}"
+
+
+def test_a_short_division_season_is_flagged_rather_than_read_as_final():
+    """
+    The check that would have caught the tier-keyed matches DELETE. Loading
+    National League South deleted the North's fixtures, leaving every
+    tier-6 season at exactly half its matches - arithmetic that is visible
+    the moment the count is compared against the size of the DIVISION.
+    Compared against the size of the TIER it was invisible, because a
+    44-club tier and a 22-club division are the same wrong answer.
+
+    A division-season with no matches at all is not a failure: there is no
+    match-level feed below the fifth tier before 2013 or after 2019.
+    """
+    conn = _conn()
+    unflagged = []
+    for season, tier, division_id, n_clubs, n_matches in _division_seasons(conn):
+        if n_matches == 0:
+            continue
+        if n_matches == n_clubs * (n_clubs - 1):
+            continue
+        complete = conn.execute(
+            "SELECT MIN(data_complete) FROM standings WHERE season_end_year = ?"
+            " AND tier = ? AND division_id IS ?",
+            (season, tier, division_id)).fetchone()[0]
+        if complete:
+            unflagged.append((season, tier, division_id, n_clubs, n_matches,
+                              n_clubs * (n_clubs - 1)))
+    assert not unflagged, f"short of fixtures but not flagged: {unflagged}"

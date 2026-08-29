@@ -29,5 +29,9 @@
   </table>
 </div>
 
+{% if omitted %}
+<p class="finance-note">{{ omitted }}</p>
+{% endif %}
+
 <script src="{{ root }}/static/matrix.js"></script>
 {% endblock %}
