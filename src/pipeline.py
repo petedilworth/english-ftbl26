@@ -71,6 +71,7 @@ CREATE_MATCHES_SQL = """
 CREATE TABLE IF NOT EXISTS matches (
     season_end_year INT  NOT NULL,
     tier            INT  NOT NULL,
+    division_id     TEXT,
     match_date      TEXT,
     home_club_id    TEXT,
     away_club_id    TEXT,
@@ -93,6 +94,21 @@ STANDINGS_STAT_COLUMNS = ["played", "won", "drawn", "lost", "gf", "ga", "gd",
 # Which division within the tier. TEXT rather than INT, and separate from
 # the numeric columns above because the migration types them.
 STANDINGS_TEXT_COLUMNS = ["division_id"]
+
+# matches needs it for the same reason standings does, and did not get it
+# when standings did - which cost half the sixth tier's fixtures on every
+# run. See _process_season's delete.
+MATCHES_TEXT_COLUMNS = ["division_id"]
+
+
+def _migrate_matches_columns(conn: sqlite3.Connection) -> None:
+    """Add columns to matches tables created before they existed."""
+    existing = {row[1] for row in conn.execute("PRAGMA table_info(matches)")}
+    for col in MATCHES_TEXT_COLUMNS:
+        if col not in existing:
+            conn.execute(f"ALTER TABLE matches ADD COLUMN {col} TEXT")
+            logger.info("Migrated matches table: added column %s", col)
+    conn.commit()
 
 
 def _migrate_standings_columns(conn: sqlite3.Connection) -> None:
@@ -330,6 +346,7 @@ def _process_season(
         match_rows.append((
             season_end_year,
             tier,
+            division_id,
             m["match_date"],
             entities.resolve_name(m["HomeTeam"], resolver, season_end_year),
             entities.resolve_name(m["AwayTeam"], resolver, season_end_year),
@@ -363,17 +380,22 @@ def _process_season(
             rows,
         )
         # matches has no natural unique key across replays of the same
-        # season (dates can be reparsed), so replace the season wholesale
+        # season (dates can be reparsed), so replace the season wholesale -
+        # by DIVISION, for the same reason as the standings delete above.
+        # Keyed on the tier this deleted National League North's fixtures
+        # when the South loaded, silently, and had been doing so on every
+        # run: 6,784 of 17,858 sixth- and seventh-tier matches survived.
         conn.execute(
-            "DELETE FROM matches WHERE season_end_year = ? AND tier = ?",
-            (season_end_year, tier),
+            "DELETE FROM matches WHERE season_end_year = ? AND tier = ?"
+            " AND (division_id = ? OR (division_id IS NULL AND ? IS NULL))",
+            (season_end_year, tier, division_id, division_id),
         )
         conn.executemany(
             """
             INSERT INTO matches
-                (season_end_year, tier, match_date, home_club_id, away_club_id,
-                 home_name, away_name, fthg, ftag, ftr)
-            VALUES (?,?,?,?,?,?,?,?,?,?)
+                (season_end_year, tier, division_id, match_date, home_club_id,
+                 away_club_id, home_name, away_name, fthg, ftag, ftr)
+            VALUES (?,?,?,?,?,?,?,?,?,?,?)
             """,
             match_rows,
         )
@@ -495,6 +517,31 @@ def _backfill_division_ids(conn: sqlite3.Connection) -> None:
         "SELECT COUNT(*) FROM standings WHERE division_id IS NULL").fetchone()[0]
     if orphans:
         logger.warning("%d standings row(s) still have no division_id", orphans)
+
+    # And the same for matches. Where a tier has one division the id is
+    # not a decision; where it has several, the home club's own standings
+    # row says which one the match belongs to, so this is a lookup rather
+    # than a guess.
+    filled = 0
+    for (tier,) in conn.execute("SELECT DISTINCT tier FROM matches"):
+        division = divisions.sole_division(tier)
+        if division is not None:
+            cur = conn.execute(
+                "UPDATE matches SET division_id = ? WHERE tier = ?"
+                " AND division_id IS NULL", (division.division_id, tier))
+            filled += cur.rowcount
+            continue
+        cur = conn.execute(
+            "UPDATE matches SET division_id = ("
+            "  SELECT s.division_id FROM standings s"
+            "  WHERE s.club_id = matches.home_club_id"
+            "    AND s.season_end_year = matches.season_end_year"
+            "    AND s.tier = matches.tier)"
+            " WHERE tier = ? AND division_id IS NULL", (tier,))
+        filled += cur.rowcount
+    conn.commit()
+    if filled:
+        logger.info("Backfilled division_id on %d match row(s)", filled)
 
 
 def _rerank_stale_divisions(conn: sqlite3.Connection) -> None:
@@ -728,36 +775,40 @@ def _mark_data_completeness(conn: sqlite3.Connection) -> None:
     downloads again.
     """
     marked = 0
-    for season, tier in conn.execute(
-        "SELECT DISTINCT season_end_year, tier FROM standings"
+    for season, tier, division_id in conn.execute(
+        "SELECT DISTINCT season_end_year, tier, division_id FROM standings"
     ).fetchall():
         n_teams = conn.execute(
-            "SELECT COUNT(*) FROM standings WHERE season_end_year = ? AND tier = ?",
-            (season, tier),
+            "SELECT COUNT(*) FROM standings WHERE season_end_year = ?"
+            " AND tier = ? AND division_id IS ?",
+            (season, tier, division_id),
         ).fetchone()[0]
         n_matches = conn.execute(
-            "SELECT COUNT(*) FROM matches WHERE season_end_year = ? AND tier = ?",
-            (season, tier),
+            "SELECT COUNT(*) FROM matches WHERE season_end_year = ?"
+            " AND tier = ? AND division_id IS ?",
+            (season, tier, division_id),
         ).fetchone()[0]
+        label = division_id or f"tier {tier}"
         if not n_matches:
             # No match rows at all is no evidence either way - don't condemn
             # a table on an empty matches import.
-            logger.debug("No matches stored for %d tier %d - completeness unknown",
-                         season, tier)
+            logger.debug("No matches stored for %d %s - completeness unknown",
+                         season, label)
             continue
 
         expected = aggregate.expected_match_count(n_teams)
         complete = n_matches >= expected
         conn.execute(
-            "UPDATE standings SET data_complete = ? WHERE season_end_year = ? AND tier = ?",
-            (1 if complete else 0, season, tier),
+            "UPDATE standings SET data_complete = ? WHERE season_end_year = ?"
+            " AND tier = ? AND division_id IS ?",
+            (1 if complete else 0, season, tier, division_id),
         )
         if not complete:
             marked += 1
             logger.warning(
-                "%d tier %d: %d of %d fixtures present (%.0f%%) - table flagged "
+                "%d %s: %d of %d fixtures present (%.0f%%) - table flagged "
                 "incomplete and withheld from records",
-                season, tier, n_matches, expected, 100 * n_matches / expected,
+                season, label, n_matches, expected, 100 * n_matches / expected,
             )
     conn.commit()
     logger.info("Data completeness: %d season/division tables flagged incomplete", marked)
@@ -957,6 +1008,7 @@ def run(
     conn.execute(CREATE_MATCHES_SQL)
     conn.commit()
     _migrate_standings_columns(conn)
+    _migrate_matches_columns(conn)
 
     entities.seed_club_master(conn, club_master_csv)
     # After club_master, since finances rows are validated against it.
@@ -1004,6 +1056,14 @@ def run(
     if not csv_files:
         logger.warning("No CSV files found in %s", raw_dir)
 
+    # BEFORE the ingest, not after. The deletes that replace a season are
+    # keyed on the division now, and a row with no division_id matches
+    # neither branch of that key - so an un-backfilled table is not
+    # replaced, it is added to. Running this first is what makes the
+    # replacement a replacement; running it only afterwards tripled the
+    # matches table the first time this was tried.
+    _backfill_division_ids(conn)
+
     unresolved_map: dict[str, list[str]] = defaultdict(list)
     total_rows = 0
 
@@ -1035,6 +1095,7 @@ def run(
 
     logger.info("Inserted/updated %d standings rows total", total_rows)
 
+    _backfill_division_ids(conn)
     _mark_data_completeness(conn)
     # Before reconciliation: with the deduction applied the positional
     # rules are usually right on their own, leaving reconciliation to do
@@ -1042,7 +1103,6 @@ def run(
     # club_roster held the sixth- and seventh-tier clubs while they had no
     # standings rows to hang an identity on. They are in club_master now.
     conn.execute("DROP TABLE IF EXISTS club_roster")
-    _backfill_division_ids(conn)
     _rerank_curtailed_divisions(conn)
     _rerank_stale_divisions(conn)
     _apply_points_deductions(conn)

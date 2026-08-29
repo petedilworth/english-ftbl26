@@ -150,6 +150,21 @@ def test_matrix_is_one_table_most_recent_first(tmp_path):
     assert 'data-club="giant-fc"' in matrix
 
 
+def test_the_matrix_says_which_tiers_it_leaves_out(tmp_path):
+    """
+    A grid with one row per level cannot hold a level that is four
+    divisions wide, so the sixth and seventh are absent. Absent structure
+    and missing data look identical to a reader; the page has to say which
+    this is.
+    """
+    db = _db_on_disk(tmp_path)
+    out = tmp_path / "site"
+    SiteBuilder(db, out, charts_enabled=False).build()
+
+    matrix = (out / "matrix" / "index.html").read_text()
+    assert "6th and 7th tiers are not here" in matrix
+
+
 def test_insights_and_map_pages(tmp_path):
     db = _db_on_disk(tmp_path)
     out = tmp_path / "site"
@@ -1852,6 +1867,9 @@ def _with_fixture_count(tmp_path, n_matches):
     db = _db_on_disk(tmp_path)
     conn = sqlite3.connect(db)
     pipeline._migrate_standings_columns(conn)
+    # Both, as the pipeline does: completeness is counted per division now,
+    # so the matches table needs the column the pipeline gives it.
+    pipeline._migrate_matches_columns(conn)
     conn.execute("DELETE FROM matches WHERE season_end_year = 2025 AND tier = 3")
     pairs = [("giant-fc", "steady-fc"), ("steady-fc", "giant-fc")]
     for i in range(n_matches):
