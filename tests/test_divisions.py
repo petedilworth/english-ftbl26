@@ -311,3 +311,36 @@ def test_a_short_division_season_is_flagged_rather_than_read_as_final():
             unflagged.append((season, tier, division_id, n_clubs, n_matches,
                               n_clubs * (n_clubs - 1)))
     assert not unflagged, f"short of fixtures but not flagged: {unflagged}"
+
+
+def test_club_master_agrees_with_the_fa_about_who_plays_where_now():
+    """
+    The allocations are the governing body's own list for the season being
+    played, so for the clubs it names they settle current_tier - a column
+    trajectory.py calls hand-maintained and nothing in src/ reads this file
+    to fill. Two failures are worth separating: a DISAGREEMENT is a wrong
+    answer on the page, a BLANK is only an unanswered one, and the FA has
+    answered it.
+
+    Clubs the FA does not name are left alone. It covers steps 1 to 4 and
+    stops, and the eighth tier down is genuinely unknown here.
+    """
+    conn = _conn()
+    sys.path.insert(0, str(PROJECT_ROOT / "src"))
+    import entities
+    resolver = entities.build_resolver(conn)
+
+    current = dict(conn.execute("SELECT club_id, current_tier FROM club_master"))
+    wrong, blank = [], []
+    for _, tier, _, name in _allocations():
+        club_id = resolver.get(entities._normalize(name))
+        if club_id is None:
+            continue                       # covered by its own test
+        held = current.get(club_id)
+        if held is None:
+            blank.append((club_id, tier))
+        elif held != tier:
+            wrong.append((club_id, held, tier))
+
+    assert not wrong, f"club_master disagrees with the FA (id, ours, FA): {wrong}"
+    assert not blank, f"the FA says where these play and club_master does not: {blank}"

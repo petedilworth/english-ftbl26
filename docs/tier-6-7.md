@@ -116,10 +116,19 @@ publishes its own measured error. They appear in the tables and on the ladder
 and not on the map or in the catchment model, which is the honest treatment
 for a club whose location this project cannot fix.
 
-**Eighty-two have no `current_tier`.** They played at the sixth or seventh
-tier in these seasons and this project does not record where they are now. The
-FA allocations (`data/nls-allocations-2026-27.tsv`, kept out of `data/raw/`
-because that directory is gitignored and this file cannot be fetched again)
-settle steps 1 to 4 and would answer it for about twenty of
-them; the rest are below that. Blank means unknown, and the catchment model
-gives an unknown club no pull rather than a guessed one.
+**Sixty-seven have no `current_tier`.** They played at the sixth or seventh
+tier in these seasons and this project does not record where they are now.
+
+It was eighty-two. The FA allocations
+(`data/nls-allocations-2026-27.tsv`, kept out of `data/raw/` because that
+directory is gitignored and this file cannot be fetched again) settle steps 1
+to 4, and this file was in the repo read by nothing but its own tests. Checked
+against `club_master.csv` it disagreed about **nobody** and answered
+**fifteen** blanks - fewer than the twenty estimated here before anyone
+counted. Those fifteen are filled, and a test now holds the two files in
+agreement: a disagreement is a wrong answer on the page, a blank the FA has
+already answered is a lazy one.
+
+The remaining sixty-seven play below step 4, where the FA list stops. Blank
+means unknown, and the catchment model gives an unknown club no pull rather
+than a guessed one.
