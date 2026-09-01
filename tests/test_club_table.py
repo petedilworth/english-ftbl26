@@ -250,3 +250,64 @@ def test_the_csv_and_the_table_carry_the_same_columns():
     header = _csv_rows()[0].keys()
     # club_id leads the file and has no column in the table.
     assert list(header)[1:] == labels
+
+
+# ── "now" has to mean now ──────────────────────────────────────────────
+
+SITE = PROJECT_ROOT / "site"
+
+
+def _dormant_clubs(conn):
+    """Clubs whose data has stopped: last recorded season is not the latest."""
+    latest = conn.execute("SELECT MAX(season_end_year) FROM standings").fetchone()[0]
+    return {r[0]: (r[1], r[2]) for r in conn.execute(
+        "SELECT club_id, canonical_name, last_season_in_db FROM club_trajectory"
+        " WHERE last_season_in_db <> ?", (latest,))}
+
+
+def test_no_club_that_stopped_playing_is_listed_under_now():
+    """
+    club_trajectory.current_tier is the tier of a club's LAST recorded
+    season, and 189 of 305 clubs here have data that has stopped. Printed
+    under a column headed "Now" that is a false present tense, and it was
+    one: Wimbledon FC, dissolved in 2004, was listed among clubs that now
+    play in the top two divisions.
+
+    The excluded clubs belong in the note, not in the table, so this checks
+    the table rows only.
+    """
+    page = SITE / "insights" / "fallen-giants" / "index.html"
+    if not page.exists() or not DB.exists():
+        pytest.skip("site not built")
+    conn = sqlite3.connect(DB)
+    dormant = _dormant_clubs(conn)
+
+    html = page.read_text()
+    body = html.split("<tbody>", 1)[-1] if "<tbody>" in html else html
+    listed = set(re.findall(r'/team/([a-z0-9-]+)/', body))
+    wrong = sorted(dormant[c][0] for c in listed & set(dormant))
+    assert not wrong, f"listed under 'Now' but no longer playing: {wrong}"
+
+
+def test_a_club_whose_data_stopped_does_not_claim_a_current_level():
+    """
+    The same claim on 189 club pages. Wimbledon FC's read "Current level:
+    Tier 2" twenty-two years after they were dissolved. The tagline already
+    carries the span; the stat card has to stop asserting the present.
+    """
+    if not DB.exists():
+        pytest.skip("no built database")
+    conn = sqlite3.connect(DB)
+    dormant = _dormant_clubs(conn)
+
+    checked, wrong = 0, []
+    for club_id, (name, _last) in dormant.items():
+        page = SITE / "team" / club_id / "index.html"
+        if not page.exists():
+            continue
+        checked += 1
+        if "Current level" in page.read_text():
+            wrong.append(name)
+    if not checked:
+        pytest.skip("site not built")
+    assert not wrong, f"no longer playing but page says 'Current level': {wrong}"

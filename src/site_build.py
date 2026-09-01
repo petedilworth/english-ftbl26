@@ -1224,9 +1224,18 @@ class SiteBuilder:
         }
 
     def _team_stats_cards(self, t: sqlite3.Row) -> list[dict]:
+        # Same false present tense as the risers table, on 189 club pages:
+        # current_tier is the tier of the club's last recorded season, so
+        # Wimbledon FC's page read "Current level: Tier 2" twenty-two years
+        # after they were dissolved, and Margate's still reads tier 7 though
+        # their data stops in 2018/19. The tagline already carries the span;
+        # the label just has to stop claiming the present.
+        playing = t["last_season_in_db"] == max(self.seasons)
         cards = [
-            {"value": f"Tier {t['current_tier']}", "label": "Current level"},
-            {"value": t["current_tier_streak"], "label": "Seasons at this level"},
+            {"value": f"Tier {t['current_tier']}",
+             "label": "Current level" if playing else "Level when last recorded"},
+            {"value": t["current_tier_streak"],
+             "label": "Seasons at this level" if playing else "Seasons in that spell"},
             {"value": f"{t['highest_tier']}–{t['lowest_tier']}", "label": "Tier range"},
             {"value": t["total_promotions"], "label": "Promotions"},
             {"value": t["total_relegations"], "label": "Relegations"},
@@ -3534,27 +3543,58 @@ class SiteBuilder:
         )
 
     def _insight_fallen_giants(self) -> None:
-        fallen = self.conn.execute(
+        # club_trajectory.current_tier is the tier of a club's LAST recorded
+        # season, not of this one, and 189 of the 305 clubs here have data
+        # that has stopped - 116 of them the sixth and seventh tiers, which
+        # end in 2018/19. Printing that under a column headed "Now" asserts
+        # a present tense the data cannot support, and it was doing so:
+        # WIMBLEDON FC, whose last season was 2002/03 and who were dissolved
+        # in 2004, appeared under "The risers" as a club that now plays in
+        # the top two divisions.
+        #
+        # The test is the one trajectory.py:155 already uses for is_active -
+        # whether the club's last recorded season is the latest season. The
+        # clubs it excludes are named in the note rather than dropped
+        # silently, because "not playing any more" is the interesting half
+        # of a page about clubs a long way from where they were.
+        latest = max(self.seasons)
+
+        def split(rows):
+            playing = [r for r in rows if r["last_season_in_db"] == latest]
+            dormant = [r for r in rows if r["last_season_in_db"] != latest]
+            return playing, dormant
+
+        fallen, fallen_dormant = split(self.conn.execute(
             """
             SELECT club_id, canonical_name, seasons_in_tier1, last_tier1_season,
-                   current_tier
+                   current_tier, last_season_in_db
             FROM club_trajectory
             WHERE highest_tier = 1 AND current_tier >= 3
             ORDER BY current_tier DESC, last_tier1_season
             """
-        ).fetchall()
-        risers = self.conn.execute(
+        ).fetchall())
+        risers, risers_dormant = split(self.conn.execute(
             """
             SELECT * FROM (
                 SELECT t.club_id, t.canonical_name, t.current_tier,
-                       t.first_season_in_db,
+                       t.first_season_in_db, t.last_season_in_db,
                        (SELECT s.tier FROM standings s WHERE s.club_id = t.club_id
                         ORDER BY s.season_end_year LIMIT 1) AS first_tier
                 FROM club_trajectory t
             ) WHERE first_tier >= 4 AND current_tier <= 2
             ORDER BY current_tier, first_tier DESC
             """
-        ).fetchall()
+        ).fetchall())
+
+        def with_dormant(note, dormant):
+            if not dormant:
+                return note
+            named = ", ".join(
+                f"{r['canonical_name']} (last recorded {season_label(r['last_season_in_db'])})"
+                for r in dormant)
+            return (f"{note} {named} would qualify on the record, but this "
+                    f"column says where a club plays now and their data has "
+                    f"stopped.")
         self.render(
             "insight_table.html",
             self.out / "insights" / "fallen-giants" / "index.html", 2,
@@ -3564,7 +3604,9 @@ class SiteBuilder:
             sections=[
                 {
                     "heading": "Fallen giants",
-                    "note": "Former top-flight clubs now in Tier 3 or below.",
+                    "note": with_dormant(
+                        "Former top-flight clubs now in Tier 3 or below.",
+                        fallen_dormant),
                     "columns": ["Club", "Top-flight seasons", "Last in Tier 1", "Now"],
                     "rows": [
                         [self._cell(r["canonical_name"], r["club_id"]),
@@ -3576,7 +3618,9 @@ class SiteBuilder:
                 },
                 {
                     "heading": "The risers",
-                    "note": "Clubs that entered the database in Tier 4 or 5 and now play in the top two divisions.",
+                    "note": with_dormant(
+                        "Clubs that entered the database in Tier 4 or 5 and now "
+                        "play in the top two divisions.", risers_dormant),
                     "columns": ["Club", "Started", "Now"],
                     "rows": [
                         [self._cell(r["canonical_name"], r["club_id"]),
