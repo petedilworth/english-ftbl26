@@ -3,7 +3,7 @@ accrington-stanley-fc,Accrington Stanley,"[""Accrington"",""Accrington Stanley""
 afc-rushden-and-diamonds-fc,AFC Rushden & Diamonds,"[""AFC Rushden & Diamonds""]",,,,,,,,
 afc-sudbury-fc,AFC Sudbury,"[""AFC Sudbury""]",,,,,,,,
 afc-telford-united-fc,AFC Telford United,"[""Telford"",""AFC Telford"",""Telford United"",""AFC Telford United"",""Telford Utd""]",,6,#FFFFFF,#000000,New Bucks Head,52.6980,-2.5100,ground
-afc-totton-fc,AFC Totton,"[""AFC Totton""]",,,,,,,,
+afc-totton-fc,AFC Totton,"[""AFC Totton""]",,6,,,,,,
 afc-whyteleafe-fc,AFC Whyteleafe,"[""AFC Whyteleafe""]",,7,,,Church Road,51.2542,-0.0603,town
 afc-wimbledon,AFC Wimbledon,"[""AFC Wimbledon"",""Wimbledon AFC""]",wimbledon-fc,3,#003087,#FFD100,Plough Lane,51.4315,-0.1878,ground
 aldershot-town-fc,Aldershot Town,"[""Aldershot"",""Aldershot Town""]",,5,#DA291C,#0033A0,Recreation Ground,51.2478,-0.7556,ground
@@ -20,7 +20,7 @@ aveley-fc,Aveley,"[""Aveley""]",,7,,,Parkside,51.4950,0.3425,town
 avro-fc,Avro,"[""Avro""]",,7,,,Whitebank Stadium,53.5422,-2.1095,town
 aylesbury-united-fc,Aylesbury United,"[""Aylesbury United"",""Aylesbury""]",,0,,,,,,
 bamber-bridge-fc,Bamber Bridge,"[""Bamber Bridge""]",,7,,,Sir Tom Finney Stadium,53.7191,-2.7036,town
-banbury-united-fc,Banbury United,"[""Banbury United""]",,,,,,,,
+banbury-united-fc,Banbury United,"[""Banbury United""]",,7,,,,,,
 bangor-city-fc,Bangor City,"[""Bangor City"",""Bangor""]",,0,,,,,,
 barnet-fc,Barnet,"[""Barnet""]",,4,#F7A800,#000000,The Hive Stadium,51.6069,-0.2718,ground
 barnsley-fc,Barnsley,"[""Barnsley""]",,3,#D50032,#FFFFFF,Oakwell,53.5522,-1.4676,ground
@@ -66,7 +66,7 @@ burnham-fc,Burnham,"[""Burnham""]",,,,,,,,
 burnley-fc,Burnley,"[""Burnley""]",,2,#6C1D45,#99D6EA,Turf Moor,53.7890,-2.2302,ground
 burton-albion-fc,Burton Albion,"[""Burton"",""Burton Albion""]",,3,#FFF200,#000000,Pirelli Stadium,52.8218,-1.6270,ground
 bury-fc,Bury,"[""Bury""]",,7,#FFFFFF,#0044AA,Gigg Lane,53.5802,-2.2946,ground
-bury-town-fc,Bury Town,"[""Bury Town""]",,,,,,,,
+bury-town-fc,Bury Town,"[""Bury Town""]",,7,,,,,,
 buxton-fc,Buxton,"[""Buxton""]",,6,,,Silverlands,53.3589,-1.9482,town
 cambridge-city-fc,Cambridge City,"[""Cambridge City""]",,,,,,,,
 cambridge-united-fc,Cambridge United,"[""Cambridge"",""Cambridge United""]",,3,#FFCD00,#000000,Abbey Stadium,52.2122,0.1543,ground
@@ -80,12 +80,12 @@ chelmsford-city-fc,Chelmsford City,"[""Chelmsford City""]",,6,,,Melbourne Stadiu
 chelsea-fc,Chelsea,"[""Chelsea""]",,1,#034694,#FFFFFF,Stamford Bridge,51.4817,-0.1910,ground
 cheltenham-town-fc,Cheltenham Town,"[""Cheltenham"",""Cheltenham Town""]",,4,#DA291C,#FFFFFF,Whaddon Road,51.9063,-2.0603,ground
 chertsey-town-fc,Chertsey Town,"[""Chertsey Town""]",,7,,,Alwyns Lane,51.3931,-0.5242,town
-chesham-united-fc,Chesham United,"[""Chesham United""]",,,,,,,,
+chesham-united-fc,Chesham United,"[""Chesham United""]",,6,,,,,,
 cheshunt-fc,Cheshunt,"[""Cheshunt""]",,7,,,The Stadium,51.7241,-0.0343,town
 chester-city-fc,Chester City,"[""Chester"",""Chester City""]",,6,#005EB8,#FFFFFF,Deva Stadium,53.1774,-2.9163,ground
 chesterfield-fc,Chesterfield,"[""Chesterfield""]",,4,#0066B3,#FFFFFF,SMH Group Stadium,53.2535,-1.4272,ground
 chichester-city-fc,Chichester City,"[""Chichester City""]",,7,,,,,,
-chippenham-town-fc,Chippenham Town,"[""Chippenham Town""]",,,,,,,,
+chippenham-town-fc,Chippenham Town,"[""Chippenham Town""]",,7,,,,,,
 chorley-fc,Chorley,"[""Chorley""]",,6,#000000,#FFFFFF,Victory Park,53.6486,-2.6353,ground
 cinderford-town-fc,Cinderford Town,"[""Cinderford Town""]",,,,,,,,
 cirencester-town-fc,Cirencester Town,"[""Cirencester Town""]",,,,,,,,
@@ -133,10 +133,10 @@ fleetwood-town-fc,Fleetwood Town,"[""Fleetwood"",""Fleetwood Town""]",,4,#E31B23
 folkestone-invicta-fc,Folkestone Invicta,"[""Folkestone Invicta""]",,6,,,Cheriton Road,51.0699,1.1007,town
 forest-green-rovers-fc,Forest Green Rovers,"[""Forest Green"",""Forest Green Rovers""]",,5,#00A650,#000000,The New Lawn,51.6989,-2.2376,ground
 frickley-athletic-fc,Frickley Athletic,"[""Frickley Athletic"",""Frickley""]",,0,,,,,,
-frome-town-fc,Frome Town,"[""Frome Town""]",,,,,,,,
+frome-town-fc,Frome Town,"[""Frome Town""]",,7,,,,,,
 fulham-fc,Fulham,"[""Fulham""]",,1,#FFFFFF,#000000,Craven Cottage,51.4749,-0.2217,ground
 fylde-afc,AFC Fylde,"[""Fylde"",""AFC Fylde""]",,5,#FFFFFF,#002D62,Mill Farm,53.7841,-2.8756,ground
-gainsborough-trinity-fc,Gainsborough Trinity,"[""Gainsborough Trinity""]",,,,,,,,
+gainsborough-trinity-fc,Gainsborough Trinity,"[""Gainsborough Trinity""]",,7,,,,,,
 gateshead-fc,Gateshead,"[""Gateshead""]",,5,#FFFFFF,#000000,Gateshead International Stadium,54.9622,-1.5677,ground
 gillingham-fc,Gillingham,"[""Gillingham""]",,4,#0055A5,#FFFFFF,Priestfield Stadium,51.3842,0.5606,ground
 gloucester-city-fc,Gloucester City,"[""Gloucester City""]",,7,,,Meadow Park,51.8493,-2.2361,town
@@ -166,7 +166,7 @@ hendon-fc,Hendon,"[""Hendon""]",,,,,,,,
 hereford-united-fc,Hereford United,"[""Hereford"",""Hereford United""]",,6,#FFFFFF,#000000,Edgar Street,52.0610,-2.7166,ground
 hinckley-united-fc,Hinckley United,"[""Hinckley United""]",,,,,,,,
 histon-fc,Histon,"[""Histon""]",,9,#DA291C,#000000,Bridge Road,52.2460,0.1070,ground
-hitchin-town-fc,Hitchin Town,"[""Hitchin Town""]",,,,,,,,
+hitchin-town-fc,Hitchin Town,"[""Hitchin Town""]",,7,,,,,,
 hornchurch-fc,Hornchurch,"[""Hornchurch"",""AFC Hornchurch"",""Hornchurch FC""]",,5,#DA291C,#FFFFFF,Hornchurch Stadium,51.5567,0.2383,ground
 horsham-fc,Horsham,"[""Horsham""]",,6,,,Camping World Community Stadium,51.0189,-0.3557,town
 huddersfield-town-fc,Huddersfield Town,"[""Huddersfield"",""Huddersfield Town""]",,3,#0E63AD,#FFFFFF,Kirklees Stadium,53.6543,-1.7683,ground
@@ -189,7 +189,7 @@ leek-town-fc,Leek Town,"[""Leek Town"",""Leek""]",,7,,,,53.0572,-2.0551,town
 leicester-city-fc,Leicester City,"[""Leicester"",""Leicester City""]",,2,#003090,#FDBE11,King Power Stadium,52.6204,-1.1422,ground
 leigh-rmi-fc,Leigh RMI,"[""Leigh RMI"",""Leigh Genesis"",""Leigh""]",,0,,,,,,
 leighton-town-fc,Leighton Town,"[""Leighton Town""]",,7,,,,,,
-leiston-fc,Leiston,"[""Leiston""]",,,,,,,,
+leiston-fc,Leiston,"[""Leiston""]",,7,,,,,,
 lewes-fc,Lewes,"[""Lewes""]",,7,#DA291C,#000000,The Dripping Pan,50.8720,0.0135,ground
 leyton-orient-fc,Leyton Orient,"[""Leyton Orient"",""Orient""]",,3,#EF3340,#FFFFFF,Brisbane Road,51.5601,-0.0126,ground
 lincoln-city-fc,Lincoln City,"[""Lincoln"",""Lincoln City""]",,2,#D50032,#FFFFFF,Sincil Bank,53.2185,-0.5408,ground
@@ -274,14 +274,14 @@ southampton-fc,Southampton,"[""Southampton""]",,2,#D71920,#FFFFFF,St Mary's Stad
 southend-united-fc,Southend United,"[""Southend"",""Southend United"",""Southend Utd""]",,5,#003DA5,#FFFFFF,Roots Hall,51.5490,0.7016,ground
 southport-fc,Southport,"[""Southport""]",,6,#FFD100,#000000,Haig Avenue,53.6390,-2.9880,ground
 spalding-united-fc,Spalding United,"[""Spalding United""]",,6,,,,,,
-spennymoor-town-fc,Spennymoor Town,"[""Spennymoor Town""]",,,,,,,,
+spennymoor-town-fc,Spennymoor Town,"[""Spennymoor Town""]",,6,,,,,,
 st-albans-city-fc,St Albans City,"[""St. Albans"",""St Albans"",""St Albans City""]",,7,#FFD100,#0033A0,Clarence Park,51.7535,-0.3240,ground
 st-ives-town-fc,St Ives Town,"[""St Ives Town""]",,,,,,,,
 st-neots-town-fc,St Neots Town,"[""St Neots Town""]",,,,,,,,
 stafford-rangers-fc,Stafford Rangers,"[""Stafford Rangers"",""Stafford""]",,6,#000000,#FFFFFF,Marston Road,52.8150,-2.1090,ground
 staines-town-fc,Staines Town,"[""Staines Town""]",,,,,,,,
 stalybridge-celtic-fc,Stalybridge Celtic,"[""Stalybridge Celtic"",""Stalybridge""]",,0,,,,,,
-stamford-fc,Stamford,"[""Stamford""]",,,,,,,,
+stamford-fc,Stamford,"[""Stamford""]",,7,,,,,,
 stanway-rovers-community-fc,Stanway Rovers Community,"[""Stanway Rovers Community""]",,7,,,Hawthorns,51.8805,0.8880,town
 stevenage-fc,Stevenage,"[""Stevenage"",""Stevenage Borough""]",,3,#DA291C,#FFFFFF,Broadhall Way,51.8898,-0.1937,ground
 stockport-county-fc,Stockport County,"[""Stockport"",""Stockport County""]",,3,#0050A0,#FFFFFF,Edgeley Park,53.4046,-2.1673,ground
@@ -289,7 +289,7 @@ stocksbridge-park-steels-fc,Stocksbridge Park Steels,"[""Stocksbridge Park Steel
 stockton-town-fc,Stockton Town,"[""Stockton Town""]",,7,,,The Map Group UK Stadium,54.5648,-1.3229,town
 stoke-city-fc,Stoke City,"[""Stoke"",""Stoke City""]",,2,#E03A3E,#FFFFFF,bet365 Stadium,52.9884,-2.1754,ground
 stourbridge-fc,Stourbridge,"[""Stourbridge""]",,7,,,The War Memorial Athletic Ground,52.4868,-2.1103,town
-stratford-town-fc,Stratford Town,"[""Stratford Town""]",,,,,,,,
+stratford-town-fc,Stratford Town,"[""Stratford Town""]",,7,,,,,,
 sunderland-afc,Sunderland,"[""Sunderland""]",,1,#EB172B,#FFFFFF,Stadium of Light,54.9146,-1.3882,ground
 sutton-coldfield-town-fc,Sutton Coldfield Town,"[""Sutton Coldfield Town""]",,,,,,,,
 sutton-united-fc,Sutton United,"[""Sutton United"",""Sutton Utd"",""Sutton""]",,5,#FFB81C,#4B3621,Gander Green Lane,51.3672,-0.2028,ground
@@ -297,7 +297,7 @@ swansea-city-fc,Swansea City,"[""Swansea"",""Swansea City""]",,2,#FFFFFF,#000000
 swindon-supermarine-fc,Swindon Supermarine,"[""Swindon Supermarine""]",,,,,,,,
 swindon-town-fc,Swindon Town,"[""Swindon"",""Swindon Town""]",,4,#DA291C,#FFFFFF,County Ground,51.5645,-1.7708,ground
 tamworth-fc,Tamworth,"[""Tamworth""]",,5,#DA291C,#FFFFFF,The Lamb Ground,52.6265,-1.6855,ground
-taunton-town-fc,Taunton Town,"[""Taunton Town""]",,,,,,,,
+taunton-town-fc,Taunton Town,"[""Taunton Town""]",,7,,,,,,
 thamesmead-town-fc,Thamesmead Town,"[""Thamesmead Town""]",,,,,,,,
 three-bridges-fc,Three Bridges,"[""Three Bridges""]",,7,,,Jubilee Field,51.1130,-0.1862,town
 thurrock-fc,Thurrock,"[""Thurrock""]",,,,,,,,
@@ -325,11 +325,11 @@ west-bromwich-albion-fc,West Bromwich Albion,"[""West Brom"",""WBA"",""West Brom
 west-ham-united-fc,West Ham United,"[""West Ham"",""West Ham United"",""West Ham Utd""]",,2,#7A263A,#1BB1E7,London Stadium,51.5387,-0.0166,ground
 weston-super-mare-fc,Weston-super-Mare,"[""Weston-super-Mare""]",,6,,,The Optima Stadium,51.3903,-2.8522,town
 weymouth-fc,Weymouth,"[""Weymouth""]",,6,#7A263A,#5BC2E7,Bob Lucas Stadium,50.6273,-2.4800,ground
-whitby-town-fc,Whitby Town,"[""Whitby Town""]",,,,,,,,
+whitby-town-fc,Whitby Town,"[""Whitby Town""]",,7,,,,,,
 whitehawk-fc,Whitehawk,"[""Whitehawk""]",,7,,,The Enclosed Ground,50.8363,-0.1448,town
 wigan-athletic-fc,Wigan Athletic,"[""Wigan"",""Wigan Athletic"",""Wigan Ath""]",,3,#1D59AF,#FFFFFF,Brick Community Stadium,53.5476,-2.6538,ground
 wimbledon-fc,Wimbledon FC,"[""Wimbledon""]",,0,#0033A0,#FFD100,National Hockey Stadium,52.0380,-0.7700,ground
-wimborne-town-fc,Wimborne Town,"[""Wimborne Town""]",,,,,,,,
+wimborne-town-fc,Wimborne Town,"[""Wimborne Town""]",,7,,,,,,
 wingate-and-finchley-fc,Wingate & Finchley,"[""Wingate & Finchley""]",,7,,,The Harry Abrahams Stadium,51.6079,-0.2070,town
 witham-town-fc,Witham Town,"[""Witham Town""]",,,,,,,,
 witton-albion-fc,Witton Albion,"[""Witton Albion"",""Witton""]",,0,,,,,,
