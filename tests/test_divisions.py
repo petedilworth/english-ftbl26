@@ -344,3 +344,64 @@ def test_club_master_agrees_with_the_fa_about_who_plays_where_now():
 
     assert not wrong, f"club_master disagrees with the FA (id, ours, FA): {wrong}"
     assert not blank, f"the FA says where these play and club_master does not: {blank}"
+
+
+# ── the coverage that was missing, and the season that was skipped ─────
+
+def test_the_database_reaches_the_season_being_played():
+    """
+    run_pipeline defaulted season_end to the CALENDAR year. A season
+    starting in August 2026 is the 2027 season, so from July onwards the
+    two differ and the season being played was silently excluded - its
+    files were fetched, copied into place, and then dropped by the range
+    check. The rest of the codebase already used the right rule
+    (pipeline.py:236, download.py:138); only the two defaults did not.
+    """
+    conn = _conn()
+    sys.path.insert(0, str(PROJECT_ROOT / "src"))
+    import download
+    latest = conn.execute("SELECT MAX(season_end_year) FROM standings").fetchone()[0]
+    assert latest == download.current_season_end_year(), (
+        "the database stops before the season being played")
+
+
+def test_the_sixth_and_seventh_tiers_have_no_gap():
+    """
+    Coverage used to run 2012/13 to 2018/19 and stop, because
+    engsoccerdata stopped updating. The seasons since come from Wikipedia
+    results grids instead, so every season from 2012/13 to the one being
+    played should now be present.
+
+    Tier 7 has two real holes, and they are not missing data: the FA
+    declared steps 3 to 6 null and void in March 2020 and expunged them
+    again in February 2021, so 2019/20 and 2020/21 were never played to a
+    finish and have no table to record.
+    """
+    conn = _conn()
+    sys.path.insert(0, str(PROJECT_ROOT / "src"))
+    import download
+    latest = download.current_season_end_year()
+    expected_six = set(range(2013, latest + 1))
+    expected_seven = expected_six - {2020, 2021}
+
+    for tier, expected in ((6, expected_six), (7, expected_seven)):
+        got = {r[0] for r in conn.execute(
+            "SELECT DISTINCT season_end_year FROM standings WHERE tier = ?", (tier,))}
+        assert got == expected, (
+            f"tier {tier}: missing {sorted(expected - got)}, "
+            f"unexpected {sorted(got - expected)}")
+
+
+def test_each_tier_six_season_holds_both_of_its_divisions():
+    """
+    The North and the South are one level, and a season carrying only one
+    of them is the tier-keyed delete bug returning by another route.
+    """
+    conn = _conn()
+    for (season,) in conn.execute(
+            "SELECT DISTINCT season_end_year FROM standings WHERE tier = 6"):
+        got = {r[0] for r in conn.execute(
+            "SELECT DISTINCT division_id FROM standings"
+            " WHERE tier = 6 AND season_end_year = ?", (season,))}
+        assert got == {"national-league-north", "national-league-south"}, \
+            f"{season}: {sorted(got)}"
