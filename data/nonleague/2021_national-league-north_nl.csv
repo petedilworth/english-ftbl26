@@ -1,0 +1,167 @@
+Div,Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+national-league-north,,AFC Fylde,Boston United,2,1,H
+national-league-north,,AFC Fylde,Bradford (Park Avenue),3,3,D
+national-league-north,,AFC Fylde,Chorley,4,0,H
+national-league-north,,AFC Fylde,Darlington,1,0,H
+national-league-north,,AFC Fylde,Farsley Celtic,2,0,H
+national-league-north,,AFC Fylde,Kettering Town,3,2,H
+national-league-north,,AFC Fylde,Spennymoor Town,1,0,H
+national-league-north,,AFC Telford United,AFC Fylde,0,2,A
+national-league-north,,AFC Telford United,Alfreton Town,0,1,A
+national-league-north,,AFC Telford United,Brackley Town,3,0,H
+national-league-north,,AFC Telford United,Chester,1,2,A
+national-league-north,,AFC Telford United,Chorley,0,1,A
+national-league-north,,AFC Telford United,Curzon Ashton,1,1,D
+national-league-north,,AFC Telford United,Gateshead,1,0,H
+national-league-north,,AFC Telford United,Guiseley,2,0,H
+national-league-north,,AFC Telford United,Southport,1,1,D
+national-league-north,,Alfreton Town,AFC Fylde,1,1,D
+national-league-north,,Alfreton Town,Brackley Town,0,2,A
+national-league-north,,Alfreton Town,Chorley,1,1,D
+national-league-north,,Alfreton Town,Darlington,0,2,A
+national-league-north,,Alfreton Town,Farsley Celtic,3,1,H
+national-league-north,,Alfreton Town,Kettering Town,3,3,D
+national-league-north,,Alfreton Town,Spennymoor Town,1,1,D
+national-league-north,,Blyth Spartans,AFC Telford United,1,1,D
+national-league-north,,Blyth Spartans,Boston United,0,1,A
+national-league-north,,Blyth Spartans,Farsley Celtic,1,1,D
+national-league-north,,Blyth Spartans,Gateshead,2,2,D
+national-league-north,,Blyth Spartans,Hereford,0,3,A
+national-league-north,,Blyth Spartans,Southport,0,3,A
+national-league-north,,Blyth Spartans,York City,0,3,A
+national-league-north,,Boston United,AFC Telford United,3,2,H
+national-league-north,,Boston United,Alfreton Town,2,0,H
+national-league-north,,Boston United,Chester,0,0,D
+national-league-north,,Boston United,Chorley,0,2,A
+national-league-north,,Boston United,Guiseley,1,1,D
+national-league-north,,Boston United,Kettering Town,2,2,D
+national-league-north,,Brackley Town,Blyth Spartans,2,1,H
+national-league-north,,Brackley Town,Chester,1,1,D
+national-league-north,,Brackley Town,Chorley,2,1,H
+national-league-north,,Brackley Town,Curzon Ashton,2,2,D
+national-league-north,,Brackley Town,Darlington,2,0,H
+national-league-north,,Brackley Town,Gloucester City,3,2,H
+national-league-north,,Brackley Town,Kettering Town,1,1,D
+national-league-north,,Brackley Town,Kidderminster Harriers,0,2,A
+national-league-north,,Brackley Town,Spennymoor Town,1,0,H
+national-league-north,,Bradford (Park Avenue),AFC Telford United,1,2,A
+national-league-north,,Bradford (Park Avenue),Alfreton Town,2,0,H
+national-league-north,,Bradford (Park Avenue),Boston United,1,1,D
+national-league-north,,Bradford (Park Avenue),Chester,3,3,D
+national-league-north,,Bradford (Park Avenue),Chorley,0,0,D
+national-league-north,,Bradford (Park Avenue),Darlington,2,0,H
+national-league-north,,Bradford (Park Avenue),Gateshead,1,2,A
+national-league-north,,Bradford (Park Avenue),Leamington,1,3,A
+national-league-north,,Bradford (Park Avenue),Southport,0,2,A
+national-league-north,,Bradford (Park Avenue),York City,4,2,H
+national-league-north,,Chester,AFC Telford United,3,0,H
+national-league-north,,Chester,Alfreton Town,3,0,H
+national-league-north,,Chester,Chorley,1,2,A
+national-league-north,,Chester,Curzon Ashton,2,1,H
+national-league-north,,Chester,Gateshead,1,2,A
+national-league-north,,Chester,Guiseley,1,0,H
+national-league-north,,Chester,Hereford,5,3,H
+national-league-north,,Chester,Leamington,3,2,H
+national-league-north,,Chorley,AFC Fylde,3,1,H
+national-league-north,,Chorley,Curzon Ashton,1,1,D
+national-league-north,,Chorley,Farsley Celtic,3,2,H
+national-league-north,,Chorley,Gloucester City,1,2,A
+national-league-north,,Chorley,Guiseley,1,0,H
+national-league-north,,Chorley,Kidderminster Harriers,0,2,A
+national-league-north,,Chorley,Leamington,1,2,A
+national-league-north,,Curzon Ashton,AFC Fylde,2,0,H
+national-league-north,,Curzon Ashton,Alfreton Town,1,1,D
+national-league-north,,Curzon Ashton,Blyth Spartans,0,3,A
+national-league-north,,Curzon Ashton,Bradford (Park Avenue),3,0,H
+national-league-north,,Curzon Ashton,Darlington,0,3,A
+national-league-north,,Curzon Ashton,Farsley Celtic,2,1,H
+national-league-north,,Curzon Ashton,Gloucester City,0,1,A
+national-league-north,,Curzon Ashton,Leamington,0,3,A
+national-league-north,,Darlington,AFC Telford United,1,2,A
+national-league-north,,Darlington,Blyth Spartans,6,0,H
+national-league-north,,Darlington,Bradford (Park Avenue),0,1,A
+national-league-north,,Darlington,Kidderminster Harriers,1,3,A
+national-league-north,,Darlington,Spennymoor Town,0,0,D
+national-league-north,,Farsley Celtic,AFC Telford United,2,0,H
+national-league-north,,Farsley Celtic,Boston United,0,4,A
+national-league-north,,Farsley Celtic,Chester,2,2,D
+national-league-north,,Farsley Celtic,Darlington,1,0,H
+national-league-north,,Farsley Celtic,Gateshead,1,0,H
+national-league-north,,Farsley Celtic,Kidderminster Harriers,2,2,D
+national-league-north,,Farsley Celtic,Leamington,1,1,D
+national-league-north,,Farsley Celtic,York City,1,1,D
+national-league-north,,Gateshead,AFC Fylde,0,1,A
+national-league-north,,Gateshead,Brackley Town,2,2,D
+national-league-north,,Gateshead,Curzon Ashton,1,0,H
+national-league-north,,Gateshead,Gloucester City,1,0,H
+national-league-north,,Gateshead,Guiseley,1,0,H
+national-league-north,,Gateshead,Kidderminster Harriers,0,1,A
+national-league-north,,Gateshead,Southport,4,1,H
+national-league-north,,Gateshead,Spennymoor Town,1,3,A
+national-league-north,,Gloucester City,AFC Telford United,4,1,H
+national-league-north,,Gloucester City,Blyth Spartans,6,1,H
+national-league-north,,Gloucester City,Boston United,0,0,D
+national-league-north,,Gloucester City,Bradford (Park Avenue),4,4,D
+national-league-north,,Gloucester City,Chester,2,1,H
+national-league-north,,Gloucester City,Chorley,1,1,D
+national-league-north,,Gloucester City,Farsley Celtic,1,2,A
+national-league-north,,Gloucester City,Kettering Town,3,1,H
+national-league-north,,Gloucester City,Kidderminster Harriers,3,2,H
+national-league-north,,Gloucester City,Leamington,1,0,H
+national-league-north,,Guiseley,Blyth Spartans,4,0,H
+national-league-north,,Guiseley,Brackley Town,1,3,A
+national-league-north,,Guiseley,Darlington,1,4,A
+national-league-north,,Guiseley,Farsley Celtic,2,2,D
+national-league-north,,Guiseley,Gloucester City,1,2,A
+national-league-north,,Guiseley,Hereford,0,1,A
+national-league-north,,Guiseley,Southport,4,2,H
+national-league-north,,Hereford,AFC Fylde,2,1,H
+national-league-north,,Hereford,Brackley Town,2,0,H
+national-league-north,,Hereford,Bradford (Park Avenue),0,2,A
+national-league-north,,Hereford,Chorley,2,2,D
+national-league-north,,Hereford,Gloucester City,0,1,A
+national-league-north,,Hereford,Kettering Town,3,3,D
+national-league-north,,Hereford,Kidderminster Harriers,3,1,H
+national-league-north,,Kettering Town,AFC Telford United,0,0,D
+national-league-north,,Kettering Town,Blyth Spartans,2,1,H
+national-league-north,,Kettering Town,Brackley Town,3,1,H
+national-league-north,,Kettering Town,Curzon Ashton,1,2,A
+national-league-north,,Kettering Town,Guiseley,1,1,D
+national-league-north,,Kettering Town,Southport,0,1,A
+national-league-north,,Kidderminster Harriers,Alfreton Town,3,0,H
+national-league-north,,Kidderminster Harriers,Blyth Spartans,2,0,H
+national-league-north,,Kidderminster Harriers,Chester,1,2,A
+national-league-north,,Kidderminster Harriers,Curzon Ashton,1,0,H
+national-league-north,,Kidderminster Harriers,Hereford,1,1,D
+national-league-north,,Kidderminster Harriers,Kettering Town,0,2,A
+national-league-north,,Kidderminster Harriers,Leamington,1,1,D
+national-league-north,,Kidderminster Harriers,York City,2,2,D
+national-league-north,,Leamington,AFC Fylde,1,1,D
+national-league-north,,Leamington,Alfreton Town,4,3,H
+national-league-north,,Leamington,Boston United,0,4,A
+national-league-north,,Leamington,Brackley Town,1,1,D
+national-league-north,,Leamington,Gateshead,1,1,D
+national-league-north,,Leamington,Gloucester City,1,1,D
+national-league-north,,Leamington,Hereford,0,0,D
+national-league-north,,Leamington,York City,2,1,H
+national-league-north,,Southport,Alfreton Town,1,1,D
+national-league-north,,Southport,Boston United,0,1,A
+national-league-north,,Southport,Chorley,1,0,H
+national-league-north,,Southport,Curzon Ashton,2,2,D
+national-league-north,,Southport,Farsley Celtic,0,1,A
+national-league-north,,Southport,Hereford,0,0,D
+national-league-north,,Southport,Spennymoor Town,0,2,A
+national-league-north,,Southport,York City,2,3,A
+national-league-north,,Spennymoor Town,Bradford (Park Avenue),2,2,D
+national-league-north,,Spennymoor Town,Chester,2,1,H
+national-league-north,,Spennymoor Town,Curzon Ashton,3,1,H
+national-league-north,,Spennymoor Town,Farsley Celtic,2,1,H
+national-league-north,,Spennymoor Town,Gloucester City,2,2,D
+national-league-north,,Spennymoor Town,Guiseley,0,2,A
+national-league-north,,York City,AFC Fylde,1,3,A
+national-league-north,,York City,Brackley Town,0,0,D
+national-league-north,,York City,Chester,2,1,H
+national-league-north,,York City,Chorley,3,1,H
+national-league-north,,York City,Guiseley,1,0,H
+national-league-north,,York City,Kettering Town,2,0,H
+national-league-north,,York City,Spennymoor Town,1,1,D

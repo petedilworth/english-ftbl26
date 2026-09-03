@@ -1,8 +1,13 @@
 # Tiers 6 and 7 — where the data came from and what it cost
 
-The site records the sixth and seventh tiers for **2012/13 to 2018/19**, seven
-seasons, 819 club-seasons across six divisions. This is how, and what it does
-not cover.
+The site records the sixth and seventh tiers for **2012/13 to the season being
+played**, 1,712 club-seasons. It comes from two sources with a hard join
+between them, and this is how.
+
+| seasons | source | dates? |
+|---|---|---|
+| 2012/13 – 2018/19 | `jalapic/engsoccerdata`, match-level | yes |
+| 2019/20 – present | Wikipedia results grids | **no** |
 
 ## The source
 
@@ -98,17 +103,13 @@ boundary the site could not previously see.
 
 ## What is still missing
 
-**Nothing before 2012/13 and nothing after 2018/19.** engsoccerdata stopped
-updating its non-league sets and its README says so, which leaves a seven-
-season hole between this block and the current season. A club with tier-6 rows
-to 2019 and nothing since is not recorded as having left the sixth tier — it
-is recorded as being outside the tiers this site tracks, which is true but
-less than the whole story.
+**Nothing before 2012/13.** The seven-season hole *after* 2018/19 is closed;
+see "The second source" below.
 
-Closing it needs the six current tables from outside this environment:
-National League North and South, Isthmian Premier, Northern Premier, Southern
-Central and Southern South, with club, played, won, drawn, lost, GF, GA and
-points.
+**Tier 7 has no 2019/20 or 2020/21, and never will.** The FA declared steps 3
+to 6 null and void in March 2020 and expunged them again in February 2021.
+Those seasons were not played to a finish and have no table to record. That is
+absent structure, not missing data, and the coverage test encodes it.
 
 **Twenty of the new clubs have no coordinates**, because their local authority
 is too wide to stand in for a town — see `scripts/place_clubs.py`, which
@@ -132,3 +133,65 @@ already answered is a lazy one.
 The remaining sixty-seven play below step 4, where the FA list stops. Blank
 means unknown, and the catchment model gives an unknown club no pull rather
 than a guessed one.
+
+## The second source: Wikipedia results grids
+
+engsoccerdata stopped updating its non-league sets, and nothing below the fifth
+tier exists on any host this environment can reach — `openfootball/england`,
+its mirror `footballcsv/england`, `worldfootballR_data` and
+`jfjelstul/englishfootball` all stop at tier 5, and `en.wikipedia.org` is
+refused at the proxy by both `curl` and `WebFetch`. **That is settled and
+should not be re-checked.**
+
+So 26 season articles were fetched as raw wikitext on a machine that can reach
+them, and `scripts/parse_wiki_results.py` extracts the results grids:
+
+```
+|team_order=ALF, BAN, BIS, ...
+|name_ALF= [[Alfreton Town F.C.|Alfreton Town]]
+|match_ALF_BAN=2-0 |match_ALF_BIS=3-0 ...
+```
+
+The key names the home club and then the away one, so no fixture is inferred.
+**15,847 matches across 40 division-seasons**, and every table is still
+computed from results by this site's own points rule — the property that makes
+these seasons the same kind of thing as tiers 1 to 5 rather than a
+transcription. The derived CSVs live in `data/nonleague/`, not `data/raw/`,
+which is gitignored on the premise that everything in it can be fetched again.
+These cannot.
+
+**What the grids do not carry is dates.** `match_date` is nullable throughout,
+so these seasons have no date-derived features.
+
+### Two things the grids get right that a league table would not
+
+**Expunged clubs.** Marske United resigned from the Northern Premier League in
+January 2024 and their record (P22 W7 D0 L15) was struck out, so 2023/24 was
+completed by 21 clubs under a 22-row table. The grid lists 21 and is correct;
+reading the club list from the table instead would have marked three complete
+seasons as short.
+
+**Awarded matches.** Two 2023/24 National League South cells hold `H/W` rather
+than a score — Slough Town v Bath City, abandoned for a medical emergency in
+the crowd and awarded, and Weymouth v Yeovil Town. Points come from `FTR` and
+goals from `FTHG`/`FTAG` separately, so these carry the right result with a
+nominal 1–0: the table is exact, the goal difference understated by one match.
+
+## The prediction this document made, and got wrong
+
+An earlier version of this page said four clubs — Boston United, Dover
+Athletic, Tamworth and Welling United — lost a "National League / non-league
+yo-yo" label purely to the coverage gap, and that extending the data would give
+it back. **It did not.** The seasons moved out of "outside" and into tiers 6
+and 7 exactly as intended, and all four now run to the season being played
+rather than stopping in 2019, but only Welling United's label changed at all —
+to "National League North & South club".
+
+The diagnosis was too simple. A yo-yo label needs the top two adjacent levels
+to hold three quarters of a club's seasons, and these clubs are spread wider
+than two. Boston United went from 54% across their best pair to 65% and are
+still short, because five of their seasons are at the fourth tier and twelve
+are **below the seventh** — a level this site still does not record. No amount
+of tier-6/7 coverage consolidates a record that reaches past both ends of it.
+
+"Mixed" is the honest description, and it is what they carry.

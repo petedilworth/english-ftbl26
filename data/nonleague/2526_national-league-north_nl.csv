@@ -1,0 +1,553 @@
+Div,Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
+national-league-north,,AFC Fylde,AFC Telford United,2,1,H
+national-league-north,,AFC Fylde,Alfreton Town,3,0,H
+national-league-north,,AFC Fylde,Bedford Town,1,0,H
+national-league-north,,AFC Fylde,Buxton,1,2,A
+national-league-north,,AFC Fylde,Chester,2,2,D
+national-league-north,,AFC Fylde,Chorley,1,0,H
+national-league-north,,AFC Fylde,Curzon Ashton,5,1,H
+national-league-north,,AFC Fylde,Darlington,4,1,H
+national-league-north,,AFC Fylde,Hereford,2,1,H
+national-league-north,,AFC Fylde,Kidderminster Harriers,2,1,H
+national-league-north,,AFC Fylde,King's Lynn Town,4,1,H
+national-league-north,,AFC Fylde,Leamington,1,1,D
+national-league-north,,AFC Fylde,Macclesfield,5,1,H
+national-league-north,,AFC Fylde,Marine,2,0,H
+national-league-north,,AFC Fylde,Merthyr Town,1,0,H
+national-league-north,,AFC Fylde,Oxford City,3,2,H
+national-league-north,,AFC Fylde,Peterborough Sports,5,2,H
+national-league-north,,AFC Fylde,Radcliffe,4,3,H
+national-league-north,,AFC Fylde,Scarborough Athletic,2,1,H
+national-league-north,,AFC Fylde,South Shields,2,4,A
+national-league-north,,AFC Fylde,Southport,4,0,H
+national-league-north,,AFC Fylde,Spennymoor Town,5,0,H
+national-league-north,,AFC Fylde,Worksop Town,2,3,A
+national-league-north,,AFC Telford United,AFC Fylde,1,3,A
+national-league-north,,AFC Telford United,Alfreton Town,4,1,H
+national-league-north,,AFC Telford United,Bedford Town,2,2,D
+national-league-north,,AFC Telford United,Buxton,0,1,A
+national-league-north,,AFC Telford United,Chester,3,1,H
+national-league-north,,AFC Telford United,Chorley,2,2,D
+national-league-north,,AFC Telford United,Curzon Ashton,1,1,D
+national-league-north,,AFC Telford United,Darlington,1,1,D
+national-league-north,,AFC Telford United,Hereford,3,0,H
+national-league-north,,AFC Telford United,Kidderminster Harriers,1,2,A
+national-league-north,,AFC Telford United,King's Lynn Town,2,1,H
+national-league-north,,AFC Telford United,Leamington,1,2,A
+national-league-north,,AFC Telford United,Macclesfield,3,0,H
+national-league-north,,AFC Telford United,Marine,0,2,A
+national-league-north,,AFC Telford United,Merthyr Town,2,4,A
+national-league-north,,AFC Telford United,Oxford City,4,0,H
+national-league-north,,AFC Telford United,Peterborough Sports,3,2,H
+national-league-north,,AFC Telford United,Radcliffe,2,0,H
+national-league-north,,AFC Telford United,Scarborough Athletic,4,1,H
+national-league-north,,AFC Telford United,South Shields,1,1,D
+national-league-north,,AFC Telford United,Southport,2,2,D
+national-league-north,,AFC Telford United,Spennymoor Town,3,0,H
+national-league-north,,AFC Telford United,Worksop Town,2,1,H
+national-league-north,,Alfreton Town,AFC Fylde,0,1,A
+national-league-north,,Alfreton Town,AFC Telford United,1,0,H
+national-league-north,,Alfreton Town,Bedford Town,1,2,A
+national-league-north,,Alfreton Town,Buxton,2,2,D
+national-league-north,,Alfreton Town,Chester,0,2,A
+national-league-north,,Alfreton Town,Chorley,1,0,H
+national-league-north,,Alfreton Town,Curzon Ashton,3,3,D
+national-league-north,,Alfreton Town,Darlington,0,3,A
+national-league-north,,Alfreton Town,Hereford,2,1,H
+national-league-north,,Alfreton Town,Kidderminster Harriers,1,1,D
+national-league-north,,Alfreton Town,King's Lynn Town,1,1,D
+national-league-north,,Alfreton Town,Leamington,2,1,H
+national-league-north,,Alfreton Town,Macclesfield,0,2,A
+national-league-north,,Alfreton Town,Marine,2,0,H
+national-league-north,,Alfreton Town,Merthyr Town,3,2,H
+national-league-north,,Alfreton Town,Oxford City,1,1,D
+national-league-north,,Alfreton Town,Peterborough Sports,0,2,A
+national-league-north,,Alfreton Town,Radcliffe,1,1,D
+national-league-north,,Alfreton Town,Scarborough Athletic,2,1,H
+national-league-north,,Alfreton Town,South Shields,0,2,A
+national-league-north,,Alfreton Town,Southport,1,1,D
+national-league-north,,Alfreton Town,Spennymoor Town,2,1,H
+national-league-north,,Alfreton Town,Worksop Town,1,1,D
+national-league-north,,Bedford Town,AFC Fylde,0,2,A
+national-league-north,,Bedford Town,AFC Telford United,3,1,H
+national-league-north,,Bedford Town,Alfreton Town,2,2,D
+national-league-north,,Bedford Town,Buxton,3,0,H
+national-league-north,,Bedford Town,Chester,1,2,A
+national-league-north,,Bedford Town,Chorley,2,0,H
+national-league-north,,Bedford Town,Curzon Ashton,2,2,D
+national-league-north,,Bedford Town,Darlington,3,4,A
+national-league-north,,Bedford Town,Hereford,2,2,D
+national-league-north,,Bedford Town,Kidderminster Harriers,0,0,D
+national-league-north,,Bedford Town,King's Lynn Town,4,2,H
+national-league-north,,Bedford Town,Leamington,3,1,H
+national-league-north,,Bedford Town,Macclesfield,1,2,A
+national-league-north,,Bedford Town,Marine,1,1,D
+national-league-north,,Bedford Town,Merthyr Town,3,4,A
+national-league-north,,Bedford Town,Oxford City,1,0,H
+national-league-north,,Bedford Town,Peterborough Sports,4,1,H
+national-league-north,,Bedford Town,Radcliffe,1,0,H
+national-league-north,,Bedford Town,Scarborough Athletic,1,1,D
+national-league-north,,Bedford Town,South Shields,1,2,A
+national-league-north,,Bedford Town,Southport,2,3,A
+national-league-north,,Bedford Town,Spennymoor Town,0,3,A
+national-league-north,,Bedford Town,Worksop Town,0,2,A
+national-league-north,,Buxton,AFC Fylde,0,3,A
+national-league-north,,Buxton,AFC Telford United,0,2,A
+national-league-north,,Buxton,Alfreton Town,6,0,H
+national-league-north,,Buxton,Bedford Town,3,0,H
+national-league-north,,Buxton,Chester,1,2,A
+national-league-north,,Buxton,Chorley,3,2,H
+national-league-north,,Buxton,Curzon Ashton,2,3,A
+national-league-north,,Buxton,Darlington,1,0,H
+national-league-north,,Buxton,Hereford,1,2,A
+national-league-north,,Buxton,Kidderminster Harriers,1,3,A
+national-league-north,,Buxton,King's Lynn Town,1,2,A
+national-league-north,,Buxton,Leamington,4,1,H
+national-league-north,,Buxton,Macclesfield,2,4,A
+national-league-north,,Buxton,Marine,4,0,H
+national-league-north,,Buxton,Merthyr Town,1,2,A
+national-league-north,,Buxton,Oxford City,2,1,H
+national-league-north,,Buxton,Peterborough Sports,0,0,D
+national-league-north,,Buxton,Radcliffe,2,1,H
+national-league-north,,Buxton,Scarborough Athletic,2,0,H
+national-league-north,,Buxton,South Shields,1,1,D
+national-league-north,,Buxton,Southport,1,2,A
+national-league-north,,Buxton,Spennymoor Town,1,2,A
+national-league-north,,Buxton,Worksop Town,3,1,H
+national-league-north,,Chester,AFC Fylde,1,0,H
+national-league-north,,Chester,AFC Telford United,2,1,H
+national-league-north,,Chester,Alfreton Town,2,2,D
+national-league-north,,Chester,Bedford Town,1,2,A
+national-league-north,,Chester,Buxton,1,0,H
+national-league-north,,Chester,Chorley,3,3,D
+national-league-north,,Chester,Curzon Ashton,1,1,D
+national-league-north,,Chester,Darlington,2,1,H
+national-league-north,,Chester,Hereford,1,1,D
+national-league-north,,Chester,Kidderminster Harriers,1,1,D
+national-league-north,,Chester,King's Lynn Town,0,0,D
+national-league-north,,Chester,Leamington,2,0,H
+national-league-north,,Chester,Macclesfield,2,0,H
+national-league-north,,Chester,Marine,1,1,D
+national-league-north,,Chester,Merthyr Town,2,2,D
+national-league-north,,Chester,Oxford City,2,1,H
+national-league-north,,Chester,Peterborough Sports,3,2,H
+national-league-north,,Chester,Radcliffe,1,3,A
+national-league-north,,Chester,Scarborough Athletic,1,1,D
+national-league-north,,Chester,South Shields,1,3,A
+national-league-north,,Chester,Southport,1,2,A
+national-league-north,,Chester,Spennymoor Town,2,1,H
+national-league-north,,Chester,Worksop Town,0,1,A
+national-league-north,,Chorley,AFC Fylde,2,0,H
+national-league-north,,Chorley,AFC Telford United,3,1,H
+national-league-north,,Chorley,Alfreton Town,0,1,A
+national-league-north,,Chorley,Bedford Town,1,0,H
+national-league-north,,Chorley,Buxton,1,2,A
+national-league-north,,Chorley,Chester,3,0,H
+national-league-north,,Chorley,Curzon Ashton,0,1,A
+national-league-north,,Chorley,Darlington,1,2,A
+national-league-north,,Chorley,Hereford,4,2,H
+national-league-north,,Chorley,Kidderminster Harriers,2,1,H
+national-league-north,,Chorley,King's Lynn Town,4,0,H
+national-league-north,,Chorley,Leamington,1,1,D
+national-league-north,,Chorley,Macclesfield,3,2,H
+national-league-north,,Chorley,Marine,2,1,H
+national-league-north,,Chorley,Merthyr Town,0,2,A
+national-league-north,,Chorley,Oxford City,3,3,D
+national-league-north,,Chorley,Peterborough Sports,0,1,A
+national-league-north,,Chorley,Radcliffe,0,1,A
+national-league-north,,Chorley,Scarborough Athletic,2,2,D
+national-league-north,,Chorley,South Shields,1,1,D
+national-league-north,,Chorley,Southport,4,2,H
+national-league-north,,Chorley,Spennymoor Town,0,0,D
+national-league-north,,Chorley,Worksop Town,2,1,H
+national-league-north,,Curzon Ashton,AFC Fylde,1,3,A
+national-league-north,,Curzon Ashton,AFC Telford United,0,8,A
+national-league-north,,Curzon Ashton,Alfreton Town,2,1,H
+national-league-north,,Curzon Ashton,Bedford Town,2,2,D
+national-league-north,,Curzon Ashton,Buxton,0,4,A
+national-league-north,,Curzon Ashton,Chester,0,1,A
+national-league-north,,Curzon Ashton,Chorley,2,0,H
+national-league-north,,Curzon Ashton,Darlington,1,2,A
+national-league-north,,Curzon Ashton,Hereford,2,1,H
+national-league-north,,Curzon Ashton,Kidderminster Harriers,0,1,A
+national-league-north,,Curzon Ashton,King's Lynn Town,3,0,H
+national-league-north,,Curzon Ashton,Leamington,1,1,D
+national-league-north,,Curzon Ashton,Macclesfield,0,2,A
+national-league-north,,Curzon Ashton,Marine,4,1,H
+national-league-north,,Curzon Ashton,Merthyr Town,0,3,A
+national-league-north,,Curzon Ashton,Oxford City,2,2,D
+national-league-north,,Curzon Ashton,Peterborough Sports,1,0,H
+national-league-north,,Curzon Ashton,Radcliffe,0,3,A
+national-league-north,,Curzon Ashton,Scarborough Athletic,1,2,A
+national-league-north,,Curzon Ashton,South Shields,1,2,A
+national-league-north,,Curzon Ashton,Southport,1,3,A
+national-league-north,,Curzon Ashton,Spennymoor Town,2,2,D
+national-league-north,,Curzon Ashton,Worksop Town,3,1,H
+national-league-north,,Darlington,AFC Fylde,1,3,A
+national-league-north,,Darlington,AFC Telford United,2,2,D
+national-league-north,,Darlington,Alfreton Town,3,1,H
+national-league-north,,Darlington,Bedford Town,2,0,H
+national-league-north,,Darlington,Buxton,0,2,A
+national-league-north,,Darlington,Chester,1,1,D
+national-league-north,,Darlington,Chorley,2,3,A
+national-league-north,,Darlington,Curzon Ashton,3,3,D
+national-league-north,,Darlington,Hereford,1,1,D
+national-league-north,,Darlington,Kidderminster Harriers,0,2,A
+national-league-north,,Darlington,King's Lynn Town,1,1,D
+national-league-north,,Darlington,Leamington,1,0,H
+national-league-north,,Darlington,Macclesfield,1,2,A
+national-league-north,,Darlington,Marine,2,3,A
+national-league-north,,Darlington,Merthyr Town,3,1,H
+national-league-north,,Darlington,Oxford City,1,3,A
+national-league-north,,Darlington,Peterborough Sports,5,2,H
+national-league-north,,Darlington,Radcliffe,3,0,H
+national-league-north,,Darlington,Scarborough Athletic,1,2,A
+national-league-north,,Darlington,South Shields,1,2,A
+national-league-north,,Darlington,Southport,2,0,H
+national-league-north,,Darlington,Spennymoor Town,1,0,H
+national-league-north,,Darlington,Worksop Town,5,1,H
+national-league-north,,Hereford,AFC Fylde,1,4,A
+national-league-north,,Hereford,AFC Telford United,1,1,D
+national-league-north,,Hereford,Alfreton Town,2,0,H
+national-league-north,,Hereford,Bedford Town,2,2,D
+national-league-north,,Hereford,Buxton,0,2,A
+national-league-north,,Hereford,Chester,5,2,H
+national-league-north,,Hereford,Chorley,1,4,A
+national-league-north,,Hereford,Curzon Ashton,3,3,D
+national-league-north,,Hereford,Darlington,1,0,H
+national-league-north,,Hereford,Kidderminster Harriers,0,1,A
+national-league-north,,Hereford,King's Lynn Town,0,2,A
+national-league-north,,Hereford,Leamington,5,1,H
+national-league-north,,Hereford,Macclesfield,0,2,A
+national-league-north,,Hereford,Marine,2,1,H
+national-league-north,,Hereford,Merthyr Town,3,0,H
+national-league-north,,Hereford,Oxford City,1,2,A
+national-league-north,,Hereford,Peterborough Sports,2,2,D
+national-league-north,,Hereford,Radcliffe,3,1,H
+national-league-north,,Hereford,Scarborough Athletic,1,2,A
+national-league-north,,Hereford,South Shields,2,1,H
+national-league-north,,Hereford,Southport,1,2,A
+national-league-north,,Hereford,Spennymoor Town,1,2,A
+national-league-north,,Hereford,Worksop Town,2,1,H
+national-league-north,,Kidderminster Harriers,AFC Fylde,1,0,H
+national-league-north,,Kidderminster Harriers,AFC Telford United,3,0,H
+national-league-north,,Kidderminster Harriers,Alfreton Town,1,0,H
+national-league-north,,Kidderminster Harriers,Bedford Town,2,1,H
+national-league-north,,Kidderminster Harriers,Buxton,2,2,D
+national-league-north,,Kidderminster Harriers,Chester,1,1,D
+national-league-north,,Kidderminster Harriers,Chorley,3,1,H
+national-league-north,,Kidderminster Harriers,Curzon Ashton,1,0,H
+national-league-north,,Kidderminster Harriers,Darlington,1,2,A
+national-league-north,,Kidderminster Harriers,Hereford,2,1,H
+national-league-north,,Kidderminster Harriers,King's Lynn Town,4,1,H
+national-league-north,,Kidderminster Harriers,Leamington,3,2,H
+national-league-north,,Kidderminster Harriers,Macclesfield,1,1,D
+national-league-north,,Kidderminster Harriers,Marine,4,0,H
+national-league-north,,Kidderminster Harriers,Merthyr Town,0,0,D
+national-league-north,,Kidderminster Harriers,Oxford City,1,1,D
+national-league-north,,Kidderminster Harriers,Peterborough Sports,4,0,H
+national-league-north,,Kidderminster Harriers,Radcliffe,1,5,A
+national-league-north,,Kidderminster Harriers,Scarborough Athletic,1,0,H
+national-league-north,,Kidderminster Harriers,South Shields,1,0,H
+national-league-north,,Kidderminster Harriers,Southport,1,1,D
+national-league-north,,Kidderminster Harriers,Spennymoor Town,1,0,H
+national-league-north,,Kidderminster Harriers,Worksop Town,2,2,D
+national-league-north,,King's Lynn Town,AFC Fylde,1,2,A
+national-league-north,,King's Lynn Town,AFC Telford United,1,1,D
+national-league-north,,King's Lynn Town,Alfreton Town,0,2,A
+national-league-north,,King's Lynn Town,Bedford Town,0,1,A
+national-league-north,,King's Lynn Town,Buxton,3,2,H
+national-league-north,,King's Lynn Town,Chester,0,2,A
+national-league-north,,King's Lynn Town,Chorley,1,1,D
+national-league-north,,King's Lynn Town,Curzon Ashton,0,0,D
+national-league-north,,King's Lynn Town,Darlington,1,1,D
+national-league-north,,King's Lynn Town,Hereford,0,0,D
+national-league-north,,King's Lynn Town,Kidderminster Harriers,0,1,A
+national-league-north,,King's Lynn Town,Leamington,2,0,H
+national-league-north,,King's Lynn Town,Macclesfield,1,1,D
+national-league-north,,King's Lynn Town,Marine,1,0,H
+national-league-north,,King's Lynn Town,Merthyr Town,4,0,H
+national-league-north,,King's Lynn Town,Oxford City,1,2,A
+national-league-north,,King's Lynn Town,Peterborough Sports,2,2,D
+national-league-north,,King's Lynn Town,Radcliffe,1,3,A
+national-league-north,,King's Lynn Town,Scarborough Athletic,2,3,A
+national-league-north,,King's Lynn Town,South Shields,3,0,H
+national-league-north,,King's Lynn Town,Southport,2,0,H
+national-league-north,,King's Lynn Town,Spennymoor Town,0,1,A
+national-league-north,,King's Lynn Town,Worksop Town,0,1,A
+national-league-north,,Leamington,AFC Fylde,1,1,D
+national-league-north,,Leamington,AFC Telford United,1,3,A
+national-league-north,,Leamington,Alfreton Town,1,2,A
+national-league-north,,Leamington,Bedford Town,2,2,D
+national-league-north,,Leamington,Buxton,0,1,A
+national-league-north,,Leamington,Chester,0,2,A
+national-league-north,,Leamington,Chorley,1,0,H
+national-league-north,,Leamington,Curzon Ashton,2,1,H
+national-league-north,,Leamington,Darlington,0,1,A
+national-league-north,,Leamington,Hereford,1,2,A
+national-league-north,,Leamington,Kidderminster Harriers,2,3,A
+national-league-north,,Leamington,King's Lynn Town,2,5,A
+national-league-north,,Leamington,Macclesfield,0,1,A
+national-league-north,,Leamington,Marine,0,1,A
+national-league-north,,Leamington,Merthyr Town,1,2,A
+national-league-north,,Leamington,Oxford City,0,0,D
+national-league-north,,Leamington,Peterborough Sports,4,2,H
+national-league-north,,Leamington,Radcliffe,2,1,H
+national-league-north,,Leamington,Scarborough Athletic,1,2,A
+national-league-north,,Leamington,South Shields,0,2,A
+national-league-north,,Leamington,Southport,2,1,H
+national-league-north,,Leamington,Spennymoor Town,0,2,A
+national-league-north,,Leamington,Worksop Town,1,2,A
+national-league-north,,Macclesfield,AFC Fylde,1,4,A
+national-league-north,,Macclesfield,AFC Telford United,1,1,D
+national-league-north,,Macclesfield,Alfreton Town,1,1,D
+national-league-north,,Macclesfield,Bedford Town,2,1,H
+national-league-north,,Macclesfield,Buxton,0,2,A
+national-league-north,,Macclesfield,Chester,0,2,A
+national-league-north,,Macclesfield,Chorley,1,2,A
+national-league-north,,Macclesfield,Curzon Ashton,3,2,H
+national-league-north,,Macclesfield,Darlington,2,1,H
+national-league-north,,Macclesfield,Hereford,3,1,H
+national-league-north,,Macclesfield,Kidderminster Harriers,5,1,H
+national-league-north,,Macclesfield,King's Lynn Town,4,0,H
+national-league-north,,Macclesfield,Leamington,3,1,H
+national-league-north,,Macclesfield,Marine,0,1,A
+national-league-north,,Macclesfield,Merthyr Town,1,3,A
+national-league-north,,Macclesfield,Oxford City,3,0,H
+national-league-north,,Macclesfield,Peterborough Sports,3,1,H
+national-league-north,,Macclesfield,Radcliffe,2,1,H
+national-league-north,,Macclesfield,Scarborough Athletic,1,1,D
+national-league-north,,Macclesfield,South Shields,1,0,H
+national-league-north,,Macclesfield,Southport,2,1,H
+national-league-north,,Macclesfield,Spennymoor Town,0,2,A
+national-league-north,,Macclesfield,Worksop Town,3,1,H
+national-league-north,,Marine,AFC Fylde,0,1,A
+national-league-north,,Marine,AFC Telford United,2,1,H
+national-league-north,,Marine,Alfreton Town,2,3,A
+national-league-north,,Marine,Bedford Town,2,1,H
+national-league-north,,Marine,Buxton,2,1,H
+national-league-north,,Marine,Chester,2,1,H
+national-league-north,,Marine,Chorley,2,1,H
+national-league-north,,Marine,Curzon Ashton,0,4,A
+national-league-north,,Marine,Darlington,1,4,A
+national-league-north,,Marine,Hereford,0,1,A
+national-league-north,,Marine,Kidderminster Harriers,2,0,H
+national-league-north,,Marine,King's Lynn Town,1,1,D
+national-league-north,,Marine,Leamington,5,0,H
+national-league-north,,Marine,Macclesfield,2,4,A
+national-league-north,,Marine,Merthyr Town,1,3,A
+national-league-north,,Marine,Oxford City,0,0,D
+national-league-north,,Marine,Peterborough Sports,0,1,A
+national-league-north,,Marine,Radcliffe,3,0,H
+national-league-north,,Marine,Scarborough Athletic,1,1,D
+national-league-north,,Marine,South Shields,2,2,D
+national-league-north,,Marine,Southport,4,2,H
+national-league-north,,Marine,Spennymoor Town,0,2,A
+national-league-north,,Marine,Worksop Town,4,2,H
+national-league-north,,Merthyr Town,AFC Fylde,2,4,A
+national-league-north,,Merthyr Town,AFC Telford United,1,4,A
+national-league-north,,Merthyr Town,Alfreton Town,6,2,H
+national-league-north,,Merthyr Town,Bedford Town,7,1,H
+national-league-north,,Merthyr Town,Buxton,1,3,A
+national-league-north,,Merthyr Town,Chester,1,2,A
+national-league-north,,Merthyr Town,Chorley,2,3,A
+national-league-north,,Merthyr Town,Curzon Ashton,2,1,H
+national-league-north,,Merthyr Town,Darlington,3,1,H
+national-league-north,,Merthyr Town,Hereford,2,2,D
+national-league-north,,Merthyr Town,Kidderminster Harriers,0,1,A
+national-league-north,,Merthyr Town,King's Lynn Town,1,0,H
+national-league-north,,Merthyr Town,Leamington,4,1,H
+national-league-north,,Merthyr Town,Macclesfield,1,2,A
+national-league-north,,Merthyr Town,Marine,1,3,A
+national-league-north,,Merthyr Town,Oxford City,1,1,D
+national-league-north,,Merthyr Town,Peterborough Sports,2,0,H
+national-league-north,,Merthyr Town,Radcliffe,0,5,A
+national-league-north,,Merthyr Town,Scarborough Athletic,1,3,A
+national-league-north,,Merthyr Town,South Shields,3,1,H
+national-league-north,,Merthyr Town,Southport,2,0,H
+national-league-north,,Merthyr Town,Spennymoor Town,2,3,A
+national-league-north,,Merthyr Town,Worksop Town,2,0,H
+national-league-north,,Oxford City,AFC Fylde,1,0,H
+national-league-north,,Oxford City,AFC Telford United,0,0,D
+national-league-north,,Oxford City,Alfreton Town,5,0,H
+national-league-north,,Oxford City,Bedford Town,1,2,A
+national-league-north,,Oxford City,Buxton,2,1,H
+national-league-north,,Oxford City,Chester,1,2,A
+national-league-north,,Oxford City,Chorley,2,0,H
+national-league-north,,Oxford City,Curzon Ashton,1,2,A
+national-league-north,,Oxford City,Darlington,5,1,H
+national-league-north,,Oxford City,Hereford,3,0,H
+national-league-north,,Oxford City,Kidderminster Harriers,3,2,H
+national-league-north,,Oxford City,King's Lynn Town,0,1,A
+national-league-north,,Oxford City,Leamington,1,1,D
+national-league-north,,Oxford City,Macclesfield,2,1,H
+national-league-north,,Oxford City,Marine,0,2,A
+national-league-north,,Oxford City,Merthyr Town,1,3,A
+national-league-north,,Oxford City,Peterborough Sports,2,0,H
+national-league-north,,Oxford City,Radcliffe,1,5,A
+national-league-north,,Oxford City,Scarborough Athletic,0,2,A
+national-league-north,,Oxford City,South Shields,1,3,A
+national-league-north,,Oxford City,Southport,1,2,A
+national-league-north,,Oxford City,Spennymoor Town,1,2,A
+national-league-north,,Oxford City,Worksop Town,2,0,H
+national-league-north,,Peterborough Sports,AFC Fylde,0,5,A
+national-league-north,,Peterborough Sports,AFC Telford United,2,3,A
+national-league-north,,Peterborough Sports,Alfreton Town,1,1,D
+national-league-north,,Peterborough Sports,Bedford Town,3,1,H
+national-league-north,,Peterborough Sports,Buxton,1,2,A
+national-league-north,,Peterborough Sports,Chester,3,0,H
+national-league-north,,Peterborough Sports,Chorley,2,1,H
+national-league-north,,Peterborough Sports,Curzon Ashton,1,1,D
+national-league-north,,Peterborough Sports,Darlington,0,1,A
+national-league-north,,Peterborough Sports,Hereford,0,2,A
+national-league-north,,Peterborough Sports,Kidderminster Harriers,2,1,H
+national-league-north,,Peterborough Sports,King's Lynn Town,2,2,D
+national-league-north,,Peterborough Sports,Leamington,0,0,D
+national-league-north,,Peterborough Sports,Macclesfield,4,3,H
+national-league-north,,Peterborough Sports,Marine,0,0,D
+national-league-north,,Peterborough Sports,Merthyr Town,0,3,A
+national-league-north,,Peterborough Sports,Oxford City,0,0,D
+national-league-north,,Peterborough Sports,Radcliffe,3,0,H
+national-league-north,,Peterborough Sports,Scarborough Athletic,0,4,A
+national-league-north,,Peterborough Sports,South Shields,0,3,A
+national-league-north,,Peterborough Sports,Southport,0,1,A
+national-league-north,,Peterborough Sports,Spennymoor Town,1,3,A
+national-league-north,,Peterborough Sports,Worksop Town,0,1,A
+national-league-north,,Radcliffe,AFC Fylde,3,3,D
+national-league-north,,Radcliffe,AFC Telford United,2,2,D
+national-league-north,,Radcliffe,Alfreton Town,3,1,H
+national-league-north,,Radcliffe,Bedford Town,0,0,D
+national-league-north,,Radcliffe,Buxton,1,5,A
+national-league-north,,Radcliffe,Chester,1,3,A
+national-league-north,,Radcliffe,Chorley,2,2,D
+national-league-north,,Radcliffe,Curzon Ashton,3,3,D
+national-league-north,,Radcliffe,Darlington,3,1,H
+national-league-north,,Radcliffe,Hereford,1,0,H
+national-league-north,,Radcliffe,Kidderminster Harriers,1,3,A
+national-league-north,,Radcliffe,King's Lynn Town,0,1,A
+national-league-north,,Radcliffe,Leamington,2,1,H
+national-league-north,,Radcliffe,Macclesfield,1,0,H
+national-league-north,,Radcliffe,Marine,4,1,H
+national-league-north,,Radcliffe,Merthyr Town,1,3,A
+national-league-north,,Radcliffe,Oxford City,1,0,H
+national-league-north,,Radcliffe,Peterborough Sports,2,1,H
+national-league-north,,Radcliffe,Scarborough Athletic,1,4,A
+national-league-north,,Radcliffe,South Shields,2,5,A
+national-league-north,,Radcliffe,Southport,1,2,A
+national-league-north,,Radcliffe,Spennymoor Town,0,2,A
+national-league-north,,Radcliffe,Worksop Town,2,1,H
+national-league-north,,Scarborough Athletic,AFC Fylde,2,1,H
+national-league-north,,Scarborough Athletic,AFC Telford United,1,1,D
+national-league-north,,Scarborough Athletic,Alfreton Town,0,0,D
+national-league-north,,Scarborough Athletic,Bedford Town,2,2,D
+national-league-north,,Scarborough Athletic,Buxton,2,1,H
+national-league-north,,Scarborough Athletic,Chester,1,0,H
+national-league-north,,Scarborough Athletic,Chorley,0,0,D
+national-league-north,,Scarborough Athletic,Curzon Ashton,1,0,H
+national-league-north,,Scarborough Athletic,Darlington,0,1,A
+national-league-north,,Scarborough Athletic,Hereford,0,0,D
+national-league-north,,Scarborough Athletic,Kidderminster Harriers,0,2,A
+national-league-north,,Scarborough Athletic,King's Lynn Town,1,1,D
+national-league-north,,Scarborough Athletic,Leamington,2,0,H
+national-league-north,,Scarborough Athletic,Macclesfield,2,2,D
+national-league-north,,Scarborough Athletic,Marine,1,2,A
+national-league-north,,Scarborough Athletic,Merthyr Town,2,1,H
+national-league-north,,Scarborough Athletic,Oxford City,1,0,H
+national-league-north,,Scarborough Athletic,Peterborough Sports,3,1,H
+national-league-north,,Scarborough Athletic,Radcliffe,0,3,A
+national-league-north,,Scarborough Athletic,South Shields,2,2,D
+national-league-north,,Scarborough Athletic,Southport,2,0,H
+national-league-north,,Scarborough Athletic,Spennymoor Town,1,0,H
+national-league-north,,Scarborough Athletic,Worksop Town,0,0,D
+national-league-north,,South Shields,AFC Fylde,2,1,H
+national-league-north,,South Shields,AFC Telford United,2,2,D
+national-league-north,,South Shields,Alfreton Town,3,0,H
+national-league-north,,South Shields,Bedford Town,1,1,D
+national-league-north,,South Shields,Buxton,2,2,D
+national-league-north,,South Shields,Chester,4,0,H
+national-league-north,,South Shields,Chorley,2,0,H
+national-league-north,,South Shields,Curzon Ashton,3,0,H
+national-league-north,,South Shields,Darlington,0,1,A
+national-league-north,,South Shields,Hereford,2,1,H
+national-league-north,,South Shields,Kidderminster Harriers,1,2,A
+national-league-north,,South Shields,King's Lynn Town,1,1,D
+national-league-north,,South Shields,Leamington,3,0,H
+national-league-north,,South Shields,Macclesfield,4,1,H
+national-league-north,,South Shields,Marine,1,0,H
+national-league-north,,South Shields,Merthyr Town,4,1,H
+national-league-north,,South Shields,Oxford City,4,1,H
+national-league-north,,South Shields,Peterborough Sports,2,1,H
+national-league-north,,South Shields,Radcliffe,3,0,H
+national-league-north,,South Shields,Scarborough Athletic,4,0,H
+national-league-north,,South Shields,Southport,1,0,H
+national-league-north,,South Shields,Spennymoor Town,6,0,H
+national-league-north,,South Shields,Worksop Town,3,1,H
+national-league-north,,Southport,AFC Fylde,2,3,A
+national-league-north,,Southport,AFC Telford United,2,0,H
+national-league-north,,Southport,Alfreton Town,2,1,H
+national-league-north,,Southport,Bedford Town,3,1,H
+national-league-north,,Southport,Buxton,0,0,D
+national-league-north,,Southport,Chester,2,2,D
+national-league-north,,Southport,Chorley,1,1,D
+national-league-north,,Southport,Curzon Ashton,2,4,A
+national-league-north,,Southport,Darlington,2,2,D
+national-league-north,,Southport,Hereford,5,1,H
+national-league-north,,Southport,Kidderminster Harriers,2,2,D
+national-league-north,,Southport,King's Lynn Town,0,0,D
+national-league-north,,Southport,Leamington,1,2,A
+national-league-north,,Southport,Macclesfield,1,2,A
+national-league-north,,Southport,Marine,2,1,H
+national-league-north,,Southport,Merthyr Town,1,0,H
+national-league-north,,Southport,Oxford City,1,3,A
+national-league-north,,Southport,Peterborough Sports,2,3,A
+national-league-north,,Southport,Radcliffe,2,0,H
+national-league-north,,Southport,Scarborough Athletic,1,1,D
+national-league-north,,Southport,South Shields,0,0,D
+national-league-north,,Southport,Spennymoor Town,2,0,H
+national-league-north,,Southport,Worksop Town,1,1,D
+national-league-north,,Spennymoor Town,AFC Fylde,0,5,A
+national-league-north,,Spennymoor Town,AFC Telford United,0,2,A
+national-league-north,,Spennymoor Town,Alfreton Town,1,1,D
+national-league-north,,Spennymoor Town,Bedford Town,0,0,D
+national-league-north,,Spennymoor Town,Buxton,2,2,D
+national-league-north,,Spennymoor Town,Chester,1,2,A
+national-league-north,,Spennymoor Town,Chorley,1,0,H
+national-league-north,,Spennymoor Town,Curzon Ashton,4,1,H
+national-league-north,,Spennymoor Town,Darlington,0,4,A
+national-league-north,,Spennymoor Town,Hereford,2,0,H
+national-league-north,,Spennymoor Town,Kidderminster Harriers,3,1,H
+national-league-north,,Spennymoor Town,King's Lynn Town,0,5,A
+national-league-north,,Spennymoor Town,Leamington,2,0,H
+national-league-north,,Spennymoor Town,Macclesfield,0,0,D
+national-league-north,,Spennymoor Town,Marine,1,1,D
+national-league-north,,Spennymoor Town,Merthyr Town,6,4,H
+national-league-north,,Spennymoor Town,Oxford City,1,1,D
+national-league-north,,Spennymoor Town,Peterborough Sports,1,0,H
+national-league-north,,Spennymoor Town,Radcliffe,2,3,A
+national-league-north,,Spennymoor Town,Scarborough Athletic,1,1,D
+national-league-north,,Spennymoor Town,South Shields,1,1,D
+national-league-north,,Spennymoor Town,Southport,2,0,H
+national-league-north,,Spennymoor Town,Worksop Town,0,1,A
+national-league-north,,Worksop Town,AFC Fylde,1,0,H
+national-league-north,,Worksop Town,AFC Telford United,3,1,H
+national-league-north,,Worksop Town,Alfreton Town,1,0,H
+national-league-north,,Worksop Town,Bedford Town,0,2,A
+national-league-north,,Worksop Town,Buxton,1,2,A
+national-league-north,,Worksop Town,Chester,2,1,H
+national-league-north,,Worksop Town,Chorley,1,1,D
+national-league-north,,Worksop Town,Curzon Ashton,0,1,A
+national-league-north,,Worksop Town,Darlington,1,1,D
+national-league-north,,Worksop Town,Hereford,2,3,A
+national-league-north,,Worksop Town,Kidderminster Harriers,1,1,D
+national-league-north,,Worksop Town,King's Lynn Town,2,2,D
+national-league-north,,Worksop Town,Leamington,2,0,H
+national-league-north,,Worksop Town,Macclesfield,2,4,A
+national-league-north,,Worksop Town,Marine,1,2,A
+national-league-north,,Worksop Town,Merthyr Town,3,5,A
+national-league-north,,Worksop Town,Oxford City,1,2,A
+national-league-north,,Worksop Town,Peterborough Sports,8,0,H
+national-league-north,,Worksop Town,Radcliffe,2,0,H
+national-league-north,,Worksop Town,Scarborough Athletic,1,0,H
+national-league-north,,Worksop Town,South Shields,0,3,A
+national-league-north,,Worksop Town,Southport,2,0,H
+national-league-north,,Worksop Town,Spennymoor Town,3,3,D

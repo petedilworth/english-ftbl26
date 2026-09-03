@@ -18,6 +18,7 @@ import argparse
 import datetime
 import logging
 import re
+import shutil
 import sqlite3
 import sys
 from collections import defaultdict
@@ -42,6 +43,12 @@ import status
 import trajectory
 
 PROJECT_ROOT = Path(__file__).parent.parent
+
+# Hand-collected match files that cannot be downloaded again: the sixth
+# and seventh tiers from 2019/20, extracted from Wikipedia results grids.
+# data/raw/ is gitignored precisely because everything in it is
+# re-fetchable, so these live beside the FA allocations instead.
+NONLEAGUE_DIR = PROJECT_ROOT / "data" / "nonleague"
 
 CREATE_STANDINGS_SQL = """
 CREATE TABLE IF NOT EXISTS standings (
@@ -991,7 +998,13 @@ def run(
     season_end: int | None = None,
 ) -> None:
     if season_end is None:
-        season_end = datetime.date.today().year
+        # The season in progress, not the calendar year. A season starting
+        # in August 2026 is the 2027 season, so from July onwards these
+        # differ by one and the calendar year silently excludes the season
+        # being played: every file for it was copied into raw_dir and then
+        # skipped by the range check below. The rest of this module already
+        # uses the right rule (line 236, download.py:138).
+        season_end = download.current_season_end_year()
 
     logging.basicConfig(
         level=logging.INFO,
@@ -1051,6 +1064,21 @@ def run(
                 last_season=min(season_end, historical.NONLEAGUE_LAST_SEASON),
                 force=force_download,
             )
+
+    # The sixth and seventh tiers after 2018/19 are not downloadable from
+    # anywhere this project can reach - engsoccerdata stopped, and every
+    # other source is refused at the proxy. They were extracted from
+    # Wikipedia results grids by scripts/parse_wiki_results.py and are
+    # kept in data/nonleague/ rather than data/raw/, which is gitignored
+    # because everything in it can be fetched again. These cannot.
+    #
+    # Copied in rather than globbed separately so that crosscheck and
+    # everything else downstream still reads one directory.
+    for extra in sorted(NONLEAGUE_DIR.glob("*.csv")):
+        shutil.copy2(extra, raw_dir / extra.name)
+    if NONLEAGUE_DIR.exists():
+        logger.info("Copied %d hand-collected non-league file(s) from %s",
+                    len(list(NONLEAGUE_DIR.glob("*.csv"))), NONLEAGUE_DIR)
 
     csv_files = sorted(raw_dir.glob("*.csv"))
     if not csv_files:

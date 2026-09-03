@@ -207,7 +207,10 @@ def download_all(
     Returns list of successfully downloaded or already-cached Paths.
     """
     if season_end is None:
-        season_end = datetime.date.today().year
+        # The season being played, not the calendar year - see the note in
+        # pipeline.run_pipeline. current_season_end_year is defined in this
+        # module and was not being used for its own default.
+        season_end = current_season_end_year()
     if tiers is None:
         tiers = [1, 2, 3, 4, 5]
 
