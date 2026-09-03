@@ -28,7 +28,10 @@
   if (box.length === 4) { W = Number(box[2]) || W; H = Number(box[3]) || H; }
   var plotH = H - PAD.top - PAD.bottom;
 
-  var activeTier = "all";
+  // A SET, not one tier: two levels can be compared side by side. Empty
+  // means "all", which is also where clicking the last one off lands, so
+  // the chart can never be filtered into blankness by accident.
+  var activeTiers = new Set();
 
   function el(name, attrs, text) {
     var node = document.createElementNS(NS, name);
@@ -107,30 +110,32 @@
   }
 
   function visiblePoints() {
-    if (activeTier === "all") return data.points;
-    return data.points.filter(function (p) { return String(p.tier) === activeTier; });
+    if (!activeTiers.size) return data.points;
+    return data.points.filter(function (p) { return activeTiers.has(String(p.tier)); });
   }
 
-  // "All tiers" keeps each point's real overallPos (spanning [1, maxPos]),
-  // so the tier-boundary dashed lines stay meaningful. A single tier
-  // dense-ranks just the visible points 1..N, closing the gaps the other
-  // tiers left behind - this is what makes the x-axis "dynamically adjust".
+  // The domain is the positions actually drawn, never a fixed 1..maxPos.
+  // The ladder runs 252 deep now that tiers 6 and 7 are on it, and some
+  // metrics have almost nothing down there - capacity is recorded for
+  // three clubs below the fifth tier - so a fixed domain left over half
+  // the plot blank. Positions stay real: a dot's x still means its place
+  // in the country, so the division boundary lines keep their meaning and
+  // only those inside the domain are drawn. Mirrors the server's first
+  // paint in site_build._insight_scatter.
   function xLayout(visible) {
-    if (activeTier === "all") {
-      return {
-        rankOf: function (p) { return p.overallPos; },
-        spanX: Math.max(1, data.maxPos - 1),
-        xMin: 1, xMax: data.maxPos,
-        boundaries: data.boundaries
-      };
-    }
-    var rank = {};
-    visible.forEach(function (p, i) { rank[p.id] = i + 1; });
+    var lo = Infinity, hi = -Infinity;
+    visible.forEach(function (p) {
+      if (p.overallPos < lo) lo = p.overallPos;
+      if (p.overallPos > hi) hi = p.overallPos;
+    });
     return {
-      rankOf: function (p) { return rank[p.id]; },
-      spanX: Math.max(1, visible.length - 1),
-      xMin: 1, xMax: visible.length,
-      boundaries: []
+      rankOf: function (p) { return p.overallPos; },
+      spanX: Math.max(1, hi - lo),
+      xMin: lo, xMax: hi,
+      offset: lo,
+      boundaries: (data.boundaries || []).filter(function (b) {
+        return b + 0.5 >= lo && b + 0.5 <= hi;
+      })
     };
   }
 
@@ -154,16 +159,29 @@
     detail.hidden = false;
   }
 
+  var empty = document.getElementById("scatter-empty");
+
   function redraw() {
     var visible = visiblePoints();
     svg.innerHTML = "";
-    if (!visible.length) return;
+    if (empty) empty.hidden = true;
+    if (!visible.length) {
+      // Reachable only if every selected level happens to have nothing,
+      // since a level with a zero count is disabled up front. Say so
+      // rather than leaving an empty frame.
+      if (empty) {
+        empty.textContent = "No club at the selected level has a recorded "
+          + data.noun + " for this season.";
+        empty.hidden = false;
+      }
+      return;
+    }
 
     var layout = xLayout(visible);
     var axis = yAxis(visible.map(function (p) { return p.value; }), data.scale);
 
     function x(pos) {
-      return PAD.left + (pos - 1) / layout.spanX * (W - PAD.left - PAD.right);
+      return PAD.left + (pos - layout.offset) / layout.spanX * (W - PAD.left - PAD.right);
     }
     function y(v) { return PAD.top + (1 - axis.frac(v)) * plotH; }
 
@@ -244,16 +262,44 @@
   }
 
   var chips = document.querySelectorAll(".scatter-tier-chips .chip");
+
+  function syncChips() {
+    Array.prototype.forEach.call(chips, function (b) {
+      var tier = b.getAttribute("data-tier");
+      var on = tier === "all" ? activeTiers.size === 0 : activeTiers.has(tier);
+      b.classList.toggle("chip-active", on);
+      b.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+  }
+
   Array.prototype.forEach.call(chips, function (btn) {
+    if (btn.disabled) return;
     btn.addEventListener("click", function () {
-      Array.prototype.forEach.call(chips, function (b) {
-        b.classList.toggle("chip-active", b === btn);
-      });
-      activeTier = btn.getAttribute("data-tier");
+      var tier = btn.getAttribute("data-tier");
+      if (tier === "all") {
+        activeTiers.clear();
+      } else if (activeTiers.has(tier)) {
+        activeTiers.delete(tier);
+      } else {
+        activeTiers.add(tier);
+      }
+      syncChips();
       if (detail) detail.hidden = true;  // may reference a now-hidden point
       redraw();
     });
   });
 
+  // The chosen metric and season are rarely the first chip in their row,
+  // and the rows scroll rather than wrap - so without this the current
+  // selection can start off-screen and the row looks like it is showing
+  // something else. Not smooth: this is the initial position, not a move.
+  Array.prototype.forEach.call(document.querySelectorAll(".chip-row"), function (row) {
+    var current = row.querySelector("[data-current], .chip-active");
+    if (current && current.offsetLeft + current.offsetWidth > row.clientWidth) {
+      row.scrollLeft = current.offsetLeft - 12;
+    }
+  });
+
+  syncChips();
   redraw();
 })();

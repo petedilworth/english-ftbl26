@@ -3113,16 +3113,27 @@ class SiteBuilder:
             values[club_id] = {"value": value, "extra": extra}
         return values
 
-    def _disclosure_counts(self, season_end_year: int) -> dict:
+    def _disclosure_counts(self, season_end_year: int, max_tier: int | None = None) -> dict:
         """
         How many clubs in a season published figures at all. A club filing
         under the small-company regime hasn't gone missing - it has declined
         to say - and that distinction is worth showing rather than hiding in
         a gap on the chart.
+
+        max_tier scopes the denominator to the tiers a metric can actually
+        reach. It used to be hardcoded to five, which was right while every
+        metric stopped there; catchment now covers all seven and the
+        provenance line read "229 of 116 clubs". Accounts have only been
+        collected for the top five, so the financial metrics still pass 5
+        and say so.
         """
+        where = "season_end_year = ?"
+        params: list = [season_end_year]
+        if max_tier is not None:
+            where += " AND tier <= ?"
+            params.append(max_tier)
         in_season = self.conn.execute(
-            "SELECT COUNT(*) FROM standings WHERE season_end_year = ? AND tier <= 5",
-            (season_end_year,),
+            f"SELECT COUNT(*) FROM standings WHERE {where}", params,
         ).fetchone()[0]
         if not self._has_finances():
             return {"in_season": in_season, "disclosed": 0, "withheld": 0}
@@ -3318,11 +3329,22 @@ class SiteBuilder:
 
                 W, H = 760, 380
                 PAD = {"top": 16, "right": 20, "bottom": 36, "left": 64}
-                span_x = max(1, max_pos - 1)
                 plot_h = H - PAD["top"] - PAD["bottom"]
 
-                def x(pos, span_x=span_x):
-                    return PAD["left"] + (pos - 1) / span_x * (W - PAD["left"] - PAD["right"])
+                # The domain is the positions actually plotted, not 1..252.
+                # The ladder is 252 places deep now that tiers 6 and 7 are on
+                # it, and capacity is recorded for three clubs below the
+                # fifth tier - so a fixed domain left more than half the plot
+                # permanently blank. Real positions are kept: a dot's x still
+                # means its place in the country, the axis just stops
+                # reserving room for clubs it is not drawing.
+                # static/insight-scatter.js recomputes this per selection.
+                x_lo = min(p["overall_pos"] for p in points)
+                x_hi = max(p["overall_pos"] for p in points)
+                span_x = max(1, x_hi - x_lo)
+
+                def x(pos, x_lo=x_lo, span_x=span_x):
+                    return PAD["left"] + (pos - x_lo) / span_x * (W - PAD["left"] - PAD["right"])
 
                 def y(value, frac=frac, plot_h=plot_h):
                     return PAD["top"] + (1 - frac(value)) * plot_h
@@ -3357,10 +3379,12 @@ class SiteBuilder:
                     for t in (0.25, 0.5, 0.75)
                 ]
 
-                counts = self._disclosure_counts(year)
+                counts = self._disclosure_counts(
+                    year, max_tier=5 if metric["source"] == "finances" else None)
                 if metric["source"] == "finances":
                     provenance = (
-                        f"Figures for {len(points)} of {counts['in_season']} clubs in "
+                        f"Figures for {len(points)} of the {counts['in_season']} clubs "
+                        f"in the top five tiers in "
                         f"{season_label(year)}, taken from accounts filed at Companies "
                         f"House. {counts['withheld']} filed accounts that do not "
                         f"disclose the figure; the rest are not yet researched."
@@ -3385,13 +3409,38 @@ class SiteBuilder:
                 is_current = year == current_year
                 out_path = self.out / page_path(key, year)
                 depth = len(Path(page_path(key, year)).parts) - 1
-                legend = [{"tier": t, "name": name, "key": t}
-                          for t, (_slug, name) in TIER_SLUGS.items()]
+
+                # From level.TIER_NAMES, not TIER_SLUGS. TIER_SLUGS holds
+                # only the tiers that ARE a division, so it stops at five -
+                # and tier-6/7 clubs were being plotted with no chip, no
+                # legend entry and no colour. TIER_NAMES names the LEVEL
+                # ("National League North & South", "Step 3"), which is the
+                # right label for something several divisions wide.
+                #
+                # The count matters as much as the name: capacity comes from
+                # the club stories written so far, so Step 3 has none of it.
+                # A chip that says 0 and refuses the click is honest; one
+                # that silently empties the chart is not.
+                import level as level_mod
+                by_tier: dict[int, int] = {}
+                for p_ in points:
+                    by_tier[p_["tier"]] = by_tier.get(p_["tier"], 0) + 1
+                played = {r[0] for r in self.conn.execute(
+                    "SELECT DISTINCT tier FROM standings WHERE season_end_year = ?",
+                    (year,))}
+                tiers_present = sorted(
+                    set(by_tier) | (played & set(level_mod.TIER_NAMES)))
+                legend = [{"tier": t, "key": t,
+                           "name": level_mod.bucket_name(t),
+                           "count": by_tier.get(t, 0)}
+                          for t in tiers_present]
 
                 self.render(
                     "insight_scatter.html", out_path, depth,
-                    title=f"{metric['heading']} — {season_label(year)}",
-                    heading=metric["heading"],
+                    title=f"{metric['label']} across the pyramid"
+                          f" — {season_label(year)}",
+                    heading=f"{metric['label']} across the pyramid,"
+                            f" {season_label(year)}",
                     season_label=season_label(year),
                     metric_tabs=[
                         {"label": METRICS[k]["label"],
@@ -3405,7 +3454,8 @@ class SiteBuilder:
                     ],
                     intro=(
                         f"{provenance} Plotted against each club's overall position "
-                        f"across all five tiers in {season_label(year)}. Dashed lines "
+                        f"across every tier this site records in {season_label(year)}. "
+                        f"Dashed lines "
                         f"mark the boundary between divisions."
                     ),
                     # Three numbers nobody should read at face value get a
@@ -3415,18 +3465,19 @@ class SiteBuilder:
                                   "label": "How catchment is measured"}
                                  if metric["source"] == "catchment" else None),
                     points=points,
-                    boundary_lines=[round(x(b + 0.5), 1) for b in boundaries],
+                    boundary_lines=[round(x(b + 0.5), 1) for b in boundaries
+                                    if x_lo <= b + 0.5 <= x_hi],
                     width=W, height=H,
                     plot_top=PAD["top"], plot_bottom=H - PAD["bottom"],
                     axis_y=H - PAD["bottom"] + 16,
-                    x_min_label=1, x_max_label=max_pos,
+                    x_min_label=x_lo, x_max_label=x_hi,
                     y_min_label=fmt(y_lo), y_max_label=fmt(y_hi),
                     y_ticks=y_ticks,
                     zero_line_y=zero_y,
                     benchmark_line_y=benchmark_y,
                     benchmark_label=benchmark["label"] if benchmark_y else None,
-                    legend=legend,
                     tier_chips=legend,
+                    noun=metric["noun"],
                 )
 
                 # Sibling data file: lets static/insight-scatter.js rebuild

@@ -16,6 +16,14 @@
   --tier-3: #43a047;
   --tier-4: #fb8c00;
   --tier-5: #e53935;
+  /* Six and seven are levels, not divisions - several competitions wide -
+     so they sit deliberately outside the five-colour rainbow above rather
+     than continuing it. Chosen to differ from each other, and from the
+     five, in lightness as well as hue. Before these existed the scatter
+     charts rendered tier-6/7 clubs with fill: var(--tier-6), which
+     resolved to nothing and painted them black. */
+  --tier-6: #6d4c41;
+  --tier-7: #546e7a;
   --tier-out: #9aa3ab;
 }
 
@@ -448,6 +456,8 @@ table.matrix.compact .matrix-highlight {
 .nl-tier-3 { background: var(--tier-3); }
 .nl-tier-4 { background: var(--tier-4); }
 .nl-tier-5 { background: var(--tier-5); }
+.nl-tier-6 { background: var(--tier-6); }
+.nl-tier-7 { background: var(--tier-7); }
 /* Hatched, not a sixth colour — "outside" means we don't know where they
    were, not that there is a sixth division. */
 .nl-outside {
@@ -493,6 +503,38 @@ table.matrix.compact .matrix-highlight {
 .metric-tabs { margin-bottom: 8px; }
 .map-tier-chips { margin-bottom: 8px; }
 .scatter-tier-chips { margin-bottom: 8px; }
+
+/* One line that scrolls instead of a block that wraps - but only where
+   wrapping actually hurts. Three wrapping chip groups stacked to about
+   eight rows on a phone and pushed the chart off the screen; on a desktop
+   they wrap to one or two rows and wrapping is better, because a scroller
+   hides options that would otherwise all be visible. So the scrolling
+   behaviour is scoped to narrow viewports and wide ones keep wrapping.
+   The fade on the right edge is the only affordance saying there is more,
+   since the scrollbar is hidden. */
+@media (max-width: 700px) {
+  .chip-row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-right: 18px;
+    mask-image: linear-gradient(to right, #000 calc(100% - 18px), transparent);
+    -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 18px), transparent);
+  }
+  .chip-row::-webkit-scrollbar { display: none; }
+  .chip-row .chip { flex: 0 0 auto; scroll-snap-align: start; }
+}
+/* A level with nothing to plot for this metric: no ground capacity is
+   recorded below the sixth tier, so the chip says so instead of offering
+   a filter that empties the chart. */
+.chip[disabled] {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.chip-count { color: var(--muted); font-variant-numeric: tabular-nums; }
+.chip-active .chip-count { color: rgba(255,255,255,0.75); }
 .scatter-dot:hover { stroke-width: 2; }
 .chip .chip-dot {
   display: inline-block;

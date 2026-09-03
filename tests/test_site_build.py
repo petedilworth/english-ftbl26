@@ -753,17 +753,30 @@ def test_scatter_page_has_click_and_tier_filter_markup(tmp_path, monkeypatch):
     assert 'id="scatter-detail"' in page
 
     assert 'data-tier="all"' in page
-    for tier in range(1, 6):
-        assert f'data-tier="{tier}"' in page
 
-    # "All tiers" is the only chip marked active within the tier-filter row
-    # itself (the page may have other active chips, e.g. a season tab).
     tier_block = re.search(
-        r'<div class="map-chips scatter-tier-chips">.*?</div>', page, re.S
+        r'<div class="map-chips chip-row scatter-tier-chips"[^>]*>.*?</div>', page, re.S
     ).group(0)
+
+    # EVERY tier that has a dot must have a chip. The chips used to come
+    # from TIER_SLUGS, which stops at the fifth tier because that is the
+    # last one that IS a division - so tier-6 and tier-7 clubs were plotted
+    # with no chip, no name and no colour, and rendered black.
+    plotted = {int(t) for t in re.findall(r"var\(--tier-(\d+)", page)}
+    chipped = {int(t) for t in re.findall(r'data-tier="(\d+)"', tier_block)}
+    assert plotted <= chipped, f"plotted with no chip: {sorted(plotted - chipped)}"
+
+    # "All levels" is the only chip active in the tier row at first paint.
     assert tier_block.count("chip-active") == 1
-    all_tiers_chip = re.search(r'<button class="([^"]*)" data-tier="all">', tier_block)
-    assert "chip-active" in all_tiers_chip.group(1)
+    assert re.search(r'<button class="chip chip-active" data-tier="all"', tier_block)
+
+    # A level with nothing to plot refuses the click rather than emptying
+    # the chart, and the counts are on the chips themselves.
+    for tier in chipped:
+        chip = re.search(rf'<button class="chip"[^>]*data-tier="{tier}".*?</button>',
+                         tier_block, re.S).group(0)
+        count = int(re.search(r'chip-count">(\d+)<', chip).group(1))
+        assert (count == 0) == ("disabled" in chip), f"tier {tier} count/disabled disagree"
 
 
 def test_scatter_data_js_is_well_formed(tmp_path, monkeypatch):
@@ -2209,3 +2222,61 @@ def test_pyramid_levels_use_a_season_with_every_tier(tmp_path, monkeypatch):
     from site_build import SiteBuilder
     builder = SiteBuilder(db, tmp_path / "site", charts_enabled=False)
     assert builder._complete_season() != 2030
+
+
+def test_the_scatter_x_axis_fits_the_points_it_draws(tmp_path, monkeypatch):
+    """
+    The axis used to span 1..maxPos, the full depth of the ladder. That was
+    252 places once tiers 6 and 7 joined it, while ground capacity is
+    recorded for a handful of clubs below the fifth tier - so more than
+    half the plot was permanently blank. The domain is now the positions
+    actually drawn, with real positions kept so the division boundary
+    lines still mean something.
+    """
+    small_story = "---\ncapacity: 2000\n---\n## Origins\nA small ground.\n"
+    out = _build_with_content(
+        tmp_path, monkeypatch, {"giant-fc": RICH_STORY, "steady-fc": small_story}
+    )
+    page = (out / "insights" / "capacity" / "index.html").read_text()
+    payload = json.loads(
+        (out / "insights" / "capacity" / "insight-scatter-data.js")
+        .read_text().split(" = ", 1)[1].rstrip("\n").rstrip(";")
+    )
+
+    drawn = [p["overallPos"] for p in payload["points"]]
+    labels = re.findall(r'text-anchor="(?:start|end)">(\d+)</text>', page)
+    axis = {int(v) for v in labels}
+    assert min(drawn) in axis, f"axis does not start at {min(drawn)}"
+    assert max(drawn) in axis, f"axis does not end at {max(drawn)}"
+    if payload["maxPos"] > max(drawn):
+        assert payload["maxPos"] not in axis, (
+            "axis still reserves room for positions with nothing plotted")
+
+
+def test_a_scatter_page_never_claims_more_clubs_than_exist():
+    """
+    The provenance line reads "N of M clubs". M came from a query hardcoded
+    to `tier <= 5`, which was right while every metric stopped there - so
+    once catchment reached all seven tiers the catchment page read
+    "229 of 116 clubs". The denominator has to be scoped to the tiers the
+    metric can actually reach; the financial ones still say five, and say
+    so in words, because accounts have only been collected that far.
+    """
+    import pytest
+    site = Path(__file__).parent.parent / "site"
+    pages = sorted(site.glob("insights/**/insight-scatter-data.js"))
+    if not pages:
+        pytest.skip("site not built")
+
+    wrong = []
+    for data_file in pages:
+        page = (data_file.parent / "index.html").read_text()
+        subtitle = re.search(r'<p class="subtitle">(.*?)</p>', page, re.S)
+        if not subtitle:
+            continue
+        text = re.sub(r"<[^>]+>", "", subtitle.group(1))
+        for numerator, denominator in re.findall(r"(\d+) of (?:the )?(\d+)", text):
+            if int(numerator) > int(denominator):
+                wrong.append((str(data_file.parent.relative_to(site)),
+                              f"{numerator} of {denominator}"))
+    assert not wrong, f"more clubs plotted than the page says exist: {wrong}"

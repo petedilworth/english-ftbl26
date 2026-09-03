@@ -3,11 +3,16 @@
 <h1>{{ heading }}</h1>
 <p class="subtitle">{{ intro }}{% if method_link %} <a href="{{ root }}/{{ method_link.path }}">{{ method_link.label }}</a>.{% endif %}</p>
 
+{# Three groups, each one line that scrolls sideways. Wrapping put about
+   eight rows of chips above the chart on a phone and pushed it off the
+   screen. static/insight-scatter.js scrolls the active chip of each row
+   into view on load, since the chosen metric or season is often not the
+   first one. #}
 {% if metric_tabs and metric_tabs|length > 1 %}
-<div class="map-chips metric-tabs">
+<div class="map-chips chip-row metric-tabs">
   {% for tab in metric_tabs %}
   {% if tab.active %}
-  <span class="chip chip-active">{{ tab.label }}</span>
+  <span class="chip chip-active" data-current>{{ tab.label }}</span>
   {% else %}
   <a class="chip" href="{{ root }}/{{ tab.path }}">{{ tab.label }}</a>
   {% endif %}
@@ -16,10 +21,10 @@
 {% endif %}
 
 {% if season_tabs and season_tabs|length > 1 %}
-<div class="map-chips season-tabs">
+<div class="map-chips chip-row season-tabs">
   {% for tab in season_tabs %}
   {% if tab.active %}
-  <span class="chip chip-active">{{ tab.label }}</span>
+  <span class="chip chip-active" data-current>{{ tab.label }}</span>
   {% else %}
   <a class="chip" href="{{ root }}/{{ tab.path }}">{{ tab.label }}</a>
   {% endif %}
@@ -27,11 +32,20 @@
 </div>
 {% endif %}
 
+{# These double as the colour key - each carries its tier's dot and name -
+   so there is no separate legend to drift out of step with them. A level
+   with nothing to plot is disabled rather than offered: no ground capacity
+   is recorded at Step 3, and a chip that empties the chart is worse than
+   one that says why it can't. #}
 {% if tier_chips %}
-<div class="map-chips scatter-tier-chips">
-  <button class="chip chip-active" data-tier="all">All tiers</button>
+<div class="map-chips chip-row scatter-tier-chips" role="group" aria-label="Filter by level">
+  <button class="chip chip-active" data-tier="all" aria-pressed="true">All levels</button>
   {% for l in tier_chips %}
-  <button class="chip" data-tier="{{ l.key }}"><span class="chip-dot"></span>{{ l.name }}</button>
+  <button class="chip" data-tier="{{ l.key }}" aria-pressed="false"
+          {% if not l.count %}disabled title="No {{ noun }} recorded at this level"{% endif %}>
+    <span class="chip-dot" style="background: var(--tier-{{ l.key }})"></span>{{ l.name }}
+    <span class="chip-count">{{ l.count }}</span>
+  </button>
   {% endfor %}
 </div>
 {% endif %}
@@ -65,19 +79,18 @@
     <text x="{{ width - 20 }}" y="{{ axis_y }}" font-size="10" fill="#6b7683" text-anchor="end">{{ x_max_label }}</text>
     <text x="{{ (width) / 2 }}" y="{{ axis_y }}" font-size="10" fill="#6b7683" text-anchor="middle">Overall league position{% if season_label %}, {{ season_label }}{% endif %}</text>
 
+    {# The literal after the comma is a fallback, not decoration: when
+       --tier-6 and --tier-7 did not exist these dots rendered black. #}
     {% for p in points %}
-    <circle cx="{{ p.cx }}" cy="{{ p.cy }}" r="5" style="fill: var(--tier-{{ p.tier }})"
+    <circle cx="{{ p.cx }}" cy="{{ p.cy }}" r="5"
+            style="fill: var(--tier-{{ p.tier }}, #9aa3ab)"
             stroke="#ffffff" stroke-width="1" pointer-events="all" tabindex="0" role="button"
             class="scatter-dot" data-club="{{ p.club_id }}"><title>{{ p.tooltip }}</title></circle>
     {% endfor %}
   </svg>
 </div>
+<p id="scatter-empty" class="nl-note" hidden></p>
 <div id="scatter-detail" class="chart-detail" hidden></div>
-<div class="nl-legend">
-  {% for l in legend %}
-  <span class="legend-item"><span class="legend-dot nl-tier-{{ l.key }}"></span>{{ l.name }}</span>
-  {% endfor %}
-</div>
 <script src="insight-scatter-data.js"></script>
 <script src="{{ root }}/static/insight-scatter.js"></script>
 {% endblock %}
