@@ -31,7 +31,11 @@
     {{ natural_level.window_note }}.
     {% if natural_level.gap_line %}{{ natural_level.gap_line }}{% endif %}
     {% if natural_level.trend_line %}{{ natural_level.trend_line }}{% endif %}
-    <span class="nl-caveat">Measured from 1958/59 — tier 5 only from 2005/06, so a club's non-league years before then are not recorded.</span>
+    {# Derived from the data by src/coverage.py, not written here. The
+       hardcoded version of this sentence said "tier 5 only from 2005/06"
+       and stayed on 355 pages for the twenty-six seasons after the
+       backfill moved the real boundary to 1979/80. #}
+    <span class="nl-caveat">{{ coverage_caveat }}</span>
   </p>
 </div>
 {% endif %}
