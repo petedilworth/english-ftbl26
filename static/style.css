@@ -685,3 +685,21 @@ table.matrix.compact .matrix-highlight {
 .club-table thead tr:last-child th:hover { text-decoration: underline; }
 .club-table thead th[aria-sort="ascending"]::after { content: " ▲"; font-size: 0.7em; }
 .club-table thead th[aria-sort="descending"]::after { content: " ▼"; font-size: 0.7em; }
+
+/* Coverage page: a bar is easier to scan down a column than a percentage,
+   and the percentage stays beside it because "how many clubs" is the
+   question and a bar cannot answer it exactly. */
+.coverage-bar {
+  display: inline-block;
+  width: 120px; height: 8px;
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.coverage-bar-fill { display: block; height: 100%; background: var(--accent); }
+.coverage-pct { font-variant-numeric: tabular-nums; font-size: 12px; margin-left: 8px; color: var(--muted); }
+/* Where the dated-match range differs from the table range - the gap a
+   reader is most likely to be surprised by. */
+.coverage-differs { color: #b3261e; }

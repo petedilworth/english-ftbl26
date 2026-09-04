@@ -498,6 +498,7 @@ class SiteBuilder:
         # build_insights, _insight_scatter and the home hooks all ask the
         # same (metric, season) questions, and each answer walks the season.
         self._metric_points_cache: dict = {}
+        self._coverage_caveat: str | None = None
         self.standings_cols = {
             r[1] for r in self.conn.execute("PRAGMA table_info(standings)")
         }
@@ -1267,6 +1268,14 @@ class SiteBuilder:
             return f"Yo-yo club · {span}"
         return span
 
+    @property
+    def coverage_caveat(self) -> str:
+        """What the natural-level bar can and cannot see, from the data."""
+        if self._coverage_caveat is None:
+            import coverage as coverage_mod
+            self._coverage_caveat = coverage_mod.natural_level_caveat(self.conn)
+        return self._coverage_caveat
+
     def build_teams(self) -> None:
         import markdown as md
 
@@ -1347,6 +1356,7 @@ class SiteBuilder:
                 color=self.color(club_id),
                 tagline=self._tagline(t),
                 natural_level=self._natural_level(t),
+                coverage_caveat=self.coverage_caveat,
                 stats=self._team_stats_cards(t),
                 has_chart=has_chart,
                 first_season=season_label(t["first_season_in_db"]),
@@ -2259,6 +2269,12 @@ class SiteBuilder:
             "sub": "Every column the data supports, sortable on any of them",
             "path": "teams/table/index.html",
         }] if self._has_club_table() else []
+        data_tables.append({
+            "slug": "coverage",
+            "name": "What this site knows",
+            "sub": "Where the record reaches, where it stops, and why",
+            "path": "insights/coverage/index.html",
+        })
 
         groups = [g for g in (
             {"title": "Stories",
@@ -2276,6 +2292,7 @@ class SiteBuilder:
             "insights_index.html", self.out / "insights" / "index.html", 1,
             title="Insights", groups=groups, entries=stories + charts + data_tables,
         )
+        self._insight_coverage()
         self._insight_yo_yo()
         self._insight_natural_level()
         self._insight_fallen_giants()
@@ -3508,6 +3525,57 @@ class SiteBuilder:
                     "window.INSIGHT_SCATTER_DATA = " + json.dumps(payload) + ";",
                     encoding="utf-8",
                 )
+
+    def _insight_coverage(self) -> None:
+        """
+        One page saying where the record reaches and where it stops.
+
+        This site's distinguishing habit is stating what it does not know,
+        and until now that lived in a dozen scattered paragraphs and in
+        constants nobody reads. Two things are worth separating here: a
+        season can have a complete league table and no match dates at all,
+        so a feature built on dates covers a different range than the
+        tables do. Tier 5 has tables from 1979/80 and dates from 1999/2000;
+        tiers 6 and 7 have tables to the present and dates that stop in
+        2018/19.
+        """
+        import coverage as coverage_mod
+        import level as level_mod
+
+        def span(pair):
+            if not pair:
+                return None
+            return (season_label(pair[0]) if pair[0] == pair[1]
+                    else f"{season_label(pair[0])}–{season_label(pair[1])}")
+
+        tiers = [
+            {"name": level_mod.bucket_name(c["tier"]),
+             "tier": c["tier"],
+             "seasons": span(c["seasons"]),
+             "dated": span(c["dated_matches"]) or "none",
+             "dates_differ": c["dated_matches"] != c["seasons"],
+             "incomplete": c["incomplete_seasons"]}
+            for c in coverage_mod.tier_coverage(self.conn)
+        ]
+        fields = [
+            dict(f, missing=f["total"] - f["have"],
+                 pct=round(100 * f["have"] / f["total"]) if f["total"] else 0)
+            for f in coverage_mod.field_coverage(self.conn)
+        ]
+
+        self.render(
+            "coverage.html", self.out / "insights" / "coverage" / "index.html", 2,
+            title="What this site knows",
+            heading="What this site knows",
+            intro=(
+                "Every table and chart here covers a slice of English football, "
+                "and the slice is not the same for all of them. This is where "
+                "the record reaches, where it stops, and what is missing inside "
+                "it."
+            ),
+            tiers=tiers, fields=fields,
+            caveat=coverage_mod.natural_level_caveat(self.conn),
+        )
 
     def _insight_natural_level(self) -> None:
         """

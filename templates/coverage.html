@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>{{ heading }}</h1>
+<p class="subtitle">{{ intro }}</p>
+
+<h2>How far back each level goes</h2>
+<p class="finance-note">
+  Two different things, and they part company. A season can have a complete
+  league table and no match dates at all — the sixth and seventh tiers come
+  from results grids that carry every score and no date. So anything built on
+  dates covers a shorter range than the tables do, and the two columns say
+  which is which.
+</p>
+<div class="table-scroll">
+<table class="standings">
+  <thead>
+    <tr>
+      <th>Level</th>
+      <th>League tables</th>
+      <th>Matches with dates</th>
+      <th class="num">Seasons flagged incomplete</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for t in tiers %}
+    <tr>
+      <td><span class="legend-dot nl-tier-{{ t.tier }}"></span> {{ t.name }}</td>
+      <td>{{ t.seasons }}</td>
+      <td{% if t.dates_differ %} class="coverage-differs"{% endif %}>{{ t.dated }}</td>
+      <td class="num">{{ t.incomplete }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>
+<p class="finance-note">
+  A season is flagged incomplete when the matches stored behind it are fewer
+  than a full round-robin — a curtailed season, a part-published file, or a
+  table still being played. Those tables render with a note and are withheld
+  from every records comparison, because a total drawn from a part-played
+  season is not the total that decided anything.
+</p>
+
+<h2>What is known about each club</h2>
+<p class="finance-note">
+  {{ fields[0].total }} clubs have a record here. These are the fields that
+  are not filled for all of them, and a blank in any of them is an honest
+  blank: the club is left out of whatever depends on it rather than given a
+  guessed value.
+</p>
+<div class="table-scroll">
+<table class="standings">
+  <thead>
+    <tr><th>Field</th><th class="num">Known</th><th class="num">Missing</th><th>Coverage</th></tr>
+  </thead>
+  <tbody>
+    {% for f in fields %}
+    <tr>
+      <td>{{ f.label }}</td>
+      <td class="num">{{ f.have }}</td>
+      <td class="num">{{ f.missing }}</td>
+      <td>
+        <span class="coverage-bar" role="img" aria-label="{{ f.pct }}%">
+          <span class="coverage-bar-fill" style="width: {{ f.pct }}%"></span>
+        </span>
+        <span class="coverage-pct">{{ f.pct }}%</span>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>
+
+<h2>What that means on a club page</h2>
+<p class="nl-note">{{ caveat }}</p>
+<p class="finance-note">
+  The three catchment figures are modelled rather than counted, and the
+  method matters more than the number —
+  <a href="{{ root }}/insights/catchment/method/">how catchment is measured</a>.
+  Accounts are collected by hand from filings at Companies House, which is why
+  they reach the fewest clubs and stop at the top five tiers.
+</p>
+{% endblock %}
