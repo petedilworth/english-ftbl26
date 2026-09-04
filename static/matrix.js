@@ -17,7 +17,7 @@
 
   // ── Density toggle ────────────────────────────────────────────────────
   // Compact mode swaps club names for colour bars, which is what makes all
-  // five divisions fit on one screen. The class is applied here rather than
+  // every level fits on one screen. The class is applied here rather than
   // rendered, because the choice is a per-visitor preference.
   var table = document.querySelector("table.matrix");
   var button = document.getElementById("matrix-density");
@@ -33,7 +33,7 @@
     if (hint) {
       hint.textContent = compact
         ? "Colour bars in club colours — hover or tap a bar for the name."
-        : "Names shown. Switch to compact to see all five divisions at once.";
+        : "Names shown. Switch to compact to see every level at once.";
     }
   }
 

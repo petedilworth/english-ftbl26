@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
 <h1>The Matrix</h1>
-<p class="subtitle">Every division, every season — most recent on the left. Scroll sideways through time; tap any club to light up its journey.</p>
+<p class="subtitle">Every level, every season — most recent on the left. Scroll sideways through time; tap any club to light up its journey. A level several divisions wide is ranked across the whole of it on points, so a row reads as one standing rather than as its competitions.</p>
 
 <div class="matrix-controls">
   <button id="matrix-density" class="chip" type="button">Compact</button>
-  <span class="hint" id="matrix-density-hint">Names shown. Switch to compact to see all five divisions at once.</span>
+  <span class="hint" id="matrix-density-hint">Names shown. Switch to compact to see every level at once.</span>
 </div>
 
 <div class="matrix-scroll">
@@ -28,10 +28,6 @@
     {% endfor %}
   </table>
 </div>
-
-{% if omitted %}
-<p class="finance-note">{{ omitted }}</p>
-{% endif %}
 
 <script src="{{ root }}/static/matrix.js"></script>
 {% endblock %}
