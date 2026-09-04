@@ -60,6 +60,10 @@ def candidate_titles(name: str) -> list[str]:
     if name.startswith("AFC "):
         rest = name[4:]
         out = [name, f"A.F.C. {rest}", f"{rest} A.F.C.", f"{rest} F.C."]
+    elif name.endswith((" FC", " AFC")):
+        # "Wimbledon FC" is the article; "Wimbledon FC F.C." is nothing.
+        stem = name.rsplit(" ", 1)[0]
+        out = [name, f"{stem} F.C.", f"{stem} A.F.C.", stem]
     else:
         out = [f"{name} F.C.", name, f"{name} A.F.C."]
     seen, unique = set(), []

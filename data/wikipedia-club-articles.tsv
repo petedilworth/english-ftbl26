@@ -189,7 +189,7 @@ rushall-olympic-fc	colours,capacity	Rushall Olympic F.C.	Rushall Olympic	Rushall
 rushden-and-diamonds-fc	capacity	Rushden & Diamonds F.C.	Rushden & Diamonds	Rushden & Diamonds A.F.C.
 salisbury-city-fc	capacity	Salisbury City F.C.	Salisbury City	Salisbury City A.F.C.
 scarborough-fc	capacity	Scarborough F.C.	Scarborough	Scarborough A.F.C.
-shaw-lane-afc-fc	coords,ground,colours,capacity	Shaw Lane AFC F.C.	Shaw Lane AFC	Shaw Lane AFC A.F.C.
+shaw-lane-afc-fc	coords,ground,colours,capacity	Shaw Lane AFC	Shaw Lane F.C.	Shaw Lane A.F.C.	Shaw Lane
 sholing-fc	colours,capacity	Sholing F.C.	Sholing	Sholing A.F.C.
 skelmersdale-united-fc	coords,ground,colours,capacity	Skelmersdale United F.C.	Skelmersdale United	Skelmersdale United A.F.C.
 slough-town-fc	ground,colours,capacity	Slough Town F.C.	Slough Town	Slough Town A.F.C.
@@ -236,7 +236,7 @@ weston-super-mare-fc	colours,capacity	Weston-super-Mare F.C.	Weston-super-Mare	W
 weymouth-fc	capacity	Weymouth F.C.	Weymouth	Weymouth A.F.C.
 whitby-town-fc	coords,ground,colours,capacity	Whitby Town F.C.	Whitby Town	Whitby Town A.F.C.
 whitehawk-fc	colours,capacity	Whitehawk F.C.	Whitehawk	Whitehawk A.F.C.
-wimbledon-fc	capacity	Wimbledon FC F.C.	Wimbledon FC	Wimbledon FC A.F.C.
+wimbledon-fc	capacity	Wimbledon FC	Wimbledon F.C.	Wimbledon A.F.C.	Wimbledon
 wimborne-town-fc	coords,ground,colours,capacity	Wimborne Town F.C.	Wimborne Town	Wimborne Town A.F.C.
 winchester-city-fc	coords,ground,colours,capacity	Winchester City F.C.	Winchester City	Winchester City A.F.C.
 wingate-and-finchley-fc	colours,capacity	Wingate & Finchley F.C.	Wingate & Finchley	Wingate & Finchley A.F.C.
