@@ -418,8 +418,8 @@ def rebuild_club_catchment(conn: sqlite3.Connection) -> int:
     np.add.at(kept, nearest, own_share)
 
     # The same assignment, stored per area rather than only summed per
-    # club. contest_ratio says a club keeps 1.7% of the people nearest to
-    # it; this is WHICH people, and how much of each, so the map can draw
+    # club. contest_ratio says what SHARE of the people nearest a club it
+    # keeps; this is which people, and how much of each, so the map can draw
     # the hinterland instead of asking a reader to picture it. Written
     # from the arrays that produced contest_ratio rather than recomputed,
     # so the picture and the number cannot disagree.
