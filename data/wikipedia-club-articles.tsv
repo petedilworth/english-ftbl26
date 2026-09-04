@@ -1,0 +1,249 @@
+# Clubs whose ground, capacity, colours or coordinates are not
+# recorded here, with candidate Wikipedia article titles. Generated
+# by scripts/list_club_articles.py; the fetch tries each title in
+# order and keeps the first that is a club article.
+club_id	missing	candidate_titles...
+fylde-afc	capacity	AFC Fylde	A.F.C. Fylde	Fylde A.F.C.	Fylde F.C.
+afc-rushden-and-diamonds-fc	coords,ground,colours,capacity	AFC Rushden & Diamonds	A.F.C. Rushden & Diamonds	Rushden & Diamonds A.F.C.	Rushden & Diamonds F.C.
+afc-sudbury-fc	coords,ground,colours,capacity	AFC Sudbury	A.F.C. Sudbury	Sudbury A.F.C.	Sudbury F.C.
+afc-totton-fc	coords,ground,colours,capacity	AFC Totton	A.F.C. Totton	Totton A.F.C.	Totton F.C.
+afc-whyteleafe-fc	colours,capacity	AFC Whyteleafe	A.F.C. Whyteleafe	Whyteleafe A.F.C.	Whyteleafe F.C.
+ap-leamington-fc	ground,colours,capacity	AP Leamington F.C.	AP Leamington	AP Leamington A.F.C.
+alvechurch-fc	colours,capacity	Alvechurch F.C.	Alvechurch	Alvechurch A.F.C.
+anstey-nomads-fc	colours,capacity	Anstey Nomads F.C.	Anstey Nomads	Anstey Nomads A.F.C.
+arlesey-town-fc	coords,ground,colours,capacity	Arlesey Town F.C.	Arlesey Town	Arlesey Town A.F.C.
+ashton-united-fc	colours,capacity	Ashton United F.C.	Ashton United	Ashton United A.F.C.
+atherton-collieries-fc	coords,ground,colours,capacity	Atherton Collieries F.C.	Atherton Collieries	Atherton Collieries A.F.C.
+aveley-fc	colours,capacity	Aveley F.C.	Aveley	Aveley A.F.C.
+avro-fc	colours,capacity	Avro F.C.	Avro	Avro A.F.C.
+aylesbury-united-fc	coords,ground,colours,capacity	Aylesbury United F.C.	Aylesbury United	Aylesbury United A.F.C.
+bamber-bridge-fc	colours,capacity	Bamber Bridge F.C.	Bamber Bridge	Bamber Bridge A.F.C.
+banbury-united-fc	coords,ground,colours,capacity	Banbury United F.C.	Banbury United	Banbury United A.F.C.
+bangor-city-fc	coords,ground,colours,capacity	Bangor City F.C.	Bangor City	Bangor City A.F.C.
+barwell-fc	coords,ground,colours,capacity	Barwell F.C.	Barwell	Barwell A.F.C.
+basford-united-fc	coords,ground,colours,capacity	Basford United F.C.	Basford United	Basford United A.F.C.
+bashley-fc	coords,ground,colours,capacity	Bashley F.C.	Bashley	Bashley A.F.C.
+basingstoke-town-fc	colours,capacity	Basingstoke Town F.C.	Basingstoke Town	Basingstoke Town A.F.C.
+beaconsfield-town-fc	coords,ground,colours,capacity	Beaconsfield Town F.C.	Beaconsfield Town	Beaconsfield Town A.F.C.
+bedford-town-fc	colours,capacity	Bedford Town F.C.	Bedford Town	Bedford Town A.F.C.
+bedworth-united-fc	coords,ground,colours,capacity	Bedworth United F.C.	Bedworth United	Bedworth United A.F.C.
+belper-town-fc	coords,ground,colours,capacity	Belper Town F.C.	Belper Town	Belper Town A.F.C.
+berkhamsted-fc	colours,capacity	Berkhamsted F.C.	Berkhamsted	Berkhamsted A.F.C.
+bideford-fc	coords,ground,colours,capacity	Bideford F.C.	Bideford	Bideford A.F.C.
+biggleswade-town-fc	coords,ground,colours,capacity	Biggleswade Town F.C.	Biggleswade Town	Biggleswade Town A.F.C.
+billericay-town-fc	colours,capacity	Billericay Town F.C.	Billericay Town	Billericay Town A.F.C.
+bishops-stortford-fc	colours,capacity	Bishop's Stortford F.C.	Bishop's Stortford	Bishop's Stortford A.F.C.
+blyth-spartans-fc	coords,ground,colours,capacity	Blyth Spartans F.C.	Blyth Spartans	Blyth Spartans A.F.C.
+bognor-regis-town-fc	coords,ground,colours,capacity	Bognor Regis Town F.C.	Bognor Regis Town	Bognor Regis Town A.F.C.
+bowers-and-pitsea-fc	coords,ground,colours,capacity	Bowers & Pitsea F.C.	Bowers & Pitsea	Bowers & Pitsea A.F.C.
+bracknell-town-fc	colours,capacity	Bracknell Town F.C.	Bracknell Town	Bracknell Town A.F.C.
+brentwood-town-fc	colours,capacity	Brentwood Town F.C.	Brentwood Town	Brentwood Town A.F.C.
+brightlingsea-regent-fc	coords,ground,colours,capacity	Brightlingsea Regent F.C.	Brightlingsea Regent	Brightlingsea Regent A.F.C.
+bristol-rovers-fc	capacity	Bristol Rovers F.C.	Bristol Rovers	Bristol Rovers A.F.C.
+bromsgrove-rovers-fc	ground,colours,capacity	Bromsgrove Rovers F.C.	Bromsgrove Rovers	Bromsgrove Rovers A.F.C.
+burgess-hill-town-fc	colours,capacity	Burgess Hill Town F.C.	Burgess Hill Town	Burgess Hill Town A.F.C.
+burnham-fc	coords,ground,colours,capacity	Burnham F.C.	Burnham	Burnham A.F.C.
+bury-fc	capacity	Bury F.C.	Bury	Bury A.F.C.
+bury-town-fc	coords,ground,colours,capacity	Bury Town F.C.	Bury Town	Bury Town A.F.C.
+buxton-fc	colours,capacity	Buxton F.C.	Buxton	Buxton A.F.C.
+cambridge-city-fc	coords,ground,colours,capacity	Cambridge City F.C.	Cambridge City	Cambridge City A.F.C.
+canvey-island-fc	capacity	Canvey Island F.C.	Canvey Island	Canvey Island A.F.C.
+carshalton-athletic-fc	colours,capacity	Carshalton Athletic F.C.	Carshalton Athletic	Carshalton Athletic A.F.C.
+chatham-town-fc	colours,capacity	Chatham Town F.C.	Chatham Town	Chatham Town A.F.C.
+chelmsford-city-fc	colours,capacity	Chelmsford City F.C.	Chelmsford City	Chelmsford City A.F.C.
+chertsey-town-fc	colours,capacity	Chertsey Town F.C.	Chertsey Town	Chertsey Town A.F.C.
+chesham-united-fc	coords,ground,colours,capacity	Chesham United F.C.	Chesham United	Chesham United A.F.C.
+cheshunt-fc	colours,capacity	Cheshunt F.C.	Cheshunt	Cheshunt A.F.C.
+chester-city-fc	capacity	Chester City F.C.	Chester City	Chester City A.F.C.
+chichester-city-fc	coords,ground,colours,capacity	Chichester City F.C.	Chichester City	Chichester City A.F.C.
+chippenham-town-fc	coords,ground,colours,capacity	Chippenham Town F.C.	Chippenham Town	Chippenham Town A.F.C.
+chorley-fc	capacity	Chorley F.C.	Chorley	Chorley A.F.C.
+cinderford-town-fc	coords,ground,colours,capacity	Cinderford Town F.C.	Cinderford Town	Cinderford Town A.F.C.
+cirencester-town-fc	coords,ground,colours,capacity	Cirencester Town F.C.	Cirencester Town	Cirencester Town A.F.C.
+cleethorpes-town-fc	colours,capacity	Cleethorpes Town F.C.	Cleethorpes Town	Cleethorpes Town A.F.C.
+coalville-town-fc	coords,ground,colours,capacity	Coalville Town F.C.	Coalville Town	Coalville Town A.F.C.
+colwyn-bay-fc	coords,ground,colours,capacity	Colwyn Bay F.C.	Colwyn Bay	Colwyn Bay A.F.C.
+concord-rangers-fc	coords,ground,colours,capacity	Concord Rangers F.C.	Concord Rangers	Concord Rangers A.F.C.
+corby-town-fc	coords,ground,colours,capacity	Corby Town F.C.	Corby Town	Corby Town A.F.C.
+corinthian-casuals-fc	coords,ground,colours,capacity	Corinthian-Casuals F.C.	Corinthian-Casuals	Corinthian-Casuals A.F.C.
+cray-valley-paper-mills-fc	coords,ground,colours,capacity	Cray Valley Paper Mills F.C.	Cray Valley Paper Mills	Cray Valley Paper Mills A.F.C.
+cray-wanderers-fc	colours,capacity	Cray Wanderers F.C.	Cray Wanderers	Cray Wanderers A.F.C.
+curzon-ashton-fc	colours,capacity	Curzon Ashton F.C.	Curzon Ashton	Curzon Ashton A.F.C.
+dagenham-and-redbridge-fc	capacity	Dagenham & Redbridge F.C.	Dagenham & Redbridge	Dagenham & Redbridge A.F.C.
+darlington-fc	capacity	Darlington F.C.	Darlington	Darlington A.F.C.
+dartford-fc	capacity	Dartford F.C.	Dartford	Dartford A.F.C.
+didcot-town-fc	coords,ground,colours,capacity	Didcot Town F.C.	Didcot Town	Didcot Town A.F.C.
+dorchester-town-fc	coords,ground,colours,capacity	Dorchester Town F.C.	Dorchester Town	Dorchester Town A.F.C.
+dorking-wanderers-fc	capacity	Dorking Wanderers F.C.	Dorking Wanderers	Dorking Wanderers A.F.C.
+dover-athletic-fc	capacity	Dover Athletic F.C.	Dover Athletic	Dover Athletic A.F.C.
+droylsden-fc	capacity	Droylsden F.C.	Droylsden	Droylsden A.F.C.
+dulwich-hamlet-fc	colours,capacity	Dulwich Hamlet F.C.	Dulwich Hamlet	Dulwich Hamlet A.F.C.
+dunstable-town-fc	coords,ground,colours,capacity	Dunstable Town F.C.	Dunstable Town	Dunstable Town A.F.C.
+east-thurrock-united-fc	coords,ground,colours,capacity	East Thurrock United F.C.	East Thurrock United	East Thurrock United A.F.C.
+eastbourne-borough-fc	capacity	Eastbourne Borough F.C.	Eastbourne Borough	Eastbourne Borough A.F.C.
+eastwood-town-fc	coords,ground,colours,capacity	Eastwood Town F.C.	Eastwood Town	Eastwood Town A.F.C.
+ebbsfleet-united-fc	capacity	Ebbsfleet United F.C.	Ebbsfleet United	Ebbsfleet United A.F.C.
+emley-fc	colours,capacity	Emley F.C.	Emley	Emley A.F.C.
+enfield-fc	ground,colours,capacity	Enfield F.C.	Enfield	Enfield A.F.C.
+evesham-united-fc	coords,ground,colours,capacity	Evesham United F.C.	Evesham United	Evesham United A.F.C.
+fc-united-of-manchester-fc	colours,capacity	FC United of Manchester F.C.	FC United of Manchester	FC United of Manchester A.F.C.
+farnborough-town-fc	ground,colours,capacity	Farnborough Town F.C.	Farnborough Town	Farnborough Town A.F.C.
+farnham-town-fc	colours,capacity	Farnham Town F.C.	Farnham Town	Farnham Town A.F.C.
+farsley-celtic-fc	capacity	Farsley Celtic F.C.	Farsley Celtic	Farsley Celtic A.F.C.
+fisher-athletic-fc	coords,ground,colours,capacity	Fisher Athletic F.C.	Fisher Athletic	Fisher Athletic A.F.C.
+folkestone-invicta-fc	colours,capacity	Folkestone Invicta F.C.	Folkestone Invicta	Folkestone Invicta A.F.C.
+frickley-athletic-fc	coords,ground,colours,capacity	Frickley Athletic F.C.	Frickley Athletic	Frickley Athletic A.F.C.
+frome-town-fc	coords,ground,colours,capacity	Frome Town F.C.	Frome Town	Frome Town A.F.C.
+gainsborough-trinity-fc	coords,ground,colours,capacity	Gainsborough Trinity F.C.	Gainsborough Trinity	Gainsborough Trinity A.F.C.
+gloucester-city-fc	colours,capacity	Gloucester City F.C.	Gloucester City	Gloucester City A.F.C.
+gosport-borough-fc	colours,capacity	Gosport Borough F.C.	Gosport Borough	Gosport Borough A.F.C.
+grantham-town-fc	coords,ground,colours,capacity	Grantham Town F.C.	Grantham Town	Grantham Town A.F.C.
+grays-athletic-fc	capacity	Grays Athletic F.C.	Grays Athletic	Grays Athletic A.F.C.
+guiseley-afc	capacity	Guiseley F.C.	Guiseley	Guiseley A.F.C.
+halesowen-town-fc	colours,capacity	Halesowen Town F.C.	Halesowen Town	Halesowen Town A.F.C.
+hampton-and-richmond-borough-fc	colours,capacity	Hampton & Richmond Borough F.C.	Hampton & Richmond Borough	Hampton & Richmond Borough A.F.C.
+hanwell-town-fc	colours,capacity	Hanwell Town F.C.	Hanwell Town	Hanwell Town A.F.C.
+hanworth-villa-fc	colours,capacity	Hanworth Villa F.C.	Hanworth Villa	Hanworth Villa A.F.C.
+harborough-town-fc	colours,capacity	Harborough Town F.C.	Harborough Town	Harborough Town A.F.C.
+haringey-borough-fc	coords,ground,colours,capacity	Haringey Borough F.C.	Haringey Borough	Haringey Borough A.F.C.
+harlow-town-fc	coords,ground,colours,capacity	Harlow Town F.C.	Harlow Town	Harlow Town A.F.C.
+harrow-borough-fc	coords,ground,colours,capacity	Harrow Borough F.C.	Harrow Borough	Harrow Borough A.F.C.
+hartley-wintney-fc	coords,ground,colours,capacity	Hartley Wintney F.C.	Hartley Wintney	Hartley Wintney A.F.C.
+hashtag-united-fc	coords,ground,colours,capacity	Hashtag United F.C.	Hashtag United	Hashtag United A.F.C.
+hastings-united-fc	coords,ground,colours,capacity	Hastings United F.C.	Hastings United	Hastings United A.F.C.
+havant-and-waterlooville-fc	capacity	Havant & Waterlooville F.C.	Havant & Waterlooville	Havant & Waterlooville A.F.C.
+hayes-and-yeading-united-fc	capacity	Hayes & Yeading United F.C.	Hayes & Yeading United	Hayes & Yeading United A.F.C.
+hebburn-town-fc	colours,capacity	Hebburn Town F.C.	Hebburn Town	Hebburn Town A.F.C.
+hednesford-town-fc	ground,colours,capacity	Hednesford Town F.C.	Hednesford Town	Hednesford Town A.F.C.
+hemel-hempstead-town-fc	colours,capacity	Hemel Hempstead Town F.C.	Hemel Hempstead Town	Hemel Hempstead Town A.F.C.
+hendon-fc	coords,ground,colours,capacity	Hendon F.C.	Hendon	Hendon A.F.C.
+hereford-united-fc	capacity	Hereford United F.C.	Hereford United	Hereford United A.F.C.
+hinckley-united-fc	coords,ground,colours,capacity	Hinckley United F.C.	Hinckley United	Hinckley United A.F.C.
+histon-fc	capacity	Histon F.C.	Histon	Histon A.F.C.
+hitchin-town-fc	coords,ground,colours,capacity	Hitchin Town F.C.	Hitchin Town	Hitchin Town A.F.C.
+hornchurch-fc	capacity	Hornchurch F.C.	Hornchurch	Hornchurch A.F.C.
+horsham-fc	colours,capacity	Horsham F.C.	Horsham	Horsham A.F.C.
+hungerford-town-fc	coords,ground,colours,capacity	Hungerford Town F.C.	Hungerford Town	Hungerford Town A.F.C.
+hyde-united-fc	capacity	Hyde United F.C.	Hyde United	Hyde United A.F.C.
+ilkeston-fc	coords,ground,colours,capacity	Ilkeston F.C.	Ilkeston	Ilkeston A.F.C.
+ilkeston-town-fc	colours,capacity	Ilkeston Town F.C.	Ilkeston Town	Ilkeston Town A.F.C.
+ipswich-town-fc	capacity	Ipswich Town F.C.	Ipswich Town	Ipswich Town A.F.C.
+kendal-town-fc	coords,ground,colours,capacity	Kendal Town F.C.	Kendal Town	Kendal Town A.F.C.
+kettering-town-fc	capacity	Kettering Town F.C.	Kettering Town	Kettering Town A.F.C.
+kidderminster-harriers-fc	capacity	Kidderminster Harriers F.C.	Kidderminster Harriers	Kidderminster Harriers A.F.C.
+kings-lynn-town-fc	capacity	King's Lynn Town F.C.	King's Lynn Town	King's Lynn Town A.F.C.
+kings-langley-fc	coords,ground,colours,capacity	Kings Langley F.C.	Kings Langley	Kings Langley A.F.C.
+kingstonian-fc	coords,ground,colours,capacity	Kingstonian F.C.	Kingstonian	Kingstonian A.F.C.
+lancaster-city-fc	colours,capacity	Lancaster City F.C.	Lancaster City	Lancaster City A.F.C.
+leatherhead-fc	colours,capacity	Leatherhead F.C.	Leatherhead	Leatherhead A.F.C.
+leek-town-fc	ground,colours,capacity	Leek Town F.C.	Leek Town	Leek Town A.F.C.
+leigh-rmi-fc	coords,ground,colours,capacity	Leigh RMI F.C.	Leigh RMI	Leigh RMI A.F.C.
+leighton-town-fc	coords,ground,colours,capacity	Leighton Town F.C.	Leighton Town	Leighton Town A.F.C.
+leiston-fc	coords,ground,colours,capacity	Leiston F.C.	Leiston	Leiston A.F.C.
+lewes-fc	capacity	Lewes F.C.	Lewes	Lewes A.F.C.
+liversedge-fc	coords,ground,colours,capacity	Liversedge F.C.	Liversedge	Liversedge A.F.C.
+long-eaton-united-fc	coords,ground,colours,capacity	Long Eaton United F.C.	Long Eaton United	Long Eaton United A.F.C.
+lowestoft-town-fc	coords,ground,colours,capacity	Lowestoft Town F.C.	Lowestoft Town	Lowestoft Town A.F.C.
+macclesfield-town-fc	capacity	Macclesfield Town F.C.	Macclesfield Town	Macclesfield Town A.F.C.
+maidenhead-united-fc	capacity	Maidenhead United F.C.	Maidenhead United	Maidenhead United A.F.C.
+maidstone-united-fc	capacity	Maidstone United F.C.	Maidstone United	Maidstone United A.F.C.
+maldon-and-tiptree-fc	colours,capacity	Maldon & Tiptree F.C.	Maldon & Tiptree	Maldon & Tiptree A.F.C.
+malvern-town-fc	coords,ground,colours,capacity	Malvern Town F.C.	Malvern Town	Malvern Town A.F.C.
+margate-fc	coords,ground,colours,capacity	Margate F.C.	Margate	Margate A.F.C.
+marine-fc	colours,capacity	Marine F.C.	Marine	Marine A.F.C.
+marske-united-fc	coords,ground,colours,capacity	Marske United F.C.	Marske United	Marske United A.F.C.
+matlock-town-fc	coords,ground,colours,capacity	Matlock Town F.C.	Matlock Town	Matlock Town A.F.C.
+merstham-fc	coords,ground,colours,capacity	Merstham F.C.	Merstham	Merstham A.F.C.
+merthyr-tydfil-fc	coords,ground,colours,capacity	Merthyr Tydfil F.C.	Merthyr Tydfil	Merthyr Tydfil A.F.C.
+metropolitan-police-fc	coords,ground,colours,capacity	Metropolitan Police F.C.	Metropolitan Police	Metropolitan Police A.F.C.
+mickleover-sports-fc	coords,ground,colours,capacity	Mickleover Sports F.C.	Mickleover Sports	Mickleover Sports A.F.C.
+nantwich-town-fc	coords,ground,colours,capacity	Nantwich Town F.C.	Nantwich Town	Nantwich Town A.F.C.
+needham-market-fc	colours,capacity	Needham Market F.C.	Needham Market	Needham Market A.F.C.
+north-ferriby-united-fc	capacity	North Ferriby United F.C.	North Ferriby United	North Ferriby United A.F.C.
+north-leigh-fc	coords,ground,colours,capacity	North Leigh F.C.	North Leigh	North Leigh A.F.C.
+northwich-victoria-fc	capacity	Northwich Victoria F.C.	Northwich Victoria	Northwich Victoria A.F.C.
+nuneaton-town-fc	capacity	Nuneaton Town F.C.	Nuneaton Town	Nuneaton Town A.F.C.
+oldham-athletic-fc	capacity	Oldham Athletic F.C.	Oldham Athletic	Oldham Athletic A.F.C.
+oxford-city-fc	capacity	Oxford City F.C.	Oxford City	Oxford City A.F.C.
+paulton-rovers-fc	coords,ground,colours,capacity	Paulton Rovers F.C.	Paulton Rovers	Paulton Rovers A.F.C.
+peacehaven-and-telscombe-fc	coords,ground,colours,capacity	Peacehaven & Telscombe F.C.	Peacehaven & Telscombe	Peacehaven & Telscombe A.F.C.
+peterborough-sports-fc	colours,capacity	Peterborough Sports F.C.	Peterborough Sports	Peterborough Sports A.F.C.
+plymouth-parkway-fc	colours,capacity	Plymouth Parkway F.C.	Plymouth Parkway	Plymouth Parkway A.F.C.
+poole-town-fc	colours,capacity	Poole Town F.C.	Poole Town	Poole Town A.F.C.
+portsmouth-fc	capacity	Portsmouth F.C.	Portsmouth	Portsmouth A.F.C.
+potters-bar-town-fc	coords,ground,colours,capacity	Potters Bar Town F.C.	Potters Bar Town	Potters Bar Town A.F.C.
+prescot-cables-fc	coords,ground,colours,capacity	Prescot Cables F.C.	Prescot Cables	Prescot Cables A.F.C.
+preston-north-end-fc	capacity	Preston North End F.C.	Preston North End	Preston North End A.F.C.
+quorn-fc	colours,capacity	Quorn F.C.	Quorn	Quorn A.F.C.
+racing-club-warwick-fc	colours,capacity	Racing Club Warwick F.C.	Racing Club Warwick	Racing Club Warwick A.F.C.
+radcliffe-fc	colours,capacity	Radcliffe F.C.	Radcliffe	Radcliffe A.F.C.
+ramsbottom-united-fc	coords,ground,colours,capacity	Ramsbottom United F.C.	Ramsbottom United	Ramsbottom United A.F.C.
+ramsgate-fc	colours,capacity	Ramsgate F.C.	Ramsgate	Ramsgate A.F.C.
+real-bedford-fc	colours,capacity	Real Bedford F.C.	Real Bedford	Real Bedford A.F.C.
+redbridge-forest-fc	coords,ground,colours,capacity	Redbridge Forest F.C.	Redbridge Forest	Redbridge Forest A.F.C.
+redcar-athletic-fc	colours,capacity	Redcar Athletic F.C.	Redcar Athletic	Redcar Athletic A.F.C.
+redditch-united-fc	ground,colours,capacity	Redditch United F.C.	Redditch United	Redditch United A.F.C.
+royston-town-fc	coords,ground,colours,capacity	Royston Town F.C.	Royston Town	Royston Town A.F.C.
+runcorn-fc	coords,ground,colours,capacity	Runcorn F.C.	Runcorn	Runcorn A.F.C.
+rushall-olympic-fc	colours,capacity	Rushall Olympic F.C.	Rushall Olympic	Rushall Olympic A.F.C.
+rushden-and-diamonds-fc	capacity	Rushden & Diamonds F.C.	Rushden & Diamonds	Rushden & Diamonds A.F.C.
+salisbury-city-fc	capacity	Salisbury City F.C.	Salisbury City	Salisbury City A.F.C.
+scarborough-fc	capacity	Scarborough F.C.	Scarborough	Scarborough A.F.C.
+shaw-lane-afc-fc	coords,ground,colours,capacity	Shaw Lane AFC	Shaw Lane F.C.	Shaw Lane A.F.C.	Shaw Lane
+sholing-fc	colours,capacity	Sholing F.C.	Sholing	Sholing A.F.C.
+skelmersdale-united-fc	coords,ground,colours,capacity	Skelmersdale United F.C.	Skelmersdale United	Skelmersdale United A.F.C.
+slough-town-fc	ground,colours,capacity	Slough Town F.C.	Slough Town	Slough Town A.F.C.
+south-shields-fc	colours,capacity	South Shields F.C.	South Shields	South Shields A.F.C.
+southport-fc	capacity	Southport F.C.	Southport	Southport A.F.C.
+spalding-united-fc	coords,ground,colours,capacity	Spalding United F.C.	Spalding United	Spalding United A.F.C.
+spennymoor-town-fc	coords,ground,colours,capacity	Spennymoor Town F.C.	Spennymoor Town	Spennymoor Town A.F.C.
+st-albans-city-fc	capacity	St Albans City F.C.	St Albans City	St Albans City A.F.C.
+st-ives-town-fc	coords,ground,colours,capacity	St Ives Town F.C.	St Ives Town	St Ives Town A.F.C.
+st-neots-town-fc	coords,ground,colours,capacity	St Neots Town F.C.	St Neots Town	St Neots Town A.F.C.
+stafford-rangers-fc	capacity	Stafford Rangers F.C.	Stafford Rangers	Stafford Rangers A.F.C.
+staines-town-fc	coords,ground,colours,capacity	Staines Town F.C.	Staines Town	Staines Town A.F.C.
+stalybridge-celtic-fc	coords,ground,colours,capacity	Stalybridge Celtic F.C.	Stalybridge Celtic	Stalybridge Celtic A.F.C.
+stamford-fc	coords,ground,colours,capacity	Stamford F.C.	Stamford	Stamford A.F.C.
+stanway-rovers-community-fc	colours,capacity	Stanway Rovers Community F.C.	Stanway Rovers Community	Stanway Rovers Community A.F.C.
+stocksbridge-park-steels-fc	coords,ground,colours,capacity	Stocksbridge Park Steels F.C.	Stocksbridge Park Steels	Stocksbridge Park Steels A.F.C.
+stockton-town-fc	colours,capacity	Stockton Town F.C.	Stockton Town	Stockton Town A.F.C.
+stourbridge-fc	colours,capacity	Stourbridge F.C.	Stourbridge	Stourbridge A.F.C.
+stratford-town-fc	coords,ground,colours,capacity	Stratford Town F.C.	Stratford Town	Stratford Town A.F.C.
+sutton-coldfield-town-fc	coords,ground,colours,capacity	Sutton Coldfield Town F.C.	Sutton Coldfield Town	Sutton Coldfield Town A.F.C.
+swansea-city-fc	capacity	Swansea City F.C.	Swansea City	Swansea City A.F.C.
+swindon-supermarine-fc	coords,ground,colours,capacity	Swindon Supermarine F.C.	Swindon Supermarine	Swindon Supermarine A.F.C.
+taunton-town-fc	coords,ground,colours,capacity	Taunton Town F.C.	Taunton Town	Taunton Town A.F.C.
+thamesmead-town-fc	coords,ground,colours,capacity	Thamesmead Town F.C.	Thamesmead Town	Thamesmead Town A.F.C.
+three-bridges-fc	colours,capacity	Three Bridges F.C.	Three Bridges	Three Bridges A.F.C.
+thurrock-fc	coords,ground,colours,capacity	Thurrock F.C.	Thurrock	Thurrock A.F.C.
+tiverton-town-fc	coords,ground,colours,capacity	Tiverton Town F.C.	Tiverton Town	Tiverton Town A.F.C.
+tonbridge-angels-fc	colours,capacity	Tonbridge Angels F.C.	Tonbridge Angels	Tonbridge Angels A.F.C.
+tooting-and-mitcham-united-fc	coords,ground,colours,capacity	Tooting & Mitcham United F.C.	Tooting & Mitcham United	Tooting & Mitcham United A.F.C.
+torquay-united-fc	capacity	Torquay United F.C.	Torquay United	Torquay United A.F.C.
+trafford-fc	coords,ground,colours,capacity	Trafford F.C.	Trafford	Trafford A.F.C.
+trowbridge-town-fc	coords,ground,colours,capacity	Trowbridge Town F.C.	Trowbridge Town	Trowbridge Town A.F.C.
+truro-city-fc	capacity	Truro City F.C.	Truro City	Truro City A.F.C.
+uxbridge-fc	colours,capacity	Uxbridge F.C.	Uxbridge	Uxbridge A.F.C.
+vcd-athletic-fc	coords,ground,colours,capacity	VCD Athletic F.C.	VCD Athletic	VCD Athletic A.F.C.
+vauxhall-motors-fc	coords,ground,colours,capacity	Vauxhall Motors F.C.	Vauxhall Motors	Vauxhall Motors A.F.C.
+walton-and-hersham-fc	colours,capacity	Walton & Hersham F.C.	Walton & Hersham	Walton & Hersham A.F.C.
+walton-casuals-fc	coords,ground,colours,capacity	Walton Casuals F.C.	Walton Casuals	Walton Casuals A.F.C.
+warrington-rylands-fc	colours,capacity	Warrington Rylands F.C.	Warrington Rylands	Warrington Rylands A.F.C.
+warrington-town-fc	colours,capacity	Warrington Town F.C.	Warrington Town	Warrington Town A.F.C.
+watford-fc	capacity	Watford F.C.	Watford	Watford A.F.C.
+welling-united-fc	capacity	Welling United F.C.	Welling United	Welling United A.F.C.
+weston-super-mare-fc	colours,capacity	Weston-super-Mare F.C.	Weston-super-Mare	Weston-super-Mare A.F.C.
+weymouth-fc	capacity	Weymouth F.C.	Weymouth	Weymouth A.F.C.
+whitby-town-fc	coords,ground,colours,capacity	Whitby Town F.C.	Whitby Town	Whitby Town A.F.C.
+whitehawk-fc	colours,capacity	Whitehawk F.C.	Whitehawk	Whitehawk A.F.C.
+wimbledon-fc	capacity	Wimbledon FC	Wimbledon F.C.	Wimbledon A.F.C.	Wimbledon
+wimborne-town-fc	coords,ground,colours,capacity	Wimborne Town F.C.	Wimborne Town	Wimborne Town A.F.C.
+winchester-city-fc	coords,ground,colours,capacity	Winchester City F.C.	Winchester City	Winchester City A.F.C.
+wingate-and-finchley-fc	colours,capacity	Wingate & Finchley F.C.	Wingate & Finchley	Wingate & Finchley A.F.C.
+witham-town-fc	coords,ground,colours,capacity	Witham Town F.C.	Witham Town	Witham Town A.F.C.
+witton-albion-fc	coords,ground,colours,capacity	Witton Albion F.C.	Witton Albion	Witton Albion A.F.C.
+worcester-city-fc	ground,colours,capacity	Worcester City F.C.	Worcester City	Worcester City A.F.C.
+workington-afc	capacity	Workington F.C.	Workington	Workington A.F.C.
+worksop-town-fc	colours,capacity	Worksop Town F.C.	Worksop Town	Worksop Town A.F.C.
+worthing-fc	capacity	Worthing F.C.	Worthing	Worthing A.F.C.
+yate-town-fc	colours,capacity	Yate Town F.C.	Yate Town	Yate Town A.F.C.
