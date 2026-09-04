@@ -1268,6 +1268,113 @@ class SiteBuilder:
             return f"Yo-yo club · {span}"
         return span
 
+    def _derived_story(self, t: sqlite3.Row, club_id: str,
+                       catchment: dict | None) -> list[str]:
+        """
+        A short account of a club assembled from its own record, for the
+        235 club pages whose only body was "The written history of X is
+        still to come."
+
+        Two thirds of the clubs here are below the fifth tier and will
+        not get a written history soon, so the choice was a placeholder
+        or this. Everything in it is read from the database - span,
+        level, best and worst finish, promotions, the catchment model -
+        and nothing is inferred about the club beyond what its rows say.
+        That matters more here than anywhere else on the site: these are
+        small clubs, and a plausible invented sentence about one would be
+        indistinguishable from a true one.
+
+        Returns paragraphs. An empty list where there is too little to
+        say, so a two-season club keeps the placeholder rather than
+        getting a sentence padded out of nothing.
+        """
+        import level as level_mod
+
+        # Queried rather than taken from the page's season dicts, which
+        # _row_dict trims to the columns the table shows - no tier, no
+        # tier_position, no season_end_year.
+        ladder = ("COALESCE(tier_position, position)"
+                  if "tier_position" in self.standings_cols else "position")
+        played = self.conn.execute(
+            f"SELECT season_end_year, tier, position, {ladder} AS ladder,"
+            f" division_name FROM standings WHERE club_id = ?"
+            f" AND position IS NOT NULL", (club_id,)).fetchall()
+        if len(played) < 3:
+            return []
+
+        name = t["canonical_name"]
+        first, last = t["first_season_in_db"], t["last_season_in_db"]
+        latest = max(self.seasons)
+        span = (f"{season_label(first)} to {season_label(last)}"
+                if first != last else season_label(first))
+
+        # "Recorded", not "played": these clubs have histories below the
+        # levels this site reaches, and the coverage page says so.
+        levels = {row["tier"] for row in played}
+        if len(levels) == 1:
+            where = f"all of them in {level_mod.the(next(iter(levels)))}"
+        else:
+            where = (f"across {len(levels)} levels, from "
+                     f"{level_mod.the(min(levels))} to {level_mod.the(max(levels))}")
+        opening = (f"{name} have {len(played)} recorded seasons, {span}, {where}.")
+
+        # Best and worst by overall standing rather than by divisional
+        # place, so a title in the seventh tier does not outrank survival
+        # in the second.
+        def rank(row):
+            return (row["tier"], row["ladder"])
+        best, worst = min(played, key=rank), max(played, key=rank)
+
+        def division_of(row):
+            # 567 backfilled fifth-tier rows carry "Tier 5" as their
+            # division_name. That is a placeholder, not a competition, and
+            # repeating it in a sentence reads as a bug rather than as a
+            # division. The level's own name is the honest substitute.
+            name = (row["division_name"] or "").strip()
+            placeholder = name.startswith("Tier ") and name[5:].isdigit()
+            return level_mod.bucket_name(row["tier"]) if placeholder else name
+        finishes = (
+            f"Their best recorded finish is {_ordinal(best['position'])} in "
+            f"{division_of(best)} in {season_label(best['season_end_year'])}"
+        )
+        if worst is not best:
+            finishes += (f", and their lowest {_ordinal(worst['position'])} in "
+                         f"{division_of(worst)} in "
+                         f"{season_label(worst['season_end_year'])}")
+        finishes += "."
+
+        movement = []
+        ups, downs = t["total_promotions"] or 0, t["total_relegations"] or 0
+        if ups or downs:
+            parts = []
+            if ups:
+                parts.append(f"{ups} promotion{'s' if ups != 1 else ''}")
+            if downs:
+                parts.append(f"{downs} relegation{'s' if downs != 1 else ''}")
+            movement.append(f"The record holds {' and '.join(parts)}.")
+        elif len(played) >= 5:
+            movement.append(
+                "They have neither been promoted nor relegated in the seasons "
+                "recorded here.")
+
+        if t["last_season_in_db"] != latest:
+            movement.append(
+                f"Their record here stops in {season_label(last)}; where they "
+                f"play now is not recorded.")
+
+        paragraphs = [" ".join([opening, finishes] + movement)]
+
+        if catchment and catchment.get("population"):
+            place = (f"The catchment model puts {catchment['population']} people "
+                     f"within {name}'s reach")
+            rival = catchment.get("rival")
+            if rival and rival.get("name") and rival.get("distance"):
+                place += (f", with {rival['name']} the nearest other club, "
+                          f"{rival['distance']} away")
+            paragraphs.append(place + ". It is modelled rather than counted.")
+
+        return paragraphs
+
     def ranked_note(self, complete_only: bool = True) -> str:
         """Coverage line for a page that ranks clubs against each other."""
         import coverage as coverage_mod
@@ -1372,6 +1479,11 @@ class SiteBuilder:
                 last_season=season_label(t["last_season_in_db"]),
                 story_sections=story_sections,
                 extra_html=extra_html,
+                # Only where there is no written story: a derived summary
+                # under a real one would be a worse version of the page.
+                derived_story=(
+                    [] if story_sections or extra_html
+                    else self._derived_story(t, club_id, self._club_catchment(club_id))),
                 facts_rows=facts_rows,
                 club_themes=club_themes,
                 finances=self._club_finances(club_id),
