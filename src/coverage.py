@@ -181,3 +181,38 @@ def _join(parts: list[str]) -> str:
 
 def _season(end_year: int) -> str:
     return f"{end_year - 1}/{end_year % 100:02d}"
+
+
+def ranked_note(conn: sqlite3.Connection, complete_only: bool = True) -> str:
+    """
+    The line under a page that ranks clubs against each other.
+
+    Pages like records, yo-yo and safe thresholds read as if they cover
+    "English football". They cover what this database holds, which is a
+    narrower and uneven thing - the fifth tier joins in 1979/80 and the
+    sixth and seventh in 2012/13, so a club's earlier seasons at those
+    levels are not absent from the game, only from here. Saying so is the
+    difference between a ranking and a ranking you can trust.
+
+    complete_only is for the tables built by _standings_section, which
+    already refuse a season whose fixtures are short: a superlative drawn
+    from a part-played table is an artifact rather than a record.
+    """
+    rows = tier_coverage(conn)
+    if not rows:
+        return ""
+    lo = min(c["seasons"][0] for c in rows if c["seasons"])
+    hi = max(c["seasons"][1] for c in rows if c["seasons"])
+    deepest = max(c["tier"] for c in rows)
+
+    note = (f"Drawn from tiers 1–{deepest}, {_season(lo)} to {_season(hi)}, "
+            f"as far as the record reaches at each level")
+    late = sorted({c["seasons"][0] for c in rows if c["seasons"]} - {lo})
+    if late:
+        note += f" — the lower tiers join later, from {_join([_season(y) for y in late])}"
+    note += "."
+    if complete_only:
+        note += (" A season whose fixtures are incomplete is withheld, because "
+                 "a total drawn from a part-played table is not the total that "
+                 "decided anything.")
+    return note

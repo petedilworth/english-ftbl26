@@ -53,4 +53,11 @@
 </table>
 </div>
 {% endfor %}
+
+{# Derived by src/coverage.py, not written here. These pages rank clubs
+   against each other and read as if they cover English football; they
+   cover what this database holds, which joins the lower tiers late. #}
+{% if coverage_note %}
+<p class="finance-note">{{ coverage_note }}</p>
+{% endif %}
 {% endblock %}
