@@ -153,7 +153,9 @@ def the(tier: int) -> str:
     already applies to division names.
     """
     name = bucket_name(tier)
-    return name if name.startswith("League") else f"the {name}"
+    # "League One", not "the League One" - and the same for "Step 3",
+    # which is a step number rather than a competition with a name.
+    return name if name.startswith(("League", "Step")) else f"the {name}"
 
 
 def window_buckets(tiers_by_year: dict[int, int]) -> list[int]:

@@ -155,7 +155,18 @@
   {% endfor %}
   {{ extra_html or "" }}
 {% else %}
-<p class="narrative-placeholder">The written history of {{ name }} is still to come.</p>
+{% if derived_story %}
+  {# Assembled from the club's own rows by SiteBuilder._derived_story.
+     Two thirds of the clubs here are below the fifth tier and will not
+     get a written history soon; a page that says nothing is worse than
+     one that says what the record says, provided it invents nothing. #}
+  {% for para in derived_story %}
+  <p>{{ para }}</p>
+  {% endfor %}
+  <p class="narrative-placeholder">Drawn from the record rather than written. A fuller history of {{ name }} is still to come.</p>
+  {% else %}
+  <p class="narrative-placeholder">The written history of {{ name }} is still to come.</p>
+  {% endif %}
 {% endif %}
 </div>
 
