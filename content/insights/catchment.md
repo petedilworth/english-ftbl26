@@ -100,9 +100,11 @@ natural hinterland before anyone competes for it. Of the people in that cell,
 the gravity model says what share the club holds. Contested is the rest.
 
 Portsmouth keep 96% of the people nearest to them: **3.6% contested**, the
-emptiest position in the data. Marine, in Crosby, keep less than two per cent:
-**98.3% contested**, because Liverpool is 7.7 miles away and Everton barely
-further.
+emptiest position in the data. Marine, in Crosby, keep about three per cent:
+**96.7% contested**, because Liverpool is 7.7 miles away and Everton barely
+further. That figure was 98.3% until the sixth and seventh tiers were added
+and Marine gained nearer neighbours than the two giants — a reminder that
+every number here is relative to who else is in the model.
 
 One detail here is easy to get wrong and this site got it wrong first.
 **The share and the cell have to be measured over the same areas.** Comparing
@@ -116,9 +118,11 @@ sharing a city rather than owning one.
 
 ## What this does not cover
 
-**245 of the 345 clubs here have a catchment figure.** The rest have no
+**245 of the 356 clubs here have a catchment figure.** The rest have no
 coordinates recorded — mostly clubs whose only seasons are old, and twenty
-whose local authority is too wide for its centre to stand in for their town.
+still playing whose local authority is too wide for its centre to stand in
+for their town. `scripts/place_clubs.py` records why none of those twenty can
+be placed by that method.
 A club with no coordinates is absent from the model entirely, which is the
 right answer: it should not be given a pull it cannot justify.
 

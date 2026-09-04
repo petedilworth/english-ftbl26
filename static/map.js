@@ -94,6 +94,63 @@
     return String(club.tiers[year]) === activeTier;
   }
 
+  // ── Catchment cells ───────────────────────────────────────────────────
+  // The number says Marine keep about three per cent of the people
+  // nearest to them. The cells say WHICH people and how much of each,
+  // which is the thing a percentage cannot show.
+  //
+  // Each dot is one of 6,829 ONS areas, placed at the area's
+  // population-weighted centre, coloured by the club whose ground is
+  // closest to it, and faded by the share that club actually keeps once
+  // its neighbours have pulled. A solid patch is a club with its own
+  // town; a washed-out one is a club sharing it. Drawn on canvas because
+  // seven thousand SVG circles is not something a phone enjoys.
+  var cellLayer = null;
+  var cellsOn = false;
+
+  function buildCells() {
+    if (cellLayer || !data.cells || !data.cells.length) return;
+    cellLayer = L.layerGroup();
+    var canvas = L.canvas({padding: 0.3});
+    data.cells.forEach(function (cell) {
+      var club = data.clubs[cell[2]];
+      if (!club) return;
+      var kept = cell[3];
+      L.circleMarker([cell[0], cell[1]], {
+        renderer: canvas,
+        radius: 3,
+        stroke: false,
+        fillColor: club.color,
+        // Floor the opacity so a heavily contested area is still visible
+        // as belonging to someone - invisible would read as "no data",
+        // which is the opposite of what a contested cell means.
+        fillOpacity: 0.15 + 0.65 * kept
+      }).addTo(cellLayer);
+    });
+  }
+
+  var cellButton = document.getElementById("map-cells");
+  if (cellButton) {
+    cellButton.addEventListener("click", function () {
+      cellsOn = !cellsOn;
+      if (cellsOn) {
+        buildCells();
+        if (cellLayer) cellLayer.addTo(map);
+      } else if (cellLayer) {
+        map.removeLayer(cellLayer);
+      }
+      cellButton.classList.toggle("chip-active", cellsOn);
+      cellButton.setAttribute("aria-pressed", cellsOn ? "true" : "false");
+      var hint = document.getElementById("map-cells-hint");
+      if (hint) {
+        hint.textContent = cellsOn
+          ? "Each dot is a neighbourhood, coloured by its nearest club and faded by the share that club keeps."
+          : "";
+      }
+    });
+    if (!data.cells || !data.cells.length) cellButton.disabled = true;
+  }
+
   function refresh() {
     var year = String(slider.value);
     yearLabel.textContent = seasonLabel(Number(year));

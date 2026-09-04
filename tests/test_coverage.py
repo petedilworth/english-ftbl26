@@ -167,3 +167,45 @@ def test_the_completeness_clause_is_only_on_pages_that_enforce_it():
         assert (clause in note) == enforces, (
             f"{slug}: completeness clause present={clause in note}, "
             f"but the page enforces it={enforces}")
+
+
+def test_the_catchment_essay_quotes_the_figures_the_model_produces():
+    """
+    content/insights/catchment.md names specific clubs and numbers. Those
+    are hand-written and the model moves under them: Marine's contested
+    share was 98.3% until the sixth and seventh tiers were added and gave
+    them nearer neighbours than Liverpool and Everton, at which point the
+    essay was wrong by a point and a half with nothing to catch it.
+    """
+    conn = _conn()
+    doc = (PROJECT_ROOT / "content" / "insights" / "catchment.md").read_text()
+
+    for club_id, column, quoted in (
+        ("arsenal-fc", "catchment_pop_restored", "1,856,061"),
+        ("leyton-orient-fc", "catchment_pop_current", "325,076"),
+        ("leyton-orient-fc", "catchment_pop_restored", "1,665,263"),
+    ):
+        row = conn.execute(
+            f"SELECT {column} FROM club_catchment WHERE club_id = ?",
+            (club_id,)).fetchone()
+        if not row or row[0] is None:
+            continue
+        assert quoted in doc, f"{club_id} no longer quoted in the essay"
+        assert f"{row[0]:,}" == quoted, (
+            f"{club_id} {column}: essay says {quoted}, model says {row[0]:,}")
+
+    for club_id, quoted in (("portsmouth-fc", 3.6), ("marine-fc", 96.7)):
+        row = conn.execute(
+            "SELECT contest_ratio FROM club_catchment WHERE club_id = ?",
+            (club_id,)).fetchone()
+        if not row or row[0] is None:
+            continue
+        actual = round(row[0] * 100, 1)
+        assert f"{quoted}% contested" in doc, f"{club_id} figure changed in the essay"
+        assert abs(actual - quoted) < 0.05, (
+            f"{club_id}: essay says {quoted}%, model says {actual}%")
+
+    total = conn.execute("SELECT COUNT(*) FROM club_master").fetchone()[0]
+    have = conn.execute("SELECT COUNT(*) FROM club_catchment").fetchone()[0]
+    assert f"{have} of the {total} clubs" in doc, (
+        f"the essay's coverage count is stale: the model has {have} of {total}")

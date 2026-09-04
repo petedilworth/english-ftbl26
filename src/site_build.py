@@ -2892,6 +2892,19 @@ class SiteBuilder:
             ).fetchone())
         return self._finances_table
 
+    def _has_table(self, name: str) -> bool:
+        """
+        Whether a table exists AND holds rows - the same rule
+        _has_catchment applies, for tables added later than a reader's
+        database. An empty table has to read as "no data" rather than
+        rendering an empty overlay.
+        """
+        try:
+            return bool(self.conn.execute(
+                f"SELECT 1 FROM {name} LIMIT 1").fetchone())
+        except sqlite3.Error:
+            return False
+
     def _has_catchment(self) -> bool:
         """
         Whether the catchment model has actually run. The table is created
@@ -4638,9 +4651,39 @@ class SiteBuilder:
         # Tier names travel with the payload so the map legend and the rest of
         # the site name divisions from the same place (TIER_SLUGS).
         tier_names = {str(tier): label for tier, (_slug, label) in TIER_SLUGS.items()}
+        # The catchment cells, as a second dataset rather than folded into
+        # the clubs: 6,856 areas is far more rows than clubs, and the map
+        # only loads it when the overlay is switched on.
+        #
+        # This is what "98.3% contested" looks like. The number says a
+        # club keeps a small share of the people nearest to it; the cells
+        # say which people and how much of each, which is the thing a
+        # percentage cannot show. Written from msoa_assignment, the table
+        # catchment.rebuild_club_catchment fills from the same arrays that
+        # produce contest_ratio - so the picture and the number cannot
+        # disagree.
+        cells = []
+        if self._has_table("msoa_assignment"):
+            # An index into `clubs`, not the club_id: 6,829 repeated id
+            # strings cost about 100 KB of the payload for nothing.
+            index = {c["id"]: i for i, c in enumerate(clubs)}
+            for r in self.conn.execute(
+                "SELECT a.club_id, a.kept_share, m.latitude, m.longitude,"
+                " m.population FROM msoa_assignment a"
+                " JOIN msoa_demographics m ON m.msoa_code = a.msoa_code"
+            ):
+                i = index.get(r["club_id"])
+                if i is None:
+                    continue
+                cells.append([
+                    round(r["latitude"], 3), round(r["longitude"], 3), i,
+                    round(r["kept_share"] or 0.0, 2), r["population"],
+                ])
+
         (out_dir / "map-data.js").write_text(
             "window.MAP_DATA = "
-            + json.dumps({"years": self.seasons, "clubs": clubs, "tierNames": tier_names})
+            + json.dumps({"years": self.seasons, "clubs": clubs,
+                          "tierNames": tier_names, "cells": cells})
             + ";",
             encoding="utf-8",
         )

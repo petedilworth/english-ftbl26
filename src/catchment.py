@@ -130,6 +130,16 @@ CATCHMENT_COLUMNS = [
 ENGLAND_BOUNDS = {"lat": (49.8, 55.9), "lon": (-6.5, 2.1)}
 
 
+CREATE_MSOA_ASSIGNMENT_SQL = """
+CREATE TABLE IF NOT EXISTS msoa_assignment (
+    msoa_code   TEXT PRIMARY KEY,
+    club_id     TEXT NOT NULL,
+    kept_share  REAL,
+    FOREIGN KEY (club_id) REFERENCES club_master(club_id)
+)
+"""
+
+
 def great_circle_miles(lat1: float, lon1: float,
                        lat2: float, lon2: float) -> float:
     """
@@ -402,9 +412,25 @@ def rebuild_club_catchment(conn: sqlite3.Connection) -> int:
     # backwards, and precisely the Bradford Park Avenue case. So restrict
     # to the areas the club is nearest to, and ask what share of those
     # people it actually keeps.
-    own_share = share_restored[nearest, np.arange(len(msoas))] * pop
+    kept_share = share_restored[nearest, np.arange(len(msoas))]
+    own_share = kept_share * pop
     kept = np.zeros(len(clubs))
     np.add.at(kept, nearest, own_share)
+
+    # The same assignment, stored per area rather than only summed per
+    # club. contest_ratio says what SHARE of the people nearest a club it
+    # keeps; this is which people, and how much of each, so the map can draw
+    # the hinterland instead of asking a reader to picture it. Written
+    # from the arrays that produced contest_ratio rather than recomputed,
+    # so the picture and the number cannot disagree.
+    conn.execute(CREATE_MSOA_ASSIGNMENT_SQL)
+    conn.execute("DELETE FROM msoa_assignment")
+    conn.executemany(
+        "INSERT INTO msoa_assignment (msoa_code, club_id, kept_share)"
+        " VALUES (?, ?, ?)",
+        [(code, clubs["club_id"].iloc[int(j)], float(k))
+         for code, j, k in zip(msoas["msoa_code"], nearest, kept_share)],
+    )
     with np.errstate(divide="ignore", invalid="ignore"):
         contest = np.where(voronoi > 0, 1.0 - (kept / voronoi), np.nan)
     contest = np.clip(contest, 0.0, 1.0)

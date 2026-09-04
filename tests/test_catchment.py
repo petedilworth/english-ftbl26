@@ -372,3 +372,79 @@ def test_the_method_page_is_skipped_without_its_prose(tmp_path, monkeypatch):
 def test_a_distance_is_said_to_the_precision_it_has(miles, approximate, expected):
     from site_build import _distance_phrase
     assert _distance_phrase(miles, approximate) == expected
+
+
+# ── the cells behind the contested figure ──────────────────────────────
+
+def _db_conn():
+    import pytest
+    db = Path(__file__).parent.parent / "data" / "db" / "england.db"
+    if not db.exists():
+        pytest.skip("no built database")
+    return sqlite3.connect(db)
+
+
+def test_every_area_belongs_to_exactly_one_club():
+    """
+    A Voronoi assignment is a partition: each area has one nearest club.
+    Two rows for one area would double-count its people in the contested
+    figure, and none would lose them.
+    """
+    conn = _db_conn()
+    total, distinct = conn.execute(
+        "SELECT COUNT(*), COUNT(DISTINCT msoa_code) FROM msoa_assignment").fetchone()
+    assert total == distinct, "an area is assigned to more than one club"
+    areas = conn.execute("SELECT COUNT(*) FROM msoa_demographics").fetchone()[0]
+    assert total == areas, f"{areas - total} areas have no nearest club"
+
+
+def test_the_cells_reproduce_the_contested_figure():
+    """
+    The number and the picture come from the same arrays and must agree.
+    contest_ratio says what share of the people nearest a club it loses;
+    summing kept_share over that club's own areas, weighted by
+    population, has to give the same answer - otherwise the map is
+    illustrating something the page does not claim.
+    """
+    conn = _db_conn()
+    rows = conn.execute(
+        "SELECT a.club_id,"
+        " 1.0 - SUM(a.kept_share * m.population) / SUM(m.population),"
+        " cc.contest_ratio"
+        " FROM msoa_assignment a"
+        " JOIN msoa_demographics m ON m.msoa_code = a.msoa_code"
+        " JOIN club_catchment cc ON cc.club_id = a.club_id"
+        " GROUP BY a.club_id").fetchall()
+    assert len(rows) > 100, "too few clubs compared"
+    # contest_ratio is stored rounded to four places.
+    wrong = [(cid, d, s) for cid, d, s in rows
+             if s is not None and abs(d - s) > 5e-5]
+    assert not wrong, f"cells disagree with contest_ratio: {wrong[:5]}"
+
+
+def test_a_kept_share_is_a_share():
+    conn = _db_conn()
+    bad = conn.execute(
+        "SELECT COUNT(*) FROM msoa_assignment"
+        " WHERE kept_share < 0 OR kept_share > 1").fetchone()[0]
+    assert bad == 0, f"{bad} areas have a kept_share outside 0..1"
+
+
+def test_the_map_payload_points_every_cell_at_a_real_club():
+    """
+    Cells carry an index into the clubs array rather than a club_id, to
+    keep 6,829 repeated strings out of the payload. An index that does
+    not resolve would draw a dot in nobody's colour.
+    """
+    import json
+    import pytest
+    data_file = (Path(__file__).parent.parent / "site" / "map" / "map-data.js")
+    if not data_file.exists():
+        pytest.skip("site not built")
+    raw = data_file.read_text()
+    payload = json.loads(raw[raw.index("=") + 1:].rstrip().rstrip(";"))
+    cells = payload.get("cells") or []
+    assert cells, "no catchment cells in the map payload"
+    n = len(payload["clubs"])
+    assert all(0 <= c[2] < n for c in cells), "a cell points outside the clubs array"
+    assert all(0.0 <= c[3] <= 1.0 for c in cells), "a cell's kept share is not a share"
