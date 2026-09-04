@@ -150,19 +150,34 @@ def test_matrix_is_one_table_most_recent_first(tmp_path):
     assert 'data-club="giant-fc"' in matrix
 
 
-def test_the_matrix_says_which_tiers_it_leaves_out(tmp_path):
+def test_the_matrix_ranks_a_multi_division_level_as_one_standing(tmp_path):
     """
-    A grid with one row per level cannot hold a level that is four
-    divisions wide, so the sixth and seventh are absent. Absent structure
-    and missing data look identical to a reader; the page has to say which
-    this is.
+    The sixth and seventh tiers used to be left off this page because a
+    row ordered by `position` gives 1, 1, 2, 2, 3, 3 for a two-division
+    level - two clubs at every place. tier_position merges the level into
+    a single ranking on points, so the row reads as one standing.
+
+    The check is that no club appears twice and the row is as long as the
+    level, which is what "merged" means and what ordering by `position`
+    could never produce.
     """
     db = _db_on_disk(tmp_path)
     out = tmp_path / "site"
     SiteBuilder(db, out, charts_enabled=False).build()
 
     matrix = (out / "matrix" / "index.html").read_text()
-    assert "6th and 7th tiers are not here" in matrix
+    assert "are not here" not in matrix, "the omitted-tiers note is back"
+
+    conn = sqlite3.connect(db)
+    latest = conn.execute("SELECT MAX(season_end_year) FROM standings").fetchone()[0]
+    for row in re.split(r'<th class="matrix-row-label">', matrix)[1:]:
+        cells = re.findall(r"<td>(.*?)</td>", row, re.S)
+        if not cells:
+            continue
+        clubs = re.findall(r'data-club="([^"]+)"', cells[0])
+        assert len(clubs) == len(set(clubs)), (
+            f"a club appears twice in one level-season: "
+            f"{[c for c in clubs if clubs.count(c) > 1]}")
 
 
 def test_insights_and_map_pages(tmp_path):

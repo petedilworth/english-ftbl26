@@ -2079,15 +2079,33 @@ class SiteBuilder:
         season_years = list(reversed(self.seasons))
         season_columns = [season_label(y) for y in season_years]
 
+        # One row per LEVEL, not per division. The point of this grid is
+        # where a club has been in the overall standings, so a level that
+        # is several divisions wide appears as one row ranked across the
+        # whole of it rather than split into its competitions.
+        #
+        # Ordering is what makes that possible. tier_position merges a
+        # level into a single ranking on points - AFC Fylde first on 100,
+        # Worthing fourth on 84 despite winning the South - and it was
+        # built for exactly this. Ordering by `position` instead gives
+        # 1, 1, 2, 2, 3, 3 for a two-division level: two clubs at every
+        # place, which is why these tiers used to be left off the page
+        # altogether. The COALESCE is the same fallback
+        # _compute_metric_points uses for a database without the column.
+        import level as level_mod
+        ladder = ("COALESCE(tier_position, position)"
+                  if "tier_position" in self.standings_cols else "position")
+
         rows = []
-        for tier, (_slug, name) in TIER_SLUGS.items():
+        for tier in sorted(level_mod.TIER_NAMES):
+            name = level_mod.bucket_name(tier)
             cells = []
             has_data = False
             for year in season_years:
                 clubs = self.conn.execute(
-                    """
+                    f"""
                     SELECT club_id, club_name, status FROM standings
-                    WHERE season_end_year = ? AND tier = ? ORDER BY position
+                    WHERE season_end_year = ? AND tier = ? ORDER BY {ladder}
                     """,
                     (year, tier),
                 ).fetchall()
@@ -2107,28 +2125,10 @@ class SiteBuilder:
             if has_data:
                 rows.append({"name": name, "cells": cells})
 
-        # TIER_SLUGS holds only the tiers that ARE a division, so the sixth
-        # and seventh drop out of this page by construction: a row here is
-        # one division deep and those levels are two and four wide. That is
-        # the right answer for a grid, but it should be said rather than
-        # left for the reader to notice a pyramid that stops at five.
-        parallel = sorted(
-            {d.tier for d in divisions.DIVISIONS if d.tier not in TIER_SLUGS}
-        )
-        omitted = None
-        if parallel:
-            names = " and ".join(_ordinal(t) for t in parallel)
-            omitted = (
-                f"The {names} tiers are not here. Each is several divisions "
-                "wide, and a grid with one row per level cannot say which of "
-                "them a club was in. They are on the season pages and the "
-                "club pages instead."
-            )
-
         self.render(
             "matrix.html", self.out / "matrix" / "index.html", 1,
             title="The Matrix", season_columns=season_columns, rows=rows,
-            omitted=omitted, main_class="wide",
+            main_class="wide",
         )
 
     # ── Insights ───────────────────────────────────────────────────────────
