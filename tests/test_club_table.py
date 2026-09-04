@@ -326,7 +326,6 @@ def test_every_sortable_column_has_a_unique_key():
     page = _page()
     keys = re.findall(r'<th[^>]*data-key="([^"]+)"', page)
     assert keys, "no sortable columns found"
-    duplicates = sorted({k for k in keys if keys.count(k) > len(keys) // len(set(keys))})
     counts = {}
     for k in keys:
         counts[k] = counts.get(k, 0) + 1
