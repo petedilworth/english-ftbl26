@@ -1268,6 +1268,15 @@ class SiteBuilder:
             return f"Yo-yo club · {span}"
         return span
 
+    def ranked_note(self, complete_only: bool = True) -> str:
+        """Coverage line for a page that ranks clubs against each other."""
+        import coverage as coverage_mod
+        key = ("ranked_note", complete_only)
+        if key not in self._metric_points_cache:
+            self._metric_points_cache[key] = coverage_mod.ranked_note(
+                self.conn, complete_only=complete_only)
+        return self._metric_points_cache[key]
+
     @property
     def coverage_caveat(self) -> str:
         """What the natural-level bar can and cannot see, from the data."""
@@ -3646,6 +3655,7 @@ class SiteBuilder:
             "insight_table.html", self.out / "insights" / "yo-yo" / "index.html", 2,
             title="Yo-yo clubs",
             heading="Yo-yo clubs",
+            coverage_note=self.ranked_note(complete_only=False),
             intro="Promotions plus relegations per recorded season — the clubs that can't sit still. Minimum five seasons in the database.",
             sections=[{
                 "columns": ["#", "Club", "Yo-yo score", "Promotions", "Relegations", "Seasons"],
@@ -4000,6 +4010,7 @@ class SiteBuilder:
             "insight_table.html", self.out / "insights" / "records" / "index.html", 2,
             title="Records & extremes",
             heading="Records & extremes",
+            coverage_note=self.ranked_note(complete_only=True),
             intro="The outer edges of almost seventy years of league tables.",
             sections=[
                 self._standings_section("Most points in a season", "Full seasons only.",
@@ -4060,6 +4071,7 @@ class SiteBuilder:
             "insight_table.html", self.out / "insights" / "safe-thresholds" / "index.html", 2,
             title="Safe thresholds",
             heading="Safe thresholds",
+            coverage_note=self.ranked_note(complete_only=True),
             intro=content_mod.load_theme(source),
             sections=[
                 self._standings_section(
@@ -4151,6 +4163,7 @@ class SiteBuilder:
             self.out / "insights" / "points-eras" / "index.html", 2,
             title="What a point is worth",
             heading="What a point is worth",
+            coverage_note=self.ranked_note(complete_only=False),
             intro="Three seasons when winning away was worth more than winning at home.",
             intro_html=Markup(md.markdown(prose)) if prose else None,
             sections=sections,

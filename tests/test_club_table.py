@@ -311,3 +311,39 @@ def test_a_club_whose_data_stopped_does_not_claim_a_current_level():
     if not checked:
         pytest.skip("site not built")
     assert not wrong, f"no longer playing but page says 'Current level': {wrong}"
+
+
+# ── the sort is in the URL, so the key has to be stable and unique ──────
+
+def test_every_sortable_column_has_a_unique_key():
+    """
+    The shareable sort is #sort=<data-key>,<direction>, keyed on the
+    column's data-key rather than its index so a link survives a column
+    being added or moved. That only works if the key is unique: two
+    columns sharing one would make a link ambiguous, and the restore
+    would silently pick whichever came first.
+    """
+    page = _page()
+    keys = re.findall(r'<th[^>]*data-key="([^"]+)"', page)
+    assert keys, "no sortable columns found"
+    duplicates = sorted({k for k in keys if keys.count(k) > len(keys) // len(set(keys))})
+    counts = {}
+    for k in keys:
+        counts[k] = counts.get(k, 0) + 1
+    # Two tables on the page means each key appears once per table.
+    per_table = max(counts.values())
+    odd = [k for k, n in counts.items() if n != per_table]
+    assert not odd, f"columns appearing a different number of times: {odd}"
+
+
+def test_the_sort_state_is_written_to_the_url():
+    """
+    Seventy-four columns and, before this, no way to say "look at this":
+    the order lived only in the DOM, so an interesting view died with the
+    tab it was found in.
+    """
+    js = (PROJECT_ROOT / "static" / "club-table.js").read_text()
+    assert "#sort=" in js, "the sort is not encoded in the hash"
+    assert "replaceState" in js, (
+        "sorting should replace the history entry, not stack one per click")
+    assert "hashchange" in js, "a pasted link must apply without a reload"
