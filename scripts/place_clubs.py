@@ -32,6 +32,20 @@ errors are real: a club the model cannot see has its town handed to its
 neighbours, which is the bug this whole layer exists to fix, so excluding
 a club is not the safe option it looks like.
 
+WHAT THIS METHOD CANNOT DO, MEASURED. Of the 21 clubs still without a
+coordinate that are playing in 2026/27, twenty are English and this
+method places NONE of them. Every authority they sit in is wider than the
+threshold: New Forest 9.1 miles, Cherwell 10.0, West Suffolk 13.4,
+Somerset 21.2, North Yorkshire 36.2. The clubs it did place were in
+compact urban authorities; small-town clubs are in large rural districts
+by definition, and a centroid of one is near no particular town.
+
+So the remaining coordinates need real ground positions from outside this
+environment - the same fetch the club-story facts need - rather than a
+lower threshold. Lowering it is the one thing that must not happen: a
+club in the wrong town hands its people to the wrong neighbours, which is
+the bug this whole layer exists to fix.
+
 CLUBS OUTSIDE ENGLAND CANNOT BE PLACED AT ALL. The gazetteer is English
 MSOAs, so Merthyr Town has no authority to sit in. They are reported, not
 guessed - and they are easy to spot, because every English ground is
@@ -43,7 +57,7 @@ within 1.5 miles of an MSOA centroid while the Welsh ones are 9 to 31.
 
 The --place input is tab-separated, one club per line:
 
-    canonical_name <TAB> local_authority <TAB> tier <TAB> division <TAB> ground_name
+    club_id <TAB> local_authority
 """
 
 import argparse
@@ -57,7 +71,6 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 
-import roster  # noqa: E402
 from catchment import great_circle_miles  # noqa: E402
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
@@ -184,17 +197,35 @@ def cmd_validate(args):
 
 def cmd_place(args):
     """
-    Turn a tab-separated club list into roster rows, refusing any club
-    whose authority is too wide to stand in for its town.
+    Place clubs that are already in club_master but have no coordinate.
+
+    This used to emit rows for club_roster.csv and skip any club already
+    in club_master. Both assumptions died when the roster folded into
+    club_master - every club has an identity there now, so the ones
+    needing a coordinate are exactly the ones this used to refuse, and
+    src/roster.py no longer exists to import. The script has been dead
+    since that fold; this is the repair.
+
+    Input is tab-separated, one club per line:
+
+        club_id <TAB> local_authority
+
+    Output is CSV ready to merge into club_master.csv, and a club whose
+    authority is too wide to stand in for its town is refused rather than
+    put in the wrong place.
     """
     las = authorities(load_msoas())
-    master = set()
+    known, has_coords = {}, set()
     if DB.exists():
-        master = {r[0] for r in sqlite3.connect(DB).execute(
-            "SELECT club_id FROM club_master")}
+        for club_id, lat in sqlite3.connect(DB).execute(
+                "SELECT club_id, latitude FROM club_master"):
+            known[club_id] = True
+            if lat is not None and str(lat) != "":
+                has_coords.add(club_id)
 
     writer = csv.writer(sys.stdout, lineterminator="\n")
-    writer.writerow(roster.ROSTER_COLUMNS)
+    writer.writerow(["club_id", "latitude", "longitude", "location_precision",
+                     "local_authority", "note"])
     unplaced = []
 
     with Path(args.file).open(encoding="utf-8") as fh:
@@ -202,34 +233,34 @@ def cmd_place(args):
             line = line.rstrip("\n")
             if not line.strip() or line.startswith("#"):
                 continue
-            parts = (line.split("\t") + [""] * 5)[:5]
-            name, la, tier, division, ground = (p.strip() for p in parts)
+            parts = (line.split("\t") + [""] * 2)[:2]
+            club_id, la = (p.strip() for p in parts)
+
+            if known and club_id not in known:
+                unplaced.append((club_id, "not in club_master"))
+                continue
+            if club_id in has_coords:
+                unplaced.append((club_id, "already has a coordinate"))
+                continue
 
             cell = las.get(la)
             if cell is None:
-                unplaced.append((name, f"no such authority: {la!r}"))
+                unplaced.append((club_id, f"no such authority: {la!r}"))
                 continue
             if cell["spread"] > MAX_SPREAD_MILES:
                 unplaced.append(
-                    (name, f"{la} spreads {cell['spread']:.1f} mi - too wide to"
-                           " stand in for one town"))
-                continue
-
-            club_id = f"{roster.slugify(name)}-fc"
-            if club_id in master:
-                unplaced.append((name, "already in club_master"))
+                    (club_id, f"{la} spreads {cell['spread']:.1f} mi - too wide"
+                              " to stand in for one town"))
                 continue
 
             writer.writerow([
-                club_id, name, tier, division, ground,
-                f"{cell['lat']:.4f}", f"{cell['lon']:.4f}", "town", la,
-                SOURCE_URL,
+                club_id, f"{cell['lat']:.4f}", f"{cell['lon']:.4f}", "town", la,
                 f"population-weighted centroid of {la}, whose population"
                 f" spreads {cell['spread']:.1f} mi",
             ])
 
-    for name, why in unplaced:
-        print(f"# UNPLACED {name}: {why}", file=sys.stderr)
+    for club_id, why in unplaced:
+        print(f"# UNPLACED {club_id}: {why}", file=sys.stderr)
     if unplaced:
         print(f"# {len(unplaced)} club(s) unplaced", file=sys.stderr)
 
@@ -245,7 +276,7 @@ def main():
     p = sub.add_parser("validate", help="measure this method against real grounds")
     p.set_defaults(func=cmd_validate)
 
-    p = sub.add_parser("place", help="turn a club list into roster rows")
+    p = sub.add_parser("place", help="place club_master clubs that have no coordinate")
     p.add_argument("file")
     p.set_defaults(func=cmd_place)
 
