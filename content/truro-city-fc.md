@@ -45,6 +45,8 @@ theme_notes:
     title against Truro there — Truro playing a home fixture nearer to
     Wales than to Cornwall, in a stadium belonging to a club from a
     different division.
+capacity: 3000
+
 ---
 
 ## Origins

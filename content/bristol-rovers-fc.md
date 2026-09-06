@@ -33,6 +33,8 @@ rises:
       A single relegation into the National League in 2014 was reversed
       immediately — promoted straight back up the following year, then
       promoted again in 2016 into League One.
+capacity: 12534
+
 ---
 
 ## Origins

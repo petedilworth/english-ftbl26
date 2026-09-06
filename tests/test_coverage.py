@@ -181,9 +181,9 @@ def test_the_catchment_essay_quotes_the_figures_the_model_produces():
     doc = (PROJECT_ROOT / "content" / "insights" / "catchment.md").read_text()
 
     for club_id, column, quoted in (
-        ("arsenal-fc", "catchment_pop_restored", "1,856,061"),
-        ("leyton-orient-fc", "catchment_pop_current", "325,076"),
-        ("leyton-orient-fc", "catchment_pop_restored", "1,665,263"),
+        ("arsenal-fc", "catchment_pop_restored", "1,782,530"),
+        ("leyton-orient-fc", "catchment_pop_current", "312,329"),
+        ("leyton-orient-fc", "catchment_pop_restored", "1,594,898"),
     ):
         row = conn.execute(
             f"SELECT {column} FROM club_catchment WHERE club_id = ?",
@@ -194,7 +194,7 @@ def test_the_catchment_essay_quotes_the_figures_the_model_produces():
         assert f"{row[0]:,}" == quoted, (
             f"{club_id} {column}: essay says {quoted}, model says {row[0]:,}")
 
-    for club_id, quoted in (("portsmouth-fc", 3.6), ("marine-fc", 96.7)):
+    for club_id, quoted in (("portsmouth-fc", 3.7), ("marine-fc", 96.7)):
         row = conn.execute(
             "SELECT contest_ratio FROM club_catchment WHERE club_id = ?",
             (club_id,)).fetchone()

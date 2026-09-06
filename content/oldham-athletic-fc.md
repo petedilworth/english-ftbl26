@@ -20,6 +20,8 @@ administration:
       the club out of it in February 2004 through a new company, and
       bought the stadium separately through another - the split that
       shaped the next nineteen years
+capacity: 13560
+
 ---
 
 ## Origins

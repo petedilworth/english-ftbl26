@@ -2,7 +2,7 @@ Three numbers on every club page here come from a model rather than a count:
 how many people the club can draw on, what those people earn, and what share
 of them a bigger neighbour is taking. This page is what the model does and
 what it cannot do, because none of the three is a measurement and a figure
-like *1,856,061* invites more confidence than it has earned.
+like *1,782,530* invites more confidence than it has earned.
 
 ## Distance ranks clubs backwards
 
@@ -69,11 +69,11 @@ what the club would draw if it climbed back to the highest level it has
 reached, against the competition it faces in the present.
 
 For most clubs the two are the same number, because most clubs are at or near
-their ceiling. Arsenal draw **1,856,061** either way. Where they part company
-is the whole point of computing both: **Leyton Orient draw 325,076 in League
-One and 1,665,263 restored to the First Division**, because a first-tier club
+their ceiling. Arsenal draw **1,782,530** either way. Where they part company
+is the whole point of computing both: **Leyton Orient draw 312,329 in League
+One and 1,594,898 restored to the First Division**, because a first-tier club
 in east London competes with West Ham and Tottenham on very different terms
-than a third-tier one does. Truro are 110,172 now and 159,226 restored.
+than a third-tier one does. Truro are 108,608 now and 157,171 restored.
 
 The club pages lead with the current figure and show the restored one beside
 it only when they differ.
@@ -99,12 +99,17 @@ Every area is assigned to whichever club is nearest — its Voronoi cell, the
 natural hinterland before anyone competes for it. Of the people in that cell,
 the gravity model says what share the club holds. Contested is the rest.
 
-Portsmouth keep 96% of the people nearest to them: **3.6% contested**, the
+Portsmouth keep 96% of the people nearest to them: **3.7% contested**, the
 emptiest position in the data. Marine, in Crosby, keep about three per cent:
 **96.7% contested**, because Liverpool is 7.7 miles away and Everton barely
-further. That figure was 98.3% until the sixth and seventh tiers were added
-and Marine gained nearer neighbours than the two giants — a reminder that
-every number here is relative to who else is in the model.
+further.
+
+**Every number on this page is relative to who else is in the model, and the
+model keeps growing.** Marine were 98.3% contested until the sixth and seventh
+tiers arrived and gave them nearer neighbours than the two giants. Arsenal drew
+1,856,061 until 86 more clubs gained a coordinate and took a share of London
+with them. The figures move because the competition does; a catchment is not a
+measurement of a place, it is a division of one.
 
 One detail here is easy to get wrong and this site got it wrong first.
 **The share and the cell have to be measured over the same areas.** Comparing
@@ -113,16 +118,18 @@ different populations, and it fails in exactly the case that matters: a club
 next door to a big one has a tiny cell, so its catchment drawn from further
 afield exceeds it, and it scores as *uncontested*. Bradford Park Avenue came
 out as having the whole of Bradford to themselves. Restricting both sides of
-the ratio to the club's own cell puts them at 51%, which is a description of
+the ratio to the club's own cell puts them at 46%, which is a description of
 sharing a city rather than owning one.
 
 ## What this does not cover
 
-**245 of the 356 clubs here have a catchment figure.** The rest have no
-coordinates recorded — mostly clubs whose only seasons are old, and twenty
-still playing whose local authority is too wide for its centre to stand in
-for their town. `scripts/place_clubs.py` records why none of those twenty can
-be placed by that method.
+**331 of the 356 clubs here have a catchment figure.** The rest have no
+coordinates recorded, and they are almost all clubs whose only seasons are
+old. The clubs still playing are now placed: their grounds came from Wikipedia
+infoboxes, which land within a median of 0.3 miles of a surveyed ground and a
+worst case of 1.7 — see `scripts/parse_club_infoboxes.py`, and
+`scripts/place_clubs.py` for why the local-authority method it replaced could
+not place them at all.
 A club with no coordinates is absent from the model entirely, which is the
 right answer: it should not be given a pull it cannot justify.
 

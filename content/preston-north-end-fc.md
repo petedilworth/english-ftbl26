@@ -31,6 +31,8 @@ rivalries:
       their derby is with each other, eleven miles apart across east
       Lancashire — so Blackpool is the rivalry with a cause rather than
       merely a distance.
+capacity: 23404
+
 ---
 
 ## Origins

@@ -39,6 +39,8 @@ points_deductions:
       it that December and applied it on 20 April 2013 when the club
       finally exited, alongside five seasons of restrictions on playing
       budget, borrowing and loan repayments
+capacity: 20867
+
 ---
 
 ## Origins

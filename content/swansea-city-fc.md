@@ -45,6 +45,8 @@ rivalries:
       supporters at the Cardiff fixture on top of it. Few English derbies
       have produced a permanent restriction on the right to travel to a
       football match; this one has.
+capacity: 21000
+
 ---
 
 ## Origins
