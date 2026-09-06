@@ -23,6 +23,8 @@ administration:
       for insolvency did not exist yet - it was introduced for 2004/05,
       partly in response to the wave of administrations that Ipswich's own
       belonged to
+capacity: 30056
+
 ---
 
 ## Origins

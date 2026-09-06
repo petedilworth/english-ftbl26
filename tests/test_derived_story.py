@@ -48,11 +48,26 @@ def _narrative(page: Path) -> str:
 
 
 def test_a_club_with_a_written_story_gets_no_derived_one():
-    """A generated summary under a real history is a worse page."""
+    """
+    A generated summary under a real history is a worse page.
+
+    "Has a story" means PROSE, not a file. 223 clubs now have a
+    content/*.md holding only facts - capacity and founding year from
+    their Wikipedia infobox - and those pages should still get the
+    derived summary, because facts in a sidebar are not a history. This
+    test asserted file existence and failed the moment those files
+    appeared, which was the test being wrong rather than the site.
+    """
+    import content as content_mod
     intruders = []
     for page in _pages():
         club_id = page.parent.name
-        if (CONTENT / f"{club_id}.md").exists() and MARKER in page.read_text():
+        path = CONTENT / f"{club_id}.md"
+        if not path.exists():
+            continue
+        loaded = content_mod.load_club(path)
+        has_prose = bool(loaded and (loaded["sections"] or loaded["extra"]))
+        if has_prose and MARKER in page.read_text():
             intruders.append(club_id)
     assert not intruders, f"derived summary on a club with a written story: {intruders}"
 

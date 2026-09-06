@@ -157,11 +157,23 @@ def great_circle_miles(lat1: float, lon1: float,
     return 2 * EARTH_RADIUS_MILES * math.asin(math.sqrt(h))
 
 
-def attractiveness(tier: int | None) -> float:
-    """Pull weight for a club at a given tier. Unknown tiers draw locally."""
-    if tier is None:
+def attractiveness(tier) -> float:
+    """
+    Pull weight for a club at a given tier. Unknown tiers draw locally.
+
+    The tier arrives from a pandas frame, where a missing value is NaN
+    rather than None - and NaN is a float that int() refuses. That went
+    unnoticed while every club in the model had a tier, and crashed the
+    moment 86 clubs gained a coordinate from their Wikipedia infobox and
+    entered the model without one. An unknown tier is exactly the case
+    DEFAULT_ATTRACTIVENESS exists for.
+    """
+    if tier is None or (isinstance(tier, float) and math.isnan(tier)):
         return DEFAULT_ATTRACTIVENESS
-    return TIER_ATTRACTIVENESS.get(int(tier), DEFAULT_ATTRACTIVENESS)
+    try:
+        return TIER_ATTRACTIVENESS.get(int(tier), DEFAULT_ATTRACTIVENESS)
+    except (TypeError, ValueError):
+        return DEFAULT_ATTRACTIVENESS
 
 
 def _int_or_none(value) -> int | None:
