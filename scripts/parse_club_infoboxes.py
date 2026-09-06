@@ -34,7 +34,6 @@ rather than accepted, because a wrong ground is worse than no ground.
 
 import argparse
 import csv
-import json
 import logging
 import re
 import sqlite3

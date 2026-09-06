@@ -108,6 +108,22 @@
   var cellLayer = null;
   var cellsOn = false;
 
+  // A club's own colour, unless it is white or near it. Fifty-seven clubs
+  // are: Leeds, Spurs and Fulham genuinely, and thirty-five striped kits
+  // whose infobox records the white between the stripes. On a pale
+  // basemap a white cell is not a cell, it is a gap - which reads as "no
+  // data", the opposite of a club holding its ground. Those fall back to
+  // the tier palette the markers already use.
+  function cellColor(club) {
+    var hex = (club.color || "").replace("#", "");
+    if (hex.length === 6) {
+      var r = parseInt(hex.slice(0, 2), 16), g = parseInt(hex.slice(2, 4), 16), b = parseInt(hex.slice(4, 6), 16);
+      var luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+      if (luminance < 0.85) return club.color;
+    }
+    return TIER_COLORS[club.tier] || GHOST;
+  }
+
   function buildCells() {
     if (cellLayer || !data.cells || !data.cells.length) return;
     cellLayer = L.layerGroup();
@@ -120,7 +136,7 @@
         renderer: canvas,
         radius: 3,
         stroke: false,
-        fillColor: club.color,
+        fillColor: cellColor(club),
         // Floor the opacity so a heavily contested area is still visible
         // as belonging to someone - invisible would read as "no data",
         // which is the opposite of what a contested cell means.
