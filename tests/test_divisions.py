@@ -405,3 +405,20 @@ def test_each_tier_six_season_holds_both_of_its_divisions():
             " WHERE tier = 6 AND season_end_year = ?", (season,))}
         assert got == {"national-league-north", "national-league-south"}, \
             f"{season}: {sorted(got)}"
+
+
+def test_no_division_is_named_by_its_tier_number():
+    """
+    aggregate.get_division_name falls back to "Tier N" for a season it has
+    no name for. That is a placeholder, and it shipped: the 26 backfilled
+    fifth-tier seasons from 1979/80 carried "Tier 5" as their division
+    name - on 567 standings rows, as a heading on 26 season pages, and
+    into the prose of every club summary that mentioned them. The site
+    names every other competition as it was, First Division and not
+    Premier League for 1958/59, and the fifth tier now gets the same.
+    """
+    conn = _conn()
+    rows = conn.execute(
+        "SELECT DISTINCT tier, season_end_year, division_name FROM standings"
+        " WHERE division_name GLOB 'Tier [0-9]*' ORDER BY 1, 2").fetchall()
+    assert not rows, f"placeholder division names in standings: {rows[:6]}"

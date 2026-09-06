@@ -26,7 +26,7 @@ sys.path.insert(0, str(_SRC))
 import aggregate  # noqa: E402  (points-era boundary for records tables)
 import content  # noqa: E402  (needs _SRC on the path first)
 import divisions
-import divisions as divisions_mod
+divisions_mod = divisions
 import finances  # noqa: E402  (disclosure states for the club finances table)
 import historical  # noqa: E402  (why a backfilled table is flagged not-final)
 
@@ -3553,8 +3553,9 @@ class SiteBuilder:
                     )
                 else:
                     provenance = (
-                        f"Ground capacity from the club stories written so far "
-                        f"({len(points)} of {total_clubs} clubs)."
+                        f"Ground capacity from club facts - written stories and "
+                        f"Wikipedia infoboxes - for {len(points)} of {total_clubs} "
+                        f"clubs."
                     )
 
                 is_current = year == current_year

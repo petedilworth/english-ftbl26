@@ -111,16 +111,19 @@ to 6 null and void in March 2020 and expunged them again in February 2021.
 Those seasons were not played to a finish and have no table to record. That is
 absent structure, not missing data, and the coverage test encodes it.
 
-**Twenty of the new clubs have no coordinates**, because their local authority
-is too wide to stand in for a town — see `scripts/place_clubs.py`, which
-publishes its own measured error. They appear in the tables and on the ladder
-and not on the map or in the catchment model, which is the honest treatment
-for a club whose location this project cannot fix.
+**Two clubs still playing have no coordinates**, and both are Welsh, which
+the English gazetteer cannot place. It was twenty. The local-authority method
+in `scripts/place_clubs.py` could place none of them - every authority was
+too wide - and the fix was a different source entirely: their grounds came
+from Wikipedia infoboxes, which land within a median of 0.3 miles of a
+surveyed ground (see `scripts/parse_club_infoboxes.py`). Twenty-five clubs in
+all have no coordinate; the rest are defunct, with only old seasons here.
 
-**Sixty-seven have no `current_tier`.** They played at the sixth or seventh
+**Seventy-eight have no `current_tier`.** They played at the sixth or seventh
 tier in these seasons and this project does not record where they are now.
 
-It was eighty-two. The FA allocations
+It was eighty-two, then sixty-seven, then eleven clubs arrived with the
+2019/20-onward results and pushed it back up. The FA allocations
 (`data/nls-allocations-2026-27.tsv`, kept out of `data/raw/` because that
 directory is gitignored and this file cannot be fetched again) settle steps 1
 to 4, and this file was in the repo read by nothing but its own tests. Checked

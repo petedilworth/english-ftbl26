@@ -23,7 +23,14 @@ DIVISION_NAMES: dict = {
         range(1993, 2004): "Second Division", range(2004, 9999): "League One"},
     4: {range(1959, 1993): "Fourth Division",
         range(1993, 2004): "Third Division", range(2004, 9999): "League Two"},
-    5: {range(2006, 2016): "Conference Premier", range(2016, 9999): "National League"},
+    # The fifth tier used to start at 2006 here, so the 26 backfilled
+    # seasons before it fell through to the "Tier 5" placeholder below -
+    # and 567 standings rows carried that as a division name, on 26
+    # season pages as a heading. Same unsponsored convention as above.
+    5: {range(1980, 1987): "Alliance Premier League",
+        range(1987, 2004): "Football Conference",
+        range(2004, 2006): "Conference National",
+        range(2006, 2016): "Conference Premier", range(2016, 9999): "National League"},
 }
 
 # The Football League awarded two points for a win until 1980/81 and three
