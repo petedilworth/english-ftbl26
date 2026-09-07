@@ -156,9 +156,9 @@ def targets(conn: sqlite3.Connection) -> list[dict]:
 
     out = []
     for club_id, name, tier, has_accounts, entity, number in rows:
-        if number:
-            # Already pinned. Kept in the file as the scorer's own test.
-            pass
+        # A club whose number was already recorded by hand stays in the
+        # list: it is the only ground truth the scorer can be checked
+        # against, and cmd_score reports agreement rather than overwriting.
         out.append({
             "club_id": club_id,
             "name": name,
