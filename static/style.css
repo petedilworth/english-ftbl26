@@ -108,7 +108,11 @@ table.standings th {
   padding: 6px 8px;
 }
 table.standings td { padding: 6px 8px; border-bottom: 1px solid var(--line); }
-table.standings td.num { text-align: right; font-variant-numeric: tabular-nums; }
+table.standings td.num { text-align: right; font-variant-numeric: tabular-nums;
+  /* A figure is one thing. "20-12-26" broke across two lines on the
+     rivalries table, where a long note column squeezes everything
+     else, and read as two numbers. */
+  white-space: nowrap; }
 table.standings tr.status-champions { background: #f2f9f2; }
 table.standings tr.status-promoted, table.standings tr.status-play-off-promoted { background: #f7fbf7; }
 table.standings tr.status-relegated, table.standings tr.status-play-off-relegated { background: #fdf5f5; }
@@ -703,3 +707,48 @@ table.matrix.compact .matrix-highlight {
 /* Where the dated-match range differs from the table range - the gap a
    reader is most likely to be surprised by. */
 .coverage-differs { color: #b3261e; }
+
+/* ── Head-to-head ─────────────────────────────────────────────────────────
+   The superlatives above the table, and the panel a chosen opponent opens
+   below it. The panel is not an expanded row on purpose: the table sorts
+   through club-table.js, which reorders the whole tbody, and a detail row
+   would be carried away from the club it belongs to. */
+.h2h-highlights {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px;
+  font-size: 14px;
+}
+.h2h-highlights li { padding: 3px 0; border-bottom: 1px solid var(--line); }
+.h2h-highlights li:last-child { border-bottom: 0; }
+.h2h-highlights strong { color: var(--muted); font-weight: 600; }
+
+#h2h-table tbody tr { cursor: pointer; }
+#h2h-table tbody tr:hover { background: var(--bg-soft); }
+#h2h-table tbody tr.h2h-open { background: var(--bg-soft); box-shadow: inset 3px 0 0 var(--accent); }
+#h2h-table tbody tr:focus { outline: 2px solid var(--accent); outline-offset: -2px; }
+
+.h2h-detail-head { position: relative; }
+.h2h-detail-head h3 { margin: 0 0 2px; font-size: 16px; }
+.h2h-detail-record { margin: 0 0 8px !important; color: var(--muted); font-size: 13px; }
+.h2h-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--muted);
+  font-size: 12px;
+  padding: 3px 9px;
+  cursor: pointer;
+}
+.h2h-close:hover { color: var(--accent); border-color: var(--accent); }
+/* 136 meetings is a long panel to scroll past to get back to the page,
+   so the list scrolls inside itself rather than pushing everything below
+   it off the screen. */
+#h2h-detail .table-scroll { max-height: 60vh; overflow-y: auto; }
+.h2h-undated { color: var(--muted); font-style: italic; }
+.h2h-won { color: var(--up); }
+.h2h-lost { color: var(--down); }
+.h2h-drawn { color: var(--muted); }

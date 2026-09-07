@@ -45,7 +45,7 @@
   <tr>
     {% for cell in row %}
     <td {% if cell.num %}class="num"{% endif %}>
-      {% if cell.club_id %}<a href="{{ root }}/team/{{ cell.club_id }}/index.html">{{ cell.text }}</a>{% else %}{{ cell.text }}{% endif %}
+      {% if cell.href %}<a href="{{ cell.href }}">{{ cell.text }}</a>{% elif cell.club_id %}<a href="{{ root }}/team/{{ cell.club_id }}/index.html">{{ cell.text }}</a>{% else %}{{ cell.text }}{% endif %}
     </td>
     {% endfor %}
   </tr>

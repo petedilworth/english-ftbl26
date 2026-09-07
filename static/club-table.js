@@ -46,22 +46,19 @@
   // working when a column is added or moved.
   var tables = [];
 
+  // Through static/hash-state.js, which owns the fragment: on a club page
+  // the head-to-head section keeps the opened opponent in the same hash,
+  // and a writer that replaced the whole fragment would close it.
   function readHash() {
-    var m = /(?:^|[#&])sort=([^&,]+),(asc|desc)/.exec(window.location.hash || "");
-    return m ? {key: decodeURIComponent(m[1]), descending: m[2] === "desc"} : null;
+    var raw = window.hashState ? window.hashState.get("sort") : null;
+    if (!raw) return null;
+    var m = /^([^,]+),(asc|desc)$/.exec(raw);
+    return m ? {key: m[1], descending: m[2] === "desc"} : null;
   }
 
   function writeHash(key, descending) {
-    var next = "#sort=" + encodeURIComponent(key) + "," + (descending ? "desc" : "asc");
-    if (window.location.hash === next) return;
-    // replaceState, not a hash assignment: sorting a table is not a
-    // navigation, and stacking history entries would turn Back into an
-    // undo of every click rather than a way off the page.
-    if (window.history && window.history.replaceState) {
-      window.history.replaceState(null, "", window.location.pathname + window.location.search + next);
-    } else {
-      window.location.hash = next;
-    }
+    if (!window.hashState) return;
+    window.hashState.set("sort", key + "," + (descending ? "desc" : "asc"));
   }
 
   function setUp(table) {
