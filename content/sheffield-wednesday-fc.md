@@ -106,7 +106,7 @@ the central pens of the Leppings Lane terrace at Hillsborough, during an FA
 Cup semi-final between Liverpool and Nottingham Forest. The 2016 inquests
 found that **the behaviour of supporters did not cause or contribute to the
 disaster**, and the account of it on this site is set out on
-[Liverpool's page](/team/liverpool-fc/), because the consequences that
+[Liverpool's page](../liverpool-fc/index.html), because the consequences that
 followed — the Taylor Report, all-seater grounds, and a thirty-year fight
 over what had been said about the dead — belong there.
 

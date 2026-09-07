@@ -342,7 +342,15 @@ def test_the_sort_state_is_written_to_the_url():
     tab it was found in.
     """
     js = (PROJECT_ROOT / "static" / "club-table.js").read_text()
-    assert "#sort=" in js, "the sort is not encoded in the hash"
-    assert "replaceState" in js, (
+    hash_state = (PROJECT_ROOT / "static" / "hash-state.js").read_text()
+    # The fragment is written through static/hash-state.js, which the club
+    # pages share with the head-to-head section: two scripts each replacing
+    # the whole hash meant sorting the table closed the record you were
+    # reading. The published shape #sort=<key>,<asc|desc> is unchanged.
+    assert 'get("sort")' in js, "the sort is not read from the hash"
+    assert 'set("sort"' in js, "the sort is not written to the hash"
+    assert "#sort=" in hash_state or "&" in hash_state, (
+        "the hash helper must keep the published key=value shape")
+    assert "replaceState" in hash_state, (
         "sorting should replace the history entry, not stack one per click")
     assert "hashchange" in js, "a pasted link must apply without a reload"

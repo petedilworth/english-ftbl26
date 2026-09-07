@@ -438,6 +438,13 @@ def _distance_phrase(miles: float | None, approximate: bool) -> str | None:
     return "a mile or two" if whole <= 1 else f"~{whole} miles"
 
 
+def _join_names(parts: list[str]) -> str:
+    """"a, b and c" - the same list-joining rule coverage.py uses."""
+    if len(parts) == 1:
+        return parts[0]
+    return ", ".join(parts[:-1]) + " and " + parts[-1]
+
+
 def _row_dict(r) -> dict:
     slug, direction, label = STATUS_PRESENTATION.get(r["status"], ("stayed", "", ""))
     keys = r.keys()
@@ -499,6 +506,8 @@ class SiteBuilder:
         # same (metric, season) questions, and each answer walks the season.
         self._metric_points_cache: dict = {}
         self._coverage_caveat: str | None = None
+        self._h2h_log: dict | None = None
+        self._h2h_divisions: dict | None = None
         self.standings_cols = {
             r[1] for r in self.conn.execute("PRAGMA table_info(standings)")
         }
@@ -1392,6 +1401,214 @@ class SiteBuilder:
             self._coverage_caveat = coverage_mod.natural_level_caveat(self.conn)
         return self._coverage_caveat
 
+    # ── Head-to-head ───────────────────────────────────────────────────────
+
+    @property
+    def h2h_log(self) -> dict:
+        """
+        {club_id: {opponent_id: [match, ...]}} for every club, built once.
+
+        One pass over 194,756 matches rather than a query per pair: there
+        is no index on either club column, so the per-pair spelling is 355
+        full scans. See src/headtohead.py.
+        """
+        if self._h2h_log is None:
+            import headtohead
+            self._h2h_log = headtohead.match_log(self.conn)
+        return self._h2h_log
+
+    @property
+    def h2h_division_names(self) -> dict:
+        """
+        {(season, division_id): name} as the standings table spells it.
+
+        The matches table carries a division_id and no name, and the name
+        is era-dependent - the same division_id is the First Division in
+        1990/91 and the Premier League in 1993/94 - so it is read from the
+        rows that already got it right rather than re-derived here.
+        """
+        if self._h2h_divisions is None:
+            # division_id is feature-detected here as everywhere else: a
+            # database from before the division registry landed keys its
+            # standings on tier alone, and falls back to the registry's own
+            # name below.
+            if "division_id" not in self.standings_cols:
+                self._h2h_divisions = {}
+            else:
+                self._h2h_divisions = {
+                    (season, division_id): name
+                    for season, division_id, name in self.conn.execute(
+                        "SELECT DISTINCT season_end_year, division_id, division_name"
+                        "  FROM standings WHERE division_id IS NOT NULL"
+                        "   AND division_name IS NOT NULL")
+                }
+        return self._h2h_divisions
+
+    def _division_label(self, season: int, division_id: str | None,
+                        tier: int | None) -> str:
+        name = self.h2h_division_names.get((season, division_id))
+        if name:
+            return name
+        division = divisions_mod.BY_ID.get(division_id)
+        if division is not None:
+            return division.name
+        return f"Tier {tier}" if tier else ""
+
+    @staticmethod
+    def _score(match: dict) -> str:
+        return f"{match['goals_for']}\u2013{match['goals_against']}"
+
+    def _h2h_section(self, club_id: str, name: str, out_dir: Path,
+                     club_names: dict) -> dict | None:
+        """
+        The Head-to-head section, and the sibling data file it reads.
+
+        Everything here - the cards, the superlatives, the table - is a
+        reduction of the same per-opponent rows, so a card cannot come to
+        disagree with the table under it.
+        """
+        import headtohead
+
+        log = self.h2h_log.get(club_id)
+        if not log:
+            return None
+        rows = headtohead.records(log)
+        summary = headtohead.summary(rows)
+
+        def label(club: str) -> str:
+            return club_names.get(club, club)
+
+        table_rows = []
+        for r in rows:
+            opponent = r["opponent"]
+            table_rows.append({
+                "opponent": opponent,
+                "name": label(opponent),
+                "played": r["played"],
+                "won": r["won"],
+                "drawn": r["drawn"],
+                "lost": r["lost"],
+                "goals_for": r["goals_for"],
+                "goals_against": r["goals_against"],
+                "first": season_label(r["first_season"]),
+                "first_sort": r["first_season"],
+                "last": season_label(r["last_season"]),
+                "last_sort": r["last_season"],
+            })
+
+        most = summary["most_played"]
+        cards = [
+            {"value": summary["opponents"], "label": "Opponents met"},
+            {"value": f"{summary['played']:,}", "label": "Matches played"},
+            {"value": f"{summary['won']}/{summary['drawn']}/{summary['lost']}",
+             "label": "Won / drawn / lost"},
+            {"value": label(most["opponent"]),
+             "label": f"Most played · {most['played']} meeting"
+                      f"{'' if most['played'] == 1 else 's'}"},
+        ]
+
+        highlights = []
+        threshold = summary["threshold"]
+        for key, heading in (("best_record", "Best record"),
+                             ("worst_record", "Worst record")):
+            r = summary[key]
+            if r is None:
+                continue
+            pct = 100.0 * r["won"] / r["played"]
+            highlights.append({
+                "label": heading,
+                "opponent": r["opponent"],
+                "text": f"{label(r['opponent'])} — {r['won']} wins from "
+                        f"{r['played']}, {pct:.0f}%",
+            })
+        if summary["biggest_win"] is not None:
+            r = summary["biggest_win"]
+            m = r["best"]
+            highlights.append({
+                "label": "Biggest win",
+                "opponent": r["opponent"],
+                "text": f"{self._score(m)} against {label(r['opponent'])}, "
+                        f"{season_label(m['season_end_year'])}",
+            })
+        if summary["heaviest_defeat"] is not None:
+            r = summary["heaviest_defeat"]
+            m = r["worst"]
+            highlights.append({
+                "label": "Heaviest defeat",
+                "opponent": r["opponent"],
+                "text": f"{self._score(m)} against {label(r['opponent'])}, "
+                        f"{season_label(m['season_end_year'])}",
+            })
+        if summary["never_beaten_by"]:
+            beaten = summary["never_beaten_by"]
+            highlights.append({
+                "label": "Never beaten by",
+                "opponent": None,
+                "text": _join_names([
+                    f"{label(r['opponent'])} ({r['played']})" for r in beaten]),
+            })
+
+        # Named on the page rather than assumed: a reader comparing two
+        # clubs' best records needs to know they were drawn from different
+        # depths of fixture, and 56 clubs have no fixture deep enough for
+        # the line to appear at all.
+        if threshold is None:
+            note = (f"{name} have no opponent they have met "
+                    f"{headtohead.FLOOR_MEETINGS} times, so no best or worst "
+                    f"record is claimed here.")
+        else:
+            note = (f"Best and worst records are taken from the clubs "
+                    f"{name} have met {threshold} or more times — a record "
+                    f"over three meetings is not a record.")
+
+        self._write_h2h_data(club_id, name, rows, out_dir, club_names)
+        return {
+            "cards": cards,
+            "highlights": highlights,
+            "note": note,
+            "rows": table_rows,
+        }
+
+    def _write_h2h_data(self, club_id: str, name: str, rows: list[dict],
+                        out_dir: Path, club_names: dict) -> None:
+        """
+        h2h-data.js: every match against every opponent, newest first.
+
+        A sibling file rather than markup, the same as map-data.js and
+        insight-scatter-data.js. Arsenal's 2,719 matches are about 100 KB
+        of JSON and would otherwise sit in the HTML of a page that has not
+        been asked for them yet.
+        """
+        import json
+
+        divisions_seen: list[str] = []
+        index: dict[str, int] = {}
+        opponents = {}
+        for r in rows:
+            matches = []
+            for m in self.h2h_log[club_id][r["opponent"]]:
+                label = self._division_label(
+                    m["season_end_year"], m["division_id"], m["tier"])
+                if label not in index:
+                    index[label] = len(divisions_seen)
+                    divisions_seen.append(label)
+                matches.append([
+                    m["season_end_year"], m["match_date"], index[label],
+                    m["venue"], m["goals_for"], m["goals_against"],
+                ])
+            opponents[r["opponent"]] = {
+                "name": club_names.get(r["opponent"], r["opponent"]),
+                "href": (f"../{r['opponent']}/index.html"
+                         if r["opponent"] in self.club_pages else None),
+                "matches": matches,
+            }
+
+        payload = {"divisions": divisions_seen, "opponents": opponents}
+        out_dir.mkdir(parents=True, exist_ok=True)
+        (out_dir / "h2h-data.js").write_text(
+            "window.H2H = " + json.dumps(payload, separators=(",", ":")) + ";",
+            encoding="utf-8")
+
     def build_teams(self) -> None:
         import markdown as md
 
@@ -1490,6 +1707,8 @@ class SiteBuilder:
                 catchment=self._club_catchment(club_id),
                 seasons=seasons,
                 seasons_have_deductions=any(d["points_deducted"] for d in seasons),
+                head_to_head=self._h2h_section(
+                    club_id, t["canonical_name"], out_dir, club_names),
             )
 
             teams_meta.append({
@@ -2255,8 +2474,11 @@ class SiteBuilder:
     # ── Insights ───────────────────────────────────────────────────────────
 
     @staticmethod
-    def _cell(text, club_id=None, num=False):
-        return {"text": text, "club_id": club_id, "num": num}
+    def _cell(text, club_id=None, num=False, href=None):
+        # href wins over club_id: a cell can point somewhere other than the
+        # club's page - the rivalries table links its record straight to
+        # that opponent's record on the club page (#vs=).
+        return {"text": text, "club_id": club_id, "num": num, "href": href}
 
     def build_insights(self) -> None:
         """
@@ -2602,13 +2824,32 @@ class SiteBuilder:
         # hasn't played Tiers 1-5 since before the 1993/94 data start).
         has_page = {r[0] for r in self.conn.execute("SELECT club_id FROM club_trajectory")}
 
-        rows = [
-            [self._cell(e["name"] or f"{e['name_a']} – {e['name_b']}"),
-             self._cell(e["name_a"], e["club_a"] if e["club_a"] in has_page else None),
-             self._cell(e["name_b"], e["club_b"] if e["club_b"] in has_page else None),
-             self._cell(e["note"])]
-            for e in rivalries
-        ]
+        # A page about rivalries that carried no record was the obvious
+        # omission: the note says what the needle is about, and the number
+        # of times the two have actually met settled it. Read from the same
+        # per-opponent structure the club pages use, so the two agree.
+        rows = []
+        meetings = 0
+        for e in rivalries:
+            log = self.h2h_log.get(e["club_a"], {}).get(e["club_b"], [])
+            a_wins = sum(1 for m in log if m["goals_for"] > m["goals_against"])
+            drawn = sum(1 for m in log if m["goals_for"] == m["goals_against"])
+            b_wins = len(log) - a_wins - drawn
+            meetings += len(log)
+            rows.append([
+                self._cell(e["name"] or f"{e['name_a']} – {e['name_b']}"),
+                self._cell(e["name_a"], e["club_a"] if e["club_a"] in has_page else None),
+                self._cell(e["name_b"], e["club_b"] if e["club_b"] in has_page else None),
+                # Straight to that opponent's record on the first club's
+                # page, which is where the matches themselves are.
+                self._cell(
+                    len(log) if log else "—", num=True,
+                    href=(f"../../team/{e['club_a']}/index.html#vs={e['club_b']}"
+                          if log and e["club_a"] in has_page else None)),
+                self._cell(f"{a_wins}–{drawn}–{b_wins}" if log else "—", num=True),
+                self._cell(e["note"]),
+            ])
+        stats.append({"value": f"{meetings:,}", "label": "Derby meetings on file"})
 
         self.render(
             "insight_table.html", self.out / "insights" / "rivalries" / "index.html", 2,
@@ -2620,7 +2861,14 @@ class SiteBuilder:
             ),
             stats=stats,
             sections=[{
-                "columns": ["Derby", "Club", "Club", "What's behind it"],
+                "columns": ["Derby", "Club", "Club", "Met", "W–D–L",
+                            "What's behind it"],
+                "note": (
+                    "W–D–L is from the first club's side. The record is league "
+                    "matches only, as far back as this site reaches at each "
+                    "level, and a dash is a pair that has never met in a "
+                    "division on file."
+                ),
                 "rows": rows,
             }],
         )

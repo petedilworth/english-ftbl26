@@ -75,7 +75,11 @@ def test_club_context_and_head_to_head():
     assert ctx["position"] == 8
 
     h2h = digest.head_to_head(conn, "giant-fc", "steady-fc")
-    assert h2h == {"total": 2, "a_wins": 1, "b_wins": 0, "draws": 1}
+    # first_season is part of the record now: the sentence this feeds
+    # used to say "in league play since 1993" over matches that start
+    # in 1958/59, and would have gone on saying it.
+    assert h2h == {"total": 2, "a_wins": 1, "b_wins": 0, "draws": 1,
+                   "first_season": 2025}
 
 
 def test_fallen_giant_scores_higher_than_plain_fixture():

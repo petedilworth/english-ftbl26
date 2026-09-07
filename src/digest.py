@@ -162,7 +162,8 @@ def head_to_head(conn: sqlite3.Connection, a: str | None, b: str | None) -> dict
                           OR (away_club_id = :a AND ftr='A') THEN 1 ELSE 0 END),
                SUM(CASE WHEN (home_club_id = :b AND ftr='H')
                           OR (away_club_id = :b AND ftr='A') THEN 1 ELSE 0 END),
-               SUM(CASE WHEN ftr='D' THEN 1 ELSE 0 END)
+               SUM(CASE WHEN ftr='D' THEN 1 ELSE 0 END),
+               MIN(season_end_year)
         FROM matches
         WHERE (home_club_id = :a AND away_club_id = :b)
            OR (home_club_id = :b AND away_club_id = :a)
@@ -172,7 +173,11 @@ def head_to_head(conn: sqlite3.Connection, a: str | None, b: str | None) -> dict
     total, a_wins, b_wins, draws = (row[0], row[1] or 0, row[2] or 0, row[3] or 0)
     if not total:
         return None
-    return {"total": total, "a_wins": a_wins, "b_wins": b_wins, "draws": draws}
+    # The season the two first met on file, because the sentence this feeds
+    # used to say "since 1993" over matches that start in 1958/59 - and
+    # would have gone on saying it however far back the record grew.
+    return {"total": total, "a_wins": a_wins, "b_wins": b_wins, "draws": draws,
+            "first_season": row[4]}
 
 
 # ── Storyline scoring ───────────────────────────────────────────────────────
@@ -326,8 +331,10 @@ def narrative(fixture: dict, home: dict | None, away: dict | None,
         if ctx:
             parts.append(_history_sentence(ctx))
     if h2h and home and away:
+        first = h2h.get("first_season")
+        since = f" since {first - 1}/{first % 100:02d}" if first else ""
         parts.append(
-            f"They have met {h2h['total']} times in league play since 1993: "
+            f"They have met {h2h['total']} times in league play{since}: "
             f"{home['name']} {h2h['a_wins']} wins, {away['name']} {h2h['b_wins']}, "
             f"{h2h['draws']} drawn."
         )
