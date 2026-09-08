@@ -1500,7 +1500,7 @@ class SiteBuilder:
         cards = [
             {"value": summary["opponents"], "label": "Opponents met"},
             {"value": f"{summary['played']:,}", "label": "Matches played"},
-            {"value": f"{summary['won']}/{summary['drawn']}/{summary['lost']}",
+            {"value": f"{summary['won']:,} / {summary['drawn']:,} / {summary['lost']:,}",
              "label": "Won / drawn / lost"},
             {"value": label(most["opponent"]),
              "label": f"Most played · {most['played']} meeting"

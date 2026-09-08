@@ -15,18 +15,19 @@
     the output directory. Re-running skips files that already exist, so an
     interrupted run resumes rather than starting over.
 
-    HOW TO RUN IT (PowerShell, from the repository root):
+    HOW TO RUN IT (PowerShell, from the repository root). The list of
+    clubs to look up is committed at data/companies/targets.tsv, so no
+    Python is needed on this side:
 
         $env:CH_API_KEY = "your-key-here"
-        python scripts/find_club_companies.py targets > targets.tsv
-        ./scripts/fetch_company_candidates.ps1 -Targets targets.tsv -Out ch-json
+        ./scripts/fetch_company_candidates.ps1
         Compress-Archive -Path ch-json\* -DestinationPath ch-json.zip
 
     Then attach ch-json.zip. About 660 requests, six to eight minutes.
 #>
 
 param(
-    [Parameter(Mandatory = $true)][string]$Targets,
+    [string]$Targets = "data/companies/targets.tsv",
     [string]$Out = "ch-json",
     # The published limit is 600 requests per five minutes per API key,
     # which is one every 500 ms. 550 ms leaves room for the retries.

@@ -23,6 +23,7 @@ and it is the right one for the same reason: the fetch is dumb and
 repeatable, the scoring is the part that can be wrong quietly.
 
     python3 scripts/find_club_companies.py targets > data/companies/targets.tsv
+    # (that file is committed, so the fetch needs no Python)
     # ... run the PowerShell fetch on a machine with network access ...
     python3 scripts/find_club_companies.py score DIRECTORY_OF_JSON
 
@@ -76,6 +77,22 @@ NOT_THE_CLUB = re.compile(
 # you nothing about which club it is.
 FORM = re.compile(
     r"\b(limited|ltd|plc|llp|company|co|holdings?|group|the|and|&)\b")
+
+# The legal form ONLY, for comparing against the entity a person named.
+# FORM also drops "holdings" and "group", which is right for asking
+# whether a company is named after the club and wrong for asking whether
+# it is the company a person read the accounts from: "West Ham United
+# Holdings Limited" and "West Ham United Limited" are two companies, and
+# eighteen of the ninety hand-named entities are holding companies, plc's
+# or year-suffixed successors that differ from the club company in
+# exactly the words FORM throws away.
+LEGAL_FORM = re.compile(
+    r"\b(limited|ltd|plc|public limited company|llp|the)\b")
+
+
+def _legal_tokens(name: str) -> set[str]:
+    text = LEGAL_FORM.sub(" ", _normalise(name))
+    return {t for t in text.split() if t}
 
 # Club-type words, dropped to get at the place name. Kept as a separate
 # list from FORM because they are worth points when they MATCH and worth
@@ -247,7 +264,7 @@ def score(club_name: str, candidate: dict,
     club_tokens = _tokens(club_name)
     company_tokens = set(_tokens(title))
 
-    if known_entity and set(_tokens(known_entity)) == company_tokens:
+    if known_entity and _legal_tokens(known_entity) == _legal_tokens(title):
         points += POINTS_KNOWN_ENTITY
         why.append("matches the entity these accounts were read from")
     if club_tokens and set(club_tokens) == company_tokens:

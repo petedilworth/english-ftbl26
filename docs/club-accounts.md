@@ -52,14 +52,15 @@ not be pasted into the chat.
 
 ```powershell
 $env:CH_API_KEY = "your-key-here"
-python scripts/find_club_companies.py targets > targets.tsv
-./scripts/fetch_company_candidates.ps1 -Targets targets.tsv -Out ch-json
+./scripts/fetch_company_candidates.ps1
 Compress-Archive -Path ch-json\* -DestinationPath ch-json.zip
 ```
 
-251 clubs, about 660 requests, six to eight minutes at the published rate
-limit of 600 requests per five minutes. An interrupted run resumes: re-running
-skips files that already exist.
+The list of clubs to look up is committed at `data/companies/targets.tsv`
+(regenerate it with `python3 scripts/find_club_companies.py targets`), so the
+fetch needs nothing but PowerShell. 251 clubs, about 660 requests, six to
+eight minutes at the published rate limit of 600 requests per five minutes.
+An interrupted run resumes: re-running skips files that already exist.
 
 Then the scoring, in the repository:
 

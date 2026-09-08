@@ -47,8 +47,11 @@ def test_a_one_word_club_is_asked_for_once():
 
 
 def test_the_place_term_drops_only_club_words():
-    assert "manchester" in fcc.query_terms("Manchester United")
-    assert "united" not in " ".join(fcc.query_terms("Manchester United")).split()[-1:]
+    """The third term is the place: "united" alone would match a third of
+    the register."""
+    assert fcc.query_terms("Manchester United") == ["Manchester United", "manchester"]
+    assert fcc.query_terms("Wingate & Finchley") == ["Wingate & Finchley",
+                                                     "wingate finchley"]
 
 
 # ── what the scorer must refuse ────────────────────────────────────────────
@@ -211,3 +214,19 @@ def test_the_entity_a_person_already_named_wins():
     assert result["state"] == "chosen"
     assert result["chosen"]["company_number"] == "04250459"
     assert "read from" in result["chosen"]["why"]
+
+
+def test_the_holding_company_is_not_confused_with_the_club_company():
+    """
+    "West Ham United Holdings Limited" and "West Ham United Limited" are
+    two companies. The hand-named entity must match one of them, not
+    whichever comes first.
+    """
+    club = {"club_id": "west-ham-united-fc", "name": "West Ham United",
+            "known_entity": "West Ham United Holdings Limited"}
+    result = fcc.rank(club, [
+        company("West Ham United Limited", number="11111111"),
+        company("West Ham United Holdings Limited", number="22222222"),
+    ])
+    assert result["chosen"]["company_number"] == "22222222"
+    assert "read from" not in result["runners_up"][0]["why"]

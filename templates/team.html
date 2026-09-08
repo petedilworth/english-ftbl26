@@ -191,9 +191,12 @@
 {% endif %}
 <p class="nl-note">{{ head_to_head.note }}</p>
 
-<p class="finance-note">Pick an opponent for every match between the two.</p>
+<p class="finance-note">Choose an opponent to see every match between the two.</p>
 <div class="table-scroll">
-<table class="standings sortable" id="h2h-table" data-club-name="{{ name }}">
+{# data-src rather than a script tag: the matches are up to 105 KB and
+   are fetched by static/h2h.js the first time an opponent is opened,
+   not by every reader of the page. #}
+<table class="standings sortable" id="h2h-table" data-club-name="{{ name }}" data-src="h2h-data.js">
   <thead>
     <tr>
       <th data-key="opponent">Opponent</th>
@@ -209,7 +212,7 @@
   </thead>
   <tbody>
     {% for row in head_to_head.rows %}
-    <tr data-opponent="{{ row.opponent }}" tabindex="0">
+    <tr data-opponent="{{ row.opponent }}" tabindex="0" role="button" aria-expanded="false">
       <td data-sort="{{ row.name }}">{{ row.name }}</td>
       <td class="num" data-sort="{{ row.played }}">{{ row.played }}</td>
       <td class="num" data-sort="{{ row.won }}">{{ row.won }}</td>
@@ -249,7 +252,6 @@
 </table>
 </div>
 {% if head_to_head %}
-<script src="h2h-data.js"></script>
 <script src="{{ root }}/static/hash-state.js"></script>
 <script src="{{ root }}/static/club-table.js"></script>
 <script src="{{ root }}/static/h2h.js"></script>

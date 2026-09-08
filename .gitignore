@@ -7,3 +7,6 @@ data/db/*
 preview/
 site/
 .env
+# Companies House fetch, run on a machine with network access
+ch-json/
+ch-json.zip
