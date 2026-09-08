@@ -2,12 +2,14 @@
  * The head-to-head section on a club page: click an opponent, get every
  * match between the two.
  *
- * WHY THE MATCHES ARE NOT IN THE HTML. Arsenal have played 2,719 league
- * matches against 58 clubs. Rendering all of them into the page as hidden
- * rows costs about 250 KB on a page nobody has asked for them on yet, so
- * they arrive in a sibling h2h-data.js, the same way the map and the
- * scatter charts take their data. The table of opponents above is
- * server-rendered and works with the script switched off.
+ * WHY THE MATCHES ARE NOT IN THE HTML, AND NOT LOADED WITH IT EITHER.
+ * Arsenal have played 2,719 league matches against 58 clubs, about 90 KB
+ * as JSON, and Hereford United have met 166 clubs. A page whose HTML is
+ * 51 KB should not carry that for every reader when most will never open
+ * an opponent. So the sibling h2h-data.js is fetched the first time a row
+ * is opened - or on load, when the URL already names an opponent - and
+ * the table of opponents above is server-rendered and works with the
+ * script switched off.
  *
  * WHY A PANEL AND NOT AN EXPANDED ROW. The table is sortable through
  * static/club-table.js, which reorders every row in the tbody. A detail
@@ -22,12 +24,32 @@
 (function () {
   "use strict";
 
-  var data = window.H2H;
   var table = document.getElementById("h2h-table");
   var panel = document.getElementById("h2h-detail");
-  if (!data || !table || !panel) return;
+  if (!table || !panel) return;
 
   var clubName = table.getAttribute("data-club-name") || "";
+  var src = table.getAttribute("data-src");
+  var data = null;
+  var loading = null;
+
+  // One script insertion, shared by every open before it lands. A second
+  // click while the file is in flight must not start a second fetch.
+  function load() {
+    if (data) return Promise.resolve(data);
+    if (loading) return loading;
+    loading = new Promise(function (resolve, reject) {
+      var script = document.createElement("script");
+      script.src = src;
+      script.onload = function () {
+        data = window.H2H || null;
+        if (data) resolve(data); else reject(new Error("no data"));
+      };
+      script.onerror = function () { reject(new Error("failed to load")); };
+      document.head.appendChild(script);
+    });
+    return loading;
+  }
 
   function el(tag, text, className) {
     var node = document.createElement(tag);
@@ -54,6 +76,22 @@
 
   function outcome(gf, ga) {
     return gf > ga ? "Won" : gf < ga ? "Lost" : "Drawn";
+  }
+
+  function open(opponentId, scroll) {
+    table.classList.add("h2h-loading");
+    return load().then(function () {
+      table.classList.remove("h2h-loading");
+      var shown = render(opponentId);
+      if (shown && scroll) panel.scrollIntoView({block: "nearest"});
+      return shown;
+    }, function () {
+      table.classList.remove("h2h-loading");
+      panel.textContent = "";
+      panel.appendChild(el("p", "The match list could not be loaded.", "h2h-detail-record"));
+      panel.hidden = false;
+      return false;
+    });
   }
 
   function render(opponentId) {
@@ -117,20 +155,38 @@
     panel.appendChild(scroll);
     panel.hidden = false;
 
-    Array.prototype.forEach.call(table.tBodies[0].rows, function (row) {
-      row.classList.toggle("h2h-open",
-        row.getAttribute("data-opponent") === opponentId);
-    });
+    mark(opponentId);
     return true;
+  }
+
+  // The row's state is announced as well as coloured: role="button" and
+  // aria-expanded come from the server, and this keeps them true.
+  function mark(opponentId) {
+    Array.prototype.forEach.call(table.tBodies[0].rows, function (row) {
+      var isOpen = row.getAttribute("data-opponent") === opponentId;
+      row.classList.toggle("h2h-open", isOpen);
+      row.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
   }
 
   function clear(writeHash) {
     panel.hidden = true;
     panel.textContent = "";
-    Array.prototype.forEach.call(table.tBodies[0].rows, function (row) {
-      row.classList.remove("h2h-open");
-    });
+    mark(null);
     if (writeHash && window.hashState) window.hashState.set("vs", null);
+  }
+
+  // Click and Enter do the same thing: open a closed row, close an open
+  // one. They used to differ, and a keyboard user could not close.
+  function toggle(row) {
+    var id = row.getAttribute("data-opponent");
+    if (row.classList.contains("h2h-open")) {
+      clear(true);
+      return;
+    }
+    open(id, false).then(function (shown) {
+      if (shown && window.hashState) window.hashState.set("vs", id);
+    });
   }
 
   table.addEventListener("click", function (event) {
@@ -138,12 +194,7 @@
     if (!row) return;
     // A link in the row is a link: let it navigate.
     if (event.target.closest("a")) return;
-    var id = row.getAttribute("data-opponent");
-    if (row.classList.contains("h2h-open")) {
-      clear(true);
-      return;
-    }
-    if (render(id) && window.hashState) window.hashState.set("vs", id);
+    toggle(row);
   });
 
   table.addEventListener("keydown", function (event) {
@@ -151,8 +202,7 @@
     var row = event.target.closest ? event.target.closest("tr[data-opponent]") : null;
     if (!row) return;
     event.preventDefault();
-    var id = row.getAttribute("data-opponent");
-    if (render(id) && window.hashState) window.hashState.set("vs", id);
+    toggle(row);
   });
 
   function fromHash(scroll) {
@@ -161,9 +211,7 @@
       clear(false);
       return;
     }
-    if (render(id) && scroll) {
-      panel.scrollIntoView({block: "nearest"});
-    }
+    open(id, scroll);
   }
 
   fromHash(true);

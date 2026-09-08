@@ -172,12 +172,24 @@ def test_the_cards_agree_with_the_table_beneath_them():
     won = sum(int(cells[2]) for _, cells in rows)
     drawn = sum(int(cells[3]) for _, cells in rows)
     lost = sum(int(cells[4]) for _, cells in rows)
-    assert cards["Won / drawn / lost"] == f"{won}/{drawn}/{lost}"
+    assert cards["Won / drawn / lost"] == f"{won:,} / {drawn:,} / {lost:,}"
 
     # Most played is the first row, because the server sorts by meetings.
     most_label = next(k for k in cards if k.startswith("Most played"))
     assert cards[most_label] == rows[0][1][0]
     assert most_label.endswith(f"{rows[0][1][1]} meetings")
+
+
+def test_the_match_data_is_not_loaded_with_the_page():
+    """
+    Up to 105 KB per club, fetched the first time an opponent is opened
+    rather than by every reader. The page names the file; it does not
+    include it.
+    """
+    html = _page("arsenal-fc")
+    assert '<script src="h2h-data.js">' not in html
+    assert 'data-src="h2h-data.js"' in html
+    assert (SITE / "team" / "arsenal-fc" / "h2h-data.js").exists()
 
 
 def test_the_page_says_which_threshold_it_used():

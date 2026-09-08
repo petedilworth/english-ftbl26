@@ -185,16 +185,15 @@ def summary(rows: list[dict]) -> dict:
         "never_beaten_by": [],
     }
 
+    # Ties. rows arrive sorted by meetings then club id (records()), and
+    # max() and min() return the FIRST of equal elements, so every
+    # superlative below breaks a tie towards the deeper fixture and then
+    # alphabetically without saying so in its key. Deterministic across
+    # builds is what matters; which of two equal records is named is not.
     if out["threshold"] is not None:
         eligible = [r for r in rows if r["played"] >= out["threshold"]]
-        # Ties broken by the deeper fixture, then by club id: a 100% record
-        # over ten games says more than the same over the threshold itself.
-        out["best_record"] = max(
-            eligible, key=lambda r: (r["won"] / r["played"], r["played"],
-                                     _reverse(r["opponent"])))
-        out["worst_record"] = min(
-            eligible, key=lambda r: (r["won"] / r["played"], -r["played"],
-                                     r["opponent"]))
+        out["best_record"] = max(eligible, key=lambda r: r["won"] / r["played"])
+        out["worst_record"] = min(eligible, key=lambda r: r["won"] / r["played"])
 
     def margin(m: dict) -> int:
         return m["goals_for"] - m["goals_against"]
@@ -202,32 +201,13 @@ def summary(rows: list[dict]) -> dict:
     wins = [r for r in rows if margin(r["best"]) > 0]
     if wins:
         out["biggest_win"] = max(
-            wins, key=lambda r: (margin(r["best"]),
-                                 r["best"]["season_end_year"],
-                                 _reverse(r["opponent"])))
+            wins, key=lambda r: (margin(r["best"]), r["best"]["season_end_year"]))
     defeats = [r for r in rows if margin(r["worst"]) < 0]
     if defeats:
         out["heaviest_defeat"] = min(
-            defeats, key=lambda r: (margin(r["worst"]),
-                                    -r["worst"]["season_end_year"],
-                                    r["opponent"]))
+            defeats, key=lambda r: (margin(r["worst"]), -r["worst"]["season_end_year"]))
 
     out["never_beaten_by"] = [
         r for r in rows if r["lost"] == 0 and r["played"] >= UNBEATEN_MEETINGS
     ]
     return out
-
-
-class _reverse:
-    """Sort a string descending inside a key that sorts ascending."""
-
-    __slots__ = ("value",)
-
-    def __init__(self, value: str):
-        self.value = value
-
-    def __lt__(self, other) -> bool:
-        return self.value > other.value
-
-    def __eq__(self, other) -> bool:
-        return self.value == other.value
