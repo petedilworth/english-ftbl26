@@ -73,6 +73,36 @@ NOT_THE_CLUB = re.compile(
     r"juniors?|ladies|women'?s|social club|sports? and social|travel|"
     r"catering|hospitality|events|property|properties|developments?)\b")
 
+# ANOTHER SPORT ENTIRELY, which is the failure this scorer made on its
+# first real run: 18 of 167 confident matches were rugby clubs, a golf
+# club, a gymnastics school, a cricket club and a tennis and squash club.
+#
+# Two things conspired. SIC 93120 is "activities of sport clubs" and says
+# nothing about WHICH sport, so it was worth 40 points to a bowls club.
+# And rugby clubs are constitutionally named "... Rugby Football Club",
+# which collected the naming bonus meant for football. Middlesbrough
+# Rugby Union Football Club scored 84 and was chosen without review.
+#
+# So this disqualifies rather than penalises: a company naming a
+# different sport is not the club, whatever else it has going for it.
+# "athletic" is deliberately absent - Wigan Athletic, Charlton Athletic,
+# Oldham Athletic - while "athletics" is present, which is the running
+# club it is easy to confuse them with.
+ANOTHER_SPORT = re.compile(
+    r"\b(rugby|rfc|rufc|arlfc|rfl|gymnastics?|cricket|golf|tennis|squash|"
+    r"bowls|bowling|hockey|netball|basketball|athletics|swimming|boxing|"
+    r"rowing|sailing|angling|darts|snooker|cycling|motor|car club|"
+    r"greyhound|equestrian|badminton|lacrosse|handball|futsal)\b")
+
+# A company that is plausibly a FOOTBALL club specifically. Used where a
+# name match alone is too thin to stand on: "Barnsley Gymnastics Club"
+# contains every word of "Barnsley", and 74 club names on this site are a
+# single common English place name.
+FOOTBALL_WORD = re.compile(
+    r"\b(football|soccer|fc|f\.c|afc|a\.f\.c|united|city|town|rovers|"
+    r"athletic|wanderers|albion|county|argyle|orient|hotspur|villa|"
+    r"forest|alexandra|palace|wednesday|thistle|borough|olympic|nomads)\b")
+
 # Company-form words, dropped before the name is compared. "Limited" tells
 # you nothing about which club it is.
 FORM = re.compile(
@@ -115,26 +145,60 @@ def _tokens(name: str, drop_club_type: bool = False) -> list[str]:
     return [t for t in text.split() if t]
 
 
-def query_terms(name: str) -> list[str]:
+def queries(name: str, known_entity: str = "") -> list[str]:
     """
-    What to ask Companies House for, most specific first.
+    What to ask Companies House for, as `kind:term` pairs.
 
-    Three shapes, because a club's registered name is not reliably its
-    football name: Wimbledon file as "The Wimbledon Football Club
-    Limited", so a search for "AFC Wimbledon" finds nothing and a search
-    for "Wimbledon" finds it along with two hundred others. Both are run;
-    the scoring decides.
+    THE LESSON FROM THE FIRST REAL RUN. Asking for the club's name alone
+    does not find the club. "Chelsea" matches 2,772 companies; the
+    advanced search returns them alphabetically and the plain search by
+    its own relevance, and Chelsea Football Club Limited was in neither
+    the first 100 nor the first 30. Nor were Liverpool, Reading, Barnsley
+    or Middlesbrough. The scorer was then picking the best of a list that
+    did not contain the answer, which is how a rugby club came to be
+    chosen for Middlesbrough.
+
+    So the name is qualified before it is sent, three ways, because no
+    one of them covers every club:
+
+      football club  finds "The Reading Football Club Limited"
+      fc             finds "Burnley FC Holdings Limited", which the
+                     first spelling misses
+      SIC 93120      finds a club whose name says neither, by filtering
+                     2,772 companies down to the sport clubs among them
+
+    Plus the club's own name on the relevance-ranked search, which is
+    what finds the clubs whose registered name is nothing like their
+    football one, and the hand-recorded entity where there is one:
+    "Football Ventures (Whites) Limited" is Bolton Wanderers and contains
+    not one word of it.
     """
-    terms = [name]
-    without_afc = re.sub(r"^(AFC|A\.F\.C\.)\s+", "", name).strip()
-    if without_afc and without_afc != name:
-        terms.append(without_afc)
-    place = " ".join(_tokens(name, drop_club_type=True))
-    # A place term of one short word ("Marine", "Barnet") is the club name
-    # already; a place term of nothing at all ("Athletic") is useless.
-    if place and place not in {t.lower() for t in terms}:
-        terms.append(place)
-    return terms
+    out = [f"plain:{name}"]
+
+    # The place name without the club type, for "AFC Wimbledon" filing as
+    # "The Wimbledon Football Club Limited". Falls back to the full name
+    # where stripping leaves nothing useful.
+    place = " ".join(_tokens(name, drop_club_type=True)) or name
+    stem = re.sub(r"^(AFC|A\.F\.C\.)\s+", "", name).strip() or name
+
+    for term in [stem, place]:
+        out.append(f"adv:{term} football club")
+        out.append(f"adv:{term} fc")
+        out.append(f"sic:{term}")
+
+    if known_entity:
+        out.append(f"plain:{known_entity}")
+
+    # Case-insensitively, because the search is: "Chelsea" and the
+    # lower-cased place name it reduces to are one query, not two, and
+    # paying for both doubles a 250-club run for nothing.
+    seen, unique = set(), []
+    for q in out:
+        key = q.lower()
+        if key not in seen:
+            seen.add(key)
+            unique.append(q)
+    return unique
 
 
 def targets(conn: sqlite3.Connection) -> list[dict]:
@@ -183,7 +247,7 @@ def targets(conn: sqlite3.Connection) -> list[dict]:
             "has_accounts": int(bool(has_accounts)),
             "known_entity": entity or "",
             "known_number": number or "",
-            "terms": query_terms(name),
+            "queries": queries(name, entity or ""),
         })
     return out
 
@@ -231,6 +295,13 @@ def score(club_name: str, candidate: dict,
     status = (candidate.get("company_status") or "").lower()
 
     points, why = 0, []
+
+    # Before any points: a different sport is not this club. See
+    # ANOTHER_SPORT - SIC 93120 covers every sport, and a rugby club is
+    # named a "Rugby Football Club", so without this the two strongest
+    # signals both fire for the wrong game.
+    if ANOTHER_SPORT.search(lower):
+        return 0, ["names a different sport"]
 
     if SIC_CLUB in sic:
         points += POINTS_SIC_CLUB
@@ -280,6 +351,20 @@ def score(club_name: str, candidate: dict,
             why.append("the club's place name only")
         else:
             return 0, ["name does not match"]
+
+    # A match on the place name alone, or on a club name that IS a place
+    # name, is not evidence of a football club: 74 clubs here are named
+    # for one common English word, and "Chelsea Limited" matches "Chelsea"
+    # exactly. Something in the name has to say football - unless a person
+    # already named this entity, which outranks any inference from it.
+    if not FOOTBALL_WORD.search(lower) and "read from" not in " ".join(why):
+        if SIC_CLUB in sic or sic & SIC_NEARBY:
+            # A sport club named exactly for the place, and nothing says
+            # which sport. Worth looking at, not worth choosing.
+            points = min(points, MIN_CONFIDENT - 1)
+            why.append("nothing in the name says football")
+        else:
+            return 0, ["nothing in the name says football"]
 
     return points, why
 
@@ -346,13 +431,13 @@ FIELDS = [
 def cmd_targets(args):
     conn = sqlite3.connect(DB)
     writer = csv.writer(sys.stdout, delimiter="\t", lineterminator="\n")
-    writer.writerow(["club_id", "club_name", "tier", "terms"])
+    writer.writerow(["club_id", "club_name", "tier", "queries"])
     rows = targets(conn)
     for club in rows:
         writer.writerow([club["club_id"], club["name"], club["tier"],
-                         "|".join(club["terms"])])
-    logger.info("%d clubs to look up, %d query terms",
-                len(rows), sum(len(c["terms"]) for c in rows))
+                         "|".join(club["queries"])])
+    logger.info("%d clubs to look up, %d queries",
+                len(rows), sum(len(c["queries"]) for c in rows))
 
 
 def cmd_score(args):

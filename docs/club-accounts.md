@@ -58,9 +58,31 @@ Compress-Archive -Path ch-json\* -DestinationPath ch-json.zip
 
 The list of clubs to look up is committed at `data/companies/targets.tsv`
 (regenerate it with `python3 scripts/find_club_companies.py targets`), so the
-fetch needs nothing but PowerShell. 251 clubs, about 660 requests, six to
-eight minutes at the published rate limit of 600 requests per five minutes.
-An interrupted run resumes: re-running skips files that already exist.
+fetch needs nothing but PowerShell. 251 clubs, about 1,540 requests, fifteen
+minutes at the published rate limit of 600 requests per five minutes. An
+interrupted run resumes: re-running skips files that already exist.
+
+### Asking for the club's name does not find the club
+
+The first real run got this wrong, and it is worth recording because the
+failure was silent. Every query was the club's name on its own. "Chelsea"
+matches 2,772 companies; the advanced search returns them alphabetically and
+the plain search by its own relevance, and Chelsea Football Club Limited was
+in neither the first 100 nor the first 30. Neither were Liverpool, Reading,
+Barnsley or Middlesbrough. The scorer was then choosing the best of a list
+that did not contain the answer, which is how a rugby club came to be the
+confident match for Middlesbrough.
+
+So the name is qualified before it is sent, and no single query is trusted to
+find every club:
+
+| query | finds |
+|---|---|
+| `<name> football club` | "The Reading Football Club Limited" |
+| `<name> fc` | "Burnley FC Holdings Limited", which the first spelling misses |
+| `<name>` filtered to SIC 93120 | a club whose name says neither, by cutting thousands of companies down to the sport clubs among them |
+| `<name>` on the relevance search | a club whose registered name is nothing like its football one |
+| the hand-recorded entity, by name | "Football Ventures (Whites) Limited" is Bolton Wanderers and shares not one word with them |
 
 Then the scoring, in the repository:
 
@@ -79,11 +101,21 @@ be argued with rather than trusted:
 
 | signal | why |
 |---|---|
-| SIC **93120**, activities of sport clubs | the one code that says a company *is* a club rather than something named after one |
+| SIC **93120**, activities of sport clubs | says a company *is* a club rather than something named after one — but not *which sport*, so it never stands alone |
 | company status `active` | a dissolved predecessor is not the club that files today |
 | named "football club" | the strongest naming signal short of the code |
 | the entity a person already named | 88 clubs' hand-read accounts record *which* company they came from without its number; that is a person's answer to this exact question, and it settles the row |
 | supporters' trust, foundation, academy, ladies, property | each files its own accounts, and each would be the wrong answer |
+| **another sport** — rugby, cricket, golf, gymnastics, tennis | disqualified outright, whatever else it has going for it |
+| a name that says nothing about football | disqualified, or at best reviewable: "Chelsea Limited" matches "Chelsea" exactly, and 74 clubs here are named for one common English word |
+
+The last two rows are there because of what the first run produced: **18 of
+167 confident matches named another sport** — Middlesbrough Rugby Union
+Football Club, Barnsley Gymnastics Club, Woking Golf Club, Darlington Cricket
+and Athletic Club. SIC 93120 covers every sport equally, and a rugby club is
+constitutionally named a "Rugby Football Club", so the two strongest signals
+both fired for the wrong game. "Athletic" stays a football word — Wigan,
+Charlton, Oldham — while "athletics" does not.
 
 A row whose best candidate is weak, or whose top two cannot be separated, is
 marked **review** and is not used until it has been looked at.
