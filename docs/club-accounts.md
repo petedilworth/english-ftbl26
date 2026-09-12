@@ -144,16 +144,71 @@ a failure.
 
 ## Stage 2 — fetch the filings
 
-Written once the mapping is reviewed: the latest two accounts filings per
-company as iXBRL, which is the machine-readable form.
+Reads the 178 `chosen` rows straight out of `data/club-companies.tsv`, so
+again there is nothing to run but PowerShell. The `review` rows are skipped on
+purpose: a filing fetched against the wrong company is worse than no filing,
+because the figures in it are real and belong to someone else.
+
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+$env:CH_API_KEY = "your-key-here"
+./scripts/fetch_club_accounts.ps1
+Compress-Archive -Path ch-accounts\* -DestinationPath ch-accounts.zip -Force
+```
+
+178 companies, about 900 requests, ten to fifteen minutes. Two filings each,
+which gives the year-on-year change the club pages already know how to show;
+the brief was more clubs, not more history.
+
+Per club it writes the accounts filing history as JSON, and each filing as
+`.xhtml` where iXBRL exists or `.pdf` where it does not. **The extension is
+the finding.** A scanned PDF carries no tagged figures and cannot be parsed,
+and recording that says so, where writing nothing would look like a fetch that
+failed.
+
+One wrinkle worth recording, because the obvious spelling fails on every
+document: the document API answers with a redirect to a pre-signed S3 URL, and
+S3 refuses a request carrying an `Authorization` header alongside its own
+signature. So the script follows that redirect by hand, with no credentials on
+the second request.
 
 ## Stage 3 — parse and apply
 
-`ix:nonFraction` facts, a candidate set of FRC taxonomy names per field, and
-**every file where nothing matched is reported** rather than having the
-nearest number taken from it. Machine-read rows carry an `ixbrl_auto` flag, so
-they stay distinguishable from hand-collected ones forever, and a machine-read
-row fills a blank club — it never replaces a researched one.
+`scripts/parse_club_accounts.py`, in the repository, under test.
+
+A filing is an XHTML document with the figures tagged inline:
+
+```xml
+<ix:nonFraction name="core:TurnoverRevenue" contextRef="d2024"
+                unitRef="GBP" scale="3" sign="-">1,234</ix:nonFraction>
+```
+
+The tag says which concept the number is, the context says what period it
+covers, and `scale` and `sign` say how to read it — `scale="3"` means the
+figure on the page is in thousands, and ignoring it understates a Premier
+League turnover by a factor of a thousand with nothing visible to say so. So
+the turnover is readable without anyone deciding which number on the page is
+turnover, which is the whole difference between this and transcribing a PDF.
+
+What iXBRL does not solve is **which concept name a filer used**. The FRC
+taxonomies have been renamed repeatedly and a small company's software may tag
+turnover as `TurnoverRevenue`, `TurnoverGrossOperatingRevenue`, or not at all.
+Each field therefore carries a candidate set, and every file where none of them
+matched is **reported by name, with the concepts it did find**, rather than
+filled with the nearest number. That report is what says which spelling to add.
+
+Two rules that do not bend:
+
+- **Nothing hand-collected is overwritten.** The existing rows were read from
+  filings by a person and carry notes a parser cannot reproduce. A machine-read
+  row fills a club-season that is blank and never replaces a researched one.
+- **Every machine-read row carries the flag `ixbrl_auto`**, so which is which
+  stays answerable forever rather than for as long as anyone remembers.
+
+```bash
+python3 scripts/parse_club_accounts.py ch-accounts          # dry run, reports
+python3 scripts/parse_club_accounts.py ch-accounts --apply  # append the rows
+```
 
 ## The ceiling, stated here rather than discovered later
 
