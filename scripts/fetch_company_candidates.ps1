@@ -60,6 +60,17 @@ $headers = @{
     "User-Agent"  = "english-ftbl26 club-accounts (github.com/petedilworth/english-ftbl26)"
 }
 
+# $PWD follows `cd`, but [Environment]::CurrentDirectory - what a raw
+# .NET call like [System.IO.File]::WriteAllText resolves a RELATIVE path
+# against, as opposed to a cmdlet like New-Item or Test-Path, which both
+# follow $PWD correctly - does not reliably track it in Windows
+# PowerShell 5.1. A relative $Out silently wrote under the user's profile
+# directory instead of the repository, and that write failure was then
+# caught by the same try/catch as the network call below and misreported
+# as a dropped connection. Resolving it to an absolute path here removes
+# the ambiguity regardless of which "current directory" anything uses.
+$Out = Join-Path (Get-Location).Path $Out
+
 New-Item -ItemType Directory -Force -Path $Out | Out-Null
 
 function Get-Json($url, $path) {
@@ -67,8 +78,6 @@ function Get-Json($url, $path) {
         try {
             $response = Invoke-WebRequest -Uri $url -Headers $headers `
                 -UseBasicParsing -TimeoutSec 30
-            [System.IO.File]::WriteAllText($path, $response.Content)
-            return "ok"
         } catch {
             $code = 0
             if ($_.Exception.Response) {
@@ -92,7 +101,16 @@ function Get-Json($url, $path) {
                 Write-Host ("    HTTP {0}; waiting {1}s" -f $code, $wait)
             }
             Start-Sleep -Seconds $wait
+            continue
         }
+        # Outside the catch on purpose: a response came back, so writing
+        # it to disk is not a network failure and must not be retried as
+        # one. If this throws - a bad path, a full disk, a file locked by
+        # antivirus - it should stop the run and say so plainly rather
+        # than being absorbed into five identical "connection failed"
+        # lines that had nothing to do with the connection.
+        [System.IO.File]::WriteAllText($path, $response.Content)
+        return "ok"
     }
     return "failed"
 }
