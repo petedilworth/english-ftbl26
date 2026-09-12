@@ -11,7 +11,8 @@
     variable, is never written to a file, and must not be pasted into the
     chat. Register a free one at developer.company-information.service.gov.uk.
 
-    WHAT IT WRITES. One JSON file per query, named <club_id>__<n>.json, in
+    WHAT IT WRITES. One JSON file per query, named
+    <club_id>__<kind><n>.json, in
     the output directory. Re-running skips files that already exist, so an
     interrupted run resumes rather than starting over.
 
@@ -23,7 +24,7 @@
         ./scripts/fetch_company_candidates.ps1
         Compress-Archive -Path ch-json\* -DestinationPath ch-json.zip
 
-    Then attach ch-json.zip. About 660 requests, six to eight minutes.
+    Then attach ch-json.zip. About 1,540 requests, fifteen minutes.
 #>
 
 param(
@@ -118,41 +119,46 @@ function Get-Json($url, $path) {
 $rows = Import-Csv -Path $Targets -Delimiter "`t"
 $done = 0; $skipped = 0; $failed = @()
 $total = $rows.Count
+$api = "https://api.company-information.service.gov.uk"
 
 foreach ($row in $rows) {
-    $terms = $row.terms -split '\|'
     $n = 0
-    foreach ($term in $terms) {
+    foreach ($query in ($row.queries -split '\|')) {
         $n++
+        # Each query is "kind:term". The kind decides the endpoint,
+        # because no one of them finds every club - see the comment on
+        # queries() in scripts/find_club_companies.py.
+        $kind, $term = $query -split ':', 2
         $encoded = [uri]::EscapeDataString($term)
 
-        # The advanced search is the one that matters: its results carry
-        # sic_codes, and SIC 93120 is the strongest signal that a company
-        # is a club rather than something named after one.
-        $path = Join-Path $Out ("{0}__{1}.json" -f $row.club_id, $n)
+        # Cleared first. `continue` inside a PowerShell switch leaves the
+        # switch rather than the enclosing loop, so an unrecognised kind
+        # would otherwise fall through to the PREVIOUS query's $url and
+        # save that response under this query's filename.
+        $url = $null
+        switch ($kind) {
+            # Relevance-ranked. The one that finds a club whose
+            # registered name is nothing like its football name.
+            "plain" { $url = "$api/search/companies?q=$encoded&items_per_page=30" }
+            # Name contains every word given. Alphabetical, so the term
+            # has to be specific enough to fit inside 100 results.
+            "adv"   { $url = "$api/advanced-search/companies?company_name_includes=$encoded&size=100" }
+            # Sport clubs of that name only: 93120 cuts thousands of
+            # companies down to a handful, and carries the SIC codes the
+            # scorer wants anyway.
+            "sic"   { $url = "$api/advanced-search/companies?company_name_includes=$encoded&sic_codes=93120&size=100" }
+            default { Write-Host ("    unknown query kind '{0}' - skipping" -f $kind) }
+        }
+        if (-not $url) { continue }
+
+        $path = Join-Path $Out ("{0}__{1}{2}.json" -f $row.club_id, $kind, $n)
         if (Test-Path $path) {
             $skipped++
-        } else {
-            $url = "https://api.company-information.service.gov.uk/advanced-search/companies?company_name_includes=$encoded&size=100"
-            $state = Get-Json $url $path
-            if ($state -eq "failed") { $failed += "$($row.club_id) advanced '$term'" }
-            Start-Sleep -Milliseconds $DelayMs
+            continue
         }
-
-        # The plain search finds companies whose name does not contain
-        # every word of the club's - only worth one extra call, on the
-        # club's full name.
-        if ($n -eq 1) {
-            $path = Join-Path $Out ("{0}__0.json" -f $row.club_id)
-            if (Test-Path $path) {
-                $skipped++
-            } else {
-                $url = "https://api.company-information.service.gov.uk/search/companies?q=$encoded&items_per_page=30"
-                $state = Get-Json $url $path
-                if ($state -eq "failed") { $failed += "$($row.club_id) search '$term'" }
-                Start-Sleep -Milliseconds $DelayMs
-            }
-        }
+        $state = Get-Json $url $path
+        if ($state -eq "failed") { $failed += "$($row.club_id) $kind '$term'" }
+        Start-Sleep -Milliseconds $DelayMs
     }
     $done++
     if ($done % 20 -eq 0) {

@@ -30,28 +30,59 @@ def company(name, sic=("93120",), status="active", number=None):
 
 # ── what to ask for ────────────────────────────────────────────────────────
 
+def test_the_club_name_is_never_asked_for_unqualified_on_its_own():
+    """
+    The failure of the first real run. "Chelsea" matches 2,772 companies;
+    the advanced search returns them alphabetically and Chelsea Football
+    Club Limited is not in the first 100. So every advanced query carries
+    a football word, and the bare name only ever goes to the
+    relevance-ranked search.
+    """
+    qs = fcc.queries("Chelsea")
+    bare = [q for q in qs if q == "adv:Chelsea"]
+    assert not bare, "an unqualified name_includes query cannot find the club"
+    assert "plain:Chelsea" in qs
+    assert "adv:Chelsea football club" in qs
+    assert "adv:Chelsea fc" in qs
+    assert "sic:Chelsea" in qs
+
+
+def test_both_football_club_and_fc_are_asked_for():
+    """
+    Neither spelling covers both: "The Reading Football Club Limited" and
+    "Burnley FC Holdings Limited" each miss the other's query.
+    """
+    qs = fcc.queries("Burnley")
+    assert "adv:Burnley football club" in qs
+    assert "adv:Burnley fc" in qs
+
+
 def test_the_place_name_is_asked_for_separately():
     """
     A club's registered name is not reliably its football name: Wimbledon
-    file as "The Wimbledon Football Club Limited", so a search for "AFC
-    Wimbledon" alone finds nothing.
+    file as "The Wimbledon Football Club Limited", so asking only about
+    "AFC Wimbledon" finds nothing.
     """
-    terms = fcc.query_terms("AFC Wimbledon")
-    assert terms[0] == "AFC Wimbledon"
-    assert "Wimbledon" in terms
-    assert "wimbledon" in [t.lower() for t in terms]
+    qs = fcc.queries("AFC Wimbledon")
+    assert "plain:AFC Wimbledon" in qs
+    assert "adv:Wimbledon football club" in qs
 
 
-def test_a_one_word_club_is_asked_for_once():
-    assert fcc.query_terms("Marine") == ["Marine"]
+def test_the_hand_named_entity_is_asked_for_by_name():
+    """
+    "Football Ventures (Whites) Limited" is Bolton Wanderers and shares
+    not one word with them. No query built from the club's name can find
+    it, so the recorded name is asked for directly.
+    """
+    qs = fcc.queries("Bolton Wanderers", "Football Ventures (Whites) Limited")
+    assert "plain:Football Ventures (Whites) Limited" in qs
 
 
-def test_the_place_term_drops_only_club_words():
-    """The third term is the place: "united" alone would match a third of
-    the register."""
-    assert fcc.query_terms("Manchester United") == ["Manchester United", "manchester"]
-    assert fcc.query_terms("Wingate & Finchley") == ["Wingate & Finchley",
-                                                     "wingate finchley"]
+def test_a_query_is_not_asked_twice_in_different_case():
+    """A one-word club reduces to its own lower-cased name; the search is
+    case-insensitive, so paying for both would double the run."""
+    qs = fcc.queries("Chelsea")
+    assert len(qs) == len({q.lower() for q in qs})
 
 
 # ── what the scorer must refuse ────────────────────────────────────────────
@@ -194,7 +225,12 @@ def test_the_targets_are_the_clubs_that_need_one():
         "SELECT DISTINCT club_id FROM club_finances")}
     assert playing <= ids
     assert with_accounts <= ids
-    assert all(r["terms"] for r in rows), "a club with nothing to search for"
+    assert all(r["queries"] for r in rows), "a club with nothing to search for"
+    # Every club gets the relevance search and both name spellings; the
+    # bare name alone was what failed on real data.
+    for r in rows:
+        kinds = {q.split(":", 1)[0] for q in r["queries"]}
+        assert {"plain", "adv", "sic"} <= kinds, r["club_id"]
 
 
 def test_the_entity_a_person_already_named_wins():
@@ -230,3 +266,79 @@ def test_the_holding_company_is_not_confused_with_the_club_company():
     ])
     assert result["chosen"]["company_number"] == "22222222"
     assert "read from" not in result["runners_up"][0]["why"]
+
+
+# ── another sport, which is how this scorer failed on real data ────────────
+
+def test_a_rugby_club_is_not_the_football_club():
+    """
+    Middlesbrough Rugby Union Football Club scored 84 and was chosen
+    without review on the first real run. Two signals conspired: SIC
+    93120 is "activities of sport clubs" and names no sport, and a rugby
+    club is constitutionally a "Rugby Football Club", which collected the
+    bonus meant for football.
+    """
+    points, why = fcc.score("Middlesbrough",
+                            company("Middlesbrough Rugby Union Football Club Limited"))
+    assert points == 0
+    assert why == ["names a different sport"]
+
+
+@pytest.mark.parametrize("name", [
+    "Barnsley Gymnastics Club Limited",
+    "Woking Golf Club Limited",
+    "Darlington Cricket and Athletic Club C.I.C.",
+    "Stourbridge Lawn Tennis and Squash Club Limited",
+    "Workington Town Rugby League Football Club,Limited",
+    "Macclesfield Town Basketball Club Community Interest Company",
+    "City of Salisbury Athletics and Running Club Ltd",
+])
+def test_every_other_sport_that_was_chosen_for_real_is_refused(name):
+    """Each of these was a confident match on the first run."""
+    club = name.split()[0]
+    assert fcc.score(club, company(name))[0] == 0
+
+
+def test_athletic_is_still_a_football_word():
+    """
+    Wigan Athletic, Charlton Athletic, Oldham Athletic. Only the plural
+    names the other sport, and refusing the singular would refuse three
+    dozen real clubs.
+    """
+    assert fcc.score("Wigan Athletic",
+                     company("Wigan Athletic A.F.C. Limited"))[0] > 0
+    assert fcc.score("Salisbury City",
+                     company("City of Salisbury Athletics Club Ltd"))[0] == 0
+
+
+def test_a_company_named_only_for_the_place_is_not_a_club():
+    """
+    "Chelsea Limited" matches "Chelsea" exactly and is not a football
+    club. 74 clubs on this site are named for one common English word, so
+    an exact name match cannot stand on its own.
+    """
+    assert fcc.score("Chelsea", company("Chelsea Limited", sic=("70100",)))[0] == 0
+    assert fcc.score("Liverpool", company("Liverpool Limited", sic=()))[0] == 0
+
+
+def test_a_sport_club_named_only_for_the_place_is_reviewable_not_choosable():
+    """
+    It might be the club. Nothing in the name says so, and the SIC code
+    covers every sport, so it goes to a person rather than into the data.
+    """
+    club = {"club_id": "walton-and-hersham-fc", "name": "Walton & Hersham"}
+    result = fcc.rank(club, [company("Walton and Hersham 2019 Limited")])
+    assert result["state"] == "review"
+    assert "nothing in the name says football" in result["chosen"]["why"]
+
+
+def test_the_hand_named_entity_still_wins_without_a_football_word():
+    """
+    Arsenal Holdings, Tottenham Hotspur Limited, Millwall Holdings: a
+    person named these, which outranks any inference from the name.
+    """
+    club = {"club_id": "arsenal-fc", "name": "Arsenal",
+            "known_entity": "Arsenal Holdings Limited"}
+    result = fcc.rank(club, [company("Arsenal Holdings Limited", number="04250459")])
+    assert result["state"] == "chosen"
+    assert result["chosen"]["company_number"] == "04250459"
