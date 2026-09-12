@@ -31,7 +31,7 @@
         ./scripts/fetch_club_accounts.ps1
         Compress-Archive -Path ch-accounts\* -DestinationPath ch-accounts.zip -Force
 
-    178 companies, about 900 requests, ten to fifteen minutes. The
+    178 companies, about 1,300 requests, fifteen to twenty minutes. The
     documents are the bulk of it - expect a few hundred MB on disk and a
     far smaller zip, because iXBRL is XHTML and compresses hard.
 #>
@@ -97,58 +97,92 @@ function Get-Json($url, $path) {
 }
 
 <#
-    The document API answers with a 302 to a pre-signed S3 URL, and S3
-    refuses a request that carries an Authorization header alongside its
-    own signature ("only one auth mechanism allowed"). Invoke-WebRequest
-    follows redirects AND re-sends the headers, so the obvious spelling
-    fails on every document.
+    Fetching one filing takes two requests, and both have a trap in them.
 
-    Hence HttpWebRequest with redirects switched off: take the Location,
-    then fetch it with no credentials at all.
+    FIRST, WHICH FORMAT. The document API does not serve every filing in
+    every format: asking for application/xhtml+xml when a filing was
+    submitted on paper returns 406 Not Acceptable, which is what this
+    script did on every document of its first run. The metadata resource
+    lists what actually exists for that filing, so it is read first and
+    the Accept header is chosen from it - iXBRL where there is iXBRL, PDF
+    where that is all there is.
+
+    SECOND, THE REDIRECT. The content endpoint answers with a 302 to a
+    pre-signed S3 URL, and S3 refuses a request carrying an Authorization
+    header alongside its own signature ("only one auth mechanism
+    allowed"). Invoke-WebRequest follows redirects AND re-sends headers,
+    so the obvious spelling fails there too. Hence HttpWebRequest with
+    redirects switched off, and no credentials on the second leg.
 #>
+function Invoke-Ch($url, $accept) {
+    $req = [System.Net.HttpWebRequest]::Create($url)
+    $req.Method = "GET"
+    $req.Headers.Add("Authorization", $auth)
+    $req.UserAgent = $agent
+    if ($accept) { $req.Accept = $accept }
+    $req.AllowAutoRedirect = $false
+    $req.Timeout = 30000
+    return $req.GetResponse()
+}
+
 function Get-Document($metadataUrl, $stem) {
-    $url = "$metadataUrl/content"
+    # What formats exist for this filing.
+    $formats = @()
     try {
-        $req = [System.Net.HttpWebRequest]::Create($url)
-        $req.Method = "GET"
-        $req.Headers.Add("Authorization", $auth)
-        $req.UserAgent = $agent
-        $req.Accept = "application/xhtml+xml"
-        $req.AllowAutoRedirect = $false
-        $req.Timeout = 30000
-        $res = $req.GetResponse()
+        $res = Invoke-Ch $metadataUrl "application/json"
+        $reader = New-Object System.IO.StreamReader($res.GetResponseStream())
+        $meta = ConvertFrom-Json $reader.ReadToEnd()
+        $reader.Close(); $res.Close()
+        if ($meta.resources) {
+            $formats = @($meta.resources.PSObject.Properties.Name)
+        }
+    } catch {
+        Write-Host ("    metadata request failed: {0}" -f $_.Exception.Message)
+        return $false
+    }
+
+    # iXBRL is tagged and machine-readable; a PDF is a picture of
+    # accounts. Take the first only where it exists.
+    $accept = $null
+    foreach ($candidate in @("application/xhtml+xml", "application/xml", "application/pdf")) {
+        if ($formats -contains $candidate) { $accept = $candidate; break }
+    }
+    if (-not $accept) {
+        Write-Host ("    no usable format ({0})" -f ($formats -join ", "))
+        return $false
+    }
+
+    Start-Sleep -Milliseconds $DelayMs
+    try {
+        $res = Invoke-Ch "$metadataUrl/content" $accept
         $code = [int]$res.StatusCode
         $location = $res.Headers["Location"]
-        $type = $res.ContentType
         $res.Close()
     } catch {
         Write-Host ("    document request failed: {0}" -f $_.Exception.Message)
         return $false
     }
-
-    if ($code -ge 300 -and $code -lt 400 -and $location) {
-        # No headers on this one. The signature in the URL is the auth.
-        try {
-            $signed = Invoke-WebRequest -Uri $location -UseBasicParsing -TimeoutSec 60
-        } catch {
-            Write-Host ("    document download failed: {0}" -f $_.Exception.Message)
-            return $false
-        }
-        $type = $signed.Headers["Content-Type"]
-        $bytes = $signed.Content
-    } else {
+    if ($code -lt 300 -or $code -ge 400 -or -not $location) {
         Write-Host ("    unexpected document response (HTTP {0})" -f $code)
         return $false
     }
 
-    # The extension records what was actually served. iXBRL is XHTML and
-    # carries tagged figures; a PDF is a picture of accounts and does not.
-    $ext = if ($type -match "xhtml|xml|html") { "xhtml" } else { "pdf" }
+    try {
+        # No headers on this one. The signature in the URL is the auth.
+        $signed = Invoke-WebRequest -Uri $location -UseBasicParsing -TimeoutSec 60
+    } catch {
+        Write-Host ("    document download failed: {0}" -f $_.Exception.Message)
+        return $false
+    }
+
+    # The extension records what was actually served, because it is the
+    # finding: a PDF carries no tagged figures and cannot be parsed.
+    $ext = if ($accept -match "xhtml|xml") { "xhtml" } else { "pdf" }
     $path = "$stem.$ext"
-    if ($bytes -is [string]) {
-        [System.IO.File]::WriteAllText($path, $bytes)
+    if ($signed.Content -is [string]) {
+        [System.IO.File]::WriteAllText($path, $signed.Content)
     } else {
-        [System.IO.File]::WriteAllBytes($path, $bytes)
+        [System.IO.File]::WriteAllBytes($path, $signed.Content)
     }
     return $true
 }
