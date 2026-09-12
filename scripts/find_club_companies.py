@@ -88,8 +88,15 @@ NOT_THE_CLUB = re.compile(
 # "athletic" is deliberately absent - Wigan Athletic, Charlton Athletic,
 # Oldham Athletic - while "athletics" is present, which is the running
 # club it is easy to confuse them with.
+#
+# The abbreviations are deliberately absent. RUFC is Rugby Union Football
+# Club and it is also Rotherham United Football Club, whose real company
+# is "Rotherham United Football Club (RUFC) Limited" - banning the letters
+# disqualified the right answer and handed Rotherham the wrong one. A
+# rugby club spells "Rugby" out in its registered name; the ambiguous
+# short forms buy nothing and cost that.
 ANOTHER_SPORT = re.compile(
-    r"\b(rugby|rfc|rufc|arlfc|rfl|gymnastics?|cricket|golf|tennis|squash|"
+    r"\b(rugby|arlfc|gymnastics?|cricket|golf|tennis|squash|"
     r"bowls|bowling|hockey|netball|basketball|athletics|swimming|boxing|"
     r"rowing|sailing|angling|darts|snooker|cycling|motor|car club|"
     r"greyhound|equestrian|badminton|lacrosse|handball|futsal)\b")
@@ -130,6 +137,19 @@ def _legal_tokens(name: str) -> set[str]:
 CLUB_TYPE = re.compile(
     r"\b(fc|f\.c\.?|afc|a\.f\.c\.?|football|club|united|town|city|rovers|"
     r"athletic|wanderers|albion|county|rangers|borough|association)\b")
+
+
+# Tokens that say nothing about WHICH club: the sport, the legal form,
+# the words every club's name shares. Everything else in a company's name
+# that is not in the club's is evidence of a DIFFERENT club - which is how
+# Bromley drew Bromley Cross, and Crawley Town drew Crawley Down Gatwick.
+# Both are real clubs a few miles away sharing a place name, and both were
+# chosen confidently on the strength of that place name alone.
+GENERIC_TOKEN = {
+    "football", "soccer", "fc", "afc", "club", "clubs", "association",
+    "cic", "community", "interest", "sport", "sports", "athletic",
+    "limited", "ltd", "the", "company", "co",
+}
 
 
 def _normalise(name: str) -> str:
@@ -296,11 +316,16 @@ def score(club_name: str, candidate: dict,
 
     points, why = 0, []
 
-    # Before any points: a different sport is not this club. See
-    # ANOTHER_SPORT - SIC 93120 covers every sport, and a rugby club is
-    # named a "Rugby Football Club", so without this the two strongest
-    # signals both fire for the wrong game.
-    if ANOTHER_SPORT.search(lower):
+    # A person having named this exact entity settles it, and is checked
+    # first so that nothing below can overrule it - including the
+    # different-sport rule, which a real club can trip on its own name.
+    named_by_hand = bool(known_entity) and _legal_tokens(known_entity) == _legal_tokens(title)
+
+    # A different sport is not this club. See ANOTHER_SPORT - SIC 93120
+    # covers every sport, and a rugby club is named a "Rugby Football
+    # Club", so without this the two strongest signals both fire for the
+    # wrong game.
+    if ANOTHER_SPORT.search(lower) and not named_by_hand:
         return 0, ["names a different sport"]
 
     if SIC_CLUB in sic:
@@ -335,7 +360,7 @@ def score(club_name: str, candidate: dict,
     club_tokens = _tokens(club_name)
     company_tokens = set(_tokens(title))
 
-    if known_entity and _legal_tokens(known_entity) == _legal_tokens(title):
+    if named_by_hand:
         points += POINTS_KNOWN_ENTITY
         why.append("matches the entity these accounts were read from")
     if club_tokens and set(club_tokens) == company_tokens:
@@ -349,8 +374,24 @@ def score(club_name: str, candidate: dict,
         if place and set(place) <= company_tokens:
             points += POINTS_NAME_PARTIAL
             why.append("the club's place name only")
+            # Never on its own: the word the company drops is the word
+            # that distinguishes the club. "Newport Association Football
+            # Club" is missing the "County" that separates Newport County
+            # from the other Newports, and towns routinely hold two clubs.
+            if not named_by_hand:
+                points = min(points, MIN_CONFIDENT - 1)
         else:
             return 0, ["name does not match"]
+
+    # Words the company has and the club does not. A year in brackets is
+    # a re-incorporation of the same club - "Wolverhampton Wanderers
+    # Football Club (1986) Limited" - and says nothing about identity.
+    if not named_by_hand:
+        extra = {t for t in company_tokens - set(club_tokens)
+                 if t not in GENERIC_TOKEN and not t.isdigit()}
+        if extra:
+            points = min(points, MIN_CONFIDENT - 1)
+            why.append("names something the club does not: " + ", ".join(sorted(extra)))
 
     # A match on the place name alone, or on a club name that IS a place
     # name, is not evidence of a football club: 74 clubs here are named
@@ -416,6 +457,15 @@ def rank(club: dict, candidates: list[dict]) -> dict:
     if best["score"] < MIN_CONFIDENT:
         state = "review"
     elif len(scored) > 1 and margin < MIN_MARGIN:
+        state = "review"
+    elif club.get("known_entity") and "read from" not in best["why"]:
+        # A person read this club's accounts from a named company and the
+        # scorer picked a different one. Both can be defensible - the club
+        # company and the holding company above it both file - but they
+        # report different money, so switching between them mid-series is
+        # the exact corruption finances.py warns about at the top of the
+        # file. A disagreement with a human answer on file is a question,
+        # not a result.
         state = "review"
     return {"state": state, "chosen": best, "margin": margin,
             "runners_up": scored[1:4]}

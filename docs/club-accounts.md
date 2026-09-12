@@ -120,6 +120,28 @@ Charlton, Oldham — while "athletics" does not.
 A row whose best candidate is weak, or whose top two cannot be separated, is
 marked **review** and is not used until it has been looked at.
 
+### What the run produced
+
+251 clubs, 1,900 JSON files, and after scoring:
+
+| | |
+|---|---|
+| confident | 178 |
+| to review | 67 |
+| no candidate found | 6 |
+| **clubs gaining a company that had no accounts at all** | **103** |
+
+Checks that matter more than the counts: all three hand-recorded company
+numbers are reproduced exactly; 91% of the 85 hand-recorded entity *names* are
+landed on, and every disagreement with one is a review row rather than a
+result; no confident match names another sport; and every confident match's
+company name contains every word of the club's.
+
+A query that returns nothing writes no file, which is why 290 of the 1,539
+queries have no output. That is the `fc` spelling not existing for a given
+club, or no sport club of that name carrying SIC 93120 — an empty answer, not
+a failure.
+
 ## Stage 2 — fetch the filings
 
 Written once the mapping is reviewed: the latest two accounts filings per

@@ -342,3 +342,91 @@ def test_the_hand_named_entity_still_wins_without_a_football_word():
     result = fcc.rank(club, [company("Arsenal Holdings Limited", number="04250459")])
     assert result["state"] == "chosen"
     assert result["chosen"]["company_number"] == "04250459"
+
+
+def test_a_club_abbreviating_to_a_rugby_acronym_is_not_refused():
+    """
+    RUFC is Rugby Union Football Club, and it is also Rotherham United
+    Football Club, whose registered company is "Rotherham United Football
+    Club (RUFC) Limited". Banning the letters disqualified the right
+    answer and handed Rotherham the wrong one - a confident wrong match
+    created by the fix for confident wrong matches.
+    """
+    club = {"club_id": "rotherham-united-fc", "name": "Rotherham United",
+            "known_entity": "Rotherham United Football Club (RUFC) Limited"}
+    result = fcc.rank(club, [
+        company("Rotherham United Football Club (RUFC) Limited", number="11111111"),
+        company("Rotherham Town Football Club Ltd", number="22222222"),
+    ])
+    assert result["chosen"]["company_number"] == "11111111"
+
+
+def test_a_hand_named_entity_survives_naming_another_sport():
+    """
+    The person's answer outranks every inference drawn from the name,
+    that rule included.
+    """
+    club = {"club_id": "x-fc", "name": "Someplace",
+            "known_entity": "Someplace Cricket and Football Club Limited"}
+    result = fcc.rank(club, [company("Someplace Cricket and Football Club Limited")])
+    assert result["chosen"] is not None
+    assert result["state"] == "chosen"
+
+
+def test_disagreeing_with_the_recorded_entity_is_a_question_not_a_result():
+    """
+    The club company and the holding company above it both file, and both
+    are defensible answers - but they report different money, so
+    switching between them mid-series corrupts the series. Where a person
+    already named one and the scorer prefers another, a person decides.
+    """
+    club = {"club_id": "sheffield-united-fc", "name": "Sheffield United",
+            "known_entity": "Blades Leisure Limited"}
+    result = fcc.rank(club, [
+        company("The Sheffield United Football Club Limited", number="11111111"),
+    ])
+    assert result["state"] == "review"
+    assert result["chosen"]["company_number"] == "11111111"
+
+
+def test_a_company_that_drops_the_club_s_distinguishing_word_is_reviewed():
+    """
+    "Newport Association Football Club Limited" is missing the "County"
+    that separates Newport County from every other Newport, and English
+    towns routinely hold two clubs. A match on the place alone is a
+    question.
+    """
+    club = {"club_id": "newport-county-fc", "name": "Newport County"}
+    result = fcc.rank(club, [company("Newport Association Football Club Limited")])
+    assert result["state"] == "review"
+
+
+def test_a_neighbouring_club_sharing_a_place_name_is_not_this_club():
+    """
+    Bromley drew Bromley Cross, Crawley Town drew Crawley Down Gatwick -
+    both real clubs a few miles away, both chosen confidently on a shared
+    place name. What the company's name carries and the club's does not
+    is the evidence that it is someone else.
+    """
+    for club_name, other in [("Bromley", "Bromley Cross Football Club"),
+                             ("Crawley Town", "Crawley Down Gatwick Football Club Ltd")]:
+        result = fcc.rank({"club_id": "x", "name": club_name}, [company(other)])
+        assert result["state"] == "review", other
+        assert "names something the club does not" in result["chosen"]["why"]
+
+
+def test_the_words_every_club_shares_are_not_evidence_of_a_different_one():
+    """
+    "Altrincham Association Football Club, Limited" and "Wolverhampton
+    Wanderers Football Club (1986) Limited" are those clubs. The sport,
+    the legal form and a re-incorporation year say nothing about which
+    club it is.
+    """
+    for club_name, entity in [
+        ("Altrincham", "Altrincham Association Football Club, Limited"),
+        ("Wolverhampton Wanderers",
+         "Wolverhampton Wanderers Football Club (1986) Limited"),
+        ("Solihull Moors", "Solihull Moors Football Club CIC"),
+    ]:
+        result = fcc.rank({"club_id": "x", "name": club_name}, [company(entity)])
+        assert result["state"] == "chosen", entity
