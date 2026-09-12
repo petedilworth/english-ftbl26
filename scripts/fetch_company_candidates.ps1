@@ -36,6 +36,15 @@ param(
 
 $ErrorActionPreference = "Stop"
 
+# Windows PowerShell 5.1 (as opposed to PowerShell 7+) defaults its HTTPS
+# client to an older TLS version on many machines and never negotiates up
+# to TLS 1.2 on its own. Companies House requires TLS 1.2, and the failure
+# this produces is not an HTTP error - the connection never completes, so
+# Invoke-WebRequest throws with no response object at all, which reads
+# below as "HTTP 0" on every attempt. Forcing it here means the person
+# running this never has to diagnose that by hand.
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+
 if (-not $env:CH_API_KEY) {
     Write-Error "Set CH_API_KEY first:  `$env:CH_API_KEY = 'your-key'"
     exit 1
@@ -70,9 +79,18 @@ function Get-Json($url, $path) {
                 exit 1
             }
             if ($code -eq 404) { return "missing" }
-            # 429 and the 5xx family: back off and try again.
+            # 429 and the 5xx family: back off and try again. Code 0 means
+            # the connection itself never completed - no HTTP response at
+            # all - which is not something retrying fixes on its own, so
+            # the underlying error is shown once rather than just "HTTP 0"
+            # five times in a row.
             $wait = [math]::Pow(2, $attempt)
-            Write-Host ("    HTTP {0}; waiting {1}s" -f $code, $wait)
+            if ($code -eq 0) {
+                Write-Host ("    connection failed ({0}); waiting {1}s" -f `
+                    $_.Exception.Message, $wait)
+            } else {
+                Write-Host ("    HTTP {0}; waiting {1}s" -f $code, $wait)
+            }
             Start-Sleep -Seconds $wait
         }
     }
