@@ -1,4 +1,13 @@
 """
+The original Monday digest, and the facts layer the editions reuse.
+
+Superseded as an email by the Friday preview (src/editions/preview.py,
+run via `python src/edition.py preview`); no workflow calls this any
+more. club_context, head_to_head and storyline_score are the facts layer
+every edition builds on and live here until the reviews land, when they
+move to editions/facts.py. The narrative functions have already moved to
+editions/phrasing.py and are re-exported below.
+
 Build and send the weekly fixture-preview digest.
 
 Selects the most interesting upcoming fixtures (storyline scoring), writes
@@ -219,126 +228,9 @@ def storyline_score(fixture: dict, home: dict | None, away: dict | None,
 
 
 # ── Narrative ───────────────────────────────────────────────────────────────
-
-def _level_sentence(ctx: dict) -> str | None:
-    """
-    What kind of club this is, and how far they currently sit from it.
-
-    Composed from the structured fields rather than natural_level_label,
-    which is display copy and doesn't decline into a sentence.
-    """
-    tier, kind = ctx.get("natural_level_tier"), ctx.get("natural_level_kind")
-    if not tier or not kind or kind == "insufficient" or tier == level_mod.OUTSIDE:
-        return None
-
-    name = ctx["name"]
-    here = level_mod.the(tier)
-
-    if kind == "ever-present":
-        clause = f"{name} have never played outside {here}"
-    elif kind == "established":
-        pct = round((ctx.get("natural_level_share") or 0) * 100)
-        clause = (f"{name} belong in {here} — {pct}% of their "
-                  f"{ctx.get('natural_level_seasons')} recorded seasons")
-    elif kind == "yo-yo" and ctx.get("natural_level_second_tier"):
-        a, b = sorted([tier, ctx["natural_level_second_tier"]])
-        clause = f"{name} live between {level_mod.the(a)} and {level_mod.the(b)}"
-    elif kind == "broad":
-        clause = (f"{name}'s record runs the length of the pyramid, but its "
-                  f"centre of gravity is {here}")
-    else:
-        clause = f"{name} are, on the balance of their record, a {level_mod.bucket_name(tier)} club"
-
-    # The two directions are not mirror images. Falling below your level is
-    # usually structural, so the deficit is the story; climbing above it is
-    # usually a moment, so anchor it to when they were last this high
-    # rather than implying the club is overachieving on borrowed time.
-    gap = ctx.get("natural_level_gap")
-    if gap and gap > 0:
-        clause += f"; they are {gap} division{'s' if gap > 1 else ''} below that now"
-    elif gap and gap < 0:
-        up = abs(gap)
-        divisions = f"{up} division{'s' if up > 1 else ''} above that"
-        since, streak = ctx.get("highest_since"), ctx.get("streak") or 0
-        if streak >= 3:
-            # Settled at the higher level - the spell is the story, not the
-            # single season, and "highest since last year" says nothing.
-            clause += f"; they are {streak} seasons into a spell {divisions}"
-        elif since and ctx["last_season"] - since >= 2:
-            clause += f"; this season is their highest since {since}"
-        elif since:
-            clause += f"; they are {divisions} this season"
-        else:
-            clause += "; this season is the highest in their record"
-    return clause
-
-
-def _history_sentence(ctx: dict) -> str:
-    name = ctx["name"]
-    bits = []
-    level_clause = _level_sentence(ctx)
-    if level_clause:
-        bits.append(level_clause)
-    elif ctx["highest_tier"] == 1 and ctx["tier"] >= 3:
-        last = ctx["last_tier1_season"]
-        bits.append(
-            f"{name} are a fallen giant — {ctx['seasons_in_tier1']} top-flight "
-            f"season{'s' if ctx['seasons_in_tier1'] != 1 else ''}, the last in {last}, "
-            f"now {ctx['tier'] - 1} divisions below"
-        )
-    elif ctx["yo_yo"] >= 0.25:
-        promos, relgs = ctx["promotions"], ctx["relegations"]
-        bits.append(
-            f"{name} are a classic yo-yo club — {promos} "
-            f"promotion{'s' if promos != 1 else ''} and {relgs} "
-            f"relegation{'s' if relgs != 1 else ''} since {ctx['first_season']}"
-        )
-    elif ctx["streak"] >= 10:
-        bits.append(
-            f"{name} are furniture at this level — {ctx['streak']} consecutive "
-            f"seasons and counting"
-        )
-    else:
-        span = ctx["highest_tier"] != ctx["lowest_tier"]
-        range_txt = (
-            f"between tiers {ctx['highest_tier']} and {ctx['lowest_tier']}"
-            if span else f"entirely at tier {ctx['highest_tier']}"
-        )
-        bits.append(
-            f"{name} have spent their {ctx['last_season'] - ctx['first_season'] + 1} "
-            f"recorded seasons {range_txt}"
-        )
-    if ctx["position"]:
-        form = f", form {ctx['form']}" if ctx["form"] else ""
-        bits.append(
-            f"they sit {_ordinal(ctx['position'])} with {ctx['points']} points "
-            f"from {ctx['played']} games{form}"
-        )
-    return "; ".join(bits) + "."
-
-
-def narrative(fixture: dict, home: dict | None, away: dict | None,
-              h2h: dict | None) -> str:
-    division = fixture["division_name"]
-    # "the Premier League" / "the Championship", but bare "League One" / "League Two"
-    division_phrase = division if division.startswith("League") else f"the {division}"
-    parts = []
-    parts.append(
-        f"{fixture['home_name']} host {fixture['away_name']} in "
-        f"{division_phrase} on {fixture['date'].strftime('%A %d %B')}."
-    )
-    for ctx in (home, away):
-        if ctx:
-            parts.append(_history_sentence(ctx))
-    if h2h and home and away:
-        first = h2h.get("first_season")
-        since = f" since {first - 1}/{first % 100:02d}" if first else ""
-        parts.append(
-            f"They have met {h2h['total']} times in league play{since}: "
-            f"{home['name']} {h2h['a_wins']} wins, {away['name']} {h2h['b_wins']}, "
-            f"{h2h['draws']} drawn."
-        )
-    return " ".join(parts)
+# The sentence functions moved to editions/phrasing.py so the words live in
+# one place. Re-exported here for the tests and the legacy entry point.
+from editions.phrasing import _level_sentence, _history_sentence, narrative  # noqa: E402,F401
 
 
 # ── Rendering ───────────────────────────────────────────────────────────────

@@ -17,24 +17,44 @@ Pages: home (current season snapshot) · one page per season · one page per div
 python src/site_build.py && python -m http.server -d site 8000
 ```
 
-## Weekly digest (Phase 2)
+## The editions (Phase 2)
 
-Every Monday a GitHub Actions workflow (`.github/workflows/weekly-digest.yml`):
-1. Refreshes the current season's results and rebuilds standings/trajectory
-2. Fetches the coming week's fixtures from football-data.co.uk
-3. Picks the most interesting matches (storyline scoring: fallen giants, yo-yo clubs, top-of-table clashes, followed clubs) and writes a narrative + stats preview for each, with an embedded two-club position-history chart and head-to-head record since 1993
-4. Emails the digest via [Resend](https://resend.com) and commits the updated `england.db` back to the repo
+Five emails a week, one reader, all built from the same database. The
+design is in `docs/editions.md`, the voice in `docs/voice.md`. Built so
+far: the **Friday preview**. The Monday and Tuesday reviews, Wednesday
+catchment, Thursday finance and the monthly picker audit follow.
+
+Two workflows:
+- `.github/workflows/refresh.yml` — every morning, refreshes the current
+  season's results, rebuilds standings and trajectory, commits `england.db`.
+- `.github/workflows/editions.yml` — every weekday at 07:17 UTC, runs
+  `python src/edition.py auto`. The runner looks up which edition today is
+  (`WEEKDAY_EDITIONS` in `src/editions/registry.py`) and builds it, or
+  exits if none is scheduled. Sends via [Resend](https://resend.com),
+  archives the email under `content/digests/<edition>/<date>/` and commits
+  it; the site's archive page picks it up on the next deploy.
+
+Every edition passes the same gates: over 90 KB of HTML fails the build
+(Gmail clips at ~102 KB), a date that already carries `sent.json` is not
+sent again without `--force`, and the Friday preview writes `claims.json` —
+what it expected, with the table frozen — for the reviews to answer.
 
 ### One-time setup
 1. Add three repository secrets (Settings → Secrets and variables → Actions):
-   `RESEND_API_KEY`, `EMAIL_TO`, `EMAIL_FROM` (same values as your other Resend project)
-2. Run the workflow manually once with **full_rebuild = true** (Actions tab → Weekly Digest → Run workflow) to build and commit the database
-3. Optionally set a `FOLLOWED_CLUBS` env var (comma-separated club_id slugs) in the workflow, or edit `FOLLOWED_CLUBS` in `src/digest.py` — those clubs are always featured
+   `RESEND_API_KEY`, `EMAIL_TO`, `EMAIL_FROM`
+2. Run the **Refresh** workflow manually once with **full_rebuild = true** to
+   build and commit the database
+3. Optionally set a `FOLLOWED_CLUBS` env var (comma-separated club_id slugs)
+   in `editions.yml`, or edit `FOLLOWED_CLUBS` in `src/digest.py` — those
+   clubs are always featured
 
 ### Local preview
 ```bash
-python src/digest.py --dry-run   # writes preview/digest_preview.html, sends nothing
+python src/edition.py preview --dry-run          # writes preview/preview/, sends nothing
+python src/edition.py preview --dry-run --date 2026-09-04 --fixtures-file fixtures.csv
 ```
+The second form reads fixtures from a CSV in football-data.co.uk's
+`fixtures.csv` layout instead of the network.
 
 ## Phase 1 — the database
 

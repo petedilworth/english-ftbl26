@@ -1,0 +1,92 @@
+name: Editions
+
+# One workflow for every edition. On the schedule it runs `auto`, and the
+# runner (src/editions/runner.py) looks up which edition today is - or
+# exits quietly if none is. Adding an edition to WEEKDAY_EDITIONS in
+# src/editions/registry.py is what schedules it; nothing here changes.
+
+on:
+  schedule:
+    - cron: '17 7 * * 1-5'   # weekdays ~07:17 UTC, after the 05:30 Refresh
+  workflow_dispatch:
+    inputs:
+      edition:
+        description: 'Which edition to build'
+        type: choice
+        options: [auto, preview]
+        default: auto
+      date:
+        description: "Build for this date instead of today (ISO, e.g. 2026-09-04)"
+        type: string
+        default: ''
+      dry_run:
+        description: 'Build it, upload the result, send nothing'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+# Same queue as Refresh - see the note there.
+concurrency:
+  group: england-db
+  cancel-in-progress: false
+
+env:
+  SITE_URL: https://petedilworth.github.io/english-ftbl26
+
+jobs:
+  edition:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build the edition
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+        run: |
+          ARGS="${{ inputs.edition || 'auto' }}"
+          if [ -n "${{ inputs.date }}" ]; then
+            ARGS="$ARGS --date ${{ inputs.date }}"
+          fi
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            ARGS="$ARGS --dry-run"
+          fi
+          echo "python src/edition.py $ARGS"
+          python src/edition.py $ARGS
+
+      - name: Upload preview (dry run)
+        if: ${{ inputs.dry_run == true }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: edition-preview
+          path: preview/
+          if-no-files-found: ignore
+
+      - name: Commit the archive
+        if: ${{ inputs.dry_run != true }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add content/digests
+          git commit -m "Archive the ${{ inputs.edition || 'scheduled' }} edition" || exit 0
+
+          for attempt in 1 2 3 4 5; do
+            if git push; then
+              exit 0
+            fi
+            echo "Push rejected (attempt $attempt) - rebasing onto latest main and retrying"
+            git fetch origin main
+            git rebase origin/main
+          done
+          echo "::error::Could not push after 5 attempts"
+          exit 1

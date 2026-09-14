@@ -1,0 +1,10 @@
+# Dates and clubs that force a straight tone in every edition that
+# mentions them. See docs/voice.md, "Suppression". Starts empty; add
+# entries as events arise. Format:
+#
+# - date: 2026-04-15        # ISO date; the anniversary applies every year
+#   clubs: [liverpool-fc]   # club_id slugs; omit for a date that applies to all
+#   note: what this is       # for the maintainer, never rendered
+#
+# - clubs: [some-club-fc]    # no date: the club is straight until removed
+#   note: why

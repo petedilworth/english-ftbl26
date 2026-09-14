@@ -11,6 +11,8 @@ present. Links are relative so the site works at any base path
 """
 
 import argparse
+import datetime
+import json
 import logging
 import math
 import shutil
@@ -4946,23 +4948,57 @@ class SiteBuilder:
 
     # ── Digest archive ────────────────────────────────────────────────────
 
+    # One stream per edition type under content/digests/<type>/<date>/.
+    # Display name and strapline for the archive index; an edition type
+    # not listed here still renders, under its slug.
+    EDITION_LABELS = {
+        "preview": ("Friday preview", "The week ahead, every Friday"),
+        "review-top": ("Monday review", "Tiers 1 and 2, the weekend just played"),
+        "review-lower": ("Tuesday review", "Tiers 3 to 5, and the previous midweek"),
+        "catchment": ("Wednesday catchment", "Who each club is fighting for"),
+        "finance": ("Thursday finance", "The accounts, read properly"),
+        "audit": ("Picker audit", "How the match-selection scorer did"),
+    }
+
     def build_digest_archive(self) -> None:
         archive_src = PROJECT_ROOT / "content" / "digests"
-        entries = []
+        groups = []
         if archive_src.exists():
-            for item in sorted(archive_src.iterdir(), reverse=True):
-                if item.is_dir() and (item / "index.html").exists():
-                    shutil.copytree(item, self.out / "digest" / item.name)
-                    entries.append({"slug": item.name, "name": item.name,
-                                    "sub": "Weekly preview"})
+            for stream in sorted(archive_src.iterdir()):
+                if not stream.is_dir():
+                    continue
+                entries = []
+                for item in sorted(stream.iterdir(), reverse=True):
+                    if not (item.is_dir() and (item / "index.html").exists()):
+                        continue
+                    # sent.json carries the mail provider's message id;
+                    # nothing on the site needs it.
+                    shutil.copytree(item, self.out / "digest" / stream.name / item.name,
+                                    ignore=shutil.ignore_patterns("sent.json"))
+                    sub = ""
+                    claims = item / "claims.json"
+                    if claims.exists():
+                        try:
+                            sub = json.loads(claims.read_text(encoding="utf-8")).get("subject", "")
+                        except (ValueError, OSError):
+                            sub = ""
+                    try:
+                        name = datetime.date.fromisoformat(item.name).strftime("%d %B %Y")
+                    except ValueError:
+                        name = item.name
+                    entries.append({"path": f"digest/{stream.name}/{item.name}/index.html",
+                                    "name": name, "sub": sub})
+                if entries:
+                    title, strap = self.EDITION_LABELS.get(
+                        stream.name, (stream.name.replace("-", " ").title(), ""))
+                    groups.append({"title": title, "sub": strap, "entries": entries})
+        if not groups:
+            groups = [{"title": "Nothing archived yet", "sub": "",
+                       "entries": [{"path": "digest/index.html", "name": "No editions yet",
+                                    "sub": "They appear here after each send"}]}]
         self.render(
-            "insights_index.html", self.out / "digest" / "index.html", 1,
-            title="Digest archive",
-            entries=[
-                {"slug": e["slug"], "name": e["name"], "sub": e["sub"]}
-                for e in entries
-            ] or [{"slug": ".", "name": "No digests archived yet",
-                   "sub": "They appear here after each Monday email"}],
+            "digest_index.html", self.out / "digest" / "index.html", 1,
+            title="Edition archive", groups=groups,
         )
 
     def build(self) -> None:

@@ -2,7 +2,7 @@ name: Deploy Site
 
 on:
   schedule:
-    - cron: '45 11 * * 1'   # Mondays ~11:45 UTC — fallback in case the workflow_run trigger below is ever missed
+    - cron: '45 8 * * *'    # daily ~08:45 UTC — fallback in case the workflow_run trigger below is ever missed
   push:
     branches: [main]
     paths:
@@ -13,11 +13,13 @@ on:
       - 'club_master.csv'
       - 'data/db/england.db'
   workflow_run:
-    # Commits made by the Weekly Digest workflow use the default GITHUB_TOKEN,
-    # and pushes made with that token do NOT trigger the `push` event above
-    # (GitHub's built-in loop-prevention). workflow_run isn't subject to that
-    # restriction, so this is what actually catches the digest's DB update.
-    workflows: ['Weekly Digest']
+    # Commits made by the Refresh and Editions workflows use the default
+    # GITHUB_TOKEN, and pushes made with that token do NOT trigger the
+    # `push` event above (GitHub's built-in loop-prevention). workflow_run
+    # isn't subject to that restriction, so this is what actually catches
+    # the daily DB update and each edition's archive commit. A workflow
+    # that commits and is not listed here leaves the site stale.
+    workflows: ['Refresh', 'Editions']
     types: [completed]
   workflow_dispatch:
 

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Edition archive</h1>
+<p class="subtitle">Every email, as sent. One stream per edition.</p>
+{% for group in groups %}
+<h2>{{ group.title }}</h2>
+{% if group.sub %}<p class="group-sub">{{ group.sub }}</p>{% endif %}
+<div class="tile-grid">
+  {% for e in group.entries %}
+  <a class="tile" href="{{ root }}/{{ e.path }}">
+    <span class="tile-title">{{ e.name }}</span><br>
+    <span class="tile-sub">{{ e.sub }}</span>
+  </a>
+  {% endfor %}
+</div>
+{% endfor %}
+{% endblock %}

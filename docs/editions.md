@@ -5,8 +5,9 @@ This is the record of every decision made in planning, the review of
 whether they hold together, and the build order. Amend it when a decision
 changes; do not let the chat history be the source of truth.
 
-Status: **planned, not built.** The current `src/digest.py` is the single
-Monday preview this replaces.
+Status: **framework and Friday preview built** (steps 0–2 below); the
+reviews and the feature editions are not. `src/digest.py` is the
+Monday preview this replaces; its facts functions are reused.
 
 ## 1. Schedule
 

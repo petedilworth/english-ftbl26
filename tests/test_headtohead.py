@@ -253,7 +253,7 @@ def test_the_digest_does_not_hardcode_a_season():
     It said "in league play since 1993" over matches starting in 1958/59,
     and would have gone on saying it however far back the record grew.
     """
-    source = (PROJECT_ROOT / "src" / "digest.py").read_text()
+    source = (PROJECT_ROOT / "src" / "editions" / "phrasing.py").read_text()
     line = next(l for l in source.splitlines() if "in league play" in l)
     assert "1993" not in line
     assert "since" not in line or "{since}" in line
