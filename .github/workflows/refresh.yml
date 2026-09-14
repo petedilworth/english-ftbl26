@@ -1,0 +1,70 @@
+name: Refresh
+
+# Pulls the current season's results and rebuilds standings and the
+# trajectory table, then commits england.db. Runs every morning before
+# any edition sends (Editions is at 07:17 UTC), so each email reads a
+# database that is at most a day old.
+
+on:
+  schedule:
+    - cron: '30 5 * * *'   # daily ~05:30 UTC (GitHub cron is best-effort)
+  workflow_dispatch:
+    inputs:
+      full_rebuild:
+        description: 'Rebuild the entire database from 1993/94 (first run, or repair)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+# Shared with Editions: everything that commits to the repo waits its
+# turn in the same queue, so a refresh and a send never both try to push
+# from the same base commit.
+concurrency:
+  group: england-db
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Update database
+        run: |
+          if [ "${{ inputs.full_rebuild }}" = "true" ]; then
+            echo "Full rebuild: downloading all seasons"
+            python src/pipeline.py --force-download
+          else
+            CUR=$(python -c "import datetime as d; t=d.date.today(); print(t.year+1 if t.month>=7 else t.year)")
+            echo "Daily refresh: season ending $CUR"
+            python src/pipeline.py --season-start "$CUR" --season-end "$CUR" --force-download
+          fi
+
+      - name: Commit updated database
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/db/england.db
+          git commit -m "Refresh england.db (daily run)" || exit 0
+
+          # Belt-and-braces alongside the concurrency group: retry with a
+          # rebase if main moved under us between checkout and push.
+          for attempt in 1 2 3 4 5; do
+            if git push; then
+              exit 0
+            fi
+            echo "Push rejected (attempt $attempt) - rebasing onto latest main and retrying"
+            git fetch origin main
+            git rebase origin/main
+          done
+          echo "::error::Could not push after 5 attempts"
+          exit 1

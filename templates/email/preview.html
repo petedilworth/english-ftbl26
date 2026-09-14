@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% macro club(name, id) -%}
+{% if id %}<a href="{{ id | club_url }}" style="color:#1a1a1a">{{ name }}</a>{% else %}{{ name }}{% endif %}
+{%- endmacro %}
+{% macro records(item) -%}
+<table cellpadding="0" cellspacing="0" style="font-size:12px;margin:4px 0"><tr>
+{% for ctx in (item.home, item.away) if ctx and ctx.recent_seasons %}
+<td style="vertical-align:top;padding-right:18px">
+<table cellpadding="3" cellspacing="0" style="border-collapse:collapse;font-size:12px">
+<tr style="text-align:left"><th>Season</th><th>Division</th><th>Pos</th><th>Pts</th><th></th></tr>
+{% for y, div, pos, pts, st in ctx.recent_seasons %}
+<tr><td>{{ y - 1 }}/{{ "%02d" | format(y % 100) }}</td><td>{{ div }}</td><td>{{ pos | ordinal }}</td><td>{{ pts }}</td><td style="color:#666">{{ st if st != "Stayed" else "" }}</td></tr>
+{% endfor %}
+</table></td>
+{% endfor %}
+</tr></table>
+{%- endmacro %}
+{% block content %}
+<h1 style="font-size:22px;margin-bottom:2px">The Week Ahead</h1>
+<p style="color:#555;margin-top:0">
+{% if thin %}{{ thin }}{% else %}{{ fixture_count }} fixtures across {{ division_count }} division{{ "s" if division_count != 1 }}, week of {{ week_of.strftime("%d %B %Y") }}.{% endif %}
+</p>
+
+{% if midweek %}
+<h2 style="font-size:16px;border-bottom:2px solid #1a1a1a;margin-bottom:4px">Midweek</h2>
+{% for s in midweek %}
+<h4 style="margin:8px 0 2px">{{ s.division_name }}</h4>
+<table cellpadding="1" cellspacing="0" style="font-size:13px;border-collapse:collapse">
+{% for r in s.results %}
+<tr><td style="color:#888;padding-right:8px">{{ r.date.strftime("%a") }}</td><td style="padding-right:6px">{{ r.home }}</td><td style="padding-right:6px"><b>{{ r.hg }}–{{ r.ag }}</b></td><td>{{ r.away }}</td></tr>
+{% endfor %}
+</table>
+{% endfor %}
+{% endif %}
+
+{% for s in sections %}
+<h2 style="font-size:18px;border-bottom:2px solid #1a1a1a;margin:22px 0 6px">{{ s.division_name }}</h2>
+
+{% for i in s.long %}
+{% set f = i.fixture %}
+<h3 style="font-size:15px;margin:14px 0 2px">{{ club(f.home_name, f.home_id) }} v {{ club(f.away_name, f.away_id) }}
+<span style="color:#888;font-weight:normal">{{ f.date.strftime("%a %d %b") }}{% if i.tag_label %} · {{ i.tag_label }}{% endif %}</span></h3>
+<p style="margin:4px 0">{{ i.story }}</p>
+{% if i.cid %}<img src="cid:{{ i.cid }}" alt="Position history" style="max-width:100%;margin:4px 0">{% endif %}
+{{ records(i) }}
+{% endfor %}
+
+{% for i in s.medium %}
+{% set f = i.fixture %}
+<p style="margin:10px 0 0"><b>{{ club(f.home_name, f.home_id) }} v {{ club(f.away_name, f.away_id) }}</b>
+<span style="color:#888">{{ f.date.strftime("%a %d %b") }}{% if i.tag_label %} · {{ i.tag_label }}{% endif %}</span><br>
+{{ i.blurb }}</p>
+{% endfor %}
+
+{% if s.rest %}
+<table cellpadding="1" cellspacing="0" style="font-size:13px;border-collapse:collapse;margin-top:10px">
+{% for i in s.rest %}
+{% set f = i.fixture %}
+<tr><td style="color:#888;padding-right:8px;white-space:nowrap">{{ f.date.strftime("%a %d") }}</td><td>{{ f.home_name }} v {{ f.away_name }}</td><td style="color:#666;padding-left:10px">{{ i.tag_label }}</td></tr>
+{% endfor %}
+</table>
+{% endif %}
+{% endfor %}
+{% endblock %}

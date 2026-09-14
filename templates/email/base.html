@@ -1,0 +1,12 @@
+{# The shell every edition shares. Inline styles only: email clients strip
+   <style> blocks unevenly, and Gmail resets table fonts, so the wrapper
+   and each table carry their own. Keep per-row markup bare; the size
+   limit in editions/config.py is enforced on the whole thing. #}
+<div style="font-family:Georgia,serif;max-width:680px;margin:auto;color:#1a1a1a;font-size:14px;line-height:1.5">
+{% block content %}{% endblock %}
+<p style="color:#999;font-size:11px;margin-top:24px">
+  Built from the English football database, tiers 1–5 from 1958/59.
+  Results from football-data.co.uk.
+  {% if archive_url %}<a href="{{ archive_url }}" style="color:#999">Archived copy</a>.{% endif %}
+</p>
+</div>
