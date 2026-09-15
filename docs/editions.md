@@ -5,8 +5,9 @@ This is the record of every decision made in planning, the review of
 whether they hold together, and the build order. Amend it when a decision
 changes; do not let the chat history be the source of truth.
 
-Status: **framework and Friday preview built** (steps 0–2 below); the
-reviews and the feature editions are not. `src/digest.py` is the
+Status: **framework, Friday preview and the refresh-side records built**
+(steps 0–2 below, and the data for step 3); the reviews and the feature
+editions are not. `src/digest.py` is the
 Monday preview this replaces; its facts functions are reused.
 
 ## 1. Schedule
@@ -149,8 +150,13 @@ Stored under `content/digests/preview/<date>/claims.json`.
   claims and enforces size identically for all five.
 - Email templates in `templates/email/` rendered with Jinja2 (already a
   dependency; `digest.py` concatenates strings today).
-- Derived tables written by the refresh, not computed at send time:
-  `standings_snapshot`, `club_streak_records`, `result_bands`.
+- Derived tables written by the refresh, not computed at send time.
+  Built, in `src/records.py`: `club_streak_records` (record and live run
+  per club and kind; a defunct club's "live" run is years old, so
+  consumers filter on `current_last_date`) and `result_bands` (the
+  latest season's results banded against the club's own past: margin,
+  opponent, streak, start). The pre-match table snapshot lives in each
+  preview's `claims.json` rather than a table.
 - **One workflow, `editions.yml`**, five cron lines; the edition is
   derived from the weekday or passed as a manual input. The refresh
   workflow triggers it via `workflow_run` so they never race.
