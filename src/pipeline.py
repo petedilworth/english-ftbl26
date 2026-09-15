@@ -40,6 +40,7 @@ import entities
 import finances
 import historical
 import status
+import records
 import trajectory
 
 PROJECT_ROOT = Path(__file__).parent.parent
@@ -1142,6 +1143,8 @@ def run(
     _flag_unreliable_tier5(conn)
     catchment.rebuild_club_catchment(conn)
     trajectory.rebuild_trajectory(conn)
+    # After trajectory: the reviews read both. See records.py.
+    records.rebuild_records(conn)
 
     crosscheck.run(conn, raw_dir)
 
