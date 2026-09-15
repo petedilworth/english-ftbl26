@@ -1,11 +1,14 @@
 """Which editions exist, and which day each one sends."""
 
 from editions.preview import PreviewEdition
+from editions.review import ReviewLowerEdition, ReviewTopEdition
 
 # Slug -> class. The slug is also the archive folder, the template name
 # and the CLI argument.
 EDITIONS = {
     PreviewEdition.name: PreviewEdition,
+    ReviewTopEdition.name: ReviewTopEdition,
+    ReviewLowerEdition.name: ReviewLowerEdition,
 }
 
 # ISO weekday (Mon=1) -> edition that sends that day. Editions that are
@@ -13,5 +16,7 @@ EDITIONS = {
 # and the runner consults this, so adding an edition here is what
 # schedules it.
 WEEKDAY_EDITIONS = {
+    1: "review-top",
+    2: "review-lower",
     5: "preview",
 }

@@ -16,6 +16,10 @@ class EditionOutput:
     # The claims ledger: what this edition expected, with the table
     # snapshot the reviews need to say what happened. JSON-serializable.
     claims: list[dict] = field(default_factory=list)
+    # The table as it stood when this edition was built, every club in
+    # scope, so a later edition can say who moved. Written into
+    # claims.json under "table".
+    table: dict[str, dict] | None = None
     # Why the edition is short, when it is. Rendered as a plain line;
     # a thin week sends anyway and says so.
     thin: str | None = None

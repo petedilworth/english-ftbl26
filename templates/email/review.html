@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% macro move(n) -%}
+{% if n is not none and n > 0 %}<span style="color:#2a7">↑{{ n }}</span>{% elif n is not none and n < 0 %}<span style="color:#c33">↓{{ -n }}</span>{% endif %}
+{%- endmacro %}
+{% block content %}
+<h1 style="font-size:22px;margin-bottom:2px">The Weekend Reviewed</h1>
+<p style="color:#555;margin-top:0">{{ label }}, {{ start.strftime("%d %B") }} to {{ end.strftime("%d %B %Y") }}.
+{% if thin %}{{ thin }}{% else %}{{ result_count }} results.{% endif %}
+{% if preview_url %}<a href="{{ preview_url }}" style="color:#666">Friday's preview</a>.{% endif %}</p>
+
+{% if reckoning %}
+<h2 style="font-size:16px;border-bottom:2px solid #1a1a1a;margin-bottom:4px">Friday's picks</h2>
+{% for r in reckoning %}
+<p style="margin:6px 0">{{ r.text }}</p>
+{% endfor %}
+{% endif %}
+
+{% if history %}
+<h2 style="font-size:16px;border-bottom:2px solid #1a1a1a;margin:18px 0 4px">Results that moved history</h2>
+{% for r in history %}
+<p style="margin:8px 0 2px"><b>{{ r.home }} {{ r.hg }}–{{ r.ag }} {{ r.away }}</b>
+<span style="color:#888">{{ r.division_name }}, {{ r.date.strftime("%a %d %b") }}</span><br>
+{{ r.prose | join(" ") }}</p>
+{% if r.cid %}<img src="cid:{{ r.cid }}" alt="Position history" style="max-width:100%;margin:4px 0">{% endif %}
+{% endfor %}
+{% endif %}
+
+{% for s in sections %}
+<h2 style="font-size:18px;border-bottom:2px solid #1a1a1a;margin:22px 0 6px">{{ s.division_name }}</h2>
+{% if s.results %}
+<table cellpadding="1" cellspacing="0" style="font-size:13px;border-collapse:collapse">
+{% for r in s.results %}
+<tr><td style="color:#888;padding-right:8px;white-space:nowrap">{{ r.date.strftime("%a %d") }}</td>
+<td style="text-align:right">{{ r.home }}</td><td style="padding:0 6px"><b>{{ r.hg }}–{{ r.ag }}</b></td><td>{{ r.away }}</td>
+<td style="padding-left:8px;white-space:nowrap">{{ move(r.home_move) }} {{ move(r.away_move) }}</td>
+<td style="color:#666;padding-left:10px">{{ r.tag }}</td></tr>
+{% endfor %}
+</table>
+{% else %}
+<p style="color:#666">No results on file.</p>
+{% endif %}
+{% if s.alt %}
+<h4 style="margin:12px 0 2px">{{ alt_title }}</h4>
+<table cellpadding="1" cellspacing="0" style="font-size:12px;border-collapse:collapse">
+<tr style="color:#888;text-align:right"><th></th><th style="text-align:left"></th><th>P</th><th>W</th><th>D</th><th>L</th><th>GD</th><th>Pts</th></tr>
+{% for t in s.alt %}
+<tr style="text-align:right"><td style="color:#888">{{ t.position }}</td><td style="text-align:left;padding-right:8px">{{ t.name }}</td><td>{{ t.played }}</td><td>{{ t.won }}</td><td>{{ t.drawn }}</td><td>{{ t.lost }}</td><td>{{ "%+d" | format(t.gd) if t.gd else 0 }}</td><td><b>{{ t.points }}</b></td></tr>
+{% endfor %}
+</table>
+{% endif %}
+{% endfor %}
+
+{% if streaks %}
+<h2 style="font-size:16px;border-bottom:2px solid #1a1a1a;margin:22px 0 4px">Streak watch</h2>
+{% for s in streaks %}
+<p style="margin:4px 0">{{ s.text }}</p>
+{% endfor %}
+{% endif %}
+{% endblock %}

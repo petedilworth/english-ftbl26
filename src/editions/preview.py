@@ -129,6 +129,17 @@ def midweek_results(conn: sqlite3.Connection, date: datetime.date) -> list[dict]
             for t, r in sorted(sections.items())]
 
 
+def table_snapshot(conn: sqlite3.Connection, season: int) -> dict[str, dict]:
+    """Every club in tiers 1-5 as the table stands, keyed by club_id."""
+    return {
+        club_id: {"tier": tier, "position": pos, "points": pts, "played": played}
+        for club_id, tier, pos, pts, played in conn.execute(
+            "SELECT club_id, tier, position, points, played FROM standings"
+            " WHERE season_end_year = ? AND tier <= 5 AND club_id IS NOT NULL",
+            (season,))
+    }
+
+
 def snapshot(ctx: dict | None) -> dict | None:
     """The table as it stands, frozen so the reviews can say what moved."""
     if ctx is None:
@@ -233,6 +244,15 @@ class PreviewEdition(Edition):
             thin = phrasing.thin_preview(date)
 
         week_of = min((f["date"] for f in fixture_list), default=date)
+        season = fixtures_mod.current_season_end_year(date)
+        # The two reviews that answer this preview do not exist yet, but
+        # their addresses are fixed by the schedule: Monday and Tuesday.
+        monday = date + datetime.timedelta(days=(7 - date.weekday()) % 7 or 7)
+        review_links = [
+            ("Monday review, tiers 1–2", config.archive_url("review-top", monday.isoformat())),
+            ("Tuesday review, tiers 3–5",
+             config.archive_url("review-lower", (monday + datetime.timedelta(days=1)).isoformat())),
+        ]
         ctx = {
             "date": date, "week_of": week_of,
             "fixture_count": len(fixture_list),
@@ -241,12 +261,14 @@ class PreviewEdition(Edition):
             "midweek": midweek_results(conn, date),
             "thin": thin,
             "archive_url": config.archive_url(self.name, date.isoformat()),
+            "review_links": review_links,
         }
         subject = phrasing.preview_subject(ctx)
         html = render.render("preview.html", **ctx)
         text = self._text(ctx)
         return EditionOutput(subject=subject, html=html, text=text,
-                             images=images, claims=claims, thin=thin)
+                             images=images, claims=claims, thin=thin,
+                             table=table_snapshot(conn, season))
 
     @staticmethod
     def _text(ctx: dict) -> str:
