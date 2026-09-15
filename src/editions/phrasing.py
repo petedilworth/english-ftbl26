@@ -12,11 +12,16 @@ register replaces them after two real editions have been read.
 
 import level as level_mod
 
-ORDINALS = {1: "1st", 2: "2nd", 3: "3rd", 21: "21st", 22: "22nd", 23: "23rd"}
+def ordinal(n: int | None) -> str:
+    """1st, 2nd, 3rd, 4th, 11th, 12th, 13th, 21st, 93rd, 101st, 111th."""
+    if n is None:
+        return ""
+    if 10 <= n % 100 <= 20:
+        return f"{n}th"
+    return f"{n}{ {1: 'st', 2: 'nd', 3: 'rd'}.get(n % 10, 'th') }"
 
 
-def _ordinal(n: int) -> str:
-    return ORDINALS.get(n, f"{n}th")
+_ordinal = ordinal
 
 
 # ── Narrative ───────────────────────────────────────────────────────────────
@@ -324,3 +329,79 @@ def thin_review(label: str) -> str:
     return (f"No results in {label} reached the database this week. Either nothing "
             "was played or the results file has not caught up; the next review "
             "picks them up.")
+
+
+# ── Catchment phrasing ─────────────────────────────────────────────────────
+
+THEME_TITLES = {
+    "contested": "Contested ground",
+    "market": "Big markets, low divisions",
+    "overachievers": "Small markets, high divisions",
+    "restored": "Restored to their ceiling",
+    "deserts": "Football deserts",
+}
+
+
+def theme_title(kind: str) -> str:
+    return THEME_TITLES.get(kind, kind)
+
+
+def theme_intro(kind: str, n: int) -> str:
+    if kind == "contested":
+        return (f"Of the {n} clubs in the top five divisions, these lose the largest share "
+                "of the people nearest to them to other clubs.")
+    if kind == "market":
+        return ("The largest catchments in League One, League Two and the National League - "
+                "the markets that could support more than they have.")
+    if kind == "overachievers":
+        return "The smallest catchments in the Premier League and Championship."
+    if kind == "restored":
+        return ("How many more people each club would draw restored to its highest recorded "
+                "level, with every other club left where it is.")
+    if kind == "deserts":
+        return ("Local authorities with the most people living further than twenty miles "
+                "from any club in the top five divisions.")
+    return ""
+
+
+def division_phrase(name: str) -> str:
+    """'the Premier League' and 'the Championship', but bare 'League One'."""
+    return name if name.startswith("League") or not name else f"the {name}"
+
+
+def _people(n: int | None) -> str:
+    return f"{n:,}" if n else "—"
+
+
+def profile_paragraphs(p: dict, n_clubs: int) -> list[str]:
+    """The profile as neutral sentences; the template lays them out."""
+    out = []
+    where = f", at {p['stadium']}" if p.get("stadium") else ""
+    out.append(f"{p['name']} play in {division_phrase(p['division'])}{where}.")
+    out.append(f"The catchment model gives them {_people(p['pop'])} people to draw on, "
+               f"the {_ordinal(p['pop_rank'])} largest catchment of the {n_clubs} clubs in the "
+               f"top five divisions; by league position they are {_ordinal(p['ladder_rank'])}.")
+    if p.get("rival") and p.get("rival_miles") is not None:
+        rival_where = f" ({p['rival_division']})" if p.get("rival_division") else ""
+        out.append(f"The nearest club is {p['rival']}{rival_where}, {p['rival_miles']:.1f} miles away.")
+    if p.get("contest") is not None:
+        out.append(f"{round(100 * p['contest'])}% of the people nearest to them go elsewhere.")
+    if p.get("restored") and p.get("pop") and p["restored"] > p["pop"] and p.get("ceiling"):
+        out.append(f"Restored to {division_phrase(p['ceiling'])}, their highest recorded level, the model gives "
+                   f"them {_people(p['restored'])}.")
+    if p.get("income_extreme"):
+        side = "highest" if p["income_pct"] <= 50 else "lowest"
+        out.append(f"Net household income in their catchment is £{p['income']:,}, among the "
+                   f"{side} in the country.")
+    if p.get("level_sentence"):
+        out.append(p["level_sentence"] + ".")
+    return out
+
+
+def catchment_subject(ctx: dict) -> str:
+    who = f" — {ctx['profile']['name']} profiled" if ctx.get("profile") else ""
+    return f"Catchment — {ctx['theme_title']}{who}"
+
+
+def thin_catchment() -> str:
+    return "The catchment model has no rows for the top five divisions this week, so there is nothing to rank."

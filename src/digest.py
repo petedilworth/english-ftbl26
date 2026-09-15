@@ -49,11 +49,7 @@ FOLLOWED_CLUBS: list[str] = []
 
 TIER_WEIGHT = {1: 5, 2: 4, 3: 3, 4: 2, 5: 2}
 
-ORDINALS = {1: "1st", 2: "2nd", 3: "3rd", 21: "21st", 22: "22nd", 23: "23rd"}
-
-
-def _ordinal(n: int) -> str:
-    return ORDINALS.get(n, f"{n}th")
+from editions.phrasing import ordinal as _ordinal  # noqa: E402
 
 
 def _followed() -> set[str]:

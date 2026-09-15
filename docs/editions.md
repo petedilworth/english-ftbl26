@@ -5,9 +5,11 @@ This is the record of every decision made in planning, the review of
 whether they hold together, and the build order. Amend it when a decision
 changes; do not let the chat history be the source of truth.
 
-Status: **framework, Friday preview, the records tables and the Monday
-and Tuesday reviews built** (steps 0–3 below); the feature editions and
-the audit are not. Each review covers the seven days since the previous
+Status: **framework, Friday preview, the records tables, the Monday and
+Tuesday reviews and the Wednesday catchment edition built** (steps 0–4
+below); finance and the audit are not. Catchment ranks English clubs
+only - the demographics are England-only, so a Welsh club's catchment
+is a sliver of Devon - and rotates its profile through the archive. Each review covers the seven days since the previous
 one, which is how Tuesday picks up the previous midweek. `src/digest.py` is the
 Monday preview this replaces; its facts functions are reused.
 
