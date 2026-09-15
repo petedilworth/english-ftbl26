@@ -41,6 +41,10 @@ rivalries:
       NUM's most prominent supporters throughout. Note also that no
       Chesterfield-side source endorses or contests the derby's name;
       it appears to be an outside label rather than either club's.
+fan_owned:
+  - trust: "Chesterfield FC Community Trust"
+    from: 2020
+    to: 2024
 ---
 
 ## Origins

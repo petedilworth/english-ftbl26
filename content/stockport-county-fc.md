@@ -31,6 +31,10 @@ rises:
 stadium: "Edgeley Park"
 stadium_opened: 1902
 capacity: 10852
+fan_owned:
+  - trust: "Stockport County Supporters' Co-operative"
+    from: 2005
+    to: 2009
 ---
 
 ## Origins

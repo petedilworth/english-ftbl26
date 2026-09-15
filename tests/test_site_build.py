@@ -7,6 +7,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
 import trajectory
+import themes
 from site_build import SiteBuilder, _facts_rows, season_label, season_slug
 from test_digest import _make_db
 
@@ -279,6 +280,7 @@ An unrecognised section that should still appear.
 
 
 def test_team_page_renders_sections_facts_and_chips(tmp_path, monkeypatch):
+    monkeypatch.setattr(themes, "MIN_THEME_CLUBS", 1)   # one club is enough here
     out = _build_with_content(tmp_path, monkeypatch, {"giant-fc": RICH_STORY})
     page = (out / "team" / "giant-fc" / "index.html").read_text()
 
@@ -303,15 +305,18 @@ def test_team_page_renders_sections_facts_and_chips(tmp_path, monkeypatch):
 
 
 def test_theme_pages_generated_from_facts(tmp_path, monkeypatch):
+    monkeypatch.setattr(themes, "MIN_THEME_CLUBS", 1)
     out = _build_with_content(tmp_path, monkeypatch, {"giant-fc": RICH_STORY})
 
     index = (out / "themes" / "index.html").read_text()
     assert "Fan-owned clubs" in index
 
-    for slug in ("fan-owned", "administration", "exiled"):
+    for slug in ("fan-owned", "administration"):
         page = (out / "themes" / slug / "index.html").read_text()
         assert "Giant FC" in page, slug
 
+    # The exile page was retired; its facts live on the team page only.
+    assert not (out / "themes" / "exiled").exists()
     # steady-fc has no story file, so must not appear on any theme page
     assert "Steady FC" not in (out / "themes" / "fan-owned" / "index.html").read_text()
 
@@ -389,7 +394,8 @@ def _build_with_theme_intros(tmp_path, monkeypatch, files, intros):
     return out
 
 
-def test_theme_page_has_intro_chart_and_derived_narrative(tmp_path, monkeypatch):
+def test_theme_page_is_an_intro_and_one_table(tmp_path, monkeypatch):
+    monkeypatch.setattr(themes, "MIN_THEME_CLUBS", 1)
     out = _build_with_theme_intros(
         tmp_path, monkeypatch,
         {"giant-fc": THEMED_STORY},
@@ -398,36 +404,37 @@ def test_theme_page_has_intro_chart_and_derived_narrative(tmp_path, monkeypatch)
     page = (out / "themes" / "administration" / "index.html").read_text()
 
     assert "Why insolvency reshapes a club." in page       # intro prose
-    assert "trajectory-chart" in page                      # the chart
-    assert "chart-detail" in page                          # click-for-detail panel
-    # Narrative derived from facts, no hand-authoring needed
-    assert "2010" in page and "9 points" in page and "rent dispute" in page
+    assert "trajectory-chart" not in page                  # no chart, no picker
+    assert not (out / "themes" / "administration" / "chart-data.js").exists()
+    assert "theme-club" not in page                        # no per-club paragraphs
+    # One table, from the facts: the season, the points, the note
+    assert "<table" in page and "2010/11" in page and "rent dispute" in page
+    assert "The season before" in page and "Two seasons on" in page
 
 
-def test_theme_chart_preselects_every_club_in_the_theme(tmp_path, monkeypatch):
+def test_small_themes_are_neither_built_nor_linked(tmp_path, monkeypatch):
+    """The minimum: one club on a theme is not a page, and the team page
+    must not link to a page that was not built."""
     out = _build_with_theme_intros(
         tmp_path, monkeypatch, {"giant-fc": THEMED_STORY}, {})
-    payload = json.loads(
-        (out / "themes" / "administration" / "chart-data.js")
-        .read_text().replace("window.CHART_DATA = ", "").rstrip(";")
-    )
-    assert payload["preselect"] == ["giant-fc"]
-    club = payload["clubs"][0]
-    assert club["events"][0]["season_end_year"] == 2011   # 2010 calendar -> 2010/11
-    assert club["events"][0]["text"]
+    assert not (out / "themes" / "administration").exists()
+    assert not (out / "themes" / "fan-owned").exists()
+    index = (out / "themes" / "index.html").read_text()
+    assert "once enough clubs" in index
+    team = (out / "team" / "giant-fc" / "index.html").read_text()
+    assert not re.search(r"themes/[a-z-]+/index\.html", team)   # the nav's themes/index.html is fine
 
 
-def test_events_before_the_records_are_flagged_not_dropped(tmp_path, monkeypatch):
-    # The exile starts in 1985; the fixture DB's standings start later, so the
-    # dot has nowhere to sit. It must still be reported in the narrative.
+def test_exile_facts_survive_on_the_team_page_without_a_theme(tmp_path, monkeypatch):
+    monkeypatch.setattr(themes, "MIN_THEME_CLUBS", 1)
     out = _build_with_theme_intros(
         tmp_path, monkeypatch, {"giant-fc": THEMED_STORY}, {})
-    page = (out / "themes" / "exiled" / "index.html").read_text()
-    assert "Somewhere Else" in page
-    assert "before the records begin" in page
+    assert not (out / "themes" / "exiled").exists()
+    assert "Somewhere Else" in (out / "team" / "giant-fc" / "index.html").read_text()
 
 
 def test_theme_without_intro_file_still_builds(tmp_path, monkeypatch):
+    monkeypatch.setattr(themes, "MIN_THEME_CLUBS", 1)
     out = _build_with_theme_intros(
         tmp_path, monkeypatch, {"giant-fc": THEMED_STORY}, {})
     page = (out / "themes" / "administration" / "index.html").read_text()

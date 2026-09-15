@@ -38,6 +38,10 @@ rivalries:
       Secondary for both, and sharpened by circumstance rather than
       history: the two have shared a division far more often than either
       has with the club it would rather be measured against.
+fan_owned:
+  - trust: "Notts County Supporters' Trust"
+    from: 2003
+    to: 2009
 ---
 
 ## Origins

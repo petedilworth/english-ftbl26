@@ -19,20 +19,6 @@ points_deductions:
       Failing to ensure a player was free of suspension. An independent
       panel called it a breach of rule 6.9; the club called it an
       administrative error, and it cost them one place
-ground_grading_denial:
-  - season_end_year: 2024
-    note: >
-      Not a ground grading and not a promotion. Gateshead finished sixth
-      and were barred from the play-offs by the **EFL**, not the National
-      League, because they could not demonstrate **security of tenure over
-      their ground for ten seasons following promotion** — a membership
-      criterion about who holds what interest in a council-owned building.
-      Nothing physical about the stadium was ever at issue: capacity,
-      floodlights and seats all met the requirements. The council refused
-      before the 1 March deadline, offered alternatives on 28 March that
-      the EFL judged insufficient, and the exclusion was confirmed on 21
-      April. An appeal to an independent arbitrator was rejected. A
-      ten-year guarantee was subsequently agreed in late 2024.
 stadium: "Gateshead International Stadium"
 capacity: 11800
 stadium_ownership: council
@@ -217,3 +203,7 @@ season and City's stored ground only opened in 2003. Gateshead and Newcastle are
 a twenty-eight-season-against-sixty-eight-season non-meeting, two and a third
 miles apart, which is the more remarkable object even if it is second on the
 list.
+
+### The 2024 play-off exclusion
+
+Not a ground grading and not a promotion. Gateshead finished sixth and were barred from the play-offs by the **EFL**, not the National League, because they could not demonstrate **security of tenure over their ground for ten seasons following promotion** — a membership criterion about who holds what interest in a council-owned building. Nothing physical about the stadium was ever at issue: capacity, floodlights and seats all met the requirements. The council refused before the 1 March deadline, offered alternatives on 28 March that the EFL judged insufficient, and the exclusion was confirmed on 21 April. An appeal to an independent arbitrator was rejected. A ten-year guarantee was subsequently agreed in late 2024.

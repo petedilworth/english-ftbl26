@@ -753,3 +753,8 @@ table.matrix.compact .matrix-highlight {
 .h2h-won { color: var(--up); }
 .h2h-lost { color: var(--down); }
 .h2h-drawn { color: var(--muted); }
+
+/* Theme pages: one table, top-aligned so long reasons read cleanly */
+.table-scroll { overflow-x: auto; }
+table.theme-table td { vertical-align: top; }
+table.theme-table th { text-align: left; }

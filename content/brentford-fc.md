@@ -12,6 +12,10 @@ capacity: 17250
 previous_grounds:
   - name: "Griffin Park"
     years: "1904-2020"
+fan_owned:
+  - trust: "Bees United"
+    from: 2006
+    to: 2012
 ---
 
 ## Origins

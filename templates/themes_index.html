@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 <h1>Themes</h1>
-<p class="subtitle">The off-pitch patterns that recur across the pyramid — how clubs are owned, where they play, and what knocked them off course.</p>
+<p class="subtitle">The off-pitch patterns that recur across the pyramid — how clubs are owned, and what knocked them off course. Each page is one table.</p>
 
 {% if entries %}
 <div class="tile-grid">
@@ -13,6 +13,6 @@
   {% endfor %}
 </div>
 {% else %}
-<p class="narrative-placeholder">Themes appear here as club stories are written. Each one is derived from the facts a club's story declares, so nothing needs tagging by hand.</p>
+<p class="narrative-placeholder">Themes appear here once enough clubs share one.</p>
 {% endif %}
 {% endblock %}
