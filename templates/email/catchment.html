@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 style="font-size:22px;margin-bottom:2px">Catchment</h1>
+<p style="color:#555;margin-top:0">Who each club is fighting for. {{ date.strftime("%d %B %Y") }}.</p>
+
+<h2 style="font-size:18px;border-bottom:2px solid #1a1a1a;margin:18px 0 6px">{{ theme_title }}</h2>
+<p style="margin:4px 0 8px">{{ theme_intro }}</p>
+{% if thin %}<p>{{ thin }}</p>{% endif %}
+{% if rows %}
+<table cellpadding="2" cellspacing="0" style="font-size:13px;border-collapse:collapse">
+{% if theme == "contested" %}
+<tr style="text-align:left;color:#888"><th></th><th>Club</th><th>Nearest club</th><th style="text-align:right">Miles</th><th style="text-align:right">Contested</th><th style="text-align:right">People</th></tr>
+{% for r in rows %}
+<tr><td style="color:#888">{{ loop.index }}</td><td>{{ r.name }} <span style="color:#888">{{ r.division }}</span></td><td>{{ r.rival }}{% if r.rival_division %} <span style="color:#888">{{ r.rival_division }}</span>{% endif %}</td><td style="text-align:right">{{ "%.1f" | format(r.miles) if r.miles is not none else "" }}</td><td style="text-align:right">{{ r.contested }}%</td><td style="text-align:right">{{ "{:,}".format(r.people) if r.people else "" }}</td></tr>
+{% endfor %}
+{% elif theme in ("market", "overachievers") %}
+<tr style="text-align:left;color:#888"><th></th><th>Club</th><th style="text-align:right">People</th><th style="text-align:right">Market rank</th><th style="text-align:right">League rank</th></tr>
+{% for r in rows %}
+<tr><td style="color:#888">{{ loop.index }}</td><td>{{ r.name }} <span style="color:#888">{{ r.division }}</span></td><td style="text-align:right">{{ "{:,}".format(r.people) if r.people else "" }}</td><td style="text-align:right">{{ r.people_rank }}</td><td style="text-align:right">{{ r.ladder_rank }}</td></tr>
+{% endfor %}
+{% elif theme == "restored" %}
+<tr style="text-align:left;color:#888"><th></th><th>Club</th><th>Ceiling</th><th style="text-align:right">Now</th><th style="text-align:right">Restored</th><th style="text-align:right">×</th></tr>
+{% for r in rows %}
+<tr><td style="color:#888">{{ loop.index }}</td><td>{{ r.name }} <span style="color:#888">{{ r.division }}</span></td><td>{{ r.ceiling }}</td><td style="text-align:right">{{ "{:,}".format(r.people) }}</td><td style="text-align:right">{{ "{:,}".format(r.restored) }}</td><td style="text-align:right">{{ r.multiple }}</td></tr>
+{% endfor %}
+{% else %}
+<tr style="text-align:left;color:#888"><th></th><th>Local authority</th><th style="text-align:right">Beyond {{ desert_miles }} miles</th><th style="text-align:right">Of</th><th style="text-align:right">Furthest</th><th>Nearest club</th></tr>
+{% for r in rows %}
+<tr><td style="color:#888">{{ loop.index }}</td><td>{{ r.authority }}</td><td style="text-align:right">{{ "{:,}".format(r.people_far) }}</td><td style="text-align:right">{{ "{:,}".format(r.people) }}</td><td style="text-align:right">{{ r.furthest_miles }} mi</td><td>{{ r.nearest_club }}</td></tr>
+{% endfor %}
+{% endif %}
+</table>
+{% endif %}
+
+{% if profile %}
+<h2 style="font-size:18px;border-bottom:2px solid #1a1a1a;margin:22px 0 6px"><a href="{{ profile.club_id | club_url }}" style="color:#1a1a1a">{{ profile.name }}</a></h2>
+{% for para in profile.paragraphs %}
+<p style="margin:6px 0">{{ para }}</p>
+{% endfor %}
+{% if profile.cid %}<img src="cid:{{ profile.cid }}" alt="Position history" style="max-width:100%;margin:6px 0">{% endif %}
+{% endif %}
+
+<p style="color:#666;font-size:12px;margin-top:18px">Modelled, not counted: population is split across every club by distance and by level, not assigned to the nearest one.
+<a href="{{ site_url }}/insights/catchment/method/index.html" style="color:#666">How catchment is measured</a> ·
+<a href="{{ site_url }}/insights/catchment/index.html" style="color:#666">catchment</a> ·
+<a href="{{ site_url }}/insights/catchment/contested/index.html" style="color:#666">contested</a>.</p>
+{% endblock %}

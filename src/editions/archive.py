@@ -53,6 +53,22 @@ def claims_document(output: EditionOutput, edition: str, date: datetime.date) ->
     return doc
 
 
+def all_claims(edition: str) -> list[dict]:
+    """Every claims.json in an edition's stream, oldest first. The rotation state."""
+    stream = config.ARCHIVE_ROOT / edition
+    if not stream.exists():
+        return []
+    docs = []
+    for item in sorted(stream.iterdir()):
+        claims = item / "claims.json"
+        if item.is_dir() and claims.exists():
+            try:
+                docs.append(json.loads(claims.read_text(encoding="utf-8")))
+            except ValueError:
+                continue
+    return docs
+
+
 def find_claims(edition: str, start: datetime.date, end: datetime.date) -> dict | None:
     """The latest claims.json for `edition` dated within [start, end], parsed."""
     stream = config.ARCHIVE_ROOT / edition

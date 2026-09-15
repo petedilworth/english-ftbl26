@@ -41,6 +41,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--db-path", type=Path, default=config.DB_PATH)
     parser.add_argument("--fixtures-file", type=Path,
                         help="preview only: read fixtures from this CSV instead of the network")
+    parser.add_argument("--theme", help="catchment only: force a theme instead of the week's")
+    parser.add_argument("--profile", help="catchment only: force the club profiled (club_id)")
     args = parser.parse_args(argv)
 
     logging.basicConfig(level=logging.INFO, format="%(levelname)-8s %(message)s")
@@ -64,6 +66,10 @@ def main(argv: list[str] | None = None) -> int:
     kwargs = {}
     if args.fixtures_file:
         kwargs["fixtures_file"] = args.fixtures_file
+    if args.theme:
+        kwargs["theme"] = args.theme
+    if args.profile:
+        kwargs["profile_id"] = args.profile
     output = edition.build(**kwargs)
 
     size = len(output.html.encode("utf-8"))

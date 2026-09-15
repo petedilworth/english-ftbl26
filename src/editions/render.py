@@ -6,13 +6,7 @@ from editions import config
 
 _env: jinja2.Environment | None = None
 
-ORDINALS = {1: "1st", 2: "2nd", 3: "3rd", 21: "21st", 22: "22nd", 23: "23rd", 24: "24th"}
-
-
-def ordinal(n: int | None) -> str:
-    if n is None:
-        return ""
-    return ORDINALS.get(n, f"{n}th")
+from editions.phrasing import ordinal
 
 
 def env() -> jinja2.Environment:

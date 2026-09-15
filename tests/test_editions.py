@@ -195,3 +195,11 @@ def test_the_committed_straight_dates_file_parses():
 
 def test_archive_dir_is_one_stream_per_edition():
     assert archive.archive_dir("preview", FRIDAY) == config.ARCHIVE_ROOT / "preview" / "2026-08-14"
+
+
+def test_ordinals_are_right_past_the_twenties():
+    cases = {1: "1st", 2: "2nd", 3: "3rd", 4: "4th", 11: "11th", 12: "12th", 13: "13th",
+             21: "21st", 22: "22nd", 23: "23rd", 24: "24th", 93: "93rd", 101: "101st",
+             111: "111th", 112: "112th", None: ""}
+    for n, want in cases.items():
+        assert phrasing.ordinal(n) == want, n

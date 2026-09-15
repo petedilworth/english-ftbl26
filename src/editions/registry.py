@@ -1,5 +1,6 @@
 """Which editions exist, and which day each one sends."""
 
+from editions.catchment import CatchmentEdition
 from editions.preview import PreviewEdition
 from editions.review import ReviewLowerEdition, ReviewTopEdition
 
@@ -9,6 +10,7 @@ EDITIONS = {
     PreviewEdition.name: PreviewEdition,
     ReviewTopEdition.name: ReviewTopEdition,
     ReviewLowerEdition.name: ReviewLowerEdition,
+    CatchmentEdition.name: CatchmentEdition,
 }
 
 # ISO weekday (Mon=1) -> edition that sends that day. Editions that are
@@ -18,5 +20,6 @@ EDITIONS = {
 WEEKDAY_EDITIONS = {
     1: "review-top",
     2: "review-lower",
+    3: "catchment",
     5: "preview",
 }
