@@ -41,6 +41,10 @@ points_deductions:
       budget, borrowing and loan repayments
 capacity: 20867
 
+fan_owned:
+  - trust: "Pompey Supporters' Trust"
+    from: 2013
+    to: 2017
 ---
 
 ## Origins

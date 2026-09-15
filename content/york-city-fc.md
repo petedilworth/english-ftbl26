@@ -27,6 +27,10 @@ previous_grounds:
     years: "1922-1932"
   - name: "Bootham Crescent"
     years: "1932-2021"
+fan_owned:
+  - trust: "York City Supporters' Trust"
+    from: 2003
+    to: 2006
 ---
 
 ## Origins

@@ -30,7 +30,8 @@ import content  # noqa: E402  (needs _SRC on the path first)
 import divisions
 divisions_mod = divisions
 import finances  # noqa: E402  (disclosure states for the club finances table)
-import historical  # noqa: E402  (why a backfilled table is flagged not-final)
+import historical  # noqa: E402
+import themes as themes_mod  # noqa: E402  (the theme pages' membership and tables)  (why a backfilled table is flagged not-final)
 
 PROJECT_ROOT = _SRC.parent
 
@@ -489,6 +490,9 @@ class SiteBuilder:
         # theme pages derive their event dots and narrative from.
         self.club_themes: dict[str, list[str]] = {}
         self.club_facts: dict[str, dict] = {}
+        # Filled by _prime_themes before the team pages need their chips.
+        self.theme_members: dict[str, set[str]] = {}
+        self.published_themes: set[str] = set()
         # The database file is committed, so a checkout can carry a
         # club_trajectory predating the natural-level columns. Cache the
         # column set once so the build degrades instead of raising.
@@ -1662,13 +1666,17 @@ class SiteBuilder:
                 if club_content["extra"]:
                     extra_html = Markup(md.markdown(club_content["extra"]))
                 facts_rows = _facts_rows(club_content["facts"], club_names)
-                club_themes = [
-                    {"slug": s, "label": content.THEMES.get(s, s.replace("-", " ").title())}
-                    for s in club_content["themes"]
-                ]
-                self.club_themes[club_id] = club_content["themes"]
                 self.club_facts[club_id] = club_content["facts"]
                 nickname = club_content["facts"].get("nickname")
+            # Chips for the theme pages this club is on - only pages that
+            # will actually be built, so a chip never links to nothing.
+            mine = sorted(slug for slug, ids in self.theme_members.items()
+                          if club_id in ids and slug in self.published_themes)
+            club_themes = [
+                {"slug": s, "label": content.THEMES.get(s, s.replace("-", " ").title())}
+                for s in mine
+            ]
+            self.club_themes[club_id] = mine
 
             out_dir = self.out / "team" / club_id
             has_chart = False
@@ -2320,94 +2328,60 @@ class SiteBuilder:
                 )
         logger.info("Wrote %s (%d clubs)", path.name, len(rows))
 
+    def _prime_themes(self) -> None:
+        """
+        Theme membership, before the team pages need it for their chips.
+        Loads every club story once for its themes; build_teams loads them
+        again for everything else, which is cheap.
+        """
+        story_themes: dict[str, list[str]] = {}
+        content_dir = PROJECT_ROOT / "content"
+        if content_dir.exists():
+            for path in content_dir.glob("*.md"):
+                if path.name == "README.md":
+                    continue
+                club = content.load_club(path)
+                if club:
+                    story_themes[path.stem] = club["themes"]
+        self.theme_members = themes_mod.membership(self.conn, story_themes)
+        self.published_themes = themes_mod.published(self.theme_members)
+        skipped = sorted(set(self.theme_members) - self.published_themes)
+        if skipped:
+            logger.info("Theme pages below %d clubs, not built: %s",
+                        themes_mod.MIN_THEME_CLUBS, ", ".join(skipped))
+
     def build_themes(self) -> None:
         """
-        Cross-club theme pages, from the facts each club's story declares.
-        Runs after build_teams, which populates self.club_themes.
+        One page per published theme: the intro and one sorted table.
+        Membership and rows come from themes.py; no charts, no per-club
+        paragraphs.
         """
-        names = {
-            r["club_id"]: r["canonical_name"]
-            for r in self.conn.execute(
-                "SELECT club_id, canonical_name FROM club_trajectory"
-            )
-        }
-
-        import json
-
-        import charts as charts_mod
         import markdown as md
         from markupsafe import Markup
 
-        floors_by_year, max_pos = charts_mod.tier_floors(self.conn)
-        tier_floors_json = {str(year): floors for year, floors in floors_by_year.items()}
+        names = {
+            r["club_id"]: r["canonical_name"]
+            for r in self.conn.execute("SELECT club_id, canonical_name FROM club_trajectory")
+        }
+        names.update(dict(self.conn.execute("SELECT club_id, canonical_name FROM club_master")))
         themes_dir = PROJECT_ROOT / "content" / "themes"
 
-        by_theme: dict[str, list[str]] = {}
-        for club_id, themes in self.club_themes.items():
-            for slug in themes:
-                by_theme.setdefault(slug, []).append(club_id)
-
         entries = []
-        for slug in sorted(by_theme):
+        for slug in sorted(self.published_themes):
+            members = self.theme_members[slug]
             label = content.THEMES.get(slug, slug.replace("-", " ").capitalize())
-            club_ids = sorted(by_theme[slug], key=lambda c: names.get(c, c))
-
-            clubs, chart_clubs = [], []
-            for club_id in club_ids:
-                facts = self.club_facts.get(club_id, {})
-                events = content.theme_events(slug, facts)
-                series = charts_mod.overall_positions(self.conn, club_id)
-                plotted = {year for year, _pos, _ev in series}
-
-                clubs.append({
-                    "club_id": club_id,
-                    "name": names.get(club_id, club_id),
-                    "color": self.color(club_id),
-                    "narrative": content.theme_narrative(slug, facts),
-                    # Events that predate the standings can't sit on the chart,
-                    # so they're flagged for the narrative to carry instead.
-                    "events": [{
-                        "label": e["label"],
-                        "season": season_label(e["season_end_year"]),
-                        "text": e["text"],
-                        "on_chart": e["season_end_year"] in plotted,
-                    } for e in events],
-                })
-                if series:
-                    chart_clubs.append({
-                        "id": club_id,
-                        "name": names.get(club_id, club_id),
-                        "color": self.color(club_id),
-                        "series": series,
-                        "events": events,
-                    })
-
-            out_dir = self.out / "themes" / slug
-            out_dir.mkdir(parents=True, exist_ok=True)
-            (out_dir / "chart-data.js").write_text(
-                "window.CHART_DATA = " + json.dumps({
-                    "years": self.seasons,
-                    "maxPos": max_pos,
-                    "tierFloors": tier_floors_json,
-                    "clubs": chart_clubs,
-                    # Every club in the theme is drawn on arrival; the picker
-                    # is there to take them away, not to start from nothing.
-                    "preselect": [c["id"] for c in chart_clubs],
-                }) + ";",
-                encoding="utf-8",
-            )
-
+            columns, rows, dimension = themes_mod.rows_for(
+                slug, self.conn, members, self.club_facts, names)
             intro = content.load_theme(themes_dir / f"{slug}.md")
-            entries.append({
-                "slug": slug,
-                "name": label,
-                "sub": f"{len(clubs)} club{'s' if len(clubs) != 1 else ''}",
-            })
+            count = len({c for c in members if c in names})
+            entries.append({"slug": slug, "name": label,
+                            "sub": f"{count} club{'s' if count != 1 else ''} · {dimension}"})
+            out_dir = self.out / "themes" / slug
             self.render(
                 "theme.html", out_dir / "index.html", 2,
-                title=label, heading=label, clubs=clubs,
+                title=label, heading=label, count=count, dimension=dimension,
                 intro_html=Markup(md.markdown(intro)) if intro else None,
-                has_chart=bool(chart_clubs),
+                columns=columns, rows=rows,
             )
 
         self.render(
@@ -5008,6 +4982,7 @@ class SiteBuilder:
         shutil.copytree(PROJECT_ROOT / "static", self.out / "static")
         (self.out / ".nojekyll").write_text("")
 
+        self._prime_themes()  # before build_teams: the chips need membership
         self.build_home()
         self.build_seasons()
         self.build_divisions()

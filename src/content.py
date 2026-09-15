@@ -45,7 +45,6 @@ THEMES = {
     "fan-owned": "Fan-owned clubs",
     "administration": "Clubs that entered administration",
     "points-deductions": "Clubs docked points",
-    "exiled": "Clubs exiled from their town",
     "ground-grading": "Promotion denied on ground grading",
 }
 
@@ -119,14 +118,12 @@ def derive_themes(facts: dict) -> list[str]:
 
     if facts.get("phoenix_of"):
         themes.add("phoenix")
-    if facts.get("ownership_model") == "fan_trust":
+    if facts.get("ownership_model") == "fan_trust" or facts.get("fan_owned"):
         themes.add("fan-owned")
     if facts.get("administration"):
         themes.add("administration")
     if facts.get("points_deductions"):
         themes.add("points-deductions")
-    if facts.get("exile"):
-        themes.add("exiled")
     if facts.get("ground_grading_denial"):
         themes.add("ground-grading")
 
@@ -224,6 +221,11 @@ def _plural(n: int, word: str) -> str:
     return f"{n} {word}{'' if n == 1 else 's'}"
 
 
+def _sentence(text) -> str:
+    """One full stop at the end, whatever the text arrived with."""
+    return str(text).strip().rstrip(".") + "."
+
+
 def theme_events(slug: str, facts: dict) -> list[dict]:
     """
     Dated events explaining why a club sits on a theme, as
@@ -247,9 +249,9 @@ def theme_events(slug: str, facts: dict) -> list[dict]:
             text = f"Entered administration in {when}"
             if pts:
                 text += f", and was docked {_plural(int(pts), 'point')}"
-            text += "."
+            text = _sentence(text)
             if e.get("note"):
-                text += f" {e['note']}."
+                text += " " + _sentence(e["note"])
             add(e.get("year"), "calendar", "Administration", text, e.get("month"))
 
     elif slug == "points-deductions":
@@ -259,47 +261,41 @@ def theme_events(slug: str, facts: dict) -> list[dict]:
             text = f"Docked {_plural(int(e['points']), 'point')}"
             if e.get("season_end_year"):
                 text += f" in {_season_label(int(e['season_end_year']))}"
-            text += "."
+            text = _sentence(text)
             if e.get("reason"):
-                text += f" {e['reason']}."
+                text += " " + _sentence(e["reason"])
             add(e.get("season_end_year"), "season", "Points deduction", text)
-
-    elif slug == "exiled":
-        for e in facts.get("exile") or []:
-            if not isinstance(e, dict) or not e.get("venue"):
-                continue
-            text = f"Played home games at {e['venue']}"
-            if e.get("seasons"):
-                text += f", {e['seasons']}"
-            if e.get("distance_miles"):
-                text += f" — about {e['distance_miles']} miles from home"
-            text += "."
-            add(e.get("seasons"), "calendar", "Exile begins", text)
 
     elif slug == "ground-grading":
         for e in facts.get("ground_grading_denial") or []:
             if not isinstance(e, dict):
                 continue
             note = e.get("note") or "Promotion denied on ground grading"
-            add(e.get("season_end_year"), "season", "Ground grading", f"{note}.")
+            add(e.get("season_end_year"), "season", "Ground grading", _sentence(note))
 
     elif slug == "phoenix":
         folded = facts.get("predecessor_folded")
         if folded and facts.get("phoenix_of"):
             add(folded, "calendar", "Predecessor folded",
-                f"{facts['phoenix_of']} ceased to exist in {folded}.")
+                _sentence(f"{facts['phoenix_of']} ceased to exist in {folded}"))
         if facts.get("founded"):
             text = f"Founded in {facts['founded']}"
             if facts.get("phoenix_of"):
                 text += f", succeeding {facts['phoenix_of']}"
-            text += "."
-            add(facts.get("founded"), "calendar", "Club founded", text)
+            add(facts.get("founded"), "calendar", "Club founded", _sentence(text))
 
     elif slug == "fan-owned":
-        if facts.get("owner_since"):
+        for e in facts.get("fan_owned") or []:
+            if isinstance(e, dict) and e.get("from"):
+                trust = e.get("trust") or "The supporters' trust"
+                text = f"{trust} took control in {e['from']}"
+                if e.get("to"):
+                    text += f" and sold in {e['to']}"
+                add(e["from"], "calendar", "Fans take control", _sentence(text))
+        if facts.get("ownership_model") == "fan_trust" and facts.get("owner_since"):
             owner = facts.get("owner") or "The supporters' trust"
             add(facts["owner_since"], "calendar", "Fans take control",
-                f"{owner} took control in {facts['owner_since']}.")
+                _sentence(f"{owner} took control in {facts['owner_since']}"))
 
     events.sort(key=lambda e: e["season_end_year"])
     return events

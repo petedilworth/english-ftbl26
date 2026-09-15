@@ -15,6 +15,10 @@ rises:
       at that level.
 stadium: "STōK Cae Ras (Racecourse Ground)"
 capacity: 12600
+fan_owned:
+  - trust: "Wrexham Supporters Trust"
+    from: 2011
+    to: 2021
 ---
 
 ## Origins

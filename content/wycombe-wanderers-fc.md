@@ -31,6 +31,10 @@ rivalries:
       Oxford's history is with Swindon. What inflates it is a single
       fixture: the 2020 League One play-off final, which Wycombe won 2-1
       to reach the second tier for the first time.
+fan_owned:
+  - trust: "Wycombe Wanderers Trust"
+    from: 2012
+    to: 2020
 ---
 
 ## Origins

@@ -110,7 +110,7 @@ def test_themes_derived_from_facts():
         ({"ownership_model": "fan_trust"}, "fan-owned"),
         ({"administration": [{"year": 2010}]}, "administration"),
         ({"points_deductions": [{"points": 10}]}, "points-deductions"),
-        ({"exile": [{"venue": "Elsewhere"}]}, "exiled"),
+        ({"fan_owned": [{"trust": "The Trust", "from": 2013, "to": 2017}]}, "fan-owned"),
         ({"ground_grading_denial": [{"season_end_year": 1996}]}, "ground-grading"),
     ]
     for facts, expected in cases:
@@ -122,18 +122,20 @@ def test_no_facts_yields_no_themes():
 
 
 def test_retired_theme_facts_no_longer_derive_anything():
-    # council-ground, multi-club and stadium-moves were retired as browsable
-    # theme pages - the facts that used to trigger them must not resurrect
-    # them.
+    # council-ground, multi-club, stadium-moves and exiled were retired as
+    # browsable theme pages - the facts that used to trigger them must not
+    # resurrect them. The exile facts stay: the team page still uses them.
     facts = {
         "stadium_ownership": "council",
         "multi_club_group": "Some Group",
         "previous_grounds": [{"name": "Old Park"}],
+        "exile": [{"venue": "Elsewhere", "seasons": "1997-1999"}],
     }
     themes = derive_themes(facts)
     assert "council-ground" not in themes
     assert "multi-club" not in themes
     assert "stadium-moves" not in themes
+    assert "exiled" not in themes
 
 
 def test_manual_themes_merged_and_deduped():
@@ -171,7 +173,7 @@ def test_load_club_end_to_end(tmp_path):
     club = load_club(path)
     assert club["facts"]["founded"] == 1889
     assert club["sections"]["origins"] == "A church team."
-    assert set(club["themes"]) == {"fan-owned", "exiled"}
+    assert set(club["themes"]) == {"fan-owned"}
     assert club["has_prose"] is True
 
 
@@ -256,10 +258,10 @@ def test_theme_events_per_theme():
     cases = [
         ("administration", {"administration": [{"year": 2010, "points_deducted": 9}]}, 2011),
         ("points-deductions", {"points_deductions": [{"season_end_year": 2014, "points": 3}]}, 2014),
-        ("exiled", {"exile": [{"venue": "Elsewhere", "seasons": "1997–1999"}]}, 1998),
+        ("fan-owned", {"fan_owned": [{"trust": "Bees United", "from": 2006, "to": 2012}]}, 2007),
         ("ground-grading", {"ground_grading_denial": [{"season_end_year": 1996}]}, 1996),
         ("phoenix", {"founded": 2002, "phoenix_of": "Old FC"}, 2003),
-        ("fan-owned", {"owner_since": 2003, "owner": "The Trust"}, 2004),
+        ("fan-owned", {"ownership_model": "fan_trust", "owner_since": 2003, "owner": "The Trust"}, 2004),
     ]
     for slug, facts, expected in cases:
         events = theme_events(slug, facts)
@@ -269,17 +271,27 @@ def test_theme_events_per_theme():
 
 
 def test_events_are_sorted_oldest_first():
-    facts = {"exile": [
-        {"venue": "Later", "seasons": "2019–2021"},
-        {"venue": "Earlier", "seasons": "2013–2014"},
+    facts = {"points_deductions": [
+        {"season_end_year": 2021, "points": 2},
+        {"season_end_year": 2014, "points": 3},
     ]}
-    years = [e["season_end_year"] for e in theme_events("exiled", facts)]
+    years = [e["season_end_year"] for e in theme_events("points-deductions", facts)]
     assert years == sorted(years)
+
+
+def test_event_text_ends_with_exactly_one_full_stop():
+    """'F.C.' plus the template's own stop used to give 'F.C..'; folded YAML
+    notes ending in a newline used to give an orphan stop on its own line."""
+    phoenix = theme_events("phoenix", {"founded": 2004, "phoenix_of": "Telford United F.C."})
+    assert phoenix[0]["text"] == "Founded in 2004, succeeding Telford United F.C."
+    admin = theme_events("administration", {"administration": [
+        {"year": 2010, "note": "Followed a rent dispute.\n"}]})
+    assert admin[0]["text"].endswith("rent dispute.") and ".." not in admin[0]["text"]
 
 
 def test_undated_entries_are_skipped_not_crashed():
     assert theme_events("administration", {"administration": [{"note": "no year"}]}) == []
-    assert theme_events("exiled", {"exile": [{"venue": "Nowhere"}]}) == []
+    assert theme_events("fan-owned", {"fan_owned": [{"trust": "Nobody"}]}) == []
     assert theme_events("points-deductions", {"points_deductions": ["not a dict"]}) == []
     assert theme_events("administration", {}) == []
 
