@@ -20,6 +20,10 @@ class EditionOutput:
     # scope, so a later edition can say who moved. Written into
     # claims.json under "table".
     table: dict[str, dict] | None = None
+    # Anything else the edition wants remembered in claims.json - the
+    # reviews record which results they covered, so a late result is
+    # caught up next week rather than lost.
+    extra: dict = field(default_factory=dict)
     # Why the edition is short, when it is. Rendered as a plain line;
     # a thin week sends anyway and says so.
     thin: str | None = None

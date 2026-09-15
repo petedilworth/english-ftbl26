@@ -170,3 +170,20 @@ def test_digest_survives_a_database_without_natural_level_columns():
     assert ctx["natural_level_tier"] is None      # back-filled, not missing
     # Falls back to the old fallen-giant wording rather than blowing up
     assert "fallen giant" in digest._history_sentence(ctx).lower()
+
+
+def test_an_in_progress_season_is_not_last_season():
+    """The live row's status is "In progress", which is not a promotion or
+    a relegation - the scorer once gave every club the +1 for it."""
+    conn = _make_db()
+    conn.execute("UPDATE standings SET status='Relegated' WHERE club_id='giant-fc' AND season_end_year=2025")
+    conn.execute("INSERT INTO standings VALUES (2026, 4, 'League Two', 'giant-fc', 'Giant FC', 3,"
+                 " 5, 3, 1, 1, 8, 3, 5, 10, 'In progress', 'test')")
+    ctx = digest.club_context(conn, "giant-fc")
+    assert ctx["recent_seasons"][0][4] == "In progress"
+    assert ctx["last_completed"][0] == 2025 and ctx["last_completed"][4] == "Relegated"
+    steady = digest.club_context(conn, "steady-fc")
+    moved = digest.storyline_score(_fixture(), ctx, steady, set())
+    ctx["last_completed"] = (2025, "League One", 8, 55, "Stayed")
+    stayed = digest.storyline_score(_fixture(), ctx, steady, set())
+    assert moved == stayed + 1

@@ -87,7 +87,19 @@ def _write_claims(archive_root, table=None, claims=None):
     (d / "claims.json").write_text(json.dumps(doc))
 
 
-def _build(tmp_path, cls=ReviewTopEdition, date=MONDAY):
+def _write_previous_review(archive_root, covered, edition="review-top", days_before=7):
+    """The review a week earlier, recording the results it carried."""
+    d = archive_root / edition / (MONDAY - datetime.timedelta(days=days_before)).isoformat()
+    d.mkdir(parents=True, exist_ok=True)
+    (d / "claims.json").write_text(json.dumps({"edition": edition, "claims": [], "covered": covered}))
+
+
+AUGUST_29 = "2026-08-29|d-fc|a-fc"   # the week before the window: covered by last week's review
+
+
+def _build(tmp_path, cls=ReviewTopEdition, date=MONDAY, covered=(AUGUST_29,)):
+    if covered:
+        _write_previous_review(config.ARCHIVE_ROOT, list(covered), cls.name)
     return cls(_db(), date, tmp_path / "charts").build()
 
 
@@ -98,6 +110,26 @@ def test_the_window_is_the_seven_days_before_and_nothing_else(tmp_path, archive_
     assert "Mon 07" not in out.html        # the review's own date
     assert out.subject.endswith("3 results")
     assert out.table["a-fc"]["position"] == 1
+    assert out.extra["covered"] == sorted([
+        "2026-09-01|c-fc|d-fc", "2026-09-05|a-fc|b-fc", "2026-09-05|c-fc|d-fc"])
+
+
+def test_a_result_nobody_covered_is_caught_up_and_marked_late(tmp_path, archive_root):
+    """Sunday's game was not on file when Monday's review built: it turns
+    up the following week, flagged, rather than never."""
+    _write_previous_review(config.ARCHIVE_ROOT, [])          # a review existed; it carried nothing
+    out = ReviewTopEdition(_db(), MONDAY, tmp_path / "charts").build()
+    assert out.subject.endswith("4 results")
+    assert "Sat 29" in out.html and ">late</span>" in out.html
+    assert "2026-08-29|d-fc|a-fc" in out.extra["covered"]
+    # and once covered, it is not carried again
+    again = _build(tmp_path)
+    assert again.subject.endswith("3 results") and "Sat 29" not in again.html
+
+
+def test_the_first_review_ever_does_not_catch_up_a_fortnight(tmp_path, archive_root):
+    out = ReviewTopEdition(_db(), MONDAY, tmp_path / "charts").build()   # no previous review
+    assert out.subject.endswith("3 results") and "Sat 29" not in out.html
 
 
 def test_the_reckoning_names_the_case_and_the_movement(tmp_path, archive_root):

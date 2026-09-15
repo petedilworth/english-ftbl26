@@ -100,9 +100,10 @@ def tags_for(fixture: dict, home: dict | None, away: dict | None,
     if any(ctx.get("natural_level_kind") == "yo-yo" for ctx in (home, away)):
         tags.append(("yo_yo",))
     for ctx in (home, away):
-        last = ctx["recent_seasons"][0][4] if ctx["recent_seasons"] else None
-        if last in ("Promoted", "Play-off Promoted", "Champions", "Relegated"):
-            tags.append(("moved", ctx["name"], last))
+        last = ctx.get("last_completed")
+        status = last[4] if last else None
+        if status in ("Promoted", "Play-off Promoted", "Champions", "Relegated"):
+            tags.append(("moved", ctx["name"], status))
             break
     return tags
 

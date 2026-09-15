@@ -25,6 +25,11 @@ from editions.preview import TIER_NAMES
 logger = logging.getLogger(__name__)
 
 WINDOW_DAYS = 7
+# The results file can lag the weekend by a day or two, so a Sunday game
+# may not be on file when Monday's review builds. Each review records the
+# results it covered, and the next one looks this far back for anything
+# nobody has covered yet.
+CATCH_UP_DAYS = 14
 BAND_RANK = {"historic": 0, "notable": 1, "of_note": 2}
 # Within a band: the result itself before what it did to a run or a start.
 KIND_RANK = {"margin": 0, "opponent": 1, "streak": 2, "start": 3}
@@ -47,6 +52,24 @@ def _placeholders(items) -> str:
 
 def names_for(conn: sqlite3.Connection) -> dict[str, str]:
     return dict(conn.execute("SELECT club_id, canonical_name FROM club_master"))
+
+
+def result_key(r: dict) -> str:
+    return f"{r['date'].isoformat()}|{r['home_id']}|{r['away_id']}"
+
+
+def covered_keys(edition: str) -> tuple[set[str], bool]:
+    """
+    Every result a previous edition of this review has already carried,
+    and whether there was a previous edition at all - the first review
+    ever has nothing to catch up on, and must not carry the fortnight
+    before it existed.
+    """
+    keys: set[str] = set()
+    docs = archive.all_claims(edition)
+    for doc in docs:
+        keys.update(doc.get("covered") or [])
+    return keys, bool(docs)
 
 
 def results_in_window(conn: sqlite3.Connection, tiers: tuple[int, ...],
@@ -180,9 +203,17 @@ class ReviewEdition(Edition):
         season = fixtures_mod.current_season_end_year(date)
         names = names_for(conn)
 
-        results = results_in_window(conn, self.tiers, start, end)
+        # This week's results, plus anything older that no review has
+        # carried - a result that reached the file after its review built.
+        already, has_previous = covered_keys(self.name)
+        lookback = date - datetime.timedelta(days=CATCH_UP_DAYS) if has_previous else start
+        results = []
+        for r in results_in_window(conn, self.tiers, lookback, end):
+            r["late"] = r["date"] < start
+            if not r["late"] or result_key(r) not in already:
+                results.append(r)
         by_pair = {(r["home_id"], r["away_id"]): r for r in results}
-        for band in bands_in_window(conn, self.tiers, start, end):
+        for band in bands_in_window(conn, self.tiers, lookback, end):
             r = by_pair.get((band["home_id"], band["away_id"]))
             if r is not None:
                 r["bands"].append(band)
@@ -262,7 +293,8 @@ class ReviewEdition(Edition):
         subject = phrasing.review_subject(ctx)
         html = render.render("review.html", **ctx)
         return EditionOutput(subject=subject, html=html, text=self._text(ctx),
-                             images=images, thin=thin, table=now)
+                             images=images, thin=thin, table=now,
+                             extra={"covered": sorted(result_key(r) for r in results)})
 
     @staticmethod
     def _text(ctx: dict) -> str:

@@ -48,10 +48,13 @@ def send_email(
     html: str,
     text: str,
     inline_images: list[tuple[Path, str]] | None = None,
+    idempotency_key: str | None = None,
 ) -> str:
     """
     Send one email. inline_images is a list of (png_path, content_id)
     pairs referenced from the HTML as <img src="cid:content_id">.
+    idempotency_key, when given, is sent as Resend's Idempotency-Key
+    header: a repeat of the same key within a day is not a second email.
     Returns the Resend message id. Raises on any failure.
     """
     api_key, email_to_raw, email_from = _required_env(
@@ -77,9 +80,12 @@ def send_email(
             for path, content_id in inline_images
         ]
 
+    headers = {"Authorization": f"Bearer {api_key}"}
+    if idempotency_key:
+        headers["Idempotency-Key"] = idempotency_key
     resp = requests.post(
         RESEND_URL,
-        headers={"Authorization": f"Bearer {api_key}"},
+        headers=headers,
         json=payload,
         timeout=30,
     )

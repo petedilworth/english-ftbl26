@@ -12,6 +12,7 @@ marker (a re-run never sends twice unless --force), and the archive.
 
 import argparse
 import datetime
+import inspect
 import logging
 import sqlite3
 import sys
@@ -70,6 +71,12 @@ def main(argv: list[str] | None = None) -> int:
         kwargs["theme"] = args.theme
     if args.profile:
         kwargs["profile_id"] = args.profile
+    accepted = inspect.signature(edition.build).parameters
+    unknown = sorted(k for k in kwargs if k not in accepted)
+    if unknown:
+        logger.error("%s does not take %s", name,
+                     ", ".join("--" + k.replace("_id", "").replace("_", "-") for k in unknown))
+        return 2
     output = edition.build(**kwargs)
 
     size = len(output.html.encode("utf-8"))
@@ -93,7 +100,10 @@ def main(argv: list[str] | None = None) -> int:
         return 0
 
     import notify
-    message_id = notify.send_email(output.subject, output.html, output.text, output.images)
+    # A retried job checks out a tree without this run's sent marker; the
+    # idempotency key means Resend still sends once.
+    message_id = notify.send_email(output.subject, output.html, output.text, output.images,
+                                   idempotency_key=f"{name}/{args.date.isoformat()}")
     out = archive.archive(output, name, args.date)
     archive.mark_sent(name, args.date, message_id, output.subject)
     logger.info("Sent and archived to %s", out)
