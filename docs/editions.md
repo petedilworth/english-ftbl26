@@ -131,6 +131,12 @@ computed – the daily refresh overwrites `standings` in place.
 
 Stored under `content/digests/preview/<date>/claims.json`.
 
+The reviews keep a ledger of their own in the same file: `covered`, the
+keys of every result they carried. The results file can lag a weekend
+by a day, so the next review looks back a fortnight for anything no
+review has covered and carries it, marked late. The first review ever
+has no ledger to read and does not look back.
+
 ## 10. Archive, site, size
 
 - Archive organized **by edition type**: five streams under
@@ -160,9 +166,11 @@ Stored under `content/digests/preview/<date>/claims.json`.
   latest season's results banded against the club's own past: margin,
   opponent, streak, start). The pre-match table snapshot lives in each
   preview's `claims.json` rather than a table.
-- **One workflow, `editions.yml`**, five cron lines; the edition is
-  derived from the weekday or passed as a manual input. The refresh
-  workflow triggers it via `workflow_run` so they never race.
+- **One workflow, `editions.yml`**, triggered by the Refresh workflow's
+  completion (`workflow_run`, checking out main's tip) with a later cron
+  as a fallback; the edition is derived from the weekday or passed as a
+  manual input. GitHub's crons on a quiet repository slip by hours, and
+  two independent crons slip by different amounts.
 - One shared concurrency group for anything that commits `england.db`,
   with rebase-and-retry on push (the existing loop in
   `weekly-digest.yml` is the model).

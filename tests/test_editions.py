@@ -203,3 +203,39 @@ def test_ordinals_are_right_past_the_twenties():
              111: "111th", 112: "112th", None: ""}
     for n, want in cases.items():
         assert phrasing.ordinal(n) == want, n
+
+
+def test_the_moved_tag_reads_the_last_completed_season():
+    import digest
+    conn = _make_db()
+    conn.execute("UPDATE standings SET status='Relegated' WHERE club_id='giant-fc' AND season_end_year=2025")
+    conn.execute("INSERT INTO standings VALUES (2026, 4, 'League Two', 'giant-fc', 'Giant FC', 3,"
+                 " 5, 3, 1, 1, 8, 3, 5, 10, 'In progress', 'test')")
+    tags = preview_mod.tags_for(_fixture(), digest.club_context(conn, "giant-fc"),
+                                digest.club_context(conn, "steady-fc"), set(), {})
+    assert ("moved", "Giant FC", "Relegated") in tags
+    assert phrasing.tag_label(("moved", "Giant FC", "Relegated")) == "relegated last season"
+
+
+def test_a_preview_only_flag_on_another_edition_is_refused_not_crashed(sandbox, capsys):
+    rc = main(["review-top", "--date", "2026-09-07", "--dry-run", "--db-path", str(sandbox["db"]),
+               "--fixtures-file", str(sandbox["csv"])])
+    assert rc == 2
+
+
+def test_the_send_carries_an_idempotency_key(monkeypatch, tmp_path):
+    import notify
+    seen = {}
+
+    class _Resp:
+        def raise_for_status(self): pass
+        def json(self): return {"id": "msg-42"}
+
+    monkeypatch.setattr(notify.requests, "post",
+                        lambda url, headers, json, timeout: seen.update(headers=headers) or _Resp())
+    for k, v in {"RESEND_API_KEY": "k", "EMAIL_TO": "a@b.c", "EMAIL_FROM": "d@e.f"}.items():
+        monkeypatch.setenv(k, v)
+    assert notify.send_email("s", "<p>h</p>", "t", [], idempotency_key="preview/2026-09-18") == "msg-42"
+    assert seen["headers"]["Idempotency-Key"] == "preview/2026-09-18"
+    notify.send_email("s", "<p>h</p>", "t", [])
+    assert "Idempotency-Key" not in seen["headers"]

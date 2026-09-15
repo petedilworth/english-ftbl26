@@ -122,6 +122,11 @@ def club_context(conn: sqlite3.Connection, club_id: str | None) -> dict | None:
         """,
         (club_id,),
     ).fetchall()
+    # The most recent season that has finished. During a season the first
+    # row is the live one, whose status is "In progress" - which is not a
+    # promotion, though the scorer once counted it as one for every club.
+    ctx["last_completed"] = next(
+        (row for row in ctx["recent_seasons"] if row[4] != "In progress"), None)
 
     latest = conn.execute(
         """
@@ -206,7 +211,8 @@ def storyline_score(fixture: dict, home: dict | None, away: dict | None,
         elif ctx["highest_tier"] == 1 and fixture["tier"] >= 3:
             # Fallback for a thin record, or a database predating natural level
             score += 4  # fallen giant
-        if ctx["recent_seasons"] and ctx["recent_seasons"][0][4] not in ("Stayed", None):
+        last = ctx.get("last_completed")
+        if last and last[4] not in ("Stayed", None):
             score += 1  # promoted/relegated/champions last season
 
     if home and away and home["position"] and away["position"]:

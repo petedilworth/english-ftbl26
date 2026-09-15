@@ -37,7 +37,7 @@ def archive(output: EditionOutput, edition: str, date: datetime.date) -> Path:
     for path, _ in output.images:
         shutil.copy(path, out / path.name)
     (out / "index.html").write_text(_browsable(output), encoding="utf-8")
-    if output.claims or output.table:
+    if output.claims or output.table or output.extra:
         (out / "claims.json").write_text(
             json.dumps(claims_document(output, edition, date), indent=2),
             encoding="utf-8",
@@ -50,6 +50,7 @@ def claims_document(output: EditionOutput, edition: str, date: datetime.date) ->
            "subject": output.subject, "claims": output.claims}
     if output.table:
         doc["table"] = output.table
+    doc.update(output.extra)
     return doc
 
 
@@ -99,7 +100,7 @@ def write_preview(output: EditionOutput, edition: str) -> Path:
     (out / "index.html").write_text(_browsable(output, "charts/"), encoding="utf-8")
     (out / "subject.txt").write_text(output.subject + "\n", encoding="utf-8")
     (out / "body.txt").write_text(output.text, encoding="utf-8")
-    if output.claims or output.table:
+    if output.claims or output.table or output.extra:
         (out / "claims.json").write_text(
             json.dumps(claims_document(output, edition, datetime.date.today()), indent=2),
             encoding="utf-8")

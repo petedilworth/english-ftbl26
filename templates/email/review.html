@@ -30,7 +30,7 @@
 {% if s.results %}
 <table cellpadding="1" cellspacing="0" style="font-size:13px;border-collapse:collapse">
 {% for r in s.results %}
-<tr><td style="color:#888;padding-right:8px;white-space:nowrap">{{ r.date.strftime("%a %d") }}</td>
+<tr><td style="color:#888;padding-right:8px;white-space:nowrap">{{ r.date.strftime("%a %d") }}{% if r.late %} <span title="reached the results file after last week's review">late</span>{% endif %}</td>
 <td style="text-align:right">{{ r.home }}</td><td style="padding:0 6px"><b>{{ r.hg }}–{{ r.ag }}</b></td><td>{{ r.away }}</td>
 <td style="padding-left:8px;white-space:nowrap">{{ move(r.home_move) }} {{ move(r.away_move) }}</td>
 <td style="color:#666;padding-left:10px">{{ r.tag }}</td></tr>
