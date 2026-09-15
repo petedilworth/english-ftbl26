@@ -5,9 +5,10 @@ This is the record of every decision made in planning, the review of
 whether they hold together, and the build order. Amend it when a decision
 changes; do not let the chat history be the source of truth.
 
-Status: **framework, Friday preview and the refresh-side records built**
-(steps 0–2 below, and the data for step 3); the reviews and the feature
-editions are not. `src/digest.py` is the
+Status: **framework, Friday preview, the records tables and the Monday
+and Tuesday reviews built** (steps 0–3 below); the feature editions and
+the audit are not. Each review covers the seven days since the previous
+one, which is how Tuesday picks up the previous midweek. `src/digest.py` is the
 Monday preview this replaces; its facts functions are reused.
 
 ## 1. Schedule

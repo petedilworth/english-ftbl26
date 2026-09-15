@@ -61,4 +61,9 @@
 </table>
 {% endif %}
 {% endfor %}
+
+{% if review_links %}
+<p style="color:#666;font-size:12px;margin-top:20px">Reviewed on
+{% for label, url in review_links %}<a href="{{ url }}" style="color:#666">{{ label }}</a>{{ " and " if not loop.last }}{% endfor %}.</p>
+{% endif %}
 {% endblock %}

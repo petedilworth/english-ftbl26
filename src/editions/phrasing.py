@@ -214,3 +214,113 @@ def preview_subject(ctx: dict) -> str:
 def thin_preview(date) -> str:
     return ("No league fixtures fall in the next eight days, which usually "
             "means an international break. Nothing to preview.")
+
+
+# ── Review phrasing ────────────────────────────────────────────────────────
+
+STREAK_WORDS = {"win": "wins", "loss": "defeats", "draw": "draws", "unbeaten": "games unbeaten",
+                "winless": "games without a win", "clean_sheet": "clean sheets",
+                "scoreless": "games without scoring"}
+
+
+def season_label(year: int | None) -> str:
+    return "" if year is None else f"{year - 1}/{year % 100:02d}"
+
+
+def _name(names: dict, club_id: str | None, fallback: str = "") -> str:
+    return names.get(club_id, fallback or club_id or "")
+
+
+def band_tag(band: dict, names: dict) -> str:
+    """The short form for a grid row."""
+    d, since = band["detail"], band["since"]
+    when = f"since {season_label(since)}" if since else "on record"
+    kind = band["kind"]
+    if kind == "margin":
+        return f"biggest win {when}" if d.get("direction") == "win" else f"heaviest defeat {when}"
+    if kind == "opponent":
+        return f"first win v {_name(names, d.get('opp_id'))} {when}"
+    if kind == "streak":
+        return f"{d.get('length')} {STREAK_WORDS.get(d.get('streak_type'), '')}, longest {when}"
+    if kind == "start":
+        return f"{d.get('direction')} start {when}"
+    return ""
+
+
+def band_sentence(band: dict, names: dict) -> str:
+    """The long form, for the results that moved history."""
+    club = _name(names, band["club_id"])
+    d, since = band["detail"], band["since"]
+    when = f"since {season_label(since)}" if since else "in their record"
+    kind = band["kind"]
+    if kind == "margin":
+        opp = _name(names, d.get("opp_id"))
+        if d.get("direction") == "win":
+            return f"{club}'s {d.get('score')} over {opp} was their biggest win {when}."
+        return f"{club}'s {d.get('score')} defeat by {opp} was their heaviest {when}."
+    if kind == "opponent":
+        opp = _name(names, d.get("opp_id"))
+        if since:
+            return f"{club} beat {opp} for the first time since {season_label(since)}."
+        return (f"{club} beat {opp} for the first time on record, "
+                f"at the {_ordinal(d.get('meetings_before', 0) + 1)} attempt.")
+    if kind == "streak":
+        what = STREAK_WORDS.get(d.get("streak_type"), "")
+        return f"{club} have {d.get('length')} {what} in a row, their longest run {when}."
+    if kind == "start":
+        return (f"{club} have {d.get('points')} points from {d.get('games')} games, "
+                f"their {d.get('direction')} start {when}.")
+    return ""
+
+
+def reckoning(claim: dict, result: dict | None, now: dict, names: dict) -> str:
+    """
+    What Friday expected, and what happened. No verdict, no tally: the
+    expectation and the outcome side by side, and the reader draws it.
+    """
+    f = claim["fixture"]
+    home, away = f["home_name"], f["away_name"]
+    reasons = [tag_label(tuple(r)) for r in claim.get("reasons", [])]
+    case = f"Friday's case: {', '.join(r for r in reasons if r)}." if reasons else ""
+    if result is None:
+        return f"{home} v {away}: no result on file. {case}".strip()
+    score = f"{home} {result['hg']}–{result['ag']} {away}."
+    moves = []
+    for side, club_id in (("home", f["home_id"]), ("away", f["away_id"])):
+        snap = (claim.get("snapshot") or {}).get(side) or {}
+        then, current = snap.get("position"), (now.get(club_id) or {}).get("position")
+        name = f[f"{side}_name"]
+        if then and current and then != current:
+            moves.append(f"{name} {'up' if current < then else 'down'} from "
+                         f"{_ordinal(then)} to {_ordinal(current)}")
+        elif then and current:
+            moves.append(f"{name} stay {_ordinal(current)}")
+    tail = ("; ".join(moves) + ".") if moves else ""
+    return " ".join(p for p in (score, case, tail) if p)
+
+
+def streak_line(s: dict, names: dict) -> str:
+    club = _name(names, s["club_id"])
+    what = STREAK_WORDS.get(s["streak_type"], s["streak_type"])
+    if s["current"] >= s["record"]:
+        return (f"{club}: {s['current']} {what} in a row, equalling their record "
+                f"({season_label(s['record_season'])}).")
+    return (f"{club}: {s['current']} {what} in a row; the record is {s['record']} "
+            f"({season_label(s['record_season'])}).")
+
+
+def alt_table_title(kind: str) -> str:
+    return {"home": "Home form only", "away": "Away form only",
+            "form": f"The last six"}.get(kind, kind)
+
+
+def review_subject(ctx: dict) -> str:
+    if ctx["thin"]:
+        return f"The weekend reviewed — {ctx['label']}: nothing on file yet"
+    return f"The weekend reviewed — {ctx['label']}: {ctx['result_count']} results"
+
+
+def thin_review(label: str) -> str:
+    return (f"No results in {label} reached the database this week. Either nothing "
+            "was played or the results file has not caught up; the next review "
+            "picks them up.")

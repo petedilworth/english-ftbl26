@@ -37,14 +37,38 @@ def archive(output: EditionOutput, edition: str, date: datetime.date) -> Path:
     for path, _ in output.images:
         shutil.copy(path, out / path.name)
     (out / "index.html").write_text(_browsable(output), encoding="utf-8")
-    if output.claims:
+    if output.claims or output.table:
         (out / "claims.json").write_text(
-            json.dumps({"edition": edition, "date": date.isoformat(),
-                        "subject": output.subject, "claims": output.claims},
-                       indent=2),
+            json.dumps(claims_document(output, edition, date), indent=2),
             encoding="utf-8",
         )
     return out
+
+
+def claims_document(output: EditionOutput, edition: str, date: datetime.date) -> dict:
+    doc = {"edition": edition, "date": date.isoformat(),
+           "subject": output.subject, "claims": output.claims}
+    if output.table:
+        doc["table"] = output.table
+    return doc
+
+
+def find_claims(edition: str, start: datetime.date, end: datetime.date) -> dict | None:
+    """The latest claims.json for `edition` dated within [start, end], parsed."""
+    stream = config.ARCHIVE_ROOT / edition
+    if not stream.exists():
+        return None
+    for item in sorted(stream.iterdir(), reverse=True):
+        try:
+            when = datetime.date.fromisoformat(item.name)
+        except ValueError:
+            continue
+        if start <= when <= end and (item / "claims.json").exists():
+            try:
+                return json.loads((item / "claims.json").read_text(encoding="utf-8"))
+            except ValueError:
+                return None
+    return None
 
 
 def write_preview(output: EditionOutput, edition: str) -> Path:
@@ -59,9 +83,10 @@ def write_preview(output: EditionOutput, edition: str) -> Path:
     (out / "index.html").write_text(_browsable(output, "charts/"), encoding="utf-8")
     (out / "subject.txt").write_text(output.subject + "\n", encoding="utf-8")
     (out / "body.txt").write_text(output.text, encoding="utf-8")
-    if output.claims:
-        (out / "claims.json").write_text(json.dumps(output.claims, indent=2),
-                                         encoding="utf-8")
+    if output.claims or output.table:
+        (out / "claims.json").write_text(
+            json.dumps(claims_document(output, edition, datetime.date.today()), indent=2),
+            encoding="utf-8")
     return out
 
 
