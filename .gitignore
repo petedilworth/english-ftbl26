@@ -4,8 +4,10 @@ __pycache__/
 data/raw/
 data/db/*
 !data/db/england.db
-preview/
-site/
+# Anchored: an unanchored preview/ also ignored content/digests/preview/,
+# and a week's archive was written and never committed.
+/preview/
+/site/
 .env
 # Companies House fetch, run on a machine with network access
 ch-json/

@@ -27,6 +27,9 @@ class EditionOutput:
     # Why the edition is short, when it is. Rendered as a plain line;
     # a thin week sends anyway and says so.
     thin: str | None = None
+    # Why the edition must NOT be sent, when it must not - the input was
+    # missing rather than quiet. The runner retries the build, then fails.
+    refuse: str | None = None
 
 
 class Edition:

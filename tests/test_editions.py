@@ -71,11 +71,79 @@ def test_derby_tag_comes_from_the_catchment_model():
     assert phrasing.tag_label(tags[0]) == "derby, 4 miles"
 
 
-def test_thin_week_still_renders_and_says_why(tmp_path):
+def test_an_empty_fixture_list_is_refused_not_sent(tmp_path):
+    """Five divisions never go eight days without a fixture; an empty list
+    is the file being rewritten, and one blank preview went out that way."""
     out = _build(tmp_path, [])
-    assert out.thin and out.thin in out.html
-    assert "nothing to preview" in out.subject
+    assert out.refuse and "not sending" in out.refuse
+    assert out.thin and "nothing to preview" in out.subject     # the page still renders
     assert out.claims == [] and out.images == []
+
+
+def test_the_runner_retries_an_empty_file_and_sends_once_it_fills(sandbox, monkeypatch):
+    import notify
+    from editions import runner as runner_mod
+    sandbox["csv"].write_text("Div,Date,Time,HomeTeam,AwayTeam\n")     # rewritten, empty
+    sent = []
+    monkeypatch.setattr(notify, "send_email", lambda *a, **k: sent.append(a) or "msg-1")
+
+    def fill_the_file(seconds):
+        sandbox["csv"].write_text("Div,Date,Time,HomeTeam,AwayTeam\nE2,15/08/2026,15:00,Giant FC,Steady FC\n")
+    monkeypatch.setattr(runner_mod.time, "sleep", fill_the_file)
+    assert main(_args(sandbox, "--retries", "2", "--retry-wait", "1")) == 0
+    assert len(sent) == 1
+
+
+def test_the_runner_gives_up_on_an_empty_file_without_sending(sandbox, monkeypatch):
+    import notify
+    from editions import runner as runner_mod
+    sandbox["csv"].write_text("Div,Date,Time,HomeTeam,AwayTeam\n")
+    monkeypatch.setattr(notify, "send_email", lambda *a, **k: pytest.fail("sent a blank"))
+    monkeypatch.setattr(runner_mod.time, "sleep", lambda s: None)
+    assert main(_args(sandbox, "--retries", "2", "--retry-wait", "1")) == 3
+    assert not (sandbox["root"] / "archive").exists()
+    # a dry run still writes the page for inspection, and exits clean
+    assert main(_args(sandbox, "--dry-run")) == 0
+    assert (sandbox["root"] / "preview" / "preview" / "index.html").exists()
+
+
+def test_a_409_from_resend_counts_as_sent(sandbox, monkeypatch):
+    import notify
+
+    def refuse(*a, **k):
+        raise notify.AlreadySent("key used")
+    monkeypatch.setattr(notify, "send_email", refuse)
+    assert main(_args(sandbox)) == 0
+    marker = sandbox["root"] / "archive" / "preview" / FRIDAY.isoformat() / "sent.json"
+    assert json.loads(marker.read_text())["message_id"] == "already-sent"
+
+
+def test_notify_raises_already_sent_on_409(monkeypatch):
+    import notify
+
+    class _Resp:
+        status_code = 409
+        text = "idempotency key reused"
+        def raise_for_status(self): raise AssertionError("should not reach")
+        def json(self): return {}
+    monkeypatch.setattr(notify.requests, "post", lambda *a, **k: _Resp())
+    for k, v in {"RESEND_API_KEY": "k", "EMAIL_TO": "a@b.c", "EMAIL_FROM": "d@e.f"}.items():
+        monkeypatch.setenv(k, v)
+    with pytest.raises(notify.AlreadySent):
+        notify.send_email("s", "<p>h</p>", "t", [], idempotency_key="preview/2026-09-18")
+
+
+def test_the_archive_is_not_gitignored():
+    """An unanchored `preview/` in .gitignore once matched content/digests/preview/,
+    and a sent edition was written and never committed."""
+    import subprocess
+    root = Path(__file__).parent.parent
+    if not (root / ".git").exists():
+        pytest.skip("not a git checkout")
+    for path in ("content/digests/preview/2099-01-01/index.html",
+                 "content/digests/preview/2099-01-01/sent.json"):
+        rc = subprocess.run(["git", "check-ignore", "-q", path], cwd=root).returncode
+        assert rc == 1, f"{path} is ignored"
 
 
 def test_midweek_results_cover_the_four_days_before():
@@ -228,6 +296,7 @@ def test_the_send_carries_an_idempotency_key(monkeypatch, tmp_path):
     seen = {}
 
     class _Resp:
+        status_code = 200
         def raise_for_status(self): pass
         def json(self): return {"id": "msg-42"}
 

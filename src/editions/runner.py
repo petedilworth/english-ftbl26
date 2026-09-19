@@ -16,6 +16,7 @@ import inspect
 import logging
 import sqlite3
 import sys
+import time
 from pathlib import Path
 
 from editions import archive, config
@@ -44,6 +45,11 @@ def main(argv: list[str] | None = None) -> int:
                         help="preview only: read fixtures from this CSV instead of the network")
     parser.add_argument("--theme", help="catchment only: force a theme instead of the week's")
     parser.add_argument("--profile", help="catchment only: force the club profiled (club_id)")
+    parser.add_argument("--retries", type=int, default=4,
+                        help="when the edition refuses to send for missing input, rebuild this many"
+                             " more times before giving up")
+    parser.add_argument("--retry-wait", type=int, default=1800,
+                        help="seconds between those rebuilds")
     args = parser.parse_args(argv)
 
     logging.basicConfig(level=logging.INFO, format="%(levelname)-8s %(message)s")
@@ -77,7 +83,27 @@ def main(argv: list[str] | None = None) -> int:
         logger.error("%s does not take %s", name,
                      ", ".join("--" + k.replace("_id", "").replace("_", "-") for k in unknown))
         return 2
+
+    # An edition that refuses is missing its input, not short of news. The
+    # fixtures file is rewritten on Friday mornings and is briefly empty;
+    # wait and build again rather than send a blank, and fail rather than
+    # send if it never fills.
     output = edition.build(**kwargs)
+    attempt = 0
+    while output.refuse and attempt < args.retries and not args.dry_run:
+        attempt += 1
+        logger.warning("%s: %s. Rebuilding in %d s (attempt %d of %d).",
+                       name, output.refuse, args.retry_wait, attempt, args.retries)
+        time.sleep(args.retry_wait)
+        output = edition.build(**kwargs)
+    if output.refuse:
+        logger.error("%s: %s. Not sending.", name, output.refuse)
+        if args.dry_run:
+            # Still worth looking at: write it, and let the artifact upload.
+            out = archive.write_preview(output, name)
+            logger.info("Dry run: wrote %s", out / "index.html")
+            return 0
+        return 3
 
     size = len(output.html.encode("utf-8"))
     if size > config.SIZE_LIMIT:
@@ -101,9 +127,15 @@ def main(argv: list[str] | None = None) -> int:
 
     import notify
     # A retried job checks out a tree without this run's sent marker; the
-    # idempotency key means Resend still sends once.
-    message_id = notify.send_email(output.subject, output.html, output.text, output.images,
-                                   idempotency_key=f"{name}/{args.date.isoformat()}")
+    # idempotency key means Resend still sends once, and answers 409 to a
+    # second attempt - which is the marker we were missing, so record it.
+    try:
+        message_id = notify.send_email(output.subject, output.html, output.text, output.images,
+                                       idempotency_key=f"{name}/{args.date.isoformat()}")
+    except notify.AlreadySent as exc:
+        logger.warning("%s for %s was already sent today (%s); archiving without sending.",
+                       name, args.date, exc)
+        message_id = "already-sent"
     out = archive.archive(output, name, args.date)
     archive.mark_sent(name, args.date, message_id, output.subject)
     logger.info("Sent and archived to %s", out)

@@ -240,9 +240,16 @@ class PreviewEdition(Edition):
             for i in long_form + medium
         ]
 
+        # Five divisions never go eight days without a league fixture - the
+        # National League plays through international breaks - so an empty
+        # list is the fixtures file being rewritten under us, or a failed
+        # fetch. football-data rewrites fixtures.csv on Friday morning, and
+        # one send went out as "nothing to preview" from inside that gap.
         thin = None
+        refuse = None
         if not fixture_list:
             thin = phrasing.thin_preview(date)
+            refuse = "no fixtures in the file for the next eight days; not sending"
 
         week_of = min((f["date"] for f in fixture_list), default=date)
         season = fixtures_mod.current_season_end_year(date)
@@ -268,7 +275,7 @@ class PreviewEdition(Edition):
         html = render.render("preview.html", **ctx)
         text = self._text(ctx)
         return EditionOutput(subject=subject, html=html, text=text,
-                             images=images, claims=claims, thin=thin,
+                             images=images, claims=claims, thin=thin, refuse=refuse,
                              table=table_snapshot(conn, season))
 
     @staticmethod
