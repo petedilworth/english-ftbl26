@@ -232,20 +232,33 @@ def test_every_rivalry_that_has_been_played_carries_its_record():
     if not path.exists():
         pytest.skip("site not built")
     html = path.read_text()
-    body = html.split("<table", 1)[1].split("</table>", 1)[0]
-    rows = re.findall(r"<tr>(.*?)</tr>", body, re.S)[1:]
+    blocks = re.findall(r'class="rivalry" id="([^"]+)" data-met="(\d+)" data-record="([^"]*)"', html)
+    assert blocks, "no rivalry blocks on the page"
     scored = 0
-    for row in rows:
-        cells = [c.strip() for c in re.findall(r"<td[^>]*>(.*?)</td>", row, re.S)]
-        met, record = cells[3], cells[4]
-        if met.strip() == "—":
-            assert record.strip() == "—", "a pair that never met has a record"
+    for anchor, met, record in blocks:
+        assert "--" in anchor
+        if met == "0":
+            assert record == "", "a pair that never met has a record"
             continue
         scored += 1
-        played = int(re.sub(r"<[^>]+>", "", met).strip())
-        wdl = [int(n) for n in re.sub(r"<[^>]+>", "", record).strip().split("–")]
-        assert sum(wdl) == played, f"record {wdl} does not add to {played}"
+        wdl = [int(n) for n in record.split("–")]
+        assert sum(wdl) == int(met), f"record {wdl} does not add to {met}"
     assert scored, "no rivalry on the page carries a record"
+
+
+def test_a_team_page_links_to_its_derby_block():
+    """The rivalry on a club's facts panel links to the derby's block on
+    the rivalries page, and that block exists under the same id."""
+    path = SITE / "insights" / "rivalries" / "index.html"
+    if not path.exists():
+        pytest.skip("site not built")
+    ids = set(re.findall(r'class="rivalry" id="([^"]+)"', path.read_text()))
+    linked = 0
+    for team in (SITE / "team").glob("*/index.html"):
+        for anchor in re.findall(r'insights/rivalries/index\.html#([^"]+)"', team.read_text()):
+            assert anchor in ids, f"{team.parent.name} links to a derby block that is not there"
+            linked += 1
+    assert linked, "no team page links to the rivalries page"
 
 
 def test_the_digest_does_not_hardcode_a_season():

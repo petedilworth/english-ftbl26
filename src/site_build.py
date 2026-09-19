@@ -323,6 +323,11 @@ ORIGIN_LABELS = {
 }
 
 
+def rivalry_anchor(club_a: str, club_b: str) -> str:
+    """The id of a derby's block on the rivalries page, the same from either side."""
+    return "--".join(sorted((club_a, club_b)))
+
+
 def _facts_rows(facts: dict, club_names: dict[str, str] | None = None) -> list[dict]:
     """
     Turn front-matter into an ordered list of {label, value} rows for the
@@ -333,7 +338,10 @@ def _facts_rows(facts: dict, club_names: dict[str, str] | None = None) -> list[d
 
     def add(label, value):
         if value not in (None, "", [], {}):
-            rows.append({"label": label, "value": str(value)})
+            # Markup (a value carrying its own link) stays Markup; str()
+            # would hand the template an escaped string.
+            rows.append({"label": label,
+                         "value": value if hasattr(value, "__html__") else str(value)})
 
     add("Nickname", facts.get("nickname"))
 
@@ -412,11 +420,19 @@ def _facts_rows(facts: dict, club_names: dict[str, str] | None = None) -> list[d
 
     for rivalry in (facts.get("rivalries") or []):
         if isinstance(rivalry, dict) and rivalry.get("opponent"):
+            from markupsafe import Markup, escape
+
             opponent = (club_names or {}).get(rivalry["opponent"], rivalry["opponent"])
-            bits = [f"vs {opponent}" + (f" ({rivalry['name']})" if rivalry.get("name") else "")]
-            if rivalry.get("note"):
-                bits.append(rivalry["note"])
-            add("Rivalry", " · ".join(bits))
+            head = f"vs {opponent}" + (f" ({rivalry['name']})" if rivalry.get("name") else "")
+            # Team pages sit at team/<id>/, two levels down; the derby's
+            # block on the rivalries page is the same id from either side.
+            link = ""
+            if club_id := facts.get("_club_id"):
+                anchor = rivalry_anchor(club_id, rivalry["opponent"])
+                link = (f' · <a href="../../insights/rivalries/index.html#{escape(anchor)}">'
+                        f"the rivalry page</a>")
+            note = f" · {escape(rivalry['note'])}" if rivalry.get("note") else ""
+            add("Rivalry", Markup(f"{escape(head)}{link}{note}"))
 
     return rows
 
@@ -1665,7 +1681,7 @@ class SiteBuilder:
                         })
                 if club_content["extra"]:
                     extra_html = Markup(md.markdown(club_content["extra"]))
-                facts_rows = _facts_rows(club_content["facts"], club_names)
+                facts_rows = _facts_rows({**club_content["facts"], "_club_id": club_id}, club_names)
                 self.club_facts[club_id] = club_content["facts"]
                 nickname = club_content["facts"].get("nickname")
             # Chips for the theme pages this club is on - only pages that
@@ -2804,7 +2820,12 @@ class SiteBuilder:
         # omission: the note says what the needle is about, and the number
         # of times the two have actually met settled it. Read from the same
         # per-opponent structure the club pages use, so the two agree.
-        rows = []
+        #
+        # One block per derby, not a table: the note is a paragraph, and a
+        # paragraph in the sixth column of a table is a six-word-wide
+        # ribbon on a phone. Each block carries its record as data
+        # attributes and an id the club pages link to.
+        entries = []
         meetings = 0
         for e in rivalries:
             log = self.h2h_log.get(e["club_a"], {}).get(e["club_b"], [])
@@ -2812,23 +2833,24 @@ class SiteBuilder:
             drawn = sum(1 for m in log if m["goals_for"] == m["goals_against"])
             b_wins = len(log) - a_wins - drawn
             meetings += len(log)
-            rows.append([
-                self._cell(e["name"] or f"{e['name_a']} – {e['name_b']}"),
-                self._cell(e["name_a"], e["club_a"] if e["club_a"] in has_page else None),
-                self._cell(e["name_b"], e["club_b"] if e["club_b"] in has_page else None),
+            entries.append({
+                "anchor": rivalry_anchor(e["club_a"], e["club_b"]),
+                "name": e["name"] or f"{e['name_a']} – {e['name_b']}",
+                "name_a": e["name_a"], "name_b": e["name_b"],
+                "club_a": e["club_a"] if e["club_a"] in has_page else None,
+                "club_b": e["club_b"] if e["club_b"] in has_page else None,
+                "met": len(log),
                 # Straight to that opponent's record on the first club's
                 # page, which is where the matches themselves are.
-                self._cell(
-                    len(log) if log else "—", num=True,
-                    href=(f"../../team/{e['club_a']}/index.html#vs={e['club_b']}"
-                          if log and e["club_a"] in has_page else None)),
-                self._cell(f"{a_wins}–{drawn}–{b_wins}" if log else "—", num=True),
-                self._cell(e["note"]),
-            ])
+                "record_href": (f"../../team/{e['club_a']}/index.html#vs={e['club_b']}"
+                                if log and e["club_a"] in has_page else None),
+                "record": f"{a_wins}–{drawn}–{b_wins}" if log else "",
+                "note": e["note"],
+            })
         stats.append({"value": f"{meetings:,}", "label": "Derby meetings on file"})
 
         self.render(
-            "insight_table.html", self.out / "insights" / "rivalries" / "index.html", 2,
+            "insight_rivalries.html", self.out / "insights" / "rivalries" / "index.html", 2,
             title="Rivalries & derbies",
             heading="Rivalries & derbies",
             intro=(
@@ -2836,17 +2858,12 @@ class SiteBuilder:
                 "behind the fixture list."
             ),
             stats=stats,
-            sections=[{
-                "columns": ["Derby", "Club", "Club", "Met", "W–D–L",
-                            "What's behind it"],
-                "note": (
-                    "W–D–L is from the first club's side. The record is league "
-                    "matches only, as far back as this site reaches at each "
-                    "level, and a dash is a pair that has never met in a "
-                    "division on file."
-                ),
-                "rows": rows,
-            }],
+            entries=entries,
+            note=(
+                "W–D–L is from the first club's side. The record is league "
+                "matches only, as far back as this site reaches at each "
+                "level; a pair with no record has never met in a division on file."
+            ),
         )
 
     def _movement_matches(self) -> dict[str, list[dict]]:

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>{{ heading }}</h1>
+<p class="subtitle">{{ intro }}</p>
+
+{% if stats %}
+<div class="stat-cards">
+  {% for card in stats %}
+  <div class="stat-card"><div class="stat-value">{{ card.value }}</div><div class="stat-label">{{ card.label }}</div></div>
+  {% endfor %}
+</div>
+{% endif %}
+
+<p class="subtitle">{{ note }}</p>
+
+{% for e in entries %}
+<div class="rivalry" id="{{ e.anchor }}" data-met="{{ e.met }}" data-record="{{ e.record }}">
+  <h3>{{ e.name }}</h3>
+  <p class="rivalry-meta">
+    {% if e.club_a %}<a href="{{ root }}/team/{{ e.club_a }}/index.html">{{ e.name_a }}</a>{% else %}{{ e.name_a }}{% endif %}
+    v
+    {% if e.club_b %}<a href="{{ root }}/team/{{ e.club_b }}/index.html">{{ e.name_b }}</a>{% else %}{{ e.name_b }}{% endif %}
+    {% if e.met %}
+    · met {% if e.record_href %}<a href="{{ e.record_href }}">{{ e.met }} times</a>{% else %}{{ e.met }} times{% endif %}, {{ e.record }}
+    {% else %}
+    · never met in a division on file
+    {% endif %}
+  </p>
+  {% if e.note %}<p>{{ e.note }}</p>{% endif %}
+</div>
+{% endfor %}
+{% endblock %}
