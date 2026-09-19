@@ -19,6 +19,10 @@ logger = logging.getLogger(__name__)
 RESEND_URL = "https://api.resend.com/emails"
 
 
+class AlreadySent(RuntimeError):
+    """Resend answered 409: this idempotency key was used today with a different message."""
+
+
 def _required_env(*names: str) -> list[str]:
     """
     Fetch required environment variables, failing with a message that names
@@ -89,6 +93,8 @@ def send_email(
         json=payload,
         timeout=30,
     )
+    if resp.status_code == 409 and idempotency_key:
+        raise AlreadySent(f"idempotency key {idempotency_key!r} already used: {resp.text[:200]}")
     resp.raise_for_status()
     message_id = resp.json().get("id", "?")
     logger.info("Email sent: %s", message_id)
