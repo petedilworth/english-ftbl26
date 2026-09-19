@@ -1078,6 +1078,11 @@ def test_rivalry_shows_on_the_clubs_own_facts_panel_with_opponent_name(tmp_path,
     assert "Rivalry" in team
     assert "Steady FC" in team
     assert "A grudge born from a real, researched cause." in team
+    # and it links to the derby's block on the rivalries page, by a shared id
+    assert 'href="../../insights/rivalries/index.html#giant-fc--steady-fc"' in team
+    page = (out / "insights" / "rivalries" / "index.html").read_text()
+    assert 'id="giant-fc--steady-fc"' in page
+    assert "<table" not in page          # blocks, not a six-column table
 
 
 def test_rivalry_with_unknown_opponent_is_skipped_not_fatal(tmp_path, monkeypatch):
