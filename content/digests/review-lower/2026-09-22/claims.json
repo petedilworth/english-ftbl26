@@ -1,0 +1,490 @@
+{
+  "edition": "review-lower",
+  "date": "2026-09-22",
+  "subject": "The weekend reviewed \u2014 League One, League Two and the National League: 48 results",
+  "claims": [],
+  "table": {
+    "afc-wimbledon": {
+      "tier": 3,
+      "position": 7,
+      "points": 11,
+      "played": 7
+    },
+    "barnsley-fc": {
+      "tier": 3,
+      "position": 18,
+      "points": 8,
+      "played": 7
+    },
+    "blackpool-fc": {
+      "tier": 3,
+      "position": 15,
+      "points": 8,
+      "played": 7
+    },
+    "bradford-city-fc": {
+      "tier": 3,
+      "position": 1,
+      "points": 15,
+      "played": 7
+    },
+    "bromley-fc": {
+      "tier": 3,
+      "position": 19,
+      "points": 8,
+      "played": 7
+    },
+    "burton-albion-fc": {
+      "tier": 3,
+      "position": 12,
+      "points": 9,
+      "played": 7
+    },
+    "cambridge-united-fc": {
+      "tier": 3,
+      "position": 5,
+      "points": 12,
+      "played": 7
+    },
+    "doncaster-rovers-fc": {
+      "tier": 3,
+      "position": 21,
+      "points": 6,
+      "played": 7
+    },
+    "huddersfield-town-fc": {
+      "tier": 3,
+      "position": 4,
+      "points": 12,
+      "played": 7
+    },
+    "leicester-city-fc": {
+      "tier": 3,
+      "position": 13,
+      "points": 9,
+      "played": 7
+    },
+    "leyton-orient-fc": {
+      "tier": 3,
+      "position": 10,
+      "points": 10,
+      "played": 7
+    },
+    "luton-town-fc": {
+      "tier": 3,
+      "position": 16,
+      "points": 8,
+      "played": 7
+    },
+    "mansfield-town-fc": {
+      "tier": 3,
+      "position": 17,
+      "points": 8,
+      "played": 7
+    },
+    "mk-dons-fc": {
+      "tier": 3,
+      "position": 22,
+      "points": 6,
+      "played": 7
+    },
+    "notts-county-fc": {
+      "tier": 3,
+      "position": 20,
+      "points": 7,
+      "played": 7
+    },
+    "oxford-united-fc": {
+      "tier": 3,
+      "position": 6,
+      "points": 11,
+      "played": 6
+    },
+    "peterborough-united-fc": {
+      "tier": 3,
+      "position": 23,
+      "points": 5,
+      "played": 7
+    },
+    "plymouth-argyle-fc": {
+      "tier": 3,
+      "position": 3,
+      "points": 13,
+      "played": 7
+    },
+    "reading-fc": {
+      "tier": 3,
+      "position": 8,
+      "points": 10,
+      "played": 6
+    },
+    "sheffield-wednesday-fc": {
+      "tier": 3,
+      "position": 2,
+      "points": 14,
+      "played": 7
+    },
+    "stevenage-fc": {
+      "tier": 3,
+      "position": 11,
+      "points": 9,
+      "played": 7
+    },
+    "stockport-county-fc": {
+      "tier": 3,
+      "position": 9,
+      "points": 10,
+      "played": 7
+    },
+    "wigan-athletic-fc": {
+      "tier": 3,
+      "position": 24,
+      "points": 4,
+      "played": 7
+    },
+    "wycombe-wanderers-fc": {
+      "tier": 3,
+      "position": 14,
+      "points": 9,
+      "played": 7
+    },
+    "accrington-stanley-fc": {
+      "tier": 4,
+      "position": 21,
+      "points": 6,
+      "played": 7
+    },
+    "barnet-fc": {
+      "tier": 4,
+      "position": 1,
+      "points": 15,
+      "played": 7
+    },
+    "bristol-rovers-fc": {
+      "tier": 4,
+      "position": 6,
+      "points": 12,
+      "played": 7
+    },
+    "cheltenham-town-fc": {
+      "tier": 4,
+      "position": 5,
+      "points": 12,
+      "played": 7
+    },
+    "chesterfield-fc": {
+      "tier": 4,
+      "position": 8,
+      "points": 11,
+      "played": 7
+    },
+    "colchester-united-fc": {
+      "tier": 4,
+      "position": 15,
+      "points": 9,
+      "played": 7
+    },
+    "crawley-town-fc": {
+      "tier": 4,
+      "position": 24,
+      "points": 4,
+      "played": 7
+    },
+    "crewe-alexandra-fc": {
+      "tier": 4,
+      "position": 9,
+      "points": 11,
+      "played": 7
+    },
+    "exeter-city-fc": {
+      "tier": 4,
+      "position": 20,
+      "points": 6,
+      "played": 7
+    },
+    "fleetwood-town-fc": {
+      "tier": 4,
+      "position": 11,
+      "points": 10,
+      "played": 7
+    },
+    "gillingham-fc": {
+      "tier": 4,
+      "position": 4,
+      "points": 12,
+      "played": 7
+    },
+    "grimsby-town-fc": {
+      "tier": 4,
+      "position": 3,
+      "points": 13,
+      "played": 7
+    },
+    "newport-county-fc": {
+      "tier": 4,
+      "position": 19,
+      "points": 6,
+      "played": 7
+    },
+    "northampton-town-fc": {
+      "tier": 4,
+      "position": 22,
+      "points": 6,
+      "played": 7
+    },
+    "oldham-athletic-fc": {
+      "tier": 4,
+      "position": 16,
+      "points": 7,
+      "played": 7
+    },
+    "port-vale-fc": {
+      "tier": 4,
+      "position": 23,
+      "points": 5,
+      "played": 7
+    },
+    "rochdale-fc": {
+      "tier": 4,
+      "position": 17,
+      "points": 7,
+      "played": 7
+    },
+    "rotherham-united-fc": {
+      "tier": 4,
+      "position": 14,
+      "points": 9,
+      "played": 7
+    },
+    "salford-city-fc": {
+      "tier": 4,
+      "position": 12,
+      "points": 10,
+      "played": 7
+    },
+    "shrewsbury-town-fc": {
+      "tier": 4,
+      "position": 18,
+      "points": 7,
+      "played": 7
+    },
+    "swindon-town-fc": {
+      "tier": 4,
+      "position": 13,
+      "points": 10,
+      "played": 7
+    },
+    "tranmere-rovers-fc": {
+      "tier": 4,
+      "position": 10,
+      "points": 10,
+      "played": 7
+    },
+    "walsall-fc": {
+      "tier": 4,
+      "position": 2,
+      "points": 13,
+      "played": 7
+    },
+    "york-city-fc": {
+      "tier": 4,
+      "position": 7,
+      "points": 11,
+      "played": 7
+    },
+    "aldershot-town-fc": {
+      "tier": 5,
+      "position": 8,
+      "points": 15,
+      "played": 9
+    },
+    "altrincham-fc": {
+      "tier": 5,
+      "position": 10,
+      "points": 15,
+      "played": 9
+    },
+    "barrow-afc": {
+      "tier": 5,
+      "position": 17,
+      "points": 9,
+      "played": 9
+    },
+    "boreham-wood-fc": {
+      "tier": 5,
+      "position": 1,
+      "points": 23,
+      "played": 9
+    },
+    "boston-united-fc": {
+      "tier": 5,
+      "position": 15,
+      "points": 11,
+      "played": 9
+    },
+    "carlisle-united-fc": {
+      "tier": 5,
+      "position": 16,
+      "points": 10,
+      "played": 9
+    },
+    "eastleigh-fc": {
+      "tier": 5,
+      "position": 12,
+      "points": 14,
+      "played": 9
+    },
+    "forest-green-rovers-fc": {
+      "tier": 5,
+      "position": 14,
+      "points": 13,
+      "played": 9
+    },
+    "fylde-afc": {
+      "tier": 5,
+      "position": 4,
+      "points": 17,
+      "played": 9
+    },
+    "gateshead-fc": {
+      "tier": 5,
+      "position": 24,
+      "points": 4,
+      "played": 9
+    },
+    "fc-halifax-town": {
+      "tier": 5,
+      "position": 13,
+      "points": 13,
+      "played": 9
+    },
+    "harrogate-town-afc": {
+      "tier": 5,
+      "position": 5,
+      "points": 16,
+      "played": 9
+    },
+    "hartlepool-united-fc": {
+      "tier": 5,
+      "position": 19,
+      "points": 9,
+      "played": 9
+    },
+    "hornchurch-fc": {
+      "tier": 5,
+      "position": 9,
+      "points": 15,
+      "played": 9
+    },
+    "kidderminster-harriers-fc": {
+      "tier": 5,
+      "position": 3,
+      "points": 18,
+      "played": 9
+    },
+    "scunthorpe-united-fc": {
+      "tier": 5,
+      "position": 22,
+      "points": 7,
+      "played": 9
+    },
+    "solihull-moors-fc": {
+      "tier": 5,
+      "position": 23,
+      "points": 4,
+      "played": 9
+    },
+    "southend-united-fc": {
+      "tier": 5,
+      "position": 2,
+      "points": 20,
+      "played": 9
+    },
+    "sutton-united-fc": {
+      "tier": 5,
+      "position": 6,
+      "points": 16,
+      "played": 9
+    },
+    "tamworth-fc": {
+      "tier": 5,
+      "position": 21,
+      "points": 8,
+      "played": 9
+    },
+    "wealdstone-fc": {
+      "tier": 5,
+      "position": 20,
+      "points": 8,
+      "played": 9
+    },
+    "woking-fc": {
+      "tier": 5,
+      "position": 18,
+      "points": 9,
+      "played": 9
+    },
+    "worthing-fc": {
+      "tier": 5,
+      "position": 11,
+      "points": 14,
+      "played": 9
+    },
+    "yeovil-town-fc": {
+      "tier": 5,
+      "position": 7,
+      "points": 15,
+      "played": 9
+    }
+  },
+  "covered": [
+    "2026-09-15|aldershot-town-fc|yeovil-town-fc",
+    "2026-09-15|boston-united-fc|woking-fc",
+    "2026-09-15|carlisle-united-fc|forest-green-rovers-fc",
+    "2026-09-15|harrogate-town-afc|fylde-afc",
+    "2026-09-15|solihull-moors-fc|barrow-afc",
+    "2026-09-15|southend-united-fc|tamworth-fc",
+    "2026-09-15|sutton-united-fc|eastleigh-fc",
+    "2026-09-15|wealdstone-fc|fc-halifax-town",
+    "2026-09-15|worthing-fc|hornchurch-fc",
+    "2026-09-16|altrincham-fc|hartlepool-united-fc",
+    "2026-09-16|kidderminster-harriers-fc|gateshead-fc",
+    "2026-09-16|scunthorpe-united-fc|boreham-wood-fc",
+    "2026-09-17|afc-wimbledon|mk-dons-fc",
+    "2026-09-18|yeovil-town-fc|solihull-moors-fc",
+    "2026-09-19|accrington-stanley-fc|newport-county-fc",
+    "2026-09-19|barnet-fc|fleetwood-town-fc",
+    "2026-09-19|barnsley-fc|leicester-city-fc",
+    "2026-09-19|barrow-afc|aldershot-town-fc",
+    "2026-09-19|blackpool-fc|plymouth-argyle-fc",
+    "2026-09-19|boreham-wood-fc|harrogate-town-afc",
+    "2026-09-19|bromley-fc|huddersfield-town-fc",
+    "2026-09-19|burton-albion-fc|mansfield-town-fc",
+    "2026-09-19|chesterfield-fc|york-city-fc",
+    "2026-09-19|colchester-united-fc|cheltenham-town-fc",
+    "2026-09-19|crewe-alexandra-fc|shrewsbury-town-fc",
+    "2026-09-19|eastleigh-fc|carlisle-united-fc",
+    "2026-09-19|exeter-city-fc|tranmere-rovers-fc",
+    "2026-09-19|fc-halifax-town|sutton-united-fc",
+    "2026-09-19|forest-green-rovers-fc|boston-united-fc",
+    "2026-09-19|fylde-afc|altrincham-fc",
+    "2026-09-19|gateshead-fc|southend-united-fc",
+    "2026-09-19|gillingham-fc|bristol-rovers-fc",
+    "2026-09-19|grimsby-town-fc|crawley-town-fc",
+    "2026-09-19|hartlepool-united-fc|worthing-fc",
+    "2026-09-19|hornchurch-fc|scunthorpe-united-fc",
+    "2026-09-19|leyton-orient-fc|stevenage-fc",
+    "2026-09-19|luton-town-fc|bradford-city-fc",
+    "2026-09-19|northampton-town-fc|rotherham-united-fc",
+    "2026-09-19|oxford-united-fc|cambridge-united-fc",
+    "2026-09-19|peterborough-united-fc|doncaster-rovers-fc",
+    "2026-09-19|reading-fc|notts-county-fc",
+    "2026-09-19|rochdale-fc|oldham-athletic-fc",
+    "2026-09-19|salford-city-fc|swindon-town-fc",
+    "2026-09-19|sheffield-wednesday-fc|stockport-county-fc",
+    "2026-09-19|tamworth-fc|wealdstone-fc",
+    "2026-09-19|walsall-fc|port-vale-fc",
+    "2026-09-19|wigan-athletic-fc|wycombe-wanderers-fc",
+    "2026-09-19|woking-fc|kidderminster-harriers-fc"
+  ]
+}
