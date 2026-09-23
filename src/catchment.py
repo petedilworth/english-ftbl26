@@ -330,32 +330,25 @@ def _club_frame(conn: sqlite3.Connection) -> pd.DataFrame:
     return clubs
 
 
-def rebuild_club_catchment(conn: sqlite3.Connection) -> int:
+def _gravity(conn: sqlite3.Connection):
     """
-    Recompute club_catchment from msoa_demographics and club_master.
-
-    Cheap enough to run unconditionally on every pipeline pass: roughly
-    180 clubs by 7,000 MSOAs is a 1.2M-cell matrix, which numpy does in
-    well under a second. Storing it rather than computing it at render
-    time keeps the model out of the site build and makes the numbers
-    queryable from a screening script.
+    The model's shared arithmetic: MSOAs, clubs, the distance matrix, and
+    each club's pull on each MSOA at its current tier and at its ceiling.
+    Returns None when there is nothing to model. One implementation, used
+    by the stored table and by anything that needs the full share matrix -
+    the catchment edition asks who takes a club's people, which the table
+    does not keep.
     """
     import numpy as np
 
-    conn.execute(CREATE_CLUB_CATCHMENT_SQL)
-
     msoas = pd.read_sql_query(
-        "SELECT msoa_code, latitude, longitude, population, net_income"
+        "SELECT msoa_code, local_authority, latitude, longitude, population, net_income"
         " FROM msoa_demographics",
         conn,
     )
     clubs = _club_frame(conn)
-
     if msoas.empty or clubs.empty:
-        logger.info("No MSOA or club coordinates - club_catchment left empty")
-        conn.execute("DELETE FROM club_catchment")
-        conn.commit()
-        return 0
+        return None
 
     # Great-circle distance, vectorised. Same formula as
     # great_circle_miles, which stays the readable reference.
@@ -376,6 +369,88 @@ def rebuild_club_catchment(conn: sqlite3.Connection) -> int:
     pull_current = a_current[:, None] * decay
     pull_restored = a_restored[:, None] * decay
     denom = pull_current.sum(axis=0)                       # per MSOA
+    return msoas, clubs, dist, pull_current, pull_restored, denom
+
+
+class ShareModel:
+    """
+    Every club's share of every MSOA with every club at its current tier -
+    the divisions as they stand, not the restored counterfactual the
+    stored contest_ratio uses. Built on demand; about a second.
+    """
+
+    def __init__(self, msoas, clubs, dist, share):
+        import numpy as np
+
+        self.club_ids: list[str] = clubs["club_id"].tolist()
+        self.index = {cid: i for i, cid in enumerate(self.club_ids)}
+        self.club_lat = clubs["latitude"].to_numpy(dtype=float)
+        self.club_lon = clubs["longitude"].to_numpy(dtype=float)
+        self.msoa_lat = msoas["latitude"].to_numpy(dtype=float)
+        self.msoa_lon = msoas["longitude"].to_numpy(dtype=float)
+        self.msoa_la = msoas["local_authority"].fillna("").to_numpy()
+        self.pop = msoas["population"].to_numpy(dtype=float)
+        self.share = share                                  # clubs x msoas
+        self.nearest = dist.argmin(axis=0)                  # club index per MSOA
+        self.winner = share.argmax(axis=0)                  # club drawing most of each MSOA
+        self.catchment = share @ self.pop
+
+    def turf(self, club_id: str):
+        """Boolean mask: the MSOAs nearer this club's ground than any other."""
+        return self.nearest == self.index[club_id]
+
+    def turf_people(self, club_id: str) -> float:
+        return float(self.pop[self.turf(club_id)].sum())
+
+    def takes(self, club_id: str, of_club: str) -> float:
+        """People in of_club's turf that club_id draws."""
+        mask = self.turf(of_club)
+        return float(self.share[self.index[club_id], mask] @ self.pop[mask])
+
+    def takers(self, club_id: str, n: int = 3) -> list[tuple[str, float]]:
+        """Who draws the people on this club's own doorstep: (club_id, people), most first."""
+        import numpy as np
+
+        mask = self.turf(club_id)
+        drawn = self.share[:, mask] @ self.pop[mask]
+        order = np.argsort(-drawn)
+        return [(self.club_ids[j], float(drawn[j])) for j in order[:n + 1]
+                if self.club_ids[j] != club_id][:n]
+
+
+def current_shares(conn: sqlite3.Connection) -> ShareModel | None:
+    import numpy as np
+
+    g = _gravity(conn)
+    if g is None:
+        return None
+    msoas, clubs, dist, pull_current, _pull_restored, denom = g
+    with np.errstate(divide="ignore", invalid="ignore"):
+        share = np.where(denom > 0, pull_current / denom, 0.0)
+    return ShareModel(msoas, clubs, dist, share)
+
+
+def rebuild_club_catchment(conn: sqlite3.Connection) -> int:
+    """
+    Recompute club_catchment from msoa_demographics and club_master.
+
+    Cheap enough to run unconditionally on every pipeline pass: roughly
+    180 clubs by 7,000 MSOAs is a 1.2M-cell matrix, which numpy does in
+    well under a second. Storing it rather than computing it at render
+    time keeps the model out of the site build and makes the numbers
+    queryable from a screening script.
+    """
+    import numpy as np
+
+    conn.execute(CREATE_CLUB_CATCHMENT_SQL)
+
+    g = _gravity(conn)
+    if g is None:
+        logger.info("No MSOA or club coordinates - club_catchment left empty")
+        conn.execute("DELETE FROM club_catchment")
+        conn.commit()
+        return 0
+    msoas, clubs, dist, pull_current, pull_restored, denom = g
 
     pop = msoas["population"].to_numpy(dtype=float)
     income = msoas["net_income"].to_numpy(dtype=float)

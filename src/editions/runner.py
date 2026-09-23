@@ -42,9 +42,7 @@ def main(argv: list[str] | None = None) -> int:
                         help="send even if this edition and date already has a sent marker")
     parser.add_argument("--db-path", type=Path, default=config.DB_PATH)
     parser.add_argument("--fixtures-file", type=Path,
-                        help="preview only: read fixtures from this CSV instead of the network")
-    parser.add_argument("--theme", help="catchment only: force a theme instead of the week's")
-    parser.add_argument("--profile", help="catchment only: force the club profiled (club_id)")
+                        help="read fixtures from this CSV instead of the network (preview, catchment)")
     parser.add_argument("--retries", type=int, default=4,
                         help="when the edition refuses to send for missing input, rebuild this many"
                              " more times before giving up")
@@ -73,10 +71,6 @@ def main(argv: list[str] | None = None) -> int:
     kwargs = {}
     if args.fixtures_file:
         kwargs["fixtures_file"] = args.fixtures_file
-    if args.theme:
-        kwargs["theme"] = args.theme
-    if args.profile:
-        kwargs["profile_id"] = args.profile
     accepted = inspect.signature(edition.build).parameters
     unknown = sorted(k for k in kwargs if k not in accepted)
     if unknown:

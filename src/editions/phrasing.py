@@ -333,75 +333,94 @@ def thin_review(label: str) -> str:
 
 # ── Catchment phrasing ─────────────────────────────────────────────────────
 
-THEME_TITLES = {
-    "contested": "Contested ground",
-    "market": "Big markets, low divisions",
-    "overachievers": "Small markets, high divisions",
-    "restored": "Restored to their ceiling",
-    "deserts": "Football deserts",
-}
-
-
-def theme_title(kind: str) -> str:
-    return THEME_TITLES.get(kind, kind)
-
-
-def theme_intro(kind: str, n: int) -> str:
-    if kind == "contested":
-        return (f"Of the {n} clubs in the top five divisions, these lose the largest share "
-                "of the people nearest to them to other clubs.")
-    if kind == "market":
-        return ("The largest catchments in League One, League Two and the National League - "
-                "the markets that could support more than they have.")
-    if kind == "overachievers":
-        return "The smallest catchments in the Premier League and Championship."
-    if kind == "restored":
-        return ("How many more people each club would draw restored to its highest recorded "
-                "level, with every other club left where it is.")
-    if kind == "deserts":
-        return ("Local authorities with the most people living further than twenty miles "
-                "from any club in the top five divisions.")
-    return ""
-
-
 def division_phrase(name: str) -> str:
     """'the Premier League' and 'the Championship', but bare 'League One'."""
     return name if name.startswith("League") or not name else f"the {name}"
 
 
-def _people(n: int | None) -> str:
-    return f"{n:,}" if n else "—"
+def _people(n: float | None) -> str:
+    """Rounded to the thousand: the model does not know a club's catchment to the person."""
+    if not n:
+        return "none"
+    if n >= 1_000_000:
+        return f"{n / 1_000_000:.1f} million"
+    return f"{round(n, -3):,.0f}"
 
 
-def profile_paragraphs(p: dict, n_clubs: int) -> list[str]:
-    """The profile as neutral sentences; the template lays them out."""
-    out = []
-    where = f", at {p['stadium']}" if p.get("stadium") else ""
-    out.append(f"{p['name']} play in {division_phrase(p['division'])}{where}.")
-    out.append(f"The catchment model gives them {_people(p['pop'])} people to draw on, "
-               f"the {_ordinal(p['pop_rank'])} largest catchment of the {n_clubs} clubs in the "
-               f"top five divisions; by league position they are {_ordinal(p['ladder_rank'])}.")
-    if p.get("rival") and p.get("rival_miles") is not None:
-        rival_where = f" ({p['rival_division']})" if p.get("rival_division") else ""
-        out.append(f"The nearest club is {p['rival']}{rival_where}, {p['rival_miles']:.1f} miles away.")
-    if p.get("contest") is not None:
-        out.append(f"{round(100 * p['contest'])}% of the people nearest to them go elsewhere.")
-    if p.get("restored") and p.get("pop") and p["restored"] > p["pop"] and p.get("ceiling"):
-        out.append(f"Restored to {division_phrase(p['ceiling'])}, their highest recorded level, the model gives "
-                   f"them {_people(p['restored'])}.")
-    if p.get("income_extreme"):
-        side = "highest" if p["income_pct"] <= 50 else "lowest"
-        out.append(f"Net household income in their catchment is £{p['income']:,}, among the "
-                   f"{side} in the country.")
-    if p.get("level_sentence"):
-        out.append(p["level_sentence"] + ".")
-    return out
+def _pct(x: float) -> str:
+    return f"{round(100 * x)}%"
+
+
+def _takers_sentence(d: dict, skip: tuple = (), lead: str = "The next biggest draws are") -> str:
+    """The biggest other takers - named as the next few, never as 'the rest'."""
+    parts = [f"{t['name']} ({_pct(t['pct'])})" for t in d["takers"] if t["club_id"] not in skip]
+    if not parts:
+        return ""
+    return f"{lead} " + ", ".join(parts[:-1]) + (" and " if len(parts) > 1 else "") + parts[-1] + "."
+
+
+def _fixture_phrase(f: dict, club_id: str) -> str:
+    home = f.get("home_id") == club_id
+    other = f["away_name"] if home else f["home_name"]
+    day = f["date"].strftime("%A")
+    return f"They play {other} {'at home' if home else 'away'} on {day}."
+
+
+def shared_ground(f: dict, home: dict, away: dict) -> dict:
+    """
+    The fixture whose clubs draw most on each other's doorsteps. Two
+    claims, one per doorstep, each stating what the club keeps and what the
+    opponent takes - the numbers are the story.
+    """
+    headline = f"{f['home_name']} v {f['away_name']}: the shared ground"
+    paras = []
+    for d, other in ((home, away), (away, home)):
+        paras.append(
+            f"{_people(d['turf'])} people live nearer to {d['name']}'s ground than to any other. "
+            f"{d['name']} draw {_pct(d['kept_pct'])} of them; {other['name']} draw "
+            f"{_pct(d['opponent_takes'] / d['turf'] if d['turf'] else 0)}. "
+            + _takers_sentence(d, skip=(other["club_id"],), lead="The next biggest draws are"))
+    paras.append(f"They meet on {f['date']:%A}. On the map, each neighbourhood takes the colour "
+                 "of the club that draws most of it.")
+    return {"headline": headline, "paragraphs": paras}
+
+
+def market_section(kind: str, d: dict, f: dict, n_clubs: int, names: dict) -> dict:
+    """Bigger or smaller than their division: market rank against pyramid rank."""
+    if kind == "bigger":
+        headline = f"Bigger than their division: {d['name']}"
+    else:
+        headline = f"Smaller than their division: {d['name']}"
+    paras = [
+        f"The model gives {d['name']} {_people(d['catchment'])} people to draw on, the "
+        f"{_ordinal(d['market_rank'])} largest market of the {n_clubs} clubs in the top five "
+        f"divisions. They sit {_ordinal(d['ladder_rank'])} in the pyramid: "
+        f"{_ordinal(d['position'])} in {division_phrase(d['division'])}.",
+        f"On their own doorstep, {_people(d['turf'])} people, they draw {_pct(d['kept_pct'])}. "
+        + _takers_sentence(d, lead="The next biggest draws are"),
+        _fixture_phrase(f, d["club_id"]),
+    ]
+    return {"headline": headline, "paragraphs": [p for p in paras if p]}
 
 
 def catchment_subject(ctx: dict) -> str:
-    who = f" — {ctx['profile']['name']} profiled" if ctx.get("profile") else ""
-    return f"Catchment — {ctx['theme_title']}{who}"
+    lead = next((s for s in ctx["sections"] if s["kind"] == "shared"), None)
+    if lead:
+        f = lead["fixture"]
+        return f"Catchment — {f['home_name']} v {f['away_name']}, and whose people they are"
+    if ctx["sections"]:
+        return f"Catchment — {ctx['sections'][0]['text']['headline']}"
+    return "Catchment — nothing to map this week"
 
 
-def thin_catchment() -> str:
-    return "The catchment model has no rows for the top five divisions this week, so there is nothing to rank."
+def thin_catchment_no_fixtures() -> str:
+    return "No league fixtures reached the file for the next six days, so there is nothing to tie this week's catchment to."
+
+
+def thin_catchment_no_model() -> str:
+    return "The catchment model has no population data loaded this week, so there is nothing to map."
+
+
+def thin_catchment_no_story() -> str:
+    return ("Every club playing this week has been featured in the last month, or sits where its market "
+            "says it should. Nothing new to map.")

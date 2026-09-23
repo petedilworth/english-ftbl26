@@ -159,16 +159,22 @@ def _serial_fixture(f: dict) -> dict:
             for k, v in f.items()}
 
 
+def load_fixture_list(conn: sqlite3.Connection, date: datetime.date,
+                      fixtures_file: Path | None = None, window_days: int = 8) -> list[dict]:
+    """The fixtures from `date` for `window_days`, from a CSV or the network."""
+    resolver = entities.build_resolver(conn)
+    if fixtures_file:
+        df = pd.read_csv(fixtures_file, encoding="utf-8-sig",
+                         encoding_errors="replace", on_bad_lines="skip")
+        return fixtures_mod.parse_fixtures(df, resolver, today=date, window_days=window_days)
+    return fixtures_mod.fetch_fixtures(resolver, today=date, window_days=window_days)
+
+
 class PreviewEdition(Edition):
     name = "preview"
 
     def load_fixtures(self, fixtures_file: Path | None = None) -> list[dict]:
-        resolver = entities.build_resolver(self.conn)
-        if fixtures_file:
-            df = pd.read_csv(fixtures_file, encoding="utf-8-sig",
-                             encoding_errors="replace", on_bad_lines="skip")
-            return fixtures_mod.parse_fixtures(df, resolver, today=self.date)
-        return fixtures_mod.fetch_fixtures(resolver, today=self.date)
+        return load_fixture_list(self.conn, self.date, fixtures_file)
 
     def build(self, fixture_list: list[dict] | None = None,
               fixtures_file: Path | None = None) -> EditionOutput:

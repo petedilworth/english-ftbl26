@@ -1,4 +1,10 @@
-"""The Wednesday catchment edition: five themes and a rotating profile."""
+"""
+The Wednesday catchment edition: tied to the week's fixtures, one claim
+per section, a map as evidence.
+
+A four-club world: two neighbours three miles apart (the shared ground),
+a top-flight club on a small market, and a fifth-tier club on a large one.
+"""
 
 import datetime
 import json
@@ -12,46 +18,56 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 from test_digest import _make_db  # noqa: E402
 
+import catchment  # noqa: E402
 from editions import catchment as cm  # noqa: E402
-from editions import config, phrasing  # noqa: E402
+from editions import config, maps, phrasing  # noqa: E402
 from editions.catchment import CatchmentEdition  # noqa: E402
 from editions.registry import WEEKDAY_EDITIONS  # noqa: E402
 
-WEDNESDAY = datetime.date(2026, 9, 9)
+WEDNESDAY = datetime.date(2026, 9, 16)
+NAMES = {"giant-fc": "Giant FC", "steady-fc": "Steady FC", "alpha-fc": "Alpha FC", "beta-fc": "Beta FC"}
+GROUNDS = {"giant-fc": (53.00, -1.50), "steady-fc": (53.03, -1.55),
+           "alpha-fc": (51.50, -0.10), "beta-fc": (52.40, -3.00)}
 
 
-def _db():
+def _db(extra_clubs=()):
     conn = _make_db()
-    conn.execute("ALTER TABLE club_master ADD COLUMN stadium_name TEXT")
-    conn.execute("ALTER TABLE club_master ADD COLUMN latitude REAL")
-    conn.execute("ALTER TABLE club_master ADD COLUMN longitude REAL")
-    conn.execute("UPDATE club_master SET stadium_name='Giant Park', latitude=53.0, longitude=-1.5"
-                 " WHERE club_id='giant-fc'")
-    conn.execute("UPDATE club_master SET stadium_name='Steady Road', latitude=53.05, longitude=-1.55"
-                 " WHERE club_id='steady-fc'")
-    conn.execute("CREATE TABLE club_catchment (club_id TEXT, catchment_pop_current INT,"
-                 " catchment_pop_restored INT, catchment_income INT, voronoi_pop INT,"
-                 " contest_ratio REAL, nearest_rival_id TEXT, nearest_rival_miles REAL,"
-                 " nearest_rival_tier INT, model_version TEXT)")
-    conn.execute("INSERT INTO club_catchment VALUES ('giant-fc', 400000, 900000, 52000, 500000,"
-                 " 0.2, 'steady-fc', 4.1, 3, 'test')")
-    conn.execute("INSERT INTO club_catchment VALUES ('steady-fc', 90000, 90000, 33000, 300000,"
-                 " 0.7, 'giant-fc', 4.1, 3, 'test')")
-    conn.execute("CREATE TABLE msoa_demographics (msoa_code TEXT, msoa_name TEXT,"
-                 " local_authority TEXT, latitude REAL, longitude REAL, population INT,"
-                 " population_year INT, net_income INT, net_income_year INT,"
-                 " income_ci_lower INT, income_ci_upper INT, source_url TEXT)")
-    # One MSOA next to the clubs, two in a far district, one far but in a near district.
-    for code, la, lat, lon, pop in [("E1", "Nearby", 53.01, -1.51, 8000),
-                                    ("E2", "Far Moor", 54.2, -2.9, 6000),
-                                    ("E3", "Far Moor", 54.3, -2.8, 5000),
-                                    ("E4", "Nearby", 53.9, -1.5, 3000)]:
-        conn.execute("INSERT INTO msoa_demographics VALUES (?,?,?,?,?,?,2022,NULL,NULL,NULL,NULL,'')",
-                     (code, code, la, lat, lon, pop))
-    # The current season, so the ladder rank has positions to read.
-    conn.execute("INSERT INTO standings VALUES (2027,3,'League One','giant-fc','Giant FC',4,5,3,1,1,7,4,3,10,'In progress','test')")
-    conn.execute("INSERT INTO standings VALUES (2027,3,'League One','steady-fc','Steady FC',9,5,1,2,2,4,6,-2,5,'In progress','test')")
+    for col in ("stadium_name TEXT", "latitude REAL", "longitude REAL"):
+        conn.execute(f"ALTER TABLE club_master ADD COLUMN {col}")
+    conn.execute("INSERT INTO club_master (club_id, canonical_name, current_tier) VALUES ('alpha-fc','Alpha FC',1)")
+    conn.execute("INSERT INTO club_master (club_id, canonical_name, current_tier) VALUES ('beta-fc','Beta FC',5)")
+    for cid, (lat, lon) in GROUNDS.items():
+        conn.execute("UPDATE club_master SET latitude=?, longitude=? WHERE club_id=?", (lat, lon, cid))
+    for cid, name, tier, lat, lon in extra_clubs:
+        conn.execute("INSERT INTO club_master (club_id, canonical_name, current_tier, latitude, longitude)"
+                     " VALUES (?,?,?,?,?)", (cid, name, tier, lat, lon))
+    # The current season: alpha top of the pyramid, beta fifth tier.
+    for cid, tier, pos in [("alpha-fc", 1, 1), ("giant-fc", 3, 1), ("steady-fc", 3, 2), ("beta-fc", 5, 1)]:
+        conn.execute("INSERT INTO standings VALUES (2027,?,?,?,?,?,5,3,1,1,7,4,3,10,'In progress','t')",
+                     (tier, "x", cid, NAMES[cid], pos))
+    conn.execute("CREATE TABLE msoa_demographics (msoa_code TEXT, msoa_name TEXT, local_authority TEXT,"
+                 " latitude REAL, longitude REAL, population INT, population_year INT, net_income INT,"
+                 " net_income_year INT, income_ci_lower INT, income_ci_upper INT, source_url TEXT)")
+    # Around each ground: alpha tiny, beta huge, the neighbours in between.
+    pops = {"alpha-fc": 1_000, "beta-fc": 60_000, "giant-fc": 9_000, "steady-fc": 7_000}
+    n = 0
+    for cid, (lat, lon) in GROUNDS.items():
+        for dlat, dlon in [(0.02, 0), (-0.02, 0), (0, 0.03), (0, -0.03)]:
+            n += 1
+            conn.execute("INSERT INTO msoa_demographics VALUES (?,?,?,?,?,?,2022,NULL,NULL,NULL,NULL,'')",
+                         (f"E{n:03d}", f"E{n:03d}", f"{cid}-la", lat + dlat, lon + dlon, pops[cid]))
     return conn
+
+
+def _fixtures():
+    return [
+        {"div": "E2", "tier": 3, "division_name": "League One", "date": datetime.date(2026, 9, 19),
+         "time": "15:00", "home_name": "Giant FC", "away_name": "Steady FC",
+         "home_id": "giant-fc", "away_id": "steady-fc"},
+        {"div": "E0", "tier": 1, "division_name": "Premier League", "date": datetime.date(2026, 9, 20),
+         "time": "15:00", "home_name": "Alpha FC", "away_name": "Beta FC",
+         "home_id": "alpha-fc", "away_id": "beta-fc"},
+    ]
 
 
 @pytest.fixture
@@ -61,92 +77,102 @@ def roots(tmp_path, monkeypatch):
     return tmp_path
 
 
-def test_clubs_in_scope_are_ranked_by_market_and_by_level():
-    clubs = {c["club_id"]: c for c in cm.clubs_in_scope(_db(), 2027)}
-    assert clubs["giant-fc"]["pop_rank"] == 1 and clubs["steady-fc"]["pop_rank"] == 2
-    assert clubs["giant-fc"]["ladder_rank"] == 1 and clubs["steady-fc"]["ladder_rank"] == 2
-    assert clubs["giant-fc"]["income_pct"] < 50 < clubs["steady-fc"]["income_pct"]
+def _build(tmp_path, conn=None, fixtures=None):
+    return CatchmentEdition(conn or _db(), WEDNESDAY, tmp_path / "charts").build(
+        fixture_list=_fixtures() if fixtures is None else fixtures)
 
 
-def test_every_theme_returns_rows():
+# ── the model ──────────────────────────────────────────────────────────────
+
+def test_a_doorstep_is_split_between_clubs_and_the_shares_add_up():
+    m = catchment.current_shares(_db())
+    turf = m.turf_people("giant-fc")
+    drawn = sum(m.takes(c, "giant-fc") for c in m.club_ids)
+    assert turf == 36_000 and drawn == pytest.approx(turf)
+    kept = m.takes("giant-fc", "giant-fc")
+    assert 0 < kept < turf
+    assert m.takers("giant-fc")[0][0] == "steady-fc"      # the neighbour takes most of the rest
+
+
+# ── the edition ────────────────────────────────────────────────────────────
+
+def test_the_lead_is_the_fixture_whose_clubs_share_the_most_people(roots, tmp_path):
+    out = _build(tmp_path)
+    lead = out.claims[0]["lead"]
+    assert lead == ["giant-fc", "steady-fc"]
+    assert out.subject == "Catchment — Giant FC v Steady FC, and whose people they are"
+
+
+def test_each_doorstep_sentence_uses_that_doorsteps_own_people(roots, tmp_path):
+    """The opponent's share is of THIS club's doorstep - a swapped
+    denominator once reported West Ham drawing 13% of Millwall's people
+    when the model said 7%."""
     conn = _db()
-    clubs = cm.clubs_in_scope(conn, 2027)
-    names = {"giant-fc": "Giant FC", "steady-fc": "Steady FC"}
-    contested = cm.theme_contested(clubs, names)
-    assert contested[0]["name"] == "Steady FC" and contested[0]["contested"] == 70
-    assert contested[0]["rival"] == "Giant FC" and contested[0]["rival_division"] == "League One"
-    assert [r["name"] for r in cm.theme_market(clubs)] == ["Giant FC", "Steady FC"]
-    assert cm.theme_overachievers(clubs) == []           # nobody in tiers 1-2
-    restored = cm.theme_restored(clubs)
-    assert len(restored) == 1 and restored[0]["multiple"] == 2.2 and restored[0]["ceiling"] == "Premier League"
+    m = catchment.current_shares(conn)
+    out = _build(tmp_path, conn)
+    turf = m.turf_people("giant-fc")
+    kept = round(100 * m.takes("giant-fc", "giant-fc") / turf)
+    steady = round(100 * m.takes("steady-fc", "giant-fc") / turf)
+    assert f"Giant FC draw {kept}% of them; Steady FC draw {steady}%." in out.text
 
 
-def test_deserts_sum_people_beyond_twenty_miles_by_authority():
-    conn = _db()
-    rows = cm.theme_deserts(conn, cm.clubs_in_scope(conn, 2027))
-    by_la = {r["authority"]: r for r in rows}
-    assert by_la["Far Moor"]["people_far"] == 11000 and by_la["Far Moor"]["people"] == 11000
-    assert by_la["Nearby"]["people_far"] == 3000 and by_la["Nearby"]["people"] == 11000
-    assert rows[0]["authority"] == "Far Moor" and rows[0]["furthest_miles"] > 60
-    assert rows[0]["nearest_club"] in ("Giant FC", "Steady FC")
+def test_bigger_and_smaller_than_their_division(roots, tmp_path):
+    out = _build(tmp_path)
+    text = out.text
+    assert "BIGGER THAN THEIR DIVISION: BETA FC" in text
+    assert "SMALLER THAN THEIR DIVISION: ALPHA FC" in text
+    assert "the 1st largest market of the 4 clubs" in text          # beta
+    assert "They sit 1st in the pyramid: 1st in the Premier League." in text   # alpha
+    assert sorted(out.claims[0]["featured"]) == sorted(NAMES)
 
 
-def test_the_profile_rotates_through_the_archive(roots, tmp_path):
-    conn = _db()
-    first = CatchmentEdition(conn, WEDNESDAY, tmp_path / "c1").build()
-    assert first.claims == [{"theme": first.claims[0]["theme"], "profile": first.claims[0]["profile"]}]
-    profiled = first.claims[0]["profile"]
-    # Archive it the way the runner would, then build the next week.
-    d = config.ARCHIVE_ROOT / "catchment" / WEDNESDAY.isoformat()
+def test_every_section_has_a_map(roots, tmp_path):
+    out = _build(tmp_path)
+    cids = [cid for _, cid in out.images]
+    assert cids == ["map-lead", "map-bigger", "map-smaller"]
+    assert all(p.exists() and p.stat().st_size > 5_000 for p, _ in out.images)
+    for cid in cids:
+        assert f"cid:{cid}" in out.html
+
+
+def test_clubs_featured_in_the_last_month_are_not_featured_again(roots, tmp_path):
+    d = config.ARCHIVE_ROOT / "catchment" / "2026-09-09"
     d.mkdir(parents=True)
-    (d / "claims.json").write_text(json.dumps({"claims": first.claims}))
-    second = CatchmentEdition(conn, WEDNESDAY + datetime.timedelta(days=7), tmp_path / "c2").build()
-    assert second.claims[0]["profile"] != profiled
-    assert second.claims[0]["theme"] != first.claims[0]["theme"]   # the week moved the theme on
+    (d / "claims.json").write_text(json.dumps({"claims": [{"featured": ["beta-fc"], "lead": None}]}))
+    out = _build(tmp_path)
+    assert "beta-fc" not in out.claims[0]["featured"]
+    assert "BETA FC" not in out.text
 
 
-def test_the_profile_reads_as_sentences_with_a_chart(roots, tmp_path):
-    out = CatchmentEdition(_db(), WEDNESDAY, tmp_path / "c").build(theme="market", profile_id="giant-fc")
-    p = out.text
-    assert "Giant FC play in League One, at Giant Park." in p
-    assert phrasing.division_phrase("Championship") == "the Championship"
-    assert "the 1st largest catchment of the 2 clubs" in p and "by league position they are 1st" in p
-    assert "The nearest club is Steady FC (League One), 4.1 miles away." in p
-    assert "20% of the people nearest to them go elsewhere." in p
-    assert "Restored to the Premier League, their highest recorded level, the model gives them 900,000." in p
-    assert "Net household income" not in p   # two clubs sit at the 25th and 75th percentile: not extremes
-    assert out.images and out.images[0][1] == "profile"
-    assert out.subject == "Catchment — Big markets, low divisions — Giant FC profiled"
-    assert config.club_url("giant-fc") in out.html
+def test_welsh_clubs_are_never_featured(roots, tmp_path):
+    conn = _db(extra_clubs=[("swansea-city-fc", "Swansea City", 2, 51.64, -3.94)])
+    conn.execute("INSERT INTO standings VALUES (2027,2,'x','swansea-city-fc','Swansea City',1,5,3,1,1,7,4,3,10,'In progress','t')")
+    fx = _fixtures() + [{"div": "E1", "tier": 2, "division_name": "Championship",
+                         "date": datetime.date(2026, 9, 19), "time": "15:00",
+                         "home_name": "Swansea City", "away_name": "Alpha FC",
+                         "home_id": "swansea-city-fc", "away_id": "alpha-fc"}]
+    out = _build(tmp_path, conn, fx)
+    assert "swansea-city-fc" not in out.claims[0]["featured"]
+    assert "SWANSEA" not in out.text
 
 
-def test_income_is_silent_in_the_middle():
-    p = {"name": "X", "division": "League One", "pop": 1, "pop_rank": 1, "ladder_rank": 1,
-         "income": 40000, "income_pct": 50.0, "income_extreme": False}
-    assert not any("income" in s for s in phrasing.profile_paragraphs(p, 10))
+def test_an_empty_fixture_list_is_refused(roots, tmp_path):
+    out = _build(tmp_path, fixtures=[])
+    assert out.refuse and out.thin and out.images == []
 
 
-def test_thin_without_a_catchment_table(roots, tmp_path):
-    conn = _make_db()
-    out = CatchmentEdition(conn, WEDNESDAY, tmp_path / "c").build()
-    assert out.thin and out.profile is None if hasattr(out, "profile") else out.thin
-    assert out.claims == [{"theme": out.claims[0]["theme"], "profile": None}]
+def test_the_map_skips_a_club_the_model_does_not_know(tmp_path):
+    m = catchment.current_shares(_db())
+    assert maps.catchment_map(m, ["nobody-fc"], NAMES, tmp_path / "x.png") is None
+    path = maps.catchment_map(m, ["giant-fc", "steady-fc"], NAMES, tmp_path / "y.png",
+                              region_of=["giant-fc", "steady-fc"])
+    assert path and path.exists()
 
 
-def test_clubs_outside_england_are_measured_but_never_ranked(roots, tmp_path):
-    conn = _db()
-    conn.execute("INSERT INTO club_master VALUES ('swansea-city-fc','Swansea City',NULL,NULL,2,"
-                 "'Swansea.com Stadium',51.64,-3.94)")
-    conn.execute("INSERT INTO club_catchment VALUES ('swansea-city-fc', 5000, 5000, NULL, 5000,"
-                 " 0.5, 'giant-fc', 80.0, 3, 'test')")
-    clubs = cm.clubs_in_scope(conn, 2027)
-    swansea = next(c for c in clubs if c["club_id"] == "swansea-city-fc")
-    assert swansea["outside_england"] and "pop_rank" not in swansea
-    assert cm.choose_profile([c for c in clubs if not c["outside_england"]])["club_id"] != "swansea-city-fc"
-    out = CatchmentEdition(conn, WEDNESDAY, tmp_path / "c").build(theme="overachievers")
-    assert "Swansea" not in out.html          # tier 2, would top the smallest-market table
-    deserts = cm.theme_deserts(conn, clubs)
-    assert deserts                            # still measured from every ground
+def test_people_are_rounded_and_percentages_whole():
+    assert phrasing._people(306_812) == "307,000"
+    assert phrasing._people(1_594_898) == "1.6 million"
+    assert phrasing._pct(0.4949) == "49%"
 
 
 def test_wednesday_is_scheduled():
