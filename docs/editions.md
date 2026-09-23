@@ -71,14 +71,30 @@ forward to both reviews.
 
 ## 4. Wednesday catchment
 
-A comparative theme on top, one club profiled below. Themes rotate:
-contested grounds (pairs sharing a catchment), football deserts,
-large markets in low divisions, overachievers by points per head, this
-weekend's longest and shortest away trips.
+Tied to that week's fixtures (Wednesday to the following Monday). Three
+sections, each one claim in prose with a map as its evidence:
 
-Population and contest ratio lead. Catchment income spans only
-£31,930 to £53,546 across all 331 clubs and is mentioned **only** for
-clubs in the top or bottom 5%.
+- **The shared ground** – the fixture whose two clubs draw most on each
+  other's doorsteps: what each keeps of its own, what the opponent takes,
+  and the next biggest takers.
+- **Bigger than their division** – the club playing that week whose
+  market ranks furthest above its place in the pyramid.
+- **Smaller than their division** – the reverse.
+
+A club's *doorstep* is the neighbourhoods nearer its ground than any
+other. Shares come from the catchment model with every club at its
+current tier (`catchment.current_shares`) – the divisions as they stand,
+not the restored counterfactual behind the site's contest figures.
+
+The map (`src/editions/maps.py`): each neighbourhood a dot sized by
+population, coloured by the club that draws most of it. Up to three
+clubs in the first three validated categorical slots, every other club
+grey; a rival needs three neighbourhoods in frame to earn a colour.
+
+A club featured in the last four editions is not featured again. Welsh
+clubs are never featured – the demographics are England-only – but stay
+in the model as takers. No fixtures in the file means refuse and retry,
+as for the preview.
 
 ## 5. Thursday finance
 
