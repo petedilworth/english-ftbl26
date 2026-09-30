@@ -1,32 +1,36 @@
 {% extends "base.html" %}
 {% block content %}
 <h1>The most disliked clubs</h1>
-<p class="subtitle">Four kinds of dislike, scored apart, and why Tottenham are only in one of them.</p>
+<p class="subtitle">Four kinds of dislike, one index you can reweight, and why Tottenham are only in one of the four.</p>
 
 <div class="theme-intro">{{ intro_html }}</div>
 
-<h2>Dislike against success</h2>
-<p class="subtitle">Every club with a top-flight season since 1958/59. Across: what they have won. Up: one kind of dislike at a time. Click a dot for the working.</p>
-<div class="map-chips chip-row hatred-kind-chips" role="group" aria-label="Kind of dislike">
+<h2>The hatred index</h2>
+<p class="subtitle">Each kind is scaled so its leader scores 1, then the four are averaged with the weights below, out of 100. Equal weights to start. Move a slider to say what you think counts; the bars re-sort and the arrows show the move from equal weights. Click a club for the working.</p>
+<div class="hatred-weights" role="group" aria-label="Weights for each kind of dislike">
   {% for k in kinds %}
-  <button class="chip{% if k.key == default_kind %} chip-active{% endif %}" data-kind="{{ k.key }}" aria-pressed="{{ 'true' if k.key == default_kind else 'false' }}">{{ k.label }}</button>
+  <label class="hatred-weight">
+    <span class="hatred-swatch" style="background: {{ k.color }}"></span>
+    <span class="hatred-weight-name">{{ k.label }}</span>
+    <input type="range" min="0" max="100" step="5" value="50" data-kind="{{ k.key }}" aria-label="Weight for {{ k.label | lower }}">
+    <output class="hatred-weight-share" data-kind="{{ k.key }}">{{ equal_weight }}%</output>
+  </label>
   {% endfor %}
+  <button class="chip hatred-reset" type="button">Equal weights</button>
 </div>
-<div class="chart-holder">
-  <svg id="hatred-scatter" viewBox="0 0 {{ width }} {{ height }}" preserveAspectRatio="xMidYMid meet" aria-label="Dislike against success">
-    <line x1="{{ pad_left }}" y1="{{ height - pad_bottom }}" x2="{{ width - pad_right }}" y2="{{ height - pad_bottom }}" stroke="#c8ced6" stroke-width="1"></line>
-    <line x1="{{ pad_left }}" y1="{{ pad_top }}" x2="{{ pad_left }}" y2="{{ height - pad_bottom }}" stroke="#c8ced6" stroke-width="1"></line>
-    <text x="{{ (width) / 2 }}" y="{{ height - 6 }}" font-size="10" fill="#6b7683" text-anchor="middle">Titles and top-four finishes since 1958/59 →</text>
-    <text id="hatred-y-label" x="12" y="{{ pad_top + 4 }}" font-size="10" fill="#6b7683" text-anchor="start">{{ default_label }} →</text>
-    {% for p in points %}
-    <circle cx="{{ p.cx }}" cy="{{ p.cy }}" r="5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="1.5"
-            class="hatred-dot" data-club="{{ p.club_id }}" tabindex="0" role="button"><title>{{ p.tooltip }}</title></circle>
-    {% endfor %}
-    {% for p in labelled %}
-    <text x="{{ p.cx + 8 }}" y="{{ p.cy + 4 }}" font-size="11" font-weight="600" fill="#17202a" class="hatred-label">{{ p.name }}</text>
-    {% endfor %}
-  </svg>
-</div>
+<ol class="hatred-bars" id="hatred-bars">
+  {% for b in bars %}
+  <li class="hatred-bar" data-club="{{ b.club_id }}" tabindex="0" role="button"{% if b.hidden %} hidden{% endif %}>
+    <span class="hatred-rank">{{ b.rank }}</span>
+    <span class="hatred-name">{{ b.name }}</span>
+    <span class="hatred-track">{% for s in b.segments %}<span class="hatred-seg" style="width: {{ s.width }}%; background: {{ s.color }}" title="{{ s.title }}"></span>{% endfor %}</span>
+    <span class="hatred-value">{{ b.index }}<span class="hatred-move"></span></span>
+  </li>
+  {% endfor %}
+</ol>
+{% if bars | length > shown %}
+<button class="chip hatred-more" type="button" aria-expanded="false">Show all {{ bars | length }}</button>
+{% endif %}
 <div id="hatred-detail" class="chart-detail" hidden></div>
 
 {% if surveys %}
@@ -35,7 +39,7 @@
 {% for s in surveys %}
 <p><b>{{ s.source }}</b> — “{{ s.question }}”</p>
 <div class="table-scroll"><table class="standings">
-  <tr><th>Club</th><th class="num">Survey</th><th class="num">Model rank, all kinds</th><th class="num">Envied</th><th class="num">Resented</th><th class="num">Mocked</th><th class="num">Despised</th></tr>
+  <tr><th>Club</th><th class="num">Survey</th><th class="num">Index rank, equal weights</th><th class="num">Envied</th><th class="num">Resented</th><th class="num">Mocked</th><th class="num">Despised</th></tr>
   {% for r in s.rows %}
   <tr><td><a href="{{ root }}/team/{{ r.club_id }}/index.html">{{ r.name }}</a></td><td class="num">{{ r.survey }}</td><td class="num">{{ r.model_rank }}</td><td class="num">{{ r.envied }}</td><td class="num">{{ r.resented }}</td><td class="num">{{ r.mocked }}</td><td class="num">{{ r.despised }}</td></tr>
   {% endfor %}
@@ -83,6 +87,7 @@
 <h2>How it is scored</h2>
 <div class="theme-intro">
 <p><b>Envied</b>: a title is three points and a top-four finish one, since 1958/59; the last ten seasons count double. <b>Resented</b>: wage bill rank within the division in the latest accounts, up to four points; financial-rules deductions in the top flight, two each; and ownership events from the curated list. <b>Mocked</b>: since the last title, a tenth of a point per top-flight season and a point per top-four finish. <b>Despised</b>: the curated list only, weighted one to five. <b>Exposure</b> — clubs within fifteen miles and people in reach — is shown in the detail and never multiplied in.</p>
+<p><b>The index</b>: each kind divided by the highest score any club has in it, so the leader of each scores 1 and the rest a fraction of that. The four fractions are then averaged with the slider weights and multiplied by 100. The scaling is what makes equal weights mean equal: without it envy, whose raw scores run to 86, would outvote despised, which stops at 5. The catch is that a kind with one runaway leader – mocked, where Tottenham score twice the next club – leaves everyone else in that kind small.</p>
 <p>Every weight is in <code>src/hatred.py</code> and every curated entry in <code>content/hatred.yml</code>, with a note saying what it refers to.</p>
 </div>
 
@@ -91,5 +96,6 @@
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script src="hatred-data.js"></script>
+<script src="{{ root }}/static/hash-state.js"></script>
 <script src="{{ root }}/static/hatred.js"></script>
 {% endblock %}

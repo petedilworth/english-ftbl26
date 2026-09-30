@@ -2875,16 +2875,21 @@ class SiteBuilder:
 
     # ── The most disliked clubs ──────────────────────────────────────────
 
+    # Stack order and colour: the first four slots of the reference
+    # palette, checked in this order as adjacent pairs, so each segment is
+    # distinct from the one it touches.
     HATRED_KINDS = [
-        {"key": "mocked", "label": "Mocked"}, {"key": "envied", "label": "Envied"},
-        {"key": "resented", "label": "Resented"}, {"key": "despised", "label": "Despised"},
+        {"key": "mocked", "label": "Mocked", "color": "#2a78d6"},
+        {"key": "envied", "label": "Envied", "color": "#eb6834"},
+        {"key": "resented", "label": "Resented", "color": "#1baf7a"},
+        {"key": "despised", "label": "Despised", "color": "#eda100"},
     ]
-    HATRED_PLOT = {"w": 760, "h": 400, "padL": 40, "padR": 24, "padT": 20, "padB": 40}
+    HATRED_SHOWN = 20  # bars before "show all"
 
     def _insight_hatred(self) -> None:
         """
-        Four kinds of dislike scored apart (src/hatred.py), a scatter that
-        switches kind, the villain of each decade against the editorial
+        Four kinds of dislike scored apart (src/hatred.py), an overall
+        index with weights the reader can move, the villain of each decade against the editorial
         pick, a map of where each club is the intruder, and the clubs that
         wear it. Gated on its prose like the other argued pages.
         """
@@ -2913,24 +2918,26 @@ class SiteBuilder:
         except Exception as exc:  # the page must build without the map
             logger.warning("hatred map skipped: %s", exc)
 
-        # Server-rendered first paint of the default kind; the script
-        # redraws on a chip click from the same data.
-        plot = self.HATRED_PLOT
-        default_kind = self.HATRED_KINDS[0]["key"]
-        x_max = max([r["success"] for r in rows] + [1.0])
-        y_max = max([r[default_kind] for r in rows] + [1.0])
-        plot_w = plot["w"] - plot["padL"] - plot["padR"]
-        plot_h = plot["h"] - plot["padT"] - plot["padB"]
-        points = []
-        for r in rows:
-            points.append({
-                "club_id": r["club_id"], "name": r["name"],
-                "cx": round(plot["padL"] + r["success"] / x_max * plot_w, 1),
-                "cy": round(plot["h"] - plot["padB"] - r[default_kind] / y_max * plot_h, 1),
-                "tooltip": f"{r['name']} — {default_kind} {r[default_kind]:.1f}, success {r['success']:.0f}",
+        # The index: each kind scaled to its leader, then an equal-weight
+        # mean. Server-rendered at equal weights; the script redraws from
+        # the same numbers when a slider moves.
+        norm = hatred_mod.normalised(rows)
+        index = hatred_mod.hatred_index(norm)
+        ranked = sorted(rows, key=lambda r: (-index[r["club_id"]], r["name"]))
+        top = max(index.values()) or 1.0
+        share = 1.0 / len(self.HATRED_KINDS)
+        bars = []
+        for n, r in enumerate(ranked, start=1):
+            cid = r["club_id"]
+            bars.append({
+                "club_id": cid, "name": r["name"], "rank": n,
+                "index": f"{index[cid]:.0f}", "hidden": n > self.HATRED_SHOWN,
+                "segments": [{
+                    "key": k["key"], "color": k["color"],
+                    "width": round(100 * share * norm[cid][k["key"]] * 100 / top, 2),
+                    "title": f"{k['label']}: {norm[cid][k['key']]:.2f} of the leader",
+                } for k in self.HATRED_KINDS if norm[cid][k["key"]] > 0],
             })
-        top = sorted(rows, key=lambda r: -r[default_kind])[:3]
-        labelled = [p for p in points if p["club_id"] in {t["club_id"] for t in top}]
 
         def scores(r):
             return {k: round(r[k], 1) for k in hatred_mod.KINDS}
@@ -2945,8 +2952,7 @@ class SiteBuilder:
                             "scores": scores(r) if r else None})
 
         # Surveys, when pasted in: the club's survey figure beside its model rank.
-        total_rank = {r["club_id"]: n for n, r in enumerate(
-            sorted(rows, key=lambda r: -sum(r[k] for k in hatred_mod.KINDS)), start=1)}
+        total_rank = {b["club_id"]: b["rank"] for b in bars}
         surveys = []
         for sv in curated.get("surveys") or []:
             if not isinstance(sv, dict) or not sv.get("scores"):
@@ -2975,18 +2981,15 @@ class SiteBuilder:
         out_dir.mkdir(parents=True, exist_ok=True)
         (out_dir / "hatred-data.js").write_text(
             "window.HATRED_DATA = " + json.dumps({
-                "kinds": self.HATRED_KINDS, "defaultKind": default_kind, "plot": plot,
+                "kinds": self.HATRED_KINDS, "shown": self.HATRED_SHOWN,
                 "clubs": club_json, "map": map_data,
             }) + ";", encoding="utf-8")
         self.render(
             "insight_hatred.html", out_dir / "index.html", 2,
             title="The most disliked clubs",
             intro_html=Markup(md.markdown(content.load_theme(source))),
-            kinds=self.HATRED_KINDS, default_kind=default_kind,
-            default_label=self.HATRED_KINDS[0]["label"],
-            width=plot["w"], height=plot["h"], pad_left=plot["padL"], pad_right=plot["padR"],
-            pad_top=plot["padT"], pad_bottom=plot["padB"],
-            points=points, labelled=labelled, surveys=surveys,
+            kinds=self.HATRED_KINDS, equal_weight=round(100 / len(self.HATRED_KINDS)),
+            bars=bars, shown=self.HATRED_SHOWN, surveys=surveys,
             eras=hatred_mod.decade_picks(self.conn, curated),
             map=map_data, wear_it=wear_it,
         )

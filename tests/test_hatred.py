@@ -90,6 +90,24 @@ def test_decade_picks_start_in_the_1960s_and_say_when_memory_differs():
     assert picks[1970]["agree"] is True and picks[1970]["why"] == "The record."
 
 
+def test_each_kind_is_scaled_to_its_leader_so_equal_weights_mean_equal():
+    rows = [
+        {"club_id": "a", "envied": 80.0, "resented": 0.0, "mocked": 0.0, "despised": 0.0},
+        {"club_id": "b", "envied": 0.0, "resented": 0.0, "mocked": 0.0, "despised": 4.0},
+        {"club_id": "c", "envied": 40.0, "resented": 0.0, "mocked": 0.0, "despised": 2.0},
+    ]
+    norm = hatred.normalised(rows)
+    assert norm["a"]["envied"] == 1.0 and norm["c"]["envied"] == 0.5
+    assert norm["a"]["resented"] == 0.0              # nobody resented: zero, not a division error
+    index = hatred.hatred_index(norm)
+    # Twenty times the raw envy, but the same index as the despised leader.
+    assert index["a"] == pytest.approx(25.0) and index["b"] == pytest.approx(25.0)
+    assert index["c"] == pytest.approx(25.0)
+    heavy = hatred.hatred_index(norm, {"envied": 3, "resented": 0, "mocked": 0, "despised": 1})
+    assert heavy["a"] == pytest.approx(75.0) and heavy["b"] == pytest.approx(25.0)
+    assert hatred.hatred_index(norm, {k: 0 for k in hatred.KINDS}) == {"a": 0.0, "b": 0.0, "c": 0.0}
+
+
 def test_financial_sanctions_count_only_in_the_top_flight():
     conn = _db()
     conn.execute("CREATE TABLE points_deductions (club_id TEXT, season_end_year INT, tier INT,"
@@ -99,7 +117,7 @@ def test_financial_sanctions_count_only_in_the_top_flight():
     assert hatred.financial_sanctions(conn) == {"winner-fc": 1}
 
 
-def test_the_page_builds_with_scatter_eras_and_wear_it(tmp_path, monkeypatch):
+def test_the_page_builds_with_index_eras_and_wear_it(tmp_path, monkeypatch):
     import shutil
     import yaml
 
@@ -137,7 +155,9 @@ def test_the_page_builds_with_scatter_eras_and_wear_it(tmp_path, monkeypatch):
 
     page = (out / "insights" / "hatred" / "index.html").read_text(encoding="utf-8")
     assert "Why some clubs are disliked." in page
-    assert 'class="hatred-dot" data-club="giant-fc"' in page
+    assert 'class="hatred-bar" data-club="giant-fc"' in page
+    assert page.count('type="range"') == 4 and page.count('value="50"') == 4   # equal to start
+    assert "Equal weights" in page
     assert "Test poll" in page and "40%" in page
     assert "2020s" in page and "Won it." in page and "agree" in page
     assert "Nobody" in page and "Cares." in page
