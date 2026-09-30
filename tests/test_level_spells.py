@@ -146,9 +146,12 @@ def test_the_page_names_no_starting_season_it_did_not_derive():
 
 
 def test_every_row_links_to_the_club_s_own_level_bar():
+    """The spell tables go to the level bar; the money tables, tested
+    separately, go to the finances section."""
     html = _page()
-    links = re.findall(r'href="([^"]*?/team/[^"]+)"', html)
-    assert links, "no club links on the page"
+    spells = html.split("Playing above their level", 1)[1].split("And the money", 1)[0]
+    links = re.findall(r'href="([^"]*?/team/[^"]+)"', spells)
+    assert links, "no club links in the spell tables"
     assert all(link.endswith("#natural-level") for link in links)
     # and the anchor exists on a club page
     sample = links[0].split("/team/")[1].split("/")[0]
@@ -188,11 +191,84 @@ def test_the_outcome_table_rows_add_to_a_hundred():
         assert 98 <= sum(pcts) <= 102, row
 
 
-def test_the_finance_claim_carries_its_group_sizes():
-    """A median of ten clubs is a hint, and the copy has to say so."""
+# ── the money ──────────────────────────────────────────────────────────────
+
+def _money():
+    if not DB.exists():
+        pytest.skip("database not built")
+    conn = sqlite3.connect(DB)
+    return levelspells.money_rows(conn, levelspells.current_spells(conn))
+
+
+def test_money_uses_only_full_accounts_with_both_figures():
+    """
+    A ratio needs a numerator and a denominator. A small-company filing
+    has neither, and a row with turnover but no wages has half.
+    """
+    data = _money()
+    if data is None:
+        pytest.skip("finance groups too small")
+    for entry in data["clubs"]:
+        assert entry["turnover"] > 0 and entry["wages"] > 0
+        assert entry["direction"] in ("above", "below")
+    assert all(k in data["summary"] for k in ("above", "at", "below"))
+
+
+def test_the_out_of_step_table_is_ranked_by_ratio_and_marks_over_a_hundred():
+    data = _money()
+    if data is None:
+        pytest.skip("finance groups too small")
+    ratios = [e["ratio"] for e in data["clubs"]]
+    assert ratios == sorted(ratios, reverse=True)
+    for e in data["clubs"]:
+        assert e["over"] == (e["ratio"] > 1.0)
+
+
+def test_the_year_on_year_table_is_ranked_by_the_size_of_the_move():
+    data = _money()
+    if data is None or not data["moved"]:
+        pytest.skip("no club has two years on file")
+    changes = [e["ratio"] - e["previous_ratio"] for e in data["moved"]]
+    assert changes == sorted(changes, reverse=True)
+    assert all(e["previous_season"] < e["season"] for e in data["moved"])
+
+
+def test_the_money_section_says_what_the_numbers_say():
+    """
+    The claim is derived, not written: the counts in the sentence must be
+    the counts in the table under it.
+    """
     html = _page()
     if "And the money" not in html:
         pytest.skip("finance groups too small to render")
-    text = html.split("And the money", 1)[1].split("</p>", 1)[0]
-    assert re.search(r"\(\d+ clubs\)", text)
-    assert "hint" in text
+    section = html.split("And the money", 1)[1]
+    sentence = section.split("</p>", 1)[0]
+    table = section.split("<table", 1)[1].split("</table>", 1)[0]
+    cells = re.findall(r"<td class=\"num\">(\d+) of (\d+)</td>", table)
+    assert len(cells) == 3, "one 'x of n' per group"
+    above, at, below = cells
+    out_over = int(above[0]) + int(below[0])
+    out_n = int(above[1]) + int(below[1])
+    assert f"{out_over} of the {out_n} clubs" in sentence
+    assert f"{at[0]} of the {at[1]} at their level" in sentence
+    assert "middle of the pyramid" in sentence
+
+
+def test_money_rows_link_to_the_club_s_finance_section():
+    html = _page()
+    if "And the money" not in html:
+        pytest.skip("finance groups too small to render")
+    section = html.split("And the money", 1)[1]
+    links = re.findall(r'href="([^"]*?/team/[^"]+)"', section)
+    assert links and all(l.endswith("#finances") for l in links)
+    sample = links[0].split("/team/")[1].split("/")[0]
+    assert 'id="finances"' in (SITE / "team" / sample / "index.html").read_text()
+
+
+def test_the_money_caveat_names_the_wage_definition_and_the_lag():
+    html = _page()
+    if "And the money" not in html:
+        pytest.skip("finance groups too small to render")
+    text = html.split("And the money", 1)[1]
+    assert "excluding amortisation" in text
+    assert "behind the season" in text

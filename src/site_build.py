@@ -4164,19 +4164,7 @@ class SiteBuilder:
                 ),
             }
 
-        finance = None
-        shares = levelspells.wage_share_by_group(self.conn)
-        if shares:
-            finance = (
-                f"Wages as a share of turnover, from each club\u2019s latest full "
-                f"accounts: {shares['below']['median']:.0%} for clubs below their "
-                f"level ({shares['below']['n']} clubs), {shares['at']['median']:.0%} "
-                f"at it ({shares['at']['n']}) and {shares['above']['median']:.0%} "
-                f"above it ({shares['above']['n']}). This page used to say that "
-                f"falling below your level does financial damage that compounds. "
-                f"That is a hint in the same direction, from groups too small to "
-                f"call it more than one."
-            )
+        money = self._level_money(levelspells.money_rows(self.conn, spells))
 
         first = coverage_mod.first_season(self.conn)
         nn = levelspells.NEW_NORMAL_SEASONS
@@ -4208,9 +4196,89 @@ class SiteBuilder:
                  "note": self._spell_note(levelspells.summarise(below), "below"),
                  "rows": rows(below)},
             ],
-            finance=finance,
+            money=money,
             caveat=coverage_mod.natural_level_caveat(self.conn),
         )
+
+    @staticmethod
+    def _level_money(data: dict | None) -> dict | None:
+        """
+        The money section, from levelspells.money_rows. Every sentence in
+        it is built from the numbers, including which club it names for
+        the year-of-a-fall example - so it stays true after the accounts
+        are refreshed.
+        """
+        if not data:
+            return None
+        summary = data["summary"]
+        labels = {"above": "Above their level", "at": "At their level",
+                  "below": "Below their level"}
+
+        def where(e: dict) -> str:
+            if e["direction"] == "at":
+                return "at level"
+            spell = f", {e['seasons']} season{'s' if e['seasons'] != 1 else ''}" if e["seasons"] else ""
+            return f"{e['direction']}{spell}"
+
+        clubs = [{
+            "club_id": e["club_id"], "name": e["name"], "where": where(e),
+            "season": season_label(e["season"]),
+            "turnover": _fmt_money(e["turnover"]), "wages": _fmt_money(e["wages"]),
+            "ratio": f"{e['ratio']:.0%}",
+            "profit": _fmt_money(e["profit"]) if e["profit"] is not None else "—",
+            "over": e["over"],
+        } for e in data["clubs"]]
+
+        moved = []
+        for e in data["moved"]:
+            change = e["ratio"] - e["previous_ratio"]
+            moved.append({
+                "club_id": e["club_id"], "name": e["name"], "where": where(e),
+                "previous_season": season_label(e["previous_season"]),
+                "season": season_label(e["season"]),
+                "previous_ratio": f"{e['previous_ratio']:.0%}",
+                "ratio": f"{e['ratio']:.0%}",
+                "change": f"{change:+.0%}".replace("%", " pts"),
+                "change_class": "outcome-further" if change > 0.05 else "outcome-back" if change < -0.05 else "",
+            })
+
+        out_n = summary["above"]["n"] + summary["below"]["n"]
+        out_over = summary["above"]["over"] + summary["below"]["over"]
+        at = summary["at"]
+        sentence = (
+            f"Paying more in wages than you earn is not a feature of being out of "
+            f"step: {out_over} of the {out_n} clubs above or below their level with "
+            f"full accounts do, and {at['over']} of the {at['n']} at their level do "
+            f"too. It is a feature of the middle of the pyramid."
+        )
+        moved_note = "Clubs with two years of full accounts on file, latest against the year before."
+        if data["moved"]:
+            top = data["moved"][0]
+            if top["ratio"] - top["previous_ratio"] > 0.2:
+                moved_note = (
+                    f"Where the money does tell is in the year of a move. "
+                    f"{top['name']} went from {top['previous_ratio']:.0%} of turnover "
+                    f"on wages to {top['ratio']:.0%} in a single year. "
+                    f"{moved_note}"
+                )
+
+        return {
+            "sentence": sentence,
+            "groups": [{
+                "label": labels[k], "n": summary[k]["n"],
+                "median": f"{summary[k]['median']:.0%}", "over": summary[k]["over"],
+            } for k in ("above", "at", "below")],
+            "clubs": clubs,
+            "moved": moved,
+            "moved_note": moved_note,
+            "caveat": (
+                "Wages are staff costs excluding amortisation of transfer fees "
+                "throughout. Accounts run a year or more behind the season, so a "
+                "club\u2019s latest filing describes the division it was in then, "
+                "not necessarily now. Groups this small show a direction, not a "
+                "law."
+            ),
+        }
 
     @staticmethod
     def _spell_note(summary: dict, direction: str) -> str:

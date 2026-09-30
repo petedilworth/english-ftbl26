@@ -1430,7 +1430,7 @@ def test_team_page_shows_the_clubs_finances(tmp_path, monkeypatch):
         _full_row("giant-fc", 2024),
     ])
     page = (out / "team" / "giant-fc" / "index.html").read_text()
-    assert "<h2>Finances</h2>" in page
+    assert '<h2 id="finances">Finances</h2>' in page
     assert "£12.0m" in page and "£9.0m" in page   # newest season
     assert "£10.0m" in page                       # prior season
     assert season_label(2025) in page
@@ -1441,7 +1441,7 @@ def test_team_page_without_finance_data_has_no_finances_section(tmp_path, monkey
     # steady-fc is in the fixture db but gets no club_finances row.
     out = _build_with_finances(tmp_path, monkeypatch, [_full_row("giant-fc", 2025)])
     page = (out / "team" / "steady-fc" / "index.html").read_text()
-    assert "<h2>Finances</h2>" not in page
+    assert '<h2 id="finances">Finances</h2>' not in page
 
 
 def test_team_page_states_non_disclosure_rather_than_showing_a_gap(tmp_path, monkeypatch):
@@ -1453,7 +1453,7 @@ def test_team_page_states_non_disclosure_rather_than_showing_a_gap(tmp_path, mon
     ])
     page = (out / "team" / "giant-fc" / "index.html").read_text()
     assert "small-company regime" in page
-    assert "£" not in page.split("<h2>Finances</h2>")[1].split("<h2>")[0]
+    assert "£" not in page.split('<h2 id="finances">Finances</h2>')[1].split("<h2>")[0]
 
 
 def test_finance_rank_is_measured_within_the_division(tmp_path, monkeypatch):
