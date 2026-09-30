@@ -782,3 +782,8 @@ tr.new-normal td a { color: var(--muted); }
 .status-tag.level { color: var(--muted); }
 table.outcomes td.outcome-back { color: var(--up); font-weight: 600; }
 table.outcomes td.outcome-further { color: var(--down); }
+
+/* Wages above turnover: the one line in a set of accounts that needs no
+   context to read. */
+tr.wages-over td.num { color: var(--down); }
+tr.wages-over td:nth-child(7) { font-weight: 600; }

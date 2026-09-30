@@ -209,40 +209,88 @@ def rolling_outcomes(histories: dict[str, dict[int, int]], latest: int) -> dict:
     return counts
 
 
-# ── the finance claim ──────────────────────────────────────────────────────
-
 # Below this many clubs in a group, a median is a coincidence.
 MIN_FINANCE_GROUP = 8
 
 
-def wage_share_by_group(conn: sqlite3.Connection) -> dict[str, dict] | None:
-    """
-    Median wages as a share of turnover for clubs above, at and below
-    their level, from each club's latest full set of accounts.
+# ── the money, per club ────────────────────────────────────────────────────
 
-    The page used to say that falling below your level "does financial
-    damage that compounds". This is the nearest thing the data can test,
-    and it comes with its group sizes attached because they are small:
-    a median of ten is a hint, and the copy has to call it one.
+def money_rows(conn: sqlite3.Connection, spells: list[dict]) -> dict | None:
+    """
+    Wages against turnover for every club with full accounts, split by
+    whether it sits above, at or below its level - and, per club, the
+    previous year's ratio where there is one.
+
+    WHAT THE FIRST LOOK AT THIS SHOWED, so the copy says it rather than
+    the opposite. Paying more in wages than you earn is not a feature of
+    being out of step: 9 of 24 out-of-step clubs did, and 9 of 29 at
+    their level did too. It is a feature of the middle of the pyramid.
+    Where the money tells is in the YEAR OF A FALL - Carlisle United's
+    wages went from 52% of turnover to 106% in the season they dropped a
+    division - and that shows in the year-on-year column, not in a
+    median. So this returns both.
+
+    Returns None when there are not enough clubs in each group to say
+    anything; the template then omits the section rather than showing a
+    median of three.
     """
     try:
         rows = conn.execute(
             """
-            SELECT f.club_id, f.turnover, f.staff_costs, t.natural_level_gap
+            SELECT f.club_id, t.canonical_name, f.season_end_year, f.turnover,
+                   f.staff_costs, f.profit_before_tax, t.natural_level_gap
               FROM club_finances f
               JOIN club_trajectory t ON t.club_id = f.club_id
              WHERE f.disclosure = 'full' AND f.turnover > 0 AND f.staff_costs > 0
                AND t.natural_level_gap IS NOT NULL
-               AND f.season_end_year = (
-                   SELECT MAX(g.season_end_year) FROM club_finances g
-                    WHERE g.club_id = f.club_id AND g.disclosure = 'full')
+             ORDER BY f.club_id, f.season_end_year
             """
         ).fetchall()
     except sqlite3.Error:
         return None
-    groups: dict[str, list[float]] = {"above": [], "at": [], "below": []}
-    for _club, turnover, staff, gap in rows:
-        groups["above" if gap < 0 else "below" if gap > 0 else "at"].append(staff / turnover)
+
+    by_club: dict[str, list] = {}
+    for r in rows:
+        by_club.setdefault(r[0], []).append(r)
+    spell_of = {s["club_id"]: s for s in spells}
+
+    groups: dict[str, list[dict]] = {"above": [], "at": [], "below": []}
+    for club_id, years in by_club.items():
+        latest = years[-1]
+        gap = latest[6]
+        ratio = latest[4] / latest[3]
+        previous = years[-2] if len(years) >= 2 else None
+        entry = {
+            "club_id": club_id,
+            "name": latest[1],
+            "season": latest[2],
+            "turnover": latest[3],
+            "wages": latest[4],
+            "profit": latest[5],
+            "ratio": ratio,
+            "over": ratio > 1.0,
+            "previous_season": previous[2] if previous else None,
+            "previous_ratio": (previous[4] / previous[3]) if previous else None,
+            "direction": "above" if gap < 0 else "below" if gap > 0 else "at",
+            "seasons": spell_of.get(club_id, {}).get("seasons"),
+        }
+        groups[entry["direction"]].append(entry)
+
     if any(len(v) < MIN_FINANCE_GROUP for v in groups.values()):
         return None
-    return {k: {"n": len(v), "median": statistics.median(v)} for k, v in groups.items()}
+
+    summary = {}
+    for key, entries in groups.items():
+        ratios = sorted(e["ratio"] for e in entries)
+        summary[key] = {
+            "n": len(entries),
+            "median": statistics.median(ratios),
+            "over": sum(1 for e in entries if e["over"]),
+        }
+
+    out_of_step = sorted(groups["above"] + groups["below"],
+                         key=lambda e: (-e["ratio"], e["name"]))
+    moved = sorted(
+        (e for e in out_of_step if e["previous_ratio"] is not None),
+        key=lambda e: -(e["ratio"] - e["previous_ratio"]))
+    return {"summary": summary, "clubs": out_of_step, "moved": moved}

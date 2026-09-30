@@ -66,9 +66,77 @@
 </div>
 {% endfor %}
 
-{% if finance %}
+{% if money %}
 <h2>And the money</h2>
-<p class="subtitle">{{ finance }}</p>
+<p class="subtitle">{{ money.sentence }}</p>
+
+<div class="table-scroll">
+<table class="standings outcomes">
+  <tr>
+    <th>Clubs with full accounts</th>
+    <th class="num">Clubs</th>
+    <th class="num">Median wages ÷ turnover</th>
+    <th class="num">Paying more in wages than they earn</th>
+  </tr>
+  {% for row in money.groups %}
+  <tr>
+    <td>{{ row.label }}</td>
+    <td class="num">{{ row.n }}</td>
+    <td class="num">{{ row.median }}</td>
+    <td class="num">{{ row.over }} of {{ row.n }}</td>
+  </tr>
+  {% endfor %}
+</table>
+</div>
+
+<h3>The clubs out of step, and what they spend</h3>
+<p class="subtitle">Latest full accounts on file. Rows where wages exceed turnover are marked.</p>
+<div class="table-scroll">
+<table class="standings">
+  <tr>
+    <th>#</th><th>Club</th><th>Where</th><th>Accounts</th>
+    <th class="num">Turnover</th><th class="num">Wages</th>
+    <th class="num">Wages ÷ turnover</th><th class="num">Profit before tax</th>
+  </tr>
+  {% for row in money.clubs %}
+  <tr{% if row.over %} class="wages-over"{% endif %}>
+    <td class="num">{{ loop.index }}</td>
+    <td><a href="{{ root }}/team/{{ row.club_id }}/index.html#finances">{{ row.name }}</a></td>
+    <td>{{ row.where }}</td>
+    <td>{{ row.season }}</td>
+    <td class="num">{{ row.turnover }}</td>
+    <td class="num">{{ row.wages }}</td>
+    <td class="num">{{ row.ratio }}</td>
+    <td class="num">{{ row.profit }}</td>
+  </tr>
+  {% endfor %}
+</table>
+</div>
+
+{% if money.moved %}
+<h3>Where the ratio moved</h3>
+<p class="subtitle">{{ money.moved_note }}</p>
+<div class="table-scroll">
+<table class="standings outcomes">
+  <tr>
+    <th>Club</th><th>Where</th>
+    <th class="num">{{ money.moved[0].previous_season }}</th>
+    <th class="num">{{ money.moved[0].season }}</th>
+    <th class="num">Change</th>
+  </tr>
+  {% for row in money.moved %}
+  <tr>
+    <td><a href="{{ root }}/team/{{ row.club_id }}/index.html#finances">{{ row.name }}</a></td>
+    <td>{{ row.where }}</td>
+    <td class="num">{{ row.previous_ratio }}</td>
+    <td class="num">{{ row.ratio }}</td>
+    <td class="num {{ row.change_class }}">{{ row.change }}</td>
+  </tr>
+  {% endfor %}
+</table>
+</div>
+{% endif %}
+<p class="finance-note">{{ money.caveat }}</p>
 {% endif %}
 
 <p class="finance-note">{{ caveat }}</p>
