@@ -1,59 +1,106 @@
-// The most disliked clubs: a scatter that switches kind, click-for-detail,
-// and a map of where each club is the intruder on another club's doorstep.
+// The most disliked clubs: an overall index with a weight per kind, a
+// ranked stacked bar per club, click-for-detail, and a map of where each
+// club is the intruder on another club's doorstep.
 // Expects window.HATRED_DATA = {
-//   kinds: [{key, label}], defaultKind, clubs: [{id, name, tier, success,
+//   kinds: [{key, label, color}], shown, clubs: [{id, name, tier, success,
 //   envied, resented, mocked, despised, titles, topFour, topFlight,
 //   lastTitle, since, nearMisses, wagePct, neighbours, people, events}],
-//   plot: {w, h, padL, padR, padT, padB}, map: {points: [[lat, lon, pop,
-//   intruder, share]], legend: [{club_id, name, people}]}
+//   map: {points: [[lat, lon, pop, intruder, share]], legend: [{club_id, name, people}]}
 // }
+// The weights live in the fragment as #w=50,50,50,50 (in kind order), so a
+// weighting can be bookmarked; hash-state.js is used when present.
 (function () {
   var data = window.HATRED_DATA;
   if (!data) return;
-  var NS = "http://www.w3.org/2000/svg";
-  var svg = document.getElementById("hatred-scatter");
   var detail = document.getElementById("hatred-detail");
-  var P = data.plot;
-  var kind = data.defaultKind;
+  var list = document.getElementById("hatred-bars");
+  var more = document.querySelector(".hatred-more");
+  var sliders = Array.prototype.slice.call(document.querySelectorAll(".hatred-weights input[type=range]"));
+  var kinds = data.kinds.map(function (k) { return k.key; });
+  var showAll = false;
 
-  function el(name, attrs, text) {
-    var n = document.createElementNS(NS, name);
-    for (var k in attrs) n.setAttribute(k, attrs[k]);
-    if (text) n.textContent = text;
-    return n;
-  }
   function fmt(v) { return Math.round(v * 10) / 10; }
 
+  // Each kind over its leader, as in hatred.normalised().
+  var tops = {};
+  kinds.forEach(function (k) {
+    tops[k] = Math.max.apply(null, data.clubs.map(function (c) { return c[k]; }).concat([0]));
+  });
+  var norm = {};
+  data.clubs.forEach(function (c) {
+    norm[c.id] = {};
+    kinds.forEach(function (k) { norm[c.id][k] = tops[k] ? c[k] / tops[k] : 0; });
+  });
+  var byId = {};
+  data.clubs.forEach(function (c) { byId[c.id] = c; });
+
+  function weights() {
+    var w = {};
+    sliders.forEach(function (s) { w[s.getAttribute("data-kind")] = Number(s.value); });
+    return w;
+  }
+  function score(w) {
+    var total = kinds.reduce(function (t, k) { return t + (w[k] || 0); }, 0);
+    return data.clubs.map(function (c) {
+      var parts = {};
+      kinds.forEach(function (k) { parts[k] = total ? 100 * (w[k] || 0) * norm[c.id][k] / total : 0; });
+      var idx = kinds.reduce(function (t, k) { return t + parts[k]; }, 0);
+      return {club: c, parts: parts, index: idx};
+    }).sort(function (a, b) { return b.index - a.index || a.club.name.localeCompare(b.club.name); });
+  }
+  var equal = {};
+  kinds.forEach(function (k) { equal[k] = 1; });
+  var equalRank = {};
+  score(equal).forEach(function (r, i) { equalRank[r.club.id] = i + 1; });
+
   function draw() {
-    if (!svg) return;
-    Array.prototype.slice.call(svg.querySelectorAll(".hatred-dot, .hatred-label")).forEach(function (n) { n.remove(); });
-    var xs = data.clubs.map(function (c) { return c.success; });
-    var ys = data.clubs.map(function (c) { return c[kind]; });
-    var xMax = Math.max.apply(null, xs.concat([1])), yMax = Math.max.apply(null, ys.concat([1]));
-    var plotW = P.w - P.padL - P.padR, plotH = P.h - P.padT - P.padB;
-    var label = document.getElementById("hatred-y-label");
-    if (label) label.textContent = (data.kinds.filter(function (k) { return k.key === kind; })[0] || {}).label + " →";
-    var ranked = data.clubs.slice().sort(function (a, b) { return b[kind] - a[kind]; }).slice(0, 3);
-    data.clubs.forEach(function (c) {
-      var cx = P.padL + (c.success / xMax) * plotW;
-      var cy = P.h - P.padB - (c[kind] / yMax) * plotH;
-      var dot = el("circle", {cx: cx, cy: cy, r: 5, fill: "#2a78d6", stroke: "#fcfcfb", "stroke-width": 1.5,
-                              "class": "hatred-dot", "data-club": c.id, tabindex: 0, role: "button"});
-      dot.appendChild(el("title", {}, c.name + " — " + kind + " " + fmt(c[kind]) + ", success " + fmt(c.success)));
-      dot.addEventListener("click", function () { show(c); });
-      dot.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); show(c); } });
-      svg.appendChild(dot);
-      if (ranked.indexOf(c) >= 0) {
-        svg.appendChild(el("text", {x: cx + 8, y: cy + 4, "font-size": 11, "font-weight": 600, fill: "#17202a", "class": "hatred-label"}, c.name));
-      }
+    if (!list) return;
+    var w = weights();
+    var total = kinds.reduce(function (t, k) { return t + w[k]; }, 0);
+    Array.prototype.forEach.call(document.querySelectorAll(".hatred-weight-share"), function (o) {
+      o.textContent = total ? Math.round(100 * w[o.getAttribute("data-kind")] / total) + "%" : "0%";
     });
+    var ranked = score(w);
+    var top = ranked.length && ranked[0].index > 0 ? ranked[0].index : 1;
+    var items = {};
+    Array.prototype.forEach.call(list.children, function (li) { items[li.getAttribute("data-club")] = li; });
+    ranked.forEach(function (r, i) {
+      var li = items[r.club.id];
+      if (!li) return;
+      li.querySelector(".hatred-rank").textContent = i + 1;
+      var track = li.querySelector(".hatred-track");
+      track.innerHTML = "";
+      data.kinds.forEach(function (k) {
+        if (r.parts[k.key] <= 0) return;
+        var seg = document.createElement("span");
+        seg.className = "hatred-seg";
+        seg.style.width = (100 * r.parts[k.key] / top) + "%";
+        seg.style.background = k.color;
+        seg.title = k.label + ": " + norm[r.club.id][k.key].toFixed(2) + " of the leader, " +
+                    fmt(r.parts[k.key]) + " points at this weight";
+        track.appendChild(seg);
+      });
+      li.querySelector(".hatred-value").firstChild.nodeValue = Math.round(r.index);
+      var move = equalRank[r.club.id] - (i + 1);
+      var mv = li.querySelector(".hatred-move");
+      mv.textContent = move > 0 ? " ▲" + move : move < 0 ? " ▼" + (-move) : "";
+      mv.title = move ? "Rank " + equalRank[r.club.id] + " at equal weights" : "";
+      li.hidden = !showAll && i >= data.shown;
+      list.appendChild(li);  // re-appending moves it into rank order
+    });
+    if (window.hashState) {
+      var isEqual = kinds.every(function (k) { return w[k] === w[kinds[0]]; }) && w[kinds[0]] > 0;
+      window.hashState.set("w", isEqual ? null : kinds.map(function (k) { return w[k]; }).join(","));
+    }
   }
 
   function show(c) {
     if (!detail) return;
+    var n = norm[c.id];
     var lines = [];
-    lines.push("<b>" + c.name + "</b> — envied " + fmt(c.envied) + " · resented " + fmt(c.resented) +
-               " · mocked " + fmt(c.mocked) + " · despised " + fmt(c.despised));
+    lines.push("<b>" + c.name + "</b> – envied " + fmt(c.envied) + " (" + n.envied.toFixed(2) + " of the leader) · resented " +
+               fmt(c.resented) + " (" + n.resented.toFixed(2) + ") · mocked " + fmt(c.mocked) + " (" + n.mocked.toFixed(2) +
+               ") · despised " + fmt(c.despised) + " (" + n.despised.toFixed(2) + ")");
     lines.push(c.titles + " title" + (c.titles === 1 ? "" : "s") + ", " + c.topFour + " top-four finish" + (c.topFour === 1 ? "" : "es") +
                ", " + c.topFlight + " top-flight season" + (c.topFlight === 1 ? "" : "s") + ".");
     if (c.lastTitle) lines.push("Last title " + (c.lastTitle - 1) + "/" + String(c.lastTitle % 100).padStart(2, "0") +
@@ -66,15 +113,38 @@
     detail.hidden = false;
   }
 
-  Array.prototype.forEach.call(document.querySelectorAll(".hatred-kind-chips .chip"), function (btn) {
-    btn.addEventListener("click", function () {
-      kind = btn.getAttribute("data-kind");
-      Array.prototype.forEach.call(document.querySelectorAll(".hatred-kind-chips .chip"), function (b) {
-        var on = b === btn; b.classList.toggle("chip-active", on); b.setAttribute("aria-pressed", on ? "true" : "false");
-      });
-      draw();
+  if (list) {
+    list.addEventListener("click", function (e) {
+      var li = e.target.closest(".hatred-bar");
+      if (li && byId[li.getAttribute("data-club")]) show(byId[li.getAttribute("data-club")]);
     });
+    list.addEventListener("keydown", function (e) {
+      if (e.key !== "Enter" && e.key !== " ") return;
+      var li = e.target.closest(".hatred-bar");
+      if (li && byId[li.getAttribute("data-club")]) { e.preventDefault(); show(byId[li.getAttribute("data-club")]); }
+    });
+  }
+  sliders.forEach(function (s) { s.addEventListener("input", draw); });
+  var reset = document.querySelector(".hatred-reset");
+  if (reset) reset.addEventListener("click", function () {
+    sliders.forEach(function (s) { s.value = 50; });
+    draw();
   });
+  if (more) more.addEventListener("click", function () {
+    showAll = !showAll;
+    more.textContent = showAll ? "Show the top " + data.shown : "Show all " + data.clubs.length;
+    more.setAttribute("aria-expanded", showAll ? "true" : "false");
+    draw();
+  });
+
+  // A bookmarked weighting, if the fragment carries one.
+  var saved = window.hashState ? window.hashState.get("w") : null;
+  if (saved) {
+    var vals = saved.split(",").map(Number);
+    if (vals.length === sliders.length && vals.every(function (v) { return v >= 0 && v <= 100; })) {
+      sliders.forEach(function (s, i) { s.value = vals[i]; });
+    }
+  }
   draw();
 
   // The map: one intruder at a time, in one colour, so a reader is never

@@ -787,3 +787,33 @@ table.outcomes td.outcome-further { color: var(--down); }
    context to read. */
 tr.wages-over td.num { color: var(--down); }
 tr.wages-over td:nth-child(7) { font-weight: 600; }
+
+/* The hatred index: a weight per kind, then one ranked stacked bar per club. */
+.hatred-weights {
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 28px; align-items: center; margin: 4px 0 14px; max-width: 640px;
+}
+@media (max-width: 540px) { .hatred-weights { grid-template-columns: minmax(0, 1fr); } }
+.hatred-weight { display: flex; align-items: center; gap: 8px; font-size: 14px; }
+.hatred-swatch { width: 12px; height: 12px; border-radius: 3px; flex: 0 0 auto; }
+.hatred-weight-name { flex: 0 0 5.2em; }
+.hatred-weight input[type=range] { flex: 1 1 auto; min-width: 0; accent-color: var(--accent); }
+.hatred-weight-share { flex: 0 0 2.6em; text-align: right; color: var(--muted); font-variant-numeric: tabular-nums; }
+.hatred-reset { justify-self: start; grid-column: 1 / -1; }
+.hatred-bars { list-style: none; margin: 0; padding: 0; }
+.hatred-bar {
+  display: grid; grid-template-columns: 1.8em minmax(6.5em, 11em) 1fr 3.6em;
+  align-items: center; gap: 8px; padding: 3px 0; font-size: 13px; cursor: pointer;
+  border-radius: 4px;
+}
+.hatred-bar[hidden] { display: none; }  /* the grid rule above would beat [hidden] */
+.hatred-bar:hover, .hatred-bar:focus { background: var(--bg-soft); outline: none; }
+.hatred-bar:focus-visible { outline: 2px solid var(--accent); }
+.hatred-rank { color: var(--muted); text-align: right; font-variant-numeric: tabular-nums; }
+.hatred-name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.hatred-track { display: flex; gap: 2px; height: 14px; }
+.hatred-seg { display: block; height: 100%; min-width: 0; }
+.hatred-seg:last-child { border-radius: 0 4px 4px 0; }
+.hatred-value { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.hatred-move { color: var(--muted); font-size: 11px; }
+.hatred-more { margin-top: 8px; }

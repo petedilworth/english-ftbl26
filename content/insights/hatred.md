@@ -9,10 +9,16 @@ be **envied** for what it wins, **resented** for what it spends and who
 pays, **mocked** for being famous without winning, or **despised** on
 principle for something it did. The four are scored separately from the
 record since 1958/59 and from a short list of events the record does not
-hold, and they are never added into one number, because the number would
-say Tottenham and Manchester City are the same thing.
+hold, then put into one index where each kind counts the same unless you
+say otherwise.
 
-They are not. Tottenham's score is almost entirely in one column. Sixty-
+The index is useful for one thing: moving the weights shows how much of
+a club's place depends on what you decide dislike is. Put it all on
+envy and Liverpool lead. Put it all on mockery and it is Tottenham by a
+distance. The one number hides that Tottenham and Manchester City get
+there by opposite routes.
+
+Tottenham's score is almost entirely in one column. Sixty-
 seven top-flight seasons, one title, nineteen top-four finishes: a club
 big enough that everyone has an opinion and unsuccessful enough that
 holding it costs nothing. Disliking Manchester United marks you as a

@@ -17,6 +17,13 @@ reach. It is shown beside the four and never multiplied in; multiplying
 would turn the page into a fame index, which is what every poll on this
 subject already is.
 
+The four can also be put into one number, the hatred index: each kind
+divided by the largest score any club has in it, so the most envied,
+resented, mocked and despised club each score 1, then a weighted mean
+scaled to 100. Equal weights by default; the page lets a reader move them.
+Without the scaling envy alone would decide the order, since its raw
+scores run to 86 and despised stops at 5.
+
 The weights below are judgement. They are here, named, so the page can
 show its working and a reader can disagree with a number rather than a
 feeling.
@@ -238,6 +245,30 @@ def score_clubs(conn: sqlite3.Connection, curated: dict | None = None) -> list[d
         })
     rows.sort(key=lambda r: r["name"])
     return rows
+
+
+def normalised(rows: list[dict]) -> dict[str, dict[str, float]]:
+    """
+    {club_id: {kind: 0..1}}: each kind divided by the largest score any
+    club has in it. A kind nobody scores in stays at zero for everyone.
+    """
+    tops = {k: max((r[k] for r in rows), default=0.0) for k in KINDS}
+    return {r["club_id"]: {k: (r[k] / tops[k] if tops[k] else 0.0) for k in KINDS}
+            for r in rows}
+
+
+def hatred_index(norm: dict[str, dict[str, float]],
+                 weights: dict[str, float] | None = None) -> dict[str, float]:
+    """
+    {club_id: 0..100}: the weighted mean of the four normalised kinds.
+    Equal weights when none are given; all-zero weights score everyone 0.
+    """
+    weights = weights or {k: 1.0 for k in KINDS}
+    total = sum(weights.get(k, 0.0) for k in KINDS)
+    if total <= 0:
+        return {cid: 0.0 for cid in norm}
+    return {cid: 100.0 * sum(weights.get(k, 0.0) * n[k] for k in KINDS) / total
+            for cid, n in norm.items()}
 
 
 def decade_picks(conn: sqlite3.Connection, curated: dict | None = None) -> list[dict]:
