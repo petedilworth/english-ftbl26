@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Which club to buy</h1>
+<p class="subtitle">Fourteen levers on whether a club should be worth more in a few years than it is today. Every lever counts the same until you move it.</p>
+
+<div class="theme-intro">{{ intro_html }}</div>
+
+<h2>The value index</h2>
+<p class="subtitle">Each lever is a percentile across all {{ total }} clubs in tiers 1–7, so 1 is the best club on that lever and 0 the worst. The index is the weighted average, out of 100. Hatched means no data: that lever is counted at the middle (0.5). Click a club for the working.</p>
+
+<div class="value-groups" role="group" aria-label="Weights for each lever">
+  {% for g in groups %}
+  <fieldset class="value-group" data-group="{{ g.key }}">
+    <legend><span class="index-swatch" style="background: {{ g.color }}"></span>{{ g.label }}
+      {% if g.key == "money" %}<label><input type="checkbox" class="value-money" checked> use the accounts ({{ with_accounts }} clubs have them)</label>{% endif %}
+    </legend>
+    {% for lv in g.levers %}
+    <label class="index-weight" title="{{ lv.note }}">
+      <span class="index-weight-name">{{ lv.label }}</span>
+      <input type="range" min="0" max="100" step="5" value="50" data-lever="{{ lv.key }}" aria-label="Weight for {{ lv.label | lower }}">
+      <output class="index-weight-share" data-lever="{{ lv.key }}">{{ equal_share }}%</output>
+    </label>
+    {% endfor %}
+  </fieldset>
+  {% endfor %}
+</div>
+<div class="value-options">
+  <button class="chip index-reset" type="button">Equal weights</button>
+  <div class="map-chips chip-row value-tier-chips" role="group" aria-label="Tiers shown" style="margin: 0">
+    {% for t in tiers %}
+    <button class="chip chip-active" type="button" data-tier="{{ t }}" aria-pressed="true">Tier {{ t }}</button>
+    {% endfor %}
+  </div>
+  <label><input type="checkbox" class="value-fan"> show fan-owned clubs ({{ fan_owned }})</label>
+</div>
+
+<ol class="index-bars" id="index-bars">
+  {% for b in bars %}
+  <li class="index-bar" data-club="{{ b.club_id }}" data-tier="{{ b.tier }}" tabindex="0" role="button"{% if b.hidden %} hidden{% endif %}>
+    <span class="index-rank">{{ b.rank or "" }}</span>
+    <span class="index-name">{{ b.name }}<span class="index-tier">T{{ b.tier }}{% if b.flags %} · {{ b.flags | join(", ") }}{% endif %}</span></span>
+    <span class="index-track">{% for s in b.segments %}<span class="index-seg{% if s.missing %} is-missing{% endif %}" style="width: {{ s.width }}%;{% if not s.missing %} background: {{ s.color }}{% endif %}" title="{{ s.title }}"></span>{% endfor %}</span>
+    <span class="index-value">{{ b.index }}<span class="index-move"></span></span>
+  </li>
+  {% endfor %}
+</ol>
+<button class="chip index-more" type="button" aria-expanded="false">Show all</button>
+<div id="value-detail" class="chart-detail" hidden></div>
+
+<h2>The levers</h2>
+<div class="table-scroll"><table class="standings">
+  <tr><th>Family</th><th>Lever</th><th>What it measures</th><th class="num">Clubs with data</th></tr>
+  {% for g in groups %}{% for lv in g.levers %}
+  <tr><td><span class="index-key" style="background: {{ g.color }}"></span>{{ g.label }}</td><td>{{ lv.label }}</td><td>{{ lv.note }}</td><td class="num">{{ lv.coverage }}</td></tr>
+  {% endfor %}{% endfor %}
+</table></div>
+<p class="finance-note">Percentiles, not raw numbers: Manchester City's catchment is so large that dividing by it would leave every other club near zero. Missing data counts at the middle, which flatters clubs with little on record – the hatching shows where. Net debt is left out: only a dozen clubs file it. There are no sale prices, valuations or attendances here, so the index says which clubs have the makings of a rise, not which are good deals.</p>
+
+<script src="value-data.js"></script>
+<script src="{{ root }}/static/hash-state.js"></script>
+<script src="{{ root }}/static/value.js"></script>
+{% endblock %}

@@ -7,29 +7,29 @@
 
 <h2>The hatred index</h2>
 <p class="subtitle">Each kind is scaled so its leader scores 1, then the four are averaged with the weights below, out of 100. Equal weights to start. Move a slider to say what you think counts; the bars re-sort and the arrows show the move from equal weights. Click a club for the working.</p>
-<div class="hatred-weights" role="group" aria-label="Weights for each kind of dislike">
+<div class="index-weights" role="group" aria-label="Weights for each kind of dislike">
   {% for k in kinds %}
-  <label class="hatred-weight">
-    <span class="hatred-swatch" style="background: {{ k.color }}"></span>
-    <span class="hatred-weight-name">{{ k.label }}</span>
+  <label class="index-weight">
+    <span class="index-swatch" style="background: {{ k.color }}"></span>
+    <span class="index-weight-name">{{ k.label }}</span>
     <input type="range" min="0" max="100" step="5" value="50" data-kind="{{ k.key }}" aria-label="Weight for {{ k.label | lower }}">
-    <output class="hatred-weight-share" data-kind="{{ k.key }}">{{ equal_weight }}%</output>
+    <output class="index-weight-share" data-kind="{{ k.key }}">{{ equal_weight }}%</output>
   </label>
   {% endfor %}
-  <button class="chip hatred-reset" type="button">Equal weights</button>
+  <button class="chip index-reset" type="button">Equal weights</button>
 </div>
-<ol class="hatred-bars" id="hatred-bars">
+<ol class="index-bars" id="index-bars">
   {% for b in bars %}
-  <li class="hatred-bar" data-club="{{ b.club_id }}" tabindex="0" role="button"{% if b.hidden %} hidden{% endif %}>
-    <span class="hatred-rank">{{ b.rank }}</span>
-    <span class="hatred-name">{{ b.name }}</span>
-    <span class="hatred-track">{% for s in b.segments %}<span class="hatred-seg" style="width: {{ s.width }}%; background: {{ s.color }}" title="{{ s.title }}"></span>{% endfor %}</span>
-    <span class="hatred-value">{{ b.index }}<span class="hatred-move"></span></span>
+  <li class="index-bar" data-club="{{ b.club_id }}" tabindex="0" role="button"{% if b.hidden %} hidden{% endif %}>
+    <span class="index-rank">{{ b.rank }}</span>
+    <span class="index-name">{{ b.name }}</span>
+    <span class="index-track">{% for s in b.segments %}<span class="index-seg" style="width: {{ s.width }}%; background: {{ s.color }}" title="{{ s.title }}"></span>{% endfor %}</span>
+    <span class="index-value">{{ b.index }}<span class="index-move"></span></span>
   </li>
   {% endfor %}
 </ol>
 {% if bars | length > shown %}
-<button class="chip hatred-more" type="button" aria-expanded="false">Show all {{ bars | length }}</button>
+<button class="chip index-more" type="button" aria-expanded="false">Show all {{ bars | length }}</button>
 {% endif %}
 <div id="hatred-detail" class="chart-detail" hidden></div>
 
