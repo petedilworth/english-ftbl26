@@ -28,6 +28,7 @@ sys.path.insert(0, str(_SRC))
 import aggregate  # noqa: E402  (points-era boundary for records tables)
 import content  # noqa: E402  (needs _SRC on the path first)
 import hatred as hatred_mod  # noqa: E402  (the most disliked clubs)
+import value as value_mod  # noqa: E402  (which club to buy)
 import divisions
 divisions_mod = divisions
 import finances  # noqa: E402  (disclosure states for the club finances table)
@@ -2532,6 +2533,11 @@ class SiteBuilder:
                 "hatred", "The most disliked clubs",
                 "Envied, resented, mocked or despised — and why Tottenham are only one of them",
             ))
+        if (PROJECT_ROOT / "content" / "insights" / "value.md").exists():
+            stories.append(story(
+                "value", "Which club to buy",
+                "Fourteen levers on which clubs should be worth more in a few years – you set the weights",
+            ))
         movement_matches = self._movement_matches()
         import movement as movement_mod
         if any(movement_matches.get(k) for k in (
@@ -2645,6 +2651,7 @@ class SiteBuilder:
         self._insight_pyramid()
         self._insight_scatter()
         self._insight_hatred()
+        self._insight_value()
         self._insight_boom_and_bust(boom_bust_events)
         self._insight_the_drop(movement_matches)
         self._insight_the_rise(movement_matches)
@@ -2992,6 +2999,86 @@ class SiteBuilder:
             bars=bars, shown=self.HATRED_SHOWN, surveys=surveys,
             eras=hatred_mod.decade_picks(self.conn, curated),
             map=map_data, wear_it=wear_it,
+        )
+
+    # ── Which club to buy ────────────────────────────────────────────────
+
+    VALUE_SHOWN = 20  # bars before "show all"
+
+    def _insight_value(self) -> None:
+        """
+        The value levers from src/value.py as an index the reader weights:
+        sliders grouped by family, a tick box for the accounts, tier chips,
+        one ranked stacked bar per club. Gated on its prose.
+        """
+        import json
+
+        import markdown as md
+        from markupsafe import Markup
+
+        source = PROJECT_ROOT / "content" / "insights" / "value.md"
+        if not source.exists():
+            return
+        rows = value_mod.score_clubs(self.conn, self.club_facts)
+        if not rows:
+            return
+        levers, groups = value_mod.LEVERS, value_mod.GROUPS
+        label = {lv["key"]: lv["label"] for lv in levers}
+
+        # First paint: equal weights, accounts in, fan-owned clubs out.
+        index = {r["club_id"]: value_mod.value_index(r["levers"]) for r in rows}
+        ranked = sorted(rows, key=lambda r: (-index[r["club_id"]], r["name"]))
+        shown = [r for r in ranked if not r["fan_owned"]]
+        top = max((index[r["club_id"]] for r in shown), default=1.0) or 1.0
+        n = len(levers)
+        rank = {r["club_id"]: i for i, r in enumerate(shown, start=1)}
+        bars = []
+        for r in ranked:
+            cid = r["club_id"]
+            # One segment per family: fourteen slivers read as noise on a phone.
+            segs, missing = [], 0.0
+            for g in groups:
+                mine = [(lv, r["levers"][lv["key"]]) for lv in levers if lv["group"] == g["key"]]
+                total = sum(v for _, v in mine if v is not None)
+                missing += sum(0.5 for _, v in mine if v is None) / n
+                if total > 0:
+                    segs.append({"color": g["color"], "missing": False,
+                                 "width": round(100 * 100 * total / n / top, 2),
+                                 "title": g["label"] + ": " + ", ".join(
+                                     f"{lv['label']} {v:.2f}" for lv, v in mine if v is not None)})
+            if missing:
+                gaps = [label[k] for k, v in r["levers"].items() if v is None]
+                segs.append({"color": "", "missing": True, "width": round(100 * 100 * missing / top, 2),
+                             "title": "No data, counted at the middle: " + ", ".join(gaps)})
+            hidden = cid not in rank or rank[cid] > self.VALUE_SHOWN
+            # Hidden bars get their segments from the script: drawing all
+            # 355 here put half a megabyte on the page.
+            bars.append({"club_id": cid, "name": r["name"], "tier": r["tier"], "flags": r["flags"],
+                         "rank": rank.get(cid), "index": f"{index[cid]:.0f}",
+                         "segments": [] if hidden else segs, "hidden": hidden})
+
+        coverage = {lv["key"]: sum(1 for r in rows if r["levers"][lv["key"]] is not None) for lv in levers}
+        page_groups = [{**g, "levers": [{**lv, "coverage": coverage[lv["key"]]}
+                                        for lv in levers if lv["group"] == g["key"]]} for g in groups]
+
+        out_dir = self.out / "insights" / "value"
+        out_dir.mkdir(parents=True, exist_ok=True)
+        (out_dir / "value-data.js").write_text(
+            "window.VALUE_DATA = " + json.dumps({
+                "groups": groups, "levers": levers, "shown": self.VALUE_SHOWN,
+                "clubs": [{"id": r["club_id"], "name": r["name"], "tier": r["tier"],
+                           "fan": r["fan_owned"], "flags": r["flags"],
+                           "l": [r["levers"][lv["key"]] for lv in levers], "raw": r["raw"]}
+                          for r in rows],
+            }) + ";", encoding="utf-8")
+        self.render(
+            "insight_value.html", out_dir / "index.html", 2,
+            title="Which club to buy",
+            intro_html=Markup(md.markdown(content.load_theme(source))),
+            groups=page_groups, bars=bars, total=len(rows),
+            equal_share=round(100 / n), tiers=sorted({r["tier"] for r in rows}),
+            fan_owned=sum(1 for r in rows if r["fan_owned"]),
+            with_accounts=coverage["revenue"],
         )
 
     def _movement_matches(self) -> dict[str, list[dict]]:

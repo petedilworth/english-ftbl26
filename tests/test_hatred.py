@@ -155,7 +155,7 @@ def test_the_page_builds_with_index_eras_and_wear_it(tmp_path, monkeypatch):
 
     page = (out / "insights" / "hatred" / "index.html").read_text(encoding="utf-8")
     assert "Why some clubs are disliked." in page
-    assert 'class="hatred-bar" data-club="giant-fc"' in page
+    assert 'class="index-bar" data-club="giant-fc"' in page
     assert page.count('type="range"') == 4 and page.count('value="50"') == 4   # equal to start
     assert "Equal weights" in page
     assert "Test poll" in page and "40%" in page

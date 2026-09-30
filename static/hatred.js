@@ -13,9 +13,9 @@
   var data = window.HATRED_DATA;
   if (!data) return;
   var detail = document.getElementById("hatred-detail");
-  var list = document.getElementById("hatred-bars");
-  var more = document.querySelector(".hatred-more");
-  var sliders = Array.prototype.slice.call(document.querySelectorAll(".hatred-weights input[type=range]"));
+  var list = document.getElementById("index-bars");
+  var more = document.querySelector(".index-more");
+  var sliders = Array.prototype.slice.call(document.querySelectorAll(".index-weights input[type=range]"));
   var kinds = data.kinds.map(function (k) { return k.key; });
   var showAll = false;
 
@@ -57,7 +57,7 @@
     if (!list) return;
     var w = weights();
     var total = kinds.reduce(function (t, k) { return t + w[k]; }, 0);
-    Array.prototype.forEach.call(document.querySelectorAll(".hatred-weight-share"), function (o) {
+    Array.prototype.forEach.call(document.querySelectorAll(".index-weight-share"), function (o) {
       o.textContent = total ? Math.round(100 * w[o.getAttribute("data-kind")] / total) + "%" : "0%";
     });
     var ranked = score(w);
@@ -67,22 +67,22 @@
     ranked.forEach(function (r, i) {
       var li = items[r.club.id];
       if (!li) return;
-      li.querySelector(".hatred-rank").textContent = i + 1;
-      var track = li.querySelector(".hatred-track");
+      li.querySelector(".index-rank").textContent = i + 1;
+      var track = li.querySelector(".index-track");
       track.innerHTML = "";
       data.kinds.forEach(function (k) {
         if (r.parts[k.key] <= 0) return;
         var seg = document.createElement("span");
-        seg.className = "hatred-seg";
+        seg.className = "index-seg";
         seg.style.width = (100 * r.parts[k.key] / top) + "%";
         seg.style.background = k.color;
         seg.title = k.label + ": " + norm[r.club.id][k.key].toFixed(2) + " of the leader, " +
                     fmt(r.parts[k.key]) + " points at this weight";
         track.appendChild(seg);
       });
-      li.querySelector(".hatred-value").firstChild.nodeValue = Math.round(r.index);
+      li.querySelector(".index-value").firstChild.nodeValue = Math.round(r.index);
       var move = equalRank[r.club.id] - (i + 1);
-      var mv = li.querySelector(".hatred-move");
+      var mv = li.querySelector(".index-move");
       mv.textContent = move > 0 ? " ▲" + move : move < 0 ? " ▼" + (-move) : "";
       mv.title = move ? "Rank " + equalRank[r.club.id] + " at equal weights" : "";
       li.hidden = !showAll && i >= data.shown;
@@ -115,17 +115,17 @@
 
   if (list) {
     list.addEventListener("click", function (e) {
-      var li = e.target.closest(".hatred-bar");
+      var li = e.target.closest(".index-bar");
       if (li && byId[li.getAttribute("data-club")]) show(byId[li.getAttribute("data-club")]);
     });
     list.addEventListener("keydown", function (e) {
       if (e.key !== "Enter" && e.key !== " ") return;
-      var li = e.target.closest(".hatred-bar");
+      var li = e.target.closest(".index-bar");
       if (li && byId[li.getAttribute("data-club")]) { e.preventDefault(); show(byId[li.getAttribute("data-club")]); }
     });
   }
   sliders.forEach(function (s) { s.addEventListener("input", draw); });
-  var reset = document.querySelector(".hatred-reset");
+  var reset = document.querySelector(".index-reset");
   if (reset) reset.addEventListener("click", function () {
     sliders.forEach(function (s) { s.value = 50; });
     draw();
