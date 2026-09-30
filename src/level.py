@@ -25,8 +25,12 @@ nonsense if ignored:
    cannot tell. Those clubs are flagged so the wording stays honest and
    never claims "non-league" about a season we simply cannot see.
 
-Scope is the 1993/94-onward era throughout. It says nothing about the
-pre-Premier-League game, and the copy should never imply otherwise.
+Scope is whatever the standings table holds, which is 1958/59 onward for
+the top four tiers, 1979/80 for the fifth and 2012/13 below that. This
+used to say "the 1993/94-onward era throughout", and went on saying it for
+the thirty-five seasons the engsoccerdata backfill added under it: Arsenal's
+window is 69 seasons, not 34. Copy that names a starting season should
+derive it (coverage.first_season), not repeat one.
 """
 
 import json

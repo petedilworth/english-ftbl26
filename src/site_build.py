@@ -3956,53 +3956,162 @@ class SiteBuilder:
     def _insight_natural_level(self) -> None:
         """
         Clubs whose current division is out of step with the level their
-        own record says they belong at.
+        own record says they belong at - ranked by how LONG, which is the
+        thing that separates them. See src/levelspells.py for why the gap
+        alone could not.
         """
         if "natural_level_gap" not in self.trajectory_cols:
             return
 
+        import coverage as coverage_mod
         import level as level_mod
+        import levelspells
 
-        def table(where: str, order: str) -> list[list]:
-            rows = self.conn.execute(
-                f"""
-                SELECT club_id, canonical_name, natural_level_label,
-                       natural_level_tier, current_tier, natural_level_gap,
-                       coverage_note
-                FROM club_trajectory
-                WHERE natural_level_gap IS NOT NULL AND {where}
-                ORDER BY {order}, canonical_name LIMIT 25
-                """
-            ).fetchall()
-            return [
-                [self._cell(i + 1, num=True),
-                 self._cell(r["canonical_name"], r["club_id"]),
-                 self._cell(r["natural_level_label"]),
-                 self._cell(level_mod.bucket_name(r["current_tier"], r["coverage_note"])),
-                 self._cell(abs(r["natural_level_gap"]), num=True)]
-                for i, r in enumerate(rows)
-            ]
+        spells = levelspells.current_spells(self.conn)
+        above = [x for x in spells if x["direction"] == "above"]
+        below = [x for x in spells if x["direction"] == "below"]
+        all_summary = levelspells.summarise(spells)
 
-        columns = ["#", "Club", "Natural level", "Now", "Divisions"]
+        def rows(group: list[dict]) -> list[dict]:
+            return [{
+                "club_id": x["club_id"],
+                "name": x["name"],
+                "level": x["natural_level_label"],
+                "now": level_mod.bucket_name(x["current_tier"], x["coverage_note"]),
+                "since": season_label(x["since"]),
+                "seasons": x["seasons"],
+                "trend": x["trend"] or "—",
+                "trend_class": {"rising": "up", "falling": "down"}.get(x["trend"], "level"),
+                "new_normal": x["new_normal"],
+            } for x in group]
+
+        # What usually happens next, from the whole record.
+        histories = level_mod.load_histories(self.conn)
+        latest = max(self.seasons)
+        counts = levelspells.rolling_outcomes(histories, latest)
+
+        def pct(bucket: dict, key: str) -> int:
+            return round(100 * bucket[key] / bucket["n"]) if bucket.get("n") else 0
+
+        outcome_rows = []
+        for direction, size, label in (
+            ("above", "1", "One division above"),
+            ("above", "2+", "Two or more above"),
+            ("below", "1", "One division below"),
+            ("below", "2+", "Two or more below"),
+        ):
+            bucket = counts.get((direction, size))
+            if not bucket or bucket["n"] < 20:
+                continue
+            outcome_rows.append({
+                "label": label, "n": f"{bucket['n']:,}",
+                "back": pct(bucket, "back"), "still": pct(bucket, "still"),
+                "further": pct(bucket, "further"), "crossed": pct(bucket, "crossed"),
+            })
+
+        outcomes = None
+        a1, b1 = counts.get(("above", "1")), counts.get(("below", "1"))
+        if a1 and b1 and a1["n"] >= 20 and b1["n"] >= 20:
+            a_back, b_back = pct(a1, "back"), pct(b1, "back")
+            a_fur, b_fur = pct(a1, "further"), pct(b1, "further")
+            symmetric = abs(a_back - b_back) <= 5
+            verdict = (
+                "The two are close to symmetrical: a spell above is no more of a "
+                "moment than a spell below is structural."
+                if symmetric else
+                "The two are not symmetrical, and the numbers say which way."
+            )
+            outcomes = {
+                "rows": outcome_rows,
+                "sentence": (
+                    f"Of every club-season on record spent one division above its "
+                    f"level, {a_back}% were back at that level three seasons later "
+                    f"and {a_fur}% had climbed further. Of those one division below, "
+                    f"{b_back}% were back and {b_fur}% had fallen further. {verdict}"
+                ),
+                "method": (
+                    f"Each club-season is judged against its level as it stood at the "
+                    f"time, recomputed from only the seasons up to then, so nothing "
+                    f"the club did afterwards leaks into where it was said to belong. "
+                    f"\u201cThree seasons later\u201d is {levelspells.LOOK_AHEAD} "
+                    f"seasons on, and a club absent from the record by then is counted "
+                    f"as below it."
+                ),
+            }
+
+        finance = None
+        shares = levelspells.wage_share_by_group(self.conn)
+        if shares:
+            finance = (
+                f"Wages as a share of turnover, from each club\u2019s latest full "
+                f"accounts: {shares['below']['median']:.0%} for clubs below their "
+                f"level ({shares['below']['n']} clubs), {shares['at']['median']:.0%} "
+                f"at it ({shares['at']['n']}) and {shares['above']['median']:.0%} "
+                f"above it ({shares['above']['n']}). This page used to say that "
+                f"falling below your level does financial damage that compounds. "
+                f"That is a hint in the same direction, from groups too small to "
+                f"call it more than one."
+            )
+
+        first = coverage_mod.first_season(self.conn)
+        nn = levelspells.NEW_NORMAL_SEASONS
         self.render(
-            "insight_table.html",
+            "insight_level.html",
             self.out / "insights" / "natural-level" / "index.html", 2,
             title="Above and below their level",
             heading="Above and below their level",
             intro=(
-                "A club's natural level is where the balance of its record since "
-                "1993/94 puts it. These are the clubs furthest from it right now. "
-                "Climbing above your level is usually a moment; falling below it is "
-                "usually structural, and harder to reverse."
+                f"A club\u2019s natural level is where the balance of its record puts "
+                f"it, measured from {season_label(first)}. These are the clubs out "
+                f"of step with it now, ranked by how long they have been there, "
+                f"because how long is the thing that separates them: the distance "
+                f"is a whole number of divisions and nearly everyone is one away."
             ),
+            stats=[
+                {"value": len(above), "label": "Above their level now"},
+                {"value": len(below), "label": "Below their level now"},
+                {"value": all_summary.get("new_normal", 0),
+                 "label": f"There {nn} seasons or longer"},
+                {"value": all_summary.get("median", 0), "label": "Median spell, seasons"},
+            ],
+            outcomes=outcomes,
             sections=[
                 {"heading": "Playing above their level",
-                 "note": "Climbing, and usually enjoying a moment rather than a new normal.",
-                 "columns": columns, "rows": table("natural_level_gap < 0", "natural_level_gap ASC")},
+                 "note": self._spell_note(levelspells.summarise(above), "above"),
+                 "rows": rows(above)},
                 {"heading": "Playing below their level",
-                 "note": "Falling below your level does financial damage that compounds, which is why it is harder to reverse.",
-                 "columns": columns, "rows": table("natural_level_gap > 0", "natural_level_gap DESC")},
+                 "note": self._spell_note(levelspells.summarise(below), "below"),
+                 "rows": rows(below)},
             ],
+            finance=finance,
+            caveat=coverage_mod.natural_level_caveat(self.conn),
+        )
+
+    @staticmethod
+    def _spell_note(summary: dict, direction: str) -> str:
+        """
+        The line under each table, from its own numbers. Names the count
+        that the old copy's "usually a moment" would have covered, and
+        the count it would have had to ignore.
+        """
+        import levelspells
+        if not summary.get("n"):
+            return "No club is currently out of step in this direction."
+        n, moment, nn = summary["n"], summary["moment"], summary["new_normal"]
+        trend = summary["trend"]
+        movement = {
+            "above": f"{trend['rising']} are still rising, {trend['falling']} already falling back",
+            "below": f"{trend['falling']} are still falling, {trend['rising']} climbing back",
+        }[direction]
+        greyed = (
+            f" The greyed rows have been there {levelspells.NEW_NORMAL_SEASONS} seasons "
+            f"or more, which is long enough that the level is probably what is out "
+            f"of date, not the club."
+            if nn else ""
+        )
+        return (
+            f"{n} clubs. {moment} have been here {levelspells.MOMENT_SEASONS} seasons "
+            f"or fewer; {nn} for a decade or more. Of the {n}, {movement}.{greyed}"
         )
 
     def _insight_yo_yo(self) -> None:

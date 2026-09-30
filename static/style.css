@@ -764,3 +764,21 @@ table.theme-table th { text-align: left; }
 .rivalry h3 { margin: 0 0 4px; font-size: 16px; }
 .rivalry .rivalry-meta { margin: 0 0 8px; font-size: 13px; color: var(--muted); }
 .rivalry p { margin: 0; font-size: 14px; }
+
+/* ── Above and below their level ─────────────────────────────────────────
+   A row past NEW_NORMAL_SEASONS is the model's limit rather than the
+   club's position, and is marked as such rather than left to imply a
+   fall the club has spent a decade not taking. */
+tr.new-normal td { color: var(--muted); }
+tr.new-normal td a { color: var(--muted); }
+.level-tag {
+  font-size: 11px;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 1px 8px;
+  white-space: nowrap;
+}
+.status-tag.level { color: var(--muted); }
+table.outcomes td.outcome-back { color: var(--up); font-weight: 600; }
+table.outcomes td.outcome-further { color: var(--down); }
