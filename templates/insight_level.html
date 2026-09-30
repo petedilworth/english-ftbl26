@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>{{ heading }}</h1>
+<p class="subtitle">{{ intro }}</p>
+
+<div class="stat-cards">
+  {% for card in stats %}
+  <div class="stat-card"><div class="stat-value">{{ card.value }}</div><div class="stat-label">{{ card.label }}</div></div>
+  {% endfor %}
+</div>
+
+{# Measured rather than asserted: this page used to say that climbing was
+   "usually a moment" and falling "usually structural", and the record
+   says neither. src/levelspells.rolling_outcomes judges each club-season
+   by the level as it stood THEN, so no hindsight leaks in. #}
+{% if outcomes %}
+<h2>What usually happens next</h2>
+<p class="subtitle">{{ outcomes.sentence }}</p>
+<div class="table-scroll">
+<table class="standings outcomes">
+  <tr>
+    <th>Out of step by</th>
+    <th class="num">Club-seasons</th>
+    <th class="num">Back at their level</th>
+    <th class="num">Still out of step</th>
+    <th class="num">Further away</th>
+    <th class="num">Crossed over</th>
+  </tr>
+  {% for row in outcomes.rows %}
+  <tr>
+    <td>{{ row.label }}</td>
+    <td class="num">{{ row.n }}</td>
+    <td class="num outcome-back">{{ row.back }}%</td>
+    <td class="num">{{ row.still }}%</td>
+    <td class="num outcome-further">{{ row.further }}%</td>
+    <td class="num">{{ row.crossed }}%</td>
+  </tr>
+  {% endfor %}
+</table>
+</div>
+<p class="finance-note">{{ outcomes.method }}</p>
+{% endif %}
+
+{% for section in sections %}
+<h2>{{ section.heading }}</h2>
+<p class="subtitle">{{ section.note }}</p>
+<div class="table-scroll">
+<table class="standings">
+  <tr>
+    <th>#</th><th>Club</th><th>Natural level</th><th>Now</th>
+    <th>Since</th><th class="num">Seasons</th><th>Direction</th><th></th>
+  </tr>
+  {% for row in section.rows %}
+  <tr{% if row.new_normal %} class="new-normal"{% endif %}>
+    <td class="num">{{ loop.index }}</td>
+    <td><a href="{{ root }}/team/{{ row.club_id }}/index.html#natural-level">{{ row.name }}</a></td>
+    <td>{{ row.level }}</td>
+    <td>{{ row.now }}</td>
+    <td>{{ row.since }}</td>
+    <td class="num">{{ row.seasons }}</td>
+    <td><span class="status-tag {{ row.trend_class }}">{{ row.trend }}</span></td>
+    <td>{% if row.new_normal %}<span class="level-tag">probably their level now</span>{% endif %}</td>
+  </tr>
+  {% endfor %}
+</table>
+</div>
+{% endfor %}
+
+{% if finance %}
+<h2>And the money</h2>
+<p class="subtitle">{{ finance }}</p>
+{% endif %}
+
+<p class="finance-note">{{ caveat }}</p>
+{% endblock %}
