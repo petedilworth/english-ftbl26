@@ -27,6 +27,7 @@ sys.path.insert(0, str(_SRC))
 
 import aggregate  # noqa: E402  (points-era boundary for records tables)
 import content  # noqa: E402  (needs _SRC on the path first)
+import hatred as hatred_mod  # noqa: E402  (the most disliked clubs)
 import divisions
 divisions_mod = divisions
 import finances  # noqa: E402  (disclosure states for the club finances table)
@@ -2526,6 +2527,11 @@ class SiteBuilder:
                 "rivalries", "Rivalries & derbies",
                 "The needle behind the fixture list",
             ))
+        if (PROJECT_ROOT / "content" / "insights" / "hatred.md").exists():
+            stories.append(story(
+                "hatred", "The most disliked clubs",
+                "Envied, resented, mocked or despised — and why Tottenham are only one of them",
+            ))
         movement_matches = self._movement_matches()
         import movement as movement_mod
         if any(movement_matches.get(k) for k in (
@@ -2638,6 +2644,7 @@ class SiteBuilder:
         self._insight_catchment()
         self._insight_pyramid()
         self._insight_scatter()
+        self._insight_hatred()
         self._insight_boom_and_bust(boom_bust_events)
         self._insight_the_drop(movement_matches)
         self._insight_the_rise(movement_matches)
@@ -2864,6 +2871,124 @@ class SiteBuilder:
                 "matches only, as far back as this site reaches at each "
                 "level; a pair with no record has never met in a division on file."
             ),
+        )
+
+    # ── The most disliked clubs ──────────────────────────────────────────
+
+    HATRED_KINDS = [
+        {"key": "mocked", "label": "Mocked"}, {"key": "envied", "label": "Envied"},
+        {"key": "resented", "label": "Resented"}, {"key": "despised", "label": "Despised"},
+    ]
+    HATRED_PLOT = {"w": 760, "h": 400, "padL": 40, "padR": 24, "padT": 20, "padB": 40}
+
+    def _insight_hatred(self) -> None:
+        """
+        Four kinds of dislike scored apart (src/hatred.py), a scatter that
+        switches kind, the villain of each decade against the editorial
+        pick, a map of where each club is the intruder, and the clubs that
+        wear it. Gated on its prose like the other argued pages.
+        """
+        import json
+
+        import markdown as md
+        from markupsafe import Markup
+
+        source = PROJECT_ROOT / "content" / "insights" / "hatred.md"
+        if not source.exists():
+            return
+        curated = hatred_mod.load_curated()
+        rows = hatred_mod.score_clubs(self.conn, curated)
+        if not rows:
+            return
+        names = dict(self.conn.execute("SELECT club_id, canonical_name FROM club_master"))
+        by_id = {r["club_id"]: r for r in rows}
+
+        # The map: guarded, because msoa_demographics may be absent.
+        map_data = {"points": [], "legend": [], "min_share": 0.15}
+        try:
+            import catchment as catchment_mod
+            model = catchment_mod.current_shares(self.conn)
+            if model is not None:
+                map_data = hatred_mod.intruder_map(model, names)
+        except Exception as exc:  # the page must build without the map
+            logger.warning("hatred map skipped: %s", exc)
+
+        # Server-rendered first paint of the default kind; the script
+        # redraws on a chip click from the same data.
+        plot = self.HATRED_PLOT
+        default_kind = self.HATRED_KINDS[0]["key"]
+        x_max = max([r["success"] for r in rows] + [1.0])
+        y_max = max([r[default_kind] for r in rows] + [1.0])
+        plot_w = plot["w"] - plot["padL"] - plot["padR"]
+        plot_h = plot["h"] - plot["padT"] - plot["padB"]
+        points = []
+        for r in rows:
+            points.append({
+                "club_id": r["club_id"], "name": r["name"],
+                "cx": round(plot["padL"] + r["success"] / x_max * plot_w, 1),
+                "cy": round(plot["h"] - plot["padB"] - r[default_kind] / y_max * plot_h, 1),
+                "tooltip": f"{r['name']} — {default_kind} {r[default_kind]:.1f}, success {r['success']:.0f}",
+            })
+        top = sorted(rows, key=lambda r: -r[default_kind])[:3]
+        labelled = [p for p in points if p["club_id"] in {t["club_id"] for t in top}]
+
+        def scores(r):
+            return {k: round(r[k], 1) for k in hatred_mod.KINDS}
+
+        wear_it = []
+        for w in curated.get("wear_it") or []:
+            if not isinstance(w, dict) or w.get("club") not in names:
+                continue
+            r = by_id.get(w["club"])
+            wear_it.append({"club_id": w["club"], "name": names[w["club"]], "since": w.get("since"),
+                            "line": w.get("line", ""), "what": " ".join(str(w.get("what", "")).split()),
+                            "scores": scores(r) if r else None})
+
+        # Surveys, when pasted in: the club's survey figure beside its model rank.
+        total_rank = {r["club_id"]: n for n, r in enumerate(
+            sorted(rows, key=lambda r: -sum(r[k] for k in hatred_mod.KINDS)), start=1)}
+        surveys = []
+        for sv in curated.get("surveys") or []:
+            if not isinstance(sv, dict) or not sv.get("scores"):
+                continue
+            srows = []
+            for cid, value in sorted(sv["scores"].items(), key=lambda kv: -float(kv[1])):
+                r = by_id.get(cid)
+                if not r:
+                    continue
+                srows.append({"club_id": cid, "name": r["name"],
+                              "survey": f"{value}%" if sv.get("kind", "percent") == "percent" else value,
+                              "model_rank": total_rank.get(cid, "—"), **scores(r)})
+            surveys.append({"source": sv.get("source", ""), "question": sv.get("question", ""), "rows": srows})
+
+        club_json = [{
+            "id": r["club_id"], "name": r["name"], "tier": r["tier"], "success": r["success"],
+            **{k: r[k] for k in hatred_mod.KINDS},
+            "titles": r["titles"], "topFour": r["top_four"], "topFlight": r["top_flight_seasons"],
+            "lastTitle": r["mocked_detail"]["last_title"], "since": r["mocked_detail"]["top_flight_seasons_since"],
+            "nearMisses": r["mocked_detail"]["near_misses"], "wagePct": r["wage_percentile"],
+            "neighbours": r["exposure"]["neighbours"], "people": r["exposure"]["people"],
+            "events": [{"kind": kind, **e} for kind, evs in r["events"].items() for e in evs],
+        } for r in rows]
+
+        out_dir = self.out / "insights" / "hatred"
+        out_dir.mkdir(parents=True, exist_ok=True)
+        (out_dir / "hatred-data.js").write_text(
+            "window.HATRED_DATA = " + json.dumps({
+                "kinds": self.HATRED_KINDS, "defaultKind": default_kind, "plot": plot,
+                "clubs": club_json, "map": map_data,
+            }) + ";", encoding="utf-8")
+        self.render(
+            "insight_hatred.html", out_dir / "index.html", 2,
+            title="The most disliked clubs",
+            intro_html=Markup(md.markdown(content.load_theme(source))),
+            kinds=self.HATRED_KINDS, default_kind=default_kind,
+            default_label=self.HATRED_KINDS[0]["label"],
+            width=plot["w"], height=plot["h"], pad_left=plot["padL"], pad_right=plot["padR"],
+            pad_top=plot["padT"], pad_bottom=plot["padB"],
+            points=points, labelled=labelled, surveys=surveys,
+            eras=hatred_mod.decade_picks(self.conn, curated),
+            map=map_data, wear_it=wear_it,
         )
 
     def _movement_matches(self) -> dict[str, list[dict]]:

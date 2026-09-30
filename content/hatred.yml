@@ -1,0 +1,147 @@
+# The parts of the dislike model the database cannot know. Editorial, with
+# a source note on every entry so a reader can check it. See
+# src/hatred.py for how these combine with the record.
+#
+# weight: 1 (a grievance the club's own fans mostly share) to 5 (a
+# grievance football people hold against the club itself).
+
+despised:
+  - club: mk-dons-fc
+    year: 2003
+    weight: 5
+    what: >
+      The only English league club to have relocated to another town.
+      Wimbledon FC moved to Milton Keynes in 2003 on the approval of an FA
+      commission and was renamed the following year; the supporters who
+      stayed behind founded AFC Wimbledon. The move remains the standing
+      example of what a club is not allowed to do.
+  - club: cardiff-city-fc
+    year: 2012
+    weight: 2
+    what: >
+      The owner, Vincent Tan, changed the home kit from blue to red and
+      the badge to a dragon, for the Asian market. Reversed in 2015 after
+      three seasons of protest.
+  - club: hull-city-fc
+    year: 2013
+    weight: 2
+    what: >
+      The owner, Assem Allam, tried to rename the club Hull Tigers and
+      told supporters who objected they could "die as soon as they want".
+      The FA refused the change in 2014 and again in 2015.
+  - club: coventry-city-fc
+    year: 2013
+    weight: 1
+    what: >
+      The owners, SISU, took home games to Northampton in a rent dispute
+      over the club's own stadium, and to Birmingham in 2019-21. The
+      grievance attaches to the owners; the club carries it.
+  - club: blackpool-fc
+    year: 2015
+    weight: 1
+    what: >
+      Supporters boycotted the club under the Oyston family from 2015. A
+      High Court judgment in 2017 found the owners had acted against a
+      fellow shareholder's interests; they were removed in 2019.
+  - club: charlton-athletic-fc
+    year: 2014
+    weight: 1
+    what: >
+      Roland Duchâtelet's ownership, 2014-2020, brought six seasons of
+      organised protest and a network of clubs run from Belgium.
+
+# Ownership and money that other clubs' supporters hold against a club.
+resented:
+  - club: chelsea-fc
+    year: 2003
+    weight: 3
+    what: Roman Abramovich's purchase, and the spending that followed it.
+  - club: manchester-city-fc
+    year: 2008
+    weight: 3
+    what: The Abu Dhabi United Group's purchase; state-linked wealth in the league.
+  - club: manchester-city-fc
+    year: 2023
+    weight: 3
+    what: >
+      Charged by the Premier League with more than a hundred breaches of
+      its financial rules over nine seasons.
+  - club: newcastle-united-fc
+    year: 2021
+    weight: 3
+    what: Bought by a consortium led by Saudi Arabia's Public Investment Fund.
+  - club: manchester-united-fc
+    year: 2005
+    weight: 1
+    what: >
+      The Glazer family's leveraged buyout, which loaded the purchase debt
+      onto the club. Resented most by the club's own supporters; FC United
+      of Manchester was founded in response.
+
+# Clubs that took the dislike and made it a badge.
+wear_it:
+  - club: millwall-fc
+    since: 1977
+    line: "No one likes us, we don't care"
+    what: >
+      Sung to Rod Stewart's "Sailing" since the late 1970s, after a run of
+      press coverage of crowd trouble at The Den. The one club whose
+      anthem is a statement of its reputation.
+  - club: leeds-united-fc
+    since: 1965
+    line: "Dirty Leeds"
+    what: >
+      Don Revie's side, the most disliked of the late 1960s and 1970s for
+      how it played and how much it won. The label outlived the team by
+      fifty years and the club's supporters use it themselves.
+  - club: wimbledon-fc
+    since: 1986
+    line: "The Crazy Gang"
+    what: >
+      Long-ball football and a dressing room that terrorised visitors, from
+      the Fourth Division to the FA Cup in nine years. Disliked by the
+      establishment and proud of it; the club that later became MK Dons.
+  - club: stoke-city-fc
+    since: 2008
+    line: "A cold Tuesday night in Stoke"
+    what: >
+      Tony Pulis's Stoke, 2008-2013: the phrase began as a question about
+      whether the league's best players could cope there, and the club
+      adopted it.
+
+# The villain of each decade, named from football memory. The page shows
+# the model's own pick beside it and says when they disagree.
+eras:
+  - decade: 1960
+    club: leeds-united-fc
+    why: Revie's Leeds arrive; "dirty Leeds" is coined.
+  - decade: 1970
+    club: leeds-united-fc
+    why: The dominant, disliked side of the decade, and a Brian Clough film about it.
+  - decade: 1980
+    club: liverpool-fc
+    why: Six titles in ten years; the club everyone else measured itself against.
+  - decade: 1990
+    club: manchester-united-fc
+    why: Ferguson's first great side and the Premier League money behind it.
+  - decade: 2000
+    club: chelsea-fc
+    why: Abramovich's money and Mourinho's manner.
+  - decade: 2010
+    club: manchester-city-fc
+    why: State-backed wealth, and the titles it bought.
+  - decade: 2020
+    club: manchester-city-fc
+    why: The charges, and four titles in a row while they went unheard.
+
+# Survey results, pasted in as a check on the model. Each entry is one
+# poll: the source, the question as asked, and a percentage or rank per
+# club. Empty until one is added; nothing outside the repo is fetched.
+#
+# - source: "YouGov, March 2019"
+#   question: "Which club do you dislike the most?"
+#   kind: percent
+#   scores:
+#     manchester-united-fc: 21
+#     tottenham-hotspur-fc: 9
+surveys: []

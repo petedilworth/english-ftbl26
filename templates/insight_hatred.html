@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>The most disliked clubs</h1>
+<p class="subtitle">Four kinds of dislike, scored apart, and why Tottenham are only in one of them.</p>
+
+<div class="theme-intro">{{ intro_html }}</div>
+
+<h2>Dislike against success</h2>
+<p class="subtitle">Every club with a top-flight season since 1958/59. Across: what they have won. Up: one kind of dislike at a time. Click a dot for the working.</p>
+<div class="map-chips chip-row hatred-kind-chips" role="group" aria-label="Kind of dislike">
+  {% for k in kinds %}
+  <button class="chip{% if k.key == default_kind %} chip-active{% endif %}" data-kind="{{ k.key }}" aria-pressed="{{ 'true' if k.key == default_kind else 'false' }}">{{ k.label }}</button>
+  {% endfor %}
+</div>
+<div class="chart-holder">
+  <svg id="hatred-scatter" viewBox="0 0 {{ width }} {{ height }}" preserveAspectRatio="xMidYMid meet" aria-label="Dislike against success">
+    <line x1="{{ pad_left }}" y1="{{ height - pad_bottom }}" x2="{{ width - pad_right }}" y2="{{ height - pad_bottom }}" stroke="#c8ced6" stroke-width="1"></line>
+    <line x1="{{ pad_left }}" y1="{{ pad_top }}" x2="{{ pad_left }}" y2="{{ height - pad_bottom }}" stroke="#c8ced6" stroke-width="1"></line>
+    <text x="{{ (width) / 2 }}" y="{{ height - 6 }}" font-size="10" fill="#6b7683" text-anchor="middle">Titles and top-four finishes since 1958/59 →</text>
+    <text id="hatred-y-label" x="12" y="{{ pad_top + 4 }}" font-size="10" fill="#6b7683" text-anchor="start">{{ default_label }} →</text>
+    {% for p in points %}
+    <circle cx="{{ p.cx }}" cy="{{ p.cy }}" r="5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="1.5"
+            class="hatred-dot" data-club="{{ p.club_id }}" tabindex="0" role="button"><title>{{ p.tooltip }}</title></circle>
+    {% endfor %}
+    {% for p in labelled %}
+    <text x="{{ p.cx + 8 }}" y="{{ p.cy + 4 }}" font-size="11" font-weight="600" fill="#17202a" class="hatred-label">{{ p.name }}</text>
+    {% endfor %}
+  </svg>
+</div>
+<div id="hatred-detail" class="chart-detail" hidden></div>
+
+{% if surveys %}
+<h3>What people actually say</h3>
+<p class="subtitle">Surveys pasted in beside the model's rank, so the construction can be checked against an answer.</p>
+{% for s in surveys %}
+<p><b>{{ s.source }}</b> — “{{ s.question }}”</p>
+<div class="table-scroll"><table class="standings">
+  <tr><th>Club</th><th class="num">Survey</th><th class="num">Model rank, all kinds</th><th class="num">Envied</th><th class="num">Resented</th><th class="num">Mocked</th><th class="num">Despised</th></tr>
+  {% for r in s.rows %}
+  <tr><td><a href="{{ root }}/team/{{ r.club_id }}/index.html">{{ r.name }}</a></td><td class="num">{{ r.survey }}</td><td class="num">{{ r.model_rank }}</td><td class="num">{{ r.envied }}</td><td class="num">{{ r.resented }}</td><td class="num">{{ r.mocked }}</td><td class="num">{{ r.despised }}</td></tr>
+  {% endfor %}
+</table></div>
+{% endfor %}
+{% else %}
+<p class="finance-note">No survey has been added yet. When one is pasted into <code>content/hatred.yml</code> it appears here beside the model's ranks.</p>
+{% endif %}
+
+<h2>The villain of each decade</h2>
+<p class="subtitle">The model's pick is the club with most envy in the decade — titles and top-four finishes. The editorial pick is from memory. Where they differ, the difference is the point.</p>
+<div class="table-scroll"><table class="standings">
+  <tr><th>Decade</th><th>The model says</th><th>We say</th><th>Why</th></tr>
+  {% for d in eras %}
+  <tr>
+    <td>{{ d.label }}</td>
+    <td>{{ d.model_name }}{% if d.runner_up %} <span class="status-tag">then {{ d.runner_up }}</span>{% endif %}</td>
+    <td>{% if d.editorial_name %}{{ d.editorial_name }}{% if d.agree %} <span class="status-tag">agree</span>{% else %} <span class="status-tag">differs</span>{% endif %}{% else %}—{% endif %}</td>
+    <td>{{ d.why }}</td>
+  </tr>
+  {% endfor %}
+</table></div>
+<p class="finance-note">The model can only score envy by decade: the accounts, the ownership and the sanctions that drive resentment do not reach back. So it names the most successful club, and when memory names a different one — Leeds in the 1960s and 1970s, Chelsea in the 2000s — memory is remembering something the table does not hold.</p>
+
+<h2>Where they are the intruder</h2>
+<p class="subtitle">Each dot is a neighbourhood where a club that is not its local club draws at least {{ (map.min_share * 100) | int }}% of the people. Pick a club to see where it is the one taking someone else's doorstep.</p>
+<div class="map-chips chip-row hatred-map-chips" role="group" aria-label="Intruding club">
+  {% for e in map.legend %}
+  <button class="chip{% if loop.first %} chip-active{% endif %}" data-intruder="{{ loop.index0 }}" aria-pressed="{{ 'true' if loop.first else 'false' }}">{{ e.name }} <span class="chip-count">{{ "{:,}".format(e.people) }}</span></button>
+  {% endfor %}
+</div>
+<div id="hatred-map" class="map-canvas"></div>
+<p class="finance-note">From the catchment model with every club at its current level: modelled, not counted. The number on each chip is the people the club draws from other clubs' doorsteps in total.</p>
+
+<h2>Clubs that wear it</h2>
+<p class="subtitle">Dislike taken and made into a badge.</p>
+{% for w in wear_it %}
+<div class="rivalry">
+  <h3><a href="{{ root }}/team/{{ w.club_id }}/index.html">{{ w.name }}</a> <span class="status-tag">since {{ w.since }}</span></h3>
+  <p class="rivalry-meta">“{{ w.line }}”{% if w.scores %} · envied {{ w.scores.envied }} · resented {{ w.scores.resented }} · mocked {{ w.scores.mocked }} · despised {{ w.scores.despised }}{% endif %}</p>
+  <p>{{ w.what }}</p>
+</div>
+{% endfor %}
+
+<h2>How it is scored</h2>
+<div class="theme-intro">
+<p><b>Envied</b>: a title is three points and a top-four finish one, since 1958/59; the last ten seasons count double. <b>Resented</b>: wage bill rank within the division in the latest accounts, up to four points; financial-rules deductions in the top flight, two each; and ownership events from the curated list. <b>Mocked</b>: since the last title, a tenth of a point per top-flight season and a point per top-four finish. <b>Despised</b>: the curated list only, weighted one to five. <b>Exposure</b> — clubs within fifteen miles and people in reach — is shown in the detail and never multiplied in.</p>
+<p>Every weight is in <code>src/hatred.py</code> and every curated entry in <code>content/hatred.yml</code>, with a note saying what it refers to.</p>
+</div>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="hatred-data.js"></script>
+<script src="{{ root }}/static/hatred.js"></script>
+{% endblock %}
