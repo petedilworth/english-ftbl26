@@ -26,6 +26,18 @@ def test_the_index_is_a_weighted_mean_with_a_gap_counted_at_the_middle():
     assert value.value_index(levers, {"climb": 0, "cheap": 0, "wages": 0}) == 0.0
 
 
+def test_the_tier_gap_is_the_index_less_its_tier_average():
+    rows = [
+        {"club_id": "a", "tier": 1, "levers": {"x": 1.0}},
+        {"club_id": "b", "tier": 1, "levers": {"x": 0.5}},
+        {"club_id": "c", "tier": 4, "levers": {"x": 0.25}},
+    ]
+    g = value.tier_gap(rows, {"x": 1.0})
+    assert g["a"]["tier_mean"] == pytest.approx(75.0)
+    assert g["a"]["gap"] == pytest.approx(25.0) and g["b"]["gap"] == pytest.approx(-25.0)
+    assert g["c"]["gap"] == 0.0                     # alone in its tier: the average is itself
+
+
 def _db():
     conn = sqlite3.connect(":memory:")
     conn.execute("CREATE TABLE club_trajectory (club_id TEXT, canonical_name TEXT, current_tier INT,"
@@ -113,8 +125,10 @@ def test_the_page_builds_with_equal_sliders_and_the_accounts_box(tmp_path, monke
     page = (out / "insights" / "value" / "index.html").read_text(encoding="utf-8")
     assert "Buy low, climb." in page
     n = len(value.LEVERS)
-    assert page.count('type="range"') == n and page.count('value="50"') == n   # equal to start
+    assert page.count('type="range"') == n + 1 and page.count('value="50"') == n   # equal to start
+    assert 'id="value-discount" min="0" max="100" step="10" value="0"' in page   # no discount to start
     assert 'class="value-money" checked' in page and "Equal weights" in page
     assert 'class="index-bar" data-club=' in page
+    assert 'id="value-discount"' in page and "Stand-outs in each tier" in page
     assert (out / "insights" / "value" / "value-data.js").exists()
     assert "Which club to buy" in (out / "insights" / "index.html").read_text(encoding="utf-8")

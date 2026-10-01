@@ -3057,6 +3057,19 @@ class SiteBuilder:
                          "rank": rank.get(cid), "index": f"{index[cid]:.0f}",
                          "segments": [] if hidden else segs, "hidden": hidden})
 
+        # The clubs furthest above their own tier, at the first-paint settings.
+        gaps = value_mod.tier_gap(rows)
+        standouts = []
+        for tier in sorted({r["tier"] for r in rows}):
+            mine = sorted((r for r in rows if r["tier"] == tier and not r["fan_owned"]),
+                          key=lambda r: -gaps[r["club_id"]]["gap"])[:3]
+            if not mine:
+                continue
+            standouts.append({"tier": tier, "mean": f"{gaps[mine[0]['club_id']]['tier_mean']:.0f}", "clubs": [
+                {"club_id": r["club_id"], "name": r["name"], "index": f"{gaps[r['club_id']]['index']:.0f}",
+                 "gap": f"{gaps[r['club_id']]['gap']:+.0f}"} for r in mine]})
+        means = [float(t["mean"]) for t in standouts]
+
         coverage = {lv["key"]: sum(1 for r in rows if r["levers"][lv["key"]] is not None) for lv in levers}
         page_groups = [{**g, "levers": [{**lv, "coverage": coverage[lv["key"]]}
                                         for lv in levers if lv["group"] == g["key"]]} for g in groups]
@@ -3078,7 +3091,8 @@ class SiteBuilder:
             groups=page_groups, bars=bars, total=len(rows),
             equal_share=round(100 / n), tiers=sorted({r["tier"] for r in rows}),
             fan_owned=sum(1 for r in rows if r["fan_owned"]),
-            with_accounts=coverage["revenue"],
+            with_accounts=coverage["revenue"], standouts=standouts,
+            mean_low=f"{min(means):.0f}" if means else "", mean_high=f"{max(means):.0f}" if means else "",
         )
 
     def _movement_matches(self) -> dict[str, list[dict]]:

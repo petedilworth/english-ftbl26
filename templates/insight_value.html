@@ -34,6 +34,15 @@
   <label><input type="checkbox" class="value-fan"> show fan-owned clubs ({{ fan_owned }})</label>
 </div>
 
+<div class="value-discount">
+  <label class="index-weight" for="value-discount">
+    <span class="index-weight-name">Tier discount</span>
+    <input type="range" id="value-discount" min="0" max="100" step="10" value="0" aria-describedby="value-discount-note">
+    <output class="value-discount-share" for="value-discount">0%</output>
+  </label>
+  <p class="finance-note" id="value-discount-note">How much of the average for the club's tier to take off before ranking. At 100% the number is how far a club sits above or below the average club in its own tier: the clubs the table rates higher than their division does. The black tick on each bar marks that average.</p>
+</div>
+
 <ol class="index-bars" id="index-bars">
   {% for b in bars %}
   <li class="index-bar" data-club="{{ b.club_id }}" data-tier="{{ b.tier }}" tabindex="0" role="button"{% if b.hidden %} hidden{% endif %}>
@@ -46,6 +55,16 @@
 </ol>
 <button class="chip index-more" type="button" aria-expanded="false">Show all</button>
 <div id="value-detail" class="chart-detail" hidden></div>
+
+<h2>Stand-outs in each tier</h2>
+<p class="subtitle">At equal weights, with the accounts in and fan-owned clubs out: the three clubs furthest above their own tier's average. The tier's average is the bar to beat.</p>
+<div class="table-scroll"><table class="standings">
+  <tr><th>Tier</th><th class="num">Tier average</th><th>Club</th><th class="num">Index</th><th class="num">Above its tier</th></tr>
+  {% for t in standouts %}{% for c in t.clubs %}
+  <tr>{% if loop.first %}<td rowspan="{{ t.clubs | length }}">Tier {{ t.tier }}</td><td class="num" rowspan="{{ t.clubs | length }}">{{ t.mean }}</td>{% endif %}<td><a href="{{ root }}/team/{{ c.club_id }}/index.html">{{ c.name }}</a></td><td class="num">{{ c.index }}</td><td class="num">{{ c.gap }}</td></tr>
+  {% endfor %}{% endfor %}
+</table></div>
+<p class="finance-note">The averages run from {{ mean_low }} to {{ mean_high }}: the tiers are closer together than the money between them, because steadiness, a clean record and room to climb all favour the lower divisions. So the discount mostly reorders clubs within a tier, and this table is where it bites.</p>
 
 <h2>The levers</h2>
 <div class="table-scroll"><table class="standings">

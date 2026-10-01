@@ -293,3 +293,19 @@ def value_index(levers: dict[str, float | None], weights: dict[str, float] | Non
     if total <= 0:
         return 0.0
     return 100.0 * sum(weights.get(k, 0.0) * (missing if v is None else v) for k, v in levers.items()) / total
+
+
+def tier_gap(rows: list[dict], weights: dict[str, float] | None = None) -> dict[str, dict]:
+    """
+    {club_id: {index, tier_mean, gap}}: the index against the average
+    index of every club in the same tier, at the same weights. A positive
+    gap is a club the table rates higher than its division does - the
+    shortlist a buyer wants, since the division is most of the price.
+    """
+    index = {r["club_id"]: value_index(r["levers"], weights) for r in rows}
+    by_tier: dict[int, list[float]] = {}
+    for r in rows:
+        by_tier.setdefault(r["tier"], []).append(index[r["club_id"]])
+    mean = {t: sum(v) / len(v) for t, v in by_tier.items()}
+    return {r["club_id"]: {"index": index[r["club_id"]], "tier_mean": mean[r["tier"]],
+                           "gap": index[r["club_id"]] - mean[r["tier"]]} for r in rows}
