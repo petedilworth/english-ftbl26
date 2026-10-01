@@ -6,7 +6,11 @@
 //   groups: [{key, label, color}], levers: [{key, group, label, note}], shown,
 //   clubs: [{id, name, tier, fan, flags, l: [0..1 | null per lever], raw: {key: text}}]
 // }
-// The fragment keeps the view: #w=50,50,... (lever order), money=0, fan=1.
+// The fragment keeps the view: #w=50,50,... (lever order), money=0, fan=1,
+// disc=100 (the tier discount, per cent).
+// The tier discount ranks by index minus a share of the average index of
+// the club's tier, taken over every club in that tier whatever is shown,
+// so hiding a tier never moves another tier's average.
 (function () {
   var data = window.VALUE_DATA;
   if (!data) return;
@@ -15,6 +19,8 @@
   var more = document.querySelector(".index-more");
   var moneyBox = document.querySelector(".value-money");
   var fanBox = document.querySelector(".value-fan");
+  var discount = document.getElementById("value-discount");
+  var means = {};  // tier -> average index at the current weights, for show()
   var sliders = Array.prototype.slice.call(document.querySelectorAll(".value-groups input[type=range]"));
   var tierChips = Array.prototype.slice.call(document.querySelectorAll(".value-tier-chips .chip"));
   var levers = data.levers;
@@ -68,11 +74,23 @@
     });
     var on = tiersOn();
     var pool = data.clubs.filter(function (c) { return visible(c, on); });
+    var alpha = discount ? Number(discount.value) / 100 : 0;
+    var sums = {}, counts = {};
+    score(w, data.clubs).forEach(function (r) {
+      sums[r.club.tier] = (sums[r.club.tier] || 0) + r.index;
+      counts[r.club.tier] = (counts[r.club.tier] || 0) + 1;
+    });
+    means = {};
+    Object.keys(sums).forEach(function (t) { means[t] = sums[t] / counts[t]; });
     var ranked = score(w, pool);
+    ranked.forEach(function (r) { r.adj = r.index - alpha * means[r.club.tier]; });
+    ranked.sort(function (a, b) { return b.adj - a.adj || a.club.name.localeCompare(b.club.name); });
+    var dOut = document.querySelector(".value-discount-share");
+    if (dOut) dOut.textContent = Math.round(alpha * 100) + "%";
     var equalRank = {};
     score(levers.map(function (lv) { return lv.group === "money" && moneyBox && !moneyBox.checked ? 0 : 1; }), pool)
       .forEach(function (r, i) { equalRank[r.club.id] = i + 1; });
-    var top = ranked.length && ranked[0].index > 0 ? ranked[0].index : 1;
+    var top = Math.max.apply(null, ranked.map(function (r) { return r.index; }).concat([1]));
     var items = {};
     Array.prototype.forEach.call(list.children, function (li) { items[li.getAttribute("data-club")] = li; li.hidden = true; });
     ranked.forEach(function (r, i) {
@@ -98,6 +116,13 @@
         seg.title = g.label + ": " + bits.join(", ");
         track.appendChild(seg);
       });
+      if (alpha > 0) {
+        var tick = document.createElement("span");
+        tick.className = "index-tick";
+        tick.style.left = (100 * means[r.club.tier] / top) + "%";
+        tick.title = "Tier " + r.club.tier + " average: " + Math.round(means[r.club.tier]);
+        track.insertBefore(tick, track.firstChild);  // first, so the last segment keeps its rounded end
+      }
       if (r.missing > 0) {
         var gap = document.createElement("span");
         gap.className = "index-seg is-missing";
@@ -107,7 +132,16 @@
         }).map(function (lv) { return lv.label; }).join(", ");
         track.appendChild(gap);
       }
-      li.querySelector(".index-value").firstChild.nodeValue = Math.round(r.index);
+      var val = li.querySelector(".index-value");
+      if (alpha > 0) {
+        var a = Math.round(r.adj);
+        val.firstChild.nodeValue = (a > 0 ? "+" : "") + a;
+        val.title = "Index " + Math.round(r.index) + " less " + Math.round(alpha * 100) + "% of the tier " +
+                    r.club.tier + " average (" + Math.round(means[r.club.tier]) + ")";
+      } else {
+        val.firstChild.nodeValue = Math.round(r.index);
+        val.title = "";
+      }
       var move = equalRank[r.club.id] - (i + 1);
       var mv = li.querySelector(".index-move");
       mv.textContent = move > 0 ? " ▲" + move : move < 0 ? " ▼" + (-move) : "";
@@ -124,6 +158,7 @@
       hs.set("w", equal ? null : sliders.map(function (s) { return s.value; }).join(","));
       hs.set("money", moneyBox && !moneyBox.checked ? "0" : null);
       hs.set("fan", fanBox && fanBox.checked ? "1" : null);
+      hs.set("disc", alpha > 0 ? String(Math.round(alpha * 100)) : null);
       var off = tierChips.filter(function (b) { return !b.classList.contains("chip-active"); });
       hs.set("tiers", off.length ? tierChips.filter(function (b) { return b.classList.contains("chip-active"); })
         .map(function (b) { return b.getAttribute("data-tier"); }).join(",") : null);
@@ -133,6 +168,12 @@
   function show(c) {
     if (!detail) return;
     var lines = ["<b>" + c.name + "</b> – tier " + c.tier + (c.flags.length ? " · " + c.flags.join(", ") : "")];
+    var w = weights(), total = w.reduce(function (t, x) { return t + x; }, 0);
+    if (total && means[c.tier] != null) {
+      var idx = score(w, [c])[0].index, gap = idx - means[c.tier];
+      lines.push("Index " + Math.round(idx) + " against a tier " + c.tier + " average of " + Math.round(means[c.tier]) +
+                 ": " + Math.abs(Math.round(gap)) + (gap >= 0 ? " above" : " below") + " its division, at these weights.");
+    }
     data.groups.forEach(function (g) {
       var bits = [];
       levers.forEach(function (lv, k) {
@@ -160,6 +201,7 @@
   }
   sliders.forEach(function (s) { s.addEventListener("input", draw); });
   [moneyBox, fanBox].forEach(function (b) { if (b) b.addEventListener("change", draw); });
+  if (discount) discount.addEventListener("input", draw);
   tierChips.forEach(function (b) {
     b.addEventListener("click", function () {
       var on = !b.classList.contains("chip-active");
@@ -190,6 +232,8 @@
     }
     if (moneyBox && hs.get("money") === "0") moneyBox.checked = false;
     if (fanBox && hs.get("fan") === "1") fanBox.checked = true;
+    var disc = Number(hs.get("disc"));
+    if (discount && disc > 0 && disc <= 100) discount.value = disc;
     var tiers = hs.get("tiers");
     if (tiers) {
       var keep = tiers.split(",");

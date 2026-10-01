@@ -812,7 +812,7 @@ tr.wages-over td:nth-child(7) { font-weight: 600; }
 .index-bar:focus-visible { outline: 2px solid var(--accent); }
 .index-rank { color: var(--muted); text-align: right; font-variant-numeric: tabular-nums; }
 .index-name { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.index-track { display: flex; gap: 2px; height: 14px; }
+.index-track { display: flex; gap: 2px; height: 14px; position: relative; }
 .index-seg { display: block; height: 100%; min-width: 0; }
 .index-seg:last-child { border-radius: 0 4px 4px 0; }
 .index-value { font-variant-numeric: tabular-nums; white-space: nowrap; }
@@ -838,3 +838,8 @@ tr.wages-over td:nth-child(7) { font-weight: 600; }
 .index-seg.is-missing { background: repeating-linear-gradient(135deg, #c8ced6 0 3px, #eef1f4 3px 6px); }
 .index-tier { color: var(--muted); font-size: 11px; margin-left: 4px; }
 .index-key { display: inline-block; width: 18px; height: 10px; vertical-align: middle; margin-right: 4px; border-radius: 2px; }
+.value-discount { max-width: 640px; margin: 0 0 12px; }
+.value-discount .index-weight-name { flex: 0 0 7.4em; font-weight: 600; }
+.value-discount .finance-note { margin: 2px 0 0; }
+.value-discount-share { flex: 0 0 2.6em; text-align: right; color: var(--muted); font-variant-numeric: tabular-nums; }
+.index-tick { position: absolute; top: -3px; width: 2px; height: 20px; background: var(--ink); margin-left: -1px; }

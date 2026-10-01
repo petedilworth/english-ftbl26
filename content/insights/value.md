@@ -25,3 +25,12 @@ top four tiers, and ground ownership is on file for fewer than a
 hundred. A lever with no data counts at the middle, which is generous
 to a club nobody has written anything down about. The hatching shows
 how much of each bar is that generosity.
+
+The tier discount turns the question round. The division sets most of a
+club's price, so the useful list is the clubs the levers rate above
+their own division: big for tier four, steady for tier three. Slide the
+discount to the right and each club is ranked on how far it sits above
+the average club in its tier. The gaps are smaller than the money
+between divisions would suggest, which is itself the finding: on these
+levers a good tier-four club and an ordinary Championship club look
+much alike, and only one of them costs Championship money.
