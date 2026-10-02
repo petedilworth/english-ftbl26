@@ -18,6 +18,8 @@ from pathlib import Path
 
 import yaml
 
+import grounds
+
 logger = logging.getLogger(__name__)
 
 # Prose sections, rendered in this order. Keys are the lowercase heading
@@ -347,6 +349,8 @@ def load_club(path: Path) -> dict | None:
 
     text = path.read_text(encoding="utf-8")
     facts, body = parse_front_matter(text)
+    # The researched ground record lives in one file beside the club files.
+    facts = grounds.merge(path.stem, facts, path.parent / "grounds.yml")
     sections, extra = split_sections(body)
 
     return {

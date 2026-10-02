@@ -15,7 +15,7 @@ weights the reader moves. Equal weights by default.
               wealth          income of the people in reach
               own doorstep    share of the people nearest it that it keeps
     ground    capacity        the ground as built
-              owns ground     club > council > third party > disputed
+              owns ground     how safely it holds its home - see grounds.security()
     risk      steadiness      a low yo-yo score
               clean record    no administration or points deduction lately
     price     cheap to buy    place in the pyramid now, lower is cheaper -
@@ -39,6 +39,7 @@ import sqlite3
 from statistics import median
 
 import content
+import grounds
 
 GROUPS = [
     {"key": "football", "label": "Football", "color": "#2a78d6"},
@@ -65,7 +66,9 @@ LEVERS = [
     {"key": "capacity", "group": "ground", "label": "Capacity",
      "note": "Seats and standing as built."},
     {"key": "owns_ground", "group": "ground", "label": "Owns ground",
-     "note": "Club-owned scores 1, council 0.5, third party 0.25, disputed 0."},
+     "note": "Owned by the club: 1. A council lease: 0.75 with fifty years or more left, 0.5 with ten, else 0.35; "
+             "another landlord 0.6, 0.35, 0.2. Held by the owner apart from the club: 0.4. "
+             "Tenant of another club: 0.1. Disputed: 0."},
     {"key": "steady", "group": "risk", "label": "Steadiness",
      "note": "A low yo-yo score: fewer promotions and relegations per season."},
     {"key": "clean", "group": "risk", "label": "Clean record",
@@ -230,10 +233,17 @@ def score_clubs(conn: sqlite3.Connection, facts: dict[str, dict] | None = None) 
         raw["capacity"][cid] = float(cap) if isinstance(cap, (int, float)) else None
         if raw["capacity"][cid]:
             shown[cid]["capacity"] = f"{int(cap):,} capacity"
-        own = f.get("stadium_ownership")
-        raw["owns_ground"][cid] = OWNERSHIP_SCORE.get(own)
-        if own in OWNERSHIP_SCORE:
-            shown[cid]["owns_ground"] = own.replace("_", " ")
+        # The researched record when there is one (src/grounds.py), else
+        # the older one-word field.
+        if f.get("ground"):
+            raw["owns_ground"][cid] = grounds.security(f["ground"], latest or newest)
+            if raw["owns_ground"][cid] is not None:
+                shown[cid]["owns_ground"] = grounds.describe(f["ground"], latest or newest).lower()
+        else:
+            own = f.get("stadium_ownership")
+            raw["owns_ground"][cid] = OWNERSHIP_SCORE.get(own)
+            if own in OWNERSHIP_SCORE:
+                shown[cid]["owns_ground"] = own.replace("_", " ")
         raw["steady"][cid] = yoyo
         if yoyo is not None:
             shown[cid]["steady"] = f"yo-yo score {yoyo:.2f}"
