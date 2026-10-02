@@ -3127,7 +3127,8 @@ class SiteBuilder:
         clubs = self.conn.execute(
             "SELECT s.club_id, COALESCE(m.canonical_name, s.club_name), s.tier FROM standings s"
             " LEFT JOIN club_master m ON m.club_id = s.club_id"
-            " WHERE s.season_end_year = ? AND s.tier <= 7 ORDER BY s.tier, 2", (newest,)).fetchall()
+            " WHERE s.season_end_year = ? AND s.tier <= 7 AND s.club_id IS NOT NULL"
+            " ORDER BY s.tier, 2", (newest,)).fetchall()
         year = newest - 1  # the calendar year the season started
         colour = {t["key"]: t["color"] for t in grounds_mod.OWNER_TYPES}
 
@@ -3157,25 +3158,28 @@ class SiteBuilder:
                     segs.append({"key": t["key"], "color": t["color"], "count": k,
                                  "width": round(100 * k / n, 2),
                                  "title": f"{label}, {t['label'].lower()}: {k} of {n}"})
+            # Of the clubs with an answer: an unresearched tier is not a tier
+            # where nobody owns their ground.
             owned = sum(1 for r in members if r["owner_type"] == "club")
-            return {"label": label, "tier": tier, "segments": segs, "club_share": f"{round(100 * owned / n)}%"}
+            known_n = sum(1 for r in members if r["owner_type"] != "unknown")
+            return {"label": label, "tier": tier, "segments": segs,
+                    "club_share": f"{round(100 * owned / known_n)}%" if known_n else "–"}
 
         tiers = [bar(f"Tier {t}", str(t), [r for r in rows if r["tier"] == t])
                  for t in sorted({r["tier"] for r in rows})]
         known = [r for r in rows if r["owner_type"] != "unknown"]
         share = lambda k: f"{round(100 * sum(1 for r in known if r['owner_type'] == k) / len(known))}%" if known else "–"
         stats = [
-            {"value": len(rows), "label": "Clubs researched"},
+            {"value": len(rows), "label": "Clubs in tiers 1–7"},
             {"value": len(known), "label": "Answer established"},
-            {"value": share("club"), "label": "Club owns it"},
-            {"value": share("council"), "label": "Council owns it"},
+            {"value": share("club"), "label": "Of those, club owns it"},
+            {"value": share("council"), "label": "Of those, council owns it"},
             {"value": sum(1 for r in rows if r["owner_type"] == "owner_company"), "label": "Held apart by the owner"},
         ]
         owner_apart = [r for r in rows if r["owner_type"] == "owner_company"]
         leases = sorted((r for r in rows if r["left"] is not None and r["owner_type"] != "club"),
                         key=lambda r: (r["left"], r["name"]))[:15]
         disputed = [r for r in rows if r["disputed"]]
-        as_of = [e.get("as_of") for e in records.values() if isinstance(e.get("as_of"), int)]
 
         self.render(
             "insight_grounds.html", self.out / "insights" / "grounds" / "index.html", 2,
@@ -3183,7 +3187,7 @@ class SiteBuilder:
             intro_html=Markup(md.markdown(content.load_theme(source))),
             stats=stats, types=grounds_mod.OWNER_TYPES, tiers=tiers, rows=rows,
             owner_apart=owner_apart, leases=leases, disputed=disputed,
-            researched=f"{max(as_of)}" if as_of else "2026",
+            researched=grounds_mod.researched(PROJECT_ROOT / "content" / "grounds.yml") or "2026",
         )
 
     def _movement_matches(self) -> dict[str, list[dict]]:

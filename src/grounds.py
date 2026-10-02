@@ -60,6 +60,14 @@ def load(path: Path) -> dict[str, dict]:
     return out
 
 
+def researched(path: Path) -> str:
+    """The file's own note of when the research was done, e.g. "October 2026"."""
+    path = Path(path)
+    if not path.exists():
+        return ""
+    return str((yaml.safe_load(path.read_text(encoding="utf-8")) or {}).get("researched") or "")
+
+
 def merge(club_id: str, facts: dict, path: Path) -> dict:
     """The club's facts with its ground entry under `ground`, and the
     legacy stadium_ownership brought into line with it."""
@@ -114,12 +122,12 @@ def describe(entry: dict, year: int) -> str:
             "council": "Council-owned", "landlord": "Owned by a landlord",
             "other_club": "Tenant of another club"}[kind]
     if entry.get("owner_name") and kind != "club":
-        text += f" ({entry['owner_name']})"
+        text += f": {entry['owner_name']}"
     left = years_left(entry, year)
     if left is not None:
-        text += f", lease to {entry['lease_end']}" + (" – expired" if left < 0 else "")
-    elif entry.get("lease_note"):
-        text += f", {entry['lease_note']}"
+        text += f"; lease to {entry['lease_end']}" + (" – expired" if left < 0 else "")
+    elif entry.get("lease_note") and kind != "club":
+        text += f"; {entry['lease_note']}"
     if entry.get("disputed"):
         text += " – disputed"
     return text
