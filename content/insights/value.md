@@ -21,8 +21,8 @@ fallen clubs in large towns. That second list is the one a buyer wants,
 and the gap between the two is the point of the sliders.
 
 Missing data is the catch. The accounts cover mostly the clubs in the
-top four tiers, and ground ownership is on file for fewer than a
-hundred. A lever with no data counts at the middle, which is generous
+top four tiers, and ground ownership could not be established for
+about thirty clubs, mostly in tier seven. A lever with no data counts at the middle, which is generous
 to a club nobody has written anything down about. The hatching shows
 how much of each bar is that generosity.
 

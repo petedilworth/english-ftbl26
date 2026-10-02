@@ -56,7 +56,7 @@ panel on the team page, and automatically place the club on the relevant
 | Field | Notes |
 |---|---|
 | `stadium` / `stadium_opened` / `capacity` | Current ground |
-| `stadium_ownership` | `club`, `council`, `third_party`, `disputed` |
+| `stadium_ownership` | `club`, `council`, `third_party`, `disputed`. Superseded where `content/grounds.yml` has the club: that researched record (owner, lease, sources) wins and this field is kept in step with it - see `src/grounds.py` |
 | `pitch_type` | `grass` or `artificial_3g` (3G blocks EFL promotion) |
 | `previous_grounds` | List of `{name, years}` |
 | `exile` | List of `{venue, seasons, distance_miles}` — playing "home" games elsewhere |
