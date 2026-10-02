@@ -1,0 +1,3511 @@
+# Who owns each club's ground. One entry per club in tiers 1-7 for the
+# 2026/27 season, researched in October 2026 from club statements,
+# council papers and local reporting (not Wikipedia). See src/grounds.py
+# for the owner_type categories. A correction: change the entry, add the
+# source, bump as_of. Evidence older than 2018 is never rated high.
+# Merged into each club's facts by content.load_club.
+researched: October 2026
+grounds:
+  arsenal-fc:
+    ground: Emirates Stadium
+    owner_type: club
+    owner_name: Arsenal (Emirates Stadium) Ltd, a subsidiary of Arsenal Holdings (ultimately KSE UK Inc
+      / Stan Kroenke)
+    since: 2006
+    note: The freehold is registered to Arsenal (Emirates Stadium) Limited, a wholly owned subsidiary
+      of the club's parent Arsenal Holdings, so it would pass with the club in a sale.
+    confidence: medium
+    sources:
+    - https://www.propertyweek.com/news-analysis/who-owns-premier-league-stadiums/5090883.article
+    - https://www.aquis.eu/companies/XX.AFC
+  aston-villa-fc:
+    ground: Villa Park
+    owner_type: club
+    owner_name: NSWE Stadium Ltd (within NSWE UK Ltd, Aston Villa's group; owners Nassef Sawiris and Wes
+      Edens)
+    since: 2025
+    note: In May 2019 Villa Park was sold for £56.7m to NSWE Stadium Ltd, a company controlled by owners
+      Sawiris and Edens, to help the club meet EFL profitability rules. The 2024-25 group accounts report
+      a restructure on 19 May 2025 that brought NSWE Stadium Ltd inside NSWE UK, the club's group, so
+      the ground is again consolidated with the club.
+    as_of: 2026
+    confidence: medium
+    sources:
+    - https://expressandstar.com/sport/football/aston-villa/2019/06/28/villa-park-sold-to-club-owners-in-567million-deal
+    - https://theesk.org/2026/05/05/the-analysis-series-nswe-uk-limited-aston-villa-accounts-year-ended-30-june-2025/
+  bournemouth-fc:
+    ground: Vitality Stadium (Dean Court)
+    owner_type: owner_company
+    owner_name: Black Knight Stadium Limited (entity created by Bill Foley's Black Knight Football Club)
+    lease_note: Club previously leased the ground back from Structadene after a 2005 sale-and-leaseback
+    since: 2025
+    note: Bournemouth sold the ground to London property company Structadene for about £3.5m in December
+      2005 and leased it back. In April 2025 a newly created BKFC entity, Black Knight Stadium Limited,
+      agreed to buy it back ahead of expansion to about 20-23,000; reports say this entity, not the club
+      company, holds the ground, so it looks like a sister company (structure not confirmed from filings).
+    as_of: 2025
+    confidence: medium
+    sources:
+    - https://www.thestadiumbusiness.com/2025/04/28/afc-bournemouth-reacquires-vitality-stadium-amid-development-plans/
+    - https://insidersport.com/2025/04/28/afc-bournemouth-set-for-stadium-renovations-after-acquisition/
+    - https://stadiumdb.com/news/2025/04/england_bournemouth_set_to_modernize_and_expand_vitality_stadium
+  brentford-fc:
+    ground: Gtech Community Stadium
+    owner_type: club
+    owner_name: Brentford FC
+    note: Hounslow Council took the freehold of the Lionel Road site by compulsory purchase and leased
+      it to the club during the build, with the freehold to return to the club once the stadium was finished.
+      The club's accounts carry the stadium as a club asset (revalued to £106.2m at June 2023).
+    as_of: 2023
+    confidence: medium
+    sources:
+    - https://new.chiswickw4.com/page/brentfordtw8/info/lionelroad019.htm
+    - https://new.actonw3.com/page/shared/common/brentfordfc048.htm
+  brighton-and-hove-albion-fc:
+    ground: American Express Stadium (Falmer Stadium)
+    owner_type: council
+    owner_name: Brighton & Hove City Council (freehold); stadium held on long lease by The Community Stadium
+      Ltd, a subsidiary of Brighton and Hove Albion Holdings
+    lease_end: 2134
+    lease_note: 125-year lease of the stadium land from 29 August 2009, for which a premium of GBP 5.3m
+      was paid; ground rent payable to the council
+    since: 2009
+    note: The council made the Falmer site available for the stadium and granted a 125-year long leasehold
+      to The Community Stadium Ltd, the club group's stadium company, which built and owns the stadium
+      and rents it to BHAFC Ltd. The club group therefore owns the building and long lease but not the
+      freehold.
+    as_of: 2011
+    confidence: medium
+    sources:
+    - https://democracy.brighton-hove.gov.uk/ieDecisionDetails.aspx?ID=1577
+    - https://democracy.brighton-hove.gov.uk/documents/s6249/Item 151 Stadium report Cabinet 15jan09.pdf
+    - https://www.northstandchat.com/threads/do-we-rent-the-stadium.341102/
+  chelsea-fc:
+    ground: Stamford Bridge
+    owner_type: landlord
+    owner_name: Chelsea Pitch Owners plc (fan-shareholder non-profit)
+    lease_note: 199-year lease to the club at nominal rent, granted when CPO bought the freehold in 1997;
+      a 2017 CPO AGM resolution authorised directors to propose extending it (no evidence found that an
+      extension was completed)
+    since: 1997
+    note: CPO, set up in 1993 to stop the ground being lost to developers, bought the freehold, pitch,
+      turnstiles and the Chelsea FC name in 1997 with a £10m loan from Chelsea Village and leases the
+      ground back to the club. A 2011 club bid to buy the freehold back won 61.6% of votes but missed
+      the 75% threshold; under BlueCo the club has said it intends to redevelop Stamford Bridge rather
+      than move and has bought adjacent land.
+    as_of: 2024
+    confidence: high
+    sources:
+    - https://www.healthclubmanagement.co.uk/health-club-management-news/Chelsea-defeated-in-stadium-purchase-bid/286473
+    - https://thechels.net/?p=13987
+    - https://www.thestadiumbusiness.com/2023/10/25/chelsea-stadium-decision-set-to-be-finalised-as-cpo-issues-statement
+  coventry-city-fc:
+    ground: Coventry Building Society Arena
+    owner_type: club
+    owner_name: Coventry City FC (owner Doug King)
+    since: 2025
+    note: Frasers Group (Mike Ashley) bought the arena from Wasps' administrators in November 2022 after
+      the club's late bid failed; in August 2025, the arena's 20th anniversary week, Coventry City completed
+      its purchase from Frasers, the first time the club has owned its home since leaving Highfield Road.
+    as_of: 2025
+    confidence: high
+    sources:
+    - https://www.hellorayo.co.uk/absolute-radio/uk/news/coventry-city-football-club-secures-ownership-of-coventry-building-society-arena
+    - https://stadiumdb.com/news/2025/08/england_coventry_city_finally_has_its_own_home_the_club_buys_cbs_arena
+    - https://www.placemidlands.co.uk/?p=532127
+  crystal-palace-fc:
+    ground: Selhurst Park
+    owner_type: club
+    owner_name: Crystal Palace FC (CPFC 2010 group)
+    since: 2010
+    note: Ground and club were separated from 1998 (freehold later held by Selhurst Park Ltd, an HBOS/Rock
+      Group joint venture, which leased it back to Palace in 2008); the CPFC 2010 consortium bought Selhurst
+      Park from Lloyds/PwC for about GBP4m in June 2010, reuniting ground and club. The club is now buying
+      neighbouring houses for its Main Stand redevelopment.
+    as_of: 2026
+    confidence: high
+    sources:
+    - https://www.yorkshirepost.co.uk/sport/bank-agrees-selhurst-park-deal-to-secure-palace-future-1973246
+    - https://cpfc.co.uk/news/content-page/crystal-palace-main-stand-redevelopment
+    - https://www.wearepalace.uk/club/stadium/
+  everton-fc:
+    ground: Hill Dickinson Stadium (Bramley-Moore Dock)
+    owner_type: landlord
+    owner_name: Peel L&P (Peel Land and Property), freeholder of Bramley-Moore Dock
+    lease_note: 200-year lease at a peppercorn rent held by club subsidiary Everton Stadium Development
+      Ltd, signed Nov 2017 (conditional on planning and funding)
+    since: 2017
+    note: Everton Stadium Development Ltd, a wholly owned club subsidiary, signed a 200-year peppercorn
+      lease of the dock site from Peel L&P in 2017; the club built and owns the stadium on that leasehold.
+      In 2025 The Friedkin Group refinanced the stadium debt with a GBP 350m private placement via JP
+      Morgan, co-issued by Everton Stadium Development Company Ltd and Everton Stadium Development Holding
+      Company Ltd.
+    as_of: 2025
+    confidence: medium
+    sources:
+    - https://insideworldfootball.com/?p=102611
+    - https://www.placenorthwest.co.uk/everton-and-peel-agree-lease-for-dock-site/
+    - https://www.theconstructionindex.co.uk/news/view/everton-signs-lease-for-new-300m-stadium
+    - https://insideworldfootball.com/?p=160541
+  fulham-fc:
+    ground: Craven Cottage
+    owner_type: club
+    owner_name: Fulham Stadium Ltd (Fulham FC group company)
+    since: 1997
+    note: Freehold was held by the Church Commissioners for most of the ground's history and then went
+      through private hands; Mohamed Al Fayed's 1997 purchase of the club took in the Craven Cottage freehold,
+      and it passed to Shahid Khan with the club in 2013. In 2024 Fulham Stadium Ltd, the group company
+      that owns Craven Cottage, registered a charge to J.P. Morgan to finance completing the Riverside
+      Stand.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://fulhamsupporterstrust.com/news/2024/08/borrowing-against-craven-cottage
+    - https://www.insideworldfootball.com/2013/07/15/fayed-bows-out-as-american-khan-takes-over-debt-free-fulham/
+  hull-city-fc:
+    ground: MKM Stadium
+    owner_type: council
+    owner_name: Hull City Council
+    lease_note: Council leases the stadium to the SuperStadium Management Company (SMC), which sublets
+      to Hull City and Hull FC; council said about 25 years remained on the SMC lease (date of statement
+      unclear)
+    note: Hull City Council owns the stadium; it is run by the SMC, which older reports describe as Allam-owned
+      and 2026 reports describe as operated by Hull City under Acun Ilicali. Hull FC's lease runs to the
+      end of the 2027 season and is being renegotiated amid public friction with Ilicali.
+    as_of: 2026
+    confidence: high
+    sources:
+    - https://www.alloutrugbyleague.co.uk/news/hull-fcs-mkm-stadium-future-1819578
+    - https://www.loverugbyleague.com/post/hull-fc-in-trouble-as-club-could-be-forced-out-of-mkm-stadium
+    - https://news.hull.gov.uk/?p=16519
+  ipswich-town-fc:
+    ground: Portman Road
+    owner_type: council
+    owner_name: Ipswich Borough Council (freehold of the land; the club owns the stands)
+    lease_end: 2067
+    lease_note: 99-year lease agreed with Ipswich Borough Council in 1968
+    since: 1968
+    note: Ipswich Borough Council owns the land at Portman Road and leases it to the club, which owns
+      the stadium buildings. In October 2024 the club reached an in-principle agreement to buy about 3,635m²
+      of council land behind the Cobbold Stand to allow expansion; that deal covers adjacent land, not
+      the stadium site.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://www.thestadiumbusiness.com/2024/10/23/ipswich-reaches-land-agreement-for-portman-road-expansion/
+    - https://www.insideworldfootball.com/2024/11/01/ipswich-plan-stadium-expansion-proposed-land-acquisition/
+  leeds-united-fc:
+    ground: Elland Road
+    owner_type: club
+    owner_name: Leeds United Football Club Limited (via its subsidiary Elland Road Limited)
+    since: 2024
+    note: Elland Road was sold in 2004 during the club's financial crisis and bought back in 2017 by Greenfield
+      Investment, an Aser Group (Radrizzani) company. 49ers Enterprises took Elland Road Limited with
+      the club in 2023, and on 27 March 2024 transferred it to Leeds United Football Club Limited, putting
+      the ground back under the club for the first time since 2004.
+    as_of: 2024
+    confidence: high
+    sources:
+    - https://www.leedsunited.com/en/news/elland-road-ownership-transferred-back-to-leeds-united
+    - https://www.yorkshireeveningpost.co.uk/sport/football/leeds-united/leeds-united-reveal-elland-road-stadium-ownership-change-as-club-chief-lauds-sign-of-intent-4698279
+  liverpool-fc:
+    ground: Anfield
+    owner_type: club
+    owner_name: The Liverpool Football Club and Athletic Grounds Ltd (Fenway Sports Group)
+    note: Anfield is owned and operated by the club company, The Liverpool Football Club and Athletic
+      Grounds Ltd, which is part of FSG. FSG paid for the Main Stand and Anfield Road expansions through
+      the club.
+    as_of: 2015
+    confidence: medium
+    sources:
+    - https://www.globaldata.com/company-profile/the-liverpool-football-club-and-athletic-grounds-ltd/analysis/
+    - https://www.liverpoolfc.com/news/announcements/209531-lfc-announces-financial-results-for-the-year-to-may-31-2015
+  manchester-city-fc:
+    ground: Etihad Stadium
+    owner_type: council
+    owner_name: Manchester City Council
+    lease_end: 2253
+    lease_note: 250-year fully repairing lease from 2003; renegotiated in 2010 to add naming rights for
+      higher rent; reported base fee GBP 3m-4m a year, now under review
+    since: 2003
+    note: Built by the council for the 2002 Commonwealth Games and leased to City from 2003. A lease review
+      took effect in September 2025 after the North Stand expansion and Medlock Square development, expected
+      to raise the annual fee paid to the council.
+    as_of: 2025
+    confidence: high
+    sources:
+    - https://footballgroundguide.com/news/why-man-citys-stadium-lease-is-now-under-review-amid-major-etihad-campus-expansion-plans.html
+    - https://www.thestadiumbusiness.com/?p=90276
+  manchester-united-fc:
+    ground: Old Trafford
+    owner_type: club
+    owner_name: Manchester United group (Manchester United plc / Manchester United Football Club Ltd)
+    since: 1910
+    note: The club owns Old Trafford and the majority of its property is secured against its bonds and
+      credit facilities; it has also been buying surrounding land since 2005. In 2026 it bought a 25-acre
+      site next to Old Trafford from Indurent/Blackstone, securing most of the land for a planned 100,000-seat
+      new stadium.
+    as_of: 2026
+    confidence: medium
+    sources:
+    - https://www.bisnow.com/news/london/capital-markets/manc-utd-117965
+    - https://news.bloomberglaw.com/financial-accounting/manchester-united-buys-land-for-new-100-000-seat-stadium
+    - https://www.arabnews.com/node/2648205/amp
+  newcastle-united-fc:
+    ground: St James' Park
+    owner_type: council
+    owner_name: Newcastle City Council
+    lease_note: 99-year lease agreed around the 1998 expansion; club pays ground rent; reported in 2024-25
+      to have about 70 years left
+    since: 1998
+    note: Newcastle City Council owns the freehold, and the club has long leased the ground (with land
+      historically held by the council and the Freemen of the City). Any expansion or rebuild would need
+      a new deal with the council on the lease, and as of 2026 the club had not announced whether it will
+      expand St James' Park or move.
+    as_of: 2026
+    confidence: high
+    sources:
+    - https://www.newcastleworld.com/sport/football/newcastle-united/newcastle-united-news-st-james-park-5502938
+    - https://shieldsgazette.com/sport/football/newcastle-united/newcastle-united-set-for-st-james-park-expansion-on-one-condition-4611146
+    - https://www.northeastheritagelibrary.co.uk/sports-archive/nufc05/st-james'-park
+  nottingham-forest-fc:
+    ground: City Ground
+    owner_type: council
+    owner_name: Nottingham City Council
+    lease_end: 2057
+    lease_note: Long lease from Nottingham City Council with about 33 years left in 2024; rent reportedly
+      c.GBP250k a year
+    note: In July 2024 Nottingham City Council agreed in principle to sell the freehold to Forest for
+      about GBP10m after a row over lease renewal, but Forest made completion conditional on planning
+      permission for expansion; planning for the new Peter Taylor Stand was approved by Rushcliffe in
+      2025, but no source found confirming the sale has completed.
+    as_of: 2025
+    confidence: medium
+    sources:
+    - https://stadiumdb.com/news/2024/07/england_nottingham_forest_have_reached_agreement_with_city_to_buy_city_ground
+    - https://nottstv.com/nottingham-forest-says-city-ground-land-deal-now-conditional-to-extra-planning-permissions/
+    - https://stadiumdb.com/news/2025/07/england_green_light_for_city_ground_redevelopment
+  sunderland-afc:
+    ground: Stadium of Light
+    owner_type: club
+    owner_name: Sunderland Association Football Club Ltd (club group)
+    since: 1997
+    note: The club built the Stadium of Light on the former Wearmouth Colliery site, opened in 1997, and
+      owns it outright; Ellis Short cleared the club's debts when he sold in 2018, and the club's registered
+      office is at the stadium. No sale-and-leaseback has been reported under Kyril Louis-Dreyfus, who
+      is investing in stadium upgrades in 2025-26.
+    as_of: 2026
+    confidence: medium
+    sources:
+    - https://simple.wikipedia.com/wiki/Stadium_of_Light
+    - https://pay.company-information.service.gov.uk/company/00049116
+    - https://fcbusiness.co.uk/news/ellis-short-draws-line-under-sunderland-ownership/
+    - https://sportsvenuebusiness.com/2026/05/13/safc-set-for-another-summer-of-major-upgrades/
+  tottenham-hotspur-fc:
+    ground: Tottenham Hotspur Stadium
+    owner_type: council
+    owner_name: London Borough of Haringey (freehold); Tottenham Hotspur holds a 999-year lease
+    lease_note: 999-year lease back from Haringey Council, agreed c.2016
+    since: 2016
+    note: Spurs owned the White Hart Lane freehold from 1905. For the new stadium, Haringey Council agreed
+      (2015-16) to acquire the THFC site under s.227 of the Town and Country Planning Act and lease it
+      back for 999 years, so that s.237 would block neighbours' rights-of-light injunctions. The club
+      built and owns the stadium as long leaseholder.
+    as_of: 2016
+    confidence: medium
+    sources:
+    - https://www.minutes.haringey.gov.uk/documents/s82706/Final%20Draft%20ROL%20Cabinet%20Report-%20Clean%20-%207th%20December%202015_DM%20comms_remove%20exempt.pdf
+    - https://www.pinsentmasons.com/out-law/news/haringey-approves-land-deal-for-tottenham-stadium-scheme
+  birmingham-city-fc:
+    ground: St Andrew's @ Knighthead Park
+    owner_type: owner_company
+    owner_name: Shelby Companies Ltd (Knighthead Capital / Tom Wagner)
+    since: 2023
+    note: In June 2023 Knighthead's Shelby Companies Ltd bought 45.65% of Birmingham City and all of St
+      Andrew's, so the stadium sat with the owner's vehicle rather than the club company. Shelby later
+      took 96.64% of Birmingham City Ltd, so it is now also the club's parent, but the stadium is held
+      directly by Shelby rather than by the club company. Knighthead bought a 48-acre Bordesley Park site
+      in 2024 for a planned new stadium.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://sportinglife.com/football/news/birmingham-city-takeover-club-in-good-and-safe-hands-say-new-owners/210710
+    - https://www.thestadiumbusiness.com/?p=74242
+    - https://www.pitchcare.com/blogs/news/birmingham-city-owners-acquire-land-for-world-class-stadium
+  blackburn-rovers-fc:
+    ground: Ewood Park
+    owner_type: club
+    owner_name: Blackburn Rovers Football and Athletic Ltd (owned by Venky's London Ltd)
+    since: 1893
+    note: Blackburn Rovers bought the freehold of Ewood Park in 1893 for £2,500 and the ground has stayed
+      with the club company, which Venky's bought (99.9%) from the Jack Walker Trust in 2010. Blackburn
+      with Darwen Council has listed Ewood Park as an Asset of Community Value, giving the Rovers Trust
+      a six-month window to bid if it is ever put up for sale.
+    as_of: 2010
+    confidence: medium
+    sources:
+    - https://www.roverstrust.com/news/ewood-park-an-asset-of-community-value
+    - https://www.roverstrust.com/news/brockhall-and-ewood-ownership-briefing
+    - https://www.cityam.com/indian-chicken-giant-hatches-46m-rovers-deal/
+  bolton-wanderers-fc:
+    ground: Toughsheet Community Stadium
+    owner_type: unknown
+    lease_note: Club holds a long leasehold on the stadium (2019 administration sale particulars); length
+      and freeholder not found
+    note: The 2019 administration sale particulars describe the stadium as a long leasehold venue, so
+      the club does not hold the freehold outright. The Middlebrook site was developed as a partnership
+      of Orbit Developments, Bolton Wanderers and Bolton Council, but no source names the current freeholder.
+    as_of: 2019
+    confidence: low
+    sources:
+    - https://www.lsh.co.uk/mba/insight/2019/bolton-wanderers
+    - https://en.wikipedia.org/wiki/Middlebrook,_Greater_Manchester
+  bristol-city-fc:
+    ground: Ashton Gate
+    owner_type: club
+    owner_name: Bristol City Football Club Ltd (Bristol City Holdings / Steve Lansdown's Bristol Sport
+      group)
+    since: 2014
+    note: A 2014 Bristol City Council cabinet paper says the club already held the stadium freehold apart
+      from a car park off Winterstoke Road, and approved selling that car park freehold to the club. Ashton
+      Gate was listed as an Asset of Community Value in December 2014. No newer source on the ownership
+      structure was found.
+    as_of: 2014
+    confidence: low
+    sources:
+    - https://democracy.bristol.gov.uk/Data/Cabinet/201403041800/Agenda/0304_8.pdf
+    - https://www.bristolcitysupporters.org/ashton-gate-asset-community-value/
+  burnley-fc:
+    ground: Turf Moor
+    owner_type: club
+    owner_name: Turf Moor Properties Ltd (subsidiary of Burnley FC Holdings Ltd)
+    since: 2013
+    note: Turf Moor and the Gawthorpe training ground were sold to Longside Properties in 2006 after the
+      ITV Digital crisis and leased back on a 99-year lease; in 2013 the club bought both back via a bond
+      issue into Turf Moor Properties Ltd within the Burnley FC Holdings group. The bondholders were repaid
+      early, and no later sale has been reported since the 2020 ALK Capital takeover.
+    as_of: 2013
+    confidence: medium
+    sources:
+    - https://pendletoday.co.uk/sport/football/burnley-set-to-buy-back-turf-moor-and-gawthorpe-2716508
+    - https://burnleyexpress.net/sport/football/turf-buy-back-moves-step-closer-after-re-organisation-2715065
+    - https://burnleyexpress.net/news/more-cash-available-for-transfers-as-clarets-investors-repaid-early-2578666
+  cardiff-city-fc:
+    ground: Cardiff City Stadium
+    owner_type: council
+    owner_name: Cardiff Council (freehold); stadium building held by Cardiff City Stadium Ltd, a club
+      subsidiary
+    lease_end: 2159
+    lease_note: 150-year lease from 2009 (club accounts as reported by the supporters' trust); described
+      elsewhere as a nominal/rent-free 125-year lease granted in the Leckwith land-swap
+    since: 2009
+    note: The stadium was built on council land at Leckwith in a land swap in which the club built a replacement
+      athletics stadium for the council in return for a long, rent-free lease. The club's 2023/24 accounts
+      value the stadium at £84.5m (Savills, 2023) and record it as leasehold with Cardiff Council as landlord.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://www.ccfctrust.org/cardiff-citys-latest-accounts-verdict-from-trust-chair/
+    - https://egi.co.uk/news/cardiff-fc-stadium-move-unlocked-by-100m-retail-park-deal
+  charlton-athletic-fc:
+    ground: The Valley
+    owner_type: landlord
+    owner_name: Roland Duchâtelet (former club owner)
+    lease_end: 2040
+    lease_note: Lease of The Valley and the Sparrows Lane training ground extended in October 2025 to
+      June 2040
+    since: 2019
+    note: When Duchâtelet sold the club to East Street Investments in 2019 he kept The Valley and Sparrows
+      Lane, and he has stayed the landlord through each later change of club owner. In October 2025 the
+      club extended its lease of both to June 2040; in August 2026 owners Global Football Partners were
+      reported to be exploring a sale of the club.
+    as_of: 2026
+    confidence: high
+    sources:
+    - https://www.charltonafc.com/news/valley-and-sparrows-lane-lease-extended-2040
+    - https://www.insideworldfootball.com/2025/10/08/charlton-secure-long-term-future-valley/
+    - https://www.insideworldfootball.com/2026/08/04/charlton-for-sale-as-global-football-partners-eye-exit/
+  derby-county-fc:
+    ground: Pride Park Stadium
+    owner_type: club
+    owner_name: Derby County (The Rams) Stadium Ltd (formerly Gellaw Newco 202), a subsidiary of Derby
+      County (The Rams) Holdings Ltd, owned by Clowes Developments (UK) Ltd
+    since: 2025
+    note: Mel Morris sold Pride Park to his own company Gellaw Newco 202 in 2018; David Clowes bought
+      the stadium from Morris in 2022 alongside the club but kept it in a separate entity. In May 2025
+      the stadium company was renamed and placed with the club company under a new holding company, reuniting
+      club and ground.
+    as_of: 2025
+    confidence: high
+    sources:
+    - https://www.dcfc.co.uk/news/2025/05/club-update-derby-county-and-pride-park-stadium-unified-once-again
+    - https://www.insideworldfootball.com/2022/06/27/derby-county-saga-closing-property-developer-clowes-promising-rebuild/
+  lincoln-city-fc:
+    ground: LNER Stadium (Sincil Bank)
+    owner_type: club
+    owner_name: Lincoln City Football Club
+    since: 2000
+    note: Lincoln City sold Sincil Bank to the City of Lincoln Council in 1982 for GBP 225,000 and leased
+      it back for 125 years to avoid eviction; chairman John Reames bought it back from the council in
+      2000 for GBP 175,000. No later sale has been reported.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://groundhopperguides.com/club/lincoln-city-fc/
+    - https://wikimili.com/en/Sincil_Bank
+  middlesbrough-fc:
+    ground: Riverside Stadium
+    owner_type: club
+    owner_name: Middlesbrough FC
+    since: 1995
+    note: Middlesbrough built the Riverside in 1995 under Steve Gibson on a former industrial site provided
+      through the Teesside Development Corporation, and stadium references say the club owns it privately.
+      One listing names Middlesbrough Borough Council as owner, and no accounts or Land Registry confirmation
+      was found.
+    as_of: 2025
+    confidence: low
+    sources:
+    - https://stadiumdb.com/stadiums/eng/riverside_stadium
+    - https://teesbusiness.co.uk/?p=44545
+  millwall-fc:
+    ground: The Den
+    owner_type: council
+    owner_name: London Borough of Lewisham
+    lease_note: 999-year lease over The Den and surrounding land, agreed May 2024 and later signed. It
+      replaced a 150-year lease from 1993 that barred residential development.
+    since: 2024
+    note: Lewisham Council keeps the freehold. Its 999-year lease lets Millwall expand to a roughly 34,000-seat
+      stadium and build homes on the surrounding land, ending years of dispute over the site.
+    as_of: 2025
+    confidence: high
+    sources:
+    - https://lewisham.gov.uk/articles/news/long-term-millwall-lease-now-agreed
+    - https://southwarknews.co.uk/sport/football/millwall/millwall-officially-sign-999-year-lease-at-the-den/
+    - https://southwarknews.co.uk/area/bermondsey/millwall-fc-clinches-999-year-lease-for-the-den/
+  norwich-city-fc:
+    ground: Carrow Road
+    owner_type: club
+    owner_name: Norwich City Football Club plc (majority owned by Norfolk Holdings / Mark Attanasio)
+    since: 1935
+    note: Norwich City built Carrow Road in 1935 and own it; a sale and leaseback was considered during
+      the club's 2009 financial difficulties but not carried out, and in 2019 the club confirmed it had
+      also bought land around the stadium for expansion. Attanasio's Norfolk Holdings became majority
+      shareholder in October 2024, a takeover of the club company, so the ground went with it.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://www.greatyarmouthmercury.co.uk/news/carrow-road-1866868
+    - https://insidersport.com/2019/12/02/norwich-confirms-land-purchase-ahead-of-carrow-road-expansion/
+    - https://pinkun.com/sport/norwich-city/24978326.norwich-city-mark-attanasio-completes-delia-smith-takeover
+  portsmouth-fc:
+    ground: Fratton Park
+    owner_type: club
+    owner_name: Portsmouth Football Club (Tornante Company, Michael Eisner)
+    since: 2017
+    note: Fratton Park came with the club when Tornante bought it from the Pompey Supporters' Trust in
+      2017. Eisner said he would be 'mighty stupid' to separate the stadium from the club and committed
+      not to do so.
+    as_of: 2017
+    confidence: medium
+    sources:
+    - https://www.portsmouth.co.uk/sport/football/eisner-id-be-mighty-stupid-to-separate-pompeys-home-1125785
+    - https://www.insideworldfootball.com/2017/05/23/eisner-overtures-chime-pompey-supporters-trust-set-sell/
+  preston-north-end-fc:
+    ground: Deepdale
+    owner_type: club
+    owner_name: Preston North End FC (Deepdale PNE Holdings, Hemmings family)
+    note: 2026 reporting on the planned sale of the club says PNE owns Deepdale and its training ground
+      and has no external debt, so the ground would go with any takeover. The Hemmings family was in talks
+      with buyers in 2026, with Amr Zedan named in January.
+    as_of: 2026
+    confidence: medium
+    sources:
+    - https://www.lancashirebusinessview.co.uk/latest-news-and-features/pne-sale-moves-forward-after-acceptable-offer
+    - https://www.thevisitor.co.uk/lancashire-nostalgia-1994-deepdale-buy-back-bank-holiday-nightmare-and-mans-best-friend-2523862
+  queens-park-rangers-fc:
+    ground: Loftus Road
+    owner_type: club
+    owner_name: Queens Park Rangers Football & Athletic Club Ltd
+    note: The club owns Loftus Road; in 2002-2008 it was security for a GBP 10m loan (with ABC Corporation
+      holding an option over the ground) that QPR repaid in full. The club said in 2025 the 18,439-capacity
+      ground is unsustainable and is exploring a move, including to the Linford Christie Stadium site.
+    as_of: 2025
+    confidence: medium
+    sources:
+    - https://en.wikipedia.org/wiki/Loftus_Road
+    - https://www.healthclubmanagement.co.uk/health-club-management-news/QPR-chief-executive:-We-need-to-leave-Loftus-Road-stadium/340744
+    - https://fulhamsw6.com/page/shared/common/consport50.htm
+  sheffield-united-fc:
+    ground: Bramall Lane
+    owner_type: club
+    owner_name: Sheffield United group (COH Sports, Steven Rosen and Helmy Eltoukhy)
+    since: 2020
+    note: Prince Abdullah bought Bramall Lane and other property back from Kevin McCabe's interests in
+      2020 after their court case, reuniting ground and club. COH Sports bought the club in December 2024
+      for about £105m including all real estate (Bramall Lane, Shirecliffe, hotel); the ground carries
+      a mortgage to Emirates Bank per earlier reports.
+    as_of: 2024
+    confidence: high
+    sources:
+    - https://itv.com/news/calendar/2024-12-23/sheffield-united-taken-over-in-105m-deal
+    - https://thestar.co.uk//sport/football/sheffield-united/sheffield-united-under-new-ownership-as-takeover-finally-completed-with-key-figures-explaining-deal-4921317
+    - https://www.thestar.co.uk/sport/football/sheffield-united/prince-abdullah-completes-property-purchase-officially-confirming-his-ownership-of-sheffield-united-2901141
+  southampton-fc:
+    ground: St Mary's Stadium
+    owner_type: club
+    owner_name: St Mary's Football Group Ltd (Southampton FC's parent company; Sport Republic)
+    since: 2001
+    note: The club built St Mary's in 2001 on former British Gas land, and Property Week's 2017 survey
+      named the freeholder as St Mary's Football Group Ltd, the club's holding company. In December 2024
+      the club and Southampton City Council signed a memorandum of understanding to redevelop the surrounding
+      St Mary's waterfront area; this source is from 2017 and no later change of freeholder was found.
+    as_of: 2017
+    confidence: medium
+    sources:
+    - https://www.propertyweek.com/news-analysis/who-owns-premier-league-stadiums/5090883.article
+    - https://thestadiumbusiness.com/2024/12/13/st-marys-stadium-expansion-in-the-works-through-council-mou
+  stoke-city-fc:
+    ground: bet365 Stadium
+    owner_type: club
+    owner_name: Stoke City (Property) Ltd, a subsidiary of Stoke City Holdings Ltd (John Coates)
+    since: 2024
+    note: Peter Coates took full ownership of the stadium from the city council partnership in 2006; in
+      the July 2024 demerger from bet365 the stadium and Clayton Wood training ground moved with the club
+      into Stoke City Holdings, owned outright by John Coates.
+    as_of: 2026
+    confidence: high
+    sources:
+    - https://sbcnews.co.uk/sport-business/2026/03/06/stoke-city-bet365-profit/
+    - https://www.insideworldfootball.com/2024/08/06/bet365-removed-stoke-city-ownership-stays-within-family-john-coates-takes/
+  swansea-city-fc:
+    ground: Swansea.com Stadium
+    owner_type: council
+    owner_name: Swansea Council (City and County of Swansea)
+    lease_note: Club occupied at a peppercorn rent via Swansea Stadium Management Company (set up by the
+      council and the two tenant clubs); club took operational control in 2018. Freehold sale to the club
+      agreed July 2026, completion not confirmed in sources seen
+    since: 2005
+    note: The council-built stadium opened in 2005; Swansea City have been sole occupants since the Ospreys
+      left in 2025. In July 2026 Swansea Council's cabinet unanimously agreed to sell the freehold to
+      the club, subject to detailed heads of terms, at an undisclosed price above open-market value with
+      extra payments on Premier League promotion; the sources seen describe an agreed, not completed,
+      sale.
+    as_of: 2026
+    confidence: high
+    sources:
+    - https://www.thestadiumbusiness.com/2026/07/17/council-agrees-stadium-sale-to-swansea-city/
+    - https://swanseabaynews.com/swansea-com-stadium-sale-to-the-swans-agreed-as-council-explains-why-the-price-must-stay-secret/
+    - https://herald.wales/west-wales/swansea-council-agrees-stadium-sale-to-swansea-city-fc/
+    - https://www.swanseacity.com/news/swansea-city-submit-proposal-purchase-swanseacom-stadium
+  watford-fc:
+    ground: Vicarage Road
+    owner_type: club
+    owner_name: Watford FC
+    since: 2004
+    note: Watford bought the freehold from the Benskins brewery in January 2002 and, under financial pressure,
+      sold it in July 2002 for £6m with a 35-year leaseback that carried a buy-back option. In September
+      2004 the club bought it back after the 'Let's Buy Back The Vic' fan campaign and an Elton John concert.
+      No later sale was found, but recent confirmation is thin.
+    as_of: 2025
+    confidence: medium
+    sources:
+    - https://www.liquisearch.com/watford_fc/stadium
+    - https://www.wsc.co.uk/?p=1883
+  west-bromwich-albion-fc:
+    ground: The Hawthorns
+    owner_type: club
+    owner_name: West Bromwich Albion (West Bromwich Albion Group Ltd, majority owned by Bilkul Football
+      WBA)
+    since: 1913
+    note: The club has owned the freehold since 1913. The Hawthorns was given as security for WBA Group's
+      £20m MSD Holdings loan of 2022, which is due for repayment by December 2026. The ground was listed
+      as an Asset of Community Value in January 2023.
+    as_of: 2025
+    confidence: medium
+    sources:
+    - https://www.wba.co.uk/news/west-bromwich-albion-group-limited-secures-msd-loan
+    - https://expressandstar.com/news/politics/2023/01/24/albion-owners-given-transparency-demand-after-stadium-decision
+    - https://www.expressandstar.com/sport/football/west-bromwich-albion/new-west-brom-accounts-show-losses-of-ps17m-as-shilen-patels-input-revealed-6032707
+  west-ham-united-fc:
+    ground: London Stadium
+    owner_type: council
+    owner_name: E20 Stadium LLP / London Legacy Development Corporation (Greater London Authority, Mayor
+      of London)
+    lease_end: 2115
+    lease_note: 99-year concession agreement signed March 2013, running from 2016
+    since: 2016
+    note: The former Olympic Stadium is publicly owned through E20 Stadium LLP, originally a joint venture
+      of the LLDC and Newham Council, now held by the GLA's development corporation; West Ham occupy it
+      under a 99-year concession from 2016 that has led to several legal disputes. In 2026 the Mayor said
+      he would welcome talks on West Ham buying the stadium after Amanda Staveley linked it to her proposed
+      investment, but no sale has been agreed.
+    as_of: 2026
+    confidence: high
+    sources:
+    - https://localgovernmentlawyer.co.uk/projects-and-regeneration/403-projects-news/45038-owner-of-stadium-built-for-london-olympics-sues-law-firm-over-advice-on-west-ham-concession-agreement
+    - https://www.london.gov.uk/who-we-are/governance-and-spending/promoting-good-governance/decision-making/mayoral-decisions/md3324-change-ownership-e20-stadium-llp-and-related-matters
+    - https://www.cityam.com/?p=2447719
+  wolverhampton-wanderers-fc:
+    ground: Molineux Stadium
+    owner_type: council
+    owner_name: City of Wolverhampton Council
+    lease_note: 999-year lease agreed 2010, replacing the 125-year lease granted in 1990
+    since: 2010
+    note: Wolves had held the land on a 125-year council lease since 1990. In 2010 the club asked for
+      the freehold, but the council refused so the site would always keep a football pitch, and extended
+      the lease to 999 years instead. I found no newer source saying the freehold has since been sold.
+    as_of: 2010
+    confidence: medium
+    sources:
+    - https://www.expressandstar.com/news/wolverhampton/999-more-years-for-wolves-at-molineux-6444235
+    - https://expressandstar.com/news/2010/03/16/wolves-in-new-molineux-lease-bid
+  wrexham-fc:
+    ground: STōK Cae Ras (Racecourse Ground)
+    owner_type: club
+    owner_name: Wrexham AFC
+    since: 2022
+    note: Glyndwr University bought the Racecourse in 2011 and gave the Wrexham Supporters Trust a 99-year
+      lease in 2016. The university sold the freehold to Wrexham AFC on 29 June 2022, the owners added
+      a covenant keeping the club there until at least 2115, and the trust's lease was later surrendered.
+    as_of: 2022
+    confidence: high
+    sources:
+    - https://wrexham.ac.uk/news/articles/glyndwr-university-completes-sale-of-racecourse-ground-stadium-to-wrexham-afc/
+    - https://www.wrexham.com/news/great-day-as-wrexham-football-club-acquires-freehold-of-racecourse-stadium-from-glyndwr-university-220940.html
+    - https://wrexham.com/news/racecourse-and-wrexham-afc-fully-reunited-as-lease-collapse-confirmed-295716.html
+  afc-wimbledon:
+    ground: Plough Lane
+    owner_type: club
+    owner_name: The Wider Interests of Football Ltd (Dons Trust subsidiary that owns AFC Wimbledon)
+    since: 2019
+    note: The club group bought the former greyhound stadium site from Merton Council in 2019 and opened
+      the new Plough Lane in 2020; the freehold sits in a Dons Trust subsidiary in the same group as the
+      club.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://news.merton.gov.uk/2019/01/17/afc-wimbledon-secure-their-return-to-merton/
+    - https://new.actonw3.com/page/wimbledonsw19/info/afcwimbledonownploughlaneland001.htm
+  barnsley-fc:
+    ground: Oakwell
+    owner_type: council
+    owner_name: Barnsley Metropolitan Borough Council, via its wholly owned Oakwell Community Assets Ltd
+      (OCAL)
+    lease_end: 2053
+    lease_note: lease of 30 years less one day agreed 2023
+    since: 2023
+    note: OCAL, which owns the stadium and surrounding land, was jointly owned by the council and the
+      Cryne family from 2003; in 2023 the council became its sole owner and granted the club a new 30-year
+      lease. OCAL is to reinvest the lease income in the stadium.
+    as_of: 2023
+    confidence: high
+    sources:
+    - https://www.barnsleychronicle.com/article/27170/council-buys-all-of-oakwell-with-30-year-lease-agreed
+    - https://www.thestar.co.uk/news/people/barnsley-council-sign-30-year-lease-to-keep-barnsley-football-club-at-oakwell-and-become-sole-owners-of-land-4488480
+    - https://barnsley.gov.uk/news/barnsley-fc-and-barnsley-council-announce-a-historic-partnership-which-will-secure-football-for-generations-at-oakwell
+  blackpool-fc:
+    ground: Bloomfield Road
+    owner_type: owner_company
+    owner_name: Simon Sadler (via Blackpool Football Club Stadium and Property Ltd, inc. May 2019)
+    since: 2019
+    note: When Simon Sadler bought 96.2% of Blackpool FC from the receivers in June 2019 he separately
+      bought the stadium, stadium property and training ground in a personal capacity; a separate company,
+      Blackpool Football Club Stadium and Property Ltd, was set up in May 2019. It is not confirmed whether
+      that company sits under the club company, so the ground may not pass automatically with the club.
+    as_of: 2019
+    confidence: medium
+    sources:
+    - https://www.blackpoolgazette.co.uk/sport/football/blackpool-fc/simon-sadler-announced-new-owner-blackpool-football-club-964741
+    - https://find-and-update.company-information.service.gov.uk/company/12022758
+  bradford-city-fc:
+    ground: Valley Parade
+    owner_type: landlord
+    owner_name: Gibb family pension fund (Flamingo Land pension fund, Gordon Gibb family)
+    lease_end: 2028
+    lease_note: 25-year lease due to end in 2028; rent just under GBP500k a year, rising every five years
+    since: 2002
+    note: Valley Parade has been owned by former chairman Gordon Gibb's family pension fund since 2002,
+      a sale-and-leaseback from the club's administration era; owner Stefan Rupp has told fans he is trying
+      to buy the ground back before the lease expires in 2028. No source seen confirming a buy-back has
+      happened.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://widthofapost.com/2024/04/16/the-future-of-valley-parade-creeps-onto-the-horizon-as-rupp-considers-options-for-bradford-citys-home
+    - https://footballgroundguide.com/news/valley-parade-ownership-rupp.html
+    - https://boyfrombrazil.co.uk/tag/gordon-gibb
+  bromley-fc:
+    ground: Hayes Lane
+    owner_type: club
+    owner_name: Bromley Football Club
+    note: Reports say former owner Jerry Dolke bought the freehold of Hayes Lane and re-secured the ground
+      for the club before handing ownership to Robin Stanton-Gleaves in 2016. No primary source seen confirms
+      which entity holds the freehold today.
+    as_of: 2024
+    confidence: low
+    sources:
+    - https://liberoguide.com/bromley/
+    - https://gameofthepeople.com/2024/07/02/bromley-in-the-efl-how-did-that-happen/
+    - https://wikipedia.com/wiki/Hayes_Lane
+  burton-albion-fc:
+    ground: Pirelli Stadium
+    owner_type: club
+    owner_name: Burton Albion FC
+    since: 2005
+    note: Pirelli donated the land of its former sports and social club to Burton Albion in return for
+      naming rights; the club built the £7.2m stadium in 2005. Sources describe the stadium as owned by
+      the club; no later sale or leaseback found, but freehold title not confirmed by a primary source.
+    as_of: 2025
+    confidence: medium
+    sources:
+    - https://en.wikipedia.org/wiki/Pirelli_Stadium
+    - https://www.football-stadiums.co.uk/?p=178
+  cambridge-united-fc:
+    ground: Abbey Stadium
+    owner_type: club
+    owner_name: Cambridge United FC
+    since: 2022
+    note: The club bought the freehold back from Grosvenor in September 2022, using £4.5m of new owner
+      equity. Grosvenor had owned it since 2010, after a 2004 sale to director John Howard's Bideawhile
+      445. A 'golden share' was planned to block a future sale. A redevelopment plan was dropped in November
+      2025, and the club is now looking at relocating to Cambridge East.
+    as_of: 2026
+    confidence: high
+    sources:
+    - https://grosvenor.com/news-insights/grosvenor-sells-cambridge-united-stadium-to-club
+    - https://www.thestadiumbusiness.com/2022/09/05/cambridge-united-completes-purchase-of-abbey-stadium/
+    - https://stadiumdb.com/news/2026/02/england_cambridge_united_considers_leaving_historic_home_plans_for_new_15000seat_facility
+  doncaster-rovers-fc:
+    ground: Eco-Power Stadium
+    owner_type: council
+    owner_name: City of Doncaster Council
+    lease_end: 2111
+    lease_note: 99-year operating lease from 19 June 2012
+    since: 2012
+    note: The council built and owns the stadium; Doncaster Rovers took a 99-year operating lease in 2012
+      to run it. The Eco-Power naming deal ends after 2025-26, so the name may change.
+    as_of: 2025
+    confidence: high
+    sources:
+    - https://en.wikipedia.org/wiki/Eco-Power_Stadium
+    - https://doncaster.moderngov.co.uk/Data/Regeneration & Housing Overview & Scrutiny Panel/201205221530/Agenda/$220512
+      1.doc.pdf
+  huddersfield-town-fc:
+    ground: Accu Stadium (Kirklees Stadium)
+    owner_type: council
+    owner_name: Kirklees Council
+    lease_end: 2325
+    lease_note: 300-year lease from September 2025; club is now 100% owner of the stadium company KSDL
+    since: 2025
+    note: Until 2025 the stadium company, Kirklees Stadium Development Ltd, was owned 40% by the club,
+      40% by Kirklees Council and 20% by Huddersfield Giants. On 25 September 2025 Town took 100% of KSDL
+      and signed a 300-year lease of the 53-acre site, with the council keeping the freehold; the Giants
+      are now Town's tenants.
+    as_of: 2025
+    confidence: high
+    sources:
+    - https://www.thestadiumbusiness.com/2025/09/26/huddersfield-town-secures-control-of-accu-stadium/
+    - https://www.giantsrl.com/article/9566/statement-deal-reached-on-future-of-accu-stadium
+    - https://www.placeyorkshire.co.uk/huddersfield-town-acquires-accu-stadium/
+  leicester-city-fc:
+    ground: King Power Stadium
+    owner_type: club
+    owner_name: Leicester City FC (King Power / Srivaddhanaprabha family)
+    note: In July 2026 King Power put Leicester up for sale through Citigroup. The sale prospectus lists
+      the King Power Stadium and Seagrave training ground (£224m as physical assets) as club assets included
+      in the sale. Separate reports said early talks could see the stadium and training ground sold as
+      part of a wider financing deal, so this could change.
+    as_of: 2026
+    confidence: low
+    sources:
+    - https://insidersport.com/2026/07/24/leicester-city-sale-king-power-owner/
+    - https://footballgroundguide.com/news/leicester-city-in-talks-over-king-power-stadium-and-100m-training-ground-sale-after-relegation.html
+  leyton-orient-fc:
+    ground: Brisbane Road (Gaughan Group Stadium)
+    owner_type: council
+    owner_name: London Borough of Waltham Forest (freehold); Matchroom Sport / Barry Hearn holds the long
+      lease
+    lease_note: Matchroom holds the ~990-year headlease bought in 2008-09 and sub-lets the stadium to
+      the club on a shorter lease
+    since: 2009
+    note: Waltham Forest owns the freehold; Barry Hearn's Matchroom bought the long lease in 2008-09 and
+      kept the stadium when the club was sold in 2017 and again to GSG LOFC in 2025. The club plans a
+      new stadium by 2031.
+    as_of: 2025
+    confidence: medium
+    sources:
+    - https://en.wikipedia.org/wiki/Brisbane_Road
+    - https://www.insideworldfootball.com/2017/06/23/doughnut-management-donut-salesman-orient/
+    - https://walthamforestecho.co.uk/2025/10/08/leyton-orient-plan-move-to-new-state-of-the-art-stadium-by-2031/
+  luton-town-fc:
+    ground: Kenilworth Road
+    owner_type: council
+    owner_name: Luton Borough Council
+    lease_note: Rolling 7-year lease at a peppercorn rent (as reported)
+    since: 1989
+    note: The club bought the ground in 1933 and sold it to Luton Borough Council in 1989, leasing it
+      back since. The club plans to move to a new 25,000-seat stadium at Power Court, approved December
+      2024, with piling under way by February 2026 and a target opening for 2028-29.
+    as_of: 2026
+    confidence: medium
+    sources:
+    - https://en.wikipedia.org/wiki/Kenilworth_Road
+    - https://footballgroundguide.com/leagues/england/championship/kenilworth-road-luton-town.html
+    - https://footballgroundguide.com/news/luton-town-new-stadium-plans-approved.html
+  mansfield-town-fc:
+    ground: Field Mill (One Call Stadium)
+    owner_type: owner_company
+    owner_name: John and Carolyn Radford (via a Radford-controlled company)
+    since: 2019
+    note: Former owner Keith Haslam kept Field Mill after selling the club, and a 2012 settlement had
+      him lease it and then sell it in instalments to a company controlled by John Radford. The last payment
+      was made in early 2019. Reports say the Radfords own the ground rather than the club company, though
+      no Companies House record was checked to confirm which entity holds the freehold.
+    as_of: 2019
+    confidence: low
+    sources:
+    - https://stadiumdb.com/news/2019/03/england_mansfield_town_stadium_transaction_complete
+    - https://www.eastwoodadvertiser.co.uk/sport/football/mansfield-town/keith-haslam-finally-history-as-radfords-make-final-payment-on-mansfield-towns-one-call-stadium-to-former-owner-80188
+    - https://fcbusiness.co.uk/news/mansfield-town-owners-resolve-stadium-dispute/
+  mk-dons-fc:
+    ground: Stadium MK
+    owner_type: club
+    owner_name: Stadium MK Group (formerly Inter MK Group), owned with the club by the Kuwaiti consortium
+      led by Fahad Al Ghanim
+    since: 2024
+    note: In August 2024 a Kuwaiti consortium led by Fahad Al Ghanim bought both MK Dons and the wider
+      Stadium MK Group from Pete Winkelman, explicitly so the football and stadium assets stay together.
+      Whether the group holds the land freehold or a long lease was not confirmed in sources seen.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://www.itv.com/news/anglia/2024-08-09/mk-dons-sold-to-kuwaiti-consortium
+    - https://businessmk.co.uk/articles/sport/kuwaiti-consortium-acquires-ownership-of-mk-dons-fc-and-stadium-mk-group/
+    - https://www.thestadiumbusiness.com/2024/08/09/mk-dons-stadium-mk-undergo-kuwaiti-takeover/
+  notts-county-fc:
+    ground: Meadow Lane
+    owner_type: council
+    owner_name: Nottingham City Council (freehold); head lease held by the Haydn Green estate
+    lease_note: Council freehold; the Haydn Green estate holds the lease and lets the ground to the club
+      (reported as a 99-year arrangement)
+    since: 2003
+    note: Notts County have leased Meadow Lane from the city council since 1910. Haydn Green bought the
+      ground lease in 2003 to save the club from liquidation; after he died in 2007 his estate kept control
+      of the lease, and supporters were still discussing whether the Reedtz owners should buy the land
+      in 2024-25.
+    as_of: 2024
+    confidence: low
+    sources:
+    - https://prideofnottingham.co.uk/community/topic/11573-should-the-reedtz-buy-the-land-in-which-meadow-lane-is-built/
+    - https://www.thebusinessdesk.com/eastmidlands/?p=12031
+    - https://en.wikipedia.org/wiki/Meadow_Lane
+  oxford-united-fc:
+    ground: Kassam Stadium
+    owner_type: landlord
+    owner_name: Firoka Group (Firoz Kassam)
+    lease_end: 2028
+    lease_note: Short-term licence extended from June 2026 by at least one year, with an option for one
+      more year (to June 2028 at most); no further extensions possible
+    since: 2001
+    note: Former club owner Firoz Kassam kept the stadium through his Firoka Group when he sold the club,
+      so Oxford United are licensees. The club won final approval for a new 16,000-seat stadium at the
+      Triangle near Kidlington in February 2026, though a legal challenge was launched in 2026.
+    as_of: 2026
+    confidence: high
+    sources:
+    - https://www.oufc.co.uk/news/oxford-united-and-firoka-group-sign-short-term-kassam-stadium-extension
+    - https://www.hellorayo.co.uk/greatest-hits/oxfordshire/news/kassam-stadium-renewal
+    - https://footballgroundguide.com/news/efl-club-hit-huge-milestone-as-new-150m-stadium-plans-receive-final-planning-approval.html
+    - https://www.leighday.co.uk/news/press-releases/2026-news/legal-challenge-launched-against-oxford-united-stadium-complex/
+  peterborough-united-fc:
+    ground: Weston Homes Stadium (London Road)
+    owner_type: owner_company
+    owner_name: London Road Peterborough Properties Ltd (owned by the club's co-owners Darragh MacAnthony,
+      Jason Neale and Stewart Thompson at purchase)
+    lease_end: 2039
+    lease_note: Club leases the ground from LRPPL; lease reported to run to 2039
+    since: 2022
+    note: 'On 31 March 2022 the owners'' separate property company LRPPL bought the stadium from Peterborough
+      City Council for £5.265m: a £4.1m lump sum plus £233k a year to March 2026. The council has been
+      pursuing about £220k in unpaid instalments. An £830k discount must be repaid if the club has not
+      moved out by March 2029.'
+    as_of: 2025
+    confidence: high
+    sources:
+    - https://www.peterboroughtoday.co.uk/sport/football/peterborough-united/peterborough-united-formally-complete-purchase-of-ground-from-council-3184774
+    - https://www.peterboroughtoday.co.uk/news/people/peterborough-city-council-vows-to-end-ps220000-payment-dispute-with-owners-of-posh-stadium-5073864
+    - https://stadiumdb.com/news/2024/09/england_ongoing_dispute_between_city_and_owners_of_weston_homes_stadium
+  plymouth-argyle-fc:
+    ground: Home Park
+    owner_type: club
+    owner_name: Plymouth Argyle Football Club Ltd
+    note: After the 2011 administration Plymouth City Council bought the freehold for £1.6m and leased
+      it back for 30 years. Under James Brent and then Simon Hallett the club bought the freehold back
+      from the council for £2.7m (exact completion year not confirmed in the sources seen, after 2016).
+    as_of: 2019
+    confidence: medium
+    sources:
+    - https://egi.co.uk/news/plymouth-argyle-completes-stadium-purchase
+    - https://democracy.plymouth.gov.uk/documents/s48897/Home Park Football Stadium and Higher Home Park.pdf
+  reading-fc:
+    ground: Select Car Leasing Stadium
+    owner_type: club
+    owner_name: Redwood Holdings 1 Ltd (Rob Couhig / Dogwood Football), owner of Reading FC
+    since: 2025
+    note: Dai Yongge sold the stadium to his own company Prestige Fortune Asia in 2017-18, separating
+      it from the club; the May 2025 Redwood Holdings takeover bought the club together with the stadium
+      and Bearwood training ground. Whether the stadium now sits in the club company or a sister company
+      in the Redwood group is not confirmed.
+    as_of: 2025
+    confidence: medium
+    sources:
+    - https://www.bloomberg.com/news/articles/2025-05-03/reading-agrees-to-sale-of-football-club-to-redwood-holdings
+    - https://www.henleystandard.co.uk/news/reading-fc/201304/readings-takeover-by-american-businessman-rob-couhig-officially-completed.html
+  sheffield-wednesday-fc:
+    ground: Hillsborough
+    owner_type: club
+    owner_name: 'SWFC Sports Holdings 2026 Ltd (Arise Capital: David Storch, Michael Storch, Tom Costin)'
+    since: 2026
+    note: Under Dejphon Chansiri the stadium sat in a separate company, which was forced into the club's
+      administration in October 2025 (New Avenue Projects held a £7.3m charge on it). Arise's takeover,
+      ratified by the EFL in May 2026, bought both the club and the stadium out of administration, and
+      both are now held under one holding company, SWFC Sports Holdings 2026 Ltd.
+    as_of: 2026
+    confidence: medium
+    sources:
+    - https://www.thestar.co.uk/sport/football/sheffield-wednesday/sheffield-wednesday-holding-company-8637568
+    - https://insidersport.com/2026/05/06/sheffield-wednesday-arise-takeover/
+    - https://www.thestar.co.uk/sport/football/sheffield-wednesday/sheffield-wednesday-takeover-6212944
+  stevenage-fc:
+    ground: Broadhall Way (Lamex Stadium)
+    owner_type: council
+    owner_name: Stevenage Borough Council
+    since: 1980
+    note: The council took the stadium back in 1980 and installed the club as tenant; the club rents it
+      from the council and the two have jointly funded stand upgrades. There have been disputes over rent
+      increases and funding for the North Stand, but no change of ownership found.
+    as_of: 2024
+    confidence: high
+    sources:
+    - https://en.wikipedia.org/wiki/Broadhall_Way
+    - https://www.theleaguepaper.com/features/featured/7475/stevenage-plunged-into-stadium-limbo-by-local-authority/
+    - https://www.healthclubmanagement.co.uk/health-club-management-news/Council-delays-Stevenage-FC-rent-increase/269663
+  stockport-county-fc:
+    ground: Edgeley Park
+    owner_type: council
+    owner_name: Stockport Metropolitan Borough Council
+    lease_end: 2274
+    lease_note: 250-year lease agreed in principle 2022, completion targeted by end of April 2024 (end
+      year approximate)
+    since: 2015
+    note: Stockport Council bought Edgeley Park for £2m in 2015 from Cheshire Sport Promotions and leased
+      it back to the club. Under owner Mark Stott the club agreed a 250-year lease in 2022, with the council
+      keeping the freehold.
+    as_of: 2024
+    confidence: high
+    sources:
+    - https://www.placenorthwest.co.uk/stockport-county-ground-bought-by-council/
+    - https://marketingstockport.co.uk/news/stockport-council-to-complete-edgeley-park-lease-by-the-end-of-april/
+    - https://itv.com/news/granada/2022-02-22/stockport-county-agree-250-year-lease-on-stadium
+  wigan-athletic-fc:
+    ground: Brick Community Stadium
+    owner_type: council
+    owner_name: Wigan Council (land freehold); stadium leasehold held by a Mike Danson stadium company
+    lease_note: Stadium building held on long lease from the council; term not found
+    note: Wigan Council owns the freehold of the land. Owner Mike Danson has moved the stadium into its
+      own company, separate from Wigan Athletic and Wigan Warriors, so the stadium interest would not
+      pass automatically with the football club.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://en.wikipedia.org/wiki/Brick_Community_Stadium
+    - https://www.wigantoday.net/sport/football/wigan-athletic-chairman-on-plans-for-brick-community-stadium-ownership-switch-4858793
+  wycombe-wanderers-fc:
+    ground: Adams Park
+    owner_type: landlord
+    owner_name: Frank Adams Legacy Ltd (Wycombe Wanderers Trust)
+    lease_note: 50-year lease granted to the club when Rob Couhig bought 75% in 2020
+    since: 2012
+    note: The supporters' trust put Adams Park into Frank Adams Legacy Ltd in 2012; it kept the ground
+      when it sold control of the club to Rob Couhig in 2020 and the club took a 50-year lease. No source
+      found that the later Mike Dunn takeover changed the ground's ownership.
+    as_of: 2020
+    confidence: medium
+    sources:
+    - https://wycombewandererstrust.com/?p=10876
+    - https://www.fourfourtwo.com/us/news/rob-couhig-completes-takeover-league-one-promotion-hopefuls-wycombe
+  accrington-stanley-fc:
+    ground: Wham Stadium (Crown Ground), Livingstone Road
+    owner_type: club
+    owner_name: Accrington Stanley FC
+    since: 2018
+    note: In December 2018 the club bought the freehold of the ground from Hyndburn Council for £400,000,
+      ending about 50 years of leasing the land (it already owned the buildings). Owner Andy Holt put
+      the club up for sale in October 2023 and an investment deal was reported later; no change to the
+      ground's ownership was found.
+    as_of: 2023
+    confidence: high
+    sources:
+    - https://www.thisislancashire.co.uk/news/17299487.stanley-now-owns-ground-after-freehold-purchase/
+    - https://stadiumdb.com/news/2018/12/england_accrington_stanley_buy_land_under_stadium
+    - https://lancashirebusinessview.co.uk/latest-news-and-features/major-investment-deal-looms-for-cash-strapped-accrington-stanley
+  barnet-fc:
+    ground: The Hive Stadium
+    owner_type: club
+    owner_name: Barnet FC (chairman Tony Kleanthous)
+    since: 2018
+    note: Barnet first occupied The Hive under a lease from the London Borough of Harrow, then bought
+      the freehold from Harrow for about £2m in 2018. Some sources say Kleanthous personally bought it;
+      the most specific report says the club owns it, but whether a separate Kleanthous company holds
+      title is not confirmed.
+    as_of: 2018
+    confidence: medium
+    sources:
+    - https://en.wikipedia.org/wiki/The_Hive_Stadium
+    - https://www.camdennewjournal.co.uk/article/the-barnet-stadium-mystery-are-camden-council-owed-1-million-from-playing-fields-deal
+  bristol-rovers-fc:
+    ground: Memorial Stadium
+    owner_type: club
+    owner_name: Bristol Rovers FC (holding company Dwane Sports, majority owned by Hussain AlSaeed)
+    since: 1998
+    note: Rovers moved in as Bristol Rugby's tenant in 1996 and became joint owners, then bought the rugby
+      club's share in 1998. The only sources found that say the club still holds the freehold are encyclopedic
+      summaries, and the current title holder was not confirmed against a primary source.
+    as_of: 2024
+    confidence: low
+    sources:
+    - https://www.football-stadiums.co.uk/grounds/england/memorial-stadium/
+    - https://www.bristolrovers.co.uk/memorial-stadium
+    - https://bristolrovers.co.uk/news/2023/august/club-statement-new-ownership
+  cheltenham-town-fc:
+    ground: Whaddon Road
+    owner_type: council
+    owner_name: Cheltenham Borough Council
+    lease_note: Club holds a lease from the council; term not found
+    note: Cheltenham Borough Council owns the land and leases the ground to the club. In 2019 the council
+      approved a land swap that changes the leased area on the terms of the existing lease.
+    as_of: 2019
+    confidence: medium
+    sources:
+    - https://democracy.cheltenham.gov.uk/ieDecisionDetails.aspx?ID=760
+    - https://www.punchline-gloucester.com/articles/aanews/cheltenham-borough-council-still-exploring-land-swap-with-football-club-but-it-has-got-more-complica
+  chesterfield-fc:
+    ground: SMH Group Stadium
+    owner_type: club
+    owner_name: Chesterfield Football Club
+    since: 2010
+    note: The club-built stadium opened in 2010, replacing Saltergate. Chesterfield Borough Council released
+      its charge over the stadium once a 2001 loan was repaid, and former owner Dave Allen's mortgage
+      over it was restructured; I found nothing showing it has moved out of the club since the Kirk brothers
+      became majority owners in 2024.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://www.derbyshiretimes.co.uk/sport/football/chesterfield-councils-2001-loan-spireites-paid-allen-mortgage-restructured-59987
+    - https://www.derbyshiretimes.co.uk/sport/football/chesterfield-brothers-set-to-become-majority-owners-of-spireites-4540245
+  colchester-united-fc:
+    ground: JobServe Community Stadium
+    owner_type: council
+    owner_name: Colchester City Council
+    lease_note: long-standing lease; rent is a percentage of gate receipts, paid on the club's behalf
+      by JobServe (Robbie Cowling's company) under the naming deal
+    note: The council owns the stadium and leases it to the club. When Cowling held takeover talks with
+      Lightwell Sports Group (they collapsed), the council confirmed the stadium was not part of the sale.
+    as_of: 2025
+    confidence: medium
+    sources:
+    - https://www.gazette-news.co.uk/news/25150567.colchester-united-takeover-council-share-update-stadium
+    - https://www.gazette-news.co.uk/news/16263935.jobserve-confirmed-new-stadium-sponsor-colchester-united/
+  crawley-town-fc:
+    ground: Broadfield Stadium
+    owner_type: council
+    owner_name: Crawley Borough Council
+    lease_note: Lease from the council, agreed 2010
+    since: 1997
+    note: The council built the stadium and the club has leased it since moving in 1997.
+    as_of: 2024
+    confidence: high
+    sources:
+    - https://en.wikipedia.org/wiki/Broadfield_Stadium
+    - https://footballgroundguide.com/leagues/england/league-two/broadfield-stadium-crawley-town.html
+  crewe-alexandra-fc:
+    ground: Gresty Road (Mornflake Stadium)
+    owner_type: club
+    owner_name: Crewe Alexandra FC
+    note: Stadium references list the club as owner of Gresty Road, its home since 1906. A sale of a controlling
+      stake was reported, but no transfer of the ground away from the club was found; freehold detail
+      not confirmed from filings.
+    as_of: 2023
+    confidence: medium
+    sources:
+    - https://en.wikipedia.org/wiki/Gresty_Road
+    - https://www.thebusinessdesk.com/northwest/?p=2049658
+  exeter-city-fc:
+    ground: St James Park
+    owner_type: council
+    owner_name: Exeter City Council
+    lease_end: 2046
+    lease_note: 25-year lease signed 2020, running to 2046
+    since: 2020
+    note: Exeter City Council owns the land under St James Park and leases it to the supporter-owned club;
+      a new 25-year lease was agreed in 2020.
+    as_of: 2020
+    confidence: high
+    sources:
+    - https://exetercityfc.co.uk/news/2020/july/-ground-lease
+    - https://news.exeter.gov.uk/lease-agreement-secures-football-club-s-future-for-a-further-25-years/
+  fleetwood-town-fc:
+    ground: Highbury Stadium
+    owner_type: council
+    owner_name: Wyre Council
+    lease_note: Club pays rent to the council; term not found
+    note: Wyre Borough Council owns Highbury and Fleetwood Town pay rent. The Pilley family rebuilt the
+      stands after 2004 but did not take the freehold.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://en.wikipedia.org/wiki/Highbury_Stadium_(Fleetwood)
+    - https://liberoguide.com/fleetwood-town/
+  gillingham-fc:
+    ground: Priestfield Stadium
+    owner_type: owner_company
+    owner_name: Priestfield Developments Ltd (controlled by Brad Galinson)
+    since: 2022
+    note: Paul Scally's separate company Priestfield Developments bought the ground in 2007 for £9.8m
+      during a debt restructuring; control of it passed to Brad Galinson in December 2022 alongside his
+      takeover of the club.
+    as_of: 2022
+    confidence: medium
+    sources:
+    - https://kentsportsnews.com/gillingham-takeover-nearing-completion-30-11-2022
+    - https://en.wikipedia.org/wiki/Paul_Scally
+  grimsby-town-fc:
+    ground: Blundell Park
+    owner_type: club
+    owner_name: Grimsby Town FC
+    since: 1899
+    note: Stadium references list the club as owner of Blundell Park, its home since 1899. The 1878 Partners
+      consortium (Jason Stockwood) bought the club from John Fenty in 2021 and has said a stadium move
+      is not an immediate priority; earlier new-stadium plans involved council-owned land.
+    as_of: 2022
+    confidence: medium
+    sources:
+    - https://en.wikipedia.org/wiki/Blundell_Park
+    - https://www.grimsbytelegraph.co.uk/news/grimsby-news/plans-new-grimsby-town-fc-6532724
+  newport-county-fc:
+    ground: Rodney Parade
+    owner_type: other_club
+    owner_name: Dragons RFC (privately owned by the David Buttress / David Wright / Graeme Bradbury consortium)
+    lease_note: Lease extension agreed July 2023; its length was not found. The previous lease was a 10-year
+      deal from 2013.
+    since: 2023
+    note: Rodney Parade passed from Newport RFC to the WRU in 2017. In 2023 the WRU sold Dragons RFC and
+      the ground to a private consortium, and Newport County remain tenants there, as they have been since
+      2012.
+    as_of: 2024
+    confidence: high
+    sources:
+    - https://www.wru.wales/2023/09/new-owners-announced-for-dragons-rfc
+    - https://dragonsrfc.wales/news/2023/july/lease-extension-agreed-with-newport-county.html
+    - https://www.newport-county.co.uk/news/20232/july/county-agree-new-rodney-parade-lease
+  northampton-town-fc:
+    ground: Sixfields Stadium
+    owner_type: council
+    owner_name: West Northamptonshire Council
+    lease_end: 2153
+    lease_note: 150-year lease from December 2003, held by County Developments Northampton Ltd (club subsidiary)
+    since: 2003
+    note: The council (formerly Northampton Borough Council, now West Northamptonshire Council) owns the
+      stadium freehold; the club's subsidiary CDNL holds a 150-year lease. In 2025 the council accepted
+      a £2m bid from CDNL for adjacent development land, linked to finishing the East Stand.
+    as_of: 2025
+    confidence: high
+    sources:
+    - https://en.wikipedia.org/wiki/Sixfields_Stadium
+    - https://www.ntfctrust.co.uk/news/article/sixfields-land-deal-signed-off
+    - https://leisureopportunities.co.uk/news/Northampton-Town-agrees-deal-for-redevelopment-of-Sixfields-Stadium/306016
+  oldham-athletic-fc:
+    ground: Boundary Park
+    owner_type: club
+    owner_name: Oldham Athletic (Rothwell family)
+    since: 2023
+    note: For about a decade Boundary Park belonged to Simon Blitz's Brass Bank Ltd, separately from the
+      club, which led to disputes with former owner Abdallah Lemsagam. The Rothwell family bought the
+      club in 2022 and completed the purchase of the stadium and surrounding land on 24 March 2023, reuniting
+      club and ground; reports describe this as the club buying the ground back, but the exact holding
+      company is not confirmed.
+    as_of: 2023
+    confidence: medium
+    sources:
+    - https://www.thestadiumbusiness.com/2023/03/27/oldham-buys-back-boundary-park
+    - https://oldham-chronicle.co.uk/news-features/139/main-news/151096/celebration-time-as-rothwell-family-announce-complete-boundary-park-purchase
+  port-vale-fc:
+    ground: Vale Park
+    owner_type: club
+    owner_name: Port Vale FC (Carol and Kevin Shanahan)
+    since: 2019
+    note: Norman Smurthwaite split Vale Park off from the club after the 2012 administration. When Carol
+      and Kevin Shanahan bought the club in May 2019, their first step was to have the club buy the whole
+      of Vale Park back.
+    as_of: 2019
+    confidence: high
+    sources:
+    - https://www.port-vale.co.uk/news/2019/may/club-statement-carol-and-kevin-shanahan
+    - https://www.staffordshire-live.co.uk/news/local-news/shanahans-new-owners-port-vale-2840499
+  rochdale-fc:
+    ground: Crown Oil Arena (Spotland)
+    owner_type: club
+    owner_name: Rochdale AFC (stadium company 100% owned by the club)
+    since: 2016
+    note: In 2016 Rochdale AFC bought out Rochdale council's and the Rugby League Facilities Trust's shares
+      in the stadium company, giving the club 100% ownership; Rochdale Hornets are long-term tenants.
+      The Ogden family bought the club in May 2024 and the ground stays inside the club group.
+    as_of: 2024
+    confidence: high
+    sources:
+    - https://www.rochdaleafc.co.uk/news/2016/march/rochdale-football-club-secure-full-control-of-spotland-stadium-/
+    - https://leisureopportunities.co.uk/news/Rochdale-AFC-football-League-One-Spotland-Stadium-Rochdale-Borough-Council/322712
+  rotherham-united-fc:
+    ground: AESSEAL New York Stadium
+    owner_type: club
+    owner_name: Rotherham United FC
+    since: 2010
+    note: The club bought the Guest and Chrimes foundry site in 2010 and opened the stadium in 2012, funded
+      by chairman Tony Stewart. Sources describe it as club-owned; no source found for a separate Stewart
+      company holding.
+    as_of: 2019
+    confidence: low
+    sources:
+    - https://en.wikipedia.org/wiki/New_York_Stadium
+    - https://www.yorkshirepost.co.uk/sport/football/rotherham-united/stewart-pumps-in-ps30m-to-promotion-hopefuls-rotherham-1866541
+  salford-city-fc:
+    ground: Peninsula Stadium (Moor Lane)
+    owner_type: council
+    owner_name: Salford City Council (reported)
+    lease_note: Club holds a lease; terms not found
+    note: 'Sources conflict: stadium reference sites list Salford City FC as owner, but Place North West''s
+      2024 coverage of the proposed AJ Bell Stadium swap (Salford Red Devils to take a lease at Moor Lane)
+      describes the Peninsula Stadium as council-owned. The newer, more specific report is preferred;
+      the club funded the rebuild of all four stands.'
+    as_of: 2024
+    confidence: low
+    sources:
+    - https://www.placenorthwest.co.uk/salford-stadium-swap-saga-nears-conclusion
+    - https://www.loverugbyleague.com/post/salford-coy-on-aj-bell-stadium-swap-deal-with-football-club
+    - https://stadiumdb.com/stadiums/eng/moor_lane
+  shrewsbury-town-fc:
+    ground: Croud Meadow
+    owner_type: club
+    owner_name: Shrewsbury Town FC
+    since: 2007
+    note: The club built the ground (formerly New Meadow) and moved there in 2007 under chairman Roland
+      Wycherley; sources list the club as owner. Separately, Wycherley's training-ground land was transferred
+      to the club in exchange for shares.
+    as_of: 2025
+    confidence: medium
+    sources:
+    - https://en.wikipedia.org/wiki/New_Meadow
+    - https://www.shrewsburytown.com/club/our-stadium
+  swindon-town-fc:
+    ground: County Ground
+    owner_type: landlord
+    owner_name: County Ground Stadium Custodians Ltd (50% club/Clem Morfuni side, 50% TrustSTFC supporters'
+      trust)
+    lease_end: 2273
+    lease_note: 250-year lease back to the club from March 2023
+    since: 2023
+    note: On 24 March 2023 a joint venture of the club side and the supporters' trust bought the County
+      Ground from Swindon Borough Council for £2.3m (funded by the Nigel Eady Trust) and leased it back
+      to the club for 250 years. Reports differ on whether the non-trust half sits with the club or with
+      owner Clem Morfuni personally; either way half is held by the trust, separate from the club.
+    as_of: 2023
+    confidence: high
+    sources:
+    - https://www.swindon.gov.uk/news/article/874/football_club_completes_county_ground_purchase
+    - https://itv.com/news/westcountry/2023-03-24/swindon-town-buy-county-ground-in-23m-deal
+  tranmere-rovers-fc:
+    ground: Prenton Park
+    owner_type: club
+    owner_name: Tranmere Rovers FC
+    since: 1921
+    note: The club bought the freehold for £7,500 in 1921. Mark and Nicola Palios have controlled the
+      club since 2014, with Indonesia's Santini Group a minority shareholder since 2019; no source found
+      that the ground was moved out of the club.
+    as_of: 2019
+    confidence: medium
+    sources:
+    - https://en.wikipedia.org/wiki/Prenton_Park
+    - https://en.wikipedia.org/wiki/Tranmere_Rovers_F.C.
+  walsall-fc:
+    ground: Bescot Stadium (Pallet-Track Bescot Stadium)
+    owner_type: club
+    owner_name: Walsall FC (Trivela Group)
+    since: 2022
+    note: The freehold had been held by Suffolk Life, a pension scheme of which former owner Jeff Bonser
+      is a beneficiary, and the club paid about £500k a year in rent. In December 2022 Trivela bought
+      it with US bank financing, so the club owns its ground for the first time since 1990.
+    as_of: 2023
+    confidence: high
+    sources:
+    - https://www.expressandstar.com/sport/football/walsall-fc/walsall-buy-poundland-bescot-stadium-5887051
+    - https://www.burges-salmon.com/burges-salmon-advises-walsall-football-club-on-acquisition-of-poundland-bescot-stadium/
+  york-city-fc:
+    ground: LNER Community Stadium
+    owner_type: council
+    owner_name: City of York Council
+    lease_note: Club is a tenant under a lease agreed with the council before the 2021 move; term not
+      found
+    since: 2021
+    note: The £44m stadium opened in 2021, is owned by City of York Council and shared with York Knights
+      and York Valkyrie rugby league. The club had to settle lease differences with the council before
+      moving in from Bootham Crescent in January 2021.
+    as_of: 2021
+    confidence: high
+    sources:
+    - https://en.wikipedia.org/wiki/York_Community_Stadium
+    - https://www.thestadiumbusiness.com/2020/12/17/yorks-lner-community-stadium-finally-completed
+  aldershot-town-fc:
+    ground: EBB Stadium (Recreation Ground)
+    owner_type: council
+    owner_name: Rushmoor Borough Council
+    lease_note: 118-year lease at £1 a year, starting once planning permission for redevelopment is granted;
+      £25,000 a year rent until then
+    since: 2023
+    note: Rushmoor Borough Council agreed a new 118-year peppercorn lease to replace the lease that expired
+      in May 2023, tied to the club's redevelopment plans; the rent reverts to £25,000 if redevelopment
+      isn't done within 10 years. Land east of the stadium was also to transfer to the club.
+    as_of: 2023
+    confidence: high
+    sources:
+    - https://democracy.rushmoor.gov.uk/documents/s7125/Aldershot%20Town%20FC%20High%20Street%20Aldershot%20-%20grant%20of%20a%20new%20long%20leasehold%20-%20Report%20No.%20RP1925.pdf
+    - https://www.getsurrey.co.uk/news/surrey-news/aldershot-town-agree-118-year-16414019
+    - https://www.theshots.co.uk/shots-granted-118-year-lease/
+  altrincham-fc:
+    ground: Moss Lane (J. Davidson Stadium)
+    owner_type: council
+    owner_name: Trafford Council
+    note: The club leases Moss Lane from Trafford Council. The lease length and terms could not be found.
+    as_of: 2021
+    confidence: medium
+    sources:
+    - https://www.football-stadiums.co.uk/grounds/j-davidson-stadium/
+    - https://www.trafford.gov.uk/residents/news/articles/2021/20211126-Council-reduces-Altrincham-FC-capacity-following-serious-concerns-over-crowd-safety.aspx
+  barrow-afc:
+    ground: Holker Street
+    owner_type: club
+    owner_name: Barrow AFC
+    since: 2002
+    note: Holker Street was sold for £410,000 to Northern Improvements, a company linked to former chairman
+      Stephen Vaughan; after a 1998-2002 legal battle the sale was deemed improper and the new members'
+      company bought the ground from the liquidator in 2002. Sources list the club as owner.
+    as_of: 2025
+    confidence: medium
+    sources:
+    - https://en.wikipedia.org/wiki/Holker_Street
+    - https://en.wikipedia.org/wiki/Barrow_A.F.C.
+  boreham-wood-fc:
+    ground: Meadow Park
+    owner_type: council
+    owner_name: Hertsmere Borough Council
+    lease_end: 2048
+    lease_note: 30-year lease approved in 2018 at £25,000 a year before community-benefit discount (end
+      year estimated from 2018 approval)
+    since: 2018
+    note: Meadow Park is a council-owned public park and the club leases the main ground and a second
+      parcel from Hertsmere. The council approved a 25-year lease in 2013 and replaced it with a 30-year
+      lease in 2018.
+    as_of: 2018
+    confidence: high
+    sources:
+    - https://hertsmere.moderngov.co.uk/documents/g10408/Printed minutes Wednesday 14-Nov-2018 18.00 Executive.pdf?T=1
+    - https://hertsmere.moderngov.co.uk/documents/s27603/Report of Officers.pdf
+  boston-united-fc:
+    ground: Jakemans Community Stadium
+    owner_type: unknown
+    since: 2020
+    note: The stadium opened in 2020 as part of The Quadrant development delivered by Chestnut Homes,
+      the housebuilder owned by club chairman David Newton. Two searches did not establish whether the
+      freehold sits with the club, Chestnut Homes or another body.
+    as_of: 2020
+    confidence: low
+    sources:
+    - https://www.healthclubmanagement.co.uk/health-club-management-news/Boston-United-reveals-plans-for-£100m-mixed-use-project/307631
+    - https://www.gainsboroughstandard.co.uk/sport/football/boston-united-receive-green-light-to-play-home-games-at-new-jakemans-community-stadium-3043470
+  carlisle-united-fc:
+    ground: Brunton Park
+    owner_type: club
+    owner_name: Carlisle United FC (CUFC Holdings group)
+    note: Stadium references list Carlisle United as owner of Brunton Park, its home since 1909. The Piatak
+      family's Castle Sports Group bought 90% of CUFC Holdings in November 2023 and is spending over £4.5m
+      on the ground; no separate property company or lease was found.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://en.wikipedia.org/wiki/Brunton_Park
+    - https://www.carlisleunited.co.uk/news/2023/november/club-more-from-our-new-owners
+    - https://uk.sports.yahoo.com/news/piataks-were-investing-more-8-193703231.html
+  eastleigh-fc:
+    ground: Silverlake Stadium (Ten Acres)
+    owner_type: club
+    owner_name: Eastleigh FC
+    since: 1957
+    note: Eastleigh have played at Ten Acres since 1957 and the ground was redeveloped under Stewart Donald
+      from 2010. Reference sources list the club as owner, but no source confirms freehold title or rules
+      out a council lease.
+    as_of: 2025
+    confidence: low
+    sources:
+    - https://en.wikipedia.org/wiki/Ten_Acres
+    - https://www.football-stadiums.co.uk/?p=7619
+  fc-halifax-town:
+    ground: The Shay
+    owner_type: council
+    owner_name: Calderdale Council
+    lease_note: Club operates/uses the ground under arrangement with the council; terms not found
+    disputed: true
+    note: Calderdale Council owns The Shay and decided in 2024 to stop running it. Its March 2025 decision
+      to sell to Huddersfield Giants owner Ken Davy drew a legal challenge from Friends of The Shay, and
+      Davy later withdrew, so the council still holds it and its future remains unsettled.
+    as_of: 2025
+    confidence: medium
+    sources:
+    - https://totalrl.com/huddersfield-giants-owner-ken-davy-successful-in-buying-the-shay-stadium-from-calderdale-council
+    - https://footballgroundguide.com/news/owner-now-scraps-bid-for-10401-capacity-non-league-stadium-after-backlash-from-small-minority.html
+    - https://news.calderdale.gov.uk/options-for-the-future-of-the-shay-stadium-2
+  forest-green-rovers-fc:
+    ground: The New Lawn
+    owner_type: unknown
+    note: Dale Vince's Ecotricity is the named developer of the planned Eco Park stadium and of the plan
+      to replace the New Lawn with 95 homes. Three searches did not establish whether the New Lawn freehold
+      sits with the club or with Ecotricity/Vince.
+    as_of: 2024
+    confidence: low
+    sources:
+    - https://thenationalleague.org.uk/forest-greens-new-eco-stadium-given-council-green-83020
+    - https://fgr.co.uk/eco-park
+  fylde-afc:
+    ground: Mill Farm
+    owner_type: owner_company
+    owner_name: Tangerine Holdings (Haythornthwaite family company)
+    since: 2016
+    note: The stadium and the wider Mill Farm sports village, opened in 2016, are owned by Tangerine Holdings,
+      the Haythornthwaite family company; David Haythornthwaite also controls the club. It was not confirmed
+      whether the club company sits inside the same group, so the ground may not pass automatically with
+      the club.
+    as_of: 2019
+    confidence: medium
+    sources:
+    - https://www.talkingbull.org/?p=145142
+    - https://thesetpieces.com/features/rise-rise-afc-fylde/
+  gateshead-fc:
+    ground: Gateshead International Stadium
+    owner_type: council
+    owner_name: Gateshead Council
+    lease_note: No 10-year lease as of 2024; operation passing to a national leisure operator from April
+      2025
+    note: In 2024 Gateshead were barred from the National League play-offs because they could not get
+      the 10-year lease the EFL requires on the council-owned stadium. The council, which says the stadium
+      is losing money, planned to hand operation to a leisure provider from April 2025 without making
+      the club's tenancy a condition. I found no source on the lease position after 2024.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://www.itv.com/news/tyne-tees/2024-06-19/gateshead-fc-could-move-grounds-to-avoid-repeat-of-efl-promotion-exclusion
+    - https://www.gateshead.gov.uk/article/30270/Gateshead-Council-set-to-appoint-new-operator-for-leisure-services
+    - https://fanbanter.co.uk/council-respond-with-gateshead-barred-from-national-league-playoffs-over-ground-lease/
+  harrogate-town-afc:
+    ground: Wetherby Road (Marcy Fitness Stadium)
+    owner_type: club
+    owner_name: Harrogate Town AFC
+    note: Reference sources list Harrogate Town AFC as owner of Wetherby Road, its home since 1920. One
+      local opinion piece speaks of the club 'leasing land on Wetherby Road', so a council lease of part
+      or all of the site cannot be ruled out.
+    as_of: 2024
+    confidence: low
+    sources:
+    - https://en.wikipedia.org/wiki/Wetherby_Road
+    - https://thestrayferret.co.uk/stray-views-harrogate-town-fc-should-get-a-new-stadium
+  hartlepool-united-fc:
+    ground: Victoria Park (Suit Direct Stadium)
+    owner_type: council
+    owner_name: Hartlepool Borough Council
+    lease_end: 2067
+    lease_note: 70-year lease from 19 June 1997
+    since: 1997
+    note: Hartlepool Borough Council owns Victoria Park and leases it to Hartlepool United Football Club
+      Ltd. The council refused an earlier club offer to buy the stadium, and the club sought rent support
+      during 2020-21.
+    as_of: 2024
+    confidence: high
+    sources:
+    - https://www.hartlepool.gov.uk/download/downloads/id/7077/2156_-_victoria_football_club_at_clarence_road.pdf
+    - https://www.hartlepool.gov.uk/news/article/2248/council_and_football_club_will_work_together_towards_an_exciting_and_secure_future
+  hornchurch-fc:
+    ground: Hornchurch Stadium
+    owner_type: council
+    owner_name: London Borough of Havering
+    lease_note: Lease to Hornchurch Football Club (2005) Ltd; council rent review effective 1 June 2025
+    note: Council-owned athletics and football stadium on Bridge Avenue, Upminster, leased to the club;
+      Havering's 2025 rent review decision confirms the tenancy.
+    as_of: 2025
+    confidence: high
+    sources:
+    - https://democracy.havering.gov.uk/ieDecisionDetails.aspx?Id=9321
+    - https://en.wikipedia.org/wiki/Hornchurch_Stadium
+  kidderminster-harriers-fc:
+    ground: Aggborough
+    owner_type: council
+    owner_name: Wyre Forest District Council
+    lease_note: Existing lease said by the club to secure at least another 20 years at Aggborough
+    note: Wyre Forest District Council holds the freehold; in January 2026 its cabinet considered selling
+      the freehold of the ground, car park and social club to the club, with covenants to keep it a football
+      ground. Negotiations were still ongoing in 2026 and no completed sale was found.
+    as_of: 2026
+    confidence: high
+    sources:
+    - https://www.wyreforestdc.gov.uk/news/posts/2026/january/cabinet-to-consider-stadium-sale
+    - https://kidderminsterstandard.co.uk/news/kidderminster-harriers-could-soon-own-their-stadium/
+    - https://kidderminsterstandard.co.uk/news/no-immediate-threat-to-football-at-kidderminster-harriers-stadium/
+  scunthorpe-united-fc:
+    ground: Glanford Park
+    owner_type: landlord
+    owner_name: The New Show Ground Community Interest Company
+    lease_note: Club holds a lease from the CIC; term not found
+    since: 2023
+    note: Former chairman Peter Swann kept Glanford Park through Coolsilk Property and Investment and
+      gave the club notice to pay £3m or quit, leading to a court dispute. On 29 November 2023 a not-for-profit
+      CIC set up by barrister Tahina Akther bought the ground, mainly with Town Deal Fund money via North
+      Lincolnshire Council, and leases it to the club.
+    as_of: 2023
+    confidence: high
+    sources:
+    - https://en.wikipedia.org/wiki/Glanford_Park
+    - https://solicitorsjournal.com/sjarticle/local-born-barrister-secures-future-of-scunthorpe-united
+    - https://www.northlincs.gov.uk/news/new-homes-and-jobs-to-create-sustainable-future-for-glanford-park-as-government-cash-supports-purchase/
+  solihull-moors-fc:
+    ground: Damson Park (ARMCO Arena)
+    owner_type: unknown
+    owner_name: 'Unclear: a holding company owns the ground (Solihull Borough bought the site in 1999);
+      its link to the current club owner was not established'
+    note: Solihull Borough bought the former driving range in 1999 and built the ground; sources say a
+      holding company owns it and tenants pay it rent. Solihull Council's Local Plan earmarks the site
+      for Jaguar Land Rover expansion and the council can require the club to relocate, with a duty to
+      help it move.
+    as_of: 2022
+    confidence: low
+    sources:
+    - https://en.wikipedia.org/wiki/Damson_Park
+    - https://www.pressreader.com/uk/birmingham-post/20220127/281582359016701
+  southend-united-fc:
+    ground: Roots Hall
+    owner_type: landlord
+    owner_name: Ron Martin / Martin family companies (former club owner)
+    since: 1998
+    note: Ron Martin separated Roots Hall from the club during his ownership; when COSU (Justin Rees)
+      bought the club in July 2024 the Martin family kept the ground, with its return tied to a council-brokered
+      deal and Fossetts Farm housing. No source found confirming the ground has since passed back to the
+      club.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://shrimperstrust.co.uk/?p=707
+    - https://thenonleaguefootballpaper.com/?p=444807
+    - https://www.basildonstandard.co.uk/news/24245433.fossetts-farm-1-300-homes-decided-next-week/
+  sutton-united-fc:
+    ground: Gander Green Lane (VBS Community Stadium)
+    owner_type: council
+    owner_name: London Borough of Sutton
+    lease_note: 50-year lease; the club said in about 2019 that it was roughly 12 years into the term
+    note: Sutton United lease the ground from the London Borough of Sutton on a long lease. No newer change
+      to the arrangement was found.
+    as_of: 2019
+    confidence: medium
+    sources:
+    - https://www.suttonunited.net/100th-anniversary-down-the-lane
+  tamworth-fc:
+    ground: The Lamb Ground
+    owner_type: council
+    owner_name: Tamworth Borough Council
+    note: Bob Andrews and Steve Lathbury sold their majority stake to Abdullah Ashraf's Dawn Group International,
+      and Ashraf promised to buy the Lamb Ground. Tamworth Borough Council said any sale of the council
+      land would need valuation and cabinet approval and no terms had been agreed; no completed sale or
+      active dispute was found.
+    as_of: 2025
+    confidence: medium
+    sources:
+    - https://www.tamworth.gov.uk/tamworth-football-club
+    - https://ground.news/article/lambs-new-owner-aims-for-league
+    - https://www.tamworthfootballclub.com/news/club-statement-2983702.html
+  wealdstone-fc:
+    ground: Grosvenor Vale
+    owner_type: landlord
+    owner_name: KSIMC
+    lease_end: 2036
+    lease_note: Lease extended to 31 May 2036
+    since: 2008
+    note: Grosvenor Vale was Ruislip Manor FC's ground; when that club collapsed in 2008, Wealdstone took
+      over the lease. The freeholder is KSIMC, and the club has announced a lease extension to 31 May
+      2036 (one report dates the signing to 12 March 2026; date not independently checked).
+    as_of: 2026
+    confidence: medium
+    sources:
+    - https://www.wealdstone-fc.com/post/statement-wealdstone-fc-confirms-lease-extension-at-the-vale
+    - https://www.thenationalleague.org.uk/en_GB/wealdstone-announce-grosvenor-vale-lease-extension-50778
+    - https://wealdstone-fc.com/post/stones-meet-with-landlords-ksimc-and-local-mp-boris-johnson-to-resolve-club-s-future-at-the-vale
+  woking-fc:
+    ground: Kingfield Stadium (Laithwaite Community Stadium)
+    owner_type: council
+    owner_name: Woking Borough Council
+    note: 'Woking Borough Council owns the Kingfield stadium and the club runs it. A 2019 development
+      agreement between the council, GolDev and the club for a 10,000-seat rebuild with housing failed:
+      planning was refused in 2020 and the appeal lost. No source was found on the lease terms, or on
+      whether the council''s 2023 financial collapse has led to a sale.'
+    as_of: 2021
+    confidence: medium
+    sources:
+    - https://www.woking.gov.uk/node/698
+    - https://ukpropertyforums.com/stadium-and-1000-flats-plan-loses-at-appeal/
+  worthing-fc:
+    ground: Woodside Road (Sussex Transport Community Stadium)
+    owner_type: unknown
+    note: Worthing have played at Woodside Road since 1901 and owner George Dowell has funded a 3G pitch
+      and stand expansion approved by Worthing Borough Council in April 2024. No source found that says
+      who holds the freehold.
+    as_of: 2024
+    confidence: low
+    sources:
+    - https://en.wikipedia.org/wiki/Worthing_F.C.
+    - https://www.sussexexpress.co.uk/news/people/worthing-football-club-ground-plans-approved-4601211
+  yeovil-town-fc:
+    ground: Huish Park
+    owner_type: council
+    owner_name: Somerset Council (formerly South Somerset District Council)
+    lease_note: Leased back to the club owners from 17 May 2022; rent £229,130 a year after 2025 review;
+      club holds option to buy back for £2.789m (indexed) until 17 May 2028
+    since: 2022
+    note: In 2022 South Somerset District Council bought the freehold of Huish Park and surrounding land
+      for £2.8m in a sale-and-leaseback to keep the club afloat. Somerset Council has extended the club's
+      buyback option from May 2026 to May 2028.
+    as_of: 2025
+    confidence: high
+    sources:
+    - https://www.somerset.gov.uk/news/council-agrees-to-extend-buyback-option-period-for-huish-park-for-two-years
+    - https://gloverscast.co.uk/ssdc-confirm-purchase-of-huish-park-in-legal-talks/
+  afc-telford-united-fc:
+    ground: New Bucks Head
+    owner_type: council
+    owner_name: Telford & Wrekin Council
+    lease_end: 2160
+    lease_note: 140-year lease of the whole ground granted 2020 at peppercorn rent
+    since: 2020
+    note: The council owns the ground; in 2020 it granted the club a single 140-year lease of the entire
+      stadium after Telford College gave up its West Stand lease.
+    as_of: 2020
+    confidence: high
+    sources:
+    - https://www.shropshirestar.com/news/2014/07/17/changes-to-leases-at-afc-telfords-ground
+    - https://newsroomarchive.telford.gov.uk/News/Details/15471
+  afc-totton-fc:
+    ground: Testwood Stadium (Snows Stadium)
+    owner_type: landlord
+    owner_name: Private consortium that bought the ground c.2014 (name not found)
+    since: 2014
+    note: Facing debts around 2014, the members voted unanimously to sell the ground to one of two consortiums,
+      with the club continuing as a members club playing at Testwood. The buyer's identity and lease terms
+      were not found; Snows Motor Group is the naming-rights sponsor and its chairman Stephen Snow chairs
+      the club.
+    as_of: 2019
+    confidence: low
+    sources:
+    - https://www.afctotton.com/news/club-statement-regarding-last-nights-members-meeting
+    - https://en.wikipedia.org/wiki/A.F.C._Totton
+    - https://www.snows.co.uk/about-us/snows-stadium/
+  bedford-town-fc:
+    ground: The Eyrie (Meadow Lane, Cardington)
+    owner_type: council
+    owner_name: Bedford Borough Council
+    lease_note: Ground lease from the council; term not found
+    since: 1993
+    note: After reforming in 1989 the club moved in 1993 to a council-chosen former tree nursery at Meadow
+      Lane, built with council money and volunteer work. Bedford Borough Council's June 2024 land register
+      lists the Bedford Town FC ground as council freehold, ground leasehold.
+    as_of: 2024
+    confidence: high
+    sources:
+    - https://www.bedford.gov.uk/files/local-authority-land-june-2024-csv.csv/download
+    - https://en.wikipedia.org/wiki/Bedford_Town_F.C.
+  billericay-town-fc:
+    ground: New Lodge
+    owner_type: council
+    owner_name: Basildon Borough Council
+    lease_note: Council approved a new 35-year lease (date and end year not confirmed); club had a 75%
+      rent discount since 1977
+    note: Basildon Council owns the Blunts Wall Road site of New Lodge and leases it to the club. The
+      newest source found on the lease is an undated older local news report (as_of year approximate),
+      so terms may have changed since.
+    as_of: 2008
+    confidence: medium
+    sources:
+    - https://www.gazette-news.co.uk/news/5534238.soccer-billericays-no-rent-rise-plea/
+    - https://www.nonleaguegrounds.com/regions/east-of-england/new-lodge
+  brackley-town-fc:
+    ground: St James Park
+    owner_type: club
+    owner_name: Brackley Town FC
+    since: 1974
+    note: The club has played at St James Park, Churchill Way, since 1974. A ground directory lists the
+      club as owner, but no primary source confirming a freehold title was found.
+    as_of: 2024
+    confidence: low
+    sources:
+    - https://www.football-stadiums.co.uk/grounds/st-james-park-brackley/
+    - https://en.wikipedia.org/wiki/Brackley_Town_F.C.
+  braintree-town-fc:
+    ground: Cressing Road
+    owner_type: club
+    owner_name: Braintree Town FC
+    note: The club has said it hopes to sell Cressing Road, its home since 1923 (built by the Crittall
+      Windows Company), to fund a new ground, which implies the club holds it. One reference site lists
+      the shareholders L Harding, K Cowell/Cowell & Cooper Ltd and V Dixon as 'owners', which appears
+      to describe the club, not the land; freehold not confirmed.
+    as_of: 2020
+    confidence: low
+    sources:
+    - https://thenonleaguefootballpaper.com/?p=17809
+    - https://en.wikipedia.org/wiki/Cressing_Road
+  buxton-fc:
+    ground: The Silverlands
+    owner_type: club
+    owner_name: Buxton FC
+    since: 1884
+    note: Buxton have played at the Silverlands since 1884, on a field first owned by the club's first
+      captain. A fan-site review of the club's accounts says Buxton own their ground, valued at about
+      £600k on the balance sheet.
+    as_of: 2023
+    confidence: medium
+    sources:
+    - https://talkingbull.org/?p=145065
+    - https://en.wikipedia.org/wiki/Buxton_F.C.
+  chelmsford-city-fc:
+    ground: Melbourne Community Stadium
+    owner_type: council
+    owner_name: Chelmsford City Council
+    lease_note: Lease/licence terms not found
+    since: 2006
+    note: Chelmsford City moved in 2006 to the Melbourne Stadium, a council-owned athletics stadium (the
+      former Chelmsford Sport and Athletics Centre).
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://en.wikipedia.org/wiki/Chelmsford_City_F.C.
+    - https://www.football-stadiums.co.uk/?p=7724
+  chesham-united-fc:
+    ground: The Meadow
+    owner_type: unknown
+    note: The club has played at The Meadow, Amy Lane, since 1917. Two searches did not establish who
+      holds the freehold.
+    as_of: 2024
+    confidence: low
+    sources:
+    - https://en.wikipedia.org/wiki/Chesham_United_F.C.
+  chester-city-fc:
+    ground: Deva Stadium
+    owner_type: council
+    owner_name: Cheshire West and Chester Council
+    lease_note: Lease granted to the new club in May 2010; term not found
+    since: 2010
+    note: Researched Chester FC, the phoenix formed in 2010 after Chester City was wound up. The council
+      owns the Deva Stadium, which straddles the England-Wales border, and granted its lease to the fans'
+      group behind Chester FC in May 2010.
+    as_of: 2022
+    confidence: high
+    sources:
+    - https://en.wikipedia.org/wiki/Deva_Stadium
+    - https://www.healthclubmanagement.co.uk/health-club-management-news/Fans-group-offered-Deva-Stadium-lease/191083
+  chorley-fc:
+    ground: Victory Park
+    owner_type: council
+    owner_name: Chorley Borough Council
+    lease_end: 2059
+    lease_note: 35-year lease approved June 2024 (replacing earlier 15-year peppercorn lease); end year
+      approximate
+    since: 2024
+    note: Chorley Council bought Victory Park when Ken Wright and Graham Watkinson took over the club's
+      shares, and granted a 15-year peppercorn lease. In June 2024 the council approved a new 35-year
+      lease so the club can seek larger grants for ground improvements.
+    as_of: 2024
+    confidence: high
+    sources:
+    - https://opengovernment.network/councils/chorley/decisions/61790
+    - https://thenationalleague.org.uk/boost-for-chorley-as-new-ground-lease-is-agreed-48398
+    - https://www.lep.co.uk/news/politics/new-deal-secures-bright-future-for-football-club-671700
+  dagenham-and-redbridge-fc:
+    ground: Victoria Road (Chigwell Construction Stadium)
+    owner_type: council
+    owner_name: London Borough of Barking and Dagenham
+    lease_end: 2047
+    lease_note: 30-year lease to March 2047
+    since: 2017
+    note: The council is the club's landlord at Victoria Road and granted a new 30-year lease running
+      to March 2047 so the club could invest in the ground. Some guides wrongly say the club owns it.
+    as_of: 2017
+    confidence: medium
+    sources:
+    - https://thenonleaguefootballpaper.com/national-league-step-one/18780/dagenham-redbridge-agree-new-30-year-lease-for-their-victoria-road-home
+    - https://modgov.lbbd.gov.uk/Internet/documents/s27204/Dagenham and Redbridge Football Club Lease
+      Report.pdf
+  darlington-fc:
+    ground: Blackwell Meadows
+    owner_type: other_club
+    owner_name: Darlington Rugby Football Club Ltd
+    lease_note: Groundshare licence/lease from Darlington RFC, in place since 2016
+    since: 2016
+    note: Darlington FC returned to the town in 2016 as a groundsharing tenant of Darlington RFC, which
+      built Blackwell Meadows in 1994. Council papers show Darlington Borough Council leasing pitch land
+      at the site to the rugby club, so the council may hold some or all of the underlying freehold.
+    as_of: 2025
+    confidence: medium
+    sources:
+    - https://darlingtonfc.co.uk/news/football-club-and-rugby-club-sign-licence-to-groundshare
+    - https://en.wikipedia.org/wiki/Blackwell_Meadows
+    - https://democracy.darlington.gov.uk/documents/s18030/Schedule of Transactions.pdf
+  dorking-wanderers-fc:
+    ground: Meadowbank Stadium
+    owner_type: council
+    owner_name: Mole Valley District Council
+    lease_note: Surrey County FA holds the head lease; the club plays there under it. In 2026 the club
+      and Surrey FA proposed a new leasing arrangement.
+    since: 2018
+    note: Mole Valley District Council has owned the rebuilt Meadowbank facilities since they opened in
+      2018, with Surrey County FA as leaseholder and Dorking Wanderers playing their home games there.
+      In 2026 the council said it will not sell the freehold but will consider a new lease.
+    as_of: 2026
+    confidence: high
+    sources:
+    - https://www.molevalley.gov.uk/meadowbank
+    - https://thenonleaguefootballpaper.com/?p=22204
+  dover-athletic-fc:
+    ground: Crabble Athletic Ground
+    owner_type: council
+    owner_name: Dover District Council
+    lease_note: Club operates the ground under an arrangement with the council; terms not found
+    note: Crabble Athletic Ground was bought for public use in 1902 and is owned by Dover District Council;
+      Dover Athletic operate it. No current lease details found.
+    as_of: 2024
+    confidence: high
+    sources:
+    - https://en.wikipedia.org/wiki/Crabble_Athletic_Ground
+    - https://www.dover.gov.uk/Leisure-Culture-Tourism/Leisure-Facilities/Parks--Open-Spaces/CrabbleAthleticGround,Dover.aspx
+  farnborough-town-fc:
+    ground: Cherrywood Road (sponsor names incl. Saunders Transport Community Stadium / Easy As HGV Stadium)
+    owner_type: council
+    owner_name: Rushmoor Borough Council
+    lease_note: 25-year lease extension agreed under owner Rob Prince (date not confirmed)
+    note: Researched Farnborough FC, the phoenix club formed after Farnborough Town folded in 2007, who
+      play at Cherrywood Road. Rushmoor council owns the ground and granted the club a 25-year lease extension.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://en.wikipedia.org/wiki/Cherrywood_Road
+    - https://thenonleaguefootballpaper.com/?p=436915
+  farnham-town-fc:
+    ground: Memorial Ground
+    owner_type: council
+    owner_name: Waverley Borough Council
+    lease_note: Lease surrendered and regranted in 2016, with groundsharing terms carried forward
+    since: 2016
+    note: The club leases the Memorial Ground, West Street, from Waverley Borough Council; the 2009 lease
+      was surrendered and replaced by a new lease in 2016.
+    as_of: 2016
+    confidence: medium
+    sources:
+    - https://modgov.waverley.gov.uk/documents/s10922/Farnham Town Football Club - Surrender and Regrant
+      of Lease.pdf
+  folkestone-invicta-fc:
+    ground: Cheriton Road (Alcaline Stadium)
+    owner_type: council
+    owner_name: Folkestone & Hythe District Council
+    lease_end: 2036
+    lease_note: Reversionary 15-year lease agreed July 2021, running to 2036
+    since: 2021
+    note: The Cheriton Road sports complex is owned by Folkestone & Hythe District Council and operated
+      by the Cheriton Road Sports Ground Trust. In 2021 the club signed a reversionary 15-year lease with
+      the council, securing tenure to 2036.
+    as_of: 2021
+    confidence: high
+    sources:
+    - https://kentishfootball.co.uk/news/folkestoneinvicta230721
+    - https://en.wikipedia.org/wiki/Cheriton_Road
+  hampton-and-richmond-borough-fc:
+    ground: Beveree Stadium
+    owner_type: council
+    owner_name: London Borough of Richmond upon Thames
+    lease_note: Council gave notice (2023) of intent to grant a stadium lease for up to 125 years plus
+      a licence for practice pitch and car park; completion not confirmed
+    note: The Beveree is council open space in Hampton. Richmond Council published notice of its intention
+      to grant the club a lease of the 1.2-hectare stadium for up to 125 years, linked to approved redevelopment
+      plans.
+    as_of: 2023
+    confidence: high
+    sources:
+    - https://publicnoticeportal.uk/notice/planning/65379ec5ac849c5a964aa5b1
+    - https://swlondoner.co.uk/tag/beveree-stadium
+  harborough-town-fc:
+    ground: Bowden Park (Harborough Town Community Football Ground)
+    owner_type: unknown
+    note: Not established. Harborough District Council part-funded the 2018 3G pitch (including £270,000
+      of section 106 money) and a council document on leases with other organisations appears in searches
+      for the ground, which suggests but does not prove council ownership.
+    as_of: 2018
+    confidence: low
+    sources:
+    - https://www.harborough.gov.uk/download/downloads/id/2865/appendix_n_-_leases_with_other_organisationspdf.pdf
+    - https://thenonleaguefootballpaper.com/?p=23772
+  hebburn-town-fc:
+    ground: Hebburn Sports & Social Ground (Trustmark Group Stadium)
+    owner_type: council
+    owner_name: South Tyneside Council
+    lease_note: Council leases the ground to Hebburn Sports and Social Club, of which the football club
+      is a section
+    since: 1982
+    note: South Tyneside Council bought the sports ground in 1982 and leases it to the multi-sport Hebburn
+      Sports and Social Club; it was renamed the Trustmark Group Stadium in August 2025.
+    as_of: 2025
+    confidence: medium
+    sources:
+    - https://sitelines.newcastle.gov.uk/SMR/16960
+    - https://footballgroundguide.com/leagues/england/conference/conference-north/hebburn-town-the-trustmark-group-stadium.html
+  hednesford-town-fc:
+    ground: Keys Park
+    owner_type: owner_company
+    owner_name: Craig and Amanda Gwilt (held separately from the club)
+    since: 2024
+    note: Keys Park was owned by former chairman Steve Price separately from the club, which he sold to
+      Graham Jones and Hayden Dando in 2020. In early 2024 Craig and Amanda Gwilt bought both the club
+      and Keys Park from Price; the reports do not say whether the ground was then put into the club company.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://expressandstar.com/sport/football/non-league/2024/02/27/fans-told-future-secure-after-hednesford-town-takeover-ratified-by-fa
+    - https://expressandstar.com/sport/football/non-league/hednesford-town/2023/05/31/hednesford-towns-short-term-future-set-to-be-secured
+  hemel-hempstead-town-fc:
+    ground: Vauxhall Road
+    owner_type: unknown
+    note: Hemel Hempstead Town moved into Hemel Hempstead United's Vauxhall Road ground in 1972; the land
+      was once part of Cox Pond Farm bought by Arthur Brock in the 1930s. No source found that says who
+      holds the freehold now.
+    as_of: 2024
+    confidence: low
+    sources:
+    - https://en.wikipedia.org/wiki/Hemel_Hempstead_Town_F.C.
+    - https://www.pitchero.com/clubs/hemelhempsteadtown/a/club-history-7576.html?page=3
+  hereford-united-fc:
+    ground: Edgar Street
+    owner_type: council
+    owner_name: Herefordshire Council
+    lease_end: 2070
+    lease_note: Long lease to 2070 confirmed 20 April 2024
+    since: 2024
+    note: Researched Hereford FC, the phoenix club formed in 2014 after Hereford United was wound up.
+      Herefordshire Council owns Edgar Street and granted a lease to 2070, alongside plans to rebuild
+      the Blackfriars End.
+    as_of: 2024
+    confidence: high
+    sources:
+    - https://www.herefordshire.gov.uk/news/article/1738/back-of-the-net-long-lease-confirmed-for-hereford-fc
+    - https://www.herefordshire.gov.uk/news/article/1674/herefordshire-council-to-offer-long-term-lease-to-hereford-fc-and-redevelop-blackfriars-end
+  horsham-fc:
+    ground: Hop Oast (Camping World Community Stadium)
+    owner_type: club
+    owner_name: Horsham FC
+    since: 2019
+    note: After losing Queen Street in 2008 the club bought land at Hop Oast next to Horsham Golf & Fitness,
+      funded by selling land at the Holbrook Club to Croudace Homes, and opened its new ground in 2019.
+    as_of: 2019
+    confidence: medium
+    sources:
+    - https://en.wikipedia.org/wiki/Horsham_F.C.
+    - https://www.bognor.co.uk/news/fears-for-future-of-holbrook-club-after-lease-row-1227861
+  kings-lynn-town-fc:
+    ground: The Walks
+    owner_type: council
+    owner_name: Borough Council of King's Lynn and West Norfolk
+    lease_end: 2035
+    lease_note: 25-year lease from 1 February 2010 granted to Buster Chapman's new club; rent set at 2%
+      of gross receipts
+    since: 2010
+    note: After King's Lynn FC folded in 2009, the council granted a 25-year lease on the council-owned
+      Walks to the new club (Lynn FC, now King's Lynn Town) from February 2010. No later change of ownership
+      was found.
+    as_of: 2010
+    confidence: medium
+    sources:
+    - https://www.pinkun.com/news/22712143.lease-means-walks-work-can-now-get-way/
+    - https://www.wisbechstandard.co.uk/news/speedway-promoter-wins-lease-for-the-walks-in-king-s-5459566
+  macclesfield-town-fc:
+    ground: Moss Rose (Leasing.com Stadium)
+    owner_type: owner_company
+    owner_name: Robert Smethurst
+    since: 2020
+    note: Researched phoenix club Macclesfield FC. After Macclesfield Town was wound up in September 2020,
+      local businessman Robert Smethurst bought Moss Rose for about £500,000 from the liquidators and
+      set up Macclesfield FC to play there; reports say Smethurst bought it, but it is not confirmed whether
+      title sits with him, a separate company or the club company.
+    as_of: 2021
+    confidence: low
+    sources:
+    - https://en.wikipedia.org/wiki/Macclesfield_F.C.
+    - https://www.insideworldfootball.com/2020/10/14/macclesfield-not-smethurst-buys-assets-savage-joins-board/
+    - https://www.christie.com/news-resources/press-releases/christie-co-advise-on-the-sale-of-macclesfield-town-football-club/
+  maidenhead-united-fc:
+    ground: York Road
+    owner_type: club
+    owner_name: Maidenhead United FC
+    note: Maidenhead United own York Road, their home since 1871. The club bought land at Braywick Park
+      from the Royal Borough of Windsor and Maidenhead in 2022 for a new stadium; after a 2023 refusal,
+      the council began consultation in March 2026 on leasing up to 6.13 acres at Braywick to the club.
+    as_of: 2026
+    confidence: medium
+    sources:
+    - https://en.wikipedia.org/wiki/York_Road_(Maidenhead)
+    - https://www.rbwm.gov.uk/news/2026/royal-borough-kicks-consideration-future-maidenhead-united-relocation-plans
+  maidstone-united-fc:
+    ground: Gallagher Stadium
+    owner_type: owner_company
+    owner_name: Maidstone United Ground Ltd (Terry Casey and Oliver Ash)
+    since: 2012
+    note: Owners Terry Casey and Oliver Ash bought the freehold from the MoD and opened the stadium in
+      2012. A ground company is listed as owner, and the owners have said they could sell the club while
+      keeping the freehold, which suggests the ground sits outside the club company; a proposed sale to
+      Alan Manchett fell through.
+    as_of: 2023
+    confidence: low
+    sources:
+    - https://www.kentonline.co.uk/maidstone/sport/grounds-for-celebration-270237/
+    - https://en.wikipedia.org/wiki/Gallagher_Stadium
+    - https://www.kentonline.co.uk/maidstone/sport/stones-takeover-collapses-280951/
+  marine-fc:
+    ground: Rossett Park (Marine Travel Arena)
+    owner_type: club
+    owner_name: Marine AFC
+    note: Stadium references list Marine AFC as owner of Rossett Park, its home since 1904. In 2025 the
+      club unveiled plans for a new stadium in Kirkby (Knowsley) as part of a housing scheme; tenure of
+      Rossett Park not confirmed from a primary source.
+    as_of: 2025
+    confidence: medium
+    sources:
+    - https://en.wikipedia.org/wiki/Marine_A.F.C.
+    - https://stadiumdb.com/news/2025/02/england_marine_fc_unveils_ambitious_plans_for_new_stadium
+  merthyr-tydfil-fc:
+    ground: Penydarren Park
+    owner_type: council
+    owner_name: Merthyr Tydfil County Borough Council
+    lease_note: Club operates the ground; lease terms not found
+    note: Researched phoenix club Merthyr Town (Merthyr Tydfil FC was dissolved in 2010). Penydarren Park
+      is owned by Merthyr Tydfil County Borough Council and operated by Merthyr Town; a 3G pitch was added
+      in 2014 with community fund money.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://en.wikipedia.org/wiki/Penydarren_Park
+    - https://www.nonleaguegrounds.com/regions/wales/penydarren-park
+  morecambe-fc:
+    ground: Mazuma Mobile Stadium (Globe Arena)
+    owner_type: club
+    owner_name: Morecambe FC (majority owner Panjab Warriors since 2025)
+    since: 2022
+    note: The club built the Globe Arena in 2010 and put it in a separate company that later went into
+      administration; on 19 August 2022 the club completed a land purchase with a balance owed to Ascot
+      & Riley over five years, secured by a legal charge. Bond Group sold the club to Panjab Warriors
+      in August 2025 after the club was briefly suspended by the National League.
+    as_of: 2025
+    confidence: medium
+    sources:
+    - https://www.beyond.radio/news/local-sport/morecambe-co-chairman-addresses-speculation-about-stadium-land-ownership-and-transfers/
+    - https://www.itv.com/news/granada/2025-08-14/deal-reached-to-sell-morecambe-fc
+    - https://en.wikipedia.org/wiki/Morecambe_F.C._financial_crisis
+  oxford-city-fc:
+    ground: Court Place Farm, Marsh Lane (RAW Charging Stadium)
+    owner_type: council
+    owner_name: Oxford City Council
+    lease_note: Lease of the football ground from the council
+    since: 1993
+    note: The club has played at Court Place Farm since 1993 on council-owned land; council papers from
+      2008 describe the site as council-owned with a lease to the club, and a 2017 partnership added Oxford
+      United's use of the stadium.
+    as_of: 2017
+    confidence: medium
+    sources:
+    - https://mycouncil.oxford.gov.uk/Data/City Executive Board (became Cabinet on 13 May 2019)/200811261700/Agenda/78791Item20.pdf
+    - https://www.oufc.co.uk/news/2017/january/oxford-united-oxford-city-and-city-council-agree-new-partnership
+  radcliffe-fc:
+    ground: Stainton Park
+    owner_type: unknown
+    since: 1970
+    note: The club has played at Stainton Park (Red Bank, Pilkington Road) since 1970, after leaving land
+      leased from the Earl of Wilton. Two searches found no source on who holds the freehold today.
+    as_of: 2024
+    confidence: low
+    sources:
+    - https://en.wikipedia.org/wiki/Stainton_Park
+  salisbury-city-fc:
+    ground: Raymond McEnhill Stadium
+    owner_type: landlord
+    owner_name: Estate (trustees) of Raymond McEnhill
+    lease_note: Lease taken over by Salisbury FC in early 2015; term not found
+    since: 2015
+    note: Researched phoenix club Salisbury FC (Salisbury City was dissolved in 2014). The stadium is
+      owned by the estate of former chairman Raymond McEnhill, which had proposed selling the land for
+      development before granting the new club a lease in 2015.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://en.wikipedia.org/wiki/Raymond_McEnhill_Stadium
+    - https://salisburyfc.co.uk/internal/ray-mac-stadium
+  scarborough-fc:
+    ground: Scarborough Sports Village (Flamingo Land Stadium)
+    owner_type: council
+    owner_name: North Yorkshire Council (formerly Scarborough Borough Council)
+    lease_note: Club uses the council stadium; site run for the council by Everyone Active until management
+      returns to the council in June 2027
+    since: 2017
+    note: Researched Scarborough Athletic, the phoenix of Scarborough FC (wound up 2007); the McCain Stadium
+      is gone. Since 2017 they play at the council-owned Scarborough Sports Village.
+    as_of: 2025
+    confidence: high
+    sources:
+    - https://edemocracy.northyorks.gov.uk/documents/s53612/Replacement of the Community Football Pitch
+      - Scarborough Sports Village.html?CT=2
+    - https://en.wikipedia.org/wiki/Scarborough_Sports_Village
+  slough-town-fc:
+    ground: Arbour Park
+    owner_type: council
+    owner_name: Slough Borough Council
+    lease_end: 2074
+    lease_note: Revised 50-year lease to May 2074, with the club taking over management of the stadium
+    since: 2024
+    note: The council built Arbour Park, home since 2016 after 14 homeless years; in 2024 the club secured
+      a new 50-year lease and took over running the venue.
+    as_of: 2024
+    confidence: high
+    sources:
+    - https://www.sloughobserver.co.uk/news/24267283.slough-town-football-club-secures-future-50-year-lease
+    - https://www.sloughtownfc.com/article/3262/Club-secures-future-with-50-year-lease-at-Arbour-Park
+  south-shields-fc:
+    ground: Mariners Park
+    owner_type: unknown
+    owner_name: Bought in 2015 by Geoff Thompson's regime from John Rundle; holding entity (club or Thompson)
+      not confirmed
+    since: 2015
+    note: The club was homeless from 2013 after its Filtrona Park lease ended; in 2015 new chairman Geoff
+      Thompson bought the ground from John Rundle and renamed it Mariners Park. An ORY Investment-led
+      consortium took a majority stake from 29 May 2026 with Thompson staying as chairman and shareholder;
+      no source says whether the ground sits in the club company or with Thompson.
+    as_of: 2026
+    confidence: low
+    sources:
+    - https://en.wikipedia.org/wiki/South_Shields_F.C.
+    - https://www.southshieldsfc.co.uk/south-shields-fc-announces-completion-of-majority-stake-acquisition-by-international-consortium/
+  southport-fc:
+    ground: Haig Avenue
+    owner_type: council
+    owner_name: Sefton Council
+    lease_note: Long lease from the council; term not found
+    since: 1919
+    note: Sefton Council holds the freehold of Haig Avenue and Southport FC is a long leaseholder. The
+      arrangement dates from 1919, when the Southport Education Committee took over the lease and granted
+      one to the club.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://en.wikipedia.org/wiki/Haig_Avenue
+    - https://www.southportcentral.co.uk/club-history/grounds/ash-lane-haig-avenue/
+  spalding-united-fc:
+    ground: Sir Halley Stewart Field
+    owner_type: council
+    owner_name: South Holland District Council as trustee of the Halley Stewart Playing Field Trust
+    lease_note: 25-year lease agreed with the trustee (start year not confirmed)
+    note: The field was gifted to the town in 1951 for community use and is held in a charitable trust
+      whose sole trustee is South Holland District Council. Spalding United agreed a 25-year lease so
+      they can access FA funding.
+    as_of: 2024
+    confidence: high
+    sources:
+    - https://www.sholland.gov.uk/article/27187/A-new-lease-of-life-Spalding-United-FC-agree-25-year-deal-for-Sir-Halley-Stewart-Field
+    - https://www.lincsonline.co.uk/spalding/news/lease-for-playing-field-could-secure-future-of-site-and-9320466
+  spennymoor-town-fc:
+    ground: The Brewery Field
+    owner_type: council
+    owner_name: Local council (Durham County Council or Spennymoor Town Council - not confirmed which)
+    lease_end: 2032
+    lease_note: 25-year lease agreed 25 September 2007
+    since: 2007
+    note: The council evicted the previous club from the ground in 2007, then agreed a new 25-year lease.
+      Sources do not say which council holds the freehold.
+    as_of: 2018
+    confidence: low
+    sources:
+    - https://en.wikipedia.org/wiki/Spennymoor_Town_F.C.
+    - https://spennymoortownfc.co.uk/spennymoor-town-fc-club-history/
+  tonbridge-angels-fc:
+    ground: Longmead Stadium
+    owner_type: council
+    owner_name: Tonbridge and Malling Borough Council
+    lease_end: 2034
+    lease_note: Reversionary lease granted in 2022 extending tenure to 2034; talks on a longer lease continuing
+    since: 1980
+    note: The council built Longmead in 1980 and gave it to the club as compensation after redeveloping
+      the old Angel Ground. In 2022 the council extended the club's lease to 2034 alongside approval for
+      a 3G pitch.
+    as_of: 2022
+    confidence: high
+    sources:
+    - https://en.wikipedia.org/wiki/Longmead_Stadium
+    - https://kentishfootball.co.uk/news/tonbridgeangels020422
+  torquay-united-fc:
+    ground: Plainmoor
+    owner_type: council
+    owner_name: Torbay Council
+    lease_end: 2081
+    lease_note: Lease runs to 2081; talks in 2025 to reset it to 125 years
+    note: Torbay Council owns the Plainmoor freehold and leases it to Torquay United; a planned club purchase
+      of the freehold was postponed in 2017 and the council says the freehold will stay in its ownership.
+      In 2025 the club reported advanced talks to reset the lease to 125 years.
+    as_of: 2025
+    confidence: high
+    sources:
+    - https://www.torbay.gov.uk/news/pr7600/
+    - https://torquayunited.com/?p=97142
+    - https://itv.com/news/westcountry/2017-06-28/purchasing-of-plainmoor-freehold-postponed
+  truro-city-fc:
+    ground: Truro Sports Hub, Langarth (Truro City Stadium)
+    owner_type: council
+    owner_name: Cornwall Council (via its development company Treveth)
+    lease_note: Short lease of the publicly owned hub, reported as being extended for a second year
+    since: 2024
+    note: Truro City lost Treyew Road when it was sold for a Lidl and played in exile at Plymouth Parkway.
+      Cornwall Council's company Treveth built the Langarth sports hub and leases it to the club on short
+      terms.
+    as_of: 2025
+    confidence: medium
+    sources:
+    - https://cornwallreports.co.uk/truro-city-in-line-to-get-a-second-year-at-least-at-the-langarth-mini-stadium/
+    - https://www.cornish-times.co.uk/sport/truro-city-fc-to-return-home-as-sports-hub-is-approved-666388
+  walton-and-hersham-fc:
+    ground: Elmbridge Xcel Sports Hub
+    owner_type: council
+    owner_name: Elmbridge Borough Council
+    note: The council built the sports hub next to the Xcel Leisure Centre, funded by selling the old
+      Stompond Lane ground, for Walton & Hersham and Walton Casuals; it is run by Places Leisure for the
+      council.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://www.elmbridge.gov.uk/sports-and-health/sports-venues/xcel-leisure-complex-and-sports-hub
+    - https://en.wikipedia.org/wiki/Walton_%26_Hersham_F.C.
+  weston-super-mare-fc:
+    ground: Woodspring Stadium (The Optima Stadium)
+    owner_type: club
+    owner_name: Weston-super-Mare Association Football Club Ltd
+    since: 2004
+    note: The club held Woodspring Park on a council lease extended to 99 years, then sold that land to
+      Barratt, splitting proceeds 50/50 with the council, and moved in 2004 to the new Woodspring Stadium,
+      which the club owns. Freehold of the new site not confirmed from a primary source.
+    as_of: 2021
+    confidence: medium
+    sources:
+    - https://en.wikipedia.org/wiki/Weston-super-Mare_A.F.C.
+    - https://southern-football-league.co.uk/news/127731/Weston-super-Mare-Announce-Major-Redevelopment-Plans
+  worksop-town-fc:
+    ground: Sandy Lane (Windsor Food Park / Windsor Foodservice Stadium)
+    owner_type: council
+    owner_name: Bassetlaw District Council
+    lease_note: Council freehold; head lease held by Peter Whitehead (bought 2011, owner of Worksop Parramore);
+      Worksop Town were sub-tenants on short leases (12 months plus option of 2 years in 2016)
+    since: 2011
+    note: Worksop Town were evicted from Sandy Lane in 2008 by leaseholder 1861 Leisure and played elsewhere
+      until Peter Whitehead bought the lease in 2011 and let them return. The council owns the freehold
+      and said it could not justify buying back the lease; no newer source found on the current head lease.
+    as_of: 2016
+    confidence: low
+    sources:
+    - https://en.wikipedia.org/wiki/Worksop_Town_F.C.
+    - https://thenonleaguefootballpaper.com/?p=15450
+    - https://WorksopGuardian.co.uk/sport/football/worksop-town-agree-deal-to-remain-at-sandy-lane-785278
+  afc-whyteleafe-fc:
+    ground: Flamingo Park, Chislehurst (groundshare, 2026-27); previously Church Road
+    owner_type: other_club
+    owner_name: Cray Wanderers FC
+    lease_end: 2027
+    lease_note: Groundshare for the 2026-27 season
+    since: 2026
+    note: Church Road was bought by Irama Sports in 2021, which ended the old Whyteleafe FC's lease; phoenix
+      AFC Whyteleafe then had a four-year deal there. After promotion to Step 3 they groundshare at Cray
+      Wanderers' own Flamingo Park for 2026-27.
+    as_of: 2026
+    confidence: high
+    sources:
+    - https://www.cray-wanderers.com/?p=301877
+    - https://isthmian.co.uk/articles/leafe-move-to-flamingo-park
+    - https://insidecroydon.com/2021/02/26/singapore-based-firm-buys-up-whyteleafes-football-ground/
+  alfreton-town-fc:
+    ground: North Street (Impact Arena)
+    owner_type: club
+    owner_name: Alfreton Town FC
+    note: The council provided the ground in 1959; the club later bought the freehold from its landlord,
+      Amber Valley Borough Council, after lengthy negotiations.
+    as_of: 2015
+    confidence: medium
+    sources:
+    - https://www.derbyshiretimes.co.uk/sport/football/alfreton-town-purchase-freehold-of-stadium-2238188
+    - https://en.wikipedia.org/wiki/Alfreton_Town_F.C.
+  alvechurch-fc:
+    ground: Lye Meadow
+    owner_type: landlord
+    owner_name: Private landlord (name not found)
+    lease_note: Year-to-year tenancy; the club owns the car park and gets a 20% share of any sale profit
+    since: 1957
+    note: The club are tenants at Lye Meadow, owning only the car park. Bromsgrove planners backed 25
+      homes on Lye Meadow with a seven-figure contribution to a new stadium at The Hayes; the club rejected
+      a groundshare and stays at Lye Meadow for one final season in 2026-27.
+    as_of: 2026
+    confidence: medium
+    sources:
+    - https://redditchstandard.co.uk/sport/football-alvechurch-to-stay-at-lye-meadow-for-one-more-season/
+    - https://redditchstandard.co.uk/sport/football-alvechurch-set-to-move-from-lye-meadow-to-the-hayes-after-verdict-reached-on-planning-application/
+    - https://redditchstandard.co.uk/news/alvechurch-fc-face-uncertain-future-as-wait-to-receive-funding-for-1-6-million-site-rumbles-on-36322/
+  anstey-nomads-fc:
+    ground: Cropston Road (Callingtons Community Arena)
+    owner_type: unknown
+    note: Anstey Nomads have played at Cropston Road since forming in 1946 and received Football Stadia
+      Improvement Fund grants for it. No source found that says who holds the freehold.
+    as_of: 2025
+    confidence: low
+    sources:
+    - https://en.wikipedia.org/wiki/Anstey_Nomads_F.C.
+  ap-leamington-fc:
+    ground: New Windmill Ground, Harbury Lane
+    owner_type: club
+    owner_name: Leamington Football Club
+    since: 2000
+    note: Researched Leamington FC, the re-formed successor of AP Leamington (the AP link ended in 1985).
+      The club bought six acres on Harbury Lane from a local farmer for £30,000 and has played at the
+      New Windmill since 2000; it also bought land at Europa Way in 2019 for a possible new ground.
+    as_of: 2025
+    confidence: medium
+    sources:
+    - https://leamingtonfc.co.uk/index.php/club/history/new-windmill-ground
+    - https://en.wikipedia.org/wiki/Leamington_F.C.
+  ashton-united-fc:
+    ground: Hurst Cross
+    owner_type: council
+    owner_name: Tameside Metropolitan Borough Council
+    lease_end: 2049
+    lease_note: 30-year lease signed after four and a half years of talks, running to 2049
+    since: 2019
+    note: The club leases Hurst Cross from Tameside council; a new 30-year lease secured the ground to
+      2049.
+    as_of: 2023
+    confidence: high
+    sources:
+    - https://thenationalleague.org.uk/ashton-get-the-ground-news-they-desperately-wanted-55254
+    - https://en.wikipedia.org/wiki/Ashton_United_F.C.
+  aveley-fc:
+    ground: Parkside
+    owner_type: club
+    owner_name: Aveley Football Club
+    since: 2017
+    note: The club sold its old Mill Field ground to developers to fund the move to the purpose-built
+      Parkside, which opened in 2016-17. Reference sites list the club as owner; freehold not confirmed
+      from a primary source.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://en.wikipedia.org/wiki/Aveley_F.C.
+    - https://footballgroundguide.com/leagues/conference/conference-south/aveley-fc-parkside
+  avro-fc:
+    ground: Whitebank Stadium
+    owner_type: council
+    owner_name: Oldham Council
+    lease_note: Lease from the council; term not found
+    since: 2017
+    note: Avro moved to the council-owned Whitebank Stadium in 2017 after Oldham Council earmarked their
+      old ground for housing, and were granted a lease; the ground was redeveloped with a 3G pitch and
+      floodlights and a permanent expansion was later approved.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://en.wikipedia.org/wiki/Whitebank_Stadium
+    - https://oldham-chronicle.co.uk/news-features/8/news-headlines/99729/avro-fc-have-role-in-whitebank-revamp
+    - https://www.oldham-chronicle.co.uk/news-features/139/main-news/159516/avro-football-stadium-greenlit-for-permanent-expansion
+  bamber-bridge-fc:
+    ground: Sir Tom Finney Stadium (formerly Irongate)
+    owner_type: club
+    owner_name: Bamber Bridge FC (unincorporated members' club)
+    since: 1983
+    note: The club bought derelict land in 1983 with help from South Ribble council and the Sports Council
+      and opened Irongate in 1987, renamed after Sir Tom Finney in 2014. Local reporting says the club
+      owns its ground and clubhouse; as an unincorporated club, title would be held by trustees for the
+      members.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://clubs.footballwebpages.co.uk/BamberBridge/History
+    - https://www.blogpreston.co.uk/2024/09/the-story-of-bamber-bridge-fc-and-its-place-in-the-community/amp/
+  banbury-united-fc:
+    ground: Spencer Stadium
+    owner_type: landlord
+    owner_name: Tilstone Holding Ltd (subsidiary of Warehouse REIT)
+    lease_note: Rolling twelve-month lease for many years
+    note: The club has played at Station Approach since 1934 on rolling annual leases from a property
+      company; talks on a sale or long lease were paused in 2025 when the landlord's parent, Warehouse
+      REIT, became subject to a takeover.
+    as_of: 2025
+    confidence: high
+    sources:
+    - https://banburyfm.com/news/puritans-plans-temporarily-on-hold-until-ground-discussions-can-resume/
+    - https://www.banburyunitedfc.co.uk/news/banbury-united-provides-positive-update-to-members-2913888.html
+  basingstoke-town-fc:
+    ground: Winklebury Football Complex
+    owner_type: council
+    owner_name: Basingstoke and Deane Borough Council
+    lease_note: Council cabinet proposal for Hampshire FA to surrender its lease and the club to get a
+      new long-term lease directly, with Hampshire FA subleasing part of the site; completion not confirmed
+    note: After eviction from the Camrose in 2019 and a groundshare at Winchester, the reformed Basingstoke
+      Town Community FC returned to the council-owned Winklebury complex, then leased to Hampshire FA.
+      The council has since moved to grant the club its own long-term lease.
+    as_of: 2025
+    confidence: high
+    sources:
+    - https://ukpropertyforums.com/deal-set-to-kick-off-new-chapter-for-basingstoke-town/
+    - https://basingstoke.moderngov.co.uk/documents/s11846/Transfer of Winklebury Football Stadium Report.pdf
+  bath-city-fc:
+    ground: Twerton Park
+    owner_type: club
+    owner_name: Bath City FC (majority-owned by Bath City Supporters' Society)
+    since: 1932
+    note: Bath City have played at Twerton Park since 1932; the club became community-owned in 2017 when
+      the Supporters' Society bought a majority of shares, and reports describe Twerton Park as community-owned
+      with it. The club signed an MoU with Greenacre Capital to redevelop the ground with student housing;
+      freehold title not confirmed by a primary source.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://en.wikipedia.org/wiki/Bath_City_F.C.
+    - https://www.bathchronicle.co.uk/sport/football/bath-city-football-club-completes-51758
+    - https://www.bathcityfc.com/bath-city-fc-signs-mou-greenacre-capital-revitalise-twerton-park/
+  berkhamsted-fc:
+    ground: Broadwater
+    owner_type: landlord
+    owner_name: Berkhamsted Sports Grounds Charitable Association (BSGCA)
+    lease_note: Charitable lease to the company that runs the club; term not found
+    disputed: true
+    note: The freeholder BSGCA proposed in December 2020 to sell Broadwater for housing with developer
+      Thakeham to fund a new sports hub at Bourne End (Bulbourne Cross); the club campaigned to stay and
+      sought Asset of Community Value status. No final outcome was found; the club still plays at Broadwater
+      in 2025-26.
+    as_of: 2025
+    confidence: medium
+    sources:
+    - https://www.propertyinvestortoday.co.uk/breaking-news/2021/07/update-the-latest-in-berkhamsted-fcs-fight-to-stay-at-its-historic-home/
+    - https://en.wikipedia.org/wiki/Berkhamsted_F.C.
+    - https://www.berkhamstedraiders.com/?p=2216
+  bishops-stortford-fc:
+    ground: Woodside Park (ProKit UK Stadium)
+    owner_type: unknown
+    since: 1999
+    note: The club sold its Rhodes Avenue ground for housing in the mid-1990s and moved to the new Woodside
+      Park in 1999. Three searches did not establish who holds the freehold.
+    as_of: 2024
+    confidence: low
+    sources:
+    - https://en.wikipedia.org/wiki/Bishop%27s_Stortford_F.C.
+    - https://www.stortfordhistory.co.uk/guide10/football-club
+  bracknell-town-fc:
+    ground: Bottom Meadow (The SB Stadium), Sandhurst Memorial Park
+    owner_type: council
+    owner_name: Public land in Sandhurst Memorial Park (freeholder believed to be Sandhurst Town Council;
+      not confirmed); lease/operation by SB Group
+    lease_note: Ground was sublet from Sandhurst Town FC; SB Group (Kayne Steinborn-Busse) announced a
+      lease in 2023 and regained operational control for 2025-26
+    since: 2021
+    note: Bracknell Town left Larges Lane (home since 1933) in June 2021 to groundshare with Sandhurst
+      Town at Bottom Meadow, after SB Group spent about £2m upgrading it; the club keeps its headquarters
+      at Larges Lane. Bottom Meadow is part of Sandhurst Memorial Park and was built in 1997 with Bracknell
+      Forest and Sandhurst Town Council support; the freeholder was not confirmed.
+    as_of: 2025
+    confidence: low
+    sources:
+    - https://footballinberkshire.co.uk/news/club-news/53231/confirmation-bracknell-town-are-leaving-larges-lane/
+    - https://en.wikipedia.org/wiki/Sandhurst_Town_F.C.
+    - https://footballinberkshire.co.uk/features/opinion/76234/on-the-wrightside-bracknell-town-putting-down-roots-as-binfield-reveal-new-stadium-deal/
+  brentwood-town-fc:
+    ground: Brentwood Centre Arena
+    owner_type: council
+    owner_name: Brentwood Borough Council
+    lease_note: Tenant of the council; terms not found
+    since: 1993
+    note: Brentwood Town moved to the council's Brentwood Centre site in October 1993 with council help;
+      reports describe council and club as landlord and tenant in talks over a football hub there. A 3G
+      pitch was laid in 2024.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://en.wikipedia.org/wiki/Brentwood_Town_F.C.
+    - https://stevenrlarson.ghost.is/brentwood-town-and-councils-football-blueprint/
+  bromsgrove-rovers-fc:
+    ground: Victoria Ground
+    owner_type: council
+    owner_name: Bromsgrove District Council
+    lease_note: Lease from 2010; cabinet approved replacing it with a 50-year lease (completion not confirmed)
+    since: 2010
+    note: Researched Bromsgrove Sporting, who took the council's lease of the Victoria Ground in 2010
+      and gained sole use after Bromsgrove Rovers were expelled and dissolved that year. A council task
+      group later recommended, and cabinet approved, a 50-year lease so the club can access grants.
+    as_of: 2023
+    confidence: high
+    sources:
+    - https://moderngovwebpublic.bromsgrove.gov.uk/documents/s43732/Cabinet Response to Bromsgrove Sporting
+      Task Group.pdf
+    - https://en.wikipedia.org/wiki/Bromsgrove_Sporting_F.C.
+  burgess-hill-town-fc:
+    ground: Leylands Park
+    owner_type: council
+    owner_name: Mid Sussex District Council
+    lease_note: Historically only five-year leases because the site was earmarked for housing; club sought
+      a longer lease
+    since: 1969
+    note: The club moved to Leylands Park in 1969 with Burgess Hill Town Council's help; Mid Sussex District
+      Council is the landlord. Current lease length not confirmed.
+    as_of: 2020
+    confidence: medium
+    sources:
+    - https://www.sussexexpress.co.uk/sport/football/burgess-hill-town-submit-plans-for-ground-upgrades-796165
+    - https://en.wikipedia.org/wiki/Burgess_Hill_Town_F.C.
+  bury-fc:
+    ground: Gigg Lane
+    owner_type: club
+    owner_name: Gigg Lane Stadium Ltd (within the fan-owned Bury FC society group)
+    since: 2022
+    note: After the original Bury FC was expelled from the EFL in 2019, the fans' group Est.1885 bought
+      Gigg Lane from the administrator in February 2022 (with £1m government help) through Gigg Lane Stadium
+      Ltd. That society merged with the Bury AFC society in May 2023 and the club returned to Gigg Lane
+      as Bury FC in 2023-24.
+    as_of: 2023
+    confidence: high
+    sources:
+    - https://www.placenorthwest.co.uk/?p=371618
+    - https://nwcfl.com/news-articles.php?id=9161
+    - https://en.wikipedia.org/wiki/Bury_F.C.
+  bury-town-fc:
+    ground: Ram Meadow
+    owner_type: council
+    owner_name: West Suffolk Council
+    lease_note: 30-year lease after a year of negotiations (signing year not confirmed, likely 2024);
+      previously short-term agreements since 2010
+    note: Ram Meadow, Bury Town's home since 1978, is council-owned. After years on short-term agreements,
+      the club signed a new 30-year lease with West Suffolk Council, making it eligible for more grant
+      funding.
+    as_of: 2024
+    confidence: high
+    sources:
+    - https://www.burymercury.co.uk/news/24143549.bury-town-fc-signs-new-30-year-lease-ram-meadow-ground/
+    - https://democracy.westsuffolk.gov.uk/documents/s14073/CAB.SE.16.020 Bury Town Football Club Clubhouse
+      Investment.pdf
+  carshalton-athletic-fc:
+    ground: War Memorial Sports Ground, Colston Avenue
+    owner_type: council
+    owner_name: London Borough of Sutton
+    lease_note: Lease from the council, varied to allow funding applications; term not found
+    note: Carshalton Athletic have played at Colston Avenue since 1920-21 and lease it from Sutton Council.
+      The council agreed to vary the lease so the club could apply for funding, for example for a 3G pitch.
+    as_of: 2020
+    confidence: medium
+    sources:
+    - https://www.isthmian.co.uk/council-backs-athletics-3g-dream-16708
+    - https://en.wikipedia.org/wiki/Carshalton_Athletic_F.C.
+  chatham-town-fc:
+    ground: Maidstone Road (The Bauvill Stadium)
+    owner_type: council
+    owner_name: Medway Council
+    note: Medway Council lists the Maidstone Road Sports Ground in its directory and sources describe
+      the ground as council-owned; it was originally private land owned by George Winch.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://www.medway.gov.uk/directory_record/695/maidstone_road_sports_ground
+    - https://en.wikipedia.org/wiki/Chatham_Town_F.C.
+  chertsey-town-fc:
+    ground: Alwyns Lane
+    owner_type: unknown
+    since: 1926
+    note: The club has played at Alwyns Lane since 1926 on land donated by Sir Edward Stern as a football
+      ground for the parish's premier club. Two searches found no source on who holds the freehold today.
+    as_of: 2024
+    confidence: low
+    sources:
+    - https://en.wikipedia.org/wiki/Chertsey_Town_F.C.
+    - https://www.nonleaguegrounds.com/clubs/chertsey-town
+  cheshunt-fc:
+    ground: Theobalds Lane (The Stadium)
+    owner_type: council
+    owner_name: Hertfordshire County Council (freeholder); Broxbourne Borough Council (long leaseholder)
+    lease_note: Commercial lease held since 2011 by Cheshunt Sports & Leisure Ltd from Broxbourne Council;
+      term not found
+    since: 2011
+    note: Hertfordshire County Council holds the freehold and Broxbourne Council the long lease; the club's
+      operating company has held the commercial lease since 2011. Planning for a Cheshunt Sports Village
+      was won on appeal in 2021, but no deal on the land had been agreed with either council.
+    as_of: 2021
+    confidence: medium
+    sources:
+    - https://www.broxbourne.gov.uk/downloads/file/1622/cd1-2-covering-letter
+    - https://en.wikipedia.org/wiki/Cheshunt_F.C.
+    - https://www.isthmian.co.uk/ambers-get-the-green-light-67626
+  chichester-city-fc:
+    ground: Oaklands Park
+    owner_type: council
+    owner_name: Chichester District Council
+    lease_note: Council ended the club's lease over health and safety and maintenance breaches but agreed
+      the club can keep playing there; current basis of occupation not found
+    note: Chichester District Council owns Oaklands Park and has had long disputes with the club over
+      a lease, including refusing one around 2011-12 and later ending the lease. The club still plays
+      there; the date of the cancellation report was not confirmed.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://www.sussexexpress.co.uk/news/chichester-city-fcs-lease-at-oaklands-park-is-cancelled-834283
+    - https://en.wikipedia.org/wiki/Oaklands_Park,_Chichester
+  chippenham-town-fc:
+    ground: Hardenhuish Park
+    owner_type: unknown
+    lease_note: Club is a tenant; 2017-18 Wiltshire Council papers refer to a new lease from its landlord
+      or a possible purchase
+    note: Wiltshire Council papers show the club leases its ground from a landlord they do not name (Wiltshire
+      owns only adjacent car-park land, transferred to the club in 2017-18), and mention a possible purchase
+      of the ground. Three searches did not identify the landlord.
+    as_of: 2018
+    confidence: low
+    sources:
+    - https://cms.wiltshire.gov.uk/documents/s147430/Report_CAT_FootballClub.pdf
+    - https://en.wikipedia.org/wiki/Chippenham_Town_F.C.
+  cleethorpes-town-fc:
+    ground: The Linden Club
+    owner_type: unknown
+    since: 2011
+    note: The club took over the Linden Homes sports and social club in 2011 when it faced closure, and
+      later returned there from Bradley with new floodlights and stands. Sources say it 'took over' the
+      club but not whether it bought the freehold or holds a lease.
+    as_of: 2019
+    confidence: low
+    sources:
+    - https://en.wikipedia.org/wiki/Cleethorpes_Town_F.C.
+    - https://www.grimsbytelegraph.co.uk/news/cleethorpes-town-fc-unveil-new-1708588
+  cray-wanderers-fc:
+    ground: Flamingo Park
+    owner_type: club
+    owner_name: Cray Wanderers FC
+    since: 2024
+    note: Cray signed a conditional contract in 2014 to buy the Flamingo Park Sports Centre in Chislehurst,
+      won planning approval from the Mayor of London in 2018, and moved in for 2024-25 after decades of
+      groundsharing. Reports describe it as the club's own ground; completion of the freehold purchase
+      not confirmed by a primary source.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://greenwichwire.co.uk/2018/11/27/cray-wanderers-londons-oldest-football-club-finally-gets-go-ahead-for-flamingo-park-ground/
+    - https://footballwritingblog.substack.com/p/flamingo-park-open-for-business
+    - https://kentishfootball.co.uk/news/craywanderers110823
+  curzon-ashton-fc:
+    ground: Tameside Stadium
+    owner_type: council
+    owner_name: Tameside Metropolitan Borough Council
+    lease_note: Terms not found
+    since: 2005
+    note: Tameside MBC built the £4m community stadium for Curzon Ashton, with a £500,000 Football Foundation
+      grant, and the club moved in from National Park in 2005. Sources describe it as council-built; no
+      lease details were found.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://stadiumdb.com/stadiums/eng/tameside_stadium
+    - https://en.wikipedia.org/wiki/Curzon_Ashton_F.C.
+  dartford-fc:
+    ground: Princes Park
+    owner_type: council
+    owner_name: Dartford Borough Council
+    lease_note: Long lease of the whole facility at £1 a year rent
+    since: 2006
+    note: The council built the £6.5m community stadium, opened in 2006, and owns it; from 2008 it handed
+      management to the club, which leases the whole site for £1 a year.
+    as_of: 2024
+    confidence: high
+    sources:
+    - https://kentishfootball.co.uk/news/councilhandcontrolofprincesparktodarts
+    - https://en.wikipedia.org/wiki/Dartford_F.C.
+  dulwich-hamlet-fc:
+    ground: Champion Hill
+    owner_type: landlord
+    owner_name: Meadow Partners (Meadow Residential LLP)
+    lease_note: Planned new 4,000-capacity stadium to be leased to the club for 125 years
+    since: 2014
+    note: Property firm Meadow bought the Champion Hill site in 2014; in 2018 a dispute saw the club locked
+      out and groundsharing at Tooting & Mitcham while Southwark Council threatened a compulsory purchase.
+      The club and Meadow later submitted a joint scheme, and in December 2025 Southwark approved the
+      land arrangements for a new stadium plus 219 homes, with the stadium leased to the club for 125
+      years.
+    as_of: 2025
+    confidence: high
+    sources:
+    - https://www.brixtonbuzz.com/2025/12/dulwich-hamlet-stadium-redevelopment-confirmed-by-southwark-council/
+    - https://stadiumdb.com/news/2025/06/england_next_stage_of_south_london_stadium_development_approved
+    - https://www.brixtonbuzz.com/2018/03/southwark-council-looks-to-buy-dulwich-hamlet-ground-freehold-as-meadow-residential-sink-to-new-depths/
+  eastbourne-borough-fc:
+    ground: Priory Lane
+    owner_type: council
+    owner_name: Eastbourne Borough Council
+    lease_note: Club leases the ground, part of the council-owned Langney Sports Club site; term not found
+    since: 1983
+    note: The club (formerly Langney Sports) leased a council playing field and built Priory Lane from
+      1983; the stadium sits within the council-owned Langney Sports Club site. The council later underwrote
+      funding for the club's 3G pitch through a step-in agreement.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://en.wikipedia.org/wiki/Priory_Lane
+    - https://www.nonleaguegrounds.com/regions/south-east/priory-lane
+  emley-fc:
+    ground: The Welfare Ground
+    owner_type: landlord
+    owner_name: Trustees of the Emley Moor Miners' Recreation Ground and Institute
+    since: 2005
+    note: Researched Emley AFC (AFC Emley 2005-2019), formed in 2005 after the old Emley AFC moved to
+      Wakefield. The Welfare Ground is managed by the trustees of the miners' recreation ground charity,
+      not by the club.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://en.wikipedia.org/wiki/Emley_A.F.C.
+    - https://www.nonleaguegrounds.com/regions/yorkshire-and-the-humber/welfare-ground
+  enfield-fc:
+    ground: Woodside Park, Bishop's Stortford (groundshare)
+    owner_type: other_club
+    owner_name: Bishop's Stortford FC (host club; freehold holder not established)
+    lease_note: Groundshare tenant
+    since: 2025
+    note: Enfield FC has no ground of its own; after groundsharing at Hertford Town's council-owned Hertingfordbury
+      Park, it groundshared at Bishop's Stortford's Woodside Park in 2025-26. The file's ground (Hertingfordbury
+      Park) appears out of date, and the 2026-27 arrangement was not confirmed.
+    as_of: 2025
+    confidence: low
+    sources:
+    - https://en.wikipedia.org/wiki/Enfield_F.C.
+    - https://en.wikipedia.org/wiki/Hertford_Town_F.C.
+  evesham-united-fc:
+    ground: Jubilee Stadium (The Spiers & Hartwell Stadium), Cheltenham Road
+    owner_type: council
+    owner_name: Wychavon District Council and Worcestershire County Council (reported)
+    since: 2012
+    note: The club sold its Common Road ground for housing in 2006, groundshared with Worcester City,
+      and opened the new Jubilee Stadium in 2012. A Pitchcare feature says the club maintains the pitches
+      on the site for Wychavon District Council and Worcestershire County Council, who own it; no lease
+      details found.
+    as_of: 2015
+    confidence: low
+    sources:
+    - https://www.pitchcare.com/blogs/news/dolphin-s-watch
+    - https://en.wikipedia.org/wiki/Evesham_United_F.C.
+  fc-united-of-manchester-fc:
+    ground: Broadhurst Park
+    owner_type: council
+    owner_name: Manchester City Council
+    lease_note: Lease from the council since the stadium opened in 2015; term not found
+    since: 2015
+    note: Broadhurst Park was given to Manchester City Council in 1920; the council leased part of it
+      to the supporter-owned club, which built the stadium in 2015. The club also owes the council a loan
+      of over £1m tied to the stadium, a constant financial strain.
+    as_of: 2025
+    confidence: high
+    sources:
+    - https://en.wikipedia.org/wiki/Broadhurst_Park
+    - https://fc-utd.co.uk/news-story/new-working-relationship-with-manchester-city-council
+  frome-town-fc:
+    ground: Badgers Hill
+    owner_type: council
+    owner_name: Frome Town Council
+    lease_note: Badgers Hill Ltd (Courtney Fong) holds a tenancy at will; planned long lease with option
+      to buy not completed
+    since: 2022
+    note: Frome Town Council bought Badgers Hill from Frome Town Holdings Ltd in 2022 and first leased
+      it to a community benefit society. In July 2025 it agreed a lease with option to buy to Badgers
+      Hill Ltd, removed that exclusivity in December 2025, and in April 2026 rejected both bids for lack
+      of proof of funds, leaving the ground's future unsettled.
+    as_of: 2026
+    confidence: high
+    sources:
+    - https://www.frometowncouncil.gov.uk/badgers-hill-site-now-owned-by-the-community-of-frome
+    - https://stadiumdb.com/news/2026/04/england_uncertain_future_of_badgers_hill_council_rejects_stadium_takeover_bids
+    - https://www.hellorayo.co.uk/greatest-hits/bristol/news/frome-town-council-removes-exclusive-lease-rights-for-badgers-hill
+  gainsborough-trinity-fc:
+    ground: The Northolme
+    owner_type: landlord
+    owner_name: Gainsborough Trinity Supporters' Club
+    note: The Northolme is owned by the Gainsborough Trinity Supporters' Club, a body separate from the
+      football club company.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://en.wikipedia.org/wiki/The_Northolme
+    - https://www.nonleaguegrounds.com/regions/east-midlands/northolme
+  gloucester-city-fc:
+    ground: Meadow Park
+    owner_type: owner_company
+    owner_name: Eamonn McGurk and Alex Petheram (club co-owners/co-chairmen)
+    since: 2020
+    note: Meadow Park was destroyed by floods in 2007; the club spent 13 years in exile before a £4m rebuild,
+      raised 3.5m, reopened in late 2020. Reference sources name co-chairmen Eamonn McGurk and Alex Petheram
+      as the stadium's owners rather than the club company; whether the ground would pass with the club
+      is not confirmed.
+    as_of: 2021
+    confidence: low
+    sources:
+    - https://en.wikipedia.org/wiki/Meadow_Park,_Gloucester
+    - https://www.punchline-gloucester.com/articles/aanews/gloucester-city-homecoming-scores-victory-all-round
+  gosport-borough-fc:
+    ground: Privett Park
+    owner_type: council
+    owner_name: Gosport Borough Council
+    lease_note: 30-year lease extension granted by the council (year not confirmed); rent reported as
+      £8,130 a year
+    note: Gosport Borough Council owns Privett Park and leases the enclosure to the club. The council
+      granted a 30-year lease extension, which drew calls for an investigation after it emerged the club
+      was behind on rent.
+    as_of: 2020
+    confidence: high
+    sources:
+    - https://thenonleaguefootballpaper.com/?p=17983
+    - https://www.portsmouth.co.uk/sport/football/gosport-borough-fc-has-winding-up-petition-dismissed-but-has-been-behind-with-rent-for-its-ground-1178271
+  guiseley-afc:
+    ground: Nethermoor Park
+    owner_type: unknown
+    note: Not established. Guiseley have played at Nethermoor since 1909 and have submitted phased ground
+      development plans to Leeds City Council, but no source seen states who holds the freehold.
+    as_of: 2024
+    confidence: low
+    sources:
+    - https://en.wikipedia.org/wiki/Nethermoor_Park
+    - https://guiseleyafc.co.uk/ground-development-application-in/
+  halesowen-town-fc:
+    ground: The Grove
+    owner_type: landlord
+    owner_name: The James Grove Recreation and Sports Ground Trust (registered charity 515715)
+    note: The ground, home since 1882, is held by a charitable trust for the use of the people of Halesowen
+      in perpetuity; the club is its occupier.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://en.wikipedia.org/wiki/Grove_Recreation_Ground
+    - https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/515715/full-print
+  hanwell-town-fc:
+    ground: Reynolds Field
+    owner_type: unknown
+    since: 1981
+    note: The club has played at Reynolds Field, Perivale (beside Perivale Park, London Borough of Ealing)
+      since 1981. Two searches found no source on who holds the freehold.
+    as_of: 2024
+    confidence: low
+    sources:
+    - https://en.wikipedia.org/wiki/Hanwell_Town_F.C.
+    - https://www.nonleaguegrounds.com/regions/london/reynolds-field
+  hanworth-villa-fc:
+    ground: Rectory Meadow
+    owner_type: council
+    owner_name: London Borough of Hounslow
+    lease_note: Club's terms of occupation not found
+    note: Rectory Meadow was bought for public open space by Middlesex County Council in 1946-48 and opened
+      as a King George V playing field in 1953; it is owned by the London Borough of Hounslow and protected
+      by Fields in Trust. The club's lease or licence terms were not found.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://londongardenstrust.org/conservation/inventory/site-record?ID=HOU039
+    - https://parksandgardens.org/places/rectory-meadow
+    - https://en.wikipedia.org/wiki/Hanworth_Villa_F.C.
+  havant-and-waterlooville-fc:
+    ground: Westleigh Park
+    owner_type: unknown
+    note: Not established. Westleigh Park was acquired by Havant Town in 1980 and opened in 1982; the
+      merged club has played there since 1998, but no source seen says whether the club, the council or
+      another party holds the freehold now.
+    as_of: 2024
+    confidence: low
+    sources:
+    - https://en.wikipedia.org/wiki/Havant_%26_Waterlooville_F.C.
+    - https://gloverscast.co.uk/ciderspace-away-travel-guide/havant-waterlooville-fc/
+  hitchin-town-fc:
+    ground: Top Field
+    owner_type: landlord
+    owner_name: Hitchin Cow Commoners Trust
+    lease_note: Lease is held by a private company rather than the football club; the trust may lease
+      only to a charitable body
+    note: A charitable trust set up in 1880 owns Top Field and cannot sell it; the lease sits with a private
+      company, not the club. Club and trust have since announced joint work on the site's future.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://gameofthepeople.com/2015/08/13/no-dragons-in-the-den/
+    - https://hitchintownfc.club/club-statement-top-field/
+  hyde-united-fc:
+    ground: Ewen Fields
+    owner_type: council
+    owner_name: Tameside Metropolitan Borough Council
+    lease_end: 2040
+    lease_note: 2015 council report proposed surrendering the 125-year lease of 1995 for up to £125k and
+      granting a 25-year lease with a rolling mutual break, outside the 1954 Act; end year assumes completion
+      c.2015
+    since: 1986
+    note: Hyde sold Ewen Fields to Tameside Council in 1986 so an artificial pitch could be laid; the
+      club owns the buildings on site. A November 2015 council report proposed replacing the club's 125-year
+      lease (1995) with a 25-year lease with a rolling mutual break.
+    as_of: 2015
+    confidence: medium
+    sources:
+    - https://tameside.moderngov.co.uk/documents/s3227/Urgent Item - Hyde United Football Club 30.11.15.pdf
+    - https://hydeunited.co.uk/stadium-timeline/
+  ilkeston-town-fc:
+    ground: New Manor Ground
+    owner_type: council
+    owner_name: Erewash Borough Council
+    lease_note: Club leases from the council; term not found
+    since: 2017
+    note: After Ilkeston FC folded in 2017 Erewash Borough Council pledged to keep the New Manor Ground
+      as a community asset for any new club; the phoenix Ilkeston Town (owned since 2019 by Mark Clifford,
+      Andrew Nally and David Hilton) plays there and has upgraded the stand and pitch.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://leisureopportunities.co.uk/news/Council-backing-for-Ilkeston-football/221703
+    - https://www.derbyshiretimes.co.uk/news/politics/council/plans-to-extend-a-stand-at-a-derbyshire-football-club-are-set-for-approval-5166491
+  kettering-town-fc:
+    ground: Latimer Park, Burton Latimer
+    owner_type: landlord
+    owner_name: Private landowner (not named in sources seen)
+    lease_note: 25-year lease of ground and clubhouse, replacing earlier one-year deals (start year not
+      confirmed)
+    note: Kettering Town left Rockingham Road and, after spells elsewhere, moved in at Latimer Park with
+      Burton Park Wanderers. The club agreed a 25-year lease with the site's landowner; Burton Park Wanderers
+      and a boxing club keep using the site.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://thenonleaguefootballpaper.com/latest-news/step-3/southern-leagues/15689/kettering-town-sign-new-25-year-lease-at-latimer-park
+    - https://www.ketteringtownfc.com/club-update-our-future-is-secured/
+  lancaster-city-fc:
+    ground: Giant Axe
+    owner_type: council
+    owner_name: Lancaster City Council
+    note: A council planning report states the Giant Axe land is owned by the city council and doubles
+      as a public recreation ground used by the club, its home since 1911.
+    as_of: 2023
+    confidence: medium
+    sources:
+    - https://committeeadmin.lancaster.gov.uk/(S(uufhck45vr5ey455phwmut55))/documents/s80684/Lancaster
+      City FC The Giant Axe West Road Lancaster.pdf
+  leatherhead-fc:
+    ground: Fetcham Grove
+    owner_type: council
+    owner_name: Mole Valley District Council (inferred, not confirmed)
+    lease_note: Club reported to hold a 25-year lease (date not found)
+    note: Leatherhead have played at Fetcham Grove, next to the council's leisure centre, since 1946.
+      An old Get Surrey report on Dorking FC's lease talks with Mole Valley council cites Leatherhead's
+      25-year lease as a comparison, implying the council is landlord; no direct statement of the freeholder
+      was found.
+    as_of: 2010
+    confidence: low
+    sources:
+    - https://www.getsurrey.co.uk/news/local-news/new-15-year-lease-ends-dorking-4827574
+    - https://en.wikipedia.org/wiki/Leatherhead_F.C.
+  leek-town-fc:
+    ground: Harrison Park (The F Ball Community Stadium)
+    owner_type: club
+    owner_name: Leek Town FC
+    since: 1948
+    note: Leek Town bought the ground, then Hamil Park, for £1,250 in 1948 and have played there since.
+      Staffordshire Moorlands District Council gave £100,000 towards a 3G pitch in 2021 but is not the
+      owner.
+    as_of: 2022
+    confidence: medium
+    sources:
+    - https://www.nonleaguegrounds.com/regions/west-midlands/harrison-park
+    - https://www.staffsmoorlands.gov.uk/article/6173/100k-Council-grant-kick-starts-Leek-3G-pitch-project
+  leighton-town-fc:
+    ground: Bell Close (Freed Veneers Community Stadium)
+    owner_type: unknown
+    note: Not established. Leighton Town play at Bell Close, Lake Street; no source seen says whether
+      the club, Central Bedfordshire Council, Leighton-Linslade Town Council or another party holds the
+      freehold.
+    as_of: 2025
+    confidence: low
+    sources:
+    - https://en.wikipedia.org/wiki/Leighton_Town_F.C.
+    - https://southern-football-league.co.uk/team/Leighton/2637/2025/2026
+  leiston-fc:
+    ground: Victory Road
+    owner_type: landlord
+    owner_name: Leiston Town Athletic Association
+    note: Garretts bought the ground in 1921 for its works athletic association, later renamed Leiston
+      Town Athletic Association; the stadium address is given as the association's, with the football
+      club using it. Whether the association holds the freehold outright was not confirmed.
+    as_of: 2024
+    confidence: low
+    sources:
+    - https://en.wikipedia.org/wiki/Leiston_F.C.
+    - https://www.corinthian-casuals.com/news/leiston-v-casuals
+  lewes-fc:
+    ground: The Dripping Pan
+    owner_type: council
+    owner_name: Lewes District Council, as sole trustee of the Mountfield Pleasure Ground Trust (charity)
+    lease_note: New 25-year lease agreed c.2024 to replace a lease ending in 2025; exact end year not
+      confirmed
+    note: The Dripping Pan is held by the Mountfield Pleasure Ground Trust, a charity whose sole trustee
+      is Lewes District Council, so it could also be read as 'landlord (charity)'. With its old lease
+      ending in 2025, the fan-owned club got a longer 25-year lease so it could bid for ground-improvement
+      grants.
+    as_of: 2024
+    confidence: high
+    sources:
+    - https://www.sussexexpress.co.uk/news/politics/long-lease-for-lewes-fcs-dripping-pan-ground-agreed-2886826
+    - https://democracy.lewes-eastbourne.gov.uk/ieDecisionDetails.aspx?ID=649
+  maldon-and-tiptree-fc:
+    ground: Wallace Binder Ground (Park Drive)
+    owner_type: unknown
+    since: 1994
+    note: Maldon Town moved to Park Drive in 1994 and the merged Maldon & Tiptree play there after Tiptree's
+      Chapel Road ground was sold in 2009-10. No source found that says who holds the freehold.
+    as_of: 2024
+    confidence: low
+    sources:
+    - https://en.wikipedia.org/wiki/Maldon_%26_Tiptree_F.C.
+    - https://en.wikipedia.org/wiki/Tiptree_United_F.C.
+  malvern-town-fc:
+    ground: Langland Stadium
+    owner_type: council
+    owner_name: Malvern Hills District Council
+    lease_note: 25-year lease approved by the council (start year not confirmed), after short leases from
+      2014
+    since: 2014
+    note: With the club in debt and a receiver controlling the ground, and a covenant blocking a direct
+      purchase, Malvern Hills District Council bought Langland Avenue in 2014 and leased it back. The
+      council later granted a 25-year lease to unlock about £1m of investment.
+    as_of: 2024
+    confidence: high
+    sources:
+    - https://malvernobserver.co.uk/news/new-25-year-lease-will-unlock-a-1million-investment-for-malvern-town-fc/
+    - https://malvernobserver.co.uk/?p=35345
+  needham-market-fc:
+    ground: Bloomfields
+    owner_type: club
+    owner_name: Needham Market FC
+    since: 1996
+    note: The club bought the land for Bloomfields with a bequest from former player Arthur Rodwell plus
+      a Lottery grant, and owns the facility.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://en.wikipedia.org/wiki/Needham_Market_F.C.
+    - https://www.football-stadiums.co.uk/grounds/england/bloomfields/
+  peterborough-sports-fc:
+    ground: The Bee Arena (Lincoln Road)
+    owner_type: council
+    owner_name: Peterborough City Council
+    lease_end: 2057
+    lease_note: Lease extended by 17 years, leaving 53 years to run, to 2057
+    note: The club holds a long lease from Peterborough City Council, which was extended by 17 years to
+      run until 2057 ahead of plans for a new clubhouse and more capacity.
+    as_of: 2023
+    confidence: medium
+    sources:
+    - https://www.peterboroughtoday.co.uk/news/people/top-peterborough-football-club-submits-plans-new-clubhouse-and-increased-capacity-2534288
+    - https://www.peterboroughtoday.co.uk/news/politics/council/thriving-peterborough-football-club-receive-planning-permission-for-new-clubhouse-2990069
+  plymouth-parkway-fc:
+    ground: Bolitho Park
+    owner_type: club
+    owner_name: Plymouth Parkway FC
+    since: 2003
+    note: Plymouth Parkway developed Bolitho Park at Manadon and moved in in August 2003, with what was
+      described as controversial help from Plymouth City Council; reference sources list the club as owner.
+      Truro City groundshared there from 2021 to 2024. No primary source confirms freehold title or rules
+      out a council lease.
+    as_of: 2024
+    confidence: low
+    sources:
+    - https://en.wikipedia.org/wiki/Bolitho_Park
+    - https://en.wikipedia.org/wiki/Plymouth_Parkway_F.C.
+  poole-town-fc:
+    ground: Tatnam Ground (BlackGold Stadium), Tatnam Farm
+    owner_type: council
+    owner_name: Bournemouth, Christchurch and Poole (BCP) Council
+    lease_end: 2024
+    lease_note: Lease expired December 2024; club then in talks with BCP Council and a third party; current
+      basis not confirmed
+    since: 2000
+    note: Poole Town have played since 2000 on the Tatnam school playing field of Oakdale Junior School,
+      leased from the council, and say they have spent over £750,000 on it. The lease ran out in December
+      2024 and the club is pursuing a new stadium on green belt land while hoping to keep Tatnam.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://en.wikipedia.org/wiki/Poole_Town_F.C.
+    - https://buzz.bournemouth.ac.uk/2024/11/community-is-key-in-poole-town-fc-stadium-plans/
+  quorn-fc:
+    ground: Farley Way Stadium
+    owner_type: unknown
+    since: 1994
+    note: The club sold its Warwick Avenue ground to the Abbeyfield housing association and moved to Farley
+      Way in 1994. Three searches did not establish who holds the Farley Way freehold.
+    as_of: 2024
+    confidence: low
+    sources:
+    - https://en.wikipedia.org/wiki/Farley_Way_Stadium
+    - https://en.wikipedia.org/wiki/Quorn_F.C.
+  racing-club-warwick-fc:
+    ground: Townsend Meadow (Hampton Road)
+    owner_type: council
+    owner_name: Warwick District Council (St Mary's Lands)
+    lease_note: 21-year lease issued after a court order following a lease dispute c.2009-2011; later
+      renewals not found
+    note: Townsend Meadow is part of St Mary's Lands, owned by Warwick District Council and governed by
+      the St Mary's Lands Act 1984. After a dispute in which the council admitted it had 'granted this
+      lease twice', a 21-year lease was issued in line with a court order; the ground has since had a
+      new 3G pitch and clubhouse work.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://www.leamingtoncourier.co.uk/news/at-last-new-lease-issued-for-racing-club-warwick-2636152
+    - https://leamingtoncourier.co.uk/news/racing-club-seeks-to-reconcile-with-council-2206515
+    - https://leamingtonobserver.co.uk/sport/new-look-townsend-meadow-a-dream-come-true-for-racing-club-warwick-chairman-vella-27123/
+  ramsgate-fc:
+    ground: Southwood Stadium (WW Martin Community Stadium)
+    owner_type: club
+    owner_name: Ramsgate Football Club
+    since: 2022
+    note: Ramsgate were long-term council tenants on a lease from 1992 that had run on as a held-over
+      lease. In September 2022 Thanet District Council agreed to sell the freehold to the club for £265,000,
+      with a 50% overage clause, a football-only use restriction and a five-year bar on resale.
+    as_of: 2022
+    confidence: high
+    sources:
+    - https://theisleofthanetnews.com/2022/09/23/freehold-sale-to-ramsgate-fc-will-boost-plans-for-on-site-enterprise-and-education-centre/
+    - https://theisleofthanetnews.com/2022/09/14/freehold-transfer-of-grounds-from-council-to-ramsgate-football-club-to-be-discussed/
+  real-bedford-fc:
+    ground: McMullen Park
+    owner_type: council
+    owner_name: Bedford Borough Council
+    lease_note: Lease renewal under negotiation; club said council terms raised rent sharply and could
+      force it out within three years
+    disputed: true
+    note: Real Bedford (owned by Peter McCormack since 2022) lease McMullen Park from Bedford Borough
+      Council and publicly disputed the council's renewal terms. In April 2026 the club unveiled early
+      plans for a new stadium at the Bedford International Athletics Stadium site on Barkers Lane, not
+      yet agreed with the council.
+    as_of: 2026
+    confidence: medium
+    sources:
+    - https://since-71.com/real-bedford-go-on-the-offensive-after-the-local-authority-refuses-womens-football-at-the-clubs-ground/
+    - https://stadiumdb.com/news/2026/04/england_plans_for_a_new_real_bedford_fc_stadium_take_shape
+    - https://www.bedfordindependent.co.uk/exclusive-new-sports-campus-revealed-at-bedford-international-athletics-stadium/
+  redcar-athletic-fc:
+    ground: Green Lane (B&D Interiors Stadium)
+    owner_type: unknown
+    note: The club moved from Middlesbrough and settled at Green Lane with the help of the local authority,
+      which suggests council land, but three searches did not confirm who holds the freehold or the lease
+      terms.
+    as_of: 2024
+    confidence: low
+    sources:
+    - https://en.wikipedia.org/wiki/Redcar_Athletic_F.C.
+    - https://www.northernfootballleague.org/?p=4517
+  redditch-united-fc:
+    ground: Valley Stadium
+    owner_type: council
+    owner_name: Redditch Borough Council
+    lease_end: 2046
+    lease_note: 30-year lease granted 2016 at a concessionary £2,000 a year, tied to a community 3G pitch
+      project
+    since: 2016
+    note: The council owns the land and in 2016 granted the club a new 30-year lease to 2046 at a concessionary
+      rent to support a community 3G pitch. A later Redditch Standard report described a rent row casting
+      doubt over the club's future; no change in ownership found.
+    as_of: 2016
+    confidence: medium
+    sources:
+    - https://moderngovwebpublic.redditchbc.gov.uk/documents/g2205/Printed minutes 08th-Mar-2016 19.00
+      Executive.pdf?T=1
+    - https://redditchstandard.co.uk/?p=36658
+  rushall-olympic-fc:
+    ground: Dales Lane
+    owner_type: unknown
+    lease_note: Club obtained a lease on the land at Daw End before opening the ground in 1977; landlord
+      and current terms not found
+    since: 1977
+    note: Rushall Olympic leased land at Daw End and opened Dales Lane in 1977; Walsall Council approved
+      a new stand, floodlights and a 3G pitch for the club in 2023-24. No source names the freeholder.
+    as_of: 2024
+    confidence: low
+    sources:
+    - https://en.wikipedia.org/wiki/Rushall_Olympic_F.C.
+    - https://expressandstar.com/news/local-hubs/walsall/2024/01/06/football-club-to-get-revamped-facilities-to-prevent-it-being-demoted
+  sholing-fc:
+    ground: Gunners Keep, Portsmouth Road (sponsor names incl. Mortgage Decisions Stadium / Universal
+      Stadium)
+    owner_type: unknown
+    note: Not established. Sholing (formerly Vosper Thornycroft FC / VTFC, renamed 2010) play at Gunners
+      Keep on Portsmouth Road; a Southampton City Council report on disposal of 512 Portsmouth Road appeared
+      in searches but its link to the ground was not confirmed.
+    as_of: 2024
+    confidence: low
+    sources:
+    - https://www.nonleaguegrounds.com/regions/south-east/gunners-keep
+    - https://southampton.gov.uk/modernGov/%28S%2830n4owbuda0mqe55vsynzn55%29%29/documents/s6454/512 Pmouth
+      Rd Disposal - RPT.pdf
+  st-albans-city-fc:
+    ground: Clarence Park
+    owner_type: council
+    owner_name: St Albans City & District Council (held under a trust)
+    lease_note: Licence, historically renewed at a peppercorn fee, rather than a long lease
+    since: 1908
+    note: The council owns Clarence Park, held under a trust, and lets the stadium area to the club on
+      a licence; the club has played there since 1908. The council's Clarence Park forum still met in
+      June 2025.
+    as_of: 2025
+    confidence: high
+    sources:
+    - https://en.wikipedia.org/wiki/Clarence_Park_(St_Albans)
+    - https://stalbans.moderngov.co.uk/documents/s50075636/Minutes - Clarence Park Consultative Forum
+      25 June 2025.pdf
+  stamford-fc:
+    ground: Zeeco Stadium (Borderville Sports Centre), Ryhall Road
+    owner_type: landlord
+    owner_name: Burghley Estate (freeholder); facility shared with New College Stamford
+    lease_note: Land leased from the Burghley Estate for the joint college/club development; terms not
+      found
+    since: 2014
+    note: Stamford AFC left Wothorpe Road in November 2014 for the new Borderville sports complex, built
+      in partnership with New College Stamford on land provided by the Burghley Estate. Burghley owns
+      the land, which was leased for the development; who holds the head lease (college or club) was not
+      confirmed.
+    as_of: 2016
+    confidence: medium
+    sources:
+    - https://rgcarter-construction.co.uk/?p=316
+    - https://www.thenpl.co.uk/naming-rights-sold-as-stadium-emerges-18820
+    - https://en.wikipedia.org/wiki/Stamford_A.F.C.
+  stockton-town-fc:
+    ground: Bishopton Road West (The Map Group UK Stadium)
+    owner_type: unknown
+    since: 2008
+    note: Stockton Town's ground shares an entrance with the former Stockton Sixth Form College site;
+      the club's base was set up in 2008 through a £1.4m partnership with Stockton Borough Council, the
+      sixth form college and Our Lady & St Bede School, and the stadium opened in 2016. No source says
+      who holds the freehold.
+    as_of: 2025
+    confidence: low
+    sources:
+    - https://en.wikipedia.org/wiki/Stockton_Town_F.C.
+    - https://www.stocktoninformationdirectory.org/article/12762/Stockton-Town-Football-Club
+  stourbridge-fc:
+    ground: War Memorial Athletic Ground, Amblecote
+    owner_type: council
+    owner_name: Dudley Metropolitan Borough Council
+    lease_note: New lease framework agreed; terms reported close to final in March 2026
+    since: 1927
+    note: The borough bought the ground in 1927; it is shared with Stourbridge Cricket Club and the land
+      is now owned by Dudley Council. After a stand was condemned in 2025 over an unstable sandstone cutting,
+      planners approved new stands and the club and council agreed the framework of a new lease.
+    as_of: 2026
+    confidence: high
+    sources:
+    - https://en.wikipedia.org/wiki/War_Memorial_Athletic_Ground
+    - https://expressandstar.com/news/2025/04/24/dudley-council-to-debate-stourbridge-football-club-crisis
+    - https://southern-football-league.co.uk/news/137865/STOURBRIDGE-DERBY-DELIGHTS
+  stratford-town-fc:
+    ground: Knights Lane (Arden Garages Stadium)
+    owner_type: council
+    owner_name: Warwickshire County Council (freehold); leased via Stratford-on-Avon District Council
+    lease_note: County council agreed in principle (2005) to lease the site to the district council, to
+      be sub-let to the club
+    since: 2007
+    note: The club moved to Knights Lane, Tiddington, in 2007-08 on county-council land identified with
+      the district council; the final lease terms were not found. FC Stratford groundshares there.
+    as_of: 2005
+    confidence: low
+    sources:
+    - https://www.stratford.gov.uk/news/news.cfm/archive/318/item/79
+    - https://en.wikipedia.org/wiki/Stratford_Town_F.C.
+  taunton-town-fc:
+    ground: Wordsworth Drive
+    owner_type: club
+    owner_name: Taunton Town FC
+    since: 1970
+    note: The club moved to Wordsworth Drive in 1953 on a lease from Taunton Borough Council and bought
+      the ground from the council in the 1970s (exact year not found). No later sale found.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://tauntontown.com/club-history/
+    - https://en.wikipedia.org/wiki/Taunton_Town_F.C.
+  three-bridges-fc:
+    ground: Jubilee Field
+    owner_type: unknown
+    note: Three Bridges, a members' club, play at Jubilee Field, where a £1m 3G pitch opened in March
+      2025 with about £100,000 from Crawley Borough Council. No source says who holds the freehold.
+    as_of: 2025
+    confidence: low
+    sources:
+    - https://en.wikipedia.org/wiki/Three_Bridges_F.C.
+    - https://crawley.gov.uk/council-information/news-and-events/latest-news/2025/deputy-mayor-crawley-officially-opens-three-bridges-fc-new-3g-pitch
+  uxbridge-fc:
+    ground: Honeycroft, Horton Road, Yiewsley
+    owner_type: unknown
+    since: 1978
+    note: Not established. The club bought its first 'Honeycroft' in Cowley at auction in 1947, then moved
+      in 1978 to a former works sports and social club in Horton Road, Yiewsley, which kept the name;
+      no source seen says who holds the current site's freehold.
+    as_of: 2024
+    confidence: low
+    sources:
+    - https://en.wikipedia.org/wiki/Uxbridge_F.C.
+    - https://www.uxbridgefc.com/club-history
+  warrington-rylands-fc:
+    ground: Gorsey Lane (Rylands Recreation Club)
+    owner_type: unknown
+    since: 1906
+    note: The club has played at the Rylands Recreation Club ground, opened by the Rylands wireworks for
+      its staff, since 1906; who now holds the freehold was not found. The club says it has secured land
+      for a new stadium, possibly at Crab Lane, Padgate.
+    as_of: 2025
+    confidence: low
+    sources:
+    - https://www.nonleaguegrounds.com/regions/north-west/gorsey-lane
+    - https://thenpl.co.uk/articles/warrington-rylands-take-step-closer-to-new-stadium
+  warrington-town-fc:
+    ground: Cantilever Park (renamed The Cal.Delivery Stadium)
+    owner_type: club
+    owner_name: Warrington Town FC
+    since: 1956
+    note: Reference sites list the club as owner of Cantilever Park, its home since 1956, which has since
+      been renamed the Cal.Delivery Stadium under a sponsorship deal. No lease or third-party landlord
+      was found, but the freehold was not confirmed from a primary source.
+    as_of: 2025
+    confidence: low
+    sources:
+    - https://en.wikipedia.org/wiki/Warrington_Town_F.C.
+    - https://warringtontownfc.co.uk/?p=117170
+  welling-united-fc:
+    ground: Park View Road
+    owner_type: council
+    owner_name: London Borough of Bexley
+    lease_end: 2057
+    lease_note: Lease runs to 2057 and bars residential development; Erith & Belvedere hold their own
+      lease on part of the ground
+    since: 1977
+    note: Bexley Council owns the freehold; Welling first took a lease in 1977 and Erith & Belvedere groundshare
+      under a separate lease. Welling's 2023-24 plan with Lita Homes for 114 flats and a new stadium was
+      withdrawn in 2024, with revised plans promised; it needs council consent to change the lease.
+    as_of: 2024
+    confidence: high
+    sources:
+    - https://greenwichwire.co.uk/2024/08/27/welling-united-flats-lita-homes-park-view-road/
+    - https://greenwichwire.co.uk/2024/02/16/welling-uniteds-new-ground-plans-confirmed-but-erith-belvedere-say-theyre-staying-put/
+    - https://en.wikipedia.org/wiki/Park_View_Road
+  whitby-town-fc:
+    ground: Turnbull Ground (Towbar Express Stadium), Upgang Lane
+    owner_type: landlord
+    owner_name: The Turnbull Cricket and Football Grounds (registered charity 503531)
+    note: The Turnbull Ground is held by a charitable trust with six trustees for the use of Whitby Town
+      FC and Whitby Cricket Club. The club is a beneficiary, not the owner.
+    as_of: 2024
+    confidence: medium
+    sources:
+    - https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/503531
+    - https://www.whitbygazette.co.uk/sport/football/a-look-back-at-the-origins-of-whitby-towns-turnbull-ground-3168902
+  whitehawk-fc:
+    ground: The Enclosed Ground, East Brighton Park
+    owner_type: council
+    owner_name: Brighton & Hove City Council
+    since: 1954
+    note: Brighton Corporation let the club enclose a pitch in the council's East Brighton Park in 1954-55;
+      it remains the home ground. Current lease terms were not found.
+    as_of: 2025
+    confidence: medium
+    sources:
+    - https://en.wikipedia.org/wiki/Whitehawk_F.C.
+    - https://whitehawkfc.com/history/
+  wimborne-town-fc:
+    ground: New Cuthbury (The Wyatt Homes Stadium)
+    owner_type: unknown
+    since: 2020
+    note: The club moved to the new New Cuthbury ground in December 2020, renamed the Wyatt Homes Stadium
+      in July 2024; earlier Dorset planning papers showed the old Cuthbury site being folded into a housing
+      proposal. Two searches found no source on who holds the freehold of the new ground.
+    as_of: 2024
+    confidence: low
+    sources:
+    - https://en.wikipedia.org/wiki/Wimborne_Town_F.C.
+    - https://www.dorsetcouncil.gov.uk/documents/35024/287818/05+Existing+Development+Proposals+and+Promotions.pdf/ab012f28-1ac4-99f2-b321-5f91b4e23585
+  wingate-and-finchley-fc:
+    ground: Summers Lane (The Harry Abrahams Stadium)
+    owner_type: council
+    owner_name: London Borough of Barnet
+    lease_note: Long lease from the council, listed as held by Wingate Youth Trust; term not found
+    note: Summers Lane was Finchley FC's home from 1877 and the merged club's since 1991. A Barnet Council
+      list of its community asset portfolio shows the Summers Lane ground let on a long lease to Wingate
+      Youth Trust.
+    as_of: 2020
+    confidence: medium
+    sources:
+    - https://barnet.moderngov.co.uk/documents/s19857/Appendix%202%20-%20List%20of%20assets%20in%20the%20current%20community%20portfolio%20-%20FINAL.pdf
+    - https://en.wikipedia.org/wiki/Wingate_%26_Finchley_F.C.
+  worcester-city-fc:
+    ground: Sixways Stadium
+    owner_type: other_club
+    owner_name: Worcester Warriors rugby group (Chris Holland's Atlas/Loxwood Holdings; operated by Junction
+      6 Ltd)
+    lease_end: 2030
+    lease_note: Five-year groundshare contract from July 2025
+    since: 2025
+    note: Worcester City signed a five-year deal from July 2025 to play at Sixways, home of Worcester
+      Warriors. After the Warriors' 2022 collapse Chris Holland's companies took control of the club and
+      stadium and set up Junction 6 to run and redevelop it; which entity holds the freehold was not confirmed.
+    as_of: 2025
+    confidence: medium
+    sources:
+    - https://www.knightsplc.com/knights-news/2025/sixways-stadium-ground-share-will-transform-worcester-city-fc/
+    - https://sixwaysstadium.co.uk/news/worcester-city-sign-contract-to-play-at-sixways/
+    - https://warriors.co.uk/news/junction-6-limited-unveil-exciting-vision-for-sixways-redevelopment
+  workington-afc:
+    ground: Derwent Park (groundshare with Workington Town RLFC while Borough Park is rebuilt)
+    owner_type: council
+    owner_name: Cumberland Council
+    lease_note: Club surrendered its long lease of Borough Park to the council for the Cumberland Sports
+      Village project
+    since: 2026
+    note: Cumberland Council owns Borough Park and Derwent Park; the club gave up its Borough Park lease
+      so the council can build the £16m Cumberland Sports Village there (demolition from May 2026, due
+      summer 2027) and moved to Derwent Park in early 2026.
+    as_of: 2026
+    confidence: medium
+    sources:
+    - https://cumberland.gov.uk/planning-and-building-control/regeneration-project/workington-projects/cumberland-sports-village
+    - https://www.placenorthwest.co.uk/cumberland-gives-go-ahead-for-16m-workington-stadium/
+    - https://en.wikipedia.org/wiki/Borough_Park_(Workington)
+  yate-town-fc:
+    ground: Lodge Road
+    owner_type: unknown
+    since: 1984
+    note: The club moved from Sunnyside Lane to Lodge Road in 1984, building a 236-seat stand in 1987
+      and adding floodlights in 1988. Two searches found no source on who holds the freehold.
+    as_of: 2024
+    confidence: low
+    sources:
+    - https://en.wikipedia.org/wiki/Yate_Town_F.C.

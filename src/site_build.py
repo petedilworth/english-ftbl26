@@ -29,6 +29,7 @@ import aggregate  # noqa: E402  (points-era boundary for records tables)
 import content  # noqa: E402  (needs _SRC on the path first)
 import hatred as hatred_mod  # noqa: E402  (the most disliked clubs)
 import value as value_mod  # noqa: E402  (which club to buy)
+import grounds as grounds_mod  # noqa: E402  (who owns the ground)
 import divisions
 divisions_mod = divisions
 import finances  # noqa: E402  (disclosure states for the club finances table)
@@ -366,7 +367,10 @@ def _facts_rows(facts: dict, club_names: dict[str, str] | None = None) -> list[d
     if stadium:
         opened = facts.get("stadium_opened")
         add("Stadium", f"{stadium} (opened {opened})" if opened else stadium)
-    add("Ground ownership", STADIUM_OWNERSHIP_LABELS.get(facts.get("stadium_ownership")))
+    if facts.get("ground"):
+        add("Ground ownership", grounds_mod.describe(facts["ground"], datetime.date.today().year))
+    else:
+        add("Ground ownership", STADIUM_OWNERSHIP_LABELS.get(facts.get("stadium_ownership")))
     if facts.get("capacity"):
         add("Capacity", f"{int(facts['capacity']):,}")
     if facts.get("pitch_type") == "artificial_3g":
@@ -2148,7 +2152,9 @@ class SiteBuilder:
             "capacity": cell(f"{facts['capacity']:,}" if facts.get("capacity")
                              else None, sort=facts.get("capacity"), num=True),
             "ground_years": cell(season - opened if opened else None, num=True),
-            "ground_ownership": cell(facts.get("stadium_ownership")),
+            "ground_ownership": cell(
+                grounds_mod.LABELS.get((facts.get("ground") or {}).get("owner_type"))
+                or facts.get("stadium_ownership")),
             "ownership_model": cell(
                 (facts.get("ownership_model") or "").replace("_", " ") or None),
             "owner": cell(facts.get("owner")),
@@ -2533,6 +2539,11 @@ class SiteBuilder:
                 "hatred", "The most disliked clubs",
                 "Envied, resented, mocked or despised — and why Tottenham are only one of them",
             ))
+        if (PROJECT_ROOT / "content" / "insights" / "grounds.md").exists():
+            stories.append(story(
+                "grounds", "Who owns the ground",
+                "Club, council, landlord or the owner's own company – every club in tiers 1–7, with sources",
+            ))
         if (PROJECT_ROOT / "content" / "insights" / "value.md").exists():
             stories.append(story(
                 "value", "Which club to buy",
@@ -2652,6 +2663,7 @@ class SiteBuilder:
         self._insight_scatter()
         self._insight_hatred()
         self._insight_value()
+        self._insight_grounds()
         self._insight_boom_and_bust(boom_bust_events)
         self._insight_the_drop(movement_matches)
         self._insight_the_rise(movement_matches)
@@ -3093,6 +3105,89 @@ class SiteBuilder:
             fan_owned=sum(1 for r in rows if r["fan_owned"]),
             with_accounts=coverage["revenue"], standouts=standouts,
             mean_low=f"{min(means):.0f}" if means else "", mean_high=f"{max(means):.0f}" if means else "",
+        )
+
+    # ── Who owns the ground ──────────────────────────────────────────────
+
+    def _insight_grounds(self) -> None:
+        """
+        The researched ground record (content/grounds.yml, src/grounds.py)
+        for every club in this season's tiers 1-7: a 100% bar per tier,
+        the grounds held apart from the club, leases running out, disputes,
+        and the full table with sources. Gated on its prose.
+        """
+        import markdown as md
+        from markupsafe import Markup
+
+        source = PROJECT_ROOT / "content" / "insights" / "grounds.md"
+        records = grounds_mod.load(PROJECT_ROOT / "content" / "grounds.yml")
+        if not source.exists() or not records:
+            return
+        newest = self.conn.execute("SELECT MAX(season_end_year) FROM standings").fetchone()[0]
+        clubs = self.conn.execute(
+            "SELECT s.club_id, COALESCE(m.canonical_name, s.club_name), s.tier FROM standings s"
+            " LEFT JOIN club_master m ON m.club_id = s.club_id"
+            " WHERE s.season_end_year = ? AND s.tier <= 7 AND s.club_id IS NOT NULL"
+            " ORDER BY s.tier, 2", (newest,)).fetchall()
+        year = newest - 1  # the calendar year the season started
+        colour = {t["key"]: t["color"] for t in grounds_mod.OWNER_TYPES}
+
+        rows = []
+        for cid, name, tier in clubs:
+            e = records.get(cid) or {"owner_type": "unknown"}
+            left = grounds_mod.years_left(e, year)
+            lease = (f"to {e['lease_end']}" if e.get("lease_end") else "") or (e.get("lease_note") or "")
+            rows.append({
+                "club_id": cid, "name": name, "tier": tier, "ground": e.get("ground") or "",
+                "owner_type": e["owner_type"], "type_label": grounds_mod.LABELS[e["owner_type"]],
+                "color": colour[e["owner_type"]], "owner_name": e.get("owner_name") or "",
+                "lease": lease, "lease_end": e.get("lease_end"), "left": left,
+                "since": e.get("since"), "disputed": bool(e.get("disputed")),
+                "note": " ".join(str(e.get("note") or "").split()),
+                "sources": [u for u in (e.get("sources") or []) if isinstance(u, str)][:3],
+                "source": next(iter(e.get("sources") or []), ""),
+                "confidence": e.get("confidence") or "",
+            })
+
+        def bar(label, tier, members):
+            n = len(members)
+            segs = []
+            for t in grounds_mod.OWNER_TYPES:
+                k = sum(1 for r in members if r["owner_type"] == t["key"])
+                if k:
+                    segs.append({"key": t["key"], "color": t["color"], "count": k,
+                                 "width": round(100 * k / n, 2),
+                                 "title": f"{label}, {t['label'].lower()}: {k} of {n}"})
+            # Of the clubs with an answer: an unresearched tier is not a tier
+            # where nobody owns their ground.
+            owned = sum(1 for r in members if r["owner_type"] == "club")
+            known_n = sum(1 for r in members if r["owner_type"] != "unknown")
+            return {"label": label, "tier": tier, "segments": segs,
+                    "club_share": f"{round(100 * owned / known_n)}%" if known_n else "–"}
+
+        tiers = [bar(f"Tier {t}", str(t), [r for r in rows if r["tier"] == t])
+                 for t in sorted({r["tier"] for r in rows})]
+        known = [r for r in rows if r["owner_type"] != "unknown"]
+        share = lambda k: f"{round(100 * sum(1 for r in known if r['owner_type'] == k) / len(known))}%" if known else "–"
+        stats = [
+            {"value": len(rows), "label": "Clubs in tiers 1–7"},
+            {"value": len(known), "label": "Answer established"},
+            {"value": share("club"), "label": "Of those, club owns it"},
+            {"value": share("council"), "label": "Of those, council owns it"},
+            {"value": sum(1 for r in rows if r["owner_type"] == "owner_company"), "label": "Held apart by the owner"},
+        ]
+        owner_apart = [r for r in rows if r["owner_type"] == "owner_company"]
+        leases = sorted((r for r in rows if r["left"] is not None and r["owner_type"] != "club"),
+                        key=lambda r: (r["left"], r["name"]))[:15]
+        disputed = [r for r in rows if r["disputed"]]
+
+        self.render(
+            "insight_grounds.html", self.out / "insights" / "grounds" / "index.html", 2,
+            title="Who owns the ground",
+            intro_html=Markup(md.markdown(content.load_theme(source))),
+            stats=stats, types=grounds_mod.OWNER_TYPES, tiers=tiers, rows=rows,
+            owner_apart=owner_apart, leases=leases, disputed=disputed,
+            researched=grounds_mod.researched(PROJECT_ROOT / "content" / "grounds.yml") or "2026",
         )
 
     def _movement_matches(self) -> dict[str, list[dict]]:

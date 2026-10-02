@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Who owns the ground</h1>
+<p class="subtitle">Every club in this season's top seven tiers, researched one by one, with the source for each answer.</p>
+
+<div class="stat-cards">
+  {% for s in stats %}
+  <div class="stat-card"><div class="stat-value">{{ s.value }}</div><div class="stat-label">{{ s.label }}</div></div>
+  {% endfor %}
+</div>
+
+<div class="theme-intro">{{ intro_html }}</div>
+
+<h2>By tier</h2>
+<p class="subtitle">Share of each tier's clubs by who holds the freehold. Click a block to list those clubs.</p>
+<div class="grounds-legend" aria-hidden="true">
+  {% for t in types %}<span><span class="index-key" style="background: {{ t.color }}"></span>{{ t.label }}</span>{% endfor %}
+</div>
+<ol class="index-bars grounds-bars">
+  {% for row in tiers %}
+  <li class="index-bar grounds-bar">
+    <span class="index-name">{{ row.label }}</span>
+    <span class="index-track">{% for seg in row.segments %}<button type="button" class="index-seg grounds-seg" data-tier="{{ row.tier }}" data-type="{{ seg.key }}" style="width: {{ seg.width }}%; background: {{ seg.color }}" title="{{ seg.title }}" aria-label="{{ seg.title }}">{% if seg.width >= 9 %}<span class="grounds-count">{{ seg.count }}</span>{% endif %}</button>{% endfor %}</span>
+    <span class="index-value">{{ row.club_share }}</span>
+  </li>
+  {% endfor %}
+</ol>
+<p class="finance-note">The right-hand figure is the share of the tier's established answers where the club owns its ground outright.</p>
+
+{% if owner_apart %}
+<h2>Sell the club, keep the ground</h2>
+<p class="subtitle">Grounds held by the owner or the owner's company rather than the club. Whoever buys the club buys a tenant.</p>
+{% for c in owner_apart %}
+<div class="rivalry">
+  <h3><a href="{{ root }}/team/{{ c.club_id }}/index.html">{{ c.name }}</a> <span class="status-tag">{{ c.ground }}{% if c.since %} · since {{ c.since }}{% endif %}</span></h3>
+  <p class="rivalry-meta">{{ c.owner_name }}{% if c.lease %} · {{ c.lease }}{% endif %}</p>
+  <p>{{ c.note }} <a href="{{ c.source }}" rel="noopener">Source</a></p>
+</div>
+{% endfor %}
+{% endif %}
+
+{% if leases %}
+<h2>Leases running out</h2>
+<p class="subtitle">Tenants with a known end date, soonest first. A club with less than ten years left is a club whose landlord decides its future.</p>
+<div class="table-scroll"><table class="standings">
+  <tr><th>Club</th><th>Tier</th><th>Landlord</th><th class="num">Lease ends</th><th class="num">Years left</th></tr>
+  {% for c in leases %}
+  <tr><td><a href="{{ root }}/team/{{ c.club_id }}/index.html">{{ c.name }}</a></td><td>{{ c.tier }}</td><td>{{ c.owner_name }}</td><td class="num">{{ c.lease_end }}</td><td class="num">{{ c.left }}</td></tr>
+  {% endfor %}
+</table></div>
+{% endif %}
+
+{% if disputed %}
+<h2>In dispute</h2>
+{% for c in disputed %}
+<div class="rivalry">
+  <h3><a href="{{ root }}/team/{{ c.club_id }}/index.html">{{ c.name }}</a> <span class="status-tag">{{ c.ground }}</span></h3>
+  <p>{{ c.note }} <a href="{{ c.source }}" rel="noopener">Source</a></p>
+</div>
+{% endfor %}
+{% endif %}
+
+<h2>Every club</h2>
+<p class="subtitle" id="grounds-filter-note">All {{ rows | length }} clubs. <button type="button" class="chip grounds-clear" hidden>Show all</button></p>
+<div class="table-scroll"><table class="standings grounds-table">
+  <tr><th>Tier</th><th>Club</th><th>Ground</th><th>Owned by</th><th>Lease</th><th class="num">Since</th><th>Confidence</th><th>Source</th></tr>
+  {% for c in rows %}
+  <tr data-tier="{{ c.tier }}" data-type="{{ c.owner_type }}">
+    <td>{{ c.tier }}</td>
+    <td><a href="{{ root }}/team/{{ c.club_id }}/index.html">{{ c.name }}</a></td>
+    <td>{{ c.ground }}</td>
+    <td><span class="index-key" style="background: {{ c.color }}"></span>{{ c.type_label }}{% if c.owner_name and c.owner_type != "club" %}<br><span class="status-tag">{{ c.owner_name }}</span>{% endif %}{% if c.disputed %} <span class="status-tag down">disputed</span>{% endif %}</td>
+    <td>{{ c.lease or "" }}</td>
+    <td class="num">{{ c.since or "" }}</td>
+    <td>{{ c.confidence }}</td>
+    <td>{% for u in c.sources %}<a href="{{ u }}" rel="noopener">{{ loop.index }}</a>{% if not loop.last %} {% endif %}{% endfor %}</td>
+  </tr>
+  {% endfor %}
+</table></div>
+<p class="finance-note">Researched in {{ researched }} from club statements, council papers and local reporting; Wikipedia was not used as a source. Confidence is high where a primary source or two agreeing reports say so, medium on one report, low where the trail is thin or old. Corrections go in <code>content/grounds.yml</code>. Ground ownership feeds the <a href="{{ root }}/insights/value/index.html">value page</a>, where owning the ground outright scores highest and a ground held by the owner apart from the club scores well below a long council lease.</p>
+
+<script>
+(function () {
+  var rows = document.querySelectorAll(".grounds-table tr[data-tier]");
+  var note = document.getElementById("grounds-filter-note");
+  var clear = document.querySelector(".grounds-clear");
+  var all = note ? note.firstChild.nodeValue : "";
+  function filter(tier, type, label) {
+    var n = 0;
+    Array.prototype.forEach.call(rows, function (r) {
+      var on = !tier || (r.getAttribute("data-tier") === tier && r.getAttribute("data-type") === type);
+      r.hidden = !on; if (on) n++;
+    });
+    if (note) note.firstChild.nodeValue = tier ? label + ": " + n + " club" + (n === 1 ? "" : "s") + ". " : all;
+    if (clear) clear.hidden = !tier;
+  }
+  Array.prototype.forEach.call(document.querySelectorAll(".grounds-seg"), function (b) {
+    b.addEventListener("click", function () {
+      filter(b.getAttribute("data-tier"), b.getAttribute("data-type"), b.getAttribute("title").split(":")[0]);
+      document.querySelector(".grounds-table").scrollIntoView({behavior: "smooth", block: "start"});
+    });
+  });
+  if (clear) clear.addEventListener("click", function () { filter(null); });
+})();
+</script>
+{% endblock %}
