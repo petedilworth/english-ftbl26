@@ -854,3 +854,74 @@ tr.wages-over td:nth-child(7) { font-weight: 600; }
 .grounds-seg:focus-visible { outline: 2px solid var(--ink); outline-offset: 1px; }
 .grounds-count { font-size: 11px; font-weight: 600; color: var(--ink); background: rgba(255,255,255,0.8); border-radius: 3px; padding: 0 3px; }
 .grounds-table tr[hidden] { display: none; }
+
+/* Compare two clubs. Club A is always blue, club B orange: kits clash. */
+.cmp-picker { display: grid; grid-template-columns: 1fr auto 1fr; gap: 10px; align-items: end; margin: 8px 0; }
+.cmp-pick { display: flex; flex-direction: column; gap: 4px; font-size: 13px; color: var(--muted); }
+.cmp-pick input { font-size: 16px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; width: 100%; box-sizing: border-box; }
+.cmp-pick-label { display: flex; align-items: center; gap: 6px; }
+.cmp-swap { font-size: 18px; padding: 6px 12px; }
+.cmp-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; }
+.cmp-dot-a { background: #2a78d6; } .cmp-dot-b { background: #eb6834; }
+.cmp-quick { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0 8px; }
+.cmp-fixtures { margin-bottom: 14px; }
+.cmp-head { display: grid; grid-template-columns: 1fr auto 1fr; gap: 12px; align-items: stretch; margin: 14px 0 6px; }
+.cmp-card { border: 1px solid var(--line); border-radius: 10px; padding: 0 14px 12px; background: var(--bg-soft); overflow: hidden; }
+.cmp-card-a { border-top: 4px solid #2a78d6; } .cmp-card-b { border-top: 4px solid #eb6834; text-align: right; }
+.cmp-card h3 { margin: 8px 0 2px; font-size: 20px; }
+.cmp-card p { margin: 2px 0; font-size: 13px; color: var(--muted); }
+.cmp-card .cmp-card-where { color: var(--ink); font-weight: 600; }
+.cmp-kit { display: block; height: 6px; margin: 0 -14px; }
+.cmp-vs { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font-size: 12px; color: var(--muted); text-align: center; }
+.cmp-vs-v { font-size: 28px; font-weight: 700; color: var(--ink); }
+.cmp-legend { display: flex; justify-content: space-between; font-size: 13px; font-weight: 600; margin: 4px 0; }
+.cmp-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.cmp-tape { margin: 0 0 8px; }
+.cmp-sec { text-align: center; font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin: 14px 0 4px; border-bottom: 1px solid var(--line); padding-bottom: 3px; }
+.cmp-row { display: grid; grid-template-columns: 6.5em 1fr 13em 1fr 6.5em; gap: 8px; align-items: center; padding: 3px 0; font-size: 13px; }
+.cmp-label { text-align: center; color: var(--ink); }
+.cmp-fact { color: var(--muted); font-size: 10px; }
+.cmp-val { font-variant-numeric: tabular-nums; color: var(--muted); }
+.cmp-val-a { text-align: right; } .cmp-val-b { text-align: left; }
+.cmp-val.is-win { color: var(--ink); font-weight: 700; }
+.cmp-bar { display: flex; height: 14px; background: var(--bg-soft); border-radius: 4px; }
+.cmp-bar span { display: block; height: 100%; }
+.cmp-bar-a { justify-content: flex-end; } .cmp-bar-a span { background: #2a78d6; border-radius: 4px 0 0 4px; }
+.cmp-bar-b span { background: #eb6834; border-radius: 0 4px 4px 0; }
+.cmp-form-row { display: grid; grid-template-columns: 11em auto 1fr; gap: 10px; align-items: center; margin: 6px 0; font-size: 13px; }
+.cmp-form-a { color: #1f5fae; } .cmp-form-b { color: #b34a1d; }
+.cmp-chips { display: flex; gap: 3px; }
+.cmp-chip { display: inline-flex; width: 22px; height: 22px; align-items: center; justify-content: center; border-radius: 4px; color: #fff; font-size: 11px; font-weight: 700; }
+.cmp-chip-W { background: var(--up); } .cmp-chip-D { background: #7b858f; } .cmp-chip-L { background: var(--down); }
+.cmp-form-line { color: var(--muted); }
+.cmp-record { display: flex; justify-content: space-between; font-weight: 600; font-size: 14px; margin: 6px 0 4px; }
+.cmp-record-a { color: #1f5fae; } .cmp-record-b { color: #b34a1d; } .cmp-record-d { color: var(--muted); font-weight: normal; }
+.cmp-recbar { display: flex; height: 24px; gap: 2px; margin-bottom: 10px; }
+.cmp-recbar span { display: flex; align-items: center; justify-content: center; color: #fff; font-size: 12px; font-weight: 700; min-width: 0; overflow: hidden; }
+.cmp-recbar span:first-child { border-radius: 4px 0 0 4px; } .cmp-recbar span:last-child { border-radius: 0 4px 4px 0; }
+.cmp-hi-a { font-weight: 700; color: #1f5fae; } .cmp-hi-b { font-weight: 700; color: #b34a1d; }
+.cmp-stat-a { border-top: 3px solid #2a78d6; } .cmp-stat-b { border-top: 3px solid #eb6834; }
+.cmp-facts th[scope=row] { text-align: left; color: var(--muted); font-weight: normal; white-space: nowrap; text-transform: none; letter-spacing: 0; font-size: 13px; border-bottom: 1px solid var(--line); }
+.cmp-facts td { width: 40%; }
+@media (max-width: 640px) {
+  .cmp-picker { grid-template-columns: 1fr auto; }
+  .cmp-pick-b { grid-column: 1; }
+  .cmp-swap { grid-row: 1 / span 2; grid-column: 2; align-self: center; }
+  .cmp-head { grid-template-columns: 1fr 1fr; }
+  .cmp-vs { grid-column: 1 / -1; grid-row: 2; flex-direction: row; justify-content: center; gap: 10px; }
+  .cmp-card h3 { font-size: 16px; }
+  .cmp-row { grid-template-columns: 4.6em 1fr 1fr 4.6em; row-gap: 2px; }
+  .cmp-label { grid-column: 1 / -1; grid-row: 1; font-size: 12px; }
+  .cmp-form-row { grid-template-columns: 1fr; gap: 4px; }
+}
+.fixtures-table td { vertical-align: middle; }
+.fixtures-time { color: var(--muted); white-space: nowrap; width: 3.5em; }
+.fixtures-tier { white-space: nowrap; }
+.cmp-teambox { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 18px 0 6px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--bg-soft); }
+.cmp-teambox-title { font-weight: 600; margin-right: 4px; }
+.h2h-compare { display: inline-block; margin-top: 4px; font-size: 13px; }
+.cmp-jump { position: sticky; top: 0; z-index: 500; display: flex; gap: 4px 12px; flex-wrap: wrap; align-items: center; padding: 8px 0; margin-bottom: 4px; background: var(--bg); border-bottom: 1px solid var(--line); font-size: 13px; }
+.cmp-jump a { text-decoration: none; }
+.cmp-jump .chip { margin-left: auto; }
+#cmp-body h2 { scroll-margin-top: 48px; }
+@media (max-width: 640px) { .cmp-jump { flex-wrap: nowrap; overflow-x: auto; white-space: nowrap; } }

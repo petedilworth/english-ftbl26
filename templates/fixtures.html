@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Fixtures</h1>
+<p class="subtitle">The coming week in the Premier League, the Football League and the National League. Every match opens its comparison: the two clubs side by side on everything the site knows.</p>
+{% if days %}
+{% for d in days %}
+<h2>{{ d.label }}</h2>
+<div class="table-scroll"><table class="standings fixtures-table">
+  {% for f in d.fixtures %}
+  <tr>
+    <td class="fixtures-time">{{ f.time }}</td>
+    <td class="fixtures-tier"><span class="status-tag">{{ f.division }}</span></td>
+    <td><a href="{{ root }}/team/{{ f.home_id }}/index.html">{{ f.home_name }}</a> v <a href="{{ root }}/team/{{ f.away_id }}/index.html">{{ f.away_name }}</a></td>
+    <td class="num"><a class="chip" href="{{ root }}/compare/index.html#a={{ f.home_id }}&b={{ f.away_id }}">Compare</a></td>
+  </tr>
+  {% endfor %}
+</table></div>
+{% endfor %}
+{% else %}
+<p class="finance-note">No fixtures in the next eight days, or the fixture list could not be fetched when the site was last built. <a href="{{ root }}/compare/index.html">Compare any two clubs</a> instead.</p>
+{% endif %}
+{% endblock %}

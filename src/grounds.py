@@ -20,6 +20,7 @@ stadium_ownership field in the club file, which it also keeps in step.
 """
 
 import logging
+import re
 from pathlib import Path
 
 import yaml
@@ -83,9 +84,32 @@ def merge(club_id: str, facts: dict, path: Path) -> dict:
     return facts
 
 
-def years_left(entry: dict, year: int) -> int | None:
+def lease_end(entry: dict) -> int | None:
+    """
+    The year the lease ends: the recorded end, or one worked out from a
+    note like "999-year lease from 2010". A note giving a length but no
+    start counts only when the length alone settles it (99 years or more),
+    since the researchers often knew the term and not the date.
+    """
     end = entry.get("lease_end")
-    return int(end) - year if isinstance(end, int) else None
+    if isinstance(end, int):
+        return end
+    note = str(entry.get("lease_note") or "")
+    m = re.search(r"(\d{2,4})[- ]year", note)
+    if not m:
+        return None
+    length = int(m.group(1))
+    start = re.search(r"(?:from|in|since|signed|agreed)\D{0,12}((?:19|20)\d\d)", note)
+    if start:
+        return int(start.group(1)) + length
+    if length >= 99 and isinstance(entry.get("since"), int):
+        return entry["since"] + length
+    return None
+
+
+def years_left(entry: dict, year: int) -> int | None:
+    end = lease_end(entry)
+    return end - year if end is not None else None
 
 
 def security(entry: dict | None, year: int) -> float | None:
@@ -125,7 +149,7 @@ def describe(entry: dict, year: int) -> str:
         text += f": {entry['owner_name']}"
     left = years_left(entry, year)
     if left is not None:
-        text += f"; lease to {entry['lease_end']}" + (" – expired" if left < 0 else "")
+        text += f"; lease to {lease_end(entry)}" + (" – expired" if left < 0 else "")
     elif entry.get("lease_note") and kind != "club":
         text += f"; {entry['lease_note']}"
     if entry.get("disputed"):

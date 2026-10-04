@@ -1,4 +1,7 @@
 {% extends "base.html" %}
+{% macro compare(f) -%}
+{%- if f.home_id and f.away_id %} <a href="{{ site_url }}/compare/index.html#a={{ f.home_id }}&b={{ f.away_id }}" style="color:#1a5c9a;font-size:12px;font-weight:normal">compare</a>{% endif -%}
+{%- endmacro %}
 {% macro club(name, id) -%}
 {% if id %}<a href="{{ id | club_url }}" style="color:#1a1a1a">{{ name }}</a>{% else %}{{ name }}{% endif %}
 {%- endmacro %}
@@ -39,7 +42,7 @@
 {% for i in s.long %}
 {% set f = i.fixture %}
 <h3 style="font-size:15px;margin:14px 0 2px">{{ club(f.home_name, f.home_id) }} v {{ club(f.away_name, f.away_id) }}
-<span style="color:#888;font-weight:normal">{{ f.date.strftime("%a %d %b") }}{% if i.tag_label %} · {{ i.tag_label }}{% endif %}</span></h3>
+<span style="color:#888;font-weight:normal">{{ f.date.strftime("%a %d %b") }}{% if i.tag_label %} · {{ i.tag_label }}{% endif %}</span>{{ compare(f) }}</h3>
 <p style="margin:4px 0">{{ i.story }}</p>
 {% if i.cid %}<img src="cid:{{ i.cid }}" alt="Position history" style="max-width:100%;margin:4px 0">{% endif %}
 {{ records(i) }}
@@ -48,7 +51,7 @@
 {% for i in s.medium %}
 {% set f = i.fixture %}
 <p style="margin:10px 0 0"><b>{{ club(f.home_name, f.home_id) }} v {{ club(f.away_name, f.away_id) }}</b>
-<span style="color:#888">{{ f.date.strftime("%a %d %b") }}{% if i.tag_label %} · {{ i.tag_label }}{% endif %}</span><br>
+<span style="color:#888">{{ f.date.strftime("%a %d %b") }}{% if i.tag_label %} · {{ i.tag_label }}{% endif %}</span>{{ compare(f) }}<br>
 {{ i.blurb }}</p>
 {% endfor %}
 
@@ -56,7 +59,7 @@
 <table cellpadding="1" cellspacing="0" style="font-size:13px;border-collapse:collapse;margin-top:10px">
 {% for i in s.rest %}
 {% set f = i.fixture %}
-<tr><td style="color:#888;padding-right:8px;white-space:nowrap">{{ f.date.strftime("%a %d") }}</td><td>{{ f.home_name }} v {{ f.away_name }}</td><td style="color:#666;padding-left:10px">{{ i.tag_label }}</td></tr>
+<tr><td style="color:#888;padding-right:8px;white-space:nowrap">{{ f.date.strftime("%a %d") }}</td><td>{{ f.home_name }} v {{ f.away_name }}</td><td style="color:#666;padding-left:10px">{{ i.tag_label }}</td><td style="padding-left:10px">{{ compare(f) }}</td></tr>
 {% endfor %}
 </table>
 {% endif %}

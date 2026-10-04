@@ -117,6 +117,12 @@
     });
     head.appendChild(el("p", entry.matches.length + " meetings — " +
       w + " won, " + d + " drawn, " + l + " lost", "h2h-detail-record"));
+    // Everything else about the pair, side by side.
+    if (table.getAttribute("data-club-id")) {
+      var cmp = el("a", "Compare the two clubs on everything →", "h2h-compare");
+      cmp.setAttribute("href", "../../compare/index.html#a=" + table.getAttribute("data-club-id") + "&b=" + opponentId);
+      head.appendChild(cmp);
+    }
 
     var close = el("button", "Close", "h2h-close");
     close.setAttribute("type", "button");

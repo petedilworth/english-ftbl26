@@ -2,6 +2,9 @@
 {% macro move(n) -%}
 {% if n is not none and n > 0 %}<span style="color:#2a7">↑{{ n }}</span>{% elif n is not none and n < 0 %}<span style="color:#c33">↓{{ -n }}</span>{% endif %}
 {%- endmacro %}
+{% macro compare(r) -%}
+{%- if r.home_id and r.away_id %} <a href="{{ site_url }}/compare/index.html#a={{ r.home_id }}&b={{ r.away_id }}" style="color:#1a5c9a;font-size:12px;font-weight:normal">compare</a>{% endif -%}
+{%- endmacro %}
 {% block content %}
 <h1 style="font-size:22px;margin-bottom:2px">The Weekend Reviewed</h1>
 <p style="color:#555;margin-top:0">{{ label }}, {{ start.strftime("%d %B") }} to {{ end.strftime("%d %B %Y") }}.
@@ -18,7 +21,7 @@
 {% if history %}
 <h2 style="font-size:16px;border-bottom:2px solid #1a1a1a;margin:18px 0 4px">Results that moved history</h2>
 {% for r in history %}
-<p style="margin:8px 0 2px"><b>{{ r.home }} {{ r.hg }}–{{ r.ag }} {{ r.away }}</b>
+<p style="margin:8px 0 2px"><b>{{ r.home }} {{ r.hg }}–{{ r.ag }} {{ r.away }}</b>{{ compare(r) }}
 <span style="color:#888">{{ r.division_name }}, {{ r.date.strftime("%a %d %b") }}</span><br>
 {{ r.prose | join(" ") }}</p>
 {% if r.cid %}<img src="cid:{{ r.cid }}" alt="Position history" style="max-width:100%;margin:4px 0">{% endif %}
@@ -32,7 +35,7 @@
 {% for r in s.results %}
 <tr><td style="color:#888;padding-right:8px;white-space:nowrap">{{ r.date.strftime("%a %d") }}{% if r.late %} <span title="reached the results file after last week's review">late</span>{% endif %}</td>
 <td style="text-align:right">{{ r.home }}</td><td style="padding:0 6px"><b>{{ r.hg }}–{{ r.ag }}</b></td><td>{{ r.away }}</td>
-<td style="padding-left:8px;white-space:nowrap">{{ move(r.home_move) }} {{ move(r.away_move) }}</td>
+<td style="padding-left:8px;white-space:nowrap">{{ move(r.home_move) }} {{ move(r.away_move) }}</td><td style="padding-left:8px">{{ compare(r) }}</td>
 <td style="color:#666;padding-left:10px">{{ r.tag }}</td></tr>
 {% endfor %}
 </table>
