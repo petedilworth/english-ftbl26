@@ -38,6 +38,8 @@ def test_preview_renders_all_three_speeds_and_writes_claims(tmp_path):
     out = _build(tmp_path, [_fixture()])
     assert "Giant FC" in out.html and "Steady FC" in out.html
     assert config.SITE_URL in out.html  # club names link to the site
+    assert "/compare/index.html#a=giant-fc&amp;b=steady-fc" in out.html or \
+        "/compare/index.html#a=giant-fc&b=steady-fc" in out.html     # every fixture opens its comparison
     assert out.subject.startswith("The week ahead")
     assert out.thin is None
 

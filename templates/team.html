@@ -170,6 +170,14 @@
 {% endif %}
 </div>
 
+<div class="cmp-teambox">
+  <span class="cmp-teambox-title">Compare {{ name }}</span>
+  {% if next_fixture %}{% set opp = next_fixture.away_id if next_fixture.home_id == club_id else next_fixture.home_id %}{% set opp_name = next_fixture.away_name if next_fixture.home_id == club_id else next_fixture.home_name %}
+  <a class="chip" href="{{ root }}/compare/index.html#a={{ next_fixture.home_id }}&b={{ next_fixture.away_id }}">v {{ opp_name }}, {{ next_fixture.date.strftime("%a %-d %b") }}</a>{% endif %}
+  {% if catchment and catchment.rival and catchment.rival.club_id %}<a class="chip" href="{{ root }}/compare/index.html#a={{ club_id }}&b={{ catchment.rival.club_id }}">v {{ catchment.rival.name }}, the nearest club</a>{% endif %}
+  <a class="chip" href="{{ root }}/compare/index.html#a={{ club_id }}">with any club…</a>
+</div>
+
 {% if head_to_head %}
 <h2 id="head-to-head">Head-to-head</h2>
 
@@ -196,7 +204,7 @@
 {# data-src rather than a script tag: the matches are up to 105 KB and
    are fetched by static/h2h.js the first time an opponent is opened,
    not by every reader of the page. #}
-<table class="standings sortable" id="h2h-table" data-club-name="{{ name }}" data-src="h2h-data.js">
+<table class="standings sortable" id="h2h-table" data-club-name="{{ name }}" data-club-id="{{ club_id }}" data-src="h2h-data.js">
   <thead>
     <tr>
       <th data-key="opponent">Opponent</th>

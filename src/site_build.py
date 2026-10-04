@@ -30,6 +30,7 @@ import content  # noqa: E402  (needs _SRC on the path first)
 import hatred as hatred_mod  # noqa: E402  (the most disliked clubs)
 import value as value_mod  # noqa: E402  (which club to buy)
 import grounds as grounds_mod  # noqa: E402  (who owns the ground)
+import compare as compare_mod  # noqa: E402  (two clubs side by side)
 import divisions
 divisions_mod = divisions
 import finances  # noqa: E402  (disclosure states for the club finances table)
@@ -497,8 +498,13 @@ def _row_dict(r) -> dict:
 
 
 class SiteBuilder:
-    def __init__(self, db_path: Path, out_dir: Path, charts_enabled: bool = True):
+    def __init__(self, db_path: Path, out_dir: Path, charts_enabled: bool = True,
+                 fixtures: list[dict] | None = None):
         self.conn = sqlite3.connect(db_path)
+        # The coming week's fixtures, fetched by main() - never by the
+        # builder itself, so a build (and every test) works offline. None
+        # or [] just means no fixtures page and no fixture chips.
+        self.fixtures = [f for f in (fixtures or []) if f.get("home_id") and f.get("away_id")]
         self.conn.row_factory = sqlite3.Row
         self.out = out_dir
         self.charts_enabled = charts_enabled
@@ -1717,6 +1723,8 @@ class SiteBuilder:
                 "team.html", out_dir / "index.html", 2,
                 title=t["canonical_name"],
                 name=t["canonical_name"],
+                club_id=club_id,
+                next_fixture=next((f for f in self.fixtures if club_id in (f["home_id"], f["away_id"])), None),
                 nickname=nickname,
                 color=self.color(club_id),
                 tagline=self._tagline(t),
@@ -3136,12 +3144,13 @@ class SiteBuilder:
         for cid, name, tier in clubs:
             e = records.get(cid) or {"owner_type": "unknown"}
             left = grounds_mod.years_left(e, year)
-            lease = (f"to {e['lease_end']}" if e.get("lease_end") else "") or (e.get("lease_note") or "")
+            end = grounds_mod.lease_end(e)
+            lease = (f"to {end}" if end else "") or (e.get("lease_note") or "")
             rows.append({
                 "club_id": cid, "name": name, "tier": tier, "ground": e.get("ground") or "",
                 "owner_type": e["owner_type"], "type_label": grounds_mod.LABELS[e["owner_type"]],
                 "color": colour[e["owner_type"]], "owner_name": e.get("owner_name") or "",
-                "lease": lease, "lease_end": e.get("lease_end"), "left": left,
+                "lease": lease, "lease_end": end, "left": left,
                 "since": e.get("since"), "disputed": bool(e.get("disputed")),
                 "note": " ".join(str(e.get("note") or "").split()),
                 "sources": [u for u in (e.get("sources") or []) if isinstance(u, str)][:3],
@@ -3188,6 +3197,75 @@ class SiteBuilder:
             stats=stats, types=grounds_mod.OWNER_TYPES, tiers=tiers, rows=rows,
             owner_apart=owner_apart, leases=leases, disputed=disputed,
             researched=grounds_mod.researched(PROJECT_ROOT / "content" / "grounds.yml") or "2026",
+        )
+
+    # ── Compare two clubs ────────────────────────────────────────────────
+
+    def _fixture_rows(self) -> list[dict]:
+        return [{"home_id": f["home_id"], "away_id": f["away_id"], "home_name": f["home_name"],
+                 "away_name": f["away_name"], "tier": f["tier"], "division": f["division_name"],
+                 "date": f["date"].isoformat() if hasattr(f["date"], "isoformat") else str(f["date"]),
+                 "day": f["date"].strftime("%a %-d") if hasattr(f["date"], "strftime") else str(f["date"]),
+                 "time": f.get("time") or ""} for f in self.fixtures]
+
+    def build_compare(self) -> None:
+        """
+        /compare/: any two clubs side by side. The page is one template;
+        compare-index.js lists every club for the picker, and club/<id>.js
+        carries one club's figures, loaded only for the pair on screen.
+        See src/compare.py and static/compare.js.
+        """
+        import json
+
+        index, details = compare_mod.assemble(self.conn, self.club_facts)
+        if not index:
+            return
+        out = self.out / "compare"
+        (out / "club").mkdir(parents=True, exist_ok=True)
+        for cid, d in details.items():
+            (out / "club" / f"{cid}.js").write_text(
+                "window.COMPARE_CLUB = window.COMPARE_CLUB || {};\n"
+                f"window.COMPARE_CLUB[{json.dumps(cid)}] = " + json.dumps(d, separators=(",", ":")) + ";",
+                encoding="utf-8")
+        # Where each tier starts in the whole pyramid, season by season,
+        # for the shaded bands behind the two paths.
+        offsets: dict[int, list[int]] = {}
+        sizes: dict[int, dict[int, int]] = {}
+        for season, tier, n in self.conn.execute(
+                "SELECT season_end_year, tier, COUNT(*) FROM standings GROUP BY 1, 2"):
+            sizes.setdefault(season, {})[tier] = n
+        for season, by_tier in sizes.items():
+            row, above = [0], 0
+            for tier in range(1, 8):
+                above += by_tier.get(tier, 0)
+                row.append(above if tier in by_tier else None)
+            offsets[season] = row
+        fixtures = self._fixture_rows()
+        (out / "compare-index.js").write_text("window.COMPARE_INDEX = " + json.dumps({
+            "clubs": index,
+            "tape": [list(t) for t in compare_mod.TAPE],
+            "levers": [{"key": lv["key"], "label": lv["label"], "group": lv["group"]} for lv in value_mod.LEVERS],
+            "groups": [{"key": g["key"], "label": g["label"]} for g in value_mod.GROUPS],
+            "streaks": compare_mod.STREAK_LABELS,
+            "offsets": offsets,
+            "fixtures": fixtures,
+        }, separators=(",", ":")) + ";", encoding="utf-8")
+        self.render(
+            "compare.html", out / "index.html", 1,
+            title="Compare two clubs", clubs=index, count=len(index), fixtures=fixtures,
+            min_share=round(100 * compare_mod.MIN_SHARE),
+        )
+
+    def build_fixtures(self) -> None:
+        """/fixtures/: the coming week by tier, each match a link to its comparison."""
+        rows = self._fixture_rows()
+        days: dict[str, list[dict]] = {}
+        for f in sorted(rows, key=lambda f: (f["date"], f["tier"], f["time"], f["home_name"])):
+            days.setdefault(f["date"], []).append(f)
+        self.render(
+            "fixtures.html", self.out / "fixtures" / "index.html", 1,
+            title="Fixtures", days=[{"date": d, "label": datetime.date.fromisoformat(d).strftime("%A %-d %B"),
+                                     "fixtures": fs} for d, fs in days.items()],
         )
 
     def _movement_matches(self) -> dict[str, list[dict]]:
@@ -5511,6 +5589,8 @@ class SiteBuilder:
         self.build_matrix()
         self.build_insights()
         self.build_map()
+        self.build_compare()   # after build_teams: reuses self.club_facts
+        self.build_fixtures()
         self.build_digest_archive()
 
         page_count = sum(1 for _ in self.out.rglob("index.html"))
@@ -5524,6 +5604,8 @@ def main() -> int:
     parser.add_argument("--out", type=Path, default=PROJECT_ROOT / "site")
     parser.add_argument("--no-charts", action="store_true",
                         help="skip per-team chart PNGs (faster dev builds)")
+    parser.add_argument("--no-fixtures", action="store_true",
+                        help="don't fetch the coming week's fixtures (offline builds)")
     args = parser.parse_args()
 
     logging.basicConfig(level=logging.INFO, format="%(levelname)-8s %(message)s")
@@ -5531,7 +5613,18 @@ def main() -> int:
         logger.error("Database not found at %s — run the pipeline first", args.db_path)
         return 1
 
-    SiteBuilder(args.db_path, args.out, charts_enabled=not args.no_charts).build()
+    fixtures: list[dict] = []
+    if not args.no_fixtures:
+        # Best effort: the fixtures page and the compare chips are a bonus,
+        # and a fetch failure must never stop the site deploying.
+        try:
+            from editions.preview import load_fixture_list
+            conn = sqlite3.connect(args.db_path)
+            fixtures = load_fixture_list(conn, datetime.date.today())
+            conn.close()
+        except Exception as exc:
+            logger.warning("Fixtures not fetched: %s", exc)
+    SiteBuilder(args.db_path, args.out, charts_enabled=not args.no_charts, fixtures=fixtures).build()
     return 0
 
 

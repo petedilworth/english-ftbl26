@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Compare two clubs</h1>
+<p class="subtitle">Any two of the {{ count }} clubs on record, side by side on everything the site knows. Pick two, or open a fixture below. The pair is kept in the link.</p>
+
+<form class="cmp-picker" id="cmp-picker" autocomplete="off">
+  <label class="cmp-pick cmp-pick-a"><span class="cmp-pick-label"><span class="cmp-dot cmp-dot-a"></span>Club A</span>
+    <input type="search" id="cmp-a" list="cmp-clubs" placeholder="Type a club" aria-label="First club"></label>
+  <button type="button" class="chip cmp-swap" id="cmp-swap" aria-label="Swap the two clubs" title="Swap">⇄</button>
+  <label class="cmp-pick cmp-pick-b"><span class="cmp-pick-label"><span class="cmp-dot cmp-dot-b"></span>Club B</span>
+    <input type="search" id="cmp-b" list="cmp-clubs" placeholder="Type a club" aria-label="Second club"></label>
+  <datalist id="cmp-clubs">
+    {% for c in clubs %}<option value="{{ c.name }}">{% if c.live %}Tier {{ c.tier }}{% else %}last played {{ c.last }}{% endif %}</option>{% endfor %}
+  </datalist>
+</form>
+<div class="cmp-quick">
+  <button type="button" class="chip" id="cmp-random">Random pair</button>
+  <button type="button" class="chip" id="cmp-derby">A's nearest rival</button>
+  {% if fixtures %}<a class="chip" href="{{ root }}/fixtures/index.html">All {{ fixtures | length }} fixtures this week</a>{% endif %}
+</div>
+{% if fixtures %}
+<div class="map-chips chip-row cmp-fixtures" role="group" aria-label="This week's fixtures">
+  {% for f in fixtures[:16] %}<a class="chip" href="#a={{ f.home_id }}&b={{ f.away_id }}">{{ f.home_name }} v {{ f.away_name }} <span class="chip-count">{{ f.day }}</span></a>{% endfor %}
+</div>
+{% endif %}
+
+<p class="finance-note" id="cmp-empty">Choose two clubs to compare. Try <a href="#a=walsall-fc&b=wolverhampton-wanderers-fc">Walsall v Wolves</a>, <a href="#a=wimbledon-fc&b=afc-wimbledon">Wimbledon FC v AFC Wimbledon</a> or <a href="#a=manchester-city-fc&b=manchester-united-fc">the Manchester derby</a>.</p>
+
+<div id="cmp-body" hidden>
+  <div class="cmp-head" id="cmp-head"></div>
+  <nav class="cmp-jump" aria-label="Sections">
+    <a href="#tape">Tape</a><a href="#form">Form</a><a href="#h2h">Head to head</a><a href="#paths">Paths</a><a href="#together">Same division</a><a href="#battle">Catchment</a><a href="#facts">Side by side</a><a href="#feeling">Dislike</a><a href="#value">Value</a><a href="#streaks">Runs</a><a href="#money">Accounts</a>
+    <button type="button" class="chip" id="cmp-copy">Copy link</button>
+  </nav>
+
+  <h2 id="tape">Tale of the tape</h2>
+  <p class="subtitle">Each bar is where the club stands among every club on record with that figure: a full bar is the best in English football, no bar the worst. The figure itself is at the end of the bar; the stronger of the two is in bold. Rows marked ◇ are facts, not contests.</p>
+  <div class="cmp-legend"><span><span class="cmp-dot cmp-dot-a"></span><span class="cmp-name-a"></span></span><span><span class="cmp-dot cmp-dot-b"></span><span class="cmp-name-b"></span></span></div>
+  <div class="cmp-tape" id="cmp-tape"></div>
+
+  <h2 id="form">Form</h2>
+  <div class="cmp-form" id="cmp-form"></div>
+
+  <h2 id="h2h">Head to head</h2>
+  <div id="cmp-h2h"><p class="finance-note">Loading the meetings…</p></div>
+
+  <h2 id="paths">Two paths through the pyramid</h2>
+  <p class="subtitle">Place in the whole pyramid each season, top of the Premier League at the top. Shaded bands are the tiers; dots along the bottom are seasons they met in the league. Hover a point for the season.</p>
+  <div class="chart-holder"><svg id="cmp-paths" viewBox="0 0 760 360" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Both clubs' places in the pyramid by season"></svg></div>
+  <div id="cmp-crossings" class="finance-note"></div>
+
+  <h2 id="together">Seasons in the same division</h2>
+  <div id="cmp-same"></div>
+
+  <h2 id="battle">Catchment battle</h2>
+  <p class="subtitle">Every neighbourhood where either club draws at least {{ min_share }}% of the people, coloured by who draws more and shaded by how much. Ringed neighbourhoods are contested: both clubs draw at least 15%.</p>
+  <div class="cmp-battle-stats" id="cmp-battle-stats"></div>
+  <div id="cmp-map" class="map-canvas"></div>
+  <p class="finance-note">From the catchment model, with every club at its current level: modelled, not counted. A club that is no longer playing has no catchment.</p>
+
+  <h2 id="facts">Side by side</h2>
+  <div class="table-scroll"><table class="standings cmp-facts" id="cmp-facts"></table></div>
+
+  <h2 id="feeling">How they are disliked</h2>
+  <p class="subtitle">The four kinds from <a href="{{ root }}/insights/hatred/index.html">the most disliked clubs</a>, each scaled so the most envied, resented, mocked or despised club scores 1.</p>
+  <div class="cmp-tape" id="cmp-hatred"></div>
+
+  <h2 id="value">The value levers</h2>
+  <p class="subtitle">The fourteen levers from <a href="{{ root }}/insights/value/index.html">which club to buy</a>, each a percentile across this season's tiers 1–7. A lever with no data is left blank here rather than counted at the middle.</p>
+  <div class="cmp-tape" id="cmp-levers"></div>
+
+  <h2 id="streaks">Runs on record</h2>
+  <div class="table-scroll"><table class="standings cmp-facts" id="cmp-streaks"></table></div>
+
+  <h2 id="money">The accounts</h2>
+  <div class="table-scroll"><table class="standings cmp-facts" id="cmp-money"></table></div>
+</div>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="compare-index.js"></script>
+<script src="{{ root }}/static/hash-state.js"></script>
+<script src="{{ root }}/static/compare.js"></script>
+{% endblock %}

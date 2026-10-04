@@ -108,6 +108,7 @@ def test_the_window_is_the_seven_days_before_and_nothing_else(tmp_path, archive_
     assert "4–0" in out.html and "2–2" in out.html
     assert "Tue 01" in out.html            # the midweek before the weekend
     assert "Mon 07" not in out.html        # the review's own date
+    assert "/compare/index.html#a=" in out.html  # every result opens its comparison
     assert out.subject.endswith("3 results")
     assert out.table["a-fc"]["position"] == 1
     assert out.extra["covered"] == sorted([
