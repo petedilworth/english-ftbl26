@@ -35,6 +35,7 @@ import yoyo as yoyo_mod  # noqa: E402  (yo-yo clubs)
 import income as income_mod  # noqa: E402  (income around the ground)
 import luck as luck_mod  # noqa: E402  (points against expected points)
 import deprivation as deprivation_mod  # noqa: E402  (deprivation around the ground)
+import sources as sources_mod  # noqa: E402  (where every page's data comes from)
 import divisions
 divisions_mod = divisions
 import finances  # noqa: E402  (disclosure states for the club finances table)
@@ -1812,6 +1813,51 @@ class SiteBuilder:
             has_club_table=self._has_club_table(),
         )
 
+    def build_sources(self) -> None:
+        """
+        /sources/: every page's data sources, from src/sources.py, with the
+        dates that move filled in from the data itself.
+        """
+        import json
+
+        as_of: dict[str, str] = {}
+        try:
+            last = self.conn.execute("SELECT MAX(match_date) FROM matches").fetchone()[0]
+            if last:
+                as_of["football-data"] = f"Results to {datetime.date.fromisoformat(last):%-d %B %Y}"
+        except (sqlite3.Error, ValueError):
+            pass
+        try:
+            pop_year, inc_year = self.conn.execute(
+                "SELECT MAX(population_year), MAX(net_income_year) FROM msoa_demographics").fetchone()
+            if pop_year:
+                as_of["ons-population"] = f"Mid-{pop_year} estimates"
+            if inc_year:
+                as_of["ons-income"] = f"Financial year ending {inc_year}"
+        except sqlite3.Error:
+            pass
+        accounts = self._accounts_season()
+        if accounts:
+            as_of["finances"] = f"Accounts to {season_label(accounts)}"
+        meta = PROJECT_ROOT / "data" / "msoa_deprivation.meta.json"
+        if meta.exists():
+            try:
+                fetched = json.loads(meta.read_text(encoding="utf-8")).get("fetched")
+                if fetched:
+                    as_of["deprivation"] = f"2025 release, fetched {datetime.date.fromisoformat(fetched):%-d %B %Y}"
+            except ValueError:
+                pass
+        grounds_file = PROJECT_ROOT / "content" / "grounds.yml"
+        if grounds_file.exists():
+            when = grounds_mod.researched(grounds_file)
+            if when:
+                as_of["grounds"] = f"Researched {when}"
+        used = sources_mod.used_by()
+        sources = [dict(src, key=k, as_of=as_of.get(k), used_by=used[k])
+                   for k, src in sources_mod.SOURCES.items()]
+        self.render("sources.html", self.out / "sources" / "index.html", 1,
+                    title="Sources", pages=sources_mod.by_page(), sources=sources)
+
     def build_chart_redirect(self) -> None:
         """
         The trajectory chart page is gone - Compare does the job better -
@@ -1883,6 +1929,8 @@ class SiteBuilder:
         ("ground_years", "Years there", "Ground", True),
         ("previous_grounds", "Former grounds", "Ground", True),
         ("ground_ownership", "Ground owned", "Ground", False),
+        ("ground_security", "Security", "Ground", True),
+        ("lease_left", "Lease years left", "Ground", True),
         ("pitch_type", "Pitch", "Ground", False),
         ("ownership_model", "Ownership", "Ownership", False),
         ("owner", "Owner", "Ownership", False),
@@ -1900,10 +1948,22 @@ class SiteBuilder:
         ("voronoi", "People nearest", "Catchment", True),
         ("contested", "Contested", "Catchment", True),
         ("catchment_income", "Household income", "Catchment", True),
+        ("income_spread", "Income spread", "Catchment", True),
+        ("income_gap", "Richest-poorest gap", "Catchment", True),
         ("nearest", "Nearest club", "Catchment", False),
         ("nearest_tier", "Its tier", "Catchment", True),
         ("nearest_miles", "Miles", "Catchment", True),
         ("located", "Placed at", "Catchment", False),
+        ("dep_overall", "Deprivation", "Deprivation", True),
+        ("dep_tenth", "In most deprived tenth", "Deprivation", True),
+        ("dep_worst", "Worst measure", "Deprivation", False),
+        ("luck_last", "Last season", "Luck", True),
+        ("luck_now", "This season", "Luck", True),
+        ("luck_avg", "Average a season", "Luck", True),
+        ("luck_seasons", "Seasons priced", "Luck", True),
+        ("dislike", "Dislike index", "Indexes", True),
+        ("value", "Value index", "Indexes", True),
+        ("value_gap", "Value v its tier", "Indexes", True),
     ]
 
     def _accounts_season(self) -> int | None:
@@ -2030,7 +2090,58 @@ class SiteBuilder:
                 "finances": finances, "accounts_season": accounts_season,
                 "catchment": catchment, "grounds": grounds, "names": names,
                 "career": career, "docked_times": docked_times,
-                "precision": precision, "tiers": tiers}
+                "precision": precision, "tiers": tiers,
+                "extras": self._club_table_extras(season)}
+
+    def _club_table_extras(self, season: int) -> dict:
+        """
+        The figures the insight pages compute, per club, so the all-clubs
+        table carries everything the site knows: income spread, deprivation,
+        luck, and the dislike and value indexes at their default weights.
+        Each part is optional - a missing source blanks its columns and
+        never breaks the table.
+        """
+        out: dict[str, dict] = {"income": {}, "dep": {}, "luck": {}, "dislike": {}, "value": {}}
+        try:
+            out["income"] = {c["club_id"]: c for c in income_mod.assemble(self.conn).get("clubs", [])}
+        except Exception as exc:
+            logger.warning("all-clubs table: income skipped: %s", exc)
+        try:
+            d = deprivation_mod.assemble(self.conn, PROJECT_ROOT / "data" / "msoa_deprivation.csv")
+            labels = [x["label"] for x in d.get("domains", [])]
+            for c in d.get("clubs", []):
+                main = c["d"][:7]
+                worst = max(range(len(main)), key=lambda i: main[i])
+                out["dep"][c["club_id"]] = {"overall": c["official"], "tenth": c["bottom10"],
+                                            "worst": f"{labels[worst]} ({main[worst]:.0f})"}
+        except Exception as exc:
+            logger.warning("all-clubs table: deprivation skipped: %s", exc)
+        try:
+            cs = luck_mod.ranked(luck_mod.club_seasons(luck_mod.load_matches(self.conn)), "o")
+            if not cs.empty:
+                newest = int(cs["season"].max())
+                for cid, g in cs.groupby("club_id"):
+                    last = g[g["season"] == season]
+                    now = g[g["season"] == newest] if newest > season else g.iloc[0:0]
+                    done = g[g["season"] < newest]
+                    out["luck"][cid] = {
+                        "last": float(last["luck_o"].sum()) if len(last) else None,
+                        "now": float(now["luck_o"].sum()) if len(now) else None,
+                        "avg": float((done["luck_o"] / done["n_o"] * 38).mean()) if len(done) else None,
+                        "seasons": int(len(done)),
+                    }
+        except Exception as exc:
+            logger.warning("all-clubs table: luck skipped: %s", exc)
+        try:
+            rows = hatred_mod.score_clubs(self.conn, hatred_mod.load_curated())
+            out["dislike"] = hatred_mod.hatred_index(hatred_mod.normalised(rows))
+        except Exception as exc:
+            logger.warning("all-clubs table: dislike index skipped: %s", exc)
+        try:
+            out["value"] = value_mod.tier_gap(value_mod.score_clubs(self.conn, self.club_facts))
+        except Exception as exc:
+            logger.warning("all-clubs table: value index skipped: %s", exc)
+        return out
 
     def _club_table_row(self, club_id: str, data: dict, season: int) -> list[dict]:
         """One club's cells, in CLUB_TABLE_COLUMNS order."""
@@ -2231,6 +2342,40 @@ class SiteBuilder:
         # Whether the club's own coordinate is a surveyed ground or a town
         # centre, which every catchment figure on this row inherits.
         values["located"] = cell(data["precision"].get(club_id) or None)
+
+        # The insight pages' figures: see _club_table_extras.
+        ex = data.get("extras", {})
+        entry = (facts.get("ground") or {}) if isinstance(facts.get("ground"), dict) else {}
+        if entry:
+            sec = grounds_mod.security(entry, season)
+            left = grounds_mod.years_left(entry, season)
+            values["ground_security"] = cell(f"{sec * 100:.0f}" if sec is not None else None,
+                                             sort=sec, num=True)
+            values["lease_left"] = cell(left, num=True)
+        inc = ex.get("income", {}).get(club_id)
+        if inc:
+            values["income_spread"] = cell(f"\u00a3{inc['sd']:,}", sort=inc["sd"], num=True)
+            values["income_gap"] = cell(f"\u00a3{inc['gap']:,}", sort=inc["gap"], num=True)
+        dep = ex.get("dep", {}).get(club_id)
+        if dep:
+            values["dep_overall"] = cell(f"{dep['overall']:.0f}", sort=dep["overall"], num=True)
+            values["dep_tenth"] = cell(f"{dep['tenth']:.0%}", sort=dep["tenth"], num=True)
+            values["dep_worst"] = cell(dep["worst"])
+        lk = ex.get("luck", {}).get(club_id)
+        if lk:
+            def signed(v):
+                return cell(f"{v:+.1f}" if v is not None else None, sort=v, num=True)
+            values["luck_last"] = signed(lk["last"])
+            values["luck_now"] = signed(lk["now"])
+            values["luck_avg"] = signed(lk["avg"])
+            values["luck_seasons"] = cell(lk["seasons"] or None, num=True)
+        dislike = ex.get("dislike", {}).get(club_id)
+        if dislike is not None:
+            values["dislike"] = cell(f"{dislike:.0f}", sort=dislike, num=True)
+        val = ex.get("value", {}).get(club_id)
+        if val:
+            values["value"] = cell(f"{val['index']:.0f}", sort=val["index"], num=True)
+            values["value_gap"] = cell(f"{val['gap']:+.0f}", sort=val["gap"], num=True)
 
         return [values.get(key, cell(num=num))
                 for key, _label, _group, num in self.CLUB_TABLE_COLUMNS]
@@ -6079,6 +6224,7 @@ class SiteBuilder:
         self.build_club_table()  # after build_teams: reuses self.club_facts
         self.build_themes()   # after build_teams: consumes self.club_themes
         self.build_chart_redirect()
+        self.build_sources()
         self.build_matrix()
         self.build_insights()
         self.build_map()

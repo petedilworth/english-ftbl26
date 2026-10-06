@@ -1006,3 +1006,12 @@ tr.wages-over td:nth-child(7) { font-weight: 600; }
 .dep-legend { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--muted); margin: 6px 0; flex-wrap: wrap; }
 .dep-legend-ramp { display: inline-flex; height: 10px; width: 180px; border-radius: 2px; overflow: hidden; }
 .dep-legend-ramp span { flex: 1; }
+/* Sources */
+.sources-pages td:first-child { width: 34%; }
+.sources-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
+.sources-card { border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; }
+.sources-card h3 { margin: 0 0 6px; font-size: 16px; }
+.sources-card p { margin: 0 0 8px; font-size: 14px; }
+.sources-card dl { display: grid; grid-template-columns: 6.5em 1fr; gap: 3px 8px; margin: 0; font-size: 13px; }
+.sources-card dt { color: var(--muted); }
+.sources-card dd { margin: 0; }

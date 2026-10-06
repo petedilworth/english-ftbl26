@@ -354,3 +354,21 @@ def test_the_sort_state_is_written_to_the_url():
     assert "replaceState" in hash_state, (
         "sorting should replace the history entry, not stack one per click")
     assert "hashchange" in js, "a pasted link must apply without a reload"
+
+
+def test_the_table_carries_every_insight_figure():
+    # Luck, deprivation, income spread, ground security and the two indexes
+    # all reach the all-clubs table, and Arsenal - priced, mapped and
+    # researched - has every one of them.
+    from site_build import SiteBuilder
+    keys = [c[0] for c in SiteBuilder.CLUB_TABLE_COLUMNS]
+    new = ["ground_security", "income_spread", "income_gap", "dep_overall", "dep_tenth", "dep_worst",
+           "luck_last", "luck_now", "luck_avg", "luck_seasons", "dislike", "value", "value_gap"]
+    assert set(new) <= set(keys)
+    html = _page()
+    header = re.findall(r'data-key="([^"]+)"', html)[:len(keys)]
+    first = _bodies(html)[0]
+    arsenal = next(r for r in _rows(first) if ">Arsenal<" in r)
+    cells = dict(zip(header, _cells(arsenal)))
+    for k in new:
+        assert cells[k], f"Arsenal has no {k}"
