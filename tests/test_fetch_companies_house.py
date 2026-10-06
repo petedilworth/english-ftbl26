@@ -185,3 +185,9 @@ def test_nearness_alone_never_matches_a_company_that_is_not_a_football_club():
     d = fch.decide({"name": "Quorn", "coords": (52.74, -1.17)}, scored,
                    {"2": {"profile": {"company_status": "active"}}}, {"2": (52.74, -1.17)})
     assert d["state"] == "auto"
+
+
+def test_a_womens_side_or_academy_is_never_matched_as_the_club():
+    assert fch.side_company("WEST HAM UNITED WOMEN FOOTBALL CLUB LIMITED", "West Ham United")
+    assert fch.side_company("BURNLEY FC IN THE COMMUNITY", "Burnley")
+    assert not fch.side_company("WEST HAM UNITED FOOTBALL CLUB LIMITED", "West Ham United")

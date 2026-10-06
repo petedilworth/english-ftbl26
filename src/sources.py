@@ -172,7 +172,9 @@ PAGES = [
     ]),
     ("Clubs", [
         ("Team pages", "teams/index.html",
-         RESULTS + ["wikipedia-clubs", "club-facts", "grounds", "finances", "ons-population", "models"], ""),
+         RESULTS + ["wikipedia-clubs", "club-facts", "grounds", "finances", "companies-house", "ons-population",
+                    "ons-income", "deprivation", "models"],
+         "Club facts include the register's company, controller, secured loans and warning lights."),
         ("All clubs, all data", "teams/table/index.html",
          RESULTS + ["wikipedia-clubs", "club-facts", "grounds", "finances", "ons-population", "ons-income",
                     "deprivation", "hatred", "companies-house", "models"],

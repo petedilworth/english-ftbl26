@@ -45,6 +45,9 @@
 <img class="chart-img" src="chart.png" alt="{{ name }} league position history">
 <p class="chart-legend"><span><span class="dot up"></span>promotion</span><span><span class="dot down"></span>relegation</span></p>
 {% endif %}
+{% if luck and (luck.now is not none or luck.avg is not none) %}
+<p class="team-luck">{% if luck.now is not none %}<b>Luck this season: <span class="{{ 'luck-pos' if luck.now > 0 else 'luck-neg' if luck.now < 0 else '' }}">{{ "%+.1f" % luck.now }}</span></b> – {{ luck.now_pts }} points from {{ luck.now_played }} games the betting odds made worth {{ "%.1f" % luck.now_xo }}. {% endif %}{% if luck.avg is not none and luck.seasons >= 3 %}Over {{ luck.seasons }} seasons with odds it averages {{ "%+.1f" % luck.avg }} a season, {% if luck.avg | abs < 3 %}which is as close to nothing as luck gets.{% elif luck.avg > 0 %}more than most.{% else %}less than most.{% endif %} {% endif %}<a href="{{ root }}/insights/luck/index.html">How luck works</a></p>
+{% endif %}
 
 {% if club_themes %}
 <div class="theme-chips">
@@ -119,7 +122,10 @@
       <span class="finance-rank" title="What the club would draw restored to its highest recorded level, with every other club left where it is">{{ catchment.restored }} restored to its ceiling</span>{% endif %}</td>
   </tr>
   {% if catchment.income %}
-  <tr><th>Their net household income</th><td>{{ catchment.income }}</td></tr>
+  <tr><th>Their net household income</th><td>{{ catchment.income }}{% if income_spread %}<span class="finance-rank">spread £{{ "{:,}".format(income_spread.sd) }}; richest tenth £{{ "{:,}".format(income_spread.gap) }} above the poorest</span>{% endif %}</td></tr>
+  {% endif %}
+  {% if deprivation %}
+  <tr><th>Deprivation around it</th><td><a href="{{ root }}/insights/deprivation/index.html#club={{ club_id }}">{{ "%.0f" % deprivation.overall }}</a> <span class="finance-rank">England 50 · worst: {{ deprivation.worst }} · {{ (deprivation.tenth * 100) | round | int }}% in the most deprived tenth</span></td></tr>
   {% endif %}
   {% if catchment.contested %}
   <tr>

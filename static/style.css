@@ -1022,3 +1022,5 @@ tr.wages-over td:nth-child(7) { font-weight: 600; }
 .companies-countries .chip { cursor: default; white-space: nowrap; }
 .companies-via, .companies-lenders { font-size: 12px; color: var(--muted); }
 .companies-missing summary { cursor: pointer; color: var(--accent); margin: 12px 0; }
+.fact-check { display: inline-block; margin-left: 6px; font-size: 11px; color: #c4521f; border: 1px solid #f0c2ad; border-radius: 999px; padding: 0 6px; }
+.team-luck { font-size: 14px; margin: 4px 0 14px; }

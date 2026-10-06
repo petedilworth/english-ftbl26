@@ -338,6 +338,27 @@ def rivalry_anchor(club_a: str, club_b: str) -> str:
     return "--".join(sorted((club_a, club_b)))
 
 
+def _place_register_rows(rows: list[dict], extra: list[dict]) -> list[dict]:
+    """
+    Slot the register's rows in beside what they speak to: the company and
+    its controller straight after the researched owner (so "differs from
+    the owner above" sits under it), the lease after the ground's ownership.
+    Anything with no anchor goes at the end.
+    """
+    rows = list(rows)
+
+    def after(labels, new):
+        idx = max((i for i, r in enumerate(rows) if r["label"] in labels), default=None)
+        at = len(rows) if idx is None else idx + 1
+        rows[at:at] = new
+
+    lease = [r for r in extra if r["label"] == "Lease"]
+    owner_block = [r for r in extra if r["label"] != "Lease"]
+    after({"Ground ownership", "Stadium"}, lease)
+    after({"Owner", "Ownership model", "Multi-club group"}, owner_block)
+    return rows
+
+
 def _facts_rows(facts: dict, club_names: dict[str, str] | None = None) -> list[dict]:
     """
     Turn front-matter into an ordered list of {label, value} rows for the
@@ -1674,6 +1695,58 @@ class SiteBuilder:
             "window.H2H = " + json.dumps(payload, separators=(",", ":")) + ";",
             encoding="utf-8")
 
+    def _register_rows(self, club_id: str, facts: dict, extras: dict) -> list[dict]:
+        """
+        Club-facts rows from Companies House and the grounds research: the
+        company, its controller beside the researched owner (flagged when
+        they differ), secured lending, the lease and the insolvency record.
+        """
+        from markupsafe import Markup, escape
+
+        rows = []
+        entry = facts.get("ground") if isinstance(facts.get("ground"), dict) else None
+        complete = self._complete_season()
+        if entry and complete:
+            left = grounds_mod.years_left(entry, complete)
+            end = grounds_mod.lease_end(entry)
+            if left is not None and entry.get("owner_type") in ("council", "landlord", "other_club"):
+                rows.append({"label": "Lease", "value": f"{left} years left" + (f" (to {end})" if end else "")})
+        reg = extras.get("register", {}).get(club_id)
+        if not reg:
+            return rows
+        url = f"https://find-and-update.company-information.service.gov.uk/company/{reg['number']}"
+        status = "" if reg["status"] in ("active", None) else f" · {reg['status']}"
+        rows.append({"label": "Company", "value": Markup(
+            f'<a href="{escape(url)}">{escape((reg["company"] or "").title())}</a>'
+            f'<span class="finance-rank">{escape(reg["number"])}{escape(status)}</span>')})
+        ctl = reg["controller"]
+        if ctl["name"]:
+            text = escape(ctl["name"])
+            detail = ", ".join(x for x in (ctl["where"], ctl["band"]) if x)
+            via = (" through " + " → ".join(v.title() for v in ctl["via"])) if ctl["via"] else ""
+            check = ""
+            if facts.get("owner") and not companies_mod.agrees(facts["owner"], ctl):
+                check = '<span class="fact-check">differs from the owner above</span>'
+            rows.append({"label": "On the register", "value": Markup(
+                f"{text}<span class=\"finance-rank\">{escape(detail)}{escape(via)}</span>{check}")})
+        else:
+            rows.append({"label": "On the register", "value": "No single controller – no one holds a quarter"})
+        ch = reg["charges"]
+        if ch["outstanding"]:
+            lenders = "; ".join(ch["lenders"][:3]) + (f" and {len(ch['lenders']) - 3} more" if len(ch["lenders"]) > 3 else "")
+            what = "including over land or the ground" if ch["property"] else "none naming land"
+            rows.append({"label": "Secured loans", "value": Markup(
+                f"{ch['outstanding']} outstanding, {escape(what)}"
+                f'<span class="finance-rank">{escape(lenders)}</span>')})
+        elif ch["total"]:
+            rows.append({"label": "Secured loans", "value": f"None outstanding ({ch['satisfied']} repaid)"})
+        record = [f"{(i.get('type') or '').replace('-', ' ')} {((i.get('dates') or [{}])[0].get('date') or '')[:4]}".strip()
+                  for i in reg["insolvency"]]
+        flags = [w for w in reg["warnings"] if w != "insolvency history"]
+        if record or flags:
+            rows.append({"label": "Warning lights", "value": "; ".join(flags + record)})
+        return rows
+
     def build_teams(self) -> None:
         import markdown as md
 
@@ -1691,6 +1764,12 @@ class SiteBuilder:
         club_names = dict(self.conn.execute(
             "SELECT club_id, canonical_name FROM club_master"
         ))
+
+        # The season only steers the luck columns; the register, deprivation
+        # and income need none, so a database with no finished season still
+        # gets them.
+        complete = self._complete_season()
+        extras = self._club_table_extras(complete if complete is not None else self.seasons[-1])
 
         teams_meta = []
         for t in trajectories:
@@ -1727,6 +1806,10 @@ class SiteBuilder:
                 facts_rows = _facts_rows({**club_content["facts"], "_club_id": club_id}, club_names)
                 self.club_facts[club_id] = club_content["facts"]
                 nickname = club_content["facts"].get("nickname")
+            # From the register and the grounds research: shown for every
+            # club the register covers, researched facts or not.
+            facts_rows = _place_register_rows(facts_rows, self._register_rows(
+                club_id, (club_content or {}).get("facts", {}), extras))
             # Chips for the theme pages this club is on - only pages that
             # will actually be built, so a chip never links to nothing.
             mine = sorted(slug for slug, ids in self.theme_members.items()
@@ -1776,6 +1859,9 @@ class SiteBuilder:
                 club_themes=club_themes,
                 finances=self._club_finances(club_id),
                 catchment=self._club_catchment(club_id),
+                deprivation=extras["dep"].get(club_id),
+                income_spread=extras["income"].get(club_id),
+                luck=extras["luck"].get(club_id),
                 seasons=seasons,
                 seasons_have_deductions=any(d["points_deducted"] for d in seasons),
                 head_to_head=self._h2h_section(
@@ -2097,9 +2183,16 @@ class SiteBuilder:
                 "catchment": catchment, "grounds": grounds, "names": names,
                 "career": career, "docked_times": docked_times,
                 "precision": precision, "tiers": tiers,
-                "extras": self._club_table_extras(season)}
+                "extras": dict(self._club_table_extras(season), value=self._value_extras())}
 
     def _club_table_extras(self, season: int) -> dict:
+        """Cached: the team pages and the all-clubs table both read these."""
+        cache = getattr(self, "_extras_cache", None)
+        if cache is None or cache[0] != season:
+            self._extras_cache = (season, self._club_table_extras_uncached(season))
+        return self._extras_cache[1]
+
+    def _club_table_extras_uncached(self, season: int) -> dict:
         """
         The figures the insight pages compute, per club, so the all-clubs
         table carries everything the site knows: income spread, deprivation,
@@ -2140,6 +2233,10 @@ class SiteBuilder:
                         "now": float(now["luck_o"].sum()) if len(now) else None,
                         "avg": float((done["luck_o"] / done["n_o"] * 38).mean()) if len(done) else None,
                         "seasons": int(len(done)),
+                        "now_pts": int(now["pts"].sum()) if len(now) else None,
+                        "now_xo": float(now["xpts_o"].sum()) if len(now) else None,
+                        "now_played": int(now["played"].sum()) if len(now) else None,
+                        "newest": newest,
                     }
         except Exception as exc:
             logger.warning("all-clubs table: luck skipped: %s", exc)
@@ -2148,11 +2245,19 @@ class SiteBuilder:
             out["dislike"] = hatred_mod.hatred_index(hatred_mod.normalised(rows))
         except Exception as exc:
             logger.warning("all-clubs table: dislike index skipped: %s", exc)
+        return out
+
+    def _value_extras(self) -> dict:
+        """
+        The value index needs every club's facts, which build_teams loads,
+        so it is computed when the table is built and never cached with the
+        rest - a team page asking first would have frozen it half-filled.
+        """
         try:
-            out["value"] = value_mod.tier_gap(value_mod.score_clubs(self.conn, self.club_facts))
+            return value_mod.tier_gap(value_mod.score_clubs(self.conn, self.club_facts))
         except Exception as exc:
             logger.warning("all-clubs table: value index skipped: %s", exc)
-        return out
+            return {}
 
     def _club_table_row(self, club_id: str, data: dict, season: int) -> list[dict]:
         """One club's cells, in CLUB_TABLE_COLUMNS order."""
