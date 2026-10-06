@@ -1,0 +1,13 @@
+Club accounts read 2026-10-06
+Documents: 270 iXBRL, 109 PDF only
+INFO     196 rows read from 270 documents
+INFO        by disclosure: {'small_company': 192, 'full': 4}
+INFO        clubs: 109
+INFO     70 already collected by hand, left alone: barnsley-fc 2025, barnsley-fc 2024, blackpool-fc 2025, blackpool-fc 2024, bristol-city-fc 2025, bristol-rovers-fc 2025
+WARNING  109 filings are PDF only and carry no tagged figures
+WARNING  4 documents could not be read:
+WARNING      oxford-city-fc__1.xhtml            tagged, but nothing recognised in it - saw AccountingStandardsApplied, AccountsStatusAuditedOrUnaudited, AccountsType, AddressLine1, AddressLine2, AddressLine3, ApplicableLegislation, AverageNumberEmployeesDuringPeriod
+WARNING      oxford-city-fc__2.xhtml            tagged, but nothing recognised in it - saw AccountingStandardsApplied, AccountsStatusAuditedOrUnaudited, AccountsType, AddressLine1, AddressLine2, AddressLine3, ApplicableLegislation, AverageNumberEmployeesDuringPeriod
+WARNING      whitby-town-fc__1.xhtml            no period end date 
+WARNING      whitby-town-fc__2.xhtml            no period end date 
+INFO     appended 196 rows to club_finances.csv
