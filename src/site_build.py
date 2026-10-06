@@ -2776,7 +2776,7 @@ class SiteBuilder:
             story("yo-yo", "Yo-yo clubs",
                   "Bounce runs, the elastic between divisions, and who is bouncing right now"),
             story("fallen-giants", "Fallen giants & risers",
-                  "Long falls and great climbs"),
+                  "Champions who fell to the third tier, the odds of coming back, and the sleeping giants"),
             story("records", "Records & extremes", "The best and worst seasons"),
             story("timeline", "Timeline", "Notable events in the pyramid"),
         ]
@@ -4016,7 +4016,7 @@ class SiteBuilder:
 
     def _movement_page(
         self, by_pattern, *, slug, title, intro, patterns, outcome_of,
-        groups, featured_heading, event_column, stats_fn, feature_key,
+        groups, featured_heading, event_column, stats_fn, feature_key, see_also=None,
     ) -> None:
         """
         Shared renderer for The drop and The rise. The two pages differ only
@@ -4124,6 +4124,7 @@ class SiteBuilder:
             span_label=f"{season_label(self.seasons[0])}–{season_label(latest)}",
             event_column=event_column,
             tier_key=tier_key,
+            see_also=see_also,
         )
 
     def _insight_the_drop(self, by_pattern: dict[str, list[dict]]) -> None:
@@ -4143,6 +4144,8 @@ class SiteBuilder:
         self._movement_page(
             by_pattern,
             slug="the-drop",
+            see_also=("How likely is a way back? The odds, season by season out of the top flight, "
+                      "are on <a href=\"../fallen-giants/index.html#odds\">Fallen giants &amp; risers</a>."),
             title="The drop",
             intro="Clubs that fell through the divisions in a tight cluster — "
                   "and whether they ever came back.",
@@ -5489,93 +5492,93 @@ class SiteBuilder:
         )
 
     def _insight_fallen_giants(self) -> None:
-        # club_trajectory.current_tier is the tier of a club's LAST recorded
-        # season, not of this one, and 189 of the 305 clubs here have data
-        # that has stopped - 116 of them the sixth and seventh tiers, which
-        # end in 2018/19. Printing that under a column headed "Now" asserts
-        # a present tense the data cannot support, and it was doing so:
-        # WIMBLEDON FC, whose last season was 2002/03 and who were dissolved
-        # in 2004, appeared under "The risers" as a club that now plays in
-        # the top two divisions.
-        #
-        # The test is the one trajectory.py:155 already uses for is_active -
-        # whether the club's last recorded season is the latest season. The
-        # clubs it excludes are named in the note rather than dropped
-        # silently, because "not playing any more" is the interesting half
-        # of a page about clubs a long way from where they were.
-        latest = max(self.seasons)
+        """
+        Fallen giants & risers: champions who fell to the third tier, this
+        season's giants, the odds of returning to the top flight, the
+        fastest falls and climbs, sleeping giants by catchment size, the
+        risers and every fallen giant. See src/giants.py.
+        """
+        import markdown as md
+        from markupsafe import Markup
 
-        def split(rows):
-            playing = [r for r in rows if r["last_season_in_db"] == latest]
-            dormant = [r for r in rows if r["last_season_in_db"] != latest]
-            return playing, dormant
+        import giants as giants_mod
 
-        fallen, fallen_dormant = split(self.conn.execute(
-            """
-            SELECT club_id, canonical_name, seasons_in_tier1, last_tier1_season,
-                   current_tier, last_season_in_db
-            FROM club_trajectory
-            WHERE highest_tier = 1 AND current_tier >= 3
-            ORDER BY current_tier DESC, last_tier1_season
-            """
-        ).fetchall())
-        risers, risers_dormant = split(self.conn.execute(
-            """
-            SELECT * FROM (
-                SELECT t.club_id, t.canonical_name, t.current_tier,
-                       t.first_season_in_db, t.last_season_in_db,
-                       (SELECT s.tier FROM standings s WHERE s.club_id = t.club_id
-                        ORDER BY s.season_end_year LIMIT 1) AS first_tier
-                FROM club_trajectory t
-            ) WHERE first_tier >= 4 AND current_tier <= 2
-            ORDER BY current_tier, first_tier DESC
-            """
-        ).fetchall())
+        try:
+            d = giants_mod.assemble(self.conn)
+        except Exception as exc:  # the page must never break the build
+            logger.warning("fallen giants page skipped: %s", exc)
+            return
+        if not d:
+            return
+        first = self.seasons[0]
+        latest = d["latest"]
 
-        def with_dormant(note, dormant):
-            if not dormant:
-                return note
-            named = ", ".join(
-                f"{r['canonical_name']} (last recorded {season_label(r['last_season_in_db'])})"
-                for r in dormant)
-            return (f"{note} {named} would qualify on the record, but this "
-                    f"column says where a club plays now and their data has "
-                    f"stopped.")
+        # Small multiples: tier against years since the title, each card its own span.
+        mw, mh, max_tier = 220, 64, 5
+
+        def ty(t):
+            return round(4 + (min(t, max_tier) - 1) / (max_tier - 1) * (mh - 8), 1)
+
+        for c in d["champions"]:
+            span = max(1, latest - c["title"])
+            pts = [(round(x / span * (mw - 6) + 3, 1), ty(t)) for x, t in c["path"]]
+            path = []
+            for i, (x, y) in enumerate(pts):
+                if i == 0:
+                    path.append(f"M{x},{y}")
+                else:
+                    path.append(f"H{x}V{y}")       # a step: the tier changes between seasons
+            path.append(f"H{mw - 3}")
+            c["d"] = "".join(path)
+            c["fx"] = round((c["reached"] - c["title"]) / span * (mw - 6) + 3, 1)
+            c["fy"] = ty(c["low"])
+
+        # Return odds: two lines over 1-25 seasons away.
+        ow, oh, ol, otop = 760, 300, 46, 14
+        odds = [r for r in d["odds"] if r["within"] is not None and r["ever"] is not None]
+        kmax = max((r["k"] for r in odds), default=25)
+
+        def ox(k):
+            return round(ol + (k - 1) / max(1, kmax - 1) * (ow - ol - 20), 1)
+
+        def oy(v):
+            return round(otop + (1 - v) * (oh - 34 - otop), 1)
+
+        within_path = "M" + " L".join(f"{ox(r['k'])},{oy(r['within'])}" for r in odds) if odds else ""
+        ever_path = "M" + " L".join(f"{ox(r['k'])},{oy(r['ever'])}" for r in odds) if odds else ""
+        marks = []
+        for r in odds:
+            if r["k"] in (1, 5, 10, 20):
+                marks.append({"x": ox(r["k"]), "y": oy(r["within"]), "color": "#2a78d6", "below": True,
+                              "label": f"{r['within'] * 100:.0f}%",
+                              "title": f"{r['within'] * 100:.0f}% back within {r['k']} seasons ({r['n']} relegations)"})
+                marks.append({"x": ox(r["k"]), "y": oy(r["ever"]), "color": "#eb6834", "below": False,
+                              "label": f"{r['ever'] * 100:.0f}%",
+                              "title": f"Of {r['still_n']} still away after {r['k']}, {r['ever'] * 100:.0f}% came back"})
+
+        longest = max([r["years"] for r in d["falls"][:8] + d["rises"][:8]] or [1])
+        for r in d["falls"] + d["rises"]:
+            r["bar"] = round(120 * r["years"] / longest)
+
+        ten = next((r for r in d["odds"] if r["k"] == 10), None)
+        rec = d["champions"][0] if d["champions"] else None
+        stats = [{"value": str(len(d["fallen"])), "label": "Former top-flight clubs now in tier 3 or below"},
+                 {"value": str(len(d["champions"])), "label": f"Champions since {season_label(first)} who later fell that far"}]
+        if rec:
+            stats.append({"value": f"{rec['years']} years", "label": f"Fastest, champions to tier {rec['low']}: {rec['name']}"})
+        if ten and ten["ever"] is not None:
+            stats.append({"value": f"{ten['ever'] * 100:.0f}%", "label": "Still away after 10 seasons, yet came back"})
+
+        source = PROJECT_ROOT / "content" / "insights" / "fallen-giants.md"
+        intro_html = Markup(md.markdown(content.load_theme(source))) if source.exists() else None
         self.render(
-            "insight_table.html",
-            self.out / "insights" / "fallen-giants" / "index.html", 2,
-            title="Fallen giants & risers",
-            heading="Fallen giants & risers",
-            intro="Clubs a long way from where they once were — in both directions.",
-            sections=[
-                {
-                    "heading": "Fallen giants",
-                    "note": with_dormant(
-                        "Former top-flight clubs now in Tier 3 or below.",
-                        fallen_dormant),
-                    "columns": ["Club", "Top-flight seasons", "Last in Tier 1", "Now"],
-                    "rows": [
-                        [self._cell(r["canonical_name"], r["club_id"]),
-                         self._cell(r["seasons_in_tier1"], num=True),
-                         self._cell(season_label(r["last_tier1_season"])),
-                         self._cell(f"Tier {r['current_tier']}")]
-                        for r in fallen
-                    ],
-                },
-                {
-                    "heading": "The risers",
-                    "note": with_dormant(
-                        "Clubs that entered the database in Tier 4 or 5 and now "
-                        "play in the top two divisions.", risers_dormant),
-                    "columns": ["Club", "Started", "Now"],
-                    "rows": [
-                        [self._cell(r["canonical_name"], r["club_id"]),
-                         self._cell(f"Tier {r['first_tier']} in {season_label(r['first_season_in_db'])}"),
-                         self._cell(f"Tier {r['current_tier']}")]
-                        for r in risers
-                    ],
-                },
-            ],
+            "insight_giants.html", self.out / "insights" / "fallen-giants" / "index.html", 2,
+            title="Fallen giants & risers", intro_html=intro_html, stats=stats,
+            first=first, latest=latest, champions=d["champions"], mw=mw, mh=mh, max_tier=max_tier, ty=ty,
+            live=d["live"], relegations=d["relegations"], exiles=d["exiles"],
+            ow=ow, oh=oh, ol=ol, ox=ox, oy=oy, within_path=within_path, ever_path=ever_path, odds_marks=marks,
+            falls=d["falls"], rises=d["rises"], from_five=d["from_five"],
+            sleeping=d["sleeping"], over=d["over"], risers=d["risers"], fallen=d["fallen"],
         )
 
     def _standings_section(
