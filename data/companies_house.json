@@ -22114,6 +22114,102 @@
        }
       ],
       "status": "active"
+     },
+     {
+      "name": "22 HOLDCO LIMITED",
+      "number": "14075518",
+      "psc": [
+       {
+        "ceased": null,
+        "country": null,
+        "kind": "individual",
+        "legal_form": null,
+        "name": "Mr Behdad Eghbali",
+        "nationality": "American",
+        "natures": [
+         "ownership-of-shares-50-to-75-percent-as-firm",
+         "voting-rights-50-to-75-percent-as-firm"
+        ],
+        "notified": "2023-06-30",
+        "number": null,
+        "residence": "United States"
+       },
+       {
+        "ceased": null,
+        "country": null,
+        "kind": "individual",
+        "legal_form": null,
+        "name": "Mr Jose E. Feliciano",
+        "nationality": "American",
+        "natures": [
+         "ownership-of-shares-50-to-75-percent-as-firm",
+         "voting-rights-50-to-75-percent-as-firm"
+        ],
+        "notified": "2023-06-30",
+        "number": null,
+        "residence": "United States"
+       },
+       {
+        "ceased": null,
+        "country": null,
+        "kind": "individual",
+        "legal_form": null,
+        "name": "Todd Lawrence Boehly",
+        "nationality": "American",
+        "natures": [
+         "significant-influence-or-control-as-firm"
+        ],
+        "notified": "2022-05-25",
+        "number": null,
+        "residence": "United States"
+       },
+       {
+        "ceased": "2022-05-25",
+        "country": "England",
+        "kind": "corporate-entity",
+        "legal_form": "Private Company Limited By Shares",
+        "name": "Blueco 22 Investor Holdings Limited",
+        "nationality": null,
+        "natures": [
+         "ownership-of-shares-25-to-50-percent",
+         "voting-rights-25-to-50-percent"
+        ],
+        "notified": "2022-05-12",
+        "number": "14075320",
+        "residence": null
+       },
+       {
+        "ceased": "2023-06-30",
+        "country": "England",
+        "kind": "corporate-entity",
+        "legal_form": "Private Company Limited By Shares",
+        "name": "Blues Investment Midco Limited",
+        "nationality": null,
+        "natures": [
+         "ownership-of-shares-50-to-75-percent",
+         "voting-rights-50-to-75-percent"
+        ],
+        "notified": "2022-05-06",
+        "number": "14091439",
+        "residence": null
+       },
+       {
+        "ceased": "2022-05-12",
+        "country": null,
+        "kind": "individual",
+        "legal_form": null,
+        "name": "Todd Lawrence Boehly",
+        "nationality": "American",
+        "natures": [
+         "ownership-of-shares-25-to-50-percent",
+         "voting-rights-25-to-50-percent"
+        ],
+        "notified": "2022-04-28",
+        "number": null,
+        "residence": "United States"
+       }
+      ],
+      "status": "active"
      }
     ],
     "charges": [
@@ -52006,6 +52102,29 @@
         "notified": "2016-04-06",
         "number": null,
         "residence": "England"
+       }
+      ],
+      "status": "active"
+     },
+     {
+      "name": "CROSSCO (1438) LIMITED",
+      "number": "11465292",
+      "psc": [
+       {
+        "ceased": null,
+        "country": null,
+        "kind": "individual",
+        "legal_form": null,
+        "name": "Stephen Gibson",
+        "nationality": "British",
+        "natures": [
+         "ownership-of-shares-75-to-100-percent",
+         "voting-rights-75-to-100-percent",
+         "right-to-appoint-and-remove-directors"
+        ],
+        "notified": "2018-07-16",
+        "number": null,
+        "residence": "United Kingdom"
        }
       ],
       "status": "active"
@@ -90526,7 +90645,7 @@
   }
  },
  "fetched": "2026-10-06",
- "requests": 2474,
+ "requests": 2478,
  "unmatched": {
   "afc-wimbledon": {
    "candidates": [
