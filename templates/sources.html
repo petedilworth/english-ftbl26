@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Sources</h1>
+<p class="subtitle">Where every page's data comes from: what each source supplies, its licence, and when it was last brought up to date.</p>
+<p class="home-note">Jump to <a href="#by-page">by page</a> or <a href="#by-source">each source</a>. Figures this site works out for itself – catchments, expected points, the indexes – are marked as models: worked out, not counted. For what the data covers season by season, see <a href="{{ root }}/insights/coverage/index.html">What this site knows</a>.</p>
+
+<h2 id="by-page">By page</h2>
+{% for section in pages %}
+<h3>{{ section.section }}</h3>
+<div class="table-scroll"><table class="standings sources-pages">
+  <tr><th>Page</th><th>Sources</th></tr>
+  {% for p in section.pages %}
+  <tr><td><a href="{{ root }}/{{ p.path }}">{{ p.title }}</a>{% if p.note %}<br><span class="status-tag">{{ p.note }}</span>{% endif %}</td>
+      <td>{% for s in p.sources %}<a href="#src-{{ s.key }}">{{ s.name }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</td></tr>
+  {% endfor %}
+</table></div>
+{% endfor %}
+
+<h2 id="by-source">Each source</h2>
+<div class="sources-list">
+{% for s in sources %}
+<div class="sources-card" id="src-{{ s.key }}">
+  <h3><a href="{{ s.url }}">{{ s.name }}</a></h3>
+  <p>{{ s.what }}</p>
+  <dl>
+    <dt>Licence</dt><dd>{{ s.licence }}</dd>
+    <dt>Refreshed</dt><dd>{{ s.refresh }}</dd>
+    {% if s.as_of %}<dt>Up to</dt><dd>{{ s.as_of }}</dd>{% endif %}
+    <dt>Used on</dt><dd>{% for p in s.used_by %}<a href="{{ root }}/{{ p.path }}">{{ p.title }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</dd>
+  </dl>
+</div>
+{% endfor %}
+</div>
+{% endblock %}
