@@ -258,7 +258,14 @@ def existing_rows() -> set[tuple[str, int]]:
                 for r in csv.DictReader(fh) if r.get("season_end_year")}
 
 
-def mapping() -> dict[str, dict]:
+def mapping(directory: Path | None = None) -> dict[str, dict]:
+    """
+    Club -> company. The fetch writes mapping.json beside the documents -
+    every match it trusted, the automatic ones too - and that wins; the
+    reviewed TSV is the fallback for documents fetched the old way.
+    """
+    if directory is not None and (directory / "mapping.json").exists():
+        return json.loads((directory / "mapping.json").read_text(encoding="utf-8"))
     if not MAPPING.exists():
         return {}
     with MAPPING.open(encoding="utf-8") as fh:
@@ -274,7 +281,7 @@ def main():
     args = parser.parse_args()
 
     directory = Path(args.directory)
-    companies = mapping()
+    companies = mapping(directory)
     taken = existing_rows()
 
     rows, unread, pdf_only, duplicates = [], [], [], []

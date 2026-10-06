@@ -1,0 +1,85 @@
+name: Club accounts
+
+# Fetches the two latest accounts filings for every club matched to a
+# company (data/companies_house.json), reads the tagged figures out of the
+# iXBRL ones with scripts/parse_club_accounts.py, and appends them to
+# club_finances.csv - filling only club-seasons nobody has read by hand,
+# each row flagged ixbrl_auto. The daily Refresh loads the CSV into the
+# database; the site picks it up from there.
+#
+# Also commits data/companies/accounts-report.txt: what was read, what was
+# a scanned PDF, and which documents carried no tag the parser knows.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/club-accounts.yml'
+      - 'scripts/fetch_club_accounts.py'
+      - 'scripts/parse_club_accounts.py'
+  schedule:
+    - cron: '41 4 3 * *'    # monthly, the 3rd, the day after the register snapshot
+  workflow_dispatch:
+    inputs:
+      clubs:
+        description: 'Only these club ids, comma-separated (blank for every club)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: england-db
+  cancel-in-progress: false
+
+jobs:
+  accounts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch the filings
+        env:
+          CH_API_KEY: ${{ secrets.CH_API_KEY }}
+          CLUBS: ${{ inputs.clubs }}
+        run: |
+          if [ -n "$CLUBS" ]; then
+            python scripts/fetch_club_accounts.py --out ch-accounts --clubs "$CLUBS"
+          else
+            python scripts/fetch_club_accounts.py --out ch-accounts
+          fi
+
+      - name: Read the figures
+        run: |
+          mkdir -p data/companies
+          {
+            echo "Club accounts read $(date -u +%Y-%m-%d)"
+            echo "Documents: $(ls ch-accounts/*.xhtml 2>/dev/null | wc -l) iXBRL, $(ls ch-accounts/*.pdf 2>/dev/null | wc -l) PDF only"
+            python scripts/parse_club_accounts.py ch-accounts --apply 2>&1
+          } | tee data/companies/accounts-report.txt
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add club_finances.csv data/companies/accounts-report.txt
+          git commit -m "Club accounts read from Companies House (fetched by workflow)" || exit 0
+          for attempt in 1 2 3 4 5; do
+            if git push; then
+              exit 0
+            fi
+            echo "Push rejected (attempt $attempt) - rebasing onto latest main and retrying"
+            git fetch origin main
+            git rebase origin/main
+          done
+          echo "::error::Could not push after 5 attempts"
+          exit 1
