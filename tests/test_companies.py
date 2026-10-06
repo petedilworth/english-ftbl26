@@ -136,3 +136,9 @@ def test_the_owner_on_file_is_checked_against_the_register():
     assert co.agrees("Kroenke Sports & Entertainment (Stan Kroenke)", kroenke)
     assert not co.agrees("Glazer family", {"name": "Red Football Limited", "via": []})
     assert co.agrees("NSWE", {"name": "Nswe Uk Limited", "via": ["ASTON VILLA LIMITED"]})
+
+
+def test_a_community_arm_is_not_the_club_even_on_a_name_match():
+    assert not co.trusted({"match": "reviewed", "company": {"name": "SLOUGH TOWN FC COMMUNITY CIC"}})
+    assert co.trusted({"match": "reviewed", "company": {"name": "AVRO COMMUNITY FOOTBALL CLUB LIMITED"}})
+    assert co.trusted({"match": "reviewed", "company": {"name": "WORCESTER CITY COMMUNITY FOOTBALL CIC"}})

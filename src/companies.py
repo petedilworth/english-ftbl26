@@ -188,7 +188,7 @@ FOOTBALL_WORDS = re.compile(r"\b(football|f\.?\s?c\.?|a\.?f\.?c\.?|soccer|associ
 
 
 SIDE_WORDS = re.compile(r"\b(women|womens|ladies|girls|academy|foundation|youth|juniors?|charitable|"
-                        r"community trust|in the community)\b", re.I)
+                        r"community trust|in the community|(?:fc|f\.c\.|football club) community)\b", re.I)
 
 
 def lender_name(name: str) -> str:
@@ -205,10 +205,14 @@ def trusted(entry: dict) -> bool:
     match needs strong evidence, or nearness plus a football name, and is
     never a dormant company.
     """
-    if entry.get("match") != "auto":
-        return True
     why = entry.get("why") or ""
     name = (entry.get("company") or {}).get("name") or ""
+    # Any match, reviewed or not: Slough Town's name match was the club's
+    # community CIC, and its accounts were the charity's.
+    if SIDE_WORDS.search(name):
+        return False
+    if entry.get("match") != "auto":
+        return True
     if "dormant" in why or ((entry.get("company") or {}).get("accounts") or {}).get("last_type") == "dormant":
         return False
     if SIDE_WORDS.search(name):
