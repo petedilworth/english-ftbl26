@@ -3428,10 +3428,12 @@ class SiteBuilder:
         played_now = max((r[3] for r in d["scatter"] if r[0] == d["newest"]), default=0)
         default_season = d["newest"] if played_now >= 10 or len(seasons) == 1 else seasons[1]
         luckiest = d["luckiest"][0] if d["luckiest"] else None
+        champs = [o for o in d["outcomes"] if o["label"] == "Champions"]
+        champ_share = round(champs[0]["share_lucky"] * 100) if champs else 0
         stats = [
             {"value": f"{d['n_matches_o']:,}", "label": f"Matches with odds since {d['first_o'] - 1}/{d['first_o'] % 100:02d}"},
-            {"value": f"±{d['sd_o']}", "label": "Points of luck in a typical season"},
-            {"value": f"{len(happened)}", "label": "Promotions, titles and relegations luck decided"},
+            {"value": f"{champ_share}%", "label": "Champions who beat their price"},
+            {"value": f"{d['persist_o'].get('luck', 0):+.2f}", "label": "How much luck carries to the next season"},
         ]
         if luckiest:
             stats.append({"value": f"{luckiest['luck_o']:+.1f}",
@@ -3453,6 +3455,7 @@ class SiteBuilder:
             luckiest_s=d["luckiest_s"], unluckiest_s=d["unluckiest_s"], sd_o=d["sd_o"],
             decided_groups=groups, decided_total=len(happened), decided_total_s=len(happened_s),
             decided_divisions=len({(f["season"], f["tier"]) for f in d["decided"]}),
+            decided_examined=d["decided_examined"], outcomes=d["outcomes"],
             persist_o=d["persist_o"] or {"luck": 0, "ability": 0, "n": 0}, persist_s=d["persist_s"],
             pw=pw, pmid=pxy(0), persist_dots=persist_dots,
             beaters=rows, beaters_total=len(beaters), clear_count=clear,

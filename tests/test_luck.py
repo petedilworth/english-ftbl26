@@ -168,3 +168,11 @@ def test_the_page_builds_with_the_scatter_data(tmp_path, monkeypatch):
     data = (out / "insights" / "luck" / "luck-data.js").read_text(encoding="utf-8")
     assert data.startswith("window.LUCK_DATA = {") and '"rows"' in data
     assert "Points against expected points" in (out / "insights" / "index.html").read_text(encoding="utf-8")
+
+
+def test_the_ends_of_a_table_select_for_luck():
+    conn = league(seasons=tuple(range(2010, 2022)))
+    out = {o["label"]: o for o in luck.by_outcome(conn, luck.club_seasons(luck.load_matches(conn)))}
+    assert out["Promoted automatically"]["mean"] > out["Stayed"]["mean"] > out["Relegated"]["mean"]
+    d = luck.assemble(conn)
+    assert d["decided_examined"] >= len({(f["season"], f["tier"]) for f in d["decided"]})

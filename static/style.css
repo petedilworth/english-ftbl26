@@ -974,6 +974,8 @@ tr.wages-over td:nth-child(7) { font-weight: 600; }
 .luck-persist { display: grid; grid-template-columns: minmax(0, 320px) 1fr; gap: 16px 24px; align-items: start; }
 @media (max-width: 700px) { .luck-persist { grid-template-columns: 1fr; } }
 .luck-zero { position: absolute; top: -3px; width: 1px; height: 18px; background: var(--muted); }
-.income-range-bar.luck-clear { background: #f5b393; }
+.income-range-bar.luck-bar { background: #d5dbe2; }
+.income-range-bar.luck-bar.luck-clear { background: #eb6834; }
+.luck-then { margin-top: 20px; }
 .luck-market tr.luck-gap td { border-top: 2px solid var(--line); }
 .luck-more summary { cursor: pointer; font-size: 13px; color: var(--accent); margin: 4px 0 12px; }

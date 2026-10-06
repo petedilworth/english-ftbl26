@@ -158,22 +158,31 @@ def ranked(cs: pd.DataFrame, measure: str) -> pd.DataFrame:
 
 
 def decided_by_luck(conn: sqlite3.Connection, cs: pd.DataFrame, measure: str = "o") -> list[dict]:
+    """The flips alone; see _decided."""
+    return _decided(conn, cs, measure)[0]
+
+
+def _decided(conn: sqlite3.Connection, cs: pd.DataFrame, measure: str = "o") -> tuple[list[dict], int]:
     """
+    Returns (flips, divisions examined).
+
     Finished divisions where re-ranking every club on expected points
     changes who went up, who won it, or who went down. Points deductions
     are carried across: they are not luck. Play-offs are left alone; they
     are a lottery of their own.
     """
     if cs.empty:
-        return []
+        return [], 0
     st = pd.read_sql_query(
         "SELECT season_end_year AS season, tier, club_id, position, points, status "
         "FROM standings WHERE tier <= 5 AND club_id IS NOT NULL", conn)
     merged = cs.merge(st, on=["season", "tier", "club_id"], how="inner")
     out = []
+    examined = 0
     for (season, tier, _div), grp in merged.groupby(["season", "tier", "division_id"], dropna=False):
         if (grp["status"] == "In progress").any() or (grp[f"cov_{measure}"] < MIN_COVERAGE).any():
             continue
+        examined += 1
         g = grp.copy()
         # Expected table: expected points plus whatever the table did to the
         # club that was not a match (a deduction).
@@ -211,6 +220,31 @@ def decided_by_luck(conn: sqlite3.Connection, cs: pd.DataFrame, measure: str = "
                 out.append({"season": int(season), "tier": int(tier), "zone": zone, "club_id": cid, "name": r["name"],
                             "happened": False, "pts": int(r["points"]), "xpts": round(float(r["xtable"]), 1),
                             "position": int(r["position"]), "xpos": int(r["xpos"])})
+    return out, examined
+
+
+OUTCOMES = [("Champions", ["Champions"]), ("Promoted automatically", ["Promoted"]),
+            ("Promoted in the play-offs", ["Play-off Promoted"]), ("Stayed", ["Stayed"]), ("Relegated", ["Relegated"])]
+
+
+def by_outcome(conn: sqlite3.Connection, cs: pd.DataFrame) -> list[dict]:
+    """
+    Average luck by how the season ended. Whoever finishes at either end
+    of a table was, on average, lucky or unlucky to get there: the
+    extremes select for it. This is why a champion is so often 'lucky'.
+    """
+    r = ranked(cs, "o")
+    if r.empty:
+        return []
+    st = pd.read_sql_query("SELECT season_end_year AS season, tier, club_id, status FROM standings "
+                           "WHERE tier <= 5 AND club_id IS NOT NULL", conn)
+    m = r.merge(st, on=["season", "tier", "club_id"])
+    out = []
+    for label, statuses in OUTCOMES:
+        g = m[m["status"].isin(statuses)]
+        if len(g):
+            out.append({"label": label, "n": int(len(g)), "mean": round(float(g["luck_o"].mean()), 1),
+                        "share_lucky": round(float((g["luck_o"] > 0).mean()), 2)})
     return out
 
 
@@ -293,6 +327,7 @@ def assemble(conn: sqlite3.Connection, top: int = 15) -> dict:
         lambda g: pd.Series({"o": float((g["cov_o"] >= MIN_COVERAGE).mean()),
                              "s": float((g["cov_s"] >= MIN_COVERAGE).mean())}), include_groups=False)
         .reset_index())
+    decided = _decided(conn, cs, "o")
     club_ids = sorted(cs["club_id"].unique())
     idx = {c: i for i, c in enumerate(club_ids)}
     return {
@@ -301,8 +336,9 @@ def assemble(conn: sqlite3.Connection, top: int = 15) -> dict:
         "unluckiest": rows(finished.sort_values("luck_o").head(top)),
         "luckiest_s": rows(ranked(cs[cs["season"] < newest], "s").sort_values("luck_s", ascending=False).head(top)),
         "unluckiest_s": rows(ranked(cs[cs["season"] < newest], "s").sort_values("luck_s").head(top)),
-        "decided": decided_by_luck(conn, cs, "o"),
+        "decided": decided[0], "decided_examined": decided[1],
         "decided_s": decided_by_luck(conn, cs, "s"),
+        "outcomes": by_outcome(conn, cs),
         "persist_o": persistence(cs, "o"),
         "persist_s": persistence(cs, "s"),
         "beaters": market_beaters(cs),
