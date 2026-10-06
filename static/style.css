@@ -1015,3 +1015,10 @@ tr.wages-over td:nth-child(7) { font-weight: 600; }
 .sources-card dl { display: grid; grid-template-columns: 6.5em 1fr; gap: 3px 8px; margin: 0; font-size: 13px; }
 .sources-card dt { color: var(--muted); }
 .sources-card dd { margin: 0; }
+/* Behind the club */
+.companies-key { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 12px; color: var(--muted); margin: 4px 0 14px; }
+.companies-key i { display: inline-block; width: 12px; height: 12px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
+.companies-countries { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0 12px; }
+.companies-countries .chip { cursor: default; white-space: nowrap; }
+.companies-via, .companies-lenders { font-size: 12px; color: var(--muted); }
+.companies-missing summary { cursor: pointer; color: var(--accent); margin: 12px 0; }

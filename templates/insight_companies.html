@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+{% macro club(c) %}<a href="{{ root }}/team/{{ c.club_id }}/index.html">{{ c.name }}</a>{% endmacro %}
+{% macro date(d) %}{% if d %}{{ d[:4] }}{% else %}–{% endif %}{% endmacro %}
+{% block content %}
+<h1>Behind the club</h1>
+<p class="subtitle">What Companies House holds on the company each club plays as: who controls it, what is borrowed against it, who runs it, and whether its paperwork is in order. {{ covered }} of {{ covered + uncovered }} clubs in tiers 1–7, from the register as of {{ fetched }}.</p>
+
+<div class="stat-cards">
+  {% for s in stats %}<div class="stat-card"><div class="stat-value">{{ s.value }}</div><div class="stat-label">{{ s.label }}</div></div>{% endfor %}
+</div>
+
+<div class="theme-intro">{{ intro_html }}</div>
+
+<h2 id="control">Who controls the club</h2>
+<p class="subtitle">Each club's furthest controller on the register, by the tier it plays in. The register follows a UK holding company upwards; it stops at the border.</p>
+<div class="chart-holder">
+  <svg viewBox="0 0 {{ cw }} {{ ch }}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Who controls clubs, by tier">
+    {% for r in control_rows %}
+    <text x="6" y="{{ r.y + 15 }}" font-size="12" font-weight="600" fill="#17202a">Tier {{ r.tier }}</text>
+    <text x="6" y="{{ r.y + 28 }}" font-size="10" fill="#6b7683">{{ r.n }} clubs</text>
+    {% for s in r.segs %}<rect x="{{ s.x }}" y="{{ r.y + 4 }}" width="{{ s.w }}" height="26" fill="{{ s.color }}"><title>Tier {{ r.tier }}: {{ s.n }} – {{ s.label }}</title></rect>{% if s.w > 22 %}<text x="{{ s.x + s.w / 2 }}" y="{{ r.y + 21 }}" font-size="11" fill="{{ s.ink }}" text-anchor="middle">{{ s.n }}</text>{% endif %}{% endfor %}
+    {% endfor %}
+  </svg>
+</div>
+<div class="companies-key">{% for k in control_key %}<span><i style="background: {{ k.color }}"></i>{{ k.label }}</span>{% endfor %}</div>
+
+<h3>Controlled from abroad</h3>
+<p class="subtitle">{{ abroad | length }} clubs. Where the controller lives or is registered, as the register gives it.</p>
+<div class="companies-countries">{% for c in countries %}<span class="chip">{{ c[0] }} <b>{{ c[1] }}</b></span>{% endfor %}</div>
+<div class="table-scroll"><table class="standings sortable">
+  <thead><tr><th>Club</th><th class="num">Tier</th><th>Controller</th><th>Where</th><th>Holding</th><th>Through</th></tr></thead>
+  <tbody>
+  {% for c in abroad %}<tr><td>{{ club(c) }}</td><td class="num" data-sort="{{ c.tier }}">{{ c.tier }}</td><td>{{ c.controller.name }}</td><td>{{ c.controller.where or "not stated" }}</td><td>{{ c.controller.band or "–" }}</td><td class="companies-via">{{ c.controller.via | join(" → ") or "directly" }}</td></tr>{% endfor %}
+  </tbody>
+</table></div>
+
+<h2 id="debt">Borrowed against the club</h2>
+<p class="subtitle">Charges are loans secured on what the company owns – often the ground. {{ with_debt | length }} clubs have at least one outstanding; {{ property_debt }} of them over land or a stadium.</p>
+<div class="yoyo-pair">
+<div>
+<h3>Most charges outstanding</h3>
+<div class="table-scroll"><table class="standings">
+  <tr><th>Club</th><th class="num">Tier</th><th class="num">Charges</th><th>Lenders</th><th class="num">Newest</th></tr>
+  {% for c in with_debt[:15] %}<tr><td>{{ club(c) }}</td><td class="num">{{ c.tier }}</td><td class="num"><b>{{ c.charges.outstanding }}</b></td><td class="companies-lenders">{{ c.charges.lenders[:2] | join("; ") }}{% if c.charges.lenders | length > 2 %} and {{ c.charges.lenders | length - 2 }} more{% endif %}</td><td class="num">{{ date(c.charges.latest) }}</td></tr>{% endfor %}
+</table></div>
+</div>
+<div>
+<h3>Who lends to football</h3>
+<p class="subtitle">Lenders holding charges at more than one club.</p>
+<div class="table-scroll"><table class="standings">
+  <tr><th>Lender</th><th class="num">Clubs</th><th>Among them</th></tr>
+  {% for name, clubs in lenders[:12] %}<tr><td>{{ name }}</td><td class="num"><b>{{ clubs | length }}</b></td><td class="companies-lenders">{{ clubs[:4] | join(", ") }}{% if clubs | length > 4 %}…{% endif %}</td></tr>{% endfor %}
+</table></div>
+</div>
+</div>
+<p class="finance-note">The grant bodies – the Football Stadia Improvement Fund, Sport England, the Football Foundation, the Premier League Stadium Fund – take a charge over a ground as security for a grant, so the money is repaid if the ground stops being used for football. A charge from them is a safeguard, not a debt in the usual sense. The banks and specialist lenders are the borrowing.</p>
+
+<h2 id="board">Boardroom churn</h2>
+<p class="subtitle">Directors appointed plus directors resigned over the last five years, a year. A board that turns over every season is a club in a hurry, or in trouble.</p>
+<div class="chart-holder">
+  <svg viewBox="0 0 {{ bw }} {{ bh }}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Director turnover by club">
+    {% for b in churn_bars %}
+    <a href="{{ root }}/team/{{ b.club_id }}/index.html"><text x="{{ b.lx }}" y="{{ b.y + 12 }}" font-size="11.5" fill="#17202a" text-anchor="end">{{ b.name }} <tspan fill="#6b7683">{{ b.tier }}</tspan></text></a>
+    <rect x="{{ b.x }}" y="{{ b.y + 2 }}" width="{{ b.w_in }}" height="13" fill="#2a78d6"><title>{{ b.name }}: {{ b.appointed }} appointed</title></rect>
+    <rect x="{{ b.x + b.w_in }}" y="{{ b.y + 2 }}" width="{{ b.w_out }}" height="13" fill="#eb6834"><title>{{ b.name }}: {{ b.resigned }} resigned</title></rect>
+    <text x="{{ b.x + b.w_in + b.w_out + 5 }}" y="{{ b.y + 12 }}" font-size="11" fill="#17202a">{{ b.churn }} a year · {{ b.now }} now</text>
+    {% endfor %}
+  </svg>
+</div>
+<div class="companies-key"><span><i style="background: #2a78d6"></i>Appointed</span><span><i style="background: #eb6834"></i>Resigned</span></div>
+
+<h2 id="warnings">Warning lights</h2>
+<p class="subtitle">What the register flags today, and every insolvency it records.</p>
+<div class="table-scroll"><table class="standings sortable">
+  <thead><tr><th>Club</th><th class="num">Tier</th><th>Flags</th><th>Insolvency on record</th></tr></thead>
+  <tbody>
+  {% for c in warned %}<tr><td>{{ club(c) }}</td><td class="num" data-sort="{{ c.tier }}">{{ c.tier }}</td><td>{{ c.warnings | join(", ") }}</td><td>{% for i in c.insolvency %}{{ i.type | replace("-", " ") }} {{ date((i.dates[0] or {}).date if i.dates else none) }}{% if not loop.last %}; {% endif %}{% endfor %}</td></tr>{% endfor %}
+  </tbody>
+</table></div>
+<p class="finance-note">Micro-entity and dormant accounts are flagged because they say almost nothing: no turnover, no wages. An insolvency on record can be decades old – the date is the start of the case.</p>
+
+<h2 id="all">Every club</h2>
+<p class="subtitle">Click a heading to sort.</p>
+<div class="table-scroll"><table class="standings sortable" id="companies-table">
+  <thead><tr><th>Club</th><th class="num">Tier</th><th>Company</th><th>Controller</th><th>Kind</th><th class="num">Charges</th><th class="num">Directors</th><th class="num">Churn</th><th>Last accounts</th><th>Matched by</th></tr></thead>
+  <tbody>
+  {% for c in clubs %}
+  <tr><td>{{ club(c) }}</td><td class="num" data-sort="{{ c.tier or 99 }}">{{ c.tier or "–" }}</td>
+    <td><a href="https://find-and-update.company-information.service.gov.uk/company/{{ c.number }}">{{ c.company | title }}</a></td>
+    <td>{{ c.controller.name or "–" }}</td><td>{{ c.controller.category }}</td>
+    <td class="num" data-sort="{{ c.charges.outstanding }}">{{ c.charges.outstanding }}</td>
+    <td class="num" data-sort="{{ c.directors.now }}">{{ c.directors.now }}</td>
+    <td class="num" data-sort="{{ c.directors.churn }}">{{ c.directors.churn }}</td>
+    <td>{{ (c.last_accounts or "–") | replace("-", " ") }}{% if c.accounts_to %} <span class="status-tag">{{ c.accounts_to[:7] }}</span>{% endif %}</td>
+    <td>{{ "name" if c.match == "reviewed" else "register evidence" }}</td></tr>
+  {% endfor %}
+  </tbody>
+</table></div>
+
+<details class="companies-missing">
+<summary>{{ uncovered }} clubs not covered, and why</summary>
+<div class="table-scroll"><table class="standings">
+  <tr><th>Club</th><th class="num">Tier</th><th>Why</th></tr>
+  {% for c in unmatched %}<tr><td>{{ c.name }}</td><td class="num">{{ c.tier or "–" }}</td><td class="status-tag">{{ c.why }}</td></tr>{% endfor %}
+</table></div>
+</details>
+
+<h2 id="method">How it is worked out</h2>
+<p class="finance-note">From the <a href="https://developer.company-information.service.gov.uk/">Companies House public data API</a> (Crown copyright, Open Government Licence), fetched monthly. Each club is matched to the company it plays as: by name for most, scored against every company of a similar name; for the rest, only with evidence from the register itself – a charge naming the ground, a director or controller matching the club's known owner, the operating company under a holding company, or a football-named company registered near the ground. A club with no such evidence is left out rather than guessed at, and many small clubs are community benefit societies, which file with the FCA and are not on the register at all. "Controller" is the furthest person with significant control the register reaches: anyone holding over a quarter of the shares or votes, or able to appoint the board, followed upwards through UK companies. A chain that reaches a company registered abroad ends there.</p>
+
+<script src="{{ root }}/static/club-table.js"></script>
+{% endblock %}

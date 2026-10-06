@@ -36,6 +36,7 @@ import income as income_mod  # noqa: E402  (income around the ground)
 import luck as luck_mod  # noqa: E402  (points against expected points)
 import deprivation as deprivation_mod  # noqa: E402  (deprivation around the ground)
 import sources as sources_mod  # noqa: E402  (where every page's data comes from)
+import companies as companies_mod  # noqa: E402  (behind the club: the register)
 import divisions
 divisions_mod = divisions
 import finances  # noqa: E402  (disclosure states for the club finances table)
@@ -1961,6 +1962,11 @@ class SiteBuilder:
         ("luck_now", "This season", "Luck", True),
         ("luck_avg", "Average a season", "Luck", True),
         ("luck_seasons", "Seasons priced", "Luck", True),
+        ("controller", "Controller", "Companies House", False),
+        ("controlled_from", "Controlled from", "Companies House", False),
+        ("charges", "Charges outstanding", "Companies House", True),
+        ("board_churn", "Board churn a year", "Companies House", True),
+        ("register_flags", "Flags", "Companies House", False),
         ("dislike", "Dislike index", "Indexes", True),
         ("value", "Value index", "Indexes", True),
         ("value_gap", "Value v its tier", "Indexes", True),
@@ -2101,7 +2107,12 @@ class SiteBuilder:
         Each part is optional - a missing source blanks its columns and
         never breaks the table.
         """
-        out: dict[str, dict] = {"income": {}, "dep": {}, "luck": {}, "dislike": {}, "value": {}}
+        out: dict[str, dict] = {"income": {}, "dep": {}, "luck": {}, "dislike": {}, "value": {}, "register": {}}
+        try:
+            out["register"] = {c["club_id"]: c for c in companies_mod.assemble(
+                self.conn, PROJECT_ROOT / "data" / "companies_house.json").get("clubs", [])}
+        except Exception as exc:
+            logger.warning("all-clubs table: Companies House skipped: %s", exc)
         try:
             out["income"] = {c["club_id"]: c for c in income_mod.assemble(self.conn).get("clubs", [])}
         except Exception as exc:
@@ -2369,6 +2380,15 @@ class SiteBuilder:
             values["luck_now"] = signed(lk["now"])
             values["luck_avg"] = signed(lk["avg"])
             values["luck_seasons"] = cell(lk["seasons"] or None, num=True)
+        reg = ex.get("register", {}).get(club_id)
+        if reg:
+            ctl = reg["controller"]
+            values["controller"] = cell(ctl["name"])
+            values["controlled_from"] = cell(ctl["category"] + (f" ({ctl['where']})" if ctl["where"] else ""),
+                                             sort=ctl["category"])
+            values["charges"] = cell(reg["charges"]["outstanding"], num=True)
+            values["board_churn"] = cell(f"{reg['directors']['churn']:.1f}", sort=reg["directors"]["churn"], num=True)
+            values["register_flags"] = cell(", ".join(reg["warnings"]) or None)
         dislike = ex.get("dislike", {}).get(club_id)
         if dislike is not None:
             values["dislike"] = cell(f"{dislike:.0f}", sort=dislike, num=True)
@@ -2704,6 +2724,11 @@ class SiteBuilder:
                 "luck", "Luck",
                 "Points against expected points, from the odds and from the shots – and the seasons luck decided",
             ))
+        if (PROJECT_ROOT / "content" / "insights" / "behind-the-club.md").exists():
+            stories.append(story(
+                "behind-the-club", "Behind the club",
+                "Who controls each club, what is borrowed against it, and who runs it – from Companies House",
+            ))
         if (PROJECT_ROOT / "content" / "insights" / "deprivation.md").exists():
             stories.append(story(
                 "deprivation", "Deprivation around the ground",
@@ -2837,6 +2862,7 @@ class SiteBuilder:
         self._insight_income()
         self._insight_luck()
         self._insight_deprivation()
+        self._insight_companies()
         self._insight_boom_and_bust(boom_bust_events)
         self._insight_the_drop(movement_matches)
         self._insight_the_rise(movement_matches)
@@ -3611,6 +3637,108 @@ class SiteBuilder:
             chance_clear=max(1, round(len(beaters) * 0.05)), min_seasons=luck_mod.MIN_MARKET_SEASONS,
             odds_kinder=d["odds_kinder"], shots_kinder=d["shots_kinder"],
             current=d["current"], min_coverage=luck_mod.MIN_COVERAGE,
+        )
+
+    CONTROL_KEY = [
+        ("person in the UK", "Person in the UK", "#2a78d6", "#fcfcfb"),
+        ("company in the UK", "UK company, no further", "#1baf7a", "#17202a"),
+        ("council or public body", "Council", "#008300", "#fcfcfb"),
+        ("no single controller", "No single controller", "#eda100", "#17202a"),
+        ("person abroad", "Person abroad", "#eb6834", "#17202a"),
+        ("company abroad", "Company abroad", "#e87ba4", "#17202a"),
+        ("company, country not stated", "Company, country not stated", "#c8ced6", "#17202a"),
+    ]
+
+    def _insight_companies(self) -> None:
+        """
+        Behind the club, from the Companies House snapshot: control by tier,
+        clubs controlled from abroad, charges and lenders, boardroom churn,
+        warning lights and every club. See src/companies.py. Gated on its
+        prose and on data/companies_house.json.
+        """
+        import collections
+        import re
+
+        import markdown as md
+        from markupsafe import Markup
+
+        source = PROJECT_ROOT / "content" / "insights" / "behind-the-club.md"
+        if not source.exists():
+            return
+        try:
+            d = companies_mod.assemble(self.conn, PROJECT_ROOT / "data" / "companies_house.json")
+        except Exception as exc:  # the page must never break the build
+            logger.warning("behind-the-club page skipped: %s", exc)
+            return
+        if not d:
+            return
+
+        # Control by tier: one stacked bar per tier, UK on the left, abroad on the right.
+        cw, left, row_h = 760, 90, 40
+        by_tier = collections.defaultdict(collections.Counter)
+        for c in d["clubs"]:
+            if c["tier"]:
+                by_tier[c["tier"]][c["controller"]["category"]] += 1
+        control_rows = []
+        for i, t in enumerate(sorted(by_tier)):
+            n = sum(by_tier[t].values())
+            x, segs = left, []
+            for key, label, color, ink in self.CONTROL_KEY:
+                k = by_tier[t][key]
+                if not k:
+                    continue
+                w = round((cw - left - 10) * k / n, 1)
+                segs.append({"x": x, "w": w, "n": k, "label": label, "color": color, "ink": ink})
+                x += w
+            control_rows.append({"tier": t, "n": n, "y": 6 + i * row_h, "segs": segs})
+        ch = 12 + row_h * len(control_rows)
+        used = {k for t in by_tier.values() for k in t}
+        control_key = [{"label": label, "color": color} for key, label, color, _ in self.CONTROL_KEY if key in used]
+        def country(where):
+            if not where:
+                return "not stated"
+            where = re.sub(r".*,\s*", "", where).strip()          # "South Dakota, United States" -> the country
+            return "United States" if where.lower().startswith(("united states", "usa")) else where.title()
+
+        countries = collections.Counter(country(c["controller"]["where"]) for c in d["abroad"]).most_common()
+
+        # Boardroom churn: appointed and resigned, side by side, the top twenty.
+        bw, bl, bh_row = 760, 220, 20
+        top = [c for c in d["churn"] if c["directors"]["churn"] > 0]
+        scale = (bw - bl - 150) / max(1, max((c["directors"]["appointed"] + c["directors"]["resigned"] for c in top),
+                                              default=1))
+        churn_bars = [{"club_id": c["club_id"], "name": c["name"], "tier": c["tier"] or "", "y": 4 + i * bh_row,
+                       "lx": bl - 8, "x": bl, "w_in": round(c["directors"]["appointed"] * scale, 1),
+                       "w_out": round(c["directors"]["resigned"] * scale, 1), **c["directors"]}
+                      for i, c in enumerate(top)]
+        bh = 10 + bh_row * len(churn_bars)
+
+        cats = d["categories"]
+        abroad_n = len(d["abroad"])
+        top_flight = [c for c in d["clubs"] if c["tier"] == 1]
+        tf_abroad = sum(1 for c in top_flight if c in d["abroad"])
+        stats = [
+            {"value": f"{abroad_n}", "label": f"Clubs controlled from abroad, of {len(d['clubs'])} on the register"},
+            {"value": f"{tf_abroad} of {len(top_flight)}", "label": "In the Premier League"},
+            {"value": f"{len(d['with_debt'])}", "label": "Clubs with a charge outstanding"},
+            {"value": f"{len(d['insolvent'])}", "label": "With an insolvency on record"},
+        ]
+        fetched = d.get("fetched") or ""
+        try:
+            fetched = f"{datetime.date.fromisoformat(fetched):%-d %B %Y}"
+        except ValueError:
+            pass
+        out_dir = self.out / "insights" / "behind-the-club"
+        self.render(
+            "insight_companies.html", out_dir / "index.html", 2,
+            title="Behind the club",
+            intro_html=Markup(md.markdown(content.load_theme(source))),
+            stats=stats, fetched=fetched, covered=len(d["clubs"]), uncovered=len(d["unmatched"]),
+            cw=cw, ch=ch, control_rows=control_rows, control_key=control_key, countries=countries,
+            abroad=sorted(d["abroad"], key=lambda c: (c["tier"] or 99, c["name"])),
+            with_debt=d["with_debt"], property_debt=len(d["property_debt"]), lenders=d["lenders"],
+            bw=bw, bh=bh, churn_bars=churn_bars, warned=sorted(d["warned"], key=lambda c: (c["tier"] or 99, c["name"])),
+            clubs=d["clubs"], unmatched=d["unmatched"], categories=cats,
         )
 
     def _insight_deprivation(self) -> None:
