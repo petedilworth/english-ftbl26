@@ -1,0 +1,76 @@
+name: Companies House
+
+# Fetches what Companies House holds about every club in tiers 1-7 -
+# profile, officers, persons with significant control, charges,
+# insolvency and accounts filings - settles the club-to-company matches
+# the name scorer left open, and commits data/companies_house.json.
+# See scripts/fetch_companies_house.py.
+#
+# The API key comes from the CH_API_KEY repository secret. It is passed
+# to the script as an environment variable and never printed or saved.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/companies-house.yml'
+      - 'scripts/fetch_companies_house.py'
+  schedule:
+    - cron: '23 4 2 * *'    # monthly, the 2nd at ~04:23 UTC: filings and charges move slowly
+  workflow_dispatch:
+    inputs:
+      clubs:
+        description: 'Only these club ids, comma-separated (blank for every club)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+# Same queue as Refresh, Editions and Deprivation: everything that commits
+# to the repo waits its turn.
+concurrency:
+  group: england-db
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch from Companies House
+        env:
+          CH_API_KEY: ${{ secrets.CH_API_KEY }}
+          CLUBS: ${{ inputs.clubs }}
+        run: |
+          if [ -n "$CLUBS" ]; then
+            python scripts/fetch_companies_house.py --clubs "$CLUBS"
+          else
+            python scripts/fetch_companies_house.py
+          fi
+
+      - name: Commit the snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/companies_house.json
+          git commit -m "Companies House snapshot (fetched by workflow)" || exit 0
+          for attempt in 1 2 3 4 5; do
+            if git push; then
+              exit 0
+            fi
+            echo "Push rejected (attempt $attempt) - rebasing onto latest main and retrying"
+            git fetch origin main
+            git rebase origin/main
+          done
+          echo "::error::Could not push after 5 attempts"
+          exit 1

@@ -71,7 +71,7 @@ next "Not started" rows are raised again.
 |---|---|---|---|
 | 1 | Odds and match statistics | **Done** (Phase 1a) | `match_stats`, backfilled from 2000/01. The luck page, and expected points and luck beside the current tables on the home page. |
 | 2 | Indices of Deprivation 2025 | **Done** (Phase 1b) | Fetched by `.github/workflows/deprivation.yml` into `data/msoa_deprivation.csv`. The deprivation page: nine weight sliders with Solo, map, club ranking and shapes, the tier and income findings. England only. |
-| 3 | Companies House: charges, officers, PSCs | **Planned** (Phase 2) | Key read from `CH_API_KEY` (a repository secret for Actions); never committed. About 900 requests for the 178 matched clubs. |
+| 3 | Companies House: charges, officers, PSCs | **In progress** (Phase 2) | `.github/workflows/companies-house.yml` runs `scripts/fetch_companies_house.py` monthly with the `CH_API_KEY` secret: every club in tiers 1–7, the 73 open matches settled on register evidence where it exists. Writes `data/companies_house.json`. Page next: 'Behind the club'. |
 | 4 | Companies House free accounts data | **Planned** (Phase 2) | Only electronically filed accounts are in it; micro-entity accounts carry no turnover. Could fill the value page's finance gap. |
 | 5 | Land Registry company-owned titles | Not started | Check the licence allows naming proprietors first. |
 | 6 | ONS house prices for small areas | Not started | Same MSOA codes as income; cheap. |
