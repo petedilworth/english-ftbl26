@@ -38,6 +38,7 @@ import divisions
 import download
 import entities
 import finances
+import match_stats
 import historical
 import status
 import records
@@ -350,7 +351,8 @@ def _process_season(
         ))
 
     match_rows = []
-    for _, m in aggregate.extract_matches(match_df, season_end_year, tier).iterrows():
+    extracted = aggregate.extract_matches(match_df, season_end_year, tier)
+    for _, m in extracted.iterrows():
         match_rows.append((
             season_end_year,
             tier,
@@ -407,6 +409,10 @@ def _process_season(
             """,
             match_rows,
         )
+        # The odds and statistics in the same file, replaced on the same key.
+        match_stats.replace(conn, season_end_year, tier, division_id, match_stats.rows_for(
+            match_df, extracted, season_end_year, tier, division_id,
+            lambda name: entities.resolve_name(name, resolver, season_end_year)))
         conn.commit()
     except Exception as exc:
         conn.rollback()
@@ -1020,6 +1026,7 @@ def run(
     conn.execute("PRAGMA foreign_keys = ON")
     conn.execute(CREATE_STANDINGS_SQL)
     conn.execute(CREATE_MATCHES_SQL)
+    conn.execute(match_stats.CREATE_SQL)
     conn.commit()
     _migrate_standings_columns(conn)
     _migrate_matches_columns(conn)

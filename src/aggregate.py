@@ -163,8 +163,9 @@ def load_csv(path: Path) -> pd.DataFrame | None:
     # reads - Div, Date, HomeTeam, AwayTeam, FTHG, FTAG, FTR - sits within
     # the header's own declared width in every football-data schema this
     # project has seen, so trimming the row to that width keeps the match
-    # and only discards odds data nothing here uses. A too-narrow row is
-    # genuinely missing data and still can't be recovered.
+    # and only discards the stray trailing odds (match_stats loses those
+    # few prices, never the match). A too-narrow row is genuinely missing
+    # data and still can't be recovered.
     with open(path, "rb") as fh:
         header_width = len(fh.readline().decode("latin-1").rstrip("\r\n").split(","))
 
@@ -196,7 +197,7 @@ def load_csv(path: Path) -> pd.DataFrame | None:
     if counts["truncated"]:
         logger.info(
             "%s: %d row(s) had more fields than the header declares (extra "
-            "trailing columns, commonly odds data not used here) - trimmed "
+            "trailing columns, commonly odds) - trimmed "
             "to fit rather than dropped",
             path.name, counts["truncated"],
         )

@@ -57,8 +57,32 @@ read by hand into `data/club-companies.tsv` and `club_finances`.
 
 1. Parse the odds and match-statistics columns the pipeline already has:
    a page on luck and expected points with no new dependency.
-2. Deprivation 2025 onto the catchment model, as a second chapter of the
-   income page.
+2. Deprivation 2025 onto the catchment model, as its own insight page.
 3. Companies House charges and PSCs for the matched companies: the debt
    behind the ground, and the owners from the register.
 4. Wikipedia pageviews as the hatred page's measured exposure.
+
+## Backlog
+
+Where each source stands. Updated as work ships; when Phase 1 ships, the
+next "Not started" rows are raised again.
+
+| # | Source | Status | Notes |
+|---|---|---|---|
+| 1 | Odds and match statistics | **In progress** (Phase 1a) | Stored in `match_stats` by the pipeline from October 2026; backfilled by a `full_rebuild` refresh. Luck page next: expected points from the odds and from shots on target, side by side. |
+| 2 | Indices of Deprivation 2025 | **Planned** (Phase 1b) | Its own insight page, not a chapter of the income page. Download runs in Actions; the 2021 small-area codes nest in the 6,856 MSOAs already stored. England only. |
+| 3 | Companies House: charges, officers, PSCs | **Planned** (Phase 2) | Key read from `CH_API_KEY` (a repository secret for Actions); never committed. About 900 requests for the 178 matched clubs. |
+| 4 | Companies House free accounts data | **Planned** (Phase 2) | Only electronically filed accounts are in it; micro-entity accounts carry no turnover. Could fill the value page's finance gap. |
+| 5 | Land Registry company-owned titles | Not started | Check the licence allows naming proprietors first. |
+| 6 | ONS house prices for small areas | Not started | Same MSOA codes as income; cheap. |
+| 7 | Census 2021 by MSOA | Not started | |
+| 8 | Wikimedia pageviews | Not started | Measured exposure for the hatred page. |
+| 9 | data.police.uk | Not started | |
+| 10 | engsoccerdata FA Cup and play-offs | Not started | Same host the pipeline already uses; cheap. |
+| 11 | openfootball | Not started | Cross-check only. |
+| 12 | ORR station usage | Not started | |
+| 13 | OpenStreetMap via Overpass | Not started | ODbL share-alike on bulk derived data. |
+| 14 | Open-Meteo | Not started | |
+| 15 | Charity Commission | Not started | |
+| 16 | FCA mutuals register | Not started | |
+| 17 | Historic England NHLE | Not started | |
