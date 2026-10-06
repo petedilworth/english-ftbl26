@@ -69,8 +69,8 @@ next "Not started" rows are raised again.
 
 | # | Source | Status | Notes |
 |---|---|---|---|
-| 1 | Odds and match statistics | **In progress** (Phase 1a) | Stored in `match_stats` by the pipeline from October 2026; backfilled by a `full_rebuild` refresh. Luck page next: expected points from the odds and from shots on target, side by side. |
-| 2 | Indices of Deprivation 2025 | **Planned** (Phase 1b) | Its own insight page, not a chapter of the income page. Download runs in Actions; the 2021 small-area codes nest in the 6,856 MSOAs already stored. England only. |
+| 1 | Odds and match statistics | **Done** (Phase 1a) | `match_stats`, backfilled from 2000/01. The luck page, and expected points and luck beside the current tables on the home page. |
+| 2 | Indices of Deprivation 2025 | **In progress** (Phase 1b) | `.github/workflows/deprivation.yml` runs `scripts/fetch_deprivation.py`: File 7 plus the ONS LSOA-to-MSOA lookup, rolled up to `data/msoa_deprivation.csv`. Its own insight page next. England only. |
 | 3 | Companies House: charges, officers, PSCs | **Planned** (Phase 2) | Key read from `CH_API_KEY` (a repository secret for Actions); never committed. About 900 requests for the 178 matched clubs. |
 | 4 | Companies House free accounts data | **Planned** (Phase 2) | Only electronically filed accounts are in it; micro-entity accounts carry no turnover. Could fill the value page's finance gap. |
 | 5 | Land Registry company-owned titles | Not started | Check the licence allows naming proprietors first. |

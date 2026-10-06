@@ -1,0 +1,59 @@
+name: Deprivation
+
+# Downloads the English Indices of Deprivation 2025 (MHCLG, File 7) and the
+# ONS 2021 LSOA-to-MSOA lookup, rolls the scores up to the neighbourhoods
+# the catchment model uses, and commits data/msoa_deprivation.csv with a
+# meta file saying where it came from. See scripts/fetch_deprivation.py.
+#
+# The indices are published once every few years, so this does not run on
+# a schedule: it runs when the script or this file changes, or by hand.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/deprivation.yml'
+      - 'scripts/fetch_deprivation.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Same queue as Refresh and Editions: everything that commits to the repo
+# waits its turn.
+concurrency:
+  group: england-db
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch and roll up
+        run: python scripts/fetch_deprivation.py
+
+      - name: Commit the neighbourhood file
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/msoa_deprivation.csv data/msoa_deprivation.meta.json
+          git commit -m "Deprivation 2025 by neighbourhood (fetched by workflow)" || exit 0
+          for attempt in 1 2 3 4 5; do
+            if git push; then
+              exit 0
+            fi
+            echo "Push rejected (attempt $attempt) - rebasing onto latest main and retrying"
+            git fetch origin main
+            git rebase origin/main
+          done
+          echo "::error::Could not push after 5 attempts"
+          exit 1
