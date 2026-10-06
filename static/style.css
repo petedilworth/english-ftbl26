@@ -980,3 +980,29 @@ tr.wages-over td:nth-child(7) { font-weight: 600; }
 .luck-market tr.luck-gap td { border-top: 2px solid var(--line); }
 .luck-more summary { cursor: pointer; font-size: 13px; color: var(--accent); margin: 4px 0 12px; }
 .luck-pos { color: #c4521f; font-weight: 600; } .luck-neg { color: #1c5cab; font-weight: 600; } .home-luck { margin: 2px 0 6px; }
+/* Deprivation */
+.dep-weights { max-width: 760px; }
+.dep-weight .index-weight-name { flex: 0 0 9.5em; cursor: help; }
+.dep-weight.is-supplementary .index-weight-name { color: var(--muted); }
+.dep-solo { padding: 2px 8px; font-size: 12px; }
+.dep-presets { grid-column: 1 / -1; display: flex; gap: 8px; }
+.dep-now { margin-top: 0; }
+.dep-split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 8px 32px; align-items: start; margin-top: 12px; }
+@media (max-width: 760px) { .dep-split { grid-template-columns: minmax(0, 1fr); } }
+.dep-bar.is-current { background: var(--bg-soft); font-weight: 600; }
+.dep-fill { display: block; height: 100%; background: #6da7ec; border-radius: 0 4px 4px 0; }
+.dep-shape-head { margin: 4px 0 10px; }
+.dep-shape-rows { display: grid; gap: 4px; }
+.dep-shape-row { display: grid; grid-template-columns: 9.5em 1fr 2.2em; gap: 8px; align-items: center; font-size: 13px; }
+.dep-shape-row.is-off { opacity: 0.4; }
+.dep-shape-row.is-solo .dep-shape-label { font-weight: 700; }
+.dep-shape-track { position: relative; height: 14px; background: var(--bg-soft); border-radius: 3px; }
+.dep-shape-bar { position: absolute; top: 0; height: 100%; border-radius: 3px; }
+.dep-shape-bar.worse { background: #eb6834; }
+.dep-shape-bar.better { background: #2a78d6; }
+.dep-shape-mid { position: absolute; left: 50%; top: -3px; width: 1px; height: 20px; background: var(--ink); }
+.dep-shape-value { text-align: right; font-variant-numeric: tabular-nums; }
+.dep-table th { white-space: nowrap; }
+.dep-legend { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--muted); margin: 6px 0; flex-wrap: wrap; }
+.dep-legend-ramp { display: inline-flex; height: 10px; width: 180px; border-radius: 2px; overflow: hidden; }
+.dep-legend-ramp span { flex: 1; }

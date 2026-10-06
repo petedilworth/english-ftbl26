@@ -34,6 +34,7 @@ import compare as compare_mod  # noqa: E402  (two clubs side by side)
 import yoyo as yoyo_mod  # noqa: E402  (yo-yo clubs)
 import income as income_mod  # noqa: E402  (income around the ground)
 import luck as luck_mod  # noqa: E402  (points against expected points)
+import deprivation as deprivation_mod  # noqa: E402  (deprivation around the ground)
 import divisions
 divisions_mod = divisions
 import finances  # noqa: E402  (disclosure states for the club finances table)
@@ -2558,6 +2559,11 @@ class SiteBuilder:
                 "luck", "Luck",
                 "Points against expected points, from the odds and from the shots – and the seasons luck decided",
             ))
+        if (PROJECT_ROOT / "content" / "insights" / "deprivation.md").exists():
+            stories.append(story(
+                "deprivation", "Deprivation around the ground",
+                "Seven kinds of hard times, weighted however you like – and why they did not make the big clubs",
+            ))
         if (PROJECT_ROOT / "content" / "insights" / "grounds.md").exists():
             stories.append(story(
                 "grounds", "Who owns the ground",
@@ -2685,6 +2691,7 @@ class SiteBuilder:
         self._insight_grounds()
         self._insight_income()
         self._insight_luck()
+        self._insight_deprivation()
         self._insight_boom_and_bust(boom_bust_events)
         self._insight_the_drop(movement_matches)
         self._insight_the_rise(movement_matches)
@@ -3459,6 +3466,119 @@ class SiteBuilder:
             chance_clear=max(1, round(len(beaters) * 0.05)), min_seasons=luck_mod.MIN_MARKET_SEASONS,
             odds_kinder=d["odds_kinder"], shots_kinder=d["shots_kinder"],
             current=d["current"], min_coverage=luck_mod.MIN_COVERAGE,
+        )
+
+    def _insight_deprivation(self) -> None:
+        """
+        Deprivation around the ground: weight sliders driving the map, the
+        club ranking and a club's shape (static/deprivation.js), then the
+        tier strip, the income disagreement, the most-deprived-tenth table,
+        children and pensioners, and every club. See src/deprivation.py.
+        Gated on its prose and on data/msoa_deprivation.csv.
+        """
+        import json
+
+        import markdown as md
+        from markupsafe import Markup
+
+        source = PROJECT_ROOT / "content" / "insights" / "deprivation.md"
+        if not source.exists():
+            return
+        try:
+            d = deprivation_mod.assemble(self.conn, PROJECT_ROOT / "data" / "msoa_deprivation.csv")
+        except Exception as exc:  # the page must never break the build
+            logger.warning("deprivation page skipped: %s", exc)
+            return
+        if not d:
+            return
+        meta_path = PROJECT_ROOT / "data" / "msoa_deprivation.meta.json"
+        fetched = ""
+        if meta_path.exists():
+            try:
+                fetched = json.loads(meta_path.read_text(encoding="utf-8")).get("fetched", "")
+            except ValueError:
+                pass
+
+        # The tier strip, on the 0-100 percentile scale.
+        sw, left, top, row_h = 760, 150, 24, 36
+        sh = 60 + row_h * len(d["by_tier"])
+        vals = [c["official"] for c in d["clubs"]]
+        lo, hi = min(vals + [50]) // 10 * 10, -(-max(vals + [50]) // 10) * 10
+
+        def sx(v):
+            return round(left + (v - lo) / max(1, hi - lo) * (sw - left - 10), 1)
+
+        strip_rows = []
+        for i, (t, info) in enumerate(sorted(d["by_tier"].items())):
+            strip_rows.append({"tier": t, "n": info["n"], "median": info["median"], "y": top + 12 + i * row_h,
+                               "median_x": sx(info["median"]),
+                               "dots": [dict(c, x=sx(c["official"])) for c in d["clubs"] if c["tier"] == t]})
+        strip_ticks = [{"x": sx(v), "label": str(int(v))} for v in range(int(lo), int(hi) + 1, 10)]
+
+        # Income against deprivation, the clubs that disagree most labelled.
+        xw, xh, xl, xt = 760, 420, 50, 10
+        incomes = [c["income"] for c in d["clubs"]]
+        ilo, ihi = min(incomes) // 2000 * 2000, -(-max(incomes) // 2000) * 2000
+        olo, ohi = lo, hi
+
+        def px(v):
+            return round(xl + (v - ilo) / max(1, ihi - ilo) * (xw - xl - 20), 1)
+
+        def py(v):
+            return round(xh - 34 - (v - olo) / max(1, ohi - olo) * (xh - 34 - xt), 1)
+
+        hot = {c["club_id"] for c in d["deprived_not_poor"][:5]}
+        cool = {c["club_id"] for c in d["poor_not_deprived"][:5]}
+        sc_dots = [{"club_id": c["club_id"], "name": c["name"], "income": c["income"], "official": c["official"],
+                    "x": px(c["income"]), "y": py(c["official"]),
+                    "label": c["club_id"] in hot or c["club_id"] in cool,
+                    "fill": "#eb6834" if c["club_id"] in hot else "#2a78d6"} for c in d["clubs"]]
+        # Labels: right of the dot, unless that would sit on a label already
+        # placed, then left, then nudged down - enough for ten names.
+        placed = []
+        for dot in sorted((x for x in sc_dots if x["label"]), key=lambda x: x["y"]):
+            w = 6.2 * len(dot["name"])
+            for lx, ly, anchor, x0 in ((dot["x"] + 7, dot["y"] + 4, "start", dot["x"] + 7),
+                                       (dot["x"] - 7, dot["y"] + 4, "end", dot["x"] - 7 - w),
+                                       (dot["x"] + 7, dot["y"] + 16, "start", dot["x"] + 7),
+                                       (dot["x"] - 7, dot["y"] + 16, "end", dot["x"] - 7 - w)):
+                if all(abs(ly - py_) > 11 or x0 + w < px0 or x0 > px0 + pw_ for px0, py_, pw_ in placed):
+                    break
+            dot.update(lx=round(lx, 1), ly=round(ly, 1), anchor=anchor)
+            placed.append((x0, ly, w))
+        step = 5000 if ihi - ilo > 20000 else 2000
+        sc_xticks = [{"x": px(v), "label": f"{v // 1000}k"} for v in range(int(ilo), int(ihi) + 1, step)]
+        sc_yticks = [{"y": py(v), "label": str(int(v))} for v in range(int(olo), int(ohi) + 1, 10)]
+
+        m = d["model"]
+        most = d["most"][0]
+        by_id = {c["club_id"]: c for c in d["clubs"]}
+        stats = [
+            {"value": f"{len(d['map']['points']):,}", "label": "Neighbourhoods scored on seven domains"},
+            {"value": f"{most['official']:.0f}", "label": f"Most deprived catchment: {most['name']}, tier {most['tier']}"},
+            {"value": f"{m['corr_tier']:+.2f}", "label": "Correlation, deprivation and tier"},
+            {"value": f"{m['partial']:+.2f}", "label": "The same, once club size is held fixed"},
+        ]
+        out_dir = self.out / "insights" / "deprivation"
+        out_dir.mkdir(parents=True, exist_ok=True)
+        payload = dict(d["map"], domains=d["domains"], ramp=income_mod.RAMP)
+        (out_dir / "deprivation-data.js").write_text(
+            "window.DEPRIVATION_DATA = " + json.dumps(payload, separators=(",", ":")) + ";", encoding="utf-8")
+        keys = deprivation_mod.KEYS
+        self.render(
+            "insight_deprivation.html", out_dir / "index.html", 2,
+            title="Deprivation around the ground",
+            intro_html=Markup(md.markdown(content.load_theme(source))),
+            stats=stats, domains=d["domains"],
+            legend=[income_mod.RAMP[round(k * (len(income_mod.RAMP) - 1) / 9)] for k in range(10)],
+            tiers=sorted(d["by_tier"]), featured=[by_id[f] for f in d["featured"]],
+            model=m, sw=sw, sh=sh, strip_left=left, strip_top=top, strip_rows=strip_rows,
+            strip_ticks=strip_ticks, england_x=sx(50),
+            xw=xw, xh=xh, sc_dots=sc_dots, sc_xticks=sc_xticks, sc_yticks=sc_yticks,
+            deprived_not_poor=d["deprived_not_poor"], poor_not_deprived=d["poor_not_deprived"],
+            bottom10=d["bottom10"], children=d["children"], pensioners=d["pensioners"],
+            k_child=keys.index("idaci"), k_old=keys.index("idaopi"),
+            clubs=sorted(d["clubs"], key=lambda c: -c["official"]), fetched=fetched,
         )
 
     def _movement_matches(self) -> dict[str, list[dict]]:
