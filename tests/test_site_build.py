@@ -925,14 +925,15 @@ def test_boom_and_bust_works_without_a_case_study_file(tmp_path, monkeypatch):
 
 
 def test_insight_table_existing_callers_unaffected_by_new_optional_blocks(tmp_path):
-    # yo-yo, records etc. never pass intro_html/stats/case studies - confirm
-    # those pages still render cleanly with the new template blocks in place.
+    # records, safe-thresholds etc. never pass intro_html/stats/case studies -
+    # confirm those pages still render cleanly with the new template blocks
+    # in place. (Yo-yo clubs has its own template now.)
     db = _db_on_disk(tmp_path)
     out = tmp_path / "site"
     SiteBuilder(db, out, charts_enabled=False).build()
-    yoyo = (out / "insights" / "yo-yo" / "index.html").read_text()
-    assert "This past summer" not in yoyo
-    assert "stat-cards" not in yoyo
+    records = (out / "insights" / "records" / "index.html").read_text()
+    assert "This past summer" not in records
+    assert "stat-cards" not in records
 
 
 # ── Drops/rises as club facts (The drop / The rise featured cards) ───────

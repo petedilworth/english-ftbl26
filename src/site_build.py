@@ -31,6 +31,7 @@ import hatred as hatred_mod  # noqa: E402  (the most disliked clubs)
 import value as value_mod  # noqa: E402  (which club to buy)
 import grounds as grounds_mod  # noqa: E402  (who owns the ground)
 import compare as compare_mod  # noqa: E402  (two clubs side by side)
+import yoyo as yoyo_mod  # noqa: E402  (yo-yo clubs)
 import divisions
 divisions_mod = divisions
 import finances  # noqa: E402  (disclosure states for the club finances table)
@@ -2502,7 +2503,8 @@ class SiteBuilder:
                     "path": f"insights/{slug}/index.html"}
 
         stories = [
-            story("yo-yo", "Yo-yo clubs", "The volatility league"),
+            story("yo-yo", "Yo-yo clubs",
+                  "Bounce runs, the elastic between divisions, and who is bouncing right now"),
             story("fallen-giants", "Fallen giants & risers",
                   "Long falls and great climbs"),
             story("records", "Records & extremes", "The best and worst seasons"),
@@ -4585,6 +4587,9 @@ class SiteBuilder:
         )
 
     def _insight_yo_yo(self) -> None:
+        if (PROJECT_ROOT / "content" / "insights" / "yo-yo.md").exists():
+            self._insight_yoyo_page()
+            return
         rows = self.conn.execute(
             """
             SELECT * FROM (
@@ -4615,6 +4620,183 @@ class SiteBuilder:
                     for i, r in enumerate(rows)
                 ],
             }],
+        )
+
+    # ── Yo-yo clubs ──────────────────────────────────────────────────────
+
+    YOYO_GEOM = {"W": 960, "L": 170, "R": 10, "header": 22, "row_h": 40, "pad": 5, "span": 30}
+
+    def _insight_yoyo_page(self) -> None:
+        """
+        The seismograph: one server-rendered trace per volatile club, tier
+        by season, with bounce runs picked out; then who is bouncing now,
+        the elastic at each boundary and by decade, a hall of fame and the
+        full league. See src/yoyo.py and static/yoyo.js.
+        """
+        import json
+
+        import markdown as md
+        from markupsafe import Markup
+
+        d = yoyo_mod.assemble(self.conn)
+        if not d:
+            return
+        g = self.YOYO_GEOM
+        seasons = d["seasons"]
+        first, n = seasons[0], len(seasons)
+        col_w = (g["W"] - g["L"] - g["R"]) / max(1, n - 1)
+        max_tier = max(x[1] for c in d["clubs"] for x in c["history"])
+
+        def x(season):
+            return round(g["L"] + (season - first) * col_w, 1)
+
+        def y(tier):
+            return round(g["pad"] + (tier - 1) * g["span"] / max(1, max_tier - 1), 1)
+
+        def words(run):
+            return ", ".join(("promoted " if k == "P" else "relegated ") + season_label(s)
+                             for s, k in zip(range(run["start"], run["end"] + 1), run["pattern"]))
+
+        divisions: list[str] = []
+        div_index: dict[str, int] = {}
+        club_json = {}
+        rows = []
+        by_id = {c["club_id"]: c for c in d["clubs"]}
+        for cid in d["shown"]:
+            c = by_id[cid]
+            h = c["history"]
+            by_season = {r[0]: r for r in h}
+            # Polylines break where the record does.
+            segs, cur = [], []
+            for r in h:
+                if cur and r[0] != cur[-1][0] + 1:
+                    segs.append(cur); cur = []
+                cur.append(r)
+            if cur:
+                segs.append(cur)
+            run_segs = []
+            for run in c["runs"]:
+                pts = [by_season[s] for s in range(run["start"], run["end"] + 2) if s in by_season]
+                run_segs.append(" ".join(f"{x(r[0])},{y(r[1])}" for r in pts))
+            live = None
+            if c["active"]:
+                last = h[-1]
+                live = {"x": x(last[0]), "y": y(last[1]),
+                        "label": f"{c['active']['length']} in a row, now {last[4]} in {last[3]}" if last[4] else ""}
+            rows.append({
+                "club_id": cid, "name": c["name"], "run": c["run"], "mps": c["mps"],
+                "restlessness": c["restlessness"], "run_end": c["longest"]["end"] if c["longest"] else 0,
+                "sub": f"run {c['run']} · {c['mps']:.2f} moves/season · {c['amplitude']} tiers",
+                "segments": [" ".join(f"{x(r[0])},{y(r[1])}" for r in seg) for seg in segs],
+                "run_segments": run_segs, "live": live,
+            })
+            tiers, kinds, divs, pos = [None] * n, [], [0] * n, [None] * n
+            kinds = ["-"] * n
+            for r in h:
+                i = r[0] - first
+                tiers[i] = r[1]
+                kinds[i] = yoyo_mod.kind(r[1], r[2])
+                if r[3] not in div_index:
+                    div_index[r[3]] = len(divisions); divisions.append(r[3])
+                divs[i] = div_index[r[3]]
+                pos[i] = r[4]
+            club_json[cid] = {"name": c["name"], "t": tiers, "k": "".join(kinds), "d": divs, "p": pos}
+        rows.sort(key=lambda r: (-r["run"], -r["run_end"], r["name"]))
+
+        e = d["elastic"]
+        def pct(back, total):
+            return f"{round(100 * back / total)}%" if total else "–"
+        boundaries = []
+        for (lo, hi), c in sorted(e["boundaries"].items()):
+            up = e["by_tier"]["relegated"].get(lo, {})
+            down = e["by_tier"]["promoted"].get(hi, {})
+            boundaries.append({
+                "label": yoyo_mod.BOUNDARY_LABELS.get((lo, hi), f"Tier {lo} / {hi}"),
+                "n": c["n"], "pct": pct(c.get("back", 0), c["n"]),
+                "up_n": up.get("n", 0), "up_pct": pct(up.get("back", 0), up.get("n", 0)),
+                "down_n": down.get("n", 0), "down_pct": pct(down.get("back", 0), down.get("n", 0)),
+            })
+        top_up = e["by_tier"]["relegated"].get(1, {})
+        top_down = e["by_tier"]["promoted"].get(2, {})
+        decade_rows = []
+        for dec in range(first // 10 * 10, d["latest_finished"] + 1, 10):
+            un, ub = top_up.get(f"n{dec}", 0), top_up.get(f"back{dec}", 0)
+            dn, db = top_down.get(f"n{dec}", 0), top_down.get(f"back{dec}", 0)
+            if un < 5 and dn < 5:
+                continue
+            decade_rows.append({"label": f"{dec}s", "up_n": un, "up_back": ub, "up_pct": round(100 * ub / un) if un else 0,
+                                "down_n": dn, "down_back": db, "down_pct": round(100 * db / dn) if dn else 0})
+        decade_note = ""
+        if len(decade_rows) >= 2:
+            a, b = decade_rows[0], decade_rows[-1]
+            decade_note = (f"In the {a['label']}, {a['up_back']} of {a['up_n']} clubs relegated from the top flight came "
+                           f"straight back; in the {b['label']} so far, {b['up_back']} of {b['up_n']}. Promoted clubs went "
+                           f"straight back down {a['down_pct']}% of the time then and {b['down_pct']}% now. The crossings "
+                           f"per decade are set by the rules; what changed is how often they are undone.")
+
+        def first_div(c, season):
+            return next((r[3] for r in c["history"] if r[0] == season), "")
+        hall = d["hall"]
+        hall_out = {
+            "runs": [{"club_id": c["club_id"], "name": c["name"], "length": c["run"],
+                      "span": f"{season_label(c['longest']['start'])} – {season_label(c['longest']['end'])}",
+                      "words": words(c["longest"]).capitalize(), "live": bool(c["active"] and c["active"]["end"] == c["longest"]["end"])}
+                     for c in hall["runs"]],
+            "falls": [{"club_id": c["club_id"], "name": c["name"], "tiers": c["fastest"]["fall"][0],
+                       "from": f"{first_div(c, c['fastest']['fall'][1])}, {season_label(c['fastest']['fall'][1])}",
+                       "to": f"{first_div(c, c['fastest']['fall'][2])}, {season_label(c['fastest']['fall'][2])}"}
+                      for c in hall["falls"]],
+            "climbs": [{"club_id": c["club_id"], "name": c["name"], "tiers": c["fastest"]["climb"][0],
+                        "from": f"{first_div(c, c['fastest']['climb'][1])}, {season_label(c['fastest']['climb'][1])}",
+                        "to": f"{first_div(c, c['fastest']['climb'][2])}, {season_label(c['fastest']['climb'][2])}"}
+                       for c in hall["climbs"]],
+            "round_trips": [{"club_id": c["club_id"], "name": c["name"], "tiers": c["round_trip"][0],
+                             "peak": f"{first_div(c, c['round_trip'][1])}, {season_label(c['round_trip'][1])}",
+                             "trough": f"{first_div(c, c['round_trip'][2])}, {season_label(c['round_trip'][2])}",
+                             "back": season_label(c["round_trip"][3]), "years": c["round_trip"][3] - c["round_trip"][1]}
+                            for c in hall["round_trips"]],
+        }
+        active = []
+        for c in d["active"]:
+            run, now = c["active"], c["now"]
+            need = "promotion" if run["pattern"][-1] == "R" else "relegation"
+            length = run["length"] + 1
+            record = d["leaders"]["run"][0]["run"] if d["leaders"]["run"] else 0
+            tail = (" – a new record." if length > record else " – equalling the record." if length == record else ".")
+            active.append({"club_id": c["club_id"], "name": c["name"], "length": run["length"], "last": run["pattern"][-1],
+                           "words": words(run).capitalize(),
+                           "position": f"{now[4]}{'th' if 10 <= now[4] % 100 <= 20 else {1: 'st', 2: 'nd', 3: 'rd'}.get(now[4] % 10, 'th')}" if now and now[4] else "–",
+                           "division": now[3] if now else "",
+                           "next": f"A {need} this season would make it {length}{tail}"})
+        runs_total = sum(len(c["runs"]) for c in d["clubs"])
+        lower_from = self.conn.execute("SELECT MIN(season_end_year) FROM standings WHERE tier >= 6").fetchone()[0]
+        stats = [
+            {"value": d["leaders"]["run"][0]["run"] if d["leaders"]["run"] else 0, "label": "Longest bounce run"},
+            {"value": runs_total, "label": "Bounce runs on record"},
+            {"value": len(active), "label": "Still bouncing"},
+            {"value": boundaries[0]["pct"] if boundaries else "–", "label": "Top-flight crossings undone next season"},
+        ]
+        out_dir = self.out / "insights" / "yo-yo"
+        out_dir.mkdir(parents=True, exist_ok=True)
+        (out_dir / "yoyo-data.js").write_text("window.YOYO_DATA = " + json.dumps({
+            "first": first, "n": n, "width": g["W"], "header": g["header"], "rowH": g["row_h"],
+            "left": g["L"], "colW": col_w, "divisions": divisions, "clubs": club_json,
+        }, separators=(",", ":")) + ";", encoding="utf-8")
+        self.render(
+            "insight_yoyo.html", out_dir / "index.html", 2,
+            title="Yo-yo clubs",
+            intro_html=Markup(md.markdown(content.load_theme(PROJECT_ROOT / "content" / "insights" / "yo-yo.md"))),
+            stats=stats, rows=rows, shown=len(rows), top=yoyo_mod.TOP, min_seasons=d["min_seasons"],
+            keys=[{"key": "run", "label": "Longest bounce run"}, {"key": "mps", "label": "Moves per season"},
+                  {"key": "restlessness", "label": "Restlessness"}],
+            W=g["W"], L=g["L"], header=g["header"], row_h=g["row_h"],
+            decades=[{"x": x(s), "label": season_label(s)} for s in seasons if s % 10 == 0],
+            first_label=season_label(first), last_label=season_label(seasons[-1]),
+            active=active, boundaries=boundaries, decade_rows=decade_rows, decade_note=decade_note,
+            hall=hall_out, window=yoyo_mod.WINDOW,
+            league=sorted([c for c in d["clubs"] if c["ranked"]], key=lambda c: (-c["run"], -c["mps"], c["name"])),
+            coverage_note=self.ranked_note(complete_only=False),
+            lower_from=season_label(lower_from) if lower_from else None,
         )
 
     def _insight_fallen_giants(self) -> None:

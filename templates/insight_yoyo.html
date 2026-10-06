@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Yo-yo clubs</h1>
+<p class="subtitle">The clubs that cannot sit still: the longest bounces, the restless, and the elastic between the divisions that sends them straight back.</p>
+
+<div class="stat-cards">
+  {% for s in stats %}<div class="stat-card"><div class="stat-value">{{ s.value }}</div><div class="stat-label">{{ s.label }}</div></div>{% endfor %}
+</div>
+
+<div class="theme-intro">{{ intro_html }}</div>
+
+<h2 id="traces">The seismograph</h2>
+<p class="subtitle">One trace per club, {{ first_label }} to {{ last_label }}, the top flight at the top of each line. Orange is a bounce run: promoted, relegated, promoted again in consecutive seasons. Hover a trace for the season; click a club to pin its moves below. Clubs with at least {{ min_seasons }} finished seasons.</p>
+<div class="map-chips chip-row seis-chips" role="group" aria-label="Order the traces by">
+  {% for k in keys %}<button class="chip{% if loop.first %} chip-active{% endif %}" type="button" data-key="{{ k.key }}" aria-pressed="{{ 'true' if loop.first else 'false' }}">{{ k.label }}</button>{% endfor %}
+</div>
+<div class="chart-holder seis-holder">
+  <svg id="seismograph" viewBox="0 0 {{ W }} {{ header + 20 * row_h }}" preserveAspectRatio="xMidYMin meet" role="img" aria-label="Tier by season for the most volatile clubs">
+    <g class="seis-head">
+      {% for d in decades %}
+      <line x1="{{ d.x }}" y1="{{ header - 4 }}" x2="{{ d.x }}" y2="{{ header + 20 * row_h }}" stroke="#e4e8ec" stroke-width="1" class="seis-grid"></line>
+      <text x="{{ d.x + 3 }}" y="{{ header - 8 }}" font-size="10" fill="#6b7683">{{ d.label }}</text>
+      {% endfor %}
+    </g>
+    {% for r in rows %}
+    <g class="seis-row" data-club="{{ r.club_id }}" data-run="{{ r.run }}" data-mps="{{ r.mps }}" data-restlessness="{{ r.restlessness }}" data-run-end="{{ r.run_end }}" transform="translate(0,{{ header + loop.index0 * row_h }})"{% if loop.index0 >= 20 %} hidden{% endif %}>
+      <rect x="0" y="0" width="{{ W }}" height="{{ row_h }}" fill="transparent" class="seis-hit"></rect>
+      <line x1="{{ L }}" y1="{{ row_h - 0.5 }}" x2="{{ W - 10 }}" y2="{{ row_h - 0.5 }}" stroke="#eef1f4" stroke-width="1"></line>
+      <a href="{{ root }}/team/{{ r.club_id }}/index.html"><text x="6" y="14" font-size="12" font-weight="600" fill="#17202a">{{ r.name }}</text></a>
+      <text x="6" y="27" font-size="10" fill="#6b7683" class="seis-sub">{{ r.sub }}</text>
+      {% for seg in r.segments %}<polyline points="{{ seg }}" fill="none" stroke="#2a78d6" stroke-width="1.8" stroke-linejoin="round"></polyline>{% endfor %}
+      {% for seg in r.run_segments %}<polyline points="{{ seg }}" fill="none" stroke="#eb6834" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"></polyline>{% endfor %}
+      {% if r.live %}<circle cx="{{ r.live.x }}" cy="{{ r.live.y }}" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="1.5" class="seis-live"><title>Still bouncing: {{ r.live.label }}</title></circle>{% endif %}
+    </g>
+    {% endfor %}
+  </svg>
+  <div class="seis-tip" id="seis-tip" hidden></div>
+</div>
+<button class="chip seis-more" type="button" aria-expanded="false">Show all {{ rows | length }} traces</button>
+<div id="seis-detail" class="chart-detail" hidden></div>
+<p class="finance-note">Three measures, three orders. <b>Longest bounce run</b> is the purest yo-yo: moves in consecutive seasons, each the reverse of the last. <b>Moves per season</b> is promotions plus relegations over finished seasons. <b>Restlessness</b> multiplies that by the number of tiers the club has spanned, so a club that fell from the top flight to the fifth tier and climbed back scores beside one that bounces between two divisions. The {{ shown }} traces here are the top {{ top }} on any of the three.</p>
+
+{% if active %}
+<h2 id="now">Bouncing right now</h2>
+<p class="subtitle">Runs still alive: the last finished season was a move, and the one before it the opposite. Where they stand this season says whether the elastic holds.</p>
+<div class="case-study-grid yoyo-live">
+  {% for c in active %}
+  <div class="case-study-card">
+    <p class="case-study-tag {{ 'down' if c.last == 'R' else 'up' }}">{{ c.length }} in a row</p>
+    <h3><a href="{{ root }}/team/{{ c.club_id }}/index.html">{{ c.name }}</a></h3>
+    <p>{{ c.words }}.</p>
+    <p>Now {{ c.position }} in {{ c.division }}. {{ c.next }}</p>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+<h2 id="elastic">Where the elastic is</h2>
+<p class="subtitle">At each boundary, the share of crossings reversed the very next season. The crossings themselves are fixed by the rules – three up, three down – so the reversals are the measure.</p>
+<div class="table-scroll"><table class="standings">
+  <tr><th>Boundary</th><th class="num">Crossings</th><th class="num">Sent straight back</th><th class="num">Relegated, then straight back up</th><th class="num">Promoted, then straight back down</th></tr>
+  {% for b in boundaries %}
+  <tr><td>{{ b.label }}</td><td class="num">{{ b.n }}</td><td class="num"><b>{{ b.pct }}</b></td><td class="num">{{ b.up_pct }} <span class="status-tag">of {{ b.up_n }}</span></td><td class="num">{{ b.down_pct }} <span class="status-tag">of {{ b.down_n }}</span></td></tr>
+  {% endfor %}
+</table></div>
+
+<h3>The top-flight elastic, by decade</h3>
+<p class="subtitle">Of clubs relegated from the top flight, the share promoted straight back; of clubs promoted to it, the share relegated straight back.</p>
+<div class="chart-holder">
+  <svg viewBox="0 0 760 240" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Top-flight bounce-back rates by decade">
+    {% for y in (0, 25, 50) %}
+    <line x1="48" y1="{{ 190 - y * 2.8 }}" x2="750" y2="{{ 190 - y * 2.8 }}" stroke="#e4e8ec" stroke-width="1"></line>
+    <text x="42" y="{{ 194 - y * 2.8 }}" font-size="10" fill="#6b7683" text-anchor="end">{{ y }}%</text>
+    {% endfor %}
+    {% for d in decade_rows %}
+    {% set x = 60 + loop.index0 * 98 %}
+    <rect x="{{ x }}" y="{{ 190 - d.up_pct * 2.8 }}" width="34" height="{{ d.up_pct * 2.8 }}" fill="#2a78d6" rx="2"><title>{{ d.label }}: {{ d.up_back }} of {{ d.up_n }} relegated clubs went straight back up</title></rect>
+    <text x="{{ x + 17 }}" y="{{ 186 - d.up_pct * 2.8 }}" font-size="10" fill="#17202a" text-anchor="middle">{{ d.up_pct }}%</text>
+    <rect x="{{ x + 38 }}" y="{{ 190 - d.down_pct * 2.8 }}" width="34" height="{{ d.down_pct * 2.8 }}" fill="#eb6834" rx="2"><title>{{ d.label }}: {{ d.down_back }} of {{ d.down_n }} promoted clubs went straight back down</title></rect>
+    <text x="{{ x + 55 }}" y="{{ 186 - d.down_pct * 2.8 }}" font-size="10" fill="#17202a" text-anchor="middle">{{ d.down_pct }}%</text>
+    <text x="{{ x + 36 }}" y="208" font-size="11" fill="#6b7683" text-anchor="middle">{{ d.label }}</text>
+    {% endfor %}
+    <rect x="60" y="222" width="12" height="10" fill="#2a78d6" rx="2"></rect><text x="76" y="231" font-size="11" fill="#17202a">Relegated, straight back up</text>
+    <rect x="260" y="222" width="12" height="10" fill="#eb6834" rx="2"></rect><text x="276" y="231" font-size="11" fill="#17202a">Promoted, straight back down</text>
+  </svg>
+</div>
+<p class="finance-note">{{ decade_note }}</p>
+
+<h2 id="hall">Hall of fame</h2>
+<h3>The longest bounce runs</h3>
+<div class="table-scroll"><table class="standings">
+  <tr><th>Club</th><th class="num">Run</th><th>Seasons</th><th>The bounce</th></tr>
+  {% for c in hall.runs %}
+  <tr><td><a href="{{ root }}/team/{{ c.club_id }}/index.html">{{ c.name }}</a>{% if c.live %} <span class="status-tag up">still going</span>{% endif %}</td><td class="num">{{ c.length }}</td><td>{{ c.span }}</td><td>{{ c.words }}</td></tr>
+  {% endfor %}
+</table></div>
+
+<div class="yoyo-pair">
+<div>
+<h3>Fastest falls</h3>
+<p class="subtitle">Tiers dropped within {{ window }} seasons.</p>
+<div class="table-scroll"><table class="standings">
+  <tr><th>Club</th><th class="num">Tiers</th><th>From</th><th>To</th></tr>
+  {% for c in hall.falls %}<tr><td><a href="{{ root }}/team/{{ c.club_id }}/index.html">{{ c.name }}</a></td><td class="num">{{ c.tiers }}</td><td>{{ c.from }}</td><td>{{ c.to }}</td></tr>{% endfor %}
+</table></div>
+</div>
+<div>
+<h3>Fastest climbs</h3>
+<p class="subtitle">Tiers climbed within {{ window }} seasons.</p>
+<div class="table-scroll"><table class="standings">
+  <tr><th>Club</th><th class="num">Tiers</th><th>From</th><th>To</th></tr>
+  {% for c in hall.climbs %}<tr><td><a href="{{ root }}/team/{{ c.club_id }}/index.html">{{ c.name }}</a></td><td class="num">{{ c.tiers }}</td><td>{{ c.from }}</td><td>{{ c.to }}</td></tr>{% endfor %}
+</table></div>
+</div>
+</div>
+
+<h3>Round trips</h3>
+<p class="subtitle">The deepest fall that was climbed all the way back: the club was at least that many tiers higher both before and after.</p>
+<div class="table-scroll"><table class="standings">
+  <tr><th>Club</th><th class="num">Tiers</th><th>Last up there</th><th>The bottom</th><th>Back</th><th class="num">Years away</th></tr>
+  {% for c in hall.round_trips %}<tr><td><a href="{{ root }}/team/{{ c.club_id }}/index.html">{{ c.name }}</a></td><td class="num">{{ c.tiers }}</td><td>{{ c.peak }}</td><td>{{ c.trough }}</td><td>{{ c.back }}</td><td class="num">{{ c.years }}</td></tr>{% endfor %}
+</table></div>
+
+<h2 id="table">The volatility league</h2>
+<p class="subtitle">Every club with at least {{ min_seasons }} finished seasons, on all three measures. Click a heading to sort.</p>
+<div class="table-scroll"><table class="standings sortable" id="yoyo-table">
+  <thead><tr><th>Club</th><th class="num">Longest run</th><th class="num">Moves / season</th><th class="num">Restlessness</th><th class="num">Promotions</th><th class="num">Relegations</th><th class="num">Tiers spanned</th><th class="num">Seasons</th></tr></thead>
+  <tbody>
+  {% for c in league %}
+  <tr><td><a href="{{ root }}/team/{{ c.club_id }}/index.html">{{ c.name }}</a></td><td class="num" data-sort="{{ c.run }}">{{ c.run }}</td><td class="num" data-sort="{{ c.mps }}">{{ "%.2f" | format(c.mps) }}</td><td class="num" data-sort="{{ c.restlessness }}">{{ "%.2f" | format(c.restlessness) }}</td><td class="num" data-sort="{{ c.promotions }}">{{ c.promotions }}</td><td class="num" data-sort="{{ c.relegations }}">{{ c.relegations }}</td><td class="num" data-sort="{{ c.amplitude }}">{{ c.amplitude }}</td><td class="num" data-sort="{{ c.seasons }}">{{ c.seasons }}</td></tr>
+  {% endfor %}
+  </tbody>
+</table></div>
+<p class="finance-note">{{ coverage_note }}{% if lower_from %} Tiers six and seven are on record from {{ lower_from }} only, so a club whose seasons are mostly there has had fewer chances to move than one on record throughout.{% endif %}</p>
+
+<script src="yoyo-data.js"></script>
+<script src="{{ root }}/static/hash-state.js"></script>
+<script src="{{ root }}/static/club-table.js"></script>
+<script src="{{ root }}/static/yoyo.js"></script>
+{% endblock %}
