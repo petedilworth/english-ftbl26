@@ -1,0 +1,10 @@
+{
+  "fetched": "2026-10-06",
+  "source": "English Indices of Deprivation 2025, File 7 (MHCLG), Open Government Licence v3",
+  "file_7_url": "https://assets.publishing.service.gov.uk/media/691ded56d140bbbaa59a2a7d/File_7_IoD2025_All_Ranks_Scores_Deciles_Population_Denominators.csv",
+  "join": "ONS Open Geography Portal: Output Area (2021) to LSOA to MSOA to LAD (December 2021) Exact Fit Lookup in EW (V3) (https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/OA_LSOA_MSOA_EW_DEC_2021_LU_v3/FeatureServer)",
+  "lsoas": 33755,
+  "msoas": 6856,
+  "unmatched_lsoas": 0,
+  "method": "population-weighted mean of LSOA scores per 2021 MSOA; imd_rank over MSOAs, 1 = most deprived"
+}
