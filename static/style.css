@@ -925,3 +925,28 @@ tr.wages-over td:nth-child(7) { font-weight: 600; }
 .cmp-jump .chip { margin-left: auto; }
 #cmp-body h2 { scroll-margin-top: 48px; }
 @media (max-width: 640px) { .cmp-jump { flex-wrap: nowrap; overflow-x: auto; white-space: nowrap; } }
+
+/* Yo-yo clubs: the seismograph and its company. */
+.seis-holder { position: relative; overflow: hidden; }
+.seis-row { cursor: pointer; }
+.seis-row:hover .seis-hit { fill: var(--bg-soft); }
+.seis-row[hidden] { display: none; }
+.seis-row a text { text-decoration: none; }
+.seis-row a:hover text { fill: var(--accent); text-decoration: underline; }
+.seis-live { animation: seis-pulse 1.6s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+@keyframes seis-pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.5); } }
+@media (prefers-reduced-motion: reduce) { .seis-live { animation: none; } }
+.seis-tip { position: absolute; pointer-events: none; background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px; font-size: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); max-width: 210px; z-index: 5; }
+.seis-more { margin-top: 8px; }
+.yoyo-moves { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
+.yoyo-move { font-size: 12px; padding: 2px 7px; border-radius: 999px; border: 1px solid var(--line); font-variant-numeric: tabular-nums; }
+.yoyo-move-P { color: var(--up); } .yoyo-move-R { color: var(--down); }
+.yoyo-live .case-study-card p { font-size: 13px; }
+.yoyo-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 0 24px; }
+@media (max-width: 700px) { .yoyo-pair { grid-template-columns: 1fr; } }
+/* A 69-season trace needs width: on a phone the chart scrolls sideways
+   rather than shrinking the bounces to a flat line. */
+@media (max-width: 700px) {
+  .seis-holder { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .seis-holder svg { min-width: 760px; }
+}
