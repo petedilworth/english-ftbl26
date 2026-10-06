@@ -363,7 +363,8 @@ def test_the_table_carries_every_insight_figure():
     from site_build import SiteBuilder
     keys = [c[0] for c in SiteBuilder.CLUB_TABLE_COLUMNS]
     new = ["ground_security", "income_spread", "income_gap", "dep_overall", "dep_tenth", "dep_worst",
-           "luck_last", "luck_now", "luck_avg", "luck_seasons", "dislike", "value", "value_gap"]
+           "luck_last", "luck_now", "luck_avg", "luck_seasons", "dislike", "value", "value_gap",
+           "controller", "controlled_from", "charges", "board_churn"]
     assert set(new) <= set(keys)
     html = _page()
     header = re.findall(r'data-key="([^"]+)"', html)[:len(keys)]

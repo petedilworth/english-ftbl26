@@ -60,6 +60,14 @@ SOURCES = {
         "licence": "This site's own research.",
         "refresh": "By hand.",
     },
+    "club-companies": {
+        "name": "Club-to-company matches (data/club-companies.tsv)",
+        "url": "https://github.com/petedilworth/english-ftbl26/blob/main/data/club-companies.tsv",
+        "what": "Which company each club plays as, scored by name against every similarly named company, with "
+                "the runners-up kept; open cases settled only on evidence from the register.",
+        "licence": "This site's own work.",
+        "refresh": "With each Companies House fetch.",
+    },
     "deductions": {
         "name": "Points deductions (points_deductions.csv)",
         "url": "https://github.com/petedilworth/english-ftbl26/blob/main/points_deductions.csv",
@@ -91,6 +99,15 @@ SOURCES = {
         "what": "The grievances the record cannot show – a move, a takeover, a scandal – each with a source note.",
         "licence": "This site's own research, sources cited per entry.",
         "refresh": "By hand.",
+    },
+    "companies-house": {
+        "name": "Companies House public data API",
+        "url": "https://developer.company-information.service.gov.uk/",
+        "what": "For the company each club plays as: status and accounts deadlines, directors, persons with "
+                "significant control (followed up through UK parent companies), charges and their lenders, "
+                "insolvency cases and accounts filings.",
+        "licence": "Crown copyright, Open Government Licence v3.",
+        "refresh": "Monthly, by the Companies House workflow.",
     },
     "ons-population": {
         "name": "ONS mid-year population estimates for small areas",
@@ -158,7 +175,7 @@ PAGES = [
          RESULTS + ["wikipedia-clubs", "club-facts", "grounds", "finances", "ons-population", "models"], ""),
         ("All clubs, all data", "teams/table/index.html",
          RESULTS + ["wikipedia-clubs", "club-facts", "grounds", "finances", "ons-population", "ons-income",
-                    "deprivation", "hatred", "models"],
+                    "deprivation", "hatred", "companies-house", "models"],
          "Every column the other pages compute, in one table."),
         ("Compare", "compare/index.html",
          RESULTS + ["wikipedia-clubs", "club-facts", "ons-population", "models"], ""),
@@ -178,6 +195,8 @@ PAGES = [
          ["ons-income", "ons-population", "ons-geography", "models"], ""),
         ("Catchment population", "insights/catchment/index.html",
          ["ons-population", "ons-geography", "wikipedia-clubs", "models"], ""),
+        ("Behind the club", "insights/behind-the-club/index.html", ["companies-house", "club-companies"],
+         "Control, charges, directors and warning lights from the register."),
         ("Who owns the ground", "insights/grounds/index.html", ["grounds"], ""),
         ("Which club to buy", "insights/value/index.html",
          RESULTS + ["grounds", "finances", "club-facts", "ons-population", "ons-income", "models"], ""),

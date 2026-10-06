@@ -12,7 +12,7 @@ with evidence - the club is listed as not covered rather than guessed at.
 A note on "control". The register names persons with significant control:
 anyone holding more than a quarter of the shares or votes, or able to
 appoint the board. When that person is itself a UK company, the fetch
-follows it up to three steps, so the controller shown is the furthest one
+follows it up to five steps, so the controller shown is the furthest one
 the register reaches. A chain that ends at a company registered abroad
 ends there: the register does not look past the border, and neither can
 this page.
