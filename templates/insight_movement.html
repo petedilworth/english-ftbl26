@@ -3,6 +3,7 @@
 <h1>{{ heading }}</h1>
 <p class="subtitle">{{ intro }}</p>
 
+{% if see_also %}<p class="home-note giants-see-also">{{ see_also | safe }}</p>{% endif %}
 {% if intro_html %}
 <div class="theme-intro">{{ intro_html }}</div>
 {% endif %}

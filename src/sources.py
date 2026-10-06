@@ -209,7 +209,10 @@ PAGES = [
         ("Boom and bust", "insights/boom-and-bust/index.html", ["club-facts", "deductions", "finances"] + RESULTS, ""),
         ("Stadium capacity", "insights/capacity/index.html", ["wikipedia-clubs", "club-facts"], ""),
         ("Club finances", "insights/index.html", ["finances"], "Wages, revenue, profit and net debt by season."),
-        ("Records, the drop, the rise, points eras, safe thresholds, natural level, fallen giants, timeline, "
+        ("Fallen giants & risers", "insights/fallen-giants/index.html",
+         RESULTS + ["ons-population", "ons-income", "models"],
+         "Champions who fell, return odds, fastest falls and rises, sleeping giants by catchment size."),
+        ("Records, the drop, the rise, points eras, safe thresholds, natural level, timeline, "
          "the pyramid", "insights/index.html", RESULTS + ["models"], "Worked out from the league record."),
     ]),
 ]

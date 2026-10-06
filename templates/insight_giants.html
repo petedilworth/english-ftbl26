@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+{% macro club(c) %}<a href="{{ root }}/team/{{ c.club_id }}/index.html">{{ c.name }}</a>{% endmacro %}
+{% macro season(y) %}{{ y - 1 }}/{{ "%02d" % (y % 100) }}{% endmacro %}
+{% macro pct(v) %}{% if v is not none %}{{ (v * 100) | round | int }}%{% else %}–{% endif %}{% endmacro %}
+{% block content %}
+<h1>Fallen giants &amp; risers</h1>
+<p class="subtitle">Clubs a long way from where they were, in both directions – how far, how fast, the odds of coming back, and the towns big enough to be higher than they are.</p>
+
+<div class="stat-cards">
+  {% for s in stats %}<div class="stat-card"><div class="stat-value">{{ s.value }}</div><div class="stat-label">{{ s.label }}</div></div>{% endfor %}
+</div>
+
+{% if intro_html %}<div class="theme-intro">{{ intro_html }}</div>{% endif %}
+
+<h2 id="champions">From champions to the third tier</h2>
+<p class="subtitle">Every English champion since {{ season(first) }} that later fell to the third tier or below. Each chart starts in the title season and runs to today; the line is the tier, one step per season.</p>
+<div class="giants-grid">
+{% for c in champions %}
+<div class="giants-card{% if loop.first %} is-record{% endif %}">
+  <div class="giants-card-head">{{ club(c) }} <span class="status-tag">champions {{ season(c.title) }}</span></div>
+  <svg viewBox="0 0 {{ mw }} {{ mh }}" preserveAspectRatio="none" role="img" aria-label="{{ c.name }} from champions to tier {{ c.low }}">
+    {% for t in range(1, max_tier + 1) %}<line x1="0" y1="{{ ty(t) }}" x2="{{ mw }}" y2="{{ ty(t) }}" stroke="#eef1f4"></line>{% endfor %}
+    <path d="{{ c.d }}" fill="none" stroke="{{ '#eb6834' if loop.first else '#2a78d6' }}" stroke-width="{{ 2.5 if loop.first else 1.8 }}"></path>
+    <circle cx="{{ c.fx }}" cy="{{ c.fy }}" r="3.5" fill="#17202a"><title>Tier {{ c.low }} in {{ season(c.reached) }}</title></circle>
+  </svg>
+  <div class="giants-card-foot"><b>{{ c.years }} years</b> to tier {{ c.low }} ({{ season(c.reached) }}){% if c.now %} · now tier {{ c.now }}{% endif %}</div>
+</div>
+{% endfor %}
+</div>
+<p class="finance-note">Tiers run top to bottom, one to {{ max_tier }}. Each chart is scaled to its own span of years, so the slope of a fall is comparable and its length is in the caption.</p>
+
+<h2 id="live">The giants this season</h2>
+<p class="subtitle">Every former top-flight club now in the third tier or below, where it stands in {{ season(latest) }} so far.</p>
+<div class="giants-live">
+{% for mood, label in [("climbing", "Climbing – in the top quarter"), ("holding", "Holding"), ("sinking", "Sinking – near the bottom")] %}
+{% set rows = live | selectattr("mood", "equalto", mood) | list %}
+{% if rows %}
+<div class="giants-live-col giants-{{ mood }}">
+  <h3>{{ label }}</h3>
+  <ul>{% for r in rows %}<li>{{ club(r) }} <span class="status-tag">{{ r.position }} of {{ r.of }} · tier {{ r.tier }} · {{ r.points }} pts from {{ r.played }}</span></li>{% endfor %}</ul>
+</div>
+{% endif %}
+{% endfor %}
+</div>
+
+<h2 id="odds">Will they come back?</h2>
+<p class="subtitle">What happened after each of the {{ relegations }} relegations from the top flight since {{ season(first) }}. The rising line: the share back within that many seasons. The falling line: for clubs still away after that many seasons, the share that ever came back.</p>
+<div class="chart-holder">
+  <svg viewBox="0 0 {{ ow }} {{ oh }}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Odds of returning to the top flight">
+    {% for v in [0, 25, 50, 75, 100] %}<line x1="{{ ol }}" y1="{{ oy(v / 100) }}" x2="{{ ow - 10 }}" y2="{{ oy(v / 100) }}" stroke="#eef1f4"></line><text x="{{ ol - 6 }}" y="{{ oy(v / 100) + 4 }}" font-size="10" fill="#6b7683" text-anchor="end">{{ v }}%</text>{% endfor %}
+    {% for k in [1, 5, 10, 15, 20, 25] %}<text x="{{ ox(k) }}" y="{{ oh - 20 }}" font-size="10" fill="#6b7683" text-anchor="middle">{{ k }}</text>{% endfor %}
+    <text x="{{ (ol + ow) / 2 }}" y="{{ oh - 1 }}" font-size="11" fill="#17202a" text-anchor="middle">Seasons out of the top flight</text>
+    <path d="{{ within_path }}" fill="none" stroke="#2a78d6" stroke-width="2.5"></path>
+    <path d="{{ ever_path }}" fill="none" stroke="#eb6834" stroke-width="2.5"></path>
+    {% for p in odds_marks %}<circle cx="{{ p.x }}" cy="{{ p.y }}" r="3.5" fill="{{ p.color }}"><title>{{ p.title }}</title></circle><text x="{{ p.x + 6 }}" y="{{ p.y + (14 if p.below else -6) }}" font-size="11" fill="{{ p.color }}" font-weight="600">{{ p.label }}</text>{% endfor %}
+  </svg>
+</div>
+<div class="companies-key"><span><i style="background: #2a78d6"></i>Back within this many seasons</span><span><i style="background: #eb6834"></i>Still away after this many: share that ever came back</span></div>
+<p class="finance-note">The orange line flattens: a club ten seasons out has about the same chance as one twenty seasons out – roughly a coin toss. Relegations too recent to have run the full span are left out of it rather than counted as failures. Longest exiles that ended: {% for e in exiles[:5] %}{{ e.name }} ({{ e.away }} seasons, back {{ season(e.back) }}){% if not loop.last %}, {% endif %}{% endfor %}. Which clubs fell in a cluster and whether they recovered is on <a href="{{ root }}/insights/the-drop/index.html">The drop</a>; how often promoted clubs go straight back down is on <a href="{{ root }}/insights/yo-yo/index.html#elastic">Yo-yo clubs</a>.</p>
+
+<h2 id="fastest">How fast</h2>
+<div class="yoyo-pair">
+<div>
+<h3>Fastest falls</h3>
+<p class="subtitle">From the top flight to the fourth tier.</p>
+<div class="table-scroll"><table class="standings giants-speed">
+  {% for r in falls[:8] %}<tr><td>{{ club(r) }}</td><td>{{ season(r.from) }} → {{ season(r.to) }}</td><td class="num"><span class="giants-bar down" style="width: {{ r.bar }}px"></span><b>{{ r.years }}</b></td></tr>{% endfor %}
+</table></div>
+</div>
+<div>
+<h3>Fastest rises</h3>
+<p class="subtitle">From the fourth tier or below to the top flight.</p>
+<div class="table-scroll"><table class="standings giants-speed">
+  {% for r in rises[:8] %}<tr><td>{{ club(r) }}</td><td>{{ season(r.from) }} → {{ season(r.to) }}</td><td class="num"><span class="giants-bar up" style="width: {{ r.bar }}px"></span><b>{{ r.years }}</b></td></tr>{% endfor %}
+</table></div>
+{% if from_five %}<p class="finance-note">From the fifth tier to the top flight: {% for r in from_five %}{{ club(r) }}, {{ season(r.from) }} to {{ season(r.to) }} – {{ r.years }} seasons{% if not loop.last %}; {% endif %}{% endfor %}. Nobody else has done it.</p>{% endif %}
+</div>
+</div>
+
+<h2 id="size">Sleeping giants and overachievers</h2>
+<p class="subtitle">The tier a club's catchment size predicts, against the tier it plays in. The catchment is the number of people it draws, from the <a href="{{ root }}/insights/catchment/index.html">catchment model</a>; size alone explains most of where clubs play.</p>
+<div class="yoyo-pair">
+{% for title, note, rows in [("Sleeping giants", "Playing well below what their town predicts.", sleeping), ("Overachievers", "Playing well above it.", over)] %}
+<div>
+<h3>{{ title }}</h3>
+<p class="subtitle">{{ note }}</p>
+<div class="table-scroll"><table class="standings">
+  <tr><th>Club</th><th class="num">Plays</th><th class="num">Size says</th><th class="num">People</th></tr>
+  {% for c in rows[:12] %}<tr><td>{{ club(c) }}{% if c.giant %} <span class="status-tag">former top flight</span>{% endif %}</td><td class="num">{{ c.tier }}</td><td class="num"><b>{{ "%.1f" % c.predicted }}</b></td><td class="num">{{ "{:,}".format(c.people) }}</td></tr>{% endfor %}
+</table></div>
+</div>
+{% endfor %}
+</div>
+<p class="finance-note">Welsh clubs are left out: the catchment counts English neighbourhoods only, so Cardiff, Swansea, Wrexham and Newport would look like overachievers when their towns are simply not counted.</p>
+
+<h2 id="risers">The risers</h2>
+<p class="subtitle">Clubs in the top two divisions now that have been in the fourth tier or below since {{ season(first) }}, from their most recent low point.</p>
+<div class="table-scroll"><table class="standings sortable">
+  <thead><tr><th>Club</th><th class="num">Low point</th><th>When</th><th class="num">Now</th><th class="num">Seasons since</th><th>Top flight since?</th></tr></thead>
+  <tbody>
+  {% for r in risers %}<tr><td>{{ club(r) }}</td><td class="num" data-sort="{{ r.low }}">tier {{ r.low }}</td><td data-sort="{{ r.low_at }}">{{ season(r.low_at) }}</td><td class="num" data-sort="{{ r.now }}">tier {{ r.now }}</td><td class="num" data-sort="{{ r.years }}">{{ r.years }}</td><td>{{ "yes" if r.top_flight_since else "–" }}</td></tr>{% endfor %}
+  </tbody>
+</table></div>
+
+<h2 id="fallen">Every fallen giant</h2>
+<p class="subtitle">Former top-flight clubs now in the third tier or below: how long they have been away, their odds of ever coming back, and what their size says they should be.</p>
+<div class="table-scroll"><table class="standings sortable">
+  <thead><tr><th>Club</th><th class="num">Top-flight seasons</th><th>Last there</th><th class="num">Now</th><th class="num">Seasons away</th><th class="num">Chance of return</th><th class="num">Size says</th></tr></thead>
+  <tbody>
+  {% for f in fallen %}<tr><td>{{ club(f) }}</td><td class="num">{{ f.top_seasons }}</td><td data-sort="{{ f.last_top }}">{{ season(f.last_top) }}</td><td class="num">tier {{ f.now }}</td><td class="num">{{ f.away }}</td>
+    <td class="num" data-sort="{{ f.chance.chance if f.chance else '' }}">{% if f.chance %}{{ pct(f.chance.chance) }}{% if f.beyond %}<span class="status-tag" title="Few clubs have been away this long; this is the figure for 25 seasons or more">25+</span>{% endif %}{% else %}–{% endif %}</td>
+    <td class="num" data-sort="{{ f.predicted or '' }}">{% if f.predicted %}{{ "%.1f" % f.predicted }}{% else %}–{% endif %}</td></tr>{% endfor %}
+  </tbody>
+</table></div>
+<p class="finance-note">The record starts in {{ season(first) }}: top-flight seasons before then do not count, so a giant of the 1930s that never returned is not here. "Chance of return" is the share of clubs that had been away as long and later came back; past 25 seasons there are too few to say more than the 25-season figure.</p>
+
+<script src="{{ root }}/static/club-table.js"></script>
+{% endblock %}

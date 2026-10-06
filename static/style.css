@@ -1024,3 +1024,21 @@ tr.wages-over td:nth-child(7) { font-weight: 600; }
 .companies-missing summary { cursor: pointer; color: var(--accent); margin: 12px 0; }
 .fact-check { display: inline-block; margin-left: 6px; font-size: 11px; color: #c4521f; border: 1px solid #f0c2ad; border-radius: 999px; padding: 0 6px; }
 .team-luck { font-size: 14px; margin: 4px 0 14px; }
+/* Fallen giants & risers */
+.giants-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; margin: 8px 0; }
+.giants-card { border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; }
+.giants-card.is-record { border-color: #eb6834; box-shadow: 0 0 0 1px #eb6834 inset; }
+.giants-card-head { font-size: 13px; font-weight: 600; margin-bottom: 4px; }
+.giants-card svg { width: 100%; height: 64px; display: block; }
+.giants-card-foot { font-size: 12px; color: var(--muted); margin-top: 4px; }
+.giants-live { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px 20px; }
+@media (max-width: 760px) { .giants-live { grid-template-columns: minmax(0, 1fr); } }
+.giants-live-col h3 { margin: 0 0 6px; font-size: 15px; }
+.giants-live-col ul { list-style: none; margin: 0; padding: 0; }
+.giants-live-col li { padding: 4px 0; border-bottom: 1px solid var(--line); font-size: 14px; }
+.giants-climbing h3 { color: #1baf7a; } .giants-sinking h3 { color: #c4521f; }
+.giants-speed td { white-space: nowrap; }
+.giants-bar { display: inline-block; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: middle; }
+.giants-bar.down { background: #eb6834; } .giants-bar.up { background: #2a78d6; }
+.yoyo-pair > div { min-width: 0; }
+@media (max-width: 700px) { .giants-speed td { white-space: normal; } .giants-bar { display: none; } }
