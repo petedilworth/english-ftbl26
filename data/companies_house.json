@@ -2667,7 +2667,7 @@
     "type": "private-limited-guarant-nsc"
    },
    "match": "auto",
-   "why": "registered office 3 miles from the ground (score 124, lead 117)"
+   "why": "registered office 3 miles from the ground (score 124, lead 124)"
   },
   "anstey-nomads-fc": {
    "company": {
@@ -14224,7 +14224,7 @@
     "type": "ltd"
    },
    "match": "auto",
-   "why": "registered office 0 miles from the ground; subsidiary of another candidate (score 182, lead 43)"
+   "why": "registered office 0 miles from the ground; subsidiary of another candidate (score 182, lead 113)"
   },
   "bristol-city-fc": {
    "company": {
@@ -22695,7 +22695,7 @@
     "type": "ltd"
    },
    "match": "auto",
-   "why": "registered office 0 miles from the ground; a charge names the ground; subsidiary of another candidate (score 242, lead 103)"
+   "why": "registered office 0 miles from the ground; a charge names the ground; subsidiary of another candidate (score 242, lead 133)"
   },
   "cheltenham-town-fc": {
    "company": {
@@ -31436,7 +31436,7 @@
     "type": "ltd"
    },
    "match": "auto",
-   "why": "registered office 3 miles from the ground (score 109, lead 102)"
+   "why": "registered office 3 miles from the ground (score 109, lead 109)"
   },
   "forest-green-rovers-fc": {
    "company": {
@@ -45556,6 +45556,645 @@
    },
    "match": "reviewed",
    "why": "sport-adjacent SIC 93199; active; named a football club; matches the entity these accounts were read from; every word of the club's name"
+  },
+  "lewes-fc": {
+   "company": {
+    "accounts": {
+     "last_made_up_to": "2025-05-31",
+     "last_type": "small",
+     "next_due": "2027-02-28",
+     "overdue": false
+    },
+    "chain": [
+     {
+      "name": "Lewes Community Football Club Limited",
+      "number": "30988R",
+      "psc": [],
+      "status": null
+     }
+    ],
+    "charges": [
+     {
+      "classification": "Debenture",
+      "created": "2009-08-28",
+      "lenders": [
+       "Kevin Stephen Powell"
+      ],
+      "particulars": "Fixed and floating charge over the undertaking and all property and assets present and future, including goodwill, book debts, uncalled capital, buildings, fixtures, fixed plant & machinery see image for full details.",
+      "satisfied": "2010-07-15",
+      "status": "fully-satisfied"
+     }
+    ],
+    "confirmation": {
+     "next_due": "2027-05-18",
+     "overdue": false
+    },
+    "created": "1999-06-17",
+    "filings": [
+     {
+      "date": "2026-09-01",
+      "made_up_to": "2025-05-31",
+      "type": "AA"
+     },
+     {
+      "date": "2025-04-24",
+      "made_up_to": "2024-05-31",
+      "type": "AA"
+     },
+     {
+      "date": "2024-02-18",
+      "made_up_to": "2023-05-31",
+      "type": "AA"
+     },
+     {
+      "date": "2022-11-07",
+      "made_up_to": "2022-05-31",
+      "type": "AA"
+     },
+     {
+      "date": "2021-11-26",
+      "made_up_to": "2021-05-31",
+      "type": "AA"
+     },
+     {
+      "date": "2021-03-31",
+      "made_up_to": "2020-05-31",
+      "type": "AAMD"
+     },
+     {
+      "date": "2021-03-16",
+      "made_up_to": "2020-05-31",
+      "type": "AA"
+     },
+     {
+      "date": "2019-12-17",
+      "made_up_to": "2019-05-31",
+      "type": "AA"
+     },
+     {
+      "date": "2018-11-26",
+      "made_up_to": "2018-05-31",
+      "type": "AA"
+     },
+     {
+      "date": "2017-11-28",
+      "made_up_to": "2017-05-31",
+      "type": "AA"
+     }
+    ],
+    "insolvency": [],
+    "name": "LEWES 2000 F.C. LTD",
+    "number": "03790979",
+    "office": {
+     "locality": "Lewes",
+     "postcode": "BN7 2XA"
+    },
+    "officers": [
+     {
+      "appointed": "2024-05-10",
+      "name": "WELLS, Trevor John",
+      "nationality": null,
+      "residence": null,
+      "resigned": null,
+      "role": "secretary"
+     },
+     {
+      "appointed": "2025-05-01",
+      "name": "CHEEK, James Alan",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": null,
+      "role": "director"
+     },
+     {
+      "appointed": "2023-12-10",
+      "name": "HALL, Benjamin Bruce",
+      "nationality": "British",
+      "residence": "United Kingdom",
+      "resigned": null,
+      "role": "director"
+     },
+     {
+      "appointed": "2023-12-10",
+      "name": "LAHOOD, Stan",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": null,
+      "role": "director"
+     },
+     {
+      "appointed": "2015-10-29",
+      "name": "PEEL, John Steven",
+      "nationality": "United Kingdom",
+      "residence": "United Kingdom",
+      "resigned": null,
+      "role": "director"
+     },
+     {
+      "appointed": "2020-10-29",
+      "name": "WELLS, Trevor John",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": null,
+      "role": "director"
+     },
+     {
+      "appointed": "2000-01-04",
+      "name": "BONE, Andrew James",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "2003-08-31",
+      "role": "secretary"
+     },
+     {
+      "appointed": "2021-01-24",
+      "name": "DESAI, Biram",
+      "nationality": null,
+      "residence": null,
+      "resigned": "2024-05-10",
+      "role": "secretary"
+     },
+     {
+      "appointed": "1999-11-23",
+      "name": "ELLIOTT, Martin James",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "2000-01-04",
+      "role": "secretary"
+     },
+     {
+      "appointed": "1999-06-17",
+      "name": "LEE, Andrew William",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "1999-11-24",
+      "role": "secretary"
+     },
+     {
+      "appointed": "2003-08-31",
+      "name": "POWELL, Kevin Stephen",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "2008-11-03",
+      "role": "secretary"
+     },
+     {
+      "appointed": "1999-06-17",
+      "name": "TEMPLE SECRETARIES LIMITED",
+      "nationality": null,
+      "residence": null,
+      "resigned": "1999-06-17",
+      "role": "corporate-nominee-secretary"
+     },
+     {
+      "appointed": "2014-05-01",
+      "name": "AGNEW, Jacqueline Linda",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2017-10-26",
+      "role": "director"
+     },
+     {
+      "appointed": "2021-08-23",
+      "name": "ANSTISS, Susan Jane",
+      "nationality": "British",
+      "residence": "United Kingdom",
+      "resigned": "2022-11-11",
+      "role": "director"
+     },
+     {
+      "appointed": "2005-08-22",
+      "name": "ARNOLD, Marina Jane",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2007-05-01",
+      "role": "director"
+     },
+     {
+      "appointed": "2022-11-11",
+      "name": "BAILEY, Wila Catherine Harrison",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2023-12-24",
+      "role": "director"
+     },
+     {
+      "appointed": "2019-05-29",
+      "name": "BOWIE, Michelle Beatrice Wright",
+      "nationality": "Canadian,British",
+      "residence": "England",
+      "resigned": "2020-10-29",
+      "role": "director"
+     },
+     {
+      "appointed": "2022-11-11",
+      "name": "BRADSHAW, Timothy John",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2024-03-10",
+      "role": "director"
+     },
+     {
+      "appointed": "2017-10-26",
+      "name": "BRIGGS, Edward",
+      "nationality": "United Kingdom",
+      "residence": "United Kingdom",
+      "resigned": "2023-12-24",
+      "role": "director"
+     },
+     {
+      "appointed": "2013-02-14",
+      "name": "BURGESS, Clive Richard",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2014-06-10",
+      "role": "director"
+     },
+     {
+      "appointed": "2013-02-14",
+      "name": "COBB, Lee John",
+      "nationality": "British",
+      "residence": "Uk",
+      "resigned": "2013-04-30",
+      "role": "director"
+     },
+     {
+      "appointed": "2014-10-30",
+      "name": "COLLINS, Barry Gabriel",
+      "nationality": "United Kingdom",
+      "residence": "United Kingdom",
+      "resigned": "2019-09-17",
+      "role": "director"
+     },
+     {
+      "appointed": "2022-01-19",
+      "name": "CURRIE, Scott James",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2023-09-11",
+      "role": "director"
+     },
+     {
+      "appointed": "2013-02-14",
+      "name": "DOBRES, Charles Daniel",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2022-06-30",
+      "role": "director"
+     },
+     {
+      "appointed": "2019-06-04",
+      "name": "DOBRES, Karen Muriel",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2022-11-11",
+      "role": "director"
+     },
+     {
+      "appointed": "2013-02-14",
+      "name": "DUNCAN, Norman",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2015-10-29",
+      "role": "director"
+     },
+     {
+      "appointed": "2000-01-04",
+      "name": "EDWARDS, John Glyn Ellis",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2005-06-27",
+      "role": "director"
+     },
+     {
+      "appointed": "1999-11-23",
+      "name": "ELLIOTT, Martin James",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2010-07-08",
+      "role": "director"
+     },
+     {
+      "appointed": "2004-06-07",
+      "name": "FINGERNEISSL, Kevin Gregory",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2010-07-08",
+      "role": "director"
+     },
+     {
+      "appointed": "2013-02-14",
+      "name": "FULLER, Stuart Noel",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2023-10-27",
+      "role": "director"
+     },
+     {
+      "appointed": "2016-10-27",
+      "name": "GILLIGAN, Jackie",
+      "nationality": "United Kingdom",
+      "residence": "United Kingdom",
+      "resigned": "2018-12-06",
+      "role": "director"
+     },
+     {
+      "appointed": "2022-11-11",
+      "name": "GOWLAND, Andrew Peter",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2024-02-27",
+      "role": "director"
+     },
+     {
+      "appointed": "2014-10-30",
+      "name": "JOY, Carol Anne",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2017-10-26",
+      "role": "director"
+     },
+     {
+      "appointed": "2019-06-04",
+      "name": "KEEGAN, Steven James",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2021-04-19",
+      "role": "director"
+     },
+     {
+      "appointed": "2023-12-10",
+      "name": "KERRISON, Jennifer Margaret",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2024-08-19",
+      "role": "director"
+     },
+     {
+      "appointed": "1999-06-17",
+      "name": "LEE, Andrew William",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "1999-11-24",
+      "role": "director"
+     },
+     {
+      "appointed": "1999-06-17",
+      "name": "LUCKING, Gordon Henry",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "1999-10-26",
+      "role": "director"
+     },
+     {
+      "appointed": "2014-10-30",
+      "name": "MACLEOD, Sean Andrew",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2015-06-02",
+      "role": "director"
+     },
+     {
+      "appointed": "2013-02-14",
+      "name": "MANN, Sarah Lindsay",
+      "nationality": "Uk",
+      "residence": "Uk",
+      "resigned": "2015-10-29",
+      "role": "director"
+     },
+     {
+      "appointed": "2023-12-10",
+      "name": "MCJENNETT, Tom",
+      "nationality": "British",
+      "residence": "United Kingdom",
+      "resigned": "2025-03-31",
+      "role": "director"
+     },
+     {
+      "appointed": "2022-01-19",
+      "name": "MILLS, Lucy Caroline",
+      "nationality": "British",
+      "residence": "Spain",
+      "resigned": "2023-12-24",
+      "role": "director"
+     },
+     {
+      "appointed": "1999-06-17",
+      "name": "NIXON, William John",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "1999-11-24",
+      "role": "director"
+     },
+     {
+      "appointed": "2018-10-25",
+      "name": "ORME, Galia",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2021-05-17",
+      "role": "director"
+     },
+     {
+      "appointed": "2013-02-14",
+      "name": "PARRIS, Terence Michael",
+      "nationality": "British",
+      "residence": "United Kingdom",
+      "resigned": "2014-10-30",
+      "role": "director"
+     },
+     {
+      "appointed": "2000-01-04",
+      "name": "PARRIS, Terence Michael",
+      "nationality": "British",
+      "residence": "United Kingdom",
+      "resigned": "2007-01-05",
+      "role": "director"
+     },
+     {
+      "appointed": "2004-06-07",
+      "name": "POWELL, Kevin Stephen",
+      "nationality": "British",
+      "residence": "United Kingdom",
+      "resigned": "2008-11-03",
+      "role": "director"
+     },
+     {
+      "appointed": "1999-06-17",
+      "name": "QUINN, James",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "1999-11-24",
+      "role": "director"
+     },
+     {
+      "appointed": "2019-12-09",
+      "name": "RAFFERTY, Claire",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2022-11-11",
+      "role": "director"
+     },
+     {
+      "appointed": "2013-02-14",
+      "name": "RAMSDEN, Edward John",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2022-06-30",
+      "role": "director"
+     },
+     {
+      "appointed": "2016-10-27",
+      "name": "ROBERTS, Jane",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2017-10-26",
+      "role": "director"
+     },
+     {
+      "appointed": "2017-10-26",
+      "name": "RUBEN, Jonathan Mark",
+      "nationality": "United Kingdom",
+      "residence": "United Kingdom",
+      "resigned": "2020-10-29",
+      "role": "director"
+     },
+     {
+      "appointed": "2023-12-10",
+      "name": "SHORT, Joseph Oliver Ellison",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2025-08-01",
+      "role": "director"
+     },
+     {
+      "appointed": "1999-11-23",
+      "name": "STEADMAN, Andrew",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "2006-04-24",
+      "role": "director"
+     },
+     {
+      "appointed": "2022-01-19",
+      "name": "TAPLIN, Sally Eleanor",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2023-01-16",
+      "role": "director"
+     },
+     {
+      "appointed": "2001-05-01",
+      "name": "TRENDALL, Sean David",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "2010-01-01",
+      "role": "director"
+     },
+     {
+      "appointed": "2017-10-26",
+      "name": "WALKER, Graham Christopher",
+      "nationality": "United Kingdom",
+      "residence": "United Kingdom",
+      "resigned": "2018-10-25",
+      "role": "director"
+     },
+     {
+      "appointed": "2018-10-25",
+      "name": "WARNER, Roger Jonathan",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2021-05-17",
+      "role": "director"
+     },
+     {
+      "appointed": "2015-10-29",
+      "name": "WARNER, Roger Jonathan",
+      "nationality": "British",
+      "residence": "United Kingdom",
+      "resigned": "2017-10-26",
+      "role": "director"
+     },
+     {
+      "appointed": "2000-01-04",
+      "name": "WATERS, Alan Seymour",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "2002-08-31",
+      "role": "director"
+     },
+     {
+      "appointed": "2023-12-10",
+      "name": "WATTS, Stephen",
+      "nationality": "British",
+      "residence": "United Kingdom",
+      "resigned": "2025-08-01",
+      "role": "director"
+     },
+     {
+      "appointed": "2002-09-09",
+      "name": "WHITE, Stephen Robert",
+      "nationality": "British",
+      "residence": "United Kingdom",
+      "resigned": "2008-11-03",
+      "role": "director"
+     },
+     {
+      "appointed": "2010-07-08",
+      "name": "WILLIAMS, Nicholas David",
+      "nationality": "British",
+      "residence": "United Kingdom",
+      "resigned": "2013-02-15",
+      "role": "director"
+     },
+     {
+      "appointed": "2006-12-31",
+      "name": "WYCHERLEY, Rebecca",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "2008-05-31",
+      "role": "director"
+     },
+     {
+      "appointed": "1999-06-17",
+      "name": "COMPANY DIRECTORS LIMITED",
+      "nationality": null,
+      "residence": null,
+      "resigned": "1999-06-17",
+      "role": "corporate-nominee-director"
+     },
+     {
+      "appointed": "2010-07-08",
+      "name": "LEWES COMMUNITY FOOTBALL CLUB LIMITED",
+      "nationality": null,
+      "residence": null,
+      "resigned": "2016-04-04",
+      "role": "corporate-director"
+     }
+    ],
+    "psc": [
+     {
+      "ceased": null,
+      "country": "Uk",
+      "kind": "corporate-entity",
+      "legal_form": "Community Benefit Society",
+      "name": "Lewes Community Football Club Limited",
+      "nationality": null,
+      "natures": [
+       "ownership-of-shares-75-to-100-percent"
+      ],
+      "notified": "2016-04-06",
+      "number": "30988r",
+      "residence": null
+     }
+    ],
+    "sic": [
+     "93120"
+    ],
+    "status": "active",
+    "type": "ltd"
+   },
+   "match": "auto",
+   "why": "registered office 0 miles from the ground; a director or controller matches the club's owner (score 159, lead 87)"
   },
   "leyton-orient-fc": {
    "company": {
@@ -63977,7 +64616,7 @@
     "type": "ltd"
    },
    "match": "auto",
-   "why": "registered office 2 miles from the ground; a charge names the ground (score 115, lead 60)"
+   "why": "registered office 2 miles from the ground; a charge names the ground (score 115, lead 71)"
   },
   "reading-fc": {
    "company": {
@@ -72975,7 +73614,7 @@
     "type": "private-limited-guarant-nsc"
    },
    "match": "auto",
-   "why": "registered office 0 miles from the ground; a charge names the ground (score 174, lead 65)"
+   "why": "registered office 0 miles from the ground; a charge names the ground (score 174, lead 174)"
   },
   "st-albans-city-fc": {
    "company": {
@@ -84955,34 +85594,11 @@
    "company": {
     "accounts": {
      "last_made_up_to": "2025-05-31",
-     "last_type": "audit-exemption-subsidiary",
+     "last_type": "full",
      "next_due": "2027-02-28",
      "overdue": false
     },
     "chain": [
-     {
-      "name": "WEST HAM UNITED FOOTBALL CLUB LIMITED",
-      "number": "00066516",
-      "psc": [
-       {
-        "ceased": null,
-        "country": "Uk",
-        "kind": "corporate-entity",
-        "legal_form": "Limited Company",
-        "name": "West Ham United Limited",
-        "nationality": null,
-        "natures": [
-         "ownership-of-shares-75-to-100-percent",
-         "voting-rights-75-to-100-percent",
-         "right-to-appoint-and-remove-directors"
-        ],
-        "notified": "2016-06-30",
-        "number": "3407691",
-        "residence": null
-       }
-      ],
-      "status": "active"
-     },
      {
       "name": "WEST HAM UNITED LIMITED",
       "number": "03407691",
@@ -85057,98 +85673,586 @@
     "charges": [
      {
       "classification": "A registered charge",
+      "created": "2025-07-30",
+      "lenders": [
+       "Rights and Media Funding Limited"
+      ],
+      "particulars": "Freehold land and buildings registered under title numbers EGL103195, EGL564234, EGL326923, EGL450917 (including any buildings, fixtures, fittings plant or machinery situated on or forming party of that property (\u201cfittings and fixtures\u201d)).any other freehold, leasehold property or immovable property ",
+      "satisfied": null,
+      "status": "outstanding"
+     },
+     {
+      "classification": "A registered charge",
+      "created": "2025-07-16",
+      "lenders": [
+       "Barclays Bank PLC"
+      ],
+      "particulars": "",
+      "satisfied": "2026-07-16",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "A registered charge",
+      "created": "2025-07-16",
+      "lenders": [
+       "Barclays Bank PLC"
+      ],
+      "particulars": "All present and future estates or interests in any freehold, leasehold or commonhold property owned by the company; all the intellectual property (as defined in the instrument). For further information, please refer to the instrument.",
+      "satisfied": "2026-07-16",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "A registered charge",
+      "created": "2024-07-31",
+      "lenders": [
+       "Barclays Bank PLC"
+      ],
+      "particulars": "",
+      "satisfied": "2025-10-06",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "A registered charge",
+      "created": "2023-08-29",
+      "lenders": [
+       "Barclays Bank PLC"
+      ],
+      "particulars": "(I) all the property referred to in the schedule to the instrument, being the freehold property known as or being training ground, saville road, chadwell heath, romford (RM6 6D) registered at the land registry under title number EGL103195 (the \"mortgaged property\") and all the interest of the mortga",
+      "satisfied": "2025-10-06",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "A registered charge",
+      "created": "2023-08-29",
+      "lenders": [
+       "Barclays Bank PLC"
+      ],
+      "particulars": "All the property referred to in the schedule to the instrument, being the freehold property known as or being rush green sports ground, rush green road, romford registered at the land registry under title number EGL564234 (the \"mortgaged property\") and all the interest of the mortgagor in the mortga",
+      "satisfied": "2025-10-06",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "A registered charge",
+      "created": "2023-08-29",
+      "lenders": [
+       "Barclays Bank PLC"
+      ],
+      "particulars": "",
+      "satisfied": "2025-10-06",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "A registered charge",
+      "created": "2021-06-18",
+      "lenders": [
+       "Macquarie Bank Limited, London Branch"
+      ],
+      "particulars": "Receivables due to west ham united football club limited in relation to a transfer agreement dated 7 january 2021 for the player sebastien romain teddy haller.",
+      "satisfied": "2024-05-10",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "A registered charge",
       "created": "2021-03-16",
       "lenders": [
        "Msd UK Holdings Limited (As Security Agent)"
       ],
-      "particulars": "Not applicable.",
+      "particulars": "Various freehold properties and intellectual property held in the name of west ham united football club limited, including: property located at chadwell heath training ground, saville road, RM6 6DS bearing title no. EGL103195. Trade mark applications including: \"whu\" in the united kingdom bearing ap",
       "satisfied": "2023-08-14",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "A registered charge",
+      "created": "2020-10-30",
+      "lenders": [
+       "Barclays Bank PLC"
+      ],
+      "particulars": "",
+      "satisfied": "2021-06-02",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "A registered charge",
+      "created": "2020-10-27",
+      "lenders": [
+       "Barclays Bank PLC"
+      ],
+      "particulars": "",
+      "satisfied": "2021-06-02",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "A registered charge",
+      "created": "2020-08-03",
+      "lenders": [
+       "Rights and Media Funding Limited"
+      ],
+      "particulars": "By way of legal mortgage the property at chadwell heath \u2013 saville road, romford RM6 6DS registered under title numbers EGL103195 and EGL291543, plus the six further properties which are listed in schedule 1 of the debenture. By way of first fixed charge any freehold, leasehold or immovable property ",
+      "satisfied": "2021-03-19",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "A registered charge",
+      "created": "2019-07-29",
+      "lenders": [
+       "Rights and Media Funding Limited"
+      ],
+      "particulars": "Chadwell heath, saville road, romford RM6 6DS (EGL103195 and. EGL291543) little heath, hainault road, romford, RM6 5RX (EGL101471 and EGL326923); rush green, romford, RM7 olu; 60A albatross close, off woolwich manor way, london E6 5NX (EGL450917); 11, the liberty centre, romford, RM1 3RL; london sta",
+      "satisfied": "2020-08-19",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "A registered charge",
+      "created": "2018-08-17",
+      "lenders": [
+       "Rights and Media Funding Limited"
+      ],
+      "particulars": "Training ground, saville road, chadwell heath, romford, RM6 6DS (title number EGL103195). Training ground, saville road, chadwell heath, romford (title number EGL291543).",
+      "satisfied": "2021-03-19",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "A registered charge",
+      "created": "2018-08-17",
+      "lenders": [
+       "Rights and Media Funding Limited"
+      ],
+      "particulars": "Chadwell heath, saville road, romford RM6 6DS (EGL103195 and. EGL291543) little heath, hainault road, romford, RM6 5RX (EGL101471 and EGL326923); rush green, romford, RM7 olu; 11, the liberty centre, romford, RM1 3RL; 71, lakeside shopping centre, thurrock RM20 2ZG; london stadium, queen elizabeth o",
+      "satisfied": "2020-08-19",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "A registered charge",
+      "created": "2017-08-14",
+      "lenders": [
+       "Rights and Media Funding Limited"
+      ],
+      "particulars": "\u2022 chadwell heath, saville road, romford RM6 6DS registered at the land registry with title numbers EGL103195 and EGL291543. \u2022 little heath, hainault road, romford, RM6 5RX and rush green, romford RM7 olu registered at the land registry with title numbers EGL101471 and EGL326923. \u2022 see charge documen",
+      "satisfied": "2020-08-19",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "A registered charge",
+      "created": "2016-08-10",
+      "lenders": [
+       "Rights and Media Funding Limited"
+      ],
+      "particulars": "",
+      "satisfied": "2017-07-21",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "A registered charge",
+      "created": "2015-08-14",
+      "lenders": [
+       "Jg Funding Limited"
+      ],
+      "particulars": "",
+      "satisfied": "2016-07-25",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "A registered charge",
+      "created": "2014-08-18",
+      "lenders": [
+       "Vibrac Corporation"
+      ],
+      "particulars": "",
+      "satisfied": "2015-11-19",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "A registered charge",
+      "created": "2014-03-31",
+      "lenders": [
+       "Boelyn Phoenix Limited"
+      ],
+      "particulars": "The boleyn ground stadium upton park london title no EGL409515, EGL438215, EGL296989 see image for full details.",
+      "satisfied": "2016-07-25",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "A registered charge",
+      "created": "2013-08-13",
+      "lenders": [
+       "Vibrac Corporation"
+      ],
+      "particulars": "Notification of addition to or amendment of charge.",
+      "satisfied": "2015-11-19",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "A registered charge",
+      "created": "2013-07-01",
+      "lenders": [
+       "Cb Holding Ehf."
+      ],
+      "particulars": "West ham united football club limited has charged by way of legal mortgage all freehold and leasehold property in england and wales (including that described in schedule 1 set out below) belonging to it at the date of the creation of the charge.. West ham united football club limited has also charge",
+      "satisfied": "2016-07-25",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "A registered charge",
+      "created": "2013-07-01",
+      "lenders": [
+       "Cb Holding Ehf."
+      ],
+      "particulars": "The freehold land with title number egl 564234 known as rush green sports ground, rush green road, romford, essex, shown edged red and blue on the attached plan 1 and more particularly described in the conveyance dated 21 november 1958 made between (1) briggs motor bodies limited, (2) eric douglas m",
+      "satisfied": "2016-07-25",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "Deed of assignment",
+      "created": "2012-09-10",
+      "lenders": [
+       "Standard Bank PLC as Security Trustee for and on Behalf of Vibrac Corporation"
+      ],
+      "particulars": "All rights and interests in or in connection with the assigned rights see image for full details.",
+      "satisfied": "2013-08-15",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "Legal mortgage",
+      "created": "2009-11-30",
+      "lenders": [
+       "Standard Bank PLC"
+      ],
+      "particulars": "Full title guarantee as security for the payment and dischrage of the secured obligations see image for full details.",
+      "satisfied": "2013-12-06",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "Fixed and floating security document",
+      "created": "2008-01-25",
+      "lenders": [
+       "Lombard North Central PLC as Security Trustee for the Benefit of the Secured Parties"
+      ],
+      "particulars": "Leashold property known as land on the north side of the railway line forming part of chadwell heath sports ground, saville road, romford, essex t/no EGL291543; and leasehold unit 71, thurrock lakeside shopping centre (for details of further property charged, please refer to form. Fixed and floating",
+      "satisfied": "2013-12-18",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "Supplemental debenture",
+      "created": "2004-06-14",
+      "lenders": [
+       "Barclays Bank PLC (The Agent as Trustee for the Finance Parties)"
+      ],
+      "particulars": "F/H land known as land on the east side of hainault road little heath romford t/no EGL101471, f/h and known as land on the north side of eastern avenue redbridge london t/no EGL326923 by way of fixed charge all estates and interests in any freehold or leasehold property.",
+      "satisfied": "2013-07-17",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "Security assignment",
+      "created": "2003-03-05",
+      "lenders": [
+       "Barclays Bank PLC as Security Trustee for and on Behalf of the Additional Facility Lenders"
+      ],
+      "particulars": "All its present and future rights, title and interest in and to the assigned recievables.",
+      "satisfied": "2008-11-15",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "Supplemental debenture between the company and barclays bank PLC (as trustee for the finance parties)",
+      "created": "2000-08-09",
+      "lenders": [
+       "Barclays Bank PLC"
+      ],
+      "particulars": "F/H land at green street east ham london.",
+      "satisfied": "2013-07-17",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "Charge on cash deposits",
+      "created": "2000-07-11",
+      "lenders": [
+       "Girobank PLC"
+      ],
+      "particulars": "The deposit by way of first fixed charge.",
+      "satisfied": "2009-11-20",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "Fixed and floating security document",
+      "created": "2000-06-14",
+      "lenders": [
+       "Barclays Bank PLC"
+      ],
+      "particulars": "Full title gurantee and as security for the payment and discharge of all liabilities has charge in favour of the agent. See the mortgage charge document for full details.",
+      "satisfied": "2013-07-17",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "Letting agreement",
+      "created": "1997-11-27",
+      "lenders": [
+       "Pennant Investments Limited"
+      ],
+      "particulars": "A deposit of \u00a33,360.",
+      "satisfied": "2000-06-24",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "Tenancy agreement",
+      "created": "1996-11-22",
+      "lenders": [
+       "Pennant Investmnts Limited"
+      ],
+      "particulars": "A deposit of \u00a33,360,.",
+      "satisfied": "2000-06-24",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "Charge",
+      "created": "1995-11-16",
+      "lenders": [
+       "Sovereign Finance PLC"
+      ],
+      "particulars": "All book/other debts,revenues and claims.",
+      "satisfied": "2000-03-03",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "Debenture",
+      "created": "1994-05-04",
+      "lenders": [
+       "The Governor and Company of the Bank of Scotland"
+      ],
+      "particulars": "Fixed and floating charges over the undertaking and all property and assets present and future including goodwill bookdebts uncalled capital buildings fixtures fixed plant and machinery.",
+      "satisfied": "2000-11-02",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "Legal charge",
+      "created": "1994-05-04",
+      "lenders": [
+       "Barclays Bank PLC"
+      ],
+      "particulars": "Land adjoining boleyn ground (west ham united F.C.) at castle street and priory road upton park l/borough of newham t/n egl 296989.",
+      "satisfied": "2009-11-20",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "Debenture",
+      "created": "1994-05-04",
+      "lenders": [
+       "Barclays Bank PLC"
+      ],
+      "particulars": "Fixed and floating charges over the undertaking and all property and assets present and future including goodwill bookdebts uncalled capital buildings fixtures fixed plant and machinery. See the mortgage charge document for full details.",
+      "satisfied": "2008-11-15",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "Credit agreement",
+      "created": "1993-09-22",
+      "lenders": [
+       "Close Brothers Limited"
+      ],
+      "particulars": "All right title interest and any moneys payable under the terms of the insurance. See the mortgage charge document for full details.",
+      "satisfied": "1996-11-29",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "Credit agreement",
+      "created": "1992-12-14",
+      "lenders": [
+       "Close Brothers Limited"
+      ],
+      "particulars": "All its right title and interest in and to all sums payable under the policies of insurances as listed on the form 395 (see form 395 for full details).",
+      "satisfied": "1996-11-29",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "Legal charge",
+      "created": "1991-09-10",
+      "lenders": [
+       "Barclays Bank PLC"
+      ],
+      "particulars": "Land on the east side of green street upton park approx. 3.6 acres (also known as st john's roman catholic school) as comprised under a transfer dated 10 september 1991 and title number EGL49393.",
+      "satisfied": "2009-11-20",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "Legal charge",
+      "created": "1959-08-11",
+      "lenders": [
+       "Barclays Bank PLC"
+      ],
+      "particulars": "Football ground, approach and stands at boleyn, upton park, essex.",
+      "satisfied": "2009-11-20",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "A registered charge",
+      "created": "1925-09-24",
+      "lenders": [],
+      "particulars": "",
+      "satisfied": "2000-06-24",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "A registered charge",
+      "created": "1925-08-13",
+      "lenders": [],
+      "particulars": "",
+      "satisfied": "2000-06-24",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "A registered charge",
+      "created": "1925-07-24",
+      "lenders": [],
+      "particulars": "",
+      "satisfied": "2000-06-24",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "A registered charge",
+      "created": "1925-06-11",
+      "lenders": [],
+      "particulars": "",
+      "satisfied": "2000-06-24",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "A registered charge",
+      "created": "1925-05-11",
+      "lenders": [],
+      "particulars": "",
+      "satisfied": "2000-06-24",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "A registered charge",
+      "created": "1925-04-06",
+      "lenders": [],
+      "particulars": "",
+      "satisfied": "2000-06-24",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "A registered charge",
+      "created": "1925-02-07",
+      "lenders": [],
+      "particulars": "",
+      "satisfied": "2000-06-24",
+      "status": "fully-satisfied"
+     },
+     {
+      "classification": "Series of debentures",
+      "created": "1925-01-01",
+      "lenders": [],
+      "particulars": "",
+      "satisfied": "2000-06-24",
       "status": "fully-satisfied"
      }
     ],
     "confirmation": {
-     "next_due": "2026-11-05",
+     "next_due": "2027-07-24",
      "overdue": false
     },
-    "created": "2017-11-09",
+    "created": "1900-07-05",
     "filings": [
      {
-      "date": "2026-03-19",
+      "date": "2026-03-02",
       "made_up_to": "2025-05-31",
       "type": "AA"
      },
      {
-      "date": "2026-03-19",
-      "made_up_to": null,
-      "type": "PARENT_ACC"
-     },
-     {
-      "date": "2025-01-30",
+      "date": "2025-01-08",
       "made_up_to": "2024-05-31",
       "type": "AA"
      },
      {
-      "date": "2025-01-30",
-      "made_up_to": null,
-      "type": "PARENT_ACC"
-     },
-     {
-      "date": "2024-01-20",
+      "date": "2024-01-15",
       "made_up_to": "2023-05-31",
       "type": "AA"
      },
      {
-      "date": "2024-01-20",
-      "made_up_to": null,
-      "type": "PARENT_ACC"
-     },
-     {
-      "date": "2023-02-27",
+      "date": "2023-01-10",
       "made_up_to": "2022-05-31",
       "type": "AA"
      },
      {
-      "date": "2023-02-27",
-      "made_up_to": null,
-      "type": "PARENT_ACC"
-     },
-     {
-      "date": "2022-01-24",
+      "date": "2022-01-04",
       "made_up_to": "2021-05-31",
       "type": "AA"
      },
      {
-      "date": "2022-01-24",
-      "made_up_to": null,
-      "type": "PARENT_ACC"
+      "date": "2021-04-26",
+      "made_up_to": "2020-05-31",
+      "type": "AA"
+     },
+     {
+      "date": "2020-01-30",
+      "made_up_to": "2019-05-31",
+      "type": "AA"
+     },
+     {
+      "date": "2018-12-28",
+      "made_up_to": "2018-05-31",
+      "type": "AA"
+     },
+     {
+      "date": "2018-03-07",
+      "made_up_to": "2017-05-31",
+      "type": "AA"
+     },
+     {
+      "date": "2017-02-27",
+      "made_up_to": "2016-05-31",
+      "type": "AA"
      }
     ],
     "insolvency": [],
-    "name": "WEST HAM UNITED WOMEN FOOTBALL CLUB LIMITED",
-    "number": "11055894",
+    "name": "WEST HAM UNITED FOOTBALL CLUB LIMITED",
+    "number": "00066516",
     "office": {
      "locality": "London",
      "postcode": "E20 2ST"
     },
     "officers": [
      {
-      "appointed": "2026-01-05",
-      "name": "CARTWRIGHT, Philippa Sophie",
-      "nationality": "British",
-      "residence": "United Kingdom",
+      "appointed": "2012-12-07",
+      "name": "MOLLETT, Andrew John",
+      "nationality": null,
+      "residence": null,
       "resigned": null,
-      "role": "director"
+      "role": "secretary"
      },
      {
-      "appointed": "2023-02-27",
-      "name": "KEYE, Nicola",
+      "appointed": "2021-01-11",
+      "name": "CUNNINGHAM, Daniel",
       "nationality": "British",
       "residence": "England",
       "resigned": null,
       "role": "director"
      },
      {
-      "appointed": "2017-11-09",
+      "appointed": "2023-08-03",
+      "name": "GOLD, Vanessa Julia",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": null,
+      "role": "director"
+     },
+     {
+      "appointed": "2022-08-25",
+      "name": "HORSKY, Pavel",
+      "nationality": "Czech",
+      "residence": "Czech Republic",
+      "resigned": null,
+      "role": "director"
+     },
+     {
+      "appointed": "2021-11-12",
+      "name": "MITKA, Peter",
+      "nationality": "Czech",
+      "residence": "Czech Republic",
+      "resigned": null,
+      "role": "director"
+     },
+     {
+      "appointed": "2012-12-07",
       "name": "MOLLETT, Andrew John",
       "nationality": "British",
       "residence": "United Kingdom",
@@ -85156,50 +86260,354 @@
       "role": "director"
      },
      {
-      "appointed": "2026-07-17",
-      "name": "VIRANI, Karim Moez",
-      "nationality": "British",
-      "residence": "United Kingdom",
+      "appointed": "2017-09-21",
+      "name": "SMITH, J Albert",
+      "nationality": "American",
+      "residence": "United States",
       "resigned": null,
       "role": "director"
      },
      {
-      "appointed": "2023-02-27",
-      "name": "BRADY, Karren Rita, Baroness",
+      "appointed": "2021-01-11",
+      "name": "SULLIVAN, David Edward Kenneth",
       "nationality": "British",
       "residence": "England",
+      "resigned": null,
+      "role": "director"
+     },
+     {
+      "appointed": "2021-11-16",
+      "name": "SULLIVAN, Jack Frank Harry",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": null,
+      "role": "director"
+     },
+     {
+      "appointed": "2026-05-04",
+      "name": "VIRANI, Karim Moez",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": null,
+      "role": "director"
+     },
+     {
+      "appointed": "2001-12-07",
+      "name": "DUXBURY, Scott Ian",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "2006-12-04",
+      "role": "secretary"
+     },
+     {
+      "appointed": null,
+      "name": "FINN, Thomas Martin",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "1995-01-31",
+      "role": "secretary"
+     },
+     {
+      "appointed": "2006-12-04",
+      "name": "IGOE, Nicholas",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "2012-12-07",
+      "role": "secretary"
+     },
+     {
+      "appointed": "1999-12-20",
+      "name": "IGOE, Nicholas",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "2001-12-06",
+      "role": "secretary"
+     },
+     {
+      "appointed": "1997-08-28",
+      "name": "IGOE, Nicholas",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "1999-05-27",
+      "role": "secretary"
+     },
+     {
+      "appointed": "1999-05-27",
+      "name": "MACKRELL, Graham Henry",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "1999-12-20",
+      "role": "secretary"
+     },
+     {
+      "appointed": "1995-02-01",
+      "name": "SKIRROW, Richard Ian",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "1996-12-01",
+      "role": "secretary"
+     },
+     {
+      "appointed": "1996-12-01",
+      "name": "STORRIE, Peter",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "1997-08-28",
+      "role": "secretary"
+     },
+     {
+      "appointed": "1997-10-30",
+      "name": "ALDRIDGE, Paul Martin",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "2006-12-04",
+      "role": "director"
+     },
+     {
+      "appointed": "2021-01-11",
+      "name": "BENTON-HUGHES, Emma Jane Evelyn",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2021-08-17",
+      "role": "director"
+     },
+     {
+      "appointed": "2013-07-03",
+      "name": "BERNHARDT, Andrew Sylvain",
+      "nationality": "British",
+      "residence": "United Kingdom",
+      "resigned": "2015-06-03",
+      "role": "director"
+     },
+     {
+      "appointed": "2009-06-05",
+      "name": "BERNHARDT, Andrew",
+      "nationality": "British",
+      "residence": "Uk",
+      "resigned": "2010-01-18",
+      "role": "director"
+     },
+     {
+      "appointed": "2006-12-01",
+      "name": "BJARNASON, Sighvatur",
+      "nationality": "Icelandic",
+      "residence": null,
+      "resigned": "2007-12-12",
+      "role": "director"
+     },
+     {
+      "appointed": "2010-01-18",
+      "name": "BRADY, Karren Rita, Baroness",
+      "nationality": "British",
+      "residence": "United Kingdom",
       "resigned": "2026-04-22",
       "role": "director"
      },
      {
-      "appointed": "2023-02-27",
-      "name": "KEYE, Nicola",
-      "nationality": "British",
-      "residence": "England",
-      "resigned": "2026-01-09",
-      "role": "director"
-     },
-     {
-      "appointed": "2017-11-09",
-      "name": "LYONS, Joseph Francis",
+      "appointed": "2001-07-13",
+      "name": "BROOKING, Trevor, Sir",
       "nationality": "British",
       "residence": "United Kingdom",
-      "resigned": "2019-06-21",
+      "resigned": "2004-01-01",
       "role": "director"
      },
      {
-      "appointed": "2017-11-09",
-      "name": "SULLIVAN, Jack Frank Harry",
+      "appointed": null,
+      "name": "BROWN, Terence William",
       "nationality": "British",
       "residence": "England",
-      "resigned": "2021-05-26",
+      "resigned": "2007-02-22",
       "role": "director"
      },
      {
-      "appointed": "2023-02-27",
-      "name": "WARREN, Tara Jane",
+      "appointed": null,
+      "name": "CEARNS, Leonard Crittenden",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "1993-10-28",
+      "role": "director"
+     },
+     {
+      "appointed": null,
+      "name": "CEARNS, Martin William",
+      "nationality": "British",
+      "residence": "United Kingdom",
+      "resigned": "2006-12-01",
+      "role": "director"
+     },
+     {
+      "appointed": null,
+      "name": "CEARNS, William Frederick",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "1994-01-27",
+      "role": "director"
+     },
+     {
+      "appointed": "2021-01-11",
+      "name": "CROSS, Charles James",
       "nationality": "British",
       "residence": "England",
+      "resigned": "2021-08-17",
+      "role": "director"
+     },
+     {
+      "appointed": "2004-01-22",
+      "name": "DUXBURY, Scott Ian",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2010-01-25",
+      "role": "director"
+     },
+     {
+      "appointed": "2009-07-24",
+      "name": "ELLIS, Robert Keith",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2013-07-03",
+      "role": "director"
+     },
+     {
+      "appointed": "2007-12-12",
+      "name": "FRIDGEIRSSON, Asgeir",
+      "nationality": "Icelander",
+      "residence": "United Kingdom",
+      "resigned": "2009-06-05",
+      "role": "director"
+     },
+     {
+      "appointed": "2010-01-18",
+      "name": "GOLD, David",
+      "nationality": "British",
+      "residence": "United Kingdom",
+      "resigned": "2023-01-04",
+      "role": "director"
+     },
+     {
+      "appointed": "2007-12-12",
+      "name": "GUDMUNDSSON, Bjorgolfur",
+      "nationality": "Icelandic",
+      "residence": null,
+      "resigned": "2009-06-05",
+      "role": "director"
+     },
+     {
+      "appointed": "1997-08-28",
+      "name": "IGOE, Nicholas",
+      "nationality": "British",
+      "residence": "United Kingdom",
+      "resigned": "2012-12-07",
+      "role": "director"
+     },
+     {
+      "appointed": "2014-01-13",
+      "name": "KINNEAR, Angus",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2017-06-09",
+      "role": "director"
+     },
+     {
+      "appointed": "2006-12-01",
+      "name": "KRISTJANSSON, Thor",
+      "nationality": "Icelandic",
+      "residence": null,
+      "resigned": "2008-02-18",
+      "role": "director"
+     },
+     {
+      "appointed": "2007-12-12",
+      "name": "LEE, Michael",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2008-11-04",
+      "role": "director"
+     },
+     {
+      "appointed": "2006-12-01",
+      "name": "MAGNUSSON, Eggert",
+      "nationality": "Icelandic",
+      "residence": null,
+      "resigned": "2007-12-12",
+      "role": "director"
+     },
+     {
+      "appointed": "2000-07-13",
+      "name": "MANHIRE, Christopher Brian Charles",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2006-12-01",
+      "role": "director"
+     },
+     {
+      "appointed": "2006-12-01",
+      "name": "ODDSSON, Gudmundur Johannes",
+      "nationality": "Icelandic",
+      "residence": "United Kingdom",
+      "resigned": "2008-11-04",
+      "role": "director"
+     },
+     {
+      "appointed": "2007-01-03",
+      "name": "RYAN, Stuart",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2008-11-04",
+      "role": "director"
+     },
+     {
+      "appointed": "2021-11-12",
+      "name": "SPURNY, Marek",
+      "nationality": "Czech",
+      "residence": "Czech Republic",
+      "resigned": "2022-08-24",
+      "role": "director"
+     },
+     {
+      "appointed": null,
+      "name": "STORRIE, Peter",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "1999-05-31",
+      "role": "director"
+     },
+     {
+      "appointed": "2010-01-18",
+      "name": "SULLIVAN, David",
+      "nationality": "British",
+      "residence": "United Kingdom",
+      "resigned": "2026-06-06",
+      "role": "director"
+     },
+     {
+      "appointed": "2015-06-03",
+      "name": "SVANSTROM, Robert Daniel",
+      "nationality": "Swedish",
+      "residence": "United Kingdom",
+      "resigned": "2017-09-21",
+      "role": "director"
+     },
+     {
+      "appointed": "2025-03-21",
+      "name": "THOMPSON, Nathan",
+      "nationality": "British",
+      "residence": "United Kingdom",
+      "resigned": "2026-04-22",
+      "role": "director"
+     },
+     {
+      "appointed": null,
+      "name": "WARNER, Charles John",
+      "nationality": "British",
+      "residence": "United Kingdom",
+      "resigned": "2006-12-01",
+      "role": "director"
+     },
+     {
+      "appointed": "2015-07-21",
+      "name": "WARREN, Tara",
+      "nationality": "British",
+      "residence": "United Kingdom",
       "resigned": "2025-12-19",
       "role": "director"
      }
@@ -85209,29 +86617,16 @@
       "ceased": null,
       "country": "Uk",
       "kind": "corporate-entity",
-      "legal_form": "Private Limited Company",
-      "name": "West Ham United Football Club Ltd",
-      "nationality": null,
-      "natures": [
-       "ownership-of-shares-75-to-100-percent"
-      ],
-      "notified": "2019-08-09",
-      "number": "00066516",
-      "residence": null
-     },
-     {
-      "ceased": "2019-08-09",
-      "country": "United Kingdom",
-      "kind": "corporate-entity",
-      "legal_form": "Corporate",
-      "name": "West Ham United Foundation",
+      "legal_form": "Limited Company",
+      "name": "West Ham United Limited",
       "nationality": null,
       "natures": [
        "ownership-of-shares-75-to-100-percent",
-       "voting-rights-75-to-100-percent"
+       "voting-rights-75-to-100-percent",
+       "right-to-appoint-and-remove-directors"
       ],
-      "notified": "2017-11-09",
-      "number": "05731045",
+      "notified": "2016-06-30",
+      "number": "3407691",
       "residence": null
      }
     ],
@@ -85242,7 +86637,7 @@
     "type": "ltd"
    },
    "match": "auto",
-   "why": "registered office 0 miles from the ground; subsidiary of another candidate (score 139, lead 139)"
+   "why": "registered office 0 miles from the ground; a charge names the ground; a director or controller matches the club's owner; subsidiary of another candidate (score 292, lead 292)"
   },
   "weston-super-mare-fc": {
    "company": {
@@ -90645,7 +92040,7 @@
   }
  },
  "fetched": "2026-10-06",
- "requests": 2478,
+ "requests": 2484,
  "unmatched": {
   "afc-wimbledon": {
    "candidates": [
@@ -90695,11 +92090,6 @@
   "barnet-fc": {
    "candidates": [
     {
-     "name": "BARNET FOOTBALL CLUB ACADEMY LIMITED",
-     "number": "15799410",
-     "score": 139
-    },
-    {
      "name": "BARNET FOOTBALL CLUB LIMITED",
      "number": "01239681",
      "score": 124
@@ -90712,7 +92102,7 @@
    ],
    "name": "Barnet",
    "tier": 4,
-   "why": "best was BARNET FOOTBALL CLUB ACADEMY LIMITED at 139, lead 15: registered office 8 miles from the ground; subsidiary of another candidate"
+   "why": "best was BARNET FOOTBALL CLUB LIMITED at 124, lead 6: registered office 8 miles from the ground"
   },
   "bolton-wanderers-fc": {
    "candidates": [
@@ -90756,11 +92146,6 @@
   "bromley-fc": {
    "candidates": [
     {
-     "name": "BROMLEY FC ACADEMY LIMITED",
-     "number": "07042772",
-     "score": 127
-    },
-    {
      "name": "BLACKHEATH & BROMLEY HARRIERS AC.",
      "number": "00215991",
      "score": 109
@@ -90769,11 +92154,16 @@
      "name": "BROMLEY FC COMMUNITY SPORTS TRUST",
      "number": "13179040",
      "score": 79
+    },
+    {
+     "name": "BROMLEY CROSS FOOTBALL CLUB",
+     "number": "07577919",
+     "score": 44
     }
    ],
    "name": "Bromley",
    "tier": 3,
-   "why": "best was BROMLEY FC ACADEMY LIMITED at 127, lead 18: registered office 0 miles from the ground; a charge names the ground"
+   "why": "best was BLACKHEATH & BROMLEY HARRIERS AC. at 109, lead 30: registered office 0 miles from the ground"
   },
   "chester-city-fc": {
    "candidates": [
@@ -90919,11 +92309,6 @@
      "name": "DAGENHAM & REDBRIDGE FC 2017 LIMITED",
      "number": "10755779",
      "score": 114
-    },
-    {
-     "name": "DAGENHAM AND REDBRIDGE FC COMMUNITY TRUST",
-     "number": "07416869",
-     "score": 67
     }
    ],
    "name": "Dagenham & Redbridge",
@@ -90940,11 +92325,6 @@
     {
      "name": "DARTFORD FOOTBALL CLUB COMMUNITY PROGRAMME CIC",
      "number": "11513090",
-     "score": 109
-    },
-    {
-     "name": "DARTFORD FOOTBALL CLUB YOUTH DEVELOPMENT CENTRE C.I.C.",
-     "number": "08051170",
      "score": 109
     }
    ],
@@ -90995,26 +92375,10 @@
    "why": "best was CITY OF MANCHESTER WRESTLING CLUB CIC at 109, lead 109: registered office 3 miles from the ground"
   },
   "fleetwood-town-fc": {
-   "candidates": [
-    {
-     "name": "FLEETWOOD TOWN COMMUNITY TRUST",
-     "number": "07586116",
-     "score": 95
-    },
-    {
-     "name": "FLEETWOOD GYM JUNIORS FC CIC",
-     "number": "15640782",
-     "score": 89
-    },
-    {
-     "name": "TOMMY FLEETWOOD ACADEMY LIMITED",
-     "number": "11929151",
-     "score": 12
-    }
-   ],
+   "candidates": [],
    "name": "Fleetwood Town",
    "tier": 4,
-   "why": "best was FLEETWOOD TOWN COMMUNITY TRUST at 95, lead 6: registered office 0 miles from the ground"
+   "why": "no active candidate"
   },
   "fylde-afc": {
    "candidates": [
@@ -91027,11 +92391,6 @@
      "name": "FYLDE COAST INCLUSIVE FC C.I.C.",
      "number": "17357071",
      "score": 96
-    },
-    {
-     "name": "AFC FYLDE COMMUNITY FOUNDATION",
-     "number": "09411676",
-     "score": 95
     }
    ],
    "name": "AFC Fylde",
@@ -91146,28 +92505,6 @@
    "tier": 7,
    "why": "best was LEISTON TOWN PASTORS at 30, lead 30: no evidence on the register"
   },
-  "lewes-fc": {
-   "candidates": [
-    {
-     "name": "LEWES 2000 F.C. LTD",
-     "number": "03790979",
-     "score": 159
-    },
-    {
-     "name": "LEWES FC WOMEN LIMITED",
-     "number": "11169355",
-     "score": 159
-    },
-    {
-     "name": "LEWES COMMUNITY FOOTBALL CLUB LIMITED",
-     "number": "IP030988",
-     "score": 72
-    }
-   ],
-   "name": "Lewes",
-   "tier": 7,
-   "why": "best was LEWES 2000 F.C. LTD at 159, lead 0: registered office 0 miles from the ground; a director or controller matches the club's owner"
-  },
   "macclesfield-town-fc": {
    "candidates": [
     {
@@ -91198,16 +92535,10 @@
    "why": "no active candidate"
   },
   "peterborough-sports-fc": {
-   "candidates": [
-    {
-     "name": "PETERBOROUGH FOOTBALL AND SPORTS DEVELOPMENT FOUNDATION",
-     "number": "09542978",
-     "score": 55
-    }
-   ],
+   "candidates": [],
    "name": "Peterborough Sports",
    "tier": 7,
-   "why": "best was PETERBOROUGH FOOTBALL AND SPORTS DEVELOPMENT FOUNDATION at 55, lead 55: registered office 1 miles from the ground"
+   "why": "no active candidate"
   },
   "racing-club-warwick-fc": {
    "candidates": [],
@@ -91406,11 +92737,6 @@
      "name": "WIGAN SPORTS CLUB LIMITED",
      "number": "16066393",
      "score": 109
-    },
-    {
-     "name": "WIGAN ATHLETIC FC COMMUNITY TRUST",
-     "number": "06303512",
-     "score": 79
     }
    ],
    "name": "Wigan Athletic",
