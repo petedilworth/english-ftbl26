@@ -32,6 +32,7 @@ import value as value_mod  # noqa: E402  (which club to buy)
 import grounds as grounds_mod  # noqa: E402  (who owns the ground)
 import compare as compare_mod  # noqa: E402  (two clubs side by side)
 import yoyo as yoyo_mod  # noqa: E402  (yo-yo clubs)
+import income as income_mod  # noqa: E402  (income around the ground)
 import divisions
 divisions_mod = divisions
 import finances  # noqa: E402  (disclosure states for the club finances table)
@@ -2549,6 +2550,11 @@ class SiteBuilder:
                 "hatred", "The most disliked clubs",
                 "Envied, resented, mocked or despised — and why Tottenham are only one of them",
             ))
+        if (PROJECT_ROOT / "content" / "insights" / "income.md").exists():
+            stories.append(story(
+                "income", "Income around the ground",
+                "The money map, and why wealth near a ground buys no tiers at all",
+            ))
         if (PROJECT_ROOT / "content" / "insights" / "grounds.md").exists():
             stories.append(story(
                 "grounds", "Who owns the ground",
@@ -2674,6 +2680,7 @@ class SiteBuilder:
         self._insight_hatred()
         self._insight_value()
         self._insight_grounds()
+        self._insight_income()
         self._insight_boom_and_bust(boom_bust_events)
         self._insight_the_drop(movement_matches)
         self._insight_the_rise(movement_matches)
@@ -3268,6 +3275,86 @@ class SiteBuilder:
             "fixtures.html", self.out / "fixtures" / "index.html", 1,
             title="Fixtures", days=[{"date": d, "label": datetime.date.fromisoformat(d).strftime("%A %-d %B"),
                                      "fixtures": fs} for d, fs in days.items()],
+        )
+
+    # ── Income around the ground ─────────────────────────────────────────
+
+    def _insight_income(self) -> None:
+        """
+        The money map (every neighbourhood on one blue ramp, two layers),
+        catchment income by tier, the rich-town and poor-town lists, the
+        spread inside each catchment, and the full table. See src/income.py
+        and static/income.js. Gated on its prose and on the demographics.
+        """
+        import json
+
+        import markdown as md
+        from markupsafe import Markup
+
+        source = PROJECT_ROOT / "content" / "insights" / "income.md"
+        if not source.exists():
+            return
+        try:
+            d = income_mod.assemble(self.conn)
+        except Exception as exc:  # the page must never break the build
+            logger.warning("income page skipped: %s", exc)
+            return
+        if not d:
+            return
+        eng = d["england"]
+        year = self.conn.execute("SELECT MAX(net_income_year) FROM msoa_demographics").fetchone()[0] or ""
+
+        # The strip plot: one row per tier, clubs as dots on a shared income axis.
+        sw, sh, left, top, row_h = 760, 60 + 36 * len(d["by_tier"]), 150, 24, 36
+        incomes = [c["mean"] for c in d["clubs"]]
+        lo, hi = min(incomes + [eng["mean"]]), max(incomes + [eng["mean"]])
+        lo, hi = int(lo // 2000 * 2000), int(-(-hi // 2000) * 2000)
+
+        def sx(v):
+            return round(left + (v - lo) / max(1, hi - lo) * (sw - left - 10), 1)
+
+        strip_rows = []
+        for i, (t, info) in enumerate(sorted(d["by_tier"].items())):
+            y = top + 12 + i * row_h
+            strip_rows.append({"tier": t, "n": info["n"], "median": info["median"], "y": y, "median_x": sx(info["median"]),
+                               "dots": [{"club_id": c["club_id"], "name": c["name"], "mean": c["mean"], "people": c["people"],
+                                         "x": sx(c["mean"]), "y": y}
+                                        for c in d["clubs"] if c["tier"] == t]})
+        step = 5000 if hi - lo > 20000 else 2000
+        strip_ticks = [{"x": sx(v), "label": f"{v // 1000}k"} for v in range(lo, hi + 1, step)]
+
+        range_lo = min(c["p10"] for c in d["clubs"])
+        range_hi = max(c["p90"] for c in d["clubs"])
+        span = max(1, range_hi - range_lo)
+        for c in d["most_unequal"]:
+            c["bar_l"] = round(100 * (c["p10"] - range_lo) / span, 1)
+            c["bar_w"] = round(100 * (c["p90"] - c["p10"]) / span, 1)
+            c["dot"] = round(100 * (c["mean"] - range_lo) / span, 1)
+        richest, poorest = d["richest"][0], d["poorest"][0]
+        stats = [
+            {"value": f"£{eng['mean']:,}", "label": "England, household income"},
+            {"value": f"£{richest['mean']:,}", "label": f"Richest catchment: {richest['name']}, tier {richest['tier']}"},
+            {"value": f"£{poorest['mean']:,}", "label": f"Poorest: {poorest['name']}, tier {poorest['tier']}"},
+            {"value": f"{d['model']['corr_income']:+.2f}", "label": "Correlation, income and tier"},
+        ]
+        out_dir = self.out / "insights" / "income"
+        out_dir.mkdir(parents=True, exist_ok=True)
+        (out_dir / "income-data.js").write_text(
+            "window.INCOME_DATA = " + json.dumps(d["map"], separators=(",", ":")) + ";", encoding="utf-8")
+        self.render(
+            "insight_income.html", out_dir / "index.html", 2,
+            title="Income around the ground",
+            intro_html=Markup(md.markdown(content.load_theme(source))),
+            stats=stats, points=len(d["map"]["points"]), ramp=income_mod.RAMP,
+            legend_lo=d["map"]["edges"][0], legend_hi=d["map"]["edges"][-1], income_year=year,
+            england=eng, model=d["model"], quartiles=d["quartiles"],
+            sw=sw, sh=sh, strip_left=left, strip_top=top, strip_rows=strip_rows, strip_ticks=strip_ticks,
+            england_x=sx(eng["mean"]),
+            rich_small=d["rich_town_small_club"], poor_big=d["poor_town_big_club"],
+            most_unequal=d["most_unequal"], range_lo=range_lo, range_hi=range_hi,
+            least_unequal_words=", ".join(c["name"] for c in d["least_unequal"][:3]),
+            richest=d["richest"], poorest=d["poorest"],
+            clubs=sorted(d["clubs"], key=lambda c: -c["mean"]),
         )
 
     def _movement_matches(self) -> dict[str, list[dict]]:

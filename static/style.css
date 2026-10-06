@@ -950,3 +950,16 @@ tr.wages-over td:nth-child(7) { font-weight: 600; }
   .seis-holder { overflow-x: auto; -webkit-overflow-scrolling: touch; }
   .seis-holder svg { min-width: 760px; }
 }
+
+/* Income around the ground: the money map and the spread bars. */
+.income-map { height: 560px; }
+.income-legend { display: flex; align-items: center; gap: 0; margin: 4px 0 8px; font-size: 12px; color: var(--muted); position: relative; height: 24px; }
+.income-swatch { display: inline-block; width: 22px; height: 10px; }
+.income-swatch:first-child { border-radius: 3px 0 0 3px; } .income-swatch:nth-child(13) { border-radius: 0 3px 3px 0; }
+.income-legend-lo, .income-legend-hi { position: absolute; top: 12px; }
+.income-legend-lo { left: 0; } .income-legend-hi { left: 286px; transform: translateX(-100%); }
+.income-range { position: relative; display: block; width: 180px; height: 12px; background: var(--bg-soft); border-radius: 3px; }
+.income-range-bar { position: absolute; top: 0; height: 100%; background: #9ec5f4; border-radius: 3px; }
+.income-range-dot { position: absolute; top: -2px; width: 4px; height: 16px; margin-left: -2px; background: var(--ink); border-radius: 2px; }
+.income-spread td { vertical-align: middle; }
+@media (max-width: 700px) { .income-map { height: 420px; } .income-range { width: 120px; } }

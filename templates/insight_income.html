@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Income around the ground</h1>
+<p class="subtitle">Where the money is, which clubs draw from it, and whether it buys them anything.</p>
+
+<div class="stat-cards">
+  {% for s in stats %}<div class="stat-card"><div class="stat-value">{{ s.value }}</div><div class="stat-label">{{ s.label }}</div></div>{% endfor %}
+</div>
+
+<div class="theme-intro">{{ intro_html }}</div>
+
+<h2 id="map">The money map</h2>
+<p class="subtitle">Every one of the {{ "{:,}".format(points) }} neighbourhoods in England, coloured by net household income. Hover a dot for the place and the club that draws most of it; click a ground to see its catchment alone.</p>
+<div class="map-chips chip-row income-layers" role="group" aria-label="Colour the map by">
+  <button class="chip chip-active" type="button" data-layer="area" aria-pressed="true">Neighbourhood income</button>
+  <button class="chip" type="button" data-layer="club" aria-pressed="false">Catchment income</button>
+  <button class="chip" type="button" data-layer="people" aria-pressed="false">Clubs only</button>
+</div>
+<div class="income-legend" id="income-legend" aria-hidden="true">
+  {% for c in ramp %}<span class="income-swatch" style="background: {{ c }}"></span>{% endfor %}
+  <span class="income-legend-lo">£{{ "{:,}".format(legend_lo) }}</span><span class="income-legend-hi">£{{ "{:,}".format(legend_hi) }}</span>
+</div>
+<div id="income-map" class="map-canvas income-map"></div>
+<div id="income-club" class="chart-detail" hidden></div>
+<p class="finance-note">Net household income after housing costs, ONS small-area estimates for {{ income_year }}, one figure per neighbourhood of around 7,000 people with a 95% confidence interval of roughly ±£6,000. Colours are deciles across England, so the darkest blue is the richest tenth of neighbourhoods. On the catchment layer each dot takes the average income of the club that draws most of its people, which turns the dots into rough catchment patches.</p>
+
+<h2 id="tiers">Does money around the ground buy tiers?</h2>
+<p class="subtitle">Each dot is a club at the average income of the people it draws, by the tier it plays in this season. The line is England.</p>
+<div class="chart-holder">
+  <svg viewBox="0 0 {{ sw }} {{ sh }}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Catchment income by tier">
+    {% for t in strip_ticks %}
+    <line x1="{{ t.x }}" y1="{{ strip_top }}" x2="{{ t.x }}" y2="{{ sh - 30 }}" stroke="#e4e8ec" stroke-width="1"></line>
+    <text x="{{ t.x }}" y="{{ sh - 14 }}" font-size="10" fill="#6b7683" text-anchor="middle">£{{ t.label }}</text>
+    {% endfor %}
+    <line x1="{{ england_x }}" y1="{{ strip_top }}" x2="{{ england_x }}" y2="{{ sh - 30 }}" stroke="#17202a" stroke-width="1.5" stroke-dasharray="4 3"></line>
+    <text x="{{ england_x + 4 }}" y="{{ strip_top + 10 }}" font-size="10" fill="#17202a">England £{{ "{:,}".format(england.mean) }}</text>
+    {% for r in strip_rows %}
+    <text x="6" y="{{ r.y + 4 }}" font-size="12" font-weight="600" fill="#17202a">Tier {{ r.tier }}</text>
+    <text x="6" y="{{ r.y + 16 }}" font-size="10" fill="#6b7683">median £{{ "{:,}".format(r.median) }} · {{ r.n }} clubs</text>
+    <line x1="{{ strip_left }}" y1="{{ r.y }}" x2="{{ sw - 10 }}" y2="{{ r.y }}" stroke="#eef1f4" stroke-width="1"></line>
+    <line x1="{{ r.median_x }}" y1="{{ r.y - 9 }}" x2="{{ r.median_x }}" y2="{{ r.y + 9 }}" stroke="#eb6834" stroke-width="2.5"></line>
+    {% for d in r.dots %}
+    <a href="{{ root }}/team/{{ d.club_id }}/index.html"><circle cx="{{ d.x }}" cy="{{ d.y }}" r="4" fill="#2a78d6" fill-opacity="0.75" stroke="#fcfcfb" stroke-width="1"><title>{{ d.name }}: £{{ "{:,}".format(d.mean) }}, {{ "{:,}".format(d.people) }} people in reach</title></circle></a>
+    {% endfor %}
+    {% endfor %}
+    <line x1="{{ strip_left }}" y1="{{ sh - 30 }}" x2="{{ sw - 10 }}" y2="{{ sh - 30 }}" stroke="#c8ced6" stroke-width="1"></line>
+  </svg>
+</div>
+<p class="finance-note">The orange tick is the tier's median. Across {{ model.n }} clubs the correlation between catchment income and tier is {{ model.corr_income }}; between catchment size and tier it is {{ model.corr_people }}. Size alone explains {{ (model.r2_people * 100) | round | int }}% of the variance in tier; adding income takes that to {{ (model.r2_both * 100) | round | int }}%, and each extra £1,000 of income is worth {{ model.per_thousand }} of a tier. Wealth around a ground is not what gets a club up the pyramid. People are.</p>
+
+<div class="yoyo-pair">
+<div>
+<h3>Rich town, small club</h3>
+<p class="subtitle">Catchments in the richest quarter (£{{ "{:,}".format(quartiles.q75) }} and up) whose club plays in tier four or below.</p>
+<div class="table-scroll"><table class="standings">
+  <tr><th>Club</th><th class="num">Tier</th><th class="num">Income</th><th class="num">People</th></tr>
+  {% for c in rich_small %}<tr><td><a href="{{ root }}/team/{{ c.club_id }}/index.html">{{ c.name }}</a></td><td class="num">{{ c.tier }}</td><td class="num">£{{ "{:,}".format(c.mean) }}</td><td class="num">{{ "{:,}".format(c.people) }}</td></tr>{% endfor %}
+</table></div>
+</div>
+<div>
+<h3>Poor town, big club</h3>
+<p class="subtitle">Catchments in the poorest quarter (£{{ "{:,}".format(quartiles.q25) }} and under) whose club plays in the top two tiers.</p>
+<div class="table-scroll"><table class="standings">
+  <tr><th>Club</th><th class="num">Tier</th><th class="num">Income</th><th class="num">People</th></tr>
+  {% for c in poor_big %}<tr><td><a href="{{ root }}/team/{{ c.club_id }}/index.html">{{ c.name }}</a></td><td class="num">{{ c.tier }}</td><td class="num">£{{ "{:,}".format(c.mean) }}</td><td class="num">{{ "{:,}".format(c.people) }}</td></tr>{% endfor %}
+</table></div>
+</div>
+</div>
+<p class="finance-note">The people column is the tell. The rich-town clubs draw from tens of thousands; the poor-town clubs from hundreds of thousands, and in the north-west from a million. A big poor town supports a bigger club than a small rich one, and always has.</p>
+
+<h2 id="spread">Between wealth and poverty</h2>
+<p class="subtitle">How unequal each club's catchment is: the population-weighted standard deviation of income across the neighbourhoods it draws from, and the gap between its richest tenth and poorest tenth of people. The bar runs from the poorest tenth to the richest; the dot is the average.</p>
+<div class="table-scroll"><table class="standings income-spread">
+  <tr><th>Club</th><th class="num">Tier</th><th class="num">Spread (SD)</th><th class="num">90/10 gap</th><th>Poorest tenth to richest tenth</th><th>Richest place it draws from</th><th>Poorest</th></tr>
+  {% for c in most_unequal %}
+  <tr>
+    <td><a href="{{ root }}/team/{{ c.club_id }}/index.html">{{ c.name }}</a></td><td class="num">{{ c.tier }}</td>
+    <td class="num"><b>£{{ "{:,}".format(c.sd) }}</b></td><td class="num">£{{ "{:,}".format(c.gap) }}</td>
+    <td><span class="income-range"><span class="income-range-bar" style="left: {{ c.bar_l }}%; width: {{ c.bar_w }}%"></span><span class="income-range-dot" style="left: {{ c.dot }}%"></span></span></td>
+    <td>{{ c.richest.name }} <span class="status-tag">£{{ "{:,}".format(c.richest.income) }}</span></td>
+    <td>{{ c.poorest.name }} <span class="status-tag">£{{ "{:,}".format(c.poorest.income) }}</span></td>
+  </tr>
+  {% endfor %}
+</table></div>
+<p class="finance-note">The richest and poorest places are neighbourhoods where the club draws at least a tenth of the people, so a top-flight club's long reach can put its poorest place forty miles away. Range bars run from £{{ "{:,}".format(range_lo) }} to £{{ "{:,}".format(range_hi) }}. The flattest catchments – {{ least_unequal_words }} – are the small towns, where everyone the club reaches earns about the same.</p>
+
+<h2 id="rich">The richest and poorest catchments</h2>
+<div class="yoyo-pair">
+<div>
+<h3>Richest</h3>
+<div class="table-scroll"><table class="standings">
+  <tr><th>Club</th><th class="num">Tier</th><th class="num">Income</th><th class="num">v England</th></tr>
+  {% for c in richest %}<tr><td><a href="{{ root }}/team/{{ c.club_id }}/index.html">{{ c.name }}</a></td><td class="num">{{ c.tier }}</td><td class="num">£{{ "{:,}".format(c.mean) }}</td><td class="num">{{ "{:+,}".format(c.vs_england) }}</td></tr>{% endfor %}
+</table></div>
+</div>
+<div>
+<h3>Poorest</h3>
+<div class="table-scroll"><table class="standings">
+  <tr><th>Club</th><th class="num">Tier</th><th class="num">Income</th><th class="num">v England</th></tr>
+  {% for c in poorest %}<tr><td><a href="{{ root }}/team/{{ c.club_id }}/index.html">{{ c.name }}</a></td><td class="num">{{ c.tier }}</td><td class="num">£{{ "{:,}".format(c.mean) }}</td><td class="num">{{ "{:+,}".format(c.vs_england) }}</td></tr>{% endfor %}
+</table></div>
+</div>
+</div>
+
+<h2 id="all">Every club</h2>
+<p class="subtitle">This season's tiers 1–7 with a modelled catchment. Click a heading to sort.</p>
+<div class="table-scroll"><table class="standings sortable" id="income-table">
+  <thead><tr><th>Club</th><th class="num">Tier</th><th class="num">Income</th><th class="num">v England</th><th class="num">Spread (SD)</th><th class="num">90/10 gap</th><th class="num">People in reach</th><th class="num">Tier its size predicts</th></tr></thead>
+  <tbody>
+  {% for c in clubs %}
+  <tr><td><a href="{{ root }}/team/{{ c.club_id }}/index.html">{{ c.name }}</a></td><td class="num" data-sort="{{ c.tier }}">{{ c.tier }}</td><td class="num" data-sort="{{ c.mean }}">£{{ "{:,}".format(c.mean) }}</td><td class="num" data-sort="{{ c.vs_england }}">{{ "{:+,}".format(c.vs_england) }}</td><td class="num" data-sort="{{ c.sd }}">£{{ "{:,}".format(c.sd) }}</td><td class="num" data-sort="{{ c.gap }}">£{{ "{:,}".format(c.gap) }}</td><td class="num" data-sort="{{ c.people }}">{{ "{:,}".format(c.people) }}</td><td class="num" data-sort="{{ c.predicted }}">{{ c.predicted }}</td></tr>
+  {% endfor %}
+  </tbody>
+</table></div>
+<p class="finance-note">Catchment figures come from the gravity model with every club at its current level, so they are modelled, not counted. A club outside the model – no ground coordinates, or fewer than a thousand people in reach – is not listed.</p>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="income-data.js"></script>
+<script src="{{ root }}/static/hash-state.js"></script>
+<script src="{{ root }}/static/club-table.js"></script>
+<script src="{{ root }}/static/income.js"></script>
+{% endblock %}
