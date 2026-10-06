@@ -204,7 +204,7 @@ FOOTBALL_WORDS = re.compile(r"\b(football|f\.?\s?c\.?|a\.?f\.?c\.?|soccer|associ
 
 
 SIDE_WORDS = re.compile(r"\b(women|womens|ladies|girls|academy|foundation|youth|juniors?|charitable|"
-                        r"community trust|in the community)\b", re.I)
+                        r"community trust|in the community|(?:fc|f\.c\.|football club) community)\b", re.I)
 
 
 def side_company(name: str, club_name: str) -> bool:
