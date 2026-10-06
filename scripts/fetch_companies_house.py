@@ -28,7 +28,7 @@ TWO STAGES.
 
 2. Snapshot. For every matched club: the company profile (status,
    accounts due and overdue, last accounts type), officers, persons with
-   significant control - followed up to three companies when the
+   significant control - followed up to five companies when the
    controller is itself a UK company - charges, insolvency cases and the
    last ten accounts filings. Trimmed to what the site uses.
 
@@ -275,8 +275,8 @@ def is_uk(place: str | None) -> bool:
     return bool(place) and bool(UK_WORDS.search(place))
 
 
-def chain(reg: Register, pscs: list[dict], depth: int = 3) -> list[dict]:
-    """Follow the active corporate controller up through UK companies, as far as three steps."""
+def chain(reg: Register, pscs: list[dict], depth: int = 5) -> list[dict]:
+    """Follow the active corporate controller up through UK companies, as far as five steps."""
     out, seen = [], set()
     current = pscs
     for _ in range(depth):
