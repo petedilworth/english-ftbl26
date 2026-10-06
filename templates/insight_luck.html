@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+{% macro season(y) %}{{ y - 1 }}/{{ "%02d" % (y % 100) }}{% endmacro %}
+{% macro club(r) %}<a href="{{ root }}/team/{{ r.club_id }}/index.html">{{ r.name }}</a>{% endmacro %}
+{% macro signed(v) %}{% if v is none %}–{% else %}{{ "%+.1f" % v }}{% endif %}{% endmacro %}
+{% block content %}
+<h1>Luck</h1>
+<p class="subtitle">Points won against points expected – from the betting odds before kick-off, and from the shots on target in the match – for {{ "{:,}".format(n_matches_o) }} matches since {{ season(first_o) }}.</p>
+
+<div class="stat-cards">
+  {% for s in stats %}<div class="stat-card"><div class="stat-value">{{ s.value }}</div><div class="stat-label">{{ s.label }}</div></div>{% endfor %}
+</div>
+
+<div class="theme-intro">{{ intro_html }}</div>
+
+<h2 id="table">Points against expected points</h2>
+<p class="subtitle">Each dot is a club's season. Above the line it has more points than its matches were worth; below, fewer. Pick a season and a division; switch the measure, or show both and see where they part.</p>
+<div class="luck-controls">
+  <label>Season <select id="luck-season" aria-label="Season">{% for y in seasons %}<option value="{{ y }}"{% if y == default_season %} selected{% endif %}>{{ season(y) }}{% if y == newest %} (so far){% endif %}</option>{% endfor %}</select></label>
+  <div class="chip-row" role="group" aria-label="Division">
+    {% for t in tiers %}<button class="chip{% if t == 1 %} chip-active{% endif %}" type="button" data-tier="{{ t }}" aria-pressed="{{ 'true' if t == 1 else 'false' }}">Tier {{ t }}</button>{% endfor %}
+  </div>
+  <div class="chip-row" role="group" aria-label="Measure">
+    <button class="chip chip-active" type="button" data-measure="o" aria-pressed="true">Odds</button>
+    <button class="chip" type="button" data-measure="s" aria-pressed="false">Shots on target</button>
+    <button class="chip" type="button" data-measure="b" aria-pressed="false">Both</button>
+  </div>
+</div>
+<div class="chart-holder luck-holder">
+  <svg id="luck-scatter" viewBox="0 0 760 520" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Points against expected points"></svg>
+  <div class="seis-tip" id="luck-tip" hidden></div>
+</div>
+<p class="finance-note" id="luck-note">Orange: luckier than expected. Blue: unluckier. On "Both" the line joins the two estimates for each club: a long line is a season the two measures read differently.</p>
+
+<h2 id="seasons">The luckiest and unluckiest seasons</h2>
+<p class="subtitle">Points above or below what the odds expected, across a whole season. Completed seasons only; tiers 1–5.</p>
+<div class="chip-row luck-tabs" role="group" aria-label="Measure for the tables">
+  <button class="chip chip-active" type="button" data-tab="o" aria-pressed="true">By the odds</button>
+  <button class="chip" type="button" data-tab="s" aria-pressed="false">By shots on target</button>
+</div>
+{% for key, lucky, unlucky in [("o", luckiest, unluckiest), ("s", luckiest_s, unluckiest_s)] %}
+<div class="yoyo-pair luck-tab" data-tab="{{ key }}"{% if key == "s" %} hidden{% endif %}>
+{% for title, rows in [("Luckiest", lucky), ("Unluckiest", unlucky)] %}
+<div>
+<h3>{{ title }}</h3>
+<div class="table-scroll"><table class="standings">
+  <tr><th>Club</th><th>Season</th><th class="num">Tier</th><th class="num">Points</th><th class="num">Expected</th><th class="num">Luck</th></tr>
+  {% for r in rows %}<tr><td>{{ club(r) }}</td><td>{{ season(r.season) }}</td><td class="num">{{ r.tier }}</td><td class="num">{{ r.pts }}</td><td class="num">{{ "%.1f" % (r.xo if key == "o" else r.xs) }}</td><td class="num"><b>{{ signed(r.luck_o if key == "o" else r.luck_s) }}</b></td></tr>{% endfor %}
+</table></div>
+</div>
+{% endfor %}
+</div>
+{% endfor %}
+<p class="finance-note">A typical club's luck over a season, either way, is about {{ sd_o }} points on a 46-game scale. The seasons above are three and four times that.</p>
+
+<h2 id="decided">Decided by luck</h2>
+<p class="subtitle">First, how luck sits across a table. Every club's luck, averaged by how its season ended.</p>
+<div class="table-scroll"><table class="standings luck-outcomes">
+  <tr><th>How the season ended</th><th class="num">Seasons</th><th class="num">Average luck</th><th class="num">Share that beat the odds</th></tr>
+  {% for o in outcomes %}<tr><td>{{ o.label }}</td><td class="num">{{ o.n }}</td><td class="num"><b>{{ "%+.1f" % o.mean }}</b></td><td class="num">{{ (o.share_lucky * 100) | round | int }}%</td></tr>{% endfor %}
+</table></div>
+<p class="finance-note">Finishing at either end of a table selects for luck. A club does not come top by being exactly as good as its price; it comes top by being good and getting the breaks. So a "lucky champion" below is not an insult – it is nearly every champion. The more telling rows are the clubs that went down from mid-table on expected points, and the ones that missed promotion from the top three.</p>
+<p class="subtitle luck-then">Then the flips: finished divisions re-ranked on expected points, with any points deduction carried across. Where the line falls in a different place, luck moved it. Play-offs are left out: they are a lottery of their own.</p>
+{% macro decided_table(rows) %}<div class="table-scroll"><table class="standings">
+  <tr><th>Season</th><th>Club</th><th class="num">Tier</th><th class="num">Finished</th><th class="num">On expected points</th><th class="num">Points</th><th class="num">Expected</th></tr>
+  {% for r in rows %}<tr><td>{{ season(r.season) }}</td><td>{{ club(r) }}</td><td class="num">{{ r.tier }}</td><td class="num">{{ r.position }}</td><td class="num">{{ r.xpos }}</td><td class="num">{{ r.pts }}</td><td class="num">{{ r.xpts }}</td></tr>{% endfor %}
+</table></div>{% endmacro %}
+{% for title, rows in decided_groups %}{% if rows %}
+<h3>{{ title }} <span class="status-tag">{{ rows | length }}</span></h3>
+{{ decided_table(rows[:12]) }}
+{% if rows | length > 12 %}<details class="luck-more"><summary>The other {{ rows | length - 12 }}</summary>{{ decided_table(rows[12:]) }}</details>{% endif %}
+{% endif %}{% endfor %}
+<p class="finance-note">{{ decided_divisions }} of the {{ decided_examined }} finished divisions with full odds would have ended differently on expected points: {{ decided_total }} clubs went up, down or won the title when the market's numbers said someone else should have. By shots on target the count is {{ decided_total_s }}.</p>
+
+<h2 id="persist">Does luck last?</h2>
+<p class="subtitle">Each dot is a club: its luck per game one season (across) against the next (up). If luck were a skill, the dots would lean.</p>
+<div class="luck-persist">
+  <div class="chart-holder">
+    <svg viewBox="0 0 {{ pw }} {{ pw }}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Luck one season against the next">
+      <line x1="{{ pmid }}" y1="10" x2="{{ pmid }}" y2="{{ pw - 26 }}" stroke="#c8ced6"></line>
+      <line x1="30" y1="{{ pw - pmid }}" x2="{{ pw - 10 }}" y2="{{ pw - pmid }}" stroke="#c8ced6"></line>
+      {% for p in persist_dots %}<circle cx="{{ p[0] }}" cy="{{ p[1] }}" r="2.2" fill="#2a78d6" fill-opacity="0.35"></circle>{% endfor %}
+      <text x="{{ pw - 10 }}" y="{{ pw - 12 }}" font-size="10" fill="#6b7683" text-anchor="end">lucky this season →</text>
+      <text x="{{ pmid + 6 }}" y="20" font-size="10" fill="#6b7683">↑ lucky next season</text>
+    </svg>
+  </div>
+  <div>
+    <div class="stat-cards">
+      <div class="stat-card"><div class="stat-value">{{ "%+.2f" % persist_o.luck }}</div><div class="stat-label">Luck, one season to the next (odds)</div></div>
+      <div class="stat-card"><div class="stat-value">{{ "%+.2f" % persist_o.ability }}</div><div class="stat-label">Expected points, one season to the next</div></div>
+      {% if persist_s %}<div class="stat-card"><div class="stat-value">{{ "%+.2f" % persist_s.luck }}</div><div class="stat-label">Luck, one season to the next (shots)</div></div>{% endif %}
+    </div>
+    <p class="finance-note">Correlations over {{ "{:,}".format(persist_o.n) }} pairs of seasons. A club's strength, as the market prices it, carries from one season to the next; its luck barely does. A club that was lucky last season should expect to be ordinary this one – and so should its fans.</p>
+  </div>
+</div>
+
+<h2 id="market">Beating the market</h2>
+<p class="subtitle">Clubs with at least {{ min_seasons }} seasons of prices, by average luck a season on a 38-game scale. The bar runs two standard errors either side: a bar that crosses zero has not beaten anything.</p>
+<div class="table-scroll"><table class="standings luck-market">
+  <tr><th>Club</th><th class="num">Seasons</th><th class="num">A season</th><th>Two standard errors either side</th></tr>
+  {% for b in beaters %}
+  <tr{% if b.gap_before %} class="luck-gap"{% endif %}>
+    <td><a href="{{ root }}/team/{{ b.club_id }}/index.html">{{ b.name }}</a></td><td class="num">{{ b.seasons }}</td>
+    <td class="num"><b>{{ "%+.1f" % b.mean }}</b></td>
+    <td><span class="income-range"><span class="luck-zero" style="left: {{ b.zero }}%"></span><span class="income-range-bar luck-bar{% if b['clear'] %} luck-clear{% endif %}" style="left: {{ b.bar_l }}%; width: {{ b.bar_w }}%"></span><span class="income-range-dot" style="left: {{ b.dot }}%"></span></span></td>
+  </tr>
+  {% endfor %}
+</table></div>
+<p class="finance-note">Coloured bars sit clear of zero; grey ones do not. {{ clear_count }} of {{ beaters_total }} clubs sit clear. With that many clubs, about {{ chance_clear }} would by chance alone.</p>
+
+<h2 id="disagree">When the odds and the shots disagree</h2>
+<p class="subtitle">Seasons the two measures read most differently. The odds judge a club on what was known before each match; the shots on what happened in it.</p>
+<div class="yoyo-pair">
+{% for title, note, rows in [("The odds say lucky, the shots say deserved", "More points than the market expected, but the shots on target backed it up: a better side than its price.", odds_kinder), ("The shots say lucky, the odds say deserved", "Out-shot on target and still got the points the market expected: a side the market rated for something the shots do not count.", shots_kinder)] %}
+<div>
+<h3>{{ title }}</h3>
+<p class="subtitle">{{ note }}</p>
+<div class="table-scroll"><table class="standings">
+  <tr><th>Club</th><th>Season</th><th class="num">Tier</th><th class="num">Odds</th><th class="num">Shots</th></tr>
+  {% for r in rows %}<tr><td>{{ club(r) }}</td><td>{{ season(r.season) }}</td><td class="num">{{ r.tier }}</td><td class="num">{{ signed(r.luck_o) }}</td><td class="num">{{ signed(r.luck_s) }}</td></tr>{% endfor %}
+</table></div>
+</div>
+{% endfor %}
+</div>
+
+<h2 id="now">This season so far</h2>
+<p class="subtitle">{{ season(newest) }}, tiers 1–5. Who is riding their luck, and who is due. Click a heading to sort.</p>
+<div class="table-scroll"><table class="standings sortable" id="luck-table">
+  <thead><tr><th>Club</th><th class="num">Tier</th><th class="num">Played</th><th class="num">Points</th><th class="num">Expected (odds)</th><th class="num">Luck (odds)</th><th class="num">Expected (shots)</th><th class="num">Luck (shots)</th></tr></thead>
+  <tbody>
+  {% for r in current %}
+  <tr><td>{{ club(r) }}</td><td class="num" data-sort="{{ r.tier }}">{{ r.tier }}</td><td class="num" data-sort="{{ r.played }}">{{ r.played }}</td><td class="num" data-sort="{{ r.pts }}">{{ r.pts }}</td>
+    <td class="num" data-sort="{{ r.xo if r.xo is not none else '' }}">{{ "%.1f" % r.xo if r.xo is not none else "–" }}</td><td class="num" data-sort="{{ r.luck_o if r.luck_o is not none else '' }}"><b>{{ signed(r.luck_o) }}</b></td>
+    <td class="num" data-sort="{{ r.xs if r.xs is not none else '' }}">{{ "%.1f" % r.xs if r.xs is not none else "–" }}</td><td class="num" data-sort="{{ r.luck_s if r.luck_s is not none else '' }}">{{ signed(r.luck_s) }}</td></tr>
+  {% endfor %}
+  </tbody>
+</table></div>
+
+<h2 id="method">How it is worked out</h2>
+<p class="finance-note">Odds: the average price across bookmakers in the <a href="https://www.football-data.co.uk/notes.txt">football-data.co.uk</a> files – the site's own average in recent seasons, Betbrain's before that, and the mean of the bookmakers listed in the earliest seasons – with the margin taken out in proportion. Expected points for each side are three times its chance of winning plus its chance of a draw. The market reprices every week, so a club that improves mid-season stops looking lucky within a month; the odds understate luck that lasts. Shots: each side's shots on target, times the share of shots on target that became goals in that division that season, as the average of a Poisson score. That is not expected goals – there is no shot location in the data – and it judges a match by what happened in it. A season is ranked only when at least {{ (min_coverage * 100) | int }}% of its matches have the data; where some are missing, those matches count at the points actually won. Shots data starts in {{ season(first_s) if first_s else "–" }} and is thinner in tier 5.</p>
+
+<script src="luck-data.js"></script>
+<script src="{{ root }}/static/hash-state.js"></script>
+<script src="{{ root }}/static/club-table.js"></script>
+<script src="{{ root }}/static/luck.js"></script>
+{% endblock %}

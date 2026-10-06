@@ -33,6 +33,7 @@ import grounds as grounds_mod  # noqa: E402  (who owns the ground)
 import compare as compare_mod  # noqa: E402  (two clubs side by side)
 import yoyo as yoyo_mod  # noqa: E402  (yo-yo clubs)
 import income as income_mod  # noqa: E402  (income around the ground)
+import luck as luck_mod  # noqa: E402  (points against expected points)
 import divisions
 divisions_mod = divisions
 import finances  # noqa: E402  (disclosure states for the club finances table)
@@ -2555,6 +2556,11 @@ class SiteBuilder:
                 "income", "Income around the ground",
                 "The money map, and why wealth near a ground buys no tiers at all",
             ))
+        if (PROJECT_ROOT / "content" / "insights" / "luck.md").exists():
+            stories.append(story(
+                "luck", "Luck",
+                "Points against expected points, from the odds and from the shots – and the seasons luck decided",
+            ))
         if (PROJECT_ROOT / "content" / "insights" / "grounds.md").exists():
             stories.append(story(
                 "grounds", "Who owns the ground",
@@ -2681,6 +2687,7 @@ class SiteBuilder:
         self._insight_value()
         self._insight_grounds()
         self._insight_income()
+        self._insight_luck()
         self._insight_boom_and_bust(boom_bust_events)
         self._insight_the_drop(movement_matches)
         self._insight_the_rise(movement_matches)
@@ -3355,6 +3362,106 @@ class SiteBuilder:
             least_unequal_words=", ".join(c["name"] for c in d["least_unequal"][:3]),
             richest=d["richest"], poorest=d["poorest"],
             clubs=sorted(d["clubs"], key=lambda c: -c["mean"]),
+        )
+
+    def _insight_luck(self) -> None:
+        """
+        Points against expected points: the scatter (static/luck.js), the
+        luckiest and unluckiest seasons, the seasons luck decided, whether
+        luck carries over, the clubs that beat the market, and this season.
+        See src/luck.py. Gated on its prose and on the odds being stored.
+        """
+        import json
+
+        import markdown as md
+        from markupsafe import Markup
+
+        source = PROJECT_ROOT / "content" / "insights" / "luck.md"
+        if not source.exists():
+            return
+        try:
+            d = luck_mod.assemble(self.conn)
+        except Exception as exc:  # the page must never break the build
+            logger.warning("luck page skipped: %s", exc)
+            return
+        if not d:
+            return
+
+        # Does luck last: luck per game one season against the next.
+        pw, pad = 320, 30
+        pts = d["persist_o"].get("points", []) if d["persist_o"] else []
+        lim = max([0.5] + [abs(v) for p in pts for v in p])
+        lim = min(lim, 1.0)
+
+        def pxy(v):
+            return round(pad + (max(-lim, min(lim, v)) + lim) / (2 * lim) * (pw - pad - 10), 1)
+
+        persist_dots = [(pxy(a), round(pw - pxy(b), 1)) for a, b in pts]
+
+        # Beating the market: the top and bottom, as range bars on one scale.
+        beaters = d["beaters"]
+        shown = beaters[:10] + beaters[-10:] if len(beaters) > 20 else beaters
+        lo = min([b["mean"] - 2 * b["se"] for b in shown] + [0])
+        hi = max([b["mean"] + 2 * b["se"] for b in shown] + [0])
+        span = max(0.1, hi - lo)
+        rows = []
+        for i, b in enumerate(shown):
+            rows.append(dict(b, bar_l=round(100 * (b["mean"] - 2 * b["se"] - lo) / span, 1),
+                             bar_w=round(100 * 4 * b["se"] / span, 1), dot=round(100 * (b["mean"] - lo) / span, 1),
+                             zero=round(100 * (0 - lo) / span, 1), gap_before=len(beaters) > 20 and i == 10))
+        clear = sum(1 for b in beaters if b["clear"])
+
+        groups = [
+            ("Went down on bad luck", [f for f in d["decided"] if f["zone"] == "relegated" and f["happened"]]),
+            ("Stayed up on good luck", [f for f in d["decided"] if f["zone"] == "relegated" and not f["happened"]]),
+            ("Went up on good luck", [f for f in d["decided"] if f["zone"] == "promoted" and f["happened"]]),
+            ("Missed out on bad luck", [f for f in d["decided"] if f["zone"] == "promoted" and not f["happened"]]),
+            ("Champions on good luck", [f for f in d["decided"] if f["zone"] == "title" and f["happened"]]),
+            ("Robbed of the title", [f for f in d["decided"] if f["zone"] == "title" and not f["happened"]]),
+        ]
+        groups = [(t, sorted(g, key=lambda f: (-f["season"], f["tier"]))) for t, g in groups]
+        happened = [f for f in d["decided"] if f["happened"]]
+        happened_s = [f for f in d["decided_s"] if f["happened"]]
+
+        seasons = sorted({r[0] for r in d["scatter"]}, reverse=True)
+        # Early in a season a scatter is a handful of games: the last full one reads better.
+        played_now = max((r[3] for r in d["scatter"] if r[0] == d["newest"]), default=0)
+        default_season = d["newest"] if played_now >= 10 or len(seasons) == 1 else seasons[1]
+        luckiest = d["luckiest"][0] if d["luckiest"] else None
+        champs = [o for o in d["outcomes"] if o["label"] == "Champions"]
+        champ_share = round(champs[0]["share_lucky"] * 100) if champs else 0
+        stats = [
+            {"value": f"{d['n_matches_o']:,}", "label": f"Matches with odds since {d['first_o'] - 1}/{d['first_o'] % 100:02d}"},
+            {"value": f"{champ_share}%", "label": "Champions who beat their price"},
+            {"value": f"{d['persist_o'].get('luck', 0):+.2f}", "label": "How much luck carries to the next season"},
+        ]
+        if luckiest:
+            stats.append({"value": f"{luckiest['luck_o']:+.1f}",
+                          "label": f"Luckiest season: {luckiest['name']}, {luckiest['season'] - 1}/{luckiest['season'] % 100:02d}"})
+
+        out_dir = self.out / "insights" / "luck"
+        out_dir.mkdir(parents=True, exist_ok=True)
+        (out_dir / "luck-data.js").write_text(
+            "window.LUCK_DATA = " + json.dumps({"clubs": d["clubs"], "rows": d["scatter"], "root": "../.."},
+                                               separators=(",", ":")) + ";", encoding="utf-8")
+        self.render(
+            "insight_luck.html", out_dir / "index.html", 2,
+            title="Luck",
+            intro_html=Markup(md.markdown(content.load_theme(source))),
+            stats=stats, n_matches_o=d["n_matches_o"], first_o=d["first_o"], first_s=d["first_s"], newest=d["newest"],
+            seasons=seasons, default_season=default_season,
+            tiers=sorted({r[1] for r in d["scatter"]}),
+            luckiest=d["luckiest"], unluckiest=d["unluckiest"],
+            luckiest_s=d["luckiest_s"], unluckiest_s=d["unluckiest_s"], sd_o=d["sd_o"],
+            decided_groups=groups, decided_total=len(happened), decided_total_s=len(happened_s),
+            decided_divisions=len({(f["season"], f["tier"]) for f in d["decided"]}),
+            decided_examined=d["decided_examined"], outcomes=d["outcomes"],
+            persist_o=d["persist_o"] or {"luck": 0, "ability": 0, "n": 0}, persist_s=d["persist_s"],
+            pw=pw, pmid=pxy(0), persist_dots=persist_dots,
+            beaters=rows, beaters_total=len(beaters), clear_count=clear,
+            chance_clear=max(1, round(len(beaters) * 0.05)), min_seasons=luck_mod.MIN_MARKET_SEASONS,
+            odds_kinder=d["odds_kinder"], shots_kinder=d["shots_kinder"],
+            current=d["current"], min_coverage=luck_mod.MIN_COVERAGE,
         )
 
     def _movement_matches(self) -> dict[str, list[dict]]:
