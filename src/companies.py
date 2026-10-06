@@ -20,6 +20,7 @@ this page.
 
 import datetime
 import json
+import re
 import logging
 from pathlib import Path
 
@@ -44,8 +45,14 @@ def load(path: Path = SOURCE) -> dict | None:
         return None
 
 
+UK_WORDS = re.compile(r"\b(united kingdom|u\.?k\.?|england|wales|scotland|northern ireland|great britain|"
+                      r"british|english|welsh|scottish|companies house|cardiff|london)\b", re.I)
+UK_FORMS = re.compile(r"\b(limited|ltd\.?|plc|llp|cic|community interest company)\s*$", re.I)
+
+
 def _is_uk(place) -> bool:
-    return bool(place) and str(place).strip().lower() in UK
+    """The register spells the UK many ways: 'England', 'United Kingdom (England)', 'U.K.', 'British'."""
+    return bool(place) and bool(UK_WORDS.search(str(place)))
 
 
 def _band(natures: list[str]) -> str | None:
@@ -88,7 +95,15 @@ def controller(company: dict) -> dict:
             category = "person in the UK" if _is_uk(where) else "person abroad"
         elif kind.startswith(("corporate-entity", "legal-person")):
             where = p.get("country")
-            category = "company in the UK" if _is_uk(where) else "company abroad"
+            name = p.get("name") or ""
+            if re.search(r"\bcouncil\b", name, re.I) or kind.startswith("legal-person"):
+                category = "council or public body" if re.search(r"council|authority", name, re.I) else (
+                    "company in the UK" if _is_uk(where) else "company abroad")
+            elif where:
+                category = "company in the UK" if _is_uk(where) else "company abroad"
+            else:
+                # No country given: a name ending Limited or PLC is a UK form; anything else is not stated.
+                category = "company in the UK" if UK_FORMS.search(name) else "company, country not stated"
         else:
             where, category = None, "other"
         return {"name": p.get("name"), "category": category, "where": where, "band": _band(p.get("natures") or []),
@@ -146,6 +161,26 @@ def warnings(company: dict) -> list[str]:
     return out
 
 
+FOOTBALL_WORDS = re.compile(r"\b(football|f\.?\s?c\.?|a\.?f\.?c\.?|soccer|association football)\b", re.I)
+
+
+def trusted(entry: dict) -> bool:
+    """
+    The same rule the fetch now applies, at read time, so a snapshot taken
+    under the older rule cannot slip a wrong match through: an automatic
+    match needs strong evidence, or nearness plus a football name, and is
+    never a dormant company.
+    """
+    if entry.get("match") != "auto":
+        return True
+    why = entry.get("why") or ""
+    name = (entry.get("company") or {}).get("name") or ""
+    if "dormant" in why or ((entry.get("company") or {}).get("accounts") or {}).get("last_type") == "dormant":
+        return False
+    strong = any(k in why for k in ("a charge names the ground", "matches the club's owner", "subsidiary of another"))
+    return strong or ("from the ground" in why and bool(FOOTBALL_WORDS.search(name)))
+
+
 def assemble(conn, path: Path = SOURCE) -> dict:
     """Everything the page draws; {} without the snapshot."""
     data = load(path)
@@ -156,9 +191,14 @@ def assemble(conn, path: Path = SOURCE) -> dict:
                              (newest,)))
     names = dict(conn.execute("SELECT club_id, canonical_name FROM club_master"))
     clubs = []
+    dropped = {}
     for cid, entry in data["clubs"].items():
         co = entry.get("company") or {}
         if not co:
+            continue
+        if not trusted(entry):
+            dropped[cid] = {"name": names.get(cid, cid), "tier": tier.get(cid),
+                            "why": f"automatic match to {co.get('name')} not trusted: {entry.get('why')}"}
             continue
         ctl = controller(co)
         ch = charges(co)
@@ -176,7 +216,7 @@ def assemble(conn, path: Path = SOURCE) -> dict:
     for c in clubs:
         categories.setdefault(c["controller"]["category"], []).append(c)
     unmatched = [{"club_id": k, "name": names.get(k, v.get("name")), "tier": v.get("tier"), "why": v.get("why")}
-                 for k, v in (data.get("unmatched") or {}).items()]
+                 for k, v in list((data.get("unmatched") or {}).items()) + list(dropped.items())]
     unmatched.sort(key=lambda c: (c["tier"] or 99, c["name"] or ""))
     with_debt = [c for c in clubs if c["charges"]["outstanding"]]
     lenders = {}
@@ -188,7 +228,8 @@ def assemble(conn, path: Path = SOURCE) -> dict:
         "clubs": clubs,
         "unmatched": unmatched,
         "categories": {k: len(v) for k, v in categories.items()},
-        "abroad": [c for c in clubs if c["controller"]["category"] in ("person abroad", "company abroad")],
+        "abroad": [c for c in clubs if c["controller"]["category"] in ("person abroad", "company abroad",
+                                                                         "company, country not stated")],
         "with_debt": sorted(with_debt, key=lambda c: (-c["charges"]["outstanding"], c["tier"] or 99)),
         "property_debt": [c for c in with_debt if c["charges"]["property"]],
         "lenders": sorted(([k, v] for k, v in lenders.items() if len(v) > 1), key=lambda kv: -len(kv[1])),

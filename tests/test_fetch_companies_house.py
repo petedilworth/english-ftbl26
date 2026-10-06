@@ -167,3 +167,21 @@ def test_a_run_settles_a_review_club_on_register_evidence(monkeypatch):
     got = res["clubs"]["chelsea-fc"]
     assert got["match"] == "auto" and got["company"]["number"] == "01234567"
     assert got["company"]["chain"][0]["name"] == "CHELSEA FC HOLDINGS LIMITED"
+
+
+def test_uk_is_recognised_however_the_register_spells_it():
+    for place in ("England", "United Kingdom (England)", "U.K.", "Companies House, Cardiff", "Wales"):
+        assert fch.is_uk(place), place
+    for place in ("Delaware", "Cayman Islands", "Isle Of Man", None, ""):
+        assert not fch.is_uk(place), place
+
+
+def test_nearness_alone_never_matches_a_company_that_is_not_a_football_club():
+    scored = [{"company_number": "1", "entity_name": "GRIMSBY AND CLEETHORPES YACHT CLUB LIMITED", "score": 69}]
+    d = fch.decide({"name": "Cleethorpes Town", "coords": (53.56, -0.03)}, scored,
+                   {"1": {"profile": {"company_status": "active"}}}, {"1": (53.56, -0.03)})
+    assert d["state"] == "unmatched"
+    scored = [{"company_number": "2", "entity_name": "QUORN FC LEISURE LTD", "score": 62}]
+    d = fch.decide({"name": "Quorn", "coords": (52.74, -1.17)}, scored,
+                   {"2": {"profile": {"company_status": "active"}}}, {"2": (52.74, -1.17)})
+    assert d["state"] == "auto"

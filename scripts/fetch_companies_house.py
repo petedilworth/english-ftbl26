@@ -200,6 +200,14 @@ def gather(reg: Register, number: str) -> dict:
             "charges": reg.items(f"/company/{number}/charges", limit=200)}
 
 
+FOOTBALL_WORDS = re.compile(r"\b(football|f\.?\s?c\.?|a\.?f\.?c\.?|soccer|association football)\b", re.I)
+
+
+def footballish(name: str) -> bool:
+    """Whether a company's name says it is a football club."""
+    return bool(FOOTBALL_WORDS.search(name or ""))
+
+
 def decide(club: dict, scored: list[dict], evid: dict[str, dict], offices: dict[str, tuple]) -> dict:
     """Name score plus register evidence; auto-match only with evidence and a clear lead."""
     others = {c["company_number"].upper().lstrip("0") for c in scored}
@@ -211,10 +219,16 @@ def decide(club: dict, scored: list[dict], evid: dict[str, dict], offices: dict[
         if status and status not in ("active", "open"):
             continue
         extra, why, parent = evidence(ev, club, offices.get(num), others - {num.upper().lstrip("0")})
+        if "files dormant accounts" in why:
+            continue          # a dormant company is not the club that plays
+        strong = any(w.startswith(("a charge", "a director", "subsidiary")) for w in why)
+        # Being near the ground is evidence only for a company whose name
+        # says football: the first run matched a yacht club, a wrestling
+        # club and a cycling club on nearness alone.
+        near = any(w.startswith("registered office") and "from the ground" in w for w in why)
         rows.append({"number": num, "name": c["entity_name"], "name_score": c["score"], "score": c["score"] + extra,
-                     "why": why, "parent": parent, "has_evidence": any(
-                         w.startswith(("registered office", "a charge", "a director", "subsidiary")) for w in why
-                         if "miles away" not in w)})
+                     "why": why, "parent": parent,
+                     "has_evidence": strong or (near and footballish(c["entity_name"]))})
     rows.sort(key=lambda r: -r["score"])
     if not rows:
         return {"state": "unmatched", "why": "no active candidate"}
@@ -252,8 +266,13 @@ def _psc(p: dict) -> dict:
             "legal_form": ident.get("legal_form"), "number": ident.get("registration_number")}
 
 
+UK_WORDS = re.compile(r"\b(united kingdom|u\.?k\.?|england|wales|scotland|northern ireland|great britain|"
+                      r"companies house|cardiff|london)\b", re.I)
+
+
 def is_uk(place: str | None) -> bool:
-    return bool(place) and place.strip().lower() in UK
+    """'England', 'United Kingdom (England)', 'U.K.', 'Companies House, Cardiff' - the register spells it many ways."""
+    return bool(place) and bool(UK_WORDS.search(place))
 
 
 def chain(reg: Register, pscs: list[dict], depth: int = 3) -> list[dict]:
