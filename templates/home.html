@@ -42,7 +42,7 @@
 
 <h2>Explore</h2>
 <div class="tile-grid">
-  <a class="tile" href="{{ root }}/chart/index.html"><span class="tile-title">Trajectory chart</span><br><span class="tile-sub">Compare any clubs' paths</span></a>
+  <a class="tile" href="{{ root }}/compare/index.html"><span class="tile-title">Compare</span><br><span class="tile-sub">Any two clubs, side by side</span></a>
   <a class="tile" href="{{ root }}/matrix/index.html"><span class="tile-title">The Matrix</span><br><span class="tile-sub">Every division × every season</span></a>
   {% if has_map %}
   <a class="tile" href="{{ root }}/map/index.html"><span class="tile-title">Groundhop Map</span><br><span class="tile-sub">Every ground, by season and story</span></a>
@@ -60,12 +60,14 @@
 
 <h2>The current season — {{ current_label }}</h2>
 {% if season_note %}<p class="home-note">{{ season_note }}</p>{% endif %}
+{% if divisions | selectattr("has_luck") | list %}<p class="home-note">Exp is the points the betting odds expected from the matches played; Luck is points won minus that. Early in a season a few results swing it a long way. <a href="{{ root }}/insights/luck/index.html">How luck works</a>.</p>{% endif %}
 {% for division in divisions %}
 <h3>{{ division.name }}</h3>
 {% if division.coverage_note %}<p class="coverage-note">{{ division.coverage_note }}</p>{% endif %}
+{% if division.has_luck %}<p class="home-note home-luck">Riding their luck: <a href="{{ root }}/team/{{ division.luckiest.club_id }}/index.html">{{ division.luckiest.name }}</a> <span class="luck-pos">{{ "%+.1f" % division.luckiest.luck }}</span>. Due a break: <a href="{{ root }}/team/{{ division.unluckiest.club_id }}/index.html">{{ division.unluckiest.name }}</a> <span class="luck-neg">{{ "%+.1f" % division.unluckiest.luck }}</span>. <a href="{{ root }}/insights/luck/index.html#s={{ current_season }}&amp;t={{ division.tier }}&amp;m=o">See the chart</a></p>{% endif %}
 <div class="table-scroll">
 <table class="standings">
-  <tr><th>#</th><th>Club</th><th class="num">P</th><th class="num">GD</th>{% if division.has_deductions %}<th class="num" title="Points deducted">Ded</th>{% endif %}<th class="num">Pts</th><th></th></tr>
+  <tr><th>#</th><th>Club</th><th class="num">P</th><th class="num">GD</th>{% if division.has_deductions %}<th class="num" title="Points deducted">Ded</th>{% endif %}<th class="num">Pts</th>{% if division.has_luck %}<th class="num" title="Points the betting odds expected from the matches played">Exp</th><th class="num" title="Points won minus points expected">Luck</th>{% endif %}<th></th></tr>
   {% for row in division.rows %}
   <tr class="status-{{ row.status_slug }}">
     <td class="num">{{ row.position }}</td>
@@ -74,6 +76,7 @@
     <td class="num">{{ row.gd }}</td>
     {% if division.has_deductions %}<td class="num">{% if row.points_deducted %}<span class="points-ded">−{{ row.points_deducted }}</span>{% endif %}</td>{% endif %}
     <td class="num"><strong>{{ row.points }}</strong></td>
+    {% if division.has_luck %}<td class="num">{{ "%.1f" % row.xpts if row.xpts is not none else "–" }}</td><td class="num">{% if row.luck is not none %}<span class="{{ 'luck-pos' if row.luck > 0 else 'luck-neg' if row.luck < 0 else '' }}">{{ "%+.1f" % row.luck }}</span>{% else %}–{% endif %}</td>{% endif %}
     <td><span class="status-tag {{ row.status_dir }}">{{ row.status_label }}</span></td>
   </tr>
   {% endfor %}

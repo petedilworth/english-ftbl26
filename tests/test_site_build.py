@@ -113,20 +113,15 @@ def _promotion_db(tmp_path):
     return path
 
 
-def test_chart_data_includes_events_and_tier_floors(tmp_path):
-    db = _promotion_db(tmp_path)
-    out = tmp_path / "site"
-    SiteBuilder(db, out, charts_enabled=False).build()
-
-    payload = json.loads(
-        (out / "chart" / "chart-data.js")
-        .read_text()
-        .replace("window.CHART_DATA = ", "")
-        .rstrip(";")
-    )
-    assert payload["tierFloors"]
-    riser = next(c for c in payload["clubs"] if c["id"] == "riser-fc")
-    assert [pt[2] for pt in riser["series"]] == ["promoted", None]
+def test_trajectory_series_carry_events_and_tier_floors(tmp_path):
+    # The interactive chart page has gone (Compare replaced it), but the
+    # club-page PNG charts still read these.
+    import charts as charts_mod
+    conn = sqlite3.connect(_promotion_db(tmp_path))
+    conn.row_factory = sqlite3.Row
+    floors, _ = charts_mod.tier_floors(conn)
+    assert floors
+    assert [pt[2] for pt in charts_mod.overall_positions(conn, "riser-fc")] == ["promoted", None]
 
 
 def test_matrix_is_one_table_most_recent_first(tmp_path):
@@ -442,17 +437,16 @@ def test_theme_without_intro_file_still_builds(tmp_path, monkeypatch):
     assert "Giant FC" in page
 
 
-def test_global_chart_still_starts_empty(tmp_path):
-    # The theme charts preselect; the global one must not, or it draws
-    # every club in the database at once.
+def test_the_old_chart_page_sends_readers_to_compare(tmp_path):
     db = _db_on_disk(tmp_path)
     out = tmp_path / "site"
     SiteBuilder(db, out, charts_enabled=False).build()
-    payload = json.loads(
-        (out / "chart" / "chart-data.js")
-        .read_text().replace("window.CHART_DATA = ", "").rstrip(";")
-    )
-    assert payload["preselect"] == []
+    stub = (out / "chart" / "index.html").read_text()
+    assert "../compare/index.html" in stub and not (out / "chart" / "chart-data.js").exists()
+    home = (out / "index.html").read_text()
+    assert 'href="./index.html">Home</a>' in home and "/chart/index.html" not in home
+    nav_more = home[home.index('class="nav-more-menu"'):home.index("</details>")]
+    assert "compare/index.html" in nav_more
 
 
 # ── Natural level ──────────────────────────────────────────────────────

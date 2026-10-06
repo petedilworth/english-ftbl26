@@ -979,3 +979,4 @@ tr.wages-over td:nth-child(7) { font-weight: 600; }
 .luck-then { margin-top: 20px; }
 .luck-market tr.luck-gap td { border-top: 2px solid var(--line); }
 .luck-more summary { cursor: pointer; font-size: 13px; color: var(--accent); margin: 4px 0 12px; }
+.luck-pos { color: #c4521f; font-weight: 600; } .luck-neg { color: #1c5cab; font-weight: 600; } .home-luck { margin: 2px 0 6px; }

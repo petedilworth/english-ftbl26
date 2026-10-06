@@ -68,8 +68,8 @@ def poisson_wdl(lam_h, lam_a):
     return np.column_stack([pw / s, pd_ / s, pl / s])
 
 
-def load_matches(conn: sqlite3.Connection) -> pd.DataFrame:
-    """Every match with odds or shots, with result and both probability sets."""
+def load_matches(conn: sqlite3.Connection, season: int | None = None) -> pd.DataFrame:
+    """Every match with odds or shots (in one season, if given), with result and both probability sets."""
     tables = {r[0] for r in conn.execute("SELECT name FROM sqlite_master WHERE type='table'")}
     if not {"matches", "match_stats"} <= tables:
         return pd.DataFrame()
@@ -85,8 +85,8 @@ def load_matches(conn: sqlite3.Connection) -> pd.DataFrame:
           ON s.season_end_year = m.season_end_year AND s.tier = m.tier
          AND s.home_name = m.home_name AND s.away_name = m.away_name
          AND (s.division_id = m.division_id OR (s.division_id IS NULL AND m.division_id IS NULL))
-        WHERE m.tier <= 5
-        """, conn)
+        WHERE m.tier <= 5 AND (? IS NULL OR m.season_end_year = ?)
+        """, conn, params=(season, season))
     if df.empty:
         return df
     p = probabilities(df["oh"], df["od"], df["oa"])
@@ -357,3 +357,22 @@ def assemble(conn: sqlite3.Connection, top: int = 15) -> dict:
                      None if r.cov_s < MIN_COVERAGE else round(float(r.xpts_s), 1)]
                     for r in cs.itertuples()],
     }
+
+
+def current(conn: sqlite3.Connection, season: int) -> dict[str, dict]:
+    """
+    This season so far, by club: points expected each way and the luck.
+    The home page reads it beside the tables, so it loads one season only.
+    """
+    cs = club_seasons(load_matches(conn, season))
+    out = {}
+    for r in cs.itertuples():
+        if r.n_o == 0 and r.n_s == 0:
+            continue
+        out[r.club_id] = {
+            "xo": round(float(r.xpts_o), 1) if r.n_o else None,
+            "luck_o": round(float(r.luck_o), 1) if r.n_o else None,
+            "xs": round(float(r.xpts_s), 1) if r.n_s else None,
+            "luck_s": round(float(r.luck_s), 1) if r.n_s else None,
+        }
+    return out
