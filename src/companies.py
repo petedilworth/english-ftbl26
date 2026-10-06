@@ -112,6 +112,25 @@ def controller(company: dict) -> dict:
             "via": [], "others": 0}
 
 
+_STOP = {"mr", "mrs", "ms", "sir", "dr", "limited", "ltd", "plc", "the", "and", "of", "group", "holdings", "inc",
+         "llc", "fc", "football", "club", "company", "uk", "sports", "entertainment", "family"}
+
+
+def _words(text: str) -> set[str]:
+    return {w for w in re.findall(r"[a-z]+", (text or "").lower()) if len(w) > 2 and w not in _STOP}
+
+
+def agrees(owner: str, ctl: dict) -> bool:
+    """
+    Whether a researched owner and the register's controller name the same
+    party anywhere along the chain. "Kroenke Sports & Entertainment" and
+    "Mr Enos Stanley Kroenke" agree; "Glazer family" and "Red Football
+    Limited" do not, and the page says so.
+    """
+    mine = _words(owner)
+    return any(mine & _words(n) for n in [ctl.get("name") or ""] + list(ctl.get("via") or []))
+
+
 def charges(company: dict) -> dict:
     """Outstanding secured lending: how many, to whom, the newest, and whether any names a ground."""
     items = company.get("charges") or []
@@ -119,7 +138,8 @@ def charges(company: dict) -> dict:
     lenders = []
     for c in out:
         for name in c.get("lenders") or []:
-            if name not in lenders:
+            name = lender_name(name)
+            if name and name.lower() not in {x.lower() for x in lenders}:
                 lenders.append(name)
     text = " ".join(((c.get("particulars") or "") + " " + (c.get("classification") or "")).lower() for c in out)
     property_words = ("stadium", "ground", "freehold", "leasehold", "land", "park", "road")
@@ -154,14 +174,28 @@ def warnings(company: dict) -> list[str]:
         out.append("confirmation statement overdue")
     if company.get("insolvency"):
         out.append("insolvency history")
-    if (company.get("status") or "active") not in ("active", "open"):
-        out.append(f"company {company.get('status')}")
+    status = company.get("status") or "active"
+    if status == "administration":
+        out.append("in administration now")
+    elif status not in ("active", "open"):
+        out.append(f"company {status.replace('-', ' ')}")
     if acc.get("last_type") in ("micro-entity", "dormant"):
         out.append(f"files {acc['last_type']} accounts")
     return out
 
 
 FOOTBALL_WORDS = re.compile(r"\b(football|f\.?\s?c\.?|a\.?f\.?c\.?|soccer|association football)\b", re.I)
+
+
+SIDE_WORDS = re.compile(r"\b(women|womens|ladies|girls|academy|foundation|youth|juniors?|charitable|"
+                        r"community trust|in the community)\b", re.I)
+
+
+def lender_name(name: str) -> str:
+    """'Barclays Bank PLC as Security Agent (for the Secured Parties)' -> 'Barclays Bank PLC'."""
+    name = re.sub(r"\s*\(.*?\)", "", name or "")
+    name = re.split(r"\s+as\s+|\s+acting\s+|,\s+in\s+its\s+capacity", name, flags=re.I)[0]
+    return name.strip(" ,;") or name
 
 
 def trusted(entry: dict) -> bool:
@@ -177,6 +211,8 @@ def trusted(entry: dict) -> bool:
     name = (entry.get("company") or {}).get("name") or ""
     if "dormant" in why or ((entry.get("company") or {}).get("accounts") or {}).get("last_type") == "dormant":
         return False
+    if SIDE_WORDS.search(name):
+        return False          # a women's side, academy or charity is part of the club, not the club
     strong = any(k in why for k in ("a charge names the ground", "matches the club's owner", "subsidiary of another"))
     return strong or ("from the ground" in why and bool(FOOTBALL_WORDS.search(name)))
 

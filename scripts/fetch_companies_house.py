@@ -203,6 +203,15 @@ def gather(reg: Register, number: str) -> dict:
 FOOTBALL_WORDS = re.compile(r"\b(football|f\.?\s?c\.?|a\.?f\.?c\.?|soccer|association football)\b", re.I)
 
 
+SIDE_WORDS = re.compile(r"\b(women|womens|ladies|girls|academy|foundation|youth|juniors?|charitable|"
+                        r"community trust|in the community)\b", re.I)
+
+
+def side_company(name: str, club_name: str) -> bool:
+    """A women's side, academy, youth section or charity: part of the club, not the club."""
+    return bool(SIDE_WORDS.search(name or "")) and not SIDE_WORDS.search(club_name or "")
+
+
 def footballish(name: str) -> bool:
     """Whether a company's name says it is a football club."""
     return bool(FOOTBALL_WORDS.search(name or ""))
@@ -221,6 +230,8 @@ def decide(club: dict, scored: list[dict], evid: dict[str, dict], offices: dict[
         extra, why, parent = evidence(ev, club, offices.get(num), others - {num.upper().lstrip("0")})
         if "files dormant accounts" in why:
             continue          # a dormant company is not the club that plays
+        if side_company(c["entity_name"], club.get("name", "")):
+            continue          # West Ham's first match was the women's club, a subsidiary of the men's
         strong = any(w.startswith(("a charge", "a director", "subsidiary")) for w in why)
         # Being near the ground is evidence only for a company whose name
         # says football: the first run matched a yacht club, a wrestling

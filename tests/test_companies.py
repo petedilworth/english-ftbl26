@@ -112,3 +112,27 @@ def test_the_page_builds(tmp_path, monkeypatch):
     assert "Mr Far" in page and "Lender One" in page and "Lost" in page
     assert "find-and-update.company-information.service.gov.uk/company/00000001" in page
     assert "Behind the club" in (out / "insights" / "index.html").read_text(encoding="utf-8")
+
+    # The team page carries the register's rows in its club facts.
+    team = (out / "team" / "giant-fc" / "index.html").read_text(encoding="utf-8")
+    assert "<th>On the register</th>" in team and "Mr Far" in team
+    assert "<th>Company</th>" in team and "company/00000001" in team
+    assert "<th>Secured loans</th>" in team and "Lender One" in team
+
+
+def test_a_side_company_is_never_the_club_and_lenders_read_cleanly():
+    assert not co.trusted({"match": "auto", "why": "subsidiary of another candidate",
+                           "company": {"name": "WEST HAM UNITED WOMEN FOOTBALL CLUB LIMITED"}})
+    assert co.lender_name("Barclays Bank PLC as Security Agent") == "Barclays Bank PLC"
+    assert co.lender_name("Hsbc Corporate Trustee Company (UK) Limited (as Security Trustee)") == \
+        "Hsbc Corporate Trustee Company Limited"
+    two = co.charges({"charges": [{"status": "outstanding", "lenders": ["Barclays Bank PLC as Agent"]},
+                                  {"status": "outstanding", "lenders": ["BARCLAYS BANK PLC"]}]})
+    assert two["lenders"] == ["Barclays Bank PLC"]
+
+
+def test_the_owner_on_file_is_checked_against_the_register():
+    kroenke = {"name": "Mr Enos Stanley Kroenke", "via": []}
+    assert co.agrees("Kroenke Sports & Entertainment (Stan Kroenke)", kroenke)
+    assert not co.agrees("Glazer family", {"name": "Red Football Limited", "via": []})
+    assert co.agrees("NSWE", {"name": "Nswe Uk Limited", "via": ["ASTON VILLA LIMITED"]})
