@@ -710,6 +710,7 @@ class SiteBuilder:
     def build_home(self) -> None:
         current = self.seasons[-1]
         divisions = self.season_divisions(current)
+        self._attach_luck(current, divisions)
         # Same reachable-things rule as the scale bar: club_master carries a
         # club with no trajectory row and so no team page.
         team_count = self.conn.execute(
@@ -718,7 +719,7 @@ class SiteBuilder:
         self.render(
             "home.html", self.out / "index.html", 0,
             title="Home",
-            current_label=season_label(current),
+            current_label=season_label(current), current_season=current,
             divisions=divisions,
             season_note=self._season_progress_note(divisions),
             scale=self._home_scale(),
@@ -730,6 +731,30 @@ class SiteBuilder:
         )
 
     # ── Home page ──────────────────────────────────────────────────────────
+
+    def _attach_luck(self, season: int, divisions: list[dict]) -> None:
+        """
+        Points expected from the odds, and the luck, beside each club in the
+        current tables - so the season's luck can be followed week by week
+        from the home page. A division with no prices this season gets none,
+        and the page never fails for want of them. See src/luck.py.
+        """
+        try:
+            by_club = luck_mod.current(self.conn, season)
+        except Exception as exc:  # the home page must never break the build
+            logger.warning("home page luck skipped: %s", exc)
+            return
+        for d in divisions:
+            rows = [r for r in d["rows"] if by_club.get(r.get("club_id"), {}).get("luck_o") is not None]
+            if len(rows) < max(2, len(d["rows"]) // 2):
+                continue
+            d["has_luck"] = True
+            for r in d["rows"]:
+                info = by_club.get(r.get("club_id"))
+                r["xpts"] = info["xo"] if info else None
+                r["luck"] = info["luck_o"] if info else None
+            ranked = sorted(rows, key=lambda r: -r["luck"])
+            d["luckiest"], d["unluckiest"] = ranked[0], ranked[-1]
 
     def _has_grounds(self) -> bool:
         cols = {r[1] for r in self.conn.execute("PRAGMA table_info(club_master)")}
@@ -1786,46 +1811,18 @@ class SiteBuilder:
             has_club_table=self._has_club_table(),
         )
 
-    def build_chart(self) -> None:
-        import json
-
-        import charts as charts_mod
-
-        floors_by_year, max_pos = charts_mod.tier_floors(self.conn)
-        tier_floors_json = {str(year): floors for year, floors in floors_by_year.items()}
-
-        clubs = []
-        for t in self.conn.execute(
-            "SELECT club_id, canonical_name FROM club_trajectory ORDER BY canonical_name"
-        ):
-            series = charts_mod.overall_positions(self.conn, t["club_id"])
-            if series:
-                clubs.append({
-                    "id": t["club_id"],
-                    "name": t["canonical_name"],
-                    "color": self.color(t["club_id"]),
-                    "series": series,  # [year, overall_pos, event|null] triples
-                })
-
-        payload = {
-            "years": self.seasons,
-            "maxPos": max_pos,
-            "tierFloors": tier_floors_json,
-            "clubs": clubs,
-            # The global chart starts empty - 160 lines at once says nothing.
-            "preselect": [],
-        }
+    def build_chart_redirect(self) -> None:
+        """
+        The trajectory chart page is gone - Compare does the job better -
+        but old links and bookmarks point at /chart/. A stub sends them on.
+        """
         out_dir = self.out / "chart"
         out_dir.mkdir(parents=True, exist_ok=True)
-        (out_dir / "chart-data.js").write_text(
-            "window.CHART_DATA = " + json.dumps(payload) + ";", encoding="utf-8"
-        )
-        self.render(
-            "chart.html", out_dir / "index.html", 1,
-            title="Trajectory chart",
-            first_label=season_label(self.seasons[0]),
-            last_label=season_label(self.seasons[-1]),
-        )
+        (out_dir / "index.html").write_text(
+            '<!DOCTYPE html><meta charset="utf-8"><title>Moved</title>'
+            '<meta http-equiv="refresh" content="0; url=../compare/index.html">'
+            '<p>The trajectory chart has been replaced by <a href="../compare/index.html">Compare</a>.</p>',
+            encoding="utf-8")
 
     # Every column of the all-clubs table, in order: the key used to look
     # the value up, the header, the group it belongs to, and whether it
@@ -5961,7 +5958,7 @@ class SiteBuilder:
         self.build_teams()
         self.build_club_table()  # after build_teams: reuses self.club_facts
         self.build_themes()   # after build_teams: consumes self.club_themes
-        self.build_chart()
+        self.build_chart_redirect()
         self.build_matrix()
         self.build_insights()
         self.build_map()
