@@ -10,13 +10,13 @@
 <header class="site-header">
   <a class="brand" href="{{ root }}/index.html">English Football History</a>
   <nav>
-    {# Home first, where the current season lives; then the stories, the
-       two visual tools, and themes. Browse keeps the rest. #}
+    {# Home first, where this week lives; then the story and the two visual
+       tools. Browse keeps the rest, the theme tables among them: they sit
+       inside the story's "Why" section now rather than beside it. #}
     <a href="{{ root }}/index.html">Home</a>
-    <a href="{{ root }}/insights/index.html">Insights</a>
+    <a href="{{ root }}/insights/index.html">The story</a>
     <a href="{{ root }}/matrix/index.html">Matrix</a>
     <a href="{{ root }}/map/index.html">Map</a>
-    <a href="{{ root }}/themes/index.html">Themes</a>
     <details class="nav-more">
       <summary>Browse</summary>
       <div class="nav-more-menu">
@@ -25,6 +25,8 @@
         <a href="{{ root }}/division/index.html">Divisions</a>
         <a href="{{ root }}/fixtures/index.html">Fixtures</a>
         <a href="{{ root }}/compare/index.html">Compare</a>
+        <a href="{{ root }}/themes/index.html">Themes</a>
+        <a href="{{ root }}/digest/index.html">Emails</a>
         <a href="{{ root }}/sources/index.html">Sources</a>
       </div>
     </details>
@@ -32,6 +34,14 @@
 </header>
 <main class="{{ main_class | default('') }}">
 {% block content %}{% endblock %}
+{% if story_nav %}
+{# Every story page says where it sits: the next page in reading order, and the pages that use what this one found. #}
+<nav class="story-nav" aria-label="The story">
+  {% if story_nav.next %}<p><span class="story-nav-label">Next in the story</span> <a href="{{ root }}/{{ story_nav.next.path }}">{{ story_nav.next.name }} →</a></p>{% endif %}
+  {% if story_nav.feeds %}<p><span class="story-nav-label">Feeds into</span> {% for f in story_nav.feeds %}<a href="{{ root }}/{{ f.path }}">{{ f.name }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>{% endif %}
+  <p><a href="{{ root }}/insights/index.html">The whole story</a></p>
+</nav>
+{% endif %}
 </main>
 <footer class="site-footer">
   <p>Tiers 1–7 of English football: 1958/59 to today at the top five,

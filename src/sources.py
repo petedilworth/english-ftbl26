@@ -188,7 +188,7 @@ PAGES = [
         ("Groundhop Map", "map/index.html", ["wikipedia-clubs", "ons-geography", "osm"] + RESULTS[:2],
          "Clubs without a surveyed ground are placed at their town's population centre."),
     ]),
-    ("Insights", [
+    ("The story", [
         ("Luck", "insights/luck/index.html", ["football-data", "models"],
          "Expected points from the odds and from shots on target."),
         ("Deprivation around the ground", "insights/deprivation/index.html",

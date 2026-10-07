@@ -34,6 +34,7 @@ import compare as compare_mod  # noqa: E402  (two clubs side by side)
 import yoyo as yoyo_mod  # noqa: E402  (yo-yo clubs)
 import income as income_mod  # noqa: E402  (income around the ground)
 import luck as luck_mod  # noqa: E402  (points against expected points)
+import storylines as storylines_mod  # noqa: E402  (this week, on the home page)
 import deprivation as deprivation_mod  # noqa: E402  (deprivation around the ground)
 import sources as sources_mod  # noqa: E402  (where every page's data comes from)
 import companies as companies_mod  # noqa: E402  (behind the club: the register)
@@ -545,6 +546,7 @@ class SiteBuilder:
         # theme pages derive their event dots and narrative from.
         self.club_themes: dict[str, list[str]] = {}
         self.club_facts: dict[str, dict] = {}
+        self.story_figures: dict[str, dict] = {}
         # Filled by _prime_themes before the team pages need their chips.
         self.theme_members: dict[str, set[str]] = {}
         self.published_themes: set[str] = set()
@@ -563,7 +565,7 @@ class SiteBuilder:
         # Division ranks for every club-season, built once on first use -
         # build_teams walks every club, so a query per club would be wasteful.
         self._finance_ranks_cache: dict | None = None
-        # build_insights, _insight_scatter and the home hooks all ask the
+        # build_insights, _insight_scatter and the home page all ask the
         # same (metric, season) questions, and each answer walks the season.
         self._metric_points_cache: dict = {}
         self._coverage_caveat: str | None = None
@@ -614,6 +616,15 @@ class SiteBuilder:
 
     def render(self, template: str, out_path: Path, depth: int, **ctx) -> None:
         ctx["root"] = "/".join([".."] * depth) if depth else "."
+        # A story page's stat card is its headline on the index - the first
+        # unless STORY_STAT says the finding is a later one - and every
+        # story page carries its place in the reading order.
+        rel = out_path.relative_to(self.out).as_posix() if out_path.is_relative_to(self.out) else ""
+        if rel.startswith("insights/") and rel.count("/") == 2 and ctx.get("stats"):
+            slug = rel.split("/")[1]
+            cards = ctx["stats"]
+            self.story_figures[slug] = cards[min(self.STORY_STAT.get(slug, 0), len(cards) - 1)]
+        ctx.setdefault("story_nav", self._story_nav(rel) if rel else None)
         html = self.env.get_template(template).render(**ctx)
         out_path.parent.mkdir(parents=True, exist_ok=True)
         out_path.write_text(html, encoding="utf-8")
@@ -732,22 +743,30 @@ class SiteBuilder:
     # ── Pages ──────────────────────────────────────────────────────────────
 
     def build_home(self) -> None:
+        """
+        The page for a Saturday: one sentence in the voice, what moved this
+        week, then the tables. Runs after build_teams so the storylines can
+        be gated on the story pages this build will actually make.
+        """
         current = self.seasons[-1]
         divisions = self.season_divisions(current)
         self._attach_luck(current, divisions)
-        # Same reachable-things rule as the scale bar: club_master carries a
-        # club with no trajectory row and so no team page.
+        self._prime_storylines(current)
+        # Same reachable-things rule as before: club_master carries a club
+        # with no trajectory row and so no team page.
         team_count = self.conn.execute(
             "SELECT COUNT(*) FROM club_trajectory"
         ).fetchone()[0]
+        hero = self.story_hero
+        if hero:
+            hero = dict(hero, spark=storylines_mod.sparkline(hero["points"], hero["first"], hero["latest"]))
         self.render(
             "home.html", self.out / "index.html", 0,
             title="Home",
             current_label=season_label(current), current_season=current,
             divisions=divisions,
             season_note=self._season_progress_note(divisions),
-            scale=self._home_scale(),
-            hooks=self._home_hooks(),
+            hero=hero, week=self.story_lines,
             search_clubs=self._home_search_clubs(),
             has_map=self._has_grounds(),
             season_count=len(self.seasons),
@@ -780,58 +799,28 @@ class SiteBuilder:
             ranked = sorted(rows, key=lambda r: -r["luck"])
             d["luckiest"], d["unluckiest"] = ranked[0], ranked[-1]
 
+    def _prime_storylines(self, season: int) -> None:
+        """
+        This week's lines and the hero, computed once for the home page and
+        the story index. Every line links to a page, so only pages this
+        build makes are allowed - the same gate the index tiles pass.
+        """
+        self.story_cands, self.story_lines, self.story_hero = [], [], None
+        try:
+            self.story_cands = storylines_mod.candidates(self.conn, season)
+            self.story_hero = storylines_mod.hero(self.conn, season)
+        except Exception as exc:  # the home page must never break the build
+            logger.warning("home page storylines skipped: %s", exc)
+            return
+        built = {s["slug"] for s in self._stories()} | set(self.published_themes)
+        self.story_lines = storylines_mod.pick(
+            self.story_cands, built=built, exclude=self.story_hero["club_id"] if self.story_hero else None)
+
     def _has_grounds(self) -> bool:
         cols = {r[1] for r in self.conn.execute("PRAGMA table_info(club_master)")}
         return "latitude" in cols and bool(self.conn.execute(
             "SELECT 1 FROM club_master WHERE latitude IS NOT NULL LIMIT 1"
         ).fetchone())
-
-    def _home_scale(self) -> list[dict]:
-        """
-        What the site actually holds, for the bar under the title.
-
-        Every figure is counted rather than written down - a hardcoded "162
-        clubs" drifts silently the first time the Monday pipeline adds one -
-        and a figure that comes back zero drops its card instead of
-        advertising an empty shelf. A fresh clone with no story files should
-        say nothing about story files.
-        """
-        content_dir = PROJECT_ROOT / "content"
-        stories = sum(
-            1 for r in self.conn.execute("SELECT club_id FROM club_trajectory")
-            if (content_dir / f"{r[0]}.md").exists()
-        )
-        accounts = 0
-        if self._has_finances():
-            accounts = self.conn.execute(
-                "SELECT COUNT(*) FROM club_finances"
-            ).fetchone()[0]
-        grounds = 0
-        if self._has_grounds():
-            # Joined the same way build_map joins, so the bar counts the pins
-            # the map actually draws rather than every row with a coordinate.
-            grounds = self.conn.execute(
-                """
-                SELECT COUNT(*) FROM club_master cm
-                JOIN club_trajectory t ON t.club_id = cm.club_id
-                WHERE cm.latitude IS NOT NULL
-                """
-            ).fetchone()[0]
-
-        cards = [
-            # club_trajectory, not club_master: a club without a trajectory
-            # row gets no team page, and the teams index counts the same way.
-            # Every figure here should point at something reachable.
-            (self.conn.execute(
-                "SELECT COUNT(*) FROM club_trajectory").fetchone()[0], "clubs"),
-            (len(self.seasons), "seasons"),
-            (stories, "written histories"),
-            (accounts, "club-season accounts"),
-            (grounds, "grounds mapped"),
-        ]
-        return [
-            {"value": f"{n:,}", "label": label} for n, label in cards if n
-        ]
 
     def _home_search_clubs(self) -> list[dict]:
         """
@@ -874,283 +863,6 @@ class SiteBuilder:
         if played and played <= 3:
             return f"{opening}, {played} game{'s' if played != 1 else ''} in."
         return f"{opening}."
-
-    def _home_hooks(self, limit: int = 5) -> list[dict]:
-        """
-        The "show me something interesting" door: a few findings with real
-        numbers in them, each linking to the page that explains it.
-
-        Computed from the database at build time, never written down. The
-        pipeline refreshes the data every Monday, so a hardcoded figure
-        would go stale silently - and unsourced numbers are against the
-        grain of a site that prints an honest "14th of 15" rather than a
-        flattering "14th of 24".
-
-        Recipes run in a fixed order, strongest first, and each returns None
-        when its data isn't there, so the section shrinks rather than
-        breaks. Deliberately not randomised: two builds of the same database
-        should be byte-identical, or nobody can diff a deploy.
-        """
-        recipes = (
-            self._hook_fell_out_of_the_league,
-            self._hook_wage_ratio,
-            self._hook_biggest_loss,
-            self._hook_outspender,
-            self._hook_points_relegated,
-            self._hook_longest_stay,
-        )
-        hooks: list[dict] = []
-        for recipe in recipes:
-            try:
-                hook = recipe()
-            except sqlite3.Error as exc:      # a shape we didn't expect
-                logger.warning("Home hook %s skipped: %s", recipe.__name__, exc)
-                hook = None
-            if hook:
-                hooks.append(hook)
-            if len(hooks) >= limit:
-                break
-        return hooks
-
-    def _hook_fell_out_of_the_league(self) -> dict | None:
-        """
-        The longest fall the pyramid allows: the top flight, then out of the
-        Football League altogether.
-
-        Tier 1 here is the Premier League - the standings begin in 1993/94 -
-        and tier 5 is the National League, outside the Football League. So
-        the finding is a club with a Premier League season and a later
-        tier-5 one. The ordering matters and is the whole claim: Luton Town
-        also span both tiers, but their fifth-tier seasons came before their
-        top-flight one, which is a rise, not a fall.
-
-        Tier 1 is no longer the same thing as the Premier League. Backfilling
-        to 1958/59 filled tier 1 with thirty-four seasons of the old First
-        Division, and a bare "tier = 1" quietly turned this into a claim
-        about the top flight in general - it started matching Leyton Orient,
-        who were last in the first division in 1962/63. The sentence says
-        Premier League, so the query has to say so too, which is what the
-        season floor below is for.
-
-        Two honesty notes, since this prints the word "only".
-
-        Tier-5 coverage starts in 1979/80, so every club that left the
-        Football League in the Premier League era is visible here - Halifax,
-        Chester, Barnet, Exeter, Shrewsbury, York, Carlisle, Kidderminster
-        and Cambridge United among them. None of them had played in the
-        Premier League, so the answer is the same as it was when this note
-        had to plead a 2005/06 window; it just no longer rests on one.
-
-        And the recipe retires its own claim. If a second club ever qualifies
-        the sentence becomes a count and the link moves to the page listing
-        them all, so no deploy can leave a stale "only club" on the front
-        page.
-        """
-        rows = self.conn.execute(
-            """
-            SELECT t.canonical_name AS name, s.club_id AS club_id,
-                   t.current_tier   AS now_tier,
-                   MIN(CASE WHEN s.tier = 1 AND s.season_end_year >= ?
-                            THEN s.season_end_year END) AS first_top,
-                   MIN(CASE WHEN s.tier = 5 THEN s.season_end_year END) AS first_fifth
-            FROM standings s
-            JOIN club_trajectory t ON t.club_id = s.club_id
-            GROUP BY s.club_id
-            HAVING first_top IS NOT NULL AND first_fifth IS NOT NULL
-               AND first_fifth > first_top
-            ORDER BY first_fifth, s.club_id
-            """,
-            (PREMIER_LEAGUE_FROM,),
-        ).fetchall()
-        if not rows:
-            return None
-        if len(rows) > 1:
-            return {
-                "text": (f"{len(rows)} clubs here have played in the Premier "
-                         f"League and later dropped out of the Football League"),
-                "label": "Every top-flight club that fell, and how far",
-                "path": "insights/fallen-giants/index.html",
-            }
-
-        row = rows[0]
-        # club_trajectory, not club_master: only a club with a trajectory row
-        # gets a team page, so joining that way is what makes the link resolve.
-        if not row["club_id"]:
-            return None
-        now = TIER_SLUGS.get(row["now_tier"])
-        gap = row["first_fifth"] - row["first_top"]
-        label = (f"{season_label(row['first_top'])} to "
-                 f"{season_label(row['first_fifth'])}")
-        if now:
-            label += f", and back in {now[1]} now"
-        return {
-            "text": (f"{row['name']} went from the Premier League to non-league "
-                     f"football in {gap} seasons — the only club here to make "
-                     f"that fall"),
-            "label": label,
-            "path": f"team/{row['club_id']}/index.html",
-        }
-
-    def _hook_wage_ratio(self) -> dict | None:
-        """Wages above turnover - the overreach that precedes the trouble."""
-        path = self._metric_landing_path("wage-ratio") if self._has_finances() else None
-        if not path:
-            return None
-        row = self.conn.execute(
-            """
-            SELECT t.canonical_name AS name, f.season_end_year AS year,
-                   f.turnover AS turnover, f.staff_costs AS staff_costs
-            FROM club_finances f
-            JOIN club_trajectory t ON t.club_id = f.club_id
-            WHERE f.turnover > 0 AND f.staff_costs > 0
-            ORDER BY CAST(f.staff_costs AS REAL) / f.turnover DESC, f.club_id
-            LIMIT 1
-            """
-        ).fetchone()
-        if not row:
-            return None
-        ratio = 100.0 * row["staff_costs"] / row["turnover"]
-        if ratio < 100:
-            # Below 100% this is a chart, not a headline.
-            return None
-        return {
-            "text": (f"{row['name']} paid {ratio:.0f}% of everything they earned "
-                     f"straight back out in wages"),
-            "label": (f"{_fmt_money(row['staff_costs'])} of "
-                      f"{_fmt_money(row['turnover'])}, {season_label(row['year'])}"),
-            "path": path,
-        }
-
-    def _hook_biggest_loss(self) -> dict | None:
-        path = self._metric_landing_path("profit") if self._has_finances() else None
-        if not path:
-            return None
-        row = self.conn.execute(
-            """
-            SELECT t.canonical_name AS name, f.season_end_year AS year,
-                   f.profit_before_tax AS pbt
-            FROM club_finances f
-            JOIN club_trajectory t ON t.club_id = f.club_id
-            WHERE f.profit_before_tax IS NOT NULL AND f.profit_before_tax < 0
-            ORDER BY f.profit_before_tax ASC, f.club_id
-            LIMIT 1
-            """
-        ).fetchone()
-        if not row:
-            return None
-        return {
-            "text": (f"{row['name']} lost {_fmt_money(abs(row['pbt']))} before tax "
-                     f"in a single year"),
-            "label": f"{season_label(row['year'])} accounts",
-            "path": path,
-        }
-
-    def _hook_outspender(self) -> dict | None:
-        """
-        A club paying more in wages than clubs a division above it. Counted
-        only against the clubs in that division whose accounts we hold, and
-        the sentence says so - the same honest denominator the club-page
-        finance ranks use.
-        """
-        path = self._metric_landing_path("wages") if self._has_finances() else None
-        if not path:
-            return None
-        row = self.conn.execute(
-            """
-            SELECT t.canonical_name AS name, f.season_end_year AS year,
-                   f.staff_costs AS wages, s.division_name AS division,
-                   (SELECT COUNT(*) FROM club_finances f2
-                      JOIN standings s2 ON s2.club_id = f2.club_id
-                       AND s2.season_end_year = f2.season_end_year
-                     WHERE f2.season_end_year = f.season_end_year
-                       AND s2.tier = s.tier - 1
-                       AND f2.staff_costs IS NOT NULL
-                       AND f2.staff_costs < f.staff_costs) AS beaten,
-                   (SELECT COUNT(*) FROM club_finances f3
-                      JOIN standings s3 ON s3.club_id = f3.club_id
-                       AND s3.season_end_year = f3.season_end_year
-                     WHERE f3.season_end_year = f.season_end_year
-                       AND s3.tier = s.tier - 1
-                       AND f3.staff_costs IS NOT NULL) AS above_total
-            FROM club_finances f
-            JOIN club_trajectory t ON t.club_id = f.club_id
-            JOIN standings s ON s.club_id = f.club_id
-                            AND s.season_end_year = f.season_end_year
-            WHERE f.staff_costs IS NOT NULL AND s.tier > 1
-            ORDER BY beaten DESC, f.staff_costs DESC, f.club_id
-            LIMIT 1
-            """
-        ).fetchone()
-        if not row or not row["beaten"]:
-            return None
-        return {
-            "text": (f"{row['name']} outspent {row['beaten']} of the "
-                     f"{row['above_total']} clubs a division above them on wages"),
-            "label": (f"{_fmt_money(row['wages'])} in {row['division']}, "
-                      f"{season_label(row['year'])}"),
-            "path": path,
-        }
-
-    def _hook_points_relegated(self) -> dict | None:
-        """
-        The biggest points total that still went down.
-
-        Only honest once points deductions are applied: standings.points is
-        wins*3 + draws, so before deductions were loaded this returned
-        sanctioned clubs - Wigan on 59 having finished 13th - dressed up as
-        unlucky relegations. With deductions in, points is the final total
-        and the answer is a club that really did need more.
-        """
-        source = PROJECT_ROOT / "content" / "insights" / "safe-thresholds.md"
-        if not source.exists():
-            return None
-        row = self.conn.execute(
-            # Two points for a win before 1981/82 makes older totals
-            # incomparable with later ones - see _standings_section.
-            """
-            SELECT club_name AS name, season_end_year AS year,
-                   division_name AS division, points AS points,
-                   position AS position
-            FROM standings
-            WHERE status = 'Relegated' AND played >= 30
-              AND COALESCE(points_deducted, 0) = 0
-              AND COALESCE(data_complete, 1) = 1
-              AND season_end_year >= ?
-            ORDER BY points DESC, club_name
-            LIMIT 1
-            """,
-            (aggregate.THREE_POINTS_FROM,),
-        ).fetchone()
-        if not row:
-            return None
-        return {
-            "text": (f"{row['name']} went down with {row['points']} points — "
-                     f"the highest total ever relegated here"),
-            "label": (f"{row['division']}, {season_label(row['year'])}, "
-                      f"finished {_ordinal(row['position'])}"),
-            "path": "insights/safe-thresholds/index.html",
-        }
-
-    def _hook_longest_stay(self) -> dict | None:
-        if "current_tier_streak" not in self.trajectory_cols:
-            return None
-        row = self.conn.execute(
-            """
-            SELECT canonical_name AS name, current_tier_streak AS streak
-            FROM club_trajectory
-            WHERE current_tier = 1 AND current_tier_streak IS NOT NULL
-            ORDER BY current_tier_streak DESC, canonical_name
-            LIMIT 1
-            """
-        ).fetchone()
-        if not row or not row["streak"] or row["streak"] < 5:
-            return None
-        return {
-            "text": (f"{row['name']} have never once left the top flight in "
-                     f"{row['streak']} seasons"),
-            "label": "Who stayed up, who fell, and how far",
-            "path": "insights/fallen-giants/index.html",
-        }
 
     def build_seasons(self) -> None:
         entries = []
@@ -2759,197 +2471,168 @@ class SiteBuilder:
         # that opponent's record on the club page (#vs=).
         return {"text": text, "club_id": club_id, "num": num, "href": href}
 
-    def build_insights(self) -> None:
-        """
-        Two kinds of thing live under /insights/: pages that make an
-        argument in prose and tables, and charts you drive yourself. They
-        used to render as one flat grid of fifteen tiles, which buried ten
-        distinct stories among five tiles that were the same scatter chart
-        with a different metric selected - a page that already carries
-        chips to switch metric in place.
-        """
-        def story(slug: str, name: str, sub: str) -> dict:
-            return {"slug": slug, "name": name, "sub": sub,
-                    "path": f"insights/{slug}/index.html"}
+    # Which stat card is a page's finding, where it is not the first:
+    # "98% of champions beat their price" says more than a match count.
+    STORY_STAT = {"fallen-giants": 1, "luck": 1, "income": 3, "deprivation": 2}
 
-        stories = [
-            story("yo-yo", "Yo-yo clubs",
-                  "Bounce runs, the elastic between divisions, and who is bouncing right now"),
-            story("fallen-giants", "Fallen giants & risers",
-                  "Champions who fell to the third tier, the odds of coming back, and the sleeping giants"),
-            story("records", "Records & extremes", "The best and worst seasons"),
-            story("timeline", "Timeline", "Notable events in the pyramid"),
-        ]
-        # Gated on its prose like the other argued pages: the tile must not
-        # offer a page that wasn't built.
-        if (PROJECT_ROOT / "content" / "insights" / "the-pyramid.md").exists():
-            stories.insert(0, story(
-                "the-pyramid", "How English football is organised",
-                "Eleven levels, and where the money runs out",
-            ))
-        if (PROJECT_ROOT / "content" / "insights" / "points-eras.md").exists():
-            stories.append(story(
-                "points-eras", "What a point is worth",
-                "When winning away was worth more",
-            ))
-        if "natural_level_gap" in self.trajectory_cols:
-            stories.insert(1, story(
-                "natural-level", "Above and below their level",
-                "Clubs out of step with their own history",
-            ))
-        if (PROJECT_ROOT / "content" / "insights" / "safe-thresholds.md").exists():
-            stories.append(story(
-                "safe-thresholds", "Safe thresholds",
-                "The points needed to survive relegation",
-            ))
-        boom_bust_events = self._boom_bust_events()
-        if boom_bust_events:
-            stories.append(story(
-                "boom-and-bust", "Boom and bust",
-                "Why the same clubs keep falling into financial trouble",
-            ))
-        rivalries = self._rivalry_pairs()
-        if rivalries:
-            stories.append(story(
-                "rivalries", "Rivalries & derbies",
-                "The needle behind the fixture list",
-            ))
-        if (PROJECT_ROOT / "content" / "insights" / "hatred.md").exists():
-            stories.append(story(
-                "hatred", "The most disliked clubs",
-                "Envied, resented, mocked or despised — and why Tottenham are only one of them",
-            ))
-        if (PROJECT_ROOT / "content" / "insights" / "income.md").exists():
-            stories.append(story(
-                "income", "Income around the ground",
-                "The money map, and why wealth near a ground buys no tiers at all",
-            ))
-        if (PROJECT_ROOT / "content" / "insights" / "luck.md").exists():
-            stories.append(story(
-                "luck", "Luck",
-                "Points against expected points, from the odds and from the shots – and the seasons luck decided",
-            ))
-        if (PROJECT_ROOT / "content" / "insights" / "behind-the-club.md").exists():
-            stories.append(story(
-                "behind-the-club", "Behind the club",
-                "Who controls each club, what is borrowed against it, and who runs it – from Companies House",
-            ))
-        if (PROJECT_ROOT / "content" / "insights" / "deprivation.md").exists():
-            stories.append(story(
-                "deprivation", "Deprivation around the ground",
-                "Seven kinds of hard times, weighted however you like – and why they did not make the big clubs",
-            ))
-        if (PROJECT_ROOT / "content" / "insights" / "grounds.md").exists():
-            stories.append(story(
-                "grounds", "Who owns the ground",
-                "Club, council, landlord or the owner's own company – every club in tiers 1–7, with sources",
-            ))
-        if (PROJECT_ROOT / "content" / "insights" / "value.md").exists():
-            stories.append(story(
-                "value", "Which club to buy",
-                "Fourteen levers on which clubs should be worth more in a few years – you set the weights",
-            ))
-        movement_matches = self._movement_matches()
+    # What each story page's findings are used by, for the "Feeds into" line.
+    STORY_FEEDS = {
+        "the-pyramid": ["natural-level", "safe-thresholds"], "points-eras": ["safe-thresholds", "records"],
+        "the-drop": ["fallen-giants"], "the-rise": ["yo-yo"], "yo-yo": ["fallen-giants"],
+        "fallen-giants": ["value"], "natural-level": ["value"], "luck": ["safe-thresholds"],
+        "catchment": ["fallen-giants", "income", "value"], "income": ["deprivation", "value"],
+        "deprivation": ["value"], "capacity": ["value"], "behind-the-club": ["grounds", "value"],
+        "grounds": ["value"], "finances": ["boom-and-bust", "value"], "boom-and-bust": ["value"],
+        "rivalries": ["hatred"], "hatred": ["value"],
+    }
+
+    def _stories(self) -> list[dict]:
+        """
+        Every story page this build makes, in reading order, each with its
+        section: "moved" (who went up, down, and back), "why" (what explains
+        where a club sits) or "reference". Gated as the index tiles always
+        were - a tile must never offer a page that wasn't built - and
+        memoized, because the home page, the index and every story page's
+        own navigation read it.
+        """
+        cached = getattr(self, "_stories_cache", None)
+        if cached is not None:
+            return cached
+
+        def story(slug, name, sub, section, path=None, fig=None, unit=""):
+            return {"slug": slug, "name": name, "sub": sub, "section": section,
+                    "path": path or f"insights/{slug}/index.html", "fig": fig, "unit": unit}
+
+        def have(name):
+            return (PROJECT_ROOT / "content" / "insights" / f"{name}.md").exists()
+
         import movement as movement_mod
-        if any(movement_matches.get(k) for k in (
-            movement_mod.RELEGATION_BACK_TO_BACK, movement_mod.RELEGATION_THREE_PLUS,
-            movement_mod.RELEGATION_HELD, movement_mod.RELEGATION_SANDWICH,
-        )):
-            stories.append(story(
-                "the-drop", "The drop",
-                "Clubs that fell fast — and whether they came back",
-            ))
-        if any(movement_matches.get(k) for k in (
-            movement_mod.PROMOTION_BACK_TO_BACK, movement_mod.PROMOTION_THREE_PLUS,
-            movement_mod.PROMOTION_PAUSED,
-        )):
-            stories.append(story(
-                "the-rise", "The rise",
-                "Clubs that climbed fast — and whether they held on",
-            ))
+        mm = self._movement_matches()
+        falls = sum(len(mm.get(k, [])) for k in (movement_mod.RELEGATION_BACK_TO_BACK, movement_mod.RELEGATION_THREE_PLUS))
+        climbs = sum(len(mm.get(k, [])) for k in (movement_mod.PROMOTION_BACK_TO_BACK, movement_mod.PROMOTION_THREE_PLUS))
+        boom = self._boom_bust_events()
+        rivalries = self._rivalry_pairs()
+        self._stories_data = {"movement": mm, "boom": boom, "rivalries": rivalries}
 
-        # Chart tiles link through _metric_landing_path rather than to
-        # base/index.html, which only exists for the current season.
-        charts = []
+        moved = [story("fallen-giants", "Fallen giants & risers",
+                       "Champions who fell to the third tier, the odds of coming back, and the sleeping giants", "moved"),
+                 story("yo-yo", "Yo-yo clubs",
+                       "Bounce runs, the elastic between divisions, and who is bouncing right now", "moved")]
+        if any(mm.get(k) for k in (movement_mod.RELEGATION_BACK_TO_BACK, movement_mod.RELEGATION_THREE_PLUS,
+                                   movement_mod.RELEGATION_HELD, movement_mod.RELEGATION_SANDWICH)):
+            moved.append(story("the-drop", "The drop", "Clubs that fell fast — and whether they came back", "moved",
+                               fig=str(falls), unit="clubs relegated two or more seasons running"))
+        if any(mm.get(k) for k in (movement_mod.PROMOTION_BACK_TO_BACK, movement_mod.PROMOTION_THREE_PLUS,
+                                   movement_mod.PROMOTION_PAUSED)):
+            moved.append(story("the-rise", "The rise", "Clubs that climbed fast — and whether they held on", "moved",
+                               fig=str(climbs), unit="clubs promoted two or more seasons running"))
+        if "natural_level_gap" in self.trajectory_cols:
+            moved.append(story("natural-level", "Above and below their level",
+                               "Clubs out of step with their own history", "moved"))
+        if have("luck"):
+            moved.append(story("luck", "Luck",
+                               "Points against expected points, from the odds and from the shots – and the seasons luck decided",
+                               "moved"))
+        if have("safe-thresholds"):
+            moved.append(story("safe-thresholds", "Safe thresholds", "The points needed to survive relegation", "moved"))
+        moved.append(story("records", "Records & extremes", "The best and worst seasons, and the streaks", "moved"))
+
+        why = []
+        if have("the-pyramid"):
+            why.append(story("the-pyramid", "How English football is organised",
+                             "Eleven levels, and where the money runs out", "why"))
+        if have("points-eras"):
+            why.append(story("points-eras", "What a point is worth", "When winning away was worth more", "why",
+                             fig="1981/82", unit="three points for a win from here; earlier totals do not compare"))
+        catchment_path = next((p for p in (self._metric_landing_path(k) for k, m in METRICS.items()
+                                           if m["source"] == "catchment") if p), None)
+        if catchment_path:
+            why.append(story("catchment", "Catchment and competition",
+                             "How many people each club can draw on, and who else wants them \u2014 with the method that produced it",
+                             "why", path=catchment_path))
+        if have("income"):
+            why.append(story("income", "Income around the ground",
+                             "The money map, and why wealth near a ground buys no tiers at all", "why"))
+        if have("deprivation"):
+            why.append(story("deprivation", "Deprivation around the ground",
+                             "Seven kinds of hard times, weighted however you like – and why they did not make the big clubs", "why"))
         capacity_path = self._metric_landing_path("capacity")
         if capacity_path:
-            charts.append({
-                "slug": "capacity",
-                "name": METRICS["capacity"]["heading"],
-                "sub": METRICS["capacity"]["sub"],
-                "path": capacity_path,
-            })
-        # One tile for all five financial metrics: they are a single page
-        # with chips to switch between them, so five tiles was one idea
-        # taking a third of the index. Prefers revenue, falling back to
-        # whichever financial metric has data.
-        finance_path = next(
-            (path for path in (
-                self._metric_landing_path(key)
-                for key, metric in METRICS.items() if metric["source"] == "finances"
-            ) if path),
-            None,
-        )
+            why.append(story("capacity", METRICS["capacity"]["heading"], METRICS["capacity"]["sub"], "why",
+                             path=capacity_path))
+        if have("behind-the-club"):
+            why.append(story("behind-the-club", "Behind the club",
+                             "Who controls each club, what is borrowed against it, and who runs it – from Companies House", "why"))
+        if have("grounds"):
+            why.append(story("grounds", "Who owns the ground",
+                             "Club, council, landlord or the owner's own company – every club in tiers 1–7, with sources", "why"))
+        # One tile for all five financial metrics: they are a single page with chips to switch between them.
+        finance_path = next((p for p in (self._metric_landing_path(k) for k, m in METRICS.items()
+                                         if m["source"] == "finances") if p), None)
         if finance_path:
-            charts.append({
-                "slug": "finances",
-                "name": "Club finances",
-                "sub": "Revenue, wages, profit and debt against where clubs finish",
-                "path": finance_path,
-            })
+            why.append(story("finances", "Club finances", "Revenue, wages, profit and debt against where clubs finish",
+                             "why", path=finance_path))
+        if boom:
+            why.append(story("boom-and-bust", "Boom and bust", "Why the same clubs keep falling into financial trouble", "why"))
+        # The theme tables sit here now, each its own tile: the owners and the trouble, club by club.
+        for slug in sorted(self.published_themes):
+            count = len(self.theme_members.get(slug, ()))
+            why.append(story(slug, content.THEMES.get(slug, slug.replace("-", " ").capitalize()),
+                             "One table, every club it happened to", "why", path=f"themes/{slug}/index.html",
+                             fig=str(count), unit="clubs"))
+        if rivalries:
+            why.append(story("rivalries", "Rivalries & derbies", "The needle behind the fixture list", "why",
+                             fig=str(len(rivalries)), unit="rivalries on record"))
+        if have("hatred"):
+            why.append(story("hatred", "The most disliked clubs",
+                             "Envied, resented, mocked or despised — and why Tottenham are only one of them", "why"))
+        if have("value"):
+            why.append(story("value", "Which club to buy",
+                             "Fourteen levers on which clubs should be worth more in a few years – you set the weights", "why"))
 
-        # One tile for the three catchment metrics, same reasoning as the
-        # financial group: they share a page and switch by chip. Absent
-        # entirely until msoa_demographics.csv exists, because
-        # _metric_landing_path returns None when nothing is plotted.
-        catchment_path = next(
-            (path for path in (
-                self._metric_landing_path(key)
-                for key, metric in METRICS.items() if metric["source"] == "catchment"
-            ) if path),
-            None,
-        )
-        if catchment_path:
-            charts.append({
-                "slug": "catchment",
-                "name": "Catchment and competition",
-                "sub": "How many people each club can draw on, and who else "
-                       "wants them \u2014 with the method that produced it",
-                "path": catchment_path,
-            })
+        reference = []
+        if self._has_club_table():
+            reference.append(story("all-clubs", "All clubs, all data", "Every column the data supports, sortable on any of them",
+                                   "reference", path="teams/table/index.html"))
+        reference.append(story("timeline", "Timeline", "Notable events in the pyramid", "reference"))
+        reference.append(story("coverage", "What this site knows", "Where the record reaches, where it stops, and why",
+                               "reference"))
+        reference.append(story("sources", "Sources", "Where every number came from, page by page", "reference",
+                               path="sources/index.html"))
+        reference.append(story("digest", "The emails", "Every edition, as sent", "reference", path="digest/index.html"))
+        self._stories_cache = moved + why + reference
+        return self._stories_cache
 
-        # Not an insight and not a chart: the underlying data, for anyone
-        # who would rather sort it themselves than read an argument about
-        # it. Its own group so it is not mistaken for either.
-        data_tables = [{
-            "slug": "all-clubs",
-            "name": "All clubs, all data",
-            "sub": "Every column the data supports, sortable on any of them",
-            "path": "teams/table/index.html",
-        }] if self._has_club_table() else []
-        data_tables.append({
-            "slug": "coverage",
-            "name": "What this site knows",
-            "sub": "Where the record reaches, where it stops, and why",
-            "path": "insights/coverage/index.html",
-        })
+    def _story_nav(self, rel: str) -> dict | None:
+        """
+        "Next in the story" and "Feeds into" for a page under insights/ or
+        themes/: the next page in reading order, and the pages that use
+        what this one found - only ones this build makes. Other pages get
+        nothing, and never trigger the story list before it can be built.
+        """
+        parts = rel.split("/")
+        if len(parts) != 3 or parts[0] not in ("insights", "themes") or parts[2] != "index.html":
+            return None
+        slug = parts[1]
+        stories = [s for s in self._stories() if s["section"] != "reference"]
+        by_slug = {s["slug"]: s for s in self._stories()}
+        here = next((i for i, s in enumerate(stories) if s["slug"] == slug), None)
+        if here is None:
+            return None
+        nxt = stories[here + 1] if here + 1 < len(stories) else None
+        feeds = self.STORY_FEEDS.get(slug, ["boom-and-bust"] if slug in self.published_themes else [])
+        return {"next": nxt, "feeds": [by_slug[f] for f in feeds if f in by_slug and f != slug]}
 
-        groups = [g for g in (
-            {"title": "Stories",
-             "sub": "Arguments drawn from almost seventy years of league tables.",
-             "entries": stories},
-            {"title": "Interactive charts",
-             "sub": "Pick a metric and a season, then read the pyramid.",
-             "entries": charts},
-            {"title": "The data itself",
-             "sub": "Sort it yourself.",
-             "entries": data_tables},
-        ) if g["entries"]]
-
-        self.render(
-            "insights_index.html", self.out / "insights" / "index.html", 1,
-            title="Insights", groups=groups, entries=stories + charts + data_tables,
-        )
+    def build_insights(self) -> None:
+        """
+        The story: every argued page and chart, in two sections - what
+        moved, and why - with each tile carrying its page's own headline
+        figure and, where there is one, this week's line. The pages render
+        first so their figures are known; the index is rendered last.
+        """
+        stories = self._stories()
+        data = self._stories_data
+        self.story_figures = {}
         self._insight_coverage()
         self._insight_yo_yo()
         self._insight_natural_level()
@@ -2968,10 +2651,35 @@ class SiteBuilder:
         self._insight_luck()
         self._insight_deprivation()
         self._insight_companies()
-        self._insight_boom_and_bust(boom_bust_events)
-        self._insight_the_drop(movement_matches)
-        self._insight_the_rise(movement_matches)
-        self._insight_rivalries(rivalries)
+        self._insight_boom_and_bust(data["boom"])
+        self._insight_the_drop(data["movement"])
+        self._insight_the_rise(data["movement"])
+        self._insight_rivalries(data["rivalries"])
+
+        live = storylines_mod.by_slug(getattr(self, "story_cands", []))
+        entries = []
+        for s in stories:
+            e = dict(s)
+            card = self.story_figures.get(s["slug"])
+            if card and not e["fig"]:
+                e["fig"], e["unit"] = card["value"], card["label"]
+            e["live"] = live[s["slug"]]["text"] if s["slug"] in live else None
+            entries.append(e)
+        sections = [g for g in (
+            {"key": "moved", "title": "What moved",
+             "sub": "Who went up, who went down, who came back, and how much of it was luck.",
+             "entries": [e for e in entries if e["section"] == "moved"]},
+            {"key": "why", "title": "Why",
+             "sub": "What explains where a club sits: the rules of the pyramid, the people and money around the ground, "
+                    "and who owns the club.",
+             "entries": [e for e in entries if e["section"] == "why"]},
+        ) if g["entries"]]
+        self.render(
+            "insights_index.html", self.out / "insights" / "index.html", 1,
+            title="The story", sections=sections,
+            reference=[e for e in entries if e["section"] == "reference"],
+            entries=entries,
+        )
 
     def _boom_bust_events(self) -> list[dict]:
         """
@@ -6453,7 +6161,6 @@ class SiteBuilder:
         (self.out / ".nojekyll").write_text("")
 
         self._prime_themes()  # before build_teams: the chips need membership
-        self.build_home()
         self.build_seasons()
         self.build_divisions()
         self.build_teams()
@@ -6462,7 +6169,8 @@ class SiteBuilder:
         self.build_chart_redirect()
         self.build_sources()
         self.build_matrix()
-        self.build_insights()
+        self.build_home()      # after build_teams: the storylines are gated on the story pages
+        self.build_insights()  # after build_home: the index reuses this week's lines
         self.build_map()
         self.build_compare()   # after build_teams: reuses self.club_facts
         self.build_fixtures()
