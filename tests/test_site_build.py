@@ -1669,25 +1669,30 @@ def test_safe_thresholds_renders_all_four_tables(tmp_path, monkeypatch):
     assert "Played" not in page
 
 
-# ── The front door: home page scale bar, hooks and club search ───────────
+# ── The front door: the hero, this week's lines and club search ───────────
 
 SAFE_THRESHOLDS_MD = "The magic number for survival is not one number at all.\n"
 
 
-def _front_door(tmp_path, monkeypatch, rows=None, insights=None):
+def _front_door(tmp_path, monkeypatch, rows=None, insights=None, streak=None):
     """
     Build the site and return (out, home html). `rows` seeds club_finances;
     `insights` writes content/insights/<name>.md, which some pages - and so
-    some hooks, which must never link to a page that wasn't built - are
-    gated on.
+    some lines, which must never link to a page that wasn't built - are
+    gated on; `streak` seeds one current streak for the records recipe.
     """
     tmp_path.mkdir(parents=True, exist_ok=True)
     db = _db_on_disk(tmp_path)
+    conn = sqlite3.connect(db)
     if rows:
-        conn = sqlite3.connect(db)
         finances.seed_club_finances(conn, _finances_csv(tmp_path, rows))
-        conn.commit()
-        conn.close()
+    if streak:
+        conn.execute("CREATE TABLE IF NOT EXISTS club_streak_records (club_id TEXT, streak_type TEXT,"
+                     " record_length INT, record_season_end_year INT, current_length INT,"
+                     " current_last_date TEXT)")
+        conn.execute("INSERT INTO club_streak_records VALUES (?,?,?,?,?,?)", streak)
+    conn.commit()
+    conn.close()
     if insights:
         target = tmp_path / "content" / "insights"
         target.mkdir(parents=True)
@@ -1699,143 +1704,64 @@ def _front_door(tmp_path, monkeypatch, rows=None, insights=None):
     return out, (out / "index.html").read_text()
 
 
-def _hooks(home):
+def _lines(home):
     return re.findall(
-        r'class="tile hook" href="([^"]+)">\s*<span class="hook-text">([^<]*)</span>',
-        home,
+        r'class="week-line" href="([^"]+)"><span class="tag">[^<]*</span><p>(.*?)<span class="to">',
+        home, re.S,
     )
 
 
-def test_home_scale_bar_counts_reachable_things(tmp_path, monkeypatch):
+def test_home_club_counts_agree_everywhere(tmp_path, monkeypatch):
     out, home = _front_door(tmp_path, monkeypatch)
-    # The club count must agree with the number of team pages that exist and
-    # with the teams index. The live database has one club in club_master
-    # with no trajectory row and so no page, which is how home came to
-    # advertise 162 clubs while the teams index said 161.
+    # Every club count the page states must be the number of team pages
+    # that exist - the search placeholder and the browse-all link alike.
     pages = len(list((out / "team").iterdir()))
-    assert f'stat-value">{pages}</div><div class="stat-label">clubs<' in home
-    assert f"{pages} clubs to have played" in (out / "teams" / "index.html").read_text()
-    # Every club count the page states must be the same number - the scale
-    # bar, the search placeholder, the browse-all link and the Teams tile.
     assert f"Search {pages} clubs" in home
-    assert f"browse all {pages} clubs" in home
-    assert f"{pages} clubs, each with a page" in home
+    assert f"Browse all {pages} clubs" in home
+    assert f"{pages} clubs to have played" in (out / "teams" / "index.html").read_text()
 
 
-def test_home_scale_bar_drops_a_count_that_is_zero(tmp_path, monkeypatch):
-    # No finances seeded, so there are no club-season accounts to boast of.
-    # An empty shelf should say nothing rather than advertise a 0.
-    _, home = _front_door(tmp_path, monkeypatch)
-    assert "club-season accounts" not in home
-    assert '<div class="stat-value">0</div>' not in home
+def test_home_hero_is_the_fallen_giant_in_the_voice(tmp_path, monkeypatch):
+    # Giant FC: one top-flight season, now in the third tier. The past, then
+    # the present, and the gap does the work - no adjectives.
+    out, home = _front_door(tmp_path, monkeypatch)
+    assert 'class="hero-line"' in home
+    assert "One season in the top flight, the last 2021/22." in home
+    assert 'href="./team/giant-fc/index.html">Giant FC.</a>' in home
+    assert "Every fallen giant" in home and (out / "insights" / "fallen-giants" / "index.html").exists()
 
 
-def test_home_hooks_carry_a_number_and_a_link_that_resolves(tmp_path, monkeypatch):
+def test_home_lines_carry_a_number_and_a_link_that_resolves(tmp_path, monkeypatch):
     out, home = _front_door(
         tmp_path, monkeypatch,
-        rows=[_full_row("giant-fc", 2025, profit_before_tax=-5_000_000)],
         insights={"safe-thresholds": SAFE_THRESHOLDS_MD},
+        streak=("steady-fc", "unbeaten", 12, 2024, 12, "2025-04-01"),
     )
-    hooks = _hooks(home)
-    assert hooks, "expected at least one story hook on the home page"
-    for href, text in hooks:
-        assert re.search(r"\d", text), f"hook has no number in it: {text!r}"
-        assert "None" not in text, f"unformatted None leaked into a hook: {text!r}"
-        assert (out / href.removeprefix("./")).exists(), f"hook links nowhere: {href}"
+    lines = _lines(home)
+    assert lines, "expected at least one line on the home page"
+    for href, text in lines:
+        assert re.search(r"\d", text), f"line has no number in it: {text!r}"
+        assert "None" not in text, f"unformatted None leaked into a line: {text!r}"
+        assert (out / href.removeprefix("./")).exists(), f"line links nowhere: {href}"
+    assert any("Steady FC are unbeaten in <b>12</b>" in text for _, text in lines)
 
 
-def _fell_out_of_the_league(tmp_path, monkeypatch, fallers=("giant-fc",)):
-    """
-    Build the site with each named club given a fifth-tier season after its
-    top-flight one - the shape _hook_fell_out_of_the_league looks for. The
-    fixture's giant-fc is already tier 1 in 2021/22, so only the landing
-    needs adding; steady-fc needs both ends of the fall.
-    """
-    tmp_path.mkdir(parents=True, exist_ok=True)
-    db = _db_on_disk(tmp_path)
-    conn = sqlite3.connect(db)
-    for i, club_id in enumerate(fallers):
-        name = club_id.replace("-fc", "").title() + " FC"
-        if club_id != "giant-fc":       # give it a top flight to fall from
-            conn.execute(
-                "INSERT INTO standings VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
-                (2021, 1, "Premier League", club_id, name, 20,
-                 38, 5, 5, 28, 20, 70, -50, 20, "Relegated", "test"),
-            )
-        conn.execute(
-            "INSERT INTO standings VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
-            (2026 + i, 5, "National League", club_id, name, 12,
-             46, 15, 10, 21, 50, 60, -10, 55, "Stayed", "test"),
-        )
-    trajectory.rebuild_trajectory(conn)
-    conn.commit()
-    conn.close()
-    out = _build_site_with_content(
-        tmp_path, monkeypatch, db, {"giant-fc": RICH_STORY}
-    )
-    return out, (out / "index.html").read_text()
+def test_home_lines_never_name_the_hero_club(tmp_path, monkeypatch):
+    # The hero already says everything about Giant FC; its line would repeat it.
+    _, home = _front_door(tmp_path, monkeypatch,
+                          streak=("giant-fc", "win", 5, 2024, 5, "2025-04-01"))
+    assert not any("Giant FC" in text for _, text in _lines(home))
 
 
-def test_home_hook_names_the_only_club_to_fall_out_of_the_league(
-        tmp_path, monkeypatch):
-    # The longest fall the pyramid allows, and the one hook that sends a
-    # reader into a club's written history rather than a table.
-    out, home = _fell_out_of_the_league(tmp_path, monkeypatch)
-    href, text = _hooks(home)[0]
-    assert "Giant FC" in text
-    assert "Premier League" in text and "only club here" in text
-    assert href.removeprefix("./") == "team/giant-fc/index.html"
-    assert (out / "team" / "giant-fc" / "index.html").exists()
-
-
-def test_home_hook_retires_its_only_club_claim_when_a_second_club_falls(
-        tmp_path, monkeypatch):
-    # The claim is true until it isn't. A second qualifying club must turn
-    # the sentence into a count and move the link to the page that lists
-    # them all - otherwise a Monday pipeline run could publish a falsehood
-    # on the front page and nothing would catch it.
-    _, home = _fell_out_of_the_league(
-        tmp_path, monkeypatch, fallers=("giant-fc", "steady-fc")
-    )
-    href, text = _hooks(home)[0]
-    assert "only" not in text
-    assert text.startswith("2 clubs here")
-    assert href.removeprefix("./") == "insights/fallen-giants/index.html"
-
-
-def test_home_hooks_survive_without_any_finance_data(tmp_path, monkeypatch):
-    # Three of the six recipes read club_finances. A database without that
-    # table should still get a hook out of club_trajectory alone - not an
-    # empty section, and not a traceback. The fixture's clubs are all tier 3,
-    # so give one the top-flight run the surviving fallback looks for.
-    tmp_path.mkdir(parents=True, exist_ok=True)
-    db = _db_on_disk(tmp_path)
-    conn = sqlite3.connect(db)
-    conn.execute(
-        "UPDATE club_trajectory SET current_tier = 1, current_tier_streak = 20"
-        " WHERE club_id = 'steady-fc'"
-    )
-    conn.commit()
-    conn.close()
-    out = _build_site_with_content(
-        tmp_path, monkeypatch, db, {"giant-fc": RICH_STORY}
-    )
-    home = (out / "index.html").read_text()
-    hooks = _hooks(home)
-    assert hooks, "expected a hook from the non-financial fallback"
-    for href, _ in hooks:
-        assert (out / href.removeprefix("./")).exists()
-
-
-def test_home_hooks_never_link_to_a_page_that_was_not_built(tmp_path, monkeypatch):
-    # Without the safe-thresholds content file that page isn't built, so the
-    # hook that would point at it must not be offered either.
+def test_home_lines_never_link_to_a_page_that_was_not_built(tmp_path, monkeypatch):
+    # Without the safe-thresholds content file that page isn't built, so a
+    # line that would point at it must not be offered either.
     _, home = _front_door(tmp_path, monkeypatch)
     assert "safe-thresholds" not in home
 
 
 def test_home_build_is_byte_identical_twice(tmp_path, monkeypatch):
-    # Guards against anyone making the hook rotation random later: a deploy
+    # Guards against anyone making the line choice random later: a deploy
     # you can't diff is a deploy you can't review.
     rows = [_full_row("giant-fc", 2025, profit_before_tax=-5_000_000)]
     first = _front_door(tmp_path / "a", monkeypatch, rows=rows)[1]
@@ -1877,11 +1803,17 @@ def test_home_names_an_early_season_rather_than_looking_broken(tmp_path, monkeyp
 def test_insights_index_groups_and_has_no_duplicate_targets(tmp_path, monkeypatch):
     out = _build_with_finances(tmp_path, monkeypatch, [_full_row("giant-fc", 2025)])
     index = (out / "insights" / "index.html").read_text()
-    assert "Interactive charts" in index and "Stories" in index
-    paths = re.findall(r'class="tile" href="([^"]+)"', index)
+    assert "What moved" in index and "Why" in index
+    assert index.index("What moved") < index.index(">Why<")
+    paths = re.findall(r'class="tile story-tile" href="([^"]+)"', index)
     assert len(paths) == len(set(paths)), "duplicate tiles on the insights index"
     # One tile for all five financial metrics, not five.
     assert sum(1 for p in paths if "finances/" in p) == 1
+    # Each tile carries its page's own headline figure where the page has one.
+    assert re.search(r'class="fig">\d+ <small>', index)
+    # Every story page says where it sits in the reading order.
+    giants = (out / "insights" / "fallen-giants" / "index.html").read_text()
+    assert "Next in the story" in giants and "yo-yo/index.html" in giants
     for path in paths:
         # Resolved rather than prefix-stripped: a tile may point outside
         # /insights/ - the all-clubs table lives under /teams/ - and the

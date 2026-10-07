@@ -1,17 +1,24 @@
 {% extends "base.html" %}
 {% block content %}
-<h1>Insights</h1>
-<p class="subtitle">Conclusions drawn from almost seventy years of league tables.</p>
-{% for group in groups %}
-<h2>{{ group.title }}</h2>
-<p class="group-sub">{{ group.sub }}</p>
-<div class="tile-grid">
-  {% for e in group.entries %}
-  <a class="tile" href="{{ root }}/{{ e.path }}">
-    <span class="tile-title">{{ e.name }}</span><br>
+<h1>The story</h1>
+<p class="subtitle">Why a club is where it is, and where it goes next. Read down: first what moved, then why.</p>
+{% for section in sections %}
+<section class="chapter" id="{{ section.key }}">
+<h2>{{ section.title }}</h2>
+<p class="group-sub">{{ section.sub }}</p>
+<div class="story-grid">
+  {% for e in section.entries %}
+  <a class="tile story-tile" href="{{ root }}/{{ e.path }}">
+    {% if e.fig %}<span class="fig">{{ e.fig }}{% if e.unit %} <small>{{ e.unit }}</small>{% endif %}</span>{% endif %}
+    <span class="tile-title">{{ e.name }}</span>
     <span class="tile-sub">{{ e.sub }}</span>
+    {% if e.live %}<span class="live">{{ e.live | safe }}</span>{% endif %}
   </a>
   {% endfor %}
 </div>
+</section>
 {% endfor %}
+{% if reference %}
+<p class="reference"><span class="story-nav-label">Reference</span> {% for e in reference %}<a href="{{ root }}/{{ e.path }}">{{ e.name }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>
+{% endif %}
 {% endblock %}

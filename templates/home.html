@@ -1,70 +1,52 @@
 {% extends "base.html" %}
 {% block content %}
+{% if hero %}
+{# One sentence in the voice: the club's past, then its present. The gap does the work. #}
+<section class="hero">
+  <div class="hero-text">
+    <div class="kicker">{{ current_label }}{% if hero.played %} · {{ hero.played }} game{{ "s" if hero.played != 1 }} in{% endif %}</div>
+    <p class="hero-line"><a href="{{ root }}/team/{{ hero.club_id }}/index.html">{{ hero.name }}.</a> {{ hero.past }} <span class="hero-now">{{ hero.present }}</span></p>
+    <p class="hero-sub">{{ hero.sub }} <a href="{{ root }}/{{ hero.path }}">{{ hero.to }} →</a></p>
+  </div>
+  <div class="hero-card">
+    <div class="kit"><span style="background: {{ hero.colour or '#888' }}"></span><span style="background: {{ hero.colour2 or '#ddd' }}"></span></div>
+    <svg viewBox="0 0 {{ hero.spark.w }} {{ hero.spark.h }}" role="img" aria-label="{{ hero.name }}'s tier each season from {{ hero.first - 1 }}/{{ "%02d" % (hero.first % 100) }} to {{ current_label }}">
+      {% for t, y in hero.spark.grid %}<line x1="20" y1="{{ y }}" x2="{{ hero.spark.w - 10 }}" y2="{{ y }}" stroke="#eef1f4"></line><text x="14" y="{{ y + 4 }}" font-size="10" fill="#6b7683" text-anchor="end">{{ t }}</text>{% endfor %}
+      <text x="20" y="{{ hero.spark.h - 4 }}" font-size="10" fill="#6b7683">{{ hero.first - 1 }}/{{ "%02d" % (hero.first % 100) }}</text>
+      <text x="{{ hero.spark.w - 10 }}" y="{{ hero.spark.h - 4 }}" font-size="10" fill="#6b7683" text-anchor="end">{{ current_label }}</text>
+      <polyline fill="none" stroke="#eb6834" stroke-width="2.5" stroke-linejoin="round" points="{{ hero.spark.line }}"></polyline>
+      {% if hero.spark.start %}<circle cx="{{ hero.spark.start[0] }}" cy="{{ hero.spark.start[1] }}" r="3.5" fill="#17202a"></circle>{% endif %}
+      {% if hero.spark.end %}<circle cx="{{ hero.spark.end[0] }}" cy="{{ hero.spark.end[1] }}" r="3.5" fill="#eb6834"></circle>{% endif %}
+    </svg>
+    {% if hero.form %}<div class="hero-form">Last {{ hero.form | length }}: <span class="form">{% for r in hero.form %}<i class="f-{{ r | lower }}">{{ r }}</i>{% endfor %}</span> · {{ hero.points_now }} pts from {{ hero.played }}</div>{% endif %}
+  </div>
+</section>
+{% else %}
 <h1>English Football History</h1>
 <p class="subtitle">Standings, stories and trajectories across Tiers 1–7 — the top five from 1958/59, the sixth and seventh from 2012/13.</p>
+{% endif %}
 
-{% if scale %}
-{# Counted at build time, not written down, so the bar can't drift from
-   the data it describes. A count of zero drops its card entirely. #}
-<div class="stat-cards">
-  {% for card in scale %}
-  <div class="stat-card"><div class="stat-value">{{ card.value }}</div><div class="stat-label">{{ card.label }}</div></div>
+{% if week %}
+<h2 class="band">This week</h2>
+<p class="band-sub">Lines the data wrote after the last round of matches. Each links to the page that explains it.</p>
+<div class="week">
+  {% for w in week %}
+  <a class="week-line" href="{{ root }}/{{ w.path }}"><span class="tag">{{ w.tag }}</span><p>{{ w.text | safe }}<span class="to">{{ w.to }}</span></p></a>
   {% endfor %}
 </div>
 {% endif %}
 
-{% if search_clubs %}
-<h2>Find your club</h2>
-<input class="search-input" id="home-search" type="search"
-       placeholder="Search {{ search_clubs|length }} clubs…" autocomplete="off">
-{# Hidden until a query is typed: the list is here so results are instant,
-   but 162 rows is not what the page should open with. #}
-<ul class="team-list home-results" id="home-results" hidden>
-  {% for club in search_clubs %}
-  <li data-name="{{ club.search_key }}"><a href="{{ root }}/team/{{ club.club_id }}/index.html">{{ club.name }}</a></li>
-  {% endfor %}
-</ul>
-<p class="home-note" id="home-no-match" hidden>No club matches that.</p>
-<p class="home-note">Or <a href="{{ root }}/teams/index.html">browse all {{ search_clubs|length }} clubs</a> by division and A–Z.</p>
-{% endif %}
-
-{% if hooks %}
-<h2>Worth your time</h2>
-<div class="tile-grid hook-grid">
-  {% for hook in hooks %}
-  <a class="tile hook" href="{{ root }}/{{ hook.path }}">
-    <span class="hook-text">{{ hook.text }}</span>
-    <span class="tile-sub">{{ hook.label }}</span>
-  </a>
-  {% endfor %}
-</div>
-{% endif %}
-
-<h2>Explore</h2>
-<div class="tile-grid">
-  <a class="tile" href="{{ root }}/compare/index.html"><span class="tile-title">Compare</span><br><span class="tile-sub">Any two clubs, side by side</span></a>
-  <a class="tile" href="{{ root }}/matrix/index.html"><span class="tile-title">The Matrix</span><br><span class="tile-sub">Every division × every season</span></a>
-  {% if has_map %}
-  <a class="tile" href="{{ root }}/map/index.html"><span class="tile-title">Groundhop Map</span><br><span class="tile-sub">Every ground, by season and story</span></a>
-  {% endif %}
-</div>
-
-<h2>Browse</h2>
-<div class="tile-grid">
-  <a class="tile" href="{{ root }}/seasons/index.html"><span class="tile-title">Seasons</span><br><span class="tile-sub">{{ season_count }} years, every table</span></a>
-  <a class="tile" href="{{ root }}/teams/index.html"><span class="tile-title">Teams</span><br><span class="tile-sub">{{ team_count }} clubs, each with a page</span></a>
-  <a class="tile" href="{{ root }}/division/index.html"><span class="tile-title">Divisions</span><br><span class="tile-sub">Five tiers through time</span></a>
-  <a class="tile" href="{{ root }}/themes/index.html"><span class="tile-title">Themes</span><br><span class="tile-sub">Administration, phoenix clubs &amp; more</span></a>
-  <a class="tile" href="{{ root }}/insights/index.html"><span class="tile-title">Insights</span><br><span class="tile-sub">Stories and interactive charts</span></a>
-</div>
-
-<h2>The current season — {{ current_label }}</h2>
+<h2 class="band">The tables — {{ current_label }}</h2>
 {% if season_note %}<p class="home-note">{{ season_note }}</p>{% endif %}
-{% if divisions | selectattr("has_luck") | list %}<p class="home-note">Exp is the points the betting odds expected from the matches played; Luck is points won minus that. Early in a season a few results swing it a long way. <a href="{{ root }}/insights/luck/index.html">How luck works</a>.</p>{% endif %}
+{% if divisions | selectattr("has_luck") | list %}<p class="band-sub">Exp is the points the betting odds expected from the matches played; Luck is points won minus that. Early in a season a few results swing it a long way. <a href="{{ root }}/insights/luck/index.html">How luck works</a>.</p>{% endif %}
 {% for division in divisions %}
-<h3>{{ division.name }}</h3>
+{# The first division open, the rest a line each: the leader, and who is riding and defying the odds. #}
+<details class="division"{% if loop.first %} open{% endif %}>
+<summary><span class="division-name">{{ division.name }}</span>
+  {% if division.rows %}<span class="lead">{{ division.rows[0].name }} {{ division.rows[0].points }}{% if division.has_luck %} · riding their luck <a href="{{ root }}/team/{{ division.luckiest.club_id }}/index.html">{{ division.luckiest.name }}</a> <span class="luck-pos">{{ "%+.1f" % division.luckiest.luck }}</span> · due a break <a href="{{ root }}/team/{{ division.unluckiest.club_id }}/index.html">{{ division.unluckiest.name }}</a> <span class="luck-neg">{{ "%+.1f" % division.unluckiest.luck }}</span>{% endif %}</span>{% endif %}
+</summary>
 {% if division.coverage_note %}<p class="coverage-note">{{ division.coverage_note }}</p>{% endif %}
-{% if division.has_luck %}<p class="home-note home-luck">Riding their luck: <a href="{{ root }}/team/{{ division.luckiest.club_id }}/index.html">{{ division.luckiest.name }}</a> <span class="luck-pos">{{ "%+.1f" % division.luckiest.luck }}</span>. Due a break: <a href="{{ root }}/team/{{ division.unluckiest.club_id }}/index.html">{{ division.unluckiest.name }}</a> <span class="luck-neg">{{ "%+.1f" % division.unluckiest.luck }}</span>. <a href="{{ root }}/insights/luck/index.html#s={{ current_season }}&amp;t={{ division.tier }}&amp;m=o">See the chart</a></p>{% endif %}
+{% if division.has_luck %}<p class="home-note home-luck"><a href="{{ root }}/insights/luck/index.html#s={{ current_season }}&amp;t={{ division.tier }}&amp;m=o">Luck chart for this division</a></p>{% endif %}
 <div class="table-scroll">
 <table class="standings">
   <tr><th>#</th><th>Club</th><th class="num">P</th><th class="num">GD</th>{% if division.has_deductions %}<th class="num" title="Points deducted">Ded</th>{% endif %}<th class="num">Pts</th>{% if division.has_luck %}<th class="num" title="Points the betting odds expected from the matches played">Exp</th><th class="num" title="Points won minus points expected">Luck</th>{% endif %}<th></th></tr>
@@ -82,7 +64,32 @@
   {% endfor %}
 </table>
 </div>
+</details>
 {% endfor %}
+
+{% if search_clubs %}
+<h2 class="band">Find a club</h2>
+<input class="search-input" id="home-search" type="search"
+       placeholder="Search {{ search_clubs|length }} clubs…" autocomplete="off">
+{# Hidden until a query is typed: the list is here so results are instant,
+   but {{ search_clubs|length }} rows is not what the page should open with. #}
+<ul class="team-list home-results" id="home-results" hidden>
+  {% for club in search_clubs %}
+  <li data-name="{{ club.search_key }}"><a href="{{ root }}/team/{{ club.club_id }}/index.html">{{ club.name }}</a></li>
+  {% endfor %}
+</ul>
+<p class="home-note" id="home-no-match" hidden>No club matches that.</p>
+{% endif %}
+<p class="explore">
+  <a href="{{ root }}/teams/index.html">Browse all {{ team_count }} clubs</a> ·
+  <a href="{{ root }}/compare/index.html">Compare two clubs</a> ·
+  <a href="{{ root }}/matrix/index.html">The Matrix</a> ·
+  {% if has_map %}<a href="{{ root }}/map/index.html">Groundhop Map</a> · {% endif %}
+  <a href="{{ root }}/seasons/index.html">{{ season_count }} seasons</a> ·
+  <a href="{{ root }}/division/index.html">Divisions</a> ·
+  <a href="{{ root }}/insights/index.html">The story</a> ·
+  <a href="{{ root }}/digest/index.html">The emails</a>
+</p>
 
 <script src="{{ root }}/static/home-search.js"></script>
 {% endblock %}
