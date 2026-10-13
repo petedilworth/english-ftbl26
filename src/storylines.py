@@ -14,6 +14,7 @@ A champion now in the third tier or below is the first choice; failing
 that, the former top-flight club with the most seasons up there.
 """
 
+import html
 import sqlite3
 
 import giants as giants_mod
@@ -27,8 +28,10 @@ ORDINALS = ["", "first", "second", "third", "fourth", "fifth", "sixth", "seventh
             "twenty-fourth"]
 WORDS = ["nought", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven",
          "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty"]
-STREAK_WORDS = {"win": "have won", "unbeaten": "are unbeaten in", "clean_sheet": "have kept a clean sheet in",
-                "loss": "have lost", "winless": "have not won in", "draw": "have drawn", "scoreless": "have not scored in"}
+STREAK_WORDS = {"win": "have won <b>{n}</b> in a row", "loss": "have lost <b>{n}</b> in a row",
+                "draw": "have drawn <b>{n}</b> in a row", "unbeaten": "are unbeaten in <b>{n}</b>",
+                "winless": "have not won in <b>{n}</b>", "scoreless": "have not scored in <b>{n}</b>",
+                "clean_sheet": "have kept <b>{n}</b> clean sheets in a row"}
 
 
 def ordinal(n: int) -> str:
@@ -60,7 +63,8 @@ def _table(conn: sqlite3.Connection, season: int) -> dict[str, dict]:
             f" s.played, s.won, s.drawn, s.lost, s.gd, s.points, {deducted}"
             " FROM standings s LEFT JOIN club_master m ON m.club_id = s.club_id"
             " WHERE s.season_end_year = ? AND s.club_id IS NOT NULL", (season,)):
-        rows[r[0]] = {"club_id": r[0], "name": r[1], "division": r[2], "tier": r[3], "position": r[4],
+        # Names go into HTML with the <b> tags the recipes add, so they are escaped here, once.
+        rows[r[0]] = {"club_id": r[0], "name": html.escape(r[1] or r[0]), "division": r[2], "tier": r[3], "position": r[4],
                       "played": r[5] or 0, "won": r[6] or 0, "drawn": r[7] or 0, "lost": r[8] or 0,
                       "gd": r[9] or 0, "points": r[10] or 0, "deducted": r[11] or 0, "of": sizes.get(r[2], 0)}
     return rows
@@ -109,17 +113,22 @@ def giants_lines(conn, season, table) -> list[dict]:
     down = [r for r in live if r["mood"] == "sinking" and r["position"] <= r["of"]]
     if not up and not down:
         return []
-    parts = []
+    parts, claimed = [], None
     if up:
-        names = _join([r["name"] for r in up[:3]])
-        parts.append(f"{names} {'are' if len(up[:3]) > 1 else 'is'} in the top quarter of "
-                     f"{_div(up[0]['division'])}.")
+        # The climbers named share a division, or "the top quarter of League One" is false for one of them.
+        division = min({r["division"] for r in up},
+                       key=lambda d: (-sum(r["division"] == d for r in up),
+                                      min(r["tier"] for r in up if r["division"] == d), d))
+        named = [r for r in up if r["division"] == division][:3]
+        names = _join([html.escape(r["name"]) for r in named])
+        parts.append(f"{names} {'are' if len(named) > 1 else 'is'} in the top quarter of {_div(division)}.")
+        claimed = named[0]["club_id"]
     if down:
         w = max(down, key=lambda r: (r["position"] / max(1, r["of"]), r["tier"]))
-        parts.append(f"{w['name']} are <b>{ordinal(w['position'])} of {w['of']}</b> in {_div(w['division'])}.")
+        parts.append(f"{html.escape(w['name'])} are <b>{ordinal(w['position'])} of {w['of']}</b> in {_div(w['division'])}.")
+        claimed = w["club_id"]
     return [_line("Giants", " ".join(parts), "Fallen giants → the giants this season",
-                  "insights/fallen-giants/index.html#live", 3 + 0.7 * (len(up) + len(down)),
-                  (down[-1] if down else up[0])["club_id"], "fallen-giants")]
+                  "insights/fallen-giants/index.html#live", 3 + 0.7 * (len(up) + len(down)), claimed, "fallen-giants")]
 
 
 def yoyo_lines(conn, season, table) -> list[dict]:
@@ -135,7 +144,7 @@ def yoyo_lines(conn, season, table) -> list[dict]:
             continue
         r = table[c["club_id"]]
         moves = ", ".join("relegated" if ch == "R" else "promoted" for ch in run["pattern"])
-        text = (f"{c['name']}: {moves}. <b>{word(run['length']).capitalize()} seasons running.</b> "
+        text = (f"{html.escape(c['name'])}: {moves}. <b>{word(run['length']).capitalize()} seasons running.</b> "
                 f"{ordinal(r['position']).capitalize()} in {_div(r['division'])}, "
                 f"{r['points']} points from {r['played']}.")
         out.append(_line("Yo-yo", text, "Yo-yo clubs → bouncing right now", "insights/yo-yo/index.html#now",
@@ -158,9 +167,15 @@ def record_lines(conn, season, table) -> list[dict]:
         r = table.get(cid)
         if not r or kind not in STREAK_WORDS:
             continue
-        rel = ("level with" if cur == rec_len else "one short of" if cur < rec_len else "past")
-        text = (f"{r['name']} {STREAK_WORDS[kind]} <b>{cur}</b>, {rel} the club record"
-                f"{' set in ' + season_label(rec_season) if cur <= rec_len else ''}. "
+        # records.py moves the record onto the live run the moment it passes the old one,
+        # so a record dated this season is this run: a club record, not "level with" one.
+        if rec_season == season and cur >= rec_len:
+            rel = "a club record"
+        elif cur == rec_len:
+            rel = f"level with the club record set in {season_label(rec_season)}"
+        else:
+            rel = f"one short of the club record set in {season_label(rec_season)}"
+        text = (f"{r['name']} {STREAK_WORDS[kind].format(n=cur)}, {rel}. "
                 f"{ordinal(r['position']).capitalize()} in {_div(r['division'])}, {r['points']} from {r['played']}.")
         out.append(_line("Record", text, "Records → the streaks", "insights/records/index.html",
                          cur / 2 + (3 if cur >= rec_len else 0), cid, "records"))
@@ -232,8 +247,9 @@ def bottom_lines(conn, season, table) -> list[dict]:
         if r["played"] < 6 or r["won"]:
             continue
         if not r["drawn"]:
+            where = ("Bottom of" if r["position"] == r["of"] else f"{ordinal(r['position']).capitalize()} of {r['of']} in")
             text = (f"{r['name']} have lost all <b>{word(r['played'])}</b>. Goal difference "
-                    f"{'minus ' + str(-r['gd']) if r['gd'] < 0 else r['gd']}. Bottom of {_div(r['division'])}.")
+                    f"{'minus ' + str(-r['gd']) if r['gd'] < 0 else r['gd']}. {where} {_div(r['division'])}.")
             weight = 2 + r["played"] * 0.6
         else:
             text = (f"{r['name']} have not won in <b>{word(r['played'])}</b>. "

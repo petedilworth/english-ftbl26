@@ -806,12 +806,15 @@ class SiteBuilder:
         build makes are allowed - the same gate the index tiles pass.
         """
         self.story_cands, self.story_lines, self.story_hero = [], [], None
+        # Each on its own: a recipe that fails must not take the hero with it, or the other way round.
         try:
             self.story_cands = storylines_mod.candidates(self.conn, season)
-            self.story_hero = storylines_mod.hero(self.conn, season)
         except Exception as exc:  # the home page must never break the build
-            logger.warning("home page storylines skipped: %s", exc)
-            return
+            logger.warning("home page lines skipped: %s", exc)
+        try:
+            self.story_hero = storylines_mod.hero(self.conn, season)
+        except Exception as exc:
+            logger.warning("home page hero skipped: %s", exc)
         built = {s["slug"] for s in self._stories()} | set(self.published_themes)
         self.story_lines = storylines_mod.pick(
             self.story_cands, built=built, exclude=self.story_hero["club_id"] if self.story_hero else None)
@@ -2575,8 +2578,11 @@ class SiteBuilder:
         if boom:
             why.append(story("boom-and-bust", "Boom and bust", "Why the same clubs keep falling into financial trouble", "why"))
         # The theme tables sit here now, each its own tile: the owners and the trouble, club by club.
+        # Counted the way the theme page counts, so the tile and the page agree.
+        known = {r[0] for r in self.conn.execute("SELECT club_id FROM club_trajectory")}
+        known |= {r[0] for r in self.conn.execute("SELECT club_id FROM club_master")}
         for slug in sorted(self.published_themes):
-            count = len(self.theme_members.get(slug, ()))
+            count = len({c for c in self.theme_members.get(slug, ()) if c in known})
             why.append(story(slug, content.THEMES.get(slug, slug.replace("-", " ").capitalize()),
                              "One table, every club it happened to", "why", path=f"themes/{slug}/index.html",
                              fig=str(count), unit="clubs"))

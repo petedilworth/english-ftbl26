@@ -5,7 +5,7 @@
 <section class="hero">
   <div class="hero-text">
     <div class="kicker">{{ current_label }}{% if hero.played %} · {{ hero.played }} game{{ "s" if hero.played != 1 }} in{% endif %}</div>
-    <p class="hero-line"><a href="{{ root }}/team/{{ hero.club_id }}/index.html">{{ hero.name }}.</a> {{ hero.past }} <span class="hero-now">{{ hero.present }}</span></p>
+    <h1 class="hero-line"><a href="{{ root }}/team/{{ hero.club_id }}/index.html">{{ hero.name }}.</a> {{ hero.past }} <span class="hero-now">{{ hero.present }}</span></h1>
     <p class="hero-sub">{{ hero.sub }} <a href="{{ root }}/{{ hero.path }}">{{ hero.to }} →</a></p>
   </div>
   <div class="hero-card">
