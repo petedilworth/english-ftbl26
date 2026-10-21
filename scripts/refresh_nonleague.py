@@ -191,7 +191,9 @@ def grids(season_end_year: int, texts: dict[str, str], get=None) -> dict[str, di
                     # No results subsection: a table subsection with show_matches carries the grid
                     # inline, so the whole section is read as one; failing that, the season's
                     # templates the section transcludes.
-                    stand_in = f"== {heading} ==\n=== Results ===\n{section}\n"
+                    # Its own level-3 headings go, or the stand-in's Results body ends at the first of them.
+                    flat = wiki.SECTION_3.sub("", section)
+                    stand_in = f"== {heading} ==\n=== Results ===\n{flat}\n"
                     g = _parse(season_end_year, league, stand_in, Path(tmp)).get(division_id)
                     if g and g["codes"] and g["rows"]:
                         annotate("notice", f"{division_id}: grid read from the '{heading}' section itself: "
