@@ -129,7 +129,12 @@ def _grid_clubs(body: str) -> list[str]:
     order = TEAM_ORDER.search(body)
     if order:
         return [c.strip() for c in order.group(1).split(",") if c.strip()]
-    return TEAM_N.findall(body)          # the |team1=|team2= spelling
+    teams = TEAM_N.findall(body)         # the |team1=|team2= spelling
+    if teams:
+        return teams
+    # A Sports table template that ranks itself from the results declares
+    # no team order at all: the clubs are the ones it names.
+    return list(dict.fromkeys(code for code, _ in NAME.findall(body)))
 
 
 def parse_file(path: Path) -> dict[tuple[int, str], dict]:

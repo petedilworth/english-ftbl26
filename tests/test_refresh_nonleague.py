@@ -139,9 +139,25 @@ def test_a_grid_transcluded_from_a_template_page_is_fetched_from_there():
     grid = ("{{Sports results\n|team_order=ALF, BAN, BIS, BRA\n" + "\n".join(f"|name_{c}={n}" for c, n in CLUBS.items())
             + "\n|match_ALF_BAN=1–0\n|match_BIS_BRA=2-2\n}}")
     pages = {rn.RAW_URL.format(title="Template%3A2026%E2%80%9327%20National%20League%20North%20results"): grid}
-    assert rn._transcluded("{{Main|x}}\n{{2026–27 National League North results}}\n{{Sports results|y}}") == [
+    assert rn._transcluded("{{Main|x}}\n{{2026–27 National League North results}}\n{{Sports results|y}}\n"
+                           "{{nowrap|z}}\n{{2025–26 National League North table}}", SEASON) == [
         "Template:2026–27 National League North results"]
     found = rn.grids(SEASON, {"National_League": article}, get=pages.__getitem__)
     assert found["national-league-north"]["codes"] == ["ALF", "BAN", "BIS", "BRA"]
     assert len(found["national-league-north"]["rows"]) == 2
     assert rn.grids(SEASON, {"National_League": article}) == {}, "without a fetcher the transclusion is only reported"
+
+
+def test_a_self_ranking_table_template_names_its_clubs_without_a_team_order():
+    # Wikipedia's Sports table pages with show_matches declare no team order: the clubs are the ones named.
+    table = ("<onlyinclude>{{#invoke:Sports table|main|style=WDL\n|update=17 October 2026\n|result1=PRO\n"
+             "|name_TEL=[[AFC Telford United F.C.|AFC Telford United]]\n|name_BED=[[Bedford Town F.C.|Bedford Town]]\n"
+             "|name_D&R=[[Dagenham & Redbridge F.C.|Dagenham & Redbridge]]\n|name_W&H=Walton & Hersham\n\n"
+             "|match_TEL_BED = 0-1\n|match_TEL_D&R =\n|match_D&R_W&H = 2-2\n|match_BED_TEL =\n}}</onlyinclude>")
+    article = "== National League North ==\n=== Results ===\n{{2026–27 National League North table|show_matches=only}}\n"
+    pages = {rn.RAW_URL.format(title="Template%3A2026%E2%80%9327%20National%20League%20North%20table"): table}
+    g = rn.grids(SEASON, {"National_League": article}, get=pages.__getitem__)["national-league-north"]
+    assert g["codes"] == ["TEL", "BED", "D&R", "W&H"]
+    assert g["rows"] == [("TEL", "BED", 0, 1), ("D&R", "W&H", 2, 2)]
+    assert [r[2:4] for r in rn.rows_for("national-league-north", g)] == [
+        ("AFC Telford United", "Bedford Town"), ("Dagenham & Redbridge", "Walton & Hersham")]

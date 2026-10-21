@@ -71,7 +71,7 @@ def annotate(level: str, message: str) -> None:
     """
     logger.log(logging.ERROR if level == "error" else logging.INFO, "%s", message)
     if os.environ.get("GITHUB_ACTIONS"):
-        print(f"::{level}::{message}", flush=True)
+        print(f"::{level}::{message[:2000]}", flush=True)
 
 
 def current_season_end_year(today: datetime.date | None = None) -> int:
@@ -141,14 +141,20 @@ def _snippet(text: str, n: int = 700) -> str:
     return text[start:start + n]
 
 
-def _transcluded(body: str) -> list[str]:
-    """Page titles the results subsection pulls its grid from, in order."""
+def _transcluded(body: str, season_end_year: int) -> list[str]:
+    """
+    Page titles the results subsection pulls its grid from, in order. Only
+    pages named for the season: a table template transcludes {{nowrap}}
+    and {{1}} and the like too, and those lead nowhere.
+    """
+    labels = (f"{season_end_year - 1}\u2013{season_end_year % 100:02d}", f"{season_end_year - 1}-{season_end_year % 100:02d}")
     titles = []
     for colon, name in TRANSCLUSION.findall(body):
-        if name.strip().lower().startswith(NOT_A_GRID):
+        name = name.strip()
+        if name.lower().startswith(NOT_A_GRID) or not any(label in name for label in labels):
             continue
-        titles.append(name.strip() if colon else f"Template:{name.strip()}")
-    return titles
+        titles.append(name if colon else f"Template:{name}")
+    return list(dict.fromkeys(titles))
 
 
 def grids(season_end_year: int, texts: dict[str, str], get=None) -> dict[str, dict]:
@@ -169,41 +175,40 @@ def grids(season_end_year: int, texts: dict[str, str], get=None) -> dict[str, di
             for division_id, (lg, heading) in HEADINGS.items():
                 if lg != league:
                     continue
+                notes = []
                 section = _section(text, league, division_id)
                 if section is None:
-                    annotate("warning", f"{division_id}: no '{heading}' section; level-2 headings: "
-                                        f"{[h.strip() for h in wiki.SECTION_2.findall(text)][:12]!r}")
+                    notes.append(f"no '{heading}' section; level-2 headings: "
+                                 f"{[h.strip() for h in wiki.SECTION_2.findall(text)][:12]!r}")
+                    annotate("warning", f"{division_id}: " + " | ".join(notes))
                     continue
                 body = wiki._results_body(section)
+                g = found.get(division_id)
+                if body is not None and g and g["codes"] and g["rows"]:
+                    out[division_id] = g
+                    continue
                 if body is None:
                     # No results subsection: the table subsection's template page may still carry the
                     # matches, so try every table or results template the section transcludes.
-                    titles = [t for t in _transcluded(section) if re.search(r"table|result", t, re.I)]
-                    annotate("warning", f"{division_id}: no results subsection; level-3 headings: "
-                                        f"{[h.strip() for h in wiki.SECTION_3.findall(section)]!r}; "
-                                        f"table or results transclusions {titles!r}")
-                    g = _follow(season_end_year, league, heading, division_id, titles, get, Path(tmp))
-                    if g:
-                        out[division_id] = g
-                    continue
-                g = found.get(division_id)
-                if g and g["codes"] and g["rows"]:
-                    out[division_id] = g
-                    continue
-                titles = _transcluded(body)
-                annotate("warning", f"{division_id}: results subsection holds no grid; transclusions {titles!r}; "
-                                    f"it starts: {body.strip()[:300]!r}")
-                g = _follow(season_end_year, league, heading, division_id, titles, get, Path(tmp))
+                    titles = [t for t in _transcluded(section, season_end_year) if re.search(r"table|result", t, re.I)]
+                    notes.append(f"no results subsection; level-3 headings "
+                                 f"{[h.strip() for h in wiki.SECTION_3.findall(section)]!r}; trying {titles!r}")
+                else:
+                    titles = _transcluded(body, season_end_year)
+                    notes.append(f"results subsection holds no grid, starts {body.strip()[:160]!r}; trying {titles!r}")
+                g = _follow(season_end_year, league, heading, division_id, titles, get, Path(tmp), notes)
                 if g:
                     out[division_id] = g
+                else:
+                    annotate("warning", f"{division_id}: " + " | ".join(notes))
     return out
 
 
-def _follow(season_end_year, league, heading, division_id, titles, get, tmp, depth: int = 2) -> dict | None:
+def _follow(season_end_year, league, heading, division_id, titles, get, tmp, notes, depth: int = 2) -> dict | None:
     """
     Fetch each transcluded page and parse it as the grid; a page with no
     grid of its own may transclude another, so follow those too, two deep.
-    Every page that is not the grid says what it holds instead.
+    Every page that is not the grid adds what it holds to the notes.
     """
     if not get:
         return None
@@ -216,7 +221,7 @@ def _follow(season_end_year, league, heading, division_id, titles, get, tmp, dep
         try:
             text = fetch_wikitext(title, get=get)
         except Exception as exc:        # a template page that is not there is just not the grid
-            annotate("warning", f"{division_id}: {title}: {exc}")
+            notes.append(f"{title}: {exc}")
             continue
         stand_in = f"== {heading} ==\n=== Results ===\n{text}\n"
         g = _parse(season_end_year, league, stand_in, tmp).get(division_id)
@@ -224,9 +229,9 @@ def _follow(season_end_year, league, heading, division_id, titles, get, tmp, dep
             annotate("notice", f"{division_id}: grid read from {title}: {len(g['codes'])} clubs, "
                                f"{len(g['rows'])} matches")
             return g
-        inner = [t for t in _transcluded(text) if t not in seen]
-        annotate("warning", f"{division_id}: {title} holds no grid; parameters {_schema(text)}; "
-                            f"transclusions {inner[:6]!r}; near its first match_: {_snippet(text)!r}")
+        inner = [t for t in _transcluded(text, season_end_year) if t not in seen]
+        notes.append(f"{title} holds no grid; parameters {_schema(text)}; transclusions {inner[:4]!r}; "
+                     f"near its first match_: {_snippet(text, 400)!r}")
         queue.extend((t, level + 1) for t in inner)
     return None
 
