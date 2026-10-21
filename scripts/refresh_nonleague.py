@@ -25,6 +25,7 @@ written, because one broken article should not freeze the other five.
 """
 
 import argparse
+import collections
 import csv
 import datetime
 import logging
@@ -128,6 +129,18 @@ def _parse(season_end_year: int, league: str, text: str, tmp: Path) -> dict[str,
             if season == season_end_year}
 
 
+def _schema(text: str) -> dict[str, int]:
+    """The parameter names a template page uses, by prefix: what kind of table it is."""
+    counts = collections.Counter(m.lower() for m in re.findall(r"\|\s*([A-Za-z]+)[_\d]", text))
+    return dict(counts.most_common(12))
+
+
+def _snippet(text: str, n: int = 700) -> str:
+    i = text.find("match_")
+    start = max(0, i - 120) if i >= 0 else 0
+    return text[start:start + n]
+
+
 def _transcluded(body: str) -> list[str]:
     """Page titles the results subsection pulls its grid from, in order."""
     titles = []
@@ -163,8 +176,15 @@ def grids(season_end_year: int, texts: dict[str, str], get=None) -> dict[str, di
                     continue
                 body = wiki._results_body(section)
                 if body is None:
+                    # No results subsection: the table subsection's template page may still carry the
+                    # matches, so try every table or results template the section transcludes.
+                    titles = [t for t in _transcluded(section) if re.search(r"table|result", t, re.I)]
                     annotate("warning", f"{division_id}: no results subsection; level-3 headings: "
-                                        f"{[h.strip() for h in wiki.SECTION_3.findall(section)]!r}")
+                                        f"{[h.strip() for h in wiki.SECTION_3.findall(section)]!r}; "
+                                        f"table or results transclusions {titles!r}")
+                    g = _follow(season_end_year, league, heading, division_id, titles, get, Path(tmp))
+                    if g:
+                        out[division_id] = g
                     continue
                 g = found.get(division_id)
                 if g and g["codes"] and g["rows"]:
@@ -173,22 +193,42 @@ def grids(season_end_year: int, texts: dict[str, str], get=None) -> dict[str, di
                 titles = _transcluded(body)
                 annotate("warning", f"{division_id}: results subsection holds no grid; transclusions {titles!r}; "
                                     f"it starts: {body.strip()[:300]!r}")
-                for title in titles if get else []:
-                    try:
-                        grid_text = fetch_wikitext(title, get=get)
-                    except Exception as exc:        # a template page that is not there is just not the grid
-                        annotate("warning", f"{division_id}: {title}: {exc}")
-                        continue
-                    stand_in = f"== {heading} ==\n=== Results ===\n{grid_text}\n"
-                    g = _parse(season_end_year, league, stand_in, Path(tmp)).get(division_id)
-                    if g and g["codes"] and g["rows"]:
-                        annotate("notice", f"{division_id}: grid read from {title}: {len(g['codes'])} clubs, "
-                                           f"{len(g['rows'])} matches")
-                        out[division_id] = g
-                        break
-                    annotate("warning", f"{division_id}: {title} holds no grid either; it starts: "
-                                        f"{grid_text.strip()[:200]!r}")
+                g = _follow(season_end_year, league, heading, division_id, titles, get, Path(tmp))
+                if g:
+                    out[division_id] = g
     return out
+
+
+def _follow(season_end_year, league, heading, division_id, titles, get, tmp, depth: int = 2) -> dict | None:
+    """
+    Fetch each transcluded page and parse it as the grid; a page with no
+    grid of its own may transclude another, so follow those too, two deep.
+    Every page that is not the grid says what it holds instead.
+    """
+    if not get:
+        return None
+    queue, seen = [(t, 0) for t in titles], set()
+    while queue:
+        title, level = queue.pop(0)
+        if title in seen or level > depth:
+            continue
+        seen.add(title)
+        try:
+            text = fetch_wikitext(title, get=get)
+        except Exception as exc:        # a template page that is not there is just not the grid
+            annotate("warning", f"{division_id}: {title}: {exc}")
+            continue
+        stand_in = f"== {heading} ==\n=== Results ===\n{text}\n"
+        g = _parse(season_end_year, league, stand_in, tmp).get(division_id)
+        if g and g["codes"] and g["rows"]:
+            annotate("notice", f"{division_id}: grid read from {title}: {len(g['codes'])} clubs, "
+                               f"{len(g['rows'])} matches")
+            return g
+        inner = [t for t in _transcluded(text) if t not in seen]
+        annotate("warning", f"{division_id}: {title} holds no grid; parameters {_schema(text)}; "
+                            f"transclusions {inner[:6]!r}; near its first match_: {_snippet(text)!r}")
+        queue.extend((t, level + 1) for t in inner)
+    return None
 
 
 def rows_for(division_id: str, g: dict) -> list[tuple]:
