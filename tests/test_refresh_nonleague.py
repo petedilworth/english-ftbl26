@@ -132,3 +132,16 @@ def test_titles_seasons_and_redirects():
     loop = {rn.RAW_URL.format(title="A"): "#REDIRECT [[B]]", rn.RAW_URL.format(title="B"): "#REDIRECT [[A]]"}
     with pytest.raises(RuntimeError):
         rn.fetch_wikitext("A", get=loop.__getitem__)
+
+
+def test_a_grid_transcluded_from_a_template_page_is_fetched_from_there():
+    article = "== National League North ==\n=== Results ===\n{{Main|x}}\n{{2026–27 National League North results}}\n"
+    grid = ("{{Sports results\n|team_order=ALF, BAN, BIS, BRA\n" + "\n".join(f"|name_{c}={n}" for c, n in CLUBS.items())
+            + "\n|match_ALF_BAN=1–0\n|match_BIS_BRA=2-2\n}}")
+    pages = {rn.RAW_URL.format(title="Template%3A2026%E2%80%9327%20National%20League%20North%20results"): grid}
+    assert rn._transcluded("{{Main|x}}\n{{2026–27 National League North results}}\n{{Sports results|y}}") == [
+        "Template:2026–27 National League North results"]
+    found = rn.grids(SEASON, {"National_League": article}, get=pages.__getitem__)
+    assert found["national-league-north"]["codes"] == ["ALF", "BAN", "BIS", "BRA"]
+    assert len(found["national-league-north"]["rows"]) == 2
+    assert rn.grids(SEASON, {"National_League": article}) == {}, "without a fetcher the transclusion is only reported"
