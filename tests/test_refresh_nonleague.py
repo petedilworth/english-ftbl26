@@ -109,7 +109,15 @@ def test_refuses_a_grid_that_went_wrong_and_keeps_the_file(tmp_path):
         resolver_plus = _resolver(list(CLUBS.values()) + ["Brackley Town Saints"])
         line = rn.refresh(SEASON, {"National_League": _article(FIRST, clubs=renamed)}, resolver_plus, tmp_path)[
             "national-league-north"]
-        assert "club list changed, gone: Brackley Town, new: Brackley Town Saints" in line
+        assert "club(s) gone from the grid: Brackley Town" in line
+        # A club that only now has a result may appear: Ebbsfleet United had none when the file was committed.
+        grown = dict(CLUBS, EBB="Ebbsfleet United")
+        with_ebb = {**FIRST, ("EBB", "ALF"): "1–0"}
+        line = rn.refresh(SEASON, {"National_League": _article(with_ebb, clubs=grown)},
+                          _resolver(list(grown.values())), tmp_path)["national-league-north"]
+        assert line == "written, 5 matches (+1)"
+        rn.write(path, rn.rows_for("national-league-north", rn.grids(SEASON, {"National_League": _article(FIRST)})["national-league-north"]))
+        before = path.read_text(encoding="utf-8")
         doubled = _article(FIRST) + "|match_ALF_BAN=0–0\n"
         assert "listed twice" in refused(doubled.replace("}}\n== National", "|match_ALF_BAN=0–0\n}}\n== National", 1))
     finally:
@@ -161,3 +169,11 @@ def test_a_self_ranking_table_template_names_its_clubs_without_a_team_order():
     assert g["rows"] == [("TEL", "BED", 0, 1), ("D&R", "W&H", 2, 2)]
     assert [r[2:4] for r in rn.rows_for("national-league-north", g)] == [
         ("AFC Telford United", "Bedford Town"), ("Dagenham & Redbridge", "Walton & Hersham")]
+
+
+def test_a_table_subsection_with_the_grid_inline_is_read_as_the_grid():
+    article = ("== Premier Division ==\n=== Team changes ===\nx\n=== Premier Division table ===\n"
+               "{{#invoke:Sports table|main|style=WDL|show_matches=yes\n|name_ALF=Alfreton Town\n|name_BAN=Banbury United\n"
+               "|match_ALF_BAN = 2-1\n|match_BAN_ALF =\n}}\n=== Stadia and locations ===\ny\n")
+    g = rn.grids(SEASON, {"Isthmian_League": article})["isthmian-league-premier"]
+    assert g["codes"] == ["ALF", "BAN"] and g["rows"] == [("ALF", "BAN", 2, 1)]
