@@ -7,7 +7,7 @@ between them, and this is how.
 | seasons | source | dates? |
 |---|---|---|
 | 2012/13 – 2018/19 | `jalapic/engsoccerdata`, match-level | yes |
-| 2019/20 – present | Wikipedia results grids | **no** |
+| 2019/20 – present | Wikipedia results grids, the season in progress refreshed daily by `.github/workflows/nonleague.yml` | **no** |
 
 ## The source
 

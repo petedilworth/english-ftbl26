@@ -32,10 +32,11 @@ SOURCES = {
     "wikipedia-results": {
         "name": "Wikipedia season articles",
         "url": "https://en.wikipedia.org/wiki/English_football_league_system",
-        "what": "Sixth- and seventh-tier results from 2019/20, taken from the results grids by hand "
+        "what": "Sixth- and seventh-tier results from 2019/20, taken from the results grids "
                 "(data/nonleague/).",
         "licence": "CC BY-SA 4.0.",
-        "refresh": "By hand.",
+        "refresh": "Every morning for the season in progress, by the Non-league results workflow; "
+                   "finished seasons stay as committed.",
     },
     "fa-nls": {
         "name": "The FA: National League System allocations",

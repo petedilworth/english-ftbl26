@@ -1074,11 +1074,13 @@ def run(
             )
 
     # The sixth and seventh tiers after 2018/19 are not downloadable from
-    # anywhere this project can reach - engsoccerdata stopped, and every
+    # anywhere this sandbox can reach - engsoccerdata stopped, and every
     # other source is refused at the proxy. They were extracted from
     # Wikipedia results grids by scripts/parse_wiki_results.py and are
     # kept in data/nonleague/ rather than data/raw/, which is gitignored
-    # because everything in it can be fetched again. These cannot.
+    # because everything in it can be fetched again. These cannot from
+    # here; the season in progress is refreshed from GitHub Actions by
+    # scripts/refresh_nonleague.py, which commits the files this copies.
     #
     # Copied in rather than globbed separately so that crosscheck and
     # everything else downstream still reads one directory.

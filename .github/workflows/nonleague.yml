@@ -1,0 +1,77 @@
+name: Non-league results
+
+# Refreshes the sixth and seventh tiers' results for the season in
+# progress from the results grids in Wikipedia's season articles and
+# commits data/nonleague/<season>_<division>_nl.csv. Runs before Refresh
+# (05:30 UTC), which ingests whatever is in data/nonleague/ and commits
+# the database; Deploy Site follows Refresh. See scripts/refresh_nonleague.py
+# for what is fetched and when a grid is refused.
+#
+# A refused division fails the run but the divisions that passed are
+# still committed: one half-edited article should not freeze the rest.
+
+on:
+  schedule:
+    - cron: '50 4 * * *'   # daily ~04:50 UTC, forty minutes before Refresh
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/nonleague.yml'
+      - 'scripts/refresh_nonleague.py'
+      - 'scripts/parse_wiki_results.py'
+  workflow_dispatch:
+    inputs:
+      season:
+        description: 'Season end year to refresh (blank: the season in progress)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+# Same queue as Refresh and Editions: everything that commits to the repo
+# waits its turn.
+concurrency:
+  group: england-db
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch the results grids
+        id: fetch
+        run: |
+          if [ -n "${{ inputs.season }}" ]; then
+            python scripts/refresh_nonleague.py --season "${{ inputs.season }}"
+          else
+            python scripts/refresh_nonleague.py
+          fi
+
+      - name: Commit the results files
+        # Runs even when a division was refused: the ones that passed were written and are good.
+        if: ${{ !cancelled() }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/nonleague/*_nl.csv
+          git commit -m "Refresh non-league results (fetched by workflow)" || exit 0
+          for attempt in 1 2 3 4 5; do
+            if git push; then
+              exit 0
+            fi
+            echo "Push rejected (attempt $attempt) - rebasing onto latest main and retrying"
+            git fetch origin main
+            git rebase origin/main
+          done
+          echo "::error::Could not push after 5 attempts"
+          exit 1
