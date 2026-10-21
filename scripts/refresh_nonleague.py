@@ -188,11 +188,22 @@ def grids(season_end_year: int, texts: dict[str, str], get=None) -> dict[str, di
                     out[division_id] = g
                     continue
                 if body is None:
-                    # No results subsection: the table subsection's template page may still carry the
-                    # matches, so try every table or results template the section transcludes.
-                    titles = [t for t in _transcluded(section, season_end_year) if re.search(r"table|result", t, re.I)]
+                    # No results subsection: a table subsection with show_matches carries the grid
+                    # inline, so the whole section is read as one; failing that, the season's
+                    # templates the section transcludes.
+                    stand_in = f"== {heading} ==\n=== Results ===\n{section}\n"
+                    g = _parse(season_end_year, league, stand_in, Path(tmp)).get(division_id)
+                    if g and g["codes"] and g["rows"]:
+                        annotate("notice", f"{division_id}: grid read from the '{heading}' section itself: "
+                                           f"{len(g['codes'])} clubs, {len(g['rows'])} matches")
+                        out[division_id] = g
+                        continue
+                    titles = _transcluded(section, season_end_year)
+                    every = [n.strip() for _, n in TRANSCLUSION.findall(section)][:8]
                     notes.append(f"no results subsection; level-3 headings "
-                                 f"{[h.strip() for h in wiki.SECTION_3.findall(section)]!r}; trying {titles!r}")
+                                 f"{[h.strip() for h in wiki.SECTION_3.findall(section)]!r}; transclusions {every!r}; "
+                                 f"trying {titles!r}; parameters {_schema(section)}; near its first match_: "
+                                 f"{_snippet(section, 300)!r}")
                 else:
                     titles = _transcluded(body, season_end_year)
                     notes.append(f"results subsection holds no grid, starts {body.strip()[:160]!r}; trying {titles!r}")
@@ -281,10 +292,11 @@ def problems(g: dict, old: dict | None, resolver: dict[str, str]) -> list[str]:
     if len(rows) > len(codes) * (len(codes) - 1):
         out.append(f"{len(rows)} matches is more than a round-robin of {len(codes)} holds")
     if old:
-        if clubs != old["clubs"]:
-            gone, new = sorted(old["clubs"] - clubs), sorted(clubs - old["clubs"])
-            out.append("club list changed" + (f", gone: {', '.join(gone)}" if gone else "")
-                       + (f", new: {', '.join(new)}" if new else ""))
+        # A club may appear - it had no result when the file was committed - but
+        # a club in the committed file cannot vanish.
+        gone = sorted(old["clubs"] - clubs)
+        if gone:
+            out.append(f"club(s) gone from the grid: {', '.join(gone)}")
         if len(rows) < len(old["fixtures"]):
             out.append(f"fewer matches than committed: {len(rows)} against {len(old['fixtures'])}")
         missing = sorted(set(old["fixtures"]) - set(pairs))
