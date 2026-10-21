@@ -105,27 +105,89 @@ def fetch_wikitext(title: str, get=_http_get, hops: int = 3) -> str:
     raise RuntimeError(f"{title}: too many redirects")
 
 
-def grids(season_end_year: int, texts: dict[str, str]) -> dict[str, dict]:
+HEADINGS = {division_id: (league, heading) for (league, heading), division_id in wiki.DIVISION_SECTIONS.items()}
+# A results subsection that holds no grid of its own but one template call
+# has the grid on that template's page: {{2026–27 National League North results}}.
+TRANSCLUSION = re.compile(r"\{\{\s*(:?)([^{}|#]+?)\s*(?:\||\}\})")
+NOT_A_GRID = ("sports results", "fb ", "efn", "cite", "main", "updated", "legend", "see also", "refn")
+
+
+def _section(text: str, league: str, division_id: str) -> str | None:
+    """The level-2 section of the article that is this division, if it has one."""
+    parts = wiki.SECTION_2.split(text)
+    for i in range(1, len(parts), 2):
+        if wiki.DIVISION_SECTIONS.get((league, parts[i])) == division_id:
+            return parts[i + 1]
+    return None
+
+
+def _parse(season_end_year: int, league: str, text: str, tmp: Path) -> dict[str, dict]:
+    path = tmp / f"{season_end_year - 1}_{league}.wikitext"
+    path.write_text(text, encoding="utf-8")
+    return {division_id: g for (season, division_id), g in wiki.parse_file(path).items()
+            if season == season_end_year}
+
+
+def _transcluded(body: str) -> list[str]:
+    """Page titles the results subsection pulls its grid from, in order."""
+    titles = []
+    for colon, name in TRANSCLUSION.findall(body):
+        if name.strip().lower().startswith(NOT_A_GRID):
+            continue
+        titles.append(name.strip() if colon else f"Template:{name.strip()}")
+    return titles
+
+
+def grids(season_end_year: int, texts: dict[str, str], get=None) -> dict[str, dict]:
     """
     {division_id: grid} for the season, parsed by parse_wiki_results from
     the articles' wikitext. The parser reads the season and the league
     from the filename, so each text is written under the name it expects.
+
+    A division whose results subsection holds no grid, only a template
+    call, has its grid on that template's page; with a fetcher, that page
+    is fetched and parsed in the subsection's place. Whatever is found or
+    not is said as an annotation, because the log cannot be read from here.
     """
     out = {}
     with tempfile.TemporaryDirectory() as tmp:
         for league, text in texts.items():
-            path = Path(tmp) / f"{season_end_year - 1}_{league}.wikitext"
-            path.write_text(text, encoding="utf-8")
-            found = wiki.parse_file(path)
-            for (season, division_id), g in found.items():
-                if season == season_end_year:
+            found = _parse(season_end_year, league, text, Path(tmp))
+            for division_id, (lg, heading) in HEADINGS.items():
+                if lg != league:
+                    continue
+                section = _section(text, league, division_id)
+                if section is None:
+                    annotate("warning", f"{division_id}: no '{heading}' section; level-2 headings: "
+                                        f"{[h.strip() for h in wiki.SECTION_2.findall(text)][:12]!r}")
+                    continue
+                body = wiki._results_body(section)
+                if body is None:
+                    annotate("warning", f"{division_id}: no results subsection; level-3 headings: "
+                                        f"{[h.strip() for h in wiki.SECTION_3.findall(section)]!r}")
+                    continue
+                g = found.get(division_id)
+                if g and g["codes"] and g["rows"]:
                     out[division_id] = g
-            if not found:
-                # The headings the article does have, so a renamed section or a
-                # page that is not the season article at all can be seen.
-                headings = [h.strip() for h in wiki.SECTION_2.findall(text)][:12]
-                annotate("warning", f"{league}: no division grids found; level-2 headings: "
-                                    f"{headings or text[:200]!r}")
+                    continue
+                titles = _transcluded(body)
+                annotate("warning", f"{division_id}: results subsection holds no grid; transclusions {titles!r}; "
+                                    f"it starts: {body.strip()[:300]!r}")
+                for title in titles if get else []:
+                    try:
+                        grid_text = fetch_wikitext(title, get=get)
+                    except Exception as exc:        # a template page that is not there is just not the grid
+                        annotate("warning", f"{division_id}: {title}: {exc}")
+                        continue
+                    stand_in = f"== {heading} ==\n=== Results ===\n{grid_text}\n"
+                    g = _parse(season_end_year, league, stand_in, Path(tmp)).get(division_id)
+                    if g and g["codes"] and g["rows"]:
+                        annotate("notice", f"{division_id}: grid read from {title}: {len(g['codes'])} clubs, "
+                                           f"{len(g['rows'])} matches")
+                        out[division_id] = g
+                        break
+                    annotate("warning", f"{division_id}: {title} holds no grid either; it starts: "
+                                        f"{grid_text.strip()[:200]!r}")
     return out
 
 
@@ -195,12 +257,12 @@ def write(path: Path, rows: list[tuple]) -> None:
 
 
 def refresh(season_end_year: int, texts: dict[str, str], resolver: dict[str, str],
-            out_dir: Path = OUT_DIR, dry_run: bool = False) -> dict[str, str]:
+            out_dir: Path = OUT_DIR, dry_run: bool = False, get=None) -> dict[str, str]:
     """
     One line per division: "written", "unchanged", "no grid", or the
     reasons it was refused. Writes only the divisions that pass.
     """
-    found = grids(season_end_year, texts)
+    found = grids(season_end_year, texts, get=get)
     report = {}
     for division_id in DIVISIONS:
         g = found.get(division_id)
@@ -249,7 +311,7 @@ def main(argv=None) -> int:
     conn = sqlite3.connect(DB)
     resolver = entities.build_resolver(conn)
     conn.close()
-    report = refresh(args.season, texts, resolver, Path(args.out), args.dry_run)
+    report = refresh(args.season, texts, resolver, Path(args.out), args.dry_run, get=_http_get)
     refused = 0
     for division_id, line in sorted(report.items()):
         bad = line.startswith(("refused", "no grid"))
