@@ -348,7 +348,13 @@ def nonleague_filename(season_end_year: int, division_id: str) -> str:
 
 
 def nonleague_source_label(season_end_year: int, division_id: str) -> str:
-    return f"{SOURCE_NAME}/{division_id}/{download.season_to_str(season_end_year)}"
+    """
+    engsoccerdata up to its last season; after that the results grids in
+    Wikipedia's season articles (scripts/parse_wiki_results.py, refreshed
+    for the season in progress by scripts/refresh_nonleague.py).
+    """
+    source = SOURCE_NAME if season_end_year <= NONLEAGUE_LAST_SEASON else "wikipedia"
+    return f"{source}/{division_id}/{download.season_to_str(season_end_year)}"
 
 
 def _drop_repeat_fixtures(rows: list[dict], label: str) -> list[dict]:
