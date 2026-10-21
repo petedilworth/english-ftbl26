@@ -28,6 +28,7 @@ import argparse
 import csv
 import datetime
 import logging
+import os
 import re
 import sqlite3
 import sys
@@ -59,6 +60,17 @@ REDIRECT = re.compile(r"^\s*#REDIRECT\s*\[\[([^\]|#]+)", re.I)
 MIN_CLUBS = 16
 
 logger = logging.getLogger("refresh_nonleague")
+
+
+def annotate(level: str, message: str) -> None:
+    """
+    Say it where it can be read. The run's log lives on a host this
+    sandbox cannot reach, but its annotations come back through the API,
+    so every refusal and every "no grid" is also an annotation.
+    """
+    logger.log(logging.ERROR if level == "error" else logging.INFO, "%s", message)
+    if os.environ.get("GITHUB_ACTIONS"):
+        print(f"::{level}::{message}", flush=True)
 
 
 def current_season_end_year(today: datetime.date | None = None) -> int:
@@ -104,9 +116,16 @@ def grids(season_end_year: int, texts: dict[str, str]) -> dict[str, dict]:
         for league, text in texts.items():
             path = Path(tmp) / f"{season_end_year - 1}_{league}.wikitext"
             path.write_text(text, encoding="utf-8")
-            for (season, division_id), g in wiki.parse_file(path).items():
+            found = wiki.parse_file(path)
+            for (season, division_id), g in found.items():
                 if season == season_end_year:
                     out[division_id] = g
+            if not found:
+                # The headings the article does have, so a renamed section or a
+                # page that is not the season article at all can be seen.
+                headings = [h.strip() for h in wiki.SECTION_2.findall(text)][:12]
+                annotate("warning", f"{league}: no division grids found; level-2 headings: "
+                                    f"{headings or text[:200]!r}")
     return out
 
 
@@ -222,7 +241,7 @@ def main(argv=None) -> int:
             texts[league] = fetch_wikitext(title)
             logger.info("fetched %s (%d characters)", title, len(texts[league]))
         except (urllib.error.URLError, RuntimeError, TimeoutError) as exc:
-            logger.error("%s: %s", title, exc)
+            annotate("error", f"{title}: {exc}")
     if not texts:
         logger.error("nothing fetched; the committed files stand")
         return 2
@@ -233,11 +252,11 @@ def main(argv=None) -> int:
     report = refresh(args.season, texts, resolver, Path(args.out), args.dry_run)
     refused = 0
     for division_id, line in sorted(report.items()):
-        level = logging.ERROR if line.startswith(("refused", "no grid")) else logging.INFO
-        refused += level == logging.ERROR
-        logger.log(level, "%s: %s", division_id, line)
+        bad = line.startswith(("refused", "no grid"))
+        refused += bad
+        annotate("error" if bad else "notice", f"{division_id}: {line}")
     if refused:
-        logger.error("%d division(s) refused; their committed files stand", refused)
+        annotate("error", f"{refused} division(s) refused; their committed files stand")
         return 1
     return 0
 
