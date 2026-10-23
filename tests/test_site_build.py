@@ -2234,3 +2234,48 @@ def test_a_scatter_page_never_claims_more_clubs_than_exist():
                 wrong.append((str(data_file.parent.relative_to(site)),
                               f"{numerator} of {denominator}"))
     assert not wrong, f"more clubs plotted than the page says exist: {wrong}"
+
+
+# ── The websites behind each team page ────────────────────────────────
+
+def test_a_team_page_ends_with_the_websites_it_draws_on(tmp_path, monkeypatch):
+    sourced = RICH_STORY.replace("founded: 1905\n", "founded: 1905\nsources:\n  - https://www.example-history.org/giant\n"
+                                 "  - https://www.example-history.org/giant-ground\n  - https://news.example.com/x\n", 1)
+    out = _build_with_content(tmp_path, monkeypatch, {"giant-fc": sourced, "steady-fc": "## Origins\nA works team.\n"})
+    page = (out / "team" / "giant-fc" / "index.html").read_text()
+    assert '<h2 id="sources">Sources</h2>' in page
+    tail = page[page.index('<h2 id="sources">'):]
+    # The story's own pages, grouped by website, after everything else on the page.
+    assert "<dt>The story</dt>" in tail
+    assert 'example-history.org <a href="https://www.example-history.org/giant" rel="noopener">1</a>' in tail
+    assert '<a href="https://news.example.com/x" rel="noopener">news.example.com</a>' in tail
+    assert page.index('<h2 id="sources">') > page.index("<h2>Season by season</h2>")
+    # A written story with no sources listed says so, so the links below are not read as its sources.
+    steady = (out / "team" / "steady-fc" / "index.html").read_text()
+    assert "Its sources are not listed yet." in steady
+
+
+def test_site_names_and_grouping():
+    import sources as src
+    assert src.site_name("https://www.bbc.co.uk/sport/x") == "bbc.co.uk"
+    assert src.site_name("https://en.wikipedia.org/wiki/X") == "Wikipedia"
+    assert src.site_name("https://github.com/jalapic/engsoccerdata") == "engsoccerdata on GitHub"
+    assert src.site_name("https://find-and-update.company-information.service.gov.uk/company/1") == "Companies House"
+    assert src.by_site(["https://itv.com/a", "https://www.itv.com/b", "https://itv.com/a", "not a link"]) == [
+        {"site": "itv.com", "urls": ["https://itv.com/a", "https://www.itv.com/b"]}]
+
+
+def test_story_sources_and_infobox_articles_read_their_files(tmp_path):
+    import sources as src
+    tsv = tmp_path / "story-sources.tsv"
+    tsv.write_text("club_id\turl\tlink\tdate\tnote\n"
+                   "giant-fc\thttps://a.example/1\tfetched_for_file\t2026-08-01\torigins\n"
+                   "giant-fc\t\tsearched_only\t2026-08-01\tgiant fc nickname\n"
+                   "steady-fc\thttps://b.example/2\tnamed_in_url\t2026-08-02\t\n", encoding="utf-8")
+    assert src.story_sources(tsv) == {"giant-fc": ["https://a.example/1"], "steady-fc": ["https://b.example/2"]}
+    assert src.story_sources(tmp_path / "missing.tsv") == {}
+    arts = tmp_path / "articles.tsv"
+    arts.write_text("# comment\nclub_id\tmissing\tcandidate_titles...\n"
+                    "rd-fc\tground\tAFC Rushden & Diamonds\tRushden & Diamonds F.C.\n", encoding="utf-8")
+    assert src.infobox_articles(arts) == {
+        "rd-fc": "https://en.wikipedia.org/w/index.php?search=AFC+Rushden+%26+Diamonds&go=Go"}

@@ -234,3 +234,92 @@ def used_by(sources=SOURCES, pages=PAGES) -> dict[str, list[dict]]:
             for k in keys:
                 out[k].append({"title": t, "path": p})
     return out
+
+
+# ── Per club: the websites behind one team page ───────────────────────────
+
+import csv as _csv
+from pathlib import Path as _Path
+from urllib.parse import quote_plus as _quote_plus
+from urllib.parse import urlparse as _urlparse
+
+_ROOT = _Path(__file__).resolve().parent.parent
+# Recovered from the research session that wrote the club stories, one row
+# per club and page: club_id, url, link, date, note. Absent until recovered.
+STORY_SOURCES = _ROOT / "data" / "story-sources.tsv"
+# The clubs whose ground, capacity, colours or coordinates came from a
+# Wikipedia infobox, with the article titles tried in order.
+INFOBOX_ARTICLES = _ROOT / "data" / "wikipedia-club-articles.tsv"
+
+# Hosts with a name readers know better than the address.
+SITE_NAMES = {
+    "find-and-update.company-information.service.gov.uk": "Companies House",
+    "caselaw.nationalarchives.gov.uk": "National Archives case law",
+    "en.wikipedia.org": "Wikipedia",
+    "github.com": "GitHub",
+}
+
+
+def site_name(url: str) -> str:
+    """The website a link is on, as a reader would name it: bbc.co.uk, not https://www.bbc.co.uk/sport/..."""
+    parsed = _urlparse(url)
+    host = parsed.netloc.lower()
+    parts = [x for x in parsed.path.split("/") if x]
+    if host == "github.com" and len(parts) >= 2:
+        return f"{parts[1]} on GitHub"          # a dataset is known by its name, not its host
+    if host in SITE_NAMES:
+        return SITE_NAMES[host]
+    for prefix in ("www.", "m.", "en."):
+        if host.startswith(prefix):
+            host = host[len(prefix):]
+    return host
+
+
+def by_site(urls) -> list[dict]:
+    """[{site, urls}] in the order the sites first appear, each page once."""
+    out: dict[str, list[str]] = {}
+    for u in urls:
+        u = (u or "").strip()
+        if not u.startswith(("https://", "http://")):
+            continue
+        pages = out.setdefault(site_name(u), [])
+        if u not in pages:
+            pages.append(u)
+    return [{"site": s, "urls": us} for s, us in out.items()]
+
+
+def story_sources(path: _Path = STORY_SOURCES) -> dict[str, list[str]]:
+    """
+    {club_id: [url, ...]} for the pages the club stories were written from.
+    Searches whose results were used but no page opened are left out: they
+    have no page to link to.
+    """
+    out: dict[str, list[str]] = {}
+    if not _Path(path).exists():
+        return out
+    with open(path, encoding="utf-8", newline="") as fh:
+        for row in _csv.DictReader((line for line in fh if not line.startswith("#")), delimiter="\t"):
+            url = (row.get("url") or "").strip()
+            if url.startswith("http") and (row.get("link") or "").strip() != "searched_only":
+                out.setdefault((row.get("club_id") or "").strip(), []).append(url)
+    return out
+
+
+def infobox_articles(path: _Path = INFOBOX_ARTICLES) -> dict[str, str]:
+    """
+    {club_id: Wikipedia link} for the clubs whose infobox filled a gap.
+    The fetch kept the first title that was a club article and did not
+    record which, so the link is a Wikipedia search for the first title,
+    which lands on that article when it exists.
+    """
+    out: dict[str, str] = {}
+    if not _Path(path).exists():
+        return out
+    with open(path, encoding="utf-8") as fh:
+        for line in fh:
+            if line.startswith("#") or line.startswith("club_id\t"):
+                continue
+            parts = line.rstrip("\n").split("\t")
+            if len(parts) >= 3 and parts[2]:
+                out[parts[0]] = f"https://en.wikipedia.org/w/index.php?search={_quote_plus(parts[2])}&go=Go"
+    return out

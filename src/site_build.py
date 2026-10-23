@@ -1410,6 +1410,75 @@ class SiteBuilder:
             "window.H2H = " + json.dumps(payload, separators=(",", ":")) + ";",
             encoding="utf-8")
 
+    def _page_source_lookups(self, content_dir: Path) -> dict:
+        """Every per-club source the team pages draw on, read once per build."""
+        def by_club(sql):
+            out: dict[str, list[str]] = {}
+            try:
+                for cid, url in self.conn.execute(sql):
+                    if url:
+                        out.setdefault(cid, []).append(url)
+            except sqlite3.Error:      # a database without that table: no links of that kind
+                pass
+            return out
+
+        record = {}
+        for cid, source in self.conn.execute(
+                "SELECT DISTINCT club_id, source FROM standings WHERE club_id IS NOT NULL"):
+            record.setdefault(cid, set()).add((source or "").split("/", 1)[0])
+        return {
+            "story": sources_mod.story_sources(),
+            "grounds": grounds_mod.load(content_dir / "grounds.yml"),
+            "infobox": sources_mod.infobox_articles(),
+            "deductions": by_club("SELECT club_id, source_url FROM points_deductions ORDER BY season_end_year"),
+            "accounts": by_club("SELECT club_id, source_url FROM club_finances ORDER BY season_end_year DESC"),
+            "record": record,
+        }
+
+    # The source label each standings row carries, to the site it names.
+    RECORD_SOURCES = {"football-data.co.uk": "football-data", "engsoccerdata": "engsoccerdata",
+                      "wikipedia": "wikipedia-results"}
+
+    def _page_sources(self, club_id: str, facts: dict, has_story: bool, extras: dict, lookups: dict) -> list[dict]:
+        """
+        The websites behind one team page, grouped by the part of the page
+        they support: [{label, sites: [{site, urls}], note}]. A group with
+        nothing to link is left out, except the story's: a written story
+        whose pages are not yet listed says so, so the links under it are
+        never read as the story's sources.
+        """
+        groups = []
+
+        def add(label, urls, note=""):
+            sites = sources_mod.by_site(urls)
+            if sites or note:
+                groups.append({"label": label, "sites": sites, "note": note})
+
+        story = list(facts.get("sources") or []) + lookups["story"].get(club_id, [])
+        if has_story:
+            add("The story", story, "" if story else "Its sources are not listed yet.")
+        ground = lookups["grounds"].get(club_id, {})
+        add("Who owns the ground", ground.get("sources") or [])
+        add("Ground, capacity and colours", [lookups["infobox"][club_id]] if club_id in lookups["infobox"] else [])
+        add("Points deductions", lookups["deductions"].get(club_id, []))
+        add("Accounts", lookups["accounts"].get(club_id, []))
+        reg = extras.get("register", {}).get(club_id)
+        if reg and reg.get("number"):
+            add("Company register",
+                [f"https://find-and-update.company-information.service.gov.uk/company/{reg['number']}"])
+        record = [sources_mod.SOURCES[self.RECORD_SOURCES[k]]["url"]
+                  for k in sorted(lookups["record"].get(club_id, set())) if k in self.RECORD_SOURCES]
+        add("League record", record)
+        hood = []
+        if extras.get("dep", {}).get(club_id) or extras.get("income", {}).get(club_id) or self._club_catchment(club_id):
+            hood = [sources_mod.SOURCES[k]["url"] for k in ("ons-population", "ons-geography")]
+            if extras.get("income", {}).get(club_id):
+                hood.append(sources_mod.SOURCES["ons-income"]["url"])
+            if extras.get("dep", {}).get(club_id):
+                hood.append(sources_mod.SOURCES["deprivation"]["url"])
+        add("Neighbourhood figures", hood)
+        return groups
+
     def _register_rows(self, club_id: str, facts: dict, extras: dict) -> list[dict]:
         """
         Club-facts rows from Companies House and the grounds research: the
@@ -1485,6 +1554,7 @@ class SiteBuilder:
         # gets them.
         complete = self._complete_season()
         extras = self._club_table_extras(complete if complete is not None else self.seasons[-1])
+        page_sources = self._page_source_lookups(content_dir)
 
         teams_meta = []
         for t in trajectories:
@@ -1581,6 +1651,9 @@ class SiteBuilder:
                 seasons_have_deductions=any(d["points_deducted"] for d in seasons),
                 head_to_head=self._h2h_section(
                     club_id, t["canonical_name"], out_dir, club_names),
+                page_sources=self._page_sources(
+                    club_id, (club_content or {}).get("facts", {}), bool(story_sections or extra_html),
+                    extras, page_sources),
             )
 
             teams_meta.append({
