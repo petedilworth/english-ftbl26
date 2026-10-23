@@ -2986,6 +2986,7 @@ class SiteBuilder:
             r = by_id.get(w["club"])
             wear_it.append({"club_id": w["club"], "name": names[w["club"]], "since": w.get("since"),
                             "line": w.get("line", ""), "what": " ".join(str(w.get("what", "")).split()),
+                            "sources": list(w.get("sources") or []),
                             "scores": scores(r) if r else None})
 
         # Surveys, when pasted in: the club's survey figure beside its model rank.

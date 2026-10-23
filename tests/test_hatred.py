@@ -143,8 +143,10 @@ def test_the_page_builds_with_index_eras_and_wear_it(tmp_path, monkeypatch):
     (tmp_path / "content" / "hatred.yml").write_text(yaml.safe_dump({
         "despised": [], "resented": [], "surveys": [
             {"source": "Test poll", "question": "Whom?", "kind": "percent", "scores": {"giant-fc": 40}}],
-        "wear_it": [{"club": "giant-fc", "since": 1990, "line": "Nobody", "what": "Cares."}],
-        "eras": [{"decade": 2020, "club": "giant-fc", "why": "Won it."}],
+        "wear_it": [{"club": "giant-fc", "since": 1990, "line": "Nobody", "what": "Cares.",
+                     "sources": ["https://example.org/nobody"]}],
+        "eras": [{"decade": 2020, "club": "giant-fc", "why": "Won it.",
+                  "sources": ["/team/giant-fc/index.html", "https://example.org/won"]}],
     }), encoding="utf-8")
     shutil.copytree(Path(__file__).parent.parent / "templates", tmp_path / "templates")
     shutil.copytree(Path(__file__).parent.parent / "static", tmp_path / "static")
@@ -161,5 +163,21 @@ def test_the_page_builds_with_index_eras_and_wear_it(tmp_path, monkeypatch):
     assert "Test poll" in page and "40%" in page
     assert "2020s" in page and "Won it." in page and "agree" in page
     assert "Nobody" in page and "Cares." in page
+    # Sources: outside links as given, this site's own pages from the page's root.
+    assert '<a href="https://example.org/nobody" rel="noopener">1</a>' in page
+    assert '<a href="../../team/giant-fc/index.html" rel="noopener">1</a>' in page
+    assert '<a href="https://example.org/won" rel="noopener">2</a>' in page
     assert (out / "insights" / "hatred" / "hatred-data.js").exists()
     assert "The most disliked clubs" in (out / "insights" / "index.html").read_text(encoding="utf-8")
+
+
+def test_every_curated_entry_names_its_source():
+    # The page and the Sources page both say every entry carries a source, so the file must.
+    curated = hatred.load_curated()
+    entries = [(kind, e) for kind in ("despised", "resented", "wear_it", "eras") for e in curated.get(kind) or []]
+    assert entries
+    for kind, e in entries:
+        sources = e.get("sources") or []
+        assert sources, f"{kind} entry for {e.get('club')} has no source"
+        for u in sources:
+            assert u.startswith(("https://", "/")), f"{kind} entry for {e.get('club')}: {u!r} is not a link"

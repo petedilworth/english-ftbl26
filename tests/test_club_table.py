@@ -70,12 +70,19 @@ def test_the_two_tables_split_on_the_last_complete_season():
     bodies = _bodies(html)
     assert len(bodies) == 2
 
+    # The first table is the last COMPLETE season - every tier finished -
+    # not the latest one. The two used to hold the same number of clubs, so
+    # counting the latest passed by luck until a part-played season gained
+    # two clubs the finished one did not have.
     conn = sqlite3.connect(DB)
+    tiers = conn.execute("SELECT COUNT(DISTINCT tier) FROM standings").fetchone()[0]
     season = conn.execute(
-        "SELECT MAX(season_end_year) FROM standings WHERE tier = 1").fetchone()[0]
+        "SELECT MAX(season_end_year) FROM (SELECT season_end_year FROM standings"
+        " WHERE status != 'In progress' GROUP BY season_end_year"
+        " HAVING COUNT(DISTINCT tier) >= ?)", (tiers,)).fetchone()[0]
     current = conn.execute(
         "SELECT COUNT(DISTINCT club_id) FROM standings"
-        " WHERE season_end_year = ?", (season,)).fetchone()[0]
+        " WHERE season_end_year = ? AND club_id IS NOT NULL", (season,)).fetchone()[0]
     assert len(_rows(bodies[0])) == current
 
 
