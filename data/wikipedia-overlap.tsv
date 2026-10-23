@@ -1,0 +1,253 @@
+# How closely each club story follows its Wikipedia article. Written by
+# scripts/check_wikipedia_overlap.py; see its docstring for the measures.
+club_id	article	url	story_words	share_5	share_8	longest	passages
+accrington-stanley-fc	Accrington Stanley F.C.	https://en.wikipedia.org/wiki/Accrington_Stanley_F.C.	657	0.014	0.0	7	
+afc-rushden-and-diamonds-fc	AFC Rushden & Diamonds	https://en.wikipedia.org/wiki/AFC_Rushden_%26_Diamonds	13	0.0	0.0	5	
+afc-telford-united-fc	AFC Telford United	https://en.wikipedia.org/wiki/AFC_Telford_United	702	0.007	0.0	5	
+afc-totton-fc	A.F.C. Totton	https://en.wikipedia.org/wiki/A.F.C._Totton	64	0.0	0.0	3	
+afc-whyteleafe-fc	AFC Whyteleafe	https://en.wikipedia.org/wiki/AFC_Whyteleafe	51	0.0	0.0	4	
+afc-wimbledon	AFC Wimbledon	https://en.wikipedia.org/wiki/AFC_Wimbledon	890	0.006	0.0	5	
+aldershot-town-fc	Aldershot Town F.C.	https://en.wikipedia.org/wiki/Aldershot_Town_F.C.	509	0.01	0.0	6	
+alfreton-town-fc	Alfreton Town F.C.	https://en.wikipedia.org/wiki/Alfreton_Town_F.C.	407	0.025	0.003	8	
+altrincham-fc	Altrincham F.C.	https://en.wikipedia.org/wiki/Altrincham_F.C.	415	0.024	0.002	8	
+alvechurch-fc	Alvechurch F.C.	https://en.wikipedia.org/wiki/Alvechurch_F.C.	68	0.0	0.0	3	
+anstey-nomads-fc	Anstey Nomads F.C.	https://en.wikipedia.org/wiki/Anstey_Nomads_F.C.	29	0.0	0.0	4	
+arsenal-fc	Arsenal F.C.	https://en.wikipedia.org/wiki/Arsenal_F.C.	780	0.004	0.0	5	
+ashton-united-fc	Ashton United F.C.	https://en.wikipedia.org/wiki/Ashton_United_F.C.	33	0.0	0.0	0	
+aston-villa-fc	Aston Villa F.C.	https://en.wikipedia.org/wiki/Aston_Villa_F.C.	619	0.007	0.002	8	
+aveley-fc	Aveley F.C.	https://en.wikipedia.org/wiki/Aveley_F.C.	38	0.0	0.0	0	
+avro-fc	Avro F.C.	https://en.wikipedia.org/wiki/Avro_F.C.	41	0.054	0.0	6	
+bamber-bridge-fc	Bamber Bridge F.C.	https://en.wikipedia.org/wiki/Bamber_Bridge_F.C.	52	0.0	0.0	0	
+banbury-united-fc	Banbury United F.C.	https://en.wikipedia.org/wiki/Banbury_United_F.C.	39	0.029	0.0	5	
+barnet-fc	Barnet F.C.	https://en.wikipedia.org/wiki/Barnet_F.C.	647	0.005	0.0	5	
+barnsley-fc	Barnsley F.C.	https://en.wikipedia.org/wiki/Barnsley_F.C.	520	0.008	0.0	6	
+barrow-afc	Barrow A.F.C.	https://en.wikipedia.org/wiki/Barrow_A.F.C.	650	0.014	0.003	9	
+basingstoke-town-fc	Basingstoke Town F.C.	https://en.wikipedia.org/wiki/Basingstoke_Town_F.C.	76	0.0	0.0	3	
+bath-city-fc	Bath City F.C.	https://en.wikipedia.org/wiki/Bath_City_F.C.	545	0.009	0.0	7	
+bedford-town-fc	Bedford Town F.C.	https://en.wikipedia.org/wiki/Bedford_Town_F.C.	52	0.0	0.0	0	
+berkhamsted-fc	Berkhamsted F.C.	https://en.wikipedia.org/wiki/Berkhamsted_F.C.	64	0.0	0.0	0	
+billericay-town-fc	Billericay Town F.C.	https://en.wikipedia.org/wiki/Billericay_Town_F.C.	62	0.0	0.0	4	
+birmingham-city-fc	Birmingham City F.C.	https://en.wikipedia.org/wiki/Birmingham_City_F.C.	823	0.015	0.002	9	
+bishops-stortford-fc	Bishop's Stortford F.C.	https://en.wikipedia.org/wiki/Bishop%27s_Stortford_F.C.	31	0.0	0.0	3	
+blackburn-rovers-fc	Blackburn Rovers F.C.	https://en.wikipedia.org/wiki/Blackburn_Rovers_F.C.	276	0.029	0.0	7	
+blackpool-fc	Blackpool F.C.	https://en.wikipedia.org/wiki/Blackpool_F.C.	497	0.004	0.0	5	
+bolton-wanderers-fc	Bolton Wanderers F.C.	https://en.wikipedia.org/wiki/Bolton_Wanderers_F.C.	577	0.014	0.0	6	
+boreham-wood-fc	Boreham Wood F.C.	https://en.wikipedia.org/wiki/Boreham_Wood_F.C.	236	0.0	0.0	4	
+boston-united-fc	Boston United F.C.	https://en.wikipedia.org/wiki/Boston_United_F.C.	529	0.013	0.0	6	
+bournemouth-fc	Bournemouth F.C.	https://en.wikipedia.org/wiki/Bournemouth_F.C.	804	0.0	0.0	4	
+brackley-town-fc	Brackley Town F.C.	https://en.wikipedia.org/wiki/Brackley_Town_F.C.	204	0.02	0.005	8	
+bracknell-town-fc	Bracknell Town F.C.	https://en.wikipedia.org/wiki/Bracknell_Town_F.C.	113	0.0	0.0	3	
+bradford-city-fc	Bradford City A.F.C.	https://en.wikipedia.org/wiki/Bradford_City_A.F.C.	682	0.001	0.0	5	
+bradford-park-avenue-fc	Bradford (Park Avenue) A.F.C.	https://en.wikipedia.org/wiki/Bradford_%28Park_Avenue%29_A.F.C.	311	0.023	0.0	8	
+braintree-town-fc	Braintree Town F.C.	https://en.wikipedia.org/wiki/Braintree_Town_F.C.	262	0.039	0.004	8	
+brentford-fc	Brentford F.C.	https://en.wikipedia.org/wiki/Brentford_F.C.	562	0.005	0.0	5	
+brentwood-town-fc	Brentwood Town F.C.	https://en.wikipedia.org/wiki/Brentwood_Town_F.C.	38	0.0	0.0	3	
+brighton-and-hove-albion-fc	Brighton & Hove Albion F.C.	https://en.wikipedia.org/wiki/Brighton_%26_Hove_Albion_F.C.	1155	0.008	0.0	7	
+bristol-city-fc	Bristol City F.C.	https://en.wikipedia.org/wiki/Bristol_City_F.C.	587	0.003	0.0	6	
+bristol-rovers-fc	Bristol Rovers F.C.	https://en.wikipedia.org/wiki/Bristol_Rovers_F.C.	476	0.002	0.0	5	
+bromley-fc	Bromley F.C.	https://en.wikipedia.org/wiki/Bromley_F.C.	219	0.056	0.009	9	
+bromsgrove-rovers-fc	Bromsgrove Rovers F.C.	https://en.wikipedia.org/wiki/Bromsgrove_Rovers_F.C.	61	0.018	0.0	5	
+burgess-hill-town-fc	Burgess Hill Town F.C.	https://en.wikipedia.org/wiki/Burgess_Hill_Town_F.C.	43	0.0	0.0	4	
+burnley-fc	Burnley F.C.	https://en.wikipedia.org/wiki/Burnley_F.C.	1065	0.011	0.006	13	the first by a member of the royal family to a professional football
+burton-albion-fc	Burton Albion F.C.	https://en.wikipedia.org/wiki/Burton_Albion_F.C.	1767	0.01	0.001	8	
+bury-fc	Bury F.C.	https://en.wikipedia.org/wiki/Bury_F.C.	71	0.06	0.0	7	
+bury-town-fc	Bury Town F.C.	https://en.wikipedia.org/wiki/Bury_Town_F.C.	55	0.0	0.0	3	
+buxton-fc	Buxton F.C.	https://en.wikipedia.org/wiki/Buxton_F.C.	39	0.057	0.0	6	
+cambridge-united-fc	Cambridge United F.C.	https://en.wikipedia.org/wiki/Cambridge_United_F.C.	1600	0.006	0.001	9	
+cardiff-city-fc	Cardiff City F.C.	https://en.wikipedia.org/wiki/Cardiff_City_F.C.	1936	0.004	0.0	6	
+carlisle-united-fc	Carlisle United F.C.	https://en.wikipedia.org/wiki/Carlisle_United_F.C.	1596	0.006	0.001	8	
+carshalton-athletic-fc	Carshalton Athletic F.C.	https://en.wikipedia.org/wiki/Carshalton_Athletic_F.C.	48	0.0	0.0	3	
+charlton-athletic-fc	Charlton Athletic F.C.	https://en.wikipedia.org/wiki/Charlton_Athletic_F.C.	855	0.019	0.006	12	charlton athletic was formed on 9 june 1905 by a group of
+chatham-town-fc	Chatham Town F.C.	https://en.wikipedia.org/wiki/Chatham_Town_F.C.	28	0.0	0.0	3	
+chelmsford-city-fc	Chelmsford City F.C.	https://en.wikipedia.org/wiki/Chelmsford_City_F.C.	21	0.059	0.0	5	
+chelsea-fc	Chelsea F.C.	https://en.wikipedia.org/wiki/Chelsea_F.C.	2248	0.006	0.001	9	
+cheltenham-town-fc	Cheltenham Town F.C.	https://en.wikipedia.org/wiki/Cheltenham_Town_F.C.	1426	0.006	0.0	5	
+chertsey-town-fc	Chertsey Town F.C.	https://en.wikipedia.org/wiki/Chertsey_Town_F.C.	36	0.031	0.0	5	
+chesham-united-fc	Chesham United F.C.	https://en.wikipedia.org/wiki/Chesham_United_F.C.	20	0.0	0.0	3	
+cheshunt-fc	Cheshunt F.C.	https://en.wikipedia.org/wiki/Cheshunt_F.C.	72	0.0	0.0	0	
+chester-city-fc	Chester City F.C.	https://en.wikipedia.org/wiki/Chester_City_F.C.	52	0.0	0.0	4	
+chesterfield-fc	Chesterfield F.C.	https://en.wikipedia.org/wiki/Chesterfield_F.C.	1824	0.007	0.002	10	
+chichester-city-fc	Chichester City F.C.	https://en.wikipedia.org/wiki/Chichester_City_F.C.	68	0.0	0.0	3	
+chippenham-town-fc	Chippenham Town F.C.	https://en.wikipedia.org/wiki/Chippenham_Town_F.C.	66	0.0	0.0	3	
+chorley-fc	Chorley F.C.	https://en.wikipedia.org/wiki/Chorley_F.C.	59	0.0	0.0	3	
+cleethorpes-town-fc	Cleethorpes Town F.C.	https://en.wikipedia.org/wiki/Cleethorpes_Town_F.C.	46	0.0	0.0	0	
+colchester-united-fc	Colchester United F.C.	https://en.wikipedia.org/wiki/Colchester_United_F.C.	1726	0.007	0.001	8	
+coventry-city-fc	Coventry City F.C.	https://en.wikipedia.org/wiki/Coventry_City_F.C.	779	0.014	0.001	8	
+crawley-town-fc	Crawley Town F.C.	https://en.wikipedia.org/wiki/Crawley_Town_F.C.	1582	0.0	0.0	5	
+cray-wanderers-fc	Cray Wanderers F.C.	https://en.wikipedia.org/wiki/Cray_Wanderers_F.C.	55	0.0	0.0	4	
+crewe-alexandra-fc	Crewe Alexandra F.C.	https://en.wikipedia.org/wiki/Crewe_Alexandra_F.C.	1908	0.017	0.003	12	in august 1877 as the football division of crewe alexandra cricket club
+crystal-palace-fc	Crystal Palace F.C.	https://en.wikipedia.org/wiki/Crystal_Palace_F.C.	1582	0.007	0.0	6	
+curzon-ashton-fc	Curzon Ashton F.C.	https://en.wikipedia.org/wiki/Curzon_Ashton_F.C.	38	0.0	0.0	0	
+dagenham-and-redbridge-fc	Dagenham & Redbridge F.C.	https://en.wikipedia.org/wiki/Dagenham_%26_Redbridge_F.C.	36	0.0	0.0	3	
+darlington-fc	Darlington F.C.	https://en.wikipedia.org/wiki/Darlington_F.C.	73	0.0	0.0	4	
+dartford-fc	Dartford F.C.	https://en.wikipedia.org/wiki/Dartford_F.C.	42	0.0	0.0	3	
+derby-county-fc	Derby County F.C.	https://en.wikipedia.org/wiki/Derby_County_F.C.	1511	0.009	0.002	10	
+doncaster-rovers-fc	Doncaster Rovers F.C.	https://en.wikipedia.org/wiki/Doncaster_Rovers_F.C.	1509	0.007	0.0	7	
+dorking-wanderers-fc	Dorking Wanderers F.C.	https://en.wikipedia.org/wiki/Dorking_Wanderers_F.C.	71	0.0	0.0	0	
+dover-athletic-fc	Dover Athletic F.C.	https://en.wikipedia.org/wiki/Dover_Athletic_F.C.	39	0.0	0.0	3	
+dulwich-hamlet-fc	Dulwich Hamlet F.C.	https://en.wikipedia.org/wiki/Dulwich_Hamlet_F.C.	81	0.0	0.0	3	
+eastbourne-borough-fc	Eastbourne Borough F.C.	https://en.wikipedia.org/wiki/Eastbourne_Borough_F.C.	58	0.0	0.0	0	
+eastleigh-fc	Eastleigh F.C.	https://en.wikipedia.org/wiki/Eastleigh_F.C.	1419	0.014	0.004	10	
+emley-fc	Wakefield F.C.	https://en.wikipedia.org/wiki/Wakefield_F.C.	46	0.0	0.0	3	
+enfield-fc	Enfield F.C.	https://en.wikipedia.org/wiki/Enfield_F.C.	53	0.0	0.0	0	
+everton-fc	Everton F.C.	https://en.wikipedia.org/wiki/Everton_F.C.	983	0.002	0.0	5	
+evesham-united-fc	Evesham United F.C.	https://en.wikipedia.org/wiki/Evesham_United_F.C.	66	0.0	0.0	3	
+exeter-city-fc	Exeter City F.C.	https://en.wikipedia.org/wiki/Exeter_City_F.C.	685	0.01	0.0	7	
+farnham-town-fc	Farnham Town F.C.	https://en.wikipedia.org/wiki/Farnham_Town_F.C.	36	0.0	0.0	3	
+fc-halifax-town	FC Halifax Town	https://en.wikipedia.org/wiki/FC_Halifax_Town	1942	0.003	0.001	8	
+fc-united-of-manchester-fc	F.C. United of Manchester	https://en.wikipedia.org/wiki/F.C._United_of_Manchester	59	0.0	0.0	4	
+fleetwood-town-fc	Fleetwood Town F.C.	https://en.wikipedia.org/wiki/Fleetwood_Town_F.C.	1559	0.009	0.001	8	
+folkestone-invicta-fc	Folkestone Invicta F.C.	https://en.wikipedia.org/wiki/Folkestone_Invicta_F.C.	48	0.0	0.0	0	
+forest-green-rovers-fc	Forest Green Rovers F.C.	https://en.wikipedia.org/wiki/Forest_Green_Rovers_F.C.	1762	0.005	0.001	8	
+frome-town-fc	Frome Town F.C.	https://en.wikipedia.org/wiki/Frome_Town_F.C.	80	0.0	0.0	4	
+fulham-fc	Fulham F.C.	https://en.wikipedia.org/wiki/Fulham_F.C.	719	0.021	0.003	9	
+fylde-afc	AFC Fylde	https://en.wikipedia.org/wiki/AFC_Fylde	50	0.0	0.0	4	
+gainsborough-trinity-fc	Gainsborough Trinity F.C.	https://en.wikipedia.org/wiki/Gainsborough_Trinity_F.C.	18	0.0	0.0	0	
+gateshead-fc	Gateshead F.C.	https://en.wikipedia.org/wiki/Gateshead_F.C.	1950	0.004	0.0	6	
+gillingham-fc	Gillingham F.C.	https://en.wikipedia.org/wiki/Gillingham_F.C.	1624	0.004	0.0	6	
+gloucester-city-fc	Gloucester City A.F.C.	https://en.wikipedia.org/wiki/Gloucester_City_A.F.C.	56	0.0	0.0	4	
+gosport-borough-fc	Gosport Borough F.C.	https://en.wikipedia.org/wiki/Gosport_Borough_F.C.	54	0.0	0.0	0	
+grimsby-town-fc	Grimsby Town F.C.	https://en.wikipedia.org/wiki/Grimsby_Town_F.C.	1591	0.006	0.001	8	
+guiseley-afc	Guiseley A.F.C.	https://en.wikipedia.org/wiki/Guiseley_A.F.C.	29	0.0	0.0	3	
+halesowen-town-fc	Halesowen Town F.C.	https://en.wikipedia.org/wiki/Halesowen_Town_F.C.	37	0.0	0.0	3	
+hampton-and-richmond-borough-fc	Hampton & Richmond Borough F.C.	https://en.wikipedia.org/wiki/Hampton_%26_Richmond_Borough_F.C.	65	0.0	0.0	0	
+hanwell-town-fc	Hanwell Town F.C.	https://en.wikipedia.org/wiki/Hanwell_Town_F.C.	27	0.0	0.0	4	
+hanworth-villa-fc	Hanworth Villa F.C.	https://en.wikipedia.org/wiki/Hanworth_Villa_F.C.	50	0.0	0.0	4	
+harborough-town-fc	Harborough Town F.C.	https://en.wikipedia.org/wiki/Harborough_Town_F.C.	41	0.0	0.0	0	
+harrogate-town-afc	Harrogate Town A.F.C.	https://en.wikipedia.org/wiki/Harrogate_Town_A.F.C.	1599	0.003	0.0	5	
+hartlepool-united-fc	Hartlepool United F.C.	https://en.wikipedia.org/wiki/Hartlepool_United_F.C.	1658	0.007	0.001	8	
+havant-and-waterlooville-fc	Havant & Waterlooville F.C.	https://en.wikipedia.org/wiki/Havant_%26_Waterlooville_F.C.	40	0.0	0.0	0	
+hebburn-town-fc	Hebburn Town F.C.	https://en.wikipedia.org/wiki/Hebburn_Town_F.C.	56	0.0	0.0	4	
+hednesford-town-fc	Hednesford Town F.C.	https://en.wikipedia.org/wiki/Hednesford_Town_F.C.	64	0.0	0.0	3	
+hemel-hempstead-town-fc	Hemel Hempstead Town F.C.	https://en.wikipedia.org/wiki/Hemel_Hempstead_Town_F.C.	39	0.057	0.0	6	
+hereford-united-fc	Hereford United F.C.	https://en.wikipedia.org/wiki/Hereford_United_F.C.	41	0.0	0.0	3	
+hitchin-town-fc	Hitchin Town F.C.	https://en.wikipedia.org/wiki/Hitchin_Town_F.C.	57	0.0	0.0	3	
+hornchurch-fc	Hornchurch F.C.	https://en.wikipedia.org/wiki/Hornchurch_F.C.	36	0.0	0.0	3	
+horsham-fc	Horsham F.C.	https://en.wikipedia.org/wiki/Horsham_F.C.	36	0.0	0.0	4	
+huddersfield-town-fc	Huddersfield Town A.F.C.	https://en.wikipedia.org/wiki/Huddersfield_Town_A.F.C.	1692	0.005	0.0	6	
+hull-city-fc	Hull City A.F.C.	https://en.wikipedia.org/wiki/Hull_City_A.F.C.	1978	0.014	0.003	12	reached the top flight for the first time in the club's history
+hyde-united-fc	Hyde United F.C.	https://en.wikipedia.org/wiki/Hyde_United_F.C.	82	0.0	0.0	0	
+ilkeston-town-fc	Ilkeston Town F.C.	https://en.wikipedia.org/wiki/Ilkeston_Town_F.C.	56	0.0	0.0	4	
+ipswich-town-fc	Ipswich Town F.C.	https://en.wikipedia.org/wiki/Ipswich_Town_F.C.	2275	0.004	0.0	8	
+kettering-town-fc	Kettering Town F.C.	https://en.wikipedia.org/wiki/Kettering_Town_F.C.	56	0.0	0.0	3	
+kidderminster-harriers-fc	Kidderminster Harriers F.C.	https://en.wikipedia.org/wiki/Kidderminster_Harriers_F.C.	94	0.0	0.0	3	
+kings-lynn-town-fc	King's Lynn Town F.C.	https://en.wikipedia.org/wiki/King%27s_Lynn_Town_F.C.	67	0.0	0.0	3	
+lancaster-city-fc	Lancaster City F.C.	https://en.wikipedia.org/wiki/Lancaster_City_F.C.	30	0.0	0.0	3	
+leatherhead-fc	Leatherhead F.C.	https://en.wikipedia.org/wiki/Leatherhead_F.C.	60	0.0	0.0	3	
+leeds-united-fc	Leeds United F.C.	https://en.wikipedia.org/wiki/Leeds_United_F.C.	1271	0.007	0.001	8	
+leek-town-fc	Leek Town F.C.	https://en.wikipedia.org/wiki/Leek_Town_F.C.	36	0.031	0.0	5	
+leicester-city-fc	Leicester City F.C.	https://en.wikipedia.org/wiki/Leicester_City_F.C.	913	0.018	0.003	9	
+leighton-town-fc	Leighton Town F.C.	https://en.wikipedia.org/wiki/Leighton_Town_F.C.	30	0.0	0.0	3	
+leiston-fc	Leiston F.C.	https://en.wikipedia.org/wiki/Leiston_F.C.	41	0.0	0.0	4	
+lewes-fc	Lewes F.C.	https://en.wikipedia.org/wiki/Lewes_F.C.	86	0.0	0.0	3	
+leyton-orient-fc	Leyton Orient F.C.	https://en.wikipedia.org/wiki/Leyton_Orient_F.C.	1801	0.009	0.002	9	
+lincoln-city-fc	Lincoln City F.C.	https://en.wikipedia.org/wiki/Lincoln_City_F.C.	1400	0.005	0.0	7	
+liverpool-fc	Liverpool F.C.	https://en.wikipedia.org/wiki/Liverpool_F.C.	1458	0.01	0.001	8	
+luton-town-fc	Luton Town F.C.	https://en.wikipedia.org/wiki/Luton_Town_F.C.	703	0.01	0.0	7	
+macclesfield-town-fc	Macclesfield Town F.C.	https://en.wikipedia.org/wiki/Macclesfield_Town_F.C.	93	0.022	0.0	5	
+maidenhead-united-fc	Maidenhead United F.C.	https://en.wikipedia.org/wiki/Maidenhead_United_F.C.	53	0.0	0.0	0	
+maidstone-united-fc	Maidstone United F.C.	https://en.wikipedia.org/wiki/Maidstone_United_F.C.	65	0.0	0.0	0	
+maldon-and-tiptree-fc	Maldon & Tiptree F.C.	https://en.wikipedia.org/wiki/Maldon_%26_Tiptree_F.C.	34	0.0	0.0	0	
+malvern-town-fc	Malvern Town F.C.	https://en.wikipedia.org/wiki/Malvern_Town_F.C.	61	0.0	0.0	0	
+manchester-city-fc	Manchester City F.C.	https://en.wikipedia.org/wiki/Manchester_City_F.C.	1940	0.011	0.0	7	
+manchester-united-fc	Manchester United F.C.	https://en.wikipedia.org/wiki/Manchester_United_F.C.	1242	0.012	0.002	9	
+mansfield-town-fc	Mansfield Town F.C.	https://en.wikipedia.org/wiki/Mansfield_Town_F.C.	1886	0.005	0.001	9	
+marine-fc	Marine A.F.C.	https://en.wikipedia.org/wiki/Marine_A.F.C.	43	0.0	0.0	5	
+merthyr-tydfil-fc	Merthyr Tydfil F.C.	https://en.wikipedia.org/wiki/Merthyr_Tydfil_F.C.	46	0.0	0.0	0	
+middlesbrough-fc	Middlesbrough F.C.	https://en.wikipedia.org/wiki/Middlesbrough_F.C.	1681	0.002	0.0	6	
+millwall-fc	Millwall F.C.	https://en.wikipedia.org/wiki/Millwall_F.C.	1238	0.023	0.006	14	no one likes us we don't care the myth and reality of millwall fandom
+mk-dons-fc	Milton Keynes Dons F.C.	https://en.wikipedia.org/wiki/Milton_Keynes_Dons_F.C.	2161	0.009	0.002	12	supporters association the wimbledon independent supporters association and the football supporters federation
+morecambe-fc	Morecambe F.C.	https://en.wikipedia.org/wiki/Morecambe_F.C.	686	0.028	0.001	8	
+needham-market-fc	Needham Market F.C.	https://en.wikipedia.org/wiki/Needham_Market_F.C.	23	0.0	0.0	4	
+newcastle-united-fc	Newcastle United F.C.	https://en.wikipedia.org/wiki/Newcastle_United_F.C.	951	0.003	0.0	5	
+newport-county-fc	Newport County A.F.C.	https://en.wikipedia.org/wiki/Newport_County_A.F.C.	1542	0.007	0.0	7	
+northampton-town-fc	Northampton Town F.C.	https://en.wikipedia.org/wiki/Northampton_Town_F.C.	1597	0.006	0.0	6	
+norwich-city-fc	Norwich City F.C.	https://en.wikipedia.org/wiki/Norwich_City_F.C.	1728	0.007	0.001	9	
+nottingham-forest-fc	Nottingham Forest F.C.	https://en.wikipedia.org/wiki/Nottingham_Forest_F.C.	755	0.027	0.008	10	
+notts-county-fc	Notts County F.C.	https://en.wikipedia.org/wiki/Notts_County_F.C.	1725	0.005	0.001	8	
+oldham-athletic-fc	Oldham Athletic A.F.C.	https://en.wikipedia.org/wiki/Oldham_Athletic_A.F.C.	2168	0.005	0.001	9	
+oxford-city-fc	Oxford City F.C.	https://en.wikipedia.org/wiki/Oxford_City_F.C.	57	0.0	0.0	0	
+oxford-united-fc	Oxford United F.C.	https://en.wikipedia.org/wiki/Oxford_United_F.C.	1389	0.01	0.001	8	
+peterborough-sports-fc	Peterborough Sports F.C.	https://en.wikipedia.org/wiki/Peterborough_Sports_F.C.	42	0.0	0.0	0	
+peterborough-united-fc	Peterborough United F.C.	https://en.wikipedia.org/wiki/Peterborough_United_F.C.	599	0.003	0.0	6	
+plymouth-argyle-fc	Plymouth Argyle F.C.	https://en.wikipedia.org/wiki/Plymouth_Argyle_F.C.	1689	0.004	0.0	6	
+plymouth-parkway-fc	Plymouth Parkway F.C.	https://en.wikipedia.org/wiki/Plymouth_Parkway_F.C.	51	0.0	0.0	4	
+poole-town-fc	Poole Town F.C.	https://en.wikipedia.org/wiki/Poole_Town_F.C.	73	0.0	0.0	4	
+port-vale-fc	Port Vale F.C.	https://en.wikipedia.org/wiki/Port_Vale_F.C.	1746	0.009	0.0	7	
+portsmouth-fc	Portsmouth F.C.	https://en.wikipedia.org/wiki/Portsmouth_F.C.	1522	0.007	0.0	6	
+preston-north-end-fc	Preston North End F.C.	https://en.wikipedia.org/wiki/Preston_North_End_F.C.	1509	0.005	0.0	7	
+queens-park-rangers-fc	Queens Park Rangers F.C.	https://en.wikipedia.org/wiki/Queens_Park_Rangers_F.C.	1542	0.001	0.0	5	
+quorn-fc	Quorn F.C.	https://en.wikipedia.org/wiki/Quorn_F.C.	30	0.038	0.0	5	
+racing-club-warwick-fc	Racing Club Warwick F.C.	https://en.wikipedia.org/wiki/Racing_Club_Warwick_F.C.	79	0.0	0.0	0	
+radcliffe-fc	Radcliffe F.C.	https://en.wikipedia.org/wiki/Radcliffe_F.C.	33	0.069	0.0	6	
+ramsgate-fc	Ramsgate F.C.	https://en.wikipedia.org/wiki/Ramsgate_F.C.	54	0.0	0.0	0	
+reading-fc	Reading F.C.	https://en.wikipedia.org/wiki/Reading_F.C.	1971	0.005	0.0	7	
+real-bedford-fc	Real Bedford F.C.	https://en.wikipedia.org/wiki/Real_Bedford_F.C.	69	0.0	0.0	3	
+redcar-athletic-fc	Redcar Athletic F.C.	https://en.wikipedia.org/wiki/Redcar_Athletic_F.C.	35	0.0	0.0	3	
+redditch-united-fc	Redditch United F.C.	https://en.wikipedia.org/wiki/Redditch_United_F.C.	67	0.0	0.0	0	
+rochdale-fc	Rochdale A.F.C.	https://en.wikipedia.org/wiki/Rochdale_A.F.C.	1610	0.002	0.0	7	
+rotherham-united-fc	Rotherham United F.C.	https://en.wikipedia.org/wiki/Rotherham_United_F.C.	1574	0.004	0.0	6	
+rushall-olympic-fc	Rushall Olympic F.C.	https://en.wikipedia.org/wiki/Rushall_Olympic_F.C.	57	0.0	0.0	0	
+salford-city-fc	Salford City F.C.	https://en.wikipedia.org/wiki/Salford_City_F.C.	1299	0.009	0.0	7	
+salisbury-city-fc	Salisbury City F.C.	https://en.wikipedia.org/wiki/Salisbury_City_F.C.	52	0.0	0.0	3	
+scarborough-fc	Scarborough F.C.	https://en.wikipedia.org/wiki/Scarborough_F.C.	49	0.0	0.0	3	
+scunthorpe-united-fc	Scunthorpe United F.C.	https://en.wikipedia.org/wiki/Scunthorpe_United_F.C.	1810	0.013	0.002	11	
+sheffield-united-fc	Sheffield United F.C.	https://en.wikipedia.org/wiki/Sheffield_United_F.C.	1792	0.007	0.0	7	
+sheffield-wednesday-fc	Sheffield Wednesday F.C.	https://en.wikipedia.org/wiki/Sheffield_Wednesday_F.C.	1810	0.009	0.002	10	
+sholing-fc	Sholing F.C.	https://en.wikipedia.org/wiki/Sholing_F.C.	52	0.0	0.0	3	
+shrewsbury-town-fc	Shrewsbury Town F.C.	https://en.wikipedia.org/wiki/Shrewsbury_Town_F.C.	1513	0.007	0.001	9	
+slough-town-fc	Slough Town F.C.	https://en.wikipedia.org/wiki/Slough_Town_F.C.	44	0.0	0.0	0	
+solihull-moors-fc	Solihull Moors F.C.	https://en.wikipedia.org/wiki/Solihull_Moors_F.C.	1577	0.003	0.0	6	
+south-shields-fc	South Shields F.C.	https://en.wikipedia.org/wiki/South_Shields_F.C.	80	0.013	0.0	5	
+southampton-fc	Southampton F.C.	https://en.wikipedia.org/wiki/Southampton_F.C.	2026	0.012	0.005	16	on 21 november 1885 by members of the st mary's church of england young men's association
+southend-united-fc	Southend United F.C.	https://en.wikipedia.org/wiki/Southend_United_F.C.	1860	0.003	0.0	6	
+southport-fc	Southport F.C.	https://en.wikipedia.org/wiki/Southport_F.C.	43	0.0	0.0	3	
+spalding-united-fc	Spalding United F.C.	https://en.wikipedia.org/wiki/Spalding_United_F.C.	64	0.0	0.0	0	
+spennymoor-town-fc	Spennymoor Town F.C.	https://en.wikipedia.org/wiki/Spennymoor_Town_F.C.	39	0.029	0.0	5	
+st-albans-city-fc	St Albans City F.C.	https://en.wikipedia.org/wiki/St_Albans_City_F.C.	58	0.0	0.0	3	
+stamford-fc	Stamford A.F.C.	https://en.wikipedia.org/wiki/Stamford_A.F.C.	73	0.0	0.0	3	
+stevenage-fc	Stevenage F.C.	https://en.wikipedia.org/wiki/Stevenage_F.C.	1610	0.014	0.004	12	in the chiltern youth league on a roped off pitch at the
+stockport-county-fc	Stockport County F.C.	https://en.wikipedia.org/wiki/Stockport_County_F.C.	461	0.037	0.007	10	
+stockton-town-fc	Stockton Town F.C.	https://en.wikipedia.org/wiki/Stockton_Town_F.C.	62	0.034	0.0	6	
+stoke-city-fc	Stoke City F.C.	https://en.wikipedia.org/wiki/Stoke_City_F.C.	1545	0.005	0.0	7	
+stourbridge-fc	Stourbridge F.C.	https://en.wikipedia.org/wiki/Stourbridge_F.C.	63	0.0	0.0	4	
+stratford-town-fc	Stratford Town F.C.	https://en.wikipedia.org/wiki/Stratford_Town_F.C.	62	0.0	0.0	0	
+sunderland-afc	Sunderland A.F.C.	https://en.wikipedia.org/wiki/Sunderland_A.F.C.	700	0.006	0.0	6	
+sutton-united-fc	Sutton United F.C.	https://en.wikipedia.org/wiki/Sutton_United_F.C.	1488	0.01	0.001	9	
+swansea-city-fc	Swansea City A.F.C.	https://en.wikipedia.org/wiki/Swansea_City_A.F.C.	2367	0.008	0.001	9	
+swindon-town-fc	Swindon Town F.C.	https://en.wikipedia.org/wiki/Swindon_Town_F.C.	1825	0.003	0.0	5	
+tamworth-fc	Tamworth F.C.	https://en.wikipedia.org/wiki/Tamworth_F.C.	1578	0.005	0.0	7	
+taunton-town-fc	Taunton Town F.C.	https://en.wikipedia.org/wiki/Taunton_Town_F.C.	33	0.138	0.0	7	
+three-bridges-fc	Three Bridges F.C.	https://en.wikipedia.org/wiki/Three_Bridges_F.C.	33	0.0	0.0	0	
+tonbridge-angels-fc	Tonbridge Angels F.C.	https://en.wikipedia.org/wiki/Tonbridge_Angels_F.C.	51	0.021	0.0	5	
+torquay-united-fc	Torquay United F.C.	https://en.wikipedia.org/wiki/Torquay_United_F.C.	61	0.0	0.0	4	
+tottenham-hotspur-fc	Tottenham Hotspur F.C.	https://en.wikipedia.org/wiki/Tottenham_Hotspur_F.C.	1280	0.006	0.0	6	
+tranmere-rovers-fc	Tranmere Rovers F.C.	https://en.wikipedia.org/wiki/Tranmere_Rovers_F.C.	1486	0.007	0.0	7	
+truro-city-fc	Truro City F.C.	https://en.wikipedia.org/wiki/Truro_City_F.C.	1558	0.001	0.0	5	
+uxbridge-fc	Uxbridge F.C.	https://en.wikipedia.org/wiki/Uxbridge_F.C.	44	0.0	0.0	4	
+walsall-fc	Walsall F.C.	https://en.wikipedia.org/wiki/Walsall_F.C.	1442	0.009	0.0	7	
+walton-and-hersham-fc	Walton & Hersham F.C.	https://en.wikipedia.org/wiki/Walton_%26_Hersham_F.C.	35	0.0	0.0	0	
+warrington-rylands-fc	Warrington Rylands 1906 F.C.	https://en.wikipedia.org/wiki/Warrington_Rylands_1906_F.C.	44	0.0	0.0	0	
+warrington-town-fc	Warrington Town F.C.	https://en.wikipedia.org/wiki/Warrington_Town_F.C.	45	0.0	0.0	0	
+watford-fc	Watford F.C.	https://en.wikipedia.org/wiki/Watford_F.C.	1465	0.001	0.0	5	
+wealdstone-fc	Wealdstone F.C.	https://en.wikipedia.org/wiki/Wealdstone_F.C.	1677	0.004	0.001	9	
+welling-united-fc	Welling United F.C.	https://en.wikipedia.org/wiki/Welling_United_F.C.	69	0.0	0.0	3	
+west-bromwich-albion-fc	West Bromwich Albion F.C.	https://en.wikipedia.org/wiki/West_Bromwich_Albion_F.C.	1680	0.012	0.002	10	
+west-ham-united-fc	West Ham United F.C.	https://en.wikipedia.org/wiki/West_Ham_United_F.C.	1487	0.009	0.001	9	
+weston-super-mare-fc	Weston-super-Mare A.F.C.	https://en.wikipedia.org/wiki/Weston-super-Mare_A.F.C.	50	0.0	0.0	0	
+whitby-town-fc	Whitby Town F.C.	https://en.wikipedia.org/wiki/Whitby_Town_F.C.	40	0.0	0.0	3	
+whitehawk-fc	Whitehawk F.C.	https://en.wikipedia.org/wiki/Whitehawk_F.C.	28	0.0	0.0	4	
+wigan-athletic-fc	Wigan Athletic F.C.	https://en.wikipedia.org/wiki/Wigan_Athletic_F.C.	1958	0.003	0.0	5	
+wimborne-town-fc	Wimborne Town F.C.	https://en.wikipedia.org/wiki/Wimborne_Town_F.C.	49	0.0	0.0	3	
+wingate-and-finchley-fc	Wingate & Finchley F.C.	https://en.wikipedia.org/wiki/Wingate_%26_Finchley_F.C.	52	0.0	0.0	3	
+woking-fc	Woking F.C.	https://en.wikipedia.org/wiki/Woking_F.C.	1827	0.009	0.001	8	
+wolverhampton-wanderers-fc	Wolverhampton Wanderers F.C.	https://en.wikipedia.org/wiki/Wolverhampton_Wanderers_F.C.	381	0.037	0.005	8	
+worcester-city-fc	Worcester City F.C.	https://en.wikipedia.org/wiki/Worcester_City_F.C.	65	0.0	0.0	4	
+workington-afc	Workington A.F.C.	https://en.wikipedia.org/wiki/Workington_A.F.C.	71	0.0	0.0	0	
+worksop-town-fc	Worksop Town F.C.	https://en.wikipedia.org/wiki/Worksop_Town_F.C.	91	0.0	0.0	3	
+worthing-fc	Worthing F.C.	https://en.wikipedia.org/wiki/Worthing_F.C.	37	0.0	0.0	4	
+wrexham-fc	Wrexham A.F.C.	https://en.wikipedia.org/wiki/Wrexham_A.F.C.	473	0.023	0.0	7	
+wycombe-wanderers-fc	Wycombe Wanderers F.C.	https://en.wikipedia.org/wiki/Wycombe_Wanderers_F.C.	1811	0.007	0.001	9	
+yate-town-fc	Yate Town F.C.	https://en.wikipedia.org/wiki/Yate_Town_F.C.	33	0.0	0.0	4	
+yeovil-town-fc	Yeovil Town F.C.	https://en.wikipedia.org/wiki/Yeovil_Town_F.C.	1665	0.008	0.0	7	
+york-city-fc	York City F.C.	https://en.wikipedia.org/wiki/York_City_F.C.	1596	0.006	0.0	7	
