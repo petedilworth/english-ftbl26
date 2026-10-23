@@ -9,7 +9,7 @@ Why some clubs are disliked more than others: four kinds, scored apart.
     mocked    fame without reward - top-flight seasons since the last
               title, and the near misses in that time. Tottenham's column.
     despised  on principle - things a club did, from content/hatred.yml,
-              each with a source note and a weight.
+              each with a source link and a weight.
 
 Plus exposure, which is not a kind of dislike but a precondition for it:
 how many clubs sit within fifteen miles, and how many people are in
@@ -239,7 +239,8 @@ def score_clubs(conn: sqlite3.Connection, curated: dict | None = None) -> list[d
             "mocked_detail": mocked_detail,
             "wage_percentile": wages.get(club_id),
             "sanctions": sanctions.get(club_id, 0),
-            "events": {k: [{"year": e.get("year"), "weight": e.get("weight"), "what": " ".join(str(e.get("what", "")).split())}
+            "events": {k: [{"year": e.get("year"), "weight": e.get("weight"), "what": " ".join(str(e.get("what", "")).split()),
+                            "sources": list(e.get("sources") or [])}
                            for e in v] for k, v in cur.items()},
             "exposure": expo.get(club_id, {"neighbours": 0, "people": 0}),
         })
@@ -302,6 +303,7 @@ def decade_picks(conn: sqlite3.Connection, curated: dict | None = None) -> list[
             "runner_up": names.get(ranked[1][0], ranked[1][0]) if len(ranked) > 1 else "",
             "editorial": ed.get("club"), "editorial_name": names.get(ed.get("club"), ed.get("club") or ""),
             "why": " ".join(str(ed.get("why", "")).split()),
+            "sources": list(ed.get("sources") or []),
             "agree": bool(model and ed.get("club") == model),
         })
     return out

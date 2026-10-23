@@ -108,7 +108,12 @@
     else if (c.topFlight) lines.push("No title on record: " + c.since + " top-flight seasons, " + c.nearMisses + " of them top four.");
     if (c.wagePct != null) lines.push("Wage bill in the " + Math.round(c.wagePct * 100) + "th percentile of its division.");
     lines.push("Exposure: " + c.neighbours + " clubs within fifteen miles, " + c.people.toLocaleString() + " people in reach.");
-    (c.events || []).forEach(function (e) { lines.push("<i>" + e.kind + ", " + e.year + "</i> (weight " + e.weight + "): " + e.what); });
+    (c.events || []).forEach(function (e) {
+      var links = (e.sources || []).map(function (u, i) {
+        return '<a href="' + String(u).replace(/"/g, "%22") + '" rel="noopener">' + (i + 1) + "</a>";
+      }).join(" ");
+      lines.push("<i>" + e.kind + ", " + e.year + "</i> (weight " + e.weight + "): " + e.what + (links ? " Sources: " + links : ""));
+    });
     detail.innerHTML = lines.map(function (l) { return "<p>" + l + "</p>"; }).join("");
     detail.hidden = false;
   }

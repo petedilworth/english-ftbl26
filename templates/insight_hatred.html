@@ -1,4 +1,6 @@
 {% extends "base.html" %}
+{# A source starting with / is a page on this site; anything else is outside it. #}
+{% macro source_links(urls) %}{% for u in urls %}<a href="{% if u.startswith('/') %}{{ root }}{{ u }}{% else %}{{ u }}{% endif %}" rel="noopener">{{ loop.index }}</a>{% if not loop.last %} {% endif %}{% endfor %}{% endmacro %}
 {% block content %}
 <h1>The most disliked clubs</h1>
 <p class="subtitle">Four kinds of dislike, one index you can reweight, and why Tottenham are only in one of the four.</p>
@@ -52,13 +54,14 @@
 <h2>The villain of each decade</h2>
 <p class="subtitle">The model's pick is the club with most envy in the decade — titles and top-four finishes. The editorial pick is from memory. Where they differ, the difference is the point.</p>
 <div class="table-scroll"><table class="standings">
-  <tr><th>Decade</th><th>The model says</th><th>We say</th><th>Why</th></tr>
+  <tr><th>Decade</th><th>The model says</th><th>We say</th><th>Why</th><th>Sources</th></tr>
   {% for d in eras %}
   <tr>
     <td>{{ d.label }}</td>
     <td>{{ d.model_name }}{% if d.runner_up %} <span class="status-tag">then {{ d.runner_up }}</span>{% endif %}</td>
     <td>{% if d.editorial_name %}{{ d.editorial_name }}{% if d.agree %} <span class="status-tag">agree</span>{% else %} <span class="status-tag">differs</span>{% endif %}{% else %}—{% endif %}</td>
     <td>{{ d.why }}</td>
+    <td>{{ source_links(d.sources) }}</td>
   </tr>
   {% endfor %}
 </table></div>
@@ -80,7 +83,7 @@
 <div class="rivalry">
   <h3><a href="{{ root }}/team/{{ w.club_id }}/index.html">{{ w.name }}</a> <span class="status-tag">since {{ w.since }}</span></h3>
   <p class="rivalry-meta">“{{ w.line }}”{% if w.scores %} · envied {{ w.scores.envied }} · resented {{ w.scores.resented }} · mocked {{ w.scores.mocked }} · despised {{ w.scores.despised }}{% endif %}</p>
-  <p>{{ w.what }}</p>
+  <p>{{ w.what }}{% if w.sources %} <span class="finance-note">Sources: {{ source_links(w.sources) }}</span>{% endif %}</p>
 </div>
 {% endfor %}
 
@@ -88,7 +91,7 @@
 <div class="theme-intro">
 <p><b>Envied</b>: a title is three points and a top-four finish one, since 1958/59; the last ten seasons count double. <b>Resented</b>: wage bill rank within the division in the latest accounts, up to four points; financial-rules deductions in the top flight, two each; and ownership events from the curated list. <b>Mocked</b>: since the last title, a tenth of a point per top-flight season and a point per top-four finish. <b>Despised</b>: the curated list only, weighted one to five. <b>Exposure</b> — clubs within fifteen miles and people in reach — is shown in the detail and never multiplied in.</p>
 <p><b>The index</b>: each kind divided by the highest score any club has in it, so the leader of each scores 1 and the rest a fraction of that. The four fractions are then averaged with the slider weights and multiplied by 100. The scaling is what makes equal weights mean equal: without it envy, whose raw scores run to 86, would outvote despised, which stops at 5. The catch is that a kind with one runaway leader – mocked, where Tottenham score twice the next club – leaves everyone else in that kind small.</p>
-<p>Every weight is in <code>src/hatred.py</code> and every curated entry in <code>content/hatred.yml</code>, with a note saying what it refers to.</p>
+<p>Every weight is in <code>src/hatred.py</code> and every curated entry in <code>content/hatred.yml</code>, with a note saying what it refers to and at least one link to a source. The sources for the ownership events and grievances are listed in each club's working, opened by clicking its bar.</p>
 </div>
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"

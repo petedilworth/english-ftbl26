@@ -97,7 +97,7 @@ SOURCES = {
     "hatred": {
         "name": "Dislike research (content/hatred.yml)",
         "url": "https://github.com/petedilworth/english-ftbl26/blob/main/content/hatred.yml",
-        "what": "The grievances the record cannot show – a move, a takeover, a scandal – each with a source note.",
+        "what": "The grievances the record cannot show – a move, a takeover, a scandal – each with a link to its source.",
         "licence": "This site's own research, sources cited per entry.",
         "refresh": "By hand.",
     },

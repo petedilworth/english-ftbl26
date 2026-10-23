@@ -1,6 +1,7 @@
 # The parts of the dislike model the database cannot know. Editorial, with
-# a source note on every entry so a reader can check it. See
-# src/hatred.py for how these combine with the record.
+# at least one source link on every entry (sources:) so a reader can check
+# it; links checked in October 2026. A link starting with / is a page on
+# this site. See src/hatred.py for how these combine with the record.
 #
 # weight: 1 (a grievance the club's own fans mostly share) to 5 (a
 # grievance football people hold against the club itself).
@@ -15,6 +16,8 @@ despised:
       commission and was renamed the following year; the supporters who
       stayed behind founded AFC Wimbledon. The move remains the standing
       example of what a club is not allowed to do.
+    sources:
+    - https://en.wikipedia.org/wiki/Relocation_of_Wimbledon_F.C._to_Milton_Keynes
   - club: cardiff-city-fc
     year: 2012
     weight: 2
@@ -22,6 +25,9 @@ despised:
       The owner, Vincent Tan, changed the home kit from blue to red and
       the badge to a dragon, for the Asian market. Reversed in 2015 after
       three seasons of protest.
+    sources:
+    - https://www.thedrum.com/news/cardiff-city-play-red-after-rebrand
+    - https://itv.com/news/2015-01-09/cardiff-city-revert-to-blue-kit
   - club: hull-city-fc
     year: 2013
     weight: 2
@@ -29,6 +35,9 @@ despised:
       The owner, Assem Allam, tried to rename the club Hull Tigers and
       told supporters who objected they could "die as soon as they want".
       The FA refused the change in 2014 and again in 2015.
+    sources:
+    - https://en.wikipedia.org/wiki/Assem_Allam
+    - https://www.thefa.com/news/2015/jul/10/the-fa-council-reject-hull-city-application
   - club: coventry-city-fc
     year: 2013
     weight: 1
@@ -36,6 +45,9 @@ despised:
       The owners, SISU, took home games to Northampton in a rent dispute
       over the club's own stadium, and to Birmingham in 2019-21. The
       grievance attaches to the owners; the club carries it.
+    sources:
+    - https://itv.com/news/central/2013-07-12/ricoh-northampton-row-signals-another-legal-battle
+    - https://en.wikipedia.org/wiki/Coventry_Building_Society_Arena
   - club: blackpool-fc
     year: 2015
     weight: 1
@@ -43,12 +55,18 @@ despised:
       Supporters boycotted the club under the Oyston family from 2015. A
       High Court judgment in 2017 found the owners had acted against a
       fellow shareholder's interests; they were removed in 2019.
+    sources:
+    - https://caselaw.nationalarchives.gov.uk/ewhc/ch/2017/2767
+    - https://www.sportsmole.co.uk/off-the-pitch/blackpool/news/owen-oyston-era-over-as-high-court-appoints-receivers-to-run-blackpool_350251.html
   - club: charlton-athletic-fc
     year: 2014
     weight: 1
     what: >
       Roland Duchâtelet's ownership, 2014-2020, brought six seasons of
       organised protest and a network of clubs run from Belgium.
+    sources:
+    - https://www.fourfourtwo.com/us/news/duchatalet-agrees-sell-charlton-east-street-investments
+    - https://www.wsc.co.uk/stories/charlton-fans-end-truce-with-owner-roland-duchatelet-and-plan-new-protests/
 
 # Ownership and money that other clubs' supporters hold against a club.
 resented:
@@ -56,20 +74,32 @@ resented:
     year: 2003
     weight: 3
     what: Roman Abramovich's purchase, and the spending that followed it.
+    sources:
+    - https://www.tbsnews.net/sports/timeline-chelsea-roman-abramovich-era-414806
   - club: manchester-city-fc
     year: 2008
     weight: 3
     what: The Abu Dhabi United Group's purchase; state-linked wealth in the league.
+    sources:
+    - https://www.mancity.com/news/club/takeover-anniversary-gallery-63734552
+    - https://en.wikipedia.org/wiki/2008%E2%80%9309_Manchester_City_F.C._season
   - club: manchester-city-fc
     year: 2023
     weight: 3
     what: >
-      Charged by the Premier League with more than a hundred breaches of
-      its financial rules over nine seasons.
+      Charged by the Premier League in 2023 with 115 breaches of its
+      financial rules over nine seasons. In September 2026 an independent
+      commission found 114 of them proven; the club has appealed and no
+      sanction is set.
+    sources:
+    - https://www.football365.com/news/man-city-ffp-what-are-the-115-charges-and-when-will-they-be-punished
+    - https://sports.yahoo.com/articles/man-city-appeal-against-verdict-135918421.html
   - club: newcastle-united-fc
     year: 2021
     weight: 3
     what: Bought by a consortium led by Saudi Arabia's Public Investment Fund.
+    sources:
+    - https://www.aljazeera.com/news/2021/10/7/saudi-arabia-led-consortium-completes-newcastle-united-takeover
   - club: manchester-united-fc
     year: 2005
     weight: 1
@@ -77,6 +107,8 @@ resented:
       The Glazer family's leveraged buyout, which loaded the purchase debt
       onto the club. Resented most by the club's own supporters; FC United
       of Manchester was founded in response.
+    sources:
+    - https://itv.com/news/2015-05-12/glazer-family-accused-of-draining-1bn-from-man-united
 
 # Clubs that took the dislike and made it a badge.
 wear_it:
@@ -87,13 +119,19 @@ wear_it:
       Sung to Rod Stewart's "Sailing" since the late 1970s, after a run of
       press coverage of crowd trouble at The Den. The one club whose
       anthem is a statement of its reputation.
+    sources:
+    - https://en.wikipedia.org/wiki/No_one_likes_us,_we_don%27t_care
+    - https://www.creativereview.co.uk/no-one-likes-us-we-dont-care/
   - club: leeds-united-fc
-    since: 1965
+    since: 1964
     line: "Dirty Leeds"
     what: >
       Don Revie's side, the most disliked of the late 1960s and 1970s for
       how it played and how much it won. The label outlived the team by
       fifty years and the club's supporters use it themselves.
+    sources:
+    - https://www.yorkshirepost.co.uk/arts-and-culture/the-whole-tale-about-revies-dirty-side-1892971
+    - https://www.planetfootball.com/in-depth/the-football-leagues-corrupt-the-self-fulfilling-prophecy-of-dirty-leeds
   - club: wimbledon-fc
     since: 1986
     line: "The Crazy Gang"
@@ -101,13 +139,18 @@ wear_it:
       Long-ball football and a dressing room that terrorised visitors, from
       the Fourth Division to the FA Cup in nine years. Disliked by the
       establishment and proud of it; the club that later became MK Dons.
+    sources:
+    - https://en.wikipedia.org/wiki/Crazy_Gang_(football)
+    - /team/wimbledon-fc/index.html
   - club: stoke-city-fc
     since: 2008
     line: "A cold Tuesday night in Stoke"
     what: >
-      Tony Pulis's Stoke, 2008-2013: the phrase began as a question about
-      whether the league's best players could cope there, and the club
-      adopted it.
+      Tony Pulis's Stoke, 2008-2013: the phrase began with Andy Gray on Sky
+      in 2010, wondering whether Lionel Messi could cope there, and the
+      club adopted it.
+    sources:
+    - https://www.goal.com/en/news/what-does-can-they-do-it-on-a-cold-rainy-night-in-stoke-mean/1f7alegnrwfr01i5vj34vak59k
 
 # The villain of each decade, named from football memory. The page shows
 # the model's own pick beside it and says when they disagree.
@@ -115,24 +158,42 @@ eras:
   - decade: 1960
     club: leeds-united-fc
     why: Revie's Leeds arrive; "dirty Leeds" is coined.
+    sources:
+    - https://www.yorkshirepost.co.uk/arts-and-culture/the-whole-tale-about-revies-dirty-side-1892971
   - decade: 1970
     club: leeds-united-fc
     why: The dominant, disliked side of the decade, and a Brian Clough film about it.
+    sources:
+    - https://en.wikipedia.org/wiki/The_Damned_United
+    - /team/leeds-united-fc/index.html
   - decade: 1980
     club: liverpool-fc
     why: Six titles in ten years; the club everyone else measured itself against.
+    sources:
+    - /team/liverpool-fc/index.html
   - decade: 1990
     club: manchester-united-fc
     why: Ferguson's first great side and the Premier League money behind it.
+    sources:
+    - /team/manchester-united-fc/index.html
   - decade: 2000
     club: chelsea-fc
     why: Abramovich's money and Mourinho's manner.
+    sources:
+    - https://www.tbsnews.net/sports/timeline-chelsea-roman-abramovich-era-414806
+    - https://www.skysports.com/football/news/15116/11522231/special-one-remembering-jose-mourinho-s-first-ever-chelsea-press-conference
   - decade: 2010
     club: manchester-city-fc
     why: State-backed wealth, and the titles it bought.
+    sources:
+    - https://www.mancity.com/news/club/takeover-anniversary-gallery-63734552
+    - /team/manchester-city-fc/index.html
   - decade: 2020
     club: manchester-city-fc
-    why: The charges, and four titles in a row while they went unheard.
+    why: Four titles in a row, 2020/21 to 2023/24, then found to have broken the financial rules on 114 of 115 charges, under appeal.
+    sources:
+    - /team/manchester-city-fc/index.html
+    - https://sports.yahoo.com/articles/man-city-appeal-against-verdict-135918421.html
 
 # Survey results, pasted in as a check on the model. Each entry is one
 # poll: the source, the question as asked, and a percentage or rank per
