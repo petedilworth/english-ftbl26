@@ -18,7 +18,7 @@ SOURCES = {
         "url": "https://www.football-data.co.uk",
         "what": "Results for tiers 1–5 from 1993/94 (the fifth tier from 2005/06); betting odds, shots, corners, "
                 "cards and referees from 2000/01; and the weekend fixture list.",
-        "licence": "Free to use; credited in the footer of every page.",
+        "licence": "Published free of charge, under its own terms of use; credited in the footer of every page.",
         "refresh": "Daily, by the Refresh workflow; fixtures each Friday.",
     },
     "engsoccerdata": {
@@ -26,7 +26,7 @@ SOURCES = {
         "url": "https://github.com/jalapic/engsoccerdata",
         "what": "League results from 1958/59 to 1992/93 for tiers 1–4, the fifth tier from 1979/80 to 2004/05, "
                 "and the sixth and seventh tiers from 2012/13 to 2018/19.",
-        "licence": "Open data package; cite Curley (2016).",
+        "licence": "GNU GPL v2 or later; cite Curley (2016).",
         "refresh": "Fixed history.",
     },
     "wikipedia-results": {
@@ -58,7 +58,7 @@ SOURCES = {
         "url": "https://github.com/petedilworth/english-ftbl26/tree/main/content",
         "what": "Origins, nicknames, ownership and owners, administrations, rivalries and former grounds, one "
                 "file per club, researched by hand from club sites, Wikipedia and local reporting.",
-        "licence": "This site's own research.",
+        "licence": "This site's own research, CC BY 4.0.",
         "refresh": "By hand.",
     },
     "club-companies": {
@@ -66,7 +66,7 @@ SOURCES = {
         "url": "https://github.com/petedilworth/english-ftbl26/blob/main/data/club-companies.tsv",
         "what": "Which company each club plays as, scored by name against every similarly named company, with "
                 "the runners-up kept; open cases settled only on evidence from the register.",
-        "licence": "This site's own work.",
+        "licence": "This site's own work, CC BY 4.0.",
         "refresh": "With each Companies House fetch.",
     },
     "deductions": {
@@ -74,7 +74,7 @@ SOURCES = {
         "url": "https://github.com/petedilworth/english-ftbl26/blob/main/points_deductions.csv",
         "what": "Every points deduction since 1958/59, each with a source link, mostly to the season's "
                 "Wikipedia article.",
-        "licence": "This site's own research, sources linked per row.",
+        "licence": "This site's own research, CC BY 4.0; sources linked per row.",
         "refresh": "By hand.",
     },
     "finances": {
@@ -91,14 +91,14 @@ SOURCES = {
         "what": "Who owns each ground in tiers 1–7 – the club, the owner's company, the council, a landlord or "
                 "another club – with lease lengths, from club statements, council papers and local reporting. "
                 "A source for every club.",
-        "licence": "This site's own research, sources cited per club.",
+        "licence": "This site's own research, CC BY 4.0; sources cited per club.",
         "refresh": "By hand.",
     },
     "hatred": {
         "name": "Dislike research (content/hatred.yml)",
         "url": "https://github.com/petedilworth/english-ftbl26/blob/main/content/hatred.yml",
         "what": "The grievances the record cannot show – a move, a takeover, a scandal – each with a link to its source.",
-        "licence": "This site's own research, sources cited per entry.",
+        "licence": "This site's own research, CC BY 4.0; sources cited per entry.",
         "refresh": "By hand.",
     },
     "companies-house": {
