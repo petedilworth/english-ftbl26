@@ -68,6 +68,11 @@ panel on the team page, and automatically place the club on the relevant
 | `phoenix_of` | Predecessor `club_id` or name |
 | `predecessor_folded` | Year |
 
+### Sources
+| Field | Notes |
+|---|---|
+| `sources` | List of URLs the story was written from. Listed at the foot of the team page, grouped by website, with the page's other sources (ground ownership, points deductions, accounts, the company register, the league record). Pages recovered from the research session live in `data/story-sources.tsv` and are listed the same way. |
+
 `themes: [taylor-report]` adds theme tags manually, for angles the fields
 above can't express.
 

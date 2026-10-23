@@ -265,6 +265,17 @@
   {% endfor %}
 </table>
 </div>
+{% if page_sources %}
+{# The websites behind this page, by the part of it they support. #}
+<h2 id="sources">Sources</h2>
+<p class="subtitle">The websites this page draws on. Every source the site uses is on the <a href="{{ root }}/sources/index.html">Sources page</a>.</p>
+<dl class="page-sources">
+{% for g in page_sources %}
+  <dt>{{ g.label }}</dt>
+  <dd>{% for s in g.sites %}{% if s.urls | length == 1 %}<a href="{{ s.urls[0] }}" rel="noopener">{{ s.site }}</a>{% else %}{{ s.site }} {% for u in s.urls %}<a href="{{ u }}" rel="noopener">{{ loop.index }}</a>{% if not loop.last %} {% endif %}{% endfor %}{% endif %}{% if not loop.last %} · {% endif %}{% endfor %}{% if g.note %}<span class="finance-note">{{ g.note }}</span>{% endif %}</dd>
+{% endfor %}
+</dl>
+{% endif %}
 {% if head_to_head %}
 <script src="{{ root }}/static/hash-state.js"></script>
 <script src="{{ root }}/static/club-table.js"></script>

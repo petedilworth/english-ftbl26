@@ -1089,3 +1089,9 @@ details.division .table-scroll { margin-top: 8px; }
 .story-nav-label { font-size: 10.5px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-right: 6px; }
 .story-nav { margin-top: 36px; padding-top: 14px; border-top: 1px solid var(--line); font-size: 14px; }
 .story-nav p { margin: 4px 0; }
+
+/* Team page: the websites behind the page, by the part they support */
+.page-sources { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 4px 16px; font-size: 13px; margin: 8px 0 0; }
+.page-sources dt { color: var(--muted); }
+.page-sources dd { margin: 0; overflow-wrap: anywhere; }
+@media (max-width: 540px) { .page-sources { grid-template-columns: minmax(0, 1fr); } .page-sources dd { margin-bottom: 6px; } }
