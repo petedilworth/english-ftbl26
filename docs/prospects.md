@@ -43,7 +43,7 @@ see before. Every figure here is lower than it was.
 | **Maidstone United** | **yes** | **freehold** | 205,634 | 56% | Owners actively seeking a majority sale — but have publicly offered to divest the club **while retaining the stadium freehold** |
 | **Morecambe** | yes | leasehold_long | 148,230 | 33% | Cleanest cap table in the cohort, worst everything else |
 | Southport | unknown | leasehold_long | 156,797 | 35% | Lease term is not on the public record — the single decisive unknown |
-| Macclesfield Town | unknown | freehold | 166,429 | 49% | Control moved to a Jersey vehicle; founder hostile and under investigation |
+| Macclesfield Town | unknown | freehold | 166,429 | 49% | Largest stake (41%) held through a Jersey company; founder left the board in August 2026 after a shareholder dispute |
 | Torquay United | no | leasehold_long | 310,511 | 26% | Consortium not selling; trust's golden share vetoes even the stadium |
 | Dagenham & Redbridge | no | unknown | 382,084 | 68% | Control settled Feb 2026; KSI stake; a post-hype price |
 | Darlington | no | leasehold_short | 191,694 | 65% | 91.66% held by a CBS with a 5% individual cap |
