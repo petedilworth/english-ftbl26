@@ -297,3 +297,7 @@ FROM standings
 WHERE club_id = 'sunderland-afc'
 ORDER BY season_end_year;
 ```
+
+## Licence
+
+The code is MIT ([`LICENSE`](LICENSE)); the writing and research are CC BY 4.0; data from others keeps its own terms, set out in [`NOTICE.md`](NOTICE.md).
