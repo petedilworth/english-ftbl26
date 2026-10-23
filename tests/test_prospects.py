@@ -237,3 +237,23 @@ def test_every_tenure_value_in_the_real_csv_is_one_the_scorer_knows():
             if tenure != "unknown":
                 assert (row.get("tenure_source_url") or "").strip(), (
                     f"{row['club_id']}: tenure asserted with no source")
+
+
+def test_an_ownership_note_about_legal_trouble_carries_its_source():
+    """
+    The file is public. A note that says a named person was arrested,
+    investigated, charged or taken to court is a claim about that person,
+    and it stays only with the reports it rests on beside it.
+    """
+    import csv
+    import re
+    path = prospects.PROJECT_ROOT / "club_prospects.csv"
+    if not path.exists():
+        pytest.skip("club_prospects.csv not written yet")
+    legal = re.compile(r"arrest|investigat|charge|convict|court|police|fraud|allegation", re.I)
+    with path.open(encoding="utf-8") as fh:
+        for row in csv.DictReader(fh):
+            if legal.search(row.get("ownership_note") or ""):
+                urls = (row.get("ownership_source_url") or "").split()
+                assert urls and all(u.startswith("https://") for u in urls), (
+                    f"{row['club_id']}: a note about legal trouble with no source")
