@@ -93,7 +93,7 @@
     <td class="num{% if row.profit_negative %} finance-loss{% endif %}">{{ row.profit or "—" }}</td>
     <td class="num">{{ row.net_debt or "—" }}</td>
     {% endif %}
-    <td>{% if row.source_url %}<a class="finance-source" href="{{ row.source_url }}" title="{{ row.entity_name or 'Source' }}">source</a>{% endif %}</td>
+    <td>{% if row.filing_url %}<a class="finance-source" href="{{ row.filing_url }}" title="The accounts {{ row.entity_name or 'the club' }} filed at Companies House">filing</a>{% endif %}{% if row.filing_url and row.source_url %} · {% endif %}{% if row.source_url %}<a class="finance-source" href="{{ row.source_url }}" title="{{ row.entity_name or 'Source' }}">source</a>{% endif %}</td>
   </tr>
   {% endfor %}
 </table>
@@ -105,6 +105,8 @@
   Rankings compare only the clubs in that division whose figures have been
   collected, which is fewer than the full division.
   {% for note in finances.notes %}{{ note }} {% endfor %}
+  {% if finances.accounts_url %}Every set of accounts the club has filed is on the
+  <a href="{{ finances.accounts_url }}">Companies House register</a>.{% endif %}
 </p>
 {% if finances.chart_links %}
 <p class="finance-note">Compare across the pyramid:

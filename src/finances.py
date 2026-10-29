@@ -23,6 +23,7 @@ every figure, so both are columns rather than assumptions:
   consolidation_level pin down what was actually read.
 """
 
+import csv
 import json
 import logging
 import sqlite3
@@ -155,6 +156,59 @@ def _migrate(conn: sqlite3.Connection) -> None:
         if col not in have:
             kind = "INT" if col in _INT_COLUMNS else "TEXT"
             conn.execute(f"ALTER TABLE club_finances ADD COLUMN {col} {kind}")
+
+
+# ── links to the filed accounts themselves ─────────────────────────────────
+#
+# data/companies/filings.tsv is written by scripts/parse_club_accounts.py
+# from the filing history the accounts workflow fetches: one row per
+# accounts filing, with the transaction id Companies House's public site
+# addresses it by. The links are built from that id and the company
+# number, and the accounts workflow checks one of each live
+# (parse_club_accounts.py check-links), because this repository's own
+# environment cannot reach the site to confirm the address.
+
+FILINGS_INDEX = Path(__file__).resolve().parent.parent / "data" / "companies" / "filings.tsv"
+FILINGS_COLUMNS = [
+    "club_id", "company_number", "n", "transaction_id", "document", "filing_date",
+    "made_up_date", "type", "description", "format", "paper_filed", "pages",
+]
+CH_SITE = "https://find-and-update.company-information.service.gov.uk"
+
+
+def accounts_url(company_number: str) -> str:
+    """Every accounts filing the company has made, on the public register."""
+    return f"{CH_SITE}/company/{company_number}/filing-history?category=accounts"
+
+
+def filing_url(company_number: str, transaction_id: str) -> str:
+    """One filing, opened as the document itself."""
+    return (f"{CH_SITE}/company/{company_number}/filing-history/{transaction_id}"
+            "/document?format=pdf&download=0")
+
+
+def load_filings(path: Path = FILINGS_INDEX) -> dict[str, list[dict]]:
+    """{club_id: [filing, ...]}, the latest accounts first."""
+    if not path.exists():
+        return {}
+    out: dict[str, list[dict]] = {}
+    with path.open(encoding="utf-8", newline="") as fh:
+        for row in csv.DictReader(fh, delimiter="\t"):
+            if row.get("transaction_id") and row.get("company_number"):
+                out.setdefault(row["club_id"], []).append(row)
+    for rows in out.values():
+        rows.sort(key=lambda r: (r["made_up_date"], r["filing_date"]), reverse=True)
+    return out
+
+
+def filing_for_season(filings: list[dict], season_end_year: int) -> dict | None:
+    """
+    The filing whose accounts are made up to a date in that year - the
+    same rule the parser uses to assign accounts to a season. An amended
+    filing for the same year is later, and wins.
+    """
+    hits = [f for f in filings if (f["made_up_date"] or "")[:4] == str(season_end_year)]
+    return max(hits, key=lambda f: f["filing_date"]) if hits else None
 
 
 def _int_or_none(value: str) -> int | None:
