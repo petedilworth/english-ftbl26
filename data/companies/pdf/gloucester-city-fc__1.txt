@@ -1,0 +1,263 @@
+source: Companies House filing, gloucester-city-fc__1.pdf
+document: XyOIl4fYXNLa3t4x1Af-K3q2oLQzAeQIGqbhI8OLmXg
+made_up_date: 2025-06-30
+method: ocr
+pages_read: 10 of 10
+
+H
+i
+i
+|
+Report of the Director and
+Unaudited Financial Statements
+for the Year Ended 30 June 2025
+for
+Gloucester City Association Football
+Club (1980) Limited
+. <
+(=)
+[4
+Fag .
+< *AEXTCIT7*
+A10 14/03/2026 #102
+COMPANIES HOUSE
+i
+Gloucester City Association Football
+Club (1980) Limited
+Contents of the Financial Statements
+for the Yaar Ended 30 June 2025
+Page
+Company Information 4
+Report of the Director 2
+Income Statement 3 ,
+Balance Sheet 4
+Notes to the Financial Statements 5
+Trading and Profit and Loss Account 7
+loucester City Association Football
+Ciub (1980) Limited
+Company Information
+for the Year Ended 30 Juns 2025 :
+DIRECTORS: E F McGurk (resigned 24" November, 2025)
+Mrs L. J Rowe (appointed 24" November, 2025)
+REGISTERED OFFICE: Gloucester House :
+Brunswick Square
+Gloucester
+GL1 1UN
+REGISTERED NUMBER: 01479143 (England and Wales)
+Page 1
+\
+: i
+|
+|
+-Gloucester City Association Football
+Club (1980) Limited :
+Report of the Director
+for the Year Ended 30 June 2025 }
+The director presents his report with the financial statements of the company for the year ended 30 June 2025. ,
+DIRECTOR : :
+This report has been prepared in accordance with the provisions of Part 15 of the Companies Act 2006 relating to small
+companies. : ;
+SIGNED ON BEHALF OF THE BOARD ON December, 2025 .
+LJ Rowe -Director VE .
+Page 2
+Gloucester City Association Football
+Club (1980) Limited '
+Income Statement :
+for the Year Ended 30 June 2025 i
+2025 2024
+£ £ ,
+TURNOVER 458,816 484,151
+Cost of sales . 161,988 179,565 .
+GROSS PROFIT 296,828 . 304,586
+Administrative expenses 498,912 448,349
+: (202,084) (143,763)
+Other operating income , 28,530 75,557
+OPERATING LOSS and
+LOSS BEFORE TAXATION (173,554) (68,206)
+Tax on loss - :
+———— ———
+LOSS FOR THE FINANCIAL YEAR (173,554) (88,206)
+The notes form part of these financial statements
+Page 3 :
+!
+Gloucester City Association Football :
+. Club (1980) Limited (Registered number: 01479143) :
+Balance Sheet :
+30 June 2025 ;
+2025 2024
+Notes £ £ £
+FIXED ASSETS
+Tangible assets 4 479,078 501,461
+CURRENT ASSETS
+Stocks 1,000 1,000
+Debtors 5 24,414 12,186
+Cash at bank 5,790 182
+31,204 13,368
+CREDITORS
+Amaunts falling due within one year 6 41,977,723 4,808,718
+NET CURRENT LIABILITIES (1,946,519) (1,795,348)
+TOTAL ASSETS LESS CURRENT
+- LIABILITIES (1,487,441) (1,293,887)
+CAPITAL AND RESERVES
+Called up share capital 15,000 15,000
+Share premium 235,050 235,050
+Retained earnings (1,717,491) (1,543,937)
+(1,467,441) (1,293,887)
+The company is entitled to exemption from audit under Section 477 of the Companies Act 2006 for the year ended
+30 June 2025.
+The members have not required the company te obtain an audit of its financial statements for the year ended 30 June 2025
+in accordance with Section 476 of the Companies Act 2006.
+The director acknowledges his responsibilities for:
+(a) ensuring that the company keeps accounting records which comply with Sections 386 and 387 of the Companies Act
+2006 and
+(b) preparing financial statements which give a true and fair view of the state of affairs of the company as at the end of
+each financial year and of its profit or loss for each financial year in accordance with the requirements of Sections 394
+and 395 and which otherwise comply with the requirements of the Companies Act 2006 relating to financial
+statements, so far as applicable to the company.
+The financial statements have been prepared in accordance with the provisions applicable to companies subject to the small
+companies regime. .
+The financial statements were approved by the Board of Directors and authorised for issue on December 2025 and
+were signed by:
+Mlle
+L J Rowe - Direc
+The notes form part of these financial statements
+Page 4 i
+Gloucester City Association Football |
+Club (1980) Limited :
+i
+Notes to the Financlal Statements i
+for the Year Ended 30 June 2025 Hy
+1. STATUTORY INFORMATION
+Gloucester City Association Football Club (1980) Limited Is a private company, limited by shares, registered In
+England and Wales. The company's registered number and registered office address can be found on the Company
+, Information page.
+2. ACCOUNTING POLICIES
+Basis of preparing the financla! statements ,
+These financial statements have been prepared In accordance with Financial Reporting Standard 102 "The Financial
+Reporting Standard applicable in the UK and Republic of Ireland” Including the provisions of Section 1A "Small
+Entities" and the Companies Act 2006. The financial statements have been prepared under the historical cost
+convention.
+Turmover
+Turnover is measured at the fair value of the consideration recelved or receivable, excluding discounts, rebates,
+value added tax and other sales taxes.
+Tangible fixed assets
+Depreciation is provided at the following annual rates in order to write off each asset over its estimated useful fife.
+Stocks
+Stocks are valued at the lower of cost and net realisable value, after making due allowance for obsolete and siow
+moving items.
+Taxation
+Taxation for the year comprises current and deferred tax. Tax is recognised in the Income Statement, except to the
+extent that it relates to items recognised In other comprehensive income or directly in equity.
+Current or deferred taxation assets and liabilities are not discounted.
+Current tax is recognised at the amount of tax payable using the tax rates and laws that have been enacted or
+substantively enacted by the balance sheet date.
+Deferred tax
+Deferred tax is recognised in respect of all timing differences that have originated but not reversed at the balance
+sheet date.
+Timing differences arise from the inclusion of income and expenses In tax assessments in perlods different from :
+those in which they are recognised in financial statements. Deferred tax is measured using tax rates and laws that .
+have been enacted or substantively enacted by the year end and that are expected to apply to the reversal of the
+timing difference. .
+Unrelieved tax losses and other deferred tax assets are recognised only to the extent that it is probable that they will
+be recovered against the reversal of deferred tax liabilities or ather future taxable profits.
+Pension costs and other post-retirement benefits
+The company operates a defined contribution pension scheme. Contributions payable to the company's pension
+scheme are charged to profit or loss In the period to which they relate. .
+3, EMPLOYEES AND DIRECTORS
+The average number of employees during the year was 14 (2024 - 14).
+Page 5 continued...
+Gloucester City Association Football
+Club (1980) Limited
+Notes to the Financial Statements - continued
+for the Year Ended 30 June 2025 .
+4. TANGIBLE FIXED ASSETS
+Freehold
+property
+£
+COST :
+At 1 July 2024
+and 30 June 2025 559,576
+DEPRECIATION
+At 1 July 2024 67,149
+. Charge for year 22,383
+At 30 June 2025 89,632
+NET BOOK VALUE
+At 30 June 2025 470,044
+. At 30 June 2024 514,810
+5. DEBTORS: AMOUNTS FALLING DUE WITHIN ONE YEAR
+2025 2024 :
+£ £
+Trade debtors 24,414 12,186
+6. CREDITORS: AMOUNTS FALLING DUE WITHIN ONE YEAR
+2025 2024
+£ £
+Trade creditors 1,794,441 1,786,229
+Taxation and social security 69,916 5,713
+Other creditors 113,366 16,774
+; 4,977,723 1,808,716
+, Pageé
+Gloucester City Association Football
+Club (1980) Limited
+Trading and Profit and Loss Account
+for the Year Ended 30 June 2025 °
+2025 2024
+£ £ £ £
+Turnover
+Sales 294,950 281,894
+Donations 102,070 147,347
+Sponsorship 61,796 28,958
+Legacies - -
+—_—— 458,816 — 484,151
+Cost of sales
+Opening stock 1,000 1,000
+Bar Purchases §,328 23,059
+Transfer fees paid - 7,000
+Purchases 140,799 113,135
+Sub contract Players 15,861 36,371
+161,822 180,565
+Closing stock (1,000) (1,000)
+— 161,988 _——— 179,565
+GROSS PROFIT 296,828 304,586
+Other income
+Sundry receipts 28,530 75,557
+: 325,358 380,143
+Expenditure
+Rent . - -
+Insurance 2,360 -
+Stadium Costs 62,776 83,172
+Wages 350,551 267,109
+Social security 26,539 13,202
+Pensions - 450
+Postage and stationery 39 716
+Advertising 1,045 6,301
+Pitch and Equipment Hire (110) 3,661
+Travel 22,146 35,404
+Medical Expenses - 2,470
+Subscriptions 277 726
+Sundry expenses 3,406 9,028
+Accountancy 6,987 1,090
+Telephone 13 1,645
+Bad debts - -
+— 476,029 — 424,974
+(150,671) ( 44,831)
+Finance costs
+Bank charges 500 992
+. Carried forward (151,171) ( 45,823)
+This page does not form part of the statutory financial statements
+Page7
+Gloucester City Association Football .
+Club (1980) Limited
+. Trading and Profit and Loss Account
+for the Year Ended 30 June 2025
+2025 2024
+£ /£ £ £
+
+Brought forward (151,171) ( 45,823)
+Depreciation
+
+Freehold property 22,383 22,383
+NET LOSS (173,554) ( 68,206)
+
+This page does not form part of the statutory financial statements
+Page8
+

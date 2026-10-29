@@ -1,13 +1,73 @@
-Club accounts read 2026-10-06
-Documents: 270 iXBRL, 109 PDF only
-INFO     196 rows read from 270 documents
-INFO        by disclosure: {'small_company': 192, 'full': 4}
-INFO        clubs: 109
-INFO     70 already collected by hand, left alone: barnsley-fc 2025, barnsley-fc 2024, blackpool-fc 2025, blackpool-fc 2024, bristol-city-fc 2025, bristol-rovers-fc 2025
-WARNING  109 filings are PDF only and carry no tagged figures
-WARNING  4 documents could not be read:
-WARNING      oxford-city-fc__1.xhtml            tagged, but nothing recognised in it - saw AccountingStandardsApplied, AccountsStatusAuditedOrUnaudited, AccountsType, AddressLine1, AddressLine2, AddressLine3, ApplicableLegislation, AverageNumberEmployeesDuringPeriod
-WARNING      oxford-city-fc__2.xhtml            tagged, but nothing recognised in it - saw AccountingStandardsApplied, AccountsStatusAuditedOrUnaudited, AccountsType, AddressLine1, AddressLine2, AddressLine3, ApplicableLegislation, AverageNumberEmployeesDuringPeriod
-WARNING      whitby-town-fc__1.xhtml            no period end date 
-WARNING      whitby-town-fc__2.xhtml            no period end date 
-INFO     appended 196 rows to club_finances.csv
+Club accounts read 2026-10-29
+Documents: 268 iXBRL, 113 PDF only
+INFO     facts: 39348 from 268 documents read now, 0 kept from earlier runs -> facts/
+WARNING  113 filings are PDF only and carry no tagged figures
+INFO     rows: 266 club-seasons read from 268 documents
+INFO        full                   2
+INFO        small_company          195
+INFO        machine rows added     5
+INFO        machine rows rebuilt   192
+INFO        hand rows topped up    64
+INFO        fields filled on machine-read and topped-up rows:
+INFO           turnover                               50
+INFO           staff_costs                            23
+INFO           revenue_matchday                       6
+INFO           revenue_broadcast                      7
+INFO           revenue_commercial                     3
+INFO           operating_profit                       15
+INFO           profit_before_tax                      64
+INFO           profit_after_tax                       18
+INFO           amortisation                           4
+INFO           player_sales_profit                    2
+INFO           net_debt                               6
+INFO           employees                              253
+INFO           fixed_assets                           144
+INFO           intangible_assets                      64
+INFO           tangible_assets                        199
+INFO           current_assets                         235
+INFO           cash                                   213
+INFO           creditors_within_year                  90
+INFO           net_current_assets                     239
+INFO           total_assets_less_current_liabilities  229
+INFO           creditors_after_year                   70
+INFO           net_assets                             256
+INFO           share_capital                          192
+INFO           directors_pay                          16
+INFO           accounts_type                          261
+INFO           audited                                261
+INFO           going_concern                          17
+INFO     5 hand rows left alone - the filing is a different entity:
+INFO         bristol-rovers-fc 2025: row names BRFC (1883) Ltd, filing is BRISTOL ROVERS FOOTBALL CLUB LIMITED
+INFO         carlisle-united-fc 2025: row names ?, filing is CARLISLE UNITED ASSOCIATION FOOTBALL CLUB (1921) LIMITED
+INFO         ipswich-town-fc 2025: row names ?, filing is IPSWICH TOWN FOOTBALL CLUB COMPANY LIMITED
+INFO         newport-county-fc 2024: row names ?, filing is NEWPORT ASSOCIATION FOOTBALL CLUB LIMITED
+INFO         portsmouth-fc 2025: row names Portsmouth Football Club Limited, filing is PORTSMOUTH CITY FOOTBALL CLUB LIMITED
+WARNING  1 documents gave no row:
+WARNING      sheffield-wednesday-fc       tagged, but nothing recognised in it - saw AccountingStandardsApplied, AccountsStatusAuditedOrUnaudited, AccountsType, AccruedLiabilitiesDeferredIncome, AccumulatedAmortisationImpairmentIntangibleAssets, AccumulatedDepreciationImpairmentPropertyPlantEquipment, AddressLine1, AdministrativeExpenses
+INFO     most common numeric concepts no field reads (see accounts-concepts.tsv):
+INFO          222 filings  Debtors
+INFO          214 filings  PropertyPlantEquipmentGrossCost
+INFO          212 filings  AccumulatedDepreciationImpairmentPropertyPlantEquipment
+INFO          209 filings  IncreaseFromDepreciationChargeForYearPropertyPlantEquipment
+INFO          192 filings  TradeCreditorsTradePayables
+INFO          183 filings  OtherCreditors
+INFO          175 filings  TradeDebtorsTradeReceivables
+INFO          165 filings  OtherDebtors
+INFO          139 filings  OtherTaxationSocialSecurityPayable
+INFO          121 filings  TotalInventories
+INFO           95 filings  AdditionsOtherThanThroughBusinessCombinationsPropertyPlantEquipment
+INFO           95 filings  IntangibleAssetsGrossCost
+INFO           95 filings  TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment
+INFO           94 filings  AccumulatedAmortisationImpairmentIntangibleAssets
+INFO           92 filings  AccruedLiabilitiesDeferredIncome
+INFO           88 filings  PrepaymentsAccruedIncome
+INFO           82 filings  BankBorrowingsOverdrafts
+INFO           81 filings  IncreaseFromAmortisationChargeForYearIntangibleAssets
+INFO           76 filings  OtherRemainingBorrowings
+INFO           72 filings  ParValueShare
+INFO           62 filings  NumberSharesIssuedFullyPaid
+INFO           58 filings  FutureMinimumLeasePaymentsUnderNon-cancellableOperatingLeases
+INFO           56 filings  TotalBorrowings
+INFO           52 filings  TaxTaxCreditOnProfitOrLossOnOrdinaryActivities
+INFO           50 filings  AmountsOwedToGroupUndertakings
+INFO     wrote 371 rows to club_finances.csv

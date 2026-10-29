@@ -1,0 +1,127 @@
+club_id	company_number	document	filing_date	made_up_date	concept	prefix	kind	period_start	period_end	instant	dimensions	unit	value
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	AccountingStandardsApplied	uk-bus	text	2024-07-01	2025-06-30		AccountingStandardsDimension=FRS102		
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	AccountsStatusAuditedOrUnaudited	uk-bus	text	2024-07-01	2025-06-30		AccountsStatusDimension=AuditExempt-NoAccountantsReport		
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	AccountsType	uk-bus	text	2024-07-01	2025-06-30		AccountsTypeDimension=AbridgedAccounts		
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	AccumulatedDepreciationImpairmentPropertyPlantEquipment	core	num		2024-06-30	1		GBP	184250
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	AccumulatedDepreciationImpairmentPropertyPlantEquipment	core	num		2025-06-30	1		GBP	276475
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	AverageNumberEmployeesDuringPeriod	core	num	2023-07-01	2024-06-30			pure	55
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	AverageNumberEmployeesDuringPeriod	core	num	2024-07-01	2025-06-30			pure	50
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	BalanceSheetDate	uk-bus	text		2025-06-30	1			2025-06-30
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	BalanceSheetDate	uk-bus	text		2025-06-30	1			30 June 2025
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	CashBankOnHand	core	num		2024-06-30	1		GBP	151089
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	CashBankOnHand	core	num		2025-06-30	1		GBP	46489
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	Creditors	core	num		2024-06-30	1	MaturitiesOrExpirationPeriodsDimension=AfterOneYear	GBP	4301
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	Creditors	core	num		2024-06-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	330458
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	Creditors	core	num		2025-06-30	1	MaturitiesOrExpirationPeriodsDimension=AfterOneYear	GBP	1607
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	Creditors	core	num		2025-06-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	449866
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	CurrentAssets	core	num		2024-06-30	1		GBP	306543
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	CurrentAssets	core	num		2025-06-30	1		GBP	191294
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	DateAuthorisationFinancialStatementsForIssue	core	text		2025-06-30	1			19 March 2026
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	Debtors	core	num		2024-06-30	1		GBP	145454
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	Debtors	core	num		2025-06-30	1		GBP	134892
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	DirectorSigningFinancialStatements	core	text	2024-07-01	2025-06-30		EntityOfficersDimension=Director40		
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	EmployeeInformationFree-textComment	core	text	2024-07-01	2025-06-30				
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	EndDateForPeriodCoveredByReport	uk-bus	text		2025-06-30	1			2025-06-30
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	EntityCurrentLegalOrRegisteredName	uk-bus	text	2024-07-01	2025-06-30				DULWICH HAMLET FOOTBALL CLUB LIMITED
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	EntityDormantTruefalse	uk-bus	text	2024-07-01	2025-06-30				false
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	EntityHasTakenExemptionUnderCompaniesActInNotPublishingItsOwnProfitLossAccountTruefalse	direp	text	2024-07-01	2025-06-30				true
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	EntityTradingStatus	uk-bus	text	2024-07-01	2025-06-30				
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	Equity	core	num		2024-06-30	1		GBP	46837
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	Equity	core	num		2024-06-30	1	EquityClassesDimension=RetainedEarningsAccumulatedLosses	GBP	-604299
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	Equity	core	num		2024-06-30	1	EquityClassesDimension=ShareCapital	GBP	651136
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	Equity	core	num		2025-06-30	1		GBP	-109030
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	Equity	core	num		2025-06-30	1	EquityClassesDimension=RetainedEarningsAccumulatedLosses	GBP	-760166
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	Equity	core	num		2025-06-30	1	EquityClassesDimension=ShareCapital	GBP	651136
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	FixedAssets	core	num		2024-06-30	1		GBP	75053
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	FixedAssets	core	num		2025-06-30	1		GBP	151149
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	GeneralDescriptionBasisMeasurementUsedInPreparingFinancialStatements	core	text	2024-07-01	2025-06-30				These financial statements have been prepared in accordance with the provisions of Financial Reporting Standard 101
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	IncreaseFromDepreciationChargeForYearPropertyPlantEquipment	core	num	2024-07-01	2025-06-30			GBP	92225
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	NameEntityOfficer	uk-bus	text	2024-07-01	2025-06-30		EntityOfficersDimension=Director40		BENJAMIN CLASPER
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	NameProductionSoftware	uk-bus	text	2024-07-01	2025-06-30				Companies House
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	NetAssetsLiabilities	core	num		2024-06-30	1		GBP	46837
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	NetAssetsLiabilities	core	num		2025-06-30	1		GBP	-109030
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	NetCurrentAssetsLiabilities	core	num		2024-06-30	1		GBP	-23915
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	NetCurrentAssetsLiabilities	core	num		2025-06-30	1		GBP	-258572
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	PropertyPlantEquipment	core	num		2024-06-30	1		GBP	75053
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	PropertyPlantEquipment	core	num		2025-06-30	1		GBP	151149
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	PropertyPlantEquipmentFree-textComment	core	text	2024-07-01	2025-06-30				
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	PropertyPlantEquipmentGrossCost	core	num		2024-06-30	1		GBP	259303
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	PropertyPlantEquipmentGrossCost	core	num		2025-06-30	1		GBP	427624
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	ReportTitle	uk-bus	text	2024-07-01	2025-06-30				Unaudited abridged accounts for the year ended 30 June 2025
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	StartDateForPeriodCoveredByReport	uk-bus	text		2025-06-30	1			2024-07-01
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime	direp	text	2024-07-01	2025-06-30				These accounts have been prepared in accordance with the provisions applicable to companies subject to the small companies regime.
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies	direp	text	2024-07-01	2025-06-30				For the year ending 30 June 2025 the company was entitled to exemption under section 477 of the Companies Act 2006 relating to small companies.
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct	direp	text	2024-07-01	2025-06-30				The directors acknowledge their responsibilities for complying with the requirements of the Act with respect to accounting records and the preparation of accounts.
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	StatementThatMembersHaveAgreedToPreparationAbridgedAccountsUnderSection444CompaniesAct2006	direp	text	2024-07-01	2025-06-30				The members have agreed to the preparation of abridged accounts for this accounting period in accordance with Section 444(2A).
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit	direp	text	2024-07-01	2025-06-30				The members have not required the company to obtain an audit in accordance with section 476 of the Companies Act 2006.
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment	core	num	2024-07-01	2025-06-30			GBP	168321
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	TotalAssetsLessCurrentLiabilities	core	num		2024-06-30	1		GBP	51138
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	TotalAssetsLessCurrentLiabilities	core	num		2025-06-30	1		GBP	-107423
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	TotalInventories	core	num		2024-06-30	1		GBP	10000
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	TotalInventories	core	num		2025-06-30	1		GBP	9913
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	UKCompaniesHouseRegisteredNumber	uk-bus	text	2024-07-01	2025-06-30				02840930
+dulwich-hamlet-fc	02840930	MqLP3Te4pDUyyIJNkNKI74Ph46Clhci4jhsN6S6cPd0	2026-03-20	2025-06-30	_GoingConcernMaterialUncertainty	derived	text						none found
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	AccountingStandardsApplied	uk-bus	text	2023-07-01	2024-06-30		AccountingStandardsDimension=FRS102		
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	AccountsStatusAuditedOrUnaudited	uk-bus	text	2023-07-01	2024-06-30		AccountsStatusDimension=AuditExempt-NoAccountantsReport		
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	AccountsType	uk-bus	text	2023-07-01	2024-06-30		AccountsTypeDimension=AbridgedAccounts		
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	AccumulatedDepreciationImpairmentPropertyPlantEquipment	core	num		2023-06-30	1		GBP	145575
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	AccumulatedDepreciationImpairmentPropertyPlantEquipment	core	num		2024-06-30	1		GBP	184250
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	AverageNumberEmployeesDuringPeriod	core	num	2022-07-01	2023-06-30			pure	49
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	AverageNumberEmployeesDuringPeriod	core	num	2023-07-01	2024-06-30			pure	55
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	BalanceSheetDate	uk-bus	text		2024-06-30	1			2024-06-30
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	BalanceSheetDate	uk-bus	text		2024-06-30	1			30 June 2024
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	CashBankOnHand	core	num		2023-06-30	1		GBP	16401
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	CashBankOnHand	core	num		2024-06-30	1		GBP	151089
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	Creditors	core	num		2023-06-30	1	MaturitiesOrExpirationPeriodsDimension=AfterOneYear	GBP	1801
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	Creditors	core	num		2023-06-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	239763
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	Creditors	core	num		2024-06-30	1	MaturitiesOrExpirationPeriodsDimension=AfterOneYear	GBP	4301
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	Creditors	core	num		2024-06-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	330458
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	CurrentAssets	core	num		2023-06-30	1		GBP	171658
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	CurrentAssets	core	num		2024-06-30	1		GBP	306543
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	DateAuthorisationFinancialStatementsForIssue	core	text		2024-06-30	1			14 November 2024
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	Debtors	core	num		2023-06-30	1		GBP	145257
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	Debtors	core	num		2024-06-30	1		GBP	145454
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	DirectorSigningFinancialStatements	core	text	2023-07-01	2024-06-30		EntityOfficersDimension=Director40		
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	DisposalsDecreaseInDepreciationImpairmentPropertyPlantEquipment	core	num	2023-07-01	2024-06-30			GBP	3500
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	DisposalsPropertyPlantEquipment	core	num	2023-07-01	2024-06-30			GBP	3500
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	EmployeeInformationFree-textComment	core	text	2023-07-01	2024-06-30				
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	EndDateForPeriodCoveredByReport	uk-bus	text		2024-06-30	1			2024-06-30
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	EntityCurrentLegalOrRegisteredName	uk-bus	text	2023-07-01	2024-06-30				DULWICH HAMLET FOOTBALL CLUB LIMITED
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	EntityDormantTruefalse	uk-bus	text	2023-07-01	2024-06-30				false
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	EntityHasTakenExemptionUnderCompaniesActInNotPublishingItsOwnProfitLossAccountTruefalse	direp	text	2023-07-01	2024-06-30				true
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	EntityTradingStatus	uk-bus	text	2023-07-01	2024-06-30				
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	Equity	core	num		2023-06-30	1		GBP	44173
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	Equity	core	num		2023-06-30	1	EquityClassesDimension=RetainedEarningsAccumulatedLosses	GBP	-606963
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	Equity	core	num		2023-06-30	1	EquityClassesDimension=ShareCapital	GBP	651136
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	Equity	core	num		2024-06-30	1		GBP	46837
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	Equity	core	num		2024-06-30	1	EquityClassesDimension=RetainedEarningsAccumulatedLosses	GBP	-604299
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	Equity	core	num		2024-06-30	1	EquityClassesDimension=ShareCapital	GBP	651136
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	FixedAssets	core	num		2023-06-30	1		GBP	114079
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	FixedAssets	core	num		2024-06-30	1		GBP	75053
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	GeneralDescriptionBasisMeasurementUsedInPreparingFinancialStatements	core	text	2023-07-01	2024-06-30				These financial statements have been prepared in accordance with the provisions of Section 1A (Small Entities) of Financial Reporting Standard 102
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	IncreaseFromDepreciationChargeForYearPropertyPlantEquipment	core	num	2023-07-01	2024-06-30			GBP	42175
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	NameEntityOfficer	uk-bus	text	2023-07-01	2024-06-30		EntityOfficersDimension=Director40		BENJAMIN CLASPER
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	NameProductionSoftware	uk-bus	text	2023-07-01	2024-06-30				Companies House
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	NetAssetsLiabilities	core	num		2023-06-30	1		GBP	44173
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	NetAssetsLiabilities	core	num		2024-06-30	1		GBP	46837
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	NetCurrentAssetsLiabilities	core	num		2023-06-30	1		GBP	-68105
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	NetCurrentAssetsLiabilities	core	num		2024-06-30	1		GBP	-23915
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	PropertyPlantEquipment	core	num		2023-06-30	1		GBP	114079
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	PropertyPlantEquipment	core	num		2024-06-30	1		GBP	75053
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	PropertyPlantEquipmentFree-textComment	core	text	2023-07-01	2024-06-30				
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	PropertyPlantEquipmentGrossCost	core	num		2023-06-30	1		GBP	259654
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	PropertyPlantEquipmentGrossCost	core	num		2024-06-30	1		GBP	259303
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	ReportTitle	uk-bus	text	2023-07-01	2024-06-30				Unaudited abridged accounts for the year ended 30 June 2024
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	StartDateForPeriodCoveredByReport	uk-bus	text		2024-06-30	1			2023-07-01
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime	direp	text	2023-07-01	2024-06-30				These accounts have been prepared in accordance with the provisions applicable to companies subject to the small companies regime.
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies	direp	text	2023-07-01	2024-06-30				For the year ending 30 June 2024 the company was entitled to exemption under section 477 of the Companies Act 2006 relating to small companies.
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct	direp	text	2023-07-01	2024-06-30				The directors acknowledge their responsibilities for complying with the requirements of the Act with respect to accounting records and the preparation of accounts.
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	StatementThatMembersHaveAgreedToPreparationAbridgedAccountsUnderSection444CompaniesAct2006	direp	text	2023-07-01	2024-06-30				The members have agreed to the preparation of abridged accounts for this accounting period in accordance with Section 444(2A).
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit	direp	text	2023-07-01	2024-06-30				The members have not required the company to obtain an audit in accordance with section 476 of the Companies Act 2006.
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment	core	num	2023-07-01	2024-06-30			GBP	3149
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	TotalAssetsLessCurrentLiabilities	core	num		2023-06-30	1		GBP	45974
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	TotalAssetsLessCurrentLiabilities	core	num		2024-06-30	1		GBP	51138
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	TotalInventories	core	num		2023-06-30	1		GBP	10000
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	TotalInventories	core	num		2024-06-30	1		GBP	10000
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	UKCompaniesHouseRegisteredNumber	uk-bus	text	2023-07-01	2024-06-30				02840930
+dulwich-hamlet-fc	02840930	r2s0wDNwVcFyEKrWWtvLD3FhTX0wq-vlYZtT4W6_EXs	2025-02-09	2024-06-30	_GoingConcernMaterialUncertainty	derived	text						none found

@@ -1,0 +1,471 @@
+source: Companies House filing, middlesbrough-fc__2.pdf
+document: wObvgVLIJ-wGB7ZgnhOFBRO22YNdbJC2ArBKwOb2Nws
+made_up_date: 2024-06-30
+method: ocr
+pages_read: 12 of 35
+
+Middlesbrough Football & Athletic
+
+Company (1986) Limited
+
+Annual report and financial statements |
+
+for the year ended 30 June 2024
+
+Registered number: 1947851 , .
+FONT
+Middlesbrough Football & Athletic Company (1986) Limited
+Annual report and financial statements
+for the year ended 30 June 2024
+Contents ;
+, Directors and advisers ........csccccsssssssssssssessssecssecsseesssscsssecesssecssseceseseessneceseeeancesssnectecsesseecsaesesnsnesseeseasteesseesneeeee
+: Strategic report oo... sessseeesssesescsesecncereveuevescncssacarsnsnesesceneesacsesnesssesesseesesesessesesssseesesessreassaravessenesesesssasetaserssesiee 2
+' Directors’ report .......cccesccsesessesesrsssseesersnsesscsesescscsnssssssssscseeseseaveseasesanessssesssssessesescssasenensenssesitssssiessssesseesseeeeseseets D
+Independent auditors’ report 0.0.0... csceseeesteeestesesseseesesscsecsessssssassnscessesssssnesessnessscseseessseasssessrssssesnsseeseecsssseseeseses O
+Statement of Comprehensive Income .............cccesesseseeceeesnsseereneeceseeseeesestesereneeeeseartentessesesetneseaeassessseereees LD
+Balance sheet ......ccccccssscssssssssssccsssssesssessssssssesesssecsssusesssnseccessusesessnsasecsonssssuusesessssneseuseesesesnnnasenseestseeesanseessunesseneerss L2 ,
+Statement of changes in equity... eccseeseeessssesesssesessesesseecssesessssessetssceeesseressaseenesssssetssisiessssesseeeeseesesee LD
+Statement of accounting policies ..........ccccesseesseceseseeseesssesscsssessssensesssssssssseanssvesssesereessesssesssessseenesessacassesesees LS
+Notes to the financial statement ..............scsseecsseesesssnecessneeceessnatecesncsenseccersnnieccesseeuessunnvetsssssusnesusanecnsaevesseneaty 19
+Middlesbrough Football & Athletic Company (1986) Limited
+Directors and advisers for the year ended 30 June 2024
+Directors
+
+S Gibson ,
+N Bausor
+
+Company secretary and registered office .
+
+Jeremy Bloom
+
+Riverside Stadium
+
+Middlesbrough .
+
+England
+
+TS3 6RS
+
+Solicitors
+
+The Endeavour Partnership LLP
+
+Tobias House
+
+St Mark’s Court
+
+Teesdale Business Park
+
+Teesside
+
+TS17 6QW
+“Northridge Law LLP
+
+The Bloomsbury Building
+
+Holborn :
+
+London
+
+WCIA 2SL
+
+Womble Bond Dickinson (UK) LLP
+
+The Spark, Draymans Way
+
+Newcastle Helix
+
+Newcastle Upon Tyne
+
+: NE4 5DE
+
+Bankers
+
+Barclays Bank Ple
+
+Barclays House
+
+5 St Ann’s Street, Quayside
+
+Newcastle Upon Tyne
+
+NE1 3DX .
+Independent auditors .
+
+BDO LLP
+
+Central Square .
+
+29 Wellington Street
+
+Leeds . .
+LS1 4DL
+
+1
+; Middlesbrough Football & Athletic Company (1986) Limited
+
+Strategic report for the year ended 30 June 2024
+
+The directors present their Strategic report for the Company for the year ended 30 June 2024.
+
+Business review
+
+. The results for the financial year show an EBITDA (earnings before interest, tax, depreciation and
+
+amortisation, calculated as the operating loss with depreciation and amortisation added back) of £92,000
+
+(2023: £7,483,000), a loss before taxation of £12,427,000 (2023: £6,399,000) and turnover of £32,247,000
+
+(2023: £28,594,000). Net assets have increased by £146,439,000 on prior year to £10,055,000 (2023:
+
+£136,384,000 net liabilities). During the financial year, £148,686,000 owed to group undertakings was
+
+converted into equity through the issue of shares and capital contributions. :
+
+The Club competed in the EFL Championship in the 2023/24 season. The Club missed out on a play-off
+
+- position, finishing 8" in the league.
+
+Principal risks and uncertainties
+
+The management of the business and the execution of the Company’s strategy are subject to a number of risks
+
+which principally occur around football, employees, and finance related matters.
+
+Football
+
+The biggest risk to the Club is failing to perform competitively in the league in which it competes. This is
+
+managed by developing and recruiting a first team squad suited to the relevant league and employing a
+
+management team and support team with the requisite knowledge and experience. Notwithstanding this the risk
+
+, of injuries to key players can make this difficult to control. :
+Finance
+: The Company operates in a challenging business environment and market sector where revenue streams can
+
+fluctuate significantly depending upon team performance on the pitch and costs can be unrelated to income
+
+being generated. The Company continuously reviews the level of fixed costs incurred with a view to restricting :
+
+unnecessary expense and matching costs to revenue streams to ensure the Club operates within financial
+
+regulations governed by The English Football League. The principal risk in this area continues to be the impact
+
+that rising costs has on operating costs and the discretionary spend available to supporters.
+
+Key performance indicators
+
+Given the nature of the business the Company is of the opinion that analysis using KPIs is not necessary for an
+
+understanding of the development, performance, or position of the business.
+
+On behalf of the Board . .
+eb
+
+S Gibson
+
+Chairman 28 November 2024
+2
+Middlesbrough Football & Athletic Company (1986) Limited
+Directors’ report for the year ended 30 June 2024
+The directors present their report and the audited financial statements of the Company for the year ended 30
+June 2024. The Company’s registered number is 1947851.
+Principal activities
+The principal activity of the Company is the operation of a professional football club. ~
+Directors
+The directors of the Company during the year are listed below:
+S Gibson (Chairman) : .
+N Bausor (Chief Executive Officer) ;
+: Dividends
+The directors do not recommend payment of a dividend (2023: £nil).
+Future outlook
+The Club continues to compete in the EFL Championship in the 2024/25 season. It will continue to keep
+control of operating costs and make as much income as possible available to invest in the football team. The
+Club will continue to strive for progression and promotion to the Premier League.
+Going concern
+At 30 June 2024, the Company had net assets of £10,055,000 (2023: £136,384,000 net liabilities) and net
+current liabilities of £29,811,000 (2023: £164,262,000) including amounts due to group undertakings of
+£13,478,000 (2023: £148,925,000).
+In assessing the going concem position of the Company, the directors have prepared cash flow forecasts to 31
+December 2025, including consideration of a plausible downside scenario. They have further considered the
+financing arrangements in place at 30 June 2024 and changes to these financing arrangements since the balance
+sheet date (see note 22). The ability of the Company to meet its obligations as they fall due depends on the
+continuing support from The Gibson O’ Neill Company Limited, the ultimate parent undertaking, which has
+agreed through a formal letter of support to continue to provide that support, if required, to the Company for
+the foreseeable future and for at least 12 months after these financial statements are approved by the directors.
+As such, the going concern status of the Company is linked to the going concern of the group.
+The directors have carried out a review of the ultimate parent company’s ability to continue as a going concern
+: for a period of at least 12 months from the date of approval of these financial statements. Based on financial
+projections, the directors have concluded that adequate financial resources are available to ensure the ultimate
+parent company can meet its obligations as they fall due for the foreseeable future and have therefore adopted
+the going concern basis in preparing the financial statements.
+_ Post balance sheet events :
+Post balance sheet events are shown in note 22 on page 33.
+Financial risk management
+The Company’s operations expose it to a variety of financial risks that include the effects of changes in :
+liquidity risk, foreign exchange risk and credit risk.
+Liquidity risk
+The Company manages its liquidity risk on a daily basis through cash monitoring and cash flow forecasting to
+. ensure that it operates within the parameters of its financial plan. The Company continues to rely on support
+. from The Gibson O’Neill Company Limited, the ultimate parent undertaking, to satisfy its working capital
+requirements. On occasions, the Company also uses long term receivable factoring to manage liquidity risk.
+3
+Middlesbrough Football & Athletic Company (1986) Limited
+Directors’ report for the year ended 30 June 2024 (continued)
+Foreign exchange risk
+The Company is exposed to foreign exchange risk as a result of acquisition and disposal of player registrations.
+Where possible the Club minimises the use of foreign currency.
+Credit risk
+The Company’s credit risk is primarily attributable to its trade debtors. The amounts presented in the balance
+sheet are shown net of provisions for impairment where it is considered the Company will not be able to collect
+all amounts due. The Company considers it has no significant concentration of credit risk as its exposure is :
+spread over a large number of customers. The largest sums will be due from other English football clubs as
+instalments for player transfer sales and these sums are protected by the Football Creditor rules.
+Engagement with employees ,
+Information on matters of concern to employees is communicated on a regular basis to seek to achieve a .
+common awareness on the part of all employees of the financial and economic factors affecting the Company's
+performance. The Company is committed to employment policies, which follow best practice, based on equal
+opportunities for all employees, irrespective of sex, race, colour, disability, marital status, age or sexual
+orientation. It’s recognised as an Intermediate Level Premier League Equality Standard and Plan4Sport. Staff
+are trained in unconscious bias, disability-awareness, LGBT-awareness, and Mental Health First Aid.
+Disabled employees
+It is the Company’s policy that disabled people should receive full and fair consideration for all job vacancies
+for which they are suitable applicants. Employees who become disabled during their working life will be
+retained in employment wherever possible and will be given help with any necessary rehabilitation and
+retraining. The Club is prepared to modify procedures or equipment, wherever this is practicable, so that full
+use can be made of an individual’s abilities.
+Statement of directors' responsibilities in respect of the financial statements
+The directors are responsible for preparing the Annual Report and the financial statements in accordance with ~
+applicable law and regulation.
+Company law requires the directors to prepare financial statements for each financial year. Under that law, the
+directors have prepared the financial statements in accordance with United Kingdom Generally Accepted
+Accounting Practice (United Kingdom Accounting Standards, comprising FRS 102 “The Financial Reporting
+Standard applicable in the UK and Republic of Ireland”, and applicable law). Under company law, the
+directors must not approve the financial statements unless they are satisfied that they give a true and fair view
+of the state of affairs of the Company and of the profit or loss of the Company for that period. In preparing the .
+financial statements, the directors are required to:
+: . select suitable accounting policies and then apply them consistently; -
+
+. state whether applicable United Kingdom Accounting Standards, comprising FRS 102, have been
+
+followed, subject to any material departures disclosed and explained in the financial statements;
+. make judgements and accounting estimates that are reasonable and prudent; and :
+. prepare the financial statements on the going concer basis unless it is inappropriate to presume that the
+
+Company will continue in business.
+
+4
+Middlesbrough Football & Athletic Company (1986) Limited
+Directors’ report for the year ended 30 June 2024 (continued)
+The directors are also responsible for safeguarding the assets of the Company and hence for taking reasonable
+steps for the prevention and detection of fraud and other irregularities.
+The directors are responsible for keeping adequate accounting records that are sufficient to show and explain :
+the Company's transactions and disclose with reasonable accuracy at any time the financial position of the
+Company and enable them to ensure that the financial statements comply with the Companies Act 2006.
+Directors' confirmations
+In the case of each director in office at the date the Directors’ Report is approved: .
+. so far as the director is aware, there is no relevant audit information of which the Company’s auditors
+are unaware; and
+. they have taken all the steps that they ought to have taken as a director in order to make themselves
+aware of any relevant audit information and to establish that the Company’s auditors are aware of that ~ ‘
+information.
+On behalf of the board .
+S Gibson
+Chairman 28 November 2024
+5
+, Middlesbrough Football & Athletic Company (1986) Limited ,
+Independent auditors’ report to the members of
+Middlesbrough Football & Athletic Company (1986) Limited
+Opinion on the financial statements
+In our opinion the financial statements:
+
+© give a true and fair view of the state of the Company’s affairs as at 30 June 2024 and of its loss for the
+year then ended;
+e have been properly prepared in accordance with United Kingdom Generally Accepted Accounting
+Practice; and
+« have been prepared in accordance with the requirements of the Companies Act 2006.
+We have audited the financial statements of Middlesbrough Football & Athletic Company (1986) Limited
+(“the Company”) for the year ended 30 June 2024 which comprise the Statement of Comprehensive Income,
+
+7 the Balance sheet, the Statement of changes in equity, and notes to the financial statements, including a
+summary of significant accounting policies. The financial reporting framework that has been applied in their
+preparation is applicable law and United Kingdom Accounting Standards, including Financial Reporting
+Standard 102 The Financial Reporting Standard applicable in the UK and Republic of Ireland (United
+Kingdom Generally Accepted Accounting Practice). :
+
+Basis for opinion
+We conducted our audit in accordance with International Standards on Auditing (UK) (ISAs (UK)) and .
+applicable law. Our responsibilities under those standards are further described in the Auditor’s responsibilities
+for the audit of the financial statements section of our report. We believe that the audit evidence we have
+obtained is sufficient and appropriate to provide a basis for our opinion.
+Independence
+We are independent of the Company in accordance with the ethical requirements that are relevant to our audit -
+of the financial statements in the UK, including the FRC’s Ethical Standard, and we have fulfilled our other
+ethical responsibilities in accordance with these requirements.
+Conclusions relating to going concern
+In auditing the financial statements, we have concluded that the Directors’ use of the going concern basis of
+accounting in the preparation of the financial statements is appropriate.
+Based on the work we have performed, we have not identified any material uncertainties relating to events or
+conditions that, individually or collectively, may cast significant doubt on the Company's ability to continue as
+a going concem for a period of at least twelve months from when the financial statements are authorised for
+issue. :
+Our responsibilities and the responsibilities of the Directors with respect to going concern are described in the
+relevant sections of this report.
+Other information
+The Directors are responsible for the other information. The other information comprises the information
+included in the Annual report and financial statements, other than the financial statements and our auditor’s
+report thereon. Our opinion on the financial statements does not cover the other information and, except to the
+extent otherwise explicitly stated in our report, we do not express any form of assurance conclusion thereon.
+
+6
+Middlesbrough Football & Athletic Company (1986) Limited
+Independent auditors’ report to the members of
+Middlesbrough Football & Athletic Company (1986) Limited
+(continued)
+Our responsibility is to read the other information and, in doing so, consider whether the other information is
+materially inconsistent with the financial statements or our knowledge obtained in the course of the audit or
+otherwise appears to be materially misstated. If we identify such material inconsistencies or apparent material
+misstatements, we are required to determine whether this gives rise to a material misstatement in the financial
+statements themselves. If, based on the work we have performed, we conclude that there is a material
+misstatement of this other information, we are required to report that fact.
+We have nothing to report in this regard.
+Other Companies Act 2006 reporting
+In our opinion, based on the work undertaken in the course of the audit:
+e the information given in the Strategic report and the Directors’ report for the financial year for which
+the financial statements are prepared is consistent with the financial statements; and
+© the Strategic report and the Directors’ report have been prepared in accordance with applicable legal
+requirements.
+In the light of the knowledge and understanding of the Company and its environment obtained in the course of
+the audit, we have not identified material misstatements in the Strategic report or the Directors’ report.
+We have nothing to report in respect of the following matters in relation to which the Companies Act 2006
+requires us to report to you if, in our opinion:
+© adequate accounting records have not been kept, or returns adequate for our audit have not been
+received from branches not visited by us; or
+¢ the financial statements are not in agreement with the accounting records and returns; or
+e certain disclosures of Directors’ remuneration specified by law are not made; or
+© we have not received all the information and explanations we require for our audit.
+Responsibilities of Directors
+As explained more fully in the Statement of Directors Responsibilities, the Directors are responsible for the
+preparation of the financial statements and for being satisfied that they give a true and fair view, and for such
+internal control as the Directors determine is necessary to enable the preparation of financial statements that
+are free from material misstatement, whether due to fraud or error.
+In preparing the financial statements, the Directors are responsible for assessing the Company’s ability to
+continue as a going concern, disclosing, as applicable, matters related to going concern and using the going
+concern basis of accounting unless the Directors either intend to liquidate the Company or to cease operations,
+or have no realistic alternative but to do so.
+Auditor’s responsibilities for the audit of the financial statements
+Our objectives are to obtain reasonable assurance about whether the financial statements as a whole are free
+from material misstatement, whether due to fraud or error, and to issue an auditor’s report that includes our
+: opinion. Reasonable assurance is a high level of assurance, but is not a guarantee that an audit conducted in
+accordance with ISAs (UK) will always detect a material misstatement when it exists. Misstatements can arise
+7
+Middlesbrough Football & Athletic Company (1986) Limited
+Independent auditors’ report to the members of
+Middlesbrough Football & Athletic Company (1986) Limited
+(continued)
+from fraud or error and are considered material if, individually or in the aggregate, they could reasonably be
+expected to influence the economic decisions of users taken on the basis of these financial statements.
+Extent to which the audit was capable of detecting irregularities, including fraud
+lrregularities, including fraud, are instances of non-compliance with laws and regulations. We design
+procedures in line with our responsibilities, outlined above, to detect material misstatements in respect of
+irregularities, including fraud. The extent to which our procedures are capable of detecting irregularities,
+including fraud is detailed below:
+Non-compliance with laws and regulations
+Based on:
+© our understanding of the Company and the industry in which it operates;
+¢ discussion with management and those charged with governance; and
+¢ obtaining and understanding of the Company’s policies and procedures regarding compliance with laws
+and regulations
+We considered the significant laws and regulations to be Financial Reporting Standard 102 The Financial
+Reporting Standard applicable in the UK and Republic of Ireland (United Kingdom Generally Accepted
+Accounting Practice), the Companies Act 2006 and UK tax legislation. : :
+The Company is also subject to laws and regulations where the consequence of non-compliance could have a
+. material effect on the amount or disclosures in the financial statements, for example through the imposition of
+fines or litigations. We identified such laws and regulations to be compliance with Football regulation, at a
+Football Association level and with the English Football League including Financial Fair Play regulations.
+4
+Our procedures in respect of the above included:
+¢ review of minutes of meeting of those charged with governance for any instances of non-compliance
+with laws and regulations;
+© review of correspondence with tax authorities for any instances of non-compliance with laws and
+regulations;
+© review of financial statement disclosures and agreeing to supporting documentation;
+Fraud
+We assessed the susceptibility of the financial statements to material misstatement, including fraud. Our risk
+: assessment procedures included:
+¢ Enquiry with management and those charged with governance regarding any known or suspected
+instances of fraud; . :
+¢ Obtaining an understanding of the Company’s policies and procedures relating to:
+o Detecting and responding to the risks of fraud; and
+o Internal controls established to mitigate risks related to fraud. :
+8
+Middlesbrough Football & Athletic Company (1986) Limited
+Independent auditors’ report to the members of
+Middlesbrough Football & Athletic Company (1986) Limited
+(continued)
+
+e Review of minutes of meetings of those charged with governance for any known or suspected instances
+of fraud; .
+
+e Discussion amongst the engagement team as to how and where fraud might occur in the financial
+statements;
+
+¢ Performing analytical procedures to identify any unusual or unexpected relationships that may indicate
+risks of material misstatement due to fraud.
+
+Based on our risk assessment, we considered the areas most susceptible to fraud to be: .
+© revenue recognition through the inappropriate recognition of revenue that should be deferred at year
+. end; and
+
+© management override of controls through the manipulation of significant estimates or the posting of
+unsubstantiated journals.
+
+Our procedures in respect of the above included:
+
+* With regards to the risk of fraud in revenue recognition, we have performed testing of transactions
+recorded within deferred revenue and revenue accounts, and checked the appropriateness of amounts
+released from deferred revenue within the year to check whether revenue has been recorded in the.
+
+: correct period;
+
+« Testing a sample of journal entries throughout the year, which met a defined risk criteria to detect
+possible irregularities and fraud, by agreeing to supporting documentation;
+
+© Assessing significant estimates made by management for bias that might represent a risk of material
+misstatement due to fraud. In particular, we considered the potential impairment of player registration
+intangible assets, and the valuation of tangible fixed assets.
+
+We also communicated relevant identified laws and regulations and potential fraud risks to all engagement
+team members who were all deemed to have appropriate competence and capabilities and remained alert to any
+indications of fraud or non-compliance with laws and regulations throughout the audit.
+Our audit procedures were designed to respond to risks of material misstatement in the financial statements,
+recognising that the risk of not detecting a material misstatement due to fraud is higher than the risk of not
+detecting one resulting from error, as fraud may involve deliberate concealment by, for example, forgery,
+misrepresentations or through collusion. There are inherent limitations in the audit procedures performed and
+the further removed non-compliance with laws and regulations is from the events and transactions reflected in
+the financial statements, the less likely we are to become aware of it.
+A further description of our responsibilities is available on the Financial Reporting Council’s website at:
+" https://www. fre.org.uk/auditorsresponsibilities. This description forms part of our auditor’s report.
+9
+Middlesbrough Football & Athletic Company (1986) Limited
+Independent auditors’ report to the members of
+Middlesbrough Football & Athletic Company (1986) Limited
+(continued)
+Use of our report
+This report is made solely to. the Company’s members, as a body, in accordance with Chapter 3. of Part 16 of
+the Companies Act 2006. Our audit work has been undertaken so that we might state to the Company’s
+members those matters we are required to state to thei in an auditor’s report and for no other purpose. To the
+fullest extent permitted by law, we do not accept or assume responsibility to anyone other than the Company
+and the Company’s members as'a body, for our audit work, for this report, orfor the opinions we have formed.
+‘DocuSigned by: ,
+& Eldon
+‘DCOD99BB4F 07404...
+Neil.Ebdon (Senior Statutory Auditor)
+For and on behalf of BDO LLP, Statutory Auditor
+Leeds, UK.
+29 November 2024
+BDO LLP isa limited liability partnership registered in England and Wales (with registered number’
+0C305127).
+10
+

@@ -1,0 +1,343 @@
+source: Companies House filing, oldham-athletic-fc__1.pdf
+document: Fs6HOHnp5US0iJzrxlpCMaOafRckv6Iry09cmQhcFwA
+made_up_date: 2025-06-30
+method: ocr
+pages_read: 11 of 11
+
+Ps)
+a .
+Company Registration No. 04989487 (England and Wales)
+OLDHAM ATHLETIC (2004) ASSOCIATION
+FOOTBALL CLUB LIMITED
+UNAUDITED FINANCIAL STATEMENTS
+FOR THE YEAR ENDED
+30 JUNE 2025
+. PAGES FOR FILING WITH REGISTRAR
+il | | iM | | |
+Je. A 17/03/2026 #128
+[ COMPANIES HOUSE
+aa
+Company Registration No. 04989487
+OLDHAM ATHLETIC (2004) ASSOCIATION FOOTBALL CLUB LIMITED
+STATEMENT OF FINANCIAL POSITION
+AS AT 30 JUNE 2025
+2025 2024
+Notes £ £ : £ £
+Fixed assets
+Intangible assets 3 15,000 92,880
+Tangible assets : 4 937,041 927,244
+Investments 5 1 1
+952,042 1,020,125
+Current assets
+Stocks 123,756 172,986
+Debtors 7 1,194,254 418,910
+Cash at bank and in hand 132,034 37,074
+1,450,044 628,970
+Creditors: amounts falling due within
+one year 8 (14,111,922) _ (9,178,979)
+Net current liabilities (12,661,878) (8,550,009)
+Total assets less current liabilities (11,709,836) (7,529,884)
+Creditors: amounts falling due after
+more than one year 3 (643,357) (870,125)
+Net liabilities (12,353,193) (8,400,009)
+Capital and reserves
+Called up share capital 20,200 20,200
+Share premium account 2,284,722 2,284,722
+Profit and loss reserves (14,658,115) (10,704,931)
+Total equity (12,353,193) (8,400,009)
+The directors of the company have elected not to include a copy of the income statement within the financial
+statements. .
+For the financial year ended 30 June 2025 the company was entitled to exemption from audit under section 477 of
+the Companies Act 2006 relating to small companies.
+The members have not required the company to obtain an audit of its financial statements for the year in question in
+accordance with section 476.
+The directors acknowledge their responsibilities for complying with the requirements of the Companies Act 2006
+with respect to accounting records and the preparation of financial statements.
+These financial statements have been prepared and delivered in accordance with the provisions applicable to
+companies subject to the small companies’ regime.
+-1-
+Company Registration No. 04989487
+OLDHAM ATHLETIC (2004) ASSOCIATION FOOTBALL CLUB LIMITED
+STATEMENT OF FINANCIAL POSITION (CONTINUED) :
+AS AT 30 JUNE 2025
+The financial statements were approved by the board of directors and authorised for issue on 15/01/26 and
+are signed on its behalf by:
+Director —
+
+-2-
+OLDHAM ATHLETIC (2004) ASSOCIATION FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025 ,
+1 Accounting policies
+Company information
+Oldham Athletic (2004) Association Football Club Limited is a private company limited by shares and is
+tegistered and incorporated in England and Wales. The registered office is Boundary Park, Furtherwood
+Road, Oldham, England, OL1 2PB.
+_ Accounting convention
+These financial statements have been prepared in accordance with FRS 102 “The Financial Reporting
+Standard applicable in the UK and Republic of Ireland” (“FRS 102”) and the requirements of the Companies
+Act 2006 as applicable to companies subject to the small companies regime. The disclosure requirements of
+section 1A of FRS 102 have been applied other than where additional disclosure is required to show a true
+and fair view.
+The financial statements are prepared in sterling, which is the functional currency of the company. Monetary
+amounts in these financial statements are rounded to the nearest £.
+The financial statements have been prepared under the historical cost convention. The principal accounting
+policies adopted are set out below.
+The company has taken advantage of the exemption under section 399 of the Companies Act 2006 not to ~
+prepare consolidated accounts, on the basis that the group of which this is the parent qualifies as a small
+group. The financial statements present information about the company as an individual entity and not about
+its group.
+Going concern
+These financial statements are prepared on the going concern basis. The directors have a reasonable
+expectation that the company will continue in operational existence for the foreseeable future.
+The company has net liabilities of £12.3m and the company ability to continue as a going concern is reliant on
+the continued support of its shareholders.
+The shareholders have confirmed their continued support for the foreseeable future.
+The Club and Stadium are back in the same ownership which secures the longer term future of the Club, this
+will also help to develop stronger community ties and offer improved facilities for the area. The Club are
+working together with the local Council, community and wider sports bodies to enhance the future offerings of
+the Club and are reviewing all possible revenue streams to bring the Club back to a stronger financial footing
+along with streamlining the offerings and bringing services back in house where appropriate.
+Turnover
+Turnover is recognised at the fair value of the consideration received or receivable for goods and services
+provided in the normal course of business, and is shown net of VAT.
+Turnover represents match receipts and other income arising from the Club's activities. Revenue is
+recognised when substantially all of the obligations under a sales contract have been fulfilled.
+Income relating to season tickets, sponsorship and other elements of income received prior to the year end in
+respect of future events, matches or seasons is treated as deferred income and recognised in the period to
+which it relates.
+Intangible fixed assets other than goodwill
+Intangible assets acquired separately from a business are recognised at cost and are subsequently measured
+at cost less accumulated amortisation.
+-3-
+OLDHAM ATHLETIC (2004) ASSOCIATION FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2025
+1 Accounting policies (Continued) :
+Amortisation is recognised so as to write off the cost of assets less their residual values over their useful lives
+on the following bases:
+Player registrations Over the duration of the contract
+Tangible fixed assets :
+Tangible fixed assets are initially measured at cost and subsequently measured at cost, net of depreciation.
+Depreciation is recognised so as to write off the cost of assets less their residual values over their useful lives
+on the following bases:
+Playing facilities 10 to 25 years straight line
+Fixtures and fittings 5 years straight line
+Motor vehicles Fully written down
+The gain or loss arising on the disposal of an asset is determined as the difference between the sale
+proceeds and the carrying value of the asset, and is credited or charged to profit or loss.
+Fixed asset investments
+Interests in subsidiaries are initially measured at cost and subsequently measured at cost less any
+accumulated impairment losses. The investments are assessed for impairment at each reporting date and
+any impairment losses or reversals of impairment losses are recognised immediately in profit or loss.
+A subsidiary is an entity controlled by the company. Control is the power to govern the financial and operating
+policies of the entity so as to obtain benefits from its activities.
+Impairment of fixed assets
+At each reporting period end date, the company reviews the carrying amounts of its tangible and intangible
+assets to determine whether there is any indication that those assets have suffered an impairment loss. If any
+: such indication exists, the recoverable amount of the asset is estimated in order to determine the extent of the :
+impairment loss (if any). Where it is not possible to estimate the recoverable amount of an individual asset,
+the company estimates the recoverable amount of the cash-generating unit to which the asset belongs.
+Stocks
+Stocks are stated at the lower of cost and estimated selling price less costs to complete and sell. Cost
+comprises direct materials and, where applicable, direct labour costs and those overheads that have been
+incurred in bringing the stocks to their present location and condition.
+Stocks held for distribution at no or nominal consideration are measured at the lower of cost and replacement
+cost, adjusted where applicable for any loss of service potential. :
+At each reporting date, an assessment is made for impairment. Any excess of the carrying amount of stocks
+over its estimated selling price less costs to complete and sell is recognised as an impairment loss in profit or
+loss. Reversals of impairment losses are also recognised in profit or loss.
+Cash and cash equivalents
+Cash and cash equivalents are basic financial instruments and include cash in hand and deposits held at call
+with banks.
+-4-
+OLDHAM ATHLETIC (2004) ASSOCIATION FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2025
+1 Accounting policies (Continued)
+Financial instruments
+° The company has elected to apply the provisions of Section 11 ‘Basic Financial Instruments’ of FRS 102 to
+all of its financial instruments.
+Financial instruments are recognised when the company becomes party to the contractual provisions of the
+instrument.
+Basic financial assets
+Basic financial assets, which include trade and other debtors, amounts owed by group undertakings and cash
+and bank balances, are initially measured at transaction price.
+Classification of financial liabilities ,
+Financial liabilities and equity instruments are classified according to the substance of the contractual
+arrangements entered into. An equity instrument is any contract that evidences a residual interest in the
+assets of the company after deducting all of its liabilities.
+Basic financial liabilities :
+Basic financial liabilities, including trade and other creditors and bank loans, are initially recognised at
+transaction price.
+Debt instruments are subsequently carried at amortised cost, using the effective interest rate method.
+Equity instruments
+Equity instruments issued by the company are recorded at the fair value of proceeds received, net of
+transaction costs. Dividends payable on equity instruments are recognised as liabilities once they are no
+longer at the discretion of the company.
+Taxation
+Current tax is based on taxable profit for the year. Current tax assets and liabilities are measured using tax
+rates that have been enacted or substantively enacted by the reporting date.
+Deferred tax is calculated at the tax rates that are expected to apply to the period when the asset is realised
+or the liability is settled based on tax rates that have been enacted or substantively enacted by the reporting
+date.
+Deferred tax liabilities are recognised in respect of all timing differences that exist at the reporting date. Timing
+: differences are differences between taxable profits and total comprehensive income that arise from the
+inclusion of income and expenses in tax assessments in different periods from their recognition in the
+financial statements. Deferred tax assets are recognised only to the extent that it is probable that they will be
+recovered by the reversal of deferred tax liabilities or other future taxable profits.
+Employee benefits
+The costs of short-term employee benefits are recognised as a liability and an expense.
+The cost of any unused holiday entitlement is recognised in the period in which the employee’s services are
+received.
+Retirement benefits
+For defined contribution schemes the amount charged to profit or loss is the contributions payable in the year.
+Differences between contributions payable in the year and contributions actually paid are shown as either
+accruals or prepayments.
+-5-
+v
+OLDHAM ATHLETIC (2004) ASSOCIATION FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2025
+1 Accounting policies (Continued)
+Leases
+Rental income from operating leases is recognised on a straight line basis over the term of the relevant lease.
+Initial direct costs incurred in negotiating and arranging an operating lease are added to the carrying amount
+, of the leased asset and recognised on a straight line basis over the lease term.
+Grant income :
+Grants are recognised at the fair value of the asset received or receivable when there is reasonable
+assurance that the grant conditions will be met and the grants will be received. These are shown in other
+income. .
+: The grant income received in the current and prior year relates to: the UK Governments Coronavirus Job
+Retention scheme and various community benefit schemes operated by Oldham Metropolitan Borough
+Council and from the English Football League.
+A grant that specifies performance conditions is recognised in income when the performance conditions are
+met. Where a grant does not specify performance conditions it is recognised in income when the proceeds
+are received or receivable. A grant received before the recognition criteria are satisfied is recognised as a
+liability.
+2 Employees
+: : The average monthly number of persons (including directors) employed by the company during the year was:
+2025 2024
+Number Number
+Total 229 220
+-6-
+OLDHAM ATHLETIC (2004) ASSOCIATION FOOTBALL CLUB LIMITED |
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2025
+3 Intangible fixed assets
+, Player
+registrations
+: . £
+Cost :
+At 1 July 2024 210,000
+Additions ‘ : 20,000
+Disposals (210,000)
+At 30 June 2025 : 20,000
+Amortisation and impairment
+At 1 July 2024 117,120
+Amortisation charged for the year 97,880
+Disposals : (210,000)
+At 30 June 2025 5,000
+Carrying amount
+At 30 June 2025 15,000
+At 30 June 2024 92,880
+4 Tangible fixed assets
+Playing Fixtures and Motor Total
+: facilities fittings vehicles
+£ £ £ £
+Cost
+At 1 July 2024 1,125,769 359,866 52,423 1,538,058
+Additions 140,316 10,218 - 150,534
+Disposals - - (16,423) (16,423)
+At 30 June 2025 1,266,085 370,084 36,000 1,672,169
+Depreciation and impairment
+At 1 July 2024 207,244 351,147 52,423 610,814
+Depreciation charged in the year 133,345 7,392 - 140,737
+Eliminated in respect of disposals - - (16,423) (16,423) |
+At 30 June 2025 340,589 358,539 36,000 735,128
+Carrying amount
+At 30 June 2025 925,496 11,545 - 937,041
+At 30 June 2024 918,525 8,719 - 927,244
+» .
+OLDHAM ATHLETIC (2004) ASSOCIATION FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR ENDED 30 JUNE 2025 ;
+5 Fixed asset investments
+. 2025 2024
+, £ £
+Shares in group undertakings and participating interests 1 41
+Movements in fixed asset investments
+Shares in
+group
+undertakings
+£
+Cost or valuation
+At 1 July 2024 & 30 June 2025 1
+Carrying amount
+At 30 June 2025 1
+At 30 June 2024 1
+6 Subsidiaries
+Details of the company's subsidiaries at 30 June 2025 are as follows:
+Name of undertaking Registered office ° Nature of business Class of % Held
+shares held Direct
+Oldham Event Centre Limited | Boundary Park, Furtherwood Road, Provision of Leisure Ordinary 100.00
+Oldham, OL1 2PB Facilities
+7 Debtors _
+2025 2024
+Amounts falling due within one year: £ £
+Trade debtors . 184,707 99,651
+Amounts owed by group undertakings 440,000 -
+Other debtors . 126,966 112,610
+Prepayments and accrued income 472,581 206,649
+1,194,254 418,910
+-8-
+v
+OLDHAM ATHLETIC (2004) ASSOCIATION FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2025
+. 8 Creditors: amounts falling due within one year
+2025 2024
+£ £
+Bank loans 9,640 10,649
+Trade creditors 782,495 624,018
+Taxation and social security 444,540 226,327
+Deferred income : 954,759 924,149
+Other creditors 11,503,513 7,304,037
+Accruals and deferred income 416,975 89,799
+, 14,111,922 9,178,979
+9 Creditors: amounts falling due after more than one year
+2025 2024
+Notes £ £
+Bank loans and overdrafts - 9,265
+Trade creditors - 25,000
+Deferred income 643,357 754,200
+Other creditors - 81,660
+643,357 870,125
+10 Financial commitments, guarantees and contingent liabilities
+There is a fixed and floating charge in favour of HSBC UK Bank PLC dated 5 September 2023 that contains a
+negative pledge and covers all assets of the company. This is solely for the purpose of securing the BACS
+payment facility that HSBC provide.
+11 Operating lease commitments
+At the reporting end date the company had outstanding commitments for future minimum lease payments
+under non-cancellable operating leases, which fall due as follows:
+: 2025 2024
+. £ £
+Within one year 150,000 150,000
+Between one and five years : 600,000 600,000
+In over five years 2,387,500 2,712,500
+3,137,500 3,462,500
+12 Related party transactions
+Included within other creditors is £10,646,578 (2024: £7,156,470) owed to entities under common control.
+Included within other creditors is £11,609 (2024: £11,686) owed to a director of the company. The movement
+in the year relates solely to expenses paid on behalf of the company by the director.
+-9-
+7]
+OLDHAM ATHLETIC (2004) ASSOCIATION FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2025 ;
+13 Parent company
+The ultimate parent company is Groco 510 Limited, a company incorporated in England & Wales, which is
+exempt from the requirement to prepare group accounts.
+-10-
+

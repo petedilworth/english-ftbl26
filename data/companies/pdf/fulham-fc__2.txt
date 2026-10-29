@@ -1,0 +1,584 @@
+source: Companies House filing, fulham-fc__2.pdf
+document: E_8V_MlQ2lGZPkp6wQLZ7OnbVMEibKbCWRoiE20fEyI
+made_up_date: 2024-06-30
+method: ocr
+pages_read: 12 of 31
+
+Registered number: 2114486
+Fulham Football Club Limited
+Annual Report and Financial Statements
+30 June 2024
+i *ADZ3NQHS* |
+” en 25/03/2025 yor |
+COMPANIES HOUSE
+INDEX
+PAGE
+1. OFFICERS AND ADVISORS 2
+2. STRATEGIC REPORT 3-5
+3. DIRECTORS’ REPORT 6-8
+4. STATEMENT OF DIRECTORS’ RESPONSIBILITIES 9
+5. INDEPENDENT AUDITOR'S REPORT TO THE MEMBERS
+OF FULHAM FOOTBALL CLUB LIMITED 10 - 12
+6. PROFIT AND LOSS ACCOUNT AND
+OTHER COMPREHENSIVE INCOME 13
+7. BALANCE SHEET 14
+8. STATEMENT OF CHANGES IN EQUITY 15
+9. NOTES TO THE FINANCIAL STATEMENTS 16 - 30
+1 Fulham Football Club Limited
+Fulham Football Club Limited
+Offices and Advisors
+For the year ended 30 June 2024
+Registered Office:
+Fulham Football Club Training Ground
+Motspur Park
+New Malden
+Surrey
+KT3 6PT
+Auditor:
+KPMG LLP
+One St Peter's Square
+Manchester
+M2 3AE
+Bankers:
+Metro Bank Pic Santander UK Pic Barclays Bank plc
+One Southampton Row Bridle Road Leicester
+London Bootle Leicestershire
+WC1B SHA L30 4GB LE87 2BB
+Solicitor:
+Squire Patton Boggs (UK) LLP
+7 Devonshire Square
+Cutlers Gardens
+London
+EC2M 4YH
+2 Fulham Football Club Limited
+Fulham Football Club Limited
+Strategic Report
+For the year ended 30 June 2024
+Review of the business
+During the 2023/24 financial year the Club participated in the English Premier League (EPL), finishing in 13"
+position.
+Financially, the Company recorded a loss for the year of £32.2m (2023: £26.6m). During the year revenue remained
+in line with prior year, slightly decreasing to £181.6m compared to £182.3m in 2022/23, which is reflective of the
+continued participation in the EPL.
+During the year, the Company, in conjunction with a fellow Group subsidiary, Fulham Stadium Limited, continued to
+redevelop the Riverside Stand which will create a unique Thameside destination with first class facilities for
+supporters and partners on match day as well as for the wider community year-round. The costs associated with this
+development are included in the financial statements of Fulham Stadium Limited.
+The Club's parent company, Fulham Football Leisure Limited, continued to develop plans for the former BBC sports
+ground purchased in May 2017. Plans are being drawn up to develop this into a second elite training facility to
+benefit the Club and Academy for many years to come.
+During the year to 30 June 2024, the Company saw the following changes in the key indicators of financial and non-
+financial performance:
+
+Year to 30 June
+Indicator 2024 2023 +/- change %
+Turnover (£m) 181.6 182.3 {0.7} (0.4)
+Total staff costs (£m) 154.8 139.1 15.7 11.3
+Staff costs as % of revenues 85.2% 76.2% 9.0% 11.8
+Net operating (loss)/profit before depreciation, 4
+amortisation & impairment (£m) (10.7) 11.0 217 197.3
+Final position in Premier League 43!" 10th - -
+Total Premier League attendance 461,916 452,205 9711 2.2
+Average Premier League attendance per game 24,311 23,800 511 2.2
+The Directors consider these to be the most useful measures of performance, as they link on-field performance by
+the team to financial results achieved by the Company.
+Principal risks and uncertainties
+The principal risk affecting the Company and the Group to which it belongs is its exposure to the financial impacts of
+changes in on the pitch performance of the Club. As experienced over recent seasons, the Club's league status has a
+significant impact on its revenue generating capacity, with broadcasting, sponsorship and other revenues being
+significantly reduced whilst playing in the Football League Championship as compared to the Premier League.
+To mitigate this risk, the Directors have taken steps to control the Company’s, and the Group to which it belongs, cost
+base. The Directors continue to monitor financial and footballing performance so that adjustments can be made as
+necessary.
+The Directors are also mindful of profit and sustainability rules imposed by the Premier League and other footballing
+bodies when preparing future operating budgets. Penalties for breaching these profit and sustainability rules vary
+between the Football League and Premier League, and could include fines, transfer embargoes and points
+deductions.
+From time to time the Club engages in transactions in foreign currencies. This includes significant player transfer
+agreements denominated in Euros which may include provisions for deferred settlements. In these cases, the
+Company’s policy is to accept the risk of a movement in the exchange rate to Sterling. No forward purchases of
+currency are made, nor does the Company or Group to which it belongs use hedging instruments.
+3 Fulham Football Club Limited
+Fulham Football Club Limited
+
+Strategic Report (continued)
+
+For the year ended 30 June 2024
+
+Stakeholders and our engagement
+
+Section 172 of the Companies Act 2006 requires Directors to take into consideration the interests of stakeholders
+and other matters in their decision making. The Directors recognise their responsibility with regards to these interests
+and invite representatives from various stakeholders to attend meetings to express their views. The Directors
+describe below how they have engaged with various key stakeholders during the year.
+
+(a) Supporters
+
+One of the key stakeholders are the supporters who may be represented by several supporter groups. The Club
+meets regularly with three groups: the Fulham Supporters’ Trust ("FST"), the Fulham Disabled Supporters
+Association (“DSA”) and the newly formed (in 2024) Fulham FC Fan Advisory Board (“FAB”). The meetings ensure
+that the opinions of supporters are considered in the decision making of the Directors. The Club produces a Fan
+Engagement Plan each season and has a dedicated Fan page on its official website www.fulhamfc.com/fans.
+
+(b) Employees
+
+The Directors have made a conscientious effort to enhance the engagement with employees. Weekly Club updates
+are circulated by the Chief Executive Officer to ensure all employees are regularly updated with Club news and
+strategic updates, with increased and over communication between employees and the Directors actively
+encouraged. The Club's values are consistently reinforced by the Directors, who encourage an open and inclusive
+workplace.
+
+(c) Fulham Football Club Foundation / Community
+
+The Club continues to have a very close working relationship with the Fulham Football Club Foundation (the
+“Foundation’) and in turn the wider community. The Club provided key support to the Foundation throughout this year,
+as it has in previous years. For many years, members of the Club’s senior leadership team have served as trustees
+of the Foundation and the Club and the Foundation share vital services, including HR, Legal, Safeguarding, Facilities
+as well as overarching Management Board support. The Club estimates that community development expenditure (not
+recharged to the Foundation) in the year amounted to £0.5m (2023: £0.5m). This reflects the Club's strategy to provide
+increased support and investment in community engagement activities over the last few years, which we expect to
+continue for the forthcoming year.
+
+(d) Fulham Football Club Women’s Programme
+
+The last few years has also seen a marked increase in the time and support allocated to the promotion of the Fulham
+Women’s programme. Having once been under the control of the Foundation, the Club took the decision to bring the
+Women's programme under its stewardship, both at first team level and by creating an Academy programme that links
+to the Foundation’s Girls Development Centre. During this year we have increased the permanent members of staff
+in the Women's programme and deployed key resources from the Club's Management Board (led principally by the
+Club’s Head of Footbal! Development) who have brought their skill and experience to help grow this area. During the
+2023/24 season expenditure on the programme amounted to £0.8m (2023: £0.5m).
+
+Key decisions made in the year and the consideration of key stakeholders include the continuation of the Riverside
+Stand development. Various decisions during the year were made with regards to the Riverside Stand development.
+All decisions were made with the focus on all stakeholders involved, whether that be supporters, suppliers, customers,
+employees, the community, or the Shareholder. The Directors recognise that this development is key for all
+stakeholders. These decisions included but weren’t limited to decisions relating to the building layout and design;
+appointment of contractors: and possible future tenants and operators.
+
+4 Fulham Footbail Club Limited
+Fulham Football Club Limited
+
+Strategic Report (continued)
+
+For the year ended 30 June 2024
+
+Post balance sheet events
+
+Since the year-end the Company has acquired and disposed of a number of player registrations. The cost of
+acquiring new player registrations post year end amounted to £95.3m (2023: £71.7m) and the profit on the disposal
+of player registrations post year end was £43.3m (2023: £30.1m).
+
+On 18 October 2024, the Company issued 44,397,524 new ordinary shares to its immediate parent company,
+Fulham Football Leisure Limited. This was a non-cash transaction; the share issue was set off against related debt
+by way of deed.
+
+By order of the Board
+
+A J Mackintosh
+
+Chief Executive
+
+20 December 2024
+
+5 Fulham Footbail Club Limited
+Fulham Football Club Limited
+
+Directors’ Report
+
+For the year ended 30 June 2024
+
+The Directors present their report and the accounts for the year ended 30 June 2024.
+
+Principal activities
+
+The Company's principal activity during the period was the operation of a professional football club.
+
+Financial Instruments
+
+The Company does not routinely engage in complex financial instruments in the operation of its business. The
+Company receives funding from its parent entity under undocumented loan facilities that are deemed to be repayable
+on demand and do not bear interest
+
+From time to time, the Company issues new equity shares to its parent entity which are offset against loan balances
+outstanding in order to improve the financial position of the Company. However, there is no pre-existing right or
+obligation to do so attached to any of the loan facilities in place. Post year end on 18 October 2024, £44.4m of loans
+were converted into equity shares, increasing the total called up share capital of the Company to £63.8m,
+
+The Company enters into contracts for the purchase and sale of player registrations which may provide for the
+deferred payment or receipt of transfer fee installments. Such installments are measured at amortised cost using the
+effective interest rate method where this value is materially different to the transaction price.
+
+Further explanation of the accounting for financial instruments is included in the accounting policies from page 16 of
+these financial statements.
+
+Directors
+
+The Directors who served during the year and up to the signing date of these financial statements are as follows:-
+
+S R Khan M Lamping
+
+AJ Mackintosh AR Khan
+
+D Daly
+
+Charitable donations
+
+During the year, the Company donated £3,000 (2023: £15,000) to various charitable causes.
+
+Political donations
+
+The Company did not make any political donations or incur any political expenditure during the year or prior year.
+Going concern
+
+Notwithstanding a loss for the year ended 30 June 2024 of £32,215k, the financial statements have been prepared
+on a going concern basis which the Directors consider to be appropriate for the following reasons.
+
+Fulham Football Club Limited is a wholly owned subsidiary of Cougar Holdco London Limited, the principal activity of
+the Group being the operation of a professional football club. The ongoing operations of Fulham Football Club
+Limited are therefore intrinsically linked to the going concern status of that Group. Cougar Holdco London Limited
+includes the following disclosures in respect of going concern in its financial statements.
+
+Notwithstanding the Group's loss for the year ended 30 June 2024 of £33,395k, the Consolidated and Company
+financial statements have been prepared on a going concern basis which the Directors consider to be appropriate for
+the following reasons.
+
+The Company and Group meet their day to day working capital requirements from shareholder loans that are
+subsequently converted fo equity. Subsequent to 30 June 2024, the Group and Company has received further
+financial support amounting to £23, 800,000 from its ultimate owner and immediate parent company, Mr S R Khan
+and K2TR Family Holdings 2, Corporation. Post year end, on the 18 October 2024, amounts due to shareholders of
+£75, 272,000 were converted to equity.
+
+6 Fulham Football Club Limited
+Fulham Football Club Limited
+
+Directors’ Report (continued)
+
+For the year ended 30 June 2024
+
+Going concern (continued)
+
+Post year-end, on 16 July 2024, a loan facility of £125,000,000 was taken out with JPMorgan Chase Bank in relation
+to the completion of the Riverside Stand. The facility is secured against the Company’s assets and is repayable in
+full within 5 years. Interest is charged at SONIA + 3.625%. There are financial covenants attached to the facility
+relating to Debt Servicing. in addition, the group also has unsecured loan with its immediate parent company,
+amounting to £46, 500,000, with no fixed repayment date. There are no covenants attached to this loan balance. The
+£46, 500,000 Ioan is forecasted to be repaid within the going concern assessment period.
+
+The Directors have prepared base and sensitised cash flow forecasts for a period 12 months from the date of
+approval of these financiafl statements. Those forecasts assume the continued development of the Riverside Stand,
+utilising additional funds that the Company expects to be made available by the Company's shareholder for that
+purpose.
+
+The base case forecasts are based on assumptions in respect of league position, attendances and the related
+matchday income and costs, together with assumptions on league status of the Club, central distributions and
+possible rebates. The Directors consider further downside scenarios with assumptions of reduced tickets and higher
+inflation to costs.
+
+All forecasts indicate that, even taking account of controllable mitigating actions, the Group and Company will require
+significant additional funding in addition to that required to complete the Riverside Stand development. in a downside
+scenario the Group and Company’s forecast cash requirements may increase over the base case in the forecast
+period but the majority of the Group's costs are not sensitive to downside variations, given the contractual and
+predetermined nature of a large proportion of the Group's income and expenditure. Based on both base and
+downside scenarios there are no breaches in the covenants forecasted.
+
+The Directors are confident that any additional required funding will be available from its ultimate owner and
+immediate parent company, Mr S R Khan and K2TR Family Holdings 2, Corporation, to meet its liabilities as they fall
+due for that period. K2TR Family Holdings 2, Corporation has expressed this intention to the Directors in writing.
+
+As with any company placing reliance on other group entities for financial support, the Directors acknowledge that
+there can be no certainty that this support will continue, although, at the date of the approval of these financial
+statements, they have no reason to believe that it will not do so. Consequently, the Directors are confident that the
+Group and Company will have sufficient funds to continue to meet their liabilities as they fall due for at least 12
+months from the daie of approval of the financial statements and therefore have prepared the financial statements on
+a going concern basis.
+
+Fulham Football Club Limited is dependent on continued financial support from K2TR Family Holdings 2 Limited, via
+Cougar Holdco London Limited, and its intermediate holding companies in the Group. K2TR Family Holdings 2
+Limited has indicated its intention to continue to make available such funds as are needed by the company, and that
+it does not intend to seek repayment of the amounts currently due to the group, which at 30 June 2024 amounted to
+£44, 398,000, during the going concern assessment period
+
+At the date of approval of these financial statements the Directors have considered the forecasts of Cougar Holdco
+London Limited group, the disclosure in the Group accounts and the committed support between Group companies
+and have assessed that the conclusions reached by the Directors of Cougar Holdco London Limited regarding the
+going concern status of the Group are appropriate and as such that, through support to be provided, this Company
+will be in a position to meet its liabilities as they fall due.
+
+As with any company placing reliance on other group entities for financial support, the Directors acknowledge that
+there can be no certainty that this support will continue, although, at the date of the approval of these financial
+statements, they have no reason to believe that it will not do so. Consequently, the Directors are confident that the
+Group and Company will have sufficient funds to continue to meet its liabilities as they fall due for at least 12 months
+from the date of approval of the financial statements and therefore have prepared the financial statements on a going
+concern basis.
+
+7 Fulham Football Club Limited
+Fulham Football Club Limited
+
+Directors’ Report (continued)
+
+For the year ended 30 June 2024
+
+Employees
+
+The Directors believe that all persons, regardless of age, race, religion, sex, sexuality or disability should have equal
+opportunities to work and are committed to the promotion of equal opportunities within the Company.
+
+It is the Company’s policy to keep all staff informed as to the development of the business and encourage them to
+contribute their ideas, criticisms and comments through a management process which recognises and rewards
+genuine involvement in the success of the Company.
+
+Streamlined Energy and Carbon Reporting (SECR)
+
+SECR disclosures for the company are included in the group report of Cougar Holdco London Limited.
+
+Dividends
+
+The Directors do not recommend the payment of a dividend (2023: Enil).
+
+Disctosure of information to auditor
+
+Each of the Directors has confirmed that:
+
+(a) so far as he is aware, there is no relevant audit information of which the Company's auditor is unaware, and
+
+(b) he has taken all the steps that he ought to have taken as a Director in order to make himself aware of any
+relevant audit information and to establish that the Company’s auditor is aware of that information.
+
+Other information
+
+An indication of likely future developments in the business and particulars of significant events which have occurred
+since the end of the financial year have been included in the Strategic Report on pages 3 to 5.
+
+Auditor
+
+Pursuant to Section 487 of the Companies Act 2006, the auditor will be deemed to be reappointed and KPMG LLP
+will therefore continue in office.
+
+By order of the Board
+
+A J Mackintosh
+
+Chief Executive
+
+20 December 2024
+
+8 Fulham Football Club Limited
+Fulham Footbal! Club Limited
+
+Statement of Directors’ Responsibilities in respect of the Strategic Report, the
+
+Directors’ Report and Financial Statements
+
+For the year ended 30 June 2024
+
+The Directors are responsible for preparing the Strategic Report, the Directors’ Report and the financial statements
+
+in accordance with applicable law and regulations.
+
+Company law requires the Directors to prepare financial statements for each financial year. Under that law they
+
+have elected to prepare the financial statements in accordance with UK accounting standards and applicable law
+
+(UK Generally Accepted Accounting Practice), FRS 102 The Financial Reporting Standard applicable in the UK and
+
+Republic of Ireland.
+
+Under company law the Directors must not approve the financial statements unless they are satisfied that they give a
+
+true and fair view of the state of affairs of the company and of the profit or loss of the company for that period. In
+
+preparing these financial statements, the Directors are required to:
+
+e select suitable accounting policies and then apply them consistently,
+
+* make judgements and estimates that are reasonable and prudent,
+
+e — state whether applicable UK accounting standards have been followed, subject to any material departures
+disclosed and explained in the financial statements;
+
+*® assess the company’s ability to continue as a going concern, disclosing, as applicable, matters related to going
+concern; and
+
+* use the going concern basis of accounting unless they either intend to liquidate the company or to cease
+operations, or have no realistic alternative but to do so.
+
+The Directars are responsible for keeping adequate accounting records that are sufficient to show and explain the
+
+company’s transactions and disclose with reasonable accuracy at any time the financial position of the company and
+
+enable them to ensure that the financial statements comply with the Companies Act 2006. They are responsible for
+
+such internal control as they determine is necessary to enable the preparation of financial statements that are free
+
+from material misstatement, whether due to fraud or error, and have general responsibility for taking such steps as
+
+are reasonably open to them to safeguard the assets of the company and to prevent and detect fraud and other
+
+irregularities.
+
+9 Fulham Football Club Limited
+Independent Auditor’s Report to the Members of Fulham Football Club Limited
+
+Opinion
+
+We have audited the financial statements of Fulham Football Club Limited (“the company”) for the year ended 30 June
+
+2024 which comprise the profit and loss account and other comprehensive income, balance sheet, statement of
+
+changes in equity and related notes, including the accounting policies in note 1.
+
+In our opinion the financial statements:
+
+e give a true and fair view of the state of the company's affairs as at 30 June 2024 and of its loss for the year then
+
+ended;
+
+® have been properly prepared in accordance with UK accounting standards, including FRS 102 The Financial
+
+Reporting Standard applicable in the UK and Republic of Ireland; and
+
+« have been prepared in accordance with the requirements of the Companies Act 2006.
+
+Basis for opinion
+
+We conducted our audit in accordance with International Standards on Auditing (UK) (“ISAs (UK)”) and applicable law.
+
+Our responsibilities are described below. We have fulfilled our ethical responsibilities under, and are independent of
+
+the company in accordance with, UK ethical requirements including the FRC Ethical Standard. We believe that the
+
+audit evidence we have obtained is a sufficient and appropriate basis for our opinion.
+
+Going concern
+
+The directors have prepared the financial statements on the going concern basis as they do not intend to liquidate the
+
+company or to cease its operations, and as they have concluded that the company's financial position means that this
+
+is realistic. They have also concluded that there are no material uncertainties that could have cast significant doubt
+over its ability to continue as a going concern for at least a year from the date of approval of the financial statements
+
+(‘the going concern period”).
+
+In our evaluation of the directors’ conclusions, we considered the inherent risks to the company’s business model and
+
+analysed how those risks might affect the company’s financial resources or ability to continue operations over the
+
+going concern period.
+
+Our conclusions based on this work:
+
+° we consider that the directors’ use of the going concern basis of accounting in the preparation of the financial
+statements is appropriate;
+
+e we have not identified, and concur with the directors’ assessment that there is not, a materia! uncertainty related
+to events or conditions that, individually or collectively, may cast significant doubt on the company's ability to
+continue as a going concern for the going concern period.
+
+However, as we cannot predict all future events or conditions and as subsequent events may result in outcomes that
+
+are inconsistent with judgements that were reasonable at the time they were made, the absence of reference to a
+
+material uncertainty in this auditor's report is not a guarantee that the company will continue in operation.
+
+Fraud and breaches of laws and regulations — ability to detect
+
+Identifying and responding to risks of material misstatements due to fraud
+
+To identify risks of material misstatements due to fraud (“fraud risks”) we assessed events or conditions that could
+
+indicate an incentive or pressure to commit fraud or provide an opportunity to commit fraud. Our risk assessment
+
+procedures included:
+
+ry enquiring of directors as to the Company’s high-level policies and procedures to prevent and detect fraud, as
+well as whether they have knowledge of any actual, suspected or alleged fraud;
+
+. reading Board minutes;
+. using analytical procedures to identify any unusual or unexpected relationships.
+We communicated identified fraud risks throughout the audit team and remained alert to any indications of fraud
+throughout the audit.
+As required by auditing standards and taking into account possible pressures to adhere to the Profit and Sustainability
+Rules, we perform procedures to address the risk of management override of controls, in particular the risk that
+management may be in a position to make inappropriate accounting entries and the risk of bias in accounting
+estimates and judgements such as the carrying value of Player Registration Intangible Assets. As a result of these
+pressures, we identified a fraud risk related to the impairment of Player Registration Intangible Assets. On this audit
+we do not believe there is a fraud risk related to revenue recognition due to limited opportunities to manipulate
+revenue.
+
+10
+Independent Auditor’s Report to the Members of Fulham Football Club Limited
+
+(continued)
+
+Fraud and breaches of laws and regulations — ability to detect (continued)
+
+We performed procedures including:
+
+° identifying journal entries and other adjustments to test based on risk criteria and comparing the identified
+entries to supporting documentation. These included postings and journal entries which are unusual or
+unexpected based on our understanding of the business;
+
+. assessing significant accounting estimates for bias;
+° critically evaluating the approach taken to the impairment of player registration intangible assets.
+identifying and responding to risks of material misstatement due to non-compliance with laws and regulations
+We identified areas of laws and regulations that could reasonably be expected to have a material effect on the
+financial statements from our general commercial and sector experience, through discussion with the directors and
+other management (as required by auditing standards) and discussed with the directors and other management the
+policies and procedures regarding compliance with laws and regulations
+We communicated identified laws and regulations throughout our team and remained alert to any indications of non-
+compliance through the audit.
+The potential effect of these laws and regulations on the financial statements varies considerably.
+Firstly, the Company is subject to laws and regulations that directly affect the financial statements including financial
+reporting legislation (including related companies legislation), distributable profits legislation and taxation legislation
+and we assessed the extent of compliance with these laws and regulations as part of our procedures on the related
+financial statement items.
+Secondly, the Company is subject to many other laws and regulations where the consequences of non-compliance
+could have a material effect on amounts or disclosures in the financial statements, for instance through the imposition
+of fines and litigation or the loss of the Group’s license to operate. We identified the following areas as those most
+likely to have such an effect; health and safety, anti-bribery, employment law, the Profit and Sustainability Rules and
+certain aspects of company legislation recognizing the nature of the Company’s activities. Auditing standards limit
+the required audit procedures to identify non-compliance with these laws and regulations to enquiry of the directors
+and other management and inspection of regulatory and legal correspondence, if any. Therefore if a breach of
+operational regulations is not disclosed to us or evident from relevant correspondence, an audit will not detect that
+breach.
+
+Context of the ability of the audit to detect fraud or breaches of law or regulation
+
+Owing to the inherent limitations of an audit, there is an unavoidable risk that we may not have detected some
+
+material misstatements in the financial statements, even though we have properly planned and performed our audit
+
+in accordance with auditing standards For example, the further removed non-compliance with laws and regulations
+is from the events and transactions reflected in the financial statements, the less likely the inherently limited
+procedures required by auditing standards would identify it.
+
+In addition, as with any audit, there remained a higher risk of non-detection of fraud, as these may involve collusion,
+
+forgery, intentional omissions, misrepresentations or the override of internal controls. Our audit procedures are
+
+designed to detect material misstatement. We are not responsible for preventing non-compliance or fraud and cannot
+be expected to detect non-compliance with all laws and regulations.
+
+Strategic report and directors’ report
+
+The directors are responsible for the strategic report and the directors’ report. Our opinion on the financial statements
+
+does not cover those reports and we do not express an audit opinion thereon.
+
+Our responsibility is to read the strategic report and the directors’ report and, in doing so, consider whether, based on
+
+our financial statements audit work, the information therein is materially misstated or inconsistent with the financial
+
+statements or our audit knowledge. Based solely on that work:
+
+. we have not identified material misstatements in the strategic report and the directors’ report;
+
+. in our opinion the information given in those reports for the financial year is consistent with the financial
+statements; and
+
+e in Our opinion those reports have been prepared in accordance with the Companies Act 2006.
+
+11
+

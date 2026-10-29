@@ -1,0 +1,395 @@
+source: Companies House filing, aston-villa-fc__1.pdf
+document: cYMDcfOjfzznPppvjkdJpXEAGPa4z4j5L8CHsq2HEnE
+made_up_date: 2025-06-30
+method: ocr
+pages_read: 12 of 38
+
+re
+Aston Villa Football Club Limited ,
+Company information .
+Directors M Angelakis
+: WReEdens | :
+C Hall
+. B Lebada .
+N Sawiris
+S L Watterson
+Company secretary B Schuurmans .
+Registered number 03375789
+Registered office Villa Park Trinity Road
+Aston
+Birmingham
+West Midlands
+B6 6HE . ;
+Independent auditor BDO LLP
+55 Baker Street
+London
+. W1U 7EU ;
+Aston Villa Football Club Limited
+. Contents . .
+
+: Page
+Strategic Report 1-5 -
+Directors' Report , 6-8
+Directors’ Responsibilities Statement 9
+Independent Auditor's Report 10-13
+Statement of Comprehensive Income 14 ;
+Statement of Financial Position 15
+Statement of Changes in Equity 16
+Notes to the Financial Statements , 17-35
+Aston Villa Football Ciub Limited
+Strategic Report
+For the Year Ended 30 June 2025
+
+Introduction :
+
+The directors present the Strategic Report and the audited financial statements of Aston Villa Football Club
+
+Limited (the "Company’) for the year ended 30 June 2025
+
+The Company's previous accounting period was the 13 month period ended 30 June 2024.
+
+Principal activities
+
+The Company is engaged in the activities of football and football management and there has been no significant
+
+change therein during the year.
+
+Review of business
+
+The 2024/25 football season saw a return among Europe’s elite for the first time since 1982/83, with participation
+
+in the Champions League and the sixth consecutive season competing in the Premier League. :
+. ‘Turnover for the financial year amounted to £359,277,000 (13 month period ended 30 June 2024 -
+
+£263,079,000). : :
+
+Operating expenses amounted to £433,407,000 (13 month period 30 June 2024 - £318,901,000). The operating
+
+.loss for the period amounted to £74,130,000 (13 month period ended 30 June 2024 - £50,709,000). The loss for
+
+the financial period of £73,305,000 (13 month period ended 30 June 2024 - £49,425,000) has been deducted
+
+from reserves.
+
+Net assets at the year-end were £5,889,000 (30 June 2024 - net liabilities of £64,293,000). The directors believe
+
+that preparing the financial statements on the going concern basis is appropriate due to the continued financial
+
+support of the ultimate parent company.
+
+1
+Aston Villa Football Club Limited
+Strategic Report (continued)
+For the Year Ended 30 June 2025
+Principal risks and uncertainties , _
+The key risk facing the football Club is that of poor on field results and in particular relegation from the Premier
+: League and the financial consequences that would follow. The Board attempts to mitigate this risk by providing
+the manager with first class training facilities and appropriate payroll and transfer budgets and through generous
+support to the Academy. .
+, The Company operates in a challenging industry sector where turnover can reduce significantly as a result of
+poor on pitch performance. In order to mitigate this risk the Club has a strategy of performance related pay for
+key personnel including players whereby salary costs will fluctuate in line with income generated as a result of on
+field results.
+The Board is focused on providing necessary investment in the playing squad, operational functions and
+infrastructure of the Club whilst recognising that it must remain compliant with Premier League profit and .
+sustainability rules. The Club reviews compliance with these regulations when setting budgets, throughout the
+year, and, in particular, in all relevant situations where a decision may be taken that would have a material
+impact on compliance. Management will continue to review and monitor forecasts and the directors believe they
+will remain compliant for the 2025/26 season.
+The Company's performance depends largely upon its footballing and non-footballing staff. The resignation of
+key individuals and the inability to recruit people with the correct experience and skills could adversely impact the
+Company's results. To mitigate these issues the Company is constantly analysing its marketplace and has
+policies in place designed to retain key individuals. :
+The Club is also aware of risks associated with the reliance upon shareholders to fund operations. However, the
+directors are confident that this risk is mitigated by recent positive upsides to the business, such as retained
+Premier League membership, continued qualification for a UEFA competition in the 2025/26 season and the
+significant realisable market value of the playing squad.
+Key performance indicators ("KPIs")
+The directors consider that they key performance indicators of a professional football club are finishing position
+in the league, progress in cup competitions and average league attendance. The Company also monitors
+financial KPI's and although not exhaustive the table below summaries major KPI's over the reporting period.
+. 13 Month
+. period
+. Year ended ended
+30 June 30 June
+2025 2024
+6th Premier 4th Premier
+League Finishing Position League League
+FA Cup Competition ; Semi-Final 4th Round
+Football League Cup Competition 4th Round 3rd Round
+Average League Attendance 41,772 41,993
+UEFA Conference League - Semi-Final
+. Quarter
+UEFA Champions League / . Final -
+Turnover (£)- 359.3m 263.1m
+Loss before taxation (£) : (74.5m) (50.7m)
+2 .
+Aston Villa Football Club Limited’
+Strategic Report (continued)
+For the Year Ended 30 June 2025
+Directors' statement of compliance with duty to promote the success of the Company .
+Section 172 of the Companies Act 2006 requires Directors to take into consideration the interests of
+stakeholders in their decision making. The Directors acknowledge their responsibility to act in a manner that
+protects the interests of all stakeholders.
+The directors satisfy their obligations under Section 172 in conjunction with the wider Aston Villa football club and
+therefore along with the other entities in the NSWE UK Limited group. A summary is presented below of how we
+engage, as a club and group, with our key stakeholders to take into consideration their interests and to support
+our strategic decision-making.
+Supporters
+Aston Villa's relationship with its loyal supporters remains at the heart of the Club’s identity. . :
+The Club's consultation and dialogue with supporters was structured through the Fan Advisory Board (FAB), in
+line with the Premier League’s Fan Engagement Standard (FES). The FAB provided an important forum for
+discussion, information sharing, and feedback from a supporter perspective. During the year, the Board included
+representatives from the Supporters’ Trust, Lions Clubs, the Disabled Supporters Association, and a wide range
+of diversity and independent supporter groups. FAB meetings were held regularly, with senior Club officials in
+attendance, ensuring supporter views were factored into decision-making.
+In addition, consultation extended through working groups such as the 1897 Group, which played an active role
+in developing the Villa Park matchday atmosphere, and through equality, diversity and inclusion (EDI) initiatives
+with groups such as Villa & Proud, Punjabi Villans and Villa Bellas. Wider consultation took place via surveys
+following each home fixture, with feedback informing improvements across ticketing, matchday experience and
+supporter services.
+Looking ahead to 2025/26, the Club has reconstituted the FAB under new Terms of Reference, broadened
+representation, and introduced Extended Network Groups focused on ticketing, matchday experience,
+accessibility, ED! and women’s football. The waiting list for season tickets continues to be very healthy, showing
+the strength of the fanbase., and a revised points-based system has been introduced to manage demand more
+effectively. These developments reinforce our commitment to maintaining transparent dialogue and ensuring
+supporters’ voices remain central to the Club’s strategic decisions.
+Further information on our fan consultation can be found at: AVFC Fan Engagement
+(https:/Avww.avfc.co.uk/fans/fan-engagement/.
+Staff
+Our staff are at the heart of everything we do, and we value the contribution made by every colleague within our
+Aston Villa family. We are focused on Aston Villa being an employer of choice, which embraces a high-
+performance culture across our workforce, at all levels.
+Within the bounds of commercial confidentiality, the Club endeavours to keep staff at all levels systematically
+informed of matters that affect the progress of the Club and are of interest to them as employees. We also
+actively engage with our workforce through the Employee Consultation Forum, where representatives from
+across all functions are invited to contribute to decision-making and working practices. This ensures that the
+views of employees are taken into account and that staff interests are reflected in the decisions made by
+directors and senior leaders.
+The Club is also committed to encouraging the involvement of employees in the wider performance of the :
+organisation, including building awareness of the financial and economic factors that influence success both on
+and off the pitch. ;
+3 , .
+Aston Villa Football Club Limited
+: Strategic Report (continued) . :
+, For the Year Ended 30 June 2025
+__ Directors’ statement of compliance with duty to promote the success of the Company (continued)
+
+' Staff (continued)
+The Club continues to recruit and attract exceptional, talented staff who are driving Aston Villa forward. Equality,
+Diversity and Inclusion are central to all employee considerations. In particular, we are committed to:
+e Recruitment and Retention: providing full and fair consideration to all applicants and ensuring that colleagues
+
+are supported to thrive within the organisation.
+
+e Ongoing Support: maintaining employment continuity where possible and offering appropriate training and
+
+development opportunities.
+e Career Development: ensuring that training, progression and promotion pathways are transparent and
+
+. accessible to all.
+
+We are fully committed to paying all of our staff at least the Real Living Wage, and we prioritise the physical and
+mental health and wellbeing of our people in order that they can perform at the highest level possible.
+Community
+The Aston Villa Foundation continues to provide a comprehensive range of projects, activities and resources
+targeting areas of high need and those less fortunate in the region.
+This year has seen an internal restructure of the foundation’s departments and senior management team to align
+with the structure of the 2024-29 strategic framework. This will allow the organisation to continue to develop and
+increase its impact after a year of consolidation during 2024/25.
+During the reporting period, the Foundation has worked with an estimated 32,000 people across its themes of
+youth engagement, sport, wellbeing, education and employment. In addition, the Foundation has supported a
+wide variety of charities and community groups by distributing funding and offering fundraising support, kit and
+equipment donations, governance support and advocacy and utilising its resources and capabilities for maximum
+community benefit and impact.
+The Foundation would like to place on record its thanks to its funders and partner organisations who enable it to
+
+deliver its work and support those who need it most.
+
+; Commercial Partners :
+The Club remains committed to delivering its strategy of growing its partnership portfolio in terms of total number
+of partners, industries, and worldwide geographic spread.
+, Governing Authorities
+The Club maintains a close working relationship with, the F.A. and The Premier League and UEFA and is
+committed to operating within their framework of rules and regulations. Club management regularly attend
+Premier League shareholder meetings. ,
+Decision making at board level
+All matters relating to the Group's governance are reserved for decision by the Board and are presented for
+consideration at Board meetings. Directors are briefed on potential impacts and risks for the Club, supporters,
+staff, the local community, commercial partners and governing authorities. These factors are taken into account
+before making decisions that the directors believe to be in the best interests of the Group and its stakeholders.
+4
+Aston Villa Football Club Limited
+Strategic Report (continued)
+For the Year Ended 30 June 2025
+Key strategic decisions made during the year .
+During the financial year, the Board considered and approved a number of key strategic decisions designed to
+support the long-term success of the Group and deliver value for stakeholders. In each case, the Board had
+regard to the interests of shareholders, employees, supporters, commercial partners, the local community, and
+governing authorities, in accordance with its duties under Section 172 of the Companies Act 2006.
+The principal decisions included:
+Villa Park Redevelopment and Infrastructure Investment — Approval of continued investment in the
+redevelopment of Villa Park and associated infrastructure, to enhance supporter experience, increase capacity,
+and create a more inclusive and accessible venue for future generations. Engagement took place through the
+Fan Advisory Board, local community forums, and consultation with local authorities.
+
+. Strategic Transfers to NSWE Holdings — Completion of the transfer of Aston Villa Women’s Football Club and
+The Warehouse operating subsidiary to NSWE Holdings. These actions were taken to establish a more distinct
+operating structure across the Group, enabling focused investment and operational clarity while continuing to
+strengthen fan and community engagement.
+
+Community and Foundation Strategy 2024-2029 — Approval of the Aston Villa Foundation’s new strategic
+framework, developed in consultation with partners and local stakeholders, to maximise social impact and
+extend the reach of community programmes across areas of high need.
+Financial and Operational Sustainability - Ongoing focus on maintaining financial discipline and compliance with
+football sustainability regulations, ensuring that the Club's investment strategy supports both on-pitch
+performance and long-term resilience.
+In each of these areas, the Board ensured that decisions were made with a balanced view of stakeholder
+interests, community impact, and the Group's long-term objectives. These actions reflect the directors’ ©
+commitment to promoting the success of the Company in a responsible, sustainable, and stakeholder-focused
+manner. .
+This report was approved by the board on 31 March 2026 and signed on its behalf.
+N Sawiris .
+Director
+
+. 5 .
+Aston Villa Football Club Limited
+Directors’ Report
+
+For the Year Ended 30 June 2025
+The directors present their report and the audited financial statements for the year ended 30 June 2025.
+The comparative results are for the 13 month period ended 30 June 2024.
+Results and dividends
+The loss for the year, after taxation, amounted to £73,305,000 (13 month period ended 30 June 2024 - loss of
+£49,425,000).
+The directors have not declared or paid an interim dividend in the year (13 month period ended 30 June 2024 -
+ENil). The directors do not recommend the payment of a final dividend (13 month period ended 30 June 2024 -
+ENil).
+Directors . .
+The directors who served during the year were:
+M Angelakis
+W R Edens
+C Hall
+B Lebada .
+N Sawiris
+S$ L Watterson
+Future developments
+The Club's prime goal is improving on field performance, consolidating its position as a member of the FA
+Premier League and regularly qualifying to compete in UEFA competitions.
+Going concern
+The directors have formed a judgement at the time of approving the financial statements that the Company has
+adequate resources available to continue operating and to discharge all financial obligations as they fall due for a
+period of at least 12 months from the date of approval of the financial statements.
+The directors believe that preparing the financial statements on the going concern basis is appropriate due to the
+continued financial support of the parent company NSWE UK Limited. .
+In assessing the Company's ability to continue as a going concern, the directors have considered both the
+company's and the wider group's forecasts. The company and the group are inextricably linked and therefore
+the directors expect the company's going concern assessment to mirror that of the group's. The directors
+acknowledge that the group operates a group treasury function and that it remains reliant on funds available
+within the group as a whole. The directors have received confirmation that NSWE UK Limited intends to support
+the Company for at least 12 months from the approval of these financial statements.
+The directors have prepared detailed cashflow forecasts to assess potential funding requirements for a period of
+12 months from the signing of these financial statements. The forecasts model assumes continued availability of
+the loan facility provided to the Club by Goldman Sachs, which is available until July 2027.
+The directors are confident in their assumption that cash flow forecasts for 2024/25 and 2026/27 through to June
+2027 should be based upon participation in the Premier League. As such various Premier League scenarios are
+modelled to provide a range of on field performances to assess the cashflow requirements for 12 months from
+the date of approval of the financial statements. Based upon current expectations and with the continued support
+of the Club's ultimate parent company, V Sports S.C.S., the Group are forecast to have sufficient resources to
+meet their liabilities to a period not shorter than 12 months from the date of approval of the financial statements.
+
+6
+Aston Villa Football Club Limited
+Directors’ Report (continued)
+For the Year Ended 30 June 2025
+Going concern (continued)
+The directors are also confident that there are sufficient options available for the Club to mitigate additional ==
+funding requirements in the unlikely possible event of a lower place finish at the end of 2025/26 season,
+including an assessment of relegation, which can include the procurement of further support from V Sports
+S.C.S and the option to generate funds from the sale of players.
+In forming their conclusions, the directors have concluded that the likelihood of relegation at the end of the
+2025/26 season is remote. However, the directors acknowledge that, in such an event, the Club would need to
+elevate player trading, which is not guaranteed, or seek additional shareholder support that is not yet committed.
+Additionally, the directors would not commit to any further spend above the current forecasted levels, particularly
+in relation to the acquisition of players, without first confirming availability of sufficient funding. As such, the
+directors do not consider there to be a material uncertainty in relation to the ability of the Club to continue as a
+: . . going concern. :
+The directors therefore believe that preparing the financial statements on the going concern basis is appropriate
+due to the continued financial support of the ultimate parent company V Sports S.C.S.
+; Financial risk management
+The Company's residual financial risks relate to trade receivables and liquidity. .
+Trade receivables comprise transfer fees receivable and other trade receivables. The risk associated with
+transfer fees receivable is in part transferred to the Premier League via the Football league's registration clearing
+system. The Company maintains rigorous credit control procedures to mitigate credit risk associated with other
+trade receivables.
+The Company regularly prepares and reviews detailed cash flow forecasts, monitoring potential sensitivities .
+including plausible downsides in order to manage its liquidity risk.
+Charitable contributions
+All fund-raising events are dealt with by the Aston Villa Foundation which is registered with the Charity
+Commission. There were no political contributions in the year (13 month period ended 30 June 2024 - ENil).
+- Engagement with employees : .
+The company continues its policy of keeping its employees informed on a regular basis of matters concerning
+them as employees and on financial and economic factors affecting the performance of the Company
+7
+Aston Villa Football Club Limited
+Directors' Report (continued)
+For the Year Ended 30 June 2025
+Employment of disabled people
+The Company recognises its responsibility to employ persons from all backgrounds and communities including
+disability people in suitable employment and gives full and fair consideration to applications for employment
+made by such persons, having regard to their particular aptitudes and abilities.
+Any employee who becomes disabled is encouraged to remain in the Company's employment, in the same job if
+this is practicable. If a change of job is necessary, such an employee is considered for any suitable alternative
+work which is available and.any necessary training is arranged in order to fulfill the role.
+All employees including disabled persons are treated equally in respect of their eligibility for training, career
+development and promotion.
+Streamlined Energy and Carbon Report (SECR)
+The Company has taken the exemption available to subsidiary companies not to disclose information in respect
+of greenhouse gas emissions, energy consumption and energy efficiency action given this is disclosed in the
+consolidated financial statements of the ultimate parent company, NSWE UK Limited.
+Qualifying third party indemnity provisions
+Throughout the period and up to the date of signing of the financial statements, the Company maintains cover
+under a qualifying third-party indemnity for all directors and officer against liabilities which may be incurred by
+them whilst acting as directors or officers.
+Matters covered in the Strategic Report
+Disclosures required under S$416(4) of the Companies Act 2006 are commented upon in the Strategic Report in
+accordance with S414C(11) as the Directors consider them to be of strategic importance to the Company.
+Disclosure of information to auditor
+Each of the persons who are directors at the time when this Directors’ Report is approved has confirmed that:
+. so far as the director is aware, there is no relevant audit information of which the Company's auditor is
+unaware; and
+° the director has taken all the steps that ought to have been taken as a director in order to be aware of any
+relevant audit information and to establish that the Company's auditor is aware of that information.
+Events after the reporting period
+No events have taken place after the reporting period that are required to be disclosed.
+Auditor
+The auditor, BDO LLP, were appointed in the year and will be proposed for reappointment in accordance with
+section 485 of the Companies Act 2006.
+This report was approved by the boardon 31 March 2026 and signed on its behalf.
+N Sawiris
+Director
+8
+Aston Villa Football Club Limited
+Directors' Responsibilities Statement
+For the Year Ended 30 June 2025
+The directors are responsible for preparing the Strategic Report, the Directors' Report and the financial
+statements in accordance with applicable law and regulations. ,
+Company law requires the directors to prepare financial statements for each financial year. Under that law the
+directors have elected to prepare the financial statements in accordance with United Kingdom Generally
+Accepted Accounting Practice (United Kingdom Accounting Standards and applicable law). Under company law
+the directors must not approve the financial statements unless they are satisfied that they give a true and fair
+view of the state of affairs of the Company and of the profit or loss of the Company for that period.
+In preparing these financial statements, the directors are required to: .
+° select suitable accounting policies for and then apply them consistently;
+° make judgements and accounting estimates that are reasonable and prudent;
+° state whether applicable UK Accounting Standards have been followed, subject to any material departures
+disclosed and explained in the financial statements; and :
+. prepare the financial statements on the going concern basis unless it is inappropriate to presume that the
+Company will continue in business.
+The directors are responsible for keeping adequate accounting records that are sufficient to show and explain
+the Company's transactions and disclose with reasonable accuracy at any time the financial position of the
+Company and to enable them to ensure that the financial statements comply with the Companies Act 2006. They
+are also responsible for safeguarding the assets of the Company and hence for taking reasonable steps for the
+prevention and detection of fraud and other irregularities.
+9
+

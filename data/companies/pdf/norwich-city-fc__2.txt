@@ -1,0 +1,514 @@
+source: Companies House filing, norwich-city-fc__2.pdf
+document: tgerBfeIGzW9gkmfa5Eqox43VLCbAvXnqYyTOFQXpZ4
+made_up_date: 2024-06-30
+method: ocr
+pages_read: 12 of 57
+
+i 4
+NORWICH CITY
+FOOTBALL CLUB PLE
+ANNUAL REPORT |
+| [mut
+NORWICH CITY FOOTBALL CLUB PLC ANNUAL REPORT 2023/24
+CONTENTS .
+STRATEGIC REPORT
+4 Summary from the Executive Director
+: 8 Strategic Plan .
+18 Executive Committee
+20 Sporting Review :
+22 Sustainability
+24 Equality, Mental Health and Wellbeing
+26 #YouAreNotAlone x Samaritans
+28 Section 172 Statement
+30 Commercial Review ,
+32 Delia's Canary Catering
+34 Finance Review
+38 Key Performance Indicators
+39 Conclusion of Strategic Report
+DIRECTORS REPORT
+, 40 Board of Directors
+42 Report of the Directors . :
+48 Corporate Governance Review
+AUDITORS REPORT
+52 Independent Auditor's Report
+FINANCIAL STATEMENTS
+54 Consolidated Statement of Comprehensive Income
+55 Consolidated Statement of Financial Position
+56 Company Statement of Financial Position
+57 Consolidated Statement of Changes in Equity
+58 Company Statement of Changes in Equity ,
+59 Consolidated Statement of Cash Flows :
+60 Notes to the Financial Statements ,
+: 2
+NORWICH CITY FOOTBALL CLUB PLC ANNUAL REPORT 2023/24
+STRATEGIC REPORT
+SUMMARY FROM ZOE WEBBER, EXECUTIVE DIRECTOR
+When reflecting on the most recent period across the football club, the most prominent reflection is that of change.
+Change is a regular occurrence within football but the level of change we have gone through, and continue to go through, is
+unprecedented in my time at the club. | am proud of how everyone has embraced the change and this is testament to the
+culture within the club. Colleagues have been nothing but open, positive and supportive during this time especially during
+the tougher periods and this collective spirit stands us in good stead as we move forward. We're moving positively through a
+significant period of transition and change.
+Over the last year, Norfolk FB Holdings LLC, the group led by Mark Attanasio and Richard Ressler, have increased their
+shareholding to 40 per cent with a process underway to transition to majority shareholders of the football club. At the time
+of writing, this process still requires shareholder approval, but it would be remiss not to take this opportunity to pay tribute
+to, and thank, both Delia and Michael. On both a personal and professional level, they could not have done more to support
+
+. me in my role at the football club. From day one, they have given valuable guidance and given us the opportunity to build a
+club that reflects the values that they have worked so hard to instil.
+It is difficult to put into words how highly | value their support and friendship. Of course, this is definitely not a goodbye and
+both Delia and Michael will still very much be a part of this football club. No words can truly articulate their commitment and
+dedication to Norwich City, we hope that we can continue the legacy that they have created.
+We feel we are truly fortunate to have new custodians, in Mark and Richard (who has recently been appointed to the board),
+who share the same values as Delia and Michael. They are passionate about achieving sporting success but with a strong
+focus on the people and the community that make up the football club. They have been hugely supportive since the day
+they became involved and we look forward to working with them going forward.
+Across our footballing areas, we've also undergone significant change. Stuart Webber, who had earlier announced his
+decision to step down as the club’s sporting director, left his post in the November. | know Stuart is incredibly proud to have
+represented Norwich City during that period, and to see the send-off he received from players and staff across the training
+centre is testament to how highly he was respected by his colleagues. Stuart was the driving force for change across the
+football club during his six-and-a-half years in the role. He departed with everyone's best wishes, two Sky Bet Championship
+league titles and left us with a really solid foundation from which we can continue to grow.
+Upon hearing of Stuart's decision to depart, the board wanted to make sure that Stuart's replacement could build upon the
+work already undertaken at the club. This recruitment process, aided by Nolan Partners, was thorough and extensive, and
+involved meeting with candidates from across the UK and Europe. That process led us to the appointment of Ben Knapper,
+who joined us from Premier League side Arsenal.
+Ben has an excellent reputation in the industry, and during the interview process we were all impressed with his depth of
+knowledge and desire to join Norwich City.
+Reflecting on the 2023/24 campaign, David Wagner successfully led the first team to a play-off position, where we were
+ultimately defeated at the semi-final stage by Leeds United. As we know, the demands of a Championship season are tough,
+but throughout the course of the campaign, David always operated with real class and dignity and the objective of finishing
+in the top six was successfully achieved.
+Despite achieving our objective of reaching the play-offs, we decided to make a change and parted ways with David and his
+assistant head coach Christoph Buhler. Both were incredibly well respected and liked by players and staff, and we all wish
+them the very best with whatever comes next in their respective careers. :
+The process of finding a replacement head coach and someone who we believe can help further progress our football club
+was led by Ben and colleagues at the Avant Training Centre. | know from the countless conversations had with Ben during
+this period, they left no stone unturned in their search to bring the best possible candidate to Norwich City.
+In Johannes Hoff Thorup, we believe we have the perfect head coach who can help progress the club, both in the short and .
+long term. Johannes, together with his assistant head coach Glen Riddersholm, have made an immediate impact around the
+club and we're excited with some of the early signs of progress, both on and off the pitch. :
+| should also take this opportunity to thank some of the other staff that have since departed the football club. Andrew
+Hughes, Narcis Pélach and Paul Clements all left to pursue opportunities at other clubs, the roles that they have left for
+speaks volumes for their work and dedication during their time with us.
+Our academy has also experienced a level of change, with Steve Weaver stepping down as head of football development.
+We moved quickly to appoint Dean Rastrick, who brings a wealth of experience to the role, having previously worked at
+Tottenham Hotspur for 13 years.
+
+3
+NORWICH CITY FOOTBALL CLUB PLC ANNUAL REPORT 2023/24
+STRATEGIC REPORT
+We've already seen some really positive strides in creating further alignment between our first-team and academy oper-
+ations. | know Johannes has spent a lot of time speaking with our academy coaches across our various ages groups and is
+passionate about supporting our youth development work.
+That alignment has also continued to further progress across our women’s team, who now train three times a week at the
+Avant Training Centre and remain solely focused on the target of promotion to the third tier of the women’s football pyramid.
+We've also made significant strides forward in progressing our infrastructure. Whilst we very much appreciate that this isn’t
+often something our supporters are able to see and experience, the facilities we now have at our club, particularly the Avant
+Training Centre, are up there with some of the very best.
+Indeed, some of that groundwork at the training centre has helped us in both acquiring some of our summer targets, who
+were all excited at the prospect of working with our staff and facilities, and in the physical preparation and recovery of our
+players during the hectic Championship season.
+At Carrow Road, following extensive discussions with our supporter panel and wider groups, we've successfully integrated
+safe standing. We have also made significant investments into our existing lounges, notably the Lion & Castle pub in the
+Lower Barclay Stand, with the aim of further enhancing the matchday experience for our supporters.
+We're extremely proud of the wider environment in which our staff operate. We have a number of senior colleagues at the
+club that sit on representative boards and governing bodies across the football industry. That includes two of our staff
+representing different stakeholders on the FA council and being part of the inaugural board of the Union of European Clubs.
+The Community Sports Foundation has also continued to make a positive impact across the county. Over the season,
+the Foundation attracted and engaged with over 40,000 participants across its various projects, with unique participants
+engaged up 23 per cent from the following year. .
+As always, we remain committed to utilising our club and platform to positively impact people and our community.
+Among our many campaigns and initiatives throughout the season, the notable standout came in October around our
+mental health and suicide prevention activity. The ‘You Are Not Alone’ video was seen by millions, but for us the most
+important message was around saving lives and prompting conversations. if our activity in this space has and can help
+prompt one conversation, that may help save one life, then it very much means we've achieved our target.
+As a club, we know that we will always have areas in which we can continue to develop and improve. As we move forward into
+a new era, our desire remains as strong as ever to provide our supporters with a football club that they can be truly proud of.
+We have very much felt the strength and unity of our supporters, particularly in the early throes of this current campaign.
+Thank you once again for all of your support during the recent period. Here’s looking forward to the start of what we believe
+will be an exciting new time for the football club.
+Zoe Webber
+Executive Director
+
+4
+NORWICH CITY FOOTBALL CLUB PLC ANNUAL REPORT 2023/24
+
+STRATEGIC REPORT
+
+OUR INFINITE PURPOSE
+
+To make our football club and community better today than it was yesterday.
+
+While we focus on winning on the pitch we must remember that this only represents a moment in time and
+that every game we play is finite.
+
+We must also consider our infinite purpose - this reflects a club that has been part of our community since
+1902 and will continue to be a part of our community in all the years to come.
+
+QUR VISION
+
+To be an established Premier League club, driven by our proud, passionate football community.
+
+. Achieved by working collaboratively to create a financially stable club while striving to remain competitive
+through the effective recruitment and sale of players and the continued growth of off-field revenues.
+CORE VALUES AND BEHAVIQURS
+PRIDE ~ TOGETHERNESS
+GROWTH POSITIVITY
+INTEGRITY RESPECT
+RESILIENCE
+BELONGING
+COMMITMENT .
+
+OUR CLUB MODEL
+
+This club model is underpinned by strategic delivery and operational excellence.
+Develop higher —. Better on pitch
+quality players performance
+
+Increase player , Enhance club and
+productivity player profile
+| Increase in Increase in player |
+investment in —_— and commercial
+people and facilities revenues /
+5
+NORWICH CITY FOOTBALL CLUB PLC ANNUAL REPORT 2023/24
+STRATEGIC REPORT .
+1. To develop our football teams
+Improve on-pitch performance and mentality
+Create better squad availability, efficiency and value
+Prioritise player and coach development and pathways
+Increase squad value
+i)
+2. To create financial growth
+Increase efficiency and profitability across all work areas
+Increase player productivity
+Maximise controllable income
+3. To develop our people
+Encourage professional and personal development
+Recruit high performing individuals
+Be open to exploring new ideas
+4. To improve the club infrastructure
+Improve the experience of everyone we interact with
+Improve our physical facilities
+Develop our work in safeguarding, EDI, health and safety, and sustainability
+5. To inspire & support our community
+Improve community engagement
+Boost mental health
+Promote social mobility by supporting disadvantaged and vulnerable groups
+Drive inclusion for people with disabilities :
+6
+C
+NORWICH CITY FOOTBALL CLUB PLC ANNUAL REPORT 2023/24
+STRATEGIC REPORT
+EXECUTIVE COMMITTEE .
+Zoe Webber Ben Knapper
+Executive Director and Board Member Sporting Director
+Zoe has worked in the football industry for more than 20 Ben Knapper joined Norwich City as sporting director in
+years. She has a background in football regulation and November 2023. He joined the club from Premier League
+player transfers, and has gained a broad level of experience side Arsenal, where he was based for 14 years in a variety
+working at other clubs including Liverpool and Fulham as of strategic positions in the club’s analysis, scouting and ~
+well as several years with the Premier League. football operations functions.
+Zoe is part of an executive committee that oversees His most recent role was loan and pathway manager, where
+the day-to-day running of the football club. Along with he was responsible for identifying the most beneficial loan
+managing various areas of the club's business, one of her opportunities for Arsenal's development squad players,
+key areas of focus is to ensure that everyone across the whilst helping to develop their best emerging talent.
+club is working towards the same vision and strategy.
+Prior to his time with the Gunners, Knapper graduated from
+Zoe is also a Trustee of the club’s charity, the Community the University of Hull with a degree in Sports Coaching
+Sports Foundation. and Performance and in 2007 was appointed analyst of
+Scunthorpe United. He has also completed a Masters in
+Sporting Directorship at Manchester Metropolitan University.
+Anthony Richens Neil Adams
+Finance and Operations Director Technical Director
+Anthony Richens joined Norwich City as Finance Director Neil Adams joined Norwich City as a player in the Premier
+in July 2020, having spent five years at Stadium MK Group, League in 1994 and played more than 200 games over a
+where he had held the position of Group Finance Director. _ five-and-a half-year period. At the end of his playing career,
+His role at MK Dons saw him oversee all financial activity at he became an academy coach, and famously led the club's
+Stadium MK, including the Doubletree by Hilton Hotel and youth team to FA Youth Cup glory against Chelsea in 2013.
+MK Dons Football Club. . He then became the club's First-Team Manager.
+Anthony gained his chartered qualification with top-20 After then spending six seasons as Loan Player Manager, he
+firm MHA. Prior to joining MK Dons he spent three years was promoted to the position of Assistant Sporting Director
+at Deloitte LLP with clients in various industries including in 2021, dealing with all aspects of the football side of the
+sport and leisure. business. Having previously played for Stoke City, Everton
+and Oldham Athletic, he featured in more than 500 senior
+He leads all aspects of the club’s finance and technology games as a professional, winning league titles at Everton
+strategy, as well as overseeing non-footballing operations and Oldham. He also represented England at Under-21 level.
+and development projects, working alongside the Executive
+Committee and board to ensure long-term financiat stability.
+Sam Jeffery James Hill
+Commercial Director Legal and Governance Director
+Sam Jeffery joined in 2017 to head up the partnerships James joined Norwich City as Legal and Governance
+team before taking on added commercial responsibilities Director in July 2023. He trained and qualified as a solicitor
+two years later. with Fieldfisher in London, before moving to specialist
+sports law firm Onside Law. Here he spent six-and-a-half
+He was appointed Commercial Director in 2021 and holds years working with clients throughout the sports industry,
+responsibility for club-wide commercial revenue growth, in particular within football, rugby and cricket, including
+working closely with the Executive Committee and Board of international federations, national governing bodies, clubs,
+Directors. : athletes, agencies and other businesses in the sports sector.
+He previously worked as Commercial Manager at his James oversees all fegal matters at the club, as well as
+hometown team, Cambridge United. Prior to that he worked safeguarding and supporter engagement. He is also the
+for Eastern Suburbs AFC in Auckland, New Zealand where Company Secretary and Senior Safeguarding Lead.
+he authored the official history of the club — ‘Lilywhites: The
+History of Eastern Suburbs AFC’.
+7
+NORWICH CITY FOOTBALL CLUB PLC ANNUAL REPORT 2023/24
+STRATEGIC REPORT
+
+_ Reflecting on my time at the club to date, | look back with a real sense of pride at the initial steps we have taken towards
+our new strategic vision, but moreover, with great excitement about all that lies ahead. We have so many targets to achieve
+and challenges to overcome, but the opportunity to help lead such a magnificent football club into this next chapter is
+something that | feel truly privileged to have.
+To begin, | must take this opportunity to thank both David Wagner and Christoph Buhler, who departed following the
+conclusion of our 2023/24 campaign.
+Whilst the season did not end as we had all hoped, with defeat in the play-off semi-final to Leeds United, both David and
+Christoph were key in helping deliver some memorable moments, whilst navigating some challenging periods during their
+time with us. The way in which they both carried themselves and represented our club through those times is testament to
+the great people that they are.
+Prior to joining the club, the target for the season was to achieve a play-off position. Some of the form, particularly at
+Carrow Road during the second half of season, was up there with the very best in the league, and whilst our season didn’t
+end in the way in which any of us would have liked, that initial target was achieved.
+David always operated with class and dignity during his time as our head coach. He helped harbour a real sense of
+togetherness in and around the training centre and was always willing to engage with our community and supporters. But,
+following that defeat at Leeds, we felt that the time was right for a change in direction, and we made the decision to part ways.
+The summer months therefore presented a period of significant change across our various footballing areas. Much of that
+change was planned long in advance, particularly in our player and staff recruitment. That said, there were also instances in
+which we had to be more reactive, working to find the best possible outcomes in some challenging situations. Overall, | think
+we managed to do that well.
+The process of appointing a new head coach was one that was well thought out and there are many members of staff | must
+thank for their assistance and support throughout that project. There are few bigger footballing decisions a club makes, and
+| feel extremely proud of that work which led us to appointing Johannes Hoff Thorup, whom we believe can progress to the
+very top and become a truly elite head coach.
+Johannes is still in the early stages of his senior coaching career, but he has a clear vision and philosophy that we believe
+can help progress our football club, both in the short and long term. We've already seen many positive signs, and although
+there is so much hard work ahead of us, we believe that marrying Johannes and his coaching methodology with high
+potential talent and our environment at the Avant Training Centre is an exciting combination.
+Over the course of the summer transfer window, we've been able to significantly lower the age profile of our group,
+attracting some really talented young players to the club who all have big potential and upside. Of course, with significant
+change to our playing squad and style of play, things will take time, but overall, we're really happy with the path that we're on.
+| should also thank some of the other staff that have departed the football club over recent months. Andrew Hughes, who :
+helped significantly progress our set-piece strategy and output, departed for the Premier League and Leicester City, whilst
+Narcis Pélach, Paul Clements and Harrison Glew moved to fellow Championship side Stoke City. We wish them all the very
+best in their respective new roles.
+Those departures have afforded us the opportunity to further refresh our backroom staff. Alongside Johannes, we of course
+added the experienced Glen Riddersholm, who joined as assistant head coach, and we've since been able to appoint
+Nick Stanley as set piece and first team coach from Brighton & Hove Albion. We have also added Tony Roberts as head of
+goalkeeping, who joins us from AC Milan, and, at the time of writing, we're well down the line in the recruitment process of
+another member of our immediate backroom team.
+As we look ahead, we know that there will be some tough moments throughout the remainder of the current campaign, but
+lurge everyone to stick together. | know from speaking to Johannes, Glen and many of our players, they can really sense a
+feeling of togetherness around our club, with a strengthening connection with our supporters. This is the reason why we do
+what we do, and representing our fans and community is central to this club’s purpose. Thinking of how much further we
+can take this, and picturing Carrow Road in the future is something that excites me beyond belief.
+Elsewhere in our club, Norwich City Women have also made some really significant progress over the past year. Flo Allen
+continues to further push and progress the women’s team, where we have also made a change in head coach over the
+summer months. The ambition continues to be promotion to the third tier and in Andy Cook, we believe we have a coach
+that can help us achieve that. Our commitment to women’s football is clear, and | personally love being so involved,
+supporting and seeing this progress first-hand.
+
+8
+NORWICH CITY FOOTBALL CLUB PLC ANNUAL REPORT 2023/24
+STRATEGIC REPORT
+Our academy has also undergone a change in leadership, with Steve Weaver leaving us, being replaced by Dean Rastrick,
+who joins as head of football development. Steve leaves a huge mark on this football club, having led the academy
+fantastically since 2017, overseeing a period in which we had a remarkable 24 first-team debuts from academy players. We
+will now look to further build on those great foundations, with the academy forming an increasingly key part of our strategy.
+Dean’s experience in player development will help us drive our work in this space, and we are excited about what we can
+achieve with even greater alignment and continuity of approach with the first team.
+I'd also like to take this opportunity to thank the owners, board and directors for their support during my time with the club.
+Delia and Michael have been wonderful custodians, and owners of their kind are few and far between. They could not have
+done more to ensure that I've felt welcomed and settled into this role during my time with the club so far. They were a key
+driver in why | wanted to take up this post, and | cherish the relationship | am fortunate to have with them both.
+With Mark Attanasio and Richard Ressler finalising their transition to majority shareholders through Norfolk FB Holdings
+LLC, this is another exciting step forward. I've had significant dialogue with Mark during my time at the club, and we speak
+regularly to share and discuss ideas. As with Delia and Michael, Mark has been fully on board with our direction of travel, and
+his passion and interest for this club, and the game more broadly, is something that | love. He has been very supportive of all
+of our decisions and plans, and whilst he himself will admit that he is continuing to learn the nuances of this beautiful game
+(as |am with baseball!), he is a fantastic resource for me to bounce ideas off and to stress-test logic. The transferability of
+his knowledge and experience really is invaluable.
+Working with Mark, Richard and their wider team, you can really sense their growing connection to the club and the city. This
+is an exciting period for all involved and we're very much looking forward to continuing our work together.
+Finally, a huge thank you to our fans for all of the support during my time with the club so far. We're all very much looking
+forward to the year ahead and hope that we can serve you all by providing you with a team and club that represents you,
+. and one that you can continue to be proud of.
+
+Ben Knapper
+Sporting Director
+
+9
+NORWICH CITY FOOTBALL CLUB PLC ANNUAL REPORT 2023/24
+STRATEGIC REPORT
+Greenhouse Gas (GHG) Emissions
+In line with the Greenhouse Gas Protocol (GHG) Corporate Accounting and Reporting Standard, Norwich City Football Club
+PLC continues to be engaged in a process aimed at reducing our energy and greenhouse gas emissions.
+Norwich City maintain scopes one (1), two (2) and three (3) emissions, which are generated from the football club, training
+grounds and offices, respectively. Further, Norwich City maintain transport emissions inclusive of personal vehicles (“grey
+fleet”), coaches, minibuses and flight transport.
+Norwich City previously devised a strategy to reduce overall our carbon footprint significantly as outlined as follows:
+- Encouraging employees to purchase renewable technology cars i.e., hybrid vehicles;
+- Purchasing energy efficient equipment where appropriate in offices;
+- Replacing HVAC systems with energy-efficient equipment where possible;
++ Adopting behavioural change measures where possible.
+Norwich City continues to promote these activities. .
+Norwich City have a longstanding commitment to tackling climate change. Our calculated carbon footprint for the current
+financial year is 789.04 tCO2e, whilst energy consumption was 6,864,152 kWh (6,864 MWh).
+Methodology
+Norwich City have reported all our emission sources under the Companies Act 2006 (Strategic Report and Directors
+Reports) Regulations 2013 as required. Reporting of calculated emissions is in line with the GHG Protocol Corporate
+Accounting and Reporting Standard and emission factors from the UK Government’s GHG Conversion Factors for Company
+Reporting 2023.
+The reporting period is the financial year 2023/24, the same as that covered by the Annual Report and Financial Statements.
+The boundaries of the GHG inventory are defined using the operational control approach. In general, the emissions reported
+are the same as those which would be reported based on a financial control boundary.
+2023/24 Emissions 2022/23 Emissions
+
+Scope 1 (natural gas and oils) Tonnes CO2 equivalent (tCO2e)
+Scope 2 (electricity)
+Scope 3 (transport, electricity T&D)
+Total 789.04 tCO2e 762.73 tCO2e
+Scope 1, 2 and scope 3 carbon intensity 6.48 kgCO2e/1,000 square feet (2022/23: 6.27 kgCO2e/1,000 square feet)
+The intensity metric is based on a total square footage of 121,613. Our total emissions have increased by 3.33% since our
+previous reporting period.
+Efficiency measures taken in 2023/24
+* The club has recently installed cycle racks at Carrow Road for staff and supporters ’
+* The club.uses electricity that is 100% generated from renewable sources. A further 187 solar panels have been installed at
+
+the Avant Training Centre on the new recovery hub building and the grounds hut totalling 379 panels
+~ The club actively advocates for fans and staff to use sustainable travel via available public transport routes. An additional
+
+electric car scheme is now available to staff giving them a wider range to choose from along with a cycle to work scheme
+
+10
+NORWICH CITY FOOTBALL CLUB PLC ANNUAL REPORT 2023/24
+
+STRATEGIC REPORT :
+
+* Taps have been installed at Carrow Road and the Avant Training Centre offering staff still, sparkling, and boiling water,
+which has heavily reduced the number of plastic bottles
+
+* Future for Football climate experts delivered a staff education workshop to staff, including academy players. Themes that
+were covered included:
+
+* The fundamentals of climate change and an overview of the climate movement
+* Climate’s impact on football and football's impact on the planet
+
+* Sustainable solutions in the game
+
+* Exploring climate action at the club
+
++ The club remains an active member of BASIS (British Association for Sustainable Sport) which involves us sharing our
+knowledge and resources as educational tools within a working group along with best practice visits
+
+* Reusable cups have been rolled out on matchday in three areas of the stadium — The Lion & Castle, Yellows and the 1902
+Bar. This has allowed us to remove single use cups :
+
+* The club continues to have an active waste diversion system in place and the club has five collections in food waste, paper
+and card, plastic, cans and tins, glass and non-recyclable waste. The club currently recycles more than 50% of its waste
+and zero waste goes to landfill. At the Avant Training Centre, there is a compost heap for raw food and grass cuttings to
+reduce landfill waste
+
+* Biodiversity continues to increase at both sites. Further work has been done on the herb garden and on-site allotment
+along with the creation of a living wall providing fresh produce for the first-team players and staff
+
+- At the Avant Training Centre there is a vegan option served daily, in addition to meals being sourced from local suppliers and
+homegrown produce via the on-site allotment and herb garden. A player nutrition app also exists and is available to all staff
+which has several recipes that feature plant-based options. Healthy food offerings are now available to Carrow Road staff
+
+* Directors and Executives continue to travel with the first-team squad and staff to reduce our carbon footprint
+
+* The club’s sustainability efforts were shortlisted for a Football Business Award
+
+- Asaclub, we supported Pledgeball encouraging fans to make pledges and tackle climate change. We achieved fourth
+position with fans committing to save 763,203 kgCO2
+
+- New pitch surround LED system has been installed reducing energy usage and light pollution
+
+Objectives for 2024/25
+
+* Establish a Sustainability Strategy Group to prioritise the development of a long-term sustainability strategy, enabling the
+club to set targets with confidence , :
+
+* Continue to evolve and install low energy lighting across our building portfolio
+
+* Continue review of existing offices and equipment and company policies
+
+* Find ways to measure and report the positive socio-economic impact of our business activities
+
+* Look at ways to further reduce plastic at the Avant Training Centre :
+
+* Work with partnerships to insert clauses into the contracts to promote and establish sustainability links
+
+The club will report on progress within our next Annual Report.
+
+1
+NORWICH CITY FOOTBALL CLUB PLC ANNUAL REPORT 2023/24
+
+STRATEGIC REPORT
+
+Equality, Diversity and Inclusion
+
+During 2023/24 the club has continued working towards the Intermediate Level under the Premier League Equality,
+Diversity and Inclusion Standard (PLEDIS). Part of this process has included a review of our structure and the movement of
+accountability for inclusion at the club to Perry Hamilton, Head of HR and EDI. -
+
+Internally, the club EDI Data Capture was updated, including questions from our Engagement and Delivery and Safeguarding
+teams and was relaunched as an Annual Survey. In its third year of running, the new format yielded the survey's highest ever
+level of engagement as demonstrated by a 90% return rate. The club also saw significant reduction in ‘prefer not to answer’
+responses, showing a positive cultural change in being open about identity at work.
+
+Externally, the club:successfully delivered inclusion-based matchday and non-matchday activations, including Gender
+Stereotype workshops with local schools and celebrations of LGBT+ History Month. In February 2024, the club celebrated
+LGBT+ History Month with club shirt sponsors adapting their logos for both a men’s and women’s first-team fixture and our
+partner logos were each printed in the colours of the pride rainbow for their respective team’s matches.
+
+The club’s Sanction Panel process has evolved to include educational seminars provided by Kick It Out as part of the
+resolution process. This has resulted in positive feedback.
+
+We acknowledge that the PLEDIS framework is a useful tool in advancing conversation and engagement on EDI and mental
+health and wellbeing at the club. However, we believe our focus should now be on meaningful, long-term projects optimising
+and embedding inclusive culture. Ultimately, our aim of making Norwich City ‘A Home for Everyone’ should be a strategic
+goal, from which any evidence contributing to accreditation will be considered a benefit, rather than a purpose.
+
+. Mental Health and Wellbeing
+
+During the course of the 2023/24 season, the club has continued to support employees with their mental health and
+wellbeing. This has become an essential facet of the Engagement and Delivery three-year plan, as well as the club's journey
+to PLEDIS intermediate accreditation.
+
+The Mental Health and Wellbeing Group was relaunched amid a review of the delivery plan, which focuses on five key areas of
+wellbeing: health, security, environment, purpose and relationships. Regular meetings are held to discuss current and future
+provisions and there is a continuous supply of training for staff for awareness and support.
+
+Over the season, the club has held regular workshops focusing on different areas of wellbeing, including sleep, anxiety and
+low mood.
+
+. Anew internal staff intranet was launched with wellbeing being a key focus, with dedicated pages available for staff with
+
+features such as exercise classes, meditation and a specific wellbeing resource page included.
+
+in November, we saw the introduction of the Smart Health app, offering 24-hour access to a GP to employees and their
+-immediate families. This remote service is available to employees on holiday, wherever they are in the world and even
+contains the availability of a prescription delivery service. Staff can also access mental health support, health checks,
+nutrition consultation and fitness plans.
+
+A small gym at the stadium is now available to staff to use without charge, which has been very popular. Free weekly yoga
+and Pilates classes continue to be available to all staff.
+
+There has been a real focus on employees wellbeing via the continuation of ‘Mindful Monday’ walks, walking meetings being
+encouraged alongside improved provision of quiet spaces to work.
+
+Coaching and mentoring sessions are in place and the feedback so far has been really positive. A handful of staff went
+
+on a mentoring course to enhance their skills and learn from more senior members of the team to aid their development
+pathways.
+
+Staff have recently been offered access to the Wisdom app, which offers four-week plans to track activities, mood and
+sleep. Access to qualified counsellors and advisors 365 days a year is also available, as well as health and wellbeing checks,
+guided breathing and meditation tools.
+
+Following feedback from staff, the club has now introduced volunteering days and staff have been able to take a day away
+from the office to help a local business, providing great opportunities for different departments to come together offsite
+and form new working relationships.
+
+12
+

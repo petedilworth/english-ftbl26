@@ -1,0 +1,77 @@
+club_id	company_number	document	filing_date	made_up_date	concept	prefix	kind	period_start	period_end	instant	dimensions	unit	value
+halesowen-town-fc	07012137	FJ_6wXHo_mVB8FdN3WEu5HUfwX18DdN1kk0Z87wlZRI	2026-03-31	2025-06-30	AccountingStandardsApplied	uk-bus	text	2024-07-01	2025-06-30		AccountingStandardsDimension=Micro-entities		
+halesowen-town-fc	07012137	FJ_6wXHo_mVB8FdN3WEu5HUfwX18DdN1kk0Z87wlZRI	2026-03-31	2025-06-30	AccountsStatusAuditedOrUnaudited	uk-bus	text	2024-07-01	2025-06-30		AccountsStatusDimension=AuditExempt-NoAccountantsReport		
+halesowen-town-fc	07012137	FJ_6wXHo_mVB8FdN3WEu5HUfwX18DdN1kk0Z87wlZRI	2026-03-31	2025-06-30	AccountsType	uk-bus	text	2024-07-01	2025-06-30		AccountsTypeDimension=FullAccounts		
+halesowen-town-fc	07012137	FJ_6wXHo_mVB8FdN3WEu5HUfwX18DdN1kk0Z87wlZRI	2026-03-31	2025-06-30	AverageNumberEmployeesDuringPeriod	uk-core	num	2023-07-01	2024-06-30			GBP	10
+halesowen-town-fc	07012137	FJ_6wXHo_mVB8FdN3WEu5HUfwX18DdN1kk0Z87wlZRI	2026-03-31	2025-06-30	AverageNumberEmployeesDuringPeriod	uk-core	num	2024-07-01	2025-06-30			GBP	10
+halesowen-town-fc	07012137	FJ_6wXHo_mVB8FdN3WEu5HUfwX18DdN1kk0Z87wlZRI	2026-03-31	2025-06-30	BalanceSheetDate	uk-bus	text		2025-06-30	1			30 June 2025
+halesowen-town-fc	07012137	FJ_6wXHo_mVB8FdN3WEu5HUfwX18DdN1kk0Z87wlZRI	2026-03-31	2025-06-30	Creditors	uk-core	num		2024-06-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	429975
+halesowen-town-fc	07012137	FJ_6wXHo_mVB8FdN3WEu5HUfwX18DdN1kk0Z87wlZRI	2026-03-31	2025-06-30	Creditors	uk-core	num		2025-06-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	682436
+halesowen-town-fc	07012137	FJ_6wXHo_mVB8FdN3WEu5HUfwX18DdN1kk0Z87wlZRI	2026-03-31	2025-06-30	CurrentAssets	uk-core	num		2024-06-30	1		GBP	18676
+halesowen-town-fc	07012137	FJ_6wXHo_mVB8FdN3WEu5HUfwX18DdN1kk0Z87wlZRI	2026-03-31	2025-06-30	CurrentAssets	uk-core	num		2025-06-30	1		GBP	314434
+halesowen-town-fc	07012137	FJ_6wXHo_mVB8FdN3WEu5HUfwX18DdN1kk0Z87wlZRI	2026-03-31	2025-06-30	DateAuthorisationFinancialStatementsForIssue	uk-core	text		2025-06-30	1			30 March 2026
+halesowen-town-fc	07012137	FJ_6wXHo_mVB8FdN3WEu5HUfwX18DdN1kk0Z87wlZRI	2026-03-31	2025-06-30	DirectorSigningFinancialStatements	uk-core	text	2024-07-01	2025-06-30		EntityOfficersDimension=Director1		
+halesowen-town-fc	07012137	FJ_6wXHo_mVB8FdN3WEu5HUfwX18DdN1kk0Z87wlZRI	2026-03-31	2025-06-30	DirectorSigningFinancialStatements	uk-core	text	2024-07-01	2025-06-30		EntityOfficersDimension=Director2		
+halesowen-town-fc	07012137	FJ_6wXHo_mVB8FdN3WEu5HUfwX18DdN1kk0Z87wlZRI	2026-03-31	2025-06-30	EndDateForPeriodCoveredByReport	uk-bus	text		2025-06-30	1			2025-06-30
+halesowen-town-fc	07012137	FJ_6wXHo_mVB8FdN3WEu5HUfwX18DdN1kk0Z87wlZRI	2026-03-31	2025-06-30	EntityCurrentLegalOrRegisteredName	uk-bus	text	2024-07-01	2025-06-30				HALESOWEN TOWN FOOTBALL CLUB 1873 LIMITED
+halesowen-town-fc	07012137	FJ_6wXHo_mVB8FdN3WEu5HUfwX18DdN1kk0Z87wlZRI	2026-03-31	2025-06-30	EntityDormantTruefalse	uk-bus	text	2024-07-01	2025-06-30				false
+halesowen-town-fc	07012137	FJ_6wXHo_mVB8FdN3WEu5HUfwX18DdN1kk0Z87wlZRI	2026-03-31	2025-06-30	EntityTradingStatus	uk-bus	text	2024-07-01	2025-06-30				
+halesowen-town-fc	07012137	FJ_6wXHo_mVB8FdN3WEu5HUfwX18DdN1kk0Z87wlZRI	2026-03-31	2025-06-30	Equity	uk-core	num		2024-06-30	1		GBP	813462
+halesowen-town-fc	07012137	FJ_6wXHo_mVB8FdN3WEu5HUfwX18DdN1kk0Z87wlZRI	2026-03-31	2025-06-30	Equity	uk-core	num		2025-06-30	1		GBP	741140
+halesowen-town-fc	07012137	FJ_6wXHo_mVB8FdN3WEu5HUfwX18DdN1kk0Z87wlZRI	2026-03-31	2025-06-30	FixedAssets	uk-core	num		2024-06-30	1		GBP	56215
+halesowen-town-fc	07012137	FJ_6wXHo_mVB8FdN3WEu5HUfwX18DdN1kk0Z87wlZRI	2026-03-31	2025-06-30	FixedAssets	uk-core	num		2025-06-30	1		GBP	41787
+halesowen-town-fc	07012137	FJ_6wXHo_mVB8FdN3WEu5HUfwX18DdN1kk0Z87wlZRI	2026-03-31	2025-06-30	NameEntityOfficer	uk-bus	text	2024-07-01	2025-06-30		EntityOfficersDimension=Director1		K J McKenna
+halesowen-town-fc	07012137	FJ_6wXHo_mVB8FdN3WEu5HUfwX18DdN1kk0Z87wlZRI	2026-03-31	2025-06-30	NameProductionSoftware	uk-bus	text	2024-07-01	2025-06-30				Companies House
+halesowen-town-fc	07012137	FJ_6wXHo_mVB8FdN3WEu5HUfwX18DdN1kk0Z87wlZRI	2026-03-31	2025-06-30	NetAssetsLiabilities	uk-core	num		2024-06-30	1		GBP	813462
+halesowen-town-fc	07012137	FJ_6wXHo_mVB8FdN3WEu5HUfwX18DdN1kk0Z87wlZRI	2026-03-31	2025-06-30	NetAssetsLiabilities	uk-core	num		2025-06-30	1		GBP	741140
+halesowen-town-fc	07012137	FJ_6wXHo_mVB8FdN3WEu5HUfwX18DdN1kk0Z87wlZRI	2026-03-31	2025-06-30	NetCurrentAssetsLiabilities	uk-core	num		2024-06-30	1		GBP	757247
+halesowen-town-fc	07012137	FJ_6wXHo_mVB8FdN3WEu5HUfwX18DdN1kk0Z87wlZRI	2026-03-31	2025-06-30	NetCurrentAssetsLiabilities	uk-core	num		2025-06-30	1		GBP	699353
+halesowen-town-fc	07012137	FJ_6wXHo_mVB8FdN3WEu5HUfwX18DdN1kk0Z87wlZRI	2026-03-31	2025-06-30	PrepaymentsAccruedIncomeNotExpressedWithinCurrentAssetSubtotal	uk-core	num		2024-06-30	1		GBP	1168546
+halesowen-town-fc	07012137	FJ_6wXHo_mVB8FdN3WEu5HUfwX18DdN1kk0Z87wlZRI	2026-03-31	2025-06-30	PrepaymentsAccruedIncomeNotExpressedWithinCurrentAssetSubtotal	uk-core	num		2025-06-30	1		GBP	1067355
+halesowen-town-fc	07012137	FJ_6wXHo_mVB8FdN3WEu5HUfwX18DdN1kk0Z87wlZRI	2026-03-31	2025-06-30	StartDateForPeriodCoveredByReport	uk-bus	text		2025-06-30	1			2024-07-01
+halesowen-town-fc	07012137	FJ_6wXHo_mVB8FdN3WEu5HUfwX18DdN1kk0Z87wlZRI	2026-03-31	2025-06-30	StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime	uk-direp	text	2024-07-01	2025-06-30				The accounts have been prepared in accordance with the micro-entity provisions and delivered in accordance with the provisions applicable to companies subject to the small companies regime.
+halesowen-town-fc	07012137	FJ_6wXHo_mVB8FdN3WEu5HUfwX18DdN1kk0Z87wlZRI	2026-03-31	2025-06-30	StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies	uk-direp	text	2024-07-01	2025-06-30				For the year ending 30 June 2025 the company was entitled to exemption under section 477 of the Companies Act 2006 relating to small companies.
+halesowen-town-fc	07012137	FJ_6wXHo_mVB8FdN3WEu5HUfwX18DdN1kk0Z87wlZRI	2026-03-31	2025-06-30	StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct	uk-direp	text	2024-07-01	2025-06-30				The directors acknowledge their responsibilities for complying with the requirements of the Companies Act 2006 with respect to accounting records and the preparation of accounts.
+halesowen-town-fc	07012137	FJ_6wXHo_mVB8FdN3WEu5HUfwX18DdN1kk0Z87wlZRI	2026-03-31	2025-06-30	StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit	uk-direp	text	2024-07-01	2025-06-30				The members have not required the company to obtain an audit in accordance with section 476 of the Companies Act 2006.
+halesowen-town-fc	07012137	FJ_6wXHo_mVB8FdN3WEu5HUfwX18DdN1kk0Z87wlZRI	2026-03-31	2025-06-30	TotalAssetsLessCurrentLiabilities	uk-core	num		2024-06-30	1		GBP	813462
+halesowen-town-fc	07012137	FJ_6wXHo_mVB8FdN3WEu5HUfwX18DdN1kk0Z87wlZRI	2026-03-31	2025-06-30	TotalAssetsLessCurrentLiabilities	uk-core	num		2025-06-30	1		GBP	741140
+halesowen-town-fc	07012137	FJ_6wXHo_mVB8FdN3WEu5HUfwX18DdN1kk0Z87wlZRI	2026-03-31	2025-06-30	UKCompaniesHouseRegisteredNumber	uk-bus	text	2024-07-01	2025-06-30				07012137
+halesowen-town-fc	07012137	FJ_6wXHo_mVB8FdN3WEu5HUfwX18DdN1kk0Z87wlZRI	2026-03-31	2025-06-30	_GoingConcernMaterialUncertainty	derived	text						none found
+halesowen-town-fc	07012137	mM1iWklOS3nuDGfaOAly6d-AD-IulFGrc6FA2VOEBF0	2025-04-01	2024-06-30	AccountingStandardsApplied	uk-bus	text	2023-07-01	2024-06-30		AccountingStandardsDimension=Micro-entities		
+halesowen-town-fc	07012137	mM1iWklOS3nuDGfaOAly6d-AD-IulFGrc6FA2VOEBF0	2025-04-01	2024-06-30	AccountsStatusAuditedOrUnaudited	uk-bus	text	2023-07-01	2024-06-30		AccountsStatusDimension=AuditExempt-NoAccountantsReport		
+halesowen-town-fc	07012137	mM1iWklOS3nuDGfaOAly6d-AD-IulFGrc6FA2VOEBF0	2025-04-01	2024-06-30	AccountsType	uk-bus	text	2023-07-01	2024-06-30		AccountsTypeDimension=FullAccounts		
+halesowen-town-fc	07012137	mM1iWklOS3nuDGfaOAly6d-AD-IulFGrc6FA2VOEBF0	2025-04-01	2024-06-30	AverageNumberEmployeesDuringPeriod	uk-core	num	2022-07-01	2023-06-30			GBP	10
+halesowen-town-fc	07012137	mM1iWklOS3nuDGfaOAly6d-AD-IulFGrc6FA2VOEBF0	2025-04-01	2024-06-30	AverageNumberEmployeesDuringPeriod	uk-core	num	2023-07-01	2024-06-30			GBP	10
+halesowen-town-fc	07012137	mM1iWklOS3nuDGfaOAly6d-AD-IulFGrc6FA2VOEBF0	2025-04-01	2024-06-30	BalanceSheetDate	uk-bus	text		2024-06-30	1			30 June 2024
+halesowen-town-fc	07012137	mM1iWklOS3nuDGfaOAly6d-AD-IulFGrc6FA2VOEBF0	2025-04-01	2024-06-30	Creditors	uk-core	num		2023-06-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	339568
+halesowen-town-fc	07012137	mM1iWklOS3nuDGfaOAly6d-AD-IulFGrc6FA2VOEBF0	2025-04-01	2024-06-30	Creditors	uk-core	num		2024-06-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	429975
+halesowen-town-fc	07012137	mM1iWklOS3nuDGfaOAly6d-AD-IulFGrc6FA2VOEBF0	2025-04-01	2024-06-30	CurrentAssets	uk-core	num		2023-06-30	1		GBP	21998
+halesowen-town-fc	07012137	mM1iWklOS3nuDGfaOAly6d-AD-IulFGrc6FA2VOEBF0	2025-04-01	2024-06-30	CurrentAssets	uk-core	num		2024-06-30	1		GBP	18676
+halesowen-town-fc	07012137	mM1iWklOS3nuDGfaOAly6d-AD-IulFGrc6FA2VOEBF0	2025-04-01	2024-06-30	DateAuthorisationFinancialStatementsForIssue	uk-core	text		2024-06-30	1			31 March 2025
+halesowen-town-fc	07012137	mM1iWklOS3nuDGfaOAly6d-AD-IulFGrc6FA2VOEBF0	2025-04-01	2024-06-30	DirectorSigningFinancialStatements	uk-core	text	2023-07-01	2024-06-30		EntityOfficersDimension=Director1		
+halesowen-town-fc	07012137	mM1iWklOS3nuDGfaOAly6d-AD-IulFGrc6FA2VOEBF0	2025-04-01	2024-06-30	DirectorSigningFinancialStatements	uk-core	text	2023-07-01	2024-06-30		EntityOfficersDimension=Director2		
+halesowen-town-fc	07012137	mM1iWklOS3nuDGfaOAly6d-AD-IulFGrc6FA2VOEBF0	2025-04-01	2024-06-30	EndDateForPeriodCoveredByReport	uk-bus	text		2024-06-30	1			2024-06-30
+halesowen-town-fc	07012137	mM1iWklOS3nuDGfaOAly6d-AD-IulFGrc6FA2VOEBF0	2025-04-01	2024-06-30	EntityCurrentLegalOrRegisteredName	uk-bus	text	2023-07-01	2024-06-30				HALESOWEN TOWN FOOTBALL CLUB 1873 LIMITED
+halesowen-town-fc	07012137	mM1iWklOS3nuDGfaOAly6d-AD-IulFGrc6FA2VOEBF0	2025-04-01	2024-06-30	EntityDormantTruefalse	uk-bus	text	2023-07-01	2024-06-30				false
+halesowen-town-fc	07012137	mM1iWklOS3nuDGfaOAly6d-AD-IulFGrc6FA2VOEBF0	2025-04-01	2024-06-30	EntityTradingStatus	uk-bus	text	2023-07-01	2024-06-30				
+halesowen-town-fc	07012137	mM1iWklOS3nuDGfaOAly6d-AD-IulFGrc6FA2VOEBF0	2025-04-01	2024-06-30	Equity	uk-core	num		2023-06-30	1		GBP	906301
+halesowen-town-fc	07012137	mM1iWklOS3nuDGfaOAly6d-AD-IulFGrc6FA2VOEBF0	2025-04-01	2024-06-30	Equity	uk-core	num		2024-06-30	1		GBP	813462
+halesowen-town-fc	07012137	mM1iWklOS3nuDGfaOAly6d-AD-IulFGrc6FA2VOEBF0	2025-04-01	2024-06-30	FixedAssets	uk-core	num		2023-06-30	1		GBP	32806
+halesowen-town-fc	07012137	mM1iWklOS3nuDGfaOAly6d-AD-IulFGrc6FA2VOEBF0	2025-04-01	2024-06-30	FixedAssets	uk-core	num		2024-06-30	1		GBP	56215
+halesowen-town-fc	07012137	mM1iWklOS3nuDGfaOAly6d-AD-IulFGrc6FA2VOEBF0	2025-04-01	2024-06-30	NameEntityOfficer	uk-bus	text	2023-07-01	2024-06-30		EntityOfficersDimension=Director1		K J McKenna
+halesowen-town-fc	07012137	mM1iWklOS3nuDGfaOAly6d-AD-IulFGrc6FA2VOEBF0	2025-04-01	2024-06-30	NameProductionSoftware	uk-bus	text	2023-07-01	2024-06-30				Companies House
+halesowen-town-fc	07012137	mM1iWklOS3nuDGfaOAly6d-AD-IulFGrc6FA2VOEBF0	2025-04-01	2024-06-30	NetAssetsLiabilities	uk-core	num		2023-06-30	1		GBP	906301
+halesowen-town-fc	07012137	mM1iWklOS3nuDGfaOAly6d-AD-IulFGrc6FA2VOEBF0	2025-04-01	2024-06-30	NetAssetsLiabilities	uk-core	num		2024-06-30	1		GBP	813462
+halesowen-town-fc	07012137	mM1iWklOS3nuDGfaOAly6d-AD-IulFGrc6FA2VOEBF0	2025-04-01	2024-06-30	NetCurrentAssetsLiabilities	uk-core	num		2023-06-30	1		GBP	873495
+halesowen-town-fc	07012137	mM1iWklOS3nuDGfaOAly6d-AD-IulFGrc6FA2VOEBF0	2025-04-01	2024-06-30	NetCurrentAssetsLiabilities	uk-core	num		2024-06-30	1		GBP	757247
+halesowen-town-fc	07012137	mM1iWklOS3nuDGfaOAly6d-AD-IulFGrc6FA2VOEBF0	2025-04-01	2024-06-30	PrepaymentsAccruedIncomeNotExpressedWithinCurrentAssetSubtotal	uk-core	num		2023-06-30	1		GBP	1191065
+halesowen-town-fc	07012137	mM1iWklOS3nuDGfaOAly6d-AD-IulFGrc6FA2VOEBF0	2025-04-01	2024-06-30	PrepaymentsAccruedIncomeNotExpressedWithinCurrentAssetSubtotal	uk-core	num		2024-06-30	1		GBP	1168546
+halesowen-town-fc	07012137	mM1iWklOS3nuDGfaOAly6d-AD-IulFGrc6FA2VOEBF0	2025-04-01	2024-06-30	StartDateForPeriodCoveredByReport	uk-bus	text		2024-06-30	1			2023-07-01
+halesowen-town-fc	07012137	mM1iWklOS3nuDGfaOAly6d-AD-IulFGrc6FA2VOEBF0	2025-04-01	2024-06-30	StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime	uk-direp	text	2023-07-01	2024-06-30				The accounts have been prepared in accordance with the micro-entity provisions and delivered in accordance with the provisions applicable to companies subject to the small companies regime.
+halesowen-town-fc	07012137	mM1iWklOS3nuDGfaOAly6d-AD-IulFGrc6FA2VOEBF0	2025-04-01	2024-06-30	StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies	uk-direp	text	2023-07-01	2024-06-30				For the year ending 30 June 2024 the company was entitled to exemption under section 477 of the Companies Act 2006 relating to small companies.
+halesowen-town-fc	07012137	mM1iWklOS3nuDGfaOAly6d-AD-IulFGrc6FA2VOEBF0	2025-04-01	2024-06-30	StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct	uk-direp	text	2023-07-01	2024-06-30				The directors acknowledge their responsibilities for complying with the requirements of the Companies Act 2006 with respect to accounting records and the preparation of accounts.
+halesowen-town-fc	07012137	mM1iWklOS3nuDGfaOAly6d-AD-IulFGrc6FA2VOEBF0	2025-04-01	2024-06-30	StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit	uk-direp	text	2023-07-01	2024-06-30				The members have not required the company to obtain an audit in accordance with section 476 of the Companies Act 2006.
+halesowen-town-fc	07012137	mM1iWklOS3nuDGfaOAly6d-AD-IulFGrc6FA2VOEBF0	2025-04-01	2024-06-30	TotalAssetsLessCurrentLiabilities	uk-core	num		2023-06-30	1		GBP	906301
+halesowen-town-fc	07012137	mM1iWklOS3nuDGfaOAly6d-AD-IulFGrc6FA2VOEBF0	2025-04-01	2024-06-30	TotalAssetsLessCurrentLiabilities	uk-core	num		2024-06-30	1		GBP	813462
+halesowen-town-fc	07012137	mM1iWklOS3nuDGfaOAly6d-AD-IulFGrc6FA2VOEBF0	2025-04-01	2024-06-30	UKCompaniesHouseRegisteredNumber	uk-bus	text	2023-07-01	2024-06-30				07012137
+halesowen-town-fc	07012137	mM1iWklOS3nuDGfaOAly6d-AD-IulFGrc6FA2VOEBF0	2025-04-01	2024-06-30	_GoingConcernMaterialUncertainty	derived	text						none found

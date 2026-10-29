@@ -1,0 +1,203 @@
+source: Companies House filing, radcliffe-fc__2.pdf
+document: aRUpCdRvDmWoXnLsWleHlD_QKfbRBTu-aZuP8zUmYHs
+made_up_date: 2024-05-31
+method: ocr
+pages_read: 8 of 8
+
+Registration number: 02856860
+Radcliffe Borough Sports & Social Club Limited
+Unaudited Filleted Abridged Financial Statements
+for the Year Ended 31 May. 2024
+: i ran
+Ey TOL
+: A0g ta0007 028 | :
+Radcliffe Borough Sports & Social Club Limited
+Contents
+Company Information 1
+Abridged Balance Sheet 2
+Notes to the Unaudited Abridged Financial Statements 3 to6
+|
+:
+Radcliffe Borough Sports & Social Club Limited
+Company Information
+Directors P J Lofthouse
+; BF Manning
+M McCabe
+BR Quarmby
+Registered office Colshaw Close East
+Pilkington Road
+Radcliffe
+Manchester
+M26 3PE
+Accountants Xeinadin Yorkshire & North East Limited
+Unit 26g, Springfield Commercial Centre
+Bagley Lane
+Farsley
+Leeds
+: LS28 SLY ;
+Page |
+Radcliffe Borough Sports & Social Club Limited
+(Registration number: 02856860)
+Abridged Balance Sheet as at 31 May 2024
+2024 2023
+Note £ £
+Fixed assets
+Tangible assets 3 52,880 52,880
+Current assets
+, Cash at bank and in hand (3) (3)
+Creditors: Amounts falling due within one year (66,448) (71,557) .
+Net current liabilities (66,451) (71,560)
+Total assets less current liabilities (13,571) (18,680)
+Accruals and deferred income (800) -
+Net liabilities (14,371) _ (18,680)
+Capital and reserves
+Called up share capital 5 100 100
+Retained earnings (14,471) (18,780)
+Shareholders' deficit (14,371) (18,680)
+For the financial year ending 31 May 2024 the company was entitled to exemption from audit under section 477
+of the Companies Act 2006 relating to small companies.
+Directors’ responsibilities:
+* The members have not required the company to obtain an audit of its accounts for the year in question in
+accordance with section 476; and
+* The directors acknowledge their responsibilities for complying with the requirements of the Act with respect
+to accounting records and the preparation of accounts.
+These financial statements have been prepared in accordance with the special provisions relating to companies
+subject to the small companies regime within Part 15 of the Companies Act 2006.
+All of the company’s members have consented to the preparation of an Abridged Balance Sheet in accordance
+with Section 444(2A) of the Companies Act 2006.
+These financial statements have been delivered in accordance with the provisions applicable to companies
+. subject to the small companies regime. As permitted by section 444 (5A) of the Companies Act 2006, the
+directors have not delivered to the registrar a copy of the Profit and Loss Account.
+Approved and afthgfised by the Board on 10 February 2025 and signed on its behalf by:
+AH
+Director
+The notes on pages 3 to 6 form an integral part of these abridged financial statements.
+: Page 2
+Radcliffe Borough Sports & Social Club Limited
+Notes to the Unaudited Abridged Financial Statements for the Year Ended 31 May 2024
+1 General information
+The company is a private company limited by share capital, incorporated in England and Wales.
+The address of its registered office is: .
+Colshaw Close East .
+Pilkington Road
+Radcliffe
+Manchester
+M26 3PE
+These financial statements were authorised for issue by the Board on 10 February 2025.
+2 Accounting policies
+Summary of significant accounting policies and key accounting estimates
+The principal accounting policies applied in the preparation of these financial statements are set out below.
+These policies have been consistently applied to all the years presented, unless otherwise stated.
+Statement of compliance : .
+These abridged financial statements have been prepared in accordance with Financial Reporting Standard 102
+Section 1A smaller entities - ‘The Financial Reporting Standard applicable in the United Kingdom and Republic
+of Ireland’ and the Companies Act 2006 (as applicable to companies subject to the small companies’ regime).
+Basis of preparation
+These abridged financial statements have been prepared using the historical cost convention except that as
+disclosed in the accounting policies certain items are shown at fair value.
+Departure from requirements of FRS 102
+The entity transitioned from previous UK GAPP to FRS 102 as at 1 June 2015. Details of how FRS 102 has
+affected the reported financial position and financial performance is given in note 10.
+Going concern
+The financial statements have been prepared on a going concern basis.
+Revenue recognition
+Turnover comprises the fair value of the consideration received or receivable for the sale of goods and provision
+of services in the ordinary course of the company’s activities. Turnover is shown net of sales/value added tax, .
+returns, rebates and discounts.
+The company recognises revenue when:
+The amount of revenue can be reliably measured;
+it is probable that future economic benefits will flow to the entity;
+and specific criteria have been met for each of the company's activities.
+Tax
+The tax expense for the period comprises current tax. Tax is recognised in profit or loss, except that a change
+attributable to an item of income or expense recognised as other comprehensive income is also recognised
+directly in other comprehensive income. ;
+
+Page 3
+Radcliffe Borough Sports & Social Club Limited
+Notes to the Unaudited Abridged Financial Statements for the Year Ended 31 May 2024
+The current income tax charge is calculated on the basis of tax rates and laws that have been enacted or
+substantively enacted by the reporting date in the countries where the company operates and generates taxable
+income.
+Tangible assets
+Tangible assets are stated in the balance sheet at cost, less any subsequent accumulated depreciation and
+subsequent accumulated impairment losses.
+The cost of tangible assets includes directly attributable incremental costs incurred in their acquisition and |
+installation.
+Depreciation
+Depreciation is charged so as to write off the cost of assets, other than land and properties under construction
+. over their estimated useful lives, as follows:
+Asset class Depreciation method and rate
+Plant and Machinery 15% Reducing Balance
+Freehold property is not depreciated
+Cash and cash equivalents .
+Cash and cash equivalents comprise cash on hand and call deposits, and other short-term highly liquid
+investments that are readily convertible to a known amount of cash and are subject to an insignificant risk of
+change in value.
+Trade creditors .
+Trade creditors are obligations to pay for goods or services that have been acquired in the ordinary course of
+business from suppliers. Accounts payable are classified as current liabilities if the company does not have an
+unconditional right, at the end of the reporting period, to defer settlement of the creditor for at least twelve
+months after the reporting date. If there is an unconditional right to defer settlement for at least twelve months
+after the reporting date, they are presented as non-current liabilities.
+Trade creditors are recognised initially at the transaction price and subsequently measured at amortised cost
+using the effective interest method.
+Share capital
+Ordinary shares are classified as equity. Equity instruments are measured at the fair value of the cash or other
+resources received or receivable, net of the direct costs of issuing the equity instruments. If payment is deferred
+and the time value of money is material, the initial measurement is on a present value basis.
+Page 4
+Radcliffe Borough Sports & Social Club Limited
+
+Notes to the Unaudited Abridged Financial Statements for the Year Ended 31 May 2024
+Financial instruments
+Classification
+Financial liabilities and equity instruments are classified according to the substance of the contractual
+arrangements entered into. An equity instrument is any contract that evidences a residual interest in the assets of
+the entity after deducting all of its financial liabilities.
+Where the contractual obligations of financial instruments (including share capital) are equivalent to a similar
+debt instrument, those financial instruments are classed as financial liabilities. Financial liabilities are presented '
+as such in the balance sheet. Finance costs and gains or losses relating to financial liabilities are included in the
+profit and loss account. Finance costs are calculated so as to produce a constant rate of return on the outstanding
+liability.
+Where the contractual terms of share capital do not have any terms meeting the definition of a financial liability,
+then this is classed as an equity instrument. Dividends and distributions relating to equity instruments are
+debited directly to equity.
+3 Tangible assets
+
+Land and o,
+
+buildings Total
+
+£ £
+Cost or valuation
+At 1 June 2023 87,436 87,436
+At 31 May 2024 87,436 87,436
+Depreciation
+At 1 June 2023 : 34,556 34,556
+At 31 May 2024 34,556 34,556
+Carrying amount
+At 31 May 2024 © 52,880 52,880
+At 31 May 2023 52,880 52,880
+Included within the net book value of land and buildings above is £52,880 (2023 - £52,880) in respect of
+freehold land and buildings.
+4 Debtors
+Debtors includes £Nil (2023 - £Nil) due after more than one year.
+5 Share capital :
+Allotted, called up and fully paid shares
+Page 5
+Radcliffe Borough Sports & Social Club Limited
+Notes to the Unaudited Abridged Financial Statements for the Year Ended 31 May 2024
+2024 2023
+
+No. £ No. £
+Ordinary Share Capital of £1 each 100 100 100 100
+6 Related party transactions
+Summary of transactions with parent
+At 31st May 2024, the company owed £73,086.55 (2023 - £79,206.55) to RBFC Limited, the company's parent.
+Summary of transactions with associates
+At 31st May 2024, the company was owed £7,650 (2023 - £7,650) by Radcliffe Borough Community Trust .
+Limited, the company’s associate. .
+
+Page 6 :
+

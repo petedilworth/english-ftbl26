@@ -1,0 +1,82 @@
+club_id	company_number	document	filing_date	made_up_date	concept	prefix	kind	period_start	period_end	instant	dimensions	unit	value
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	AccountingStandardsApplied	ns10	text	2024-06-01	2025-05-31		AccountingStandardsDimension=Micro-entities		
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	AccountsStatusAuditedOrUnaudited	ns10	text	2024-06-01	2025-05-31		AccountsStatusDimension=AuditExempt-NoAccountantsReport		
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	AccountsType	ns10	text	2024-06-01	2025-05-31		AccountsTypeDimension=FullAccounts		
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	AddressLine1	ns10	text	2024-06-01	2025-05-31		EntityContactTypeDimension=RegisteredOffice		28 Bagdale
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	ApplicableLegislation	ns10	text	2024-06-01	2025-05-31		ApplicableLegislationDimension=SmallCompaniesRegimeForAccounts		
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	AverageNumberEmployeesDuringPeriod	ns5	num	2023-06-29	2024-05-31			pure	0
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	AverageNumberEmployeesDuringPeriod	ns5	num	2024-06-01	2025-05-31			pure	0
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	BalanceSheetDate	ns10	text		2025-05-31	1			31.5.25
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	CompanyHasPublishedCommitmentToUKEffectiveStewardshipCodeTruefalse	ns20	text	2024-06-01	2025-05-31				false
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	CountryFormationOrIncorporation	ns10	text	2024-06-01	2025-05-31		CountriesRegionsDimension=EnglandWales		
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	CountyRegion	ns10	text	2024-06-01	2025-05-31		EntityContactTypeDimension=RegisteredOffice		North Yorkshire
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	DateAuthorisationFinancialStatementsForIssue	ns5	text		2025-05-31	1			25 February 2026
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	DefinedBenefitPlanMulti-employerPlanTruefalse	ns5	text	2024-06-01	2025-05-31				false
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	DescriptionBodyAuthorisingFinancialStatements	ns5	text	2024-06-01	2025-05-31				Board of Directors
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	DirectorSigningFinancialStatements	ns5	text	2024-06-01	2025-05-31		EntityOfficersDimension=Director1		
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	EndDateForPeriodCoveredByReport	ns10	text		2025-05-31	1			31.5.25
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	EntityCurrentLegalOrRegisteredName	ns10	text	2024-06-01	2025-05-31				Whitby Town Football Club Limited
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	EntityDormantTruefalse	ns10	text	2024-06-01	2025-05-31				false
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	EntityTradingStatus	ns10	text	2024-06-01	2025-05-31				
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	Equity	ns5	num		2024-05-31	1		GBP	0
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	Equity	ns5	num		2025-05-31	1		GBP	0
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	FinancialStatementsArePreparedOnGoing-concernBasisTruefalse	ns5	text	2024-06-01	2025-05-31				true
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	InvestmentEntityRequiredToApplyExceptionFromConsolidationTruefalse	ns5	text	2024-06-01	2025-05-31				false
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	LegalFormEntity	ns10	text	2024-06-01	2025-05-31		LegalFormEntityDimension=CompanyLimitedByGuarantee		
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	LegalFormEntity	ns10	text	2024-06-01	2025-05-31		LegalFormEntityDimension=CompanyLimitedByGuarantee		private company, limited by guarantee
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	NameEntityOfficer	ns10	text	2024-06-01	2025-05-31		EntityOfficersDimension=Director1		Mr C A Moth FMAAT
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	NameProductionSoftware	ns10	text	2024-06-01	2025-05-31				IRIS Accounts Production
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	PostalCodeZip	ns10	text	2024-06-01	2025-05-31		EntityContactTypeDimension=RegisteredOffice		YO21 1QL
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	PrincipalCurrencyUsedInBusinessReport	ns10	text	2024-06-01	2025-05-31		CurrenciesDimension=PoundSterling		
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	PrincipalLocation-CityOrTown	ns10	text	2024-06-01	2025-05-31		EntityContactTypeDimension=RegisteredOffice		Whitby
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	ReportPeriod	ns10	text	2024-06-01	2025-05-31				
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	ReportTitle	ns10	text	2024-06-01	2025-05-31				Unaudited Financial Statements for the Year Ended 31 May 2025
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	ScopeAccounts	ns10	text	2024-06-01	2025-05-31				
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	StartDateForPeriodCoveredByReport	ns10	text		2025-05-31	1			1.6.24
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime	ns20	text	2024-06-01	2025-05-31				The financial statements have been prepared in accordance with the micro-entity provisions and delivered in accordance with the provisions applicable to companies subject to the small companies regime.
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies	ns20	text	2024-06-01	2025-05-31				The company is entitled to exemption from audit under Section 477 of the Companies Act 2006 for the year ended 31 May 2025.
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct	ns20	text	2024-06-01	2025-05-31				The directors acknowledge their responsibilities for:(a)ensuring that the company keeps accounting records which comply with Sections 386 and 387 of the Companies Act 2006 and (b)preparing financial statements which give a true and fair view of the state of affairs of the company as at the end of each financial year and of its surplus or deficit for each financial year in accordance with the requ…
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit	ns20	text	2024-06-01	2025-05-31				The members have not required the company to obtain an audit of its financial statements for the year ended 31 May 2025 in accordance with Section 476 of the Companies Act 2006.
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	TotalAssetsLessCurrentLiabilities	ns5	num		2024-05-31	1		GBP	0
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	TotalAssetsLessCurrentLiabilities	ns5	num		2025-05-31	1		GBP	0
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	UKCompaniesHouseRegisteredNumber	ns10	text	2024-06-01	2025-05-31				14970713
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	VersionProductionSoftware	ns10	text	2024-06-01	2025-05-31				v25.4.0.155
+whitby-town-fc	14970713	VTspdKUuiyERIIPMkdls5p4JuzaT-bI2Km53tbiA3sA	2026-02-25	2025-05-31	_GoingConcernMaterialUncertainty	derived	text						none found
+whitby-town-fc	14970713	kMb5Ikz9zrsQN5mewgkjkgPt_F3c55-II8P8MGbAesU	2025-03-07	2024-05-31	AccountingStandardsApplied	ns10	text	2023-06-29	2024-05-31		AccountingStandardsDimension=Micro-entities		
+whitby-town-fc	14970713	kMb5Ikz9zrsQN5mewgkjkgPt_F3c55-II8P8MGbAesU	2025-03-07	2024-05-31	AccountsStatusAuditedOrUnaudited	ns10	text	2023-06-29	2024-05-31		AccountsStatusDimension=AuditExempt-NoAccountantsReport		
+whitby-town-fc	14970713	kMb5Ikz9zrsQN5mewgkjkgPt_F3c55-II8P8MGbAesU	2025-03-07	2024-05-31	AccountsType	ns10	text	2023-06-29	2024-05-31		AccountsTypeDimension=FullAccounts		
+whitby-town-fc	14970713	kMb5Ikz9zrsQN5mewgkjkgPt_F3c55-II8P8MGbAesU	2025-03-07	2024-05-31	AddressLine1	ns10	text	2023-06-29	2024-05-31		EntityContactTypeDimension=RegisteredOffice		28 Bagdale
+whitby-town-fc	14970713	kMb5Ikz9zrsQN5mewgkjkgPt_F3c55-II8P8MGbAesU	2025-03-07	2024-05-31	AverageNumberEmployeesDuringPeriod	ns5	num	2023-06-29	2024-05-31			pure	0
+whitby-town-fc	14970713	kMb5Ikz9zrsQN5mewgkjkgPt_F3c55-II8P8MGbAesU	2025-03-07	2024-05-31	BalanceSheetDate	ns10	text		2024-05-31	1			31.5.24
+whitby-town-fc	14970713	kMb5Ikz9zrsQN5mewgkjkgPt_F3c55-II8P8MGbAesU	2025-03-07	2024-05-31	CompanyHasPublishedCommitmentToUKEffectiveStewardshipCodeTruefalse	ns20	text	2023-06-29	2024-05-31				false
+whitby-town-fc	14970713	kMb5Ikz9zrsQN5mewgkjkgPt_F3c55-II8P8MGbAesU	2025-03-07	2024-05-31	CountryFormationOrIncorporation	ns10	text	2023-06-29	2024-05-31		CountriesRegionsDimension=EnglandWales		
+whitby-town-fc	14970713	kMb5Ikz9zrsQN5mewgkjkgPt_F3c55-II8P8MGbAesU	2025-03-07	2024-05-31	DateAuthorisationFinancialStatementsForIssue	ns5	text		2024-05-31	1			7 March 2025
+whitby-town-fc	14970713	kMb5Ikz9zrsQN5mewgkjkgPt_F3c55-II8P8MGbAesU	2025-03-07	2024-05-31	DefinedBenefitPlanMulti-employerPlanTruefalse	ns5	text	2023-06-29	2024-05-31				false
+whitby-town-fc	14970713	kMb5Ikz9zrsQN5mewgkjkgPt_F3c55-II8P8MGbAesU	2025-03-07	2024-05-31	DescriptionBodyAuthorisingFinancialStatements	ns5	text	2023-06-29	2024-05-31				Board of Directors
+whitby-town-fc	14970713	kMb5Ikz9zrsQN5mewgkjkgPt_F3c55-II8P8MGbAesU	2025-03-07	2024-05-31	DirectorSigningFinancialStatements	ns5	text	2023-06-29	2024-05-31		EntityOfficersDimension=Director1		
+whitby-town-fc	14970713	kMb5Ikz9zrsQN5mewgkjkgPt_F3c55-II8P8MGbAesU	2025-03-07	2024-05-31	EndDateForPeriodCoveredByReport	ns10	text		2024-05-31	1			31.5.24
+whitby-town-fc	14970713	kMb5Ikz9zrsQN5mewgkjkgPt_F3c55-II8P8MGbAesU	2025-03-07	2024-05-31	EntityCurrentLegalOrRegisteredName	ns10	text	2023-06-29	2024-05-31				Whitby Town Football Club Limited
+whitby-town-fc	14970713	kMb5Ikz9zrsQN5mewgkjkgPt_F3c55-II8P8MGbAesU	2025-03-07	2024-05-31	EntityDormantTruefalse	ns10	text	2023-06-29	2024-05-31				false
+whitby-town-fc	14970713	kMb5Ikz9zrsQN5mewgkjkgPt_F3c55-II8P8MGbAesU	2025-03-07	2024-05-31	EntityTradingStatus	ns10	text	2023-06-29	2024-05-31				
+whitby-town-fc	14970713	kMb5Ikz9zrsQN5mewgkjkgPt_F3c55-II8P8MGbAesU	2025-03-07	2024-05-31	Equity	ns5	num		2024-05-31	1		GBP	0
+whitby-town-fc	14970713	kMb5Ikz9zrsQN5mewgkjkgPt_F3c55-II8P8MGbAesU	2025-03-07	2024-05-31	FinancialStatementsArePreparedOnGoing-concernBasisTruefalse	ns5	text	2023-06-29	2024-05-31				true
+whitby-town-fc	14970713	kMb5Ikz9zrsQN5mewgkjkgPt_F3c55-II8P8MGbAesU	2025-03-07	2024-05-31	InvestmentEntityRequiredToApplyExceptionFromConsolidationTruefalse	ns5	text	2023-06-29	2024-05-31				false
+whitby-town-fc	14970713	kMb5Ikz9zrsQN5mewgkjkgPt_F3c55-II8P8MGbAesU	2025-03-07	2024-05-31	LegalFormEntity	ns10	text	2023-06-29	2024-05-31		LegalFormEntityDimension=CompanyLimitedByGuarantee		
+whitby-town-fc	14970713	kMb5Ikz9zrsQN5mewgkjkgPt_F3c55-II8P8MGbAesU	2025-03-07	2024-05-31	LegalFormEntity	ns10	text	2023-06-29	2024-05-31		LegalFormEntityDimension=CompanyLimitedByGuarantee		private company, limited by guarantee
+whitby-town-fc	14970713	kMb5Ikz9zrsQN5mewgkjkgPt_F3c55-II8P8MGbAesU	2025-03-07	2024-05-31	NameEntityOfficer	ns10	text	2023-06-29	2024-05-31		EntityOfficersDimension=Director1		Mr C A Moth FMAAT
+whitby-town-fc	14970713	kMb5Ikz9zrsQN5mewgkjkgPt_F3c55-II8P8MGbAesU	2025-03-07	2024-05-31	NameProductionSoftware	ns10	text	2023-06-29	2024-05-31				IRIS Accounts Production
+whitby-town-fc	14970713	kMb5Ikz9zrsQN5mewgkjkgPt_F3c55-II8P8MGbAesU	2025-03-07	2024-05-31	PostalCodeZip	ns10	text	2023-06-29	2024-05-31		EntityContactTypeDimension=RegisteredOffice		YO21 1QL
+whitby-town-fc	14970713	kMb5Ikz9zrsQN5mewgkjkgPt_F3c55-II8P8MGbAesU	2025-03-07	2024-05-31	PrincipalCurrencyUsedInBusinessReport	ns10	text	2023-06-29	2024-05-31		CurrenciesDimension=PoundSterling		
+whitby-town-fc	14970713	kMb5Ikz9zrsQN5mewgkjkgPt_F3c55-II8P8MGbAesU	2025-03-07	2024-05-31	PrincipalLocation-CityOrTown	ns10	text	2023-06-29	2024-05-31		EntityContactTypeDimension=RegisteredOffice		Whitby
+whitby-town-fc	14970713	kMb5Ikz9zrsQN5mewgkjkgPt_F3c55-II8P8MGbAesU	2025-03-07	2024-05-31	ReportPeriod	ns10	text	2023-06-29	2024-05-31				
+whitby-town-fc	14970713	kMb5Ikz9zrsQN5mewgkjkgPt_F3c55-II8P8MGbAesU	2025-03-07	2024-05-31	ReportTitle	ns10	text	2023-06-29	2024-05-31				Unaudited Financial Statements for the Period 29 June 2023 to 31 May 2024
+whitby-town-fc	14970713	kMb5Ikz9zrsQN5mewgkjkgPt_F3c55-II8P8MGbAesU	2025-03-07	2024-05-31	ScopeAccounts	ns10	text	2023-06-29	2024-05-31				
+whitby-town-fc	14970713	kMb5Ikz9zrsQN5mewgkjkgPt_F3c55-II8P8MGbAesU	2025-03-07	2024-05-31	StartDateForPeriodCoveredByReport	ns10	text		2024-05-31	1			29.6.23
+whitby-town-fc	14970713	kMb5Ikz9zrsQN5mewgkjkgPt_F3c55-II8P8MGbAesU	2025-03-07	2024-05-31	StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime	ns20	text	2023-06-29	2024-05-31				The financial statements have been prepared in accordance with the micro-entity provisions and delivered in accordance with the provisions applicable to companies subject to the small companies regime.
+whitby-town-fc	14970713	kMb5Ikz9zrsQN5mewgkjkgPt_F3c55-II8P8MGbAesU	2025-03-07	2024-05-31	StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies	ns20	text	2023-06-29	2024-05-31				The company is entitled to exemption from audit under Section 477 of the Companies Act 2006 for the period ended 31 May 2024.
+whitby-town-fc	14970713	kMb5Ikz9zrsQN5mewgkjkgPt_F3c55-II8P8MGbAesU	2025-03-07	2024-05-31	StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct	ns20	text	2023-06-29	2024-05-31				The directors acknowledge their responsibilities for:(a)ensuring that the company keeps accounting records which comply with Sections 386 and 387 of the Companies Act 2006 and (b)preparing financial statements which give a true and fair view of the state of affairs of the company as at the end of each financial year and of its surplus or deficit for each financial year in accordance with the requ…
+whitby-town-fc	14970713	kMb5Ikz9zrsQN5mewgkjkgPt_F3c55-II8P8MGbAesU	2025-03-07	2024-05-31	StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit	ns20	text	2023-06-29	2024-05-31				The members have not required the company to obtain an audit of its financial statements for the period ended 31 May 2024 in accordance with Section 476 of the Companies Act 2006.
+whitby-town-fc	14970713	kMb5Ikz9zrsQN5mewgkjkgPt_F3c55-II8P8MGbAesU	2025-03-07	2024-05-31	TotalAssetsLessCurrentLiabilities	ns5	num		2024-05-31	1		GBP	0
+whitby-town-fc	14970713	kMb5Ikz9zrsQN5mewgkjkgPt_F3c55-II8P8MGbAesU	2025-03-07	2024-05-31	UKCompaniesHouseRegisteredNumber	ns10	text	2023-06-29	2024-05-31				14970713
+whitby-town-fc	14970713	kMb5Ikz9zrsQN5mewgkjkgPt_F3c55-II8P8MGbAesU	2025-03-07	2024-05-31	VersionProductionSoftware	ns10	text	2023-06-29	2024-05-31				v24.2.0.383
+whitby-town-fc	14970713	kMb5Ikz9zrsQN5mewgkjkgPt_F3c55-II8P8MGbAesU	2025-03-07	2024-05-31	_GoingConcernMaterialUncertainty	derived	text						none found

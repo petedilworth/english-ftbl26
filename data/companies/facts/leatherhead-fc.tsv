@@ -1,0 +1,120 @@
+club_id	company_number	document	filing_date	made_up_date	concept	prefix	kind	period_start	period_end	instant	dimensions	unit	value
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	AccountingStandardsApplied	bus	text	2024-05-01	2025-04-30		AccountingStandardsDimension=Micro-entities		
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	AccountsStatusAuditedOrUnaudited	bus	text	2024-05-01	2025-04-30		AccountsStatusDimension=AuditExempt-NoAccountantsReport		
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	AccountsType	bus	text	2024-05-01	2025-04-30		AccountsTypeDimension=FullAccounts		
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	AccruedLiabilitiesDeferredIncome	core	num		2024-04-30	1		GBP	36144
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	AccruedLiabilitiesDeferredIncome	core	num		2025-04-30	1		GBP	51945
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	AddressLine1	bus	text	2024-05-01	2025-04-30		EntityContactTypeDimension=RegisteredOffice		Fetcham Grove
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	AddressLine2	bus	text	2024-05-01	2025-04-30		EntityContactTypeDimension=RegisteredOffice		Guildford Road
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	AverageNumberEmployeesDuringPeriod	core	num	2023-05-01	2024-04-30			pure	-26
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	AverageNumberEmployeesDuringPeriod	core	num	2024-05-01	2025-04-30			pure	-26
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	BalanceSheetDate	bus	text		2025-04-30	1			30 April 2025
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	ControllingPartyUltimateControllingPartyTruefalse	core	text	2024-05-01	2025-04-30		X-ParentEntityOrControllingPartyUltimateControllingPartyGroupingDimension=1		true
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	CountryFormationOrIncorporation	bus	text	2024-05-01	2025-04-30		CountriesRegionsDimension=EnglandWales		
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	CountyRegion	bus	text	2024-05-01	2025-04-30		EntityContactTypeDimension=RegisteredOffice		Surrey
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	Creditors	core	num		2024-04-30	1	MaturitiesOrExpirationPeriodsDimension=AfterOneYear	GBP	42384
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	Creditors	core	num		2024-04-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	26090
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	Creditors	core	num		2025-04-30	1	MaturitiesOrExpirationPeriodsDimension=AfterOneYear	GBP	34571
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	Creditors	core	num		2025-04-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	27802
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	CurrentAssets	core	num		2024-04-30	1		GBP	26941
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	CurrentAssets	core	num		2025-04-30	1		GBP	51344
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	DateAuthorisationFinancialStatementsForIssue	core	text		2025-04-30	1			22 September 2025
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	DescriptionBodyAuthorisingFinancialStatements	core	text	2024-05-01	2025-04-30				board of directors
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	DescriptionPrincipalActivities	bus	text	2024-05-01	2025-04-30				No description of principal activity
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	DirectorSigningDirectorsReport	direp	text	2024-05-01	2025-04-30		EntityOfficersDimension=Director1		
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	DirectorSigningDirectorsReport	direp	text	2024-05-01	2025-04-30		EntityOfficersDimension=Director2		
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	DirectorSigningFinancialStatements	core	text	2024-05-01	2025-04-30		EntityOfficersDimension=Director1		
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	DirectorSigningFinancialStatements	core	text	2024-05-01	2025-04-30		EntityOfficersDimension=Director2		
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	DirectorsReportConsistentWithAccountsTruefalse	aurep	text	2024-05-01	2025-04-30				true
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	EndDateForPeriodCoveredByReport	bus	text		2025-04-30	1			30 April 2025
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	EntityCurrentLegalOrRegisteredName	bus	text	2024-05-01	2025-04-30				Leatherhead Football Club Limited
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	EntityDormantTruefalse	bus	text	2024-05-01	2025-04-30				false
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	EntityHasTakenExemptionUnderCompaniesActInNotPublishingItsOwnProfitLossAccountTruefalse	direp	text	2024-05-01	2025-04-30				true
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	EntityTradingStatus	bus	text	2024-05-01	2025-04-30				
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	Equity	core	num		2024-04-30	1		GBP	-24050
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	Equity	core	num		2025-04-30	1		GBP	-19482
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	FinancialStatementsArePreparedOnGoing-concernBasisTruefalse	core	text	2024-05-01	2025-04-30				true
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	FixedAssets	core	num		2024-04-30	1		GBP	53626
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	FixedAssets	core	num		2025-04-30	1		GBP	43493
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	LegalFormEntity	bus	text	2024-05-01	2025-04-30		LegalFormEntityDimension=PrivateLimitedCompanyLtd		
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	NameEntityOfficer	bus	text	2024-05-01	2025-04-30		EntityOfficersDimension=Director1		David Pope
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	NameEntityOfficer	bus	text	2024-05-01	2025-04-30		EntityOfficersDimension=Director2		John Dean
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	NameProductionSoftware	bus	text	2024-05-01	2025-04-30				v2025.59.1 micro_entity_frs_105_v1_1_2 filing
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	NetAssetsLiabilities	core	num		2024-04-30	1		GBP	-24050
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	NetAssetsLiabilities	core	num		2025-04-30	1		GBP	-19482
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	NetCurrentAssetsLiabilities	core	num		2024-04-30	1		GBP	851
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	NetCurrentAssetsLiabilities	core	num		2025-04-30	1		GBP	23542
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	PostalCodeZip	bus	text	2024-05-01	2025-04-30		EntityContactTypeDimension=RegisteredOffice		KT22 9AS
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	PrincipalCurrencyUsedInBusinessReport	bus	text	2024-05-01	2025-04-30				
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	PrincipalLocation-CityOrTown	bus	text	2024-05-01	2025-04-30		EntityContactTypeDimension=RegisteredOffice		Leatherhead
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	ReportIncludesDetailedProfitLossStatementTruefalse	bus	text	2024-05-01	2025-04-30				false
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	ReportPeriod	bus	text	2024-05-01	2025-04-30				
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	ReportPrincipalLanguage	bus	text	2024-05-01	2025-04-30				
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	StartDateForPeriodCoveredByReport	bus	text		2025-04-30	1			1 May 2024
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime	direp	text	2024-05-01	2025-04-30				These financial statements have been prepared in accordance with the micro-entity provisions and have been delivered in accordance with the provisions applicable to companies subject to the small companies regime.
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies	direp	text	2024-05-01	2025-04-30				For the year ending 30 April 2025, the company was entitled to exemption from audit under section 477 of the Companies Act 2006 relating to small companies.
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct	direp	text	2024-05-01	2025-04-30				The directors acknowledge their responsibilities for complying with the requirements of the Act with respect to accounting records and the preparation of financial statements.
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit	direp	text	2024-05-01	2025-04-30				The members have not required the company to obtain an audit of its financial statements for the year in question in accordance with section 476;
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	TotalAssetsLessCurrentLiabilities	core	num		2024-04-30	1		GBP	54477
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	TotalAssetsLessCurrentLiabilities	core	num		2025-04-30	1		GBP	67035
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	UKCompaniesHouseRegisteredNumber	bus	text	2024-05-01	2025-04-30				03067144
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	VersionProductionSoftware	bus	text	2024-05-01	2025-04-30				Software
+leatherhead-fc	03067144	IyWV78jD_DQgb-35ot6PwPw1KjwrwR0FTM7MUYKpFv8	2025-09-12	2025-04-30	_GoingConcernMaterialUncertainty	derived	text						none found
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	AccountingStandardsApplied	bus	text	2025-05-01	2026-04-30		AccountingStandardsDimension=Micro-entities		
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	AccountsStatusAuditedOrUnaudited	bus	text	2025-05-01	2026-04-30		AccountsStatusDimension=AuditExempt-NoAccountantsReport		
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	AccountsType	bus	text	2025-05-01	2026-04-30		AccountsTypeDimension=FullAccounts		
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	AccruedLiabilitiesDeferredIncome	core	num		2025-04-30	1		GBP	51945
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	AccruedLiabilitiesDeferredIncome	core	num		2026-04-30	1		GBP	91533
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	AddressLine1	bus	text	2025-05-01	2026-04-30		EntityContactTypeDimension=RegisteredOffice		Fetcham Grove
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	AddressLine2	bus	text	2025-05-01	2026-04-30		EntityContactTypeDimension=RegisteredOffice		Guildford Road
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	AverageNumberEmployeesDuringPeriod	core	num	2024-05-01	2025-04-30			pure	26
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	AverageNumberEmployeesDuringPeriod	core	num	2025-05-01	2026-04-30			pure	26
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	BalanceSheetDate	bus	text		2026-04-30	1			30 April 2026
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	ControllingPartyUltimateControllingPartyTruefalse	core	text	2025-05-01	2026-04-30		X-ParentEntityOrControllingPartyUltimateControllingPartyGroupingDimension=1		true
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	CountryFormationOrIncorporation	bus	text	2025-05-01	2026-04-30		CountriesRegionsDimension=EnglandWales		
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	CountyRegion	bus	text	2025-05-01	2026-04-30		EntityContactTypeDimension=RegisteredOffice		Surrey
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	Creditors	core	num		2025-04-30	1	MaturitiesOrExpirationPeriodsDimension=AfterOneYear	GBP	34571
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	Creditors	core	num		2025-04-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	27802
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	Creditors	core	num		2026-04-30	1	MaturitiesOrExpirationPeriodsDimension=AfterOneYear	GBP	26752
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	Creditors	core	num		2026-04-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	32455
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	CurrentAssets	core	num		2025-04-30	1		GBP	51344
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	CurrentAssets	core	num		2026-04-30	1		GBP	101983
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	DateAuthorisationFinancialStatementsForIssue	core	text		2026-04-30	1			19 October 2026
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	DescriptionBodyAuthorisingFinancialStatements	core	text	2025-05-01	2026-04-30				board of directors
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	DescriptionPrincipalActivities	bus	text	2025-05-01	2026-04-30				No description of principal activity
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	DirectorSigningDirectorsReport	direp	text	2025-05-01	2026-04-30		EntityOfficersDimension=Director1		
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	DirectorSigningFinancialStatements	core	text	2025-05-01	2026-04-30		EntityOfficersDimension=Director1		
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	DirectorsReportConsistentWithAccountsTruefalse	aurep	text	2025-05-01	2026-04-30				true
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	EndDateForPeriodCoveredByReport	bus	text		2026-04-30	1			30 April 2026
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	EntityCurrentLegalOrRegisteredName	bus	text	2025-05-01	2026-04-30				Leatherhead Football Club Limited
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	EntityDormantTruefalse	bus	text	2025-05-01	2026-04-30				false
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	EntityHasTakenExemptionUnderCompaniesActInNotPublishingItsOwnProfitLossAccountTruefalse	direp	text	2025-05-01	2026-04-30				true
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	EntityTradingStatus	bus	text	2025-05-01	2026-04-30				
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	Equity	core	num		2025-04-30	1		GBP	-19482
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	Equity	core	num		2026-04-30	1		GBP	-15593
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	FinancialStatementsArePreparedOnGoing-concernBasisTruefalse	core	text	2025-05-01	2026-04-30				true
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	FixedAssets	core	num		2025-04-30	1		GBP	43493
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	FixedAssets	core	num		2026-04-30	1		GBP	33165
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	LegalFormEntity	bus	text	2025-05-01	2026-04-30		LegalFormEntityDimension=PrivateLimitedCompanyLtd		
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	NameEntityOfficer	bus	text	2025-05-01	2026-04-30		EntityOfficersDimension=Director1		John Dean
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	NameProductionSoftware	bus	text	2025-05-01	2026-04-30				v2026.38.1 micro_entity_frs_105_v1_1_3 filing
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	NetAssetsLiabilities	core	num		2025-04-30	1		GBP	-19482
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	NetAssetsLiabilities	core	num		2026-04-30	1		GBP	-15593
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	NetCurrentAssetsLiabilities	core	num		2025-04-30	1		GBP	23542
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	NetCurrentAssetsLiabilities	core	num		2026-04-30	1		GBP	69528
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	PostalCodeZip	bus	text	2025-05-01	2026-04-30		EntityContactTypeDimension=RegisteredOffice		KT22 9AS
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	PrincipalCurrencyUsedInBusinessReport	bus	text	2025-05-01	2026-04-30				
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	PrincipalLocation-CityOrTown	bus	text	2025-05-01	2026-04-30		EntityContactTypeDimension=RegisteredOffice		Leatherhead
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	ReportIncludesDetailedProfitLossStatementTruefalse	bus	text	2025-05-01	2026-04-30				false
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	ReportPeriod	bus	text	2025-05-01	2026-04-30				
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	ReportPrincipalLanguage	bus	text	2025-05-01	2026-04-30				
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	StartDateForPeriodCoveredByReport	bus	text		2026-04-30	1			1 May 2025
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime	direp	text	2025-05-01	2026-04-30				These financial statements have been prepared in accordance with the micro-entity provisions and have been delivered in accordance with the provisions applicable to companies subject to the small companies regime.
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies	direp	text	2025-05-01	2026-04-30				For the year ending 30 April 2026, the company was entitled to exemption from audit under section 477 of the Companies Act 2006 relating to small companies.
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct	direp	text	2025-05-01	2026-04-30				The directors acknowledge their responsibilities for complying with the requirements of the Act with respect to accounting records and the preparation of financial statements.
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit	direp	text	2025-05-01	2026-04-30				The members have not required the company to obtain an audit of its financial statements for the year in question in accordance with section 476;
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	TotalAssetsLessCurrentLiabilities	core	num		2025-04-30	1		GBP	67035
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	TotalAssetsLessCurrentLiabilities	core	num		2026-04-30	1		GBP	102693
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	UKCompaniesHouseRegisteredNumber	bus	text	2025-05-01	2026-04-30				03067144
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	VersionProductionSoftware	bus	text	2025-05-01	2026-04-30				Software
+leatherhead-fc	03067144	mMIdLVK9ky5_HKTav6aoFjP3zJ7_ld03ZNAkRhERzuQ	2026-10-08	2026-04-30	_GoingConcernMaterialUncertainty	derived	text						none found

@@ -1,0 +1,353 @@
+source: Companies House filing, colchester-united-fc__1.pdf
+document: sGsGBXxOhm5pMEqRI-PhsMt82k0m4iioOtAR9ChwXHg
+made_up_date: 2025-06-30
+method: ocr
+pages_read: 12 of 17
+
+a : ' “Registered Number: 02705301 :
+: COLCHESTER UNITED FOOTBALL CLUB LIMITED .
+; : ANNUAL REPORT AND FINANCIAL STATEMENTS - _ ;
+
+, PAGES FOR FILING WITH THE REGISTRAR a
+
+. FOR THE YEAR ENDED 30 JUNE 2025 . :
+
+: . fy fa . :
+. . ze *AEYIKIIT* : ,
+. moe A13 24/03/2026 #289 : .
+vs . . : COMPANIES HOUSE : .
+COLCHESTER UNITED FOOTBALL CLUB LIMITED
+. REGISTERED NUMBER:02705301 : :
+BALANCE SHEET ,
+AS AT 30 JUNE 2025 . , .
+, 2025 2024
+: : Notes £ £
+Fixed assets . .
+Intangible assets : 5 - 101,975
+.. Tangible assets 6 266,943 423,310
+. 266,943 525,285
+Current assets ; :
+Stocks 86,733 68,191 :
+Debtors: amounts falling due after more than
+. one year 7 262,909 366,975
+Debtors: amounts falling due within one year 7 837,063 321,911 :
+: Cash at bank and in hand 8 154,400 219,754
+= 1,341,105 976,831
+Creditors: amounts falling due within one .
+“> year 9 (41,729,699) (37,963,160)
+Net current liabilities , (40,388,594) (36,986,329)
+: Total assets less current liabilities (40,121,651) (36,461,044) ~
+; Provisions for liabilities oo
+: Deferred taxation 10 (38,219) (57,522)
+(38,219) (57,522) ;
+Net liabilities - (40,159,870) (36,518,566)
+Capital and reserves — :
+: Called up share capital 11 3,875,364 ; _ 3,875,364
+Other reserves 12. 1,850,000 1,850,000
+Profit and loss account 12 . (45,885,234) (42,243,930)
+. , (40,159,870) (36,518,566)
+COLCHESTER UNITED FOOTBALL CLUB LIMITED . ;
+. REGISTERED NUMBER:02705301 . Lo .
+BALANCE SHEET (CONTINUED) : . ,
+AS AT 30 JUNE 2025 . mo .
+The financial statements have been prepared in accordance with the provisions applicable to companies subject
+to the small companies regime and in accordance with the provisions of FRS 102 Section 1A - small entities. .
+The. financial statements have been delivered in accordance with the provisions applicable to companies subject
+to the small companies regime. oe : : .
+The:Company has opted not-to file the statement of. comprehensive income in accordance with provisions
+. applicable to companies subject to the small companies’ regime. . : . :
+. The financial statements were approved and authorised for issue by the Board and were signed on its behalf by:
+R ACowling o ;
+, Director .
+: Date: . : .
+[2 Akard) 2o2b © .
+y : + 7 ~
+: -2- .
+COLCHESTER.UNITED FOOTBALL CLUB LIMITED So
+NOTES TO THE FINANCIAL STATEMENTS :
+FOR THE YEAR ENDED 30 JUNE 2025 :
+1. General information : : : a CO,
+Colchester United Football Club Limited {the "Company”) is a private company limited by shares,
+-domiciled and incorporated in England and Wales. The address of the registered office is PO Box CO5 .
+OLX, JobServe Community Stadium United Way, Mile End, Colchester, Essex, United Kingdom, CO4
+5UP. - - . .
+The principal activity of the Company during the year was that of a professional football club.
+2. Accounting policies :
+2.1 Basis of preparation of financial statements : 7
+‘The financial statements have been prepared under the historical cost convention unless otherwise
+specified within these accounting policies and in accordance with FRS 102 'The Financial Reporting
+Standard applicable in the UK and the Republic of Ireland’ and the requirements of the Companies
+. . : Act 2006. The disclosure requirements of Section 1A of FRS 102 have been applied other than
+: where additional disclosure is required to show a true and fair view.
+. . The preparation of financial statements in compliance with FRS 102 requires the use of certain
+critical accounting estimates. It also requires management to exercise judgment in applying the
+Company's accounting policies (see note 3).
+The following principal accounting policies have been applied: :
+. : . -3- : .
+’. COLCHESTER UNITED FOOTBALL CLUB LIMITED .
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025 : .
+‘
+_2. _ -Accounting policies (continued) : .
+2.2 Going concern
+. During the year the Company made a loss of £3,641,304 and as at 30 June 2025 had net liabilities of
+£40,159,870,. which includes amounts due to a fellow group undertakings of £40,177,256.
+Furthermore, as at 30 June 2025, the Company has received confirmation from Aspire Media Group
+1 Limited, the ultimate parent undertaking, that the amounts due to fellow group undertakings will not
+be recalled for the foreseeable future, being a period of at least 12 months from the date of approval
+. of these financial statements. ;
+The Directors have prepared cash flow forecasts, which indicate that the Company will require further
+ve funding in the foreseeable future to fund its trading losses and to meet its liabilities as they fall due. -
+The Company is reliant on financial support from fellow group undertakings. Detailed group cashflow
+forecasts have been prepared by the Directors of Aspire Media Group Limited which indicate that the
+group has the ability to financially support the Company for the foreseeable future, being a period of
+at least 12 months from the date of approval of the financial statements. The Directors of Aspire
+Media Group Limited have also confirmed at the date of approval of these financial statements that it_
+: continues to be their intention to continue to support the Company to enable it to continue to trade
+: and meet its liabilities as they fall due and for a minimum period of twelve months from the date of
+approval of the financial statements.
+, Due to the level of funding required and that the intention of financial support is not legally binding,
+. then there is the existence of a material uncertainty which may cast doubt on the Company's ability to
+continue as a going concern and therefore it may, in the absence of other funding alternatives, be
+. ‘unable to realise its assets and discharge its liabilities in the normal course of business. The directors
+are confident that funding will continue to be provided by fellow group undertakings. and therefore
+have prepared these financial statements on a going concern basis. :
+: The financial statements do not include the adjustments that would result if the Company was unable
+to continue as a going concern but would include writing down the carrying value of assets, including
+providing for further liabilities as they arise. : .
+. x .
+: 4. .
+COLCHESTER UNITED FOOTBALL -CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS ‘ :
+; FOR THE YEAR ENDED 30 JUNE 2025 :
+2. Accounting policies (coritinued) co
+. 2.3 Foreign currency translation ; , .
+Functional and presentation currency - ,
+° The Company's functional and presentational currency is GBP. : .
+Transactions and balances : . ; :
+; Foreign currency transactions are translated into the functional currency using the spot exchange
+rates at the dates of the transactions.
+: At each period end foreign currency monetary items are translated using the closing rate. Non-
+monetary items measured at historical cost are translated using the exchange rate at the date of the’
+* transaction and non-monetary items measured at fair value are measured using the exchange rate
+when fair value was determined. . .
+‘ . Foreign exchange gains and losses resulting from the settlement of transactions and from the
+translation at period-end exchange rates of monetary assets and liabilities denominated in foreign
+: currencies are recognised in profit or loss except when deferred in other comprehensive income as
+qualifying cash flow hedges.
+. Foreign exchange gains and losses that relate to- borrowings and cash and cash equivalents are
+: -presented in the Statement of Comprehensive Income within ‘finance income or costs’. All other
+. foreign exchange gains and losses are presented in profit or loss within ‘other operating income’.
+; 2.4 Turnover. © ; ; ; a
+: ‘Turnover is recognised to the extent that it is probable that the economic benefits will flow to the .
+Company and the turnover can be reliably measured. Turnover is measured as the fair value of the ~
+consideration received or receivable, excluding discounts, rebates, value added tax and other sales
+: taxes. Turnover is recognised as follows: .
+* Match related income is recognised over the period of the football season in accordance with
+. matches played.
+. : ¢ Sponsorship contracts are recognised on a straight-line basis over the duration of the contract. :
+. Catering turnover is recognised on the date the goods and services are supplied to the customer. .
+e Fixed elements of FA and league distributions are pro-rated and recognised in the year relating to.
+the relevant football season to which the distribution relates.
+e Turnover from the sale of branded products is recognised at the point of dispatch when the
+. significant risks have been transferred to the customer.
+2.5 Grants receivable
+Grants are accounted under the accruals model as permitted by FRS 102. Grants of a revenue
+. nature are credited to the profit and loss account in the period to which they relate. .
+-5- :
+COLCHESTER UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS } . a : :
+FOR THE YEAR ENDED 30 JUNE 2025
+, 2. Accounting policies (continued) ;
+, 2.6 Signing-onfees ~ : , . .
+: Signing-on fees are due to players if they are still in the service of the club on future dates specified in
+: - their contracts. They are charged to the profit and loss account in the accounting period in which the
+liability becomes payable. Instalments due in the future, on continued service, are not provided but :
+are noted as contingent liabilities within the notes to the financial statements.
+a . 2.7 Transfer fees
+Transfer fees are recognised in the period in which the registration is signed and any profit or loss
+: arising is dealt within the profit and loss account. Contingent transfer fees are recognised once the
+contingent conditions have been met. Contingent transfer fees payable are disclosed as contingent .
+liabilities. . : .
+: 2.8 Operating leases: the Company as lessee :
+Rentals paid under operating leases are charged to profit or loss on a straight-line basis over the
+: lease term. :
+
+: ’ Benefits received and receivable as an incentive to sign an operating lease are recognised on a
+straight-line basis over the lease term, unless another systematic basis is representative of the time
+pattern of the lessee's benefit from the use of the leased asset.
+
+: 2.9 Interest income :
+Interest income is recognised in profit or loss using the effective interest method.
+2.10 Finance costs .
+
+: Finance costs are charged to profit or loss over the term of the debt using the effective interest
+method so that the amount charged is at a constant rate on the carrying amount. Issue costs are
+initially recognised as a reduction in the proceeds of the associated capital instrument.
+
+: 2.11 Pensions .
+; Defined contribution pension plan ;
+
+The Company operates a defined contribution plan for its employees. A defined contribution plan is a
+pension plan under which the Company pays fixed contributions into a separate entity. Once the
+contributions have been paid the Company has no further payment obligations. .
+
+The contributions are recognised as an expense in profit or loss when they fall due. Amounts not paid
+
+are shown in other creditors as a liability in the Balance Sheet. The assets of the plan are held
+separately from the Company in independently administered funds.
+
+. -6-
+COLCHESTER UNITED FOOTBALL CLUB LIMITED ;
+NOTES TO THE FINANCIAL STATEMENTS , .
+FOR THE YEAR ENDED 30 JUNE 2025 . ,
+: 2. Accounting policies (continued) , : .
+2.12 Current and deferred taxation ,
+The tax expense for the year comprises current and deferred tax. Tax is recognised in profit or loss
+except that a charge attributable to an item of income and expense recognised as other
+comprehensive income or to an item recognised directly in equity is also recognised in other
+comprehensive income or directly in equity respectively.
+
+, The current income tax charge is calculated on the basis of tax rates and laws that have been
+enacted or substantively enacted by the balance sheet date in the countries where the Company
+operates and generates income. . : :
+Deferred tax balances are recognised in respect of all timing differences that have originated but not .
+
+. reversed by the balance sheet date, except that: .
+: . The recognition of deferred tax assets is limited to the extent that it is probable that they will be
+recovered against the reversal of deferred tax liabilities or other future taxable profits; and
+° Any deferred tax balances are reversed if and when all conditions for retaining associated tax
+: allowances have been met. :
+. Deferred tax balances are not recognised in respect of permanent differences except in respect of
+: business combinations, when deferred tax is recognised on the differences between the fair values of
+assets acquired and the future tax deductions available for them and the differences between the fair
+‘ values of liabilities acquired’and the amount that will be assessed for tax. Deferred tax is determined
+: using tax rates and laws that have been enacted or substantively enacted by the balance sheet date. :
+. ' 2.13 Intangible assets , ,
+: intangible assets are initially recognised at cost. After recognition, under the cost model, intangible
+assets are measured at cost less any accumulated amortisation and any accumulated impairment
+. losses. . .
+All intangible assets are considered to have a finite useful life. If a reliable estimate of the useful life
+cannot be made, the useful life shall not exceed ten years. . : ,
+The estimated useful lives range as follows: ~ :
+Player registrations - Over the life of the contract
+, 2.14 Tangible fixed assets
+: ‘Tangible fixed assets under the cost model are stated at historical cost less accumulated
+: depreciation and any accumulated impairment losses. Historical cost includes expenditure that is
+directly attributable to bringing the asset to the location and condition necessary for it to be capable of
+operating in the manner intended by management. :
+. ; . one
+COLCHESTER UNITED FOOTBALL CLUB LIMITED oo
+. NOTES TO THE FINANCIAL STATEMENTS . : a
+FOR THE YEAR ENDED 30 JUNE 2025 . .
+2. Accounting policies (continued) . ,
+2.14 Tangible fixed assets (continued)
+Depreciation is charged so as to allocate the cost of assets less their residual value over their
+estimated useful lives, using the straight-line method.
+_ : Depreciation is provided on the following basis: :
+. : - Tenants alterations - 5 years :
+. Motor vehicles -5years .
+: Fixtures & fittings . ° 3-10 years os
+: The assets’ residual values, useful lives and depreciation methods are reviewed, and adjusted :
+. prospectively if appropriate, or if there is an.indication of a significant change since the last reporting
+date. : . _ .
+, Gains and losses on disposals are determined by comparing the proceeds with the carrying amount
+-and are recognised in profit or loss. : a
+2.15 Stocks , .
+- Stocks are stated at the lower of cost and net realisable value, being the estimated selling price less
+costs to complete and sell. Cost is based on the cost of purchase on a first in, first out basis.
+a : At each balance sheet date, stocks are assessed for impairment. If stock is impaired, the carrying
+. amount is reduced to its selling price less costs to complete and sell. The impairment loss is
+recognised immediately in profit or loss. . :
+2.16 Debtors ,
+: : Short term debtors are measured at transaction price, less any impairment.
+2.17 Cash and cash equivalents
+: Cash is represented by cash in hand and deposits with financial institutions repayable without penalty
+, on notice of not more than 24 hours. Cash equivalents are highly liquid investments that mature in no
+" more than three months from the date of acquisition and that are readily convertible to known
+amounts of cash with insignificant risk of change in value.
+2.18 Creditors : ‘
+Short term creditors are measured at the transaction price. Other financial liabilities are measured °
+. initially at fair value, net of transaction costs, and are measured subsequently at amortised cost using
+the effective interest method.
+t : ‘
+. . . - ~8- . .
+i
+COLCHESTER UNITED FOOTBALL CLUB LIMITED / ;
+NOTES TO THE FINANCIAL STATEMENTS .
+FOR THE YEAR ENDED 30 JUNE 2025
+‘ 2. Accounting policies (continued) . , . ; .
+. 2.19 Provisions for liabilities ; , :
+: Provisions are recognised when an event has taken place that gives rise to a legal or constructive
+obligation, a transfer of economic benefits is probable and a reliable estimate can be made.
+: Provisions are measured as the best estimate of the amount required to settle the obligation, taking
+into account the related risks and uncertainties.
+Increases in provisions are generally charged as an expense to profit or loss. : .
+3. Judgements in applying accounting policies and key sources of estimation uncertainty
+: Preparation of the financial statements requires management to make significant judgements and
+. : : estimates. The items in the financial statements where these judgements and estimates have been made
+include: :
+Useful economic life of tangible fixed assets . ,
+The annual depreciation charge for tangible fixed assets is sensitive to changes in the estimated -useful
+economic lives and residual values of the assets. The useful economic lives and residual values are ~
+reassessed annually. They are amended when necessary to reflect current estimates, based on
+: technological advancement, future investments, economic utilisation and the physical condition of the
+assets. :
+Carrying value of tangible fixed assets ; ; : ; ‘
+The Directors review the tangible fixed assets for indicators of impairment on an annual basis. The
+Directors have concluded that no impairment is required.
+. Going concern . .
+: The key judgement area impacting the financial statements is the Directors' assessment regarding going
+: concern and is discussed in note 2.2. : .
+Recoverability of debtors
+: Amounts receivable from customers are assessed individually, on a regular basis, to determine whether
+they are recoverable of a provision is required. : ; :
+: 4. . Employees
+The average monthly number of employees, including directors, during the year was 332 (2024 - 350). :
+_ COLCHESTER UNITED FOOTBALL CLUB LIMITED :
+NOTES TO THE FINANCIAL STATEMENTS ; : :
+FOR THE YEAR ENDED 30 JUNE 2025 . . : :
+"5. Intangible assets ; ; , a
+. _ , . Player
+: . : . registrations
+7 -° | Cost
+- At 1 July 2024 ; 224,841
+. Additions ; : 40,826
+* Disposals a : / (114,424)
+: ~ At30 June 2025 151,243 |
+Amortisation ; : , : .
+~ At1 July 2024 : . 122,866
+: Charge for the year ; . : 142,801
+On disposals a (114,424)
+At30 June 2025 ; 151,243
+Net book value _ ; ; , :
+At 30 June 2025 : : - .
+- At 30 June 2024 _ "401,975
+. . - 10 - :
+‘COLCHESTER UNITED FOOTBALL CLUB LIMITED 7
+: NOTES TO THE FINANCIAL STATEMENTS : :
+FOR THE YEAR ENDED 30 JUNE 2025 : :
+: 6. Tangible fixed assets :
+: . Tenants . Motor Fixtures &
+. . alterations vehicles fittings “Total
+£ £ £ £
+Cost ‘ , .
+At 1 July 2024 1,611,308 542,936 1,553,295 3,707,539 ,
+Additions . - - 66,380 66,380
+. - Disposals . ooo (192,863) (34,800) (227,663) :
+At 30 June 2025 1,611,308 350,073. 1,584,875 3,546,256 .
+Depreciation . .
+At 1 July 2024 1,600,239 370,894 1,313,096 3,284,229
+Charge for the year ; 4,614 39,942 71,157 115,713
+Disposals . - (116,767) (3,862) (120,629)
+a ~ At 30 June 2025 . 1,604,853 294,069 1,380,391 3,279,313 ;
+Net book value . :
+: * At 30 June 2025 ; 6,455 56,004 204,484 266,943
+, At 30 June 2024 11,069 172,042 240,199 423,310
+: , The cost of fixtures and fittings includes £Nil (2024 - £45,220) of assets under construction which . .
+have not been depreciated.
+The transfer of assets from a group company in the year has been included within additions at net book
+Do value. The value transferred was £41,289 (2024: ENil), and a depreciation charge in the year of £5,279
+. : (2024: £Nil) was incurred. ;
+, M1.
+

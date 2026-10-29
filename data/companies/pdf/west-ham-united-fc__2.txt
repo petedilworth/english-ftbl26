@@ -1,0 +1,410 @@
+source: Companies House filing, west-ham-united-fc__2.pdf
+document: ri8GjIN__irazjj_H6LM7Cpr6M4DD0a6VuZ7l3WhPog
+made_up_date: 2024-05-31
+method: ocr
+pages_read: 12 of 48
+
+Company Registration Number 66516
+WEST HAM UNITED FOOTBALL CLUB LIMITED
+Annual Report and Financial Statements
+For the year ended 31 May 2024
+COMPANIES HOUSE
+WEST HAM UNITED FOOTBALL CLUB LIMITED
+ANNUAL REPORT AND FINANCIAL STATEMENTS
+For the year ended 31 May 2024
+CONTENTS
+Strategic report 3
+. Directors’ report 12
+Independent auditors’ report 23
+Statemerit of Comprehensive Income 27
+Balance Sheet 28
+Statement of Changes in Equity 29
+Notes to the financial statements 30
+2
+STRATEGIC REPORT
+for the year ended 31 May 2024
+The directors present their annual report together with the audited financial statements of West Ham United
+Football Club Limited (“the Company”) for the year ended 31 May 2024.
+Principal Activities
+The principal activity of the Company is that of a professional football club as a member of The FA Premier
+League and the Football Association together with related and ancillary activities.
+Results and Dividends .
+The results of the Company are as set out in the statement of comprehensive income on page 27.
+The shareholders remain focused on the growth and success of West Ham United, and continue to invest in
+the playing squad to ensure the continuation of our long-running presence in the Premier League, which
+remains the principle aim of every season.
+In line with the strategic decision taken when the majority shareholders acquired the Club in 2010 to re-invest
+all surplus funds into the squad and infrastructure,and in keeping with all the years since they took
+ownership, the directors do not propose the payment of a dividend (2023: £nil).
+The balance sheet can be found on page 28 and shows that the total shareholders’ funds have increased from
+31 May 2023 by £61.2m in line with the profit for the year and a surplus on the revaluation of properties.
+Review of the year
+The Club once again made the strategic decision to provide funds to significantly enhance the squad during
+the 2023-24 summer transfer window with five new additions to the squad. This strategy proved to be
+successful as the Club was able to secure its core aim of maintaining our Premier League status for a
+thirteenth consecutive season, which is the longest consistent period the Club has remained in the top flight in
+the modern era and in the Premier League since its inception in 1992. .
+We said farewell to our long-serving manager, David Moyes at the end of the season, and we thank him for
+his efforts over the last four and a half years.
+As part of the Club’s football strategy, and in line with wider changes to the structure of the football
+department, a new Head Coach, Julen Lopetegui, was appointed on 1“ July 2024, with the Board providing
+the support and backing to enable the Club to continue progressing with the aim of getting back into Europe in
+the near future.
+3 .
+STRATEGIC REPORT
+for the year ended 31 May 2024
+(continued)
+Review of the year (continued)
+Turnover at £268.2m was up £32.8m on the previous year, largely due to the improved position in the Premier
+league (9" v 14") and higher European income, due to the relative values of the UEFA Europa Conference
+League (the “UECL”) in which we participated during the comparative period and the UEFA Europa League
+(the “UEL”) in which we participated this season, as well as the inclusion of the UECL prize money for
+succeeding in winning the competition in June 2023.
+As a result of this success, the club qualified straight into the group stages of the UEL, progressing to the
+quarter-final knock out round. 7
+Broadcasting revenue of £167.0m (2023: £147.6m) this year includes UEL income plus recognition of the
+UECL prize money of £1.7m for winning the 2022-23 competition in June 2023, the positional fee awarded
+for finishing 9" in the Premier League and facility fees for having been selected for twenty-one ‘live’ Premier
+League matches. Last year’s broadcasting income included the income from our UEL games and the
+recognition of facility income for attracting twenty one ‘live’ matches and the positional fee.
+Income is up across the board, as the Executive Team capitalized on achieving the club’s goal of participating
+in European competition.
+Match income at £43.8m is £3.5m higher this year, reflecting the higher attendances in the UEL and generally
+higher match by match income driven by the growth of the Ticket Exchange, while maintaining accessible
+prices for supporters.
+Commercial income at £41.2m is higher than last year by £6.7m due to improved partnership income, pre-
+season tour income, and higher corporate income from the UEL campaign.
+Retail income at £16.1m is up £3.2m on last year, a reflection of the ability to hold price and maximizing the
+UEFA Europa League Conference League victory in June and the general enthusiasm when the club was
+participating in European competition and competing well in the Premier League.
+The primary reason for the change from a loss of £17.4m in 2022-2023 to the net profit for the year of
+£58.5m, is the higher profit on sale of players, notably of Academy graduate Declan Rice to Arsenal in July
+2023. Other factors are the increase in turnover as a result of achieving the higher Premier League position
+and higher revenues in the UEL as opposed to the UECL.
+This profit placed the Club in a strong and healthy position to enable substantial investment into the men’s
+first team playing squad during the summer transfer window, following the arrival of new Head Coach Julen :
+Lopetegui.
+This year’s financial results have again been impacted by an increase in implied interest on transfer fees
+payable with extended payment terms. This is driven by a combination of significant investment in the playing
+squad over the past two years, the significant value of transfer fees payable with extended payment terms, the
+current high level of interest rates and the requirement to discount such payments to present value upon initial
+recognition. The implied interest charge of £7.9m (2023:£11.6m) has been offset by a reduction to the annual
+amortisation charge of £7.8m (2023:£6.8m), the net effect being a charge of credit of £0.1m to the
+consolidated statement of comprehensive income.
+The same accounting treatment has been applied to future transfer fees receivable resulting in an implied
+interest credit of £4.6m (2023:£nil) to the consolidated statement of comprehensive income.
+4
+STRATEGIC REPORT
+for the year ended 31 May 2024
+(continued)
+Review of the year (continued)
+The Club continues to optimise its funding and, as a result, took the decision to repay the outstanding £55.0m
+MSD facility in August 2023. The club renewed its £40.0m overdraft facility with Barclays Bank PLC for a
+further year on 17" June 2024, through to 15" July 2025. In addition, the club has accelerated a number of
+future transfer fee receivables (Note 29). .
+On the pitch, the team secured a top ten finish in the Premier League season which culminated in a 9" place
+spot and reached a creditable quarter final place in the UEL. In domestic cup competitions we reached the
+third round of the FA Cup and the quarter-final of the Carabao Cup. In addition, the team won the ECL in
+June 2023 and the prize money is reflected in this set of accounts.
+Future Prospects
+As with all Premier League football clubs, the performance of the men’s first team and the league in which it
+operates remains a future risk. However, strong performances in the 2023-24 season, in both the Premier
+League and UEFA Europa League, followed by the appointment of a highly regarded First Team Coach and
+team of backroom staff, as well as an exciting squad assembled through a combination of new signings in a
+successful summer transfer window and retaining top international talent, has given the Club a sound
+platform. The Football Department benefits from a supportive Board, respected Technical Director and an
+ambitious Head Coach.
+The objective going forward is for the Club to continue to create an environment and mentality built around
+the core values that our supporters cherish — hard work, desire, youth, team spirit, togetherness excitement and
+all for our fans at home and across the world — qualities that underpin our identity on and off the pitch. West
+Ham United are heading into a record 13" consecutive Premier League campaign — as secure and established
+position that the Club has been in during the modern era. We now have a clear opportunity, using the
+“foundation of genuine progress and success in recent years, to continue an upward trajectory.
+The Club will continue to work with its new football structure to build and improve the squad in line with its
+mission and goal to be a London Premier League Club at the heart of its community, challenging for Europe
+for the benefit and enjoyment of its fans both at home and around the globe.
+The loyalty displayed by the Club’s fanbase, indicated by the high level of Season Ticket renewals for the
+2024-25 season, gives us one of the highest numbers of Season Ticket holders in London and the Premier
+League, putting the Club in a strong position as we move forward.
+Despite our recent success, in line with our values and commitment to our community, the Club continues to
+offer the cheapest adult Season Ticket and one of the cheapest junior Season Tickets in the Premier League,
+which is aligned to our objective to make London Stadium accessible to all and to support our local
+community with affordable family football in the heart of the capital.
+5
+WEST HAM UNITED FOOTBALL CLUB LIMITED
+STRATEGIC REPORT
+for the year ended 31 May 2024
+(continued)
+Future Prospects (continued) ‘
+
+: Indeed, since moving to London Stadium, we’ve issued over 35,000 £99 Season Tickets, and for the 2024/25
+season, Under-18 Season Tickets are available from just £109, still currently one of the cheapest junior Season
+Tickets in the Premier League. This means a family of four (two adults and two Under-18s) could attend all
+Premier League home fixtures for £47.78 per match.
+
+The club also runs its ever-popular ‘Kids for a Quid’ initiative, with Under-18 tickets available for just £1.00,
+and adult tickets from just £10.00. This was delivered for two fixtures across the 2023/24 season, which meant
+a family of four could attend a match from just £22.00. Over the course of the last six seasons, noting of
+course that there were no supporters attending matches in the 2020-21 Covid season, we’ve issued an
+incredible 63,210 £1.00 tickets to youngsters at London Stadium, showing the true value, we place on
+attracting fans of the future to our iconic home in East London.
+For West Ham United, the brand and team are its greatest contributors to value, which — along with having
+one of the fastest growing digital footprints in the Premier League — has resulted in it being listed as the 16
+most valuable club in the world in 2023-24 in Forbes’ World’s Most Valuable Soccer Clubs list.
+Principal Risks and Uncertainties
+There are a number of potential matters which could have a material impact on the Club’s long-term
+performance. These are monitored by the Board on a regular basis.
+The Company’s principal business risk remains that of the football club being relegated from the Premier
+League with the serious financial consequences which follow. The Company prepares budgets two seasons in
+advance which include an evaluation of the impact of relegation and associated contingency plans.
+It is a feature of football clubs’ income streams that a significant element is known in advance because of its
+long-term contractual nature. Centrally negotiated broadcast and sponsorship deals are presently in place to at
+least the end of the 2026-27 season. The Company’s own major sponsorship and partnership agreements are
+also in place until the end of seasons 2024-25 and 2025-26 respectively. Season Ticket sales (including
+corporate sales) are made at the start of each season and represent the bulk of the Company’s match day
+revenue. Therefore, in the region of 75% of the Company’s annual turnover will be guaranteed, and in many
+cases received, by 31 July each year.
+To the extent that there are ever any material variances from the budget leading to a liquidity shortfall,
+football clubs have the ability to address any potential liquidity risks through player trading. However, this is
+in extreme circumstances and given the strong measures taken by the Club’s shareholders in raising
+investment when required, and the progress and strong performance of the team in recent seasons, this is not a
+measure West Ham United are expected to require in the short or long term.
+At the London Stadium, the stadium operator holds the annual safety certificate, however we continue to hold
+£500 million of public liability insurance in respect of any one occurrence.
+As a professional football club playing in the English Premier League, West Ham United is regulated by the
+Football Association, the Premier League and UEFA, and therefore operates within their regulatory
+framework which includes the risk of breach of Financial Fair Play rules. The club continues to comply with
+Financial Fair Play (FFP) rules and expects to do so in the future as the new Squad Cost Ratio (SCR) rules are
+introduced in the forthcoming years.
+
+6
+STRATEGIC REPORT
+/ for the year ended 31 May 2024
+(continued)
+Financial Risk Management .
+Financial assets that expose the Company to financial risk consist principally of cash, and trade and other
+debtors. Financial liabilities that expose the Company to financial risk consist principally of trade and other
+creditors. The financial risks associated with these financial instruments are considered minimal.
+The Company is exposed to foreign exchange risks in respect of the purchase or sale of player registrations
+negotiated in foreign currency. In the course of the year just ended, the Company made a loss on foreign
+currency translation of £0.7m (2022-23: £0.6m loss) due to adverse movements in the Euro foreign exchange
+markets at the year-end date.
+The Company places surplus cash with Barclays Bank PLC. The Company performs an ongoing credit
+evaluation of its debtors’ financial condition. The carrying amounts of cash, and trade and other debtors
+represent the maximum credit risk to which the Company is exposed.
+Going Concern
+The Board has prepared and approved forecasts for the current and forthcoming season (through to May
+2026), which capture the period of at least twelve months from the date of approval of these financial
+statements.
+The base forecast has been prepared assuming the club remains in the Premier League for the 2024-25 season.
+This forecast assumes no further player trading, revenues received in line with current commercial agreements
+and other revenues in line with historical achievement. In August 2023 the Company repaid in full the £55.0m —
+long-term financing facility with MSD. The Company agreed a new overdraft facility with Barclays to replace
+the MSD facility which expires in July 2025. The Barclays facility has a maximum limit of £40.0m. This is
+likely to be either extended on a season-by-season basis, or a similar facility entered into for the 2025-26 .
+season.
+The Company is likely to require further funding within the next twelve months, either from third parties or
+from shareholders, but it remains confident that this will be obtained as it has a proven track record of
+securing funding historically.
+Despite the current strong squad, the Board has also considered a severe but plausible scenario as required.
+This scenario includes relegation at the end of the 2024-25 season and includes the adjustments necessary to
+revenues and costs, although the scenario does not include any player trading as this is uncertain. This is
+considered to be the main business risk that warrants scenario analysis.
+In the event the severe but plausible scenario occurs, mitigating actions considered by the Board include the
+factoring of transfer fee receivables, the option of player disposals to generate transfer fee income and wage
+savings, and obtaining additional third party financing.
+Under the base case forecast, the Board has concluded that the Company has sufficient liquidity to continue to
+meet its liabilities as they fall due for a period of at least 12 months from the date of approval of these
+financial statements. This is on the basis of some additional external or shareholder funding, which is
+confidently expected to be obtained. It is also subject to the extension of the existing overdraft facility on the
+same terms as it is currently, as this facility currently expires during the going concern period due to the
+nature of it being in place for one football season at a time. .
+: 7
+STRATEGIC REPORT
+for the year ended 31 May 2024
+(continued)
+Going Concern (continued)
+In the event that the associated mitigating initiatives do not generate the necessary cash flows to allow the
+Company to operate within its secured borrowing limits, certain of the investing owners have undertaken to
+provide what the Board has concluded would be a sufficient level of financial support to allow the Company
+to continue to operate within its borrowing limits and meet its debts as they fall due for at least 12 months
+from the date of approval of these financial statements.
+Consequently, after making enquiries and taking account of the uncertainties described above, the directors
+have a reasonable expectation that the Company has adequate resources to continue in operational existence
+for at least 12 months from the date of approval of these financial statements. Accordingly, the directors
+continue to adopt the going concern basis in preparing the annual report and financial statements.
+Section 172(1) statement
+Section 172(1) of the Companies Act 2006 requires each director of the Company to act in a way in which
+he/she considers, in good faith, would be most likely to promote the success of the Company for the benefit of
+its members as a whole, and in doing so have regard to a range of matters including:
+© The likely consequences of any decision in the long term.
+e The interests of the Company’s employees.
+¢ The need to foster the Company’s business relationship with suppliers, customers and others.
+¢ The impact of the Company’s operations on the community and the environment.
+¢ The desirability of the Company maintaining a reputation for high standards of business conduct; and
+¢ The need to act fairly as between the Company’s members.
+; With respect to this, the Board meets periodically and refers to ongoing strategic plans having regard to the
+following considerations:
+Long term consequences
+e Long term sustainability / viability of business model
+- We continue to invest substantial funds into the playing squad in order to maximise the best
+possible chances of achieving success on the football pitch.
+- The Company’sadherence to UEFA and Premier League Financial Fair Play rules ensures
+sustainable, responsible and transparent spending.
+- | The club continues to comply with the Financial Fair Play (FFP) rules and expects to do so in
+the future as the new Squad Cost Ratio (SCR) rules are introduced in the forthcoming years.
+- Preparation for changes in policy impacting the Company.
+. e Risk appetite and risk management
+- See page 7 for details on the Company’s Financial risk management objectives and policies.
+Interests of employees
+e The health, safety and well-being of our employees is one of our primary considerations. We put great
+emphasis on employee consultation, and actively promote equality, diversity and inclusion - it is a
+Board foobjective to be an Equity leader in the Premier League, and The Premier League has
+recognised
+. 8
+STRATEGIC REPORT
+for the year ended 31 May 2024
+(continued)
+Section 172(1) statement (continued)
+
+West Ham United’s ongoing dedication and commitment to equality, diversity and inclusion (EDI)
+with the PLEDIS Advanced Award — the highest level of accolade in this area -early on in the
+inception of the award and most recently again in 2023 in line with the cycle of assessment. We are
+also fully committed to paying the London Living Wage.
+
+e We are committed to ensuring that male and female employees (excluding First Team football
+operations) are paid equally for equivalent work and release an Annual Gender Pay Gap Report to
+support this.
+
+e¢ In April 2024, the mean gender pay gap, when male first-team players, management and coaches are
+removed, was -2.1%, and for the eighth consecutive year was in favour of women. The figure was
+once again more favourable than the current mean national pay gap at 5.45%. Women make up over
+30% of the whole workforce, and for the second year running, almost half of those are represented in
+the first two quartiles. The Club remains resolute in its ambition to have a 50:50 men / women split in .
+its workforce by 2030.
+
+Interests of other stakeholders (suppliers, customers, others)
+© Fans
+- Fans are the lifeblood of our club and are always foremost in our decision making.
+- We have a Board objective around putting our Fans First in our decision making recognising
+our custodianship .
+
+- Weare proud to have an ever-increasing number of supporters’ clubs around the world.
+Fan Engagement
+Meetings between the Club Board, senior management and supporters’ groups take place throughout the
+season. The meetings focus on strategic matters relating to supporter experience. For the 23-24 season, the
+club had 6 formal meetings with supporters, alongside numerous phone calls, informal meetings, and further
+communication to help support a culture of information sharing. Meetings predominantly focused on
+consultation in relation to the creation of the Club’s Fan Advisory Board, part of our commitment to the
+Premier League’s Fan Engagement Standard. .
+Additional highlights included working with Pride of Irons on the ‘Hammers Pride Bar, launching our new
+Official Supporters Club portal and, after feedback from the Club’s Junior Supporters Board, holding our first
+Junior Hammers matchday takeover.
+The Club works regularly alongside the Premier League, Football Supporters’ Association, Kick It Out, Level
+Playing Field and a number of other supporter focused organisations and causes. Throughout the season, the
+Club and its supporters are also. represented at Safety Advisory Group meetings and Independent Advisory
+Group meetings which are focused on local police matters.
+We aim to give every one of our fans a voice to share their feedback and views, keeping our supporters
+reliably informed with the latest information across our channels and through personal and direct
+communication with all Season Ticket Holders, Claret members and match-by-match attending fans, and a 50-
+strong Supporter Liaison Officer team working at each matchday.
+The Club published a Fan Engagement Plan, available across Club channels, which outlines West Ham
+United’s commitment to fan engagement
+
+9
+STRATEGIC REPORT
+for the year ended 31 May 2024
+(continued)
+Section 172(1) statement (continued)
+e Partners
+- Our commercial partners remain as important to us as ever and we are pleased to have multi-
+; year contracts in place with key partners across a variety of industries.
+© Suppliers
+- We value our suppliers and have long-standing contracts with key suppliers who share our
+core values.
+Impact on the community
+
+© The Company places huge importance on being a pillar of our community at the heart of London on
+which we deliver through a variety of projects. In Spring 2025, we will open our doors to a new state-
+of-the-art facility at Beckton, the home of the West Ham United Foundation, as part of the Club’s
+ongoing investment and commitment to London and our community across East London and beyond.
+
+e The West Ham United Foundation is the Club’s community outreach vehicle, delivering more than
+thirty community projects in East London, Essex and international locations and engaging up to
+50,000 people every year across Health, Community Sport, Football Development and Learning and
+Employability.
+
+. High standards of business conduct :
+
+e The Company is committed to ensuring there is openness in our own business and in our approach to
+tackling modern slavery both within our business and through our supply chains, consistent with our
+disclosure obligations under the Modern Slavery Act 2015.
+
+e The Company is committed to paying the right amount of tax, in the right place, on a timely basis in
+accordance with tax law and practice in the United Kingdom.
+
+10
+STRATEGIC REPORT
+for the year ended 31 May 2024
+(continued)
+
+Key Performance Indicators (“KPI’s”)
+The Company monitors the financial performance of the first team against a range of key performance
+indicators on an annual basis. Although not exhaustive, the table below summarises major KPI’s over the last .
+five years. Although the Company does not set targets to be achieved each season it nevertheless seeks to
+maximise performance, both financial and non-financial, on an annual basis.
+
+2023-24 2022-23 , 2021-22 2020-21 2019-20
+League position gh 14% 7th 6th 16th
+FA Cup 3rd round 5® round Sth round Sth round 4th round
+EFL Cup Quarter final 3" round 5th round 4th round © 3rd round
+UEFA Europa League Quarter final - Semi fina! - -
+UEFA Conf. League : Winners* - - -
+
+Winners*
+Average league gate 62,463 62,459 59,789 568** 59,925
+Wage: turnover ratio 59.3% 57.5% 53.4% 66.9% 93.7%
+Operating profit/(loss) £54.6m £53.3m £71.6m £34.0m (£24.Tm)
+before exceptional items
+& player trading
+*The 2022-23 UEFA Conference League final tie was played in June 2023. Income and costs arising from the fixture will be
+accounted for in the 2023-24 financial statements.
+**Indicates the season played during the COVID-19 pandemic, which saw only two home fixtures played with few spectators
+present, both games at a significantly reduced stadium capacity due to the Government restrictions that were in place at the time.
+On behalf of the board
+
+4 Fr 1 Lett
+Andy Mollett
+Director
+16 December 2024
+11
+, DIRECTORS’ REPORT
+for the year ended 31 May 2024
+Directors
+The directors ‘of the Company who were in office during the year and up to the date of signing the audited
+financial statements of the Company were:
+D Sullivan
+Baroness Brady, CBE
+A Mollett
+J Albert Smith :
+P Horsky
+P Mitka ;
+T Warren
+DKE Sullivan
+JHF Sullivan
+D Cunningham
+V Gold
+AS permitted by the Articles of Association, the directors have the benefit of an indemnity which is a
+qualifying third-party indemnity provision as defined by Section 234 of the Companies Act 2006. The
+indemnity was in force throughout the last financial year and is currently in force. The Company also
+purchased and maintained throughout the financial year Directors’ and Officers’ liability insurance in respect
+of itself and its directors.
+Results and Dividends
+The results of the Company are as set out in the statement of comprehensive income on page 27. The directors
+do not propose the payment of a dividend (2023: £nil).
+Political donations :
+No donations were made to a registered political party or other political organisation in the EU or the UK, or
+any independent elections candidate and no EU political expenditure exceeding £2,000 in aggregate was
+incurred in the financial year (2023: £12,500). :
+12
+

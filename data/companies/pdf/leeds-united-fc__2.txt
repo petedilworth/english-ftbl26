@@ -1,0 +1,456 @@
+source: Companies House filing, leeds-united-fc__2.pdf
+document: cCzUdgtQxcLPLA2OK15SA8dP_8DwTT7FT9VarjdPEtg
+made_up_date: 2024-06-30
+method: ocr
+pages_read: 12 of 34
+
+> > .
+: COMPANY REGISTRATION NUMBER: 06233875
+Leeds United Football Club Limited
+Consolidated Financial Statements
+For the year ended
+30 June 2024
+c9
+a :
+z
+a *ADZBSIKQ*
+A15 28/03/2025 #283
+COMPANIES HOUSE
+‘
+ra
+
+Leeds United Football Club Limited
+
+Financial Statements
+
+Year ended 30 June 2024
+Contents , Page
+Officers and professional advisers 4
+Strategic report 2
+Directors’ report 6
+Independent auditor's reportto the members 10
+Consolidated statement of comprehensive income 13
+Consolidated statement of financial position 14
+Company statement of financial position 15
+Consolidated statement of changes in equity 16
+Company statement of changes in equity 17
+Consolidated statement of cash flows 18
+Notes to the financial statements 19
+»
+Leeds United Football Club Limited
+Officers and Professional Advisers
+The board of directors A Kinnear
+PV Marathe
+PS Lowy
+Mr R Cline-Thomas
+Registered office Elland Road
+Leeds
+LS11 0ES
+Auditor Gibson Booth
+Chartered Accountants & Statutory Auditors
+New Court
+Abbey Road North
+Shepley
+Huddersfield
+HD8 8BJ
+Bankers Barclays Bank ple
+69 Albion Street
+Leeds
+LS1 5AA
+Solicitors : DLA Piper UK LLP ;
+Elshaw House
+51 Carver Street
+Sheffield
+Si 4FT
+4
+: 4 :
+‘
+
+Leeds United Football Club Limited
+Strategic Report
+Year ended 30 June 2024
+Business review and principal activities
+The principal activity of the group during the period was that of professional football club and associated activities.
+The Board's long-term strategy is to establish the Leeds United as a leading, financially sustainable, Premier League club by
+detivering success on the pitch and increasing the scale and engagement of the club's global fan base.
+Season Review
+Following the club's relegation to the Championship at the end of the 2022/23 campaign, minority owners’ 49ers Enterprises
+assumed full control of the Group from Aser Ventures, with Paraag Marathe becoming Chairman. The immediate objectives
+
+: were to stabilise the Group financially and construct a squad which had the capability to make an immediate return to the
+Premier League. .
+The task commenced by securing proven Championship promotion coaching leadership in the appointment of Daniel Farke as
+First Team Manager. Upon relegation the Board planned for the inevitable high squad churn. Tyler Adams and Tyler Roberts
+were sold to AFC Bournemouth and Birmingham City respectively, whilst 11 players left due to their contracts expiring or
+through triggering relegation loan clauses. Ethan Ampadu, Kari Dartow, Ilia Gruev, Glen Kamara and Joel Piroe arrived at the
+Club in permanent transfers, whilst Jaidon Anthony, Joe Rodon and Djed Spence joined on loan. .
+Despite uncertainty around the squad whilst the transfer window remained open, for the first month of the season, the Club lost
+just once in eight games and a subsequent run stretching from the end of October to the beginning of December then saw the
+Club pick up 19 points from a possible 21 available.
+In the January transfer window Djed Spence returned to Tottenham Hotspur, whilst Luke Ayling, Lewis Bate, Darko Gyabi and
+lan Poveda left the Club on loan. Luis Sinisterra was sold to AFC Bournemouth. Connor Roberts arrived at Leeds United in a
+loan deal from Premier League outfit Burnley to strengthen the Club's promotion push.
+At the start of 2024, Farke led Leeds to a 15-match unbeaten run but the Club ended the season with 90 points, a total that
+would normally have secured automatic promotion. Accordingly, the Club entered the Play-Offs and defeated Norwich City in
+the semi-final over two-legs, but suffered a 1-0 defeat against Southampton in the Play-Off Final at Wembley, meaning the Club
+would remain in the Championship for the 2024/25 season. .
+Commercially the Group continued to thrive. BOXT became Principal Partner of the Club. AMT and Flamingo Land were also
+introduced as back of shirt and sleeve sponsors, whilst Premier League partnerships with Cadbury's, Hisense and JD Sports
+were renewed. The Season Ticket waiting list grew above 25,000, ticket and membership sales again broke records as
+supporters continued their unwavering support, whilst the Club also enjoyed a high-profile pre-season fixture against
+Manchester United in Oslo, Norway.
+Principal risks and uncertainties
+The primary risk facing the group remains the divisional status of the First Team due to the impact on key revenue streams,
+however the club is confident that it has built a commercial and player trading model that can optimise the chances of a return to
+the top-flight at the second attempt.
+The Group is exposed to financial risk in the form of exchange rate risk, interest rate risk and cash flow risk. To manage these
+issues then the Group utilises fixed rate borrowing where available, takes steps to mitigate exposure to foreign currency
+exposure on player transactions and closely manages cash flow. Credit checks and other appropriate financial due diligence are
+performed prior to entering new material contracts.
+Commercial risks include the negotiation and pricing of broadcast contracts, ticketing demand and the renewal of commercial
+agreements on similar or improved terms. The Board is in contact regularly throughout the year to monitor these risks whilst the
+day-to-day management of operational risks is delegated to the executive management team.
+
+2
+‘
+
+Leeds United Football Club Limited
+Strategic Report (continued)
+Year ended 30 June 2024
+Key performance indicators
+The performance of the team is monitored by publicly available league tables. In addition, the playing operations are managed
+by squad value growth and player trading metrics.
+The commercial operations of the Group are monitored against detailed budgets and competitive benchmarking to assess the
+business progression and comparative performance. The Club successfully operated within the EFL's Financial Fair Play
+regulations.
+The group saw a decrease in turnover from £190m to £128m driven by a reduction in Central Distributions which fell from .
+£94.1m to £51.0m. This was a direct result of relegation from the Premier League at the end of the 22/23 season. Ticketing
+revenues increased by 2% from £29.9m to £30.7m and merchandise sales grew by 5.8% from £24.0m to £25.4m. Other
+commercial revenue streams comprising mainly sponsorship, advertising and other events decreased by £8.8m falling from
+£18.3m to £9.5m, reflecting the Clubs league status.
+The strong commercial performance continues to illustrate the potential of Leeds United being the only club in the United
+Kingdom's third biggest metropolitan area. This should prove a structural competitive advantage that can be leveraged to
+secure Premier League status over the long term. »
+Simultaneously the Clubs prudent financial management and development of a squad with depth and youth mean that it has the
+capability to sustain a prolonged period in the Championship without altering its long-term trajectory.
+
+, 3
+Leeds United Football Club Limited
+Strategic Report (continued)
+Year ended 30 June 2024 :
+Section 172 Companies Act 2006 statement
+Section 172 (1) of the Companies Act 2006 requires the directors of a company to act in the way they each consider, in good
+faith, would be most likely to promote the success of the Group for the benefit of its members as a whole, and in doing so have
+regard to matters including:
+{a) The likely consequences of any decision in the tong term;
+(b) The interests of the company’s employees;
+(c) The need to foster the company's business relationships with suppliers, customers and others;
+(d) The impact of the company's operations on the community and the environment; .
+(e) The desirability of the company to maintain a reputation for high standards of business conduct; and
+(f) The need to act fairly between the members of the company.
+With respect to this the Board meets regularly to discuss the ongoing strategic direction of the group with specific focus on;
+Long term consequences
+. Consolidating our business model by building the Leeds United brand globally to create revenue streams in partnerships,
+digital and merchandising that make the Group less dependent on matchday income.
+. Developing talent through our youth academy through optimising scouting and coaching whilst creating pathways to the
+First Team that can build a long term technical and financial competitive advantages.
+. Optimising the use of proprietary performance data analytics to create a long term technical competitive advantage.
+. Utilising the stadium to its full advantage through other mass sporting and music events plus leveraging our reputation as
+one of Yorkshire's leading conferencing and banqueting venues remains a core strategy.
+. Working alongside the Leeds United Foundation to promote improving the health and wellbeing of all members of the
+community, both in the city of Leeds and beyond.
+. The Group's adherence to EFLs Financial Fair Play rules ensures sustainable, responsible and transparent spending.
+The interest of employees
+. The working environment is important to the directors both from a health and safety perspective but also in putting
+equality, diversity, inclusion and wellbeing at the heart of its operations. The Group has dedicated members of staff to
+ensure that all employees remain physically and emotionally safe and well and that the diversity of the workforce
+accurately reflects the community that the Group serves.
+. Policies are in place and significant training is undertaken to ensure that the Group has a fair and robust recruitment
+process and that a culture of equality and diversity is maintained.
+. There is an ongoing review process to ensure that the gender pay gap is addressed and that equal pay is applied fairly
+and consistently.
+The interest of other stakeholders
+. Fans: Leeds United is built on it's supporter base and every decision made by the club has supporters at its core. We are
+proud of our flourishing Supporters Advisory Board and our growing number of international supporters clubs which meet
+regularly with members of the board to shape the direction of the club and discuss key issues affecting fans
+. ,Partners: our table of commercial partners continues to grow and are key to building the financial sustainability of the club
+and facilitating the growth of the fan base
+* Suppliers: we view are suppliers as partners and ensure they not only deliver competitive value to the business but also
+share our core values
+The Community
+The financial year ending June 2024 for the Leeds United Foundation has been a period of growth, with the charity
+outperforming both its budget and prior year results in terms of turnover, operating profit and overall financial contribution. Whilst
+there were some increases in staffing and administrative expenses, the Foundation's overall financial health remained strong,
+with an income increase of 9% and a contribution increase of 12.5% compared to previous year.
+In turn the Foundation increased its activity across our three key areas: Participation, Education and Health and Wellbeing,
+expanding our outreach and engagement particularly within local communities and underrepresented groups. We delivered
+positive outcomes for circa 70,000 participants and developed new sustainable programmes and partnerships, setting the stage
+for future growth into 2025. :
+The following sets out some of the highlights and metrics achieved during the year against our three areas of work:
+Participation:
+We engaged 10,237 participants across our programmes, delivering 50 soccer schools, 36 grassroots clubs and 26 soccer
+camps. We held 7 skill centres per week and expanded the Skill Centre outreach in Wakefield and Leeds.
+In our women's football pathway, highlights included working with 20 elite players and 500 girls involved in the "Go-Ahead”
+programme, progressing 6 players to the Girls Academy and 2 to Leeds United Women and being awarded an outstanding
+4
+Leeds United Football Club Limited
+Strategic Report (continued)
+Year ended 30 June 2024
+rating in the FA audit for the Emerging Talent Centre.
+Our Active Through Football programme went from strength to strength with 626 participants engaged in 30 weekly sessions.
+We delivered 135 football boots and kits via donation schemes and had 297 participants involved in the refugee world cup. As
+part of this programme, we delivered our second Iftar event at Elland Road, welcoming 300 guests.
+Education:
+In our Educational work, we engaged over 25,000 primary school children in 74 partner schools across the region. We delivered
+126 educational activations,11,000 face-to-face sessions and 238 targeted interventions, including health, self-esteem, and
+racism workshops and engaged over 660 children through our Network Rail safety assemblies. Our Primary Stars programme
+continued to be successful engaging 7,444 children from 192 primary schools across Leeds.
+In our secondary education work we reached 2,598 participants across 12 schools, with 459 targeted interventions and focused
+on engaging disabled participants and girls, reaching 320 and 383 respectively. In addition, we delivered 39 Positive Choices
+session working with over 10,000 students.
+Health and Wellbeing .
+6,634 participants engaged in veteran, dementia, and health-focused sessions and we delivered mental health workshops in
+partnership with NHS and Yorkshire Sport.
+In our disability work we expanded our Ability Counts programme, engaging 4 teams, 10 schools, and delivering 13 holiday
+courses and focused on progression pathways for disabled football players, including new funding to support more sessions.
+Equality and Diversity
+Ensuring equality, diversity and inclusion are at the heart of Leeds United is a strategic priority. We endeavour to ensure that all
+stakeholders of the Club fee! an equal sense of belonging in a manner which is fair and free from discrimination.
+Some key initiatives from 2023-24 were;
+. A Disability Advisory Group was set up, comprising of members of the public representing a wide range of disabilities.
+They have consulted on the Club's Access Statement and matchday access issues.
+. The Club launched its first season ticket holder survey held to assess diversity of fans gaining 4,840 responses.
+. Extensive training was delivered to staff in EDI awareness, disability awareness and fanguage and correct terminology.
+Safeguarding
+. A Vulnerable Customer Policy has been developed, under FCA guidance, to provide best in class customer service.
+. First team safeguarding training was rolled out to increase their awareness and ability to identify and report concerns.
+° Paul Stewart has visited and trained Academy and senior staff in safeguarding and his own lived experiences.
+High standards
+. The group is committed to paying the right amount of tax, in the right place and on a timely basis in accordance with tax
+laws.
+. The group is committed to ensuring there is transparency in our business and in our approach to tackling modern slavery
+within both our business and our supply chains.
+Act fairly between members
+. The Board contains a mixture of representation "gp bg ngigny investors combined with the Chief Executive Officer.
+ec
+This report was approved by the board of directors ON ou... ANd signed On behalf of the board by:
+Angus Kinnear (Dec 23, 2024, 2:45pm)
+A Kinnear
+Director
+Registered office:
+Elland Road
+Leeds
+S11 OES
+5
+Leeds United Football Club Limited
+Directors’ Report
+Year ended 30 June 2024
+The directors present their report and the financial statements of the group for the year ended 30 June 2024.
+Directors
+The directors who served the company during the year were as follows:
+A Kinnear
+P V Marathe
+PSLow .
+Mr R Cline-Thomas (Appointed 25 September 2023)
+A Radrizzani (Resigned 25 September 2023)
+M Marinelli (Resigned 25 September 2023)
+S Mencucci (Resigned 25 September 2023)
+Mr R Cline Thomas resigned as a director on 23 July 2024. E Schneur and A N Schwartzberg were appointed on 23 July 2024.
+Dividends
+The directors do not recommend the payment of a dividend. .
+6
+Leeds United Football Club Limited :
+Directors’ Report (continued)
+Year ended 30 June 2024
+Greenhouse gas emissions and energy consumption
+For the purposes of the Companies (Directors' Report), the group is a large and is required to report on its UK energy use and
+the associated greenhouse gas emissions.
+Emissions in tonnes
+2023-24 2022-23
+Electricity 1,191 1,317
+Gas 854 832
+Transport fuels 185 74
+Gross annual total 2,230 2,223
+Total consumption in kWh 10,264,474 (2023: 10,744,387).
+Emissions in tonnes
+2023-24 2022-23
+Per £000,000 of revenue 17 12
+Per number of employees 1 1
+Method of Calculation for Emissions
+Our energy data has been calculated by energy consultants using the information taken from our detailed monthly consumption
+statements.
+Principal measures taken to increase energy efficiency
+The group recognises its responsibility to proactively limit its impact on the environment and reduce its carbon footprint,
+In March 2023, we established our environmental policy which aims to improve the Club's environmental footprint, including the
+organising of events and management of facilities. Environmental policy, activities and objectives are centrally managed by the
+Facilities Team, in coordination with nominated champions and responsible persons across the club, with senior management
+holding overall accountability.
+Our ongoing environmental activities continue to build upon our progress in recent years, including across energy efficiency,
+single-use plastics, waste management, low-carbon food and biodiversity.
+Recent highlights include:
+. The club has been supplied by 100% renewable energy since June 2023.
+. Energy usage at the stadium and academy is intelligently controlled, with a systematic LED lighting upgrade and energy
+efficiency programme in place.
+. Several large gas kitchen appliances were upgraded to electric ‘A’ Rated, reducing natural gas consumption along with
+the carcinogens produced when using gas fired appliances.
+. Following the implementation of the Building Management System the Group are now able to control heating and
+ventilation instantly and remotely across all areas of the stadium and training ground.
+. Completion of Energy Savings Opportunity Scheme Regulations Phase 3 report.
+. All waste is segregated and sorted off-site for recycling and processing, with residual waste used to generate energy.
+. The cups used at Elland Road are either made from paper or are reusable plastic cups which are washed for reuse.
+. Locally sourced, vegetarian and vegan food options available on the Elland Road concourse.
+. Remedial works undertaken at the training ground on the Thorp Arch Pond to increase rainfall capacity integrated
+. biodiversity improvements.
+. Participation in the relaunched EFL Green Clubs scheme for 2024/25
+Employment of disabled persons
+Applications for employment by disabled persons are always fully considered. In event of members of staff becoming disabled,
+every opportunity is made to ensure their employment with the company continues and that appropriate training is arranged. It is
+the policy of the company that the training, career development and promotion of disabled persons should, as far as possible,
+be identical to that of other employees.
+7
+Leeds United Football Club Limited
+
+Directors' Report (continued) .
+Year ended 30 June 2024 ~
+
+Employee involvement
+
+The company's employment policies are designed to attract, retain and motivate the best people. The company involves
+employees at all levels of the organisation through a broad base of regular communication, meetings and briefing sessions to
+understand current performance and communicate future developments.
+
+Employee engagement
+
+The health and safety of our employees is a primary focus and ensuring that each employee, to the extent that they are able, is
+fully able to work remotely has been successfully implemented. The working environment is important to the directors both from
+a health and safety perspective and a holistic one. The club has dedicated members of staff to ensure that all employees remain
+physically and emotionally safe and well.
+
+Policies are in place and significant training is undertaken to ensure that the club has a fair and robust recruitment process and
+that a culture of equality and diversity is maintained. There is an ongoing review process to ensure that the gender pay gap is
+addressed and that equal pay is applied fairly and consistently.
+
+Financial instruments
+
+The company's financial instruments comprise of borrowings such as secured and unsecured loans and advanced receipts in
+respect of the ordinary activities of the club, cash and liquid resources, finance leases and various other items such as trade
+debtors and trade creditors that also arise directly from its operations.
+
+Financial risk management and exposure to risk
+
+In order to minimise financial risk, the directors of the company have taken the decision not to engage in trades of a speculative
+nature. At the year end the company had no foreign currency exposure. Other risks and uncertainties may arise dependent on
+the performance of the football team.
+
+Cash flow
+
+The company continues to ensure that cash flows are closely monitored on a daily basis and reviews its overall financial
+requirements on an annual basis. This policy will be maintained for the foreseeable future.
+
+Qualifying indemnity provision
+
+The Company has granted an indemnity to its directors against liability in respect of proceedings brought by third parties,
+subject to the conditions set out in the Companies Act 2006. Such qualifying third party indemnity provision remains in force as
+at the date of approving the directors’ report.
+
+Disclosure of information in the strategic report
+
+Details about future developments are included in the strategic report. .
+Directors’ responsibilities statement
+
+The directors are responsible for preparing the strategic report, directors' report and the financial statements in accordance with
+applicable law and regulations.
+
+Company law requires the directors to prepare financial statements for each financial year. Under that law the directors have
+elected to prepare the financial statements in accordance with United Kingdom Generally Accepted Accounting Practice (United
+Kingdom Accounting Standards and applicable law). Under company law the directors must not approve the financial
+statements unless they are satisfied that they give a true and fair view of the state of affairs of the group and the company and
+the profit or loss of the group for that period.
+
+In preparing these financial statements, the directors are required to: -
+
+. select suitable accounting policies and then apply them consistently;
+
+e make judgments and accounting estimates that are reasonable and prudent;
+
+. state whether applicable UK Accounting Standards have been followed, subject to any material departures disclosed and
+
+explained in the financial statements;
+. prepare the financial statements on the going concern basis unless it is inappropriate to presume that the company will
+continue in business.
+The directors are responsible for keeping adequate accounting records that are sufficient to show and explain the company's
+transactions and disclose with reasonable accuracy at any time the financial position of the company and enable them to ensure
+that the financial statements comply with the Companies Act 2006. They are also responsible for safeguarding the assets of the
+company and hence for taking reasonable steps for the prevention and detection of fraud and other irregularities.
+. 8
+Leeds United Football Club Limited
+Directors’ Report (continued)
+Year ended 30 June 2024
+Auditor ,
+Each of the persons who is a director at the date of approval of this report confirms that:
+. so far as they are aware, there is no relevant audit information of which the group and the company's auditor is unaware;
+and
+. they have taken all steps that they ought to have taken as a director to make themselves aware of any relevant audit
+information and to establish that the group and the. MP auditor is aware of that information.
+23 Dec 2024
+This report was approved by the board of directors ON ..............040+.. and signed on behalf of the board by:
+Angus Kinnear (Dec 23, 2024, 2:45pm)
+A Kinnear
+Director
+Registered office:
+Elland Road
+Leeds
+LS11 0ES
+9
+Leeds United Football Club Limited
+Independent Auditor's Report to the Members of Leeds United Football Club Limited
+; “Year ended 30 June 2024
+Opinion
+We have audited the financial statements of Leeds United Football Club Limited (the ‘parent company’) and its subsidiaries (the
+‘group') for the year ended 30 June 2024 which comprise the consolidated statement of comprehensive income, consolidated
+statement of financial position, company statement of financial position, consolidated statement of changes in equity, company
+statement of changes in equity, consolidated statement of cash flows and the related notes, including a summary of significant
+accounting policies. The financial reporting framework that has been applied in their preparation is applicable law and United
+Kingdom Accounting Standards, including FRS 102 The Financial Reporting Standard applicable in the UK and Republic of
+Ireland (United Kingdom Generally Accepted Accounting Practice).
+{n our opinion the financial statements:
+. give a true and fair view of the state of the group's and of the parent company's affairs as at 30 June 2024 and of the
+group's loss for the year then ended;
+. have been properly prepared in accordance with United Kingdom Generally Accepted Accounting Practice;
+. have been prepared in accordance with the requirements of the Companies Act 2006.
+Basis for opinion
+We conducted our audit in accordance with International Standards on Auditing (UK) (ISAs (UK)) and applicable law. Our
+responsibilities under those standards are further described in the auditor's responsibilities for the audit of the financial
+statements section of our report. We are independent of the group in accordance with the ethical requirements that are relevant
+to our audit of the financial statements in the UK, including the FRC’s Ethical Standard, and we have fulfilled our other ethical
+responsibilities in accordance with these requirements. We believe that the audit evidence we have obtained is sufficient and
+appropriate to provide a basis for our opinion.
+Conclusions relating to going concern
+In auditing the financial statements, we have concluded that the directors’ use of the going concern basis of accounting in the
+preparation of the financial statements is appropriate.
+Based on the work we have performed, we have not identified any material uncertainties relating to events or conditions that,
+individually or collectively, may cast significant doubt on the group's or the parent company's ability to continue as a going
+concern for a period of at least twelve months from when the financial statements are authorised for issue.
+Our responsibilities and the responsibilities of the directors with respect to going concern are described in the relevant sections
+of this report.
+Other information
+The other information comprises the information included in the annual report, other than the financial statements and our
+auditor's report thereon. The directors are responsible for the other information. Our opinion on the financial statements does
+not cover the other information and, except to the extent otherwise explicitly stated in our report, we do not express any form of
+assurance conclusion thereon.
+In connection with our audit of the financial statements, our responsibility is to read the other information and, in doing so,
+consider whether the other information is materially inconsistent with the financial statements or our knowledge obtained in the
+audit or otherwise appears to be materially misstated. If we identify such material inconsistencies or apparent material
+misstatements, we are required to determine whether there is a material misstatement in the financial statements or a material
+misstatement of the other information. If, based on the work we have performed, we conclude that there is a material
+misstatement of this other information, we are required to report that fact.
+We have nothing to report in this regard.
+Opinions on other matters prescribed by the Companies Act 2006
+In our opinion, based on the work undertaken in the course of the audit:
+. the information given in the strategic report and the directors’ report for the financial year for which the financial
+statements are prepared is consistent with the financial statements; and
+
+. the strategic report and the directors’ report have been prepared in accordance with applicable legal requirements.
+
+: 10
+

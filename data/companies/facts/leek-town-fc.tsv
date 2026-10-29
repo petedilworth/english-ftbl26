@@ -1,0 +1,125 @@
+club_id	company_number	document	filing_date	made_up_date	concept	prefix	kind	period_start	period_end	instant	dimensions	unit	value
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	AccountingStandardsApplied	uk-bus	text	2024-07-01	2025-06-30		AccountingStandardsDimension=Micro-entities		
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	AccountsStatusAuditedOrUnaudited	uk-bus	text	2024-07-01	2025-06-30		AccountsStatusDimension=AuditExempt-NoAccountantsReport		
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	AccountsType	uk-bus	text	2024-07-01	2025-06-30		AccountsTypeDimension=FullAccounts		
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	AccruedLiabilitiesNotExpressedWithinCreditorsSubtotal	core	num		2024-06-30	1		GBP	0
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	AccruedLiabilitiesNotExpressedWithinCreditorsSubtotal	core	num		2025-06-30	1		GBP	0
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	AddressLine2	uk-bus	text	2024-07-01	2025-06-30		EntityContactTypeDimension=RegisteredOffice		Harrison Park
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	AddressLine3	uk-bus	text	2024-07-01	2025-06-30		EntityContactTypeDimension=RegisteredOffice		Macclesfield Road
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	AverageNumberEmployeesDuringPeriod	core	num	2024-07-01	2025-06-30			GBP	10
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	BalanceSheetDate	uk-bus	text		2025-06-30	1			30 June 2025
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	BalanceSheetDate	uk-bus	text		2025-06-30	1			30.6.25
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	CalledUpShareCapitalNotPaidNotExpressedAsCurrentAsset	core	num		2024-06-30	1		GBP	0
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	CalledUpShareCapitalNotPaidNotExpressedAsCurrentAsset	core	num		2025-06-30	1		GBP	0
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	CountryFormationOrIncorporation	uk-bus	text	2024-07-01	2025-06-30		CountriesRegionsDimension=EnglandWales		
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	CountyRegion	uk-bus	text	2024-07-01	2025-06-30		EntityContactTypeDimension=RegisteredOffice		Staffordshire
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	Creditors	core	num		2024-06-30	1	MaturitiesOrExpirationPeriodsDimension=AfterOneYear	GBP	683255
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	Creditors	core	num		2024-06-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	63173
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	Creditors	core	num		2025-06-30	1	MaturitiesOrExpirationPeriodsDimension=AfterOneYear	GBP	621254
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	Creditors	core	num		2025-06-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	105022
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	CurrentAssets	core	num		2024-06-30	1		GBP	93089
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	CurrentAssets	core	num		2025-06-30	1		GBP	26785
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	DateAuthorisationFinancialStatementsForIssue	core	text		2025-06-30	1			3 March 2026
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	DescriptionBodyAuthorisingFinancialStatements	core	text	2024-07-01	2025-06-30				Board of Directors
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	DescriptionPrincipalActivities	uk-bus	text	2024-07-01	2025-06-30				No description of principal activity
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	DirectorSigningFinancialStatements	core	text	2024-07-01	2025-06-30		EntityOfficersDimension=Director1		
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	EndDateForPeriodCoveredByReport	uk-bus	text		2025-06-30	1			30.6.25
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	EntityCurrentLegalOrRegisteredName	uk-bus	text	2024-07-01	2025-06-30				LEEK TOWN FOOTBALL CLUB LIMITED
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	EntityDormantTruefalse	uk-bus	text	2024-07-01	2025-06-30				false
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	EntityTradingStatus	uk-bus	text	2024-07-01	2025-06-30				
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	Equity	core	num		2024-06-30	1		GBP	-90608
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	Equity	core	num		2025-06-30	1		GBP	-149917
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	FixedAssets	core	num		2024-06-30	1		GBP	562731
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	FixedAssets	core	num		2025-06-30	1		GBP	549574
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	GeneralDescriptionAnyOff-balanceSheetArrangementsIncludingNaturePurposeFinancialImpactOnEntity	core	text	2024-07-01	2025-06-30				No
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	LegalFormEntity	uk-bus	text	2024-07-01	2025-06-30		LegalFormEntityDimension=PrivateLimitedCompanyLtd		
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	NameEntityOfficer	uk-bus	text	2024-07-01	2025-06-30		EntityOfficersDimension=Director1		Jonathan Eeles
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	NameProductionSoftware	uk-bus	text	2024-07-01	2025-06-30				Company Accounts and Tax Online
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	NetAssetsLiabilities	core	num		2024-06-30	1		GBP	-90608
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	NetAssetsLiabilities	core	num		2025-06-30	1		GBP	-149917
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	NetCurrentAssetsLiabilities	core	num		2024-06-30	1		GBP	29916
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	NetCurrentAssetsLiabilities	core	num		2025-06-30	1		GBP	-78237
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	PostalCodeZip	uk-bus	text	2024-07-01	2025-06-30		EntityContactTypeDimension=RegisteredOffice		ST13 8LD
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	PrepaymentsAccruedIncomeNotExpressedWithinCurrentAssetSubtotal	core	num		2024-06-30	1		GBP	0
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	PrepaymentsAccruedIncomeNotExpressedWithinCurrentAssetSubtotal	core	num		2025-06-30	1		GBP	0
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	PrincipalCurrencyUsedInBusinessReport	uk-bus	text	2024-07-01	2025-06-30		CurrenciesDimension=PoundSterling		
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	PrincipalLocation-CityOrTown	uk-bus	text	2024-07-01	2025-06-30		EntityContactTypeDimension=RegisteredOffice		Leek
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	ProvisionsForLiabilitiesBalanceSheetSubtotal	core	num		2024-06-30	1		GBP	0
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	ProvisionsForLiabilitiesBalanceSheetSubtotal	core	num		2025-06-30	1		GBP	0
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	ReportTitle	uk-bus	text	2024-07-01	2025-06-30				Unaudited micro entity accounts for the year ended 30 June 2025
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	StartDateForPeriodCoveredByReport	uk-bus	text		2025-06-30	1			1.7.24
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime	direp	text	2024-07-01	2025-06-30				These accounts have been prepared and delivered in accordance with the provisions of the small companies regime applicable to micro-entities.
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies	direp	text	2024-07-01	2025-06-30				For the year ending 30 June 2025 the company was entitled to exemption under section 477 of the Companies Act 2006 relating to small companies.
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct	direp	text	2024-07-01	2025-06-30				The directors acknowledge their responsibilities for complying with the requirements of the Act with respect to accounting records and the preparation of accounts.
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit	direp	text	2024-07-01	2025-06-30				The members have not required the company to obtain an audit in accordance with section 476 of the Companies Act 2006.
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	TotalAssetsLessCurrentLiabilities	core	num		2024-06-30	1		GBP	592647
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	TotalAssetsLessCurrentLiabilities	core	num		2025-06-30	1		GBP	471337
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	UKCompaniesHouseRegisteredNumber	uk-bus	text	2024-07-01	2025-06-30				01297305
+leek-town-fc	01297305	4ckH2QQ4i-jdycupREdHk6tjy34eMAhfKyFnYsq-UsA	2026-03-09	2025-06-30	_GoingConcernMaterialUncertainty	derived	text						none found
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	AccountingStandardsApplied	uk-bus	text	2023-07-01	2024-06-30		AccountingStandardsDimension=Micro-entities		
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	AccountsStatusAuditedOrUnaudited	uk-bus	text	2023-07-01	2024-06-30		AccountsStatusDimension=AuditExempt-NoAccountantsReport		
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	AccountsType	uk-bus	text	2023-07-01	2024-06-30		AccountsTypeDimension=FullAccounts		
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	AccruedLiabilitiesNotExpressedWithinCreditorsSubtotal	core	num		2023-06-30	1		GBP	0
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	AccruedLiabilitiesNotExpressedWithinCreditorsSubtotal	core	num		2024-06-30	1		GBP	0
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	AddressLine2	uk-bus	text	2023-07-01	2024-06-30		EntityContactTypeDimension=RegisteredOffice		Harrison Park
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	AddressLine3	uk-bus	text	2023-07-01	2024-06-30		EntityContactTypeDimension=RegisteredOffice		Macclesfield Road
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	AverageNumberEmployeesDuringPeriod	core	num	2023-07-01	2024-06-30			GBP	10
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	BalanceSheetDate	uk-bus	text		2024-06-30	1			30 June 2024
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	BalanceSheetDate	uk-bus	text		2024-06-30	1			30.6.24
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	CalledUpShareCapitalNotPaidNotExpressedAsCurrentAsset	core	num		2023-06-30	1		GBP	0
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	CalledUpShareCapitalNotPaidNotExpressedAsCurrentAsset	core	num		2024-06-30	1		GBP	0
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	CountryFormationOrIncorporation	uk-bus	text	2023-07-01	2024-06-30		CountriesRegionsDimension=EnglandWales		
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	CountyRegion	uk-bus	text	2023-07-01	2024-06-30		EntityContactTypeDimension=RegisteredOffice		Staffordshire
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	Creditors	core	num		2023-06-30	1	MaturitiesOrExpirationPeriodsDimension=AfterOneYear	GBP	736572
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	Creditors	core	num		2023-06-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	96622
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	Creditors	core	num		2024-06-30	1	MaturitiesOrExpirationPeriodsDimension=AfterOneYear	GBP	683255
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	Creditors	core	num		2024-06-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	63173
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	CurrentAssets	core	num		2023-06-30	1		GBP	29657
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	CurrentAssets	core	num		2024-06-30	1		GBP	93089
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	DateAuthorisationFinancialStatementsForIssue	core	text		2024-06-30	1			4 March 2025
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	DescriptionBodyAuthorisingFinancialStatements	core	text	2023-07-01	2024-06-30				Board of Directors
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	DescriptionPrincipalActivities	uk-bus	text	2023-07-01	2024-06-30				No description of principal activity
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	DirectorSigningDirectorsReport	direp	text	2023-07-01	2024-06-30		EntityOfficersDimension=Director1		
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	DirectorSigningFinancialStatements	core	text	2023-07-01	2024-06-30		EntityOfficersDimension=Director1		
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	EndDateForPeriodCoveredByReport	uk-bus	text		2024-06-30	1			30.6.24
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	EntityCurrentLegalOrRegisteredName	uk-bus	text	2023-07-01	2024-06-30				LEEK TOWN FOOTBALL CLUB LIMITED
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	EntityDormantTruefalse	uk-bus	text	2023-07-01	2024-06-30				false
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	EntityTradingStatus	uk-bus	text	2023-07-01	2024-06-30				
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	Equity	core	num		2023-06-30	1		GBP	-198821
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	Equity	core	num		2024-06-30	1		GBP	-90608
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	FixedAssets	core	num		2023-06-30	1		GBP	604716
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	FixedAssets	core	num		2024-06-30	1		GBP	562731
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	GeneralDescriptionAnyOff-balanceSheetArrangementsIncludingNaturePurposeFinancialImpactOnEntity	core	text	2023-07-01	2024-06-30				No
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	LegalFormEntity	uk-bus	text	2023-07-01	2024-06-30		LegalFormEntityDimension=PrivateLimitedCompanyLtd		
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	NameEntityOfficer	uk-bus	text	2023-07-01	2024-06-30		EntityOfficersDimension=CompanySecretary1		Thomas Eeles
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	NameEntityOfficer	uk-bus	text	2023-07-01	2024-06-30		EntityOfficersDimension=Director1		Jonathan Eeles
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	NameEntityOfficer	uk-bus	text	2023-07-01	2024-06-30		EntityOfficersDimension=Director2		John Paul Bateman
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	NameEntityOfficer	uk-bus	text	2023-07-01	2024-06-30		EntityOfficersDimension=Director3		Gavin Bateman
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	NameEntityOfficer	uk-bus	text	2023-07-01	2024-06-30		EntityOfficersDimension=Director4		Neil Baker
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	NameEntityOfficer	uk-bus	text	2023-07-01	2024-06-30		EntityOfficersDimension=Director5		Georgina Chandler
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	NameEntityOfficer	uk-bus	text	2023-07-01	2024-06-30		EntityOfficersDimension=Director6		Simon Knight
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	NameEntityOfficer	uk-bus	text	2023-07-01	2024-06-30		EntityOfficersDimension=Director7		Steven Norris
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	NameEntityOfficer	uk-bus	text	2023-07-01	2024-06-30		EntityOfficersDimension=Director8		Tracy Reynolds
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	NameEntityOfficer	uk-bus	text	2023-07-01	2024-06-30		EntityOfficersDimension=Director9		Ian Smith
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	NameProductionSoftware	uk-bus	text	2023-07-01	2024-06-30				Company Accounts and Tax Online
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	NetAssetsLiabilities	core	num		2023-06-30	1		GBP	-198821
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	NetAssetsLiabilities	core	num		2024-06-30	1		GBP	-90608
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	NetCurrentAssetsLiabilities	core	num		2023-06-30	1		GBP	-66965
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	NetCurrentAssetsLiabilities	core	num		2024-06-30	1		GBP	29916
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	PostalCodeZip	uk-bus	text	2023-07-01	2024-06-30		EntityContactTypeDimension=RegisteredOffice		ST13 8LD
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	PrepaymentsAccruedIncomeNotExpressedWithinCurrentAssetSubtotal	core	num		2023-06-30	1		GBP	0
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	PrepaymentsAccruedIncomeNotExpressedWithinCurrentAssetSubtotal	core	num		2024-06-30	1		GBP	0
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	PrincipalCurrencyUsedInBusinessReport	uk-bus	text	2023-07-01	2024-06-30		CurrenciesDimension=PoundSterling		
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	PrincipalLocation-CityOrTown	uk-bus	text	2023-07-01	2024-06-30		EntityContactTypeDimension=RegisteredOffice		Leek
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	ProvisionsForLiabilitiesBalanceSheetSubtotal	core	num		2023-06-30	1		GBP	0
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	ProvisionsForLiabilitiesBalanceSheetSubtotal	core	num		2024-06-30	1		GBP	0
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	ReportTitle	uk-bus	text	2023-07-01	2024-06-30				Unaudited micro entity accounts for the year ended 30 June 2024
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	StartDateForPeriodCoveredByReport	uk-bus	text		2024-06-30	1			1.7.23
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime	direp	text	2023-07-01	2024-06-30				These accounts have been prepared and delivered in accordance with the provisions of the small companies regime applicable to micro-entities.
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies	direp	text	2023-07-01	2024-06-30				For the year ending 30 June 2024 the company was entitled to exemption under section 477 of the Companies Act 2006 relating to small companies.
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct	direp	text	2023-07-01	2024-06-30				The directors acknowledge their responsibilities for complying with the requirements of the Act with respect to accounting records and the preparation of accounts.
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit	direp	text	2023-07-01	2024-06-30				The members have not required the company to obtain an audit in accordance with section 476 of the Companies Act 2006.
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	TotalAssetsLessCurrentLiabilities	core	num		2023-06-30	1		GBP	537751
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	TotalAssetsLessCurrentLiabilities	core	num		2024-06-30	1		GBP	592647
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	UKCompaniesHouseRegisteredNumber	uk-bus	text	2023-07-01	2024-06-30				01297305
+leek-town-fc	01297305	Y30QxJAV4CbFCE4GRhVhKZviJZ_dO6Bwxq23VadoXE4	2025-03-04	2024-06-30	_GoingConcernMaterialUncertainty	derived	text						none found

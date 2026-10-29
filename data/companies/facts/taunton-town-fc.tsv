@@ -1,0 +1,160 @@
+club_id	company_number	document	filing_date	made_up_date	concept	prefix	kind	period_start	period_end	instant	dimensions	unit	value
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	AccountingStandardsApplied	uk-bus	text	2024-06-01	2025-05-31		AccountingStandardsDimension=FRS102		
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	AccountsStatusAuditedOrUnaudited	uk-bus	text	2024-06-01	2025-05-31		AccountsStatusDimension=AuditExempt-NoAccountantsReport		
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	AccountsType	uk-bus	text	2024-06-01	2025-05-31		AccountsTypeDimension=FullAccounts		
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	AccruedLiabilitiesDeferredIncome	core	num		2024-05-31	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	61745
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	AccruedLiabilitiesDeferredIncome	core	num		2025-05-31	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	122884
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	AccumulatedDepreciationImpairmentPropertyPlantEquipment	core	num		2024-05-31	1		GBP	120254
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	AccumulatedDepreciationImpairmentPropertyPlantEquipment	core	num		2024-05-31	1	PropertyPlantEquipmentClassesDimension=FurnitureFittingsToolsEquipment	GBP	27292
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	AccumulatedDepreciationImpairmentPropertyPlantEquipment	core	num		2024-05-31	1	PropertyPlantEquipmentClassesDimension=OfficeEquipment	GBP	1324
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	AccumulatedDepreciationImpairmentPropertyPlantEquipment	core	num		2024-05-31	1	PropertyPlantEquipmentClassesDimension=PlantMachinery	GBP	91638
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	AccumulatedDepreciationImpairmentPropertyPlantEquipment	core	num		2025-05-31	1		GBP	131115
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	AccumulatedDepreciationImpairmentPropertyPlantEquipment	core	num		2025-05-31	1	PropertyPlantEquipmentClassesDimension=FurnitureFittingsToolsEquipment	GBP	30564
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	AccumulatedDepreciationImpairmentPropertyPlantEquipment	core	num		2025-05-31	1	PropertyPlantEquipmentClassesDimension=OfficeEquipment	GBP	1656
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	AccumulatedDepreciationImpairmentPropertyPlantEquipment	core	num		2025-05-31	1	PropertyPlantEquipmentClassesDimension=PlantMachinery	GBP	98895
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	AverageNumberEmployeesDuringPeriod	core	num	2023-06-01	2024-05-31			pure	30
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	AverageNumberEmployeesDuringPeriod	core	num	2024-06-01	2025-05-31			pure	25
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	BalanceSheetDate	uk-bus	text		2025-05-31	1			2025-05-31
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	BalanceSheetDate	uk-bus	text		2025-05-31	1			31 May 2025
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	BankBorrowingsOverdrafts	core	num		2025-05-31	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	5492
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	CashBankOnHand	core	num		2024-05-31	1		GBP	7167
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	CashBankOnHand	core	num		2025-05-31	1		GBP	566
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	Creditors	core	num		2024-05-31	1	MaturitiesOrExpirationPeriodsDimension=AfterOneYear	GBP	136426
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	Creditors	core	num		2024-05-31	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	220620
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	Creditors	core	num		2025-05-31	1	MaturitiesOrExpirationPeriodsDimension=AfterOneYear	GBP	134760
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	Creditors	core	num		2025-05-31	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	287954
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	CurrentAssets	core	num		2024-05-31	1		GBP	23592
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	CurrentAssets	core	num		2025-05-31	1		GBP	60676
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	DateAuthorisationFinancialStatementsForIssue	core	text		2025-05-31	1			29 April 2026
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	DateSigningDirectorsReport	direp	text		2025-05-31	1			29 April 2026
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	Debtors	core	num		2024-05-31	1		GBP	12734
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	Debtors	core	num		2025-05-31	1		GBP	41162
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	DescriptionPrincipalActivities	uk-bus	text	2024-06-01	2025-05-31				The principal activity of the company in the year under review continues to be the promotion of football through Taunton Town Football Club.
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	DirectorSigningFinancialStatements	core	text	2024-06-01	2025-05-31		EntityOfficersDimension=Director1		
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	EndDateForPeriodCoveredByReport	uk-bus	text		2025-05-31	1			2025-05-31
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	EntityCurrentLegalOrRegisteredName	uk-bus	text	2024-06-01	2025-05-31				TAUNTON TOWN FOOTBALL CLUB LIMITED
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	EntityDormantTruefalse	uk-bus	text	2024-06-01	2025-05-31				false
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	EntityTradingStatus	uk-bus	text	2024-06-01	2025-05-31				
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	Equity	core	num		2024-05-31	1		GBP	48533
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	Equity	core	num		2024-05-31	1	EquityClassesDimension=RetainedEarningsAccumulatedLosses	GBP	48533
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	Equity	core	num		2025-05-31	1		GBP	63407
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	Equity	core	num		2025-05-31	1	EquityClassesDimension=RetainedEarningsAccumulatedLosses	GBP	63407
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	FixedAssets	core	num		2024-05-31	1		GBP	284921
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	FixedAssets	core	num		2025-05-31	1		GBP	298631
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	GeneralDescriptionBasisMeasurementUsedInPreparingFinancialStatements	core	text	2024-06-01	2025-05-31				These financial statements have been prepared in accordance with the provisions of Section 1A (Small Entities) of Financial Reporting Standard 102
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	IncreaseFromDepreciationChargeForYearPropertyPlantEquipment	core	num	2024-06-01	2025-05-31			GBP	10861
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	IncreaseFromDepreciationChargeForYearPropertyPlantEquipment	core	num	2024-06-01	2025-05-31		PropertyPlantEquipmentClassesDimension=FurnitureFittingsToolsEquipment	GBP	3272
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	IncreaseFromDepreciationChargeForYearPropertyPlantEquipment	core	num	2024-06-01	2025-05-31		PropertyPlantEquipmentClassesDimension=OfficeEquipment	GBP	332
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	IncreaseFromDepreciationChargeForYearPropertyPlantEquipment	core	num	2024-06-01	2025-05-31		PropertyPlantEquipmentClassesDimension=PlantMachinery	GBP	7257
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	LegalFormEntity	uk-bus	text	2024-06-01	2025-05-31		LegalFormEntityDimension=CompanyLimitedByGuarantee		
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	NameEntityOfficer	uk-bus	text	2024-06-01	2025-05-31		EntityOfficersDimension=CompanySecretary1		MARK KITCHENER
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	NameEntityOfficer	uk-bus	text	2024-06-01	2025-05-31		EntityOfficersDimension=Director1		DEREK PERRY
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	NameEntityOfficer	uk-bus	text	2024-06-01	2025-05-31		EntityOfficersDimension=Director10		MARK KITCHENER
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	NameEntityOfficer	uk-bus	text	2024-06-01	2025-05-31		EntityOfficersDimension=Director2		BRIAN POLLARD
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	NameEntityOfficer	uk-bus	text	2024-06-01	2025-05-31		EntityOfficersDimension=Director3		RICHARD SMITH
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	NameEntityOfficer	uk-bus	text	2024-06-01	2025-05-31		EntityOfficersDimension=Director4		CARL GAZZARD
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	NameEntityOfficer	uk-bus	text	2024-06-01	2025-05-31		EntityOfficersDimension=Director5		KEVIN STURMEY
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	NameEntityOfficer	uk-bus	text	2024-06-01	2025-05-31		EntityOfficersDimension=Director6		MARTYN STARNES
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	NameEntityOfficer	uk-bus	text	2024-06-01	2025-05-31		EntityOfficersDimension=Director7		JACKIE COTTEY
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	NameEntityOfficer	uk-bus	text	2024-06-01	2025-05-31		EntityOfficersDimension=Director8		DEBORAH GOULD
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	NameEntityOfficer	uk-bus	text	2024-06-01	2025-05-31		EntityOfficersDimension=Director9		LLOYD IRISH
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	NameProductionSoftware	uk-bus	text	2024-06-01	2025-05-31				Companies House
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	NetAssetsLiabilities	core	num		2024-05-31	1		GBP	-48533
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	NetAssetsLiabilities	core	num		2025-05-31	1		GBP	-63407
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	NetCurrentAssetsLiabilities	core	num		2024-05-31	1		GBP	-197028
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	NetCurrentAssetsLiabilities	core	num		2025-05-31	1		GBP	-227278
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	OtherCreditors	core	num		2024-05-31	1	MaturitiesOrExpirationPeriodsDimension=AfterOneYear	GBP	136426
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	OtherCreditors	core	num		2024-05-31	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	80416
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	OtherCreditors	core	num		2025-05-31	1	MaturitiesOrExpirationPeriodsDimension=AfterOneYear	GBP	134760
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	OtherCreditors	core	num		2025-05-31	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	47388
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	OtherDebtors	core	num		2024-05-31	1		GBP	805
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	OtherDebtors	core	num		2025-05-31	1		GBP	601
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	OtherInventories	core	num		2024-05-31	1		GBP	3691
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	OtherInventories	core	num		2025-05-31	1		GBP	18948
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	PrepaymentsAccruedIncome	core	num		2024-05-31	1		GBP	1693
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	PrepaymentsAccruedIncome	core	num		2025-05-31	1		GBP	6485
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	PropertyPlantEquipment	core	num		2024-05-31	1		GBP	284921
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	PropertyPlantEquipment	core	num		2024-05-31	1	PropertyPlantEquipmentClassesDimension=FurnitureFittingsToolsEquipment	GBP	5919
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	PropertyPlantEquipment	core	num		2024-05-31	1	PropertyPlantEquipmentClassesDimension=LandBuildings	GBP	258913
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	PropertyPlantEquipment	core	num		2024-05-31	1	PropertyPlantEquipmentClassesDimension=OfficeEquipment	GBP	454
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	PropertyPlantEquipment	core	num		2024-05-31	1	PropertyPlantEquipmentClassesDimension=PlantMachinery	GBP	19635
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	PropertyPlantEquipment	core	num		2025-05-31	1		GBP	298631
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	PropertyPlantEquipment	core	num		2025-05-31	1	PropertyPlantEquipmentClassesDimension=FurnitureFittingsToolsEquipment	GBP	2647
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	PropertyPlantEquipment	core	num		2025-05-31	1	PropertyPlantEquipmentClassesDimension=LandBuildings	GBP	258913
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	PropertyPlantEquipment	core	num		2025-05-31	1	PropertyPlantEquipmentClassesDimension=OfficeEquipment	GBP	122
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	PropertyPlantEquipment	core	num		2025-05-31	1	PropertyPlantEquipmentClassesDimension=PlantMachinery	GBP	36949
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	PropertyPlantEquipmentFree-textComment	core	text	2024-06-01	2025-05-31				
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	PropertyPlantEquipmentGrossCost	core	num		2024-05-31	1		GBP	405175
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	PropertyPlantEquipmentGrossCost	core	num		2024-05-31	1	PropertyPlantEquipmentClassesDimension=FurnitureFittingsToolsEquipment	GBP	33211
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	PropertyPlantEquipmentGrossCost	core	num		2024-05-31	1	PropertyPlantEquipmentClassesDimension=LandBuildings	GBP	258913
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	PropertyPlantEquipmentGrossCost	core	num		2024-05-31	1	PropertyPlantEquipmentClassesDimension=OfficeEquipment	GBP	1778
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	PropertyPlantEquipmentGrossCost	core	num		2024-05-31	1	PropertyPlantEquipmentClassesDimension=PlantMachinery	GBP	111273
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	PropertyPlantEquipmentGrossCost	core	num		2025-05-31	1		GBP	429746
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	PropertyPlantEquipmentGrossCost	core	num		2025-05-31	1	PropertyPlantEquipmentClassesDimension=FurnitureFittingsToolsEquipment	GBP	33211
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	PropertyPlantEquipmentGrossCost	core	num		2025-05-31	1	PropertyPlantEquipmentClassesDimension=LandBuildings	GBP	258913
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	PropertyPlantEquipmentGrossCost	core	num		2025-05-31	1	PropertyPlantEquipmentClassesDimension=OfficeEquipment	GBP	1778
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	PropertyPlantEquipmentGrossCost	core	num		2025-05-31	1	PropertyPlantEquipmentClassesDimension=PlantMachinery	GBP	135844
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	PropertyPlantEquipmentPolicy	core	text	2024-06-01	2025-05-31				Tangible fixed assets are measured at cost less accumulated depreciation and any accumulated impairment losses. Depreciation is provided at rates calculated to write off the cost of the fixed assets, less their estimated residual value, over their expected useful lives on the following bases: Freehold Property 0% on cost Plant and Machinery 10% on cost Computer Equipment 20% on cost Fixtures and …
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	ReportTitle	uk-bus	text	2024-06-01	2025-05-31				Unaudited statutory accounts for the year ended 31 May 2025
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	RevenueRecognitionPolicy	core	text	2024-06-01	2025-05-31				Turnover is measured at the fair value of the consideration received or receivable, net of discounts and value added taxes. Turnover includes revenue earned from the sale of goods and from the rendering of services. Turnover is reduced for estimated customer returns, rebates and other similar allowances. Turnover from the sale of goods is recognised when the significant risks and rewards of owner…
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	StartDateForPeriodCoveredByReport	uk-bus	text		2025-05-31	1			2024-06-01
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime	direp	text	2024-06-01	2025-05-31				These accounts have been prepared and delivered in accordance with the provisions applicable to companies subject to the small companies regime.
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies	direp	text	2024-06-01	2025-05-31				For the year ending 31 May 2025 the company was entitled to exemption under section 477 of the Companies Act 2006 relating to small companies.
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct	direp	text	2024-06-01	2025-05-31				The directors acknowledge their responsibilities for complying with the requirements of the Act with respect to accounting records and the preparation of accounts.
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit	direp	text	2024-06-01	2025-05-31				The members have not required the company to obtain an audit in accordance with section 476 of the Companies Act 2006.
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	TaxationSocialSecurityPayable	core	num		2024-05-31	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	22411
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	TaxationSocialSecurityPayable	core	num		2025-05-31	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	26800
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment	core	num	2024-06-01	2025-05-31			GBP	24571
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment	core	num	2024-06-01	2025-05-31		PropertyPlantEquipmentClassesDimension=PlantMachinery	GBP	24571
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	TotalAssetsLessCurrentLiabilities	core	num		2024-05-31	1		GBP	87893
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	TotalAssetsLessCurrentLiabilities	core	num		2025-05-31	1		GBP	71353
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	TotalInventories	core	num		2024-05-31	1		GBP	3691
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	TotalInventories	core	num		2025-05-31	1		GBP	18948
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	TradeCreditorsTradePayables	core	num		2024-05-31	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	56048
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	TradeCreditorsTradePayables	core	num		2025-05-31	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	85390
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	TradeDebtorsTradeReceivables	core	num		2024-05-31	1		GBP	10236
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	TradeDebtorsTradeReceivables	core	num		2025-05-31	1		GBP	34076
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	UKCompaniesHouseRegisteredNumber	uk-bus	text	2024-06-01	2025-05-31				01582031
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	ValuationFinancialInstrumentsPolicy	core	text	2024-06-01	2025-05-31				Stocks are valued at the lower of cost and net realisable value after making due allowance for obsolete and slow-moving stocks. Cost includes all direct costs and an appropriate proportion of fixed and variable overheads.
+taunton-town-fc	01582031	Mn1NCEkl_AU_TFba4xLz0PneuVBso2lsI9i-owqczC4	2026-05-04	2025-05-31	_GoingConcernMaterialUncertainty	derived	text						none found
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	AccountingStandardsApplied	uk-bus	text	2023-06-01	2024-05-31		AccountingStandardsDimension=Micro-entities		
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	AccountsStatusAuditedOrUnaudited	uk-bus	text	2023-06-01	2024-05-31		AccountsStatusDimension=AuditExempt-NoAccountantsReport		
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	AccountsType	uk-bus	text	2023-06-01	2024-05-31		AccountsTypeDimension=FullAccounts		
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	AverageNumberEmployeesDuringPeriod	uk-core	num	2022-06-01	2023-05-31			GBP	25
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	AverageNumberEmployeesDuringPeriod	uk-core	num	2023-06-01	2024-05-31			GBP	26
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	BalanceSheetDate	uk-bus	text		2024-05-31	1			31 May 2024
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	Creditors	uk-core	num		2023-05-31	1	MaturitiesOrExpirationPeriodsDimension=AfterOneYear	GBP	246177
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	Creditors	uk-core	num		2023-05-31	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	70757
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	Creditors	uk-core	num		2024-05-31	1	MaturitiesOrExpirationPeriodsDimension=AfterOneYear	GBP	136426
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	Creditors	uk-core	num		2024-05-31	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	220620
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	CurrentAssets	uk-core	num		2023-05-31	1		GBP	56480
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	CurrentAssets	uk-core	num		2024-05-31	1		GBP	23592
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	DateAuthorisationFinancialStatementsForIssue	uk-core	text		2024-05-31	1			13 January 2025
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	DirectorSigningFinancialStatements	uk-core	text	2023-06-01	2024-05-31		EntityOfficersDimension=Director1		
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	DirectorSigningFinancialStatements	uk-core	text	2023-06-01	2024-05-31		EntityOfficersDimension=Director2		
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	EndDateForPeriodCoveredByReport	uk-bus	text		2024-05-31	1			2024-05-31
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	EntityCurrentLegalOrRegisteredName	uk-bus	text	2023-06-01	2024-05-31				TAUNTON TOWN FOOTBALL CLUB LIMITED
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	EntityDormantTruefalse	uk-bus	text	2023-06-01	2024-05-31				false
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	EntityTradingStatus	uk-bus	text	2023-06-01	2024-05-31				
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	Equity	uk-core	num		2023-05-31	1		GBP	12677
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	Equity	uk-core	num		2024-05-31	1		GBP	48533
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	FixedAssets	uk-core	num		2023-05-31	1		GBP	273131
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	FixedAssets	uk-core	num		2024-05-31	1		GBP	284921
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	NameEntityOfficer	uk-bus	text	2023-06-01	2024-05-31		EntityOfficersDimension=Director1		Brian Pollard
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	NameEntityOfficer	uk-bus	text	2023-06-01	2024-05-31		EntityOfficersDimension=Director2		Richard Smith
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	NameProductionSoftware	uk-bus	text	2023-06-01	2024-05-31				Companies House
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	NetAssetsLiabilities	uk-core	num		2023-05-31	1		GBP	12677
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	NetAssetsLiabilities	uk-core	num		2024-05-31	1		GBP	48533
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	NetCurrentAssetsLiabilities	uk-core	num		2023-05-31	1		GBP	14277
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	NetCurrentAssetsLiabilities	uk-core	num		2024-05-31	1		GBP	197028
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	PrepaymentsAccruedIncomeNotExpressedWithinCurrentAssetSubtotal	uk-core	num		2023-05-31	1		GBP	0
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	PrepaymentsAccruedIncomeNotExpressedWithinCurrentAssetSubtotal	uk-core	num		2024-05-31	1		GBP	0
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	StartDateForPeriodCoveredByReport	uk-bus	text		2024-05-31	1			2023-06-01
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime	uk-direp	text	2023-06-01	2024-05-31				The accounts have been prepared in accordance with the micro-entity provisions and delivered in accordance with the provisions applicable to companies subject to the small companies regime.
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies	uk-direp	text	2023-06-01	2024-05-31				For the year ending 31 May 2024 the company was entitled to exemption under section 477 of the Companies Act 2006 relating to small companies.
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct	uk-direp	text	2023-06-01	2024-05-31				The directors acknowledge their responsibilities for complying with the requirements of the Companies Act 2006 with respect to accounting records and the preparation of accounts.
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit	uk-direp	text	2023-06-01	2024-05-31				The members have not required the company to obtain an audit in accordance with section 476 of the Companies Act 2006.
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	TotalAssetsLessCurrentLiabilities	uk-core	num		2023-05-31	1		GBP	258854
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	TotalAssetsLessCurrentLiabilities	uk-core	num		2024-05-31	1		GBP	87893
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	UKCompaniesHouseRegisteredNumber	uk-bus	text	2023-06-01	2024-05-31				01582031
+taunton-town-fc	01582031	zzBhtzetC1Y8w7cM1KjceVrzsc62cL7rrKHhPPlDLno	2025-02-21	2024-05-31	_GoingConcernMaterialUncertainty	derived	text						none found

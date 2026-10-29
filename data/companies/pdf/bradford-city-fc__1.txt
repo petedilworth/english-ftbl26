@@ -1,0 +1,358 @@
+source: Companies House filing, bradford-city-fc__1.pdf
+document: l_bzpgwOA7i_9Dc_alM8PaQ9zFDJHSB8Nhl37-CzkcQ
+made_up_date: 2025-06-30
+method: ocr
+pages_read: 12 of 15
+
+. .
+Registration number 5102915
+Bradford City Football Club Limited
+. Financial Statements
+for the year ended 30 June 2025
+<
+[=
+no
+WW
+2 *AEVIKBKA*
+A10 24/03/2026 #174
+— COMPANIES HOUSE
+; :
+Bradford City Football Club Limited
+Contents
+
+Page
+Directors and other information 1
+Directors Report 2-4
+Statement of comprehensive income 5
+Statement of financial position 6-7
+Statement of changes in equity 8 .
+Notes to the financial statements 9-13
+Bradford City Football Club Limited
+Directors and other information
+Directors S A Rupp (Chairman)
+AK Biggin FCA
+Secretary AK Biggin FCA
+Company number 5102915
+Registered office University of Bradford Stadium
+Valley Parade
+Bradford
+BD8 7DY
+Business address University of Bradford Stadium :
+Valley Parade
+Bradford
+BD8 7DY
+Bankers Barclays Bank PLC .
+Leicester
+LE87 2BB
+Page 1
+Bradford City Football Club Limited
+io Directors Report
+
+The directors present their report and the unaudited financial statements of the company for the year ended 30
+June 2025. ;
+Directors .
+The directors who served the company during the year were as follows:
+Stefan Albert Rupp
+Alan Keith Biggin FCA
+Small company provisions
+This report has been prepared in accordance with the provisions applicable to companies entitled to the small
+companies’ exemption.
+Review of the Business
+As in previous years, and for better understanding of the club’s business activities, it has been the club’s policy
+to provide a more detailed analysis of the commercial position and financial statements within a separate
+Strategic Report. This report is not part of the filing requirements for the club and will be produced in conjunction
+with these statements by club director and experienced Chartered Accountant Alan K Biggin FCA.
+RESULTS
+The club statement of comprehensive income is set out on page 5.
+The significant figures here are as follows;
+(a) Gross profitability has decreased from £842,190 in 2024 to a gross loss of (£822,784) in 2025. This
+
+is analysed over the relevant income streams.
+
+2025 2024
+£ £
+
+First Team (less stadium costs) (2,414,223) (1,330,370)
+
+Retail 240,594 197,369
+
+Banqueting & Ground Catering 302,641 262,980
+
+Commercial 1,114,157 1,112,966
+
+Youth Academy (100,503) 593,941
+
+Donations / Lottery 34,550 5,304
+
+Total Gross (Loss) / Profit before
+
+overheads (822,784) 842,190
+(b) Net transfer income of £366,257 has been generated in this current year and is included in football
+
+and youth income.
+(c) Net loss of (£996,814) in 2024 has been augmented by a further loss in the current year of
+
+(£2,992,958).
+(d) Net liabilities have increased from an adverse deficiency in 2024 of (£2,483,453) to an adverse
+
+deficiency of (£5,476,411) in 2025.
+(e) Other creditors falling due within one year have increased from £3,258,629 to £4,056,276 and is
+
+largely the result of Income received for season ticket sales and commercial activities which refers
+
+to the 2025/2026 season and is correctly deferred.
+
+Page 2
+Bradford City Football Club Limited
+Directors Report
+(f) Average attendances have been at a level of 17,760 over the season and could be considered very
+satisfactory.
+PRINCIPLE RISKS AND UNCERTAINTIES
+As | have referred to in many previous years the above ‘Risk and Uncertainties’ are increased in comparison
+to other businesses and industries. In particular, the unique considerations and potential conflicting interest
+of owners, supporters and players are very relevant and would be needed to work to the benefit of all
+parties. | can, however, confirm that there are processes established to monitor and mitigate areas such
+as competitive tendering, marketing and key personnel retention. These are to provide assurance to the
+Board of Directors both in managing risk and ensuring business success. Without appearing to be too
+irreverent, no system is risk free and it is the director's responsibility to correctly evaluate that. As the Board
+perceives, the key risks are briefly outlined below.
+1. On Pitch Performance
+This season was the 122"4 in the history of our club. It was also our sixth consecutive season in League
+Two, which culminated in the never to be forgotten 96" minute of our final league game against Fleetwood
+Town, watched by over 24,000 fans at Valley Parade. This resulted in our elevation, by automatic promotion
+to League One. A season which saw us succeed in winning 22 games with 12 draws and 12 losses. Our
+success in cup competitions was quite limited, but we managed some very respectable performances in
+the EFL Trophy with a final honourable exit in the semi-final at Birmingham City.
+2. Financial Stability
+The ‘core’ risk of any football club is as defined in the heading “It's financial stability”. With the ever
+increasing cost of players’ wages and the demand for football success, from an increasing, challenging fan
+base, the two considerations do not make easy ‘bedfellows’. The consequences of these issues is the
+management of expectations. With skill, common sense and financial acumen, objectives can be achieved
+but there are no guarantees in a febrile football industry. Our season has been successful and with “good
+housekeeping”, we have avoided some of the pitfalls that befall other clubs. Nonetheless, financial support
+was also necessary to enhance and achieve these goals, and this should not be overlooked or marginalised
+as it was critical to the strategy. :
+3. Safeguarding and Heaith and Safety :
+The club operates a strong Safeguarding and Health and Safety Programme and has key employees
+dedicated to full time roles in these areas. All issues raised are reviewed monthly, along with monitoring
+controls governing these notifications. All directors and key personnel have completed mandatory
+safeguarding training demanded by the EFL. Itis the club’s all-encompassing philosophy that the University
+of Bradford Stadium environment is safe, open and welcoming for all supporters and visitors to the ground.
+4. Salary Management Cost Protocol (SMCP)
+Under English Football League rules, the club is bound by the formalities of this covenant to organise its
+affairs in a financially sound and professional manner, to ensure that management controls are effective.
+For League Two teams this requires clubs to control their player wages and salary costs at a pre-determined
+level in relation to turnover (as defined). This is currently at a level of 55% of Turnover and 100% of ‘Football
+Fortune’ income which includes equity injections (as defined). However, for the forthcoming season (25/26),
+for a League Two team, the percentage will change to 50% of football income and 50% of ‘Fortune Income’.
+For League One teams, these figures will become 60% overall. As a club, we comply with this determination
+as part of our overarching policy of good prudent management. This level is also subjected to strict rules
+and guidance and in this respect supplemented by the EFL Independent Club Financial Reporting Unit. This
+may well be enhanced and reviewed by the appointment of David Kogan as the Independent Football
+Regulator.
+Page 3
+Bradford City Football Club Limited
+Directors Report
+5. Going Concern
+: The directors consider the club to be able to continue as a ‘going concern’ and ‘along with their
+
+acknowledged commitment, conclude that these financial statements reflect the ‘going concern’
+basis.
+The club is subject to the normal restraints and difficulties which all businesses encounter and the
+financial position reflects that challenge. Without the considerable help of the directors and officers
+throughout the organisation, the problems would become more difficult to address and deal with
+satisfactorily.
+
+This report was approved by the board of directors on 17 March 2026 and signed on behalf of the
+
+board by:
+
+AL K tA |
+
+A K Biggin FC.
+
+Director & Com Secretary
+
+Page 4
+Bradford City Football Club Limited
+Statement of comprehensive income
+Year ended 30 June 2025
+2025 2024
+_ Note £ £
+Turnover : 8,694,724 8,635,278
+Cost of sales (9,517,508) (7,793,088)
+Gross (loss) / profit (822,784) 842,190
+Stadium costs (689,162) (522,171)
+Administrative expenses (1,640,250) (1,461,634)
+Other operating income 181,898 149,336
+Operating (loss) (2,980,298) (992,279)
+Interest payable and similar expenses (12,660) (4,535)
+(Loss) before taxation 4 (2,992,958) (996,814)
+Tax on profit/(loss) - -
+(Loss) for the financial year (2,992,958) (996,814)
+All the activities of the company are from continuing operations.
+Page 5
+Bradford City Football Club Limited
+Statement of financial position
+30 June 2025
+- . - - 2025 - 2024 =—-
+Note £ £ £ £
+
+Fixed assets ;
+Intangible assets 5 314,752 211,291
+Tangible assets 6 1,698,403 1,452,434
+Investments 7 100 100
+
+2,013,255 1,663,825
+Current assets
+Stocks 1,328 2,828
+Debtors 8 3,443,229 3,290,378
+Cash at bank and in hand 166,569 45,091
+
+3,611,126 3,338,297
+
+Creditors: amounts falling due /
+within one year 9 (5,700,810) (4,535,647)
+Net current liabilities (2,089,684) (1,197,350)
+Total assets less current liabilities (76,429) 466,475
+Creditors: amounts falling due
+after one year 10 (5,399,982) (2,949,928)
+
+(5,399,982) (2,949,928)
+Net (liabilities)/assets (5,476,411) (2,483,453)
+Capital and reserves
+Called up share capital 3,000,003 3,000,003
+Profit and loss account (8,476,414) (5,483,456)
+Shareholders (deficit)/funds (5,476,411) (2,483,453)
+For the year ending 30 June 2025 the company was entitled to exemption from audit under section 477 of the
+Companies Act 2006 relating to small companies.
+Directors’ responsibilities:
+* The members have not required the company to obtain an audit of its financial statements for the year in
+
+question in accordance with section 476;
+* The directors acknowledge their responsibilities for complying with the requirements of the Act with respect
+to accounting records and the preparation of financial statements.
+* Page 6
+Bradford City Football Club Limited
+Statement of financial position (continued) :
+30 June 2025
+: . These financial statements have: been prepared in accordance with the provisions applicable to companies i
+subject to the small companies’ regime and in accordance with Section 1A of FRS 102 'The Financial Reporting
+Standard applicable in the UK and Republic of Ireland’.
+These financial statements were approved by the board of directors and authorised for issue on 17” March
+2026 and are signed on behalf of the board by:
+Wh ve GA
+AK Biggin FCA
+Director
+Company registration number: 5102915
+Page 7
+Bradford City Football Club Limited
+Statement of changes in equity
+Year ended 30 June 2025
+Called up — Profit and Total
+
+share loss
+
+capital account
+£ £ £
+1 July 2023 3,000,003 (4,486,642) (1,486,639)
+(Loss) for the year (996,814) (996,814)
+Total comprehensive deficit for the year - (996,814) (996,814)
+At 30 June 2024 and 1 July 2024 3,000,003 (5,483,486) (2,483,453)
+(Loss) for the year (2,992,958) (2,992,958)
+Total comprehensive deficit for the year - (2,992,958) (2,992,958)
+At 30 June 2025 3,000,003 (8,476,414) (5,476,411)
+
+Page 8
+Bradford City Football Club Limited
+Notes to the financial statements
+Year ended 30 June 2025
+
+1. General information
+The company is a private company limited by shares, registered in England and Wales. The address of
+the registered office is University of Bradford Stadium, Valley Parade, Bradford, BD8 7DY.
+
+2. Statement of compliance
+These financial statements have been prepared in compliance with the provisions of FRS 102, Section
+4A, ‘The Financial Reporting Standard applicable in the UK and Republic of Ireland’. The Triennial
+review 2017 amendments to the standard have been early adopted.
+
+3. Accounting policies
+Basis of preparation
+The financial statements have been prepared on the historical cost basis, as modified by the revaluation
+of certain financial assets and liabilities measured at fair value through profit or loss.
+The financial statements are prepared in sterling, which is the functional currency of the entity.
+Turnover
+Turnover is measured at the fair value of the consideration received or receivable for goods supplied
+and services rendered, net of discounts and Value Added Tax.
+Revenue from the sale of goods is recognised when the significant risks and rewards of ownership have
+transferred to the buyer (usually on despatch of the goods); the amount of revenue can be measured
+reliably; it is probable that the associated economic benefits will flow to the entity; and the costs incurred
+or to be incurred in respect of the transactions can be measured reliably.
+Taxation
+The taxation expense when applicable represents the aggregate amount of current and deferred tax
+recognised in the reporting period. Tax is recognised in the statement of comprehensive income, except
+to the extent that it relates to items recognised in other comprehensive income or directly in capital and
+reserves. In this case, tax is recognised in other comprehensive income or directly in capital and
+reserves, respectively.
+Current tax is recognised on taxable profit for the current and past periods. Current tax is measured at
+the amounts of tax expected to pay or recover using the tax rates and laws that have been enacted or
+substantively enacted at the reporting date.
+Deferred tax is recognised in respect of all timing differences at the reporting date. Unrelieved tax
+losses and other deferred tax assets are recognised to the extent that it is probable that they will be
+recovered against the reversal of deferred tax liabilities or other future taxable profits. Deferred tax is
+measured using the tax rates and laws that have been enacted or substantively enacted by the
+reporting date that are expected to apply to the reversal of the timing difference.
+Operating teases
+Lease payments are recognised as an expense over the lease term on a straight-line basis. The
+aggregate benefit of lease incentives is recognised as a reduction to expense over the lease term, on a
+straight-line basis.
+
+Page 9
+Bradford City Football Ciub Limited
+Notes to the financial statements (continued)
+
+Year ended 30 June 2025
+Goodwill
+Goodwill arises on business acquisitions and represents the excess of the cost of the acquisition over
+the company's interest in the net amount of the identifiable assets, liabilities and contingent liabilities of
+the acquired business.
+Goodwill is measured at cost less accumulated amortisation and accumulated impairment losses. It is
+usually amortised on a straight-line basis over its Useful life. Where a reliable estimate of the useful life of
+goodwill or intangible assets cannot be made, the life is presumed to be written off as appropriate.
+Amortisation
+Amortisation is calculated so as to write off the cost of an asset, less its estimated residual value, over
+the useful life ot that asset as follows:
+If there is an indication that there has been a significant change in amortisation rate, useful life or
+residual value of an intangible asset, the amortisation is revised retrospectively to reflect the new
+estimates.
+Tangible assets
+Tangible assets are initially recorded at cost and are subsequently stated at cost less any accumulated
+depreciation and impairment losses.
+Any tangible assets carried at revalued amounts are recorded at the fair value at the date of revaluation
+less any subsequent accumulated depreciation and subsequent accumulated impairment losses.
+An increase in the carrying amount of an asset as a result of a revaluation, is recognised in other
+comprehensive income and accumulated in capital and reserves, except to the extent it reverses a
+revaluation decrease of the same asset previously recognised in profit or loss. A decrease in the
+carrying amount of an asset as a result of revaluation is recognised in other comprehensive income to
+the extent of any previously recognised revaluation increase accumulated in capital and reserves in
+respect of that asset. Where a revaluation decrease exceeds the accumulated revaluation gains
+accumulated in capital and reserves in respect of that asset, the excess shall be recognised in profit or
+loss.
+Depreciation
+Depreciation is calculated so as to write off the cost or valuation of an asset, less its residual value,
+over the useful economic life of that asset as follows:
+Long leasehold property - Straight line over life of lease or as appropriate
+Plant and machinery - 10% _ straight line
+Fittings fixtures and equipment - 10% — straight line
+Motor vehicles - 15% — straight line
+Computer equipment ~ 10% — straight line
+If there is an indication that there has been a significant change in depreciation rate, useful life or
+residual value of tangible assets, the depreciation is revised retrospectively to reflect the new estimates.
+Fixed asset investments
+Fixed asset investments are initially recorded at cost and subsequently stated at cost less any
+accumulated impairment losses. Listed investments are measured at fair value with changes in fair
+value being recognised in profit or loss. ;
+
+Page 10
+

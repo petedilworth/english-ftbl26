@@ -1,0 +1,414 @@
+source: Companies House filing, wolverhampton-wanderers-fc__1.pdf
+document: _eqEO9Fh6G4YA9PFduC_jhNEsdXoGk7Auxr3bVwxFaU
+made_up_date: 2025-06-30
+method: ocr
+pages_read: 12 of 41
+
+- /
+
+’ \ . |
+
+soy
+
+: Registered niimber: 01989823 ;
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED.
+
+ANNUAL REPORT AND FINANCIAL STATEMENTS t
+
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025 ;
+
+Ez
+2 *AEYIKGNK* :
+ME ais 24/03/2026 #63
+COMPANIES HOUSE
+| {
+‘ ‘
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED 4
+COMPANY INFORMATION
+Directors J F Bowater
+J Gough
+Y Shi (resigned 19 December 2025)
+J Shi (appointed 19 December 2025)
+Company secretary MD Wild
+Registered number 01989823
+‘Registered office Molineux Stadium .
+Waterloo Road
+Wolverhampton _ . :
+West Midlands ©
+WV1 4QR
+Independent auditor Crowe U.K. LLP
+Black Country House
+Rounds Green Road
+Oldbury ri
+West Midlands
+B69 2DG 3
+Bankers Barclays Bank PLC ,
+One Snowhill
+Snow Hill Queensway
+Birmingham
+B4 6GH :
+| |
+{
+}
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+_ : . CONTENTS .
+Page
+Section 172 statement 1-4
+Directors’ report 5-8
+Strategic report . 9-12
+Directors’ responsibilities statement 13
+Independent auditor's report 14-17
+Profit and Loss account 7 18
+Balance sheet 19
+Statement of changes in equity . 20
+Notes to the financial statements 21-38
+1
+~ : ~ , i
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED .
+SECTION 172 STATEMENT
+AS AT 30 JUNE 2025
+Directors’ statement of compliance with duty to promote the success of the Company
+Section 172 of the Companies Act 2006 requires the Directors of a company to act in a way they consider to be
+in good faith and would be most likely to promote the success of the company for the benefit of all its members,
+both in the current period and in the long term.
+In discharging their duties above, the Directors carefully consider, amongst other matters, the impact of their
+decisions on various stakeholder groups. The groups considered in this regard are our employees, our
+customers, our suppliers and our shareholders, as well as the wider community in which we operate. The
+Directors recognise that building strong relationships with our stakeholders will help us to deliver our long-term
+strategy in line with our core values and to operate the business in a sustainable way. We are committed to
+conducting business responsibly. The directors do not believe that there have been any key decisions faced
+during the year which require specific reference or have had significant impact on any of the company’s
+stakeholder groups.
+Supporters .
+Whilst our fanbase continues to grow, it remains important to ensure that every action taken has the core aim of
+improving team performances and increasing engagement with all sections of the fanbase, ensuring supporters
+can remain connected with their club.
+We are committed to providing a high standard of communication and consultation to our supporters, with
+important club updates provided through the official website and official club social media channels. ,
+Supporters who wish to contact the club can do so through a variety of methods which are all directed to the
+central Fan Services team. Following supporter feedback, the Fan Services team was introduced in 2021, acting
+as a central hub with a single point of contact for all supporter enquiries and feedback. As well as providing a
+reliable platform for telephone and email enquiries, the Fan Services team introduced two new contact methods,
+with fans now able to submit a direct message to a dedicated fan help account through the social media network
+X (formerly Twitter), and also live chat with an advisor through the club's FAQ portal. The club welcomes all
+feedback from supporters and encourages fans with any queries, issues, concerns or praise to get in touch. Data
+from Fan Services enquiries is collated and regularly shared with club management to ensure the fan voice is
+considered.
+The club has a dedicated supporter liaison officer (SLO) with the aim of communicating key information to
+supporters ahead of both home and away matches, as well as working closely with individual supporters to
+resolve any issues they may experience on a matchday. The SLO produces matchday guides for supporters
+ahead of each game, detailing any important updates relating to travel or matchday experience. These updates
+are also shared from a dedicated social media channel, @WolvesHelp, which is designed to share important
+updates for match going supporters. The club also has a dedicated disability access officer (DAO) as a point of
+contact for disabled supporters and is committed to making Molineux accessible for all supporters. The DAO
+also collates relevant information for away fixtures to ensure supporters with accessible requirements are
+comfortable when travelling.
+The club continues to operate a number of Fan Focus Groups which allow supporters to work closely with the
+club on the subjects that matter most to them. The matchday experience group was launched in 2018 and was
+followed by groups devoted to ticketing, retail and equality, diversity and inclusion. Each group has a nominated
+member who represents the group on the club’s Fan Advisory Board, with representatives chosen by the group
+members. The club has also introduced focus groups for environmental sustainability and for Wolves Women,
+which are not currently represented on the Fan Advisory Board due to only being recently established.
+A terms of reference document, along with updates from Fan Focus Groups, is detailed on the club's official
+website at wolves.co.uk/fans in the form of meeting notes. Dates of previous focus group meetings are also
+available.
+; Page 1
+4
+4
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED .
+SECTION 172 STATEMENT
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025
+The club launched its Fan Advisory Board ahead of the 2023-24 season to create a consultative panel of
+supporters who work alongside the club for the purpose of engaging in dialogue, exchanging information, ideas
+and securing feedback from the fan perspective. To ensure consistency with the club's other fan engagement
+and consultation initiatives, the Fan Advisory Board comprises a representative from each of the club’s Fan
+Focus Groups, a representative from the Wolves 1877 Supporters Trust, a representative from the Wolves
+Disabled Supporters Association and an independent supporter representative selected by the club and the
+Football Supporters Association following an application process in the summer of 2023. Meetings include
+members of the seniar management team based on the agenda for each meeting. A representative from the
+club's ownership will also attend at least one Fan Advisory Board meeting per season.
+The club is proud to work with a number of representative groups to ensure their voice is heard and to support
+them in being represented at national level.
+The club welcomes the formation of an Independent Supporters Trust (Wolves 1877 Trust), allowing Wolves
+supporters to be represented at national level through affiliation with the Football Supporters Association. The
+club has regularly engaged with the Wolves 1877 Trust since its formation in 2021. Wolves has also worked .
+closely with the Wolves Disabled Supporters Association for a number of years through the club's dedicated -
+disability access officer. ;
+Full details of the club’s commitment to fan engagement and consultation can be found in the Fan Engagement
+Plan on the fan engagement page of the Wolves website. This page also contains contact information, policies,
+guides, FAQs and meeting notes from all Fan Advisory Board and Fan Focus Group meetings.
+Employees
+At Wolves, the core foundations of our culture are employee wellbeing, equality, diversity and inclusion (EDI), .
+and safeguarding. We are committed to creating a culture where all employees feel safe, valued and supported
+to thrive in their roles.
+We are committed to promoting a healthy workforce across our organisation and are focusing on physical,
+mental, financial and social weil-being.
+The club has a dedicated team of mental health first-aiders (We Care Ambassadors), providing signposting and
+mental health and well-being support, alongside employee resource groups which cover menopause (Pause To
+Chat), gender (Women at Wolves) and neurodiversity. These further enhance staff voice and strengthen
+collective learning and development, including enhancements to annual leave entitlement and to maternity,
+paternity and parental leave policies.
+Each season, the club recognises staff achievements through the Pride In Our Pack awards dinner, and
+throughout the year colleagues can express appreciation for one another through a separate recognition scheme .
+called Shine - We See You.
+Wolves’ commitment to corporate social responsibility continues to grow with the achievement of Intermediate
+Level of the Premier League Equality, Diversity and Inclusion Standard (PLEDIS) in 2023, coinciding with the
+launch of Mission One Pack, our three-year equality, diversity and inclusion strategy for the whole organisation.
+This strategy focuses on increasing representation and involvement across our strategic priorities: women and
+girls, access and disabilities, race, ethnicity and religion, and LGBTQIA+ inclusion. It culminates in our next
+PLEDIS assessment, planned for 2026, with thinking already underway for the next phase of our EDI strategy.
+The strategy focuses on how our organisation continues to advance its collective efforts both internally and
+externally using the following tactics:
+. Activities .
+. Recruitment and onboarding
+’ Staff and visitor experience
+. Learning and development
+; : 7 ~~ Page 2.
+i
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED *
+SECTION 172 STATEMENT
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025 :
+This is further supported by the club's internal EDi working group, comprising staff from across 26 departments
+and every business function, who meet regularly to disseminate information and review EDI departmental plans.
+The club also has a dedicated external equality advisory group (EAG) which helps to progress and advise on the
+club's EDI strategy and departmental plans. The EAG meets throughout the season, with different staff including
+senior leadership attending.
+We continue to nurture an environment where everyone can thrive as part of our #OnePack ethos and through
+our annual One Pack Week celebrating diversity on and off the pitch. This has included bringing supporters,
+local communities, players and staff together through special events and campaigns, including a key event
+celebrating Black History Month, and marching at both Birmingham and Wolverhampton Pride.
+. As part of our commitment to safeguarding, each season we also hold an annual Safeguarding Week and a-
+dedicated Play Safe fixture, with a range of learning and development opportunities delivered across the
+organisation.
+——- ~ “~“ommercial partners ~ 7
+The Directors and senior management commit considerable time, effort and resources into developing,
+activating and delivering for our commercial partners, with a view to fostering long-term, mutually beneficial
+partnerships. We are a challenger club for challenger brands, and we seek to partner with organisations that
+dare to be different and challenge the status quo.
+We drive innovation and pursue every venture with a dynamic and progressive purpose. We act to service our i
+partners’ needs to the highest standards, aiming to add value beyond traditional commercial partnerships. i
+Suppliers
+The Directors have established procedures to ensure that external suppliers are individually verified to ensure
+they meet the health and safety, regulatory and financial security standards required by the company. The
+company seeks to pay all suppliers any undisputed amounts due that conform with the company's billing
+requirements within agreed terms. The company has procedures for dispute resolution which ensure timely and
+fair outcomes.
+Regulatory bodies
+The Company is regulated by the FA, the Premier League, UEFA and FIFA. The Company actively engages with
+all regulatory bodies, always ensuring transparent compliance.
+Community
+The Company takes its role within the community very seriously and promotes and encourages community and
+charitable contribution, primarily through its charitable arm, Wolves Foundation.
+Wolves Foundation is a cornerstone of the city of Wolverhampton. Through a team of highly skilled, dedicated
+staff and volunteers, it harnesses the strong local connection with Wolves to motivate, educate and inspire tens
+of thousands of beneficiaries across our communities.
+The charity works in partnership with key local stakeholders including the local authority, police, health service
+and education providers to identify risk factors in the city around societal issues and health status, using data
+and insight to deliver evidence-based practice through its vast array of projects. The Premier League and PFA
+provide vital funding allowing the Foundation to extend its influence across the city.
+The Foundation launched a new five-year strategy in August 2025 focusing on four key pillars: economic
+prosperity and employment; community safety; health and well-being; stronger together.
+. Page 3 :
+!
+4
+’
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+SECTION 172 STATEMENT
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025 .
+Working in the community is vital to its work, removing barriers to engagement regardless of age, gender, race,
+religion, sexual orientation or disability.
+With participants ranging from one month to 95 years old across 225 different delivery sites in the city, work is
+delivered all year round, improving the physica! and mental health, personal development and life choices of the
+people engaged in its programmes.
+Wolves Foundation continues to organise its own range of events to bring in vital funding, including the Molineux
+Sleepout, Molineux Abseil and Focus Fixture, as well as an annual Gala Dinner showcasing its wide range of
+delivery and celebrating the achievements of staff and participants.
+The environment
+At Wolves, we have an ambition to become industry leaders in environmental sustainability, maximising the
+club's positive impact in the city of Wolverhampton and globally.
+"In February 2023, we launched the One Pack, One Planet programme, featuring four headline commitments to. —~
+environmental sustainability:
+. Carbon: We will work towards becoming a net zero football club by 2040. :
+% Waste: We will embrace a circular economy, minimising waste and maximising reuse.
+* Nature: We will protect our natural environment and support a wilder future.
+. Culture: We will embed environmental sustainability across the club while engaging, educating and
+communicating around sustainability. .
+The club’s latest environmental sustainability report was published in January 2025. It outlines the environmental §
+progress delivered across the previous year and includes a detailed breakdown of the club's carbon footprint. An
+environmental sustainability policy is also published on our website.
+The One Pack, One Planet Working Group drives environmental sustainability across club departments and key
+partners, providing a forum for collaboration, sharing ideas and delivering progress. Delivery of our sustainability
+commitments is underpinned by departmental action plans co-created by club staff. The Environmental
+Sustainability Fan Focus Group provides a platform for supporters to share ideas and provide feedback on the
+club's sustainability plans.
+Wolves is also represented on external forums inciuding the Premier League Club Sustainability Working Group
+and the Fosun ESG Network. Regular sustainability updates are shared through the club’s media channels.
+Shareholders
+The directors endeavour to create value for our ultimate shareholders by ensuring the company's performance
+remains strong as well as sustainable. The directors adhere to the company’s long-term strategic plan when
+making operational decisions.
+Page 4
+i
+—ooooooooeeee————OOO OE ":.—O eS ee a
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED .
+DIRECTORS’ REPORT :
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025
+The Directors present their report and the financial statements for the 13 month period ended 30 June 2025.
+Results and dividends
+The loss for the 13 month period, after taxation, amounted to £11,631,000 (2024 - loss £10, 878,000).
+The Directors do not recommend payment of a dividend (2024 - same) due to the distributable reserve position.
+Directors
+The Directors who served during the 13 month period were:
+JF Bowater :
+J Gough
+Y Shi (resigned 19 December 2025) .
+The Company has made qualifying third-party indemnity provisions for the benefit of its Directors and these
+provisions remain in force at the date of this report.
+Future developments .
+Future developments have been disclosed as part of the Strategic Report.
+i
+Engagement with employees ¥
+The Company considers that employee involvement is essential to the continuing development and success of
+its business and uses a variety of methods to inform, consult and involve its employees. This is achieved through .
+formal and informal meetings.
+Disabled employees
+Applications for employment by disabled persons are always fully considered, bearing in mind the abilities of the
+applicant concerned. In the event of members of staff becoming disabled every effort is made to ensure that
+their employment within the Company continues and that appropriate training is arranged. It is the policy of the
+Company that the training, career development and promotion of disabled persons, should, as far as possible,
+be identical to that of other employees. .
+Page 5
+4
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED .
+DIRECTORS' REPORT (CONTINUED)
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025
+Greenhouse gas emissions, energy consumption and energy efficiency action
+The Company's GHG emissions and energy use data for period 1st June 2024 to 30th June 2025 are as
+follows:
+FY 2024-25 yy cy anrgens | FY 2019-20
+a ee
+eT TT
+Fomezenasomiecientanccen | amen) ale] a
+ee
+fowisopesazenssestcomy | nmi—nee]
+fan mesonienenenanitens | eesor|_ someon] eanen| vomer| sav] seo
+Imeninioncoaehonowen Ee]
+a PT Se TE
+a
+a OO
+PSEC a
+SSE
+ec SO
+Se A
+fapescenenersinvenves «4 |_——’ ST dd
+Pe
+fomscremnecnmie TTT
+SS
+Se: a
+Methodology
+The data reported aligns to the financial year, 1st June 2024 to 30th June 2025. Please note this is a transitional
+13-month period, due to an adjustment to the Company's financial year. Prior years cover the period 1st June —
+31st May. This should be considered when making year-on-year comparisons.
+This information has been calculated in accordance with HM Government's Environmental Reporting Guidelines
+and using Government conversion factors for company reporting of greenhouse gas emissions. The
+methodology is aligned with the GHG Reporting Protocol, which supplies the world's most widely used
+greenhouse gas reporting standards.
+The intensity ratios reported, tCO2e/turnover and tCO2e/home match have been selected to enable comparison
+with prior year performance and give context to the organisation's reported emissions.
+Page 6
+: }
+4
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+DIRECTORS' REPORT (CONTINUED)
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025
+
+: All electricity supplied to WWFC is 100% generated from wind, solar and hydro sources, backed by relevant
+Renewable Energy Guarantee of Origin (REGO) certificates administered by OFGEM. Therefore, market-based
+Scope 2 emissions are reported as Zero.
+WWEC has voluntarily reported on Scope 3 emissions, including water, team travel, business travel and fan
+travel. Scope 3 emissions are an indirect consequence of an organisation's actions. Scope 3 emissions are
+highly material and therefore an important part of WWEFC's environmental sustainability strategy.
+WWEC will separately publish more detailed carbon emissions data as part of an annual environmental
+sustainability report.
+Energy efficiency
+WWFEC have been undertaking a significant energy efficiency programme over the last 7 years. The organisation
+has worked with Hospitality Energy Savings to establish a formal energy reduction strategy for the business. This
+strategy has led to the implementation of a comprehensive metering system that tracks consumption across
+each area of its buildings. This has enabled BMS systems to be optimised and unnecessary consumption to be
+eliminated during quieter operational periods. LED lighting and energy efficient boilers have been introduced.
+In the organisation's financial year, energy efficiency actions have included ongoing LED fighting upgrades and
+ongoing post-event site inspections to ensure event-related equipment is shut down.
+One Pack, One Planet
+In February 2023, Wolves unveiled the club's new ‘One Pack, One Planet’ programme, featuring four key
+commitments to environmental sustainability. As well as a commitment to net zero by 2040, One Pack, One
+Planet focuses on addressing waste, protecting the natural environment and embedding sustainability across the
+club.
+The club's latest environmental sustainability report was published in January 2025, which outlined the
+environmental progress delivered at the club across the previous year and includes a detailed breakdown of the
+club's carbon footprint.
+The ongoing implementation of One Pack, One Planet continues to be driven by the internal working group,
+informed by engagement with the fan focus group for environmental sustainability and participation in the
+Premier League’s Club Sustainability Working Group. The sustainability programme is supported by Sustainable
+Football.
+More information about WWEFC's environmental commitments, environmental policy and sustainability news can
+be found of the club's website: wolves.co.uk/club/sustainability/
+Disclosure of information to auditor
+Each of the persons who are Directors at the time when this Directors’ report is approved has confirmed that:
+e so far as the Director is aware, there is no relevant audit information of which the Company's auditor is
+
+unaware, and
+. the Director has taken all the steps that ought to have been taken as a Director in order to be aware of any
+relevant audit information and to establish that the Company's auditor is aware of that information.
+Post balance sheet events
+Details of post-year end trading are set out in note 27 to the financial statements.
+Page 7
+WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED
+DIRECTORS' REPORT (CONTINUED)
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025
+Auditor
+The auditor, Crowe U.K. LLP, will be proposed for reappointment in accordance with section 485 of the
+Companies Act 2006.
+Via port Was approved by the board and signed on its behalf.
+MBWid
+Secretary
+Date: 24 Pecemsed, lols
+‘ WOLVERHAMPTON WANDERERS FOOTBALL CLUB (1986) LIMITED .
+STRATEGIC REPORT
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2025
+The Directors, in preparing this strategic report, have complied with s414C of the Companies Act 2006.
+Principal activities
+The principal activity of the Company during the year was that of a professional football club, and related
+activities.
+Review of developments and future prospects
+During the period, the Company extended its period end to June, to better align the Company's period end to
+their parent, peer football clubs in the Premier League, and player and head coach contracts.
+This therefore established a 13 month accounting period in these financial statements and prior year
+comparatives are not always comparable. The Company has therefore also included an annualised result
+aligned to their new period end date to ensure consistent comparison in future financial statements.
+The followings is a 3 -year summary by key performance indicator, including the annualised equivalent result:
+: — : 2024/25 season |
+KPI 2024/25 season | “( nualised & | 2023/24 scason | 2022/23 season
+(13 months) .
+unaudited
+£172.0m £171.8m £177.7m "_ £168.8m
+94.2% 84.7% ,
+(£38,6m) :
+Pronudoss) for the (E11.6m) (£10.9m) (£64.1m)
+In the period under review, the Company competed in the Premier League for the seventh consecutive season,
+with the team experiencing a more challenging season compared to 2023/24. There was a four-point decrease in
+points gained, and the club were involved in a battle to retain their Premier League status until the latter part of
+the season, as opposed to competing for UEFA qualification until the latter part of the prior season.
+Revenue for the period was £172.0m, a decrease on £177.7m achieved last financial year due to the lower
+metric of merit payment in 2024/25 (five merit units compared to seven merit units, due to finishing two places
+lower in the final Premier League table), and was further impacted by a small decrease in live TV facility fee
+broadcasting (15 times on live UK TV in 2024/25 compared to 16 times in 2023/24). Ticketing and hospitality
+revenues were consistent year-on-year, as increases on a per matchday basis, achieved primarily through price
+. increases, were offset by a lower number of home matchdays (two less FA Cup and one less friendly in 2024/25,
+
+compared to 2023/24). Partnerships increased by over £1m, primarily achieved through a new front of shirt
+partnership, and further supported by growth in volume of partners.
+Average attendance for the season was 30,881 (2023/24: 31,265), being materially consistent despite the more
+challenging season and an increase in ticket price.
+
+j : Page 9
+

@@ -1,0 +1,430 @@
+source: Companies House filing, west-bromwich-albion-fc__1.pdf
+document: Id5lFQSJhTOP3dvu69MjY8coATQ8qIoWWcfpGoUXobs
+made_up_date: 2025-06-30
+method: ocr
+pages_read: 12 of 44
+
+Company registration number 07230595 (England and Wales)
+WEST BROMWICH ALBION GROUP LIMITED
+ANNUAL REPORT AND FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+& *AEYSHKOX* : : :
+Loe a : oe ee Ai 20/03/2026 #80
+ee COMPANIES HOUSE . oe
+WEST BROMWICH ALBION GROUP LIMITED
+CONTENTS
+
+Page
+Strategic report 1-4
+Director's report 5-7
+Director's responsibilities statement 8
+Independent auditor's report 9-11
+Group statement of comprehensive income 12 |
+Group balance sheet 13
+Company balance sheet 14 ,
+Group statement of changes in equity 15
+Company statement of changes in equity 16
+Group statement of cash flows 17
+Notes to the financial statements 18-41
+WEST BROMWICH ALBION GROUP LIMITED
+COMPANY INFORMATION :
+Director , S Patel
+Company number 07230595
+Registered office ‘The Hawthorns
+
+Halfords Lane :
+
+. West Bromwich
+United Kingdom
+; B71 4LF :
+
+Auditor Azets Audit Services
+
+6th Floor, Bank House
+
+8 Cherry Street
+
+Birmingham
+
+United Kingdom
+
+B2 SAL
+WEST BROMWICH ALBION GROUP LIMITED
+STRATEGIC REPORT
+FOR THE YEAR ENDED 30 JUNE 2025
+The director presents the strategic report for the year ended 30 June 2025.
+Fair review of the business
+The 2024/25 season saw West Bromwich Albion Football Club ("Club") compete in the English Football League
+(EFL) Championship for the fourth successive season.
+Within the EFL Championship, all Clubs are annually assessed by the EFL for their compliance with financial
+regulations such as Profitability and Sustainability and Future Financial Information. The EFL’s Profit and
+Sustainability Rules in overview permit clubs to incur adjusted losses up to £39m over a three-year period before
+any restrictions on spending are applied. The Club's trading activities within 24/25 supported reducing the brought
+forward deficit with various activities, predominantly player trading. Players sold included Brandon Thomas-Asante,
+. Okay Yokustu, Conor Townsend, Mo Faal and Alex Palmer.
+To stay competitive, the Club strengthened the squad with a total of 12 new players recruited permanently and on
+loan throughout the season. Player acquisitions included Torbjorn Heggem, Mikey Johnston, Callum Styles, Isaac
+Price, Tammer Bany, Gianluca Frabotta and Nat Phillips, while Paddy McNair, Lewis Dobbin, Mason Holgate, Will
+Lankshear & Adam Armstrong arrived on loan.
+The 2024/25 season began with Head Coach Carlos Corberan, who departed the club for Valencia on 24 December
+2024.
+For the interim period Chris Brunt, led the first team for six competitive fixtures. On 17 January 2025, Tony Mowbray
+was appointed as Head Coach. Unfortunately, the team were unable to consistently deliver positive results that
+suggested a challenge for promotion. Tony Mowbray left his position as Head Coach of the Club on 21 Aprit 2025
+and James Morrison was appointed as Interim Head Coach and led the men's first team for its final two league
+fixtures. The Club ended the 2024/25 season in ninth place. Ryan Mason was subsequently appointed as the men’s
+first team Head Coach on 2 June 2025.
+Financially, turnover increased from £28.2m to £30.4m due to increased central distributions from the EFL. The
+Group generated a loss before tax for the year of £18.8m (period ended 30 June 2024: loss of £37.6m).
+Staff costs decreased to £37.1m (period ended 30 June 2024: £42.9m), with the decrease predominantly driven by
+changes in first team players and senior leadership staff. The Club continues to assess its cost base whilst
+_ continuing to play in the English Football League Championship.
+West Bromwich Albion Women’s first-team marked their first season as a fully integrated part of the club. Under
+Head Coach Siobhan Hodgetts-Still, the women’s team finished 7th in the FA Women's National League North for
+the 2024/25 season. The team enjoyed success in two cup competitions, exiting the FA Women’s Cup to
+Manchester United in the fourth round, before winning the Birmingham County FA Challenge Cup with an emphatic
+6-2 victory over Rugby Borough.
+The Club and its official charity partner, The Albion Foundation (TAF), continued to support the local community in a
+variety of different ways with a specific focus on their Go Local, Grow our Own and Football for All strategic themes.
+The vision is to create “A Proud Albion Family, Engaged, Inspired and Achieving its Potential, Making a measurable
+difference in our local community." The Club and TAF continue to work collaboratively on several strategies
+including the “Albion Cares” strategy encompassing Equality. Diversity and Inclusion, Well-being and Sustainability.
+In December 2022, the club announced that it had commissioned an independent investigation by a leading King’s
+Counsel (KC) into the 2014 loan by the Club to West Bromwich Albion Holdings Limited. The KC was provided with
+a substantial amount of documentation and evidence. The investigation took 18 months to complete and concluded
+in August 2024. It was in the stakeholders’ interest for the investigation to be as thorough as possible. The club
+statement made on 14 August 2024 explained that the report was reviewed carefully by both the Club and the
+representative of S4A (Shareholder for Albion), with their respective solicitors. Having done so, both concluded that
+no further action will be taken and, so far as both the Club and S4A are concerned, the matter is closed. Bilkul
+Football WBA, LLC (Bilkul) have assumed full responsibility to repay the 2014 loan with all accumulated interest, the
+repayment date being varied to 12 September 2026.
+“4- : s ° 7
+WEST BROMWICH ALBION GROUP LIMITED
+STRATEGIC REPORT (CONTINUED)
+
+FOR THE YEAR ENDED 30 JUNE 2025
+Statement by the Directors on performance of their statutory duties in accordance with s172(1) Companies
+Act 2006
+Section 172 of the Companies Act 2006 requires Directors to take into consideration the interests of stakeholders in
+their decision making. This is achieved through regular contact (verbal and written) with the Senior Management
+Team, Bilkul and/or external advisors (where necessary), whose views and recommendations are taken into
+consideration.
+The Director considers all the potential impacts and risks for the Club, supporters, employees, the local community,
+suppliers and the governing authorities when making decisions, believed to be in the best interest of the company
+and its shareholders.
+All decisions are designed to promote success on the pitch, whether this be promotion from the EFL to the English
+Premier League (EPL) or the work undertaken to build a playing squad capable of regaining its EPL status. The
+relatively short-term nature of these goals is tempered by the Club’s commitment to remain financially stable. The
+Board considers all the potential impacts and risks for the Ciub, supporters, employees, the local community,
+suppliers, and governing authorities when making decisions, which he believes to be in the best interest of the
+Company and its shareholders.
+
+he interests of the company's employees
+
+The Club’s employees are fundamental to the successful operations of the group, regardless of their role or where
+they are based. The Club and the Club’s Board of Directors are fully committed to equality, diversity and inclusion
+objectives and ensure this is cascaded down to all departments. The Health and Safety of the Club's employees
+continues to be a key focus as is ensuring the mental well-being of all employees. As well as now having fully
+trained mental heaith first aiders, the Club has provided all employees with 24/7 access to relevant information and
+support lines.
+The need to foster the company’s relationships with suppliers, customers, and others
+The Group works closely with the business community across the local area in terms of using services, procuring
+goods, and providing conferencing facilities for them to use. Where possible, the company aims to support the local
+economy and recognises the need to be socially responsible. The company has good working relationships with key
+stakeholders, particularly our principal club sponsors, Ideal Heating. The Group actively engages with its regulatory
+bodies (the EPL, the EFL and the Football Association) and is committed to operating within their framework of rules
+and regulations.
+The Club’s supporters are also of particular importance, and we are committed to maintaining an open dialogue with
+key stakeholders. The company ensures all facilities are maintained to a high standard and regularly engages in
+dialogue with supporters. This relationship is predominantly maintained through its Fan Advisory Board (FAB), the
+Albion Assembly and shareholder meetings, which enable our supporters and shareholders to discuss key issues
+with senior Club officials.
+The impact of the company's operations on the community and the environment
+The group supports and works alongside The Albion Foundation, its charitable arm and official charity partner, to
+provide a number of initiatives to the local community. The Albion Foundation utilises the company's access to EPL
+and EFL funds, the Club’s brand, and the power of football to deliver excellence in Wellbeing, Behaviour Change
+and Active Lifestyles to the local community. The company currently has three senior members of staff that serve as
+trustees to The Albion Foundation.
+West Bromwich Albion Football Club and The Albion Foundation have joined forces to ensure they are playing their
+part in the worldwide environmental sustainability challenge. As a football club committed to its local community, the
+Club is aware of its environmental impact. The Club believes it has a vital role to play in minimising this impact by
+the club, staff, and fans on their environment. A focus within the Club's policies, along with ‘Baggies Pastures Green’
+the Club's sustainability group, to minimise its impact on the environment. ne -
+WEST BROMWICH ALBION GROUP LIMITED
+STRATEGIC REPORT (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2025
+The desirability of the company maintaining a reputation for high standards of business conduct
+
+' The very nature of the company’s business means that it is high profile and generates significant interest, locally,
+nationally, and internationally. This makes it extremely important that the company maintains and conducts all its
+business to a very high standard. The directors have developed policies and frameworks to ensure this goal is met
+and when matters are identified or reported they are appropriately investigated, and actions taken as necessary.
+The need to act fairly between members of the Group
+All decisions are made with the benefit of the company at the fore and therefore they are for the benefit of all
+members of the Group.
+Principal risks and uncertainties
+The board is aware of the risks which affect the Group. It has analysed previous seasons spent in the EPL and EFL :
+Championship and has tried to implement lessons learnt from these experiences. The long-term policy of the Club is
+to strive to be a member of the EPL and improve its infrastructure year on year.
+Credit and liquidity risk are the main financial risks faced by the Group. Credit risk is mitigated by implementing
+effective credit control procedures on trade and other debtors. The Group has no significant concentration of credit
+tisk, with exposure spread over a large number of counterparties and customers. Liquidity Risk is mitigated by
+tunning detailed cash flow forecasts and budgets, enabling Management to make effective decisions in a timely
+manner. Bilkul have provided a letter of support to the company surrounding future cash injections.
+The Director also actively monitors and considers the role of the Profit and Sustainability (PSR) regulations in how it
+operates. These regulations require that the Board considers all aspects of how any player transfer or wage
+agreements entered into are beneficial to the Club in the long-term as well as the short-term. The Management of
+the Club will continue to review forecast compliance with PSR regulations.
+’ WEST BROMWICH ALBION GROUP LIMITED
+
+STRATEGIC REPORT (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2025
+Key performance indicators
+
+Period ended Period ended Period ended Year ended Year ended
+
+30 June 2025 30 June 2024 30 June 2023 30 June 2022 31 July 2021
+League Championship Championship Championship Championship Premier League
+Turnover £30.4m £28.2m £56.7m £65.4m £106.9m
+Operating profit/
+(loss) before (£14.7m) (£29.5m) (£2.4m) (£0.6m) £20.7m
+player _ trading,
+amortisation and
+impairment
+(Loss)/profit (£18.8m) (£37.6m) (£7.6m) £0.2m (£0.3m)
+before tax
+League position 9th 5th 9th 10th 19th
+Points 64 75 66 67 26
+Average
+attendance 24,984 24,049 23,000 21,900 N/A*
+Season ticket 20,590 18,689 18,328 17,680 N/A**
+holders
+*Due to COVID-19 restrictions enforced both locally and nationally 18 of 19 home league fixtures were played
+behind closed doors. The final home league game of the season did see fans back at The Hawthorns but this was
+restricted to a maximum of 25% of stadium capacity.
+**Season tickets that were sold ahead of the 2020/21 season were either refunded to fans or rolled over to be used
+against future purchases. No season ticket income has been recognised in 2020/21.
+On behalf of the board
+Director
+Date: 27 December 2025
+WEST BROMWICH ALBION GROUP LIMITED
+
+DIRECTOR'S REPORT
+
+FOR THE YEAR ENDED 30 JUNE 2025
+
+The director presents his annual report and financial statements for the year ended 30 June 2025.
+
+Principal activities
+
+The principal activity of the company (‘the Group","the Club") continued to be that of an intermediate holding
+
+company for a group of companies whose main activity is that of a Professional Football Club.
+
+Results and dividends
+
+The results for the year are set out on page 12.
+
+No ordinary dividends were paid. The director does not recommend payment of a dividend.
+
+Director
+
+The director who held office during the year and up to the date of signature of the financial statements was as
+
+follows:
+
+S Patel
+
+Disabled persons
+
+Applications for employment by disabled persons are always fully considered, bearing in mind the aptitudes of the
+
+applicant concerned. In the event of members of staff becoming disabled, every effort is made to ensure that their
+
+employment within the group continues and that the appropriate training is arranged. It is the policy of the Group
+
+that the training, career development and promotion of disabled persons should, as far as possible, be identical to
+
+that of other employees.
+
+Employee involvement
+
+The Group's policy is to consult and discuss with employees matters likely to affect employees’ interests.
+
+Information about matters of concern to employees is given through information bulletins and reports which seek to
+
+achieve a common awareness on the part of all employees of the financial and economic factors affecting the
+
+Group's performance.
+
+Post reporting date events
+
+Since the Balance Sheet date various players have been signed and sold. Player Sales include Tom Fellows to
+
+Southampton, Torbjorn Heggem to Bologna, Caleb Taylor to Millwall and Darnell Furlong to Ipswich. Players
+
+acquired were Krystian Bielik, Aune Heggebo, George Campbell, Chris Mepham and Alfie Gilchrist.
+
+The income arising from transfers and compensation agreements, less the applicable levies and sell on clauses, is
+
+£19,370,000 for the year ending June 2026.
+
+The Club acquired various players from transfers including the applicable levies at a cost of £10,000,000. These
+
+transfers will be accounted for in the year ending June 2026.
+
+Bilkul Football WBA, LLC, have continued to provide operating monies for the Club. Additional funding totalling
+
+£12,862,000 has been received. These monies have been transferred to West Bromwich Albion Football Club
+
+Limited from West Bromwich Albion Group Limited.
+
+On 15 September 2025, Managing Director Mark Miles stepped down from his role. Andrew Nestor was appointed
+
+as President of West Bromwich Albion Football Club on 17 September 2025. The Club also announced the
+
+appointments of Ashish Patel as Chief Marketing Officer and Ethan Gobetz as Chief Financial Officer.
+
+Auditor
+
+The auditor, Azets Audit Services, is deemed to be reappointed under section 487(2) of the Companies Act 2006.
+-5- i —
+WEST BROMWICH ALBION GROUP LIMITED
+DIRECTOR'S REPORT (CONTINUED)
+; FOR THE YEAR ENDED 30 JUNE 2025
+
+Statement of disclosure to auditor
+So far as each person who was a director at the date of approving this report is aware, there is no relevant audit
+information of which the auditor of the company is unaware. Additionally, the directors individually have taken all the
+necessary steps that they ought to have taken as directors in order to make themselves aware of all relevant audit
+information and to establish that the auditor of the company is aware of that information.
+Going concern and future developments
+These financial statements are prepared on the going concern basis. The director assesses going concern on a
+group wide basis. The director has a reasonable expectation that the West Bromwich Albion group of companies will
+continue to operate for the foreseeable future. This being at least 12 months from the approval of the financial
+statements.
+Following a fourth season within the EFL Championship in season 2024/25, the Board have paid due consideration
+to the overall club strategy, playing squad, and operating and financing cash flows, including all significant revenue
+streams, the operating cost base of the club, player trading and sources of finance.
+The Group prepares detailed cash flow forecasts each financial year considering a range of reasonably foreseeable
+potential scenarios in relation to income and costs, and has done so until the conclusion of season 2026/27 — to 30
+June 2027.
+Bilkul Football WBA, LLC have issued a letter of support to the West Bromwich Albion Group of companies
+indicating their intention to continue to provide financial support to the Group, enabling liabilities to be met as they
+fall due for a period of at least 12 months from the date of signing the financial statements. This includes the non-
+recall of existing shareholder loans provided to the Group.
+The Club retains a level of flexibility in its playing squad options and the director will balance the financial needs with
+a squad that has the ability to still succeed in the EFL Championship.
+Based on the above, the director remains confident the Group will generate sufficient resources to meet its liabilities
+as they fall due for a period of at least 12 months and has therefore concluded that it is appropriate for the financial
+statements to be prepared on a going concern basis.
+
+SEq sae en fo) Sse Sn ES ESOS See Sl eee SS ee
+WEST BROMWICH ALBION GROUP LIMITED
+DIRECTOR'S REPORT (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2025
+Statement of carbon emissions in compliance with Streamlined Energy and Carbon Reporting (SECR)
+Year Ended 30 Year Ended 30
+June 2025 June 2024
+, Total energy use covering electricity, gas, other fuels and 7,005,347 5,103,620kWh
+transport
+Total emissions generated through combustion of gas 326 , 298tCO2e
+Total emissions generated through use of purchased electricity 481 483tCO2e
+Total emissions generated through use of other fuels 564 470tCO2e
+Total emissions generated through business travel 498 166tCO2e
+Total gross emissions ; 1,869 1,416tCO2e
+Intensity ratio (total gross emissions) by square foot Club 8.70 6.60kgCO2e .
+premises
+The Club actively applied various projects and polices during and after the reporting period with the purpose of
+increasing the energy efficiency of the Club. The main driver of increase year on year in scope 3 emissions is due to
+improvements in the capture of travel data/mileage for 2024/25. Another contributing factor was increased matchday
+amenities including the offer of draft alcoholic drinks now across the Hawthorns stadium.
+The Club is committed to responsible energy management and will continue to practice energy efficiency. The Club
+recognises that climate change is a serious environmental challenge currently threatening the global community and
+we understand we all have a role to play in reducing greenhouse gas emissions.
+The above has been compiled using SECR methodology (as specified in “Environmental reporting guidelines:
+including Streamlined Energy and Carbon Reporting and greenhouse gas reporting”) used in conjunction with
+Government GHG reporting conversion factors.
+On behalf of the board
+ma
+Director
+WEST BROMWICH ALBION GROUP LIMITED
+DIRECTOR'S RESPONSIBILITIES STATEMENT
+FOR THE YEAR ENDED 30 JUNE 2025
+The director is responsible for preparing the Annual Report and the financial statements in accordance with
+applicable law and regulations.
+Company law requires the director to prepare financial statements for each financial year. Under that law the
+director has elected to prepare the financial statements in accordance with United Kingdom Generally Accepted
+Accounting Practice (United Kingdom Accounting Standards and applicable law). Under company law the director
+must not approve the financial statements unless he is satisfied that they give a true and fair view of the state of
+affairs of the group and company, and of the profit or loss of the group for that period. In preparing these financial
+statements, the director is required to:
+
+¢ select suitable accounting policies and then apply them consistently;
+
+* make judgements and accounting estimates that are reasonable and prudent;
+
+¢ state whether applicable UK Accounting Standards have been followed, subject to any material departures
+
+disclosed and explained in the financial statements;
+* prepare the financial statements on the going concern basis unless it is inappropriate to presume that the
+group and company will continue in business.
+The director is responsible for keeping adequate accounting records that are sufficient to show and explain the
+group’s and company’s transactions and disclose with reasonable accuracy at any time the financial position of the
+group and company and enable him to ensure that the financial statements comply with the Companies Act 2006.
+He is also responsible for safeguarding the assets of the group and company and hence for taking reasonable steps
+for the prevention and detection of fraud and other irregularities. .
+ene “lg. 0 0 0 0" EE IESSEo eile arses Pood wes
+WEST BROMWICH ALBION GROUP LIMITED
+INDEPENDENT AUDITOR'S REPORT
+TO THE MEMBERS OF WEST BROMWICH ALBION GROUP LIMITED
+Opinion
+We have audited the financial statements of West Bromwich Albion Group Limited (the ‘parent company’) and its
+subsidiaries (the ‘group') for the year ended 30 June 2025 which comprise the group statement of comprehensive
+income, the group balance sheet, the company balance sheet, the group statement of changes in equity, the
+company statement of changes in equity, the group statement of cash flows and notes to the financial statements,
+including significant accounting policies. The financial reporting framework that has been applied in their preparation
+is applicable law and United Kingdom Accounting Standards, including Financial Reporting Standard 102 The
+Financial Reporting Standard applicable in the UK and Republic of Ireland (United Kingdom Generally Accepted
+Accounting Practice).
+In our opinion the financial statements:
+* give a true and fair view of the state of the group's and the parent company's affairs as at 30 June 2025 and of
+the group's loss for the year then ended;
+« have been properly prepared in accordance with United Kingdom Generally Accepted Accounting Practice; and
+* have been prepared in accordance with the requirements of the Companies Act 2006.
+Basis for opinion
+We conducted our audit in accordance with International Standards on Auditing (UK) (ISAs (UK)) and applicable
+law. Our responsibilities under those standards are further described in the Auditor's responsibilities for the audit of
+the financial statements section of our report. We are independent of the group and parent company in accordance
+with the ethical requirements that are relevant to our audit of the financial statements in the UK, including the FRC’s
+Ethical Standard, and we have fulfilled our other ethical responsibilities in accordance with these requirements. We
+believe that the audit evidence we have obtained is sufficient and appropriate to provide a basis for our opinion.
+Conclusions relating to going concern
+In auditing the financial statements, we have concluded that the director's use of the going concern basis of
+accounting in the preparation of the financial statements is appropriate.
+Based on the work we have performed, we have not identified any material uncertainties relating to events or
+conditions that, individually or collectively, may cast significant doubt on the group's and parent company's ability to
+continue as a going concern for a period of at least twelve months from when the financial statements are
+authorised for issue.
+Our responsibilities and the responsibilities of the director with respect to going concern are described in the
+relevant sections of this report.
+Other information
+The other information comprises the information included in the annual report other than the financial statements
+and our auditor's report thereon. The director is responsible for the other information contained within the annual
+report. Our opinion on the financial statements does not cover the other information and, except to the extent
+otherwise explicitly stated in our report, we do not express any form of assurance conclusion thereon. Our
+responsibility is to read the other information and, in doing so, consider whether the other information is materially
+inconsistent with the financial statements or our knowledge obtained in the course of the audit, or otherwise appears
+to be materially misstated. If we identify such material inconsistencies or apparent material misstatements, we are
+required to determine whether this gives rise to a material misstatement in the financial statements themselves. If,
+based on the work we have performed, we conclude that there is a material misstatement of this other information,
+we are required to report that fact.
+We have nothing to report in this regard.
+Opinions on other matters prescribed by the Companies Act 2006
+In our opinion, based on the work undertaken in the course of our audit:
+* The information given in the strategic report and the director's report for the financial year for which the financial
+statements are prepared is consistent with the financial statements; and
+* The strategic report and the director's report have been prepared in accordance=with-applicable le gal=e—
+requirements. ne en cnn RE Tre
+-9- SES TS ae Pa
+

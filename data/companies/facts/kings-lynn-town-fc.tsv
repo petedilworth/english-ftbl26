@@ -1,0 +1,75 @@
+club_id	company_number	document	filing_date	made_up_date	concept	prefix	kind	period_start	period_end	instant	dimensions	unit	value
+kings-lynn-town-fc	07121774	TPkClpIjzDDA6JO5YxCgqz0hSMi7DDIvpgfKa-xx-94	2025-07-04	2025-01-31	AccountingStandardsApplied	uk-bus	text	2024-02-01	2025-01-31		AccountingStandardsDimension=FRS102		
+kings-lynn-town-fc	07121774	TPkClpIjzDDA6JO5YxCgqz0hSMi7DDIvpgfKa-xx-94	2025-07-04	2025-01-31	AccountsStatusAuditedOrUnaudited	uk-bus	text	2024-02-01	2025-01-31		AccountsStatusDimension=AuditExempt-NoAccountantsReport		
+kings-lynn-town-fc	07121774	TPkClpIjzDDA6JO5YxCgqz0hSMi7DDIvpgfKa-xx-94	2025-07-04	2025-01-31	AccountsType	uk-bus	text	2024-02-01	2025-01-31		AccountsTypeDimension=FullAccounts		
+kings-lynn-town-fc	07121774	TPkClpIjzDDA6JO5YxCgqz0hSMi7DDIvpgfKa-xx-94	2025-07-04	2025-01-31	BalanceSheetDate	uk-bus	text		2025-01-31	1			31 January 2025
+kings-lynn-town-fc	07121774	TPkClpIjzDDA6JO5YxCgqz0hSMi7DDIvpgfKa-xx-94	2025-07-04	2025-01-31	CalledUpShareCapitalNotPaidNotExpressedAsCurrentAsset	uk-core	num		2024-01-31	1		GBP	2
+kings-lynn-town-fc	07121774	TPkClpIjzDDA6JO5YxCgqz0hSMi7DDIvpgfKa-xx-94	2025-07-04	2025-01-31	CalledUpShareCapitalNotPaidNotExpressedAsCurrentAsset	uk-core	num		2025-01-31	1		GBP	2
+kings-lynn-town-fc	07121774	TPkClpIjzDDA6JO5YxCgqz0hSMi7DDIvpgfKa-xx-94	2025-07-04	2025-01-31	CompanyHasActedAsAnAgentDuringPeriodTruefalse	uk-direp	text	2024-02-01	2025-01-31				false
+kings-lynn-town-fc	07121774	TPkClpIjzDDA6JO5YxCgqz0hSMi7DDIvpgfKa-xx-94	2025-07-04	2025-01-31	DateAuthorisationFinancialStatementsForIssue	uk-core	text		2025-01-31	1			4 July 2025
+kings-lynn-town-fc	07121774	TPkClpIjzDDA6JO5YxCgqz0hSMi7DDIvpgfKa-xx-94	2025-07-04	2025-01-31	DescriptionShareType	uk-bus	text	2024-02-01	2025-01-31		EntityShareClassesDimension=OrdinaryShareClass1		Ordinary
+kings-lynn-town-fc	07121774	TPkClpIjzDDA6JO5YxCgqz0hSMi7DDIvpgfKa-xx-94	2025-07-04	2025-01-31	DirectorSigningFinancialStatements	uk-core	text	2024-02-01	2025-01-31		EntityOfficersDimension=Director1		
+kings-lynn-town-fc	07121774	TPkClpIjzDDA6JO5YxCgqz0hSMi7DDIvpgfKa-xx-94	2025-07-04	2025-01-31	DirectorSigningFinancialStatements	uk-core	text	2024-02-01	2025-01-31		EntityOfficersDimension=Director2		
+kings-lynn-town-fc	07121774	TPkClpIjzDDA6JO5YxCgqz0hSMi7DDIvpgfKa-xx-94	2025-07-04	2025-01-31	EndDateForPeriodCoveredByReport	uk-bus	text		2025-01-31	1			2025-01-31
+kings-lynn-town-fc	07121774	TPkClpIjzDDA6JO5YxCgqz0hSMi7DDIvpgfKa-xx-94	2025-07-04	2025-01-31	EntityCurrentLegalOrRegisteredName	uk-bus	text	2024-02-01	2025-01-31				KING'S LYNN TOWN FOOTBALL CLUB LTD
+kings-lynn-town-fc	07121774	TPkClpIjzDDA6JO5YxCgqz0hSMi7DDIvpgfKa-xx-94	2025-07-04	2025-01-31	EntityDormantTruefalse	uk-bus	text	2024-02-01	2025-01-31				true
+kings-lynn-town-fc	07121774	TPkClpIjzDDA6JO5YxCgqz0hSMi7DDIvpgfKa-xx-94	2025-07-04	2025-01-31	EntityTradingStatus	uk-bus	text	2024-02-01	2025-01-31		EntityTradingStatusDimension=EntityHasNeverTraded		
+kings-lynn-town-fc	07121774	TPkClpIjzDDA6JO5YxCgqz0hSMi7DDIvpgfKa-xx-94	2025-07-04	2025-01-31	Equity	uk-core	num		2024-01-31	1		GBP	2
+kings-lynn-town-fc	07121774	TPkClpIjzDDA6JO5YxCgqz0hSMi7DDIvpgfKa-xx-94	2025-07-04	2025-01-31	Equity	uk-core	num		2025-01-31	1		GBP	2
+kings-lynn-town-fc	07121774	TPkClpIjzDDA6JO5YxCgqz0hSMi7DDIvpgfKa-xx-94	2025-07-04	2025-01-31	NameEntityOfficer	uk-bus	text	2024-02-01	2025-01-31		EntityOfficersDimension=Director1		Nigel Barrett
+kings-lynn-town-fc	07121774	TPkClpIjzDDA6JO5YxCgqz0hSMi7DDIvpgfKa-xx-94	2025-07-04	2025-01-31	NameProductionSoftware	uk-bus	text	2024-02-01	2025-01-31				Companies House
+kings-lynn-town-fc	07121774	TPkClpIjzDDA6JO5YxCgqz0hSMi7DDIvpgfKa-xx-94	2025-07-04	2025-01-31	NetAssetsLiabilities	uk-core	num		2024-01-31	1		GBP	2
+kings-lynn-town-fc	07121774	TPkClpIjzDDA6JO5YxCgqz0hSMi7DDIvpgfKa-xx-94	2025-07-04	2025-01-31	NetAssetsLiabilities	uk-core	num		2025-01-31	1		GBP	2
+kings-lynn-town-fc	07121774	TPkClpIjzDDA6JO5YxCgqz0hSMi7DDIvpgfKa-xx-94	2025-07-04	2025-01-31	NumberSharesAllotted	uk-core	num	2024-02-01	2025-01-31		EntityShareClassesDimension=OrdinaryShareClass1	shares	2
+kings-lynn-town-fc	07121774	TPkClpIjzDDA6JO5YxCgqz0hSMi7DDIvpgfKa-xx-94	2025-07-04	2025-01-31	ParValueShare	uk-core	num	2024-02-01	2025-01-31		EntityShareClassesDimension=OrdinaryShareClass1	GBP/shares	1
+kings-lynn-town-fc	07121774	TPkClpIjzDDA6JO5YxCgqz0hSMi7DDIvpgfKa-xx-94	2025-07-04	2025-01-31	StartDateForPeriodCoveredByReport	uk-bus	text		2025-01-31	1			2024-02-01
+kings-lynn-town-fc	07121774	TPkClpIjzDDA6JO5YxCgqz0hSMi7DDIvpgfKa-xx-94	2025-07-04	2025-01-31	StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime	uk-direp	text	2024-02-01	2025-01-31				These accounts have been prepared in accordance with the provisions applicable to companies subject to the small companies regime.
+kings-lynn-town-fc	07121774	TPkClpIjzDDA6JO5YxCgqz0hSMi7DDIvpgfKa-xx-94	2025-07-04	2025-01-31	StatementThatCompanyEntitledToExemptionFromAuditUnderSection480CompaniesAct2006RelatingToDormantCompanies	uk-direp	text	2024-02-01	2025-01-31				For the year ending 31 January 2025 the company was entitled to exemption under section 480 of the Companies Act 2006 relating to dormant companies.
+kings-lynn-town-fc	07121774	TPkClpIjzDDA6JO5YxCgqz0hSMi7DDIvpgfKa-xx-94	2025-07-04	2025-01-31	StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct	uk-direp	text	2024-02-01	2025-01-31				The directors acknowledge their responsibilities for complying with the requirements of the Act with respect to accounting records and the preparation of accounts.
+kings-lynn-town-fc	07121774	TPkClpIjzDDA6JO5YxCgqz0hSMi7DDIvpgfKa-xx-94	2025-07-04	2025-01-31	StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit	uk-direp	text	2024-02-01	2025-01-31				The members have not required the company to obtain an audit in accordance with section 476 of the Companies Act 2006.
+kings-lynn-town-fc	07121774	TPkClpIjzDDA6JO5YxCgqz0hSMi7DDIvpgfKa-xx-94	2025-07-04	2025-01-31	UKCompaniesHouseRegisteredNumber	uk-bus	text	2024-02-01	2025-01-31				07121774
+kings-lynn-town-fc	07121774	TPkClpIjzDDA6JO5YxCgqz0hSMi7DDIvpgfKa-xx-94	2025-07-04	2025-01-31	_GoingConcernMaterialUncertainty	derived	text						none found
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	AccountingStandardsApplied	uk-bus	text	2025-02-01	2026-01-31		AccountingStandardsDimension=Micro-entities		
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	AccountsStatusAuditedOrUnaudited	uk-bus	text	2025-02-01	2026-01-31		AccountsStatusDimension=AuditExempt-NoAccountantsReport		
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	AccountsType	uk-bus	text	2025-02-01	2026-01-31		AccountsTypeDimension=FullAccounts		
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	AccruedLiabilitiesNotExpressedWithinCreditorsSubtotal	uk-core	num		2025-01-31	1		GBP	0
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	AccruedLiabilitiesNotExpressedWithinCreditorsSubtotal	uk-core	num		2026-01-31	1		GBP	0
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	AverageNumberEmployeesDuringPeriod	uk-core	num	2024-02-01	2025-01-31			GBP	0
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	AverageNumberEmployeesDuringPeriod	uk-core	num	2025-02-01	2026-01-31			GBP	0
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	BalanceSheetDate	uk-bus	text		2026-01-31	1			31 January 2026
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	CalledUpShareCapitalNotPaidNotExpressedAsCurrentAsset	uk-core	num		2025-01-31	1		GBP	2
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	CalledUpShareCapitalNotPaidNotExpressedAsCurrentAsset	uk-core	num		2026-01-31	1		GBP	2
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	Creditors	uk-core	num		2025-01-31	1	MaturitiesOrExpirationPeriodsDimension=AfterOneYear	GBP	0
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	Creditors	uk-core	num		2025-01-31	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	0
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	Creditors	uk-core	num		2026-01-31	1	MaturitiesOrExpirationPeriodsDimension=AfterOneYear	GBP	0
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	Creditors	uk-core	num		2026-01-31	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	0
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	DateAuthorisationFinancialStatementsForIssue	uk-core	text		2026-01-31	1			24 September 2026
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	DirectorSigningFinancialStatements	uk-core	text	2025-02-01	2026-01-31		EntityOfficersDimension=Director1		
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	DirectorSigningFinancialStatements	uk-core	text	2025-02-01	2026-01-31		EntityOfficersDimension=Director2		
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	EndDateForPeriodCoveredByReport	uk-bus	text		2026-01-31	1			2026-01-31
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	EntityCurrentLegalOrRegisteredName	uk-bus	text	2025-02-01	2026-01-31				KING'S LYNN TOWN FOOTBALL CLUB LTD
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	EntityDormantTruefalse	uk-bus	text	2025-02-01	2026-01-31				false
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	EntityTradingStatus	uk-bus	text	2025-02-01	2026-01-31				
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	Equity	uk-core	num		2025-01-31	1		GBP	2
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	Equity	uk-core	num		2026-01-31	1		GBP	2
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	FixedAssets	uk-core	num		2025-01-31	1		GBP	0
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	FixedAssets	uk-core	num		2026-01-31	1		GBP	0
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	NameEntityOfficer	uk-bus	text	2025-02-01	2026-01-31		EntityOfficersDimension=Director1		Nigel Barrett
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	NameProductionSoftware	uk-bus	text	2025-02-01	2026-01-31				Companies House
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	NetAssetsLiabilities	uk-core	num		2025-01-31	1		GBP	2
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	NetAssetsLiabilities	uk-core	num		2026-01-31	1		GBP	2
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	NetCurrentAssetsLiabilities	uk-core	num		2025-01-31	1		GBP	0
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	NetCurrentAssetsLiabilities	uk-core	num		2026-01-31	1		GBP	0
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	PrepaymentsAccruedIncomeNotExpressedWithinCurrentAssetSubtotal	uk-core	num		2025-01-31	1		GBP	0
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	PrepaymentsAccruedIncomeNotExpressedWithinCurrentAssetSubtotal	uk-core	num		2026-01-31	1		GBP	0
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	ProvisionsForLiabilitiesBalanceSheetSubtotal	uk-core	num		2025-01-31	1		GBP	0
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	ProvisionsForLiabilitiesBalanceSheetSubtotal	uk-core	num		2026-01-31	1		GBP	0
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	StartDateForPeriodCoveredByReport	uk-bus	text		2026-01-31	1			2025-02-01
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime	uk-direp	text	2025-02-01	2026-01-31				The accounts have been prepared in accordance with the micro-entity provisions and delivered in accordance with the provisions applicable to companies subject to the small companies regime.
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies	uk-direp	text	2025-02-01	2026-01-31				For the year ending 31 January 2026 the company was entitled to exemption under section 477 of the Companies Act 2006 relating to small companies.
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct	uk-direp	text	2025-02-01	2026-01-31				The directors acknowledge their responsibilities for complying with the requirements of the Companies Act 2006 with respect to accounting records and the preparation of accounts.
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit	uk-direp	text	2025-02-01	2026-01-31				The members have not required the company to obtain an audit in accordance with section 476 of the Companies Act 2006.
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	TotalAssetsLessCurrentLiabilities	uk-core	num		2025-01-31	1		GBP	2
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	TotalAssetsLessCurrentLiabilities	uk-core	num		2026-01-31	1		GBP	2
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	UKCompaniesHouseRegisteredNumber	uk-bus	text	2025-02-01	2026-01-31				07121774
+kings-lynn-town-fc	07121774	fkdkOfO3uem6ZCJxiUbf13bp4NaRRrVYZTlQm_U5Cbc	2026-09-24	2026-01-31	_GoingConcernMaterialUncertainty	derived	text						none found

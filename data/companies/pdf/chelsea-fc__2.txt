@@ -1,0 +1,446 @@
+source: Companies House filing, chelsea-fc__2.pdf
+document: A98hg07v8VR5p-e0h8ni31Wu5ip72VoysIThYMRE0ks
+made_up_date: 2024-06-30
+method: ocr
+pages_read: 12 of 37
+
+“Docusign Envelope ID: ABCCFE04-F2E4-4FEA-9CFC-265F42C4AF09
+‘Company registration number 01965149 (England and Wales}
+; CHELSEA FOOTBALL CLUB LIMITED
+ANNUAL REPORT AND FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+e {
+2 |
+bs *ADZDROSY*
+AN 29/03/2025 #207 |
+Docusign Envelope ID: ABCCFE04-F2E4-4FEA-9CFC-265F42C4AF 09
+CHELSEA FOOTBALL CLUB LIMITED
+COMPANY INFORMATION
+Directors D Barnard
+
+T Boehly
+
+B Charone
+
+B Eghbali
+
+J Feliciano
+
+Lord D Finkelstein
+
+J Goldstein
+
+J Pade
+
+M Walter
+
+H Wyss
+
+C Jurasek (Appointed 21 August 2023)
+Secretary J Bonington
+Company number 01965149 :
+Registered office Stamford Bridge
+
+Fulham Road
+
+London
+
+SW6 1HS
+Auditor KPMG LLP
+
+15 Canada Square
+
+London
+
+E14 5GL
+Docusign Envelope ID: ABCCFE04-F2E4-4FEA-9CFC-265F42C4AF09 , _ _
+CHELSEA FOOTBALL CLUB LIMITED
+CONTENTS
+Page
+/ Strategic report 1-6
+| Directors' report | 7-8 .
+Directors’ responses statement 9
+Independent auditor's report to the members of Chelsea Football Club Limited 10-13
+Profit and loss account ; 14
+Statement of comprehensive income 15 : ,
+Balance sheet 16
+: Statement of changes in equity 17 .
+Notes to the financial statements | 18 - 34
+Docusign Envelope ID: ABCCFE04-F2E4-4FEA-9CFC-265F42C4AF09
+
+CHELSEA FOOTBALL CLUB LIMITED
+STRATEGIC REPORT
+FOR THE YEAR ENDED 30 JUNE 2024
+The directors present the strategic report of Chelsea Football Club Limited ("the Company" or "the Club") for the
+year ended 30 June 2024.
+Principal activity :
+The Company's principal activity during the year continued to be that of a Premier League football club.
+Results for the year
+The loss for the year, after taxation, was £64.7m (2023: loss of £166.8m).
+Directors’ duties under section 172
+The purpose of this statement is to outline how, during the year, the directors of the company had regard to the
+matters set out in section 172(1) (a) to (f) of the Companies Act 2006 when performing their duties under section
+172.
+Under section 172(1) a director of a company must act in the way that he or she considers, in good faith, would be
+most likely to promote the success of the company for the benefit of its members as a whole, and in doing so have
+regard (amongst other matters) to:
+
+« the likely consequences of any decision in the long term;
+
+« the interests of the company’s employees; .
+
++ the need to foster the company’s business relationships with suppliers, customers and others;
+
++ the impact of the company’s operations on the community and the environment;
+
+« the desirability of the company maintaining a reputation for high standards of business conduct; and
+
++ the need to act fairly towards all members of the company.
+In order to fulfil their duties under section 172, the directors need to ensure that the company not only acts in
+accordance with its legal duties but also has regard for, all its stakeholders when taking decisions. Understanding
+the company’s stakeholders and how they and their interests will impact on the strategy and success of the
+company over the long term is a key factor in the decisions that the Board make.
+Fans
+Every decision made at Chelsea FC is taken with the direct or indirect aim of promoting and Improving on pitch
+performance and, in turn, to provide enjoyment and entertainment to our fans. The Club's ownership group is firmly
+committed to building on the Club’s remarkable history of success and making fans proud.
+The Club continues to offer a range of ways for supporters to find out about club activity, both domestic fanbase
+and those living overseas. Fans are informed about Club activity through its website, official app, social media,
+matchday programmes and more. Across all of these channels, we provide access to the players and coaches from
+our men’s, women's and academy teams as well as training and match highlights, all within the safety requirements
+of the Government, the Premier League and The Football Association.
+The Club continues to develop Fan Engagement, with the key role of the Fan Advisory Board (FAB) and the
+implementation of a dedicated Supporter Relations Team of 8 staff working across a multitude of projects and
+campaigns to enhance and develop the connection with our supporters.
+The FAB has played a pivotal role in club strategy that directly impacts Supporters. This is evident with the
+significant consultation between club officials and the FAB in the ticketing pricing producing an agreeable and
+collaborative strategy.
+The Club continues to meet with a cross section of supporters that reflect the diverse nature of Chelsea's support
+via the Fans Forum and Access Forum as well as a recently produced Forum dedicated to the Women’s Team. The
+Forums consist of a body of elected fans and senior members of the Club management and meet at least three
+times per season to discuss and debate Club matters with the aim of maintaining a positive and constructive
+dialogue between the Club and fans, developing a better understanding of matchday and operational issues that
+affect supporters and providing an opportunity for the Club to discuss new ideas.
+
+-1-
+a
+Docusign Envelope ID: ABCCFE04-F2E4-4F EA-9CFC-265F42C4AF09 .
+CHELSEA FOOTBALL CLUB LIMITED
+STRATEGIC REPORT (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+Fans (continued) .
+In engaging with fan representatives in this way we aim to ensure that supporters - whether part of a structured
+group or not - feel they can make their voice heard and their suggestions can be considered. The Club also
+regularly engages with unofficial supporters groups and supporters clubs around the world, alongside local
+residents who live around Stamford Bridge. With these groups, a number of Fan Engagement projects and
+campaigns have been implemented to address key supporter issues.
+Chelsea FC has expressed support for the Premier League's Fan Engagement Standard and will continue to work
+closely with the Premier League to ensure the standard is mainstreamed throughout the Club.
+Partners
+The commercial partners of the Club are fundamental to our success. The Club works hard to build long lasting
+relationships with like-minded brands that can help bring value to our club, our fans and our employees, moving
+beyond traditional partnering rights.
+It is also vitally important to the Club that partners understand our commitment to innovation, success and
+community support and engagement. For example, we look for partners that support fully the development and
+promotion of women's football in the UK and around the world, or that want to support our vast range of community
+programmes. The repositioning of the Women’s Team has provided the opportunity for focused partnerships and
+we are proud of the work our partners do alongside Chelsea FC and look forwarding to welcoming more partners to
+Chelsea FC in the future.
+Employees
+The Club's owners are determined to establish and nurture a culture of transparency, accountability, inclusivity,
+diversity and opportunity for all Chelsea employees. There is a clear intent for the Club to be a beacon of hope,
+positivity and good leadership for employees and the communities we all serve.
+The Club's owners will continue to build on the initial work they have already done to create a sustainable, positive
+culture that will ensure Chelsea FC’s future success.
+The physical and mental health and wellbeing of atl Chelsea employees is paramount. The owners’ mission is to
+create a workplace environment and corporate culture that empowers everyone in the Chelsea FC community to be
+safe, included, valued and trusted, and to work tirelessly to set and achieve the highest standards. An employee
+wellbeing survey has been implemented alongside a number of staff-led initiatives and activities to continue to use
+Mental Health Awareness Week as a catalyst.
+The Club's values are at the core of our people-related activities both on and off-the-pitch. Significant progress has
+been made in relation to equality, diversity and inclusion, promoting fair and equitable policies and procedures
+throughout its recruitment, retention, training, development, and recognition processes. The introduction of
+employee resource groups connected to ED&I (Equality, Diversion and Inclusion) will only further activity in this
+area. Chelsea FC is fully committed to equal and fair opportunities, demonstrated through the continued support of
+the London and National Living Wage, our Disability Confident accreditation, our early commitment to the FA
+Football Leadership Diversity Code and continued work on the Premier League Equality Standard at Advanced
+Level.
+Shareholders
+The Company is owned by a consortium led by Todd Boehly, chairman and CEO of Eldridge, and Clearlake.
+The shareholders are kept fully informed of the Company’s actual and forecast results and funding requirements.
+Decisions are only made in relation to the long-term strategy of the Club following thorough discussions between
+board members and the shareholders.
+-2-
+Docusign Envelope ID: ABCCFE04-F2E4-4FEA-9CFC-265F42C4AF09
+CHELSEA FOOTBALL CLUB LIMITED
+STRATEGIC REPORT (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+Regulatory bodies
+The Club is regulated by The FA, the Premier League, UEFA and FIFA. As explained elsewhere in the Strategic
+Report, the Club actively engages with these regulatory bodies and monitors compliance with all regulations.
+Suppliers
+The Company’s suppliers are integral to the day-to-day operation of the business. Relationships are carefully
+managed to ensure that the Company is always obtaining value for money and reflect the values of the club. The
+Company seeks to ensure that good relationships are maintained with suppliers through regular contact and the
+prompt payment of invoices.
+Other stakeholders and the wider community
+The Club is committed to ensuring that none of its activities have a detrimental impact on the wider community. The
+Chelsea Foundation has undergone a strategic review to ensure we focus on our local community close to
+Kingsmeadow, Stamford Bridge and Chelsea Training Ground in Cobham. The Chelsea Foundation will work
+closely with fan-led initiatives and various projects designed to use the power of football and sport to motivate,
+educate and inspire.
+With a hyper-local focus, The Chelsea Foundation works on a broad range of initiatives focusing on employment,
+education, social deprivation, crime reduction, youth offending and much more.
+The Club continually tracks and reviews to work towards further sustainable and environmentally friendly projects.
+The formation of a fans sustainability group will help us continue to measure our environmental impact. The
+intention is to continue to improve efficiency in the use of all resources and adopt an approach to implement tow
+and zero carbon technologies where appropriate.
+The Club is committed to treating all relevant legal and environmental legislation and guidelines as a minimum
+requirement and will seek to exceed them wherever possible. The Club is also fully (Energy Savings Opportunities
+Scheme) ESOS compliant. The club has conducted a high level assessment of potential climate related risks at
+year end, this is a developing process which we will continually look to work on in future reporting periods. At this
+time the club see the process of managing these risks as having no material impact on the business.
+Decision making and section 172 of the Companies Act 2006
+The Club's primary strategy is to deliver on-field success, whilst taking into consideration all stakeholders.
+During the past year the Club continued to support the needs of staff and the wider community.
+The Chelsea Foundation continues to provide outstanding leadership, with its staff at the forefront of the delivery of
+education programmes and established support sessions for people of all ages.
+The Club continues to expand our anti-discrimination work with its No To Hate campaign. Using the Club's global
+reach, we provide guidance for fans on how to report racist abuse, both in the stadium and online. We work to
+identify perpetrators of racist abuse and take the strongest possible action against them, working with police and
+authorities to secure prosecutions. The club will continue to work with football authorities and campaigning
+organisations to support best practice on tackling racism and promoting equality, diversity and inclusion.
+The No To Hate campaign runs in tandem with the Club’s Equality Action Plan, as well as our work as signatories to
+the FA's Football Leadership Diversity Code and our support for the Premier League’s No Room For Racism Action
+Plan.
+The Club also took action to manage costs throughout the period to protect the wider commercial interests of the
+business.
+
+-3-
+a
+Docusign Envelope ID: ABCCFE04-F2E4-4FEA-9CFC-265F42C4AF09
+
+CHELSEA FOOTBALL CLUB LIMITED
+STRATEGIC REPORT (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+Fair review of the business
+Profit and Loss
+The loss for the year before taxation was £64.7m compared to a loss of £166.8m for the prior year. Overall revenue
+decreased by £59.8m, however cost of sales and administrative expenses also decreased by £101.4m and profit
+on disposal of player registrations increased by £89.5m.
+This year saw an overall decrease in turnover from £474.8m to £415.0m, largely due to the men’s team not
+participating in the UEFA Champions League.
+Matchday revenue increased from £73.7m in the prior year to £76.4m, as more fixtures were held at Stamford
+Bridge and average attendance of around 40,000 was maintained.
+Overall, broadcasting revenue decreased by £62.8m to £163.1m compared to the prior year. The Club generated
+significantly less revenue from UEFA as the men’s team did not qualify for UEFA Champions League. This was
+partly offset by the men’s team 6" place finish in the Premier League, resulting in a higher domestic broadcasting
+share compared to last season.
+Overall, operating expenses of £266.2m decreased by £19.8m compared to the previous year. This was principally
+because of decreased player amortisation (to £189.2m) and reduced cost of sales. .
+The football club made a net profit on player trading of £152.2m in the year (2023: £62.7m) principally due to the
+sales of Mason Mount to Manchester United, lan Maatsen to Aston Villa, Lewis Hall to Newcastle United and Omari
+Hutchinson to Ipswich Town. In addition, the Club realised contingent fees in relation to a number of previous
+transfers and incurred costs relating to the changes made to the men’s first team management in the year.
+
+. Balance Sheet ,
+Intangible assets have increased to £1,030.7m from £703.9m. This movement is largely due to £550.4m of player
+acquisitions including Cole Palmer from Manchester City, Moisés Caicedo and Robert Sanchez from Brighton &
+Hove Albion, Roméo Lavia from Southampton FC, Christopher Nkunku from RB Leipzig, Axel Disasi from AS
+Monaco, Kiernan Dewsbury-Hall from Leicester City, Lesley Ugochukwu from Stade Rennais FC and Omari
+Kellyman from Aston Villa. This was offset by total amortisation of £189.2m and the disposal of player registrations
+with a combined net book value of £34.3m.
+
+Tangible fixed assets are £143.0m at the year end with additions of £11.4m in the year offset by £10.1m of
+depreciation.
+Net current liabilities of £2,078.1m have increased from £1,645.5m (restated) in the prior year. This is because of a
+net increase in short term creditors of £429.7m, principally relating to increased amounts owed to the parent
+company and increased trade creditors.
+Creditors falling due after more than one year have decreased from £259.8m (restated) to £219.3m. This is due to
+an decrease in long term trade creditors relating to player trading activity.
+
+-4-
+Docusign Envelope ID: ABCCFE04-F2E4-4FEA-9CFC-265F42C4AF09
+CHELSEA FOOTBALL CLUB LIMITED
+STRATEGIC REPORT (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+Fair review of the business (continued)
+Principal risks and uncertainties
+There are a number of potential risks and uncertainties which could have a material impact on the Club’s long-term
+performance. These risks and uncertainties are monitored by the Board on a regular basis. The Directors have
+specifically considered the additional risk to the Club of the ongoing level of high inflation being seen in the UK
+including the impact of increased energy prices and the impact of the weakened pound compared to the US dollar.
+Forecasted increases in operating costs because of these factors have been included in the Club's budget to
+assess potential additional funding requirements as described further in Note 1.3. The Directors have begun
+Monitoring the potential impact of climate change on the Club’s operations, which isn’t currently considered
+material.
+income
+The Club derives its income from football activities and related business activities of which there are three principal
+sources: matchday revenue, broadcasting and commercial income.
+Expenditure
+The Club's primary outgoings relate to matchday operations; the continued development of the football club’s
+brand; employee remuneration; support services to facilitate elite sporting performance; and the development of the
+playing squad. The last of these is achieved through a combination of activity in the transfer market and investment
+in the Club's academy and youth programmes to nurture and develop young players for the future. :
+Regulatory environment
+The football club is regulated by the rules of The FA, the Premier League, UEFA and FIFA. These regulations have
+a direct impact on the football club as they cover areas such as the division of centrally negotiated broadcasting
+and media agreements and the operation of the transfer market.
+The Club monitors its compliance with all applicable regulations on a continuous basis, considering the impact of
+potential changes and taking mitigating action where possible. The Club aims to balance success on the field
+together with the financial imperatives of complying with UEFA and Premier League financial regulations.
+Funding
+Funding is provided by the intermediate parent company, Blueco 22 Limited, which is controlled by a consortium ted
+_ by Todd Boehly and Clearlake.
+The Club reviews and updates its forecasts on a regular basis and keeps the parent company and ownership
+aware of its financial commitments going forward.
+-5-
+Docusign Envelope ID: ABCCFE04-F2E4-4FEA-9CFC-265F42C4AF09
+
+CHELSEA FOOTBALL CLUB LIMITED
+STRATEGIC REPORT (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+Key performance indicators
+The principal key performance indicators for 2023/24 of both a financial and non-financial nature were as follows:
+Non-financial
+
++ Premier League — 6" place (2023: 12" place)
+
+« FA Cup - Semi-Finals (2023: 3” round)
+
+« League Cup - Final (2023: 3% round)
+
++ Champions League — N/A — did not qualify (2023: Quarter Finals)
+
+« Average league attendance of 39,576 (2023: 40,002)
+Financial (reviewed by the Board on a monthly basis)
+
++ Revenue
+
+« Payroll costs
+. + Operating result before player trading and amortisation :
+
++ Gains/losses on player trading
+
+« Player acquisition costs
+
++ Compliance with UEFA Financial Fair Play Regulations
+
++ Compliance with Premier League enhanced financial regulations
+Fixed assets
+The movements in fixed assets during the year are as shown in notes 12 and 13 to the Financial Statements. The
+intangible fixed assets comprises the unamortised portion of the cost of players’ registrations as well as a small
+balance in relation to internally generated software.
+Officers of the Company have valued the playing staff and have deemed that an impairment of £Nil (2023: ENil) is
+necessary when comparing the valuation to a net book value of £1,030.1m (2023: £703.9m) as disclosed in Note
+12.
+Climate-related Financial Disclosures
+The Company is exempt from the requirement to include climate related financial disclosures due to this information
+being included in the group report of the parent undertaking, Chelsea FC Holdings Limited. The group report is
+prepared for the same financial year end as the Company.
+Going concern basis :
+The Company has received confirmation from the parent company that sufficient funds will be provided to finance
+the business for the foreseeable future. The Directors have therefore adopted the going concern basis in preparing
+these financial statements. See Note 1.2 of the financial statements for further details.
+On behal e board
+
+Brleded Eqfubali
+T Boehly B Eghbali
+Chairman Director
+J0/10/2024........
+-6- .
+Docusign Envelope ID: ABCCFE04-F2E4-4FEA-9CFC-265F42C4AF09
+CHELSEA FOOTBALL CLUB LIMITED
+DIRECTORS' REPORT
+FOR THE YEAR ENDED 30 JUNE 2024
+The directors present their annual report and financial statements for the year ended 30 June 2024.
+Principal activities
+The principal activity of the Company continued to be that of a Premier League football club.
+Results and dividends
+: The results for the year are set out on page 14.
+
+No ordinary dividends were paid. The directors do not recommend payment of a final dividend.
+Directors
+The directors who held office during the year and up to the date of signature of the financial statements were as
+follows:
+D Barnard
+T Boehly
+B Charone
+B Eghbali
+J Feliciano
+Lord D Finkelstein
+J Goldstein
+J Pade
+M Walter
+H Wyss
+C Jurasek (Appointed 21 August 2023)
+Disabled persons
+Disabled persons are given full and fair consideration in all applications for employment. Equal consideration is also
+given for training, career development and opportunities for promotion. If an existing employee becomes disabled,
+
+-- --.guch steps that are practical are taken, in respect of adjustments to premises or employment arrangements, to
+retain him/her in employment. Where appropriate, rehabilitation and suitable training are given.
+Employee involvement
+The Company recognises the importance of good employee relations and communications and involves employees
+as appropriate to the Company's circumstances. Employees are regularly kept informed of and express their view
+on activities which are of concern to them or are likely to affect their interests.
+Post reporting date events
+Since the year end the Company has acquired the registration of 7 football players at an initial cost of £167.8m and
+disposed of the registration of 8 players at a profit of £28.0m.
+Auditor
+The auditor, KPMG LLP, is deemed to be reappointed under section 487(2) of the Companies Act 2006.
+Energy and carbon report
+The Company is exempt from the requirement to include Streamlined Energy and Carbon Reporting (‘SECR’) data
+due to this information being included in the group report of the Parent Undertaking, Chelsea FC Holdings Limited.
+The group report is prepared for the same financial year end as the Company and complies with the SECR
+disclosure requirements set out in Part 7A of Schedule 7.
+
+-7-
+Docusign Envelope ID: ABCCFE04-F2E4-4FEA-9CFC-265F42C4AF09
+CHELSEA FOOTBALL CLUB LIMITED
+DIRECTORS' REPORT (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+Statement of disclosure to auditor
+So far as each person who was a director at the date of approving this report is aware, there is no relevant audit
+: information of which the Company's auditor is unaware. Additionally, the directors individually have taken all the
+necessary steps that they ought to have taken as directors in order to make themselves aware of all relevant audit
+information and to establish that the Company’s auditor is aware of that information.
+. On behaif o board
+Bdad Cafebali
+T Boehly B Eghbali
+Director Director
+Date: .......10/10/2024
+-8-
+Docusign Envelope ID: ABCCFE04-F2E4-4FEA-9CFC-265F42C4AF09
+CHELSEA FOOTBALL CLUB LIMITED
+DIRECTORS' RESPONSIBILITIES STATEMENT
+FOR THE YEAR ENDED 30 JUNE 2024
+The directors are responsible for preparing the Strategic Report, the Directors’ Report and the financial statements
+in accordance with applicable law and regulations.
+Company law requires the directors to prepare financial statements for each financial year. Under that law the
+directors have elected to prepare the financial statements in accordance with UK accounting standards and
+applicable law (UK Generally Accepted Accounting Practice), including FRS 102 The Financial Reporting Standard
+applicable in the UK and Republic of Ireland.
+Under company law the directors must not approve the financial statements unless they are satisfied that they give
+a true and fair view of the state of affairs of the company and of the profit or loss of the company for that period. In
+preparing these financial statements, the directors are required to:
++ select suitable accounting policies and then apply them consistently;
++ make judgements and accounting estimates that are reasonable and prudent;
++ state whether applicable UK accounting standards have been followed, subject to any material departures
+disclosed and explained in the financial statements
++ assess the company’s ability to continue as a going concern, disclosing, as applicable, matters related to
+going concern; and :
+« use the going concern basis of accounting unless they either intend to liquidate the company or to cease :
+operations, or have no realistic alternative but to do so.
+The directors are responsible for keeping adequate accounting records that are sufficient to show and explain the
+company’s transactions and disclose with reasonable accuracy at any time the financial position of the company
+and enable them to ensure that the financial statements comply with the Companies Act 2006. They are also
+responsible for such internal control as they determine is necessary to enable the preparation of financial
+statements that are free from material misstatement, whether due to fraud or error, and have general responsibility
+for taking such steps as are reasonably open to them to safeguard the assets of the company and to prevent and
+detect fraud and other irregularities.
+The directors are responsible for the maintenance and integrity of the corporate and financial information included
+on the Company’s website. Legislation in the United Kingdom governing the preparation and dissemination of
+financial statements may differ from legislation in other jurisdictions.
+-9- /
+

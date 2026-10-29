@@ -1,0 +1,505 @@
+source: Companies House filing, southampton-fc__1.pdf
+document: kGTRKOV5iyHDNFURXZLZt0OcdKswsgRZB7wJqKqy-WU
+made_up_date: 2025-06-30
+method: ocr
+pages_read: 12 of 41
+
+Docusign Envelope ID: 6CEBB23D-2247-4CCE-8E5E-F9AF233DBD21 :
+Southampton Football Club Limited
+Annual Report and Financial Statements
+Year Ended
+30 June 2025
+: Company Number 00053301
+ae ne en
+i}
+Pa 1
+Sy :
+Ae |
+Ee !
+a = * AEYNMCUX* :
+a” 26/03/2026 #128
+‘ COMPANIES HOUSE QU
+Docusign Envelope 1D: 6CEBB23D-2247-4CCE-8E5E-F9AF233DBD21 _
+Southampton Football Club Limited
+Company Information ,
+See
+Directors R Ankersen
+R Boegli
+P JS Parsons
+D Solak :
+AT Young
+Company secretary T Greenwell :
+Registered number 00053301
+Registered office —- St Mary's Stadium
+Britannia Road
+Southampton
+Hampshire
+S014 5FP
+Independent auditor BDO LLP
+Arcadia House
+Maritime Walk
+Ocean Village
+Southampton
+$014 3TL
+. 1 .
+Docusign Envelope ID: 6CEBB23D-2247-4CCE-8E5E-F9AF233DBD21
+Southampton Football Club Limited
+Contents
+
+Page
+Strategic Report 3-7
+Section 172 Statement 8-9
+Directors' Report 10-11
+Directors' Responsibilities Statement 12
+Independent Auditors’ Report 13-16
+Statement of Comprehensive Income 17
+Statement of Financial Position 18
+Statement of Changes in Equity 19
+Notes.to the Financial Statements 20-40
+
+2
+Docusign Envelope ID: 6CEBB23D-2247-4CCE-8E5E-F9AF233DBD21
+Southampton Football Club Limited
+: Strategic Report
+for the Year Ended 30 June 2025
+eee
+The principal activity of the company is that of a football club (Southampton Football Club Limited (the “Club”))
+whose men’s team participates in the English Football League Championship ("EFL Championship’).
+Football Overview
+From a sporting perspective, the 2024/25 season was a disappointing one for the first team, which culminated in
+relegation from the Premier League to the EFL Championship, with the team finishing a disappointing 20" place in
+the Premier League (2023/24: 4" place finish in EFL Championship and promotion to the Premier League via play-
+Offs).
+In the Cup competitions, the first team was knocked out of the EFL Cup by Liverpool in the quarter-finals (2023/24:
+first round). The Club reached the fourth round of the FA Cup (2023/24: fifth round) before losing to Burnley.
+In addition, during the year, the Club parted ways with two first team managers and associated support staff
+including Russell Martin in December 2024 and his replacement, Ivan Juric, in April 2025 with Simon Rusk taking
+over as interim first team manager for the remainder of the season.
+Prior to the commencement of the 2025/26 season, Will Still was appointed as the Club’s first team manager and
+at the time of writing, due to the difficult start to the season which has seen the Club placed 17" in the league, the
+Club parted ways with Will Stili and some of his support staff. Tonda Eckert, the U21 team’s head coach, is currently
+the interim first team manager. The Club also reached the third round of the EFL Cup before being knocked out by
+Liverpool for a second successive season.
+The U21 team finished in a strong 7' position in the U21 Premier League 2 in the 2024/25 season, eventually
+qualifying for, but unfortunately losing, the playoff final match against Manchester City to miss out on winning the
+league (2023/24: 17" place). At the time of writing, the U21 team has made a good start to the 2025/26 Premier
+League 2 season and is currently 5" out of 29 teams. The U21 team played their first fixture in the Premier League
+International Cup against the U21 Real Madrid team which drew in an impressive crowd of almost 11,000 to St
+Mary's. In 2023/24, the U21 team finished 7" place in their group in the Premier League International Cup. The
+team’s start in the group stages of the English National League Cup has been challenging (2023/24: finished 7® in
+their group).
+The U18 team season finished a very reputable 2" in the U18 Premier League South in 2024/25 season (2023/24:
+10), At the time of writing, the U18 team has enjoyed a good start to the 2025/26 U18 Premier League season
+and is currently 3° in the league. They also performed well in the FA Youth Cup during the season teaching the
+quarter finals, before being knocked out in the quarter finals by Watford (2023/24: 3" round).
+Financial Overview
+The club reports a loss before interest and tax of £33.8m (2024: profit of £34.2m). Cumulatively, over the two
+financial years, this is a total profit before interest and tax of £0.4m. Net liabilities increased from £68.4m to £113.2m
+with the increase attributable to the operating loss for 2025 in conjunction with overall losses generated from player
+trading. .
+A summary of results is given below:
+2025 2024
+. . £000 £000
+Turnover 157,520 84,001
+Operating costs 167,535 123,844
+Other operating income before player trading - 1,710
+Operating loss before player trading (10,015) (38,133)
+Player trading (23,802) 72,377
+Loss on disposal of assets - (47)
+Loss/(profit) before interest and tax (33,817) 34,197
+3
+Docusign Envelope ID: 6CEBB23D-2247-4CCE-8E5E-F9AF233DBD21
+Southampton Football Club Limited ,
+Strategic Report
+for the Year Ended 30 June 2025
+
+Financial Overview (continued)
+The first team was promoted to the Premier League at the end of the 2023/24 season off the back of a 4th place
+finish and play-off final win against Leeds United. Disappointingly, the 2024/25 season saw the first team finish in
+20th place in the Premier League, which led to relegation back to the EFL Championship for the 2025/26 season.
+The results of the financial year ended 30 June 2025 represent the season in which the Club participated in the
+Premier League and the comparative figures are those of the 2023/24 season in the EFL Championship.
+Consequently, as a result of promotion, the Club’s turnover increased by £73.5m from £84.0m to £157.5m in the
+year.
+This increase in turnover compared to the 2023/24 season is largely explained by broadcasting revenue, which is
+significantly higher in the Premier League than the EFL Championship. Consequently, broadcasting revenue
+increased from £55.9m to £114.7m, an increase of 105.2%. When compared to the 2022/23 Premier League
+season, broadcasting revenue increased by 6.2% from £108.0m.
+Match day revenue increased by 22.4% from £16.1m in the 2023/24 season to £19.7m in 2024/25. Compared to
+when the Club was competing in the Premier League during the 2022/23 season, match day revenue has increased
+
+: by 3.1% from £19.1m. 2024/25saw an incredibly successful sold-out season ticket campaign and an increase in
+revenue across both general admission and hospitality season tickets and match day tickets.
+Commercial revenue increased by 110.1% from £9.9m in 2023/24 to £20.8m in 2024/25, with the most significant
+increase attributable to commercial partnerships, primarily being the amount received from the Club’s main
+sponsor, In comparison, commercial revenue for the 2022/23 season in the Premier League was £15.4m,
+highlighting a significant increase of 35.1%. The Club is committed to driving commercial revenues in order to
+mitigate the significant discrepancy between the Premier League and EFL Championship broadcasting revenue.
+Further information on ongoing commercial revenue projects can be found in the “Infrastructure and People” section
+of this report.
+Other revenue increased marginally from £2.2m to £2.4m. Other revenue largely relates to grants received to
+support our Category 1 status academy.
+Operating loss before player trading has significantly improved by 73.6% from an operating loss of £38.1m in
+2023/24 to £10.0m in 2024/25. Further compared to the operating loss before player trading in the 2022/23 Premier
+League season, this still represents a 59.2% improvement. There are several factors which have contributed to this
+improvement, primarily being tight cost management — in particular regarding wages — and the investment into our
+commercial activities.
+In 2024/25, the Club has generated a loss before tax of £45.3m with a total loss on player trading of £23.8m
+contributing to over 52.5% of the total comprehensive loss before tax. The loss on player trading is driven by the
+player amortisation charge for the year exceeding the profits generated from the sale of players such as Alcaraz,
+Mara, Lyanco, Caleta-Car. As a result of promotion to the Premier League at the start of the 2024/25 season,
+significant investment was made into the playing squad with the purchases of Harwood-Bellis, Ramsdale, Downes,
+Archer, Fernandes, Brereton-Diaz, Sugawara, Kayi Sanda, Wood, Edwards and Juan.
+When comparing to the 2023/24 season, when the Club had just been relegated, the focus of player trading was
+more on profit-generating sales in order to counteract the significant drop in broadcasting revenue from the Premier
+League to the EFL Championship. This resulted in a comparable total profit on player trading of £74.8m driven by
+the sales of Diallo Salisu, Livramento, Lavia, Ward-Prowse, Tella, Djenepo and Perraud amongst others, together
+with contingent transfer receipts in relation to previously transferred players crystallising during the season.
+The Club's cash balance at the Statement of Financial Position date was £9.3m (2024: £13.1m). No amounts were
+paid to the Club's directors or ownership by way of dividends. .
+
+: 4
+___.. Docusign Envelope iD: 6CEBB23D-2247-4CCE-8E5E-F9AF233DBD21 ce
+Southampton Football Club Limited
+Strategic Report
+for the Year Ended 30 June 2025
+Key Performance Indicators
+Due to the nature of the Club's activities, the directors consider the Club’s final league position at each season end
+as its principal key performance indicator.
+As well as this, the directors consider further key performance indicators to be:
+« the length of the first team playing contracts, with the average length remaining at the Statement of Financial
+Position date being 28 months (2024: 27 months);
+¢ the all-staff wages to turnover ratio, which decreased year-on-year from 93.5% in 2024 to 72.5% in 2025, with
+the decrease largely being due to the increase in turnover in 2024/25. Year-on-year player remuneration for the
+men’s first team increased from £58.8m to £83.2m (52.8% of turnover in 2025, 68% in 2024);
+* the number of players with international recognition at senior or U21 level. The first team squad had 29 players
+with such recognition (2024: 23). :
+¢ international honours at youth level. 23 players represented their country at international youth level during the
+2024/25 season (28 during the 2023/24 season);
+¢ the number of players signed on scholarship agreements. The Club had an average of 19 scholars across the
+2024/25 season (23 during the 2023/24 season);
+* academy players representing the first team. 10 academy players represented their respective first teams in a .
+competitive fixture during the 2024/25 season (9 during the 2023/24 season).
+Infrastructure and People
+The Club continued its programme of capital investment at St Mary’s Stadium during the year, with several
+infrastructure projects reaching completion. These included the installation of perimeter fencing and one of the
+largest safe standing areas in the UK and upgrades to the press deck, each of which had been initiated in the
+previous financial year.
+Additional developments included the conversion of the former ticket office into The Dell, a pub named in tribute to
+the Club’s former home ground, and the construction of the Northam Fan Zone. This new space was designed to
+enhance the matchday experience and provide a flexible venue for community and private events.
+The Club also introduced the Knightwood Lounge, a pitch-facing hospitality suite inspired by the local New Forest
+area, offering a more contemporary environment for matchday guests and expanding the stadium’s non-matchday
+venue hire capabilities.
+At year-end, capital expenditure continued with the redevelopment of the South Stand into a mixed-use
+entertainment venue. Having just opened in October 2025, LEVEL1 provides a range of leisure activities and
+contribute to the Club’s aim of positioning St Mary’s as a year-round destination for fans and the wider community.
+These capital investments reflect the Club's commitment to diversifying revenue streams, reducing reliance on
+broadcasting income, and strengthening the Club’s role as a community-focused venue.
+The average number of employees during the year was 347 (2024: 342) and the Club ended the season with 353
+FTE employees including our players and scholars; the increase to support the wider commercial activities at the
+stadium.
+There were several organisational changes in the 2024/25 season, most notably being the resignation of a board
+director and the appointment of the group technical director and the managerial changes in respect of the first team.
+5 .
+Docusign Envelope ID: 6CEBB230-2247-4CCE-8E5E-F9AF233DBD21
+Southampton Football Club Limited
+Strategic Report
+for the Year Ended 30 June 2025
+Infrastructure and People (continued)
+The Club continues to provide active promotion to Saints Foundation, the Club’s affiliated charity, and its needs-
+ied work in the community. During this financial year the Club has again provided financial donations to the charity,
+and in-kind support for the charity through the access to office space, utilities, and staff expertise. Additionally,
+Saints Foundation has continued to benefit from access to rooms and facilities at St Mary’s Stadium which enable
+the charity to run activity for the community at an inspirational venue.
+A real strength this year has been the support of Club staff for Saints Foundation’s activities, including staff raising
+funds through challenge events and providing engaging opportunities for Saints Foundation’s beneficiaries through
+unique experiences at St Mary’s Stadium. This contributed to the charity’s record year in the delivery of its strategy
+to support those people most impacted by inequality in Southampton. Through its 15 projects, 6,511 participants
+were engaged, with a record number of 5.545 achieving a positive outcome, such as increasing school attendance,
+improved health behaviour changes, reducing offending behaviours, or finding employment or training. The
+combination of these factors helped the charity to increase its social value in 2024/25, with over £10m of social
+value delivered for the benefit of the Southampton Community.
+Fan engagement statement
+At Southampton Football Club, our fans are at the heart of everything we do. We are committed to building a strong,
+inclusive, and lasting connection with our supporters, ensuring that every voice matters so that every supporter
+feels valued and able to be consulted in relation to certain key decisions made by the Club. We have a very
+dedicated and loyal fan base, who follow us passionately at home and away. We want to recognise the invaluable
+contribution and help protect the Club that they care so deeply about through our commitment to a clear supporter
+engagement strategy.
+Through open communication, regular supporter forums, surveys, and dedicated fan liaison channels, including
+our own Supporter Relations team, we actively listen to feedback and work together to enhance the matchday
+experience while deepening the connection between the Club and the communities around us. In partnership with
+the Saints Foundation, the Club further strengthens this bond through a wide range of diverse programmes and
+initiatives.
+In order to be able to reinvest into football, we need to grow revenue and profits across our commercial areas. To
+achieve this, we continue to invest in and around the stadium with the introduction of new experiences and facilities
+such as LEVEL1 and The Dell. These aim to further enhancing the experience that our fans have on matchdays,
+and other visitors can experience on non-matchdays. In addition to this work the Club is proud to be part of the
+engagement with the City Council’s masterplan for the longer-term redevelopment of Southampton. We see these
+kinds of initiatives as being a vitally important part of making the Club and Saints Foundation fully sustainable within
+the city for the long term.
+We actively promote accessibility, family-friendly initiatives, and opportunities for fans of all ages and backgrounds
+to engage with the Club both at St Mary’s Stadium and beyond. By supporting local communities and fan groups
+and investing in grassroots football, and fostering pride in the Saints’ identity, we aim to create a culture of belonging
+where every supporter feels part of the journey. This is evident in our work with Rainbow Saints, and Southampton
+Pride, Southampton Disabled Supporters Association and our Fan Advisory Board.
+The Saints Fan Advisory Board meets with the CEO and other board members every quarter, while the Chair also
+holds monthly meetings with a board representative to ensure the voice of our fans is consistently heard and
+represented. The Club is committed to ensuring that the Fan Advisory Board will be consulted on any decision-
+making that relates to protected, legacy assets such as our stadium, our Club colours and our presence in the city
+of Southampton. To enable a broad cross-section of our supporters to be directly represented, we have
+implemented a policy of rotation for the appointments to the Fan Advisory Board and the first set of rotations will
+occur in the 2025/26 season. Recruitment to the Fan Advisory Board will be completed by the Club and the Fan
+Advisory Board to ensure a transparent, fair and ongoing equal representation of the different interests that exist
+across our fanbase.
+6
+Docusign Envelope 1D: 6CEBB23D-2247-4CCE-8E5E-F9AF233DBD21
+Southampton Football Club Limited
+Strategic Report ;
+for the Year Ended 30 June 2025
+
+Fan engagement statement (continued)
+
+Our fans’ passion and loyalty inspire us and the team to perform. We remain dedicated to ensuring the Club is a
+sustainable football club that supporters are proud to back and that our city can be proud of, on and off the pitch.
+Principal risks & uncertainties
+
+Team performance risk
+
+As is common with many professional football clubs, a principal risk is the performance of the men’s first team and
+the league in which it operates. The Club manages the impact of this through close control and detailed forecasting
+of its direct costs and cash outgoings, relative to forecast revenue and cash incomings.
+
+Liquidity risk .
+The Club reported a net cash position of £9.3m at the Statement of Financial Position date (2024: £13.1m).
+
+Credit risk
+
+This relates primarily to trade debtors from commercial activities and player trading and the Club monitors this risk
+closely with the aim of minimising it at all times.
+
+Political risk
+
+The main political risks that are monitored by the Club are around the impact on the price of goods, services and
+utilities, in part due to the Russia/Ukraine conflict, and the consequently high levels of inflation within the UK, which
+it manages through close cost contro! and a detailed tendering and procurement process. The Russia/Ukraine
+conflict also impacts the Club with regards to potential restrictions on opportunities in the transfer market, which is
+monitored closely.
+
+Furthermore, the movement of the interest rates within the UK over the course of the year is another risk closely
+monitored, which the Club manages through detailed forecasting of the net and gross debt requirements, close
+monitoring of working capital requirements within the Club and maximising its utilisation of interest-bearing
+accounts.
+
+The directors have concluded, after reviewing the work performed and detailed above, that they can adopt the
+going concern basis in preparing these financial statements.
+
+This report was approved by the board and signed on its behalf:
+
+DocuSigned by:
+
+wa
+
+P JS Parsons ;
+
+Director :
+
+Date: 11/26/2025
+
+7
+Docusign Envelope ID: 6CEBB23D-2247-4CCE-8E5E-F9AF233DBD21
+Southampton Football Club Limited
+Section 172 Statement
+for the Year Ended 30 June 2025
+
+Section 172 of the Companies Act 2006 requires directors to take into consideration the interests of stakeholders
+and other matters in their decision making. The directors continue to have regard to the interests of the Club’s
+employees and other stakeholders, the impact of its activities on the community, the environment and the Club's
+reputation for good business conduct, when making decisions. In this context, acting in good faith and fairly, the
+directors consider what is most likely to promote the success of the Club for its members in the long term. We
+explain in these financial statements, and below, how the Board engages with stakeholders:
+
+« Relations with key stakeholders such as employees, shareholders, customers, the local community and
+suppliers are considered in more detail within the “Employee Involvement” section of the Directors’ Report and
+the "Infrastructure & People” section of the Strategic Report.
+
+« The directors are fully aware of their responsibilities to promote the success of the Club in accordance with
+section 172 of the Companies Act 2006 and this is promoted at every Board meeting. As required, the Chief
+Financial Officer, the Finance Director and the Company Secretary will provide further support to the Board to
+
+* help ensure that sufficient consideration is given to issues relating to the matters set out in s172(1)(a)-(f).
+
+e The Board regularly reviews the Club’s principal stakeholders and how it engages with them. This is achieved
+through information provided by the executive and senior leadership teams, in particular within fortnightly
+executive team and leadership team meetings, and also by direct engagement with stakeholders themselves,
+notably with multiple forums across the year.
+
+e The Board has enhanced its methods of engagement with the workforce and Board updates are provided to :
+all employees at regular intervals. There are regular all-staff in-person meetings, which include question and
+answer sessions during which the Board provides business, operational and strategic updates to all
+employees.
+
+« We aim to work responsibly with our stakeholders, including suppliers. The Board has reviewed its anti-
+corruption and anti-bribery, equal opportunities and whistleblowing policies and regular training is undertaken
+on such matters.
+
+The key Board decisions made in the year are set out below:
+
+Significant Key s172 matter(s) . .
+
+events/decisions | affected Actions and impact
+
+Relegation of the | Employees, « Extensive financial modelling and scenario analysis was
+
+Club from the customers, fans, undertaken from an early stage and discussed with the
+
+Premier League suppliers Board of Directors and ownership group, and any working
+
+to the EFL capital funding requirements were highlighted, including a
+
+Championship refinancing of the MSD bank loan, which was undertaken
+during the year.
+
+¢ Individual and group staff meetings were held to give the
+opportunity for information to be shared and allow for
+questions regarding the impact of the relegation.
+
+« The Board issued a formal public statement in April 2025
+following the confirmed relegation, reaffirming its
+commitment to long-term planning and transparency.
+
+8
+Docusign Envelope lO: 6CEBB23D-2247-4CCE-8E5E-F9AF233DBD21
+Southampton Football Club Limited
+Section 172 Statement (continued)
+for the Year Ended 30 June 2025
+
+Termination of the | Employees, « During the season the Club terminated the employment of
+employment, and | customers, fans Russell Martin and supporting staff as members of the
+recruitment of men’s first team coaching staff before replacing them with
+three first team Ivan Juric and his coaching team. Their employment was
+managers (and subsequently terminated, and Will Still was hired as a
+associated staff) replacement, together with Paul Trollope, Ruben Martinez
+during the season and Clement Lemaitre. Adam Lallana retired as a
+
+professional player position and has stayed on as a first
+
+team coach in Will Still’s coaching team.
+
+e Internal communications were issued to employees prior
+to the news of each termination and replacement hire
+being released externally, at which point formal
+statements were posted on the Club's official website
+announcing the news.
+
+Significant Employees, « During the season, possible transformative projects were
+investment inthe | customers, fans & planned and executed, widely improving the experience of
+infrastructure in suppliers all individuals who visit or work at St Mary’s Stadium.
+
+and around St « Cost and value projections were gathered and presented
+Mary’s Stadium to the Executive Board.
+
+« AFan Engagement Plan was set up by the Executive
+
+Board, evolving the current Saints Voice (a fan-appointed
+: panel who regularly meet with the Club staff to discuss
+, the supporter experience) and creating more opportunity
+for direct fan engagement with the Club.
+
+« Open engagement with Southampton City Council
+regarding ongoing works at the stadium.
+
+« Capital expenditure and improvement works were
+finalised including the Dell pub, the Northam Fan Zone,
+the Knightwood Lounge as well as the ongoing
+redevelopment of the South Stand into the
+LEVEL tentertainment zone.
+
+« The Club's website and social media platforms heavily
+
+: promoted the ongoing capital and commercial projects
+around the Stadium.
+Changes at the Employees, fans e In January 2025, the Club announced Henrik Kraft would
+Executive Board step down as his position of as a director on the board.
+level Henrik remains involved as a shareholder and continues
+to serve on the board of the Club’s ultimate parent
+company, Sport Republic Holding Limited.
+
+« The appointment of Johannes Spors, the group technical
+director, in February 2025. Johannes works closely with
+Mark Bitcon, the director of football operations. Johannes
+is responsible for overseeing football strategy, player
+development and recruitment across the Club and the
+
+: Ultimate Group’s wider footballing network.
+9
+Docusign Envelope ID: 6CEBB23D-2247-4CCE-8E5E-F9AF233DBD21
+Southampton Football Club Limited
+Directors' Report
+for the Year Ended 30 June 2025
+The directors present their report and the financial statements for the year ended 30 June 2025.
+Results and dividends
+The loss for the year, after taxation, amounted to £44.8m (2024: profit of £13.7m).
+No dividend (2024: ENil) is proposed.
+Employment of disabled persons .
+The Club ensures that all full and part time employees, and job applicants (actual or potential), are treated fairly in
+accordance with group policies and values. Selection for employment, promotion, training or any other benefit is
+assessed objectively against the requirements for each job role, taking account of any reasonable adjustments that
+may be required for those with disabilities.
+Employee involvement
+The Ciub holds regular executive team, senior leadership team and department meetings to ensure a flow of
+information across all levels. Alongside this are a number of company-wide communication channels, most notably
+monthly all-staff meetings and our intranet, Team Talk Live. Company Handbooks, Game Plan Performance and
+Development Reviews and strategic email communication supplement these.
+The Club continues to put in place measures directly aimed at promoting the health and wellbeing of employees,
+including the continuation and promotion of an Employee Assistance programme.
+Finally, the Club continues to encourage all staff members to present their suggestions and views at all levels on
+the Club’s performance, encouraging creativity for improvement through feedback forums.
+Directors ;
+The directors who served during the year were: .
+R Ankersen
+R Boegli
+H J Kraft (resigned 1 February 2025)
+P JS Parsons
+D Solak :
+AT Young
+Qualifying third party indemnity provisions
+The Company has made qualifying third party indemnity provisions for the benefit of its Directors which were
+made during the year and remain in force at the date of this report.
+Future developments ,
+No significant change in the principal activities of the Club is expected in the foreseeable future.
+Charitable donations
+During the year the Company made charitable donations totalling £89,000 (2024: £257,000).
+10
+Docusign Envelope ID: 6CEBB23D-2247-4CCE-8E5E-FOAF233DB021
+Southampton Football Club Limited
+Directors’ Report (continued)
+for the Year Ended 30 June 2025
+Environmental matters and energy and carbon reporting
+The Club has taken the available exemption to not disclose a separate energy and carbon report in these financial
+Statements as it is included in the financial statements of its indirect parent company, Sport Republic Holding
+Limited.
+The Club is committed to sustainability and since the year end, have announced an Official Sustainability Partner
+with the newest initiative seeing 452 solar panels installed on the roof of the Pavilion and gym at the Staplewood
+Training Campus. This will generate around 20% of the Pavilion’s annual electricity consumption and deliver long-
+term energy security whilst reducing the Club's carbon footprint.
+Disclosure of information to auditors
+Each of the persons who are directors at the time when this Directors’ Report is approved has confirmed that:
+° So far as the directors are aware, there is no relevant audit information of which the Company's auditors are
+unaware; and
+« the directors have taken all the steps that ought to have been taken as directors in order to be aware of any
+relevant audit information and to establish that the Company's auditors are aware of that information.
+Post Statement of Financial Position events
+A full description of the events after the Statement of Financial Position date is stated in note 30.
+Auditors
+The auditors, BDO LLP, will be proposed for reappointment in accordance with section 485 of the Companies Act
+2006.
+This report was approved by the board and signed on its behalf:
+~ Desusianed by:
+[2
+P JS Parsons
+Director
+Date: 11/26/2025
+11
+

@@ -1,0 +1,388 @@
+source: Companies House filing, southampton-fc__2.pdf
+document: t5YqVXhFWbpJeEgZRrpzEbFrmJgYGzyQU-yZCL535Qs
+made_up_date: 2024-06-30
+method: ocr
+pages_read: 12 of 40
+
+ae _ - Southampton Football Club Limited
+. ne : _ Annual Report and Financial Statements , —
+. : . Year Ended : ; _
+: , ; 30 June 2024 - se
+; _ ee . Company.Number 00053304
+ums .
+. 1 3 A i :
+: = *RDYZBKM1* . :
+oo . v4 RM 24/03/2025 #100 ;
+; ; i COMPANIES HOUSE y , ne
+. Southampton Football Club Limited .
+oo oo, _ - Company Information . . : Lo
+Directors. R Ankersen . :
+a R Bogli . . . .
+_ HJ Kraft . _ Lo ' :
+: : P JS Parsons . .
+. oo 7 D Solak . .
+a . : : AT Young . ;
+. Company secretary T Greenwell oe . _
+: Registered number 00053301 7 ,
+- Registered office St Mary's Stadium ; , : .
+. Britannia Road . : : to
+. . . : . . Southampton : : . ,
+; ; Hampshire :
+mc SO145FP - a oo,
+" Independent auditor . BDOLLP : : : :
+: . Arcadia House . , :
+: . . Maritime Walk . .
+oo _ Ocean Village . ; .
+; Southampton _ - : .
+, . : , S014 3TL . . .
+_ a Southampton Football Club Limited wo,
+. ; ‘ . Contents - ‘
+: . : : : Page .
+__ Strategic Report . . 3-6 :
+; Section 172 Statement ' : a 7-8
+Directors’ Report — ; oe oo 9-10
+. Directors’ Responsibilities Statement : ; : 1
+‘ Independent Auditors' Report so ‘ . a ; 12-15 .
+. Statement of Comprehensive Income. , . ; _ 16 : .
+Statement of Financial Position : 17 , .
+. Statement of Changes in Equity : ; : 218 - : .
+Notes to the Financial Statements . 7 1988
+; SO , _ Southampton Football Club Limited
+, : . Strategic Report
+: ' for the Year Ended 30 June 2024
+The principal activity of the company is that of a football club (Southampton Football Club Limited (the “Club’),
+: ’. whose men’s team participates in the Premier League. — . :
+: Football Overview © .
+From a sporting perspective, the 2023/24 season was successful with the first team bouncing back from its a,
+. relegation to the EFL Championship in the 2022/23 season with a 4th place finish in the EFL Championship, gaining
+: : promotion to the Premier League via the play-offs and a win against Leeds United, following amemorable home
+playoff semi-final victory against West Brom at St Mary’s Stadium. : :
+In the Cup competitions, the first team was knocked out of the EFL Cup by Gillingham in the first round (2022/23: :
+a semi-finals). The Club also reached the fifth round of the FA Cup (2022/23: fifth round) before losing to Liverpool.
+_ Russell Martin was hired as the first team manager ahead of the 2023/24 EFL Championship season and
+_ contributed, alongside his coaching staff, to the promotion of the Club to the Premier League at the first attempt.
+At the time of writing the first team’s 2024/25 Premier League performances have seen the Club in the bottom three
+positions of the league and battling to avoid relegation. The Club has taken the difficult decision to part ways with
+"Russell Martin due to the Club’s league position and is actively recruiting his replacement. .
+_ The U21 team, participating in the U21 Premier League 2 Division 2 in the 2023/24 season, narrowly avoided
+needing to partake in the Elimination Playoffs by finishing in 17th place. At the time of writing, the U21 team has
+had a testing start to the 2024/25 Premier League 2 season and is currently 18th out of 26 teams in the Premier .
+League 2 Division, whilst holding a strong position in the Premier League International Cup (2nd place) ard the
+Premier League Cup (1st place). . : ,
+The U18 team, participating in the U18 Premier League South in the 2023/24 season finished 10th in the league
+(2022/23: 8th). At the time of writing, the U18 team has experienced a positive start to the 2024/25 U18 Premier
+: League season and is currently 4th in the league. - :
+; Financial Overview Oo ‘ ;
+, The Club reports a profit before interest and tax of £34.2m (2023: loss of £68.9m), with net liabilities decreasing to
+£68.4m (2023: net liabilities of £82.14m). Cumulatively, over the two financial years, this totals a loss before interest
+and tax of £34.7m. The improvement in the net liability position from 2024 is due to the profits generated from
+’ player trading in the 2024 financial year. :
+: A summary of results is given below: , . .
+. : 2024 2023
+. / £000 £000 —
+Turnover , ce “4,001 =. «145,467
+Operating costs : a 123,844 (170,023)
+Other operating income before player trading 1,710 - 28 .
+: Operating loss. before player trading - , (38,133) - (24,528) |
+. Player trading . 72,377 (44,279) :
+‘Loss on disposal of assets : ‘ (47) (53)
+Profit/(loss) before interest and tax : . 34,197 (68,860) _
+oe - Southampton Football Club Limited ,
+. : . ; Strategic Report _
+: . oo, a for the Year Ended 30 June 2024 . : ;
+. Financial Overview (continued) : : -. ; : .
+The first team finished in 20" place in the Premier League in the 2022/23 season, which led to the relegation to the
+_ EFL Championship for the 2023/24 season. Consequently, as a result of that relegation, the Club’s turnover
+decreased by £61.5m (42.3%) to £84.0m inthe year.:
+_ This decrease in turnover is largely explained by the reduction in broadcasting revenue, which is significantly lower
+in the EFL Championship than the Premier League. The broadcasting revenue recognised in the year is primarily
+made up of parachute payments received from the Premier League, which enables a staggered approach for newly-
+: relegated clubs to mitigate the impact. of the significant discrepancy between the Premier League and EFL :
+broadcasting revenue. Consequently, broadcasting revenue decreased from £108.0m to £55.9m, a decrease of
+48.2%, , _
+. Match day revenue decreased by 15.8% from £19.1m to £16.1m, primarily due to less successful first team cup
+. runs during the 2023/24 season: A positive season ticket campaign, which included an average reduction of prices .
+by 10%, contributed to strong sales of general admission season tickets, whilst match day tickets also sold very
+- well, contributing to multiple sold-out fixtures during the season in spite of relegation. When combined with a greater
+. number of home league matches being played in the Championship, and the home playoff semi-final, the Club was
+able to partially offset the reduction in revenue generated from cup matches, whilst ensuring that the EFL
+, Championship ticket pricing was affordable for our fans. oo : oO
+: - Commercial revenue fell by £5.5m from £15.4m to £9.9m (a 36.1% reduction), due to a drop in the Club's ,
+partnerships revenue, most notably the amount.received from the Club’s main sponsor, which was offset by the ,
+Club's decision to in-house retail merchandise sales and non-match day conference and events. Despite our drive
+; ; to increase commercial revenues within the Group, it‘is difficult to offset the substantial decrease in broadcasting
+. revenue between the Premier League and the EFL Championship. : , :
+. : Other income decreased marginally from £3.0m to £2.2m which largely relates to grants received to support our
+: EPPP Category 1 status academy and license and merit payments for our girls and women’s football programme.
+: In 2023/24, the Club generated a profit before tax, primarily due to successful player trading, which generated total
+profit on the disposals of players of £123.0m (2022/23: £7.4m). Profit was generated on the sales of Diallo, Olaigbe, :
+Salisu, Livramento, Lavia, Ward-Prowse, Tella, Djenepo, Doyle, Finnigan and Perraud, together with contingent
+transfer receipts in relation to previously transferred players crystallising during the season. This compares .
+- favourably to the previous financial year, when profit on the disposal of players was generated from the sales of ~
+-Romeu, Valery, Jay-Morgan, Nlundulu and Orsic, together with contingent transfer receipts similarly crystallised. .
+, The amortisation of player registrations of £51.1m has decreased marginally in comparison to last year’s charge of
+. £52.0m as a result of player sales during the 2023/24 season.
+, The Club's cash balance at the Statement of Financial Position date was £13.1m (2023: £13.2m) and amounts
+owed to group undertakings decreased from £154.8m to £122.5m. No amounts were paid to the Company’s
+directors or ownership by way of dividends. . , ae .
+. y .
+. Southampton Football! Club:Limited . ;
+: : Strategic Report : .
+. for the Year Ended 30 June 2024 .
+Key Performance Indicators ; . : .
+Due to the nature of the Club's activities, the directors consider the Club's final league position at each season end ,
+as its principal key performance indicator. : .
+As well as this, the directors consider further key performance indicators to be: ; "
+e the length of the first team playing contracts, with the average length remaining at the Statement of Financial
+. Position date being 27 months (2023: 27 months); :
+. e the all-staff wages to turnover ratio, which increased year-on-year from 84.2% in 2023 to 93.5%.in 2024, with
+. , the increase being due to the reduction in turnover in 2023/24. Year-on-year player remuneration for the men’s
+: first team decreased from £87.0m to £58.8m (68% of turnover in 2024, 61% in 2023); :
+" « the number of players with international recognition at senior or U-21 level. The first team squad had 23 players
+with such recognition (2023: 29); . .
+. e international honours at youth level. 28 players represented their country at international youth level during the
+2023/24 season (29 during the 2022/23 season); ,
+a e the number of players signed on scholarship agreements. The Club had an average of 23 scholars across the
+2023/24 season (27 during the 2022/23 season); : -
+« academy players representing the first team. 9 academy players represented their respective first teams in a
+, , competitive fixture during the 2023/24 season (9 during the 2022/23 season). ’
+: Infrastructure and People .
+The Club continues its investment at St Mary’s Stadium, incurring capital expenditure on upgrading the Wi-Fi all
+. around the stadium to allow fans to make use of the various Saints apps available on smartphones whilst visiting
+the stadium, including the new ticketing app. Further capital investment in CCTV, as well as the commencement of
+. the construction of the Northam Fan Zone, perimeter fencing around the footprint of the stadium and the installation
+oo of one of the largest safe standing offerings in the country in both the Home Northam stand and in the new Away
+. . End, has been incurred to ensure a safe and enjoyable experience for all fans visiting St Mary’s Stadium. Moreover, .
+upgrades to the press desk have been implemented, ensuring the Club is compliant with the Premier League's
+broadcasting requirements. The Company has also commenced the strip-out of one of the stands ahead of further .
+- capital investment in an entertainment zone. This expenditure commenced towards the end of the 2024 financial ‘
+year and was completed in the year-ended 30" June 2025. , >
+The average number of employees during the year was 342 and decreased compared to the prior year (2023: 403),
+: : ‘with the decrease largely. as a result of the relegation to the EFL Championship and planned organisational
+restructures. ~ : : . _ .
+There were several organisational changes in the 2023/24 season, most notably at the Board of Directors and
+Executive team level, including the appointment of our new CEO and Director of Football Operations...
+
+: The Club continues to provide active promotion to Saints Foundation, the Club's affiliated charity, and its needs- , :
+led work in the community. During the year the Club has continued to provide both financial donations and in-kind
+support through the provision of staff expertise and office space. In addition, support has been given to the charity -
+
+- through opportunities for fundraising and in supporting ‘Saints Foundation’s purpose through its 15 projects,
+‘including mentoring for young offenders, mental wellbeing support for young people both in and out of school, and
+a activity sessions for older adults to increase health and reduce isolation. During the 2023/24 year, Saints
+Foundation engaged with 5,799 individual participants aged 5-98, which equates to 2% of Southampton’s
+population, with 4,930 of those achieving a positive outcome for themselves. Overall Saints Foundation delivered
+
+: over £7million of Social Value in the community.
+Southampton Football Club Limited. ;
+: Strategic Report
+. . for the Year Ended 30 June 2024
+Principal risks & uncertainties ; ‘ : :
+Team performance risk ~ . ; .
+: As is common with many professional football clubs, a principal risk is the performance of the first team and the __
+. league in which it operates. The Club manages the impact of this through close contro! and detailed forecasting of
+its direct costs and cash outgoings, relative to forecast revenue and cash incomings. :
+Liquidity risk . . . , ;
+The Club reported a net cash position of £13.1m at the Statement of Financial Position date (2023: net cash of
+£13.3m). : , . .
+Credit risk : : , : , . : _
+This relates primarily to trade debtors from commercial activities and player trading and the Club monitors this risk
+closely with the aim of minimising it at all times. : .
+Political risk ; ; ;
+The main political risks that are monitored by the Club are around the impact on the price of goods, services and
+oy utilities, in part due to the Russia/Ukraine conflict, and the consequently high levels of inflation within the UK, which
+- _ it manages through close cost control and a detailed tendering and procurement process.
+: Furthermore, the movement of the interest rates within the UK over the course of the year is another risk closely
+monitored, which the Club manages through detailed forecasting of the net and gross debt requirements, close :
+“monitoring of working capital requirements within the Club and maximising its utilisation of interest-bearing
+_ accounts. '
+: : The directors have concluded, after reviewing the work performed and detailed above, that they can adopt the
+going concern basis in preparing these financial statements.
+This report was approved by the board and signed on its behalf: ,
+PJ S Parsons —
+Director
+Date: 20th December 2024 a :
+3 Southampton Football Club Limited
+Section 172 Statement ,
+
+: for the Year Ended 30 June 2024 © .
+Section 172 of the Companies Act 2006 requires directors to take into consideration the interests of stakeholders
+and other matters in their decision making. The directors continue to have regard to the interests of the Club’s
+
+: employees and other stakeholders, the impact of its activities on the community, the environment and the Club’s
+. reputation for good business conduct, when making decisions. In this context, acting in good faith and fairly, the
+directors consider what is most likely to promote the success of the Club for its members in.the long term. We
+
+explain in these financial statements, and below, how'the Board engages with stakeholders:
+
+« Relations with key stakeholders such as employees, shareholders, customers, the local community and
+
+’ suppliers are considered in more detail within the “Employee Involvement” section of the Director's Report and
+_the “Infrastructure & People” section of the Strategic Report.
+e The directors are fully aware of their responsibilities to promote the success of the Club in accordance with .
+: section 172 of the Companies Act 2006 and this is promoted at every Board meeting. As required, the Chief
+Financial Officer, the Finance Director and the Company Secretary will provide further support to the Board to
+, help ensure that sufficient consideration is given to issues relating to the matters set out in s172(1)(a)-(f).
+
+e The Board regularly reviews the Club’s principal stakeholders and how it engages with them. This is achieved
+through information provided by the executive and senior leadership teams, in particular within fortnightly:
+executive team and leadership team meetings, and also by direct engagement with stakeholders themselves, -
+
+- notably with multiple forums across the year.
+
+: e The Board has énhanced its methods of engagement with the workforce and Board updates are provided to
+
+: all employees at regular intervals. There are fortnightly all-staff in-person meetings, which include question
+
+- and answer sessions during which the Board provides business, operational and strategic updates to all
+employees, as well as a bi-annual all-staff interactive strategy sessions. .
+
+“¢ We aim to work responsibly with our stakeholders, including suppliers. The Board has recently reviewed its
+
+anti-corruption and anti-bribery, equal opportunities and whistlebtowing policies and regular training is
+
+undertaken on such matters. : . :
+The key Board decisions made in the year are set out below: .
+. Significant Key $172 matter(s) | a
+events/decisions | affected Actions and impact
+Promotion of the | Employees, « Extensive financial modelling and scenario analysis was
+| first team from the | customers, fans, . undertaken from an early stage and discussed with the
+. EFL . | Suppliers , Board of Directors and ownership group, and any working
+Championship to | : capital funding requirements were highlighted. - .
+: the Premier ; e Aninternal email was circulated to employees and videos
+League included on the Club's intranet, Team Talk Live, outlining
+7 the Club's “Bounce Back Stronger’ strategy.
+- : . e Regular all-staff meetings were held to continue to build
+. , : momentum and keep staff engaged with the strategy and
+: the first team performance. ,
+. e Apromotion party was held at St Mary’s Stadium after the ,
+: . team’s victory against Leeds United in the EFL
+. Championship Play-Off Final bringing together fans, staff,
+. : : coaches and players to celebrate the success of.the
+- _ . team's bounce-back promotion to the Premier League.
+; Southampton Football Club Limited  ——-
+. Section 172 Statement (continued) \
+: : - for the Year Ended 30 June 2024 ;
+: Significant Employees, ¢ During the season, possible transformative projects were
+investment in the | customers, fans & planned and executed, widely improving the experience of
+: infrastructure in suppliers : all individuals who visit or work at St Mary's Stadium.
+and around St . ¢ Cost and value projections were gathered and presented
+Mary's Stadium sot to the Board of Directors. . ;
+« AFan Engagement Plan was set up by the Boardof =~
+_ : Directors, evolving the current Saints Voice (a fan-
+. : appointed panel who regularly meet with the Club staff to
+soo , : discuss the supporter experience) and creating more
+. opportunity for direct fan engagement with the Club.
+e Open engagement with Southampton City Council -
+: * regarding ongoing works at the stadium.
+. : Jf Lo, e Capital expenditure and improvement works were :
+: . finalised including the Northam stand remodelling and
+: . : * _ introduction of one of the largest safe standing areas in
+; , the country; the moving of the away fans to the Kingsland .
+. ‘ . South corner and the expansion of the perimeter fencing
+. , - around the stadium (all completed post year-end). :
+. 2 ¢ Prior to the commencement of the 2024/25 season, a -
+, : stadium changes video was released across all social
+a media channels highlighting all of the investment in
+infrastructure around St Mary's Stadium. :
+Changes at the Employees, fans * The appointment of Phil Parsons, the Group's CEO, at the
+. Executive Board . start of the 2023/24 season and financial year. Phil :
+, level brought a wealth of experience in senior business .
+: leadership roles and is committed to the future of the .
+a : Group as a financial and people driven organisation.
+: « The release of Jason Wilcox from his position as Director .
+: . _ Of Football to Manchester United was considered at : :
+length at Board level ensuring the impact on the team was
+: minimised and the Club’s “Bounce Back Stronger” :
+. strategy was maintained throughout this period of. ,
+, . transition. : :
+: e The internal promotion of Mark Bitcon to Director of .
+: : . , Football Operations supports the Club’s dedication and
+loyalty to the promotion and retention of staff.
+Southampton Football Club Limited
+: oO Directors’ Report . :
+. forthe Year Ended 30 June 2024 , ‘
+The directors present their report and the financial statements for the year ended 30 June 2024. : :
+Results and dividends : . :
+. The profit for the year, after taxation, amounted to £13.7m (2023: loss of £80.4m). - :
+| No dividend (2023: £Nil) is proposed. . : : ,
+; Employment of disabled persons :
+. The Club ensures that all full and part time employees, and job applicants (actual or potential), are treated fairly in
+accordance with company policies and values. Selection for employment, promotion, training or any other benefit
+. is assessed objectively against the requirements for each job role, taking account.of any reasonable adjustments :
+that may be required for those with disabilities. , . .
+: Employee involvement : :
+- * The Club holds regular senior management, operational management and department meetings to ensure a flow.
+: of information across all levels. Alongside this are a number of company-wide communication channels, most
+notably monthly all-staff meetings and our intranet, Team Talk Live. Company Handbooks, Performance and .
+Development Reviews and strategic email communication supplement these. :
+The Club continues to put in place measures directly aimed at promoting the health and wellbeing of employees,
+including the continuation and promotion of an Employee Assistance programme. :
+Finally, the Ciub continues to encourage all staff members to present their suggestions and views at all tevels on
+the Club’s performance, encouraging creativity for improvement through feedback forums. .
+. Directors ; : :
+The directors who served during the year were: : :
+, . R Ankersen . _ .
+* — R Bogli _ .
+‘ : H J Kraft
+P JS Parsons : . : ,
+. D Solak , :
+, T Steele (resigned 4 October 2023) ‘ ‘
+AT Young 0
+; Future developments a : : .
+No significant change in the principal activities of the Club is expected in the foreseeable future. - * .
+: Charitable donations
+During the year the Company made charitable donations totalling £257,000 (2023: £51,000). :
+og a SO
+Southampton Football Club Limited ,
+: . Directors’ Report (continued): : : :
+. - for the Year Ended 30 June 2024
+
+. Environmental matters and energy and carbon reporting : , ,
+The Company has taken the available exemption to not disclose a separate energy and carbon report in these --
+financial statements as it is included in the financial statements of its indirect parent company, Sport Republic .
+Holding Limited. : : .
+
+: Disclosure of information to auditors — ; : . .
+Each of the persons who are directors at the time when this Directors’ Report is approved has confirmed that:
+. so far as the directors are aware, there is no relevant audit information of which the Company's auditors-are ,
+, unaware; and ~ 7 _
+. the directors have taken all the steps that ought to have been taken as directors in order to be aware of any
+relevant audit information and to establish that the Company's auditors are aware of that information.
+
+Post Statement of Financial Position events . , Soe
+-A full description of the events after the Statement of Financial Position date is stated in note 30. :
+Auditors : : . . ;
+The auditors, BDO LLP, will be proposed for reappointment in accordance with section 485 of the Companies Act .
+2006. :
+This report was approved by the board and signed on its behalf: . . ,
+Ps8 Parsons . - . _
+Director . - \
+
+-Date: 20th December 2024 : ; .
+
+, oo ; 10° mo,
+. . 7 -
+; Southampton Football Club Limited
+. 0 Directors' Responsibilities Statement
+. for the Year Ended 30 June 2024 . —
+‘The directors are responsible for preparing the Strategic Report, the Directors' Report and the financial statements —
+Lo in accordance with applicable law and regulations. . : . ;
+, Company law requires the directors to prepare financial statements for each financial year. Under that law the
+directors have elected to prepare the financial statements in accordance with United Kingdom Accounting
+Standards and applicable law. Under Company law the directors must not approve the financial statements unless
+. they are satisfied that they a true and fair-view of the state of affairs of the Company and of the profit or loss of the
+Company for that period. : : . . ns
+In preparing these financial statements, the directors are required to: . .
+° select suitable accounting policies for the Company's financial statements and then apply them consistently; , ,
+. make judgements and accounting estimates that are reasonable and prudent; a
+. state whether applicable UK Accounting Standards have been followed, subject to any material departures
+disclosed and explained in the financial statements; and . ,
+° . prepare the financial statements on the going concern basis unless it is inappropriate to presume.that the
+. Company will continue in business. , ‘ ,
+The directors are responsible for keeping adequate accounting records that are sufficient to show and explain the :
+. Company's transactions and disclose with reasonable accuracy at any time the financial position of the Company
+and enable them to ensure that the financial statements comply with the Companies Act 2006. They are also .
+- responsible for safeguarding the assets of the Company and hence for taking reasonable steps for the prevention
+and detection of fraud and other irregularities. : oo
+

@@ -1,0 +1,87 @@
+club_id	company_number	document	filing_date	made_up_date	concept	prefix	kind	period_start	period_end	instant	dimensions	unit	value
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	AccountingStandardsApplied	bus	text	2024-05-01	2025-04-30		AccountingStandardsDimension=Micro-entities		
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	AccountsStatusAuditedOrUnaudited	bus	text	2024-05-01	2025-04-30		AccountsStatusDimension=AuditExemptWithAccountantsReport		
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	AccountsType	bus	text	2024-05-01	2025-04-30		AccountsTypeDimension=FullAccounts		
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	ApplicableLegislation	bus	text	2024-05-01	2025-04-30		ApplicableLegislationDimension=SmallCompaniesRegimeForAccounts		
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	AverageNumberEmployeesDuringPeriod	core	num	2023-05-01	2024-04-30			pure	0
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	AverageNumberEmployeesDuringPeriod	core	num	2024-05-01	2025-04-30			pure	0
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	BalanceSheetDate	bus	text		2025-04-30	1			30 April 2025
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	CountryFormationOrIncorporation	bus	text	2024-05-01	2025-04-30				
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	Creditors	core	num		2024-04-30	1	FinancialInstrumentCurrentNon-currentDimension=CurrentFinancialInstruments;MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	49500
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	Creditors	core	num		2025-04-30	1	FinancialInstrumentCurrentNon-currentDimension=CurrentFinancialInstruments;MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	38578
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	CurrentAssets	core	num		2024-04-30	1		GBP	47342
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	CurrentAssets	core	num		2025-04-30	1		GBP	36420
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	DateAuthorisationFinancialStatementsForIssue	core	text		2025-04-30	1			11 November 2025
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	DescriptionPrincipalActivities	bus	text	2024-05-01	2025-04-30				No description of principal activity
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	DirectorSigningFinancialStatements	core	text	2024-05-01	2025-04-30		EntityOfficersDimension=Director1		
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	EndDateForPeriodCoveredByReport	bus	text		2025-04-30	1			2025-04-30
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	EntityCurrentLegalOrRegisteredName	bus	text	2024-05-01	2025-04-30				QUORN FC LEISURE LTD
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	EntityDormantTruefalse	bus	text	2024-05-01	2025-04-30				false
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	EntityTradingStatus	bus	text	2024-05-01	2025-04-30				
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	Equity	core	num		2024-04-30	1		GBP	3111
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	Equity	core	num		2025-04-30	1		GBP	1794
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	FixedAssets	core	num		2024-04-30	1		GBP	5269
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	FixedAssets	core	num		2025-04-30	1		GBP	3952
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	LegalFormEntity	bus	text	2024-05-01	2025-04-30		LegalFormEntityDimension=PrivateLimitedCompanyLtd		
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	NameEntityOfficer	bus	text	2024-05-01	2025-04-30		EntityOfficersDimension=Director1		S G Turner
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	NameEntityOfficer	bus	text	2024-05-01	2025-04-30		EntityOfficersDimension=Director2		I Turner
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	NameEntityOfficer	bus	text	2024-05-01	2025-04-30		EntityOfficersDimension=Director3		L Turner
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	NameProductionSoftware	bus	text	2024-05-01	2025-04-30				CCH Software
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	NetAssetsLiabilities	core	num		2024-04-30	1		GBP	3111
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	NetAssetsLiabilities	core	num		2025-04-30	1		GBP	1794
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	NetCurrentAssetsLiabilities	core	num		2024-04-30	1		GBP	-2158
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	NetCurrentAssetsLiabilities	core	num		2025-04-30	1		GBP	-2158
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	ReportAnAmendedRevisedVersionPreviouslyFiledReportTruefalse	bus	text	2024-05-01	2025-04-30				false
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	ReportIncludesDetailedProfitLossStatementTruefalse	bus	text	2024-05-01	2025-04-30				false
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	ScopeAccounts	bus	text	2024-05-01	2025-04-30				
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	StartDateForPeriodCoveredByReport	bus	text		2025-04-30	1			2024-05-01
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime	direp	text	2024-05-01	2025-04-30				These financial statements have been prepared in accordance with the micro-entity provisions and in accordance with FRS 105 'The Financial Reporting Standard applicable to the Micro-entities Regime' and delivered in accordance with the provisions applicable to companies subject to the small companies regime.
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies	direp	text	2024-05-01	2025-04-30				For the year ended 30 April 2025 the company was entitled to exemption from audit under section 477 of the Companies Act 2006 relating to small companies.
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct	direp	text	2024-05-01	2025-04-30				The directors acknowledge their responsibilities for complying with the requirements of the Companies Act 2006 with respect to accounting records and the preparation of financial statements.
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit	direp	text	2024-05-01	2025-04-30				The members have not required the company to obtain an audit of its financial statements for the year in question in accordance with section 476.
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	UKCompaniesHouseRegisteredNumber	bus	text	2024-05-01	2025-04-30				10800338
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	VersionProductionSoftware	bus	text	2024-05-01	2025-04-30				CCH Accounts Production 2025.300
+quorn-fc	10800338	XiE6G317DClI4a3f3HmFGhn0ovs7ytG7r5LorZhxpyI	2025-12-04	2025-04-30	_GoingConcernMaterialUncertainty	derived	text						none found
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	AccountingStandardsApplied	bus	text	2023-05-01	2024-04-30		AccountingStandardsDimension=Micro-entities		
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	AccountsStatusAuditedOrUnaudited	bus	text	2023-05-01	2024-04-30		AccountsStatusDimension=AuditExemptWithAccountantsReport		
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	AccountsType	bus	text	2023-05-01	2024-04-30		AccountsTypeDimension=FullAccounts		
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	ApplicableLegislation	bus	text	2023-05-01	2024-04-30		ApplicableLegislationDimension=SmallCompaniesRegimeForAccounts		
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	AverageNumberEmployeesDuringPeriod	core	num	2022-05-01	2023-04-30			pure	3
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	AverageNumberEmployeesDuringPeriod	core	num	2023-05-01	2024-04-30			pure	3
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	BalanceSheetDate	bus	text		2024-04-30	1			30 April 2024
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	CountryFormationOrIncorporation	bus	text	2023-05-01	2024-04-30				
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	Creditors	core	num		2023-04-30	1	FinancialInstrumentCurrentNon-currentDimension=CurrentFinancialInstruments;MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	17328
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	Creditors	core	num		2024-04-30	1	FinancialInstrumentCurrentNon-currentDimension=CurrentFinancialInstruments;MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	49500
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	CurrentAssets	core	num		2023-04-30	1		GBP	15169
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	CurrentAssets	core	num		2024-04-30	1		GBP	47342
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	DateAuthorisationFinancialStatementsForIssue	core	text		2024-04-30	1			28 January 2025
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	DescriptionPrincipalActivities	bus	text	2023-05-01	2024-04-30				No description of principal activity
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	DirectorSigningFinancialStatements	core	text	2023-05-01	2024-04-30		EntityOfficersDimension=Director1		
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	EndDateForPeriodCoveredByReport	bus	text		2024-04-30	1			2024-04-30
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	EntityCurrentLegalOrRegisteredName	bus	text	2023-05-01	2024-04-30				QUORN FC LEISURE LTD
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	EntityDormantTruefalse	bus	text	2023-05-01	2024-04-30				false
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	EntityTradingStatus	bus	text	2023-05-01	2024-04-30				
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	Equity	core	num		2023-04-30	1		GBP	4867
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	Equity	core	num		2024-04-30	1		GBP	3111
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	FixedAssets	core	num		2023-04-30	1		GBP	7026
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	FixedAssets	core	num		2024-04-30	1		GBP	5269
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	LegalFormEntity	bus	text	2023-05-01	2024-04-30		LegalFormEntityDimension=PrivateLimitedCompanyLtd		
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	NameEntityOfficer	bus	text	2023-05-01	2024-04-30		EntityOfficersDimension=Director1		S G Turner
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	NameEntityOfficer	bus	text	2023-05-01	2024-04-30		EntityOfficersDimension=Director2		I Turner
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	NameEntityOfficer	bus	text	2023-05-01	2024-04-30		EntityOfficersDimension=Director3		L Turner
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	NameProductionSoftware	bus	text	2023-05-01	2024-04-30				CCH Software
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	NetAssetsLiabilities	core	num		2023-04-30	1		GBP	4867
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	NetAssetsLiabilities	core	num		2024-04-30	1		GBP	3111
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	NetCurrentAssetsLiabilities	core	num		2023-04-30	1		GBP	-2159
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	NetCurrentAssetsLiabilities	core	num		2024-04-30	1		GBP	-2158
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	ReportAnAmendedRevisedVersionPreviouslyFiledReportTruefalse	bus	text	2023-05-01	2024-04-30				false
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	ReportIncludesDetailedProfitLossStatementTruefalse	bus	text	2023-05-01	2024-04-30				false
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	ScopeAccounts	bus	text	2023-05-01	2024-04-30				
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	StartDateForPeriodCoveredByReport	bus	text		2024-04-30	1			2023-05-01
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime	direp	text	2023-05-01	2024-04-30				These financial statements have been prepared in accordance with the micro-entity provisions and in accordance with FRS 105 'The Financial Reporting Standard applicable to the Micro-entities Regime' and delivered in accordance with the provisions applicable to companies subject to the small companies regime.
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies	direp	text	2023-05-01	2024-04-30				For the year ended 30 April 2024 the company was entitled to exemption from audit under section 477 of the Companies Act 2006 relating to small companies.
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct	direp	text	2023-05-01	2024-04-30				The directors acknowledge their responsibilities for complying with the requirements of the Companies Act 2006 with respect to accounting records and the preparation of financial statements.
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit	direp	text	2023-05-01	2024-04-30				The members have not required the company to obtain an audit of its financial statements for the year in question in accordance with section 476.
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	UKCompaniesHouseRegisteredNumber	bus	text	2023-05-01	2024-04-30				10800338
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	VersionProductionSoftware	bus	text	2023-05-01	2024-04-30				CCH Accounts Production 2024.301
+quorn-fc	10800338	o8A_JtYdmzTNAw3ySenB2sr6djBf0rWANAl3rHSRTgw	2025-01-28	2024-04-30	_GoingConcernMaterialUncertainty	derived	text						none found

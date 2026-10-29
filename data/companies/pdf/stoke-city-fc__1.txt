@@ -1,0 +1,432 @@
+source: Companies House filing, stoke-city-fc__1.pdf
+document: a8GBAGKII-RzLK2PgqXXAXS1avv90N1p4-naETWE67E
+made_up_date: 2025-05-31
+method: ocr
+pages_read: 12 of 33
+
+ae
+Stoke City Football Club Limited
+REPORT AND FINANCIAL STATEMENTS
+31 May 2025
+Company Registration No. 00099885
+>»
+a
+B .
+2
+x *AEWOPE3I*
+A10 26/02/2026 #48
+COMPANIES HOUSE
+Stoke City Football Club Limited
+CONTENTS
+COMPANY INFORMATION 1 .
+STRATEGIC REPORT : 2
+‘DIRECTORS’ REPORT 8
+DIRECTORS’ RESPONSIBILITIES IN THE PREPARATION OF FINANCIAL STATEMENTS 10
+INDEPENDENT AUDITOR’S REPORT TO THE MEMBERS OF STOKE CITY FOOTBALL
+CLUB LIMITED u
+STATEMENT OF TOTAL INCOME AND RETAINED EARNINGS 14
+STATEMENT OF FINANCIAL POSITION 15
+ACCOUNTING POLICIES 16
+
+_ NOTES TO THE FINANCIAL STATEMENTS 21
+of]
+Stoke City Football Club Limited
+COMPANY INFORMATION :
+DIRECTORS
+JF Coates — Chair
+RK Smith — Vice Chair
+P Coates
+SECRETARY ,
+DT Heath
+REGISTERED OFFICE :
+: bet365 Stadium
+Stanley Matthews Way -
+. Stoke-on-Trent :
+Staffordshire
+ST4 4EG
+AUDITOR .
+RSM UK Audit LLP
+Chartered Accountants .
+Festival Way
+Stoke-on-Trent
+Staffordshire
+ST1 5BB
+Page |
+Stoke City Football Club Limited
+STRATEGIC REPORT
+The directors have pleasure in submitting their Strategic Report for Stoke City Football Club Limited (“the
+, Club” or “the Company”) for the year ended 31 May 2025.
+__ BUSINESS/FINANCIAL REVIEW
+The Club, once again, competed in the English Football League (“EFL”) Championship in season 2024/25.
+The Company’s Key Performance Indicators are summarised in the table below:-
+Championship Championship
+. : 2025 2024
+Average league attendance 22,805 22,517
+Final league position 18% 17
+£000’s £000’s
+
+Turnover : 35,438 32,271 ,
+Operating expenses (65,143) (62,982)
+Operating loss before player trading : (22,189) (24,300)
+Operating loss before player registration/fixed asset (29,705) (30,711)
+disposals . .
+Profit on disposal of player registrations 151 4,407
+Operating loss (29,537) (26,236)
+
+The Company’s turnover shown above is derived principally from gate revenue and central distributions
+
+, from the EFL, as further demonstrated within note 2 of the accounts. :
+On 8 July 2024 Stoke City Holdings Limited and its subsidiaries were demerged from bet365 Group Limited
+to John Coates. All intragroup loans from the (now former) parent company of £90.5m were waived as part
+. of this transaction leaving the Group debt free and the bet365 Stadium and Clayton Wood training facility
+
+were transferred to the ownership of Stoke City Holdings Limited.
+
+: Investment in the playing squad during the year continued with £7.3m (2024: £18.2m) spent on player
+registrations. In the Summer 2024 transfer window the Club realised profits on the disposal of the player .
+registrations. A significant proportion of proceeds from these player sales were reinvested into the playing
+
+: squad during the Summer 2024 and 2025 transfer windows. The Club continues to plan its player registration :
+activity mindful of its need to ensure continued compliance with the EFL’s Profitability and Sustainability
+regulations.
+
+Turnover improved during the year to £35.4m (2024: £32.3m) as a consequence of increased EFL central
+distribution following the commencement of an improved broadcast contract with Sky and supported by
+improved underlying commercial revenues. .
+
+Operating losses including player transfers increased in the year principally as a consequence of reduced
+
+profits earned on the disposal of player registrations described above as well as an increase in operating
+
+expenses to £65.1m (2024: £63.0m) driven by property changes in the group. Note 5 shows that employment :
+costs were £30.3m (2024: £31.8m) demonstrating the continuing constraint placed on the Club whilst .
+operating under the EFL’s Profitability and Sustainability Regulations.
+
+, The year saw the unveiling of plans and developments for Stoke City’s women’s and girls’ football
+programme. A new Elite Girls’ Academy programme has been established with a view to smoothing the
+pathway from the grassroots game, with the mission of significantly increasing the number of local girls
+being represented at the senior level. :
+
+Page 2
+Stoke City Football Club Limited
+STRATEGIC REPORT
+BUSINESS AND FINANCIAL REVIEW (CONTINUED)
+The programme includes a semi-professional women’s first team; a paid women’s development squad; and
+fully funded Academy girls’ squads at U10s, U12s, U14s, and U16s. The Club will continue to support the
+FA’s Emerging Talent Centre programme.
+The plans reflect the significant investment in women and girl’s football for the first time in 2024/25.
+Net liabilities have increased to £158.0m (2024: £132.5m) as at 31 May 2025. The principal indebtedness,
+£145.9m (2024: £104.3m), is to Stoke City Holdings Limited.
+RISKS AND UNCERTAINTIES .
+The Company’s main risks and uncertainties centre around first-team performance and its direct impact on
+league status, position and ultimately revenue generation. Additional risks and uncertainties are, the ability
+to acquire, train and develop players to a sufficient standard so that the Club can return to the Premier League,
+together with any rise or fall in the valuation of these players.
+Risks are periodically reviewed by the directors and appropriate processes and procedures are in place to
+monitor and mitigate them.
+These areas include compliance with football financial regulations and the recruitment and retention of key
+employees.
+FOOTBALL FINANCIAL REGULATIONS
+In common with all Football Clubs in the EFL, the Club is annually assessed by the EFL for its compliance
+with financial regulations such as Profitability and Sustainability and Future Financial Information. The
+directors acknowledge these regulations and accordingly make prudent budget assumptions with regards to
+football performance that can impact on revenue generation such as matchday gate revenues and cup runs.
+The directors review the Club’s compliance with these financial regulations at the time of setting budgets
+and regularly throughout the football season to ensure continued compliance with them.
+The directors have provided the EFL with their full support for the replacement of the Profitability and
+Sustainability Regulations with Squad Cost Ratio regulations which the directors regard as being more fit
+for purpose. On 21 November 2025, Premier League clubs voted to introduce Squad Cost Ratio regulations,
+replacing the current Profit and Sustainability rules from the start of the 2026/27 season. It would be logical
+for the EFL to adopt similar Squad Cost Ratio rules from 2026/27 season so as to ensure that the
+Championship does not stand alone as the only league in the top four divisions of English football operating
+under different financial rules. Adopting Squad Cost Ratio would ease the transition between leagues for all
+clubs.
+On 21 July 2025 the Football Governance Act passed into law establishing the Independent Football
+Regulator. The directors will continue to monitor political developments in relation to the Independent
+Football Regulator with interest given its role overseeing financial regulation, including how this will
+coincide with existing financial regulations and the ability for owner’s to commit sustainable investment in
+their club which the Club remain in favour of.
+EMPLOYEES
+Variations in the Company’s financial results significantly depend on the performance of the Club’s first
+team. The Company has well resourced recruitment and analysis departments to enable it to mitigate this
+risk and to be successful in this area. The Company operates a system of performance related pay for key
+personnel to support this strategy and mitigate this risk.
+
+Page 3
+Stoke City Football Club Limited
+STRATEGIC REPORT :
+FINANCIAL INSTRUMENTS , .
+The significant financial risks and exposures to the Company are in respect of liquidity and their effect on
+cashflow. The board manages these risks in order to minimise any adverse effects on the Company.
+Liquidity .
+The Company’s policy is to have facilities available from its ultimate owner to satisfy working capital
+requirements in the near to medium term as required.
+Cash flow ; . ;
+Cash flow levels are continually monitored and reviewed to cover any foreseeable funding requirements
+with an allowance for unforeseen events. : :
+Credit , ‘
+Minimal credit is given by the Club, with the majority of sales being on a cash or cash equivalent basis.
+Season ticket sales with payment terms have been allowed and are outsourced by the Club to a third party.
+Any risk of bad debts is mitigated for player transfers through credit control procedures and close monitoring
+of cash receipts each month. Payment terms are given to other clubs based on contracts and these are closely
+monitored and managed appropriately by the Club.
+STREAMLINED ENERGY AND CARBON REPORT :
+The Company was a direct subsidiary of Stoke City Holdings Limited at the year end which includes all
+relevant carbon reporting disclosures in its consolidated accounts. These disclosures include the reporting
+relevant for the Company, and as such the Company has applied the exemption given under the Companies
+. Act 2006 Sch 7.20A (2) not to present this disclosure in its individual accounts. :
+SECTION 172 (1) STATEMENT . .
+The directors recognise that effective engagement with stakeholders and consideration of their interests is
+‘fundamental to the success of the Company. The directors discharge their duties in accordance with Section
+
+172 of the Companies Act 2006, which requires a director of a company to act in the way he or she considers, .
+in good faith, would most likely promote the success of the Company for the benefit of its members as a
+whole. In doing this, section 172 requires directors to have regard, amongst other matters, to:
+A. The likely consequences of any decisions in the long-term.
+The Company’s strategic decisions are made with the goal of fulfilling its ambition of playing at the highest .
+level. The Company also takes decisions to ensure financial sustainability, and compliance with emerging ,
+regulatory frameworks, including the Independent Football Regulator. Investment in youth development,
+infrastructure, and community engagement are central to our Jong-term vision. Key decisions undertaken by
+the Board are documented on page 5 below. .
+The Company has worked within this code whilst fulfilling its ambition of playing at the highest level. ;
+B. The interests of the Company's employees. ‘
+We refer to our Employee Engagement Statement on pages 8 and 9 which demonstrate that valuing its ,
+employees is central to the Company.
+
+, . . Page 4
+Stoke City Football Club Limited
+. STRATEGIC REPORT
+SECTION 172 (1) STATEMENT (CONTINUED)
+C. The need to foster the Company's business relationships with suppliers, customers and others.
+We refer to our Stakeholder Engagement Statement on page 6 which sets out our “partnership approach” to
+our stakeholders, where an emphasis is placed on the benefit to the business of long-term relationships.
+D. The impact of the Company's operations on the community and environment.
+We refer to our Stakeholder Engagement Statement. The Company has at all times and will continue to put
+the local community and environment at the heart of its business. A priority is placed on recruiting
+employees locally wherever possible, with a similar approach adopted with suppliers. This is reinforced
+through the work of Stoke City Foundation (“SCF”), formerly Stoke City Community Trust (“SCCT”).
+We refer to the Streamlined Energy and Carbon Reporting (“SECR”) included within Stoke City Holdings
+Limited Financial Statements for further detail of how the Company has been working to reduce its carbon
+footprint.
+E. The desirability of the Company maintaining a reputation for high standards of business conduct.
+The Board uphold high standards of governance and ethical conduct. The Group complies with the EFL’s
+Governance Code and is preparing in anticipation of the regulatory requirements of the Independent Football
+Regulator. Risk management and financial prudence are central to our decision-making.
+F. The need to act fairly as between members of the Company.
+The directors ensure that all decisions are made fairly and transparently, with consideration for the interests
+of all shareholders and stakeholders.
+Following the change in ownership on 8 July 2024, the Company has retained the above standards of
+business conduct and is now in regular dialogue with its parent company’s main shareholder, John Coates.
+KEY DECISIONS
+The directors are aware that, in common with virtually all clubs in the Championship, the Club will continue
+to operate with underlying annual financial losses unless and until:
+- the Club is promoted back to the Premier League, which remains the directors’ principal objective,
+- the funding formula within English Football is changed to provide more income for clubs outside of the
+Premier League and/or
+
+- further profits are made from player sales such that they balance the trading losses being incurred
+In the absence of the above, the owner not only remains committed to fund the ongoing losses of the Club
+but also acknowledges the desirability to provide this funding through non-refundable, non-interest bearing
+share capital.
+The directors are currently restricted from implementing their full plans for the Club as a result of the ,
+financial regulations implemented by the EFL in the Championship that currently prevent their use of
+sustainable investments that would otherwise be made. The directors remain committed to working within
+these restraints as required, but will continue to press for a change in the financial regulations to allow for :
+sustainable investment by committed owners for the benefit of the Club and the local area.
+
+Page 5
+Stoke City Football Club Limited
+
+STRATEGIC REPORT
+
+KEY DECISIONS (CONTINUED)
+
+The Club will, as previously, continue to engage with relevant stakeholders regards the development of an
+
+Independent Football Regulator and the promotion of the concept of sustainable owner investment realised
+
+through changes brought about by the Football Governance Bill, currently making its way through the
+
+legislative process. The Club will continue to engage with the EFL, Government and other stakeholders to
+pursue the successful realisation of this objective.
+: STAKEHOLDER ENGAGEMENT STATEMENT
+
+The following are considered to be the key stakeholders of the Company:
+
+Stakeholder Important areas for our key stakeholders and measures taken to demonstrate their
+value to the business and engagement are set out below:
+
+Employees Please see the Employee Engagement Statement in the Directors Report.
+
+Suppliers Business relationships are recognised by the directors as being essential to the
+continued success and positive reputation of the Company. The Company’s staff are
+in regular contact with key commercial supporters and suppliers in order to ensure
+that the Club continues to promote strong and mutually beneficial relationships with
+its commercial partners.
+
+Local Communities | Where possible and appropriate, use of local suppliers and local employees is
+
+encouraged to support the local economy in which we are located. The Club provides
+substantial support to SCF which continues to use the power and passion of the Club :
+to transform lives in and around the Stoke on Trent and North Staffordshire areas by
+delivering a wide range of programmes to benefit local residents of all ages through
+physical and other activities supported by the Stoke City name. SCF's influence and
+reach allows it to make a positive difference to the health, wellbeing and life
+outcomes to those participants who engage in its programmes.
+The Club has embarked on a new mission whereby it is committed to getting Stoke
+on Trent and Staffordshire active, with the aim of further improving peoples’ mental
+and physica! wellbeing, and connecting our communities by bringing people
+together. The mission also aims to create sporting facilities in local communities
+which do not currently possess such amenity.
+
+Supporters Supporter engagement continues to evolve at the Club with an ever-increasing level
+of importance placed on it.
+
+The Club encourages more regular consultation with supporters across a larger range
+of topics through its Stoke City Connect programme.
+, The Club targets growing its supporter base via a combination of affordable prices
+. and programmes with local schools to encourage youngster attendance at first team
+games.
+Furthermore, the Company:
+© ensures our Stadium is fully accessible to disabled supporters,
+© provides free away coach travel to league matches,
+o has frozen the cost of season tickets for the past 17 seasons,
+© provides under 11 season tickets for £23, equivalent to £1 per match,
+o is investing in a purpose built Fanzone to improve the matchday experience for
+supporters and their families,
+© were voted EFL Family Club of the Year,
+o delivered a new crest via an entirely supporter-led consultation.
+Page 6
+Stoke City Football Club Limited
+
+STRATEGIC REPORT . .
+
+STAKEHOLDER ENGAGEMENT STATEMENT (CONTINUED)
+
+Football League The Club's senior executive management meet regularly with the EFL and fellow
+member clubs to discuss matters common across all clubs.
+
+Shareholders The Club engages with its shareholders by regular meetings throughout the year,
+including on any key operational decisions.
+
+By order of the board
+
+taba
+
+John Coates
+
+Chair
+
+24/12/25
+
+. Page7 ;
+Stoke City Football Club Limited ;
+: DIRECTORS’ REPORT :
+The directors submit their report and the financial statements of Stoke City Football Club Limited for the
+year ended 31 May 2025. :
+PRINCIPAL ACTIVITIES :
+: The principal activity is that of a professional football club.
+RESULTS AND DIVIDENDS
+The loss for the year amounted to £25.5m (2024: £28.6m loss). The directors do not recommend the payment
+of preference or ordinary share dividends (2024: £nil). ,
+: DIRECTORS
+The following directors have held office since 1 June 2024 and up to the date of signature of the financial ,
+statements:
+JF Coates — Chair .
+RK Smith — Vice Chair
+P Coates
+EMPLOYEE ENGAGEMENT STATEMENT
+Employees of the Company are key assets of the business. As a Company our policy is to demonstrate that
+. all employees, regardless of role or seniority, feel an integral and valued part of our business. Employee
+satisfaction and involvement underpins the Club’s strategic plan and the future success of the business.
+We set high standards and our employees are expected to work to the best of their ability. This is reciprocated .
+, _ and reflected in the competitive salaries and extensive benefits packages we aim to offer our staff. The
+Company also places particular emphasis on equal pay for equal jobs and strictly adheres to the UK Modern
+Slavery Act. One of our core objectives is to be the ‘employer of choice’ within the local communities within
+which we operate.
+Salaries and benefits are only part of the broader staff engagement factors. We also have a number of : :
+employee health and welfare programmes which target both physical and mental wellbeing. Our workplaces
+are, of course, designed to be safe and secure and our facilities and health and safety teams ensure the
+removal of any risk, albeit our operations are inherently low risk environments. The Company has policies
+to improve the overall employee experience including an additional day off on birthdays, an away game
+event and a preseason staff gathering.
+The Company has always recognised that staff development and learning is an integral part of the
+organisation’s strategic planning, equipping all staff with the knowledge and skills to perform their
+individual jobs effectively and in doing so ensure that the Company meets its strategic objectives. :
+Players are provided with a range of benefits and amenities to allow them to fulfil their potential as athletes.
+This includes support from qualified professionals in areas including football coaching, medical screening
+and rehabilitation, strength and conditioning, nutrition and sports psychology.
+The Club’s training facility at Clayton Wood provides players with a state-of-the-art facility in which to
+succeed, offering all-weather football pitches; strength, conditioning and rehabilitation equipment; and a
+modem refectory to meet all nutritional requirements. .
+, Throughout the Club an extensive programme of both internal and external training and development is
+offered. During the period the training and development team offered workplace training for all employees
+as required for their roles. This was further supported by the utilisation of e-learning strategies and on-the-
+job training by dedicated coaches and instructors. Assessment and progression of staff careers are both
+transparent and rigorous.
+Page 8
+Stoke City Football Club Limited
+DIRECTORS’ REPORT
+EMPLOYEE ENGAGEMENT STATEMENT (CONTINUED)
+Feedback from employees is obtained on an ongoing real-time basis through normal reporting channels,
+including up to the Company’s Board where appropriate with actions undertaken in this regard.
+The Company is an equal opportunities employer and operates a zero tolerance non-discrimination policy.
+This is reflected in our recruitment and selection processes, and continues throughout the employee’s career”
+in providing opportunities for training, further development and progression based entirely on individuals’
+skills and abilities, with adjustments made to accommodate disabilities. A major part of the Company’s
+success has been based on its ability to identify, develop and promote talent from within the organisation.
+The Company places considerable value on the involvement of its employees and has continued to keep
+them informed, via detailed HR communications, departmental management meetings and quarterly all-staff *
+
+. meetings, on matters affecting them as employees, and on the various factors affecting the performance of
+the Company.
+POST BALANCE SHEET EVENTS
+We refer to note 19 in respect of post balance sheet events.
+STRATEGIC REPORT
+In accordance with section 414C(11) of the Companies Act 2006 (Strategic Report and Directors' Report)
+Regulations 2013 the Company has chosen to set out in the Company’s strategic report information required
+by schedule 7 of the Large and Medium-sized Companies and Groups (Accounts and Reports) Regulations
+2008 to be contained in the directors report. It has done so in respect of financial instruments, future
+developments, stakeholder engagement and streamlined energy and carbon reporting.
+STATEMENT AS TO DISCLOSURE OF INFORMATION TO THE AUDITOR
+The directors have confirmed that, as far as they are aware, there is no relevant audit information of which
+the auditor is unaware. Each of the directors have confirmed that they have taken all the steps that they ought
+to have taken as directors in order to make themselves aware of any relevant audit information and to
+establish that it has been communicated to the auditor.
+AUDITOR
+RSM UK Audit LLP have indicated their willingness to be reappointed for another term and appropriate
+arrangements have been put in place for them to be deemed reappointed as auditors in the absence of an
+Annual General Meeting.
+By order of the board
+
+a
+John Coates
+Chair
+24/12/25
+
+: Page 9
+Stoke City Football Club Limited
+DIRECTORS’ RESPONSIBILITIES IN THE PREPARATION
+OF FINANCIAL STATEMENTS . : ;
+The directors are responsible for preparing the Strategic Report and the Directors’ Report and the financial ,
+statements in accordance with applicable law and regulations. .
+Company law requires the directors to prepare financial statements for each financial year. Under that law
+. the directors have elected to prepare the financial statements in accordance with United Kingdom Generally -
+Accepted Accounting Practice (United Kingdom Accounting Standards and applicable law). .
+Under Company law the directors must not approve the financial statements unless they are satisfied that
+they give a true and fair view of the state of affairs of the Company and of the profit or loss of the Company .
+for that period.
+In preparing those financial statements, the directors are required to: . .
+a. select suitable accounting policies and then apply them consistently;
+b. make judgements and accounting estimates that are reasonable and prudent; :
+: . c state whether applicable UK Accounting Standards have been followed, subject to any material
+departures disclosed and explained in the financial statements; and
+d. prepare the financial statements on the going concern basis unless it is inappropriate to presume that
+the Company will continue in business. :
+The directors are responsible for keeping adequate accounting records that are sufficient to show and explain
+the Company’s transactions and disclose with reasonable accuracy at any time the financial position of the
+Company and enable them to ensure that the financial statements comply with the Companies Act 2006. .
+They are also responsible for safeguarding the assets of the Company and hence for taking reasonable steps
+for the prevention and detection of fraud and other irregularities. .
+Page 10
+

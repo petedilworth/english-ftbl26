@@ -1,0 +1,193 @@
+club_id	company_number	document	filing_date	made_up_date	concept	prefix	kind	period_start	period_end	instant	dimensions	unit	value
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	AccountingStandardsApplied	uk-bus	text	2023-10-01	2024-09-30		AccountingStandardsDimension=FRS102		
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	AccountsStatusAuditedOrUnaudited	uk-bus	text	2023-10-01	2024-09-30		AccountsStatusDimension=AuditExempt-NoAccountantsReport		
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	AccountsType	uk-bus	text	2023-10-01	2024-09-30		AccountsTypeDimension=FilletedAccounts		
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	AccumulatedAmortisationImpairmentIntangibleAssets	uk-core	num		2023-09-30	1	IntangibleAssetClassesDimension=Goodwill	GBP	14000
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	AccumulatedAmortisationImpairmentIntangibleAssets	uk-core	num		2024-09-30	1	IntangibleAssetClassesDimension=Goodwill	GBP	17500
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	AccumulatedDepreciationImpairmentPropertyPlantEquipment	uk-core	num		2023-09-30	1		GBP	27657
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	AccumulatedDepreciationImpairmentPropertyPlantEquipment	uk-core	num		2023-09-30	1	PropertyPlantEquipmentClassesDimension=ComputerEquipment	GBP	154
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	AccumulatedDepreciationImpairmentPropertyPlantEquipment	uk-core	num		2023-09-30	1	PropertyPlantEquipmentClassesDimension=FurnitureFittings	GBP	20413
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	AccumulatedDepreciationImpairmentPropertyPlantEquipment	uk-core	num		2023-09-30	1	PropertyPlantEquipmentClassesDimension=PlantMachinery	GBP	7090
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	AccumulatedDepreciationImpairmentPropertyPlantEquipment	uk-core	num		2024-09-30	1		GBP	45406
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	AccumulatedDepreciationImpairmentPropertyPlantEquipment	uk-core	num		2024-09-30	1	PropertyPlantEquipmentClassesDimension=ComputerEquipment	GBP	287
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	AccumulatedDepreciationImpairmentPropertyPlantEquipment	uk-core	num		2024-09-30	1	PropertyPlantEquipmentClassesDimension=FurnitureFittings	GBP	28217
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	AccumulatedDepreciationImpairmentPropertyPlantEquipment	uk-core	num		2024-09-30	1	PropertyPlantEquipmentClassesDimension=PlantMachinery	GBP	16902
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	AverageNumberEmployeesDuringPeriod	uk-core	num	2022-10-01	2023-09-30			pure	31
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	AverageNumberEmployeesDuringPeriod	uk-core	num	2023-10-01	2024-09-30			pure	43
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	BalanceSheetDate	uk-bus	text		2024-09-30	1			30 September 2024
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	BankBorrowingsOverdrafts	uk-core	num		2023-09-30	1	MaturitiesOrExpirationPeriodsDimension=AfterOneYear;SecuredStatusDimension=Secured	GBP	30833
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	BankBorrowingsOverdrafts	uk-core	num		2024-09-30	1	MaturitiesOrExpirationPeriodsDimension=AfterOneYear;SecuredStatusDimension=Secured	GBP	20833
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	CashBankOnHand	uk-core	num		2023-09-30	1		GBP	14642
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	CashBankOnHand	uk-core	num		2024-09-30	1		GBP	6926
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	Creditors	uk-core	num		2023-09-30	1	MaturitiesOrExpirationPeriodsDimension=AfterOneYear	GBP	30833
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	Creditors	uk-core	num		2023-09-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	126259
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	Creditors	uk-core	num		2024-09-30	1	MaturitiesOrExpirationPeriodsDimension=AfterOneYear	GBP	20833
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	Creditors	uk-core	num		2024-09-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	204778
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	CurrentAssets	uk-core	num		2023-09-30	1		GBP	85185
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	CurrentAssets	uk-core	num		2024-09-30	1		GBP	104213
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	DateAuthorisationFinancialStatementsForIssue	uk-core	text		2024-09-30	1			15 June 2025
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	Debtors	uk-core	num		2023-09-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	62916
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	Debtors	uk-core	num		2024-09-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	87013
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	DescriptionDepreciationMethodForPropertyPlantEquipment	uk-core	text	2023-10-01	2024-09-30		PropertyPlantEquipmentClassesDimension=ComputerEquipment		33 Reducing balance
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	DescriptionDepreciationMethodForPropertyPlantEquipment	uk-core	text	2023-10-01	2024-09-30		PropertyPlantEquipmentClassesDimension=FurnitureFittings		25 Reducing balance
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	DescriptionDepreciationMethodForPropertyPlantEquipment	uk-core	text	2023-10-01	2024-09-30		PropertyPlantEquipmentClassesDimension=PlantMachinery		25 Reducing balance
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	DescriptionRecognitionBasisMeasurementIntangibleAssets	uk-core	text	2023-10-01	2024-09-30		IntangibleAssetClassesDimension=NetGoodwill		Goodwill, being the amount paid in connection with the acquisition of a business in 2019, is being amortised evenly over its estimated useful life of 20 years.
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	DirectorSigningFinancialStatements	uk-core	text	2023-10-01	2024-09-30		EntityOfficersDimension=Director1		
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	DirectorSigningFinancialStatements	uk-core	text	2023-10-01	2024-09-30		EntityOfficersDimension=Director2		
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	EndDateForPeriodCoveredByReport	uk-bus	text		2024-09-30	1			30 September 2024
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	EntityCurrentLegalOrRegisteredName	uk-bus	text	2023-10-01	2024-09-30				Afc Totton 1886 Limited
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	EntityDormantTruefalse	uk-bus	text	2023-10-01	2024-09-30				
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	EntityTradingStatus	uk-bus	text	2023-10-01	2024-09-30				
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	Equity	uk-core	num		2023-09-30	1		GBP	52494
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	Equity	uk-core	num		2023-09-30	1	EquityClassesDimension=RetainedEarningsAccumulatedLosses	GBP	12194
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	Equity	uk-core	num		2023-09-30	1	EquityClassesDimension=ShareCapital	GBP	300
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	Equity	uk-core	num		2023-09-30	1	EquityClassesDimension=SharePremium	GBP	40000
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	Equity	uk-core	num		2024-09-30	1		GBP	32127
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	Equity	uk-core	num		2024-09-30	1	EquityClassesDimension=RetainedEarningsAccumulatedLosses	GBP	-8173
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	Equity	uk-core	num		2024-09-30	1	EquityClassesDimension=ShareCapital	GBP	300
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	Equity	uk-core	num		2024-09-30	1	EquityClassesDimension=SharePremium	GBP	40000
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	FinishedGoodsGoodsForResale	uk-core	num		2023-09-30	1		GBP	-7627
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	FinishedGoodsGoodsForResale	uk-core	num		2024-09-30	1		GBP	-10274
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	FixedAssets	uk-core	num		2023-09-30	1		GBP	124401
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	FixedAssets	uk-core	num		2024-09-30	1		GBP	153525
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	IncreaseFromAmortisationChargeForYearIntangibleAssets	uk-core	num	2023-10-01	2024-09-30		IntangibleAssetClassesDimension=Goodwill	GBP	3500
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	IncreaseFromDepreciationChargeForYearPropertyPlantEquipment	uk-core	num	2023-10-01	2024-09-30			GBP	17749
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	IncreaseFromDepreciationChargeForYearPropertyPlantEquipment	uk-core	num	2023-10-01	2024-09-30		PropertyPlantEquipmentClassesDimension=ComputerEquipment	GBP	133
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	IncreaseFromDepreciationChargeForYearPropertyPlantEquipment	uk-core	num	2023-10-01	2024-09-30		PropertyPlantEquipmentClassesDimension=FurnitureFittings	GBP	7804
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	IncreaseFromDepreciationChargeForYearPropertyPlantEquipment	uk-core	num	2023-10-01	2024-09-30		PropertyPlantEquipmentClassesDimension=PlantMachinery	GBP	9812
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	IntangibleAssets	uk-core	num		2023-09-30	1		GBP	56000
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	IntangibleAssets	uk-core	num		2024-09-30	1		GBP	52500
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	IntangibleAssets	uk-core	num		2024-09-30	1	IntangibleAssetClassesDimension=Goodwill	GBP	52500
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	IntangibleAssetsGrossCost	uk-core	num		2023-09-30	1	IntangibleAssetClassesDimension=Goodwill	GBP	70000
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	IntangibleAssetsGrossCost	uk-core	num		2024-09-30	1	IntangibleAssetClassesDimension=Goodwill	GBP	70000
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	LegalFormEntity	uk-bus	text	2023-10-01	2024-09-30		LegalFormEntityDimension=PrivateLimitedCompanyLtd		
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	NameEntityOfficer	uk-bus	text	2023-10-01	2024-09-30		EntityOfficersDimension=Director1		Mr Antony Croft
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	NameEntityOfficer	uk-bus	text	2023-10-01	2024-09-30		EntityOfficersDimension=Director2		Mr Phillip Davies
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	NetAssetsLiabilities	uk-core	num		2023-09-30	1		GBP	52494
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	NetAssetsLiabilities	uk-core	num		2024-09-30	1		GBP	32127
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	NetCurrentAssetsLiabilities	uk-core	num		2024-09-30	1		GBP	-100565
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	OtherCreditors	uk-core	num		2023-09-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	76103
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	OtherCreditors	uk-core	num		2024-09-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	145967
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	OtherDebtors	uk-core	num		2023-09-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	11342
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	OtherDebtors	uk-core	num		2024-09-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	34826
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	PropertyPlantEquipment	uk-core	num		2023-09-30	1		GBP	68401
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	PropertyPlantEquipment	uk-core	num		2023-09-30	1	PropertyPlantEquipmentClassesDimension=ComputerEquipment	GBP	404
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	PropertyPlantEquipment	uk-core	num		2023-09-30	1	PropertyPlantEquipmentClassesDimension=FurnitureFittings	GBP	30931
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	PropertyPlantEquipment	uk-core	num		2023-09-30	1	PropertyPlantEquipmentClassesDimension=PlantMachinery	GBP	37066
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	PropertyPlantEquipment	uk-core	num		2024-09-30	1		GBP	101025
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	PropertyPlantEquipment	uk-core	num		2024-09-30	1	PropertyPlantEquipmentClassesDimension=ComputerEquipment	GBP	271
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	PropertyPlantEquipment	uk-core	num		2024-09-30	1	PropertyPlantEquipmentClassesDimension=FurnitureFittings	GBP	26500
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	PropertyPlantEquipment	uk-core	num		2024-09-30	1	PropertyPlantEquipmentClassesDimension=PlantMachinery	GBP	74254
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	PropertyPlantEquipmentGrossCost	uk-core	num		2023-09-30	1		GBP	96058
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	PropertyPlantEquipmentGrossCost	uk-core	num		2023-09-30	1	PropertyPlantEquipmentClassesDimension=ComputerEquipment	GBP	558
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	PropertyPlantEquipmentGrossCost	uk-core	num		2023-09-30	1	PropertyPlantEquipmentClassesDimension=FurnitureFittings	GBP	51344
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	PropertyPlantEquipmentGrossCost	uk-core	num		2023-09-30	1	PropertyPlantEquipmentClassesDimension=PlantMachinery	GBP	44156
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	PropertyPlantEquipmentGrossCost	uk-core	num		2024-09-30	1		GBP	146431
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	PropertyPlantEquipmentGrossCost	uk-core	num		2024-09-30	1	PropertyPlantEquipmentClassesDimension=ComputerEquipment	GBP	558
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	PropertyPlantEquipmentGrossCost	uk-core	num		2024-09-30	1	PropertyPlantEquipmentClassesDimension=FurnitureFittings	GBP	54717
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	PropertyPlantEquipmentGrossCost	uk-core	num		2024-09-30	1	PropertyPlantEquipmentClassesDimension=PlantMachinery	GBP	91156
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	PropertyPlantEquipmentPolicy	uk-core	text	2023-10-01	2024-09-30				Property, plant and equipment, other than freehold land, are stated at cost or valuation less depreciation and any provision for impairment. Depreciation is provided at rates calculated to write off the cost or valuation of fixed assets, less their estimated residual value, over their expected useful lives on the following basis:
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	StartDateForPeriodCoveredByReport	uk-bus	text		2024-09-30	1			2023-10-01
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime	uk-direp	text	2023-10-01	2024-09-30				The financial statements have been prepared and delivered in accordance with the provisions applicable to companies subject to the small companies regime.
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies	uk-direp	text	2023-10-01	2024-09-30				For the year ended 30 September 2024 the company was entitled to exemption from audit under Section 477 of the Companies Act 2006 relating to small companies.
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct	uk-direp	text	2023-10-01	2024-09-30				The director acknowledges his responsibilities for:a) ensuring that the company keeps proper accounting records which comply with Sections 386 and 387 of the Companies Act 2006 and
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit	uk-direp	text	2023-10-01	2024-09-30				The members have not required the company to obtain an audit of its financial statements for the year ended 30 September 2024 in accordance with Section 476 of the Companies Act 2006
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	TaxationSocialSecurityPayable	uk-core	num		2023-09-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	33666
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	TaxationSocialSecurityPayable	uk-core	num		2024-09-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	36792
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment	uk-core	num	2023-10-01	2024-09-30			GBP	50373
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment	uk-core	num	2023-10-01	2024-09-30		PropertyPlantEquipmentClassesDimension=ComputerEquipment	GBP	0
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment	uk-core	num	2023-10-01	2024-09-30		PropertyPlantEquipmentClassesDimension=FurnitureFittings	GBP	3373
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment	uk-core	num	2023-10-01	2024-09-30		PropertyPlantEquipmentClassesDimension=PlantMachinery	GBP	47000
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	TotalAssetsLessCurrentLiabilities	uk-core	num		2023-09-30	1		GBP	83327
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	TotalAssetsLessCurrentLiabilities	uk-core	num		2024-09-30	1		GBP	52960
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	TotalInventories	uk-core	num		2023-09-30	1		GBP	7627
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	TotalInventories	uk-core	num		2024-09-30	1		GBP	10274
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	TradeCreditorsTradePayables	uk-core	num		2023-09-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	16490
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	TradeCreditorsTradePayables	uk-core	num		2024-09-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	22019
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	TradeDebtorsTradeReceivables	uk-core	num		2023-09-30	1		GBP	62916
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	TradeDebtorsTradeReceivables	uk-core	num		2023-09-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	51574
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	TradeDebtorsTradeReceivables	uk-core	num		2024-09-30	1		GBP	87013
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	TradeDebtorsTradeReceivables	uk-core	num		2024-09-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	52187
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	UKCompaniesHouseRegisteredNumber	uk-bus	text	2023-10-01	2024-09-30				11293572
+afc-totton-fc	11293572	2mFWKFwiF6_tvTitO78Ur-H9gGbvCK-N3rYGSrJINeQ	2025-09-29	2024-09-30	_GoingConcernMaterialUncertainty	derived	text						none found
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	AccountingStandardsApplied	ns10	text	2024-10-01	2025-09-30		AccountingStandardsDimension=SmallEntities		
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	AccountsStatusAuditedOrUnaudited	ns10	text	2024-10-01	2025-09-30		AccountsStatusDimension=AuditExemptWithAccountantsReport		
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	AccountsType	ns10	text	2024-10-01	2025-09-30		AccountsTypeDimension=FilletedAccounts		
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	AccumulatedAmortisationImpairmentIntangibleAssets	ns5	num		2024-10-01	1		GBP	17500
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	AccumulatedAmortisationImpairmentIntangibleAssets	ns5	num		2025-09-30	1		GBP	21000
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	AccumulatedDepreciationImpairmentPropertyPlantEquipment	ns5	num		2024-10-01	1		GBP	45406
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	AccumulatedDepreciationImpairmentPropertyPlantEquipment	ns5	num		2025-09-30	1		GBP	96828
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	ApplicableLegislation	ns10	text	2024-10-01	2025-09-30		ApplicableLegislationDimension=SmallCompaniesRegimeForAccounts		
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	AverageNumberEmployeesDuringPeriod	ns5	num	2023-10-01	2024-09-30			pure	40
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	AverageNumberEmployeesDuringPeriod	ns5	num	2024-10-01	2025-09-30			pure	42
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	BalanceSheetDate	ns10	text		2025-09-30	1			30-9-2025
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	CashBankOnHand	ns5	num		2024-09-30	1		GBP	6926
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	CashBankOnHand	ns5	num		2025-09-30	1		GBP	4925
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	CountryFormationOrIncorporation	ns10	text	2024-10-01	2025-09-30				
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	Creditors	ns5	num		2024-09-30	1	FinancialInstrumentCurrentNon-currentDimension=CurrentFinancialInstruments;MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	204777
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	Creditors	ns5	num		2024-09-30	1	FinancialInstrumentCurrentNon-currentDimension=Non-currentFinancialInstruments;MaturitiesOrExpirationPeriodsDimension=AfterOneYear	GBP	20833
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	Creditors	ns5	num		2025-09-30	1	FinancialInstrumentCurrentNon-currentDimension=CurrentFinancialInstruments;MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	314094
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	Creditors	ns5	num		2025-09-30	1	FinancialInstrumentCurrentNon-currentDimension=Non-currentFinancialInstruments;MaturitiesOrExpirationPeriodsDimension=AfterOneYear	GBP	0
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	CurrentAssets	ns5	num		2024-09-30	1		GBP	104214
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	CurrentAssets	ns5	num		2025-09-30	1		GBP	130429
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	DateAuthorisationFinancialStatementsForIssue	ns5	text		2025-09-30	1			29 September 2026
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	Debtors	ns5	num		2024-09-30	1		GBP	87014
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	Debtors	ns5	num		2025-09-30	1		GBP	107430
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	DefinedContributionPensionsPolicy	ns5	text	2024-10-01	2025-09-30				The company operates a defined contribution pension scheme. Contributions payable to the company’s pension scheme are charged to profit and loss in the period to which they relate.
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	DescriptionPrincipalActivities	ns10	text	2024-10-01	2025-09-30				No description of principal activity
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	DescriptionRecognitionBasisMeasurementIntangibleAssets	ns5	text	2024-10-01	2025-09-30		IntangibleAssetClassesDimension=IntangibleAssetsOtherThanGoodwill		Intangible assets are initially measured at cost. After initial recognition, intangible assets are measured at cost less any accumulated amortisation and any accumulated impairment losses.
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	DirectorSigningFinancialStatements	ns5	text	2024-10-01	2025-09-30		EntityOfficersDimension=Director1		Mr A Croft, Director
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	DisposalsDecreaseInDepreciationImpairmentPropertyPlantEquipment	ns5	num	2024-10-01	2025-09-30			GBP	1639
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	DisposalsPropertyPlantEquipment	ns5	num	2024-10-01	2025-09-30			GBP	2196
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	EndDateForPeriodCoveredByReport	ns10	text		2025-09-30	1			30-9-2025
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	EntityCurrentLegalOrRegisteredName	ns10	text	2024-10-01	2025-09-30				Afc Totton 1886 Limited
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	EntityDormantTruefalse	ns10	text	2024-10-01	2025-09-30				false
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	EntityTradingStatus	ns10	text	2024-10-01	2025-09-30				
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	Equity	ns5	num		2024-09-30	1		GBP	32129
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	Equity	ns5	num		2024-09-30	1	EquityClassesDimension=RetainedEarningsAccumulatedLosses	GBP	-8171
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	Equity	ns5	num		2024-09-30	1	EquityClassesDimension=ShareCapital	GBP	300
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	Equity	ns5	num		2024-09-30	1	EquityClassesDimension=SharePremium	GBP	40000
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	Equity	ns5	num		2025-09-30	1		GBP	33887
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	Equity	ns5	num		2025-09-30	1	EquityClassesDimension=RetainedEarningsAccumulatedLosses	GBP	-6413
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	Equity	ns5	num		2025-09-30	1	EquityClassesDimension=ShareCapital	GBP	300
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	Equity	ns5	num		2025-09-30	1	EquityClassesDimension=SharePremium	GBP	40000
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	FixedAssets	ns5	num		2024-09-30	1		GBP	153525
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	FixedAssets	ns5	num		2025-09-30	1		GBP	217552
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	IncreaseFromAmortisationChargeForYearIntangibleAssets	ns5	num	2024-10-01	2025-09-30			GBP	3500
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	IncreaseFromDepreciationChargeForYearPropertyPlantEquipment	ns5	num	2024-10-01	2025-09-30			GBP	53061
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	IntangibleAssets	ns5	num		2024-09-30	1		GBP	52500
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	IntangibleAssets	ns5	num		2025-09-30	1		GBP	49000
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	IntangibleAssetsGrossCost	ns5	num		2024-10-01	1		GBP	70000
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	IntangibleAssetsGrossCost	ns5	num		2025-09-30	1		GBP	70000
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	InventoriesPolicy	ns5	text	2024-10-01	2025-09-30				Stocks are valued at the lower of cost and net realisable value, after making due allowance for obsolete and slow moving items.
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	LegalFormEntity	ns10	text	2024-10-01	2025-09-30		LegalFormEntityDimension=PrivateLimitedCompanyLtd		
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	NameProductionSoftware	ns10	text	2024-10-01	2025-09-30				IRIS Elements Accounts Production
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	NetAssetsLiabilities	ns5	num		2024-09-30	1		GBP	32129
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	NetAssetsLiabilities	ns5	num		2025-09-30	1		GBP	33887
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	NetCurrentAssetsLiabilities	ns5	num		2024-09-30	1		GBP	-100563
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	NetCurrentAssetsLiabilities	ns5	num		2025-09-30	1		GBP	-183665
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	PrincipalCurrencyUsedInBusinessReport	ns10	text	2024-10-01	2025-09-30		CurrenciesDimension=PoundSterling		
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	PropertyPlantEquipment	ns5	num		2024-09-30	1		GBP	101025
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	PropertyPlantEquipment	ns5	num		2025-09-30	1		GBP	168552
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	PropertyPlantEquipmentGrossCost	ns5	num		2024-10-01	1		GBP	146431
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	PropertyPlantEquipmentGrossCost	ns5	num		2025-09-30	1		GBP	265380
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	PropertyPlantEquipmentPolicy	ns5	text	2024-10-01	2025-09-30				Depreciation is provided at the following annual rates in order to write off each asset over its estimated useful life or, if held under a finance lease, over the lease term, whichever is the shorter.
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	ReportPeriod	ns10	text	2024-10-01	2025-09-30				
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	RevenueRecognitionPolicy	ns5	text	2024-10-01	2025-09-30				Turnover is measured at the fair value of the consideration received or receivable, excluding discounts, rebates, Value Added Tax and other sales taxes.
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	ScopeAccounts	ns10	text	2024-10-01	2025-09-30				
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	StartDateForPeriodCoveredByReport	ns10	text		2024-10-01	1			1-10-2024
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	StatementComplianceWithApplicableReportingFramework	ns5	text	2024-10-01	2025-09-30				These financial statements have been prepared in accordance with Financial Reporting Standard 102 “The Financial Reporting Standard applicable in the UK and Republic of Ireland” including the provisions of Section 1A “Small Entities” and the Companies Act 2006. The financial statements have been prepared under the historic cost convention.
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime	ns20	text	2024-10-01	2025-09-30				The financial statements have been prepared and delivered in accordance with the provisions applicable to companies subject to the small companies regime.
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies	ns20	text	2024-10-01	2025-09-30				The company was entitled to exemption from audit under section 477 of the Companies Act 2006 relating to small companies for the year ended 30 September 2025.
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct	ns20	text	2024-10-01	2025-09-30				The directors acknowledge their responsibilities to comply with the Companies Act 2006 in respect to accounting records and the preparation of financial statements.
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	StatementThatDirectorsHaveElectedNotToDeliverProfitLossAccountUnderSection4445ACompaniesAct2006	ns20	text	2024-10-01	2025-09-30				In accordance with Section 444 of the Companies Act 2006, the Profit and loss account has not been delivered to the Registrar.
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit	ns20	text	2024-10-01	2025-09-30				The members have not required the company to obtain an audit in accordance with section 476 of the Companies Act 2006.
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	TaxPolicy	ns5	text	2024-10-01	2025-09-30				Taxation for the year comprises current taxation. Tax is recognised in the Profit and loss account, except to the extent that it relates to items recognised in other comprehensive income or directly in equity.
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment	ns5	num	2024-10-01	2025-09-30			GBP	121145
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	TotalAssetsLessCurrentLiabilities	ns5	num		2024-09-30	1		GBP	52962
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	TotalAssetsLessCurrentLiabilities	ns5	num		2025-09-30	1		GBP	33887
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	TotalInventories	ns5	num		2024-09-30	1		GBP	10274
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	TotalInventories	ns5	num		2025-09-30	1		GBP	18074
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	UKCompaniesHouseRegisteredNumber	ns10	text	2024-10-01	2025-09-30				11293572
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	VersionProductionSoftware	ns10	text	2024-10-01	2025-09-30				26.4
+afc-totton-fc	11293572	pDzEV5PmCz5aV8X6rG4cI0SS0rg0q1zLoo6FXv-aj-8	2026-09-29	2025-09-30	_GoingConcernMaterialUncertainty	derived	text						none found

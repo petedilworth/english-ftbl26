@@ -1,0 +1,89 @@
+club_id	company_number	document	filing_date	made_up_date	concept	prefix	kind	period_start	period_end	instant	dimensions	unit	value
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	AccountingStandardsApplied	uk-bus	text	2023-06-01	2024-05-31		AccountingStandardsDimension=Micro-entities		
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	AccountsStatusAuditedOrUnaudited	uk-bus	text	2023-06-01	2024-05-31		AccountsStatusDimension=AuditExempt-NoAccountantsReport		
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	AccountsType	uk-bus	text	2023-06-01	2024-05-31		AccountsTypeDimension=FullAccounts		
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	AccruedLiabilitiesNotExpressedWithinCreditorsSubtotal	uk-core	num		2023-05-31	1		GBP	0
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	AccruedLiabilitiesNotExpressedWithinCreditorsSubtotal	uk-core	num		2024-05-31	1		GBP	0
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	AverageNumberEmployeesDuringPeriod	uk-core	num	2022-06-01	2023-05-31			GBP	17
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	AverageNumberEmployeesDuringPeriod	uk-core	num	2023-06-01	2024-05-31			GBP	17
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	BalanceSheetDate	uk-bus	text		2024-05-31	1			31 May 2024
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	Creditors	uk-core	num		2023-05-31	1	MaturitiesOrExpirationPeriodsDimension=AfterOneYear	GBP	72480
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	Creditors	uk-core	num		2023-05-31	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	18103
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	Creditors	uk-core	num		2024-05-31	1	MaturitiesOrExpirationPeriodsDimension=AfterOneYear	GBP	72480
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	Creditors	uk-core	num		2024-05-31	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	55993
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	CurrentAssets	uk-core	num		2023-05-31	1		GBP	2254
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	CurrentAssets	uk-core	num		2024-05-31	1		GBP	125128
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	DateAuthorisationFinancialStatementsForIssue	uk-core	text		2024-05-31	1			24 February 2025
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	DirectorSigningFinancialStatements	uk-core	text	2023-06-01	2024-05-31		EntityOfficersDimension=Director1		
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	DirectorSigningFinancialStatements	uk-core	text	2023-06-01	2024-05-31		EntityOfficersDimension=Director2		
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	EndDateForPeriodCoveredByReport	uk-bus	text		2024-05-31	1			2024-05-31
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	EntityCurrentLegalOrRegisteredName	uk-bus	text	2023-06-01	2024-05-31				NEEDHAM MARKET FC LIMITED
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	EntityDormantTruefalse	uk-bus	text	2023-06-01	2024-05-31				false
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	EntityTradingStatus	uk-bus	text	2023-06-01	2024-05-31				
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	Equity	uk-core	num		2023-05-31	1		GBP	88329
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	Equity	uk-core	num		2024-05-31	1		GBP	9392
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	FixedAssets	uk-core	num		2023-05-31	1		GBP	0
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	FixedAssets	uk-core	num		2024-05-31	1		GBP	0
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	NameEntityOfficer	uk-bus	text	2023-06-01	2024-05-31		EntityOfficersDimension=Director1		Keith Nunn
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	NameProductionSoftware	uk-bus	text	2023-06-01	2024-05-31				Companies House
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	NetAssetsLiabilities	uk-core	num		2023-05-31	1		GBP	88329
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	NetAssetsLiabilities	uk-core	num		2024-05-31	1		GBP	9392
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	NetCurrentAssetsLiabilities	uk-core	num		2023-05-31	1		GBP	15849
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	NetCurrentAssetsLiabilities	uk-core	num		2024-05-31	1		GBP	69135
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	PrepaymentsAccruedIncomeNotExpressedWithinCurrentAssetSubtotal	uk-core	num		2023-05-31	1		GBP	0
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	PrepaymentsAccruedIncomeNotExpressedWithinCurrentAssetSubtotal	uk-core	num		2024-05-31	1		GBP	0
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	ProvisionsForLiabilitiesBalanceSheetSubtotal	uk-core	num		2023-05-31	1		GBP	0
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	ProvisionsForLiabilitiesBalanceSheetSubtotal	uk-core	num		2024-05-31	1		GBP	6047
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	StartDateForPeriodCoveredByReport	uk-bus	text		2024-05-31	1			2023-06-01
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime	uk-direp	text	2023-06-01	2024-05-31				The accounts have been prepared in accordance with the micro-entity provisions and delivered in accordance with the provisions applicable to companies subject to the small companies regime.
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies	uk-direp	text	2023-06-01	2024-05-31				For the year ending 31 May 2024 the company was entitled to exemption under section 477 of the Companies Act 2006 relating to small companies.
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct	uk-direp	text	2023-06-01	2024-05-31				The directors acknowledge their responsibilities for complying with the requirements of the Companies Act 2006 with respect to accounting records and the preparation of accounts.
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit	uk-direp	text	2023-06-01	2024-05-31				The members have not required the company to obtain an audit in accordance with section 476 of the Companies Act 2006.
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	TotalAssetsLessCurrentLiabilities	uk-core	num		2023-05-31	1		GBP	15849
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	TotalAssetsLessCurrentLiabilities	uk-core	num		2024-05-31	1		GBP	69135
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	UKCompaniesHouseRegisteredNumber	uk-bus	text	2023-06-01	2024-05-31				09946659
+needham-market-fc	09946659	Gvh6Csjzu4YlsgVeHOMjb5kSxFCfNZrqKuM4doGU_-k	2025-02-28	2024-05-31	_GoingConcernMaterialUncertainty	derived	text						none found
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	AccountingStandardsApplied	uk-bus	text	2024-06-01	2025-05-31		AccountingStandardsDimension=Micro-entities		
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	AccountsStatusAuditedOrUnaudited	uk-bus	text	2024-06-01	2025-05-31		AccountsStatusDimension=AuditExempt-NoAccountantsReport		
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	AccountsType	uk-bus	text	2024-06-01	2025-05-31		AccountsTypeDimension=FullAccounts		
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	AccruedLiabilitiesNotExpressedWithinCreditorsSubtotal	uk-core	num		2024-05-31	1		GBP	0
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	AccruedLiabilitiesNotExpressedWithinCreditorsSubtotal	uk-core	num		2025-05-31	1		GBP	0
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	AverageNumberEmployeesDuringPeriod	uk-core	num	2023-06-01	2024-05-31			GBP	17
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	AverageNumberEmployeesDuringPeriod	uk-core	num	2024-06-01	2025-05-31			GBP	18
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	BalanceSheetDate	uk-bus	text		2025-05-31	1			31 May 2025
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	Creditors	uk-core	num		2024-05-31	1	MaturitiesOrExpirationPeriodsDimension=AfterOneYear	GBP	72480
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	Creditors	uk-core	num		2024-05-31	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	55993
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	Creditors	uk-core	num		2025-05-31	1	MaturitiesOrExpirationPeriodsDimension=AfterOneYear	GBP	72480
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	Creditors	uk-core	num		2025-05-31	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	173007
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	CurrentAssets	uk-core	num		2024-05-31	1		GBP	125128
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	CurrentAssets	uk-core	num		2025-05-31	1		GBP	231843
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	DateAuthorisationFinancialStatementsForIssue	uk-core	text		2025-05-31	1			25 February 2026
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	DirectorSigningFinancialStatements	uk-core	text	2024-06-01	2025-05-31		EntityOfficersDimension=Director1		
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	DirectorSigningFinancialStatements	uk-core	text	2024-06-01	2025-05-31		EntityOfficersDimension=Director2		
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	EndDateForPeriodCoveredByReport	uk-bus	text		2025-05-31	1			2025-05-31
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	EntityCurrentLegalOrRegisteredName	uk-bus	text	2024-06-01	2025-05-31				NEEDHAM MARKET FC LIMITED
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	EntityDormantTruefalse	uk-bus	text	2024-06-01	2025-05-31				false
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	EntityTradingStatus	uk-bus	text	2024-06-01	2025-05-31				
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	Equity	uk-core	num		2024-05-31	1		GBP	9392
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	Equity	uk-core	num		2025-05-31	1		GBP	6669
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	FixedAssets	uk-core	num		2024-05-31	1		GBP	0
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	FixedAssets	uk-core	num		2025-05-31	1		GBP	8022
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	NameEntityOfficer	uk-bus	text	2024-06-01	2025-05-31		EntityOfficersDimension=Director1		GRAHAM EMMERSON
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	NameProductionSoftware	uk-bus	text	2024-06-01	2025-05-31				Companies House
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	NetAssetsLiabilities	uk-core	num		2024-05-31	1		GBP	9392
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	NetAssetsLiabilities	uk-core	num		2025-05-31	1		GBP	6669
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	NetCurrentAssetsLiabilities	uk-core	num		2024-05-31	1		GBP	69135
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	NetCurrentAssetsLiabilities	uk-core	num		2025-05-31	1		GBP	58836
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	PrepaymentsAccruedIncomeNotExpressedWithinCurrentAssetSubtotal	uk-core	num		2024-05-31	1		GBP	0
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	PrepaymentsAccruedIncomeNotExpressedWithinCurrentAssetSubtotal	uk-core	num		2025-05-31	1		GBP	0
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	ProvisionsForLiabilitiesBalanceSheetSubtotal	uk-core	num		2024-05-31	1		GBP	6047
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	ProvisionsForLiabilitiesBalanceSheetSubtotal	uk-core	num		2025-05-31	1		GBP	1047
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	StartDateForPeriodCoveredByReport	uk-bus	text		2025-05-31	1			2024-06-01
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime	uk-direp	text	2024-06-01	2025-05-31				The accounts have been prepared in accordance with the micro-entity provisions and delivered in accordance with the provisions applicable to companies subject to the small companies regime.
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies	uk-direp	text	2024-06-01	2025-05-31				For the year ending 31 May 2025 the company was entitled to exemption under section 477 of the Companies Act 2006 relating to small companies.
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct	uk-direp	text	2024-06-01	2025-05-31				The directors acknowledge their responsibilities for complying with the requirements of the Companies Act 2006 with respect to accounting records and the preparation of accounts.
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit	uk-direp	text	2024-06-01	2025-05-31				The members have not required the company to obtain an audit in accordance with section 476 of the Companies Act 2006.
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	TotalAssetsLessCurrentLiabilities	uk-core	num		2024-05-31	1		GBP	69135
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	TotalAssetsLessCurrentLiabilities	uk-core	num		2025-05-31	1		GBP	66858
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	UKCompaniesHouseRegisteredNumber	uk-bus	text	2024-06-01	2025-05-31				09946659
+needham-market-fc	09946659	bQdsWD_XnjWbM0P2udGY2826Kz0zVzYMd8FLMSX0CDQ	2026-02-25	2025-05-31	_GoingConcernMaterialUncertainty	derived	text						none found

@@ -1,0 +1,414 @@
+source: Companies House filing, malvern-town-fc__1.pdf
+document: -lQ0Xt7SCI_2b6FJoObs4WWyCj6YD0JkmWfFZKAVZRM
+made_up_date: 2025-06-30
+method: ocr
+pages_read: 12 of 13
+
+Company Registration No 08755456 (England and Wales)
+MALVERN TOWN FOOTBALL CLUB CIC
+‘ UNAUDITED FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+PAGES FOR FILING WITH REGISTRAR
+|
+|
+I
+ns
+>
+<
+a
+«
+é *AF620GKI*
+A02 11/07/2026 #105 |;
+COMPANIES HOUSE :
+wee eee - 2 Le
+MALVERN TOWN FOOTBALL CLUB CIC
+COMPANY INFORMATION
+Directors C Pinder
+MP Shuttlewood
+TG Allen
+P Earl
+K K Golder
+LM Huckerby
+Secretary
+Company number 08755456
+Registered office Langland Stadium :
+Langland Avenue
+Malvern
+Worcestershire
+WR14 2EQ
+Accountants Kendall Wadley LLP
+Granta Lodge
+71 Graham Road
+Malvern
+Worcestershire
+WR14 25S
+, |
+: |
+MALVERN TOWN FOOTBALL CLUB CIC
+CONTENTS
+Page
+
+Balance sheet 1
+
+Notes to the financial statements 2-6
+|
+|
+|
+
+)
+MALVERN TOWN FOOTBALL CLUB CIC
+BALANCE SHEET
+AS AT 30 JUNE 2025
+Ce |
+2025 2024 |
+Notes £ £ £ £
+Fixed assets
+Tangible assets 5 6,601 12,852
+Current assets
+Stocks 3,500 3,874
+Debtors 6 5,448 5,444
+Cash at bank and in hand 2,426 3,343
+a OO |
+11,374 12,661
+Creditors amounts falling due within
+one year 7 (25,686) (32,861)
+Net current liabilittes (14,312) (20,200)
+Total assets less current habilities (7,711) (7,348)
+Creditors: amounts falling due after ;
+more than one year 8 - (5,531)
+Net habilities (7,711) (12,879)
+Capital and reserves
+Called up share capital 85,337 85,337
+Profit and loss reserves (93,048) (98,216) |
+i
+oo ~~ |
+Total equity (7,711) (12,879)
+The directors of the company have elected not to include a copy of the profit and loss account within the financial
+statements
+For the financial year ended 30 June 2025 the company was entitled to exemption from audit under section 477 of \
+the Companies Act 2006 relating to small companies :
+The directors acknowledge their responsibilittes for complying with the requirements of the Companies Act 2006
+with respect to accounting records and the preparation of financial statements
+The members have not required the company to obtain an audit of its financial statements for the year in question in
+accordance with section 476
+These financial statements have been prepared and delivered in accordance with the provisions applicable to
+companies subject to the small companies regime
+The financial statements were approved by the board of directors and authorised for issue on 20 March 2026 and :
+are wo by ‘
+Director
+Company Registration No 08755456
+-1- f
+f
+MALVERN TOWN FOOTBALL CLUB CIC
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+CC SS |
+1 Accounting policies
+Company information
+Malvern Town Football Club CIC 1s a private company limited by shares incorporated in England and Wales
+The registered office ts Langland Stadium, Langland Avenue, Malvern, Worcestershire, WR14 2EQ
+11. Accounting convention
+'
+These financial statements have been prepared in accordance with FRS 102 “The Financial Reporting
+Standard applicable in the UK and Republic of Ireland” (“FRS 102”) and the requirements of the Companies
+Act 2006 as applicable to companies subject to the small companies regime The disclosure requirements of
+section 1A of FRS 102 have been applied other than where additional disclosure is required to show a true
+and fair view .
+The financial statements are prepared in sterling, which 1s the functional currency of the company Monetary
+amounts tn these financial statements are rounded to the nearest £
+The financial statements have been prepared under the historical cost convention The principal accounting
+policies adopted are set out below
+12 Turnover
+Turnover ts recognised at the fair value of the consideration received or receivable for goods and services
+provided in the normal course of business, and is shown net of VAT and other sales related taxes The fair
+value of consideration takes into account trade discounts, settlement discounts and volume rebates
+Revenue from the sate of goods ts recognised when the significant nsks and rewards of ownership of the '
+goods have passed to the buyer (usually on dispatch of the goods), the amount of revenue can be measured
+reliably, it is probable that the economic benefits associated with the transaction will flow to the entity and the
+costs incurred of to be incurred in respect of the transaction can be measured reliably
+1.3. Tangible fixed assets
+Tangible fixed assets are initially measured at cost and subsequently measured at cost or valuation, net of
+depreciation and any impairment losses '
+Depreciation ts recognised so as to write off the cost or valuation of assets tess their residual values over their
+useful lives on the following bases
+Leasehold refurbishment 10% straight line
+Plant and machinery 20% straight line l
+Fixtures, fittings & equipment 20% straight line
+Motor vehicles 20% straight line
+The gain or loss arising on the disposa! of an asset is determined as the difference between the sale
+proceeds and the carrying value of the asset, and 1s credited or charged to profit or loss ,
+14 Impairment of fixed assets
+At each reporting period end date, the company reviews the carrying amounts of its tangible assets to
+determine whether there is any indication that those assets have suffered an impatrment loss lf any such
+indication exists, the recoverable amount of the asset is estimated in order to determine the extent of the
+Impairment loss (if any) Where it ts not possible to estimate the recoverable amount of an individual asset,
+the company estimates the recoverable amount of the cash-generating unit to which the asset belongs
+-2-
+MALVERN TOWN FOOTBALL CLUB CIC
+
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR ENDED 30 JUNE 2025
+
+1 Accounting policies (Continued)
+Recoverable amount is the higher of fair value less costs to sell and value in use In assessing value in use,
+the estimated future cash flows are discounted to their present value using a pre-tax discount rate that reflects
+current market assessments of the time value of money and the risks specific to the asset for which the
+estimates of future cash flows have not been adjusted
+If the recoverable amount of an asset Is estimated to be less than its carrying amount, the carrying amount of
+the asset 1s reduced fo Its recoverable amount An impairment loss is recognised immediately in profit or loss,
+unless the relevant asset Is carried at a revalued amount, tn which case the impairment loss 1s treated as a
+revaluation decrease
+Recognised impairment losses are reversed if, and only if, the reasons for the impairment loss have ceased
+to apply Where an impairment loss subsequently reverses, the carrying amount of the asset Is increased to '
+the revised estimate of its recoverable amount, but so that the increased carrying amount does not exceed
+the carrying amount that would have been determined had no impairment loss been recognised for the asset
+In prior years A reversal of an impairment loss is recognised immediately :n profit or loss, untess the relevant
+asset Is carried at a revalued amount, in which case the reversal of the impairment loss is treated as a
+revaluation increase
+
+15 Stocks
+Stocks are stated at the tower of cost and estimated selling price less costs to complete and sell Cost
+comprises direct materials and, where applicable, direct labour costs and those overheads that have been
+incurred in bringing the stocks to their present location and condition
+Stocks held for distribution at no or nominal consideration are measured at the lower of replacement cost and
+cost, adjusted where applicable for any loss of service potential
+At each reporting date, an assessment is made for impairment Any excess of the carrying amount of stocks
+over its estimated selling price less costs to complete and sell is recognised as an impairment loss in profit or
+loss Reversals of impairment losses are also recognised in profit or loss
+
+16 Cash at bank and in hand
+Cash and cash equivalents are basic financial assets and include cash in hand, deposits held at call with
+banks, other short-term liquid investments with original maturities of three months or less, and bank
+overdrafts Bank overdrafts are shown within borrowings tn current liabilities
+
+17 Financial instruments
+The company has elected to apply the provisions of Section 11 ‘Basic Financial Instruments’ and Section 12
+‘Other Financial Instruments Issues’ of FRS 102 to all of its financial instruments
+Financial instruments are recognised in the company's balance sheet when the company becomes party to
+the contractual! provisions of the instrument
+Financial assets and habilities are offset, with the net amounts presented in the financial statements, when
+there Is a legally enforceable right to set off the recognised amounts and there is an intention to settle on a
+net basis or to realise the asset and settle the lability simultaneously
+Basic financial assets
+Basic financial assets, which include debtors and cash and bank balances, are initially measured at
+transaction price including transaction costs and are subsequently carned at amortised cost using the ‘
+effective interest method unless the arrangement constitutes a financing transaction, where the transaction 1s
+measured at the present value of the future receipts discounted at a market rate of interest Financial assets
+classified as receivable within one year are not amortised
+
+-3- .
+MALVERN TOWN FOOTBALL CLUB CIC |
+|
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED) |
+FOR THE YEAR ENDED 30 JUNE 2025
+1 Accounting policies (Continued)
+Classification of financial liabiltties
+Financial liabilities and equity instruments are classified according to the substance of the contractual
+arrangements entered into An equity instrument is any contract that evidences a residual interest in the
+assets of the company after deducting all of its liabilities
+Basic financial habilities
+Basic financial habilitres, including creditors, loans from suppliers and loans from connected companies, are
+Initially recognised at transaction price untess the arrangement constitutes a financing transaction, where the
+debt instrument is measured at the present value of the future payments discounted at a market rate of '
+interest Financiat liabilities classified as payable within one year are not amortised
+Debt instruments are subsequently carried at amortised cost, using the effective interest rate method
+Trade creditors are obligations to pay for goods or services that have been acquired in the ordinary course of
+business from suppliers Amounts payable are classified as current liabilities if payment is due within one year
+or less lf not, they are presented as non-current liabilittes Trade creditors are recognised initially at
+transaction price and subsequently measured at amortised cost using the effective interest method |
+Changes in the fair value of derivatives that are designated and qualify as fair value hedges are recognised in
+profit or loss immediately, together with any changes in the fair value of the hedged asset or liability that are
+attributable to the hedged risk
+18 Taxation
+The tax expense represents the sum of the tax currently payable and deferred tax
+Current tax
+The tax currently payable ts based on taxable profit for the year Taxable profit differs from net profit as
+teported in the profit and loss account because It excludes ttems of income or expense that are taxable or
+deductible in other years and it further excludes items that are never taxable or deductible The company’s ;
+lability for current tax is calculated using tax rates that have been enacted or substantively enacted by the \
+Teporting end date
+19 Retirement benefits
+Payments to defined contribution retirement benefit schemes are charged as an expense as they fall due
+2 Judgements and key sources of estimation uncertainty
+In the application of the company’s accounting policies, the directors are required to make judgements,
+estimates and assumptions about the carrying amount of assets and liabilities that are not readily apparent
+from other sources The estimates and associated assumptions are based on historical experience and other
+factors that are considered to be relevant Actual results may differ from these estimates
+The estimates and underlying assumptions are reviewed on an ongoing basis Revisions to accounting
+estimates are recognised in the period in which the estimate is revised where the revision affects only that
+period, or in the period of the revision and future periods where the revision affects both current and future
+periods
+|
+~-4-
+MALVERN TOWN FOOTBALL CLUB CIC
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2025
+3 Employees
+The average monthly number of persons (including directors) employed by the company during the year was
+2025 2024
+Number Number :
+Total 10 12 :
+4 Directors’ remuneration
+No remuneration was paid to the directors
+5 Tangible fixed assets
+Leasehold Plant and Fixtures, Motor Total
+refurbishment machinery fittings & vehicles |
+equipment '
+£ £ £ £ £
+Cost
+At 14 July 2024 and 30 June 2025 47,272 4,175 18,406 980 70,833
+Depreciation and impairment
+At 1 July 2024 38,604 4,175 14,222 980 57,981
+Depreciation charged in the year 4,727 - 1,524 - 6,251 !
+———_ ——— —___ —___ —_ i}
+|
+At 30 June 2025 43,331 4,175 15,746 980 64,232
+Carrying amount
+At 30 June 2025 3,941 - 2,660 - 6,601
+At 30 June 2024 8,668 - 4,184 - 12,852
+6 Debtors
+2025 2024
+Amounts falling due within one year £ £
+Trade debtors 4 -
+Other debtors 5,444 5,444
+5,448 5,444
+—— =—— |
+|
+|
+-5-
+MALVERN TOWN FOOTBALL CLUB CIC
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2025
+7 Creditors amounts falling due within one year
+2025 2024
+£ £
+Bank loans and overdrafts 5,531 7,387
+Trade creditors 397 800
+Taxation and social security 7,814 7,157
+Other creditors 11,944 17,517
+25,686 32,861
+8 Creditors amounts falling due after more than one year
+2025 2024
+£ £
+Bank loans and overdrafts - §,531
+|
+|
+-6-
+{02224 hs
+CIC 34 —
+Community Interest Company Report
+Please Company Name in | MALVERN TOWN FOOTBALL CLUB CIC
+complete in full |
+typescript, or
+capitals 5 |
+Year Ending 30" June 2025 |
+(The date format is required in full and should match
+the date of the accounts e.g. 315%* March 2020)
+Please ensure the company name is consistent with the company name entered on the
+accounts.
+
+This template illustrates what the Regulator of Community Interest Companies considers to be best
+practice for completing a simplified community interest company report All such reports must be
+delivered in accordance with section 34 of the Companies (Audit, Investigations and Community
+Enterprise) Act 2004 and contain the information required by Part 7 of the Community Interest
+Company Regulations 2005
+
+(N.B. A Filing Fee of £15 is payable on this document. Please enclose a cheque or postal order
+payable to Companies House)
+
+PART 1 - GENERAL DESCRIPTION OF THE COMPANY’S ACTIVITIES AND IMPACT
+
+In the space provided below, please insert a genera! account of the company’s activities in the
+financial year to which the report relates, including a description of how they have benefited
+the community
+As a football club we are in a uniquely positive position to reach traditionally hard to engage with
+communities The Club's facility delivers both social value and community benefit to Malvern Hills
+and surrounding areas This financial year, 1000s of people have utilised the Club's facilities,
+whether through the participation and enjoyment of sport, or as a community space for holding
+events
+We currently deliver
+
+* An adult men’s football team representing Malvern at the highest standard league
+
+« An over 16s women’s football team
+
++ Under 21s men football team
+
+* Under 18s men football team
+
+« Under 15s player development centre
+
+* Our pitch is also used for the Mercian League finals
+
+* Street Dance Classes
+
+* Over 60s Bingo
+
++ Skittles League
+
++ Darts League
+
+* Pool Teams
+The club’s function room ts also used for meetings by community organisations, Fortis Living,
+District Council, the police and Hope Unlimited
+
+i}
+lf applicable, please just state “A social audit report covering these points 1s attached”,
+(Please continue on separate continuation sheet if necessary )
+PART 2 —- CONSULTATION WITH STAKEHOLDERS - A “stakeholder” ts any person or
+
+organisation affected by the company’s activities Please indicate who the company's
+
+stakeholders are, how the stakeholders have been consulted and what action has the
+
+company taken tn response to feedback from its consultations If there has been no
+
+consultation you must state ‘There has been no stakeholder consultation held’
+
+The company’s primary stakeholders are the players, patrons, helpers and supporters of Malvern
+
+Town Football Club These are consulted with regularly in forum and steering group meetings
+
+Other stakeholders, such as the District Council, local residents’ association, housing authority,
+
+FA and policing are also met with on a regular basis
+
+As a response to consultation and feedback from the stakeholders, plans are in place to create a |
+
+‘digital hub’ on site, providing computer literacy support of the local community
+
+Other actions that have been taken as a result of consultation is the creation of a parents and
+
+toddlers’ group and a ‘boot camp’ fitness class for all ages
+
+(If applicable, please just state “A social audit report covering these points 1s attached”)
+
+PART 3 — DIRECTORS’ REMUNERATION - Please indicate below any remuneration the
+
+directors have received Alternatively, if you have provided full details in your accounts then
+
+you do not need to disclose it here, but you must explain in the space below where they are
+
+found within the accounts If no remuneration was received, you must state that “no
+
+remuneration was received by the directors” below
+|
+
+No remuneration was received by the directors. |
+|
+
+PART 4-— TRANSFERS OF ASSETS OTHER THAN FOR FULL CONSIDERATION - Please
+
+insert full details of any transfers of assets other than for full consideration to an asset locked
+
+body or for the benefit of the community This must include the amount, or contain a fair
+
+estimate of the value, of such transfer If this does not apply you must state that “no transfer
+
+of assets other than for full consideration has been made” below
+
+‘
+No transfer of assets other than for full consideration has been made.
+(Please continue on separate continuation sheet tf necessary )
+

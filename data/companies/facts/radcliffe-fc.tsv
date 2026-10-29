@@ -1,0 +1,35 @@
+club_id	company_number	document	filing_date	made_up_date	concept	prefix	kind	period_start	period_end	instant	dimensions	unit	value
+radcliffe-fc	02856860	-mS_vQlY_subUQYWu7FRMrAvOhXA0EHbJTR9xX2LEMo	2026-02-27	2025-05-31	AccountingStandardsApplied	uk-bus	text	2024-06-01	2025-05-31		AccountingStandardsDimension=Micro-entities		
+radcliffe-fc	02856860	-mS_vQlY_subUQYWu7FRMrAvOhXA0EHbJTR9xX2LEMo	2026-02-27	2025-05-31	AccountsStatusAuditedOrUnaudited	uk-bus	text	2024-06-01	2025-05-31		AccountsStatusDimension=AuditExempt-NoAccountantsReport		
+radcliffe-fc	02856860	-mS_vQlY_subUQYWu7FRMrAvOhXA0EHbJTR9xX2LEMo	2026-02-27	2025-05-31	AccountsType	uk-bus	text	2024-06-01	2025-05-31		AccountsTypeDimension=FullAccounts		
+radcliffe-fc	02856860	-mS_vQlY_subUQYWu7FRMrAvOhXA0EHbJTR9xX2LEMo	2026-02-27	2025-05-31	AverageNumberEmployeesDuringPeriod	uk-core	num	2023-06-01	2024-05-31			GBP	4
+radcliffe-fc	02856860	-mS_vQlY_subUQYWu7FRMrAvOhXA0EHbJTR9xX2LEMo	2026-02-27	2025-05-31	AverageNumberEmployeesDuringPeriod	uk-core	num	2024-06-01	2025-05-31			GBP	4
+radcliffe-fc	02856860	-mS_vQlY_subUQYWu7FRMrAvOhXA0EHbJTR9xX2LEMo	2026-02-27	2025-05-31	BalanceSheetDate	uk-bus	text		2025-05-31	1			31 May 2025
+radcliffe-fc	02856860	-mS_vQlY_subUQYWu7FRMrAvOhXA0EHbJTR9xX2LEMo	2026-02-27	2025-05-31	Creditors	uk-core	num		2024-05-31	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	67251
+radcliffe-fc	02856860	-mS_vQlY_subUQYWu7FRMrAvOhXA0EHbJTR9xX2LEMo	2026-02-27	2025-05-31	Creditors	uk-core	num		2025-05-31	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	67251
+radcliffe-fc	02856860	-mS_vQlY_subUQYWu7FRMrAvOhXA0EHbJTR9xX2LEMo	2026-02-27	2025-05-31	DateAuthorisationFinancialStatementsForIssue	uk-core	text		2025-05-31	1			26 February 2026
+radcliffe-fc	02856860	-mS_vQlY_subUQYWu7FRMrAvOhXA0EHbJTR9xX2LEMo	2026-02-27	2025-05-31	DirectorSigningFinancialStatements	uk-core	text	2024-06-01	2025-05-31		EntityOfficersDimension=Director1		
+radcliffe-fc	02856860	-mS_vQlY_subUQYWu7FRMrAvOhXA0EHbJTR9xX2LEMo	2026-02-27	2025-05-31	DirectorSigningFinancialStatements	uk-core	text	2024-06-01	2025-05-31		EntityOfficersDimension=Director2		
+radcliffe-fc	02856860	-mS_vQlY_subUQYWu7FRMrAvOhXA0EHbJTR9xX2LEMo	2026-02-27	2025-05-31	EndDateForPeriodCoveredByReport	uk-bus	text		2025-05-31	1			2025-05-31
+radcliffe-fc	02856860	-mS_vQlY_subUQYWu7FRMrAvOhXA0EHbJTR9xX2LEMo	2026-02-27	2025-05-31	EntityCurrentLegalOrRegisteredName	uk-bus	text	2024-06-01	2025-05-31				RADCLIFFE BOROUGH SPORTS & SOCIAL CLUB LIMITED
+radcliffe-fc	02856860	-mS_vQlY_subUQYWu7FRMrAvOhXA0EHbJTR9xX2LEMo	2026-02-27	2025-05-31	EntityDormantTruefalse	uk-bus	text	2024-06-01	2025-05-31				false
+radcliffe-fc	02856860	-mS_vQlY_subUQYWu7FRMrAvOhXA0EHbJTR9xX2LEMo	2026-02-27	2025-05-31	EntityTradingStatus	uk-bus	text	2024-06-01	2025-05-31				
+radcliffe-fc	02856860	-mS_vQlY_subUQYWu7FRMrAvOhXA0EHbJTR9xX2LEMo	2026-02-27	2025-05-31	Equity	uk-core	num		2024-05-31	1		GBP	14371
+radcliffe-fc	02856860	-mS_vQlY_subUQYWu7FRMrAvOhXA0EHbJTR9xX2LEMo	2026-02-27	2025-05-31	Equity	uk-core	num		2025-05-31	1		GBP	14371
+radcliffe-fc	02856860	-mS_vQlY_subUQYWu7FRMrAvOhXA0EHbJTR9xX2LEMo	2026-02-27	2025-05-31	FixedAssets	uk-core	num		2024-05-31	1		GBP	52880
+radcliffe-fc	02856860	-mS_vQlY_subUQYWu7FRMrAvOhXA0EHbJTR9xX2LEMo	2026-02-27	2025-05-31	FixedAssets	uk-core	num		2025-05-31	1		GBP	52880
+radcliffe-fc	02856860	-mS_vQlY_subUQYWu7FRMrAvOhXA0EHbJTR9xX2LEMo	2026-02-27	2025-05-31	NameEntityOfficer	uk-bus	text	2024-06-01	2025-05-31		EntityOfficersDimension=Director1		Marcus McCabe
+radcliffe-fc	02856860	-mS_vQlY_subUQYWu7FRMrAvOhXA0EHbJTR9xX2LEMo	2026-02-27	2025-05-31	NameProductionSoftware	uk-bus	text	2024-06-01	2025-05-31				Companies House
+radcliffe-fc	02856860	-mS_vQlY_subUQYWu7FRMrAvOhXA0EHbJTR9xX2LEMo	2026-02-27	2025-05-31	NetAssetsLiabilities	uk-core	num		2024-05-31	1		GBP	14371
+radcliffe-fc	02856860	-mS_vQlY_subUQYWu7FRMrAvOhXA0EHbJTR9xX2LEMo	2026-02-27	2025-05-31	NetAssetsLiabilities	uk-core	num		2025-05-31	1		GBP	14371
+radcliffe-fc	02856860	-mS_vQlY_subUQYWu7FRMrAvOhXA0EHbJTR9xX2LEMo	2026-02-27	2025-05-31	NetCurrentAssetsLiabilities	uk-core	num		2024-05-31	1		GBP	67251
+radcliffe-fc	02856860	-mS_vQlY_subUQYWu7FRMrAvOhXA0EHbJTR9xX2LEMo	2026-02-27	2025-05-31	NetCurrentAssetsLiabilities	uk-core	num		2025-05-31	1		GBP	67251
+radcliffe-fc	02856860	-mS_vQlY_subUQYWu7FRMrAvOhXA0EHbJTR9xX2LEMo	2026-02-27	2025-05-31	StartDateForPeriodCoveredByReport	uk-bus	text		2025-05-31	1			2024-06-01
+radcliffe-fc	02856860	-mS_vQlY_subUQYWu7FRMrAvOhXA0EHbJTR9xX2LEMo	2026-02-27	2025-05-31	StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime	uk-direp	text	2024-06-01	2025-05-31				The accounts have been prepared in accordance with the micro-entity provisions and delivered in accordance with the provisions applicable to companies subject to the small companies regime.
+radcliffe-fc	02856860	-mS_vQlY_subUQYWu7FRMrAvOhXA0EHbJTR9xX2LEMo	2026-02-27	2025-05-31	StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies	uk-direp	text	2024-06-01	2025-05-31				For the year ending 31 May 2025 the company was entitled to exemption under section 477 of the Companies Act 2006 relating to small companies.
+radcliffe-fc	02856860	-mS_vQlY_subUQYWu7FRMrAvOhXA0EHbJTR9xX2LEMo	2026-02-27	2025-05-31	StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct	uk-direp	text	2024-06-01	2025-05-31				The directors acknowledge their responsibilities for complying with the requirements of the Companies Act 2006 with respect to accounting records and the preparation of accounts.
+radcliffe-fc	02856860	-mS_vQlY_subUQYWu7FRMrAvOhXA0EHbJTR9xX2LEMo	2026-02-27	2025-05-31	StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit	uk-direp	text	2024-06-01	2025-05-31				The members have not required the company to obtain an audit in accordance with section 476 of the Companies Act 2006.
+radcliffe-fc	02856860	-mS_vQlY_subUQYWu7FRMrAvOhXA0EHbJTR9xX2LEMo	2026-02-27	2025-05-31	TotalAssetsLessCurrentLiabilities	uk-core	num		2024-05-31	1		GBP	14371
+radcliffe-fc	02856860	-mS_vQlY_subUQYWu7FRMrAvOhXA0EHbJTR9xX2LEMo	2026-02-27	2025-05-31	TotalAssetsLessCurrentLiabilities	uk-core	num		2025-05-31	1		GBP	14371
+radcliffe-fc	02856860	-mS_vQlY_subUQYWu7FRMrAvOhXA0EHbJTR9xX2LEMo	2026-02-27	2025-05-31	UKCompaniesHouseRegisteredNumber	uk-bus	text	2024-06-01	2025-05-31				02856860
+radcliffe-fc	02856860	-mS_vQlY_subUQYWu7FRMrAvOhXA0EHbJTR9xX2LEMo	2026-02-27	2025-05-31	_GoingConcernMaterialUncertainty	derived	text						none found

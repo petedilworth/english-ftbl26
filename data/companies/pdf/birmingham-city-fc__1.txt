@@ -1,0 +1,447 @@
+source: Companies House filing, birmingham-city-fc__1.pdf
+document: BgO80-iAF8pfjSIsOO-x17rqVGSTWki-STO0QSWSPF8
+made_up_date: 2025-06-30
+method: ocr
+pages_read: 12 of 36
+
+Docusign Envelope ID: BBE938A1-10A8-4A65-A219-29CAC03E7372
+Strategic Report
+Report of the Directors and
+Audited Financial Statements
+for the Year Ended 30 June 2025
+for
+
+BIRMINGHAM CITY FOOTBALL CLUB LIMITED
+
+a
+
+[=]
+
+oo
+
+oe
+
+2 *AEYNMHC8*
+
+r A10 26/03/2026 #230
+-— COMPANIES HOUSE
+Docusign Envelope ID: BBE938A1-10A8-4A65-A219-29CAC03E7372
+BIRMINGHAM CITY FOOTBALL CLUB LIMITED
+Contents of the Financial Statements
+for the year ended 30 June 2025
+Page
+
+Company Information 1
+Strategic Report 2
+Report of the Directors 5
+Report of the Independent Auditors 8
+Statement of Profit or Loss and Other Comprehensive
+Income 11
+Statement of Financial Position 12
+Statement of Changes in Equity 13
+Statement of Cash Flows 14
+Notes to the Statement of Cash Flows 16
+Notes to the Financial Statements 16
+Docusign Envelope ID: B8BE938A1-10A8-4A65-A219-29CAC03E7372
+BIRMINGHAM CITY FOOTBALL CLUB LIMITED
+Company Information
+for the year ended 30 June 2025
+Directors: T A Wagner
+: . A Shannahan
+M Alvarez
+K Kneisly
+Registered office: St Andrews Stadium @ Knighthead Park
+Small Heath
+Birmingham
+B9 4RL
+Registered number: 00027318 (England and Wales)
+Auditors: Azets Audit Services
+6" Floor, Bank House
+8 Cherry Street
+Birmingham
+United Kingdom
+B2 5AL .
+Bankers: HSBC Bank plc . :
+130 New Street
+Birmingham
+B2 4JU
+Page 1
+Docusign Envelope 1D: BBE938A1-10A8-4A65-A219-29CAC03E7372
+BIRMINGHAM CITY FOOTBALL CLUB LIMITED
+Strategic Report
+for the year ended 30 June 2025
+The Directors present their Strategic Report and Financial Statements for the year ended 30 June 2025.
+The principal and continuing activity of the company is that of a football club, namely Birmingham City Football Club.
+Financial and operating review
+The loss for the year before tax of £34.6m represents a significant increase of approximately 115% as compared to the
+loss of approximately £16.1m for the corresponding period jast year.
+The 2024/2025 season saw the club play in the third tier of the English Football League (EFL). The squad enjoyed an
+exceptional season, ultimately earning promotion back to the second tier of the EFL with a record breaking 111 points.
+The year saw continued investment ‘into the playing squad and infrastructure at St Andrews @ Knighthead Park,
+Knighthead Performance Centre and the Knighthead Elite Performance and Innovation Centre.
+Despite relegation to the third tier of English football, the company has seen strong commercial growth, ultimately
+increasing revenues year on year.
+The company is firmly aligned with the Birmingham City Football Club Foundation (‘The Foundation’). This is the charitable
+arm of the group and provides much needed support to the local community. The company held a hugely successful “Blue
+Nose Day’ aiming to ensure 11,500 young people in care, received a Christmas gift from the Foundation.
+The Birmingham City Football Club Academy continued to operate at Category 2 status under the Elite Player Performance
+Plan at the start of the 2024/25 season. In May 2025, it was announced that the Birmingham City Football Club Academy
+has been awarded Category 1 status after meeting strict criteria for staffing, facilities and infrastructure as audited by the
+Professional Game Academy (PGA). Several academy trained players continued to participate in the first team squad
+throughout the 2024/25 season.
+The players, football management team, staff and directors would like to thank the fans for their loyal and continued
+support. :
+Key performance indicators (KPIs)
+Key performance indicators are used to measure and evaluate performance against targets and monitor various activities
+throughout the company. The main key performance indicators employed in the company are:
+2025 2024
+£'000 £'000
+Revenue levels (football related and other) 35,643 28,720
+Loss from operations 25,150 13,827
+Staff costs (player related and other) 35,698 33,719
+No. No.
+Average attendance levels 25,939 21,180
+The Board monitor these key performance indicators on a monthly basis. Acceptable performance and target KPI's are set
+by the group's budget and the group's primary internal performance measure is against budgets.
+Principal risks and uncertainties
+The directors of Birmingham City Football Club Limited have carried out a robust assessment of the principal risks facing
+the company, including those that would threaten its business model, future performance, solvency, or liquidity.
+In undertaking this review, the directors evaluated both internal and external risks, including financial, operational,
+regulatory, and strategic exposures. Particular attention was given to the potential impact of the football industry's
+regulatory framework, including the English Football League’s (EFL) Financial Fair Play regulations, as well as wider
+macroeconomic conditions and market developments affecting football revenues, player trading, and operational costs.
+The directors also considered the adequacy and effectiveness of the company's internal control and risk management
+systems. This included reviewing the procedures for identifying, monitoring, and mitigating significant risks.
+Funding and going concern
+On 13 July 2023, the company’s ultimate parent undertaking, ZO Future Group (°ZO"), formerly known as Birmingham
+Sports Holdings Limited (“BSHL”), announced that Shelby Companies Limited, owned by Knighthead Annuity & Life
+Assurance Company and Knighthead Master Fund, L.P (Knighthead), had acquired 45.98% of the issued share capital of
+the parent company Birmingham City Limited (“BCL”). Shelby Companies Limited acquired 24.34% of the shares in BCL
+from ZO and 21.64% of the shares in BCL from Oriental Rainbow Investments Limited (ORIL).
+Page 2
+Docusign Envelope ID: BBE938A1-10A8-4A65-A219-29CAC03E7372
+BIRMINGHAM CITY FOOTBALL CLUB LIMITED
+Strategic Report
+for the year ended 30 June 2025
+Funding and going concern (continued) ,
+On 7 November 2025, ZO Future Group Limited disposed of its 51.72% shareholding in Birmingham City Limited to Shelby
+Companies Limited. Following the completion of this transaction, Shelby Companies Limited became the majority
+shareholder of BCL. The directors have received written confirmation from Knighthead that continued financial support will
+be provided for at least the next 12 months. At the balance sheet date funding of £188.3m has been provided by BCL to
+the company, this amount is shown as due to the parent undertaking within one year.
+In the prior year, the company entered into a facility agreement with funding available of up to £50m. The facility is available
+for a period of 7 years from the date of the agreement and attracts a fixed interest rate of 11.90%. On 3 October 2024, a
+Deed of Amendment was entered into between the BCL, BCFC and Shelby extending the loan facility to £100m. On 23
+July 2025, a further Deed of Amendment was entered into between the BCL, BCFC and Shelby extending the loan facility
+to £150m. The company does not have an overdraft facility and from 13 July 2024 onwards, the day to day funding
+requirements were supported by Knighthead.
+The directors have prepared detailed cash flow forecasts for the period to 31 December 2026 as part of the longer term
+forecasts prepared for the company. The forecasts show that the company needs additional funding of approximately
+£59m from Knighthead for the period from July 2025 to December 2026. The directors of the company and Knighthead
+have indicated that they expect that the company will have sufficient working capital to be able to advance funds for the
+company to meet its financial obligations as and when they fall due for the next twelve months and have therefore adopted
+going concern as the basis of preparation with no material uncertainties noted.
+Statement by the Directors on performance of their statutory duties in accordance with s172(1} Companies Act
+2006
+Section 172 of the Companies Act 2006 requires Directors to take into consideration the interests of stakeholders in their
+decision making. This is achieved through regular contact (verbal and written) with the Senior Management Team and
+external advisors, whose views are taken into consideration.
+Long term decision making
+The Directors, Senior Management and employees consider all potential impacts to the club and all relevant stakeholders
+when making decisions believed to be in line with the long-term strategic plan of the group.
+Any decision made is designed to lead to success on the pitch through promotion from the English Football League to the
+Premier League. Given the short term nature of these objectives, the financial considerations are also heavily scrutinised
+by the Senior Management to ensure the club remains financially stable.
+Employees
+The group places considerable value on the involvement of its employees and recognises the importance of good
+communication within the workplace.
+The quality and commitment of our people have played a major role in our business operations. This has been
+demonstrated in many ways. They have shown flexibility in adapting to changing business environments and new ways of
+working. Employees’ performance is aligned to the group's goals through an annual performance review process that is
+carried out with all employees.
+Over the 2024/25 season, the Club has undergone a significant period of growth and transformation, with the full-time
+workforce increasing significantly. This expansion has included the creation of new roles, such as positions within Strategy
+and Innovation, and the appointment of a dedicated Equality, Diversity and Inclusion Manager.
+The Club also continues to publish its annual Gender Pay Gap Report, and in 2025 was successfully awarded Bronze
+Level of the EFL Equality Code of Practice
+Suppliers and supporters
+The group is wholly invested in the local business community and intends to use local suppliers for procuring goods and
+services where possible. The group has a good relationship with key suppliers which helps maintain the day to day
+business activities.
+The group recognises the supporters as the heartbeat of the Football Club. It is important to maintain an open dialogue
+with supporters which has been achieved through; multiple “Open House” events as well as the re-introduction of official
+supporter groups. This enables structured conversations with the senior leadership team at the Football Club.
+Disabled Persons
+Applications for employment by disabled persons are afways fully considered, bearing in mind the aptitudes of the applicant
+concerned. In the event of members of staff becoming disabled, every effort is made to ensure that their employment within
+the group continues and that the appropriate training is arranged. It is the policy of the group that the training, career
+development and promotion of disabled persons should, as far as possible, be identical to that of other employees.
+Page 3
+Docusign Envelope ID: BBE938A1-10A8-4A65-A219-29CAC03E7372 .
+BIRMINGHAM CITY FOOTBALL CLUB LIMITED
+, Strategic Report
+for the year ended 30 June 2025
+Statement by the Directors on performance of their statutory duties in accordance with s172(1) Companies Act
+2006 (continued) .
+Community
+The group are firmly aligned with the Birmingham City Football Club Foundation (“The Foundation’). This is a charitable
+arm of the group and provides much needed support to the local community. The Foundation aims to utilise funding from
+regulatory bodies as well as the brand power of BCFC to provide essential services to the local area.
+Environment :
+The group's policy with regard to the environment is to ensure that we understand and effectively manage the actual and
+potential environmental impact of our activities. Our operations are conducted such that we comply with all legal
+requirements relating to the environment in all areas where we carry out our business. During the period covered by this
+report the group has not incurred any fines or penalties or been investigated for any breach of environmental regulations.
+English Football League rules and regulation
+During the year under review, the company has complied in all material respects with the relevant laws and regulations
+that have a significant impact on the business and operation of the company, and there was no material breach of or non- ,
+compliance with the applicable laws and regulations by the company.
+On behalf of the board:
+DocuSigned by: .
+Tom Uh
+Director: Tom Wagner
+Date: 8 December 2025
+a , Page 4
+Docusign Envelope ID: B8E938A1-10A8-4A65-A219-29CAC03E7372
+BIRMINGHAM CITY FOOTBALL CLUB LIMITED
+Report of the Directors
+for the year ended 30 June 2025
+The directors present their report with the financial statements of the company for the year ended 30 June 2025.
+Dividends
+No dividends will be distributed for the year ended 30 June 2025.
+Directors
+The directors shown below have held office during the whole of the period from 1 July 2024 to the date of this report.
+T A Wagner
+A Shannahan
+M Alvarez
+K Kneisly
+Other changes in directors holding office after the year end but prior to this report are as follows:
+G Cook - resigned 12 January 2025
+W Zhao — resigned 7 November 2025
+G Zheng — resigned 7 November 2025
+Financial instruments
+The company's operations expose it to a variety of financial risks including the effects of changes in interest rates on debt,
+credit risk and liquidity risk.
+The company does not have material exposures in any of the areas identified above but can use derivative instruments to
+manage these exposures.
+The company's principal financial instruments comprise sterling cash and bank deposits and loans together with trade
+receivables and trade payables that arise directly from its operations.
+The main risks arising from the company's financial instruments can be analysed as follows:
+Credit risk
+The company's principal financial assets are bank balances, cash and trade receivables. The company's credit risk is
+primarily attributable to its trade receivables. The amounts presented in the statement of financial position are net of
+allowances for doubtful debts, estimated by the company's management based on prior experience and their assessment
+of the current economic environment.
+The company has no significant concentration of credit risk, with exposure spread over a large number of counterparties
+and customers.
+Liquidity risk .
+The company's policy has been to ensure continuity of funding through operating within its banking facilities and operating
+loan agreement with Knighthead.
+Foreign currency risk
+The company has some exposure in its trading operations to the risk of changes in foreign currency exchange rates relating
+to future transfer instalments.
+Page 5
+Docusign Envelope ID: B8BE938A1-10A8-4A65-A219-29CAC03E7372
+BIRMINGHAM CITY FOOTBALL CLUB LIMITED
+Report of the Directors
+for the year ended 30 June 2025
+Events after the statement of financial position date
+Transfers of player registrations subsequent to 30 June 2025, taking into account applicable costs, resulted in a net
+£2,687,654 payable by the group (2024 - £21,070,000 payable by the group).
+There has been significant infrastructure work taking place at St. Andrews @ Knighthead Park, Knighthead Performance
+Centre and the Elite Performance & Innovation Centre. This has amounted to £2.9m of spend post year end.
+On 23 July 2025, a Deed of Amendment was entered into between the company, BCFC and Knighthead extending the
+loan facility to £150m.
+On 7 November 2025, ZO Future Group Limited disposed of its 51.72% shareholding in Birmingham City Limited to Shelby
+Companies Limited. Following the completion of this transaction, Shelby Companies Limited became the majority
+shareholder of BCL.
+Statement of directors’ responsibilities
+The directors are responsible for preparing the Strategic Report, the Report of the Directors and the financial statements
+in accordance with applicable law and regulations.
+Company taw requires the directors to prepare financial statements for each financial year. Under that law the directors
+have elected to prepare the financial statements in accordance with UK-adopted International Financial Reporting
+‘ Standards and applicable UK law. Under company law the directors must not approve the financial statements unless they
+are satisfied that they give a true and fair view of the state of affairs of the company and of the profit or loss of the company
+for that period. In preparing these financial statements, the directors are required to:
+- select suitable accounting policies and then apply them consistently;
+- make judgements and accounting estimates that are reasonable and prudent;
+- state that the financial statements comply with IFRS;
+- prepare the financial statements on the going concern basis unless it is inappropriate to presume that the company will
+continue in business.
+The directors are responsible for keeping adequate accounting records that are sufficient to show and explain the
+company's transactions and disclose with reasonable accuracy at any time the financial position of the company and
+enable them to ensure that the financial statements comply with the Companies Act 2006. They are also responsible for
+safeguarding the assets of the company and hence for taking reasonable steps for the prevention and detection of fraud
+and other irregularities.
+Statement of carbon emission in compliance with Streamline Energy and Carbon Reporting (SECR)
+Year Ended 30 June
+2025
+Total energy use covering electricity, gas, other fuels and transport . 4,232,787 kWh
+Total emissions generated through combustion of gas 306 tCO2e
+Total emissions generated through use of purchased electricity §27 tCO2e
+Total emissions generated through business travel, 38 tCO2e
+Total gross emissions 871 tCO2e
+Intensity ratio (total gross emissions) by £m of sales revenue 23.9
+Page 6
+Docusign Envelope ID: B8E938A1-10A8-4A65-A219-28CAC03E7372
+BIRMINGHAM CITY FOOTBALL CLUB LIMITED
+Report of the Directors
+for the year ended 30 June 2025
+Statement of carbon emission in compliance with Streamline Energy and Carbon Reporting (SECR) — continued
+The information has been calculated in accordance with HM Government's Environmental Reporting Guidelines and using
+Government conversion factors for company reporting of greenhouse gas emissions.
+The club is committed to responsible energy management and will continue to practice and improve energy efficiency. The
+club acknowledges climate change as a significant global threat and understands the role we have to play in reducing
+green house gas emissions.
+During the reporting period, the Club has undertaken a number of initiatives aimed at reducing its environmental impact
+and supporting long-term carbon reduction objectives. A key achievement has been the introduction of a reusable cup
+scheme. This initiative delivers a fully carbon-neutral solution, independently certified by Climate Partner. The system
+operates using wash facilities powered entirely by renewable energy and designed for optimal water efficiency. All
+polypropylene (PP) cups provided are certified as carbon-neutral products, enabling the Club to significantly reduce single-
+use plastic waste and associated emissions.
+Statement as to disclosure of information to auditors
+So far as the directors are aware, there is no relevant audit information (as defined by Section 418 of the Companies Act
+2006) of which the company's auditors are unaware, and each director has taken all the steps that he ought to have taken
+as a director in order to make himself aware of any relevant audit information and to establish that the company's auditors
+are aware of that information.
+Auditors
+The auditors, Azets Audit Services were appointed during the year, and will be proposed for reappointment in accordance
+with section 485 of the Companies Act 2006.
+On behalf of the board:
+‘DocuSigned by:
+[> Wager
+OAABF22B318E465...
+Director: Tom Wagner
+Date: 8 December 2025
+Page 7
+Docusign Envelope ID: B8E938A1-10A8-4A65-A219-29CAC03E7372
+Report of the Independent Auditors to the Members of
+Birmingham City Football Club Limited
+Opinion
+We have audited the financial statements of Birmingham City Football Club Limited (the ‘company’') for the year ended 30
+June 2025 which comprise the statement of profit or loss and other comprehensive income, the statement of financial
+position, the statement of changes in equity, the statement of cash flows, notes to the statement of cashflows and notes
+to the financial statements, including significant accounting policies. The financial reporting framework that has been
+applied in their preparation is applicable law and UK-adopted international financial reporting standards (IFRS's).
+in our opinion the financial statements:
+« give a true and fair view of the state of the company's affairs as at 30 June 2025 and of its loss for the year then
+ended; .
+« have been properly prepared in accordance with UK-adopted international financial reporting standards; and
+« have been prepared in accordance with the requirements of the Companies Act 2006.
+Basis for opinion
+We conducted our audit in accordance with International Standards on Auditing (UK) (ISAs (UK)) and applicable law. Our
+responsibilities under those standards are further described in the Auditor's responsibilities for the audit of the financial
+statements section of our report. We are independent of the company in accordance with the ethical requirements that are
+relevant to our audit of the financial statements in the UK, including the FRC’s Ethical Standard, and we have fulfilled our
+other ethical responsibilities in accordance with these requirements. We believe that the audit evidence we have obtained
+is sufficient and appropriate to provide a basis for our opinion.
+Conclusions relating to going concern
+In auditing the financial statements, we have concluded that the directors’ use of the going concem basis of accounting in
+the preparation of the financial statements is appropriate.
+Based on the work we have performed, we have not identified any material uncertainties relating to events or conditions
+that, individually or collectively, may cast significant doubt on the company's ability to continue as a going concern for a
+period of at least twelve months from when the financial statements are authorised for issue.
+Our responsibilities and the responsibilities of the directors with respect to going concern are described in the relevant
+sections of this report. .
+Other information
+The other information comprises the information included in the annual report other than the financial statements and our
+auditor's report thereon. The directors are responsible for the other information contained within the annual report. Our
+opinion on the financial statements does not cover the other information and, except to the extent otherwise explicitly stated
+in our report, we do not express any form of assurance conclusion thereon. Our responsibility is to read the other
+information and, in doing so, consider whether the other information is materially inconsistent with the financial statements
+or our knowledge obtained in the course of the audit, or otherwise appears to be materially misstated. If we identify such
+material inconsistencies or apparent material misstatements, we are required to determine whether this gives rise to a
+material misstatement in the financial statements themselves. If, based on the work we have performed, we conclude that
+. there is a material misstatement of this other information, we are required to report that fact.
+We have nothing to report in this regard.
+Opinions on other matters prescribed by the Companies Act 2006
+In our opinion, based on the work undertaken in the course of the audit:
+e the information given in the strategic report and the report of the directors for the financial year for which the
+financial statements are prepared is consistent with the financial statements; and
+e the strategic report and the report of the directors have been prepared in accordance with applicable legal
+requirements
+Page 8
+Docusign Envelope ID: B8E938A1-10A8-4A65-A219-29CAC03E7372
+Report of the Independent Auditors to the Members of
+Birmingham City Football Club Limited
+
+Matters on which we are required to report by exception
+In the light of the knowledge and understanding of the company and its environment obtained in the course of the audit,
+we have not identified material misstatements in the strategic report or the report of the directors.
+We have nothing to report in respect of the following matters in relation to which the Companies Act 2006 requires us to
+report to you if, in our opinion:
+
+¢ adequate accounting records have not been kept, or returns adequate for our audit have not been received from
+
+branches not visited by us; or
+
+e the financial statements are not in agreement with the accounting records and returns; or
+
+« certain disclosures of directors’ remuneration specified by law are not made; or
+
+ewe have not received all the information and explanations we require for our audit.
+Responsibilities of directors
+As explained more fully in the statement of directors’ responsibilities, the directors are responsible for the preparation of
+the financial statements and for being satisfied that they give a true and fair view, and for such internal contro! as the
+directors determine is necessary to enable the preparation of financial statements that are free from material misstatement,
+whether due to fraud or error. In preparing the financial statements, the directors are responsible for assessing the
+company's ability to continue as a going concern, disclosing, as applicable, matters related to going concern and using the
+going concem basis of accounting unless the directors either intend to liquidate the company or to cease operations, or
+have no realistic alternative but to do so.
+Auditors’ responsibilities for the audit of the financial statements
+Our objectives are to obtain reasonable assurance about whether the financial statements as a whole are free from material :
+misstatement, whether due to fraud or error, and to issue an auditor's report that includes our opinion. Reasonable
+assurance is a high level of assurance but is not a guarantee that an audit conducted in accordance with ISAs (UK) will
+always detect a material misstatement when it exists. Misstatements can arise from fraud or error and are considered
+material if, individually or in the aggregate, they could reasonably be expected to influence the economic decisions of users
+taken on the basis of these financial statements.
+A further description of our responsibilities is available on the Financial Reporting Council's website at:
+https:/Avww.frc.org.uk/auditorsresponsibilities. This description forms part of our auditor's report.
+
+Page 9
+Docusign Envelope ID: B8E938A1-10A8-4A65-A219-29CAC03E7372
+Report of the Independent Auditors to the Members of
+Birmingham City Football Club Limited
+Extent to which the audit was considered capable of detecting irregularities, including fraud
+Irregularities, including fraud, are instances of non-compliance with laws and regulations. We design procedures in line
+“with our responsibilities, outlined above and on the Financial Reporting Council's website, to detect material misstatements
+in respect of irregularities, including fraud.
+We obtain and update our understanding of the entity, its activities, its control environment, and likely future developments,
+including in relation to the legal and regulatory framework applicable and how the entity is complying with that framework.
+Based on this understanding, we identify and assess the risks of material misstatement of the financial statements, whether
+due to fraud or error, design and perform audit procedures responsive to those risks, and obtain audit evidence that is
+sufficient and appropriate to provide a basis for our opinion. This includes consideration of the risk of acts by the entity
+that were contrary to applicable laws and regulations, including fraud.
+In response to the risk of irregularities and non-compliance with laws and regulations, including fraud, we designed
+procedures which included:
+« Enquiry of management and those charged with governance around actual and potential litigation and claims as
+well as actual, suspected and alleged fraud;
+e Assessing the extent of compliance with the laws and regulations considered to have a direct material effect on
+the financial statements or the operations of the company through enquiry and inspection;
+« Reviewing financial statement disclosures and testing to supporting documentation to assess compliance with
+applicable laws and regulations;
+¢ Performing audit work over the risk of management bias and override of controls, including testing of journal
+entries and other adjustments for appropriateness, evaluating the business rationale of significant transactions
+outside the normal course of business and reviewing accounting estimates for indicators of potential bias.
+Because of the inherent limitations of an audit, there is a risk that we will not detect all irregularities, including those leading
+to a material misstatement in the financial statements or non-compliance with regulation. This risk increases the more
+that compliance with a law or regulation is removed from the events and transactions reflected in the financial statements,
+as we will be less likely to become aware of instances of non-compliance. The risk of not detecting a material
+misstatement resulting from fraud is higher than for one resulting from error, as fraud may involve collusion, forgery,
+intentional omissions, misrepresentations, or the override of internal control.
+Use of our report
+. This report is made solely to the company's members, as a body, in accordance with Chapter 3 of Part 16 of the Companies
+Act 2006. Our audit work has been undertaken so that we might state to the company's members those matters we are
+required to state to them in an auditor's report and for no other purpose. To the fullest extent permitted by law, we do not
+accept or assume responsibility to anyone other than the company and the company's members as a body, for our audit
+work, for this report, or for the opinions we have formed.
+Azex Avo Seavices,
+Tom Mullard ACA (Senior Statutory Auditor)
+For and on behalf of Azets Audit Services Date:..9 December 2025
+Chartered Accountants 6th Floor, Bank House
+Statutory Auditor 8 Cherry Street
+Birmingham
+United Kingdom
+B2 5AL
+Page 10
+

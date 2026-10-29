@@ -1,0 +1,186 @@
+club_id	company_number	document	filing_date	made_up_date	concept	prefix	kind	period_start	period_end	instant	dimensions	unit	value
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	AccountingStandardsApplied	ns10	text	2023-06-01	2024-05-31		AccountingStandardsDimension=SmallEntities		
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	AccountsStatusAuditedOrUnaudited	ns10	text	2023-06-01	2024-05-31		AccountsStatusDimension=AuditExempt-NoAccountantsReport		
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	AccountsType	ns10	text	2023-06-01	2024-05-31		AccountsTypeDimension=AbridgedAccounts		
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	AccumulatedDepreciationImpairmentPropertyPlantEquipment	ns5	num		2023-05-31	1		GBP	244467
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	AccumulatedDepreciationImpairmentPropertyPlantEquipment	ns5	num		2024-05-31	1		GBP	289860
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	AddressLine1	ns10	text	2023-06-01	2024-05-31		EntityContactTypeDimension=RegisteredOffice		The Silverlands
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	ApplicableLegislation	ns10	text	2023-06-01	2024-05-31		ApplicableLegislationDimension=SmallCompaniesRegimeForAccounts		
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	ApplicableLegislation	ns10	text	2023-06-01	2024-05-31		ApplicableLegislationDimension=SmallCompaniesRegimeForDirectorsReport		
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	AverageNumberEmployeesDuringPeriod	ns5	num	2022-06-01	2023-05-31			pure	17
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	AverageNumberEmployeesDuringPeriod	ns5	num	2023-06-01	2024-05-31			pure	18
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	BalanceSheetDate	ns10	text		2024-05-31	1			31.5.24
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	CashBankOnHand	ns5	num		2023-05-31	1		GBP	28006
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	CashBankOnHand	ns5	num		2024-05-31	1		GBP	23918
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	CompanyHasPublishedCommitmentToUKEffectiveStewardshipCodeTruefalse	ns20	text	2023-06-01	2024-05-31				false
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	CountryFormationOrIncorporation	ns10	text	2023-06-01	2024-05-31		CountriesRegionsDimension=EnglandWales		
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	CountyRegion	ns10	text	2023-06-01	2024-05-31		EntityContactTypeDimension=RegisteredOffice		Derbyshire
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	Creditors	ns5	num		2023-05-31	1	FinancialInstrumentCurrentNon-currentDimension=CurrentFinancialInstruments	GBP	56883
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	Creditors	ns5	num		2023-05-31	1	FinancialInstrumentCurrentNon-currentDimension=Non-currentFinancialInstruments	GBP	279000
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	Creditors	ns5	num		2024-05-31	1	FinancialInstrumentCurrentNon-currentDimension=CurrentFinancialInstruments	GBP	202703
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	Creditors	ns5	num		2024-05-31	1	FinancialInstrumentCurrentNon-currentDimension=Non-currentFinancialInstruments	GBP	279000
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	CurrentAssets	ns5	num		2023-05-31	1		GBP	65303
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	CurrentAssets	ns5	num		2024-05-31	1		GBP	68095
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	DateAuthorisationFinancialStatementsForIssue	ns5	text		2024-05-31	1			27th February 2025
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	Debtors	ns5	num		2023-05-31	1		GBP	34072
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	Debtors	ns5	num		2024-05-31	1		GBP	38393
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	DefinedBenefitPlanMulti-employerPlanTruefalse	ns5	text	2023-06-01	2024-05-31				false
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	DescriptionBodyAuthorisingFinancialStatements	ns5	text	2023-06-01	2024-05-31				Board of Directors
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	DescriptionDepreciationMethodForPropertyPlantEquipment	ns5	text	2023-06-01	2024-05-31		PropertyPlantEquipmentClassesDimension=LandBuildings		5% on cost
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	DescriptionMeasurementBasisForPropertyPlantEquipment	ns5	text	2023-06-01	2024-05-31				Depreciation is provided at the following annual rates in order to write off each asset over its estimated useful life.
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	DescriptionMeasurementBasisForPropertyPlantEquipment	ns5	text	2023-06-01	2024-05-31		PropertyPlantEquipmentClassesDimension=PlantMachinery		25% on cost, 10% on cost and Straight line over 20 years
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	DirectorSigningFinancialStatements	ns5	text	2023-06-01	2024-05-31		EntityOfficersDimension=Director1		
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	EndDateForPeriodCoveredByReport	ns10	text		2024-05-31	1			31.5.24
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	EntityCurrentLegalOrRegisteredName	ns10	text	2023-06-01	2024-05-31				Buxton Football Club Limited
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	EntityDormantTruefalse	ns10	text	2023-06-01	2024-05-31				false
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	EntityHasClaimedExemptionFromReportingDisclosureRelatedPartyTransactionsForWholly-ownedEntitiesTruefalse	ns5	text	2023-06-01	2024-05-31				true
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	EntityTradingStatus	ns10	text	2023-06-01	2024-05-31				
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	Equity	ns5	num		2023-05-31	1		GBP	293633
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	Equity	ns5	num		2023-05-31	1	EquityClassesDimension=FurtherSpecificReserve1ComponentTotalEquity	GBP	165
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	Equity	ns5	num		2023-05-31	1	EquityClassesDimension=RetainedEarningsAccumulatedLosses	GBP	279248
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	Equity	ns5	num		2023-05-31	1	EquityClassesDimension=ShareCapital	GBP	1556
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	Equity	ns5	num		2023-05-31	1	EquityClassesDimension=SharePremium	GBP	12664
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	Equity	ns5	num		2024-05-31	1		GBP	131475
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	Equity	ns5	num		2024-05-31	1	EquityClassesDimension=FurtherSpecificReserve1ComponentTotalEquity	GBP	165
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	Equity	ns5	num		2024-05-31	1	EquityClassesDimension=RetainedEarningsAccumulatedLosses	GBP	112530
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	Equity	ns5	num		2024-05-31	1	EquityClassesDimension=ShareCapital	GBP	1556
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	Equity	ns5	num		2024-05-31	1	EquityClassesDimension=SharePremium	GBP	17224
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	FinancialStatementsArePreparedOnGoing-concernBasisTruefalse	ns5	text	2023-06-01	2024-05-31				true
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	IncreaseFromDepreciationChargeForYearPropertyPlantEquipment	ns5	num	2023-06-01	2024-05-31			GBP	45393
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	InventoriesPolicy	ns5	text	2023-06-01	2024-05-31				Stocks are valued at the lower of cost and net realisable value, after making due allowance for obsolete and slow moving items.
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	InvestmentEntityRequiredToApplyExceptionFromConsolidationTruefalse	ns5	text	2023-06-01	2024-05-31				false
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	LegalFormEntity	ns10	text	2023-06-01	2024-05-31		LegalFormEntityDimension=PrivateLimitedCompanyLtd		
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	LegalFormEntity	ns10	text	2023-06-01	2024-05-31		LegalFormEntityDimension=PrivateLimitedCompanyLtd		private company, limited by shares
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	NameEntityAccountants	ns10	text	2023-06-01	2024-05-31				Laytons
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	NameEntityOfficer	ns10	text	2023-06-01	2024-05-31		EntityOfficersDimension=CompanySecretary1		M Barton
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	NameEntityOfficer	ns10	text	2023-06-01	2024-05-31		EntityOfficersDimension=Director1		D Hopkins
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	NameEntityOfficer	ns10	text	2023-06-01	2024-05-31		EntityOfficersDimension=Director2		A Tomlinson
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	NameEntityOfficer	ns10	text	2023-06-01	2024-05-31		EntityOfficersDimension=Director3		C Brindley
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	NameEntityOfficer	ns10	text	2023-06-01	2024-05-31		EntityOfficersDimension=Director4		P D Jenner
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	NameEntityOfficer	ns10	text	2023-06-01	2024-05-31		EntityOfficersDimension=Director5		R J Turner
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	NameEntityOfficer	ns10	text	2023-06-01	2024-05-31		EntityOfficersDimension=Director6		Ms E Wakeman
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	NameEntityOfficer	ns10	text	2023-06-01	2024-05-31		EntityOfficersDimension=Director7		A M Hughes
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	NameProductionSoftware	ns10	text	2023-06-01	2024-05-31				IRIS Accounts Production
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	NetAssetsLiabilities	ns5	num		2023-05-31	1		GBP	293633
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	NetAssetsLiabilities	ns5	num		2024-05-31	1		GBP	131475
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	NetCurrentAssetsLiabilities	ns5	num		2023-05-31	1		GBP	8420
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	NetCurrentAssetsLiabilities	ns5	num		2024-05-31	1		GBP	-134608
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	PostalCodeZip	ns10	text	2023-06-01	2024-05-31		EntityContactTypeDimension=RegisteredOffice		SK17 6QH
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	PrincipalCurrencyUsedInBusinessReport	ns10	text	2023-06-01	2024-05-31		CurrenciesDimension=PoundSterling		
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	PrincipalLocation-CityOrTown	ns10	text	2023-06-01	2024-05-31		EntityContactTypeDimension=RegisteredOffice		Buxton
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	PropertyPlantEquipment	ns5	num		2023-05-31	1		GBP	564213
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	PropertyPlantEquipment	ns5	num		2024-05-31	1		GBP	545083
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	PropertyPlantEquipmentGrossCost	ns5	num		2023-05-31	1		GBP	808680
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	PropertyPlantEquipmentGrossCost	ns5	num		2024-05-31	1		GBP	834943
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	ReportPeriod	ns10	text	2023-06-01	2024-05-31				
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	ReportTitle	ns10	text	2023-06-01	2024-05-31				Unaudited Financial Statements for the Year Ended 31st May 2024
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	ScopeAccounts	ns10	text	2023-06-01	2024-05-31				
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	StartDateForPeriodCoveredByReport	ns10	text		2024-05-31	1			1.6.23
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	StatementComplianceWithApplicableReportingFramework	ns5	text	2023-06-01	2024-05-31				"These financial statements have been prepared in accordance with Financial Reporting Standard 102 ""The Financial Reporting Standard applicable in the UK and Republic of Ireland"" including the provisions of Section 1A ""Small Entities"" and the Companies Act 2006. The financial statements have been prepared under the historical cost convention."
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime	ns20	text	2023-06-01	2024-05-31				The financial statements have been prepared and delivered in accordance with the provisions applicable to companies subject to the small companies regime.
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies	ns20	text	2023-06-01	2024-05-31				The company is entitled to exemption from audit under Section 477 of the Companies Act 2006 for the year ended 31st May 2024.
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct	ns20	text	2023-06-01	2024-05-31				The directors acknowledge their responsibilities for:(a)ensuring that the company keeps accounting records which comply with Sections 386 and 387 of the Companies Act 2006 and (b)preparing financial statements which give a true and fair view of the state of affairs of the company as at the end of each financial year and of its profit or loss for each financial year in accordance with the requirem…
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	StatementThatDirectorsHaveElectedNotToDeliverProfitLossAccountUnderSection4445ACompaniesAct2006	ns20	text	2023-06-01	2024-05-31				In accordance with Section 444 of the Companies Act 2006, the Income Statement has not been delivered.
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	StatementThatMembersHaveAgreedToPreparationAbridgedAccountsUnderSection444CompaniesAct2006	ns20	text	2023-06-01	2024-05-31				All the members have consented to the preparation of an abridged Income Statement and an abridged Balance Sheet for the year ended 31st May 2024 in accordance with Section 444(2A) of the Companies Act 2006.
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit	ns20	text	2023-06-01	2024-05-31				The members have not required the company to obtain an audit of its financial statements for the year ended 31st May 2024 in accordance with Section 476 of the Companies Act 2006.
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment	ns5	num	2023-06-01	2024-05-31			GBP	26263
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	TotalAssetsLessCurrentLiabilities	ns5	num		2023-05-31	1		GBP	572633
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	TotalAssetsLessCurrentLiabilities	ns5	num		2024-05-31	1		GBP	410475
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	TotalInventories	ns5	num		2023-05-31	1		GBP	3225
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	TotalInventories	ns5	num		2024-05-31	1		GBP	5784
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	UKCompaniesHouseRegisteredNumber	ns10	text	2023-06-01	2024-05-31				02823127
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	VersionProductionSoftware	ns10	text	2023-06-01	2024-05-31				v24.3.2.46
+buxton-fc	02823127	-5EnOZRV310dMU32pExj1Iv5QiIkbRgcAjkEJ5ictTc	2025-02-28	2024-05-31	_GoingConcernMaterialUncertainty	derived	text						none found
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	AccountingStandardsApplied	ns10	text	2024-06-01	2025-05-31		AccountingStandardsDimension=SmallEntities		
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	AccountsStatusAuditedOrUnaudited	ns10	text	2024-06-01	2025-05-31		AccountsStatusDimension=AuditExempt-NoAccountantsReport		
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	AccountsType	ns10	text	2024-06-01	2025-05-31		AccountsTypeDimension=AbridgedAccounts		
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	AccumulatedDepreciationImpairmentPropertyPlantEquipment	ns5	num		2024-05-31	1		GBP	289860
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	AccumulatedDepreciationImpairmentPropertyPlantEquipment	ns5	num		2025-05-31	1		GBP	341621
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	AddressLine1	ns10	text	2024-06-01	2025-05-31		EntityContactTypeDimension=RegisteredOffice		The Silverlands
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	ApplicableLegislation	ns10	text	2024-06-01	2025-05-31		ApplicableLegislationDimension=SmallCompaniesRegimeForAccounts		
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	ApplicableLegislation	ns10	text	2024-06-01	2025-05-31		ApplicableLegislationDimension=SmallCompaniesRegimeForDirectorsReport		
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	AverageNumberEmployeesDuringPeriod	ns5	num	2023-06-01	2024-05-31			pure	18
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	AverageNumberEmployeesDuringPeriod	ns5	num	2024-06-01	2025-05-31			pure	18
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	BalanceSheetDate	ns10	text		2025-05-31	1			31.5.25
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	CashBankOnHand	ns5	num		2024-05-31	1		GBP	23918
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	CashBankOnHand	ns5	num		2025-05-31	1		GBP	68963
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	CompanyHasPublishedCommitmentToUKEffectiveStewardshipCodeTruefalse	ns20	text	2024-06-01	2025-05-31				false
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	CountryFormationOrIncorporation	ns10	text	2024-06-01	2025-05-31		CountriesRegionsDimension=EnglandWales		
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	CountyRegion	ns10	text	2024-06-01	2025-05-31		EntityContactTypeDimension=RegisteredOffice		Derbyshire
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	Creditors	ns5	num		2024-05-31	1	FinancialInstrumentCurrentNon-currentDimension=CurrentFinancialInstruments	GBP	202703
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	Creditors	ns5	num		2024-05-31	1	FinancialInstrumentCurrentNon-currentDimension=Non-currentFinancialInstruments	GBP	279000
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	Creditors	ns5	num		2025-05-31	1	FinancialInstrumentCurrentNon-currentDimension=CurrentFinancialInstruments	GBP	107192
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	Creditors	ns5	num		2025-05-31	1	FinancialInstrumentCurrentNon-currentDimension=Non-currentFinancialInstruments	GBP	179000
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	CurrentAssets	ns5	num		2024-05-31	1		GBP	68095
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	CurrentAssets	ns5	num		2025-05-31	1		GBP	153176
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	DateAuthorisationFinancialStatementsForIssue	ns5	text		2025-05-31	1			12th February 2026
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	Debtors	ns5	num		2024-05-31	1		GBP	38393
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	Debtors	ns5	num		2025-05-31	1		GBP	78429
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	DefinedBenefitPlanMulti-employerPlanTruefalse	ns5	text	2024-06-01	2025-05-31				false
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	DescriptionBodyAuthorisingFinancialStatements	ns5	text	2024-06-01	2025-05-31				Board of Directors
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	DescriptionDepreciationMethodForPropertyPlantEquipment	ns5	text	2024-06-01	2025-05-31		PropertyPlantEquipmentClassesDimension=LandBuildings		5% on cost
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	DescriptionMeasurementBasisForPropertyPlantEquipment	ns5	text	2024-06-01	2025-05-31				Depreciation is provided at the following annual rates in order to write off each asset over its estimated useful life.
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	DescriptionMeasurementBasisForPropertyPlantEquipment	ns5	text	2024-06-01	2025-05-31		PropertyPlantEquipmentClassesDimension=PlantMachinery		25% on cost, 10% on cost and Straight line over 20 years
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	DirectorSigningFinancialStatements	ns5	text	2024-06-01	2025-05-31		EntityOfficersDimension=Director1		
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	EndDateForPeriodCoveredByReport	ns10	text		2025-05-31	1			31.5.25
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	EntityCurrentLegalOrRegisteredName	ns10	text	2024-06-01	2025-05-31				Buxton Football Club Limited
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	EntityDormantTruefalse	ns10	text	2024-06-01	2025-05-31				false
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	EntityHasClaimedExemptionFromReportingDisclosureRelatedPartyTransactionsForWholly-ownedEntitiesTruefalse	ns5	text	2024-06-01	2025-05-31				true
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	EntityTradingStatus	ns10	text	2024-06-01	2025-05-31				
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	Equity	ns5	num		2024-05-31	1		GBP	131475
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	Equity	ns5	num		2024-05-31	1	EquityClassesDimension=FurtherSpecificReserve1ComponentTotalEquity	GBP	165
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	Equity	ns5	num		2024-05-31	1	EquityClassesDimension=RetainedEarningsAccumulatedLosses	GBP	112530
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	Equity	ns5	num		2024-05-31	1	EquityClassesDimension=ShareCapital	GBP	1556
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	Equity	ns5	num		2024-05-31	1	EquityClassesDimension=SharePremium	GBP	17224
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	Equity	ns5	num		2025-05-31	1		GBP	405953
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	Equity	ns5	num		2025-05-31	1	EquityClassesDimension=FurtherSpecificReserve1ComponentTotalEquity	GBP	165
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	Equity	ns5	num		2025-05-31	1	EquityClassesDimension=RetainedEarningsAccumulatedLosses	GBP	246008
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	Equity	ns5	num		2025-05-31	1	EquityClassesDimension=ShareCapital	GBP	105456
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	Equity	ns5	num		2025-05-31	1	EquityClassesDimension=SharePremium	GBP	54324
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	FinancialStatementsArePreparedOnGoing-concernBasisTruefalse	ns5	text	2024-06-01	2025-05-31				true
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	IncreaseFromDepreciationChargeForYearPropertyPlantEquipment	ns5	num	2024-06-01	2025-05-31			GBP	51761
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	InventoriesPolicy	ns5	text	2024-06-01	2025-05-31				Stocks are valued at the lower of cost and net realisable value, after making due allowance for obsolete and slow moving items.
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	InvestmentEntityRequiredToApplyExceptionFromConsolidationTruefalse	ns5	text	2024-06-01	2025-05-31				false
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	LegalFormEntity	ns10	text	2024-06-01	2025-05-31		LegalFormEntityDimension=PrivateLimitedCompanyLtd		
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	LegalFormEntity	ns10	text	2024-06-01	2025-05-31		LegalFormEntityDimension=PrivateLimitedCompanyLtd		private company, limited by shares
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	NameEntityAccountants	ns10	text	2024-06-01	2025-05-31				Laytons
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	NameEntityOfficer	ns10	text	2024-06-01	2025-05-31		EntityOfficersDimension=CompanySecretary1		M Barton
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	NameEntityOfficer	ns10	text	2024-06-01	2025-05-31		EntityOfficersDimension=CompanySecretary2		C Hill
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	NameEntityOfficer	ns10	text	2024-06-01	2025-05-31		EntityOfficersDimension=Director1		D Hopkins
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	NameEntityOfficer	ns10	text	2024-06-01	2025-05-31		EntityOfficersDimension=Director2		A Tomlinson
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	NameEntityOfficer	ns10	text	2024-06-01	2025-05-31		EntityOfficersDimension=Director3		C Brindley
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	NameEntityOfficer	ns10	text	2024-06-01	2025-05-31		EntityOfficersDimension=Director4		P D Jenner
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	NameEntityOfficer	ns10	text	2024-06-01	2025-05-31		EntityOfficersDimension=Director5		R J Turner
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	NameEntityOfficer	ns10	text	2024-06-01	2025-05-31		EntityOfficersDimension=Director6		Ms E Wakeman
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	NameEntityOfficer	ns10	text	2024-06-01	2025-05-31		EntityOfficersDimension=Director7		A M Hughes
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	NameProductionSoftware	ns10	text	2024-06-01	2025-05-31				IRIS Accounts Production
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	NetAssetsLiabilities	ns5	num		2024-05-31	1		GBP	131475
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	NetAssetsLiabilities	ns5	num		2025-05-31	1		GBP	405953
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	NetCurrentAssetsLiabilities	ns5	num		2024-05-31	1		GBP	-134608
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	NetCurrentAssetsLiabilities	ns5	num		2025-05-31	1		GBP	45984
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	PostalCodeZip	ns10	text	2024-06-01	2025-05-31		EntityContactTypeDimension=RegisteredOffice		SK17 6QH
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	PrincipalCurrencyUsedInBusinessReport	ns10	text	2024-06-01	2025-05-31		CurrenciesDimension=PoundSterling		
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	PrincipalLocation-CityOrTown	ns10	text	2024-06-01	2025-05-31		EntityContactTypeDimension=RegisteredOffice		Buxton
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	PropertyPlantEquipment	ns5	num		2024-05-31	1		GBP	545083
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	PropertyPlantEquipment	ns5	num		2025-05-31	1		GBP	538969
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	PropertyPlantEquipmentGrossCost	ns5	num		2024-05-31	1		GBP	834943
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	PropertyPlantEquipmentGrossCost	ns5	num		2025-05-31	1		GBP	880590
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	ReportPeriod	ns10	text	2024-06-01	2025-05-31				
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	ReportTitle	ns10	text	2024-06-01	2025-05-31				Unaudited Financial Statements for the Year Ended 31st May 2025
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	ScopeAccounts	ns10	text	2024-06-01	2025-05-31				
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	StartDateForPeriodCoveredByReport	ns10	text		2025-05-31	1			1.6.24
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	StatementComplianceWithApplicableReportingFramework	ns5	text	2024-06-01	2025-05-31				"These financial statements have been prepared in accordance with Financial Reporting Standard 102 ""The Financial Reporting Standard applicable in the UK and Republic of Ireland"" including the provisions of Section 1A ""Small Entities"" and the Companies Act 2006. The financial statements have been prepared under the historical cost convention."
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime	ns20	text	2024-06-01	2025-05-31				The financial statements have been prepared and delivered in accordance with the provisions applicable to companies subject to the small companies regime.
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies	ns20	text	2024-06-01	2025-05-31				The company is entitled to exemption from audit under Section 477 of the Companies Act 2006 for the year ended 31st May 2025.
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct	ns20	text	2024-06-01	2025-05-31				The directors acknowledge their responsibilities for:(a)ensuring that the company keeps accounting records which comply with Sections 386 and 387 of the Companies Act 2006 and (b)preparing financial statements which give a true and fair view of the state of affairs of the company as at the end of each financial year and of its profit or loss for each financial year in accordance with the requirem…
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	StatementThatDirectorsHaveElectedNotToDeliverProfitLossAccountUnderSection4445ACompaniesAct2006	ns20	text	2024-06-01	2025-05-31				In accordance with Section 444 of the Companies Act 2006, the Income Statement has not been delivered.
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	StatementThatMembersHaveAgreedToPreparationAbridgedAccountsUnderSection444CompaniesAct2006	ns20	text	2024-06-01	2025-05-31				All the members have consented to the preparation of an abridged Income Statement and an abridged Balance Sheet for the year ended 31st May 2025 in accordance with Section 444(2A) of the Companies Act 2006.
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit	ns20	text	2024-06-01	2025-05-31				The members have not required the company to obtain an audit of its financial statements for the year ended 31st May 2025 in accordance with Section 476 of the Companies Act 2006.
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment	ns5	num	2024-06-01	2025-05-31			GBP	45647
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	TotalAssetsLessCurrentLiabilities	ns5	num		2024-05-31	1		GBP	410475
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	TotalAssetsLessCurrentLiabilities	ns5	num		2025-05-31	1		GBP	584953
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	TotalInventories	ns5	num		2024-05-31	1		GBP	5784
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	TotalInventories	ns5	num		2025-05-31	1		GBP	5784
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	UKCompaniesHouseRegisteredNumber	ns10	text	2024-06-01	2025-05-31				02823127
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	VersionProductionSoftware	ns10	text	2024-06-01	2025-05-31				v25.4.0.155
+buxton-fc	02823127	1PkFMaK1CNPzme-GqlIqcEBZ_nLzHePdT_4wcqwxt34	2026-02-17	2025-05-31	_GoingConcernMaterialUncertainty	derived	text						none found

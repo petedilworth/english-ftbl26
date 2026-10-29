@@ -1,0 +1,442 @@
+source: Companies House filing, sheffield-united-fc__2.pdf
+document: jMI4cVQXUGlP1HhXUCUJoeuAlGsX1SftBV1LefXKvJ0
+made_up_date: 2024-06-30
+method: ocr
+pages_read: 12 of 59
+
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFD53
+, . Registered number: 00061564
+oe ‘THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+ANNUAL REPORT AND FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024 : .
+. .
+. & :
+. z
+: BE *ADZDREJU* :
+; . Al4 29/03/2025 #130
+7 : COMPANIES HOUSE si :
+. 1
+Docusign Envelope 1D: 7A2D6F5D-81F8-4F 19-8DB8-5893316FFDS53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+: COMPANY INFORMATION
+Directors Steven Harlan Rosen
+Helmy Atef Eltoukhy
+Company secretary Deborah Andrew
+Company registration number 00061564 :
+Registered office Bramall Lane Ground ;
+Cherry Street
+Sheffield
+~ South Yorkshire
+$2 4SU :
+Independent auditor Grant Thornton UK LLP :
+Chartered Accountants & Statutory Auditor
+Level 8
+110 Queen Street
+Glasgow
+G1 3BX .
+Bankers Santander UK Plc
+58/60 Briggate
+Leeds .
+West Yorkshire
+LS16AS
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+CONTENTS
+
+Page
+Statement From the Chief Executive Officer 1-2
+Strategic Report 3-14
+Directors’ Report 15-16
+Independent Auditor's Report 17-21
+Statement of Comprehensive Income . 22
+Statement of Financial Position 23 - 24
+Statement of Changes in Equity 25 :
+Notes to the Financial Statements 26 - 56
+Docusign Envelope ID: 7A2D6F 5D-81F8-4F 19-8DB8-5893316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+STATEMENT FROM THE CHIEF EXECUTIVE OFFICER
+FOR THE YEAR ENDED 30 JUNE 2024
+
+As we reflect on the 2023/24 season, Sheffield United has undoubtedly faced its share of challenges, but we also
+have much to be proud of as a Club. Securing our return to the Premier League at the conclusion of last season
+was a momentous achievement, and while we encountered hurdles throughout the season, we continue to view
+this period as a critical step in our ongoing journey toward long-term success.
+Our focus during the summer was to strengthen the squad, adding key players such as Vinicius Souza and
+Gustavo Hamer, and our commitment to building a competitive team was clear. Although we faced difficulties in
+terms of results, including key departures, our squad showed tremendous fight and resilience. The return of
+Chris Wilder sparked a positive momentum that we will carry forward into the future. While relegation was
+ultimately confirmed, our team’s commitment, determination, and growth throughout the season have laid a
+strong foundation to secure a promotion to the top tier next season.
+The Sheffield United Academy continues to be a key pillar of our long-term strategy. This season, we celebrated
+the under 21's remarkable achievement in winning both the England Professional Development League; North
+and National titles. We take immense pride in the development of our young talent, with players like William
+Osula and Oliver Arblaster stepping up to the first team and making their mark. Our priority is to ensure our
+academy remains a leader in developing top-tier talent while strategically managing our assets to maximise long-
+term value. By making calculated decisions—whether through player development, transfers, or loans—we
+position the club for sustained success, strengthening both our competitive edge and financial stability. This
+balanced approach ensures we continue building a legacy of excellence on and off the field. Our investments in
+facilities, combined with our commitment to achieving Category 1 Academy status, are vital steps in continuing to
+develop world-class talent for the future.
+As a Club, we remain highly focused on ensuring we are not only performing on the pitch but also achieving
+long-term growth off it. We've seen strong performances across our revenue streams, from ticketing and
+commercial partnerships to merchandising. Support continued to be strong throughout the season
+demonstrating the continued loyalty of our fans with an average stadium attendance of 29,971. We have
+expanded our brand presence globally through our commercial partnerships, including a landmark deal with CFI
+in the MENA region. In merchandising, we are seeing impressive growth, particularly from international markets,
+and we are investing heavily in improving our online platform to maximise our global reach.
+At Sheffield United, we understand that modern, high-quality facilities are essential to supporting both player
+development and fan experience. We have made significant investments this season, from upgrading training
+facilities to refurbishing key areas of Bramall Lane. The purchase of additional land for fan development is an
+important step in creating the best possible matchday experience. The ongoing refurbishment of our hotel and
+plans for a state-of-the-art new training facility are part of our vision to create long-term, sustainable revenue
+streams while also enhancing the overall experience for players and supporters alike.
+While relegation to the Championship was a setback, we remain focused on the future. Our commitment to long-
+term growth, through player development, facility improvements, and strategic partnerships, is stronger than
+ever. We are optimistic about our future prospects, both on and off the pitch. We will continue to leverage our
+Academy to develop world-class talent, enhance our commercial success through international partnerships, and
+deliver a premium fan experience at every level. Sheffield United is on an exciting path, and | have no doubt that
+the best is yet to come.
+
+Page 1
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+STATEMENT FROM THE CHIEF EXECUTIVE OFFICER (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+| want to take a moment to sincerely thank our supporters, sponsors, directors, management, staff, players, and
+everyone involved in our community foundation. Your hard work, dedication, and passion for the Club mean
+everything. It's because of this shared commitment that we continue to grow, succeed, and build a legacy we can
+all be proud of.
+Sincerely,
+Stephen Bettis
+Chief Executive Officer
+Sheffield United Football Club :
+21/1/2025
+: Page 2
+Docusign Envelope ID: 7A2D6F5D-81F 8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+STRATEGIC REPORT
+FOR THE YEAR ENDED 30 JUNE 2024
+The directors are pleased to present the annual report for The Sheffield United Football Club Limited for the
+"financial year ending 30 June 2024, which includes the financial statements and the Auditor's Report.
+
+Principal activities ,
+The principal activity of The Sheffield United Football Club Limited is the operation of a professional football club.
+Business review
+On-field performance
+Men's First Team
+Sheffield United experienced the excitement of securing promotion to the Premier League in the summer of
+2023, but this achievement was swiftly met with the recognition of the significant challenges that lie ahead for
+newly promoted teams competing in the top tier of English football.
+During the summer transfer window, the Club strengthened its squad with seven permanent signings: Auston
+Trusty from Arsenal, Gustavo Hamer from Coventry City, Vinicius Souza from Lommel, Tom Davies, Anis Ben
+Slimane from Brondby, Bénie Traoré from BK Hacken, and Cameron Archer from Aston Villa. In addition, loan
+signings included Yasser Larouci from ES Troyes AC, Luke Thomas from Leicester City, and James McAtee,
+who returned to the Club on loan from Manchester City. Key departures included Iliman Ndiaye, who transferred
+to Marseille, and Sander Berge, who joined Burnley, both transfers occurring due to the nearing expiry of their
+contracts, and the players’ lack of desire to extend them further.
+Despite strong performances in matches, including notable fixtures against Manchester City and Tottenham
+Hotspur, the Club struggled to secure points, earning just one point from a home match against Everton before
+securing the first win of the season against Wolverhampton Wanderers at Bramall Lane in November. A heavy
+5-0 defeat away to Burnley in early December led to the departure of Manager Paul Heckingbottom and the
+reappointment of Chris Wilder as the Club's Manager.
+In the January transfer window, the Club made further efforts to reinforce the squad by securing the loan
+signings of Ben Brereton Diaz from Villarreal and Mason Holgate from Everton, along with the permanent signing
+of Ivo Grbic from Atletico Madrid. Although there was an improvement in performances during the second half of
+the season, the Club remained in the relegation zone, and relegation to the EFL Championship was confirmed,
+on the 27th April following a defeat to Newcastle.
+While the first team faced significant challenges, the Academy experienced notable success. Several of the
+Academy players made important developments, with William Osula, Rhys Norrington-Davies, Andre Brooks,
+and Oliver Arblaster establishing themselves as first-team regulars, while Ryan Oné and Sydie Peck made their
+senior debuts.
+Player Development Pathway :
+The Sheffield United Academy plays a pivotal role in the Club’s mission of "success with sustainability," aiming to
+generate revenue through player sales or reduce costs by developing players capable of integrating into the first
+team. The core objective of the Academy is to maximise player potential through a robust development program,
+with a guiding philosophy to Out Run, Out Fight, Out Play the opposition.
+
+Page 3
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+STRATEGIC REPORT (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+
+Player Development Pathway (continued)
+The Sheffield United Academy achieved significant success during the 2023/24 season, under the leadership of
+Academy Manager Derek Geary and the Academy Management Team. The under 21’s team secured the
+England Professional Development League; North title for the fourth consecutive year, also being crowned
+National champions. The under 18's advanced to the 5th round of the FA Youth Cup, where they were narrowly
+defeated by eventual finalists Leeds United, marking the second consecutive year the team was eliminated by a
+finalist. Additionally, the under 21's reached the quarterfinals of the Premier League Cup, becoming the only
+Category 2 team to progress to this stage.
+The loan market has become an increasingly important tool for player development and commercial recovery.
+Notable loan spells in the first half of the season included Oliver Arblaster at League One's Port Vale and Louie
+Marsh at Doncaster, with Marsh's tenure cut short due to injury. Miguel Freckleton enjoyed a successful season
+with Chesterfield, winning the National League title and contributing to their impressive FA Cup run, including a
+standout performance against Championship side Watford.
+A strong transfer, recruitment, and development strategy has been integral to the Academy's success. Key
+signings during the summer transfer window included Ryan Oné from Hamilton and Jevan Beattie from
+Motherwell. Several Academy graduates established themselves as regulars in the first team during the 2023/24
+
+, season, including William Osula, Rhys Norrington-Davies, Andre Brooks, and Oliver Arblaster. In addition, Ryan
+Oné and Sydie Peck made their senior debuts, with Jordan Amissah, Evan Easton, Dovydas Sasnauskas, Louie
+Marsh, Sai Sachdev, Jili Buyabu, Owen Hampson, and Billy Blacker also featuring in matchday squads,
+highlighting the importance of the Academy's development pathway to the first team’s success. Academy
+graduate lliman Ndiaye was transferred to Marseille in the Summer 2023 window, providing a significant return
+on investment for the Club.
+Internationally, the Club saw several Academy players represent their respective countries: Oliver Arblaster in
+the England under 20’s squad, Ryan Oné in the Scotland under 19’s squad, Levis Pitan in the Poland under 20’s
+squad, and Dovydas Sasnauskas in the Lithuania under 19's squad. Sai Sachdev was also called up to the
+England under 19’s squad.
+Off the pitch, Sheffield United has made significant investments in its Academy facilities, reinforcing the Club’s
+commitment to developing homegrown talent. At the end of the season, Michael Collins, under 21's Coach, was
+promoted to the first-team coaching staff, and under 18’s Coach Matthew Thorpe moved on to a role with the
+England national team. These changes led to the internal promotion of Gary McSheffrey to the under 21’s
+position and Jim O’Brien to the under 18’s role, demonstrating the Club's commitment to continuous
+improvement and talent development across its operations. ;
+Despite relegation, the Club remains dedicated to supporting the Academy. The long-term goal is to achieve
+Category 1 Academy status, and throughout the 2024/2025 season, the Academy will position itself to transition
+smoothly to this next level while continuing to develop players capable of progressing to the first team or
+generating revenue through player sales.
+Off-field performance
+Revenue Generation
+Ticketing .
+Ahead of securing a return to the Premier League, the Club undertook a benchmarking exercise on season
+ticket pricing. It was determined that an increase was necessary for the forthcoming season to address rising
+operational costs, particularly in relation to facility management. A £1 per match increase was implemented for
+renewals, with 22,228 general admission supporters committing to a season-long membership, resulting in a
+record level of season ticket income, supporting the Club’s ability to absorb rising costs such as utilities.
+
+Page 4
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+STRATEGIC REPORT (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+
+Ticketing (continued)
+Matchday attendances remained strong, with an average of 29,971 spectators per match during the season
+(2023: 28,763), ranking the Club 13th in the Premier League for match attendance. A record crowd of 31,543
+was achieved in the season, marking the highest attendance at Bramall Lane since the 2019/20 season against
+Brighton. Season ticket attendance increased by 3% year-on-year, and match-by-match attendance rose by
+20%.
+The Club remains dedicated to improving the fan experience, with a particular focus on enhancing access
+control systems. In preparation for the 2024/25 season, work has been underway to implement near-field
+communication (NFC) ticketing which will reduced costs, eliminate the need for physical tickets and season
+cards, and ultimately provide an enhanced experience for fans. This initiative is expected to position Bramall
+Lane as a premier event space, maximising its potential as a significant revenue stream.
+Commercial
+The Club’s commercial operation, encompassing sponsorship, advertising, partnerships, and hospitality, saw
+both notable achievements and challenges during this period. Sheffield United made significant strides in
+expanding commercial partnerships, enhancing matchday experiences, and broadening its global brand
+presence. The sponsorship portfolio flourished, with the Club securing a seven-figure principal partnership with
+CFI, further strengthening its brand in the MENA region, and a sleeve partnership with the UK-based technology
+company G-Tech. Additionally, 75% of expired agreements were successfully renewed, particularly in sectors
+such as technology, manufacturing, leisure, and retail. These partnerships have not only bolstered revenue
+streams but have also enhanced the Club’s positioning as an innovative and attractive partner for the upcoming
+season.
+The competition for sponsorships in the Premier League proved to be challenging, particularly due to the Club's
+stance on betting, gaming, and alcohol-related partnerships. Nonetheless, the Club's adaptability and
+commitment to cultivating long-term relationships have kept it on track for sustained commercial growth. Looking
+ahead, the Club remains confident in its strategy to strengthen Sheffield United’s commercial footprint both
+domestically and internationally.
+Merchandising
+Sheffield United's official kit partnership with Errea continued into the 2023/24 season. During the year, replica
+shirt sales increased by 6,000 units from the previous season, despite challenges in the market stemming from
+the growing prevalence of counterfeit merchandise. To protect the Club's intellectual! property, the Club engaged
+professionals who successfully removed 1,697 counterfeit listings. However, given the rise in counterfeit activity,
+the Club may need to develop a more comprehensive strategy for enforcement and education going forward.
+While merchandising revenues saw a slight decline following the closure of the Meadowhall store, a decision
+made due to its cost inefficiency, performance indicators rémain strong. Conversion rates in the Bramall Lane
+store improved compared to the previous year, and the average basket size remained constant. International
+merchandising sales saw a 36% increase, with 32% of these sales originating from the USA, demonstrating the
+potential for further growth in this market. This aligns with the Club's long-term goal to develop SUFC Direct as
+the primary platform for merchandise sales, focusing on improving website usability and fulfilment processes.
+We view this as the most significant opportunity for growth in this revenue stream.
+
+: Page 5
+Docusign Envelope ID: 7A2D6F 5D-81F8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+STRATEGIC REPORT (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+Facilities and Property
+Bramall Lane
+The Club remains committed to enhancing the facilities at Bramall Lane to ensure the safety, comfort, and .
+enjoyment of its loyal supporters. Significant investments were made during the 2023/24 season to refurbish all
+Executive Boxes, the Boardroom, and the Directors’ Box. Additionally, at the close of the season, work
+commenced on the refurbishment of the Platinum Suite, which will be rebranded for the 2024/25 season.
+A long-term refurbishment plan for the general admission areas also began, with key infrastructure works taking
+place, including upgrades to energy supply, fire protection systems, and kitchen refurbishments. These works
+are expected to continue into the 2024/25 season. Furthermore, the Club purchased two pieces of land adjacent
+to Bramall Lane, Cutlers Corner and Boundary Corner, in April 2024. The Club plans to develop the Boundary
+Corner site into a dedicated FanZone before the start of the new season.
+Shirecliffe
+. Following the installation of a Desso pitch at the Shirecliffe site in 2023, ongoing work continued to improve the
+quality of playing surfaces. The all-weather pitch was resurfaced, and new floodlights were installed. Additionally,
+significant refurbishments took place in back-office and rehabilitation areas, including the installation of a
+dedicated bath and ice room, as well as upgrades to gym and treatment rooms. Dining and nutrition areas were
+also refurbished to support elite performance and player well-being.
+The Club has expressed a desire to expand its Academy operations, as the current pitch space at Shirecliffe is a
+limiting factor to the operation. While the Club continues to operate efficiently within the constraints of the site,
+plans are underway to improve its functionality and capacity.
+Dore Training Facility :
+After three years of negotiations, the Club acquired the HSBC Sports and Social Club site in Dore, Sheffield, with
+a deposit paid in April and the balance satisfied in August 2024. This acquisition offers the opportunity to develop
+a state-of-the-art training facility that will meet the demands of a competitive Premier League team. Early-stage
+planning is underway, and once operational, this facility will allow the Academy to take over the Shirecliffe site,
+which will then be developed to meet the Category 1 Elite Player Performance Plan criteria, enabling the Club to
+attract and retain top talent at the Academy level.
+Business Centre
+The Blades Business Hub, located at Bramall Lane, continues to grow and now houses over 20 small
+businesses, including The Sheffield United Community Foundation Ltd, a related party to the group. The
+Community Foundation delivers education and employability programmes in partnership with Barnsley College,
+the University of South Wales, and DWP from its Youth Hub, within the Business Centre. The Hub's state-of-the-
+art E-Sports facilities, including an Esports suite, F1 Simulator suite, podcast room, and student breakout room,
+provides an unparalleled learning experience.
+The Youth Hub, which helps over 200 young people a year into employment, is the only one of its kind located
+7 within a professional football stadium in the UK and is the best performing Youth Hub in South Yorkshire for
+2024.
+Page 6
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+STRATEGIC REPORT (CONTINUED) ‘
+FOR THE YEAR ENDED 30 JUNE 2024
+
+Facilities and Property (continued)
+Derek Dooley Community Sports Centre
+The Club made the difficult decision to close the Derek Dooley Community Sports Centre in 2020 due to
+changes in the gym market that rendered the operation unsustainable. However, over the 2023/24 season, the
+
+. senior leadership team, in collaboration with consultants and planners, explored potential uses for the site.
+These consultations have been positive, and the Club is hopeful to re-open the site in 2025, providing much-
+needed sports facilities to the local community.
+Engagement with Stakeholders
+The values of integrity, hard work, ambition, and inclusivity are central to the culture at Sheffield United and play
+a pivotal role in driving the Club’s long-term goal of achieving success and sustainability, both on and off the
+pitch. The Board of Directors acknowledges the critical importance of engaging effectively with stakeholders to
+meet these objectives. In line with their obligations under Section 172 of the Companies Act, which requires
+directors to act fairly in the interests of all stakeholders and the wider community, the Club actively considers the
+perspectives of stakeholders in both short-term and long-term planning. ;
+To strengthen stakeholder engagement, the Club has undertaken a number of initiatives during the year. These
+include the establishment of the Fan Advisory Board, the relaunch of the staff wellbeing committee, the
+continuation of the equality, diversity, and inclusion group, and the expansion of employee support packages.
+The creation of the Fan Advisory Board (FAB) has established a direct communication channel between the
+fans, the Chief Executive Officer and the Senior Leadership Team. This initiative ensures that fans remain
+integral to the Club's plans. Comprising eight representative supporters, the FAB meets regularly to offer advice
+and provide feedback to the Chief Executive Officer, and the senior leadership team. The board's role is crucial
+in shaping the fan experience while ensuring that the traditions and heritage of Sheffield United are preserved.
+Sheffield United understands that its people are its greatest asset. The Club continuously reviews its people
+policies to identify opportunities for improvement across all areas. It strives to create an environment where
+every staff member feels valued and is recognised for their contributions. The Club believes strongly in staff
+development and internal progression. Learning and development now play a key role in the annual appraisal
+process, with numerous examples of the Club supporting professional growth. To assess employee satisfaction,
+an anonymous employee engagement survey is conducted annually, which provides valuable insights that inform
+planning for the year ahead.
+The Club is also committed to fostering a safe and welcoming environment for all staff and visitors. A dedicated
+team of professionals in areas such as Equality, Diversity and Inclusion (EDI), Safeguarding, and Health and
+Safety, among others, works to ensure a positive experience for everyone involved with the Club. The
+commitment to diversity and inclusion was recognised at the Football Supporters Association Awards, where
+Sheffield United won the Fans for Diversity Award. Additionally, the Club earned the EFL Family Excellence Gold
+Award, further highlighting its efforts in creating an inclusive environment.
+The United Wellbeing initiative, led by the Club's Head of HR, promotes the emotional, social, psychological, and
+physical health of all employees. The Wellbeing Committee, which includes representatives from across the
+business, meets regularly to assess and improve the support provided to employees. This group is responsible
+for developing a program of events that enhances the overall employee experience, both in their professional
+and personal lives. Recent enhancements to employee benefits, such as the inclusion of life coverage for all
+permanent staff members, further exemplify the Club's ongoing commitment to the well-being of its employees.
+Additionally, we provide a range of initiatives to support our people, including enhanced healthcare services with
+online GP access, mental health first aiders, and various well-being resources.
+
+Page 7
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+STRATEGIC REPORT (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+
+Engagement with Stakeholders (continued)
+We are committed to equality and fairness in opportunities, pay, and promotions, and we publish our Gender Pay
+Gap report annually. The club is dedicated to fostering equality and diversity, ensuring that no employee faces
+discrimination based on age, disability, ethnicity, nationality, religion, race, gender, or any other factor. A
+dedicated Equality, Diversity and Inclusion committee meets regularly to review the Club’s policy and practices to
+promote continuous improvement across all areas of the operation, in line with the Club's values of Inclusivity.
+An external ED! panel is also in place, which consists of elected individuals representing key areas of focus for
+the EDI group, to help guide policy and to provide a voice to the Club on matters of importance so that these can
+be addressed.
+The Ciub holds Disability Confident status, meaning we are an employer that is committed to hiring and
+developing people with disabilities. Applications for employment from disabled individuals are always given full
+consideration, taking into account the applicant's abilities and potential. If a staff member develops a disability or
+condition that impacts their ability to perform their job, every effort is made to support their continued
+employment within the company, with appropriate training provided. The company is committed to ensuring that
+the training, career development, and promotion of disabled employees are, as far as possible, on par with those
+of other staff members.
+The Board also recognises the importance of selecting suppliers and customers who align with the Club's
+values. Rigorous checks are conducted at the onboarding stage of all supplier and customer relationships to
+ensure that their policies and practices are consistent with Sheffield United's values. The Club continues to
+review its supply chain to ensure that no partners are engaged whose practices contradict the Club's ethical
+standards. To protect the interests of all stakeholders, the Board ensures that payment practices are clearly
+communicated to customers in the Club's terms and conditions and that these practices are regularly monitored.
+Charitable Activities
+The Club's nominated charities for the season were:
+e Sheffield Children's Hospital .
+e Weston Park Cancer Charity
+e St Luke's Hospice
+e Bluebell Wood Children’s Hospice
+e Sheffield Hospitals Charity
+The Sheffield United Community Foundation Ltd, a related party to the group, leverages the power of the Club’s
+brand to engage with local communities and deliver a broad range of initiatives. These initiatives focus on
+improving health and wellbeing, raising aspirations, and building stronger, more cohesive communities. Further
+details of the Foundation’s activities can be found in its annual report.
+
+Page 8
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+STRATEGIC REPORT (CONTINUED) :
+FOR THE YEAR ENDED 30 JUNE 2024
+
+Future Developments
+Sheffield United’s long-term goal is to establish itself as a sustainable, successful club, both on and off the pitch.
+Achieving this will require a strategic business model that prioritises investment in the playing squad, the
+development of elite academy players, global brand expansion, and the diversification of revenue streams.
+Additionally, the Club will continue to identify and nurture talent across all areas of the business.
+In recent years, the Club has made significant investments in the development of its stadium, transforming it into
+a venue that is not only a suitable Premier League home ground but also a commercially attractive event space.
+As part of its ongoing development, the Club will focus on enhancing Bramall Lane’s role as a key destination in
+Sheffield. Over the course of the 2024/25 season, the Club plans to build on this progress by utilising the recently
+acquired Boundary Corner site to create a dedicated FanZone area, further enhancing the matchday experience.
+Additionally, the redevelopment of the hotel at Bramall Lane will be completed, making the stadium an even
+more attractive venue for both football fans and other events. These developments will strengthen the Club’s
+position to secure future concerts and competitive sports fixtures, adding valuable new revenue streams.
+Beyond commercial planning, the Club recognises the need to continue expanding and improving its sporting
+facilities. The much-anticipated acquisition of a new training site in Dore in the summer of 2024 marks the
+beginning of an exciting new chapter for the Club. While significant work is required to make the site suitable for
+hosting the First Team, this acquisition presents a unique opportunity. Over the next twelve months, the Club will
+engage with planners and developers to design a state-of-the-art training facility that meets the standards
+expected of an elite professional football team. Once completed, the First Team will relocate to Dore, which will
+free up space at the current Shirecliffe site. This will allow the Club to expand its development programme,
+aiming to secure a Category One Elite Player Performance Plan License and enhancing its player development
+pathway.
+These developments represent a clear, strategic vision for the Club's future, positioning Sheffield United for
+continued success both on and off the pitch. :
+At the start of the 2024/2025 season, the Club will begin its Championship campaign with a 2-point deduction,
+following sanctions imposed by the EFL as a result of a disciplinary commission's decision on 28 March 2024.
+Despite this challenge, the Club is confident that our first team recruitment and development strategy will result
+in competitive performance in the 2024-25 season, and remains dedicated to a return to the Premier League.
+Financial Performance Overview
+The Club has reported a net profit of £2.4 million for the period, a significant recovery from a loss of £31.5 million
+in 2023. This profit is stated after an impairment of tangible fixed assets of £10.7 million, following the revaluation
+of property assets to reflect their revised market value and a provision of £14.8 million against intercompany
+receivables due from the parent company.
+Revenue :
+The Club achieved revenue of £137.6 million, representing an increase of £73.7 million from £63.9 million in
+2023. This growth was primarily driven by a substantial rise in broadcast revenues, which reached £114.3 million
+(2023: £42.7 million) following promotion to the Premier League. Non-broadcast revenues also demonstrated
+robust growth, increasing to £23.3 million (2023: £21.2 million), reflecting the ongoing expansion and
+refurbishment of commercial inventory, alongside the Club’s commitment to enhancing Bramall Lane as a .
+premier hospitality venue.
+Despite a challenging commercial environment in the summer of 2023, where several clubs began the season
+without shirt sponsors due to increased competition for marketing spend, the Club secured a successful principal
+partnership for the 2023/24 season with Dubai-based financial services provider, CFI Financial Group. This
+
+: partnership -provides a significant global marketing opportunity, leveraging the international platform afforded by
+the Premier League.
+
+Page 9
+

@@ -1,0 +1,258 @@
+source: Companies House filing, basingstoke-town-fc__2.pdf
+document: r6P7PhblCvZv2U02WxsNuhBn7WnvK84FBPVzUXiKEVw
+made_up_date: 2024-05-31
+method: ocr
+pages_read: 8 of 8
+
+| em
+BASINGSTOKE TOWN LIMITED Company Registration No. 04259233
+STATEMENT OF FINANCIAL POSITION .
+AS AT 31 MAY 2024
+2024 2023
+Notes £ & £
+Fixed assets ‘
+Property, plant, and equipment 3 0 0 .
+Investment property 4 1,714,000 1,714,000
+1,714,000 1,714,000
+Current assets
+. Debtors 5 520 1,256
+Creditors: amounts falling due within
+one year 6 417,404 405,283
+Net current (labilities) (416,884) (404,027)
+Total assets less current liabilities 1,297,116 1,309,973
+Creditors: amounts falling due after
+more than one year 7 {1,467,000) (1,468,493)
+Provisions for Ltabilities 8 (391,000) (391,000) .
+Net liabilities (560,884) (549,520) ’
+Capital and reserves :
+Share capital 9 256,900 256,900
+Profit and loss reserves 10 (817,784) {806,420} .
+Total equity (560,884) {549,520}
+For the financial year ended 31 May 2024 the company was entitled to exemption from
+audit under section 477 of the Companies Act 2006 relating to small companies.
+. The directors of the company have elected not to include a copy of the income statement
+within the financial statements. .
+The members have not required the company to obtain an audit of its financial statements
+for the year in question in accordance with section 476.
+The director acknowledges his responsibilities for complying with the requirements of the
+Companies Act 2006 with respect to accounting records and the preparation of financial
+statements.
+These financial statements have been prepared in accordance with the provisions applicable :
+to companies subject to the small companies’ regime.
+The financial! Aatements were approved by the board and signed by the director and
+authorised Has sue On 24th February 2025
+Me .
+Mr Rafi Razzak W ;
+Director .
+1
+BASINGSTOKE TOWN LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS
+
+FOR THE YEAR ENDED 31 MAY 2024 .
+
+1 Accounting policies .
+Company information .
+Basingstoke Town Ltd is a private company limited by shares and is registered and .
+incorporated in England and Wales. The registered office is Town Gate, 38 London
+Street, Basingstoke, Hampshire, RG21 7NY. .
+. Accounting convention
+These financial statements have been prepared in accordance with FRS 102 "The .
+Financial Reporting Standard applicable in the UK and Republic of Ireland” ("FRS 102"} and
+the requirements of the Companies Act 2006 as applicable to companies subject to the
+“small companies regime. The disclosure requirements of section 1A of FRS 102 have been
+applied other than where additional disclosure is required to show a true and fair view.
+The financial statements are prepared in sterling, which is the functional currency of the
+company. Monetary amounts in these financial statements are rounded to the nearest £1.
+The financial statements have been prepared under the historical cost convention. The . ‘
+principal accounting policies adopted are set out below.
+Rental Income
+Rental Income is recognised at the fair value of the consideration received or receivable for goods
+and services provided in the normal course of business, and is shown net of VAT and other
+sales related taxes.
+When cash flows are deferred and represent a financing arrangement, the fair value of the
+consideration is the present value of future receipts. The difference between the fair value
+of the consideration and the nominal amount received is recognised as interest income. ,
+Revenue from the sale of goods is recognised when the significant risks and rewards of +
+ownership of the goods have passed to the buyer and the amount of revenue can be
+measured retiably, it is probable that the economic benefits associated with the transaction
+will flow to the entity, and the costs incurred in respect of the transaction can be measured
+reliably. .
+. Tangible fixed assets
+Tangible fixed assets are initially measured at cost, net of depreciation and any impairment
+tosses. :
+Depreciation is recognised so as to write off the costs of assets less their residual values over
+their useful lives on the following bases: +
+Leasehold land and buildings Over the term of the lease
+Plant, machinery, fixtures, and equipment 25% on cost
+The gain or loss arising on the disposal of an asset is determined as the difference between .
+the sale proceeds and the carrying value of the asset, and is credited or charged to profit or loss
+2
+BASINGSTOKE TOWN LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR ENDED 31 MAY.2024
+
+1 Accounting policies (continued)
+Investment properties
+Investment property, which is property held to earn rental income and/or for capital
+appreciation, is initially recognised at cost, which includes purchase cost and directly
+attributable expenditure. When a property, previously Classified as property plant and
+equipment, is reclassified as investment property, it is restated as investment property
+from the date of change, with any differences recognised in profit or loss. Subsequently
+alt investment property is recognised at fair value at the reporting date, with differences
+recognised in profit or loss.
+Cash and cash equivalents
+Cash and cash equivalents are basic financial instruments and include cash in hand, deposits
+. held at call with banks and bank overdrafts. Bank overdrafts are shown within borrowings
+in current liabilities. .
+Financial Instruments
+The company has elected to apply the provisions of Section 11 ‘Basic Financial Instruments’
+and Section 12 ‘Other Financial Instruments Issues’ of FRS 102 to all its financial instruments.
+Financial instruments are recognised when the company becomes party to the contractural
+Provisions of the instrument.
+Financial assets and liabilities are offset, with the net amounts presented in the financial
+statements, when there is a legally enforceable right to set off the recognised amounts
+: and there is an intention to settle on a net basis or to realise the asset and settle the :
+liability simultaneously.
+Basic financial assets
+Basic financial assets, which include trade and other debtors and cash and bank balances,
+are initially measured at transaction price including transaction costs and are subsequently
+carried at amortised cost using the effective interest method unless the arrangement
+Constitutes a financing transaction, where the financial asset is measured at the present
+value of future receipts discounted at a market rate of interest.
+Classification of financial labilities
+Financiat liabilities and equity instruments are are classified according to the substance of
+the contractural arrangements entered into. An equity instrument is any contract that
+evidences a residual interest in the assets of the company after deducting all its liabilities. .
+Basic financial liabilities
+Basic financial liabilities, including trade and other creditors, are initially recognised at
+transaction price unless the arrangement constitutes a financing transaction, where the
+debt instrument is measured at the present vatue of future payments discounted at a
+market rate of interest.
+Debt instruments are subsequently carried at amortised cost, using the effective rate of
+interest method. .
+3
+BASINGSTOKE TOWN LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR ENDED 31 MAY 2024
+
+1 Accounting policies (continued)
+- Equity Instruments
+Equity instruments issued by the company are recorded at the fair value of proceeds
+received, net of direct issue costs.
+. Taxation
+The tax expense represents the sum of the current tax expense and deferred tax expense.
+Current assets are recognised when tax paid exceeds the tax payable.
+Current and deferred tax is charged or credited to the profit or loss, except when it relates
+to items charged or credited to other comprehensive income or equity, when the tax follows
+the transaction or event it relates to and is also charged or credited to other comprehensive .
+. income, or equity. . .
+Current tax assets, current tax liabilities, deferred tax assets and deferred tax liabilities are
+offset, if and only if, there is a legally enforceable right to set off the amounts and the entity
+intends either to settle on the net basis or to realise the asset and settle the liability
+simultaneously.
+Current taxis based on taxable profit for the year. Current tax assets and liabilities are
+measured using tax rates that have been enacted or substantively enacted.
+Deferred taxis calculated at the tax rates that are expected to apply to the period when
+the asset realised or the liability is settled based on tax rates that have been enacted or
+substantively enacted at the reporting date.
+Deferred tax liabilities are recognised in respect of all timing differences that exist at the
+reporting date. Timing differences are differences between taxable profits and total
+comprehensive income that arise from the inclusion of income and expenses in tax
+assessments in different periods from their recognition in the financial statements.
+Deferred tax assets are recognised only to the extent that it is probable that they will be
+recovered by the reversal of deferred tax liabilities or other future taxable profits.
+Going Concern
+The financial statements have been prepared on a going concern basis. The director has
+made substantial loans to the company (see note 10 to the financial statements), and these
+loans will not be demanded for a period of at least 12 months from the date these
+financial statements are approved. For this reason the director believes the financial
+statements should be prepared on a going concern basis.
+2 Employees ° :
+The average monthly number of employees (including directors) during the year was
+1(2023-1)
+4
+BASINGSTOKE TOWN LIMITED -
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 31 MAY 2024
+: 3 Tangible fixed assets
+Property
+plant and
+equipment
+; £
+: Cost
+At 1 June 2023 and at 31 May 2024 0
+Depreciation
+At 1 June 2023 and at 31 May 2024 0
+Carrying amount °
+At 31 May 2024 0 :
+At 31 May 2023 0
+4 Investment properties
+Falrvalue :
+As at 1 June 2023 and at 31 May 2024 1,714,000
+The investment property comprises a leasehold interest in the land and buildings that
+was used by the company in its previous major activity of a footbatl club and associated
+activities. This property is now exclusively held to earn rental income and to generate
+capital appreciation. The valuation of the leasehold interest was carried out by London
+Clancy Property Consultants Ltd, Commercial Property Consultants and Chartered Surveyors, .
+who are independent from the company. The valuation was carried out in August 2022.
+The director believes that the valuation remains vatid at 31 May 2024 as the leasehold
+interest was sold for this consideration after the balance sheet date.
+5 Debtors
+2024 2023
+Amounts falling due within one year £ &
+: . Trade debtors 520 - 520
+Other debtors tt) 736
+§29 1,256
+5
+BASINGSTOKE TOWN LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 31 MAY 2024
+6 Creditors: amounts falling due within one year
+2024 . 2023
+£ £
+Bank loans and overdrafts 37,016 27,331
+Trade creditors . 41,483 11,540
+Taxation and social security 8,896
+Other loans 103,125 135,497
+Other creditors 226,884 230,915
+417,404 405,283
+7 Creditors: amounts falling due after more than one year
+. 2024 2023
+£ £
+Bank Loans . 0 "19,493
+Other creditors 1,467,000 1,449,000
+1,467,000 1,468,493 .
+Other creditors includes a secured loan from the director of £1,467,000 (2022 - £1,449,000). .
+This loan will not be repaid until after 1 June 2024
+8 Provisions for liabilities .
+2024 + 2023
+: £ £ . :
+Deferred taxation
+Provision at 31 May 2023 391,000 297,160
+Increase in provision in the year oO 93,840
+Provision at 31 May 2024 391,000 391,000
+The deferred taxation provision results from the revaluation of the investment property.
+The increase in the year is due to corporation taxation rates increasing.
+9 Catled up share capital
+2024 2023
+£ £
+Ordinary share capital
+Issued and fully paid ,
+2569 Ordinary shares of £100 each 256,900 256,900
+10 Directors’ transactions
+As at 31 May 2024 the company owed the director £1,467,000 (2022 - £1,449,000)
+No interest was charged on the outstanding loan in the year (2023 - £0).
+. 6
+BASINGSTOKE TOWN LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 31 MAY 2023
+12 Controt
+The company is under control of its director, Mr Rafi Razzak.
+7
+© .
+

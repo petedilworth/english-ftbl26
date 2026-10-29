@@ -1,0 +1,402 @@
+source: Companies House filing, walsall-fc__2.pdf
+document: sCHBQQ5V6RVbhb9gwo_TdlKfSvhbPyL975-PFTu8BG4
+made_up_date: 2024-05-31
+method: ocr
+pages_read: 12 of 35
+
+we Registered number: 00171970
+The Walsall Football Club Limited
+Directors’ Report and Financial Statements
+For the Year Ended 31 May 2024
+cm DAINS
+> AUDIT
+LI *ADXCNCLL*
+A23 28/02/2025 #70
+COMPANIES HOUSE :
+Doc ID: e0550db00cfc684fE3d8eebcSb0eab 183a9cd2c9
+The Waisall Footbatl Club Limited
+Company Information
+Directors S Gamble (resigned 8 August 2024)
+LM Pomlett .
+D S Mole (resigned 17 November 2023)
+B Boycott
+* BR Sadler (appointed 19 June 2024)
+Company secretary G Whittaker
+Company number 00171970
+Registered office Poundiand Bescot Stadium
+Bescot Crescent
+Walsall
+: West Midlands
+WS1 4SA
+Independent auditor Dains Audit Limited
+2 Chamberlain Square
+Paradise Circus
+Birmingham
+B3 3AX
+; : Doc ID: e0550db00cfc684f63d8eebc9b0eab183a9cd2c9
+: The Walsall Football Club Limited
+contents . . . .
+Page
+
+Chairman's Statement 1-2
+Directors’ Report 3-4
+Independent Auditor's Report 5-8
+
+. Profit and Loss Account . 9
+Statement of Comprehensive Income ; 10
+Balance Sheet : n
+Statement of Changes in Equity 12
+Statement of Cash Flows 13-14
+Analysis of Net Debt 15 .
+Notes to the Financial Statements . 16 - 32
+
+. Doc ID: e0550db00cfc684f63d8eebc9b0eab183a9cd2c9
+The Walsall Football Club Limited
+
+Chairman's statement
+
+For the Year Ended 31 May 2024
+
+On behalf of myself, my business partners at Trivela Group, and the rest of the Board of Directors, | am pleased to
+
+present the Annual Report and Accounts for the year ended 31 May 2024.
+
+The key headlines for this year were building for the future in a number of ways. These included:
+
+. Football Department. This was the first full season under Head Coach Mat Sadler, and he along with our
+recruitment team at Trivela worked through both transfer windows to continue to build a core squad of players
+who fit our culture and style. The First Team finished 11th on 65 points, which was our best finish in League Two
+since relegation back in 2019.
+
+° Facilities. This year saw significant capital investment, including the total renovation of the Saddlers’ Club into
+the new Locker facility, as well as a number of close-season upgrades to the Stadium.
+
+. Personnel. This year saw the significant expansion of the clubs Strategic Leadership Team, with Trivela funding
+a major investment in personnel to grow the long-term future of the Football Club and its ability to operate
+sustainably and generate increased revenue.
+
+In addition to our strategic decision to invest significantly on a number of fronts, the Club experienced financial
+
+headwinds in terms of significant cost inflation in English football and in the economy at large. In addition, the returns
+
+generated through “football fortune income” (transfer fees, cup prize monies, etc...) were much lower than historical
+averages.
+
+The net effect of all of this was a loss of £1.783 million, with this figure including significant depreciation on the
+
+Poundland Bescot Stadium property which was acquired in December of 2022 ~ this being the first full year of
+
+ownership. The loss also includes interest accruals on monies injected by Trivela Group UK, so the more relevant figure
+
+. would be our operating result/EBITDA of (£914,000).
+
+Whilst at the beginning of the year we expected to see the results of our significant operational investment in the Locker
+
+pre-opening, the football department, and the SLT, this was again exacerbated by overall economic and industry
+
+financial headwinds, and by lower-than-average football fortune income. However, | remain confident that these
+financial investments have grown the Football Club’s capacity to operate sustainably and generate additional revenue
+in the long term and that we will be seeing the financial fruits of these investments for years to come.
+
+In keeping with these results and decisions, we have seen some significant movement on the balance sheet as well, with
+
+the net indebtedness increasing primarily due to debt injections from Trivela Group UK. These funds were utilised by
+
+the club to supplement the operating result described above, retire approximately £440,000 in third-party debt, and
+invest approximately £1.1m in capital, including the Locker renovation and various Stadium projects.
+
+With Trivela Group UK LLC owning the majority of the equity of the football club, the use of debt injection to make these
+
+investments (as opposed to equity) is merely a function of simplicity and practicality.
+
+As always, | would like to acknowledge the Club’s Sponsors and Commercial Partners who continued their support
+
+throughout the year. In particular, | would like to thank Poundiand, NoFo Brew Co., Pallet-Track, Howard Evans, SPV
+
+Special Projects, Tile Choice, B.A.T Fabrications, Experienced Energy Solutions, RayGray Snacks, S&S Steelstock Ltd,
+
+Dains Accountants Ltd, HomeServe, Excel Print, Guardian Support, Bailey & Mackey Ltd, J Haywards & Sons (Walsall)
+
+Ltd and Brellis Recruitment.
+
+| would also like to pay tribute to the Walsall FC Foundation Team who continued to support the Club and to deliver
+
+services within the local community touching the lives of tens of thousands of local people.
+
+Page 1
+Doc ID: e0550db00cfc684f63d8eebc9b0eab183a9cd2c9
+The Walsall Football Club Limited .
+Chairman's Statement (continued)
+For the Year Ended 31 May 2024
+Finally, and most importantly, on behalf of everyone at Walsall Football Club | would like to say a huge thank you to all
+Supporters who continue to back. the Club for their unwavering support. Thank you for your support of this Football
+Club, and my partners and | at Trivela are fully committed to the long-term success of this Football Club.
+-Despite this loss-making result, | remain extremely confident in the stability of this club moving forward, and its ability to
+operate sustainably. This is especially true given the significant investments that we have made over the course of this
+year in growing our organisational capacity by growing our leadership team, and growing our long-term revenue
+generating ability by significantly enhancing our physical infrastructure at Bescot Stadium. Both the club and Trivela
+are in a strong position, and we look forward to a very bright future for Walsall FC, both on the pitch and off.
+This report was approved by the board on 24 February 2025 and signed on its behalf. :
+B Boycott — .
+Director
+
+Page 2
+
+Doc ID: e0550db00cfc684fE3d8eebc9b0eab183a9cd2c9
+The Walsall Football Club Limited
+Directors’ Report
+For the Year Ended 31 May 2024
+The directors present their report and the financial statements for the year ended 31 May 2024.
+, Principal activity
+The principal activity of the company continued to be that of a Professional Football League Club.
+Results and dividends
+The loss for the year, after taxation, amounted to £1,783,000 (2023 - profit £11,000).
+The directors do not recommend payment of a dividend (2023 - Enil).
+Directors
+The directors who served during the year were:
+S Gamble (resigned 8 August 2024)
+LM Pomlett
+DS Mole (resigned 17 November 2023)
+B Boycott .
+Future developments and events after the balance sheet date
+Details of future developments and events that have occurred after the balance sheet date can be found in the
+Chairman's Statement and form part of this report by cross reference.
+Directors’ responsibilities statement
+The directors are responsible for preparing the Chairman's Statement, the Directors’ Report and the financial
+statements in accordance with applicable law and regulations.
+Company law requires the directors to prepare financial statements for each financial year. Under that law the directors
+have elected to prepare the financial statements in accordance with applicable law and United Kingdom Accounting
+Standards (United Kingdom Generally Accepted Accounting Practice), including Financial Reporting Standard 102 ‘The
+Financial Reporting Standard applicable in the UK and Republic of Ireland’. Under company law the directors must not
+approve the financial statements unless they are satisfied that they give a true and fair view of the state of affairs of
+the company and of the profit or loss of the company for that period.
+In preparing these financial statements, the directors are required to:
+. select suitable accounting policies for the company's financial statements and then apply them consistently;
+° make judgements and accounting estimates that are reasonable and prudent;
+. prepare the financial statements on the going concern basis unless it is inappropriate to presume that the
+company will continue in business.
+: Page 3
+Doc ID: e0550db00cfc684f63d8eebc9b0eab183a9cd2c9
+The Walsall Football Club Limited
+Directors’ Report (continued)
+For the Year Ended 31 May 2024
+The directors are responsible for keeping adequate accounting records that are sufficient to show and explain the
+company’s transactions and disclose with reasonable accuracy at any time the financial position of the company and to
+enable them to ensure that the financial statements comply with the Companies Act 2006. They are also responsible for
+safeguarding the assets of the company and hence for taking reasonable steps for the prevention and detection of
+fraud and other irregularities.
+The directors are responsible for the maintenance and integrity of the corporate and financial information included on
+the company's website. Legislation in the United Kingdom governing the preparation and dissemination of financial
+statements and other information included in Directors’ Reports may differ from legislation in other jurisdictions.
+Disclosure of information to auditor
+Each of the persons who are directors at the time when this Directors’ Report is approved has confirmed that:
+. so far as the director is aware, there is no relevant audit information of which the company's auditor. is unaware,
+and
+. the director has taken all the steps that ought to have been taken as a director in order to be aware of any
+relevant audit information and to establish that the company's auditor is aware of that information.
+, Auditor
+
+The auditor, Dains Audit Limited, will be proposed for reappointment in accordance with section 485 of the Companies
+Act 2006.
+This report was approved by the board on 24 February 2025 and signed on its behalf.
+B Boycott
+Director
+
+Page 4
+
+Doc ID: e0550db00cfc684f63d8eebc9b0eab1 83a9cd2c9
+The Walsall Football Club Limited
+Independent Auditor’s Report to the Members of The Walsall Football Club Limited
+Opinion
+We have audited the financial statements of The Walsall Football Club Limited (the ‘company’) for the year ended 31
+May 2024, which comprise the Profit and Loss Account, the Statement of Comprehensive Income, the Balance Sheet, the
+Statement of Cash Flows, the Statement of Changes in Equity and the related notes, including a summary of significant
+accounting policies. The financial reporting framework that has been applied in their preparation is applicable law and
+United Kingdom Accounting Standards, including Financial Reporting Standard 102 ‘The Financial Reporting Standard
+applicable in the UK and Republic of Ireland’ (United Kingdom Generally Accepted Accounting Practice).
+In our opinion the financial statements:
+. give a true and fair view of the state of the company's affairs as at 31 May 2024 and of its loss for the year then
+ended;
+
+. have been properly prepared in accordance with United Kingdom Generally Accepted Accounting Practice; and
+. have been prepared in accordance with the requirements of the Companies Act 2006.
+Basis for opinion
+We conducted our audit in accordance with International Standards on Auditing (UK) (ISAs (UK)) and applicable law.
+Our responsibilities under those standards are further described in the Auditor's responsibilities for the audit of the
+financial statements section of our report. We are independent of the company in accordance with the ethical
+requirements that are relevant to our audit of the financial statements in the United Kingdom, including the Financial
+Reporting Council's Ethicol Standard and we have fulfilled our other ethical responsibilities in accordance with these
+requirements. We believe that the audit evidence we have obtained is sufficient and appropriate to provide a basis for
+our opinion.
+Conclusions relating to going concern
+In auditing the financial statements, we have concluded that the directors’ use of the going concern basis of accounting
+in the preparation of the financial statements is appropriate.
+Based on the work we have performed, we have not identified any material uncertainties relating to events or
+conditions that, individually or collectively, may cast significant doubt on the company's ability to continue as a going
+concern for a period of at least twelve months from when the financial statements are authorised for issue.
+Our responsibilities and the responsibilities of the directors with respect to going concern are described in the relevant
+sections of this report.
+
+Page 5
+
+Doc ID: e0550db00cfc684f63d8eebc9b0eab 183a9cd2c9
+The Walsall Football Club Limited
+Independent Auditor's Report to the Members of The Walsall Football Club Limited (continued)
+Other information
+‘The other information comprises the information included in the Annual Report other than the financial statements and
+our Auditor's Report thereon. The directors are responsible for the other information contained within the Annual
+Report. Our opinion on the financial statements does not cover the other information and, except to the extent otherwise
+explicitly stated in our report, we do not express any form of assurance conclusion thereon. Our responsibility is to read
+the other information and, in doing so, consider whether the other information is materially inconsistent with the
+financial statements or our knowledge obtained in the course of the audit, or otherwise appears to be materially
+misstated. If we identify such material inconsistencies or apparent material misstatements, we are required to determine
+whether this gives rise to a material misstatement in the financial statements themselves. If, based on the work we have
+performed, we conclude that there is a material misstatement of this other information, we are required to report that
+fact.
+We have nothing to report in this regard.
+Opinion on other matters prescribed by the Companies Act 2006
+In our opinion, based on the work undertaken in the course of the audit:
+. the information given in the Chairman's Statement and the Directors' Report for the financial year for which the
+financial statements are prepared is consistent with the financial statements; and :
+. the Chairman's Statement and the Directors’ Report have been prepared in accordance with applicable legal
+requirements.
+Matters on which we are required to report by exception
+In the light of the knowledge and understanding of the company and its environment obtained in the course of the
+audit, we have not identified material misstatements in the Chairman's Statement or the Directors’ Report.
+We have nothing to report in respect of the following matters in relation to which the Companies Act 2006 requires us to
+report to you if, in our opinion: °
+. adequate accounting records have not been kept, or returns adequate for our audit have not been received
+from branches not visited by us; or
+° the financial statements are not in agreement with the accounting records and returns; or
+. certain disclosures of directors’ remuneration specified by law are not made; or
+: . we have not received all the information and explanations we require for our audit.
+Page 6
+Doc ID: e0550db00cfc684f6E3d8eebcOb0eab183a9cd2c9 ,
+The Walsall Football Club Limited
+
+Independent Auditor's Report to the Members of The Walsall Football Club Limited (continued)
+
+Responsibilities of directors ,
+
+As explained more fully in the Directors’ Responsibilities Statement set out on page 3, the directors are responsible for
+
+the preparation of the financial statements and for being satisfied that they give a true and fair view, and for such
+
+internal control as the directors determine is necessary to enable the preparation of financial statements that are free
+from material misstatement, whether due to fraud or error.
+
+In preparing the financial statements, the directors are responsible for assessing the company's ability to continue as a
+
+going concern, disclosing, as applicable, matters related to going concern and using the going concern basis of
+
+accounting unless the directors either intend to liquidate the company or to cease operations, or have no realistic
+alternative but to do so.
+
+Auditor's responsibilities for the audit of the financial statements
+
+Our objectives are to obtain reasonable assurance about whether the financial statements as a whole are free from
+
+material misstatement, whether due to fraud or error, and to issue an Auditor's Report that includes our opinion.
+
+Reasonable assurance is a high level of assurance, but is not a guarantee that an audit conducted in accordance with
+
+. ISAs (UK) will always detect a material misstatement when it exists. Misstoternents can arise from fraud or error and are
+considered material if, individually or in the aggregate, they could reasonably be expected to influence the economic
+decisions of users taken on the basis of these financial statements.
+
+Irregularities, including fraud, are instances of non-compliance with laws and regulations. We design procedures in line
+
+with our responsibilities, outlined above, to detect material misstatements in respect of irregularities, including fraud. The
+
+extent to which our procedures are capable of detecting irregularities, including fraud is detailed below:
+
+Our approach to identifying and assessing the risks of material misstatement in respect of irregularities, including fraud
+
+and non-compliance with laws and regulations, was as follows:
+
+« the senior statutory auditor ensured that the engagement team collectively had the appropriate
+competence, capabilities and skills to identify or recognise non-compliance with applicable laws and
+regulations;
+
+« we identified the laws and regulations applicable to the company through discussions with directors and
+other management, and from our commercial knowledge and experience of the football club sector; and
+
+« we focused on specific laws and regulations which we considered may have a direct material effect on the
+financial statements or the operations of the company, including the financial reporting legislation, Companies Act
+2006, taxation legislation, anti-bribery, employment, and environmental and health and safety legislation;
+
+* we assessed the extent of compliance with the laws and regulations identified above through making
+enquiries of management and inspecting legal correspondence; and
+
+« identified laws and regulations were communicated within the audit team regularly and the team remained
+alert to instances of non-compliance throughout the audit.
+
+We assessed the susceptibility of the company’s financial statements to material misstatement, including obtaining an
+
+understanding of how fraud might occur, by:
+
+* making enquiries of management as to where they considered there was susceptibility to fraud, their
+knowledge of actual, suspected and alleged fraud; and
+
+« considering the internal controls in place to mitigate risks of fraud and non-compliance with laws and
+
+: regulations.
+Page 7
+Doc ID: e0550db00cfc684f63d8eebc9b0eab183a9cd2c9
+The Walsall Football Club Limited
+independent Auditor's Report to the Members of The Walsall Football Club Limited (continued)
+To address the risk of fraud through management bias and override of controls, we:
+e performed analytical procedures to identify any unusual or unexpected relationships;
+¢ tested journal entries to identify unusual transactions;
+* assessed whether judgements and assumptions made in determining the accounting estimates set out in
+Note 3 were indicative of potential bias; and
+« — investigated the rationale behind significant or unusual transactions.
+In response to the risk of irregularities and non-compliance with laws and regulations, we designed procedures which
+included, but were not limited to: ‘
+* agreeing financial statement disclosures to underlying supporting documentation;
+* reading the minutes of meetings of those charged with governance;
+* enquiring of management as to actual and potential litigation and claims; and
+* reviewing correspondence with HMRC, relevant regulators and the company's legal advisors.
+Because of the inherent limitations of an audit, there is a risk that we will not detect all irregularities, including those
+leading to a material misstatement in the financial statements or non-compliance with regulation. This risk increases the
+more that compliance with a law or regulation is removed from the events and transactions reflected in the financial
+statements, as we will be less likely to become aware of instances of non-compliance. The risk is also greater regarding
+irregularities occurring due to fraud rather than error, as fraud involves intentional concealment, forgery, collusion,
+omission or misrepresentation.
+A further description of our responsibilities for the audit of the financial statements is located on the Financial Reporting
+Council's website at: www.frc.org.uk/auditorsresponsibilities. This description forms part of our Auditor's Report.
+Use of our report
+This report is made solely to the company's members, as a body, in accordance with Chapter 3 of Part 16 of the
+Companies Act 2006. Our audit work has been undertaken so that we might state to the company’s members those
+matters we are required to state to them in an Auditor's Report and for no other purpose. To the fullest extent permitted
+by law, we do not accept or assume responsibility to anyone other than the company and the company's members, as
+a body, for our audit work, for this report, or for the opinions we have formed.
+Andrew Morus
+
+Andrew Morris (FCA) (Senior Statutory Auditor)
+for and on behalf of
+Dains Audit Limited -
+Statutory Auditor
+Chartered Accountants
+Birmingham
+24 February 2025
+
+Page 8
+
+Doc ID: e0550db00cfc684f63d8eebc9b0eab183a9cd2c9
+The Walsall Football Club Limited ,
+Profit and Loss Account
+For the Year Ended 31 May 2024 .
+2024 2023
+' Note £000 £000
+Turnover : 4 6,739 7.615
+Net operating costs (8,103) (7,437)
+Operating (loss)/profit 6 (1,364) 178
+Interest payable and similar expenses (419) (167)
+(Loss)/profit before tax (1,783) nN
+Tax on (loss)/profit 10 : -
+(Loss)/profit for the financial year (1,783) 1
+The notes on pages 16 to 32 form part of these financial statements.
+Page 9
+Doc ID: e0550db00cfc684f63d8eebc9b0eab 183a9cd2c9
+

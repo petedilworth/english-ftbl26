@@ -1,0 +1,365 @@
+source: Companies House filing, manchester-united-fc__1.pdf
+document: ZPff9ZxH3Wu_5nSlAT9zmZfFCIWvJtLucxKfKETcZ7g
+made_up_date: 2025-06-30
+method: ocr
+pages_read: 12 of 17
+
+Oo t .
+: : Registered Number: 02570509
+Manchester United Limited
+Unaudited annual report and financial statements
+for the year ended 30 June 2025
+wun
+soe coneantes HOUSE ;
+Manchester United Limited
+Contents
+Page
+"Strategic report - unaudited .......ccccsscsscssssseecsssssecsssssnssssscccsssnececssssseceessunsesseessssssnsescsessnsssnsescessesaneessensanerecsensneeetes D
+Directors! report - unaudited... esses eseeecsesscsceesseneesesntscssssesasseccecssescessesscseccueaseesessnssneneesersestsesseeseenessssees 4
+Statement of profit or loss - unaudited 0.0.0... eesessesssessesssessessessesensssessesseneasessressessuerssessesesessarssssesessnesesesnesessets O
+Balance sheet - unaudited... ceseecssecesccseecsscesssveeeseeseenssesscsessvessesesscsaresessecseestesatsatentsssaneseesesscaneavensenssasenes D
+Statement of changes in equity - unaudited... cscsesecesessessesseesesssessasesseensessenssessseseesseesnessiesesessscaeseres LO
+Notes to the financial statements - unaudited ...........cesceccecesseceseesessesesssesnssasssesseessnessesseessessensesessetesseneesesseassee LD
+2
+Docusign Envelope ID: BAE4A2EF-4716-466B-A401-72DFAGAED4D0
+Manchester United Limited :
+Strategic report - unaudited
+Manchester United Limited (the “Company”) is a holding company and part of the Red Football Limited (the parent .
+undertaking of the smallest group of undertakings to consolidate these financial statements) group (the “Group”). The directors
+present their Strategic report on the Company for the year ended 30 June 2025.
+Review of the business
+The Company did not trade during the year or the preceding year but did incur operating expenses relating to an overseas
+office. All Company employees are based overseas. Profit before tax for the year was £59,000 (2024: £75,000) and loss after
+tax was £562,000 (2024: £715,000). The net assets of the Company decreased to £508,061,000 as at 30 June 2025.
+--- Principal-risks and uncertainties --- -—--- === = 5 eon we
+From the perspective of the Company, the principal risks and uncertainties are integrated with the principal risks of the Group
+and are not managed separately. Accordingly, the principal risks and uncertainties of the Group, which include those of the
+Company, are discussed in the Strategic report section of the Red Football Limited Annual Report and financial statements
+which does not form part of this report.
+Key performance indicators
+The directors of Red Football Limited manage the Group’s operations on a group basis. For this reason, the Company’s
+directors believe that analysis using key performance indicators for the Company is not necessary or appropriate for ‘an
+understanding of the development, performance or position of the business of Manchester United Limited. The development,
+performance and position of the Group, which includes the Company, are discussed in the Strategic Report section of the Red
+Football Limited Annual Report and financial statements, which does not form part of this report.
+\
+The Annual Report and financial statements of Red Football Limited can ‘be obtained from the Company Secretary, Red
+Football Limited, Old Trafford, Manchester, M16 ORA.
+On behalf of the board . .
+Docustgned by:
+[et aiarr
+J Glazer :
+Director .
+10 Masn 2026
+Manchester United Limited
+Directors’ Report - unaudited
+The directors present their report and unaudited financial statements of the Company for the year ended 30 June 2025.
+Going concern
+The directors have a reasonable expectation that the Company has adequate resources to continue in operational existence for
+twelve months from the date of approval of these financial statements. Accordingly, they continue to adopt the going concern
+basis in preparing the annual report and financial statements.
+This conclusion is based on the continued financial support of the ultimate parent company, Manchester United plc. The :
+directors have received confirmation that Manchester United plc will provide support to the Company for at least one year
+from the date of approval of these financial statements.
+Dividends
+Dividends amounting to £nil were paid during the year (2024: £nil). The directors do not recommend the payment of a final
+dividend (2024: £nil).
+Future developments :
+The Company does not expect to trade for the foreseeable future but does incur operating expenses relating to an overseas
+office.
+Financial risk management
+As the Company does not expect to trade for the foreseeable future it is not exposed to significant financial risk.
+Directors
+The directors who held office throughout the year and up to the date of signing the financial statements (unless otherwise
+stated) were as follows: :
+J Glazer (Chairman)
+A Glazer
+B Glazer
+D Glazer Kassewitz
+E Glazer
+K Glazer ,
+Qualifying third party indemnity provisions
+At the time the report was approved a qualifying third party indemnity provision, made by Manchester United plc was in place
+for the directors of Manchester United plc and its subsidiary companies. This qualifying indemnity provision was in force
+throughout the financial year.
+
+. 4
+Manchester United Limited
+Directors’ Report — unaudited (continued)
+Statement by the directors in performance of their statutory duties in accordance with Section 172(1) of the
+Companies Act 2006
+The directors of the Company must act in accordance with a set of general duties. These duties are detailed in Section 172 of
+the Companies Act 2006 which is summarised as follows: .
+A director of a company must act in the way they consider, in good faith, would be most likely to promote the success of the
+company for the benefit of shareholders as a whole and, in doing so have regard (amongst other matters) to:
+e the likely consequences of any decisions in the long-term;
+e the interests of the company’s employees;
+e the need to foster the company’s business relationships with suppliers, customers and others;
+e the impact of the company’s operations on the community and the environment;
+e the desirability of the company maintaining a reputation for high standards of business conduct; and
+«the need to act fairly as between shareholders of the Company.
+The following paragraphs summarise how the directors’ fulfil their duties:
+Risk Management
+From the perspective of the Company, the principal risks and uncertainties are integrated with the principal risks of the Group
+and are not managed separately. Accordingly the principal risks and uncertainties of the Group, which include those of the
+Company, are discussed in the Red Football Limited Annual Report and financial statements which does not form part of this
+report.
+Our People
+The Company is committed to its 'people philosophy’ and, as a result, to promoting policies which ensure that employees and
+applicants for employment are treated fairly and consistently. The Company has an equal opportunities policy, the aim of
+which is to ensure employees or applicants for employment are not discriminated against on the grounds of age, disability,
+ethnic origin, nationality or national origin, religion, race, gender, sexual orientation, gender re-assignment, marital status or
+family circumstances. Entry into and progression within the Company is determined solely by the job criteria and personal
+ability/competence.
+The Company also seeks to apply best practice in the employment, training, development and promotion of disabled persons.
+The Company takes seriously its statutory obligations relating to disabled persons and seeks not to discriminate against current
+or prospective employees because of a reason relating to their disability. If an existing employee becomes disabled, such steps
+that are practical and reasonable are taken, in respect of adjustments to premises or employment arrangements, to retain
+him/her in employment. Where appropriate, rehabilitation and suitable training are given.
+Employees are regularly updated on the performance of the Company. This is achieved through a broad base of
+communications including monthly management meetings, staff briefings and announcements. Employees’ views are sought
+through staff surveys and action plans are then developed to target priority for improvement areas. The Company is continuing
+with its focus on reward and recognition of performance as one of these priorities for improvement and its focus on a total
+reward strategy which has three principal components: compensation (pay package), benefits and the work experience.
+Schemes are continually introduced which focus on rewarding individual performance.
+The Company has established its Vision and Values and these are communicated to all employees. Our Vision and Values are
+directly linked to performance and development review procedures, training and organisational change programmes and
+reward and recognition initiatives, which apply to all our employees.
+
+5
+Manchester United Limited
+Directors’ Report — unaudited (continued)
+Statement by the directors in performance of their statutory duties in accordance with Section 172(1) of the
+Companies Act 2006 (continued)
+Community and Environment
+The Company is committed to a wide-ranging corporate social responsibility program through Manchester United Foundation
+(the “Foundation”). The associated charity of Manchester United, the Foundation’s vision focuses on a future where all young
+people are empowered to achieve their goals. The ongoing commitment to young people ensures that, despite uncertainty in the
+world around them, those with whom the Foundation works on a daily basis continue to feel supported, inspired, and positive
+about their future.
+The Foundation’s objectives are to provide young people with access to community and educational outreach programs to help
+them make positive choices in their lives and develop in the following areas:
+- Physical and mental wellbeing (living a happier, healthier life)
+- Social wellbeing (bringing a sense of belonging to people and their communities)
+- Employability (improving educational and employment outcomes)
+The Foundation works with over 40,000 young people each season and operates in the areas of highest social deprivation
+across Greater Manchester, with the aim of ensuring the benefits of these programs are felt by those who need it most. With
+more than 29,000 sessions delivered in 2024/25 — resulting in more than 530,000 attendances — the charity’s presence remains
+strong and visible across local communities. .
+The Foundation has partnerships with 77 primary, secondary, and special educational needs schools, as well as working
+alongside the Salford City College Group on a further education program in sport. Working predominantly across all ten
+boroughs of Greater Manchester, its work also ‘spans to Carlisle, Derbyshire, London, Northern Ireland and most recently the
+Republic of Ireland. Full-time coaches are based in high schools to work with pupils, feeder primary schools and within the
+local community to build lasting relationships. Other initiatives, such as Street Reds evening football sessions, girls’
+development provision, and a disability and inclusion program, provide free football, alternative activities, qualifications and
+work experience opportunities for young people across all areas of delivery.
+The Company is committed to equality, diversity and inclusion, with the club’s activity in these areas falling with its wide-
+ranging All Red All Equal initiative.
+The Company recognizes the need to move towards a more sustainable economy. We have taken steps to reduce the amount of
+waste we produce and divert all operational waste away from landfills. We also aim to reduce our use of non-renewable
+materials, improve our recycling rates and use more recycled materials. We have achieved the Carbon Trust Standard, which
+recognizes organizations that take a best practice approach to measuring and managing their environmental impacts, and
+through our Reds Go Green initiative we intend to continue to build on our carbon and renewable energy strategy to improve
+our performance further.
+Code of Business Conduct and Ethics
+We have adopted a Code of Business Conduct and Ethics that applies to all our employees, officers and directors, including our
+principal executive, principal financial and principal accounting officers. Our code of Business Conduct and Ethics addresses,
+among other things, competition and fair dealing, conflicts of interest, financial matters and external reporting, company funds
+and assets, confidentiality and corporate opportunity requirements and the process for reporting violations of the Code of
+Business Conduct and Ethics, employee misconduct, conflicts of interest or other violations.
+Shareholders
+The immediate parent undertaking is Red Football Limited. The ultimate parent undertaking and controlling party is
+Manchester United plc, a company incorporated in the Cayman Islands and listed on the New York Stock Exchange.
+
+6
+Docusign Envelope ID: BAE4A2EF-4716-4668-A401-72DFAGAED4D0
+Manchester United Limited
+Directors’ Report — unaudited (continued)
+Statement of directors’ responsibilities in respect of the financial statements
+The directors are responsible for preparing the Annual Report and the financial statements in accordance with applicable law
+: and regulation.
+: Company law requires the directors to prepare financial statements for each financial year. Under that law the directors have
+prepared the financial statements in accordance with United Kingdom Generally Accepted Accounting Practice (United
+Kingdom Accounting Standards, comprising FRS 101 “Reduced Disclosure Framework”, and applicable law).
+Under company faw, directors must not approve the financial statements unless they are satisfied that they give a true and fair
+oo. . view. of the.state of.affairs of the .company.and of.the profit or toss.of the company for that period..In-preparing. the. financial os see
+statements, the directors are required to:
+° select suitable accounting policies and then apply them consistently;
+o state whether applicable United Kingdom Accounting Standards, comprising FRS 101 have been followed, subject to
+: any material departures disclosed and explained in the financial statements;
+. make judgements and accounting estimates that are reasonable and prudent; and
+. prepare the financial statements on the going concern basis unless it is inappropriate to presume that the company will
+continue in business.
+The directors are responsible for safeguarding the assets of the company and hence for taking reasonable steps for the
+prevention and detection of fraud and other irregularities.
+, The directors are also responsible for keeping adequate accounting records that are sufficient to show and explain the
+: company's transactions and disclose with reasonable accuracy at any time the financial position of the company and enable
+them to ensure that the financial statements comply with the Companies Act 2006.
+On behalf of the board
+(a Aan
+B1EEEDAESCADB...
+J Glazer
+Director
+7
+Manchester United Limited
+Statement of profit or loss - unaudited
+Year ended 30 June
+. 2025 2024
+
+Note £7000 £7000
+Operating expenses 4 (750) (944)
+Operating loss before other income (750) (944)
+Other income 6 809 1,019
+Operating profit 59 75
+Profit before tax 59 75
+Income tax expense 7 (621) (790)
+Loss for the financial year (562) (715)
+All of the activities during the year relate to continuing operations. There were no items of other comprehensive income or loss
+in the current or prior year and therefore no statement of comprehensive income has been presented. :
+
+a .
+Docusign Envelope ID: BAE4A2EF-4716-466B-A401-72DFASAED4D0
+Manchester United Limited
+Balance sheet - unaudited
+As at 30 June
+2025 2024
+Note £000 £000
+ASSETS
+Non-current assets
+Investments 9 469,166 469,166
+469,166 469,166
+. «+. Currentassets 9-6-0 ee nee
+Trade and other receivables 10 26 26
+Amounts owed by group undertakings u 44,888 45,171
+Cash and cash equivalents 121 192
+: . 45,035 45,389
+Total assets 514201 514,555
+EQUITY AND LIABILITIES
+Equity
+Share capital / 12 2H,A19 26,519
+Share premium 140,931 140,931
+Capital contribution reserve 68,404 68,404
+Retained earnings 272,207 272,769
+Total equity 508,061 508,623
+Current liabilities
+Trade and other payables 13 14 5
+Amounts owed to group undertakings 14 6,126 5,927
+6,140 5,932
+The notes on pages 11 to L7 are an integral part of these financial statements.
+e For the year ending 30/06/2025 the company was entitled to exemption from audit under section 479A of the
+Companies Act 2006 relating to subsidiary companies
+e the members have not required the company to obtain an audit of its accounts for the year in question in accordance
+with section 476
+e the directors acknowledge their responsibilities for complying with the requirements of the Act with respect to
+accounting records and the preparation of accounts
+The financial statements on pages 8 to 17 were approved by the board of directors on | ) Marth 9096 and
+were signed on its behalf by: .
+(ay
+Glazer Director ;
+Registered Number: 02570509
+9
+Manchester United Limited
+Statement of changes in equity - unaudited
+Capital
+Share Share contribution Retained Total
+capital premium reserve earnings equity
+£7000 £000 £000 £000 £7000
+Balance at 1 July 2023 26,519 7,756 68,404 273,484 376,163
+Loss for the year - - - (715) (715)
+Total comprehensive expense for the year - > - (715) (715)
+Proceeds from issue of shares - 133,175 - - 133,175
+Balance at 30 June 2024 26,519 140,931 68,404 272,769 508,623
+Loss for the year - - - (562) (562)
+Total comprehensive expense for the year - - - (562) (562)
+Balance at 30 June 2025 26,519 140,931 68,404 272,207 508,061
+410
+Manchester United Limited
+Notes to the financial statements - unaudited
+1 General information
+Manchester United Limited (the “Company”) is a private company limited by share capital domiciled and incorporated in the
+United Kingdom and registered in England and Wales. The address of its registered office is Sir Matt Busby Way, Old
+Trafford, Manchester, M16 ORA. The registered number of the Company is 02570509.
+These financial statements are presented in pounds sterling, which is also the Company’s functional currency, and all values
+are rounded to the nearest thousand (£°000) except when otherwise indicated.
+2 Summary of significant accounting policies
+The principal accounting policies applied in the preparation of these financial statements are set out below. These policies have
+been consistently applied to all the years presented, unless otherwise stated.
+2.1 Basis of preparation .
+Manchester United Limited meets the definition of a qualifying entity as defined in the Financial Reporting Standard 101
+“Reduced Disclosure Framework” (FRS 101). The financial statements of the Company have been prepared under the
+historical cost convention and in accordance with the Companies Act 2006 as applicable to companies using FRS 101.
+The preparation of financial statements in conformity with FRS 101 requires the use of certain critical accounting estimates. It
+also requires management to exercise its judgement in the process of applying the Company’s accounting policies. The areas
+involving a higher degree of judgement or complexity, or areas where estimates and assumptions are significant to the financial
+statements are disclosed in Note 3.
+The following exemptions from the requirements of International Financial Reporting Standards (“IFRS”) have been applied in
+the preparation of these financial statements, in accordance with FRS 101:
+e Paragraph 38 of IAS 1, “Presentation of financial statements” comparative information requirements in respect of:
+(i) paragraph 79(a)(iv) of IAS 1; and
+(ii) paragraph 73(e) of IAS 16 “Property, plant and equipment”. ny
+© The following paragraphs of [AS 1 “Presentation of financial statements”:
+* 10(d), (statement of cash flows),
+« 16 (statement of compliance with all IFRS),
+e 38A (requirement for minimum of two primary statements, including statements of cash flows),
+© 38B-D (additional comparative information),
+e 111 (statement of cash flows information), and .
+e 134-136 (capital management disclosures).
+e IAS 7, “Statement of cash flows”.
+e Paragraphs 30 and 31 of IAS 8 “Accounting policies, changes in accounting estimates and errors” (requirement for the
+disclosure of information when an entity has not applied a new IFRS that has been issued but is not yet effective).
+e Paragraph 17 of IAS 24, “Related party disclosures” (key management compensation).
+e Paragraph 18A of IAS 24, “Related party disclosures” (key management services provided by a separate management
+entity).
+¢ The requirements in IAS 24, “Related party disclosures” to disclose related party transactions entered into between two
+or more members of a group.
+2.1.1 Going concern
+The directors have a reasonable expectation that the Company has adequate resources to continue in operational existence for
+twelve months from the date of approval of these financial statements. Accordingly, they continue to adopt the going concern
+basis in preparing the annual report and financial statements.
+This conclusion is based on the continued financial support of the ultimate parent company, Manchester United plc. The
+directors have received confirmation that Manchester United plc will provide support to the Company for at least one year
+from the date of approval of these financial statements.
+: 11
+Manchester United Limited
+Notes to the financial statements - unaudited (continued)
+2 Summary of significant accounting policies (continued)
+2.1 Basis of preparation (continued)
+2.1.2. New and amended standards, interpretations and relevant disclosure requirements adopted by the Company
+No new accounting standards, or amendments to accounting standards, or IFRIC interpretations that are effective for the year
+ended 30 June 2025, have had a material impact on the Company’s financial statements.
+2.1.3 New and amended standards, interpretations and relevant disclosure requirements not yet adopted
+There are no other standards or interpretations that are not yet effective and that would be expected to have a material impact
+on the Company’s financial statements in the future reporting periods or on foreseeable future transactions.
+2.2. Consolidation
+The Company is a wholly owned subsidiary of Red Football Limited and of its ultimate parent undertaking and controlling
+party, Manchester United plc. It is included in the consolidated financial statements of Manchester United ple which can be
+obtained from the website www.manutd.com. Therefore the Company is exempt by virtue of section 400 of the Companies Act
+2006 from the requirement to prepare consolidated financial statements. The address of the ultimate parent undertaking’s
+principal executive office is Sir Matt Busby Way, Old Trafford, Manchester M16 ORA, United Kingdom.
+These financial statements are company only financial statements.
+2.3. Foreign currency translation
+(i) Functional and presentation currency .
+Items included in the financial statements of the Company are measured using the currency of the primary economic
+environment in which the Company operates (‘the functional currency’). The financial statements are presented in pounds
+sterling, which is the Company's presentation currency.
+(ii) Transactions and balances
+Foreign currency transactions are translated into the functional currency using the exchange rates prevailing at the dates of the
+transactions or valuation where settlements of such transactions and from the translation at year-end exchange rates items are
+re-measured. Foreign exchange gains and losses resulting from the settlement of monetary assets and liabilities denominated in
+foreign currencies are recognised in the statement of profit or loss within operating expenses.
+2.4 Employee benefits
+(O) Short-term obligations
+Liabilities for wages and salaries, including non-monetary benefits and annual leave that are expected to be settled wholly
+within 12 months after the end of the period in which the employees render the related service, are recognised in respect of
+employees’ services up to the end of the reporting period and are measured at the amounts expected to be paid when the
+liabilities are settled. The liabilities are presented as accruals and classified‘as current liabilities in the balance sheet.
+(ii) Post-employment pension obligations
+
+‘The Company operates a defined contribution scheme. The assets of the scheme are held separately from those of the
+Company in an independently administered fund. The Company’s contributions into this scheme are reflected within the
+statement of profit or loss when they fall due.
+2.5 Other income
+Other income represents royalties and centralised services recharged to other group undertakings.
+
+12
+

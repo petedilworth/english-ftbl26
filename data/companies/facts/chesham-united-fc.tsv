@@ -1,0 +1,77 @@
+club_id	company_number	document	filing_date	made_up_date	concept	prefix	kind	period_start	period_end	instant	dimensions	unit	value
+chesham-united-fc	01017530	YGIUYSEytiKQ0aMiq4tDH5CfC9o13KRCRUqfN2281-w	2025-03-26	2024-06-30	AccountingStandardsApplied	uk-bus	text	2023-07-01	2024-06-30		AccountingStandardsDimension=Micro-entities		
+chesham-united-fc	01017530	YGIUYSEytiKQ0aMiq4tDH5CfC9o13KRCRUqfN2281-w	2025-03-26	2024-06-30	AccountsStatusAuditedOrUnaudited	uk-bus	text	2023-07-01	2024-06-30		AccountsStatusDimension=AuditExempt-NoAccountantsReport		
+chesham-united-fc	01017530	YGIUYSEytiKQ0aMiq4tDH5CfC9o13KRCRUqfN2281-w	2025-03-26	2024-06-30	AccountsType	uk-bus	text	2023-07-01	2024-06-30		AccountsTypeDimension=FullAccounts		
+chesham-united-fc	01017530	YGIUYSEytiKQ0aMiq4tDH5CfC9o13KRCRUqfN2281-w	2025-03-26	2024-06-30	AverageNumberEmployeesDuringPeriod	uk-core	num	2022-07-01	2023-06-30			GBP	0
+chesham-united-fc	01017530	YGIUYSEytiKQ0aMiq4tDH5CfC9o13KRCRUqfN2281-w	2025-03-26	2024-06-30	AverageNumberEmployeesDuringPeriod	uk-core	num	2023-07-01	2024-06-30			GBP	0
+chesham-united-fc	01017530	YGIUYSEytiKQ0aMiq4tDH5CfC9o13KRCRUqfN2281-w	2025-03-26	2024-06-30	BalanceSheetDate	uk-bus	text		2024-06-30	1			30 June 2024
+chesham-united-fc	01017530	YGIUYSEytiKQ0aMiq4tDH5CfC9o13KRCRUqfN2281-w	2025-03-26	2024-06-30	Creditors	uk-core	num		2023-06-30	1	MaturitiesOrExpirationPeriodsDimension=AfterOneYear	GBP	150893
+chesham-united-fc	01017530	YGIUYSEytiKQ0aMiq4tDH5CfC9o13KRCRUqfN2281-w	2025-03-26	2024-06-30	Creditors	uk-core	num		2023-06-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	20281
+chesham-united-fc	01017530	YGIUYSEytiKQ0aMiq4tDH5CfC9o13KRCRUqfN2281-w	2025-03-26	2024-06-30	Creditors	uk-core	num		2024-06-30	1	MaturitiesOrExpirationPeriodsDimension=AfterOneYear	GBP	150893
+chesham-united-fc	01017530	YGIUYSEytiKQ0aMiq4tDH5CfC9o13KRCRUqfN2281-w	2025-03-26	2024-06-30	Creditors	uk-core	num		2024-06-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	23086
+chesham-united-fc	01017530	YGIUYSEytiKQ0aMiq4tDH5CfC9o13KRCRUqfN2281-w	2025-03-26	2024-06-30	CurrentAssets	uk-core	num		2023-06-30	1		GBP	44721
+chesham-united-fc	01017530	YGIUYSEytiKQ0aMiq4tDH5CfC9o13KRCRUqfN2281-w	2025-03-26	2024-06-30	CurrentAssets	uk-core	num		2024-06-30	1		GBP	77488
+chesham-united-fc	01017530	YGIUYSEytiKQ0aMiq4tDH5CfC9o13KRCRUqfN2281-w	2025-03-26	2024-06-30	DateAuthorisationFinancialStatementsForIssue	uk-core	text		2024-06-30	1			27 February 2025
+chesham-united-fc	01017530	YGIUYSEytiKQ0aMiq4tDH5CfC9o13KRCRUqfN2281-w	2025-03-26	2024-06-30	DirectorSigningFinancialStatements	uk-core	text	2023-07-01	2024-06-30		EntityOfficersDimension=Director1		
+chesham-united-fc	01017530	YGIUYSEytiKQ0aMiq4tDH5CfC9o13KRCRUqfN2281-w	2025-03-26	2024-06-30	DirectorSigningFinancialStatements	uk-core	text	2023-07-01	2024-06-30		EntityOfficersDimension=Director2		
+chesham-united-fc	01017530	YGIUYSEytiKQ0aMiq4tDH5CfC9o13KRCRUqfN2281-w	2025-03-26	2024-06-30	EndDateForPeriodCoveredByReport	uk-bus	text		2024-06-30	1			2024-06-30
+chesham-united-fc	01017530	YGIUYSEytiKQ0aMiq4tDH5CfC9o13KRCRUqfN2281-w	2025-03-26	2024-06-30	EntityCurrentLegalOrRegisteredName	uk-bus	text	2023-07-01	2024-06-30				CHESHAM UNITED ASSOCIATION FOOTBALL CLUB LIMITED
+chesham-united-fc	01017530	YGIUYSEytiKQ0aMiq4tDH5CfC9o13KRCRUqfN2281-w	2025-03-26	2024-06-30	EntityDormantTruefalse	uk-bus	text	2023-07-01	2024-06-30				false
+chesham-united-fc	01017530	YGIUYSEytiKQ0aMiq4tDH5CfC9o13KRCRUqfN2281-w	2025-03-26	2024-06-30	EntityTradingStatus	uk-bus	text	2023-07-01	2024-06-30				
+chesham-united-fc	01017530	YGIUYSEytiKQ0aMiq4tDH5CfC9o13KRCRUqfN2281-w	2025-03-26	2024-06-30	Equity	uk-core	num		2023-06-30	1		GBP	237944
+chesham-united-fc	01017530	YGIUYSEytiKQ0aMiq4tDH5CfC9o13KRCRUqfN2281-w	2025-03-26	2024-06-30	Equity	uk-core	num		2024-06-30	1		GBP	259985
+chesham-united-fc	01017530	YGIUYSEytiKQ0aMiq4tDH5CfC9o13KRCRUqfN2281-w	2025-03-26	2024-06-30	FixedAssets	uk-core	num		2023-06-30	1		GBP	364397
+chesham-united-fc	01017530	YGIUYSEytiKQ0aMiq4tDH5CfC9o13KRCRUqfN2281-w	2025-03-26	2024-06-30	FixedAssets	uk-core	num		2024-06-30	1		GBP	356476
+chesham-united-fc	01017530	YGIUYSEytiKQ0aMiq4tDH5CfC9o13KRCRUqfN2281-w	2025-03-26	2024-06-30	NameEntityOfficer	uk-bus	text	2023-07-01	2024-06-30		EntityOfficersDimension=Director1		Peter James BROWN
+chesham-united-fc	01017530	YGIUYSEytiKQ0aMiq4tDH5CfC9o13KRCRUqfN2281-w	2025-03-26	2024-06-30	NameProductionSoftware	uk-bus	text	2023-07-01	2024-06-30				Companies House
+chesham-united-fc	01017530	YGIUYSEytiKQ0aMiq4tDH5CfC9o13KRCRUqfN2281-w	2025-03-26	2024-06-30	NetAssetsLiabilities	uk-core	num		2023-06-30	1		GBP	237944
+chesham-united-fc	01017530	YGIUYSEytiKQ0aMiq4tDH5CfC9o13KRCRUqfN2281-w	2025-03-26	2024-06-30	NetAssetsLiabilities	uk-core	num		2024-06-30	1		GBP	259985
+chesham-united-fc	01017530	YGIUYSEytiKQ0aMiq4tDH5CfC9o13KRCRUqfN2281-w	2025-03-26	2024-06-30	NetCurrentAssetsLiabilities	uk-core	num		2023-06-30	1		GBP	24440
+chesham-united-fc	01017530	YGIUYSEytiKQ0aMiq4tDH5CfC9o13KRCRUqfN2281-w	2025-03-26	2024-06-30	NetCurrentAssetsLiabilities	uk-core	num		2024-06-30	1		GBP	54402
+chesham-united-fc	01017530	YGIUYSEytiKQ0aMiq4tDH5CfC9o13KRCRUqfN2281-w	2025-03-26	2024-06-30	StartDateForPeriodCoveredByReport	uk-bus	text		2024-06-30	1			2023-07-01
+chesham-united-fc	01017530	YGIUYSEytiKQ0aMiq4tDH5CfC9o13KRCRUqfN2281-w	2025-03-26	2024-06-30	StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime	uk-direp	text	2023-07-01	2024-06-30				The accounts have been prepared in accordance with the micro-entity provisions and delivered in accordance with the provisions applicable to companies subject to the small companies regime.
+chesham-united-fc	01017530	YGIUYSEytiKQ0aMiq4tDH5CfC9o13KRCRUqfN2281-w	2025-03-26	2024-06-30	StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies	uk-direp	text	2023-07-01	2024-06-30				For the year ending 30 June 2024 the company was entitled to exemption under section 477 of the Companies Act 2006 relating to small companies.
+chesham-united-fc	01017530	YGIUYSEytiKQ0aMiq4tDH5CfC9o13KRCRUqfN2281-w	2025-03-26	2024-06-30	StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct	uk-direp	text	2023-07-01	2024-06-30				The directors acknowledge their responsibilities for complying with the requirements of the Companies Act 2006 with respect to accounting records and the preparation of accounts.
+chesham-united-fc	01017530	YGIUYSEytiKQ0aMiq4tDH5CfC9o13KRCRUqfN2281-w	2025-03-26	2024-06-30	StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit	uk-direp	text	2023-07-01	2024-06-30				The members have not required the company to obtain an audit in accordance with section 476 of the Companies Act 2006.
+chesham-united-fc	01017530	YGIUYSEytiKQ0aMiq4tDH5CfC9o13KRCRUqfN2281-w	2025-03-26	2024-06-30	TotalAssetsLessCurrentLiabilities	uk-core	num		2023-06-30	1		GBP	388837
+chesham-united-fc	01017530	YGIUYSEytiKQ0aMiq4tDH5CfC9o13KRCRUqfN2281-w	2025-03-26	2024-06-30	TotalAssetsLessCurrentLiabilities	uk-core	num		2024-06-30	1		GBP	410878
+chesham-united-fc	01017530	YGIUYSEytiKQ0aMiq4tDH5CfC9o13KRCRUqfN2281-w	2025-03-26	2024-06-30	UKCompaniesHouseRegisteredNumber	uk-bus	text	2023-07-01	2024-06-30				01017530
+chesham-united-fc	01017530	YGIUYSEytiKQ0aMiq4tDH5CfC9o13KRCRUqfN2281-w	2025-03-26	2024-06-30	_GoingConcernMaterialUncertainty	derived	text						none found
+chesham-united-fc	01017530	wNpL2qZv8jC05ZE5eQrd1kfxRm8EO9CBgfk6yvCwx38	2025-10-20	2025-06-30	AccountingStandardsApplied	uk-bus	text	2024-07-01	2025-06-30		AccountingStandardsDimension=Micro-entities		
+chesham-united-fc	01017530	wNpL2qZv8jC05ZE5eQrd1kfxRm8EO9CBgfk6yvCwx38	2025-10-20	2025-06-30	AccountsStatusAuditedOrUnaudited	uk-bus	text	2024-07-01	2025-06-30		AccountsStatusDimension=AuditExempt-NoAccountantsReport		
+chesham-united-fc	01017530	wNpL2qZv8jC05ZE5eQrd1kfxRm8EO9CBgfk6yvCwx38	2025-10-20	2025-06-30	AccountsType	uk-bus	text	2024-07-01	2025-06-30		AccountsTypeDimension=FullAccounts		
+chesham-united-fc	01017530	wNpL2qZv8jC05ZE5eQrd1kfxRm8EO9CBgfk6yvCwx38	2025-10-20	2025-06-30	AverageNumberEmployeesDuringPeriod	uk-core	num	2023-07-01	2024-06-30			GBP	0
+chesham-united-fc	01017530	wNpL2qZv8jC05ZE5eQrd1kfxRm8EO9CBgfk6yvCwx38	2025-10-20	2025-06-30	AverageNumberEmployeesDuringPeriod	uk-core	num	2024-07-01	2025-06-30			GBP	2
+chesham-united-fc	01017530	wNpL2qZv8jC05ZE5eQrd1kfxRm8EO9CBgfk6yvCwx38	2025-10-20	2025-06-30	BalanceSheetDate	uk-bus	text		2025-06-30	1			30 June 2025
+chesham-united-fc	01017530	wNpL2qZv8jC05ZE5eQrd1kfxRm8EO9CBgfk6yvCwx38	2025-10-20	2025-06-30	Creditors	uk-core	num		2024-06-30	1	MaturitiesOrExpirationPeriodsDimension=AfterOneYear	GBP	150893
+chesham-united-fc	01017530	wNpL2qZv8jC05ZE5eQrd1kfxRm8EO9CBgfk6yvCwx38	2025-10-20	2025-06-30	Creditors	uk-core	num		2024-06-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	23086
+chesham-united-fc	01017530	wNpL2qZv8jC05ZE5eQrd1kfxRm8EO9CBgfk6yvCwx38	2025-10-20	2025-06-30	Creditors	uk-core	num		2025-06-30	1	MaturitiesOrExpirationPeriodsDimension=AfterOneYear	GBP	166393
+chesham-united-fc	01017530	wNpL2qZv8jC05ZE5eQrd1kfxRm8EO9CBgfk6yvCwx38	2025-10-20	2025-06-30	Creditors	uk-core	num		2025-06-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	23031
+chesham-united-fc	01017530	wNpL2qZv8jC05ZE5eQrd1kfxRm8EO9CBgfk6yvCwx38	2025-10-20	2025-06-30	CurrentAssets	uk-core	num		2024-06-30	1		GBP	77488
+chesham-united-fc	01017530	wNpL2qZv8jC05ZE5eQrd1kfxRm8EO9CBgfk6yvCwx38	2025-10-20	2025-06-30	CurrentAssets	uk-core	num		2025-06-30	1		GBP	110279
+chesham-united-fc	01017530	wNpL2qZv8jC05ZE5eQrd1kfxRm8EO9CBgfk6yvCwx38	2025-10-20	2025-06-30	DateAuthorisationFinancialStatementsForIssue	uk-core	text		2025-06-30	1			8 October 2025
+chesham-united-fc	01017530	wNpL2qZv8jC05ZE5eQrd1kfxRm8EO9CBgfk6yvCwx38	2025-10-20	2025-06-30	DirectorSigningFinancialStatements	uk-core	text	2024-07-01	2025-06-30		EntityOfficersDimension=Director1		
+chesham-united-fc	01017530	wNpL2qZv8jC05ZE5eQrd1kfxRm8EO9CBgfk6yvCwx38	2025-10-20	2025-06-30	DirectorSigningFinancialStatements	uk-core	text	2024-07-01	2025-06-30		EntityOfficersDimension=Director2		
+chesham-united-fc	01017530	wNpL2qZv8jC05ZE5eQrd1kfxRm8EO9CBgfk6yvCwx38	2025-10-20	2025-06-30	EndDateForPeriodCoveredByReport	uk-bus	text		2025-06-30	1			2025-06-30
+chesham-united-fc	01017530	wNpL2qZv8jC05ZE5eQrd1kfxRm8EO9CBgfk6yvCwx38	2025-10-20	2025-06-30	EntityCurrentLegalOrRegisteredName	uk-bus	text	2024-07-01	2025-06-30				CHESHAM UNITED ASSOCIATION FOOTBALL CLUB LIMITED
+chesham-united-fc	01017530	wNpL2qZv8jC05ZE5eQrd1kfxRm8EO9CBgfk6yvCwx38	2025-10-20	2025-06-30	EntityDormantTruefalse	uk-bus	text	2024-07-01	2025-06-30				false
+chesham-united-fc	01017530	wNpL2qZv8jC05ZE5eQrd1kfxRm8EO9CBgfk6yvCwx38	2025-10-20	2025-06-30	EntityTradingStatus	uk-bus	text	2024-07-01	2025-06-30				
+chesham-united-fc	01017530	wNpL2qZv8jC05ZE5eQrd1kfxRm8EO9CBgfk6yvCwx38	2025-10-20	2025-06-30	Equity	uk-core	num		2024-06-30	1		GBP	259985
+chesham-united-fc	01017530	wNpL2qZv8jC05ZE5eQrd1kfxRm8EO9CBgfk6yvCwx38	2025-10-20	2025-06-30	Equity	uk-core	num		2025-06-30	1		GBP	262972
+chesham-united-fc	01017530	wNpL2qZv8jC05ZE5eQrd1kfxRm8EO9CBgfk6yvCwx38	2025-10-20	2025-06-30	FixedAssets	uk-core	num		2024-06-30	1		GBP	356476
+chesham-united-fc	01017530	wNpL2qZv8jC05ZE5eQrd1kfxRm8EO9CBgfk6yvCwx38	2025-10-20	2025-06-30	FixedAssets	uk-core	num		2025-06-30	1		GBP	342117
+chesham-united-fc	01017530	wNpL2qZv8jC05ZE5eQrd1kfxRm8EO9CBgfk6yvCwx38	2025-10-20	2025-06-30	NameEntityOfficer	uk-bus	text	2024-07-01	2025-06-30		EntityOfficersDimension=Director1		Peter James BROWN
+chesham-united-fc	01017530	wNpL2qZv8jC05ZE5eQrd1kfxRm8EO9CBgfk6yvCwx38	2025-10-20	2025-06-30	NameProductionSoftware	uk-bus	text	2024-07-01	2025-06-30				Companies House
+chesham-united-fc	01017530	wNpL2qZv8jC05ZE5eQrd1kfxRm8EO9CBgfk6yvCwx38	2025-10-20	2025-06-30	NetAssetsLiabilities	uk-core	num		2024-06-30	1		GBP	259985
+chesham-united-fc	01017530	wNpL2qZv8jC05ZE5eQrd1kfxRm8EO9CBgfk6yvCwx38	2025-10-20	2025-06-30	NetAssetsLiabilities	uk-core	num		2025-06-30	1		GBP	262972
+chesham-united-fc	01017530	wNpL2qZv8jC05ZE5eQrd1kfxRm8EO9CBgfk6yvCwx38	2025-10-20	2025-06-30	NetCurrentAssetsLiabilities	uk-core	num		2024-06-30	1		GBP	54402
+chesham-united-fc	01017530	wNpL2qZv8jC05ZE5eQrd1kfxRm8EO9CBgfk6yvCwx38	2025-10-20	2025-06-30	NetCurrentAssetsLiabilities	uk-core	num		2025-06-30	1		GBP	87248
+chesham-united-fc	01017530	wNpL2qZv8jC05ZE5eQrd1kfxRm8EO9CBgfk6yvCwx38	2025-10-20	2025-06-30	StartDateForPeriodCoveredByReport	uk-bus	text		2025-06-30	1			2024-07-01
+chesham-united-fc	01017530	wNpL2qZv8jC05ZE5eQrd1kfxRm8EO9CBgfk6yvCwx38	2025-10-20	2025-06-30	StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime	uk-direp	text	2024-07-01	2025-06-30				The accounts have been prepared in accordance with the micro-entity provisions and delivered in accordance with the provisions applicable to companies subject to the small companies regime.
+chesham-united-fc	01017530	wNpL2qZv8jC05ZE5eQrd1kfxRm8EO9CBgfk6yvCwx38	2025-10-20	2025-06-30	StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies	uk-direp	text	2024-07-01	2025-06-30				For the year ending 30 June 2025 the company was entitled to exemption under section 477 of the Companies Act 2006 relating to small companies.
+chesham-united-fc	01017530	wNpL2qZv8jC05ZE5eQrd1kfxRm8EO9CBgfk6yvCwx38	2025-10-20	2025-06-30	StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct	uk-direp	text	2024-07-01	2025-06-30				The directors acknowledge their responsibilities for complying with the requirements of the Companies Act 2006 with respect to accounting records and the preparation of accounts.
+chesham-united-fc	01017530	wNpL2qZv8jC05ZE5eQrd1kfxRm8EO9CBgfk6yvCwx38	2025-10-20	2025-06-30	StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit	uk-direp	text	2024-07-01	2025-06-30				The members have not required the company to obtain an audit in accordance with section 476 of the Companies Act 2006.
+chesham-united-fc	01017530	wNpL2qZv8jC05ZE5eQrd1kfxRm8EO9CBgfk6yvCwx38	2025-10-20	2025-06-30	TotalAssetsLessCurrentLiabilities	uk-core	num		2024-06-30	1		GBP	410878
+chesham-united-fc	01017530	wNpL2qZv8jC05ZE5eQrd1kfxRm8EO9CBgfk6yvCwx38	2025-10-20	2025-06-30	TotalAssetsLessCurrentLiabilities	uk-core	num		2025-06-30	1		GBP	429365
+chesham-united-fc	01017530	wNpL2qZv8jC05ZE5eQrd1kfxRm8EO9CBgfk6yvCwx38	2025-10-20	2025-06-30	UKCompaniesHouseRegisteredNumber	uk-bus	text	2024-07-01	2025-06-30				01017530
+chesham-united-fc	01017530	wNpL2qZv8jC05ZE5eQrd1kfxRm8EO9CBgfk6yvCwx38	2025-10-20	2025-06-30	_GoingConcernMaterialUncertainty	derived	text						none found

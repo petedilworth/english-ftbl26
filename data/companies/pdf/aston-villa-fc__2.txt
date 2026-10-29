@@ -1,0 +1,441 @@
+source: Companies House filing, aston-villa-fc__2.pdf
+document: MWZRAHHZS5U0Iwyz88nt5qBSPwAX6DwU7EZ4gii6hp0
+made_up_date: 2024-06-30
+method: ocr
+pages_read: 12 of 30
+
+Registered number: 03375789
+ASTON VILLA FOOTBALL CLUB LIMITED
+ANNUAL REPORT AND FINANCIAL STATEMENTS
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2024
+& *ADZB7YR7* ;
+AOS 28/03/2025 #195
+COMPANIES HOUSE
+ASTON VILLA FOOTBALL CLUB LIMITED
+CONTENTS
+Page
+Company Information 4
+Strategic Report 2
+Directors’ Report 4
+independent Auditors’ Report to the Members of Aston Villa Fooibail Club Limited 8
+Statement of Comprehensive income 12
+Balance Sheet 13
+Statement of Changes in Equity 14
+Notes to the Financial Statements 48
+ASTON VILLA FOOTBALL CLUB LIMITED
+COMPANY INFORMATION
+Directors
+W R Edens
+N Sawiris
+M Angelakis
+C Hail
+B Lebada
+S L Watterson
+Company secretary
+B Schuurmans
+Registered number
+03376789
+Registered office
+Villa Park Trinity Road
+Aston
+Birmingham
+West Midlands
+B6 6HE
+Independent auditors
+PricewaterhouseCoopers LLP
+Chartered Accountants and Statutory Auditors
+One Chamberlain Square
+Birmingham
+B3 3AX
+1
+ASTON VILLA FOOTBALL CLUB LIMITED
+
+STRATEGIC REPORT
+
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2024
+
+The directors present the Strategic Report and the audited financial statements of Aston Villa Footbal! Ciub
+
+Limited (the "Company") for the 13 month period ended 30 June 2024.
+
+The Company has changed its accounting period from 31 May 2024 to 30 June 2024.
+
+Principal activities
+
+The Company is engaged in running the commercial activities of a professional football! club in the English
+
+Football League.
+
+Review of business
+
+The football season culminated in a final league place of 4th which meant the Club qualified to participate
+
+in the UEFA Champions League in the 2024/25 season, returning to the top European club completion for
+
+the first time in over 40 years. The Club will also again compete in the Premier League in the 2024/25 season.
+
+Turnover for the financial period amounted to £263,079,000 {year ended 31 May 2023: £204,526,000).
+
+Operating expenses amounted to £318,901,000 (year ended 34 May 2023: £320,275,000).
+
+The operating loss for the period amounted to £50,709,000 (year ended 31 May 2023: £115,749,000). The
+
+loss for the financial period of £49,425,000 (year ended 31 May 2023: £116,099,000) nas been deducted from
+
+reserves.
+
+Net liabilities at the period-end were £64,293,000 (31 May 2023: £14,874,000). The directors believe that
+
+preparing the financial statements an the going concern basis is appropriate due to the continued financial
+
+support of the ultimate parent company.
+
+Key performance indicators ("KP!s'}
+
+As a wholly owned subsidiary of the NSWE Sports Limited group, the directors do not consider that there are
+
+any informative KPls for the Company. A description of KPls for the NSWE Sports Limited group is included in
+
+the NSWE Sports Limited Strategic Report.
+
+Principal risks and uncertainties
+
+The key risk facing any club is the deterioration of on field performance and results. The board mitigates this ;
+
+risk to the best of its ability by providing the manager with first class training facilities and appropriate payroll &
+
+transfer budgets, and through generous support to the Academy. The acquisition of players and their related
+‘ payroll costs are deemed a core activity risk and, whist assisting the manager in improving the playing squad,
+
+the directors are mindful of the pitfalls that are inherent in this area of the business.
+
+Aston Villa Football Club Limited's management regularly review and monitor the Company's risks. .
+
+The principal risks and uncertainties of the NSWE UK Limited group are set out in the NSWE UK Limited's
+
+Strategic Report.
+
+2
+ASTON VILLA FOOTBALL CLUB LIMITED
+STRATEGIC REPORT (continued)
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2024
+Directors’ statement of compliance with duty to promote the success of the Company
+Section 172 of the Companies Act 2006 requires directors to take into consideration the interests of
+stakeholders in their decision making. The directors acknowledge their responsibility to act in a manner that
+protects the interests of all stakeholders.
+The Board of Directors have acted in a manner they consider most likely to promote the success of the
+Company for the benefit of its members and stakeholders in the decisions taken during the period.
+The key relationships of the business are those with its supporters, staff, local community, commercial
+sponsors and governing authorities and the Company engages proactively with these stakeholders to ensure
+good relationships are maintained.
+The relationships between the Company and other members of the Group are primarily guided by a
+Shareholder agreement. Further details of stakeholder engagement are set out in the Strategic Report of
+NSWE UK Limited Group financial statements.
+This report was approved by the board and signed on its behalf by:
+N Sawiris
+Director
+Date. 9 October 2024
+
+3
+ASTON VILLA FOOTBALL CLUB LIMITED
+DIRECTORS’ REPORT
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2024
+The directors present their annual report and the audited financiaf statements of Aston Villa Football Club
+Limited (the "Company") for the 13 month period ended 30 June 2024. ‘
+: Principal activities
+The principal activities of the Company are enclosed within the Strategic Report on page 2.
+Results and dividends :
+The loss for the financial period amounted to £49,425,000 (year ended 31 May 2023: £416,099,000).
+The directors have not declared or paid an interim dividend during the period (year ended 31 May 2023: £Nil).
+They da not recommend a final dividend (31 May 2023: ENG}.
+Directors
+The directors who served during the period and up io the date of signing the financial statements, unless
+otherwise stated, were:
+WR Edens
+CMC Pursiow (resigned 12 June 2023)
+N Sawiris
+; M Angelakis {appointed 12 April 2024)
+Cc Hall (appointed 12 April 2024)
+8B Lebada (appointed 12 April 2024)
+SL Watterson {appointed 12 April 2024)
+Directors’ and officers’ insurance
+Throughout the period and up to the date af signing of the financial statements, the Company maintains cover
+under a quahfying third-party indemnity for all directors and officer against liabilities which may be incurred by '
+them whilst acting as directors or officers.
+Future developments ,
+: The Company is a wholly owned subsidiary of the NSWE UK Limited group. A description of future ‘
+developments for the NSWE UK Limited group is included in the NSWE UK Limited's Directors‘ Report. |
+Going concern
+The directors have formed a judgement at the time of approving the financial statements that the Company :
+has adequate resources available to continue operating and to discharge all financial obligations as they falf
+due for a period of at least 12 months from the date of approval of the financial statements.
+The directors believe that preparing the financial statements on the going concern basis is appropriate due to .
+the continued financial support of the parent company NSWE UK Limited.
+The directors have received confirmation that NSWE UK Limited intends to support the Company for at least ‘
+412 months from the approval of these financial statements.
+4
+ASTON VILLA FOOTBALL CLUB LIMITED
+DIRECTORS’ REPORT (continued)
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2024
+Going concern (continued)
+Regarding the going concern assessment of the Group, the directors have prepared detailed cashflow
+forecasts for the Group to assess potential funding requirements for a period of 12 months from the signing of
+the Group financial statements. The forecasts model assumes continued availability of the banking overdraft
+facility provided to the Club by Barclays Bank Plc. The directors have made enquiries of Barclays Bank Plc
+over the continued provision of this facility for the going concern assessment period and received confirmation
+that there were no concerns in relation to it continuing to be made available.
+The directors are confident in their assumption that cash flow forecasts for 2024/25 should be based upon
+participation in the Premier League. As such various scenarios are modelled to provide a range of on field
+performances to assess the cashflow requirements for 12 months from the date of approval of the financial
+statements. Based upon current expectations and with the continued support of the Club's ultimate parent
+company, V Sports S.C.S., the Group are forecast to have sufficient resources to meet their liabilities to a
+period not shorter than 12 months from the date of approval of the financial statements.
+The directors are also confident that there are sufficient options available for the Club to mitigate additional
+funding requirements in the unlikely but mathematically possible event of a 17th place finish at the end of
+2024/25 season including the procurement of further support from V Sports S.C.S and the option to generate
+funds from the sale of players.
+Additionally, the directors would not commit to any further spend above the current forecasted levels,
+particutarly in relation to the acquisition of players, without first confirming availability of sufficient funding. As
+such, the directors do not consider there to be a material uncertainty in relation to the ability of the Club to
+continue as a going concern.
+The directors therefore believe that preparing the financial statements on the going concern basis is
+appropriate due to the continued financial support of the ultimate parent company V Sports S.C.S.
+Charitable contributions
+All fund-raising events are dealt with by the Aston Villa Foundation which is registered with the Charity
+Commission. There were no political contributions in the period (year ended 31 May 2023: £Nil).
+Financial risk management
+The financial risk management objectives and policies of the Group are fu'ly described in the 2024 annuat
+report of the holding company, NSWE UK Limited.
+Employees
+The Company continues its policy of keeping its employees informed on a regular basis of matters concerning
+them as employees and on financial and economic factors affecting the performance of the Company.
+
+5
+ASTON VILLA FOOTBALL CLUB LIMITED
+DIRECTORS’ REPORT (continued)
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2024
+Disabled persons
+The Company recognises its responsibility to employ disabled persons in suitable employment and gives full ;
+and fair consideration to applications for employment made by such persons, having regard to their particular
+aptitudes and abilities.
+Any employee who becomes disabted is encouraged to remain in the Company's empioyment, in the same
+job if this is practicable. lf a change of job is necessary, such an employee is considered for any suitable
+alternative work which is available and any necessary training is arranged.
+Disabled employees are treated equally with all ernployees in respect of their eligibility for training, career
+development and promotion.
+Streamlined Energy and Carbon Report (SECR)
+The Group Streamlined Energy and Carbon Report (SECR) are set out in the Strategic Report of NSWE UK
+Limited Group financial statements.
+Statement of directors’ responsibilities in respect of the financial statements
+The directors ara responsible for preparing the Annual Report and the financial statements in accordance with
+applicable law and regulation.
+Company law requires the directors to prepare financial statements for each financial year. Under that law the
+directors have prepared the financial statements in accordance with United Kingdom Generally Accepted
+Accounting Practice (United Kingdom Accounting Standards, comprising FRS 102 “The Financial Reporting
+Standard applicable in the UK and Repubiic of Ireland’, and applicable !aw). Under company law, directors
+must not approve the financial statements unless they are satisfied that they give a true and fair view of the
+state of affairs of the Company and of the profit or loss of the Campany for that period. In preparing the
+financial statements, the directors are required to:
++ select suitable accounting policies and then apply them consistently;
+* state whether applicable United Kingdom Accounting Standards, comprising FRS 102, have been followed,
+subject to any material departures disclosed and explained in the financial statements;
++ make judgements and accounting estimates that are reasonable and prudent; and
+* prepare the financial statements on the going concern basis uniess it is inappropriate to presume that the
+Company wil! continue in business.
+The directors are responsible for safequarding the assets of the Company and hence for taking reasonable
+Steps for the prevention and detection of fraud and other irregularities.
+The directors are also responsible for keep:ng adequate accounting records that are sufficient to show and
+explain the Company's transactions and disclose with reasonable accuracy at any time the financial position
+of the Company and enable them to ensure that the financial statements comply with the Companies Act
+2006.
+5
+ASTON VILLA FOOTBALL CLUB LIMITED
+
+DIRECTORS’ REPORT (continued)
+
+FOR THE 13 MONTH PERIOD ENDED 30 JUNE 2024
+
+Directors’ confirmations
+
+In the case of each director in office at the date the Directors' Report ts approved:
+
+* so far as the director is aware, there is no relevant audit information of which the Company's auditors are
+unaware; and
+
+* they have taken all the steps that they ought to have taken as a director in order to make themselves
+aware of any relevant aud-t information and to establish that the Company's auditors are aware of that
+information.
+
+Independent auditors
+
+Under section 487(2) of the Companies Act 2006, PricewaterhouseCoopers LLP will be deemed to have been
+
+teappointed as independent auditors 28 days after these financial statements were sent to members or 28
+
+days after the latest date prescribed for filing the financial stataments with the registrar, whichever is earlier.
+
+This report was approved by the board and signed on its behalf by:
+
+N Sawiris
+
+Director
+
+Date: 9 October 2024
+
+7
+ASTON VILLA FOOTBALL CLUB LIMITED
+
+INDEPENDENT AUDITORS’ REPORT TO THE MEMBERS OF ASTON
+VILLA FOOTBALL CLUB LIMITED
+
+Report on the audit of the financial statements
+
+Opinion
+
+in our opinion, Aston Villa Footbal) Club Limited's financia! statements:
+
++ give a true and fair view of the state of the Company's affairs as at 30 June 2024 and of its loss for the
+13 month period then ended;
+
+* fave been properly prepared in accordance with United Kingdom Generatly Accepted Accounting
+Practice (United Kingdom Accounting Standards, including FRS 102 “The Financial Reporting
+Standard applicable in the UK and Repubtc of ireland”, and applicable jaw); and
+
+* have been prepared in accordance with the requirements of the Companies Act 2006.
+
+We have audited the financial statements, included within the Annual Report and Financial Statements (the
+: *Annuat Report"), which comprise: the Balance Sheet as at 30 June 2024; the Statement of Comprehensive
+
+Income and the Statement of Changes in Equity for the period then ended; and the notes to the financial
+
+statements, which include a description of the significant accounting policies.
+
+Basis for opinion
+
+We conducted our audit in accordance with International Standards on Auditing (UK) (“ISAs (UK)") and
+
+applicable law. Our responsibilities under ISAs (UK) are further described in the Auditors’ responsibilities for
+
+the audit of the financial statements section of our report. We believe that the audit evidence we have
+
+obtained is sufficient and appropriate to provide a basis for our opinion.
+
+independence
+
+We remained independent of the Company in accordance with the ethical requirements that are relevant to
+
+our audit of the financial statements in the UK, which includes the FRC's Ethical Standard, and we have
+
+fulfilled our other ethical responsibilities in accordance with these requirements.
+
+Conclusions relating to going concern
+
+Siased on the work we have performed, we have not identified any material uncertainties relating to events os
+
+conditions that, individually ar collectively, may cast significant doubt on the Company's ability to continue as a
+
+going concern for a period of at least twelve months from when the financial statements are authorised for
+
+issue.
+
+in auditing the financial statements, we have concluded that the directors’ use of the going concern basis of
+
+accounting in the preparation of the financial statements is appropriate.
+
+However, because not ail future events or conditions can be predicted, this conclusion is not a guarantee as to
+
+the Company's ability to continue as a going concern.
+
+Our responsibilities and the responsibilities of the directors with respect to going concern are described in the
+
+relevant sections of this report.
+
+8
+ASTON VILLA FOOTBALL CLUB LIMITED
+INDEPENDENT AUDITORS’ REPORT TO THE MEMBERS OF ASTON
+VILLA FOOTBALL CLUB LIMITED (continued)
+Reporting on other information
+The other information comprises all of the information in the Annual Report other than the financial statements
+and our auditors’ report thereon. The directors are responsible for the other information. Our opinion on the
+financial statements does not cover the other information and, accordingly, we do not express an audit opinion
+or, except to the extent otherwise explicitly stated in this report, any form of assurance thereon.
+In connection with our audit of the financial statements, our responsibility is to read the other information and,
+in doing so, consider whether the other information is materially inconsistent with the financial statements or
+our knowledge obtained in the audit, or otherwise appears to be materially misstated. if we identify an
+apparent material inconsistency or material misstatement, we are required to perform procedures to conclude
+whether there is a material misstatement of the financial statements or a material misstatement of the other
+information. If, based on the work we have performed, we conclude that there is a material misstatement of
+this other information, we are required to report that fact. We have nothing to report based on these
+responsibilities.
+With respact to the Strategic Report and Directors’ Report, we also considered whether the disclosures
+required by the UK Companies Act 2006 have been included.
+Based on our work undertaken in the course of the audit, the Companies Act 2006 requires us also to report
+certain opinions and matters as described below.
+Strategic Report and Directors’ Report
+In our opinion, based on the work undertaken in the course of the audit, the information given in the Strategic
+Report and Directors’ Report for the period ended 30 June 2024 is consistent with the financial statements
+and has been prepared in accordance with applicable legal requirements.
+In light of the knowledge and understanding of the Company and its environment obtained in the course of the
+audit, we did not identify any material misstatements in the Strategic Report and Directors’ Report.
+Responsibilities for the financial statements and the audit
+Responsibilities of the directors for the financial statements
+As explained more fully in the Statement of directors’ responsibilities in respect of the financial statements, the
+directors are responsible for the preparation of the financial statements in accordance with the applicable
+framework and for being satisfied that they give a true and fair view. The directors are also responsible for
+such internal contro! as they determine is necessary to enable the preparation of financial statements that are
+free from material misstatement, whether due to fraud or error.
+{n preparing the financial statements, the directors are responsible for assessing the Company's ability to
+continue as a going concern, disclosing, as applicable, matters related to going concern and using the going
+concern basis of accounting unless the directors either intend to liquidate the Company or to cease
+operations, or have no realistic alternative but to do so.
+
+9
+ASTON VILLA FOOTBALL CLUB LIMITED
+INDEPENDENT AUDITORS’ REPORT TO THE MEMBERS OF ASTON
+VILLA FOOTBALL CLUB LIMITED (continued)
+Auditors’ responsibilittes for the audit of the financial statements
+Our objectives are to obtain reasonabie assurance about whether the financial statements as a whole are free
+from material misstatement, whether due to fraud or error, and to issue an auditors’ report that includes our
+opinion. Reasonable assurance is a high level of assurance, but is not 4 guarantee that an audit conducted in
+accordance with ISAs (UK) will always detect a material misstatement when it exists. Misstatements can arise
+from fraud or error and are considered material if, individually or in the aggregate, they could reasonably be
+expected fo influence the economic decisions of users taken on the basis of these financial statements.
+irregularities, including fraud, are instances of non-compliance with taws and regulations. We design
+. procedures in line with our responsibilities, outlined above, to detect material misstatements in respect of
+irregutarsties, including fraud. The extent to which our procedures are capable of detecting irregularities,
+including fraud, is detailed below.
+Based on our understanding of the Company ard industry, we identified that the principal risks of non- :
+compliance with laws and regulations related to Profit and Sustainability Rules (PSR) of the FA Premier
+League, and we considered the extent to which non-compliance might have a material effect on the financial
+statements. We also considered those Jaws and regulations that have a direct impact on the financial
+statements such as taxation legisiation and the companiess Act 2006. We evaluated management's incentives
+and opportunities for fraudulent manipulation of the financial statements (including the risk of override of
+controls), and determined that the principal risks were related to journal entries to improve the reported
+financia! positon or performance of the business and management bias in accounting estimates and
+\ judgements. Audit procedures performed by the engagement team included:
+» Discussions with management and the in house legal team in relation to known or suspected
+instances of non-compliance with laws and regulation and fraud;
++ — Identifying and testing journal entries through a risk based approach, in particular any journal entries
+' posted with unusual account combinations;
++ Reviewing accounting estimates for evidence of b.as and validating the support behind these
+estimates which has been provided by management,
+« Reviewing financial statement disclosures and testing to appropriate supporting documentation to
+assess compliance with accounting standards and applicable laws and regutations;
++ Reviewing PSR calculations and correspondence with the FA Premier League with respect to PSR
+submission; and
++ Incorporating elements of unpredictability into the nature, timing and extent of testing.
+There are inherent limitations in the audit procedures described above. We are less likely to become aware of
+instances of non-compliance with jaws and regulations that are not closely related to events and transactions
+reflected in the financia) statements. Also, the risk of not detecting a material misstatement due to fraud is
+higher than the risk of not detecting one resulting from error, as fraud may nvolve deliberate concealment by,
+for example, forgery or intentional misrepresentations, or through collusion.
+A further description of our responsibilities for the audit of the financial statements is located on the FRC's
+website at: www.frc.org.uk/auditorsresponsibilities. This description forms part of our auditors" report.
+Use of this report
+This report, including the opinions, has been prepared for and only for the Company's members as a body in
+accordance with Chapter 3 of Part 16 of the Companies Act 2006 and for no other purpose. We do not, in
+giving these opinions, accept or assume responsibility for any other purpose or to any other person to whom
+this report is shown or into whose hands it may come save where expressly agreed by our prior consent in
+writing.
+10
+

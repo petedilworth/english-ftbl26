@@ -1,0 +1,477 @@
+source: Companies House filing, newcastle-united-fc__2.pdf
+document: wY85DW8nRJcDAED7nM2RosNsRq9KIalVXGGR32pB2xY
+made_up_date: 2024-06-30
+method: ocr
+pages_read: 12 of 48
+
+a Ff evocunn
+Newcastle United Limited 7 .
+Financial statements for the year ended 30 June 2024
+Company information .
+Company registration number: 02529667
+Registered office: St. James Park :
+NEWCASTLE UPON TYNE
+NE1 4ST
+Directors: Y O Al-Rumayyan
+AA Alhagbani
+J A Reuben
+AMA Rezeeq
+J F Solis Patino .
+. R Thornton :
+Bankers: HSBC UK Bank ple
+2-4 Floor
+Landmark
+. St Peter’s Square
+1 Oxford Street .
+Manchester
+. M1 4BP
+Deutsche Bank AG
+1 Great Winchester Street :
+London ,
+: EC2N 2DB :
+Independent Auditor: RSM UK Audit LLP
+Statutory Auditors :
+Chartered Accountants
+25 Farringdon Street
+London EC4A 4AB
+. Newcastle United Limited : :
+: Financial statements for the year ended 30 June 2024
+Index to the financial statements
+
+Group strategic report 1-8
+Directors’ report ; 9-11
+Independent auditor's report 12-14
+
+. a Consolidated statement of comprehensive income 15
+Consolidated statement of financial position 16 .
+Consolidated statement of changes in equity 17 oo.
+Company statement of financiat position 18 ,
+Company statement of changes in equity 19
+Consolidated statement of cash flows © 20
+Notes to the financial statements 21-45
+Newcastle United Limited 1 .
+Financial statements for the year ended 30 June 2024
+Group strategic report .
+Principal activities and business review
+The Directors present the Group’s strategic report for the year ended 30 June 2024.
+The principal activities of the Group during the year were the operation of professional football clubs together with
+related and ancillary activities.
+The Group has continued its on and off the pitch progress and growth in the 2023/24 season driven by the vision
+and investment provided by the shareholders led by PIF. These reports and accounts set out a brief summary of the
+substantial progress made by the Group in the year delivering substantial revenue growth, continued strong on pitch
+. performance and further strengthening of the Group’s underlying organisational capacity.
+The Directors report a loss after tax for the year of £11.1m (2023: loss £71.8m restated), a substantial reduction in
+the loss from the last 2 financial years. The Club has generated significant revenue growth from participation in the
+UEFA Champions League (“UCL”) alongside an enhanced profit on player trading, partially offset by further ,
+investment into the playing squad and in the Club’s operational performance.
+. UCL participation and growth across key sponsorship and commercial income streams contributed towards a profit
+: of £28.8m before player amortisation & impairment (2023: profit of £21.6m restated). Player amortisation &
+impairment costs rose to £97.5m (2023: £89.3m) in line with the increased value of the playing squad offset by an
+increase in the Profit on Disposal of players and staff registrations of £69.8m (2023 £2.8m).
+The continuation of investment into the team to improve its competitive position and to develop the Group’s
+infrastructure has led to further improvements in the Group’s commercial revenues and overall financial
+performance. : :
+On the pitch, the men’s team were drawn in a very challenging UCL Group and did not progress further than the
+Group Stages and finished 7® in the Premier League. The team also reached both the EFL and FA Cup Quarter Finals,
+the first time that has been achieved in the same season in 20 years. Average crowds at St James’ Park continued to
+exceed 52,000 — the Club’s incredible support and match day atmosphere is a major aid to the team’s on pitch
+performance.
+Newcastle United Women who, with significant investment, turned full time professional in the summer of 2023,
+. secured their second consecutive promotion, winning the FA Northern Premier League at the 1* attempt, and are
+: playing in the FA Women’s Championship in 2024-25.
+The Club continued to invest in its operations and assets to grow revenue and improve performance. The Club entered
+into several new commercial partnerships including an innovative shirt sponsorship deal with Sela. Working together
+Sela and the Club produced some outstanding activations including “Unsilence the Crowd” with the Royal National
+Institute for the Deaf which garnered much positive press coverage and praise. An investment of £4m into
+improvements to certain Hospitality lounges at St James Park significantly enhanced hospitality revenue and May 24 saw
+. the successful launch of the Club’s inhouse retail operation driven by its new kit partnership with Adidas after many
+years of having outsourced the retail operations and sales.
+The Club invested into the construction of the ‘St James STACK, powered by Sela’(‘STACK”) fan park which opened
+in early August 24 and is already enhancing the food and beverage experience in Newcastle. .
+Further investments were also made into the First Team and Academy Training Grounds to continue to develop them
+to match the Club’s ambitions. During the year Dan Ashworth left to join Manchester United after the agreement of
+compensation between the two clubs and, subsequent to the year end, Paul Mitchell replaced him in the role of Sporting
+Director. The Executive team has also been strengthened with Brad Miller joining as Chief Operating Officer. Overall
+employee numbers also continued to grow across all areas of the club (see note 7) as the Group expanded its operations
+to meet the enhanced performance standards being set.
+After the year end Amanda Staveley stepped down from the Board of Directors of the Group and divested her
+: shareholding in the Group. Roger Thornton and Jacobo Solis joined the Board. :
+: Newcastle United Limited . : 2
+Financial statements for the year ended 30 June 2024
+Group strategic report
+The Group’s key financial performance indicators are listed below:
+2024 2023 Inc/(Dec)
+Restated*
+: ‘Turnover £320.3m £250.3m £70.0m
+Operating profit before amortisation & impairment £28.8m £21.6m £7.2m
+Operating profit/(loss) £1.2m (£64.9m) £66.1m
+Loss after tax . £(11.1m) (£71.8m) £60.7m
+Staff costs to turnover ratio 68.3% 74.0% (5.7%)
+Cash at year end £15.4m £13.4m
+Average home league attendance : 52,115 52,205
+" League position 7th 4th
+*as detailed on page 21 the Group has amended its accounting policy for loyalty bonus accounting, and the 2023
+prior year results have been restated to be consistent with this amended policy.
+Financial overview ;
+Turnover increased £70.0m (28%) from £250.3m to £320.3m, with significant increases across the majority of the
+main revenue streams. An analysis by category is shown in Note 4 on page 32, with the principal movements
+explained below.
+. Match income increased £12.2m (32%) from £37.9m to £50.1m, including 3 home UCL fixtures which
+: significantly increased the home revenue and with 1 home and 6 away domestic cup fixtures played in the :
+year (2022-23: 7 fixtures)
+. Media income (excluding UEFA distributions) fell £11.5m (7%) from £165.5m to £154.0m. The merit
+award decreased in line with the club’s 7 place finish in the league (2022-23: 4") and the number of live TV
+appearances decreased to 24 (2022-23: 26).
+. UEFA Champions League distributions amounted to £29.8m (2022-23 {nil).
+. : . Commercial income increased £39.7m (90%) from £43.9m to £83.6m with growth in the club’s main
+commercial partnerships income from new and enhanced deals with Sela, Noon, Fenwick, InPost and
+. Adidas all contributing to the rise in revenue. The release of the four part documentary ‘We Are Newcasde
+: . United’ on Amazon Prime in August 23 together with changes in the operating and financial models for the
+Club’s retail and catering activities all contributed to the overall increase in Commercial income.
+Operating expenses for the year increased £62.9m (28%) to £291.5m (2023 £228.6m). The main components of
+those costs are as follows:
+Staff costs increased £33.6m (18%) from £185.1m to £218.7m, the main factors being an increase in first team squad
+costs, along with an increase of c115 employees across the club (see note 7) as the development of a fit for purpose
+operational structure continues across football operations, commercial teams, executive and central support
+functions. :
+Other operating expenses rose £27.7m (69%) from £40.1m to £67.8m, the majority of the increase being in line with
+. increased revenues (see Match income and Commercial income above) and the development of departments across
+the club also referenced above.
+The net effect of the above is an improvement in operating profit before player amortisation and impairment to
+£28.8m from £21.6m in 2023. :
+. Amortisation increased by £9.9m from £86.8m to £96.7m, reflecting a full year impact of January 2023 player spend,
+together with additions in Summer 2023 including Barnes, Tonali, Livramento and Hall. There were impairment
+charges of £0.8m in the year (2023: £2.5m).
+Profit on disposal of players’ and staff registrations totalled. £69.8m (2023: £2.8m) mainly arising from the sales of
+Anderson, Minteh and Saint-Maximin. . .
+Newcastle United Limited , 3 .
+Financial statements for the year ended 30 June 2024
+Group strategic report
+The net interest cost increased £5.4m to £12.3m (2023: £6.9m). The Group operates a term loan facility of £50m
+and a revolving loan facility of £25m with HSBC UK Bank Plc and Deutsche Bank AG, both of which bear interest
+at market rates which have increased over the period. Utilisation of these facilities resulted in an interest charge of
+, £5.8m (2023: £3.7m). In addition a net (notional) interest charge of £7.2m (2023: £4.2m) arose from the unwinding
+of the notional discounts on deferred player trading payments and receipts, the increase reflecting the player :
+acquisitions during the year together with an increase in the Group’s cost of capital arising from increases in Bank of
+England base rates.
+The Group incurred a reduced loss before and after tax of £11.1m (2023: Loss: £71.8m before tax increasing to
+£71.9m after a taxation charge of £0.1m).
+Net assets increased £85.9m to £248.3m at 30 June 2024 (30 June 2023: £162.4m):
+© Intangible assets increased £87.8m to £350.0m (30 June 2023: £262.2m) as a result of the player acquisitions
+referenced above. ,
+¢ Investment into the stadium, First Team Training Ground and STACK accounted for the majority of the .
+£16.4m tangible fixed asset additions.
+¢ Current assets increased from £56.9m to £169.6m mainly due to transfer fees receivable at year end.
+© Current liabilities increased from £120.5m to £195.3m driven amongst other reasons by an increase in transfer
+fees payable within 12 months
+© Creditors falling due after more than one year increased from £107.7m to £140.4m, mainly due to transfer fees
+payable at year end.
+¢ Provisions increased from £5.1m to £23.1m, being the net result of new provisions required in relation to
+player acquisitions in the year and onerous employment contracts and amounts utilised and/or released during
+the year. :
+_ Cashflow
+’ The Group had a net cash inflow of £2.0m in the year (2023: net cash inflow of £8.4m). Cash generated from
+operating activities of £27.9m (2023: cash used £3.0m) together with equity funding received of £97m (2023:
+£127.4m equity funding plus £50.0m term loan) was invested into the acquisition of intangible and tangible assets
+totalling £126.3m (2023: £167.6m). The year end cash balance was £15.4m (2023: £13.4m)
+Section 172 Statement :
+Section 172 of the Companies Act 2006 requires directors to take into consideration the interests of all stakeholders
+in promoting the success of the Group and, in doing so, have regard to a range of matters in their decision making
+including:
+e the likely long term consequences;
+¢ the interests of the Group’s employees;
+© the need to foster the Group’s business relationships with suppliers, customers and others;
+© the impact of the Group’s operations on the community and the environment;
+e the reputation for a high standard of business conduct; and
+© the need to act fairly as between members of the Group . -
+The Board schedules at least 4 meetings a year and additional meetings are held as required to approve transactions
+with short timescales. The Group has four standing committees: Nomination and Remuneration, Executive,
+Football, and Audit, Risk and Compliance. The Board has delegated certain powers and responsibilities to each of
+these committees. Decision making powers across the Group are defined in a formal Delegation of Authority
+framework, and the Club’s Executive, Commercial, Finance and Legal teams have weekly calls with various .
+representatives of the ownership groups to facilitate the appropriate governance over decision making.
+The Directors have identified the Group’s key stakeholder groups - Local, national and international supporters,
+Employees, Community, Business Partners and Shareholders— and understand their duty to each.
+. Newcastle United Limited 4
+Financial statements for the year ended 30 June 2024
+Group strategic report
+Long Term consequences of decisions :
+The Club has a long term strategy defining the Shareholders’ and Board’s ambitions for the Group. This strategy
+takes into account the long term impact of each major decision the Group is making on the range of stakeholders as
+"set out below. The Board considers all the relevant impacts in making decisions reviewed through both the
+considerations of the Board and its subsidiary committees which may be involved when a decision is made based on
+the Club’s Governance Structure.
+Reputation for high standard of business conduct
+The Company Board has set out policies and processes which require it to operate in accordance with best standards
+of corporate governance. These polices cover areas such as:.
+e The operation of an Audit and Risk Committee with powers delegated by the Board to oversee the risk
+position of the Club; :
+© Policies to minimise risk of the Club engaging with companies or individuals involved in Corporate
+corruption and money laundering :
+© The implementation of a Tax Strategy which defines a low risk approach to Tax compliance and the
+implementation of policies to minimise the risk of the Club engaging with companies or individuals
+involved in Tax evasion or Fraud;
+* The Clubs public commitment to the UN Climate Change for Sport goals.
+© The implementation of a public strategy to minimise the risk of the Club engaging with companies or
+individuals involved in Modern Slavery.
+e Accreditation of the Club as a living wage foundation accredited employer. :
+Supporters .
+Newcastle United’s supporters are at the core of all the Club’s activities and are the Club’s largest group of customers.
+
+. The Club is committed to collaborative, constructive and consistent engagement with supporters, wherever they may be,
+ensuring fans have an opportunity to inform the club’s decision-making at all levels. The Club’s Fan Advisory Board
+was constituted during the year, holding its first meeting in February 2024. The board of nine elected supporter
+members serves as a direct linkage between the Club’s management and fans, meeting with the Club at least three times
+
+"a year, to consult on major issues impacting the Club and its supporters.
+In addition, the Club has also undertaken large scale in person and online fans forums to update the fan base on Club :
+developments as well as numerous smaller consultations with fan groups in a variety of ways, including in person
+. workshops on a range of issues as well as online meetings and broader consultations.
+The Club undertook a major consultation on the future of St James Park with CAA Icon undertaking a survey of
+attitudes and interest which received over 18,000 responses from the Club’s Fans. This consultation is informing the
+Clubs initial review of its strategic options. :
+The Club has also worked in consultation with fans to deliver several initiatives over the past 12 months to improve the
+supporter experience at St. James’ Park including the introduction, of licensed safe standing following a supporter
+consultation process reaching more than 4,000 fans. Digital ticketing was introduced to bring St James’ Park in line with
+other world class arenas. Ticket ballots were also introduced for season tickets holders and members to give greater
+matchday access for a wider range of fans and after consulting with the Fanbase this has been slightly enhanced for ~
+season 24/25 with 20% of tickets being sold on a 1* come 1* served basis. The St James STACK Fanzone on
+Strawberry Place was constructed during the year which successfully opened in August 2024 creating a great new venue
+for fans to congregate. Monthly meetings with individual supporters and groups including Newcastle United Supporter
+
+: Trust (NUST) and Newcastle United Disabled Supporters Association (NUDSA) continue to be held. The Club also is
+
+developing its international fan base with a process of recognising and engaging with international fan groups.
+Newcastle United Limited : 5 .
+Financial statements for the year ended 30 June 2024 .
+Group strategic report .
+Customers
+As noted above the Club’s fans are the largest Group of customers for the Club, in areas such as ticketing, hospitality
+membership and retail. The Club also has larger corporate customers in areas such as commetcial sponsorship. In all
+these areas the Club strives to: .
+© Provide services and products to the appropriate standards and quality;
+© — Set pricing in a fair and transparent way;
+© = Work with the Clubs Fans and customers to develop the Clubs products, facilities and offerings to enhance *
+the customer experience;
+/@ — Provide access to high demand products in ways which balances the interests of long term loyal customers and
+new customers;
+* Work with customers to provide equitable payment terms which both protect the Club but allow customers to
+spread the cash impact such as season ticket holder direct debit payment schemes.
+@ = The Club works with its commercial partners towards building strong and enduring relationships which add ,
+value to both parties. :
+Employees’
+Newcastle United’s success is built on the hard work, passion, collaboration and self-discipline of its people and it is
+these values which define the organisation. The Groups' commitment to its employees is to ensure its values guide all
+parts of an employee journey through recruitment, induction, development, progression and recognition. The Club
+strives to be inclusive, supportive and trusted and to engage with employees through regular events, internal
+communications, Employee Forum and values-based recognition. The Group focuses on wellbeing including providing -
+access to healthcare services, independent counselling and wellbeing resources as well as working with partner
+agencies. The Club is an Accredited Living Wage Employer, and its total reward offers are independently benchmarked
+to ensure fairness and consistency, and to aid attraction and retention. .
+Community
+Newcastle United is uniquely a club at the heart of its community and plays a key role in the North East, working in .
+partnership with Newcastle United Foundation and in collaboration with local councils, businesses and agencies to
+support delivery of community programmes. Using the power of football to connect, motivate and inspire people,
+Newcastle United Foundation delivers education, health and wellbeing, employability and sports programmes across the
+region, and in 2023/24 supported almost 70,000 people through outreach work and at NUCASTLE, its world class :
+: community hub located five minutes’ walk from St. James’ Park. Club employees are supported to volunteer through
+Foundation and community programmes and the club works closely with supporter groups, who are part of the
+Newcastle United family.
+The Club’s investment into the St James’ STACK has created a vibrant community asset and has generated over 165
+jobs in the City whilst partnering with a number of local food providers to support the local business community.
+, Newcastle United is a Gold Partner of NewcastleGateshead Initiative, taking a seat on the destination marketing
+organisation’s strategic board. Through this relationship the club actively supports the region’s economic ambitions
+to increase inbound tourism and investment to the region. The Club continues to work with regional stakeholders to
+identify opportunities to host special sporting, cultural and business events at St. James’ Park, with many world class
+events successfully delivered, returning in subsequent years. :
+The Club’s delivers its EDI commitments under its Diversity and Inclusion brand “United as One”. The Club actively
+seeks out new additions to the Newcastle United family to enable it to increase its diversity and to better reflect the
+communities it serves. The Club works with a broad range of partners, supporter and community groups in the EDT
+space and recently hosted Unite for Access, Show Racism the Red Card and Iftar events at our Stadium. Newcastle :
+United are proud signatories to the Football Leadership Diversity Code and have achieved the Premier League’s
+Equality, Diversity and Inclusion standard at Intermediate Level.
+. Newcastle United Limited ‘ 6
+Financial statements for the year ended 30 June 2024 :
+Group strategic report
+Business relationships
+The Group recognises the importance of strong business relationships with its suppliers and other stakeholders, and
+also the need to be seen to be upholding high standards of compliance and business conduct. When significant
+decisions are made Newcastle United considers the impact on its business partners, suppliers, its repucation and how
+its decisions will impact all its key stakeholders.
+The Group has historically had strong local business relationships which it continues to value, and is now building a
+commercial team who will continue to develop the reladonships which are vital in supporting its global ambitions.
+The group has relationships with commercial and business partners at local and national levels which it values and
+continues to develop and intends to also grow at an international level, building engagement with fans and other
+business partners for mutual impact. Local networks provide a high level of engagement with the club and form a
+key part of the club’s supply chain, particularly in areas such as stadium maintenance and IT.
+The Club is also a Partner Member of the North East Chamber of Commerce to ensure a presence at regional
+networking opportunities. Newcastle United has recently launched its own Business Club, which will give
+organisations the opportunity to establish closer links with the club.
+Streamlined Energy and Carbon Reporting (SECR) :
+The Group is committed to ensuring all activities are managed in a sustainable way and with minimal environmental
+. impact. :
+As part of the annual Streamlined Energy and Carbon Reporting (SECR) requirements the following table details the ; .
+carbon emissions used per scope area (full scope 3 emission calculation is not necessary for SECR but is currently being
+calculated and will be available for future reports ,
+po Fear ended 30 June 2024 | Year ended 30 June 2023 |
+Energy Usage | Greenhouse Energy Usage | Greenhouse
+(kWh) © Gas Emissions | (kWh) Gas Emissions
+. CO 2¢) tCO2e)
+employee owned vehicles
+turnover)
+The Group has chosen tonnes of carbon emitted per {million turnover for its Intensity Ratio.
+External consultants used collected data from supplier invoices, fuel usage and mileage records, in line with the
+methodology set out in the GHG Protocol — Corporate Standard and the Energy Managers Association guidance. UK
+; Government GHG Conversion factors for Company Reporting for 2023 were used in the conversion of transport and
+other fuels into kWh and CO2e. Data collected confirms the Group’s highest consuming area is St James’ Park, totalling
+81.62% of the overall tCO2e emissions. .
+The Group has continued to make extensive progress with LED lighting, primarily at St James’ Park, where twenty
+areas have benefited from upgrades which are estimated to save over {3k annually. Variable Speed Drives (VSD) have
+been installed onto Air Handling Units (AHU). Prior to installation, AHUs on site were running 112 hrs pr week at
+- 100% speed. Post installation this reduced to 70% providing a reduction in energy consumption. Three Potterton
+130kW boilers were installed in December 2023 to the South West plant room at St James’ Park. These boilers have a
+gross seasonal efficiency of up to 97.3% which is significantly higher than the end of life boilers they replaced.
+Newcastle United Limited : 7 .
+Financial statements for the year ended 30 June 2024
+Group strategic report
+The Sustainability agenda has moved forward significantly during the year under review with several initiatives
+implemented:
+© Installation of new recycling bins in offices across all three of the Group’s sites to increase separation of waste
+at source and improve recycling rates. .
+e — Staff participation in litter picks within the local community.
+© ‘Meat free Monday’ staff lunches at the stadium and plans to install a kitchen garden at the Training Ground to
+supply the kitchens at that site.
+© — Installation of a new waste compactor, and utilisation of the telemetry system to automatically call off when a
+compactor needs emptying rather than having scheduled weekly collections.
+¢ Completion and submission of the Energy Saving and Opportunity Scheme report to comply with the
+Environment Agency deadline.
+© Completion of the Club’s carbon footprint, including Scopes 1, 2 and 3. This work is a continual process, and
+the footprint will be completed annually to measure improvement.
+¢ Support for North East Community Forests with monetary and volunteering contributions to plant an orchard
+garden within a local village.
+© Appointment of external consultants to implement a dedicated energy monitoring system within the stadium
+with multiple metering positions to provide granular electricity consumption details.
+, e Continued support of the ‘Magpie Mover’ ticket which offers discounted match day travel, the Marketing team
+. re-designed the ticket and carried out promotions on match days through the programme and in stadia screens.
+© Worked collaboratively with Newcastle City Council and transport providers to give all fans attending the
+men’s and women’s games over the weekend of the 10th /11th February 2024 free travel on Tyne & Wear
+. Metro and local bus services. The City Council reported a reduction in car park occupancies and increase in bus
+. passenger numbers over the weekend.
+
+Principal risks and uncertainties
+
+There are a number of key business risks and uncertainties which could materially impact on the Group’s performance.
+
+The Board regularly reviews and monitors these risks and the actions required to manage and/or mitigate them:
+
+. Football performance: membership of the Premier League is hugely important for the Group’s revenue and
+cash generation and poor league performance, or relegation from the league for any prolonged period of
+time, will severely impact all the Group’s major income streams. Qualification for UEFA Competitions has
+a significant impact on the Club's income and costs in season whete participation is achieved.
+
+, « Retention and recruitment of playing staff and other key employees in what is a highly competitive domestic
+and international market.
+
+. Unavailability of key playing staff for any prolonged period of time through injury, illness or suspension.
+
+« Football Governance: the club is governed by the rules and regulations of the FA, PL, EFL, UEFA and
+FIFA in areas such as competition formats, revenue distribution, Profitability and Sustainability, eligibility of
+players and operation of the transfer market, and changes to any of these could significantly impact the club.
+The Group monitors its compliance with all applicable rules and regulations and the likely impacts of any
+potential changes.
+
+s Negotiation of key commercial contracts — including Premier League and UEFA centrally negotiated
+broadcasting and commercial agreements.
+
+. Health and safety risks associated with the stadium operation on match and non-match days.
+
+. Cash management, including the impact of dealing with overseas customers and suppliers where
+
+: transactions (particularly the purchase and sale of player’s registrations) are subject to currency fluctuations. ,
+
+. Liquidity risk around the Group’s working capital inflows and outflows is managed through preparation,
+regular review and update of financial forecasts, including stress testing for material items. The Group
+monitors compliance with the terms and conditions and financial covenants of its bank facilities on a
+continuous basis.
+: Newcastle United Limited 8
+Financial statements for the year ended 30 June 2024
+Group strategic report
+
+Future Outlook
+
+‘The Group and its sharchalders are committed to the ongoing development of the Club with an ambitious investment
+
+programme to deliver sustained success and profitability.
+
+. Foothall Performance: ‘Ihe men’s team currently: sits mid table in the Premier League :
+
+. Newcastle United Women (“NUW”’) — Since becoming full time professional the Club has been promoted
+to the FAWSE Championship. ‘I'he group continues to invest to challenge for promotion to the WSI_ and
+NUW currently sits mid table in the FAWSL Championship.
+
+e Commercial Revenue: The Club has built vn the gains frum last year with Se, Noon, Fenwick, Inpost and
+
+: . Adidas, with new deals with VT’ Markets, RedBull and Bct365 continuing to increase the Club's partnership
+income. :
+
+. The Clubs inhouse retail operation and partnership with Adidas commenced in May 24 with a success ful
+home shirt launch and is expected to tead to a significant increase in the Club's revenue.
+
+. The Group is continuing to explore a range of options in relation to potential enhancement or expansion of
+St James’ Park or the development of a new stadium. Work is also being undertaken to determine the
+preferred way forward in relation to the Clubs’ training infrasteucture.
+
+. ‘The Group opened its new Fanzone ‘St James’ Park SI'ACK presented by Sela’ in August 2024 and trading
+has been strong to date.
+
+‘This report was approved by the-board on 16.01.2025 - and signed on its behalf.
+
+YQ Al-Rumayyan
+
+Director p
+Newcastle United Limited ; 9 i
+Financial statements for year ended 30 June 2024 .
+Directors’ report
+The Directors present their report and the financial statements for the year ended 30 June 2024.
+Information included in the Strategic Report
+The Group has chosen, in accordance with Companies Act 2006 s.414C(11), to set out in the Group’s strategic report
+information required by the Large and Medium-sized Companies and Groups (Accounts and Reports) Regulations 2008
+Sch. 7 to be contained in the Directors’ Report. It has done so in respect of engagement with employees, suppliers,
+customers and others, carbon reporting disclosures and future developments as the directors consider these to be of
+strategic importance to the Group. .
+: Dividends .
+The Directors do not recommend the payment of a dividend for the year ended 30 June 2024 (2023: £nil). .
+Directors :
+The Directors who served during the year, and subsequent to the year end were:
+Y O Al-Rumayyan
+A A Alhagbani
+J A Reuben ,
+AMA Rezeeq
+R Thornton (appointed 25 July 2024)
+J F Solis Patino (appointed 16 December 2024) .
+AL Staveley (resigned 12 July 2024)
+Directors’ responsibilities statement
+The Directors ate responsible for preparing the Group Strategic Report, the Directors’ Report and the consolidated
+financial statements in accordance with applicable law and regulations.
+Company law requires the Directors to prepare financial statements for each financial year. Under that law the
+Directors have elected to prepare the financial statements in accordance with United Kingdom Generally Accepted
+Accounting Practice (United Kingdom Accounting Standards and applicable law), including FRS 102 ‘The Financial .
+_ Reporting Standard applicable in the UK and Republic of Ireland’. Under company law the Directors must not
+: approve the financial statements unless they are satisfied that they give a true and fair view of the state of affairs of
+the Group and the Company and of the profit or loss of the Group for that petiod. In preparing these financial :
+statements, the Directors are required to:
+. select suitable accounting policies and then apply them consistently;
+. make judgements and accounting estimates that ate reasonable and prudent;
+. state, whether applicable UK Accounting Standards have been followed, subject to any material departures
+‘ disclosed and explained in the financial statements; and
+. prepare the financial statements on the going concern basis unless it is inappropriate to presume that the
+Group and the Company will continue in business. :
+The Directors are responsible for keeping adequate accounting records that are sufficient to show and explain the
+Group’s and Company’s transactions and disclose with reasonable accuracy at any time the financial position of the
+Group and the Company and enable them to ensure that the financial statements comply with the Companies Act
+2006. They are also responsible for safeguarding the assets of the Group and the Company and hence for taking
+reasonable steps for the prevention and detection of fraud and other irregularities. :
+The Directors are responsible for the maintenance and integrity of the corporate and financial information included
+on the Company’s Website. Legislation in the United Kingdom governing the preparation and dissemination of
+financial statements may differ from legislation in other jurisdictions.
+

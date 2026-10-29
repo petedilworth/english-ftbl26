@@ -1,0 +1,508 @@
+source: Companies House filing, queens-park-rangers-fc__2.pdf
+document: LN50NEo1oLzFg0qBl9RUnpu41ud1WTUh0oILZ-xjOVU
+made_up_date: 2024-05-31
+method: ocr
+pages_read: 12 of 19
+
+_ % :
+Company Registration Number 00060094
+<
+a
+n
+. Ww
+2 *ADWNOSWE*
+A06 18/02/2025 #150
+COMPANIES HOUSE
+
+Queens Park Rangers Football & Athletic Club, Limited, (The)
+
+Financial Statements
+
+31 May 2024
+Queens Park Rangers Football & Athletic Ciub, simtee (The)
+
+Financial statements
+
+Year ended 31 May 2024
+
+: Contents _ Pages ‘
+Company information 1
+Strategic report ; 2
+Directors’ report 3
+Independent auditor's report to the shareholders 4to6
+Statement of comprehensive income 7
+Statement of financial position 8
+Statement of changes in equity 9
+
+Notes to the financial statements 10 to 17
+Queens Park Rangers Football & Athietic Club, Limited, (The)
+Company information
+Year ended 31 May 2024
+The board of directors Mr A Bhatia :
+Mr R Gnanalingam
+Mr R Reilly
+Mr L Hoos
+Registered office Matrade Loftus Road Stadium
+South Africa Road
+London
+W12 7PJ
+Auditor BDO LLP
+Chartered Accountants
+Statutory Auditor
+55 Baker Street
+London
+. W1U 7EU
+Bankers The Royal Bank of Scotland PLC
+155 Bishopsgate
+London
+EC2M 3YB
+Queens Park Rangers Football & Athletic Club, Limited, (The)
+
+Strategic report
+
+Year ended 31 May 2024
+
+Principal activity
+
+The principal activity of the Company is the provision of professional football teams.
+
+Business Review : .
+
+The results for the year are summarised below:
+
+» Company tumover was £26.7m, compared to £34.3m in the previous year, this is due to reduction in the management fee charged ;
+to QPR Holdings Limited.
+
+« Company operating loss prior to playing trading was £1,5m, compared to a £458k loss in the prior year, again this is due to a
+teduction in the management fee charged.
+
+¢ At the reporting date the Company had bank reserves of £597k, compared to £153k in the prior year.
+
+¢ At the reporting date the Company's deficit position was £2.1m, compared to £2.3m in the prior year.
+
+Risks and uncertainties
+
+There are a number of potential risks and uncertainties that could have a material impact on the Company's long-term performance.
+These risks and uncertainties are monitored by the Board on a regular basis and the Board remains confident that the Company has
+sufficient financial backing to manage these issues.
+
+Football
+
+The Company's income will always be directly affected by the performance of the first team and the Club's league status.
+
+The level of attendance may be influenced by factors such as the success of the team, ticket prices, broadcast coverage and the
+general economic climate.
+
+The performance of the playing squad, as well as the football management staff, is hugely important to the Club, which maintains its
+strategy of trying to retain the highest quality playing and management staff. The Club operates in a highly competitive market for
+talent and the market rates for transfers and wages is, to a varying degree, dictated by competitors and the Company recognises the
+significance of this in relation to the desire to maintain the strength of the first team.
+
+The Club is regulated by the rules of the various governing bodies and any change to these rules could have an impact on the
+Company. The Club monitors its compliance with all applicable rules and considers the impact of any changes.
+
+Commercial
+
+The Company derives income from broadcasting rights and management charges. Broadcasting and certain other revenues are
+derived from contracts that are currently centrally negotiated by the Premier League and Football League; the Company does not
+have any influence on the outcome of the relevant contract negotiations. The management charge is in relation to managing the
+football team and its activities.
+
+Future Developments
+
+The short-term objective is to be competitive in the Championship and target a play-off place. The Board’s primary aim is also to
+implement the strategic plans to ensure that the Club is self-sustainable in the near future.
+
+Going Concern
+
+The Company's business activities, together with the factors likely to affect its future development and performance are set out above.
+The financial position of the group, its cash flows, liquidity position and borrowings are described in these financial statements.
+
+The Company is dependent on the continued support of its significant shareholders, Total Soccer Growth Holdings Limited, QPR
+Newco LLC and Sea Dream Limited in order to remain a going concem. These shareholders have confirmed under deed that they
+will continue to provide financia! support to the Group for at least a period until 31 May 2026, in order for the Group to be able to meet
+its liabilities as they fall due. The directors have considered the Group's financial position, forecast cashflow and the availability of
+financial support from its significant shareholders and consider that it is appropriate to the prepare the financial statements on a going
+concem basis.
+
+Financial risk management objectives and policies
+
+Financial instruments are used for financing purposes only. It is Company policy not to trade in financial instruments. The board of
+directors sets out the financiat risk management policies that are implemented by the finance department. The Board considers that
+financial risks do not pose a major threat to the Company.
+
+Ruben Gnanalingam
+
+Director
+Approved by the directors on 18 December 2024
+Queens Park Rangers Football & Athletic Ctub, Limited, (The)
+
+Directors Report
+
+Year ended 31 May 2024
+
+The directors have pleasure in presenting their report and the audited financial statements of the Company for the year ended
+31 May 2024.
+
+Results and dividends
+
+The profit for the year amounted to £172,000 (2023: £243,000). The directors have not recommended a dividend.
+
+Directors
+
+The directors who served the Company during the year were as follows:
+
+Mr R Gnanalingam
+
+Mr A Bhatia
+
+Mr R Reilly
+
+Mr Femandes Resigned 8 July 2023
+
+Mr Lee Hoos Appointed 24 November 2023
+Directors’ responsibilities
+
+The directors are responsible for preparing the strategic report, the Directors report and the financial statements in accordance with
+applicable law and regulations.
+
+Company law requires the directors to prepare financial statements for each financial year. Under that law the directors have elected
+to prepare the financial statements in accordance with United Kingdom Generally Accepted Accounting Practice (United Kingdom
+Accounting Standards and applicable law). Under Company law the directors must not approve the financial statements unless they
+are satisfied that they give a true and fair view of the state of affairs of the Company and of the profit or loss for. that year.
+
+In preparing those financial statements, the directors are required to:
+
+- select suitable accounting policies and then apply them consistently;
+
+- make judgements and estimates that are reasonable and prudent;
+
+- state whether applicable UK Accounting Standards have been followed, subject to any material departures disclosed and
+
+explained in the financial statements;
+: prepare the financial statements on the going concem basis unless it is inappropriate to presume that the Company will
+continue in business.
+
+The directors are responsible for keeping adequate accounting records that are sufficient to show and explain the Company's
+transactions and disclose with reasonable accuracy at any time the financial position of the Company and enable them to ensure that
+the financial statements comply with the Companies Act 2006. They are also responsible for safeguarding the assets of the Company
+and hence for taking reasonable steps for the prevention and detection of fraud and other irregularities.
+
+Directors’ indemnities
+
+The Company maintains directors’ and officers’ liability insurance providing appropriate cover for any legal action brought against its
+Directors.
+
+Strategic Report
+
+The risk management policy and going concem considerations are located in the strategic report on page 2.
+
+Post reporting date events
+
+The details of these are included in note 19 to the financial statements.
+
+Auditor
+
+BDO LLP are deemed to be re-appointed under section 487(2) of the Companies Act 2006.
+
+Insofar as the directors are aware:
+
+- there is no relevant audit information of which the Company auditor is unaware; and
+
+- the directors have taken all steps that they ought to have taken to make themselves aware of any relevant audit information
+
+and to establish that the auditor is aware of that information.
+
+Signed on behalf of the directors
+
+Ruben Gnanalingam .
+Director
+Approved by the directors on 18 December 2024
+Queens Park Rangers Football & Athletic Club, Limited, (The)
+Independent auditor's report to the members of Queens Park Rangers Football & Athletic Club, Limited, (The)
+Year ended 31 May 2024
+: Opinion on the financial statements
+
+In our opinion the financial statements: .
+. give a true and fair view of the state of the Company's affairs as at 31 May 2024 and of its profit for the year then ended;
+. have been properly prepared in accordance with United Kingdom Generally Accepted Accounting Practice; and
+. have been prepared in accordance with the requirements of the Companies Act 2006.
+We have audited the financial statements of Queens Park Rangers Football & Athletic Club, Limited, (The) (‘the Company’) for the
+year ended 31 May 2024 which comprise the Statement of Comprehensive Income, the Statement of Financial Position, the Statement
+of Changes in Equity and notes to the financial statements, including a summary of significant accounting policies. The financial
+reporting framework that has been applied in their preparation is applicable law and United Kingdom Accounting Standards, including
+Financial Reporting Standard 102 The Financial Reporting Standard applicable in the UK and Republic of Ireland (United Kingdom
+Generally Accepted Accounting Practice).
+Basis for opinion
+We conducted our audit in accordance with Intemational Standards on Auditing (UK) (ISAs (UK)) and applicable law. Our
+responsibilities under those standards are further described in the Auditor's responsibilities for the audit of the financial statements
+section of our report. We believe that the audit evidence we have obtained is sufficient and appropriate to provide a basis for our
+opinion.
+Independence
+We are independent of the Company in accordance with the ethical requirements that are relevant to our audit of the financial
+statements in the UK, including the FRC’s Ethical Standard, and we have fulfilled our other ethical responsibilities in accordance with
+these requirements.
+Conclusions relating to going concern
+In auditing the financial statements, we have concluded that the Directors’ use of the going concern basis of accounting in the
+preparation of the financial statements is appropriate.
+Based on the work we have performed, we have not identified any material uncertainties relating to events or conditions that,
+individually or collectively, may cast significant doubt on the Company's ability to continue as a going concem for a period of at least
+twelve months from when the financial statements are authorised for issue.
+
+: Our responsibilities and the responsibilities of the Directors with respect to going concem are described in the relevant sections of this
+report.
+Other information
+The Directors are responsible for the other information. The other information comprises the information included in the Directors
+report and financial statements, other than the financial statements and our auditor's report thereon. Our opinion on the financial
+statements does not cover the other information and, except to the extent otherwise explicitly stated in our report, we do not express
+any form of assurance conclusion thereon.
+Our responsibility is to read the other information and, in doing so, consider whether the other information is materially inconsistent
+with the financial statements, or our knowledge obtained in the course of the audit or otherwise appears to be materially misstated. If
+we identify such material inconsistencies or apparent material misstatements, we are required to determine whether this gives rise to
+a material misstatement in the financial statements themselves. If, based on the work we have performed, we conclude that there is
+a material misstatement of this other information, we are required to report that fact.
+We have nothing to report in this regard.
+Other Companies Act 2006 reporting
+(n our opinion, based on the work undertaken in the course of the audit:
+. the information given in the Strategic report and the Directors’ report for the financial year for which the financial statements
+
+are prepared is consistent with the financial statements; and
+
+. the Strategic report and the Directors’ report have been prepared in accordance with applicable legal requirements.
+Queens Park Rangers Football & Athletic Club, Limited, (The) .
+Independent auditor's report to the shareholders of Queens Park Rangers Football & Athletic Club, Limited, (The) continued
+Year ended 31 May 2024
+
+{n the light of the knowledge and understanding of the Company and its environment obtained in the course of the audit, we have not
+identified material misstatements in the Strategic report or the Directors’ report.
+
+We have nothing to report in respect of the following matters in relation to which the Companies Act 2006 requires us to report to you
+if, in our opinion:
+
+. adequate accounting records have not been kept, or retums adequate for our audit have not been received from branches
+
+not visited by us; or
+
+. the financial statements are not in agreement with the accounting records and retums; or
+
+. certain disclosures of Directors’ remuneration specified by law are not made; or
+
+. we have not received all the information and explanations we require for our audit.
+
+Responsibilities of Directors
+
+As explained more fully in the Directors’ responsibilities, the Directors are responsible for the preparation of the financial statements
+and for being satisfied that they give a true and fair view, and for such intemal control as the Directors determine is necessary to
+
+, enable the preparation of financial statements that are free from material misstatement, whether due to fraud or error.
+
+In preparing the financial statements, the Directors are responsible for assessing the Company's ability to continue as a going concem, .
+disclosing, as applicable, matters related to going concern and using the going concer basis of accounting unless the Directors either
+intend to liquidate the Company or to cease operations, or have no realistic alternative but to do so.
+
+Auditor's responsibilities for the audit of the financial statements
+
+Our objectives are to obtain reasonable assurance about whether the financial statements as a whole are free from material
+misstatement, whether due to fraud or error, and to issue an auditor's report that includes our opinion. Reasonable assurance is a
+high level of assurance but is not a guarantee that an audit conducted in accordance with ISAs (UK) will always detect a material
+misstatement when it exists. Misstatements can arise from fraud or error and are considered material if, individually or in the aggregate,
+they could reasonably be expected to influence the economic decisions of users taken on the basis of these financial statements.
+Extent to which the audit was capable of detecting irregularities, including fraud
+
+Irregularities, including fraud, are instances of non-compliance with laws and regulations. We design procedures in line with our
+responsibilities, outlined above, to detect material misstatements in respect of irregularities, including fraud. The extent to which our
+procedures are capable of detecting irregularities, including fraud is detailed below:
+
+Non-compliance with laws and regulations
+
+Based on:
+
+. Our understanding of the Company and the industry in which it operates;
+
+. Discussion with management and those charged with govemance
+
+. Obtaining and understanding of the Company's policies and procedures regarding; and compliance with laws and regulations
+we considered the significant laws and regulations to be the applicable accounting framework and UK tax legislation.
+
+The Company is also subject to laws and regulations where the consequence of non-compliance could have a material effect on the
+amount or disclosures in the financial statements, for example through the imposition of fines or litigations.
+
+Our procedures in respect of the above included:
+
+. making enquiries of management and reviewing minutes of the board of Directors in order to identify any instances of fraud
+
+or non-compliance with laws and regulations;
+
+. Review of correspondence with tax authorities for any instances of non-compliance with laws and regulations;
+
+. Review of financiat statement disclosures and agreeing to supporting documentation;
+
+. Involvement of tax specialists in the audit; and
+
+. Review of legal expenditure accounts to understand the nature of expenditure incurred.
+
+Fraud
+We assessed the susceptibility of the financial statements to material misstatement, including fraud. Our risk assessment procedures
+included:
+
+. Enquiry with management and those charged with governance regarding any known or suspected instances of fraud;
+Queens Park Rangers Football & Athletic Club, Limited, (The)
+Independent auditor's report to the shareholders of Queens Park Rangers Football & Athletic Club, Limited,
+(The) continued
+Year ended 31 May 2024
+. Obtaining an understanding of the Company's policies and procedures relating to:
+. Detecting and responding to the risks of fraud; and
+. Internal controls established to mitigate risks related to fraud.
+. Review of minutes of meeting of those charged with governance for any known or suspected instances of fraud;
+. Discussion amongst the engagement team as to how and where fraud might occur in the financial statements;
+. Performing analytical procedures to identify any unusual or unexpected relationships that may indicate risks of material
+misstatement due to fraud; and
+. Considering remuneration incentive schemes and performance targets and the related financial statement areas impacted by
+these.
+Based on our risk assessment, we considered the areas most susceptible to fraud to be management override of controls and
+Revenue.
+Our procedures in respect of the above included:
+. Identifying and testing journal entries to supporting documentation, in particular any journal entries to revenue not in line with
+expectations and reviewing joumal entries for journals inconsistent with the usual transactions of the Company.
+. agreeing a sample of revenue to underlying contracts and/or other third-party documentation to ensure they are recorded at
+the correct time and to the correct amount
+. agreeing a sample of revenues to cash receipts
+. reviewed transactions pre and post year end to check that the associated revenue is reflected in the correct period.
+. identifying and tested material manua! journal entries to revenue
+. Assessing significant estimates made by management for bias or judgement that represented a risk of material misstatement
+due to fraud. In particular we have considered in respect of revenue recognition, including accrued and deferred revenue, and
+recoverability of trade and other receivable.
+We also communicated relevant identified laws and regulations and potential fraud risks to all engagement team members who were
+all deemed to have appropriate competence and capabilities and remained alert to any indications of fraud or non-compliance with
+laws and regulations throughout the audit.
+Our audit procedures were designed to respond to risks of material misstatement in the financial statements, recognising that the risk
+of not detecting a material misstatement due to fraud is higher than the risk of not detecting one resulting from error, as fraud may
+involve deliberate concealment by, for example, forgery, misrepresentations or through collusion. There are inherent limitations in the
+audit procedures performed and the further removed non-compliance with laws and regulations is from the events and transactions
+reflected in the financial statements, the less likely we are to become aware of it.
+A further description of our responsibilities is available on the Financial Reporting Council's website at:
+https:/Awww. frc.org.uk/auditorsresponsibilities. This description forms part of our auditor's report. .
+Use of our report
+This report is made solely to the Company’s members, as a body, in accordance with Chapter 3 of Part 16 of the Companies Act
+2006. Our audit work has been undertaken so that we might state to the Company's members those matters we are required to state
+to them in an auditor's report and for no other purpose. To the fullest extent permitted by law, we do not accept or assume responsibility
+to anyone other than the Company and the Company's members as a body, for our audit work, for this report, or for the opinions we
+have formed.
+‘DocuSigned by:
+(Gant Me Sous
+ASHE? 152330481.
+Gareth M Jones (Senior Statutory Auditor)
+For and on behalf of BDO LLP, Statutory Auditor
+London, UK
+23 December 2024
+BDO LLP is a limited liability partnership registered in England and Wales (with registered number OC305127).
+Queens Park Rangers Football & Athletic Club, Limited, (The)
+Statement of comprehensive income
+Year ended 31 May 2024
+Note 2024 2023
+£000 £'000
+. Revenue 2 26,698 34,339
+Cost of sales (28,166) (34,797)
+Gross loss (1,468) (458)
+Operating loss 3 (1,468) (458)
+Profit on disposal of player registrations 6 2,195 1,049
+727 591
+Finance costs and similar charges 7 (555) (348)
+Profit on ordinary activities before taxation 172 243
+Tax 8 . - -
+Profit for the financial year and total comprehensive
+income . 172 243
+All of the activities of the Company are classed as continuing.
+The Company has no recognised gains or losses other than the results for the year set out above.
+The notes on pages 10 to 17 form part of these financial statements.
+Queens Park Rangers Football & Athletic Club, Limited, (The)
+Statement of financial position
+As at 31 May 2024
+: , 2024 2023
+Note £000 £'000
+Intangibie fixed assets 9 1,112 2,270
+‘Current assets
+Trade and other receivables 10 7,710 11,167
+Cash and cash equivalents 597 153
+8,307 11,320
+Current liabilities "1 (5,743) (8,869)
+Net current assets 2,564 2,451
+Total assets less current liabilities 3,676 4,721
+Non-current liabilities 12 (5,819) (7,036)
+(2,143) (2,315)
+Capital and reserves
+Share capital 15 270 270
+Share premium account 295 295
+Capital redemption reserve 30 30
+Profit and loss account (2,738) (2,910)
+Net shareholder funds (2,143) (2,315)
+These financial statements were approved by the directors, authorised for issue, and are signed on their behalf by:
+Ruben Gnanalingam
+Director
+18 December 2024
+Company Registration Number: 00060094
+The notes on pages 10 to 17 form part of these financial statements.
+Queens Park Rangers Football & Athletic Club, Limited, (The)
+Statement of changes in equity
+Year ended 31 May 2024
+Capital
+Share Share redemption Profit and
+capital premium reserve loss account Total
+£'000 £'000 £'000 £'000 £'000
+Equity shareholders’ funds as at 1 June 2022 270 295 30 (3,153) (2,558)
+Profit and total comprehensive income for the year - - - 243 243
+Equity shareholders’ funds as at 31 May 2023 270 295 30 (2,910) (2,315)
+Profit and total comprehensive income for the year - - - 172 172
+Equity shareholders’ funds as at 31 May 2024 270 295 30 (2,738) {2,143)
+The notes on pages 10 to 17 form part of these financial statements.
+Queens Park Rangers Foothall & Athletic Club, Limited, (The)
+Notes to the financial statements
+Year ended 31 May 2024
+1. Accounting policies
+: a) —_ Statement of compliance :
+Queens Park Rangers Football & Athletic Club, Limited, (The) is a private Company limited by shares and a wholly owned
+subsidiary of QPR Holdings Limited, incorporated in England and Wales, No: 00060094. The Registered Office is Matrade
+Loftus Road Stadium, South Africa Road, London, W12 7PJ.
+b) Basis of accounting
+The financial statements have been prepared in accordance with Financial Reporting Standard 102 as issued by the Financial
+Reporting Council. The financial statements have been prepared on the historical cost basis. The principal accounting policies
+that have been applied consistently by the Company to all periods presented in these financial statements are set out below.
+The financial statements are prepared in sterling, rounded to the nearest thousand, which is the functionat currency of the entity.
+The preparation of financial statements in conformity with FRS 102 requires the use of certain critical accounting estimates. It
+also requires management to exercise its judgement in the process of applying the accounting policies selected for use by the
+Company. The areas involving a higher degree of judgement or complexity, or areas where assumptions and estimates are
+significant to the financial statements are disclosed below. Use of available information and application of judgement are
+inherent in the formation of estimates. Actual outcomes in the future could differ from such estimates.
+c) Going concem
+The directors, based on cash flow projections prepared by management and through confirmation of continuing support from
+the parent company via the groups’ main shareholders and creditors have a reasonable expectation that the Company has
+adequate resources to continue in operational existence for the foreseeable future. The groups’ main shareholders have
+confirmed under a deed of support to provide loan facilities of up to £40m to the group covering the financial needs over the
+period ending 31 May 2026.
+d) Disclosure exemptions
+. The Company has taken advantage of the following disclosure exemptions in preparing these financial statements, as permitted
+by the FRS 102 "The Financial Reporting Standard applicable in the UK and Republic of Ireland":
+° the requirements of Section 7 Statement of Cash Flows;
+. the requirement of section 11 Financial instruments
+. . the requirements of Section 33 Related Party Disclosures paragraph 33.7.
+This information is included in the accounts of QPR Hoidings Limited whose consolidated financial statements are publicly
+available and in whose financial statements the Company is consolidated. The location from which the financial statements are
+available is shown in note 14.
+e) Revenue
+Revenue is measured at the fair value of the consideration received or receivable and represents amounts receivable in the
+normal course of business. Revenue comprises the management fees charged from the parent Company and income in respect
+of the broadcasting rights earned. Other income relates to other football realted activities.
+f) Player costs and transactions
+(i) initial capitalisation
+The costs associated with the acquisition of player registrations are capitalised as intangible fixed assets. Any
+intangible assets acquired on deferred terms are recorded at the fair value at the date of acquisition. The fair value
+represents the net present value of the costs of acquiring player registrations.
+(ii) Amortisation
+These costs are fully amortised on a straight-line basis in equal annual instalments over the period of the respective
+contracts.
+(ili) Contingent consideration
+Under the conditions of certain transfer agreements, further fees will be payable to the vendors in the event of the
+players concerned making a certain number of First Team appearances. Liabilities in respect of these additional
+transfers are accounted for, as provisions, when it becomes probable that the number of appearances will be achieved
+or the specified future events will occur.
+

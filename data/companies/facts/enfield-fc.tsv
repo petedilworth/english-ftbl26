@@ -1,0 +1,85 @@
+club_id	company_number	document	filing_date	made_up_date	concept	prefix	kind	period_start	period_end	instant	dimensions	unit	value
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	AccountingStandardsApplied	bus	text	2024-07-01	2025-06-30		AccountingStandardsDimension=Micro-entities		
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	AccountsStatusAuditedOrUnaudited	bus	text	2024-07-01	2025-06-30		AccountsStatusDimension=AuditExempt-NoAccountantsReport		
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	AccountsType	bus	text	2024-07-01	2025-06-30		AccountsTypeDimension=FullAccounts		
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	AccruedLiabilitiesDeferredIncome	core	num		2024-06-30	1		GBP	480
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	AccruedLiabilitiesDeferredIncome	core	num		2025-06-30	1		GBP	0
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	AddressLine1	bus	text	2024-07-01	2025-06-30		EntityContactTypeDimension=RegisteredOffice		462 Baker Street
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	AddressLine2	bus	text	2024-07-01	2025-06-30		EntityContactTypeDimension=RegisteredOffice		Enfield
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	AverageNumberEmployeesDuringPeriod	core	num	2023-07-01	2024-06-30			pure	4
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	AverageNumberEmployeesDuringPeriod	core	num	2024-07-01	2025-06-30			pure	3
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	BalanceSheetDate	bus	text		2025-06-30	1			30 June 2025
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	CountryFormationOrIncorporation	bus	text	2024-07-01	2025-06-30		CountriesRegionsDimension=UnitedKingdom		
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	Creditors	core	num		2024-06-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	15552
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	Creditors	core	num		2025-06-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	34107
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	CurrentAssets	core	num		2024-06-30	1		GBP	10174
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	CurrentAssets	core	num		2025-06-30	1		GBP	841
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	DateAuthorisationFinancialStatementsForIssue	core	text		2025-06-30	1			11 March 2026
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	DescriptionPrincipalActivities	bus	text	2024-07-01	2025-06-30				The principal activity of the company during the year under review was Football Club.
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	DirectorSigningFinancialStatements	core	text	2024-07-01	2025-06-30		EntityOfficersDimension=Director1		
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	EndDateForPeriodCoveredByReport	bus	text		2025-06-30	1			30 June 2025
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	EntityCurrentLegalOrRegisteredName	bus	text	2024-07-01	2025-06-30				Enfield Football Club Limited
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	EntityDormantTruefalse	bus	text	2024-07-01	2025-06-30				false
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	EntityTradingStatus	bus	text	2024-07-01	2025-06-30				
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	Equity	core	num		2024-06-30	1		GBP	-5858
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	Equity	core	num		2025-06-30	1		GBP	-33266
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	LegalFormEntity	bus	text	2024-07-01	2025-06-30		LegalFormEntityDimension=PrivateLimitedCompanyLtd		
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	NameProductionSoftware	bus	text	2024-07-01	2025-06-30				BTCSoftware AP Solution 2025 12.2.02
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	NetAssetsLiabilities	core	num		2024-06-30	1		GBP	-5858
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	NetAssetsLiabilities	core	num		2025-06-30	1		GBP	-33266
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	NetCurrentAssetsLiabilities	core	num		2024-06-30	1		GBP	-5378
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	NetCurrentAssetsLiabilities	core	num		2025-06-30	1		GBP	-33266
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	PostalCodeZip	bus	text	2024-07-01	2025-06-30		EntityContactTypeDimension=RegisteredOffice		EN1 3QT
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	ReportTitle	bus	text	2024-07-01	2025-06-30				Unaudited Accounts
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	StartDateForPeriodCoveredByReport	bus	text		2024-07-01	1			01 July 2024
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime	direp	text	2024-07-01	2025-06-30				These accounts have been prepared in accordance with the micro-entity provisions of the small companies regime.
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies	direp	text	2024-07-01	2025-06-30				For the year ended 30 June 2025 the company was entitled to exemption from audit under section 477 of the Companies Act 2006 relating to small companies.
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct	direp	text	2024-07-01	2025-06-30				The directors acknowledge their responsibilities for complying with the requirements of the Companies Act 2006 with respect to accounting records and the preparation of accounts.
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit	direp	text	2024-07-01	2025-06-30				The members have not required the company to obtain an audit in accordance with section 476 of the Companies Act 2006.
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	TotalAssetsLessCurrentLiabilities	core	num		2024-06-30	1		GBP	-5378
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	TotalAssetsLessCurrentLiabilities	core	num		2025-06-30	1		GBP	-33266
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	UKCompaniesHouseRegisteredNumber	bus	text	2024-07-01	2025-06-30				06276464
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	VersionProductionSoftware	bus	text	2024-07-01	2025-06-30				12.2.02
+enfield-fc	06276464	3UgzguFOLbGolbtBtMMtoKPs4ibKpy-DLuItyfzLTj4	2026-03-12	2025-06-30	_GoingConcernMaterialUncertainty	derived	text						none found
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	AccountingStandardsApplied	bus	text	2023-07-01	2024-06-30		AccountingStandardsDimension=Micro-entities		
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	AccountsStatusAuditedOrUnaudited	bus	text	2023-07-01	2024-06-30		AccountsStatusDimension=AuditExempt-NoAccountantsReport		
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	AccountsType	bus	text	2023-07-01	2024-06-30		AccountsTypeDimension=FullAccounts		
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	AccruedLiabilitiesDeferredIncome	core	num		2023-06-30	1		GBP	1543
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	AccruedLiabilitiesDeferredIncome	core	num		2024-06-30	1		GBP	480
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	AddressLine1	bus	text	2023-07-01	2024-06-30		EntityContactTypeDimension=RegisteredOffice		462 Baker Street
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	AddressLine2	bus	text	2023-07-01	2024-06-30		EntityContactTypeDimension=RegisteredOffice		Enfield
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	AverageNumberEmployeesDuringPeriod	core	num	2022-07-01	2023-06-30			pure	4
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	AverageNumberEmployeesDuringPeriod	core	num	2023-07-01	2024-06-30			pure	4
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	BalanceSheetDate	bus	text		2024-06-30	1			30 June 2024
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	CountryFormationOrIncorporation	bus	text	2023-07-01	2024-06-30		CountriesRegionsDimension=UnitedKingdom		
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	Creditors	core	num		2023-06-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	5552
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	Creditors	core	num		2024-06-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	15552
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	CurrentAssets	core	num		2023-06-30	1		GBP	5404
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	CurrentAssets	core	num		2024-06-30	1		GBP	10174
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	DateAuthorisationFinancialStatementsForIssue	core	text		2024-06-30	1			14 March 2025
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	DescriptionPrincipalActivities	bus	text	2023-07-01	2024-06-30				The principal activity of the company during the year under review was Football Club.
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	DirectorSigningFinancialStatements	core	text	2023-07-01	2024-06-30		EntityOfficersDimension=Director2		
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	EndDateForPeriodCoveredByReport	bus	text		2024-06-30	1			30 June 2024
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	EntityCurrentLegalOrRegisteredName	bus	text	2023-07-01	2024-06-30				Enfield Football Club Limited
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	EntityDormantTruefalse	bus	text	2023-07-01	2024-06-30				false
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	EntityTradingStatus	bus	text	2023-07-01	2024-06-30				
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	Equity	core	num		2023-06-30	1		GBP	-1691
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	Equity	core	num		2024-06-30	1		GBP	-5858
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	LegalFormEntity	bus	text	2023-07-01	2024-06-30		LegalFormEntityDimension=PrivateLimitedCompanyLtd		
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	NameProductionSoftware	bus	text	2023-07-01	2024-06-30				BTCSoftware AP Solution 2024 11.2.01
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	NetAssetsLiabilities	core	num		2023-06-30	1		GBP	-1691
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	NetAssetsLiabilities	core	num		2024-06-30	1		GBP	-5858
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	NetCurrentAssetsLiabilities	core	num		2023-06-30	1		GBP	-148
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	NetCurrentAssetsLiabilities	core	num		2024-06-30	1		GBP	-5378
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	PostalCodeZip	bus	text	2023-07-01	2024-06-30		EntityContactTypeDimension=RegisteredOffice		EN1 3QT
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	ReportTitle	bus	text	2023-07-01	2024-06-30				Unaudited Accounts
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	StartDateForPeriodCoveredByReport	bus	text		2023-07-01	1			01 July 2023
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime	direp	text	2023-07-01	2024-06-30				These accounts have been prepared in accordance with the micro-entity provisions of the small companies regime.
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies	direp	text	2023-07-01	2024-06-30				For the year ended 30 June 2024 the company was entitled to exemption from audit under section 477 of the Companies Act 2006 relating to small companies.
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct	direp	text	2023-07-01	2024-06-30				The directors acknowledge their responsibilities for complying with the requirements of the Companies Act 2006 with respect to accounting records and the preparation of accounts.
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit	direp	text	2023-07-01	2024-06-30				The members have not required the company to obtain an audit in accordance with section 476 of the Companies Act 2006.
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	TotalAssetsLessCurrentLiabilities	core	num		2023-06-30	1		GBP	-148
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	TotalAssetsLessCurrentLiabilities	core	num		2024-06-30	1		GBP	-5378
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	UKCompaniesHouseRegisteredNumber	bus	text	2023-07-01	2024-06-30				06276464
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	VersionProductionSoftware	bus	text	2023-07-01	2024-06-30				11.2.01
+enfield-fc	06276464	6eKDZPhTaucnrCMK8DPEOCNqYAJb8IMOaB7yBkz_iVU	2025-03-15	2024-06-30	_GoingConcernMaterialUncertainty	derived	text						none found

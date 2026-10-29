@@ -1,0 +1,148 @@
+club_id	company_number	document	filing_date	made_up_date	concept	prefix	kind	period_start	period_end	instant	dimensions	unit	value
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	AccountingStandardsApplied	uk-bus	text	2023-07-01	2024-06-30		AccountingStandardsDimension=FRS102		
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	AccountsStatusAuditedOrUnaudited	uk-bus	text	2023-07-01	2024-06-30		AccountsStatusDimension=AuditExempt-NoAccountantsReport		
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	AccountsType	uk-bus	text	2023-07-01	2024-06-30		AccountsTypeDimension=AbridgedAccounts		
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	AccumulatedDepreciationImpairmentPropertyPlantEquipment	core	num		2023-06-30	1		GBP	220017
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	AccumulatedDepreciationImpairmentPropertyPlantEquipment	core	num		2024-06-30	1		GBP	264851
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	AverageNumberEmployeesDuringPeriod	core	num	2022-07-01	2023-06-30			pure	32
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	AverageNumberEmployeesDuringPeriod	core	num	2023-07-01	2024-06-30			pure	33
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	BalanceSheetDate	uk-bus	text		2024-06-30	1			2024-06-30
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	BalanceSheetDate	uk-bus	text		2024-06-30	1			30 June 2024
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	CalledUpShareCapitalNotPaid	core	num		2023-06-30	1		GBP	0
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	CalledUpShareCapitalNotPaid	core	num		2024-06-30	1		GBP	0
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	CashBankOnHand	core	num		2023-06-30	1		GBP	159311
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	CashBankOnHand	core	num		2024-06-30	1		GBP	72449
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	Creditors	core	num		2023-06-30	1	MaturitiesOrExpirationPeriodsDimension=AfterOneYear	GBP	319394
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	Creditors	core	num		2023-06-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	282800
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	Creditors	core	num		2024-06-30	1	MaturitiesOrExpirationPeriodsDimension=AfterOneYear	GBP	298710
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	Creditors	core	num		2024-06-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	249547
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	CurrentAssetInvestments	core	num		2023-06-30	1		GBP	0
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	CurrentAssetInvestments	core	num		2024-06-30	1		GBP	0
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	CurrentAssets	core	num		2023-06-30	1		GBP	263126
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	CurrentAssets	core	num		2024-06-30	1		GBP	121684
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	DateAuthorisationFinancialStatementsForIssue	core	text		2024-06-30	1			31 March 2025
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	Debtors	core	num		2023-06-30	1		GBP	98455
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	Debtors	core	num		2024-06-30	1		GBP	43875
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	DirectorSigningFinancialStatements	core	text	2023-07-01	2024-06-30		EntityOfficersDimension=Director40		
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	EmployeeInformationFree-textComment	core	text	2023-07-01	2024-06-30				
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	EndDateForPeriodCoveredByReport	uk-bus	text		2024-06-30	1			2024-06-30
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	EntityCurrentLegalOrRegisteredName	uk-bus	text	2023-07-01	2024-06-30				DARLINGTON 1883 LIMITED
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	EntityDormantTruefalse	uk-bus	text	2023-07-01	2024-06-30				false
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	EntityHasTakenExemptionUnderCompaniesActInNotPublishingItsOwnProfitLossAccountTruefalse	direp	text	2023-07-01	2024-06-30				true
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	EntityTradingStatus	uk-bus	text	2023-07-01	2024-06-30				
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	Equity	core	num		2023-06-30	1		GBP	52071
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	Equity	core	num		2023-06-30	1	EquityClassesDimension=RetainedEarningsAccumulatedLosses	GBP	-1100574
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	Equity	core	num		2023-06-30	1	EquityClassesDimension=ShareCapital	GBP	1152645
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	Equity	core	num		2024-06-30	1		GBP	-63568
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	Equity	core	num		2024-06-30	1	EquityClassesDimension=RetainedEarningsAccumulatedLosses	GBP	-1432263
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	Equity	core	num		2024-06-30	1	EquityClassesDimension=ShareCapital	GBP	1368695
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	FixedAssets	core	num		2023-06-30	1		GBP	391139
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	FixedAssets	core	num		2024-06-30	1		GBP	363005
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	GeneralDescriptionBasisMeasurementUsedInPreparingFinancialStatements	core	text	2023-07-01	2024-06-30				These financial statements have been prepared in accordance with the provisions of Section 1A (Small Entities) of Financial Reporting Standard 102
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	IncreaseFromDepreciationChargeForYearPropertyPlantEquipment	core	num	2023-07-01	2024-06-30			GBP	44834
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	IntangibleAssets	core	num		2023-06-30	1		GBP	0
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	IntangibleAssets	core	num		2024-06-30	1		GBP	0
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	InvestmentsFixedAssets	core	num		2023-06-30	1		GBP	0
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	InvestmentsFixedAssets	core	num		2024-06-30	1		GBP	0
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	NameEntityOfficer	uk-bus	text	2023-07-01	2024-06-30		EntityOfficersDimension=Director40		Chris Stockdale
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	NameProductionSoftware	uk-bus	text	2023-07-01	2024-06-30				Companies House
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	NetAssetsLiabilities	core	num		2023-06-30	1		GBP	52071
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	NetAssetsLiabilities	core	num		2024-06-30	1		GBP	-63568
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	NetCurrentAssetsLiabilities	core	num		2023-06-30	1		GBP	-19674
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	NetCurrentAssetsLiabilities	core	num		2024-06-30	1		GBP	-127863
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	PropertyPlantEquipment	core	num		2023-06-30	1		GBP	391139
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	PropertyPlantEquipment	core	num		2024-06-30	1		GBP	363005
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	PropertyPlantEquipmentFree-textComment	core	text	2023-07-01	2024-06-30				
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	PropertyPlantEquipmentGrossCost	core	num		2023-06-30	1		GBP	611156
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	PropertyPlantEquipmentGrossCost	core	num		2024-06-30	1		GBP	627856
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	ProvisionsForLiabilitiesBalanceSheetSubtotal	core	num		2023-06-30	1		GBP	0
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	ProvisionsForLiabilitiesBalanceSheetSubtotal	core	num		2024-06-30	1		GBP	0
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	ReportTitle	uk-bus	text	2023-07-01	2024-06-30				Unaudited abridged accounts for the year ended 30 June 2024
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	StartDateForPeriodCoveredByReport	uk-bus	text		2024-06-30	1			2023-07-01
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime	direp	text	2023-07-01	2024-06-30				These accounts have been prepared in accordance with the provisions applicable to companies subject to the small companies regime.
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies	direp	text	2023-07-01	2024-06-30				For the year ending 30 June 2024 the company was entitled to exemption under section 477 of the Companies Act 2006 relating to small companies.
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct	direp	text	2023-07-01	2024-06-30				The directors acknowledge their responsibilities for complying with the requirements of the Act with respect to accounting records and the preparation of accounts.
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	StatementThatMembersHaveAgreedToPreparationAbridgedAccountsUnderSection444CompaniesAct2006	direp	text	2023-07-01	2024-06-30				The members have agreed to the preparation of abridged accounts for this accounting period in accordance with Section 444(2A).
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit	direp	text	2023-07-01	2024-06-30				The members have not required the company to obtain an audit in accordance with section 476 of the Companies Act 2006.
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment	core	num	2023-07-01	2024-06-30			GBP	16700
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	TotalAssetsLessCurrentLiabilities	core	num		2023-06-30	1		GBP	371465
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	TotalAssetsLessCurrentLiabilities	core	num		2024-06-30	1		GBP	235142
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	TotalInventories	core	num		2023-06-30	1		GBP	5360
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	TotalInventories	core	num		2024-06-30	1		GBP	5360
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	UKCompaniesHouseRegisteredNumber	uk-bus	text	2023-07-01	2024-06-30				07914690
+darlington-fc	07914690	Dde2PCLGJPEMPst2iEQxns5qy_IaRDDf61CIa5b_CQo	2025-03-31	2024-06-30	_GoingConcernMaterialUncertainty	derived	text						none found
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	AccountingStandardsApplied	uk-bus	text	2024-07-01	2025-06-30		AccountingStandardsDimension=FRS102		
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	AccountsStatusAuditedOrUnaudited	uk-bus	text	2024-07-01	2025-06-30		AccountsStatusDimension=AuditExempt-NoAccountantsReport		
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	AccountsType	uk-bus	text	2024-07-01	2025-06-30		AccountsTypeDimension=AbridgedAccounts		
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	AccumulatedDepreciationImpairmentPropertyPlantEquipment	core	num		2024-06-30	1		GBP	264851
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	AccumulatedDepreciationImpairmentPropertyPlantEquipment	core	num		2025-06-30	1		GBP	305676
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	AddressLine1	uk-bus	text	2024-07-01	2025-06-30		EntityContactTypeDimension=RegisteredOffice		Blackwell Meadows
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	AddressLine2	uk-bus	text	2024-07-01	2025-06-30		EntityContactTypeDimension=RegisteredOffice		Grange Road
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	AverageNumberEmployeesDuringPeriod	core	num	2023-07-01	2024-06-30			pure	33
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	AverageNumberEmployeesDuringPeriod	core	num	2024-07-01	2025-06-30			pure	32
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	BalanceSheetDate	uk-bus	text		2025-06-30	1			30 June 2025
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	BalanceSheetDate	uk-bus	text		2025-06-30	1			30.6.25
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	CashBankOnHand	core	num		2024-06-30	1		GBP	72449
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	CashBankOnHand	core	num		2025-06-30	1		GBP	55322
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	CountryFormationOrIncorporation	uk-bus	text	2024-07-01	2025-06-30		CountriesRegionsDimension=EnglandWales		
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	CountyRegion	uk-bus	text	2024-07-01	2025-06-30		EntityContactTypeDimension=RegisteredOffice		County Durham
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	Creditors	core	num		2024-06-30	1	MaturitiesOrExpirationPeriodsDimension=AfterOneYear	GBP	298710
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	Creditors	core	num		2024-06-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	249547
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	Creditors	core	num		2025-06-30	1	MaturitiesOrExpirationPeriodsDimension=AfterOneYear	GBP	272604
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	Creditors	core	num		2025-06-30	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	218487
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	CurrentAssets	core	num		2024-06-30	1		GBP	121684
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	CurrentAssets	core	num		2025-06-30	1		GBP	94453
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	DateAuthorisationFinancialStatementsForIssue	core	text		2025-06-30	1			31 March 2026
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	Debtors	core	num		2024-06-30	1		GBP	43875
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	Debtors	core	num		2025-06-30	1		GBP	25479
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	DescriptionBodyAuthorisingFinancialStatements	core	text	2024-07-01	2025-06-30				Board of Directors
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	DescriptionPrincipalActivities	uk-bus	text	2024-07-01	2025-06-30				No description of principal activity
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	DirectorSigningFinancialStatements	core	text	2024-07-01	2025-06-30		EntityOfficersDimension=Director1		
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	DisposalsDecreaseInDepreciationImpairmentPropertyPlantEquipment	core	num	2024-07-01	2025-06-30			GBP	0
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	DisposalsPropertyPlantEquipment	core	num	2024-07-01	2025-06-30			GBP	0
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	EndDateForPeriodCoveredByReport	uk-bus	text		2025-06-30	1			30.6.25
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	EntityCurrentLegalOrRegisteredName	uk-bus	text	2024-07-01	2025-06-30				DARLINGTON 1883 LIMITED
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	EntityDormantTruefalse	uk-bus	text	2024-07-01	2025-06-30				false
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	EntityTradingStatus	uk-bus	text	2024-07-01	2025-06-30				
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	Equity	core	num		2024-06-30	1		GBP	-63568
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	Equity	core	num		2024-06-30	1	EquityClassesDimension=RetainedEarningsAccumulatedLosses	GBP	-1432263
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	Equity	core	num		2024-06-30	1	EquityClassesDimension=ShareCapital	GBP	1368695
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	Equity	core	num		2025-06-30	1		GBP	-74458
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	Equity	core	num		2025-06-30	1	EquityClassesDimension=RetainedEarningsAccumulatedLosses	GBP	-1665463
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	Equity	core	num		2025-06-30	1	EquityClassesDimension=ShareCapital	GBP	1591005
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	FixedAssets	core	num		2024-06-30	1		GBP	363005
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	FixedAssets	core	num		2025-06-30	1		GBP	322180
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	GeneralDescriptionAnyOff-balanceSheetArrangementsIncludingNaturePurposeFinancialImpactOnEntity	core	text	2024-07-01	2025-06-30				No
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	GeneralDescriptionBasisMeasurementUsedInPreparingFinancialStatements	core	text	2024-07-01	2025-06-30				These financial statements have been prepared in accordance with the provisions of Section 1A (Small Entities) of Financial Reporting Standard 102
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	IncreaseDecreaseDueToTransfersBetweenClassesPropertyPlantEquipment	core	num	2024-07-01	2025-06-30			GBP	0
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	IncreaseFromDepreciationChargeForYearPropertyPlantEquipment	core	num	2024-07-01	2025-06-30			GBP	40825
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	LegalFormEntity	uk-bus	text	2024-07-01	2025-06-30		LegalFormEntityDimension=PrivateLimitedCompanyLtd		
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	NameEntityOfficer	uk-bus	text	2024-07-01	2025-06-30		EntityOfficersDimension=Director1		Chris Stockdale
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	NameProductionSoftware	uk-bus	text	2024-07-01	2025-06-30				Company Accounts and Tax Online
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	NetAssetsLiabilities	core	num		2024-06-30	1		GBP	-63568
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	NetAssetsLiabilities	core	num		2025-06-30	1		GBP	-74458
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	NetCurrentAssetsLiabilities	core	num		2024-06-30	1		GBP	-127863
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	NetCurrentAssetsLiabilities	core	num		2025-06-30	1		GBP	-124034
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	OtherIncreaseDecreaseInDepreciationImpairmentPropertyPlantEquipment	core	num	2024-07-01	2025-06-30			GBP	0
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	PostalCodeZip	uk-bus	text	2024-07-01	2025-06-30		EntityContactTypeDimension=RegisteredOffice		DL1 5NR
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	PrincipalCurrencyUsedInBusinessReport	uk-bus	text	2024-07-01	2025-06-30		CurrenciesDimension=PoundSterling		
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	PrincipalLocation-CityOrTown	uk-bus	text	2024-07-01	2025-06-30		EntityContactTypeDimension=RegisteredOffice		Darlington
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	PropertyPlantEquipment	core	num		2024-06-30	1		GBP	363005
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	PropertyPlantEquipment	core	num		2025-06-30	1		GBP	322180
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	PropertyPlantEquipmentGrossCost	core	num		2024-06-30	1		GBP	627856
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	PropertyPlantEquipmentGrossCost	core	num		2025-06-30	1		GBP	627856
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	ReportTitle	uk-bus	text	2024-07-01	2025-06-30				Unaudited abridged accounts for the year ended 30 June 2025
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	StartDateForPeriodCoveredByReport	uk-bus	text		2025-06-30	1			1.7.24
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime	direp	text	2024-07-01	2025-06-30				These accounts have been prepared and delivered in accordance with the provisions applicable to companies subject to the small companies regime.
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies	direp	text	2024-07-01	2025-06-30				For the year ending 30 June 2025 the company was entitled to exemption under section 477 of the Companies Act 2006 relating to small companies.
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct	direp	text	2024-07-01	2025-06-30				The directors acknowledge their responsibilities for complying with the requirements of the Act with respect to accounting records and the preparation of accounts.
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	StatementThatMembersHaveAgreedToPreparationAbridgedAccountsUnderSection444CompaniesAct2006	direp	text	2024-07-01	2025-06-30				The members have agreed to the preparation of abridged accounts for this accounting period in accordance with Section 444(2A).
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit	direp	text	2024-07-01	2025-06-30				The members have not required the company to obtain an audit in accordance with section 476 of the Companies Act 2006.
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment	core	num	2024-07-01	2025-06-30			GBP	0
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	TotalAssetsLessCurrentLiabilities	core	num		2024-06-30	1		GBP	235142
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	TotalAssetsLessCurrentLiabilities	core	num		2025-06-30	1		GBP	198146
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	TotalIncreaseDecreaseFromRevaluationsPropertyPlantEquipment	core	num	2024-07-01	2025-06-30			GBP	0
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	TotalInventories	core	num		2024-06-30	1		GBP	5360
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	TotalInventories	core	num		2025-06-30	1		GBP	13652
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	UKCompaniesHouseRegisteredNumber	uk-bus	text	2024-07-01	2025-06-30				07914690
+darlington-fc	07914690	o4QH97cRuqaOwATjAqdOcpOlUTnuOPFyrvuJYrbD5LI	2026-03-31	2025-06-30	_GoingConcernMaterialUncertainty	derived	text						none found
