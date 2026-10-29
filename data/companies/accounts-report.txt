@@ -3,12 +3,12 @@ Documents: 278 iXBRL, 101 PDF only
 INFO     filings index: 3101 accounts filings -> filings.tsv
 INFO     facts: 40519 from 278 documents read now, 0 kept from earlier runs -> facts/
 WARNING  101 filings are PDF only and carry no tagged figures
-INFO     rows: 275 club-seasons read from 278 documents
-INFO        full                   3
-INFO        small_company          201
+INFO     rows: 351 club-seasons read from 278 documents
+INFO        full                   6
+INFO        small_company          206
 INFO        machine rows added     0
-INFO        machine rows rebuilt   204
-INFO        hand rows topped up    60
+INFO        machine rows rebuilt   212
+INFO        hand rows topped up    107
 INFO        field                                   machine    hand+
 INFO        turnover                                      3        0
 INFO        staff_costs                                   1        0
@@ -16,21 +16,21 @@ INFO        operating_profit                              3        0
 INFO        profit_before_tax                             3        0
 INFO        profit_after_tax                              3        0
 INFO        interest_paid                                 3        0
-INFO        employees                                   198        0
-INFO        fixed_assets                                 95        0
-INFO        intangible_assets                            29        0
-INFO        tangible_assets                             145        0
-INFO        current_assets                              184        0
-INFO        cash                                        159        0
-INFO        creditors_within_year                       168        0
-INFO        net_current_assets                          188        0
-INFO        total_assets_less_current_liabilities       176        0
-INFO        creditors_after_year                        121        0
-INFO        net_assets                                  201        0
-INFO        share_capital                               135        0
+INFO        employees                                   200        0
+INFO        fixed_assets                                103        0
+INFO        intangible_assets                            31        0
+INFO        tangible_assets                             153        0
+INFO        current_assets                              192        0
+INFO        cash                                        166        0
+INFO        creditors_within_year                       176        0
+INFO        net_current_assets                          196        0
+INFO        total_assets_less_current_liabilities       184        0
+INFO        creditors_after_year                        126        0
+INFO        net_assets                                  209        0
+INFO        share_capital                               141        0
 INFO        directors_pay                                 1        0
 INFO        amortisation                                  9        0
-INFO        debtors                                     157        0
+INFO        debtors                                     163        0
 INFO        bank_loans                                   62        0
 INFO        owed_to_group                                25        0
 INFO        other_creditors                             113        0
@@ -44,21 +44,30 @@ INFO        fixed_asset_depreciation                    122        0
 INFO        intangible_additions                          7        0
 INFO        accounts_type                               204        0
 INFO        audited                                     204        0
-INFO        going_concern                                 3        0
-INFO        pnl_withheld                                 81        0
+INFO        going_concern                                 4        0
+INFO        pnl_withheld                                 82        0
 INFO     balance sheet check: 4 rows had a missing minus sign corrected, 9 do not add up and are flagged
-INFO     11 hand rows left alone - the filing is a different entity:
+INFO     29 hand rows left alone - the filing is a different entity:
+INFO         brighton-and-hove-albion-fc 2024: row names Brighton & Hove Albion Holdings Limited, filing is Brighton And Hove Albion Football Club,Limited(The)
+INFO         brighton-and-hove-albion-fc 2025: row names Brighton & Hove Albion Holdings Limited, filing is Brighton And Hove Albion Football Club,Limited(The)
+INFO         bristol-rovers-fc 2024: row names BRFC (1883) Ltd, filing is Bristol Rovers Football Club Limited
 INFO         bristol-rovers-fc 2025: row names BRFC (1883) Ltd, filing is BRISTOL ROVERS FOOTBALL CLUB LIMITED
 INFO         carlisle-united-fc 2025: row names ?, filing is CARLISLE UNITED ASSOCIATION FOOTBALL CLUB (1921) LIMITED
+INFO         chelsea-fc 2024: row names Chelsea FC Holdings Limited, filing is Chelsea Football Club Limited
+INFO         chelsea-fc 2025: row names Chelsea FC Holdings Limited, filing is Chelsea Football Club Limited
 INFO         cheltenham-town-fc 2024: group filing, and the row does not say whether it records the group or the company
 INFO         cheltenham-town-fc 2025: group filing, and the row does not say whether it records the group or the company
 INFO         exeter-city-fc 2025: group filing, and the row does not say whether it records the group or the company
+INFO         fulham-fc 2024: row names ?, filing is Fulham Football Club Limited
+INFO         fulham-fc 2025: row names ?, filing is Fulham Football Club Limited
 INFO         ipswich-town-fc 2025: row names ?, filing is IPSWICH TOWN FOOTBALL CLUB COMPANY LIMITED
 INFO         newport-county-fc 2024: row names ?, filing is NEWPORT ASSOCIATION FOOTBALL CLUB LIMITED
 INFO         portsmouth-fc 2025: row names Portsmouth Football Club Limited, filing is PORTSMOUTH CITY FOOTBALL CLUB LIMITED
+INFO         preston-north-end-fc 2024: row names ?, filing is Preston North End Football Club,Limited(The)
+INFO         preston-north-end-fc 2025: row names ?, filing is Preston North End Football Club,Limited(The)
 INFO         reading-fc 2025: group filing, and the row does not say whether it records the group or the company
 INFO         shrewsbury-town-fc 2025: group filing, and the row does not say whether it records the group or the company
-INFO         tranmere-rovers-fc 2025: group filing, and the row does not say whether it records the group or the company
+INFO         southampton-fc 2025: row names ?, filing is Southampton Football Club Limited
 WARNING  1 documents gave no row:
 WARNING      avro-fc                      tagged, but nothing recognised in it - saw AccountingStandardsApplied, AccountsStatusAuditedOrUnaudited, AccountsType, BalanceSheetDate, CountryFormationOrIncorporation, DateAuthorisationFinancialStatementsForIssue, DescriptionPrincipalActivities, DirectorSigningFinancialStatements
 INFO     most common numeric concepts no field reads (see accounts-concepts.tsv):
@@ -87,6 +96,38 @@ INFO           37 filings  PensionOtherPost-employmentBenefitCostsOtherPensionCo
 INFO           35 filings  BankBorrowings
 INFO           35 filings  TaxExpenseCreditApplicableTaxRate
 INFO           34 filings  ComprehensiveIncomeExpense
-INFO     wrote 377 rows to club_finances.csv
+INFO     wrote 385 rows to club_finances.csv
 INFO     link check: filing document HTTP 200 - https://find-and-update.company-information.service.gov.uk/company/01287721/filing-history/MzUxMjk0MjMwN2FkaXF6a2N4/document?format=pdf&download=0
 INFO     link check: accounts list HTTP 200 - https://find-and-update.company-information.service.gov.uk/company/01287721/filing-history?category=accounts
+
+INFO     78 of 101 filings gave a balance sheet that adds up -> figures.tsv
+INFO     cross-check: prior-year net assets agree with the earlier filing's own in 30 of 32 pairs (a restated year is expected to differ)
+INFO         brighton-and-hove-albion-fc plain: -768,000 in the latest, -23,665,000 in its own filing
+INFO         cardiff-city-fc group: -31,041,000 in the latest, -30,772,000 in its own filing
+INFO         basingstoke-town-fc__2               no balance sheet found
+INFO         birmingham-city-fc__1                no balance sheet found
+INFO         birmingham-city-fc__2                no balance sheet found
+INFO         bournemouth-fc__1                    no balance sheet found
+INFO         charlton-athletic-fc__2              plain: does not balance: I2,I3
+INFO         everton-fc__2                        unlabelled block beside another - level unknown; unlabelled block beside another - level unknown
+INFO         forest-green-rovers-fc__1            no balance sheet found
+INFO         leicester-city-fc__1                 group: does not balance: I2,I3; company: does not balance: I1,I2,I3
+INFO         lewes-fc__2                          no balance sheet found
+INFO         luton-town-fc__1                     plain: does not balance: I3
+INFO         manchester-united-fc__1              no balance sheet found
+INFO         manchester-united-fc__2              no balance sheet found
+INFO         queens-park-rangers-fc__1            plain: does not balance: I1,I2,I3
+INFO         queens-park-rangers-fc__2            plain: does not balance: I1,I2,I3
+INFO         rotherham-united-fc__1               plain: does not balance: I3
+INFO         sheffield-united-fc__1               plain: does not balance: I2
+INFO         sheffield-united-fc__2               plain: does not balance: I2
+INFO         solihull-moors-fc__2                 plain: does not balance: I2,I3,I4
+INFO         southampton-fc__2                    plain: does not balance: I1,I2
+INFO         tottenham-hotspur-fc__1              company: does not balance: I1,I3
+INFO         tottenham-hotspur-fc__2              company: does not balance: I1,I3
+INFO         truro-city-fc__1                     plain: only 1 identity checkable
+INFO         truro-city-fc__2                     plain: only 1 identity checkable
+INFO           35 filings  BankBorrowings
+INFO           35 filings  TaxExpenseCreditApplicableTaxRate
+INFO           34 filings  ComprehensiveIncomeExpense
+INFO     wrote 385 rows to club_finances.csv
