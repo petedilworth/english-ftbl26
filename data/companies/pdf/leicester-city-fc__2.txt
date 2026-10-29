@@ -2,7 +2,7 @@ source: Companies House filing, leicester-city-fc__2.pdf
 document: 7ujno_p2awl9gxxsmXPhqdR2F1v-WTyffzptdVJNMv8
 made_up_date: 2024-06-30
 method: ocr
-pages_read: 12 of 70
+pages_read: 70 of 70
 
 Docusign Envelope 1D: AC454339-E8CF-43EC-A1F2-C3AEASEQ0CDO
 
@@ -475,4 +475,2477 @@ Chief Executive
 19 December 2024
 
 10
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEA9E00CDO
+Leicester City Football Club Limited
+Directors’ report for the year ended 30 June 2024
+The directors present their report and the audited consolidated financial statements for the
+year ended 30 June 2024.
+Future developments
+The future developments of the Club are detailed within the strategic report on page 5. ;
+Engagement with employees, suppliers, customers and other stakeholders
+Engagement with employees, suppliers, customers and other stakeholders are detailed
+
+. within the strategic report on pages 8 to 10.
+
+Financial risk management
+The Company's operations expose it to a variety of financial risks that include the effects of
+changes in liquidity risk, interest rate risk, exchange rate risk and credit risk. The Company
+has in place a risk management programme that seeks to limit the adverse effects on the
+financial performance of the Company by monitoring levels of risk.
+Given the size of the Company, the directors have not delegated the responsibility of
+monitoring financial risk management to a sub-committee of the board. The policies set by
+the board of directors are implemented by the Company's finance department.
+Liquidity and interest rate risk :
+The Company manages its liquidity risk on a weekly basis through cash monitoring and
+cash flow forecasting to ensure that it has sufficient resources to meet its obligations. The
+ultimate controlling party has confirmed that it will not require the repayment of any
+amounts owing that will lead to the Club requiring further external funding.
+
+: In order to ensure stability of cash flows and manage interest rate risk, the Company has a
+policy of maintaining the majority of its long term debt at fixed rates. The Company does not
+use other derivative financial instruments to manage interest rate costs.
+
+Further detail for the amounts owed to the parent company and companies under common
+. control and bank loans and overdrafts, which are the principal sources of funding, can be
+
+found in note 16.
+
+Credit risk
+
+The Company manages credit risk with respective counterparties as follows:
+
+e Football clubs: the Premier League and EFL rules require football creditors to be
+paid in full in any insolvency event;
+
+e Corporate partners are reviewed for their credit worthiness using commercially
+available credit rating facilities and, where necessary, services are only provided
+after payment has been received; and
+
+« Personal credit is only given in controlled circumstances with direct debit systems,
+and compliance with agreed payments rigorously monitored.
+
+"1
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEASE00CDO
+Leicester City Football Club Limited
+Directors’ report
+for the year ended 30 June 2024 (continued)
+Exchange rate risk
+The Company manages its exchange risk by reviewing its net asset and liability exposure in
+various currencies and where it is believed that net exposure needs to be hedged the Club
+enters into forward hedging contracts.
+Going concern
+The Company was loss making at an operating level in the 2023/24 financial year.
+The directors have considered the working capital requirements of the Company for the
+2024/25 and 2025/26 seasons including investment in and the cost of the playing squad
+and the Club's long term capital projects. As part of their considerations the directors have
+reviewed in detail the cash flow forecasts prepared. These forecasts show that the
+Company is reliant on continued funding from external banks, proceeds from player trading
+and/ or the holding company, KPI and/ or its ultimate shareholders.
+Since the year end the Company has settled the outstanding amount due on the four year :
+loan facility with Macquarie Bank and entered into a new three year agreement in
+September 2024. The Company has also entered into short term discounting facilities with
+Macquarie bank to bring forward the proceeds from the sale of one player and Premier
+League revenue distributions.
+The Directors have also considered the Club’s cashflow requirements in a severe but
+plausible scenario. Sensitivities considered in the forecasts included variances in finishing
+position, net player transfer spend and the non availability of future banking facilities.
+To cover the working capital needs of the Club in that scenario the Club has access to
+£43.5m undrawn standby facilities with KPI, as well as an undrawn future share
+subscription agreement for 76m shares at £1 per share entered into on 21 April 2023 which
+can be further called on if necessary to support the Club’s cash flow in the unlikely event
+
+: that all these negative events come to pass. . . .
+
+Furthermore, KPI has confirmed that existing liabilities will not be called in for the
+foreseeable future and not less than 12 months from the date of approval of these
+consolidated financial statements.
+Based on the above the Directors therefore have a reasonable expectation that the
+necessary funding will be available when required and the consolidated financial
+statements have therefore been prepared on a going concern basis.
+Dividend
+No dividends will be distributed for the year ended 30 June 2024 (2023: Nil).
+12 :
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEA9E00CDO
+Leicester City Football Club Limited
+Directors’ report
+for the year ended 30 June 2024 (continued)
+Directors
+The directors of the Company who were in office during the year and up to the date of
+signing the consolidated financial statements were:
+Aiyawatt Srivaddhanaprabha (Chairman)
+Apichet Srivaddhanaprabha (Vice Chairman)
+Shilai Liu (Vice Chairman)
+Susan Whelan
+Directors’ indemnity insurance
+Throughout the year and up to the date of signing the financial statements, the Company
+maintains cover under a qualifying third-party indemnity for all directors and officers against
+liabilities which may be incurred by them whilst acting as directors or officers.
+Employees :
+Employment policies are described in the strategic report on page 9.
+Disabled persons
+The Company recognises its responsibility to employ disabled persons in suitable
+. employment and gives full and fair consideration to applications for employment made by
+such persons, having regard to their particular aptitudes and abilities.
+Any employee who becomes disabled is encouraged to remain in the Company's
+employment, in the same job if this is practicable. If a change of job is necessary, such an
+employee is considered for any suitable alternative work which is available and any
+necessary training is arranged. Disabled employees are treated equally with all employees
+: in respect of their eligibility for training, career development and promotion. : :
+
+Environmental
+
+2024 2023
+UK energy use in kWh 16,290,783 17,432,501
+GHG emissions associated with energy use (tCO2e) Scope 1 1,616 1,878
+GHG emissions associated with energy use (tCO2e) Scope 2 1,674 1,550
+GHG emissions associated with energy use (tCO2e) Scope 3 145 142
+Intensity measurement (m? building area) 73,443 73,443
+Emissions intensity ratio - tCO2/m? building area 0.05 0.05
+The Emissions intensity ratio has been calculated using m? building area to provide a
+consistent measurement comparative of energy efficiency performance as the Club
+expands its operations through developing and utilising further training ground and stadium
+facilities.
+13
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEA9E00CDO
+Leicester City Football Club Limited
+Directors’ report
+for the year ended 30 June 2024 (continued)
+Environmental (continued)
+
+: The Group has continued to monitor and review energy usage and associated carbon
+dioxide emissions. We have undertaken mandatory assessments of our energy use in
+accordance with the ESOS regulations 2018.
+
+Actions taken arising from this include installing PIR and motion detectors for lighting;
+rolling out a CAFM system to better monitor maintenance, control down time and reduce
+wasteful operating times; implementing an upgraded BMS system which provides more
+control over plant and machinery; and replacing two inefficient water heaters with modern
+plate heat exchangers. Further actions are being undertaken to reduce usage across the
+business.
+The Club's total energy usage has increased since the 2020/21 season following the .
+completion of the Seagrave training ground property which was first occupied in December
+2020. The Club has also utilised new sites adjacent to the stadium increasing the building
+area by 7,133 m? since the last reporting period.
+As part of our 100% renewable electricity contracts, we continue to monitor usage and :
+target reductions on high usage areas like pumps and motors. The payback on investment
+in solar PV electricity generation has improved so we continue to consider the
+implementation of such generation.
+The Club has followed the 2019 HM Government Environmental Reporting Guidelines and
+GHG Reporting Protocol — Corporate Standard. We have also used the 2023 UK
+Government's Conversion Factors for Company Reporting including using an operational
+approach to define our boundary.
+The electricity and gas data has been recorded over a 12-month period from May 2023 to
+April 2024. The data was collated directly from monthly invoices and a consumption report.
+Company transport data was generated from company fuel cards and for other travel from
+an estimated milage travelled based on each vehicle type’s average MPG and the amount
+of petrol/ diesel consumed.
+
+. All subsidiaries are covered by these figures and all are owned 100%.
+Charitable donations
+The Company has made total charitable donations in the year of £518,000 (2023: £69,000).
+The Club supports various charities through its own charity, the VS Foundation (formerly
+the LCFC Foxes Foundation). The Club provides free administration, management and
+accounting support.
+The Club also has several match-day collections during every season. Collections for St
+John's Ambulance, The Royal British Legion and the VS Foundation have either been
+
+. undertaken in the 2023/24 season or will be undertaken in the 2024/25 season.
+
+14 .
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEASEOOCDO
+
+Leicester City Football Club Limited : ;
+Directors’ report
+for the year ended 30 June 2024 (continued)
+Charitable donations (continued)
+The company also supports Leicester City Football Club Trust (operating as Leicester City
+in the Community), a charitable trust aimed at the promotion and provision of sport,
+education, health and football services for the community in the City of Leicester and in the
+Counties of Leicestershire and Rutland. The Club contributed significant in kind
+contributions during the year.
+Subsequent events
+Since the year end the Club has invested £1.7m in its facilities.
+
+. During the summer 2024 transfer windows the Club has contracted for the purchase, sale
+
+: and loan of various players. Since 30 June 2024 the Club have entered into a short term
+
+discounting facility with Macquarie bank to bring forward the proceeds from the sale of
+Keirnan Dewsbury-Hall. :
+Since 30 June 2024 the club have entered into a short term discounting facility with
+Macquarie bank to bring forward the proceeds from the Premier League shared revenue
+distributions.
+The net expenditure of the purchase, sale and loans of various players occurring since 30
+June 2024, taking into account the applicable levies and contingent fees but excluding
+value added tax is £66.7m (2023: net income of £9.1m). These transfers and costs will be
+accounted for in the year ending 30 June 2025.
+15
+a
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEASEOOCDO
+Leicester City Football Club Limited
+Directors’ report
+for the year ended 30 June 2024 (continued)
+Statement of directors’ responsibilities in respect of the financial statements
+The directors are responsible for preparing the Annual report and consolidated financial
+statements in accordance with applicable law and regulation.
+Company law requires the directors to prepare financial statements for each financial year.
+Under that law the directors have prepared the group and the company financial statements
+in accordance with United Kingdom Generally Accepted Accounting Practice (United
+Kingdom Accounting Standards, comprising FRS 102 “The Financial Reporting Standard
+applicable in the UK and Republic of Ireland”, and applicable law).
+Under company law, directors must not approve the financial statements unless they are
+satisfied that they give a true and fair view of the state of affairs of the group and company
+and of the profit or loss of the group for that year. In preparing the financial statements, the
+directors are required to:
+¢ select suitable accounting policies and then apply them consistently;
+¢ state whether applicable United Kingdom Accounting Standards, comprising FRS
+102 have been followed, subject to any material departures disclosed and explained
+in the financial statements;
+e¢ make judgements and accounting estimates that are reasonable and prudent; and
+¢ prepare the financial statements on the going concern basis unless it is
+inappropriate to presume that the group and company will continue in business.
+The directors are responsible for safeguarding the assets of the group and company and
+hence for taking reasonable steps for the prevention and detection of fraud and other
+irregularities.
+The directors are also responsible for keeping adequate accounting records that are
+sufficient to show and explain the group's and company's transactions and disclose with
+reasonable accuracy at any time the financial position of the group and company and
+. enable them to ensure that the financial statements comply with the Companies Act 2006. .
+The directors are responsible for the maintenance and integrity of the company’s website.
+Legislation in the United Kingdom governing the preparation and dissemination of financial
+statements may differ from legislation in other jurisdictions.
+Directors’ confirmations
+In the case of each director in office at the date the directors’ report is approved:
+eso far as the director is aware, there is no relevant audit information of which the
+group’s and company’s auditors are unaware; and
+e they have taken all the steps that they ought to have taken as a director in order to
+make themselves aware of any relevant audit information and to establish that the
+group’s and company's auditors are aware of that information.
+16
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEA9E00CD0O
+Leicester City Football Club Limited
+Directors’ report
+for the year ended 30 June 2024 (continued)
+Independent auditors
+A resolution to re-appoint PricewaterhouseCoopers LLP as auditors to the company will be
+proposed at the annual general meeting.
+On behalf of the Board
+DocuSigned by:
+[som Whelan
+GECA2822CFS04F0... .
+Susan Whelan
+Chief Executive
+19 December 2024
+Registered number: 04593477
+: 7
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEASE00CDO
+
+Leicester City Football Club Limited
+
+Independent auditors’ report to the members of Leicester City
+
+Football Club Limited
+
+Report on the audit of the financial statements
+
+Opinion
+
+In our opinion, Leicester City Football Club Limited’s group financial statements and
+
+company financial statements (the “financial statements”):
+
+. give a true and fair view of the state of the group’s and of the company's affairs as at
+30 June 2024 and of the group’s loss and the group’s cash flows for the year then
+ended;
+
+. have been properly prepared in accordance with United Kingdom Generally Accepted
+Accounting Practice (United Kingdom Accounting Standards, including FRS 102 “The
+Financial Reporting Standard applicable in the UK and Republic of Ireland”, and
+applicable law); and
+
+. have been prepared in accordance with the requirements of the Companies Act
+2006.
+
+We have audited the financial statements, included within the Annual report and
+
+consolidated financial statements (the “Annual Report”), which comprise: the Consolidated
+
+and Company Balance sheets as at 30 June 2024; the Consolidated Profit and loss
+account, the Consolidated statement of comprehensive income, the Consolidated and
+
+Company statements of changes in equity and the Consolidated cash flow statement for the
+
+year then ended; and the notes to the financial statements, which include a description of
+
+the significant accounting policies.
+
+Basis for opinion
+
+We conducted our audit in accordance with International Standards on Auditing (UK) (“ISAs
+
+. _ (UK)”) and applicable law. Our responsibilities under ISAs (UK) are further described in the .
+
+Auditors’ responsibilities for the audit of the financial statements section of our report. We
+
+believe that the audit evidence we have obtained is sufficient and appropriate to provide a
+
+| basis for our opinion.
+
+Independence
+
+We remained independent of the group in accordance with the ethical requirements that are
+
+relevant to our audit of the financial statements in the UK, which includes the FRC’s Ethical
+
+Standard, and we have fulfilled our other ethical responsibilities in accordance with these
+
+requirements.
+
+Conclusions relating to going concern
+
+Based on the work we have performed, we have not identified any material uncertainties
+
+relating to events or conditions that, individually or collectively, may cast significant doubt
+
+on the group's and the company’s ability to continue as a going concern for a period of at
+
+least twelve months from when the financial statements are authorised for issue. :
+
+18
+a
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEASECOCDO .
+Leicester City Football Club Limited
+Independent auditors’ report to the members of Leicester City
+Football Club Limited (continued)
+Conclusions relating to going concern (continued)
+In auditing the financial statements, we have concluded that the directors’ use of the going
+concern basis of accounting in the preparation of the financial statements is appropriate.
+However, because not all future events or conditions can be predicted, this conclusion is
+not a guarantee as to the group's and the company's ability to continue as a going concern.
+Our responsibilities and the responsibilities of the directors with respect to going concern
+are described in the relevant sections of this report.
+Reporting on other information ;
+The other information comprises all of the information in,the Annual Report other than the
+financial statements and our auditors’ report thereon. The directors are responsible for the
+other information. Our opinion on the financial statements does not cover the other
+information and, accordingly, we do not express an audit opinion or, except to the extent
+otherwise explicitly stated in this report, any form of assurance thereon.
+In connection with our audit of the financial statements, our responsibility is to read the
+other information and, in doing so, consider whether the other information is materially
+inconsistent with the financial statements or our knowledge obtained in the audit, or
+otherwise appears to be materially misstated. if we identify an apparent material
+inconsistency or material misstatement, we are required to perform procedures to conclude
+whether there is a material misstatement of the financial statements or a material
+misstatement of the other information. If, based on the work we have performed, we
+conclude that there is a material misstatement of this other information, we are required to
+report that fact. We have nothing to report based on these responsibilities.
+With respect to the Strategic report and Directors’ report, we also considered whether the
+: disclosures required by the UK Companies Act 2006 have been included. : :
+Based on our work undertaken in the course of the audit, the Companies Act 2006 requires
+us also to report certain opinions and matters as described below. :
+Strategic report and Directors’ report
+In our opinion, based on the work undertaken in the course of the audit, the information
+given in the Strategic report and Directors’ report for the year ended 30 June 2024 is
+consistent with the financial statements and has been prepared in accordance with
+applicable legal requirements.
+In light of the knowledge and understanding of the group and company and their
+environment obtained in the course of the audit, we did not identify any material
+misstatements in the Strategic report and Directors' report.
+19
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEASEO0CDO
+
+Leicester City Football Club Limited
+
+Independent auditors’ report to the members of Leicester City
+
+Football Club Limited (continued)
+
+Responsibilities for the financial statements and the audit
+
+Responsibilities of the directors for the financial statements
+
+As explained more fully in the Statement of directors’ responsibilities in respect of the
+
+financial statements, the directors are responsible for the preparation of the financial
+
+statements in accordance with the applicable framework and for being satisfied that they
+give a true and fair view. The directors are also responsible for such internal control as they
+determine is necessary to enable the preparation of financial statements that are free from
+material misstatement, whether due to fraud or error.
+
+In preparing the financial statements, the directors are responsible for assessing the
+
+group’s and the company's ability to continue as a going concern, disclosing, as applicable,
+
+matters related to going concern and using the going concern basis of accounting unless
+the directors either intend to liquidate the group or the company or to cease operations, or
+have no realistic alternative but to do so.
+
+Auditors’ responsibilities for the audit of the financial statements
+
+Our objectives are to obtain reasonable assurance about whether the financial statements
+
+as a whole are free from material misstatement, whether due to fraud or error, and to issue
+
+an auditors’ report that includes our opinion. Reasonable assurance is a high level of
+assurance, but is not a guarantee that an audit conducted in accordance with ISAs (UK) will
+always detect a material misstatement when it exists. Misstatements can arise from fraud or
+
+error and are considered material if, individually or in the aggregate, they could reasonably .
+
+be expected to influence the economic decisions of users taken on the basis of these
+
+financial statements.
+
+Irregularities, including fraud, are instances of non-compliance with laws and regulations.
+
+We design procedures in line with our responsibilities, outlined above, to detect material
+
+: misstatements in respect of irregularities, including fraud. The extent to which our :
+procedures are capable of detecting irregularities, including fraud, is detailed below.
+
+Based on our understanding of the group and industry, we identified that the principal risks
+
+of non-compliance with laws and regulations related to the risk surrounding non-compliance
+
+with the profitability and sustainability rules (P&S) by the FA Premier League and
+employment legislation, and we considered the extent to which non-compliance might have
+
+a material effect on the financial statements. We also considered those laws and
+
+regulations that have a direct impact on the financial statements such as taxation legislation
+
+and the Companies Act 2006. We evaluated management's incentives and opportunities for
+fraudulent manipulation of the financial statements (including the risk of override of
+controls), and determined that the principal risks were related to manipulation of the
+financial statements and P&S submission through journal entries, and bias shown in
+judgements and estimates to further manipulate the above. Audit procedures performed by
+the engagement team included:
+
+° Testing journal entries through a risk-based approach, targeting journals exhibiting
+unusual account combinations, particularly those crediting revenue with unexpected ,
+offsetting accounts; :
+
+20
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEASEO0CDO
+Leicester City Football Club Limited
+. Independent auditors’ report to the members of Leicester City
+Football Club Limited (continued)
+, Responsibilities for the financial statements and the audit (continued)
+
+Auditors’ responsibilities for the audit of the financial statements (continued)
+
+. Discussions with management in relation to known or suspected instances of non- ,
+compliance with laws and regulation and fraud;
+
+° Inquiries of management regarding compliance with P&S rules, including
+consideration of the implications on the financial statements and review of specific
+disclosures included with the financial statements;
+
+. Testing of significant estimates and judgements which affect the financial statements,
+verifying the underlying data and accuracy of the models used and challenge of
+alternative viewpoints that could feasibly be adopted;
+
+. Incorporating elements of unpredictability into the nature, timing and extent of testing;
+and
+
+° Review of the financial statements for disclosures required by both the Companies
+Act 2006 and the accounting standards.
+
+There are inherent limitations in the audit procedures described above. We are less likely to
+
+become aware of instances of non-compliance with laws and regulations that are not
+
+closely related to events and transactions reflected in the financial statements. Also, the risk
+of not detecting a material misstatement due to fraud is higher than the risk of not detecting
+one resulting from error, as fraud may involve deliberate concealment by, for example,
+forgery or intentional misrepresentations, or through collusion.
+
+A further description of our responsibilities for the audit of the financial statements is located
+
+on the FRC's website at: www.frc.org.uk/auditorsresponsibilities. This description forms part
+
+of our auditors’ report.
+
+Use of this report
+
+: - This report, including the-opinions, has been prepared for and only for the company's :
+
+members as a body in accordance with Chapter 3 of Part 16 of the Companies Act 2006
+
+and for no other purpose. We do not, in giving these opinions, accept or assume
+
+responsibility for any other purpose or to any other person to whom this report is shown or
+into whose hands it may come save where expressly agreed by our prior consent in writing.
+
+Other required reporting
+
+Companies Act 2006 exception reporting
+
+Under the Companies Act 2006 we are required to report ta you if, in our opinion:
+
+. we have not obtained all the information and explanations we require for our audit; or
+
+. adequate accounting records have not been kept by the company, or returns
+adequate for our audit have not been received from branches not visited by us; or :
+
+. certain disclosures of directors’ remuneration specified by law are not made; or
+
+° the company financial statements are not in agreement with the accounting records
+
+, and returns. . :
+
+21
+eee ee
+Leicester City Football Club Limited
+Independent auditors’ report to the members of Leicester City ‘
+Football Club Limited (continued)
+Other required reporting (continued) :
+Companies Act 2006 exception reporting (continued)
+We have no exceptions to report arising from this responsibility.
+Matt Palmer (Senior Statutory Auditor)
+for and on behalf of PricewaterhouseCoopers LLP
+Chartered Accountants and Statutory Auditors
+Birmingham
+19 December 2024
+22
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEASEQOCDO
+Leicester City Football Club Limited
+Consolidated Profit and loss account
+for the year ended 30 June 2024
+Note Yearended Restated
+30 June 13 months
+ended
+30 June
+2024 2023
+£7000 £'000
+Turnover 2 105,348 177,326
+Cost of sales (172,917) (299,481)
+Gross loss (67,569) (122,155)
+Administrative expenses (25,992) (26,662)
+Exceptional costs , 3 - (880)
+Other operating income 12,744 194
+Loss on disposal of fixed assets 3 (8) -
+Profit on disposal of player registrations 3 71,841 72,010
+Operating loss 3 (8,984) (77,493)
+Interest receivable and similar income 4 3,798 1,412
+Interest payable and similar expenses 4 (14,244) (13,449)
+Net interest payable 4 (10,446) (12,037)
+Loss before taxation (19,430) (89,530)
+Tax on loss 6 495 -
+Loss for the financial year (18,935) (89,530)
+The above is in relation to continuing activities.
+Refer to note 23 for an explanation of the prior period restatement.
+Consolidated statement of comprehensive income
+for the year ended 30 June 2024
+: Note Year ended Restated
+30 June = 13 months
+ended
+30 June
+2024 2023
+£000 £'000
+Loss for the financial year (18,935) (89,530)
+Other comprehensive income
+Deferred tax current year charge 6 (495) -
+Revaluation Surplus 8 2,970 :
+Total comprehensive expense for the year (16,460) (89,530)
+23
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEA9E00CDO
+Leicester City Football Club Limited
+Consolidated Balance sheet ‘
+as at 30 June 2024
+Note Restated
+2024 2023
+£000 £'000
+Fixed assets
+Intangible assets 7 107,061 100,495
+Tangible assets 8 202,209 204,691
+309,270 305,186
+Current assets
+Inventories 1,968 2,510
+Debtors (including £47,952,000 (2023: £24,178,000) 10 120,809 88,935
+falling due after more than one year)
+Cash at bank and in hand 7,088 8,235
+129,865 99,680
+
+Creditors: amounts falling due within one year 11 (257,231) (172,107)
+Net current liabilities (127,366) (72,427)
+Total assets less current liabilities 181,904 232,759
+Creditors: amounts falling due after more than one 12 (124,820) (163,381)
+year
+Net assets 57,084 69,378
+Capital and reserves
+Called up share capital 14 - 306,993 306,993
+Share premium account 8,475 8,475
+Capital Contribution . 4,166 -
+Revaluation reserve 42,006 39,744 _
+
+: Profit and loss account (304,556) (285,834)
+
+; Total shareholders’ funds : 57,084 69,378 :
+The notes on pages 29 to 68 are an integral part of these consolidated financial statements.
+Refer to note 23 for an explanation of the prior period restatement.
+The consolidated financial statements on pages 23 to 68 were approved by the board of
+directors on 19 December 2024 and signed on its behalf by:
+DocuSigned by:
+& Whelan
+GECA2822CF504F0... .
+
+Susan Whelan
+Chief Executive
+Registered number: 04593477 ‘
+24
+Oocusign Envelope !D: AC454339-E8CF-43EC-A1F2-C3AEA9E00CDO
+Leicester City Football Club Limited
+Company Balance sheet :
+as at 30 June 2024
+Note Restated
+2024 2023
+£000 £'000
+Fixed assets
+Intangible assets 7 106,985 100,453
+Tangible assets 8 202,178 204,664
+Investments i] : :
+309,163 305,117
+Current assets
+Inventories 1,968 2,510
+Debtors (including £47,952,000 (2023: £24,178,000) 10 120,446 97,420
+‘ falling due after more than one year)
+Cash at bank and in hand 6,997 8,229
+129,411 108,159
+Creditors: amounts falling due within one year 1 (256,580) (171,980)
+Net current liabilities (127,169) (63,821)
+Total assets less current liabilities 181,994 241,296
+Creditors: amounts falling due after more than one 12 (124,820) (163,381)
+. year .
+Net assets 57,174 77,915
+Capital and reserves
+Called up share capital 14 306,993 306,993
+Share premium account 8,475 8,475
+Capital Contribution 4,166 -
+Revaluation reserve 42,006 39,744
+Profit and loss account (304,466) (277,297)
+: Total shareholders’ funds : | 57,174 77,915
+The Company's loss for the financial year amounted to £27,382,000 (Restated 2023:
+£85,374,000).
+The notes on pages 29 to 68 are an integral part of these financial statements.
+Refer to note 23 for an explanation of the prior period restatement.
+The financial statements on pages 23 to 68 were approved by the board of directors on 19
+December 2024 and signed on its behalf by:
+DocuSigned by:
+GECA2822CF504F0... :
+Susan Whelan
+. Chief Executive . .
+Registered number: 04593477
+25
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEASE00CDO
+Leicester City Football Club Limited
+Consolidated statement of changes in equity for the year ended 30
+June 2024 ;
+Called up = Share Profit and Total
+share premium Capital Revaluation loss shareholders’
+capital accountContribution reserve accountfunds/(deficit)
+£000 = £000 £'000 £7000 £'000 £'000
+Balance as at 01 June 2022 112,756 8,475 - 40,026 (206,115) (44,858)
+as previously reported
+Restatement (see note 23) - : - - 9,529 9,529
+Restated balance as at 112,756 8,475 - 40,026 (196,586) (35,329)
+01 June 2022
+Loss for the financial period - - - - (89,719) (89,719)
+as previously reported
+Restatement (see note 23) - - - - 189 189
+Restated loss for the financial - - - - (89,530) (89,530)
+period
+Other comprehensive income
+for the period - - - - - -
+Transfer to profit and loss
+account - - : (282) 282 -
+Debt converted to equity 194,237 - - - - 194,237
+Balance as at 30 June 2023 306,993 8,475 - 39,744 (285,834) 69,378
+Loss for the financial year : - - - (18,935) (18,935)
+Other comprehensive income -
+for the year - - 2,970 (495) 2,475
+. Transfer to profit and loss , - , ,
+account - - (708) 708 -
+Capital Contribution - - 4,166 - - 4,166
+Balance as at 30 June 2024 306,993 8,475 4,166 42,006 (304,556) 57,084
+Refer to note 23 for an explanation of the prior period restatement.
+26
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEASE00CDO
+Leicester City Football Club Limited
+Company statement of changes in equity for the year ended 30
+June 2024
+Called Restated Restated
+up Share Profit and Total
+share premium Capital Revaluation loss shareholders’
+capital account Contribution reserve account funds/(deficit)
+£000 £000 £'000 £000 £000 £'000
+Balance as at 01 June 2022 112,756 8,475 - 40,026 (201,734) (40,477)
+as previously reported
+Restatement (see note 23) - - - - 9,529 9,529
+Restated balance as at 112,756 8,475 - 40,026 (192,205) (30,948)
+01 June 2022
+Loss for the financial period - - - - (85,563) (85,563)
+as previously reported
+Restatement (see note 23) : - - : 189 189
+Restated loss for the financial - : - - (85,374) (85,374)
+period
+Other comprehensive income
+for the period - - - - - -
+Transfer to profit and loss
+account - - - (282) 282 -
+Debt converted to equity 194,237 - - - - 194,237
+Balance as at 30 June 2023 306,993 8,475 - 39,744 (277,297) 77,915
+Loss for the financial year - - - - (27,382) (27,382)
+: Other comprehensive income -
+for the year - -. 2,970 (495) 2,475
+Transfer to profit and loss -
+, account , - - : (708) 708 — - :
+: Capital Contribution - - 4,166 - - 4,166
+Balance as at 30 June 2024 306,993 8,475 4,166 42,006 (304,466) 57,174
+The accounting policies and the notes on pages 29 to 68 form part of these financial
+statements.
+Refer to note 23 for an explanation of the prior period restatement.
+, 27
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEASEO0CDO
+Leicester City Football Club Limited
+Consolidated cash flow statement
+for the year ended 30 June 2024
+; Restated
+Yearended 13 months
+30 June ended
+30 June
+. 2024 2022
+£000 £'000
+Cash flow from operating activities (Note 20) (31,850) (54,166)
+Taxation received - -
+Net cash flow used in operating activities {31,850) (54,166) .
+Cash flow from investing activities
+Purchase of tangible fixed assets (1,993) (2,552)
+Purchase of intangible fixed assets (44,466) (56,121)
+Sale of tangible fixed assets 1 -
+Sale of intangible fixed assets 56,082 49,716
+Interest received 563 :
+Net cash generated from / (used in) investing activities 10,187 (8,957)
+Cash flow from financing activities
+. Loan amounts received 79,895 101,759
+Repayment of external loans (55,931) (59,433)
+Interest paid . (3,448) (5,190)
+Net cash generated from financing activities 20,516 37,136
+Net decrease in cash and cash equivalents (1,147) (25,987)
+Cash and cash equivalents at start of year 8,235 34,222
+Cash and cash equivalents at end of year 7,088 8,235
+Cash and cash equivalents consist of:
+
+, Cash at bank and in hand ‘ : 7,088 8,235
+Cash and cash equivalents 7,088 8,235
+Refer to note 23 for an explanation of the prior period restatement.
+
+28
+TT RS
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEASEOOCDO
+Leicester City Football Club Limited
+Notes to the consolidated financial statements
+for the year ended 30 June 2024
+1 Accounting policies
+General information ,
+Leicester City Football Club Limited (“the Company”) is a private company limited by
+shares. The principal activity of the Company continues to be the operation of a
+professional football team.
+The Company is incorporated and registered in England, UK. The address of its registered
+office is King Power Stadium, Filbert Way, Leicester, LE2 7FL.
+Statement of compliance
+The consolidated financial statements of the Company have been prepared in compliance
+with United Kingdom Accounting Standards, including Financial Reporting Standard 102,
+“The Financial Reporting Standard applicable in the United Kingdom and the Republic of
+Ireland” (“FRS 102”) and the Companies Act 2006. .
+Exemptions for qualifying entities under FRS 102 1.11
+FRS 102 allows a qualifying entity certain disclosure exemptions, subject to conditions.
+The Company has taken advantage of the following exemptions in its individual financial
+statements: .
+e from preparing a statement of cash flows, on the basis that it is a qualifying entity
+and the consolidated statement of cash flows, included in these financial
+statements, includes the Company's cash flows; and
+e from the financial instrument disclosures, required under FRS 102 paragraphs,
+11.42, 11.44, 11.45, 11.47, 11.48(a)(iii), 11.48(a)(iv), 11.48(b), 11.48(c), 12.26,
+12.27, 12.29(a), 12.29(b) and 12.29A, as the information is provided in the
+, consolidated financial statement disclosures; and : :
+e from disclosing the Company key management personnel compensation as required
+by FRS 102 paragraph 33.7. :
+_ Summary of significant accounting policies
+The principal accounting policies applied in the preparation of these consolidated financial
+statements are set out below. These policies have been consistently applied to all the
+periods presented, unless otherwise stated.
+Basis of preparation
+The consolidated financial statements have been prepared on the going concern basis,
+under the modified historical cost convention as modified by the revaluation of certain
+assets, and in accordance with the Companies Act 2006 and applicable accounting :
+standards in the United Kingdom.
+29
+I SE -
+ee ee
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEASE00CDO
+' Leicester City Football Club Limited
+Notes to the consolidated financial statements
+for the year ended 30 June 2024 (continued)
+1 Accounting policies (continued)
+Basis of preparation (continued)
+The preparation of consolidated financial statements in conformity with FRS 102 requires
+the use of certain critical accounting estimates. It also requires management to exercise its
+judgement in the process of applying the Company's accounting policies. The areas
+involving a higher degree of judgement or complexity, or areas where assumptions and
+estimates are significant to the consolidated financial statements are also disclosed in this
+note.
+The Company has taken advantage of the exemption in section 408 of the Companies Act
+from presenting its individual profit and loss account.
+The Company extended its accounting year end from 31 May to 30 June in the previous
+accounting period which establishes a profit and loss account for a 13 month accounting
+period to 30 June 2023 compared to a profit and loss account for a 12 month accounting
+period to 30 June 2024. The Balance Sheet is reporting financial information as at 30 June
+2023 and 30 June 2024.
+Basis of consolidation
+The Group financial statements consolidate the financial statements of the Company and its
+subsidiary undertakings drawn up to 30 June each year. The results of subsidiaries
+acquired or sold are consolidated for the years from or to the date on which control passed.
+Business combinations are accounted for under the purchase method. Where a subsidiary
+has different accounting policies to the Group, adjustments are made to those subsidiary
+financial statements to apply the Group’s accounting policies when preparing the
+: consolidated financial statements. Where the subsidiary reporting year differs from the ,
+
+Group the figures are adjusted to reflect the same accounting year. All intra-group
+transactions, balances, income and expenses are eliminated on consolidation.
+A subsidiary is an entity controlled by the Group. Control is the power to govern the
+financial and operating policies of an entity so as to obtain benefits from its activities. Where
+the Group owns less than 50% of the voting powers of an entity but controls the entity by
+virtue of an agreement with other investors which give it control of the financial and
+operating policies of the entity, it accounts for that entity as a subsidiary.
+Business combinations and goodwill
+Business combinations are accounted for by applying the purchase method. The cost of a
+business combination is the fair value of the consideration given, liabilities incurred or
+assumed and of equity iristruments issued plus the costs directly attributable to the
+business combination. Where control is achieved in stages the cost is the consideration at
+the date of each transaction.
+30
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEASE00CDO
+Leicester City Football Club Limited
+Notes to the consolidated financial statements
+for the year ended 30 June 2024 (continued)
+1 Accounting policies (continued)
+Business combinations and goodwill (continued)
+On acquisition of a business, fair values are attributed to the identifiable assets, liabilities
+and contingent liabilities unless the fair value cannot be measured reliably, in which case
+the value is incorporated in goodwill. Intangible assets are only recognised separately from
+goodwill where they are separable and arise from contractual or other legal rights. Where .
+the fair value of contingent liabilities cannot be reliably measured they are disclosed on the
+same basis as other contingent liabilities.
+Goodwill recognised represents the excess of the fair value and directly attributable costs of
+the purchase consideration over the fair values to the Group’s interest in the identifiable net
+assets, liabilities and contingent liabilities acquired. On acquisition, goodwill is allocated to
+cash-generating units (“CGU's”) that are expected to benefit from the combination.
+Goodwill is amortised over its expected useful life which is estimated to be ten years.
+Goodwill is assessed for impairment when there are indicators of impairment and any
+impairment is charged to the income statement. No reversals of impairment are recognised.
+Functional and presentation currency :
+The Company's functional and presentation currency is the pound sterling.
+
+, _ Transactions and balances
+
+Foreign currency transactions are translated into the functional currency using the spot
+exchange rates at the dates of the transactions.
+
+: At each year end foreign currency monetary items are translated using the closing rate. -
+Non-monetary items measured at historical cost are translated using the exchange rate at
+the date of the transaction and non-monetary items measured at fair value are measured
+using the exchange rate when fair value was determined.
+
+Foreign exchange gains and losses resulting from the settlement of transactions and from ;
+the translation at year end exchange rates of monetary assets and liabilities denominated in
+
+foreign currencies are recognised in the profit and loss account.
+
+Going concern
+
+The Company was loss making at an operating level in the 2023/24 financial year.
+
+The directors have considered the working capital requirements of the Company for the
+
+2024/25 and 2025/26 seasons including investment in and the cost of the playing squad
+
+and the Club's long term capital projects. As part of their considerations the directors have
+
+reviewed in detail the cash flow forecasts prepared. These forecasts show that the
+
+Company is reliant on continued funding from external banks, proceeds from player trading ‘
+and/ or the holding company, KPI and/ or its ultimate shareholders.
+
+31
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEA9E00CDO
+Leicester City Football Club Limited
+Notes to the consolidated financial statements
+for the year ended 30 June 2024 (continued)
+1 Accounting policies (continued)
+Going concern (continued)
+Since the year end the Company has settled the outstanding amount due on the four year
+loan facility with Macquarie Bank and entered into a new three year agreement in
+September 2024. The Company has also entered into short term discounting facilities with
+Macquarie bank to bring forward the proceeds from the sale of one player and Premier
+League revenue distributions.
+The Directors have also considered the Club's cashflow requirements in a severe but
+plausible scenario. Sensitivities considered in the forecasts included variances in finishing
+Position, net player transfer spend and the non availability of future banking facilities.
+To cover the working capital needs of the Club in that scenario the Club has access to
+£43.5m undrawn standby facilities with KPI, as well as an undrawn future share
+subscription agreement for 76m shares at £1 per share entered into on 21 April 2023 which
+can be further called on if necessary to support the Club's cash flow in the unlikely event
+that all these negative events come to pass.
+Furthermore, KPI has confirmed that existing liabilities will not be called in for the
+foreseeable future and not less than 12 months from the date of approval of these
+consolidated financial statements.
+
+: Based on the above the Directors therefore have a reasonable expectation that the :
+necessary funding will be available when required and the consolidated financial :
+statements have therefore been prepared on a going concern basis.
+
+Turnover
+: - Turnover is measured at the fair value of the consideration received or receivable and :
+represents the amount receivable for goods supplied or services rendered, net of returns,
+discounts and rebates allowed by the Group and value added taxes.
+Where the consideration receivable in cash or cash equivalents is deferred, and the
+arrangement constitutes a financing transaction, the fair value of the consideration is
+measured as the present vaiue of all future receipts using the imputed rate of interest.
+
+, The Group recognises revenue when (a) the significant risks and rewards of ownership
+have been transferred to the buyer; (b) the group retains no continuing involvement or
+control over the goods; (c) the amount of revenue can be measured reliably; (d) it is
+probable that future economic benefits will flow to the entity and (e) when the specific
+Criteria relating to each of the group's sales channels have been met, as described below.
+32
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEASEO0CDO
+Leicester City Football Club Limited
+Notes to the consolidated financial statements
+for the year ended 30 June 2024 (continued)
+1 Accounting policies (continued)
+Turnover (continued)
+i. Broadcasting rights and club competitions
+Broadcasting rights comprises all domestic commercial agreements negotiated centrally by
+competition organisers, and associated prize monies, the Club engage in including but not
+limited to the FA Cup, Premier League, EFL, WSL.
+Turnover is recognised in the profit and loss account in the relevant financial year for the
+season to which the income relates including any rebate relating to that income.
+Turnover relating to the Club’s finishing league position is recognised in line with
+expectations at the reporting date.
+Turnover relating to televised matches is fully recognised in the financial year for the
+season to which the income relates.
+ii. Sponsorship and advertising
+Sponsorship and advertising income (whether settled in cash or value in kind) comprises
+amounts receivable from commercial contracts which exploit the Club’s brand, including
+minimum guaranteed revenue, and fees generated by the Club's first team promotional
+tours. :
+Turnover is recognised over the term of the agreement in line with the performance
+obligations included within the contract and based on the sponsorship benefits enjoyed by
+the individual sponsor. In instances where the sponsorship rights remain the same over the
+: duration of the contract, turnover is recognised on a straight-line basis. : :
+Turnover is recognised in the profit and loss account in the relevant financial year for the
+, season to which the income relates.
+
+Income received prior to the year end in respect of the following football season is treated
+as deferred income and recognised over the future seasons to which it relates.
+iii. Gate receipts
+Gate receipts comprise of seasonal and match by match ticket income for all competitions
+the Club engage in including but not limited to the FA Cup, Premier League, EFL, WSL.
+Turnover is recognised as and when the relevant fixtures are played as the performance
+obligations are then satisfied.
+
+: Income received prior to the year end in respect of the following football season is treated
+as deferred income and recognised over the future seasons and fixtures to which it relates.
+33
+Docusign Envetope ID: AC454339-E8CF-43EC-A1F2-C3AEA9E00CDO
+Leicester City Football Club Limited
+Notes to the consolidated financial statements
+for the year ended 30 June 2024 (continued)
+1 Accounting policies (continued)
+Turnover (continued)
+iv. Commercial
+Commercial turnover comprises retail operations and events.
+The Group operates its retail store for the sale of a range of branded and own branded
+products. Sales of goods are recognised on sale to the customer, which is considered the
+point of delivery. Retail sales are usually by cash, credit or payment card.
+The Group sells goods via its website for delivery to the customer or ‘click and collect’ at its
+retail store. Turnover is recognised when the risks and rewards of the inventory are passed
+to the customer. Transactions are settled by credit or payment card. ;
+Turnover from events is recognised as and when the relevant event has taken place as the
+delivery obligations are then satisfied.
+The Group have certain commercial arrangements with commercia! partners whereby the
+Group receive a royalty share of turnover generated by such operations. This revenue is
+
+: recognised on an accrual basis.
+v. Other income
+All other income is recognised on the provision of the service or transfer of economic
+benefit. Where income has been earned but has not been received at the year end it is
+recognised as accrued income.
+
+. Employee benefits . : :
+The Company provides a range of benefits to employees, including annual bonus
+arrangements, paid holiday arrangements and defined contribution pension plans.
+
+i. Short-term benefits
+
+Short term benefits, including holiday pay and other similar non-monetary benefits,
+
+are recognised as an expense in the year in which the service is received.
+
+ii. Defined contribution pension plans
+
+The Company operates defined contribution schemes for certain employees. The Company
+funds its pension liabilities through externally managed pension schemes. Contributions are
+charged against operating profits in the year in which payments are due.
+
+34
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEA9E00CDO
+Leicester City Football Club Limited
+Notes to the consolidated financial statements
+for the year ended 30 June 2024 (continued)
+1 Accounting policies (continued)
+Employee benefits (continued) ;
+iii. Defined benefit pension plans
+Certain Company employees and ex-employees are members of the Football League
+Limited Pension and Life Assurance Scheme (FLPLAS), a defined benefit scheme. As the
+Company is one of a number of participating employers in FLPLAS it is not possible to
+identify the Company's share of the individual assets and liabilities within the scheme.
+However, the actuarial surplus or deficit is estimated and a provision is made for any
+unfunded obligation with any payments made being deducted from the outstanding
+balance. The assets of the scheme are held separately from those of the Group, being
+invested with insurance companies. Further details are set out in note 17.
+Intangible fixed assets
+The Club capitalises the acquisition of players’ registrations at the value of the
+consideration payable, being the discounted value of cashflows payable under the relevant
+agreements. This discount is then unwound through finance costs over the life of each
+contract.
+Capitalised costs include guaranteed considerations (such as transfer and levy fees) as
+well as contingent considerations which are primarily payable to the player's former club
+and only capitalised once payment becomes probable. Subsequent reassessments of the
+. amounts of contingent consideration payable are an estimate requiring management to
+assess the likelihood of specific performance conditions being met which would trigger the
+payment of the contingent consideration. These reassessments are performed at least
+: ‘annually and included in the cost of the player's registration. Capitalised costs in relation to :
+
+contingent fee elements are expensed to the profit and loss account when the contingent
+event can no longer be achieved. Registration costs are fully amortised using the straight-
+line method over the period of the respective player's original or extended contract and
+charged to the profit and loss account.
+Computer software and associated development costs are also capitalised as Intangible
+assets and are amortised over their useful life. Rates applied are between 20% - 33% per
+annum.
+Signing on fees
+Signing on fees payable to players are charged to the profit and loss account over the
+
+. contract period of each player. Contractual obligations are recognised when they become
+payable, with prepayments or accruals arising at each year end included within current
+assets or current liabilities, as appropriate. Where a player's registration is transferred, any
+signing on fees payable in respect of future years are charged against the profit/(loss) on
+disposal of players registrations in the year in which the disposal is recognised. ,
+35
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEA9EOOCDO
+Leicester City Football Club Limited
+Notes to the consolidated financial statements
+for the year ended 30 June 2024 (continued)
+1 Accounting policies (continued)
+Player sales and loan income
+Profit on sale of player registrations and fees in relation to the temporary transfer of player
+registrations are recognised at fair value during the year in which the transaction takes
+place. The profit is stated net of all disposal costs and after releasing any unrealised
+provisions relating to the players registration. Reimbursement of player salaries during the
+temporary registration period is deducted from cost of sales reducing net player
+employment costs.
+Tangible fixed assets
+Fixed assets are stated at cost or valuation less depreciation. The cost of tangible fixed
+assets is their purchase cost, together with any incidental costs of acquisition.
+The Company adopts a revaluation policy for its stadium and Belvoir Drive training ground,
+and an assessment is made at each year end to ensure that the carrying amount does not
+differ materially from that which would be determined using fair value. With effect from 31
+May 2009, the stadium is revalued by professional qualified valuers every five years, with
+an interim valuation after three years. The stadium is valued on a depreciated replacement
+cost basis as no genuine market exists for such an asset. The Belvoir Drive training ground
+has been valued on a depreciated replacement cost basis for both freehold and leasehold
+elements, with the leasehold land excluded from the valuation. Both the Stadium and the
+Belvoir Drive training ground were revalued as at 30 June 2024 in line with the valuation
+carried out.
+Before transitioning to FRS 102, the Company adopted a policy of revaluing freehold land
+and buildings and they were stated at their revalued amount less any subsequent
+
+: depreciation and accumulated impairment losses. The difference between depreciation :
+
+based on the deemed cost charged in the profit and loss account and the asset's original
+cost is transferred from revaluation reserve to retained earnings.
+Depreciation is provided at rates calculated to write down the cost or valuation of each
+asset to its residual value on a straight-line basis over its expected useful life. Rates applied
+are as follows:
+Stadium / other land and buildings - 2% per annum
+Seagrave training ground - 2% - 10% per annum /
+Fixtures, fittings, plant and equipment - 10% - 20% per annum
+Computer equipment - 20% - 33% per annum
+Motor vehicles : 20% per annum
+Freehold land is not depreciated.
+Assets under construction
+Assets in the course of construction are stated at cost. These assets are not depreciated
+until it is available for use and are reviewed for impairment at each reporting date.
+36
+Docusign Envelope ID: AC454339-E8CF-43E£C-A1F2-C3AEA9E00CDO
+Leicester City Football Club Limited
+Notes to the consolidated financial statements
+for the year ended 30 June 2024 (continued)
+1 Accounting policies (continued)
+impairment
+Intangible and tangible fixed assets and investments are subject to review for impairment in
+accordance with FRS 102, section 27, Impairment of Assets. Any impairment in the value of
+fixed assets is charged to the profit and loss account, as an additional component of the
+depreciation or amortisation charges.
+Assets that are subject to amortisation or depreciation are reviewed for impairment
+whenever events or changes in circumstances indicate that the carrying amount may not be
+recoverable. Impairment losses are recognised as the amount by which the carrying
+amount of the asset exceeds its recoverable amount, which is the higher of fair market
+value less costs to sell, and its value in use. !n calculating value in use, future cash flows
+are discounted at an interest rate that takes into account the market's assessment of a risk-
+free interest rate adjusted for risk related to the specific asset. For assets dependent on
+other assets to generate cash flows, the recoverable amount is calculated for the income
+generating unit to which the asset belongs.
+Impairment losses are reversed if there is a trigger that changes the recoverable amount,
+with the exception of impairment losses on goodwill.
+Leased assets
+Assets purchased under finance leases and hire purchase contracts have been capitalised
+and depreciation is charged at rates calculated to write down the cost of each asset to its
+residual value on a straight-line basis over its expected useful life or the period of the lease, .
+whichever is shorter. interest is charged to profit so as to produce a constant periodic rate
+of charge on the remaining balance of the lease for each accounting year. Operating lease
+
+. payments are charged to the profit and loss:on a straight line basis. - :
+
+Inventories
+Stocks comprise goods for resale and are stated at the lower of cost and net realisable
+value. Cost of goods sold is based on the cost of purchase on a first in, first out basis.
+Provision is made for obsolete items.
+Cash
+Cash and cash equivalents includes cash in hand, deposits held at call with banks, other :
+short-term highly liquid investments with original maturities of three months or less and
+bank overdrafts. Bank overdrafts are shown within borrowings in current liabilities.
+37
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEAQE00CDO
+
+Leicester City Football Club Limited
+Notes to the consolidated financial statements
+for the year ended 30 June 2024 (continued)
+1 Accounting policies (continued)
+Provisions
+
+: Provisions are recognised when the Company has a present legal or constructive obligation
+as a result of past events; it is probable that an outflow of resources will be required to
+settle the obligation; and the amount of the obligation can be estimated reliably.
+Where there are a number of similar obligations, the likelihood that an outflow will be
+required in settlement is determined by considering the class of obligations as a whole. A
+provision is recognised even if the likelihood of an outflow with respect to any one item
+included in the same class of obligations may be small. .
+Financial instruments
+The Company has chosen to adopt sections 11 and 12 of FRS102 in respect of financial
+instruments.
+Financial assets
+Basic financial assets, including trade and other debtors, amounts owed by group
+undertakings and cash and bank balances, are initially recognised at transaction price,
+unless the arrangement constitutes a financing transaction, where the transaction is
+measured at the present value of the future receipts discounted at a market rates of interest.
+Such assets are subsequently carried at amortised cost using the effective interest method.
+At the end of each reporting period financial assets measured at amortised cost are
+assessed for objective evidence of impairment. If an asset is impaired the impairment loss
+
+: is the difference between the carrying amount and the present value of the estimated cash .
+
+flows discounted at the asset's original effective interest rate. The impairment is recognised
+in profit or loss.
+Financial assets are derecognised when (a) the contractual rights to the cash flows from the
+assets expire or are settled, or (b) substantially all the risk and regards of the ownership of
+the asset are transferred to another party or (c) control of the asset has been transferred to
+another party who has the practical ability to unilaterally sell the asset to an unrelated third
+party without imposing additional restrictions.
+Financial liabilities
+Basic financial liabilities, including trade and other creditors and amounts due to fellow
+group undertakings are initially recognised at transaction price, unless the arrangement
+constitutes a financing transaction, where the debt instrument is measured at the present
+value of the future receipts discounted at a market rate of interest.
+38
+oT ee ee
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEA9EOOCDO
+Leicester City Football Club Limited
+Notes to the consolidated financial statements
+for the year ended 30 June 2024 (continued)
+1 Accounting policies (continued)
+Financial liabilities (continued)
+Trade creditors are obligations to pay for goods or services that have been acquired in the
+ordinary course of business from suppliers. Trade creditors are classified as current
+liabilities if payment is due within one year or less. If not, they are presented as non-current
+liabilities. Trade creditors are recognised initially at transaction price and subsequently
+measured at amortised cost using the effective interest.
+Borrowing costs
+General and specific borrowing costs directly attributable to the acquisition, construction or
+production of qualifying assets, which are assets that necessarily take a substantial period
+of time to get ready for their intended use or sale, are added to the cost of those assets,
+until such time as the assets are substantially ready for their intended use or sale.
+: All other borrowing costs are recognised in profit or loss in the year in which they are
+‘ incurred.
+Share capital
+Ordinary shares are classified as equity. Incremental costs directly attributable to the issue
+of new ordinary shares or options are shown in equity as a deduction, net of tax, from the
+proceeds. :
+Taxation
+i. Current tax
+Current tax is the amount of income tax payable in respect of the taxable profit for the year
+or prior years. Tax is calculated on the basis of tax rates and laws that have been enacted
+or substantively enacted by the year end.
+ii, Deferred tax
+Deferred tax arises from timing differences that are differences between taxable profits and
+total comprehensive income as stated in the company and consolidated financial
+statements. These timing differences arise from the inclusion of income and expenses in
+tax assessments in periods different from those in which they are recognised in :
+consolidated financial statements.
+Deferred tax is recognised on all timing differences at the reporting date. Unrelieved tax
+losses and other deferred tax assets are only recognised when it is probable that they will
+be recovered against the reversal of deferred tax liabilities or other future taxable profits.
+Deferred tax is measured using tax rates and laws that have been enacted or substantively
+enacted by the year end and that are expected to apply to the reversal of the timing
+difference.
+39 .
+SoS
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEASEOOCDO
+Leicester City Football Club Limited
+Notes to the consolidated financial statements
+for the year ended 30 June 2024 (continued)
+1 Accounting policies (continued)
+Taxation (continued)
+Deferred tax assets and liabilities recognised on the movement in the fair value of tangible
+fixed assets is recognised within other comprehensive income.
+Related party transactions
+The Company discloses transactions with related parties which are both wholly and not
+wholly owned with the same Group.
+Critical accounting judgements and estimation uncertainty
+We believe that the following accounting policies reflect the most critical judgments,
+estimates and assumptions and are significant to the consolidated financial statements.
+i. Valuation of tangible assets
+The Company adopts a revaluation policy for its stadium and Belvoir Drive training ground,
+and an assessment is made at each year end to ensure that the carrying amount does not
+differ materially from that which has been determined using fair value. A professional
+valuation of the stadium and Belvoir Drive training ground is undertaken every five years,
+with an interim valuation after three years, and revalued at that date. In the interim years,
+the Directors undertaken their own assessment of the valuation based on factors they deem
+appropriate, and will impair the assets where necessary. Where an indication that the fair
+value may have changed materially is identified the estimation of recoverable value
+requires estimation of the existing use value of the assets. Due to the specialised nature of
+these tangible assets, Depreciated Replacement Cost has been used as a more reliable
+: estimate of fair value. The Seagrave training ground is carried at historical cost as it was :
+substantively completed in 2020 and the Directors believe there would be no material
+difference to depreciated replacement cost. No change is anticipated for the next 12
+months. See Note 8 for further information.
+ii, Recognition of contingent transfer fees
+The costs associated with the acquisition of players’ registrations are capitalised as
+intangible assets at the fair value of the consideration payable, including an estimate of the
+fair value of any contingent consideration. Subsequent reassessments of the amount of
+contingent consideration payable are also included in the cost of the individual's
+registration. The estimate of the fair value of the contingent consideration payable requires
+management to assess the likelihood of specific performance conditions being met which
+would trigger the payment of the contingent consideration such as the number of player
+appearances. This assessment is carried out on an individual basis. The assessment of
+when contingent fees become probable is an estimate that may give rise to a material
+change in the value of capitalised player registrations. The maximum amount that is
+potentially payable and the amount that is currently provided is detailed in note 18.
+40
+A
+Docusign Envelope 1D: AC454339-E8CF-43EC-A1F2-C3AEASEO0CDO :
+Leicester City Football Club Limited
+Notes to the consolidated financial statements
+for the year ended 30 June 2024 (continued)
+2 Turnover
+All turnover is derived from the Group’s principal activity in the United Kingdom, is analysed
+as follows:
+2024 2023
+£000 £°000
+Broadcasting rights and club competitions 54,190 114,540
+Sponsorship and advertising 21,476 32,117
+Gate receipts : 18,387 18,391
+Commercial 9,771 9,547
+Other income 1,524 2,731 .
+105,348 177,326
+3 Operating loss :
+Operating loss is stated after charging/(crediting):
+Restated
+Note 2024 2023
+: £7000 £000
+Amoartisation of intangible assets 7 45,573 74,724
+Amortisation of temporary player registrations 1,648 -
+Operating leases
+- plant and machinery 41 49
+Depreciation:
+- owned tangible fixed assets 8 6,427 7,000
+- assets held under finance leases and hire purchase 8 1,009 1,093
+contracts
+: Exceptional costs : , - 880 ,
+Foreign exchange (gains)/ losses (353) 329
+Impairment of trade receivables 1 4
+Impairment of inventory 239 80
+Loss on disposal on tangible fixed assets 8 -
+Profit on disposal on intangible fixed assets (71,841) (72,010)
+Auditors’ remuneration
+- audit of the Company's annual consolidated financial 196 97
+statements
+- Audit of subsidiaries annual financial statements 18 15
+- non-audit services — interim accounts 16 13
+- non-audit services — tax advisory and compliance 183 64
+In accordance with SI 2008 / 489 the company has not disclosed the fees payable to the
+company’s auditors for ‘Other services’ as this information is included in the consolidated
+financial statements of Leicester City Football Club Limited.
+4
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEAQE00CDO
+Leicester City Football Club Limited
+Notes to the consolidated financial statements
+for the year ended 30 June 2024 (continued)
+3 Operating loss (continued)
+The directors have agreed with the company's auditors that the auditor's liability to
+damages for breach of duty in relation to the audit of the company's financial statements for
+the year to 30 June 2024 will be limited to the greater of £5 million or 5 times the auditor's
+fees for the statutory audit, and that, in any event, the auditor's liability for damages will be
+limited to that part of any loss suffered by the company as is just and equitable having
+regard to the extent to which the auditor, the company and any third parties are responsible
+for the loss in question. The shareholders of the company approved this liability limitation
+agreement, as required by the Companies Act 2006, by a resolution dated 30 July 2024.
+4 Net interest payable
+Restated
+2024 2023
+. £000 £'000
+Interest payable and similar expenses:
+Bank loans and overdrafts 4,982 7,266
+Hire purchase contracts 1,754 1,751
+Interest on transfer fees payable 2,714 2,090
+Interest payable to group undertakings 4,780 | 2,342
+Other interest payable 14 :
+14,244 13,449
+Interest receivable and similar income:
+Bank interest receivable (563) (108)
+Interest on transfer fees receivable (3,235) (1,304)
+(3,798) (1,412)
+Net interest payable 10,446 12,037
+Refer to note 23 for an explanation of the prior period restatement.
+5 Staff costs
+The Group:
+The average monthly number of employees during the year, including directors, was as
+follows: :
+. 2024 2023
+Number Number
+Players 81 87
+Administration 424 408
+505 495
+In addition, the Group employed on average 542 (2023: 559) casual staff on match days.
+42
+a
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEA9E00CDO
+Leicester City Football Club Limited
+Notes to the consolidated financial statements
+for the year ended 30 June 2024 (continued)
+5 Staff costs (continued)
+Employee costs, including directors, during the year amounted to:
+2024 2023
+£000 £'000
+Wages.and salaries 93,451 180,045
+Social security costs 12,857 24,772
+Other pension costs (note 17) 856 963
+107,164 205,780
+The Company:
+The average monthly number of employees during the year, including directors, was as
+follows:
+2024 2023
+Number Number
+Players 59 64
+Administration 396 393
+. 455 457
+In addition, the Company employed on average 538 (2023: 544) casual staff on match
+days. :
+Employee costs, including directors, during the year amounted to:
+2024 2023
+£7000 £'000
+Wages and salaries 91,105 177,776
+Social security costs 12,555 24,504
+Other pension costs 785 889
+The Group and Company:
+The employee costs above include the following remuneration in respect of the directors of
+. the Company.
+2024 2023
+£000 £'000
+Aggregate emoluments 238 273
+Pension contributions 13 28
+251 301
+The aggregate emoluments including pension contributions of the highest paid director
+were £251,000 (2023: £301,000) and one of the directors was accruing benefits under a
+defined contribution pension scheme (2023: one).
+43
+a
+)
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEASE00CDO
+Leicester City Football Club Limited
+Notes to the consolidated financial statements
+for the year ended 30 June 2024 (continued)
+5 Staff costs (continued)
+Key management compensation 2024 2023
+£000 £'000
+Salaries and other short-term benefits 238 273
+Post-employment benefits 13 28
+251 301
+6 Tax on loss
+2024 2023
+£7000 £000
+UK corporation tax
+-_adjustments in respect of prior years : :
+Total current tax . : -
+Deferred tax
+- origination and reversal of timing differences (565) 9
+- adjustments in respect of prior years 70 -
+-_effect of changes in tax rate - (9)
+Total deferred tax (note 13) (495) -
+Tax on loss (495) -
+The standard rate of tax for the year ended 30 June 2024 is based on the UK standard rate
+of 25% (2023: 20.38%). The actual charge for the year is higher than the standard rate for
+. the reasons set out in the following reconciliation:
+‘ Restated
+2024 2023
+£'000 £'000
+Loss before taxation (19,430) (89,530)
+. Loss before taxation at standard UK tax rate of 25% (2023: (4,858) (18,246) :
+20.38%)
+Effects of:
+Expenses not deductible 3,940 1,876
+Adjustment from previous years 70 -
+Tax rate changes - (9)
+Deferred tax not recognised 353 16,379
+Total tax credit for the year : (495) -
+Changes to the UK tax rates were substantively enacted by Finance Bill 2021 (on 24 May
+2021). These included an increase in the standard corporation tax rate from 19% to 25%
+from 1 April 2023. Deferred tax balances have been remeasured accordingly where
+appropriate. The impact of the change in rate has been to increase the deferred tax asset
+relating to tax losses and other timing differences by £nil (2023: £9,258). In addition, the
+deferred tax liability on the revaluation of the stadium has increased by £nil (2023: £9,258).
+44
+nr
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEAQEQOCDO
+Leicester City Football Club Limited
+Notes to the consolidated financial statements ;
+for the year ended 30 June 2024 (continued)
+7 Intangible assets
+The Group: Player Computer
+registrations Software Goodwill Total
+£'000 £'000 £'000 £'000
+Cost
+At 1 July 2023 - restated 244,837 1,831 4,336 251,004
+Additions 61,624 3 - 61,627
+Disposals (93,160) - - (93,160) ~
+At 30 June 2024 213,301 1,834 4,336 219,471
+Accumulated amortisation .
+At 1 July 2023 - restated 144,392 1,781 4,336 150,509
+Charge for the year 45,538 35 - 45,573
+Disposals (83,672) - > (83,672)
+At 30 June 2024 106,258 1,816 4,336 112,410
+Net book amount j
+At 30 June 2024 107,043 18 -__ 107,061
+At 30 June 2023 - restated 100,445 50. -___ 100,495
+The Company: Player Computer
+registrations Software Goodwill Total
+£'000 £'000 £'000 £'000
+‘ Cost
+At 1 July 2023 - restated 244,748 1,831 4,266 250,845
+Additions 61,509 3 - 61,512
+Disposals (93,160) - - (93,160)
+: At 30 June 2024 213,097 1,834 4,266 219,197
+Accumulated amortisation
+At 1 July 2023 - restated 144,345 1,781 4,266 150,392
+Charge for the year 45,457 35 - 45,492
+Disposals (83,672) - -_ (83,672)
+At 30 June 2024 106,130 1,816 4,266 112,212
+Net book amount
+At 30 June 2024 106,967 18 - 106,985
+At 30 June 2023 - restated 100,403 50 - 100,453
+The purchased goodwill arose as a result of the acquisition of the trade and certain assets
+and liabilities of the Club in 2003.
+Two players with a combined net book value of £25.9m (2023: Five players, £64.1m) have
+an amortisation period ranging from January 2023 to June 2029 (2023: July 2021 to June
+2028).
+45
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEA9EO0CDO
+Leicester City Football Club Limited
+Notes to the consolidated financial statements
+for the year ended 30 June 2024 (continued)
+7 Intangible assets
+Restated intangible assets for the period ended 30 June 2023 have been disclosed below
+for comparative purposes. Refer to note 23 for an explanation of the prior period
+restatement.
+The Group: Restated Computer Restated
+Player Software Goodwill Total
+registrations
+£'000 £'000 £'000 £'000
+Cost
+At 1 June 2022 - restated 387,644 1,809 4,336 393,789
+Additions 46,476 22 - 46,498
+Disposals (189,283) : -__ (189,283)
+At 30 June 2023 244,837 1,831 4,336 251,004
+Accumulated amortisation
+At 1 June 2022 - restated 231,466 1,697 4,336 237,499
+Charge for the year 74,640 _ 84 - 74,724
+Disposals (161,714) : -__ (161,714)
+At 30 June 2023 144,392 1,781 4,336 150,509
+Net book amount
+. At 30 June 2023 100,445 50 - 100,495
+At 31 May 2022 - restated 156,178 112 -__ 156,290
+The Company: Restated Computer Restated
+: Player Software Goodwill Total
+registrations
+; £'000 £000 £'000 £'000
+’ Cost j j :
+At 1 June 2022 - restated 387,598 1,809 4,266 393,673
+Additions 46,433 22 - 46,455
+Disposals (189,283) : -__ (189,283)
+At 30 June 2023 244,748 1,831 4,266 250,845
+Accumulated amortisation
+At 1 June 2022 - restated 231,440 1,697 4,266 237,403
+Charge for the year 74,619 84 - 74,703
+Disposais (161,714) : -__ (161,714)
+At 30 June 2023 144,345 1,781 4,266 150,392
+Net book amount
+At 30 June 2023 100,403 50 + 100,453
+At 31 May 2022 - restated 156,158 112 -__ 156,270
+46
+CRESS SS
+ER
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEASEO0CDO
+Leicester City Football Club Limited
+Notes to the consolidated financial statements
+for the year ended 30 June 2024 (continued)
+8 Tangible assets
+The Group: Seagrave Other land Fixtures, Assets
+Training and fittings, plant Motor Computer under
+Stadium Ground buildings & equipment vehicles equipment — construction Total
+£000 £'000 £7000 £'000 £'000 £7000 £'000 £°000
+Cost or valuation
+At 1 July 2023 45,500 114,494 25,813 25,919 427 7,014 13,332 232,499
+Additions - 231 - 1,380 46 295 41 1,993
+Revaluation (192) - 461 - - - - 269
+Disposals : : : (25) (410) (i1) : (46)
+At 30 June 2024 45,308 114,725 26,274 27,274 463 7,298 13,373 234,715
+Accumulated
+depreciation
+At 1 July 2023 1,093 7,814 534 12,623 298 5,446 - 27,808
+Charge for the 1,009 3,120 303 2,327 44 633 - 7,436
+year
+: Revaluation (2,102) - (599) - - - - (2,701)
+Disposals - : : (16) (10) (11) - (37)
+At 30 June 2024 : 10,934 238 14,934 332 6,068 : 32,506
+Net book amount
+At 30 June 2024 45,308 103,791 26,036 12,340 131 1,230 13,373 202,209
+At 30 June 2023 44,407 106,680 25,279 13,296 129 1,568 13,332 ___ 204,691
+The Company: Seagrave Other land Fixtures, Assets
+Training and fittings, plant Motor Computer under
+Stadium Ground buildings &equipment vehicles equipment construction Total
+£000 £'000 £000 £000 £'000 £7000 £7000 £'000
+Cost or valuation :
+At 1 July 2023 45,500 114,494 25,813 25,895 427 6,982 13,332 232,443
+Additions * 231 : 1,377 46 281 4a 1,976
+Revaluation (192) - 461 - - - - 269
+Disposals : a : (25) (10) (11) : (46)
+At 30 June 2024 45,308 114,725 26,274 27,247 463 7,252 13,373 234,642
+: Accumulated : . . .
+depreciation
+At 1 July 2023 1,093 7,814 534 12,620 298 5,420 - 27,779
+Charge for the 1,009 3,120 303. 2,321 44 626 - 7,423
+year .
+Revaluation (2,102) - (599) - - - - (2,701)
+Disposals = : : (16) (10) (11) - (37)
+At 30 June 2024 : 10,934 238 14,925 332 6,035, : 32,464
+Net book amount
+At 30 June 2024 45,308 103,791 26,036 12,322 131 1,217 13,373 202,178
+At 30 June 2023 44,407 106,680 25,279 13,275 129 1,562 13,332 204,664
+Included within Other land and buildings is £10,261 ,000 (2023: £9,800,000) relating to the
+Club's Belvoir Drive training ground utilised by both LCWFC and LCFC.
+. A valuation was undertaken on 30 June 2024 by Wilks Head & Eve LLP which valued the
+stadium at £45,308,000 on a depreciated replacement cost basis as compared to the
+depreciated carrying value of £43,398,000. Included within this valuation is freehold land of
+: £16,199,000 (2023: £15,225,000) :
+47
+BS SSS RSS wares
+SS
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEA9E00CDO
+Leicester City Football Club Limited
+Notes to the consolidated financial statements
+for the year ended 30 June 2024 (continued)
+8 Tangible assets (continued)
+\f the stadium was stated on a historical cost basis, the amounts for cost, aggregate
+depreciation and net book amount respectively at 30 June 2024 would be £22,010,000
+. (2023: £22,010,000), £10,489,000 (2023: £9,872,000) and £11,521,000 (2023:
+£12,138,000).
+The stadium is the subject of a hire purchase contract with K Power Holdings Company
+Limited, a related company. The repayment terms of the contract were contingent on the
+turnover associated with the League the Club plays in during the duration of the contract
+during the year and the payment profile of the contract has been calculated based on the
+league status of the Club at the year end. All amounts owing under this agreement are
+repayable on 30 June 2026. Amounts payable under finance leases and hire purchase
+contracts are set out in note 16.
+A valuation was undertaken on 30 June 2024 by Wilks Head & Eve LLP which valued the
+Club’s Belvoir Drive training ground at £10,261,000 on a depreciated replacement costs
+basis consisting of £6,765,000 for the main building and freehold land as well as
+£3,496,000 for the leasehold improvements on the leased element of the site. This
+compares to the depreciated carrying value of £9,202,000. Included within this valuation is
+freehold land of £1,665,000 (2023: £900,000).
+If the Belvoir Drive training ground was stated on a historical cost basis, the amounts for
+cost, aggregate depreciation and net book amount respectively at 30 June 2024 would be
+£6,667,000 (2023: £6,667,000), £4,907,000 (2023: £4,545,000) and £1,760,000 (2023:
+£2,122,000).
+Seagrave training ground is carried at historical cost as it was substantively completed in
+December 2020 and the Directors believe there would be no material difference to
+: depreciated replacement cost. : . :
+Land included within “Other land and buildings” at a cost of £15,298,000 (2023:
+£15,298,000) is not depreciated.
+48
+SS
+Docusign Envelope 1D: AC454339-E8CF-43EC-A1F2-C3AEASEQOCDO
+Leicester City Football Club Limited
+Notes to the consolidated financial statements
+for the year ended 30 June 2024 (continued)
+9 Investments
+2024 2023
+Shares in subsidiary 3 3
+The investments relate to:
+i. 100% of the ordinary share capital of LCWFC registered address King Power Stadium,
+Filbert Way, Leicester, Leicestershire, LE2 7FL, a company incorporated in the United
+Kingdom; and
+ii. 100% of the ordinary share capital of Leicester City Media Limited, registered address
+King Power Stadium, Filbert Way, Leicester, Leicestershire, LE2 7FL, a wholly owned
+dormant company incorporated in the United Kingdom. Leicester City Media Limited is
+exempt from preparing individual financial statements under Companies Act 2006 section
+394A. The directors believe that the carrying value of the investments is supported by their
+underlying net assets.
+10 Debtors
+The Group: 2024 2023
+£7000 £'000
+Trade debtors : 12,100 10,981
+Amounts owed by group undertakings 6,705 6,588
+Transfer fees receivable 85,682 60,435
+Other debtors 6,775 6,729
+Prepayments 6,395 2,423
+: Accrued income : : 3,152 1,779 .
+120,809 88,935
+Trade Debtors are stated after provisions for impairment of £791,000 (2023: £790,000).
+Amounts owed by group undertakings are unsecured, interest free and repayable on
+demand.
+. Transfer fees receivable includes £47 ,952,000 (2023: £24,178,000) falling due after more
+than one year.
+Other debtors mostly comprises outstanding direct debit payments for 2024/25 season
+tickets.
+Gross transfer fees receivable before VAT and discounting are £89,477 ,000 (2023:
+£62,863,000).
+. 49
+i ee
+Se
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEA9EQ0CDO
+Leicester City Football Club Limited ,
+Notes to the consolidated financial statements
+. for the year ended 30 June 2024 (continued)
+10 Debtors (continued)
+The Company: 2024 ~ 2023
+£000 £'000
+Trade debtors 11,771 10,976
+Amounts owed by group undertakings 6,705 15,090
+Transfer fees receivable 85,682 60,435 .
+Other debtors 6,775 6,729
+Prepayments . 6,361 2,412
+Accrued Income 3,152 1,778
+120,446 97,420
+Trade Debtors are stated after provisions for impairment of £791,000 (2023: £790,000).
+Amounts owed by group undertakings are unsecured, interest free and repayable on
+. demand. The full balance owed by LCWFC at the year ended 30 June 2024 amounted to
+£12,582,411 (2023: £8,502,411). This balance has been provided for in full within the year
+by Leicester City Football Club Ltd.
+_ Transfer fees receivable includes £47 ,952,000 (2023: £24,178,000) falling due after more
+than one year.
+Other debtors mostly comprises outstanding direct debit payments for 2024/25 season
+tickets.
+Gross transfer fees receivable before VAT and discounting are £89,477 ,000 (2023:
+£62,863,000).
+. 11 Creditors: amounts falling due within one year. .
+The Group: Restated
+2024 2023
+. £'000 £'000
+Bank loans and overdrafts : 32,054 57,710
+Trade creditors 5,477 4,292
+Transfer fees payable 39,715 28,866
+Amounts owed to group undertakings:
+- subordinated loans and other amounts payable 114,470 19,632
+Taxation and social security 10,744 18,082
+Other creditors 29,272 . 25,439
+Accruals and deferred income 25,499 18,086
+257,231 172,107
+Gross transfer fees payable before discounting are £41,538,000 (Restated 2023:
+£30,169,000). : :
+50
+SE SR SE ae
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEASE00CDO
+Leicester City Football Club Limited
+Notes to the consolidated financial statements
+for the year ended 30 June 2024 (continued)
+11. Creditors: amounts falling due within one year (continued)
+
+, The Subordinated loans and amounts owed to group undertakings due within one year are
+unsecured and repayable on demand. The amounts owed to KPI carrying interest at 1%
+and other amounts payable carry no interest charge. Refer to note 19 for further information
+about related party transactions.
+
+Other creditors include £20,070,000 payable to employees (2023: £17,417,000).
+
+Refer to note 23 for an explanation of the prior period restatement.
+
+The Company: Restated
+2024 2023
+£000 £'000
+
+Bank loans and overdrafts 32,054 57,710
+
+Trade creditors 5,400 4,254
+
+Transfer fees payable 39,712 28,866
+
+Amounts owed to group undertakings:
+
+- subordinated loans and other amounts payable 114,470 19,632
+Taxation and social security 10,701 18,040
+Other creditors 28,871 25,344
+Accruals and deferred income 25,372 18,134
+
+256,580 171,980
+Gross transfer fees payable before discounting are £41,535,000 (Restated 2023:
+£30, 169,000).
+The Subordinated loans and amounts owed to group undertakings due within one year are
+, unsecured and repayable on demand. The amounts owed to KPI carrying interest at 1% ,
+and other amounts payable carry no interest charge. Refer to note 19 for further information
+about related party transactions.
+Other creditors include £20,070,000 payable to employees (2023: £17,417,000).
+Refer to note 23 for an explanation of the prior period restatement.
+51 :
+ee ee
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEASEOOCDO
+Leicester City Football Club Limited
+Notes to the consolidated financial statements
+for the year ended 30 June 2024 (continued)
+12 Creditors: amounts falling due after more than one year
+The Group: Restated
+2024 2023
+£'000 £000
+Amounts falling due between one and five years:
+Bank loans and overdrafts 23,087 8,990
+Amounts owed to group undertakings:
+- subordinated loans and other amounts payable 32,679 90,403
+- obligations under finance lease and hire purchase contracts 23,676 21,922
+Transfer fees payable 36,878 30,566
+Accruals and deferred income 8,500 11,500
+124,820 163,381
+Gross transfer fees payable before discounting are £37,715,000 (Restated 2023:
+£31,247,000).
+The Subordinated loans and amounts owed to group undertakings are unsecured, carry
+interest at 2% and repayable in instalments in October 2025 and December 2025. The
+obligations under hire purchase agreements are unsecured, repayable on 30 June 2026
+and carry interest at 8%. Refer to note 19 for further information about related party
+transactions.
+Refer to note 23 for an explanation of the prior period restatement.
+Bank loans 2024 2023
+£000 £'000
+Amounts payable: .
+Within one year . 32,054 57,710
+Between one and two years : 23,087 8,990
+Between two to five years : -
+55,141 66,700
+Amounts owed to group undertakings 2024 2023
+£°000 £'000
+Amounts payable:
+Within one year 114,470 19,632
+Between one and two years 23,676 21,922
+Between two to five years 32,679 90,403
+170,825 131,957
+52 :
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEASE00CDO
+Leicester City Football Club Limited
+Notes to the consolidated financial statements
+for the year ended 30 June 2024 (continued)
+12 Creditors: amounts falling due after more than one year (continued)
+The Company: Restated
+2024 2023
+£000 £'000
+Amounts falling due between one and five years:
+Bank loans and overdrafts 23,087 8,990
+Amounts owed to group undertakings:
+- subordinated loans and other amounts payable 32,679 90,403
+- obligations under finance lease and hire purchase contracts 23,676 21,922
+Transfer fees payable 36,878 30,566
+Accruals and deferred income 8,500 11,500
+124,820 163,381
+Gross transfer fees payable before discounting are £37,715,000 (Restated 2023:
+£31,247,000).
+The Subordinated loans and amounts owed to group undertakings are unsecured, Carry
+interest at 2% and repayable in instalments in October 2025 and December 2025. The
+obligations under hire purchase agreements are unsecured, repayable on 30 June 2026
+and carry interest at 8%. Refer to note 19 for further information about related party
+transactions.
+Refer to note 23 for an explanation of the prior period restatement.
+Bank loans 2024 2023
+£000 £000
+Amounts payable:
+
+. Within one year . . 32,054 57,710
+Between one and two years 23,087 8,990
+Between two to five years - :
+
+55,141 66,700
+Amounts owed to group undertakings 2024 2023
+£'000 £’000
+
+Amounts payable:
+Within one year 114,470 19,632
+Between one and two years , 23,676 21,922
+Between two to five years 32,679 90,403
+170,825 131,957
+
+53
+ES NS
+So
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEASEO0CDO
+Leicester City Football Club Limited
+Notes to the consolidated financial statements
+for the year ended 30 June 2024 (continued)
+12 Creditors: amounts falling due after more than one year (continued)
+The bank loans are:
+
+a) Macquarie Bank Limited: £80,000,000 secured on Premier League receivables of
+which £8,984,000 (2023: £43,124,000) was unpaid at the year end and bearing
+interest of 6.63%, £63,000 (2023: £705,000) accrued interest was unpaid at 30 June
+2024. There are EBITDA, net assets and net football liabilities covenants with which
+the Club complied as of June 2024, the last measurement date. This was fully
+repaid in August 2024.
+
+b) Macquarie Bank Limited: £15,166,000 secured on transfer fee receivables of which
+£16,283,000 (2023: £nil) was unpaid at the year end and bearing interest of 9.02%.
+£1,117,000 (2023: Enil) accrued interest was unpaid at 30 June 2024. This is
+repayable in instalments up to August 2025.
+
+c) Macquarie Bank Limited: £20,813,000 secured on transfer fee receivables of which
+£22,006,000 (2023: £nil) was unpaid at the year end and bearing interest of 8.44%.
+£1,193,000 (2023: Enil) accrued interest was unpaid at 30 June 2024. This is
+repayable in instalments up to September 2025.
+
+d) Macquarie Bank Limited: £7,416,000 secured on transfer fee receivables of which
+£7,868,000 (2023: £nil) was unpaid at the year end and bearing interest of 8.98%.
+£452,000 (2023: £nil) accrued interest was unpaid at 30 June 2024. This is
+repayable in instalments up to September 2025.
+
+13 Provisions for liabilities :
+. The Group and Company: . . .
+Deferred tax
+The deferred tax assets and liabilities provided and those unprovided, calculated at 25%
+(2023: 25%) are as follows:
+2024 2023
+Provided Unprovided Provided Unprovided
+£000 £7000 £'000 £'000
+Accelerated capital allowances 1,791 - 1,729 -
+Stadium revaluation (10,502) - (10,007) -
+Short term timing differences 8,711 2,342 8,278 2,776
+Trading losses - 44,005 - 47,956
+- 46,347 - 50,732
+The net deferred tax asset expected to reverse in 2024 is £27,000 (2023: £28,000). This
+relates to short term pension timing differences and accrued donations.
+54
+SS
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEASEOOCDO
+Leicester City Football Club Limited
+Notes to the consolidated financial statements
+for the year ended 30 June 2024 (continued)
+14 Called up share capital
+2024 2023
+£000 £'000
+Allotted, and fully paid
+Ordinary shares of £1 each
+2024 and 2023: 306,801,553 ordinary shares of £1 each 306,801 306,801
+Redeemable shares of £1 each
+2024 and 2023: 1 redeemable share of £1 - -
+‘A’ shares of 1p each
+2024 and 2023: 19,138,432 ‘A’ shares of 1p each 192 192
+306,993 306,993
+The following rights are attached to the ‘A’ shares:
+
+a) The holder of the majority of the A ordinary shares shall have the right to appoint
+directors of the company;
+
+b) The holders of the A ordinary shares shall have the right to vote at any general
+meeting or at any separate meeting of the holders of the A ordinary shares in the
+company. :
+
+On the winding-up of the company the surplus assets shall be applied, first, in repaying the
+members the amount paid up on their shares respectively in accordance with their
+entitlements. If such assets are insufficient to repay the said amount in full, they shall be
+applied first in paying the amount due on redemption of the redeemable share and then
+rateably across the ordinary and A ordinary shares, so that the loss shall fall upon the
+members in proportion to the amount called up on their shares respectively.
+If the surplus assets shall be more than sufficient to pay to the members the whole amount
+paid upon their shares, the balance shall be given by the members of the company, at or
+
+. before the time of dissolution as they direct, to The Football Association Benevolent Fund, .
+or to some club or Institute in Leicestershire with objects similar to those set out in the
+Memorandum of Association of the company or to any local charity, or charitable or
+benevolent institution situated within Leicestershire. In default of any such decision or
+apportionment by the members of the Company, the same to be decided upon and
+apportioned by a Judge of the High Court of Justice having jurisdiction in such winding-up
+or dissolution and as he shall determine. Alternatively such balance may be disposed of in
+such other manner as the members of the company, with the consent of the Council of The
+Football Association Limited, as then existing, shall determine.
+On 21 April 2023 the Club entered into a future share subscription agreement for 76m
+shares at £1 per share.
+55
+—— =
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEA9E00CDO
+Leicester City Football Club Limited
+Notes to the consolidated financial statements
+for the year ended 30 June 2024 (continued)
+15 Reserves
+Profit and Loss account
+Includes all current and prior year retained profits and losses.
+Share premium account
+Includes the excess of amounts paid to the Company for shares in excess of their nominal
+value less any cost of issue.
+Capital Contribution
+Capital contribution arises from the difference between interest charged to the Profit and
+loss statement and the actual interest charged on related party loans.
+Revaluation reserve
+The revaluation reserve arises from the difference between the valuation of the King Power
+Stadium and Belvoir Drive training Ground and their depreciated net book value on an
+historical cost basis as at 30 June 2024.
+16 Financial Instruments
+The Group has the following financial instruments: \
+: Note Restated
+2024 2023
+. . . . £'000 £'000 .
+Financial assets that are debt instruments measured at
+amortised cost
+- Trade debtors 10 12,100 10,981
+- Transfer fees receivable 10 85,682 60,435
+- Amounts owed by group undertakings 10 6,705 - 6,588
+-. Other debtors 10 6,775 6,729
+111,262 84,733
+Financial liabilities measured at amortised cost
+- Bank loans and overdrafts 11, 12 55,141 66,700
+- Trade creditors 11 5,477 4,292
+- Transfer fees payable 11, 12 76,593 59,432
+- Amounts owed to group undertakings:
+subordinated loans and other amounts payable 11, 12 147,149 110,035
+obligations under finance lease and hire 12 23,676 21,922
+purchase contracts
+-__ Other creditors 11 29,272 25,439 :
+337,308 287,820
+Refer to note 23 for an explanation of the prior period restatement.
+56
+A A a eS a re
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEASEOOCDO
+Leicester City Football Club Limited
+Notes to the consolidated financial statements
+for the year ended 30 June 2024 (continued)
+17 Pension costs
+Certain employees of the Company (professional footballers) are members of the Football
+League Limited Players Retirement Scheme.
+Other employees of the Company are members of the Football League Limited pension and
+life assurance scheme or the Football League Limited group personal pension plan with
+certain other employees belonging to the Company’s group personal pension scheme.
+These are all defined contribution schemes, and contributions are expensed in the profit
+and loss account as they become payable. The pension cost charge represents
+contributions payable by the Group to the funds and amounted to £855,756 (2023:
+£962,591).
+Certain employees and ex-employees of the Company are members of the closed Football
+League Limited Pension and Life Assurance Scheme, a defined benefit scheme. As the
+Company is one of a number of participating employers in the scheme, it is not possible to
+allocate any actuarial surplus or deficit on an annual basis. However, under Section 75 of
+the Pensions Act 1995, the Company, as a participating employer in the scheme, is liable to
+fund the deficit relating to Company's ex-employees who are members of the scheme. The
+Scheme Actuary finalised a full valuation as at 31 August 2023 and allocated £162,805 as
+the Club's share of the deficit as at 1 September 2023. The increase in the deficit arising
+from this revaluation of £99,580 was recognised in the profit and loss account for the year
+ended 30 June 2024. The deficit is funded by annual contributions and the Club incurs
+interest at 6% on its allocated share of the deficit. The balance outstanding at the year end
+date is included in other creditors. The Club has made contributions of £59,260 in the year
+(2023: £56,745). The assets of the scheme are held separately from those of the Company.
+18 Contingencies and commitments : . :
+a) Player transfer costs
+The Company has certain contracts with other football clubs that relate to player transfers.
+Under the terms of these contracts, additional amounts become payable or receivable if
+conditions concerning future team successes and appearances are met. The maximum
+amount that is potentially payable and receivable under these contracts is £28,125,000
+(2023: £27,114,000) and £14,748,000 (2023: £13,564,000) respectively. £2,491 ,000 of the
+total potential fees and the associated Levy were provided for as at 30 June 2024 (Restated
+2023: £1,005,068).
+Refer to note 23 for an explanation of the prior period restatement.
+b) Capital commitments
+At 30 June 2024, the Company had committed capital expenditure of £272,000 (2023:
+£199,000).
+57
+ISS SSS a
+Fosse Se
+Leicester City Football Club Limited
+Notes to the consolidated financial statements
+for the year ended 30 June 2024 (continued)
+18 Contingencies and commitments (continued)
+c) Profitability and Sustainability
+Over recent years the Club's financial results reflected necessary levels of investment in the
+playing squad that allowed LCFC to compete effectively in the Premier League and in other
+relevant competitions, including the FA Cup and in UEFA club competitions. However, the
+Club's playing budget for the 2023/24 season was necessarily reduced, following its
+relegation to the EFL Championship.
+The Club has always strived to achieve compliance with applicable P&S rules, whilst
+continuing to pursue its reasonable sporting aspirations and ensuring the Club's long term
+future is protected.
+The Club has been involved in certain regulatory proceedings with the Premier League and
+the EFL in relation to the extent to which their respective P&S rules apply to the Club, in the
+specific circumstances of the Club’s relegation to the EFL Championship and its immediate
+promotion back to the Premier League. The Club expects that it will continue to discuss
+such P&S rules with the relevant football regulators.
+{f the Club was ultimately found to have failed to achieve compliance with any P&S rules
+which were held to be applicable to the Club in its specific circumstances then there would
+be a risk of sanction by the relevant governing body, but at the current time it is
+impracticable to estimate the likely impact of any such sanction.
+19 Related party transactions
+The Group and Company owed £100,120,878 as at 30 June 2024 (2023: £63,616,447) to ,
+. King Power International Limited, the Company's immediate parent undertaking. The :
+
+movement in the year includes subordinated loans of £36,500,000 plus £4,170,472 interest.
+The interest on the subordinated loans was varied during the year from 6% to 1% resulting
+in a capital contribution of £4,166,042 recognised in capital and reserves. At the same date
+the Group and Company were owed £3,398,353 (2023: £3,299, 140) by King Power
+International Limited for costs incurred in the running of the international education project
+and retail products supplied by the Company.
+The Group and Company also had sponsorship agreements with King Power International
+Limited in relation to the acquisition of sponsorship and marketing inventory including the
+primary training wear sponsorship and the stadium naming rights. £15,000,000 was
+invoiced in the year relating to the 2023/24, 2024/25 and 2025/26 seasons. Nothing was
+outstanding at 30 June 2024 (2023: Enil).
+The Group and Company also entered into a sponsorship agreement with King Power Duty
+Free in relation to the stadium naming rights for the 2024/25 season and the Seagrave
+training ground naming rights for the 2023/24, 2024/25 and 2025/26 seasons. £15,000,000
+was invoiced in the period ending 30 June 2023 with nothing outstanding at the 30 June
+2024 (2023: Enil). .
+58
+ar a
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEA9E0OCDO ,
+Leicester City Football Club Limited
+Notes to the consolidated financial statements
+for the year ended 30 June 2024 (continued)
+
+19 Related party transactions (continued) :
+The freehold interest in the Stadium is owned by K Power Holdings Company Limited, a
+company also controlled by King Power International Limited. The outstanding deferred
+purchase consideration payable by the Group and Company under the hire purchase
+agreement repayable on 30 June 2026 stands at £23,676,194 as at 30 June 2024 (2023:
+£21,922,402). This obligation increases at 8% per annum and £1,753,792 (2023:
+£1,750,747) has accrued on the amount during the year. The Group and Company also
+incurred costs on behalf of K Power Holdings Company Limited and the balance of £61,866
+(2023: £61,866) remained unpaid at the year end pending further agreement on the
+adjacent site.
+
+The Group and Company incurred costs of £857,504 (2023: £298,952) on behalf of K
+Power Sports Investments Limited in the year and the balance of £4,060,697 (2023:
+£3,139,193) remained outstanding to the Club at the year end.
+
+The Group and Company were previously party to a management agreement with K Power
+Sports Investments Limited where the Club was charged a management fee based on
+turnover for management services provided. The balance outstanding at 30 June 2024
+under this contract was £14,000,000 (2023: £14,000,000). Also at 30 June 2024 an amount
+of £350,000 (2023: £350,000) was owed to K Power Sports Investments Limited in relation
+to funds collected on their behalf. The Club received no charge from K Power Sports
+Investments Limited in the year (2023: £nil).
+
+The Company obtained a subordinated loan of £30,000,000 from its chairman Aiyawatt
+Srivaddhanaprabha and the balance of £32,678,889 (2023: £32,068,889) including interest
+remained outstanding at the year end. The Company incurred interest charges of £610,000
+(2023: £658,333) in the year.
+
+The Group and Company supplied goods and services of £124,522 (2023: £51,925) to King:
+Power Racing Co Limited in the year and the balance of £60,242 (2023: £44,580) remained
+outstanding at the year end.
+
+The Group and Company incurred costs of £5,772 (2023: £5,340) on behalf of Gadbridge
+Limited, a company with a common director, in the year and the balance of £nil (2023: £nil)
+remained outstanding at the year end.
+
+The Group and Company sold retail items to Multiply by Eight Co Ltd, a member of the King
+Power Group, amounting to £286,042 (2023: £196,443) and a balance of £79,070 (2023:
+£nil) remained outstanding at the year end. The Company also purchased retail items from
+Multiply by Eight Co Ltd amounting to £10,852 (2023: £1,758) during the year and a
+balance of £nil (2023: £nil) remained outstanding at the year end.
+
+The Group and Company incurred no (2023: £nil) cost or sales on behalf of King Power
+Estates Limited, a company with a common director, during the year and the balance of
+£2,957 (2023: £2,957) remained outstanding at the year end.
+
+59
+TR SS a ES Ss
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEA9EOOCDO
+Leicester City Football Club Limited
+Notes to the consolidated financial statements
+for the year ended 30 June 2024 (continued)
+19 Related party transactions (continued)
+Since the acquisition of LCWFC the Company has incurred costs on behalf of LCWFC. The
+Group and Company incurred costs of £4,079,766 (2023: £4,102,968) during the year and
+the balance of £12,582,177 (2023: £8,502,411) was provided for in full at the year ended 30
+June 2024 by Leicester City Football Club Ltd.
+King Power International Limited acquired OH Leuven CVBA, a Belgian football club
+competing in the Belgian First Division A, in June 2017. In the year the Group and
+Company has made sales amounting to £11,364 (2023: £71,851), and incurred no costs
+(2023: £3,601) on behalf of, OH Leuven CVBA. A balance of £550 (2023: £nil) remained
+outstanding at the year end.
+During the year ended 30 June 2022 the Club sold a player that had previously been on
+loan at OHL Leuven CVBA with the transfer agreement stating that the Company take
+responsibility for the solidarity due to OH Leuven CVBA. The balance of £nil (2023:
+£50,614) is reported within transfers fees receivable at the year end for both the Group and
+Company. :
+During the year the Group and Company provided free administration, management and
+accounting support to the VS Foundation as well as collecting revenue, incurring costs, and
+making donations on its behalf. In the year the Group and Company received income of
+£14,963 (2023: £10,339) and made payments of £21,436 (2023: £1,046,998), on behalf of
+the VS Foundation. The Club donated £500,000 (2023: £nil) to the VS Foundation in the
+year. A balance payable to the VS Foundation of £475,448 (a balance payable to the Group
+and Company of £18,080) remained outstanding at the year end.
+During the year the Group and Company also supported Leicester City Football Club Trust
+(operating as Leicester City in the Community) during the year through significant in kind
+: - contributions. In the year the Group and Company made payments of £150,212 (2023: :
+£165,663) and collected receipts of £149,264 (2023: £nil) on behalf of Leicester City
+Football Club Trust, and sold tickets and merchandise to Leicester City Football Club Trust
+of £23,791 (2023: £48,392). A balance payable to the Group and Company of £12,652
+(2023: £21,891) remained outstanding at the year end.
+60 , :
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEASEO0CDO
+Leicester City Football Club Limited
+Notes to the consolidated financial statements
+for the year ended 30 June 2024 (continued)
+20 Net cash outflow from operating activities
+Restated
+2024 2023
+£°000 £'000
+Loss for the financial year (18,935) (89,530)
+Tax on loss (495) -
+Net interest payable 10,446 12,037
+Operating loss before interest and taxation (8,984) (77,493)
+Amortisation and impairment charge 45,573 74,724
+Depreciation charge 7,436 8,094
+Profit on disposal of tangible and intangible fixed assets (71,833) (74,767)
+Decrease / (increase) in inventories 542 (1,966)
+Increase in debtors (3,964) (309)
+(Decrease) / increase in creditors (620) 17,551
+Cash flow from operating activities (31,850) (54,166)
+Refer to note 23 for an explanation of the prior period restatement.
+, 21 Analysis of net debt
+a) Reconciliation of net cash flow to movement in net debt
+2024 2023
+£000 £000
+Decrease in cash in the year (1,147) (25,987)
+Cash outflow from changes in debt (20,406) (36,341)
+Change in net debt from cash flows (21,553) (62,328)
+. Other non-cash changes : : (6,904) 182,869 :
+Movement in net debt in the year (28,457) 120,541
+Opening net debt (170,790) (291,331)
+Closing net debt (199,247) (170,790)
+b) Analysis of net debt
+Other non-
+cash
+2023 Cash flow movements 2024
+£000 £'000 £'000 £000
+Cash at bank and in hand 8,235 (1,147) - 7,088
+8,235 (1,147) - 7,088
+Debt due within one year (57,710) (6,312) (62,870) (126,892)
+Debt due after one year (99,393) (14,097) 57,724 (55,766)
+Hire purchase liabilities (21,922) : (1,754) (23,676)
+, Total debt : (179,025) (20,406) (6,903) _ (206,334)
+Net debt (170,790) (21,553) (6,903) (199,246)
+61
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEASEO0CDO
+Leicester City Football Club Limited
+Notes to the consolidated financial statements
+for the year ended 30 June 2024 (continued)
+21. Analysis of net debt (continued)
+Debt is defined as bank loans and intercompany loans.
+Non-cash movements relate to loans of Enil (2023: £194,237,000) converted into equity,
+£2,368,000 (2023: £4,093,000) accrued interest on amounts owed to group undertakings
+. and £4,536,000 (2023: £7,266,000) on bank loans. The group undertakings amount is
+interest payable to group undertakings plus hire purchase contracts.
+22 Offsetting financial assets and financial liabilities
+Financial assets and liabilities are offset and the net amount is reported in the balance
+sheet where the Group currently has a legally enforceable right to offset the recognised
+amounts, and there is an intention to settle on a net basis or realise the asset and settle the
+liability simultaneously.
+The following table presents the recognised financial instruments that are offset as at 30
+June 2024. There were no balances subject to offset as at 30 June 2023. The column ‘net
+amount’ shows the impact on the group's balance sheet if all set-off rights were exercised.
+The Group: Effects of offsetting on the balance sheet
+30 June 2024 Gross Gross amounts Net amount
+amounts offset in the
+balance sheet
+
+£000 £000 £'000
+
+Financial assets
+. Debtors . . 120,809 (6,690) 114,119 .
+
+Total 120,809 (6,690) 114,119
+Financial liabilities
+Creditors: amounts falling due within one year = 257,231 (3,296) 253,935
+Creditors: amounts falling due after more than 124,820 (3,394) 121,426
+one year
+Total 382,051 (6,690) 375,361
+The group have entered into arrangements with another party where the creditor balance is
+offset against the debtor balance and settled net.
+62
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEASEOOCDO
+Leicester City Football Club Limited
+Notes to the consolidated financial statements
+for the year ended 30 June 2024 (continued)
+22 Offsetting financial assets and financial liabilities (continued)
+The Company: Effects of offsetting on the balance sheet
+30 June 2024 Gross Gross amounts Net amount ,
+amounts offset in the
+balance sheet
+£'000 £'000 £'000
+Financial assets
+Debtors 120,446 (6,690) 113,756
+Total 120,446 (6,690) 113,756
+Financial liabilities
+Creditors: amounts falling due within one year 256,580 (3,296) 253,284
+Creditors: amounts falling due after more than 124,820 (3,394) 121,426
+one year
+Total 381,400 (6,690) 374,710
+The company have entered into arrangements with another party where the creditor
+balance is offset against the debtor balance and settled net.
+23 Changes resulting from prior period restatement
+The financial statements for the period ended 30 June 2023 have been restated to correct
+the assessments of probability used when calculating the likelihood of contingent liabilities
+connected to the purchase of player registrations being triggered and concluded that
+: amounts payable were not eligible for capitalisation based on information available at the :
+capitalisation date.
+This has resulted in a restatement of intangible asset values, Transfer fee creditors and
+amortisation, for certain intangible assets, in previous reporting periods which is reflected
+through the restated opening balances for the period ended 30 June 2023, and restated
+balances in the period ended 30 June 2023. There has been no tax or cashflow impact from
+these restatements.
+The impact of this restatement is reflected in the Consolidated profit and loss account,
+Consolidated statement of comprehensive income, Consolidated and Company Balance
+Sheet, Consolidated and Company Statement of Changes in Equity, Consolidated Cash
+Flow Statement, Net Interest Payable, Group and Company Intangible Assets, Group and
+Company Creditors within one year, Group and Company Creditors greater than one year,
+Financial Instruments, Contingencies and commitments: Player transfer costs, and Net
+Cash Outflows from operating activities.
+The movement on the financial statements is disclosed below.’
+63
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEA9EO0CDO
+Leicester City Football Club Limited ;
+Notes to the consolidated financial statements
+for the year ended 30 June 2024 (continued)
+23 Changes resulting from prior period restatement (continued)
+Consolidated Profit and loss account
+for the period ended 30 June 2023
+Note Restated 13
+As months
+‘previously Adjust- ended 30
+reported ments June
+2023 2023 2023
+£'000 £'000 £°000
+Turnover 177,326 - 177,326
+Cost of sales 1 (301,787) 2,306 (299,481)
+Gross loss (124,461) 2,306 (122,155)
+Administrative expenses 2 (26,862) 200 (26,662)
+Exceptional costs (880) - (880)
+Other operating income 194 - 194
+Profit on disposal of player registrations 3 74,767 (2,757) 72,010
+Operating loss (77,242) (251) (77,493)
+Interest receivable and similar income 1,412 - 1,412
+Interest payable and similar expenses 4 (13,889) 440 (13,449)
+Net interest payable (12,477) 440 (12,037)
+Loss before taxation (89,719) 189 (89,530)
+Tax on loss : : :
+Loss for the financial year (89,719) 189 (89,530)
+, 1) Decrease in cost of sales from the reversal of amortisation connected to contingent
+liabilities that are no longer recognised as being due as they are not likely to be
+triggered.
+
+2) Decrease in administrative costs from the reversal and correction of foreign |
+exchange revaluations on the contingent liabilities previously capitalised that are no
+longer recognised as being due as they are not likely to be triggered.
+
+3) Decrease in profit from disposal of player registrations from the reversal of profit
+recognised on contingent liabilities disposed of that were no longer recognised due
+to not likely to be triggered.
+
+. 4) Decrease in administrative costs from the reversal of FRS102 discounted interest on
+the contingent liabilities previously capitalised that are no longer recognised as
+being due as they are not likely to be triggered.
+
+64
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEA9E00CDO
+Leicester City Football Club Limited
+Notes to the consolidated financial statements
+for the year ended 30 June 2024 (continued)
+23 Changes resulting from prior period restatement (continued)
+Consolidated Balance sheet
+as at 30 June 2023
+Note As
+previously Adjust-
+reported ments Restated
+2023 2023 2023
+£'000 £'000 £'000
+Fixed assets
+Intangible assets 1 109,538 (9,043) 100,495
+Tangible assets 204,691 - 204,691
+314,229 (9,043) 305,186
+Current assets
+Inventories 2,510 - 2,510
+Debtors (including £47,952,000 (2023: 88,935 - 88,935
+£24,178,000) falling due after more than one
+year)
+Cash at bank and in hand 8,235 - 8,235
+99,680 - 99,680
+Creditors: amounts falling due within one year 2 (171,053) (1,054) (172,107)
+Net current liabilities (71,373) (1,054) (72,427)
+Total assets less current liabilities 242,856 (10,097) 232,759
+Creditors: amounts falling due after more than 2 (183,196) 19,815 (163,381)
+. one year : : : :
+Net assets 59,660 9,718 69,378
+Capital and reserves
+Called up share capital 306,993 - 306,993
+Share premium account 8,475 - 8,475
+Revaluation reserve 39,744 - 39,744
+Profit and loss account 3 (295,552) 9,718 (285,834)
+Total shareholders’ funds 59,660 9,718 69,378
+1) Decrease in Intangible Assets value from reversing the capitalisation of contingent
+liabilities that are not likely to be triggered.
+
+, 2) Increase in Creditors: amounts falling due within one year and decrease in
+Creditors: amounts falling due after more than one year from no longer recognising
+contingent liabilities on the balance sheet that are not likely to be triggered. .
+
+65
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEASEO0CDO
+Leicester City Football Club Limited
+Notes to the consolidated financial statements
+for the year ended 30 June 2024 (continued)
+23 Changes resulting from prior period restatement (continued)
+
+3) Increase in Profit and loss account from reversing and correcting the amortisation,
+foreign exchange, profit on disposal of player registration, and FRS102 discounted
+interest charges both within the year and prior periods as a result of no longer
+recognising contingent liabilities on the balance sheet that were not likely to be
+triggered.
+
+Company Balance sheet
+as at 30 June 2023
+Note As
+previously Adjust-
+reported ments Restated
+2023 2023 2023
+£'000 £'000 £'000
+
+Fixed assets
+Intangible assets 1 109,496 (9,043) 100,453
+Tangible assets 204,664 - 204,664
+Investments : : :
+
+314,160 (9,043) 305,117
+Current assets
+Inventories 2,510 : 2,510
+Debtors (including £47,952,000 (2023: 97,420 - 97,420
+£24,178,000) falling due after more than one
+year)
+Cash at bank and in hand 8,229 : 8,229
+
+. . . . 108,159 - 108,159 .
+
+Creditors: amounts falling due within one year 2 (170,926) (1,054) (171,980)
+Net current liabilities (62,767) (1,054) (63,821)
+Total assets less current liabilities 251,393 (10,097) 241,296
+Creditors: amounts falling due after more than 2 (183,196) 19,815 (163,381)
+one year
+Net assets 68,197 9,718 77,915
+Capital and reserves
+Called up share capital 306,993 - 306,993
+Share premium account 8,475 - 8,475
+Revaluation reserve 39,744 - 39,744
+Profit and loss account 3 (287,015) 9,718 (277,297)
+Total shareholders’ funds 68,197 9,718 77,915
+
+1) Decrease in Intangible Assets value from reversing the capitalisation of contingent
+liabilities that are not likely to be triggered.
+
+66
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEASEOOCDO
+Leicester City Football Club Limited
+Notes to the consolidated financial statements
+for the year ended 30 June 2024 (continued)
+23 Changes resulting from prior period restatement (continued)
+
+2) Increase in Creditors: amounts falling due within one year and decrease in
+Creditors: amounts falling due after more than one year from no longer recognising
+contingent liabilities on the balance sheet that are not likely to be triggered.
+
+3) Increase in Profit and loss account from reversing and correcting the amortisation,
+foreign exchange, profit on disposal of player registration, and FRS102 discounted
+interest charges both within the year and prior periods as a result of no longer
+recognising contingent liabilities on the balance sheet that were not likely to be
+triggered.
+
+24 UEFA Annex G Reporting
+The financial statements and accompanying notes materially comply with the accounting
+requirements set out under Annex G of the UEFA Club Licensing and Financial
+Sustainability Regulations as of 01 July 2024 with the following reconciliation:
+Original Annex G Annex G ,
+Disclosure Adjustment Disclosure
+2024 2024 2024
+£'000 £'000 £'000
+Consolidated Profit and loss account for the
+year ended 30 June 2024
+Amortisation of intangible fixed assets (45,573) (520) (46,093)
+Operating loss (8,984) (520) (9,504)
+Loss before taxation (19,430) (520) (19,950)
+Consolidated Balance Sheet as at 30 June 2024
+Intangible Assets 107,061 (786) 106,275
+Net Assets 57,084 (786) 56,298
+Profit and loss account (304,556) (786) (305,342)
+Total Shareholders’ funds 57,084 (786) 56,298
+All Annex G adjustments relate to the amortisation of player registrations over the term of
+five years to comply with the UEFA Annex G requirements.
+67
+Docusign Envelope ID: AC454339-E8CF-43EC-A1F2-C3AEASEO0CDO
+
+Leicester City Football Club Limited :
+Notes to the consolidated financial statements
+for the year ended 30 June 2024 (continued)
+
+25 Ultimate parent company and controlling party
+The Company's immediate parent undertaking is King Power International Limited, a
+company incorporated in the Kingdom of Thailand. The ultimate parent and controlling party
+of King Power International Limited is V&A Holdings Company Limited, a company
+incorporated in the Kingdom of Thailand and the beneficial owner of V&A Holdings Limited
+is the Srivaddhanaprabha family.
+Leicester City Football Club Limited is the smallest and largest Group to consolidate the
+financial statements and copies of these consolidated financial statements can be obtained
+from King Power Stadium, Filbert Way, Leicester, LE2 7AH.
+
+26 Subsequent events
+Since the year end the Club has invested £1.7m in its facilities.
+During the summer 2024 transfer windows the Club has contracted for the purchase, sale
+and loan of various players. Since 30 June 2024 the Club have entered into a short term
+discounting facility with Macquarie bank to bring forward the proceeds from the sale of
+Keirnan Dewsbury-Hall.
+Since 30 June 2024 the club have entered into a discounting facility with Macquarie bank to
+bring forward the processed from the Premier League shared revenue distributions.
+The net expenditure of the purchase, sale and loans of various players occurring since 30
+June 2024, taking into account the applicable levies and contingent fees but excluding
+value added tax is £66.7m (2023: net income of £9.1m). These transfers and costs will be
+accounted for in the year ending 30 June 2025.
+68
 

@@ -2,7 +2,7 @@ source: Companies House filing, fulham-fc__1.pdf
 document: Yh14qvK5k2v1-QXkr1QNkRgpy9xgbKhp_QEg8suEHqg
 made_up_date: 2025-06-30
 method: ocr
-pages_read: 12 of 31
+pages_read: 31 of 31
 
 Registered number 2114486
 Fulham Football Club Limited
@@ -555,4 +555,950 @@ statements, and
 e in Our Opinion those reports have been prepared in accordance with the Companies Act 2006
 
 11
+Independent Auditor’s Report to the Members of Fulham Football Club Limited
+(continued)
+Matters on which we are required to report by exception
+Under the Companies Act 2006 we are required to report to you if, in our opinion 1
+* adequate accounting records have not been kept, or returns adequate for our audit have not been received from
+branches not visited by us, or
+
+« the financial statements are not in agreement with the accounting records and returns, or
+* certain disclosures of directors’ remuneration specified by law are not made, or
+e we have not received all the information and explanations we require for our audit
+We have nothing to report in these respects
+Directors' responsibilities
+As explained more fully in their statement set out on page 9, the directors are responsible for the preparation of the
+financial statements and for being satisfied that they give a true and fair view, such internal control as they determine
+1s necessary to enable the preparation of financial statements that are free from matenal misstatement, whether due
+to fraud or error, assessing the company’s ability to continue as a going concern, disclosing, as applicable, matters
+related to going concern, and using the going concern basis of accounting unless they either intend to liquidate the
+company or to cease operations, or have no realistic alternative but to do so
+Auditor's responsibilities
+Our objectives are to abtain reasonable assurance about whether the financial statements as a whole are free fram
+material misstatement, whether due to fraud or error, and to issue our opinion in an auditor's report Reasonable
+assurance ts a high level of assurance, but does not guarantee that an audit conducted in accordance with ISAs (UK)
+will always detect a material misstatement when it exists Misstatements can arise from fraud or error and are
+considered material if, individually or in aggregate, they could reasonably be expected to influence the economic
+decisions of users taken on the basts of the financial statements
+A fuller description of our responsibilities is provided on the FRC's website at www fre org uk/auditorsresponsibilitres
+The purpose of our audit work and to whom we owe our responsibilities
+This report is made solely to the company’s members, as a body, in accordance with Chapter 3 of Part 16 of the
+Companies Act 2006 Our audit work has been undertaken so that we might state to the company's members those
+matters we are required to state to them in an auditor's report and for no other purpose To the fullest extent permitted
+by law, we do not accept or assume responsibility to anyone other than the company and the company’s members, as
+a body, for our audit work, for this report, or for the opinions we have formed
+
+Liam Finnigan (Senor Statutory Auditor)
+
+for and on behalf of KPMG LLP, Statutory Auditor
+
+Chartered Accountants
+
+One St Peter's Square
+
+Manchester
+
+M2 3AE
+
+10 December 2025
+12
+Fulham Football Club Limited
+Profit and Loss Account and Other Comprehensive Income : ;
+For the year ended 30 June 2025 :
+2025 2024
+Notes £'000 £'000
+Turmover 2 194,790 181,559
+Operating expenses before depreciation, ;
+amortisation & impairment 3 (212,138) (192,258) '
+Operating loss before depreciation,
+amortisation & impairment (17,348) (10,699) '
+Depreciation and amortisation 3 (63,220) (58,764) :
+Operating loss after depreciation, amortisation
+and impairment (80,565) (69,463) ;
+Profit on disposal of players’ registrations 41,035 32,735
+Loss on disposal of other assets : {7)
+Other income - 4,624 :
+Loss before interest and taxation (39,530) (32,111)
+Net interest receivable 6 618 905 :
+Loss before taxation (39,012) (31,206)
+Taxation on loss T : (1,003)
+Loss for the year (39,012) (32,215)
+Total comprehensive loss for the year (39,012) (32,215)
+All amounts relate to continuing operations
+The notes on pages 16 to 30 form part of these financial statements
+13 Fulham Football Club Limited ,
+Fulham Football Club Limited
+Balance Sheet
+Company number 2114486
+As at 30 June 2025
+Notes 2025 2024
+£'000 £000 |
+Fixed assets i
+|
+intangible assets 8 138,753 119,576 f
+Tangible assets 9 4,658 4,162
+143,411 123,738
+Current assets
+Stocks 507 435
+Debtors (includes £31,585,000 (2024 £2,329,000) due
+after more than one year) 10 65,313 46,942
+Cash at bank and in hand 13,172 32,768
+78,992 80,145
+Creditors amounts falling due within one year . 11 (102,822) (136,459)
+Net current liabilities (23,830) (56,314)
+Total assets jess current liabilities 119,581 67,424
+Creditors amounts falling due after more than one year 11 (42,908) (14,411)
+Deferred income 12 (15,344) (19,094)
+Net assets 61,329 33,919
+Capital and reserves .
+Called up share capital 13 28,942 19,369
+Profit and loss account 32,387 14,550
+Shareholders’ funds 61,329 33,919
+The notes on pages 16 to 30 form part of these financial statements
+|
+These financial statements were approved by the Board of Directors on 9 December 2025 and signed on its behalf '
+by |
+i PA
+AJ Mackintosh
+Director
+14 Fulham Football Club Limited
+|
+Fulham Football Club Limited .
+Statement of Changes in Equity :
+For the year ended 30 June 2025 '
+a
+Called up Profit & loss Total equity
+share capital account
+£°000 £°000 £'000 |
+Balance at 1 July 2023 * 19,369 46,765 66,134
+Total comprehensive loss for the period .
+Loss for the year - (32,215) (32,215) !
+- (32,215) (32,215)
+Balance at 30 June 2024 19,369 14,550 33,919
+I
+Called up Profit & loss Total equity
+share capital account
+£'000 £'000 £'000 |
+I
+Balance at 1 July 2024 19,369 14,550 33,919
+Transactions with owners I
+Share issues 66,422 - 66,422
+Share reduction (56,849) 56,849 :
+9,573 56,849 66,422
+|
+Total comprehensive loss for the period
+Loss for the period : (39,012) (39,012)
+: (39,072) (39,012)
+Balance at 30 June 2025 28,942 32,387 61,329
+The notes on pages 16 to 30 form part of these financial statements
+i}
+15 Fulham Football Club Limited
+Fulham Football Club Limited
+Accompanying Notes to the Financial Statements
+For the year ended 30 June 2025
+1 Accounting policies
+Fulham Football Club Limited (the “Company”) is a company limited by shares and incorporated and domiciled in
+England, the UK
+These Company financial statements were prepared in accordance with Financial Reporting Standard 102 The
+Financial Reporting Standard applicable in the UK and Republic of Ireland ("FRS 102”) as issued in August 2014
+The amendments to FRS 102 issued tn July 2015 have been applied The presentation currency of these financial
+statements ts sterling All amounts tn the financial statements have been rounded to the nearest £1,000
+In addition, under the UEFA Club Licensing and Financial Sustainabtlity Regulations (Edition 2023) (“the
+Regulations”), the directors are responsible for preparing Note 22 in the financial statements in accordance with the
+accounting requirements set out in Annex G 2 to G 6 of the Regulations The directors declare that Note 22 is
+complete, accurate and in compliance with the Regulations
+The Company's parent undertaking, Futham Football Leisure Limited, includes the Company in its consolidated
+financial statements The consolidated financial statements of Fulham Football Leisure Limited are available to the
+public and may be obtained from Companies House, Crown Way, Cardiff CF 14 3UZ In these financial statements,
+the company ts considered to be a qualifying entity (for the purposes of this FRS) and has applied the exemptions
+available under FRS 102 in respect of the following disclosure
+e Cash Flow Statement and related notes
+The Company ts also included in the consolidated financial statements of Cougar Holdco London Limited As these
+financial statements include the equivalent disclosures, the Company has also taken the exemption under FRS 102
+available in respect of the following disclosures
+* Key Management Personnel compensation
+e The disclosures required by FRS 102 11 Basic Financial instruments and FRS 102 12 Other Financial
+Instrument Issues in respect of financial instruments not falling within the fair value accounting rules of
+Paragraph 36(4) of Schedule 1
+e Disclosures in respect of transactions with wholly owned subsidiaries
+The accounting policies set out below have, unless otherwise stated, been applied consistently to all periods
+presented in these financial statements
+Judgements made by the Directors in the application of these accounting policies that have significant effect on the
+financial statements and estimates with a significant risk of matenal adjustment in the next year are discussed In
+note 20
+11 Measurement convention
+The financial statements are prepared on the historical cost basis except that the following assets and liabilities are
+stated at therr fair value
+e Oeferred installments payable / receivable on player transfer contracts are carried at amortised cost using
+the effective interest rate method, where the difference between this measurement convention and the
+transaction price is material
+1.2 Going concerm
+Notwithstanding a loss for the year ended 30 June 2025 of £39,012k, the financial statements have been prepared
+on a going concern basis which the Directors consider to be appropriate for the following reasons
+Fulham Football Club Limited ts a wholly owned subsidiary of Cougar Holdco London Limited, the principal activity of
+the Group being the operation of a professional football club The ongoing operations of Fulham Football Club
+Limited are therefore intrinsically linked to the going concern status of that Group Cougar Holdco London Limited
+includes the following disclosures in respect of going concern in its financial statements
+16 Fulham Football Club Limited
+Fulham Football Club Limited
+
+Accompanying Notes to the Financial Statements (continued)
+For the year ended 30 June 2025
+
+12 Going concern (continued)
+
+Notwithstanding the Group’s loss for the year ended 30 June 2025 of £44,525k, the Consolidated and Company
+
+financial statements have been prepared on a going concem basis which the Directors consider to be appropnate for
+
+the following reasons
+
+The Company and Group meet their day to day working capital requirements from shareholder loans that are
+subsequently converted to equity Durning the year ended 30 June 2025, amounts due to shareholders of £145,223k l
+were converted to equity Subsequent to 30 June 2025, the Group and Company has received further financial support
+amounting to £62,697k from its ultimate owner and immediate parent company, Mr S R Khan and K2TR Family
+
+Holdings 2, Corporation
+
+On 16 July 2024, a loan facility of £125,000,000 was taken out with JPMorgan Chase Bank in relation to the completion
+
+of the Riverside Stand The facility is secured against the Company’s assets and is repayable in full within 5 years
+
+Interest is charged at SONIA + 3 625% There are financial covenants attached to the facility relating to Debt Servicing |
+The Owrectors have prepared base and sensitised cash flow forecasts for a penad 12 months fram the date of approval
+
+of these financial statements Those forecasts assume the continued development of the Riverside Stand, utilising
+
+additional funds that the Company expects to be made available by the Company's shareholder for that purpose
+
+The base case forecasts are based on assumptions in respect of league position, attendances and the related ‘
+matchday income and costs, together with assumptions on league status of the Club, central distnbutions and possible
+
+rebates The Directors consider further downside scenanos with assumptions of reduced tickets and higher inflation to i
+costs
+
+All forecasts indicate that, even taking account of controllable mitigating actions, the Group and Company will require
+
+significant additional funding in addition to that required to complete the Riverside Stand development in a downside
+
+scenano the Group and Company's forecast cash requirements may increase over the base case in the forecast penod
+
+but the mayonty of the Group’s costs are not sensitive to downside vanations, given the contractual and predetermined
+
+nature of a large proportion of the Group's income and expenditure Based on both base and downside scenanos there
+
+are no breaches in the covenants forecasted
+
+The Directors are confident that any additional required funding will be available from its ultimate owner and immediate
+
+parent company, Mr S R Khan and K2TR Family Holdings 2, Corporation, to meet its liabilities as they fall due for that ‘
+penod K2TR Family Holdings 2, Corporation has expressed this intention to the Directors in wating
+
+As with any company placing reliance on other group entities for financial support, the Directors acknowledge that
+
+there can be no certainty that this support will continue, although, at the date of the approval of these financial
+statements, they have no reason to believe that it will not do so Consequently, the Directors are confident that the '
+Group and Company will have sufficient funds to continue to meet their frabilities as they fall due for at least 12 months
+
+from the date of approval of the financial statements and therefore have prepared the financial statements on a going '
+concem basis
+
+Fulham Football Club Limited ts dependent on continued financial support from K2TR Family Holdings 2 Limited, via
+
+Cougar Holdco London Limited, and its intermediate holding companies tn the Group K2TR Family Holdings 2 '
+Limited has ndicated its intention to continue to make available such funds as are needed by the company, and that
+
+it does not intend to seek repayment of the amounts currently due to the group, during the going concern
+
+assessment period |
+At the date of approval of these financial staternents the Directors have considered the forecasts of Cougar Holdco
+
+London Limited group, the disclosure in the Group accounts and the committed support between Group companies
+
+and have assessed that the conclusions reached by the Directors of Cougar Holdco London Limited regarding the 1
+going concern status of the Group are appropriate and as such that, through support to be provided, this Company
+
+will be m a position to meet tts liabilittes as they fall due '
+As with any company placing reliance on other group entities for financial support, the Directors acknowledge that
+
+there can be no certainty that this support will continue, although, at the date of the approval of these financial
+
+statements, they have no reason to believe that it will not do so Consequently, the Directors are confident that the
+
+Group and Company will have suffictent funds to continue to meet its liabilities as they fall due for at least 12 months
+
+from the date of approval of the financial statements and therefore have prepared the financial statements
+
+on a going concern basis |
+17 Fulham Football Club Limited rs '
+Fulham Football Club Limited
+Accompanying Notes to the Financial Statements (continued)
+For the year ended 30 June 2025
+1.3 Foreign currency
+Transactions in foreign currencies are translated to the company's functional currency at the foreign exchange rate
+ruling at the date of the transaction Monetary assets and liabilities denominated tn foreign currencies at the balance
+sheet date are retranslated to the functional currency at the foreign exchange rate ruling at that date The Company
+does not hold any non-monetary assets or liabilities that are recorded in foreign currencies Foreign exchange
+differences arising on translation are recognised in the profit and loss account
+14 Classification of financial instruments tssued by the Company
+In accordance with FRS 102 22, financtal instruments issued by the Company are treated as equity only to the extent
+that they meet the following two conditions :
+(a) they include no contractual obligations upon the Company to deliver cash or other financial assets or to
+exchange financial assets or financral liabilities with another party under conditions that are potentially
+unfavourable to the Company, and
+(b) where the instrument will or may be settled tn the entity's own equity instruments, it is either a non-derivative
+that includes no obligation to deliver a vanable number of the entity’s own equity instruments or 1s a
+derivative that will be settled by the entity exchanging a fixed amount of cash or other financial assets for a
+fixed number of its own equity instruments
+To the extent that thus definition 1s not met, the proceeds of issue are classified as a financial lability Where the
+instrument so classified takes the legal form of the entity's own shares, the amounts presented tn these financial
+statements for called up share capital and share premium account exclude amounts in relation to those shares ,
+15 Financial instruments
+All of the entities financial instruments are classified as ‘Basic Financiat Instruments’ as defined by FRS 102 Section
+1
+1.5.1 Trade and other debtors / creditors
+Trade and other debtors are recognised initially at transaction price less attributable transaction costs Trade and
+other creditors are recognised initially at transaction price plus attributable transaction costs Subsequent to initial :
+recognition they are measured at amortised cost using the effective interest method, less any impairment losses in
+the case of trade debtors
+1.5.2 Cash and cash equivalents ;
+Cash and cash equivalents comprise cash balances, current accounts and call deposits
+1.6 Tangible fixed assets
+Tangible fixed assets are stated at cost less accumulated depreciation and accumulated impairment losses
+Where parts of an ttem of tangible fixed assets have different useful lives, they are accounted for as separate items
+of tangible fixed assets ‘
+Leases in which the entity assumes substantially all the risks and rewards of ownership of the leased asset are ‘
+classified as finance leases All other leases are classified as operating teases Leased assets acquired by way of
+finance lease are stated on initial recognition at an amount equal to the lower of their fair value and the present value
+of the minimum lease payments at inception of the lease, including any incremental costs directly attributable to
+negotiating and arranging the lease At initial recognition a finance lease liability is recognised equal to the far value
+of the leased asset or, if lower, the present vatue of the minimum lease payments The present value of the minimum \
+lease payments 1s calculated using the interest rate implicit n the tease Lease payments are accounted for as
+descnbed at note 1.14 below ;
+The company assesses at each reporting date whether tangible fixed assets (including those leased under a finance
+(ease) are tmpated
+18 Fulham Football Club Limited
+Fulham Football Club Limited ;
+Accompanying Notes to the Financial Statements (continued)
+For the year ended 30 June 2025
+1 6 Tangible fixed assets (continued)
+Depreciation is charged to the profit and loss account on a straight-line basis over the estimated useful lives of each
+part of an item of tangible fixed assets Leased assets are depreciated over the shorter of the lease term and their
+useful lives The estimated useful lives are as follows
+Leasehold improvements Over the period of the lease
+Piant, equipment, fixtures & fittings 3-25 years
+Depreciation methods, useful lives and residual values are reviewed if there 1s an indication of a significant change
+since last annual reporting date in the pattern by which the company expects to consume an asset's future economic
+benefits
+17 intangible fixed assets
+17.1 Player registrations
+Fees payable in connection with the transfer of players’ registrations, including transfer fees and compensation
+payable to other clubs, agents’ fees and league levies, are recorded as intangible fixed assets and stated at cost less
+any accumulated amortisation and accumulated impairment losses Fees payable which are contingent on a future
+event are recognised at fair value, taking into account the Directors assessment of the likelthood of that event
+occurring during the life of the players’ employment contract Subsequently, if a future event does occur which was '
+not deemed probable at the time of the transfer, the related additional transfer fees are recognised as an addition to
+the intangible asset at the point at which it becomes probable that an additional transfer fee will be payable Fees ,
+recewable which are contingent on a future event are recognised if the receipt is deemed virtually certain Where the
+contingent fee is deemed probable, it is disclosed as a contingent asset
+Player registration costs are amortised over the life of the players’ contract with the club These intangible assets are
+written down for impairment when the carrying amount exceeds the amount recoverable through use or sale In the '
+event that the initial contract 1s renegotiated prior to expiry, the written down value at the date of recognition is
+amortised over the extended period |
+1.72 Amortisation
+Amortisation is charged to the profit or loss on a straight-line basis over the estimated useful lives of intangible |
+assets Intangible assets are amortised from the date they are available for use The estimated useful lives are as |
+follows
+Player registrations Over the life of the related contract
+
+|
+The company reviews the amortisatton period and method when events and circumstances indicate that the useful
+life may have changed since the last reporting date Intangible assets are tested for impairment in accordance with
+Section 27 Impairment of assets when there is an indication that an intangible asset may be impaired
+1.7.3 Impairment of Intangibles
+The Directors review the carrying value of the players’ registrations for impairment where events or changes in 1
+circumstances indicate that the carrying value of the asset may not be recoverable In completing their assessment
+of impairments required the Directors consider the playing squad to be one cash generating unit (‘CGU”) such that :
+no impairment ts recorded tf the overall value of the playing squad ts greater than Its carrying value Where certain
+players are no longer part of the playing squad, for example due to long-term injury, they are treated as a separate \
+GGU and the carrying value assessed accordingly To the extent that the carrying value exceeds the recoverable '
+amount, the asset Is impaired and the impairment loss 1s recognised in the profit and loss account
+1.8 Stocks
+Stocks are stated at the lower of cost and estimated selling price less costs to complete and sell Cost is based on '
+the first-in first-out principle and includes expenditure incurred in acquiring the stocks, production or conversion costs
+and other costs in bringing them to their existing location and condition '
+19 Fulham Football Club Limited ;
+Fulham Football Club Limited
+
+Accompanying Notes to the Financial Statements (continued)
+
+For the year ended 30 June 2025
+
+19 Impairment excluding stocks, deferred tax assets and intangible assets
+
+1.9.1 Financial assets (Including trade and other debtors) '
+A financial asset not carned at fair value through profit or loss ts assessed at each reporting date to determine whether
+
+there is objective evidence that it is impaired A financial asset ts impaired if objective evidence indicates that a loss
+
+event has occurred after the inttial recognition of the asset, and that the loss event had a negative effect on the
+
+estimated future cash flows of that asset that can be estimated reliably An impairment loss in respect of a financial ,
+asset measured at amortised cost is calculated as the difference between its carrying amount and the present value
+
+of the estimated future cash flows discounted at the asset's original effective interest rate
+
+For financial instruments measured at cost less Impairment an impairment ts calculated as the difference between its ,
+carrying amount and the best estimate of the amount that the Company would receive for the asset if it were to be
+
+sold at the reporting date Interest on the impaired asset continues to be recognised through the unwinding of the
+
+discount Impairment losses are recognised in profit or loss When a subsequent event causes the amount of
+
+impairment loss to decrease, the decrease in impairment loss is reversed through profit or loss
+
+19.2 Non-financial assets
+
+The carrying amounts of the entity's non-financial assets, other than stocks and deferred tax assets, are reviewed at
+
+each reporting date to determine whether there 1s any indication of impairment If any such indication exists, then the
+
+asset's recoverable amount Is estimated The recoverable amount of an asset or cash-generating unit is the greater
+
+of its value in use and its fair value less costs to sell in assessing value in use, the estimated future cash flows are
+
+discounted to thetr present value using a pre-tax discount rate that reflects current market assessments of the time
+
+value of money and the risks specific to the asset
+
+For the purpose of impairment testing, assets that cannot be tested individually are grouped together into the
+
+smailest group of assets that generates cash inflows from continuing use that are largely independent of the cash
+
+inflows of other assets or groups of assets (the “cash-generating unit”) An impairment loss is recognised if the
+
+carrying amount of an asset or its CGU exceeds its estimated recoverable amount Impairment losses are
+
+recognised in profit or loss
+
+An impairment loss is reversed if and only if the reasons for the impairment have ceased to apply Impairment losses
+
+recognised in pnor pertods are assessed at each reporting date for any indications that the loss has decreased or no
+
+longer exists An impairment loss is reversed only to the extent that the asset's carrying amount does not exceed the
+
+carrying amount that would have been determined, net of depreciation or amortisation, if no impairment loss had f
+been recognised
+
+1.10 Employee benefits
+
+1.101 Defined contribution plans and other long term employee benefits
+The Company operates an optional contributory defined contribution pension plan for its employees The Company
+
+pays fixed contributions on behalf of member employees to an external pension provider and has no tegal or
+
+constructive obligation to pay further amounts Obligations for contributions to the scheme are recognised as an
+
+expense in the profit and loss account in the periods during which services are rendered by employees
+
+Professional football players employed by the Company are also members of the Professional Footballers
+
+Association pension scheme which is a non-contributory scheme funded out of transfer levy payments
+
+1.10.2. Termination benefits
+
+Termination benefits are recognised as an expense when the entity is demonstrably committed, without realistic
+possibility of withdrawal, to a formal detailed plan to either terminate employment before the normal retirement date,
+
+or to provide termination benefits as a result of an offer made to encourage voluntary redundancy Termination
+
+benefits for voluntary redundancies are recognised as an expense if the entity has made an offer of voluntary
+
+redundancy, it ts probable that the offer will be accepted, and the number of acceptances can be estimated reliably
+
+If benefits are payable more than 12 months after the reporting date, then they are discounted to their present value
+
+20 Fulham Football Club Limited
+Fulham Football Club Limited
+
+Accompanying Notes to the Financial Statements (continued)
+
+For the year ended 30 June 2025 '
+41.4% Provisions
+
+A provision Is recognised in the balance sheet when the entity has a present legal or constructive obligation as a
+
+result of a past event, that can be relably measured and It ts probable that an outflow of economic benefits will be
+
+required to settle the obligatron Provisions are recognised at the best estimate of the amount required to settle the |
+obligation at the reporting date
+
+1142  Tumover
+
+Turnover represents broadcasting, sponsorship, gate receipts, catering and hospitality and all other income
+
+associated with the pnncipal activity of running a professional football club
+
+¢ Gate receipts are inclusive of season ticket income, and are all recognised as revenue once the match has
+been completed,
+
+e Central awards are recognised equally over the number of months in the football season to which they
+relate, including where the football season may cover two financial years,
+
+* Broadcasting revenue can be recognised in two parts Any minimum award for the season Is recognised as
+revenue equally over the number of months In the football season to which it relates Any broadcasting
+revenue that Is earnt once a televised match has taken place Is recognised once that match has been
+completed,
+
+e Compensation revenue ts comprised of sums from collaboration agreements with other Clubs and
+remediation of lost income, and \s recognised as revenue over the pertod of the agreement or in the case of
+lost Income recognised in the pertod tn which the income relates,
+
+e« Sponsorship and other commercial revenue comprises of sponsorship revenue, marketing revenue, catering
+income, hospitality income and any other event related income These are recognised evenly over life of the
+contract (if multi-year contract), the season to which they relate (if seasonal) or after the event to which they
+relate has been completed
+
+Where the Company receives income on behalf of players who have been loaned out to other Clubs, the treatment
+
+of this income Is as follows Where a loan fee ts received in exchange for the loan, this \s recognised as a credit
+
+within the profit on disposal of player registrations Where contributions towards a players’ salary cost is received,
+
+these are credited against the associated cost within staff costs, and any excess contribution over and above that
+players’ salary ts recognised as other income
+
+Income from season tickets, sponsorship, broadcasting and other commercial contracts, which has been received
+
+pnor to the year end in respect of future football seasons, 1s treated as deferred income '
+1.13 Other income
+
+Other income relates to income which ts considered to be part of regular operating activities, but which does not
+represent turnover, and includes research and development related tax credits
+
+1.14 Expenses
+
+1.14.1 Operating leases
+
+Payments (excluding costs for services and insurance) made under operating leases are recognised In the profit and
+loss account on a straight-line basis over the term of the lease unless the payments to the lessor are structured to
+increase in line with expected general inflation, in which case the payments related to the structured increases are
+recognised as incurred Lease incentives received are recognised tn profit and loss over the term of the lease as an
+integral part of the total lease expense ,
+114.2 Finance leases
+
+Minimum lease payments are apportioned between the finance charge and the reduction of the outstanding lability
+using the rate implicit in the tease The finance charge ts allocated to each period during the tease term so as to
+produce a constant periodic rate of interest on the remaining balance of the lrability Contingent rents are charged as
+expenses in the periods in which they are incurred
+
+21 Fulham Footbail Club Limited
+Fulham Football Club Limited
+
+Accompanying Notes to the Financial Statements (continued)
+
+For the year ended 30 June 2025
+
+1.14 Expenses (continued) ‘
+
+114.3 Signing-on fees
+
+Signing on fees relating to players’ contracts are charged to the profit and loss account in the period in which they ‘
+
+become due Signing on fees are considered to be part of players’ emoluments packages and are included in these
+
+financial statements as part of staff costs, which are within operating expenses before depreciation, amortisation and
+
+impairment
+
+1144 Performance related bonuses
+
+Performance related bonuses are charged to the profit and loss account evenly over the period in which they
+
+become due Where these costs are earned over more than one financial year, they are recognised based on the
+
+number of months in each financial year that is relevant to the footballing season that the bonus was earned
+
+Performance related bonuses are considered to be part of the players’ emoluments packages and are included in
+
+these financial statements as part of staff costs
+
+114.5 Interest receivable and interest payable
+
+Interest payable and similar charges tnclude interest payable, finance charges on finance leases recognised in profit
+
+of loss using the effective interest method and the unwinding of the discount on provisions
+
+Interest receivable represents the return from on-demand deposit accounts and interest charges on the late payment
+
+of transfer fees receivable and other trade debtors
+
+Interest income and interest payable are recognised in profit or loss as they accrue, using the effective interest
+
+method
+
+4.16 Taxation
+
+Tax on the profit or loss for the year comprises current and deferred tax Tax 1s recognised in the profit and loss
+
+account except to the extent that tt relates to items recognised directly tn equity or other comprehensive income, in
+
+which case it is recognised directly in equity or other comprehensive income
+
+Current tax is the expected tax payable or receivable on the taxable income or loss for the year, using tax rates
+
+enacted or substantively enacted at the balance sheet date, and any adjustment to tax payable in respect of previous
+
+years I
+
+Deferred tax is provided on timing differences which arise from the inclusion of income and expenses in tax '
+
+assessments in pertods different from those in which they are recognised tn the financial statements The following
+
+timing differences are not provided for differences between accumulated depreciation and tax allowances for the
+
+cost of a fixed asset if and when all conditions for retaining the tax allowances have been met, and differences
+
+relating to investments in subsidiaries to the extent that it is not probable that they will reverse in the foreseeable
+
+future and the reporting entity is able to control the reversal of the timing difference Deferred tax is not recognised
+
+on permanent differences arising because certain types of income or expense are non-taxable or are disallowable for
+
+tax or because certain tax charges or allowances are greater or smailer than the corresponding income or expense
+
+Deferred tax is measured at the tax rate that is expected to apply to the reversal of the related difference, using tax
+
+rates enacted or substantively enacted at the balance sheet date Deferred tax balances are not discounted
+
+Unrelieved tax losses and other deferred tax assets are recognised only to the extent that ts it probable that they wit!
+
+be recovered against the reversal of deferred tax liabilities or other future taxable profits
+
+Included within Taxation on Loss are Research and Development (R&D) tax credits These are recognised in the
+
+period in which they relate to |
+1
+
+22 Fulham Football Club Limited
+Fulham Football Club Limited
+Accompanying Notes to the Financial Statements (continued)
+For the year ended 30 June 2025
+|
+2 Turnover
+2025 2024
+£000 £'000
+Gate Receipts 48,010 48,392
+Central Awards 128,837 123,316 |
+Broadcasting 12,748 11,190
+Compensation 4,013 873 |
+Sponsorship and other Commercial Activities 34,1820 0 27,788
+194,790 181,559
+All income is derived from operations within the UK 1
+3 Loss before taxation
+The loss before taxation Is stated after charging the following
+2025 2024 |
+£000 " €:000 '
+Auditors’ remuneration for audit services 66 60
+Auditor's remuneration for audit related assurance services 13 12
+Staff costs 166,507 154,754 |
+Amounts patd under operating leases
+- Plant and machinery 200 258
+- Land and buildings 2,558 2,249
+2,758 2,507
+|
+Profit on disposal of players’ registrations 41,035 32,735 ;
+Depreciation of fixed assets 1,700 1,364
+Amortisation of player registrations 61,521 57,400
+4 Staff costs
+Company staff costs during the year (including Directors’ emoluments) amounted to ‘
+2025 2024 ;
+£7000 £000
+Wages and salaries 145,450 135,524
+Social security costs 20,509 18,773
+Payments to defined contribution pension schemes 548 457
+166,507 154,754
+The average monthly number of employees in the Company during the year was made up as follows '
+2025 2024
+Number Number
+Administrative and ground staff 262 231 f
+Players 66 73 :
+328 304 ;
+Part-time staff for match days 347 280
+23 Fulham Football Club Limited
+ee . _ — |
+Fulham Football Club Limited
+Accompanying Notes to the Financial Statements (continued)
+For the year ended 30 June 2025
+5 Directors’ remuneration
+Aggregate Directors’ remuneration during the year totalled £1,000,000 (2024 £855,000) excluding defined |
+contribution pension contributions of Enil (2024 Enil) The highest pard Director's emoluments totalled £955,000
+(2024 £810,000) Retirement benefits are accruing to no Directors (2024 none) under defined contribution
+schemes No charge has been recognised for the services of Mr S R Khan, Mr M Lamping and Mr A R Khan as this
+is tmmatenial
+Key management personnel compensation has not been disclosed as the key management personnel and directors |
+are deemed to be the same
+6 Net interest receivable
+2025 2024
+£°000 £'000
+Interest receivable:
+Bank interest 535 906
+535 906
+Interest payable: |
+Other interest payable (17) (1)
+(17) (4)
+Net interest receivable 518 905
+7 Tax on Joss
+2025 2024
+£000 £000
+(a) The tax for the year comprises
+Current tax charge . - 672
+Adjustment in respect of prior periods : 337
+Total tax (note 7 (b)) - 1,009
+(b) Factors affecting tax charge/credit for the year
+The tax assessed for the year differs from the standard rate of corporation tax in the UK The-difference is
+explained below
+Loss before tax (39,012) (31,206)
+Loss at standard rate of corporation tax in the UK of 25 00% (2024 ;
+25 00%) (9,753) (7,802) '
+Effects of
+Expenses not deductible for tax purposes 8,286 7,014
+Effects of group relief / other reliefs 550 550
+Deferred tax not recognised 917 910
+Adjustment from previous periods : 337 |
+Tax charge for the year . 1,009
+ee
+The deferred tax not recognised balance relates movements in the temporary differences in the year
+|
+Expenses not deductible for tax purposes includes a cap on deductible expenses arising from the anti-hybrid
+mismatch rules, as a result of these expenses also being included in the US group to which the company belongs |
+24 Fulham Football Club Limited
+Fulham Football Club Limited
+Accompanying Notes to the Financial Statements (continued)
+For the year ended 30 June 2025
+7 Tax on loss (continued)
+(c) Factors that may affect future tax charges
+At the year end, the Company has an unrecognised deferred tax asset of approximately £65,729,000 (2024
+£64,264,000), as analysed overleaf This asset has not been recognised as there Is uncertainty over the
+company’s ability to generate taxable profits against which it would be utilised
+The unrecognised deferred tax asset Is analysed below
+2025 2024
+£'000 £000
+Depreciation in excess of capital allowances 3,154 2,812
+Short term timing differences 20 19
+Tax losses carned forward 62,555 61,433
+65,729 64,264
+The Directors note that under the rules of the US tax regime applicable to its parent company K2TR Family Holdings 1
+2 Corp an election has been made which results in the remainder of the losses being relieved in the tax computation
+of the ultimate parent's US group The anti-hybrid rules adopted in the UK mean that such losses, where relieved
+against the US profits are then unavailable in future to the UK entity, to avoid these losses being used twice These :
+rules have the effect of transferring any value tn the tax losses used in the US from the Company to the US ultimate
+parent (and its group)
+8 Intangible fixed assets
+Player
+registrations ;
+Cost £'000
+01 July 2024 253,913
+Additions 95,898
+Disposals : (55,741)
+30 June 2025 294,070 :
+Amortisation and impairment
+01 July 2024 ° 134,337
+Charge for the year 61,521
+Disposals (40,541)
+30 June 2025 155,317
+Net book amount
+30 June 2025 138,753
+01 July 2024 119,576 \
+25 Fulham Football Club Limited
+Fulham Football Club Limited
+Accompanying Notes to the Financial Statements (continued)
+For the year ended 30 June 2025 .
+9 Tangible fixed assets ‘
+Fixtures,
+fittings, plant
+& equipment Total
+£000 £°000
+Cost
+01 July 2024 13,582 13,582
+Additions 2,196 2,196
+30 June 2025 15,778 15,778
+Depreciation
+01 July 2024 9,420 9,420
+Charge for the year 1,700 1,700
+30 June 2025 11,120 11,120
+Net book amount
+30 June 2025 4,658 4,658
+01 July 2024 4,162 4,162
+410 Debtors
+2025 2024
+£°000 £°000
+Trade debtors 13,034 7,372
+Player transfer debtors 45,257 28,159
+Other debtors 1,712 3,357
+Amounts due from related parties 594 561
+Amounts due from immediate parent company 376 1,300
+Prepayments and accrued income 4,340 6,193
+65,313 46,942
+Included within the Player transfer debtors balance is an amount of £31,585,000 (2024 £2,329,000) which Is due after
+more than one year
+Amounts due from related partes and amounts due from immediate parent company are unsecured, non-interest
+bearing and repayable on demand
+26 Fulham Football Club Limited
+Fulham Football Club Limited
+Accompanying Notes to the Financial Statements (continued)
+For the year ended 30 June 2025
+11 Creditors
+2025 2024
+Due within one year: £000 £'000
+|
+Trade creditors 823 1,696
+Player transfer creditors 55,169 57,707
+Amounts due to related parties 1,995 4,195
+Amounts due to immediate parent company - 44,398
+Other taxes and social security 18,249 14,508
+Accruals 25,938 13,297 ,
+Other creditors 648 658
+102,822 136,459
+2025 2024
+Due after more than one year: £’000 £'000
+Player transfer creditors 42,908 14,411
+42,908 14,411
+During the year, on 18 October 2024, the Company issued an additional 44,397,524 new ordinary shares to Fulham
+Football Leisure Limited, offsetting with the debt owed to Fulham Football Leisure Limited as shown in the Amounts :
+due to immediate parent company balance in the prior year above
+12 Deferred income
+2025 2024
+£°000 £'000
+Season ticket sales in advance 8,960 9,199
+Commercial income and sponsorship 6,384 9,895
+15,344 19,094
+13 Share capital
+Ordinary shares of £1 each 2025 2024
+Allotted, called up and fully
+paid ‘000 ‘000
+1 July 19,369 19,369
+Issued in the pertod 66,422 -
+Share reduction (56,849) -
+30 June 28,942 19,369
+The holders of ordinary shares are entitled to receive dividends as declared from time to time and are entitled to one
+vote per share at meetings of the Company During the year, on 18 October 2024, the Company issued 44,397,524
+new ordinary shares to Fulham Football Leisure Limited, offsetting with the debt owed to Fulham Football Leisure
+Limited Then, on 27 June 2025, there was a share reduction of 56,848,525 ordinary shares Shortly thereafter, on ,
+30 June 2025, a further 22,024,689 new ordinary shares were issued to Fulham Football Leisure Lumited, offsetting
+with the debt owed to Fulham Football Leisure Limited, raising the total catled-up share capital to £28 9m
+27 Fulham Football Club Limited
+Fulham Football Club Limited
+Accompanying Notes to the Financial Statements (continued)
+For the year ended 30 June 2025
+14 Operating leases
+Non-cancellable operating lease rentals are payable by the Company as follows
+I
+|
+2025 2024
+£'000 £°000
+Less than one year 2,262 2,329
+Between one and five years 491 2,847
+More than five years 5 19
+2,758 5,195
+During the year £2,200,000 was recognised as an expense in the profit and loss account in respect of operating leases \
+(2024 £2,507,000) The above amounts include amounts payable to other group companies for the use of Craven
+Cottage Stadium and Motspur Park Training Ground
+48 Capital commitments
+Amounts contracted for by the Company but not provided for in the accounts in respect of tangible fixed assets
+amounted to Eni (2024 Enil)
+16 Contingent transfer fees ,
+The estimated commitment for additional transfer fees payable in respect of future possible appearances amounts to
+£2,875,000 (2024 £400,000) These amounts have not been included in the financial statements on the basis that ,
+they are not yet considered probable
+The Group has in place a number of transfer contracts that give nse to contingent receivables The Directors have 1
+assessed such contracts and the amounts that are deemed probable at the year-end are determined to be £nil
+(2024 £nil) These amounts have not been included tn the financial statements |
+17 Related party transactions :
+During the year there were arm's length trading transactions between the Company and Jacksonville Jaguars LLC, a
+company incorporated tn the USA and under the common contro! of the Group’s current ultimate controlling party
+The balances owed or owing at the year end with Jacksonville Jaguars LLC are shown below There were also |
+transactions in the year and prior year with Union Jax LLC, a foreign incorporated company registered in the UK
+under the common contro! of the Group's ultimate controlling party, and Fulham Football Club Foundation who
+shares directorships with the Group The value of the transactions during the period is shown below
+2025 2025 2024 2024
+Purchases Sates Purchases Sales
+£000 £'000 £'000 £000
+Jacksonville Jaguars LLC - 500 - 500
+Union Jax LLC - 21 - -
+D Daly - 9 - 10
+Total - 530 : 510
+28 Fulham Football Club Limited |
+Fulham Football Club Limited ;
+Accompanying Notes to the Financial Statements (continued)
+For the year ended 30 June 2025
+17 Related party transactions (continued)
+Balances with related partes as at 30 June 2025 are as follows
+2025 2025 2024 2024
+Due To Due From Due To Due From
+£'000 £'000 £'000 £'000
+Union Jax LLC 269 - 223 -
+Futham Football Club Foundation 2,285 : 1,772 -
+Jacksonville Jaguars LLC - . - 501
+Fulham Pter Limited - 194 - 60
+Fulham Stadium Limited - 400 2,000 -
+FL Property Management Limited - - 200 -
+Tota! 2,554 594 4,195 561 '
+D Daly ts a listed Director of the company who purchases seasonal and matchday tickets These amounts are not at
+a discounted value and are paid tn full so not outstanding at the year end
+|
+The balance outstanding with Fulham Football Ciub Foundation as at 30 June 2024 and 2025 represents donations
+from players received by the Company for the benefit of the foundation ‘
+The Company provided administrative services to Union Jax LLC throughout the year The balances as at 30 June
+2024 and 2025 represents charges incurred on their behalf and subsequently recharged
+The Company received loans during the period totalling £66,422,000 (2024 £75,272,000) from Fulham Football
+Leisure Limited, the tmmediate parent company
+No disclosure has been made of any transactions within these financial statements with fellow subsidiaries tn
+accordance with the exemptions allowed under Section 33 Related Party Disclosures
+18 Ultimate parent company and parent company of larger group
+The Company is a subsidiary undertaking of Fulham Football Leisure Limited The ultimate controlling party is Mr '
+Shahid Khan
+The largest group tn which the results of the Company are consolidated 1s that headed by Cougar Holdco London
+Limited, incorporated in the United Kingdom The smallest group tn which the results of the Company are
+consolidated 1s that headed by Fulham Football Leisure Limited The consolidated financial statements of these
+groups are available to the public and may be obtained from Companies House, Crown Way, Cardiff CF 14 3UZ
+19 Post balance sheet events
+Since the year-end the Group has acquired and disposed of a number of player registrations The cost of acquinng
+new player registrations post year end amounted to £13 3m (2024 £95 3m) and the profit on the disposal of player
+registrations post year end was £12 2m (2024 £43 3m)
+29 Fulham Football Club Limited
+Fulham Football Club Limited
+Accompanying Notes to the Financial Statements (continued)
+For the year ended 30 June 2025
+20 Accounting estimates and judgements
+The Directors assessment of the carrying amount of intangible fixed assets and any related impairment is a key area
+of estimation uncertainty in these financial statements The valuation of player registrations is highly subjective and l
+can be subject to frequent and sudden change dependent on individual player performance and the general
+conditions tn the transfer market To mitigate the risks arising from such uncertainty, the Directors adopt a prudent \
+approach when conducting impairment reviews
+In completing the assessment of impairments required, the Directors also consider the playing squad to be one cash
+generating unit (*CGU”") such that no impairment ts recorded if the overall value of the playing squad ts greater than
+Its carrying value Where certain players are no longer part of the playing squad, for example due to tong-term inyury,
+they are treated as a separate CGU and the carrying value assessed accordingly To the extent that the carrying
+value exceeds the recoverable amount, the asset 1s tmpatred and the impairment loss 1s recognised in the profit and
+loss account
+The Directors and management teams consider that they have suffictent experience and knowledge to make these
+assessments These expenences are drawn on when making these detailed assessments, with both tooking back at
+histoncal trends and into the future at various possible outcomes
+The assessment Is completed in line with the accounting policy in note 17 3
+21 Long term employee benefits
+|
+Payments are made into a number of defined contribution schemes Total contributions paid during the year
+amounted to £548,000 (2024 £457,000) An amount of £80,000 (2024 £76,000) remained outstanding at the
+balance sheet date
+22 Compliance with UEFA Annex G
+The accounting policies applied in the preparation of these financial statements are the accounting pohcies detatled
+tn Note 1
+The directors confirm that these financial statements additionally comply with the accounting requirements set out in
+Annex G of the UEFA Club Licensing and Financial Sustainability Regulations (Edition 2013) as issued on 1 July
+2024 (‘Annex G”)
+Accordingly, no reconciliation has been prepared between the figures presented under FRS 102 in these financial
+statements and those figures that would be presented under Annex G, as there are no material differences between
+the two
+30 Fulham Football Club Limited ;
 

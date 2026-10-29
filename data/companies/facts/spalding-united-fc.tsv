@@ -1,4 +1,52 @@
 club_id	company_number	document	filing_date	made_up_date	concept	prefix	kind	period_start	period_end	instant	dimensions	unit	value
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	AccountingStandardsApplied	bus	text	2023-08-01	2024-07-31		AccountingStandardsDimension=Micro-entities		
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	AccountsStatusAuditedOrUnaudited	bus	text	2023-08-01	2024-07-31		AccountsStatusDimension=AuditExemptWithAccountantsReport		
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	AccountsType	bus	text	2023-08-01	2024-07-31		AccountsTypeDimension=FullAccounts		
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	ApplicableLegislation	bus	text	2023-08-01	2024-07-31		ApplicableLegislationDimension=SmallCompaniesRegimeForAccounts		
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	AverageNumberEmployeesDuringPeriod	core	num	2022-08-01	2023-07-31			pure	20
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	AverageNumberEmployeesDuringPeriod	core	num	2023-08-01	2024-07-31			pure	6
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	BalanceSheetDate	bus	text		2024-07-31	1			31 July 2024
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	CountryFormationOrIncorporation	bus	text	2023-08-01	2024-07-31				
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	Creditors	core	num		2023-07-31	1	FinancialInstrumentCurrentNon-currentDimension=CurrentFinancialInstruments;MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	49132
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	Creditors	core	num		2023-07-31	1	FinancialInstrumentCurrentNon-currentDimension=Non-currentFinancialInstruments	GBP	199900
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	Creditors	core	num		2024-07-31	1	FinancialInstrumentCurrentNon-currentDimension=CurrentFinancialInstruments;MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	37557
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	Creditors	core	num		2024-07-31	1	FinancialInstrumentCurrentNon-currentDimension=Non-currentFinancialInstruments	GBP	0
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	CurrentAssets	core	num		2023-07-31	1		GBP	56743
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	CurrentAssets	core	num		2024-07-31	1		GBP	27834
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	DateAuthorisationFinancialStatementsForIssue	core	text		2024-07-31	1			26 February 2025
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	DescriptionPrincipalActivities	bus	text	2023-08-01	2024-07-31				No description of principal activity
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	DirectorSigningFinancialStatements	core	text	2023-08-01	2024-07-31		EntityOfficersDimension=Director5		
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	EndDateForPeriodCoveredByReport	bus	text		2024-07-31	1			2024-07-31
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	EntityCurrentLegalOrRegisteredName	bus	text	2023-08-01	2024-07-31				SPALDING UNITED FOOTBALL CLUB (2017) LTD
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	EntityDormantTruefalse	bus	text	2023-08-01	2024-07-31				false
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	EntityHasTakenExemptionUnderCompaniesActInNotPublishingItsOwnProfitLossAccountTruefalse	direp	text	2023-08-01	2024-07-31				The directors of the company have elected not to include a copy of the profit and loss account within the financial statements.true
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	EntityTradingStatus	bus	text	2023-08-01	2024-07-31				
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	Equity	core	num		2023-07-31	1		GBP	-170182
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	Equity	core	num		2024-07-31	1		GBP	5743
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	FixedAssets	core	num		2023-07-31	1		GBP	15094
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	FixedAssets	core	num		2024-07-31	1		GBP	10798
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	LegalFormEntity	bus	text	2023-08-01	2024-07-31		LegalFormEntityDimension=PrivateLimitedCompanyLtd		
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	NameEntityOfficer	bus	text	2023-08-01	2024-07-31		EntityOfficersDimension=CompanySecretary1		Mr D Preece
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	NameEntityOfficer	bus	text	2023-08-01	2024-07-31		EntityOfficersDimension=Director1		Mr D Preece
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	NameEntityOfficer	bus	text	2023-08-01	2024-07-31		EntityOfficersDimension=Director2		Mr A Killingsworth
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	NameEntityOfficer	bus	text	2023-08-01	2024-07-31		EntityOfficersDimension=Director3		Mr H R Killingsworth
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	NameEntityOfficer	bus	text	2023-08-01	2024-07-31		EntityOfficersDimension=Director4		Mr A R Killingsworth
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	NameEntityOfficer	bus	text	2023-08-01	2024-07-31		EntityOfficersDimension=Director5		Mr L Porter
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	NameEntityOfficer	bus	text	2023-08-01	2024-07-31		EntityOfficersDimension=Director6		Mr M Fisher
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	NameProductionSoftware	bus	text	2023-08-01	2024-07-31				CCH Software
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	PrepaymentsAccruedIncomeNotExpressedWithinCurrentAssetSubtotal	core	num		2023-07-31	1		GBP	7013
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	PrepaymentsAccruedIncomeNotExpressedWithinCurrentAssetSubtotal	core	num		2024-07-31	1		GBP	4668
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	ReportAnAmendedRevisedVersionPreviouslyFiledReportTruefalse	bus	text	2023-08-01	2024-07-31				false
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	ReportIncludesDetailedProfitLossStatementTruefalse	bus	text	2023-08-01	2024-07-31				false
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	ScopeAccounts	bus	text	2023-08-01	2024-07-31				
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	StartDateForPeriodCoveredByReport	bus	text		2024-07-31	1			2023-08-01
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime	direp	text	2023-08-01	2024-07-31				These financial statements have been prepared in accordance with the micro-entity provisions and in accordance with FRS 105 'The Financial Reporting Standard applicable to the Micro-entities Regime' and delivered in accordance with the provisions applicable to companies subject to the small companies regime.
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies	direp	text	2023-08-01	2024-07-31				For the year ended 31 July 2024 the company was entitled to exemption from audit under section 477 of the Companies Act 2006 relating to small companies.
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct	direp	text	2023-08-01	2024-07-31				The directors acknowledge their responsibilities for complying with the requirements of the Companies Act 2006 with respect to accounting records and the preparation of financial statements.
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit	direp	text	2023-08-01	2024-07-31				The members have not required the company to obtain an audit of its financial statements for the year in question in accordance with section 476.
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	UKCompaniesHouseRegisteredNumber	bus	text	2023-08-01	2024-07-31				10866357
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	VersionProductionSoftware	bus	text	2023-08-01	2024-07-31				CCH Accounts Production 2024.310
+spalding-united-fc	10866357	715-B-sPaaX8KlmDttORO2pnkudYIBXkHHatKlC9QKM	2025-03-12	2024-07-31	_GoingConcernMaterialUncertainty	derived	text						none found
 spalding-united-fc	10866357	bj7xmmsiF5WQ34DLrYO8oPUNQmkHY_bL5P431pCiT-A	2026-04-29	2025-07-31	AccountingStandardsApplied	bus	text	2024-08-01	2025-07-31		AccountingStandardsDimension=FRS102		
 spalding-united-fc	10866357	bj7xmmsiF5WQ34DLrYO8oPUNQmkHY_bL5P431pCiT-A	2026-04-29	2025-07-31	AccountsStatusAuditedOrUnaudited	bus	text	2024-08-01	2025-07-31		AccountsStatusDimension=AuditExemptWithAccountantsReport		
 spalding-united-fc	10866357	bj7xmmsiF5WQ34DLrYO8oPUNQmkHY_bL5P431pCiT-A	2026-04-29	2025-07-31	AccountsType	bus	text	2024-08-01	2025-07-31		AccountsTypeDimension=FullAccounts		

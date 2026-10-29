@@ -2,7 +2,7 @@ source: Companies House filing, sunderland-afc__1.pdf
 document: KDDWTCCgoYQxDC9gmqwG1XRJzar7GuxBUsNUjngNENQ
 made_up_date: 2025-07-31
 method: ocr
-pages_read: 12 of 32
+pages_read: 32 of 32
 
 Company Registration Number 00049116
 STRATEGIC REPORT, REPORT OF THE DIRECTORS AND .
@@ -468,4 +468,754 @@ the Club’s registration with the English Footbal) League and the Football Asso
 We discussed among the audit engagement regarding the opportunities and incentives that may exist within the 3
 organisation for fraud and how and where fraud might occur in the financial statements. .
 Page 10 .
+SUNDERLAND ASSOCIATION FOOTBALL
+CLUB, LIMITED(THE)
+Independent auditor’s report to the members of Sunderland Association Football Club Limited (continued)
+In common with all audits under ISAs (UK), we are also required to perform specific procedures to respond to the risk of
+management override. In addressing the risk of fraud through management override of controls, we tested the
+appropriateness of journal entries and other adjustments; assessed whether the judgements made in making accounting
+estimates are indicative of a potential bias; and evaluated the business rationale of any significant transactions that are
+unusual or outside the normal course of business.
+In addition to the above, our procedures to respond to the risks identified included the following:
+° reviewing financial statement disclosures by testing to supporting documentation to assess compliance with
+provisions of relevant laws and regulations described as having a direct effect on the financial statements;
+© performing analytical procedures to identify any unusual or unexpected relationships that may indicate risks of
+material misstatement due to fraud; and
+¢ — enquiring of management concerning actual and potential litigation and claims, and instances of non-compliance with
+laws and regulations.
+Report on other legal and regulatory requirements
+Opinions on other matters prescribed by the Companies Act 2006
+In our opinion, based on the work undertaken in the course of the audit:
+- @ the information given in the strategic report and the directors’ report for the financial year for which the financial
+statements are prepared is consistent with the financial statements; and
+e the strategic report and the directors’ report have been prepared in accordance with applicable legal requirements.
+In the light of the knowledge and understanding of the company and its environment obtained in the course of the audit,
+we have not identified any material misstatements in the strategic report or in the directors’ report.
+Matters on which we are required to report by exception .
+Under the Companies Act 2006 we are required to report in respect of the following matters if, in our opinion:
+¢ adequate accounting records have not been kept, or returns adequate for our audit have not been received from
+branches not visited by us; or
+« the financial statements are not in agreement with the accounting records and returns; or
+® certain disclosures of directors’ remuneration specified by law are not made; or
+. * we have not received all the information and explanations we require for our audit. .
+We have nothing to report in respect of these matters.
+Use of our report :
+This report is made solely to the company’s members, as a body, in accordance with Chapter 3 of Part 16 of the Companies
+Act 2006. Our audit work has been undertaken so that we might state to the company’s members those matters we are
+required to state to them in an auditor's report and for no other purpose. To the fullest extent permitted by law, we do
+not accept or assume responsibility to anyone other than the company and the company’s members as a body, for our
+audit work, for this report, or for the opinions we have formed. .
+Mark Bathgate FCA (Senior statutory auditor)
+For and on behalf of Constantin
+Chartered Accountants and Statutory Auditor
+200 Aldersgate Street
+London .
+ECIA 4HD
+22 December 2025
+Page 11 ,
+SUNDERLAND ASSOCIATION FOOTBALL :
+CLUB, LIMITED(THE) i
+4
+INCOME STATEMENT :
+FOR THE YEAR ENDED 31 JULY 2025 . :
+: i
+2025 2024 t
+Notes £'000 £000 :
+TURNOVER 3 39,422 37,452 }
+Cost of sales ; (1,454) (3,300) :
+GROSS PROFIT , 37,968 34,152 :
+Other operating income 5 - 25 :
+4
+Operating expenses (73,733) (47,500) :
+5 (35,765) (13,323) :
+
+Amortisation of players contracts 6 (10,409) (3,983)
+Profit on disposal of player contracts 6 45,843 8,818 :
+OPERATING LOSS 5 (332) (8,488) ;
+
+Interest payable and similar expenses 7 (2,955) (626)
+Interest receivable and similar income 7 7 43 ,
+LOSS BEFORE TAXATION {3,279} (9,071) ,
+Tax on loss 8 = —_— :
+
+LOSS FOR THE FINANCIAL YEAR (3,279) (9,071)
+
+The income statement has been prepared on the basis that all operations are continuing operations.
+The notes form part of these financial statements
+Page 12
+SUNDERLAND ASSOCIATION FOOTBALL
+CLUB,LIMITEO(THE)
+STATEMENT OF COMPREHENSIVE INCOME
+FOR THE YEAR ENDED 31 JULY 2025
+2025 2024
+
+Notes £°000 £'000
+LOSS FOR THE YEAR (3,279) (9,071)
+OTHER COMPREHENSIVE LOSS - -
+TOTAL COMPREHENSIVE INCOME FOR THE
+YEAR (3,279) (9,071)
+
+The notes form part of these financial statements
+Page 13
+SUNDERLAND ASSOCIATION FOOTBALL °
+CLUB,LIMITEO(THE) (REGISTERED NUMBER: 00049116) :
+t
+BALANCE SHEET i
+31 JULY 2025 1
+2025 2024 i
+Notes £'000 £'000 £000 £'000 ;
+FIXED ASSETS
+intangible assets 9 147,572 11,666 '
+Tangible assets 10 17,833 13,939 i
+Investments 11 : : :
+165,405 25,605 :
+CURRENT ASSETS
+Stocks 12 : 100 :
+Debtors 13 53,108 11,791 :
+Cash at bank 20,711 - :
+73,819 11,891 :
+CREDITORS
+Amounts falling due within one year 14 {174,956) (66,814) .
+NET CURRENT LIABILITIES (101,137) (54,923) :
+TOTAL ASSETS LESS CURRENT LIABILITIES 64,268 (29,318)
+CREDITORS
+Amounts falling due after more than one
+year 15 (101,641) (4,776)
+: NET ASSETS/(LIABILITIES) (37,373) (34,094)
+CAPITAL AND RESERVES
+Called up share capital 17 1,000 1,000
+Share premium 18 - -
+Revaluation reserve 18 82 82 .
+Retained earnings 18 (38,455) (35,176)
+SHAREHOLDERS’ FUNDS (37,373) (34,094)
+The financial statements were approved by the Board of Directors and authorised for issue on 22 December 2025 and ,
+were signed on its behalf by: ,
+K Louis-Dreyfus - Director
+. The notes form part of these financial statements
+Page 14
+SUNDERLAND ASSOCIATION FOOTBALL —_ ; ,
+CLUB,LIMITED(THE)
+STATEMENT OF CHANGES IN EQUITY
+FOR THE YEAR ENDED 31 JULY 2025 ‘
+Called up
+share Retained Share Revaluation Total
+capital earnings premium reserve equity
+£'000 £'000 £'000 £'000 £'000
+Balance at 1 August 2023 1,000 (26,104) - 82 (25,024)
+Changes in equity
+Loss and total comprehensive income .
+for the year - (9,071) - - (9,071)
+Balance at 31 July 2024 1,000 (35,175) : 82 (34,094)
+Batance at 1 August 2024 1,000 (35,175) - 82 (34,094)
+Changes in equity
+Loss and total comprehensive income
+for the year : (3,279) : - (3,279)
+Balance at 31 July 2025 1,000 (38,454) - 82 (37,373)
+The notes form part of these financial statements
+Page 15
+SUNDERLAND ASSOCIATION FOOTBALL
+CLUB,LIMITED(THE)
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 31 JULY 2025
+1. STATUTORY INFORMATION :
+Sunderland Association Football Club, Limited (The) is a private company, limited by shares, registered in England ‘
+and Wales. The company's registered number is 00049116 and the registered office address is The Stadium of :
+Light, Sunderland, SRS 1SU. -
+The presentation currency of the financial statements is the Pound Sterling {£). Monetary amounts in these
+financial statements are rounded to the nearest £000.
+2. ACCOUNTING POLICIES :
+Basis of preparing the financial statements
+These financial statements have been prepared in accordance with Financia! Reporting Standard 102 "The
+Financial Reporting Standard applicable in the UK and Republic of Ireland" and the Companies Act 2006. The
+financial statements have been prepared under the historical cost convention.
+Financial Reporting Standard 102 - reduced disclosure exemptions
+The company has taken advantage of the following disclosure exemptions in preparing these financial .
+statements, as permitted by FRS 102 "The Financial Reporting Standard applicable in the UK and Republic of
+treland":
+°° the requirements of Section 7 Statement of Cash Flows;
++ the requirements of paragraphs 11.42, 11.44, 11.45, 11.47, 11.48(a)(iii), 11.48(a)(iv), 11.48(b) and
+11.48(c); :
++ the requirement of paragraph 33.7.
+Preparation of consolidated financial statements
+Consolidated financial statements are not submitted as the Company is exempt from the obligation to prepare
+consolidated financial statements under Section 400 of the Companies Act 2006. The results of subsidiary
+undertakings are dealt with in the consolidated financial statements of the parent undertaking, Sunderland
+Limited whose registered office is Stadium of Light, Sunderland, SRS 1SU and from where the copies of the .
+consolidated accounts are publicly available.
+Related party exemption
+The company has taken advantage of exemption, under the terms of Financial Reporting Standard 102 ‘The
+Financial Reporting Standard applicable in the UK and Republic of Ireland’, not to disclose related party
+transactions with wholly awned subsidiaries within the group.
+Critical accounting judgements and key sources of estimation uncertainty
+Estimates and judgements are continually evaluated and are based on historical experience and other factors,
+including expectations of future events that are believed to be reasonable under the circumstances.
+(a) Critical judgements in applying the entity's accounting policies. There are no critical judgements in applying
+the entity's accounting policies.
+(b) Critical accounting estimates and assumptions. There are no critical estimates made. :
+(c) Impairment of intangible assets. The company considers whether intangible assets are impaired on a regular
+basis throughout the year. Where an indication of impairment is identified the estimation of recoverable value
+requires estimate of future cash flows. .
+Page 16 continued...
+SUNDERLAND ASSOCIATION FOOTBALL
+
+CLUB,LIMITED(THE)
+
+NOTES TO THE FINANCIAL STATEMENTS - continued
+
+FOR THE YEAR ENDED 32 JULY 2025
+
+2. ACCOUNTING POLICIES - continued
+Turnover
+Turnover comprises gate receipts, television and media, sponsorship and royalties, conference banqueting and
+catering, retail and merchandising and invoiced sales, exclusive of value added tax. Television and media income
+is recognised in equal instalments during the season and gate receipt income is taken to the statement of
+comprehensive income when the matches are played. Sponsorship and royalties income is recognised over the
+life of the relevant agreements, catering and retail income is recognised upon sale of the goods.
+Accrued Income
+Income from match day activities, media and commercial contracts, which is invoiced after the period to which
+it relates, is treated as accrued income.
+Deferred income
+Income from match day activities, media and commercial contracts which has been invoiced prior to the period
+end in respect of future football seasons, is treated as deferred income.
+Tangible fixed assets and depreciation
+Tangible fixed assets are held at historic purchase cost less accumulated depreciation. Cost includes the original
+purchase price of the asset and the costs attributable to bringing the asset to its working condition for its
+intended use. Depreciation has been calculated to write down the cost or valuation, less estimated residual
+value, of tangible fixed assets over their expected useful lives at the following rates:
+Freehold property 5 - 75 years in equal annual instalments to an estimated residual value
+Fixtures, fittings and equipment 3 - 10 years in equal annual instalments .
+Motor vehicles 4 years in equal annual instalments
+Assets in the course of construction are not depreciated. ‘
+Costs of ongoing capital projects are held as assets under construction in the balance sheet and are transferred
+to the appropriate fixed asset categories upon completion.
+Intangible assets .
+The costs associated with the acquisition of players’ registrations are capitalised as intangible assets. Costs include
+transfer fees, levy fees, agents fees and other directly attributable costs. These costs are amortised from the month of
+purchase fully over the contract period. Where a playing contract is extended, any costs associated with securing the
+extension are added to the unamortised balance {at the date of amendment) and the revised book value is amortised
+over the remaining revised contract life. Where a part of the consideration payable on acquiring a player’s registration is .
+contingent on a future event, this amount is recognised once it is probable, rather than possible, that the event will
+occur.
+Inventories
+Inventories are stated at the lower of cost and estimated selling price less cost to complete and sell. Inventories
+are recognised as an expense in the period in which the related revenue is recognised.
+Cost includes all direct costs attributable to bringing the inventory to its present location and condition.
+Where necessary, provision is made for slow moving inventory.
+Cash
+Cash at bank includes cash in hand, deposits repayable on demand and other short-term highly liquid :
+investments with original maturities of three months or less, less overdrafts payable on demand.
+
+Page 17 continued... .
+SUNDERLAND ASSOCIATION FOOTBALL :
+CLUB,LIMITED(THE) j
+. 1
+t
+NOTES TO THE FINANCIAL STATEMENTS - continued : i
+FOR THE YEAR ENDED 31 JULY 2025 :
+)
+2. ACCOUNTING POLICIES - continued i
+Financial instruments
+The company has chosen to adopt Sections 11 and 12 of FRS 102 in respect of financial instruments. i
+i
+{i) Financial assets :
+Basic financial assets, including other receivables and cash and bank balances, are initially recognised at :
+transaction price, unless the arrangement constitutes a financing transaction which is measured at the present i
+value of the future receipts discounted at a market rate of interest. Such assets are subsequently carried at L
+amortised cost. i
+i
+At the end of each reporting period financial assets measured at amortised cost are assessed for objective :
+evidence of impairment. If an asset is impaired the impairment loss is the difference between the carrying i
+amount and the present value of the estimated cash flows discounted at the assets’ original effective interest
+rate. The impairment loss is recognised in the statement of comprehensive income. :
+:
+4
+Other financial assets, including investments in equity instruments which are not subsidiaries, associates or joint :
+ventures, are initially measured at fair value, which is normally the transaction price. ;
+Such assets are subsequently carried at fair value and the changes in fair value are recognised in profit or loss, \
+except that investments in equity instruments that are not publicly traded and whose fair values cannot be ;
+. measured reliably are measured at cost less impairment. :
+Financial assets are derecognised when (i) the contractual rights to the cash flows from the asset expire or are
+settled, or (ii) substantially all the risks and rewards of the ownership of the asset are transferred to another :
+party, or (iii) control of the asset has been transferred to another party who has the practical ability to
+, unilaterally sell the asset to an unrelated third party without imposing additional restrictions.
+(ii) Financial liabilities .
+Basic financial liabilities, including trade and other payables and loans from fellow group undertakings, are ;
+initially recognised at transaction price, unless the arrangement constitutes a financing transaction, where the 7
+debt instrument is measured at the present value of the future receipts discounted at a market rate of interest.
+Debt instruments are subsequently carried at amortised cost. :
+Fees paid on the establishment of loan facilities are recognised as transaction costs of the loan to the extent that :
+itis probable that some aor all of the facility will be drawn down. In this case, the fee is deferred until the draw- :
+down occurs. To the extent there is no evidence that it is probable that some or al! of the facility will be drawn ‘
+down, the fee is capitalised as a pre-payment for liquidity services and amortised over the period of the facility
+. to which it relates. : :
+Trade payables are obligations to pay for goods or services that have been acquired in the ordinary course of :
+business from suppliers. Accounts payable are classified as current liabilities if payment is due within one year .
+or less. If not, they are presented as non-current liabilities. Trade payables are recognised initially at transaction :
+price and subsequently measured at amortised cost using the effective interest method. ,
+Derivatives, including interest rate swaps and forward foreign exchange contracts, are not basic financial .
+instruments. Derivatives are initially recognised at fair value on the date a derivative contract is entered into and
+are subsequently re-measured at their fair value. Changes in the fair value of derivatives are recognised in profit :
+or loss in finance costs or finance income as appropriate, unless they are included in a hedging arrangement. :
+Page 18 continued... .
+SUNDERLAND ASSOCIATION FOOTBALL
+CLUB,LIMITED(THE)
+NOTES TO THE FINANCIAL STATEMENTS - continued
+FOR THE YEAR ENDED 31 JULY 2025
+2. ACCOUNTING POLICIES - continued ,
+Financial liabilities are derecognised when the liability is extinguished, that is when the contractual obligation is
+discharged, cancelled or expires.
+Taxation
+Taxation for the year comprises current and deferred tax. Tax is recognised in the Income Statement, except to
+the extent that it relates to items recognised in other comprehensive income or directly in equity.
+Current or deferred taxation assets and liabilities are not discounted. .
+Current tax is recognised at the amount of tax payable using the tax rates and laws that have been enacted or
+substantively enacted by the balance sheet date.
+Deferred tax
+Deferred tax is recognised in respect of all timing differences that have originated but not reversed at the balance
+sheet date.
+Timing differences arise from the inclusion of income and expenses in tax assessments in periods different from .
+those in which they are recognised in financial statements. Deferred tax is measured using tax rates and laws
+that have been enacted or substantively enacted by the year end and that are expected to apply to the reversal
+of the timing difference. :
+Unrelieved tax losses and other deferred tax assets are recognised only to the extent that it is probable that they
+will be recovered against the reversal of deferred tax liabilities or other future taxable profits.
+Grants receivable
+Grants received as a contribution towards specific expenditure on fixed assets are held in a deferred income
+account and recognised in the profit and loss account over the expected useful lives of the related assets.
+Other grants received are held in a deferred income account and recognised in the profit and loss account so
+as to match them with the expenditure to which they are intended to contribute.
+Foreign currencies
+Assets and liabilities in foreign currencies are translated into sterling at the rates of exchange ruling at the
+balance sheet date. Transactions in foreign currencies are translated into sterling at the rate of exchange ruling
+at the date of transaction. Exchange differences are taken into account in arriving at the operating result.
+Pensions .
+Previously employed staff of the Company are members of either the Football League Limited Players
+Retirement Income Scheme, a defined contribution scheme, or the Football League Pension and Life Assurance
+Scheme, a defined benefit scheme. The Company also contributes to individuals private pension schemes.
+Pension costs relating to defined benefit schemes are charged to the profit and loss account as if they were
+defined contribution pension costs. This is due to the Company being unable to identify its share of the assets
+and liabilities of the schemes, which are held separately in administered funds.
+Pension costs relating to defined contribution schemes are charged to the profit and loss account in the year to
+which they relate.
+Investments
+Investments in subsidiaries, associates and jointly controlled entities are initially measured at cost and .
+subsequently measured at cost less any accumulated impairment losses. The investments are assessed for
+impairment at each reporting date and any impairment losses or reversals of impairment losses are recognised
+immediately in profit or loss.
+Page 20 continued... ‘
+SUNDERLAND ASSOCIATION FOOTBALL
+
+CLUB,LIMITED(THE) :
+
+NOTES TO THE FINANCIAL STATEMENTS - continued .
+
+FOR THE YEAR ENDED 31 JULY 2025 :
+
+2. ACCOUNTING POLICIES - continued :
+Going concern :
+The shareholders of the ultimate parent company, Mercator Investments Limited, have indicated their willingness to t
+continue to support the operations-of the Company for the foreseeable future, which is at Jeast, but is not limited to,
+twelve months from the date of these financial statements. In making their assessment of the going concern the
+directors have assessed the ability of the ultimate owners to provide such support.
+
+: Accordingly, the directors continue to adopt the going concern basis of accounting in preparing the financial statements. ‘
+The directors have taken into account the impact of the Russo-Ukrainian warin making their assessment of the going
+concern, :
+Signing on fees
+Contractual amounts of fees payable to players are spread evenly over the term of the contract. In accordance ‘
+with guidance from an FA Premier League working party, unamortised signing on fees are disclosed net of
+amounts due to players in the balance sheet. The net balance of signing on fees relating to players sold is
+included within the calculation of the profit or loss on disposal of players’ contracts.
+Page 20 continued...
+SUNDERLAND ASSOCIATION FOOTBALL
+CLUB,LIMITED(THE)
+NOTES TO THE FINANCIAL STATEMENTS - continued
+FOR THE YEAR ENDED 31 JULY 2025
+3. TURNOVER
+The turnover and loss before taxation are attributable to the one principal activity of the company.
+An analysis of turnover by class of business is given below:
+2025 2024 :
+£'000 £'000
+Gate receipts 13,020 11,537
+TV, Media and FL distribution 12,005 10,443
+Sponsorship and royalties 3,888 2,315
+Conference and banqueting 7,613 8,713
+Retail and merchandising 1,180 2,997
+Other 1,716 1,447 :
+39,422 37,452
+All sales are within the United Kingdom.
+4. EMPLOYEES AND DIRECTORS
+2025 2024
+£'000 £'000
+Wages and salaries 45,961 27,473
+Social security costs 6,773 2,851
+Other pension costs 165 139
+52,899 30,463
+The average number of employees during the year was as follows: .
+2025 2024
+Number Number
+Administration 248 247
+Football 72 70 :
+Full time Staff 320 317 :
+In addition, and not included in the above, the Group employs an average of 761 staff (2024: 673) on a matchday.
+Aggregate directors' emoluments during the year, for services to The Sunderland Association Football Club
+Limited totalled Enil (2024: £339,944). The emoluments of the highest paid director amounted to Enil (2024: ;
+£339,944), this included Enil (2024: £153,000) compensation for loss of office. No Directors received any pension
+contribution during the year (2024: nil).
+Page 21 continued...
+: SUNDERLAND ASSOCIATION FOOTBALL
+CLUB,LIMITED({THE)
+NOTES TO THE FINANCIAL STATEMENTS - continued .
+FOR THE YEAR ENDED 31 JULY 2025 :
+5. OPERATING LOSS :
+:
+The operating loss is stated after charging/(crediting): :
+2025 2024 i
+£'000 £'000 :
+Depreciation - owned assets 1,315 916
+Players contracts amortisation 10,409 3,983 :
+AUDITORS' REMUNERATION
+2025 2024 :
+For audit services £'000 £'000
+Audit of the financial statements of the company 59 51
+For other services
+Taxation compliance . 11 10
+2025 2024
+£'000 £'000
+Other operating income - 2s
+— 25
+6. ACCOUNTING FOR PLAYERS CONTRACTS
+2025 2024
+£'000 £'000
+Amortisation of players contracts 10,409 3,983 .
+{Profit)/loss on disposal of players contracts (45,843) (8,818)
+(35,434) (4,835)
+7. INTEREST PAYABLE RECEIVABLES
+INTEREST PAYABLE AND SIMILAR EXPENSES
+2025 2024
+£'000 £'000 :
+Bank interest 2,955 626
+2,955 626
+Page 22 continued...
+SUNDERLAND ASSOCIATION FOOTBALL
+CLUB, LIMITED{THE)
+NOTES TO THE FINANCIAL STATEMENTS - continued
+FOR THE YEAR ENDED 31 JULY 2025 |
+INTEREST RECEIVABLE AND SIMILAR INCOME 2025 2024
+£'000 £'000
+Bank deposits 7 43
+— —B
+8. TAXATION
+Analysis of the tax (credit})/charge
+The tax (credit)/charge on the loss for the year was as follows:
+2025 2024
+£'000 £'000 ;
+Current tax:
+UK corporation tax 2 __
+Tax on loss : :
+UK corporation tax was charged at 25% in 2025 (2024: 25%)
+Reconciliation of total tax (credit)/charge included in profit and loss
+The tax assessed for the year is lower than the standard rate of corporation tax in the UK. The difference is
+explained below:
+2025 2024
+£'000 £'000
+Loss before tax (3,355) (9,071)
+Loss multiplied by the standard rate of corporation tax in the UK of 25%
+(2024 - 25%) (839) (2,276) :
+Effects of:
+Expenses not deductible for tax purposes - -
+Remeasurement of tax losses - - :
+Adjustments to tax charge in respect of previous periods - -
+Research and development tax credit - - .
+Fixed Asset differences ss 55
+Group relief surrendered . 50 S00
+Movement in deferred taxation not recognised 734 1,712
+Total tax (credit)/charge - : ‘
+Page 23 continued...
+SUNDERLAND ASSOCIATION FOOTBALL
+CLUB,LIMITED(THE) .
+. 4
+NOTES TO THE FINANCIAL STATEMENTS - continued , :
+FOR THE YEAR ENDED 31 JULY 2025
+9. INTANGIBLE FIXED ASSETS :
+Players :
+contracts
+£'000 ;
+COST j
+At 1 August 2024 18,449 :
+Additions 148,323 !
+Disposals (4,145} ;
+At 31 July 2025 162,627 :
+AMORTISATION
+At 1 August 2024 6,783 4
+Amortisation for year 10,409 :
+Eliminated on disposal {2,137) :
+At 31 July 2025 15,055 :
+NET BOOK VALUE .
+At 31 July 2025 147,572 ‘
+At 31 July 2024 11,666
+Amortisation of intangible assets is included within net operating expenses in the statement of comprehensive
+income.
+. 10. TANGIBLE FIXED ASSETS .
+Fixtures Assets
+Freehold and Under
+Property Fittings construction Totals
+£'000 £'000 £'000 £'000
+COST ; :
+At 1 August 2024 14,538 20,051 3,028 37,617
+Additions 1,562 3,647 5,209
+Transfers - 2,929 (2,929) - ,
+At 31 July 2025 14,538 24,542 3,746 42,826 ,
+DEPRECIATION :
+At 1 August 2024 6,040 17,638 - 23,678
+Charge for year 268 1,047 1,315
+At 31 July 2025 6,308 18,685 : 24,993
+NET BOOK VALUE
+At 31 July 2025 8,230 5,857 3,746 17,833 at
+At 31 July 2024 8,498 2,413 3,028 13,939 :
+Within the additions to Fixtures and Fittings includes £3,972,045 (2024:£1,003,348) related to leasehold improvements to the +
+stadium, which is owned by the immediate parent company Sunderland Limited. :
+Page 25 continued...
+SUNDERLAND ASSOCIATION FOOTBALL
+CLUB,LIMITED(THE)
+NOTES TO THE FINANCIAL STATEMENTS - continued
+FOR THE YEAR ENDED 31 JULY 2025 :
+a1. FIXED ASSET INVESTMENTS
+2025 2024
+£'000 £'000
+
+Investments : :
+The company's investments {all directly held) at the Balance Sheet date in the share capital of companies include
+the following:
+1879 Events Management Limited
+Registered office: The Sunderland Stadium of Light, Sunderland, SRS 1SU
+
+. Nature of business: Events management services
+
+%
+Class of shares: holding
+Ordinary 100.00
+Sunderland Association Football Club Women Limited
+Registered office: The Sunderland Stadium of Light, Sunderland, SRS 1SU
+Nature of business: Professional football club
+%
+Class of shares: holding
+Ordinary 100.00
+1879 Events Management Limited and Sunderland Association Football Club Women Limited are all registered :
+at Sunderland Stadium Of Light, Sunderland, Tyne & Wear, SRS 1SU.
+Page 25 continued...
+ne es a a — pee = a Se
+SUNDERLAND ASSOCIATION FOOTBALL
+CLUB,LIMITED(THE) .
+NOTES TO THE FINANCIAL STATEMENTS - continued
+FOR THE YEAR ENDED 31 JULY 2025 :
+i
+12. STOCKS :
+2025 2024 :
+- £'000 £'000 ‘
+Stocks : 100 :
+The amount of inventories recognised as an expense during the year was £1,454,215 (2024: £2,652,112). ‘
+Impairment of inventory recognised as an expense during the year was Enil (2024 : fnil).
+13. DEBTORS n
+2025 2024
+£'000 £'000 .
+Amounts falling due within one year: :
+Trade debtors 31,173 1,433 :
+Amounts owed from subsidiary 740 275 :
+Other debtors 17,893 8,454 .
+Prepayments and accrued income 3,302 1,631 ;
+53,108 11,791 :
+Trade debtors include transfer fees receivable from other football clubs of £27,298,265 (2024: £350,000) of
+which £5,897,113 (2024: £0) is receivable after more than one year. :
+A bad debt provision for amounts owed, including amounts owed by group undertakings has been accounted
+for, totalling £881,888 (2024: £568,412).
+14. CREDITORS: AMOUNTS FALLING DUE WITHIN ONE YEAR
+2025 2024
+£'000 £'000 .
+: Trade creditors 18,684 6,554
+Social security and other taxes 10,297 2,316
+Bank Overdraft - 8,289 :
+Loan Facility 25,217 - ‘
+Amounts owed to ultimate parent company 19,820 19,820
+Amounts owed to group undertakings 14,739 12,739 .
+Other creditors 291 119
+Accruals and deferred income 85,908 16,977
+174,956 66,814 .
+Trade creditors include transfer fees and other associated costs in relation to the acquisition of players’ :
+registrations of £13,556,190 (2024: £3,486,164).
+Amounts owed to ultimate parent company includes amounts due to shareholders of Mercator Investments :
+Limited of £19,820,000 (2024: £19,820,000).
+15. CREDITORS: AMOUNTS FALLING DUE AFTER MORE THAN ONE YEAR :
+2025 2024
+£'000 £'000
+Trade creditors 57,278 792
+Accruals and deferred income 44,363 3,984
+101,641 4,776 .
+Trade creditors, accruals and deferred income includes transfer fees and other associated costs in relation to the
+acquisition of players’ registration of £101,641k (2024: £4,776k).
+Page 26 continued...
+SUNDERLAND ASSOCIATION FOOTBALL .
+CLUB,LIMITED(THE)
+: NOTES TO THE FINANCIAL STATEMENTS - continued
+FOR THE YEAR ENDED 31 JULY 2025
+16. LEASING AGREEMENTS
+Minimum lease payments under non-cancellable operating leases fall due as follows:
+2025 2024
+£'000 £'000
+Within one year , 3 3
+Between one and five years 59 53
+In more than five years - -
+62 56
+Leasing agreements recognised as on operating expense totalled £43,325 (2024: £36,861)
+17. CALLED UP SHARE CAPITAL :
+Allotted, issued and fully paid: .
+Number: Class: Nominal 2025 2024
+value: £'000 £'000
+1,000,000 Ordinary £1 1,000 1,000 .
+18. RESERVES
+Retained Share Revaluation Total .
+earnings premium reserve equity
+£'000 £'000 £'000 £'000
+Balance at 1 August 2024 (35,175) - 82 (35,093)
+Changes in equity ,
+Total comprehensive loss (3,279) - - (3,279)
+Balance at 31 July 2025 (38,454) - 82 (38,372)
+19. PENSION COMMITMENTS
+Defined contribution pension scheme ,
+Charges to profit or loss in respect of defined contribution pension schemes amounted to £164k (2024: £139k).
+The company operates a defined contribution pension scheme for all qualifying employees. The assets of the :
+scheme are held separately from those of the company in an independently administrated fund. :
+Defined benefit pension scheme
+Sunderland Association Football Club (‘the Club’) participates in the Football League Pension and Life Assurance
+Scheme (‘the Scheme’). _—
+Page 27 continued...
+SUNDERLAND ASSOCIATION FOOTBALL
+CLUB,LIMITED(THE) ;
+NOTES TO THE FINANCIAL STATEMENTS - continued
+FOR THE YEAR ENDED 31 JULY 2025
+19. PENSION COMMITMENTS (continued) :
+The Scheme is a funded multi-employer defined benefit scheme, with 92 participating employers, and where
+members may have periods of service attributable to several participating employers. The Club is unable to :
+identify its share of the assets and liabilities of the Scheme and therefore accounts for its contributions as if they .
+were paid to a defined contribution scheme.
+The last actuarial valuation was carried out at 31 August 2023 where the total deficit on the on-going valuation
+basis was £20.554 million. The key assumptions used to calculate the deficit at the 31 August 2023 actuarial
+valuation are: :
+Discount rate Gilt Yield Curve +0.5% per annum
+RPI inflation Bank of England Inflation Curve
+Fixed 3.0% per annum for benefits accrued prior to 6 April 1997, and modelled using
+the RPI inflation assumption with a cap of 5.0% per annum and a floor of 3.0% per
+Pension increases annum for benefits accrued after 6 April 1997.
+Mortality (pre- None :
+retirement) :
+Mortality (post- SAPS (Series 3) with CMI_2022 projections, along-term improvement rate of 1.5% p.a
+retirement) and an initial additional parameter of 0.5% p.a .
+The accrual of benefits ceased within the Scheme on 31 August 1999, therefore there are no contributions ,
+relating to current accrual. The Club pays monthly contributions based on a notional split of the total expenses
+and deficit contributions of the Scheme.
+The results of the 2023 valuation were rolled forward to 31 July 2025 on the same assumptions as detailed
+above, and the Club's notional share of the deficit was £67,518 (£118,119 as at 31 July 2024). .
+As at 31 July 2025, the Club was paying total contributions of £5,210 per month {increasing by 5% p.a. on 1
+September each year) and based on the actuarial valuation assumptions detailed above will be sufficient to pay
+off the deficit by 31 October 2026.
+As at 31 July 2025, based on an appropriate discount rate of 4.43% per annum (4.60% per annum as at 31 July -
+2024), the present value of the Club's outstanding contributions (i.e. their future liability) is £80,130 (£137,407
+as at 31 July 2024). This amounts to £65,382 (2024: £62,268) due within one year and £14,748 (2024: £75,139)
+due after more than one year.
+Present Value of Defined Benefit Obligation
+2025 2024
+£'000 £'000
+Present Value of Defined Benefit Obligation 80 137
+Reconciliation of Defined Benefit Obligation :
+2025 2024 :
+£'000 £'000
+Defined Benefit Obligation at start of year 137 101 .
+Net Interest Charge (Unwinding of discount rate) 5 4
+Club contribution (deficit contribution) (62) (59)
+Remeasurement {changes in assumptions) 99 -
+Remeasurement (change to contribution schedule) - 92 -
+Defined Benefit Obligation at end of year 80 137
+Page 28 continued...
+SUNDERLAND ASSOCIATION FOOTBALL
+CLUB,LIMITED{THE)
+NOTES TO THE FINANCIAL STATEMENTS - continued
+FOR THE YEAR ENDED 31 JULY 2025
+Income and Expenditure Impact :
+2025 2024 :
+£'000 £'000
+“Net Interest Charge (Unwinding of discount rate) 5 4
+Remeasurement (changes in assumptions) - : 4
+Remeasurement (change to contribution schedule) - 92
+Assumptions
+. 2025 2024
+Discount Rate (based on AA Corporate Bond Yields of
+appropriate currency/duration) 4.43% 4.60%
+The funding objective of the Trustees of the Scheme is to have sufficient assets to meet the Technical Provisions
+of the Scheme. In order to remove the deficit revealed at the previous actuarial valuation (dated 31 August
+: 2023), deficit contributions are payable by all participating clubs. Payments are made in accordance with a
+pension contribution schedule. As the Scheme is closed to accrual, there are no additional costs associated with .
+the accruing of members' future benefits. In the case of a club being relegated from the Football League and
+being unable to settle its debt then the remaining clubs may, in exceptional circumstances, have to share the
+deficit.
+Upon the wind-up of the Scheme with a surplus, any surplus will be used to augment benefits. Under the more
+likely scenario of there being a deficit, this will be split amongst the clubs in line with their contribution schedule.
+Should an individual club leave the Scheme, they may be required ta pay their share of the deficit based ona
+proxy buyout basis (i.e. valuing the benefits on a basis consistent with buying out the benefits with an insurance
+company).
+20. CONTINGENT LIABILITIES .
+Under the terms of certain contracts for the purchase of players’ registrations. future payments may be due to
+third parties, dependent on the success of the team and/or individual players. At the balance sheet date, the :
+maximum contingent liability, none of which was provided for in these financial statements, was £36,380,876
+(2024 : £29,607,066), some of which are extremely remote.
+Any additional fees which may become payable or receivable under these agreements will be accounted for in
+the year that it becomes probable that the event will occur.
+21. RELATED PARTY DISCLOSURES
+The Foundation of Light (was Sunderland AFC Foundation)
+The Foundation of Light is the registered charity of the Company. It was established in 2001. :
+At 31 July 2025 the balance owing from The Foundation of Light to the Company was £19,256 (2024 : £9,559).
+During the year, the Company provided many services to The Foundation of Light free of charge, including staff
+time and use of the facilities. It is estimated that the gift in kind during the year is £27,425 (2024 : £29,317).
+The Company invoiced The Foundation of Light during the financial year for various charges including a :
+contribution towards the Centre of Light running costs totalling £12,000 (2024 : £11,000}.
+Page 29 continued... ,
+SUNDERLAND ASSOCIATION FOOTBALL _ _
+CLUB, LIMITED(THE)
+NOTES TO THE FINANCIAL STATEMENTS - continued
+FOR THE YEAR ENDED 31 JULY 2025 :
+Loan Facility Akira BV : :
+Akira BV is a Company incorporated and registered in the Netherlands. Akira BV is an entity which, through its :
+ownership structure, is part of the Louis-Oreyfus group of Companies and is related to Sunderland AFC Limited
+by virtue of the shareholding of Kyril Louis-Dreyfus.
+During the financial year Akira BV supplied loan funding to Sunderland AFC Limited which attracted a :
+commercial rate of interest. As at 315 July 2025 the amount owed to Akira BV was £25,216,788 (2024: Enil}
+SX Global PTY Ltd
+SX Global PTY Ltd is a Company incorporated in Australia and owned by Mr K Louis-Dreyfus and Mr J Sartori. .
+During the year Sunderland AFC invoiced SX Global for £11,106 (2024: £9,465) for management time and
+support.
+Sunderland Limited :
+Sunderland Limited rented the football stadium to the Company for £2,000k (2024: £2,000k).
+Bia Sports Group Holdings Limited
+Kyril Louis-Dryfus is a director of Bia Sports Group who invoiced Sunderland AFC Limited for Management
+Services £222,000 (2024:£nil) during the year.
+Shareholder funding received from the ultimate parent company Mercator Investments Limited
+In previous years the shareholders have introduced funding into the Company (through the ultimate parent
+company parent company Mercator Investments Limited) to support its business activities. As at the balance
+sheet date a total of £19,820,000 (2024:19,820,000} was owed to Mercator Investments Limited, which is owned
+64% by Mr K Louis-Dreyfus and 34% by Mr Juan Sartori respectively.
+~ Shareholder and Directors Transactions ‘
+. During the year the Company incurred certain expenses on behalf of the shareholders and directors. As at 31 :
+July 2025 the following amounts were owed to the Company: K Louis-Dreyfus £65,762 (2024: Enil), J Sartori
+£13,310 (2024: Enil), M Louis-Dreyfus £5,191 (2024: £nil). :
+Sunderland Limited
+Sunderland Limited rented the football stadium to the Company for £2,000k (2024: £2,000k).
+22. ULTIMATE CONTROLLING PARTY
+The immediate parent undertaking is Sunderland Limited, a company incorporated in England and Wales. :
+Mercator Investments Limited, a company incorporated in the Cayman Islands, is regarded by the directors as
+being the company's ultimate parent company. .
+The directors consider the ultimate controlling party of the Company to be Mr KR L Louis-Dreyfus.
+23. ANNEX G REGULATION
+The financial statements and accompanying notes, covering the year ended 31° July 2025, materially comply ;
+with the accounting requirements set out in Annex G of UEFA Club Licencing and Financial Sustainability
+Regulations as at 1 June 2024.
+Page 30
 

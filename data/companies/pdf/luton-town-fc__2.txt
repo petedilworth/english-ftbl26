@@ -2,7 +2,7 @@ source: Companies House filing, luton-town-fc__2.pdf
 document: OtwdQLT1i3wunEa8Rrx5-rBCKH8cVVuDsiOSl1Nyfqg
 made_up_date: 2024-06-30
 method: ocr
-pages_read: 12 of 32
+pages_read: 32 of 32
 
 : : bocusign Envelope ID: 73231000-A20B-4343-8049-1010BBOFOFDC
 Company Registration No. 06133975 (England and Wales)
@@ -496,4 +496,784 @@ However, it is the primary responsibility of management, with the oversight of t
 ensure that the entity's operations are conducted in accordance with the provisions of laws and regulations and for
 the prevention and detection of fraud.
 -10-
+Docusign Envelope ID: 73231000-A20B-4343-8049-1010BBOFOFDC
+INDEPENDENT AUDITOR'S REPORT TO THE MEMBERS OF LUTON TOWN .
+FOOTBALL CLUB 2020 LTD (CONTINUED)
+In identifying and assessing risks of material misstatement in respect of irregularities, including fraud, the audit
+engagement team:
+
+¢ obtained an understanding of the nature of the industry and sector, including the legal and regulatory
+framework that the company operates in and how the company is complying with the legal and regulatory
+framework;
+
+* inquired of management, and those charged with governance, about their own identification and
+assessment of the risks of irregularities, including any known actual, suspected or alleged instances of
+fraud;
+
+* discussed matters about non-compliance with laws and regulations and how fraud might occur including
+assessment of how and where the financial statements may be susceptible to fraud.
+
+As a result of these procedures we consider the most significant laws and regulations that have a direct impact on
+the financial statements are FRS 102, the Companies Act 2006, and tax compliance regulations. We performed
+audit procedures to detect non-compliances which may have a material impact on the financial statements which
+included reviewing financial statement disclosures and evaluating tax calculations.
+The most significant laws and regulations that have an indirect impact on the financial statements are those in
+relation to English Football League (EFL) and English Premier League (EPL) regulations. We performed audit
+procedures to inquire of management whether the company is in compliance with these laws and regulations and
+inspected correspondence with the EFL and EPL.
+The audit engagement team identified the risk of management override of controls as the area where the financial!
+statements were most susceptible to material misstatement due to fraud. Audit procedures performed included but
+were not limited to testing manual journal entries and other adjustments and evaluating the business rationale in
+relation to significant, unusual transactions and transactions entered into outside the normal course of business.
+A further description of our responsibilities for the audit of the financial statements is located on the Financial
+Reporting Council’s website at: httos:/Avww.frc.org.uk/auditorsresponsibilities This description forms part of our
+auditor's report.
+Use of our report
+This report is made solely to the company's members, as a body, in accordance with Chapter 3 of Part 16 of the
+Companies Act 2006. Our audit work has been undertaken so that we might state to the company’s members those
+matters we are required to state to them in an auditor's report and for no other purpose. To the fullest extent
+“permitted by law, we do not accept or assume responsibility to anyone other than the company and the company's .
+members as a body, for our audit work, for this report, or for the opinions we have formed.
+‘Signed by: :
+[ Dad Plssou.
+764D032COBF 14DF...
+David Olsson (Senior Statutory Auditor)
+For and on behalf of RSM UK Audit LLP, Statutory Auditor
+Chartered Accountants
+4th Floor
+100 Avebury Boulevard
+Milton Keynes .
+Buckinghamshire, MK9 1FH
+2071272024"
+-W-
+Docusign Envelope ID: 73231000-A20B-4343-8049-1010BBOFOFDC
+LUTON TOWN FOOTBALL CLUB 2020 LTD
+STATEMENT OF COMPREHENSIVE INCOME
+FOR THE YEAR ENDED 30 JUNE 2024
+2024 2023
+
+Notes £ £
+Turnover 3 132,321,856 18,426,661
+Cost of sales (70,018,343) (28,991,779)
+Gross profit/(loss) 62,303,513 (10,565,118)
+Administrative expenses (14,862,601) (10,458,209)
+Other operating income. 3 225,469 13,852
+Profit on player trading and other related income 1,216,434 4,715,837 ,
+Operating profit/(loss) 7 48,882,815 (16,293,638)
+Interest receivable and similar income 9 584,482 43
+Profit/(loss) before taxation 49,467,297 (16,293,595)
+Taxation 10 (7,778,473) 7,931,865
+Profit/(loss) for the financial year 41,688,824 (8,361,730)
+
+-12- ,
+Docusign Envelope ID: 73231000-A20B-4343-8049-1010BBOFOFDC
+Company Registration No. 06133975
+LUTON TOWN FOOTBALL CLUB 2020 LTD
+: STATEMENT OF FINANCIAL POSITION
+AS AT 30 JUNE 2024
+2024 2023
+oo Notes £ £ £ £
+Fixed assets .
+Intangible assets 12 22,293,438 7,885,715
+Tangible assets 13 1,718,311 317,678
+: 24,011,749 8,203,393
+Current assets
+Stocks 14 147,070 180,320
+Debtors falling due after more than one
+year 15 7,690,565 109,333 :
+Debtors falling due within one year 15 12,383,488 10,549,302
+Cash at bank and in hand 1,639,954 1,715,863
+21,861,077 12,554,818
+Creditors: amounts falling due within
+one year 16 (16,993,014) (32,133,862)
+Net current assets/(liabilities) 4,868,063 (19,579,044)
+Total assets less current liabilities 28,879,812 (11,375,651)
+Creditors: amounts falling due after
+more than one year 17 (1,000,000) (2,475,000)
+Net assets/(liabilities) excluding pension
+— liabilities ___.. oe ee ee 27,879,842 -—-- - (13,850,651) coe
+; Defined benefit pension liability 21 (258,903) (217,264)
+Net assets/(liabilities) 27,620,909 (14,067,915)
+Capital and reserves
+Called up share capital 22 18,145,003 18,145,003
+Profit and loss reserves 23 9,475,906 (32,212,918)
+Total equity 27,620,909 (14,067,915)
+. : , 20/12/2024
+The financial statements were approved by the board of directors and authorised for isSUe ON ..........-:ese0 ANd
+are signed on its behalf by:
+‘Signed
+(Sh aa
+D Wilkinson
+Director
+-13-
+Docusign Envelope ID: 73231000-A20B-4343-8049-1010BBOFOFDC
+LUTON TOWN FOOTBALL CLUB 2020 LTD
+STATEMENT OF CHANGES IN EQUITY
+FOR THE YEAR ENDED 30 JUNE 2024 ;
+; Share Profit and Total
+capital loss
+reserves
+£ £ £ .
+Balance at 1 July 2022 18,145,003 (23,851,188) (5,706,185)
+Year ended 30 June 2023: ,
+Loss and total comprehensive income for the year - (8,361,730) (8,361,730)
+Balance at 30 June 2023 . 18,145,003 (32,212,918) (14,067,915)
+Year ended 30 June 2024:
+Profit and total comprehensive income for the year - 41,688,824 41,688,824
+Balance at 30 June 2024 18,145,003 9,475,906 27,620,909
+-14-
+————————— rr
+Docusign Envelope ID: 73231000-A20B-4343-8049-1010BBOFOFDC
+LUTON TOWN FOOTBALL CLUB 2020 LTD
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+1 Accounting policies
+Company information
+Luton Town Football Club 2020 Ltd is a private company limited by shares and is registered and incorporated
+in England and Wales. The registered office is Kenilworth Stadium, 1 Maple Road East, Luton, Bedfordshire,
+LU4 8AW.
+The company's principal activities and nature of its operations are disclosed in the Strategic and Directors’
+Reports.
+: Accounting convention
+These financial statements have been prepared in accordance with FRS 102 “The Financial Reporting
+Standard applicable in the UK and Republic of Ireland” (“FRS 102") and the requirements of the Companies
+Act 2006, including the provisions of the Large and Medium-sized Companies and Groups (Accounts and
+Reports) Regulations 2008.
+The financial statements are prepared in sterling, which is the functional currency of the company. Monetary
+amounts in these financial statements are rounded to the nearest £1.
+The financial statements have been prepared under the historical cost convention. The principal accounting
+policies adopted are set out below.
+This company is a qualifying entity for the purposes of FRS 102, being a member of a group where the parent
+of that group prepares publicly available consolidated financial statements, including this company, which are
+intended to give a true and fair view of the assets, liabilities, financial position and profit or loss of the group.
+The company has therefore taken advantage of exemptions from the following disclosure requirements:
+* Section 7 ‘Statement of Cash Flows’ — Presentation of a statement of cash flows and related notes
+and disclosures;
+¢ Section 11 ‘Basic Financial Instruments’ — Interest income/expense and net gains/losses for each
+category of financial instrument;
+* Section 33 ‘Related Party Disclosures’ - Compensation for key management personnel.
+The financial statements of the company are consolidated in the financial statements of 2020 Holdings
+(England) Limited. These consolidated financial statements are available from its registered office, Kenilworth
+Stadium, 1 Maple Road East, Luton, Bedfordshire, LU4 8AW.
+Going Concern ,
+The 2023/24 season saw the Club play in the Premier League for the first time in its history. Promotion related
+costs including bonuses, contingent loan and transfer fees were recognised in the prior year's accounts and
+therefore the upside, including vastly increased broadcasting revenue was received and recognised in
+2023/24. At the culmination of the 2023/24 season the Club was relegated from the Premier League and will
+therefore be in receipt of parachute payment for the next two seasons.
+The directors have produced detailed financial forecasts to the end of the 2025/26 season under a number of
+scenarios and are confident that the increased revenue from the Club's time in the Premier League will
+provide sufficient working capital to meet the Club's needs during the forecast period. As such, the directors
+have concluded that it is appropriate to continue to adopt the going concern basis in preparing these financial
+statements.
+The financial statements do not include any adjustments that would result if the company is unable to
+continue as a going concern.
+-15-
+Docusign Envelope ID: 73231000-A20B-4343-8049-1010BBOFOFDC
+
+LUTON TOWN FOOTBALL CLUB 2020 LTD
+
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR ENDED 30 JUNE 2024
+
+1 Accounting policies (Continued)
+Turnover 1
+Turnover includes all revenue from football and related commercial activities exclusive of VAT.
+Gate receipts and other match day revenues are recognised as the games are played.
+Revenue from season ticket sales is credited to income over the period to which it relates.
+Sponsorship, advertising and other similar commercial income is recognised over the duration of the contracts
+to which it relates.
+Player trading income
+Player trading income is recognised on completion of contracts. Contingent trading income is recognised
+when the contractual milestones are achieved. The profit arising on player trading activity, being transfer
+income less associated fees paid and football league levies, is reported separately in the statement of
+comprehensive income after gross profit. .
+Other operating income
+Donations are recognised upon receipt.
+Intangible assets - player registrations
+When acquired, the costs of obtaining players’ registrations are capitalised and amortised evenly over the
+period of the associated player's contract. The amortisation period therefore varies by player depending on
+their contract. Provision is made where, in the opinion of directors, an impairment of the carrying value of the
+players’ registrations has occurred. Potential future registration fees, contingent on certain conditions agreed
+in the registration contracts with the selling company, are disclosed as contingent liabilities (see note 25).
+Profits or losses on the disposal of these registrations represents the fair value of the consideration
+receivable, net of any transaction costs, less the unamortised cost of the original registration.
+Tangible fixed assets
+Tangible fixed assets are initially measured at cost and subsequently measured at cost, net of depreciation
+and any impairment losses.
+Depreciation is recognised so as to write off the cost of assets less their residual values over their useful lives
+on the following bases:
+Fixtures, fittings and equipment 20% straight line
+Motor vehicles 20% straight line
+The gain or loss arising on the disposal of an asset is determined as the difference between the sale
+proceeds and the carrying value of the asset, and is credited or charged to profit or loss.
+Stocks .
+Finished goods are valued at the lower of cost and net realisable value.
+Financial instruments
+The company has elected to apply the provisions of Section 11 ‘Basic Financial Instruments’ of FRS 102 to all
+of its financial instruments.
+Financial instruments are recognised when the company becomes party to the contractual provisions of the
+instrument.
+
+-16-
+——$—————— SSS EE EEE———_————
+Docusign Envelope ID: 73231000-A20B-4343-8049-1010BBOFOFDC
+
+LUTON TOWN FOOTBALL CLUB 2020 LTD
+
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR ENDED 30 JUNE 2024
+
+1 Accounting policies (Continued)
+
+; Basic financial assets
+Basic financial assets, which include accrued income, trade and other debtors are initially measured at
+transaction price including transaction costs and are subsequently carried at amortised cost, being transaction
+price less any amounts settled and impairment losses.
+Impairment of financial assets
+Financial assets are assessed for indicators of impairment at each reporting end date.
+Financial assets are impaired where there is objective evidence that, as a result of one or more events that
+occurred after the initial recognition of the financial asset, the estimated future cash flows have been affected.
+If an asset is impaired, the impairment loss is the difference between the carrying amount and the present
+value of the estimated cash flows discounted at the asset's original effective interest rate. The impairment loss
+is recognised in profit or loss.
+If there is a decrease in the impairment loss arising from an event occurring after the impairment was
+recognised, the impairment is reversed. The reversal is such that the current carrying amount does not
+exceed what the carrying amount would have been, had the impairment not previously been recognised. The
+impairment reversal is recognised in profit or loss.
+Derecognition of financial assets
+Financial assets are derecognised only when the contractual rights to the cash flows from the asset expire or
+are settled, or when the company transfers the financial asset and substantially all the risks and rewards of
+ownership to another entity, or if some significant risks and rewards of ownership are retained but control of
+the asset has transferred to another party that is able to sell the asset in its entirety to an unrelated third party.
+Basic financial liabilities
+‘ Basic financial. liabilities, including trade and other creditors, amounts owed to group undertakings and
+accruals payable within one year that do not constitute a financing transaction are initially measured at the
+transaction price and subsequently measured at amortised cost, being transaction price less any amounts
+settled.
+Where the arrangement with a creditor constitutes a financing transaction, the creditor is initially measured at
+the present value of future payments discounted at a market rate of interest for a similar instrument and
+subsequently measured at amortised cost, being transaction price less any amounts settled and the
+cumulative amortisation (using the effective interest method) of any difference between the amount at initial
+recognition and the maturity amount.
+Derecognition of financial liabilities
+Financial liabilities are derecognised when, and only when, the company’s contractual obligations are
+discharged, cancelled, or they expire.
+Equity instruments :
+Equity instruments issued by the company are recorded at the fair value of proceeds received, net of
+transaction costs. Dividends payable on equity instruments are recognised as liabilities once they are no
+longer at the discretion of the company.
+Taxation
+The tax expense represents the sum of the current tax expense and deferred tax expense. Current tax assets
+__ are recognised when tax paid exceeds the tax payable.
+. -17-
+Docusign Envelope ID: 73231000-A20B-4343-8049-1010BBOFOF DC
+
+LUTON TOWN FOOTBALL CLUB 2020 LTD
+
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR ENDED 30 JUNE 2024
+
+1 Accounting policies (Continued)
+Current tax is based on taxable profit for the period. Current tax assets and liabilities are measured using tax
+rates that have been enacted or substantively enacted by the reporting date.
+Deferred tax is calculated at the tax rates that are expected to apply to the period when the asset is realised 0
+or the liability is settled based on tax rates that have been enacted or substantively enacted by the reporting
+date.
+Deferred tax liabilities are recognised in respect of all timing differences that exist at the reporting date. Timing
+differences are differences between taxable profits and total comprehensive income that arise from the
+inclusion of income and expenses in tax assessments in different periods from their recognition in the
+financial statements. Deferred tax assets are recognised only to the extent that it is probable that they will be
+recovered by the reversal of deferred tax liabilities or other future taxable profits.
+Current tax assets and current tax liabilities and deferred tax assets and deferred tax liabilities are offset, if
+and only if, there is a legally enforceable right to set off the amounts and the entity intends either to settle on :
+the net basis or to realise the asset and settle the liability simultaneously.
+Employee benefits :
+The costs of short-term employee benefits are recognised as a liability and an expense, unless those costs
+are required to be recognised as part of the cost of stock or fixed assets.
+
+. The cost of any unused holiday entitlement is recognised in the period in which the employee's services are
+received.
+Retirement benefits
+The company operates a defined contribution scheme for the benefit of its employees. Contributions payable
+are charged to the profit or loss in the year they are payable.
+The company contributes to the Football League Limited Pension and Life Assurance Scheme for certain
+- --~ former employees, the assets of which are held separately from those of the company in independently -
+administered funds. The company is not able to identify its share of the assets and liabilities of the scheme
+but makes provision for the expected future cost of funding its obligations to fund benefits accrued at the
+Teporting date, as advised by the Trustees (see note 21).
+Share-based payments
+Equity-settled share-based payments are measured at fair value at the date of grant by reference to the fair
+value of the equity instruments granted. The fair value determined at the grant date is expensed on a straight-
+line basis over the vesting period, based on the estimate of shares that will eventually vest. A corresponding
+adjustment is made to equity.
+When the terms and conditions of equity-settled share-based payments at the time they were granted are
+subsequently modified, the fair value of the share-based payment under the original terms and conditions and
+under the modified terms and conditions are both determined at the date of the modification. Any excess of
+the modified fair value over the original fair value is recognised over the remaining vesting period in addition
+to the grant date fair value of the original share-based payment. The share-based payment expense is not
+adjusted if the modified fair value is less than the original fair value.
+Cancellations or settlements (including those resulting from employee redundancies) are treated as an
+acceleration of vesting and the amount that would have been recognised over the remaining vesting period is
+recognised immediately. .
+-18-
+Docusign Envelope ID: 73231000-A20B-4343-8049-1010BBOFOFDC
+LUTON TOWN FOOTBALL CLUB 2020 LTD
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+1 Accounting policies (Continued) .
+Leases
+Leases are classified as finance leases whenever the terms of the lease transfer substantially all the risks and
+rewards of ownership to the lessees. All other leases are classified as operating leases.
+Assets held under finance leases are recognised as assets at the lower of the assets fair value at the date of
+inception and the present value of the minimum lease payments. The related liability is included in the
+statement of financial position as a finance lease obligation. Lease payments are treated as consisting of
+capital and interest elements. The interest is charged to profit or loss so as to produce a constant periodic
+rate of interest on the remaining balance of the liability.
+Rentals payable under operating leases, including any tease incentives received, are charged to profit or loss :
+on a straight line basis over the term of the relevant lease except where another more systematic basis is
+more representative of the time pattern in which economic benefits from the leases asset are consumed.
+Research and development expenditure
+Research and development expenditure is written off against profits in the period in which it is incurred. ’
+2 Judgements and key sources of estimation uncertainty
+In the application of the company’s accounting policies, the directors are required to make judgements,
+estimates and assumptions about the carrying amount of assets and liabilities that are not readily apparent
+from other sources. The estimates and associated assumptions are based on historical experience and other
+factors that are considered to be relevant. Actual results may differ from these estimates.
+The estimates and underlying assumptions are reviewed on an ongoing basis. Revisions to accounting
+estimates are recognised in the period in which the estimate is revised where the revision affects only that
+period, or in the period of the revision and future periods where the revision affects both current and future .
+periods.
+~~ ~~ -3—-~Turnoverand otherrevenue9 = ~ 7 — “ee 7 _ —_
+An analysis of the company's turnover is as follows:
+2024 2023
+£ £
+Turnover analysed by class of business
+Matchday 6,190,409 5,065,826
+League distributions 116,604,276 10,123,485
+Commercial 9,527,171 3,237,350
+132,321,856 18,426,661
+2024 2023
+£ £
+Turnover analysed by geographical market
+United Kingdom 132,321,856 18,426,661
+-19-
+Docusign Envetope ID: 73231000-A20B-4343-8049-1010BBOFOFDC
+LUTON TOWN FOOTBALL CLUB 2020 LTD .
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+3 Turnover and other revenue (Continued)
+: 2024 2023
+. : . £ £
+Other operating income
+Other income 225,469 13,852
+225,469 13,852
+Included in other income is £10,273 (2023: £13,852) in respect of donations received. The remaining
+£215,196 (2023: Enil) relates to insurance claims during the year. .
+4 Employees
+The average monthly number of persons (including directors) employed by the company during the year was:
+2024 2023
+Number Number
+Football operations 142 121.
+Administration 90 81
+Matchday 298 207
+Total 530 409
+Their aggregate remuneration comprised:
+2024 2023
+£ £
+Wages and salaries 49,668,063 24,330,435
+Social security costs 7,054,294 3,150,841
+Pension costs 158,659 112,319
+56,881,016 27,593,595
+5 Directors’ remuneration ; .
+2024 2023
+£ £
+Remuneration for qualifying services 1,045,358 1,802,314
+Company pension contributions to defined contribution schemes 51,638 21,619
+1,096,996 1,823,933
+The number of directors for whom retirement benefits are accruing under defined contribution schemes
+amounted to 2 (2023 - 2).
+. -20-
+Docusign Envelope ID: 73231000-A20B-4343-8049-1010BBOFOFDC . :
+LUTON TOWN FOOTBALL CLUB 2020 LTD
+; NOTES TO THE FINANCIAL STATEMENTS (CONTINUED) |
+FOR THE YEAR ENDED 30 JUNE 2024
+5 Directors’ remuneration (Continued)
+Remuneration disclosed above includes the following amounts paid to the highest paid director:
+2024 2023
+£ £
+Remuneration for qualifying services 816,558 1,328,394
+Company pension contributions to defined contribution schemes 41,403 16,236
+6 Share-based payment transactions . :
+In May 2023 equity settled share options over the parent company’s shares with a total tax value of £120,000 .
+were granted to certain officers of the company. The options are exercisable on the earlier of a sale of the .
+parent company, retirement or 9 years 6 months from the grant date. The options are exercisable at a price
+equal to the market value of the corresponding shares at the grant date. That market value and the total
+number of options granted is pending agreement with the tax authorities. The directors have assessed the fair
+value of the options granted with reference to the total tax value adjusted to an unrestricted market value
+basis.
+As the total tax value is limited to £120,000, the directors do not anticipate that the accounting charge, once
+finalised will be material and as such, no accounting charge has been recognised in the company accounts in
+the current period. :
+7 Operating profit/(loss)
+. 2024 2023
+Operating profit/(loss) for the year is stated after charging: £ £
+Depreciation of owned tangible fixed assets oe _ _ 405,342 _ _. 209,900 a
+- --- — ~~ --Depreciation of tangible fixed aSsets héld under finance leases 1,097 14,964
+Amortisation of intangible assets 9,424,952 2,395,107
+Operating lease charges . 2,969,002 364,522
+8 Auditor's remuneration
+. 2024 2023
+Fees payable to the company's auditor and its associates: £ £
+For audit services
+Audit of the financial statements of the company 45,050 35,000
+For other services
+Taxation compliance services 6,700 4,250
+All other non-audit services 6,500 5,175
+13,200 9,425
+-21-
+SS ee mee
+Docusign Envelope ID: 73231000-A20B-4343-8049-1010BBOFOFDC
+LUTON TOWN FOOTBALL CLUB 2020 LTD
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+9 Interest receivable and similar income . .
+2024 2023
+£ £
+Interest income
+Interest on bank deposits : 584,457 43
+Other interest income 25 -
+Total income 584,482 43
+10 Taxation
+2024 2023
+£ £
+Current tax ;
+UK corporation tax on profits for the current period 4,623,032 -
+Deferred tax
+Origination and reversal of timing differences : 6,040,747 (8,044,384)
+Adjustment in respect of prior periods (2,885,306) 112,519
+Total deferred tax 3,155,441 (7,931,865)
+Total tax charge/(credit) 7,778,473 (7,931,865)
+The total tax charge/(credit) for the year included in the statement of comprehensive income can be
+reconciled to the profit/(loss) before tax multiplied by the standard rate of tax as follows:
+2024 2023
+: £ £
+Profit/(loss) before taxation 49,467,297 (16,293,595)
+Expected tax charge/(credit) based on the standard rate of corporation tax in
+the UK of 25.00% (2023: 20.50%) 12,366,824 (3,339,518)
+Tax effect of expenses that are not deductible in determining taxable profit 58,346 11,523
+Tax effect of income not taxable in determining taxable profit - (1,066)
+Group relief (1,799,503) -
+Deferred tax adjustments in respect of prior years (2,885,306) 112,519
+Other - 1,681
+Fixed asset differences 38,112 {1,428)
+Recognition of a deferred tax asset on prior period tax losses not previously
+recognised as a deferred tax asset : (4,715,576)
+Taxation charge/(credit) for the year 7,778,473 (7,931,865)
+-22-
+Docusign Envelope ID: 73231000-A20B-4343-8049-1010BBOFOFDC
+LUTON TOWN FOOTBALL CLUB 2020 LTD
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+11“ Player trading
+The total sums payable in respect of transfer fees, compensation fees, loan fees and subsequent payments
+that have become due under transfers totalled £5,520,879 (2023: £4,964,712) at the reporting date and is
+included in trade creditors.
+The total sums receivable in respect of transfer fees, compensation fees, loan fees and subsequent payments
+that have become due under transfers totalled £2,182,972 (2023: £532,214) at the reporting date and is
+included in trade debtors.
+12 Intangible fixed assets
+Player
+registrations
+£
+Cost
+At 1 July 2023 11,850,474
+Additions 26,817,989
+Disposals (5,365,059)
+Adjustment to consideration (813,410)
+At 30 June 2024 32,489,994
+.Amortisation
+At 1 July 2023 3,964,759
+Amortisation charged for the year 9,424,952
+: Disposals (3,193,155)
+At 30 June 2024 10,196,556
+- ~ Carrying amount Fn nee nngramnnages Se meen nsec merase mae ae ae mee
+At 30 June 2024 22,293,438
+At 30 June 2023 7,885,715
+The amortisation charge for the year is recognised within cost of sales.
+, -23-
+Docusign Envelope ID: 73231000-A20B-4343-8049-1010BBOFOFDC
+, LUTON TOWN FOOTBALL CLUB 2020 LTD :
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+13 Tangible fixed assets
+Fixtures, Motor Total
+fittings and vehicles
+, equipment
+£.- £ £
+Cost
+At 1 July 2023 1,725,221 163,821 1,889,042
+Additions 1,780,367 26,705 1,807,072
+Disposals. - (22,168) (22,168)
+At 30 June 2024 3,505,588 168,358 3,673,946
+Depreciation
+; At 1 July 2023 1,434,760 136,604 1,571,364
+Depreciation charged in the year 397,320 9,119 406,439
+Eliminated in respect of disposals - (22,168) (22,168)
+At 30 June 2024 1,832,080 123,555 1,955,635
+Carrying amount
+At 30 June 2024 1,673,508 44,803, 1,718,311
+At 30 June 2023 290,461 27,217 317,678
+The net carrying value of tangible fixed assets includes the following in respect of assets held under finance
+leases:
+2024 2023
+, £ £
+‘ Motor vehicles - 3,036
+14 Stocks .
+: 2024 2023
+£ £
+Finished goods and goods for resale 147,070 180,320
+During the year, stock with a carrying value of £140,916 (2023: nil) was written off. The write off was
+recognised within cost of sales.
+The difference between the carrying value of stock and its replacement cost is not material.
+-24- :
+Docusign Envelope ID: 73231000-A20B-4343-8049-1010BBOFOFDC
+LUTON TOWN FOOTBALL CLUB 2020 LTD
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+- 15 Debtors
+2024 2023
+Amounts falling due within one year: £ £
+Trade debtors 4,657,300 1,337,276
+Corporation tax recoverable 1,297,137 -
+Other debtors 191,018 611,553
+Prepayments and accrued income 1,461,609 668,608
+: 7,607,064 2,617,437
+Deferred tax asset (note 20) 4,776,424 7,931,865
+12,383,488 10,549,302
+2024 2023
+Amounts falling due after more than one year: £ £
+Trade debtors 200,000 109,333
+Amounts owed by group undertakings 7,490,565 -
+: 7,690,565 109,333
+Total debtors 20,074,053 10,658,635
+Amounts owed by group undertakings are unsecured, interest free and have ‘no fixed date of repayment.
+These amounts are repayable on demand.
+16 Creditors: amounts falling due within one year
+: 2024 2023
+Notes £ £
+Obligations under finance leases 19 - 12,793
+- Other borrowings 18 - 2,538,375
+Trade creditors 5,379,094 3,587,417
+Amounts owed to group undertakings - 11,804,327
+Taxation and social security 2,964,759 622,712
+Other creditors 288,187 33,767
+Accruals and deferred income 8,360,974 13,534,471
+: 16,993,014 32,133,862
+"Amounts owed to group undertakings are unsecured, interest free and have no fixed date of repayment.
+These amounts are repayable on demand. .
+-25- .
+Docusign Envelope ID: 73231000-A20B-4343-8049-1010BBOFOFDC .
+LUTON TOWN FOOTBALL CLUB 2020 LTD ;
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024 ;
+17 Creditors: amounts falling due after more than one year
+2024 2023
+£ £
+Trade creditors 1,000,000 2,475,000
+18 Borrowings
+2024 2023
+£ £
+Other loans - 2,538,375
+Payable within one year - 2,538,375
+During the year to 30 June 2020, the company received a loan from the English Football League (‘EFL’) of
+£584,000 to support the operation of the club during the COVID-19 pandemic. Repayments were originally
+due to be made in 6 equal bi-annual instalments and deducted from future EFL income. During the year to 30
+June 2021, the EFL announced that repayments would be deferred as a result of the continuation of the
+COVID-19 pandemic with the first repayment due in October 2021. The terms of the loan stipulated that
+outstanding amounts became repayable on promotion to the Premier League. Following the Club's promotion
+to the Premier League in May 2023, the loan was repaid in the year. At the year end, £nil (2023: £194,800)
+was payable within one year. Amounts are included in other borrowings. No interest is charged on this loan.
+During the year to 30 June 2021, the company received a loan from the English Football League (‘EFL’) of
+£5,364,384 to support the operation of the club during the COVID-19 pandemic. An additional drawdown of
+this loan was taken in July 2021, increasing the full value of the loan to £6,130,724. Repayments were to be
+made in 6 equal instalments and deducted from future Premier League Solidarity income. The terms of the
+- -- - loan stipulated that outstanding amounts became repayable on promotion to the.Premier League. Following. Lo
+the Club's promotion to the Premier League in May 2023, the loan was repaid in the year. As a result at the
+year end Enil (2023: 2,043,575) was payable within one year. Amounts are included in other borrowings. No
+interest is charged on this loan.
+During the prior year, £3,100,000 was advanced from individuals who are directors or quasi directors of the
+company. The amounts were interest free, unsecured and repayable on demand. After repayments, £nil
+(2023: £300,000) was outstanding within one year and included in other borrowings.
+19 Finance lease obligations
+2024 2023
+Future minimum lease payments due under finance leases: £ £
+Less than one year - 12,793
+Finance lease terms represented rentals payable by the group for certain motor vehicles. The average lease
+term was 5 years. The liability was secured on the related assets. :
+-26- :
+Docusign Envelope ID: 73231000-A20B-4343-8049-1010BBOFOFDC
+LUTON TOWN FOOTBALL CLUB 2020 LTD
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+20 ~Deferred taxation
+Deferred tax assets and liabilities are offset where the company has a legally enforceable right to do so. The
+following is the analysis of the deferred tax balances (after offset) for financial reporting purposes:
+Assets Assets
+2024 2023
+Balances: : £ £
+ACAs (233,451) (53,728)
+Tax losses . 4,935,800 7,923,527
+Short term timing differences 74,075 62,066
+4,776,424 7,931,865
+2024
+Movements in the year: £
+Asset at 1 July 2023 " (7,931,865)
+Charge to profit or loss 3,155,441
+Asset at 30 June 2024 (4,776,424)
+The deferred tax asset set out above is expected to reverse within 12 months and relates principally to the
+utilisation of tax losses against future expected profits of the same period.
+21 ‘Retirement benefit schemes
+Defined contribution schemes 2024 2023
+£ £
+\
+Charge to profit or loss in respect of defined contribution schemes 158,659 112,319
+A defined contribution pension scheme is operated for all qualifying employees. The assets of the scheme are
+held separately from those of the company in an independently administered fund. Contributions totalling
+£24,509 (2023: £15,888) were payable to the fund at the reporting date and are included in other creditors.
+Defined benefit schemes
+Luton Town Football Club (‘the Club’) participates in the Football League Pension and Life Assurance
+Scheme (‘the Scheme’). The Scheme is a funded multi-employer defined benefit scheme, with 92
+participating employers, and where members may have periods of service attributable to several participating
+employers. The Club is unable to identify its share of the assets and liabilities of the Scheme and therefore
+accounts for its contributions as if they were paid to a defined contribution scheme.
+The last actuarial valuation was carried out at 31 August 2023 where the total deficit on the on-going
+valuation basis was £20.554 million. The key assumptions used to calculate the deficit at the 31 August 2023
+actuarial valuation are:
+-27-
+Docusign Envelope ID: 73231000-A208-4343-8049-1010BBOFOFDC .
+LUTON TOWN FOOTBALL CLUB 2020 LTD
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+21 ‘Retirement benefit schemes (Continued)
+Valuation
+Discount Rate: Gilt Yield Curve + 0.5% per annum
+RPI inflation: Bank of England Inflation Curve
+Pension Increases: Fixed 3.0% per annum for benefits
+accrued prior to 6 April 1997, and
+. modelled using the RPI __ inflation
+. assumption with a cap of 5.0% per
+annum and a floor of 3.0% per annum
+for benefits accrued after 6 April
+1997
+Morality (pre-retirement): None
+Morality (post-retirement): SAPS (Series 3) with CMI_2022
+projections, a long-term improvement :
+rate of 1.5% p.a. and an initial additional
+parameter of 0.5% p.a.
+The accrual of benefits ceased within the Scheme on 31 August 1999, therefore there are no contributions
+relating to current accrual. The Club pays monthly contributions based on a notional split of the total
+expenses and deficit contributions of the Scheme.
+The results of the 2023 valuation were rolled forward to 30 June 2024 on the same assumptions as detailed
+above, and the Club’s notional share of the deficit was £222,833 (£212,164 as at 30 June 2023).
+As at 30 June 2024, the Club was paying total contributions of £4,800 per month (increasing by 5% p.a. on 1
+September each year) which based on the actuarial valuation assumptions detailed above will be sufficient to
+. Pay off the deficit by 30 November 2028. °
+As at 30 June 2024, based on an appropriate discount rate of 4.96% per annum (6.39% per annum as at 30
+June 2023), the present value of the Club's outstanding contributions (i.e. their future liability) is £258,903
+(£217,264 as at 30 June 2023). This amounts to £60,007 (30 June 2023: £57,142) due within one year and
+£198,896 (30 June 2023: £160,122) due after more than one year and is included within other payables.
+2024 2023
+£ £
+: Present value of defined benefit obligations 258,903 217,264
+Deficit in scheme 258,903 217,264
+2024
+Movements in the present value of defined benefit obligations £
+Liabilities at 1 July 2023 217,264
+Deficit contributions : (57,142)
+Net interest charge 12,067
+Remeasurement 86,714
+Liabilities at 30 June 2024 258,903
+The defined benefit obligations arise from plans which are wholly or partly funded.
+-28-
+Docusign Envelope ID: 73231000-A20B-4343-8049-1010BBOFOF DC
+LUTON TOWN FOOTBALL CLUB 2020 LTD
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED) .
+FOR THE YEAR ENDED 30 JUNE 2024
+21 Retirement benefit schemes (Continued)
+- Income and Expenditure Impact
+2024 2023
+£ £
+Net interest charge (unwinding of discount rate) 12,067 8,334
+Remeasurement (changes in assumptions) 3,553 (13,009)
+Remeasurement (change to contribution schedule) 83,161 -
+Assumptions
+2024 2023
+Discount Rate (based on AA Corporate Bond Yields 4.96% "6.39%
+of appropriate currency/duration)
+The funding objective of the Trustees of the Scheme is to have sufficient assets to meet the Technical
+Provisions of the Scheme. In order to remove the deficit revealed at the previous actuarial valuation (dated 31
+August 2023), deficit contributions are payable by all participating clubs. Payments are made in accordance
+with a pension contribution schedule. As the Scheme is closed to accrual, there are no additional costs
+associated with the accruing of members’ future benefits. In the case of a club being relegated from the
+Football League and being unable to settle its debt then the remaining clubs may, in exceptional
+circumstances, have to share the deficit.
+Upon the wind-up of the Scheme with a surplus, any surplus will be used to augment benefits. Under the more
+likely scenario of there being a deficit, this will be split amongst the clubs in line with their contribution
+schedule. Should an individual club leave the Scheme, they may be required to pay their share of the deficit
+based on a proxy buyout basis (i.e. valuing the benefits on a basis consistent with buying out the benefits with
+an insurance company).
+22 . Share capital .
+2024 2023 2024 2023
+Ordinary share capital Number Number £ £
+Issued and fully paid
+Ordinary shares of £1 each 18,145,003 18,145,003 18,145,003 18,145,003
+The shares have attached to them full voting, dividend and capital distribution (including on winding up) rights.
+23 Reserves
+Profit and loss reserves :
+Cumulative profit and loss and capital contributions net of distributions to owners.
+-29-
+Docusign Envelope ID: 73231000-A20B-4343-8049-1010BBOFOFDC
+LUTON TOWN FOOTBALL CLUB 2020 LTD
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+24 Operating lease commitments
+Lessee ,
+At the reporting end date the company had outstanding commitments for future minimum lease payments
+under non-cancellable operating leases, which fall due as follows:
+2024 2023
+£ £
+Within one year 669,495 169,748
+Between one and five years 858,801 434,871
+1,528,296 604,619
+25 Contingent assets and liabilities
+Player registration fees
+Excluding items already provided in the Statement of Financial Position, at 30 June 2024 the Company had a
+contingent liability to pay up to £1,361,000 of additional transfer fees (2023: £1,140,000) in respect of players
+under contract, dependent upon a number of contingent events occurring after the year end, such as players
+making specific numbers of appearances and gaining international honours. These amounts have not been
+included in the financial statements as it is not probable that a liability will arise.
+At 30 June 2024, the Company had expected contingent sums receivable of £1,705,000 (2023: £2,296,000) in
+respect of players sold, should certain contingent events occur. The total contingent sum receivable is based
+on the probable outcome of a range of factors.
+26 ~=Events after the reporting date
+Since the year end, Luton Town Football Club has acquired and extended a number of player registrations at
+an initial cost of £8.4m. Additionally a number of player registrations were disposed of with an associated net
+book value of £4.5m. These transactions will be accounted for in the year ending 30 June 2025.
+27 Related party transactions
+Loans have been advanced by three individuals who are related by virtue of being significant shareholders in
+the company and/or directors of the company. These loans are as disclosed in 18.
+During the year the company advanced £26,603,044 (2023: £1,536,210) to a fellow group company and was
+recharged £7,308,152 (2023: £11,572,000) from the same fellow group company. After advances and
+recharges, £7,490,565 was due from the fellow group undertaking at the reporting date (2023: £11,804,327
+due to the fellow group undertaking).
+28 Parent company :
+The immediate and ultimate parent company is 2020 Holdings (England) Limited, a private company
+registered in England and Wales. The smallest and largest group in which the company's accounts are
+consolidated is that of 2020 Holdings (England) Limited, the accounts are available from Kenilworth Stadium,
+1 Maple Road, Luton, Bedfordshire, LU4 8AW.
+-30-
 

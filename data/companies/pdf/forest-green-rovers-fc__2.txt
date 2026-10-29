@@ -2,7 +2,7 @@ source: Companies House filing, forest-green-rovers-fc__2.pdf
 document: VQIICCd0qI7lxbGOneQSMyRScC5UNkoz2oYu61T-cAg
 made_up_date: 2024-06-30
 method: ocr
-pages_read: 12 of 33
+pages_read: 33 of 33
 
 Docusign Envelope ID: 7F991A6E-4E97-4E7D-993E-F2E05B069640
 Registration number: 06748691
@@ -394,4 +394,668 @@ Loss for the financial year (3,626,404) ( 1,369,263)
 The above results were derived from continuing operations.
 The notes on pages 14 to 31 form an integral part of these financial statements.
 Page 10
+Docusign Envelope ID: 7F991A6E-4E97-4E7D-993E-F2E05B069640 ,
+Forest Green Rovers Football Club Limited
+Statement of Comprehensive Income for the Year Ended 30 June 2024
+
+2024 2023
+
+£ £
+
+Loss for the year (3,626,404) (1,369,263)
+
+Surplus on property, plant and equipment revaluation 51,664 :
+
+Total comprehensive income for the year (3,574,740) (1,369,263)
+
+The notes on pages 14 to 31 form an integral part of these financial statements.
+Page 11
+Docusign Envelope ID: 7F991A6E-4E97-4E7D-993E-F2E05B069640
+Forest Green Rovers Football Club Limited
+(Registration number: 06748691)
+Balance Sheet as at 30 June 2024
+2024 2023
+Note £ £
+Fixed assets ,
+Intangible assets 11 201,387 301,032
+Tangible assets 12 4,077,850 3,039,080
+4,279,237 3,340,112 .
+Current assets
+Stocks 13 52,730 22,546
+Debtors 14 1,070,388 528,699
+Cash at bank and in hand 455,950 944,341
+1,579,068 1,495,586
+Creditors: Amounts falling due within one year 15 (6,687,187) (2,478,990)
+Net current liabilities (5,108,119) (983,404) .
+. Total assets less current liabilities (828,882) 2,356,708
+Creditors: Amounts falling due after more than one year 15 (12,170) -
+Provisions for liabilities 16 (419,726) (63,746)
+Net (liabilities)/assets (1,260,778) 2,292,962
+Capital and reserves
+Called up share capital 18 13,471,090 13,450,090
+Share premium reserve 19 16,965 16,965
+Revaluation reserve 19 1,459,615 1,521,245
+Retained earnings 19 (16,208,448) (12,695,338)
+Shareholders’ (deficit)/funds (1,260,778) 2,292,962
+15 November 2024
+Approved and authorised by the Board on .................... and signed on its behalf by:
+signed by:
+Asif Rehmanwala
+Director
+. Lion House, Rowcroft, Stroud, Gloucestershire, GLS 3BY
+The notes on pages 14 to 31 form an integral part of these financial statements.
+Page 12
+Docusign Envelope ID: 7F991A6E-4E97-4E7D-993E-F2E05B069640
+Forest Green Rovers Football Club Limited
+Statement of Changes in Equity for the Year Ended 30 June 2024
+Share Revaluation Retained
+Share capital premium reserve earnings Total
+£ £ £ £ £
+At 1 July 2023 13,450,090 16,965 1,521,245 (12,695,338) 2,292,962
+Loss for the year 2 - - (3,626,404) (3,626,404)
+Other comprehensive income - : 51,664 - 51,664
+New share capital subscribed 21,000 - - - 21,000
+Transfers : + (113,294) 113,294 -
+‘At 30 June 2024 : 13,471,090 16,965. 1,459,615 (16,208,448) __ (1,260,778)
+Share Revaluation Retained
+Share capital premium reserve earnings Total
+£ £ £ £ £
+At 1 July 2022 13,450,090 16,965 1,475,056 (11,279,886) 3,662,225 7
+Loss for the year - - - (1,369,263) (1,369,263)
+Transfers : : 46,189 (46,189) :
+At 30 June 2023 13,450,090 16,965 1,521,245 __(12,695,338) __ 2,292,962
+The notes on pages 14 to 31 form an integral part of these financial statements.
+Page 13
+Docusign Envelope ID: 7F991AGE-4E97-4E7D-993E-F2E05B069640
+Forest Green Rovers Football Club Limited
+Notes to the Financial Statements for the Year Ended 30 June 2024
+1 General information
+The company is a private company limited by share capital, incorporated in England and Wales.
+The address of its registered office is:
+Lion House
+Rowcroft
+Stroud
+Gloucestershire
+GL5 3BY
+The principal place of business is:
+The New Lawn
+Another Way
+Nailsworth
+Gloucestershire
+GL6 0FG
+2 Accounting policies
+Summary of significant accounting policies and key accounting estimates
+The principal accounting policies applied in the preparation of these financial statements are set out below.
+These policies have been consistently applied to all the years presented, unless otherwise stated.
+Statement of compliance
+These financial statements were prepared in accordance with Financial Reporting Standard 102 'The Financial
+Reporting Standard applicable in the UK and Republic of Ireland’ ("FRS 102").
+Basis of preparation
+These financial statements have been prepared using the historical cost convention except that as disclosed in
+the accounting policies certain items are shown at fair value.
+The presentation currency of the financial statements is pounds sterling, being the functional currency of the
+primary economic environment in which the company operates. Monetary amounts in these financial statements
+are rounded to the nearest pound.
+Summary of disclosure exemptions
+In these financial statements, the company is considered to be a qualifying entity and has applied the exemptions
+available under FRS 102 in respect of the following disclosures:
+- Reconciliation of the number of shares outstanding from the beginning to the end of the period;
+- Cash flow statement and related notes; and
+- Key management personnel compensation.
+Name of parent of group
+These financial statements are consolidated in the financial statements of Green Britain Group Limited.
+The financial statements of Green Britain Group Limited may be obtained from Lion House, Rowcroft, Stroud,
+Gloucestershire, GL5 3BY.
+Page 14
+Docusign Envelope ID: 7F991A6E-4E97-4E7D-993E-F2E05B069640
+Forest Green Rovers Football Club Limited
+Notes to the Financial Statements for the Year Ended 30 June 2024 (continued)
+2 Accounting policies (continued)
+Going concern
+The Company relies on support from its ultimate parent company, Green Britain Group Limited, and has
+received written confirmation from Green Britain Group Limited that the Group will continue to provide the
+necessary financial and operational support to allow it to continue in operation for the foreseeable future, being
+a period of at least 12 months from the date of approval of these accounts.
+As a result, the Directors have continued to prepare the financial statements on a going concern basis.
+Reclassification of comparative amounts
+Income from the sale of players’ registrations have been reclassified from turnover to other income in the prior
+period in line with the disclosed accounting policies. The impact of reclassification is to reduce turnover by
+£412,077 and increase other operating income by this amount. There is no change in the profit of the company
+for the year ended 30 June 2023 as a result of this restatement.
+. Judgements
+Management judge that the stadium has a remaining 3 year life. This judgement has been reviewed as at 30 June
+2024 and reflects the most recent assessment of when the football club will move to the new stadium at Eco
+Park. As a result, the stadium is being depreciated over this remaining life. Land is not depreciated. After the
+year end, the useful economic life of the stadium has been extended from 3 to 4 years based on new information
+not available at the balance sheet date.
+Key sources of estimation uncertainty ;
+The stadium, held within land and buildings, is revalued as frequently as required to not produce a material
+difference between the fair value and the carrying value. As the asset has a specific function, an external expert
+is used to ensure that an accurate judgement is taken on the valuation. The valuation is based on the depreciated
+replacement cost of the stadium as the specialised nature of the asset means there are no market transactions of
+this type of asset, except as part of the business or entity. The valuation assumes that there is both a willing
+seller and prudent buyer with neither party having a special interest in the property. The latest valuation was
+carried out at 30 April 2024. The carrying amount is £2,421,052 (2023 - £2,534,694).
+Revenue recognition
+Turnover comprises match receipts, executive box rentals, sponsorships, commercial and other income arising
+from the ordinary activities of the Company and excludes transfer fees receivable which are recognised in other
+operating income. Turnover is shown net of value added tax. :
+The Company recognises revenue when the amount of revenue can be reliably measured, it is probable that
+future economic benefits will flow to the entity and the service has been delivered. Hence gate receipts are
+recognised when the match occurs and revenue from season tickets, corporate box tenures, the gym and
+sponsorships are recognised over the period to which they relate. Merchandising revenues are recognised when
+the rights and responsibilities of the goods have been transferred from the Company. Income from services
+provided at the stadium are recognised when the event takes place. Revenue relating to the sale of a player who
+has developed through the ranks of the Company is recognised within other operating income upon completion
+of the sale. Profits relating to the sale of a player who was previously purchased by the Company are recognised
+as a gain recognised within other operating income.
+Page 15
+Docusign Envelope ID: 7F991A6E-4E97-4E7D-993E-F2E05B069640
+Forest Green Rovers Football Club Limited
+Notes to the Financial Statements for the Year Ended 30 June 2024 (continued)
+2 Accounting policies (continued)
+Other grants
+Grants are accounted under the accruals model as permitted by FRS 102. Grants relating to expenditure on
+tangible fixed assets are credited to profit or loss at the same rate as the depreciation on the assets to which the
+grant relates. The deferred element of grants is included in creditors as deferred income. Grants of a revenue
+nature are recognised in the Statement of Comprehensive Income in the same period as the related expenditure.
+Finance income and costs policy
+Interest income and interest payable are recognised in the profit and loss as they accrue on funds invested or
+borrowed, using the effective interest method.
+Foreign currency transactions and balances
+Transactions in foreign currencies are translated to the Company's functional currency at the foreign exchange
+rate ruling at the date of the transaction. Monetary assets and liabilities denominated in foreign currencies at the
+balance sheet date are retranslated to the functional currency at the foreign currency rate ruling at that date.
+Non-monetary assets and liabilities that are measured in terms of historical cost in a foreign currency are
+translated using the exchange rate at the date of the transaction. Foreign exchange differences arising on
+translation are recognised in the profit and loss account unless they arise from the construction of an asset in
+which case they are capitalised.
+Foreign exchange losses represent foreign exchange differences arising on individual foreign trade debtor and .
+creditor balances outstanding at the year end.
+Tax
+Tax on the profit or loss for the year comprises current and deferred tax. Tax is recognised in the profit and loss
+account except to the extent that it relates to items recognised directly in equity or other comprehensive income,
+in which case it is recognised directly in equity or other comprehensive income.
+Current tax is the expected tax payable or receivable on the taxable income or loss for the year, using tax rates
+enacted or substantively enacted at the balance sheet date, and any adjustment to tax payable in respect of
+previous years.
+Deferred tax is provided on timing differences which arise from the inclusion of income and expenses in tax
+assessments in periods different from those in which they are recognised in the financial statements. Timing
+differences between accumulated depreciation and tax allowances for the cost of fixed assets are not provided if
+and when all conditions for retaining tax allowances have been met. Deferred tax is not recognised on
+permanent differences arising because certain types of income or expense are non-taxable or are disallowable
+for tax or because certain tax charges or allowances are greater or smaller than the corresponding income or
+expense.
+Deferred tax is measured at the tax rate that is expected to apply to the reversal of the related difference, using
+tax rates enacted or substantively enacted at the balance sheet date. Deferred tax balances are not discounted.
+Unrelieved tax losses and other deferred tax assets are recognised only to the extent that it is probable that they
+will be recovered against the reversal of deferred tax liabilities and other future taxable profits.
+Page 16
+Docusign Envelope ID: 7F991A6E-4E97-4E7D-993E-F2E05B069640
+Forest Green Rovers Football Club Limited
+Notes to the Financial Statements for the Year Ended 30 June 2024 (continued)
+2 Accounting policies (continued)
+Tangible assets
+Tangible assets are stated at cost less accumulated depreciation and any impairment losses except for assets
+within land and buildings which are stated at fair value less any subsequent accumulated depreciation and
+accumulated impairment losses. Gains on revaluation are recognised in other comprehensive income and
+accumulated in the revaluation reserve. However, the increase is recognised in profit or loss to the extent that it
+reverses a revaluation decrease previously recognised in profit or loss.
+Losses arising on revaluation are recognised in other comprehensive income to the extent of any previously
+recognised revaluation increase accumulated in equity, in respect of that asset. Any excess is recognised in
+profit or loss.
+At the end of each financial period, the Company assesses whether tangible fixed assets are impaired.
+Depreciation
+Depreciation is charged to the profit and loss account on a straight-line basis so as to write off the cost of assets,
+other than land and properties under construction, over their estimated useful lives, as follows:
+Asset class . Depreciation method and rate
+Buildings _ 3B years
+. Freehold buildings held at cost 10 years
+Plan, machinery and motor vehicles 4 -.10 years
+Furniture, fittings and equipment 3-5 years
+Intangible assets
+Significant transfer fees for players purchased from other football teams are stated at cost less accumulated
+amortisation and any impairment losses. Additional transfer fees contingent on performance are recognised once
+the conditions for fee to become payable are met.
+Computer software that is acquired by the Company is stated at historic cost less accumulated amortisation and
+accumulated impairment losses.
+At the end of each financial period, the Company assesses whether intangible fixed assets are impaired.
+Amortisation
+Amortisation is charged to the profit or loss on a straight-line basis over the estimated useful lives of intangible
+__ assets. Intangible assets are amortised from the date they are available for use.
+The estimated useful lives and amortisation rates are as follows:
+Asset class Amortisation method and rate
+Computer software 5 years
+Player registrations The length of the player's contract
+Cash and cash equivalents
+Cash and cash equivalents comprise cash on hand and call deposits, and other short-term highly liquid
+investments that are readily convertible to a known amount of cash and are subject to an insignificant risk of
+change in value.
+. Page 17
+Docusign Envelope ID: 7F991A6E-4E97-4E7D-993E-F2E05B069640
+Forest Green Rovers Football Club Limited
+Notes to the Financial Statements for the Year Ended 30 June 2024 (continued)
+2 Accounting policies (continued)
+Trade debtors
+Trade debtors are amounts due from customers for merchandise sold or services performed in the ordinary
+course of business.
+Trade debtors are recognised initially at the transaction price. They are subsequently measured at amortised cost
+using the effective interest method, less provision for impairment. A provision for the impairment of trade
+debtors is established when there is objective evidence that the Company will not be able to collect all amounts
+due according to the original terms of the receivables.
+Stocks
+Stocks are stated at the lower of cost and estimated selling price less costs to complete and sell. Cost is based on
+the first-in first out (‘FIFO’) principle and includes expenditure incurred in acquiring the stocks and other costs
+in bringing them to their existing location and condition.
+Trade creditors
+Trade creditors are obligations to pay for goods or services that have been acquired in the ordinary course of
+business from suppliers. Trade creditors are classified as current liabilities if the Company does not have an
+unconditional right, at the end of the reporting period, to defer settlement of the creditor for at least twelve
+months after the reporting date. If there is an unconditional right to defer settlement for at least twelve months
+after the reporting date, they are presented as non-current liabilities.
+Trade creditors are recognised initially at the transaction price and subsequently measured at amortised cost
+using the effective interest method.
+Borrowings
+Interest-bearing borrowings are recognised initially at the present value of future payments discounted at a
+market rate of interest. Subsequent to initial recognition, interest-bearing borrowings are stated at amortised cost
+using the effective interest method.
+Interest expense is recognised on the basis of the effective interest method and is included in interest payable
+and similar charges.
+Borrowings are classified as current liabilities unless the Company has an unconditional right to defer settlement
+of the liability for at least twelve months after the reporting date.
+Provisions
+A provision is recognised in the balance sheet when the Company has a present legal or constructive obligation
+as a result of a past event, that can be reliably measured and it is probable that an outflow of economic benefits
+will be required to settle the obligation. Provisions are recognised at the best estimate of the amount required to
+settle the obligation at the reporting date.
+Page 18
+Docusign Envelope ID: 7F991A6E-4E97-4E7D-993E-F2E05B069640
+Forest Green Rovers Football Club Limited
+Notes to the Financial Statements for the Year Ended 30 June 2024 (continued)
+2 Accounting policies (continued)
+Leases
+Leases are classified as finance leases whenever the terms of the lease transfer substantially all the risks and
+rewards of ownership to the lessee. Otherwise, leases are classified as operating leases. Operating lease costs are
+recognised within the profit and loss account as they are incurred.
+Assets held under finance leases are recognised at the lower of their fair value at inception of the lease and the
+present value of the minimum lease payments. These assets are depreciated on a straight-line basis over the
+shorter of the useful life of the asset and the lease term. The corresponding liability to the lessor is included in
+the balance sheet as a finance lease obligation.
+Lease payments are apportioned between finance costs in the profit and loss account and reduction of the lease
+obligation so as to achieve a constant periodic rate of interest on the remaining balance of the liability.
+Share capital :
+Ordinary shares are classified as equity as they include no contractual obligations upon the Company. Equity
+instruments are measured at fair value of the cash or other resources received or receivable, net of direct costs of
+issuing the equity instruments.
+Defined contribution pension obligation
+A defined contribution plan is a post-employment benefit plan under which the Company pays fixed
+contributions into a separate entity and will-have no legal right or constructive obligation to pay further
+amounts. Obligations for contributions to defined contribution pension plans are recognised as an expense in the
+profit and loss account in the periods during which the services are rendered by employees.
+3 Turnover
+The analysis of the company’s turnover for the year from continuing operations is as follows:
+(As restated)
+2024 2023
+£ £
+Match day 852,693 1,447,266
+Media and football activity 2,021,298 2,461,134
+Commercial $,061,186 4,035,838
+7,935,177 7,944,238
+Page 19 ,
+Docusign Envelope ID: 7F991A6E-4E97-4E7D-993E-F2E05B069640
+Forest Green Rovers Football Club Limited .
+Notes to the Financial Statements for the Year Ended 30 June 2024 (continued)
+4 Other operating income
+The analysis of the company's other operating income for the year is as follows:
+(As restated)
+, 2024 2023
+£ £
+Proceeds from player registrations not capitalised 1,113,992 412,077
+Sub lease rental income - 55,000
+: Miscellaneous other operating income 80,300 75,383
+1,194,292 542,460
+5 Operating loss
+Arrived at after charging/(crediting)
+2024 2023
+£ £
+Depreciation expense 636,961 621,657
+Amortisation expense 125,598 79,209
+Impairment loss - 88,780
+Exceptional player training compensation 67,447 -
+Foreign exchange losses 1,497 -
+Loss on disposal of property, plant and equipment 6,794 5,200
+6 Interest payable and similar expenses
+2024 2023
+£ £
+Interest on obligations under finance leases and hire purchase contracts 1,059 =
+7 Staff costs
+The aggregate payroll costs (including directors’ remuneration) were as follows:
+2024 2023
+£ £
+Wages and salaries 6,636,236 4,702,404
+Social security costs 876,768 564,060
+Pension costs, defined contribution scheme 209,700 164,727
+7,722,704 5,431,191
+Page 20
+Docusign Envelope ID: 7F991A6E-4E97-4E7D-993E-F2E05B069640
+Forest Green Rovers Football Club Limited
+Notes to the Financial Statements for the Year Ended 30 June 2024 (continued)
+7 Staff costs (continued)
+The average number of persons employed by the company (including directors) during the year, analysed by
+category was as follows:
+2024 2023
+No. No.
+Administration and support 56 58
+Football management and playing staff 96 81
+152 139
+8 Directors’ remuneration
+The remuneration of Directors was bore by a fellow company Ecotricity Group Limited. Amounts attributable
+to qualifying services provided to the Company was approximately £158,851 (2023: £159,433) and Company
+pension contributions of £3,308 (2023: £3,305) were made to a money purchase scheme on their behalf.
+9 Auditors’ remuneration
+2024 2023
+£ £
+Audit of the financial statements 20,000 16,000
+There were no non-audit services provided by the auditor in the current or prior year. :
+10 Taxation
+Tax charged/(credited) in the profit and loss account
+2024 2023
+£ £
+Current taxation
+UK corporation tax adjustment to prior periods - (2,306)
+Deferred taxation
+Arising from origination and reversal of timing differences 279,469 (6,225)
+Adjustments in respect of prior periods 76,511 15,362
+Total deferred taxation oe 355,980 9,137
+Tax expense in the income statement 355,980 6,831
+Page 21
+Docusign Envelope ID: 7F991A6E-4E97-4E7D-993E-F2E05B069640
+Forest Green Rovers Football Club Limited
+Notes to the Financial Statements for the Year Ended 30 June 2024 (continued)
+10 Taxation (continued)
+The tax on profit before tax for the year is higher than the standard rate of corporation tax in the UK (2023 -
+higher than the standard rate of corporation tax in the UK) of 25% (2023 - 20.5%).
+The differences are reconciled below:
+2024 2023
+£ £
+Loss before tax (3,270,424) (1,362,432)
+Corporation tax at standard rate (817,606) (279,299)
+Increase in UK and foreign current tax from adjustment for prior periods 76,511 13,056
+Tax increase from effect of capital allowances and depreciation 83,482 42,623
+Effect of revenues exempt from taxation (8,448) -
+Effect of expense not deductible in determining taxable profit (tax loss) 1,239 6,926
+Tax increase arising from group relief 1,020,802 224,646
+Deferred tax credit relating to changes in tax rates or laws - (1,121)
+Total tax charge 355,980 6,831
+Deferred tax
+Deferred tax assets and liabilities
+Asset Liability
+2024 £ £
+Accelerated capital allowances - 419,726
+- 419,726
+Asset Liability
+2023 £ £
+Accelerated capital allowances - 63,746
+- 63,746
+Page 22
+Docusign Envelope ID: 7F991A6E-4E97-4E7D-993E-F2E05B069640
+Forest Green Rovers Football Club Limited
+Notes to the Financial Statements for the Year Ended 30 June 2024 (continued)
+11 Intangible assets
+. Computer Player
+software registrations Total
+£ £ £
+Cost or valuation ,
+At 1 July 2023 105,888 439,411 $45,299
+Additions - 25,953 25,953
+Disposals - (163,286) __ (163,286)
+At 30 June 2024 105,888 302,078 407,966
+Amortisation
+At 1 July 2023 42,748 201,519 244,267
+Amortisation charge 21,178 104,420 125,598
+Amortisation eliminated on disposals - (163,286) (163,286)
+At 30 June 2024 63,926 142,653 206,579
+Carrying amount
+At 30 June 2024 41,962 159,425 201,387
+At 30 June 2023 63,140 237,892 301,032
+Page 23
+Docusign Envelope ID: 7F991A6E-4E97-4E7D-993E-F2E05B069640
+Forest Green Rovers Football Club Limited
+Notes to the Financial Statements for the Year Ended 30 June 2024 (continued)
+12 Tangible assets
+Freehold land Furniture, Plant,
+Landand _and buildings fittings and — machinery and Assets under
+buildings held at cost equipment —_motor vehicles construction Total
+£ Ea £ £ £ £
+Cost or valuation
+At 1 July 2023 3,000,000 55,274 802,295 623,377 16,792 4,497,738
+Revaluations (1,378,481) - - - - (1,378,481)
+Additions - 512,320 200,485 336,147 583,909 1,632,861
+Disposals - - (7,000) (40,896) : (47,896)
+Transfers 878,481 - (646,018) (215,671) (16,792) -
+At 30 June 2024 2,500,000 567,594 349,762 702,957 583,909 4,704,222
+Depreciation
+At | July 2023 465,306 32,243 501,762 459,347 - 1,458,658
+Charge for the year 393,518 36,840 128,557 78,046 - 636,961
+Eliminated on disposal - z (933) (38,169) - (39,102)
+Transfers 650,269 - (494,859) (155,410) - -
+Revaluation 1,430,145) - : - - (1,430,145)
+At 30 June 2024 78,948 69,083 134,527 343,814 : 626,372
+Carrying amount ia
+At 30 June 2024 2,421,052 498,511 215,235 359,143 583,909 4,077,850
+Page 24
+Docusign Envelope ID: 7F991A6E-4E97-4E7D-993E-F2E05B069640
+Forest Green Rovers Football Club Limited
+Notes to the Financial Statements for the Year Ended 30 June 2024 (continued)
+12 Tangible assets (continued)
+Freehold land Furniture, Plant,
+Land and and buildings fittings and = machinery and Assets under
+buildings held at cost equipment _ motor vehicles construction Total
+£ £ £ £ £ £
+At 30 June 2023 2,534,694 23,031 300,533 164,030 16,792 3,039,080
+Included within the net book value of land and buildings above is £2,919,563 (2023 - £2,557,725) in respect of freehold land and buildings.
+Page 25
+Oocusign Envelope ID: 7F991A6E-4E97-4E7D-993E-F2E05B069640
+Forest Green Rovers Football Club Limited
+Notes to the Financial Statements for the Year Ended 30 June 2024 (continued)
+12 Tangible assets (continued)
+Revaluation
+The fair value of the company's freehold land and buildings was revalued on 30 April 2024 by an independent
+valuer.
+The valuer adopted the basis of fair value as defined in FRS 102 as ‘the amount for which an asset could be
+exchanged, a liability settled, or an equity instrument granted could be exchanged, between knowledgeable,
+willing parties in an arm’s-length transaction’.
+The stadium is sufficiently specialised that it was revalued using the depreciated replacement cost method.
+Had this class of asset been measured on a historical cost basis, the carrying amount would have been £961,437
+(2023 - £1,013,449).
+Assets held under finance leases and hire purchase contracts
+The net carrying amount of tangible assets includes the following amounts in respect of assets held under
+finance leases and hire purchase contracts:
+2024 2023
+£ £
+Plant, machinery and motor vehicles 15,300 -
+Contractual commitments for the acquisition of tangible assets
+Contractual commitments for the acquisition of tangible assets were as follows:
+2024 2023
+£ £
+Furniture, fittings and equipment 261,757 -
+13 Stocks
+2024 2023
+£ g£ -
+Finished goods and goods for resale §2,730 22,546
+14 Debtors
+2024 2023 :
+Current Note £ £
+Trade debtors 685,793 218,760
+Amounts owed by Group undertakings 22 57,601 24,095
+Other debtors 2,219 5,480
+Prepayments 246,137 177,831
+Accrued income 78,638 102,533
+1,070,388 528,699
+Page 26
+Docusign Envelope ID: 7F991A6E-4E97-4E7D-993E-F2E05B069640
+Forest Green Rovers Football Club Limited
+Notes to the Financial Statements for the Year Ended 30 June 2024 (continued)
+15 Creditors
+2024 2023
+Note £ £
+Due within one year
+Loans and borrowings 20 3,279 40,200 ,
+Trade creditors 162,820 148,441
+Amounts owed to Group undertakings 22 5,713,967 1,722,008
+Social security and other taxes 34,037 13,366
+Other payables 36,875 31,258
+Accruals 587,795 194,061
+Corporation tax liability 10 1,571 1,571
+Deferred income 146,843 328,085
+6,687,187 2,478,990
+Due after one year .
+Loans and borrowings 20 12,170 -
+16 Provisions for liabilities
+. Deferred tax Total
+£ £
+At 1 July 2023 63,746 63,746
+Additional provisions 355,980 355,980
+At 30 June 2024 419,726 419,726
+17 Pension and other schemes
+Defined contribution pension scheme
+, The company operates a defined contribution pension scheme. The pension cost charge for the year represents
+. contributions payable by the company to the scheme and amounted to £209,700 (2023 - £164,727).
+Page 27
+Docusign Envelope ID: 7F991AGE-4E97-4E7D-993E-F2E05B069640
+Forest Green Rovers Football Club Limited
+Notes to the Financial Statements for the Year Ended 30 June 2024 (continued)
+18 Share capital ; ‘
+Allotted, called up and fully paid shares
+2024 2023
+No. £ No. £
+Ordinary shares of £10 each 1,347,109 13,471,090 1,345,009 13,450,090
+New shares allotted
+During the year 2,100 Ordinary shares having a nominal value of £10 each were allotted for an aggregate
+consideration of £21,000.
+Rights, preferences and restrictions
+: Ordinary shares have the following rights, preferences and restrictions:
+to receive dividends as declared from time to time and are entitled to one vote per share at meetings of the
+Company.
+19 Reserves
+Revaluation reserve
+Where tangible fixed assets are revalued the cumulative increase in the fair value of the property at the date of
+revaluation in excess of any previous impairment losses is recognised in the revaluation reserve.
+Profit and loss account
+The current and prior periods' retained profits and losses less any dividends are recognised in the profit and loss
+account. :
+Share premium reserve
+The reserve is formed of the premium paid for new shares above their nominal value. There have been no
+movements during the year.
+The changes to each component of equity resulting from items of other comprehensive income for the current
+year were as follows:
+Revaluation :
+reserve Total
+£ £
+Surplus on property, plant and equipment revaluation 51,664 51,664
+Page 28
+Docusign Envelope ID: 7F991A6E-4E97-4E7D-993E-F2E05B069640
+Forest Green Rovers Football Club Limited
+Notes to the Financial Statements for the Year Ended 30 June 2024 (continued)
+20 Loans and borrowings
+Non-current loans and borrowings
+2024 2023
+£ £
+Finance lease liabilities 12,170 ee
+Current loans and borrowings
+: 2024 2023
+£ £
+Finance lease liabilities 3,279 -
+Other borrowings - 40,200
+‘ 3,279 40,200
+Other borrowings
+The Company entered into a loan agreement with the English Football League as a part of their Covid-19
+assistance to all clubs. The loan was denominated in pounds sterling with a nominal interest rate of 0%, and the
+final instalment was due on 15 April 2024. The carrying amount at year end is £Nil (2023 - £40,200).
+21 Obligations under leases and hire purchase contracts
+Finance leases
+The total of future minimum lease payments is as follows:
+2024 2023
+£ £
+Not later than one year 4,332 -
+Later than one year and not later than five years 13,718 :
+18,050 :
+Operating leases
+The total of future minimum lease payments is as follows:
+2024 2023
+£ £
+Not later than one year 46,646 31,450 :
+Later than one year and not later than five years 33,499 41,235
+80,145 72,685
+The amount of non-cancellable operating lease payments recognised as an expense during the year was £44,155
+. (2023 - £30,024).
+Page 29
+Docusign Envelope ID: 7F991A6E-4E97-4E7D-993E-F2E05B069640
+Forest Green Rovers Football Club Limited
+Notes to the Financial Statements for the Year Ended 30 June 2024 (continued)
+22 Related party transactions
+Summary of transactions with parent
+Balances relate to cash funding and liquidity requirements.
+The outstanding balance is interest free and repayable on demand. There is no intention for the parent company
+to recoup the balance in the next financial period.
+Summary of transactions with entities with joint control or significant interest
+Related, non-group companies
+Transactions relate to charitable donations made and sales of hospitality and matchday tickets.
+Summary of transactions with other related parties ,
+Other group companies
+Transactions relate to the sale of matchday tickets, merchandise and sponsorship rights. Purchases relate to the
+use of fellow group company buildings.
+Income and receivables from related parties
+Entities with
+joint control or
+significant Other group
+influence companies
+2024 £ £
+Sale of goods 3,094 4,010,772
+Amounts receivable from related party - 57,601
+Provision for doubtful debts = : .
+Entities with
+joint control or
+significant Other group
+influence companies :
+2023 £ £
+Sale of goods 6,814 2,973,062
+Amounts receivable from related party 3,909 24,095
+Provision for doubttul debts pe ee
+Expenditure with and payables to related parties
+Entities with
+joint control or
+significant Other group
+Parent influence companies
+2024 £ £ £
+Purchase of goods - 68,109 11,209
+Amounts payable to related party 5,623,513 9,910 90,454
+Page 30
+Docusign Envelope ID: 7F991A6E-4E97-4E7D-993E-F2E05B069640
+Forest Green Rovers Football Club Limited
+Notes to the Financial Statements for the Year Ended 30 June 2024 (continued)
+22 Related party transactions (continued) .
+Entities with
+joint control or
+significant Other group
+Parent influence companies
+2023 £ £ £
+Purchase of goods - 73,681 512,328
+Amounts payable to related party 1,709,832 - 12,176
+23 Parent and ultimate parent undertaking
+The company's immediate parent is Ecotricity New Ventures Limited, incorporated in England and Wales.
+The ultimate parent is Green Britain Group Limited, incorporated in England and Wales.
+The ultimate parent company producing publicly available consolidated financial statements is Green Britain
+Group Limited. These financial statements are available upon request from Lion House, Rowcroft, Stroud,
+Gloucestershire, GL5 3BY
+The ultimate controlling party is D Vince, the only shareholder of Green Britain Group Limited.
+The parent of the largest group in which these financial statements are consolidated is Green Britain Group
+Limited, incorporated in England and Wales.
+The address of Green Britain Group Limited is:
+Lion House, Rowcroft, Stroud, Gloucestershire, GL5 3BY.
+This is also the smallest group in which these financial statements are consolidated.
+24 Non adjusting events after the financial period
+After the year end, the Company disposed of a player included within intangible assets, player registrations. The
+loss on disposal was £32,552.
+. Page 31
 

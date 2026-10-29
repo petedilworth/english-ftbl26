@@ -42,3 +42,46 @@ poole-town-fc	02609998	-BLfCA1usoqqbiwqIXajWtXdNYbUvKKvukf8_pG_JIc	2025-10-27	20
 poole-town-fc	02609998	-BLfCA1usoqqbiwqIXajWtXdNYbUvKKvukf8_pG_JIc	2025-10-27	2025-05-31	TotalAssetsLessCurrentLiabilities	uk-core	num		2025-05-31	1		GBP	57740
 poole-town-fc	02609998	-BLfCA1usoqqbiwqIXajWtXdNYbUvKKvukf8_pG_JIc	2025-10-27	2025-05-31	UKCompaniesHouseRegisteredNumber	uk-bus	text	2024-07-02	2025-05-31				02609998
 poole-town-fc	02609998	-BLfCA1usoqqbiwqIXajWtXdNYbUvKKvukf8_pG_JIc	2025-10-27	2025-05-31	_GoingConcernMaterialUncertainty	derived	text						none found
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	AccountingStandardsApplied	uk-bus	text	2023-06-01	2024-07-01		AccountingStandardsDimension=Micro-entities		
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	AccountsStatusAuditedOrUnaudited	uk-bus	text	2023-06-01	2024-07-01		AccountsStatusDimension=AuditExempt-NoAccountantsReport		
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	AccountsType	uk-bus	text	2023-06-01	2024-07-01		AccountsTypeDimension=FullAccounts		
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	AccruedLiabilitiesNotExpressedWithinCreditorsSubtotal	uk-core	num		2023-05-31	1		GBP	62774
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	AccruedLiabilitiesNotExpressedWithinCreditorsSubtotal	uk-core	num		2024-07-01	1		GBP	64034
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	AverageNumberEmployeesDuringPeriod	uk-core	num	2022-06-01	2023-05-31			GBP	37
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	AverageNumberEmployeesDuringPeriod	uk-core	num	2023-06-01	2024-07-01			GBP	37
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	BalanceSheetDate	uk-bus	text		2024-07-01	1			1 July 2024
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	CalledUpShareCapitalNotPaidNotExpressedAsCurrentAsset	uk-core	num		2023-05-31	1		GBP	0
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	CalledUpShareCapitalNotPaidNotExpressedAsCurrentAsset	uk-core	num		2024-07-01	1		GBP	120150
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	Creditors	uk-core	num		2023-05-31	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	50089
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	Creditors	uk-core	num		2024-07-01	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	35308
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	CurrentAssets	uk-core	num		2023-05-31	1		GBP	45842
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	CurrentAssets	uk-core	num		2024-07-01	1		GBP	65381
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	DateAuthorisationFinancialStatementsForIssue	uk-core	text		2024-07-01	1			6 March 2025
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	DirectorSigningFinancialStatements	uk-core	text	2023-06-01	2024-07-01		EntityOfficersDimension=Director1		
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	DirectorSigningFinancialStatements	uk-core	text	2023-06-01	2024-07-01		EntityOfficersDimension=Director2		
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	EndDateForPeriodCoveredByReport	uk-bus	text		2024-07-01	1			2024-07-01
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	EntityCurrentLegalOrRegisteredName	uk-bus	text	2023-06-01	2024-07-01				POOLE TOWN FOOTBALL CLUB (1991) LIMITED
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	EntityDormantTruefalse	uk-bus	text	2023-06-01	2024-07-01				false
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	EntityTradingStatus	uk-bus	text	2023-06-01	2024-07-01				
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	Equity	uk-core	num		2023-05-31	1		GBP	6882
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	Equity	uk-core	num		2024-07-01	1		GBP	144004
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	FixedAssets	uk-core	num		2023-05-31	1		GBP	72349
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	FixedAssets	uk-core	num		2024-07-01	1		GBP	43592
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	NameEntityOfficer	uk-bus	text	2023-06-01	2024-07-01		EntityOfficersDimension=Director1		C P Reeves
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	NameEntityOfficer	uk-bus	text	2023-06-01	2024-07-01		EntityOfficersDimension=Director2		A M Rossiter
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	NameProductionSoftware	uk-bus	text	2023-06-01	2024-07-01				Companies House
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	NetAssetsLiabilities	uk-core	num		2023-05-31	1		GBP	6882
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	NetAssetsLiabilities	uk-core	num		2024-07-01	1		GBP	144004
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	NetCurrentAssetsLiabilities	uk-core	num		2023-05-31	1		GBP	2693
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	NetCurrentAssetsLiabilities	uk-core	num		2024-07-01	1		GBP	44296
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	PrepaymentsAccruedIncomeNotExpressedWithinCurrentAssetSubtotal	uk-core	num		2023-05-31	1		GBP	1554
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	PrepaymentsAccruedIncomeNotExpressedWithinCurrentAssetSubtotal	uk-core	num		2024-07-01	1		GBP	14223
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	StartDateForPeriodCoveredByReport	uk-bus	text		2024-07-01	1			2023-06-01
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime	uk-direp	text	2023-06-01	2024-07-01				The accounts have been prepared in accordance with the micro-entity provisions and delivered in accordance with the provisions applicable to companies subject to the small companies regime.
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies	uk-direp	text	2023-06-01	2024-07-01				For the year ending 1 July 2024 the company was entitled to exemption under section 477 of the Companies Act 2006 relating to small companies.
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct	uk-direp	text	2023-06-01	2024-07-01				The directors acknowledge their responsibilities for complying with the requirements of the Companies Act 2006 with respect to accounting records and the preparation of accounts.
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit	uk-direp	text	2023-06-01	2024-07-01				The members have not required the company to obtain an audit in accordance with section 476 of the Companies Act 2006.
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	TotalAssetsLessCurrentLiabilities	uk-core	num		2023-05-31	1		GBP	69656
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	TotalAssetsLessCurrentLiabilities	uk-core	num		2024-07-01	1		GBP	208038
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	UKCompaniesHouseRegisteredNumber	uk-bus	text	2023-06-01	2024-07-01				02609998
+poole-town-fc	02609998	peqi9w0TiNauQD0K3qyn7wi1nChMd2g6SO--DtKHUKI	2025-03-13	2024-07-01	_GoingConcernMaterialUncertainty	derived	text						none found

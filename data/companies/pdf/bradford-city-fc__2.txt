@@ -2,7 +2,7 @@ source: Companies House filing, bradford-city-fc__2.pdf
 document: z0KG1nrV8fEXTvxoaQ0K7XbJALDM9PJJUU4ivJXajeg
 made_up_date: 2024-06-30
 method: ocr
-pages_read: 12 of 15
+pages_read: 15 of 15
 
 , Registration number 5102915
 Bradford City Football Club Limited
@@ -372,4 +372,89 @@ accumulated impairment losses. Listed investments are measured at fair value wit
 value being recognised in profit or loss.
 
 : Page 10
+Bradford City Football Club Limited
+Notes to the financial statements (continued)
+Year ended 30 June 2024
+Defined contribution plans
+Contributions to defined contribution plans are recognised as an expense in the period in which the
+related service is provided. Prepaid contributions are recognised as an asset to the extent that the
+prepayment will lead to a reduction in future payments or a cash refund.
+When contributions are not expected to be settled wholly within 12 months of the end of the reporting
+date in which the employees render the related service, the liability is measured on a discounted
+present value basis. The unwinding of the discount is recognised in finance costs in profit or loss in the
+period in which it arises.
+4. Profit/loss before taxation , .
+Profit/loss before taxation is stated after charging/(crediting):
+2024 2023
+£ £
+Net Depreciation of tangible assets 119,971 101,413
+5. Intangible assets
+Goodwill Total
+£ £
+Cost
+At 30 June 2024 246,867 246,867
+Amortisation of player contracts — ~~
+At 30 June 2024 35,576 35,576
+Carrying amount
+At 30 June 2024 211,291 211,291
+At 30 June 2023 234,267 234,267
+Page 11
+Bradford City Football Club Limited
+. Notes to the financial statements (continued)
+, Year ended 30 June 2024
+6. Tangible assets .
+Long Plant and Fixtures Computer
+Leasehold equipment fittings Equipment
+Property Total
+£ £ £ £ £
+Cost
+At 1 July 2023 407,541 1,288,929 279,105 107,699 2,083,274 :
+Additions - 7,750 66,137 7,008 80,895
+At 30 June 2024 407,541 1,296,679 345,242 114,707 2,164,169 ,
+Depreciation
+At 1 July 2023 171,194 267,276 90,081 63,213 591,764
+Charge for the year 40,195 25,166 44,542 10,068 119,971
+At 30 June 2024 211,389 292,442 134,623 73,281 771,735
+Carrying amount
+At 30 June 2024 496,152 1,004,237 210,619 41,427 = 1,452,434
+At 30 June 2023 236,347 = 1,021,653 189,024 44,486 1,491,510
+7. Investments
+Shares in Total
+group :
+undertakings
+and
+participating
+interests
+£ £
+Cost
+At 1 July 2023 and 30 June 2024 100 : 100
+Impairment ~~ —
+At 1 July 2023 and 30 June 2024 - -
+During the year - -
+Carrying amount
+At 30 June 2024 100 100
+At 30 June 2023 100 100
+. Page 12
+Bradford City Football Club Limited
+Notes to the financial statements (continued)
+Year ended 30 June 2024
+8. Debtors ,
+2024 2023.
+£ £
+Trade debtors 2,567,255 2,268,933
+Other debtors 723,123 738,144
+3,290,378 3,007,077
+9. Creditors: amounts falling due within one year
+2024 2023
+£ £
+Bank and other loans and overdrafts 90,699 130,128
+Trade creditors 768,175 944,105
+Social security and other taxes 418,144 409,850
+Other creditors 3,258,629 3,341,361
+. 4,535,647 4,825,444
+10. Creditors: amounts falling due after more than one year
+2024 2023
+£ £
+Other creditors 2,949,928 1,710,000
+Page 13
 

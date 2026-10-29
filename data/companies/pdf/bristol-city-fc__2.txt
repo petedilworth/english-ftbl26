@@ -2,7 +2,7 @@ source: Companies House filing, bristol-city-fc__2.pdf
 document: TOdUp6oVUo2sbA6qtTM1qbn7vXaKksVmF2PrtyhElVM
 made_up_date: 2024-06-30
 method: ocr
-pages_read: 12 of 47
+pages_read: 47 of 47
 
 Bristol City Holdings Limited
 : Annual Report and Consolidated Financial Statements
@@ -478,4 +478,1384 @@ assets of the group and the company and hence for taking reasonable steps for th
 detection of fraud and other irregularities.
 
 Page 10
+Bristol City Holdings Limited
+Independent Auditor's Report to the Members of Bristol City Holdings
+Limited
+Opinion
+We have audited the financial statements of Bristol City Holdings Limited (the ‘parent company’) and
+its subsidiaries (the ‘group') for the year ended 30 June 2024, which comprise the Consolidated Profit
+and Loss Account, Consolidated Balance Sheet, Balance Sheet, Consolidated Statement of Changes
+in Equity, Statement of Changes in Equity, Consolidated Statement of Cash Flows, and Notes to the
+Financial Statements, including a summary of significant accounting policies. The financial reporting
+framework that has been applied in their preparation is applicable law and United Kingdom
+Accounting Standards, including Financial Reporting Standard 102 'The Financial Reporting Standard
+applicable in the UK and Republic of Ireland' (United Kingdom Generally Accepted Accounting
+Practice).
+In our opinion the financial statements:
+« give a true and fair view of the state of the group's and the parent company's affairs as at 30 June
+2024 and of the group's loss for the year then ended;
++ have been properly prepared in accordance with United Kingdom Generally Accepted Accounting
+Practice; and
+* have been prepared in accordance with the requirements of the Companies Act 2006. TTT
+Basis for opinion
+We conducted our audit in accordance with international Standards on Auditing (UK) (ISAs (UK)) and
+applicable law. Our responsibilities under those standards are further described in the auditor
+responsibilities for the audit of the financial statements section of our report. We are independent of
+the group in accordance with the ethical requirements that are relevant to our audit of the financial
+statements in the UK, including the FRC’s Ethical Standard, and we have fulfilled our other ethical
+responsibilities in accordance with these requirements. We believe that the audit evidence we have
+; obtained is sufficient and appropriate to provide a basis for our opinion.
+Conclusions relating to going concern
+(In auditing the financial statements, we have concluded that the director's use of the going concern
+basis of accounting in the preparation of the financial statements is appropriate. .
+Based on the work we have performed, we have not identified any material uncertainties relating to
+events or conditions that, individually or collectively, may cast significant doubt on the group and
+parent company’s ability to continue as a going concern for a period of at least twelve months from
+when the original financial statements were authorised for issue.
+Our responsibilities and the responsibilities of the directors with respect to going concern are
+described in the relevant sections of this report.
+Other information : :
+The directors are responsible for the other information. The other information comprises the
+information included in the annual report, other than the financial statements and our auditor's report
+thereon. Our opinion on the financial statements does not cover the other information and, except to
+the extent otherwise explicitly stated in our report, we do not express any form of assurance
+conclusion thereon. ,
+Page 11 ,
+Bristol City Holdings Limited
+Independent Auditor's Report to the Members of Bristol City Holdings
+Limited
+In connection with our audit of the financial statements, our responsibility is to read the other
+information and, in doing so, consider whether the other information is materially inconsistent with the
+financial statements or our knowledge obtained in the audit or otherwise appears to be materially
+misstated. If we identify such material inconsistencies or apparent material misstatements, we are
+required to determine whether there is a material misstatement in the financial statements or a
+material misstatement of the other information. If, based on the work we have performed, we conclude
+that there is a material misstatement of this other information, we are required to report that fact.
+We have nothing to report in this regard.
+Opinion on other matter prescribed by the Companies Act 2006
+In our opinion, based on the work undertaken in the course of the audit:
+* the information given in the Strategic Report and Directors' Report for the financial year for which
+the financial statements are prepared is consistent with the financial statements; and
+* the Strategic Report and Directors' Report have been prepared in accordance with applicable legal
+requirements.
+; Matters on which we are required to report by exception
+In the fight of our knowledge and understanding of the company and its environment obtained in the
+course of the audit, we have not identified material misstatements in the Strategic Report and the
+Directors’ Report.
+We have nothing to report in respect of the following matters where the Companies Act 2006 requires .
+us to report to you if, in our opinion:
+* adequate accounting records have not been kept by the parent company, or returns adequate for
+our audit have not been received from branches not visited by us; or
+* the parent company financial statements are not in agreement with the accounting records and
+returns; or
+: * certain disclosures of directors’ remuneration specified by law are not made; or
+* we have not received all the information and explanations we require for our audit.
+Responsibilities of directors
+As explained more fully in the Statement of Directors' Responsibilities (set out on page 10), the
+directors are responsible for the preparation of the financial statements and for being satisfied that
+they give a true and fair view, and for such internal control as the directors determine is necessary to
+enable the preparation of financial statements that are free from material misstatement, whether due
+to fraud or error.
+In preparing the financial statements, the directors are responsible for assessing the group's and the
+parent company's ability to continue as a going concern, disclosing, as applicable, matters related to
+going concern and using the going concern basis of accounting unless the directors either intend to
+liquidate the group or the parent company or to cease operations, or have no realistic alternative but
+to do so.
+Page 12
+Bristol City Holdings Limited
+Independent Auditor's Report to the Members of Bristo! City Holdings
+Limited ;
+Auditor's responsibilities for the audit of the financial statements
+Our objectives are to obtain reasonable assurance about whether the financial statements as a whole
+are free from material misstatement, whether due to fraud or error, and to issue an auditor's report
+that includes our opinion. Reasonable assurance is a high level of assurance, but is not a guarantee
+that an audit conducted in accordance with ISAs (UK) will always detect a material misstatement
+when it exists. Misstatements can arise from fraud or error and are considered material if, individually
+or in the aggregate, they could reasonably be expected to influence the economic decisions of users
+taken on the basis of these financial statements.
+
+‘ Irregularities, including fraud, are instances of non-compliance with laws and regulations. We design
+
+procedures in line with our responsibilities, outlined above, to detect material misstatements in respect
+of irregularities, including fraud. The extent to which our procedures are capable of detecting
+irregularities, including fraud is detailed below:
+The key laws and regulations we identified were English Football League (EFL) Championship
+Profitability and Sustainability rules (P&S rules), Health & Safety legislation and Employment
+legislation.
+We also considered those laws and regulations that have a direct impact on the preparation of the
+financial statements, primarily Companies Act 2006 and Corporation Taxes Acts 2009 & 2010.
+We discussed with management how the compliance with these laws and regulations is monitored
+and discussed policies and procedures in place. We also identified the individuals who have
+responsibility for ensuring that the entity complies with laws and regulations and deal with reporting
+any issues if they arise. As part of our planning procedures, we assessed the risk of any
+non-compliance with laws and regulations on the entity's ability to continue trading and the risk of
+material misstatement to the financial statements.
+
+Based on this understanding we designed our audit procedures to identify non-compliance with such
+
+: laws and regulations. Our procedures involved the following:
+
+* Enquiries of management regarding their knowledge of any non-compliance with laws and
+regulations that could affect the financial statements, specifically including the key laws and -
+regulations noted above;
+
+, * Review of relevant correspondence, documentation and calculations in respect of EFL P&S rules;
+
+* Review of other relevant correspondence, reports and documentation, including health and safety :
+certificates;
+
+* Review of other relevant correspondence, reports and documentation;
+
++ Review of legal and professional costs to identify any possible non-compliance or legal costs in
+respect of non-compliance; and
+
+« Reviewed Board minutes.
+
+. As part of our enquiries we discussed with management whether there have been any known
+instances, allegations or suspicions of fraud, of which management confirmed there had been none
+during or after the period.
+
+Page 13
+Bristol City Holdings Limited - ;
+Independent Auditor's Report to the Members of Bristo! City Holdings
+Limited
+We also evaluated the risk of fraud through management override. The key risks we identified were
+the potential manipulation of earnings before interest tax and depreciation in order to maintain.
+continuing support from the ultimate owners, and also improve the group results reported in English
+Football League Profitability and Sustainability calculations by the immediate parent company. We
+determined that the principal risks were related to management override of controls and recognition of
+deferred income and related refunds.
+in response to the identified risk, as part of our audit work we:
++ Used data analytics to test journal entries throughout the year, for appropriateness;
++ Reviewed estimates and judgements made in the accounts for any indication of bias and
+challenged assumptions used by management in making the estimates
++ Undertook specific review of P&S calculations provided to the EFL;
++ Undertook testing on completeness of creditors; and
++ Undertook specific substantive and global reconciliation testing in respect of deferred income,
+income recognition and cut-off.
+Because of the inherent limitations of an audit, there is a risk that we will not detect all irregularities,
+including those leading to a material misstatement in the financial statements. This risk increases the
+further removed non-compliance with laws and regulations is from the events and transactions
+teflected in the financial statements as we are less likely to be come aware of instances of
+non-compliance. The risk of not detecting a material misstatement due to fraud is higher than the risk
+of not detecting one resulting from error, as fraud may involve deliberate concealment, collusion,
+omission or misrepresentation.
+A further description of our responsibilities is available on the Financial Reporting Council's website
+at: www.frc.org.uk/auditorsresponsibilities. This description forms part of our auditor's report.
+: Use of our report
+
+This report is made solely to the company's members, as a body, in accordance with Chapter 3 of :
+Part 16 of the Companies Act 2006. Our audit work has been undertaken so that we might state to the
+company’s members those matters we are required to state to them in an auditor's report and for no
+other purpose. To the fullest extent permitted by law, we do not accept or assume responsibility to
+anyone other than the company and the company’s members as a body, for our audit work, for this
+report, or for the opinions we have formed.
+Nicholas Farrant BA MSc FCA (Senior Statutory Auditor)
+PKF Francis Clark, Statutory Auditor
+Ground Floor
+Blackbrook Gate 1
+Blackbrook Business Park
+Taunton
+Somerset
+TA1 2PX
+
+Page 14
+Bristol City Holdings Limited
+Consolidated Profit and Loss Account
+Year Ended 30 June 2024
+1 July 2023 1 June 2022
+to 30 June to 30 June
+. 2024 2023
+Note £ £
+Turnover 3 42,362,475 36,558,487
+Other operating income 4 286,425 94,113
+Staff costs (34,929,074) (35,951,665)
+Depreciation and amortisation expense (6,519,397) (10,574,033)
+Other operating expenses (23,492,221) (18,807,778)
+Operating loss 5 (22,291,792) (28,680,876)
+Profit on disposal of players’ contracts ~ ~ 21,696 827 9,532,483
+Loss before interest and taxation (594,965) (19,148,393)
+Player trading* 18,477,564 2,557,610
+Other interest receivable and similar income 9 141,907 151,846
+Interest payable and similar charges 10 (2,838,217) (3,209,787)
+‘Share of profit of equity accounted investees 6,199 :
+Loss before tax (3,285,076) (22,206,334)
+: Taxation 11 : 68,417
+Loss for the year (3,285,076) __ (22,137,917)
+*Player trading comprises amortisation and impairment of players’ contracts and the profit on disposal of players’ contracts.
+The notes on pages 21 to 45 form an integral part of these financial statements.
+Page 15
+\
+Bristol City Holdings Limited ,
+Consolidated Balance Sheet
+30 June 2024
+30 June 2024 30 June 2023
+Note £ £
+Fixed assets
+Intangible assets 12 5,461,915 4,930,364
+Tangible assets . 13 55,281,837 57,422,737 .
+Investments 14 6,200 1
+60,749,952 62,353,102
+Current assets
+Stocks 15 139,806 146,274
+Debtors 16 21,728,256 12,588,020
+Cash at bank and in hand 17 1,604,207 1,787,900
+. 23,472,269 14,522,194
+Creditors: Amounts falling due within one year 19 (8,734,586) (12,457,832) :
+Net current assets 14,737,683 2,064,362
+Total assets less current liabilities : 75,487,635 64,417,464
+Creditors: Amounts falling due after more than one year 19 (93,205,577). (90,963,124)
+Deferred income (4,255,918) (5,143,124)
+Net liabilities (21,973,860) (31,688,784)
+Capital and reserves
+. Called up share capital 23 190,206,262 | 177,206,262
+Share premium reserve 9,969,543 9,969,543
+. Revaluation reserve 1,709,404 1,709,404
+Profit and loss account (223,859,069) _ (220,573,993)
+Shareholders’ funds (21,973,860) _(31,688,784)
+Approved and authorised by the Board on [9 Deceyste, 625 and signed on its behalf by:
+Director
+Company Registration Number: 01501663
+The notes on pages 21 to 45 form an integral part of these financial statements.
+Page 16 .
+Bristol City Holdings Limited
+Balance Sheet
+30 June 2024
+30 June 2024 30 June 2023
+
+: Note £ £
+Fixed assets
+Investments 14 - -
+Current assets
+Debtors 16 - 274,999
+Net assets : 274,999
+Capital and reserves
+Called up share capital 190,206,262 177,206,262
+Share premium reserve 9,969,543 9,969,543
+Profit and loss account (200,175,805) _ (186,900,806)
+Shareholders’ funds - 274,999
+The company has taken the exemption in section 408 of the Companies Act 2006 and has not
+presented its individudal profit and loss account. The company made a loss after tax for the financial
+year of £13,274,999 (2023 - loss of £22,500,000).
+Approved and authorised by the Board on econo Wh and signed on its behalf by:
+Director
+
+: Company Registration Number: 01501663
+The notes on pages 21 to 45 form an integral part of these financial statements.
+Page 17
+‘
+Bristol City Holdings Limited
+Consolidated Statement of Changes in Equity
+Year Ended 30 June 2024
+Share Revaluation Profit and
+Share capital premium reserve loss account Total equity
+£ £ £ £ £
+At 1 July 2023 177,206,262 9,969,543 1,709,404 (220,573,993) 31,688,784)
+Loss for the year - - - (3,285,076) (3,285,076)
+Total comprehensive income - - - (3,285,076) (3,285,076)
+New share capital subscribed 13,000,000 = - - 13,000,000
+At 30 June 2024 190,206,262 9,969,543 1,709,404 (223,859,069 (21,973,860)
+Share Revaluation Profit and
+Share capital premium reserve loss account Total equity
+£ £ £ £ £
+At 1 June 2022 154,706,262 9,969,543 1,709,404 (198,436,076) (32,050,867)
+Loss for the year : = : (22,137,917) (22,137,917)
+Total comprehensive income - - - (22,137,917) (22,137,917)
+New share capital subscribed 22,500,000 : : - 22,500,000
+At 30 June 2023 177,206,262 9,969,543 1,709,404 (220,573,993 (31,688,784)
+7 : The notes on pages 21 to 45 form 7 integral part of these financial statements.
+age 18
+Bristol City Holdings Limited
+Statement of Changes in Equity
+Year Ended 30 June 2024
+Profit and
+Share Share loss
+capital premium account Total
+£ £ £ £
+At 4 July 2023 177,206,262 9,969,543 (186,900,806) 274,999
+Loss for the year - - (13,274,999) (13,274,999)
+New share capital subscribed 13,000,000 - - 13,000,000
+At 30 June 2024 190,206,262 9,969,543 (200,175,805) -
+Profit and
+Share Share loss :
+capital premium account Total
+£ £ £ £
+At 1 June 2022 154,706,262 9,969,543 (164,400,806) 274,999
+Loss for the year - - (22,500,000) (22,500,000)
+New share capital subscribed 22,500,000 - - 22,500,000
+At 30 June 2023 177,206,262 9,969,543 (186,900,806) 274,999
+. The notes on pages 21 to 45 form an integral part of these financial statements.
+Page 19
+Bristol City Holdings Limited
+Consolidated Statement of Cash Flows
+Year Ended 30 June 2024
+1 July 2023 1 June 2022
+to 30 June to 30 June
+2024 2023
+Note £ £
+Cash flows from operating activities
+Loss for the year (3,285,076) (22,137,917)
+Adjustments to cash flows from non-cash items
+Depreciation and amortisation 5 6,519,397 10,574,033
+Profit on disposal of player contracts (21,696,827) (9,532,483)
+Loss on disposal of tangible assets - 476,919
+Finance income 9 (141,907) (151,846)
+Finance costs 10 2,838,217 3,209,787
+Share of profit/loss of equity accounted investees {6,199) -
+Tax credit te 68,417
+(15,772,395) (17,629,924)
+Working capital adjustments .
+Decrease in stocks 15 6,468 28,795
+Decrease in debtors 16 770,097 4,067
+Increase/(decrease) in creditors 19 804,104 (1,408,423) .
+(Decrease)/increase in deferred income (887,206) 1,568,661
+Net cash flow from operating activities (15,078,932) (17,436,824)
+Cash flows from investing activities
+Interest received - 2,843
+Acquisitions of tangible assets (1,399,005) (1,483,363)
+Acquisition of intangible assets 12 (4,580,015) (4,446,574)
+Proceeds from sale of intangible assets 11,890,084 4,948,359
+Net cash flows from investing activities 5,911,064 (978,735)
+Cash flows from financing activities
+Interest paid 10 (608,315) (2,242,739)
+Proceeds from other borrowing draw downs subsequently :
+converted to equity shares 13,000,000 22,500,000
+Proceeds from other borrowing draw downs 1,570,000 300,000
+Repayment of other borrowing (4,841,466) (3,061,454)
+Payments to finance lease creditors (40,508) (41,877)
+Net cash flows from financing activities 9,079,711 17,453,930
+Net decrease in cash and cash equivalents (88,157) (961,629)
+Cash and cash equivalents at 1 July (802,988) 158,641
+Cash and cash equivalents at 30 June 891,145 802,988
+The notes on pages 21 to 45 form an integral part of these financial statements.
+Page 20
+Bristol City Holdings Limited
+Notes to the Financial Statements
+Year Ended 30 June 2024
+1 General information
+The company is a private company limited by share capital, incorporated in England & Wales.
+The address of its registered office is:
+Ashton Gate Stadium
+Ashton Road
+Bristol
+BS3 2EJ
+2 Accounting policies .
+Summary of significant accounting policies and key accounting estimates
+The principal accounting policies applied in the preparation of these financial statements are set out
+below. These policies have been consistently applied to all the years presented, unless otherwise
+stated.
+Statement of compliance
+These financial statements were prepared in accordance with Financial Reporting Standard 102 -
+‘The Financial Reporting Standard applicable in the UK and Republic of Ireland’, and the Companies
+Act 2006. There are no material departures from the requirements of FRS 102.
+Basis of preparation
+These financial statements have been prepared using the historical cost convention except that as
+disclosed in the accounting policies certain items are shown at fair value.
+Summary of disclosure exemptions
+The company meets the definition of a qualifying entity under FRS102 and has therefore taken
+advantage of the disclosure exemptions available to it in respect of its individual financial statements.
+Exemptions have been taken in relation to presentation of a statement of cash flows and key
+management personnel compensation. Equivalent information is presented in relation to these group
+accounts.
+Basis of consolidation
+The consolidated financial statements consolidate the financial statements of the company and its
+subsidiary undertakings drawn up to 30 June 2024. ,
+As a consolidated profit and loss account is published, a separate profit and loss account for the :
+parent company is omitted from the group financial statements by virtue of section 408 of the
+Companies Act 2006.
+Subsidiary undertakings are included using the acquisition method of accounting. Under this method
+the group profit and loss account and statement of cash flows include the results and the cash flows
+of subsidiaries from the date of acquisition and to the date of sale outside the group in the case of
+disposal of subsidiaries. The purchase consideration has been allocated to the assets and liabilities
+on the basis of fair value at the date of acquisition.
+
+Page 21
+Bristol City Holdings Limited
+
+Notes to the Financial Statements
+
+Year Ended 30 June 2024
+
+Going concern
+
+In accordance with their responsibilities, the directors have considered the appropriateness of the
+
+going concern basis for the preparation of the financial statements.
+
+The group has continued, as expected by the directors, to generate significant accounting losses in
+
+the year which has required the financial support of its parent, Pula Sport Limited. While the group
+
+continues to develop, it is dependent on this support to ensure it has adequate working capital to
+
+continue its operations. Pula Sport Limited is a company owned and controlled by Mr & Mrs S P
+
+Lansdown that invests in the group via debt and equity injections. Pula Sport Limited and in turn, Mr &
+
+Mrs S P Lansdown, have confirmed their long-term commitment to the company and the group which
+
+has been demonstrated through a further equity injection during the year of £13,000,000 (2023 -
+
+£22,500,000) and the provision of long term loan facilities to Bristol City Football Club Limited and
+
+Ashton Gate Limited as disclosed in note 20.
+
+In forming their opinion as to the going concern status, the directors have also considered the known
+
+and potential impacts of the cost-of-living crisis and other economic uncertainty on Bristol City
+
+Football Club Limited, the other sports users, entertainment, hospitality and business customers of the
+
+stadium.
+
+The directors, whilst acknowledging there can be no certainty as to the economic outlook for the
+
+company or its subsidiaries, are confident that, taking into account trading performance and the
+
+continued commitment from Pula Sport Limited, that the group will have sufficient working capital for
+: the foreseeable future, being not less than 12 months from the date of approval of these financial
+
+statements. Accordingly, the directors consider it appropriate to prepare these financial statements on
+
+a going concern basis.
+
+Page 22
+Bristol City Holdings Limited .
+
+Notes to the Financial Statements
+
+Year Ended 30 June 2024
+
+Key accounting judgements and sources of estimation uncertainty
+
+In the application of the group's accounting policies management is required to make judgements,
+
+estimates and assumptions about the carrying values of assets and liabilities that are not readily
+
+apparent from other sources. The estimates and underlying assumptions are based on historical :
+
+experience and other factors that are considered to be relevant. Actual results may differ from these
+
+estimates.
+
+The estimates and underlying assumptions are reviewed on an ongoing basis. Revisions to
+
+accounting estimates are recognised in the period in which the estimate is revised if the revision
+
+affects only that period, or in the period of the revision and future periods if the revision affects both
+
+current and future periods. .
+
+The key judgement which has a significant effect on the financial statements is in respect of going
+
+concern, as described in the accounting policy above.
+
+The key estimates that have a significant effect on the amounts recognised in the financial statements
+
+are described below:
+
+Land and buildings
+
+Properties (see note 13) are carried at cost, less accumulated depreciation and any subsequent
+
+accumulated impairment loss. This requires an estimation in the depreciation rates used as well as
+
+assessment of the the loss excluding player trading as to whether an indicator of permanent
+
+impairment has occurred. There is estimation in respect of the assumptions regarding future cash
+
+generation in respect of the player performance, attracting gate receipts and broadcasting revenue.
+
+The carrying amount is £52,270,320 (2023 - £53,77 1,840).
+
+Player contracts
+
+The costs associated with acquiring players’ registrations, or extending their contracts, is carried at
+
+cost, less accumulated amortisation and accumulated impairment losses (see note 12). The carrying
+
+value of players contracts is reviewed for impairment in light of post year end performance, injuries
+
+and the sales value achieved for any players sold to other clubs. This review requires significant
+
+estimation by management in respect of player performance and value in the player market. The
+
+carrying amount is £5,379,422 (2023 - £4,884,717).
+
+Intercompany debtor recoverability
+
+This requires estimation by management as to the recoverability of the debtor and the amount of any
+
+provision required against the debt at the year end (see note 16). The directors have considered
+
+recoverability with reference to regular settlement, overall going concern assessment of group and
+. ongoing interrelationship and trading between entities. The directors consider the balances fully .
+
+recoverable at the period end. The carrying amount is £2,882,234 (2023 - £3,074,425).
+
+Page 23
+Bristol City Holdings Limited
+Notes to the Financial Statements
+Year Ended 30 June 2024
+
+; Turnover
+Turnover comprises the fair value of the consideration received or receivable for the sale of goods
+and provision of services in the ordinary course of the group's activities. Turnover is shown net of
+value added tax, returns, rebates and discounts and after eliminating sales within the company.
+Income is recognised as follows:
+Income from matchday revenue, season tickets, broadcasting revenue and those elements of
+commercial income relating to matches, including recharge of stadium running costs to fellow Pula
+Sport Limited group companies, are recognised when the related matches are played. Income from
+advance ticket sales, including season tickets, is deferred accordingly;
+Event income is recognised when the relevant event takes place;
+Income from the Football League is recognised on a receivable basis;
+Income in respect of other commercial and retail income, including advertising and sponsorship, is
+recognised in the period to which it relates; and
+Income arising from administrative and other services provided to fellow Pula Sport Limited group
+companies is recognised when the service is rendered.
+Cup ticket revenue is shown net of the gate share payable to the away team, as the group acts as
+agent. The gate share payable in the current period amounted to £341,637 (2023 - £447,257).
+Government grants
+Government revenue grants are accounted for under the accruals method. These are credited to the
+profit and loss account when the company is entitled to the income.
+
+. Tax
+Tax is recognised in profit or loss, except that a charge attributable to an item of income or expense
+recognised as other comprehensive income is also recognised directly in other comprehensive
+income.
+
+. The current corporation tax charge is calculated on the basis of tax rates and laws that have been
+enacted or substantively enacted by the reporting date in the countries where the group operates and
+generates taxable income.
+
+The group receives/ passes some of its tax losses from/ to fellow Pula Sport Limited group companies
+via group relief. It makes/ receives payment for these losses at the average rate of tax for the financial
+period in which the losses are relieved.
+Deferred tax is recognised in respect of all timing differences that have originated but not reversed at
+the balance sheet date where transactions or events that result in an obligation to pay more tax in the
+future or a right to pay less tax in the future have occurred at the balance sheet date. Timing
+differences are differences between the group's taxable profits and its results as stated in the financial
+statements that arise from the inclusion of gains and losses in tax assessments in periods different
+from those in which they are recognised in the financial statements.
+Deferred tax is measured on an undiscounted basis at the tax rates that are expected to apply in the
+periods in which timing differences reverse, based on tax rates and laws enacted or substantively
+enacted at the balance sheet date.
+Deferred tax assets in respect of tax losses carried forward are not recognised as they do not meet
+the recognition criteria set out in FRS 102 given there is no certainty as to when the losses will be
+utilised.
+
+Page 24
+Bristol City Holdings Limited
+
+Notes to the Financial Statements
+
+Year Ended 30 June 2024
+
+UK Research and Development tax incentive regimes
+
+The group accounts for amounts claimed under the RDEC scheme as other income.
+
+Foreign currency transactions and balances
+
+Transactions in foreign currencies are initially recorded at the functional currency rate prevailing at the
+
+date of the transaction. Monetary assets and liabilities denominated in foreign currencies are
+
+retranslated into the respective functional currency of the entity at the rates prevailing on the reporting
+
+period date.
+
+Intangible assets
+
+Intangible assets are stated in the balance sheet at cost, less any subsequent accumulated
+
+amortisation and subsequent accumulated impairment losses.
+
+Players’ contracts and transfer fees
+
+The costs associated with acquiring players’ registrations, or extending their contracts, are capitalised
+
+as intangible assets and amortised, in equal instalments, over the period of the respective players’
+
+contracts. Where a contract is renegotiated prior to the expiry of its original term, the net book value at
+
+that time, and any new costs relating to the contract extension, are amortised over the remaining
+
+revised contract life.
+
+Under the conditions of certain transfer agreements or contract renegotiations, further fees will be
+
+payable in the event of the players concerned making a certain number of first-team appearances or
+
+on the occurrence of certain other specified future events. Liabilities in respect of these additional
+
+transfer fees are accounted for, as provisions, when it becomes probable that the number of
+
+appearances will be achieved or the specified future events will occur.
+
+Provision is made for any impairment and player registrations are written down when the carrying
+
+amount exceeds the amount recoverable through use or sale. .
+
+Profit on disposal of players’ contracts
+
+Profits or losses arising on the disposal of players’ contracts are credited or charged to the profit and
+
+loss account in the year in which the player is sold. They are calculated as the difference arising
+
+between the transfer fees received and the net book value of the contracts at the time of this disposal.
+. Goodwill
+
+Goodwill is amortised over its usefut life, which shall not exceed ten years if a reliable estimate of the
+
+useful life cannot be made. ,
+
+Amortisation : ;
+
+Amortisation is charged so as to write off the cost of assets over their estimated useful lives, as
+
+follows:
+
+Asset class Amortisation method and rate
+
+Players’ contracts Over the term of the contract
+
+Operating software Over 4 to 7 years straight line
+
+Goodwill Fully impaired
+
+Page 25
+Bristol City Holdings Limited
+
+Notes to the Financial Statements
+
+Year Ended 30 June 2024
+
+Tangible fixed assets
+
+Tangible assets are stated in the balance sheet at cost, less any subsequent accumulated
+
+depreciation and subsequent accumulated impairment losses.
+
+The cost of tangible assets includes directly attributable incremental costs incurred in their acquisition
+
+and installation.
+
+Assets under construction represents the development of the training ground. Depreciation is not
+
+charged on assets under construction. Upon formal completion of each stage of the development the
+
+cost of assets will be transferred to the freehold buildings category.
+
+Depreciation
+
+Depreciation is charged so as to write off the cost of assets, other than land and properties under
+
+construction, over their estimated useful lives, as follows:
+
+Asset class Depreciation method and rate
+
+Freehold buildings 20 - 50 years straight line
+
+Leasehold buildings Over the lease term
+
+Plant and machinery 2-7 years straight line
+
+Fixtures and fittings 3-10 years straight line
+
+Motor vehicles 4 years straight line
+
+Investments
+
+Investments in subsidiaries where fair value cannot be reliably measured are carried at cost less
+
+impairment.
+
+Stock
+
+Stock is vatued at the lower of cost and net realisable value, after due regard for obsolete and slow
+
+moving stocks. Net realisable value is based on selling price less anticipated selling costs.
+
+Leases
+
+Leases in which substantially all the risks and rewards of ownership are retained by the lessor are
+
+classified as operating leases. Payments made under operating leases are charged to profit or loss on
+: a straight-line basis over the period of the lease.
+
+Leases are classified as finance leases whenever the terms of the lease transfer substantially all the
+
+risks and rewards of ownership to the lessee. .
+
+Assets held under finance leases are recognised at the lower of their fair value at inception of the
+
+lease and the present value of the minimum lease payments. These assets are depreciated on a
+
+straight-line basis over the shorter of the useful life of the asset and the lease term. The
+
+corresponding liability to the lessor is included in the balance sheet as a finance lease obligation.
+
+Lease payments are apportioned between finance costs in the profit and loss account and reduction
+
+of the lease obligation so as to achieve a constant periodic rate of interest on the remaining balance
+
+of the liability.
+
+Page 26
+Bristol City Holdings Limited
+Notes to the Financial Statements
+Year Ended 30 June 2024
+Defined contribution pension obligation
+The group operates a defined contribution pension scheme to which is contributes for members. The
+group also contributes to some employees’ personal pension plans. Contributions are recognised in
+the profit and loss account in the period in which they become payable in accordance with the rules of
+the scheme.
+Financial instruments
+Classification
+The group holds the following financial instruments:
+* Short term trade and other debtors and creditors;
+* Short term intra-group debtors and creditors;
+* Debtors and creditors in relation to transfer fees;
++ Long term intra-group loans; and
+* Cash and bank balances.
+Recognition and measurement
+Financial instruments are recognised when the company becomes party to the contractual provisions
+of the instrument and derecognised when in the case of assets, the contractual rights to cash flows
+from the assets expire or substantially all the risks and rewards of ownership are transferred to
+another party, or in the case of liabilities, when the company’s obligations are discharged, expire or
+are cancelled.
+Basic financial assets comprise short term trade and other debtors and cash and bank balances,
+including short term loans. Basic financial liabilities comprise short term trade and other creditors.
+Such instruments are initially measured at transaction price, including transaction costs, and are
+subsequently carried at the undiscounted amount of the cash or other consideration expected to be
+paid or received, after taking account of impairment adjustments.
+Long term intra-group loan liabilities are initially measured at transaction price, including transaction
+costs, and are subsequently carried at amortised cost using the effective interest method.
+Long term debtors and creditors in relation to transfer fees constitute a financing transaction and are
+measured at the present value of the future payments discounted at a market rate of interest for a
+similar debt instrument at inception. As the discount unwinds it is charged/ credited to the Profit and
+Loss account.
+
+: Long term other borrowings are initially measuared at transaction price, including transactions costs,
+and are subsequently carried at amortised cost using the effective interest method.
+
+Page 27
+Bristol City Holdings Limited
+Notes to the Financial Statements
+Year Ended 30 June 2024
+3 Revenue
+The analysis of the group's revenue for the year, all of which arose in the UK, is as follows:
+1 July 2023 1 June 2022
+to 30 June to 30 June
+2024 2023
+£ £
+Sale of goods . 8,011,958 7,172,155
+Rendering of services 17,403,344 14,707,879
+Ticket sales 7,717,915 6,280,313
+Football League income 9,229,258 8,398,140
+42,362,475 36,558,487
+: The analysis of the group's turnover for the year by class of business is as follows:
+1 July 2023 1 June 2022
+to 30 June to 30 June
+2024 2023
+£ £
+Matchday revenue 3,768,073 2,883,176
+, Season ticket revenue 3,949,842 3,397,137
+Broadcasting revenue 506,050 511,390
+Football League pool 4,039,258 3,598,140
+Solidarity payment 5,190,000 4,800,000
+Other football related income 1,334,751 1,903,401
+Other commercial and retail income 23,574,501 19,465,243
+: __42,362,475 36,558,487
+4 Other operating income
+The analysis of the group's other operating income for the year is as follows:
+1 June
+, 1 July 2023 2022 to 30 ©
+to 30 June June
+2024 2023
+£ £
+Government grants 286,425 94,113
+income in respect of government grants relates to £286,425 (2023 - £94,113) for the Research and
+Development tax credit which is recognised as taxable income.
+Page 28
+Bristol City Holdings Limited
+Notes to the Financial Statements
+Year Ended 30 June 2024
+5 Operating loss —
+Arrived at after charging:
+1 July 2023 4 June 2022
+: to 30 June to 30 June
+2024 2023
+£ £
+Depreciation expense 3,179,961 3,589,294
+Amortisation expense 3,251,531 6,844,739
+Impairment loss 87,905 140,000
+Foreign exchange losses/(gains) 962 337
+Loss on disposal of property, plant and equipment : 476,919
+6 Staff costs
+The aggregate payroll costs (including directors’ remuneration) were as fotlows:
+1 June
+1 July 2023 2022 to 30
+to 30 June June
+2024 2023
+£ £
+Wages and salaries 31,381,119 32,011,224
+Social security costs 3,242,789 3,587,337
+Pension costs, defined contribution scheme 305,166 353,104
+34,929,074 35,951,665
+The average number of persons employed by the group {including directors) during the year,
+analysed by category was as follows:
+1 July 2023 1 June 2022
+to 30 June to 30 June
+2024 2023
+. No. . No.
+Stadium operations 322 322
+Football administration and support 169 162
+Food and beverage 435 423
+Stadium administration and sales 29 32
+Players 97 94
+1,052 1,023
+Page 29
+Bristol City Holdings Limited
+Notes to the Financial Statements
+Year Ended 30 June 2024
+7 Directors’ remuneration
+The remuneration of the directors of the company for the year paid by the group was as follows:
+1 June
+1 July 2023 2022 to 30
+to 30 June June
+2024 2023
+£ £
+Remuneration 248,430 220,122
+Contributions paid to money purchase pension schemes 10,602 9,298
+259,032 229,420
+During the year the number of directors who were receiving benefits was as follows:
+; . 1 June
+1 July 2023 2022 to 30
+to 30 June June
+2024 2023
+No. No.
+Accruing benefits under money purchase pension schemes 2. 2
+In respect of the highest paid director:
+~ 4 June
+1 July 2023 2022 to 30
+to 30 June June
+2024 2023
+£ £
+Remuneration 223,749 195,833
+Company contributions to money purchase pension schemes ___ 9,687 8,417
+8 Auditor's remuneration
+1 June
+: . 1 July 2023 2022 to 30
+to 30 June June
+2024 2023
+£ £
+Audit of these financial statements 1,850 1,750 .
+Audit of the financial statements of subsidiaries of the company
+. pursuant to legislation 38,200 33,000
+40,050 34,750
+Other fees to auditors
+Taxation compliance services 9,525 7,950
+All other assurance services 8,470 13,900
+17,995 21,850
+Page 30
+Bristol City Holdings Limited ;
+Notes to the Financial Statements
+Year Ended 30 June 2024
+9 Other interest receivable and similar income
+. 41 July 2023 1 June 2022
+to 30 June to 30 June
+2024 2023
+£ £
+Other finance income 141,907 151,846
+Certain agreements for the sale of players’ contracts include an element of deferred consideration.
+The deferred element of the consideration has, where a financial asset has been recognised, been
+discounted to its present value at the date of the contract, using a market rate of interest for a debt
+instrument of a similar amount and duration. Other finance income represents the unwinding of this
+discount to the period end.
+10 Interest payable and similar expenses
+: 1 June
+1 July 2023 2022 to 30
+to 30 June June
+2024 2023
+£ £
+Interest on bank overdrafts and borrowings 32,114 44,082
+Interest on obligations under finance leases and hire purchase
+contracts 873 - 4,032
+Interest expense on other finance liabilities 103,590 244,718
+Interest payable on loans from group undertakings 2,701,640 2,916,955
+2,838,217 3,209,787
+Certain agreements for the purchase of player's contracts include an element of deferred
+consideration. The deferred element of the consideration has, where a financial liability has been
+recognised, been discounted to its present value at the date of the contract, using a market rate of
+_ interest for a debt instrument of a similar amount and duration. Interest expense on other finance
+liabilities represents the unwinding of this discount to the period end.
+Page 31
+Bristol City Holdings Limited
+Notes to the Financial Statements ; ;
+Year Ended 30 June 2024
+11 Taxation
+Tax charged/(credited) in the income statement
+: 1 July 2023 1 June 2022
+to 30 June to 30 June
+2024 2023 :
+£ £
+Current taxation
+UK corporation tax 54,798 -
+R&D tax credit relating to prior periods (54,798) 151,334
+. Group relief payable/(receivable) - (219,751)
+. : (68,417)
+The tax on profit before tax for the year is higher than the standard rate of corporation tax in the UK
+(2023 - higher than the standard rate of corporation tax in the UK) of 25% (2023 - 20.38%).
+The differences are reconciled below:
+1 June
+1 July 2023 2022 to 30
+to 30 June June
+2024 2023
+£ £
+Loss before tax (3,285,076) 22,206,334)
+Corporation tax at standard rate (821,269) (4,525,651)
+Effect of revenues exempt from taxation (66,036) (15,411)
+Effect of expense not deductible for tax purposes 224,868 438,760
+Remeasurement of deferred tax - (910,221)
+(Decrease)/increase in UK current tax from adjustment for prior
+periods (56,952) 16,265
+Deferred tax not recognised on losses for the period 719,389 4,927,841
+Total tax credit . ; - 68,417 .
+Deferred tax
+Group : .
+There are £204,617,000 of unused tax losses (2023 - £203,338,000) for which no deferred tax asset
+is recognised in the balance sheet.
+Page 32
+Bristol City Holdings Limited
+Notes to the Financial Statements
+Year Ended 30 June 2024
+12 Intangible assets
+Group
+Players‘ :
+Goodwill contracts Software Total
+£ £ £ £
+Cost or valuation
+At 1 July 2023 44,137 14,957,922 328,643 15,330,702
+Additions - 3,713,968 69,114 3,783,082
+Disposals : (3,010,000) (84,516) _ (3,094,516)
+At 30 June 2024 44,137 45,661,890 313,241 16,019,268
+Amortisation
+At 1 July 2023 44,137 10,073,205 282,996 10,400,338
+Amortisation charge - 3,219,263 32,268 3,251,531
+Amortisation eliminated on .
+disposals . : (3,010,000) (84,516) (3,094,516)
+At 30 June 2024 . 44,137 10,282,468 230,748 10,557,353
+Carrying amount
+At 30 June 2024 - §,379,422 82,493 5,461,915
+At 30 June 2023 : 4,884,717 45,647 4,930,364
+Page 33 .
+Bristol City Holdings Limited
+Notes to the Financial Statements
+Year Ended 30 June 2024
+13 Tangible assets
+. Group
+Furniture,
+Land and fittings and Plant and
+buildings equipment equipment Total
+£ £ £ £
+Cost or valuation
+At 1 July 2023 68,082,036 8,005,889 6,356,121 82,444,046
+Additions 380,456 600,313 146,198 1,126,967
+Disposals - (317,678) (2,741) (320,389)
+At 30 June 2024 68,462,492 8,288,524 6,499,608 _ 83,250,624
+Depreciation
+At 1 July 2023 14,310,196 6,317,209 4,393,904 25,021,309
+Charge for the period 1,844,291 608,667 727,003 3,179,961
+Eliminated on disposal - (317,677) (2,711) (320,388)
+Impairment 37,685 8,772 41,448 87,905
+At 30 June 2024 16,192,172 6,616,971 5,159,644 _ 27,968,787
+Carrying amount
+At 30 June 2024 ‘ 52,270,320 1,671,553: 1,339,964 55,281,837
+At 30 June 2023 53,771,840 1,688,680 1,962,217 __57,422,737
+Page 34
+Bristol City Holdings Limited
+
+Notes to the Financial Statements
+
+Year Ended 30 June 2024
+
+Included within the net book value of land and buildings above is £52,270,320 (2023 - £53,771 ,840) in
+
+respect of freehold land and buildings. Included within land and buildings is freehold land with a cost
+
+of £1,303,876 (2023 - £1,303,876) which is not depreciated.
+
+14 Investments
+
+Company
+
+Subsidiaries €
+
+Cost or valuation
+
+At 1 July 2023 165,963,925
+
+Additions 13,000,000
+
+At 30 June 2024 178,963,925
+
+Provision
+
+At 1 July 2023 165,963,925
+
+Provision 413,000,000
+
+At 30 June 2024 178,963,925
+
+Carrying amount
+
+At 30 June 2024 :
+
+At 30 June 2023 -
+
+Group
+
+Associates £
+
+Cost
+
+At 1 July 2023 1
+
+Increase in share of associate 6,199
+
+At 30 June 2024 6,200
+
+Carrying amount
+
+At 30 June 2024 . 6,200
+
+At 30 June 2023 1
+Page 35
+Bristol City Holdings Limited
+Notes to the Financial Statements
+Year Ended 30 June 2024
+Details of the investments in which the company holds 20% or more of the nominal value of any class
+of share capital are as follows:
+Proportion of voting
+Undertaking Registered office Holding rights and shares held
+: 2024 2023
+
+Subsidiary undertakings
+Bristol City Football Ashton Gate Stadium Ordinary 100% 100%
+Club Limited* Ashton Road
+
+Bristol
+
+BS3 2EJ
+Ashton Gate Limited* Ashton Gate Stadium Ordinary 100% 100%
+
+Ashton Road
+
+Bristol .
+
+BS3 2EJ
+BCFC Limited* Ashton Gate Stadium Ordinary 100% 100%
+
+Ashton Road
+
+Bristol
+
+BS3 2EJ
+Bristol City Women Ashton Gate Stadium Ordinary 100% 100%
+Football Club Limited Ashton Road
+
+Bristol
+
+BS3 2EJ
+Associates
+BCFC Heritage and Robins High Performance Limited by 33.3% 33.3%
+Archives Limited Centre, Clevedon Road, Bristol, guarantee
+
+BS8 3TN
+* Indicates direct investment of the company
+
+Page 36
+Bristol City Holdings Limited
+Notes to the Financial Statements
+Year Ended 30 June 2024
+Subsidiary undertakings :
+Bristol City Football Club Limited
+The principal activity of Bristol City Football Club Limited is that of running a professional football club.
+Ashton Gate Limited
+The principal activity of Ashton Gate Limited is stadium facilities and stadium management.
+BCFC Limited .
+The principal activity of BCFC Limited is that of a dormant company.
+Bristol City Women Football Club Limited
+The principal activity of Bristol City Women Football Club Limited is the running of a professional
+football club.
+Associate undertakings ,
+BCFC Heritage and Archives Limited
+The principal activity of BCFC Heritage and Archives Limited is that of archive activities. The company
+is limited by guarantee .
+Page 37
+Bristol City Holdings Limited
+Notes to the Financial Statements
+Year Ended 30 June 2024
+15 Stocks
+Group Company
+30 June 2024 30 June 2023 30 June 2024 «= 30 June 2023
+£ £ £ £
+Stock of consumables 139,806 146,274 - -
+16 Debtors :
+Group Company
+30 June 30 June 30 June 30 June
+2024 2023 2024 2023
+£ £ £ £
+Trade debtors 473,331 989,485 - -
+Amounts due from group
+undertakings 2,882,234 3,074,425 - 274,999
+Other debtors 426,490 810,362 - :
+Transfer fees receivable 15,909,772 §,999,439 - -
+Prepayments 1,802,525 1,599,307 - -
+Accrued income 233,904 415,002 : -
+21,728,256 12,588,020 - 274,999
+Details of impairment tosses :
+Group
+An impairment loss of £23,876 (2023 - £8,170) has been recognised against debtors owed to the
+company during the year.
+Company
+An impairment loss of £274,999 (2023 - £nil) has been recognised against debtors owed to the
+company during the year.
+Details of non-current trade and other debtors :
+Group : ,
+£7,676,494 (2023 - £2,755,841) of amounts receivable in respect of transfer fees is classified as non
+current.
+Page 38
+Bristol City Holdings Limited
+Notes to the Financial Statements
+Year Ended 30 June 2024 .
+17 Cash and cash equivalents
+Group Company
+30 June 2024 30 June 2023 30June 2024 30 June 2023
+£ £ £ £
+Cash on hand 3,000 3,000 - -
+Cash at bank 1,601,207 1,784,900 + -
+1,604,207 1,787,900 - -
+; Bank overdrafts (2,495,352) (2,590,888) : -
+Cash and cash equivalents in
+statement of cash flows 891,145 802,988 - -
+18 Analysis of net debt
+At 1 July Non cash At 30 June
+2023 Cash flow movements 2024
+£ £ £ £
+Cash at bank and on hand 4,787,900 (183,693) - 4,604,207
+Bank overdrafts (2,590,888) 95,536 - __(2,495,352)
+: Cash and cash equivalents (802,988) (88,157) . (891,145)
+Hire purchase contracts (63,718) 40,508 . (23,210)
+Other loans (93,300,505) 3,271,466 __ (2,158,235) _ (92,187,274) ,
+Net debt (94,167,211) 3,223,817 (2,158,235) _(93,101,629)
+: Page 39
+Bristol City Holdings Limited
+Notes to the Financial Statements
+Year Ended 30 June 2024
+19 Creditors
+Group Company
+30 June 30 June 30 June 30 June
+2024 2023 2024 2023
+Note £ £ £ £
+. Due within one year
+Loans and borrowings 20 2,518,562 5,602,866 - -
+Trade creditors 2,021,155 1,525,533 : -
+Amounts due to group
+undertakings 488,012 1,226,790 : -
+Social security and other taxes 1,145,457 1,262,464 : -
+Outstanding defined contribution
+pension costs 8,603 9,735 - -
+Other creditors 474,255 253,691 - :
+Transfer fees payable 365,337 1,427,787 - -
+Accrued expenses 173,205) _ 4,148,966 0
+8,734,586 12,457,832 : :
+. Due after one year
+Loans and borrowings 20 92,187,274 90,352,245 - -
+Transfer fees payable 1,018,303 610,879 : :
+23.205,577 90,963,124 ———
+20 Loans and borrowings
+Group Company
+30 June 2024 30 June 2023 30 June 2024 30 June 2023
+£ £ £ £
+Due within one year
+Bank overdrafts 2,495,352 2,590,888 - - .
+Hire purchase contracts 23,210 40,510 - - -
+. Other borrowings -- 2,971,468 - - :
+2.518.562, __ 5,602,866)
+, Group Company
+30 June 2024 + 30June 2023 30 June 2024 30 June 2023
+£ £ £ £
+Due after one year
+Hire purchase contracts - 23,208 - -
+Other borrowings 92,187,274 90,329,037 - :
+92,187,274 90,352,245 : -
+Page 40
+- o
+Bristol City Holdings Limited
+Notes to the Financial Statements
+Year Ended 30 June 2024
+Group
+Bank borrowings
+The bank overdraft is denominated in sterling with a nominal interest rate of 1.75% plus base rate,
+and is repayable on demand. The carrying amount at year end is £2,495,352 (2023 - £2,590,888).
+The bank overdraft is secured by limited guarantees given by S P Lansdown.
+Other borrowings
+Hire purchase lease liabilities are denominated in sterling with a nominal interest rate of 4-6%, and the
+final instalment of the liabilities in existence at the balance sheet date is due on 31 January 2025. The
+carrying amount at the year end is £23,210 (2023 - £63,718).
+The first ‘other borrowings' loan has been provided by Pula Sport Limited and is denominated in
+sterling with a nominal interest rate of 3%. There is no fixed repayment date. The loan is secured by a
+fixed charge over the stadium together with fixed charges over the plant and machinery, securities,
+debts, goodwill and insurances held by the company and a floating charge over the undertaking and
+assets of the company. The carrying amount as at 30 June 2024 is £74,510,813 (2023 -
+£72,652,576).
+The second ‘other borrowings’ loan has been provided by Pula Sport Limited and is denominated in
+sterling with a nominal interest rate of 3%. There is no fixed repayment date. The loan is secured by a
+floating charge over the undertakings and assets of the company. The loan had a carrying value as at
+30 June 2024 of £17,676,461 (2023 - £17,676,461).
+The third ‘other borrowings’ is an interest free loan of £584,000 from the English Football League
+denominated in sterling. The loan is repayable in six instalments every six months beginning on 1
+October 2021. The first five instalments being of £97,300 and a final instalment of £97,500. The fina!
+instalment was paid on 1 April 2024. This loan, presented in accordance with FRS 102, was
+measured at the present value of the future payments discounted at a market rate of interest, had a
+carrying value as at 30 June 2024 of £Nil (2023 - £194,800), with the unwinding of the discount being
+charged to the profit and loss account as an interest expense.
+The fourth ‘other borrowings’ is an interest free loan of £8,330,000 from the English Football League
+denominated in sterling. The loan is repayable in six instalments of £1,388,333 every six months
+beginning on 15 August 2021. The final instalment was paid on 15 January 2024. This loan,
+presented in accordance with FRS 102, was measured at the present value of the future payments
+discounted at a market rate of interest, had a carrying value as at 30 June 2024 of ENil (2023 -
+£2,766,668), with the unwinding of the discount being charged to the profit and loss account as an
+interest expense.
+
+Page 41
+Bristol City Holdings Limited
+Notes to the Financial Statements
+Year Ended 30 June 2024
+21 Obligations under leases :
+Group
+Operating leases
+The total of future minimum lease payments is as follows:
+30 June 30 June
+2024 2023
+£ £
+Not later than one year 72,774 45,025
+Later than one year and not later than five years 55,004 45,284
+, 127,778 90,309
+The amount of non-cancellable operating lease payments recognised as an expense during the year
+was £63,393 (2023 - £31,190).
+22 Pension schemes
+The group operates a defined contribution pension scheme and contributes to certain employees'
+personal pension plans. The pension cost charge for the year represents total contributions payable
+and amounted to £305,166 (2023 - £353,104). Contributions totalling £91,776 (2023 - £69,991) were
+payable to the scheme at the period end and were included in creditors.
+23 Share capital
+Allotted, called up and fully paid shares
+30 June 30 June
+2024 2023
+No. £ No. £
+Ordinary shares of £1 each 190,206,262 190,206,262 177,206,262 177,206,262
+New shares allotted
+During the year 13,000,000 ordinary shares having an aggregate nominal value of £1 were allotted
+for an aggregate consideration of £13,000,000. The allotment was undertaken by way of debt to
+equity swap.
+Rights, preferences and restrictions
+Ordinary shares have the right to one vote per share held at general meetings.
+Page 42
+Bristol City Holdings Limited
+Notes to the Financial Statements
+Year Ended 30 June 2024
+24 Commitments
+Group
+Capital commitments
+The total amount contracted for but not provided in the financial statements in respect of the new pitch ;
+at Ashton Gate stadium was E£Nil (2023 - £359,984).
+25 Related party transactions
+Group
+Key management compensation
+30 June 30 June
+2024 2023
+£ £
+Key management compensation 2,386,385 2,024,920
+Summary of transactions with parent
+Immediate parent company .
+During the period, the immediate parent company provided funding to the group of £13,000,000 (2023
+- £22,500,000), of which £13,000,000 (2023 - £22,500,000) was converted to equity. During the
+period, the group recharged costs of £726,139 (2023 - £488,735) to the immediate parent company.
+At the balance sheet date, the amount due within one year to the immediate parent company was
+£423,023 (2023 - £1,009,633). This funding was advanced interest free and was repayable on
+demand. :
+In the prior period the group received a loan facility of £17,000,000 from the immediate parent ©
+company. During the period the group was charged interest of £531,742 (2023 - £584,312) and paid
+interest of £575,328 (2023 - £265,409). At the balance sheet date the amount due to the immediate
+parent company was £17,676,641 (2023 - £17,676,641). Note 20 details the terms of the long-term
+loan arrangement and its carrying value in these financial statements.
+In a prior period, the group received a long-term loan of £70,000,000 from the immediate parent
+. company. During the period, the group drew down £nil (2023 - £nil), was charged interest of .
+£2,158,233 (2023 - £2,332,643), and paid interest of £nil (2023 - £1,977,330). At the balance sheet
+date the amount due to the immediate parent company was £74,510,813 (2023 - £72,352,576). Note
+20 details the terms of the long-term loan arrangement and its carrying value in these financial
+statements.
+During the period, the group drew down short term loans of £1,570,000 (2023 - £300,000) from the
+immediate parent company, was charged and paid interest of £17,885 (2023 - £nil). Repayments of
+£1,887,880 were made during the period. At the balance sheet date the amount due to the immediate
+parent company was £nil (2023 - £300,000).
+Page 43
+Bristo! City Holdings Limited
+Notes to the Financial Statements
+Year Ended 30 June 2024
+: Summary of transactions with other related parties
+Non-wholly owned fellow subsidiaries of the wider group
+During the year, the group recognised sales in respect of income collected on its behaif by wider
+group companies in respect of ticket sales, online merchandise sales, corporate hospitality and car
+parking. The group recharged expenditure and was recharged expenditure by the wider group. The
+group also made purchases in respect of merchandise, management charges and other costs from
+the wider group. The group recognised receivables in respect of payment for group relief from its
+fellow subsidiaries.
+Income and receivables from related parties
+Other related
+. : parties
+2024 £
+Expenditure recharged to related parties 14,672,538
+Sales to related parties 1,182,708
+Group relief payments receivable from related parties 56,607
+, 15,911,853
+Amounts receivable from related parties 2,238,973
+Other related
+: parties
+2023 £
+Expenditure recharged to related parties 16,150,840
+. Sales to related parties 713,988
+Group relief payments receivable from related parties 84,350
+16,949,178
+Amounts receivable from related parties 2,970,041
+Expenditure with and payables to related parties :
+Other related
+parties
+, 2024 , £ :
+Purchases from related parties 3,245,900
+Amounts payable to related parties 506,462
+Page 44
+a Me
+
+Bristol City Holdings Limited
+Notes to the Financial Statements
+Year Ended 30 June 2024
+
+"Other related
+
+parties
+2023 £
+Purchases from related parties . 3,785,148
+: 3,785,148 |
+Amounts payable to related parties 83,942 :
+26 Parent and ultimate parent undertaking
+The company's immediate parent is Pula Sport Limited, incorporated in Guernsey.
+The ultimate parent is Pula Limited, incorporated in Guemsey.
+The ultimate controlling parties are Mr & Mrs S P Lansdown, by virtue of their majority shareholding in
+the ultimate parent company.
+Page 45
 

@@ -2,7 +2,7 @@ source: Companies House filing, bristol-rovers-fc__2.pdf
 document: dnRKC8aQzrZECpjHCxRjTtqySnkexuJzBVtjFy9cqO0
 made_up_date: 2024-06-30
 method: ocr
-pages_read: 12 of 19
+pages_read: 19 of 19
 
 Docusign Envelope ID: 56EC9297-A472-46EE-9B6B-26758BAB86EA
 Company registration number 00051828 (England and Wales)
@@ -352,4 +352,288 @@ Mr H. Al-Saeed
 Director
 Company registration number 00051828 (England and Wales)
 -9-
+Docusign Envelope ID: 56EC9297-A472-46EE-9B6B-26758BAB86EA
+BRISTOL ROVERS FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+
+1 Accounting policies
+Company information
+Bristol Rovers Football Club Limited is a private company limited by shares incorporated in England and Wales. ‘The
+registered office is The Memorial Stadium, Filton Avenue, Horfield, BRISTOL, BS7 OBF.
+
+1.1 Accounting convention ,
+These financial statements have been prepared in accordance with FRS 102 “The Financial Reporting Standard
+applicable in the UK and Republic of Ireland” (“FRS 102”) and the requirements of the Companies Act 2006 as applicable
+to companies subject to the small companies regime. The disclosure requirements of section 1A of FRS 102 have been
+applied other than where additional disclosure is required to show a true and fair view.
+The financial statements are prepared in sterling, which is the functional currency of the company. Monetary amounts
+in these financial statements are rounded to the nearest £. ,
+The financial statements have been prepared under the historical cost convention. The principal accounting policies
+adopted are set out below.
+
+1.2 Going concern :
+The balance sheet discloses net liabilities of £6,461,952 (2023: £7,413,896). Not withstanding the net liabilities within
+the accounts, the financial statements have been prepared on the going concern basis which assumes the company will
+continue in operational existence for the foreseeable future. The company relies on the continued support of Mr
+Hussain AlSaeed for its day to day funding and funds its working capital requirements through a facility provided by
+Dwane Sports Limited, a company owned by Mr Hussain AlSaeed, that is repayable only at such time as the club is ina
+position to repay the outstanding loans.
+Mr Hussain AlSaeed has confirmed his intention to maintain support for a period of at least twelve months from the
+signing of these accounts.
+On the basis above the directors consider it appropriate to prepare the financial statements on a going concern.
+
+1.3. Turnover
+Turnover is the total amount receivable by the company for goods supplied and services provided, excluding VAT and
+trade discounts. Gate, season tickets and other match day revenue is recognised over the period of the football season
+as matches are played. Sponsorship and similar commercial income is recognised over the duration of the respective
+contracts. The fixed element of the broadcasting revenues is recognised over the duration of the football season, whilst
+facility fees for live coverage or highlights are taken when earned. Payments received from the Football League are
+recognised over the periad of the football season to which payments relate.
+
+1.4 Intangible fixed assets other than goodwill
+Intangible assets acquired represent the initial cost of player contract payments.
+Amortisation is recognised so as to write off the cost or valuation of assets less their residual values over their useful
+lives on the following bases:
+Player contracts Life on initial contract
+
+1.5 Tangible fixed assets
+Tangible fixed assets are initially measured at cost and subsequently measured at cost or valuation, net of depreciation
+and any impairment losses.
+
+-10-
+Docusign Envelope ID: 56EC9297-A472-46EE-9B6B-26758BAB86EA
+BRISTOL ROVERS FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+
+1 Accounting policies (Continued)
+Depreciation is recognised so as to write off the cost or valuation of assets less their residual values over their useful
+lives on the following bases:
+Freehold land and buildings 50 years straight line over useful life of buildings
+Leasehold improvements Between 5-33% on a straight line basis
+Plant and equipment Between 5-33% on a straight line basis
+Fixtures and fittings 20 years straight line basis
+Motor vehicles 25 years straight line basis
+The gain or loss arising on the disposal of an asset is determined as the difference between the sale proceeds and the
+carrying value of the asset, and is credited or charged to profit or loss.
+
+1.6 Impairment of fixed assets
+At each reporting period end date, the company reviews the carrying amounts of its tangible and intangible assets to
+determine whether there is any indication that those assets have suffered an impairment loss. If any such indication
+exists, the recoverable amount of the asset is estimated in order to determine the extent of the impairment loss (if any).
+Where it is not possible to estimate the recoverable amount of an individual asset, the company estimates the
+recoverable amount of the cash-generating unit to which the asset belongs.
+Recoverable amount is the higher of fair value less costs to sell and value in use. In assessing value in use, the estimated
+future cash flows are discounted to their present value using a pre-tax discount rate that reflects current market
+assessments of the time value of money and the risks specific to the asset for which the estimates of future cash flows
+have not been adjusted.
+if the recoverable amount of an asset (or cash-generating unit) is estimated to be less than its carrying amount, the
+carrying amount of the asset (or cash-generating unit) is reduced to its recoverable amount. An impairment loss is
+recognised immediately in profit or loss, unless the relevant asset is carried at a revalued amount, in which case the
+impairment loss is treated as a revaluation decrease.
+Recognised impairment losses are reversed if, and only if, the reasons for the impairment loss have ceased to apply.
+Where an impairment loss subsequently reverses, the carrying amount of the asset (or cash-generating unit) is
+increased to the revised estimate of its recoverable amount, but so that the increased carrying amount does not exceed
+the carrying amount that would have been determined had no impairment loss been recognised for the asset (or cash-
+generating unit) in prior years. A reversal of an impairment loss is recognised immediately in profit or loss, unless the
+relevant asset is carried at a revalued amount, in which case the reversal of the impairment loss is treated as a
+revaluation increase.
+
+1.7 Stocks
+Stocks are stated at the lower of cost and estimated selling price less costs to complete and sell. Cost comprises direct
+materials and, where applicable, direct labour casts and those overheads that have been incurred in bringing the stocks
+to their present location and condition.
+Stocks held for distribution at no or nominal consideration are measured at the lower of cost and replacement cost,
+adjusted where applicable for any loss of service potential.
+At each reporting date, an assessment is made for impairment. Any excess of the carrying amount of stocks over its
+estimated selling price less costs to complete and sell is recognised as an impairment loss in profit or loss. Reversals of
+impairment losses are also recognised in profit or loss.
+
+-li-
+Docusign Envelope ID: 56EC9297-A472-46EE-9B6B-26758BAB86EA
+BRISTOL ROVERS FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+: FOR THE YEAR ENDED 30 JUNE 2024
+
+1 Accounting policies (Continued)
+
+1.8 Cash and cash equivalents
+Cash and cash equivalents are basic financial assets and include cash in hand, deposits held at call with banks, other
+short-term liquid investments with original maturities of three months or less, and bank overdrafts. Bank overdrafts are
+shown within borrowings in current liabilities.
+
+1.9 Financial instruments
+The company has elected to apply the provisions of Section 11 ‘Basic Financial Instruments’ and Section 12 ‘Other
+Financial Instruments Issues’ of FRS 102 to all of its financial instruments.
+Financial instruments are recognised in the company's balance sheet when the company becomes party to the
+contractual provisions of the instrument.
+Financial assets and liabilities are offset, with the net amounts presented in the financial statements, when there is a
+legally enforceable right to set off the recognised amounts and there is an intention to settle on a net basis or to realise
+the asset and settle the liability simultaneously.
+Basic financial assets
+Basic financial assets, which include debtors and cash and bank balances, are initially measured at transaction price
+including transaction costs and are subsequently carried at amortised cost using the effective interest method unless
+the arrangement constitutes a financing transaction, where the transaction is measured at the present value of the
+future receipts discounted at a market rate of interest. Financial assets classified as receivable within one year are not
+amortised.
+Classification of financial liabilities
+Financial liabilities and equity instruments are classified according to the substance of the contractual arrangements
+entered into. An equity instrument is any contract that evidences a residual interest in the assets of the company after
+deducting all of its liabilities.
+Basic financial liabilities
+Basic financial liabilities, including creditors, bank loans, loans from fellow group companies and preference shares that
+are classified as debt, are initially recognised at transaction price unless the arrangement constitutes a financing
+transaction, where the debt instrument is measured at the present value of the future payments discounted at a market
+rate of interest. Financial liabilities classified as payable within one year are not amortised.
+Debt instruments are subsequently carried at amortised cost, using the effective interest rate method.
+Trade creditors are obligations to pay for goods or services that have been acquired in the ordinary course of business
+from suppliers. Amounts payable are classified as current liabilities if payment is due within one year or less. If not, they
+are presented as non-current liabilities. Trade creditors are recognised initially at transaction price and subsequently
+measured at amortised cost using the effective interest method.
+
+1.10 Equity instruments .
+Equity instruments issued by the company are recorded at the proceeds received, net of transaction costs. Dividends
+payable on equity instruments are recognised as liabilities once they are no longer at the discretion of the company.
+
+-12-
+‘
+Docusign Envelope ID: 56EC9297-A472-46EE-9B6B-26758BABB6EA
+: BRISTOL ROVERS FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+1 Accounting policies (Continued)
+1.11 Employee benefits
+The costs of short-term employee benefits are recognised as a liability and an expense, unless those costs are required
+to be recognised as part of the cost of stock or fixed assets.
+The cost of any unused holiday entitlement is recognised in the period in which the employee's services are received.
+Termination benefits are recognised immediately as an expense when the company is demonstrably committed to
+terminate the employment of an employee or to provide termination benefits.
+1.12 Retirement benefits
+Payments to defined contribution retirement benefit schemes are charged as an expense as they fall due.
+1.13 Leases
+Leases are classified as finance leases whenever the terms of the lease transfer substantially all the risks and rewards of
+ownership to the lessees. All other leases are classified as operating leases.
+Assets held under finance leases are recognised as assets at the lower of the assets fair value at the date of inception
+and the present value of the minimum lease payments. The related liability is included in the balance sheet as a finance
+lease obligation. Lease payments are treated as consisting of capital and interest elements. The interest is charged to
+profit or loss so as to produce a constant periodic rate of interest on the remaining balance of the liability.
+Rentals payable under operating leases, including any lease incentives received, are charged to profit or loss on a
+straight line basis over the term of the relevant lease except where another more systematic basis is more
+representative of the time pattern in which economic benefits from the leases asset are consumed.
+1.14 Government grants
+Government grants are recognised at the fair value of the asset received or receivable when there is reasonable
+assurance that the grant conditions will be met and the grants will be received.
+A grant that specifies performance conditions is recognised in income when the performance conditions are met.
+Where a grant does not specify performance conditions it is recognised in income when the proceeds are received or
+receivable. A grant received before the recognition criteria are satisfied is recognised as a liability.
+The Covid-19 Small Business Grant received was recognised as income in full at the time of receipt, and payments
+received in relation to the Coronavirus Job Retention Scheme have been recognised as income in the months to which
+they relate.
+2 Employees
+The average monthly number of persons (including directors) employed by the company during the year was:
+2024 2023
+Number Number
+Total 237 249
+-13- .
+Docusign Envelope ID: 56EC9297-A472-46EE-9B68-26758BAB86EA
+BRISTOL ROVERS FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+3 Intangible fixed assets
+Player
+contracts
+£
+Cost
+At 1 July 2023 430,000
+Additions 980,000
+Disposals (130,000)
+At 30 June 2024 1,280,000
+Amortisation and impairment
+At 1 July 2023 190,000
+Amortisation charged for the year 272,083
+Disposals (113,333)
+At 30 June 2024 . 348,750
+Carrying amount
+At 30 June 2024 931,250
+At 30 June 2023 240,000
+Amortisation was previously reflected within Administrative expenses within the profit and loss however this year the
+cost has been moved to Cost of Sales for both the current and prior year to better reflect the associated costs of the
+player contracts.
+4 Tangible fixed assets
+Freehold fand Leasehold Plant and Fixtures and Motor vehicles Total
+and buildings improvements equipment fittings
+£ £ £ £ £ £
+Cost
+At 1 July 2023 2,319,436 1,319,120 458,881 223,783 73,541 4,394,761
+Additions - 631,934 . 169,777 - 24,728 826,439
+At 30 June 2024 2,319,436 1,951,054 628,658 223,783 98,269 5,221,200
+Depreciation and impairment
+At 1 July 2023 46,391 1,201,537 413,377 3,284 7,355 1,671,944
+Depreciation charged in the
+year 46,389 134,352 67,479 11,189 23,363 282,772
+At 30 June 2024 92,780 1,335,889 480,856 14,473 30,718 1,954,716
+Carrying amount
+: At 30 June 2024 2,226,656 615,165 147,802 209,310 67,551 3,266,484
+At 30 June 2023 2,273,045 117,583 45,504 220,499 66,186 2,722,817
+-14-
+p
+Docusign Envelope ID: 56EC9297-A472-46EE-9B6B-26758BAB86EA, .
+BRISTOL ROVERS FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+4 Tangible fixed assets (Continued)
+in October 2022 the company sold assets within fixtures & fittings. On the same day the company entered into a lease
+back arrangement with monthly repayments of of £3,679 plus interest.
+The company has retained the option to repurchase the assets from the existing owners, at the end of the term in
+October 2027.
+5 Debtors
+2024 2023
+Amounts falling due within one year: £ £
+Trade debtors 804,777 276,233
+Other debtors 895,662 516,868
+1,700,438 793,101
+6 Creditors: amounts falling due within one year
+2024 2023
+£ £
+Bank loans 466,668 466,667
+Trade creditors 2,420,602 2,018,170
+Amounts owed to group undertakings 7,325,793 6,165,385
+Taxation and social security 260,247 180,078
+Other creditors 1,588,576 1,620,535
+12,061,886 10,450,835
+The bank loans of £466,668 (2023: £466,667) are secured by fixed and floating charges over the companies assets.
+7 Creditors: amounts falling due after more than one year
+2024 2023
+£ £
+Bank loans and overdrafts 388,886 , 855,555
+Other creditors 194,796 174,042
+583,682 1,029,597
+The bank loans of £388,886 (2023: £855,555) are secured by fixed and floating charges over the companies assets.
+. -15-
+Docusign Envelope ID: 56EC9297-A472-46EE-9B6B-26758BAB86EA
+BRISTOL ROVERS FOOTBALL CLUB LIMITED
+, NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+8 Called up share capital :
+2024 2023 2024 2023
+Ordinary share capital Number Number £ £
+Issued and fully paid
+Ordinary shares of 10p each 21,387,340 21,387,339 2,138,734 2,138,734
+9 Operating lease commitments
+Lessee
+At the reporting end date the company had outstanding commitments for future minimum lease payments under non-
+cancellable operating leases, as follows:
+2024 2023
+£ £
+221,761 299,091
+10 Events after the reporting date
+Since the financial year end, the company has contracted for the purchase and sale of various players to achieve the
+goals set out within the strategic report. The net amount payable resulting from this activity is £360k. This activity will
+be accounted for in the year ending 30 June 2025.
+11 Parent company
+The company is 100% owned by Bristol Rovers (1883) Limited who is the ultimate parent company.
+Bristol Rovers (1883) Limited is the largest and smallest group of undertakings for which consolidated accounts are
+prepared. Their registered office is The Memorial Stadium, Filton Avenue, Horfield, Bristol, BS7 OBF.
+. -16- . .
 

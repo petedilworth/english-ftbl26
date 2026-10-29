@@ -2,7 +2,7 @@ source: Companies House filing, tranmere-rovers-fc__2.pdf
 document: emtrfO7n4M36YxNZFte7Okyih6oYzZbkm1YDxBooznw
 made_up_date: 2024-06-30
 method: ocr
-pages_read: 12 of 41
+pages_read: 41 of 41
 
 Company registration number 00118587 (England and Wales)
 TRANMERE ROVERS FOOTBALL CLUB LIMITED
@@ -480,4 +480,1095 @@ Loss for the financial year is attributable to:
 (1,291,920) (1,035,967)
 
 ~9-
+TRANMERE ROVERS FOOTBALL CLUB LIMITED ,
+GROUP STATEMENT OF COMPREHENSIVE INCOME
+FOR THE YEAR ENDED 30 JUNE 2024
+2024 2023
+£ £
+Loss for the year (1,291,920) (1,035,967)
+Other comprehensive income
+Tax relating to other comprehensive income 89,962 (1,001,849)
+Total comprehensive income for the year (1,201,958) (2,037,816)
+Total comprehensive income for the year is attributable to:
+- Owners of the parent company (1,193,102) (2,037,816)
+- Non-controlling interests (8,856) -
+(1,201,958) (2,037,816)
+-10-
+TRANMERE ROVERS FOOTBALL CLUB LIMITED
+GROUP BALANCE SHEET
+AS AT 30 JUNE 2024
+2024 2023
+Notes £ £ £ £
+Fixed assets
+Intangible assets 10 4,144 34,306
+Tangible assets 11 26,668,202 27,234,329
+Investments 12 - 54,000
+26,672,346 27,322,635
+Current assets
+Stocks 14 226,129 134,860
+Debtors : 15 3,203,074 3,047,564
+Cash at bank and in hand 482,674 444,168
+3,911,877 3,626,592
+
+Creditors: amounts falling due within one
+year 7 16 (2,557,913) (2,217,071)
+Net current assets 1,353,964 1,409,521
+Total assets less current liabilities 28,026,310 28,732,156
+Creditors: amounts falling due after more
+than one year 17 (6,666,565) (6,371,083)
+Provisions for liabilities
+Deferred tax liability 20 5,054,185 5,153,835
+
+——— (5,054,185) § ————— (5,153,835)
+Net assets 16,305,560 17,207,238
+Capital and reserves
+Called up share capital 23 6,600,853 6,546,505
+Share premium/account 2,399,147 2,353,495
+Revaluation reserve 14,817,142 15,087,028
+Other reserves 141,826 141,826
+Profit and loss reserves (7,844,832) (6,921,616)
+Equity attributable to owners of the
+parent company 16,114,136 17,207,238
+Non-controlling interests 191,424 -
+Total equity 16,305,560 17,207,238
+
+-1-
+TRANMERE ROVERS FOOTBALL CLUB LIMITED
+GROUP BALANCE SHEET (CONTINUED)
+AS AT 30 JUNE 2024
+These financial statements have been prepared in accordance with the provisions relating to medium-sized groups.
+The financial statements were approved by the board of directors and authorised for issue on 28 March 2025 and
+are signed on its behalf by:
+M Palios
+Director
+Company registration number 00118587 (England and Wales)
+-12-
+TRANMERE ROVERS FOOTBALL CLUB LIMITED
+COMPANY BALANCE SHEET
+AS AT 30 JUNE 2024
+2024 2023
+Notes £ £ £ £
+Fixed assets
+Intangible assets : 10 4,144 34,306
+Tangible assets 11 26,636,700 27,234,329
+Investments 12 1,681 54,001
+26,642,525 27,322,636
+Current assets
+Stocks 14 226,129 134,860
+Debtors - 15 3,143,616 3,031,394
+Cash at bank and in hand 394,851 444,168
+3,764,596 3,610,422
+
+Creditors: amounts falling due within one
+year 16 (2,550,490) (2,214,971)
+Net current assets 1,214,106 1,395,451
+Total assets less current liabilities 27,856,631 28,718,087
+Creditors: amounts falling due after more
+than one year 17 (6,325,739) (6,101,925)
+Provisions for liabilities
+Deferred tax liability 20 5,054,185 5,153,835
+
+——— (5,054,185) =§=———— (5,153,835)
+Net assets , 16,476,707 17,462,327
+Capital and reserves
+Called up share capital 23 6,600,853 6,546,505
+Share premium account 2,399,147 2,353,495
+Revaluation reserve 14,817,142 15,087,028
+Other reserves 141,826 141,826
+Profit and loss reserves (7,482,261) (6,666,527)
+Total equity 16,476,707 17,462,327
+As permitted by s408 Companies Act 2006, the company has not presented its own profit and loss account and
+related notes. The company's loss for the year was £1,175,582 (2023 - £966,101 loss).
+The financial statements were approved by the board of directors and authorised for issue on 28 March 2025 and
+are signed on its behalf by:
+M Palios .
+Director
+Company registration number 00118587 (England and Wales)
+
+-13-
+TRANMERE ROVERS FOOTBALL CLUB LIMITED i
+GROUP STATEMENT OF CHANGES IN EQUITY
+FOR THE YEAR ENDED 30 JUNE 2024
+Share Share Revaluation Profit and Total Non- Total
+capital premium reserve loss controlling controlling
+account reserves interest interest
+Notes £ £ £ £ £ £ £ £
+Balance at 1 July 2022 6,546,505 2,353,495 16,448,725 141,826 (6,245,497) 19,245,054 - 19,245,054
+Year ended 30 June 2023: :
+Loss for the year 7 - - - (1,035,967) (1,035,967) - (1,035,967)
+Other comprehensive income:
+Tax relating to other comprehensive income - - (1,001,849) - - (1,001,849) - (1,001,849)
+Total comprehensive income - - (1,001,849) - (1,035,967) (2,037,816) - (2,037,816)
+Other movements - - (359,848) - 359,848 - - -
+Balance at 30 June 2023 6,546,505 2,353,495 15,087,028 141,826 (6,921,616) 17,207,238 - 17,207,238
+Year ended 30 June 2024:
+Loss for the year 7 - 7 - (1,283,064) (1,283,064) (8,856) (1,291,920)
+Other comprehensive income:
+Tax relating to other comprehensive income - - 89,962 - - 89,962 - 89,962
+Total comprehensive income - - 89,962 - (1,283,064) (1,193,102) (8,856) (1,201,958)
+Issue of share capital 23 54,348 45,652 - - - 100,000 - 100,000
+Acquisition of subsidiary - - - - - - 200,280 200,280
+Other movements - - (359,848) - 359,848 - - -
+i Balance at 30 June 2024 6,600,853 2,399,147 14,817,142 141,826 (7,844,832) 16,114,136 191,424 16,305,560
+-14-
+TRANMERE ROVERS FOOTBALL CLUB LIMITED
+COMPANY STATEMENT OF CHANGES IN EQUITY
+FOR THE YEAR ENDED 30 JUNE 2024
+Share Share Revaluation Profit and Total
+capital premium reserve loss
+account reserves
+
+Notes £ £ £ £ £ &
+Balance at 1 July 2022 6,546,505 2,353,495 16,448,725 141,826 (6,060,275) 19,430,276
+Year ended 30 June 2023:
+Loss for the year : - - - (966,100) (966,100)
+Other comprehensive income:
+Tax relating to other comprehensive income : - (1,001,849) 7 - (1,001,849)
+Total comprehensive income - - (1,001,849) - (966,100) (1,967,949)
+Other movements - - (359,848) - 359,848 -
+Balance at 30 June 2023 6,546,505 2,353,495 15,087,028 141,826 (6,666,527) 17,462,327
+Year ended 30 June 2024:
+Profit for the year - - - - (1,175,582) (1,175,582)
+Other comprehensive income:
+Tax relating to other comprehensive income - - 89,962 - - 89,962
+Total comprehensive income - - 89,962 - (1,175,582) (1,085,620)
+Issue of share capital 23 54,348 45,652 - - - 100,000
+Other movements - - (359,848) - 359,848 -
+Balance at 30 June 2024 6,600,853 2,399,147 14,817,142 141,826 (7,482,261) 16,476,707
+
+-15- :
+TRANMERE ROVERS FOOTBALL CLUB LIMITED
+GROUP STATEMENT OF CASH FLOWS
+FOR THE YEAR ENDED 30 JUNE 2024 ;
+2024 2023
+
+: Notes £ £ £ £
+Cash flows from operating activities
+Cash (absorbed by)/generated from 29
+operations (543,093) 315,826
+Interest paid (43,853) . (47,013)
+Net cash (outflow)/inflow from operating activities (586,946) 268,813
+Investing activities
+Purchase of intangible assets - (25,838)
+Purchase of tangible fixed assets (125,350) (161,620)
+Proceeds from disposal of tangible fixed assets 29,347 -
+Interest received 5,715 7,623
+Net cash used in investing activities (90,288) (179,835)
+Financing activities
+Proceeds from issue of shares 298,192 -
+Proceeds/(repayment) of borrowings 454,817 (72,250)
+Repayment of bank loans (50,000) (50,000)
+Receipt/(payment) of finance leases
+obligations 12,908 (19,086)
+Net cash generated from/(used in) financing activities 715,917 (141,336)
+Net increase/(decrease) in cash and cash
+equivalents 38,683 (52,358)
+Cash and cash equivalents at beginning of year 443,991 496,349
+Cash and cash equivalents at end of year 482,674 443,991
+Relating to:
+Cash at bank and in hand 482,674 444,168
+Bank overdrafts included in creditors payable
+within one year - (177)
+
+-16-
+TRANMERE ROVERS FOOTBALL CLUB LIMITED
+COMPANY STATEMENT OF CASH FLOWS
+FOR THE YEAR ENDED 30 JUNE 2024
+2024 2023
+Notes £ £ £ £
+Cash flows from operating activities
+Cash (absorbed by)/generated from 30
+operations (406,514) 383,910
+Interest paid (31,853) (35,013)
+Net cash (outflow)/inflow from operating
+activities (438,367) 348,897
+Investing activities
+Purchase of intangible assets - (25,838)
+Purchase of tangible fixed assets (90,389) (161,620)
+Proceeds from disposal of tangible fixed assets 29,347 -
+Purchase of subsidiaries (1,680) -
+Interest received 5,715 7,622
+Net cash used in investing activities (57,007) (179,836)
+Financing activities
+Proceeds from issue of shares 100,000 -
+Proceeds/(repayment) of borrowings 383,149 (145,550)
+Repayment of bank loans (50,000) (50,000)
+Receipt/(payment) of finance leases
+obligations 12,908 (19,086)
+Net cash generated from/(used in) financing
+activities 446,057 (214,636)
+Net decrease in cash and cash equivalents (49,317) (45,575)
+Cash and cash equivalents at beginning of year 444,168 489,743
+Cash and cash equivalents at end of year 394,851 444,168
+-17-
+TRANMERE ROVERS FOOTBALL CLUB LIMITED © .
+
+NOTES TO THE GROUP FINANCIAL STATEMENTS
+
+FOR THE YEAR ENDED 30 JUNE 2024
+
+1 Accounting policies
+Company information
+Tranmere Rovers Football Club Limited ("the company”) is a private limited company domiciled and
+incorporated in England and Wales. The registered office is Prenton Park, Prenton Road West, Birkenhead,
+Wirral, CH42 9PY.
+The group consists of Tranmere Rovers Football Club Limited and all of its subsidiaries.
+
+1.1. Accounting convention
+These financial statements have been prepared in accordance with FRS 102 “The Financial Reporting
+Standard applicable in the UK and Republic of Ireland” ("FRS 102”) and the requirements of the Companies
+Act 2006.
+The financial statements are prepared in sterling, which is the functional currency of the company. Monetary
+amounts in these financial statements are rounded to the nearest £.
+The financial statements have been prepared under the historical cost convention, [modified to include the
+revaluation of freehold properties and to include investment properties and certain financial instruments at fair
+value]. The principal accounting policies adopted are set out below.
+
+1.2 Business combinations
+In the parent company financial statements, the cost of a business combination is the fair value at the
+acquisition date of the assets given, equity instruments issued and liabilities incurred or assumed, plus costs
+directly attributable to the business combination. The excess of the cost of a business combination over the
+fair value of the identifiable assets, liabilities and contingent liabilities acquired is recognised as goodwill. The
+cost of the combination includes the estimated amount of contingent consideration that is probable and can be
+measured reliably, and is adjusted for changes in contingent consideration after the acquisition date.
+Provisional fair values recognised for business combinations in previous periods are adjusted retrospectively
+for final fair values determined in the 12 months following the acquisition date. Investments in subsidiaries,
+joint ventures and associates are accounted for at cost less impairment.
+Deferred tax is recognised on differences between the value of assets (other than goodwill) and liabilities
+recognised in a business combination accounted for using the purchase method and the amounts that can be
+deducted or assessed for tax, considering the manner in which the carrying amount of the asset or liability is
+expected to be recovered or settled. The deferred tax recognised is adjusted against goodwill or negative
+goodwill.
+
+1.3. Basis of consolidation
+The consolidated group financial statements consist of the financial statements of the parent company
+Tranmere Rovers Football Club Limited together with all entities controlled by the parent company (its
+subsidiaries) and the group's share of its interests in joint ventures and associates.
+All financial statements are made up to 30 June 2024. Where necessary, adjustments are made to the
+financial statements of subsidiaries to bring the accounting policies used into line with those used by other
+members of the group.
+All intra-group transactions, balances and unrealised gains on transactions between group companies are
+eliminated on consolidation. Unrealised losses are also eliminated unless the transaction provides evidence of
+an impairment of the asset transferred. :
+
+1.4 Going concern
+At the time of approving the financial statements, the directors have a reasonable expectation that the group
+has adequate resources to continue in operational existence for the foreseeable future. Thus the directors
+continue to adopt the going concern basis of accounting in preparing the financial statements.
+
+-18-
+TRANMERE ROVERS FOOTBALL CLUB LIMITED
+
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR ENDED 30 JUNE 2024
+
+1 Accounting policies (Continued)
+
+1.5 Turnover :
+Turnover is recognised at the fair value of the consideration received or receivable for goods and services
+provided in the normal course of business, and is shown net of VAT and other sales related taxes. The fair
+value of consideration takes into account trade discounts, settlement discounts and volume rebates.
+When cash inflows are deferred and represent a financing arrangement, the fair value of the consideration is
+the present value of the future receipts. The difference between the fair value of the consideration and the
+nominal amount received is recognised as interest income.
+Revenue from the sale of goods is recognised when the significant risks and rewards of ownership of the
+goods have passed to the buyer (usually on dispatch of the goods), the amount of revenue can be measured
+reliably, it is probable that the economic benefits associated with the transaction will flow to the entity and the
+costs incurred or to be incurred in respect of the transaction can be measured reliably.
+Revenue from contracts for the provision of professional services is recognised by reference to the stage of
+completion when the stage of completion, costs incurred and costs to complete can be estimated reliably. The
+stage of completion is caiculated by comparing costs incurred, mainly in relation to contractual hourly staff
+rates and materials, as a proportion of total costs. Where the outcome cannot be estimated reliably, revenue
+is recognised only to the extent of the expenses recognised that it is probable will be recovered.
+
+1.6 Intangible fixed assets other than goodwill
+Intangible assets acquired separately from a business are recognised at cost and are subsequently measured
+at cost less accumulated amortisation and accumulated impairment losses.
+Intangible assets acquired on business combinations are recognised separately from goodwill at the
+acquisition date where it is probable that the expected future economic benefits that are attributable to the
+asset will flow to the entity and the fair value of the asset can be measured reliably; the intangible asset arises
+from contractual or other legal rights; and the intangible asset is separable from the entity.
+Amortisation is recognised so as to write off the cost or valuation of assets less their residual values over their
+useful lives on the following bases:
+Software - 20% on cost
+Player contracts Over length of contract
+
+1.7 Tangible fixed assets
+Tangible fixed assets are initially measured at cost and subsequently measured at cost or valuation, net of
+depreciation and any impairment losses.
+Depreciation is recognised so as to write off the cost or valuation of assets less their residual values over their
+useful lives on the following bases:
+Freehold land and buildings 2% on cost
+Plant and equipment 15% on cost
+Fixtures and fittings 15% on cost
+Computers 25% on cost
+Motor vehicles 25% on reducing balance
+The gain or loss arising on the disposal of an asset is determined as the difference between the sale proceeds
+and the carrying value of the asset, and is recognised in the profit and loss account.
+
+-19-
+TRANMERE ROVERS FOOTBALL CLUB LIMITED ,
+
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR ENDED 30 JUNE 2024
+
+1 Accounting policies (Continued)
+
+1.8 Fixed asset investments
+Equity investments are measured at fair value through profit or loss, except for those equity investments that
+are not publicly traded and whose fair value cannot otherwise be measured reliably, which are recognised at
+cost less impairment until a reliable measure of fair value becomes available.
+In the parent company financial statements, investments in subsidiaries, associates and jointly controlled
+entities are initially measured at cost and subsequently measured at cost less any accumulated impairment
+losses.
+A subsidiary is an entity controlled by the group. Control is the power to govern the financial and operating
+policies of the entity so as to obtain benefits from its activities.
+An associate is an entity, being neither a subsidiary nor a joint venture, in which the company holds a long-
+term interest and where the company has significant influence. The group considers that it has significant
+influence where it has the power to participate in the financial and operating decisions of the associate.
+Investments in associates are initially recognised at the transaction price (including transaction costs) and are
+subsequently adjusted to reflect the group’s share of the profit or loss, other comprehensive income and
+equity of the associate using the equity method. Any difference between the cost of acquisition and the share
+of the fair value of the net identifiable assets of the associate on acquisition is recognised as goodwill. Any
+unamortised balance of goodwill is included in the carrying value of the investment in associates.
+Losses in excess of the carrying amount of an investment in an associate are recorded as a provision only
+when the company has incurred legal or constructive obligations or has made payments on behalf of the
+associate.
+In the parent company financial statements, investments in associates are accounted for at cost less
+impairment.
+Entities in which the group has a long term interest and shares control under a contractual arrangement are
+classified as jointly controlled entities.
+
+1.9 Impairment of fixed assets
+At each reporting period end date, the group reviews the carrying amounts of its tangible and intangible
+assets to determine whether there is any indication that those assets have suffered an impairment loss. If any
+such indication exists, the recoverable amount of the asset is estimated in order to determine the extent of the
+impairment loss (if any). Where it is not possible to estimate the recoverable amount of an individual asset,
+the company estimates the recoverable amount of the cash-generating unit to which the asset belongs.
+The carrying amount of the investments accounted for using the equity method is tested for impairment as a
+single asset. Any goodwill included in the carrying amount of the investment is not tested separately for
+impairment.
+Recoverable amount is the higher of fair value less costs to sell and value in use. In assessing value in use,
+the estimated future cash flows are discounted to their present value using a pre-tax discount rate that reflects
+current market assessments of the time value of money and the risks specific to the asset for which the
+estimates of future cash flows have not been adjusted.
+If the recoverable amount of an asset (or cash-generating unit) is estimated to be less than its carrying
+amount, the carrying amount of the asset (or cash-generating unit) is reduced to its recoverable amount. An
+impairment loss is recognised immediately in profit or loss, unless the relevant asset is carried at a revalued
+amount, in which case the impairment loss is treated as a revaluation decrease.
+
+-20-
+TRANMERE ROVERS FOOTBALL CLUB LIMITED
+
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR ENDED 30 JUNE 2024
+
+1 Accounting policies (Continued)
+Recognised impairment losses are reversed if, and only if, the reasons for the impairment loss have ceased to
+apply. Where an impairment loss subsequently reverses, the carrying amount of the asset (or cash-generating
+unit) is increased to the revised estimate of its recoverable amount, but so that the increased carrying amount
+does not exceed the carrying amount that would have been determined had no impairment loss been
+recognised for the asset (or cash-generating unit) in prior years. A reversal of an impairment loss is
+recognised immediately in profit or loss, unless the relevant asset is carried at a revalued amount, in which
+case the reversal of the impairment loss is treated as a revaluation increase.
+
+1.10 Stocks
+Stocks are stated at the lower of cost and estimated selling price less costs to complete and sell. Cost
+comprises direct materials and, where applicable, direct labour costs and those overheads that have been
+incurred in bringing the stocks to their present location and condition.
+Stocks held for distribution at no or nominal consideration are measured at the lower of cost and replacement
+cost, adjusted where applicable for any loss of service potential.
+At each reporting date, an assessment is made for impairment. Any excess of the carrying amount of stocks
+over its estimated selling price less costs to complete and sell is recognised as an impairment loss in profit or
+loss. Reversals of impairment losses are also recognised in profit or loss.
+
+1.11 Cash and cash equivalents
+Cash and cash equivalents are basic financial assets and include cash in hand, deposits held at call with
+banks, other short-term liquid investments with original maturities of three months or less, and bank
+overdrafts. Bank overdrafts are shown within borrowings in current liabilities.
+
+1.12 Financial instruments
+The group has elected to apply the provisions of Section 11 ‘Basic Financial Instruments’ and Section 12
+‘Other Financial Instruments Issues’ of FRS 102 to all of its financial instruments.
+Financial instruments are recognised in the group's balance sheet when the group becomes party to the
+contractual provisions of the instrument.
+Financial assets and liabilities are offset and the net amounts presented in the financial statements when
+there is a legally enforceable right to set off the recognised amounts and there is an intention to settle on a net
+basis or to realise the asset and settle the liability simultaneously.
+Basic financial assets
+Basic financial assets, which include debtors and cash and bank balances, are initially measured at
+transaction price including transaction costs and are subsequently carried at amortised cost using the effective
+interest method unless the arrangement constitutes a financing transaction, where the transaction is
+measured at the present value of the future receipts discounted at a market rate of interest. Financial assets
+classified as receivable within one year are not amortised.
+Other financial assets
+Other financial assets, including investments in equity instruments which are not subsidiaries, associates or
+joint ventures, are initially measured at fair value, which is normally the transaction price. Such assets are
+subsequently carried at fair value and the changes in fair value are recognised in profit or loss, except that
+investments in equity instruments that are not publicly traded and whose fair values cannot be measured
+reliably are measured at cost less impairment.
+
+-21-
+TRANMERE ROVERS FOOTBALL CLUB LIMITED
+
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR ENDED 30 JUNE 2024 :
+
+1 Accounting policies (Continued)
+
+* Impairment of financial assets
+Financial assets, other than those held at fair value through profit and loss, are assessed for indicators of
+impairment at each reporting end date.
+Financia! assets are impaired where there is objective evidence that, as a result of one or more events that
+occurred after the initial recognition of the financial asset, the estimated future cash flows have been affected.
+If an asset is impaired, the impairment loss is the difference between the carrying amount and the present
+value of the estimated cash flows discounted at the asset's original effective interest rate. The impairment
+loss is recognised in profit or loss.
+If there is a decrease in the impairment loss arising from an event occurring after the impairment was
+recognised, the impairment is reversed. The reversal is such that the current carrying amount does not
+exceed what the carrying amount would have been, had the impairment not previously been recognised. The
+impairment reversal is recognised in profit or loss.
+Derecognition of financial assets
+Financial assets are derecognised only when the contractual rights to the cash flows from the asset expire or
+are settled, or when the group transfers the financial asset and substantially all the risks and rewards of
+ownership to another entity, or if some significant risks and rewards of ownership are retained but control of
+the asset has transferred to another party that is able to sell the asset in its entirety to an unrelated third party.
+Classification of financial liabilities
+
+' Financial liabilities and equity instruments are classified according to the substance of the contractual
+arrangements entered into. An equity instrument is any contract that evidences a residual interest in the
+assets of the group after deducting all of its liabilities.
+Basic financial liabilities
+Basic financial liabilities, including creditors, bank loans, loans from fellow group companies and preference
+shares that are classified as debt, are initially recognised at transaction price unless the arrangement
+constitutes a financing transaction, where the debt instrument is measured at the present value of the future
+payments discounted at a market rate of interest. Financial liabilities classified as payable within one year are
+not amortised.
+Debt instruments are subsequently carried at amortised cost, using the effective interest rate method.
+Trade creditors are obligations to pay for goods or services that have been acquired in the ordinary course of
+business from suppliers. Amounts payable are classified as current liabilities if payment is due within one year
+or less. If not, they are presented as non-current liabilities. Trade creditors are recognised initially at
+transaction price and subsequently measured at amortised cost using the effective interest method.
+Other financial liabilities
+Derivatives, including interest rate swaps and forward foreign exchange contracts, are not basic financial
+instruments. Derivatives are initially recognised at fair value on the date a derivative contract is entered into
+and are subsequently re-measured at their fair value. Changes in the fair value of derivatives are recognised
+in profit or loss in finance costs or finance income as appropriate, unless hedge accounting is applied and the
+hedge is a cash flow hedge.
+Debt instruments that do not meet the conditions in FRS 102 paragraph 11.9 are subsequently measured at
+fair value through profit or loss. Debt instruments may be designated as being measured at fair value through
+profit or loss to eliminate or reduce an accounting mismatch or if the instruments are measured and their
+performance evaluated on a fair value basis in accordance with a documented risk management or
+investment strategy.
+-22-
+TRANMERE ROVERS FOOTBALL CLUB LIMITED
+
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR ENDED 30 JUNE 2024
+
+1 Accounting policies (Continued)
+Derecognition of financial liabilities
+Financial liabilities are derecognised when the group's contractual obligations expire or are discharged or
+cancelled.
+
+1.13 Equity instruments
+Equity instruments issued by the group are recorded at the proceeds received, net of transaction costs.
+Dividends payable on equity instruments are recognised as liabilities once they are no longer at the discretion
+of the group.
+
+1.14 Taxation
+The tax expense represents the sum of the tax currently payable and deferred tax.
+Current tax
+The tax currently payable is based on taxable profit for the year. Taxable profit differs from net profit as
+reported in the profit and loss account because it excludes items of income or expense that are taxable or
+deductible in other years and it further excludes items that are never taxable or deductible. The group’s liability
+for current tax is calculated using tax rates that have been enacted or substantively enacted by the reporting
+end date.
+Deferred tax
+Deferred tax liabilities are generally recognised for all timing differences and deferred tax assets are
+tecognised to the extent that it is probable that they will be recovered against the reversal of deferred tax
+liabilities or other future taxable profits. Such assets and liabilities are not recognised if the timing difference
+arises from goodwill or from the initial recognition of other assets and liabilities in a transaction that affects
+neither the tax profit nor the accounting profit.
+The carrying amount of deferred tax assets is reviewed at each reporting end date and reduced to the extent
+that it is no longer probable that sufficient taxable profits will be available to allow all or part of the asset to be
+recovered. Deferred tax is calculated at the tax rates that are expected to apply in the period when the liability
+is settled or the asset is realised. Deferred tax is charged or credited in the profit and loss account, except
+when it relates to items charged or credited directly to equity, in which case the deferred tax is also dealt with
+in equity. Deferred tax assets and liabilities are offset if, and only if, there is a legally enforceable right to offset
+current tax assets and liabilities and the deferred tax assets and liabilities relate to taxes levied by the same
+tax authority.
+
+1.15 Employee benefits
+The costs of short-term employee benefits are recognised as a liability and an expense, unless those costs
+are required to be recognised as part of the cost of stock or fixed assets.
+The cost of any unused holiday entitlement is recognised in the period in which the employee's services are
+received.
+Termination benefits are recognised immediately as an expense when the company is demonstrably
+committed to terminate the employment of an employee or to provide termination benefits.
+
+1.16 Retirement benefits
+Payments to defined contribution retirement benefit schemes are charged as an expense as they fall due.
+
+-23-
+‘
+TRANMERE ROVERS FOOTBALL CLUB LIMITED
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+1 Accounting policies (Continued)
+1.17 Leases
+Leases are classified as finance leases whenever the terms of the lease transfer substantially all the risks and
+rewards of ownership to the lessees. All other leases are classified as operating leases.
+Assets held under finance leases are recognised as assets at the lower of the assets fair value at the date of
+inception and the present value of the minimum lease payments. The related liability is included in the balance
+sheet as a finance lease obligation. Lease payments are treated as consisting of capital and interest
+elements. The interest is charged to profit or loss so as to produce a constant periodic rate of interest on the
+remaining balance of the liability.
+1.18 Government grants
+Government grants are recognised at the fair value of the asset received or receivable when there is
+reasonable assurance that the grant conditions will be met and the grants will be received.
+A grant that specifies performance conditions is recognised in income when the performance conditions are
+met. Where a grant does not specify performance conditions it is recognised in income when the proceeds
+are received or receivable. A grant received before the recognition criteria are satisfied is recognised as a
+liability.
+2 Judgements and key sources of estimation uncertainty
+In the application of the group’s accounting policies, the directors are required to make judgements, estimates
+and assumptions about the carrying amount of assets and liabilities that are not readily apparent from other
+sources. The estimates and associated assumptions are based on historical experience and other factors that
+are considered to be relevant. Actual results may differ from these estimates.
+The estimates and underlying assumptions are reviewed on an ongoing basis. Revisions to accounting
+estimates are recognised in the period in which the estimate is revised where the revision affects only that
+period, or in the period of the revision and future periods where the revision affects both current and future
+periods.
+Key sources of estimation uncertainty
+The estimates and assumptions which have a significant risk of causing a material adjustment to the carrying
+amount of assets and liabilities are as follows.
+Useful economic lives of assets
+Tangible assets are depreciated over their useful lives taking into account residual values, where appropriate.
+The actual lives of assets and the residual values are assessed annually and may vary depending on a
+number of factors.
+Debtors provision
+Trade debtors are recorded at their recoverable value. The recoverability of the debtors are subject to various
+external influences.
+3 Turnover and other revenue
+2024 2023
+£ £
+Turnover analysed by class of business
+Football income 4,249,668 3,907,178
+Commercial income 1,729,703 1,543,840
+5,979,371 5,451,018
+-24-
+Pa
+TRANMERE ROVERS FOOTBALL CLUB LIMITED
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+3 Turnover and other revenue (Continued)
+2024 2023
+£ £
+Other revenue
+Interest income 5,715 7,623
+Grants received 9,800 9,998
+Sundry income 205,651 380,044
+4 Operating loss .
+2024 2023
+£ £
+Operating loss for the year is stated after charging/(crediting): .
+Government grants (9,800) (9,998)
+Fees payable to the group's auditor for the audit of the group's financial
+statements 18,500 16,250
+Depreciation of owned tangible fixed assets 656,861 667,634
+Depreciation of tangible fixed assets held under finance leases 10,412 14,174
+(Profit)/loss on disposal of tangible fixed assets (5,144) 43,681
+Amortisation of intangible assets 30,162 19,317
+5 Employees
+The average monthly number of persons (including directors) employed by the group and company during the
+year was:
+Group Company
+2024 2023 2024 2023
+Number Number Number Number
+Playing, training and management 46 45 46 45
+Non playing - full time 49 39 41 33
+Non playing - part time 102 134 102 134
+Total 197 218 189 212
+Their aggregate remuneration comprised:
+Group Company
+2024 2023 2024 — 2023
+£ £ £ £
+Wages and salaries 4,083,614 3,611,549 3,990,915 3,543,718
+Social security costs 367,520 314,630 367,520 314,630
+Pension costs 32,529 28,738 32,529 28,738
+4,483,663 3,954,917 4,390,964 3,887,086
+In addition to the members of staff noted above, the Club utilises the services of up to 180 non-contracted
+match day staff (2023 — 212).
+-25-
+TRANMERE ROVERS FOOTBALL CLUB LIMITED
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+6 Interest receivable and similar income
+2024 2023
+£ £
+Interest income
+Interest on bank deposits 5,715 7,623
+2024 . 2023
+Investment income includes the following: £ £
+Interest on financial assets not measured at fair value through profit or loss 5,715 7,623
+7 Interest payable and similar expenses .
+2024 2023
+£ £
+Other finance costs:
+Other interest 43,853 47,013
+8 Amounts written off investments
+2024 2023
+£ £
+Amounts written off investments held at fair value (54,000) -
+9 Taxation
+2024 2023
+£ £
+Deferred tax
+Origination and reversal of timing differences (203,450) (337,279)
+The actual credit for the year can be reconciled to the expected credit for the year based on the profit or loss
+and the standard rate of tax as follows:
+2024 2023
+£ £
+Loss before taxation (1,495,370) (1,373,246)
+Expected tax credit based on the standard rate of corporation tax in the UK of
+25.00% (2023: 19.00%) ; (373,843) (260,917)
+Tax effect of expenses that are not deductible in determining taxable profit 13,783 22,580
+Unutilised tax losses carried forward 210,926 119,700
+Permanent capital allowances in excess of depreciation (54,316) (218,642)
+Taxation credit (203,450) (337,279)
+In addition to the amount charged to the profit and loss account, the following amounts relating to tax have
+been recognised directly in other comprehensive income: :
+2024 2023
+; £ £
+Deferred tax arising on:
+Revaluation of property (89,962) 1,001,849
+-26-
+TRANMERE ROVERS FOOTBALL CLUB LIMITED
+
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR ENDED 30 JUNE 2024
+
+10 Intangible fixed assets
+Group Software Player Total
+
+contracts
+£ £ £
+Cost
+At 1 July 2023 24,876 55,000 79,876
+Disposals - (30,000) (30,000)
+At 30 June 2024 24,876 25,000 49,876
+Amortisation and impairment
+At 1 July 2023 18,126 27,444 45,570
+Amortisation charged for the year 2,606 27,556 30,162
+Disposals - (30,000) (30,000)
+At 30 June 2024 20,732 25,000 45,732
+Carrying amount
+At 30 June 2024 4,144 - 4,144
+At 30 June 2023 6,750 27,556 34,306
+Company Software Player Total
+. contracts
+£ £ £
+Cost
+At 1 July 2023 24,876 55,000 79,876
+Disposals - (30,000) (30,000)
+At 30 June 2024 24,876 25,000 49,876
+Amortisation and impairment
+At 1 July 2023 18,126 27,444 45,570
+Amortisation charged for the year 2,606 27,556 30,162
+Disposals - (30,000) (30,000)
+At 30 June 2024 20,732 25,000 45,732
+Carrying amount
+At 30 June 2024 4,144 - 4,144
+At 30 June 2023 6,750 27,556 34,306
+-27-
+TRANMERE ROVERS FOOTBALL CLUB LIMITED
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+11. Tangible fixed assets
+Group Freehold land Plant and Fixtures and Computers Motor Total
+and buildings equipment fittings vehicles
+£ £ £ £ £ £
+Cost or valuation
+At 1 July 2023 28,759,836 1,598,055 - 356,495 82,634 30,797,020
+Additions 39,550 38,995 6,258 40,546 - 125,349
+Disposals - (5,379) - (23,968) - (29,347)
+At 30 June 2024 28,799,386 1,631,671 6,258 373,073 82,634 30,893,022
+Depreciation and
+impairment
+At 1 July 2023 1,867,568 1,300,762 - 315,806 78,555 3,562,691
+Depreciation charged in the :
+year 576,040 72,314 469 17,430 1,020 667,273
+Eliminated in respect of
+disposals - (912) - (4,232) - (5,144)
+At 30 June 2024 2,443,608 1,372,164 469 329,004 79,575 4,224,820
+Carrying amount
+At 30 June 2024 26,355,778 259,507 5,789 44,069 3,059 26,668,202
+At 30 June 2023 26,892,268 297,293 - 40,689 4,079 27,234,329
+Company Freehold land Plant and Computers Motor Total
+and buildings equipment vehicles
+£ £ £ £ £
+Cost or valuation
+At 1 July 2023 28,759,836 1,598,055 356,495 82,634 30,797,020
+Additions 39,550 36,041 14,797 - 90,388
+Disposals - (5,379) (23,968) - (29,347)
+At 30 June 2024 28,799,386 1,628,717 347,324 82,634 30,858,061
+Depreciation and impairment
+At 1 July 2023 1,867,568 1,300,762 315,806 78,555 3,562,691
+Depreciation charged in the year 576,040 72,006 14,748 1,020 663,814
+Eliminated in respect of disposals - (912) (4,232) - (5,144)
+At 30 June 2024 2,443,608 1,371,856 326,322 79,575 4,221,361
+Carrying amount
+At 30 June 2024 26,355,778 256,861 21,002 3,059 26,636,700
+At 30 June 2023 26,892,268 297,293 40,689 4,079 27,234,329
+-28-
+TRANMERE ROVERS FOOTBALL CLUB LIMITED
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+11. Tangible fixed assets (Continued)
+The net carrying value of tangible fixed assets includes the following in respect of assets held under finance
+leases or hire purchase contracts.
+Group Company
+2024 2023 2024 2023
+£ £ £ £
+Plant and equipment 39,556 44,007 39,556 44,007
+Computers - 12,540 - 12,540
+39,556 56,547 39,556 56,547
+Land and buildings with a carrying amount of £6,044,336 were revaiued to £25,621 ,000 on 19 August 2020 by
+Wilks Head & Eve, independent valuers not connected with the company on the basis of market value. The
+valuation conforms to International Valuation Standards and was based on recent market transactions on
+arm's length terms for similar properties. The Directors reviewed the position at 30 June 2024 and considered
+that the carrying value derived from the valuation, incremented by additions since, remains reasonable.
+Land and buildings are carried at valuation. If land and buildings were measured using the cost model, the
+carrying amounts would have been approximately as set out below.
+2024 2023
+£ £
+Group
+Cost : 10,806,971 10,767,421
+Accumulated depreciation (4,207,381) (3,991,189)
+Carrying value 6,599,590 6,776,232
+Company .
+Cost 10,806,971 10,767,421
+Accumulated depreciation (4,207,381) (3,991,189)
+Carrying value 6,599,590 6,776,232
+12 Fixed asset investments
+Group Company
+2024 2023 2024 2023
+Notes £ £ £ £
+Investments in subsidiaries 13 - - 1,681 1
+Unlisted investments - 54,000 - 54,000
+- 54,000 1,681 54,001
+-29-
+TRANMERE ROVERS FOOTBALL CLUB LIMITED
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+12 Fixed asset investments (Continued)
+Movements in fixed asset investments
+Group Investments
+£
+Cost or valuation
+At 1 July 2023 and 30 June 2024 54,000
+Impairment .
+At 1 July 2023 .
+Disposals 54,000
+At 30 June 2024 54,000
+Carrying amount
+At 30 June 2024 -
+At 30 June 2023 54,000
+Movements in fixed asset investments :
+Company Shares in Other Total
+subsidiaries investments
+£ £ £
+Cost or valuation
+At 1 July 2023 1 54,000 54,001
+Additions 1,680 - 1,680
+At 30 June 2024 1,681 54,000 55,681
+Impairment
+At 1 July 2023 - - -
+Disposals - 54,000 54,000
+At 30 June 2024 - 54,000 54,000
+Carrying amount
+At 30 June 2024 1,681 - 1,681
+At 30 June 2023 1 54,000 54,001
+During the year, the Company acquired 80.46 percent of the issued share capital of Merseyside Esports
+Limited, see note 24.
+The disposal detailed above relates to the Group's investment in Little London Football School, which was
+written off following the entity ceasing operations in China.
+-30- .
+TRANMERE ROVERS FOOTBALL CLUB LIMITED
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+13 Subsidiaries
+Details of the company's subsidiaries at 30 June 2024 are as follows:
+Name of undertaking Registered office Class of % Held
+shares held Direct
+Tranmere Rovers Football Club 1 Ordinary 100.00
+(International) Limited
+Merseyside Esports Limited 1 Ordinary 80.46
+Registered office addresses (all UK unless otherwise indicated):
+1 Prenton Park, Prenton Road West, Birkenhead, Wirral, CH42 9PY
+14 Stocks
+Group Company
+2024 2023 2024 2023
+£ £ £ £
+Finished goods and goods for resale 226,129 134,860 226,129 134,860
+15 Debtors
+Group Company
+. 2024 2023 2024 2023
+Amounts falling due within one year: £ £ £ £
+Trade debtors 196,797 241,825 196,797 241,825
+Other debtors 12,880 107,195 12,601 107,195
+Prepayments and accrued income 261,209 160,119 259,109 160,119
+470,886 509,139 468,507 509,139
+Amounts falling due after more than one year:
+Deferred tax asset (note 20) 2,732,188 2,538,425 2,675,109 2,522,255
+Total debtors 3,203,074 3,047,564 3,143,616 3,031,394
+-~31-
+TRANMERE ROVERS FOOTBALL CLUB LIMITED
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+16 Creditors: amounts falling due within one year
+Group Company
+2024 2023 2024 2023
+Notes £ £ £ £
+Bank loans and overdrafts 19 50,000 50,177 50,000 50,000
+Obligations under finance leases 18 7,299 13,577 7,299 13,577
+Other borrowings 19 494,217 39,400 494 ,217- 39,400
+Trade creditors 771,193 728,824 771,193 728,824
+Other taxation and social security 188,442 199,092 188,442 199,092
+Deferred income 22 7,704 7,574 7,704 7,574
+Other creditors 8,948 3,980 8,948 3,980
+Accruals and deferred income 1,030,110 1,174,447 1,022,687 1,172,524
+2,557,913 2,217,071 2,550,490 2,214,971
+17 Creditors: amounts falling due after more than one year
+Group Company
+2024 2023 2024 2023
+Notes £ £ £ £
+Bank loans and overdrafts 19 312,500 362,500 312,500 362,500
+Obligations under finance leases 18 19,186 - 19,186 -
+Other borrowings 19 400,000 400,000 59,174 130,842
+Deferred income 22 694,251 704,180 694,251 704,180
+Other creditors 5,240,628 4,904,403 5,240,628 4,904,403
+6,666,565 6,371,083 6,325,739 6,101,925
+Amounts included above which fall due after five years are as follows:
+Payable by instalments 112,500 162,500 112,500 162,500
+18 Finance lease obligations
+Group Company
+2024 2023 2024 2023
+£ £ £ £
+Future minimum lease payments due under
+finance leases:
+Within one year 8,749 11,748 8,749 11,748
+In two to five years 22,642 4,564 22,642 4,564
+31,391 16,312 31,391 16,312
+Less: future finance charges (4,906) (2,735) (4,906) (2,735)
+26,485 13,577 26,485 13,577
+Finance lease payments represent rentals payable by the company or group for certain items of plant and
+machinery. Leases include purchase options at the end of the lease period, and no restrictions are placed on
+the use of the assets. The average lease term is four years. All leases are on a fixed repayment basis and no
+arrangements have been entered into for contingent rental payments.
+-32-
+TRANMERE ROVERS FOOTBALL CLUB LIMITED
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+19 Loans and overdrafts :
+: Group Company
+2024 2023 2024 2023
+£ £ £ £
+Bank loans : 362,500 412,500 362,500 412,500
+Bank overdrafts - 177 - -
+Loans from group undertakings - - 59,174 130,842
+Other loans 894,217 439,400 494,217 39,400
+1,256,717 852,077 915,891 582,742
+Payable within one year 544,217 89,577 544,217 89,400
+Payable after one year 712,500 762,500 371,674 493,342
+The long-term bank loans are secured by fixed charges over the stadium owned by the group and the’
+company.
+20 Deferred taxation
+The following are the major deferred tax liabilities and assets recognised by the group and company, and
+movements thereon:
+Liabilities Liabilities Assets Assets
+2024 2023 2024 2023
+Group £ £ £ £
+Accelerated capital allowances 115,138 124,826 - -
+Tax losses - - 2,732,188 2,538,425
+Revaluations 4,939,047 5,029,009 - -
+5,054,185 5,153,835 2,732,188 2,538,425
+Liabilities Liabilities Assets Assets
+; 2024 2023 2024 2023
+Company £ £ £ £
+Accelerated capital allowances 115,138 124,826 - -
+Tax losses - - 2,675,109 2,522,255
+Revaluations 4,939,047 5,029,009 - -
+5,054,185 5,153,835 2,675,109 2,522,255
+Group Company
+2024 2024
+Movements in the year: £ £
+Liability at 1 July 2023 2,615,410 2,631,580
+Credit to profit or loss (203,450) (162,541)
+Credit to other comprehensive income (89,963) (89,963)
+Liability at 30 June 2024 2,321,997 2,379,076
+- 33 -
+TRANMERE ROVERS FOOTBALL CLUB LIMITED
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+21 Retirement benefit schemes
+2024 2023
+Defined contribution schemes £ £
+Charge to profit or loss in respect of defined contribution schemes 32,529 28,738
+A defined contribution pension scheme is operated for all qualifying employees. The assets of the scheme are
+held separately from those of the group in an independently administered fund.
+22 Deferred income
+Group Company
+2024 2023 2024 2023
+£ £ £ £
+Arising from government grants 351,463 349,256 351,463 349,256
+Other deferred income 350,492 362,498 350,492 362,498
+701,955 711,754 701,955 741,754
+Deferred income is included in the financial statements as follows:
+Current liabilities 7,704 7,574 7,704 7,574
+Non-current liabilities 694,251 704,180 694,251 704,180
+701,955 711,754 701,955 711,754
+The deferred income at 30 June 2024 relates to a grant from Wirral Borough Council for development of the
+Prenton Park recreational centre and Solar Campus training ground. The grants are being released to profits
+in line with the depreciation charged on the related assets.
+23. Share capital :
+Group and company 2024 2023 2024 2023
+Ordinary share capital Number Number £ £
+Issued and fully paid
+Ordinary of 50p each 13,201,706 13,093,010 6,600,853 6,546,505
+During the year, the Company issued 108,696 of 50p ordinary shares for 92p per share, giving rise to a
+premium per share of 42p.
+After the year end, in February 2025, the Company issued 250,000 of 50p ordinary shares for 80p per share,
+giving rise to a premium per share of 30p. The Company also issued 2 of 50p special shares after the year
+end.
+-34-
+TRANMERE ROVERS FOOTBALL CLUB LIMITED
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024 :
+24 Acquisition of a business
+On 20 November 2023 the group acquired 80.46 percent of the issued share capital of Merseyside Esports
+Limited.
+Book Value Adjustments Fair Value
+Net assets acquired £ £ £
+Trade and other receivables 2,088 - 2,088
+Non-controlling interests (408)
+Goodwill -
+Total consideration 1,680
+The consideration was satisfied by: £
+Issue of shares ° 1,680
+Contribution by the acquired business for the reporting period included in the group statement of
+comprehensive income since acquisition:
+£
+Turnover 10,823
+Loss after tax . (45,324)
+25 Operating lease commitments
+At the reporting end date the group had outstanding commitments for future minimum lease payments under
+non-cancellable operating teases, which fall due as follows:
+Group Company
+2024 2023 2024 2023
+£ £ £ £
+Within one year 135,139 109,024 127,139 109,024
+Between two and five years 345,422 284,043 337,422 284,043
+In over five years 35,000 - 35,000 -
+515,561 393,067 499,561 393,067
+26 Events after the reporting date
+In November 2024, the Group received a loan facility from AIG Securities Limited. The loan is secured by fixed
+charges over the stadium owned by the Group.
+After the year end, in February 2025, the Company issued 250,000 of 50p ordinary shares for 80p per share,
+giving rise to a premium per share of 30p. The Company also issued 2 of 50p special shares after the year
+end.
+-35-
+TRANMERE ROVERS FOOTBALL CLUB LIMITED
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+27 ‘Related party transactions
+Transactions with related parties
+During the year the group entered into the following transactions with related parties:
+Sales Sales
+2024 2023
+£ £
+Group
+Other related parties 198,694 218,203
+Company
+Other related parties 198,694 218,103
+The following amounts were outstanding at the reporting end date:
+Amounts due from related parties 2024 2023
+Balance Balance
+£ £
+Group
+Other related parties 849 4,136
+Company
+Other related parties 849 4,136
+28 Contingent assets
+At 30 June 2024, the club had sums receivable from other clubs in respect of players, dependent upon the °
+number of first team appearances and other milestones. Due to the uncertainly of receipt of these contingent
+assets, it is not practical to disclose the amount likely to be received.
+- 36 -
+TRANMERE ROVERS FOOTBALL CLUB LIMITED
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+29 Cash (absorbed by)/generated from group operations
+2024 2023
+£ £
+Loss after taxation (1,291,920) (1,035,967)
+Adjustments for:
+Taxation credited (203,450) (337,279)
+Finance costs 43,853 47,013
+Investment income (5,715) (7,623)
+(Gain)/loss on disposal of tangible fixed assets (5,144) 43,681
+Amortisation and impairment of intangible assets 30,162 19,317
+Depreciation and impairment of tangible fixed assets 667,273 681,808
+Other gains and losses 54,000 -
+: Movements in working capital:
+Increase in stocks (91,269) (25,910)
+Decrease/(increase) in debtors 40,341 (60,864)
+Increase in creditors 228,575 1,001,649
+Decrease in deferred income (9,799) (9,999)
+Cash (absorbed by)/generated from operations (543,093) 315,826
+30 Cash (absorbed by)/generated from operations - company
+2024 2023
+. £ £
+Loss after taxation (1,175,582) (966,100)
+Adjustments for:
+Taxation credited (162,541) (327,064)
+Finance costs 31,853 35,013
+Investment income (5,715) (7,622)
+(Gain)/loss on disposal of tangible fixed assets (5,144) 43,681
+Amortisation and impairment of intangible assets 30,162 19,317
+Depreciation and impairment of tangible fixed assets 663,814 681,808
+Other gains and losses 54,000 -
+Movements in working capital:
+Increase in stocks (91,269) (25,910)
+Decrease/(increase) in debtors 40,632 (60,864)
+Increase in creditors 223,075 1,001,650
+Decrease.in deferred income (9,799) (9,999)
+Cash (absorbed by)/generated from operations (406,514) 383,910
+-37-
+TRANMERE ROVERS FOOTBALL CLUB LIMITED
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024 :
+31 Analysis of changes in net debt - group
+1 July 2023 Cash flows 30 June 2024
+£ £ £
+Cash at bank and in hand 444,168 38,506 482,674
+Bank overdrafts (177) 177 -
+443,991 38,683 482,674
+Borrowings excluding overdrafts (851,900) (404,817) (1,256,717)
+Obligations under finance leases : (13,577) (12,908) (26,485)
+(421,486) (379,042) (800,528)
+32 Analysis of changes in net debt - company
+1 July 2023. Cash flows 30 June 2024
+£ £ £
+Cash at bank and in hand 444,168 (49,317) 394,851 ,
+Borrowings excluding overdrafts (582,742) (333,149) (915,891)
+Obligations under finance leases (13,577) (12,908) (26,485)
+(152,151) (395,374) (547,525)
+-38-
 

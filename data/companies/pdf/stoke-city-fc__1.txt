@@ -2,7 +2,7 @@ source: Companies House filing, stoke-city-fc__1.pdf
 document: a8GBAGKII-RzLK2PgqXXAXS1avv90N1p4-naETWE67E
 made_up_date: 2025-05-31
 method: ocr
-pages_read: 12 of 33
+pages_read: 33 of 33
 
 ae
 Stoke City Football Club Limited
@@ -429,4 +429,807 @@ Company and enable them to ensure that the financial statements comply with the 
 They are also responsible for safeguarding the assets of the Company and hence for taking reasonable steps
 for the prevention and detection of fraud and other irregularities. .
 Page 10
+INDEPENDENT AUDITOR'S REPORT TO THE MEMBERS OF STOKE CITY FOOTBALL
+CLUB LIMITED
+Opinion
+We have audited the financial statements of Stoke City Football Club Limited (the ‘company’) for the year
+ended 31 May 2025 which comprise the statement of total income and retained earnings, the statement of
+financial position and notes to the financial statements, including significant accounting policies. The
+financial reporting framework that has been applied in their preparation is applicable law and United
+Kingdom Accounting Standards, including FRS 102 “The Financial Reporting Standard applicable in the
+UK and Republic of Ireland” (United Kingdom Generally Accepted Accounting Practice).
+In our opinion, the financial statements:
+e give a true and fair view of the state of the company’s affairs as at 31 May 2025 and of its loss for
+the year then ended;
+© have been properly prepared in accordance with United Kingdom Generally Accepted Accounting
+Practice;
+e have been prepared in accordance with the requirements of the Companies Act 2006.
+Basis for opinion
+We conducted our audit in accordance with International Standards on Auditing (UK) (ISAs (UK)) and
+applicable law. Our responsibilities under those standards are further described in the Auditor’s
+responsibilities for the audit of the financial statements section of our report. We are independent of the
+company in accordance with the ethical requirements that are relevant to our audit of the financial statements
+in the UK, including the FRC’s Ethical Standard, and we have fulfilled our other ethical responsibilities in
+accordance with these requirements. We believe that the audit evidence we have obtained is sufficient and
+appropriate to provide a basis for our opinion.
+Conclusions relating to going concern
+In auditing the financial statements, we have concluded that the Directors’ use of the going concern basis
+of accounting in the preparation of the financial statements is appropriate.
+Based on the work we have performed, we have not identified any material uncertainties relating to events
+or conditions that, individually or collectively, may cast significant doubt on the company’s ability to
+continue as a going concer for a period of at least twelve months from when the financial statements are
+authorised for issue.
+Our responsibilities and the responsibilities of the Directors with respect to going concern are described in
+the relevant sections of this report. :
+Other information
+The other information comprises the information included in the annual report, other than the financial
+statements and our auditor’s report thereon. The directors are responsible for the other information contained
+within the annual report. Our opinion on the financial statements does not cover the other information and,
+except to the extent otherwise explicitly stated in our report, we do not express any form of assurance
+conclusion thereon. .
+Our responsibility is to read the other information and, in doing so, consider whether the other information
+is materially inconsistent with the financial statements or our knowledge obtained in the course of the audit
+. or otherwise appears to be materially misstated. If we identify such material inconsistencies or apparent
+material misstatements, we are required to determine whether this gives rise to a material misstatement in
+the financial statements themselves. If, based on the work we have performed, we conclude that there is a
+material misstatement of this other information, we are required to report that fact.
+We have nothing to report in this regard.
+Page 11
+INDEPENDENT AUDITOR'S REPORT TO THE MEMBERS OF STOKE CITY FOOTBALL ’
+CLUB LIMITED (continued)
+Opinions on other matters prescribed by the Companies Act 2006
+In our opinion, based on the work undertaken in the course of the audit:
+e the information given in the strategic report and the Directors’ report for the financial year for which
+the financial statements are prepared is consistent with the financial statements; and
+¢ the strategic report and the Directors’ report have been prepared in accordance with applicable legal
+requirements.
+Matters on which we are required to report by exception
+In the light of the knowledge and understanding of the company and its environment obtained in the course
+of the audit, we have not identified material misstatements in the strategic report and the Directors’ report.
+We have nothing to report in respect of the following matters in relation to which the Companies Act 2006
+requires us to report to you if, in our opinion:
+e adequate accounting records have not been kept, or returns adequate for our audit have not been
+received from branches not visited by us; or
+e the financial statements are not in agreement with the accounting records and returns; or
+e certain disclosures of Directors’ remuneration specified by law are not made; or
+¢ we have not received all the information and explanations we require for our audit.
+Responsibilities of Directors
+As explained more fully in the Directors’ responsibilities statement set out on page 10, the Directors are
+responsible for the preparation of the financial statements and for being satisfied that they give a true and
+fair view, and for such internal control as the Directors determine is necessary to enable the preparation of
+financial statements that are free from material misstatement, whether due to fraud or error.
+In preparing the financial statements, the Directors are responsible for assessing the company’s ability to
+continue as a going concem, disclosing, as applicable, matters related to going concem and using the going
+concern basis of accounting unless the Directors either intend to liquidate the company or to cease operations,
+or have no realistic alternative but to do so.
+Auditor’s responsibilities for the audit of the financial statements
+Our objectives are to obtain reasonable assurance about whether the financial statements as a whole are free
+from material misstatement, whether due to fraud or error, and to issue an auditor’s report that includes our
+opinion. Reasonable assurance is a high level of assurance, but is not a guarantee that an audit conducted in :
+accordance with ISAs (UK) will always detect a material misstatement when it exists. Misstatements can
+arise from fraud or error and are considered material if, individually or in the aggregate, they could
+reasonably be expected to influence the economic decisions of users taken on the basis of these financial
+statements.
+The extent to which the audit was considered capable of detecting irregularities, including fraud
+Irregularities are instances of non-compliance with laws and regulations. The objectives of our audit are to
+obtain sufficient appropriate audit evidence regarding compliance with laws and regulations that have a
+direct effect on the determination of material amounts and disclosures in the financial statements, to perform
+audit procedures to help identify instances of non-compliance with other laws and regulations that may have
+a material effect on the financial statements, and to respond appropriately to identified or suspected non-
+compliance with laws and regulations identified during the audit.
+In relation to fraud, the objectives of our audit are to identify and assess the risk of material misstatement of
+the financial statements due to fraud, to obtain sufficient appropriate audit evidence regarding the assessed
+risks of material misstatement due to fraud through designing and implementing appropriate responses and
+to respond appropriately to fraud or suspected fraud identified during the audit.
+Page 12
+INDEPENDENT AUDITOR'S REPORT TO THE MEMBERS OF STOKE CITY FOOTBALL
+CLUB LIMITED (continued)
+
+However, it is the primary responsibility of management, with the oversight of those charged with
+governance, to ensure that the entity's operations are conducted in accordance with the provisions of laws
+and regulations and for the prevention and detection of fraud.
+
+In identifying and assessing risks of material misstatement in respect of irregularities, including fraud, the
+audit engagement team:
+
+© obtained an understanding of the nature of the industry and sector, including the legal and regulatory
+frameworks that the company operates in and how the company is complying with the legal and
+regulatory frameworks;
+
+e inquired of management, and those charged with governance, about their own identification and
+assessment of the risks of irregularities, including any known actual, suspected or alleged instances
+of fraud;
+
+e discussed matters about non-compliance with laws and regulations and how fraud might occur
+including assessment of how and where the financial statements may be susceptible to fraud.
+
+As a result of these procedures we consider the most significant laws and regulations that have a direct
+impact on the financial statements are FRS 102, the Companies Act 2006 and tax compliance regulations.
+We performed audit procedures to detect non-compliances which may have a material impact on the financial
+: statements which included reviewing financial statement disclosures, inspecting correspondence with local
+tax authorities and evaluating advice, where applicable, received from internal tax advisors.
+The most significant laws and regulations that have an indirect impact on the financial statements are those
+in relation to compliance with Football regulation, at a Football Association level and with the English
+Football League. We performed audit procedures to inquire of management whether the Company is in
+compliance with these laws and regulations and inspected correspondence with regulatory authorities.
+The audit engagement team identified the risk of management override of controls as the area where the
+financial statements were most susceptible to material misstatement due to fraud. Audit procedures
+performed included but were not limited to testing manual journal entries and other adjustments and
+. evaluating the business rationale in relation to significant, unusual transactions and transactions entered into
+outside the normal course of business.
+A further description of our responsibilities for the audit of the financial statements is located on the Financial
+Reporting Council’s website at: http://www. frc.org.uk/auditorsresponsibilities. This description forms part
+of our auditor’s report.
+Use of our report
+This report is made solely to the company’s members, as a body, in accordance with Chapter 3 of Part 16 of
+the Companies Act 2006. Our audit work has been undertaken so that we might state to the company’s
+members those matters we are required to state to them in an auditor’s report and for no other purpose. To
+the fullest extent permitted by law, we do not accept or assume responsibility to anyone other than the
+company and the company’s members as a body, for our audit work, for this report, or for the opinions we
+have formed.
+Adan Krupski
+ADAM KRUPSKI (Senior Statutory Auditor)
+For and on behalf of RSM UK AUDIT LLP, Statutory Auditor
+Chartered Accountants
+Festival Way
+Stoke-on-Trent
+_ Staffordshire
+ST1 5BB
+24/12/25
+: Page 13
+: Stoke City Football Club Limited —
+STATEMENT OF TOTAL INCOME AND RETAINED EARNINGS ;
+. For the year ended 31 May 2025 ~
+2025 2024
+Note Operations Player Total
+: excluding trading
+player (note 6)
+trading
+£000 £000 £000 £000
+TURNOVER 2 35,438 - 35,438 32,271
+Operating expenses (57,644) (7,499) (65,143) (62,982)
+(22,206) ° (7,499) (29,705) = (30,711).
+Profit on disposal of players’ registrations 6 - 151 . 11 4,408
+Profit on disposal of fixed assets - : 17 - 17 67
+; OPERATING LOSS (22,189) (7,348) (29,537) (26,236)
+Interest receivable and similar income 3 1,230 - 1,230 374 :
+LOSS BEFORE TAXATION : 2-6 (20,959) (7,348) (28,307) (25,862)
+Taxation 7 3,121 704 3,825 (2,764)
+LOSS AFTER TAX FOR THE YEAR (24,482) (28,626)
+: _ RETAINED EARNINGS AT | JUNE (168,904) = (140,278)
+. RETAINED EARNINGS AT 31 MAY (193,386) (168,904)
+, . Page 14
+Stoke City Football Club Limited
+STATEMENT OF FINANCIAL POSITION
+At 31 May 2025 :
+Notes 2025 , 2024
+£000 £000 £000 £000 ;
+_ FIXED ASSETS
+Intangible assets 8 11,650 ° 14,072
+Tangible assets 9 669 579
+12,319 14,651
+CURRENT ASSETS
+Stocks 10 1,090 853
+Debtors (due after more than one year £nil 11 9,674 15,438
+(2024: £6,780,000))
+Cash at bank and in hand 25,522 6,940
+36,286 23,231
+CREDITORS: Amounts falling due within one
+year 12 (204,246) (167,437)
+NET CURRENT LIABILITIES (167,960) (144,206) :
+TOTAL ASSETS LESS CURRENT
+LIABILITIES (155,641) (129,555)
+CREDITORS: Amounts falling due after more
+than one year 13 (528) Q) ,
+PROVISIONS FOR LIABILITIES 14 (796) (2,927)
+NET LIABILITIES (156,965) (132,483)
+CAPITAL AND RESERVES
+Called up share capital 15 35,842 35,842
+Share premium account 579 579
+Profit and loss reserve (193,386) (168,904)
+TOTAL EQUITY : (156,965) ; (132,483)
+The financial statements on pages 14 to 31 were approved by the board of directors and authorised for issue
+On 54 /12/25 and are signed on its behalf by:
+on
+John Coates :
+Chair :
+Company Registration No.00099885
+Page 15
+_ Stoke City Football Club Limited
+
+ACCOUNTING POLICIES
+
+"GENERAL INFORMATION ;
+Stoke City Football Club Limited (“the Company” or “the Club”) is a private company limited by shares
+and is registered, domiciled and incorporated in England.
+The address of the Company’s registered office and principal place of business is bet365 Stadium, Stanley :
+Matthews Way, Stoke-on-Trent, Staffordshire, ST4 4EG.
+
+. _The Company’s principal activities and nature of its operations are included in the Directors’ Report.
+
+BASIS OF ACCOUNTING
+These financial statements are prepared in accordance with Financial Reporting Standard 102 ‘The Financial
+Reporting Standard applicable in the UK and Republic of Ireland’ (FRS 102) and the requirements of the
+Companies Act 2006, including the provisions of the Large and Medium-sized Companies and Groups
+(Accounts and Reports) Regulations 2008, and under the historical cost convention unless otherwise -
+identified.
+
+. Monetary amounts in these financial statements are rounded to the nearest whole £1,000, except where
+
+: otherwise indicated. .
+"REDUCED DISCLOSURES ; ; ;
+: In accordance with FRS 102, the Company has taken advantage of the exemptions from the following :
+disclosure requirements: ,
+. Section 7 ‘Cash Flow Statements’ :
+* —— Section 33 ‘Related Party Disclosures’ - Compensation for key management personnel.
+
+, The financial statements of the Company are consolidated in the financial statements of Stoke City Holdings
+Limited. Details of where these accounts are available have been disclosed in note 20. .
+GOING CONCERN
+The Company prepares detailed forecasts each financial year taking into account the risks and uncertainties
+as detailed in the Strategic Report.
+
+The financial statements therefore have been prepared on a going concern basis as the Company’s ultimate
+owner, John Coates, has agreed to continue to support the Company’s funding requirements to enable the
+Company to meet its obligations as they fall due for 12 months from the date of signing these financial
+statements. As a result of this undertaking, and consideration of the owner’s ability to provide appropriate
+support, the directors consider it appropriate to prepare the financial statements on a going concern basis.
+' FUNCTIONAL AND PRESENTATIONAL CURRENCIES .
+. The financial statements are presented in sterling which is also the functional currency of the Company.
+
+FOREIGN CURRENCIES : ;
+Transactions in currencies other than the functional currency are initially recorded at the exchange rate
+prevailing on the date of the transaction. Monetary assets and liabilities denominated in foreign currencies
+are translated at the rate of exchange ruling at the reporting date. Non-monetary assets and liabilities
+denominated in foreign currencies are translated at the rate ruling at the date of the transaction or, if the asset
+or liability is measured at fair value, the rate when that fair value was determined.
+All translation differences are taken to the income statement.
+
+‘ Page 16
+Stoke City Football Club Limited
+
+ACCOUNTING POLICIES
+
+TURNOVER
+
+Turnover, exclusive of value added tax, comprises net match receipts and League receipts and other income
+
+arising from the Company’s activities. Revenue is recognised when substantially all of the obligations under
+
+a sales contract have been fulfilled. Revenue received from the League is recognised in the financial
+
+statements based on games played in the season. This is in accordance with the League guidelines on income
+
+recognition. Performance related rewards are not recognised until achieved by the Club, as the income cannot
+
+be assumed with certainty.
+
+OTHER INCOME
+
+Interest income is accrued on a time-apportioned basis, by reference to the principal outstanding at the
+
+effective interest rate.
+
+INTANGIBLE FLXED ASSETS
+
+The third party costs associated with the acquisition of players’ registrations and coaching staff are
+
+capitalised and amortised to zero on a straight line basis over the period of their respective contracts. A full
+
+year of amortisation is recognised in the year the cost is capitalised. Any transfer fees payable as a result of
+
+the occurrence of one or more uncertain future events are capitalised when it is probable such an event will
+
+occur. Provision for impairment is made when it becomes clear that the carrying amount exceeds the
+
+recoverable amount. No amounts are included for the registrations attributable to players developed within
+
+the Club.
+
+TANGIBLE FIXED ASSETS
+
+Tangible fixed assets are stated at cost, net of depreciation and any provision for impairment.
+
+Depreciation is provided on all tangible fixed assets at rates calculated to write each asset down to its
+
+estimated residual value evenly over its expected useful life, as follows:
+
+Plant and equipment - 8 — 33% per annum straight line
+Motor vehicles - 25% per annum straight line
+
+Residual value is calculated on prices prevailing at the reporting date, after estimated costs of disposal for
+
+the asset as if it were at the age and in the condition expected at the end of its useful life.
+
+DEFERRED INCOME
+
+Deferred income consists of season tickets, sponsorship and other elements of income which have been
+
+received prior to the year end in respect of future football seasons.
+
+STOCK
+
+Stocks are valued at the lower of cost and estimated selling price less costs to sell. Cost is determined using
+
+the weighted average cost basis.
+
+At each reporting date, the Company assesses whether stocks are impaired or if an impairment loss
+
+recognised in prior periods has reversed. Any excess of the carrying amount of stock over its estimated
+
+selling price less costs to complete and sell is recognised as an impairment loss in profit or loss. Reversals
+
+of impairment losses are also recognised in profit or loss.
+
+SIGNING ON FEES AND LOYALTY BONUSES
+
+The directors consider that signing on fees represent a normal part of the employment cost of players and
+
+the manager and as such should be charged to the income statement evenly over the period of the players’
+
+and managers’ contract. At the time of a player disposal any excess signing on fees accrued or paid but not
+
+recognised are allocated in full against the profit on disposal of players’ registrations in the year in which
+
+the player disposal is made.
+
+Loyalty bonuses are recognised as an expense when all the conditions relating to the loyalty bonus are met.
+Page 17
+Stoke City Football Club Limited .
+
+ACCOUNTING POLICIES
+
+TAXATION
+
+The tax expense represents the sum of the current tax expense and deferred tax expense. Current tax assets
+are recognised when tax paid exceeds the tax payable. .
+Current tax is based on taxable profit for the year. Taxable profit differs from total comprehensive income
+because it excludes items of income or expense that are taxable or deductible in other periods and because it
+includes items of income or expense that are never taxable or deductible for tax purposes. Current tax assets
+and liabilities are measured using tax rates that have been enacted or substantively enacted by the reporting
+date.
+
+Deferred tax is calculated at the tax rates that are expected to apply to the period when the asset is realised
+or the liability is settled based on tax rates that have been enacted or substantively enacted by the reporting
+date. Deferred tax is not discounted.
+
+: Deferred tax liabilities are recognised in respect of all timing differences that exist at the reporting date.
+Timing differences are differences between taxable profits and total comprehensive income that arise from
+the inclusion of income and expenses in tax assessments in different periods from their recognition in the
+financial statements, Deferred tax assets are recognised only to the extent that it is probable that they will be
+recovered by the reversal of deferred tax liabilities or other future taxable profits.
+
+Current and deferred tax is charged or credited in the profit and loss account, except when it relates to items
+charged or credited to other comprehensive income or equity, when the tax follows the transaction or event
+it relates to and is also charged or credited to other comprehensive income, or equity. .
+Current tax assets and current tax liabilities and deferred tax assets and deferred tax liabilities are offset, if
+and only if, there is a legally enforceable right to set off the amounts and the entity intends either to settle on
+a net basis or to realise the asset and settle the liability simultaneously.
+LEASES
+All leases are operating leases and the annual rentals are charged to the profit and loss account on a straight
+line basis over the lease term.
+PROVISIONS
+Provisions are recognised when the Company has a present legal or constructive obligation as a result of past
+events, it is probable that an outflow of resources will be required to settle the obligation; and the amount of
+the obligation can be estimated reliably. .
+RESERVES
+Share Premium
+Consideration received for shares issued above their nominal value net of transaction costs.
+Profit and loss account :
+Cumulative profit and loss net of distributions to owners.
+EMPLOYEE BENEFITS AND COSTS .
+Accumulated compensated absences accrual arises when employees render services that give rise to their
+entitlement to future compensated absences that have not been taken at the period end. The cost accrued is
+the amount that would be expected to be paid as a result of the unused entitlement.
+RETIREMENT BENEFITS
+Certain employees of the Club participate in the Football League Limited Pension and Life Assurance
+Scheme and the Football League Limited Players’ Benefit Scheme. Both schemes are defined benefit
+schemes co-sponsored by the FA Premier League and the Football League. The Club makes contributions
+to the schemes in accordance with the recommendations of the actuaries to the schemes.
+
+Page 18
+Stoke City Football Club Limited
+ACCOUNTING POLICIES ; :
+RETIREMENT BENEFITS (CONTINUED)
+The Club is one of a number of participating employers in the schemes and it is not possible to allocate part
+of any actuarial rights or deficit owing to the Club’s employees only their share of contributions payable to
+the scheme. Consequently, contributions paid in the period and any movement in the Club’s share of
+contributions, net of payments made are charged to the profit and loss account. The differences between
+contributions payable in the period and contributions actually paid are shown as either accruals or
+prepayments in the balance sheet. The Club’s share of future contributions to be paid to the scheme, as
+advised by the actuary, is recognised as a provision in the financial statements.
+Contributions are also paid to individuals’ money purchase pension schemes. The contributions are charged
+to the income statement in the period in which they become payable. The assets of all the pension schemes
+are held separately from those of the Club in independently administered funds.
+FINANCIAL INSTRUMENTS
+The Company has elected to apply the provisions of Section 11 ‘Basic Financial Instruments’ and Section
+12 ‘Other Financial Instruments Issues’ of FRS 102, in full, to all of its financial instruments.
+Financial assets and financial liabilities are recognised when the Company becomes a party to the contractual
+provisions of the instrument, and are offset only when the Company currently has a legally enforceable right
+to set off the recognised amounts and intends either to settle on a net basis, or to realise the asset and settle
+the liability simultaneously.
+Financial assets
+Trade debtors, group balances and other debtors
+Trade debtors, group and other debtors which are receivable within one year are initially measured at the
+transaction price. The debtors are subsequently measured at amortised cost, being the transaction price less
+any amounts settled and any impairment losses.
+A provision for impairment of trade debtor, group and other debtors is established when there is objective
+evidence that the amounts due will not be collected according to the origina! terms of the contract.
+Impairment losses are recognised in the profit and loss account for the excess of the carrying value of the
+debtor over the present value of the future cash flows discounted using the original effective interest rate.
+Subsequent reversals of an impairment loss that objectively relate to an event occurring after the impairment
+loss was recognised, are recognised immediately in the income statement.
+Financial liabilities or equity instruments
+Financial instruments are classified as liabilities and equity instruments according to the substance of the
+contractual arrangements entered into. An equity instrument is any contract that evidences a residual interest
+in the assets of the Company after deducting all its liabilities.
+Borrowings — Funding group balances
+Borrowings are initially measured at the transaction price, including transaction costs, and subsequently
+measured at amortised cost using the effective interest method. Interest expense is recognised on the basis
+of the effective interest method and is included in interest payable and other similar charges. No interest is
+currently charged on these balances.
+Equity instruments
+Financial instruments classified as equity instruments are recorded at the fair value of the cash or other
+resources received or receivable, net of direct costs of issuing the equity instruments.
+Preference shares
+Dividends on preference shares classified as liabilities are presented within interest payable and similar
+charges.
+
+Page 19
+Stoke City Football Club Limited
+
+ACCOUNTING POLICIES :
+
+FINANCIAL INSTRUMENTS (CONTINUED)
+
+Trade creditors, group balances and other creditors :
+
+Trade, group and other creditors payable within one year-are initially measured at the transaction price and
+
+subsequently measured at amortised cost, being the transaction price less any amounts settled. :
+Derecognition of financial assets and liabilities
+
+A financial asset is derecognised only when the contractual rights to cash flows expire or are settled, or
+
+substantially all the risks and rewards of ownership are transferred to another party, or if some significant
+
+risks and rewards of ownership are retained but control of the asset has transferred to another party that is
+
+able to sell the asset in its entirety to an unrelated third party. A financial liability (or part thereof) is
+
+derecognised when the obligation specified in the contract is discharged, cancelled or expires.
+
+Page 20
+Stoke City Football Club Limited
+NOTES TO THE FINANCIAL STATEMENTS
+For the year ended 31 May 2025 .
+1 CRITICAL ACCOUNTING ESTIMATES AND AREAS OF JUDGEMENT
+Estimates, judgements and assumptions
+The Company makes estimates and assumptions concerning the future. The resulting accounting
+. estimates and assumptions will, by definition, seldom equal the related actual results. The directors
+consider there are no estimates, judgements and assumptions that have a significant risk of causing
+a material adjustment to the carrying amounts of assets and liabilities within the next financial year.
+2 TURNOVER
+Turnover, all of which arises from the Company’s principal activity and derived solely from the
+United Kingdom, can be analysed into its main components as follows:
+2025 2024
+£000 £000
+Gate receipts 5,740 5,732
+Sponsorship and advertising 10,281 10,077
+. Television and media 11,902 9,835
+Conferencing and hospitality 3,597 2,938
+Other operating income 3,918 3,689
+35,438 32,271
+Details for the current period of turnover and profit by class of business is given in the profit and
+loss account and comparative information for the year ended 31 May 2024 is shown below:
+COMPREHENSIVE INCOME BREAKDOWN Year ended 31 May 2024
+Operations
+excluding player Player trading Total
+trading
+£000 £000 £000
+Turnover 32,271 : - 32,271
+Operating expenses (56,638) (6,344) (62,982)
+(24,367) (6,344) (30,711)
+Profit on disposal of player registrations - 4,408 4,408
+Profit on disposal of fixed assets 67 - 67
+Operating loss (24,300) (1,936) (26,236)
+Page 21
+Stoke City Football Club Limited .
+NOTES TO THE FINANCIAL STATEMENTS :
+; For the year ended 31 May 2025 - ,
+3 INTEREST RECEIVABLE AND SIMILAR INCOME
+: : : 2025 2024
+: £000 £000
+. Bank interest : : 1,230 - 374
+; 4 LOSS BEFORE TAXATION :
+, . * 2025 2024
+. . . £000 £000
+Loss before taxation is stated after charging/(crediting): :
+, Depreciation and amounts written off tangible fixed assets: .
+Charge for the year: : .
+Owned assets 323 235
+Amortisation of intangible fixed assets 6,807 6,344
+Impairment of intangible fixed assets 692 -
+Operating lease rentals: .
+Land and buildings 4,226 4,719
+Exchange profits (27) (46) oo
+Profit on disposal of fixed assets (17) ° (67)
+, Audit services: — ,
+. Statutory audit 33 33
+Audit-related assurance services - 14 14
+, 47 47
+5 EMPLOYEES .
+2025 2024
+7 Number Number
+The average monthly number of persons (including directors)
+employed by the Company during the year was:
+Full time playing staff and scholars 103 90
+Other 229 209
+332 299
+Stoke City Football Club Limited
+NOTES TO. THE FINANCIAL STATEMENTS
+For the year ended 31 May 2025 :
+5 EMPLOYEES (CONTINUED) :
+. 2025 2024
+£000 £000
+Staff costs for the above persons:
+Wages and salaries 26,513 27,775
+Social security costs 3,507 3,735
+Other pension costs 280 254
+30,300 31,764
+DIRECTOR’S REMUNERATION AND HIGHEST PAID DIRECTOR 2025 2024
+£000 £000
+Emoluments : - -
+The number of directors to whom relevant benefits were accruing under money purchase pension
+schemes was nil (2024: nil).
+The remuneration of the Directors is paid by a related party, a former parent group company.
+6 PLAYER TRADING
+2025 2024
+: : £000 £000
+Amortisation of intangible fixed assets (6,807) (6,344) :
+Impairment of intangible fixed assets (692) -
+Profit on disposal of players’ registrations 151 4,408
+(7,348) (1,936) ,
+Page 23
+Stoke City Football Club Limited
+NOTES TO THE FINANCIAL STATEMENTS
+For the year ended 31 May 2025
+7 TAXATION :
+2025 2024 ;
+£000 £000
+Current tax
+UK corporation tax (1,061) - :
+(1,061) -
+Deferred taxation:
+Origination and reversal of timing differences (3,329) (591)
+. Recognition of unprovided deferred tax - 3,355
+Adjustment in respect of prior years 565 -
+(2,764) 2,764
+Tax on loss (3,825) 2,764
+Factors affecting tax charge for the year: :
+. The tax assessed for the year is lower (2024: higher) than the effective rate
+of corporation tax in the UK of 25% (2024: 25%) applied to the loss for
+the year. The differences are explained below: .
+Loss before taxation : (28,307) (25,862)
+Loss multiplied by the effective rate of corporation tax in the UK of 25%
+(2024: 25%) (7,077) (6,465)
+Effects of:
+Expenses not deductible for tax purposes 7. 21
+Transfer pricing adjustment (150) (148)
+Group relief 540 6,001
+Prior year adjustments - 565 -
+Movement in deferred tax not recognised 2,290 3,355
+Total tax (credit)/charge for the year (3,825) 2,764
+Page 24
+Stoke City Football Club Limited
+NOTES TO THE FINANCIAL STATEMENTS « .
+For the year ended 31 May 2025 :
+8 INTANGIBLE FIXED ASSETS :
+Players’
+registrations
+£000
+Cost ‘
+At beginning of year : 23,989
+Additions 7,329 .
+Disposals (5,616)
+Atend of year . 25,702
+Amortisation
+At beginning of year 9,917
+Charge for year 6,807
+Impairment 692
+Disposals (3,364)
+At end of year 14,052
+Carrying amount :
+At 31 May 2025 11,650
+At 31 May 2024 14,072
+The amortisation charge and impairment loss for the year of player registrations is recognised
+within operating expenses. A provision for impairment has been made where the carrying amount
+has been deemed to exceed the recoverable amount.
+The carrying amount players’ and manager registrations of £1 1,650,000 (2024: £14,072,000) has a
+remaining amortisation period of up to 3 years (2024: up to 3 years).
+Page 25
+Stoke City Football Club Limited —
+NOTES TO THE FINANCIAL STATEMENTS
+: For the year ended 31 May 2025 : :
+9 TANGIBLE FIXED ASSETS . -
+. Plant,
+, . equipment
+: and motor
+: vehicles .
+: £000
+. Cost .
+At beginning of year 2,000
+: Additions 539
+Disposals - . ~ (233)
+" Atend of year ; 2,306
+Depreciation co :
+At beginning of year . 1,421
+. Charge for year 323
+Disposals (107)
+At end of year ; 168700
+Carrying amount . ,
+_ At31 May 2025 669
+At31 May 2024 ; , 579
+10 STOCKS
+: 2025 2024
+: £000 . £000
+: Goods for resale . 1,090 * $53
+: ; Page 26
+Stoke City Football Club Limited
+NOTES TO THE FINANCIAL STATEMENTS
+For the year ended 31 May 2025
+11 DEBTORS
+2025 2024
+£000 £000
+Amounts falling due within one year:
+Trade debtors 8,884 7,742
+Other debtors : 147 149
+Prepayments and accrued income 643 167
+9,674 8,658
+Amounts falling due in more than one year:
+Trade debtors - 6,780
+9,674 15,438
+12 CREDITORS: Amounts falling due within one year , :
+2025 2024
+£000 £000
+Trade creditors 3,229 3,940
+Amounts owed to group undertakings 191,203 151,009
+Other taxation and social security costs 1,738 2,053
+Accruals and deferred income : 8,076 10,435
+204,246 167,437
+Although repayable on demand, the group undertakings have confirmed they will only request
+repayment of the amounts owed in respect of long term funding when the Company has resources
+to repay the debt.
+13 CREDITORS: Amounts falling due after more than one year
+2025 2024
+£000 £000
+: Trade creditors . 527 -
+Preference shares of £1 each (see note 15) 1 1
+528 1
+: Page 27
+Stoke City Football Club Limited a ,
+. NOTES TO THE FINANCIAL STATEMENTS
+‘ _ For the year ended 31 May 2025 ; , ; ;
+14 PROVISIONS FOR LIABILITIES : :
+Deferred Onerous Pension Total
+: taxation contract obligations £000
+. £000 £000 £000 ,
+Balance at beginning of year 2,764 “80 83 . » 2,927
+(Credit)/charge in the year (2,764) 751 - (2,013)
+Paid in the year - (80) (38) (118)
+. , Balance at end of year — . -¢ 751 45 796
+: Pension obligations . :
+: Certain staff.of the Company are members of either the Football League Limited Retirement Income
+Scheme, a defined benefit scheme, or the Football League:-Limited Pension and Life Assurance
+Scheme (“FLLPLAS”), a defined benefit scheme.
+There is insufficient information to account for the scheme as a defined benefit plan, so it is
+accounted for as a defined contribution plan. . :
+At 1 September 2023, a Minimum Funding Requirement (“MFR”) deficit was identified in the
+scheme, of which a proportion was allocated to Stoke City Football Club Limited. Contributions
+have continued to be paid during the year, as advised by the actuary, resulting in a provision relating .
+to the Club’s share of the MFR deficit of £45,000 at the year end (2024: £83,000). The Company
+: expects to make contributions of £38,000 in the next accounting period. .
+In addition to the above the Company also contributes to a defined contribution scheme and makes
+contributions to employees’ personal pension plans.
+Contributions to all pension schemes totalling £351,000 (2024: £254,000) were paid to the various
+schemes in the year. At the year end £47,000 (2023: £35,000) relating to unpaid contributions were
+included in accruals and deferred income. These amounts were paid in June 2025.
+Deferred taxation ,
+The elements of the deferred liability and amounts not provided are as follows:
+, 2025 2024 ,
+Provided Unprovided Provided | Unprovided
+. £000 £000 £000 . £000
+Fixed asset timing differerices 2,121 : - 2,816 - :
+Other timing differences - (42) - (52) -
+Losses (2,079) (2,290) - -
+. - (2,290) 2,764 -
+: Page 28
+Stoke City Football Club Limited
+NOTES TO THE FINANCIAL STATEMENTS
+For the year ended 31 May 2025
+14 PROVISIONS FOR LIABILITIES (CONTINUED) :
+Onerous contracts
+The onerous employment contracts provision in respect of the Club is recognised for contracts under .
+which the unavoidable costs of meeting the obligations under the contracts exceed the economic
+benefits expected to be received under them.
+; The onerous employment contracts provision is expected to be utilised over the next twelve months.
+15 SHARE CAPITAL
+2025 2024
+£000 £000
+Allotted and called up:
+35,690,321 Ordinary shares of £1 each 35,690 35,690
+64,000 Ordinary I shares of £1 each 64 64
+88,023 Ordinary Y shares of £1 each 88 88
+1 Ordinary W shares of £1 each - -
+Equity shareholders 35,842 35,842
+Non-Equity: preference shares of £1 each : 1 1
+Cumulative preference A Shares of £1 each - -
+Cumulative preference B shares of £1 each - -
+. 1 1
+The I, Y and W ordinary shares attach various voting rights, in all other respects the shares rank pari
+passu. The preference shares are non-redeemable and carry no interest coupon.
+16 COMMITMENTS UNDER OPERATING LEASES
+The total future minimum lease payments under non-cancellable operating leases is as follows:
+. 2025 2024
+£000 £000
+. Amounts due within one year 4,610 4,635
+Amounts due between one and five years 18,440 18,444
+Amounts due in more than five years 73,760 78,370
+96,810 101,449
+Of the above commitments the majority relate to the lease of the football Stadium and Training
+Ground.
+Page 29
+Stoke City Football Club Limited
+NOTES TO THE FINANCIAL STATEMENTS
+For the year ended 31 May 2025
+17 CONTINGENT LIABILITIES AND ASSETS
+As at the year end the directors review the existing and former player contracts to determine if
+contingent liabilities or contingent assets exist from transfer fees payable and receivable. A degree
+of estimation is required in this assessment to establish the level of disclosure to make. Provisions
+are made once certainty of outcome has been achieved. Contingent liabilities and assets are assessed
+based on outcomes being achievable rather than actually achieved.
+Additional fees under these contracts that may therefore be payable or receivable if certain
+conditions are met in the future, such as promotion to the Premier League and activities of other
+football clubs, have been assessed by the directors at the year end date as a maximum net liability
+of £11,469,000 (2024: £11,713,000).
+18 RELATED PARTY TRANSACTIONS ;
+During the financial year the Company had the following transactions with related parties:
+2025 2024
+Description of Description of Aggregate Net Aggregate Net
+relationship transactions value for amount value for amount
+financial owed to/ financial owed to /
+year (by) the year (by) the
+company company
+£000 £000 £000 £000
+Entities under Purchases and
+; common other charges (13,464) (46,338) (16,449) (46,751)
+control
+Sales and other 9,088 4 9,158 16
+income
+Loans received 46,000 (144,865) 12,000 (104,258)
+Other related Sales and other
+parties income 864 207 668 177
+The gross amount due to Stoke City Holdings Limited at the year end was £144,865,000 (2024:
+£104,258,000).
+19 POST BALANCE SHEET EVENTS
+Subsequent to the year end, the Company has acquired and committed to acquire player registrations
+at an initial cost of £11,356,000 (2024: £5,125,000). The Company has also realised £7,346,000
+(2024: £77,000) on the disposal of player registrations and whose net book value at the year end
+was £3,381,000 (2024: £1,760,000).
+Page 30
+Stoke City Football Club Limited
+NOTES TO THE FINANCIAL STATEMENTS ;
+For the year ended 31 May 2025
+20. ULTIMATE CONTROLLING PARTY ,
+The ultimate parent company of Stoke City Football Club Limited at the year end was Stoke City .
+Holdings Limited, a Company incorporated and registered in the UK.
+The consolidated financial statements of Stoke City Holdings Limited are available to the public
+and may be obtained from: /
+Registrar of Companies ,
+Crown Way
+CARDIFF
+CF14 3UZ
+On 8 July 2024 ali shares in Stoke City Holdings Limited and its subsidiaries were demerged from
+bet365 Group Limited to John Coates, who is now the ultimate controlling party.
+Page 31
 

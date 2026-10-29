@@ -2,7 +2,7 @@ source: Companies House filing, manchester-city-fc__2.pdf
 document: zOP14F-fIo7zZC2OTFloR2Q9J6NMp3VXDVxpvSoJ6UY
 made_up_date: 2024-06-30
 method: ocr
-pages_read: 12 of 37
+pages_read: 37 of 37
 
 . ' , .
 Docusign Envelope ID: F2F1E40E-A408-468E-AE8F-72953131AC48 : ny .
@@ -434,4 +434,1039 @@ communicated by the supplier; and
 ¢ Verified a sample of changes to existing supplier’s bank details during the year were those communicated by the
 supplier.
 1
+Docusign Envelope ID: F2F1E40E-A408-468E-AE8F-72953131AC48
+Manchester City Football Club Limited
+Independent Auditors’ Report to the Members of Manchester City Football Club
+Limited (continued)
+Fraud (continued) :
+We also communicated relevant identified laws and regulations and potential fraud risks to all engagement team members who were
+all deemed to have appropriate competence and capabilities and remained alert to any indications of fraud or non-compliance with
+laws and regulations throughout the audit.
+Our audit procedures were designed to respond to risks of material misstatement in the financial statements, recognising that the
+risk of not detecting a material misstatement due to fraud is higher than the risk of not detecting one resulting from error, as fraud
+may involve deliberate concealment by, for example, forgery, misrepresentations or through collusion. There are inherent limitations
+in the audit procedures performed and the further removed non-compliance with laws and regulations is from the events and
+transactions reflected in the financial statements, the less likely we are to become aware of it.
+A further description of our responsibilities is available on the Financial Reporting Council’s website at: ;
+https://www. frc.org.uk/auditorsresponsibilities. This description forms part of our auditor’s report.
+Use of our report
+This report is made solely to the Company’s members, as a body, in accordance with Chapter 3 of Part 16 of the Companies Act
+2006. Our audit work has been undertaken so that we might state to the Company’s members those matters we are required to state -
+to them in an auditor’s report and for no other purpose. To the fullest extent permitted by law, we do not accept or assume
+responsibility to anyone other than the Company and the Company’s members as a body, for our audit work, for this report, or for
+the opinions we have formed.
+DocuSigned by:
+& Weed.
+'D8CD3620513C4D9...
+Stuart Wood (Senior Statutory Auditor)
+For and on behalf of BDO LLP, Statutory Auditor
+Manchester, UK
+8 October 2024
+BDO LLP is a limited liability partnership registered in England and Wales (with registered number OC305127).
+12
+Docusign Envelope ID: F2F 4 E40E-A408-468E-AE8F-72953131AC48
+Manchester City Football Club Limited
+Statement of Profit or Loss
+for the year ended 30 June 2024
+Operations Player trading .
+excluding and
+player trading amortisation
+2024 2024 2024 2023
+Note £000 £000 £000 £000
+Revenue 4 715,019 - 715,019 712,768
+Other operating income 5 4,455 - 4,455 5,456
+Operating expenses 5 (614,877) (165,094) (779,971) (753,862)
+Operating profit/(loss) 104,597 (165,094) (60,497) (35,638)
+Profit on disposal of players’ registrations - 139,009 139,009 121,720
+Profit/(loss) before interest and taxation 104,597 (26,085) 78,512 : 86,082
+Interest receivable and similar income 9 1,098 - 1,098 56
+Interest payable and similar charges 10 (5,853) - (5,853) (5,767)
+Profit/(loss) on ordinary activities before taxation 99,842 (26,085) 73,757 80,371
+Taxation a -. : : :
+Profit/(loss) on ordinary activities after taxation 99,842 (26,085) 73,757 80,371
+The results for the period are from continuing operations. The Company did not have any other comprehensive income in the current
+year or prior year. ;
+The notes on pages 16 to 36 form part of these financial statements.
+13
+Docusign Envelope ID: F2F 1E40E-A408-468E-AE8F-72953131AC48
+Manchester City Football Club Limited
+Balance Sheet
+Registered number 00040946
+as at 30 June 2024
+2024 2023
+Note £000 £000
+Non-current assets
+Intangible assets 12 519,998 488,071
+Property, plant and equipment 13 378,582 319,834
+Right of use asset 14 77,060 78,512
+Trade and other receivables 16 45,067 87,500
+1,020,707 973,917
+Current assets .
+Trade and other receivables 16 458,737 467,965
+Cash at bank and in hand 53,767 79,260
+: 512,504 547,225
+Current liabilities
+Derivative financial instruments (5,279) -
+Trade and other payables . 7 (351,344) (378,201)
+Deferred income 20 (118,937) (223,445)
+(475,560) (601,646)
+Net current assets/(liabilities) 36,944 (54,421)
+Total assets less current liabilities 1,057,651 919,496
+Non-current liabilities
+Trade and other payables 18 (193,006) (129,083)
+(193,006) (129,083)
+Net assets 864,645 790,413
+Equity
+Called up share capital 22 1,339,575 1,339,575 :
+Share premium account 45,008 45,008
+Retained earnings (519,938) (594,170)
+Total equity 864,645 790,413
+The notes on pages 16 to 36 form part of these financial statements.
+These financial statements were approved by the Board of Directors on 8 October 2024 and were signed on its behalf by:
+DocuSigned by:
+[ts MacBeath
+'D9708BSDCC55497...
+J MacBeath .
+Director
+14 :
+Docusign Envelope ID: F2F1E40E-A408-468E-AE8F-72953131AC48
+Manchester City Football Club Limited
+Statement of Changes in Equity
+Share Retained
+Share Capital Premium Earnings Total
+£000 £000 £000 £000
+As at 30 June 2022 1,339,575 45,008 (675,383) 709,200
+Profit for the year - - 80,371 80,371
+Capital contribution (share-based payments) - - 842 842
+As at 30 June 2023 1,339,575 45,008 (594,170) 790,413
+Profit for the year - - 73,757 73,757
+Capital contribution (share-based payments) : : 475 475
+As at 30 June 2024 1,339,575 45,008 (519,938) 864,645
+The notes on pages 16 to 36 form part of these financial statements.
+15
+Docusign Envelope ID: F2F1E40E-A408-468E-AE8F-72953131AC48
+
+Manchester City Football Club Limited
+
+Notes to the Financial Statements
+
+1. General information
+The financial statements of Manchester City Football Club Limited (‘the Company’ or ‘the Club’) for the year ended 30 June
+2024 were authorised for issue by the Board of Directors and the balance sheet was signed on the Board’s behalf by J
+MacBeath on 8 October 2024. Manchester City Football Club Limited is a private company limited by share capital
+incorporated and domiciled in England and Wales under the Companies Act 2006. The registered office is Etihad Stadium,
+Etihad Campus, Manchester M11 3FF. The principal activity of the Company is discussed in the Strategic Report.
+
+2. Material accounting policies —
+The principal accounting policies applied in the preparation of these financial statements are set out below. These policies
+have been consistently applied to all of the years presented.
+Basis of preparation ~
+The Company meets the definition of a qualifying entity under FRS 100 issued by the Financial Reporting Council (‘FRC’).
+The Company financial statements have therefore been prepared in accordance with FRS 101 and with those parts of the
+Companies Act 2006 applicable to companies reporting under FRS 101. The Company has taken advantage of the following
+disclosure exemptions under FRS 101:
+
+e the requirements of paragraph 62, B64(d), B64(e), B64(g), B64(h), B64(j)-B64(m), B64(n)(ii), B64(0)(ii), B64(p),
+B64(q)(ii), B66 and B67 of IFRS 3 (R) Business combinations;
+
+e the requirement of IFRS 7 Financial instruments: disclosures;
+
+¢ the requirements of paragraphs 91-99 of IFRS 13 Fair value measurement;
+
+© the requirements of IAS 7 Statement of cash flows;
+
+¢ the requirements of paragraphs 30 and 31 of IAS 8 Accounting policies, changes in accounting estimates and errors;
+
+e the requirements of paragraph 17 and 18A of IAS 24 Related party disclosures;
+
+© the requirement in paragraph 38 of IAS 1 Presentation of financial statements to present comparative information
+in respect of: (i) paragraph 79(a) (iv) of IAS 1; (ii) paragraph 73(e) of LAS 16 Property, plant and equipment; (iii)
+paragraph 118(e) of IAS 38 Intangible assets; -
+
+. e the requirements of paragraphs 10(d), 10(f), 16, 40(a)-(d), 111 and 134-136 of IAS 1 Presentation of Financial
+Statements; .
+
+e the requirements in IAS 24 Related party disclosures to disclose related party transactions entered into between two
+or more members of City Football Group Limited, provided that any subsidiary which is a party to the transaction
+is wholly owned by such a member;
+
+e the requirements of paragraphs 130(fii), 130(fiii), 134(d)-(f) and 135(c)-(e) of LAS 36 Impairment of assets;
+
+© the requirements of the second sentence of paragraph 110 and paragraphs 113(a), 114, 115, 118, 119(a)-(c), 120-
+
+, 127 and 129 of IFRS 15 Revenue from Contracts with Customers; and
+« the requirements of paragraphs 52, 58, the second sentence of paragraph 89, and paragraphs 90, 91 and 93 of IFRS 16
+Leases, |
+These financial statements are presented in pounds sterling and all values are rounded to the nearest thousand except when
+otherwise stated.
+16
+Docusign Envelope ID: F2F1E40E-A408-468E-AE8F-72953131AC48
+Manchester City Football Club Limited
+Notes to the Financial Statements (continued) .
+2. Material accounting policies (continued)
+New standards, amendments and interpretations
+There are a number of standards, amendments to standards, and interpretations which have been issued by the IASB.
+The following amendments are effective for the period beginning 1 July 2023:
+e IAS 1 Presentation of Financial Statements (Amendment to Disclosure of Accounting Policies);
+e IAS 8 Accounting Policies, Changes in Accounting Estimates and Errors (Amendment to the Definition of
+Accounting Estimates);
+e IAS 12 Income Taxes (Amendment to Deferred Tax related to Assets and Liabilities Arising from a Single
+Transaction); and
+e IFRS 17 Insurance ‘Contracts. .
+These amendments are mandatorily effective for reporting periods beginning on or after 1 January 2023. See the applicable
+notes for further details on how the amendments affected the Company.
+JAS I Presentation of Financial Statements (Amendment to Disclosure of Accounting Policies)
+In February 2021, the IASB issued amendments to IAS 1 and IFRS Practice Statement 2. The amendments aim to make
+accounting policy disclosures more informative by replacing the requirement to disclose ‘significant accounting policies’
+with ‘material accounting policy information’. The amendments also provide guidance under what circumstance, the
+accounting policy information is likely to be considered material and therefore requiring disclosure.
+These amendments had no effect on the measurement or presentation of any items in the financial statements of the ;
+Company but affect the disclosure of accounting policies of the Company. A number of accounting policies evident in the
+prior year have been removed.
+IAS 8 Accounting Policies, Changes in Accounting Estimates and Errors (Amendment to the Definition of Accounting
+Estimates)
+The amendments to IAS 8, which added the definition of accounting estimates, clarify that the effects of a change in an
+input or measurement technique are changes in accounting estimates, unless resulting from the correction of prior period
+errors. These amendments clarify how entities make the distinction between changes in accounting estimates, changes in
+accounting policy and prior period errors.
+These amendments had no effect on the financial statements of the Company.
+IAS 12 Income Taxes (Amendment to Deferred Tax related to Assets and Liabilities Arising from a Single Transaction)
+In May 2021, the IASB issued amendments to IAS 12, which clarify whether the initial recognition exemption applies to
+certain transactions that result in both an asset and a liability being recognised simultaneously (e.g. a lease in the scope of
+IFRS 16). The amendments introduce an additional criterion for the initial recognition exemption, whereby the exemption
+does not apply to the initial recognition of an asset or liability which at the time of the transaction, gives rise to equal taxable
+and deductible temporary differences.
+These amendments had no effect on the financial statements of the Company.
+17
+Docusign Envelope ID: F2F1E40E-A408-468E-AE8F-72953131AC48
+Manchester City Football Club Limited
+Notes to the Financial Statements (continued)
+2. Material accounting policies (continued)
+New standards, amendments and interpretations (continued)
+: IFRS 17 Insurance Contracts
+IFRS 17 was issued by the IASB in 2017 and replaces IFRS 4 for annual reporting period beginning on or after 1 January
+2023. IFRS 17 introduces an internationally consistent approach to the accounting for insurance contracts. Prior to IFRS 17,
+significant diversity has existed worldwide relating to the accounting for and disclosure of insurance contracts, with IFRS 4
+permitting many previous accounting approaches to be followed. Since IFRS 17 applies to all insurance contracts issued by
+an entity (with limited scope exclusions), its adoption may have an effect on non-insurers such as the Company. The Company
+carried out an assessment of its contracts and operations and concluded that the adoption of IFRS 17 has had no effect on the
+annual financial statements of the Company. : :
+New and amended standards and interpretations issued but not yet effective
+There are a number of standards, amendments to standards, and interpretations which have been issued by the [ASB that are
+effective in future accounting periods that the Company has decided not to adopt early.
+The following amendments are effective for the period beginning 1 January 2024:
+e JAS 1] Presentation of Financial Statements (Amendment to Classification of Liabilities as Current or Non-current);
+© IAS 1 Presentation of Financial Statements (Amendment to Non-current Liabilities with Covenants); and
+e IFRS 7 Financial Instruments: Disclosures (Amendment to Supplier Finance Arrangements).
+The Company is currently assessing the impact of these new accounting standards and amendments. The Company does not
+expect any standards issued by the IASB, but are yet to be effective, to have a material impact on the Company.
+Material accounting policies adopted are set out below.
+Going Concern .
+The forecasting was prepared for City Football Group (‘the Group’), of which the Company is a subsidiary. The Group has
+prepared a detailed cash flow forecast which shows that the Group is able to operate and meet its liabilities as they fall due
+for payment for at least 12 months from the date of approval of these financial statements.
+The Group considered multiple scenarios and performed stress-tests to the cash flow forecast. This includes reductions in
+future expected cash inflows, with on-pitch performance being a key driver, as well as increases to the interest rate charged
+on the $650m term loan secured in July 2021 and $270m term loan secured in June 2024. Inflationary pressures as well as
+challenges with the current global economic climate have also been considered as part of this forecasting.
+Following this assessment, the Directors reasonably expect the Group will continue in existence for a period of at least 12
+months following the date these financial statements are approved. Accordingly, the financial statements have been prepared
+~~ on a going concem basis.
+es |e ;
+Docusign Envelope ID: F2F 1E40E-A408-468E-AE8F-72953131AC48
+
+Manchester City Football Club Limited
+
+Notes to the Financial Statements (continued)
+
+2. Material accounting policies (continued)
+Basis of consolidation :
+The financial statements contain information about Manchester City Football Club Limited as an individual company and do
+not contain consolidated financial information as the parent of a group. The Company is exempt under section 400 of the
+Companies Act 2006 from the requirement to prepare consolidated financial statements as it and its subsidiary undertakings
+are included by full consolidation in the consolidated financial statements of City Football Group Limited, a company
+
+. registered in England and Wales.
+Foreign currency translation
+The Company’s financial statements are presented in pounds sterling, which is both the Company’s functional currency, and
+the currency of the primary economic environment in which the Company operates.
+Transactions and balances
+Transactions in foreign currencies are recorded using the rate of exchange ruling at the date of the transaction.
+Monetary assets and liabilities denominated in foreign currencies are translated using the contracted rate or the rate of
+exchange ruling at the reporting date. All differences are taken to the profit or loss account. Tax charges and credits
+attributable to exchange differences on those monetary items are also recorded in profit or loss.
+Non-monetary items that are measured at historical cost in a foreign currency are translated using the exchange rates as at
+the dates of the initial transactions. Non-monetary items measured at fair value in a foreign currency are translated using the
+exchange rates at the date when the fair value is determined.
+The gain or loss arising on translation of non-monetary items is recognised with the gain or loss of the item that gave rise to
+the translation difference.
+Revenue
+Revenue represents the fair value of considerations received or receivable from the Company’s principal activities, excluding
+VAT, other sales taxes and transfer fees. The Company’s principal revenue streams are matchday income, TV broadcasting
+income, and commercial activities relating to the Company. The Company recognises revenue based on the fair value of
+each performance obligation within a contract, once the obligations have been extinguished, for each of the principal activities
+which are separated by category of revenue described below.
+The performance obligations of Manchester City are directly related to the typical payment terms of customers.
+Matchday : ,
+Matchday revenue is based on men’s football matches played by the Club throughout the year. Revenue from each match is
+recognised only after each match is played throughout the year. General admission tickets for a matchday are refunded up to
+seven days prior to the event.
+Matchday revenue includes revenue generated from Manchester City Football Club domestic and European matchday
+activities played at the Etihad Stadium in Manchester, together with the Company’s share of gate receipts from domestic cup
+. matches not played at the Etihad Stadium. The share of gate receipts payable to the opposition club and competition organiser
+for domestic cup matches held at the Etihad Stadium is recognised as an operating expense once the match has been played.
+Matchday revenue received in advance of the year end, relating to the following year is treated as deferred income until such
+time that the related match is played when the revenue is recognised. Deferred matchday revenue mainly relates to seasonal
+facilities at the Etihad Stadium.
+The Company recognises, under IFRS 15, the gross revenue generated from the catering contract for the provision of food
+and beverages at the Etihad Stadium, as Manchester City Football Club is acting as the principal.
+19 :
+Docusign Envelope ID: F2F 1E40E-A408-468E-AE8F-72953131AC48 :
+* eo. :
+
+Manchester City Football Club Limited
+
+Notes to the Financial Statements (continued)
+
+2. Material accounting policies (continued) .
+TV broadcasting
+TV broadcasting revenue represents revenue generated from all UK and overseas media contracts, including contracts
+negotiated on behalf of participating clubs by the Premier League and UEFA. .
+Revenue from the Premier League in respect of TV broadcasting for each football season is recognised in line with games
+played. The fixed element of revenue received from the Premier League is recognised as home games are played in the
+season. Facility fees for live coverage, near live coverage and highlights are earned for home and away matches and
+recognised following the completion of each match.
+UEFA distributions from participation in the UEFA Champions League include market pool payments recognised over the
+matches played and fixed amounts for participation in individual matches recognised when matches are played.
+Fines and penalties that are in relation to performance obligations and are not in respect of the purchase of a distinct good or
+service are treated as variable revenue. :
+Other commercial
+Other commercial revenue includes revenue derived from the Manchester City brand through partnership and other
+commercial contracts. Revenue from related activities such as concerts, conferences and events is recognised following the
+completion of the event.
+Revenue receivable in advance of the event is deferred until its completion when it is recognised as revenue. Revenue
+receivable in relation to partnership contracts over and above the minimum guaranteed revenue within the contract is
+recognised as revenue when each performance obligation within a contract has been extinguished. Revenue receivable from
+partners in relation to bonuses for the success of the first team in certain competitions represent variable consideration which
+is estimated at the contract inception using the most likely amount method based on management’s estimate of where the
+first team will finish at the end of each season. Revenue is recognised over the term of the contract in line with the partnership
+benefits enjoyed by each partner.
+
+: Other operating income :
+Income generated from other operations, such as compensation from UEFA and FIFA for releasing players to
+play in national competitions, and income from the Elite Player Performance Plan (‘EPPP’), being a youth development
+scheme initiated by the Premier League, is recognised in the financial year for the season to which it relates.
+Accrued and deferred income :
+Revenue relating to matchday, TV broadcasting and other commercial activities received after the financial year end to which
+it relates is accrued as earned.
+Revenue relating to matchday, TV broadcasting and other commercial activities receivable prior to the year end in respect of
+seasons in future financial years is deferred.
+Taxes
+‘Current income tax .
+Current income tax assets and liabilities for the current period are measured at the amount expected to be recovered from or
+paid to the taxation authorities. The tax rates and tax laws used to compute the amount are those that are enacted or
+substantively enacted at the reporting date in the countries where the Company operates and generates taxable income.
+Current income tax relating to items recognised directly in other comprehensive income (‘OCI’) is recognised in OCI and
+not in profit or loss. Management periodically evaluates positions taken in the tax returns with respect to situations in which
+applicable tax regulations are subject to interpretation and establishes provisions where appropriate.
+20
+Docusign Envelope ID: F2F1E40E-A408-468E-AE8F-72953131AC48
+Manchester City Football Club Limited
+Notes to the Financial Statements (continued)
+2. Material accounting policies (continued)
+Deferred tax
+Deferred tax is provided using the liability method on temporary differences at the reporting date between the tax bases of
+assets and liabilities and their carrying amounts for financial reporting purposes. .
+Deferred tax liabilities are generally recognised for all taxable temporary differences and deferred tax assets are recognised
+only to the extent that it is probable that taxable profit will be available against which deductible timing differences can be
+utilised.
+Deferred tax assets and liabilities are measured at the tax rates that are expected to apply in the year when the asset is realised
+or the liability is settled, based on tax rates (and tax laws) that have been enacted or substantively enacted at the reporting
+‘date.
+Deferred tax items are recognised in correlation to the underlying transaction either in the profit or loss account or in other
+comprehensive income.
+Deferred tax assets and deferred tax liabilities are offset if a legally enforceable right exists to set off current tax assets against
+: current income tax liabilities and the deferred taxes relate to the same taxable entity and the same taxation authority.
+VAT and other sales taxes
+Revenue, expenses and assets are recognised net of the amount of VAT or other sales tax, except where the VAT or sales tax
+incurred on a purchase of assets or services is not recoverable from the taxation authority, in which case the VAT or sales
+tax is recognised as part of the cost of acquisition of the asset or as part of the expense item as applicable.
+The net amount of VAT or sales tax recoverable from, or payable to, the taxation authority is included as part of receivables
+or payables in the balance sheet.
+Leases:
+IFRS 16 was adopted from 1 July 2019 using a modified retrospective transition approach.
+The main impact of IFRS 16 for the Company was the recognition of all future lease liabilities on the balance sheet.
+Corresponding right of use assets have also been recognised on the balance sheet representing the economic benefits of the
+Company’s right to use the underlying leased assets.
+The weighted average incremental borrowing rate applied to lease liabilities where no rate is included in the lease contract is
+7.14%.
+For any new contracts entered into, the Company considers whether a contract is or contains a lease. A lease is defined as a
+contract that conveys the right to use of an asset for a period of time in exchange for consideration. To apply this definition,
+the Company assesses whether the contract meets three key evaluations:
+e the contract contains an identified asset, which is either explicitly identified in the contract or implicitly specified
+by being identified at the time the asset is made available to the Company;
+e the Company has the right to obtain substantially all of the economic benefits from use of the identified asset
+throughout the period of use, considering its rights within the defined scope of the contract; and
+* the Company has the right to direct the use of the identified asset throughout the period of use. .
+21
+Docusign Envelope ID: F2F1E40E-A408-468E-AE8F-72953131AC48
+. ee
+
+Manchester City Football Club Limited
+
+Notes to the Financial Statements (continued)
+
+2. Material accounting policies (continued
+Property, plant and equipment ‘
+Property, plant and equipment is stated at cost, net of accumulated depreciation and accumulated impairment losses, if any.
+Such cost comprises purchase price and any directly attributable costs. When significant parts of property, plant and
+equipment are required to be replaced at intervals, the Company derecognises the replaced part, and recognises the new part
+with its own associated useful life and depreciation. ;
+
+Likewise, when a major inspection is performed, its cost is recognised in the carrying amount of the plant and equipment as
+a replacement if the recognition criteria are satisfied. All other repair and maintenance costs are recognised in the profit or
+loss account as incurred.
+
+: Assets are reviewed for impairment whenever events or changes in circumstances indicate that the carrying amount may not
+be recoverable. Any impairment charges are recognised in the profit or loss account when the carrying amount of the asset
+exceeds its estimated recoverable value, being the higher of the asset’s fair value less cost to sell and value in use. These
+amounts are calculated with reference to future discounted cash flows that the asset is expected to generate when considered
+as part of a cash-generating unit (‘CGU’).
+
+Property, plant and equipment and any significant part initially recognised is derecognised upon disposal or when no future
+economic benefits are expected from its use or disposal. Any gain or loss arising on derecognition of the asset (calculated as
+the difference between the net disposal proceeds and the carrying amount of the asset) is included in the profit or loss account
+when the asset is derecognised.
+The assets’ residual values, useful lives and methods of depreciation are reviewed at each financial year end and adjusted
+prospectively, if appropriate. Land is not depreciated. Depreciation on other assets is provided on a straight-line basis to write
+down assets to their estimated residual value over their estimated useful economic lives from the date of acquisition by the
+Company as follows:
+Land and buildings (freehold): 50 years straight-line
+Short leasehold improvements: —_ estimated useful economic life of the asset
+Long leasehold improvements: estimated useful economic life of the asset
+Fixtures, fittings & equipment: 4-10 years straight-line
+Assets under construction are carried at cost, less any recognised impairment loss. Cost includes professional fees and, for
+qualifying assets, borrowing costs capitalised in accordance with the Group’s accounting policy. Depreciation of these assets,
+determined on the same basis as other property assets, commences when the assets are ready for their intended use.
+Intangible assets
+Intangible assets acquired separately are measured on initial recognition at cost. The cost of intangible assets acquired in a
+business combination is their fair value as at the date of acquisition. Following initial recognition, intangible assets are carried
+at cost less accumulated amortisation and accumulated impairment losses, if any.
+Intangible assets with finite lives are amortised over their useful economic lives and assessed for impairment whenever there
+is an indication that the intangible asset may be impaired. The amortisation period and the amortisation method for an
+intangible asset with a finite useful life are reviewed at least at the end of each reporting period. Changes in the expected
+useful life or the expected pattern of consumption of future economic benefits embodied in the asset is accounted for by
+changing the amortisation period or method, as appropriate, and are treated as changes in accounting estimates. The
+amortisation expense on intangible assets with finite lives is recognised in profit or loss in the expense category consistent .
+with the function of the intangible assets.
+Gains or losses arising from derecognition of an intangible asset are measured as the difference between the net disposal
+proceeds and the carrying amount of the asset and are recognised in profit or loss when the asset is derecognised.
+
+220
+Docusign Envelope ID: F2F 1E40E-A408-468E-AE8F-72953131AC48
+A es
+
+Manchester City Football Club Limited
+
+Notes to the Financial Statements (continued)
+
+2. Material accounting policies (continued) :
+Players’ registrations and football staff remuneration
+Initial recognition
+Players’ registrations costs including transfer fees, associated agent fees, Premier League levy fees and other directly
+attributable costs are initially recognised at the fair value of the consideration payable for the acquisition. When a player’s
+registration is acquired, management will make an assessment to estimate the likely outcome of specific performance
+conditions. Contingent consideration will be recognised in the players’ registrations costs when management believes the
+performance conditions are met in line with the contractual terms. Periodic reassessments of the contingent consideration are
+completed. Any contingent amounts that management believe will be payable are included in the players’ registrations from
+the date management believe the performance conditions are met. Any additional amounts of contingent consideration not
+included in the costs of players’ registrations are disclosed separately as a commitment (note 24). Amortisation of costs is on
+a straight-line basis over the length of the players’ contract.
+Renegotiation
+The costs associated with an extension of a playing contract are added to the residual balance of the players’ registrations at
+the date of signing the contract extension. The revised net book value is amortised over the remaining renegotiated contract
+length. ;
+Impairment
+Management believe the value in use of a player’s registration cannot be determined on a player by player basis unless certain
+circumstances arise, such as a player suffering a career threatening injury or a player is no longer deemed to be part of the
+first team. If such an event were to arise, management would assess the registration’s fair value less cost-to-sell in comparison
+to its carrying value. Where the estimated fair value less cost-to-sell of a single player’s registration was below its carrying
+value, management would record an impairment charge in profit or loss immediately.
+Disposal
+When a player’s registration sale is completed, the fair value of consideration receivable less any applicable transaction costs,
+is assessed against the registration’s carrying value. Where the amounts are different, gains and losses arising as a result of
+the sale are recorded and disclosed separately within profit or loss on players’ registrations in the profit or loss account.
+Contingent consideration receivable from a sale of the players’ registrations is only recognised in the profit or loss account
+once the performance conditions within the contract are met.
+Remuneration
+Player remuneration is recorded in operating expenses in line with the conditions of the individual contracts. Performance
+bonuses are recorded as they become legally or contractually payable on a player-by-player basis. Loyalty and signing on
+fees payable are recorded in the profit or loss account in the period to which they relate.
+Investments
+The Company reviews each of its investments to assess whether control or significant influence exists. When the Company
+concludes that it has control of an investment, the investment is treated as a subsidiary. If control or joint control does not
+exist, the Company assesses the investment for significant influence. When significant influence does not exist, the
+investment is treated as a financial investment by the Company.
+Other investments held are stated at cost less any provision for impairment.
+Financial instruments
+A financial instrument is any contract that gives rise to a financial asset of one entity and a financial liability or equity
+instrument of another entity.
+
+23
+Oocusign Envelope ID: F2F 1E40E-A408-468E-AE8F-72953131AC48
+. oo.
+
+Manchester City Football Club Limited
+
+Notes to the Financial Statements (continued)
+
+2. Material accounting policies (continued) .
+Financial assets :
+Initial recognition and measurement ‘
+Financial assets are classified, at initial recognition, as amortised cost, financial assets at fair value through profit or loss or
+fair value through other comprehensive income financial assets. All financial assets are recognised initially at fair value.
+Subsequent measurement
+For purposes of subsequent measurement, financial assets are classified in two categories:
+
+- financial assets at fair value through profit or loss; and
+- financial assets classified as amortised cost.
+
+Financial assets at fair value through profit or loss
+Financial assets at fair value through profit or loss include financial assets held for trading and financial assets designated
+upon initial recognition at fair value through profit or loss. Derivatives, including separated embedded derivatives, are
+classified as fair value through profit or loss. Financial assets at fair value through profit or loss are carried in the balance
+sheet at fair value with net changes in fair value presented as interest payable and similar charges (negative net changes in
+fair value) or interest receivable and similar income (positive net changes in fair value) in profit or loss.
+Financial assets classified as amortised cost
+The asset is measured at the amount recognised at initial recognition minus principal repayments, plus or minus the
+cumulative amortisation of any difference between that initial amount and the maturity amount, and any loss allowance.
+Interest income is calculated using the effective interest method (‘EIR’) and is recognised in profit or toss. Changes in fair
+value are recognised in profit or loss when the asset is derecognised or reclassified.
+Impairment of financial assets
+The Company recognises an allowance for expected credit losses (‘ECLs’) for all debt instruments not held at fair value
+through profit or loss. ECLs are based on the difference between the contractual cash flows due in accordance with the
+contract and all the cash flows that the Company expects to receive, discounted at an approximation of the original effective
+interest rate.
+
+‘ ECLs are recognised in two stages. For credit exposures for which there has not been a significant increase in credit risk
+since initial recognition, ECLs are provided for credit losses that result from default events that are possible within the next
+12-months (a 12-month ECL). For those credit exposures for which there has been a significant increase in credit risk since
+initial recognition, a loss allowance is required for credit losses expected over the remaining life of the exposure, irrespective
+of the timing of the default (a lifetime ECL).
+
+Trade and other receivables
+Trade and other receivables are recognised initially at fair value and subsequently measured at amortised cost using the
+effective interest method, less provision for impairment. If collection is expected in greater than one year, the receivables are
+presented as non-current assets. If the receivables are expected to be collected in one year or less, they are presented as current
+assets.
+For trade receivables, the Company applies a simplified approach in calculating ECLs. Therefore, the Company does not
+track changes in credit risk, but instead recognises a loss allowance based on lifetime ECLs at each reporting date. The
+Company has established a provision matrix that is based on its historical credit loss experience, adjusted for forward-looking
+factors specific to the receivables and the economic environment.
+Cash at bank and in hand
+Cash at bank and in hand in the balance sheet comprise cash at banks and in hand as well as short-term deposits with a -
+maturity of three months or less.
+
+24 .
+Docusign Envelope ID: F2F 1E40E-A408-468E-AE8F-72953131AC48 .
+
+Manchester City Football Club Limited
+
+Notes to the Financial Statements (continued)
+
+2. Material accounting policies (continued
+Trade and other payables
+
+: Trade and other payables are obligations to pay for goods and services which have been acquired in the commercial
+
+operations of the Company. Amounts payable are presented as non-current liabilities if payment is due in greater than one
+year. Where amounts payable are due in one year or less, they are presented as current liabilities.
+Trade and other payables are recognised initially at fair value and subsequently measured at amortised cost using the effective
+interest method.
+Other loans
+Other loans are recognised initially at fair value and subsequently measured at amortised cost using the effective interest
+method.
+Pension costs
+The Company is one of a number of participating employers of The Football League Limited Pension and Life Assurance
+Scheme which has been closed for new employees. The Company is unable to identify its share of the assets and liabilities
+of the scheme. As such, the Company’s contributions into the scheme are recognised in profit or loss when they fall due.
+The Company also operates a defined contribution scheme. The assets of the scheme are held separately from those of the
+Company in an independently administered fund. The Company’s contributions into this scheme are recognised in profit or
+loss when they fall due.
+Share-based payments
+Where share options are awarded to employees, the fair value of the options are recognised in the Income Statement over the
+vesting period, calculated in proportion to the number of participating employees in the Company. The Monte Carlo valuation
+model has been used to calculate the fair value of the award on the date of grant.
+
+3. Significant accounting judgments, estimates and assumptions
+The preparation of the Company’s financial statements requires management to make judgments, estimates and assumptions ,
+that affect the reported amounts of revenue, expenses, assets and liabilities, and the disclosure of contingent liabilities, at the
+end of the reporting period. However, uncertainty about these assumptions and estimates could result in outcomes that require
+a material adjustment to the carrying amount of the asset or liability affected in future periods. Estimates and assumptions
+used by management are based on historical experience and other relevant factors.
+Players’ registrations
+The costs associated with players’ registrations are initially recognised at the fair value of the consideration payable for the
+acquisition. When a player’s registration is acquired, management will make an assessment to estimate the likely outcome
+of specific performance conditions. Contingent consideration will be recognised in the players’ registrations costs when
+management believes the performance conditions are met in line with the contractual terms. Subsequent reassessments of the
+contingent consideration payable are included in the players’ registrations. The estimate of the amount of contingent
+consideration payable requires management to assess, on a player-by-player basis, when it is deemed that the specific
+performance terms are met.
+Management will perform an impairment review of player’s registrations, if events indicate that the carrying value is not
+recoverable through an inflow of future economic benefits. Whilst management do not feel it is appropriate to separate an
+individual player’s registration from a single cash-generating unit (‘CGU’), being the operations of the club in possession of
+the registration, there may be limited circumstances in which a registration is removed from the CGU and recoverability
+assessed separately. Where such indications exist, management will compare the carrying value of the asset with
+
+. management’s best estimate of fair value less cost to sell.
+25 .
+Docusign Envelope ID: F2F 1E40E-A408-468E-AE8F-72953131AC48
+Manchester City Football Club Limited
+Notes to the Financial Statements (continued)
+3. Significant accounting judgments, estimates and assumptions (continued)
+Financial instruments
+Financial instruments due to be settled or received greater than one year are discounted when the time value of money is
+considered by management to be material to the Company. In such instances, management will estimate the timing of future
+cash flows and select an appropriate discount rate in order to calculate the present value of future cash flows related to the
+financial instrument.
+Share-based payments :
+The company recognises a share-based payment expense based on an allocation of its share of the Group’s long-term
+. incentive plan, calculated in proportion to the number of participating employees. The fair value of the awards is calculated
+with reference to the fair value of the award on the date of grant. The Monte Carlo valuation model has been used to calculate
+the fair value and the Directors have therefore made estimates with regard to the inputs to that model.
+4. Revenue
+2024 2023
+£000 £000
+Matchday 75,607 71,914
+Broadcasting - UEFA 104,599 113,852
+Broadcasting - All Other 190,132 185,558
+Other commercial activities 344,681 341,444
+715,019 712,768
+All revenue originates in the United Kingdom. The principal activity of the Company is the operation of a professional
+football club.
+A breakdown of revenue has been provided above. All of the results for the above activities are included within the primary
+statements.
+External revenue can be analysed into three main components, with broadcasting analysed further into revenue arising from
+UEFA competitions and all other broadcasting revenue.
+5. Operating loss ;
+2024 2023
+£000 £000
+-Other operating income
+Other operating income 4,455 5,456
+4,455 5,456
+Operating expenses
+Direct cost of sales and consumables 17,186 15,613
+Remuneration of Auditors (audit fees) 80 72
+Other external charges 172,391 156,533
+Employee costs (Note 7) 412,573 422,895
+Amortisation and impairment of intangible assets (Note 12) 165,094 145,448
+Profit on disposal of property, plant and equipment 16 1,236 -
+Depreciation of property, plant and equipment:
+Owned (Note 13) 11,179 10,613
+Leased (Note 14) 1,452 1,452
+779,971 753,862
+Operating loss
+Operating profit before player trading 104,597 109,810
+Amortisation of players’ registrations (165,094) (145,448)
+(60,497) (35,638)
+26
+Docusign Envelope ID: F2F1E40E-A408-468E-AE8F-72953131AC48
+Manchester City Football Club Limited
+Notes to the Financial Statements (continued)
+6. Directors’ remuneration
+No Directors were paid in the period (2023: £nil) and no company pension contributions were made (2023: £nil).
+7. Employees
+The average number of employees and Directors during the period is set out and analysed by category in the table below:
+Average number of employees 2024 2023
+Football staff - including players 230 201
+Commercial/administration staff 381 319
+611 520
+The aggregate payroll costs of these persons were as follows:
+2024 2023
+£000 £000
+Wages and salaries 359,170 368,213
+Social security costs §1,522 52,880
+Other pension costs 1,406 960
+Share-based payments 475 842
+412,573 422,895
+8. Share-based payments
+Share options are granted by City Football (Midco) Limited to participating employees within City Football Group (‘the
+Group’). The Company currently operates one share-based payment incentive: the long-term incentive plan (‘the
+scheme’). The share-based incentive is subject to a service condition, such conditions are taken into account in the fair
+value of the service received.
+The Monte Carlo option pricing model was used to value the equity-settled share-based payment award as it was
+considered that this approach would result in materially accurate estimate of the fair value of options granted.
+On 18 August 2023, the Company awarded 150 options under the scheme. The fair value of the options was determined
+using the Monte Carlo valuation model. The expected vest date of the awards is 30 June 2025 and the resulting share-
+based payments charge is being spread evenly over the period between the grant date and the vesting date.
+The number of options outstanding as at 30 June was as follows:
+2024 2023
+Nbr Number
+Outstanding at 1 July 9,100 -
+Options granted in the year 150 9,100
+Options forfeited in the year (3,701) -
+Outstanding at 30 June 5,549 9,100
+The share-based remuneration expenses comprises:
+2024 2023
+£000 £000
+. Equity-settled schemes 475 842
+The company did not enter into any share-based payment transactions with parties other than employees during the
+current or previous periods.
+27
+Docusign Envelope ID: F2F 1E40E-A408-468E-AE8F-72953131AC48
+Manchester City Football Club Limited
+Notes to the Financial Statements (continued)
+9. Interest receivable and similar income .
+2024 2023
+£000 £000
+Bank interest . 1,098 56
+Foreign exchange gains 2,485 :
+3,583 56
+10. Interest payable and similar charges
+2024 2023
+: £000 £000
+Bank loans and overdrafts 2,794 85
+Interest expense on leases 3,059 5,682
+Loss on derivatives §,279 -
+. 11,132 5,767
+; 11. Taxation
+(a) Analysis of the tax charge in the period
+2024 2023
+000 £000
+Current tax : :
+UK corporation tax at 25% (2023: 20.5%) - -
+on profits for the period
+Total current tax charge = :
+Total deferred tax charge = :
+Total tax charge - :
+(b) Factors affecting tax charge for the year
+The tax charge for the period is the standard rate of corporation tax in the UK of 25% (2023: 25%). The differences are
+explained below.
+2024 2023
+8000 £000,
+Profit on ordinary activities before taxation 73,787 80,371
+Profit on ordinary activities multiplied by standard rate of 18,439 16,476
+corporation tax in the UK of 25% (2023: 20.5%) .
+Effects of: . :
+Expenses not deductible for tax purposes 914 787
+Property, plant and equipment timing differences 2,453 1,859
+Deferred tax not recognised (8,111) (10,117)
+Income not taxable for tax purposes (143) (60)
+Group relief claimed (13,552) (8,945)
+Total tax charge for the period - :
+An increase in the UK corporation tax rate from 19% to 25% effective 1 April 2023 was substantively enacted on 24 May
+2022. No further increase has been substantively enacted in respect of future years.
+The Company has corporation tax losses available for carry forward of approximately £508.1m (2023: £557.8). The losses
+can be carried forward indefinitely and have no expiry date.
+. 28 . : .
+Docusign Envelope ID: F2F1E40E-A408-468E-AE8F-72953131AC48
+Manchester City Football Club Limited
+Notes to the Financial Statements (continued)
+11. Taxation (continued
+(c) Factors that may affect future tax charges . :
+The Company expects its effective tax rate in future years to be less than the standard rate of corporation tax in the UK due
+principally to the amount of tax losses available to be set off against future taxable profits.
+12. Intangible fixed assets
+Other Players'
+intangibles registrations Total
+. : £000 £000 £000
+Cost
+As at 1 July 2023 3,392 1,117,471 1,120,863 .
+Additions - 226,376 226,376
+Disposals : (233,549) (233,549)
+As at 30 June 2024 3,392 1,110,298 1,113,690
+Amortisation
+As at 1 July 2023 3,392 629,400 , 632,792
+Charge in the year - 165,094 165,094
+Disposals : (204,194) (204,194)
+As at 30 June 2024 3,392 590,300 593,692
+Net book value .
+As at 30 June 2024 - $19,998 519,998
+As at 30 June 2023 : 488,071 488,071
+13. Property, plant and equipment
+Land and Short Assets under _—‘ Fixtures,
+buildings leasehold Long leasehold the course of _ fittings &
+(freehold) improvements improvements construction equipment Total
+£000 £000 £000 £000 £000 £000 :
+Cost
+As at | July 2023 193,252 1,594 119,456 15,956 89,939 420,197
+Additions - - - 64,528 5,399 69,927
+Reclassification - - - (6,703) 6,703 -
+As at 30 June 2024 193,252 1,594 119,456 73,781 102,041 490,124
+Depreciation :
+As at 1 July 2023 23,076 296 18,506 - 58,485 100,363
+Charge 2,957 21 1,341 - 6,860 11,179
+As at 30 June 2024 26,033 317 19,847 : 65,345 111,542
+Net book value
+As at 30 June 2024 167,219 1,277 99,609 73,781 36,696 378,582
+As at 30 June 2023 170,176 1,298 100,950 15,956 31,454 319,834
+The assets under the course of construction balance in the current and prior year relates to stadium infrastructure projects.
+¢
+29
+Docusign Envelope ID: F2F1E40E-A408-468E-AE8F-729531 31 AC48
+Manchester City Football Club Limited
+Notes to the Financial Statements (continued)
+14. Right of use assets
+. Land and
+. buildings
+£000
+Cost
+As at 1 July 2023 90,248
+As at 30 June 2024 90,248 .
+Depreciation
+As at 1 July 2023 11,736
+Charge in the year 1,452
+As at 30 June 2024 13,188
+Net book value
+As at 30 June 2024 77,060
+As at 1 July 2023 78,512
+15. Fixed asset investments
+Shares in
+. subsidiary
+. undertakings
+£000
+Net book value at 30 June 2024 :
+Net book value at 30 June 2023 :
+: Proportion of
+Subsidiary and associate Principal voting rights .
+undertakings activities and share Registered address
+nee 10
+. os Dormant ° Etihad Stadium, Etihad Campus,
+Manchester City Investments Limited “company OM Manchester, MIL 3FF.
+Eastlands Strategic Development Dormant 33% Town Hall, Albert Square, Manchester .
+Company Limited company ° M60 2LA
+Both entities are incorporated in England and Wales.
+30
+Docusign Envelope ID: F2F 1E40E-A408-468E-AE8F-72953131AC48
+Manchester City Football Club Limited
+Notes to the Financial Statements (continued)
+16. Trade and other receivables
+2024 2023
+8009 £000
+Current trade and other receivables
+‘ Trade receivables 57,563 190,045
+Receivables arising from player transfers 75,087 80,896
+Amounts owed by group undertakings 267,420 151,409
+Amounts owed by related party undertakings (Note 26) 1,663 293
+Other receivables : 217 371
+Prepayments and accrued income : 56,787 44,951
+, 458,737 467,965
+Non-current trade and other receivables
+Receivables arising from player transfers 45,067 87,500
+45,067 87,500
+Total trade and other receivables 503,804 555,465
+The fair values of the above trade and other receivables are equal to their carrying values. Amounts owed by group
+undertakings are from other subsidiaries within the City Football Group (‘the Group’). These balances are due within one
+year and no interest is charged on the outstanding amounts.
+Trade and other receivables are non-interest bearing and credit terms vary depending on the type of sale. Credit terms
+relating to player transfers are determined on a player-by-player basis. Seasonal facilities are paid in advance of the season
+or are collected via direct debit on a monthly basis throughout the season. Credit terms in relation to sponsorship
+agreements are agreed on a contract-by-contract basis, usually over the life of the contract. Other sales have credit terms
+ranging between 21 and 30 days. ‘
+The above accrued income balance is expected to be received within 12 months of year end.
+17. Current trade and other payables ,
+2024 2023
+£000 £000
+Lease liabilities (Note 19) 516 491
+Trade payables 7,781 21,792
+Payables arising from player transfers 99,770 138,646 :
+. Amounts owed to group undertakings 93,168 72,565
+Amounts owed to related party undertakings (Note 26) 298 298 -
+Other payables including tax and social security 64,698 70,485
+Accruals . 85,113 73,924
+351,344 378,201
+Amounts owed to group undertakings are primarily recharges for head office costs by other subsidiaries within the Group.
+These balances are due within one year and no interest is charged on the outstanding amounts.
+18. Non-current trade and other payables
+2024 2023
+£000 £000 .
+Lease liabilities (Note 19) 62,828 63,344
+Payables arising from player transfers 130,178 65,739
+193,006 129,083 :
+. 31 :
+Docusign Envelope iD: F2F 1E40E-A408-468E-AE8F-72953131AC48 :
+Manchester City Football Club Limited
+Notes to the Financial Statements (continued)
+19. Leases ;
+Lease liabilities include future obligations under the lease of the Etihad Stadium. Details are provided within note 14. The
+capital amounts of repayments are as follows:
+2024 2023
+Maturity of lease liabilities : £000 £000
+Within one year 516 491
+Between one and two years 542 516
+Between two and five years 1,798 1,711
+After more than five years 60,488 61,117
+63,344 63,835
+The cash flows required are as follows:
+2024 2023
+£000 £000
+Within one year 3,550 3,550
+In the second to fifth years 14,200 14,200
+Over five years 125,425 128,975
+Less future finance charges (79,831) (82,890)
+a SSSSSSSSSSSsSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSFe BAA 63,835
+20. Deferred income
+. . 2024 2023
+£000 £000
+Deferred income 118,937 233,445
+The above deferred income balance is expected to be unwound within 12 months of year end.
+21. Deferred tax
+The following are the deferred tax assets and liabilities recognised alongside details of the movements. Deferred tax assets
+and liabilities are only offset where a legally enforceable right exists to do so. The table below analyses the deferred tax
+balances:
+2024 2023
+£000 £000
+Deferred tax assets 11,171 11,171
+Deferred tax liabilities (Property valuation) (1,171 ) (11,171)
+Net deferred tax assets/(liabilities) : :
+The’Company has not recognised a deferred tax asset of £135.2.m (2023: £142.7m) in relation to accumulated losses,
+accelerated capital allowances and short-term timing differences due to the uncertainty as to whether it can be utilised in
+the foreseeable future. The losses do not have an expiry date.
+32
+Docusign Envelope ID: F2F1E40E-A408-468E-AE8F-72953131AC48
+Manchester City Football Club Limited
+Notes to the Financial Statements (continued)
+22. Share capital
+The authorised and issued share capital at the beginning and end of the period is as follows:
+2024 2023
+: £000 £000
+Issued, fully paid and called up
+1,339,574,450 ordinary shares of £1 each (2023: 1,339,574,450) 1,339,574 1,339,574
+3,399 ordinary shares of £1 each — 25p paid (2023: 3,399) 1 1
+59,575 539,575
+No shares were issued in the year.
+23. Pensions
+Defined contribution scheme :
+Contributions to the defined contribution pension scheme are charged to the profit or loss account in the period in which
+they become payable. The total contributions in the period amounted to £1,406,000 (2023: £960,000). As at 30 June 2024,
+contributions of £233,000 (2023: £182,000) due to the pension scheme were unpaid and recorded in current liabilities.
+Defined benefit scheme
+Manchester City Football Club (‘the Club’) participates in the Football League Pension and Life Assurance Scheme (‘the
+Scheme’). The Scheme is a funded multi-employer defined benefit scheme, with 92 participating employers, and where
+members may have periods of service attributable to several participating employers: The Club is unable to identify its
+share of the assets and liabilities of the Scheme and therefore accounts for its contributions as if they were paid to a defined
+. contribution scheme.
+The last actuarial valuation was carried out at 31 August 2023 where the total deficit on the ongoing valuation basis was
+£20.6m. The next full actuarial valuation date is 31 August 2026 and the results of that are expected in Summer 2027.
+The accrual of benefits ceased within the Scheme on 31 August 1999. The Club pays monthly contributions based on a
+notional split of the total expenses and deficit contributions of the Scheme.
+The Club currently pays total contributions of £84,889 per annum which increases at 5.0% per annum and based on the
+actuarial valuation assumptions detailed above, will be sufficient to pay off the deficit by 30 June 2027. .
+As at 30 June 2024, the present value of the Club’s outstanding contributions (i.e. their future liability) is £372,110. This
+amounts to £87,816 (2023: £83,634) due within one year and £284,294 (2023: £248,372) due after more than one year.
+The funding objective of the Trustees of the Scheme is to have sufficient assets to meet the technical provisions of the
+Scheme. In order to remove the deficit revealed at the previous actuarial valuation (dated 31 August 2021), deficit
+contributions are payable by all participating clubs. Payments are made in accordance with a pension contribution schedule.
+As the Scheme is closed to accrual, there are no additional costs associated with the accruing of members’ future benefits.
+In the case of a club being relegated from the Football League and being unable to settle its debt then the remaining clubs
+may, in exceptional circumstances, have to share the deficit.
+
+: Upon the wind-up of the Scheme with a surplus, any surplus will be used to augment benefits. Under the more likely
+scenario of there being a deficit, this will be split amongst the clubs in line with their contribution schedule. Should an
+individual club leave the Scheme, they may be required to pay their share of the deficit based on a proxy buyout basis (i.e.
+valuing the benefits on a basis consistent with buying out the benefits with an insurance company). The Club is a member
+of the Scheme, a pension scheme providing benefits based on final pensionable pay. As this subsidiary is one of a number
+of participants in the scheme, it is unable to identify its share of assets and liabilities and therefore accounts for the
+contributions payable as if they were made to a defined contribution scheme. The Club is advised by the scheme
+administrators of the additional contributions required to fund the deficit. The administrators have confirmed that the assets
+and liabilities cannot be split between the participating entities.
+
+33
+Docusign Envelope ID: F2F1E40E-A408-468E-AE8F-72953131AC48
+Manchester City Football Club Limited
+Notes to the Financial Statements (continued) / .
+24. Commitments
+Capital commitments ‘
+The capital commitments contracted but not provided for consist of ongoing capital expenditure projects:
+. 2024 ~ 2023
+: £000 £000 |
+Contracted but not provided for 169,334 5,048
+Transfer fees payable
+Additional transfer fees, signing on fees and loyalty bonuses of £290,907,262 (2023: £262,253,815) that will become
+payable upon the achievement of certain conditions contained within player and transfer contracts if they are still in the
+service of the Club on specific future dates are accounted for in the year in which management assess, on a player by player
+basis, when the specific performance terms are met, resulting in the payment of contingent consideration.
+Other commitments
+In July 2021, the Group completed a $650m term loan, and an additional $270m term loan was completed in June 2024.
+Barclays, as collateral agent on behalf of the lenders, has a charge over 100% of the Group’s assets. Barclays may enforce
+the security, after giving notice, during a continuing event of default. ;
+25. Related party transactions
+Transactions with non-wholly owned subsidiaries of City Football Group Limited
+New York City Football Club, LLC
+Transactions during the year ended 30 June 2024 with New York City Football Club LLC consisted of the provision of
+services of £847,000 (2023: £700,000). A balance of £3,398,000 is included in receivables due within one year (2023:
+£2,812,000).
+Girona FC SAD
+Transactions during the year ended 30 June 2024 with Girona FC SAD consisted of the provision of services of £nil (2023:
+£nil). A balance of £644,000 is included in receivables due within one year (2023: £nil).
+During the year, the following players were loaned by Manchester City Football Club Limited to Girona Futbol Club SAD: .
+Yan Bueno Couto.
+During the year, the following players were sold by Manchester City Football Club Limited to Girona Futbol Club SAD:
+Yangel Herrera. :
+Voetbalelub Lommel SK NV .
+: Transactions during the year ended 30 June 2024 with Voetbalclub Lommel SK NV consisted of the provision of services
+of £233,000 (2023: £193,000). A balance of £589,000 is included in receivables due within one year (2023: £339,000).
+During the year, the following players were loaned by Manchester City Football Club Limited to Voetbalclub Lommel SK
+NV: Jamal Baptiste.
+34
+Docusign Envelope ID: F2F 1E40E-A408-468E-AE8F-72953131AC48
+
+Manchester City Football Club Limited
+
+Notes to the Financial Statements (continued)
+
+25. Related party transactions (continued
+Esporte Clube Bahia S.A.F.
+
+A balance of £99,000 is included in receivables due within one year (2023: £nil). A balance of £nil is included in payables
+due within one year (2023: £1,460,000).
+During the year, the following players were loaned by Manchester City Football Club Limited to Esporte Clube Bahia
+: S.A.F: Kayky da Silva Chagas.
+Terenti SAD
+A balance of £43,000 is included in receivables due within one year (2023: £43,000).
+During the year, the following players were loaned by Manchester City Football Club Limited to Terenti SAD: Dario
+Sarmiento.
+Other transactions
+Newton Investment & Development - Sole Proprietorship L.L.C.
+
+. The Company has a receivable from Newton Investment & Development - Sole Proprietorship L.L.C., the ultimate parent
+undertaking of the Company from 25 July 2021, of £1,619,000 (2023: £249,000) which is included in receivables due
+within one year.
+
+Brookshaw Developments Limited
+The Company has a payable to Brookshaw Developments Limited, a company indirectly owned and controlled by the
+ultimate parent undertaking of the Company, of £298,000 (2023: £298,000) which is included in payables due within one
+year.
+Eastlands Development Company Limited
+The Company has a receivable from Eastlands Development Company Limited, a company indirectly owned and controlled
+by the ultimate parent undertaking of the Company, of £44,000 (2023: £44,000) which is included in receivables due within
+one year. .
+Key management compensation
+No key management personnel were remunerated by the Company. Details of key management compensation are listed in
+the notes of City Football Group Limited financial statements in note 6.
+
+. 35 .
+Docusign Envelope ID: F2F 1E40E-A408-468E-AE8F-72953131AC48
+
+Manchester City Football Club Limited
+
+Notes to the Financial Statements (continued)
+
+26. Events after the reporting date ;
+Since the year end, Manchester City Football Club has entered into agreements to acquire the football registrations of Savio
+Moreira de Oliveira (from Troyes), [kay Giindogan (from Barcelona) and Divin Mubama (from West Ham) as well as a
+number of Academy acquisitions. :
+The football registrations of Julian Alvarez (to Atletico Madrid), Joo Cancelo (to Al-Hilal), Liam Delap (to Ipswich
+Town), Sergio Gomez Martin (to Real Sociedad), Micah Hamilton (to Middlesbrough), Alexander Robertson (to Cardiff
+City), Dario Sarmiento (to CA Tigre), Filip Stevanovic (to Lommel SK), Kane Taylor (to Aston Villa), Lewis Fiorini (to
+Stockport County) and Ben Knight (to Real Murcia) have been sold.
+The net income on these transactions was approximately £92.8m.
+
+27. Ultimate parent undertaking
+Manchester City Limited is the immediate parent undertaking company. The ultimate controlling party is His Highness
+Sheikh Mansour bin Zayed Al Nahyan.
+City Football Group Limited is the parent undertaking of the smallest and largest group to consolidate these financial
+statements. The City Football Group Limited consolidated financial statements can be obtained from Companies House.
+
+36 ,
 

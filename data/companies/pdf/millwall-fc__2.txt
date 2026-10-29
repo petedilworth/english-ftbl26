@@ -2,7 +2,7 @@ source: Companies House filing, millwall-fc__2.pdf
 document: 0zaABCdSbU-2IhB8IOw5E5WxtDn_fr5jXYJRe2QthsA
 made_up_date: 2024-06-30
 method: ocr
-pages_read: 12 of 40
+pages_read: 40 of 40
 
 CL FOOTE y
 Ay ><.
@@ -459,4 +459,1112 @@ Date: 02 January 2025
 BDO LLP is a limited liability partnership registered in England and Wales (with registered number OC305127).
 
 12, MILLWALL HOLDINGS LTD
+EIS
+° °
+Consolidated Statement of Comprehensive Income
+for the year ended 30 June 2024
+2024 2023
+(restated)
+Note £000 £000
+Revenue 2 21,415 19,358
+Other operating income 4 172 189
+{Loss)/profit on disposal of players’ registrations 4 (400) 2,512
+: Staff costs 5 25,579 22,583
+Amortisation of players’ registrations 8 (3,440) (2,114)
+[Depreciation of property, plant and equipment 9 733 795°
+Total depreciation and amortisation expense (4,173) (2,909)
+Other expenses (9,559) (7,659)
+Loss from operations 4 (18,124) (11,092)
+Finance expense 3 (992) (918)
+Interest payable - :
+Loss before taxation (19,116) (12,010)
+Tax (charge)/credit 7 - -
+Loss after tax for the financial year and total comprehensive loss . (19,116) (12,010)
+All amounts relate to continuing activities.
+The accompanying notes on pages 18-34 form an integral part of this Consolidated Statement of Comprehensive Income.
+MILLWALL HOLDINGS LTD 13
+pe -
+. . .
+Consolidated Statement of Changes in Equity
+for the year ended 30 June 2023
+Ordinary Deferred B ordinary
+Shares shares Share shares Ordinary shares
+of £10 of 0.09p premium of £1 of £10,000 Capital Retained * Total
+
+Each each account each each reserve deficit equity
+
+£000 £000 £000 £000 £000 £000 £000 £000
+| July 2022 (as 13,905 2,333 ° 23,152 60,750 : 20,741 (126,010) (5,129)
+previously stated) . .
+Prior period - - - - - - 522 522
+adjustment (note 12)
+| July 2022 (as 13,90 2,333 23,152 - 60,750 - 20,741 (125,488) (4,607)
+restated)
+Consolidation of (13,905) - - (60,750) 74,660 - - 5
+1,000 ordinary shares
+of £10 each and
+10,000 B Ordinary
+shares of £1 each to
+1 New Ordinary
+Share of £10,000
+each
+Elimination of - (2,333) - - - 2,333 - -
+Deferred shares of
+£0.09 each
+Ordinary shares of - - - - 16,920 - - 16,920 .
+£10,000 each issued
+during the period
+Gain on shareholder : : : - : - $86 586
+loan modification
+(note 16)
+Loss for the year - -— - : - - (12,010) (12,010)
+30 June 2023 - - 23,152 - 91,580 23,074 (136,912) 894
+
+14 MILLWALL HOLDINGS LTD
+° . °
+Consolidated Statement of Changes in Equity .
+for the year ended 30 June 2024
+Ordinary Deferred B ordinary
+Shares shares Share shares Ordinary shares
+of £10 of 0.09p premium of £1 of £10,000 Capital Retained Total
+
+Each each account each each reserve deficit equity
+
+£000 £000 £000 £000 £000 £000 £000 £000
+1 July 2023 (as : : 23,152 : 91,580 23,074 (137,636) 170
+previously stated) -
+Prior period - : - - - - 724 724 .
+adjustment (note | 2)
+July 2023 (as - - 23,152 - 91,580 23,074 (136,912) 894
+restated)
+Consolidation of : - - - - : : -
+1,000 ordinary shares
+of £10 each and
+10,000 B Ordinary :
+shares of £1 each to :
+| New Ordinary
+Share of £10,000
+each
+Elimination of - - - - - - - -
+Deferred shares of
+£0.09 each
+Ordinary shares of - - - - 19,380 - - 19,380
+£10,000 each issued
+during the period .
+Gain on shareholder - - oo - - - 538 538
+foan note
+modification
+Loss for the year - - - - - - (19,016) (19,116)
+30 June 2024 - - 23,152 - 110,960 23,074 (155,490) 1,696
+The accompanying notes on pages 18-34 form an integral part of this Consolidated Statement of Changes in Equity.
+
+MILLWALL HOLDINGS LTD 15
+i RRR
+° . e ge
+Consolidated Statement of Financial Position
+at 30 June 2024
+Company number: 2355508
+2024 2023
+(restated)
+Notes £000 £000
+Non-current assets
+Intangible assets 8 3,779 4,000
+Property, plant and equipment 9 17,676 17,427
+21,455 21,427
+Current assets
+Inventories 10 22 67
+Trade and other receivables: amounts falling due within one year Ul 3,639 4,195
+Cash and cash equivalents 826 283
+4,487 4,545
+Total assets 25,942 25,972
+Non-current liabilities
+Trade and other payables 12 (2,401) (1,525)
+Financial liabilities 13 (9,667) (9,667)
+Deferred income 12 (1,393) (1,537)
+(13,461) (12,729)
+Current liabilities
+Trade and other payables 12 (7,855) (9,473)
+Deferred income 12 (2,930) (2,876) -
+: (10,785) (12,349)
+Total liabilities (24,246) (25,078)
+Net assets 1,696 894
+Equity :
+Called up share capital 14,19 110,960 91,580
+Share premium 19 23,152 23,152
+Capital reserve 19 23,074 23,074
+Retained deficit 19 (155,490) (136,912) ”
+Total equity attributable to the shareholders of the parent 1,696 894
+The accounts on pages 12 to 34 were approved by the Board of Directors and authorised for issue on 2™ January 2025
+M Fairbrother
+Director :
+The accompanying notes on pages |8-34 form an integral part of this Consolidated Statement of Financial Position.
+16 MILLWALL HOLDINGS LTD
+Leen eee a
+°
+Consolidated Statement of Cash Flows
+for the year ended 30 June 2024
+2024 2023
+(restated)
+£000 £000
+Cash flows from operating activities
+Loss before taxation (19,116) (12,010)
+Depreciation on property, plant and equipment 733 . 975
+Amortisation of intangible assets 3,440 2114
+Amortisation of grants (81) (8!)
+Amortisation of training ground creditor (63) (63)
+Loss/(profit) on disposal of players’ registrations 400 (2,512)
+Finance expense 992 918
+Cash flows from operating activities before changes in working capital (13,695) (10,659)
+{Increase)/Decrease in inventory 45 (20)
+(Increase)/Decrease in trade and other receivables 136 (564)
+Increase/(Decrease) in trade and other payables and deferred income 1,435 (238)
+Net cash flow from operating activities (12,079) (11,481)
+Investing activities
+Purchase of property, plant and equipment (1,049) (636)
+Proceeds on disposal of players’ registrations 1,073 698
+Purchase of players’ registrations (3,810) (2,404)
+Net cash flow from investing activities (3,786) (2,342)
+Financing activities
+Repayment of loan from EFL (2,971) (2,972)
+Loans received and exchanged for shares 19,380 16,920
+Net cash flow from financing activities 16,409 13,948 .
+Net movement in cash and cash equivalents 544 125
+Cash and cash equivalents at start of year 283 158
+Cash and cash equivalents at end of year 827 283
+The accompanying notes on pages |8-34 form an integral part of this Consolidated Statement of Cash Flows.
+MILLWALL HOLDINGS LTD 17
+(LL
+Notes to the Accounts
+for the year ended 30 June 2024
+| Accounting policies
+Basis of preparation
+These financial statements have been prepared in accordance with UK adopted International Accounting Standards as issued by the International
+Accounting Standards Board (IASB) and Interpretations (collectively “IFRSs") and in accordance with those parts of the Companies Act 2006 that
+remain applicable to groups reporting under IFRS.
+The financial statements are presented in sterling, rounded to the nearest thousand. They are prepared under the historical cost basis.
+Going concern
+In assessing the appropriateness of the going concern assumption, the Directors have produced detailed cash flow forecasts until 30 June 2026.
+The directors have continued to undertake a range of measures to ensure a prudent running of the organisation. There is a £20m facility in place
+from CHV that was drawn to £10m as at the year end, which does not fall due for repayment until | July 2026. The Directors believe this, in
+conjunction with the ongoing support of the Company's principal shareholder, provides sufficient working capital for the current needs of the
+Group and Company for the foreseeable future.
+As reported last year, the UK Government has been progressing with the Football Governance Bill, which is currently going through the
+parliamentary review process. This regulation includes the establishment of an independent regulator for football as well as looking at the
+engagement with supporter groups through the establishment of a shadow board and a review of the uneven distribution system through the English
+football pyramid. As a Club the Directors support the recommendations made in the Government review and welcome the progress that has been
+made to date on the Football Governance Bill, and are actively taking steps to adopt some of the measures recommended in advance of any
+structural change within the football environment.
+At 30 June 2024, the Group had net assets of £1.7 million and net current liabilities of £6.3 million.
+The directors continually monitor the financial position of the Company and Group and have prepared the financial statements on a going concern
+basis, having had regard to:
+* cash flow projections prepared to 30 June 2025, and expected cash flow forecasts for the year thereafter i.e. 30 June 2026, including the effect
+of player trading; and
+* the continuing provision of facilities to the Group from Chestnut Hill Ventures LLC (“CHV”). The repayment date on the existing £10 million
+loan facility was extended during the year to | July 2026, with interest accruing only from | July 2025. CHV has also undertaken to provide
+the Group with further support, if necessary, for at least the next 12 months, as it has done during the current and previous financial years.
+Forecasts prepared for and reviewed by the board demonstrate that in most reasonable scenarios additional shareholder funding will be required
+which is not yet guaranteed. As such, the directors have identified a material uncertainty that may cast significant doubt over the Company's and
+the Group’s.ability to continue as a going concern and therefore its ability to realise its assets and discharge its liabilities in the normal course of
+business.
+While there will always remain inherent uncertainty, the directors remain confident that they will be able to manage the Group's and Company's
+finances and operations so as to achieve the forecasted cash flows and, with the continued support of CHV, consider that it is appropriate to draw
+up the financial statements on a going concern basis.
+The financial statements do not include any adjustments that would result if the going concern basis of preparation were to become no longer .
+appropriate.
+Adoption of new and revised standards
+New and amended IFRS standards that are effective for the current year
+International Accounting Standards Effective date for period commencing
+Amendments to IAS 8, IAS |, IAS 12, IFRS 17, IFRS 9 and IAS !2 | January 2023
+Adoption of the above has no material impact on the Financial Statements.
+Adoption of standards not yet effective
+At the date of authorisation of these Financial Statements, the following standards which have not been applied in the Financial Statements were in
+issue but not yet effective:
+international Accounting Standards Effective date for period commencing = ¢,
+Amendments to IAS 21 | January 2025
+IFRS 18 Presentation and Disclosure in Financial Statements I January 2027
+IFRS SI General Requirements for Disclosure of Sustainability-related | January 2024
+Financial Information and IFRS $2 Climate Related Disclosures
+‘Amendments to IAS |, IFRS 16, IAS 7 and IFRS 7 | January 2024
+The above standards and interpretations will be adopted in accordance with their effective date and are not anticipated to have a material impact
+‘on the Financial Scatements.
+. 18 MILLWALL HOLDINGS LTD
+wa a
+
+for the year ended 30 June 2024 (continued)
+
+1 Accounting policies (continued)
+Basis of consolidation
+The financial information incorporates the results of the Company and entities controlled by the Company (its subsidiaries, The Millwall Football
+and Athletic Company (1985) Itd and Millwall Properties Limited). Control is achieved where the following three elements are present: power over
+the investee, exposure to variable returns from the investee, and the ability of the investor to use its power to affect those variable returns. The
+consolidated financial statements present the financial results of the Company and its subsidiaries (the Group) as if they formed a single entity.
+The results of subsidiaries acquired or disposed during the period are included in the consolidated statement of comprehensive income from the
+effective date of acquisition or up to the effective date of disposal, as appropriate, using the purchase method.
+Where necessary, adjustments are made to the results of subsidiaries to bring the accounting policies used into line with those used by the Group.
+All intra-Group transactions, balances, income and expenses are eliminated on consolidation.
+Players’ registrations .
+The costs associated with the acquisition of players’ registrations are initially recorded at fair value of the consideration payable at the date of
+acquisition as intangible fixed assets. These costs are fully amortised over the period of the respective players’ contracts.
+For the purposes of impairment reviews, acquired players’ registrations are classified within the single football club cash -generating unit until the
+point at which it is made clear that the player is no longer an active member of the playing squad which is typically because either the player is out
+of favour with the team management or the player is permanently injured. In these circumstances the carrying value of the player's registration is
+reviewed against a measurable net realisable value.
+Acquires players’ registrations are classified as “Assets held for sale” on the statement of financial position if, at any time, it is considered that the
+carrying amount of a registration will be recovered principally through sale and an active programme is in place to sell the player. The measurement
+of the registration is the lower of (a) fair value (less costs to sell) and (b) carrying value. In a situation where a player is permanently injured, fair
+value is considered to be the expected insurance recovery amount. Amortisation of the asset is suspended at the time of reclassification, although
+impairment charges are made if applicable.
+Signing on fees
+Signing on fees are charged, on a straight line basis, to the statement of comprehensive income over the period of the player's contract.
+Prepayments/accruals arising at each period end are included within prepayments and accrued income or accruals within current assets or current
+liabilities, as appropriate. Where a player's registration is transferred, any signing on fee payable in respect of future periods are charged against the
+profit/(loss) on disposal of players’ registrations in the period in which the disposal is recognised.
+Transfer fees
+Transfer fees receivable are recognised in the period in which the registration is transferred and any profit or loss arising is dealt with in the
+statement of comprehensive income. Contingent transfer fees receivable are recognised once the contingent conditions become probable which is
+usually when they have been met.
+Property, plant and equipment
+Property, plant and equipment are stated at cost, net of depreciation and any provision for impairment. Depreciation is provided on all property,
+plant and equipment, at rates calculated to write off the cost, less estimated residual value, of each asset over its expected useful life on a straight
+
+. line basis, as follows:
+Long leasehold premises — 1% per annum
+Fixtures and fittings — 10%-33% per annum
+Pitch renovation — over the next season
+Motor vehicles — 25% per annum
+Leasehold Improvement — over the life of the lease
+Residual value is initially calculated on prices prevailing at the date of acquisition. Residual value is reviewed in each financial period and any changes
+to initial estimates are reflected in the period of change.
+When a significant part of property, plant and equipment is required to be replaced at intervals, the group derecognises the replaced part, and
+recognises the new part with its own associated useful life and depreciation. Likewise, when a major inspection is performed, its cost is recognised
+in the carrying amount of the plant and equipment as a replacement if the recognition criteria are satisfied, All other repair and maintenance costs
+are recognised in the income statement as incurred.
+Inventory
+Inventories are stated at the lower of cost and net realisable value. Net realisable value is based on estimated selling price, less further costs
+expected to be incurred to sell. Provision is made for obsolete, slow moving or defective items where appropriate.
+Impairment of non-financial assets (excluding inventories)
+Non-financial assets are subject to impairment tests whenever events or changes in circumstances indicate that their carrying amount may not be
+recoverable. Where the carrying value of an asset exceeds its recoverable amount (ie. the higher of value in use and fair value less costs to sell),
+the asset is written down accordingly.
+Impairment charges are included in the other expenses line item in the consolidated statement of comprehensive income.
+MILLWALL HOLDINGS LTD 19
+for the year ended 30 June 2024 (continued)
+(Accounting policies (continued)
+Taxation
+Corporation tax payable is provided on taxable profits at the rates that are enacted or substantively enacted at the reporting date.
+Deferred taxation
+Deferred tax is calculated using the balance sheet asset-liability method of tax allocation for all temporary differences arising between the book
+value of assets and liabilities and their tax bases, except for differences arising on:
+© the initial recognition of goodwill,
+© the initial recognition of an asset or liability in a transaction which is not a business combination and at the time of the transaction affects
+neither accounting or taxable profit, and
+¢ investments in subsidiaries where the Group is able to control the timing of the reversal of the difference and it is probable that the difference
+will not reverse in the foreseeable future.
+
+A deferred tax asset is recognised only to the extent that it is probable that there will be future taxable profits an which this asset can be charged.
+Deferred income tax assets are reduced to the extent that it is no longer likely that a sufficient taxable benefit will arise.
+Deferred taxation balances are calculated at rates either enacted or substantively enacted at the balance sheet date and are shown on the balance
+sheet separately from current tax assets and liabilities and categorised among non-current items.
+Deferred tax assets and liabilities are offset when the Group has a legally enforceable right to offset current tax assets and liabilities and the deferred
+tax assets and liabilities relate to taxes levied by the same tax authority on either the same taxable group company or different group entities which
+intend to either settle current tax assets and liabilities on a net basis, or to realise the assets and settle the liabilities simultaneously, in each future
+period in which significant amounts of deferred tax assets or liabilities are expected to be settled or recovered.
+Pension costs and other post retirement benefits
+For defined contribution schemes the amount charged to profit and loss in respect of pension costs is the contributions payable in the period.
+Differences between contributions payable in the period and contributions actually paid are shown as either accruals or prepayments in the balance
+sheet.
+Where the Group participates in a defined benefit plan, which is a multi-employer plan that is accounted for as if the plan were a defined
+contribution plan, and the Group has entered into an agreement with the multi-employer plan that determines how the Group will fund a deficit,
+the Group recognises a liability for the contributions payable that arise from the agreement and a resulting expense in the statement of
+comprehensive income.
+Financial instruments
+Financial assets and liabilities are recognised when the Group becomes party to the contractual provisions of the instrument. The Group holds the
+following financial assets and liabilities:
+Financial assets - coe
+Loans and receivables: These assets are non-derivative financial assets with fixed or determinable payments that are not quoted in an active market.
+They arise principally through the provision of goods and services to customers (trade debtors), but also incorporate other types of contractual :
+monetary asset. They are initially recognised at fair value and then subsequently carried at amortised cost using the effective rate method.
+Financial liabilities
+Other financial liabilities: Other financial liabilities include the following items - Trade payables and other short-term monetary liabilities, which are
+initially recognised at fair value; Loan note borrowings which are initially recognised at fair value being the amount advanced net of any transaction
+costs directly attributable to the issue of the instrument. Such interest bearing liabilities are subsequently measured at amortised cost using the
+effective interest method, which ensures that any interest expense over the period to repayment is at a constant rate on the balance of the liability
+carried in the balance sheet. “Interest expense” in this context includes initial transaction costs and premia payable on redemption, as well as any
+interest payable while the liability is outstanding.
+Cash and cash equivalents
+Cash and cash equivalents comprises cash balances and call deposits all with maturities of three months or less from inception, and bank overdrafts.
+Bank overdrafts are shown within loans and borrowings in current liabilities on the statement of financial position.
+Finance income
+Interest income is accrued on a time basis, by reference to the principal outstanding and under the effective interest method.
+
+20 MILLWALL HOLDINGS LTD
+———— 6S
+for the year ended 30 June 2024 (continued)
+| Accounting policies (continued)
+
+Leased assets
+
+. Finance leases are those which transfer substantially all of the risks and rewards of ownership to the lessee. Assets held under finance leases are
+capitalised as property, plant and equipment and are depreciated over the shorter of the lease term or their useful economic life. The capital
+elements of future lease obligations are included within borrowings, while the interest elements are charged to the statement of comprehensive
+income over the period of the lease to produce a constant rate of charge on the balance of capital repayments outstanding.
+All other leases are operating leases, the rentals on which are charged to the statement of comprehensive income on a straight-line basis over the
+lease term.
+Trade and other payables and receivables ~
+Trade and other payables and receivables on normal terms are stated at their nominal value, less, in the case of receivables, any impairment losses
+that may be required.
+Other payables, on deferred terms, in particular the purchase of players’ registrations, are recorded at their fair value on the date of the transaction
+and subsequently at amortised cost.
+Other receivables on deferred terms, in particular the proceeds from sales of players’ registrations, are recorded at their fair value at the date of .
+sale and subsequently at amortised cost less allowances for impairment.
+Revenue recognition
+Revenue represents income receivable from the Group's principal activities excluding transfer fees and value added tax. Revenue is recognised at
+the fair value of the consideration receivable. Revenue is split between three categories of income stream; Match Day, Central League Awards and
+Commercial.
+Match Day
+Match Day revenue represents income receivable from all match day activities from Millwall games at The Den, together with the share of gate
+receipts from cup games not played at The Den. The share of gate receipts payable to the other participating club for domestic cup matches played
+at The Den is treated as a reduction in revenue. Season ticket revenue is recognised over the period of the football season as home matches are
+played.
+Central League Awards
+Central League Award revenue comprises the Basic Award and the Solidarity Award from the Football League, along with grant income for the
+academy and prize money earned from cup competitions. Awards are recognised over the financial period to which they relate.
+
+. Commercial
+Commercial revenue comprises income receivable through sponsorship, shop revenue, use of the conference and catering facilities at The Den on
+non-match days and sundry other income. Sponsorship contracts are recognised over the duration of the contract, either on a straight line basis,
+or over the period of the football season, as appropriate based on the terms of the contract. Catering revenues are recognised on an earned basis.
+Revenue from sale of branded products is recognised at the point of dispatch when significant risks and rewards of ownership are deemed to have
+been transferred to the buyer.
+Deferred income
+All income received in advance of football activities, such as season ticket revenue, league awards, advertising, sponsorship and broadcasting revenues
+are treated as deferred income and released to income over the period or number of matches to which they relate.
+Grants
+Grants of a revenue nature are recognised in “other income" within profit or loss in the same period as the related expenditure.
+
+MILLWALL HOLDINGS LTD 21
+Notes to the Accounts
+for the year ended 30 June 2024 (continued)
+2 Segmental analysis
+The Group has one main operating segment in the current and preceding year, that of professional football operations. As a result, no additional
+operating segment information is required to be provided. It operates in one geographical segment, the United Kingdom. Chief operating decisions
+are made primarily by the Board of Directors.
+The analysis of group revenue is as follows:
+2024 2023
+£000 £000
+Match Day 7,475 6,169
+Central League Awards i1,000 10,229
+Commercial 2,940 2,960
+21,415 19,358
+3 Finance expense
+2024 2023
+£000 £000
+Finance expense
+interest expenses on unwinding of discount (840) (730)
+Finance lease interest (152) (188)
+(992) (918)
+4 Loss from operations
+Loss from operations is stated after charging/(crediting):
+2024 2023
+£000 £000
+Depreciation and amounts written off property, plant and equipment
+— owned . 519 500
+— right of use assets 295 295
+Amortisation of grant (81) (81)
+Amortisation of proceeds on sale of training ground (63) (63)
+Amortisation of player registrations 3,440 2114
+Audicors' remuneration
+— Audit of company financial statements 10 10
+— Audit of financial statements of subsidiaries 76 74
+— Other services (2 10
+Loss/(profit) on sale of players’ registrations 400 (2,512)
+Other operating income comprises loan fee income of £86,000 (2023: £86,000) and other claims and settlement incomes received by the club not
+considered to be revenue of £86,485 (2023: £103,000).
+22 MILLWALL HOLDINGS LTD
+nw
+Notes to the Accounts
+for the year ended 30 June 2024 (continued)
+5 Staff costs
+The average monthly number of employees in the Group (including executive directors) was:
+2024 2023
+Number Number
+Football team management 46 46
+Administrative and ground staff 54 49
+Players (including Academy) él él
+164 156
+In addition, the Group employs, on average, a further 134 (2023 - 128) temporary staff on matchdays. :
+Aggregate remuneration comprised:
+2024 2023
+° £000 £000
+‘Wages and salaries 22,701 19,977
+Social security costs 2,516 2,367
+Pension costs 362 239
+25,579 22,583
+6 Directors’ remuneration
+2024 2023
+£000 £000
+Directors’ emoluments (including benefits in kind) 364 434
+Pension costs 38 12
+Compensation for loss of office 154 -
+Total directors’ remuneration 556 446
+The remuneration of the highest paid director was £556,000 (2023: £446,000) including £11,000 (2023: £12,000) of pension contributions.
+MILLWALL HOLDINGS LTD 23
+SV rr
+Notes to the Accounts
+for the year ended 30 June 2024 (continued)
+7 Tax expense .
+No taxation charge arises in either the current or prior year due to the incidence of losses incurred.
+The tax assessed for the year differs to the standard rate of corporation tax in the UK applied to the result before tax. The differences are explained
+below:
+. 2024 2023
+£000 £000
+Loss on ordinary activities before tax (19,116) (12,010)
+Profit on ordinary activities at the standard rate of corporation tax
+in the UK of 25% (2023: 20.5%) (4,779) (2,462)
+Effects of:
+Expenses and income not deductible for tax purposes 458 346
+Depreciation in excess of capital allowance - -
+Adjustment to tax charge in respect of previous period - -
+Unutilised losses carried forward 4,321 2116
+Total tax charge for the year - . .
+Deferred tax
+At 30 June 2024 the Group had estimated tax losses carried forward of £144.7m (2022: £122.3m), subject to the agreement of HM Revenue and
+Customs. After assessing the prospects for the 2025 financial year the Board has decided to not recognise any deferred tax asset as it is prudent
+to estimate that no losses will be utilised in that period. The amount of the unprovided deferred tax asset at a future UK tax rate of 25% (2022:
+25%) is calculated at £36.2m (2022: £30.8m).
+At 30 June 2024 the Group had £8.5m (2022: £6.7m) of unclaimed capital allowances. These have not been recognised as the Board cannot prudently
+estimate that these will be utilised in the forthcoming period. The amount of the unprovided deferred tax asset is calculated as £2.1m (2022: £1.7m).
+Factors affecting future tax charge
+The main rate of corporation tax increased from 19% to 25% from | April 2023. For profits up to £50,000, the corporation tax rate remains at
+19% and for profits over £250,000, the corporation tax rate is now 25%. Marginal relief provisions are in place for profits between the lower and
+upper limits.
+: 24 MILLWALL HOLDINGS LTD
+SS
+Notes to the Accounts
+for the year ended 30 June 2024 (continued)
+8 Intangible assets
+Players’
+registrations
+£000
+Cost :
+| July 2022 7,682
+Additions 3,989
+Disposals (1,946)
+30 June 2023 9,725
+Additions 4,278
+Disposals (2,230)
+30 june 2024 11,773
+Amortisation
+1 July 2022 5,557
+Charge for the year 2,114
+Disposals (1,946)
+30 June 2023 5,725
+Charge for the year 3,440
+Disposals (LU71)
+30 June 2024 7,994
+Net book value
+30 June 2023 4,000
+30 June 2024 3,779
+Included in the net book value of players’ registrations are 22 (2023: 19) registrations at a net book value at 30 June 2024 of £3,779,000 (2023:
+£4,000,000). The remaining useful life of these registrations is up to 3 years.
+"MILLWALL HOLDINGS LTD 25
+———————— EERIE EEE
+Notes to the Accounts
+for the year ended 30 June 2024 (continued)
+9 Property, plant and equipment
+Long Assets in Right Fixtures
+leasehold the course of of use and Leasehold Motor
+premises construction asset fittings Improvements vehicles Total
+£000 £000 £000 £000 £000 £000 £000
+Cost
+| July 2022 18,705 1,422 2,421 5,782 319 42 28,691
+Additions I 372 - 263 - - 636
+30 June 2023 18,706 1,794 2,421 6,045 319 42 29,327
+Additions - 341 - 242 480 - 1,063
+30 June 2024 18,706 2,135 2,421 6,287 799 42 30,390
+Accumulated depreciation .
+| July 2022 5,252 - 886 4,748 77 42 11,105
+Charge for the year 284 - 295 179 37 : 795
+30 June 2023 5,536 - 1,181 4,927 214 42 11,900
+Charge for the year 285 - 295 198 36 - 814
+30 June 2024 5,821 - 1,476 5,125 250 42 (12,714
+Net book value
+30 June 2023 13,170 1,794 1,240 1,118 105 - 17,427
+30 June 2024 12,885 2,135 945 1,162 549 - 17,676
+Included in amounts classified as long leasehold premises are the costs associated with the building of a football stadium at The Den, ~
+The net carrying value of assets held under finance leases is £146,489 (2023: £183,031).
+10 Inventories
+2024 2023
+£000 £000
+Goods for resale 22 67
+ll Trade and-other receivables - : - cone . . . Se
+2024 2023
+7 £000 £000
+Amounts falling due within one year:
+Trade receivables 1,044 1,780
+Transfer fees receivable 1,530 1,944
+Other debtors . 62 62
+Prepayments and accrued income 1,003 409
+3,639 4,195
+26 MILLWALL HOLDINGS LTD
+Rt €7p$
+Notes to the Accounts
+for the year ended 30 June 2024 (continued)
+Il Trade and other receivables (continued)
+In the directors’ opinion the carrying value of trade and other receivables are stated at their fair value, after deduction of appropriate allowances
+for irrecoverable amounts, as these assets are not interest bearing and receipts occur over a short period. They are therefore subject to an
+insignificant risk of changes in value. All trade and other receivables that are neither past due nor impaired are considered recoverable.
+At 30 june 2024 trade receivables of £1,192,916 (2023: £1,621,730) were past due against which a doubtful debtor’s provision of £1,036,000 (2023:
+£763,000) has been recorded. The remaining balances relate to customers with no default history. The ageing analysis of these receivables is as
+follows:
+2024 2023
+£000 £000
+3 to 6 months 887 1,023
+887 1,023
+12 Trade and other payables
+2024 2023
+£000 £000
+Current
+Trade and other payables 4,425 3,613
+Other loan payable - 2,971
+Taxation and social security 1,314 1,615
+Accruals 2,116 1,274
+7,855 9,473
+Deferred income . 2,930 2,876
+10,785 12,349
+Non-current .
+Long Term Lease Liability 1,095 1,412
+Accruals : 113
+Non current player payables 1,149 -
+Non current pension liability 157 -
+2,401 1,525
+Deferred income 1,393 1,537
+3,794 3,062
+The amount due to the parent company is unsecured, interest free and repayable on demand. :
+Included within deferred income is:
+. an amount of £2,786,000 (2023: £2,876,000) relating to amounts received in advance in respect of season tickets, league awards, executive
+boxes, memberships, advertising and sponsorship relating to the following year.
+. unamortised grants totalling £1,474,000 (2023: £1,555,000) received in respect of the long leasehold premises and other fixtures and
+fittings, of which £81,000 is current.
+. unamortised proceeds of £62,500 (2023: £125,000) from the sale of the Training Ground in excess of market value, of which £62,500 is
+current, which are being amortised on a straight-line basis over 20 years to 2025.
+In the directors’ opinion the carrying values of trade and other payables are stated at their fair value as they are not interest bearing and payments
+occur over a short period. They are therefore subject to an insignificant risk of changes in value. All trade and other payables are considered to be
++ payable within 84 days, with the exception of those described as non-current which are payable in more than one year. The fair values of these
+non-current payables are not considered to be materially different from their carrying values.
+In the current year, a historical error has been identified in respect of the group's recognition of its lease liabilities under IFRS16. While this
+has not been material to the income statement in any given period, the cumulative impact is material to the current period, the prior period
+and opening reserves as at | July 2022. The impacts of the correction of the lease liabilities, is as follows: for FY23, che lease liability has been
+reduced by £724k, with a corresponding £522k credit to opening reserves, representing the reduction in lease liability as at | July 2022, and
+£202k credit to the income statement (interest payable and rental expenses). As a result of this restatement, loss before taxation in the FY23
+statement of cashflows has been restated (reduced) by £202k as has finance expenses, resulting in no change in net cash flows.
+MILLWALL HOLDINGS LTD 27
+Ne
+Notes to the Accounts
+for the year ended 30 June 2024 (continued)
+13 Financial liabilities
+2024 2023
+£000 £000
+Non-current:
+Non-convertible loan notes 9,441 9,441
+interest accrued on loan notes 226 226
+9,667 9,667
+All financial liabilities are classified as financial liabilities at amortised cost.
+The loan notes have a nominal value of £10,525,000 but, following a substantial modification to their terms in June 2024, were re-recognised at
+their fair value of £9,441,000. This discount to nominal value will be charged to profit and loss as a finance cost over the facility term. £Nil of such
+discount has unwound since the June 2024 modification.
+£10,000,000 of the loan notes are secured by a fixed and floating charge over the current and future assets of the Group. The remaining £525,000
+of loan notes are unsecured.
+Further details in respect of the loan note instruments are provided in note 16.
+At 30 June 2024 loan note liabilities were due as follows:
+2024 2023
+£000 £000
+Amount payable
+— after one year but within two years - -
+~ after two years but within five years 9,667 9,667 :
+9,667 9,667
+In June 2024 the repayment date for all loan notes was further extended to | July 2025. On 30 June 2024 the repayment date for all loan notes was
+: further extended to | July 2026. :
+28 MILLWALL HOLDINGS LTD
+Notes to the Accounts
+for the year ended 30 June 2024 (continued)
+14 Share capital
+2024 2023
+Number Number
+Allotted, called up and fully paid
+Ordinary shares of £10,000 each (1,096 9,158
+11,096 9,158
+£000 £000
+Allotted, called up and fully paid
+Ordinary shares of £10,000 each 110,960 91,580
+110,960 91,580
+Ordinary shares of £10,000 each
+Ouring the prior year the shareholders of the Company approved a consolidation of every 1,000 Ordinary share of £10 each and every 10,000 B
+Ordinary shares of £1 each into one new Ordinary share of £10,000 each.
+During the year the Company issued 1,938 new Ordinary shares of £10,000 each, at par, for cash or conversion of related party payables.
+. MILLWALL HOLDINGS LTD 29
+- Notes to the Accounts
+for the year ended 30 June 2024 (continued) |
+1S Financial commitments and contingent assets/liabilities
+a) Non-cancellable operating leases :
+The total value of minimum lease payments are due as follows:-
+Commitments under non-cancellable operating leases are as follows:
+Landand Other Land and Other
+Buildings _ leases Total Buildings leases Total
+2024 2024 2024 2023 2023 2023
+Minimum lease payments due: £000 £000 £000 £000 £000 £000
+Within one year 389 45 434 368 48 416
+In two to five years 476 19 495 776 47 823
+After five years 5,589 - 5,589 5,540 - 5,540
+6,454 64 6,518 6,684 95 6,779
+b) Pensions
+The Club participates in the Football League Pension and Life Assurance Scheme (‘the Scheme’). The Scheme is a funded multi-employer defined
+benefit scheme, with 92 participating employers, and where members may have periods of service attributable to several participating
+employers. The Club is unable to identify its share of the assets’and liabilities of the Scheme and therefore accounts for its contributions as if they
+were paid to a defined contribution scheme.
+The Club is making scheme funding payments based on the actuarial valuation carried our on 31 July 2023. The key assumptions used to calculate
+the deficit at the 31 August 2023 actuarial valuation were:
+Discount Rate 4.55% pa.
+RPI inflation: 3.5% p.a.
+Pension Increases: 3.5% p.a.
+Mortality (pre-retirement): No allowance
+The Club pays monthly contributions based on a notional split of the total expenses and deficit contributions of the Scheme.
+The results of this actuarial valuation when the Club recognised its notional share of the deficit, calculated using the actuarial valuation assumptions,
+resulted in a liability of £268,976. This 2023 revaluation resulted in a charge to profit and loss, to increase the liability, of £216,461 (2023: £Nil).
+Based on the current repayment schedule, the club is contributing £60,744 per annum against this liability. .
+The Club currently has | employee who is a member of the scheme (2023: I) and pays total contributions of £60,744 p.a. which increases at 5.0%
+p.a. Based on the actuarial valuation assumptions detailed above, these contributions will be sufficient to pay off the Club’s share of the deficit by
+30 November 2027.
+Under the terms and conditions of the multi-employer plan the entity cannot be liable to the plan for other entities’ obligations.
+. Certain. other employees of the Group, except for football players who are responsible for their own pension arrangements, are eligible'to be
+members of defined contribution schemes. The assets of any schemes are held in funds separate from the Group.
+©) Transfer fees payable/receivable :
+Under the terms of certain contracts with other football clubs in respect of player transfers, additional amounts would be receivable/payable by the
+Group if conditions as to future team selection are met. The maximum that could be receivable is £1,210,000 (2023: £1,045,000). The maximum
+that could be payable is £3,895,000 (2023: £3,480,000). These amounts have not been provided for in the financial statements. These amounts do
+not include various payments or receipts that are determinable only on circumstances which are distant or outside the direct control of the parties
+to the contract and the player in question.
+30 MILLWALL HOLDINGS LTD
+EEE ————————— alla
+Notes to the Accounts
+for the year ended 30 June 2024 (continued)
+16 Nature and extent of financial instruments
+The Group's financial instruments include the following:
+° trade and other receivables
+. trade and other payables
+. cash and cash equivalents
+. accruals .
+. non-convertible loan notes
+Categories of Financial Instruments
+2024 2023
+. £000 £000
+Classification of financial assets:
+Trade receivables 1,044 1,780
+Transfer fees receivable 1,530 1,944
+Cash and cash equivalents 826 283
+Total financial assets classified as loans and receivables at amortised cost 3,400 4,007
+Classification of financial liabilities: ,
+Trade and other payables 5,732 3,613
+Other loans payable - 2,971
+Accruals 2,116 1,387
+Amounts relating to non-convertible loan notes (including accrued interest on loan notes) 9,667 9,667
+Total financial liabilities measured at amortised cost 17,515 17,638
+Financial Instruments —- Risk Management .
+The Group is exposed through its operations to the following financial risks:
+. Credit risk
+. Interest rate risk .
+. Liquidity risk
+The Group does not trade in financial instruments or carry out derivative transactions. There is no foreign currency exposure.
+Credit risk
+Maximum exposure to credit risk arises principally from the Group's trade and other receivables and cash at bank and cash equivalent.
+It is the risk that the counterparty fails to discharge their obligations and could reduce the amount of future cash inflows from financial assets on
+hand at the balance sheet date.
+The Group manages this risk by using a reputable bank and requesting references from customers that are previously unknown to the Group.
+The Group does not consider that it has any significant risk due to the profile of its customers.
+Interest rate risk ;
+Interest rate risk is the risk that the value of financial instruments will fluctuate due to changes in market interest rates. The Group considers the
+interest rates available when deciding where to place cash balances. The Group has no material exposure to interest rate risk as cash is held only
+on short-term deposit and the interest on all borrowings is fixed over the facility term.
+MILLWALL HOLDINGS LTD 31
+Notes to the Accounts :
+for the year ended 30 June 2024 (continued)
+16 Nature and extent of financial instruments (continued)
+Liquidity risk
+Liquidity risk arises from the Group's management of working capital and the finance charges and repayments of its liabilities. It is the risk that the
+Group will encounter difficulties in meeting obligations associated with financial liabilities.
+The Group's policy is to monitor and update cash flow forecasts on at least a weekly basis, to ensure chat ic will have sufficient cash available to it
+to allow it to meet its liabilities when they become due. Should a future cash shortfall be identified, the directors will explore the options available
+to the Group to raise the necessary funds. The Group had, at the year end, no undrawn loan facilities available but, as detailed in note |, continues
+to receive financial support from its parent company.
+The maturity analysis of financial liabilities is shown in note | 3.
+Interest bearing financial assets
+Financial assets from time to time include sterling balances on deposit which may be withdrawn on demand. Interest is earned on cleared balances
+at market rate as and when monetary deposits are made. At 30 June 2024 the Group had no amounts (2023: £Nil) on deposit.
+Non-convertible loan notes
+Non-convertible loan notes at 30 June 2024 and 30 June 2023 comprised the following:
+e A £525,000 facility carrying interest at 12% p.a. calculated daily and consolidated quarterly over the period | July 2025 to 30 June 2026 (2023:
+| July 2024 to 30 June 2025). This facility was fully drawn down at 30 June 2024 and 2023. It is available to the Company until | July 2026
+following a term extension in the year.
+¢ A £20,000,000 facility carrying interest at 12% p.a. calculated daily and consolidated quarterly over the period | July 2025 to 30 June 2026
+(2023: | July 2024 to 30 June 2025). £10,000,000 of this facility was drawn down at 30 June 2024 and at 30 June 2023. It is available to the
+Company until | July 2026 following a term extension in the year.
+At the option of the Company the interest on all non-convertible loan notes may be settled by the issue of PIK notes which have the same terms
+as the loan notes to which they relate and carry the same interest terms.
+The £20,000,000 facility is provided by CHV, the Company's immediate controlling party. During the year, CHV agreed to suspend the payment of
+interest on the facility until | July 2025. Interest payable of £514,000 has been recognised in the current year to represent the effective interest
+accruing under the revised terms.
+The £525,000 facility holders also agreed to suspend the payment of interest on the facility until | July 2025. Interest payable of £27,000 has been
+recognised in the current year to represent the effective interest accruing under the revised terms.
+Fair values .
+The fair value of the financial assets and liabilities at 30 June 2024 and 30 june 2023 are not considered to be materially different from their book
+values, with the exception of the non-convertible loan notes which were deemed to have a fair value of £9,441,000 upon modification in June 2024.
+The £538,000 gain has been accounted for as a capital contribution from the Company's shareholders and credited directly to the retained deficit
+reserve.
+Capital disclosures
+The Group's key management personnel define capital as the Group's cash holding of £826,000 (2023: £283,000); loan notes and accrued interest
+of £9,667,000 (2023: £9,667,000); the working capital amount owed to the parent company of £Nil (2023: £Nil) and equity share capital and
+premium of £134,132,000 (2023: £1 14,732,000). .
+The Group's objective when managing capital is to safeguard the entity's ability to continue as a going concern, so that it can begin to provide
+returns for shareholders and benefits for other stakeholders.
+In order to maintain or adjust the capital structure the Group may seek to sell assets or issue equity instruments to reduce debt.
+32, MILLWALL HOLDINGS LTD
+SSS
+Notes to the Accounts
+for the year ended 30 June 2024 (continued)
+17 Related party transactions
+James Berylson (Non-Executive Chairman) and Demos Kouvaris (Non-Executive Director) are respectively Chairman, Chief Operating Officer and
+Chief Financial Officer of CHV, the Company's immediate controlling party. CHV has advanced the following lines of credit to the Company:
+¢ A £20,000,000 non-convertible loan note facility carrying interest at [2% p.a. calculated daily and consolidated quarterly. At 30 June 2024
+£10,000,000 (2023: £10,000,000) of this facility had drawn down.
+¢ An interest free working capital facility which is repayable on demand. At 30 June 2024 £Nil (2023: £Nil) had been drawn down against this
+facility.
+During the year, no interest (2023: £Nil) was charged under facilities provided by CHY since, as described in note 16, the charging of interest was
+suspended until | July 2024. However, an effective interest charge of £514,000 (2023: £516,000) has been recognised in profit and loss in the year
+in respect of this facility.
+During the year ended 30 June 2012, Messrs. C Gonticas (Non-Executive Director), T Keyse (Non-Executive Director) and J Press, spouse of
+R Press (Non-Executive Director), subscribed for £300,000 of non-convertible loan notes which carry interest at 12% p.a. At 30 June 2024, the
+balance drawn under this facility was £300,000 (2023: £300,000). During the year, no interest (2023: £Nil) accrued under these facilities since, as
+described in note 16, the charging of interest was suspended until | July 2024. Total accrued interest of £161,000 (2023: £161,000) remains unpaid
+at the balance sheet date. However, an effective interest charge of £15,400 (2023: £15,400) has been recognised in profit and loss in the year in
+respect of this facility.
+During the year ended 30 June 2013, Messrs. C Gonticas (Non-Executive Director), T Keyse (Non-Executive Director), and J Press, spouse of R
+Press (Non-Executive Director), subscribed for £200,000 of non-convertible loan notes which carry interest at 12% p.a. At 30 June 2024, the
+balance drawn under this facility was £200,000 (2023: £200,000). During the year no interest (2023: £Nil) accrued under these facilities since, as
+described in note 16, the charging of interest was suspended until | July 2024. Total accrued interest of £65,000 (2023: £65,000) remains unpaid at
+the balance sheet date. However, an effective interest charge of £10,300 (£2023: £10,300) has been recognised in profit and loss in the year in
+respect of this facility. :
+The Group's key management personnel are considered to be the Company's directors. Details of their remuneration are given in note 6.
+18 Accounting estimates and judgements
+. Critical accounting judgements in applying the Group's policies
+The preparation of financial statements under IFRSs requires management to make judgements, estimates and assumptions that affect the application
+of policies and reported amounts of assets and liabilities, income and expenses. The estimates and associated assumptions are based on historical
+experience and various other factors that are believed to be reasonable under the circumstances, the results of which form the basis of making the
+judgements about carrying values of assets and liabilities that are not readily apparent from other sources.
+Certain critical accounting judgements made in applying the Group's accounting policies are described below:
+Acquired players’ registrations :
+in assessing whether che registration of any individual player requires reclassification to “Assets held for sale" and, if so, whether any impairment
+charge is required, the directors will apply the accounting policy detailed in note |. °
+Useful lives of intangible assets
+Intangible assets are amortised over the length of the players’ contract which is deemed to be their useful lives and management's estimates as to
+their continuing usefulness to the football side.
+Useful lives and residual values of property, plant and equipment
+Property, plant and equipment are amortised or depreciated to their residual values over their useful lives. Useful lives are based on management
+estimates of the period that the assets will generate revenue, which are periodically reviewed for continued appropriateness.
+Fair value of loan note facilities
+In assessing the fair value of loan note facilities on initial recognition, the directors determine the present value of the liability by discounting the
+total future cash flows using a market rate of interest.
+MILLWALL HOLDINGS LTD 33
+Neen ee
+Notes to the Accounts
+for the year ended 30 June 2024 (continued)
+19 Reserves .
+Reserve Description and purpose
+Share capital Amount subscribed for ordinary and deferred share capital at nominal value.
+Share premium Amount subscribed for ordinary and deferred share capital in excess of nominal value.
+Equity proportion of convertible loan notes The residuai equity element of convertible loan note instruments after deducting all
+liability components.
+Capital reserve Amount arising on cancellation of deferred shares and share premiums in prior years.
+Retained deficit Cumulative net gains and losses recognised in the consolidated statement of
+comprehensive income plus any capital contributions received from shareholders.
+20 Subsequent events .
+Subsequent to the year end the Company had a busy summer transfer window and acquired the permanent registrations of Tanganga, Jensen,
+Langstaff, Kelly, Azeez, and Ivanovic as well as the temporary registrations of Callum Scanlon, Ryan Wintle and Josh Coburn.
+On 10 December the Company announced that first team head coach Neil Harris had resigned from his role, and subsequently on 30 December
+2024 the Company announced the appointment of his replacement, Alex Neil.
+21 Ultimate controlling party
+- Millwall Holdings Limited is under the control of Chestnut Hill Ventures LLC, a Company which is incorporated in the USA. Chestnut Hill Ventures
+LLC is ultimately controlled jointly by | Berylson and R A Smith, as Trustee of the Philip dec'd Will Trust.
+. 34 MILLWALL HOLDINGS LTD
+LR
+Company Balance Sheet
+as at 30 June 2024
+Company number: 2355508 ,
+, 2024 2023
+(restated)
+Notes £000 £000
+Fixed assets
+Investments v 11,518 $0,709
+11,518 10,709
+Creditors: Amounts falling due within one year Vii (155) (148)
+Net current liabilities (155) (148) ~
+Total assets less current liabilities 11,363 10,561
+Creditors: Amounts falling due after more than one year Vii (9,667) (9,667)
+Net assets/(liabilities) 1,696 894
+Capital and reserves :
+Called up share capital . Ix 110,960 91,580
+Share premium account 23,152 23,152
+Capital reserve 23,016 23,016
+Retained deficit (155,432) (136,854)
+Shareholders’ funds (in deficit) 1,696 894
+The Company has taken advantage of the exemption in the Companies Act 2006 S408 not to present its own profit and loss account. A loss of £540,000
+(2023: restated £643,000) of the consolidated loss for the year attributable to the shareholders of Millwall Holdings PLC has been dealt with in the accounts
+of the Company.
+The accounts on pages 37 to 40 were approved by the Board of Directors and authorised for issue on 2™ January 2025
+Warn
+KW \
+M Fairbrother :
+Director
+The accompanying notes form an integral part of this Balance Sheet.
+MILLWALL HOLDINGS LTD 35
+SS SEE
+° .
+Company Statement of Changes in Equity
+for the year ended 30 June 2024
+Ordinary Deferred B ordinary
+shares shares Share Ordinary shares shores
+of £10 of 0.09p premium of £10,000 of £1 Capital Retained Total
+
+each each account each each reserve deficit equity
+
+£000 £000 £000 £000 £000 £000 £000 £000
+| July 2022 (as previously stated) 13,905 2,333 23,152 - 60,750 20,683 (125,952) (5,129)
+Prior period adjustment (note 12) - - - - - - $22 522
+1 July 2022 (as restated) 13,905 2,333 23,152 - 60,750 20,683 (125,430) (4,607)
+Consolidation of 1,000 ordinary (13,905) - - 74,660 (60,750) : - 5
+shares of £10 each and 10,000 B
+Ordinary shares of £1 each to | New
+Ordinary Share of £10,000 each
+Elimination of Deferred shares of - (2,333) - - - 2,333 - -
+£0.09 each
+Ordinary shares of £10,000 each - : - 16,920 - - - 16,920
+issued during the period
+Gain on _— shareholder — loan - - - . - . 586 586
+modification (note |6)
+Loss for the year - - - . - - ($2,010) (12,010)
+30 June 2023 - : 23,152 91,580 : 1 23,016 (136,854) 894
+| July 2023 (as previously stated) - - 23,152 91,580 - 23,016 (137,578) 170
+Prior period adjustment (note 12) - - - - - - 724 724
+| July 2023 (as restated) - - 23,152 91,580 - - (136,854) 894
+Ordinary shares of £10,000 each - - - 19,380 - : - 19,380
+issued during the period
+Gain on shareholder loan - . - : - : 538 538
+modification (note 16)
+Loss for the year - - - - - - (19,016) (19,016)
+30 June 2024 - - 23,152 110,960 - 23,016 (155,432) 1,696
+The accompanying notes on pages 37 to 40 form an integral part of this Statement of Changes in Equity.
+
+36 MILLWALL HOLDINGS LTD
+ee
+Notes to the Accounts
+for the year ended 30 June 2024 (continued)
+i Accounting policies
+Basis of accounting
+The separate financial statements of the Company are presented as required by the Companies Act 2006. They have been prepared under the
+historical cost convention and in accordance with applicable law and United Kingdom Accounting Standards, specifically FRS 102, the Financial
+Reporting Standard applicable in the United Kingdom and the Republic of Ireland.
+The preparation of financial statements in compliance with FRS 102 requires the use of certain critical accounting estimates. It also requires the
+exercise of judgement in applying the Company's accounting policies (see note ii).
+In preparing the separate financial statements of the Company, advantage has been taken of the following disclosure exemptions available in FRS
+102:
+* No cash flow statement has been presented for the Company;
+¢ Disclosures in respect of the Company's financial instruments have not been presented as equivalent disclosures have been provided in
+respect of the Group as a whole; and
+* No disclosure has been given for the aggregate remuneration of the key management personnel of the Company as their remuneration is
+included in the totals for the Group as a whole.
+The principal accounting policies are summarised below.
+Going concern
+In assessing the appropriateness of the going concern assumption, the Directors have produced detailed cash flow forecasts until 30 June 2026.
+The Directors have continued to undertake a range of measures to ensure a prudent running of the organisation. There is a £20m facility in place
+from CHV that was drawn to £10m as at the year end, which does not fall due for repayment until | July 2026. The Directors believe this, in
+conjunction with the ongoing support of the Company's principal shareholder, provides sufficient working capital for the current needs of the
+Group and Company for the foreseeable future.
+As reported last year, the UK Government has been progressing with the Football Governance Bill, which is currently going through the
+parliamentary review process. This regulation includes the establishment of an independent regulator for football as well as looking at the
+engagement with supporter groups through the establishment of a shadow board and a review of the uneven distribution system through the English
+football pyramid. As a Club the Directors support the recommendations made in the Government review and welcome the progress that has been
+made to date on the Football Governance Bill, and are actively taking steps to adopt some of the measures recommended in advance of any
+structural change within the football environment.
+At 30 June 2024, the Group had net assets of £1.7 million and net current liabilities of £6.3 million.
+The directors continually monitor the financial position of the Company and Group and have prepared the financial statements on a going concern
+basis, having had regard to:
+* cash flow projections prepared to 30 June 2025, and expected cash flow forecasts for the year thereafter i.e. 30 June 2026, including the effect
+of player trading; and
+a «the continuing provision of facilities to the Group from Chestnut Hill Ventures LLC (“CHV”). The repayment date on the existing £10 million
+loan facility was extended during the year to | July 2026, with interest accruing only from | July 2025. CHV has also undertaken to provide
+the Group with further support, if necessary, for at least the next !2 months, as it has done during the current and previous financial years.
+Forecasts prepared for and reviewed by the board demonstrate that in most reasonable scenarios additional shareholder funding will be required
+which is not yet guaranteed. As such, the directors have identified a material uncertainty that may cast significant doubt over the Company's and
+the Group's ability to continue as a going concern and therefore its ability to realise its assets and discharge its liabilities in the normal course of *
+business.
+While there will always remain inherent uncertainty, the directors remain confident that they will be able to manage the Group's and Company's
+finances and operations so as to achieve the forecasted cash flows and, with the continued support of CHV, consider that ic is appropriate to draw
+up the financial statements on a going concern basis.
+The financial statements do not include any adjustments that would result if the going concern basis of preparation were to become no longer
+appropriate.
+Investments
+Fixed asset investments are shown at cost less provision for impairment.
+Taxation
+Corporation tax payable is provided on taxable profits at the rates that are enacted or substantively enacted at the balance sheet date.
+Deferred tax balances are recognised in respect of all timing differences that have originated but not reversed by the balance sheet date except that
+the recognition of deferred tax assets is limited to the extent that the Company anticipates to make sufficient taxable profits in the future to absorb
+the reversal of the underlying timing differences. :
+Deferred tax balances are not discounted.
+MILLWALL HOLDINGS LTD 37
+a
+Notes to the Accounts
+for the year ended 30 June 2024 (continued)
+i Accounting policies (continued)
+Financial instruments .
+The Company has no financial instruments measured at fair value through profit and loss. All financial instruments are initially measured at
+transaction price and subsequently held at amortised cost (less any impairment, where relevant).
+ii Judgements in applying accounting policies and key sources of estimation uncertainty
+In the application of the Company's accounting policies, which are described on the previous page, the directors are required to make judgements,
+estimates and assumptions about the carrying amounts of assets and liabilities that are not readily apparent from other sources. The estimates and
+associated assumptions are based on historical experience and other factors that are considered to be relevant. Actual results may differ from these
+estimates.
+The estimates and underlying assumptions are reviewed on an ongoing basis. Revisions to accounting estimates are recognised in the period in
+which the estimate is revised if the revision affects only that period, or in the period of the revision and future periods if the revision affects both
+current and future periods.
+In preparing these financial statements, the key estimates relate to:
+¢ ~The determination of the fair value of loan note facilities on initial recognition. In assessing this fair value the directors have calculated the
+present value of the liability by discounting the total future cash flows using a market rate of interest.
+¢ The determination of the carrying value of the Company's investments in its subsidiary undertakings. The directors have recognised an
+impairment provision in the year amounting to £18,918,000 (2023: £1 1,569,000) which has been determined by reference to the underlying
+net asset value of each of the subsidiary undertaking
+iii Employees
+The average number of employees of the Company during the year, including directors, was 8 (2023: 8). There were no employment costs borne
+by the Company in the current or prior year.
+iv Loss for the year
+The Company's loss for the year is stated after charging:
+2024 2023
+£000 £000
+Auditors’ remuneration for the audit of Company financial statements 10 10
+Directors’ emoluments — paid by subsidiaries 556 446
+v_ Investments
+Shares in Loan to
+subsidiary subsidiary
+undertakings undertakings Total
+£000 £000 £000
+Cost
+| July 2023 400 142,541 142,941
+Additions - 19,385 19,385
+30 June 2024 400 161,926 162,326
+. Amounts provided for
+| July 2023 (restated) - 132,232 132,232
+Provided in year - 18,576 18,576
+30 June 2024 - 150,808 150,808
+Net book value
+30 June 2024 400 11,118 11,518
+30 June 2023 400 10,309 10,709
+At 30 June 2024, che Company's subsidiaries, which are incorporated, registered and operate in England and Wales, were The Millwall Football and
+Athletic Company (1985) Itd, a football club, and Millwall Properties Limited, a property development company. The Company owns 100% of the
+issued share capital and the voting rights of each of these companies.
+All investments are unlisted. In the opinion of the directors, the aggregate value of the Company's investment in subsidiary undertakings is not less
+than the amount included in the balance sheet, taking into account underlying goodwill and the value of players’ registrations.
+38 MILLWALL HOLDINGS LTD
+Nee eee a
+Notes to the Accounts
+for the year ended 30 June 2024 (continued)
+vi Debtors
+2024 2023
+£000 £000
+Prepayments and accrued income - -
+All amounts shown under debtors in respect of the current year fall due for payment within one year.
+vii Creditors: Amounts falling due within one year
+2024 2023
+£000 £000
+Accruals and deferred income (155) (148)
+(155) (148)
+viii Creditors: Amounts falling due after more than one year
+2024 2023
+£000 £000
+Non-convertible loan notes 9,441 9,441
+Interest accrued on loan notes 226 226
+9,667 9,667
+All financial liabilities are classified as financial liabilities at amortised cost.
+The loan notes have a nominal value of £10,525,000 but, following a substantial modification to their terms in June 2024, were re-recognised at
+their fair value of £9,441,000. This discount to nominal value will be charged to profit and loss as a finance cost over the facility term. £Nil of such
+discount has unwound since the June 2024 modification.
+£10,000,000 of the loan notes are secured by a fixed and floating charge over the current and future assets of the Group. The remaining £525,000
+of loan notes are unsecured.
+Non-convertible loan notes at 30 June 2024 and 30 June 2023 comprised the foltowing:
+« A £525,000 facility carrying interest at 12% p.a. calculated daily and consolidated quarterly over the period | July 2025 to 30 June 2026 (2023:
+I July 2024 to 30 June 2025). It is available to the Company until | July 2026 following a term extension in the year.
+* A £20,000,000 facility carrying interest at 12% p.a. calculated daily and consolidated quarterly over the period | July 2025 to 30 June 2026
+(2022: | July 2024 to 30 June 2025). £10,000,000 of this facility was drawn down at 30 June 2024 and at 30 June 2023. It is available to the
+Company until | July 2026 following a term extension in the year.
+At the option of the Company the interest on all non-convertible loan notes may be settled by the issue of PIK notes which have the same terms
+as the loan notes to which they relate and carry the same interest terms.
+The £20,000,000 facility is provided by CHV, the Company's immediate controlling party. During the year, CHV agreed to suspend the payment of
+interest on the facility until | July 2025. Interest payable of £514,000 has been recognised in the current year to represent rhe effective interest
+accruing under the revised terms.
+The £525,000 facility holders also agreed to suspend the payment of interest on the facility until | July 2025, with effect from | January 2015.
+Interest payable of £27,000 has been recognised in the current year to represent the effective interest accruing under the revised terms.
+The fair value of the financial assets and liabilities at 30 June 2024 and 30 June 2023 are not considered to be materially different from their book
+values, with the exception of the non-convertible loan notes which were deemed to have a fair value of £9,441,000 upon modification in June 2022.
+The £538,000 gain has been accounted for as a capital contribution from the Company's shareholders and credited directly to the retained deficit
+reserve, .
+At 30 June 2024 loan note liabilities were due as follows:
+2024 2023
+£000 £000
+Amount payable
+— after one year but within two years - -
+— after two years but within five years 9,667 9,667
+9,667 9,667
+MILLWALL HOLDINGS LTD 39
+gS ————
+Notes to the Accounts
+for the year ended 30 June 2024 (continued)
+ix Share capital
+_ 2024 2023
+Number Number
+Allotted, called up and fully paid
+Ordinary shares of £10,000 each 11,096 9,158
+11,096 9,158
+£000 £000
+Allotted, called up and fully paid
+Ordinary shares of £10,000 each 110,960 91,580
+110,960 91,580
+Ordinary shares of £10,000 each
+During the prior year the shareholders of the Company approved a consolidation of every 1,000 Ordinary share of £10 each and every 10,000 B
+Ordinary shares of £1 each into one new Ordinary share of £10,000 each.
+During the year the Company issued 1,938 new Ordinary shares of £10,000 each, at par, for cash or coriversion of related party payables.
+x Related party transactions .
+James Berylson (Non-Executive Chairman) and Demos Kouvaris (Non-Executive Director) are respectively Chairman, Chief Operating Officer and
+Chief Financial Officer of CHV, the Company's immediate controlling party. CHV has advanced the following lines of credit to the Company:
+¢ A £20,000,000 non-convertible loan note facility carrying interest at 12% p.a. calculated daily and consolidated quarterly. At 30 June 2024
+£10,000,000 (2023: £10,000,000) of this facility had drawn down. . :
+«An interest free working capital facility which is repayable on demand. At 30 June 2024 £Nil (2023: £Nil) had been drawn down against this
+facility.
+During the year, no interest (2023: £Nil) was charged under facilities provided by CHV since, as described in note 16, the charging of interest was
+suspended until | July 2024. However, an effective interest charge of £514,000 (2023: £516,000) has been recognised in profit and loss in the year
+in respect of this facility.
+During the year ended 30 June 2012, Messrs. C Gonticas (Non-Executive Director), T Keyse (Non-Executive Director) and J Press, spouse of R
+Press (Non-Executive Director), subscribed for £300,000 of non-convertible loan notes which carry interest at 12% p.a. At 30 June 2024, the
+balance drawn under this facility was £300,000 (2023: £300,000). During the year, no interest (2023: £Nil) accrued under these facilities since, as
+described in note 16, the charging of interest was suspended until I July 2024. Total accrued interest of £161,000 (2023: £161,000) remains unpaid
+at the balance sheet date. However, an.effective interest charge of £15,400 (2023: £15,400) has been recognised in profit and loss in the year in
+respect of this facility.
+During the year ended 30 June 2013, Messrs. C Gonticas (Non-Executive Director), T Keyse (Non-Executive Director), and J Press, ‘spouse of R
+Press (Non-Executive Director), subscribed for £200,000 of non-convertible loan notes which carry interest at 12% p.a. At 30 June 2024, the
+balance drawn under this facility was £200,000 (2023: £200,000). During the year no interest (2023: £Nil) accrued under these facilities since, as
+described in note 16, the charging of interest was suspended until | July 2024. Total accrued interest of £65,000 (2023: £65,000) remains unpaid at
+the balance sheet date. However, an effective interest charge of £10,300 (2023: £10,300) has been recognised in profit and loss in the year in respect
+of this facility.
+xi Subsequent events
+Further details of events after the balance sheet date are given in the notes to the group accounts above.
+xii Ultimate controlling party
+Millwall Holdings Limited is under the control of Chestnut Hill Ventures LLC, a Company which is incorporated in the USA. Chestnut Hill Ventures
+LLC is ultimately controlled jointly by J Berylson and R A Smith, as Trustee of the Philip dec'd Will Trust.
+40 MILLWALL HOLDINGS LTD
 

@@ -2,7 +2,7 @@ source: Companies House filing, harrogate-town-afc__1.pdf
 document: O2Dcg8Lx47Yy5uwBgMhLqyI1MtANIj567wOxpY_DX7s
 made_up_date: 2025-06-30
 method: ocr
-pages_read: 12 of 33
+pages_read: 33 of 33
 
 Docusign Envelope ID: 8D161523-3914-424F-9C35-784BED72E32D
 Company Registration No. 02523873 (England and Wales)
@@ -387,4 +387,738 @@ Loss for the financial year (2,167,951) (2,530,900)
 The profit and loss account has been prepared on the basis that all operations are continuing operations.
 
 -10-
+Docusign Envelope ID: 8D161523-3914-424F-9C35-784BED72E32D
+HARROGATE TOWN AFC LIMITED
+BALANCE SHEET
+AS AT 30 JUNE 2025
+2025 2024
+Notes £ £ £ £
+Fixed assets
+Intangible assets 9 43,900 176,841
+Tangible assets 10 5,642,556 5,896,136
+Investments 11 1 1
+5,686,457 6,072,978
+Current assets
+Stocks 12 67,197 62,304
+Debtors 13 636,187 817,973
+Cash at bank and in hand 107,699 80,264
+811,083 960,541
+Creditors: amounts falling due within one
+year 14 (7,180,588) (6,002,019)
+Net current liabilities (6,369,505) (5,041,478)
+Total assets less current liabilities {683,048} 1,031,500
+Creditors: amounts falling due after more
+- than one year 15 (689,888) (736,485)
+Net (liabilities)/assets (1,372,936) 295,015
+Capital and reserves
+Called up share capital 20 5,110,935 5,110,935
+Other reserves 21 3,718,500 3,218,500
+Profit and loss reserves 21 (10,202,371) (8,034,420)
+Total equity (1,372,936) 295,015
+a
+Docusign Envelope 1D: 80161523-3914-424F-9C35-784BED72E32D
+HARROGATE TOWN AFC LIMITED
+BALANCE SHEET (CONTINUED)
+AS AT 30 JUNE 2025
+28/1/2026
+The financial statements were approved by the board of directors and authorised for issue ON «0... eee aNd .
+are signed on its behalf by:
+Signed by:
+Vwe~
+o
+NOBAOBCES40F 462.22 ++
+R | Weaver
+Director
+Company Registration No. 02523873 .
+-12-
+Docusign Envelope ID: 8D161523-3914-424F-9C35-784BED72E32D
+HARROGATE TOWN AFC LIMITED
+STATEMENT OF CHANGES IN EQUITY
+FOR THE YEAR ENDED 30 JUNE 2025
+Share capital Capital Profit and Total
+contribution loss reserves
+reserve
+£ £ £ £
+Balance at 1 July 2023 5,110,935 2,015,000 (5,503,520) 1,622,415
+Year ended 30 June 2024:
+___ Loss and total comprehensive income . - - (2,530,900) (2,530,900)
+Other movements - 1,203,500 - 1,203,500
+Balance at 30 June 2024 5,110,935 3,218,500 (8,034,420) 295,015
+Year ended 30 June 2025:
+Loss and total comprehensive income - - (2,167,951) (2,167,951)
+Other movements - 500,000 - 500,000
+Balance at 30 June 2025 5,110,935 3,718,500 (10,202,371) (1,372,936)
+-13-
+a
+Docusign Envelope ID: 8D161523-3914-424F-9C35-784BED72E32D
+HARROGATE TOWN AFC LIMITED
+STATEMENT OF CASH FLOWS
+FOR THE YEAR ENDED 30 JUNE 2025 :
+2025 2024
+
+Notes £ £ £ £
+Cash flows from operating activities
+Cash absorbed by operations 27 (1,738,795) (2,356,823)
+Interest paid (533) (533)
+Net cash outflow from operating activities (1,739,328) (2,357,356)
+Investing activities
+Purchase of intangible assets : (47,127) (342,978)
+Proceeds from disposal of intangibles 312,843 65,188
+Purchase of tangible fixed assets (134,658) (1,429,314)
+Net cash generated from/(used in) investing
+activities 131,058 (1,707,104)
+Financing activities
+Proceeds from borrowings 1,149,046 2,796,500
+Payment of finance leases obligations (13,341) (13,341)
+Capital contributions 500,000 1,203,500
+Net cash generated from financing
+activities 1,635,705 3,986,659
+Net increase/(decrease) in cash and cash
+equivalents 27,435 (77,801)
+Cash and cash equivalents at beginning of year 80,264 158,065
+Cash and cash equivalents at end of year 107,699 80,264
+
+-14-
+Docusign Envelope ID: 8D161523-3914-424F-9C35-784BED72E32D
+
+HARROGATE TOWN AFC LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS
+
+FOR THE YEAR ENDED 30 JUNE 2025
+
+1 Accounting policies .
+Company information
+Harrogate Town AFC Limited is a private company limited by shares incorporated in England and Wales. The
+registered office is The Exercise Stadium, Wetherby Road, Harrogate, North Yorkshire, HG2 7RY.
+The principal activity of the company is that of the operation of sports facilities and a professional football
+club.
+
+1.1 Accounting convention
+These financial statements have been prepared in accordance with FRS 102 “The Financial Reporting
+Standard applicable in the UK and Republic of Ireland” (“FRS 102”) and the requirements of the Companies
+Act 2006.
+The financial statements are prepared in sterling, which is the functional currency of the company. Monetary
+
+. amounts in these financial statements are rounded to the nearest £1.
+
+The financial statements have been prepared under the historical cost convention, modified to include the
+revaluation of land and buildings. The principal accounting policies adopted are set out below.
+The company has taken advantage of the exemption under section 405 of the Companies Act 2006 not to
+prepare consolidated accounts on the basis that the consolidation of Harrogate 3G Limited, an entity
+controlled by the company, is not material for the purposes of giving a true and fair view of the results for
+the period. These financial statements therefore present information about the company as a standalone
+entity.
+
+1.2. Going concern
+Notwithstanding net current liabilities of £6,369,505 (2024 - £5,041,478) as at 30 June 2025 and a loss for
+the year of £2,167,951 (2024 - £2,530,900), the financial statements have been prepared on a going concern
+basis which the directors consider to be appropriate for the following reasons.
+The directors have prepared cash flow forecasts for a period of 12 months from the date of approval of these
+financial statements which indicate that, taking account of reasonably possible downsides, the company will
+have sufficient funds, through funding from its controlling shareholder, R | Weaver, to meets its liabilities as
+they fall due for that period.
+Those forecasts are dependent on R | Weaver not seeking repayment of the amounts currently owed to him,
+which at 3U June 2025 amounted to £6,403,620 (2024 - £5,254,574), and providing additional financial
+support during that period. R | Weaver has indicated his intention to continue to make available such funds
+as are needed by the company, and that he does not intend to seek repayment of the amounts due for the
+period covered by the forecasts.
+The directors have considered the ability of R | Weaver to provide the financial support required by the
+company.
+Based on these indications the directors believe that it remains appropriate to prepare the financial
+statements on a going concern basis.
+
+: -15-
+a
+Docusign Envelope ID: 8D161523-3914-424F-9C35-784BED72E32D
+
+HARROGATE TOWN AFC LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR ENDED 30 JUNE 2025
+
+1 Accounting policies (Continued)
+
+1.3. Turnover
+Turnover is recognised at the fair value of the consideration received or receivable for goods and services
+provided in the normal course of business, and is shown net of VAT and other sales related taxes. The fair
+value of consideration takes into account trade discounts, settlement discounts and volume rebates.
+Revenue from the sale of goods is recognised when the significant risks and rewards of ownership of the
+goods have passed to the buyer (usually on dispatch of the goods), the amount of revenue can be measured
+reliably, it is probable that the economic benefits associated with the transaction will flow to the entity and
+the costs incurred or to be incurred in respect of the transaction can be measured reliably.
+
+Revenue from the provision of services is recognised at the point at which the service is provided. Any
+revenue received in advance of service provision is deferred.
+
+1.4 Intangible fixed assets other than goodwill °
+Intangible assets acquired separately from a business are recognised at cost and are subsequently measured
+at cost less accumulated amortisation and accumulated impairment losses.
+
+Intangible assets acquired on business combinations are recognised separately from goodwill at the
+acquisition date where it is probable that the expected future economic benefits that are attributable to the
+asset will flow to the entity and the fair value of the asset can be measured reliably; the intangible asset
+arises from contractual or other legal rights; and the intangible asset is separable from the entity.
+
+Player registrations
+
+The costs associated with acquiring players' registrations or extending their contracts, including agents’ fees,
+are capitalised and amortised in equal instalments, over the period of the respective players’ contracts.
+Where a contract life is renegotiated the unamortised costs, together with the new costs relating to the
+contract extension, are amortised over the term of the new contract.
+
+Where the acquisition of a player registration involves a non-cash consideration, such as an exchange for
+another player registration, the transaction is accounted for using an estimate of the market value for the
+non-cash consideration.
+
+Under the conditions of certain transfer agreements or contract renegotiations, further fees will be payable
+in the event of the player concerned making a certain number of first team appearances or on the
+occurrence of certain other specified future events. Liabilities in respect of these additional transfer fees are
+accounted for as provisions, when it becomes probable that the number of appearances will be achieved or
+the specified future events will occur. The additional costs are capitalised and amortised as set out above.
+Profits or losses on the sale of players represent the transfer fee receivable, net of any transaction costs, less
+the unamortised cost of the applicable player’s registration.
+
+1.5 Tangible fixed assets
+Tangible fixed assets are initially measured at cost and subsequently measured at cost or valuation, net of
+depreciation and any impairment losses.
+
+-16-
+Docusign Envelope ID: 8D161523-3914-424F-9C35-784BED72E32D
+
+HARROGATE TOWN AFC LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR ENDED 30 JUNE 2025
+
+1 Accounting policies (Continued)
+Depreciation is recognised so as to write off the cost or valuation of assets less their residual values over
+their useful lives on the following bases:
+Leasehold land and buildings straight line over the life of the lease
+Fixtures and fittings 20% reducing balance
+Motor vehicles 25% straight line
+The gain or loss arising on the disposal of an asset is determined as the difference between the sale
+proceeds and the carrying value of the asset, and is credited or charged to profit or loss.
+
+1.6 Fixed asset investments
+Interests in subsidiaries are initially measured at cost and subsequently measured at cost less any
+accumulated impairment losses. The investments are assessed for impairment at each reporting date and
+any impairment losses or reversals of impairment losses are recognised immediately in profit or loss.
+
+1.7. Impairment of fixed assets
+At each reporting period end date, the company reviews the carrying amounts of its tangible and intangible
+assets to determine whether there is any indication that those assets have suffered an impairment los. If
+any such indication exists, the recoverable amount of the asset is estimated in order to determine the extent
+of the impairment loss (if any). Where it is not possible to estimate the recoverable amount of an individual
+asset, the company estimates the recoverable amount of the cash-generating unit to which the asset
+belongs.
+Recoverable amount is the higher of fair value less costs to sell and value in use. In assessing value in use,
+the estimated future cash flows are discounted to their present value using a pre-tax discount rate that
+reflects current market assessments of the time value of money and the risks specific to the asset for which
+the estimates of future cash flows have not been adjusted.
+If the recoverable amount of an asset (or cash-generating unit) is estimated to be less than its carrying
+amount, the carrying amount of the asset (or cash-generating unit) is reduced to its recoverable amount. An
+impairment loss is recognised immediately in profit or loss, unless the relevant asset is carried at a revalued
+amount, in which case the impairment loss is treated as a revaluation decrease.
+Recognised impairment losses are reversed if, and only if, the reasons for the impairment loss have ceased to
+apply. Where an impairment loss subsequently reverses, the carrying amount of the asset (or cash
+generating unit) is increased to the revised estimate of its recoverable amount, but so that the increased
+carrying amount does not exceed the carrying amount that would have been determined had no impairment
+loss been recognised for the asset (or cash-generating unit) in prior years. A reversal of an impairment loss is
+recognised immediately in profit or loss, unless the relevant asset is carried at a revalued amount, in which
+case the reversal of the impairment loss is treated as a revaluation increase.
+
+1.8 Stocks
+Stocks are stated at the lower of cost and net realisable value, being the estimated selling price less costs to
+sell. Cost is based on the cost of purchase on a first in first out basis.
+
+-17-
+a
+Docusign Envelope ID: 8D161523-3914-424F-9C35-784BED72E32D
+
+HARROGATE TOWN AFC LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR ENDED 30 JUNE 2025
+
+1 Accounting policies (Continued)
+At each reporting date, an assessment is made for impairment. Any excess of the carrying amount of stocks
+over its estimated selling price less costs to complete and sell is recognised as an impairment loss in profit or
+loss. Reversals of impairment losses are also recognised in profit or loss.
+
+1.9 Cash and cash equivalents
+Cash and cash equivalents are basic financial assets and include cash in hand, deposits held at call with
+banks, other short-term liquid investments with original maturities of three months or less, and bank
+overdrafts. Bank overdrafts are shown within borrowings in current liabilities.
+
+1.10 Financial instruments ;
+The company has elected to apply the provisions of Section 11 ‘Basic Financial Instruments’ and Section 12
+‘Other Financial Instruments Issues’ of FRS 102 to all of its financial instruments.
+Financial instruments are recognised in the company's balance sheet when the company becomes party to
+the contractual provisions of the instrument.
+Financial assets and liabilities are offset, with the net amounts presented in the financial statements, when
+there is a legally enforceable right to set off the recognised amounts and there is an intention tosettle on a
+net basis or to realise the asset and settle the liability simultaneously.
+Basic financial assets
+Basic financial assets, which include debtors and cash and bank balances, are initially measured at
+transaction price including transaction costs and are subsequently carried at amortised cost using the
+effective interest method unless the arrangement constitutes a financing transaction, where the transaction
+is measured at the present value of the future receipts discounted at a market rate of interest. Financial
+assets classified as receivable within one year are not amortised.
+Impairment of financial assets .
+Financial assets, other than those held at fair value through profit and loss, are assessed for indicators of
+impairment at each reporting end date.
+Financial assets are impaired where there is objective evidence that, as a result of one or more events that
+occurred after the initial recognition of the financial asset, the estimated future cash flows have been
+affected. If an asset is impaired, the impairment loss is the difference between the carrying amount and the
+present value of the estimated cash flows discounted at the asset’s original effective interest rate. The
+impairment loss is recognised in profit or loss.
+If there is a decrease in the impairment loss arising from an event occurring after the impairment was
+recognised, the impairment is reversed. The reversal is such that the current carrying amount does not
+exceed what the carrying amount would have been, had the impairment not previously been recognised.
+The impairment reversal is recognised in profit or loss.
+
+-~18-
+Docusign Envelope ID: 80161523-3914-424F-9C35-784BED72E32D
+
+HARROGATE TOWN AFC LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR ENDED 30 JUNE 2025
+
+1 Accounting policies (Continued)
+Derecognition of financial assets
+Financial assets are derecognised only when the contractual rights to the cash flows from the asset expire or
+are settled, or when the company transfers the financial asset and substantially all the risks and rewards of
+ownership to another entity, or if some significant risks and rewards of ownership are retained but control of
+the asset has transferred to another party that is able to sell the asset in its entirety to an unrdated third
+party.
+Classification of financial liabilities
+Financial liabilities and equity instruments are classified according to the substance of the contractual
+arrangements entered into. An equity instrument is any contract that evidences a residual interest in the
+assets of the company after deducting all of its liabilities.
+Basic financial liabilities
+Basic financial liabilities, including creditors and loans from related parties, are initially recognised at
+transaction price unless the arrangement constitutes a financing transaction, where the debt instrument is
+measured at the present value of the future payments discounted at a market rate of interest. Financial
+liabilities classified as payable within one year are not amortised.
+Debt instruments are subsequently carried at amortised cost, using the effective interest rate method.
+Trade creditors are obligations to pay for goods or services that have been acquired in the ordinary course of
+business from suppliers. Amounts payable are classified as current liabilities if payment is due within one
+year or less. If not, they are presented as non-current liabilities. Trade creditors are recognised initially at
+transaction price and subsequently measured at amortised cost using the effective interest method.
+Derecognition of financial liabilities
+Financial liabilities are derecognised when the company’s contractual! obligations expire or are discharged or
+cancelled.
+
+1.11 Equity instruments
+Equity instruments issued by the company are recorded at the proceeds received, net of transaction costs.
+Dividends payable on equity instruments are recognised as liabilities once they are no longer at the
+discretion of the company.
+
+1.12 Taxation
+The tax expense represents the sum ot the tax currently payable and deferred tax.
+Current tax
+The tax currently payable is based on taxable profit for the year. Taxable profit differs from net profit as
+reported in the profit and loss account because it excludes items of income or expense that are taxable or
+deductible in other years and it further excludes items that are never taxable or deductible. The company’s
+liability for current tax is calculated using tax rates that have been enacted or substantively enacted by the
+reporting end date.
+
+-19-
+a
+Docusign Envelope ID: 8D161523-3914-424F-9C35-784BED72E32D
+
+HARROGATE TOWN AFC LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR ENDED 30 JUNE 2025
+
+1 Accounting policies (Continued)
+Deferred tax
+Deferred tax liabilities are generally recognised for all timing differences and deferred tax assets are
+recognised to the extent that it is probable that they will be recovered against the reversal of deferred tax
+liabilities or other future taxable profits. Such assets and liabilities are not recognised if the timing difference
+arises from goodwill or from the initial recognition of other assets and liabilities in a transaction that affects
+neither the tax profit nor the accounting profit.
+The carrying amount of deferred tax assets is reviewed at each reporting end date and reduced to the extent
+that it is no longer probable that sufficient taxable profits will be available to allow all or part of the asset to
+be recovered. Deferred tax is calculated at the tax rates that are expected to apply in the period when the
+liability is settled or the asset is realised. Deferred tax is charged or credited in the profit and loss account,
+except when it relates to items charged or credited directly to equity, in which case the deferred tax is also
+dealt with in equity. Deferred tax assets and liabilities are offset when the company has a legally enforceable
+right to offset current tax assets and liabilities and the deferred tax assets and liabilities relate to taxes levied
+by the same tax authority.
+
+1.13 Employee benefits
+The costs of short-term employee benefits are recognised as a liability and an expense, unless those costs
+are required to be recognised as part of the cost of stock or fixed assets.
+The cost of any unused holiday entitlement is recognised in the period in which the employee’s services are
+received.
+Termination benefits are recognised immediately as an expense when the company is demonstrably
+committed to terminate the employment of an employee or to provide termination benefits.
+
+1.14 Retirement benefits
+Payments to defined contribution retirement benefit schemes are charged as an expense as they fall due.
+
+1.15 Leases
+Leases are classified as finance leases whenever the terms of the lease transfer substantially all the risks and
+rewards of ownership to the lessees. All other leases are classified as operating leases.
+Assets held under finance leases are recognised as assets at the lower of the asset's fair value at the date of
+inception and the present value of the minimum lease payments. The related liability is included in the
+balance sheet as a finance lease obligation. Lease payments are treated as consisting of capital and interest
+elements. The interest is charged to profit or loss so as to produce a constant periodic rate of interest on the
+remaining balance of the liability.
+Rentals payable under operating leases, including any lease incentives received, are charged to profit or loss
+on a straight line basis over the term of the relevant lease except where another more systematic basis is
+more representative of the time pattern in which economic benefits from the leases asset are consumed.
+
+-20-
+Docusign Envelope ID: 8D161523-3914-424F-9C35-784BED72E32D
+HARROGATE TOWN AFC LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2025
+1 Accounting policies (Continued)
+1.16 Government grants
+Grants are accounted for under the accruals model as permitted by FRS 102. Grants relating to expenditure
+on tangible fixed assets are credited to profit or loss at the same rate as the depreciation on the assets to
+which the grant relates. The deferred element of grants is included in creditors as deferred income.
+Grants of a revenue nature are recognised in the profit and loss account in the same period as the related
+expenditure.
+2 Judgements and key sources of estimation uncertainty
+In the application of the company’s accounting policies, the directors are required to make judgements,
+estimates and assumptions about the carrying amount of assets and liabilities that are not readily apparent
+from other sources. The estimates and associated assumptions are based on historical experience and other
+factors that are considered to be relevant. Actual results may differ from these estimates.
+The estimates and underlying assumptions are reviewed on an ongoing basis. Revisions to accounting
+estimates are recognised in the period in which the estimate is revised where the revision affects only that
+period, or in the period of the revision and future periods where the revision affects both current and future
+periods.
+Critical judgements
+The following judgements (apart from those involving estimates) have had the most significant effect on
+amounts recognised in the financial statements.
+Contingent liabilities for player transactions
+Under the conditions of certain transfer agreements, further fees may become payable to the selling club in
+the event of the player concerned making a certain number of first team appearances, or on the occurrence
+of certain other specified future events. Determining whether a provision is needed for the potential future
+fees requires judgement and amounts are recognised based on management's best estimate of the future
+fees payable. Further details of contingent fees at the reporting date are provided in the contingent liabilities
+note to the financial statements.
+3 Turnover and other revenue
+2025 2024
+£ £
+Turnover analysed by class of business
+Provision of services 3,546,091 2,713,108
+Sale of goods 510,296 355,894
+4,056,387 3,069,002
+-21- .
+cn
+Docusign Envelope ID: 8D161523-3914-424F-9C35-784BED72E32D
+HARROGATE TOWN AFC LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2025 -
+3 Turnover and other revenue (Continued)
+2025 2024
+£ £
+Other revenue
+Grants received : 63,262 52,561
+All turnover arose in the United Kingdom from the company's principal activities.
+4 Operating loss
+2025 2024
+Operating loss for the year is stated after charging/({crediting): £ £
+Government grants (63,262) (52,561)
+Fees payable to the company's auditor for the audit of the company's
+financial statements 12,195 11,500
+Depreciation of owned tangible fixed assets 388,238 395,225
+Amortisation of intangible assets , 193,441 166,137
+Profit on disposal of intangible assets (141,510) (535,188)
+Operating lease charges 35,639 35,623
+The profit on disposal of intangible assets relates to the transfer of certain player registrations in the period.
+5 Employees
+The average monthly number of persons (including directors) employed by the company during the year
+was:
+2025 2024
+. Number Number
+Total 69 80
+Their aggregate remuneration comprised:
+2025 2024
+£ £
+Wages and salaries 3,121,209 3,233,835
+Social security costs 357,797 340,308
+Pension costs 49,539 43,192
+3,528,545 3,617,335
+-22-
+Docusign Envelope ID: 8D161523-3914-424F-9C35-784BED72E32D
+HARROGATE TOWN AFC LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2025
+6 _ Directors’ remuneration
+2025 2024
+£ £
+Remuneration for qualifying services 48,960 48,000
+Company pension contributions to defined contribution schemes 1,282 1,253
+50,242 49,253
+The number of directors for whom retirement benefits are accruing under defined contribution schemes
+amounted to 1 (2024 - 1).
+7 Interest payable and similar expenses
+2025 2024
+£ £
+Other finance costs:
+Interest on finance leases and hire purchase contracts 533 533
+. -23- .
+a
+Docusign Envelope ID: 8D161523-3914-424F-9C35-784BED72E32D
+HARROGATE TOWN AFC LIMITED ;
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2025
+8 Taxation
+The actual charge for the year can be reconciled to the expected credit for the year based on the profit or
+. loss and the standard rate of tax as follows:
+2025 2024
+£ £
+Loss before taxation (2,167,951) (2,530,900)
+Expected tax credit based on the standard rate of corporation tax in the UK of
+25.00% (2024: 25.00%) (541,988) (632,725) ,
+Tax effect of expenses that are not deductible in determining taxable profit (22,362) 6,155
+Change in unrecognised deferred tax assets 495,020 580,818
+Group relief 7,896 6,669
+Depreciation on assets not qualifying for tax allowances 61,434 39,083
+Taxation charge for the year - -
+As at 30 June 2025, the company had unrelieved tax losses carried forward of £9.6m (2024 - £7.5m) against .
+which no deferred tax asset has been recognised.
+9 Intangible fixed assets
+Player
+registrations
+£
+Cost
+At 1 July 2024 342,978
+Additions 60,500
+At 30 June 2025 403,478
+Amortisation and impairment
+At 1 July 2024 166,137
+Amortisation charged for the year 193,441
+At 30 June 2025 359,578
+Carrying amount
+At 30 June 2025 43,900
+At 30 June 2024 176,841
+-~24-
+Docusign Envelope ID: 8D161523-3914-424F-9C35-784BED72E32D
+HARROGATE TOWN AFC LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2025
+10 Tangible fixed assets
+Leasehold land Fixtures and Motor vehicles Tota!
+and buildings fittings
+£ £ £ £
+Cost ,
+At 1 July 2024 6,746,279 739,351 77,630 7,563,260
+Additions 94,008 40,650 - 134,658
+At 30 June 2025 6,840,287 780,001 77,630 7,697,918
+Depreciation and impairment
+At 1 July 2024 1,226,640 414,607 25,877 = 1,667,124
+Depreciation charged in the year 287,274 81,557 19,407 388,238
+At 30 June 2025 1,513,914 496,164 45,284 2,055,362
+Carrying amount
+: At 30 June 2025 5,326,373 283,837 32,346 5,642,556
+At 30 June 2024 5,519,639 324,744 $1,753 5,896,136
+The net carrying value of tangible fixed assets includes the following in respect of assets held under finance
+leases or hire purchase contracts.
+2025 2024
+£ £
+Plant and equipment 19,211 24,013
+Included within the net book value of land and buildings above is £5,326,373 (2024 - £5,519,639} in respect
+of short leasehold land and buildings.
+11 Fixed asset investments
+2025 2024
+Notes £ £
+Investments in subsidiaries 1 1
+The investment represents the holding of 100% of the issued share capital of Harrogate 3G Limited, a
+company incorporated in England and Wales. The principal activity of Harrogate 3G Limited is that of the
+operation of sports facilities. The registered office address of Harrogate 3G Limited is The Exercise Stadium,
+Wetherby Road, Harrogate, HG2 7RY.
+As at 30 June 2025, Harrogate 3G Limited had aggregate capital and reserves of £176,252 (2024 - £157,202)
+- and made a profit for the year then ended of £19,050 (2024 - £14,142).
+-25- :
+a
+Docusign Envelope ID: 8D161523-3914-424F-9C35-784BED72E32D
+HARROGATE TOWN AFC LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2025
+12 Stocks
+2025 2024
+£ £
+Finished goods and goods for resale 67,197 62,304
+13 Debtors
+2025 2024
+Amounts falling due within one year: £ £
+Trade debtors 283,675 418,071
+Amounts owed by group undertakings 14,999 17,499
+Other debtors 22,500 10,000
+Prepayments and accrued income 275,013 227,403
+596,187 672,973
+2025 2024
+Amounts falling due after more than one year: £ £
+Trade debtors 40,000 145,000
+Total debtors 636,187 817,973
+14 Creditors: amounts falling due within one year .
+2025 2024
+Notes £ £
+Obligations under finance leases 17 3,335 13,341
+Other borrowings 16 6,403,620 5,254,574
+Trade creditors 364,439 224,081
+Taxation and social security 112,116 148,275
+Other creditors 19,550 11,381
+Accruals and deferred income 277,528 350,367
+7,180,588 6,002,019
+-26-
+Docusign Envelope ID: 8D161523-3914-424F-9C35-784BED72E32D
+HARROGATE TOWN AFC LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2025
+15 Creditors: amounts falling due after more than one year
+2025 2024
+Notes £ £
+Obligations under finance leases 17 - 3,335
+Deferred income 18 689,888 733,150
+689,888 736,485
+16 Loans and overdrafts
+2025 2024
+£ £
+Loans from related parties 6,403,620 5,254,574
+Payable within one year 6,403,620 5,254,574
+Loans from related parties are interest-free and unsecured.
+17 __ Finance lease obligations
+2025 2024
+Future minimum lease payments due under finance leases: £ £
+Within one year 3,335 13,341
+In two to five years - 3,335
+3,335 16,676
+Finance lease payments represent rentals payable by the company for certain items of plant and equipment.
+All leases are on a fixed repayment basis and no arrangements have been entered into for contingent rental
+payments. The lease liabilities are secured against the assets to which they relate.
+-27-
+Docusign Envelope ID: 80161523-3914-424F-9C35-784BED72E32D
+HARROGATE TOWN AFC LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2025
+18 Deferred income
+2025 2024
+£ £
+Other deferred income 689,888 733,150
+19 Retirement benefit schemes
+2025 2024
+Defined contribution schemes £ £
+Charge to profit or loss in respect of defined contribution schemes 49,539 43,192
+The company operates a defined contribution pension scheme for all qualifying employees. The assets of the
+scheme are held separately from those of the company in an independently administered fund.
+20 = Share capital
+2025 2024 2025 2024
+Ordinary share capital Number Number £ £
+Issued and fully paid ,
+Ordinary shares of £1 each 5,110,935 5,110,935 . 5,110,935 5,110,935
+21 Reserves
+Capital contribution reserve
+The capital contribution reserve represents the cumulative value of capital introduced into the company. The
+amounts are provided for capital investment and are not repayable.
+Profit and loss reserves :
+The profit and loss account represents accumulated profits and losses.
+22 Operating lease commitments
+Lessee
+At the reporting end date the company had outstanding commitments for future minimum lease payments
+under non-cancellable operating leases, which fall due as follows:
+2025 2024
+£ £
+Within one year 28,121 31,082
+Between two and five years 17,468 7,360
+45,589 38,442
+-28-
+Docusign Envelope ID: 8D161523-3914-424F-9C35-784BED72E32D
+
+HARROGATE TOWN AFC LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR ENDED 30 JUNE 2025
+
+23 Financial commitments, guarantees and contingent liabilities
+Under the conditions of certain transfer agreements in respect of player registrations purchased, further
+transfer fees will be payable to the vendors in the event of the players concerned making a certain number
+of First Team appearances or in the event of certain other future events specified in the transfer agreements.
+In accordance with the company's accounting policy for transfer fees, any additional fees which may be
+payable under these agreements, will be accounted for in the year in which it becomes probable that the
+number of appearances will be achieved or the specified future events will occur. The maximum potential
+liability for future transfer fees not provided for in respect of contracts in force at the reporting date,
+amounts to £Nil.
+
+24 Contingent assets
+Under the terms of certain agreements for the sale of player registrations, further amounts may be received
+by the club. As at the reporting date, the amount considered probable to be received in the future, but not
+recognised in these financial statements, amounted to £135,000.
+
+-29-
+Docusign Envelope ID: 8D161523-3914-424F-9C35-784BED72E32D
+HARROGATE TOWN AFC LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2025
+25 ‘Related party transactions
+Remuneration of key management personnel
+The remuneration of key management personnel is as follows.
+2025 2024
+£ £
+Aggregate compensation 245,763 233,298
+: In addition to the remuneration disclosed above, the company also incurred employer's national insurance
+costs of £29,103 (2024 - £19,004).
+Other information
+Director's loan account
+At 30 June 2025 the company owed a related party £6,403,620 (2024 - £5,254,574) with regards to working
+capital support. No interest was charged on this balance.
+Other related party transactions
+Strata Homes Limited is a company under the control of R | Weaver and a relative. During the period the
+company was charged £65 {2024 - £210,006) in respect of cost recharges for employees and shared services.
+The company also received £Nil (2024 - £100,079) in respect of sponsorship income from Strata Homes
+Limited. As at 30 June 2025, the company owed E£Nil (2024 - ENil) to Strata Homes Limited.
+Touch Telecommunications Limited is a company under the control of A J Taylor. During the period the
+company was charged £17,843 (2024 - £Nil) from Touch Telecommunications Limited. At 30 June 2025, the
+company owed ENil (2024 - £Nil) to Touch Telecommunications Limited.
+Howard Matthews Partnership was sold to the SMH Group of companies (SMH Group) on 31 December
+2023, forming part of SMH Howard Matthews Ltd. Howard Matthews does not have control over the SMH
+Group, therefore is not considered a related party. During the period ending 30 June 2024, the company
+charged £2,000 to Howard Matthews Partnership. At 30 June 2024, the company was owed £Nil from
+Howard Matthews Partnership.
+26 = Controlling party
+The company is controlled by R | Weaver by virtue of his 96% holding of the allotted share capital.
+-30-
+Docusign Envelope ID: 8D161523-3914-424F-9C35-784BED72E32D
+HARROGATE TOWN AFC LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2025
+27 Cash absorbed by operations
+2025 2024
+£ £
+Loss for the year after tax (2,167,951) (2,530,900)
+Adjustments for:
+Finance costs 533 533
+Gain on disposal of intangible assets (141,510) (535,188)
+Amortisation and impairment of intangible assets 193,441 166,137
+Depreciation and impairment of tangible fixed assets 388,238 395,225
+Movements in working capital: :
+(Increase}/decrease in stocks (4,893) 34,113
+Decrease/(increase) in debtors 10,453 (50,746)
+Increase/(decrease) in creditors 26,156 (92,630)
+(Decrease)/increase in deferred income (43,262) 256,633
+Cash absorbed by operations (1,738,795) (2,356,823)
+28 Analysis of changes in net debt
+1 July 2024 Cash flows 30 June 2025
+£ £ £
+Cash at bank and in hand 80,264 27,435 107,699
+Borrowings excluding overdrafts (5,254,574) (1,149,046) (6,403,620)
+Obligations under finance leases (16,676) 13,341 (3,335)
+(5,190,986) (1,108,270) — (6,299,256)
+a -31-
+a
 

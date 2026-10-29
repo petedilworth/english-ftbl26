@@ -2,7 +2,7 @@ source: Companies House filing, colchester-united-fc__2.pdf
 document: UlKXnaE5W6bM3guW7t77xBgLXHmYhrgod7GScEiaPpw
 made_up_date: 2024-06-30
 method: ocr
-pages_read: 12 of 17
+pages_read: 17 of 17
 
 : . : : _ _ Registered Number: 02705301
 : COLCHESTER UNITED FOOTBALL CLUB LIMITED ,
@@ -397,4 +397,131 @@ At 30 June 2023 17,774 239,221 233,894 490,889 ,
 . The cost of fixtures and fittings includes £45,220 (2022 - ENil) of assets under construction which
 have not been depreciated. :
 -11-
+COLCHESTER UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS :
+, FOR THE YEAR ENDED 30 JUNE 2024
+7. Debtors
+. - ; 2024 2023
+£ £
+Due after more than one year : :
+; Trade debtors . ; 256,600 49,882
+Other debtors 110,375 110,375
+. : : 366,975 160,257
+: 2024 2023
+. : ‘ £ £
+Due within one year
+Trade debtors . 167,398 383,270
+. Amounts owed by related parties (see note 13) 30,725 43,724
+Prepayments and accrued income 123,788 111,903
+. 321,911 538,897
+- The amounts owed to related parties are interest free and repayable on demand.
+8. Cash and cash equivalents ;
+: 2024 2023
+. : £ £ :
+Cash at bank and in hand : . 219,754 424,191
+COLCHESTER UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS _ ‘
+FOR THE YEAR ENDED 30 JUNE 2024 : .
+: . 9. Creditors: Amounts falling due within one year , : . :
+: : As restated ,
+‘ ; 2024 2023
+. . Trade creditors : 275,821 448,800 —
+Amounts owed to group undertakings : 36,773,059 33,314,941
+so Other taxation and social security : 319,504 244,475
+oe Other creditors 551,518 553,728
+; Accruals and deferred income 43,258 17,775
+: : ce ‘ 37,963,160 34,579,719
+: The amounts owed to group undertakings are interest free and repayable on demand.
+10. Deferred taxation : :
+; : 2024 2023
+: . £ £
+At beginning of year , : (68,225) (46,373)
+Movement 10,703 (21,852)
+oo . At end of year (57,522) (68,225)
+The deferred tax liability is made up as follows: OS : ,
+: , 2024 2023
+£ — £..
+Accelerated capital allowances (56,515) (67,005)
+Other short term timing differences (1,007) (1,220)
+, ; , (57,522) (68,225)
+e . .
+ee Se
+-13- :
+COLCHESTER UNITED FOOTBALL CLUB LIMITED .
+. NOTES TO THE FINANCIAL STATEMENTS .
+FOR THE YEAR ENDED 30 JUNE 2024 :
+11. Share capital ;
+, 2024 2023
+: £ £
+Allotted, called up and fully paid :
+23,019,802 (2023 - 23,019,802) Ordinary shares of £0.05 each 1,150,990 1,150,990
+. : 2,724,374 (2023 - 2,724,374) B Ordinary shares of £1.00 each 2,724,374 2,724,374
+— 3,875,364 3,875,364
+; The B Ordinary shares hold no right to receive notice of or attend or vote at any general meeting of the
+Company but in all other respects rank parri passu with the Ordinary shares of the Company.
+12. Reserves . | : :
+, Other reserves :
+. Other reserves relate to a capital contribution from the Company's ultimate parent undertaking. .
+Profit & loss account
+The profit and loss account represents the Company's accumulated profits and losses, less dividends
+paid. The reserve is available for distribution to the shareholder.
+13. Other financial commitments
+At the year end, the Company had an operating lease commitment in respect of its stadium. .
+The term of the lease is from 15 July 2008 to 14 July 2133. From 2018 the rent payable has changed to
+the agreed percentage of the matchday ticket revenue. Based on the 23/24 match day ticket revenue, the
+annual rent payable would be £161,143 (2023 - £132,047). Therefore the best estimate of future lease
+liabilities is £17.56m (2023 - £14.53m).
+, 14
+COLCHESTER UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS :
+_» FOR THE YEAR ENDED 30 JUNE 2024 , _
+14. Related party transactions : ;
+oo Transactions with fellow Group undertakings
+The Company has taken advantage of the exemption under FRS 102 to not disclose transactions with
+: Aspire Media Group Limited and its subsidiary undertakings, as the Company is a wholly owned
+subsidiary. ,
+Transactions with other related parties
+At the year end, Colchester United Community Trading Limited, a company related by common control, ,
+was owed by the Company, an amount of £23,702 (2023 - ENil). .
+a At the year end, Colchester United Community Foundation, a charity related by common control, owed
+the Company, an amount of £2,835 (2023 - £Nil).
+During the year, the Company received management fee ‘income from Colchester United Community :
+Foundation amounting to £27,000 (2023 - £13,500).
+During the year, the Company recharged costs including staff costs to Colchester United Community
+Foundation amounting to £548,856 (2023 - £564,025). : : .
+. 15. Controlling party : _
+The immediate and ultimate parent undertaking Aspire Media Group Limited, a company incorporated in
+England and Wales. .
+. The ultimate controlling party is R A Cowling by virtue of his majority shareholding in Aspire Media Group
+. Limited.
+The largest and smallest group for which the Company's results are included is headed by Aspire Media ,
+Group Limited. Copies of the consolidated financial statements of Aspire Media Group Limited are
+publicly available from Tower Business Park, Kelvedon Road, Tiptree, Colchester, Essex CO5 OLX.
+: - 16 - ,
+COLCHESTER UNITED FOOTBALL CLUB LIMITED
+, i NOTES TO THE FINANCIAL STATEMENTS
+: FOR THE YEAR ENDED 30 JUNE 2024 .
+16. Auditor's information :
+The auditor's report on the financial statements for the year ended 30 June 2024 was unqualified.
+The audit report was signed on 26 Nord 2025 by John Perry (Senior Statutory Auditor) on behalf of
+Sumer Auditco Limited.
+The audit report contained a paragraph in respect to material uncertainty relating to going concern as
+follows:
+We draw attention to note 2.2 in the financial statements, which indicates that the Company has incurred
+a loss for the year of £3.7m and is expecting future losses. Furthermore the Company requires funding
+for these losses and to enable it to meet its liabilities as they fall due. Combined these are circumstances
+that may cast significant doubt on the Company's ability to have sufficient financial resources to continue
+in operational existence for the foreseeable future being at least 12 months from the signing of these
+financial statements. The Directors of the ultimate parent undertaking, Aspire Media Group Limited, and a
+fellow subsidiary undertaking, JobServe Limited, have indicated their willingness to continue to support
+the Company so as to meet its liabilities for the foreseeable future, being a minimum period of 12 months
+from the date of approval of these financial statements. The financial statements do not include any
+, adjustment that would arise should the Company be unable to continue as a going concern. These
+
+matters along with other matters set forth in note 2.2, indicate that a material uncertainty exists that may
+
+: cast significant doubt on the Company's ability to continue as a going concern. Our opinion is not
+modified in respect of this matter. , :
+
+: 216 -
 

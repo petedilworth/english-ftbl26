@@ -2,7 +2,7 @@ source: Companies House filing, tottenham-hotspur-fc__1.pdf
 document: AF9JxXqgzHYeGYfUSG0UMnNh7_E8X1nCiuondmfa7Uc
 made_up_date: 2025-06-30
 method: ocr
-pages_read: 12 of 65
+pages_read: 65 of 65
 
 Company Registration No. 1706358
 Tottenham Hotspur Limited
@@ -591,4 +591,2358 @@ Secretary
 24 October 2025 .
 
 1
+Directors’ report
+to the members of Tottenham Hotspur Limited
+Directors
+The Directors who served throughout the year and up to the date of signing were as follows:
+Executive Directors
+DP Levy (resigned 4 September 2025)
+VG Venkatesham (appointed 2 June 2025)
+MJ Collecott
+D Cullen (resigned 31 May 2025) .
+Non-Executive Directors
+J Turner
+PC Charrington (appointed 12 March 2025)
+E P Hinson (appointed 23 October 2025)
+None of the Directors who served during the year held any beneficial interests in the ordinary share capital of the Company at 30
+June 2025. For a full list of Directors please refer to page 64.
+During the year ENIC Sports Inc (“ENIC”) subscribed to an additional 5,767,984 ordinary shares. At the year end ENIC held
+204,077,955 ordinary shares of Tottenham Hotspur Limited representing 86.91% of those in issue and therefore ENIC is the ultimate
+parent of Tottenham Hotspur Limited.
+In June 2022 ENIC subscribed for 100,000,000 £1 ‘A’ ordinary shares which were converted into ordinary shares in December 2022.
+Upon subscription of the ‘A’ shares ENIC were issued with warrants by the Group. The warrants are held as financial liabilities at fair
+value through profit or loss (“FVTPL”).
+Daniel Levy and certain members of his family are potential beneficiaries of discretionary trusts which ultimately own 29.88% of the
+share capital of ENIC Sports and Development Holdings Limited, a company incorporated in The Bahamas, which in turn owns 100%
+of ENIC Sports Inc, also incorporated in The Bahamas.
+Matthew’Collecott and Donna-Maria Cullen are trustees of the Tottenham Hotspur Foundation, unpaid positions to assist the
+direction and performance of the Charity.
+Details of the Directors’ emoluments are given in note 5 of the consolidated accounts. Directors’ interests in contracts are disclosed
+in note 24.
+Results and dividends
+The audited consolidated income statement for the year ended 30 June 2025 is set out on page 22.
+The Directors have not recommended the payment of a dividend in the period or through to the date of signing (2024: Enil).
+Post balance sheet events
+Details of post balance sheet events are given in note 29 to the consolidated accounts. :
+Financial risk management objectives and policies
+Details of financial risk management objectives and policies are given in the Strategic report on page 3.
+
+: Charitable and political donations
+The Group made cash donations of £88,000 to international, UK-based and local charities during the year (2024: £738,000). The
+decrease is driven by a financial contribution and donation of net proceeds from ticket sales for the prior year pre-season friendly
+against Shakhtar Donetsk to ‘Shakhtar Social’, which has provided financial support, humanitarian and medical assistance to children
+and families across Ukraine since the conflict began in February 2022. The Group made no political donations during the year (2024:
+£nil). In addition, the Group continues to make contributions with a value in excess of £0.5m per annum to the Tottenham Hotspur
+Foundation and continues to underwrite the ongoing good works of the charity. In addition, the Group makes many other
+contributions of Tottenham Hotspur Football Club memorabilia to local registered charities, especially in the Haringey and Enfield
+districts and adjacent catchment areas.
+Disabled employees
+Applications for employment by disabled persons are always considered fully, bearing in mind the aptitudes of the applicant
+concerned. In the event of members of staff becoming disabled, every effort is made to ensure that their employment within the
+Group continues and appropriate training is arranged. It is the policy of the Group that the training, career development and
+promotion of disabled people should, as far as possible, be identical to that of other employees.
+Employees consultation
+The Group places considerable value on the involvement of its employees and has continued to keep them informed on matters
+affecting them as employees and on the various factors affecting the Group. This is achieved by consultations and intranet notices.
+
+: : 12
+Directors’ report
+to the members of Tottenham Hotspur Limited
+Equality and diversity :
+The Group’s vision is to create an environment in which everyone — staff, supporters and the wider community — has equal, dignified
+ease of access to our Club, services and facilities. The Group’s aim is to be inclusive, supportive, fair and free from discrimination.
+The Group aim to actively promote equality and diversity and ensure that the legislation and policy requirements within the nine
+protected characteristics of equality and diversity are implemented into all working practices.
+London Living Wage
+The Group is pleased to confirm that it is committed to paying all staff the London Living Wage, with any annual increases reflected
+in the salary review process. As we tender on external contractors we have ensured that all contracts endorse this position and any
+external contractors who work with the Group contractually have to pay their staff the London Living Wage. The Directors wanted to
+include this statement within its audited Annual Report to underline its compliance with best practice and that it has been assessed
+by its auditor, based on the auditor's responsibilities set out in the ‘other information’ paragraph of the audit opinion, on page 19.
+Directors’ indemnities :
+The Group has not made any qualifying third-party indemnity provisions for the benefit of its Directors during the year.
+Statement of corporate governance arrangements
+For the year ended 30 June 2025, the Group has voluntarily applied the Wates Corporate Governance Principals for Large Private
+Companies, published by the Financial Reporting Council (“FRC”) in December 2018.
+The Wates Principals provide a framework for the Board to monitor corporate governance of the Group and see where governance
+standards can be raised to a higher level across the business.
+Purpose and leadership
+Our key objective is to drive revenues to fund a sustainable, successful Club consistently competing for trophies at the top level. The
+strategy to date has been to invest in the playing squads, build a new training centre and increased capacity stadium. We are now
+seeking to optimise our investments, whether tangible or intangible, to drive revenues that enable the Club to reinvest in players and
+create a winning club embedded in Destination Tottenham. .
+Our vision is to develop new and diverse revenue streams to further fund investment in football and decrease our reliance on
+football revenues such that we protect the long-term sustainability of our Club. We also intend to upgrade our facilities and
+operations through continued innovation, lead the way in delivering exceptional player and fan experiences and to be digital first and
+data led to enhance fan engagement, service and interaction. We are passionate about revitalising our neighbourhood by supporting
+the creation of a new leisure destination in London and uplifting the area for our local community with new homes, schools, jobs and
+opportunities to enhance fan and visitor experiences.
+Our values, the strategies that we have embedded to underpin them and the measures that we have used to monitor our performance
+against them are set out in the Strategic report. Communication of our values and strategies is achieved through formal and informal
+meetings, the Group’s intranet site The Shelf and regular business communications from the Board.
+Board composition
+The Board sits at Group level and consists of a non-executive Chairman, two executive Directors and two independent non-executive
+Directors, as well as a further Board member who sits on the Boards of subsidiaries. A list of Group Directors can be found on page
+64.
+Appointments to the Board are made on merit considering the combination of skills, background, experience and knowledge
+required to give constructive challenge and achieve effective decision making. We consider the size and composition of the Board to
+be appropriate for our business. The non-executive Directors bring challenge, experience and offer different perspectives.
+The Group has an executive leadership team which comprises of business leaders from across key departments at the Club. The
+Group has strengthened a number of key areas with ‘c-suite’ executives during the year to strengthen succession planning and
+enhance the specialised working groups focussed on the long-term growth of the Club.
+The Board has an Audit Committee with responsibility for the appointment of auditors and review of the scope and results of the
+external audit and a Remuneration Committee,
+Directors’ responsibilities
+The Board typically meets up to twelve times a year. The Board receives regular and timely information on all key aspects of the
+business including the financial performance of the business and key performance indicators and capital investment appraisals.
+Key financial information is derived from the Group’s accounting system. The Group’s finance function is appropriately qualified to
+ensure the integrity of this information and is provided with the necessary training to keep up to date with accounting changes. The
+Group’s statutory financial statements are externally audited by Deloitte LLP on an annual basis, and the interim financial statements
+are reviewed at the half year. Both the statutory financial statements and the interim accounts are submitted to the Premier League
+and UEFA.
+The Group has developed policies that provide clear lines of accountability and responsibility for effective decision making.
+
+13 .
+Directors’ report
+to the members of Tottenham Hotspur Limited
+Directors’ responsibilities (continued)
+The independent non-executive Directors have no material business relationship with the Group which may influence their judgement
+or their ability to provide independent challenge. Directors are required to declare any conflict of interest in advance of any discussion.
+Opportunity and risk
+The Board seeks out opportunities while mitigating risk. The Group’s key financial and non-financial risks and mitigations are
+described in the ‘Principal risks and uncertainties’ section of the Strategic report on page 3. The Board and the executive team also
+consider further risks as part of the day to day management of the business.
+The Board considers significant capital investment projects, player acquisitions and player sales and approves them before any
+material contracts are exchanged. Any new commercial partners are subject to legal and financial due diligence and require explicit
+approval by at least two Board members before contracts are signed.
+The Board and executive team have established an internal contro! framework designed to manage risk. All suppliers and partners
+are required to comply with both a compliance framework and a finance policy and procedures manual.
+The Board has established a Sustainability Working Group which meets quarterly to consider climate and other social and
+environmental risks and opportunities to improve the Club’s sustainability. The group consists of members of the Board, the executive
+team and other employees.
+Remuneration
+Remuneration of Directors is reviewed and set by the Remuneration Committee.
+Stakeholder relationship and engagement
+The Board’s principal responsibility is to promote the long-term success of the Club through creating both on and off pitch
+stakeholder value and contributing to a sustainable environment.
+As part of the establishment of the FAB the Club has published its Fan Engagement Plan, detailed below.
+Fan Engagement Plan
+Our commitment to fans
+The Club is committed to the principles of the Premier League’s Fan Engagement Standard, ensuring there is meaningful consultation
+between the Club and supporters on key matters of interest to the fan base.
+We engage with the FAB and Tottenham Hotspur Supporters’ Trust (“THST”) through open and honest discussion, taking their views
+into account within the Club’s decision-making processes.
+There are a variety of ways in which the Club engages with supporters, and for fans to provide us with their feedback. All of the
+Club’s forms of engagement and contact with supporters are detailed throughout our Fan Engagement Plan, which is published on
+the Club’s website each season.
+Our commitments to engage with supporters are:
+e Ensuring supporters are always at the heart of our decision-making
+* ~~ Consulting meaningfully with supporters and on the matters most important to you
+“@ More Regular and authentic communication from the board and senior staff
+« Working together with supporters to build stronger relationships and provide the best possible experience
+* Continuing to reward and celebrate our amazing supporters in the UK and across the world
+How we engage
+The Club is represented on the FAB by Nominated Board Level Official for fan engagement, Vinai Venkatesham and the Club’s Head
+of Supporter Engagement, with senior Club staff attending selected meetings. Meetings are Co-Chaired by the Club and Chris
+Paouros, (Proud Lilywhites representative and Supporter Representative Co-chair).
+In addition to quarterly FAB meetings, working groups have been created to focus on matters of particular importance to supporters.
+Working groups include DE&I, matchday atmosphere, the experiences of junior fans and supporters who attend matches of ‘our
+women’s team. There is also a ticketing subgroup featuring FAB and THST representatives. Minutes of FAB meetings are published on
+the Club’s website.
+The FAB covers a range of non-playing matters, including:
+- The Club’s strategic vision and objectives
+-  Off-pitch performance updates, priorities and plans
+- Operational matchday issues
+- Proposals relating to significant changes to Club heritage assets
+14
+Directors’ report
+to the members of Tottenham Hotspur Limited :
+How we engage (continued)
+- Stadium issues and plans
+- The Club’s community strategy
+- The Club’s equality, diversity and inclusion commitments
+- The Club’s plan for broader supporter engagement
+Other forms of engagement
+Supporters’ groups
+- In addition to the FAB, the Club has strong relationships with the THST, Proud Lilywhites, SpursAbility, Spurs REACH and Women of the
+Lane. The Club and each supporters’ group have day-to-day dialogue on key items of interest to our supporters, as well as holding
+meetings between Club Executives and group leaders throughout the season. Each of the groups also holds their own events and
+supports fan-focused initiatives in cotlaboration with the Club.
+Each supporters’ group has a Memorandum of Understanding (“MOU”) with the Club, demonstrating their importance to our approach
+to fan engagement. The MOUs establish how we will work together and which areas each group will focus on, on behalf of supporters.
+The Club also works closely with the Tottenham Hotspur Women’s Supporters’ Club on all aspects of fan engagement and experience
+for supporters of the Women’s team.
+FAB subgroups
+The FAB has a ticketing subgroup, run jointly with THST, which looks at all ticketing matters including pricing, policy (including
+concessions), fairness, accessibility, and transparency. Alongside this the FAB runs several working groups to focus on key supporter
+priorities. Each group is co-led by fan representatives and relevant Club staff with clear objectives:
+© —Men’s matchday atmosphere: Enhancing the stadium experience including developing the singing section and working with
+supporters’ groups on new atmosphere initiatives
+° Women’s team: Ensuring separate, ongoing dialogue on fan engagement for women’s team supporters and the matchday
+experience at both Brisbane Road & THS
+© Diversity, equity & inclusion: Championing an inclusive environment for all supporters
+e — Junior supporters: Developing new ways to inspire and engage the next generation of fans
+© Hall of Fame: Exploring a revamped Hall of Fame to further celebrate players who have made outstanding contributions to
+Tottenham Hotspur.
+Official Supporters’ Clubs
+The Club is proud to have over 650 Official Supporters’ Clubs around the world who are overseen by the Supporters’ Clubs Manager
+and their team. Supporters’ Club members will have access to book group tickets for matches at THS and a range of exciting Official
+Supporters’ Club events, competitions and experiences, such as pre-match social events, football tournaments at Hotspur Way, Q&A
+events with Club Legends, and the Official Supporters’ Clubs End of Season Awards. Both domestic and international supporters’ ~
+clubs have representation on the FAB, allowing the voices of fans from all over the world to be heard at the highest level within the
+Club.
+Fan forum :
+A Fan Forum event is held on an annual basis with fans invited to an open forum session with the Club’s CEO and other senior staff,
+including the Head Coach and Captain of our men’s and women’s teams. .
+Collaboration
+The Club works with a number of fan focused organisations on a range of matters that are of importance to our supporters.
+- Kick It Out deliver education sessions for fans who have used discriminatory language at matches or on social media .
+and provide advice and support on issues relating to discrimination.
+- Football Supporters’ Association representatives participate in appeal hearings for supporters who have been
+sanctioned in accordance with our Sanctions & Banning Policy, ensuring an independent voice on every panel. .
+- Level Playing Field provide advice and support to our Access team on issues relating to disabled supporters.
+- Football Supporters’ Europe has provided vatuable advice when planning for away matches in European competition.
+Heritage Assets
+We are incredibly proud of our rich history and heritage, which can be seen around THS ~ on the Tottenham Hotspur Heritage Trail,
+the many markers around the stadium commemorating our former White Hart Lane home, and the return of the famous Bill Nicholson
+Gates to the stadium environs in August 2025. Our remastered brand identity, launched during this period, also honours our heritage
+throughout its design.
+
+: The Club considers the Club crest and home shirt colours as Heritage Assets, in line with Rule M of the Football Association rules and
+regulations. While there are no plans to change our heritage assets, we would undertake a thorough and extensive consultation
+process with supporters, beginning with the FAB.
+
+15
+Directors’ report
+
+to the members of Tottenham Hotspur Limited
+
+Transparency
+
+The Club’s CEO attends all meetings with the FAB and THST. The CEO will participate in our annual Fan Forum to answer questions
+raised by supporters on the matters that are most important to the fanbase. Updates from the Board and senior Club staff are also
+provided to supporters across Club communication channels at key points during the season. Nuring the reporting year a Fan Forum
+was held on 23 September 2024, with the next one held on 16 October 2025. Each year a Fan Engagement Plan is published on the
+Club’s website.
+
+Energy and carbon reporting
+
+We have reposted on all sources of GHG emissions and energy usage as required under The Large and Medium-Sized Companies and
+Groups (Accounts and Reports) Regulations 2008 as amended. Please see Climate-related Financial Disclosure section within the
+Strategic report for more information.
+
+Going concern
+
+At the balance sheet date the Group had net current liabilities of £456.9m (2024: £325.7m), a large portion of which is made up of
+deferred income and the warrant instrument, and net assets of £620.2m (2024: £656.0m). The Board of Directors continually
+monitors the Group’s exposure to a range of risks and uncertainties, including the success of the First Team and our level of spending
+thereon, the current economic landscape and the funding requirements for capital projects. These risks and uncertainties, the
+Group’s financial performance and position for the year and its cash flows and funding position, are detailed elsewhere in the
+Directors’ report. In addition, note 18 to the financial statements includes the Group’s objectives, policies and processes for
+managing its capital, its financial risk management objectives and its exposure to credit and liquidity risk. The Directors believe that
+these risks and uncertainties are mitigated by, inter alia, the robust nature of our business with long-term fixed revenues from the
+key business areas and key sponsors.
+
+The Board of Directors have recently undertaken a thorough review of the Group’s budgets and forecasts and have produced
+detailed cash flow projections. The base case scenario assumes that there are no material changes to existing financing
+arrangements, albeit they include the benefit of a factoring arrangement entered into subsequent to the year-end which will
+potentially continue for future years, and prudent assumptions have been made in relation to on-pitch performance.
+
+These cash flow projections which, when considered in conjunction with the Group’s operational plans as well as existing loans,
+overdrafts and cash (see notes 15 and 16), as well as the factoring mentioned above, and which include consideration of reasonably
+possible changes in trading performance, demonstrate that the Board will ensure there is sufficient working capital to continue to
+operate for the foreseeable future, which is a period of at least 12 months from the date of signing the Annual Report.
+
+The Directors have identified a number of actions they could take in order to mitigate any potential cash flow or financing shortfalls,
+which could potentially arise in a downside scenario. These mitigating actions could include, but are not limited to, advancement of
+future cash inflows and/or deferring future cash outflows, sale of assets and additional financing arrangements. In addition to
+possible mitigating actions, the Directors have also considered a number of potential upsides which include the financial impact of
+better than forecast on-pitch performance including advancement in domestic cup competitions and qualifying for future UEFA cup
+competitions. Additionally, the Group has secured an equity injection of £100m subsequent to the year end, which further reduces
+the risk of a cash flow or financing shortfall arising within the next 12 months.
+
+Taking into consideration the above as well as the ability and willingness of the parent company to provide further equity injections if
+needed, the Directors believe that the Company has adequate resources to continue in operational existence for the foreseeable
+future and, as such, the consolidated and separate financial statements have been prepared on the going concern basis.
+
+Matters included in the Strategic Report
+
+In accordance with s414(C) (11) of the Companies Act, included in the Strategic report is information relating to, business
+relationships, research and development, financial risk management and future developments which would otherwise be required by
+Schedule 7 of the ‘large and medium sized companies and groups (accounts and reports) regulation 2008’ to be contained in a
+Directors’ report.
+
+Disclosure of information to the auditor
+
+In the case of each of the persons who are Directors of the Company at the date when this report was approved:
+
+© so far as each of the Directors is aware, there Is ru relevant audit information (as defined by the Companies Act 2006) of
+which the Company’s auditor is unaware;
+
+* and each of the Directors has taken all of the steps that he/she ought to have taken as a Director to make himself/herself
+aware of any relevant audit information (as defined) and to establish that the Company's auditor is aware of that
+information.
+
+16
+Directors’ report
+
+to the members of Tottenham Hotspur Limited
+
+Re-appointment of auditor
+
+Deloitte LLP have indicated their willingness to be reappointed for another term and appropriate arrangements have been put in
+
+place for them to be deemed reappointed as auditor in the absence of an Annual General Meeting.
+
+This information is given and should be interpreted in accordance with the provision of Section 418 of the Companies Act 2006.
+
+Approved by the Board of Directors and signed on behalf of the Board
+
+MJ Collecott
+
+Secretary
+
+24 October 2025
+17
+Directors’ responsibilities statement
+
+The Directors are responsible for preparing the Annual Report and the financial statements in accordance with applicable law and
+
+regulations. Company law requires the Directors to prepare financial statements for each financial year. Under that law the
+
+Directors have elected to prepare the Group financial statements in accordance with United Kingdom adopted international
+
+accounting standards. The financial statements also comply with International Financial Reporting Standards (IFRSs) as issued by the
+
+IASB. The Directors have chosen to prepare the parent Company financial statements in accordance with United Kingdom Generally
+
+Accepted Accounting Practice (United Kingdom Accounting Standards and applicable law), including FRS 101 Reduced Disclosure
+
+Framework, Under Company law the Directors must not approve the financial statements unless they are satisfied that they give a
+
+true and fair view of the state of affairs of the Company and of the profit or loss of the Company for that period.
+
+In preparing the parent Company financial statements, the Directors are required to:
+
+. select suitable accounting policies and then apply them consistently;
+
+. make judgments and accounting estimates that are reasonable and prudent;
+
+° state whether applicable UK Accounting Standards have been followed, subject to any material departures disclosed and
+explained in the financial statements; and
+
+. prepare the financial statements on the going concern basis unless it is inappropriate to presume that the Company will
+continue in business.
+
+In preparing the Group financial statements, International Accounting Standard 1 requires that Directors:
+
+e properly select and apply accounting policies;
+
+. present information, including accounting policies, in a manner that provides relevant, reliable, comparable and
+understandable information;
+
+. provide additional disclosures when compliance with the specific requirements in IFRSs are insufficient to enable users to
+understand the impact of particular transactions, other events and conditions on the entity's financial position and financial
+performance; and
+
+° make an assessment of the Company's ability to continue as a going concern.
+
+The Directors are responsible for keeping adequate accounting records that are sufficient to show and explain the Company's
+
+transactions and disclose with reasonable accuracy at any time the financial position of the Company and to enable them to ensure
+
+that the financial statements comply with the Companies Act 2006. They are also responsible for safeguarding the assets of the
+
+Company and hence for taking reasonable steps for the prevention and detection of fraud and other irregularities.
+
+The Directors are responsible for the maintenance and integrity of the corporate and financial information included on the .
+
+Company’s website. Legislation in the United Kingdom governing the preparation and dissemination of financial statements may
+
+differ from legislation in other jurisdictions.
+
+18
+Independent auditor's report :
+
+to the members of Tottenham Hotspur Limited
+
+Independent auditor's report to the members of Tottenham Hotspur Limited
+
+Report on the audit of the financial statements
+
+Opinion
+
+tn our opinion:
+
+e the financial statements of Tottenham Hotspur Limited (the ‘parent company’) and its subsidiaries (the ‘group’) give a true and
+fair view of the state of the group’s and the parent company’s affairs as at 30 June 2025 and of the group’s loss for the year
+then ended;
+
+e the group financial statements have been properly prepared in accordance with United Kingdom adopted international
+accounting standards and IFRS Accounting Standards as issued by the International Accounting Standards Board (IASB);
+
+e the parent company financial statements have been properly prepared in accordance with United Kingdom Generally Accepted
+Accounting Practice, including Financial Reporting Standard 101 Reduced Disclosure Framework; and
+
+the financial statements have been prepared in accordance with the requirements of the Companies Act 2006.
+
+We have audited the financial statements which comprise:
+
+e the consolidated income statement and statement of comprehensive income
+
+® the consolidated and parent company balance sheets;
+
+« — the consolidated and parent company statements of changes in equity;
+
+e the consolidated statement of cash flows; and
+
+e the related notes 1 to 31 and notes to the company accounts 1 to 11.
+
+The financial reporting framework that has been applied in the preparation of the group financial statements is applicable law,
+
+United Kingdom adopted international accounting standards and IFRS Accounting Standards as issued by the IASB. The financial
+
+reporting framework that has been applied in the preparation of the parent company financial statements is applicable law and
+
+United Kingdom Accounting Standards, including Financial Reporting Standard 101 Reduced Disclosure Framework (United Kingdom
+
+Generally Accepted Accounting Practice).
+
+Basis for opinion
+
+We conducted our audit in accordance with International Standards on Auditing (UK) (‘ISAs (UK)’) and applicable law. Our
+
+responsibilities under those standards are further described in the auditor’s responsibilities for the audit of the financial statements
+
+section of our report.
+
+We are independent of the group and the parent company in accordance with the ethical requirements that are relevant to our audit
+
+of the financial statements in the UK, including the Financial Reporting Council's (the ‘FRC’s’) Ethical Standard, and we have fulfilled
+
+our other ethical responsibilities in accordance with these requirements. We believe that the audit evidence we have obtained is
+sufficient and appropriate to provide a basis for our opinion.
+
+Conclusions relating to going concern
+
+In auditing the financial statements, we have concluded that the directors’ use of the going concern basis of accounting in the :
+
+preparation of the financial statements is appropriate.
+
+Based on the work we have performed, we have not identified any material uncertainties relating to events or conditions that,
+
+individually or collectively, may cast significant doubt on the group's and parent company’s ability to continue as a going concern for
+
+a period of at least twelve months from when the financial statements are authorised for issue.
+
+Our responsibilities and the responsibilities of the directors with respect to going concern are described in the relevant sections of
+
+this report.
+
+Other information
+
+The other information comprises the information included in the annual report, other than the financial statements and our auditor's
+
+report thereon. The directors are responsible for the other information contained within the annual report. Our opinion on the
+
+financial statements does not cover the other information and, except to the extent otherwise explicitly stated in our report, we do
+not express any form of assurance conclusion thereon.
+
+Our responsibility is to read the other information and, in doing so, consider whether the other information is materially inconsistent
+
+with the financial statements or our knowledge obtained in the course of the audit, or otherwise appears to be materially misstated.
+
+If we identify such material inconsistencies or apparent material misstatements, we are required to determine whether this gives rise
+
+toa material misstatement in the financial statements themselves. If, based on the work we have performed, we conclude that there
+
+is a material misstatement of this other information, we are required to report that fact.
+
+We have nothing to report in this regard.
+
+Responsibilities of directors
+
+As explained more fully in the directors’ responsibilities statement, the directors are responsible for the preparation of the financial
+
+statements and for being satisfied that they give a true and fair view, and for such internal control as the directors determine is
+
+necessary to enable the preparation of financial statements that are free from material misstatement, whether due to fraud or error.
+19
+Independent auditor’s report
+
+to the members of Tottenham Hotspur Limited
+
+In preparing the financial statements, the directors are responsible for assessing the group’s and parent company’s ability to
+
+continue as a going concern, disclosing, as applicable, matters related to going concern and using the going concern basis of
+
+accounting unless the directors either intend to liquidate the group or the parent company or to cease operations, or have no
+
+realistic alternative but to do so.
+
+Auditor’s responsibilities for the audit of the financial statements
+
+Our objectives are to obtain reasonable assurance about whether the financial statements as a whole are free from material
+
+misstatement, whether due to fraud or error, and to issue an auditor's report that includes our opinion. Reasonable assurance is a
+
+high level of assurance, but is not a guarantee that an audit conducted in accordance with ISAs (UK) will always detect a material
+
+misstatement when it exists. Misstatements can arise from fraud or error and are considered material if, individually or in the
+
+aggregate, they could reasonably be expected to influence the economic decisions of users taken on the basis of these financial
+
+statements.
+
+A further description of our responsibilities for the audit of the financial statements is located on the FRC’s website at:
+
+www. fre.org.uk/auditorsresponsibilities. This description forms part of our auditor's report.
+
+Extent to which the audit was considered capable of detecting irregularities, including fraud
+
+Irregularities, including fraud, are instances of non-compliance with laws and regulations. We design procedures in line with our
+
+responsibilities, outlined above, to detect material misstatements in respect of irregularities, including fraud. The extent to which our
+
+procedures are capable of detecting irregularities, including fraud is detailed below.
+
+We considered the nature of the group’s industry and its control environment, and reviewed the group’s documentation of their
+
+policies and procedures relating to fraud and compliance with laws and regulations. We also enquired of management and the
+
+directors about their own identification and assessment of the risks of irregularities, including those that are specific to the group’s
+
+business sector.
+
+. We obtained an understanding of the legal and regulatory frameworks that the group operates in, and identified the key laws and
+
+regulations that:
+
+e hada direct effect on the determination of material amounts and disclosures in the financial statements. These included the UK
+Companies Act 2006 and HMRC tax legislation; and
+
+e — did not have a direct effect on the financial statements but compliance with which may be fundamental to the group’s abilityto
+operate or to avoid a material penalty. These included General Data Protection Regulations “GDPR”, the Premier League Rules
+and UEFA regulations. :
+
+We discussed among the audit engagement team, including valuation and ESG specialists, regarding the opportunities and incentives
+
+that may exist within the organisation for fraud and how and where fraud might occur in the financial statements.
+
+As a result of performing the above, we identified the greatest potential for fraud in the accuracy of sponsorship revenue due to the
+
+complexities of the individual contracts and the manual process required to account for these contracts. To address the risk we .
+
+selected a risk focused sample to agree to supporting contractual agreements and assessed whether the amounts recognised are in
+
+> line with the contractual clauses in the context of the principles of the applicable accounting framework.
+
+In common with all audits under ISAs (UK), we are also required to perform specific procedures to respond to the risk of
+
+management override. In addressing the risk of fraud through management override of controls, we tested the appropriateness of
+
+journal entries and other adjustments; assessed whether the judgements made in making accounting estimates are indicative of a ‘
+
+potential bias; and evaluated the business rationale of any significant transactions that are unusual or outside the normal course of
+
+business.
+
+In addition to the above, our procedures to respond to the risks identified included the following:
+
+* — reviewing financial statement disclosures by testing to supporting documentation to assess compliance with provisions of
+relevant laws and regulations described as having a direct effect on the financial statements;
+
+© performing analytical procedures to identify any unusual or unexpected relationships that may indicate risks of material
+misstatement due to fraud;
+
+*® ~~ enquiring of management and legal counsel concerning actual and potential litigation and claims, and instances of non-
+compliance with laws and regulations; and
+
+*® reading minutes of meetings of those charged with governance and reviewing correspondence with HMRC.
+
+20
+Independent auditor's report
+to the members of Tottenham Hotspur Limited
+Report on other legal and regulatory requirements
+Opintons on other matters prescribed by the Companies Act 2006
+In our opinion, based on the work undertaken in the course of the audit:
+* the information given in the strategic report and the directors’ report for the financial year for which the financial statements
+are prepared is consistent with the financial statements; and .
+* the strategic report and the directors’ report have been prepared in accordance with applicable legal requirements.
+in the light of the knowledge and understanding of the group and of the parent company and their environment obtained in the
+course of the audit, we have not identified any material misstatements in the strategic report or the directors’ report.
+Matters on which we are required to report by exception
+Under the Companies Act 2006 we are required to report in respect of the following matters if, in our opinion:
+e adequate accounting records have not been kept by the parent company, or returns adequate for our audit have not been
+received from branches not visited by us; or :
+e the parent company financial statements are not in agreement with the accounting records and returns; or ‘
+e certain disclosures of directors’ remuneration specified by law are not made; or
+« we have not received all the information and explanations we require for our audit. .
+We have nothing to report in respect of these matters.
+Use of our report
+This report is made solely to the company’s members, as a body, in accordance with Chapter 3 of Part 16 of the Companies Act 2006.
+Our audit work has been undertaken so that we might state to the company’s members those matters we are required to state to
+them in an auditor's report and for no other purpose. To the fullest extent permitted by law, we do not accept or assume
+responsibility to anyone other than the company and the company’s members as a body, for our audit work, for this report, or for
+the opinions we have formed.
+Kevin Thompson (Senior Statutory Auditor)
+For and on behalf of Deloitte LLP
+Statutory Auditor ’ . ' ,
+London, United Kingdom
+24 October 2025
+24
+Consolidated income statement and statement of other comprehensive income .
+for the year ended 30 June 2025
+2025 2024 :
+Operations, Operations,
+. excluding Football excluding Football
+football trading* trading* Total football trading* trading® Total
+Notes £'000 €’000 £’000 £’000 £’000 £'000
+Revenue 2 564,881 - 564,881 $17,763 - 517,763
+Other income 2 385 - 385 10,428 - 10,428
+Operating expenses 3 (521,509) (146,720) (668,229) (453,626) (135,583) (589,209)
+Operating profit/(toss) 43,757 (146,720) (102,963) 74,565 (135,583) (61,018)
+Profit on disposal of intangible
+fixed assets 6 - 52,565 52,565 - 82,305 82,305
+Profit/(loss) from operations 4 43,757 (94,155) (50,398) 74,565 (53,278) 21,287
+Finance income 7 2,484 2,923
+Finance costs 7 (72,714) (50,240)
+Loss before taxation (120,628) (26,030)
+Tax 8 25,962 (196) :
+Loss for the year 21 (94,666) (26,226)
+2025 2024
+Total Total
+Other comprehensive income Notes £000 £'000
+Items that will not be reclassified .
+subsequently through profit or loss:
+Gain on property revaluation 20 23,336 51,167
+Deferred tax credit/(charge) on 20
+revaluation 499 (6,422)
+Other comprehensive income for
+the year net of tax 23,835 44,745
+Total comprehensive
+(expense)/income for the year (70,831) 18,519
+* Football trading represents amortisation, impairment and profit on disposal of intangible fixed assets, and other football trading-
+related income and expenditure (see notes 3,6).
+~ All activities in the year derive from continuing operations. - an
+22
+Consolidated balance sheet
+as at 30 June 2025 ;
+2025 2024
+Notes €'000 £000
+Non-current assets
+Property, plant and equipment 9 1,852,194 1,863,958
+intangible assets 10 413,906 420,480
+Investments in financial assets 11 14 5
+Trade receivables due after one year 13 41,533 6,845
+‘ 2,307,647 2,291,288
+Current assets
+Inventories 12 13,803 11,423
+Trade and other receivables 13 54,058 83,106
+. Corporation tax 13 95 33
+. Cash and cash equivalents 14 20,413 78,974
+88,375 173,536
+. Total assets 2,396,022 2,464,824
+Current liabilities
+Interest-bearing loans and borrowings 1s (3,986) -
+Trade and other payables is (460,348) (462,990)
+FVTPL liabilities 1s (52,066) (28,646)
+Provisions 15/17 (16,817) (7,648)
+(533,217) (499,284)
+Non-current liabilities se
+Interest-bearing loans and borrowings 16 (847,666) (851,448)
+Trade and other payables 16 (257,091) (294,758)
+Deferred grant income 16 (3,438) (3,688)
+: Provisions 16/17 (134,396) (159,601)
+(1,242,591) (1,309,495)
+Total liabilities . (1,775,808) (1,808,779)
+Net assets 620,214 656,045
+Equity
+Share capital . 19 11,740 11,452
+Share premium 19 168,692 133,980
+Capital redemption reserve 644 644
+Revaluation reserve 20 515,656 491,821 .
+Retained earnings (76,518) 18,148
+Total equity 21 620,214 656,045
+These financial statements (Company number 1706358) were approved Ly the Board of Directars and authorised for issue on 24
+October 2025.
+signed on behalf of the Board of Directors
+Matthew Collecott ,
+Director
+23
+Consolidated statement of changes in equity
+for the year ended 30 June 2025
+For the year ended 30 June 2025
+: Capital
+Share Share premium redemption _—Revaluation Retained
+capital account reserve reserve earnings Total
+£'000 £000 €'000 £000 £'000 £’000
+At 30June 2024 11,452 133,980 644 491,821 18,148 656,045
+Share issue 288 34,712 - - - 35,000
+Gain on property revaluation (note 20) - - - 23,336 - 23,336
+Deferred tax credit on revaluation (note 20) - - + 499 - 499
+Loss for the year - - - - (94,666) (94,666)
+Total other comprehensive income/{expense) - - - 23,835 (94,666) (70,831)
+At 30 June 2025 11,740 168,692 644 $15,656 (76,518) 620,214
+For the year ended 30 June 2024
+Capital
+Share premium redemption Revaluation Retained
+. Share capital account reserve reserve earnings Total
+€’000 £000 £000 £000 £'000 £'000
+Balance as at 1 July 2023 11,452 133,980 644 447,076 44,374 637,526
+Gain on property revaluation (note 20) - - - 51,167 - 51,167
+Deferred tax charge on revaluation (note 20) - - - (6,422) - (6,422)
+Loss for the year - - - - (26,226) (26,226)
+Total comprehensive income/(expense)} - - - 44,745 (26,226) 18,519
+At 30 June 2024 11,452 133,980 644 491,821 18,148 656,045
+. 24
+Consolidated statement of cash flows
+for the year ended 30 June 2025
+2025 2024
+Note £'000 £000
+Cash flow from operating activities
+(Loss)/profit from operations (50,398) 21,287
+Adjustments for:
+Amortisation of intangible assets 141,851 136,287
+impairment of intangible assets - 1,822
+Profit on disposal of intangible assets (52,565) (82,305)
+{Profit)/loss on disposal of property, plant and equipment (110) 6
+Depreciation of property, plant and equipment 56,948 68,796
+Capital grants release 2,108 1,806
+Foreign exchange loss/(gain) 1,688 {2,148}
+Net (gain)/ loss on financial assets (9) 21
+(Increase)/decrease in trade and other receivables : (4,006) 2,579
+Increase in inventories (2,387) (2,023)
+Decrease in trade and other payables (1,084) (25,706)
+Cash flow from operations 92,033 120,422
+Interest paid (28,912) (29,742)
+Interest received 46 1,141
+Income tax received - 692
+Finance lease interest (866) (833)
+Tax losses surrendered to other holding group companies - -
+Net cash flow from operating activities 62,301 91,680
+Cash flows from investing activities
+Acquisitions of property, plant and equipment (23,811) (43,300)
+Proceeds from sale of property, plant and equipment 27 7
+Acquisitions of intangible assets . (197,161) (223,637)
+, Proceeds from sale of intangible assets 66,968 81,600
+Net cash outflow used in investing activities (153,977) (185,330)
+Cash flows from financing activities .
+Lease finance payments (1,885) (1,259)
+Issuance of ordinary shares 35,000 -
+Net cash inflow from financing activities 33,115 (1,259)
+Net decrease in cash and cash equivalents (58,561) (94,909)
+Cash and cash equivalents at start of the period 70,974 173,883
+Cash and cash equivalents at end of year 14 20,413 78,974
+25
+Notes to the accounts
+for the year ended 30 June 2025
+1. Accounting policies and critical accounting judgements
+The following accounting policies have been applied consistently by the Directors in both the current and preceding periods in
+dealing with items which are considered material in relation to the Group’s accounts.
+Tottenham Hotspur Limited is a private Company limited by shares, registered in England and Wales, and incorporated in the United
+Kingdom under the Companies Act 2006. The nature of the Group’s operations and its principal activities is set out in the Strategic
+report on page 1. .
+Basis of accounting
+The financial statements have been prepared in accordance with International Financial Reporting Standards (IFRS). The financial
+statements have been prepared on a historical cost basis.
+Basis of consolidation
+The Group financial statements incorporate the financial statements of Tottenham Hotspur Limited (the ‘Company’) and entities
+controlled by the Company (its subsidiaries) made up to 30 June each year. Control is achieved where the Company has the power
+to govern the financial and operating policies of an investee entity so as to obtain benefit from its activities.
+The results of subsidiaries acquired during the year are included in the consolidated income statement from the effective date of
+acquisition.
+Exemptions
+For the year ending 30 June 2025 the following subsidiaries of the parént Company were entitled to exemption from audit under
+s479A of the Companies Act 2006 relating to subsidiary companies:
+
+Subsidiary Name . Companies House Registration Number
+
+Canvax Limited 06224771
+
+Enfield Property Company Limited 06279811
+
+Greenbay Property Limited 06168158
+
+Meldene Limited 7623351
+
+Paxton17 itd 180950
+
+Tottenham Hotspur Stadium Development Limited 10148712
+
+Stardare Limited 2208606
+
+Tottenham Hotspur Hotel Limited 13009818 .
+
+Tottenham Hotspur Property Co Limited 06279820
+Going concern
+The Directors have, at the time of approving the financial statements, a reasonable expectation that the Company and the Group
+have adequate resources to continue in operational existence for the foreseeable future, which is a period of at least 12 months
+from the date of signing the Annual Report. Thus they continue to adopt the going concern basis of accounting in preparing the
+financial statements. Further detail is contained in the Directors’ report on page 16.
+Revenue .
+Revenue is measured at the fair value of the consideration received or receivable and represents amounts receivable in the normal
+course of business, net of discounts, VAT and other sales-related tax.
+Merchandising revenue is recognised when goods are delivered and title has passed.
+Gate receipts and other matchday revenue are recognised as the games are played. Prize money in respect of cup competitions is
+recognised when earned. Sponsorship and similar commercial income is recognised over the duration of the respective contracts.
+The fixed clement of hroadcasting revenues is recognised over the duration of the football season whilst facility fees received for live
+coverage or highlights are taken when earned. Merit fee payments aré accounled fur on the basis of management's prudent best
+estimate of league position at year-end, to the extent that it is highly probable that there will not be a subsequent material reversal
+to revenue recognised.
+IFRS 15 requires the Group to determine revenues recognised at a point in time from those recognised over time. All revenues are
+deemed to be recognised over time with the exception of revenues generated from merchandising, catering sales, concerts and
+
+. other non-football commercial activities which are deemed to be recognised at a point in time. As a result of the specific guidance in
+IFRS 15, revenue on certain commercial contracts is higher under the standard with an associated finance cost recognised over the
+period of each commercial contract.
+26. «
+Notes to the accounts
+for the year ended 30 June 2025
+1. Accounting policies and critical accounting judgements (continued) .
+Exceptional items
+Exceptional items relate to significant and unusual revenues or costs experienced by the Group. They are identified on a case-by-case
+basis, and are recognised at contractual value, market value or best estimate depending on the nature of the item identified. In the
+current and prior reporting periods they relate to:
+* — onerous employee contracts
+¢ — other employment related payments considered significant and unusual
+Capital grants
+Capital grants relate to amounts receivable from public bodies and football authorities and are treated as deferred income and
+released to the income statement over the estimated useful life of the asset concerned.
+Foreign exchange
+Transactions denominated in foreign currencies are translated into Sterling and recorded at the rates of exchange ruling at the date
+of the transactions. Monetary assets and liabilities denominated in a foreign currency are translated into Sterting at the exchange
+rates ruling on the balance sheet dates. Translation differences are dealt with in the income statement. :
+Player costs and transactions
+(a) Initial capitalisation
+The costs associated with the acquisition of players and key football management staff registrations are capitalised as intangible fixed
+assets. Any intangible assets acquired on deferred terms are recorded at the fair value at the date of acquisition. The fair value
+represents the net present value of the costs of acquiring players and key football management staff registrations.
+(b) Amortisation
+These costs are fully amortised on a straight-line basis over their useful economic lives, in equal annual instalments over the period
+of the respective contracts. Where a contract life is renegotiated, the unamortised costs, together with the new costs relating to the
+contract extension, are amortised over the term of the new contract. Amortisation is charged through operating expenses in the
+income statement (see note 3).
+(c) Contingent consideration
+Under the conditions of certain transfer agreements, further fees will be payable to the vendors in the event of the players
+concerned making a certain number of First Team appearances or on the occurrence of certain other specified future events.
+Liabilities in respect of these additional transfers are accounted for as additions to intangible assets when the specified amount of
+appearances has been reached or the specified future events occur.
+{d) impairment
+The Group will perform an impairment review on the intangible assets if events or changes in circumstances indicate that the
+carrying amount of the player may not be recoverable. The Group compares the carrying amount of the asset with its recoverable
+amount.
+The Group does not consider that it is possible to determine the value in use of an individual football player in isolation as that player
+{unless via a sale or insurance recovery) cannot generate cash flows on their own. Furthermore, the Group also considers that all of
+the players are unable to generate cash flows even when considered together. Accordingly the Group considers the smallest cash-
+generating unit to contain all the First Team players, the stadium and the training facilities.
+The Group calculates the value in use of this cash-generating unit by discounting estimated expected future cash flows (being the
+pre-player trading cash flows generated by the Group's existing operations and any future capital expenditure on the ground and
+First Team squads). The Group compares this with its assessment of the fair value less costs to sell of all of the First Team players
+and the higher of these two numbers is deemed to be the recoverable amount.
+In certain rare instances there may be an individual player whom the Group does not consider to be part of the First Team squads
+going forwards and who will therefore not contribute to the future cash flows earned by the cash-generating unit. This is normally
+due to a permanent career-threatening injury or where Group’s senior football management and Directors have decided the player is
+not part of the Club’s luiig-term plans.
+As a consequence of such situations the Group consider it highly unlikely that the player will play for the First Team for a significant
+part of the remaining duration of the player’s contract. In such situations, the carrying value of the player is removed from the
+carrying value of players assessed as part of the cash-generating unit referred to above and instead this player will be assessed for
+impairment in isolation by considering their carrying value with the Group’s best estimate of their fair value (less costs to sell}. The
+Group estimate this using one of the following sources:
+. in the case of a player who has suffered a career-threatening injury, the value attributed to the player by the Group’s insurers;
+. in the case of a player who is not part of the Club’s long-term plans, then either;
+i) the agreed selling price in the event the player has been transferred subsequent to the year end; or
+27
+. Notes to the accounts
+for the year ended 30 June 2025
+1. Accounting policies and critical accounting judgements (continued)
+Player costs and transactions (continued)
+(a) Impairment (continued)
+ii) if there have not been any bids for the player, management's best estimation of the disposal proceeds (less costs) of the
+player on an arm’s length basis. This is determined by the Group’s senior football management in conjunction with the
+Directors who will use their knowledge and experience and their view on the current transfer market as a basis for their
+estimation.
+(e) Disposals
+Profits or losses on the disposal of these registrations represent the fair value of the consideration receivable, net of any transaction
+costs, less the unamortised cost of the original registration.
+ff Remuneration
+Remuneration of players is charged in accordance with the terms of the applicable contractual agreements and any discretionary
+bonus when there is a legal, contractual or constructive obligation.
+Liabilities in respect of player loyalty fees are provided for, as part of operating expenses, when payment becomes probable as the
+player is contracted to the Club and the loyalty fee is payable prior to the next transfer window at the date the accounts are signed.
+Present obligations arising under onerous employment contracts are recognised and measured as provisions. An onerous contract is
+considered to exist where the Group has a contract under which the unavoidable costs of meeting the obligations under the contract
+exceed the economic benefits expected to be received under it.
+Computer software
+Computer software is stated at cost net of amortisation and any provision for impairment.
+Amortisation is provided on cost in equal annual instalments over the estimated useful lives of the assets. The rate of amortisation
+for computer software is 33% straight line.
+Finance costs
+Finance costs of borrowings are recognised in the income statement using the effective interest method. The effective interest rate
+is the rate that exactly discounts estimated future cash flows through the expected life of the borrowing.
+In accordance with IFRS 9 ‘Financial Instruments’, any non-current assets acquired on deferred terms are recorded at the discounted
+present value at the date of acquisition. The associated payable is then increased to the settlement value over the period of deferral,
+with this value being charged as a notional finance cost through the income statement.
+Similarly any intangible asset disposed of on deferred terms will be initially recorded at the discounted present value of future
+receipts and the receivable is then increased to the settlement value over the period of deferral with this value being charged as
+: notional finance income through the income statement.
+In respect of intangible asset acquisitions, the differing rate at which the finance cost and amortisation are recognised in the income
+statement produces a deferred tax credit. In respect of intangible asset disposals, the finance income recognised produces a
+deferred tax asset. The adjustments are stated net of deferred tax.
+Tax :
+The tax expense represents the sum of the tax currently payable and deferred tax.
+The tax currently payable is based on taxable profit for the year. Taxable profits differ from net profit as reported in the income
+statement because they exclude items of income or expense that are taxable or deductible in other years and they further exclude
+items that are never taxable or deductible. The Group’s liability for current tax is calculated using tax rates that have been
+substantively enacted by the balance sheet date.
+Deferred tax is the tax expected to be payable on the differences between the carrying amounts of assets and liabilities in the
+financial statements and the corresponding tax bases used in the computation of taxable profit and is accounted for using the
+balance sheet lability methuu. Defeired tax liabilities are generally recngnised for all taxable temporary differences and deferred tax
+assets are recognised to the extent that it is probable that taxable profits will be available against which deductible temporary
+differences can be utilised.
+Deferred tax is charged or credited in the income statement.
+28
+Notes to the accounts
+for the year ended 30 June 2025
+1. Accounting policies and critical accounting judgements (continued)
+Property, plant and equipment
+Freehold land is not depreciated. Leasehold property is amortised over the term of the lease. Other fixed assets are depreciated on a
+straight-line basis at annual rates appropriate to their estimated useful lives as follows:
+
+Buildings 2-20%
+
+Motor vehicles 20%
+
+General plant and equipment 2-33%
+
+F&F for leasehold properties Over the length of the lease
+
+Capitalised interest 2%
+The Group measures the Stadium asset class under the revaluation model. The valuation methodology used for this is the
+Depreciated Replacement Cost (“DRC”} methodology. This asset is stated in the statement of financial position at its revalued
+amount, being the fair value at the date of revaluation, less any accumulated depreciation and accumulated impairment losses.
+Revaluations are performed with sufficient regularity such that the carrying amount does not differ materially from that which would
+be determined using fair values at the reporting date.
+Any revaluation increase arising on the revaluation of the stadium asset is credited to the revaluation reserve, except to the extent
+that it reverses a revaluation decrease for the same asset previously recognised as an expense, in which case the increase is credited
+to profit or loss to the extent of the decrease previously expensed. A decrease in carrying amount arising on the revaluation of such
+land and buildings is charged as an expense to the extent that it exceeds the balance, if any, held in the properties revaluation
+reserve relating to a previous revaluation of that asset.
+Depreciation on revalued buildings is recognised in profit or loss. On the subsequent sale or retirement of a revalued property, the
+attributable revaluation surplus remaining in the properties revaluation reserve is transferred directly to retained earnings.
+The Stadium asset class is depreciated on a straight-line basis at an annual rate appropriate to its estimated useful lives as follows:
+
+Stadium 2-20% :
+The Group capitalises costs in relation to an asset when economic benefit from the asset is considered probable. Assets under the
+course of construction are carried at cost and include professional fees. Depreciation commences when the assets are ready for their
+intended use. Assets are assessed for impairment if an impairment indicator arises.
+Inventories
+Inventories, which comprise goods held for resale, are valued at the lower of cost and net realisable value using the weighted ;
+average cost method. -
+Debt
+Debt is stated initially at the amount of the net proceeds after deduction of issue costs. The carrying amount is increased by the
+finance cost in respect of the accounting period and reduced by payments made in the accounting period. .
+Leases
+Right of use assets have been capitalised as PPE and lease commitments have been recognised as a liability within other creditors. The
+assets shall be depreciated over the term of the lease agreements and the liabilities will reduce as rent is paid and finance costs are
+expensed. Assets are assessed for impairment if an impairment indicator arises. The low value asset and short term lease exemptions
+have been taken.
+Pension costs
+Payments are made to the external defined contribution pension schemes of eligible employees of the Group. The pension cost
+charged in the year represents contributions payable by the Group to these schemes.
+In addition the Group is making contributions in respect of its share of the deficit of the defined benefit section of the Football
+League Pension and Life Assurance Scheme (the ‘Scheme’). A provision has been established for the Group’s share of the deficit
+which exists in this section of the Scheme.
+Under the provisions of IAS 19 ‘Employee Benefits’ the Scheme would be treated as a defined Lenefit multi-employer scheme. The
+Scheme’s actuary has advised that the participating employers’ share of the underlying assets and liabilities cannot be identified on a
+reasonable and consistent basis and, accordingly, no accounting entries or disclosures are made under the provisions of IAS 19.
+
+: Borrowing costs
+Borrowing costs that are directly attributable to the acquisition, construction or production of a qualifying asset, as defined by IAS 23
+‘Borrowing Costs’ are included in the cost of the asset. Once the asset is brought into use additional borrowing costs are recognised as
+an expense in line with the useful economic life of the asset. :
+Capital redemption reserve
+This relates to ordinary shares bought back through the share buy back scheme.
+29
+Notes to the accounts
+for the year ended 30 June 2025
+1 Accounting policies and critical accounting judgements (continued)
+Financial instruments
+Financial assets and liabilities are recognised in the Group’s statement of financial position when the Group becomes a party to the
+contractual provisions of the instrument.
+Financial assets and financial liabilities are initially measured at fair value. Transaction costs that are directly attributable to the
+acquisition or issue of financial assets and financial liabilities (other than financial assets and financial liabilities at FVTPL) are added
+to or deducted from the fair value of the financial assets or financial liabilities, as appropriate, on initial recognition.
+Financial assets at FVTPL are measured at fair value at the end of each reporting period, with any fair value gains or fosses recognised
+in profit or loss to the extent they are not part of a designated hedging relationship. The net gain or loss recognised in profit or loss
+includes any dividend or interest earned on the financial asset and is included in the ‘other gains and losses’ line item (note 7). As
+part of the equity raise performed in June 2022 a FVTPL instrument was created, which is detailed in note 15.
+Impairment of financial assets
+All financial assets are assessed for indicators of impairment at each balance sheet date. IFRS 9: Financial Instruments does not have
+a financial impact in the year.
+Derecognition of financial liabilities
+The Group derecognises financial liabilities when, and only when, the Group’s obligations are discharged, cancelled, or they expire.
+Cash and cash equivalents
+In the statement of financial position, cash and cash equivalents are comprised of cash (i.e. cash on hand and on-demand deposits)
+and cash equivalents. Cash equivalents are short-term (generally with original maturity of three months or less), highly liquid
+investments that are readily convertible to a known amount of cash and which are subject to an insignificant risk of changes in value.
+Cash equivalents are held for the purpose of meeting short-term cash commitments rather for investment or other purposes.
+For the purposes of the statement of cash flows, cash and cash equivalents consist of cash and cash equivalents as defined above,
+net of outstanding bank overdrafts which are repayable on demand and form an integral part of the group’s cash management. Such
+overdrafts are presented as short-term borrowings in the statement of financial position.
+Adoption of new and revised Standards
+New and amended IFRS Accounting Standards that are effective for the current year
+In the current year, the Company has applied a number of amendments to IFRS Accounting Standards issued by the International
+Accounting Standards Board (IASB) that are mandatorily effective for an accounting period that begins on or after 1 January 2024.
+Their adoption has not had any material impact on the disclosures or on the amounts reported in these financial statements:
+
+¢ Amendments to IAS 1 Presentation of Financial Statements—Classification of Liabilities as Current or Non-current
+
+* Amendments to IAS 1 Presentation of Financial Statements — Non-current liabilities with Covenants
+
+* Amendments to IAS 7 Statement of Cash Flows and IFRS 7 Financial Instruments: Disclosures — Supplier Finance
+
+Arrangements
+
+* Amendments to IFRS 16 Leases — Lease Liability in a Sale and Leaseback
+New and revised IFRS Accounting Standards in issue but not yet effective
+Other standards introduced during the period had no impact on these financial statements.
+At the date of authorisation of these financial statements, the Group has not applied the following new and revised IFRS that have
+been issued but are not yet effective and in some cases had not yet been adopted by the EU:
+
+e Amendments to IAS 21 Lack of Exchangeability
+
+© {IFRS 19 Subsidiaries without Public Accountability: Disclosures
+The Directors anticipate that the adoption of these Standards and Interpretations in future periods will have no material impact on
+the financial statements of the Group.
+The Directors of the company do however anticipate that the application of the following amendment may have an impact on the
+group's consolidated financial statements in future periods.
+
+¢ IFRS 18 Presentation and Disclosures in Financial Statements
+IFRS 18 repiaces IAS 1, carrying forward many of the requirements in IAS 1 unchanged and complementing them with new
+requirements. In addition, some IAS 1 paragraphs have been moved to IAS 8 and IFRS 7. Furthermore, the IASB has made minor
+amendments to IAS 7 and IAS 33 Earnings per Share.
+IFRS 18 introduces new requirements to:
+
+© present specified categories and defined subtotals in the statement of profit or loss
+
+30
+Notes to the accounts
+for the year ended 30 June 2025
+1. Accounting policies and critical accounting judgements (continued)
+New and revised IFRS Accounting Standards in issue but not yet effective (continued)
+
+*® provide disclosures on management-defined performance measures (MPMs) in the notes to the financial statements
+
+. @ improve aggregation and disaggregation.
+An entity is required to apply IFRS 18 for annual reporting periods beginning on or after 1 January 2027, with earlier application
+permitted. The amendments to IAS 7 and IAS 33, as well as the revised IAS 8 and IFRS 7, become effective when an entity applies IFRS
+18. IFRS 18 requires retrospective application with specific transition provisions.
+Critical accounting judgements and sources of estimation uncertainty
+In the application of the Group’s accounting policies, which are described herein, the Directors are required to make judgements,
+estimates and assumptions about the carrying value of assets and liabilities that are not readily apparent from other sources. The
+estimates and associated assumptions are based on historical experience and other factors that are considered to be relevant. Actual
+results may differ from these estimates.
+The Group has identified the following areas of estimation uncertainty and critical accounting judgements within the financial
+statements which may have a material impact. All matters below are key sources of estimation uncertainty with the exception of the
+assets under construction:
+Property, plant and equipment and intangible assets
+All non-current assets, including property, plant and equipment and intangible assets, are reviewed for potential impairment using
+estimates of the future economic benefits attributable to them. Such estimates involve assumptions in relation to future ticket .
+income, media and sponsorship revenue and on pitch performance. Any estimates of future economic benefits made in relation to
+non-current assets may differ from the benefits that ultimately arise, and materially affect, the recoverable value of the asset (see
+note 9).
+Following the change in accounting policy enacted during the June 2023 accounting period, the Company uses the revaluation
+measurement model in order to fair value the stadium asset class. The DRC methodology used contains some estimations, namely
+the value of the land, the indexation of the build costs and the rate at which finance costs have been attributed. See note 9 for
+sensitivity analysis on these estimations.
+Individual players whom the Group do not consider to be part of the cash-generating unit are assessed for impairment in isolation by
+considering their carrying value with the Group’s best estimate of their fair value (less costs to sell). Estimates of fair value (less costs
+to sell) made in relation to intangible assets may differ from the value that ultimately arises, and materially affect, the recoverable
+value of the asset (see note 10).
+Assets under construction
+The assets classified under ‘in the course of construction’ relate to incremental projects associated to intrinsic capital items. IAS 16,
+Property, Plant and Equipment requires that for an asset to be capitalised it must result in a probable economic benefit. Therefore,
+once this project begins its useful economic life, depreciation will begin.
+The Northumberland Development Project (“NDP”) is now substantially complete with Lilywhite House and the opening of THS.
+There are a number of projects at the Southern end of the site (hotel and residential) which will be ultimately developed when
+appropriate. The NDP is closely monitored and any amounts capitalised, which would not be recoverable in the event that the
+remaining elements of the NDP were not completed, would need to be written-off at that time (see note 9).
+FVTPL Liability
+The issuance of ‘A’ ordinary shares in June 2022 conferred warrant rights to subscribe for ordinary shares in the Club, as detailed in
+note 15. The warrants are derivative financial liabilities, which result in measurement at fair value in accordance with IFRS 9. At the
+balance sheet date the Board estimated the fair value of the warrants based on relevant comparatives, a notional exercise date and a
+median discount attributable to comparative transactions. Due to this assessment there has been an increase in the value of the
+warrant in the period as detailed in note 15.
+: uu
+Notes to the accounts
+for the year ended 30 June 2025
+2. Revenue and other income
+Revenue, which is almost alt derived from the Group’s principal activity, is analysed as follows:
+2025 2024
+£000 €’000
+Revenue comprises:
+Match receipts 126,473 105,847
+UEFA Prize money 34,716 1,262
+TV and media 126,993 165,910
+Commercial 276,699 244,744
+Revenue 564,881 517,763
+Other income : 385 10,428
+Revenue and other income 565,266 528,191
+All revenue and other income except for £385,000 (2024: £428,000) derives from the Group’s principal activity in the United
+Kingdom. Other income does not meet the definition of Revenue as defined within IFRS 15. ,
+3. Operating expenses . .
+. 2025 2024
+. £000 £000
+Staff costs (see note 5) 255,811 221,929
+Depreciation of property, plant and equipment 56,948 68,796
+(Profit)/loss on disposal of property, plant and equipment (110) 6
+Exceptional items
+- Onerous employment contracts and other employment related payments 11,601 1,528
+Other operating costs 197,259 161,367
+Operating expenses excluding football trading 521,509 453,626
+Amortisation, impairments and other net football trading income and expenditure 146,720 135,583
+Total operating expenses 668,229 589,209
+32
+Notes to the accounts
+for the year ended 30 June 2025
+4, Profit/(loss) from operations
+This is stated atter charging/(crediting) the following:
+2025 2024
+, £000 £000
+Depreciation of property, plant and equipment 56,948 68,796
+(Profit}/loss on disposal of property, plant and equipment (110) 6
+Profit on disposal of intangible fixed assets (52,565) (82,305)
+Amortisation of intangible fixed assets 141,851 136,287
+Impairment of intangible fixed assets - 1,822
+Amortisation of grants (2,108) (1,806)
+Cost of inventories recognised as an expense 17,176 16,053
+Charitable donations 88 738
+Short-term lease rentals (see note 22):
+—land and buildings . 1,837 1,713
+- other 105 75
+Foreign exchange loss/(gain) 1,685 (2,148)
+The analysis of auditor’s remuneration is as follows:
+2025 2024
+£000 £000
+Fees payable to the Company’s auditor for the audit of the Company’s annual accounts:
+— audit of the Company’s accounts 59 50
+- audit of the accounts of the Company's subsidiaries 190 160
+Total audit fees . 249 210
+Fees payable to the Company's auditor for other services to the Group:
+— taxation services 379 288
+~ other assurance services 16 11
+Total non-audit fees 395 299
+Fees for the audit of the Company's subsidiaries accounts represent the fees payable to Deloitte LLP in respect of the audit of the
+subsidiaries individual financial statements prepared in accordance with FRS 101 and the audit of the Company's accounts represents
+the audit of the Group’s consolidated financial statements prepared in accordance with IFRS. No services were provided pursuant to
+a contingent fee arrangement.
+5. Staff numbers and costs : :
+The average number of employees of the Group during the year including Executive Directors was as follows:
+2025 2024
+. : Number Number
+‘ Players and football administration staff 335 324
+Stadium operations and support staff 473 438
+Retail and distribution staff 69 58
+877 820
+The aggregate payroll costs of these employees were as follows:
+33 .
+Notes to the accounts
+for the year ended 30 June 2025
+s. Staff numbers and costs (continued) 2028 : 2024
+. £'000 £000
+Salaries and bonuses 222,816 195,311
+Social security costs 31,946 25,500
+Other pension costs (see note 25) 1,049 1,118
+255,811 221,929
+In addition, and not included in the above, the Group employs on average 617 temporary staff on match days (2024: 619). .
+In addition to the above payroll costs, redundancy costs of £153,000 (2024: £86,000) were also charged to the income statement
+during the year.
+The total aggregate remuneration of the Directors, who are deemed to represent key management personnel, for the year was
+£7,873,000 (2024: £5,068,000) including pension costs of £3,000 (2024: £4,000). Included within that remuneration are emoluments
+totalling Enil (2024: Enil) paid to non-executive Directors. The highest paid Director received total remuneration of £5,755,000 (2024:
+£3,728,000). The number of Directors for whom retirement benefits are accruing under a money purchase pension scheme is one
+(2024: two). .
+In the year there were total payments of £6,661,000 (2024: fnil) in respect of past Director compensation for loss of office.
+The Remuneration Committee has over the past years established loyalty and long term incentive schemes for senior management
+resulting in a charge to the income statement of £13,034,000 (2024: £800,000). At the balance sheet date the accrued balance was
+£15,034,000 (2024: £2,000,000). These payments only become realised once a number of criteria, both financial and non-financial,
+are met and the current year charge is based on an assessment of the likelihood of those criteria being met in future periods.
+6. Profit on disposal of intangible fixed assets .
+. 2025 2024
+£000 £’000
+Consideration 66,781 92,037
+Net book value of disposals . (14,216) (9,732)
+52,565 82,305
+7. Finance income and costs
+. 2025 2024
+: £7000 £'000 .
+Interest income : 46 1,187
+Notional interest income on deferred receipts for sales of players’ registrations 2,438 1,736
+2,484 2,923
+2025 2024
+£000 £000
+Interest expense ° (29,105) (29,257)
+Notional interest expense on deferred payments for players’ registrations ‘ (13,412) {13,910)
+Notional interest expensé on deferred Income relating lu curnmercial revenues (5,716) (6,083)
+Notional interest expense on leases (866) (764)
+Amortisation of debt issue costs (205) (205)
+Net loss arising on financial assets mandatorily measured at FVTPL* (23,410) {21)
+(72,714) (50,240)
+Net interest payable (70,230) (47,317)
+
+: *The amount includes a revaluation of the warrant instrument (see note 15) which comprises an increase in the fair value of
+£23,420,000 (2024: Enil) offset by a net gain on investments in listed equity shares (see note 11) which comprises an increase in fair
+value of £9,000 (2024: decrease of £21,000).
+
+, 34
+Notes to the accounts
+for the year ended 30 June 2025
+8. Tax credit
+2025 2024
+£000 £000
+° Current tax :
+Other prior year adjustments (272) (1,771)
+Current year tax charge/(credit) 227 (31)
+Current tax credit (45) (1,802)
+Deferred tax ,
+Origination and reversal of timing differences in prior years (1,681) 11
+Origination and reversal of timing differences in current year (24,236) 1,987
+Deferred tax (credit}/charge (note 17) (25,917) 1,998
+Total tax (credit)/charge (25,962) 196
+2025 2024
+£000 £000
+Tax credit on loss before taxation at the UK statutory rate of 25.0% (2024: 25.0%) (30,157) (6,508)
+Expenses not deductible 8,085 8,316
+income not taxable (25) -
+Reinvestment relief (1,062) 149
+Adjustments in respect of prior years (2,803) {1,761)
+Total tax (credit)/charge (25,962) 196
+In addition to the amount charged to profit or loss, the following amounts relating to tax have been recognised in other
+comprehensive income:
+2025 2024
+£000 €'000
+Deferred tax
+Items that will not be reclassified subsequently to profit or loss: .
+Deferred tax (credited)/charged on revaluation (499) 6,422
+Total tax recognised in other comprehensive income (499) 6,422
+The tax on loss before tax for the period is lower than the standard rate of corporation tax in the UK (2024 — higher than the .
+standard rate of corporation tax in the UK) of 25.0% (2024: 25.0%).
+In the March 2021 Budget, the Government announced with effect from 1 April 2023, an increase in the main rate of corporation tax
+from 19% to 25%. The Finance Bill 2021 was substantively enacted on 24 May 2021, the increase in the corporation tax rate has .
+therefore been reflected in the valuation of our deferred tax assets at the reporting date.
+Other than the provision for deferred tax (see note 17) and the items referréd to above, there are no liens which would ialerially
+affect future tax charges.
+35
+Notes to the accounts
+_ for the year ended 30 June 2025
+9. Property, plant and equipment
+For the year ended 30 June 2025
+F&F for .
+Assets under the
+Land and teasehold Right of use Motor _ General plant course of
+buildings Stadium Properties assets vehicles and equipment construction Total
+Group £000 £000 £000 £000 £000 £000 £000 £’000
+Cost
+At 30 June 2024 278,270 1,521,485 13,278 30,294 848 142,477 37,866 2,024,518
+Additions 492 325 - - - 3,471 17,966 22,254
+Disposal - - - - (16) (165) (405) (586)
+Transfer of assets 2,697 495 - - - 529 (3,721) -
+Revaluation adjustment - (19,184) - - - - - (19,184)
+At 30 June 2025 281,459 1,503,121 13,278 30,294 832 146,312 51,706 2,027,002
+Depreciation and impairment
+At 30 June 2024 40,882 - 2,823 5,966 581 110,308 - 160,560
+Eliminated on disposal - - - - (16) (165) ° - (181) ;
+Charged in the year 4,715 42,519 299 1,762 68 7,585 - 56,948
+Eliminated on revaluation - (42,519) - - - - - (42,519)
+At 30 June 2025 45,597 - 3,122 7,728 633 117,728 - 174,808
+Net book value ;
+At 30 June 2025" 235,862 1,503,121 10,156 22,566 199 28,584 51,706 1,852,194
+As per note 1 the Stadium asset class was revalued at 30 June 2025 by Wilks Head & Eve, independent valuers not connected with
+the Group, on the basis of market value. Wilks Head & Eve are members of the Royal Institute of Chartered Surveyors, and they have
+the appropriate qualifications and recent experience in the fair value measurement of properties in the relevant locations. The
+valuation conforms to International Valuation Standards and was based on the DRC method.
+At the balance sheet date the estimated fair value of the Stadium asset class was £1,503,121,000. The DRC model includes a number
+of assumptions that are categorised as level 3 in the fair value hierarchy, each of which have been assessed as to whether or not
+there could be any reasonably possible changes in these assumptions. Based on this assessment, should there be a 5% increase or
+decrease in the assumptions relating to the valuation of the land, and the indexation of build costs, and the rate at which finance
+costs are attributed, the Stadium asset class could increase in value by an amount of £61,462,000 or decrease in value by an amount
+of £108,097,000.
+At 30 June 2025, had the land and buildings of the Group been carried at historical cost ess accumulated depreciation and
+accumulated impairment losses, their carrying amount would have been approximately £840,867,000 (2024: £889,923,000).
+Cumulative borrowing costs capitalised included in the cost of property, plant and equipment amount to £24,391,000 (2024:
+£24,852,000) for the Group.
+36
+Notes to the accounts
+for the year ended 30 June 2025
+9. Property, plant and equipment (continued)
+For the year ended 30 June 2024 .
+PAF for Assets under the
+Land and leasehold Right of use Motor General plant course of
+buildings Stadium Properties assets vehicles and equipment construction Total
+Group £’000 £’000 £000 £000 £'000 £’000 £’000 £'000
+Cost
+At 1 July 2023 251,271 = 1,517,176 13,278 23,940 680 121,823 $6,017 1,984,185
+Additions 458 80 - 6,354 187 5,224 33,388 45,691
+Disposal - - - - (19) - 6,395) (6,414)
+Transfer of assets 26,541 3,174 - - - 15,429 (45,144) -
+Revaluation uplift - 1,055 - - - 1 - 1,056
+At 30 June 2024 278,270 = 1,521,485 13,278 30,294 848 142,477 37,866 2,024,518
+Depreciation and
+impairment
+At 1 July 2023 36,492 - 2,524 4,286 541 98,042 5,201 147,086
+Eliminated on disposal - - - - (7) - (5,201) (5,208)
+Charged in the year 4,390 50,114 299 1,680 47 12,266 - 68,796
+Eliminated on revaluation - (50,114) - - - - - (50,114)
+At 30 June 2024 40,882 - 2,823 5,966 581 110,308 - 160,560
+Net book value
+At 30 June 2024 237,388 1,521,485 10,455 24,328 267 32,169 37,866 1,863,958
+10. Intangible fixed assets
+For the year ended 30 June 2025
+Player Computer
+registrations software Total
+£’000 £000 £'000
+Cost
+At 30 June 2024 696,571 2,989 699,560
+Additions 149,393 100 149,493
+Disposals . (149,267) - (149,267)
+At 30 June 2025 696,697 3,089 699,786
+; Amortisation and impairment
+At 30 june 2024 , 277,644 1,436 279,080 .
+Charged in year — amortisation 141,180 671 141,851
+Disposals (135,051) - (135,051)
+At 30 June 2025 283,773 2,107 285,880
+Net book value
+At 30 June 2025 412,924 982 413,906
+37
+Notes to the accounts
+for the year ended 30 June 2025
+10. Intangible fixed assets (continued)
+In the period, capitalised player registrations relating to zero individuals (2024: one) were impaired by £nil (2024: £1,770,000).
+Impairment losses were incurred where there was evidence that the carrying value of the player may not be recoverable in
+accordance with the Group's accounting policy. Recoverable amounts have been estimated as fair values less costs of disposal, in
+accordance with the Group’s accounting policy.
+For the year ended 30 June 2024
+Player Computer
+registrations software Total
+£'000 £000 £'000
+Cost
+At 1 July 2023 579,167 2,365 $81,532
+‘Additions 272,181 624 272,805
+Disposals (154,777) - (154,777)
+At 30 June 2024 696,571 2,989 699,560
+Amortisation and impairment
+At 1 July 2023 ; 285,064 952 286,016
+Charged in year — amortisation 135,803 484 136,287
+Charged in year — impairment 1,822 - 1,822
+Disposals (145,045) - (145,045)
+At 30 June 2024 . 277,644 1,436 279,080
+Net book value
+At 30 June 2024 418,927 1,553 420,480
+11. Investments in financial assets
+2025 2024
+£,000 £,000
+Financial assets mandatorily measured at FVTPL
+Investments at 1 July 2024 5 26
+Profit/{loss) in the period 9 (21)
+Total investments 14 5 ,
+38
+. Notes to the accounts
+for the year ended 30 June 2025
+12. Inventories
+2025 2024
+€£'000 £000
+Inventories 13,809 11,423
+nS
+inventories comprise merchandising goods held for resale.
+13. Trade and other receivables
+2025 2024
+£7000 £000
+Trade receivables due in more than one year ; 41,533 "6,845
+Non-current assets : 41,533 6,845
+Trade receivables due in less than one year 39,446 66,768
+Other receivables . 2,925 4,040
+Prepayments and accrued income 11,687 12,298
+Trade and other receivables 54,058 83,106
+Corporation tax 95 33
+Current assets 54,153 83,139
+95,686 89,984
+Trade receivables above include £61,221,000 (2024: £58,132,000) in respect of the disposal of players’ registrations, of which
+£41,533,000 is due after more than one year (2024: £6,845,000).
+The Directors consider the carrying amount of trade and other receivables approximates their fair value. Refer to note 18 for
+disclosures relating to receivables’ ageing and other credit risk considerations.
+14. Cash and cash equivalents
+Cash and cash equivalents comprise cash held by the Group and short-term bank deposits.
+2025 2024
+£000 £000
+Bank balances 20,334 78,919
+Cash in hand 79 - 55
+Cash and cash equivalents 20,413 78,974
+The carrying amount of these assets approximates their fair value.
+39
+Notes to the accounts
+for the year ended 30 June 2025
+15. Current liabilities
+2025 2024
+: £'000 £000
+Other loans (secured) 3,986 .
+Interest-bearing loans and borrowings 3,986 -
+Trade payables due in less than one year : 161,620 184,510
+Other tax and social security 30,213 17,722
+Lease liabilities 1,025 707
+Other payables 35,146 34,198
+Accruals 70,605 36,621
+Deferred income 161,739 189,232
+Trade and other payables : 460,348 462,990
+FVTPL liabilities 52,066 28,646
+Provisions (see note 17) 16,817 7,648
+533,217 499,284
+oe
+Trade payables above include £134,550,000 in respect of the acquisition of players’ registrations (2024: £145,979,000). Deferred
+income includes income in respect of season tickets and commercial sponsorships relating to future years. The Directors consider that
+the carrying amount of trade payables approximates their fair value.
+The ‘A’ ordinary shares issued to ENIC Sports Inc (“ENIC”) in June 2022 were converted into ordinary shares with fair value of
+£100,000,000 in December 2022 and resulted in the issuance of ordinary share capital which became part of the Club's permanent
+share capital and treated as equity. All arrangement fees were expensed at the point of conversion.
+The issuance of ‘A’ ordinary shares conferred warrant rights to subscribe for ordinary shares in the Club. The warrant entitlement is
+initially capped through to 30 June 2023 by reference to market values determined in accordance with the instrument and thereafter
+equates to 5% of the fully diluted capital at the point of issue, stepping up thereafter from 31 March 2025 by 1.5% per annum,
+accruing for 10 years post issuance. Whilst these warrants may be exercised and converted, in a similar way to the ‘A’ ordinary shares
+and become permanent ordinary equity, the conversion only occurs on a change of control or they expire 50 years from issuance.
+They are measured at FVTPL until they are either exercised or expired. The warrant fair value calculation includes a number of level 3
+assumptions under the fair value hierarchy, each of which have been assessed as to whether or not there could be any reasonably
+possible changes in these assumptions. This assessment has resulted in an increase in the value of the warrant of £23,420,000. At the
+balance sheet date the estimated fair value of the warrants was £52,066,000. Based on this assessment, should there be a 5%
+increase or decrease in the assumptions relating to the valuation of the Company’s shares, and a two year increase in the estimated
+exercise date of the warrants, the warrants could increase in value by an amount of £16,981,000 or decrease in value by an amount
+of £16,676,000. The estimated lifetime value attributed to the warrants is treated as a liability until its potential conversion into
+permanent equity, although in substance it is part of the permanent equity structure of the Club.
+Due to the total liability recognised being in excess of cash received, the difference has been accounted for in equity through the
+statement in changes of equity. .
+In the next financial year one of the series of Loan Notes, with a 15 year maturity, begins amortising. See note 16 for more detail on
+the Loan notes and refinancing package as a whole.
+40
+Notes to the accounts
+for the year ended 30 June 2025
+16. Non-current liabilities
+2025 2024
+£’000 £'000
+Bank loans (secured) 80,933 80,908
+Other loans (secured) 766,733 770,540
+Interest-bearing loans and borrowings 847,666 851,448
+Trade payables due in more than one year 169,431 191,449
+. Deferred income 45,507 57,933
+Lease liabilities 22,476 19,909
+Other payables 19,677 25,467
+Trade and other payables 257,091 294,758
+Deferred grant income 3,438 3,688
+Provisions (see note 17) 134,396 159,601
+1,242,591 1,309,495
+Trade payables above are all in respect of the acquisition of players’ registrations. Deferred income relates to payments received in
+advance for periods commencing more than a year from the balance sheet date.
+Loans (in notes 15 and 16)
+In September 2019 the Group closed its refinancing of the pre-existing £637,000,000 loans put in place to support the construction
+of THS and secured against THS. The £637,000,000 stadium refinancing package includes £525,000,000 from issue of long-term
+bonds to U.S. investors through a private placement and another £112,000,000 from a loan from Bank of America Merrill Lynch, who
+also managed the bond issue. As at the balance sheet date the refinancing package had an average maturity of 18.5 years and a
+weighted average coupon of 3.17%.
+In June 2021 a further £250,000,000 was raised through the issue of long-term bonds to US investors through a second private
+placement necessitated by the impact of COVID-19. As at the balance sheet date this tranche of financing had an average maturity of
+16.4 years and a weighted average coupon of 2.83%. £50,000,000 of this was used to repay part of the Bank of America Merrill Lynch
+loan. The remaining £62,000,000 is at an interest rate of 1.4% plus SONIA with a Credit Spread Adjustment.
+In March 2023 the facility with Bank of America Merril Lynch was extended by £19,000,000. This is at a rate of 1.75% plus SONIA with
+a Credit Spread Adjustment with a bullet repayment in March 2028.
+The earliest maturity date within the refinancing package as a whole is March 2028 and the package has an average maturity of 17.6
+years, with a weighted average coupon of 3.07%, net of debt issue costs. The debt stack includes a 30-year tranche, with a bullet
+repayment in 2051.
+. The refinancing package is shown in the financial statements net of £4,347,000 of associated loan arrangement costs which are being
+amortised over the term of the loan.
+The Group has a revolving credit facility with HSBC Bank Plc of £50,000,000 expiring in September 2027, also secured against THS. At
+the balance sheet date fnil (2023: £nil) was drawn.
+41
+Notes to the accounts
+for the year ended 30 June 2025
+16. Non-current liabilities (continued)
+The maturity profile of the Group’s total borrowings at the balance sheet date which do not include interest payments are as follows:
+2025 2024
+€’000 £’000
+Bank loans and overdraft
+In one year or less or on demand - -
+In more than one year but not more than two years - -
+In more than two years but not more than five years 80,933 18,908
+In more than five years - 62,000
+80,933 80,908
+Other loans
+In one year or less or on demand 3,986 -
+In more than one year but not more than two years 3,986 3,806
+In more than two years but not more than five years 23,003 11,959
+\n more than five years 739,744 754,775
+770,719 770,540
+Total borrowings
+In one year or less or on demand : 3,986 -
+In more than one year but not more than two years 3,986 3,806
+In more than two years but not more than five years 103,936 30,867
+In more than five years 739,744 816,775
+j 851,652 851,448
+42
+Notes to the accounts
+for the year ended 30 June 2025
+16. Non-current liabilities (continued)
+Interest rate profile .
+The Group has no financial assets excluding short-term receivables, other than the Sterling cash deposits of £20,413,000
+{2024: £78,974,000) which are part of the financing arrangements of the Group. The Sterling cash deposits comprise deposits placed
+on the money market at call rates.
+Fixed rate borrowings
+Weighted
+Floating rate Fixedrate average time for Weighted
+financial financial which rate is average interest
+Total liabilities liabilities fixed rate at year end
+£/000 £000 £000 Years %
+Interest rate profile of financial liabilities
+(all Sterling)
+2025 851,652 80,933 770,719 17 3.07
+2024 851,448 80,908 770,540 18 3.16
+The floating rate borrowings are all denominated in Sterling and are referenced to Sterling Overnight Index Average (SONIA) and
+The Bank of England Base Rate.
+Borrowing facilities
+As at the balance sheet date the Group had the following undrawn committed bank borrowing facilities:
+2025 2024
+€’000 £000
+Expiring in one year or less or on demand 5,000 55,000
+Expiring in more than one year but less than two years - -
+Expiring in more than two years but not more than five years 50,000 : -
+Total undrawn committed borrowing facilities 55,000 55,000
+This is made up of undrawn bank borrowing facilities of £50,000,000 (2024: £50,000,000) and an overdraft of £5,000,000 (2024:
+£5,000,000).
+Treasury policy
+The Group’s operations are currently funded through operating cash flow, cash balances and loans. The Group is exposed to foreign
+currency exchange risk through its player transactions but manages its working capital inflow and outflow to minimise any material
+. foreign exchange exposure. The Group does not enter into instruments for speculative purposes. All treasury transactions are
+reported to and approved by the Board.
+43
+Notes to the accounts :
+. for the year ended 30 June 2025
+17. Provisions for liabilities
+. For the year ended 30 June 2025 ; :
+€’000
+
+Provisions — due in less than one year
+At 1 July 2024 . . 7,648
+Provided during the year 15,468
+Utilised during the year (6,299)
+At 30 June 2025 — due in less than one year 16,817 .
+Provisions — due in more than one year
+
+At 1 July 2024 - :
+
+Provided during the year . 1,211
+At 30 June 2025 2211
+Deferred taxation — due in more than one year :
+
+At 1 July 2024 159,601
+
+Credit to the income statement (see note 8) (25,917)
+
+Deferred tax credit on revaluation to other comprehensive income . (499)
+At 30 June 2025, 133,185
+At 30 June:'2025 — due in more than one year 134,396
+Total
+At 30 June 2025 151,213
+For the year ended 30 June 2024 .
+
+: £’000
+: Provisions — due in less than one year .
+At 1 July 2023 . 17,541
+Provided during the year 7,648
+Utilised during the year (17,541)
+At 30 June 2024 — due in less than one year : 7,648
+Deferred taxation — due in more than one year
+At 1 July 2023 151,181
+Charged to the income statement (see note 8) 1,998
+Deferred tax charge on revaluation to other comprehensive income 6,422
+At 30 June 2024 — due in more than one year 159,601
+Total
+At 30 June 2024 167,249
+Provisions consist of provisions on players and management contracts, The timing of the outflow of the provisinns an players and °
+management contracts are dictated by the contractual provisions of the relevant agreements. These provisions are classified as
+current liabilities.
+44
+Notes to the accounts
+for the year ended 30 June 2025
+17. Provisions for liabilities (continued)
+Deferred taxation has been provided as follows and is classified as a non-current liability:
+2025 2024
+£'000 £'000
+Accelerated capital allowances 6,916 6,916
+Intangible fixed assets 20,471 58,681
+Deferred tax liability arising on revaluation of stadium : 118,030 118,530
+Other timing differences (12,232) (24,526)
+133,185 159,601
+18. Financial instruments
+Capital risk management
+The Group manages its capital to ensure that entities in the Group will be able to continue as a going concern. Strong financial
+management is an integral part of the Directors’ strategy to achieve the Group’s stated objectives. The Directors review financial
+reports on a regular basis and the Group finance function do so on a daily basis ensuring that the Group has adequate liquidity. The
+Directors’ consideration of going concern is detailed in the Directors’ Report. The capital structure of the Group consists of debt,
+which includes the borrowings disclosed in note 16, cash and cash equivalents and equity attributable to equity holders of the parent
+comprising issued capital, reserves and retained earnings as disclosed in note 21 and the statement of changes in equity.
+Financial risk management objectives and policies .
+The Group’s financial assets include cash and cash equivalents, trade receivables and other short-term deposits. The main purpose
+of these financial instruments is to finance the Group operations. The Group has other financial assets and liabilities such as trade
+and other receivables and trade and other payables, which arise directly from its operations. The Group’s receivables and payables
+from player trading are contractually structured in order to minimise financial risk. Surplus cash within the Group is put on deposit,
+the objective being to maximise returns on such funds whilst ensuring that the short-term cash flow requirements of the Group are
+met.
+The carrying value of the financial assets and liabilities (with non-financial assets and liabilities shown for reconciling purposes) are
+analysed as follows:
+2025 2024
+Financial assets Non-financial Financial assets Non-financial
+{at amortised cost) assets Total {at amortised cost) assets Total
+£'000 £000 £’000 £’000 £000 £’000
+Assets
+Non-current assets 41,547 2,266,100 2,307,647 6,850 2,284,438 2,291,288
+Loans and receivables 54,153 - 54,153 83,139 - 83,139
+Cash and bank balances 20,413 - 20,413 78,974 - 78,974
+Other current assets - 13,809 13,809 - 11,423 11,423
+Total assets 116,113 2,279,909 2,396,022 168,963 2,295,861 2,464,824
+45
+Notes to the accounts
+for the year ended 30 June 2025
+18. Financial instruments (continued)
+Financial risk management objectives and policies (continued)
+2025 2024
+Financial Non-financiat Financial Non-financial
+liabilities abilities Total liabilities abilities Total
+£000 £’000 £000 £000 £000 £000
+Liabilities
+Borrowings at amortised cost:
+Current (3,986) - (3,986) - - -
+Non-current (847,666) - (847,666) (851,448) - (851,448)
+Trade and other payables (740,407) (22,491) (762,898) (794,065) (12,534) (806,599)
+Other liabilities - (109,192) (109,192) - (122,086) (122,086)
+FVTPL liabilities (52,066) - (52,066) (28,646) - (28,646)
+Total liabilities (1,644,125) (131,683) (1,775,808) = (1,674,159) (134,620) (1,808,779)
+Net (liabilities)/assets (1,528,012) 2,148,226 620,214 (1,505,196) 2,161,241 656,045
+The Group has not used derivative financial instruments during the year with the exception of the warrant as described in note 15.
+The Board will review the need for the use of derivative financial instruments in the future.
+The Group has exposure to the following risks from its use of financial instruments:
+(i) market risk;
+(ii) credit risk; and .
+(iii) liquidity risk.
+This note presents information about the Group’s exposure to each of the above risks and the Group’s objectives, policies and
+processes for measuring and managing risk.
+Market risk
+The Group’s activities expose it primarily to the financial risks of changes in foreign currency exchange and interest rates,
+Interest rate risk
+The Group is exposed to interest rate risk because entities in the Group borrows at floating interest rates. The Group continually
+reviews the exposure in light of tocal and global influences.
+Interest rate sensitivity analysis
+The sensitivity analysis below has been determined based on the exposure to interest rates for financial instruments at the balance
+sheet date. For floating rate cash deposits, the analysis is prepared assuming the amount of deposits outstanding at the balance
+sheet date were outstanding for the whole year. A 150 basis point increase or decrease is used when reporting interest rate risk
+internally to key management personnel and represents management's assessment of reasonable possible changes in interest rates.
+If interest rates had been 150 basis points higher/lower and all other variables were held constant, the Group’s profit for the year
+ended 30 June 2025 would decrease/increase by £1,215,000 (2024: decrease/increase by £1,215,000). This is mainly attributable to
+the Group’s exposure to interest rates on its floating rate loans.
+Foreign currency management
+The presentational currency of the Group is UK Sterling. The Group is exposed to currency risk due to movements in foreign
+currencies relative to Sterling affecting the Group’s foreign currency transactions and balances.
+46
+Notes to the accounts .
+for the year ended 30 June 2025
+18. Financial instruments (continued)
+Foreign currency management (continued)
+The carrying amounts of the Group's foreign currency denominated monetary assets and monetary liabilities at the reporting date
+are as follows:
+Uabilities Assets
+2025 2024 2028 2024
+£000 £000 £000 £000
+
+Euro 148,173 189,823 47,994 50,122
+US Dollar - - 45 2,989
+Australian Dollar - : 25 7
+These amounts principally relate to player transfer liabilities and receivables, which are matched wherever possible over the life of
+the liability by Euro denominated receipts from European competitions.
+Foreign currency sensitivity analysis
+The Group is mainly exposed to the Euro, US Dollar and Australian Dollar. The following table details the Group’s sensitivity to a 10%
+increase and decrease in Sterling against the Euro, US Dollar and Australian Dollar. 10% is the sensitivity rate used when reporting
+foreign currency risk internally to key management personnel and represents management’s assessment of the reasonably possible
+change in foreign exchange rates. The sensitivity analysis includes only outstanding foreign currency denominated monetary items
+and adjusts their translation at the period end for a 10% change in foreign currency rates. The negative number below indicates an
+increase in profit and retained earnings where Sterling strengthens against the Euro, US Dollar or Australian Dollar. For a 10%
+weakening of Sterling against the Euro, US Dollar or Australian Dollar, there would be an equal and opposite impact on profit and
+retained earnings.
+
+2025 2024
+
+€'000 £000
+
+Euro : 11,131 15,522
+US Dollar (5) (332)
+Australian Dollar (3) (1)
+(i} Credit risk
+Credit risk refers to the risk that a counterparty will default on its contractual obligations resulting in financial loss to the Group. Of
+the total trade receivable balance of £80,979,000 (2024: £73,613,000), £60,554,000 (2024: £58,132,000) relates to amounts
+receivable from various other football Clubs in relation to player trading. The maximum credit exposure relates to the total of cash
+and cash equivalents, and trade receivables and is £101,392,000 (2024: £152,587,000).
+There are no other significant concentrations of credit risk within the Group. Cash is deposited with one financial institution however
+the Directors are satisfied this does not create a significant credit risk. The maximum risk exposure relates to creditors from football
+trading but this is mitigated by the governing bodies of international and national football associations.
+Credit evaluations are performed on all customers requiring credit over a certain amount. The maximum credit risk exposure of the
+Group comprises the amounts presented in the balance sheet which are stated net of provisions for expected credit losses,
+, 47
+Notes to the accounts
+for the year ended 30 June 2025
+(ii) Credit risk (continued)
+The ageing of trade receivables at the reporting date was: .
+; 2025 2024
+“Grossreceivables __—~Provision Gross receivables. _—=~Provision —
+000 €’000 £'000 £000
+Non-football
+Not past due (152) - 790 -
+Past due 0 — 30 days 8,568 - 5,450 -
+Past due 31-90 days 1,046 - 3,251 -
+More than 90 days 12,207 (1,244) 7,369 (654)
+21,669 (1,244) 16,860 (654)
+Football
+Not past due 60,554 - 57,407 -
+Past due 0 — 30 days - - - -
+Past due 31-90 days - - - -
+More than 90 days - - - -
+60,554 - 57,407 -
+; Total
+Not past due 60,402 - 58,197 -
+Past due 0 - 30 days 8,568 - 5,450 -
+Past due 31-90 days 1,046 - 3,251 -
+More than 90 days 12,207 (1,244) 7,369 (654)
+82,223 (1,244) 74,267 (654)
+2025 2024
+€’000 £'000
+Movements in the allowance for expected credit losses
+At 1July . 654 445
+Provided during the year 596 209
+Recovered during the year (6) -
+Utilised during the year - -
+At 30 June 1,244 © 654
+(iti) Liquidity risk
+The Group’s policy is to maintain a balance of continuity of funding and flexibility through the use of loans, factoring and finance
+leases as applicable. The annual Group cash flow is cyclical in nature with the majority of cash inflows being received prior to the
+start of the playing season.
+Ultimate responsibility for liquidity risk management rests with the Directors. The Directors use management information tools
+including budgets and cash flow forecasts to be able to constantly monitor and manage current and future liquidity.
+The maturity profile of the Group’s borrowings is shown on pages 42 and 43 along with the Group’s borrowing facilities as at the
+balance sheet date.
+48
+Notes to the accounts
+for the year ended 30 June 2025
+19. Called up share capital & share premium ,
+: . 2025 .
+. £’000
+Allotted, authorised, called up and fully paid:
+Balance as at 30 June 2024 11,452 :
+Shares issued in period (5,767,984 at Sp) 288
+. Balance as at 30 June 2025 11,740
+. 2025
+£000
+Allotted, authorised, called up and fully paid:
+Balance as at 30 June 2024 133,980
+Shares issued in period 34,712
+Balance as at 30 June 2025 168,692
+During the year ENIC Sports Inc subscribed to 5,767,984 ordinary shares for £35,000,000. At the year end ENIC held 204,077,955
+ordinary shares of Tottenham Hotspur Limited representing 86.91% of those in issue. The number of allotted, authorised, called up
+and fully paid ordinary shares of Tottenham Hotspur Limited is 234,811,142 (2024: 229,043,158) at year end. The number of allotted,
+authorised, called up and fully paid ‘A’ ordinary shares of Tottenham Hotspur Limited is 1 (2024: 1) at the year end.
+20. Revaluation reserve
+2025, 2024
+£’000 £'000
+Opening balance 491,821 447,076
+Revaluation increase on stadium 23,336 51,167
+Deferred tax asset/(liability) arising on revaluation of stadium 499 (6,422)
+Closing balance 515,656 491,821
+21. Reconciliation of movements in Group shareholders’ funds
+2025 2024
+£000 £'000
+Opening shareholders’ funds : 656,045 637,526
+Share issue . 35,000 -
+Gain on revaluation 23,835 44,745
+Loss for the year (94,666) (26,226)
+oo. Closing- shareholders’ funds . 620,214 656,045 . .
+49
+Notes to the accounts
+for the year ended 30 June 2025
+22. Lease liabilities
+2025 2024
+£000 £’000
+1iuly (24,472) (20,524)
+Additions - (4,828)
+Interest expense related to lease liabilities (866) (833)
+Repayment of lease liabilities 1,837 1,713
+At 30 June (23,501) (24,472)
+Current lease liabilities (1,025) (971)
+Non-current lease liabilities (22,476) (23,501)
+At 30 June (23,501) (24,472)
+All of the above tease liabilities relate to Land and Buildings. The leases are subject to periodic market value rent reviews which are
+not reflected in the measurement of the lease liabilities.
+The maturity of lease liabilities at 30 June 2025 were as follows:
+Lease payments. Lease payments
+: 2025 2024
+£000 £000
+Year to 2025 : (1,839) ‘
+Year to 2026 (1,839) (1,839)
+Year to 2027 : (1,839) (1,839)
+Year to 2028 (1,837) (1,837)
+Year to 2029 (1,021) -
+Later years (29,523) (31,302)
+Effect of discounting 12,558 14,184
+Lease liability (23,501) (24,472)
+23. Net debt
+2025 2024 .
+: £’000 £/000
+Cash and cash equivalents 20,413 78,974
+Bank loans , (851,652) (851,448)
+Net debt {831,239) (772,474)
+50
+Notes to the accounts
+for the year ended 30 June 2025
+24, Related party transactions
+The following paragraphs give details of all related party transactions involving the Company and any of its subsidiary undertakings.
+ENIC Group companies
+During the year, TH Property Limited invoiced the Group for rent to the value of £1,059,417 (2024: £1,378,121). At the balance sheet
+date, £nil (2024: Enil) was due to TH Property Limited from the Group.
+During the year, Tottenham Hotspur Football & Athletic Co Ltd, a subsidiary of Tottenham Hotspur Limited, invoiced ENIC Limited for
+services to the value of £nil (2024: £nil). At the balance sheet date, £nil (2024: £1,507,837) was due to Tottenham Hotspur Football &
+Athletic Co Ltd from ENIC Limited. In addition, £1,075,838 was due from Tottenham Hotspur Football & Athletic Co Ltd to ENIC
+Limited in retation to property receipts.
+During the year, Tottenham Hotspur Limited bore costs of £583,446 (2024: £194,079) on behalf of High Road West Limited. At the
+balance sheet date, £583,446 (2024: £194,079) was due to Tottenham Hotspur Limited.
+Other
+Tottenham Hotspur Foundation was established on 1 November 2006. During the year the Group invoiced the Foundation for
+expenses paid on their behalf of £311,171 (2024: £131,480}. At the balance sheet date, £nil (2024: £19,970) was due to the Group
+from Tottenham Hotspur Foundation.
+During the year, Tottenham Hotspur Foundation invoiced the Group for expenses paid on their behalf of £36,000 (2024: £36,000).
+At the balance sheet date, £5,420 (2024: Enil) was due to Tottenham Hotspur Foundation from the Group.
+Tottenham University Technical College (“Tottenham UTC”) was opened on 1 September 2014 and changed to London Academy of
+Excellence Tottenham ("LAET”) for the 2017/18 academic year. Donna-Maria Cullen is a governor of LAET. During the year the
+Group paid costs on behalf of LAET totalling £71,736 (2024: £33,971) of which £nil {2024: £nil) was invoiced to LAET. At the balance
+sheet date £nil (2024: Enil) was due to the Group from LAET.
+Except for the balances disclosed above, there were no other balances outstanding at the balance sheet date in 2024 or 2025. All of
+these transactions were at arm’s length.
+25. Pensions
+Defined contribution schemes
+The majority of employees are members of a self-administered company money purchase scheme offered to all employees as a
+result of the Automatic Enrolment scheme. The assets of these schemes are held separately from those of the Group, being invested
+with insurance companies. The total pension cost charged during the year amounted to £1,049,000 (2024: £1,118,000). At the
+balance sheet date the total pension accrual was £235,000 (2024: £207,000).
+The Company made no payments in either the current year or prior year into an Employee Funded Retirement Benefit Scheme
+administered by Sanne Trust Company Limited. Accordingly, no liability in respect of the scheme is recognised by the Company.
+Defined benefit scheme
+Certain staff of the Company are members of the Football League Limited Pension and Life Assurance Scheme. The Group is advised
+only of its share of the deficit in the defined benefit section of The Football League Pension and Life Assurance Scheme (the
+‘Scheme’). The most recent actuarial valuation of the Scheme was as at 31 August 2023 and indicated that the Group share of the
+deficit including the cost of future expenses was £338,000 as at 1 September 2023. The pension cost charged during the year
+relating to this deficit was £131,000 (2024: £125,000). At the balance sheet date the Group’s share of this deficit was £102,000
+(2024: £233,000).
+
+51
+Notes to the accounts
+for the year ended 30 June 2025
+26. Changes in liabilities arising from financing activities .
+The table below details changes in the group’s liabilities arising from financing activities, including both cash and non-cash changes.
+Liabilities arising from financing activities are those for which cash flows were, or future cash flows will be, classified in the Group’s
+consolidated cash flow statement as cash flows from financing activities.
+New and
+1July 2024 ~— Financingcash flows — modified leases Other changes 30 June 2025
+£000 £000 £000 £000 £000
+Borrowings (note 16) 851,448 - - 205 851,653
+Lease liabilities (note 22) 24,472 (1,885) - 914 23,501
+Total liabilities from financing activities 875,920 (1,885) - 1,119 875,154
+New and
+July 2023 Financing cash flows modified Leases‘ Other changes 30 June 2024
+£000 £000 £000 £000 £000
+Borrowings (note 16) 851,243 - - 205 851,448
+Lease liabilities (note 22) 20,524 (1,259} 4,828 379 24,472
+Total liabilities from financing activities 871,767 (1,259) 4,828 584 875,920
+27. Commitments
+At the balance sheet date the Company had non-current asset commitments amounting to £46,867,000 (2024: £13,482,000)
+28. Contingent liabilities and assets
+The Company, together with its subsidiaries, has given a multi-lateral undertaking to its bankers to guarantee the overdrafts of the
+Group companies. .
+Under the terms of certain contracts for the purchase of players’ registrations, future payments may be due to third parties,
+dependent on the success of the team and/or individual players. At the balance sheet date the maximum contingent liability which
+has not been provided for was £78,787,000 (2024: £93,646,000).
+Under the terms of certain contracts for the sale of players’ registrations, future receipts may be receivable from third parties,
+dependent on the success of the team and/or individual players. At the balance sheet date the maximum contingent asset was
+£44,242,000 (2024: €37,863,000}, none of which has been recognised.
+52
+Notes to the accounts
+for the year ended 30 June 2025
+29. Post balance sheet events
+Since the balance sheet date the following events have occurred:
+eB Spencer was sold to Chelsea F.C. Women;
+e = M Tel joined from Bayern Munich; ,
+¢ ~~ LVuskovic joined from Hajduk Split;
+© — T Koga joined from Feyenoord Vrouwen;
+*® A Veliz loan to Rosario;
+© K Takai joined from Kawasaki Frontale;
+* MKudus joined from West Ham;
+e ~~ APhillips loan to Stoke;
+* MMoore loan to Rangers;
+e¢ J Palhinha joined on loan from Bayern Munich;
+*# —_H-M Son sold to LAFC;
+eM Yang loan to Portsmouth;
+° A Devine loan to Preston;
+e — LVuskovic loan to Hamburg; .
+eX Simons joined from RB Leipzig;
+. R Muani joined on loan from Paris Saint-Germain;
+¢ —M Solomon loan to Villarreal;
+* — BGil was sold to Girona;
+@ = C Tandberg joined from Hammarby Fotboll AB;
+Including Football League levies, the non-contingent net expenditure from these transactions amounted to approximately
+£158,590,000.
+The net contingent asset amounts to approximately £1,754,000.
+Executive Chairman Daniel Levy left the Club and Non-Executive Director Peter Charrington became Non-Executive Chairman.
+ENIC Sports Inc. subscribed to an additional 13,493,731 ordinary shares of Tottenham Hotspur Limited on 7 October 2025. This
+subscription increased the number of shares held by ENIC Sports Inc. to 217,571,686 representing 87.62% of those in issue.
+30. Full Listing of subsidiaries
+A full listing of subsidiaries can be located in note 4 of the financial statements of the Company.
+31. Ultimate parent company
+The ultimate controlling party of the Company is a discretionary trust of which certain members of Mr J Lewis's family, excluding Mr J
+Lewis, are potential beneficiaries by virtue of the trustee’s control of the ultimate parent company of the Group which is ENIC Sports
+and Developments Holdings Limited.
+The immediate controlling party is ENIC Sports Inc., a company incorporated and registered in the Bahamas.
+53
+Company balance sheet
+as at 30 June 2025
+2025 2024
+Notes £'000 £000
+
+Non-current assets
+Property, plant and equipment 3 80,756 81,510
+Investments 4 232,990 232,990
+Deferred tax 6/9 1,409 2,014
+
+315,155 316,514
+Current assets
+Inventory 5 13,280 10,866
+Trade and other receivables 6 369,004 236,816
+Cash and cash equivalents 933 _ $3,106
+
+"383,217 310,788
+
+Current liabilities
+Trade and other payables 7 (100,142) (70,459)
+FVTPL liabilities 7 (52,066) (28,646)
+
+(152,208) (99,105)
+Net current assets . 231,009 211,683
+Total assets less current liabilities 546,164 528,197
+Non-current liabilities 8 (8,240) (10,093)
+Net assets 537,924 518,104
+Equity
+Share capital 10 11,740 11,452
+Share premium . 10 168,692 133,980
+Capital redemption reserve 10 644 644
+Retained earnings 10 356,848 372,028 .
+Equity 537,924 518,104
+The retained loss for the year, within the financial statements of the parent Company, was £15,180,000 (2024: profit of
+£46,024,000). These financial statements (Company number 1706358) were approved by the Board of Directors and authorised for
+issue on 24 October 2025.
+Signed on behalf of the Board of Directors
+Matthew Collecott
+Director
+
+54
+Statement of Changes in Equity
+as at 30 June 2025
+For the year ended 30 June 2025
+Capital
+redemption Retained :
+Share capita) Share premium : reserve earnings Total
+£000 £'000 £’000 £'000 £000
+At 30 June 2024 11,452 133,980 644 372,028 518,104 .
+Share Issue 288 34,712 - - 35,000
+Total comprehensive expense for the year - - - (15,180) (15,180)
+At 30 June 2025 11,740 168,692 644 356,848 537,924
+For the year ended 30 June 2024
+Capital
+Share redemption Retained
+Share capital premium reserve earnings Total
+. £’000 £000 £'000 £000 £'000
+Balance as at 1 July 2023 11,452 133,980 644 326,004 472,080
+Total comprehensive income for the year - - - 46,024 46,024
+At 30 June 2024 : 11,452 133,980 644 372,028 518,104
+. 55
+Notes to the parent company accounts
+for the year ended 30 June 2025
+1. Accounting policies and critical judgements
+Authorisation of financial statements and statement of compliance with FRS 101
+The financial statements of the Company for the year ended 30 June 2025 were authorised for issue by the Board of Directors on 24
+October 2025 and the balance sheet was signed on the Board’s behalf by Matthew Collecott. Tottenham Hotspur Limited is
+incorporated and domiciled in England and Wales. These financial statements were prepared in accordance with Financial Reporting
+Standard 101 Reduced Disclosure Framework (FRS 101) and in accordance with applicable accounting standards. The Company's
+financial statements are presented in Pound Sterling and all values are rounded to the nearest thousand pounds except when
+otherwise indicated. The principal accounting policies adopted by the Company are set out in this note. The accounting standards
+applied were FRS 101: “Reduced Disclosure Framework”.
+The principal accounting policies which have been applied in preparing the financial statements for both the current and preceding
+periods are the same as those set out in note 1 of the consolidated financial statements with those most relevant to the Company
+repeated below.
+Basis of accounting -
+The measurement basis used in the preparation of these financial statements is the historical cost convention.
+Application of new and revised International Financial Reporting Standards (|FRSs)
+In the current year, the Company has applied a number of amendments to IFRS Accounting Standards issued by the International
+Accounting Standards Board (IASB) that are mandatorily effective for an accounting period that begins on or after 1 January 2024.
+Their adoption has not had any material impact on the disclosures or on the amounts reported in these financial statements:
+
+« Amendments to IAS 1 Presentation of Financial Statements—Classification of Liabilities as Current or Non-current
+
+« Amendments to IAS 1 Presentation of Financial Statements — Non-current liabilities with Covenants
+
+« Amendments to IAS 7 Statement of Cash Flows and IFRS 7 Financial Instruments: Disclosures — Supplier Finance
+
+Arrangements
+
+e Amendments to IFRS 16 Leases — Lease Liability in a Sale and Leaseback
+Summary of disclosure exemptions
+As permitted by FRS 101, the Company has taken advantage of the disclosure exemptions available under that standard in relation to
+capital management, presentation of comparative information in respect of certain assets, presentation of a cash flow statement,
+standards not yet effective, certain disclosure in respect of revenue from contracts with customers, impairment of assets, certain
+related party transactions, standards not yet effective, certain disclosure requirements in respect of leases, and certain disclosures in
+respect of Pillar Two income taxes.
+Cash flow statement
+Under the provisions of FRS 101 the Company has not presented a cash flow statement, as the results of the Company are included
+within the consolidated financial statements.
+Capital grants
+Capital grants relate to amounts receivable from public bodies and football authorities and are treated as deferred income and
+released to the profit and loss account over the estimated useful life of the asset concerned.
+Foreign exchange
+Transactions denominated in foreign currencies are transtated into Sterling and recorded at the rates of exchange ruling at the date
+‘of the transactions. Monetary assets and liabilities denominated in a foreign currency are translated into Sterling at the exchange
+rates ruling on the balance sheet dates. Translation differences are dealt with in the profit and loss account.
+
+, 56
+Notes to the parent company accounts
+for the year ended 30 June 2025
+1. Accounting policies and critical judgements (continued)
+Property, plant and equipment
+Freehold land is not depreciated. Leasehold property is amortised over the term of the lease. Other fixed assets are depreciated on a
+straight-line basis at annual rates appropriate to their estimated useful lives as follows:
+Freehold properties 2%
+Motor vehicles 20%
+General plant and equipment 10 -— 33%
+The Group capitalises costs in relation to an asset when economic benefit from the asset is considered probable. Assets under the
+. course of construction are carried at cost and include professional fees. Depreciation commences when the assets are ready for their
+intended use.
+Fixed asset investments
+Investments held as fixed assets are stated at cost less provision for impairment.
+Inventory
+Inventories, which comprise goods held for resale, are valued at the lower of cost and net realisable value using the weighted
+\ average cost method.
+Financial instruments
+Financial assets and liabilities are recognised in the Company's statement of financial position when the Company becomes a party to
+the contractual provisions of the instrument.
+Financial assets and financial liabilities are initially measured at fair value. Transaction costs that are directly attributable to the
+acquisition or issue of financial assets and financial liabilities (other than financial assets and financial liabilities at FVTPL) are added
+to or deducted from the fair value of the financial assets or financial liabilities, as appropriate, on initial recognition.
+Financial assets at FVTPL are measured at fair value at the end of each reporting period, with any fair value gains or losses recognised
+in profit or loss to the extent they are not part of a designated hedging relationship. The net gain or loss recognised in profit or loss
+includes any dividend or interest earned on the financial asset. As part of the equity raise performed in the period a FVTPL
+instrument was created, which is detailed in note 7.
+Debt
+Debt is stated initially at the amount of the net proceeds after deduction of issue costs. The carrying amount is increased by the
+finance cost in respect of the accounting period and reduced by payments made in the accounting period.
+Leases
+Right of use assets have been capitalised as PPE and lease commitments have been recognised as a liability within other creditors. The
+assets shall be depreciated over the term of the lease agreements and the liabilities will reduce as rent is paid and finance costs are
+expensed. Assets are assessed for impairment if an impairment indicator arises.
+Tax
+The tax expense represents the sum of the tax currently payable and deferred tax.
+The tax currently payable is based on taxable profit for the year. Taxable profits differ from net profit as reported in the income
+statement because they exclude items of income or expense that are taxable or deductible in other years and they further exclude
+items that are never taxable or deductible. The Group’s liability for current tax is calculated using tax rates that have been
+substantively enacted by the balance sheet date.
+Deferred taxation is provided in full on timing differences that result in an obligation at the balance sheet date to pay more tax, or a
+right to pay less tax, at a future date, at rates expected to apply when they crystallise based on current tax rates and law. Timing
+differences arise from the inclusion of items of income and expenditure in taxation computations in periods different from those in
+which they are included in the tinancial statements. Deterred taxation assets are recognised to the extent that it is regarded as more
+likely than not that they will be recovered.
+Deferred taxation is not provided on timing differences arising from the sale or revaluation of fixed assets unless, at the balance
+sheet date, a binding commitment to sell the asset has been entered into and it is unlikely that any gain will qualify for rollover relief.
+Critical accounting judgements and estimates
+In the application of the Company's accounting policies, which are described herein, the Directors are required to make judgements,
+estimates and assumptions about the carrying value of assets and liabilities that are not readily apparent from other sources. The
+estimates and associated assumptions are based on historical experience and other factors that are considered to be relevant. Actual
+results may differ from these estimates.
+57
+Notes to the parent company accounts ,
+for the year ended 30 June 2025
+1 Accounting policies and critical judgements (continued)
+Critical accounting judgements and estimates (continued)
+The Group has identified the following areas of estimation uncertainty and critical accounting judgements within the financial
+statements which may have a material impact. All matters below are key sources of estimation uncertainty with the exception of the
+assets under construction:
+Recoverable amount of non-current assets
+Assets under construction
+The assets classified under ‘in the course of construction’ relate to incremental projects associated to intrinsic capital items. IAS 16,
+Property, Plant and Equipment requires that for an asset to be capitalised it must result in a probable economic benefit. Therefore,
+once these projects begin their useful economic lives, depreciation will begin.
+The NDP is now substantially complete with Lilywhite House and the opening of THS. There are a number of projects at the Southern
+end of the site (hotel, residential) which will be ultimately developed when appropriate. The NDP is closely monitored and any
+amounts capitalised, which would not be recoverable in the event that the remaining elements of the NDP were not completed
+: would need to be written-off at that time {see note 3).
+FVTPL Liability
+The issuance of ‘A’ ordinary shares in 2022 conferred warrant rights to subscribe for ordinary shares in the Club, as detailed in note
+7. The warrants are derivative financial liabilities, which result is in measurement at fair value in accordance with IFRS 9. At the
+balance sheet date the Board estimated the fair value of the warrants based on relevant comparatives, a notional exercise date and a
+median discount attributable to comparative transactions. Due to this assessment there has been an increase in the value of the
+warrant in the period as detailed in note 7.
+2. Staff numbers and costs
+The average number of employees of the Group during the year including Executive Directors was as follows:
+2025 2024
+Number Number
+Retail and distribution staff 69 58
+69 58
+The aggregate payroll costs of these employees were as follows:
+2025 2024
+£000 £000
+Salaries and bonuses 2,824 2,360
+Social security costs 339 254
+Other pension costs 70 66
+3,233 2,680
+58
+Notes to the parent company accounts
+for the year ended 30 June 2025
+3. Property, plant and equipment
+For the year ended 30 June 2025
+Land and FRE for General plant Assets under ;
+buildings short '@#8°h0IS ight of use and the course of
+leasehold Properties assets Motor vehicles equipment. —_—_construction Total
+£’000 £000 £000 £'000 £’000 £'000 £7000
+Cost
+At 30 June 2024 56,515 1,576 5,995 510 28,086 25,311 117,993
+Additions 24 - - - 415 1,107 1,546
+Disposals - 0 - - - (31) (162) (193)
+Transfers 974 - . - - (974) -
+At 30 June 2025 $7,513 1,576 5,995 510 28,470 25,282 119,346
+Depreciation and impairment
+At 30 June 2024 5,953 366 3,046 319 26,799 - 36,483
+Charged in the year 1,929 36 - 44 129 - 2,138
+Released on.disposal - - - - (31) - (31)
+At 30 June 2025 7,882 402 3,046 363 26,897 - 38,590
+Net book value
+At 30 June 2025 49,631 1,174 2,949 147 1,573 25,282 80,756 :
+All assets shown are held at historical cost.
+For the year ended 30 June 2024
+Land and F&F for General plant Assets under
+buildings short '@28¢hO!d Right of use and _ the course of
+leasehold P*oPerties assets Motor vehicles equipment construction Total
+£000 £'000 £000 £000 £000 £000 £000
+Cost :
+At 1 July 2023 56,450 1,576 4,252 376 27,344 30,980 120,978
+Additions 65 - 1,743 134 742 - 2,684
+Disposals ; - - - - - (5,669) (5,669)
+At 30 June 2024 56,515 © 1,576 5,995 510 28,086 25,311 117,993
+Depreciation and impairment
+_ AtlJuly2023° °° “ 4g19 «330 «°~=—«2260S”té“<«~GTS:*« 8G 5,201 37,747
+Charged in the year 1,134 36 786 49 1,932 - 3,937
+Released on disposal - - - - - (5,201) (5,201)
+. At 30 June 2024 5,953 366 3,046 319 26,799 - 36,483
+Net book value
+. At 30 June 2024 50,562 1,210 2,949 191 1,287 25,311 81,510
+. 59
+*
+Notes to the parent company accounts
+for the year ended 30 June 2025
+4. Investments held as fixed assets
+Investments held as fixed assets by the Company represent the investments in subsidiary undertakings which are analysed as follows:
+Investment in
+subsidiary undertakings
+£000
+At 1 July 2024 and 30 June 2025 . 232,990
+At 30 June 2025, the Company had the following interests in the subsidiary undertakings noted below, all of which are registered at
+Lilywhite House, 782 High Road, Tottenham, London N17 OBX and operate in England and Wales:
+Holding and
+Shares class voting rights
+Tottenham Hotspur Football & Athletic Co. Limited* — professional football Club Ordinary 100%
+Tottenham Hotspur Football Club Holdings Limited* — intermediary holding Company Ordinary 100%
+Stardare Limited — holds certain properties on behalf of the Group Ordinary 100%
+Paxton17 Ltd — holds certain properties on behalf of the Group Ordinary 100%
+Canvax Limited — holds certain properties on behalf of the Group Ordinary 100%
+Greenbay Property Limited — holds certain properties on behalf of the Group Ordinary 100%
+Northumberland Development Limited — holds certain properties on behalf of the Group Ordinary 100%
+Meldene Limited — holds certain properties on behalf of the Group Ordinary 100%
+Enfield Property Company Limited* — holds certain properties on behalf of the Group Ordinary 100%
+Tottenham Hotspur Football Co Limited* — holds certain properties on behalf of the Group Ordinary 100%
+Tottenham Hotspur Property Company Limited* — intermediary holding Company Ordinal 100%
+for other companies that hold property on behalf of the Group "v
+Tottenham Hotspur Stadium Limited — provider of football entertainment Ordinary 100%
+Tottenham Hotspur Stadium Development Limited* — intermediary holding Company Ordinary 100%
+Tottenham Hotspur Women Football Club Limited* — professional football Club Ordinary 100%
+Tottenham Hotspur Inc.* ~ dormant Ordinary 100%
+Iitd— A . .
+Tottenham Hotspur Hotel Ltd — part construction and ownership of a potential hotel on behalf of Ordinary 100%
+the Group .
+Tottenham Residential Ltd —- dormant Ordinary 100%
+Tottenham Hotspur Leisure Ltd —- dormant Ordinary 100%
+* Companies owned directly by Tottenham Hotspur Limited
+5. Inventory
+- 2025 2024
+£000 £000
+Inventory 13,280 10,866
+Inventory comprises merchandising goods held for resale. Cost of inventories recognised as an expense £17,176,000 (2024:
+£16,053,000)
+60
+Notes to the parent company accounts
+for the year ended 30 June 2025
+6. Trade and other receivables
+2025 2024
+: £'000 £'000
+Deferred tax (note 9) 1,409 2,014
+. Non-current assets 1,409 2,014
+Trade receivables 3,375 2,478
+Amounts owed by Group undertakings 357,230 233,188
+Other receivables 967 671
+Prepayments and accrued income 1,668 | -
+Other taxation 5,764 479
+Current assets 369,004 236,816
+370,413 238,830
+All amounts due from group undertakings are unsecured, interest free and repayable on demand.
+7. Current liabilities
+2025 2024
+£'000 £000
+Trade payables 4,421 3,303
+Lease liabilities 740 709
+Other payables 6,815 1,658
+Accruals and deferred income 10,664 7,371
+Taxation 451 15,511
+Amounts due to Group undertakings 77,051 41,907
+Trade and other payables 100,142 70,459
+FVTPL liabilities 52,066 28,646 :
+152,208 99,105
+All amounts owed to group undertakings are unsecured, interest free and repayable on demand.
+The Company’s bank overdraft forms part of the Group’s cash management arrangement.
+The ‘A’ ordinary shares issued to ENIC Sports Inc (“ENIC”) in June 2022 were converted into ordinary shares with fair value of
+£100,000,000 in December 2022 and resulted in the issuance of ordinary share capital which became part of the Club’s permanent
+share capital and treated as equity. All arrangement fees were expensed at the point of conversion.
+The issuance of ‘A’ ordinary shares conferred warrant rights to subscribe for ordinary shares in the Club. The warrant entitlement is
+initially capped through to 30 June 2023 by reference to market values determined in accordance with the instrument and thereafter
+equates to 5% of the fully diluted capital at the point of issue, stepping up thereafter from 31 March 2025 by 1.5% per annum,
+accruing for 10 years post issuance. Whilst these warrants may be exercised and converted, in a similar way to the ‘A’ ordinary shares
+and become permanent ordinary equity, the conversion only occurs on a change of control or they expire 50 years from issuance.
+They are measured at FVTPL until they are either exercised or expired. The warrant fair value calculation includes a number of level 3
+assumptions under the fair value hierarchy, each of which have been assessed as to whether or not there could be any reasonably
+possible changes in these assumptions. This assessment has resulted in an increase in the value of the warrant of £23,420,000. At the
+balance sheet date the estimated fair value of the warrants was £52,066,000. Based on this assessment, should there be a 5%
+increase or decrease in the assumptions relating to the valuation of the Company's shares, and a two year increase in the estimated
+exercise date of the warrants, the warrants could increase in value by an amount of £16,981,000 or decrease in value by an amount
+of £16,676,000. The estimated lifetime value attributed to the warrants is treated as a liability until its potential conversion into
+permanent equity, although in substance it is part of the permanent equity structure of the Club.
+Due to the total liability recognised being in excess of cash received, the difference has been accounted for in equity through the
+statement in changes of equity.
+61
+Notes to the parent company accounts
+for the year ended 30 June 2025
+8. Non-current liabilities
+2025, 2024
+£'000 £'000
+Deferred income 6,669 7,782
+Lease liabilities 1,571 2,311
+: 8,240 10,093
+Borrowing facilities .
+As at the balance sheet date the Company had the following undrawn committed bank borrowing facilities:
+2025 2024
+£000 £000
+Expiring in one year or less or on demand 5,000 55,000
+Expiring in more than one year but less than two years - -
+Expiring in more than two years but not more than five years 50,000 -
+Total undrawn committed borrowing facilities 55,000 55,000
+This is made up of undrawn bank borrowing facilities of £50,000,000 (2024: £50,000,000} and an overdraft of £5,000,000 (2024:
+£5,000,000).
+9. Deferred tax asset
+£7000
+Deferred taxation
+At 30 June 2024 - Deferred tax asset 2,014
+Charged to the profit and loss account {605)
+At 30 June 2025 - Deferred tax asset 1,409
+Deferred taxation has been provided as follows and is classified as a current asset:
+2025 2024
+£'000 £’000 :
+Accelerated capital allowances 1,409 2,014 .
+1,409 2,014
+62
+Notes to the parent company accounts
+for the year ended 30 June 2025
+10. Reconciliation of movements in equity .
+Capital
+Share capital Share premium. redemption Retained
+account account reserve earnings Total
+For the year ended 30 June 2025 £'000 £000 £000 €£’000 £'000
+: At 30 June 2024 11,452 133,980 644 372,028 518,104
+Share Issue 288 34,712 - - 35,000
+Total comprehensive income for the year : - - (15,180) (15,180)
+At 30 June 2025 11,740 168,692 644 356,848 $37,924
+The retained loss for the year, within the financial statements of the parent Company, was £15,180,000 (2024: £46,024,000 profit).
+As permitted by the Companies Act 2006 Section 408, no separate profit and loss account is presented. The audit fee of £59,000
+(2024: £50,000) is borne by another Group Company in the current and prior year. No fees were paid to the Company’s auditor or
+affiliated entities, relating to other services during the year. Refer to the Group financial statements for full disclosure of fees
+payable to the auditor.
+During the year the Company did not receive any dividends from wholly owned subsidiaries (2024: fnil). :
+The movements in the share capital, share premium and preference shares accounts are disclosed in note 19 to the consolidated
+financial statements.
+11. Lease liabilities
+2025 2024
+£'000 £000
+At 30 June 2024 (3,020) (2,052)
+Additions - (1,706)
+Interest expense related to lease liabilities (104) (148)
+Repayment of lease liabilities 813 886
+At 30 June 2025 (2,311) (3,020)
+Current lease liabilities (740) (709)
+. Non-current lease liabilities (1,571) (2,311)
+At 30 June 2025 (2,311) (3,020)
+All of the above lease liabilities relate to Land and Buildings.
+The maturity of lease liabilities at 30 June 25 were as follows:
+Lease Payments —_ Lease Payments
+2025 2024
+£000 £000
+Year to 2025 - (813)
+Year to 2026 (813) (813)
+Year to 2027 (813) (813)
+Year to 2028 (812) (812)
+Later years - (753)
+Effect of discounting : 127 984
+Lease liability (2,311) (3,020)
+63
+Notes to the parent company accounts
+for the year ended 30 June 2025
+Non-Executive Chairman
+PC Charrington .
+Executive Directors
+VG Venkatesham
+MJ Collecott
+Non-Executive Director
+J Turner (Chairman of the Audit and Remuneration Committees)
+EP Hinson
+Company Secretary
+MJ Collecott
+Registered office
+Lilywhite House
+782 High Road
+Tottenham
+London N17 OBX
+Registered number
+1706358
+Auditor
+Deloitte LLP
+Statutory Auditor
+London
+Bankers
+HSBC Bank ple
+70 Pall Mall
+London SW1Y SEZ
+Registrars
+MUFG Corporate Markets
+Central Square
+29 Wellington St
+Leeds LS1 4DL
+64
 

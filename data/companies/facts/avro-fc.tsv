@@ -1,4 +1,31 @@
 club_id	company_number	document	filing_date	made_up_date	concept	prefix	kind	period_start	period_end	instant	dimensions	unit	value
+avro-fc	14924163	mQeU7K6Nz8OwbEb_glqIEuPCVE45wlH5tSVtCLgS7F8	2025-02-04	2024-07-31	AccountingStandardsApplied	bus	text	2023-06-08	2024-07-31		AccountingStandardsDimension=FRS102		
+avro-fc	14924163	mQeU7K6Nz8OwbEb_glqIEuPCVE45wlH5tSVtCLgS7F8	2025-02-04	2024-07-31	AccountsStatusAuditedOrUnaudited	bus	text	2023-06-08	2024-07-31		AccountsStatusDimension=AuditExempt-NoAccountantsReport		
+avro-fc	14924163	mQeU7K6Nz8OwbEb_glqIEuPCVE45wlH5tSVtCLgS7F8	2025-02-04	2024-07-31	AccountsType	bus	text	2023-06-08	2024-07-31		AccountsTypeDimension=FilletedAccounts		
+avro-fc	14924163	mQeU7K6Nz8OwbEb_glqIEuPCVE45wlH5tSVtCLgS7F8	2025-02-04	2024-07-31	BalanceSheetDate	bus	text		2024-07-31	1			2024-07-31
+avro-fc	14924163	mQeU7K6Nz8OwbEb_glqIEuPCVE45wlH5tSVtCLgS7F8	2025-02-04	2024-07-31	BalanceSheetDate	bus	text		2024-07-31	1			31 July 2024
+avro-fc	14924163	mQeU7K6Nz8OwbEb_glqIEuPCVE45wlH5tSVtCLgS7F8	2025-02-04	2024-07-31	CountryFormationOrIncorporation	bus	text	2023-06-08	2024-07-31		CountriesRegionsDimension=England		
+avro-fc	14924163	mQeU7K6Nz8OwbEb_glqIEuPCVE45wlH5tSVtCLgS7F8	2025-02-04	2024-07-31	DateAuthorisationFinancialStatementsForIssue	core	text		2024-07-31	1			3 February 2025
+avro-fc	14924163	mQeU7K6Nz8OwbEb_glqIEuPCVE45wlH5tSVtCLgS7F8	2025-02-04	2024-07-31	DescriptionPrincipalActivities	bus	text	2023-06-08	2024-07-31				No description of principal activity
+avro-fc	14924163	mQeU7K6Nz8OwbEb_glqIEuPCVE45wlH5tSVtCLgS7F8	2025-02-04	2024-07-31	DirectorSigningFinancialStatements	core	text	2023-06-08	2024-07-31		EntityOfficersDimension=Director40		
+avro-fc	14924163	mQeU7K6Nz8OwbEb_glqIEuPCVE45wlH5tSVtCLgS7F8	2025-02-04	2024-07-31	EndDateForPeriodCoveredByReport	bus	text		2024-07-31	1			2024-07-31
+avro-fc	14924163	mQeU7K6Nz8OwbEb_glqIEuPCVE45wlH5tSVtCLgS7F8	2025-02-04	2024-07-31	EndDateForPeriodCoveredByReport	bus	text		2024-07-31	1			31 July 2024
+avro-fc	14924163	mQeU7K6Nz8OwbEb_glqIEuPCVE45wlH5tSVtCLgS7F8	2025-02-04	2024-07-31	EntityCurrentLegalOrRegisteredName	bus	text	2023-06-08	2024-07-31				Avro Community Football Club Limited
+avro-fc	14924163	mQeU7K6Nz8OwbEb_glqIEuPCVE45wlH5tSVtCLgS7F8	2025-02-04	2024-07-31	EntityDormantTruefalse	bus	text	2023-06-08	2024-07-31				true
+avro-fc	14924163	mQeU7K6Nz8OwbEb_glqIEuPCVE45wlH5tSVtCLgS7F8	2025-02-04	2024-07-31	EntityTradingStatus	bus	text	2023-06-08	2024-07-31		EntityTradingStatusDimension=EntityNoLongerTradingButTradedInPast		
+avro-fc	14924163	mQeU7K6Nz8OwbEb_glqIEuPCVE45wlH5tSVtCLgS7F8	2025-02-04	2024-07-31	LegalFormEntity	bus	text	2023-06-08	2024-07-31		LegalFormEntityDimension=PrivateLimitedCompanyLtd		
+avro-fc	14924163	mQeU7K6Nz8OwbEb_glqIEuPCVE45wlH5tSVtCLgS7F8	2025-02-04	2024-07-31	NameEntityOfficer	bus	text	2023-06-08	2024-07-31		EntityOfficersDimension=Director40		Mr Robert James Fuller
+avro-fc	14924163	mQeU7K6Nz8OwbEb_glqIEuPCVE45wlH5tSVtCLgS7F8	2025-02-04	2024-07-31	NameProductionSoftware	bus	text	2023-06-08	2024-07-31				VT Final Accounts
+avro-fc	14924163	mQeU7K6Nz8OwbEb_glqIEuPCVE45wlH5tSVtCLgS7F8	2025-02-04	2024-07-31	ReportTitle	bus	text	2023-06-08	2024-07-31				Report and Accounts
+avro-fc	14924163	mQeU7K6Nz8OwbEb_glqIEuPCVE45wlH5tSVtCLgS7F8	2025-02-04	2024-07-31	StartDateForPeriodCoveredByReport	bus	text		2023-06-07	1			2023-06-08
+avro-fc	14924163	mQeU7K6Nz8OwbEb_glqIEuPCVE45wlH5tSVtCLgS7F8	2025-02-04	2024-07-31	StatementComplianceWithApplicableReportingFramework	core	text	2023-06-08	2024-07-31				The accounts have been prepared under the historical cost convention.
+avro-fc	14924163	mQeU7K6Nz8OwbEb_glqIEuPCVE45wlH5tSVtCLgS7F8	2025-02-04	2024-07-31	StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime	direp	text	2023-06-08	2024-07-31				The accounts have been prepared and delivered in accordance with the special provisions applicable to companies subject to the small companies regime. A profit and loss account has not been delivered to the Registrar of Companies.
+avro-fc	14924163	mQeU7K6Nz8OwbEb_glqIEuPCVE45wlH5tSVtCLgS7F8	2025-02-04	2024-07-31	StatementThatCompanyEntitledToExemptionFromAuditUnderSection480CompaniesAct2006RelatingToDormantCompanies	direp	text	2023-06-08	2024-07-31				The directors are satisfied that the company is entitled to exemption from the requirement to obtain an audit under section 480 of the Companies Act 2006 relating to dormant companies.
+avro-fc	14924163	mQeU7K6Nz8OwbEb_glqIEuPCVE45wlH5tSVtCLgS7F8	2025-02-04	2024-07-31	StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct	direp	text	2023-06-08	2024-07-31				The directors acknowledge their responsibilities for complying with the requirements of the Companies Act 2006 with respect to accounting records and the preparation of accounts.
+avro-fc	14924163	mQeU7K6Nz8OwbEb_glqIEuPCVE45wlH5tSVtCLgS7F8	2025-02-04	2024-07-31	StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit	direp	text	2023-06-08	2024-07-31				The member has not required the company to obtain an audit in accordance with section 476 of the Act.
+avro-fc	14924163	mQeU7K6Nz8OwbEb_glqIEuPCVE45wlH5tSVtCLgS7F8	2025-02-04	2024-07-31	UKCompaniesHouseRegisteredNumber	bus	text	2023-06-08	2024-07-31				14924163
+avro-fc	14924163	mQeU7K6Nz8OwbEb_glqIEuPCVE45wlH5tSVtCLgS7F8	2025-02-04	2024-07-31	VersionProductionSoftware	bus	text	2023-06-08	2024-07-31				July 2024
+avro-fc	14924163	mQeU7K6Nz8OwbEb_glqIEuPCVE45wlH5tSVtCLgS7F8	2025-02-04	2024-07-31	_GoingConcernMaterialUncertainty	derived	text						none found
 avro-fc	14924163	pFGgCmZsIBSk7s19nHw8AkncJm06LI3L0J6uQzmGGpA	2026-05-05	2025-06-30	AccountingStandardsApplied	frs-bus	text	2024-08-01	2025-06-30		AccountingStandardsDimension=SmallEntities		
 avro-fc	14924163	pFGgCmZsIBSk7s19nHw8AkncJm06LI3L0J6uQzmGGpA	2026-05-05	2025-06-30	AccountingStandardsAppliedMatchesTaxonomyEntry-pointTruefalse	frs-bus	text	2024-08-01	2025-06-30				true
 avro-fc	14924163	pFGgCmZsIBSk7s19nHw8AkncJm06LI3L0J6uQzmGGpA	2026-05-05	2025-06-30	AccountsStatusAuditedOrUnaudited	frs-bus	text	2024-08-01	2025-06-30		AccountsStatusDimension=AuditExempt-NoAccountantsReport		

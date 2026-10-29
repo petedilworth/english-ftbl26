@@ -2,7 +2,7 @@ source: Companies House filing, derby-county-fc__1.pdf
 document: smg7rT0HdCIhp8JDFeK9st20Xg9vNGxjGsr5Th9GpN0
 made_up_date: 2025-06-30
 method: ocr
-pages_read: 12 of 36
+pages_read: 36 of 36
 
 Docusign Envelope 1D: 53E1A737-06E5-4F A2-8709-81C49839FCC7
 Registered number: 14190771
@@ -401,4 +401,788 @@ financial statements are prepared is consistent with the financial statements; a
 . the Strategic Report and the Directors' Report have been prepared in accordance with applicable legal
 requirements.
 Page 9
+Docusign Envelope ID: 53E1A737-06E5-4FA2-87D9-81C49839FCC7
+© GrantThornton
+INDEPENDENT AUDITOR'S REPORT TO THE MEMBERS OF DERBY COUNTY (THE RAMS) LIMITED
+(CONTINUED)
+Matter on which we are required to report under the Companies Act 2006
+In the light of the knowledge and understanding of the company and its environment obtained in the course of
+the audit, we have not identified material misstatements in the Strategic Report or the Directors’ Report.
+Matters on which we are required to report by exception
+We have nothing to report in respect of the following matters in relation to which the Companies Act 2006
+requires us to report to you if, in our opinion:
+. adequate accounting records have not been kept, or returns adequate for our audit have not been
+received from branches not visited by us; or
+
+. the financial statements are not in agreement with the accounting records and returns; or
+. certain disclosures of directors’ remuneration specified by law are not made; or
+. we have not received all the information and explanations we require for our audit.
+Responsibilities of directors
+As explained more fully in the Directors' Responsibilities Statement set out on page 5, the directors are
+responsible for the preparation of the financial statements and for being satisfied that they give a true and fair
+view, and for such internal control as the directors determine is necessary to enable the preparation of financial
+statements that are free from material misstatement, whether due to fraud or error.
+In preparing the financial statements, the directors are responsible for assessing the company's ability to
+continue as a going concern, disclosing, as applicable, matters related to going concern and using the going
+concern basis of accounting unless the directors either intend to liquidate the company or to cease operations,
+or have no realistic alternative but to do so.
+
+Page 10
+Docusign Envelope ID: 53E1A737-06E5-4FA2-87D9-81C49839FCC7
+re) GrantThornton
+INDEPENDENT AUDITOR'S REPORT TO THE MEMBERS OF DERBY COUNTY (THE RAMS) LIMITED
+(CONTINUED)
+
+Auditor's responsibilities for the audit of the financial statements
+
+Our objectives are to obtain reasonable assurance about whether the financial statements as a whole are free
+
+from material misstatement, whether due to fraud or error, and to issue an Auditor's Report that includes our
+
+opinion. Reasonable assurance is a high level of assurance, but is not a guarantee that an audit conducted in
+
+accordance with ISAs (UK) will always detect a material misstatement when it exists. .
+
+Misstatements can arise from fraud or error and are considered material if, individually or in the aggregate, they
+
+could reasonably be expected to influence the economic decisions of users taken on the basis of these financial
+
+statements.
+
+Irregularities, including fraud, are instances of non-compliance with laws and regulations. The extent to which
+
+our procedures are capable of detecting irregularities, including fraud, is detailed below:
+
+° We obtained an understanding of the legal and regulatory frameworks that are applicable to the company
+and determined that the most significant are those that relate to the reporting frameworks (FRS 102 and
+Companies Act 2006) and the relevant tax compliance regulations in the jurisdictions in which the
+company operates.
+
+° We enquired of management concerning the company's policies and procedures relating to:
+
+° the identification, evaluation and compliance with laws and regulations;
+
+° the detection and response to the risks of fraud; and
+
+° the establishment of internal controls to mitigate risks related to fraud or non-compliance with laws
+and regulations.
+
+° We enquired of management whether they were aware of any instances of non-compliance with laws and
+regulations or whether they had any knowledge of actual, suspected or alleged fraud.
+
+° We corroborated the results of our enquires to relevant supporting documentation.
+
+. We assessed the susceptibility of the company's financial statements to material misstatement, including
+how fraud might occur and the risk of management override of controls. Audit procedures performed by
+the engagement team included:
+
+° evaluation of the programmes and controls established to address the risks related to irregularities
+and fraud;
+
+° testing manual journal entries, in particular journal entries relating to management estimates and
+entries determined to be large or relating to unusual transactions; and
+
+° identifying and testing related party transactions.
+
+e These audit procedures were designed to provide reasonable assurance that the financial statements
+were free from fraud or error. The risk of not detecting a material misstatement due to fraud is higher
+than the risk of not detecting one resulting from error and detecting irregularities that result from fraud is
+inherently more difficult than detecting those that result from error, as fraud may involve collusion,
+deliberate concealment, forgery or intentional misrepresentations. Also, the further removed non-
+compliance with laws and regulations is from events and transactions reflected in the financial
+statements, the less likely we would become aware of it.
+
+Page 11
+Docusign Envelope ID: 53E1A737-06E5-4FA2-87D9-81C49839FCC7 :
+© GrantThornton
+INDEPENDENT AUDITOR'S REPORT TO THE MEMBERS OF DERBY COUNTY (THE RAMS) LIMITED
+(CONTINUED) .
+Auditor's responsibilities for the audit of the financial statements (continued)
+e The engagement leads assessment of the appropriateness of the collective competence and capabilities
+of the engagement team included consideration of the engagement team's:
+° understanding of, and practical experience with audit engagements of a similar nature and
+complexity through appropriate training and participation; .
+° knowledge of the industry in which the client operates;
+° understanding of the legal and regulatory requirements specific to the entity/regulated entity
+including;
+° the provisions of the applicable legislation;
+° the regulators rules and related guidance, including guidance issued by relevant authorities
+that interprets those rules; and
+° the applicable statutory provisions.
+A further description of our responsibilities for the audit of the financial statements is located on the Financial
+Reporting Council's website at: www.frc.org.uk/auditorsresponsibilities. This description forms part of our
+Auditor's Report.
+Use of our report
+This report is made solely to the company's members, as a body, in accordance with Chapter 3 of Part 16 of the
+Companies Act 2006. Our audit work has been undertaken so that we might state to the company's members
+those matters we are required to state to them in an Auditor's Report and for no other purpose. To the fullest
+extent permitted by law, we do not accept or assume responsibility to anyone other than the company and the
+company's members as a body, for our audit work, for this report, or for the opinions we have formed.
+Pot Sayers
+Philip Sayers BSc BFP FCA
+Senior Statutory Auditor
+for and on behalf of Grant Thornton UK LLP
+Statutory Auditor, Chartered Accountants
+Leicester
+Date: 24/10/2025
+: Page 12
+Docusign Envelope ID: 53£1A737-06E5-4FA2-87D9-81C49839FCC7
+DERBY COUNTY (THE RAMS) LIMITED
+STATEMENT OF COMPREHENSIVE INCOME
+FOR THE YEAR ENDED 30 JUNE 2025
+2025 2024
+Note £ £
+Turnover 4 31,868,196 19,399,532
+Direct operating costs {35,024,078) (24,876,351)
+Gross loss (3,155,882) (5,476,819)
+Administrative expenses (18,214,313) (13,327,732)
+Profit on disposal of player registrations and associated costs 10,303,542 4,632,588
+Operating loss 5 {11,066,653) (14,171,963)
+Interest payable and similar expenses 8 (3,375) (9,097)
+Loss before tax {11,070,028) (14,781,060)
+Taxation 9 (219,795) 66,186
+Loss for the financial year (11,289,823) (14,114,874)
+There were no recognised gains and losses for 2025 or 2024 other than those included in the Statement of
+Comprehensive Income.
+There was no other comprehensive income for 2025 (2024: ENil).
+The notes on pages 17 to 33 form part of these financial statements.
+Page 13
+Docusign Envelope ID: 53E1A737-06E5-4FA2-87D9-81C49839FCC7
+DERBY COUNTY (THE RAMS) LIMITED
+REGISTERED NUMBER: 14190771
+BALANCE SHEET
+AS AT 30 JUNE 2025
+2025 2024
+Note £ £
+Fixed assets
+Intangible assets 10 9,965,207 661,240
+Tangible assets 1 21,572,989 ; 21,479,930
+31,538,196 22,141,170
+Current assets
+Debtors: amounts falling due after more than
+one year 12 - 1,464,374
+Debtors: amounts falling due within one year = 12 7,807,905 6,073,943
+Cash at bank and in hand 1,616,503 1,096,012
+9,424,408 8,634,329
+Creditors: amounts falling due within one
+year 13 (79,496,016) (61,283,334)
+Net current liabilities (70,071,608) (52,649,005)
+Total assets less current liabilities (38,533,412) (30,507,835)
+Creditors: amounts falling due after more
+than one year 14 (3,198,395) (153,944)
+Provisions for liabilities
+Deferred tax 15 (3,135,873) (2,916,078)
+Net liabilities (44,867,680) (33,577,857)
+Capital and reserves
+Called up share capital 17 500,000 500,000
+Profit and loss account 18 (45,367,680) (34,077,857)
+Total equity (44,867,680) (33,577,857)
+The financial statements were approved and authorised for issue by the board and were signed on its behalf by:
+Dawid (Lowes
+DC Clowes
+Director
+Date: 24/10/2025
+The notes on pages 17 to 33 form part of these financial statements.
+Page 14
+Docusign Envelope ID: 53E1A737-06E5-4FA2-87D9-81C49839FCC7
+DERBY COUNTY (THE RAMS) LIMITED
+STATEMENT OF CHANGES IN EQUITY
+FOR THE YEAR ENDED 30 JUNE 2025
+Called up Profit and
+share capital loss account Total equity
+: £ £ £
+At 1 July 2023 500,000 (19,962,983) (19,462,983)
+Comprehensive loss for the year
+Loss for the year - (14,114,874) (14,114,874)
+Total comprehensive loss for the year - (14,114,874) (14,114,874)
+At 1 July 2024 500,000 (34,077,857) (33,577,857)
+Comprehensive loss for the year
+Loss for the year - (11,289,823) (11,289,823)
+Total comprehensive loss for the year - (11,289,823) (11,289,823)
+At 30 June 2025 500,000 (45,367,680) (44,867,680)
+The notes on pages 17 to 33 form part of these financial statements.
+Page 15
+Docusign Envelope !D: 53E1A737-06E5-4FA2-87D9-81C49839FCC7
+DERBY COUNTY (THE RAMS) LIMITED
+STATEMENT OF CASH FLOWS
+FOR THE YEAR ENDED 30 JUNE 2025
+2025 2024
+£ £
+Cash flows from operating activities
+Loss for the financial year (11,289,823) (14,114,874)
+Adjustments for:
+Amortisation of intangible assets 2,213,695 355,205
+Depreciation of tangible assets 1,652,742 1,674,346
+Loss on disposal of tangible assets 228 12,876
+Profit on disposal of intangible assets (10,303,542) (4,632,588)
+Interest paid 3,375 9,097
+Taxation charge/(credit) 219,795 (66, 186)
+Decrease/(increase) in debtors 1,347,447 = (1,387,190)
+(Decrease)/increase in creditors (894,792) 3,352,012
+Net cash used in operating activities . (17,050,875) (14,797,302)
+Cash flows from investing activities
+Intangible assets payments (6,077,164) (2,124,909)
+Intangible assets receipts 9,147,932 2,823,701
+Tangible asset payments (1,746,027) (901,275)
+Net cash generated from/(used in) investing activities 1,324,741 (202,483)
+. Cash flows from financing activities
+Repayment of other loans - (61,200)
+Loans provided by ultimate parent company 16,250,000 17,885,664
+interest paid (3,375) (9,097)
+Net cash generated from financing activities 16,246,625 11,815,367
+Net increase/(decrease) in cash and cash equivalents 520,491 (3, 184,418)
+Cash and cash equivalents at beginning of year 1,096,012 4,280,430
+Cash and cash equivalents at the end of year 1,616,503 1,096,012
+Cash and cash equivalents at the end of year comprise:
+Cash at bank and in hand 1,616,503 1,096,012
+The notes on pages 17 to 33 form part of these financial statements.
+Page 16
+Docusign Envelope !D: 53E1A737-06E5-4FA2-87D9-81C49839FCC7
+DERBY COUNTY (THE RAMS) LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+1. General information
+Derby County (The Rams) Limited is a private company limited by shares, incorporated in England and
+Wales. Its registered number is 14190771, and its registered head office is located at Ednaston Park
+Painters Lane, Ednaston, Ashbourne, England, DE6 3FA.
+2. Accounting policies
+2.1 Basis of preparation of financial statements
+The financial statements have been prepared under the historical cost convention unless otherwise
+specified within these accounting policies and in accordance with Financial Reporting Standard 102,
+the Financial Reporting Standard applicable in the UK and the Republic of Ireland and the
+Companies Act 2006.
+The company's functional and presentation currency is Sterling and all values are rounded to the
+nearest pound (£) except when otherwise stated.
+The preparation of financial statements in compliance with FRS 102 requires the use of certain
+critical accounting estimates. It also requires management to exercise judgement in applying the
+company's accounting policies (see note 3).
+The following principal accounting policies have been applied:
+2.2. Going concern
+The financial statements, which show net current liabilities, have been prepared on the going
+concern basis, which assumes that the company will continue in operational existence for the
+foreseeable future.
+The directors have prepared cashflow projections for the period to 31 October 2026 (a period of at
+least 12 months from the date of approval of these financial statements). These projections are
+prepared using worse case assumptions as regards to future expected revenues and divisional
+status of the football club. These forecasts indicate that additional working capital financing is
+required to enable the company to fund its business plan and to meet its liabilities as they fall due.
+The directors have obtained written confirmation from its ultimate parent undertaking, Clowes
+Developments (UK) Limited, of their intention to provide such financial support as is required by the
+company for its continued operation and have satisfied themselves that sufficient funds are available
+to provide such support.
+Given the financial projections and the support provided by the ultimate parent company, the
+directors consider it appropriate to prepare the financial statements on the going concern basis.
+Page 17
+Docusign Envelope ID: 53E1A737-06E5-4F A2-87D9-81C49839FCC7
+DERBY COUNTY (THE RAMS) LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+2. Accounting policies (continued)
+
+2.3. Turnover
+Turnover represents income receivable, net of discounts and VAT, and excluding transfer fees
+receivable in respect of the disposal of players’ registrations, arising in the normal course of the
+company's business.
+Ticketing revenue is recognised over the period of the football season as games are played.
+Sponsorship, hospitality and similar commercial income, including royalties, are recognised over the
+duration of their respective contracts.
+The fixed element of broadcasting revenue is recognised in proportion to the number of league
+games played, whilst the non-fixed element of TV receipts received for live coverage or highlights
+are taken when earned at the point of broadcast.
+Fees received in respect of loan players are included against wage costs within direct costs.
+Income from ticketing, sponsorship, and commercial contracts which have been received prior to the
+year end in respect of future football seasons is treated as deferred income.
+
+2.4 Operating leases: the company as lessee
+Rentals paid under operating leases are charged to profit or loss on a straight-line basis over the
+lease term.
+Benefits received and receivable as an incentive to sign an operating lease are recognised on a
+straight-line basis over the lease term, unless another systematic basis is representative of the time
+pattern of the lessee’s benefit from the use of the leased asset.
+
+2.5 Grant income
+Grants are accounted under the accruals model as permitted by FRS 102. Grants relating to
+expenditure on tangible fixed assets are credited to profit or toss at the same rate as the
+depreciation on the assets to which the grant relates. The deferred element of grants is included in
+creditors as deferred income.
+Grants of a revenue nature are recognised in the Statement of Comprehensive Income in the same
+period as the related expenditure. :
+
+2.6 Pensions
+Defined contribution pension plan
+The company operates a defined contribution plan for its employees. A defined contribution plan is a
+pension plan under which the company pays fixed contributions into a separate entity. Once the
+contributions have been paid the company has no further payment obligations.
+The contributions are recognised as an expense in profit or loss when they fall due. Amounts not
+paid are shown in accruals as a liability in the Balance Sheet. The assets of the plan are held
+separately from the company in independently administered funds.
+
+Page 18
+Docusign Envelope ID: 53E1A737-06E5-4FA2-87D9-81C49839FCC7
+DERBY COUNTY (THE RAMS) LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+2. Accounting policies (continued)
+2.7 Finance costs
+Finance costs are charged to profit or loss over the term of the debt using the effective interest
+method so that the amount charged is at a constant rate on the carrying amount. Issue costs are
+initially recognised as a reduction in the proceeds of the associated capital instrument.
+2.8 Current and deferred taxation
+The tax expense for the year comprises current and deferred tax. Tax is recognised in profit or loss
+except that a charge attributable to an item of income and expense recognised as other
+comprehensive income or to an item recognised directly in equity is also recognised in other
+comprehensive income or directly in equity respectively.
+The current income tax charge is calculated on the basis of tax rates and laws that have been
+enacted or substantively enacted by the Balance Sheet date in the countries where the company
+operates and generates income.
+Deferred tax balances are recognised in respect of all timing differences that have originated but not
+reversed by the Balance Sheet date, except that:
+e The recognition of deferred tax assets is limited to the extent that it is probable that they will
+be recovered against the reversal of deferred tax tiabilities or other future taxable profits; and
+. Any deferred tax balances are reversed if and when all conditions for retaining associated tax
+allowances have been met.
+
+Deferred tax balances are not recognised in respect of permanent differences except in respect of
+business combinations, when deferred tax is recognised on the differences between the fair values
+of assets acquired and the future tax deductions available for them and the differences between the
+fair values of liabilities acquired and the amount that will be assessed for tax. Deferred tax is
+determined using tax rates and laws that have been enacted or substantively enacted by the
+Balance Sheet date.
+
+Page 19
+Docusign Envelope ID: 53E1A737-06E5-4FA2-87D9-81C49839FCC7
+DERBY COUNTY (THE RAMS) LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+2. Accounting policies (continued)
+2.9 Intangible assets
+Player registrations, compensation payments and levies and associated costs
+The costs associated with the acquisition of players’ registrations and compensation payments are
+capitalised as an intangible asset at the date of acquisition and are amortised over the period of the
+respective contract, including extensions there to.
+Where a contract is renegotiated, the unamortised costs, together with the new costs relating to the
+contract extension, are amortised over the term of the new contract.
+( ;
+Under the conditions of certain transfer agreements, further fees may become payable in the event
+of players or the company achieving specified outcomes. Costs are capitalised where the directors
+consider the payment of such fees to be probable. Future fees, where payment, is not probable are
+considered to be contingent liabilities.
+Internally generated intangible assets are held at Nil value. Any external costs incurred in extensions
+to a player's original contract are capitalised and amortised over the period of the player's extended
+contract.
+The profit or loss arising out of the disposal of players’ registrations and compensation payments
+represent the difference between the consideration receivable, net of any transaction costs, and the
+unamortised cost of the intangible asset.
+Computer software
+Computer software is stated at historical cost less accumulated amortisation and any accumulated
+impairment losses.
+Amortisation is provided on a straight line basis at 25% to 33% per annum.
+Trademarks
+Trademarks are stated at historical cost less accumulated amortisation and any accumulated
+impairment losses.
+Amortisation is provided on a straight line basis at 10% per annum.
+Page 20
+Docusign Envelope ID: 53E1A737-06E5-4FA2-87D9-81C49839FCC7
+DERBY COUNTY (THE RAMS) LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+: FOR THE YEAR ENDED 30 JUNE 2025
+2. Accounting policies (continued)
+2.10 Tangible fixed assets
+Tangible fixed assets under the cost model are stated at historical cost less accumulated
+depreciation and any accumulated impairment losses. Historical cost includes expenditure that is
+directly attributable to bringing the asset to the location and condition necessary for it to be capable
+of operating in the manner intended by management.
+Depreciation is charged so as to allocate the cost of assets less their residual value over their
+estimated useful lives, using the straight-line method.
+Depreciation is provided on the following basis:
+Leasehold improvements - 2% to 10%
+Fixtures and fittings - 10% to 25%
+Equipment and machinery - 10% to 20%
+Computer hardware - 25%
+Depreciation is not charged on assets under construction.
+The assets’ residual values, useful lives and depreciation methods are reviewed, and adjusted
+prospectively if appropriate, or if there is an indication of a significant change since the last reporting
+date.
+Gains and losses on disposals are determined by comparing the proceeds with the carrying amount
+and are recognised in profit or loss.
+2.11 Impairment of intangible and tangible assets
+At each Balance Sheet date, the company reviews the carrying amounts of its tangible and
+intangible assets as included in cash generating units to determine whether there is any indication
+that those assets have suffered an impairment loss. If any such indication exists, the recoverable
+amount of the asset is estimated in order to determine the extent of the impairment loss. The
+recoverable amount is the higher of fair value less costs to sell and the value in use. Any impairment
+loss is recognised immediately as an expense.
+2.12 Cash and cash equivalents
+Cash is represented by cash in hand and deposits with financial institutions repayable without
+penalty on notice of not more than 24 hours.
+In the Statement of Cash Flows, cash and cash equivalents are shown net of bank overdrafts that
+are repayable on demand and form an integral part of the company's cash management.
+Page 21
+Docusign Envelope ID: 53E1A737-06E5-4FA2-87D9-81C49839FCC7
+DERBY COUNTY (THE RAMS) LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+2. Accounting policies (continued)
+2.13 Provisions for liabilities
+Provisions are recognised when an event has taken place that gives rise to a legal or constructive
+obligation, a transfer of economic benefits is probable and a reliable estimate can be made.
+Provisions are measured as the best estimate of the amount required to settle the obligation, taking
+into account the related risks and uncertainties.
+Increases in provisions are generally charged as an expense to profit or loss.
+2.14 Financial instruments
+Basic financial assets
+Basic financial assets, which include trade and other debtors, cash and bank balances, are initially
+measured at their transaction price including transaction costs and are subsequently carried at their
+amortised cost using the effective interest method, less any provision for impairment, unless the
+arrangement constitutes a financing transaction, where the transaction is measured at the present
+value of the future receipts discounted at a market rate of interest.
+Discounting is omitted where the effect of discounting is immaterial. The company's cash and cash
+equivalents, trade and most other debtors due within the operating cycle fall into this category of
+financial instruments.
+Financial liabilities
+Financial liabilities and equity instruments are classified according to the substance of the
+contractual arrangements entered into. An equity instrument is any contract that evidences a
+residual interest in the assets of the company after the deduction of all its liabilities.
+Basic financial liabilities, which include trade and other creditors, bank loans and other loans are
+initially measured at their transaction price after transaction costs. When this constitutes a financing
+transaction, whereby the debt instrument is measured at the present value of the future receipts
+discounted at a market rate of interest. Discounting is omitted where the effect of discounting is
+immaterial.
+Debt instruments are subsequently carried at their amortised cost using the effective interest rate
+method.
+Trade creditors are obligations to pay for goods and services that have been acquired in the ordinary
+course of business from suppliers. Trade creditors are classified as current liabilities if the payment
+is due within one year. If not, they represent non-current liabilities. Trade creditors are initially
+recognised at their transaction price and subsequently are measured at amortised cost using the ©
+effective interest method. Discounting is omitted where the effect of discounting is immaterial.
+Page 22
+Docusign Envelope ID: 53E1A737-06E5-4FA2-87D9-81C49839FCC7
+DERBY COUNTY (THE RAMS) LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+3. Judgements in applying accounting policies and key sources of estimation uncertainty
+The preparation of the financial statements requires management to make judgements, estimates and
+assumptions that affect the application of accounting policies and reported amounts of assets, liabilities,
+income and expenses. Actual results may differ from these estimates.
+Estimates and underlying assumptions are reviewed on an ongoing basis. Estimates are based on
+historical experience and other assumptions that are considered reasonable in the circumstances. The
+actual amount or values may vary in certain instances from the assumptions and estimates made.
+Changes will be recorded, with corresponding effect in the financial statements, when, and if, better
+information is obtained.
+Critical judgements and sources of estimation uncertainty that management have made in the process of
+applying accounting policies disclosed herein and that have a significant effect on the amounts
+recognised in the financial statements relate to the following:
+Estimates .
+(a) Impairment of intangible assets (see note 10)
+The company performs an impairment review on intangible assets, including player registrations, if
+adverse events indicate that the amortised carrying value of the asset may not be recoverable. Whilst no
+individual player can be separated from the single cash generating unit, being the operations of the
+company as a whole, there may be certain circumstances where a player is taken out of the cash
+generating unit, when it becomes clear that they will not play for the club's first team again. For example,
+where a player sustains a career threatening injury or is permanently removed from the first team squad
+for another reason. If such circumstances were to arise, the carrying value of the player would be
+assessed against the company's best estimate of the player's fair value less any costs to sell. No players
+fall into this category for the current year.
+Judgements
+In the process of preparing the financial statements, no significant judgements were applied.
+4. Turnover
+An analysis of turnover by class of business is as follows:
+2025 2024
+£ £
+Ticketing 9,585,034 7,603,814
+Hospitality, events and catering 6,697,031 5,571,645
+Sponsorship 2,005,015 1,645,253
+Other revenue 1,593,583 1,635, 156
+League and broadcasting 11,987,533 2,943,664
+31,868,196 19,399,532
+All turnover arose within the United Kingdom.
+Page 23
+Docusign Envelope ID: 53E1A737-06E5-4FA2-87D9-81C49839FCC7
+DERBY COUNTY (THE RAMS) LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025 .
+5. Operating loss
+The operating loss is stated after charging/(crediting):
+2025 2024
+£ £
+Depreciation of tangible fixed assets 1,652,742 1,674,346
+Amortisation of intangible fixed assets 2,213,695 355,205
+Operating lease rentals 1,600,685 1,018,818
+Profit on disposal of players' registrations, levies and associated costs. (10,303,542) (4,632,588)
+Profit on disposal of players’ registrations, levies and associated costs predominantly relates to the sale
+of Eiran Cashin, plus sell on receipts received in relation to Liam Delap, Jayden Bogle, Morgan Whittaker,
+Jason Knight and others.
+6. Auditor's remuneration
+During the year, the company obtained the following services from the company's auditor:
+. : 2025 2024
+£ £
+Fees payable to the company's auditor for the audit of the company's
+financial statements 68,250 65,000
+The company has taken advantage of the exemption not to disclose amounts paid for non-audit services
+as these are disclosed in the consolidated accounts of the ultimate parent company.
+Page 24
+Docusign Envelope ID: 53E1A737-06E5-4F A2-8709-81C49839FCC7
+DERBY COUNTY (THE RAMS) LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+7. Employees
+Staff costs were as follows:
+2025 2024
+. £ £
+Wages and salaries 27,936,256 19,634,487
+Social security costs 3,382,364 2,047,693
+Cost of defined contribution scheme 215,676 298,267
+. 31,534,296 21,980,447
+The directors did not receive any remuneration for their services to the company during the year.
+Key management personnel received remuneration of £1,044,859 (2024: £598,593) and the company
+made pension contributions on their behalf of £25,196 (2024: £26,997) for the period.
+The average monthly number of employees, including the directors, during the year was as follows:
+2025 2024
+No. No.
+Playing staff 72 63 ;
+Non-playing staff 154 138
+226 201
+8. Interest payable and similar expenses
+2025 2024
+£ £
+Football League Pension and Life Assurance Scheme interest 3,235 9,097
+Other interest payable 140 -
+3,375 9,097
+Page 25
+Docusign Envelope ID: 53E1A737-06E5-4FA2-87D9-81C49839FCC7 :
+DERBY COUNTY (THE RAMS) LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+9. Taxation
+2025 2024
+£ £
+Total current tax - -
+Deferred tax
+Origination and reversal of timing differences 219,795 (66, 186)
+Total deferred tax 219,795 (66, 186)
+Taxation on loss on ordinary activities 219,795 (66, 186)
+: Factors affecting tax charge for the year
+: The tax assessed for the year is higher than (2024: higher than) the standard rate of corporation tax in
+the UK of 25% (2024: 25%). The differences are explained below:
+2025 2024
+£ £
+Loss on ordinary activities before tax (11,070,028) (14,781,060)
+Loss on ordinary activities multiplied by standard rate of corporation tax in
+the UK of 25% (2024: 25%) (2,767,507) (3,545,265)
+Effects of:
+
+. Fixed asset differences 290 79
+Expenses not deductible for tax purposes 6,166 47,352
+Income not taxable for tax purposes (12,474) -
+Other permanent differences 9,000 9,000
+Adjustments to tax charge in respect of prior periods (deferred tax) 895,888 713,751
+Group relief 2,088,432 2,708,897
+Total tax credit for the year 219,795 (66, 186)
+Factors that may affect future tax charges
+In the Spring Budget 2021, the UK Government announced that from 1 April 2023 the corporation tax rate
+would increase to 25% (rather than remaining at 19%, as previously enacted). There has been no change
+to corporation tax rates for the financial year end date. For the current financial year the weighted
+average tax rate is 25%. Deferred taxes at the Balance Sheet date have been measured using these
+enacted tax rates and reflected in these financial statements.
+
+Page 26
+Docusign Envelope ID: 53E1A737-06E5-4FA2-87D9-81C49839FCC7
+DERBY COUNTY (THE RAMS) LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+10. Intangible assets
+Transfer
+fee levies :
+and
+Player associated Compensation Computer
+Registrations costs payments Trademarks — software Total
+£ £ £ £ £ £
+Cost
+At 1 July 2024 - 192,677 865,000 3,990 83,100 1,144,767
+Additions 9,793,676 1,460,887 525,000 - 199,525 11,979,088
+. Disposals - (225,640) (865,000) - - (1,090,640)
+At 30 June 2025 9,793,676 1,427,924 525,000 3,990 282,625 12,033,215
+Amortisation
+At 1 July 2024 - 66,857 403,667 3,990 9,013 483,527
+Charge for year 1,440,346 435,788 195,024 . 142,537 2,213,695
+On disposais - (90,991) (538,223) - - (629,214)
+At 30 June 2025 1,440,346 411,654 60,468 3,990 151,550 2,068,008
+Net book value .
+At 30 June 2025 8,353,330 1,016,270 464,532 - 131,075 9,965,207
+At 30 June 2024 - 125,820 461,333 - 74,087 661,240
+Additions to player registrations, transfer levies and associated costs relate to acquisitions of senior team
+playing assets, plus appearance related contractual payments.
+Amortisation on intangible assets is charged to administrative expenses in profit or loss.
+: Page 27
+Docusign Envelope ID: 53E1A737-06E5-4FA2-87D9-81C49839FCC7
+DERBY COUNTY (THE RAMS) LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+11. Tangible fixed assets
+Long-term Fixtures Equipment Assets
+leasehold and and Computer under
+property fittings machinery equipment construction Total
+£ £ £ £ £ £
+Cost
+At 1 July 2024 21,769,799 1,267,911 1,244,875 347,040 - 24,629,625
+Additions 32,946 537,810 293,232 133,201 748,840 1,746,029
+Disposals - - - (228) - (228)
+At 30 June 2025 21,802,745 1,805,721 1,538,107 480,013 748,840 26,375,426
+Depreciation
+At 1 July 2024 2,242,901 369,640 441,389 95,765 - 3,149,695
+Charge for year 1,114,496 242,060 197,885 98,301 - 1,652,742
+At 30 June 2025 3,357,397 611,700 639,274 194,066 - 4,802,437
+Net book value .
+At 30 June 2025 18,445,348 1,194,021 898,833 285,947 748,840 21,572,989
+At 30 June 2024 19,526,898 898,271 803,486 251,275 - 21,479,930
+Page 28
+Docusign Envelope ID: 53E1A737-06E5-4FA2-87D9-81C49839FCC7
+DERBY COUNTY (THE RAMS) LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+12. Debtors
+2025 2024
+£ £
+Due after more than one year
+Player registration fees receivable - 1,464,374
+2025 2024
+£ £
+Due within one year
+Trade debtors 443,006 1,343,387
+Player registration fees receivable 5,045,783 1,964,373
+Other debtors 183,548 243,151
+Prepayments and accrued income 2,135,568 2,523,032
+7,807,905 6,073,943
+No impairment has been recognised against trade debtors during the year or prior year. An impairment
+charge of £10,000 (2024: £748) has been recognised in the profit and loss account for the year.
+Amounts due under player registrations as at 30 June 2025 relate to the sale of Eiran Cashin, as well as
+a sell on receipt for Omari Kellyman, following his transfer to Aston Villa from Chelsea.
+13. Creditors: amounts falling due within one year
+2025 2024
+£ £
+Trade creditors 2,915,228 1,709,475
+Player registration and agent fees payable 2,931,309 85,649
+Other creditors 648,513 721,643
+Accruals and deferred income 8,437,331 9,242,626
+Other taxation and social security 1,481,985 1,598,254
+Amounts owed to group companies 63,081,650 47,925,687
+79,496,016 61,283,334
+Amounts owed to group companies include £63,081,650 owed to Clowes Developments (UK) Limited,
+the company's ultimate parent, which relates to operational funding provided in the year. It is the intention
+that some of the amount owed to the ultimate parent company will be capitalised into equity.
+Amounts owed to group companies are non-interest bearing, unsecured and repayable on demand.
+Page 29
+Docusign Envelope ID: 53E1A737-06E5-4F A2-87D9-81C49839FCC7
+DERBY COUNTY (THE RAMS) LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+14. Creditors: amounts falling due after more than one year
+2025 2024
+£ £
+Player registration and agent fees payable 3,113,197 56,933
+Other creditors 85,198 97,011
+3,198,395 153,944
+15. Deferred taxation
+2025 2024
+£ £
+At beginning of year (2,916,078) (2,982,264)
+(Charged)/credited to profit or loss (219,795) 66,186 .
+At end of year (3,135,873) (2,916,078)
+Deferred tax assets and liabilities have been offset on the premise the company has a legally enforceable
+right to do so and it intends to realise the asset and liability simultaneously.
+The provision for deferred taxation is made up as follows:
+2025 2024
+, £ £
+Fixed asset timing differences (3,873,877) (3,827,406)
+Short term timing differences 44,401 14,929
+Losses and other deductions 693,603 896,399
+(3,135,873) (2,916,078)
+Page 30
+Docusign Envelope ID: 53E1A737-06E5-4FA2-87D9-81C49839FCC7
+DERBY COUNTY (THE RAMS) LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+16. Analysis of net debt
+At 1 July At 30 June
+2024 Cash flows 2025
+£ £ £
+Cash at bank and in hand 1,096,012 520,491 1,616,503
+Debt due within 1 year (46,800,686) (16,704,936) (63,505,622)
+(45,704,674) (16,184,445) (61,889,119)
+17. Share capital
+2025 2024
+£ £
+Allotted, called up and fully paid .
+500,000 (2024: 500,000) Ordinary shares of £1.00 each 500,000 500,000
+There is a single class of ordinary shares. There are no restrictions on dividends and the repayment of
+capital.
+18. Reserves
+Profit and loss account
+The profit and loss account represents the accumulated profits, losses and distributions of the company.
+19. Contingent liabilities
+Additional payments amounting to a maximum of £4,040,000 (2024: £225,000) will become payable if
+certain conditions in transfer and players’ contracts at 30 June 2025 are fulfilled. Additional signing on
+fees up to a maximum of £1,042,250 (2024: £741,000) will become payable to players subject to the
+terms and conditions of their contracts being fulfilled.
+_ Page 31
+Docusign Envelope ID: 53E1A737-06E5-4F A2-87D9-81C49839FCC7
+DERBY COUNTY (THE RAMS) LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+20. Pension commitments
+The company participates in the Football League Pension and Life Assurance Scheme (the 'Scheme’).
+The Scheme is a funded multi-employer defined benefit scheme, with 92 participating employers, and
+where members may have periods of service attributable to several participating employers. The
+company is unable to identify its share of the assets and liabilities of the Scheme and therefore accounts
+for its contributions as if they were paid to a defined contribution scheme.
+The last actuarial valuation was carried out at 31 August 2023 where the total deficit on the on-going
+valuation basis was £20.6m.
+The accrual of the benefits ceased within the Scheme on 31 August 1999, therefore there are no
+contributions relating to the current accrual. The company pays monthly contributions based on a notional
+split of the total expenses and deficit contributions of the Scheme. The liability outstanding as at 30 June
+2025 was £294,318 (2024: £362,858) and contributions during the period amounted to £97,146 (2024:
+£118,298). As the Scheme is closed to accrual, there are no additional costs associated with the accruing
+of members’ future benefits. In the case of the football club being relegated from the football league, or
+the company ceasing to trade, and being unable to settle its debt then the remaining clubs may, in
+exceptional circumstances, have to share the deficit.
+The company also operates a stakeholder defined contribution pensions scheme for qualifying
+employees and directors. The assets of the scheme are administered by an independent pensions
+provider.
+Total pension payments recognised as an expense during the period amounted to £215,676 (2024:
+£298,267). Pension contributions outstanding as at 30 June 2025 totalled £42,069 (2024: £60,909).
+21. Commitments under operating leases
+At 30 June 2025 the company had future minimum lease payments due under non-cancellable operating
+leases for each of the following periods:
+2025 2024
+£ £
+Not later than 1 year 1,610,563 1,627,585
+Later than 1 year and not later than 5 years 6,458,278 6,326,003
+Later than 5 years 18,825,000 20,400,000
+26,893,841 28,353,588
+22. Related party transactions
+The company has taken advantage of the exemption available in FRS102 of disclosing transactions with
+other companies that are wholly owned within its group.
+During the period the company made sales and recharges of £170,719 (2024: £76,711) and made rent
+contributions and received services of £52,075 (2024: £82,422) with Derby County Community Trust, a
+charitable organisation, for which a member of the key management of the company sits on the charity's
+board. As at 30 June 2025 the company owed Derby County Community Trust £Nil (2024: £71,505) and
+was owed £33,297 (2024: £28,957).
+Page 32
+Docusign Envelope ID: 53E1A737-06E5-4FA2-87D9-81C49839FCC7
+DERBY COUNTY (THE RAMS) LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+23. Subsequent events
+Subsequent to the year end the company acquired player registrations, inclusive of levies and agent fees,
+of £10,901,347 (2024: £2,925, 175) and received £745,417 (2024: £353,014) in relation to the fulfilment of
+contractual conditions for player transfers.
+24. Controlling party
+The immediate parent undertaking is Derby County (The Rams) Holdings Limited and ultimate parent
+undertaking is Clowes Developments (UK) Limited by virtue of owning 100% of the issued share capital
+of Derby County (The Rams) Holdings Limited. The registered office of the immediate and ultimate
+parent undertaking is Ednaston Park, Painters Lane, Ednaston, Ashbourne, DE6 3FA.
+The smallest and largest group of undertakings, of which the company is a member, for which
+consolidated financial statements are prepared are headed by Clowes Developments (UK) Limited.
+Copies of the group accounts are publicly available from Companies House.
+Page 33
 

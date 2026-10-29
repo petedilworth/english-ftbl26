@@ -2,7 +2,7 @@ source: Companies House filing, queens-park-rangers-fc__1.pdf
 document: j_pDhGgB4C2N0kXgwmq6Bx1-4bXqllr11ZVZqe6jj40
 made_up_date: 2025-05-31
 method: ocr
-pages_read: 12 of 22
+pages_read: 22 of 22
 
 Company Registration Number 00060094
 <q
@@ -469,4 +469,406 @@ Company Registration Number: 00060094
 :
 The notes on pages 12 to 20 form part of these financial statements.
 10
+Queens Park Rangers Football & Athletic Club, Limited, (The)
+Statement of changes in equity
+Year ended 31 May 2025 .
+Capital
+Share Share redemption Profit and .
+° . capital premium reserve loss account Total
+£'000 £'000 £'000 £'000 £'000
+Equity shareholders’ funds as at 1 June 2023 270 295 30 (2,910) (2,315)
+. Profit and total comprehensive income for the year - - - 172 172
+Equity shareholders’ funds as at 31 May 2024 270 295 30 (2,738) (2,143)
+Profit and total comprehensive income for the year _ - - 200 200
+Equity shareholders’ funds as at 31 May 2025 270 295 30 (2,538) (1,943)
+The notes on pages 12 to 20 form part of these financial statements.
+1
+Queens Park Rangers Football & Athletic Club, Limited, (The)
+Notes to the financial statements
+Year ended 31 May 2025
+1. Accounting policies
+a) Statement of compliance
+Queens Park Rangers Football & Athletic Club, Limited, (The) is a private Company limited by shares and a wholly
+owned subsidiary of QPR Holdings Limited, incorporated in England and Wales, No: 00060094. The Registered
+Office is Matrade Loftus Road Stadium, South Africa’ Road, London, W12 7PJ.
+b) Basis of accounting
+The financial statements have been prepared in accordance with Financial Reporting Standard 102 as issued by
+the Financial Reporting Council. The financial statements have been prepared on the historical cost basis. The
+principal accounting policies that have been applied consistently by the Company to all periods presented in these
+financial statements are set out below. The financial statements are prepared in sterling, rounded to the nearest
+thousand, which is the functional currency of the entity.
+The preparation of financial statements in conformity with FRS 102 requires the use of certain critical accounting
+estimates. It also requires management to exercise its judgement in the process of applying the accounting policies
+selected for use by the Company. The areas involving a higher degree of judgement or complexity, or areas where
+assumptions and estimates are significant to the financial statements are disclosed below. Use of available
+information:and application of judgement are inherent in the formation of estimates. Actual outcomes in the future
+could differ from such estimates.
+c) Going concern
+The Company is a subsidiary of QPR Holdings Limited (“the Group”). As of 31 May 2025, the Company reported a
+profit of £200k for the year then ended and had net current liabilities of £5.9m (2024 net current assets - £2.6m).
+The Company’s going concern assessment has been performed as part of the Group's going concern assessment
+. for the period to 31 May 2027 ("the going concern assessment period”). The Group and the Company meet its day—
+to-day working capital requirements through the use of operating cash flows and loans provided by the ultimate
+controlling party of the Group (Total Soccer Growth Holdings Limited) and other main shareholders (QPR Newco
+LLC and Sea Dream Limited).
+The Group's business activities, together with the factors likely to affect its future development, performance and
+position are set out in the Directors’ Report and the Strategic Report. .
+The Group and the Company continue to rely principally on the ultimate controlling party and other main
+shareholders for the provision of additional funding either as equity or loans, together with the non-recall of loans
+already advanced to the Group.
+The directors, based on cash flow projections prepared by management and through confirmation of continuing
+support from the groups’ main shareholders have a reasonable expectation that the Company has adequate
+resources to continue in operational existence for the foreseeable future.
+Based on past and current practice, and the existence of the deeds, the directors have a reasonable expectation
+that the financial support required from the shareholders will be forthcoming. As a result, the directors believe that
+the Group (including the Company) will continue as a going concern for a period of at least until 31 May 2027 and
+have therefore prepared the financial statements on a going concern basis.
+The financial statements do not include any adjustments that would result from the basis of preparation being
+inappropriate. :
+d) Disclosure exemptions
+The Company has taken advantage of the following disclosure exemptions in preparing these financial statements,
+as permitted by the FRS 102 "The Financial Reporting Standard applicable in the UK and Republic of Ireland”:
+° the requirements of Section 7 Statement of Cash Flows;
+° the requirement of section 11 Financial instruments
+. the requirements of Section 33 Related Party Disclosures paragraph 33.7.
+This information is included in the accounts of QPR Holdings Limited whose consolidated financial statements are
+publicly available and in whose financial statements the Company is consolidated. The location from which the
+financial statements are available is shown in note 14.
+12
+Queens Park Rangers Football & Athletic Club, Limited, (The)
+Notes to the financial statements
+Year ended 31 May 2025
+1. Accounting policies (continued) : .
+e) Revenue
+Revenue is measured at the fair value of the consideration received or receivable and represents amounts
+receivable in the normai course of business. Revenue comprises the management fees charged from the parent
+Company and income in respect of the broadcasting rights earned. Other income relates to other football related
+activities.
+f) Player costs and transactions °
+(i) initial capitalisation
+The costs associated with the acquisition of player registrations are capitalised as intangible fixed assets.
+Any intangible assets acquired on deferred terms are recorded at the fair value at the date of acquisition.
+The fair value represents the net present value of the costs of acquiring player registrations.
+(ii) Amortisation
+These costs are fully amortised on a straight-line basis in equal annual instalments over the period of the
+respective contracts. - -
+(iii) Contingent consideration
+Under the conditions of certain transfer agreements, further fees will be payable to the vendors in the event
+of the players concerned making a certain number of First Team appearances. Liabilities in respect of
+these additional transfers are accounted for, as provisions, when it becomes probable that the number of
+appearances will be achieved or the specified future events will occur.
+(iv) Impairment
+The company will perform an impairment review on the intangible assets if events or changes in
+circumstances indicate that the carrying amount of the player may not be recoverable. The company
+. compares the carrying amount of the asset with its recoverable amount. The company does not consider
+that it is possible to determine the value in use of an individual football player in isolation as that player
+(unless via a sale or insurance recovery) cannot generate cash flows on his own.
+Furthermore, the Company also considers that all of the players are unable to generate cash flows even when
+. considered together. Accordingly, the Company, and the group, considers the smallest cash-generating unit to
+contain all the other First Team players, the Stadium and the training facilities.
+The Company calculates the value in use of this cash-generating unit by discounting estimated expected future
+cash flows (being the pre-player trading cash flows generated by the Company's existing operations and any future
+capital expenditure on the First Team squad). The Company compares this with its assessment of the fair value
+less costs to sell off all of the First Team players and the higher of these two numbers is deemed to be the
+tecoverable amount.
+In certain rare instances there may be an individual player whom the Company does not consider to be part of the
+First Team squad and who will therefore not contribute to the future cash flows earned by the cash-generating unit.
+This is normally due to a permanent career-threatening injury/condition or due to a serious and permanent fall out
+with the senior football management and Directors which, as a consequence, means the Company consider it
+highly unlikely he will ever play for the First Team again. In this situation, the carrying value of the player is removed
+from the carrying value of players assessed as part of the cash-generating unit referred to above and instead this
+player will be assessed for impairment in isolation by considering his carrying value with the Company's best
+estimate of his fair value less costs to sell. The Company estimate this using one of the following sources
+« — in the case of a player who has permanently fallen out with the senior football management and
+directors, either the agreed selling price in the event the player has been transferred subsequent to
+the year-end; or .
+. e — Ifthere have not been any bids for the player, management's best estimation of the disposal proceeds
+(less costs) of the player on an arm’s length basis. This is determined by the senior football
+management in conjunction with the Directors who will use the outcome of recent player disposals
+(by both the Company and other football clubs) as a basis for their estimation. Any costs to sell, such
+as agency costs are deducted from the fair value; or
+« in the case of a player who has suffered a career-threatening injury/condition, the value attributed to
+the player by the Company’s insurers.
+13 .
+Queens Park Rangers Football & Athletic Club, Limited, (The) :
+Notes to the financial statements
+Year ended 31 May 2025
+1. Accounting policies (continued)
+{v) Disposals
+Profits or losses on the disposal of these registrations represent the fair value of the consideration
+receivable, net of any transaction costs, less the unamortised cost of the original registration.
+(vi) Remuneration
+. Remuneration of players is charged in accordance with the terms of the applicable contractual agreements
+and any discretionary bonus when there is a legal or contractual obligation. Liabilities in respect of player
+loyalty fees are provided for, as part of operating expenses, when payment becomes probable as the player
+is contracted to the football club and the loyalty fee is payable prior to the next transfer window at the date
+the accounts are signed.
+g) Finance costs
+Finance costs on all borrowings except those that are directly attributable to the acquisition, construction or
+production of a qualifying asset are recognised in profit or loss using the effective interest method. The effective
+interest rate is the rate that exactly discounts estimated future cash flows through the expected life of the
+borrowings.
+For qualifying assets if the borrowed funds are specifically for the purpose of obtaining a qualifying asset, the
+Company determines the amount of borrowing costs eligible for capitalisation as the actual borrowing costs incurred
+on that borrowing during the period less any investment income on the temporary investment of those borrowings.
+{f obtained via general borrowings, then the amount capitalised is determined by applying the applicable
+capitalisation rate for the period. The capitalisation rate used in the period shall be the weighted average of rates
+applicable to the Company's general borrowings that are outstanding during the period.
+Any intangible asset disposed of on deferred terms will be initially recorded at the discounted present value of future
+receipts and the receivable is then increased to the settlement value over the period of deferral with this value being
+charged as notional finance income to profit or loss. .
+h) ‘Financial instruments
+Financial instruments are classified and accounted for, according to the substance of the contractual arrangement,
+as either financial assets, financial liabilities or equity instruments. An equity instrument is any contract that
+evidences a residual interest in the assets of the Company after deducting all of its liabilities.
+i) Foreign exchange
+Transactions denominated in foreign currencies are translated into Sterling and recorded at the rates of exchange
+tuling at the date of the transactions. Translation differences are dealt with in profit and loss.
+i Pension costs
+, The Company operates a defined contribution pension scheme for employees. The assets of the scheme are held
+separately from those of the Company. The annual contributions payable are charged to profit or loss.
+k) Deferred taxation
+Deferred tax is recognised in respect of all material timing differences that have originated but not reversed at the
+reporting date where transactions or events have occurred at that date that will result in an obligation to pay more,
+or a right to pay less or to receive more tax. Deferred tax is measured on an undiscounted basis at the tax rates
+that are expected to apply in the periods in which timing differences reverse, based on tax rates and laws enacted
+or substantively enacted at the reporting date. Deferred tax assets are recognised to the extent that it is regarded
+more likely than not that they will be recovered.
+) Critical accounting judgements and estimates
+In the application of the Company's accounting policies, which are described herein, the directors are required to
+make judgements, estimates and assumptions about the carrying value of assets and liabilities that are not readily
+apparent from other sources. The estimates and associated assumptions are based on historical experience and
+other factors that are considered to be relevant. Actual results may differ from these estimates. The principal :
+balances in the financial statements where changes in estimates and assumptions may have a material impact are:
+(i) Recoverable amount of non-current assets
+All non-current assets, including player registrations, are reviewed for potential impairment using estimates
+of the future economic benefits attributable to them. Such estimates involve assumptions in relation to on
+pitch performance. Any estimates of future economic benefits made in relation to non-current assets may
+differ from the benefits that ultimately arise, and materially affect, the recoverable value of the asset.
+14
+Queens Park Rangers Football & Athletic Club, Limited, (The}
+Notes to the financial statements
+Year ended 31 May 2025
+2. Revenue ©
+The revenue and profit before tax are attributable to the one principal activity of the Company and all revenue is
+derived in the UK.
+2025 2024
+£'000 £'000
+Broadcasting rights 11,179 8,729
+Management charge 20,194 17,438
+Other income - 531 .
+31,373 26,698
+3. Operating loss
+This is stated after charging the following:
+’ , 2025 2024
+£'000 £'000
+Amortisation of intangible assets 2,470 1,594
+Auditors’ remuneration is dealt with in the financial statements of the parent Company.
+4. Particulars of employees :
+The average number of staff, including directors, employed by the Company during the financial year can be
+analysed as follows:
+2025 2024
+No. No.
+Players, managers and coaches 113 115
+Support staff . 23 21
+136 136
+The aggregate payroll costs of the above were:
+2025 2024
+£'000 £000 -
+Wages and salaries 20,514 18,171
+Social security costs 2,750 2,394
+Other pension costs 153 147
+23,417 20,712
+Key management compensation:
+2025 2024
+. £'000 £'000
+Wages and salaries 576 1,273
+Other pension costs 2 2
+First Team Management staff are considered to be key management personnel.
+- 15
+Queens Park Rangers Football & Athletic Club, Limited, (The)
+Notes to the financial statements
+Year ended 31 May 2025 ‘
+5. Remuneration of directors '
+No remuneration or benefits were paid to directors during the year (2024: ENil)
+6. Profit on disposal of players registrations
+‘ 2025 2024
+£'000 £'000
+Profit on disposal of players’ registrations 2,260 2,195
+7. Finance costs
+. 2025 2024
+£°000 £'000
+Finance costs and similar charges ‘
+- Amortised cost charge - FFP settlement - (72)
+-  Amortised cost charge - EFL loans (393) (483)
+(393) (555)
+8. Taxation on ordinary activities
+{a) Analysis of charge in the year
+2025 2024
+£'000 £'000
+Current tax
+UK Corporation tax based on the results for the year (note 8(b)) - -
+{b) Factors affecting current tax charge
+The tax assessed for the year is lower than the standard rate of corporation tax in the UK, the differences are
+explained below:
+2025 2024
+£000 £'000
+Profit on ordinary activities before taxation 200 172
+Profit on ordinary activities multiplied by standard rate of tax of 25% 50 43
+Expenses not deductible - -
+Movements in deferred tax not recognised , (50) 70
+Relieved tax losses . - (113)
+Total current tax (note 8(a)) - -
+Tax losses carried forward at the reporting date were £13.4m (2024: £13.6m) relating to trading losses. A deferred
+tax assets has not been recognised in the accounts as there is insufficient evidence that the asset will be
+recoverable. The unprovided deferred tax asset is calculated at £3.35m (2024: £3.4m).
+16
+Queens Park Rangers Football & Athletic Club, Limited, (The) :
+Notes to the financial statements
+Year ended 31 May 2025
+9. Intangible fixed assets
+Player
+registrations
+£'000
+Cost ~-
+At 1 June 2024 . 7,457
+Additions 10,039
+Disposals (3,780)
+At 31 May 2025 13,716 ,
+Amortisation
+At1 June 2024 6,345
+Charge for the year 2,470
+On disposals , (3,539)
+At 31 May 2025 5,276
+Net book value
+At 31 May 2025 8,440
+At 31 May 2024 . 1,112
+Amortisation charges are included within the statement of comprehensive income under cost of sales.
+The Company has chosen not to disclose carrying amounts for individual players. :
+10. Trade and other receivables
+2025 2024
+£'000 £'000
+Trade receivables 112 111
+Player registration transfer receivables 2,168 1,467
+Amounts owed by group undertakings 2,322 5,360
+- Prepayments and accrued income 998 772
+5,600 7,710
+Amounts owed by group undertakings are unsecured, interest free and repayable on demand.
+11. Current liabilities’
+, 2025 2024
+£'000 £'000
+Trade payables 254 14
+Player registration transfer payables 3,858 175
+Taxation and social security 755 798
+FFP settlement 1,700 1,700
+Accruals and deferred income 4,973 3,037
+Other creditors ‘ . - 19
+11,540 5,743
+17
+Queens Park Rangers Football & Athletic Club, Limited, (The}
+_ Notes to the financial statements
+Year ended 31 May 2025 .
+12. Non-current liabilities
+2025 2024
+. £'000 £'000
+’ FFP Settlement 5,100 6,800 . .
+FFP Settlement — Discounting adjustment (588) (981)
+. . 4,512 5,819
+The FFP settlement is recorded at an amortised cost basis, discounted from a £6,800,000 full value (2024:
+£8,500,000), £1,700,000 falls due within one year and is shown within note 11, the remainder is payable over a set
+number of years as agreed with the English Football League (EFL).
+FFP settlement has been discounted using the Company's cost of capital, currently 10%.
+13. Related parties
+In accordance with the exemption permitted by Financial Reporting Standard 102, Section 33 “Related Party
+Disclosures", transactions with other group undertakings have not been disclosed in these financial statements.
+14. Ultimate Controlling Party
+The immediate parent Company is QPR Holdings Limited, a Company registered in England and Wales, and is the
+“ gsmatlest consolidated accounts within which the Company is included. Copies of these group accounts are
+available from its head office Matrade Loftus Road Stadium, South Africa Road, London W12 7PJ. The ultimate
+parent Company is Total Soccer Growth Holdings Ltd, a Company incorporated in the British Virgin Islands, and is
+the largest consolidated accounts within which the Company is included. These consolidated accounts are
+available to the public and may be obtained from the Company registrar.
+The ownership of QPR Holdings Limited on 31 May 2025 was as follows
+¢ 76.98% Total Soccer Growth Holdings Limited, the ultimate owner of which is Ruben Gnanalingam
+« 10.00% QPR Newco LLC, the ultimate owner of which is Richard Reilly
+¢ 12.88% Sea Dream Ltd., the ultimate owners of which are the L.N.Mittal Family
+¢ 0.14% variety of minority shareholders
+15. Share capital
+Allotted and called up:
+2025 2024
+No £'000 No £'000
+Ordinary shares of £0.50 each 540,600 270 540,600 270
+16. Reserves :
+Share premium account - This reserve records the amount above the nominal value received for shares sold, less
+transaction costs. :
+Profit and loss account - This reserve records retained earnings and accumulated gains.
+: Capital redemption reserve - This is a non-distributable reserve and represents paid up share capital.
+18
+Queens Park Rangers Football & Athletic Club, Limited, (The)
+Notes to the financial statements
+Year ended 31 May 2025 - Se -
+17. Financial instruments
+Capital risk management
+. The Company manages its capital to ensure that the entity will be able to continue as a going concern through the
+optimisation of the debt and equity balance. The Directors’ consideration of the going concern is detailed in the
+Strategic Report.
+The main purpose of financial instruments listed below is to finance the Company’s operations. The Company has
+other financial assets and liabilities, which arise directly from its operations and its transactions with the holding
+Company which are not included below.
+Categories of financial instruments
+2025 2024
+£'000 £000
+Financial Assets
+- Cash and cash equivalent 69 597
+- Player registration transfer receivables 2,168 1,467
+- Trade and other receivables 112 111
+- Amounts owed by group undertakings * 2,322 5,360
+4,671 7,535
+Financial Liabilities
+- Player registration transfer payables 3,858 475
+- Trade and other payables 254 14
+- FFP settlement 6,212 7,519
+10,324 7,708
+The above financial assets and financial liabilities do not include prepayments and accruals respectively.
+17. Financial instruments (continued)
+Financial risk management objectives and policies
+Management monitor and manage the financials risks relating to the operations of the Company through internal
+controls. These risks include credit risk and liquidity risk.
+Credit risk ‘
+. Credit risk refers to the risk that a counterparty will default on its contractual obligations resulting in financial loss
+to the Company. The maximum risk exposure relates to football debtors, but this is mitigated by the governing
+body of the respective association.
+Liquidity risk
+Ultimate responsibility for liquidity risk management rests with the Directors. The Directors use management
+information tools including budgets and cash flow forecasts to be able to constantly monitor and manage current .
+and future liquidity. : .
+18. Payables - capital instruments
+The maturity profile of the company’s total borrowings at the reporting date which are carried at amortised cost
+are as follows:
+2025 2024
+Principal Interest Total Principal Interest Total
+£'000 £'000 £'000 £000 £000 £000
+In one year or less or on demand 1,405 295 1,700 1,307 393 1,700
+In more than one year but not more
+than five years 4,807 293 5,100 6,212 588 6,800
+6,212 588 6,800 7,519 981 8,500
+19
+Queens Park Rangers Football & Athletic Club, Limited, (The)
+
+Notes to the financial statements
+
+Year ended 31 May 2025 :
+
+19. Post reporting date events
+During the 2025 summer transfer window we secured Kwame Poku, Amadou Mbengue, Rumarn Burrell, Richard
+Kone, Koki Saito, Isaac Hayden, Kealey Adamson, Tylon Smith and Jaylan Pearman on permanent transfers. In
+addition, the temporary transfer of Karamoko Dembele during the 24/25 season was converted into a permanent
+transfer. Jimmy Dunne’s contract was renewed and he has since been made the Club Captain for the 25/26 season.
+Furthermore, Charlier Kelman transferred to Charlton Athletic. Jack Colback, Morgan Fox, Lucas Andersen, and
+Kenneth Paal departed due to their contracts expiring. The Group will also be in receipt of a sell on in relation to
+the transfer of Eberechi Eze from Crystal Palace to Arsenal.
+The net impact of post year end player trading is a £1,498,000 outflow (2024: £4,300,000 outflow), in addition there
+are contingent clauses with a net impact of £2,400,000 outflow (2024: £1,660,000 outflow).
+
+. 20
 

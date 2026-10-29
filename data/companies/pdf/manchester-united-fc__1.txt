@@ -2,7 +2,7 @@ source: Companies House filing, manchester-united-fc__1.pdf
 document: ZPff9ZxH3Wu_5nSlAT9zmZfFCIWvJtLucxKfKETcZ7g
 made_up_date: 2025-06-30
 method: ocr
-pages_read: 12 of 17
+pages_read: 17 of 17
 
 Oo t .
 : : Registered Number: 02570509
@@ -362,4 +362,199 @@ statement of profit or loss when they fall due.
 Other income represents royalties and centralised services recharged to other group undertakings.
 
 12
+Manchester United Limited
+Notes to the financial statements - unaudited (continued)
+2 Summary of significant accounting policies (continued)
+2.6 Income from shares in group undertakings
+Income from shares in group undertakings is recognised when the right to receive payment is established.
+2.7 Income tax
+The income tax expense or credit for the period comprises current tax. Tax is recognised in the statement of profit or loss, except
+to the extent that it relates to items recognised in other comprehensive income, in which case the tax is also recognised in other
+comprehensive income.
+The current tax charge or expense is calculated on the basis of the tax laws enacted or substantively enacted at the balance sheet
+date in the countries where the Company operates and generates taxable income. Management periodically evaluates positions
+taken in tax returns with respect to situations in which applicable tax regulation is subject to interpretation. It establishes
+provisions where appropriate on the basis of amounts expected to be paid to (or recovered from) the tax authorities.
+2.8 Dividend distribution
+Dividend distributions to the Company’s shareholders are recognised when they become legally payable. In the case of interim
+dividends, this is when they are paid.
+2.9 Investments
+Investments are held at cost less any provision for impairment in value. Impairment reviews are performed by the directors
+when there has been an indication of potential impairment. .
+2.10 Trade receivables
+Trade receivables are amounts due from customers for goods sold or services performed in the ordinary course of business.
+Trade receivables are recognised initially at fair value and subsequently measured at amortised cost using the effective interest
+method, less provision for impairment. If collection is expected in one year or less, they are classified as current assets. If not,
+they are presented as non-current assets.
+2.11 Cash and cash equivalents
+Cash and cash equivalents includes cash in hand, deposits held at call with banks, and, if applicable, other short-term highly
+liquid investments with original maturities of three months or less.
+2.12 Share capital and reserves
+Ordinary shares are classified as equity. Incremental costs directly attributable to the issue of new shares are shown in equity as
+a deduction from the proceeds of the issue. The capital contribution reserve arose as a result of capital contributions from
+parent undertakings.
+2.13. Trade and other payables
+Trade and other payables are obligations to pay for goods and services that have been acquired in the ordinary course of
+business from suppliers. Trade payables are recognised initially at fair value and subsequently measured at amortised cost
+using the effective interest method. Amounts payable are classified as current liabilities if payment is due within one year or
+less. If not they are presented as non-current liabilities.
+
+: 13
+Manchester United Limited ;
+Notes to the financial statements - unaudited (continued)
+3 Critical estimates and judgements
+The preparation of financial statements requires the use of accounting estimates and assumptions which, by definition, will :
+seldom equal the actual results. Management also needs to exercise judgement in applying the Company’s accounting policies.
+This note provides an overview of the areas that involved a higher degree of judgement or complexity, and of items which are
+more likely to be materially adjusted due to estimates and assumptions turning out to be wrong. Detailed information about
+each of these estimates, assumptions and judgements is included in other notes together with information about the basis of
+calculation for each affected line item in the financial statements.
+3.1 Significant estimates and assumptions
+The areas involving significant estimates or assumptions are:
+a) Investments in subsidiary undertakings
+Investments are held at cost less any provision for impairment in value. Impairment reviews are performed by the directors
+when there has been an indication of potential impairment. The Company will perform an impairment review on investments
+in subsidiary undertakings if adverse events indicate that the carrying value of the asset may not be recoverable. If such
+circumstances were to arise, the carrying value of the investment would be assessed against the higher of the Company’s best
+estimate of the fair value less any costs to sell and the value in use.
+Management does not consider there to be any significant judgements in the preparation of the financial statements.
+Estimates, assumptions and judgements are continually evaluated. They are based on historical experience and other factors,
+including expectations of future events that may have a financial impact on the Company and that are believed to be reasonable
+. under the circumstances.
+4 Operating expenses
+2025 2024
+£7000 £7000
+Employee benefit expense (Note 5) (303) (413)
+Short-term and low value leases (142) (164)
+Other operating expenses (305) (367)
+(750) (944)
+5 Employee benefit expenses
+2025 2024
+£000 £000
+Wages and salaries (294) (403)
+Other pension costs (9) (10)
+(303) (413)
+No directors received any emoluments in respect of services for the Company during the year (2024: none).
+The average monthly number of persons (including executive directors) employed by the Company during the year was:
+2025 2024
+Number Number
+By activity: :
+. Administration and other 5 6
+Average monthly number of em _ LS ;
+14
+Manchester United Limited
+Notes to the financial statements - unaudited (continued)
+6 Other income
+2025 2024
+£000 £°000
+Centralised services recharged to other group undertakings 809 1,019
+Other income 809 1,019
+7 Income tax expense ;
+2025 2024
+£7000 £7000
+Current tax:
+Current tax on profit for the year (on (6)
+Amount payable in respect of group relief (616) (784)
+Total current income tax expense : (621) (790)
+Total income tax expense (621) (790)
+A reconciliation of the total income tax expense is as follows:
+2025 2024
+£000 £°000
+Profit before tax 59 75
+Profit before tax multiplied by the standard UK Corporation tax rate of 25.0% (15) (19)
+Tax effects of:
+Transfer pricing adjustments (616) (784)
+Difference between UK and foreign tax rates 10 13
+Total income tax expense (621) (790)
+8 Dividends paid :
+Dividends paid in the years ended 30 June 2025 and 30 June 2024 amounted to £nil. The directors do not recommend the
+payment of a final dividend (2024: £nil). .
+15
+Manchester United Limited
+Notes to the financial statements - unaudited (continued)
+9 Investments .
+Shares in
+group
+undertakings
+£000
+At I July 2024 and 30 June 2025 469,166
+Shares in group undertakings as at 30 June 2025 relate to the following companies:
+% of ownership
+Subsidiaries Principal activity interest
+Alderley Urban Investments Limited* Property investment 100
+Manchester United Football Club Limited* Professional football club 100
+Manchester United Women’s Football Club Limited Professional football club 100
+Manchester United Interactive Limited Dormant company 100
+MU 099 Limited* , Dormant company 100
+MU Commercial Holdings Limited* Non-trading company 100
+MU Commercial Holdings Junior Limited Non-trading company 100
+MU Finance Limited* Non-trading company 100
+MU RAML Limited Retail and licensing company 100
+MUTYV Limited Media company 100
+RAML USA LLC Dormant company 100
+* Direct investment of Manchester United Limited, others are held by subsidiary undertakings.
+All of the above are incorporated and operate in England and Wales, with the exception of RAML USA LLC which is
+incorporated in the state of Delaware in the United States. The registered office of all the above, with the exception of RAML
+USA LLC, is Sir Matt Busby Way, Old Trafford, Manchester, M16 ORA, United Kingdom. The registered office of RAML
+USA LLC is Corporation Trust Centre, 1209 Orange Street, Wilmington, New Castle County, Delaware 19801, USA.
+The directors have considered the need for an impairment charge against the investments in shares of group undertakings
+: during the financial year. The carrying value of the investments have been compared to the recoverable amount of the
+investments, determined based on a value in use calculation. The directors have concluded that an impairment charge is not
+required.
+10 Trade and other receivables
+2025 2024
+£000 £'000
+Prepayments 26 26
+Current trade and other receivables 26 26
+u Amounts owed by group undertakings
+2025 2024
+£000 £000
+Amounts owed by group undertakings 44,888 45,171
+44,888 45,171
+Amounts owed by group undertakings are unsecured, interest free and repayable on demand.
+16
+Manchester United Limited
+Notes to the financial statements - unaudited (continued) ,
+12 Share capital .
+2025 2024
+£000 £000
+Allotted and fully paid:
+265,192,583 (2024: 265,192,583) ordinary shares of £0.10 each 26,519 26,519
+13 Trade and other payables
+2025 2024
+£000 £000
+Trade payables - 5
+Income tax payable 14 :
+Current trade and other payables 14 5
+14 Amounts owed to group undertakings
+2025 2024
+. £000 £'000
+Amounts owed to group undertakings 6,126 5,927
+: 6,126 5,927
+Amounts owed to group undertakings are unsecured, interest [ree and repayable on demand.
+is Debt ot subsidiary undertaking
+Manchester United Football Club Limited, a subsidiary of the Company, has issued senior secured notes that are secured by a
+first-ranking lien over al] shares and substantially all property and assets of the issuer and guarantors, which by definition
+incorporates Red Footbal! Limited, Red Football Junior Limited, Manchester United Football Club Limited, MU Finance -
+Limited, MU RAML Limited and the Company. The principal amount outstanding at 30 June 2025 was the pounds sterling
+equivalent of £307,886,000 ($425,000,000) (2024: £332,765,000 ($425,000,000)).
+Manchester United Football Club Limited also has a secured term loan facility. The loan is secured against substantially all of
+the assets of each of the guarantors, which by definition incorporates Red Footbali Limited, Red Football Junior Limited,
+Manchester United Football Club Limited, MU Finance Limited, MU RAML Limited and the Company. The principal amount
+outstanding at 30 June 2025 was the pounds sterling equivalent of £164,126,000 ($225,000,000) (2024: £178,452,000
+($225,000,000)).
+Manchester United Football Club Limited also has outstanding borrowings under its revolving facilities. The revolving
+facilities are secured against substantially all of the assets of each of the guarantors, which by definition incorporates Red
+Football Limited, Red Football Junior Limited, Manchester United Football Club Limited, MU Finance Limited, MU RAML
+Limited and the Company. The outstanding borrowings at 30 June 2025 was £160,000,000 (2024: £30,000,000).
+16 Immediate parent undertaking and ultimate controlling party
+The immediate parent undertaking is Red Football Limited. The ultimate parent undertaking and controlling party is
+Manchester United plc, a company incorporated in the Cayman Islands and listed on the New York Stock Exchange. .
+Manchester United plc is the parent undertaking of the largest group of undertakings to consolidate these financial statements
+at 30 June 2025. The consolidated financial statements of Manchester United plc can be obtained from the website
+www.manutd.com. Manchester United ple is controlled by family trusts affiliated with the Glazer family.
+Red Football Limited is the parent undertaking of the smallest group of undertakings to consolidate these financial statements :
+at 30 June 2025. The consolidated financial statements of Red Football Limited can be obtained from the Company Secretary,
+Red Football Limited, Old Trafford, Manchester, M16 ORA.
+. 17
 

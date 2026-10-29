@@ -2,7 +2,7 @@ source: Companies House filing, southampton-fc__2.pdf
 document: t5YqVXhFWbpJeEgZRrpzEbFrmJgYGzyQU-yZCL535Qs
 made_up_date: 2024-06-30
 method: ocr
-pages_read: 12 of 40
+pages_read: 40 of 40
 
 ae _ - Southampton Football Club Limited
 . ne : _ Annual Report and Financial Statements , —
@@ -385,4 +385,915 @@ The directors are responsible for keeping adequate accounting records that are s
 and enable them to ensure that the financial statements comply with the Companies Act 2006. They are also .
 - responsible for safeguarding the assets of the Company and hence for taking reasonable steps for the prevention
 and detection of fraud and other irregularities. : oo
+_ Southampton Football Club Limited os
+, a Independent Auditors' Report to the members of Southampton Football Club Limited .
+, Opinion on the financial statements ce . . .
+: . ~ In our opinion the financial statements: :
+_ © givea true and fair view of the state of the Company's affairs as at 30 June 2024 and of its profit for the
+year then ended; : : a :
+« have been properly prepared in accordance with United Kingdom Generally Accepted Accounting Practice; — .
+. _ and . : : co .
+¢ have been prepared in accordance with the requirements of the Companies Act 2006. . : :
+_ We have audited the financial statements of Southampton Football Club Limited (“the Company’) for the year ended
+30 June 2024 which comprise Statement of Comprehensive Income, Statement of Financial Position, Statement of _
+Changes in Equity and notes to the financial statements, including a summary of significant accounting policies.
+The financial reporting framework that has been applied in their preparation is applicable law and United Kingdom
+Accounting Standards, including Financial Reporting Standard 102 The Financial Reporting Standard applicable in
+. . ‘the UK and Republic of Ireland (United Kingdom Generally Accepted Accounting Practice). . :
+' + Basis for opinion ,
+‘ - We conducted our audit in accordance with International Standards on Auditing (UK) (ISAs (UK)) and applicable
+law. Our responsibilities under those standards are further described in the Auditor's responsibilities for the audit
+. of the financial statements section of our report. We believe that the audit evidence we have obtained is sufficient
+: and appropriate to provide a basis for our opinion. . 1 . - .
+‘Independence . : .
+. We are independent of the Company in accordance with.the ethical requirements that are relevant to our audit of
+: the financial statements in the UK, including the FRC’s Ethical Standard, and we have fulfilled our other ethical
+mo, responsibilities in accordance with these requirements. . . . .
+. Conclusions relating to going concern . : .
+-{n auditing the financial statements, we have concluded that the Directors’ use of the going concern basis of
+a * accounting in the preparation of the financial statements is appropriate. :
+ * "Based on the work we have performed, we have not identified any material uncertainties relating to events or
+conditions that, individually or collectively, may cast significant doubt on the Company's ability to continue as a
+going concern for a period of at least twelve months from when the financial statements are authorised for issue.
+Our responsibilities and the responsibilities of the Directors with respect to going concern are described in the
+relevant sections of this report. . : : . : . ,
+Southampton Football Club Limited
+Independent Auditors’ Report to the members of Southampton Football Club Limited (continued) :
+Other information . . | :
+: The Directors are responsible for the other information. The other information comprises the information included
+in the Annual Report and Financial Statements, other than the financial statements and our auditor’s report thereon. .
+Our opinion on the financial statements does not cover the other information and, except.to the extent otherwise
+explicitly stated in our report, we do not express any form of assurance conclusion thereon.
+: Our responsibility is to read the other information and, in doing so, consider whether the other information is
+materially inconsistent with the financial statements, or, our knowledge obtained in the course of the audit or ~
+- otherwise appears to be materially misstated. If we identify such material inconsistencies or apparent material
+misstatements, we are required to determine whether this gives rise to a material misstatement in the financial .
+statements themselves. If; based on the work we have performed, we conclude that there is a material
+misstatement of this other information, we are required to report that fact.
+We have nothing to report in this regard. ,
+‘Other Companies Act 2006 reporting ~ ; :
+In our opinion, based on the work undertaken in the course of the audit: .
+e the information given in the Strategic report and the Directors’ report for the financial year for which the
+financial statements are prepared is consistent with the financial statements; and .
+° the Strategic report and the Directors’ report have been prepared in accordance with applicable legal
+. requirements. . :
+In the light of the knowledge and understanding of the Company and its environment obtained in the course of the -
+audit, we have not identified material misstatements in the Strategic report or the Directors’ report...
+We have nothing to report in respect of the following matters in relation to which the Companies Act 2006 requires
+“us to report to you if, in our opinion: oe
+: « adequate accounting records have not been kept, or returns adequate for our audit have not been received
+: from branches not visited by us; or :
+¢ — the financial statements are not in agreement with the accounting records and returns; or . .
+; ¢ certain disclosures of Directors’ remuneration specified by law are not made; or .
+, . © wehave not received all the information and explanations we require for our audit. _
+; Responsibilities of Directors : , sO
+As explained more fully in the Directors’ Report, the Directors are responsible for the preparation of the financial
+: statements and for being satisfied that they give a true and fair view, and for such internal control as the Directors
+determine is necessary, to enable the preparation of financial statements that are free from material misstatement, :
+- whether due to fraud or error. . . .
+: In preparing the financial statements, the Directors are responsible for assessing the Company's ability to continue
+as a going concern, disclosing, as applicable, matters related to going concern and using the going concern basis
+of accounting unless the Directors either intend to liquidate the Company or to cease operations, or have no realistic .
+: _ alternative but to do so. : : _
+. ; - Southampton Football Club Limited
+Independent Auditors’ Report to the members of Southampton Football Club Limited (continued)
+: Auditor’s responsibilities for the audit of the financial statements . . . .
+: Our objectives are to obtain reasonable assurance about whether the financial statements as a whole are free from :
+material misstatement, whether due to fraud or error, and to issue an auditor’s report that includes our opinion.
+Reasonable assurance is a high level of assurance, but is not a guarantee that an audit conducted in accordance
+- with ISAs (UK) will always detect a material misstatement when it exists. Misstatements can arise from fraud or
+. error and are considered material if, individually or in the aggregate, they could reasonably be expected to influence :
+. the economic decisions of users taken on the basis of these financial statements.
+: Extent to which the audit was capable of detecting irregularities, including fraud . .
+, ; Irregularities, including fraud, are instances of non-compliance with laws and regulations. We design procedures in
+line with our responsibilities, outlined above, to detect material misstatements in respect of irregularities, including :
+_ fraud. The extent to which our procedures are capable of detecting irregularities, including fraud is detailed below:
+. Non-compliance with laws and regulations — - , : : mo, .
+: . Based on: : . “
+: e Our understanding of the Company and the industry in which it operates; , .
+: _¢ Discussion with management and those charged with governance; and :
+_ e Obtaining and understanding of the Company's policies and procedures regarding compliance with laws"
+. . and regulations. : . . :
+we considered the significant laws and regulations to be the applicable accounting framework and UK tax
+'— legistation. : : .
+: The Company is also subject to laws and regulations where the consequence of non-compliance could have a
+material effect on the amount or disclosures in the financial statements, for example through the imposition of fines .
+. or litigations. We identified such laws and regulations to be health and safety legislation, FCA ‘egislation and .
+. employment law. : . : ;
+Our procedures in respect of the above included: ,
+« Review of minutes of meeting of those charged with governance for any instances of non-compliance with
+laws and regulations; a : .
+, e Review of correspondence with tax authorities for any instances of non-compliance with laws and
+. regulations; and . ; N
+e Review of financial statement disclosures and agreeing to supporting documentation. _
+_ , We assessed the susceptibility of the financial statements to material misstatement, including fraud. Our risk *
+"assessment procedures included: : . _—
+e Enquiry with management and those charged with governance regarding any known or suspected ,
+. instances of fraud, , : . ,
+; e Obtaining an understanding of the Company's policies and procedures relating to:
+. . o Detecting and responding to the risks of fraud; and :
+o Internal controls established to mitigate risks related to fraud. : : 4
+. e Discussion amongst the engagement team as to how and where fraud might occur in. the financial
+statements. . . : ;
+a Our procedures in respect of the.above included: ot : .
+, “Testing a sample of journal éntries throughout the year, which met a defined risk criteria, by agreeing to
+: supporting documentation, and: ce
+: e’- We reviewed and assessed the appropriateness of management estimates and exercised professional
+: scepticism in considering the impact of those estimates in the financial statements.
+We also communicated relevant identified laws and regulations and potential fraud risks to all engagement team
+members who were all deemed to have appropriate competence and capabilities and remained alert to any
+indications of fraud or non-compliance with laws and regulations throughout the audit. .
+400 So
+Southampton Football Club Limited . ‘
+Independent Auditors’ Report to the members of Southampton Football Club Limited (continued)
+
+. Our’ audit procedures were designed to respond to risks of material misstatement in the financial statements,
+
+recognising that the risk of not detecting a material misstatement due to fraud is higher than the risk of not detecting
+, one resulting from error, as fraud may involve deliberate concealment by, for example, forgery, misrepresentations
+or through collusion. There are inherent limitations in the audit procedures performed and the further removed non-
+compliance with laws and regulations is from the events and transactions reflected in the financial statements, the
+- less likely we are to become aware of it.
+A further description of our responsibilities is available on the Financial Reporting Council's website at:
+; httos:/Avww.frc.org.uk/auditorsresponsibilities. This description forms part of our auditor's report.
+
+Use of our report . . ‘
+This report is made solely to the Company's members, as a body, ‘in accordance with Chapter 3 Of Part 16 of the
+
+. Companies Act 2006. Our audit work has been undertaken so that we might state to the Company’s members
+those matters we are required to state to them in an auditor's report and for no other purpose. To the fullest extent -
+permitted by law, we do not accept or assume responsibility to anyone other than the Company and the Company’s 5
+
+. members as a body, for our audit work, for this report, or for the opinions we have formed.
+DocuSigned by: . .
+[ stew le Bas . oe
+3A8E17E6EA7B437... 7
+~ Stephen Le Bas (Senior Statutory Auditor) a
+For and on behalf of BDO LLP, Statutory Auditor .
+Southampton, UK — . oo
+, Date 20 December 2024 :
+BDO LLP is a limited liability partnership registered in England and Wales (with registered number OC305127).
+y .
+. 15 . ,
+_ Southampton Football Club Limited \
+oo, Statement of Comprehensive Income . , : :
+. : : . - for the Year Ended 30 June 2024 :
+, ; oO ~ Operations - ,
+a, ; : excluding oe
+‘ . ' player Player .
+: an * trading trading* Total Total -
+: 2024 . * 2024 ~ 2024 . 2023 °
+, : Note £000: £000 £000 £000
+‘Turnover 4 84001 - 84,001 445,467
+. Cost of sales , . o, (107,729) (51,142) (158,871) (207,081)
+. Gross loss ; : oo, 7 (23,728) (51,142) . (74,870) , (61,614)
+; - Administrative expenses (16,115) - (16,118) (14,929)
+, Other operating income , : 5 1,710 : 483 2,193 . 293
+- Operating loss 6 (38,133) (50,659) (88,792) * (76,250)
+Loss on disposal of assets 47) OU (47) S83) _
+- Profit on disposal of players : . 423,036 «=. 123,036 7,443
+Profit / (loss) on ordinary ; . . :
+activities before interest | . ; (38,180) - 72,377 34,197 (68,860) -
+. Interest receivable and similar . oO , a
+: income : 9 3,063 - 3,063 1,554
+, Interest payable and similar oa ; . : . ;
+charges 10 |... (13,169) . (13,169) . (7,141)
+Profit/(loss) on ordinary . : : : : :
+. activities before taxation - (48,286) 72,377 24,091 (74,447)
+7 _ + Taxon profit(loss) ~~ 11 (10,398) Oo (10,398) - (5,918)
+Profit/(loss) and total oa ; 7
+comprehensive profit/(loss) for - . : . 0
+_ the year © : (58,684) 72,377 13,693 (80,365)
+oo *Player trading represents the amortisation, loan fees payable, exceptional impairment, foreign exchange on
+player purchases and the profit or loss on disposal of player registrations |
+oo : The notes on page 19 to 39 form part of these financial statements. oO as
+a 6. , ; '
+CS , Southampton Football Club Limited
+. , Registered number: 00053301 ;
+Statement of Financial Position ~ ,
+' : as at30 June 2024 , ” :
+. : Note ~ 2024 2024 . 2023 2023
+£000 £000 £000 £000
+Fixed assets - : . . . :
+Intangible assets : ~ 12 95,992 _ 128,617 ,
+Tangible assets 13 18,228 . 17,269 )
+- Investments oe a 14 . : -
+_ . , 114,220 145,886
+. . Current assets : , oo
+~ ‘Stocks 15 144 322
+. Debtors: amounts falling due . . :
+within one year 16 33,667 22,517
+Debtors: amounts falling due after ,
+more than one year . 16 4,641 : 12,033 s
+Cash at bank and in hand 13,128 . _ 13,264
+° "51,580 . 48,133 , ;
+Creditors: amounts falling due :
+within one year. . 17 * (203,394) (229,437) .
+Net current liabilities : (151,814) ° -(181,304)
+. . Total assets less current : a ;
+liabilities oe (37,594) (35,418) .
+Creditors: amounts falling due oO
+: ’ after more than one year 18 (26,981) . (43,329)
+: Provisions for liabilities . :
+Other provisions . 20 . (3,798) (3,319)
+Net liabilities : _ : (68,373) , (82,066) .
+Capital and reserves | :
+Share capital , 22 : 501 501
+Capital contribution reserve 23 _ 29,767 : 29,767
+. Profit and loss account 23 mo . (98,641) ~~ (112,334)
+Liabilities attributable to the : -,
+owner of the parent Company (68,373) (82,066)
+The financial statements were approved and authorised for issue by the board and were sigried on its behalf:
+J SParmong . . : ;
+Director , . .
+Date: 20th December 2024 . Li : . .
+. The notes on pages 19 to 39 form part of these financial statements. : :
+- Southampton Football Club Limited
+oo : : Statement of Changes in Equity . _ ,
+. . for the Year Ended 30 June 2024 ° : : ‘ .
+a . Capital ~~ —s~Profit mo
+, . Share _ contribution and loss Total .
+. an uO . capital reserve account - equity
+: £000. £000 £000 £000
+- Att July 2022 “501 29,767 =» (31,969) " (1,701) a
+. Comprehensive loss for the year , : . .
+. : Loss forthe year uo, . . - - (80,365) © : (80,365)
+" At30June 2023 : 501 29,767 - (112,334) (82,066)
+: Comprehensive profit for the year . ns , Ss
+Profit forthe year. . : - 13,693 ~ 13,693
+. " At 30 June 2024 : 504 29,767  — (98,641) (68,373) :
+. The notes on pages 19 to 39 form part of these financial statements. / . , ;
+i . .
+Southampton Football Club Limited ce
+, . ; Notes to'the Financial Statements - ; ; .
+. for the Year Ended 30 June 2024. . :
+. 1. General information , . ——- : . . ;
+. . Southampton Football Club Limited is a private company, limited by shares, incorporated in ‘England & Wales - :
+. under the Companies Act 2006. The address of the registered office is given on the Company Information
+page and the nature of the Company's operations and its principal activity is disclosed in the Strategic report.
+: 2. ° Accounting policies a : _ :
+a , 2.1. Basis of preparation of financial statements ' .
+_The financial statements have been prepared under the historical cost convention unless otherwise :
+: specified within these accounting policies and in accordance with Financial Reporting Standard 102,
+‘the Financial Reporting Standard applicable in the UK and the Republic of Ireland and the Companies
+The preparation of financial statements in compliance with FRS 102 requires the use of certain critical .
+. ~ accounting estimates. It also requires management to exercise judgement in applying the Company's -
+ve . accounting policies (see note 3). ue : ‘ :
+: The following principal accounting policies have been applied: oe a
+\ : 2.2 Financial reporting standard 102 - reduced disclosure exemptions se
+, "The Company has taken advantage of the following disclosure exemptions in preparing these financial
+. statements, as permitted by the FRS 102 "The Financial Reporting Standard applicable in the UK and
+: Republic of Ireland”: : , :
+° . the requirements of Section 4 Statement of Financial Position paragraph 4.12(a)(iv); Oo
+; . the requirements of Section 7 Statement of Cash Flows; |. ,
+. the requirements of Section 3 Financial Statement Presentation paragraph 3.17(d);
+. . the requirements of Section 11 Financial Instruments paragraphs 11.41 to 11.48(c); _
+: . the requirements of Section 12 Other Financial Instruments paragraphs 12.26 to 12.29A; and :
+. ° the requirements of Section 33 Related Party Disclosures paragraph 33.7. :
+"This information is included in the consolidated financial statements of St Mary's Football Group Limited,
+, as at 30 June 2024, and these financial statements may be obtained from Companies House, Crown :
+_ Way, Cardiff, CF14 3UZ. . , .
+Southampton Football Club Limited _
+: , . . Notes to the Financial Statements (continued) ;
+: , for the Year Ended 30 June 2024 . ‘
+we : 2.3 Going concern : . . :
+These financial statements are prepared on‘a going concern basis. The directors have a reasonable
+- expectation that the Club will continue in operational existence for the foreseeable future. The directors
+_ are aware of certain uncertainties which could cause doubt on the Club's ability to continue as a going
+concern if they were to arise and remain unremedied. _ .
+; ' For the year ended 30 June 2024, the company made a profit after tax of £13,693,000 and has net
+. current liabilities of £151,814,000 and net liabilities of £68,373,000. -
+: In assessing the appropriateness of the going concern assumption, the directors have produced
+- detailed cash flow forecasts which extend to no less than June 2026. The Club's forecasts take into
+‘ : consideration various scenarios, including the risk of the Club being relegated from the Premier League.
+: _In the event of relegation, the Club, as with such clubs; will incur a significant reduction in turnover as
+, _ Premier League broadcasting revenue is replaced with parachute payments. The Club will be required
+to take steps to reduce costs and borrowings to a level more sustainable for a Championship club. In
+. this scenario, the Club would expect a significant reduction in wages and salaries, which will be largely
+. . achieved by contractual means existing in player and employee contracts and player sales.
+, ~The Club has forecast a net inflow of cash from player trading, as is common for many clubs relegated
+from the Premier League and was the case when the Club was relegated at the end of the 2022/23
+season. In such a case, to support the Club’s obligations, the directors will consider and utilise financing
+, - options available, including but not limited to, player receivable financing. :
+: _ : In the event that the Club’s financial performance varies or is less than that modelled, the directors are
+- satisfied-that sufficient funds can be generated or otherwise obtained by the Club, if this was absolutely
+: necessary. ; a _
+During the 2024 summer transfer window, the Club realised significant value from the sale of players
+which has helped to reduce the forecasted cashflow deficit. Some of the cash flows from these sales,
+. purchases and loan deals are immediate and some are deferred, as is customary in football player ;
+oo. transactions. : ;
+; The current football transfer market remains strong and the Club believes that future potential player ©
+. trading consistent with forecasts is reasonably achievable. The underlying models contain key
+. 7 ‘judgments about future player trading which are subject to a significant degree of uncertainty, along
+‘- with other variables. . , ; : :
+, The Club benefits from the support of the majority shareholder of its parent undertaking and the directors
+have received a letter of support from Mr Solak expressing his intention to continue to provide such -
+; support. Management forecasts do not indicate the need for future funding from Mr Solak during the
+. going concern review period. . . :
+; In light of this financial support, and the directors own considerations with regard to the availability of
+. such support, the directors have not identified a material uncertainty that may cast significant doubt
+; over the Club’s ability to continue as a going concern for the foreseeable future.
+- ; Under all of these reasonable foreseeable scenarios, based on the cashflow forecast, the expectations
+. of player trading and the availability of funding, as required, the directors are satisfied that the Club will
+have sufficient resources available to be able to meet its liabilities as they fall due and-have concluded
+. that it is appropriate for the financial statements to be prepared.on a going concern basis.
+= 200 -
+, ‘Southampton Football Club Limited
+: Notes to the Financia! Statements (continued) : ;
+. . - for the Year Ended 30 June 2024 ‘ ,
+2. Accounting policies (continued) : :
+2.4 Turnover’ , ; . . ,
+a Turnover represents the total amount receivable from the principal activities of the Company, excluding ;
+transfer fees receivable, and is stated net of value added tax. The fixed. element of broadcasting
+2 : turnover is recognised as games are performed over the length of the football season, whilst facility.
+fees for live coverage or highlights are recognised as and when the point of broadcast occurs. Merit
+payments are accounted for once known at the end of the relevant competition to which they relate and
+. accrued if not received by the end of the financial year. Match day turnover and those elements of
+commercial activities relating to matches are recognised when related matches are played; turnover
+from advance ticket sales is deferred accordingly. Other commercial turnover is recognised on a
+receivable basis once the contracted events have taken place. : , :
+: 2.5 Intangible assets , ; : ;
+: The element of each player's transfer fee which relates to his registration is capitalised as an intangible
+: asset and amortised over the period of his contract including any agreed extensions, subject to any .
+provision for impairment. Where there are deferred payment terms and no interest is charged, the future
+: . ___, Cash flows are discounted to their present value at the date of the transition using the prevailing market
+: : tate for such instruments. Contingent fees payable, which are dependent upon factors such as the
+: : number of first team appearances and international debuts being made, are capitalised in the year when
+it is Considered probable that the conditions of the transfer agreement will be satisfied. , :
+. + The-Company does not consider it to be possible to determine value in use of an individual player in
+: isolation as that player cannot generate cash flows on his own. As such, the Company considers the
+oo "smallest cash-generating unit to contain all of the first team players, the stadium and the training .
+oo . facilities. ,
+: However, management may consider that an individual player is highly unlikely to play for the first team ;
+: again, either due to serious injury or other circumstances outside the Club's control, and therefore will
+. not contribute to the future cash flows earned by the cash generating unit. In these instances, the
+, Company compares the carrying value of the asset to its recoverable amount. To the extent that the
+. carrying value exceeds the recoverable amount, the asset ‘is impaired and the impairment loss is
+oo recognised in the Statement of Comprehensive Income. oO
+_ 2.6 Tangible fixed assets . . ,
+Tangible fixed assets under the cost model are stated at historical cost less accumulated depreciation .
+_ and any accumulated impairment losses. Historical cost includes expenditure that is directly attributable
+to bringing the asset to the location and condition necessary for it to be capable of operating in the
+. . manner intended by management. . .
+The Company adds to the carrying amount of an item of fixed assets the cost of replacing part of such
+an item when that cost is incurred, if the replacement part is expected to provide incremental future
+benefits to the Company. The carrying amount of the replaced part is derecognised. Repairs and’
+maintenance are charged to the Statement of Comprehensive Income during the period in which they
+. are incurred. , . , :
+, Depreciation is charged so as to allocate the cost of assets less their residual value over their estimated .
+* useful lives, using the straight-line method. .
+The estimated useful lives are as follows: : .
+, . Motor vehicles _ : : _~ between 4 and 5 years | , ne
+Fixtures, fittings and equipment ~ “" - between 4.and 10 years: .
+Stadium . - * between 5 and 50 years :
+’ Southampton Football Club Limited ,
+- . . Notes to the Financial Statements (continued) , :
+7 - for the Year Ended 30 June 2024
+: 2 Accounting policies (continued) : ; , : .
+2.6 Tangible fixed assets (continued) Oo . , . .
+, The assets' résidual values, useful lives and depreciation methods are reviewed, and adjusted ~ .
+prospectively if appropriate, or if there'is an indication of a significant change since the last reporting
+. date. mt . .
+: : Gains and losses on disposals are determined by comparing the proceeds with the carrying amount |_|
+. and are recognised within "administrative expenses" in the Statement of Comprehensive Income.
+2.7 Stocks :
+: ' Stocks are stated at the.lower of cost and net realisable value, being the estimated selling price less
+, costs to complete and sell. Cost is based on the cost of purchase on a first in, first out basis. Work:in
+progress and finished goods include labour and attributable overheads. :
+: At each reporting date, stocks are assessed for impairment. If stock is impaired, the carrying amount
+: ‘is reduced to its selling price less costs to complete and sell. The impairment loss is recognised
+: : : immediately in the Statement of Comprehensive Income.
+2.8 Debtors |. ‘ : . ;
+. ; Short term debtors are measured at transaction price, less any impairment. Loans receivable are
+__. measured initially at fair value, net of transaction costs, and are measured subsequently at amortised .
+cost using the effective interest method, less any impairment. — : : .
+; . 2.9 Cash _ a : . :
+- Cashis represented by cash in hand and deposits with financial institutions repayable without penalty .
+: on notice of not more than 24 hours. — ,
+; 2.10 Financial instruments : c ;
+. - The Company only enters into basic financial instruments transactions that result in the recognition of
+. financial assets and liabilities, for example trade and other debtors and creditors, loans from banks
+: and other third parties, loans to related parties and investments in non-puttable ordinary shares. 7
+’ uO Debt instruments (other than those wholly repayable or receivable within one year), including loans
+: : and other accounts receivable and payable, are initially measured at present value of the futurecash ~~
+co flows and subsequently at amortised cost using the effective interest method. Debt instruments that
+: are payable or receivable within one year, typically trade debtors and creditors, are measured, initially
+__ and subsequently, at the undiscounted amount of the cash or other consideration expected to be paid
+oo or received. However, if the arrangements of a short-term instrument constitute a financing transaction, .
+. for example the payment of a trade debt deferred beyond normal business terms or financed at a rate
+: : of interest that is not a market, rate or in case of an out-right short-term loan not at market rate, the
+financial asset or liability is measured, initially, at the present value of the future cash flow discounted .
+_ -ata market rate of interest for a similar debt instrument and subsequently at amortised cost. ;
+; - . * Southampton Football Club Limited , :
+: : : __, Notes to the Financial Statements (continued) : ,
+‘ ‘ for the Year Ended 30 June 2024 ;
+‘2. Accounting policies (continued) : . ; : . :
+2.10 Financial instruments (continued) = ; _ Tk :
+: Financial assets that are measured at cost and amortised cost are assessed at the end of each
+reporting period for objective evidence of impairment. If objective evidence of impairment is found, an
+ol : - impairment loss is recognised in the Statement of Comprehensive Income.
+For financial assets measured at amortised cost, the impairment loss is measured as the difference ;
+: ’ between an asset's carrying amount and the present value of estimated cash flows discounted at the
+. . asset's original effective interest rate. If a financial asset has a variable interest rate, the discount rate .
+“ for measuring any impairment loss is the current effective interest rate determined under the contract.
+' For financial assets measured at cost less impairment, the impairment loss is measured as the
+: difference between an asset's carrying amount and best estimate of the recoverable amount, which is
+an approximation of the amount that the Club would receive for the asset if it were to be sold at the
+: reporting date. . . a :
+Financial assets and liabilities are offset and the net amount reported in the Statement of Financial ©
+: Position when there is an enforceable right to set off the recognised amounts and there is an intention
+to settle on’a net basis or to realise the asset and settle the liability simultaneously. ,
+_°, 2.44 Creditors Se Sn ; oo
+. Short term creditors are measured at the transaction price. Other financial liabilities, including bank
+. loans, are measured initially at fair value, net of transaction costs, and are measured subsequently at
+. , amortised cost using the effective interest method. . :
+. 2.12 Foreign currency translation : . : : .
+- : Functional and presentation currency , : . .
+; ae ‘The Company's functional and presentational cutrency is pound sterling. . | : -
+. . :
+. Transactions and balances . , :
+. Foreign currency transactions are translated into the functional currency using the spot exchange rates .
+a at the dates of the transactions. : : . a
+: .' Atthe Statement of Financial Position date foreign currency monetary items are translated using the
+en closing rate. - ”. : , :
+2.13 Finance costs a , : oo :
+. Finance costs are charged to the Statement of Comprehensive Income over the term of the debt using
+| the effective interest method so that the amount charged is at a constant rate on the carrying amount.
+. Issue costs are initially recognised as a reduction in the proceeds of the associated capital instrument.
+. ; ; ' Southampton Football Club Limited . ;
+. ; ; "Notes to the Financial Statements (continued) __ , ;
+; : for the Year Ended 30 Jurie 2024. : ,
+: 2. Accounting policies (continued) , . .
+: 2.14 Leased assets ,
+Where assets are financed by leasing agreements that give rights approximating to ownership (finance
+. : leases), the assets are treated as if they had been purchased outright. The amount capitalised is the
+, - present value of the minimum lease payments payable over the term of the lease. The corresponding -
+leasing commitments are shown as amounts payable to the lessor. Depreciation on the relevant
+: assets is charged to profit or loss over the shorter of estimated useful economic life and the term of —
+the lease. : , :
+‘ Lease payments aré analysed between capital.and interest components so that the interest element
+_ of the payment is charged to profit or loss over the term of the lease and is calculated so that it
+: - fepresents a constant proportion of the balance of capital repayments outstanding. The capital
+. element reduces the amounts payable to the lessor. .
+All other leases are treated as operating leases. Their annual rentals are charged to the Statement of
+. Comprehensive Income on a straight-line basis over the term of the lease. *.
+2.15 Pensions ; . . .
+‘ . : The Company is one of a number of employers in a shared defined benefit scheme for former staff.
+: The Company recognises a liability for the present value of future contributions to the scheme's deficit. ,
+- Contributions payable by the Company to employees’ (including executive directors) personal pension :
+: schemes are charged to the Statement of Comprehensive Income.in the year to which they relate.
+. : The schemes are defined contribution schemes, the assets.of which are held separately from the .
+’ Company. : : ‘ : :
+, 2.16 Government grants. - , a : :
+Grants are accounted for under the. accruals model, as permitted byFRS 102. , : :
+- Grants of a turnover nature are recognised in the Statement of Comprehensive Income inthe same |
+. period as the related expenditure. . . : : -
+- 2.17 Interest income . : . .
+: : Interest income is recognised in the Statement of Comprehensive Income using the effective interest
+method. : ae :
+; 2.18 Borrowing costs : . . -
+, All borrowing costs are recognised in the Statement of Comprehensive Income in the year in which
+. they are incurred. : : ,
+- 24 , ,
+_ _ Southampton Football Club Limited =
+: , : Notes to the Financial Statements (continued) : .
+: for the Year Ended 30 June 2024 / . : :
+. 2. Accounting policies (continued) ; : , _— ,
+"2.49 Provisions for liabilities , ;
+_ Provisions are made where an event has taken place that gives the Company a legal or constructive
+obligation that probably requires settlement by a transfer of economic benefit, and a reliable estimate :
+. ; can be made of the amount of the obligation. ; :
+; Provisions are charged as an expense to the Statement of Comprehensive Income in the yearthatthe
+, : Company becomes aware of the obligation, and are measured at the best estimate at the Statement
+. of Financial Position date of the expenditure required to settle the obligation, taking into account .
+. relevant risks and uncertainties.. . . _
+: . When payments are eventually made, they are charged to the provision carried in the Statement of
+, Financial Position. ; , . .
+; 2.20 Current and deferred taxation - ; _ . te
+: a The tax expense for the year comprises current and deferred tax. Tax is recognised in the Statement
+. of Comprehensive Income, except that a charge. attributable to an item of income and expense
+recognised as other comprehensive income or to an item recognised directly in equity is also :
+___. fecognised in other comprehensive income or directly in equity respectively. : .
+: - . The current income tax charge is calculated on the basis of tax rates and laws that have been enacted
+or substantively enacted by the reporting date in the countries where the Company operates and
+. / generates income. ‘ _
+. Deferred tax balances are recognised in respect of all timing differences that have originated but not
+. reversed by the Statement of Financial Position date, except that: _
+; : . ‘e  _ the recognition of deferred tax assets is limited to the extent that it is probable that they willbe ~
+: : recovered against the reversal of deferred tax liabilities or other future taxable profits; _
+‘ : . any deferred tax balances are reversed if and when all conditions for retaining associated tax
+: : allowances have been met.- ; , : .
+; : Deferred tax balances are not recognised in respect of permanent differences except.in respect of So.
+: business combinations, when‘deferred tax is recognised on the differences between the fair values of
+_ assets acquired and the future tax deductions available for them and the differences between the fair.
+. - values of liabilities acquired and the amount that will be assessed for tax. Deferred tax is determined :
+. using tax rates and laws that have been enacted or substantively enacted by the reporting date. _
+>. Southampton Football Club Limited’ - Se
+: . : 7 Notes to the Financial Statements (continued) : , ; SO ,
+- : for the Year Ended 30 June 2024 :
+: 3. Judgements in applying accounting policies and key sources of estimation uncertainty — .
+a "> {In preparing these financial statements, the directors have made the. following key judgements and
+estimates: : : ; :
+; . determined which players are included within the first team squad for cash generating unit purposes. /
+The assessment is based on whether players are considered to be within the first team squad and .
+available for selection as at the Statement of Financial Position date. Factors taken into consideration
+are whether the player has sustained any long term, career threatening injury or is highly unlikely to
+: play for the first team again and is held only for sale; , : ,
+. where players are considered to be outside of the first team squad for,cash generating unit purposes,
+determined the net realisable value of the player registration. This is based on an agreed selling
+. price in the event that the player has been transferred subsequent to the Statement of Financial
+: . Position date or, if there has been no such transfer, management's best estimate of the disposal
+: proceeds (less associated costs) based on recent player transactions;
+“ ° | ifa player is considered to be outside ofthe first team squad and highly unlikely to play for the first
+. : ‘ _ team again, determined whether the contract is onerous and any associated provision required as a :
+result of obligations at the Statement of Financial Position date. Such onerous contract provisions
+are estimated based on the unavoidable cost (least net cost) of exiting the contract (see note 20);
+. determined whether contingent liabilities exist in relation to contingent transfer fees payable (see :
+-note 20); : . _ : : :
+8 ‘assessed. whether it is probable that the conditions in respect of the contingent transfer fees payable ~
+‘will be met based on experience and the circumstances of the player concerned; and ; “
+‘ : . . : assessed the recognition ‘of a deferred tax asset based on future profit (see note 21). . _
+7 4. Turnover oo ‘ : ; ‘
+: An analysis of turnover by class of business is as follows: - a . .
+os . , . . : : 2024 2023
+: : Lo. £000 “, £000
+Broadcasting = «- i 55,874 107,959 SO
+Match day ; . 16,085 19,109
+. * . Commercial . . . 9,850 » 16,425 |
+_ Other , . _ 2,192 2,974
+CO . : 84,001 145,467
+. , * Materially afi turnover arose within the United Kingdom. ; 7 :
+; ; 26 - -
+; Southampton Football Club Limited =
+“: a Notes to the Financial Statements (continued) ae a .
+. for the Year Ended 30 June 2024 :
+_ 8 Other operating income . , oo, ;
+Items included within other operating income are as follows: ,
+. . : : . 2024 2023 Ci;
+; Co, . £000 £000
+. . Compensation payments from third parties , , ; a 1,710 : -
+. Other . Loo : - 28 :
+_ . a 1,710 - - 2 .
+. - 6. Operating loss ; . : ce
+: The operating loss is stated after charging: _ : .
+. ’ ; 2024. 2023 ;
+oe £000 _ £000 ;
+. Stock recognised as an expense , _ 1,771 . 451
+: -. Depreciation of tangible fixed assets , 3,006 : 2,892
+Impairment of tangible fixed assets : : Jot * 798
+Amortisation of intangible assets ‘ 51,142 51,987 - :
+: Other operating lease rentals : : 182 : 244
+Defined contribution pension cost . 806 ' 591
+: The operating loss is stated after crediting: oO Lo , _ :
+Amortisation of grants : . 93 93 '
+. Foreign exchange gains _ : 483 265 .
+. The auditor was remunerated by the Club on behalf of the Group of which the Club.is a member. The total: .
+: remuneration for the Group amounted to £78,000 (2023: £67,500). . cu oe
+7 Southampton Football Club Limited = - ;
+: Notes to the Financial Statements (continued)
+: Lo ‘ for the Year Ended 30 June 2024 . oo
+: ve _7. Employees =~ a ‘ oo : ; :
+Staff costs, including directors' remuneration, were as follows: - ‘ ‘ .
+: : : ae . 2024 . 2023 :
+. . : , £000 .. £000
+Wages and salaries . oo 69,019 105,478 .
+: Social security costs : : _ 9,189 15,036 .
+. . , Cost of defined contribution pension scheme 806 -§91 c
+_ - 79,014 = 121,105 °
+. : . The average monthly number of employees, including the directors, during the year was as follows: - .
+; oo 2024 "2023
+: : : . . No. ‘ No.
+Administrative  - , . . : 119 - 147.—
+Football : . . : ys 223 . _ 256
+: . oo SO, re 342403.
+In addition the Company employs approximately 240 temporary staff on match days (2023: 181). ,
+8. Directors’ remuneration : .
+: . _ 2024-2028
+co ; £000 £000 --
+Directors’ emoluments a ; 1,967 . 3,256 ©
+: Company contributions to defined contribution pension schemes a 27 43 -
+a Compensation for loss of employment : - 500.
+_ Amounts paid to third parties in respect of Directors services - 30 -
+Oo ‘Total : ; . . 2,024 — 3,799 ;
+: ’ | The average number of directors serving during the year was 6 (2023: 6). :
+: There were 2 directors in the Company's defined contribution pension scheme during the year (2023: 5). .
+: The total amount payable to the highest paid director in respect of emoluments was £1,281,000 (2023: .
+£1,005,000). Company pension contributions of £Nil (2023: ENil) were made to a money purchase scheme
+ee _ on their behalf. . . . . , .
+. : , 28 _
+oo _. Southampton Football Club Limited. ,
+: . : . Notes to the Financial Statements (continued) , : : .
+: ; : for the Year Ended 30 June 2024
+9. Interest receivable and similar income , Se ;
+: : _ 2024 2023 ;
+. : oo . £000 £000 —
+. : Imputed interest charge on transfer fees receivable . 2,153 "974 :
+Other interest receivable oO - :)
+: . Bank interest receivable’ . : 910 672 :
+; 3,063 "1,554
+: . 10, Interest payable and similar charges oe ' 7
+: a 7 - - 2024 «2023
+£000 £000
+‘ : Imputed interest charge on transfer fees payable 6,706 6,609
+Interest payable on transfer fees 6,414 , 452 .
+Hire purchase interest payable : . 49 7. 34 oe
+_ Other interest payable . oe, 49 ;
+: : , , : 13,169 7,141
+11. Taxation oo 7
+uo . — _ 2024 * 2023
+Current tax . . . . £000 £000 ~ .
+Adjustment in respect of previous periods . ; : a (120)
+Total current tax charge/(credit) — oo ; , , , . (120)
+7 Deferred tax co 7, oo ,
+. Origination and reversal of timing differences . mo, . 9,975 : 6,032
+. Adjustment in respect of previous periods : : 423 : 6
+. Total deferred tax charge . 7 : 10,398 6,038 >
+; - Total tax charge a : 10,398 5,918 - :
+, Southampton Football Club Limited
+: : a —_ Notes to the-Financial Statements (continued) .
+. for the Year Ended 30 June 2024 . : .
+: oM. Taxation (continued) ; . . . a ot :
+. . Factors affecting tax charge for the year. = : . : uf
+‘ The tax assessed for the year is higher than (2023: higher than) the-standard rate of corporation tax in the ,
+. UK of 25.00% (2023: 20.50%). The differences are explained below:
+: . . : 2024 2023
+. . . ~ ‘ _. £000" ~ £000 .
+: ; Profit/(loss) on ordinary activities before tax”. . : : 24,094 (74,447) -
+Profit/(loss) on ordinary activities multiplied by the standard rate of : = 0
+: corporation tax in the UK of 25.00% (2023: 20.50%) _ 6,023" (15,262) —
+: _ Effects of: , ; ; , _ : : :
+Fixed asset differences _ : , 34 191 ee
+: Expenses not deductible for tax purposes . . 862 37
+nn . Income not taxable for tax purposes —- . (23) (25)
+Group relief claimed : a . (4,350) -
+— ’ Adjustments to tax charge in respect of prior periods — current tax - (120)
+. Adjustments to tax charge in respect of prior periods — deferred tax 423 6... .
+, : Other permanent differences : . : - :
+Effect of rate change : . - _ (213) .
+: Movement in deferred tax not recognised : (7,429 ° = 21,304
+Total tax charge forthe year. - ; A "10,398 © 5,918 ,
+. At 30 June 2024, the Company had estimated taxable losses amounting to £129,288,000 (2023:
+£132,534,000) available for utilisation against future taxable profits. At 30 June 2024 the Company had an
+. unrecognised deferred tax asset of £32,322,000 (2023: £24,455,000) in relation to these losses due to the
+: : uncertainty as to when these losses may reverse. :
+. : - 30 : ; ;
+. . . Southampton Football Club Limited
+: : " Notes to the Financial Statements (continued) .,
+: ce - for the Year Ended 30 June 2024 :
+—_ 12. _ Intangible assets . ; - a ;
+. . ; ; Player
+; , : ne registrations —
+: . £000
+At 1 July 2023 - 239,132
+: . Additions : : . _ 40,500
+Disposals . : . : (96,815) :
+- "At 30 June 2024 . ee oo 182,817
+. Amortisation . : a .
+’ At 1 July 2023 : 110,515
+, . Charge for the year . - 51,142
+On disposals ; : - . / / (74,832)
+At 30 June 2024 ee " 86,825
+Net book value Se . ; ; .
+: At 30 June 2024 : a —— 95,992
+: At 30 June 2023. : 128,617
+oo Southampton Football Club Limited oo ,
+, . Notes to the Financial Statements (continued) : ; -
+- for the Year Ended 30 June 2024.
+13. Tarigible fixed assets ,
+Fixtures, Assets in ;
+: : , fittings and _—_— course of '
+: : Stadium . vehicles construction Total
+. : oe £000 £000 £000 . £000
+Cost or valuation _ . : ;
+, . At 1 July 2023 . , 7,701 . 21,065 924 29,690 .
+Additions LO - 1,004 _ 3,008 ~ 4,012
+: : Disposals - (1,503) - (1,503)
+‘ Transfers . : . - 1,254 (1,254) -
+i At 30 June 2024 . : : 7,701 21,820 2,678 "32,199 :
+Depreciation ; ce, , , :
+At 1 July 2023 , 550 11,073 _798 12,421 ©
+Charge for the year’ 138 - 2,868 - 3,006
+Disposals , : - (1,456) - (1,456)
+At 30 June 2024 ‘688 12,485 ~ 798: 13,971
+. ’ * Net book value . , : .
+“ - At 30 June 2024 | 7,013 9,335 1,880 18,228 °°
+At 30 June 2023 ° 7,151 , 9,992 126 17,269 oe
+The net book value of tangible fixed assets includes an amount of £1,533,000 (2023: £195,000) in respect
+of assets held under finance leases and hire.purchase contracts. The related depreciation charge on these
+assets for the year was £150,000 (2023: £83,000). “ aa
+coe — ‘Southampton Football Club Limited : -
+: Notes to the Financial Statements (continued) : .
+, Lo . for the Year Ended 30 June 2024 - . .
+- 14. Fixed asset investments . ;
+Subsidiary undertakings : : Co
+_ , Subsidiary companies which are either directly or indirectly held by the Company are as follows: ‘
+, - : . Country of _—_ Class of . ;
+Name of company incorporation shares Holding Nature.of business
+oo St Mary's Training Ground Limited UK : Ordinary . 100% Trading . a , .
+. +Southampton Girls and Women’s UK Ordinary 100 % Trading : :
+: . Football Club Limited 7 . —
+1 St Mary's Catering Limited . UK - Ordinary : 100 % Dormant . ,
+. ‘St Mary's Stadium Limited UK ‘ Ordinary 100 % Dormant ,
+a . . 1 The registered: office of the above companies is St Mary's Stadium, Britannia Road, Southampton,
+$014 SFP. :
+18. Stocks
+SS _ 2024 2023
+; : | * £000 £000
+Goods for resale : a - 444 * 322
+The difference between purchase price or production cost of stocks and their replacement cost is not :
+: material. . : . :
+: Southampton Football Club Limited ,
+. - , ; Notes to the Financial Statements (continued) — =
+, : : for the Year Ended 30 June 2024 : .
+Oo 46. Debtors : ,
+—_ ; - 2024 2023 2~Ci
+: , Lo . : £000 £000 oo
+. - Due within one year: Lo ‘ .
+: ' Trade debtors : : 2,976 2,542
+__ Amounts owed by group undertakings 7,601 10,505 -
+Other debtors. : 5,278 2,817
+Prepayments and accrued income . 4,283 . 3,372
+: Corporation tax © , : : ; 56 80
+7 Transfer fees receivable _ 13,473 2,472
+: : . Deferred tax asset (note 21) . : - - 729 .
+_ , 7 83,667 22,517 .
+' Due after more than one year: ~ : ;
+_ Transfer fees receivable ; . : 3,632 1,355 :
+: Deferred tax asset (note 21) ." Lo. 1,009 10,678 ;
+— 4641 12,033
+17. Creditors: amounts falling due within one year BO oe
+oo Se 2024 ==. 2023
+: . : : . _ £000 £000 :
+' Trade.creditors - . , : -. 3,945 3,377
+Amounts owed to group undertakings . : i 122,531 . 154,829
+. .Taxation and social security . . . 4,037 6,250 .
+: : Obligations under finance lease and hire purchase contracts _ 337 92
+_ Transfer fees payable 44,916 52,321
+. Other creditors —~ . , 355 1,412 :
+: . Accruals and deferred income . 27,273 11,156
+, : ; , . 203,394 229,437
+oo Southampton Football Club Limited =
+: . Notes to the Financial Statements (continued) . :
+co for the Year Ended 30 June 2024
+‘ 18. ' Creditors: amounts falling due after more than one year . .
+- _ 7 2024 2023
+. , : : . : £000 £000
+. - Obligations under finance lease and hire purchase contracts : ~* 1,023 93
+Transfer fees payable : . 23,348 * 40,607
+. . Accruals and deferred income : 2,610 2629
+a 7 26,981 43,329
+: Football Trust grants of £2,436,000 (2023: £2,529,000) are classified as accruals and deferred income within
+creditors falling due after more than one year, with £93,000 (2023: £93,000) falling due within one year,
+-being the amortisation that will be credited in the next accounting period. - .
+19. Hire purchase and finance leases . : : , :
+; . , Minimum lease payments under hire, purchase fall due as follows: ; .
+4% . 2024 2023. :
+to uo . : . : - £000 £000 —
+. ‘Within 1 year . : 337 920
+Between 2 to 5 years . : . 1,023 93 :
+; , , 1,360 — 185°
+; Obligations under finance leases and hire purchase contracts are secured upon the assets to which they :
+relate. : : oo .
+a 20. Provisions for liabilities . . : , : : ,
+: : — ‘ : Contingent Provision a
+. . . . _ transfer for other
+. . Fees costs Total
+/ ‘£000 _ £000 £000
+; At 1 July 2023 ; = 3,319 3,319
+Arising in the year ’ 4,676 381 5,057
+Utilised in the year = . (1,259) (3,319) (4,578)
+: At 30 June 2024 : . 3,417 | 381 "3,798
+: a The provision for other- costs relates to the contractual wage obligations on employees that have since left
+ves : the Club. : ‘
+; Co Southampton Football Club Limited ;
+: : . Notes to the Financial Statements (continued) ° : . ,
+: , for the Year Ended 30 June 2024 | . ; :
+. 21. . Deferred taxation : : . : : . :
+. ; - Deferred tax
+: so. ; . £000
+, Lo Deferred tax asset at 1 July.2023 11,407
+Charged to Statement of Comprehensive Income : (10,398)
+Deferred tax asset at 30 June 2024 ; : . 1,009
+; The deferred tax-asset is made up as follows: , ; , : .
+. , : . . - 2024 2023 .
+~ ; LS . . _ £000 : £000
+_ Unutilised losses -. 8,678
+. Short term timing differences : . . 22 253
+oo Gains rolled over into intangible assets . (1,344) (414)
+Decelerated capital allowances oo 2,331 2,890
+, o, 1,009 11,407
+"92, Share capital a : ; . : . :
+. . : 2024 2023
+, : £000 £000
+. Allotted, called up and fully paid. ~ : , : : :
+. . 501,000 Ordinary shares of £1 each . § 501 ; 501 ~
+_ 23. Reserves , . a ,
+The Company's capital and reserves are as follows: ; oo .
+. Share capital . ; -
+Called up share capital represents the nominal value of the shares issued. : a : .
+Capital contribution reserve ; : , " _
+: During a previous year, capital contributions arose from the receipt of loan waivers from the parent ,
+company and a shareholder of a parent company respectively. In addition, a further capital contribution
+"was recognised as a consequence of the transfer of the trade and assets of St Mary's Catering Limited
+_ and St Mary's Stadium Limited from St Mary's Football Group Limited to the Company on 1 July 2019..
+; Retained losses _ ,
+. Retained losses represent cumulative profits or losses, net of any dividends paid and other adjustments.
+- Southampton Football Club Limited
+- - ; 7 Notes to the Financial Statements (continued) ,
+: : _ forthe Year Ended 30 June 2024 .
+: 24. Pensions Co ’
+The Club participates in the Football League Pension and Life Assurance Scheme (‘the Scheme’). The
+: Scheme is a funded multi-employer defined benefit scheme, with 92. participating employers, and where :
+: “. members may have periods of service attributable to several participating employers. The Club is unable
+to identify its share of the assets and liabilities of the Scheme and therefore accounts for its contributions
+: as if they were paid to a defined contribution scheme. , . : /
+The last actuarial valuation was carried out at 31 August 2023 where the total deficit on the on-going
+valuation basis was £20.6 million. The accrual of benefits ceased within the Scheme on 31 August 1999,
+: ‘ therefore there are no contributions relating to current accrual. The Club pays monthly contributions based ..
+: . on a notional split of the total expenses and deficit contributions of the Scheme. The results of the 2023
+. Valuation were rolled forward to 30 June 2024 on the same assumptions as detailed above, and the Club’s
+: Notional share of the deficit was £270,000 (£215,000 as at 30 June 2023). As.at 30 June 2024, the Club
+was paying total contributions of £11,000 per month (increasing by 5% p.a. on 1 September each year)
+: and based on the actuarial valuation assumptions detailed above will be sufficient to pay off the deficit by :
+: 31 October 2026. . , , ”
+: As at 30 June 2024, based on an appropriate discount rate of 4.96% per annum (6.39% per annum as at .
+: 30 June 2023), the present value of the Club’s outstanding contributions (i.e. their future liability) is.
+£312,000 (£231,000 as at 30 June 2023). This amounts to £137,000 (2023: £131,000) due within one year
+- and £175,000 (2023: £100,000) due after more than one year and is included within other payables. ;
+. : Present Value of Defined Benefit Obligation , :
+a oO _ 2024 2023
+. . . £000 £000
+- ’ Present Value of Defined Benefit ‘Obligation 312 231
+25. Contingent liabilities ‘ _ , ;
+: Excluding items already provided:in the Statement of Financial Position, at 30 June 2024 the Company had
+a liability to pay up to £68,000,000 (2023: £61 800,000) to other clubs in respect of players under contract, :
+dependent upon a number of factors but principally first team appearances. :
+: At 30 June 2024 the Company had contingent sums receivable from other clubs in respect of players sold. |
+Due to the uncertainty of receipt of these contingent assets it is not practicable to disclose the amount likely
+to be received. : . -
+: * Southampton Footbail Club Limited SO
+a Notes to the Financial Statements (continued) =~ .
+for the Year Ended 30 June 2024 * : oy
+. .. ,26. Capital commitments ; ; oo 4 :
+. At 30 June 2024 the Company had capital commitments as follows: . . .
+. . 2024 2023
+_ ; , . . £000 £000 ,
+’ Contracted for but not provided in these financial statements . 1,615. 583 :
+27. Commitments under operating leases :
+At 30 June 2024 the Company had future minimum lease payments under non-cancellable operating leases : .
+, as follows: . _ : : oo
+coe _ 7 2024 2023
+oo . : ; £000 £000
+Not later than 1 year : . . 73 121 :
+. : Later than 1 year and not later than 5 years fo 14, - 79° ‘
+Total. : , : 7 "87 200
+: 28. ‘Related party transactions , .
+. » Management charges of £108,000 (2023: £106,000) were issued during the year by MALI International AG ,
+"to the Group and all transactions were conducted on an arm’s length basis, on normal trading terms. The
+Group also incurred expenses on behalf of MALI International AG, in the ordinary course of business, ata . .
+cost of £14,000 (2023: £16,000) and expenses on behalf of Katharina Liebherr, a common-shareholder, of
+: £2,000 (2023: £1,000). The two parties are related by influence of the common shareholder. The amount
+: owed by MALI International AG to the Group at the reporting date was £2,000 (2023: £Nil). These amounts
+. all relate to trading balances. . . .
+; : Management charges of £850,000 (2023: £850,000) were issued during the year by Sport Republic Holding .
++ Limited to the Group and all transactions were conducted on an arm’s length basis, on normal trading
+_terms. Sport Republic Holding Ltd owns 100% of Sport.Republic UK Ltd, which itself is the majority
+. shareholder of St Mary's Football Group Ltd. During the period Sport Republic Holding Ltd also incurred .
+expenses on behalf of the Club at a cost of £953,000 (2023: £443,000) and the Club incurred expenses on :
+. - behalf of Sport Republic Holding Ltd in the ordinary course of business at a cost of £234,000 (2023: -
+: £941;000). The net amount owed by the Club to Sport Republic Holding Ltd at the reporting date was ,
+: £276,000 (2023: £Nil). These amounts all relate to trading balances. — oF .
+Additionally, during the year the Club incurred expenses on behalf of Dragan Solak (St Mary's Football
+Group Ltd's ultimate controlling party) of £133,000 (2023: £2,000). The net amount owed by Dragan Solak
+to the Club at the reporting date was £131,000 (2023: £1,000). These amounts all relate to trading balances, .
+: all recharged to the related party. 0 :
+During the period St Mary's Football Group Ltd incurred expenses on béhalf of Goztepe SK in the ordinary |
+a course of.business at a cost of £1,000 (2023: ENil). The amount owed by Goztepe SK to the Club atthe + -
+a ’ reporting date was £1,000 (30 June 2023: £Nil). Goztepe SK also charged the Club a development fee
+during the year for a total amount of £343,000 (2023: ENil). The amount owed by the Ciub to Goztepe SK
+- at the reporting date was ENil (2023: £Nil). : :
+Southampton Football Club Limited :
+_ "Notes to the Financial Statements (continued) | Co
+for the Year Ended 30 June 2024 - :
+. 28. Related party transactions (continued) =” : — :
+, t, During the period the Club incurred expenses on behalf of Valenciennes FC in the ordinary course of - .
+. ye business at a cost of £16,000 (2023: £Nil). The amount owed by Valenciennes FC to the Club at the
+. reporting date was £16,000 (2023: ENil). , ; . /
+; oe The company has taken the exemption available in Section 33.1A of FRS 102 not to disclose transactions
+with other wholly owned companies within the Group. mot, oo,
+, : 29. Ultimate parent company ‘and parent undertaking of larger group : :
+The smallest group in which the results of the Company are consolidated is that headed by St Mary's .
+. Football Group. Limited, incorporated’ in Great Britain. The consolidated accounts of this company are
+: “Oo - available to the public and may be obtained from Companies House, Crown Way, Cardiff, CF14 3UZ.
+. . The largest group in which the results of the Company are consolidated is that headed by Sport Republic
+Holding Ltd, which is incorporated in Great Britain. The consolidated accounts of this company are available.
+. to the public and may be obtained from Companies House, Crown Way, Cardiff, CF 14 3UZ.
+. : The directors consider the ultimate controlling party at the Statement of Financial Position date to be .
+‘Mr D Solak. : , Lo , :
+_ 30. Post Statement of Financial Position events —
+Since the Statement of Financial Position date, the Club has entered into sale and purchase agreements ,
+for players with net transactions amounting to £46,800,000 payable (2023: £111,000,000 receivable). .
+; 31. AnnexG ‘ : . —
+. . These financial statements have been prepared in compliance with the Union of European Football : :
+: Associations (“UEFA”) “Annex G Accounting requirements for the preparation of financial statements”.
 

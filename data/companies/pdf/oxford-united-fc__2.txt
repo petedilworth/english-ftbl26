@@ -2,7 +2,7 @@ source: Companies House filing, oxford-united-fc__2.pdf
 document: 7p8Bl3ry3UWND9N1Xyoznc9dsZURrURUDs7a7GL6lxg
 made_up_date: 2024-06-30
 method: ocr
-pages_read: 12 of 33
+pages_read: 33 of 33
 
 Company registration number 00470509 (England and Wales)
 OXFORD UNITED FOOTBALL CLUB LIMITED
@@ -453,4 +453,794 @@ Tax on loss 8 - :
 Loss for the financial year (15,850,627) (8,091,772)
 The profit and loss account has been prepared on the basis that all operations are continuing operations.
 -9-
+OXFORD UNITED FOOTBALL CLUB LIMITED
+STATEMENT OF COMPREHENSIVE INCOME .
+FOR THE YEAR ENDED 30 JUNE 2024
+. Unaudited
+2024 2023
+, as restated
+£ £
+Loss for the year (15,850,627) (8,091,772)
+Other comprehensive income - -
+Total comprehensive income for the year (15,850,627) (8,094,772)
+-10-
+Docusign Envelope ID: 957E7A1E-0698-487A-B98C-49560CBE723A,
+OXFORD UNITED FOOTBALL CLUB LIMITED
+BALANCE SHEET
+AS AT 30 JUNE 2024
+Unaudited
+2024 2023
+as restated
+Notes £ £ £ £
+Fixed assets
+Intangible assets 9 1,842,820 549,043
+Tangible assets 10 1,807,742 2,323,525
+, 3,650,562 2,872,568
+Current assets
+Stocks 11 129,749 335,799
+Debtors 12 1,657,490 2,404,483
+Cash at bank and in hand 470,625 252,214
+2,257,864 2,992,496
+Creditors: amounts falling due within ,
+one year 13 (47,722,314) (31,692,264)
+Net current liabilities (45,464,450) (28,699,768)
+: Total assets less current liabilities (41,813,888) (25,827,200)
+Creditors: amounts falling due after
+more than one year 14 (194,294) (330,355)
+Net liabilities (42,008,182) (26,157,555)
+Capital and reserves
+Called up share capital 20 7,070,527 7,070,527
+Share premium account 21 6,426 6,426
+Capital redemption reserve 21 75 75
+Other reserves 21 298,336 298,336
+Profit and loss reserves 21 (49,383,546) (33,532,919)
+Total equity (42,008,182) (26,157,555)
+These financial statements have been prepared in accordance with the provisions relating to medium-sized
+companies.
+. . . 31 December 2024
+The financial statements were approved by the board of directors and authorised for issue on .................... and
+are signed on its behalf by:
+‘Signed by:
+G S Ferguson
+Director
+Company registration number 00470509 (England and Wales) .
+-W1-
+OXFORD UNITED FOOTBALL CLUB LIMITED
+STATEMENT OF CHANGES IN EQUITY
+FOR THE YEAR ENDED 30 JUNE 2024
+: Share Share Capital Other Profit and Total
+capital premium redemption reserves loss
+7 account reserve reserves
+Notes £ £ £ £ £ £
+As restated for the period ended 30 June 2023:
+Balance at 1 July 2022 (unaudited) 5,070,527 6,426 75 298,336 (25,359,370) (19,984,006)
+Correction of prior period errors - - : - (81,777) (81,777)
+As restated 5,070,527 6,426 75 298,336 (25,441,147) (20,065,783)
+Year ended 30 June 2023 (unaudited):
+Loss and total comprehensive income (as restated) - - - + (8,091,772) (8,091,772)
+Issue of share capital 2,000,000 - - - - 2,000,000
+Balance at 30 June 2023 (unaudited) 7,070,527 6,426 75 298,336 (33,532,919) (26,157,555)
+Year ended 30 June 2024:
+Loss and total comprehensive income - - - - (15,850,627) (15,850,627)
+Balance at 30 June 2024 7,070,527 6,426 75 298,336 (49,383,546) (42,008,182)
+-12-
+OXFORD UNITED FOOTBALL CLUB LIMITED
+STATEMENT OF CASH FLOWS ,
+FOR THE YEAR ENDED 30 JUNE 2024
+Unaudited
+2024 2023
+as restated
+
+Notes £ £ £ £
+Cash flows from operating activities
+Cash generated from/(absorbed by) 26
+operations 4,812,156 (2,335,267)
+Interest paid (128,155) (48,894)
+Net cash inflow/(outflow) from operating
+activities 1,684,001 (2,384,161)
+Investing activities .
+Purchase of intangible assets (1,704,177) (399,541)
+Proceeds from disposal of intangibles 642,680 1,700,121 :
+Purchase of tangibie fixed assets (200,351) (934,277)
+Proceeds from disposal of tangible fixed assets - 69,050
+Net cash (used in)/generated from investing
+activities (1,261,848) 435,353
+
+, Financing activities
+Proceeds from issue of shares - 2,000,000
+Repayment of borrowings (61,200) (60,800)
+Repayment of bank loans (10,000) (10,000)
+Payment of finance leases obligations (132,542) (142,216)
+Net cash (used in)/generated from
+financing activities (203,742) 1,786,984
+Net increase/(decrease) in cash and cash
+equivalents 218,411 (161,824)
+Cash and cash equivalents at beginning of year 252,214 414,038
+Cash and cash equivalents at end of year 470,625 252,214
+-13-
+OXFORD UNITED FOOTBALL CLUB LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS .
+
+FOR THE YEAR ENDED 30 JUNE 2024 :
+
+1 Accounting policies
+Company information
+Oxford United Football Club Limited is a private company limited by shares incorporated in England and
+
+. Wales. The registered office is The Kassam Stadium, Grenoble Road, Oxford, Oxfordshire, OX4 4XP.
+
+1.1 Accounting convention ;
+These financial statements have been prepared in accordance with FRS 102 “The Financial Reporting
+Standard applicable in the UK and Republic of Ireland” (“FRS 102”) and the requirements of the Companies
+Act 2006.
+The financial statements are prepared in sterling, which is the functional currency of the company. Monetary
+amounts in these financial statements are rounded to the nearest £.
+The financial statements have been prepared under the historical cost convention. The principal accounting
+policies adopted are set out below.
+
+1.2. Going concern
+The directors have prepared cash flow forecasts to confirm the funding requirements to 31 December 2025.
+Furthermore, the principal shareholders remain highly supportive of the Club and have confirmed that they will
+continue to support the Club financially to 31 December 2025.
+Taking the above factors into account, the Club's financial statements continue to be prepared on a going
+concern basis.
+
+1.3. Turnover
+Turnover is recognised at the fair value of the consideration received or receivable for goods and services
+provided in the normal course of business and is shown net of VAT and other sales related taxes. The fair
+value of consideration takes into account trade discounts, settlement discounts and volume rebates.
+Revenue from the sale of goods — principally programme and club shop sales - is recognised when the
+significant risks and rewards of ownership of the goods have passed to the buyer, which is usually at the point
+of sale.
+Season ticket income, Football League contributions, donations and similar income is recognised on a _ |...
+
+“77 ""  ~ straight-line basis over the respective football season.
+Gate receipts and television broadcasting fees are included in income at the end of the respective match. ,
+Sponsorship, advertising, membership and similar income is recognised on a Straight-line basis over the
+period stated in the underlying contract.
+The fee income arising on the transfer of players is recognised when the transfers are compiete.
+All amounts are stated net of any amounts due to the Football League and visiting football clubs.
+14- , . Do,
+OXFORD UNITED FOOTBALL CLUB LIMITED:
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+1 Accounting policies * (Continued)
+1.4 Intangible fixed assets other than goodwill
+The element of a player's transfer fee which relates to registration, together with associated costs, is
+capitalised as an intangible asset and amortised as follows: .
+Players’ contracts Over the period of players’ contracts, including any subsequent
+agreed extensions
+No provision is made for the value of players developed within the company.
+Conditional amounts receivable in respect of players transferred are accounted for in the year in which the
+condition is met. Loyalty bonuses are included within direct operating costs in the year of payment.
+1.5 Tangible fixed assets ‘
+Tangible fixed assets are initially measured at cost and subsequently measured at cost or valuation, net of
+depreciation and any impairment losses.
+Depreciation is recognised so as to write off the cost or valuation of assets less their residual values over their
+useful fives on the foliowing bases:
+Leasehold improvements 10% straight line or over the term of the lease
+Fixtures, fittings & equipment 25% straight line
+Motor vehicles 25% straight line
+: The gain or loss arising on the disposal of an asset is determined as the difference between the sale
+proceeds and the carrying value of the asset and is credited or charged to profit or loss. No depreciation is ,
+provided on freehold land. ,
+1.6 \mpairment of fixed assets .
+At each reporting period end date, the company reviews the carrying amounts of its tangible and intangible
+assets to determine whether there is any indication that those assets have suffered an impairment loss. If any
+such indication exists, the recoverable amount of the asset is estimated in order to determine the extent of the
+impairment loss (if any). : .
+In the case of player contracts, recoverable amount would be based upon management's assessment of fair
+: value less sales costs.
+1.7 Stocks
+Stocks are stated at the lower of cost and estimated selling price less costs to complete and sell. Cost
+comprises direct materials and, where applicable, direct labour costs and those overheads that have been
+incurred in bringing the stacks to their present location and condition. .
+. At each reporting date, an assessment is made for impairment. Any excess of the carrying amount of stocks
+over its estimated selling price less costs to complete and sell is recognised as an impairment loss in profit or
+loss. Reversals of impairment losses are also recognised in profit or loss.
+1.8 Cash at bank and in hand :
+Cash and cash equivalents are basic financial assets and include cash in hand, deposits held at call with
+banks, other short-term liquid investments with original maturities of three months or less and bank overdrafts.
+Bank overdrafts are shown within borrowings in current liabilities.
+~15-
+OXFORD UNITED FOOTBALL CLUB LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR ENDED 30 JUNE 2024
+
+1 Accounting policies (Continued)
+
+1.9 Financial instruments
+The company has elected to apply the provisions of Section 11 ‘Basic Financial Instruments’ and Section 12
+‘Other Financial instruments Issues’ of FRS 102 to all of its financial instruments.
+Financial instruments are recognised in the company's balance sheet when the company becomes party to
+the contractual provisions of the instrument.
+Financial assets and liabilities are offset, with the net amounts presented in the financial statements, when
+there is a legally enforceable right to set off the recognised amounts and there is an intention to settle on a
+net basis or to realise the asset and settle the liability simultaneously.
+Basic financial assets
+Basic financial assets, which include debtors and cash and bank balances, are initially measured at
+transaction price, including transaction costs, and are subsequently carried at amortised cost using the
+effective interest method, unless the arrangement constitutes a financing transaction, where the transaction is
+measured at the present value of the future receipts discounted at a market rate of interest. Financial assets
+classified as receivable within one year are not amortised.
+Other financial assets
+Other financial assets, including investments in equity instruments which are not subsidiaries, associates or
+joint ventures, are initially measured at fair value, which is normally the transaction price. Such assets are
+subsequently carried at fair value and the changes in fair value are recognised in profit or loss, except that
+investments in equity instruments that are not publicly traded and whose fair values cannot be measured
+reliably are measured at cost less impairment.
+impairment of financial assets
+Financial assets, other than those held at fair value through profit and loss, are assessed for indicators of
+impairment at each reporting end date.
+Financial assets are impaired where there is objective evidence that, as a result of one or more events that
+occurred after the initial recognition of the financial asset, the estimated future cash flows have been affected.
+If an asset is impaired, the impairment loss is the difference between the carrying amount and the present
+value of the estimated cash flows discounted at the asset's original effective interest rate. The impairment loss
+is recognised in profit or loss.
+If there is a decrease in the impairment loss arising from an event occurring after the impairment was
+recognised, the impairment is reversed. The reversal is such that the current carrying amount does not
+exceed what the carrying amount would have been, had the impairment not previously been recognised. The
+impairment reversal is recognised in profit or Joss.
+Derecognition of financial assets
+Financial assets are derecognised only when the contractual rights to the cash flows from the asset expire or
+are settled, or when the company transfers the financial asset and substantially alf the risks and rewards of
+ownership to another entity, or if some significant risks and rewards of ownership are retained but control of
+the asset has transferred to another party that is able to sell the asset in its entirety to an unrelated third party.
+Classification of financial liabilities
+Financial liabilities and equity instruments are classified according to the substance of the contractual
+arrangements entered into. An equity instrument is any contract that evidences a residual interest in the
+assets of the company after deducting all of its liabilities. :
+
+-16-
+OXFORD UNITED FOOTBALL CLUB LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR ENDED 30 JUNE 2024
+
+1 Accounting policies (Continued)
+Basic financial liabilities
+Basic financial liabilities, including creditors, bank loans, loans from fellow group companies and preference
+shares that are classified as debt, are initially recognised at transaction price unless the arrangement
+constitutes a financing transaction, where the debt instrument is measured at the present value of the future
+payments discounted at a market rate of interest. Financial liabilities classified as payable within one year are
+not amortised.
+Debt instruments are subsequently carried at amortised cost, using the effective interest rate method.
+Trade creditors are obligations to pay for goods or services that have been acquired in the ordinary course of
+business from suppliers. Amounts payable are classified as current liabilities if payment is due within one year
+or less. If not, they are presented as non-current liabilities. Trade creditors are recognised initially at
+transaction price and subsequently measured at amortised cost using the effective interest method.
+Other financial liabilities
+Derivatives, including interest rate swaps and forward foreign exchange contracts, are not basic financial
+instruments. Derivatives are initially recognised at fair value on the date a derivative contract is entered into
+and are subsequently re-measured at their fair value. Changes in the fair value of derivatives are recognised
+in profit or loss in finance costs or finance income as appropriate, unless hedge accounting is applied and the
+hedge is a cash flow hedge.
+Debt instruments that do not meet the conditions in FRS 102 paragraph 11.9 are subsequently measured at
+fair value through profit or loss. Debt instruments may be designated as being measured at fair value through
+profit or loss to eliminate or reduce an accounting mismatch or if the instruments are measured and their
+performance evaluated on a fair value basis in accordance with a documented risk management or
+investment strategy.
+Derecognition of financial liabilities
+Financial liabilities are derecognised when the company’s contractual obligations expire or are discharged or ,
+cancelled. ,
+
+1.10 Equity instruments
+Equity instruments issued by the company are recorded at the proceeds received, net of transaction costs.
+Dividends payable on equity instruments are recognised as liabilities once they are no longer at the discretion
+of the company.
+
+1.11 Taxation
+The tax expense represents the sum of the tax currently payable and deferred tax.
+Current tax
+The tax currently payable is based on taxable profit for the year. Taxable profit differs from net profit as
+reported in the profit and loss account because it excludes items of income or expense that are taxable or
+deductible in other years and it further excludes items that are never taxable or deductible. The company’s
+liability for current tax is calculated using tax rates that ave been enacted or substantively enacted by the
+reporting end date.
+
+-17-
+OXFORD UNITED FOOTBALL CLUB LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR ENDED 30 JUNE 2024
+
+1 Accounting policies (Continued)
+Deferred tax
+Deferred tax liabilities are generally recognised for all timing differences and deferred tax assets are
+recognised to the extent that it is probable that they will be recovered against the reversal of deferred tax
+liabilities or other future taxable profits. Such assets and liabilities are not recognised if the timing difference
+arises from goodwill or from the initial recognition of other assets and liabilities in a transaction that affects
+neither the tax profit nor the accounting profit.
+The carrying amount of deferred tax assets is reviewed at each reporting end date and reduced to the extent
+that it is no longer probable that sufficient taxable profits will be available to allow all or part of the asset to be
+recovered. Deferred tax is calculated at the tax rates that are expected to apply in the period when the liability
+is settled or the asset is realised. Deferred tax is charged or credited in the profit and loss account, except
+when it relates to items charged or credited directly to equity, in which case the deferred tax is also dealt with
+in equity. Deferred tax assets and liabilities are offset when the company has a legally enforceable right to
+offset current tax assets and liabilities and the deferred tax assets and liabilities relate to taxes levied by the
+same tax authority. :
+
+1.12 Employee benefits
+The costs of short-term employee benefits are recognised as a liability and an expense, unless those costs
+
+: are required to be recognised as part of the cost of stock or fixed assets.
+
+The cost of any unused holiday entitlement is recognised in the period in which the employee's services are
+received.
+Termination benefits are recognised immediately as an expense when the company is demonstrably
+committed to terminate the employment of an employee or to provide termination benefits.
+
+1.13 Retirement benefits
+The company contributes to a defined contribution pension scheme in respect of certain employees. The cost
+of such contributions to the scheme is charged to the profit and loss account as incurred. The assets of the
+schemes are held separately from those of the company, mainly in funds administered by the Football League
+Limited Pension and Life Assurance Scheme.
+The company is a member of the Football League Pension and Life Assurance Scheme (the “Scheme’”). The
+Scheme is a multi-employer defined benefit pension scheme, where it is unable to identify its share of the
+underlying assets and liabilities on a consistent and reasonable basis. Therefore, as required by FRS102, the
+company accounts for the Scheme as if it was a defined contribution scheme. As a result, the amounts
+charged to Administrative expenses represent the contributions payable to the Scheme. Where material,
+contributions payable under an agreement with the Scheme to fund past deficits are recognised as a liability
+in the company’s financial statements. These are the known repayments, discounted to the net present value
+at the financial year-end using a market rate discount factor. Where material, the unwinding of the discount is :
+recognised as a finance cost in the profit and loss account in the period incurred.
+
+1.14 Leases
+Leases are classified as finance leases whenever the terms of the lease transfer substantially all the risks and
+rewards of ownership to the lessees. All other leases are classified as operating leases.
+Assets held under finance leases are recognised as assets at the lower of the assets’ fair value at the date of
+inception and the present value of the minimum lease payments. The related liability is included in the
+balance sheet as a finance lease obligation. Lease payments are treated as consisting of capital and interest
+elements. The interest is charged to profit or loss so as to produce a constant periodic rate of interest on the
+remaining balance of the liability.
+Rentals payable under operating leases, including any lease incentives received, are charged to profit or loss
+
+: on a straight line basis over the term of the relevant lease, except where another more systematic basis is
+
+more representative of the time pattern in which economic benefits from the leased asset are consumed.
+OXFORD UNITED FOOTBALL CLUB LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR ENDED 30 JUNE 2024
+
+1 Accounting policies (Continued)
+
+1.15 Foreign exchange
+Transactions in currencies other than pounds sterling are recorded at the rates of exchange prevailing at the
+dates of the transactions. At each reporting end date, monetary assets and liabilities that are denominated in
+foreign currencies are retranslated at the rates prevailing on the reporting end date. Gains and losses arising
+on translation in the period are included in profit or loss.
+
+1.16 Insurance claim proceeds
+Insurance proceeds received for the replacement of tangible fixed assets are included in other operating
+income when the amount of the claim has been agreed and the cost of the replacement assets has been
+incurred.
+Insurance proceeds received to cover costs which are not capital in nature are included in other operating
+income to the extent that the associated cost has been incurred at the reporting date. Insurance proceeds
+received are included in deferred income to the extent that the covered costs have not been incurred at the
+reporting date. - .
+
+2 Judgements and key sources of estimation uncertainty
+In the application of the company’s accounting policies, the Directors are required to make judgements,
+estimates and assumptions about the carrying amount of assets and liabilities that are not readily apparent
+from other sources. The estimates and associated assumptions are based on historical experience and other
+factors that are considered to be relevant. Actual results may differ from these estimates. .
+The estimates and underlying assumptions are reviewed on an ongoing basis. Revisions to accounting
+estimates are recognised in the period in which the estimate is revised where the revision affects only that
+period, or in the period of the revision and future periods where the revision affects both current and future
+periods.
+Critical judgements
+The following judgements (apart from those involving estimates) have had the most significant effect on :
+amounts recognised in the financial statements.
+Expenditure incurred on proposed new stadium
+
+- The Club has incurred expenditure in connection with the proposed construction of a new football stadium.
+FRS102 permits such expenditure to be capitalised within tangible fixed assets only if it is probable that future ~
+economic benefits associated with the proposed new stadium will flow to the Club. At 30 June 2024, the Club
+has not obtained planning consent for the new stadium and all associated expenditure incurred to that date
+has been written off as incurred.
+intangible fixed assets
+The directors assess whether there is any indication that player contracts, capitalised as intangible fixed .
+assets, are impaired. Where impairment indicators are identified, an impairment review is performed as set
+out in Note 1.6.
+
+-~19-
+OXFORD UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+3 Turnover -
+Unaudited
+2024 2023
+£ £ ,
+Turnover analysed by class of business
+Gate receipts 2,524,806 2,467,379
+Football League Contributions 2,254,660 1,646,162
+Sponsorship and advertising 922,003 891,792
+Broadcasting rights 15,000 164,000
+Youth Academy grants 518,083 553,946
+Commercial income 1,877,320 1,619,018
+Other income 327,199 144,831
+8,439,071 7,487,128
+4 Other operating income
+Other operating income represents the proceeds from an insurance claim made during the financial year. .
+5 Operating loss
+Unaudited
+2024 2023
+Operating loss for the year is stated after charging/(crediting): £ £
+Exchange losses 9,915 -
+Fees payable to the company's auditor for the audit of the company's financial
+statements 30,000 -
+Depreciation of owned tangible fixed assets 658,322 384,246
+Loss/(profit) on disposal of tangible fixed assets 57,813 (11,788)
+Amortisation of intangible assets 593,313 347,309
+Operating lease charges 729,009 623,983
+6 Employees : : : : ; :
+The average monthly number of persons (including directors) employed by the company during the year was:
+: Unaudited
+2024 2023
+Number Number
+Full time playing, training and football management 141 122
+Administration, commercial and stadium maintenance 52 49
+Casual staff 61 67
+Total 254 238
+-20-
+, .
+OXFORD UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+6 Employees (Continued)
+Their aggregate remuneration comprised:
+Unaudited
+2024 2023
+. £ £
+Wages and salaries , 9,980,513 7,679,059
+Social security costs 1,195,650 911,401
+Pension costs 74,924 57,691
+11,251,087 8,648,151
+7 Interest payable and similar expenses
+Unaudited
+2024 * 2023
+£ £
+interest on financial liabilities measured at amortised cost:
+Interest on bank overdrafts and loans 866 1,115
+Interest payable to group undertakings 83,576 -
+84,442 1,115
+Other finance costs:
+interest on finance leases and hire purchase contracts 23,269 21,736
+Other interest 20,444 26,043
+128,155 48,894
+-21-
+OXFORD UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+8 Taxation
+The actual charge for the year can be reconciled to the expected credit for the year based on the profit or loss
+and the standard rate of tax as follows:
+, Unaudited
+. 2024 2023
+£ £
+Loss before taxation (15,850,627) (8,091,772) -
+Expected tax credit based on the standard rate of corporation tax in the UK of .
+25.00% (2023: 19.00%) (3,962,657) (1,537,437)
+Tax effect of expenses that are not deductible in determining taxable profit 1,262,940 45,893
+Unutilised tax losses carried forward 2,591,020 1,228,306
+Other permanent differences - 304,691
+Depreciation in excess of capital allowances 120,605 (34,325)
+Other timing differences (11,908) (7,128)
+: Taxation charge for the year : - -
+The company has estimated losses of £40,807,963 (2023: £30,983,983) available for carry forward against
+future profits.
+9 Intangible fixed assets :
+Players’
+contracts
+£
+Cost
+At 1 July 2023 (unaudited) 1,417,588
+Additions 1,908,136
+Disposals (201,605)
+At 30 June 2024 3,124,119
+Amortisation and impairment
+At 1 July 2023 (unaudited) 868,545
+Amortisation charged for the year 593,313
+Disposals (180,559)
+At 30 June 2024 1,281,299
+Carrying amount
+At 30 June 2024 1,842,820
+At 30 June 2023 (unaudited) 549,043
+-22-
+*
+OXFORD UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+10 Tangible fixed assets
+Leasehold Fixtures, Motor Total
+improvements fittings & vehicles
+equipment
+£ £ £ £
+Cost
+At 1 July 2023 (unaudited) 2,198,520 1,620,653 55,394 3,874,567
+Additions 39,249 161,102 - 200,351
+Disposals (3,570) (206,866) - (210,436)
+At 30 June 2024 2,234,199 1,574,889 55,394 3,864,482
+Depreciation and impairment
+At 1 July 2023 (unaudited) 537,267 958,380 55,394 1,551,041
+Depreciation charged in the year 441,189 217,133 - 658,322
+Eliminated in respect of disposals (862) (151,761) - (152,623)
+At 30 June 2024 977,594 1,023,752 55,394 2,056,740
+Carrying amount
+At 30 June 2024 1,256,605 551,137 - 1,807,742
+At 30 June 2023 (unaudited) 1,661,253 662,273 - 2,323,525 ;
+The net carrying value of tangible fixed assets includes the following in respect of assets held under finance
+leases or hire purchase contracts.
+Unaudited
+2024 2023
+: £ £ .
+Fixtures, fittings & equipment 255,906 358,268
+11 Stocks ; ee
+Unaudited
+2024 2023
+. £ £
+Finished goods and goods for resale 129,749 335,799
+~23- .
+4
+a
+OXFORD UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+12 Debtors
+Unaudited
+2024 2023
+Amounts falling due within one year: £ £
+Trade debtors 239,983 1,222,964
+Other debtors 595,798 ~ 431,754
+Prepayments and accrued income 429,476 334,946
+: 1,265,257 1,989,661
+Unaudited
+: 2024 2023
+Amounts falling due after more than one year: £ £
+Prepayments and accrued income 392,233 414,822 :
+Total debtors 1,657,490 2,404,483
+13 Creditors: amounts falling due within one year
+Unaudited
+2024 2023
+Notes £ £
+Bank loan 15 10,000 10,000
+, Obligations under finance leases 16 150,198 132,542
+Other borrowings 15 : 61,200
+Trade creditors 2,967,836 2,461,109
+Amounts owed to group undertakings 40,382,716 26,811,725
+Taxation and social security 549,356 298,925
+~ Deferred: income - oe - - 19. 1,786,989 1,227,023
+Other creditors 116,224 132,199
+Accruals and deferred income 1,758,995 557,541
+47,722,314 31,692,264
+Included in other creditors is a balance of £34,293 (2023: £51,072) owed to the Football League Limited
+Pension and Life Assurance Scheme.
+; ~24-
+‘
+~
+. :
+OXFORD UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+14 Creditors: amounts falling due after more than one year
+Unaudited
+2024 2023
+£ £
+Bank loan 15 19,167 29,167
+Obligations under finance leases 16 3,890 154,088
+Other creditors 171,237 147,100
+194,294 330,355
+Included in other creditors is a balance of £171,237 (2023: £147,100) owed to the Football League Limited
+Pension and Life Assurance Scheme.
+The bank loan totals £29,167 (2023: £39,167) and is repayable by instalments.
+15 Loans and overdrafts
+Unaudited
+2024 2023
+£ £
+Bank loans 29,167 39,167
+Other loans - 61,200 .
+29,167 100,367
+Payable within one year 40,000 71,200
+Payable after one year 19,167 29,167
+16 Finance lease obligations
+Unaudited
+: 2024 2023
+Future minimum lease payments due under finance leases: £ £
+Within one year : 150,198 132,542
+In two to five years 3,890 164,088
+. 154,088 286,630
+Finance lease payments represent rentals payable by the company for certain items of plant and machinery.
+Leases include purchase options at the end of the lease period, and no restrictions are placed on the use of
+the assets. The average lease term is 3 years. Ail leases are on a fixed repayment basis and no
+arrangements have been entered into for contingent rental payments.
+-25-
+OXFORD UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024 .
+17 Defined benefit pension
+The company has a liability under the Footbali League defined benefit scheme which closed in 1999. A
+balance of £205,530 remained outstanding at 30 June 2024 (2023: £198,172) in total, which is allocated
+between creditors falling due within and after one year. The most recent actuarial valuation took place as at 31
+August 2023 and the amounts included in these financial statements for the year ended 30 June 2024 are
+based on that valuation. The amounts included in the financial statements for the year ended 30 June 2023
+are based on a valuation which took place during the year ended 1 September 2020. The movement on the
+balance of £198,172 at 30 June 2023 to £205,530 at 30 June 2024 is represented by payments to the scheme
+of £51,072, interest charged of £20,221 and a loss arising on the actuarial valuation of £38,209.
+The scheme is a multi employer scheme in which the football club no longer actively participates. The football
+league arranges actuarial valuations every three years and the club is informed of its share of liabilities and
+payments due over the next three years. As the club is unable to independently identify its own share of
+. assets and liabilities, it teats and discloses the scheme as a defined contribution scheme whilst recognising
+known liabilities for which it has a contractual obligation.
+18 Retirement benefit schemes :
+Unaudited
+2024 2023
+Defined contribution schemes £ £
+Charge to profit or loss in respect of defined contribution schemes 74,924 57,691
+Charge to profit or loss in respect of actuarial valuation 38,209 -
+The company operates a defined contribution pension scheme for all qualifying employees. The assets of the
+scheme are held separately from those of the company in an independently administered fund.
+19 Deferred income
+Unaudited
+. 2024 2023
+£ £
+Other deferred income 1,786,989 1,227,023
+-26-
+5 :
+e
+OXFORD UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+20 ~=Share capital
+Unaudited
+. : 2024 2023 ;
+£ £
+Ordinary share capital :
+Issued and fully paid
+800 Ordinary 1 shares of £7 each 5,600 5,600
+6,049,927 Ordinary shares of £1 each . 6,049,927 6,049,927
+: 6,055,527 6,055,527
+Preference share capital
+Issued and fully paid
+1,015,000 Preference shares of £1 each 1,015,000 1,015,000
+Rights attached to share classes
+The rights conferred by the ordinary shares are as follows:- :
+a) Ordinary shares carry one vote for every £1 of nominal capital. Subject to this, the ordinary shares of £7
+each and the ordinary shares of £1 each rank pari passu in all respects and constitute one class.
+b) No dividend can exceed the maximum allowed from time to time by the Football Association. Subject
+thereto, and the Companies Act 2006, interim dividends may be declared and paid by the directors in their
+discretion if the profits so justify. Subject to the above, the payment of final dividends requires an ordinary
+resolution.
+c) Ordinary shares are not redeemable.
+d) On a winding up the ordinary shares rank behind the preference shares in respect of any surplus assets
+but if such surplus assets are more than sufficient to pay to members the whole amount paid up on their
+shares, the balance shall be given to the Football Association Benevolent Fund or to some other similar club
+or institute in Oxfordshire. :
+The rights conferred by the preference shares are as follows:-
+a) Holders are entitled to a fixed preferential dividend at the rate of 5.25% per annum on the amounts for the
+time being paid thereon. This dividend ranks for payment in priority to the payment on other shares of the
+company and is payable in respect of any accounting reference period (if and so far as, in the opinion of the
+directors, the profits of the company justify such payment) six months after the accounting reference date
+which concludes that period, provided such preference shares were in issue during the whole of such period.
+b) On a winding up or other repayment of capital, holders are entitled to have the assets of the company
+available for distribution amongst the members applied, in priority to any other class of shares, in paying to
+them pari passu the capital paid up on their preference shares. .
+c) Holders are not entitled to receive notice of or attend or vote at any General Meeting unless the business .
+of the meeting includes the consideration of a resolution for winding up the company or reducing its share
+capital.
+d) Holders do not have the right to any further or other participation in the profits or assets of the company.
+e) Preference shares are not redeemable.
+-27-
+&
+%
+OXFORD UNITED FOOTBALL CLUB LIMITED ;
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+21 +Reserves
+Profit and loss account
+The profit and loss account relates to cumulative retained earnings less amounts distributed to shareholders.
+Share premium account
+The share premium account relates to the consideration for shares issued by the company which exceeds the
+nominal value of those shares.
+Capital redemption reserve .
+The capital redemption reserve relates to shares which were previously cancelled by the company.
+Other reserve
+The other capital reserve relates to the discount to present value arising on a shareholder loan issued to the
+company at a below-market rate of interest.
+22 ‘Related party transactions
+Remuneration of key management personnel .
+The remuneration of key management personnel is as follows.
+Unaudited
+2024 2023
+£ £
+Aggregate compensation 250,000 491,532
+During the year, the company provided £332,009 (2023: £163,951) against balances due from a company
+under common control. There were no balances outstanding at the balance sheet date (2023: £Nil).
+23 Operating lease commitments
+Lessee
+At the reporting end date the company had outstanding commitments for future minimum lease payments
+under non-cancellable operating leases, which fall due as follows:
+Unaudited
+2024 2023
+£ £
+Within one year 661,929 494,601
+Between two and five years 362,616 865,552
+1,024,545 1,360,153
+- 28 - .
+_ OXFORD UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+24 Events after the reporting date
+Since the year-end, the Club has entered into transfer agreements amounting to net transfer fees payable of
+approximately £2,120,365.
+At the year-end, further amounts were potentially receivable in respect of players sold, and further amounts
+were potentially payable in respect of players purchased, conditional upon future events occurring. In
+accordance with the accounting policy in note 1, these will be accounted for in the year in which those future
+events take place, if they occur.
+25 Ultimate controlling party
+The parent company is Oxford Investment Holding PTE Ltd, a company registered in Singapore and which is
+the parent company of the smallest group which prepares consolidated financial statements of which Oxford
+United Football Club Limited is a member. The address of Oxford Investment Holding PTE Ltd is 96 Robinson
+Road, #16-04, SIF Building, Singapore, 068899.
+26 Cash generated from/(absorbed by) operations
+Unaudited
+2024 2023
+: £ £ :
+Loss for the year after tax (15,850,627) (8,091,772)
+Adjustments for: :
+Finance costs : 128,155 48,894
+Loss/(gain) on disposal of tangible fixed assets 57,813 (11,788)
+(Profit) on disposal of players (621,634) (1,627,407)
+Amortisation and impairment of intangible assets 593,313 347,310
+Depreciation and impairment of tangible fixed assets 658,322 384,246
+Movements in working capital: :
+Decrease/(increase) in stocks 206,050 (277,192)
+Decrease/(increase) in debtors 746,993 (557,536)
+Increase in creditors 45,333,805 7,949,941
+Increase/(decrease) in deferred income 559,966 (499,963)
+Cash generated from/(absorbed by) operations 1,812,156 (2,335,267)
+27 ‘Analysis of changes in net funds/(debt)
+. Unaudited
+. 1 July 2023 Cash flows 30 June 2024
+£ £ £
+Cash at bank and in hand . 252,214 218,411 470,625
+Borrowings excluding overdrafts (100,367) 71,200 (29,167)
+Obligations under finance leases (286,630) 132,542 (154,088)
+(134,783) 422,153 287,370
+-29-
+OXFORD UNITED FOOTBALL CLUB LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR ENDED 30 JUNE 2024
+
+28 = Prior period adjustment
+Trade creditor misstatement .
+The value of a trade creditor had been understated in previous years due to an accounting error. This error
+has been corrected via the inclusion of a prior period adjustment to the comparative financial information to 30
+June 2023 included in these financial statements. The effect of correcting this error is to increase trade
+creditors, as previously stated at 30 June 2023, by £483,908, to increase the value of prepayments by
+£58,519, to increase the value VAT recoverable by £60,150 and to reduce the value of trade debtors by
+£8,000. The effect of correcting this error is also to increase cost of sales, as previously stated for the year
+ended 30 June 2023, by £335,960, to increase administration expenses by £11,644 and to reduce the bad
+debt expense by £40,000. The effect of this prior period error was also to increase the deficit on the profit and
+loss reserve at 1 July 2022 by £65,635 and by £373,239 at 30 June 2023.
+
+. Capitalisation of proposed new stadium development costs
+As noted in Note 2, the Club will write off the costs incurred in connection with a proposed new stadium until
+the point that planning permission is granted, that it is probable that future economic benefits will arise from
+the new stadium and that the capitalisation criteria set out in FRS 102 are met. Costs incurred in previous
+financial years had been capitalised in error and were included in tangible fixed assets. This accounting error
+has been corrected via the inclusion of a prior period adjustment to the comparative financial information to 30
+June 2023 included in these financial statements. The effect of correcting this error is to reduce tangible fixed
+assets, as previously stated at 30 June 2023, by £1,619,782. The effect of this prior period error was also to
+increase the deficit on the profit and loss reserve at 1 July 2022 by £16,143 and by £1,619,782 at 30 June
+: 2023.
+. - 30-
 

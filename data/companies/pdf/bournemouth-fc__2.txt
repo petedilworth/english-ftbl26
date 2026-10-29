@@ -2,7 +2,7 @@ source: Companies House filing, bournemouth-fc__2.pdf
 document: MPF74c50YFaapFAWPj-gxcUtt6aySxnS1Z_LUtY3CjI
 made_up_date: 2024-06-30
 method: ocr
-pages_read: 12 of 39
+pages_read: 39 of 39
 
 N oe
 Registered number: 06632170
@@ -423,4 +423,1009 @@ Under section 487(2) of the Companies Act 2006, PricewaterhouseCoopers LLP will 
 reappointed as auditors 28 days after these financial statements were sent to members or 28 days after the
 latest date prescribed for filing the financial statement with the registrar, whichever is earlier.
 10
+AFC BOURNEMOUTH LIMITED
+DIRECTORS’ REPORT (continued)
+FOR THE YEAR ENDED 30 JUNE 2024
+The Directors' Report presented above is authorised by the Board on 19 November 2024 and signed on its
+behalf by: f .
+JE Frevola ,
+Director
+an
+AFC BOURNEMOUTH LIMITED
+
+INDEPENDENT AUDITORS’ REPORT TO THE MEMBERS OF AFC
+
+BOURNEMOUTH LIMITED
+
+Report on the audit of the financial statements
+
+Opinion
+
+In our opinion, AFC Bournemouth Limited's financial statements: .
+
++ give a true and fair view of the state of the Company's affairs as at 30 June 2024 and of its loss and cash
+flows for the year then ended;
+
++ have been properly prepared in accordance with United Kingdom Generally Accepted Accounting
+Practice (United Kingdom Accounting Standards, including FRS 102 "The Financial Reporting Standard
+applicable in the UK and Republic of Ireland”, and applicable law); and
+
+* have been prepared in accordance with the requirements of the Companies Act 2006.
+
+We have audited the financial statements, included within the Annual Report and Financial Statements (the
+"Annual Report"), which comprise: the Statement of Financial Position as at 30 June 2024; the Statement of
+Comprehensive Income, the Statement of Changes in Equity and the Statement of Cash Flows for the year
+then ended; and the notes to the financial statements, which include a description of the significant accounting
+policies.
+Basis for opinion
+We conducted our audit in accordance with International Standards on Auditing (UK) ("ISAs (UK)") and
+applicable law. Our responsibilities under !SAs (UK) are further described in the Auditors’ responsibilities for
+the audit of the financial statements section of our report. We believe that the audit evidence we have
+obtained is sufficient and appropriate to provide a basis for our opinion.
+Independence
+We remained independent of the Company in accordance with the ethical requirements that are relevant to
+our audit of the financial statements in the UK, which includes the FRC's Ethical Standard, and we have
+fulfilled our other ethical responsibilities in accordance with these requirements. .
+Conclusions relating to going concern
+Based on the work we have performed, we have not identified any material uncertainties relating to events or
+conditions that, individually or collectively, may cast significant doubt on the Company's ability to continue as a
+going concern for a period of at least twelve months from when the financial statements are authorised for
+issue.
+In auditing the financial statements, we have concluded that the directors’ use of the going concern basis of
+accounting in the preparation of the financial statements is appropriate.
+However, because not all future events or conditions can be predicted, this conclusion is not a guarantee as to
+the Company's ability to continue as a going concern.
+Our responsibilities and the responsibilities of the directors with respect to going concern are described in the .
+relevant sections of this report.
+
+12
+AFC BOURNEMOUTH LIMITED
+INDEPENDENT AUDITORS’ REPORT TO THE MEMBERS OF AFC
+BOURNEMOUTH LIMITED (continued) ;
+Reporting on other information
+The other information comprises all of the information in the Annual Report other than the financial statements
+and our auditors’ report thereon. The directors are responsible for the other information. Our opinion on the
+financial statements does not cover the other information and, accordingly, we do not express an audit opinion
+or, except to the extent otherwise explicitly stated in this report, any form of assurance thereon.
+In connection with our audit of the financial statements, our responsibility is to read the other information and,
+in doing so, consider whether the other information is materially inconsistent with the financial statements or
+our knowledge obtained in the audit, or otherwise appears to be materially misstated. If we identify an
+apparent material inconsistency or material misstatement, we are required to perform procedures to conclude
+whether there is a material misstatement of the financial statements or a material misstatement of the other
+information. If, based on the work we have performed, we conclude that there is a material misstatement of
+this other information, we are required to report that fact. We have nothing to report based on these
+responsibilities.
+With respect to the Strategic Report and Directors' Report, we also considered whether the disclosures
+required by the UK Companies Act 2006 have been included.
+Based on our work undertaken in the course of the audit, the Companies Act 2006 requires us also to report .
+certain opinions and matters as described below.
+Strategic Report and Directors' Report
+In our opinion, based on the work undertaken in the course of the audit, the information given in the Strategic
+Report and Directors' Report for the year ended 30 June 2024 is consistent with the financial statements and
+has been prepared in accordance with applicable legal requirements.
+In light of the knowledge and understanding of the Company and its environment obtained in the course of the
+audit, we did not identify any material misstatements in the Strategic Report and Directors’ Report.
+Responsibilities for the financial statements and the audit -
+Responsibilities of the directors for the financial statements
+As explained more fully in the Statement of director's responsibilities in respect of the financial statements, the
+directors are responsible for the preparation of the financial statements in accordance with the applicable
+framework and for being satisfied that they give a true and fair view. The directors are also responsible for
+such internal control as they determine is necessary to enable the preparation of financial statements that are
+free from material misstatement, whether due to fraud or error.
+In preparing the financial statements, the directors are responsible for assessing the Company's ability to
+continue as a going concern, disclosing, as applicable, matters related to going concern and using the going
+concern basis of accounting unless the directors either intend to liquidate the Company or to cease
+operations, or have no realistic alternative but to do so.
+
+13
+AFC BOURNEMOUTH LIMITED
+
+INDEPENDENT AUDITORS’ REPORT TO THE MEMBERS OF AFC .
+BOURNEMOUTH LIMITED (continued)
+
+Responsibilities for the financial statements and the audit (continued)
+
+Auditors’ responsibilities for the audit of the financial statements
+
+Our objectives are to obtain reasonable assurance about whether the financial statements as a whole are free
+from material misstatement, whether due to fraud or error, and to issue an auditors’ report that includes our
+opinion. Reasonable assurance is a high level of assurance, but is not a guarantee that an audit conducted in
+accordance with ISAs (UK) will always detect a material misstatement when it exists. Misstatements can arise
+from fraud or error and are considered material if, individually or in the aggregate, they could reasonably be
+expected to influence the economic decisions of users taken on the basis of these financial statements.
+Irregularities, including fraud, are instances of non-compliance with laws and regulations. We design
+procedures in line with our responsibilities, outlined above, to detect material misstatements in respect of
+irregularities, including fraud. The extent to which our procedures are capable of detecting irregularities,
+including fraud, is detailed below.
+
+Based on our understanding of the Company and industry, we identified that the principal risks of non-
+compliance with jaws and regulations related to Premier League Profitability and Sustainability Rules, and we
+considered the extent to which non-compliance might have a material effect on the financial statements. We
+also considered those laws and regulations that have a direct impact on the financial statements such as tax .
+legislation and the Companies Act 2006. We evaluated management's incentives and opportunities for
+fraudulent manipulation of the financial statements (including the risk of override of controls), and determined
+that the principal risks were related to inappropriate extraction of cash from the business. Audit procedures
+performed by the engagement team included:
+
++ Discussions with management throughout the year, as well as at year end. These discussions have
+included consideration of known or suspected instances of non-compliance with laws and regulations
+and fraud.
+
++ Identifying and testing journal entries, in particular any journal entries posted with unusual account
+combinations, which reduce cash.
+
++ Incorporating elements of unpredictability into the audit procedures performed, including testing of
+changes to supplier standing data, identification and analysis of revenues generated from related .
+parties and target testing a sample of material round sum payments.
+
++ Reviewing the financial statement disclosures and testing to supporting documentation to assess
+compliance with applicable laws and regulations.
+
+There are inherent limitations in the audit procedures described above, We are less likely to become aware of
+instances of non-compliance with laws and regulations that are not closely related to events and transactions
+reflected in the financial statements. Also, the risk of not detecting a material misstatement due to fraud is
+higher than the risk of not detecting one resulting from error, as fraud may involve deliberate concealment by,
+for example, forgery or intentional misrepresentations, or through collusion.
+A further description of our responsibilities for the audit of the financial statements is located on the FRC's
+website at: www.frc.org.uk/auditorsresponsibilities. This description forms part of our auditors’ report.
+Use of this report :
+This report, including the opinions, has been prepared for and only for the Company's members as a body in
+accordance with Chapter 3 of Part 16 of the Companies Act 2006 and for no other purpose. We do not, in
+giving these opinions, accept or assume responsibility for any other purpose or to any other person to whom
+this report is shown or into whose hands it may come save where expressly agreed by our prior consent in
+writing.
+
+14
+AFC BOURNEMOUTH LIMITED
+
+INDEPENDENT AUDITORS’ REPORT TO THE MEMBERS OF AFC
+BOURNEMOUTH LIMITED (continued)
+
+Other required reporting
+
+Companies Act 2006 exception reporting
+
+Under the Companies Act 2006 we are required to report to you if, in our opinion:
+
+* we have not obtained all the information and explanations we require for our audit; or
+
+* adequate accounting records have not been kept by the Company, or returns adequate for our audit have
+
+not been received from branches not visited by us; or
+
+* certain disclosures of directors’ remuneration specified by law are not made; or
+
++ the financial statements are not in agreement with the accounting records and returns.
+We have no exceptions to report arising from this responsibility.
+Christopher Boreham (Senior Statutory Auditor) ,
+for and on behalf of PricewaterhouseCoopers LLP
+Chartered Accountants and Statutory Auditors
+Southampton
+
+Date: 19 November 2024
+
+15
+AFC BOURNEMOUTH LIMITED
+STATEMENT OF COMPREHENSIVE INCOME
+FOR THE YEAR ENDED 30 JUNE 2024
+, 2024 2023
+; Note £000 £000
+Turnover 4 160,792 140,983
+Other operating income 5 8,825 2,035
+Exceptional other operating income 6 - 71,444
+Profit on disposal of players' registrations 7 251 1,898
+Staff costs 9 (136,170) (100,109)
+Depreciation and amortisation charge 7 (63,512) (42,710)
+Other operating expenses (26,026) (21,471)
+Operating (loss)/profit (55,840) 52,070
+Interest receivable and similar income 11 191 253
+Interest payable and similar expenses 412 (10,502) (7,828)
+(Loss)/profit before taxation (66,151) 44,495
+Tax on (loss)/profit 13 - -
+(Loss)/profit for the financial year (66,151) 44,495
+The notes on pages 20 to 35 form part of these financial statements.
+16
+AFC BOURNEMOUTH LIMITED
+REGISTERED NUMBER: 06632170 .
+STATEMENT OF FINANCIAL POSITION
+AS AT 30 JUNE 2024
+2024 2023
+Note £000 £000
+Fixed assets
+Intangible assets . 14 220,416 142,316
+Tangible assets 16 37,536 14,983
+257,952 157,299
+Current assets
+Stocks 16 402 642
+Debtors 17 9,275 11,832
+Cash at bank and in hand 18 7,104 5,930
+16,781 18,404
+Creditors: amounts falling due within one year 19 (196,080) (195,194)
+Net current liabilities (179,299) (176,790)
+Total assets less current liabilities 78,653 (19,491)
+Creditors: amounts falling due after more than one year 20 (116,666) (76,587)
+Provisions for liabilities
+Other provisions 21 (12) (52)
+Net liabilities (38,025) (96,130)
+Capital and reserves
+Called up share capital 22 145,366 21,110
+Profit and loss account (183,391) (117,240)
+Total shareholders’ deficit (38,025) (96,130)
+The financial statements on pages 16 to 35 were approved and authorised for issue by the board and were
+signed on its behalf by: :
+(Had
+Director
+Date: 19 November 2024
+The notes on pages 20 to 35 form part of these financia! statements.
+17
+AFC BOURNEMOUTH LIMITED
+STATEMENT OF CHANGES IN EQUITY :
+FOR THE YEAR ENDED 30 JUNE 2024 .
+Profit and Total
+Called up loss shareholders’
+share capital account deficit
+£000 £000 £000
+At 1 July 2022 21,110 (169,269) (148,159)
+Comprehensive income for the financial year
+Profit for the financial year ~ 44,495 44,495
+Total comprehensive income for the financial year - 44,495 44,495
+Contributions by and distributions to owners
+Fair value adjustments on shareholder loans ~ 7,534 7,534
+Total transactions with owners - 7,534 7,534
+At 30 June 2023 and 1 July 2023 21,110 (117,240) (96,130)
+Comprehensive expense for the financial year
+Loss for the financial year ~ (66,151) (66,151)
+Total comprehensive expense for the financial year - (66,151) (66,151)
+Contributions by and distributions to owners
+Shareholder loans converted to A ordinary shares 124,256 - 124,256 .
+Total transactions with owners 124,256 - 124,256
+At 30 June 2024 145,366 (183,391) (38,025)
+The notes on pages 20 to 35 form part of these financial statements.
+18
+AFC BOURNEMOUTH LIMITED
+STATEMENT OF CASH FLOWS .
+FOR THE YEAR ENDED 30 JUNE 2024
+2024 2023
+£000 £000
+Cash flows from operating activities
+(Loss)/profit for the financial year (66,151) 44,495
+Adjustments for:
+Amortisation of intangible assets 61,616 41,226
+Depreciation of tangible assets 1,896 1,484
+interest expense . 10,502 7,828
+Interest income (191) (253)
+Decrease/{increase) in stocks 240 (383)
+Increase in debtors (2,881) (2,739)
+Increase in creditors 4,570 4,335
+Decrease in provisions (40) (39)
+Interest paid (693) (453)
+Profit on disposal of players’ registrations (251) (1,898)
+Exceptional other operating income - (71,444)
+Net cash generated from operating activities 8,617 22,159 .
+Cash fiows from investing activities
+Purchase of intangible assets (100,801) (53,005)
+Sale of intangible assets 6,958 14,715
+Purchase of tangible assets (23,455) (6,315)
+Capitalised interest an tangible assets (996) -
+Net cash used in investing activities (118,294) (44,605)
+Cash flows from financing activities
+New secured loans 17,200 22,800 :
+New shareholder loans 98,800 115,261
+Repayment of other loans (5,149) (110,903)
+Net cash generated from financing activities 110,851 27,158
+Net increase in cash and cash equivalents 1,174 4,712 :
+Cash and cash equivalents at the beginning of the financial year 5,930 1,218
+Cash and cash equivalents at the end of the financial year 7,104 5,930
+Cash and cash equivalents at the end of the financial year
+comprise:
+Cash at bank and in hand 7,104 5,930
+The notes on pages 20 to 35 form part of these financial statements. .
+19
+AFC BOURNEMOUTH LIMITED
+NOTES TO THE FINANCIAL STATEMENTS .
+FOR THE YEAR ENDED 30 JUNE 2024
+1 General information
+AFC Bournemouth Limited (the "Company" or the "Club") is a private company limited by shares
+registered and domiciled in England & Wales. The Company's principal activity is the operation of a
+professional football club and related commercial activities.
+Its trading and registered office address is Vitality Stadium, Dean Court, Kings Park, Bournemouth,
+Dorset, England BH7 7AF. The Company registration number is 06632170.
+2 Accounting policies
+2.1. Basis of preparation of financial statements
+The financial statements have been prepared on a going concern basis, under the historical cost
+convention and in accordance with Financia! Reporting Standard 102, the Financial Reporting Standard
+applicable in the UK and the Republic of Ireland and the Companies Act 2006.
+The preparation of financial statements in compliance with FRS 102 requires the use of certain critical
+accounting estimates. It also requires management to exercise judgement in applying the Company‘s
+accounting policies (see note 3).
+The following principal accounting policies have been applied consistently throughout the year:
+2.2. Going concern
+The Company remains dependent on financial support from its shareholder, in order to remain a going
+concern. The Company's shareholder has committed to provide financial support to the Company for at
+least 12 months from the date of the signing of the Company's financial statements, in order for the
+Company to be able to meet its liabilities as they fall due and to realise the value of its assets. The
+directors have considered the Company's financial position, forecast cash flows and the availability of
+financial! support from its shareholder and consider that it is appropriate to prepare the financial
+statements on a going concern basis. :
+2.3. Foreign currency translation
+Functional and presentation currency
+The Company's functional and presentational currency is GBP.
+Transactions and balances
+Monetary assets and liabilities denominated in foreign currencies are translated into the functional
+currency at rates of exchange ruling at the reporting date. Transactions in foreign currencies are
+translated into the functional currency at the rate ruling on the date of the transaction. Foreign
+exchange gains and losses that relate to borrowings and cash and cash equivalents are presented in
+the Statement of Comprehensive Income within ‘finance income or costs’. All other foreign exchange .
+gains and losses are presented in the Statement of Comprehensive Income within other operating -
+expense.
+20
+AFC BOURNEMOUTH LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS (continued)
+
+FOR THE YEAR ENDED 30 JUNE 2024
+
+2 Accounting policies (continued)
+
+2.4 Turnover
+Turnover represents income receivable net of VAT, from football and related commercial activities.
+Match and season ticket turnover, as well as hospitality and events revenue types are all recognised as
+games are played and events are staged. The fixed element of Premier League distributions is
+recognised over the duration of the football season whilst facility fees for live coverage or highlights are
+recognised when earned. Merit awards, including those from The Premier League, are accounted for
+only when they are mathematically achieved, as the football season progresses. Sponsorship and
+advertising income is recognised over the duration of the respective contracts. Shop merchandise is
+recognised at point of sale and fees receivable in respect of the loan of players are included in other
+income and recognised evenly over the period of the loan. Amounts received from FIFA, UEFA and the
+FA are recognised within other income when earned. Income received prior to the financial year-end,
+but relating to the following season, is recognised as deferred income.
+
+2.5 Operating leases: the Company as lessee
+Rentals paid under operating leases are charged to the Statement of Comprehensive Income on a
+straight line basis over the lease term. Benefits received and receivable as an incentive to sign an
+operating leases are recognised on a straight line basis over the lease term.
+
+2.6 Contingencies
+Contingent liabilities are not recognised. Contingent liabilities arise as a result of past events when (i) it
+is not probable that there will be an outflow of resources or that the amount cannot be reliably
+measured at the reporting date or (ii) when the existence will be confirmed by the occurrence or non-
+occurrence of uncertain future events not wholly within the Company's control. Contingent liabilities are
+disclosed in the financial statements unless the probability of an outflow of resources is remote.
+Contingent assets unless virtually certain are not recognised. Contingent assets are disclosed in the
+financial statements when an inflow of economic benefits is probable. .
+
+2.7 Interest income
+Interest income relates to the effective interest on discounted long term player transfer fees due to the
+Club and are recognised in the Statement of Comprehensive Income.
+
+2.8 Interest expense
+Interest expense predominantly relates to the effective interest charge on discounted long-term player
+transfer fees and borrowings. These items are charged to the Statement of Comprehensive Income
+over the term of the debt using the effective interest method so that the amount charged is at a constant
+rate on the carrying amount. Issue costs are initially recognised as a reduction in the proceeds of the
+associated capital instrument.
+A small proportion of the interest expense incurred relates to interest charged on bank loans. Bank .
+loans include a £30,000,000 loan provided by City National Bank to fund the construction of the
+Canford Magna training ground facility and to contribute towards working capital requirements. The
+proportion of the borrowing costs that are directly attributable to the development of the training ground
+are capitalised as part of the cost of the asset, whilst the remainder of the borrowing costs are charged
+to the Statement of Comprehensive Income.
+
+21
+AFC BOURNEMOUTH LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (continued) ;
+FOR THE YEAR ENDED 30 JUNE 2024
+2 Accounting policies (continued)
+2.9 Pensions
+Defined contribution pension plan
+The Company operates a defined contribution plan for its employees. A defined contribution plan is a
+pension plan under which the Company pays fixed contributions into a separate entity. Once the
+contributions have been paid the Company has no further payment obligations. .
+The contributions are recognised as an expense in Statement of Comprehensive Income when they fall
+due. Amounts not paid are shown in accruals as a liability in the Statement of Financial Position. The
+assets of the plan are held separately from the Company in independently administered funds.
+Multi-employer pension plan
+The Company is a member of a multi-employer plan. Where it is not possible for the Company to obtain
+sufficient information to enable it to account for the plan as a defined benefit plan, it accounts for the
+plan as a defined contribution plan.
+Under the provisions of FRS 102 ‘Retirement Benefits’ the Scheme is treated as a defined benefit multi- .
+employer scheme as the Scheme's actuary has advised the participating employers that their share of
+the underlying assets and liabilities cannot be identified on a reasonable and consistent basis and,
+accordingly, no further disclosures are made under the provisions of FRS 102.
+2.10 Current and deferred taxation
+Tax is recognised in the Statement of Comprehensive Income, except that a charge attributable to an
+item of income and expense recognised as other comprehensive income or to an item recognised
+directly in equity is also recognised in other comprehensive income or directly in equity respectively.
+The current income tax charge is calculated on the basis of tax rates and laws that have been enacted -
+or substantively enacted by the reporting date in the countries where the Company operates and
+generates income.
+Deferred tax balances are recognised in respect of all timing differences that have originated but not
+reversed by the Balance Sheet date, except that:
++ The recognition of deferred tax assets is limited to the extent that it is probable that they will be
+recovered against the reversal of deferred tax liabilities or other future taxable profits; and
+- Any deferred tax balances are reversed if and when all conditions for retaining associated tax
+allowances have been met.
+Deferred tax balances are not recognised in respect of permanent differences except in respect of
+business combinations, when deferred tax is recognised on the differences between the fair values of
+assets acquired and the future tax deductions available for them and the differences between the fair
+values of liabilities acquired and the amount that will be assessed for tax. Deferred tax is determined -
+using tax rates and laws that have been enacted or substantively enacted by the reporting date.
+22
+AFC BOURNEMOUTH LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS (continued)
+
+FOR THE YEAR ENDED 30 JUNE 2024
+
+2 Accounting policies (continued)
+
+2.11 Intangible assets
+Intangible assets are initially recognised at cost or fair value if the associated consideration is subject to
+extended payment terms. After recognition, under the cost model, intangible assets are measured at
+cost less any accumulated amortisation and any accumulated impairment losses.
+Ail intangible assets are considered to have a finite useful life. If a reliable estimate of the useful life
+cannot be made, the useful life shall not exceed ten years.
+The third party costs associated with players’ registrations or extending their contracts, including
+agents’ fees and levies payable to the Premier League, are capitalised and amortised, in equal
+instalments, over the period of the respective players’ contracts. Where a contract life is renegotiated
+the unamortised costs, together with the new costs relating to the contract extension, are amortised
+over the new contract period. Amortisation is charged on a straight-line basis. Within intangible assets,
+the Company includes the player registration costs and associated amortisation for those players with
+contracts expiring on the reporting date as the Company still considers these players a part of the
+playing squad until the subsequent day after the contract expiry date. A nil net book value review is
+performed following each reporting date to ensure the cost and accumulated amortisation related to
+expired playing contracts are disposed of accordingly.
+The single cash generating unit ("CGU") of the Company is the operation of the Company as a whole.
+An impairment charge is posted against the Company's intangible assets if it is determined that the
+carrying amount of the CGU is below the highest of its fair value less costs to sell and its value in use.
+The directors do not consider that it is possible to determine the value in use of an individual football
+player in isolation as that player, except in the case of sale or insurance recovery, cannot generate cash
+flows by themselves. While management does not consider any individual player can be separated
+from the single CGU there may be certain circumstances where a player is excluded from the CGU
+when it becomes clear that they will not play for the Club's first team again, for example following a
+career threatening injury or on being permanently removed from the first team squad for another
+reason. If such circumstances arise, the carrying value of the player is assessed against the Company's 7
+best estimate of the player's fair value less any costs to sell and an impairment charge is recorded in
+the Statement of Comprehensive Income reflecting any loss arising.
+Under the conditions of certain transfer agreements, further fees will be payable to former clubs in the
+event of the purchased player concerned and/or the Club achieving a specified future event. Liabilities
+that are contingent on outcomes that are wholly determined by the Company, such as those dependent
+on the number of appearances by the player, are accounted for as trade creditors or accruals when the
+specified event has been achieved and capitalised to player registration costs. Other liabilities
+contingent on future events are provided for and capitalised to player registration costs when it
+becomes probable that the future event will occur.
+Profits or losses on the sale of players represent the transfer fee receivable, net of any transaction
+costs, less the unamortised cost of the player's registration, signing on fees, termination fees and any
+other amounts due to the player under contractual terms. Consideration that is dependent on future
+events is only recognised when its receipt is virtually certain. .
+Website and software costs are amortised at a rate of 20% per annum.
+
+23
+AFC BOURNEMOUTH LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (continued) :
+FOR THE YEAR ENDED 30 JUNE 2024
+2 Accounting policies (continued)
+2.12 Tangible assets
+Tangible assets under the cost model are stated at historical cost less accumulated depreciation and
+any accumulated impairment losses. Historical cost includes expenditure that is directly attributable to
+bringing the asset to the location and condition necessary for it to be capable of operating in the
+manner intended by management.
+Depreciation is charged so as to allocate the cost of assets less their residual value over their estimated
+useful lives, using the straight-line method.
+Depreciation is provided an the following basis:
+Freehold building — Between 4% and 10% per annum
+Land and buildings leasehold improvements — Between 5% and 15% per annum
+Land — Not depreciated
+Plant, machinery and vehicles — Between 15% and 33% per annum
+Fixtures, fittings and equipment — Between 15% and 33% per annum
+Assets under construction — Not depreciated
+The assets’ residual values, useful lives and depreciation methods are reviewed, and adjusted
+prospectively if appropriate, or if there is an indication of a significant change since the last reporting
+date.
+Gains and losses on disposals are determined by comparing the proceeds with the carrying amount
+and are recognised in the Statement of Comprehensive Income.
+2.13 Stocks
+Stocks are stated at the lower of cost and net realisable value, being the estimated selling price less .
+costs to sell, after making due allowance for obsolete and slow-moving stocks. Any impairment loss is
+recognised immediately in the Statement of Comprehensive Income.
+2.14 Cash and cash equivalents
+Cash and cash equivalents includes cash in hand, deposits held at call with banks, other short-term
+highly liquid investments with original maturities of three months.
+24
+AFC BOURNEMOUTH LIMITED ’
+
+NOTES TO THE FINANCIAL STATEMENTS (continued)
+
+FOR THE YEAR ENDED 30 JUNE 2024
+
+2 Accounting policies (continued)
+
+2.15 Financial instruments
+The Company applies section 11 and 12 of FRS 102 in respect of recognition and measurement of
+financial instruments.
+The Company only enters into basic financial instrument transactions that result in the recognition of
+financial assets and liabilities like trade and other debtors and creditors, loans from banks and other
+third parties and loans from related parties. The Company has applied section 11 and 12 of FRS 102 in
+respect of recognition and measurement of financial instruments.
+Debt instruments (other than those wholly repayable or receivable within one year), including loans and
+other accounts receivable and payable, are initially measured at present value of the future cash flows
+and subsequently at amortised cost using the effective interest method. Debt instruments that are
+payable or receivable within one year, typically trade debtors and creditors, are measured, initially and
+subsequently, at the undiscounted amount of the cash or other consideration expected to be paid or
+received. However, if the arrangements of a short-term instrument constitute a financing transaction,
+like the payment of a trade debt deferred beyond normal business terms or in case of an out-right short-
+term loan that is not at market rate, the financial asset or liability is measured, initially at the present
+value of future cash flows discounted at a market rate of interest for a similar debt instrument and
+subsequently at amortised cost.
+Financial assets that are measured at cost and amortised cost are assessed at the end of each
+
+. reporting period for objective evidence of impairment. If objective evidence of impairment is found, an
+
+impairment loss is recognised in the Statement of Comprehensive Income.
+For financial assets measured at amortised cost, the impairment loss is measured as the difference
+between an asset's carrying amount and the present value of estimated cash flows discounted at the
+asset's original effective interest rate. If a financial asset has a variable interest rate, the discount rate
+for measuring any impairment loss is the current effective interest rate determined under the contract.
+Financial assets and liabilities are offset and the net amount reported in the Statement of Financial
+Position when there is an enforceable right to set off the recognised amounts and there is an intention
+to settle on a net basis or to realise the asset and settle the liability simultaneously.
+
+2.16 Player remuneration
+Remuneration of players is charged in accordance with the terms of the applicable contractual
+agreements and any discretionary bonus is recorded when there is a legal or contractual obligation.
+Player signing-on fees represent a norma! part of the employment cost of the player. As such they are
+recorded in prepayments when paid and charged to the Statement of Comprehensive Income evenly
+over the relevant contractual period.
+
+25
+AFC BOURNEMOUTH LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS (continued) :
+
+FOR THE YEAR ENDED 30 JUNE 2024
+
+3 Judgements in applying accounting policies and key sources of estimation uncertainty
+Estimates and judgements are continually evaluated and are based on historical experience and other
+factors, including expectations of future events that are believed to be reasonable under the
+circumstances.
+(a) Critical accounting judgements in applying the Company's accounting policies
+The directors consider that the critical judgements in applying the Company's accounting policies are:
+(i) Determination of a single cash generating unit ("CGU")
+As described in note 2.11 the single cash generating unit ("CGU") of the Company is the operation of
+the Company as a whole. With respect to intangible asset player registrations it is not considered
+possible to determine the value in use of an individual football player in isolation, other than in the
+exceptional circumstances described in note 2.11.
+(ii) Recognition of liabilities for contingent payments to players and players’ former clubs
+Under the conditions of certain transfer agreements in respect of players purchased, further transfer
+fees are payable to former clubs in the event of the purchased player concerned and the Club achieving
+a specified future event. Liabilities contingent on outcomes that are wholly determined by the Company,
+such as those dependent on the number of appearances by the player, are accounted for as trade
+creditors or accruals when the specified event has been achieved. Other liabilities contingent on future
+events are accounted for, as provisions, when it becomes probable that the future event will occur.
+There are similar contingent contractual compensation arrangements with players and agents at the
+time of initial transfer or on subsequent contract renegotiation.
+(iii) Recognition of liabilities for Corporation Tax
+The Company has to make ongoing judgements regarding its tax position. Where a profit is forecast to
+be achieved during a financial period, an assessment needs to be carried out to understand if it can be
+relieved through various available offsets including utilising losses from prior years, other group
+companies and through other reliefs available. The Company will always seek the help of tax specialists -
+when making these judgements. If it is considered that a tax payment will need to be made, after using
+all available measures to alleviate one, the Company will recognise a liability in its financial statements.
+This process involves estimates and judgements of income, expenditure and available reliefs in order to
+ascertain the most likely outcome.
+(b) The Company makes estimates and assumptions concerning the future. The resulting accounting
+estimates will, by definition, seldom equal the related actual results. The estimates and assumptions
+that the directors consider have a risk of causing a material adjustment to the carrying amounts of
+assets and liabilities within the next financial year are addressed below:
+(i) Assumptions in calculating the fair value of long term monetary assets and liabilities
+During the year the Company had both trade debtors and creditors with extended payment terms.
+These are initially measured at the present value of their future cash flows and subsequently at
+amortised cost over the period of repayment. While the periods of repayment are determinable, an
+estimate of the interest rate to be used has to be made based on current market rates. .
+
+26
+AFC BOURNEMOUTH LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS (continued)
+
+FOR THE YEAR ENDED 30 JUNE 2024
+
+4 Turnover
+
+An analysis of turnover by class of business is as follows:
+2024 2023
+£000 £000
+Match and season ticket income 6,531 5,414
+English football league income - 773
+Premier League income 135,631 122,203
+Sponsorship and advertising 12,120 8,652
+Hospitality and events 3,226 2,267
+Shop merchandise 1,542 1,354
+Other income 1,742 320
+160,792 140,983
+
+All turnover arose within the United Kingdom.
+
+5 Other operating income
+
+2024 2023
+8 £000
+Other operating income 8,825 2,035
+Within other operating income, £8,257,000 (2023: £2,014,000) relates to amounts received for players
+
+on loan at other clubs. :
+
+6 Exceptional other operating income .
+2024 2023
+£000 £000
+
+Exceptional other operating income - 71,444
+During the 2023 financial year, a Sales Purchase Agreement was signed, contingent on the outcome of
+the Premier League Owners and Directors test, leading to the transfer of shareholding of the Company
+to Turquoise Bidco Limited (renamed Black Knight Football Club UK Limited), a company controlled by
+Cannae Holdings Inc and William P. Foley ||. This transaction concluded successfully on 12 December
+2022. On execution of the transaction, funds via a new shareholder loan from Turquoise Bidco Limited
+of £89,779,000 were used to repay the same amount in loans due to A.FC.B. Enterprises Limited.
+Receipt of this amount was accepted as full and final settlement with all outstanding liabilities in excess
+of this amount due to A.FC.B. Enterprises Limited and Wintel Petrochemicals Limited fully discharged.
+This resulted in exceptional income of £71,444,000 in relation to the extinguishment of the previous .
+shareholder loans due to A.FC.B. Enterprises Limited.
+
+27
+AFC BOURNEMOUTH LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (continued) ;
+FOR THE YEAR ENDED 30 JUNE 2024
+7 Operating (loss)/profit ‘
+The operating (loss)/profit is stated after charging/(crediting):
+2024 2023
+£000 £000
+Depreciation of tangible assets 1,896 1,484
+Amortisation of intangibles 61,616 41,226
+Profit on disposal of players’ registrations (251) (1,898)
+Exchange differences (1,264) 43
+Operating lease rentals 170 792
+The profit or loss on the disposal of players’ registrations is the difference between the book value of
+the player's registration at the time of disposal and the net consideration received at the time.
+Consideration that is contingent on future events is only recognised when its receipt is virtually certain.
+8 Auditors’ remuneration
+2024 2023
+£000 £000
+Fees payable to the Company's auditors for the audit of the
+Company's annual financial statements 94 75
+Fees payable to the Company's auditors in respect of:
+Audit-related assurance services 52 32
+Other services relating to taxation 12 12
+All other services 4 5
+j 68 49 :
+9 Staff costs
+Staff costs, including directors’ remuneration, were as follows:
+2024 2023
+£000 £000
+Wages and salaries 119,732 87,832
+Social security costs 16,011 12,181
+Other pension costs . 427 96
+136,170 100,109
+, 28
+AFC BOURNEMOUTH LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (continued) .
+FOR THE YEAR ENDED 30 JUNE 2024
+9 Staff costs (continued)
+. The average monthly number of employees, including the directors, during the year was as follows:
+2024 2023
+Number Number
+Playing staff and administration 242 180
+Academy 107 90
+Matchday staff 458 372
+807 642
+10 Directors’ remuneration
+2024 2023
+£000 £000.
+Aggregate directors’ remuneration 3,094 2,290
+Company contributions to defined contribution pension schemes 14 11
+3,102 2,301 :
+During the year retirement benefits were accruing to 2 directors (2023: 2) in respect of defined
+contribution pension schemes.
+The highest paid director received remuneration of £2,077,000 (2023: £2,064,000).
+The value of the Company's contributions paid to a defined contribution pension scheme in respect of
+the highest paid director amounted to £10,000 (2023: £10,000).
+The directors consider key management to be the statutory directors of the Company.
+No share options for the directors are in place and hence none have been exercised.
+Refer to note 26 for further details in respect of related party transactions.
+11 Interest receivable and similar income
+2024 2023
+£000 £000
+Bank interest received 191 -
+Implied interest on trade debtors with extended terms = 253
+191 253
+29
+AFC BOURNEMOUTH LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (continued)
+FOR THE YEAR ENDED 30 JUNE 2024
+12 Interest payable and similar expenses
+2024 2023
+£000 £000
+interest on bank loans 448 265
+Implied interest on shareholder loans - 3,597
+Implied interest on trade creditors with extended payment terms 10,054 3,966
+10,502 7,828
+13. Tax on (loss)/profit
+2024 2023
+£000 £000
+Corporation tax
+Current tax on (loss)/profit for the financial year - -
+Adjustments in respect of prior years - -
+Total current tax - _
+Factors affecting tax charge for the year
+The tax assessed for the year is higher than (2023: lower than) the standard rate of corporation tax in
+the UK of 25.00% (2023: 20.50%). The differences are explained below:
+2024 2023
+£000 £000
+(Loss)/profit before taxation (66,151) 44,495
+(Loss)/profit before taxation multiplied by standard rate of corporation
+tax in the UK of 25.00 (2023: 20.50%) (16,538) 9,121 .
+Effects of:
+Expenses not deductible 390 1,001
+income not taxable - (14,644)
+Deferred tax not provided 16,148 4,522
+Total tax charge for the financial year - -
+Factors that may affect future tax charges
+There are no known factors that may affect future tax charges. .
+Deferred tax assets and liabilities are attributable to the following:
+Assets Liabilities Totals :
+2024 2023 2024 2023 2024 2023
+£000 £000 £000 £000 £000 £000
+Tax losses - 462 - - - 462
+Intangible assets - - - (462) - (462)
+Total - 462 - (462) - -
+30
+AFC BOURNEMOUTH LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (continued)
+FOR THE YEAR ENDED 30 JUNE 2024
+13. Tax on (loss)/profit (continued)
+Unrecognised deferred tax asset
+The Company has an unrecognised deferred tax asset of £60,043,000 (2023: £44,336,000). This
+deferred tax asset is made up of taxable losses of £56,877,000 (2023: £43,675,000), fixed assets of
+£88,000 (2023: £141,000) and other timing differences of £3,078,000 (2023: £520,000). The
+Company's deferred tax asset has not been recognised at 30 June 2024 and 30 June 2023 as the
+Company does not have a history of making taxable profits. :
+14 Intangible assets.
+Player
+registration Website &
+costs Software Total
+£000 £000 £000
+Cost
+At 1 July 2023 278,576 357 278,933
+Additions 140,953 33 140,986
+Disposals (37,245) (98) (37,343)
+At 30 June 2024 382,284 292 382,576
+Accumulated amortisation :
+At 1 July 2023 136,373 244 136,617
+Charge for the year 61,577 39 61,616
+Disposals (35,975) (98) (36,073)
+At 30 June 2024 161,975 185 162,160
+Net book value
+At 30 June 2024 220,309 107 220,416 -
+At 30 June 2023 142,203 113 142,316
+The figures for the player registration costs is the fair value of purchase consideration for purchased
+players only. Accordingly, the net book amount of player registrations will not reflect, nor is it intended
+to, the current market value of these players nor does it take into account the value of players
+developed through the youth system.
+The directors consider the net realisable value of player registrations costs to be greater than their book
+value.
+Player registrations have a carrying amount of £220,309,000 (30 June 2023: £142,203,000) and have a
+remaining amortisation period of up to 5 years (30 June 2023: 5 years). There are no other individually
+material intangible assets.
+29
+AFC BOURNEMOUTH LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS (continued)
+
+FOR THE YEAR ENDED 30 JUNE 2024
+
+15 Tangible assets
+
+Land and
+buildings Plant, Fixtures,
+Freehold leasehold — machinery & fittings 8 Assets under
+Land building improvements vehicles equipment construction Total
+£000 £000 £000 £000 £000 £000 £000
+Cost
+At 1 July 2023 3,991 3,405 10,318 398 4,221 3,800 26,133
+Additions - 1,398 399 299 661 21,694 24,451
+Disposals 7 7 (7) (54) (216) 7 (277)
+Transfers S 2,885 - - - (2,885) =
+At 30 June 2024 3,991 7,688 10,710 643 4,666 22,609 50,307
+Accumulated depreciation
+At 1 July 2023 - 188 7,416 327 3,219 - 11,150
+Charge for the year - 512 951 33 400 oo 1,896
+Disposals - a (6) (53) (216) os (275)
+At 30 June 2024 = 700 8,361 307 3,403 a 12,771
+Net book value
+At 30 June 2024 3,991 6,988 2,349 336 1,263 22,609 37,536
+At 30 June 2023 3,991 3,217 2,902 71 1,002 3,800 14,983
+30
+AFC BOURNEMOUTH LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (continued) .
+FOR THE YEAR ENDED 30 JUNE 2024
+16 Stocks
+2024 2023
+£000 £000
+Finished goods and goods for resale 402 642
+The difference between purchase price of stocks and their replacement cost is not material.
+There is no stock provision (2023: ENil). :
+17 Debtors
+2024 2023
+£000 £000
+Trade debtors 5,464 9,147
+Other debtors 1,101 634
+Prepayments and accrued income 2,710 2,051
+9,275 11,832 .
+Included in trade debtors are amounts in respect of football transfer fees due from former clubs and :
+loan fees due from other football clubs. The undiscounted value of these is £2,088,000 (2023:
+£6,174,000), of which ENil (2023: Nil) are due in more than one year.
+There is no bad debt provision (2023: £Nil).
+Included within trade debtors is ENil (2023: ENil) due for payment in more than one year.
+18 Cash at bank and in hand
+2024 2023 .
+£000 £000
+Cash at bank and in hand 7,104 5,930
+19 Creditors: amounts falling due within one year
+2024 2023
+£000 £000
+Bank loans and overdrafts 3,000 5,149
+Trade creditors §3,952 37,660
+Amounts owed to group undertakings 89,779 115,261
+Taxation and social security 9,841 7,942
+Other creditors 61 48 .
+Accruals 33,358 22,456
+Deferred income 6,089 6,678
+; 196,080 195,194
+31
+AFC BOURNEMOUTH LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (continued) ,
+FOR THE YEAR ENDED 30 JUNE 2024
+19 Creditors: amounts falling due within one year (continued)
+Included in trade creditors are amounts due in respect of football transfer fees payable to former clubs
+and loan fees due to other football clubs. The undiscounted value of these due within one year is
+£52,760,000 (2023: £35,755,000).
+All amounts owed to group undertakings are due to the immediate parent undertaking, Black Knight
+Football Club UK Limited. The value of these due is £89,779,000 (2023: £115,261,000). These are
+interest free loans, unsecured and repayable on demand with a final repayment date of 12 December
+2032.
+Bank loans include a £3,000,000 loan provided by Macquarie Bank Limited, to fund the Academy
+training ground development. This loan was secured against future Premier League broadcast
+revenues up until the the date the loan was repaid in July 2024.
+20 Creditors: amounts falling due after more than one year
+2024 2023
+£000 £000
+Bank loans and overdrafts 30,000 15,800
+Trade creditors 60,561 44,328
+Accruals 26,105 16,459
+116,666 76,587
+Included in trade creditors are amounts due in respect of football compensation and loan fees due to
+other football clubs. The undiscounted value of these due after more than one year is £73,257,000
+(2023: £54,669,000).
+Bank loans include a £30,000,000 loan provided by City National Bank to fund the construction of the
+Canford Magna training ground facility and to contribute towards working capital requirements. This
+loan is repayable on the earlier of 5 years after completion of the facility or 7 February 2030. This loan -
+is secured by guarantors.
+Other than the bank loans noted above, no amounts have a specified repayment date falling due after
+more than five years.
+32
+AFC BOURNEMOUTH LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (continued)
+FOR THE YEAR ENDED 30 JUNE 2024
+21 Other provisions
+Pension
+obligations
+£000
+At 1 July 2023 52
+Utilised in the year (40)
+At 30 June 2024 12
+The Club is advised of its share of the deficit in the defined benefit section of The Football League
+Pension and Life Assurance Scheme ("the Scheme"). The most recent valuation of the whole Scheme
+was as at 31 August 2023 and this reported a deficit for the whole Scheme of £20.6m. The Club's share
+of this deficit at 30 June 2024 is £12,000 (2023: £52,000).
+22 ~~ Called up share capital
+2024 2023
+£000 £000 -
+Shares classified as equity
+Aliotted and fully paid
+20,860 (2023: 20,860) Preference shares of £1,000 (2023: £1,000)
+each 20,860 20,860
+124,380,804 (2023: 125,002) Ordinary A shares of £1 (2023: £1) each 124,381 125
+125,002 (2023: 125,002) Ordinary B shares of £1 (2023: £1) each 125 125
+145,366 21,110
+The Ordinary A shares and Ordinary B shares rank pari passu in all respects.
+The Preference shares entitle the holders to receive notice of all general meetings but do not entitle the
+holders to attend or vote at any general meeting or to participation in the profits or assets of the
+Company. On winding up or repayment of capital, holders of the Preference shares shail be entitled to
+repayment of the capital paid up in those shares. This payment will be made in priority to holders of
+Ordinary A shares or Ordinary B shares.
+On 1 August 2023, the Company issued 25,455,802 A Ordinary shares of £1 each on conversion of
+shareholder loans.
+On 21 December 2023, the Company issued 67,200,000 A Ordinary shares of £1 each on conversion of
+shareholder loans.
+On 28 June 2024, the Company issued 31,600,000 A Ordinary shares of £1 each on conversion of
+shareholder loans.
+33
+AFC BOURNEMOUTH LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (continued)
+FOR THE YEAR ENDED 30 JUNE 2024
+23 Contingent liabilities
+Under the conditions of certain transfer agreements in respect of players purchased, further transfer
+fees are payable to former clubs in the event of the purchased player concerned and the Club achieving
+: a specified future event. Liabilities contingent on outcomes that are wholly determined by the Company,
+such as those dependent on the number of appearances by the player, are accounted for as trade
+creditors or accruals when the specified event has been achieved. Other liabilities contingent on future
+events are accounted for, as provisions, when it becomes probable that the future event will occur.
+There are similar contingent contractual compensation arrangements with players and agents at the
+time of initial transfer or on subsequent contract renegotiation. The Company's contingent liability for
+these matters at 30 June 2024 is estimated to be £36,542,000 (2023: £31,851,000) of which
+£12,272,000 (2023: £15,469,000) are in respect of compensation on transfer and loan agreements with
+other football clubs and £24,270,000 (2023: £16,382,000) are in respect of compensation to players,
+1st team management and agents.
+24 Pension commitments
+The Company participates in a number of defined contribution pension schemes on behalf of certain
+employees. The assets of these schemes are held separately from those of the Company in
+independently administered funds. The charge for the year for schemes accounted for as defined
+contribution schemes was £427,000 (2023: £96,000).
+25 Commitments under operating leases
+At 30 June the Company had future minimum lease payments under non-cancellable operating leases
+as follows:
+2024 2023
+£000 £000
+Not later than 1 year 997 982
+Later than 1 year and not later than 5 years 2,775 2,992 -
+Later than 5 years 10,040 10,824
+13,812 14,798
+26 ~—~ Related party transactions
+As at 30 June 2024 the Company owed its immediate parent company, Black Knight Football Club UK
+Limited, a company registered in England and Wales, an unsecured and non-interest bearing loan with
+a book and fair value of £89,779,000 (30 June 2023: £115,261,000). This loan is repayable on demand,
+with a maturity date of 12 December 2032.
+During the year, the Company operated an expense account for director William P. Foley Il. The
+account was regularly reimbursed by the director throughout the year. Total expenses covered during
+the year amounted to £95,000 (2023: £279,000).
+As at 30 June 2024 the Company owed Vegas Golden Knights, a company with the same ultimate :
+controlling party, £24,000 (30 June 2023: £77,000) relating to intercompany transactions.
+As at 30 June 2024 the Company was owed £22,000 (30 June 2023: £Nil) by Black Knight Football
+Club US, LP, the company controlling Black Knight Football Club UK Limited.
+34
+AFC BOURNEMOUTH LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (continued) .
+FOR THE YEAR ENDED 30 JUNE 2024
+26 ~— Related party transactions (continued)
+During the year the Company transacted with Lorient Football Development Promotion SAS (‘Lorient’),
+a company 40% owned by its immediate parent entity, through purchases of ENil (2023: £20,000,000)
+and sales of £979,000 (2023: ENil). The balance owed to Lorient at 30 June 2024 was £11,516,000
+(30 June 2023: £15,825,000). The balance owed by Lorient at 30 June 2024 was ENil (30 June 2023:
+ENil).
+During the year, the Company transacted with Dun & Bradstreet (‘D&B’). The Company's ultimate
+controlling individual, William P. Foley Il, is a director and chairman of the board of directors of D&B.
+Sales transactions during the year totalled £270,000 (2023: £Nil) and purchase transactions were ENil
+(2023: ENil). The balance owed by D&B at 30 June 2024 was ENil (2023: ENil).
+27 ~—«&Events after the reporting period
+Subsequent to 30 June 2024 the playing registrations of certain players were acquired for a total
+consideration, including associated costs, of £54,876,000.
+Since 30 June 2024, the playing registrations of certain footballers have been disposed of, for total
+consideration of £56,600,000, resulting in an accounting profit on disposal of £35,093,000. :
+On 27 September 2024 the Company received £19,207,000 in relation to the forward funding of certain
+future transfer receivables.
+During July 2024, the Company repaid the bank loan provided by Macquarie Bank Limited.
+In the period from ist July 2024 through to the date of this report, Black Knight Football Club UK
+Limited joaned the Company an additional £52,950,000 on the same terms as the other shareholder
+loans.
+28 Ultimate parent undertaking and controlling party :
+During the year the immediate parent undertaking of the Company was Black Knight Football Club UK .
+Limited, a company registered in England. During the year the ultimate controlling individual was .
+William P. Foley Il. Black Knight Football Club UK Limited is the smallest and largest group of
+undertakings to consolidate these financial statements. The consolidated financial statements of Black
+Knight Football Club UK Limited will be avaitable at its registered address: Vitality Stadium, Dean Court,
+Kings Park, Bournemouth, Dorset, BH7 7AF.
+29 =Annex G Regulation
+The financial statements and accompanying notes, covering the year ended 30 June 2024, materially
+comply with the accounting requirements set out in Annex G of the UEFA Club Licensing and Financial
+Sustainability Regulations, as of 1 June 2024.
+: 35
 

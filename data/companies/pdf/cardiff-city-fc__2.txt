@@ -2,7 +2,7 @@ source: Companies House filing, cardiff-city-fc__2.pdf
 document: DPgEMqG1snJogzFpiMObTswmO2Row9lZnO7ELAmXX8k
 made_up_date: 2024-05-31
 method: ocr
-pages_read: 12 of 56
+pages_read: 56 of 56
 
 ; Cardiff City Footbal] Club
 (Holdings) Limited
@@ -486,4 +486,1570 @@ Trade payables at 31 May 2024 represented 26 days of annual purchases (2023 - 27
 creditors in respect of player purchases, which are paid on the date when payment is contractually due.
 
 9 .
+Cardiff City Football Club (Holdings) Limited
+Directors’ Report (continued)
+For the Year Ended 31 May 2024
+
+Internal control and risk management
+
+The directors are responsible for the Group's system of internal financial control. Although no system of internal
+financial control can provide absolute assurance against material misstatement or loss, the Group's system is
+designed to provide reasonable assurance that problems are identified on a timely basis and dealt with
+appropriately.
+
+In carrying out their responsibilities the directors have put in place a framework of controls to ensure as far as
+possible that ongoing financial performance is monitored in a timely manner, that corrective action is taken and
+that risk is identified as early as practically possible, and they have reviewed the effectiveness of internal
+financial control. :
+
+The Board, subject to delegated authority, review capital investment, player transactions, additional borrowing
+facilities, guarantees and insurance arrangements.
+A review of the business and summary of risks and uncertainties is included in the Strategic Report.
+Streamlined energy and carbon reporting
+
+UK Greenhouse gas emissions and energy use data for the year 1 June 2023/24 2022/23
+2023 to 31 May 2024
+
+Energy consumption used to calculate emissions (kWh [ 4,212,294 | 4,199,401
+Energy consumption breakdown (kWh) — optional:
+
+e Gas 1,097,369 1,794,695
+
+e Electricity 3,114,925 2,404,706
+
+e Transport fuel - .
+Scope 1 emissions in metric tonnes CO2e
+
+Gas consumption 200.71 328.3
+Owned transport - -
+TOTAL SCOPE 1 200.71 328.3
+Scope 2 emissions in metric tonnes CO2e | casos | aar.os |
+Purchased electricit 644.95 497.95
+Scope 3 emissions in metric tonnes CO2e , PT
+Business travel in employee-owned vehicles
+
+Total gross emissions in metric tonnes C02e 845.66 826.25
+Intensity ratio Tonnes C02e - per full time employee (2024: 209 [sis] 4.0 |
+
+10
+Cardiff City Football Club (Holdings) Limited
+Directors’ Report (continued)
+For the Year Ended 31 May 2024
+Quantification and reporting methodology ,
+We have followed the 2019 HM Government Environmental Reporting Guidelines. We have also used the GHG
+Reporting Protocol — Corporate Standard and have used the 2024 UK Government's Conversion Factors for
+Company Reporting.
+Intensity measurement
+The chosen intensity measurement ratio is total gross emissions in metric tonnes C02e per full time employee.
+Measures taken to improve energy efficiency
+We have taken the following measures to improve our energy efficiency:
+Continued from prior year
+e Continued to implement a change programme where LED lighting has been and is continuing to be installed
+throughout the Stadium; and
+e Night security continue to perform a lock down programme where all lighting and air conditioning units are
+turned off and powered down.
+Implemented
+« Switch from petrol to electric mowers;
+e Introduced the Sharing of Energy use Tracker and locally held information with resultant reduction in energy
+use;
+e Reduction in flights for first team away match travel; and
+e Introduction of recycling bins (paper, cardboard, plastic, metal, food).
+Planned
+e Ongoing - investigating the viability of installing electric vehicle charging points which is likely to be in place in
+Q1 2025;
+e Installation of plumbed in water fountains to reduce single use plastic — planned for 2024/25;
+e All department heads have been tasked with developing initiatives to reduce the club’s carbon footprint,
+e Working with the EFL to meet the “Green Clubs Scheme?” that will hopefully help to reduce the club’s Carbon
+Footprint; and
+e Other future initiatives will include the design of the facilities at the new Academy site.
+Streamlined energy and carbon reporting (continued)
+Measures taken to improve energy efficiency (continued)
+Planned (continued)
+In conjunction with our Stadium catering partners, Levy UK, introducing our joint “climate promise roadmap"
+including initiatives around:-
+e Partnering with Fare-Share Cymru to reduce food waste;
+« Commitment to buy locally and seasonally;
+e Sustainability project to look at phasing out of the use of single-use plastics; and
+e Complete Stadium review of all areas in accordance with the carbon reduction roadmap to make
+improvements in areas such as packaging, disposable items, drinking water availability and recycling.
+Future developments
+A review of future developments has been covered in the Non-Executive Chairman's Statement.
+11
+!
+Cardiff City Football Club (Holdings) Limited |
+Directors' Report (continued) {
+For the Year Ended 34 May 2024
+Disclosure of information to auditor
+Each of the persons who are directors at the time when this Directors' Report is approved has confirmed that:
+. so far as the director is aware, there is no relevant audit information of which the Company and the
+Group's auditor is unaware; and i
+. . the director has taken all the steps that ought to have been taken as a director in order to be aware of any
+relevant audit information and to establish that the Company and the Group's auditor is aware of that
+information.
+Post balance sheet events
+Subsequent to the year end and prior to signing of these financial statements, the Group has acquired player
+registrations totalling £10,498,455 of which £Nil is contingent upon one or more future events. These have been
+funded by the sale of player registrations and additional loans from secured borrowings.
+Subsequent to the year end and prior to signing of these financial statements, the Group has sold player
+registrations with net proceeds totalling £5,594,000. :
+Subsequent to the year end and at the time of signing of these financial statements, the Group has received
+funding of £14,856,779 in loans from unsecured borrowings.
+Auditor
+The auditor, BDO LLP, will be proposed for reappointment in accordance with section 485 of the Companies Act
+2006.
+This report was approved by the Board and signed on its behalf. :
+VK Choo i
+Director }
+Date: 21 December 2024 . :
+12 |
+Cardiff City Football Club (Holdings) Limited
+Directors' Responsibilities Statement
+For the Year Ended 31 May 2024
+The directors are responsible for preparing the Group Strategic Report, the Directors' Report and the
+consolidated financial statements in accordance with applicable law and regulations.
+Company law requires the directors to prepare financial statements for each financial year. Under that law, the
+directors have elected to prepare the financial statements in accordance with United Kingdom Generally
+Accepted Accounting Practice (United Kingdom Accounting Standards and applicable law). Under company law,
+the directors must not approve the financial statements unless they are satisfied that they give a true and fair
+view of the state of affairs of the Company and the Group and of the profit or loss of the Group for that period.
+In preparing these financial statements, the directors are required to:
+. select suitable accounting policies for the Group's financial statements and then apply them consistently,
+° make judgements and accounting estimates that are reasonable and prudent; .
+co) state whether applicable UK Accounting Standards have been followed, subject to any material departures
+disclosed and explained in the financial statements; and
+. prepare the financial statements on the going concern basis unless it is inappropriate to presume that the
+Group will continue in business.
+The directors are responsible for keeping adequate accounting records that are sufficient to show and explain
+the Company's transactions and disclose with reasonable accuracy at any time the financial position of the
+Company and the Group and enable them to ensure. that the financial statements comply with the Companies
+Act 2006. They are also responsible for safeguarding the assets of the Company and the Group and hence for
+taking reasonable steps for the prevention and detection of fraud and other irregularities.
+Financial statements are published on the Company's website in accordance with legislation in the United
+Kingdom governing the preparation and dissemination of financial statements, which may vary from legislation in
+other jurisdictions. The maintenance and integrity of the Company's website is the responsibility of the directors.
+The directors' responsibility also extends to the ongoing integrity of the financial statements contained therein.
+: 13
+Cardiff City Football Club (Holdings) Limited
+
+Independent Auditor's Report to the Members of Cardiff City Football Club (Holdings) Limited
+Opinion on the financial statements
+In our opinion:
+. the financial statements give a true and fair view of the state of the Group's and of the Parent Company’s
+
+affairs as at 31 May 2024 and of the Group’s loss for the year then ended;
+. the financial statements have been properly prepared in accordance with United Kingdom Generally
+
+Accepted Accounting Practice; and :
+° the financial statements have been prepared in accordance with the requirements of the Companies Act
+
+2006.
+We have audited the financial statements of Cardiff City Football Ciub (Holdings) Limited (‘the Parent
+Company’) and its subsidiaries (“the Group”) for the year ended 31 May 2024 which comprise Consolidated
+statement of Comprehensive Income, Consolidated Statement of Financial Position , Company Statement of
+Financial Position , Consolidated statement of changes in equity , Company statement of changes in equity ,
+Consolidated statement of cash flows and notes to the financial statements, including a summary of significant
+accounting policies. The financial reporting framework that has been applied in their preparation is applicable law
+and United Kingdom Accounting Standards, including Financial Reporting Standard 102 The Financial Reporting
+Standard applicable in the UK and Republic of Ireland (United Kingdom Generally Accepted Accounting
+Practice).
+Basis for opinion
+We conducted our audit in accordance with International Standards on Auditing (UK).(ISAs (UK)) and applicable
+law. Our responsibilities under those standards are further described in the Auditor's responsibilities for the audit
+of the financial statements section of our report. We believe that the audit evidence we have obtained is
+sufficient and appropriate to provide a basis for our opinion.
+Independence
+We are independent of the Group and the Parent Company in accordance with the ethical requirements that are
+relevant to our audit of the financial statements in the UK, including the FRC’s Ethical Standard, and we have
+fulfilled our other ethical responsibilities in accordance with these requirements.
+Material uncertainty related to going concern
+We draw attention to note 2.4 to the financial statements, which indicates that the Group and the Parent
+Company are reliant on the ultimate controlling party for financial support and not recalling the loans owed by the
+Group and the Parent Company, both of which are not guaranteed. As stated in note 2.4, these events or
+conditions, along with other matters as set forth in note 2.4, indicate that a material uncertainty exists that may
+cast significant doubt on the Group's and the Company's ability to continue as going concerns. Our opinion is not
+modified in respect of this matter.
+In auditing the financial statements, we have concluded that the directors’ use of the going concern basis of
+accounting in the preparation of the financial statements is appropriate.
+Our responsibilities and the responsibilities of the directors with respect to going concern are described in the
+relevant sections of this report.
+Our opinion is not modified in respect of this matter.
+
+14
+Cardiff City Football Club (Holdings) Limited
+Independent Auditor's Report to the Members of Cardiff City Football Club (Holdings) Limited
+(continued)
+
+Other information
+
+The directors are responsible for the other information. The other information comprises the information included
+in the Annual Report, other than the financial statements and our auditor's report thereon. Our opinion on the
+financial statements does not cover the other information and, except to the extent otherwise explicitly stated in
+our report, we do not express any form of assurance conclusion thereon.
+
+"Our responsibility is to read the other information and, in doing so, consider whether the other information is
+materially inconsistent with the financial statements or our knowledge obtained in the course of the audit or
+otherwise appears to be materially misstated. If we identify such material inconsistencies or apparent material
+misstatements, we are required to determine whether this gives rise to a material misstatement in the financial
+statements themselves. If, based on the work we have performed, we conclude that there is a material
+misstatement of this other information, we are required to report that fact.
+
+We have nothing to report in this regard.
+
+Other Companies Act 2006 reporting
+
+In our opinion, based on the work undertaken in the course of the audit:
+
+. the information given in the Strategic report and the Directors’ report for the financial year for which the
+financial statements are prepared is consistent with the financial statements; and
+
+. the Strategic report and the Directors’ report have been prepared in accordance with applicable legal
+requirements.
+
+In the light of the knowledge and understanding of the Group and the Parent Company and its environment
+
+obtained in the course of the audit, we have not identified material misstatements in the Strategic report or the
+
+Directors’ report.
+
+We have nothing to report in respect of the following matters in relation to which the Companies Act 2006
+
+requires us to report to you if, in our opinion:
+
+. adequate accounting records have not been kept by the Parent Company, or returns adequate for our
+audit have not been received from branches not visited by us; or
+
+° the Parent Company financial statements are not in agreement with the accounting records and returns;
+or
+
+. certain disclosures of directors’ remuneration specified by law are not made; or
+
+e we have not received all the information and explanations we require for our audit.
+
+Responsibilities of directors
+
+As explained more fully in the Directos' responsibilities statement, the directors are responsible for the
+
+preparation of the financial statements and for being satisfied that they give a true and fair view, and for such
+
+internal control as the directors determine is necessary to enable the preparation of financial statements that are
+
+free from material misstatement, whether due to fraud or error.
+
+In preparing the financial statements, the directors are responsible for assessing the Group’s and the Parent
+
+Company's ability to continue as a going concern, disclosing, as applicable, matters related to going concern and
+
+using the going concern basis of accounting unless the directors either intend to liquidate the Group or the
+
+Parent Company or to cease operations, or have no realistic alternative but to do so.
+
+15
+Cardiff City Football Club (Holdings) Limited
+Independent Auditor's Report to the Members of Cardiff City Football Club (Holdings) Limited
+(continued)
+Auditor's responsibilities for the audit of the financial statements
+Our objectives are to obtain reasonable assurance about whether the financial statements as a whole are free
+from material misstatement, whether due to fraud or error, and to issue an Auditor's Report that includes our
+opinion. Reasonable assurance is a high level of assurance, but is not a guarantee that an audit conducted in
+accordance with ISAs (UK) will always detect a material misstatement when it exists. Misstatements can arise
+from fraud or error and are considered material if, individually or in the aggregate, they could reasonably be
+expected to influence the economic decisions of users taken on the basis of these financial statements.
+Extent to which the audit was capable of detecting irregularities, including fraud
+Irregularities, including fraud, are instances of non-compliance with laws and regulations. We design procedures
+in line with our responsibilities, outlined above, to detect material misstatements in respect of irregularities,
+including fraud. The extent to which our procedures are capable of detecting irregularities, including fraud is
+detailed below:
+Non-compliance with laws and regulations
+Based on:
+e our understanding of the Group and the industry in which it operates;
+« discussion with management and those charged with governance; and
+¢ obtaining and understanding of the Group's policies and procedures regarding; and compliance with laws
+and regulations.
+We considered the significant laws and regulations to be the applicable accounting framework and UK tax
+legislation. .
+The Company is also subject to laws and regulations where the consequence of non-compliance could have a
+material effect on the amount or disclosures in the financial statements, for example through the imposition of
+fines or litigations.
+Our procedures in respect of the above included: :
+e making enquiries of management and reviewing minutes of the board of directors in order to identify any
+instances of fraud or non-compliance with laws and regulations;
+e review of correspondence with tax authorities for any instances of non-compliance with laws and regulations;
+e review of financial statement disclosures and agreeing to supporting documentation;
+e involvement of tax specialists in the audit; and
+e review of legal expenditure accounts to understand the nature of expenditure incurred.
+16
+Cardiff City Football Club (Holdings) Limited
+Independent Auditor's Report to the Members of Cardiff City Football Club (Holdings) Limited
+(continued)
+
+Auditor's responsibilities for the audit of the financial statements (continued)
+
+Extent to which the audit was capable of detecting irregularities, including fraud (continued)
+
+Fraud
+
+We assessed the susceptibility of the financial statements to material misstatement, including fraud. Our risk
+
+assessment procedures included:
+
+* enquiry with management and those charged with governance regarding any known or suspected instances
+of fraud;
+
+e obtaining an understanding of the Group’s policies and procedures relating to:
+
+° detecting and responding to the risks of fraud; and
+° internal controls established to mitigate risks related to fraud.
+
+e review of minutes of meeting of those charged with governance for any known or suspected instances of
+fraud;
+
+e discussion amongst the engagement team as to how and where fraud might occur in the financial
+statements:
+
+e performing analytical procedures to identify any unusual or unexpected relationships that may indicate risks ~
+of material misstatement due to fraud; and
+
+« considering remuneration incentive schemes and performance targets and the related financial statement
+areas impacted by these.
+
+Based on our risk assessment, we considered the areas most susceptible to fraud to be management override
+
+of controls and revenue. :
+
+Our procedures in respect of the above included:
+
+« identifying and testing journal entries to supporting documentation, in particular any journal entries to
+revenue not in line with expectations and reviewing journal entries for journals inconsistent with the usual
+transactions of the Group;
+
+* agreeing a sample of revenue to underlying contracts and/or other third-party documentation to ensure they
+are recorded at the correct time and to the correct amount;
+
+« agreeing a sample of revenues to cash receipts;
+
+¢ reviewed transactions pre and post year end to check that the associated revenue is reflected in the correct
+period;
+
+e identifying and tested material manual journal entries to revenue; and :
+
+e assessing significant estimates made by management for bias or judgement that represented a risk of
+material misstatement due to fraud. In particular we have considered in respect of revenue recognition,
+including accrued and deferred revenue, and recoverability of trade and other receivable.
+
+We also communicated relevant identified laws and regulations and potential fraud risks to all engagement team
+members who were all deemed to have appropriate competence and capabilities and remained alert to any
+indications of fraud or non-compliance with laws and regulations throughout the audit.
+Our audit procedures were designed to respond to risks of material misstatement in the financial statements,
+recognising that the risk of not detecting a material misstatement due to fraud is higher than the risk of not
+detecting one resulting from error, as fraud may involve deliberate concealment by, for example, forgery,
+misrepresentations or through collusion. There are inherent limitations in the audit procedures performed and the
+further removed non-compliance with laws and regulations is from the events and transactions reflected in the
+financial statements, the less likely we are to become aware of it.
+
+A further description of our responsibilities is available on the Financial Reporting Council’s website at:
+
+https :/Awww.frc.org.uk/auditorsresponsibilities. This description forms part of our Auditor's Report.
+
+17
+Cardiff City Football Club (Holdings) Limited
+Independent Auditor's Report to the Members of Cardiff City Football Club (Holdings) Limited
+(continued)
+Use of our report
+This report is made solely to the Parent Company's members, as a body, in accordance with Chapter 3 of Part
+16 of the Companies Act 2006. Our audit work has been undertaken so that we might state to the Parent
+Company’s members those matters we are required to state to them in an auditor's report and for no other
+purpose. To the fullest extent permitted by law, we do not accept or assume responsibility to anyone other than
+the Parent Company and the Parent Company’s members as a body, for our audit work, for this report, or for the
+opinions we have formed.
+‘DocuSigned by:
+
+Gorell M jones
+
+arth WIV Tes (Senior Statutory Auditor)
+For and on behalf of BDO LLP, Statutory Auditor
+London, UK
+Date: 23 December 2024
+BDO LLP is a limited liability partnership registered in England and Wales (with registered number OC305127).
+
+18
+Cardiff City Football Club (Holdings) Limited
+Consolidated Statement of Comprehensive Income
+For the Year Ended 31 May 2024
+2024 2023
+Note £000 £000
+Turnover 4 23,241 26,653
+Cost of sales (39,024) (29,551)
+Gross loss (15,783) (2,898)
+‘Administrative expenses (12,713) (8,312)
+Exceptional items 5 18,437 -
+Other operating income 6. 102 84
+Operating loss 7 (9,957) (11,126)
+Profit on disposal of player registrations 760 1,658
+Loss on disposal of fixed assets - (39)
+Interest receivable and similar income 11 149 82
+Interest payable and similar expenses 12 (2,613) (2,005)
+Loss before taxation (11,661) (11,430)
+Tax on loss 13 - -
+Loss for the financial year (11,661) (11,430)
+Other comprehensive income/(loss)
+Revaluation of stadium - 11,589
+Deferred tax on revaluation 13 288 (72)
+Total comprehensive (loss)/income (11,373) 87
+The notes on pages 27 to 53 form part of these financial statements.
+All activities derive from continuing operations.
+19
+Cardiff City Football Club (Holdings) Limited
+Registered number: 04044254
+Consolidated Statement of Financial Position
+As at 31 May 2024
+2024 2023
+Note £000 £000
+Fixed assets
+Intangible assets 14 7,549 4,603
+Tangible fixed assets 16 86,910 87,856
+: 94,459 92,459
+Current assets
+Stocks 17 132 150
+Debtors: amounts falling due after more than
+one year 18 - 983
+Debtors: amounts falling due within one year = 18 13,590 11,494
+Cash at bank and in hand 2,607 §,770
+16,329 18,397
+Current liabilities
+Creditors: amounts falling due within one
+year 19 (137,713) (126,048)
+Net current liabilities (121,384) (107,651)
+Total assets less current liabilities (26,925) (15,192)
+- Non-current liabilities
+Creditors: amounts falling due after more
+than one year 20 (678) (750)
+Provisions for liabilities
+Deferred taxation 22 (3,169) (3,457)
+: Net liabilities (30,772) (19,399)
+20
+Cardiff City Football Club (Holdings) Limited i
+Registered number: 04044254 |
+Consolidated Statement of Financial Position (continued)
+As at 31 May 2024
+2024 2023
+Note £000 £000 :
+Capital and reserves |
+Called up share capital 23 137,732 137,732 j
+Share premium account 24 15,711 15,711
+Revaluation resérve 24 61,237 60,949
+Capital redemption reserve 24 3,600 3,600 '
+Profit and loss account: 24 (249,052) (237,391)
+Equity attributable to owners of the ———_ _——
+Parent Company (30,772) (19,399)
+The financial statements were approved and authorised for issue by the Board and were signed on its behalf by: \
+Director. ; i
+ff
+Date: 21 December 2024 : |
+The notes on pages 27 to 53 form part of these financial statements. i
+4
+21 i
+|
+i
+|
+{
+Cardiff City Football Club (Holdings) Limited
+Registered number: 04044254 :
+Company Statement of Financial Position :
+As at 34 May 2024 :
+2024 2023 i
+Note £000 £000 |
+Fixed assets |
+Investments 16 685 685
+Current assets
+Debtors: amounts falling due within one year = 18 - 152,993 {
+|
+Current liabilities ;
+Creditors: amounts falling due within one |
+year 19 - (286) :
+Net current assets - 152,707
+Net assets 685 153,392 |
+Capital and reserves |
+Called up share capital 23 137,732 137,732
+Share premium account 24 15,711 15,711 :
+Capital redemption reserve 24 3,600 3,600 i
+Profit and loss account carried forward 24 (156,358) (3,651) :
+i
+ee O_o 7
+Total equity : 685 153,392 :
+The financial statements were approved and authorised for issue by the Board and were signed on its behalf by:
+ale
+VK Choo |
+Director |
+Date: 21 December 2024 !
+The Company has taken advantage of the exemption allowed under section 408 of the Companies Act 2006 and
+has hot presented its.own Statement of Comprehensive Income in these financial statements. The loss after tax H
+of the Parent Company for the year was £152,707 ,000 (2023.- £37). I
+‘The notes on pages 27 to 53 form part of these financial statements.
+}
+i
+!
+|
+22 j
+i
+Cardiff City Football Club (Holdings)
+: Limited
+Consolidated Statement of Changes in Equity
+For the Year Ended 31 May 2024
+Share Capital
+Called up premium redemption Revaluation Profit and
+share capital account reserve reserve loss account Total equity
+£000 £000 £000 £000 £000 £000
+At 4 June 2022 101,253 15,714 3,600 49,432 (225,961) (55,965)
+Comprehensive (loss)/income for the year
+Loss for the year - - 7 - (11,430) (11,430)
+Revaluation of stadium - - : 11,589 - 11,589
+Deferred tax on revaluation - - - (72) - (72)
+Contributions by owners
+Shares issued during the year 36,479 - - - : 36,479
+At 1 June 2023 137,732 15,711 3,600 60,949 (237,391) (19,399)
+Comprehensive (loss)/income for the year
+Loss for the year - - - - (11,661) (11,661)
+Deferred tax on revaluation : : : 288 : 288
+At 31 May 2024 137,732 15,711 3,600 61,237 (249,052) (30,772)
+The notes on pages 27 to 53 form part of these financial statements.
+23
+Cardiff City Football Club (Holdings) Limited
+Company Statement of Changes in Equity
+For the Year Ended 31 May 2024
+Share Capital
+Called up premium redemption Profit and
+share capital account reserve loss account Total equity
+£000 £000 £000 £000 £000
+At 1 June 2022 101,253 15,711 3,600 (3,651) 116,913
+Loss for the year - - - - -
+Contributions by owners
+Shares issued during the year 36,479 - : - 36,479
+At 1 June 2023 137,732 15,711 3,600 (3,651) 153,392
+Loss for the year - - - (152,707) (152,707)
+At 31 May 2024 137,732 15,711 3,600 (156,358) 685
+The notes on pages 27 to 53 form part of these financial statements. _
+24
+Cardiff City Football Club (Holdings) Limited
+Consolidated Statement of Cash Flows
+For the Year Ended 31 May 2024
+2024 2023
+£000 £000
+Cash flows from operating activities
+Loss for the financial year (11,661) (11,430)
+Adjustments for:
+Amortisation of intangible assets 4,249 3,409
+Depreciation of tangible fixed assets 2,608 2,508
+Interest payable 2,613 2,005
+Interest receivable (149) (82)
+Decrease/(increase) in stocks 18 (70)
+Increase in debtors (2,423) (6,148)
+(Decrease)/increase in creditors (11,204) 12,763
+Decrease in provisions - (20,706)
+Profit on sale of player registrations (760) (1,658)
+Profit on sale of fixed assets (3) 39
+Net cash used in operating activities (16,712) (19,370)
+Cash flows from investing activities
+Payments to acquire player registrations (7,231) (5,616)
+Receipts from sale of player registrations 2,335 3,086
+Purchase of tangible fixed assets (1,665) (1,206)
+Sale of tangible fixed assets 6 1
+Interest received 149 82
+Net cash used in investing activities (6,406) (3,653)
+25 .
+Cardiff City Football Club (Holdings) Limited
+, Consolidated Statement of Cash Flows (continued)
+For the Year Ended 31 May 2024
+
+2024 2023
+
+£000 £000
+Cash flows from financing activities
+New draw down from loan with related party 11,000 5,500
+New draw down of new loan 12,870 14,600
+Repayment of other loans - (3,277)
+Repayment of shareholder loans (1,038) (2,008)
+Receipt of shareholder loans and from related parties - 15,196
+Repayment of shareholder loans and connected party - (2,000)
+Repayment of deferred player proceeds (1,375) -
+Interest paid (1,502) (2,831)
+Net cash generated from financing activities 19,955 25,180
+Net (decrease)/increase in cash and cash equivalents (3,163) 2,157
+Cash and cash equivalents at beginning of year §,770 3,613
+Cash and cash equivalents at the end of year 2,607 5,770
+Cash and cash equivalents at the end of year comprise:
+Cash at bank and in hand 2,607 5,770
+The notes on pages 27 to 53 form part of these financial statements.
+
+26
+Cardiff City Football Club (Holdings) Limited
+Notes to the Financial Statements
+For the Year Ended 31 May 2024
+1. General information
+The Company is a United Kingdom private company limited by shares under the Companies Act 2006. It
+is both incorporated and domiciled in England and Wales. The registered office address is Cardiff City
+Stadium, Leckwith Road, Cardiff, CF11 8AZ.
+These financial statements are presented in Pounds Sterling (GBP), as that is the currency in which the
+majority of the Group's transactions are denominated. They comprise the financial statements of the
+Company and Group for the year ended 31 May 2024 and are presented to the nearest thousand pound
+(£'000).
+The Group has determined that GBP is its functional currency, as this is the currency of the economic
+environment in which the Group predominantly operates.
+The principal activity of the Group during the year was that of a professional football club incorporating the
+operation of a multi-use sports stadium.
+2. Accounting policies
+2.1. Basis of preparation of financial statements
+The financial statements have been prepared under the historical cost convention, except for the
+revaluation of the stadium, unless otherwise specified within these accounting policies and in
+accordance with Financial Reporting Standard 102, the Financial Reporting Standard applicable in
+the UK and the Republic of Ireland and the Companies Act 2006.
+The preparation of financial statements in compliance with FRS 102 requires the use of certain
+critical accounting estimates. It also requires Group management to exercise judgement in applying
+the Group's accounting policies (see note 3).
+2.2 Basis of consolidation
+The consolidated financial statements present the results of the Company and its own subsidiaries
+(‘the Group") as if they form a single entity. Intercompany transactions and balances between group
+companies are therefore eliminated in full. ,
+The consolidated financial statements incorporate the results of business combinations using the
+purchase method. In the Statement of Financial Position, the acquiree's identifiable assets, liabilities
+and contingent liabilities are initially recognised at their fair values at the acquisition date. The results
+of acquired operations are included in the Consolidated Statement of Comprehensive Income from
+the date on which control is obtained. They are deconsolidated from the date control ceases.
+In accordance with the transitional exemption available in FRS 102, the Group has chosen not to
+retrospectively apply the standard to business combinations that occurred before the date of
+transition to FRS 102, being 01 June 2017.
+27
+Cardiff City Football Club (Holdings) Limited
+Notes to the Financial Statements
+For the Year Ended 31 May 2024
+2. Accounting policies (continued)
+2.3 Parent Company disclosure exemptions .
+
+In preparing the separate financial statements of the Parent Company, advantage has been taken of
+
+the following disclosure exemptions available in FRS 102:
+
+e Only one reconciliation of the number of shares outstanding at the beginning and end of the
+period has been presented as the reconciliation for the Group and the Parent Company would be
+identical;
+
+e No Statement of Cash Flows has been presented for the Parent Company;
+
+e Disclosures in respect of the Parent Company's income, expense, net gains and net losses on
+financial instruments measured at amortised cost have not been presented as equivalent
+disclosures have been provided in respect of the Group as a whole; and
+
+« No disclosures have been given for the aggregate remuneration of the key management
+personnel of the Parent Company as their remuneration is included in the totals for the Group as
+a whole.
+
+2.4 Going concern
+: The Company's going concern assessment has been performed as part of the Group’s going
+
+concern assessment. The Group meets its day-to-day working capital requirements through the use
+of operating cash flows and loans provided by the ultimate controlling party of the Group and other
+related parties.
+The Company is the direct parent of Cardiff City Football Club Limited, the principal trading company
+in the Group. ;
+The Group’s business activities, together with the factors likely to affect its future development,
+performance and position are set out in the Directors’ Report and the Strategic Report.
+The Group and the Company continue to rely principally on the ultimate controlling party for the
+provision of funding either as equity or loans, together with the non-recall of loans already advanced
+to the Company.
+As of 31 May 2024, the Group reported net current liabilities of £121.4m (2023 - £107.7m).
+In assessing the appropriateness of the going concern assumption, the directors have prepared
+detailed cash flow forecasts for the Group extending beyond 12 months from the date of approval of
+these financial statements. These forecasts show the requirement for additional funding to be raised
+over the forecast period in addition to the additional funding received up to the date of these financial
+statements. Therefore, the Group relies on the non-recall of loans from its ultimate controlling party
+and also relies on the ongoing financial support of its ultimate controlling party.
+
+The Board acknowledges that the pressures created by the significant inflationary pressures in recent
+
+years have eased over 2024 and forecast into 2025. Any increase together with the ongoing
+
+variability in our energy costs continue to impact football finances and the economy in general.
+
+Projecting how long these exterior factors will remain is challenging and how the economy responds
+
+continue to have an impact on the Group’s and the Company's forecasts.
+
+While the Group and the Company continuously monitor the impact of these circumstances and other
+
+external factors on the cost base, and take all appropriate measures to reduce and mitigate its cost
+
+base from the impact of the circumstances outlined above, this has been and will continue to prove
+challenging.
+28
+Cardiff City Football Club (Holdings) Limited
+Notes to the Financial Statements
+For the Year Ended 31 May 2024
+2. Accounting policies (continued)
+2.4 Going concern (continued)
+
+Therefore, the Group and the trading subsidiaries rely on the non-recall of loans from the ultimate
+controlling party. The Group and the trading subsidiaries also require funding as necessary and so
+remain reliant on the ongoing financial support of the ultimate controlling party.
+
+The directors of Cardiff City Football Club (Holdings) Limited have received a non-legally binding
+letter of support from the ultimate shareholder, indicating that the current loans will not be recalled
+and that financial support will be provided to the Group for not less than 12 months from the date of
+approval of these financial statements and therefore have concluded that it is appropriate to prepare
+the financial statements on a going concern basis. However, this is not guaranteed.
+
+The Group and the Company are reliant on the ultimate controlling party for financial support; and not
+recalling the loans owed by the Group and the Company, both of which are not guaranteed. This
+indicates that a material uncertainty exists that may cast significant doubt on and the Group's and the
+Company's ability to continue as going concerns, and therefore the Group and the Company may be
+unable to realise their assets and discharge their liabilities in the normal course of business.
+
+The directors have a reasonable expectation that the loans will not be demanded and that the
+additional funds required fram the ultimate controlling party will be forthcoming. As a result, the
+directors believe that the Group and the Company will continue as going concerns for a period of at
+least 12 months from the date of approval of these financial statements and have therefore prepared
+the financial statements on a going concern basis.
+
+The financial statements do ‘not include any adjustment that would result from the basis of
+_preparation being inappropriate.
+
+2.5 Foreign currency translation
+Functional and presentation currency
+
+The Company and Group's functional and presentational currency is GBP.
+
+Transactions and balances
+
+Foreign currency transactions are translated into the functional currency using the spot exchange
+tates at the dates of the transactions.
+
+At each period end foreign currency monetary items are translated using the closing rate. Non-
+monetary items measured at historical cost are translated using the exchange rate at the date of the
+transaction and non-monetary items measured at fair value are translated using the exchange rate
+when fair value was determined.
+
+Foreign exchange gains and losses resulting from the settlement of transactions and from the
+translation at period end exchange rates of monetary assets and liabilities denominated in foreign
+currencies are recognised in the Consolidated Statement of Comprehensive Income except when
+deferred in other comprehensive income as qualifying cash flow hedges.
+
+Foreign exchange gains and losses that relate to borrowings and cash and cash equivalents are
+presented in the Consolidated Statement of Comprehensive Income within ‘finance income or costs’.
+All other foreign exchange gains and losses are presented in the Consolidated Statement of
+Comprehensive Income within ‘administrative expenses’.
+
+29
+Cardiff City Football Club (Holdings) Limited
+Notes to the Financial Statements
+For the Year Ended 31 May 2024
+2. Accounting policies (continued)
+
+2.6 Turnover
+Turnover is measured at the fair value of the consideration received or receivable and represents
+amounts receivable in the normal course of business, net of discounts, VAT and other sales-related
+tax.
+Gate receipts, other match day revenue and prize money in respect of cup competitions are
+recognised as the games are played. Sponsorship and similar commercial income are recognised
+over the duration of the respective contracts where it is probable that the income will be received.
+The fixed element of broadcasting revenues is recognised over the duration of the football season, .
+based on matches played, whilst facility fees received for live coverage or highlights are taken when
+earned. Merit awards in excess of the minimum receivable are accounted for only when known at the
+end of the football season.
+Merchandising revenue is recognised when goods are delivered and title has passed.
+
+2.7 Operating leases: the Group as lessee
+Rentals paid under operating leases are charged to the Consolidated Statement of Comprehensive
+Income on a straight-line basis over the lease term.
+Benefits received and receivable as an incentive to sign an operating lease are recognised on a
+straight-line basis over the lease term, unless another systematic basis is representative of the time
+pattern of the lessee's benefit from the use of the leased asset.
+
+2.8 Interest income
+Interest income is recognised in the Consolidated Statement of Comprehensive Income using the
+effective interest method.
+
+2.9 Finance costs
+Finance costs of borrowings are recognised in the Consolidated Statement of Comprehensive
+Income using the effective interest method. The effective interest rate is the rate that exactly
+discounts estimated future cash flows through the expected life of the borrowing.
+Any non-current assets acquired on deferred terms are recorded at the discounted present value at
+the date of acquisition. The associated payable is then increased to the settlement value over the
+period of deferral, with this value being charged as a notional finance cost through the Consolidated
+Statement of Comprehensive Income.
+
+2.10 Pensions
+Defined contribution pension plan
+The Group operates a defined contribution plan for its employees. A defined contribution plan is a
+pension plan under which the Group pays fixed contributions into a separate entity. Once the
+contributions have been paid the Group has no further payment obligations.
+The contributions are recognised as an expense in profit or loss when they fall due. Amounts not paid
+are shown in accruals as a liability in the Statement of Financial Position. The assets of the plan are
+held separately from the Group in independently administered funds.
+
+30
+Cardiff City Football Club (Holdings) Limited
+Notes to the Financial Statements
+For the Year Ended 31 May 2024
+2. Accounting policies (continued)
+2.11 Current and deferred taxation
+The tax expense for the year comprises current and deferred tax. Tax is recognised in the
+Consolidated Statement of Comprehensive Income except that a charge attributable to an item of
+income and expense recognised as other comprehensive income or to an item recognised directly in
+equity is also recognised in other comprehensive income or directly in equity respectively.
+The current income tax charge is calculated on the basis of tax rates and laws that have been
+enacted or substantively enacted by the reporting date in the countries where the Company and the
+Group operate and generate income.
+2.11 Current and deferred taxation (continued)
+Deferred tax balances are recognised in respect of all timing differences that have originated but not
+reversed by the Statement of Financial Position date, except that:
+. the recognition of deferred tax assets is limited to the extent that it is probable that they will be
+. recovered against the reversal of deferred tax liabilities or other future taxable profits;
+. any deferred tax balances are reversed if and when all conditions for retaining associated tax
+allowances have been met; and
+. where they relate to timing differences in respect of interests in subsidiaries, associates,
+branches and joint ventures and the Group can control the reversal of the timing differences
+and such reversal is not considered probable in the foreseeable future.
+Deferred tax balances are not recognised in respect of permanent differences except in respect of
+business combinations, when deferred tax is recognised on the differences between the fair values of
+assets acquired and the future tax deductions available for them and the differences between the fair
+values of liabilities acquired and the amount that will be assessed for tax. Deferred tax is determined
+using tax rates and laws that have been enacted or substantively enacted by the reporting date.
+2.12 Exceptional items
+Exceptional items are transactions that fall within the ordinary activities of the Group but are
+presented separately due to their size or incidence.
+31
+Cardiff City Football Club (Holdings) Limited |
+Notes to the Financial Statements
+For the Year Ended 31 May 2024
+2. Accounting policies (continued)
+2.13 Player costs and transactions
+
+(i) Capitalisation
+Costs associated with the initial acquisition of or the extension or renegotiation of player
+registrations are capitalised as intangible fixed assets. Any intangible assets acquired on
+deferred terms are recorded at the fair value at the date of acquisition. The fair value represents
+the net present value of the costs of acquiring players.
+
+(ii) Amortisation
+These capitalised costs are fully amortised on a straight-line basis over their useful economic
+lives, being the period of the original or extended or renegotiated contract. Where a contract life
+is extended or renegotiated then any unamortised costs of the original contract are fully written
+off at the time the extension or renegotiation is completed.
+
+(iii) Contingent consideration
+Under the conditions of certain transfer agreements, further fees will be payable to the vendors in
+the event of the players concerned making a number of certain number of First Team
+appearances or on the occurrence of certain other specified future events. Liabilities in respect of
+these additional transfer related costs not recognised at date of acquisition are accounted for
+when they become probable, which is typically when they are confirmed and taken directly to the
+Consolidated Statement of Comprehensive Income at that point in time.
+
+32
+Cardiff City Football Club (Holdings) Limited
+
+Notes to the Financial Statements
+
+For the Year Ended 31 May 2024 .
+2. Accounting policies (continued)
+2.13 Player costs and transactions (continued)
+(iv) impairment
+
+The Group will perform an impairment review on the intangible assets if events or changes in
+. circumstances give cause for a player to be taken out of the football club cash generating unit
+
+("CGU") and that indicate that the carrying amount of the player may not be fully recoverable. The
+
+Group compares the carrying amount of the player's registration with its recoverable amount.
+
+‘Impairment losses are recognised in profit or loss during the period and are included within
+
+administrative expenses in the Consolidated Statement of Comprehensive Income.
+
+The Group considers the recoverable amounts of individual player registrations, being the higher
+
+of their fair value less costs to sell and their value in use. The Group estimates fair value less
+
+costs to sell using one of the following sources:
+
+e in the case of a player who has permanently fallen out with the Group's senior football
+management and directors, either the agreed selling price in the event that there is an
+agreement to transfer the player subsequent to the year end; or if there have not been any
+bids for the player, management's best estimation of the disposal proceeds (less costs) of
+the player on an arm's length basis. This is determined by the Group's senior football
+management in conjunction with the directors who will use the outcome of recent player
+disposals (by both the Group and other football clubs) as a basis for their estimation. Any
+costs to sell, such as agency costs are deducted from the fair value; or
+
+e in the case of a player who has suffered a career-threatening injury or condition, the value
+attributed to the player by the Group's insurers.
+
+(v) Disposals
+Profits or losses on the disposal of these player registrations represent the fair value of the
+consideration receivable, net of any transaction costs, less the unamortised cost of the original
+registration.
+(vi) Remuneration
+Remuneration of players is charged in accordance with the terms of the applicable contractual
+: agreements and any discretionary bonus when there is a legal or contractual obligation. Liabilities
+in respect of player signing-on or loyalty fees are capitalised and then amortised over the term of
+the contract.
+Discretionary bonuses, e.g. appearance fees, win/draw bonuses, are provided for, as part of
+operating expenses, when payment becomes probable or due contractually.
+33
+Cardiff City Football Club (Holdings) Limited
+Notes to the Financial Statements
+For the Year Ended 31 May 2024
+2. Accounting policies (continued)
+2.14 Goodwill
+Goodwill represents the excess of the cost of a business combination over the fair value of the
+Group's share of the net identifiable assets of the acquired subsidiary at the date of acquisition.
+Goodwill on acquisitions of subsidiaries is included in ‘intangible assets’.
+For business combinations occurring after 1 January 2019, intangible assets acquired are recognised
+separately from goodwill only when they are separable from the acquired entity and give rise to other
+contractual/legal rights. Prior to 1 January 2019 intangible assets acquired were recognised
+separately from goodwill when they were separable from the acquired entity or gave rise to other
+contractual/legal rights.
+Gains and losses on the disposal of an entity include the carrying amount of goodwill relating to the
+entity sold. Goodwill is carried at cost less accumulated amortisation and accumulated impairment
+losses. Goodwill amortisation is calculated by applying the straight-line method to its estimated useful
+life. If a reliable estimate cannot be made, the useful life of goodwill is presumed to be 10 years.
+Estimates of the useful economic life of goodwill are based on a variety of factors such as the
+expected use of the acquired business, the expected useful life of the cash generating units to which
+the goodwill is attributed, any legal, regulatory or contractual provisions that can limit useful life and
+assumptions that market participants would consider in respect of similar businesses.
+2.15 Tangible fixed assets
+Tangible fixed assets under the cost model are stated at historical cost less accumulated
+: depreciation and any accumulated impairment losses. Historical cost includes expenditure that is
+
+directly attributable to bringing the asset to the location and condition necessary for it to be capable of
+operating in the manner intended by management.
+The Group adds to the carrying amount of an item of fixed assets the cost of replacing part of such
+an item when that cost is incurred, if the replacement part is expected to provide incremental future
+benefits to the Group. The carrying amount of the replaced part is derecognised. Repairs and
+maintenance are charged to the Consolidated Statement of Comprehensive Income during the period
+in which they are incurred.
+Depreciation is charged so as to allocate the cost of assets less their residual value over their
+estimated useful lives, using the straight-line method. Work-in-progress is not depreciated.
+Depreciation is provided on the following basis:
+
+Cardiff City Stadium - 2%
+
+Training ground improvements - 10%
+
+Motor vehicles - 25%
+
+Fixtures and equipment - 10-25%
+The assets’ residual values, useful lives and depreciation methods are reviewed, and adjusted
+prospectively if appropriate, or if there is an indication of a significant change since the last reporting
+date.
+Gains and losses on disposals are determined by comparing the proceeds with the carrying amount
+and are recognised in the Consolidated Statement of Comprehensive Income.
+
+34
+Cardiff City Football Club (Holdings) Limited
+Notes to the Financial Statements
+For the Year Ended 31 May 2024
+2. Accounting policies (continued)
+
+2.16 Revaluation of tangible fixed assets
+The Cardiff City Stadium as an individual leasehold property is carried at current year value at
+depreciated replacement cost at the date of the revaluation less any subsequent accumulated
+depreciation and subsequent accumulated impairment losses. Revaluations are undertaken with
+sufficient regularity to ensure the carrying amount does not differ materially from that which would be
+determined using depreciated replacement cost at the Consolidated Statement of Financial Position
+date.
+Depreciated replacement cost is determined from market based evidence normally undertaken by
+professionally qualified valuers.
+Revaluation gains and losses are recognised in other comprehensive income unless losses exceed
+the previously recognised gains or reflect a clear consumption of economic benefits, in which case
+the excess losses are recognised in the Consolidated Statement of Comprehensive Income.
+
+2.17 Impairment of fixed assets and goodwill
+Assets that are subject to depreciation or amortisation are assessed at each reporting date to
+determine whether there is any indication that the assets are impaired. Where there is any indication.
+that an asset may be impaired, the carrying value of the asset (or cash-generating unit to which the
+asset has been allocated) is tested for impairment. An impairment loss is recognised for the amount
+by which the asset's carrying amount exceeds its recoverable amount. The recoverable amount is the
+higher of an asset's (or CGU's) fair value less costs to sell and value in use. For the purposes of
+assessing impairment, assets are grouped at the lowest levels for which there are separately
+identifiable cash flows (CGUs). Non-financial assets that have been previously impaired are reviewed
+at each reporting date to assess whether there is any indication that the impairment losses
+recognised in prior periods may no longer exist or may have decreased.
+
+2.18 Valuation of investments
+Investments in subsidiaries are measured at cost less accumulated impairment.
+
+2.19 Stocks
+Stocks are stated at the tower of cost and net realisable value, being the estimated selling price less
+costs to complete and sell. Cost is based on the cost of purchase on a first in, first out basis.
+At each reporting date, stocks are assessed for impairment. If stock is impaired, the carrying amount
+is reduced to its selling price less costs to complete and sell. The impairment loss is recognised
+immediately in the Consolidated Statement of Comprehensive Income.
+
+2.20 Debtors
+Short-term debtors are measured at transaction price, less any impairment. Loans receivable are
+measured initially at fair value, net of transaction costs, and are measured subsequently at amortised
+cost using the effective interest method, less any impairment.
+
+35
+Cardiff City Football Club (Holdings) Limited
+‘Notes to the Financial Statements
+; For the Year Ended 31 May 2024
+2. Accounting policies (continued)
+
+2.21 Cash and cash equivalents
+Cash is represented by cash in hand and deposits with financial institutions repayable without penalty
+on notice of not more than 24 hours.
+Cash equivalents are highly liquid investments that mature in no more than three months from the
+date of acquisition and that are readily convertible to known amounts of cash with insignificant risk of
+change in value.
+
+2.22 Creditors
+Short-term creditors are measured at the transaction price. Other financial liabilities, including loans
+from related undertakings, are measured initially at fair value, net of transaction costs, and are
+measured subsequently at amortised cost using the effective interest method.
+
+2.23 Financial instruments
+The Group only enters into basic financial instrument transactions that result in the recognition of
+financial assets and liabilities like trade and other debtors and creditors, loans from related parties
+and third parties investments in ordinary shares.
+Debt instruments (other than those wholly repayable or receivable within one year), including loans
+and other accounts receivable and payable, are initially measured at present value of the future cash
+flows and subsequently at amortised cost using the effective interest method. Debt instruments that
+are payable or receivable within one year, typically trade debtors and creditors, are measured, initially
+and subsequently, at the undiscounted amount of the cash or other consideration expected to be paid
+or received. However, if the arrangements of a short-term instrument constitute a financing
+transaction, like the payment of a trade debt deferred beyond normal business terms or in case of an
+out-right short-term loan that is not at market rate, the financial asset or liability is measured, initially
+at the present value of future cash flows discounted at a market rate of interest for a similar debt
+instrument and subsequently at amortised cost, unless it qualifies as a loan from a director in the
+case of a small company, or a public benefit entity concessionary loan.
+Financial assets that are measured at cost and amortised cost are assessed at the end of each
+reporting period for objective evidence of impairment. If objective evidence of impairment is found, an
+impairment loss is recognised in the Consolidated Statement of Comprehensive Income.
+For financial assets measured at amortised cost, the impairment loss is measured as the difference
+between an asset's carrying amount and the present value of estimated cash flows discounted at the
+asset's original effective interest rate. If a financial asset has a variable interest rate, the discount rate
+for measuring any impairment loss is the current effective interest rate determined under the
+contract.
+For financial assets measured at cost less impairment, the impairment loss is measured as the
+difference between an asset's carrying amount and best estimate of the recoverable amount, which is
+an approximation of the amount that the Group would receive for the asset if it were to be sold at the
+reporting date.
+Financial assets and liabilities are offset and the net amount reported in the Consolidated Statement
+of Financial Position when there is an enforceable right to set off the recognised amounts and there
+is an intention to settle on a net basis or to realise the asset and settle the liability simultaneously.
+
+36
+' Cardiff City Football Club (Holdings) Limited
+Notes to the Financial Statements
+For the Year Ended 31 May 2024
+3. Judgements in applying accounting policies and key sources of estimation uncertainty
+In preparing the financial statements, management is required to make estimates and assumptions which
+affect reported income, expenses, assets, liabilities and disclosure of contingent assets and liabilities. Use
+of available information and application of judgement are inherent in the formation of estimates, together
+with past experience and expectations of future events that are believed to be reasonable under the
+circumstances. Actual results in the future could differ from such estimates.
+The directors consider the following areas to involve considerable degree of estimation uncertainty:
+Recoverable amount of non-current assets
+All non-current assets, including property, plant and equipment and intangible assets, are reviewed for
+potential impairment using estimates of the future economic benefits attributable to them. Such estimates
+involve assumptions in relation to future ticket income, media and sponsorship revenue and on-pitch
+performance. Any estimates of future economic benefits made in relation to non-current assets may differ
+from the benefits that ultimately arise, and materially affect the recoverable value of the asset.
+Recoverability of amounts owed by group undertakings
+Provision for impairment of the carrying value of amounts due from group undertakings is made based on
+management's estimate of the prospect of recovering the amounts due, which includes considering the
+solvency of the counterparty and its future outlook, based on budgets and forecasts prepared by
+management. The Directors are of the opinion that the amounts due from group undertakings are
+- recoverable in full and on this basis no impairment has been provided in the current year in respect of
+these balances (2023 - ENil).
+Other key sources of estimation uncertainty:
+The Cardiff City Stadium asset which is included within tangible fixed assets at £84.5m (2023 - £86.8m)
+(see note 15) is valued on a depreciated replacement cost basis. The directors ensure the assumption
+used in calculating this value are reviewed by an external expert on a regular basis and consider the
+carrying value of the stadium at each reporting date.
+4. Turnover
+An analysis of turnover by class of business is as follows:
+2024 2023
+£000 £000
+Gate receipts and match day income 6,085 5,500 :
+Centralised broadcasting and commercial distributions 10,421 10,060
+Sponsorship, advertising and other commercial income 6,735 11,093
+23,241 26,653
+All turnover arose within the United Kingdom.
+37
+Cardiff City Football Club (Holdings) Limited
+Notes to the Financial Statements
+For the Year Ended 31 May 2024
+5. Exceptional items
+2024 2023
+£000 £000
+Exceptional items 18,437 -
+Exceptional items relate to the following:
+- Settlement arising from a contractual dispute in a prior year - £5.75m;
+- Sale of a share of the proceeds in a litigation case - £12.0m; and
+— Release of provision held from previous years - £687k.
+6. Other operating income
+: 2024 2023
+£000 £000
+Profit on disposal of tangible fixed assets 3 -
+Car park rental income 95 84
+Football League grant income 4 -
+102 84
+7. Operating loss
+The operating loss is stated after charging/(crediting):
+2024 2023
+£000 £000
+Rent receivable (56) (36)
+Amortisation of intangible fixed assets 4,249 3,409
+Depreciation of tangible fixed assets 2,608 2,508
+Other operating lease rentals 856 459
+Exchange rate variance (13) (1)
+38
+Cardiff City Football Club (Holdings) Limited
+Notes to the Financial Statements
+For the Year Ended 31 May 2024
+, 8. Auditor's remuneration
+2024 2023
+. £000 £000
+Fees payable to the Group's auditor and its associates for the audit of the
+Group's annual financial statements
+Audit of the Company 15 15
+Audit of the Company's subsidiary undertakings 70 70
+85 85
+Fees payable to the Group's auditor and its associates in respect of:
+Other audit-related services . 9 8
+Taxation compliance services. 19 17
+Accounts preparation 4 10
+32 35
+9. Employees
+Staff costs, including directors’ remuneration, were as follows:
+Group Group
+2024 2023
+£000 £000
+Wages and salaries 24,773 19,724
+Social security costs 2,938 2,406
+Cost of defined contribution scheme 146 157
+27,857 22,287
+Included in the above is £19,938,000 (2023 - £14,226,500) in respect of player related wages.
+The average monthly number of employees, including the directors, during the year was as follows:
+2024 2023
+No. No.
+Players 49 52
+Other staff 160 154
+209 206
+39
+Cardiff City Football Club (Holdings) Limited
+Notes to the Financial Statements
+For the Year Ended 31 May 2024 ,
+10. Directors’ remuneration
+2024 2023
+£000 £000
+Directors’ emoluments 60 60
+Social security costs 24 7
+Other benefits 3 3
+87 70
+During the year retirement benefits were accruing to 1 director (2023 - 1) in respect of defined
+contribution pension schemes.
+The highest paid director received remuneration of £60,000 (2023 - £60,000).
+The value of the Company's contributions paid to a defined contribution pension scheme in respect of the
+highest paid director amounted to £3,000 (2023 - £3,000).
+11. Interest receivable and similar income
+2024 2023
+£000 £000
+Bank interest receivable 149 82
+12. Interest payable and similar expenses
+, 2024 2023
+£000 £000
+Related undertakings interest and associated withholding tax 2,613 2,005
+40
+Cardiff City Football Club (Holdings) Limited
+Notes to the Financial Statements
+For the Year Ended 31 May 2024
+13. Taxation
+2024 2023
+£000 £000
+Corporation tax
+Current tax on losses for the year : - -
+Total current tax . -
+Deferred tax
+Total deferred tax - -
+Taxation on loss on ordinary activities - -
+Factors affecting tax charge for the year
+The tax assessed for the year differs from the standard rate of corporation tax in the UK of 25% (2023 -
+20%). The differences are explained below:
+, 2024 2023
+£000 £000
+Loss on ordinary activities before tax (11,661) (11,430)
+Loss on ordinary activities multiplied by standard rate of corporation tax in
+the UK of 25% (2023 - 20%) (2,915) (2,286)
+Effects of:
+Expenses not deductible for tax purposes 165 30
+Fixed asset differences 598 437
+Other permanent differences 53 45
+Chargeable gains - 58
+Remeasurement of deferred tax for changes in tax rates - (429)
+Deferred tax not recognised 2,099 2,217
+Deferred tax relating to other comprehensive income - (72)
+Total tax charge for the year - -
+A deferred tax liability of £3.2m (2023 - £3.5m) has been recognised in respect of the potential chargeable
+gain based on the revaluation of the stadium. The assets and liabilities are not offset as the Group does
+not intend to realise the asset and settle the liability at the same time. The increase in the deferred tax
+liability solely relates to the change in future tax rates.
+41
+Cardiff City Football Club (Holdings) Limited
+Notes to the Financial Statements :
+For the Year Ended 31 May 2024
+13. Taxation (continued)
+A further potential deferred tax asset exists at the reporting date in respect of additional tax losses carried
+forward. The potential deferred tax asset offsets a deferred tax liability in respect of fixed asset timing
+differences (other than the chargeable gain). This has not been recognised in the financial statements as
+there is insufficient evidence that the overall asset will be recoverable. Tax losses carried forward at the
+reporting date were £224m (2023 - £206m). No deferred tax asset has been recognised in respect of
+these losses.
+There are no other factors affecting future tax charges.
+14. Intangible assets
+Group
+Player
+registrations Goodwill Total
+£000 £000 £000
+Cost ,
+At 1 June 2023 11,255 1,514 12,769
+Additions 7,460 - 7,460
+Disposals (6,029) - (6,029)
+; At 31 May 2024 12,686 1,514 14,200
+Amortisation
+At 1 June 2023 6,652 1,514 8,166
+Charge for the year : 4,249 - 4,249
+Disposals (5,764) - (5,764)
+At 31 May 2024 5,137 1,514 6,651
+Net book value
+At 31 May 2024 7,549 - 7,549
+At 31 May 2023 4,603 - 4,603
+Amortisation of £4,249,000 (2023 - £3,409,000) has been charged and included as part of administration
+expenses in the Consolidated Statement of Comprehensive Income.
+The average remaining amortisation period per player contract as at 31 May 2024 is 23 months (2023 -
+17.5 months).
+42
+Cardiff City Football Club (Holdings) Limited
+Notes to the Financial Statements :
+For the Year Ended 31 May 2024
+15. Tangible fixed assets
+Group
+Training
+Cardiff City ground Motor Fixtures and Work-in-
+Stadium improvements vehicles equipment progress Total
+£000 £000 £000 £000 £000 £000
+, Cost or valuation
+At 1 June 2023 86,771 1,129 10 3,902 52 91,864
+Additions 67 453 - 469 676 1,665
+Disposals - - (9) (20) - (29)
+Transfers between
+. classes - - - 52 (52) -
+At 31 May 2024 86,838 1,582 1 4,403 676 93,500
+Depreciation ,
+At 1 June 2023 - 928 9 3,071 - 4,008
+Charge for the year 2,314 79 - 215 - 2,608
+Disposals - - (9) (17) - (26)
+. At 31 May 2024 2,314 1,007 - 3,269 - 6,590
+Net book value
+At 31 May 2024 84,524 575 1 1,134 676 86,910
+At 31 May 2023 86,771 201 1 831 52 87,856
+, Cardiff City Stadium land is held on a 150-year lease from Cardiff City Council which commenced in
+September 2009. Cardiff City Council provided a capital contribution towards the cost of the new stadium
+project. The capital contribution is secured by way of first charge over Cardiff City Stadium leasehold
+property.
+As at 31 May 2023 the Company sought professional advice from Savills (UK) Limited (RICS registered
+valuers) as to the valuation of the stadium at that date on a depreciated replacement cost basis.
+Management have identified no indicators of impairment and for key judgement to include consideration
+of replacement cost.
+43
+Cardiff City Football Club (Holdings) Limited
+Notes to the Financial Statements
+For the Year Ended 31 May 2024
+15. Tangible fixed assets (continued) .
+If the land and buildings had not been included at valuation they would have been included under the
+historical cost convention as follows:
+2024 2023
+£000 £000
+Group
+Cost 43,982 43,915
+Accumulated depreciation (13,700) (12,528)
+Net book value 30,282 31,387
+16. Fixed asset investments :
+Company
+. Investments in
+subsidiary
+companies
+£000
+. Cost or valuation
+At 1 June 2023 685
+At 31 May 2024 685
+Subsidiary undertakings
+The following were subsidiary undertakings of the Company:
+Class of
+Name shares Holding
+Cardiff City Football Club Limited Ordinary 100%
+Cardiff City Stadium Limited Ordinary 100%
+Cardiff City Premier Seating Limited Ordinary 100%
+Cardiff City Premier Seating Limited is indirectly held.
+All subsidiary undertakings are registered at the same address, being Cardiff City Stadium, Leckwith
+Road, Cardiff, South Glamorgan, CF11 8AZ.
+44 ;
+Cardiff City Football Club (Holdings) Limited
+Notes to the Financial Statements
+: For the Year Ended 31 May 2024
+17. Stocks
+Group Group Company Company
+2024 2023 2024 2023
+£000 £000 £000 £000
+Stocks 132 150 - -
+18. Debtors
+Group Group Company Company
+2024 2023 2024 2023
+£000 £000 £000 £000
+Due after more than one year
+Football receivables - 983 - -
+Group Group Company Company
+2024 2023 2024 2023
+£000 £000 £000 £000
+Due within one year
+Trade debtors 177 486 - -
+Football receivables 1,992 2,319 - -
+Amounts owed by group undertakings - - - 152,993
+Other debtors 561 526 - -
+VAT repayable 115 - - -
+Prepayments and accrued income 10,745 8,163 - -
+13,590 11,494 - 152,993
+The directors are satisfied that the amounts owed by group undertakings, in particular the £149,947,000
+(2023 - £149,955,000) owed by Cardiff City Footbal! Club Limited, is fully recoverable because it has the
+support of the companies' ultimate owner, Tan Sri Dato’ Seri Vincent Tan Chee Yioun.
+Amounts owed by group undertakings are unsecured, interest free and repayable on demand.
+45
+Cardiff City Football Club (Holdings) Limited
+Notes to the Financial Statements
+For the Year Ended 31 May 2024
+19. Creditors: amounts falling due within one year
+Group Group Company Company
+2024 2023 2024 2023
+£000 £000 £000 £000
+Loans from shareholders and connected
+parties 75,705 63,873 - -
+Loans from directors and connected parties 40,300 29,300 - -
+Other loans 750 4,152 - -
+Trade creditors 1,634 1,149 : -
+Football payables 590 1,039 - -
+Amounts owed to group undertakings - - - 286
+Other taxation and social security 1,438 1,607 - -
+Other creditors 565 104 - -
+, Accruals and deferred income 16,731 24,854 - -
+137,713 126,048 - 286
+Amounts owed to group undertakings are unsecured, interest free and repayable on demand.
+Loans from shareholders and connected parties
+Connected
+Majority to majority
+shareholder shareholder Total
+£000 £000 £000
+At 1 June 2023 . 56,944 6,929 63,873
+Received in the year - 12,870 12,870
+Repaid in the year (1,038) - (1,038)
+Reassigned in the year 12,070 (12,070) -
+At 31 May 2024 67,976 | 7,729 75,705
+The loan from the majority shareholder is comprised as follows:
+2024 2023
+£000 £000
+Interest bearing with conversion rights 47,479 36,447
+Non-interest bearing without conversion rights 20,497 20,497
+67,976 56,944
+46
+Cardiff City Football Club (Holdings) Limited
+Notes to the Financial Statements
+For the Year Ended 31 May 2024
+19. Creditors: amounts falling due within one year (continued)
+The key terms of the interest-bearing loan with conversion rights are:
+e interest accrues at an annual rate of 7%. ;
+e the loans are secured by way of a charge over the assets and undertaking of the principal trading
+company of the Group.
+« the lender has the right to convert such loans, including accrued interest, into equity at any time, at a
+fixed conversion price of 15.69 pence per share.
+The key terms of the non-interest-bearing loan without conversion rights are:
+e the loans are secured by way of a charge over the assets and undertaking of the principal trading
+company within the Group. .
+; Loans from directors and connected parties
+Parties
+connected
+Directors to directors Total
+£000 £000 £000
+At 1 June 2023 3,000 26,300 29,300
+Received in the year - 11,000 11,000
+At 31 May 2024 : 3,000 37,300 40,300
+Included in director loans are:
+¢ a £3,000,000 loan (2023 - £3,000,000) from U-Peng Tan, the son of the ultimate controlling party,
+which has the same terms and conditions as the shareholder loans described above.
+Included in connected parties:
+¢ aloan of £37,300,000 (2023 - £26,300,000) from Tormen Finance Inc, a company in which a director
+of the Company has significant influence over, which bear interest at 6% per annum.
+47
+Cardiff City Football Club (Holdings) Limited
+Notes to the Financial Statements
+For the Year Ended 31 May 2024
+19. Creditors: amounts falling due within one year (continued)
+. Other loans
+Due within one year
+2024 2023
+£000 £000
+Deferred player proceeds 750 1,375
+EFL . - 2,777
+750 4,152
+Due more than one year
+2024 2023
+£000 £000
+Deferred player proceeds : - 750
+Amounts due as deferred player proceeds are secured on the equivalent deferred player proceeds
+. included within football receivables in note 18. Amounts secured on future revenue streams paid directly
+from the third party (EPL) to the counterparty are non-cash items for the purposes of the Consolidated
+Statement of Cash Flows.
+The EFL loan was repaid in January 2024.
+Amounts owed to group undertakings are interest free and repayable on demand.
+20. Creditors: amounts falling due after more than one year
+Group Group Company Company
+2024 2023 2024 2023
+£000 £000 £000 £000
+Other loans - 750 - -
+Football payables 678 - - -
+678 750 - -
+48
+Cardiff City Football Club (Holdings) Limited
+Notes to the Financial Statements
+For the Year Ended 31 May 2024
+21. Financial instruments
+Group Group Company Company
+2024 2023 2024 2023
+£000 £000 £000 £000
+Financial assets
+Financial assets measured at amortised cost 14,448 16,707 - 162,993
+Financial liabilities
+Financial liabilities measured at amortised
+cost (133,557) (122,640) - (286)
+: Financial assets measured at amortised cost comprise cash at bank and in hand, trade debtors, football
+receivables, amounts owed by group undertakings, other debtors and accrued income.
+Financial liabilities measured at amortised cost comprise loans, trade creditors, football payables,
+amounts owed to group undertakings, other creditors and accruals.
+22. Deferred taxation liability :
+Group
+2024
+£000
+At beginning of year (3,457)
+Credited to the Consolidated Statement of Comprehensive Income 288
+At end of year (3,169)
+Group Group
+2024 2023
+£000 £000
+Revaluation of property (3,169) (3,457) :
+49
+Cardiff City Football Club (Holdings) Limited
+Notes to the Financial Statements
+For the Year Ended 31 May 2024
+: 23. Share capital
+2024 2023
+£000 £000
+Allotted, called up and fully paid
+946,106,816 Ordinary shares of £0.10 each 94,611 94,611
+4,312,109,467 A Ordinary shares of £0.01 each 43,121 43,121
+: 137,732 137,732
+Both Ordinary and A Ordinary shares each carry one voting right.
+24. Reserves
+Share premium account
+This reserve records the excess paid on shares issued.
+Revaluation reserve
+This reserve records the historical revaluations net of related deferred tax.
+Capital redemption reserve
+This reserve records the historical nominal value of cancelled share capital.
+Profit and loss account
+This reserve records retained earnings and accumulated losses.
+25. Analysis of net debt
+, Other non- .
+At 1 June cash At 31 May
+2023 Cash flows changes 2024
+£000 £000 £000 £000
+Cash at bank and in hand 5,770 (386) (2,777) 2,607
+Debt due after 1 year (750) 750 - -
+Debt due within 1 year (97,325) (19,430) - (116,755)
+(92,305) (19,066) (2,777) (114,148)
+50
+Cardiff City Football Club (Holdings) Limited
+Notes to the Financial Statements
+For the Year Ended 31 May 2024
+26. Contingent liabilities
+The Group has commitments under player registration transfer contracts with other football clubs to pay
+up to £3,630,000 (2023 - £3,000,000) which are conditional upon one or more future events. Given that
+such future events are not yet considered probable, no provision has been made for these amounts in
+these financial statements.
+27. Pension commitments
+The Group operates a defined contributions pension scheme. The assets of the scheme are held
+; _ Separately from those of the Group in an independently administered fund. The pension cost charge
+represents contributions payable by the Group to the fund and amounted to £146,000 (2023 - £157,000).
+Contributions totalling £36,000 (2023 - £39,000) were payable to the fund at the reporting date and are
+included in creditors.
+28. Commitments under operating leases
+At 31 May 2024 the Group and the Company had future minimum lease payments due under non-
+cancellable operating leases as follows:
+Group Group Company Company
+2024 2023 2024 2023
+: £000 £000 £000 £000
+Not later than 1 year 743 643 - -
+Later than 1 year and not later than 5 years 1,642 1,086 - -
+Later than 5 years 17,511 - - -
+19,896 1,729 - -
+51
+Cardiff City Football Club (Holdings) Limited
+Notes to the Financial Statements
+For the Year Ended 31 May 2024
+29. Related party transactions
+
+. The Company has taken exemption under FRS 102 section 33.1A from disclosing transactions with
+group companies, on the grounds that each company party to the transactions is wholly owned within the
+Group.
+Transactions with related parties
+During the year the Group traded with the following companies which have one or more directors in
+
+, common:
+CMB Group of Companies - net purchases of £100,897 (2023 - £367) in respect of engineering and
+maintenance services, year end creditor £544 (2023 - £23,725).
+Cardiff City House of Sport Limited - net purchases of £417,466.(2023 - £147,748) in respect of the hire
+of facilities, year end creditor £3,800 (2023 - ENil).
+HR Owen plc - net purchases of £100,543 (2023 - £7,405) in respect of sales of match tickets and
+advertising and purchases of insurance brokerage services provided during the year, year end debtor £77
+(2023 - ENil).
+Cardiff City FC Foundation - net purchases of £100,570 (2023 - £135,144) in respect of charitable
+activity, year end debtor £69,728 (2023 - £843).
+CVBA Kortrijk Voetbalt - net sales of £202,905 in respect of player services during the year, year end
+debtor £100,842. .
+29. Related party transactions (continued)
+Other related party transactions
+During the year the Group traded with WMG Funds Limited, a company in which a director of Cardiff City
+Football Club Limited has significant influence over - net purchases of £27,000 (2023 - £345,505) in
+respect of professional services rendered.
+During the year the Group traded with and borrowed from entities in which a director of Cardiff City
+Football Club Limited has significant influence over:
+Tormen Finance Inc. - charged interest amounting to £2,104,734 (2023 - £1,642,947) on loans detailed in
+note 19. Interest paid during the year was paid to Tormen Finance Inc and other related parties on behalf
+of Tormen Finance Inc.
+Key management personnel
+In addition to the remuneration detailed in note 10, a further £1,149,715 (2023 - £542,000) was paid to
+other key management personnel in respect of short-term employee benefits.
+52
+Cardiff City Football Club (Holdings) Limited
+Notes to the Financial Statements ,
+For the Year Ended 31 May 2024
+30. Post balance sheet events
+Subsequent to the year end and prior to signing of these financial statements, the Group has acquired
+player registrations totalling £10,498,455 of which ENil is contingent upon one or more future events.
+These have been funded by the sale of player registrations and additional loans from secured borrowings.
+Subsequent to the year end and prior to signing of these financial statements, the Group has sold player
+registrations with net proceeds totalling £5,594,000.
+Subsequent to the year end and at the time of signing of these financial statements, the Group has
+received funding of £14,856,779 in loans from unsecured borrowings.
+31. Controlling party
+The ultimate controlling party is considered to be Tan Sri Dato’ Seri Vincent Tan Chee Yioun due to his
+majority shareholding in Cardiff City Football Club (Holdings) Limited.
+53
 

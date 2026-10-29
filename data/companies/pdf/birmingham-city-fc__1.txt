@@ -2,7 +2,7 @@ source: Companies House filing, birmingham-city-fc__1.pdf
 document: BgO80-iAF8pfjSIsOO-x17rqVGSTWki-STO0QSWSPF8
 made_up_date: 2025-06-30
 method: ocr
-pages_read: 12 of 36
+pages_read: 36 of 36
 
 Docusign Envelope ID: BBE938A1-10A8-4A65-A219-29CAC03E7372
 Strategic Report
@@ -444,4 +444,1042 @@ Birmingham
 United Kingdom
 B2 5AL
 Page 10
+Docusign Envelope ID: B8BE938A1-10A8-4A65-A219-29CAC03E7372
+BIRMINGHAM CITY FOOTBALL CLUB LIMITED
+Statement of Profit or Loss and Other Comprehensive Income
+for the year ended 30 June 2025
+Player
+amortisation
+impairment
+Club and trading Total Total
+operations costs 2025 2024
+Notes £ £ £ £
+Continuing operations
+Revenue 3 35,642,766 : 35,642,766 28,720,273
+Operating expenses (69,030,745) (6,830,337) (75,861,082) (58,756,549)
+Other operating income 800,528 - 800,528 804,000
+Operating loss 6 (32,587,451) (6,830,337) (39,417,788) (29,232,276)
+Net profit on sale of players’ registrations 14,267,841 15,405,191
+Loss from operations (25,149,947) (13,827,085)
+Finance income 5 870,059 843,003
+Finance costs 5 (10,279,565) (3,097,744)
+Loss before taxation (34,559,453) (16,081,826)
+Taxation 7 - 371,454
+Total comprehensive loss
+attributable to equity shareholders (34,559,453) (15,710,372)
+All activities are from continuing operations.
+The notes form part of these financial statements
+Page 11
+Docusign Envelope ID: BBE938A1-10A8-4A65-A219-29CAC03E7372
+BIRMINGHAM CITY FOOTBALL CLUB LIMITED (REGISTERED NUMBER: 00027318)
+Statement of Financial Position :
+30 June 2025
+2025 2024
+Notes £ £
+Assets
+Non-current assets
+intangible assets 8 25,339,274 5,082,874
+Property, plant and equipment 9 50,609,896 36,013,577
+Investments 10 1 1
+Trade and other receivables 12 7,822,082 4,683,844
+83,771,253 45,780,296
+Current assets
+Inventories 11 2,003,820 1,288,830
+Trade and other receivables 12 28,434,148 21,311,088
+Cash and cash equivalents 13 14,233,595 8,671,807
+44,671,563 31,271,725
+Total assets 128,442,816 77,052,021
+Equity
+Shareholders’ equity
+Called up share capital 14 58,830,838 58,830,838
+Share premium 207,096 207,096
+Capital redemption reserve 750 750
+Other reserves 14,731,066 14,731,066
+Capital contribution reserve 7,970,000 7,970,000
+Accumulated deficit (203,386,199) (168,826,746)
+Total deficit (121,646,449) (87,086,996)
+Liabilities
+Non-current liabilities
+Trade and other payables 15 14,767,938 1,935,363
+Financial liabilities - borrowings
+Interest bearing loans and borrowings 16 7,994,155 6,601,844
+22,762,093 8,537,207
+Current liabilities
+Trade and other payables 15 28,431,324 16,012,469
+Contract liabilities 9,491,845 3,382,406
+Financial liabilities - borrowings
+Interest bearing loans and borrowings 16 189,404,003 136,206,935
+227,327,172 155,601,810
+Total liabilities 250,089,265 164,139,017
+Net liabilities (121,646,449) 87,086,996
+The financial statements were approved by the Board of Directors and authorised for issue on 8 December 2025
+and were signed on its behalf by:
+DocuSigned by:
+Tom Vguur
+Director: Tom Wagner
+The notes form part of these financial statements
+Page 12
+Docusign Envelope ID: B8E938A1-10A8-4A65-A219-29CAC03E7372
+BIRMINGHAM CITY FOOTBALL CLUB LIMITED
+Statement of Changes in Equity
+for the year ended 30 June 2025
+Called up
+share Profit and Share
+capital loss premium
+£. £ £
+Balance at 1 July 2023 58,830,838 (153,116,374) 207,096
+Changes in equity
+Total comprehensive expense - (15,710,372) :
+Balance at 30 June 2024 58,830,838 (168,826,746) 207,096
+Changes in equity
+Total comprehensive expense - (34,559,453) :
+Balance at 30 June 2025 58,830,838 (203,386,199) 207,096
+Capital Capital
+contribution redemption Other
+reserve reserve reserves Total equity
+£ £ £ £
+Balance at 1 July 2023 7,970,000 750 14,731,066 (71,376,624)
+Changes in equity
+Total comprehensive expense : - : (15,710,372)
+Balance at 30 June 2024 7,970,000 750 14,731,066 (87,086,996)
+Changes in equity
+Total comprehensive expense - - : (34,559,453)
+Balance at 30 June 2025 7,970,000 750 14,731,066 (121,646,449)
+The notes form part of these financial statements
+Page 13
+Docusign Envelope ID: BBE938A1-10A8-4A65-A219-29CAC03E7372
+BIRMINGHAM CITY FOOTBALL CLUB LIMITED
+Statement of Cash Flows
+for the year ended 30 June 2025
+2025 2024
+Notes £ £
+Cash flows used in operating activities
+Cash used in operations 4 1,580,146 (22,505,941)
+Corporation tax received - 371,454
+Net cash used in operating activities 1,580,146 (22,134,487)
+Cash flows from investing activities
+Purchase of intangible fixed assets (26,076,851) (3,947,940)
+Purchase of tangible fixed assets (19,857,694) (26,211,648)
+Sale of intangible fixed assets 8,283,860 10,409,198
+Interest received 870,059 843,003
+Net cash from investing activities (36,780,626) (18,907,387)
+Cash flows from financing activities
+New loans in year 53,084,843 55,170,495
+Loan repayments in year - (3,145,165)
+Interest paid (10,279,565) (2,176,797)
+Payment of lease liabilities (2,043,010) (1,767,859)
+Net cash from financing activities 40,762,268 48,080,674
+Increase in cash and cash equivalents 5,561,788 7,038,800
+Cash and cash equivalents at beginning
+of year 2 8,671,807 1,633,007
+Cash and cash equivalents atend of year 2 14,233,595 8,671,807
+The notes form part of these financial statements
+Page 14
+* Docusign Envelope ID: BBE938A1-10A8-4A65-A219-29CAC03E7372
+BIRMINGHAM CITY FOOTBALL CLUB LIMITED
+Notes to the Statement of Cash Flows
+for the year ended 30 June 2025
+1. Reconciliation of loss before income tax to cash used in operations
+2025 2024
+£ £
+Loss before income tax (34,559,453) (16,081,826)
+Depreciation charges 4,442,009 2,618,065
+Profit on sale of players' registrations (14,267,841) (15,405,191)
+Amortisation charges 6,830,337 4,382,419
+Finance costs 10,279,565 3,097,744
+Finance income (870,059) (843,003)
+(28,145,442) (22,231,792)
+(Increase) in inventories : (714,990) (1,288,830)
+(Increase)/decrease in trade and other receivables (4,965,964) (7,600,225)
+Increase/(decrease) in trade and other payables 35,406,542 8,614,906
+Cash used in operations 1,580,146 (22,505,941)
+2. Analysis of net debt
+1 July 2024 Cash flows 30 June 2025
+£ £ £
+Cash at bank and in hand 8,671,807 5,561,788 14,233,595
+Borrowings excluding overdrafts (142,808,779) (64,589,379) (197,398,158)
+(134,136,972) (49,027,591) (183,164,563)
+3. Cash and cash equivalents
+The amounts disclosed on the Statement of Cash Flows in respect of cash and cash equivalents are in respect of
+these Statement of Financial Position amounts:
+Year ended 30 June 2025
+2025 2024
+£ £
+Cash and cash equivalents 14,233,595 8,671,807
+Year ended 30 June 2024
+2024 2023
+£ £
+Cash and cash equivalents 8,671,807 1,633,007
+The notes form part of these financial statements
+Page 15
+Docusign Envelope ID: BBE938A1-10A8-4A65-A219-29CAC03E7372
+BIRMINGHAM CITY FOOTBALL CLUB LIMITED
+Notes to the Financial Statements
+for the year ended 30 June 2025
+1. Accounting policies
+
+Statutory information
+
+Birmingham City Football Club Limited is a private company, limited by shares, incorporated and domiciled in
+England and Wales. The address of Birmingham City Football Club Limited's registered office is St Andrews
+Stadium @ Knighthead Park, Small Heath, Birmingham, B9 4NH which is also the company's principal place of
+business.
+
+Basis of preparation .
+
+The financial statements have been prepared in accordance with UK-adopted International Financial Reporting
+Standards (UK-adopted IFRS).
+
+The financial statements are presented in sterling which is the functional currency of the company and rounded to
+the nearest £. ”
+The preparation of the financial statements requires management to make estimates and assumptions that affect
+the reported amounts of revenues, expenses, assets and liabilities, and the disclosure of contingent liabilities at
+the date of the financial statements. If in the future such estimates and assumptions which are based on
+management's best judgement at the date of the financial statements, deviate from the actual circumstances, the
+original estimates and assumptions will be modified as appropriate in the year in which the circumstances change.
+The company has taken advantage of exemption under IFRS 10 not to prepare consolidated accounts. The
+financial statements present information about the company as an individual entity and not about its group.
+Birmingham City Football Club Limited is a wholly owned subsidiary of Birmingham City Limited and the results of
+Birmingham City Football Club Limited are included in the consolidated financial statements of Birmingham City
+Limited which are available on Companies House.
+
+Basis of preparation: going concern
+
+On 13 July 2023, the company's ultimate parent undertaking, ZO Future Group (“ZO”), formerly known as
+Birmingham Sports Holdings Limited (“BSHL’), announced that Shelby Companies Limited, owned by Knighthead
+Annuity & Life Assurance Company and Knighthead Master Fund, L.P (Knighthead), had acquired 45.98% of the
+
+. issued share capital of the parent company Birmingham City Limited (“BCL”). Shelby Companies Limited acquired
+
+24.34% of the shares in BCL from ZO and 21.64% of the shares in BCL from Oriental Rainbow Investments Limited
+(ORIL).
+
+On 7 November 2025, ZO Future Group Limited disposed of its 51.72% shareholding in Birmingham City Limited
+to Shelby Companies Limited. Following the completion of this transaction, Shelby Companies Limited became the
+majority shareholder of BCL. The directors have received written confirmation from Knighthead that continued
+financial support will be provided for at least the next 12 months.
+
+At the balance sheet date funding of £188.3m has been provided by BCL to the company, this amount is shown as
+due to the parent undertaking within one year.
+
+In the prior year, the company entered into a facility agreement with funding available of up to £50m. The facility is
+available for a period of 7 years from the date of the agreement and attracts a fixed interest rate of 11.90%. On 3
+October 2024, a Deed of Amendment was entered into between the BCL, BCFC and Shelby extending the loan
+facility to £100m, On 23 July 2025, a further Deed of Amendment was entered into between the BCL, BCFC and
+Shelby extending the loan facility to £150m.
+The company does not have an overdraft facility and from 13 July 2024 onwards, the day to day funding
+requirements were supported by Knighthead.
+The directors have prepared detailed cash flow forecasts for the period to 31 December 2026 as part of the longer
+term forecasts prepared for the company. The forecasts show that the company needs additional funding of
+approximately £59m from Knighthead for the period from July 2025 to December 2026. The directors of the
+company and Knighthead have indicated that they expect that the company will have sufficient working capital to
+be able to advance funds for the company to meet its financial obligations as and when they fall due for the next
+twelve months and have therefore adopted going concern as the basis of preparation, with no material uncertainties
+noted.
+
+Page 16 continued...
+Decusign Envelope ID: BBE938A1-10A8-4A65-A219-29CAC03E7372
+BIRMINGHAM CITY FOOTBALL CLUB LIMITED
+Notes to the Financial Statements - continued
+for the year ended 30 June 2025
+1. Accounting policies — continued
+
+The Club recorded a loss of £34.6m for the year ended 30 June 2025, and has net liabilities of approximately
+£121.6m as at 30 June 2025. The directors have considered the forecast of BCFC carefully and also confirmed
+with Knighthead, the company’s ability to obtain funding required as shown by the forecasts. The directors remain
+of the view that the company can obtain the required funding from Knighthead and as a result, the directors consider
+it is appropriate to prepare the financial statements on a going concem basis.
+
+New and revised IFRSs not yet adopted
+
+The Company has not yet applied the new IFRSs that have been issued but are not yet effective.
+
+The accounting policies set out below have, unless otherwise stated, been applied consistently for the company to
+all periods presented in these financial statements.
+
+Revenue recognition
+
+Revenue represents income arising from sales to third parties and excludes transfer fees receivable and value
+added tax.
+
+Revenue is measured based on the consideration to which the company expects to be entitled in a contract with a
+customer and excludes amounts collected on behalf of third parties. The company recognises revenue when it
+transfers control of a product or service to a customer. Depending on the terms of a contract and the laws that
+apply to that contract, a performance obligation cdn be satisfied over time or at a point in time.
+
+(i) Season ticket and corporate hospitality revenue is recognised over the period of the football season as home
+matches are played. Matchday tickets are recognised at the point in time where the fixture is played.
+
+(ii) Fixed elements of broadcasting contracts are recognised on a time basis over the duration of the football
+season. Appearance fees are accounted for as earned.
+
+(iii) Sponsorship contracts are recognised over the duration of the contract, either on a straight line basis, or over
+the period of the football season, as appropriate, based on the terms of the contract.
+
+(iv) Catering revenues are recognised on an earned basis.
+
+(v) Revenue from the sale of branded products is recognised at the point of delivery when significant risks and
+rewards of ownership are deemed to have been transferred to the buyer.
+Sale of players
+
+Sales of players’ registrations are recorded at the date of signing of the contract for sale. Any costs incurred directly
+related to the sale are written off against profit on sale of player registrations as incurred. Contingent fees are only
+recognised upon the crystallisation of the contingent event.
+
+Property, plant and equipment
+
+Property, plant and equipment are stated at cost less accumulated depreciation and impairment losses.
+Depreciation is charged to the statement of comprehensive income, to write off the cost of the property, plant and
+equipment less estimated residual value, on a straight-line basis, over their estimated useful lives as follows:
+Right of use asset - leasehold property - Over the term of the lease
+
+Right of use asset - fixtures and equipment - Over the term of the lease
+
+Right of use asset - motor vehicles - Over the term of the lease
+
+Long leasehold property improvements - Shorter of lease or between 10 and 50 years
+
+Fixtures and equipment - Between 3 and 5 years
+
+Motor vehicles - 5Syears
+
+Assets under construction
+
+Assets under construction are classified separately within note 9 and are not depreciated until the asset is
+available to use in a manner intended by management.
+
+Page 17 continued...
+Docusign Envelope ID: B8E938A1-10A8-4A65-A219-29CAC03E7372
+BIRMINGHAM CITY FOOTBALL CLUB LIMITED
+Notes to the Financial Statements - continued
+for the year ended 30 June 2025
+1. Accounting policies - continued .
+Taxation
+Tax on the result for each period comprises current and deferred tax. Tax is recognised in the statement of
+comprehensive income except to the extent that it relates to items recognised directly in equity, in which case it is
+tecognised in equity. Current tax is the expected tax payable/income for the period, using tax rates enacted or
+substantively enacted at the statement of financial position date, and any adjustment to tax payable in respect of
+previous years.
+Deferred tax is provided on temporary differences between the carrying amounts of assets and liabilities for
+financial reporting purposes and the amounts used for taxation purposes. The amount of deferred tax provided is
+based on the expected manner of realisation or settlement of the carrying amounts of assets and liabilities, using
+tax rates enacted or substantively enacted at the statement of financial position date. Deferred tax is not discounted.
+Foreign currencies
+Assets and liabilities in foreign currencies are translated into sterling at the rates of exchange ruling at the statement
+of financial position date. Transactions in foreign currencies are translated into sterling at the rate of exchange
+tuling at the date of transaction. Exchange differences are taken into account in arriving at the operating result.
+Employee benefit costs
+Eligible employees of the company are members of the Football League Limited Pensions and Life Assurance
+Scheme. The company does not make any contributions to this scheme. The assets and liabilities of the scheme
+are managed independently of the company and therefore do not form part of these financial statements.
+Leases :
+At inception, the company assesses whether a contract is, or contains, a lease within the scope of IFRS 16. A
+contract is, or contains, a lease if the contract conveys the right to control the use of an identiffed asset for a period
+of time in exchange for consideration. Where a tangible asset is acquired through a lease, the company recognises
+a right-of-use asset and a lease liability at the lease commencement date. Right-of-use assets are included within
+tangible fixed assets, apart from those that meet the definition of investment property.
+The right-of-use asset is initially measured at cost, which comprises the initial amount of the lease liability adjusted
+for any lease payments made at or before the commencement date plus any initial direct costs and an estimate of
+the cost obligations to dismantle, remove, refurbish or restore the underlying asset and the site on which it is
+located, less any lease incentives received.
+The right-of-use asset is subsequently depreciated using the straight-line method from the commencement date to
+the earlier of the end of the useful life of the right-of-use asset or the end of the lease term. The estimated useful
+lives of the right-of-use assets are determined on the same basis as those of other tangible fixed assets. The right-
+of-use asset is periodically reduced by impairment losses, if any, and adjusted for certain re-measurements of the
+lease liability.
+The lease liability is initially measured at the present value of the lease payments that are unpaid at the
+commencement date, discounted using the interest rate implicit in the lease or, if that rate cannot be readily
+determined, the company's incremental borrowing rate. Lease payments included in the measurement of the lease
+liability comprise fixed payments, variable lease payments that depend on an index or a rate, amounts expected to
+be payable under a residual value guarantee, and the cost of any options that the company is reasonably certain
+to exercise, such as the exercise price under a purchase option, lease payments in an option renewal period, or
+penalties for early termination of a lease.
+The lease liability is measured at amortised cost using the effective interest method. It is re-measured when there
+is a change in: future lease payments arising from a change in an index or rate; the company's estimate of the
+amount expected to be payable under a residual value guarantee; or the company's assessment of whether it will
+exercise a purchase, extension or termination option. When the lease liability is re-measured in this way, a
+corresponding adjustment is made to the carrying amount of the right-of-use asset, or is recorded in profit or loss
+if the carrying amount of the right-of-use asset has been reduced to zero.
+The company has elected not to recognise right-of-use assets and lease liabilities for short-term leases of
+machinery that have a lease term of 12 months or less, or for leases of low-value assets including IT equipment.
+The payments associated with these leases are recognised in profit or loss on a straight-line basis over the lease
+term.
+Page 18 continued...
+Docusign Envelope ID: BBE938A1-10A8-4A65-A219-29CAC03E7372
+BIRMINGHAM CITY FOOTBALL CLUB LIMITED
+Notes to the Financial Statements - continued
+for the year ended 30 June 2025
+1. Accounting policies - continued
+
+Intangible fixed assets: cost and amortisation of acquired players' registrations
+The costs associated with the acquisition of players’ registrations are initially recorded at fair value at the date of
+acquisition. These costs are fully amortised over the period of the respective players’ contracts. A provision is made
+in accruals, for additional payments where in management's opinion, the club or player is likely to achieve the
+requirements for these additional payments. Where the outcome of these requirements is uncertain, additional
+payments are not made as a provision but the maximum amount payable is disclosed as a contingent liability (note
+23). Agent fees incurred relating to services provided to the club are capitalised as part of intangible assets.
+Agent fees incurred in relation to services provided to the player but paid on their behalf by the club are treated as
+a prepayment and unwound over a period to match the length of the player's contract. This release is to the wages
+and salaries cost within the Statement of Profit or Loss and Other Comprehensive Income rather than to player
+amortisation.
+Amortisation of the costs of player registrations is charged to the Statement of Profit or Loss and Other
+Comprehensive Income on a straight-line basis over the contract life of each individual player.
+Impairment of intangible and tangible fixed assets
+An impairment review on the intangible assets is undertaken if events or changes in circumstances indicate that
+the carrying amount of the player may not be recoverable. The club compares the carrying amount of the asset
+with its recoverable amount. The club does not consider that it is possible to determine the value in use of an
+individual football player in isolation as that player (unless via a sale or insurance recovery) cannot generate cash
+flows on their own. Furthermore, the club also considers that all of the players are unable to generate cash flows
+even when considered together. Accordingly the club considers the smallest cash-generating unit to contain all first
+team players, the stadium and the training facilities.
+The club calculates the value in use of this cash-generating unit by discounting estimated expected future cash
+flows relating to the club activities and compare this value with the value of the intangible assets, stadium and
+training facilities (including related assets). If the expected future cash flows are below the recorded value of assets
+the club will make an impairment adjustment of assets on a pro-rata basis.
+In certain instances, there may be an individual player or group of players whom the club does not consider to be
+part of the First Team squad and who will therefore not contribute to the future cash flows earned by the cash-
+generating unit. This is normally due to a permanent career-threatening injury/condition or planned sale for
+proceeds below carrying value. In this situation, the carrying value of the player or group of players is removed
+from the carrying value of players assessed as part of the cash-generating unit referred to above and instead these
+players will be assessed for impairment in isolation by considering their carrying value with the club's best estimate
+of their fair value less costs to sell.
+Other tangible assets are considered for impairment at each reporting date. Indicators for impairment include
+physical damage, obsolescence, decline in market value or adverse changes in the use of the asset. Where
+indications of impairment exist, the recoverable amount shall be estimated at the higher of the assets fair value
+less costs to sell and its value in use. Impairment losses are recognised within the Statement of Profit or Loss and
+Other Comprehensive Income.
+Further details are given in note 8.
+Investments
+
+. Investments in subsidiaries are initially measured at cost and subsequently measured at cost less impairment. The
+investments are assessed for impairment at each reporting date.
+Net financing costs
+Net financing costs comprise interest payable on borrowings, calculated using the effective interest rate method
+and interest receivable on funds invested. The discounting of the deferred payments for the purchase of players'
+registrations produces a notional interest payable and this is charged to finance costs.
+Signing on fees
+Signing on fees are not recorded within the costs of acquired players’ registrations but are held within prepayments
+on the statement of financial position and charged to the statement of profit or loss on a straight line basis over the
+period of each player's contract.
+
+Page 19 continued...
+Docusign Envelope ID: BBE938A1-10A8-4A65-A219-29CAC03E7372
+BIRMINGHAM CITY FOOTBALL CLUB LIMITED
+Notes to the Financial Statements - continued
+for the year ended 30 June 2025
+1. Accounting policies — continued
+Inventories
+Inventories are recorded at the lower of cost and net realisable value. Cost is based on the expenditure incurred in
+acquiring the stocks and bringing them to their existing location and condition. Net realisable value is based on the
+estimated selling price in the ordinary course of business. Provision is made for obsolete, slow-moving or defective
+items where appropriate.
+Cash and equivalents
+Cash and equivalents comprise cash balances and call deposits.
+Contract liabilities/deferred income
+Contract liabilities/deferred income represent the unrecognised income in relation to sponsorships, season tickets
+and hospitality packages.
+Financial instruments
+Financial assets and liabilities are recognised on the company's statement of financial position when the company
+becomes party to the contractual provisions of the instrument.
+Financial assets
+The company's financial assets relate to trade and other receivables and cash and cash equivalents. Trade and
+other receivables are classified as loans and receivables and are measured initially at fair value plus transaction
+costs and are carried subsequently at amortised cost under the effective interest method, less provision for any
+expected credit loss. Any change in their value through impairment or reversal of impairment is recognised in the
+statement of comprehensive income. There are no financial assets classified as fair value through the statement
+of comprehensive income or as held to maturity or available for sale.
+All financial assets are assessed for indicators of impairment at each statement of financial position date. Financial
+assets are impaired where there is evidence that a loss has occurred and that estimated future cash flows of the
+financial asset have been impacted. Objective evidence of impairment for a portfolio of receivables could include
+acompany's past experience of collecting payments, an increase in the delayed number of payments in the portfolio
+and the average credit period, as well as observed changes in the national or local economic conditions that
+correlate with default on receivables.
+Financial liabilities
+Financial liabilities which include bank loans and trade and other payables are measured initially at fair value net
+of transaction costs under the effective interest method and thereafter at amortised cost unless the effect of
+discounting would be immaterial, in which case they are stated at cost. Finance charges are accounted for on an
+accruals basis in the statement of comprehensive income using the effective interest method.
+Borrowing costs
+Borrowing costs that are directly attributable to the acquisition, construction or production of a qualifying asset are
+capitalised into the cost of that asset and depreciated in line with its useful life.
+2. Critical accounting judgements and key sources of estimation uncertainty
+The preparation of the financial statements in accordance with IFRS requires management to make estimates and
+assumptions that affect the reported amounts of assets and liabilities, income and expense and which may differ
+from actual results. The key critical judgements are considered to be:
+1. Player transfer costs
+Management have to make certain judgements as to whether a liability should be recognised under the terms of
+the contracts with other football clubs in respect of player transfers. These judgements include management's
+opinion, at the consolidated statement of financial position date, on the likely teague status in the next season. It
+also requires certain judgements as to whether a player will continue to make the contractually agreed number of
+first team appearances. Based on these judgements, management decide on an individual player by player basis
+as to whether the liability is disclosed as a contingent liability in note 23 whether it becomes recognised as a liability
+in trade payables in the statement of financial position.
+2. Intangible assets, tangible assets and impairment
+Management are required to test whether intangible and tangible assets have suffered any impairment. The
+recoverable amount of cash generating units connected to the recorded value of these assets has been determined
+based on value in use estimates and compared to the book value to determine if an impairment provision is needed.
+. Page 20 continued...
+Docusign Envelope ID: B8BE938A1-10A8-4A65-A219-29CAC03E7372
+BIRMINGHAM CITY FOOTBALL CLUB LIMITED
+Notes to the Financial Statements - continued
+for the year ended 30 June 2025
+3. Revenue
+The company has one main business segment, that of professional football operations. As a result, no additional
+business segment information is required to be provided. It operates in one geographical segment, in the United
+Kingdom, and accordingly no additional geographical segmental information is required to be provided. A voluntary
+analysis of the revenue streams is given below to assist with an understanding of the business.
+2025 2024
+£ £
+Match receipts 10,306,286 6,115,977
+Broadcasting 3,527,782 9,654,420
+Other commercial income 21,808,698 12,949,876
+35,642,766 28,720,273
+Revenue from contracts with customers recognised at a point in time
+2025 2024
+£ £
+Match receipts 5,785,906 3,010,496
+Broadcasting 288,305 508,970
+Other commercial income 11,833,774 3,467,060
+17,907,985 6,986,526
+Revenue from contracts with customers recognised over time
+2025 2024
+£ £
+Match receipts. 4,520,380 3,105,481
+Broadcasting 3,239,477 9,145,450
+Other commercial income 8,798,316 7,363,336
+16,558,173 19,614,267
+Revenue from other sources
+2025 2024
+£ £
+Other commercial income 1,176,608 2,119,480
+Revenue streams comprise
+Match receipts Season and match day tickets.
+Broadcasting Television and broadcasting income, including distributions from the FA
+broadcasting agreements, cup competitions and local radio.
+Other commercial income Sponsorship income, corporate hospitality, merchandising, conference and
+banqueting and other sundry revenue.
+4. Employees and directors
+2025 2024
+£ £
+Wages and salaries 31,525,577 29,993,538
+Social security costs 3,883,686 3,589,861
+Other pension costs 289,119 135,394
+35,698,382 33,718,793
+Page 21 continued...
+Docusign Envelope ID: B8BE938A1-10A8-4A65-A219-29CAC03E7372
+BIRMINGHAM CITY FOOTBALL CLUB LIMITED
+Notes to the Financial Statements - continued
+for the year ended 30 June 2025
+4. Employees and directors - continued
+The average number of employees during the year was as follows:
+2025 2024
+Playing staff 78 73
+Training staff 117 79
+Training ground 27 17
+Commercial and fund-raising staff 41 33
+Administration and other staff 42 37
+305 239
+During the year, the company also employed approximately 140 temporary staff on match days (2024 - 118), the
+cost of which is included in the staff costs above.
+Key management compensation
+The remuneration of senior management during the year was as follows:
+2025 2024
+£ £
+Remuneration for qualifying services 1,783,671 1,386,666
+Pension costs 36,698 11,117
+: 1,820,369 1,397,783
+Directors’ remuneration :
+2025 2024
+£ £
+Remuneration for qualifying services 233,821 249,221
+Pension costs 3,845 1,761
+237,666 250,982
+One director (2024 - 1) is accruing benefits under defined contribution schemes.
+Remuneration disclosed above includes the following amounts paid to the highest paid director:
+2025 2024
+£ £
+Remuneration for qualifying services 233,821 249,221
+Pension costs 3,845 1,761
+237,666 250,982
+5. Net finance costs
+2025 2024
+£ £
+Finance income:
+Notional interest on transfer fee receivables due after 1 year 167,210 155,088
+Other interest receivable 702,849 687,915
+870,059 843,003
+Page 22 continued...
+Docusign Envelope ID: B8E938A1-10A8-4A65-A219-29CAC03E7372
+BIRMINGHAM CITY FOOTBALL CLUB LIMITED
+Notes to the Financial Statements — continued
+for the year ended 30 June 2025
+5. Net finance costs — continued
+2025 2024
+£ £
+Finance costs:
+Notional interest payable on transfer fee liabilities due .
+after 1 year 1,468,261 436,890
+Bank interest - 41,155
+Interest on borrowings . 7,717,899 1,698,752
+Interest on lease liabilities 1,093,405 920,947
+10,279,565 3,097,744
+Net finance costs 9,409,506 2,254,741 _
+6. Operating loss
+Operating loss is stated after charging/(crediting) the following:
+2025 2024
+£ £
+Cost of inventories recognised as an expense 2,674,331 257,601
+Depreciation — owned assets 3,191,644 1,504,705
+Depreciation — leased assets 1,250,365 1,113,360
+Players’ registrations amortisation 6,830,337 4,382,419
+Insurance claim arising on business interruption caused by fire damage (270,000) (600,000)
+Foreign exchange retranslation 6,851 14,919
+Auditors’ remuneration 46,000 47,000
+Auditors’ remuneration - non-audit fees 5,250 12,000
+: Page 23 continued...
+Docusign Envelope ID: B8E938A1-10A8-4A65-A219-29CAC03E7372
+BIRMINGHAM CITY FOOTBALL CLUB LIMITED
+Notes to the Financial Statements - continued
+for the year ended 30 June 2025
+7. Income tax
+Analysis of tax expense
+No liability to UK corporation tax arose for the year ended 30 June 2025 nor for the year ended 30 June 2024.
+2025 2024
+£ £
+Loss before income tax (34,559,453) _ (16,081,826)
+Loss multiplied by the standard rate of corporation tax in the UK of 25% :
+(2024 — 20.5%) (8,639,863) (4,020,457)
+Effects of:
+R&D tax credit - (371,454)
+Difference between capital allowances and depreciation - 497,141
+Tax losses generated 8,639,863 3,523,316
+Tax credit - (371,454)
+Factors that may affect future tax charges
+At 30 June 2025, the company has trading losses of £167,881,397 (2024 - £159,241 ,534)) to carry forward and
+use against future trading profits. No deferred tax has been recognised in relation to these losses on the basis of
+uncertainty about the future taxable profits.
+8. Intangible assets ,
+Players
+registrations
+£
+Cost
+At 4 July 2024 26,290,354
+Additions 27,670,614
+Disposals (19,163,661)
+At 30 June 2025 34,797,307
+Amortisation
+At 1 July 2024 21,207,480
+Amortisation for year 6,830,337
+Eliminated on disposal (18,579,784)
+At 30 June 2025 9,458,033
+Net book value
+At 30 June 2025 25,339,274
+At 30 June 2024 5,082,874
+Any players whom the company do not consider to be a long term part of the first team squad and who will therefore
+not contribute to future cash flows earned by the company are assessed for impairment by considering the carrying
+value with the company's best estimate of fair value (being post year-end sales proceeds or expected sales
+proceeds) less costs to sell.
+. Page 24 continued...
+Docusign Envelope ID: B8E938A1-10A8-4A65-A219-29CAC03E7372
+BIRMINGHAM CITY FOOTBALL CLUB LIMITED :
+Notes to the Financial Statements - continued
+for the year ended 30 June 2025
+9. Property, plant and equipment
+Right of Right of Right of
+use asset use asset use asset
+Leasehold Fixtures
+land and Motor and
+buildings vehicles equipment
+£ £ £
+Cost
+At 1 July 2024 10,149,075 134,470 230,884
+Additions 3,316,889 - -
+Disposals (1,179,931) - -
+At 30 June 2025 12,286,033 134,470 230,884
+Depreciation
+At 1 July 2024 3,521,064 134,470 230,884
+Charge for year 1,250,365 - :
+Eliminated on disposal : (360,535) - :
+At 30 June 2025 4,410,894 134,470 230,884
+Net book value
+At 30 June 2025 7,875,139 : :
+At 30 June 2024 6,628,011 - -
+Leasehold Fixtures Motor
+land and and vehicles Asset under
+buildings equipment construction Totals
+Cost
+At 1 July 2024 21,867,231 5,672,283 705,661 7,320,613 46,080,217
+Additions - 5,492,301 155,147 10,893,357 19,857,694
+Disposals - - - - (1,179,931)
+Transfer 17,876,335 - - (17,876,335) -
+At 30 June 2025 39,743,566 11,164,584 860,808 337,635 64,757,980
+Depreciation
+At 1 July 2024 2,974,199 2,932,873 273,150 - 10,066,640
+Charge for year 1,290,331 1,729,385 171,898 - 4,441,979
+Disposals . - - - - (360,535)
+At 30 June 2025 4,264,530 4,662,258 445,048 - 14,148,084
+Net book value
+At 30 June 2025 35,479,036 6,502,326 415,760 337,635 50,609,896
+At 30 June 2024 18,893,032 2,739,410 432,511 7,320,613 36,013,577
+Page 25 continued...
+Docusign Envelope ID: B8E938A1-10A8-4A65-A219-29CAC03E7372
+BIRMINGHAM CITY FOOTBALL CLUB LIMITED
+Notes to the Financial Statements - continued
+for the year ended 30 June 2025
+10. Investments
+Shares in
+group
+. undertakings
+£
+Cost
+At 1 July 2024
+and 30 June 2025 1
+Net book value
+At 30 June 2025 ot
+At 30 June 2024 1
+The company's investments at the Statement of Financial Position date in the share capital of companies include
+the following: :
+Birmingham City Women Football Club Limited
+Registered office: St Andrew's @ Knighthead Park, Birmingham, United Kingdom, B9 4RL
+Nature of business: Football club
+%
+Class of shares: holding
+Ordinary 100.00
+11. Inventories
+2025 2024 .
+£ £
+Goods for resale 2,003,820 1,288,830
+The company has assessed the carrying value of inventories at the balance sheet date and considers a provision
+of Enil (2024: Enil) is necessary.
+12. Trade and other receivables ;
+2025 2024
+: £ £
+Current:
+Trade debtors 19,066,858 10,877,777
+Other debtors 6,167,939 5,747,317
+Amounts owed from related company 442,641 1,934,722
+Taxation and social security - 1,272,524
+Prepayments and accrued income 2,756,710 1,478,748
+28,434,148 21,311,088
+Non-current:
+Trade debtors 5,935,048 4,305,654
+Prepayments and accrued income 1,887,034 378,190
+7,822,082 4,683,844
+Aggregate amounts 36,256,230 25,994,932
+Page 26 continued...
+Docusign Envelope ID: B8BE938A1-10A8-4A65-A219-29CAC03E7372
+BIRMINGHAM CITY FOOTBALL CLUB LIMITED
+Notes to the Financial Statements - continued
+for the year ended 30 June 2025
+12. Trade and other receivables - continued
+Included within trade receivables is £15,914,288 (2024 - £9,014,821) in respect of transfer fees receivable, of which
+£5,935,047 (2024 - £4,305,654) is receivable after more than one year. included within prepayments is £3,127,404
+(2024 - £701,584) in respect of agent fees and signing on fees, of which £1 ,887,034 (2024 - £378,190) is receivable
+after more than one year.
+Trade receivables are individually assessed based on estimated recoverable amounts.
+The average credit period taken on sales is 93 days (2024 - 78 days).
+Ageing of past due but not impaired receivables, based on normal 30-day credit terms.
+2025 2024
+£ £
+30 - 90 days 170,520 261,264
+90 - 120 days 70,562 226,560
+120 - 180 days - -
+180 days + 2,227,478 2,016,996 -
+Total 2,468,560 2,504,820
+Movement in bad and doubtful debt provisions
+2025 2024
+£ £
+Balance brought forward 408,240 372,670
+Amounts recovered - (22,356)
+Written off - -
+Amounts provided 288,913 -
+Balance carried forward 697,153 350,314
+The company applies the simplified approach under IFRS 9 to provide expected credit losses using the lifetime
+expected loss provision for all trade receivables. To measure the expected credit losses, trade receivables have
+been grouped based on shared credit risk characteristics and the days past due. The expected credit losses also
+incorporate forward looking information.
+At 30 June 2025 Current Less than 90 Over 90 days Totals
+days past due past due
+£ £ £ £
+Expected loss rate - - 3.9% -
+Receivables
+amount 5,443,080 2,241,083 18,014,896 25,699,059
+Loss allowance : : (697,153) (697,153)
+Total 5,443,080 2,241,083 17,317,743 25,001,906
+At 30 June 2024 Current Less than 90 Over 90 days Totals
+days past due past due
+£ £ £ £
+Expected loss rate - - 12.6% -
+Receivables , :
+amount 11,299,633 1,446,479 2,787,633 15,533,745
+Loss allowance - : (350,314) (350,314)
+Total 11,299,633 1,446,479 2,437,319 15,183,431
+The directors consider the carrying amount of trade and other receivables approximates to their fair value.
+Page 27 continued...
+Docusign Envelope ID: B8BE938A1-10A8-4A65-A219-28CAC03E7372
+BIRMINGHAM CITY FOOTBALL CLUB LIMITED
+Notes to the Financial Statements - continued
+for the year ended 30 June 2025
+13. Cash and cash equivalents
+2025 2024
+£ £
+Cash in hand 107,668 98,142
+Bank accounts 14,125,927 8,573,665
+14. Called up share capital
+Allotted, issued and fully paid:
+Number: Class: 2025 2024
+£ £
+117,661,676 (2024: 117,661,676) Ordinary shares of 50p each 58,830,838 58,830,838
+58,830,838 §8,830,838
+All shares rank pari passu.
+15. Trade and other payables
+2025 2024
+£ £
+Current:
+Trade creditors 23,128,528 15,137,496
+Other creditors 121,169 161,444
+Taxation and social security 1,484,462 -
+Accruals and deferred income 3,697,165 713,529
+28,431,324 16,012,469
+Non-current:
+Trade creditors 14,663,938 1,935,363
+Accruals 104,000 -
+14,767,938 1,935,363
+Aggregate amounts 43,199,262 17,947,832
+Page 28 continued...
+Docusign Envelope ID: BBE938A1-10A8-4A65-A219-29CAC03E7372
+BIRMINGHAM CITY FOOTBALL CLUB LIMITED
+Notes to the Financial Statements - continued
+for the year ended 30 June 2025
+15. | Trade and other payables - continued
+Included within trade payables is £21,132,989 (2024 - £5,454,652) in respect of actual and probable transfer fees
+payable and agent's fees payable, of which £14,663,938 (2024 - £1,935,363) is payable after more than one year.
+Included within accruals is £208,000 (2024 - ENil) in respect of signing on fees payable, of which £104,000 (2024
+- £Nil) is payable after more than one year.
+Ageing of trade payables included in current liabilities is set out below:
+2025 2024
+£ £
+0 - 30 days 5,828,812 6,048,843
+30 - 90 days 1,999,546 2,133,896
+90 - 180 days - 869,260
+180 days + 15,300,170 6,085,497
+Total 23,128,528 15,137,496
+Trade payables and accruals principally comprise amounts outstanding for trade purchases and ongoing costs and
+are payable within 2 months. The average credit period taken for trade purchases is 80 days (2024 - 78 days).
+16. Financial liabilities - borrowings
+2025 2024
+£ £
+Current:
+Amounts owed to parent company 188,315,812 135,230,969
+Leases (see note 18) 1,088,191 975,966
+189,404,003 _ 136,206,935
+Non-current:
+Preference shares 18,500 18,500
+Leases (see note 18) : 7,975,655 6,583,344
+7,994,155 6,601,844
+Terms and debt repayment schedule
+1 year or More than 5
+less 1-2 years 2-5 years years Totals
+£ £ £ £ £
+Amounts owed to parent
+company 188,315,812 - - - 188,315,812
+Preference shares - - - 18,500 18,500
+Leases 1,088,191 1,237,204 4,478,344 2,260,108 9,063,847
+189,404,003 1,237,204 4,478,344 2,278,608 _ 197,398,159
+Page 29 continued...
+Docusign Envelope ID: B8E938A1-10A8-4A65-A219-29CAC03E7372
+BIRMINGHAM CITY FOOTBALL CLUB LIMITED
+Notes to the Financial Statements - continued
+for the year ended 30 June 2025
+16. Financial liabilities - borrowings - continued
+The preference shares are shown as debt rather than equity. The Company may redeem cumulative preference
+shares at par at any time upon giving not less than three months previous notice in writing to the holders of the
+cumulative preference shares. On an earlier winding up, the cumulative preference shares carry priority over the
+ordinary shares to the extent of their par value plus any arrears of dividends (which are cumulative for a period of
+: three years). The preference shares carry no votes except on a winding up or on variations of their rights.
+in the prior year, the company entered into a facility agreement with funding available of up to £50m. The facility is
+available for a period of 7 years from the date of the agreement and attracts a fixed interest rate of 11.90%. On 3
+October 2024, a Deed of Amendment was entered into between the company, BCL and Knighthead extending the
+loan facility to £100m. As at 30 June 2025 an amount of £90.2m had been provided to BCFC from BCL and
+Knighthead under the loan agreement. On 14 July 2025, a Deed of Amendment was entered into between the
+company, BCL and Knighthead extending the loan facility to £150m.
+47. Lease liability -
+2025 2024
+£ £
+Current 1,088,191 975,966
+Non current 7,975,655 6,583,344
+9,063,846 7,559,310
+Maturity analysis
+2025 2024
+£ £
+Not later than one year 1,912,046 1,799,000
+Later than one year and not more than five years 8,303,003 5,839,750
+Later than five years 7,200,083 8,107,833
+17,415,132 15,746,583
+Page 30 continued...
+Docusign Envelope ID: BBE938A1-10A8-4A65-A219-29CAC03E7372
+BIRMINGHAM CITY FOOTBALL CLUB LIMITED
+Notes to the Financial Statements - continued
+for the year ended 30 June 2025
+18. Deferred taxation
+2025 2024
+£ £
+Deferred tax comprises:
+Fixed asset timing difference - (54,307)
+Losses carried forward 48,530,863 39,810,384
+Assets not recognised (48,530,863) _ (39,756,077)
+The potential asset is based on a corporation tax rate of 25% (2024 — 25%). No deferred tax asset has been
+recognised at 30 June 2025 on the basis that future recoverability of such an asset is uncertain.
+19. Financial instruments
+Capital risk management
+The company manages its capital to ensure that the company will be able to continue as a going concem through
+the optimisation of the debt and equity balance. The capital structure of the company consists of debt, which
+includes the borrowings disclosed in note 17, cash and cash equivalents and equity attributable to equity holders
+of the parent, comprising issued share capital, reserves and retained earnings. :
+Categories of financial instruments
+2025 2024
+£ £
+Financial assets:
+Cash and cash equivalents 14,233,595 8,671,807
+Trade and other receivables (note 12) 36,256,230 25,994,932
+50,489,825 34,666,739
+Financial liabilities:
+Trade and other payables held at amortised cost 43,199,262 17,234,303
+Borrowings at amortised costs (note 17) 197,398,158 142,808,779
+240,597,420 160,043,082
+The fair value of the financial instruments set out above is not different to the book value. The above financial
+liabilities do not include accruals.
+Financial risk management objectives
+Management monitor and manage the financial risks relating to the operations of the company through internal risk
+reports. These risks include currency risk, interest rate risk, credit risk, liquidity risk and cash flow interest rate risk.
+Where the company considers the impact arising from one or more of these risks to be potentially material to the
+company's financial position, derivative financial instruments are used to reduce risk exposure. The use of financial
+derivatives requires the prior approval of the board. The company does not enter into or trade financial instruments,
+including derivative financial instruments, for speculative purposes.
+Price risk
+The company has no significant exposure to securities price risk, as it holds no listed equity investments.
+Foreign currency risk
+The company has some exposure in its trading subsidiary to the risk of changes in foreign currency exchange
+tates.
+Page 31 continued...
+Docusign Envelope ID: BBE938A1-10A8-4A65-A219-29CAC03E7372
+BIRMINGHAM CITY FOOTBALL CLUB LIMITED
+Notes to the Financial Statements - continued Lo
+for the year ended 30 June 2025
+19. Financial instruments - continued
+Credit risk
+The company's principal financial assets are bank balances, cash and trade receivables. The company's credit risk
+is primarily attributable to its trade receivables. Credit risk is managed by monitoring the aggregate amount and
+duration of exposure to any one customer depending upon their credit rating. The amounts presented in the
+statement of financial position are net of allowances for doubtful debts, estimated by the company's management
+based on prior experience and their assessment of the current economic environment.
+The credit risk on liquid funds is limited because the counterparties are banks with high credit-ratings assigned by
+international credit-rating agencies. The company has no significant concentration of credit risk, with exposure
+spread over a large number of counterparties and customers.
+Liquidity risk
+The company's policy has been to ensure continuity of funding through operating within its banking facilities and to
+match borrowing against the useful life of assets purchased. Longer term liquidity is achieved through funding
+provided by the ultimate holding company and the need for ongoing funding is confirmed in the Strategic Report
+. and Accounting Policies (note 1). The directors manage liquidity risk through close and frequent discussions with
+Knighthead and have received assurances that funding is in place at least until 31 December 2026.
+The company's financial liabitities have contractual maturities summarised below.
+30 June 2025 Current Non-current
+within 1 year 1to5 Over 5 years
+£ £ £
+Preference shares - - 18,500
+Due to group undertakings 188,315,812 - -
+Leases 1,088,191 §,715,548 2,260,107
+Trade and other payables and social security and
+taxes 24,734,159 14,663,938 -
+214,138,162 20,379,486 2,278,607
+30 June 2024 Current Non-current
+within 1 year 1to5 Over 5 years
+£ £ £
+Preference shares - - 18,500
+Due to group undertakings 135,230,969 - -
+Leases 975,966 3,666,123 2,917,221
+Trade and other payables and social security and
+taxes 15,298,940 1,935,363 -
+151,505,875 5,601,486 2,935,721
+Interest rate sensitivity analysis
+If interest rates had been 1% higher/lower and all other variables were held constant, the company's result for the
+year ended 30 June 2025 would not be materially affected.
+20. Pension commitments
+2025 2024
+Defined contribution schemes £ £
+- Charge to the statement of comprehensive income in respect of defined contribution
+schemes 289,119 135,394
+The company operates a defined contribution pension scheme for all qualifying employees. The assets of the
+scheme are held separately from those of the company in an independently administered fund.
+Page 32 continued...
+Docusign Envelope ID: BBE938A1-10A8-4A65-A219-29CAC03E7372
+BIRMINGHAM CITY FOOTBALL CLUB LIMITED
+. Notes to the Financial Statements - continued
+for the year ended 30 June 2025
+21. Ultimate parent company and parent undertaking of larger group
+The immediate parent company of the club is Birmingham City Limited, a company incorporated in England and
+Wales.
+The largest group in which the results of the company are consolidated is that headed by ZO Future Group ("ZO"),
+formerly known as Birmingham Sports Holdings Limited (“BSHL"), a company incorporated in the Cayman Islands
+and listed on The Stock Exchange of Hong Kong Limited. The consolidated accounts of this company are available
+to the public and may be obtained from the website of The Stock Exchange of Hong Kong Limited. The smallest
+group accounts available is that headed by Birmingham City Limited.
+22. Contingent liabilities
+, Under the terms of certain contracts with players and other football clubs, additional amounts would become
+payable if certain specific conditions arise after 30 June 2025. The directors have taken the view that these amounts
+are not certain enough to be recorded as a provision but note that the maximum that could be payable in respect
+of these items is £15,358,000 (2024 - £2,025,000). Since the year end and to the date of approval of these financial
+statements £360,000 of these amounts have crystallised.
+23. Related party disclosures ;
+The company has taken advantage of the exemption conferred within |AS 24 not to disclose transactions between
+wholly owned members of the same group.
+Any directors or senior employees who have authority and responsibility for controlling the activities of the company
+are considered to be key management personnel. Total remuneration in respect of these individuals is disclosed
+in note 5.
+During the year, BCFC paid rent to Birmingham City Stadium Limited (BCSL) amounting to £1,250,000 (2024:
+£1,250,000) and included in other debtors at 30 June 2025 is an amount of £3,820,000 (2024: £4,701,000) due to
+BCFC. Interest is charged at a rate of 4.5% per annum from 1 April 2022. During the year, £66,000 (2024: £122,000)
+of interest was receivable.
+During the prior year, the company entered into an agreement with Shelby Companies Limited for the naming rights
+sponsorship of the stadium. In the year to 30 June 2025, revenue of £8,500,000 (2024: £4,241,667) was
+recognised. As at 30 June 2025 an amount of £442,641 (2024: £1,934,722) was due from Shelby Companies
+Limited and is included in amounts due from related company. As at 30 June 2025 an amount of £126,851,000
+- (2024: £72,274,000) was due by the immediate parent company BCL to Shelby Companies Limited. Interest is
+charged at a rate of 11.9% per annum. During the year, interest of £7,718,000 was payable (2024: £2,786,000) of
+which £1,043,000 (2024: £1,087,000) was capitalised.
+Page 33 continued...
+Docusign Envelope ID: B8E938A1-10A8-4A65-A219-29CAC03E7372
+BIRMINGHAM CITY FOOTBALL CLUB LIMITED
+Notes to the Financial Statements - continued
+for the year ended 30 June 2025
+24. Notes supporting the statement of changes in equity
+Share capital and share premium -
+Share capital records the nominal value of shares in issue and the share premium records the receipts from issue
+of share capital above the nominal value of the shares, net of direct issue costs.
+Capital redemption reserve -
+Capital redemption reserves represents a non-distributable reserve in relation to shares which have been brought
+back by the company.
+Other reserves -
+Other reserves represent the waiver of a loan balance due to the club's immediate parent company Birmingham
+City Limited.
+Profit and loss account -
+The profit and loss account records the cumulative profits less losses recognised in the Statement of
+Comprehensive Income, net of any distributions and share-based payments made.
+Capital contribution reserve -
+This reserve represents a loan from a shareholder which has been waivered and thus creating a capital
+contribution.
+25. Events after the balance sheet date
+Transfers of player registrations subsequent to 30 June 2025, taking into account applicable costs, resulted in a
+net £2,687,654 payable by the company (2024 - £21,070,000 payable by the company).
+There has also been significant infrastructure improvement work taking place at St. Andrews @ Knighthead Park,
+Knighthead Performance Centre and the Elite Performance & Innovation Centre, This has amounted to £2.9m of
+spend post year end.
+On 23 July 2025, a Deed of Amendment was entered into between Birmingham City Limited, Birmingham City
+Football Club Limited and Knighthead extending the loan facility to £150m. As at 30 June 2025 the total amount
+owing from BCL to Knighthead including interest and loan reassignments is £127.3m and is showing as due to
+related company.
+On 7 November 2025, ZO Future Group Limited disposed of its 51.72% shareholding in Birmingham City Limited
+to Shelby Companies Limited. Following the completion of this transaction, Shelby Companies Limited became the
+majority shareholder of BCL.
+Page 34
 

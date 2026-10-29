@@ -2,7 +2,7 @@ source: Companies House filing, charlton-athletic-fc__2.pdf
 document: Hr5kHb6_YcCgpqqRAGioIkpyLTEwQVzxTRpNDZ0vEAQ
 made_up_date: 2024-06-30
 method: ocr
-pages_read: 12 of 34
+pages_read: 34 of 34
 
 ‘ Registered number: 01788466
 CHARLTON ATHLETIC FOOTBALL COMPANY LIMITED
@@ -354,4 +354,719 @@ London
 ‘ EC2V 7BG
 Date 34/03/2025
 Page 9
+CHARLTON ATHLETIC FOOTBALL COMPANY LIMITED
+STATEMENT OF COMPREHENSIVE INCOME
+FOR THE YEAR ENDED 30 JUNE 2024
+2024 2023
+Note £000 £000
+Turnover 4 8,812 9,802
+Gross profit 8,812 9,802
+Administrative expenses (23,943) (19,877)
+Exceptional items 5 (746) (148)
+Other operating income 6 1,306 363
+Operating loss 7 4,57) (9,860)
+Profit on disposal of players 687 352
+Interest payable and similar expenses 9 (43) (51)
+Loss before tax (13,927) (9,559)
+Tax on Loss 10 - -
+Loss for the financial year (13,927) (9,559)
+There was no other comprehensive income for 2024 (2023 - END.
+The notes on pages 14 to 31 fori part of these financial statements.
+Page 10
+CHARLTON ATHLETIC FOOTBALL COMPANY LIMITED
+REGISTERED NUMBER:01788466 :
+i
+STATEMENT OF FINANCIAL POSITION
+. AS AT 30 JUNE 2024
+As restated
+2024 2023
+Note £000 £000
+Fixed assets
+Intangible assets it 1,197 894 ‘
+Tangible assets 12 1,980 1209
+3,177 2,103
+: Current assets |
+Debtors: amounts falling due after more
+than one year 13 643 1381
+Debtors: amounis falling due within one :
+year 13 3,425 2,439
+Cash at bank and in hand 14 31 i
+4,099 3.831
+Creditors: amounts falling due within one '
+year 15 (20,737) (27,315)
+Net current liabilities (16,638) (23,484) '
+Total assets less current liabilities (13,46) (21,38)
+Creditors: amounts falling due after more
+than one year 16 (9,063) (8,547)
+Provisions for tiabilities
+Other provisions 18 (130) (130)
+Net Liabilities (22,654) (30,058) :
+Capital and reserves
+Called up share capital 19 26,477 26.477 :
+Capita! contribution reserve 20 22,369 1,038
+Profit and loss account 20 (71,500) (57,573)
+Shareholders’ deficit (22.654) (30,058)
+. Page 11
+CHARLTON ATHLETIC FOOTBALL COMPANY LIMITED
+REGISTERED NUMBER:01788466
+STATEMENT OF FINANCIAL POSITION (CONTINUED)
+AS AT 30 JUNE 2024
+The financial statements were approved and authorised for issue by the board and were signed on its
+behalf by:
+ed wartick (Mar 34, 2025 12:38 GMT+L)
+EM Warrick
+Director
+Date: 31/03/2025
+The notes on pages 14 to 31 form part of these financial statements.
+Page 12
+CHARLTON ATHLETIC FOOTBALL COMPANY LIMITED
+STATEMENT OF CHANGES IN EQUITY :
+FOR THE YEAR ENDED 30 JUNE 2024
+Capital
+Called up contribution Profit and
+share capital reserve loss account Total equity
+£000 £000 £000 £000 ‘
+
+Atl July 2022 26.477 1,038 (48,014) (20,499)
+
+Comprehensive loss for the year
+
+Loss for the year - . (9,559) (9,559) |
+
+At 1 July 2023 26.477 1038 (87,573) (30,058) |
+
+Comprehensive loss for the year ;
+. Loss for the year - - (13,927) (13,927) :
+
+Contributions by and distributions to owners :
+
+Loans waived in the year (note 15) - 21,331 - 21,331
+At 30 June 2024 26.477 22,369 (71,500) (22,654)
+|
+i
+‘ Page 13
+CHARLTON ATHLETIC FOOTBALL COMPANY LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+1 General information
+Charlton Athletic Football Company Limited (the Club) is a private company, limited by shares,
+domiciled and incorporated in England and Wales (registered number: 01788466). The registered
+office address is The Valley. Floyd Road, London, SE7 8BL.
+2. Accounting policies
+21 Basis of preparation of financial staternents
+The financial statements have been prepared under the historical cost convention unless
+otherwise specified within these accounting policies and in accordance with Financial Reporting
+Standard 102, the Financial Reporting Standard applicable in the UK and the Republic of Ireland
+and the Companies Act 2006.
+The preparation of financial statements in compliance with FRS 102 requires the use of certain
+critical accounting estimates. It also requires management to exercise judgment in applying the
+Company's accounting policies (see note 3).
+The following principal accounting policies have been applied:
+2.2 Financial Reporting Standard 102 - reduced disclosure exemptions
+The Company has taken advantage of the following disclosure exemptions in preparing these
+financial statements, as permitted by the KRS 102 "The Financial Reporting Standard applicable
+in the UK and Republic of Ireland’:
+. the requirements of Section 7 Statement of Cash Flows;
+. the requirements of Section 3 Financial Statement Presentation paragraph 3.17(d);
+. the requirements of Section 33 Related Party Disclosures paragraph 33,7,
+This information is included in the consolidated financial statements of SE7 Partners Limited as at
+30 June 2024 and these financial statements may be obtained from Companies House.
+Page 14
+CHARLTON ATHLETIC FOOTBALL COMPANY LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+2. Accounting policies (continued) !
+i
+23 Going concern
+i As at 30 June 2024, the club had net current liabilities of £16,638k (2023 - £23,484k) and a total
+comprehensive loss for the financial year of £13,927k (2023 - £9, 559k)
+The directors have prepared forecasts which estimate that the club has sufficient cash to
+continue as a going concern and pay its fiabilities as they fall due for the foreseeable future,
+being a period of at least one year from the date of approval of the accounts. The forecasts
+include additional funding to be provided by SE/ Partners, who have confirmed that, if
+necessary, they will provide additional funding above that envisaged in the base projections.
+SE7 Partners have provided the club with a letter of financial support for a period of not less
+than 12 months from the date of signing these financial statements.
+As part of the transaction at the start of the financial year, SE7 Partners were approved by the
+EFL after an intensive scrutiny process, and signed up to EFL regulations and provided
+information relating to the source and sufficiency of funding. The Company has received f
+renewed letters of support from the major ultimate shareholders. The directors believe that the
+. club will be able to meet its liabilities as they fall due for the foreseeable future being a period
+of not less than one year from the approval of these financial statements. Accordingly, it is
+appropriate to prepare the accounts on a going concern basis and the accounts do not include
+i any adjustments that would be required if the club was unable to continue as a going concern.
+24 Turnover
+: Turnover represents income receivable from football and related commercial activities
+excluding transfer fees receivable and value added tax. Broadcast and matchday income is
+recognised when related matches are played. Advance season tickets sales are included within
+deferred income and released to turnover in the relevant season. i
+25 Players' registrations
+The cost of obtaining players’ registrations with the FA is capitalised as an intangible assets and
+amortised evenly over the period of the respective players’ contracts. These costs include \
+transfer fees, transfer levies and agents’ fees. Payments contingent on the accurrence of
+uncertain future events are recognised when the event takes place. Players' registrations are
+written down for impairment when the individual player's carrying value exceeds the amount
+: recoverabie through use or sale. Players are derecognised as intangible assets when they are
+sold, or if their contracts run out. Any profit or loss on disposal is recognised through profit or loss.
+i Page 15
+CHARLTON ATHLETIC FOOTBALL COMPANY LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+2. Accounting policies (continued)
+2.6 Foreign currency translation
+Functional and presentation currency
+The Company's functional and presentational currency is GBP.
+Transactions and balances
+Foreign currency transactions are translated into the functional currency using the spot
+exchange rates at the dates of the transactions.
+At each period end foreign currency monetary items are translated using the closing rate. Non-
+monetary items measured at historical cost are translated using the exchange rate at the date of
+the transaction and non-monetary items measured at fair value are measured using the
+exchange rate when fair value was determined.
+Foreign exchange gains and losses resulting from the settlement of transactions and from the
+translation at period-end exchange rates of monetary assets and liabilities denominated in
+foreign currencies are recognised in profit or loss except when deferred in other comprehensive
+income as qualifying cash flow hedges.
+Foreign exchange gains and losses that relate to borrowings and cash and cash equivalents are
+presented in the Statement of Comprehensive Income within ‘finance income or costs’. All other
+foreign exchange gains and losses are presented in profit or loss within ‘other operating income’.
+27 Pensions
+
+Defined contribution pension plan
+The Company operates a defined contribution plan for its employees. A defined contribution plan
+is a pension plan under which the Company pays fixed contributions into a separate entity. Once
+the contributions have been paid the Company has no further payment obligations.
+The contributions are recognised as an expense in profit or loss when they fail due. Amounts not
+paid are shown in accruals as a liability in the Statement of Financial Position. The assets of the
+plan are held separately from the Company in independently administered funds.
+Defined benefit scheme
+The club is a member of the Football League Pension and Life Assurance Scheme (‘the Scheme’).
+The Scheme is a multi-ernployer defined benefit pension scheme. where it is unable to identify
+its share of the underlying assets and liabilities on a consistent and reasonable basis. Therefore,
+as required by FRS 102, the club accounts for the Scheme as if it were a defined contribution
+scheme. As a result, the amounts charged to Administrative expenses represent the
+contributions payable to the Scheme. Where material, contributions payable under an
+agreement with the Scheme to fund past deficits are recognised as a liability in the club's
+financial statements.
+
+Page 16
+CHARLTON ATHLETIC FOOTBALL COMPANY LIMITED
+ee
+NOTES TO THE FINANCIAL STATEMENTS.
+FOR THE YEAR ENDED 30 JUNE 2024
+2. Accounting policies (continued)
+28 Government grants '
+. Grants are accounted under the accruals model as permitted by FRS 102. Grants relating to
+expenditure on tangible fixed assets are credited to profit or loss at the same rate as the
+depreciation on the assets to which the grant relates. The deferred element of grants is '
+included in creditors as deferred income
+Grants of a revenue nature are recognised in profit or loss in the same period as the related
+expenditure.
+23 Taxation
+Tax is recognised in profit or loss except that a charge attributable to an item of income and
+expense recognised as other comprehensive income or to an item recognised directly in equity '
+. is also recognised in other comprehensive income or directly in equity respectively.
+The current income tax charge is calculated on the basis of tax rates and laws that have been
+enacted or substantively enacted by the reporting date in the countries where the club
+. operates and generates income.
+Deferred tax balances are recognised in respect of all timing differences that have originated
+but not reversed by the reporting date, except that:
+« The recognition of deferred tax assets is limited to the extent that it is probable that they
+will be recovered against the reversal of deferred tax liabilities or other future taxable
+profits: and
+e ~=©Any deferred tax balances are reversed if and when all conditions for retaining associated
+tax allowances have been met.
+Deferred tax balances are not recognised in respect of permanent differences except in
+respect of business combinations, when deferred tax is recognised on the differences between
+: the fair values of assets acquired and the future tax deductions available for them and the
+differences between the fair values of liabilities acquired and the amount that will be assessed
+for tax. Deferred tax is determined using tax rates and laws that have been enacted or
+substantively enacted by the reporting date.
+2.10 Finance costs
+Finance costs are charged to profit or loss over the term of the debt using the effective
+interest method so that the amount charged is at a constant rate on the carrying amount. Issue
+costs are initially recognised as a reduction in the proceeds of the associated capital instrument.
+2.11 Borrowing costs
+| Alt borrowing costs are recognised in profit or loss in the year in which they are incurred.
+Page 17
+CHARLTON ATHLETIC FOOTBALL COMPANY LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+2. Accounting policies (continued)
+
+2.12 Signing on fees and loyalty payments
+Signing on fees are recognised through profit or loss evenly over the period covered by the
+players’ contract. Loyalty payments are accrued through profit or loss for the period to which
+they relate.
+
+2.13 Long-term season ticket schemes
+The net amount received by the club through long-term season ticket schemes is treated as
+deferred income within creditors and is released through profit or loss over the period in which
+the supporters utilise their season ticket.
+
+2.14 Barter transactions
+Exchange of goods or services are recognised as revenue when goods are sold or services are
+exchanged for dissimilar goods or services in a transaction that has commercial substance.
+Turnover is recognised at the fair value of the good or services received adjusted by the
+amount of any cash or cash equivalents transferred.
+
+2.15 Exceptional items
+Exceptional items are transactions that fall within the ordinary activities of the club but are
+presented separately due to their size or incidence.
+
+2.16 Tangible fixed assets
+Tangible fixed assels under the cost model are stated at historical cost less accumulated
+depreciation and any accumulated impairment losses. Historical cost includes expenditure that is
+directly attributable to bringing the asset to the location and condition necessary for it to be
+capable of operating in the manner intended by management.
+Depreciation is charged so as to allocate the cost of assets tess their residual value over their
+estimated useful tives, using the straight-line method.
+Depreciation is provided on the following basis:
+
+Fixtures and fittings - 20 - 33%
+The assets’ residual vaiues, useful lives and depreciation methods are reviewed, and adjusted
+prospectively if appropriate, or if there is an indication of a significant change since the last
+reporting date.
+Gains and losses on disposals are determined by comparing the proceeds with the carrying
+amount and are recognised in profit or loss.
+Page 18
+. i
+CHARLTON ATHLETIC FOOTBALL COMPANY LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+
+; 2. Accounting policies (continued)
+
+: 2.17 Provisions for liabilities
+Provisions are made where an event has taken place that gives the club a legal or constructive
+obligation that probably requires settlement by a transfer of economic benefit, and a reliable ‘
+estimate can be made of the amount of the obligation.
+
+Provisions are charged as an expense to profit or loss in the year that the club becomes aware of !
+the obligation, and are measured at the best estimate at the reporting date of the expenditure
+
+: required to settle the obligation, taking into account relevant risks and uncertainties.
+
+When payments are eventually made, they are charged to the provision carried in the Statement
+
+. of Financial Position.
+
+'
+2.18 Financial instruments
+
+Financial assets and financial liabilities are recognised in the Statement of Financial Position :
+when the club becomes a party to the contractual provisions of the instrument.
+
+, Trade and other debtors and creditors are classified as basic financial instruments and measured '
+on initial recognition at transaction price. Debtors and creditors are subsequently measured at
+amortised cost using the effective interest rate method. A provision is established when there
+is objective evidence that the club will not be able to collect all amounts due.
+
+i Cash and cash equivalents are classified as basic financial instruments and comprise cash in
+hand and at bank, short-term bank deposits with an original maturity of three months or less
+and bank overdrafts which are an integral part of the club's cash management
+Financial liabilities and equity instruments issued by the club are classified in accordance with
+the substance of the contractual arrangements entered into and the definitions of a financial
+liability and an equity instrument. An equity instrument is any contract that evidences a residual
+interest in the assets of the club after deducting all of its liabitities. Equity instruments issued by
+the club are recorded at the proceeds received, net of direct issue costs. i
+interest bearing bank loans, overdrafts and other loans which meet the criteria to be classified
+as basic financial instruments are initially recorded at the present value of cash payable to the
+bank, which is ordinarily equal to the proceeds received net of direct issue costs. These
+liabilities are subsequently measured at amortised cost. using the effective interest rate method.
+
+|
+
+Page 19
+CHARLTON ATHLETIC FOOTBALL COMPANY LIMITED
+A
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+
+3. Judgments in applying accounting policies and key sources of estimation uncertainty
+The judgements, estimates and assumptions are evaluated at each reporting date and are based on
+historical experience as adjusted for current market conditions and other factors. Management
+makes estimates and assumptions concerning the future in preparing the financial statements and
+the actual results will not always reflect the accounting estimates made. The estimates and
+assumptions that had a significant risk of causing a material adjustment to the carrying amounts of
+assets and liabilities of the club are outlined below
+Bad debt provision
+Trade debtor balances totaling £2,865k (2023 - £3,418) are recorded in the Company's balance sheet.
+A full line by line review of these balances is carried out and a provision is applied based on
+anticipated recoverability. At [he year-end a bad debt provision of £648k (2023 - £29k) was included
+within trade debtors
+Provisions and contigent liabilities
+Creditors and provisions contain allowances for certain contingent amounts payable to players and
+to other clubs based on management's best estimate of certain future events, such as the number
+of player appearances, and the amount that will become payable as a result. Actual future costs may
+differ from the amounts provided.
+Ex-director loans
+Under FRS 102, these loans have to be recognised at their present value which differs from the
+original transaction value. In calculating the present value, given the highly subjective nature of any
+assumption used, it is assumed that promotion to the Prernier League is gained at the earliest
+possibility (ie. 1 year from 30 June 2025), Should this not be achieved the present vatue of the loans
+will differ materially from the value currently presented.
+Operating leases
+On 25 September 2020 the lease agreements relating to the Valley Stadium and Training Ground
+were amended following Clear Ocean Capital Limited's acquisition of the club, including revised
+rents and lease terms of 15 years, respectively. The directors have assessed that these leases
+represent operating leases in accordance with FRS 102 Section 20.5.
+Depreciation of tangible fixed assets
+Tangible fixed assets are depreciated over their useful life taking into account residuat value where
+appropriate. The actual useful lives of the assets and residual values may vary depending upon a
+number of factors, including technological innovation and maintenance programmes.
+Players’ registrations
+The cost of obtaining players’ registrations are amortised evenly over the period of the respective
+players’ contracts. The market value of a player could differ significantly from its net book value in
+the financial statements.
+
+Page 20
+CHARLTON ATHLETIC FOOTBALL COMPANY LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+4. Turnover
+An analysis of turnover by class of business is as follows:
+2024 2023
+£000 £000
+Television and broadcast 1908 2278
+Ticket income and match day activities 4,494 5,020
+Commercial 1,389 1505
+Other 1,021 999
+8,812 9,802
+All turnover arose within the United Kingdom.
+5. Exceptional items
+2024 2023
+£000 £000
+Severance pay 746 148
+6. Other operating income :
+2024 2023
+£000 £000
+Grant income aii 2it
+Other income 1,095 162
+1306 363
+Page 2i
+CHARLTON ATHLETIC FOOTBALL COMPANY LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+7. Operating loss
+The operating loss is stated after charging:
+2024 2023
+£000 £000
+Amortisation of intangible assets 832 751
+Depreciation of tangible fixed assets 403 414
+Hire of plant and machinery 13 8
+Fees payable to the club's auditor for the audit of the club's annual
+financial statements 117 50
+Non-audit fees 6 5
+Other operating tease rentals 578 678
+8. Employees
+Staff costs were as follows:
+2024 2023
+£000 £000
+Wages and salaries 10,912 9,249
+Social security costs 1137 959
+Cost of defined contribution scheme 83 71
+12,132 10,279
+The average monthly number of employees, including the directors, during the year was as follows:
+2024 2023
+No. No.
+Full time playing, training and football management 120 113
+Administration. commercial and stadium maintenance 42 57
+Casual staff 22 16
+184 186
+9. Interest payable and similar expenses
+2024 2023
+£000 £000
+Other loan interest 43 1
+Page 22
+CHARLTON ATHLETIC FOOTBALL COMPANY LIMITED
+NOTES TO THE FINANCIAL STATEMENTS :
+FOR THE YEAR ENDED 30 JUNE 2024
+10. — Taxation
+2024 2023 :
+£000 £000
+Current taxation - ~
+Factors affecting tax charge for the year
+The tax assessed for the year is higher than (2023 - higher than) the standard rate of corporation tax in
+the UK of 25% (2023 - 20.5%). The differences are explained below:
+2024 2023
+£000 £000
+Loss on ordinary activities before tax (13,927) (9,559)
+Loss on ordinary activities multiplied by standard rate of corporation tax
+in the UK of 25% (2023 - 20.5%) (3,482) (L78))
+: Effects oft
+Expenses not deductible for tax purposes, other than goodwill
+: amortisation and impairment 81 6
+Capital allowances for year in excess of depreciation 84 14
+Non-taxable income (53) (43)
+Movement in deferred tax not recognised 3,370 2217
+Remeasurement of deferred tax for changes in tax rates recognised in
+other comprehensive income - (413)
+Total tax charge for the year - -
+Factors that ray affect future tax charges
+The current year rate of 25% arises from changes to legistation enacted during 2021. The main rate
+of corporation tax in the UK increased from 19% to 25% with effect frorn 1 April 2023.
+In June 2023 Finance Act (No.2) 2023 was substantively enacted in the UK, introducing a global
+minimum effective tax rate of 15% in line with the OECD Pillar Two model rules. The legislation
+implements a domestic top-up tax and a multinational top-up tax, effective for periods starting on
+or after 31 December 2023. The directors believe that the new rules are not expected to have a
+: material impact on the Company's operations or results.
+The club has tax losses of approxirnately £134 million (2023 - £120 million) available to carry forward
+against future trading profits.
+Page 23
+CHARLTON ATHLETIC FOOTBALL COMPANY LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+11. Intangible assets
+Players’
+registrations
+£000
+Cost
+At 1 July 2023 2,438
+Additions 1,501
+Disposals (1,150)
+Impairment (146)
+At 30 June 2024 2,643
+Amortisation
+At 1 July 2023 1544
+Charge for the year 832
+Disposals (930)
+At 30 June 2024 1,446
+Net book value
+At 30 June 2024 1197
+At 30 June 2023 894
+The figures for cost of player registrations are historical cost figures for purchased players only.
+Accordingly the net book value of player registrations will not reflect, nor is it intended to, the
+current market value of these players nor does it take into account the value of any players
+developed through the club's youth system.
+The directors consider the net realisable vatue of intangible assets to be considerably greater than
+their net book value.
+Page 24
+CHARLTON ATHLETIC FOOTBALL COMPANY LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+12. Tangible fixed assets |
+Fixtures and :
+fittings
+£000 ,
+Cost or valuation
+At 1 July 2023 2,364
+Additions 1,174
+At 30 June 2024 3,538
+' Depreciation
+: At 1 July 2023 1,155
+Charge for the year 403
+At 30 June 2024 1558
+, Net book value
+At 30 June 2024 1980 j
+——
+At 30 June 2023 1209 .
+Page 25
+CHARLTON ATHLETIC FOOTBALL COMPANY LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+13. Debtors
+2024 2023
+£000 £000
+Due after more than one year
+Trade debtors 500 1381
+Prepayments 143 -
+643 1381
+2024 2023
+£000 £000
+Due within one year
+Trade debtors 1717 2.008
+Amounts owed by group undertakings 920 107
+Other debtors 507 169
+Prepayments and accrued income 281 155
+3,425 2439
+14. Cash and cash equivalents
+2024 2023
+£000 £000
+Cash at bank and in hand 31 ii
+Page 26
+CHARLTON ATHLETIC FOOTBALL COMPANY LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+15. Crediters: Amounts falling due within one year
+As restated
+2024 2023 ‘
+£000 £000
+Bank loans and overdrafts 10 93
+; Amounts owed to group companies 11.734 21,33)
+Trade creditors 4,098 1961
+Corporation tax - 3
+Other taxation and social security 309 508 :
+Other loans 350 -
+Other creditors 839 669
+Accruals and deferred income 3011 2,539
+Grants received 286 elt ;
+20,737 27 318
+The 2023 comparative balance for Grants received has been restated, from £Nil to £211k, to
+appropriately represent the balance faliing due within one year. There is no impact on the
+comparative net assets.
+Amounts owed to group companies are unsecured, interest free and repayable on demand.
+Other loans are unsecured and attract interest at 2.5% per annum. The balance is due for repayment
+on 2 December 2024.
+On 21 July 2023, the Company was sold by Clear Ocean Capital to SE7 Partners Limited. As part of
+this transaction Clear Ocean Capital waived amounts loaned to the Company totaling £21.331k. This
+has been accounted for as a capital contribution \
+Page 27
+CHARLTON ATHLETIC FOOTBALL COMPANY LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+16. Creditors: Amounts falling due after more than one year
+As restated
+2024 2023
+£000 £000
+Trade creditors 151 -
+Accruals and deferred income 139 -
+Other loans 6,043 6.394
+Other creditors 157 46
+Grants received 2573 2107
+9,063 8,547
+The 2023 comparative balance for Grants received has been restated, from £2,318k to £2,107k, to
+appropriately represent the balance falling due after more than one year. There is no impact on the
+Comparative net assets.
+On 25 September 2020, the previous owners Clear Ocean Capital Limited acquired the club, as part
+of the change in ownership of the club, a deed of waiver and release was signed on 25 September
+2020 in respect of obligations owed by the club to Staprix NV. The loan owed to Staprix NV of
+£44.247k was waived in consideration for certain fixtures within leasehold improvement assets
+which were owned by the club as at 25 September 2020 and contingent consideration being
+payable by the club to Staprix NV if the club is promoted to the Premier League before 25
+September 2030 (note 21). The details of which have not been disclosed as they are considered to
+be prejudicial to the arrangements entered into by the club as part of the 25 September 2020
+transaction.
+17. Loans
+Analysis of the maturity of toans is given below:
+2024 2023
+£000 £000
+Amounts falling due within one year
+Other loans 350 -
+Amounts owed to group companies 11,734 21,331
+Amounts falling due 2-5 years
+Other loans 3,364 3715
+Amounts falling due after more than 5 years
+Other loans 2,679 2,679
+18,127 27,725
+Page 28
+CHARLTON ATHLETIC FOOTBALL COMPANY LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+18. Provisions
+Dilapidation
+Provision
+£000
+At 1 July 2023 130
+At 30 June 2024 130
+19. Share capital
+2024 2023
+£000 £000
+Allotted, called up and fully paid
+26.477 268 (2023 - 26,477,268) Ordinary shares of £1.00 each 26.477 26.477
+The Ordinary shares each have full voting, dividend and distribution rights.
+20. Reserves
+Capital contribution reserve
+This reserve relates to capital contributions arising on financing transactions with the club's previous
+parent company, Clear Ocean Capital Limited
+Profit and loss account
+This reserve relates to the cumulative retained earnings less amounts distributed to shareholders.
+21. Contingent assets and liabilities
+Additional transfer and agent fees £150k (2023 - £367k) will become payable depending on players
+making specific numbers of appearances, gaining international honours and on-field playing
+SUCCESS,
+Additional fees are receivable of ENil (2023 - £200k) where players sold make specific numbers of
+appearances, gain international honours or achieve on-fieid success.
+Contingent consideration may be payable by the club to Staprix NV if the club is promoted to the
+Premier League before 25 September 2030. This contingent consideration payable by the club is
+considered to be a contingent liability as at 30 June 2024. The details of which have not been :
+disclosed as they are considered to be prejudicial to the arrangements entered into by the club as
+part of the 25 September 2020 transaction.
+Page 29
+CHARLTON ATHLETIC FOOTBALL COMPANY LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+22, Pension commitment
+
+The club participates in the Football League Pension and Life Assurance Scheme (the Scheme’.
+
+The Scheme is a funded multi-employer defined benefit scheme, with 92 participating employers,
+
+and where members may have periods of service attributable to several participating employers.
+
+The club is unable to identify its share of assets and liabilities of the Scheme and therefore accounts
+
+for its contributions as if they were paid to a defined contribution scheme.
+
+The accrual of benefits ceased within the Scheme on 31 August 1999, therefore there are no
+
+contributions relating to current accruals. The club pays monthly contributions based on a notional
+
+split of the total expenses and deficit contributions of the Scheme. At 30 June 2024 the club's share
+
+of the deficit was £76k (2023 - £110R).
+
+The club currently pays total contributions of £35k (2023 - £33k), per annum which increases at 5.0%
+
+per annum (first increase at 1 September 2016) and based on the actuarial valuation assumptions
+
+used in the Scheme, will be sufficient to pay off the deficit by 1 July 2026.
+
+23. Commitments under operating leases
+
+At 30 June 2024 the Company had future minimum lease payments due under non-cancellable
+
+operating leases for each of the following periods:
+2024 2023
+£000 £000
+
+Land and building leases
+
+Not later than 1 year 578 578
+
+Later than 1 year and not later than 5 years 2,258 2304
+
+Later than 5 years 2,946 3,478
+5,782 6,360
+2024 2023
+£000 £000
+
+Other leases
+
+Not later than 1 year 13 19
+
+Later than 1 year and not later than 5 years 16 2g
+
+29 48
+Page 30
+CHARLTON ATHLETIC FOOTBALL COMPANY LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+
+24. Related party transactions
+The Company has taken advantage of the exemption in FRS 102 Section 33.14 to not disclose
+transactions with wholly owned group entities.
+Key management are those persons having authority and responsibility for planning, controlling and
+directing the activities of the Company. The total amount of remuneration paid to key management
+personnel during the year was £1,948k (2023 - £1,148Rk).
+
+25. Post statement of financial position events
+On 6 August 2024 the club were subject to a ransomware cyber-attack to its tegacy accounting :
+system which had been in use until 31 October 2023. As a result of the attack - for which the financial
+impact was covered under the club's insurance policy - significant financial data on the system was
+wiped and unavailable. White the direct financial impact was mitigated. the attack also disrupted
+other areas of activity including the financial records of the business, This has led to difficulty in
+providing a full audit trail to facilitate our external audit resulting in the qualified audit report included
+on pages 6 to 9 of this annual report.
+
+26. Controlling party
+SE7 Partners Ltd a company registered in England and Wales is the immediate parent undertaking :
+The ultimate parent undertaking is Global Football Partners Limited, a company incorporated in the
+Cayman Islands.
+The smallest and largest group of undertakings for which group accounts for the year ended 30 June
+2024 will be drawn up, is that headed by SE? Partners Limited. Copies of the group accounts are
+available from Companies House.
+The directors do not consider there to be an ultimate controlling party.
+
+Page 31
 

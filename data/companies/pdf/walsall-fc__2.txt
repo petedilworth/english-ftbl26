@@ -2,7 +2,7 @@ source: Companies House filing, walsall-fc__2.pdf
 document: sCHBQQ5V6RVbhb9gwo_TdlKfSvhbPyL975-PFTu8BG4
 made_up_date: 2024-05-31
 method: ocr
-pages_read: 12 of 35
+pages_read: 35 of 35
 
 we Registered number: 00171970
 The Walsall Football Club Limited
@@ -399,4 +399,672 @@ Tax on (loss)/profit 10 : -
 The notes on pages 16 to 32 form part of these financial statements.
 Page 9
 Doc ID: e0550db00cfc684f63d8eebc9b0eab 183a9cd2c9
+The Walsall Football Club Limited
+Statement of Comprehensive Income
+For the Year Ended 31 May 2024
+: 2024 2023
+. £000 £000
+(Loss)/profit for the financial year (1,783) n
+Total comprehensive income for the year (1,783) n
+: The notes on pages 16 to 32 form part of these financial statements.
+Page 10
+Doc ID: e0550db00cfc684f6E3d8eebc9b0eab183a9cd2c9
+The Walsall Football Club Limited
+Registered number:00171970 . . .
+Balance Sheet
+As at 31 May 2024
+, 2024 2023
+Note £000 £000
+Fixed assets
+Intangible assets " 23 58
+Tangible assets 12 14,025 13,346
+14,048 13,404
+Current assets
+Stocks 13 122 195
+Debtors: amounts falling due within one year 14 803 786
+Cash at bank and in hand 15 3 3
+928 984
+Creditors: amounts falling due within one year 16 (2,742) (2,874)
+Net current liabilities (1,814) (1,890)
+Total assets less current liabilities 12,234 11,514
+Creditors: amounts falling due after more than
+one year 17 (7,781) (5,278)
+Net assets 4,453 6,236
+Capital and reserves
+Called up share capital 21 114 14
+Share premium account 22 . 3,391 3,391
+Profit and loss account 22 948 2,731
+4,453 6,236
+The financial statements were approved and authorised for issue by the board and were signed on its behalf on 24
+February 2025. ,
+B Boycott
+Director
+The notes on pages 16 to 32 form part of these financial statements.
+Page 11
+Doc ID: e0550db00cfc684f63d8eebc9b0eab 183a9cd2c9
+: The Walsall Football Ciub Limited
+Statement of Changes in Equity
+. For the Year Ended 31 May 2024
+. Share
+Called up premium Profit and
+share capital account lossaccount Total equity
+£000 £000 £000 £000
+At 1 June 2023 114 3,391 2,731 6,236
+Comprehensive income for the year
+Loss for the year - - (1,783) (1,783)
+At 31 May 2024 114 3,391 948 4,453
+Statement of Changes in Equity
+For the Year Ended 31 May 2023
+Share
+Called up premium Other Profit and
+share capital account reserves lossaccount Total equity
+£000 £000 £000 £000 £000
+. At 1 June 2022 50 - 4,113 (1,393) 2,770
+"Comprehensive income for the year
+Profit for the year - - - " 1
+Contributions by and distributions to
+owners
+Shares issued during the year 64 3,391 : - 3,455
+Transfer to profit and loss account - - (4,113) 4,113 -
+At 31 May 2023 4 3,391 - 2,731 6,236
+The notes on pages 16 to 32 form part of these financial statements.
+. Page 12
+Doc ID: e0550db00cfc684f63d8eebcSb0eab 1 83a9cd2c9
+The Walsall Football Club Limited
+Statement of Cash Flows
+For the Year Ended 31 May 2024
+; 2024 2023
+£000 £000
+Cash flows from operating activities
+(Loss)/profit for the financial year (1,783) n
+Adjustments for:
+Amortisation of intangible assets 63 39
+Depreciation of tangible assets 386 252 :
+Interest paid 419 167
+Decrease/(increase) in stocks 73 (07)
+(Increase) in debtors (17) (184)
+(Decrease)/increase in creditors : (173) 284
+Net cash generated from operating activities (1,032) 462
+Cash flows from investing activities
+, Purchase of intangible fixed assets (28) (95)
+Purchase of tangible fixed assets (965) (7,133)
+Sale of tangible fixed assets - 3
+HP interest paid (4) (2)
+Net cash from investing activities (997) (7,227)
+Cash flows from financing activities .
+Issue of ordinary shares : 3,455
+New secured loans - 5,194
+Repayment of bank loans (229) (1.499)
+Other new loans 2,726 302
+Repayment of other loans (108) (425)
+Repayment of/new finance leases 7 (15)
+Interest paid (415) (165)
+Net cash used in financing activities 1,981 6,847
+Net (decrease)/increase in cash and cash equivalents (48) 82
+Cash and cash equivalents at beginning of year (281) (363)
+Cash and cash equivalents at the end of year (329) (281)
+Cash and cash equivalents at the end of year comprise:
+\
+~ Page 13
+Doc ID: e0550db00cfc684f63d8eebc9b0eab183a9cd2c9
+The Walsall Football Club Limited
+Statement of Cash Flows (continued) :
+For the Year Ended 31 May 2024
+2024 2023
+£000 £000
+Cash at bank and in hand 3 3
+Bank overdrafts (332) (284)
+(329) (281)
+The notes on pages 16 to 32 form part of these financial statements.
+Page 14
+Doc ID: e0550db00cfc684f63d8eebc9b0eab 183a9cd2c9
+The Walsall Football Club Limited
+Analysis of Net Debt
+For the Year Ended 31 May 2024
+At 1 June New finance At 31 May
+2023 Cash flows leases 2024
+. £000 £000 £000 £000
+Cash at bank and in hand “og - - 3
+Bank overdrafts (284) (48) - (332)
+Debt due after 1 year (5,133) (2,467) - (7,600)
+Debt due within 1 year (388) 78 - (310)
+Finance leases (37) ” (100) (144)
+(5,839) (2,444) (100) (8,383)
+The notes on pages 16 to 32 form part of these financial statements.
+Page 15
+Doc ID: e0550db00cfc684f6E3d8eebc9b0eab183a9cd2c9
+The Walsall Football Club Limited
+Notes to the Financial Statements .
+For the Year Ended 31 May 2024
+1 General information
+The Walsall Football Club Limited is a private company limited by shares and registered in England and Wales
+under the Companies Act. The address of the registered office is given in the Company Information page. The
+nature of the company's operations and its principal activities are set out in the Directors Report.
+2. Accounting policies ,
+2.1 Basis of preparation of financial statements
+The financial statements have been prepared under the historical cost convention unless otherwise
+specified within these accounting policies and in accordance with Financial Reporting Standard 102, the
+Financial Reporting Standard applicable in the UK and the Republic of Ireland and the Companies Act 2006.
+The preparation of financial statements in compliance with FRS 102 requires the use of certain critical
+accounting estimates. It also requires management to exercise judgement in applying the company’s
+accounting policies (see note 3).
+The following principal accounting policies have been applied:
+2.2. Going concern
+The company is currently reporting net current liabilities of £1.814m (2023 - £189m). The directors have
+prepared cash flow forecasts which show that the club is able to meet its debts as they fall due in the
+foreseeable future. The company has also obtained support from their ultimate parent company
+confirming their intention to support the company for a period of 12 months. On the basis of this support
+and the cash flow forecasts the financial statements have been prepared on the going concern basis.
+2.3. Revenue
+Turnover represents all income arising from the activities of the company excluding Value Added Tax.
+Included within turnover are player transfer fees, Football League receipts, net gate receipts,
+merchandising/retail receipts, sponsorship and advertising receipts, conferencing and events receipts and
+other income.
+Football League income is recognised in full in the season to which it relates.
+Season tickets and seasonal hospitality income is recognised over the season to which they relate and
+released over the home matches played.
+: Sponsorship and advertising income is recognised over the duration of the contract. Dependent on the
+terms of the contract this can be spread on a match to match or straight line basis.
+Net gate receipts, including match day hospitality receipts, are recognised on the relevant match date.
+Conference and event income is recognised on the date of the event. . :
+Retail income is recognised at the point of sale.
+. Page 16
+Doc ID: e0550db00cfc684f63d8eebcOb0eab183a9cd2c9
+The Walsall Football Club Limited
+Notes to the Financial Statements
+For the Year Ended 31 May 2024
+2. Accounting policies (continued)
+: 2.4 intangible assets
+The cost of players’ registrations is capitalised and amortised over the period of the respective players’
+contracts in accordance with Financial Reporting Standard 102 Section 18 Intangible assets other than
+Goodwill.
+2.5 Tangible fixed assets
+Tangible fixed assets under the cost model are stated at historical cost less accumulated depreciation and
+any accumulated impairment losses. Historical cost includes expenditure that is directly attributable to
+bringing the asset to the location and condition necessary for it to be capable of operating in the manner
+intended by management.
+At each reporting date the company assesses whether there is any indication of impairment. If such
+indication exists, the recoverable amount of the asset is determined which is the higher of its fair vatue less
+costs to sell and its value in use. An impairment loss is recognised where the carrying amount exceeds the
+recoverable amount.
+The company adds to the carrying amount of an item of fixed assets the cost of replacing part of such an
+item when that cost is incurred, if the replacement part is expected to provide incremental future benefits to
+the company. The carrying amount of the replaced part is derecognised. Repairs and maintenance are
+charged to profit or loss during the period in which they are incurred.
+. Depreciation is provided on the following basis:
+Freehold football stadium - 2% straight line*
+Leasehold training ground - over the term of the lease
+Motor vehicles - 10% straight line
+Fixtures, fittings and equipment —- 10-20% straight line
+*No depreciation is provided in respect of the land element of the freehold football stadium.
+The assets’ residual values, useful lives and depreciation methods are reviewed, and adjusted prospectively
+if appropriate, or if there is an indication of a significant change since the last reporting date.
+Gains and losses on disposals are determined by comparing the proceed with the carrying amount and are
+recognised in profit or loss.
+2.6 Stocks
+Stocks are stated at the lower of cost and net realisable value, being the estimated selling price less costs to
+complete and sell. Cost is based on the cost of purchase on a first in, first out basis.
+At each balance sheet date, stocks are assessed for impairment. If stock is impaired, the carrying amount is
+reduced to its selling price less costs to complete and sell. The impairment loss is recognised immediately in
+profit or loss.
+Page 17
+Doc ID: e0550db00cfc684fE3d8eebc9b0eab1 83a9cd2c9
+The Walsall Football Club Limited
+Notes to the Financial Statements
+For the Year Ended 31 May 2024
+2. Accounting policies (continued)
+2.7. Debtors
+Short-term debtors are measured at transaction price, less any impairment.
+2.8 Cash and cash equivalents
+Cash is represented by cash in hand and deposits with financial institutions repayable without penalty on
+notice of not more than 24 hours. Cash equivalents are highly liquid investments that mature in no more
+than three months from the date of acquisition and that are readily convertible to known amounts of cash
+with insignificant risk of change in value.
+In the Statement of Cash Flows, cash and cash equivalents are shown net of bank overdrafts that are
+repayable on demand and form an integral part of the company’s cash management.
+2.9 Financial instruments
+The company only enters into basic financial instrument transactions thot result in the recognition of
+financial assets and liabilities like trade and other debtors and creditors, loans from banks and other third
+parties, loans to related parties and investments in ordinary shares.
+Debt instruments (other than those wholly repayable or receivable within one year), including loans and
+other accounts receivable and payable, are initially measured at present value of the future cash flows and
+subsequently at amortised cost using the effective interest method. Debt instruments that are payable or
+receivable within one year, typically trade debtors and creditors, are measured, initially and subsequently,
+at the undiscounted amount of the cash or other consideration expected to be paid or received. However, if
+the arrangements of a short-term instrument constitute a financing transaction, like the payment of a trade
+debt deferred beyond normal business terms or in case of an out-right short-term loan that is not at market
+rate, the financial asset or liability is measured, initially at the present value of future cash flows discounted
+at a morket rate of interest for a similar debt instrument and subsequently at amortised cost, unless it
+qualifies as a loan from a director in the case of a small company, or a public benefit entity concessionary
+loan.
+2.10 Creditors :
+Short-term creditors are measured at the transaction price. Other financial liabilities, including bank loans,
+are measured initially at fair value, net of transaction costs, and are measured subsequently at amortised
+cost using the effective interest method.
+2.11 Contingent appearance fees
+Where the directors consider the likelihood of a piayer meeting future appearance criteria laid down in the
+transfer agreement of that player to be probable, provision for this cost is made. If the likelihood of meeting
+these criteria is not probable, no provision is made.
+Page 18
+Doc ID: e0550db00cfc684f6E3d8eebc9b0eab1 83a9cd2c9
+The Walsall Football Club Limited
+Notes to the Financial Statements
+For the Year Ended 31 May 2024
+2. Accounting policies (continued)
+2.12 Foreign currency translation
+Functional and presentation currency
+The company's functional and presentational currency is GBP.
+Transactions and balances
+Foreign currency transactions are translated into the functional currency using the spot exchange rates at
+the dates of the transactions.
+At each period end foreign currency monetary items are translated using the closing rate. Non-monetary
+items measured at historical cost are translated using the exchange rate at the date of the transaction and
+non-monetary items measured at fair value are measured using the exchange rate when fair value was
+determined.
+Foreign exchange gains and losses resulting from the settlement of transactions and from the translation at
+period-end exchange rates of monetary assets and liabilities denominated in foreign currencies are
+recognised in profit or loss except when deferred in other comprehensive income as qualifying cash flow
+hedges.
+Foreign exchange gains and losses that relate to borrowings and cash and cash equivalents are presented
+in the Profit and Loss Account within ‘finance income or costs’. All other foreign exchange gains and losses
+are presented in profit or loss within ‘other operating income’.
+2.13 Finance costs
+Finance costs are charged to profit or loss over the term of the debt using the effective interest method so
+that the amount charged is at a constant rate on the carrying amount. Issue costs are initially recognised as
+a reduction in the proceeds of the associated capital instrument. ©
+2.14 Operating leases: the Company as lessee
+Rentals paid under operating leases are charged to profit or toss on a straight-line basis over the lease
+term.
+Page 19
+7 Doc ID: e0550db00cfc684f63d8eebc9b0eab1 83a9cd2c9
+The Walsall Football Club Limited
+Notes to the Financial Statements
+For the Year Ended 31 May 2024
+2. Accounting policies (continued)
+2.15 Pensions
+Defined contribution pension plan
+The company operates a defined contribution plan for its employees. A defined contribution plan is a
+pension plan under which the company pays fixed contributions into a separate entity. Once the
+contributions have been paid the company has no further payment obligations.
+The contributions are recognised as an expense in profit or loss when they fall due. Amounts not paid are
+shown in accruals as a liability in the Balance Sheet. The assets of the plan are held separately from the
+company in independently administered funds.
+Multi-employer pension plan
+The company is a member of a multi-employer plan. Where it is not possible for the company to obtain
+sufficient information to enable it to account for the plan as a defined benefit plan, it accounts for the plan
+as a defined contribution plan.
+2.16 Taxation .
+Tax is recognised in profit or loss except that a charge attributable to an item of income and expense
+recognised as other comprehensive income or to an item recognised directly in equity is also recognised in
+other comprehensive income or directly in equity respectively.
+The current income tax charge is calculated on the basis of tax rates and laws that have been enacted or
+substantively enacted by the balance sheet date in the countries where the company operates and
+generates income.
+2.17 Impairment of fixed assets and goodwill
+Assets that are subject to depreciation or amortisation are assessed at each balance sheet date to
+determine whether there is any indication that the assets are impaired. Where there is any indication.that an
+. asset may be impaired, the carrying value of the asset (or cash-generating unit to which the asset has been
+allocated) is tested for impairment. An impairment loss is recognised for the amount by which the asset's
+carrying amount exceeds its recoverable amount. The recoverable amount is the higher of an asset's (or .
+CGU's) fair value less costs to sell and value in use. For the purposes of assessing impairment, assets are
+grouped at the lowest levels for which there are separately identifiable cash flows (CGUs). Non-financial
+assets that have been previously impaired are reviewed at each balance sheet date to assess whether
+there is any indication that the impairment losses recognised in prior periods may no longer exist or may
+have decreased.
+2.18 Government grants
+Grants of a revenue nature are recognised in the Profit and Loss Account in the same period as the related
+expenditure.
+Page 20
+Doc ID: e0550db00cfc684f63d8eebc9b0eab 183a9cd2c9
+The Walsall Football Club Limited
+Notes to the Financial Statements :
+For the Year Ended 31 May 2024
+3. Judgements in applying accounting policies and key sources of estimation uncertainty
+In the application of the company's accounting policies which are described in note 2, the directors are required
+to make estimates and assumptions that affect the reported amount of assets and liabilities and disclosure of
+contingent assets and liabilities at the date of the financial statements and the reported amounts of revenues
+and expenses during the reporting period. Actual results in the future could differ from those estimates. In this
+regard, the Directors believe that the critical accounting policies where judgements or estimating are necessarily
+applied are summarised below.
+Depreciation and residual values
+The directors have reviewed the asset lives and associated residual values of alt fixed asset classes, and in
+particular, the useful economic life and residual values of the football stadium and training ground, and have
+concluded that asset lives and residual values are appropriate.
+4. Turnover
+An analysis of turnover by class of business is as follows:
+2024 2023
+: £000 £000
+Match receipts 1,337 1,263
+. Football and commercial income 5,402 6,352
+6,739 7,615
+All turnover arose within the United Kingdom.
+5. Net operating cost
+2024 2023
+£000 £000
+Staff costs 5,063 4,458
+Tangible fixed assets - depreciation 386 252
+Intangible fixed assets - amortisation 63 39
+Other operating charges . 2,591 2,688
+. 8,103 7,437
+——= S—-
+: Page 21
+Doc ID: e0550db00cfc684f63d8eebc9b0eab 183a9cd2c9
+: The Walsall Football Club Limited :
+Notes to the Financial Statements
+For the Year Ended 31 May 2024
+6. Operating (loss)/profit
+The operating (loss)/profit is stated after charging:
+2024 2023
+£000 £000
+Depreciation of tangible assets 386 252
+Amortisation of intangible fixed assets 63 39
+Fees payable to the company's auditor for the audit of the company's annual
+financial statements 14 14
+Other operating lease rentals - football stadium, training ground, overflow car
+park and machinery 22 308
+7. Employees
+Staff costs, including directors’ remuneration, were as follows:
+2024 2023
+£000 - £000
+Wages and salaries 4,647 4,038
+Social security costs 357 346
+Cost of defined contribution scheme 59 74
+5,063 4,458
+The average monthly number of employees, including the directors, during the year was as follows:
+2024 2023
+No. No.
+Playing and coaching staff 63 67 °
+Other staff 44 39
+107 106
+Page 22
+Doc ID: e0550db00cic684163d8eebc9b0eab183a9cd2c9
+The Walsall Football Club Limited
+Notes to the Financial Statements ,
+For the Year Ended 31 May 2024
+8. Directors’ remuneration
+2024 2023
+£000 £000
+Directors’ emoluments 180 227
+Company contributions to defined contribution pension schemes 18 20
+198 247
+During the year retirement benefits were accruing to 2 directors (2023 -2) in respect of defined contribution
+pension schemes.
+The highest paid director received remuneration of £131,000 (2023 -£136,000).
+The value of the company's contributions paid to a defined contribution pension scheme in respect of the
+highest paid director amounted to £16,000 (2023 -£16,000).
+9. Interest payable and similar expenses
+2024 2023
+£000 £000
+Bank interest payable ; 8 12
+Finance leases and hire purchase contracts 4 2
+Other interest payable 407 153
+419 167
+10. Taxation
+2024 2023
+£000 £000
+Current tax on profits for the year - -
+Total current tax - -
+Deferred tax
+Total deferred tax - -
+Taxation on profit on ordinary activities : - -
+Page 23
+Doc ID: e0550db00cfc684f63d8eebc9b0eab183a9cd2c9
+The Walsall Football Club Limited
+Notes to the Financial Stotements
+For the Year Ended 31 May 2024
+10. Taxation (continued)
+Factors affecting tax charge for the year ,
+The tax assessed for the year is higher than (2023 - higher than) the standard rate of corporation tax in the UK
+of 25% (2023 - 20%). The differences are explained below:
+2024 2023
+£000 £000
+(Loss)/profit on ordinary activities before tax (1,783) 1
+(Loss)/profit on ordinary activities multiplied by standard rate of corporation tax
+in the UK of 25% (2023 -20%) (446) 2
+. Effects of:
+Expenses not deductible for tax purposes 6 1
+Capital allowances for year in excess of depreciation 20 2
+Movement in deferred tax not recognised 420 -
+Other differences leading to a decrease in the tax charge : (15)
+Total tax charge for the year - -
+Factors that may offect future tax charges
+The company has estimated losses of £3,063,000 (2023 - £1,256,000) available for carry forward against future
+trading profits. Pre-1 April 2017 trading losses of £665,000 are available to offset against future profits of thé
+same trade and post 1 April 2017 trading losses of £2,398,000 are available to offset against total future profits.
+The deferred tax asset in excess of deferred tax liabilties that would arise in respect of these amounts to
+£641,000 (2023 - £254,000) which has not been recognised as the directors are unable to satisfy themselves that
+it is more likely than not that sufficient taxable profits will arise in the next accounting period.
+Page 24
+Doc ID: e0550db00cfc684f63d8eebc9b0eab183a9cd2c9
+The Walsall Football Club Limited .
+Notes to the Financial Statements
+For the Year Ended 31 May 2024 :
+nN. Intangible assets
+Player
+: registrations Trademarks Total
+£000 £000 £000
+Cost .
+At 1 June 2023 95 2 97
+Additions 28 - 28
+: At 31 May 2024 123 2 125
+Amortisation .
+At 1 June 2023 390 : 39
+Charge for the year on owned assets 63 : 63
+At 31 May 2024 102 - 102
+Net book value .
+At 31 May 2024 21 2 23
+At 31 May 2023 . 56 2 58
+Page 25
+Doc !D: e0550db00cfc684f63d8eebc9b0eab183a98cd2c9
+The Walsall Football Ciub Limited
+Notes to the Financial Statements
+For the Year Ended 31 May 2024
+12. Tangible fixed assets
+Fixtures and
+fittings,
+Freehold Leasehold equipment
+football training and motor
+stadium ground vehicles Total
+£000 £000 £000 £000
+Cost or valuation
+At 1 June 2023 . 12,446 757 4,245 17,448
+Additions : 139 926 1,065
+At 31 May 2024 12,446 896 5,171 18,513
+Depreciation
+At 1 June 2023 621 51 3,430 4,102
+Charge for the year on owned assets 100 49 232 381
+Charge for the year on financed assets - - 5 5
+At 31 May 2024 721 100 3,667 4,488
+Net book value .
+At 31 May 2024 11,725 796 1,504 14,025
+. At 31 May 2023 11,825 706 815 13,346
+The net book value of assets held under finance leases or hire purchase contracts, included above, are as
+follows:
+2024 2023
+: £000 £000
+‘ Furniture, fittings and equipment and motor vehicles 134 _ 55
+: Page 26
+Doc ID: e0550db00cfc684f63d8eebc9b0eab183a9cd2c9
+"The Walsall Football Club Limited
+Notes to the Financial Statements
+For the Year Ended 31 May 2024
+13. Stocks
+2024 2023
+£000 £000
+Finished goods and goods for resale 122 195
+14. Debtors :
+: 2024 2023
+£000 £000
+Trade debtors 72 : 250
+Other debtors 261 131
+Prepayments and accrued income 370 405
+. 803 786
+15. Cash and cash equivalents
+2024 2023
+£000 £000
+Cash at bank and in hand 3 . 3
+Less: bank overdrafts (332) (284)
+(329) (281)
+Page 27
+Doc ID: e0550db00cfc684f63d8eebc9b0eab183a9cd2c9
+°
+The Walsall Football Club Limited
+Notes to the Financial Statements .
+For the Year Ended 31 May 2024
+16. Creditors: Amounts falling due within one year
+2024 > 2023
+£000 £000
+Bank overdrafts 332 284
+Bank loans 235 230
+Other loans : 75 158
+Trade creditors 641 760
+Other taxation and social security 265 412
+Obligations under finance lease and hire purchase contracts 27 10
+Other creditors 134 17
+Accruals and deferred income 1,033 903
+, 2,742 2,874
+17. Creditors: Amounts falling due after more than one year ~
+2024 2023
+£000 £000
+Loans from immediate parent company 3,028 302
+Bank loans 3,616 3,850
+Other loans 956 981
+Net obligations under finance leases and hire purchase contracts 117 27
+Other creditors 64 N18
+7,781 5,278
+Secured loans ;
+During the year ended 2021, the company received £500,000 from the Coronavirus Business Interruption Loan
+Scheme (CBILS). At the year end £135,417 (2023 - £260,417) remained payable.
+The CBILS loan is secured by a personal guarantee given by L M Pomlett, a guarantee secured by the Secretary
+of State for Business, Energy and Industrial Strategy, together with a debenture on the banks standard form.
+Obligations under finance leases and hire purchase contracts are secured over the assets to which they relate
+“to.
+The bank loan of £3,715,518 (2023 - £3,819,445) is secured by a fixed and floating charge over the company’s
+assets.
+Page 28
+Dac ID: e0550db00cfc684f63d8eebc9b0eab 183a9cd2c9
+The Walsall Football Club Limited
+Notes to the Financial Statements
+For the Year Ended 31 May 2024
+18, Loans
+Analysis of the maturity of loans is given below:
+2024 2023
+£000 £000
+Amounts falling due within one year
+Bank loans 235 230
+Other loans 75 158
+; 310 388
+Amounts falling due 1-2 years .
+Bank loans 128 248 ,
+Other loans - 25
+128 273
+Amounts falling due 2-5 years
+Bank loans 3,488 3,602
+Other loans 574 765
+: 4,062 4,367
+Amounts falling due after more than 5 years
+Other loans 382 191
+Loans fram immediate parent company 3,028 302
+7,910 5,521
+: Page 29
+Doc ID: e0550db00cfc684f6E3d8eebc9b0eab183a9cd2c9
+°
+~ The Walsall Football Club Limited
+Notes to the Financial Statements
+For the Year Ended 31 May 2024 :
+19. Hire purchase and finance leases
+Minimum lease payments under hire purchase fall due as follows:
+. 2024 2023
+£000 £000
+Within one year 27 10
+Between 1-5 years 85 27
+Over 5 years 32 -
+. 144 37
+20. — Financial instruments , ,
+2024 2023
+£000 £000
+. Financial assets :
+Financial assets measured at undiscounted amount receivable 436 384
+Financial liabilities
+Financial liabilities measured at amortised cost (8,386) (5,842)
+Financial liabilities measured at undiscounted amounts payabie (914) (111)
+(9,300) (6,953)
+Financial assets measured at the undiscounted amount receivable comprise trade debtors, other debtors and
+cash and cash equivalents.
+Financial liabilities measured at amortised cost comprise bank overdraft, bank loans, other loans, loans from
+immediate parent company and net obligations under finance leases and hire purchase contracts falling due
+within one and over one year.
+Financial liabilities measured ot the undiscounted amount payable comprise trade, other creditors falling due
+within one and over one year and accruals. :
+Page 30
+. Doc ID: e0550db00cfc684f63d8eebc9b0eab183a9cd2c9
+-
+. :
+The Walsall Football Club Limited
+Notes to the Financial Statements
+For the Year Ended 31 May 2024
+21. Share capital
+2024 2023
+£000 £000
+Allotted, called up and fully paid
+114,385 (2023 -114,385) ordinary shares of £1 each 114 14
+22. Reserves
+Share premium account
+The share premium account represents the premium paid for new shares above their nominal value.
+Other reserves
+Other reserves represents capital contribution made to the company.
+Profit and loss account
+The profit and loss reserve represents cumulative profits or losses, net of dividends paid and other adjustments.
+23. Pension commitments
+Certain employees of the company are members of either the Football League Limited Players Retirement
+Income Scheme, a defined contribution scheme, or the Football League Limited Pensions and Life Assurance
+Scheme (FLLPLAS), a defined benefit scheme. As the company is one of a number of participating employers in
+the FLLPLAS, the scheme’s actuary has advised that it is not possible to allocate ony actuarial surplus or deficit
+on a meaningful basis and accordingly, no disclosures ore made under the provision of FRS102. Contributions are
+expensed in the profit and loss account as they become payable. For the purposes of FRSi02 the scheme is
+accounted as a multiple employer scheme. The assets of that scheme are being held separately from those of
+the company, being invested with insurance companies.
+Following a review of the Minimum Funding Requirement (MFR) of the FLLPLAS, accruals of benefits on the final
+salary section of the scheme was suspended as at 31 August 1999. Since then, the Trustees of the scheme
+commissioned an independent Actuary's report of the MFR position and a substantial deficit was identified.
+Under the Pensions Act 1995, participating employers were required to contribute to the deficiency, in
+accordance with an agreed Schedule of Contributions beginning on 1 August 2001 which was agreed by the
+Trustees and their advisers. The company's liability in respect of its share of the deficit has decreased to £118,907
+(2023 - £171,041) at the balance sheet date.
+Contributions are also paid into individuals’ private pension schemes. Total contributions across all schemes
+during the year amounted to £59,474 (2023 - £73,669).
+Page 31
+Doc ID: e0550db00cfc684f63d8eebc9b0eab183a9cd2c9
+. .
+e
+The Walsall Football Club Limited
+. Notes to the Financial Statements
+For the Year Ended 31 May 2024
+24. | Commitments under operating leases :
+: At 31 May 2024 the company had future minimum lease payments due under non-cancellable operating leases
+for each of the following periods:
+2024 2023
+£000 £000
+Not later than 1 year 14 14
+Later than 1 year and not later than 5 years 45 51
+Later than 5 years 94 102
+153 167 .
+25. Related party transactions
+During the year capital repayments of £30,000 (2023 - £306,500) were made by the company against loans
+owed to the directors. At the balance sheet date £956,000 (2023 - £986,000) was owed by the company to the
+directors. ‘
+During the year new loans of £2,726,143 (2023 - £300,000) were provided by the immediate parent to the
+company. During the year interest of £141,724 (2023 - £2,063) was charged on these loans. At the balance sheet
+date £3,028,206 (2023 - £302,063) was owed by the comapny to the immediate parent company.
+The total remuneration for key management personnel for the year totalled £198,166 (2023 - £246,606).
+26. Controlling Party
+. At 31 May 2024, the immediate parent undertaking is Trivela Group UK LLC, a limited liability company
+incorporated and registered in the State of Delaware, United States, whose registered office is at 251 Little Falls
+Drive, Wilmington, Delaware, DE 19808, United States.
+At 31 May 2024, the ultimate parent undertaking is Trivela Group LLC, a limited liability company incorporated
+and registered in the State of Georgia, United States, whose registered office is at 2701 Cahaba Road, Mountain
+Brook AL 3522.
+At 31 May 2024, there is no one individual person who is the ultimate controlling party.
+Page 32
+Doc ID: e0550db00cfc684f63d8eebc9b0eab183a9cd2c9
 

@@ -2,7 +2,7 @@ source: Companies House filing, chelsea-fc__2.pdf
 document: A98hg07v8VR5p-e0h8ni31Wu5ip72VoysIThYMRE0ks
 made_up_date: 2024-06-30
 method: ocr
-pages_read: 12 of 37
+pages_read: 37 of 37
 
 “Docusign Envelope ID: ABCCFE04-F2E4-4FEA-9CFC-265F42C4AF09
 ‘Company registration number 01965149 (England and Wales}
@@ -443,4 +443,1100 @@ The directors are responsible for the maintenance and integrity of the corporate
 on the Company’s website. Legislation in the United Kingdom governing the preparation and dissemination of
 financial statements may differ from legislation in other jurisdictions.
 -9- /
+INDEPENDENT AUDITOR’S REPORT TO THE MEMBERS OF
+
+CHELSEA FOOTBALL CLUB LIMITED
+
+Opinion
+
+We have audited the financial statements of Chelsea Footbal! Club Limited (“the Company”) for the
+
+year ended 30 June 2024 which comprise the profit and loss account, statement of comprehensive
+
+income, balance sheet statement of changes in equity and related notes, including the accounting
+
+policies in note 1.
+
+In our opinion the financial statements:
+
+© give a true and fair view of the state of the Company’s affairs as at 30 June 2024 and of its loss
+for the year then ended;
+
+* have been properly prepared in accordance with UK accounting standards, including FRS 102
+The Financial Reporting Standard applicable in the UK and Republic of Ireland; and
+
+« have been prepared in accordance with the requirements of the Companies Act 2006.
+
+Basis for opinion
+
+We conducted our audit in accordance with International Standards on Auditing (UK) (“ISAs
+
+(UK)”) and applicable law. Our responsibilities are described below. We have fulfilled our ethical
+
+responsibilities under, and are independent of the Company in accordance with, UK ethical
+
+requirements including the FRC Ethical Standard. We believe that the audit evidence we have
+obtained is a sufficient and appropriate basis for our opinion.
+
+Going concern
+
+The directors have prepared the financial statements on the going concern basis as they do not intend
+
+to liquidate the Company or to cease its operations, and as they have concluded that the Company’s
+
+financial position means that this is realistic. They have also concluded that there are no material
+uncertainties that could have cast significant doubt over its ability to continue as a going concern for
+at least a year from the date of approval of the financial statements (“the going concern period”).
+
+In our evaluation of the directors’ conclusions, we considered the inherent risks to the Company’s
+
+business model and analysed how those risks might affect the Company’s financial resources or
+
+ability to continue operations over the going concern period.
+
+Our conclusions based on this work:
+
+© we consider that the directors’ use of the going concern basis of accounting in the preparation
+of the financial statements is appropriate;
+
+e we have not identified, and concur with the directors’ assessment that there is not, a material
+uncertainty related to events or conditions that, individually or collectively, may cast significant
+doubt on the Company's ability to continue as a going concern for the going concern period.
+
+However, as we cannot predict all future events or conditions and as subsequent events may result
+
+in outcomes that are inconsistent with judgements that were reasonable at the time they were made,
+
+the above conclusions are not a guarantee that the Company will continue in operation.
+
+Fraud and breaches of laws and regulations — ability to detect
+
+, Identifying and responding to risks of material misstatement due to fraud
+
+To identify risks of material misstatement due to fraud (“fraud risks”) we assessed events or
+
+conditions that could indicate an incentive or pressure to commit fraud or provide an opportunity to
+
+commit fraud. Our risk assessment procedures included:
+
+. Enquiring of directors and inspection of policy documentation as to the Company’s high-
+level policies and procedures to prevent and detect fraud, as well as whether they have
+knowledge of any actual, suspected or alleged fraud. ;
+
+10
+INDEPENDENT AUDITOR’S REPORT TO THE MEMBERS OF
+
+CHELSEA FOOTBALL CLUB LIMITED (continued)
+
+° Reading Board minutes
+
+. Using analytical procedures to identify any unusual or unexpected relationships
+
+. Consultation with internal forensic professionals regarding the identified fraud risks and the
+design of the audit procedures planned in response to these. This involved discussion between
+the engagement partner and the forensic professionals.
+
+We communicated identified fraud risks throughout the audit team and remained alert to any
+
+indications of fraud throughout the audit.
+
+As required by auditing standards, and taking into account possible pressures to meet the
+
+performance conditions set by external regulators, we perform procedures to address the risk of
+
+management override of controls, in particular the risk that management may be in a position to
+make inappropriate accounting entries. We also perform procedures to address the risk of
+misappropriation of cash or other assets within the business. On this audit we do not believe there is
+
+a fraud risk related to revenue recognition due to limited opportunities to manipulate revenue.
+
+The procedures performed include:
+
+e Identifying journal entries and other adjustments to test based on risk criteria and comparing
+the identified entries to supporting documentation. These included those journal entries with
+specific key words in their description and those posted to seldom used accounts.
+
+. Assessed the reasonableness of assumptions and judgements made by management in their
+significant accounting estimates.
+
+. Obtaining an understanding of the Company’s policies and procedures, and testing the
+operating effectiveness of fraud risk controls in respect of refund and payments authorisation.
+
+Identifying and responding to risks of material misstatement due to compliance with laws and ;
+
+regulations
+
+We identified areas of laws and regulations that could reasonably be expected to have a material
+
+effect on the financial statement from our general commercial and sector experience, and through
+
+discussion with the directors and other management (as required by auditing standards), and from
+inspection of the company’s regulatory and legal correspondence and discussed with the directors
+and other management the policies and procedures regarding compliance with laws and regulations.
+
+We communicated identified laws and regulations throughout our team and remained alert to any
+
+indications of non-compliance throughout the audit. The potential effect of these laws and
+
+regulations on the financial statements varies considerably.
+
+Firstly, the Company is subject to laws and regulations that directly affect the financial statements
+
+including financial reporting legislation (including related companies legislation), distributable
+
+profits legislation and taxation legislation and we assessed the extent of compliance with these laws
+and regulations as part of our procedures on the related financial statement items.
+
+Secondly, the Company is subject to many other laws and regulations where the consequences of
+
+non-compliance could have a material effect on amounts or disclosures in the financial statements,
+
+for instance through the imposition of fines or litigations. We identified the following areas as those
+
+most likely to have such an effect: health and safety, anti-bribery, profit and financial sustainability
+
+rules, employment law and certain aspects of company legislation recognizing the nature of the :
+
+Company’s activities and its legal form. Auditing standards limit the required audit procedures to
+
+identify non-compliance with these laws and regulations to enquiry of the directors and other
+
+nt
+INDEPENDENT AUDITOR’S REPORT TO THE MEMBERS OF
+
+CHELSEA FOOTBALL CLUB LIMITED (continued)
+
+management and inspection of regulatory and legal correspondence, if any. Therefore, if a breach of
+
+operational regulations is not disclosed to us or evident from relevant correspondence, and audit will
+
+not detect that breach.
+
+For the self-reporting matters and ongoing discussions with regulators discussed in note 15 and note
+
+19 we assessed disclosures against our understanding from regulatory and legal correspondence.
+
+.Context of the ability of the audit to detect fraud or breaches of law and regulation
+
+Owing to the inherent limitations of an audit, there is an unavoidable risk that we may not have
+
+detected some material misstatements in the financial statements, even though we have properly
+
+planned and performed our audit in accordance with auditing standards. For example, the further
+
+removed non-compliance with laws and regulations is from the events and transactions reflected in
+
+the financial statements, the less likely the inherently limited procedures required by auditing
+
+standards would identify it.
+
+In addition, as with any audit, there remained a higher risk of non-detection of fraud, as fraud may
+
+involve collusion, forgery, intentional omissions, misrepresentations, or the override of internal
+: controls. Our audit procedures are designed to detect material misstatement. We are not responsible
+
+for preventing non-compliance or fraud and cannot be expected to detected non-compliance with all
+
+laws and regulations.
+
+Strategic report and directors’ report
+
+The directors are responsible for the strategic report and the directors’ report. Our opinion on the
+
+financial statements does not cover those reports and we do not express an audit opinion thereon.
+
+Our responsibility is to read the strategic report and the directors’ report and, in doing so, consider
+
+whether, based on our financial statements audit work, the information therein is materially
+
+misstated or inconsistent with the financial statements or our audit knowledge. Based solely on that
+
+work:
+
+° we have not identified material misstatements in the strategic report and the directors’ report;
+
+. in our opinion the information given in those reports for the financial year is consistent with
+
+the financial statements; and
+
+° in our opinion those reports have been prepared in accordance with the Companies Act 2006.
+
+Matters on which we are required to report by exception
+
+Under the Companies Act 2006 we are required to report to you if, in our opinion:
+
+e adequate accounting records have not been kept, or returns adequate for our audit have not been
+
+received from branches not visited by us; or
+
+« the financial statements are not in agreement with the accounting records and returns; or
+
+© certain disclosures of directors’ remuneration specified by law are not made; or
+
+© we have not received all the information and explanations we require for our audit.
+
+We have nothing to report in these respects.
+
+Directors’ responsibilities
+
+As explained more fully in their statement set out on page 9, the directors are responsible for: the
+
+preparation of the financial statements and for being satisfied that they give a true and fair view;
+
+such internal control as they determine is necessary to enable the preparation of financial statements
+
+that are free from material misstatement, whether due to fraud or error; assessing the Company’s
+
+ability to continue as a going concern, disclosing, as applicable, matters related to going concern;
+
+12
+INDEPENDENT AUDITOR’S REPORT TO THE MEMBERS OF
+CHELSEA FOOTBALL CLUB LIMITED (continued)
+and using the going concern basis of accounting unless they either intend to liquidate the Company
+or to cease operations, or have no realistic alternative but to do so.
+Auditor’s responsibilities
+Our objectives are to obtain reasonable assurance about whether the financial statements as a whole
+are free from material misstatement, whether due to fraud or error, and to issue our opinion in an
+auditor’s report. Reasonable assurance is a high level of assurance but does not guarantee that an
+audit conducted in accordance with ISAs (UK) will always detect a material misstatement when it
+exists. Misstatements can arise from fraud or error and are considered material if, individually or in
+aggregate, they could reasonably be expected to influence the economic decisions of users taken on
+the basis of the financial statements.
+A fuller description of our responsibilities is provided on the FRC’s website at
+www. fre.org.uk/auditorsresponsibilities.
+The purpose of our audit work and to whom we owe our responsibilities.
+This report is made solely to the Company’s members, as a body, in accordance with Chapter 3 of
+Part 16 of the Companies Act 2006. Our audit work has been undertaken so that we might state to
+the Company’s members those matters we are required to state to them in an auditor’s report and
+for no other purpose. To the fullest extent permitted by law, we do not accept or assume
+responsibility to anyone other than the Company and the Company’s members, as a body, for our
+audit work, for this report, or for the opinions we have formed.
+Boar TOM,
+
+Paul Barron (Senior Statutory Auditor)
+for and on behalf of KPMG LLP, Statutory Auditor
+Chartered Accountants
+15 Canada Square
+London
+E14 5GL
+10 October 2024
+
+. 13
+Docusign Envelope ID: ABCCFE04-F2E4-4FEA-9CFC-265F42C4AF09
+CHELSEA FOOTBALL CLUB LIMITED
+PROFIT AND LOSS ACCOUNT
+FOR THE YEAR ENDED 30 JUNE 2024
+Operations
+excluding Player
+player amortisation
+amortisation and
+& trading trading Total
+2024 2024 2024 2023
+Notes £000 £000 £000 £000 :
+Turnover 3 415,014 - 415,014 474,847
+Cost of sales (355,222) - (355,222) (436,720)
+Gross profit 59,792 - 59,792 38,127
+Administrative expenses (76,991) (189,199) (266,190) (286,043)
+Other operating income 4 715 - 715 30,606
+Operating loss 5 (16,484) (189,199) (205,683) (217,310)
+Interest receivable and similar
+income 9 - 8,032 8,032 4,225
+Interest payable and similar
+expenses 10 - (19,271) (19,271) (16,392)
+Profit on disposal of player
+registrations - 152,187 152,187 62,723
+Loss before taxation (16,484) (48,251) (64,735) (166,754)
+Tax on loss 1 - - - -
+Loss for the financial year (16,484) (48,251) (64,735) (166,754)
+Included within operating loss is £Nil (2023: £Nil) relating to the impairment of player registrations and other
+expenses. :
+Included with administrative expenses are player amortisation and trading administration costs which are separately
+disclosed above. In the prior year £202.7m related to these costs.
+The notes on pages 18 to 34 form part of these financial statements.
+The profit and loss account has been prepared on the basis that all operations are continuing operations.
+-14-
+Docusign Envelope ID: ABCCFE04-F2E4-4FEA-9CFC-265F42C4AF09 ;
+
+CHELSEA FOOTBALL CLUB LIMITED
+STATEMENT OF COMPREHENSIVE INCOME
+FOR THE YEAR ENDED 30 JUNE 2024
+
+2024 2023
+
+£000 £000
+Loss for the year (64,735) (166,754)
+Other comprehensive income - -
+Total comprehensive income for the year (64,735) (166,754)
+The notes on pages 18 to 34 form part of these financial statements.
+
+-15-
+Docusign Envelope ID: ABCCFE04-F2E4-4FEA-9CFC-265F42C4AF09
+CHELSEA FOOTBALL CLUB LIMITED
+BALANCE SHEET
+AS AT 30 JUNE 2024
+2024 2023
+. as restated*
+Notes £000 £000 £000 £000
+Fixed assets
+Intangible assets 12 1,030,709 703,862
+Tangible assets 13 142,972 142,330
+1,173,681 846,192
+Current assets
+Debtors 14 13,313 16,276
+Cash at bank and in hand 4 4
+13,317 16,280
+Creditors: amounts falling due within :
+one year 15 (2,091,463) (1,661,777)
+Net current liabilities (2,078,146) (1,645,497)
+Total assets less current liabilities (904,465) (799,305)
+Creditors: amounts falling due after
+more than one year 16 (219,343) (259,768)
+Net liabilities (1,123,808) (1,059,073)
+Capital and reserves ,
+Called up share capital 18 10 10
+Share premium account 99,990 99,990
+Revaluation reserve 2,152 2,152
+Profit and loss reserves (1,225,960) (1,161,225)
+Total equity (1,123,808) (1,059,073)
+The notes on pages 18 to 34 form part of these financial statements.
+*Refer to note 23 for further information on the restatement of current and non-current liabilities.
+The financial statements were approved by the board of directors and authorised for issue on ...1/10/2024 and
+are signed on its behalf by:
+E14
+buldad Epebali
+T Boehly B Eghbali
+Director Director
+Company Registration No. 01965149
+-16 -
+Docusign Envelope 1D: ABCCFE04-F2E4-4FEA-9CFC-265F42C4AF09
+CHELSEA FOOTBALL CLUB LIMITED
+STATEMENT OF CHANGES IN EQUITY
+FOR THE YEAR ENDED 30 JUNE 2024
+Share Share Revaluation Profit and Total
+capital premium reserve loss
+account reserves
+: £000 £000 £000 £000 £000
+As restated for the period ended 30
+. June 2023:
+Balance at 1 July 2022 10 99,990 3,368 (995,687) (892,319)
+Year ended 30 June 2023:
+Loss and total comprehensive income
+for the year - - - (166,754) (166,754)
+Other movements - - (1,216) 1,216 -
+Balance at 30 June 2023 10 99,990 2,152 (1,161,225) (1,059,073)
+Year ended 30 June 2024:
+Loss and total comprehensive income
+for the year - - - (64,735) (64,735)
+Balance at 30 June 2024 10 99,990 2,152 (1,225,960) (1,123,808)
+The notes on pages 18 to 34 form an integral part of these financial statements.
+-17-
+Docusign Envelope 1D: ABCCFE04-F2E4-4FEA-9CFC-265F42C4AF09
+
+CHELSEA FOOTBALL CLUB LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS
+
+FOR THE YEAR ENDED 30 JUNE 2024
+
+1 Accounting policies
+Company information :
+Chelsea Football Club Limited is a private company limited by shares incorporated in England and Wales in
+the United Kingdom. The registered number is 01965149 and the registered office address is Stamford
+Bridge, Fulham Road, London, UK, SW6 1HS.
+
+1.1 Accounting convention /
+These financial statements have been prepared in accordance with FRS 102 “The Financial Reporting
+Standard applicable in the UK and Republic of Ireland” ("FRS 102”) and the requirements of the Companies
+Act 2006.
+The financial statements are prepared in sterling, which is the functional currency of the Company. Monetary
+amounts in these financial statements are rounded to the nearest £000.
+The financial statements have been prepared under the historical cost convention. The principal accounting
+policies adopted are set out below.
+This Company is a qualifying entity for the purposes of FRS 102, being a member of a group where the parent
+of that group prepares publicly available consolidated financial statements, including this Company, which are
+intended to give a true and fair view of the assets, liabilities, financial position and profit or loss of the group.
+The Company has therefore taken advantage of exemptions from the following disclosure requirements:
+
++ Section 4 ‘Statement of Financial Position’ - Reconciliation of the opening and closing number of
+shares;
+
++ Section 7 ‘Statement of Cash Flows’ — Presentation of a statement of cash flow and related notes and
+disclosures;
+
++ Section 11 ‘Basic Financial Instruments’ and Section 12 ‘Other Financial Instrument Issues’ —
+Carrying amounts, interest income/expense and net gains/losses for each category of financial
+instrument; basis of determining fair values; details of collateral, loan defaults or breaches, details of
+hedges, hedging fair value changes recognised in profit or loss and in other comprehensive income;
+
+« Section 26 ‘Share based Payment’ - Share-based payment expense charged to profit or loss,
+reconciliation of opening and closing number and weighted average exercise price of share options,
+how the fair value of options granted was measured, measurement and carrying amount of liabilities :
+for cash-settled share-based payments, explanation of modifications to arrangements;
+
+« Section 33 ‘Related Party Disclosures’ - Compensation for key management personnel.
+
+The financial statements of the Company are consolidated in the financial statements of Chelsea FC Holdings
+Limited. These consolidated financial statements are available from its registered office, Stamford Bridge,
+Fulham Road, London, SW6 1HS.
+
+-18-
+Docusign Envelope ID: ABCCFE04-F2E4-4FEA-SCFC-265F42C4AF09
+
+CHELSEA FOOTBALL CLUB LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR ENDED 30 JUNE 2024
+
+1 Accounting policies - (Continued)
+
+1.2 Going concern
+The financial statements have been prepared on a going concern basis which the directors consider to be
+appropriate for the following reasons.
+The company meets its day to day working capital requirements from operational cash flows and intragroup
+funding from Blueco 22 Limited (‘Blueco’), an intermediate holding company.
+The directors have prepared cash flow forecasts and performed a going concern assessment which indicate
+that, in both the base case and reasonably possible downsides, the company will require additional funds,
+through funding from Blueco, which ultimately requires support from the consortium led by Clearlake Capital
+Group L.P and Todd Boehly, to meet its liabilities as they fall due during the 12 month period from the date of
+approval! of the financial statements, the going concern assessment period.
+The Company prepares and reviews its cash flow forecasts on a regular basis and keeps its ultimate
+beneficial owner aware of various potential funding scenarios. The company has considered various base
+case and severe but plausible downside cases, with on-pitch performance of the men’s football team being a
+key driver.
+Blueco has indicated its intention to continue to make available such funds as are needed by the company,
+and that it does not intend to seek repayment of the amounts currently due to other group companies, which
+at 30 June 2024 amounted to £1.642bn, during the going concern assessment period. As with any company
+placing reliance on other group entities for financial support, the directors acknowledge that there can be no
+certainty that this support will continue although, at the date of approval of these financial statements, they
+have no reason to believe that it will not do so.
+Consequently, the directors are confident that the company will have sufficient funds to continue to meet its
+liabilities as they fall due for at least 12 months from the date of approval of the financial statements and
+therefore have prepared the financial statements on a going concern basis.
+
+1.3 Turnover
+Turnover represents all income arising from the ordinary activities of the Company excluding transfer fees and
+excluding Value Added Tax. Principal sources of income include gate receipts, sponsorship, the sale of
+broadcasting rights, matchday, central awards from the Premier League, UEFA solidarity payments, prize
+money, merchandising and revenue from other commercial activities.
+Gate, match and other event day revenue is recognised over the period of the football season as games are
+played and events are staged. Sponsorship and similar commercial income is recognised over the duration of
+the respective contracts. The fixed element of broadcasting revenues is recognised over the duration of the
+football season whilst facility fees for live coverage or highlights are taken when earned at the point of
+broadcast. Merit awards are accounted for over the period of the football season based on known position in
+the league. UEFA pool distributions relating to participation in European competitions are recognised when
+received whilst distributions relating to match performance are taken when earned; these distributions are
+classified as broadcasting revenues.
+Revenue from the sale of goods is recognised when the significant risks and rewards of ownership of the
+goods have passed to the buyer (usually on dispatch of the goods), the amount of revenue can be measured
+reliably, it is probable that the economic benefits associated with the transaction will flow to the entity and the
+costs incurred or to be incurred in respect of the transaction can be measured reliably.
+
+: -19-
+CO
+Docusign Envelope ID: ABCCFE04-F2E4-4F EA-9CFC-265F42C4AF09
+
+CHELSEA FOOTBALL CLUB LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR ENDED 30 JUNE 2024
+
+1 Accounting policies (Continued)
+
+1.4 Intangible fixed assets other than goodwill
+Intangible assets acquired separately from a business are recognised at cost and are subsequently measured
+at cost less accumulated amortisation and accumulated impairment losses.
+Intangible assets acquired on business combinations are recognised separately from goodwill at the
+acquisition date where it is probable that the expected future economic benefits that are attributable to the
+asset will flow to the entity and the fair value of the asset can be measured reliably; the intangible asset arises
+from contractual or other legal rights; and the intangible asset is separable from the entity.
+Amortisation is recognised so as to write off the cost or valuation of assets less their residual values over their
+useful lives on the following bases:
+Software 3-5 years
+Players Registrations life of contract
+
+1.5 Tangible fixed assets ,
+Tangible fixed assets are initially measured at cost and subsequently measured at cost or valuation, net of
+depreciation and any impairment losses.
+Depreciation is recognised so as to write off the cost or valuation of assets less their residual values over their
+useful lives on the following bases:
+Freehold land & buildings Not depreciated
+Long lease land & buildings 50 to 100 years on a straight line basis
+Fixtures, fittings & equipment 2 to 10 years on a straight line basis
+The gain or loss arising on the disposal of an asset is determined as the difference between the sale proceeds .
+and the carrying value of the asset, and is credited or charged to profit or loss.
+
+1.6 Impairment of fixed assets
+At each reporting period end date, the Company reviews the carrying amounts of its tangible and intangible
+assets (excluding players’ registrations) to determine whether there is any indication that those assets have
+suffered an impairment loss. If any such indication exists, the recoverable amount of the asset is estimated in
+order to determine the extent of the impairment loss (if any). Where it is not possible to estimate the
+recoverable amount of an individual asset, the Company estimates the recoverable amount of the cash-
+generating unit to which the asset belongs.
+Recoverable amount is the higher of fair value less costs to sell and value in use. In assessing value in use,
+the estimated future cash flows are discounted to their present value using a pre-tax discount rate that reflects
+current market assessments of the time value of money and the risks specific to the asset for which the
+estimates of future cash flows have not been adjusted.
+If the recoverable amount of an asset (or cash-generating unit) is estimated to be less than its carrying
+amount, the carrying amount of the asset (or cash-generating unit) is reduced to its recoverable amount. An
+impairment loss is recognised immediately in profit or loss, unless the relevant asset is carried at a revalued
+amount, in which case the impairment loss is treated as a revaluation decrease.
+
+-20-
+Docusign Envelope ID: ABCCFE04-F2E4-4FEA-9CFC-265F42C4AF09
+
+CHELSEA FOOTBALL CLUB LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR ENDED 30 JUNE 2024
+
+1 Accounting policies (Continued)
+Recognised impairment losses are reversed if, and only if, the reasons for the impairment loss have ceased to
+apply. Where an impairment loss subsequently reverses, the carrying amount of the asset (or cash-generating
+unit) is increased to the revised estimate of its recoverable amount, but so that the increased carrying amount
+does not exceed the carrying amount that would have been determined had no impairment loss been
+tecognised for the asset (or cash-generating unit) in prior years. A reversal of an impairment loss is
+recognised immediately in profit or loss, unless the relevant asset is carried at a revalued amount, in which
+case the reversal of the impairment loss is treated as a revaluation increase.
+
+1.7 Cash and cash equivalents
+Cash and cash equivalents are basic financial assets and include cash in hand, deposits held at call with
+banks, other short-term liquid investments with original maturities of three months or less, and bank
+overdrafts. Bank overdrafts are shown within borrowings in current liabilities.
+
+1.8 Financial instruments
+The Company has elected to apply the provisions of Section 11 ‘Basic Financial Instruments’ and Section 12
+‘Other Financial Instruments Issues’ of FRS 102 to all of its financial instruments.
+Financial instruments are recognised in the Company's balance sheet when the Company becomes party to
+the contractual provisions of the instrument.
+Financial assets and liabilities are offset, with the net amounts presented in the financial statements, when
+there is a legally enforceable right to set off the recognised amounts and there is an intention to settle on a net
+basis or to realise the asset and settle the liability simultaneously.
+Basic financial assets
+Basic financial assets, which include debtors and cash and bank balances, are initially measured at
+transaction price including transaction costs and are subsequently carried at amortised cost using the effective
+interest method unless the arrangement constitutes a financing transaction, where the transaction is
+measured at the present value of the future receipts discounted at a market rate of interest. Financial assets
+classified as receivable within one year are not amortised.
+
+: Other financial assets
+Other financial assets, including investments in equity instruments which are not subsidiaries, associates or
+joint ventures, are initially measured at fair value, which is normally the transaction price. Such assets are
+subsequently carried at fair value and the changes in fair value are recognised in profit or loss, except that
+investments in equity instruments that are not publicly traded and whose fair values cannot be measured
+reliably are measured at cost less impairment.
+Impairment of financial assets
+Financial assets, other than those held at fair value through profit and loss, are assessed for indicators of
+impairment at each reporting end date.
+Financial assets are impaired where there is objective evidence that, as a result of one or more events that
+occurred after the initial recognition of the financial asset, the estimated future cash flows have been affected.
+If an asset is impaired, the impairment loss is the difference between the carrying amount and the present
+value of the estimated cash flows discounted at the asset's original effective interest rate. The impairment loss
+is recognised in profit or loss.
+If there is a decrease in the impairment loss arising from an event occurring after the impairment was
+recognised, the impairment is reversed. The reversal is such that the current carrying amount does not
+exceed what the carrying amount would have been, had the impairment not previously been recognised. The
+impairment reversal is recognised in profit or loss.
+
+-21-
+Docusign Envelope ID: ABCCFE04-F2E4-4FEA-9CFC-265F42C4AF09 -
+
+CHELSEA FOOTBALL CLUB LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR ENDED 30 JUNE 2024
+
+1 Accounting policies (Continued)
+Derecognition of financial assets
+Financial assets are derecognised only when the contractual rights to the cash flows from the asset expire or
+are settled, or when the Company transfers the financial asset and substantially all the risks and rewards of
+ownership to another entity, or if some significant risks and rewards of ownership are retained but control of
+the asset has transferred to another party that is able to sell the asset in its entirety to an unrelated third party.
+Classification of financial liabilities
+Financial liabilities and equity instruments are classified according to the substance of the contractual
+arrangements entered into. An equity instrument is any contract that evidences a residual interest in the
+assets of the Company after deducting all of its liabilities.
+Basic financial liabilities
+Basic financial liabilities, including creditors, bank loans, loans from fellow group companies and preference
+shares that are classified as debt, are initially recognised at transaction price unless the arrangement
+constitutes a financing transaction, where the debt instrument is measured at the present value of the future
+payments discounted at a market rate of interest. Financial liabilities classified as payable within one year are
+not amortised.
+Debt instruments are subsequently carried at amortised cost, using the effective interest rate method.
+Trade creditors are obligations to pay for goods or services that have been acquired in the ordinary course of
+business from suppliers. Amounts payable are classified as current liabilities if payment is due within one year
+or less. If not, they are presented as non-current liabilities. Trade creditors are recognised initially at
+transaction price and subsequently measured at amortised cost using the effective interest method.
+Other financial liabilities
+Derivatives, including interest rate swaps and forward foreign exchange contracts, are not basic financial
+instruments. Derivatives are initially recognised at fair value on the date a derivative contract is entered into
+and are subsequently re-measured at their fair value. Changes in the fair value of derivatives are recognised
+in profit or loss in finance costs or finance income as appropriate, unless hedge accounting is applied and the
+hedge is a cash flow hedge.
+Debt instruments that do not meet the conditions in FRS 102 paragraph 11.9 are subsequently measured at
+fair value through profit or loss. Debt instruments may be designated as being measured at fair value through
+profit or loss to eliminate or reduce an accounting mismatch or if the instruments are measured and their
+performance evaluated on a fair value basis in accordance with a documented risk management or
+investment strategy.
+Derecognition of financial liabilities
+Financial liabilities are derecognised when the Company's contractual obligations expire or are discharged or
+cancelled.
+
+1.9 Equity instruments
+Equity instruments issued by the Company are recorded at the proceeds received, net of transaction costs.
+Dividends payable on equity instruments are recognised as liabilities once they are no longer at the discretion
+of the Company.
+
+-22-
+Docusign Envelope ID: ABCCFE04-F2E4-4FEA-9CFC-265F42C4AF09
+
+CHELSEA FOOTBALL CLUB LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR ENDED 30 JUNE 2024
+
+1 Accounting policies (Continued)
+
+1.10 Derivatives
+Derivatives are initially recognised at fair value at the date a derivative contract is entered into and are
+subsequently remeasured to fair value at each reporting end date. The resulting gain or loss is recognised in
+profit or loss immediately unless the derivative is designated and effective as a hedging instrument, in which
+event the timing of the recognition in profit or loss depends on the nature of the hedge relationship.
+A derivative with a positive fair value is recognised as a financial asset, whereas a derivative with a negative
+fair value is recognised as a financial liability.
+
+1.11. Employee benefits
+The costs of short-term employee benefits are recognised as a liability and an expense, unless those costs
+are required to be recognised as part of the cost of stock or fixed assets.
+The cost of any unused holiday entitlement is recognised in the period in which the employee's services are
+received.
+Termination benefits are recognised immediately as an expense when the Company is demonstrably
+committed to terminate the employment of an employee or to provide termination benefits.
+
+1.12 Retirement benefits
+Payments to defined contribution retirement benefit schemes are charged as an expense as they fall due.
+
+1.13 Leases
+Rentals payable under operating leases, including any lease incentives received, are charged to profit or loss
+on a Straight line basis over the term of the relevant lease except where another more systematic basis is
+more representative of the time pattern in which economic benefits from the leases asset are consumed.
+
+1.14 Foreign exchange :
+Transactions in currencies other than pounds sterling are recorded at the rates of exchange prevailing at the
+dates of the transactions. At each reporting end date, monetary assets and liabilities that are denominated in
+foreign currencies are retranslated at the rates prevailing on the reporting end date. Gains and losses arising
+on translation in the period are included in profit or loss.
+
+1.15 Players’ registrations
+All costs associated with the acquisition of a player's registration are capitalised as intangible fixed assets and
+are amortised evenly over the period of the player's initial contract of employment with the Company. In the
+event that the initial contract is renegotiated prior to expiry, the written down value at the date of renegotiation
+is amortised over the extended period. Fees receivable are set off against the player's net book value at the
+date of sale, plus any payments made in settlement of the contracts, and the difference is treated as a profit or
+loss on disposal.
+The Directors review the carrying value of the players’ registrations (within intangible assets) for impairment
+where events or changes in circumstances indicate that the carrying value of the asset may not be
+recoverable. In completing their assessment of impairments required the Directors consider the playing squad
+to be one cash generating unit such that no impairment is recorded if the recoverable amount of the playing
+squad is greater than its carrying value. Per FRS 102.27.11, the recoverable amount is calculated using the
+higher of the Fair Value less Costs to Sell (FVLCTS) and its value in use, however in the case of player
+registrations, the Directors do not consider it possible to determine to VIU of an individual player.
+In certain situations, such as career-threatening injury, players are treated as a separate cash generating unit
+and the carrying values are compared to the Club's best estimate of the players FVLCTS. To the extent that
+the carrying value exceeds the recoverable amount, the asset is impaired and the impairment loss is
+recognised in the profit and loss account.
+
+-23-
+Docusign Envelope ID: ABCCFE04-F2E4-4FEA-9CFC-265F42C4AF09
+CHELSEA FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+1 Accounting policies (Continued)
+1.16 Players’ signing on fees
+Players’ contracts of employment may include a signing on fee payable in instalments over the period of
+contract. The Company's policy is to charge such fees to the profit and loss account as they become payable
+under the terms of the contract.
+1.17 Exceptional items
+Exceptional items are transactions that fall within the ordinary activities of the Company but are presented
+separately due to their size or incidence.
+2 Judgements and key sources of estimation uncertainty
+In the application of the Company's accounting policies, the directors are required to make judgements,
+estimates and assumptions about the carrying amount of assets and liabilities that are not readily apparent
+from other sources. The estimates and associated assumptions are based on historical experience and other
+factors that are considered to be relevant. Actual results may differ from these estimates.
+The estimates and underlying assumptions are reviewed on an ongoing basis. Revisions to accounting
+estimates are recognised in the period in which the estimate is revised where the revision affects only that
+period, or in the period of the revision and future periods where the revision affects both current and future
+periods.
+Player Valuation - Estimate
+The valuation of player registrations is highly subjective and can be subject to frequent and sudden change
+dependent on individual player performance and the general conditions in the transfer market. The Directors’
+and management teams’ consider that they have sufficient experience and knowledge to make these
+assessments. These experiences are drawn on when making these detailed assessments and is completed in
+line with the accounting policy in note 1.16.
+Identification of the CGU - Judgement
+In certain instances, there may be players whom the Club does not consider to be part of the First Team
+“=== == squad (cash generating unitor “CGU”) going forward and who will therefore not contribute to thé future cash SO
+flows earned by the CGU. The Directors note that there is significant judgement involved of such situations
+where the Club does not consider a player to be part of the First Team squad CGU. An example of an
+indicator of such a situation is when a player has incurred a career-threatening injury. Where a player is not
+considered part of the First Team squad CGU, the carrying value of the player is removed from the CGU and
+instead, the player will be assessed for impairment in isolation by considering his carrying value with the
+Club's best estimate of his fair value less costs to sell.
+3 Turnover and other revenue
+An analysis of the Company's turnover is as follows:
+2024 2023
+£000 £000
+Turnover analysed by class of business
+Matchday 76,428 73,661
+Commercial 175,505 175,284
+Broadcasting 163,081 225,902
+415,014 474,847
+-24-
+a er TS rd ait ae rors cee ae ie te ee ee
+Docusign Envelope ID: ABCCFE04-F2E4-4FEA-SCFC-265F42C4AF09
+CHELSEA FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+3 Turnover and other revenue (Continued)
+2024 2023
+£000 £000
+Turnover analysed by geographical market ;
+United Kingdom 415,014 474,847
+2024 2023
+£000 £000
+Other revenue
+Interest income 8,032 4,225 :
+4 Other operating income
+2024 2023
+£000 £000
+Income
+Settlement fee - 12,500
+Research & development tax credit 715 1,048
+Recharged costs (see Note 2) - 17,058
+715 30,606
+5 Operating loss
+2024 2023
+Operating loss for the year is stated after charging/(crediting): £000 £000
+Depreciation of owned tangible fixed assets 10,120 8,657
+Profit on disposal of player registrations : (152,187) (62,723)
+Amortisation of intangible assets 189,199 202,738
+Operating lease charges 14 14
+6 Auditor's remuneration
+2024 2023
+Fees payable to the Company's auditor and associates: £000 £000
+For audit services
+Audit of the Company's financial statements 68 62
+For other services
+Fees payable to the Company auditor for the review of the Company's interim
+accounts 66 76
+Taxation compliance services 2 16
+68 92
+-25-
+Docusign Envelope ID: ABCCFE04-F2E4-4FEA-9CFC-265F42C4AF09
+CHELSEA FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED) :
+FOR THE YEAR ENDED 30 JUNE 2024
+7 Employees
+The average monthly number of persons (including directors) employed by the Company during the year was:
+2024 2023
+Number Number
+Playing staff (including managers/coaches) 122 127
+Administration and commercial : 351 301
+Total 473 428
+Their aggregate remuneration comprised:
+2024 2023
+£000 £000
+Wages and salaries 258,688 325,674
+Social security costs 36,513 46,747
+Pension costs , 1,298 975
+296,499 373,396
+The Company also employs approximately 662 (2023: 704) temporary staff on match days.
+8 Directors’ remuneration
+2024 2023
+£000 £000
+Remuneration for qualifying services 2,173 468
+Company pension contributions to defined contribution schemes 10 18
+2,183 486
+The number of directors for whom retirement benefits are accruing under defined contribution schemes
+amounted to 1 (2023: 1).
+Remuneration disclosed above include the following amounts paid to the highest paid director:
+Remuneration for qualifying services 1,689 268
+Company pension contributions to defined contribution schemes - 18
+9 Interest receivable and similar income
+2024 2023
+£000 £000
+Interest income ,
+Other interest income 8,032 4,225
+-26-
+Docusign Envelope ID: ABCCFE04-F2E4-4FEA-9CFC-265F42C4AF09
+CHELSEA FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+(Continued)
+9 Interest receivable and similar income
+Debtor balances relating to future transfer fees receivable have been recorded at the net present value of
+future payments, discounted using a market rate of interest resulting in interest income being recognised over
+the period of the transactions.
+10 Interest payable and similar expenses
+2024 2023
+£000 £000
+Other interest 19,271 16,392
+Creditor balances relating to future transfer fees payable have been recorded at the net present value of
+future payments, discounted using a market rate of interest resulting in interest expense being recognised
+over the period of the transactions.
+-27-
+Docusign Envelope ID: ABCCFE04-F2E4-4FEA-SCFC-265F42C4AF09
+
+CHELSEA FOOTBALL CLUB LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR ENDED 30 JUNE 2024
+
+11 Taxation
+The actual charge for the year can be reconciled to the expected credit for the year based on the profit or loss
+
+~ and the standard rate of tax as follows:
+2024 2023
+£000 £000
+Loss before taxation (64,735) (166,754)
+Expected tax credit based on the standard rate of corporation tax in the UK of
+25.00% (2023: 20.50%) (16,184) (34,185)
+Tax effect of expenses that are not deductible in determining taxable profit 14 7,000
+Tax effect of income not taxable in determining taxable profit (837) -
+Research and development tax credit (189) (215)
+Other permanent differences 1,045 -
+Remeasurement of recognised and unrecognised deferred tax for changes in
+tax rates - (5,857)
+Fixed asset differences 701 1,412
+Deferred tax not recognised 15,450 32,509
+Hybrid and other mismatches 4,848 -
+Timing differences not recognised in the computation (4,848) (664)
+Taxation charge for the year - -
+A potential deferred tax asset of £264,374,388 (2023: £256,490,743) has not been recognised due to
+uncertainty over future profits.
+_ ~~ ~~ Factors that may affect future current and total tax-charges-. —- ...  . a
+An increase in the UK corporation rate from 19% to 25% (effective 1 April 2023) was substantively enacted on
+24 May 2021. This resulted in a hybrid rate of corporation tax for the year ended 30 June 2023 of 20.5%.
+-28-
+Docusign Envelope ID: ABCCFE04-F2E4-4FEA-SCFC-265F42C4AF09
+CHELSEA FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+12 intangible fixed assets
+. Software Players Total
+Registrations
+£000 £000 £000
+Cost
+At 1 July 2023 613 1,069,627 1,070,240
+Additions - 550,367 550,367
+Disposals - (183,324) (183,324)
+At 30 June 2024 613 1,436,670 = 1,437,283
+Amortisation and impairment
+At 1 July 2023 613 365,765 366,378
+Amortisation charged for the year - 189,199 189,199
+Disposals - (149,003) (149,003)
+_ At 30 June 2024 613 405,961 406,574
+Carrying amount
+At 30 June 2024 - 1,030,709 1,030,709
+At 30 June 2023 - 703,862 703,862
+Intangible assets relating to players’ registrations relate entirely to the carrying value of the playing squad and
+are being amortised over the remaining length of the players’ contracts. The figures used are historical cost
+figures and relate solely to purchased players. Where events or changes in circumstances indicate that the
+carrying value of the asset may not be recoverable, to the extent that the carrying value exceeds the
+recoverable amount, the asset is impaired and the impairment is recognised in profit and loss. Officers of the
+Company have reviewed the carrying amount as at 30 June 2024 and consider an impairment of ENil is
+ene eee FQUITed (2023: ENil). _ oo. eee —_ bene we —_ ee
+-29-
+Docusign Envelope ID: ABCCFE04-F2E4-4FEA-9CFC-265F42C4AF09
+CHELSEA FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+13. Tangible fixed assets :
+Freehold land Long lease Construction Fixtures, Total
+& buildings land& in progress fittings &
+buildings equipment
+£000 £000 £000 £000 £000
+Cost or valuation
+At 1 July 2023 18,048 142,422 1,050 71,249 232,769
+Additions 2,298 - 286 8,771 11,355
+Disposals - - - (2,242) (2,242)
+Transfers - - (1,050) 1,050 -
+At 30 June 2024 20,346 142,422 286 78,828 241,882
+Depreciation and impairment
+At 1 July 2023 4,917 45,100 - 40,422 90,439
+Depreciation charged in the year 807 2,037 - 7,276 10,120
+Eliminated in respect of disposals - - | - (1,649) (1,649)
+At 30 June 2024 5,724 47,137 - 46,049 98,910
+Carrying amount
+At 30 June 2024 14,622 95,285 286 32,779 142,972
+At 30 June 2023 13,131 97,322 1,050 30,827 142,330
+lf revalued assets were stated on a historical cost basis rather than a fair value basis, the total amounts
+included would have been as follows:
+2024 2023
+£000 £000
+Cost 129,562 129,562
+Accumulated depreciation (53,381) (50,790)
+Carrying value 76,181 78,772
+14 Debtors
+2024 2023
+Amounts falling due within one year: £000 £000
+Corporation tax recoverable 715 1,476
+Other debtors 280 32
+Prepayments and accrued income 12,318 14,768
+13,313 16,276
+-30-
+Docusign Envelope ID: ABCCFE04-F2E4-4FEA-9CFC-265F42C4AF09
+CHELSEA FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+15 Creditors: amounts falling due within one year
+2024 2023
+as restated*
+£000 £000
+Trade creditors : 322,574 247,654
+Amounts due to group undertakings 1,641,869 1,273,607
+Other taxation and social security 35 24
+Other creditors 96 3,428
+Accruals and deferred income 426,889 137,064
+2,091,463 1,661,777
+£10.2m (2023: £8.6m) of accruals and deferred income balance represent amounts that are due to settle
+ongoing legal matters including a post year end unconditional UEFA financial contribution of €5m (£4.3m).
+Amounts due to group undertakings are interest free and repayable on demand. The directors of the parent
+company have confirmed they have no intention to demand repayment of these amounts within the next year.
+: *Refer to note 23 for further information on the restatement of current and non-current liabilities.
+16 Creditors: amounts falling due after more than one year
+2024 2023
+as restated*
+£000 £000
+Trade creditors 219,343 259,768
+woes = Refer to note-23 for further information on the restatement of current and non-current liabilities. - ee
+17 Retirement benefit schemes
+Defined benefit schemes
+Certain employees of the Company are members of The Football League Limited Pension and Life Assurance
+Scheme (‘the scheme’). Accrual of benefits under a final salary basis was suspended with effect from 31
+August 1999 following an actuarial review, which revealed a substantial deficit.
+As one of a number of participating employers, the Company is advised only of its share of the deficit in the
+scheme. The latest actuarial valuation as at 31 August 2023 highlighted that the Club's share of the deficit was
+£232,331. The revised deficit is being paid off in instalments until 31 October 2026. The charge for the year is
+£85,846 (2023: £81,672).
+Defined contribution schemes
+The Company operates a defined contribution pension scheme for all qualifying employees. The assets of the
+scheme are held separately from those of the Company in an independently administered fund.
+The charge to profit and toss in respect of defined contribution schemes was £1,298,000 (2023: £975,000).
+-31-
+Docusign Envelope ID: ABCCFE04-F2E4-4FEA-9CFC-265F42C4AF09
+
+CHELSEA FOOTBALL CLUB LIMITED
+
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR ENDED 30 JUNE 2024
+
+18 Share capital
+
+2024 2023
+£000 £000
+
+Ordinary share capital
+Issued and fully paid :
+10,100 Ordinary shares of £1 each 10 10
+The Articles of Association limit dividends payable on ordinary shares to 15% of the paid up, share capital in
+any one year.
+
+19 Financial commitments, guarantees and contingent liabilities
+Under the terms of certain contracts with other football clubs in respect of player transfers, additional amounts
+would be payable by the Company if certain conditions are met. The maximum amount that could be payable
+is £74.2m (2023: £31.2m).
+In 2022, the Company self-reported to relevant football authorities certain legal matters concerning historical
+football transactions. In addition, before and subsequent to the reporting date, the Company has entered into
+discussions with UEFA regarding mitigating factors affecting their regulatory submissions including the
+financial impact on the Company from the sanctions period in the year ended 30 June 2022 and impact in
+subsequent financial years. The directors acknowledge the ongoing review by the football authorities in
+relation to these matters and the conversations with UEFA may or may not impact future regulatory
+submissions. Depending on the outcome of these matters, there could be future liabilities that cannot be
+quantified as at the date of these financial statements.
+
+-32-
+Docusign Envelope ID: ABCCFE04-F2E4-4FEA-9CFC-265F42C4AF09 :
+CHELSEA FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+20 ‘Related party transactions
+Transactions with related parties
+During the year the Company entered into the following transactions with related parties:
+Income Expenditure
+2024 2023 2024 2023
+£000 £000 £000 £000
+Entities over which the entity has control, joint
+control or significant influence - - - -
+Chelsea FC Foundation 15 154 174 334
+Nike Chelsea Merchandising Limited - 333 158 4
+Racing Club de Strasbourg Alsace 3,788 - - -
+Cornerstone OnDemand Limited 555 8 - -
+Cain International UK Services Limited 1,000 - - -
+Vivd Seats LLC 93 - - -
+The St. James Sport and Wellness Complex
+LLC 303 - - -
+The Allbright Group Limited 90 - - -
+Victory Live, Inc. 83 - 13 -
+5,927 495 345 338
+The Board considers that the Chelsea FC Foundation and its subsidiaries are related parties of of Chelsea
+Football Club Limited by virtue of significant influence.
+---- ~ ~-+ = ~Mr-J'Bonington is‘Company ‘Secretary of Chelsea Football Club Limited, as weil as serving as a Director of.
+Nike Chelsea Merchandising Limited. .
+The following amounts were outstanding at the reporting end date:
+Amounts owed fromi/(to)
+related parties
+2024 2023
+£000 £000
+Chelsea FC Foundation 63 25
+Nike Chelsea Merchandising Limited , (13) 12
+Racing Club de Strasbourg Alsace 3,000 -
+Cornerstone OnDemand Limited 555 -
+3,605 137
+-33-
+Docusign Envelope ID: ABCCFE04-F2E4-4FEA-9CFC-265F42C4AF09
+CHELSEA FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+21 ~+Events after the reporting date
+Since the year end the Club has acquired the registration of 7 football players at an initial cost of £167.8m and
+disposed of the registration of 8 players at a profit of £28.0m.
+22 Ultimate controlling party .
+The immediate parent company is Chelsea FC Holdings Limited, a company incorporated in England and
+Wales.
+The directors consider the ultimate parent undertaking to be Blues Investment Holdings L.P., a limited
+partnership incorporated in Cayman Islands.
+For the year ended 30 June 2023, the smallest group of undertakings in which the Company's results are
+included is Chelsea FC Holdings Limited and the largest is 22 Holdco Limited.
+The registered office of Chelsea FC Holdings Limited and 22 Holdco Limited is Stamford Bridge, Fulham
+Road, London, SW6 1HS.
+23 ~~ Prior period adjustment
+In the prior period, amounts due to fellow group undertaking were disclosed within non-current liabilities. In the
+current period, the relevant balance has been correctly included within current liabilities, on the basis that
+there is no legally binding agreement to justify repayment of the amounts owed to be deferred beyond one
+year. As such, the prior year balance of £1,273.6m of amounts due to group undertakings has been restated
+to creditors due within one year. The directors of the parent company have confirmed they have no intention to
+, demand repayment of this balance within one year.
+Changes to the balance sheet
+As previously Adjustment As restated at
+reported 30 Jun 2023
+: £000 £000 £000
+Creditors due within one year (388,170) (1,273,607) (1,661,777)
+Net current liabilities (371,890) (1,273,607) (1,645,497)
+Total assets less current liabilities 474,302 (1,273,607) (799,305)
+Creditors due after one year (1,533,375) 1,273,607 (259,768)
+Net liabilities (1,059,073) - (1,059,073)
+Capital and reserves
+Total equity (1,059,073) - (1,059,073)
+Reconciliation of changes in equity and profit and loss account
+The prior period adjustments do not give rise to any effect upon equity or the prior period profit and loss
+account.
+~34-
 

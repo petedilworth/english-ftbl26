@@ -2,7 +2,7 @@ source: Companies House filing, everton-fc__1.pdf
 document: HE-cxxfLQUbBZxJulEiZTUcwDqduNQyIlDGlaQDLqTU
 made_up_date: 2025-06-30
 method: ocr
-pages_read: 12 of 44
+pages_read: 44 of 44
 
 ee ERTS he SS a BGR SIE TE SE Se
 Be sera esis ee eee 2 ES is Sees ae teers
@@ -465,4 +465,1302 @@ The Club is firmly committed to operating in a green and sustainable manner
 and takes its responsibilities in these areas extremely seriously. A campaign
 titled ‘Everton for Change’ remains active to raise environmental awareness
 and explore new ways to make a positive impact on the planet.
+ANNUAL 22-ORER Acco W'S 2025 13
+The Directors present their annual report on the affairs of the Group, together DIRECTORS .
+with the financial statements and auditor's report, for the 12-month period
+ended 30 June 2025. The Directors in office during the period and to the date of this report are
+disclosed on page 7 (Directors and Advisers section).
+PRI
+NCIPAL ACTIVITY DIRECTORS’ RESPONSIBILITIES STATEMENT
+The principal activity of the Group continues to be that of a professional | . . .
+football club. The Group has continued to develop the Everton brand and The Directors are responsible for preparing the Annual Report and the financial
+associated media rights. statements in accordance with applicable law and regulations.
+RESULT FOR THE YEAR Company law requires the Directors to prepare financial statements for each
+| . financial year. Under that law, the Directors have elected to prepare the
+The loss for the period amounted to £8.6m (2024: £53.2m), which has financial statements in accordance with United Kingdom Generally Accepted
+been withdrawn from reserves (2024: same). The Directors are not able to Accounting Practice (United Kingdom Accounting Standards and applicable law)
+recommend the payment of a dividend (2024: same). Including FRS 102 “The Financial Reporting Standard applicable in the United
+Kingdom and Republic of Ireland”. Under company law, the Directors must not
+FUTURE DEVELOPMENTS AND EVENTS AFTER THE approve the financial statements unless they are satisfied that they give a true
+BALANCE SHEET DATE and fair view of the state of affairs of the Group and parent company, and of the
+Details of future developments and events that have occurred after the profit or lass of the Group for that period.
+balance sheet date can be found in the Strategic Report and form part of this . . . .
+report by cross-reference. In preparing these financial statements, the Directors are required to:
+GOING CONCERN . select suitable accounting policies and then apply them consistently;
+In ensuring that the Group has sufficient liquid resources to meet its liabilities me and accounting estimates that are reasonable and
+as they fall due, the Directors have reviewed in detail the business’ cash flow .
+projections. As disclosed in note 1c, the Group's trading projections show that . state whether applicable UK Accounting Standards have been followed,
+it has a reasonable expectation of staying within its currently available, and subject to any material departures disclosed and explained in the
+future anticipated, finance facilities for at least 12 months from the date of financial statements; and
+signing of these accounts. In preparing these trading projections, a number + . . a
+of additional inherent uncertainties have been identified; notably on-field . prepare the financial statements on the going concern basis unless itis
+performance and the resultant reduction in the Premier League domestic inappropriate to presume that the Company will continue in business.
+broadcasting merit award payment and the level of player trading. The Directors are responsible for keeping adequate accounting records that
+are sufficient to show and explain the Company's transactions and disclose
+The Directors have considered other inherent uncertainties and, in the with reasonable accuracy at any time the financial position of the Company
+event that they would be required, have identified a number of potential and enable them to ensure that the financial statements comply with the
+mitigating actions to manage any resulting forecast shortfall against current Companies Act 2006. They are also responsible for safeguarding the assets of
+facilities, including the ability within the industry to securitise additional the Company and, hence, for taking reasonable steps for the prevention and
+future guaranteed revenues and flexibility around player trading. Based on detection of fraud and other irregularities.
+the mitigating actions referred to above, as well as the financial support of
+Roundhouse Capital Holdings Limited, a company ultimately controlled byDan —_Financial statements are published on the Company's website in accordance
+Friedkin, the Directors have a reasonable expectation that the Group will have with legislation in the United Kingdom governing the preparation and
+adequate resources to continue in operational existence for the foreseeable dissemination of financial statements, which may vary from legislation in other
+future. Accordingly, they adopt the going concern basis in preparing the Annual _jurisdictions. The maintenance and integrity of the Company's website is the
+Report and Accounts. responsibility of the Directors. The Directors’ responsibility also extends to the
+DISABLED EMPLOYEES ongoing integrity of the financial statements contained therein.
+a
+Applications for employment by disabled persons are always fully considered, DIRECTORS’ INDEMNITIES
+bearing in mind the abilities of the applicant concerned. In the event of The Company has made qualifying third-party indemnity provisions for the
+members of staff becoming disabled, every effort is made to ensure that benefit of its Directors, which were made during the year and remain in force at
+their employment with the Group continues and that appropriate training is the date of this report.
+arranged. It is the policy of the Group and the Company that the training, career
+development and promotion of disabled persons should, as far as possible,
+be identical to that of other employees.
+EMPLOYEE CONSULTATION
+The Group places considerable value on the involvement of its employees and .
+has continued to keep them informed on matters affecting them as employees
+and on the various factors affecting the performance of the Group and the
+Company. This is achieved through formal and informal meetings and the
+Company digital communications platforms.
+EVERTON FOOTBALL CLUB “4
+AUDITOR
+The auditor, Crowe U.K. LLP, will be proposed for reappointment in accordance
+with section 485 of the Companies Act.
+Each of the persons who is a Director at the date of approval of this report
+confirms that:
+* so faras the Director is aware, there is no relevant audit information of
+which the Company's auditor is unaware; and
+. the Director has taken all the steps that he/she ought to have taken as
+2a Director in order to make himself/herself aware of any relevant audit
+information and to establish that the company’s auditor is aware of
+that information.
+This confirmation is given and should be interpreted in accordance with the
+provisions of $418 of the Companies Act 2006.
+Approved by the Board and signed on its behalf by:
+DocuSigned by:
+| fina Duntel
+TE80C9A0S2BME6...
+ADunkel
+Oirector
+24 December 2025
+Goodison Park
+Liverpool
+U4 4EL
+ASN CAL SSP URTV ACCOUNTS 1625 18
+AUDITOR'S REPORT
+INDEPENDENT AUDITOR'S REPORT TO THE MEMBERS OF
+EVERTON FOOTBALL CLUB COMPANY LIMITED
+OPINION apparent material misstatements, we are required to determine whether this
+, gives rise to a material misstatement in the financial statements themselves.
+We have audited the financial statements of Everton Football Club Company If, based on the work we have performed, we conclude that there is a material
+Limited (the ‘Parent Company’) and its subsidiaries (the ‘Group’) for the year misstatement of this other information, we are required to report that fact.
+ended 30 June 2025, which comprise the consolidated profit and loss account,
+the consolidated and company balance sheet, the consolidated and company _—_ We have nothing to reportin this regard.
+statement of changes in equity, the consolidated cash flow statement
+and notes to the financial statements, including a summary of significant OPINION ON OTHER MATTERS PRESCRIBED
+accounting policies. The financial reporting framework that has been appliedin © BY THE COMPANIES ACT 2006
+their preparation is applicable law and United Kingdom Accounting Standards, —. , te
+including Financial Reporting Standard 102 ‘The Financial Reporting Standard In our opinion, based on the work undertaken in the course of the audit:
+applicable in the UK and Republic of Ireland’ (United Kingdom Generally . the information given in the Group strategic report and the Directors’
+Accepted Accounting Practice). report for the financial year for which the financial statements are
+In our opinion the financial statements: prepared is consistent with the financial statements; and
+. give a true and fair view of the state of the Group's and of the parent . the Group strategic (portant the Directors report have been prepared
+Company's affairs as at 30 June 2025 and of the Group's loss for Becordance with applicable legal requirements.
+the year then ended: MATTERS ON WHICH WE ARE REQUIRED TO REPORT
++ have been properly prepared in accordance with United Kingdom BY EXCEPTION
+Generally Accepted Accounting Practice; and in the light of the knowledge and understanding of the Group and the parent
+. have been prepared in accordance with the requirements of the Company and its environment obtained in the course of the audit, we have
+Companies Act 2006. not identified material misstatements in the Group strategic report or the
+Directors’ report.
+BASIS FOR OPINION .
+: We have nothing to report in respect of the following matters in relation to
+We conducted our audit in accordance with International Standards on Auditing which the Companies Act 2006 requires us to report to you if, in our opinion:
+(UK) (ISAs (UK)) and applicable law. Our responsibilities under those standards
+are further described in the Auditor's responsibilities for the audit of the * adequate accounting records have not been kept by the parent company,
+financial statements section of our report. We are independent of the Group in or returns adequate for our audit have not been received from branches
+accordance with the ethical requirements that are relevant to our audit of the not visited by us; or
+financial statements in the United Kingdom, including the Financial Reporting + the parent company financial statements are not in agreement with the
+Council 's Ethical Standard and we have fulfilled our other ethical responsibilities accounting records and returns; or
+in accordance with these requirements. We believe that the audit evidence we
+have obtained is sufficient and appropriate to provide a basis for our opinion. + certain disclosures of Directors’ remuneration specified by law are not
+made; or
+CONCLUSIONS RELATING TO GOING CONCERN , ; ;
+. we have not received ali the information and explanations we require for
+In auditing the financial statements, we have concluded that the Directors’ use our audit.
+of the going concern basis of accounting in the preparation of the financial
+statements is appropriate. RESPONSIBILITIES OF DIRECTORS
+Based on the work we have performed, we have not identified any material As explained more fully in the Directors’ responsibilities statement set out
+uncertainties relating to events or conditions that, individually or collectively, on page 13, the Directors are responsible for the preparation of the financial
+may cast significant doubt on the Group's ability to continue as a going concern statements and for being satisfied that they give a true and fair view, and for
+for a period of at least 12 months from when the financial statements are such internal contro! as the Directors determine is necessary to enable the
+authorised for issue. preparation of financial statements that are free from material misstatement,
+csp hues . . whether due to fraud or error.
+Our responsibilities and the responsibilities of the Directors with respect to
+going concern are described in the relevant sections of this report. In preparing the financial statements, the Directors are responsible for
+assessing the Group’s and the parent company’s ability to continue as a going
+OTHER INFORMATION concern, disclosing, as applicable, matters related to going concern and using
+The other information comprises the information included in the Annual ihe going forces basis of accounting urtess the Drectors either intend
+Report other than the financial statements and our Auditor's report thereon. a istic alternati P butt "i pany P "
+The Directors are responsible for the other information contained within the realistic alkernative but to do So.
+Annual Report. Our opinion on the financial statements does not cover the
+. other information and, except to the extent otherwise explicitly stated in :
+our report, we do not express any form of assurance conclusion thereon. Our
+responsibility is to read the other information and, in doing so, consider whether
+the other information is materially inconsistent with the financial statements
+or our knowledge obtained in the course of the audit, or otherwise appears
+to be materially misstated. If we identify such material inconsistencies or
+INDEPENDENT AUDITOR’S REPORT TO THE MEMBERS OF
+
+EVERTON FOOTBALL CLUB COMPANY LIMITED
+
+AUDITOR'S RESPONSIBILITIES FOR THE AUDIT Owing to the inherent limitations of an audit, there is an unavoidable risk that
+
+OF FINANCIAL STATEMENTS we may not have detected some material misstatements in the financial ;
+statements, even though we have properly planned and performed our audit
+
+Our objectives are to obtain reasonable assurance about whether the financial —_in accordance with auditing standards. We are not responsible for preventing
+
+statements as a whole are free from material misstatement, whether due non-compliance and cannot be expected to detect non-compliance with all
+
+to fraud or error, and to issue an Auditor's report that includes our opinion. laws and regulations.
+
+pees ona cond ted in Wandin Ac tow twat ie ; Afurther description of our responsibilities for the audit of the financial
+
+material misstatement when it exists. Misstatements can arise from fraud or statements is located on the Financial Reporting Council 's website at:
+
+error and are considered material if, individually or in the aggregate, they could wwwre.org.uk/auditorsresponsibilities. This description forms part of our
+
+. reasonably be expected to influence the economic decisions of users taken on Auditor's report.
+
+the basis of these Group financial statements. USE OF OUR REPORT
+
+Irregularities, including fraud, are instances of non-compliance with laws This report is made solely to the Group's members, as a body, in accordance
+
+and regulations. We design procedures in line with our responsibilities, with Chapter 3 of Part 16 of the Companies Act 2006, Our audit work has
+
+outlined above, to detect material misstatements in respect of irregularities, been undertaken so that we might state to the Company's members those
+
+including fraud. The extent to which our procedures are capable of detecting matters we are required:to state to them in an Auditor's report and for no other
+
+irregularities, including fraud is detailed below: purpose. To the fullest extent permitted by law, we do not accept or assume
+
+We identified and sssessed the risks of material misstatement of the fimaricial responsibility to anyone othor than tho Company and tho Company's mombore,
+
+statements from irregularities, whether due to fraud or error, and discussed as a body, for our audit work, for this report, or for the opinions we have formed.
+
+these between our audit team members. We then designed and performed
+
+audit procedures responsive to those risks, including obtaining audit evidence
+
+sufficient and appropriate to provide a basis for our opinion. Crowe Uk LU,
+
+We obtained an understanding of the legal and regulatory frameworks within
+
+which the Group operates, focusing on those laws and regulations that have a . .,
+
+direct effect onthe determination of material amounts and disclosures in the Mark Evans (Senior Statutory Auditor)
+
+financial statements. The laws and regulations we considered in this context For and on behalf of Crowe U.K. LLP
+
+were the Companies Act 2006 and the regulations of The Football Association, —_ statutory Auditor
+
+Premier League and the Union of European Football Associations. We assessed —_Black Country House
+
+the required compliance with these laws and regulations as part of our audit Rounds Green Road :
+
+procedures on the related financial statement items. Oldbury
+
+In addition, we considered provisions of other laws and regulations that do not West Midlands
+
+have a direct effect on the financial statements but compliance with which B69 206
+
+might be fundamental to the Group's ability to operate or to avoid a material 27 December 2025
+
+penalty. We also considered the opportunities and incentives that may exist
+
+within the group for fraud. The laws and regulations we considered in this
+
+context for the UK operations were General Data Protection Regulation (GDPR),
+
+health and safety legistation, taxation legislation and employment legislation.
+
+Auditing standards limit the required audit procedures to identify
+
+non-compliance with these laws and regulations to enquiry of the Directors
+
+and other management and inspection of regulatory and legal correspondence,
+
+if any.
+
+We identified the greatest risk of material impact on the financial statements
+
+from irregularities, including fraud, to be within the valuation of player
+
+registrations and the override of contrals by management. Our audit
+
+procedures to respond to these risks included enquiries of management about
+
+their own identification and assessment of the risks of irregularities, sample
+
+testing on the pasting of journals, reviewing accounting estimates for biases,
+
+reviewing regulatory correspondence, and reading minutes of meetings of
+
+those charged with governance.
+ST MAL BIS RT SACL IU S 2005 7
+Operations Player and Operations Player and
+excluding player excluding player
+management Total management Total
+and management tradi and management tradin
+trading fading trading a
+£000 £000 £000 £000 £000 £000
+Notes
+Turnover 2 196,697 - + 196,697 * 4186,902 - 186,902
+Operating expenses 3 (210,514) (80,801) (261,415) (204,638) (64,581) (269,219)
+Operating expenses ~ .
+exceptional costs 3 (7,070) (4145) (11,215) (10,371) (10,371)
+. (217,584) (55,046) (272,830) (215,009) (64,581) (279,590)
+Operating toss a (20,887) (55,048) 75,933) (28,107) (64,581) (92,688)
+Profit on player trading . - 31,325 31,325 - 48,545 48,545
+Profit on disposal of tangible . .
+fixed assets 4 4 4 4
+Profit/(loss) ‘on disposal . 49,161 . 49,161 . . .
+of investments
+Profit/Closs) before interest
+and taxation 28,278 (23,721) 4,557 (28,103) (16,038) (44,139)
+Interest receivable and ° 5 147 4377
+similar income to
+Interest payable and .
+similar charges 6 (14,637) (10,460)
+Loss before taxation (8,609) (83,222)
+Tax on loss 8 - -
+Loss after taxation for
+the period withdrawn —_______. ——_______
+from reserves (8,609) 3,222)
+Allthe above amounts derive from continuing operations.
+There are no other items of income or expense for the period ended 30 June 2025 and the prior year other than as stated in the consolidated profit and loss
+account, accordingly no separate consolidated statement of comprehensive income is given.
+EVERTON FOOTBALL CLUB 8
+£000 £000 £000 £000
+Notes
+Fixed assets
+Intangible assets 10 96,887 120,228
+Tangible assets ai 814,989 704,599
+911,876 824,827
+Current assets
+Debtors
+- Due within one year 14 89,098 80,127
+- Due after one year 14 4,000 28,284
+Cash at bank and in hand 79,141 26,423
+172,239 134,834
+Creditors - amounts falling due within one year 15 (286,924) (361,995)
+Net current liabilities (114,685) (227161)
+Total assets less current liabilities 797191 597,666
+Creditors - amounts falling due after more 16 (402,882) (425,491)
+than one year
+Provision for liabilities v (973) G,669)
+Net assets : 393,336 168,506
+Capital and reserves
+Called up share capital 18 1,622 135
+Share premium account 8 4,004,068 324,869
+Other reserves 8 - 447,247
+Profit and loss account - deficit 18 (612,354) (603,745)
+Shareholders’ funds 393,336 168,506
+The financial statements of the Everton Football Club Company Limited, registered number 36624, were approved by the Board and authorised for issue on
+24 December 2025 and signed on its behalf by:
+DocuSigned by:
+| fra Dunkel
+7EBOCSANSZBAMEG...
+AOunkel
+Director .
+ANNUAL REPORT & ACCOUNTS 2026 19
+Restated
+. £000 £000 £000 £000
+Notes
+Fixed assets
+Intangible assets 10 96,887 120,081
+Tangible assets. as 1,932 3,131
+Investments 12 367,675 -
+: 466,494 123,212
+Current assets
+Debtors ‘
++ Due within one year 4 268,569 642,346
+- Due after one year 4 4,000 28,284
+Cash at bank and in hand : 15,000 24,720.
+. 287,569 695,350
+Creditors - amounts falling due within one year 415 (226,898) (140,986)
+Net current assets 60,671 554,364
+Total assets less current liabilities 527165 677,876
+Creditors - amounts falling due after more
+than one year %6 eer) (425.461)
+Provision for liabilities : T. (973) 3,669)
+Net assets 479,281 . 248,446
+Capital and reserves
+Called up share capital 18 1,622 135
+Share premium account 8 1,004,068 324,869
+Other reserves "18 - 447,247
+Profit and loss account - deficit 18” (526,409) (523,805)
+Shareholders’ funds 479,281 248,446
+The Company has taken advantage of Section 408 of the Companies Act 2006 and has not presented its own profit and loss account. The Company's loss for the
+year was £2,604,000 (2024: restated loss £39,875,000).
+The financial statements of the Everton Football Club Company Limited, registered number 36624, were approved by the Board and authorised far issue on
+24 December 2025 and signed on its behalf by:
+DocuSigned by:
+| fra Dunkel
+TEBOC9A052BAME6...
+ADunkel
+Director 7
+by sR CU ASPB i CLS 20
+Called-up Share premium Profit and Other
+“m
+£000 £000 £000 £000 £000"
+Notes
+At1 July 2023 435 324,869 (550,523) 447,247 221,728
+Loss for the year and total
+comprehensive expense . . . 3,222) . 53,222)
+At 4 July 2024 135 324,869 (603,745) 447,247 168,506
+Loss for the year and total comprehensive expense - - (8,609) - (8,609)
+Conversion of b/f loan from shareholder
+(classed as equity) to shares 160 447,097 (447,247) :
+Issue of new shares to new majority shareholder 1,337 232,102 233,439
+At 30 June 2025 ° 1,622 1,004,068 (612,354) - 393,336
++ Restated - .
+
+COMPARY Called-up Jf Shara pramium arontang Other Restated
+
+share capital account \ reserves total
+
+loss account
+£000 £000 £000 £000 £000
+. Notes
+
+At1 July 2023 135 324,869 (483,930) 447,247 288,321
+Loss for the year and total
+comprehensive expense . . (39.878) . 9,875)
+At 30 June 2024 138, 324,869 (523,805) 447,247 248,446
+Loss for the year and total
+comprehensive expense . . (2,604) . (2,604)
+Conversion of b/f loan from shareholder
+(classed as equity) to shares 180 447,097 . (447247) -
+Issue of new shares to new majority shareholder 1,337 232,102 - - 233,439
+At30 June 2025. 1,622 1,004,068 (526,409) : 479,281
+. ANNUAL R2¢ORT 8 ALCOUA'S 2925 . 21
+£000 £000
+Net cash flows from operating activities
+Loss for the period (8,609) (53,222)
+Adjustments for:
+Profit on disposal of football staff registrations (31,325) (48,545)
+Profit on disposal of tangible fixed assets (4) @
+Depreciation of tangible fixed assets 2,613 3,737
+Amortisation of grants 709) (208)
+Amortisation of football staff registrations 50,901 64,581
+Impairment of football staff registrations - -
+Interest receivable and similar income 471) 1,377)
+Interest payable and similar charges . 14,837 10,460
+Taxation charge / (credit) . -
+Operating cash flows before movements
+in working capital 26,033 (24,578)
+(Increase) / decrease in debtors . (62,156) 980
+Increase in creditors . 98,524 20,624
+Increase / (decrease) in provisions 96 (159)
+Net cash generated from / (used in) operations 2,497 (3,133)
+Cash flow from investing activities
+Proceeds from disposal of football staff registrations 116,015 80,223
+Proceeds from disposal of tangible fixed assets 4 4
+Purchase of football staff registrations (58,870) (57,664)
+Purchase of tangible fixed assets
+(including prepaid contribution to assets} 7605) (210,522)
+Interest received 672 -
+Interest paid (97,422) (39,338)
+Net cash flows used in investing activities (37,206) (227,287)
+Cash flows from financing activities
+Interest paid (6,961) (4,287)
+Repayments of borrowings . (385,612) (179,280)
+New loans 480,000 429,594
+Shareholder loans treated as equity - -
+Net cash flows from financing activities 87,427 246,017
+Cash at bank and in hand at beginning of period 26,423 10,836
+Net increase in cash 52,748 15,587
+Cash at bank and in hand at end of period 79,14 26,423
+bee ane 22
+4. ACCOUNTING POLICIES inherent uncertainties and, in the event that they would be required, have
+_ | 7 | identified a number of potential mitigating actions to manage any resulting
+The principal accounting policies are summarised below. They have all been forecast shortfall against current facilities, including the ability within the
+applied consistently throughout the year and to the preceding year. industry to securitise additional future guaranteed revenues and flexibility
+(A) GENERAL INFORMATION AND BASIS OF ACCOUNTING around player trading. Based on the mitigating actions referred to above,
+as well as the financial support of Roundhouse Capital Holdings Limited, a
+Everton Football Club Company Limited is a Private Company limited by shares | company ultimately controlled by Dan Friedkin, the Directors have a reasonable
+incorporated in the United Kingdom under the Companies Act 2006 and is expectation that the Group will have adequate resources to continue in
+registered in England. The address of the registered office is given on page 7. operational existence for the foreseeable future. Accordingly they adopt the .
+The nature of the Group's operations and its principal activities are set out in going concern basis in preparing the Annual Report and Accounts.
+the strategic report on page 8. Aletter of support has been obtained from the ultimate controlling party that
+STATEMENT OF COMPLIANCE confirms, to the extent that it is required, financial support for a period of no
+less than 12 months from the date of approval of the financial statements will
+The financial statements of Everton Football Club Company Limited have be provided to the Club and its subsidiaries.
+been prepared under the historical cost convention, modified to include Tl
+certain items at fair value, and in accordance with United Kingdom Accounting (O} TURNOVER
+Standards, including Financial Reporting Standard FRS 102, “The Financial Turnover is stated exclusive of value added tax, and match receipts are
+Reporting Standard applicable in the United Kingdom and Republic of Ireland” recognised net of payments owing to visiting clubs, the Premier League,
+CFRS 102"), and the Companies Act 2006. the Football Association and the Footbal! League.
+The parent company is included in the consolidated financial statements and Gate and other matchday revenue is recognised over the period of the football
+is considered to be a qualifying entity under FRS 102 paragraphs 18 to 112.The — season as games are played. Sponsorship and similar commercial income is
+following exemptions available under FRS 102 in respect of certain disclosures —_ recognised over the duration of the respective contracts. The fixed element of
+for the parent company financial statements have been applied. broadcasting revenues is recognised over the duration of the football season
+. it relates to, whilst facility fees for live coverage or highlights are taken when
+= No separate parent company Cash Flow Statement with related notes, earned. Merit awards are accounted for only when known at the end of the
+remuneration of key management and related party transactions are included.
+football season.
+The functiona d currency of Everton Football Club Company Limited andits Turnover also represents the net revenue received from any outsourced retail
+subsidiaries is considered to be pounds sterling because that is the currency . .
+. . . . . and catering operations.
+of the primary economic environment in which the Company operates. The
+consolidated financial statements are also presented in pounds sterling. (E) TANGIBLE FIXED ASSETS AND DEPRECIATION
+The ultimate parent undertaking and controlling party is Roundhouse Capital Tangible Fixed Assets are stated at cost, net of depreciation and any provision
+Holdings Limited, which owns 99.5% of the share capital of the Company for impairment. On properties it is provided to write off the costs or revalued
+(2024: 94.1% owned by Blue Horizon Investments Limited). Roundhouse Capital amounts less estimated residual value (based on prices prevailing at the date
+Holdings Limited is a private company, limited by shares, incorporated under of acquisition or revaluation) in equal annual instalments over the estimated
+the Companies Act 2006 and its registered office is in England and Wales. useful economic lives of the assets which are considered to be between 10
+and 40 years.
+(B) BASIS OF CONSOLIDATION
+. . . Depreciation is charged on a straight line basis of three years for vehicles and
+The Group financial statements consolidate the financial statements of five years for plant and equipment.
+the Company and its subsidiary undertakings drawn up to 30 June. Where
+necessary, adjustments are made to the financial statements of subsidiaries to Assets are assessed for indicators of impairment at each balance sheet date. If
+bring the accounting policies used into line with those used by the Group. there is objective evidence of impairment, an impairment loss is recognised in
+All intra-group transactions, balances, income and expenses are eliminated profit or loss.
+on consolidation. (F) ASSETS IN THE COURSE OF CONSTRUCTION
+(©) GOING CONCERN The assets classified under “in the course of construction” relates to the
+In preparing these financial statements, the Directors are required todo soon Group's ongoing capital project. the development of Hill Dickinson Stadium.
+the going concern basis unless it is inappropriate to presume that the Club will  FRS 102 section 17 requires that for an asset to be capitalised it must result
+continue in business. In satisfaction of this responsibility, the Directors have ina probable economic benefit. Depreciation will begin once this project is
+considered the Group's ability to meet its liabilities as they fall due fora period | Completed and begins its useful economic life.
+of at least 12 months from the signing date of the financial statements. In As disclosed in Note 16, the Group has external loan facilities, all of which
+assessing the appropriateness of the going concern assumption, the Directors incur market rates of interest. These loans are either entirely used to fund the
+have produced detailed cash flow forecasts. The Group's trading projections development of Hill Dickinson Stadium, or a proportion of the facility is used to
+show that it has a reasonable expectation of staying within its currently fund the development of the stadium. Interest on the loan values, deemed
+available, and future anticipated, finance facilities for at least 12 months from —_—_ to be used to fund the development, have been capitalised (as these costs
+the date of signing of these Accounts. relate directly to expenditure on the development of the stadium) within
+In preparing these trading projections, a number of additional inherent Assets Under Construction.
+uncertainties have been identified: notably on-field performance and the Assets “in the course of construction” are assessed for indicators of
+resultant reduction in the Premier League domestic broadcasting merit award —_ impairment at each balance sheet date. If there is objective evidence
+payment and the level of player trading. The Directors have cansidered other of impairment, an impairment loss is recognised in profit or loss.
+Nn
+i
+Bonk 2 CORT CAG ILO ES ee 23
+
+(G) GRANTS (M) FOREIGN CURRENCY TRANSACTIONS
+
+Grants of a capital nature are credited to deferred income and amortised to the Transactions denominated in foreign currencies are translated into Sterling at
+
+profit and ioss account on a systematic basis over the useful economic life of the rates ruling at the dates of the transactions. Monetary assets and liabilities
+
+the asset to which they relate. denominated in foreign currencies are translated at the rates of exchange
+ruling at the balance sheet date. All exchange differences are recognised in the
+
+{H) D CURRENT TAXATION : profit and loss account.
+
+Current taxation, including UK corporation tax and foreign tax, is provided at (N) PENSIONS
+
+amounts expected to be paid (or recovered) using tax rates and laws that have
+
+been enacted or substantively enacted by the balance sheet date. Certain staff of the Group are members of either the Football League Limited
+Players Retirement Income Scheme, a defined contribution scheme, or the
+
+(H) ID DEFERRED TAXATION Football League Limited Pension and Life Assurance Scheme (“FLLPLAS”; “the
+
+Deferred taxation is provided in full on timing differences that result in an Scheme”), a defined benefit scheme. As one of a number of participating
+
+obligation at the balance sheet date to pay more tax, or aright to payless tax, employers in the FLLPLAS, the Group is unable to identify its share of the
+
+ata future date, at rates expected to apply when they crystallise based on underlying assets and liabilities of the Scheme on a consistent and reliable
+
+current tax rates and law. Timing differences arise from the inclusion of items basis and, therefore, accounts for the Scheme as if it were adefined
+
+of income and expenditure in taxation computations in periods different from contribution scheme. As a result, the contributions paid to the scheme reduce
+
+those in which they are included in financial statements. the provision.
+
+Deferred tax assets are recognised to the extent that it is regarded as more (0) FINANCIAL INSTRUMENTS
+
+likely than not that they will be recovered. Financial assets and financial liabilities are recognised when the Group
+
+(D INTANGIBLE FIXED ASSETS - PLAYERS’ REGISTRATIONS . becomes a party to the contractual provisions of the instrument.
+
+The cost of players’ registrations and coaching staff appointments, including Financial liabilities and equity instruments are classified according to the
+
+agents’ fees, are capitalised and amortised on a straight line basis over the substance of the contractual arrangements entered into. An equity instrument
+
+period of the respective players’ /coaching staffs’ contracts in accordance with _ is any contract that evidences a residual interest in the assets of the Group
+
+FRS 102 section 18 ‘Intangible assets other than goodwill’. after deducting all of its liabilities.
+
+When a playing/coaching staff contract is extended, any costs associated with _(i) Financial assets and liabilities
+
+securing the extensions are added to the unamortised balance (at the date Of Allfinancial assets and liabilities are initially measured at transaction price
+
+the amendment) and the revised book value is amortised over the remaining (including transaction costs), except for those financial assets classified as
+
+revised contract period. at fair value through profit or loss, which are initially measured at fair value
+
+(J) CONTINGENT APPEARANCE FEES (which is normally the transaction price excluding transaction costs), unless
+
+- . a . the arrangement constitutes a financing transaction. If an arrangement
+
+Where the Directors consider the likelihood of a player meeting future constitutes a financing transaction, the financial asset or financial liability is
+
+appearance criteria specified in the transfer agreement of the player to be measured at the present value of the future payments discounted at a market
+
+probable, provision for this cost is made (see Note 17). If the likelihood of rate of interest for a similar debt instrument.
+
+meeting these criteria is merely possible not probable, then no provision is ; ; a ;
+
+made but the potential obligations are disclosed as contingent liabilities Financial assets and liabilities are only offset in the balance sheet when, and
+
+(see Note 19). only when there exists a legally enforceable right to set off the recognised
+amounts and the Group intends either to settle on a net basis, or to realise the
+
+(© SIGNING-ON FEES AND LOYALTY BONUSES asset and settle the liability simultaneously.
+
+Signing-on fees and loyalty bonuses represent a normal part of the Financial assets due more than one year are measured at the present value
+
+employment cost of the player and, as such, are charged to the profit and of the future payments discounted at a market rate of interest for a similar
+
+loss account in the period in which the payment becomes due, except in the debt instrument.
+
+_ circumstances of a player disposal. In that case any remaining signing-on fees | | ; 7
+
+and loyalty bonuses due are allocated in full against profit or loss on disposal Debt instruments which meet the following conditions are subsequently
+
+of players’ registrations in the year in which the player disposal is made. Those + Measured at amortised cost using the effective interest method:
+
+instalments due ‘0 the future on pebinernaiiil are not provided for but are (a) The contractual return to the holder is (i) a fixed amount; {ii) a positive fixed
+
+noted as contingent liabilities (see Note 19). rate or a positive variable rate; or (iii) a combination of a positive or a negative
+
+(L) LEASE RENTALS fixed rate and a positive variable rate. :
+
+Where the company enters into a lease which entails substantially taking all the _ (b) The contract may provide for repayments of the principal or the return to
+
+risks and rewards of ownership of an asset, the lease is treated as a finance the holder (but not both) to be linked to a single relevant observable index
+
+tease. Assets acquired under finance leases are capitalised and depreciated of general price inflation of the currency in which the debt instrument is
+
+over the shorter of their lease term or their estimated useful lives. The interest | denominated, provided such links are not leveraged.
+
+clement of the rental obligations * charged the pront arg oss account oad (c) The contract may provide for a determinable variation of the return to the
+
+the perio oe aerate inva bosie ove rea weviod of the lease even when holder during the tife of the instrument, provided that (i) the new rate satisfies
+
+loss account on a straight line Ne over t period of the lease even when condition (a) and the variation is not contingent on future events other than (1)
+
+payments are nat made on such a basis. a change of a contractual variable rate; (2) to protect the holder against credit
+deterioration of the issuer; (3) charges in levies applied by a central bank or
+arising from changes in relevant taxation or law; or (ii) the new rate is a market
+cn 24
+FOR THE YEAR ENDED 30 JUNE 2025 (CONTINUED)
+rate of interest and satisfies condition (a). (P) IMPAIRMENT OF ASSETS
+(d) There is no contractual provision that could, by its terms, result inthe holder Non-financial assets
+oor ere . cipal amount or any interest attributable to the current period or An asset is impaired where there is objective evidence that, as a result of
+one or more events that occurred after initial recognition, the estimated
+(e) Contractual provisions that permit the issuer to prepay a debt instrument recoverable value of the asset has been reduced. The recoverable amount of
+or permit the holder to put it back to the issuer before maturity are not an asset is the higher of its fair value less costs to sell and its value in use.
+contingent on future events, other than to protect the holder against the credit
+deterioration of the issuer or a change in control of the issuer, or to protectthe + Where indicators exist for a decrease in impairment loss, the prior impairment
+holder or issuer against changes in levies applied by a central bank or arising loss is tested to determine reversal. An impairment loss is reversed on an
+from changes in relevant taxation or law. individual impaired asset to the extent that the revised recoverable value does
+(f) Contractual provisions may permit the extension of the term of the debt npainmont boon recomineg amount higher than the carrying value had no
+instrument, provided that the return to the holder and any other contractual .
+provisions applicable during the extended term satisfy the conditions of Financial assets
+paragraphs (2) to (c). For financial assets carried at amortised cost, the amount of an impairment,
+Debt instruments that are classified as payable or receivable within one year is the difference between the asset's carrying amount and the present value
+on initial recognition and which meet the above conditions are measured at the _ of estimated future cash flows, discounted at the financial asset's original
+undiscounted amount of the cash or other consideration expected to be paid or effective interest rate.
+received, net of impairment. For financial assets carried at cost less impairment, the impairment loss is
+Other debt instruments not meeting these conditions are measured at fair the difference between the asset's carrying amount and the best estimate
+value through profit or loss. of the amount that would be received for the asset if it were to be sold at the
+Commitments to make and receive loans which meet the conditions mentioned reporting date.
+above are measured at cost {which may be nil) less impairment. Where indicators exist for a decrease in impairment loss, and the decrease
+Financia! assets are derecognised when and only when a) the contractual roe ee lated o a olnoment vent occurring a re the impairment ie
+; . . nised, ior impairment loss is teste: ermine reversal. An
+Coup tanctonto athe party a otertalhy ator the risks Set reward ot impairment loss is eversed on an individual impaired financial asset to the
+ownership of the financial asset, or c) the Group, despite having retained some, oxtentt hott me fovised, Soe erable vale fo ° im otlead to 2 revised orice.
+but not all, significant risks and rewards of ownership, has transferred control of 3 rying valu p 9 .
+the asset to another party. (@ CRITICAL ACCOUNTING JUDGEMENTS AND KEY SOURCES
+Financial liabilities are derecognised only when the obligation specified in the OF ESTIMATION UNCERTAINTY
+contract is discharged, cancelled or expires. In the application of the Group’s accounting policies, which are described
+(ii) Investments above, the Directors are required to make judgements, estimates and
+assumptions about the carrying amounts of assets and liabilities that are
+In the Company balance sheet, investments in subsidiaries are measured at not readily apparent from other sources. The estimates and associated
+cost less impairment. assumptions are based on historical experience and other factors that are
+. a considered to be relevant. Actual results may differ from these estimates.
+Gii) Equity instruments The estimates and underlying assumptions are reviewed on an ongoing basis.
+Equity instruments issued by the Company are recorded at the fair value of Revisions to accounting estimates are recognised in the period in which the
+cash or other resources received or receivable, net of direct issue costs. estimate is revised if the revision affects only that period, or in the period
+of the revision and future periods if the revision affects both current and
+(iv) Derivative financial instruments future periods.
+The Group uses derivative financial instruments to reduce exposure to Critical accounting judgements
+foreign exchange risk. The Group does not hold or issue derivative financial . .
+instruments for speculative purposes. Player registrations
+Derivatives are initially recognised at fair value at the date a derivative contract Management will perform an impairment review of player registrations, if
+is entered into and are subsequently remeasured to their fair value at each events indicate that the Carrying value is not recoverable through an inflow of
+reporting date. The resulting gain or loss is recognised in profit or economic benefits. Whilst management do not feel it is appropriate to separate
+loss immediately. an individual player registration from a single cash-generating unit ((CGU"),
+being the operations of the Club in possession of the registration, there may
+(v) Fair value measurement be limited circumstances in which a registration is removed from the CGU and
+The best evidence of fair value is a quoted price for an identical asset in an recoverability assessed separately, Where such indications exist, management
+_ : : will compare the carrying value of the asset with management's best estimate
+active market. When quoted prices are unavailable, the price of arecent of fair value less cost to sell.
+transaction for an identical asset provides evidence of fair vatue as long as
+there has not been a significant change in economic circumstances or a
+significant lapse of time since the transaction took place. If the market is not
+active and recent transactions of an identical asset on their own are not a good
+estimate of fair value, the fair value is estimated by using a valuation technique.
+“A
+ANNUAL fer ORT A ACCOLNTS 2025 25
+Key sources of estimation uncertainty
+. The key assumptions concerning the future, and other key sources of
+
+estimation uncertainty at the balance sheet date, that have a significant risk of
+
+. causing 4 material adjustment to the carrying amounts of assets and liabilities
+within the next financial year, are discussed below.
+Cantingent appearance fees
+As per the terms of some transfer agreements entered into there are fees
+contingent on future appearances of certain players. At 30 June 2025, there is
+£32,281,000 (2024: £67,338,000) of contingent fees which are not considered
+probable based on management's best estimates.
+Financial instruments
+Financial instruments due to be settled or received in greater than one year are
+discounted when the time value of money is considered by management
+to be material to the Company. In such instances, management will estimate
+the timing of future cash flows and select an appropriate discount rate in
+order to calculate the present value of future cash flows related to the financial
+instrument.
+Stadium interest capitalisation
+Hill Dickinson Stadium received its safety certificate on 21 August 2025. This is
+the date that management considers that substantially all activities necessary
+to prepare the stadium for its intended use are complete, and as such the last
+date that interest was capitalised to the asset will be 30 June 2025.
+Capitalisation of intercompany balances
+During the year, the intercompany balances between Everton Football Club
+Company Limited, Everton Stadium Development Holding Company Limited,
+and Everton Stadium Development Limited were partially waived, with the
+reduction in liabilities in Everton Stadium Development Holding Company
+Limited and Everton Stadium Development Limited credited to equity in line
+with TECH 02/17 on the basis that a profit is realised when is arises from
+qualifying consideration’, and qualifying consideration comprises the release,
+or the settlement by another party, of all or part of a liability of the company,
+management consider the liabilities waivered to be realised profits.
+These transactions, in Everton Football Club Company Limited, are represented
+as Fixed Assets Investments, shown as capital contribution to Everton Stadium
+Development Holding Company Limited and Everton Investments Limited
+(see note 12).
+EVERTON “OOTSAL CLUE 26
+2. TURNOVER
+Turnover, all of which originates in the United Kingdom, can be analysed as follows:
+es
+£000 £000
+Broadcasting 129,235, 129,218
+Gate receipts 20,309 19,145
+Sponsorship, advertising and merchandising 24,325 21,625
+Other commercial activities 22,828 16,914
+196,697 186,902
+TURNOVER COMPRISES OF THE FOLLOWING:
+Broadcasting - distributions from the FA Premier League broadcasting agreements, cup competition broadcasting rights and radio broadcasting rights.
+. Gate receipts - revenue generated from the sale of match tickets.
+Sponsorship, advertising and merchandising - revenue generated from sponsorship and partnership contracts and net revenue received from outsourced retail operations.
+Other commercial activities - includes revenue received from hospitality, catering, events and all other revenue sources.
+The above turnover represents the net revenue received from outsourced retait and catering operations. Turnover would increase by £10.5m to £207.2m (2024: £9.2m to £196.1m)
+if these operations were not outsourced. .
+3. OPERATING EXPENSES
+ue
+£000 £000
+Amortisation of players’ registrations (note 10) 50,901 64,581
+Staff costs {note 7) 152,064 156,631
+Depreciation (note 11) . 2,613 3,737
+Other operating costs. 55,837 44,270
+Other operating costs - exceptional costs 1,215 10,371
+Total operating expenses 272,630 279,590
+The exceptional other operating costs of £11.2m in the period ended 30 June 2025 is broken down as follows:
+P|
+£000 £000
+Amounts payable to former employees in retation to the change in ,
+a 4145 -
+coaching staff
+Amounts payable to former employees 5133 -
+Revaluation of Football League Pension Scheme 265 -
+Refinancing and legal costs 4,672 10,371
+11,215 10,371
+Amortisation and Impairment of player registrations are included within player trading operating expenses on the face of the profit and loss account. .
+ANAUA. 322 0RTE AUC 5 2020 27
+4. OPERATING LOSS
+£000 £000
+The operating loss is stated after charging / (crediting):
+Depreciation - property 761 72
+Depreciation - other 1,852 3,016
+Amortisation of grants (os) (208)
+Operating lease rentals
+Motor vehicles 32 62
+Office equipment m™ 153
+Land and properties 2,065 2,026
+Foreign exchange loss B10 1,975
+Amortisation of player registrations 50,901 64,581
+The analysis of auditor's remuneration is as follows:
+Fees payable to the company's auditor for the audit ” 73
+of the company’s annual accounts.
+Fees payable to the company's auditor for the audit 20 7
+of the company's subsidiaries
+Total audit fees 94 90
+Other non-audit services .
+Audit-related assurance services ou n
+Tax services v7 16
+Other services 3 3
+Total non-audit fees au -_ 30
+5. INTEREST RECEIVABLE AND SIMILAR INCOME
+£000 £000
+Bank interest receivable 672 -
+Other Interest receivable 799 1,377
+41,474 4,377
+Other interest receivable relates to the unwinding of the discount, for FRS102 purposes, on deferred payments for players’ registrations.
+EVEN -OOTBALL CLUR 28
+6. INTEREST PAYABLE AND SIMILAR CHARGES
+P|
+£000 £000
+Other loans 6,961 4,287
+Other interest payable 7,676 6,173
+9463710,
+Othar interest payable relates to the unwinding of the discount, for FRS102 purposes, on deferred payments for players’ registrations.
+7, PARTICULARS OF EMPLOYEES
+onour ,
+Number Number
+The average monthly number of employees, inctuding Executive Directors,
+during the period was as follows:
+Playing, training and management 190 176
+Youth academy 79 79
+Marketing and media ; ro] 86
+Management and administration na m
+Maintenance, security, pitch and ground safety 54 54
+528 506
+In addition, the Group employed an average of 405 temparary staff on matchdays (2024: 383).
+Aggregate payroll costs for the above employees were as follows:
+£000 £000
+Wages and salaries 132,430 137,086
+Social security costs 18,415 18,394
+Other pension costs 1,219 1151
+152,064 156,631
+SEER ce et gS ee ee ees
+coment fe |
+Number Number
+The average monthly number of employees, including Executive Directors,
+during the period was as follows:
+Playing, training and management 144 30
+Youth academy 79 79
+Marketing and media 91 86
+Management and administration 102 96
+Maintenance, security, pitch and ground safety 54 54
+470 445
+ANNUAL RESORT & ACCULNTS 2023 29
+7. PARTICULARS OF EMPLOYEES (CONTINUED)
+Aggregate payroll costs for the above employees were as follows:
+£000 £000
+Wages and salaries 129,258 133,583
+Social security costs 18,002 19,025
+Other pension costs 4,107 1,053
+148,367 153,661
+Directors’ remuneration
+Pe |
+. £000 £000
+€moluments 1,021 1,099
+Company contributions to money purchase pension scheme 21 21
+41,042 41,120
+Highest paid director 562 433
+Company contributions to money purchase pension scheme - -
+562 + 833
+Directors’ emoluments includes compensation in respect of loss of office payments totalling Nil (2024: Nil).
+Number Number
+Retirement benefits are accruing for the following number of Directors under:
+Money purchase pension plans 41 4
+The Directors are considered to be the key management personnel of the business.
+EVESTON “OGTBALL CLUB 30
+8. TAX ON LOSS.
+a
+
+£000 £000
+Tax charge / (credit) in the period - -
+a) Factors affecting the tax charge
+The tax assessed for the periad is higher (2024: higher) than that resulting from applying the effective standard rate of corporation tax in the UK: 25% (2024: 25%).
+
+£000 £000
+Loss in the period (8,609) (83,222)
+Tax on loss at the standard rate (2,152) (13,305)
+Expenses not deductible for tax purposes (21,559) 18,277
+Income not taxable for tax purposes (12,373) (3)
+Fixed assets differences (13,472) . 598
+Movement in deferred tax not recognised 49,996 6,517)
+Total tax charge for the period - -
+b) Factors that may affect the future tax charge
+Unrecognised deferred tax assets of the Group are £132.1m (2024: £108.8m). These assets will be utilised if sufficient taxable profits are generated by Group companies in
+future periods.
+9. COMPANY PROFIT AND LOSS ACCOUNT '
+The Company has taken advantage of Section 408 of the Companies Act 2006 and has not presented its own profit and loss account.
+The Company's loss for the year was £2,604,000 (2024: restated loss £39,875,000).
+ANNGA REPORT SACTOUN 5 2020 31
+10. INTANGIBLE FIXED ASSETS
+GROUP
+
+. £000
+Cost
+At1 July 2024 269,945
+Additions in the year 52,392
+Disposals in the year (89,318)
+At30 June 2025 283,019
+Amartisation
+Att July 2024 149.717
+Charge for the year 50,901
+Etiminated on disposals (64,486)
+At30 June 2025 136,132
+Net book value .
+At30 June 2025 96,887
+At 30 June 2024 120,228
+The intangible fixed assets relates to the cost of players’ and management registrations and agent fees. .
+The Directors review the carrying value of the players’ registrations for impairment. Where events or changes in circumstances indicate that the carrying value of the asset may
+not be recoverable, to the extent that the carrying value exceeds the recoverable amount, the asset is impaired and the impairment loss is recognised in the profit and toss.
+The cost and amortisation brought forward, as at 1 July 2024, have been amended to agree to the intangible asset register as at 1 July 2024. No change to Net Book Value
+as at 1 July 2024, only presentation.
+COMPANY
+
+: . £000
+
+Cost
+At1 July 2024 269,475
+Additions in the year $2,177
+Disposals in the year (88,633)
+At 30 June 2025. 233,019
+Amortisation
+Att July 2024 149,394
+Charge for the Year . 50,749
+Eliminated on disposals (64,011)
+At 30 June 2025 136,132
+Net book value
+At 30 June 2025 96,887
+At 30 June 2024 120,081
+
+; The cost and amortisation brought forward, as at 1 July 2024, have been amended to agree to the intangible asset register as at 1 July 2024. No change to Net Book Value
+as at 1 July 2024, only presentation.
+EVERTON -OOTRS CLG 32
+11. TANGIBLE FIXED ASSETS 7 _
+Freehold Plant and Asset under
+
+sro
+
+£000 £000 £000 £000 £000
+Cost
+At1 July 2024 12,107 56,331 22 698,719 767,179
+Additions in the year - 286 - 114,338 14,624
+Disposals in the year (11,100) (16,660) (22) - (27782)
+At 30 June 2025 1,007 39,957 : 813,057 854,021
+Depreciation
+At1 July 2024 9,819 52,739 22 - 62,580
+Charge for the year 762 1,851 - - 2,613
+On disposals (10,450) (15,689) (22) : (26,161)
+At 30 June 2025 131 38,901 : - 39,032
+Net book value
+At 30 June 2025 876 41,056 - 813,057 814,989
+At 30 June 224 2,288 3,592 - 698,719 704,599
+Borrowing costs capitalised in the year amounted to £32,341,000 (2024: £54,552,000)
+comrany
+
+properties equipment construction
+
+£000 £000 £000 £000 £000
+Cost
+At1 July 2024 1,007 53,985 36 - 55,028
+Additions in the year - 250 - - 250
+Disposals in the year - (15,019) G6) : (15,055)
+At 30 June 2025 1,007 39,216 : : 40,223
+Depreciation
+Att July 2024 131 51,730 36 - 51,897
+Charge for the year . 1,449 - - 1,449
+On disposals = (15,019) (6) - (15,055)
+At 30 June 2025 4131 38,160 * - 38,291
+Net book value
+At 30 June 2025 876 1,056 - - 41,932
+At 30 June 2024 876 2,255, - - 3131
+The net book value of the Company's freehold properties includes land valued at £876,000 which is not depreciated.
+Fotlowing a review of additions to Company land & buildings, the accounting treatment for the capitalisation of certain interest costs has been amended. The amendment
+was required due to an underlying asset being identified as owned by a subsidiary, and not directly by the Company. The opening position for the current year Company financial
+statements has been restated to correct this. The underlying asset was, and continues to be, correctly recognised in the consolidated Group financial statements, therefore
+no adjustment is required at that level.
+As a consequence of the restatement, Company opening retained earnings and tangible fixed assets have been reduced as follows: 1 July 2024 - £53,911,000 and 1 July 2023 -
+£23,766,000. The comparative figures for the year ended 30 June 2024 now include an additional charge of £30,145,000 to the profit and loss account and a correspending reduction in
+fixed asset additions. There is no impact on cash flows or on the consofidated result or financial position of the Group.
+ANNA. REPERT y AGCOUNTS 225 33
+12. INVESTMENTS
+FIXED ASSET INVESTMENTS
+cnr
+——
+Cost and net book value at 30 June 2024 7
+At1 July 2024
+Additions in the year 367,674,849
+Disposals in the year (3)
+Cost and net book value at 30 June 2025 367,674,853
+Addition in the year relates to Everton Football Club Company Limited formalising an intercompany balance with Everton Investments Limited.
+Disposals in the year relates to the sale of Everton Football Club Women Limited and Goodison Park Stadium to Roundhouse Capital Holdings Limited.
+Oetails of Company's subsidiaries as at 30 June 2025, all registered in England and Wales at Goodison Park, Liverpool, L4 4EL, were as follows:
+Nomeof Company
+Everton Investments Limited 100 Issuer of loan notes
+Everton Stadium Development Holding Company Limited 100 Development company
+The Company directly owns 100% of the ordinary share capital of the subsidiary companies.
+13. LEASE COMMITMENTS
+Total future minimum tease payments under non-cancellable operating leases are as follows:
+£000 £000 £000 £000 £000 £000
+Due within one year 2125 2145 16 88 2141 2,233
+Due between two and five years 8,951 8,765 4 19 8,955 8,784
+Oue in more than five years 59,504 61,815 : - 59,504 61,815
+70,580 72,725 20 107 70,600 72,832
+EVERTON -OOFBAL CLUB 34
+14. DEBTORS
+: £000 £000 £000 £000
+Amounts falling due within one year:
+Trade debtors 24,605 53,504 15,063 $3,012
+Amounts due from subsidiaries - - 193,949 580,673
+Amounts due from parent 50,000 - 50,000 :
+Prepayments and accrued income 14,493 26,623 9,557 8,661
+Deferred tax : : - -
+89,098 80,127 268,569 642,346
+Amounts falling due after one year:
+Trade debtors 4,000 28,824 4,000 28,824
+4,000 28,824 4,000 28,824
+Excluding Everton Stadium Development Limited amounts owed by subsidiaries are unsecured, interest free and repayable on demand.
+Trade debtors due after one year represents proceeds due from the disposal of football staff registrations and are all due within four years.
+15. CREDITORS - AMOUNTS FALLING DUE WITHIN ONE YEAR
+£000 £000 £000 £000
+Other loans (note 16) . 127,571 229,736 127,571 29,736
+Trade creditors 47908 38,091 42,645 37,571
+Accruals and deferred income. 401719 85,959 42,708 58,352
+Amounts due to subsidiaries - - 4,305 4,293
+Social security and other taxes 9,726 8,209 9,669 11,034
+286,924 361,995 226,898 140,986
+Amounts owed to subsidiaries are unsecured, interest free and repayable on demand.
+ANHUA REPORT & ACCOLN 'S 2025 35
+16. CREDITORS - AMOUNTS FALLING DUE AFTER MORE THAN ONE YEAR
+£000 £000 £000 £000
+
+Other loans (see borrawings below) 340,971 364,036 - 364,036
+
+Trade creditors 34,316 44,370 34,316 44,358
+
+Accruals and deferred income 27595 17,085 12,595 17,067
+
+402,882 425,491 46,911 425,461
+
+Borrowings
+
+GROUP
+
+90 4un6 7028
+£000 £000 £000 , £000
+
+Analysis of borrowings
+
+Payable by instalments:
+
+Within one year 127571 223,736 127571 29,736
+
+Between one and five years - 364,036 - 364,036
+
+Greater than five years 340,971 - 340,971 :
+
+468,542 593,772 468,542 393,772
+90 dune 2028 .
+£000 £000 £000 £000
+
+Anatysis of borrowings
+
+Payable by instalments:
+
+Within one year 127,571 23,736 127571 29,736
+
+Between one and five years - 364,036 - 364,036
+
+Greater than five years = - - -
+
+127,571 393,772 127,571 393,772
+
+Included in other loans at 30 June 2025 includes:
+
+. a five-year credit facility totalling £130,000,000 (2024: fnil), with JP Morgan Chase Bank to meet working capital needs of the Club. This facility incurs interest at a market value
+rate. Concurrent with the change of control of the Club on 18 December 2024, the Club completed a comprehensive refinancing exercise that involved repayment of all existing
+borrowings present at the 30 June 2024.
+
+. a 30-year facility totalling £350,000,000 (2024: £nil), that incurs market rate of interest and is secured against Hill Dickinson Stadium.
+EVERTON FOOTBA_L CLUB 36
+17. PROVISION FOR LIABILITIES
+Pensions Contingent Onerous Total
+(note 20) appearance fees contracts otal .
+£000 £000 £000 £000
+At 1 July 2024 34 3,635 - 3,669
+Utilised in the period (268) (3,318) : (3,586)
+Provided in the period 365 525 : 890
+At30 June 2025 131 842 : 973
+The contingent appearance fees and pension provision are expected to be utilised within one and three years respectively.
+There are no amounts provided for deferred tax at 30 June 2025 or1 July 2024.
+18. SHARE CAPITAL AND RESERVES
+me Group and Company's Shere Capital
+£000 £000
+Allotted, issued and fully paid
+4,621,827 ordinary shares of £1 each
+(2024: 136,000 ordinary shares of £1 each) ‘822 ‘138
+The Graup’s other reserves are as follows:
+Share premium reserve, which contains the premium arising on issue of equity shares, net of issue expenses.
+Profit and loss reserve, which represents cumulative profits or losses, net of dividends paid and other adjustments.
+On 22 September 2024, The Friedkin Group inc signed an agreement with Farhad Moshiri to acquire his full stake in Everton Football Club, which accounted for
+94.1 per cent of the Club's shares (i.e. 127,031 of the allotted 135,000 shares). Concurrently upon transaction completion on 18 December 2024, £450,751,000 of
+Bluesky Capital Limited's shareholder loan (which was shown in Other Reserves) was capitalised into equity taking Mr Moshiri’s total equity in the Club to 97.2%
+(creation of 150,250 new shares. Taking majority shareholding to 277,281 of the 285,250 allotted shares) . Immediately following completion on 18 December,
+an additional equity investment was made by the Club's parent company, Roundhouse Capital Holdings Limited (UK), which took Roundhouse’s total holdings in
+the Club to 99.5% (creation of 1,336,537 new shares. Taking Roundhouse Capital Holdings Limited (UK) holding to 1,613,818 of the 1,621,787 allotted shares). This
+transaction formally completed on 18 December 2024 following the granting of all regulatory approvals, including from the Premier League and the FCA.
+ANNUAL REPORTS ACL OGM $2025 37
+FOR THE YEAR ENDED 30 JUNE 2025 (CONTINUED)
+19. CONTINGENT LIABILITIES AND ASSETS
+
+No provision is included in the accounts for transfer fees of £32,281,000
+(2024: £67,338,000) which are, as at 30 June 2025, contingent upon future
+appearances of certain players and at the balance sheet date are not
+considered probable; or signing-on fees and loyalty bonuses, as at 30 June
+2025, of £13,258,000 (2024: £21,523,000) which would become due to certain
+players if they are still in the service of the Ciub on specific future dates.
+
+20. PENSIONS
+
+Certain staff of the Group are members of either the Football League Limited
+Players Retirement income Scheme, a defined contribution scheme, or the
+Football League Limited Pension and Life Assurance Scheme (“FLLPLAS”;
+
+“the Scheme”), a defined benefit scheme. As one of a number of participating .
+employers in the FLLPLAS, the Group is advised only of its share of the
+Scheme'’s deficit and recognises a liability in respect of this.
+
+Asa result, the contributions paid to the scheme reduce the provision.
+
+The Group is unable to identify its share of the underlying assets and liabilities
+of the Scheme on a consistent and reliable basis and therefore accounts for
+the Scheme as if it were a defined contribution scheme.
+
+Contributions are also paid into individuais’ private pension schemes.
+
+Total contributions across all schemes during the year amounted to £1,383,000
+(2024: £1,133,000). The amount outstanding at year end was £108,000
+
+(2024: £89,000).
+
+21. POST BALANCE SHEET EVENTS
+
+Since 30 June 2025, the Club has entered into transfer agreements to
+
+acquire the registration of Thierno Barry (from Villarreal), Mark Travers (from
+Bournemouth), Adam Aznou (from Bayern Munich), Kiernan Dewsbury-Hall
+(from Chelsea), Jack Grealish (loan from Manchester City), Tyler Dibling (from
+Southampton), Tom King (free agent) and Merlin RohI (loan from SC Freiburg).
+The registrations of Youssef Chermiti has been sold (to Rangers). The net
+transfer fees payment for these transactions and the financial impact of
+contingent transfer milestones from the triggering of contingent milestones
+relating to existing transfer agreements is £114,304,000.
+
+22. RELATED PARTY TRANSACTIONS
+
+Everton in the Community is a registered Charity (Number 1099366)
+incorporated on 31 July 2003 and began trading on 1 June 2004. The Charity
+operates separately fram the Group hence has not been consolidated in the
+Group results, but, as at 30 June 2025, Everton Football Club Company Limited
+employees held one of the 10 Trustee positions at the Charity. During the
+year, Everton Football Club Company Limited donated £396,000 towards the
+operational costs of the Charity (2024: £360,000) and provided value in kind
+benefits of £511,000 (2024: £367,000). Value in kind benefits of £106,000
+(2024: £61,000) were provided to Everton Free School Limited.
+
+"As at 30 June 2025, the Group and Company had a receivable amount of
+£35,631 due from Everton in the Community and no balance due from Everton
+Free School Limited.
+
+On 27 June 2025, the Group sald its shareholding in Everton Football Club
+Women Limited and Goodison Park Stadium Limited to Roundhouse Capital
+Holdings Limited. As at 30 June 2025, the Group and Company had a receivable
+amount of £50,000,000 due from Roundhouse Capital Holdings Limited.
+During the year, Everton Footbal Club Company Limited provided value
+
+in kind benefits of £1,880,000 (2024: £1,596,000). As at 30 June 2025, the
+Group and Company had no receivable or payable due from EFCW Holding
+Company Limited, Everton Football Club Women Limited and Goodison Park
+Stadium Limited.
+EVERICN -COTBE.L CLUB 38
+23. FINANCIAL INSTRUMENTS
+The carrying values of the Group’s and Company's financial assets and liabilities are summarised by category below:
+me | |
+£000 £000 £000 £000
+Financial assets
+Measured at amortised cost:
+Trade debtors 8,309 32,088 8,309 32,088
+Measured at undiscounted amounts receivable:
+Trade debtors and other debtors 20,296 67.662 10,754 49,208
+Amounts due from subsidiaries - - 193,949 580,673
+Cash at bank and in hand 79,141 26,423 15,000 24,720
+107,746 126,173 228,012 686,689
+corany
+ae ons nn
+Financial liabilities £000 £000 £000 £000
+Measured at amortised cost:
+Trade creditors 82,008 75,729 82,008 75,729
+Measured at undiscounted amount payable:
+Other Loans . 468,542 593,772 127571 393,772
+Trade and other creditors 139,256 117,985 59,925 92,653
+Amounts owed to subsidiaries : : a 4,305 4,293
+689,806 787,486 273,809 566,447
+The Group's income, expense, gains and losses in respect of financial instruments are summarised below:
+GROUP AND COMPANY
+=— : —— ~ — _ 2025 —_
+£000 £000
+Income and expense
+Total interest income for financial assets .
+at amortisad cost 799 1,377
+Total interest expense for financial liabilities
+at amortised cost 676) (6173)
+ANNUA. @e°ORT SACCOUNTS 2025 . . . : . rn
+24. DERIVATIVE FINANCIAL INSTRUMENTS
+Pe |
+£000 £000
+Current Liabilities
+Forward foreign currency contracts - -
+Forward foreign currency contracts are valued using quoted forward exchange rates compared to actual exchange rates at the close of the financial period.
+25. NET DEBT RECONCILIATION
+. £000 £000 £000
+Cash at bank andin hand 26,423 52,718 79141
+Current borrowings (229,736) 102,165 (127,57)
+Non-current borrowings (364,036) 23,065 (340,971)
+(567,349) 177,948 89,401)
+26. ULTIMATE CONTROLLING PARTY
+The Company is a subsidiary undertaking of Roundhouse Capital Haldings Limited (company registration number 15992615), who have a 99.5% ownership in the
+Company and produce consolidated group accounts. The major shareholders of Roundhouse Capital Holdings Limited are set out in the group accounts which can
+be obtained from Companies House, Crown Way, Cardiff, CF14 3UZ.
+Eo ee ee ee
+i i
+eames
+q Sy AS ele Sie Sg Bree eG hee Sree Le, [ke
+a ag ES Sao a a So oe ~, ae
+Soc Bre <r ee oo ee ee 107 a N
+i dieimarae ee ae or a sal
+eS soe ~ * L, I
+io . . t I I ;
+¢ = - , wy ee ”
+_- ,. i eee: a —_-*
+lee e's a “NES. a -
+1
+1
+2.28 wo ta Ae ~ ee a oe ae - mt : ;
+“= ay Tm "I - SFT Taga We A eet _" —_
+~ 2 a ay TO ig ET g tem -- pee
+ee, Klee Sa tems os a . aan - ba
+oe — Le gaan ed ee * nee - > Eee, at - a
+. ao ae Rea in — SS ~<a
+— ee - a ~ ’
+. ‘ 2 rT _ ° -
+Sa . = a hap ES Z bey eee 4
+ae te} tenia oe A ee
+: cu . “ >
+‘aie ez -
+YL ie ee a4
+‘ ae ee atti ~* lbp . Se ace
+! eS r . a. ong, =. : H
+~~ 5 [Xe : ee: ae ff. hoe. wet
+a Me de ily; > mS “7 ~
+- om a iy LL a
+ies - ts Hg a: et : .
+em ty Be 7S. a
+5 + fe re - . - ~
+oe s on ee 1 Sao ee
+<a 7 eee — ~ N.. rs »
+. ~ ~o ~ is oA
+~~
+DOE Min Ss yd | eae 7 SE CIJINING 207) 2 SN odo:
+th e/ > See i bane | be Ws ee) Eee. Ee Ne WN seg oie
+, uy RE fe ae oe Wier). oe Nae erty Bg al RENR &
+eS SES Wns Cie tae GAC, Le
+AM Nae Sy PIAS / re ies A x Ra “aT yew pit ERB A 8.
+Lan fe Cao “Ae on aa eS Se 2) pao: = Ne 7/2 e oy "
+e S ae y are 5 Vtgire~ laaaees ma) Bir
+e ae joe ae phere) 4 se i Pot Co | ~f S q ‘
+I BE pe fe| \ (Pee, Ce , o : cal
+Ba } x. SB 4 Po oe Spee Lime] (ST gee. 2
+ice . * q Pen a te “ Repeater : Ree, at ae Beeston Oe
+BORE  patiege AI Se Noone Dimi, Be Be OPEN ber Se ap B m
+ei CE WUE sp Oe ee eae) 2 Sanaa sais ie
+Pie te ore Be aa 2 Be 7s a BOR ess .
+Re SIN (acs WR Re CAD EER ea. poe Brag Ce
+Md ob Cah Spo soos We ROICA Ed Ga As KS °
+AB i \\ ea aA ax a. 3 SPAN SaaS SBS aS Ae! KS Sy
+Bye" Fs Wes Wey SE ASE ORNL as o. ¥& ge |.% ’
+FONE SH PET b AT atene/ ANA Bh logy
+we Ge Be. By Was Es] * RON YK Bx, a } be ; - P
+Le OB rete Mite’ Bia G Ae | ates ° “@ 7 ta
+Nesey celae Ny &cSe eR ke Bo? 5h wee
+ey a 8. a) os nn
+ee Y r 7 i Rss ae
+Spe ; S 6 | i" & , . Nae? Megs s
+: ~ ze, « 7 soe = —s wn 7 :
+e es, ’ os, Be : 7 a fe es
+h ce a ‘ 4 1B G 2 Revd a RSE, Ge - he BO :
+Ye" Z a sf AS) VS ag! eo ft ‘ Rea © 6 ey
+iat Bs) | 5, (OR BE Yom, B oe BE ONE are
+2 . ORE ee ee SER ote fF Se A
+Wee aa eae) f teat” SP bo Mead ee Rag —_— es P
+see ae VERO gas ee a MAE
+‘= = aeme LB DNG apt heel RO, aes Pte eS ee ee
+z ela as Bay ged le Aa pe ee OOS Pyar «
+s Ee mist Rowe see (208 ‘ . Er Ss S anon RS
+\ rs s a ‘ #8 . age PEM rm 2 Ps oS * ca
+eS eh ca oe 1h AR Pre hg §): op ieee BLE Pps ia NEF WBE ed
+Pith fd Pe SSS i) eee Ps % fey Sr js pi ne | Og va
+cee NYS PRR Ces Woe ko ot Me A ee
+| x #. ‘d a an ee eee Mae EC? eh no] ret
+went > eee ok a Go GLI pe ae nf —_
+ats A Sake pees “ait Pe
+Bd BEE erie wg ites Wea tadieeh & PONG GE ton LMA LG BORO Teh ay EER ate oD RL oy, ee
+ee Cn ee eee ies ee,
+SUN ari tia Ramay oy ene: Pca eit at Seagne aee wo A ae SOE CN NP AE is keg
+oo ma So ee ee Peg aha Be nee ce e; beg ay rae =
+| Be ee. pear tmare reac rR SO oh Siegunens CURR. Seay sebsa eae ae RPA so nies tee
+PN Ey irene A Roe ee ag gana ar ce OES erage te eR oS
+Mee eee rs me ie eee reise Haars pS ea ae SOE eee PES mame! SRR. Sa ee |
+oe era eee oh ge aa pore eee eae cs eS aes ee sae
+Gee NS SRR RS EONS BS OE Cas SRC Fes 14 GM eget, SE ae a brawic Wiceg eters. ae
+OSE RoE So BURR hee 8 I a eR ES hg CE i eg
+po ya a RSE ae a as BN a ta RR NE 3 OER RS Ey eenrieay  Snemate. Cn oe
+pid As PRS a pa TR RAR SO CSE ANBAR aL EOS Ne ae
+AE RMSE oo ESSE ES OS PRAMS SA Pek Coast Sate eae
+a Sng aa ape oe we ee ee eee v. yee (OEE TE Oe eee. etn
+PIEPER Pr, SCS sie aera SS
+SRRURR ORO Soca Sart ed en as Gn ner GD NEE aR AT og Pca PR . .
+ao athe R RR tf dha oR Pa ea age PA SIRE Fae SUE EI Ce ENS DEEPA TAT 7 ROC
+ee Bat aoe “es ceo eae eee hone ee
+Pe INR eR eat Pye acd FES aS Ra RN Bee dal ae Rk al i ye BR a es sey
+Fe ps EPR orc Os GRU URS REA SSEE Ud eS Bear IEE OP A a a a Vea atta et he SRR ge:
+agers.) pe eee iS etre vene Cg a eee ane aOR MB fe a
+Ta aceite ie ihe, er ee enn eek gee
+phar hata a Ph eae: haa cent veer otek. aro Piste cats BB occ Le ag ae area is
+BA OSES RDS Sega S ek ep aren a2, GaN eT Res Ge ie a se Sean vae ar ter ages
+cats aE ON aa ee a ate ce Obie uaiiene: emer Maemo ce" neecee Saree c |
+Ripa Se ACe EN A Ps Sid SRC e UIA RSENS WR PEC: ORE AGN eC ee “UEP PORIRRRE AR Ole re Se kee ta
+ee OA spot UR ae oe Pi oc 2p Aa TRS Alan Ss sate Ree Soe
+Deke a Re Ls Bn RR NS ues pe ag AE Tet Ry ih ate Dr see emensaee a at aaa
+- Cs ead Sap e og Saag aia EEE pe TEST heats ee, ter eee eae el  oageeea?
+cea ae HR ap see ye sk pe a Seem ee Oe Nee rae erate
+pot he OR Ee Bee oe POLES TAR SR ge Ea PS Ae Se ee ars re
+
+cen, . an at : Ena oe © ae ia Rey as vas ree of wh wes a Bre ner a ria eee tS ae ce
+
+- eWEvertonyys a Des
+, . 47) > :
+: LSINTSUOL .
 

@@ -2,7 +2,7 @@ source: Companies House filing, rotherham-united-fc__1.pdf
 document: _22zUbgX5z-hyQhVsjSdU03Pic4-k3054nh-yOufAkU
 made_up_date: 2025-06-30
 method: ocr
-pages_read: 12 of 25
+pages_read: 25 of 25
 
 : : Company. registration number 06550400 (England and Wales)
 ROTHERHAM UNITED FOOTBALL CLUB (RUFC) LIMITED
@@ -389,4 +389,411 @@ Leeds — . nn -
 LS18 5BJ ,
 
 5 .
+ROTHERHAM UNITED - FOOTBALL CLUB (RUFC) LIMITED . :
+"STATEMENT OF COMPREHENSIVE INCOME
+FOR THE YEAR ENDED 30.JUNE 2025 :
+2025 2024
+Notes £ £
+Turnover 3 10,518,506 19,172,906
+Cost of sales (11,799,487) (16,393,065)
+Gross (loss\/profit (1,280,981) 2,779,841
+. _ Administrative expenses (3,370,408) . . (4,479,875)
+. Operating loss ; 4 (4,651,389) ; (1,700,034)
+a Interest.recéivable:and similar:income 7 1,534 _ (237)
+- Loss before taxation (4,649,855) (1,700,271)
+Taxonloss 8 - . 988 :
+Loss for the financial year (4,649,855) (1,699,283)
+, The pfofit.and loss:account has been prepared on the basis that all operations are continuing operations.
+; : ; = 10-- :
+ROTHERHAM UNITED FOOTBALL CLUB (RUFC) LIMITED ' oo :
+STATEMENT OF CHANGES IN EQUITY ; , ;
+FOR THE YEAR ENDED 30 JUNE 2025
+
+: , Share Profit and Total
+
+capital loss: .
+reserves
+£ £ £ a
+Balance at 1 July 2023 2,850,004 (5,935,644) (3,085,640) Be
+Year ended 30 June 2024:
+Loss and total comprehensive income . - (1,699,283) ” (1,699,283) :
+Balance at'30 June 2024 2,850,004 (7,634,927). (4,784,923)
+Year ended 30 June 2025: _ os
+Loss and total comprehensive. income - (4,649,855). (4,649,855) _
+Balance at 30 June 2025 2,850;004 (12,284,782) (9,434,778)
+!
+; ROTHERHAM UNITED FOOTBALL CLUB (RUFC) LIMITED
+. BALANCE SHEET : : ;
+AS AT 30 JUNE 2025 . a, :
+2025 2024
+Notes £ £ £ £
+: Fixed assets, :
+Intangible assets 3 §21,709 : : 1,123,562
+Tangible assets. : 8 40 ; ~ 272,783 : 328,386
+; 794,492 1,451,948
+. Current:assets
+: ‘Stocks . 11 89;616 | 159,645
+: Debtors Lo. . 12... 1,309,269... 2,001,106
+: ‘Cash at bank. and in hand 289,247 969,944
+: a oe 4,688,132 3,130,695
+Creditors: amounts falling due within. :
+ohe year 13 (11,917,402) (8,838,680)
+Net current liabilities (10,229,270) (5,707,985) :
+Total assets less current liabilities (9,434,778) (4,256,037) :
+Creditors: amounts falling due after ,
+more than one year we 14 - (528,886)
+Netliabilities a (9,434,778) (4,784,923)
+. - Gapital and reserves : :
+. Called up:share capital ~~ coe 7 : 2,850,004 . 2,850,004 :
+. Profit and‘loss reserves . : (12,284,782) (7,634,927)
+Total equity , . (9,434,778) . (4,784,923)
+1 ; ‘These--financial. statements -have been ‘prepared in accordance with the provisions relating to medium-sized
+companies. tS oe : : . .
+: The ‘financial statements weré approved by the board. of directors and authorised for issue on 22.(S24 2247 and
+are signed:on its behalf by: : . . :
+, K Thomas : . : ss
+. _ Director | ; . ; : . ;
+Company:régistration ‘umber 06550400 (England and Wales)
+ROTHERHAM UNITED FOOTBALL CLUB (RUFC) LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+_4 Accounting policies
+Company information
+Rotherham United Football Club (RUFC) Limited is a company limited by shares incorporated in the UK and
+registered in England and Wales. The registered office is New York Stadium, New York Way, Rotherham,
+South Yorkshire, S60 1AH. New York Stadium, New York Way, Rotherham, S60 1AH an
+1.1. Accounting convention
+These financial statements have been prepared in accordance with FRS 102 “The Financial Reporting
+Standard applicable in the UK and Republic of Ireland” ("FRS 102°) and the requirements of the Companies
+Act 2006.
+The financial statements are prepared in sterling, which is the functional currency of the company. Monetary
+amounts in these financial statements are rounded to the nearest £.
+The financial statements have been prepared under the historical cost convention _
+The principal accounting policies adopted are set out below:
+This company is a qualifying entity for the purposes of FRS' 102, being a member of a group where the parent
+of that group prepares publicly available consolidated financial statements, including this company, which are
+intended to give a true and fair view of the assets, liabilities, financial position and profit or loss of the group.
+The company has therefore taken advantage of exemptions from the following disclosure requirements:
++ Section 4 ‘Statement of Financial Position’: Reconciliation of the opening and closing number of :
+. shares;
+* Section 7 ‘Statement of Cash Flows’: Preséntation of a statement of cash flow and related notes and
+disclosures; . '
+* Section 11 ‘Basic Financial Instruments’ and Section 12.‘Other Financial Instrument Issues’: Carrying
+amounts, interest income/expense and net gains/losses for each category of financial instrument; .
+basis of determining fair values; details of collateral, loan defaults or breaches, details of hedges,
+hedging fair value changes recognised in profit or loss and in other comprehensive income;
+* Section 26 ‘Share based Payment’: Share-based payment expense charged to profit or loss, :
+reconciliation of opening and closing number and weighted average exercise price of share options, - :
+how the fair value of options granted was measured, measurement and carrying amount of liabilities oo
+for cash-settled share-based payments, explanation of modifications to arrangements;
+« Section 33 ‘Related Party Disclosures’: Compensation for key management personnel. .
+The financial statements of the company are consolidated in the financial statements of ASD Lighting
+Holdings Limited. These consolidated financial statements are available from the parent company's registered
+office, Mangham Road, Barbot Hall Industrial Estate, Rotherham, S61 4RJ.
+1.2. Going concern
+The accounts have been prepared on a going concern basis. Although the company had -significant net
+liabilities at 30 June 2025 the directors have prepared cash flow forecasts for the next 12 months which show
+that the company can continue to trade as a going concem but it must continue to rely upon the support of
+sponsors, in particular its fellow subsidiary company ASD Lighting PLC to enable it to do so.
+-13- .
+ROTHERHAM UNITED FOOTBALL CLUB (RUFC) LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2025
+1 Accounting policies (Continued)
+1.3 Turnover
+: Turnover répresents income receivable from football and related commercial activities, exclusive of VAT. Gate
+receipts and other match day revenue are recognised as the games are played. The club also receives
+central distributions from the Football League and a solidarity payment from the Premier League that are
+beyond the direct control .of the officers of the club. These distributions are recognised evenly over the course
+of the financial year.
+Revenue derived from season tickets is credited to income in the period to which it relates. Amounts. received
+in advance are credited to deferred income in the balance sheet. .
+Sponsorship, advertising and similar commercial income is recognised over the duration of the respective
+contracts. Amounts received in advance ate credited to deferred income in the balance sheet.
+1.4 Intangible fixed assets - Player registrations
+In line with FRS 102, the costs associated with the acquisition of players' registrations are capitalised as
+intangible fixed assets and amortised over the period of the respective player's contracts. Players’
+registrations are written down for impairment when the carrying amount exceeds the amount recoverable
+through use ‘or sale.
+; 1.5 Tangible fixed assets
+: Tangible fixed assets are initially measured at cost and subsequently measured at cost or valuation, net of
+depreciation and any impairment losses.
+Depreciation is recognised so as to write off the cost or valuation of assets less their residual values over their
+useful lives on the following bases:
+Improvements to leasehold property Over the period of the lease
+: Plant and equipment 20% an cost
+Equipment, fixtures and fittings 20%-on cost
+The gain or loss arising on the disposal of an asset is determined as the difference between the sale
+proceeds and the carrying value of the asset, and is credited or charged to profit or loss.
+4.6 Borrowing costs related to fixed assets
+Borrowing costs directly attributable to the. acquisition, construction or production of qualifying assets, which
+are assets that necessarily take a substantial period of time to get ready for their intended use or sale, are
+added to the cost of those assets, until such time as the assets are substantially ready for their intended use
+or sale.
+All other borrowing ‘costs are recognised in profit or loss in the period in which they are iricurred.
+1.7. Stocks
+Stocks, which comprise goods heid for re-sale, are stated at the lower of cost and estimated net realisable
+value,
+1.8 Taxation
+The tax expense represents:the sum of the tax currently payable and deferred tax.
+-14-
+ROTHERHAM UNITED FOOTBALL CLUB (RUFC) LIMITED ;
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2025
+ee
+-4 Accounting policies (Continued) -
+Current tax :
+The tax currently payable is based on taxable profit for the year. Taxable profit differs from net profit as
+reported in the profit and loss account because it excludes items. of income or expense that are taxable or
+deductible in other years and it further excludes items that are never taxable or deductible. The company’s
+liability for current tax is calculated using tax rates that have been enacted or substantively enacted by the po
+reporting end date. :
+Deferred tax
+Deferred tax arises as a result of including items of income and expenditure in taxation computations. in
+periods different from those in which they are inciuded in the company's accounts: Deferred tax is provided ir’
+full on timing differences which resutt in an obligation to pay more(or less) tax at a future date, at the average .
+tax fates that are expected to apply when the timing differences reverse, based on current tax tates and laws.
+1.9 Retirement benefits , .
+Payments to defined contribution retirement benefit schemes are charged as an expense as they fall due.
+1.10 Leases
+Rentals under operating leases are charged to the profit and loss account as they fall due. ,
+1.11 Pension scheme
+The pension costs charges in the financial statements represent the contribution payable by the company
+during the period.
+1.12 Signing on fees
+Signing on fees represent a normal part of the employment cost of the player and as such are to be charged
+to the profit and loss account in the accounting period in which payment is made. Potential instalments due in
+the future based on continued service are disclosed as a contingent liability. \
+1.13 Grants . :
+There were no deferred grant releases during the year. oO,
+2 Judgements and key sources of estimation uncertainty ; :
+In the application of the company's accounting policies, the directors; are required to make judgéments, .
+estimates and assumptions about the carrying amount of assets and liabilities that are not readily apparent
+from other sources. The estimates and associated assumptions: are based on historical experience and other
+factors that are considered to be televant. Actual results may differ from these estimates.
+: The estimates and underlying assumptions are reviewed oh an ongoing basis. Revisions to accounting
+estimates are recognised in the period in which the estimate is revised where the revision affects only that
+7 period, or in the period of the revision and future periods where the revision affects both current and future
+periods. :
+The key estimates and judgements made by the directors when preparing the financial statements relate to:
+* The economic life of fixed assets (tangible and intangible)
+« Provisions needed for potential bad debts
+-15-
+ROTHERHAM UNITED FOOTBALL CLUB (RUFC) LIMITED
+: NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2025
+3 Turnover and other revenue
+An analysis of the company's turnover is as follows:
+2025 2024
+£ £
+Turnover .
+Match income & season tickets 3,795,811 2,878,941
+Central distributions 2,521,286 9,219,950
+Commercial income 2,966,034 3,231,564
+Merchandising income 818;346 835,692
+Media receipts 24,315 356,830
+Transfer fees & sell on clauses 271,041 2,542,487
+Other receipts 121,673. 107,445
+10,518,506 19,172,906
+Turriover analysed by geographical market
+. 2025 2024
+£ £
+United Kingdom 10,518,506 19,165,275
+Rest of World - 7,631
+10,518,506 19,172,906
+4 Operating toss on ordinary activities before taxation
+2025 2024
+Operating loss for the year is stated after charging/(crediting): £ £
+Fees payable to the company's auditors for the audit of the company's
+financial statements 12,000 12,000
+; Depreciation of owned tangible fixed assets 55,603 52,936
+Profit on disposal of tangible fixed assets ; (1,000) -
+Amortisation of intangible assets 362,810 689,534
+Profit on disposal of intangible assets (414,336) (266,667)
+-16-
+ROTHERHAM UNITED FOOTBALL CLUB (RUFC) LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED) : ; .
+FOR THE YEAR ENDED 30 JUNE 2025 SS po
+5 Auditor's remuneration : .
+. / ~ 2025 2024
+Fees payable to the company's auditor and associates: £ £
+For audit services °
+Audit of the finaricial statements of the company a 13,200. 12,000 oo
+6 Employees. , , .
+The average monthly number of persons (including directors) employed by the company during the year was:
+. 2025 2024 os
+Number Number
+Sales, matchday, ground staff 56 64 a
+Administration and other 5 6 ~
+First team players and coaches 44 52
+Youth team players and coaches. 48 53
+Total 153 175 :
+Their aggregate remuneration comprised: , . :
+2025 2024 Tos
+Wages and salaries 7,602,726: 11,417,943. : .
+Employers NI 918,774 1,402,242 :
+Class 1 NI 39,738 75,110 i
+Pension (paid to EFL for players) 19,046 17,716 .
+Pension FT Staff 36,604 35,849 a
+7 Interest receivable and. similar income _ : . . _
+2025. 2024 :
+£  €
+Interest income :
+Interest on bank deposits 1,534 - (237)
+-17-
+ROTHERHAM UNITED FOOTBALL CLUB (RUFC) LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2025 :
+8 Taxation
+2025 2024
+: . £ £
+Current tax
+.  Adjustmenis in respect of prior periods - (988)
+‘The actual charge/(credit) for the year can be. reconciled to the expected credit for the year based on the
+Profit or loss and the.standard rate of tax as follows:
+2025 2024
+£ £
+: Loss before taxation (4,649,855) (1,700,271)
+Expected tax credit based on the-standard rate of corporation tax in the UK of
+25.00% (2024: 25.00%) (1,162,464) (425,068)
+Tax effect of expenses that are not deductible in determining taxable profit 1,328 1,302
+, Unutilised tax losses carried forward 1,160,278 255,507
+Adjustments. in respect of prior years - (988)
+Group relief ‘ - 170,869
+Permanent capital allowances in excess of depreciation (4,383) (18,844)
+Depreciation on assets not qualifying for tax allowances §,383 13,234
+. Rounding : (142) -
+Taxation charge/(credit) forthe year - (988)
+9 Intangible fixed assets
+“ Player Registrations
+£
+Cost
+At 1 July 2024 2,100,000
+Disposals (1,100,000)
+At 30 June 2025 1,000,000
+Amortisation and impairment
+, At 1 July 2024 976,438
+: Amortisation charged for the year 362,810
+Disposals (860,957)
+At 30 June 2025. . 478,291
+Carrying amount
+At 30 June 2025 521,709
+At 30 June 2024 1,123,562
+. . -18-
+ROTHERHAM UNITED FOOTBALL CLUB (RUFC) LIMITED  — ;
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED) oe oO :
+FOR THE YEAR ENDED 30 JUNE 2025 ; . : -
+_ 10 Tangible fixed assets . a .
+i. improvements. Plantand.. Equipment, _ Total ©
+to leasehold. equipment fixtures and L
+property fittings ~ :
+; £ £ L£ £
+. : Cost
+Ati July.2024 470,918 507,121 314,395 1,202,434 sits
+_ Disposals: . - (1,230) - +, (1,230) oe :
+At 30 June 2025 470,918 505,891 314,395 1,294,204 . .
+Depreciation and impairment Lo . :
+At 1 July 2024 293,890 372,121 298,037 964,048 . .
+Depreciation charged in the year 23,290 26,987 5,326 55,603 i
+Eliminated in respect of disposals - (1,230) - (1,230) .
+At 30 June 2025 ~ 317,180 397;878° 303,363 : 4,018,424 1 , ot
+: Carrying amount : , . :
+At 30 June 2025 153,738 408,013. 11,032 272,783 .
+‘At 30. June 2024 177,028 135,000 16,358 : 328,386 ;
+14 Stocks ; a
+2025 2024 toe
+. £ . £ :
+Finished goods and goods for resale 89,616 159,645 .
+12 Debtors Lo
+2025 2024 os
+Amounts falling due within one year: £.  £ . ; ‘
+Trade debtors . 962,639 1,680,584
+Prepayments and accrued income ‘346,730 * 320,522
+~ 64/309,269° ”- 2,001,106: : :
+Included within debtors are football debtors of £830,632 (2024: £1,651,606).
+-19-
+ROTHERHAM UNITED FOOTBALL CLUB (RUFC) LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2025
+13 Creditors: amounts falling due within one year
+2025 2024
+Notes £ £
+Other borrowings 15 - 416,666
+Trade creditors 1,101,577 4,574,778
+Amounts owed to group undertakings 9,467,811 5,204,737
+Taxation and social security 457,339 817,041
+Accruals and deferred income 890,675 825,458
+. : 11,917,402 8,838,680
+Included within creditors falling due within 1 year are loan repayments to the EFL of £0 (2024: £416,666) and
+other: football creditors £314,243 (2024: £907,190).
+14 Creditors: amounts falling due after more than one year
+2025 2024
+Notes £ £
+Other borrowings 15 - 528,886
+. 15 Loans and overdrafts
+2025 2024
+£ £
+Other loans - 945,552
+Payable within one year . - 416,666
+Payable after one year - 528,886
+The long-term loan was a loan. from The Football League which was both unsecured and interest free. The
+loan was repayable in equal instalments with the final repayment made in the year ended 30 June 2025.
+46 Retirement benefit schemes
+2025 2024
+Defined contribution schemes £ £
+. Charge to profit or loss in respect of defined contribution schemes. 55,649 53,565
+: The company operates a defined contribution pension scheme for all qualifying employees. The assets of the
+, scheme are held separately from those of the company in an independently administered fund.
+-20-
+ROTHERHAM UNITED FOOTBALL CLUB (RUFC) LIMITED
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+- FOR THE YEAR ENDED 30 JUNE 2025 , po
+17 Share capital - .
+: 2025 2024 2025 2024
+Ordinary share capital Number Number £ £
+Issued and fully paid —— ,
+Ordinary shares of £1 each - .2,850,004 2,850,004 2,850,004 2,850,004 ;
+Ordinary shares carry one vote per share. :
+18 Operating lease a,
+At the reparting end date the company had outstanding commitments for future minimum lease payments -
+under non-cancellable operating leases, which fall due as follows: sof
+. 2025 2024 , .
+£ £
+. Within one-year 104,331 62,668
+Between two and five years 280,415 181,593 -
+In over five years 78,750 113,750
+463,496 358,011 ca
+19 Contigent liabilities
+Additional transfer costs of £40,000 (2024: £105,000) will become payable if certain conditions contained .
+within the relevant contracts are met. These. payments will be accounted for in the year in which they fall due oan
+: for payment. oo
+Additional transfer fees of £300,000 (2024: £675,000) will become receivable if certain conditions contained .
+within the relevant contracts are met. These amounts will be accounted for in the year which ‘they become
+receivable. :
+The company has provided an unlimited cross guarantee in respect of the banking facilities of ASD Lighting :
+Holdings Limited, ASD Lighting plc and RU Estates Limited. At 30 June 2025 there was a potential liability of
+Eni (2024: Enil).
+a
+. -21-
+ROTHERHAM UNITED FOOTBALL CLUB (RUFC) LIMITED a
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED) ;
+FOR THE YEAR ENDED 30 JUNE 2025.
+. 20 ‘Related party transactions
+, The directors. of the company. ‘are remunerated through ASD Management LLP (an LLP of which A R Stewart
+‘and R P Stewart are members) and ASD Lighting pic, a fellow subsidiary of ASD Lighting Holdings Limited.
+During the year the company received sponsorship and advertising income of £1,006,400 (2024: £1,006,400)
+from ASD Lighting pic. The company was charged £12,746 (2024: £12,746) for the provision of administrative
+. services by ASD Lighting. ple. -At-30 June 2025 included within creditors falling due within .one- year. is
+: : £9;467,811 (2024: £5,204,737) owed to ASD Lighting ple.
+mt During-the year the company was charged £1,000,000 (2024: £993,056) by RU Estates Limited, a company of
+- which A R Stewart-and R P Stewart are directors, for thé rent of assets.
+_ + Diiting the year the: company made'sales of £58,579 (2024: £54,228) to Rotherham United Community Sports
+. . Trust, a company-of which.K Thonias is a Trustee. . :
+. 21 Ultimate controlling party .
+ae AR Stewart is the- ultimate controlling party by virtue of his majority shafeholding in. ASD Lighting Holdings
+Limited, the parent company of Rothertiam, United Football Club (RUFC) Limited.
+1 . .
+. ASD Lighting Holdings Limited is registered in England and, Wales, accounts are available. from Companies.
+House, Crowri Way, Cardiff CF 14 3UZ. :
+1
 

@@ -2,7 +2,7 @@ source: Companies House filing, arsenal-fc__1.pdf
 document: Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc
 made_up_date: 2025-05-31
 method: ocr
-pages_read: 12 of 45
+pages_read: 45 of 45
 
 — \ ‘ ’ ,
 i
@@ -598,4 +598,1408 @@ offset projects, they must be : :
 monitored to avoid potential
 reputational damage.
 I
+ARSENAL HOLDINGS LIMITED
+STRATEGIC REPORT
+Risk Category Risk Title Risk Description Gross risk (before consideration of
+existing controls)
+ee
+Transitional | Reputational | Suppliers not | Risk of Arsenal’s major 3 Possible | 3 Moderate | Medium/
+Risk Risk aligned with suppliers not reducing their L
+sustainability | emissions which would ong
+: : goals impact our ability to achieve
+our Net Zero goals as one of
+the largest categories of
+: emissions in our baseline. ,
+Transitional | Reputational | Failure to Arsenal’s failure to show 3 Possible | 3 Moderate | Short/
+Risk Risk achieve progress towards our 2030 Medium
+publicly and 2040 reduction and Net ©
+disclosed Zero targets for both SBTi
+. targets and UN Sports Climate
+Action may result in
+reputational impact.
+Resilience of Strategy
+Physical risks such as extreme weather have the potential to impact the Club by disrupting operations - damaging
+assets, prohibiting attendances and events to proceed, increasing operational costs whilst adding financial and other
+burdens of recovery, repair and lost income. These events can also impact across our supply chains but can also create
+possible opportunities for greater active engagement of all parties in the Club’s pathway to Net Zero.
+Examples of initiatives already delivered to build resilience to climate risks include:
+e The Group maintains an appropriate level of business interruption insurance.
+e Installed additional metering in the Emirates stadium to better understand energy consumption and drive
+actions to reduce.
+e Identified assets in scope for decarbonisation across the Emirates stadium and started a process to assess asset
+health and expected lifespan to develop an asset replacement / upgrade schedule.
+e Renewed the agreement to supply 100% renewable energy to all sites in tine with the requirements of RE100.
+e Over 8,000 lights at Emirates stadium and Sobha Realty Training Centre have been upgraded to LED.
+¢ Continued tree-planting which now covers 49 acres, containing 52,000 trees, in Arsenal Forest (Bore,
+Kenya).
+e Provided sustainability training for all staff which was matched with training for over 600 local young people.
+e — Started works to upgrade Head Office, which will include replacing the existing heating and cooling system
+with a hybrid VRF system to reduce ongoing emissions.
+e Offered a 20% discount on train travel for fans traveling to a match against Liverpool at Anfield on 11" May
+2025, in partnership with Trainline as part of a pilot being run by the Premier League.
+¢ Continued to improve Scope 3 emissions data by engaging with top suppliers by spend.
+The Group considers it currently has sufficient resilience to manage its operations against the short term level of
+: climate risk. :
+Metrics & Targets
+Arsenal have committed to short and long term Net Zero targets that have been reviewed and approved by the Science
+Based Targets initiative (SBTi). Our targets are aligned with the most ambitious pathway to mitigate the worst impacts
+of climate change (1.5 degree pathway). This is a primary goal for our business as emissions reduction is an essential
+adjunct to our overall commercial strategy. .
+Our targets include Scope 3 impacts arising from the sale of our replica shirts by third party vendors, end of life
+disposal of goods and impacts from use of sold products.
+. 12
+ARSENAL HOLDINGS LIMITED
+STRATEGIC REPORT
+Metrics & Targets (continued)
+Short-term SBTi Targets
+Arsenal is committed to making significant strides in reducing our greenhouse gas (GHG) emissions over the next
+decade. Specifically, the Club aims to reduce absolute Scope | and 2 GHG emissions by 42% by the fiscal year 2030,
+using the fiscal year 2021 as the base year. Additionally, Arsenal commits to a 52% reduction in Scope 3 GHG
+emissions per million GBP revenue within the same timeframe.
+Long-term SBTi Targets
+Looking further ahead, we have set ambitious long-term targets to significantly cut our GHG emissions by 2040. The
+Club plans to reduce absolute scope | and 2 GHG emissions by 90% from the fiscal year 2021 baseline. Furthermore,
+there is a commitment to reduce scope 3 GHG emissions by 97% per million GBP revenue within the same period.
+Streamlined Energy and Carbon Reporting Disclosure (SECR)
+The SECR disclosure presents our carbon footprint within the United Kingdom for Scope 1, 2 and 3 emissions based
+on SECR Legislation, an appropriate intensity metric, the total energy use of electricity, gas and transport fuel and an
+energy efficiency actions summary taken during the financial year. Data collection and analysis has strictly followed
+the GHG Protocol Corporate Accounting and Reporting Standard (GHGP). UK Government’s 2023 emission factors,
+generated by DEFRA, have been used to quantify all emissions.
+It is not mandatory to report Scope 3 (indirect emissions from all other operational activity) under SECR, other than
+third-party vehicle impact. However, Arsenal have voluntarily included key Scope 3 emission categories, most
+significantly including fan travel.
+2025 GHG | 2024GHG 2025 GHG 2024 GHG % Change in
+Emissions Emissions | Emissions] Emissions Emissions
+(kWh) (kWh) (tCO2e) (tCO2e)
+9,340,272 | 8,058,854 _| 1,708.34 | 1,474.20
+Scone | 372,152 381,042 154.48 177.98
+Pe’ Fugitiveemissions [| |S dT 545 | 662.48
+Processemissions [| = TT
+PY cooling emissions
+(Purchases, downstream 462,293 290,007 25,469.40 | 16,817.15 +51%
+Scope 3 ransportation and
+oP distribution and other
+emissions
+25,473,328 | 23,006,022_| 30,954.68 | 22,088.03
+Arsenal emitted a total of 30,955 tonnes of CO2e for all scopes (including Scope 3 reporting which is not mandatory).
+Scope 3 accounted for 82.3% of the total emissions, Scope 2 for 10.2% and Scope | for 7.5%.
+Overall, approximately 26% of Arsenal ’s total emissions were generated based on estimation (8,006.69 tCO2e).
+Arsenal review data quality and aim to improve it year on year, focusing particularly on emissions categories with
+currently high levels of estimation.
+An example of known data quality improvement relates to franchise-related emissions. The accurate measurement of
+these emissions will be a key focus for data quality and coverage improvement for the club over the coming year. The
+inclusion of franchise-related emissions in 2026, as aforementioned, is expected to materially increase Arsenal’s
+overall emissions measurement and may lead to resetting the baseline and adjusting targets accordingly. It is a known
+feature of year-on-year emissions reporting that improvements to data collection and quality can, in the short-term,
+lead to emissions appearing to increase. However, gaining the most accurate profile of our emissions data facilitates
+the club in making real-world long-term reductions and positive impacts.
+13
+ARSENAL HOLDINGS LIMITED
+STRATEGIC REPORT
+As recommended by both the UEFA Emission Calculator and by SBTi, emissions from fans travelling to our matches,
+formerly included under Scope 3 Category 9, have been excluded from our targets and categorised as “Outside of
+Scope” in our emission analysis. However, we will continue measuring the impact of fan travel and implement
+measures to reduce it as much as possible.
+Two intensity metrics have been calculated for Arsenal’s emissions, based on full-time equivalent employees (FTE)
+and revenue.
+po FY24-25 FY23-24 " % Change
+Carbon Intensity per
+£m of revenue 44.80 35.82 +25%
+tCO2e/Revenue
+Carbon Intensity per 5
+FTE (tCO2e/FTE 35.54 26.93 +32%
+Baseline Year
+The Club has chosen to use financial year 2021-22 as its reporting baseline year.
+Energy Efficiency Actions
+Arsenal has implemented several measures to increase the energy efficiency of its operations. These include, but are
+not limited to, the following:
+
+e Further LED lighting replacements (8,000 lights were replaced with efficient LED altematives at the
+Emirates Stadium, where automated controls were also installed, and lighting within the Sohba Realty Media
+building was also upgraded to be fully LED with automated controls)
+
+e¢ Replacement of diesel leased vehicles with electric alternatives. :
+
+e Installation of more efficient covers to spa and ice pools at the Sohba Realty Training Centre.
+
+e — Installation of covers to valves and pipework in the Sohba Realty Training Centre plant rooms to reduce heat
+loss.
+
+In addition to these energy efficiency actions, Arsenal have also worked on initiatives to reduce waste, save water
+(e.g., water reuse system for pitch irrigation at Sohba Realty Training Centre), and to engage with fans and community
+to promote climate education and action (e.g., Islington Net Zero festival).
+Commercial Partners
+We have continued to develop our commercial partnerships and to deliver on our contractual commitments. This has
+involved creative use of players from our men’s and women’s teams and other assets through content creation designed
+to engage our fans globally and help our partners meet their objectives. :
+Suppliers
+The Club recognises the importance of its suppliers and has many longstanding contractual relationships in place. The
+Club monitors its payments to suppliers on a continual basis and seeks to ensure it complies with applicable contractual
+terms.
+
+14
+ARSENAL HOLDINGS LIMITED
+
+STRATEGIC REPORT ;
+
+Business Conduct
+
+The Group has appropriate policies in place to manage its obligations with regard to employment law and employee
+
+matters, environmental issues, anti-corruption / anti-bribery and social matters (including modem slavery and human
+
+rights), but does not consider that these are areas of significant strategic risk to its operations.
+
+The Group is committed to paying the right amount of taxes, in the right place, at the right time in accordance with
+: applicable tax laws and regulations. The tax contribution paid by the Group and by its players is substantial and
+
+transparent. :
+
+Future developments , :
+
+The 2025/26 season is ongoing and the Club has made a satisfactory start in all competitions — Premier League, the
+
+new format UEFA Champions League and Women’s Super League. During the summer 2025 transfer window Arsenal
+
+has again invested in the development of its Men’s and Women’s First Team playing resources. Off the field
+
+commercial! performance continues to be strong.
+
+Approved by the Board of Directors and signed on behalf of the Board.
+
+S. W. Wisely
+
+Company Secretary
+
+15 October 2025
+
+15
+. ARSENAL HOLDINGS LIMITED
+DIRECTORS’ REPORT
+The Directors present their annual report and the audited financial statements for the year ended 31 May 2025. ,
+Principal activities
+The principal activity of the Group is that of a professional football club playing in the Premier League. The Group
+is also engaged in a number of property developments.
+Profits and dividends
+The results for the year are set out on page 22. The Directors do not recommend the payment of a dividend for the
+year (2024 - ENil).
+Going concern
+The Group is reliant on its ultimate parent undertaking, KSE UK Inc., for its continued financial support (see note (1)
+(c)). The Group has received confirmation from KSE UK Inc. that sufficient funds will be provided to finance the
+business for a period of at least 12 months from the date of this report. The Directors have therefore continued to adopt
+the going concern basis in preparing the annual financial statements.
+Events after the Balance Sheet Date
+Details of significant events since the balance sheet date are included in note 26 to the financial statements.
+Future developments ;
+Details of future developments can be found in the Strategic Report. :
+Directors
+The Directors of the company, all of whom served throughout the year unless where stated otherwise, are set out
+below:
+E.S. Kroenke
+J.W. Kroenke
+T.J. Lewis (resigned 18 September 2025)
+Lord Harris of Peckham
+Directors’ Indemnities
+The Group has made qualifying third party indemnity provisions for the benefit of its Directors, which were made
+during the year and remain in force at the date of this report.
+Statements on Employee Engagement
+Employee Consultation
+Within the bounds of commercial confidentiality, the Directors endeavour to keep staff at all levels informed of matters ,
+. that affect the progress of the Group and are of interest to them as employees. The Group has multiple staff working
+groups which meet on a regular basis, with representation from across the Club, ensuring that staff are consulted
+regularly on a wide range of matters which affect their current and future interests. The Group regularly surveys its
+people via standard engagement surveys, putting in action plans based on employee feedback. .
+. Equality, Diversity and Inclusion
+The Group’s aim is to ensure that equality, diversity and inclusion is at the heart of Arsenal as a priority. This objective
+is pursued under the banner of Arsenal Acts, our overarching ESG strategy. We endeavour to ensure that everyone
+associated with the Club — employees, supporters, local community and the wider Arsenal family - feels an equal
+sense of belonging and can interact with the Club in a manner which is equitable and free from any form of
+discrimination. .
+. 16
+ARSENAL HOLDINGS LIMITED
+: DIRECTORS’ REPORT
+
+Employees with a disability
+
+: The Club has been registered as a Disability Confident employer since November 2017 and therefore offers a
+guaranteed interview to any candidate with a disability and meets minimum selection standards for any vacancy,
+where this has been requested. Candidates with a disability are given full and fair consideration for all types of vacancy
+in as much as the opportunities available are constrained by the practical limitations of the disability. Should; for
+whatever reason, an employee of the Group become disabled whilst in employment, every step, where appropriate
+will be taken to assist with rehabilitation and suitable retraining. It is Group policy that the training, career
+development and promotion of disabled persons should, as far as possible, be identical to that of other employees.
+
+, - Matters included in the Strategic Report
+In accordance with the s414(c)(ii) of the Companies Act included in the Strategic Report is information relating to
+carbon emissions, business relationships, financial risk management and future developments which would otherwise
+be required to be contained in the Directors’ Report.
+Auditor
+In the case of each of the persons who are Directors of the Company at the date when this report was approved:
+e So far as each of the Directors is aware, there is no relevant audit information of which the Company’s auditor is
+unaware; and .
+e Each of the Directors has taken all the steps that he ought to have taken as a Director to make himself aware of
+any relevant audit information and to establish that the Company’s auditor is aware of that information.
+This confirmation is given and should be interpreted in accordance with the provisions of s418 of the Companies Act
+2006.
+The auditor, Deloitte LLP, is deemed to be reappointed pursuant to Section 487 of the Companies Act 2006.
+Approved by the Board of Directors and signed on behalf of the Board.
+S. W. Wisely
+Company Secretary
+15 October 2025
+Registered office:
+Highbury House
+75 Drayton Park
+London
+NS5 1BU :
+. 17
+ARSENAL HOLDINGS LIMITED
+DIRECTORS’ RESPONSIBILITIES STATEMENT
+The Directors are responsible for preparing the Annual Report and the financial statements in accordance with
+applicable law and regulations. Company law requires the Directors to prepare financial statements for each financial
+year. Under that law the Directors have elected to prepare the financial statements in accordance with United Kingdom
+Generally Accepted Accounting Practice (United Kingdom Accounting Standards and applicable law), including FRS
+102 “The Financial Reporting Standard applicable in the UK and Republic of Ireland”. Under company law the
+Directors must not approve the financial statements unless they are satisfied that they give a true and fair view of the
+state of affairs of the Company and of the profit or loss of the Company for that period. In preparing these financial
+statements, the Directors are required to:
+e — select suitable accounting policies and then apply them consistently;
+¢ make judgements and accounting estimates that are reasonable and prudent;
+e state whether applicable UK Accounting Standards have been followed, subject to any material departures
+disclosed and explained in the financial statements; and
+e prepare the financial statements on the going concem basis unless it is inappropriate to presume that the
+Company will continue in business.
+
+: The Directors are responsible for keeping adequate accounting records that are sufficient to show and explain the
+Company’s transactions and disclose with reasonable accuracy at any time the financial position of the Company and
+the Group and enable them to ensure that the financial statements comply with the Companies Act 2006. They are
+also responsible for safeguarding the assets of the Company and the Group and hence for taking reasonable steps for
+the prevention and detection of fraud and other irregularities.
+
+The Directors are responsible for the maintenance and integrity of the corporate and financial information included
+on the Group’s website. Legislation in the United Kingdom governing the preparation and dissemination of financial
+statements may differ from legislation in other jurisdictions.
+
+: 18
+ARSENAL HOLDINGS LIMITED
+INDEPENDENT AUDITOR'S REPORT TO THE MEMBERS OF ARSENAL HOLDINGS
+LIMITED
+Report on the audit of the financial statements
+Opinion .
+In our opinion the financial statements of Arsenal Holdings Limited (the ‘parent company’) and its subsidiaries (the
+‘group’):
+e give a true and fair view of the state of the group’s and of the parent company’s affairs as at 31 May 2025
+and of the group’s loss for the year then ended;
+© have been properly prepared in accordance with United Kingdom Generally Accepted Accounting Practice,
+including Financial Reporting Standard 102 “The Financial Reporting Standard applicable in the UK and
+Republic of Ireland”; and
+e have been prepared in accordance with the requirements of the Companies Act 2006.
+We have audited the financial statements which comprise:
+e — the consolidated profit and loss account,
+« the consolidated statement of comprehensive income; :
+e the balance sheet;
+e the statement of changes in equity; ‘
+e the consolidated cash flow statement; and
+e the related notes to the accounts 1 to 27.
+The financial reporting framework that has been applied in their preparation is applicable law and United Kingdom
+Accounting Standards, including Financial Reporting Standard 102 “The Financial Reporting Standard applicable in
+the UK and Republic of Ireland” (United Kingdom Generally Accepted Accounting Practice).
+Basis for opinion
+We conducted our audit in accordance with International Standards on Auditing (UK) (ISAs (UK)) and applicable law.
+Our responsibilities under those standards are further described in the auditor's responsibilities for the audit of the
+financial statements section of our report.
+We are independent of the group and the parent company in accordance with the ethical requirements that are relevant
+to our audit of the financial statements in the UK, including the Financial Reporting Council’s (the ‘FRC’s’) Ethical
+Standard, and we have fulfilled our other ethical responsibilities in accordance with these requirements. We believe
+that the audit evidence we have obtained is sufficient and appropriate to provide a basis for our opinion.
+Conclusions relating to going concern
+In auditing the financial statements, we have concluded that the directors’ use of the going concern basis of accounting
+in the preparation of the financial statements is appropriate.
+Based on the work we have performed, we have not identified any material uncertainties relating to events or conditions
+that, individually or collectively, may cast significant doubt on the group’s and parent company’s ability to continue
+as a going concern for a period of at least twelve months from when the financial statements are authorised for issue.
+Our responsibilities and the responsibilities of the directors with respect to going concem are described in the relevant
+sections of this report.
+Other information
+The other information comprises the information included in the annual report, other than the financial statements and
+our auditor’s report thereon. The directors are responsible for the other information contained within the annual report.
+Our opinion on the financial statements does not cover the other information and, except to the extent otherwise
+explicitly stated in our report, we do not express any form of assurance conclusion thereon.
+Our responsibility is to read the other information and, in doing so, consider whether the other information is materially
+inconsistent with the financial statements or our knowledge obtained in the course of the audit, or otherwise appears
+to be materially misstated. If we identify such material inconsistencies or apparent material misstatements, we are
+required to determine whether this gives rise to a material misstatement in the financial statements themselves. If,
+based on the work we have performed, we conclude that there is a material misstatement of this other information, we
+are required to report that fact.
+We have nothing to report in this regard.
+19
+ARSENAL HOLDINGS LIMITED
+
+INDEPENDENT AUDITOR'S REPORT TO THE MEMBERS OF ARSENAL HOLDINGS
+
+LIMITED (continued) :
+
+Responsibilities of directors
+
+As explained more fully in the directors’ responsibilities statement, the directors are responsible for the preparation of
+
+the financial statements and for being satisfied that they give a true and fair view, and for such internal control as the
+
+directors determine is necessary to enable the preparation of financial statements that are free from material
+misstatement, whether due to fraud or error.
+
+In preparing the financial statements, the directors are responsible for assessing the group’s and the parent company’s
+
+ability to continue as a going concer, disclosing, as applicable, matters related to going concern and using the going
+
+concern basis of accounting unless the directors either intend to liquidate the group or the parent company or to cease
+
+: operations, or have no realistic alternative but to do so. .
+
+Auditor’s responsibilities for the audit of the financial statements
+
+Our objectives are to obtain reasonable assurance about whether the financial statements as a whole are free from
+
+material misstatement, whether due to fraud or error, and to issue an auditor's report that includes our opinion.
+
+Reasonable assurance is a high level of assurance, but is not a guarantee that an audit conducted in accordance with
+
+ISAs (UK) will always detect a material misstatement when it exists. Misstatements can arise from fraud or error and
+
+are considered material if, individually or in the aggregate, they could reasonably be expected to influence the
+
+economic decisions of users taken on the basis of these financial statements.
+
+A further description of our responsibilities for the audit of the financial statements is located on the FRC’s website
+
+at: www. frc.org.uk/auditorsresponsibilities. This description forms part of our auditor’s report.
+
+Extent to which the audit was considered capable of detecting irregularities, including fraud
+
+Irregularities, including fraud, are instances of non-compliance with laws and regulations. We design procedures in
+
+line with our responsibilities, outlined above, to detect material misstatements in respect of irregularities, including
+
+fraud. The extent to which our procedures are capable of detecting irregularities, including fraud is detailed below.
+
+We considered the nature of the group’s industry and its control environment, and reviewed the group’s documentation
+
+of their policies and procedures relating to fraud and compliance with laws and regulations.
+
+We also enquired of management and the directors about their own identification and assessment of the risks of
+
+irregularities, including those that are specific to the group’s business sector.
+
+We obtained an understanding of the legal and regulatory frameworks that the group operates in, and identified the
+
+key laws and regulations that:
+
+e hada direct effect on the determination of material amounts and disclosures in the financial statements. These
+included UK Companies Act, pensions legislation, tax legislation; and
+
+e do not have a direct effect on the financial statements but compliance with which may be fundamental to the
+group’s ability to operate or to avoid a material penalty. These included FA, Premier League, UEFA and
+FIFA regulations, FA Third Party Interest in Player Regulations, employment legislation, GDPR and health
+& safety legislation.
+
+We discussed among the audit engagement team regarding the opportunities and incentives that may exist within the
+
+organisation for fraud and how and where fraud might occur in the financial statements.
+
+As a result of performing the above, we identified the greatest potential for fraud in the following area, and our
+
+procedures performed to address it are described below:
+
+e The carrying amounts of player-related intangible assets may be misstated due to unrecognised impairments or
+inappropriate judgements around contingent payments: To address this risk we challenged the estimates and
+assumptions used in management’s impairment review and contingent payment assessment, reviewed their
+modelling of these estimates and their assumptions for consistency with internal and external data sources,
+
+. considered sales post-year end against the player carrying values and considered any players who sit outside the
+main squad, such as through career-threatening injury.
+20
+ARSENAL HOLDINGS LIMITED
+INDEPENDENT AUDITOR'S REPORT TO THE MEMBERS OF ARSENAL HOLDINGS
+LIMITED (continued)
+In common with all audits under ISAs (UK), we are also required to perform specific procedures to respond to the risk
+of management override. In addressing the risk of fraud through management override of controls, we tested the
+appropriateness of journal entries and other adjustments; assessed whether the judgements made in making accounting
+estimates are indicative of a potential bias; and evaluated the business rationale of any significant transactions that are
+unusual or outside the normal course of business.
+In addition to the above, our procedures to respond to the risks identified included the following:
+e reviewing financial statement disclosures by testing to supporting documentation to assess compliance with
+provisions of relevant laws and regulations described as having a direct effect on the financial statements;
+e performing analytical procedures to identify any unusual or unexpected relationships that may indicate risks
+of material misstatement due to fraud;
+: e enquiring of management and external legal counsel concerning actual and potential litigation and claims,
+. and instances of non-compliance with laws and regulations; and
+e reading minutes of meetings of those charged with governance.
+Report on other legal and regulatory requirements
+Opinions on other matters prescribed by the Companies Act 2006
+In our opinion, based on the work undertaken in the course of the audit:
+e the information given in the strategic report and the directors’ report for the financial year for which the
+financial statements are prepared is consistent with the financial statements; and
+e the strategic report and the directors’ report have been prepared in accordance with applicable legal
+requirements.
+
+: In the light of the knowledge and understanding of the group and of the parent company and their environment obtained
+in the course of the audit, we have not identified any material misstatements in the strategic report or the directors’
+report. .
+
+Matters on which we are required to report by exception
+Under the Companies Act 2006 we are required to report in respect of the following matters if, in our opinion:
+
+e adequate accounting records have not been kept by the parent company, or returns adequate for our audit
+
+have not been received from branches not visited by us; or
+
+e the parent company financial statements are not in agreement with the accounting records and retums; or
+
+e certain disclosures of directors’ remuneration specified by law are not made; or
+
+ewe have not received all the information and explanations we require for our audit.
+We have nothing to report in respect of these matters.
+Use ofour report ~
+This report is made solely to the company’s members, as a body, in accordance with Chapter 3 of Part 16 of the
+Companies Act 2006. Our audit work has been undertaken so that we might state to the company’s members those
+matters we are required to state to them in an auditor’s report and for no other purpose. To the fullest extent permitted
+by law, we do not accept or assume responsibility to anyone other than the company and the company’s members as a
+body, for our audit work, for this report, or for the opinions we have formed.
+EE A
+Rob Knight FCA (Senior statutory auditor)
+For and on behalf of Deloitte LLP
+Statutory Auditor
+London, United Kingdom .
+15 October 2025
+
+21
+ARSENAL HOLDINGS LIMITED
+CONSOLIDATED PROFIT AND LOSS ACCOUNT
+For the year ended 31 May 2025 :
+; 2025 2024
+. Operations Operations
+excluding excluding
+player Player player Player
+trading trading Total trading trading Total
+Note £7000 £000 £7000 £000 £'000 £000
+Turnover of the Group including its share of
+joint ventures 691,572 454 692,026 615,793 1,374 617,167
+Share of tumover of joint venture (1,028) - + (1,028) (587) - (587)
+Group turnover 3 690,544 454 690,998 615,206 1,374 616,580
+Operating expenses 4 (567,338) (186,868) (754,206) (493,875) (171,099) (664,974)
+Operating profit/(loss) 123,206 (186,414) (63,208) 121,331 (169,725) (48,394)
+Share of joint venture operating loss . (1,690) - (1,690) (1,934) _ (1,934) .
+Profit on disposal of player registrations - 81,237 81,237 - 51,073 51,073
+Profit/(loss) before net finance charges 121,516 (105,177) 16,339 119,397 (118,652) 745
+Net finance charges 5 (17,687) (18,432)
+(Loss) before taxation (1,348) (17,687)
+Tax on loss 8 (29) . -
+(Loss) for the financial year (1,377) (17,687)
+Player trading consists primarily of loan fees receivable, the amortisation of the costs of acquiring player registrations,
+any impairment charges and profit on disposal of player registrations.
+All trading resulted from continuing operations.
+CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME :
+For the year ended 31 May 2025
+2025 2024
+. £000 £7000
+Loss after taxation (1,377) (17,687)
+Exchange differences (10) ()
+Total comprehensive expense (1,387) (17,688)
+22
+ARSENAL HOLDINGS LIMITED
+BALANCE SHEET
+As at 31 May 2025 ;
+. Group Company.
+2025 2024 2025 2024
+Note £000 £7000 £000 £000
+Fixed assets ;
+Tangible assets 9 387,801 388,874 - -
+Intangible assets 10 399,008 486,643 - -
+Investments at - - — 30,059 30,059
+786,809 875,517 30,059 30,059
+Current assets
+Stock - development properties 12 8,208 7,355 - -
+Stock - retail merchandise 15,476 11,546 - - .
+Debtors - due within one year 13 114,633 71,314 137,360 136,924
+- due after one year 13 48,382 17,046 - -
+, Cash at bank and in hand 14 55,994 66,819 31 30
+242,693 174,080 137,391 136,954
+Creditors: amounts falling due
+within one year 15 (402,591) (418,041) (1,957) (1,816)
+Net current (liabilities)/assets (159,898) (243,961) 135,434 135,138
+Total assets less current liabilities 626,911 631,556 165,493 165,197
+Creditors: amounts falling due after
+more than one year 16 (442,506) (455,772) (18,171) (17,677)
+Provisions for liabilities 19 (57,940) (47,932) - -
+Net assets 126,465 127,852 147,322 147,520
+Capital and reserves
+Called up share capital 20 62 62 62 62
+Share premium account 29,997 29,997 29,997 29,997
+Capita! contribution 5,369 5,369 - -
+Merger reserve 26,699 26,699 - -
+Profit and loss account 64,338 65,725 117,263 117,461
+Shareholders’ funds 126,465 127,852 - 147,322 147,520
+The loss for the financial year dealt with in the financial statements of the Group’s parent company, Arsenal Holdings
+Limited, was £198,000 (2024 — toss of £60,000).
+These financial statements of Arsenal Holdings Limited (registered number 4250459) were approved and authorised
+for issue by the Board of Directors on 15 October 2025.
+Signed on behalf of the Board of Directors
+Lord Harris of Peckham
+Director :
+23
+ARSENAL HOLDINGS LIMITED
+STATEMENT OF CHANGES IN EQUITY :
+; For the year ended 31 May 2025
+; Share Capital Share Merger Profit
+Capital C’tribution Premium Reserve and Loss Total
+Group £7000 £7000 £000 = £7000 £000 £7000
+At | June 2023 62 5,369 29,997 26,699 83,413 145.540
+Total comprehensive expense for year
+ended 31 May 2024 - - - - (17,688) (17,688)
+: At 31 May 2024 . 62 5,369 29,997 26,699 65,725 127,852
+Total comprehensive expense for the year
+ended 31 May 2025 - - - - (1,387) (1,387)
+As at 31 May 2025 , 62 5,369 29,997 26,699 64,338 126,465
+Share Share Profit
+Capital Premium and Loss Total
+Company . £7000 £000 £7000 £7000
+At | June 2023 62 29,997 117,521 147,580
+Total comprehensive expense for year .
+ended 31 May 2024 . - - (60) (60)
+At 31 May 2024 . 62 29,997 117,461 147,520
+Total comprehensive expense for the year
+ended 31 May 2025 - - (198) (198)
+As at 31 May 2025 62 29,997 117,263 147,322 :
+: : 24
+ARSENAL HOLDINGS LIMITED ; .
+CONSOLIDATED CASH FLOW STATEMENT
+For the year ended 31 May 2025
+. 2025 2024
+Note £7000 £7000
+Net cash inflow from operating activities 2la 147,937 176,057
+Taxation received/(paid) - -
+. Cash flow from investing activities .
+Interest received 358 298
+Proceeds from sale of fixed assets 19 -
+Purchase of fixed assets (18,427) (12,687)
+Player registrations 2Ic (143,030) (193,394)
+"Net cash flow from investing activities (161,080) (205,783)
+Cash flow from financing activities
+Finance charges paid (11,203) (8,115)
+New debt issued 32,500 80,000
+Repayment of debt (18,979) (18,109)
+Net cash flow from financing activities 2,318 53,776
+(Decrease)/Increase in cash and cash equivalents (10,825) 24,050
+Cash and cash equivalents at start of year 66,819 42,769
+Cash and cash equivalents at end of year 14 55,994 66,819
+25 .
+ARSENAL HOLDINGS LIMITED
+NOTES TO THE ACCOUNTS
+For the year ended 31 May 2025
+1. Accounting policies
+The principal accounting policies are summarised below. They have all been applied consistently throughout
+the year and to the preceding year.
+(a) | General information and basis of accounting
+Arsenal Holdings Limited is a private company limited by shares, incorporated in the UK, and registered
+in England and Wales under the Companies Act. The address of the registered office is given on page
+1. The nature of the Group’s operations and its principal activities are set out in the strategic report on
+pages 2 to 9.
+The financial statements have been prepared under the historical cost convention, modified to include
+certain items at fair value, and in accordance with Financial Reporting Standard 102 (FRS 102) issued
+by the Financial Reporting Council. —
+The functional currency of Arsenal Holdings Limited is considered to be pounds sterling because that
+is the currency of the primary economic environment in which the Group operates. The consolidated
+financial statements are presented in pounds sterling. Foreign operations are included in accordance
+with the policies set out below.
+(b) Basis of preparation of Group financial statements
+The Group financial statements consolidate the assets, liabilities and results of the Company and its
+subsidiary undertakings made up to 31 May 2025. All intra-group transactions, balances, incomes and :
+expenses are eliminated on consolidation.
+As permitted by Section 408 of the Companies Act 2006 the profit and loss account of the parent
+company is not presented as part of these financial statements. The parent company is exempt from the
+requirement to prepare a cash flow statement.
+(c) Going concern
+The Directors have recently undertaken a thorough review of the Group’s financial projections, budgets
+and forecasts. This financial assessment takes into account prudent assumptions with regard to on-field
+performance, the Club’s key revenue streams, operating costs and cash-flows. The Group’s financial
+: projections also take account of reasonably possible changes in trading performance. The financial
+projections have been stress tested to ensure that the financial position remains robust in reasonable
+worst case scenarios. The Directors have also considered a number of actions that they could take in .
+order to further mitigate any potential adverse circumstances.
+The Group currently meets its day to day working capital requirements through a combination of its
+. own financial resources, which include a loan from its ultimate parent company and bank facilities. The
+Group is reliant on the continued financial support of its ultimate parent company, KSE UK Inc., which
+has provided loans to enable the refinancing and to support working capital requirements as they arise.
+KSE UK Inc. has confirmed that its financial support will continue for a period of at least 12 months
+from the date of this report.
+The Group’s bank facilities are due for renewal by October 2025 and the Group has held discussions
+with its bankers about these facilities and no matters have been drawn to its attention to suggest that
+renewal may not be forthcoming on acceptable terms.
+The Directors have given careful consideration to the sufficiency of the financial resources which have
+been confirmed as available to the Group through loan funding from its ultimate parent company, both
+now and as required to finance the business for the foreseeable future. On this basis the Directors have
+a reasonable expectation that the Group and the Company will have adequate financial resources and,
+accordingly, they continue to adopt the going concer basis in preparing the annual financial statements.
+26
+ARSENAL HOLDINGS LIMITED
+
+NOTES TO THE ACCOUNTS
+
+For the year ended 31 May 2025
+
+1. Accounting policies (continued)
+
+(d) Joint venture and subsidiary undertakings
+The joint venture is an undertaking in which the Group holds an interest on a long-term basis and which
+is jointly controlled by the Group, which holds 50% of the voting rights, and KSE UK Inc. under a
+contractual arrangement.
+The Group’s share of the results of the joint venture are included in the consolidated profit and loss
+account. The Group’s share of the results and net assets of the joint venture is included under the gross
+equity method and stated after adjustment to eliminate the Group’s share of profits resulting from
+transactions between the Group and the joint venture which are included in the carrying amount of assets
+reported in the joint venture’s balance sheet. Investments in subsidiary undertakings are included in the
+Company’s financial statements at cost less provisions for impairment. Intercompany accounts between
+the Company and its subsidiaries are repayable on demand and interest free. Intercompany accounts
+between the Group and its joint venture are repayable on demand and interest free.
+(e) Turnover and income recognition :
+
+Turnover represents income receivable, net of VAT, from football and related commercial activities and ;
+income from the sale of development properties completed in the year. The Group has two classes of
+business - the principal activity of operating a professional football club and property development -
+both businesses are carried out principally within the United Kingdom.
+Gate, match and other event day revenue is recognised over the period of the football season as games
+are played and events are staged. Sponsorship and similar commercial income is recognised over the
+duration of the respective contracts. The fixed element of broadcasting revenues is recognised over the
+duration of the football season whilst facility fees for tive coverage or highlights are taken when earned
+at the point of broadcast. Merit awards have been accounted for based on the known amount at the end
+of the season pro-rated for games played to the balance sheet date. UEFA pool distributions relating to
+participation in the Champions League are spread over the matches played in the competition whilst
+distributions relating to match performance are taken when earned; these distributions are classified as
+broadcasting revenues. Fees receivable in respect of the loan of players are included in tumover (as
+player trading income) over the period of the loan. :
+Turnover is recognised in respect of barter transactions only where services are exchanged for dissimilar
+services and the transaction is deemed to have commercial substance. Such transactions are measured
+at the fair value of the services received, adjusted by any amount of cash and cash equivalents
+transferred.
+
+: Income from the sale of development properties is recognised on completion of the relevant sale
+contract. Where elements of the sale price are subject to retentions by the purchaser the retained element
+of the sale price is not recognised until such time as all of the conditions relating to the retention have
+been satisfied.
+
+(f) Depreciation
+Tangible fixed assets are stated at cost, net of depreciation and any provision for impairment.
+Depreciation is calculated to reduce the carrying value of buildings, plant, equipment and motor vehicles
+to the anticipated residual value of the assets concerned in equal annual instalments over their estimated
+useful lives as follows:
+Freehold buildings and improvements 2% to 10% per annum
+Leasehold properties over the period of the lease
+Plant and equipment 5% to 25% per annum
+Freehold land is not depreciated.
+(g) Finance costs
+Finance costs of debt are recognised in the profit and loss account over the term of the debt using the
+effective interest method.
+27
+ARSENAL HOLDINGS LIMITED.
+NOTES TO THE ACCOUNTS
+; For the year ended 31 May 2025
+1. Accounting policies (continued)
+(g) Finance costs (continued)
+Any non-current assets, e.g. player registrations, acquired on deferred terms are recorded at the
+discounted present value at the date of acquisition. The associated payable is then increased to the
+settlement value over the period of deferral, with this value being charged as a notional finance cost
+through the profit and loss account. :
+Similarly any intangible asset disposed of on deferred terms will be initially recorded at the discounted
+present value of future receipts and the receivable is then increased to the settlement value over the .
+period of deferral with this value being charged as notional finance income through the profit and loss
+account.
+(h) Financial instruments
+Financial assets and financial liabilities are recognised when the Group becomes a party to the :
+contractual provisions of the instrument and are classified according to the substance of the contractual
+arrangements entered into.
+i. Loans from parent undertaking
+Loans from the Group’s parent undertaking are recorded at their fair value based on the expected net
+present value of future cashflows and using a market rate of interest as an appropriate discount factor.
+Where the actual rate of interest applicable to the loan is below market rate the excess of cash received
+over the fair accounting value of the loan is booked as a capital contribution within Equity Capital and
+Reserves.
+ii. Financial liabilities .
+Basic financial instruments (including the C and D debentures) are measured at amortised cost, using
+the effective interest method. The effective interest rate is the rate which exactly discounts the estimated
+future payments of receipts over the life of the instrument to its carrying amount at initial recognition,
+re-estimated periodically to reflect changes in the market rate of interest.
+Non basic financial instruments (including the A and B debentures) are recognised at fair value, and
+measured at the present value of the future payments, discounted at a market rate of interest. Any
+periodic changes in fair value are recognised in the profit and loss account.
+Financial liabilities are derecognised only when the obligation specified in the contract is discharged,
+cancelled or expires.
+ui. Derivative financial instruments
+The Group uses derivative financial instruments mainly to reduce its exposure to foreign exchange risk.
+The Group does not hold or issue derivative financial instruments for speculative purposes.
+Derivatives are initially recognised at fair value at the date a derivative contract is entered into and are
+subsequently remeasured to their fair value at each reporting date. The resulting gain or loss is
+recognised in profit or loss immediately unless the derivative is designated and effective as a hedging
+instrument, in which event the timing of the recognition in profit or loss depends on the nature of the
+hedge relationship. .
+(i) Stock .
+Stock comprises retail merchandise and development property for onward sale and is stated at the lower
+of cost and net realisable value.
+Where properties which are intended to be sold have been acquired they have been included in stock as
+development properties. Development property comprises freehold land inclusive of the direct cost of
+acquisition and other directly attributable property development costs including interest costs.
+G) Grants
+Grants received in respect of tangible fixed assets are credited to the profit and loss account over the
+expected useful economic lives of the assets to which they relate. Grants received but not yet released
+to the profit and loss account are included in the balance sheet as deferred income.
+28
+ARSENAL HOLDINGS LIMITED
+NOTES TO THE ACCOUNTS
+For the year ended 31 May 2025
+
+1. Accounting policies (continued)
+
+Gj) Grants (continued) :
+Other grants are credited to the profit and loss account as the related expenditure is incurred.
+
+(k) Player costs :
+The costs associated with acquiring players’ registrations or extending their contracts, including agents’
+fees, are capitalised and amortised, in equal instalments, over the period of the respective
+players’ contracts. Where a contract life is renegotiated the unamortised costs, together with the new
+costs relating to the contract extension, are amortised over the term of the new contract. Where the
+acquisition of a player registration involves a non-cash consideration, such as an exchange for another
+player registration, the transaction is accounted for using an estimate of the market value for the non-
+cash consideration.
+
+Under the conditions of certain transfer agreements or contract renegotiations, further fees will be
+payable in the event of the players concerned making a certain number of First Team appearances or on
+the occurrence of certain other specified future events. Liabilities in respect of these additional fees are
+accounted for, as provisions, when it becomes probable that the number of appearances will be achieved
+or the specified future events will occur. The additional costs are capitalised and amortised as set out
+above.
+
+Profits or losses on the sale of players represent the transfer fee receivable, net of any transaction costs,
+less the unamortised cost of the applicable player’s registration.
+
+Remuneration of players is charged in accordance with the terms of the applicable contractual
+arrangements and any discretionary bonuses when there is a legal or constructive obligation.
+
+(lt) Impairment ;
+
+The Group will perform an impairment review on player registrations if adverse events indicate that the
+amortised carrying value of its intangible assets may not be recoverable. Whilst no individual player
+can be separated from the cash generating unit, which is represented by the playing squad and the
+football operations of the Group as a whole, there may be certain circumstances where a player is taken
+. out of the cash generating unit. Such circumstances might include a player being excluded from the
+playing squad due to sustaining a career threatening injury or where a permanent fall out with senior
+football management means it is highly unlikely a particular player will ever play for the club again. If
+such circumstances were to arise and be considered permanent, then the carrying value of the player
+would be assessed against the Group’s best estimate of the player’s fair value less any costs to sell and,
+if necessary, a provision would be made.
+
+The Group’s assessment of fair value will be based on:-
+
+- @ in the case of a player who has suffered a career threatening injury, the value attributed by the
+Group’s insurers; or :
+
+e in the case of a player who has fallen out with senior football management, either the agreed
+selling price in the event the player has been transferred since the year end or, if the player has
+not been sold, the Group’s best estimation of disposal value taking into account recent player
+disposals by both the Group and other clubs.
+
+(m) Provisions
+Provisions are recognised when the Group has a present obligation (legal or constructive) as a result of
+a past event, it is probable that the Group will be required to settle that obligation and a reliable estimate
+can be made of the amount of the obligation.
+
+The amount recognised as a provision is the best estimate of the consideration required to settle the
+present obligation at the balance sheet date, taking into account the risks and uncertainties surrounding
+the obligation.
+
+(n) Foreign currencies
+Transactions denominated in foreign currencies are translated at the exchange rate at the date of the
+transaction. Foreign currency denominated assets and liabilities held at the year end are translated at
+year-end exchange rates. Exchange gains or losses are dealt with in the profit and loss account.
+
+29
+ARSENAL HOLDINGS LIMITED
+NOTES TO THE ACCOUNTS
+For the year ended 31 May 2025
+1. Accounting policies (continued)
+(n) _ Foreign currencies (continued)
+The results of overseas operations are translated at the average rates of exchange during the period and
+their balance sheets at the rate ruling at the balance sheet date. Exchange differences arising on
+translation of the opening net assets and results of overseas operations are reported in other
+‘comprehensive income. :
+(o) Deferred income
+. Deferred income represents income from sponsorship agreements and other contractual agreements ~
+which will be credited to the profit and loss account over the period of the agreements, season ticket
+renewals for the 2025/26 season and advance income from executive boxes and Club Tier seats at
+Emirates Stadium.
+(p) Leases
+Rentats payable under operating leases are charged to the profit and loss account evenly over the lease
+period. _
+(q) Pensions
+The Group. makes contributions on behalf of employees and directors to a number of independently
+. controlled defined contribution and money purchase schemes including The Football League Pension
+and Life Assurance Scheme (the “Scheme”). Contributions are charged to the profit and loss account
+over the period to which they relate.
+In addition the Group is making contributions in respect of its share of the deficit of the defined benefit
+section of The Football League Pension and Life Assurance Scheme (the “Scheme”). A provision has
+been established for the Group’s share of the deficit which exists in this section of the Scheme and this
+additional contribution is being charged to the profit and loss account over the remaining service life of
+those Arsena! employees who are members of the Scheme. The amount attributable to employees who
+have already retired or who have left the Group has been charged to the profit and loss account.
+Under the provisions of FRS 102 Section 28 the Scheme would be treated as a defined benefit multi-
+employer scheme. The Scheme’s actuary has advised that the participating employers’ share of the
+underlying assets and liabilities cannot be identified on a reasonable and consistent basis and
+accordingly no disclosures are made under the provisions of FRS 102 Section 28.
+The assets of all schemes are held in funds independent from the Group.
+(r) Taxation
+Current tax, including UK corporation tax is provided at amounts expected to be paid (or recovered)
+using the tax rates and laws that have been enacted or substantively enacted by the balance sheet date.
+Deferred tax is recognised in respect of all timing differences that have originated but not reversed at
+the balance sheet date where transactions or events that result in an obligation to pay more tax in the
+future or a right to pay less tax in the future have occurred at the balance sheet date. Timing differences
+are differences between the Group’s taxable profits and its results as stated in the financial statements
+that arise from the inclusion of gains and losses in tax assessments in periods different from those in
+which they are recognised in the financial statements.
+Deferred tax is measured at the average tax rates that are expected to apply in the periods in which the
+timing differences are expected to reverse, based on tax rates and laws that have been enacted or sub-
+- stantively enacted by the balance sheet date. Deferred tax is measured on a non-discounted basis.
+A deferred tax asset is recognised only when, on the basis of available evidence, it can be regarded as
+more likely than not that the reversal of underlying timing differences will result in a reduction in future
+tax payments.
+30
+ARSENAL HOLDINGS LIMITED
+NOTES TO THE ACCOUNTS ;
+: For the year ended 31 May 2025 ;
+1. Accounting policies (continued) : ;
+Critical accounting judgements and estimates
+In the application of the Group’s accounting policies, which are described above, the directors are required to
+make judgements, estimates and assumptions about the carrying amounts of certain assets and liabilities. The
+estimates and associated assumptions are based on historical experience and other factors that are considered
+to be relevant. Actual results may differ from these estimates. The estimates and underlying assumptions are
+reviewed on an ongoing basis.
+Critical judgements in applying the Group’s Accounting Policies
+There were no critical judgements apart from those involving estimations, which are dealt with separately
+below, which the directors have made in the process of applying the Group’s accounting policies and which
+- would have a significant effect on the amounts recognised in the financial statements.
+Key sources of estimation uncertainty
+Provisions and contingent liabilities for player transactions
+Creditors and provisions contain allowances for certain contingent amounts payable to players and to other
+clubs based on management’s best estimate of certain future events, such as the number of player appearances,
+and the amount that will become payable as a result. Actual future costs may differ from the amounts provided.
+Claim in respect of historic property developments
+A subsidiary company is monitoring certain historic property matters to determine the basis and quantum of
+any responsibility. A provision has been made for the estimated liability based on the information available
+(which is incomplete) and expert professional and legal advice. Further disclosure has not been provided under
+the exemption provided by FRS 102.21.17.
+2. Exceptional Items
+Included in the results for the period are the following items which are classed as exceptional.
+. 2025 2024
+£000 £7000.
+Impairment of player registrations 15,241 -
+The exceptional impairment loss reflected the write down of certain intangible assets — player registrations —
+to the value realised on their disposal subsequent to the balance sheet date.
+3. Group turnover
+2025 2024
+Turmover, all of which originates in the UK, comprises the following: £7000 £7000
+. Gate and other match day revenues . 153,854 131,652
+Broadcasting 272,784 262,252
+Commercial 263,193 218,268
+Property 713 3,034
+Player trading . 454 1,374
+, 690,998 616,580
+Broadcasting revenue includes UEFA distributions in respect of participation in the men’s UEFA Champions
+League of £99.9 million (2024 - £80.4 million - UEFA Champions League) and £1.4 million (2024 - £0.2
+million) from participation in the women’s UEFA Champions League.
+31
+ARSENAL HOLDINGS LIMITED
+‘NOTES TO THE ACCOUNTS ,
+For the year ended 31 May 2025
+4. Operating expenses
+2025 2024
+Operating expenses comprise: £°000 £7000
+Amortisation of player registrations . 171,627 171,099
+Impairment of player registrations (see note 2) 15,241 -
+Depreciation and impairment charges (less amortisation of grants) 19,778 18,161
+Total depreciation, amortisation and impairment 206,646 189,260
+Staff costs (see note 6) 346,804 327,822
+Other operating charges 200,756 147,892
+‘Yotal operating expenses 754,206 664,974
+Included in other operating charges is £30.9 million (2024 - £27.4 million) in respect of costs of goods sold for
+the Group’s online and stores retail operations.
+2025 2024 .
+Total operating expenses include: £000 £7000
+Auditor’s remuneration
+- audit of the company’s annual accounts 45 40
+- audit of the subsidiaries pursuant to legislation 166 157
+Total audit fees . 211 197
+- assurance services other than auditing of company’s accounts 30 60
+- tax compliance services 51 55
+- other tax advisory services 20 53
+Total non-audit fees 101 168
+‘ Operating lease rentals 47 62
+. (Profit)/loss on disposal of tangible fixed assets/investments (19) 25
+5. Net finance charges
+2025 2024
+Interest payable and similar charges: £7000 £7000 .
+Bank loans and overdrafts 3,154 3,160
+Notional interest expense on deferred payments for player registrations 4,285 6,524
+Other 9,670 7,800
+Costs of raising long term finance 906 1,291
+Total interest payable and similar charges 18,015 18,775
+Interest receivable (328) (343)
+Net finance charges 17,687 18,432
+, 32
+ARSENAL HOLDINGS LIMITED
+NOTES TO THE ACCOUNTS
+For the year ended 31 May 2025
+6. Employees :
+The average monthly number of persons employed by the Group during the year was:
+2025 2024
+Number Number
+Playing staff 101 117
+Training staff 90 84
+Commercial and Administrative staff 564 513
+Ground staff 116 112
+871 826
+In addition, the Group used on average 1,462 temporary staff each month (2024 — 1,196). The Company had
+no employees in either year.
+2025 2024
+£000 £7000
+Staff costs:
+Wages and salaries 303,171 286,960
+Social security costs 41,441 38,133
+Other pension costs . 2,192 2,729
+346,804 327,822
+7. Directors’ remuneration
+2025 2024
+£000 £000
+Remuneration for services 2,440 2,440
+2,440 2,440
+The number of directors who were:-
+Members of a defined benefit pension scheme - -
+Remuneration of the highest paid director:- £000 £000
+Emoluments 2,000 2,000
+Remuneration of key management personnel 6,424 7,341 -
+The Group’s key management personnel comprised of the Board of Directors, the Managing Director and the.
+Sporting Director. .
+Included in the above amounts are fees paid to Harris Ventures Limited in respect of services provided by Lord
+Harris of Peckham.
+33
+ARSENAL HOLDINGS LIMITED
+NOTES TO THE ACCOUNTS
+For the year ended 31 May 2025
+8. Tax on loss
+. 2025 2024
+£000 £000
+UK corporation tax at 25% (2024 — 25%) - -
+Prior year — joint venture 29 -
+Total current taxation 29 -
+Deferred taxation (see note 19)
+Total deferred taxation : - -
+Total tax charge/(credit) on loss . 29 - .
+, The Group’s deferred tax liabilities have been valued based on the tax rates that are expected to apply in the
+future periods in which the underlying timing differences are predicted to reverse. Corporation tax losses
+(including excess corporate interest charges) have been valued for deferred tax purposes up to the limit of the
+Group’s deferred tax liabilities.
+2025 2024
+£7000 £7000
+The differences between the total tax shown above and the amount calculated by
+applying the standard rate of UK corporation tax to the loss before tax are as
+follows:
+Group loss before tax (1,348) (17,687)
+Tax on Group loss before tax at standard UK corporation tax rate of 25% (2024 —
+25%) (337) (4,422)
+Effects of:
+Expenses not deductible _ 1,982 1,822
+Prior year — joint venture 29 -
+Impact of tax losses on deferred tax (1,645) 2,600
+Group total tax charge/(credit) for the year 29 -
+Full provision has been made for the deferred tax liabilities related to the roll-over of profits on sale of player
+registrations into the tax cost of new qualifying player registrations (see note 19). There is no expiry date on
+any timing differences.
+, 34
+ARSENAL HOLDINGS LIMITED
+NOTES TO THE ACCOUNTS
+For the year ended 31 May 2025
+9. Tangible assets
+Long
+Freehold Leasehold Plant and
+properties properties equipment Total
+. Group £7000 £7000 £7000 £7000
+Cost
+At | June 2024 426,227 21,329 190,574 638,130
+Additions 208 - 18,587 18,795
+Disposals - - - -
+At 31 May 2025 426,435 21,329 209,161 656,925
+Depreciation
+At | June 2024 104,94] _ 9,681 134,634 249,256
+Charge for the year 6,370 607 12,891 19,868
+Disposals - - - -
+At 31 May 2025 111,311 10,288 147,525 269,124
+Net book value
+At 31 May 2025 315,124 11,041 61,636 387,801
+At 31 May 2024 321,286 11,648 55,940 388,874
+At 31 May 2025 the Group had contracted capital commitments of £4.9 million (2024 - £3.3 million). The
+cost of fixed assets includes £38.6 million of interest costs which were incurred on the stadium financing bank
+facilities during the periods when Emirates Stadium was under construction. ‘I'he capitalisation of interest
+ceased in 2006 when Emirates Stadium came into use.
+10. Intangible assets .
+£7000
+Cost of player registrations
+At I June 2024 882,417
+Additions 123,855
+: Disposals (80,124)
+At 31 May 2025 926,148
+Amortisation of player registrations
+At | June 2024 395,774
+Charge for the year 171,627
+Impairment 15,24]
+Disposals . (55,502)
+At 31 May 2025 527,140
+Net book value
+At 3! May 2025 399,008
+At 31 May 2024 486,643
+35 ‘
+ARSENAL HOLDINGS LIMITED .
+NOTES TO THE ACCOUNTS
+For the year ended 31 May 2025
+10. ‘Intangible assets (continued) .
+The figures for cost of player registrations are historic figures for the costs associated with acquiring players’
+registrations or extending their contracts. Accordingly, the net book amount of player registrations will not
+reflect, nor is it intended to, the current market value of these players nor does it take any account of players
+developed through the Group’s youth system.
+The directors consider the net realisable value of intangible assets to be significantly greater than their book
+value. :
+11. ‘Investments
+Group
+2025 2024
+£000 £000
+Accumulated share of (losses)/profit of joint venture (see note 19) (2,928) (1,209)
+The joint venture represents an interest in Arsenal Broadband Limited, a company incorporated in the UK and
+engaged in running the official Arsenal Football Club internet portal. The Group owns all of the 20,000,001
+Ordinary “A” shares of £1 each and the one “C” share of £1 issued by Arsenal Broadband Limited and controls
+50 percent of the voting rights. The Group’s share of the net assets included in the balance sheet of Arsenal
+Broadband Limited for the year ended 31 May 2025 is as follows:
+2025 2024
+£7000 £°000
+Fixed assets 562 1,505
+Current assets 860 488
+Liabilities (4,350) (3,202)
+: (2,928) (1,209)
+Investments in subsidiary undertakings : Company
+£000
+Balance at 1 June 2024 and 31 May 2025 30,059
+36
+ARSENAL HOLDINGS LIMITED
+NOTES TO THE ACCOUNTS
+For the year ended 31 May 2025
+11. Investments (continued) :
+Investments in subsidiary undertakings (continued)
+The Company has the following subsidiary companies (of which those marked * are indirectly held):
+Proportion of :
+; Country of ordinary
+incorporation shares owned Principal activity
+" Arsenal (AFC Holdings) Limited Great Britain “100% Share holding
+The Arsenal Football Club Limited* Great Britain 100% Professional football club
+Arsenal (Emirates Stadium) Limited* Great Britain 100% Property development
+Arsenal Overseas Holdings Limited* Great Britain 100% Share holding
+AOH-USA, LLC* USA 100% Data management
+Arsenal Securities Limited* Great Britain 100% Financing
+Arsenal Stadium Management Company Great Britain 100% Stadium operations
+Limited*
+ATL (Holdings) Limited Great Britain 100% Share holding
+Ashburton Trading Limited* Great Britain 100% Property development
+HHL Holding Company Limited Great Britain 100% Share holding
+Highbury Holdings Limited* Great Britain 100% Property holding
+Arsenal Women Football Club Limited* Great Bnitain 100% Women’s football
+Ashburton Properties (Northern Triangle) Great Britain 100% Dormant
+Limited*
+Drayton Park Trading Limited* Great Britain 100% Dormant
+Queensland Road Trading Limited* Great Britain 100% Dormant
+Ashburton Properties Holdings Limited Great Britain 100% Dormant
+Arsenal Stadium Management Holdings Great Britain 100% Dormant
+Limited
+. The registered address for all Group companies and the joint venture company is as for the Company and as
+stated in the Directors’ Report except for AOH-USA LLC (Suite 620, 954 W. Washington Blvd, Chicago, IL
+60607).
+12. Steck - development properties
+Properties are held for resale and are recorded at the lower of cost and net realisable value. The directors
+consider the net realisable value of development property stocks to be greater than their book value.
+13. Debtors
+Group Company
+2025 2024 2025 2024
+£7000 £7000 £7000 £7000
+Amounts recoverable within one year
+Trade debtors : 32,426 18,332 - -
+Other debtors 41,300 25,429 - -
+Amounts due from group undertakings - - 137,360 136,924
+Prepayments and accrued income . 33,505 22,997 - -
+; Amount due from joint venture 7;402 4,556 - -
+114,633 71,314 137,360 136,924
+Amounts recoverable in more than one year
+Other debtors 48,005 16,563 - -
+Prepayments and accrued income 377 483 - -
+48,382 17,046 - -
+Other debtors include £86.2 million in respect of player transfers (2024 - £38.5 million).
+, 37
+ARSENAL HOLDINGS LIMITED .
+NOTES TO THE ACCOUNTS
+For the year ended 31 May 2025
+14, Cash at bank and in hand
+Group Company
+2025 2024 2025 2024
+£7000 £000 £000 £°000
+Cash at bank and in hand 55,994 66,819 31 30
+Cash equivalents (short-term deposits) - - - -
+. 55,994 66,819 31 30 ;
+15. Creditors: amounts falling due within one year
+Group Company
+2025 2024 2025 2024
+£000 £7000 £7000 £°000
+Trade creditors 14,150 19,446 - -
+Other tax and social security 32,123 35,659 - -
+Amounts due to group undertakings - - 1,786 1,786
+Other creditors 151,798 171,138 10 10
+Accruals and deferred income 204,520 191,798 161 20
+402,591 418,041 1,957 1,816
+Other creditors, above and as disclosed in note 16, include £210.8 million (2024 - £267.8 million) in respect
+of player transfers.
+16. Creditors: amounts falling due after more than one year
+. Group Company
+2025 2024 2025 2024
+£000 £000 £7000 £°000
+Balance due to parent undertaking 340,076 324,062 - -
+Debenture loans 18,218 17,722 18,171 17,677
+Other creditors 72,773 103,907 - -
+Grants 2,805 2,895 - -
+Accruals and deferred income 8,634 7,186 - -
+442,506 455,772 18,171 17,677
+Debenture loans comprise:
+Par value of debentures plus accumulated interest 32,909 32,415 18,482 17,988
+Costs of raising finance (311) (31h) (311)- (G11)
+Fair value adjustment (14,380) (14,382) - -
+18,218 17,722 18,171 17,677
+38
+ARSENAL HOLDINGS LIMITED .
+NOTES TO THE ACCOUNTS :
+
+For the year ended 31 May 2025
+
+16. Creditors: amounts falling due after more than one year (continued)
+
+, Under the issue terms A and B debentures with a par value of £14,427,000 are repayable at par after 118 years
+and these debentures are interest free. C and D debentures with a par value of £10,224,000 are repayable at the
+option of the debenture holders in 3 years and carry cumulative compound interest at 2.75% per annum. :
+The balance due to the parent undertaking, KSE UK Inc., comprises of a loan which is repayable on two years
+notice. No such notice has been received and therefore the balance is shown within amounts falling due after more
+than one year.
+
+The costs of raising debt finance is amortised to the profit and loss account over the term of the underlying
+debt. The amortisation charge for the year was £486,000 (2024 - £704,000).
+2025 2024
+The Group’s financia! liabilities/debt are repayable as follows: £7000 £7000
+After five years 18,218 17,222
+Total debt 18,218 17,222
+17. Financial instruments
+The Group’s financial instruments comprise mainly of cash and bank balances, debentures and various items,
+such as trade debtors and trade creditors, that arise directly from its operations. The main purpose of these
+financial instruments is to provide finance for the Group’s operations. The main risks arising from the Group’s
+financial instruments relate to interest rate, liquidity and foreign currency and the Board reviews and agrees its
+policy for managing these risks.
+The carrying value of the Group’s financial instruments is analysed as follows:-
+. 2025 2024
+Financial Assets . £7000 £7000
+Measured at undiscounted amount receivable:
+Cash at bank 55,994 66,819
+Trade and other debtors 121,731 60,324
+177,725 127,143
+Financial Liabilities
+Measured at amortised cost:
+C & D Debentures (18,171) (17,677)
+Balance due to parent undertaking (340,076) _ (324,062)
+Measured at fair value through profit and loss: ;
+A & B Debentures (47) (45)
+Other creditors (see note 1(g)) (50,722) (97,687)
+Measured at undiscounted amount payable: ,
+: Trade and other creditors (187,799) (196,804)
+(596,815) (636,275)
+39
+ARSENAL HOLDINGS LIMITED
+NOTES TO THE ACCOUNTS
+For the year ended 31 May 2025
+17. Financial instruments (continued)
+Financial Liabilities (continued)
+The Group’s cash and bank deposits earn interest at rates linked to UK base rates. The Group’s other financial
+assets do not earn interest. The interest rates attaching the Group’s debentures are detailed in note 16. Total
+interest income for the year is shown in note 5.
+18. _‘ Financial Derivatives
+Borrowing facilities
+The Group had undrawn committed bank borrowing facilities at the balance sheet date, in respect of which all
+conditions precedent had been met, as follows:
+2025 2024
+£000 £000
+Expiring in:
+Less than one year 100,000 100,000
+Foreign currency management
+The Group is mainly exposed to the foreign currencies of the Euro and US dollar.
+In assessing its foreign currency exposure the Group will assess the balance of its outstanding currency
+denominated assets and liabilities together with known future currency cash flows such as from participation
+in UEFA competitions and from contracted player transfers.
+There were no foreign currency contracts in place at the balance sheet date. :
+Included in cash and cash equivalents are amounts of £1.8 million (2024 - £1.3 million) denominated in Euros,
+£1.2 million (2024 - £0.9 million) denominated in US dollars and £Nil (2024 - £0.1 million) denominated in
+Australian dollars.
+Included in trade debtors are amounts of £3.9 million (2024 - £1.8 million) denominated in US dollars. Included
+in other debtors are amounts of £20.4 million (2024 - £28.3 million) denominated in Euros and £0.2 million
+(2024 - £0.2 million) denominated in US dollars. .
+Included in prepayments and accrued income are amounts of £8.0 million (2024 - £9.1 million) denominated
+in Euros, £3.1 million (2024 - £Nil) denominated in US dollars and £0.6 million (2024 — £Nil) denominated in
+Singapore dollars.
+Included in deferred income is £4.0 million (2024 - £1.0 million) denominated in US dollars.
+Included in other creditors are amounts of £79.0 million (2024 - £46.7 million) denominated in Euros. Included
+in provisions are amounts of £6.5 million (2024 - £8.5 million) denominated in Euros. ;
+40
+; ARSENAL HOLDINGS LIMITED ;
+NOTES TO THE ACCOUNTS
+For the year ended 31 May 2025
+19. Provisions for liabilities ,
+: . Group
+2025 2024
+£’000 £000
+At start of year 47,932 60,860 ;
+New provisions established , 38,699 24,628
+Classified as creditors (18,286) (28,037)
+Cancelled as no longer required (9,806) (8,949) :
+Paid in year (599) (570)
+At close of year 57,940 47,932
+Provisions include amounts in respect of the probable additional transfer fees payable based on the players
+concemed achieving certain milestones such as number of appearances. Included in provisions is £2.93 million
+(2024 - £1.21 million) in respect of the losses of the joint venture (see note 11).
+‘ Group
+2025 2024
+£7000 £7000
+Deferred tax provision
+Tax losses (including excess corporate interest) (21,616) (19,744)
+Accelerated capital allowances 10,229 8,543
+Capitalised interest 7,199 7,355
+Rollover relief on player registrations 4,374 3,822
+Other timing differences (186) 24
+Total provision for deferred taxation - -
+"The deferred tax charge/credit for the year was ENil (see note 8) (2024 — ENil). :
+The Group has estimated corporation tax losses (including excess corporate interest) carried forward, on
+which no value has been placed, of £121 million (2024 - £128 million). These tax losses do not have an
+expiry date.
+20. Called up share capital
+; 2025 2024
+. £ £
+Allotted, issued and fully paid
+Subscriber Ordinary shares of £1 each 2 2
+Ordinary shares of £1 each 62,217 62,217
+The two Subscriber Ordinary shares carry no right to vote or to income and a deferred right to a return of capital
+paid up.
+41
+ARSENAL HOLDINGS LIMITED
+NOTES TO THE ACCOUNTS
+For the year ended 31 May 2025
+21. Notes to the consolidated cash flow statement
+(a) _ Reconciliation of operating loss to net cash inflow from operating activities .
+2025 2024
+£000 £000
+Operating loss (63,208) (48,394) ;
+Amortisation of player registrations 171,627 171,099
+Impairment of player registrations 15,241 -
+Profit on disposal of fixed assets (19)
+Loss on disposal of investments - 25
+Depreciation (net of grant amortisation) 19,778 18,161
+Operating cash flow before working capital 143,419 140,891
+(Increase) in stock (4,783) (19)
+(Increase)/Decrease in debtors (26,915) 7,590
+Increase in creditors 36,216 27,595
+Net cash inflow from operating activities 147,937 176,057
+(b) Analysis of changes in net debt At | June Non cash At 31 May
+2024 changes Cash flows . 2025
+£7000 £000 £7000 £7000
+: Cash at bank and in hand 66,819 - (10,825) 55,994
+: Cash equivalents . . . . .
+, 66,819 - (10,825) 55,994 .
+Debentures (17,722) (496) - (18,218)
+Balance due to parent undertaking (324,062) (2,493) (13,521) (340,076)
+Net (debt) (274,965) (2,989) (24,346) (302,300)
+Non cash changes represent £486,000 in respect of the amortisation of costs of raising finance, :
+£2,501,000 in respect of accrued, unpaid interest and £2,000 in respect of the change in fair value of the
+Group’s A and B debentures.
+(c) Gross cash flows . 2025 2024
+. £7000 £000
+Player registrations
+Payments for purchase of players (201,119) (247,650)
+Receipts from sale of players 58,089 54,256
+(143,030) —_ (193,394)
+42
+ARSENAL HOLDINGS LIMITED
+NOTES TO THE ACCOUNTS
+For the year ended 31 May 2025
+22. Leasing commitments
+. . Total future minimum lease payments under non-cancellable operating leases are as follows:
+2025 2024
+£000 £7000
+Group .
+One year or less 25 50
+, Two to five years 24 33
+Over five years 74 76
+123 159
+23. Commitments and contingent liabilities
+Under the conditions of certain transfer agreements in respect of players purchased, further transfer fees will
+be payable to the vendors in the event of the players concerned making a certain number of First Team
+appearances or in the event of certain other future events specified in the transfer agreements. In accordance
+with the Group’s accounting policy for transfer fees, any additional fees which may be payable under these
+agreements, will be accounted for in the year that it becomes probable that the number of appearances will be
+achieved or the specified future events will occur. The maximum potential liability not provided for, in respect
+of contracts in force at the year end date, is £17.0 million (2024 - £19.5 million).
+The Group continues to monitor certain ongoing matters relating to the closure of the European Super League
+project; if any additional costs arise as a consequence, these additiona! costs would be fully recharged to the
+parent entity, KSE UK Inc.
+A subsidiary company is monitoring certain historic property matters to determine the basis and quantum of
+any responsibility. For more information please refer to the key sources of estimation uncertainty in Note lt.
+24. Related party transactions
+At 31 May 2025 the balance owing from Arsenal Broadband Limited to the Group was £7.4 million (2024 -
+£4.6 million owed by the Group to Arsenal Broadband Limited).
+25. Pensions * .
+a) Defined contribution schemes
+Total contributions charged to the profit and loss account during the year amounted to £2,192,000 (2024
+- £1,776,000).
+b) Defined benefit scheme 2025 2024
+; £000 £000
+Provision at start of year ; 1,122 739
+Payments in year (599) (570)
+Increase in provision - 953
+Provision at end of year 523 1,122
+The Group is advised of its share of the deficit in the Scheme (Note 1(q)). The most recent actuarial valuation of
+the Scheme was as at August 2023 and indicated that the contribution required from the Group towards making
+good this deficit was £1.5 million at 1 September 2023 (the total deficit in the Scheme at this date was £20.6
+million). The Group’s share of the deficit is being paid off over a period of three years and two months
+commencing September 2023.
+, 43
+, ARSENAL HOLDINGS LIMITED.
+NOTES TO THE ACCOUNTS
+For the year ended 31 May 2025 ;
+: 25. Pensions (continued)
+Additional contributions are being charged to the profit and loss account over the remaining service life of those
+Arsenal employees who are members of the Scheme. The amount attributable to employees who have already
+retired or who have left the Group has been charged in full to the profit and loss account.
+: Payments for the year amounted to £0.6 million (2024 - £0.6 million) and the profit and loss account charge
+was £Nil million (2024 - £1.0 million).
+26. Post balance sheet events
+Player transactions
+Since the end of the financial year a subsidiary company, Arsenal Football Club Limited, has contracted for
+the purchase and sale of various players. The net payment resulting from these transfers, taking into account
+the applicable levies, is £268.0 million (2024 — net payment of £20.9 million). These transfers will be
+accounted for in the year ending 31 May 2026.
+27. Ultimate parent undertaking and controlling party
+The ultimate parent undertaking and controlling party is KSE UK Inc., which owns 100% of the share capital of .
+the Company. KSE UK Inc. is incorporated in the State of Delaware, USA, and is wholly-owned and controlled
+by Mr E.S. Kroenke.
+44
 

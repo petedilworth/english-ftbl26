@@ -2,7 +2,7 @@ source: Companies House filing, west-bromwich-albion-fc__2.pdf
 document: o9ALZ-Tzz_ZXZRkzO-5v_6MvjH71zmP_KWKt6ldKelQ
 made_up_date: 2024-06-30
 method: ocr
-pages_read: 12 of 45
+pages_read: 45 of 45
 
 q ‘ ‘
 Company registration number 07230595 (England and Wales)
@@ -456,4 +456,1333 @@ statements are prepared is consistent with the financial statements; and
 * the strategic report and the director's report have been prepared in accordance with applicable legal
 requirements.
 -9-
+WEST BROMWICH ALBION GROUP LIMITED
+INDEPENDENT AUDITOR'S REPORT (CONTINUED)
+TO THE MEMBERS OF WEST BROMWICH ALBION GROUP LIMITED
+Matters on which we are required to report by exception
+In the light of the knowledge and understanding of the group and the parent company and their environment
+obtained in the course of the audit, we have not identified material misstatements in the strategic report or the
+director's report.
+We have nothing to report in respect of the following matters in relation to which the Companies Act 2006 requires
+us to report to you if, in our opinion:
+
+* adequate accounting records have not been kept by the parent company, or returns adequate for our audit have
+
+not been received from branches not visited by us; or
+
+¢ the parent company financial statements are not in agreement with the accounting records and returns; or
+
+* certain disclosures of directors' remuneration specified by law are not made; or
+
+* we have not received all the information and explanations we require for our audit. .
+Responsibilities of director .
+As explained more fully in the director's responsibilities statement, the director is responsible for the preparation of
+the financial statements and for being satisfied that they give a true and fair view, and for such internal control as
+the director determines is necessary to enable the preparation of financial statements that are free from material
+misstatement, whether due to fraud or error. In preparing the financial statements, the director is responsible for
+assessing the parent company's ability to continue as a going concern, disclosing, as applicable, matters related to
+going concern and using the going concern basis of accounting unless the director either intends to liquidate the
+parent company or to cease operations, or has no realistic alternative but todo so. -
+Auditor's responsibilities for the audit of the financial statements
+Our objectives are to obtain reasonable assurance about whether the financial statements as a whole are free from
+material misstatement, whether due to fraud or error, and to issue an auditor's report that includes our opinion.
+Reasonable assurance is a high level of assurance but is not a guarantee that an audit conducted in accordance
+with ISAs (UK) will always detect a material misstatement when it exists. Misstatements can arise from fraud or
+error and are considered material if, individually or in the aggregate, they could reasonably be expected to influence
+the economic decisions of users taken on the basis of these financial statements.
+A further description of our responsibilities is available on the Financial Reporting Council's website at: https://
+www.frc.org.uk/auditorsresponsibilities. This description forms part of our auditor's report.
+
+-10-
+WEST BROMWICH ALBION GROUP LIMITED
+
+INDEPENDENT AUDITOR'S REPORT (CONTINUED)
+
+TO THE MEMBERS OF WEST BROMWICH ALBION GROUP LIMITED
+
+Extent to which our procedures are capable of detecting irregularities, including fraud
+
+Irregularities, including fraud, are instances of non-compliance with laws and regulations. We design procedures in
+line with our responsibilities, outlined above and on the Financial Reporting Council's website, to detect material
+misstatements in respect of irregularities, including fraud.
+
+We obtain and update our understanding of the entity, its activities, its control environment, and likely future
+developments, including in relation to the legal and regulatory framework applicable and how the entity is complying
+with that framework. Based on this understanding, we identify and assess the risks of material misstatement of the
+financial statements, whether due to fraud or error, design and perform audit procedures responsive to those risks,
+and obtain audit evidence that is sufficient and appropriate to provide a basis for our opinion. This includes
+consideration of the risk of acts by the entity that were contrary to applicable laws and regulations, including fraud.
+In response to the risk of irregularities and non-compliance with laws and regulations, including fraud, we designed
+procedures which included:
+
+* Enquiry of management, including legal counsel, the group and company's lawyers and those charged with
+governance around actual and potential litigation and claims as well as actual, suspected and alleged
+fraud;
+
+* Reviewing minutes of meetings of those charged with governance;
+
+* Assessing the extent of compliance with the laws and regulations considered to have a direct material
+effect on the financial statements or the operations of the group and company through enquiry and
+inspection;
+
+* Reviewing financial statement disclosures and testing to supporting documentation to assess compliance
+with applicable laws and regulations;
+
+* Performing audit work over the risk of management bias and override of controls, including testing of
+journal entries and other adjustments for appropriateness, evaluating the business rationale of significant
+transactions outside the normal course of business and reviewing accounting estimates for indicators of
+potential bias.
+
+Because of the inherent limitations of an audit, there is a risk that we will not detect all irregularities, including those
+leading to a material misstatement in the financial statements or non-compliance with regulation. This risk
+increases the more that compliance with a law or regulation is removed from the events and transactions reflected
+in the financial statements, as we will be less likely to become aware of instances of non-compliance. The risk of
+not detecting a material misstatement resulting from fraud is higher than for one resulting from error, as fraud may
+involve collusion, forgery, intentional omissions, misrepresentations, or the override of internal control.
+Use of our report
+This report is made solely to the company's members, as a body, in accordance with Chapter 3 of Part 16 of the
+Companies Act 2006. Our audit work has been undertaken so that we might state to the company’s members those
+matters we are required to state to them in an auditor's report and for no other purpose. To the fullest extent
+permitted by law, we do not accept or assume responsibility to anyone other than the company and the company’s
+members as a body, for our audit work, for this report, or for the opinions we have formed.
+Jc Ab [ie
+Ben Sheldon ACA (Senior Statutory Auditor)
+For and on behalf of Azets Audit Services Date: 30/12/2024
+Chartered Accountants
+Statutory Auditor : 6th Floor, Bank House
+
+8 Cherry Street
+
+re we ee “" " "Birmingham 7 7 oe
+United Kingdom
+B2 5AL
+-1-
+WEST BROMWICH ALBION GROUP LIMITED
+GROUP STATEMENT OF COMPREHENSIVE INCOME
+FOR THE YEAR ENDED 30 JUNE 2024 :
+Operations Player Year Year
+excluding amortisation, ended ended
+impairment
+: player and trading 30 June 30 June
+amortisation, 2024 2023
+impairment
+and trading
+Notes £'000 £000 £'000 £'000
+Turnover 3 28,209 - 28,209 56,749
+Operating expenses (58,259) (8,750) (67,009) (76,029)
+Profit on disposal of player
+registrations - 3,534 3,534 6,545
+Other operating income 506 - 506 488
+Exceptional item 4 - - - 5,059
+' Operating loss 5 (29,544) (5,216) (34,760) (7,188)
+Interest receivable and similar
+income 9 . 1,121 948
+Interest payable and similar
+expenses 10 (4,010) (1,381)
+(Loss)/profit before taxation (37,649) (7,621) ,
+Tax on loss "1 - -
+(Loss)/profit after taxation (37,649) (7,621)
+(Loss)/profit for the financial year is all attributable to the owners of the parent company.
+The notes on pages 18 to 42 form part of these financial statements.
+-12- ,
+Docusign Envelope ID: 6BEB8674-6CE9-4682-9C70-CEEBCD4FEEA0
+WEST BROMWICH ALBION GROUP LIMITED
+GROUP BALANCE SHEET :
+AS AT 30 JUNE 2024
+2024 2023
+Notes £'000 £'000 £'000 £'000
+
+Fixed assets
+Intangible assets 14 12,742 21,344
+Tangible assets 13 23,605 23,789
+Investment properties 16 934 934
+
+. 37,281 46,067
+Current assets
+Stocks 18 414 824
+Debtors 19 14,756 21,967
+Cash at bank and in hand 2,825 12,771
+
+17,995 35,562
+Creditors: amounts falling due within one
+year 20 (27,565) (22,065)
+Net current (liabilities)/assets : (9,570) 13,497
+Total assets less current liabilities 27,711 59,564
+Creditors: amounts falling due after more
+than one year 21 (31,036) (25,240)
+Net (liabilities)/assets (3,325) 34,324
+Capital and reserves ;
+Called up share capital 25 96 96
+Merger reserve : 26 10,485 10,485
+Investment property revaluation reserve 26 (435) (435)
+Profit and loss reserves 26 (13,471) 24,178 ,
+Total equity (3,325) 34,324
+The notes on pages 18 to 42 form part of these financial statements.
+: ; . 12/25/2024
+The financial statements were approved by the board of directors and authorised for issue ON ...............s000. ANd
+are signed on its behalf by:
+S Patel
+Director : :
+: -13-
+Docusign Envelope ID: 6BEB8674-6CE9-4682-9C70-CEEBCD4FEEAO
+
+WEST BROMWICH ALBION GROUP LIMITED
+COMPANY BALANCE SHEET
+AS AT 30 JUNE 2024 :
+
+2024 "2023
+
+Notes £'000 £'000 £'000 £'000
+
+Fixed assets
+Investments 15 12,541 12,541
+Current assets
+Debtors 19 52,565 39,724 :
+Cash at bank and in hand 12 103
+
+52,577 39,827
+Creditors: amounts falling due within one
+year 20 (10,222) (457)
+Net current assets 42,355 39,370
+Total assets less current liabilities 54,896 51,911
+Creditors: amounts falling due after more
+than one year 21 (25,524) (18,945)
+Net assets 29,372 32,966
+Capital and reserves ‘
+Called up share capital 25 96 96
+Merger reserve 26 10,485 10,485
+Profit and loss reserves 26 18,791 . 22,385
+Total equity 29,372 32,966
+The notes on pages 18 to 42 form part of these financial statements.
+As permitted by s408 Companies Act 2006, the company has not presented its own profit and loss account and
+related notes. The company's loss for the year was £3,594,350 (2023 - £3,548,826 profit).
+The financial statements were approved by the board of directors and authorised for issue on 12/25/2024 and
+are signed on its behalf by:
+
+PA
+(ZZ...
+S Patel
+Director
+Company Registration No. 07230595
+-14-
+WEST BROMWICH ALBION GROUP LIMITED
+GROUP STATEMENT OF CHANGES IN EQUITY
+FOR THE YEAR ENDED 30 JUNE 2024
+Share Share Investment Profit and Total
+capital premium property loss
+account revaluation reserves
+: reserve
+£'000 £'000 £'000 £'000 £'000
+Balance at 1 July 2022 96 10,485 (435) 31,799 41,945
+Year ended 30 June 2023: :
+Loss and total comprehensive income - - - (7,621) (7,621)
+Balance at 30 June 2023 96 10,485 (435) 24,178 34,324
+Year ended 30 June 2024:
+Loss and total comprehensive income - - - (37,649) (37,649) :
+Balance at 30 June 2024 96 10,485 (435) (13,471) (3,325)
+The notes on pages 18 to 42 form part of these financial statements.
+-15-
+WEST BROMWICH ALBION GROUP LIMITED
+COMPANY STATEMENT OF CHANGES IN EQUITY
+FOR THE YEAR ENDED 30 JUNE 2024
+: Share Merger Profit and Total .
+capital reserve loss
+reserves
+£'000 £'000 £'000 £'000
+Balance at 1 July 2022 96 10,485 18,836 29,417
+, Year ended 30 June 2023:
+Profit and total comprehensive income for the year - - 3,549 3,549
+Balance at 30 June 2023 96 10,485 22,385 32,966
+Year ended 30 June 2024:
+Loss and total comprehensive income for the year - -  _ (3,594) (3,594)
+Balance at 30 June 2024 96 10,485 18,791 29,372
+The notes on pages 18 to 42 form part of these financial statements.
+-16-
+WEST BROMWICH ALBION GROUP LIMITED
+
+GROUP STATEMENT OF CASH FLOWS
+
+FOR THE YEAR ENDED 30 JUNE 2024
+
+2024 2023
+Notes £'000 £'000 £'000 £000
+
+Cash flows from operating activities
+
+Cash absorbed by operations 35 (33,453) (13,202)
+
+Interest paid 4,010 1,381 -
+
+Income taxes refunded - 377
+
+Net cash outflow from operating activities (29,443) (11,444)
+
+Investing activities
+
+Purchase of player registrations (6,394) (11,381)
+
+Proceeds on disposal of player registrations 6,568 9,838
+
+Purchase of tangible fixed assets (961) (442) .
+
+Wisdom Smart Loan receipts 5,493 -
+
+Interest received 207 734
+
+Net cash generated from/(used in)
+
+investing activities 4,913 (1,251)
+
+Financing activities .
+
+Interest paid (3,405) (1,381)
+
+Proceeds from borrowings 11,530 20,000
+
+Borrowing issuance transaction costs (152) (600)
+
+Repayment of borrowings (2,068) -
+
+Net cash inflow from Bilkul Football WBA, LLC 8,679 -
+
+Net cash generated from financing
+
+activities 14,584 18,019
+
+Net (decrease)/increase in cash and cash
+
+equivalents (9,946) §,324
+
+Cash and cash equivalents at beginning of year 12,771 7,447
+' Cash and cash equivalents at end of year 2,825 : 12,771
+
+The notes on pages 18 to 42 form part of these financial statements.
+
+-7-
+WEST BROMWICH ALBION GROUP LIMITED
+
+NOTES TO THE GROUP FINANCIAL STATEMENTS
+
+FOR THE YEAR ENDED 30 JUNE 2024
+
+1 Accounting policies
+Company information \
+
+West Bromwich Albion Group Limited ("the Group", "the Club") is a private company limited by shares
+incorporated in England and Wales. The registered office is The Hawthorns, Halfords Lane, West Bromwich,
+United Kingdom, B71 4LF.
+
+At 30 June 2023, the company's ultimate parent company was Yunyi Guokai (Shanghai) Sports Development
+Limited, a company registered in China. On 28 February 2024 Bilkul Football WBA, LLC — a company
+ultimately owned by Shilen Patel and Dr Kiran C. Patel — acquired an 87.8% shareholding in West Bromwich
+Albion Group Limited.
+
+1.1 Accounting convention :
+These financial statements have been prepared in accordance with FRS 102 “The Financial Reporting
+Standard applicable in the UK and Republic of Ireland” (FRS 102”) and the requirements of the Companies
+Act 2006. -
+
+. The financial statements are prepared in sterling, which is the functional currency of the company. Monetary :
+amounts in these financial statements are rounded to the nearest £'000.
+
+The financial statements have been prepared under the historical cost convention, modified to include
+
+investment properties at fair value. The principal accounting policies adopted are set out below.
+The company is a qualifying entity for the purposes of FRS 102, being a member of a group where the parent
+of that group prepares publicly available consolidated financial statements, including this company, which are
+intended to give a true and fair view of the assets, liabilities, financial position and profit or loss of the group.
+The company has therefore taken advantage of exemptions from the following disclosure requirements for
+parent company information presented within the consolidated financial statements:
+
++ Section 7 ‘Statement of Cash Flows’: Presentation of a statement of cash flow and related notes and
+disclosures;
+
+* Section 11 ‘Basic Financial Instruments’ and Section 12 ‘Other Financial Instrument Issues: Interest
+income/expense and net gains/losses for financial instruments not measured at fair value; basis of
+determining fair values; details of collateral, loan defaults or breaches, details of hedges, hedging fair
+value changes recognised in profit or loss and in other comprehensive income;
+
+The consolidated group financial statements consist of the financial statements of the parent company West
+Bromwich Albion Group Limited together with all entities controlled by the parent company (its subsidiaries)
+: and the group's share of its interests in joint ventures and associates.
+In accordance with FRS102, the Parent Company has taken advantage of the exemption to prepare a
+company only statement of cashflows, as the Parent Company's cashflows are included within the Group
+Statement of Cash Flows.
+: -18-
+WEST BROMWICH ALBION GROUP LIMITED
+
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR ENDED 30 JUNE 2024 :
+
+1 Accounting policies . (Continued)
+
+1.2. Business combinations
+In the parent company financial statements, the cost of a business combination is the fair value at the
+acquisition date of the assets given, equity instruments issued and liabilities incurred or assumed, plus costs
+directly attributable to the business combination. The excess of the cost of a business combination over the
+fair value of the identifiable assets, liabilities and contingent liabilities acquired is recognised as goodwill. The
+cost of the combination includes the estimated amount of contingent consideration that is probable and can be
+measured reliably, and is adjusted for changes in contingent consideration after the acquisition date.
+Provisional fair values recognised for business combinations in previous periods are adjusted retrospectively
+for final fair values determined in the 12 months following the acquisition date. Investments in subsidiaries,
+joint ventures and associates are accounted for at cost less impairment.
+Deferred tax is recognised on differences between the value of assets (other than goodwill) and liabilities
+recognised in a business combination accounted for using the purchase method and the amounts that can be
+deducted or assessed for tax, considering the manner in which the carrying amount of the asset or liability is .
+expected to be recovered or settled. The deferred tax recognised is adjusted against goodwill or negative
+goodwill.
+
+1.3 Basis of consolidation
+The consolidated group financial statements consist of the financial statements of the parent company West
+Bromwich Albion Group Limited together with all entities controlled by the parent company {its subsidiaries)
+and the group’s share of its interests in joint ventures and associates.
+All financial statements are made up to 30 June 2024. Where necessary, adjustments are made to the
+financial statements of subsidiaries to bring the accounting policies used into line with those used by other
+members of the group.
+All intra-group transactions, balances and unrealised gains on transactions between group companies are
+eliminated on consolidation. Unrealised losses are also eliminated unless the transaction provides evidence of
+an impairment of the asset transferred.
+Subsidiaries are consolidated in the group’s financial statements from the date that control commences until :
+the date that control ceases.
+
+-19-
+WEST BROMWICH ALBION GROUP LIMITED
+
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR ENDED 30 JUNE 2024
+
+1 Accounting policies (Continued)
+
+1.4 Going concern
+These financial statements are prepared on the going concern basis. The director assesses going concern on
+a group wide basis. The director has a reasonable expectation that the group and company will continue to
+operate for the foreseeable future. This being at least 12 months from the approval of the financial statements.
+Following a third season within the EFL Championship in season 23/24, and the resultant reduction in
+revenues as compared to the English Premier League over subsequent seasons, the Board have paid due
+consideration to the overall club strategy, playing squad, and operating and financing cash flows, including all
+significant revenue streams, the operating cost base of the club, player trading and sources of finance.
+The group prepares detailed cash flow forecasts each financial year considering a range of reasonable
+foreseeable potential scenarios in relation to income and costs, and has done so until the conclusion of
+season 25/26 — to 30 June 2026. .
+In December 2022, the group secured a 4-year £20m loan from MSD Holding UK Limited, which was further
+extended by £8m in November 2023.
+On 28 February 2024 Bilkul Football WBA, LLC - a company ultimately owned by Shilen Patel and Dr Kiran
+C. Patel — acquired an 87.8% shareholding in West Bromwich Albion Group Limited.
+Bilkul Football WBA, LLC have issued a letter of support to the West Bromwich Albion Group of companies
+indicating their intetion to continue to provide financial support to the Group, enabling liabilities to be met as
+they fall due for a period of at least 12 months from the date of signing the financial statements. This includes
+the non-recall of existing shareholder loans provided to the Group.
+The club retains a level of flexibility in its playing squad options and the director will balance the financial
+needs with a squad that has the ability to still strive for promotion.
+Based on the above, the director remains confident the group will generate sufficient resources to meet its
+liabilities as they fall due for a period of at least 12 months and the Board has therefore concluded that it is
+appropriate for the financial statements to be prepared on a going concern basis.
+
+1.5 Turnover
+Turnover represents all income arising from the activities of the Group excluding player transfer fees and
+Value Added Tax. Included within turnover are English Football League receipts, net gate receipts,
+merchandising/retail receipts, sponsorship and advertising receipts, conferencing and event receipts and
+other income.
+EFL income is recognised in full in the season to which it relates.
+Season tickets and seasonal hospitality income is recognised over the season to which they relate and
+teleased over the home matches played.
+Sponsorship and advertising income is recognised over the duration of the contract. Dependant on the terms
+of the contract this can be spread on a match to match or straight line basis.
+Net gate receipts, including match day hospitality receipts, are recognised in the relevant match date.
+Conference and event income is recognised on the date of the event.
+Retail income is recognised at the point of sale. Other operating income is recognised in the period to which it
+relates and is related to income such as insurance receipts which does not meet the definition of Turnover.
+
+1.6 Intangible fixed assets other than goodwill
+The cost of acquiring player registrations is included in the balance sheet as intangible assets at cost less
+amortisation, which is charged over the length of the relevant contract. Contingent consideration is recognised
+when the defined events are deemed probable in the opinion of the directors - given the nature of the football
+industry, this is when the event has occurred. Provision is made where, in the opinion of the directors, an
+impairment of the carrying value of player registrations has occurred.
+
+-20-
+WEST BROMWICH ALBION GROUP LIMITED
+
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED) ;
+
+FOR THE YEAR ENDED 30 JUNE 2024 -
+
+1 Accounting policies (Continued)
+
+1.7 Tangible fixed assets
+
+* Tangible fixed assets are initially measured at cost and subsequently measured at cost or valuation, net of
+
+depreciation and any impairment losses.
+Depreciation is recognised so as to write off the cost or valuation of assets less their residual values over their
+useful lives on the following bases:
+Freehold land & property Nil
+Freehold property 2% to 20% SL
+Fixtures, fittings, plant & equipment 2% to 25% SL
+The gain or loss arising on the disposal of an asset is determined as the difference between the sale proceeds
+and the carrying value of the asset, and is recognised in the profit and loss account.
+Land is not depreciated. Depreciation on other assets is charged so as to allocate the cost of assets less their
+residual value over their estimated useful lives, using the straight-line method.
+
+1.8 Investment properties
+Investment properties for which fair value can be measured reliably without undue cost or effort on an ongoing
+basis are measured at fair value annually with any change recognised in the Consolidated profit and loss
+account. .
+
+1.9 Fixed asset investments
+Equity investments are measured at fair value through profit or loss, except for those equity investments that
+are not publicly traded and whose fair value cannot otherwise be measured reliably, which are recognised at
+cost less impairment until a reliable measure of fair value becomes available.
+In the parent company financial statements, investments in subsidiaries, associates and jointly controlled
+entities are initially measured at cost and subsequently measured at cost less any accumulated impairment
+losses.
+A subsidiary is an entity controlled by the group. Control is the power to govern the financial and operating
+policies of the entity so as to obtain benefits from its activities.
+
+1.10 Impairment of fixed assets
+At each reporting period end date, the group reviews the carrying amounts of its tangible and intangible
+assets to determine whether there is any indication that those assets have suffered an impairment loss. If any
+such indication exists, the recoverable amount of the asset is estimated in order to determine the extent of the
+impairment loss (if any). Where it is not possible to estimate the recoverable amount of an individual asset,
+the company estimates the recoverable amount of the cash-generating unit to which the asset belongs. :
+The carrying amount of the investments accounted for using the equity method is tested for impairment as a
+single asset. Any goodwill included in the carrying amount of the investment is not tested separately for
+impairment.
+
+-21-
+WEST BROMWICH ALBION GROUP LIMITED
+€
+
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR ENDED 30 JUNE 2024
+
+1 Accounting policies (Continued)
+Recoverabie amount is the higher of fair value fess costs to sell and value in use. In assessing value in use,
+the estimated future cash flows are discounted to their present value using a pre-tax discount rate that reflects
+current market assessments of the time value of money and the risks specific to the asset for which the
+estimates of future cash flows have not been adjusted.
+If the recoverable amount of an asset (or cash-generating unit) is estimated to be less than its carrying
+amount, the carrying amount of the asset (or cash-generating unit) is reduced to its recoverable amount. An
+impairment loss is recognised immediately in profit or loss, unless the relevant asset is carried at a revalued
+amount, in which case the impairment loss is treated as a revaluation decrease.
+Recognised impairment losses are reversed if, and only if, the reasons for the impairment loss have ceased to
+apply. Where an impairment loss subsequently reverses, the carrying amount of the asset (or cash-generating
+unit) is increased to the revised estimate of its recoverable amount, but so that the increased carrying amount
+does not exceed the carrying amount that would have been determined had no impairment loss been
+recognised for the asset (or cash-generating unit) in prior years. A reversal of an impairment loss is
+recognised immediately in profit or loss, unless the relevant asset is carried at a revalued amount, in which
+case the reversal of the impairment loss is treated as a revaluation increase.
+
+1.11 Stocks
+Stocks are stated at the lower of cost and realisable value after making due allowance for obsolete and slow-
+moving stocks.
+At each balance sheet date, stocks are assessed for impairment. Any impairment loss is recognised
+immediately in the Consolidated profit and loss account.
+At each reporting date, an assessment is made for impairment. Any excess of the ‘carrying amount of stocks
+over its estimated selling price less costs to complete and sell is recognised as an impairment loss in profit or
+loss. Reversals of impairment losses are also recognised in profit or loss.
+
+1.12 Cash and cash equivalents
+Cash and cash equivalents are basic financial assets and include cash in hand, deposits held at call with
+banks, other short-term liquid investments with original maturities of three months or less, and bank
+overdrafts. Bank overdrafts are shown within borrowings in current liabilities.
+
+1.13 Financial instruments
+The group has elected to apply the provisions of Section 11 ‘Basic Financial Instruments’ and Section 12
+‘Other Financial Instruments Issues’ of FRS 102 to all of its financial instruments.
+Financial instruments are recognised in the group's balance sheet when the group becomes party to the
+contractual provisions of the instrument.
+Financial assets and liabilities are offset and the net amounts presented in the financial statements when
+there is a legally enforceable right to set off the recognised amounts and there is an intention to settle on a net
+basis or to realise the asset and settle the liability simultaneously.
+Basic financial assets
+Basic financial assets, which include debtors and cash and bank balances, are initially measured at
+transaction price including transaction costs and are subsequently carried at amortised cost using the effective
+interest method unless the arrangement constitutes a financing transaction, where the transaction is
+measured at the present value of the future receipts discounted at a market rate of interest. This typically
+occurs for long-term player transfer receivables. Financial assets classified as receivable within one year are
+not amortised.
+
+-22-
+WEST BROMWICH ALBION GROUP LIMITED
+
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR ENDED 30 JUNE 2024
+
+1 Accounting policies (Continued)
+impairment of financial assets
+Financial assets, other than those held at fair value through profit and loss, are assessed for indicators of
+impairment at each reporting end date.
+Financial assets are impaired where there is objective evidence that, as a result of one or more events that
+occurred after the initial recognition of the financial asset, the estimated future cash flows have been affected.
+If an asset is impaired, the impairment loss is the difference between the carrying amount and the present
+value of the estimated cash flows discounted at the asset's original effective interest rate. The impairment
+loss is recognised in profit or loss.
+If there is a decrease in the impairment loss arising from an event occurring after the impairment was
+recognised, the impairment is reversed. The reversal is such that the current carrying amount does not
+exceed what the carrying amount would have been, had the impairment not previously been recognised. The
+impairment reversal is recognised in profit or loss.
+Derecognition of financial assets
+Financial assets are derecognised only when the contractual rights to the cash flows from the asset expire or
+are settled, or when the group transfers the financial asset and substantially all the risks and rewards of
+ownership to another entity, or if some significant risks and rewards of ownership are retained but control of
+the asset has transferred to another party that is able to sell the asset in its entirety to an unrelated third party.
+Classification of financial liabilities
+Financial liabilities and equity instruments are classified according to the substance of the contractual
+arrangements entered into. An equity instrument is any contract that evidences a residual interest in the
+assets of the group after deducting all of its liabilities.
+Basic financial liabilities
+Basic financial liabilities, including creditors, bank loans and loans from fellow group companies, are initially
+recognised at transaction price unless the arrangement constitutes a financing transaction, where the debt
+instrument is measured at the present value of the future payments discounted at a market rate of interest.
+Long term player payables are also accounted for in this manner. Financial liabilities classified as payable
+within one year are not amortised.
+Debt instruments are subsequently carried at amortised cost, using the effective interest rate method.
+Trade creditors are obligations to pay for goods or services that have been acquired in the ordinary course of
+business from suppliers. Amounts payable are classified as current liabilities if payment is due within one year
+or less. If not, they are presented as non-current liabilities. Trade creditors are recognised initially at
+transaction price and subsequently measured at amortised cost using the effective interest method.
+Derecognition of financial liabilities
+Financial liabilities are derecognised when the group's contractual obligations expire or are discharged or
+cancelled.
+
+1.14 Equity instruments
+Equity instruments issued by the group are recorded at the proceeds received, net of transaction costs.
+Dividends payable on equity instruments are recognised as liabilities once they are no longer at the discretion
+of the group.
+
+1.165 Taxation
+The tax expense represents the sum of the tax currently payable and deferred tax.
+
+-23-
+WEST BROMWICH ALBION GROUP LIMITED
+
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR ENDED 30 JUNE 2024
+
+1 Accounting policies (Continued)
+Current tax
+The tax currently payable is based on taxable profit for the year. Taxable profit differs from net profit as
+reported in the profit and loss account because it excludes items of income or expense that are taxable or
+deductible in other years and it further excludes items that are never taxable or deductible. The group’s liability
+for current tax is calculated using tax rates that have been enacted or substantively enacted by the reporting
+end date.
+Deferred tax
+Deferred tax liabilities are generally recognised for all timing differences and deferred tax assets are
+recognised to the extent that it is probable that they will be recovered against the reversal of deferred tax
+liabilities or other future taxable profits. Such assets and liabilities are not recognised if the timing difference
+arises from goodwill or from the initial recognition of other assets and liabilities in a transaction that affects
+neither the tax profit nor the accounting profit.
+The carrying amount of deferred tax assets is reviewed at each reporting end date and reduced to the extent
+that it is no longer probable that sufficient taxable profits will be available to allow all or part of the asset to be
+recovered. Deferred tax is calculated at the tax rates that are expected to apply in the period when the liability
+is settled or the asset is realised. Deferred tax is charged or credited in the profit and loss account, except
+when it relates to items charged or credited directly to equity, in which case the deferred tax is also dealt with
+in equity. Deferred tax assets and liabilities are offset if, and only if, there is a legally enforceable right to offset
+current tax assets and liabilities and the deferred tax assets and liabilities relate to taxes levied by the same
+tax authority.
+
+1.16 Employee benefits
+The costs of short-term employee benefits are recognised as a liability and an expense, unless those costs
+are required to be recognised as part of the cost of stock or fixed assets.
+The cost of any unused holiday entitlement is recognised in the period in which the employee's services are
+received.
+Termination benefits are recognised immediately as an expense when the company is demonstrably
+committed to terminate the employment of an employee or to provide termination benefits.
+
+1.47 Retirement benefits
+Payments to defined contribution retirement benefit schemes are charged as an expense as they fall due.
+
+1.18 Leases
+Leases are classified as finance leases whenever the terms of the lease transfer substantially all the risks and
+rewards of ownership to the lessees. All other leases are classified as operating leases.
+Assets held under finance leases are recognised as assets at the lower of the assets fair value at the date of
+inception and the present value of the minimum lease payments. The related liabitity is included in the balance
+sheet as a finance lease obligation. Lease payments are treated as consisting of capital and interest
+elements. The interest is charged to profit or loss so as to produce a constant periodic rate of interest on the
+remaining balance of the liability.
+Rentals payable under operating leases, including any lease incentives received, are charged to profit or loss
+on a straight line basis over the term of the relevant lease except where another more systematic basis is
+more representative of the time pattern in which economic benefits from the leased asset are consumed.
+Amounts due from lessees under finance leases are recognised as receivables at the amount of the group's
+net investment in the leases. Finance lease income is allocated to accounting periods so as to reflect a
+constant periodic rate of return on the group’s net investment outstanding in respect of leases.
+
+-24- .
+WEST BROMWICH ALBION GROUP LIMITED
+
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR ENDED 30 JUNE 2024
+
+1 Accounting policies (Continued)
+
+1.19 Government grants
+Grants in respect of capital expenditure are treated as deferred income and released to the Consolidated
+profit and loss account over the expected useful lives of the assets concerned.
+Grants relating to expenditure arising out of the provisions of the Safety of Sports Grounds Act 1975 are
+credited to the Consolidated profit and loss account in the same period in which the expenditure is charged.
+Government grants are recognised in the profit and loss account on a systematic basis over the periods in
+which the company recognises the related costs for which the grant is intended to compensate.
+
+1.20 Foreign exchange
+Functional and presentation currency
+The Group's functional and presentational currency is GBP.
+Transactions and balances
+Foreign currency transactions are translated into the functional currency using the spot exchange rates at the
+dates of the transactions.
+At each period end foreign currency monetary items are translated using the closing rate.
+Foreign exchange gains and losses resulting from the settlement of transactions and from the translation at
+period-end exchange rates of monetary assets and liabilities denominated in foreign currencies are
+recognised in the Consolidated profit and loss account.
+Foreign exchange gains and losses that relate to borrowings and cash and cash equivalents are presented in
+the Consolidated profit and loss account within finance income or costs. All other foreign exchange gains and
+losses are presented in the Consolidated profit and loss account within other operating income.
+
+1.21 Heritage assets
+The Club holds a collection of football memorabilia which is not recognised in the Balance Sheet as cost
+information is not readily available and the directors believe that the benefits of obtaining valuations for these
+items would not justify the cost. The memorabilia has been built up over many years through existing items
+from the Club, donations and occasional acquisitions. The Club draws upon the collection for display in the
+stadium. The directors are of the opinion, that should a valuation for the collection be obtained, that the
+
+. valuation would not be material in the context of these financial statements and is incidental to the main :
+
+activity of the Club. Consequently, further disclosures under FRS102 in respect of Heritage Assets are not
+deemed necessary.
+
+2 Judgements and key sources of estimation uncertainty
+In the application of the group's accounting policies, the director is required to make judgements, estimates
+and assumptions about the carrying amount of assets and liabilities that are not readily apparent from other
+sources. The estimates and associated assumptions are based on historical experience and other factors that
+are considered to be relevant. Actual results may differ from these estimates.
+The estimates and underlying assumptions are reviewed on an ongoing basis. Revisions to accounting
+estimates are recognised in the period in which the estimate is revised where the revision affects only that
+period, or in the period of the revision and future periods where the revision affects both current and future
+periods. .
+
+-25-
+WEST BROMWICH ALBION GROUP LIMITED
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+2 Judgements and key sources of estimation uncertainty (Continued)
+Impairment of non-current assets
+The Group assess the impairment of tangible and intangible assets subject to amortisation or depreciation
+whenever events or changes in circumstances indicate that the carrying value may not be recoverable.
+Factors considered important that could trigger an impairment review include the following:
+* Significant underperformance relative to historical or projected future operating results, including
+relegation from the current league; :
+* Significant damage or, in context of players; significant injury;
+* Significant changes in the manner of the use of the acquired assets or the strategy for the overall
+business; and
+* Significant negative industry or economic trends.
+Investment property valuation
+On 21 June 2017, the freehold investment property was professionally valued by Chartered Surveyors, on an
+open market for existing use basis.
+The director is of the view that there is no material difference between the carrying value and market value at
+30 June 2023, informed by a further professional valuation performed by Chartered Surveyors in January
+2024, on an open market for existing use basis.
+Recoverability of loans
+Management assess the recoverability of loans on an annual basis including amounts loaned to third parties.
+As part of this process the Directors consider the likely fair value based on a likely plan for repayment.
+On 28 February 2024 Bilkul Football WBA, LLC acquired an 87.8% shareholding in West Bromwich Albion
+Group Limited. As part of the acquisition by Bilkul Football WBA, LLC, a funding agreement has been agreed
+with the club and EFL to 30 June 2025 which has also led to the liabilities associated with the 2014 loan
+between West Bromwich Albion Football Club and West Bromwich Albion Holdings Limited being novated to.
+Bilkul Football WBA, LLC and the release of the guarantee by Yunyi Guokai (Shanghai) Sports Development
+Limited. Bilkul has assumed full responsibility to repay the 2014 Loan with all accumulated interest, the
+repayment date being varied to 12 September 2026.
+8 Turnover and other revenue
+: 2024 2023
+£'000 £'000
+Turnover analysed by class of business
+Gate receipts 7,111 4,895
+Merchandising 2,694 2,604 .
+Media related activities 11,355. 43,056
+Other commercial income 7,049 6,194
+28,209 56,749
+-26-
+; WEST BROMWICH ALBION GROUP LIMITED
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+3 Turnover and other revenue (Continued)
+2024 2023 :
+£'000 £'000
+. Other revenue
+Interest income 1,121 948
+Grants received 67 67
+All turnover arose within the United Kingdom and relates to the principal activity.
+The Group only recognises one segment, being football operations, therefore no further segmental
+information is provided.
+4 Exceptional item
+. 2024 2023
+£'000 £'000
+Related party loan impairment reversal - 5,059
+During the period ended 30 June 2021, the company made unsecured loans totalling £4,950,000 to Wisdom
+Smart Corporation Limited, with interest of £50,000. These amounts including additional default interest
+accrued were impaired in the period to 30 June 2022, as the company had yet to receive repayment, and
+there was insufficient evidence present to support the recoverability of the amounts due.
+At 30 June 2023 repayment was considered likely as a result of any future change in ownership of the group
+and as a result previously charged impairment was reversed. On 28 February 2024 Bilkul Football WBA, LLC
+acquired an 87.8% shareholding in West Bromwich Albion Group Limited, the immediate parent company of
+West Bromwich Albion Football Club Limited.
+As part of the acquisition by Bilkul Football WBA, LLC, the March 2021 Wisdom Smart loans were novated to
+Bilkul Football WBA, LLC and have been repaid in full In March 2024.
+5 Operating loss
+2024 2023
+£'000 £'000
+Operating toss for the year is stated after charging/(crediting):
+Exchange gains - (15)
+Government grants (67) (67)
+Depreciation of owned tangible fixed assets 1,145 . 1,146
+Profit on disposal of tangible fixed assets - (3)
+Amortisation of player registrations 8,750 10,491
+Impairment of intangible assets - 822
+Profit on disposal of player registrations (3,534) (6,545) .
+Operating lease charges 75 67
+_ 227- ,
+WEST BROMWICH ALBION GROUP LIMITED
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024 ;
+6 Auditor's remuneration
+2024 2023
+Fees payable to the company's auditor and associates: £°000 £'000
+For audit services
+Fees payable to the Group's auditors for the audit of the Company's annual :
+financial statements 7 6
+For other services .
+Audit-related assurance services 11 8
+Taxation compliance services - 11
+: Other taxation services 2 34
+All other non audit services 5 5
+The auditing of financial statements of subsidiary companies of the Group
+pursuant to legislation 53 46
+71 104
+7 Employees
+The average monthly number of persons (including directors) employed by the group and company during the
+‘ year was:
+Group Company
+2024 2023 2024 2023
+Number Number Number Number
+Players and coaching staff 71 77 - -
+Scholars and youth coaching 60 62 - -
+. Administration and commercial 78 70 - -
+Ground staff 17 19 - -
+Total 226 228 - -
+Their aggregate remuneration comprised:
+Group Company
+2024 2023 2024 2023
+: £'000 £'000 £'000 £'000
+Wages and salaries 37,847 40,252 - -
+Social security costs 4,874 5,520 - -
+Pension costs 178 176 - -
+42,899 . 45,948 - -
+In addition to the above the Club also employs an average of 259 (for the period ended 30 June 2023 - 258)
+temporary staff.
+- 28 - ,
+WEST BROMWICH ALBION GROUP LIMITED
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+8 Director's remuneration
+; 2024 2023
+. £'000 £'000
+Remuneration for qualifying services 165 291
+Company pension contributions to defined contribution schemes 1 1
+Settlement agreement 225 -
+391 292
+Remuneration disclosed above includes the following amounts paid to the highest paid director:
+2024 2023
+£'000 £'000
+Remuneration for qualifying services 165 247
+Company pension contributions to defined contribution schemes 1 1
+Settlement agreement 225 -
+The number of directors for whom retirement benefits are accruing under defined contribution schemes
+amounted to 1 (2023 - 2).
+Settlement agreements totalling £225,000 have been recharged to Bilkul Football WBA LLC and form a part of
+amounts owed to West Bromwich Albion Group Limited by Bilkul Football WBA LLC.
+9 Interest receivable and similar income
+2024 2023
+£'000 £'000
+interest income .
+Interest on bank deposits 207 425
+Interest charged on related party balances 608 523
+Notional interest arising on long term player transfer receivables 306 -
+Total income 1,121 948
+10 Interest payable and similar expenses
+2024 2023
+£'000 £'000
+Interest on bank overdrafts and loans 10 -
+, MSD loan interest and interest arising on factoring of player transfer
+receivables 4,000 1,381
+Total finance costs 4,010 1,381
+11 Taxation
+2024 2023
+£'000 £'000
+-29-
+XN
+WEST BROMWICH ALBION GROUP LIMITED
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024 .
+11. Taxation (Continued)
+2024 2023
+£'000 £'000
+Deferred tax .
+Origination and reversal of timing differences 207 43
+Roll over relief on player registration timing differences 847 1,545
+Other player registration timing differences 184 (440)
+Tax losses carried forward (1,237) (1,148)
+Total deferred tax - -
+The actual charge for the year can be reconciled to the expected credit for the year based on the profit or joss
+and the standard rate of tax as follows:
+
+2024 2023
+
+£000 £'000
+Loss before taxation (37,649) (7,621)
+Expected tax credit based on the standard rate of corporation tax in the UK of
+25.00% (2023: 20.50%) (9,412) (1,562)
+Tax effect of expenses that are not deductible in determining taxable profit - 45
+Tax effect of utilisation of tax losses not previously recognised - (728)
+Fixed asset differences (208) (182)
+Remeasurement of deferred tax for changes in tax rates - (532)
+Movement in deferred tax not recognised 9,620 2,959
+Taxation charge - :
+The group has deferred tax liabilities arising on tangible and intangible fixed asset timing differences totalling
+£8,675,000 (2023: £4,167,000) offset by deferred tax assets arising on losses, as balances arise in the same
+tax jurisdiction and can be legally offset. Losses amount to £71,579,000 (2023: £33,287,000), with total
+deferred tax assets arising from losses totalling £17,895,000 (2023: £8,321,000) and therefore in excess of
+deferred tax liabilites, however the excess is not recognised due to uncertainty over it's recoverability.
+
+12. impairments
+
+Impairment tests have been carried out where appropriate and the following impairment losses have been
+recognised in profit or loss:
+2024 2023 ,
+
+Notes £'000 £'000
+In respect of:
+Intangible assets 14 - 822
+Recognised in: ,
+Operating expenses - 822
+
+, -30-
+WEST BROMWICH ALBION GROUP LIMITED
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+12 Impairments (Continued)
+The impairment losses arise following the early termination of player registrations. .
+13 Tangible fixed assets
+Group Freehold land Fixtures, Total
+& property fittings, plant
+& equipment
+: £'000 £'000 £'000
+Cost
+At 1 July 2023 41,280 8,348 49,628
+Additions 839 122 961
+At 30 June 2024 , 42,119 8,470 50,589
+Depreciation and impairment
+At 1 July 2023 18,094 7,745 25,839
+Depreciation charged in the year 901 244 4,145
+At 30 June 2024 18,995 7,989 26,984
+Carrying amount .
+At 30 June 2024 23,124 481 23,605
+At 30 June 2023 ; 23,186 603 23,789
+The company had no tangible fixed assets at 30 June 2024 or 30 June 2023.
+14 Intangible fixed assets .
+Group Player
+registrations
+£'000
+Cost .
+At 1 July 2023 : - 75,991
+Additions : 148
+Disposals (23,934)
+At 30 June 2024 52,205
+Amortisation and impairment :
+At 1 July 2023 54,647
+Amortisation charged for the year 8,750
+Disposals (23,934)
+At 30 June 2024 39,463
+; -31-
+WEST BROMWICH ALBION GROUP LIMITED
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024 :
+14 Intangible fixed assets (Continued)
+Carrying amount
+At 30 June 2024 42,742
+At 30 June 2023 21,344
+The company had no intangible fixed assets at 30 June 2024 or 30 June 2023.
+15 Fixed asset investments
+Group Company
+2024 2023 2024 2023
+Notes £'000 £'000 £'000 £'000
+Investments in subsidiaries 17 - - 12,541 12,541
+Movements in fixed asset investments
+Company , . Shares in
+subsidiaries
+£'000
+Cost or valuation
+At 1 July 2023 and 30 June 2024 12,541
+Carrying amount
+At 30 June 2024 . 12,541
+At 30 June 2023 42,541
+16 Investment property
+Group Company
+2024 2024
+£'000 £'000
+Fair value
+At 1 July 2023 and 30 June 2024 934 -
+On 21 June 2017, the freehold investment property was professionally valued by Chartered Surveyors, on an
+open market for existing use basis.
+The directors are of the view that there is no material difference between the carrying value and market value
+at 30 June 2024, informed by a further professional valuation performed by RICS registered Chartered
+Surveyors in January 2024, on an open market for existing use basis.
+-32-
+WEST BROMWICH ALBION GROUP LIMITED
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+16 Investment property (Continued)
+The carrying value of land and buildings comprises:
+Group Company
+2024 2023 2024 2023
+. £'000 £'000 £'000 £'000
+Freehold 500 500 - -
+Long leasehold 868 434 - -
+: 1,368 934 - -
+17 Subsidiaries .
+Details of the company's subsidiaries at 30 June 2024 are as follows:
+Name of undertaking Registered office Nature of business Class of % Held
+shares held Direct
+West Bromwich Albion Football England Professional Football Ordinary 100.00
+Club Limited Club
+WBA Football Development England Football development Ordinary 100.00
+Limited centre
+West Bromwich Albion Heritage England Dormant Ordinary 100.00
+Limited
+The registered office of all subsidiary undertakings is the same as the registered office of the parent company,
+being: The Hawthorns, West Bromwich, West Midlands, B71 4LF.
+18 Stocks
+Group Company
+2024 2023 2024 2023
+£'000 £'000 £000 £'000
+Finished goods and goods for resale 414 824 - -
+Stocks are stated after provisions for impairment of £8,000 (2023: £80,251).
+There is no material difference between the replacement cost of stocks and the amounts stated above.
+-33-
+WEST BROMWICH ALBION GROUP LIMITED
+; NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024 : ; :
+19 Debtors
+Group Company .
+2024 2023 2024 2023
+Amounts falling due within one year: £000 £'000 £'000 £'000
+Trade debtors 2,831 2,492 - -
+Amounts receivable in respect of player
+transfers 1,834 3,034 - -
+Corporation tax recoverable 18 18 - -
+Amounts owed by group undertakings 1,321 - 52,564 34,451
+Amounts owed by West Bromwich Albion
+Holdings Limited - 4,056 - -
+: Amounts owed by Wisdom Smart Corporation
+Limited - 5,273 - 5,273
+Other debtors 243 795 1 -
+Prepayments and accrued income 742 2,478 - -
+6,989 18,146 52,565 39,724
+Amounts falling due after more than one year: :
+Amounts receivable in respect of player
+transfers 1,987 3,821 - -
+Amounts owed by group undertakings 5,780 - - -
+: 7,767 3,821 - -
+Total debtors 14,756 21,967 _ 52,565 39,724
+‘ +34.
+WEST BROMWICH ALBION GROUP LIMITED
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+19 Debtors {Continued}
+Trade debtors are stated after provisions for impairment of £11,000 (2023: £11,000).
+Amounts owed by West Bromwich Albion Holdings Limited at 30 June 2023 consisted of amounts totalling
+£3,778,000 ("2014 loan") which were unsecured, repayable on demand and accrued interest at the Bank of
+England's Base rate + 5% and amounts totalling £278,000 representing legal and professional costs incurred
+on behalf of West Bromwich Albion Holdings Limited and are interest free, unsecured and repayable on
+demand. Prepayments and accrued income included additional accrued interest amounts due from West
+Bromwich Albion Holdings Limited of £1,615,000.
+As part of the acquisition by Bilkul Football WBA, LLC, the liabilities associated with the 2014 loan have been
+novated to Bilkul Football WBA, LLC on 28 February 2024 and the guarantee by Yunyi Guokai (Shanghai)
+Sports Development Limited has been released. In addition, Bilkul Football WBA, LLC has assumed full
+responsibility to repay the 2014 Loan with all accumulated interest, the repayment date being varied to 12
+September 2026. As a result, as at 30 June 2024, amounts have been reclassified to amounts falling due after
+more than one year totalling £5,780,000. In addition costs associated with the acquisition settled by West
+Bromwich Albion Group Limited and it's subsidiaries are outstanding at 30 June 2024 and total £1,321,000
+and are unsecured, interest free and repayable on demand.
+During the period ended 30 June 2021, the company made unsecured loans totalling £4,950,000 with fixed
+interest of £50,000 to Wisdom Smart Corporation Limited. Following non-repayment of amounts due to the
+group and company, interest of 1% above the Bank of England base rate has accrued. On 28 February 2024
+Bilkul Football WBA, LLC acquired an 87.8% shareholding in West Bromwich Albion Group Limited. As part of
+the acquisition by Bilkul Football WBA, LLC, the liabilities associated with the March 2021 Wisdom Smart
+loans between Wisdom Smart Corporation Limited and West Bromwich Aibion Group Limited were novated to
+Bilkul Football WBA, LLC. The Wisdom Smart loans including accrued interest have been repaid to West
+Bromwich Albion Group Limited by Bilkul Football WBA, LLC by 30 June 2024.
+20 Creditors: amounts falling due within one year
+Group Company
+2024 2023 2024 2023
+Notes £'000 £'000 £000 £'000
+Other borrowings 22 1,805 455 - 455
+Trade creditors 1,593 1,232 - -
+Amounts payable in respect of player .
+transfers 2,700 5,139 - -
+Amounts owed to group undertakings 10,000 - 10,000 -
+: Other taxation and social security 1,920 3,722 - - :
+Government grants 24 67 67 - -
+Other creditors 768 726 222 2
+Accruals and deferred income 8,712 10,724 -- -
+27,565 22,065 10,222 457
+Amounts totalling £10,000,000 relate to interest free, unsecured, repayable on demand loans provided by
+Bilkul Football WBA, LLC in line with the agreed EFL funding arrangement.
+-35-
+WEST BROMWICH ALBION GROUP LIMITED © .
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+21 Creditors: amounts falling due after more than one year
+Group Company
+. : 2024 2023 2024 2023
+Notes £'000 £'000 £000 £000
+Other borrowings 22 27,508 "18,945 25,524 18,945
+Amounts payable in respect of player
+transfers 2,600 5,300 - : -
+Government grants 24 . 928 995 - -
+, 31,036 25,240 25,524 18,945
+22 Loans and overdrafts
+Group Company
+2024 2023 2024 2023
+£'000 £'000 £'000 £'000
+Other loans 29,313 19,400 25,524 19,400
+Payable within one year 1,805 455 - 455
+Payable after one year 27,508 18,945 25,524 18,945
+Other loans include a loan facility totalling £28,000,000 (2023: £20,000,000) from MSD UK Holdings Limited
+~ (MSD), which has been fully drawn down, incurring £752,441 (2023: £600,000) in transaction fees. The loan is
+secured by a fixed and floating charge over all of the assets of West Bromwich Albion Group Limited, West
+Bromwich Albion Football Club Limited, WBA Football Development Limited and West Bromwich Albion
+Heritage Limited. The loan is repayable over a 4-year term ending on 20 December 2026 and carries a
+floating interest charge against the draw down amount being the daily non-cumulative compounded SONIA
+rate + 9.75%. Additional mandatory capital repayments are required on the receipt of player transfer fees with
+any repayments being assessed at the end of each transfer window, and a number of repayments have been
+made by 30 June 2024. .
+Other loans also include a debt factoring arrangement, entered into during the year. Under the terms of this
+arrangement, the company assigns receivables to the factor in exchange for immediate cash proceeds,
+repayable over a two year term. The factoring arrangement is with recourse, meaning the company retains the
+credit risk on the receivables. The factor holds a security interest over the receivables.
+As at the balance sheet date, the company had factored player transfer receivables with a carrying amount of
+£4,000,000 (2023: ENil).
+The company continues to recognise the receivables in the statement of financial position as the risks and
+: rewards of ownership have not been substantially transferred.
+-36-
+WEST BROMWICH ALBION GROUP LIMITED ;
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+, 23 Financial instruments
+. Group Company
+2024 2023 2024 2023
+£'000 £'000 £'000 £'000
+Carrying amount of financial assets
+Debt instruments measured at amortised cost 7,767 3,821 - -
+Financial assets that are measured at
+undiscounted amount receivable 9,054 28,421 52,565 39,827
+Carrying amount of financial liabilities
+Measured at amortised cost 31,913 24,700 25,524 19,400
+Financial liabilities that are measured at
+undiscounted amount payable 18,221 11,487 10,222 2
+, Financial assets measured at undiscounted amount of the cash or other considerations, expected to be paid
+or received comprise cash at bank, trade debtors, amounts receivable in respect of player transfers within one ,
+year, other debtors, accrued income and amounts owed by group undertakings.
+Financial assets measured at amortised cost comprise amounts receivable in respect of player transfers
+. falling due after more than one year and amounts owed by group undertakings due after more than one year.
+Financial liabilities measured at undiscounted amount payable comprise trade creditors, amounts payable in
+respect of player transfers within one year, amounts owed to group undertakings, other creditors and accruals.
+Financial liabilites measured at amortised cost comprise other borrowings and amounts payable in respect of
+player transfers falling due after more than one year.
+24 Government grants :
+Group Company
+2024 2023 2024 2023
+£000 £'000 £'000 £'000
+Arising from government grants 995 1,062 - -
+: Deferred income is included in the financial statements as follows:
+Current liabilities 67 67 - -
+Non-current liabilities 928 995 - -
+995 1,062 - coe
+25 Share capital
+Group and company 2024 2023 2024 2023
+Ordinary share capital Number Number £'000 £'000
+Issued and fully paid
+9,620 Ordinary shares of £10 each 9,620 9,620 96 96
+-37-
+WEST BROMWICH ALBION GROUP LIMITED
+‘NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024 ,
+26 Reserves
+Merger reserve
+The merger reserve represents relief given under Companies Act 2006 from the need to transfer share
+premium account the difference between the nominal value of shares issued by the company to acquire ,
+shares in another company, as part of a business combination, and the fair value. of those issued shares.
+Revaluation reserve ,
+The investment property revaluation reserve represents amounts revalued in relation to investment property,
+net of deferred tax recognised on the revaluation.
+Profit and loss account
+The profit and loss account reserve represents all current and prior period cumulative profit and losses. The
+profit and loss account reserve comprises the profit and loss account and the investment property revaluation
+reserve. The investment property revaluation reserve is shown separately in order to disclose fair value
+movements.
+27 ~=Contingent liabilities
+. a) The terms of certain contacts with other football clubs in respect of the transfer of players’ registrations
+: include the payment of certain amounts upon fulfilment of a specific number of appearances in the future, or
+the occurrence of future events, which amounts to £4.43m (2023: £7.6m). .
+b) Other loans due to MSD are secured by a fixed and floating charge over all of the assets of West Bromwich
+Albion Group Limited, West Bromwich Albion Football Club Limited, WBA Football Development Limited and
+West Bromwich Albion Heritage Limited.
+28 Business combinations
+In June 2024, West Bromwich Albion Football Club Limited, one of the subsidiaries of West Bromwich Albion ,
+Group Limited acquired West Bromwich Albion Football Club Women Limited's business and assets as a
+going concern for a total consideration of £1 and assumed responsibility for and to discharge the creditors.
+Assets acquired and liabilities assumed were immaterial to the financial statements.
+29 Operating lease commitments -
+Lessee
+, At the reporting end date the group had outstanding commitments for future minimum lease payments under
+non-cancellable operating leases, which fall due as follows:
+Group Company
+2024 2023 2024 2023
+£'000 £°000 £'000 £'000
+Within one year 68 75 - :
+- Between two and five years 39 101 - -
+In over five years 2 2 - -
+, 109 178 - -
+-38-
+WEST BROMWICH ALBION GROUP LIMITED
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+30 Capital commitments
+At 30 June 2024 and 30 June 2023, the Group had the following capital commitments:
+2024 2023
+£'000 £'000
+Contracts for future capital expenditure not
+provided in financial statements - Freehold
+property 783 783
+: The above capital commitment relates to the installation of a new bollards system around the stadium to
+ensure that The Hawthorns is as secure as possible for spectators.
+31. Pension commitments :
+The Group operates defined contribution pension schemes. The assets of the schemes are held separately
+from those of the Group in independently administered funds. The pension cost charge represents
+contributions payable by the Group to the funds and amounted to £177,456 (2023: £159,668). Contributions
+totalling £35,097 (2023: £27,607) were payable to the funds at the balance sheet date and are included in
+creditors.
+32 Related party transactions
+Remuneration of key management personnel
+The directors consider there to be no key management personnel, other than the directors of West Bromwich
+Albion Football Club Limited, who have authority and responsibility for planning, directing and controlling the
+activities of the Group. Remuneration of the key management personnel, including Employers NI, for the
+period was £817,000 (2023: £1,211,000). :
+-39-
+WEST BROMWICH ALBION GROUP LIMITED
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+32 Related party transactions (Continued)
+Transactions with Wisdom Smart Corporation Limited
+During the period ended 30 June 2021, the company made unsecured loans totalling £4,950,000 with fixed
+interest of £50,000 to Wisdom Smart Corporation Limited, a company over which G Lai exerted significant
+influence and was a member of key management personnel. Following non-repayment of amounts due to the
+group and company, interest of 1% above the Bank of England base rate accrued £220,000 during the year
+(£214,000 in the year to 30 June 2023). On 28 February 2024 Bilkul Football WBA, LLC acquired an 87.8%
+: shareholding in West Bromwich Albion Group Limited. As part of the acquisition by Bilkul Football WBA, LLC,
+the March 2021 Wisdom Smart loans were novated to Bilkul Football WBA, LLC and have been repaid in full
+in March 2024.
+Transactions with West Bromwich Albion Holdings Limited and Bilkul Football WBA, LLC
+Amounts owed by West Bromwich Albion Holdings Limited at 30 June 2023 consisted of amounts totalling
+£3,778,000 ("2014 loan") which were unsecured, repayable on demand and accrued interest at the Bank of
+England's Base rate + 5% and amounts totalling £278,000 representing legal and professional costs incurred
+on behalf of West Bromwich Albion Holdings Limited and were interest free, unsecured and repayable on
+demand. Prepayments and accrued income included additional accrued interest amounts due from West
+Bromwich Albion Holdings Limited of £1,615,000.
+As part of the acquisition by Bilkul Football WBA, LLC, the liabilities associated with the 2014 loan have been
+novated to Bilku! Football WBA, LLC on 28 February 2024 and the guarantee by Yunyi Guokai (Shanghai)
+Sports Development Limited has been released. In addition, Bilkul Football WBA, LLC has assumed full
+responsibility to repay the 2014 Loan with all accumulated interest, the repayment date being varied to 12
+September 2026. As a result, as at 30 June 2024, amounts have been reclassified to amounts falling due after
+more than one year totalling £5,780,000, with interest charged on this loan of £388,000 during the year to 30
+: June 2024. In addition costs associated with the acquisition settled by West Bromwich Albion Group Limited
+and it's subsidiaries are outstanding at 30 June 2024 and total £1,321,000 and are unsecured, interest free
+and repayable on demand. Bilkul Football WBA, LLC have also injected £10,000,000 of interest free
+shareholder loans.
+The Albion Foundation
+During the year, the group processed payroll on behalf of The Albion Foundation at a total value of £1,781,453
+(2023: £1,941,000) and have been repaid in full. £Nil (2023: £180,000) was outstanding at the balance sheet
+date within other debtors.
+During the year, the group made sales to The Albion Foundation totalling £30,056 (2023: £24,782) and
+incurred purchases totalling £43,899 (2023: £46,750). £2,785 (2023: £48,776) was outstanding at the balance
+sheet date within trade debtors and £1,510 (2023: £18,468) was due within trade creditors.
+M Miles is also a director of The Albion Foundation. : :
+-40-
+WEST BROMWICH ALBION GROUP LIMITED
+
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR ENDED 30 JUNE 2024
+
+33 “Events after the reporting date
+Since the Balance Sheet date various players have been signed and sold. In addition, Head Coach Carlos
+Corberan departed the club. The income arising from transfers and compensation agreements, taking into ac-
+count the applicable levies and sell on clauses is £8,541 ,000.
+The Club acquired various players from transfers including the applicable levies is £4,012,000. These transfers
+will be accounted for in the year ending June 2025.
+Bilkul Football WBA, LLC, have continued to provide operating monies for the club. An additional capital
+injection totalling £15.1m has been received, aligned with the EFL funding agreement. These monies have
+been transferred to West Bromwich Albion Football Club Limited from West Bromwich Albion Group Limited.
+Other borrowings representing a debt factoring arrangement have been repaid since the balance sheet date.
+Amounts totalling £419,000 have been repaid to MSD.
+!n December 2022, the club announced that it had commissioned an independent investigation by a leading
+King’s Counsel (KC) into the 2014 loan by the Club to West Bromwich Albion Holdings Limited. The KC was
+provided with a substantial amount of documentation and evidence. The investigation took 18 months to
+complete and concluded in August 2024. It was in the’ stakeholders’ interest for the investigation to be as
+thorough as possible. The club statement made on 14 August 2024 explained that the report was reviewed
+carefully by both the Club and the representative of S4A (Shareholder for Albion), with their respective
+solicitors. Having done so, both concluded that no further action will be taken and, so far as both the Club and
+S4A are concerned, the matter is closed.
+
+34 ~=©Controlling party
+At 30 June 2023, the company's ultimate parent company was Yunyi Guokai (Shanghai) Sports Development
+Limited, a company registered in China, and the ultimate UK parent was West Bromwich Albion Holdings
+Limited. :
+On 28 February 2024 Bilkul Football WBA, LLC — a company ultimately owned by Shilen Patel and Dr Kiran
+C. Patel ~ acquired an 87.8% shareholding in West Bromwich Albion Group Limited.
+
+‘ . -41-
+4 .
+WEST BROMWICH ALBION GROUP LIMITED
+NOTES TO THE GROUP FINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+35 Cash absorbed by group operations
+2024 2023
+£'000 £'000
+Loss for the year after tax (37,649) (7,621)
+Adjustments for:
+Investment income (1,121) (948)
+Gain on disposal of player registrations (3,534) (6,545)
+Amortisation and impairment of intangible assets 8,750 11,313
+Depreciation and impairment of tangible fixed assets 1,145 1,146
+Reversal of impairment of Wisdom Smart Corporation loan - (5,059) a
+Movements in working capital:
+Decrease/(increase) in stocks 410 (223) :
+Decrease/(increase) in debtors excluding player transfer receivables 1,949 (1,192)
+Decrease in creditors excluding player transfer payables (3,403) (3,982)
+Increase in amounts due from West Bromwich Albion Holdings Limited - (91)
+Cash absorbed by operations (33,453) (13,202)
+36 = Analysis of changes in net debt - group ,
+. 1 July 2023 Cash flows 30 June 2024
+£'000 £'000 £'000
+Cash at bank and in hand 12,771 - (9,946) 2,825
+Borrowings excluding overdrafts (19,400) (9,913) (29,313)
+, (6,629) (19,859) (26,488)
+-42-
+NS ,
 

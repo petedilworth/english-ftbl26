@@ -2,7 +2,7 @@ source: Companies House filing, preston-north-end-fc__1.pdf
 document: aBPSUCpYI5_WFvyaB4qWqNVT8U1XFEU4Yvs4GK_oH9E
 made_up_date: 2025-06-30
 method: ocr
-pages_read: 12 of 21
+pages_read: 21 of 21
 
 |/
 , The Preston North End Football Club Limited
@@ -396,4 +396,366 @@ Total contributions by owners 12 12,013 12,025
 Balance at 30 June 2025 373 83,517 (83,102) 788
 The notes on pages 11 to 19 form part of the financial statements.
 : 10
+: The Preston North End Football Club Limited
+Strategic report, Directors’ report and Financial statements
+30 June 2025
+Notes
+(forming part of the financial statements)
+1 Accounting policies
+The Preston North End Football Club Limited (the “Company”) is a private company limited by shares and
+incorporated, domiciled and registered in England in the UK. The registered number is 039494 and the registered
+address is Sir Tom Finney Way, Deepdale, Preston, Lancashire, PR1 6RU
+These financial statements were prepared in accordance with Financial Reporting Standard 102 The Financial
+Reporting Standard applicable in the UK and Republic of Ireland (“FRS 102”). The presentation currency of these
+financial statements is sterling. All amounts in the financial statements have been rounded to the nearest £1,000.
+The company’s parent undertaking, Deepdale PNE Holdings Limited includes the company in its consolidated financial
+statements. The consolidated financial statements of Deepdale PNE Holdings Limited are available to the public and
+may be obtained from Preston North End Football Club Limited, Sir Tom Finney Way, Deepdale, Preston, PR1 6RU.
+In these financial statements, the company is considered to be a qualifying entity (for the purposes of this FRS) and has
+applied the exemptions available under FRS 102 in respect of the following disclosures: .
+« Reconciliation of the number of shares outstanding from the beginning to end of the period;
+e Cash flow statement and related notes; and
+e Key management personne! compensation. ,
+As the consolidated financial statements of Deepdale PNE Holdings Limited include the equivalent disclosures, the :
+company has also taken the exemptions under FRS 102 available in respect of the following disclosures:
+e The disclosures required by FRS 102.11 Basic Financial Instruments and FRS 102.12 Other Financial Instrument
+Issues in respect of financial instruments not falling within the fair value accounting rules of Paragraph 36(4) of
+Schedule 1
+As the company is a wholly owned subsidiary of Preston North End Limited, the company has taken advantage of the
+exemption contained in FRS102.33.1A and has therefore not disclosed transactions or balances with entities which form
+part of the group (or investees of the group qualifying as related parties).
+The financial statements are prepared on the historical cost basis and the accounting policies set out below have, unless
+otherwise stated, been applied consistently to all periods presented in these financial statements.
+Judgements made by the directors, in the application of these accounting policies that have significant effect on the
+financial statements and estimates with a significant risk of material adjustment in the next year are discussed in note
+18,
+Going concern
+Notwithstanding net current liabilities of £4,791,000 as at 30 June 2025 and a loss for the year then ended of
+£11,684,000 the financial statements have been prepared on a going concern basis, which the directors believe to be
+appropriate for the following reasons.
+The directors acknowledge that, in common with many football clubs in the Championship, the company and its group
+is likely to incur future losses and net cash outflows.
+The directors have prepared detailed cash flow forecasts that show that it has a projected additional cash flow
+requirement for at least twelve months from the approval of these financial statements. This assumes that the company
+will have stable revenue and that the stadium will continue to operate at normal capacity during the 2025/26 and
+2026/27 seasons, but should this not be the case, the directors will revisit cash requirements for the remainder of the :
+period. The company is also subject to Financial Fair Play rules which require adherence to certain financial targets.
+Achieving the forecasts will require the group to carefully monitor and react to performance against these financial
+targets.
+As in previous years the forecasts have been prepared on a cautious basis such that a good performance in the league,
+. a player sale, a cup mun, or increased TV coverage will significantly increase projected income and therefore reduce
+the projected cash flow requirement. Conversely actual income streams may not be as high as forecasted or the club
+may choose, subject to having sufficient funding in place, to make additional signings in the January and/or August
+transfer windows if this is considered to be in its best interests and this could increase the projected cash flow
+requirement.
+;
+: i
+|
+i
+y
+The Preston North End Football Club Limited
+Strategic report, Directors’ report and Financial statements
+30 June 2025
+
+Notes (continued)
+
+1 Accounting policies (continued)
+
+Going concern (continued)
+
+These forecasts are dependent on the intermediate parent company, Deepdale PNE Holdings Limited, providing
+additional financial support during that period. Deepdale PNE Holdings Limited has indicated that it will provide
+additional funding as necessary for the period covered by the forecasts, however, is itself indirectly reliant on support
+from its immediate parent undertaking, Grovemoor Limited. Based on discussions with the relevant ultimate
+shareholders and shareholder related parties, the directors are of the view that sufficient additional funds will be
+available from those parties and that the company's intermediate parent company will not request repayment of the
+outstanding loans provided for at least 12 months from the date of signing these financial statements. As with any
+company placing reliance on other group entities for financial support, the directors acknowledge that there can be no
+certainty that Deepdale PNE Holdings Limited or Grovemoor Limited have the ability to provide this financial support
+or that it will continue to provide it, although, at the date of approval of these financial statements, they have no reason
+to believe that it will not do so.
+
+The Group have engaged Rothschild & Co to consider various future ownership models and future investment into
+the football club and would actively engage with such potential organisations or individuals who would be interested
+in investing. At the current stage there are no active offers and Grovemoor Limited will continue to provide support
+as detailed as above. :
+
+Based on these indications, the directors believe that it remains appropriate to prepare the financial statements on a
+going concer basis. However, the above circumstances represent a material uncertainty which may cast significant
+doubt on the company's ability to continue as a going concern and therefore to continue realising its assets and
+discharging its liabilities in the normal course of business. The financial statements do not include any adjustments
+that would result from the basis of preparation being inappropriate.
+
+Turnover
+
+Tumover comprises income from television rights, gate receipts, merchandising royalty income, sponsorships and
+other commercial activities, exclusive of value added tax. Season ticket, sponsorship income received and other
+commercial activities prior to the year-end in respect of the following football scason is recognised over the season to
+which it relates. Where such income is in respect of future seasons it is treated as deferred income. Fixed elements of
+Premier League and English Football League distributions are recognised in the period July to June in the relevant
+football season. Royalties on merchandising sales are recognised on the date the goods and services are supplied to
+the customer.
+
+Pensions
+
+A defined contribution plan is a post-employment benefit plan under which the company pays fixed contributions into
+a separate entity and wil] have no legal or constructive obligation to pay further amounts. Obligations for contributions
+to defined contribution pension plans are recognised as an expense in the profit and loss account in the periods during
+which services are rendered by employees. :
+
+Player registrations and signing on fees
+
+Transfer fees and amounts paid to third parties for player registrations are capitalised as intangible fixed assets and
+are amortised on a straight-line basis over the period of the respective players’ contracts. Any transfer fees payable
+as a result of the occurrence of one or more uncertain future events are capitalised when it is probable such an event
+will occur.
+
+Player registrations are assessed on an annual basis and impairment losses arising are charged to the profit and loss
+account in the period in which they arise. Any surpluses arising are not accounted for.
+
+Player signing on fees have been expensed to the profit and loss account as wages and salaries over the period to
+which they relate, which is considered to be the length of the player's initial or subsequently extended contract with
+the club. The profit or loss on the disposal of a player registration is calculated after charging any signing on fees
+which become payable as a result of the disposal.
+
+Amounts receivable and payable under player transfer agreements are often deferred over more than one season.
+Amounts receivable and payable are discounted to present value where the amounts are considered material.
+
+12
+The Preston North End Football Club Limited
+Strategic report, Directors’ report. and Financial statements
+: 30 June 2025
+Notes (continued)
+Defined contribution plans and other long-term employee benefits
+A defined contribution plan is a post-employment benefit plan under which the Company pays fixed contributions
+into a separate entity and will have no legal or constructive obligation to pay further amounts. Obligations for
+contributions to defined contribution pension plans are recognised as an expense in the profit and loss account in the .
+periods during which services are rendered by employees.
+Taxation
+Tax on the profit or loss for the year comprises current and deferred tax.
+Current tax is the expected tax payable or receivable on the taxable income or loss for the year, using tax rates enacted
+or substantively enacted at the balance sheet date, and any adjustment to tax payable in respect of previous years. ‘
+: Deferred tax is provided on timing differences which arise from the inclusion of income and expenses in tax
+assessments in periods different from those in which they are recognised in the financial statements. Deferred tax is
+not recognised on permanent differences arising because certain types of income or expense are non-taxable or are
+disallowable for tax or because certain tax charges or allowances are greater or smaller than the corresponding income
+or expense.
+Deferred tax is measured at the tax rate that is expected to apply to the reversal of the related difference, using tax
+fates enacted or substantively enacted at the balance sheet date. Deferred tax balances are not discounted.
+Basic financial instruments
+Trade and other debtors / creditors
+Trade and other debtors are recognised initially at transaction price less attributable transaction costs. Trade and other
+creditors are recognised initially at transaction price plus attributable transaction costs. Subsequent to initial
+recognition they are measured at amortised cost using the effective interest method, less any impairment losses in the
+: case of trade debtors.
+2 Turnover
+2025 2024
+‘ £000 £000
+Season and match day ticket sales (including cup games) 5,387 4,315
+Premier League and English Football League distributions and televised games 11,819 9,484
+Commercial and media revenue 1,428 1,272
+Merchandising 159 160
+Other income 83 80
+Total tumover 18,876 15,311
+: 3 Staff numbers and costs
+The average number of persons employed by the company (including directors) during the year, analysed by category,
+. was as follows:
+‘ Number of employees
+2025 2024
+Players, managerial training staff and administration 123 120
+: 13
+i
+|
+The Preston North End Football Club Limited
+Strategic report, Directors’ report and Financial statements
+. 30 June 2025
+Notes (continued)
+3 Staff numbers and costs (continued)
+Included in the above total are 29 (2024: 32) first team players, 24 (2024: 19) youth team players, 19 (2024: 19) first
+team backroom & support staff, 16 (2024-15) youth team backroom & support staff and 35 (2024:35) administration
+and support staff.
+In addition to the above, the company employed an average of 115 (2024: 115) match day staff during the year.
+The aggregate payroll costs of these persons were as follows:
+2025 2024
+£000 £000
+. Wages and salaries 22,418 18,648
+Social security costs 3,161 2,573
+Contributions to defined contribution plans 91 72 :
+25,670 21,293
+4 Remuneration of directors
+2025 2024
+£000 £000
+Directors” emoluments 422 409
+Group contributions to defined contribution pension plans 11 10
+Remuneration in respect of Peter Ridsdale is paid by Hemway Limited and recharged to the company.
+Number of directors
+Retirement benefits are accruing to the following number of directors under:
+Defined contribution schemes 2 2
+5 Expenses and auditor’s remuneration
+2025 2024
+£000 £000
+Audit of these financial statements 59 57
+Other services relating to taxation 6 5
+Amortisation of player registrations 3,606 2,076
+6 . Interest receivable and similar income
+2025 2024
+£000 £000
+Bank interest receivable 36 25
+14
+y
+The Preston North End Football Ctub Limited .
+Strategic report, Directors’ report and Financial statements
+. 30 June 2025
+Notes (continued)
+7 Taxation
+Total tax expense recognised in the profit and loss account, other comprehensive income and equity
+2025 2024
+£000 £000
+Current tax
+Current tax on income for the period (4,297) (3,432)
+Total current tax (4,297) - (3,43?)
+Total tax (4,297) (3,432)
+2025 2024
+£000 £000 £000 £000 £000 £000
+Current Deferred Total Currenttax Deferred Total
+tax tax Tax tax Tax
+Recognised in profit and loss account (4,297) - (4,297) (3,432) = (3,432)
+Total tax (4,297) = (4,297) (3,432) = (3,432)
+Reconciliation of effective tax rate
+. 2025 2024
+£000 £000
+Loss for the year (11,684) (8,891)
+Total tax income (4,297) (3,432)
+Loss excluding taxation (15,981) (12,323)
+Tax using the UK corporation tax rate of 25% (2024: 25%) (3,995) (3,081)
+Non-deductible expenses 33 21
+Non-taxable income (2) _
+Other - (2)
+Losses surrendered to other group companies for group relief 3,964 3,062
+Payment received in respect of group relief (4,297) (3,432)
+Total tax (4,297) (3,432)
+The UK corporation tax rate applicable is 25% for the financial year beginning 1 April 2024 (previously 19% in the
+financial year beginning | April 2022) as announced in the 3 March 2021 budget.
+1S
+The Preston North End Football Club Limited
+. : Strategic report, Directors’ report and Financial statements
+: 30 June 2025
+: Notes (continued)
+8 Intangible fixed assets ,
+: Player registrations
+£000
+Cost
+At 1 July 2024 . 13,460
+‘Additions $,306
+. Disposals (3,210)
+At 30 June 2025 15,556
+Amortisation
+Atl July 2024 8,965
+Charged in year , 3,606
+On disposals (3,209)
+At 30 June 2025 9,362
+Net book value
+At 30 June 2025 : 6,194
+At 30 June 2024 4,495
+9 Debtors
+2025 2024
+£000 £000
+Trade debtors , 442 388
+Amounts due from Group companies . 59
+Other debtors 187 95
+Prepayments and accrued income 1,115 746
+: 1,744 1,288
+i
+! 16
+y
+The Preston North End Football Club Limited
+Strategic report, Directors’ report and Financial statements
+30 June 2025
+Notes (continued)
+10 Creditors: amounts falling due within one year
+2025 2024
+£000 £000
+Trade creditors 4,231 1,866
+Other loans . *
+Taxation and social security 1,024 1,121
+Other creditors 17 18
+Accruals and deferred income 3,635 2,990
+8,907 5,995
+11 Creditors: amounts falling due after more than one year
+2025 2024
+£000 £000
+Trade Creditors 615 994
+12 Contingent transfer fees
+The commitment for additional transfer fees payable in respect of future possible appearance fees arising from player
+registration purchase agreements amounts to £283,000 (2024: £500,000). These amounts have not been included in
+the financial statements on the basis that they are not yet considered probable. There are further payments that would
+become payable based on future uncertain events, including the club reaching the Championship play-offs, the play-
+off final and/or achieving promotion to the Premier League. There are ulso additional payments that would be due to
+former clubs, based on a percentage of profit generated in the event that certain players’ registrations were sold for a
+profit. These payments are also not included in the financial statements and would be funded by amounts receivable
+that would more than outweigh the potential liabilities.
+The company has in place a number of player registration sale contracts that could give rise to contingent receivables.
+These amounts have not been reflected in the financial statements as the Directors deemed that the amounts receivable
+were not probable as at the year end.
+13 Called up share capital
+2025 2024
+. £000 £000
+Allotted, called up and fully paid
+372,801 ordinary shares of £1 each (2024: 360,788 ordinary shares of £1 each) 373 36l
+During the year, the company issued 12,013 £1 ordinary shares for consideration of £12,025,013.
+7
+The Preston North End Football Club Limited
+: Strategic report, Directors’ report and Financial statements
+‘ 30 June 2025
+Notes (continued) .
+14 Operating leases
+Non-cancellable operating lease rentals are payable as follows:
+2025 2024
+: £000 £000
+Less than one year ; 55 55
+Between one and five years 46 68
+. 101 123
+During the year £67,000 was recognised as an expense in the profit and loss account in respect of operating leases .
+(2024: £62,000).
+15 Related parties :
+Group
+Identity of related parties with which the group has transacted
+The company is wholly owned by Preston North End Limited which, in turn, is wholly owned by Deepdale PNE
+Holdings Limited (DPNE). DPNE is ultimately controlled by the Hemmings family interests.
+During the financial year, Preston North End Limited has subscribed for 12,013 new £1.00 ordinary shares in the
+company at a premium of £1,000 per share (total proceeds £12,025,013).
+Northern Trust Company Limited (NTC) is also a company ultimately controlled by the Hemmings family interests.
+During the year, the Company has received payments totalling £4,297,000 from NTC in return for corporation tax losses
+generated by the Company and which will be used by NTC to reduce its own liability to corporation tax.
+Kevin Abbott is a director of the company. He is also a director of Rainbow Hub NW Limited (RHNW). During the
+year, the company donated £5,000 towards fundraising events of RHNW.
+Kevin Abbott is a director of the company. He is also a director of The Preston North End Community and Education
+Trust (PNECET). During the year, PNECET made payments to the company totalling £13,689 for products, services
+and also services which had been invoiced to the company as part of shared contracts.
+16 Subsequent events :
+Since the year end the company bas received funding from the ultimate shareholder of £5,095,000 and acquired the
+registration of nine players.
+On 13th October 2025, Ian Penrose joined the company as Non-executive Chairman, replacing Craig Hemmings.
+17 Ultimate parent company and controlling party
+The ultimate controlling party is Wordon Limited, whose registered office is Masonic Building, Water Street, Ramsey,
+Isle of Man.
+The ultimate controlling party of Wordon Limited are the trustees of the discretionary trust. The potential beneficiaries
+of this trust are certain members of the family of Mr TJ Hemmings. Wordon Limited does not prepare consolidated
+accounts.
+The smallest group in which the results of the company are consolidated is that headed by Preston North End Limited. :
+Preston North End Limited’s accounts are also consolidated into their parent company’s accounts, Deepdale PNE
+Holdings Limited.
+18 ,
+The Preston North End Football Club Limited
+Strategic report, Directors’ report and Financial statements
+30 June 2025
+Notes (continued)
+18 Accounting estimates and judgements
+Key sources of estimation uncertainty
+The board considers the key significant judgement to be the judgement that the going concer basis is appropriate. It
+would only be in circumstances where this was not the case that the judgemental areas in the accounts would carry
+risk of material adjustment in future years. For example, the carrying value of the intangible assets is supported by
+either the expectation that players will play out their contracts or the knowledge that appropriate transfer fees would
+be sought where the player is sold before expiry of the initial contract.
+19
 

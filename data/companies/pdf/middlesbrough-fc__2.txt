@@ -2,7 +2,7 @@ source: Companies House filing, middlesbrough-fc__2.pdf
 document: wObvgVLIJ-wGB7ZgnhOFBRO22YNdbJC2ArBKwOb2Nws
 made_up_date: 2024-06-30
 method: ocr
-pages_read: 12 of 35
+pages_read: 35 of 35
 
 Middlesbrough Football & Athletic
 
@@ -468,4 +468,725 @@ Leeds, UK.
 BDO LLP isa limited liability partnership registered in England and Wales (with registered number’
 0C305127).
 10
+Middlesbrough Football & Athletic Company (1986) Limited
+Statement of Comprehensive Income for the year ended 30 June 2024
+Note 30 June 30 June
+2024 2023
+. £000 £°000
+Turnover : 1 ” 32,247 28,594
+Cost of sales : (47,927) (45,011)
+Gross loss (15,680) (16,417)
+Administrative expenses before player amortisation (5,344) (5,006)
+and impairment
+Player amortisation and impairment (9,220) (11,566)
+Administrative expenses (14,564) (16,572)
+. Profit on sale of registrations 17,112 22,319
+Other operating income 4 1,210 3,938
+Operating loss (11,922) (6,732)
+Interest payable and similar expenses 5 (1,240) (161)
+Interest receivable and similar income 6 735 494
+Loss before taxation 7 . (12,427) (6,399)
+Tax on loss 8 2,838 1,939
+: Loss for the financial year (9,589) (4,460)
+Other Comprehensive Income for the Year
+Unrealised surplus on property revaluation 10 9,789 -
+Tax on other comprehensive income 16 (2,447) -
+Total Comprehensive Loss for the Year (2,247) (4,460)
+All of the Company’s operations are continuing.
+The notes on pages 19 to 33 form an integral part of these financial statements.
+11
+Middlesbrough Football & Athletic Company (1986) Limited
+Balance sheet as at 30 June 2024
+Note 2024 2024 2023 2023 ;
+: £000 £000 £7000 £7000 ,
+Fixed assets
+Intangible assets 9 17,462 10,624
+Tangible assets 10 $4,982 44,761
+72,444 55,385
+Current assets
+Stocks 11 872 400
+Debtors 12 15,256 14,487
+Cash at bank and in hand 344 378
+16,472 15,265 /
+Creditors: amounts falling due within :
+one year 13 (46,283) (179,527)
+Net current liabilities . (29,811) (164,262)
+Total assets less current liabilities 42,633 (108,877)
+Creditors: amounts falling due after
+more than one year 140 > (12,274) (10,045)
+, . Provisions for liabilities 15 (20,304) (17,462)
+Non-Current Liabilities (32,578) (27,507)
+Net assets/(liabilities) 10,055 (136,384)
+Capital and reserves
+Called up share capital 17 65,056 64,056
+Share premium 18 105,686 -
+Capital contribution 18 68,000 26,000
+Revaluation reserve 18 30,146 23,898 ,
+Profit and loss account 18 (258,833) (250,338)
+Total shareholder equity 10,055 (136,384)
+The notes on pages 19 to 33 form an integral part of these financial statements. The financial statements on
+pages I1 to 33 were approved by the Board on 28 November 2024 and were signed on its behalf by:
+S Gibson
+Director
+Middlesbrough Football Club & Athletic Company (1986) Limited. Registered number: 1947851
+12
+Middlesbrough Football & Athletic Company (1986) Limited
+Statement of changes in equity for the year ended 30 June 2024
+Called up Share Capital Revaluation Profit and Total
+. share premium contribution reserve loss account equity
+capital
+£000 £7000 £7000 £7000 _ £7000 £000
+At 1 July 2023 64,056 - 26,000 23,898 (250,338) (136,384)
+Comprehensive income/
+(expense) for the year
+Loss forthe financial year - - - - (9,589) (9,589)
+Revaluation gains on property - - - 9,789 - 9,789
+Taxation on other . . . (2,447) - (2,447)
+comprehensive income
+Other comprehensive income . . . 7,342 . 7,342
+for the year
+Total comprehensive
+income/(expense) for the year ° 7 . 7,342 (9,589) (2,247)
+Contributions by and : .
+distributions to owners
+Issue of shares 1,000 105,686 - . - - 106,686
+Capital contribution - - 42,000 - - 42,000
+Total tributi
+° al con ributions by and 1,000 105,686 42,000 - - 148,686
+distributions to owners
+Depreciation on property . . 7 (1,094) 1,094 .
+revaluations
+Balance at 30 June 2024 65,056 * 105,686 68,000 30,146 (258,833) 10,055
+13
+Middlesbrough Football & Athletic Company (1986) Limited
+Statement of changes in equity for the year ended 30 June 2023
+Called up Capital Revaluation Profit and Total
+share _ contribution reserve loss.account equity
+. capital
+£7000 £000 £7000 £000 £7000
+At 1 July 2022 64,056 26,000 25,056 (247,036) (131,924)
+Comprehensive expense for
+the year :
+Loss for the financial year - - - (4,460) (4,460)
+Loss for the financial year - - - (4,460) (4,460)
+Depreciation on property 7 . (1,158) 1,158 _
+revaluations
+Balance at 30 June 2023 64,056 26,000 23,898 (250,338) (136,384)
+14
+Middlesbrough Football & Athletic Company (1986) Limited
+
+Statement of accounting policies for the year ended 30 June 2024
+
+General information
+
+Middlesbrough Football & Athletic Company (1986) Limited is a company limited by share capital.
+
+Incorporated and domiciled in England, registration number 1947851.
+
+Basis of accounting
+
+The Financial Statements have been prepared on the going concern basis under the historical cost convention
+
+modified for the revaluation of certain fixed assets, and in accordance with Financial Reporting Standard 102
+
+(FRS 102). The Company is deemed a qualifying entity under FRS 102. On this basis its ultimate parent
+
+company has approved its eligibility for disclosure exemptions, this report excludes a cash flow statement, key
+
+management compensation disclosure and related party disclosures.
+
+The Company has taken advantage of the following exemptions:
+
+e from preparing a statement of cash flows, on the basis that it is a qualifying entity and the consolidated
+statement of cash flows of the group includes the Company’s cash flows;
+
+© from the requirement to present a reconciliation of the number of shares outstanding at the beginning and
+end of the year as required by paragraph 4.12(a)(iv); and
+
+e the requirements of Section 11 paragraphs 11.41 (b), 11.41 (c), 11.41 (e), 11.41 (f), 11.42, 11.44, 11.45,
+11.47, 11.48 (a)(iii), 11.48(a)(iv), 11.48(b) and 11.48(c) and Section 12 paragraphs 12.26 (in relation to
+those cross referenced paragraphs from which a disclosure exemption is available), 12.27, 12.29 (a),
+12.29(b) and 12.29A providing disclosures equivalent to those required by this FRS are included in the
+consolidated financial statements of the group in which the entity is consolidated.
+
+Going concern .
+
+At 30 June 2024, the Company had net assets of £10,055,000 (2023: £136,384,000 net liabilities) and net
+
+current liabilities of £29,811,000 (2023: £164,262,000) including amounts due to group undertakings of
+
+£13,478,000 (2023: £148,925,000).
+
+In assessing the going concer position of the Company, the directors have prepared cash flow forecasts to 31
+
+December 2025, including consideration of a plausible downside scenario. They have further considered the
+
+financing arrangements in place at 30 June 2024 and changes to these financing arrangements since the balance
+
+sheet date (see note 22). The ability of the Company to meet its obligations as they fall due depends on the
+
+continuing support from The Gibson O’Neill Company Limited, the ultimate parent undertaking, which has
+
+agreed through a formal letter of support to continue to provide that support, if required, to the Company for
+
+the foreseeable future and for at least 12 months after these financial statements are approved by the directors.
+
+As such, the going concern status of the Company is linked to the going concern of the group. .
+
+The directors have carried out a review of the ultimate parent company’s ability to continue as a going concern
+
+for a period of at least 12 months from the date of approval of these financial statements. Based on financial
+
+projections, the directors have concluded that adequate financial resources are available to ensure the ultimate
+
+parent company can meet its obligations as they fall due for the foreseeable future and have therefore adopted
+
+the going concern basis in preparing the financial statements.
+
+A summary of accounting policies, which have been applied consistently, is set out below.
+
+Tangible fixed assets and depreciation
+
+Tangible fixed assets, other than freehold and long leasehold properties, are stated at cost, which is their
+
+purchase cost, together with any incidental costs of acquisition, or at valuation, less accumulated depreciation.
+
+Freehold and long leasehold properties are held at valuation and are revalued on a depreciated replacement cost .
+
+15
+Middlesbrough Football & Athletic Company (1986) Limited
+Statement of accounting policies for the year ended 30 June 2024
+(continued)
+basis. A formal third-party valuation is carried out every three years. In years between formal valuations, the
+directors make their own assessment of valuation.
+Depreciation is calculated so as to write off the cost or valuation of tangible fixed assets less their estimated
+residual values on a straight-line basis, over the expected useful economic lives of the assets concerned. The
+principal annual rates used for this purpose are:
+Freehold and long leasehold buildings 2%- 10%
+Fixtures, fittings, plant and machinery 2% -20%
+Land is not depreciated.
+Investment property
+Investment properties are carried at fair value determined annually by the directors and derived from the
+current market rents and investment property yields for comparable real estate, adjusted if necessary for any
+difference in the nature, location or condition of the specific asset. No depreciation is provided. Changes in fair
+value are recognised in profit or loss.
+Finance leases . :
+Leasing agreements which transfer to the Company substantially all the benefits and risks of ownership of an
+asset are treated as if the asset had been purchased outright. The assets are included in fixed assets and the
+capital element of the leasing commitment is shown as obligations under finance leases. The lease rentals are
+treated as consisting of capital and interest elements. The capital element is applied to reduce the outstanding
+obligations, and the interest element is charged to the profit and loss account so as to give a constant periodic
+rate of charge on the remaining balance outstanding at each accounting year. Assets held under finance leases
+are depreciated over the shorter of the lease terms and the useful lives of equivalent owned assets.
+Stocks
+Stocks are stated at the lower of cost and net realisable value. Cost is determined on a first-in first-out basis.
+Net realisable value is the price at which stocks can be sold in the normal course of business after allowing for .
+the costs of realisation. Provision is made where necessary for obsolete, slow moving and defective stocks.
+Grants
+Grants that relate to specific projects are treated as deferred income which is then credited to the profit and loss
+account over the related project’s useful life. Other grants are credited to the profit and loss account when
+received.
+Foreign currencies
+Transactions in foreign currencies are translated at the rate ruling at the date of the transaction. Monetary assets :
+and liabilities denominated in foreign currencies are translated at the rate of exchange ruling at the balance
+sheet date. All exchange differences are taken to the profit and loss account in the year in which they arise.
+Turnover
+Turnover represents income receivable from the Company’s principal activities and is exclusive of value added
+tax and gains in relation to the sale of player registrations. Matchday and Season ticket receipts, including Cup
+competitions, are recognised over the year of the football season as games are played. The fixed element of
+broadcasting revenue is recognised over the duration of the football season whilst facility fees for additional live
+coverage and sale of merchandise are taken when earned. Sponsorship and similar commercial income are
+recognised over the duration of the respective contracts.
+
+16
+Middlesbrough Football & Athletic Company (1986) Limited .
+Statement of accounting policies for the year ended 30 June 2024
+(continued)
+Deferred taxation
+. The tax expense for the period comprises current and deferred tax. Tax is recognised in profit or loss, except that a
+charge attributable to an item of income or expense recognised as other comprehensive income or to an item
+recognised directly in equity is also recognised in other comprehensive income or directly in equity respectively.
+The current income tax charge is calculated on the basis of tax rates and laws that have been enacted or
+substantively enacted by the reporting date in the countries where the Company operates and generates taxable
+income. .
+Deferred balances are recognised in respect of all temporary timing differences that have originated but not
+reversed by the balance sheet date, except:
+e — the recognition of deferred tax assets is limited to the extent that it is probable that they will be recovered
+against the reversal of deferred tax liabilities or other future taxable profits;
+e any deferred tax balances are reversed if and when all conditions for retaining associated tax allowances
+have been met; and
+e where timing differences relate to interests in subsidiaries, associates, branches and joint ventures and the
+group can control their reversal and such reversal is not considered probable in the foreseeable future.
+Deferred tax balances are not recognised in respect of permanent differences except in respect of business
+combinations, when deferred tax is recognised on the differences between the fair values of assets acquired and
+the future tax deductions available for them and the differences between the fair values of liabilities acquired and
+the amount that will be assessed for tax. Deferred income tax is determined based on the rates expected to apply at
+. the date of reversal, using tax rates and laws that have been enacted or substantively enacted by the reporting date.
+Provisions :
+Provisions are recognised when the Company has an obligation at the reporting date as a result of a past event, it
+is probable that the Company will be required to settle that obligation and a reliable estimate can be made of the
+amount of the obligation.
+‘Provisions are recognised for onerous player contracts and deferred taxation liabilities.
+Compensation and loan fees
+The costs associated with the acquisition of players’ registrations are capitalised as intangible fixed assets at
+the present value of the consideration payable for the acquisition using an effective interest rate, with interest
+expensed to the profit and loss. The present value costs are fully amortised over the length of the respective
+players’ initial contract. Where a playing contract is extended, the unamortised balance at the date of the
+amendment, together with any new costs associated with the extension is amortised over the remaining revised
+contract life. Provision is made for any impairment and player registrations are written down for impairment
+when the carrying value exceeds the amount recoverable through use or sale of the relevant income generating
+unit. .
+Where a part of the consideration payable on acquiring a player’s registration is contingent upon a future event,
+. the amount of the consideration is recognised once the event occurs and is amortised from the date of the
+event. The total amount which is currently considered possible is disclosed in note 21. Profit or losses on the
+sale of registrations represent the present value of compensation or loan fees receivable, net of any transaction
+costs, less the amortised cost of the registrations.
+17
+Middlesbrough Football & Athletic Company (1986) Limited
+Statement of accounting policies for the year ended 30 June 2024
+(continued) ;
+
+Pension costs
+
+The Company is making contributions in respect of its share of the deficit of the defined benefit section of the
+
+Football League Pension and Life Assurance Scheme (the “Scheme”). As the Company is one of a number of
+
+participating employers in the Scheme it is not possible to identify the Company’s share of the individual
+
+assets and liabilities within the Scheme.
+
+Under FRS102, the Scheme is a funded multi-employer defined benefit scheme and the defined benefit
+
+obligation is to be recorded at its present value set by the scheme actuary discounted at appropriate rates. The
+
+change in present value not due to contributions paid is taken to the profit and loss account in the year.
+
+The Company also provides access to stakeholder pension plans for employees. The employer’s contributions
+
+are charged to the profit and loss account in the year in which the liability to pay arises. Further details are
+
+provided in note 20.
+
+Critical estimates in applying accounting policies and key sources of estimation uncertainty
+
+The preparation of the financial statement requires management to make judgements, estimates and
+
+assumptions that affect the amounts reported for assets and liabilities at the reporting date and the amounts
+
+. reported for revenues and expenses during the year. However, the nature of estimation means that actual
+outcomes could differ from those estimates. The following critical estimates have been applied in preparing
+these financial statements:
+
+e Players’ net book value — the cost of obtaining players’ registrations are amortised evenly over the period
+of the representative players’ contracts with no residual value. The directors consider player impairment
+annually by assessing the market value less costs to sell for each individual player. The directors also take
+
+: into consideration the individual performance of the player and overall contribution towards the first team
+squad.
+
+e Onerous contracts — the directors review all contracts to determine whether the unavoidable cost of
+meeting the obligations under the contract exceed the economic benefits expected to be received under it.
+If they do, an onerous contract provision is recognised. This review primarily relates to player contracts
+where the directors take into consideration long term injuries and overall expected contribution towards
+the first team squad. An onerous contract provision is made for the remainder of the players’ contract.
+
+e Property valuation — freehold and long leasehold properties were revalued at 30 June 2024 by Montagu
+Evans, Chartered Surveyors, in accordance with the Appraisal and Valuation Manual of the Royal
+Institution of Chartered Surveyors in the United Kingdom. The Riverside Stadium and the training ground
+headquarters were valued on a depreciated replacement cost basis due to the specialist nature of the assets.
+The replacement cost for The Riverside Stadium was based on a seat rate per capacity. The directors
+consider the valuation of all properties annually with an external valuation carried out every three years.
+
+18
+Middlesbrough Football & Athletic Company (1986) Limited
+Notes to the financial statements for the year ended 30 June 2024
+1 Turnover
+Turnover is generated entirely from the Company’s principal activity in the United Kingdom and is analysed as .
+follows:
+, 7 , 30 June 30 June
+2024 2023
+£7000 £000
+Gate receipts 8,747 8,784 :
+Cup competitions 2,130 332
+Sponsorship & commercial - 9,415 : 7,762
+Broadcasting 9,719 9,504
+gf
+Merchandising 2,236 ; 2,212
+Total turnover 32,247 28,594
+2 Directors’ remuneration ,
+; 30 June 30 June
+2024 2023
+7 £000 £7000
+Aggregate emoluments 262 258
+Company contributions to defined contribution pension scheme 24 24
+. 286 282
+Emoluments of the highest paid director were £262,000 (2023: £258,000). Company pension contributions of
+. £24,000 (2023: £24,000) were made to a pension scheme on behalf of this director.
+There was one director in the Company’s defined contribution pension scheme (2023: one).
+: 19
+Middlesbrough Football & Athletic Company (1986) Limited
+Notes to the financial statements for the year ended 30 June 2024
+(continued)
+3 Employee information
+The average monthly number of persons (including executive directors) employed by the Company during the
+, year was:"
+. 30 June 30 June
+2024 2023
+By activity Number Number
+Playing staff 95 77
+Other staff . . 159 151
+254 228
+30 June 30 June
+2024 2023
+. £7000 £7000
+Staff costs (for the above persons):
+
+: Wages and salaries 27,752 26,108
+Social security costs : 3,442 3,328
+Other pension costs (note 20) 200 189
+
+31,394 29,625
+20 ,
+Middlesbrough Football & Athletic Company (1986) Limited
+Notes to the financial statements for the year ended 30 June 2024
+(continued)
+4 Other operating income
+30 June 30 June
+2024 2023
+. £000 £000
+Premier League grant income 1,210 1,210
+Legal settlement - 2,728
+1,210 3,938
+Premier League grant income relates to the Elite Player Performance Plan and is the Premier League’s
+contribution towards the operational costs of running a Category 1 Youth Academy.
+5 Interest payable and similar expenses
+30 June 30 June
+2024 2023
+£°000 £000
+Other interest 767 161
+Finance expense on unwinding of discount on transfer fees payable 473 -
+Interest payable and similar expenses 1,240 161
+6 Interest receivable and similar income
+30 June 30 June
+2024 2023
+£7000 £7000
+Finance income on unwinding of discount on transfer fees receivable 735 494
+Interest receivable and similar income - 735 494
+21
+Middlesbrough Football & Athletic Company (1986) Limited
+Notes to the financial statements for the year ended 30 June 2024
+(continued)
+7 Loss before taxation
+30 June — 30 June
+2024 2023
+. £7000 £7000
+‘Loss before taxation is stated after charging/(crediting):
+Depreciation charge for the year:
+: - tangible owned fixed assets 2,786 2,641
+- tangible fixed assets held under finance leases 8 8 :
+Player amortisation and impairment:
+- amortisation of intangible fixed assets (note 9) 9,220 7,984
+- impairment of intangible fixed assets (note 9) - 3,582
+Auditors’ remuneration for: :
+- audit services . 62 56
+. - non audit services 12 15
+Other operating income (note 4) (1,210) (3,938)
+22
+Middlesbrough Football & Athletic Company (1986) Limited
+Notes to the financial statements for the year ended 30 June 2024
+(continued) ;
+8 Tax on loss
+(a) Analysis of tax credit in the year
+30 June / 30 June
+2024 2023
+£000 £7000
+Current tax /
+UK corporation tax on profits for the period (3,600) (4,917)
+Adjustments in respect of prior years 60 (1,240)
+Total current tax credit (3,540) (6,157)
+Deferred tax
+Origination and reversal of timing differences 670 3,455
+; Adjustments in respect of prior years 32 4
+Effect of changes in tax rates - 759
+Total deferred tax charge (note 16) - 702 4,218
+. Tax credit on loss (2,838) (1,939)
+7 23
+Middlesbrough Football & Athletic Company (1986) Limited
+Notes to the financial statements for the year ended 30 June 2024
+‘ (continued)
+8 Tax on loss (continued)
+(b) Factors affecting tax credit for the year
+The tax assessed for the year is higher (2023: higher) than the standard rate of corporation tax in the UK of
+25.00% (2023: 20.50%). The differences are explained below:
+30 June 30 June
+2024 2023
+£000 £7000
+Loss before taxation (12,427) (6,399)
+Loss multiplied by standard rate of corporation tax in the UK of
+: 25.00% (2023: 20.50%) (3,107) (1,312)
+Effects of:
+Expenses not deductible for tax purposes 176 (125)
+Income not taxable : ‘ - . (25)
+Gains, rollover relief etc - -
+Tax rate changes - 759
+Adjustments from previous periods 93 (1,236) :
+Total tax credit for the year (2,838) (1,939)
+. The corporation tax rate increased to 25% from 1 April 2023 and therefore a corporation tax rate of 25% has
+. been used to measure deferred tax assets and liabilities where applicable. .
+24
+Middlesbrough Football & Athletic Company (1986) Limited _
+Notes to the financial statements for the year ended 30 June 2024
+(continued) ;
+9 Intangible assets
+; Transfer fees
+paid for
+players’
+: contracts
+£000
+Cost
+At 1 July 2023 ° 39,577
+Additions 18,793
+Disposals (17,417)
+At 30 June 2024 40,953
+Accumulated amortisation and impairment
+At | July 2023 28,953
+Charge for the year 9,220
+Disposals , (14,682)
+At 30 June 2024 23,491
+‘Net book amount
+At 30 June 2024 17,462
+At 30 June 2023 10,624
+: 25
+Middlesbrough Football & Athletic Company (1986) Limited
+Notes to the financial statements for the year ended 30 June 2024
+(continued) \
+10 Tangible assets
+Fixtures,
+Land and fittings, plant Investment Total
+buildings and machinery property ofa
+£000 £000 £000 £000
+Cost or valuation
+At 1 July 2023 92,141 7,035 - 99,176
+Additions 1,289 506 1,450 : 3,245
+, Revaluation 19,410 - - 19,410
+Disposals ce - (25) - (25)
+At 30 June 2024 112,840 7,516 1,450 121,806
+Accumulated ,
+depreciation
+At 1 July 2023 47,988 6,427 - 54,415
+Charge for the year 2,599 "195 - 2,794
+Revaluation 9,621 - - 9,621
+Disposals - (6) - (6)
+At 30 June 2024 60,208 6,616 - - 66,824
+Net book amount .
+At 30 June 2024 52,632 900 1,450 54,982
+At 30 June 2023 44,153 608 - 44,761
+Included in the net book value of fixtures, fittings, plant and machinery is an amount of £200,000 (2023:
+£209,000) in respect of assets held under finance leases. .
+Land and buildings were revalued at 30 June 2024 by Montagu Evans, Chartered Surveyors, in accordance
+with the Appraisal and Valuation Manual of the Royal Institution of Chartered Surveyors in the United
+Kingdom. The Riverside Stadium and the training ground headquarters were valued on a depreciated
+replacement cost basis due to the specialist nature of the assets.
+The net book value of land and buildings includes freehold property at £40,436,000 (2023: £33,760,000) and .
+long leasehold property at £12,196,000 (2023: £10,393,000).
+26
+Middlesbrough Football & Athletic Company (1986) Limited
+Notes to the financial statements for the year ended 30 June 2024
+(continued)
+10 Tangible assets (continued)
+: Tf land and buildings had not been revalued, they would have been included at the following amounts: :
+2024 2023
+£000 £7000
+Cost 40,508 39,219
+Accumulated depreciation and impairments (28,275) (27,135)
+Net book amount 12,233 12,084
+. Investment property
+The Company’s investment property is carried at fair value determined annually by the directors. The surplus
+on revaluation of investment property credited to the profit and loss for the year is £nil (2023: £nil).
+, If investment property had been accounted for under historic cost accounting rules, the property would have
+been measured as follows:
+2024 2023
+£7000 £7000
+Cost 1,450 -
+Accumulated depreciation and impairments (10) -
+Net book amount 1,440 -
+11 Stocks
+2024 2023
+£000 £000
+Finished goods and goods for resale ; 872 400
+The difference between purchase price or production cost of stocks another replacement cost is not material.
+27
+Middlesbrough Football & Athletic Company (1986) Limited
+Notes to the financial statements for the year ended 30 June 2024
+; (continued)
+12 Debtors
+: 2024 2023
+£000 £7000
+Trade debtors 1,094 1,527
+Compensation and loan fees receivable 11,693 7,251
+Other debtors 453 470
+Prepayments and accrued income 1,369 1,782
+_ Amounts owed from group undertakings 647 3,457 ©
+15,256 14,487
+Impairment for trade debtors in the year is £3,000 (2023: £1,000).
+The amounts owed from group undertakings are interest free and repayable on demand.
+Amounts falling due after more than one year within compensation and loan fees receivable is £5,046,000
+(2023: £4,428,000).
+13. Creditors: amounts falling due within one year .
+2024 2023
+£000 £000
+Trade creditors 3,423 3,327
+Amounts owed to group undertakings 13,478 148,925
+Compensation and loan fees payable 10,629 6,311
+Bank loan 5,787 2,484
+Other loans - 2,971
+Taxation and social security 2,722 3,959 -
+Other creditors 1,689 1,846
+Deferred income 8,035 8,470
+Accruals 520 1,234
+46,283 179,527
+The amounts owed to group undertakings are interest free and repayable on demand however a signed letter of
+28
+Middlesbrough Football & Athletic Company (1986) Limited
+Notes to the financial statements for the year ended 30 June 2024
+(continued) .
+‘13 Creditors: amounts falling due within one year (continued)
+support has been obtained which states that the loans will not be recalled within 12 months of the signing of °
+these financial statements. During the period, £148,686,000 of the amount owed to group undertakings was
+converted into equity through the issue of shares and capital contributions.
+The Bank loan represents a loan facility secured against future player trading receivables, the terms of which
+: are presented in note 14.
+14 Creditors: amounts falling due after more than one year
+2024 2023
+£000 £°000
+Compensation and loan fees payable 7,446 — 5,212
+Bank loan 4,636 4,428
+Taxation and social security - 243
+Other creditors 192 162
+. 12,274 10,045
+Bank loan represents two loan facilities secured against future player trading receivables. One repayable by 31
+July 2025 bearing interest at SONIA plus 4.00% and the other repayable by 15 August 2025 bearing interest at
+6.86%.
+'
+29
+Middlesbrough Football & Athletic Company (1986) Limited
+Notes to the financial statements for the year ended 30 June 2024
+(continued)
+15 Provisions for liabilities
+2024 2023
+Note £7000 _ £7000
+; Onerous contracts 143 450
+Deferred taxation 16 20,161 17,012
+20,304 17,462
+Movements on provisions excluding deferred taxation:
+: Onerous
+contracts
+: £7000
+At 1 July 2023 450
+Utilisation of provisions (450)
+Provisions in the year 143
+At 30 June 2024 143
+16 Deferred taxation .
+The amounts provided for deferred taxation are as follows:
+2024 2023
+£7000 "£000
+; Accelerated capital allowances 10,129 7,117
+Short term timing differences 10,032 9,295
+20,161 17,012
+Movement
+At 1 July 17,012 12,794
+Adjustment in respect of prior years (note 8) 32 4
+Charged/(credited) to the profit and loss account (note 8) 670 4,214
+Charged to other comprehensive income 2,447 -
+. At 30 June 20,161 17,012
+30
+Middlesbrough Football & Athletic Company (1986) Limited
+Notes to the financial statements for the year ended 30 June 2024
+(continued)
+17 Called-up share capital
+2024 2023
+£7000 £000
+Authorised
+65,056,000 (2023: 64,056,000) ordinary shares of £1 each ; 65,056 64,056
+Allotted, issued, called up and fully paid
+65,056,000 (2023: 64,056,000) ordinary shares of £1 each 65,056 64,056
+On 29 November 2023, 1,000,000 ordinary shares were issued to convert amounts owed to group undertakings
+to equity for a total consideration of £106,686,000. A premium of £105,686,000 was credited to the share.
+premium account. In addition, £42,000,000 of amounts owed to group undertakings were credited to capital
+: contributions. .
+18 Reserves
+Share premium
+The share premium account includes the premium on issue of equity shares.
+Capital contribution
+Capital contributions by the parent company, Middlesbrough Football & Athletic Company Holdings Limited.
+Revaluation reserve
+The revaluation reserve is in relation to the increase in freehold and long leasehold property valuations which
+have been valued on a depreciated replacement cost basis.
+Profit and loss account
+The profit and loss account represents cumulative profits or losses, net of dividends paid and other
+adjustments.
+31
+Middlesbrough Football & Athletic Company (1986) Limited
+Notes to the financial statements for the year ended 30 June 2024
+(continued)
+19 Related party transactions
+The Company has taken advantage of the exemption in Section 33.1A of FRS 102 from the requirement to
+disclose transactions with its parents and fellow subsidiaries on the grounds that it is a wholly owned
+subsidiary of a group headed by The Gibson O’Neill Company Limited, whose financial statements are
+publicly available.
+There are no further related party transactions which fall to be disclosed under the Financial Reporting :
+Standards (FRS 102 paragraph 33.1).
+20 Pensions
+Middlesbrough Football Club (‘the Club’) participates in the Football League Pension and Life Assurance
+Scheme (‘the Scheme’). The Scheme is a funded multi-employer defined benefit scheme, with 92 participating
+employers, and where members may have periods of service attributable to several participating employers.
+The Scheme’s actuary has advised that the participating employer’s share of the underlying assets and
+liabilities of the Scheme cannot be identified on a reasonable and consistent basis and, accordingly, it has been
+accounted for by the Company as if they were paid to a defined contribution scheme.
+The last actuarial valuation was carried out at 1 September 2023. The results of the valuation demonstrated an
+overall increase in scheme deficit, to be shared across its members. On the basis of this valuation and
+contributions thereafter, the Club’s notional share of the deficit was £269,000 as at 30 June 2024 (£232,000 as .
+at 30 June 2023). The Club pays total contributions of £77,000 per annum increasing by 5.0% per annum,
+which will be sufficient to pay off the deficit by 2028.
+The Company also provides access to stakeholder pension plans for employees. The employer’s contributions
+are charged to the profit and loss account in the year in which the liability to pay arises.
+The total pension cost for the Company for the year, across all schemes, was £200,000 (2023: £189,000).
+21 Contingent liabilities
+Under the terms of certain contracts for the purchase of players’ registrations, future payments may be due to
+third parties, dependent upon the success of the team or individual players. At the balance sheet date, the
+maximum contingent liability considered possible was £8,800,000 (2023: £11,200,000).
+Any additional fees which may become payable under these agreements will be accounted for in the year that
+the event occurs.
+
+32
+Middlesbrough Football & Athletic Company (1986) Limited
+Notes to the financial statements for the year ended 30 June 2024
+(continued)
+22 Post balance sheet events
+Player trading ,
+Player transfer activity in respect of senior professionals after 30 June 2024 has resulted in the following:
+e seven player acquisitions/registrations.
+¢ — two players brought into the Club on season long loans.
+e one player transferred out of the Club and three players leaving the Club on expiry of their contracts.
+e three players temporarily loaned out of the Club on season long loans.
+In respect of transfer fees payable/receivable for senior professionals (including loan fees, agent fees and
+transfer fee levy), the activity after 30 June 2024 has resulted in net expenditure of £15.8m, some of which is
+paid/received immediately and some of which is deferred over a number of years.
+Loan from ultimate controlling party .
+Since year end, S Gibson, Chairman of the Company and ultimate controlling party, has provided a £13.75m
+loan to the Company. The loan attracts no interest and is not due for repayment before 31 December 2025.
+23 Immediate and ultimate parent undertaking
+The immediate parent undertaking is Middlesbrough Football & Athletic Company Holdings Limited.
+The ultimate parent undertaking is The Gibson O’Neill Company Limited, a private company registered in
+Middlesbrough, England.
+The Gibson O’Neill Company Limited is the parent undertaking of the smallest and largest group of
+undertakings to consolidate these financial statements at 30 June 2024. The consolidated financial statements
+of The Gibson O’Neill Company Limited are available from the Company secretary at Brignell Road,
+Riverside Park Industrial Estate, Middlesbrough, TS2 1PS.
+24 Ultimate controlling party
+S Gibson, Chairman of the Company, is the ultimate controlling party by virtue of his 75% holding in the
+shares of The Gibson O’Neill Company Limited, the ultimate parent undertaking.
+
+a 33
 

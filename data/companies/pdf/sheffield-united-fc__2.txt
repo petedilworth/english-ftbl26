@@ -2,7 +2,7 @@ source: Companies House filing, sheffield-united-fc__2.pdf
 document: jMI4cVQXUGlP1HhXUCUJoeuAlGsX1SftBV1LefXKvJ0
 made_up_date: 2024-06-30
 method: ocr
-pages_read: 12 of 59
+pages_read: 59 of 59
 
 Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFD53
 , . Registered number: 00061564
@@ -439,4 +439,1708 @@ partnership for the 2023/24 season with Dubai-based financial services provider,
 the Premier League.
 
 Page 9
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED :
+STRATEGIC REPORT (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+
+Financial Performance Overview (continued)
+Cost of Sales
+Cost of sales increased to £77.5 million (2023: £57.8 million), primarily reflecting higher player wages and other
+direct costs associated with the Club's promotion to the Premier League including increased investment in
+technology to assist in player recruitment and performance management, in addition to general cost of living
+increases such as increased utility costs and minimum wage increases.
+Administrative Expenses
+Administrative expenses (as split on the face of profit or loss) rose to £37.0 million (2023: £20.3 million), due toa
+£2.4m increase in charitable donations made by the Premier League on the Clubs behalf, and the impairment of
+certain intercompany loan balances of £14.8 million which have been provided for given the uncertainty of
+recovery of a balance due from Blades Leisure Limited (see impairment of investments below).
+Interest Expenses and Income
+Interest payable amounted to £9.6 million (2023; £3.8 million), driven by the discounting of future cashflows
+payable related to player trading, which totalled £3.5 million (2023: ENil). Conversely, interest receivable
+increased to £1.6 million (2023: £Nil), entirely attributable to the discounting of future cashflows receivable
+related to player trading.
+Impairment of Investments and Tangible Fixed Assets
+Following a review of intercompany balances, a provision was made for the uncertain recovery of a balance due
+from Blades Leisure Limited.
+A revaluation of the Club’s property assets has been undertaken to ensure that they are stated at fair value.
+Changes to the to the base rate since the prior valuation in 2021 have significantly impacted the discount rate
+applied to the future cash flows from these assets, which is used to establish market value. This interest rate
+change, alongside the general challenges faced by valuers in establishing market value through the comparable
+sale of similar assets, in particular stadia, have significantly impacted the value calculation, resulting in an
+impairment to the held asset value of £20.7 million. An impairment charge of £10.7 million and the elimination of
+a revaluation reserve of £10.0 million have therefore been posted in the period. It should be noted however that
+the cost of reinstatement of these assets to the Club, established at the same valuation date, is £196 million.
+Investments and Player Trading
+During the period, the Club invested £52.6 million in player registrations (2023: £4.6 million), including high-
+profile acquisitions such as Cameron Archer, Vinicius De Souza Costa, and Ivo Grbic. Player disposals
+generated a profit of £19.4 million (2023: £4.4 milion), with notable transfers including Iliman Ndiaye to
+Olympiacos-Marseille and Sander Berge to Burnley FC.
+Additionally, the Club made substantial investments in tangible fixed assets, amounting to £12.2 million. Key
+initiatives included the redevelopment of the hotel adjacent to Bramall Lane to operate as a DoubleTree by
+Hilton, along with significant refurbishments to premium areas of the stadium. Three land acquisitions were
+made, consolidating the ownership of the Bramall Lane site through the acquisition of the Boundary Corner and
+Cutlers Corner sites and advancement of plans for a new first-team training facility through a commitment to
+purchase land in Dore, Sheffield, which completed after the year end date.
+
+Page 10
+Docusign Envelope 1D: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+STRATEGIC REPORT (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+Key Performance Indicators
+Non-financial performance indicators
+2024 2023
+(Premier League) (Championship)
+First team finishing position 20 2
+Points per game 0.42 1.97
+Average league attendance 29,971 28,763
+Financial performance indicators .
+2024 2023
+(Premier League) (Championship)
+Employee costs as % of revenue 46% 75%
+Commercial revenue growth % vs prior year 125% 14%
+Profit on disposal of player registrations £19.4m £4.4m
+Statement of Financial Position
+As of June 2024, the Club reports a net asset position of £3.3 million (2023: restated £10.9 million). While .
+investments made during the period have enhanced the total asset base, debt levels have risen. Net current
+liabilities of £31.3 million (2023: £7.2 million) are expected to be met through player sales in the summer of 2024.
+Intangible assets are valued at historical cost less accumulated amortisation and any accumulated impairment
+losses, though the Directors believe the value of player registrations held is sufficient to cover any potential
+shortfall.
+The year-end cash position of £0.4 million (2023: £0.6 million) underscores the critical importance of prudent
+cash management. As the Club continues to strengthen its squad and invest in Premier League-ready assets,
+maintaining lean operations and the implementation of appropriate contractual clauses remains essential in
+mitigating potential risks of relegation. Efficient management of short-term working capital and debt obligations
+will be a priority for the Board to ensure long-term viability.
+Streamlined Energy and Carbon Report
+The Sheffield United Football Club Limited are a ‘large unquoted company’ under the Streamlined Energy and
+Carbon Reporting regulations and must report annually on greenhouse gas emissions from Scope 1 and 2
+Electricity, Gas and Transport.
+The reporting period is the most recent financial year 01/07/2023 to 30/06/2024. This report has been compiled
+in line with the March 2019 BEIS ‘Environmental Reporting Guidelines: Including streamlined energy and carbon
+reporting guidance’, and the EMA methodology for SECR Reporting. All measured emissions from activities
+which the organisation has financial control over are included as required under The Companies (Directors’
+Report) and Limited Liability Partnerships (Energy and Carbon Report) Regulations 2018, unless otherwise .
+stated in the exclusions statement.
+The carbon figures have been calculated using the DESNZ 2023 carbon conversion factors for all fuels, other
+. than the market-based electricity which has been taken from EDF as the UK supplier. : .
+Page 11
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+STRATEGIC REPORT (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+UK Carbon Footprint Data
+,
+
+: . a ofs 2021/22. 2022/23 9B2023/24'
+
+: Combustion of 4o. .
+
+Scoper| fuel on site and on acon Peto ae Location Based 589 448
+
+i transportation Market Based | 409 589 448
+
+° energy
+
+i Market based 0 0 0
+
+: Indirect Employee Business Location based | 37 19 22
+Saqa8 Emissions Mileage
+
+: Market based 37 19 22
+pa ff vanes sot wo |
+
+i. Market based 443 608 470
+Qiensity | tCO2e/k1m Location based | 15.7 21.4 9.2
+[Ratio} Turnover
+
+Market based 6.6 9.4 3.4
+Electricity, Natural Gas,
+
+7 : consumed Un row vehi e fuel | _[ serene lourazre [gonzon
+Gray Unknown vehicle fuel 5,466,986 | 6,873,279 | 6,304,226
+Usage _
+
+Renewable % Electricity 100%
+Emissions detail by fuel type Location based method
+: 3% _* i
+\ « Electricity
+\ « Natural Gas
+= Diesel
+= Petrol
+= Unknown Vehicte Fuel ©
+» Propane
+Year on year emissions changes ,
+The Sheffield United Football Club Limited's location based emissions decreased from 1385 tCO2e in 2022/23 to
+1276 tCO2e in 2023/24, an emissions decrease of 7.9%. Against the base year of 2019/20, this is a emissions
+decrease of 6.4%.
+Page 12
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+STRATEGIC REPORT (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+
+Year on year emissions changes (continued)
+Scope 1 emissions decreased from 589 tCO2e in 2022/23 to 448 tCO2e in 2023/24, an emissions decrease of
+23.9%. This is due to a reduction in natural gas consumption accompanied by a reduction in additional site gas
+(propane) usage. Natural gas consumption reduced from 2,143,919 kWh in 2022/23 to 1,721,000 kWh in
+2023/24 resulting in an emissions decrease of 77 tCO2e. Propane emissions were also reduced by 41.8%,
+emissions dropped from 146 tCO2e to 85 tCO2e.
+The emissions associated with scope 1 transport (petrol & diesel) slightly decreased from 51 tCO2e in 2022/23
+to 47 tCO2e in 2023/24, a 9% reduction in emissions.
+Scope 2 electricity consumption increased from 3,755,032 kWh in 2022/23 to 3,808,062 kWh in 2023/24, this is
+a 1.4% increase in consumption. Scope 2 location based emissions increased from 778 tCO2e to 805 tCO2e.
+Under the market based method, Sheffield United Football Club Ltd continue to report no tCO2e emissions
+associated with their purchased electricity.
+The Sheffield United Football Club Ltd report their intensity ratio on a turnover basis. Emissions per £m turnover -
+have decreased from 21.4 tCO2e/Em turnover in 2022/23 to 9.2 tCO2e/Em turnover in 2023/24.
+Energy efficiency actions taken
+e Upgrading Stadium and Academy site lighting to LED, alongside flood lighting replacements for the Academy
+
+site.
+e Stadium Ventilation & ducting replacements made within the latest reporting period.
+e All kitchens located within the stadium have been refurbished as well as academy laundry area.
+e Sheffield United have joined the EFL Green Club initiative which will drive sustainability across all sites over
+
+the next 10 years. ;
+e Instructed a feasibility study as to how to become carbon neutral.
+e Currently in the design phase for the installation of PV across the stadium as well as battery storage and EV
+
+charging.
+e As standard across refurbishment projects, replacing existing inefficient HVAC equipment.
+e Currently phasing out gas boilers at the academy site and replacing with electric which will be powered by
+
+EV.
+Going concern
+The Club's business activities, together with factors likely to affect its future development, performance, and
+position, have been considered by the directors throughout the period and will continue to be reviewed in line
+with the Club's strategic plan.
+The directors have reviewed the forecasts for the period ending January 2026, which demonstrate the Club can
+operate within its planned facilities including, if required, support from its controlling parties, for the period.
+The directors therefore have a reasonable expectation that the Club will be able to continue in operational
+existence for the foreseeable future with support from its controlling parties. For this reason, they continue to
+adopt the going concern assumption. .
+
+Page 13
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5893316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+STRATEGIC REPORT (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+
+Principal Risks and Uncertainties
+
+The company faces various financial risks, primarily related to liquidity, interest rates, sporting performance, and
+
+regulatory compliance, as detailed below.
+
+e Liquidity Risk: The company manages liquidity by ensuring adequate facilities are in place with its bankers
+and other lenders.
+
+e Interest Rate Risk: The company's operations are financed through a mix of shareholder equity, retained
+earnings and bank loans with a focus on managing interest rate exposure.
+
+e Sporting Performance Risk: The company mitigates sporting risks through strategic investment in
+recruitment, retention, and development of players and support staff, incorporating contractual safeguards to
+protect financial stability.
+
+e Regulatory Compliance Risk: As a member of various leagues and competitions, the company ensures
+strict adherence to regulations, with continuous monitoring of compliance and potential regulatory changes
+that could impact operations.
+
+Section 172 statement
+
+Section 172 (1) of the Companies Act sets out the matters that a director of a company must have regard to in
+
+fulfilling his or her duty to promote the success of'the company for the benefits of its members, in doing so, give
+
+regard to:
+
+i. Likely consequences of any decisions in the long term
+
+ii. The interests of the company's employees
+
+: iii. The need to foster the company's business relationships with suppliers, customers and others
+
+iv. The impact of the company's operation on the community and the environment
+v. The desirability of the company maintaining a reputation for high standards of business conduct
+The Board of directors consider that they have acted in good faith in these matters in a way in which promotes
+the success of the club for the benefit of its members as a whole. The Board of Directors and senior leadership
+team of the Club meet regularly on both a formal and informal basis to review and improve operations. All
+material decisions that have a potential long-term impact on the business are discussed at a meeting of the
+Board of Directors before approval is given to proceed. The impact of these decisions is considered in the
+context of the company's employees, suppliers, customers, the community, and the environment. The core
+values of the Club are integrity, hardworking, ambitious, and inclusive. Fostering these values throughout the
+business, acting in an open, honest, ethical, and fair way, ensures that high standards of business conduct and
+the Club's reputation are maintained and protects the heritage of Sheffield United Football Club for generations
+to come.
+
+This report was approved by the board and signed on its behalf.
+
+eS
+
+Steven Harlan Rosen
+
+Director
+
+Date: 21/1/2025
+
+Page 14
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+DIRECTORS' REPORT
+FOR THE YEAR ENDED 30 JUNE 2024
+The directors present their report and the financial statements for the year ended 30 June 2024.
+Results and dividends
+The profit for the year, after taxation, amounted to £2,418,532 (2023: restated loss £31,527,401).
+The directors did not recommend the payment of dividend in the year (2023: £Nil).
+: Directors
+
+The directors who served during the year were: ,
+HRH Princess Reem Bint Abdullah Al Saud (resigned 23 December 2024)
+Joseph Edward Jr Giansiracusa (resigned 23 December 2024)
+Abdullah Yousef Mohammed Alghamdi (resigned 23 December 2024)
+Steven Harlan Rosen and Helmy Atef Eltoukhy were appointed as directors after the year ended on 23
+December 2024.
+Directors' Responsibilities Statement
+The directors are responsible for preparing the Strategic Report, the Directors’ Report and the financial
+statements in accordance with applicable law and regulations.
+Company law requires the directors to prepare financial statements for each financial year. Under that law the
+directors have elected to prepare the financial statements in accordance with United Kingdom Generally
+Accepted Accounting Practice (United Kingdom Accounting Standards and applicable law, including FRS 102
+‘The Financial Reporting Standard applicable in the UK and Republic of Ireland’). Under company law the
+directors must not approve the financial statements unless they are satisfied that they give a true and fair view of
+the state of affairs and profit or loss of the Club for that period. In preparing these financial statements, the
+directors are required to: :
+. select suitable accounting policies and then apply them consistently;
+e make judgements and accounting estimates that are reasonable and prudent;
+. state whether applicable UK Accounting Standards have been followed, subject to any material departures
+
+disclosed and explained in the financial statements; and
+. prepare the financial statements on the going concern basis unless it is inappropriate to presume that the
+
+Club will continue in business.
+The directors are responsible for keeping adequate accounting records that are sufficient to show and explain
+the Club's transactions and disclose with reasonable accuracy at any time the financial position of the Club and
+enable them to ensure that the financial statements comply with the Companies Act 2006. They are also
+responsible for safeguarding the assets of the Club hence for taking reasonable steps for the prevention and
+detection of fraud and other irregularities.
+The directors are responsible for the maintenance and integrity of the corporate and financial information
+included on the Club's website. Legislation in the United Kingdom governing the preparation and dissemination
+of financial statements may differ from legislation in other jurisdictions.
+
+Page 15
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+DIRECTORS’ REPORT (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2024
+Matters covered in the Strategic Report
+e« Engagement with employees, customers, suppliers and others
+e Streamlined energy and carbon reporting
+e Future developments
+¢ Principal risks
+Post balance sheet events
+Details of post balance sheet events are given in note 31 of the financial statements.
+Disclosure of information to auditor ,
+The directors confirm that:
+. so far as each director is aware, there is no relevant audit information of which the Club's auditor is
+unaware; and
+: . the directors have taken all the steps that they ought to have taken as directors in order to make
+themselves aware of any relevant audit information and to establish that the Club's auditor is aware of that
+information.
+Auditor ;
+The auditor, Grant Thornton UK LLP, will be proposed for reappointment in accordance with section 485 of the
+Companies Act 2006.
+This report was approved by the board and signed on its behalf.
+“_—
+ES
+Steven Harlan Rosen
+Director :
+Date: 21/1/2025
+Page 16
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+2 GrantThornton
+INDEPENDENT AUDITOR'S REPORT TO THE MEMBERS OF THE SHEFFIELD UNITED FOOTBALL CLUB
+LIMITED
+Opinion
+We have audited the financial statements of The Sheffield United Football Club Limited (the 'company’) for the
+year ended 30 June 2024, which comprise the Statement of Comprehensive Income, the Statement of Financial
+Position; the Statement of Changes in Equity and notes to the financial statements, including a summary of
+significant accounting policies. The financial reporting framework that has been applied in their preparation is
+applicable law and United Kingdom Accounting Standards, including Financial Reporting Standard 102 ‘The
+Financial Reporting Standard applicable in the UK and Republic of Ireland’ (United Kingdom Generally Accepted
+Accounting Practice).
+In our opinion:
+° the financial statements give a true and fair view of the state of the company's affairs as at 30 June 2024
+and of its profit for the year then ended;
+. the financial statements have been properly prepared in accordance with United Kingdom Generally
+Accepted Accounting Practice; and
+. the financial statements have been prepared in accordance with the requirements of the Companies Act
+2006.
+Basis for opinion
+We conducted our audit in accordance with International Standards on Auditing (UK) (ISAs (UK)) and applicable
+law. Our responsibilities under those standards are further described in the ‘Auditor's responsibilities for the audit
+of the financial statements’ section of our report. We are independent of the company in accordance with the
+ethical requirements that are relevant to our audit of the financial statements in the UK, including the FRC's
+Ethical Standard, and we have fulfilled our other ethical responsibilities in accordance with these requirements.
+We believe that the audit evidence we have obtained is sufficient and appropriate to provide a basis for our
+opinion. «
+Conclusions relating to going concern
+We are responsible for concluding on the appropriateness of the directors’ use of the going concern basis of
+accounting and, based on the audit evidence obtained, whether a material uncertainty exists related to events or
+conditions that may cast significant doubt on the company's ability to continue as a going concern. If we conclude
+that a material uncertainty exists, we are required to draw attention in our report to the related disclosures in the
+financial statements or, if such disclosures are inadequate, to modify the auditor's opinion. Our conclusions are
+based on the audit evidence obtained up to the date of our report. However, future events or conditions may
+cause the company to cease to continue as a going concern.
+In our evaluation of the directors’ conclusions, we considered the inherent risks associated with the company's
+business model including effects arising from macro-economic uncertainties such as cost of living crisis, we
+assessed and challenged the reasonableness of estimates made by the directors and the related disclosures
+and analysed how those risks might affect the company's financial resources or ability to continue operations
+: over the going concern period. ‘ : . :
+Page 17
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+re) Grant Thornton
+INDEPENDENT AUDITOR'S REPORT TO THE MEMBERS OF THE SHEFFIELD UNITED FOOTBALL CLUB
+LIMITED (CONTINUED)
+In auditing the financial statements, we have concluded that the directors' use of the going concern basis of
+accounting in the preparation of the financial statements is appropriate.
+Based on the work we have performed, we have not identified any material uncertainties relating to events or
+conditions that, individually or collectively, may cast significant doubt on the company’s ability to continue as a
+going concern for a period of at least twelve months from when the financial statements are authorised for issue.
+Our responsibilities and the responsibilities of the directors with respect to going concern are described in the
+relevant sections of this report.
+Other information
+The other information comprises the information included in the Annual Report, other than the financial
+statements and our Auditor's Report thereon. The directors are responsible for the other information contained
+within the Annual Report. Our opinion on the financial statements does not cover the other information and,
+except to the extent otherwise explicitly stated in our report, we do not express any form of assurance conclusion
+thereon.
+Our responsibility is to read the other information and, in doing so, consider whether the other information is
+materially inconsistent with the financial statements or our knowledge obtained in the audit or otherwise appears
+to be materially misstated. If we identify such material inconsistencies or apparent material misstatements, we
+are required to determine whether there is a material misstatement in the financial statements themselves. If,
+based on the work we have performed, we conclude that there is a material misstatement of this other
+information, we are required to report that fact.
+We have nothing to report in this regard.
+Opinions on other matters prescribed by the Companies Act 2006
+{In our opinion, based on the work undertaken in the course of the audit:
+. the information given in the Strategic Report and the Directors’ Report for the financial year for which the
+financial statements are prepared is consistent with the financial statements; and
+. the Strategic Report and the Directors' Report have been prepared in accordance with applicable legal
+requirements.
+: . Page 18
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED —
+© GrantThornton
+INDEPENDENT AUDITOR'S REPORT TO THE MEMBERS OF THE SHEFFIELD UNITED FOOTBALL CLUB
+LIMITED (CONTINUED) .
+Matter on which we are required to report under the Companies Act 2006
+In the light of the knowledge and understanding of the company and its environment obtained in the course of
+the audit, we have not identified material misstatements in the Strategic Report or the Directors' Report.
+Matters on which we are required to report by exception
+We have nothing to report in respect of the following matters in relation to which the Companies Act 2006
+: requires us to report to you if, in our opinion:
+° adequate accounting records have not been kept, or returns adequate for our audit have not been
+received from branches not visited by us; or
+. the financial statements are not in agreement with the accounting records and returns; or
+° certain disclosures of directors' remuneration specified by law are not made; or
+. we have not received all the information and explanations we require for our audit.
+Responsibilities of directors
+As explained more fully in the Directors’ Responsibilities Statement set out on page 15, the directors are
+responsible for the preparation of the financial statements and for being satisfied that they give a true and fair
+view, and for such internal control as the directors determine is necessary to enable the preparation of financial
+statements that are free from material misstatement, whether due to fraud or error.
+In preparing the financial statements, the directors are responsible for assessing the company's ability to
+continue as a going concern, disclosing, as applicable, matters related to going concern and using the going
+concern basis of accounting unless the directors either intend to liquidate the company or to cease operations, or
+have no realistic alternative but to do so.
+Page 19
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5B933 16FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+2 Grant Thornton
+INDEPENDENT AUDITOR'S REPORT TO THE MEMBERS OF THE SHEFFIELD UNITED FOOTBALL CLUB
+LIMITED (CONTINUED)
+
+Auditor's responsibilities for the audit of the financial statements
+
+Our objectives are to obtain reasonable assurance about whether the financial statements as a whole are free
+
+from material misstatement, whether due to fraud or error, and to issue an Auditor's Report that includes our
+
+opinion. Reasonable assurance is a high level of assurance, but is not a guarantee that an audit conducted in
+accordance with !SAs (UK) will always detect a material misstatement when it exists.
+
+Misstatements can arise from fraud or error and are considered material if, individually or in the aggregate, they
+
+could reasonably be expected to influence the economic decisions of users taken on the basis of these financial
+
+statements.
+
+Irregularities, including fraud, are instances of non-compliance with laws and regulations. The extent to which our
+
+procedures are capable of detecting irregularities, including fraud, is detailed below:
+
+) We enquired of management whether they were aware of any instances of non-compliance with laws and
+regulations or whether they had any knowledge of actual, suspected or alleged fraud. We corroborated
+our enquiries through direct confirmation with those charged with governance.
+
+° We identified significant laws and regulations, as detailed below, relevant to the company through inquiries
+of management and corroborated this through review of board minutes and legal expenses.
+
+. We obtained an understanding of the legal and regulatory frameworks that are applicable to the company
+and determined which may influence the financial statements. We determined that the most significant
+which are directly relevant to specific assertions in the financial statements are those related to the
+reporting frameworks (FRS 102 and Companies Act 2006), the relevant tax compliance regulations in the
+jurisdictions in which the company operates, the specific regulations for the industry including Premier
+League Rules and Regulations, English Football League Regulations and The FA Rules and Regulations.
+In addition, we concluded that there are certain significant laws and regulations that may have an effect on
+the determination of the amounts and disclosures in the financial statements and those are laws and
+regulations related to health and safety, employee matters, data protection, import duty, and bribery and
+
+corruption practices. :
+
+. We assessed the susceptibility of the company’s financial statements to material misstatement, including
+how fraud might occur. We performed procedures over journal entries (in particular journal entries
+
+: determined to be large or relating to unusual transactions), related party transactions and evaluated
+processes and controls in place to address the risks related to irregularities and fraud.
+
+. In assessing the potential risks of material misstatement, we obtained an understanding of the company's
+operations, the applicable statutory provisions, and the company’s control environment, including the
+adequacy of procedures for authorisation of transactions.
+
+° These audit procedures were designed to provide reasonable assurance that the financial statements
+were free from fraud or error. The risk of not detecting a material misstatement due to fraud is higher than
+the risk of not detecting one resulting from error and detecting irregularities that result from fraud is
+inherently more difficult than detecting those that result from error, as fraud may involve collusion,
+deliberate concealment, forgery or intentional misrepresentations. Also, the further removed non-
+
+compliance with laws and regulations is from events and transactions reflected in the financial statements,
+the less likely we would become aware of it;
+Page 20
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+rey) GrantThornton
+INDEPENDENT AUDITOR'S REPORT TO THE MEMBERS OF THE SHEFFIELD UNITED FOOTBALL CLUB
+; LIMITED (CONTINUED)
+
+. The engagement team’s experience with similar engagements, their understanding of the company’s
+industry and regulatory requirements (FRS 102, the Companies Act 2006, the relevant tax compliance
+regulations, Premier League Rules and Regulations, English Football League Regulations and The FA
+
+‘Rules and Regulations) relating to the company were considered in assessing the competence and
+capabilities of the engagement team.
+
+A further description of our responsibilities for the audit of the financial statements is located on the Financial
+
+Reporting Council's website at: www-frc.org.uk/auditorsresponsibilities. This description forms part of our
+
+Auditor's Report.
+
+Use of our report
+
+This report is made solely to the company's members, as a body, in accordance with Chapter 3 of Part 16 of the
+
+Companies Act 2006. Our audit work has been undertaken so that we might state to the company's members
+
+those matters we are required to state to them in an Auditor's Report and for no other purpose. To the fullest
+
+extent permitted by law, we do not accept or assume responsibility to anyone other than the company and the
+company's members as a body, for our audit work, for this report, or for the opinions we have formed.
+James Chadwick
+
+James Chadwick :
+
+Senior Statutory Auditor
+
+for and on behalf of Grant Thornton UK LLP
+
+Statutory Auditor, Chartered Accountants
+
+Glasgow ; ;
+
+Date: 21/1/2025 .
+
+Page 21
+Docusign Envelope 1D: 7A2D6F5D-81F8-4F 19-8D88-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+STATEMENT OF COMPREHENSIVE INCOME
+FOR THE YEAR ENDED 30 JUNE 2024
+, As restated
+2024 2023
+Note £ £
+Turnover 4 137,599,836 63,932,388
+Cost of sales (77,509,884) (57,780,933)
+Gross profit . 60,089,952 6,151,455
+Administrative expenses (excluding amortisation and impairment of
+intangible assets) (37,018,643) (20,296,984)
+Amortisation and impairment of intangible assets 12 (20,375,960) (18,135,763)
+Impairment of tangible assets 13 (10,701,351) -
+Total administrative expenses (68,095,954) (38,432,747)
+Other operating income 5 560,606 175,419
+Operating loss 6 (7,445,396) (32,105,873)
+Profit on disposal of intangible assets 19,350,718 4,418,578
+Total operating profit/(loss) 6 11,905,322 (27,687,295)
+Interest receivable and similar income 9 1,550,224 -
+Interest payable and similar expenses 10 (9,558,759) (3,840, 106)
+Profit/(loss) before tax 3,896,787 (31,527,401)
+Tax on profit/(loss) 11 (1,478,255) -
+Profit/(loss) for the financial year 2,418,532 (31,527,401)
+Loss on revaluation (10,024,536) -
+Other comprehensive income for the year (10,024,536) -
+Total comprehensive income for the year (7,606,004) (31,527,401)
+The notes on pages 26 to 56 form part of these financial statements.
+Please see note 30 for information on the restatement of prior year. :
+Page 22
+Docusign Envelope iD: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+REGISTERED NUMBER:00061564
+STATEMENT OF FINANCIAL POSITION ,
+AS AT 30 JUNE 2024
+As restated
+2024 2023
+Note £ £
+Fixed assets
+Intangible assets 12 46,355,137 18,563,069
+Tangible assets 13 42,564,227 54,125,320
+Investments 14 2. -
+88,919,366 72,688,389
+Non-current assets
+Debtors: amounts falling due after more than
+one year 16 11,748,583 -
+Current assets
+Stocks 15 442,514 414,789
+Debtors: amounts falling due within one year 16 13,699,927 29,284,173
+Cash at bank and in hand 17 376,906 630,061
+14,519,347 30,329,023
+Creditors: amounts falling due within one
+year 18 (45,788,698) (37,535, 140)
+Net current liabilities (31,269,351) (7,206,117)
+Total assets less current fiabilities 69,398,598 65,482,272
+Creditors: amounts falling due after more
+than one year 19 (57,969,955) (46,496,989)
+Deferred income 22 (8,147,766) (8,098,402)
+Net assets . 3,280,877 10,886,887
+Capital and reserves
+Called up share capital 24 72,448,202 72,448,202
+Revaluation reserve 25 - 10,024,536
+Profit and loss account 25 (69,167,325) (71,585, 857)
+Equity attributable to owners of the ———_—_ ————_
+parent company 3,280,877 10, 886,881
+Page 23
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+REGISTERED NUMBER:00061564
+STATEMENT OF FINANCIAL POSITION (CONTINUED)
+AS AT 30 JUNE 2024
+The financial statements were approved and authorised for issue by the board and were signed on its behalf by:
+a
+Steven Harlan Rosen
+Director
+Date: 21/1/2025
+The notes on pages 26 to 56 form part of these financial statements.
+Please see note 30 for information on the restatement of prior year.
+Page 24
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+STATEMENT OF CHANGES IN EQUITY
+FOR THE YEAR ENDED 30 JUNE 2024 .
+Share Revaluation Retained
+capital reserve earnings Total equity
+£ £ £ £
+At 1 July 2023 (as previously stated) 72,448,202 10,024,536 (73,470,798) 9,001,940
+Prior year adjustment - - 1,884,941 1,884,941
+At 1 July 2023 (as restated) 72,448,202 10,024,536 (71,585,857) 10,886,881
+: Comprehensive income for the year .
+Profit for the year - - 2,418,532 2,418,532
+Loss on revaluation - (10,024,536) - (10,024,536)
+Total comprehensive income for the year - (10,024,536) 2,418,532 (7,606,004)
+At 30 June 2024 72,448,202 - (69,167,325) 3,280,877
+. STATEMENT OF CHANGES IN EQUITY
+FOR THE YEAR ENDED 30 JUNE 2023
+Share Revaluation Retained
+capital reserve earnings Total equity
+£ £ £ £
+At 1 July 2022 (as previously stated) 43,643,702 10,024,536 (42,017,705) 11,650,533
+Prior year adjustment - - 1,959,249 1,959,249
+At 1 July 2022 (as restated) 43,643,702 10,024,536 (40,058,456) 13,609,782
+Comprehensive income for the year
+Loss for the year (as restated) - - (31,527,401) (31,527,401)
+Total comprehensive income for the year . - (31,527,401) (31,527,401)
+Shares issued during the year 28,804,500 - - 28,804,500
+At 30 June 2023 (as restated) 72,448,202 10,024,536 (71,585,857) 10,886,881
+The notes on pages 26 to 56 form part of these financial statements.
+Page 25
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+1. General information
+
+The Sheffield United Football Club Limited ("the Club") is a private company limited by shares,
+
+incorporated in England and Wales. Registered number 00061564. The Club's registered office is Bramall
+
+Lane Ground, Cherry Street, Sheffield, S2 4SU.
+
+2. Accounting policies
+
+2.1 Basis of preparation of financial statements
+
+_ The financial statements have been prepared under the historical cost convention unless otherwise
+specified within these accounting policies and in accordance with Financial Reporting Standard 102,
+the Financial Reporting Standard applicable in the UK and the Republic of Ireland and the
+Companies Act 2006.
+The preparation of financial statements in compliance with FRS 102 requires the use of certain
+critical accounting estimates. It also requires Club management to exercise judgement in applying
+the Club's accounting policies (see note 3).
+The Club’s presentational and functional currency is Sterling and all values are rounded to the
+nearest pound (£) except when otherwise stated.
+The following principal accounting policies have been applied:
+
+2.2 Financial Reporting Standard 102 - reduced disclosure exemptions
+The Club has taken advantage of the following disclosure exemptions in preparing these financial
+statements, as permitted by the FRS 102 "The Financial Reporting Standard applicable in the UK and
+Republic of Ireland":
+e the requirements of Section 7 Statement of Cash Flows; .
+co) the requirements of Section 3 Financial Statement Presentation paragraph 3.17(d);
+° the requirements of Section 33 Related Party Disclosures paragraph 33.7.
+This information is included in the consolidated financial statements of Blades Leisure Limited as at
+30 June 2024 and these financial statements may be obtained from Companies House.
+
+2.3 Exemption from preparing consolidated financial statements
+The company is a parent company that is also a subsidiary included in the consolidated financial
+statements of a larger group by a parent undertaking established under the law of any part of the
+United Kingdom and is therefore exempt from the requirement to prepare consolidated financial
+statements under section 400 of the Companies Act 2006.
+
+Page 26
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+2. Accounting policies (continued)
+2.4 Going concern
+The Club’s business activities, together with factors likely to affect its future development,
+performance, and position, have been considered by the directors throughout the period and will
+continue to be reviewed in line with the Club's strategic plan.
+The directors have reviewed the forecasts for the period ending January 2026, which demonstrate
+the Club can operate within its planned facilities including, if required, support from its controlling
+parties, for the period.
+The directors therefore have a reasonable expectation that the Club will be able to continue in
+operational existence for the foreseeable future with support from its controlling parties. For this
+reason, they continue to adopt the going concern assumption.
+2.5 Turnover
+Turnover comprises revenue generated by the Club's principal activities excluding transfer fees,
+donations and value added tax. Revenue streams include the below:
+Match day
+Match day revenue consists of all income receivable in respect of match day fixtures held both at
+home and away. it is inclusive of ticket revenues for home fixtures and a share of gate receipts from
+cup fixtures held both at home and away from Bramall Lane. The share of gate receipts payable in
+respect of cup fixtures is deducted from revenue.
+Match day revenue which is received in advance of a period end but relating to a future year (mainly
+in relation to seasonal facilities) is treated as deferred income. The deferred income is then released
+to revenue as the matches are played.
+Broadcasting
+Broadcasting revenues represent income receivable from all broadcasting and publishing contracts
+including the Premier League central deals, EFL distributions, broadcasting revenue from cup
+fixtures, internet revenues and programme income. Premier League and EFL distributions comprise
+of a fixed element, which is recognised equally over home fixtures played, along with additional
+revenues that are variable based on final league position.
+: Sponsorship & advertising .
+
+Sponsorship and advertising revenues include revenue receivable from sponsors in the year,
+including shirt sponsorship and other advertising at the ground. Such revenue is recognised on an
+accruals basis across the years the sponsorship and advertising income relates to.
+
+Page 27
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+2. Accounting policies (continued)
+
+2.5 Turnover (continued)
+Facility
+Facility revenues include rental and facility hire income, academy and retail income. Facility revenue
+is recognised in the year in which the facility has been utilised. Where facility income is received or
+invoiced in a year it is treated as deferred income and released in the year to which the income
+relates.
+The academy income is in the form of an elite player performance grant which contributes to the
+running costs of the academy.
+
+2.6 Other operating income
+Grants of a revenue nature are recognised in the Statement of Comprehensive Income in the same
+period as the related expenditure.
+
+2.7 Intangible assets
+Intangible assets are initially measured at present value, discounted at a market rate of interest for a
+similar debt instrument. After recognition, intangible assets are then measured less any accumulated
+amortisation and any accumulated impairment losses.
+All intangible assets are considered to have a finite useful life. If a reliable estimate of the useful life
+cannot be made, the useful life shall not exceed ten years.
+The estimated useful lives range as follows:
+
+Trademarks - 10 —years
+Transfer fees paid for player registrations
+The costs of acquiring player registrations, including Club agents fees, are expensed over the length
+of the contract, to reflect the ongoing service provided. The expectation of Club agent fees based on
+players future salaries in the league in which we are competing are also expensed over the length of
+the players contract.
+Potential future registration fees, contingent on certain conditions agreed in the registration contracts
+with the selling company, are disclosed as contingent liabilities (see note 32).
+Gains and losses on disposals are determined by comparing the proceeds with the carrying amount
+and are recognised in profit or loss.
+Page 28
+Docusign Envelope ID: 7A2D6F5D-81F 8-4F 1 9-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+2. Accounting policies (continued)
+2.8 Tangible assets
+Tangible assets under the cost model are stated at historical cost less accumulated depreciation and
+any accumulated impairment losses. Historical cost includes expenditure that is directly attributable to
+bringing the asset to the location and condition necessary for it to be capable of operating in the
+manner intended by management.
+The Club adds to the carrying amount of an item of fixed assets the cost of replacing part of such an
+item when that cost is incurred, if the replacement part is expected to provide incremental future
+benefits to the Club. The carrying amount of the replaced part is derecognised. Repairs and
+maintenance are charged to profit or loss during the period in which they are incurred.
+Depreciation is charged so as to allocate the cost of assets less their residual value over their
+: estimated useful lives, using the straight-line method.
+Depreciation is provided on the following basis:
+Buildings - 2% straight line basis
+Fixtures and fittings - 10%-25% straight line basis
+Motor vehicles - 25% straight line basis
+The assets’ residual values, useful lives and depreciation methods are reviewed, and adjusted
+prospectively if appropriate, or if there is an indication of a significant change since the last reporting
+date. .
+Gains and losses on disposals are determined by comparing the proceeds with the carrying amount
+and are recognised in profit or loss. .
+2.9 Revaluation of tangible assets ,
+Individual freehold and leasehold properties are carried at current year value at fair value at the date
+of the revaluation less any subsequent accumulated depreciation and subsequent accumulated
+impairment losses. Revaluations are undertaken with sufficient regularity to ensure the carrying
+amount does not differ materially from that which would be determined using fair value at the
+reporting date.
+Fair values are determined from market-based evidence normally undertaken by professionally
+qualified valuers.
+Revaluation gains and losses are recognised in other comprehensive income unless losses exceed
+the previously recognised gains or reflect a clear consumption of economic benefits, in which case
+the excess losses are recognised in the Statement of Comprehensive Income.
+2.10 Operating leases
+Rentals paid under operating leases are charged to the Statement of Comprehensive Income on a
+straight-line basis over the lease term.
+_ Page 29
+Docusign Envelope ID: 7A206F5D-81F8-4F 19-8DB8-5B93316F F053
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+2. Accounting policies (continued)
+2.11 Impairment of fixed assets and goodwill
+. Assets that are subject to depreciation or amortisation are assessed at each reporting date to
+determine whether there is any indication that the assets are impaired. Where there is any indication
+that an asset may be impaired, the carrying value of the asset (or cash-generating unit to which the
+asset has been allocated) is tested for impairment. An impairment loss is recognised for the amount
+by which the asset's carrying amount exceeds its recoverable amount. The recoverable amount is the
+higher of an asset's (or CGU's) fair value less costs to sell and value in use. For the purposes of
+assessing impairment, assets are grouped at the lowest levels for which there are separately
+identifiable cash flows (CGUs). Non-financial assets that have been previously impaired are reviewed
+at each reporting date to assess whether there is any indication that the impairment losses
+recognised in prior periods may no longer exist or may have decreased. -
+2.12 Valuation of investments
+Investments in subsidiaries are measured at cost less accumulated impairment. Where merger relief
+is applicable, the cost of the investment in a subsidiary undertaking is measured at the nominal value
+of the shares issued together with the fair value of any additional consideration paid.
+2.13 Stocks
+Stocks are stated at the lower of cost and net realisable value, being the estimated selling price less
+costs to complete and sell. Cost is based on the cost of purchase on a first in, first out basis.
+At each reporting date, stocks are assessed for impairment. If stock is impaired, the carrying amount
+is reduced to its selling price less costs to complete and sell. The impairment loss is recognised
+immediately in the Statement of Comprehensive Income.
+2.14 Debtors
+Short-term debtors are measured at transaction price, less any impairment.
+Loans receivable are measured initially at fair value, net of transaction costs, and are measured
+subsequently at amortised cost using the effective interest method, less any impairment.
+2.15 Cash and cash equivalents
+Cash is represented by cash in hand and deposits with financial institutions repayable without penalty
+on notice of not more than 24 hours. Cash equivalents are highly liquid investments that mature in no
+more than three months from the date of acquisition and that are readily convertible to known
+amounts of cash with insignificant risk of change in value.
+* 2.46 Financial instruments
+The Club has elected to apply the provisions of Section 11 “Basic Financial Instruments” of FRS 102
+to all of its financial instruments.
+Financial instruments are recognised in the Club's Statement of Financial Position when the Club
+becomes party to the contractual provisions of the instrument.
+Financial assets and liabilities are offset, with the net amounts presented in the financial statements,
+: when there is a legally enforceable right to set off the recognised amounts and there is an intentionto  -
+settle on a net basis or to realise the asset and settle the liability simultaneously.
+Page 30
+Docusign Envelope ID: 7A2D6FSD-81F8-4F 19-8DB8-5B93316FFO53 .
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+2. Accounting policies (continued) :
+2.16 Financial instruments (continued)
+Basic financial assets .
+Basic financial assets, which include trade and other receivables, cash and bank balances, are
+initially measured at their transaction price including transaction costs and are subsequently carried
+at their amortised cost using the effective interest method, less any provision for impairment, unless
+the arrangement constitutes a financing transaction, where the transaction is measured at the
+. present value of the future receipts discounted at a market rate of interest.
+Discounting is omitted where the effect of discounting is immaterial. The Club's cash and cash
+equivalents, trade and most other receivables due within the operating cycle fall into this category of
+financial instruments.
+Other financial assets
+Other financial assets, which includes investments in equity instruments which are not classified as
+subsidiaries, associates or joint ventures, are initially measured at fair value, which is normally the
+recognised transaction price. Such assets are subsequently measured at fair value with the changes
+in fair value being recognised in the profit or loss. Where other financial assets are not publicly
+traded, hence their fair value cannot be measured reliably, they are measured at cost less
+impairment.
+Impairment of financial assets
+Financial assets are assessed for indicators of impairment at each reporting date. Financial assets
+are impaired when events, subsequent to their-initial recognition, indicate the estimated future cash
+flows derived from the financial asset(s) have been adversely impacted. The impairment loss will be
+the difference between the current carrying amount and the present value of the future cash flows at
+the asset(s) original effective interest rate.
+If there is a favourable change in relation to the events surrounding the impairment loss then the
+impairment can be reviewed for possible reversal. The reversal will not cause the current carrying
+amount to exceed the original carrying amount had the impairment not been recognised. The
+impairment reversal is recognised in profit or loss.
+Financial liabilities
+Financial liabilities and equity instruments are classified according to the substance of the contractual
+arrangements entered into. An equity instrument is any contract that evidences a residual interest in
+the assets of the Club after the deduction of all its liabilities.
+Basic financial liabilities, which include trade and other payables, bank loans and other loans are
+initially measured at their transaction price after transaction costs. When this constitutes a financing
+transaction, whereby the debt instrument is measured at the present value of the future payments
+discounted at a market rate of interest. Discounting is omitted where the effect of discounting is
+immaterial.
+Debt instruments are subsequently carried at their amortised cost using the effective interest rate
+: method.
+Page 31
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+2. Accounting policies (continued)
+
+2.16 Financial instruments (continued)
+Trade payables are obligations to pay for goods and services that have been acquired in the ordinary ,
+course of business from suppliers. Trade payables are classified as current liabilities if the payment is
+due within one year. If not, they represent non-current liabilities. Trade payables are initially
+recognised at their transaction price and subsequently are measured at amortised cost using the
+effective interest method. Discounting is omitted where the effect of discounting is immaterial.
+Derecognition of financial assets
+Financial assets are derecognised when their contractual right to future cash flow expire, or are
+settled, or when the Club transfers the asset and substantially all the risks and rewards of ownership
+to another party. If significant risks and rewards of ownership are retained after the transfer to
+another party, then the Club will continue to recognise the value of the portion of the risks and
+rewards retained.
+Derecognition of financial liabilities
+Financial liabilities are derecognised when the Club's contractual obligations expire or are discharged
+or cancelled.
+
+2.17 Deferred Income
+Deferred income represents the sales made for the following season in season tickets and
+sponsorship, as these go on sale prior to the end of the prior football season. These will all be
+released in the period to which they relate to revenue.
+
+2.18 Interest Receivable and Interest Payable
+Interest payable and similar charges include interest payable on loan and overdraft and notional
+interest expense on deferred payments for player registrations. Borrowing costs that are directly
+attributable to the acquisition, construction or production of an asset that takes a substantial time to
+be prepared for use, are capitalised as part of the cost of that asset.
+Interest receivable and similar income include interest receivable on cash held at bank and notional
+interest on deferred receipts for sale of players’ registrations.
+Interest receivable and interest payable are recognised in the Statement of Comprehensive income
+as they accrue, using the effective interest method.
+
+2.19 Creditors
+Short-term creditors are measured at the transaction price. Other financial liabilities, including bank
+loans, are measured initially at fair value, net of transaction costs, and are measured subsequently at
+amortised cost using the effective interest method. .
+
+2.20 Finance costs
+Finance costs are charged to the Statement of Comprehensive Income over the term of the debt
+using the effective interest method so that the amount charged is at a constant rate on the carrying
+amount. Issue costs are initially recognised as a reduction in the proceeds of the associated capital
+
+: instrument: . : : :
+Page 32
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5893316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+2. Accounting policies (continued)
+
+2.21 Pensions
+Defined contribution pension plan :
+The Club operates a defined contribution plan for its employees. A defined contribution plan is a ;
+pension plan under which the Club pays fixed contributions into a separate entity. Once the
+contributions have been paid the Club has no further payment obligations.
+The contributions are recognised as an expense in the Statement of Comprehensive Income when
+they fall due. Amounts not paid are shown in accruals as a liability in the Statement of Financial
+Position. The assets of the plan are held separately from the Club in independently administered
+funds.
+Multi-employer pension plan
+The Club is a member of a multi-employer plan. Where it is not possible for the Club to obtain
+sufficient information to enable it to account for the plan as a defined benefit plan, it accounts for the
+plan as a defined contribution plan.
+Where the plan is in deficit and where the Club has agreed, with the plan, to participate in a deficit
+funding arrangement the Club recognises a liability for this obligation. The amount recognised is the
+net present value of the contributions payable under the agreement that relate to the deficit. This
+amount is expensed in the Statement of Comprehensive Income. The unwinding of the discount is
+recognised as a finance cost/(benefit).
+
+2.22 Borrowing costs
+All borrowing costs are recognised in the Statement of Comprehensive Income in the year in which
+they are incurred.
+
+2.23 Provisions for liabilities
+Provisions are made where an event has taken place that gives the Club a legal or constructive
+obligation that probably requires settlement by a transfer of economic benefit, and a reliable estimate
+can be made of the amount of the obligation.
+Provisions are charged as an expense to the Statement of Comprehensive Income in the year that
+the Club becomes aware of the obligation and are measured at the best estimate at the reporting
+date of the expenditure required to settle the obligation, taking into account relevant risks and
+uncertainties.
+When payments are eventually made, they are charged to the provision carried in the Statement of
+Financial Position.
+
+Page 33
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+2. Accounting policies (continued)
+
+2.24 Current and deferred taxation
+Tax is recognised in the Statement of Comprehensive Income except that a charge attributable to an
+item of income and expense recognised as other comprehensive income or to an item recognised
+directly in equity is also recognised in other comprehensive income or directly in equity respectively.
+The current income tax charge is calculated on the basis of tax rates and laws that have been
+enacted or substantively enacted by the reporting date in the countries where the Club operates and
+generates income.
+
+Deferred tax is calculated at the tax rates that are expected to apply to the period when the asset is
+tealised or the liability is settled based on tax rates that have been enacted or substantively enacted
+by the reporting date.
+
+Deferred tax liabilities are recognised in respect of all timing differences that exist at the reporting
+date. Timing differences are differences between taxable profits and total comprehensive income that
+arise from the inclusion of income and expenses in tax assessments in different periods from their
+recognition in the financial statements. Deferred tax assets are recognised only to the extent that it is
+probable that they will be recovered by the reversal of deferred tax liabilities or other future taxable
+profits.
+
+Current tax assets and current tax liabilities and deferred tax assets and deferred tax liabilities are
+offset, if and only if, there is a legally enforceable right to set off the amounts and the entity intends
+either to settle on the net basis or to realise the asset and settle the liability simultaneously.
+
+2.25 Contingencies :
+Under certain transfer agreements further transfer payments may fall due to both the transfer Club
+and Player's Agents should the player make a specified number of first team appearances (or other
+such criteria as specified in the contract). It is the Club's policy that any additional fees that may
+become payable under such agreements are accounted for in the period in which the achievement of
+the specified criteria becomes probable.
+
+Contingent assets are not recognised until the inflow of economic benefits are virtually certain.
+Contingent assets are disclosed in the financial statements when an inflow of economic benefits is
+highly probable.
+
+Page 34
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFD53 .
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+3. Judgements in applying accounting policies and key sources of estimation uncertainty
+Estimates and judgements are continually evaluated and are based on historical experience and other
+factors, including expectations of future events that are believed to be reasonable under the
+circumstances. The directors made the following judgements and estimates in preparing the Financial
+Statements:
+Critical judgements
+The directors have not used any judgements (apart from those involving estimates) within the accounts to
+have any significant effect on amounts recognised in the financial statements.
+Key sources of estimation uncertainty ,
+The estimates and assumptions which have a significant risk of causing a material adjustment to the
+carrying amount of assets and liabilities are as follows.
+3.1 Present value of player trading
+The long-term player debtors and player creditors are measured at the present value of future receipts
+and payments discounted at a market rate of interest for a similar debt instrument.
+3.2 Agent fee capitalisation
+A portion of the Club's agent fees are capitalised against each player, the determination of this is based on
+the league in which we are currently competing over the term of their contract and the deemed cost of
+obtaining the players registration.
+3.3 Present value of pension obligations
+The funding objective of the Trustees of the Scheme is to have sufficient assets to meet the Technical
+Provisions of the Scheme. To remove the deficit revealed at the previous actuarial valuation (dated 31
+August 2023), deficit contributions are payable by all participating clubs. Payments are made in
+.accordance with a payment schedule. Determining the present value of the clubs share of the pension
+obligations requires significant assumptions determined by the schemes actuaries and therefore
+represents a key source of uncertainty, see note 26 for further detail.
+3.4 Deferred tax asset
+Following a review of the forecasts for future periods and the anticipated profit from the player trading in
+the transfer window, the company now expects to utilise a portion of available tax losses in future periods,
+and has recognised a deferred tax asset on a portion of tax losses carried forward at the balance sheet
+date. No deferred tax asset in respect of losses have been recognised in the prior year. See notes 11 and
+23 for further detail.
+
+Page 35
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFD53 ,
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+3. Judgements in applying accounting policies (continued)
+3.5 Impairment of player registration
+The valuation of intangible assets is given consideration by the directors. Under certain circumstances, the
+directors may commence an impairment review. The following factors would be considered:
+: ¢ Acareer ending injury
+e A player who has irrecoverable differences with senior management
+The impairment will be based on the directors’ best estimate of disposal value taking in to account recent
+player disposals by the Club and other Clubs, as well as any offers received for the player. When an
+impairment charge is considered necessary it is charged to the Statement of Comprehensive Income in
+the period to reduce the carrying value of the player to the player's fair value less any costs to sell.
+3.6 Impairment of debtors
+The group makes an estimate of the recoverable value of trade and other debtors. When assessing the
+impairment of trade and other debtors, management considers factors including the current credit rating of
+the debtor, the ageing of the debtors and historical experience.
+3.7 Impairment of tangible assets
+The valuation of tangible assets is given consideration by the directors. When a valuation is undertaken, if
+the value of the assets does not increase, then the impairment of this asset is reflected in the Statement
+of Comprehensive Income in the year. The basis of valuation of property has changed during the prior
+year, see note 13 for further details of the revaluation.
+Page 36
+Docusign Envelope ID: 7A2D6F 5D-81F8-4F 1 9-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+: FOR THE YEAR ENDED 30 JUNE 2024
+4. Turnover
+An analysis of turnover by class of business is as follows:
+. 2024 2023
+£ £
+Match day 11,498,190 9,656, 794
+Broadcasting 114,330,972 42,678,957
+Sponsorship & advertising 7,261,283 5,201,122
+Facility 4,509,391 6,395,521
+137,599,836 63,932,388
+Analysis of turnover by country of destination:
+2024 2023
+£ £
+United Kingdom 133,758,393 62,849,208
+Rest of the World 3,790,708 183,640
+; Rest of Europe 50,735 899,540
+137,599,836 63,932,388
+5. Other operating income
+As restated
+2024 2023
+£ £
+Other income 560,606 175,419
+Please see note 30 for information on the restatement of the prior year.
+: Page 37
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+6. Operating profit/(loss)
+The operating profit/(loss) is stated after charging:
+2024 2023
+£ £
+Depreciation of tangible assets 3,022,233 3,499,900
+Amortisation of intangible assets 20,375,960 18,135,763
+Impairment of trade debtors 184,154 183,986
+Impairment of intercompany debtors 14,378,442 -
+Operating lease rentals 171,016 45,084
+Impairment of tangible assets 10,701,351 -
+7. Auditor's remuneration
+2024 2023
+£ £
+Fees payable to the company’s auditor and its associates for the audit of
+the company's annual accounts 90,000 75,000
+Fees payable to the company's auditor and its associates in respect
+of:
+Tax compliance 37,370 28,583
+Other non-audit services 20,429 8,000
+Accounts production 10,014 8,250
+Interim review procedures 10,000 6,180
+Tax advisory 36,050 -
+Page 38
+Docusign Envelope ID: 7A2ZD6F5D-81F8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+8. Employees :
+2024 2023
+£ £
+Wages and salaries 55,707,251 42,460,540
+Social security costs 7,726,541 5,547,481
+Cost of defined contribution scheme 269,870 186,709
+63,703,662 48,194,730
+Included in wages and salaries are redundancy and ex-gratia payments of £1,452,550 (2023: £59, 338).
+The directors did not receive any remuneration within the year.
+The average monthly number of employees (full time equivalent), including the directors, during the year
+was as follows:
+2024 2023
+No. No.
+Football 118 117
+Non-football : 187 184
+305 295
+9. Interest receivable and similar income
+2024 2023
+£ £
+Unwinding of discounting on deferred receivables for player registration
+disposals 1,550,224 -
+Page 39
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS :
+FOR THE YEAR ENDED 30 JUNE 2024
+10. Interest payable and similar expenses
+2024 2023
+. £ £
+Other interest payable 261,688 677,623
+Loan interest payable 5,537,509 3,157,659
+Finance leases and hire purchase contracts 42,380 24,393
+Finance costs/(benefit) 226,045 (19,569)
+Unwinding of discounting on deferred payments for player registration
+disposals 3,491,137 -
+9,558,759 3,840,106
+11. Taxation
+2024 2023
+£ £
+Corporation tax
+Current tax on profits for the year 2,478,255 -
+Total current tax 2,478,255 -
+Origination and reversal of timing differences (1,000,000) -
+Total deferred tax (1,000,000) -
+Taxation on profit on ordinary activities 1,478,255 -
+Page 40
+Docusign Envelope ID: 7A2D6F50-81F8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+. NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+11. Taxation (continued)
+Factors affecting tax charge for the year
+The tax assessed for the year is higher than (2023: higher than) the standard rate of corporation tax in
+the UK of 25% (2023: 20.5%). The differences are explained below: :
+As restated
+2024 2023
+£ £
+Profit/(loss) on ordinary activities before tax 3,896,787 (31,527,401)
+Profit/(loss) on ordinary activities multiplied by standard rate of corporation
+tax in the UK of 25% (2023: 20.5%) 974,197 (6,463,117)
+Effects of:
+Other timing differences leading to an increase/(decrease) in taxation (282,047) 10,311
+Fixed asset differences 405,812 605,628
+Expenses not deductible for tax purposes 6,171,510 925, 106
+Non-taxable income (119,456) (15,230)
+Adjustments to tax charge in respect of prior periods (25,759) -
+Remeasurement of deferred tax for changes in tax rates - (1,084,965)
+Movement in deferred tax not recognised (4,618,862) 6,022,083
+Group relief surrendered , (27,140) 184
+Recognition of deferred tax asset on prior period tax losses not previously
+recognised as a deferred tax asset (1,000,000) -
+Total tax charge for the year 1,478,255 -
+Factors that may affect future tax charges
+: Unrelieved tax losses of approximately £68,492,153 (2023: £83,276,441) remain available to offset
+against future taxable trading profits.
+In the current year a deferred tax asset has been recognised of £1,000,000 (refer to note 3). The total
+remaining amount unprovided for is approximately £20,001,656 (2023: £19,564,289). At present it is not
+envisaged that further future taxable profits will be sufficient for these timing differences to be reversed for
+the remaining amount.
+The Finance Act 2021 was substantively enacted in May 2021 and has increased the corporation tax rate
+from 19% to 25% with effect from 1 April 2023 on profits over £250,000. The rate for small profits under
+£50,000 will remain at 19%. When the company's profits fall between £50,000 and £250,000, the lower
+and upper limits, it will be able to claim an amount of marginal relief providing a gradual increase in
+corporation tax rate. The deferred taxation balances have been measured using the rates expected to
+apply in the reporting years when the timing differences reverse.
+Page 41
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024 ‘
+12. Intangible assets
+Player
+registrations Trademarks Total
+£ £ £
+Cost
+At 1 July 2023 86,798,082 100,000 86,898,082
+Additions 52,579,586 - 52,579,586
+Disposals (21,926,959) - (21,926,959)
+At 30 June 2024 117,450,709 100,000 117,550,709
+Amortisation °
+At 1 July 2023 68,235,013 100,000 68,335,013
+Charge for the year 20,375,960 - 20,375,960
+Disposals (17,515,401) - (17,515,401)
+At 30 June 2024 71,095,572 100,000 71,195,572
+- Net book value
+At 30 June 2024 46,355,137 - 46,355,137
+At 30 June 2023 18,563,069 - 18,563,069
+The intangible asset that is material to the financial statements is the first team squad. The carrying value
+of the squad has a remaining amortisation period of 1-3 years.
+Amortisation on intangible assets is charged to administrative expenses.
+The figures for cost of player registrations are historic figures for the cost associated with acquiring
+players’ registrations or extending their contracts. Accordingly the net book amount of player registrations
+will not reflect, nor is it intended to, the current market value of these players nor does it take any account
+of players developed through the company's youth system.
+The directors consider the net realisable value of intangible assets to be significantly greater than their
+: book value.
+Page 42
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 1 9-8DB8-5893316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+. FOR THE YEAR ENDED 30 JUNE 2024
+13. Tangible assets
+Land and Fixtures and Motor :
+buildings fittings vehicies Total
+£ £ £ £
+Cost/Valuation
+At 1 July 2023 54,343,501 15,422,001 22,665 69,788,167
+Additions 7,205,587 4,981,441 - 12,187,028
+At 30 June 2024 61,549,088 20,403,442 22,665 81,975,195
+Depreciation ,
+At 1 July 2023 ” 4,166,004 11,474,178 22,665 15,662,847
+Charge for the year 1,062,730 1,959,503 - 3,022,233
+Impairment charge 20,725,888 - - 20,725,888
+At 30 June 2024 25,954,622 13,433,681 22,665 39,410,968
+Net book value
+At 30 June 2024 : 35,594,466 6,969,761 - 42,564,227
+At 30 June 2023 50,177,497 3,947,823 - 54,125,320
+The net carrying amount of assets held under hire purchase agreements is £262,426 (2023: £503,253).
+These assets are all included within fixtures and fittings. ,
+The properties held by the company have been revalued as at 25 July 2024 following an independent
+valuation. The basis of valuation has been undertaken as the market value in accordance with the RICS
+valuation - professional standards, ‘The estimated amount for which an asset or liability should exchange
+on the valuation date between a willing buyer and a willing seller in an arm's length transaction after
+proper marketing and where the parties had each acted knowledgeably, prudently and without
+compulsion’. Prior to the revaluations, the carrying amount that would have been recognised under the
+cost model was £40,709,534 (2023: £42, 435,096).
+An impairment of charge of £20,725,887 has been made to the properties held by The Sheffield United
+Football Club Limited, with £10,024,537 being eliminated from the revaluation reserve and the balance of
+£10,701,351 being charged through profit and loss.
+Prior to the revaluations in 2022 and 2024, the carrying amount that would have been recognised under
+the cost model was £40,709,534 (2023: £42, 435,096).
+Land valued at £1,376,352, is not subject to depreciation within the land and buildings category.
+Page 43
+Docusign Envelope 1D: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED ,
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+14. Fixed asset investments
+Investments
+: in
+: subsidiary
+companies
+£
+Cost or valuation
+Additions 2
+At 30 June 2024 2
+Net book value
+At 30 June 2024 2
+At 30 June 2023 -
+Subsidiary undertakings
+The following were subsidiary undertakings of the company:
+Class of
+Name Registered office shares Holding
+SUFC Women Limited Professional football club Ordinary 100%
+SUFC Hotel Ltd : Hotel Ordinary 100%
+SUFC Crookes Ltd Dormant Ordinary 100%
+SUFC Bramall Lane Ltd Dormant Ordinary 100%
+SUFC Enterprise Centre Ltd Dormant Ordinary 100%
+SUFC Shirecliffe Ltd Dormant Ordinary 100%
+All subsidiary undertakings are registered at Bramall Lane Ground, Cherry Street, S2 4SU and are
+incorporated in England and Wales.
+Page 44
+Docusign Envelope ID: 7A206F50-81F8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+15. Stocks
+2024 2023
+£ £
+Goods for resale : 442,514 414,789
+Stock is stated after provision for impairment of £33,731 (2023: £15,099).
+Stock recognised as an expense during the year was £1,690,668 (2023: £1,365, 326).
+16. Debtors
+2024 2023
+: £ £
+Due after more than one year
+Trade debtors 11,748,583 -
+Included within trade debtors are amounts totalling £11,748,583 (2023: £Nil) relating to the consideration
+receivable for the sale of player registrations.
+, 2024 2023
+£ £
+Due within one year :
+Trade debtors 8,822,638 11,974,000
+Amounts owed by group 125,924 14,781,710
+Other debtors 1,852,162 499,673
+Prepayments and accrued income 851,041 1,322,641
+. Corporation tax recoverable 1,048,162 706, 149
+Deferred taxation 4,000,000 -
+13,699,927 29,284,173
+. Included within trade debtors are amounts totalling £6,758,947 (2023: £8,412,760) relating to the
+consideration receivable for the sale of player registrations.
+Trade debtors stated after provision of £330,253 (2023: £356,704).
+Amounts owed by group undertakings are repayable on demand.
+Page 45
+Docusign Envelope 1D: 7A2D6F5D-81F8-4F 19-80B8-5B93316FFD53 :
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+17. Cash and cash equivalents
+: 2024 2023
+£ £
+Cash at bank and in hand 376,906 630,061
+18. Creditors: Amounts falling due within one year
+2024 2023
+£ £
+Bank loans (note 20) 9,045,242 -
+Factored loans (note 20) 4,940,527 7,788,840
+Trade creditors 22,439,562 9,390,875
+Football league pension liability 137,296 130,758
+Amounts owed to group 76,483 512,058
+Other taxation and social security 3,193,207 1,390,784
+. Net obligations under finance lease and hire purchase contracts (note 21) 67,985 73,018
+Other creditors 1,317,283 1,141,326 ©
+Accruals 4,571,113 17,107,481
+. 45,788,698 37,535,140
+included within trade creditors and accruals are amounts totalling £19,504,081 (2023: £5,651,724)
+relating to the consideration payable for the purchase of player registrations.
+Amounts owed to group are repayable on demand.
+The finance leases and hire purchase contracts are secured on the assets to which they relate.
+Page 46
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+19. Creditors: Amounts falling due after more than one year
+2024 2023
+£ £
+Bank loans (note 20) 23,954,758 45,000,000
+Factored loans (note 20) 13,031,298 -
+Net obligations under finance leases and hire purchase contracts (note 21) 220,338 288,323
+Trade creditors 20,299,283 833, 133
+Football league pension liability 455,148 366,403
+Preference share capital treated as debt (note 24) 9,130 9,130
+57,969,955 46,496,989
+Included within trade creditors are amounts totalling £20,299,283 (2023: £833,133) relating to the
+consideration payable for the purchase of player registrations. .
+Disclosure of the terms and conditions attached to the non-equity shares is made in note 24.
+The finance leases and hire purchase contracts are secured on the assets to which they relate. 7
+Page 47
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED :
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+20. Loans
+Analysis of the maturity of loans is given below:
+2024 2023
+£ £
+Bank loans
+Amounts falling due within one year 9,045,242 -
+Amounts falling due 1-2 years 23,954,758 45,000,000
+33,000,000 45,000,000
+Factored loans
+Amounts falling due within one year 4,940,527 7,788,840
+Amounts falling due 1-5 years 13,031,298 -
+17,971,825 7,788,840
+———————— ew +
+The bank loan is secured by way of fixed and floating charges over the assets and properties of The
+Sheffield United Football Club Limited and fixed charges over the Central Funds from the Premier
+League. The principal element of the loan is due for final repayment by the company in May 2026, with
+interest and principal payments being required in instalments.
+As at 30 June 2023, the Clubs payment terms on the facilities fell greater than one year, assuming
+Premier League retention as the repayment terms of banking facilities are dependent upon football
+league status, with £5,298,562 being due within the year if the Club were relegated at the conclusion on
+the 2023/24 season. Subsequent to the prior year end, an amendment had been made on the banking
+facility whereby £2,250,000 fell due within 12 months. .
+Charges registered for The Sheffield United Football Club Limited for bank loans:
+0006 1564 0038 - 28 June 2024, in favour of Macquarie Bank Limited, London Branch
+0006 1564 0039 - 28 June 2024, in favour of Macquarie Bank Limited, London Branch
+Charges registered for The Sheffield United Football Club Limited for factored loans:
+0006 1564 0032 - 4 January 2023, in favour of Close Leasing Limited
+0006 1564 0037 - 29 May 2024, in favour of Macquarie Bank Limited, London Branch
+Page 48
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFO53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+21. Hire purchase and finance leases
+Minimum lease payments under hire purchase fall due as follows:
+2024 2023
+£ £
+Within one year 98,172 114,998
+Between 1-5 years 254,053 352,225
+352,225 467,223
+Less interest (63,901) (105, 881)
+288,324 361,342
+22. Deferred income :
+. As restated
+2024 2023
+: £ £
+Sponsorship 2,618,033 2,660,260
+Advance ticket sales : 5,529,733 5,393,142
+Broadcasting - 45,000
+8,147,766 8,098,402
+Please see note 30 for information on the restatement of prior year.
+23. Deferred taxation
+Deferred tax assets and liabilities are offset where the company has a legally enforceable right to do so.
+The following is the analysis of the deferred tax balances (after offset) for financial reporting purposes:
+2024
+£
+Credit to Statement of Comprehensive Income 1,000,000
+At end of year 1,000,000
+Page 49
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5893316FFD53
+. THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+23. Deferred taxation (continued)
+The deferred tax asset is made up as follows: .
+2024 2023
+£ £
+Tax losses 1,000,000 -
+The deferred tax asset set out above is expected to reverse within 12 months and relates principally to
+the utilisation of tax losses against future expected profits of the same period.
+24. Share capital
+2024 2023
+£ £
+Shares classified as equity
+Allotted, called up and fully paid
+477 Deferred shares of £100 each : 47,700 47,700 .
+144,801 Ordinary shares of £500 each 72,400,500 72,400,500
+204 Deferred shares of £0.01 each 2 2
+72,448,202 72,448,202
+There is a single class of ordinary shares. There are no restrictions on dividends and the repayment of
+capital.
+There are two classes of deferred shares. There are restrictions on dividends and the repayment of
+capital.
+2024 2023
+£ £
+Shares classified as debt
+, 913 Preference shares of £10 each 9,130 9,130
+There is a single class of preference shares. There are restrictions on dividends and the repayment of
+capital.
+Page 50
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+25. Reserves
+Revaluation reserve
+Includes reserves for the revaluation of tangible asset buildings.
+Profit & loss account
+Includes all current and prior period retained profits and losses.
+26. Pension commitments
+
+Sheffield United Football Club (‘the Club’) participates in the Football League Pension and Life Assurance
+Scheme (‘the Scheme’). The Scheme is a funded multi-employer defined benefit scheme, with 92
+participating employers, and where members may have periods of service attributable to several
+participating employers. The Club is unable to identify its share of the assets and liabilities of the Scheme
+and therefore accounts for its contributions as if they were paid to a defined contribution scheme.
+The last actuarial valuation was carried out at 31 August 2023 where the total deficit on the on-going
+valuation basis was £20.6 million. The key assumptions used to calculate the deficit at the 31 August 2020
+actuarial valuation are:
+Discount Rate: Gilt Yield Curve + 0.5% per annum
+RPI inflation: Bank of England Inflation Curve
+Pension Increases: Fixed 3.0% per annum for benefits accrued prior to 6 April 1997, and
+
+modelled using the RPI inflation assumption with a cap of 5.0% per
+
+annum and a floor of 3.0% per annum for benefits accrued after 6 April
+
+1997. .
+Mortality (pre-retirement): None
+Mortality (post-retirement): SAPS (Series 3) with CMI_2022 projections, a long-term improvement
+
+rate of 1.5% p.a. and an initial additional parameter of 0.5% p.a.
+The accrual of benefits ceased within the Scheme on 31 August 1999, therefore there are no contributions
+relating to current accrual. The Club pays monthly contributions based on a notional split of the total
+expenses and deficit contributions of the Scheme.
+The results of the 2023 valuation were rolled forward to 30 June 2024 on the same assumptions as
+detailed above, and the Club’s notional share of the deficit was £509,576 (£484, 123 as at 30 June 2023).
+As at 30 June 2024, the Club was paying total contributions of £10,984 per month (increasing by 5% p.a.
+on 1 September each year) and based on the actuarial valuation assumptions detailed above will be
+sufficient to pay off the deficit by 30 November 2028.
+As at 30 June 2024, based on an appropriate discount rate of 4.96% per annum (6.39% per annum as at
+30 June 2023), the present value of the Club’s outstanding contributions (i.e. their future liability) is
+£592,444 (£497,167 as at 30 June 2023). This amounts to £137,296 (30 June 2023: £130,758) due within
+one year and £455,148 (30 June 2023: £366,403) due after more than one year and is included within
+other payables.
+
+Page 51
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+26. Pension commitments (continued)
+Present Value of Defined Benefit Obligation
+2024 2023
+£ gE
+Present Value of Defined Benefit Obligation 592,444 497,161
+Reconciliation of Defined Benefit Obligation
+2024 2023
+£ £
+Defined benefit obligation at start of period 497,161 641,267
+Net interest charge (unwinding of discount rate) 27,612 15,637
+Club contribution (deficit contribution) (130,758) (124,537)
+Remeasurement (changes in assumptions) 8,133 (35,206)
+Remeasurement (change to contribution schedule) 190,296 -
+Defined benefit obligation at end of period 592,444 497,161
+Income and expenditure impact
+2024 2023
+£ £
+Net interest charge (unwinding of discount rate) 27,612 15,637
+Remeasurement (changes in assumptions) 8,133 (35,206)
+Remeasurement (change to contribution schedule) 190,296 -
+Assumptions
+2024 2023
+Discount rate 4.96% 6.39%
+The funding objective of the Trustees of the Scheme is to have sufficient assets to meet the Technical
+Provisions of the Scheme. In order to remove the deficit revealed at the previous actuarial valuation (dated
+31 August 2023), deficit contributions are payable by all participating clubs. Payments are made in
+accordance with a pension contribution schedule. As the Scheme is closed to accrual, there are no
+additional costs associated with the accruing of members’ future benefits. In the case of a club being
+relegated from the Football League and being unable to settle its debt then the remaining clubs may, in
+exceptional circumstances, have to share the deficit.
+. Page 52
+Docusign Envelope ID: 7A2D6F50-81F8-4F 19-8DB8-5B93316FFD53 .
+. THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+. NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+26. Pension commitments (continued)
+Upon the wind-up of the Scheme with a surplus, any surplus will be used to augment benefits. Under the
+more likely scenario of there being a deficit, this will be split amongst the clubs in line with their
+contribution schedule. Should an individual club leave the Scheme, they may be required to pay their
+share of the deficit based on a proxy buyout basis (i.e. valuing the benefits on a basis consistent with
+buying out the benefits with an insurance company).
+A financial cost of £226,045 (2023: financial benefit of £19,569) is made to the Statement of
+Comprehensive Income during the year, representing the interest costs on the outstanding deficit of the
+scheme.
+In addition, the company operates a defined contributions pension:scheme. The assets of the scheme are
+held separately from those of the group in an independently administered fund. The pension cost charge
+represents contributions payable by the company to the fund and amounted to £269,870 (2023:
+£186,709). Contributions totalling £34,836 (2023: £42,830) were payable to the fund at the reporting date.
+27. Capital commitments
+, As at 30 June 2024, The Sheffield United Football Club had paid a 10% deposit for the purchase of the
+HSBC Sports and Social Club site in Dore with the sale completing and the remaining balance of £2.7
+million to due to be paid in August 2024.
+The refurbishment of SUFC Hotel Ltd was well underway as at 30 June 2024, with a remaining committed
+spend of £1.7 million to ensure the opening of the Hotel in August 2024.
+28. Commitments under operating leases
+At 30 June 2024 the company had future minimum lease payments due under non-cancellable operating
+leases for each of the following periods:
+2024 2023
+£ £
+Not later than 1 year 119,291 68,233
+Later than 1 year and not later than 5 years 129,751 108,748
+249,042 176,981
+A pass through lease has been established between SUFC Women Limited and The Sheffield United
+Football Club Limited, whereby the lease income and expenditure for each company are equal and
+opposite, and therefore in the year 1 July 2023 to 30 June 2024 offset one another in the accounts. The
+lease expires in September 2038.
+Page 53
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-80B8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+29. Related party transactions
+As a wholly owned subsidiary of Blades Leisure Limited, the company is exempt from the requirements of
+FRS 102 to disclose transactions with other members of the group headed by Blades Leisure Limited on
+the grounds that accounts are publicly available.
+Purchases were credited of £16 (2023: made £618) from KFCO Beerschot-Wilrikk NV with a period end
+creditor balance of ENil (2023: £678).
+Purchases were made of £389,787 (2023: £847,774) from United World Holding Limited with a period
+end creditor balance of £389,787 (2023: £847,774). Sales were made of £1,209,462 (2023: £902,273) to
+United World SA with a period end debtor balance of £394,369 (2023: £1,335,138). Purchases were
+made of £1,580,119 and consultancy fees were charged of £3,006,000 (2023: purchases £975,698 and
+consultancy fees £3,825,462) from United World SA with a period end creditor balance of £90 (2023:
+£2,735,905). The consultancy fees to United World SA certain costs including staff related costs which
+are borne by another group company. The directors did not receive any remuneration from the company .
+in respect of their services during the year. Certain directors who served during the year are also
+directors of the parent company or a fellow subsidiary company and are remunerated by those
+companies. Although they receive remuneration in respect of their services to various group companies,
+including this company, it is not practicable to allocate their remuneration to individual companies in the
+group. Therefore, their remuneration has been disclosed in the financial statements of the relevant
+company from which remuneration is received.
+Sales were made of £175,190 (2023: £107,937) to Sheffield United Community Foundation with a period
+end debtor balance of £51,473 (2023: £15,865). Purchases were made of £9,706 (2023: £Nil) from
+Sheffield United Community Foundation with a period end creditor balance of £92 (2023: £Nil).
+During the year, the company received a loan of ENil (2023: £22,720,886) from the ultimate parent
+company, United World Holding Limited. No interest is payable other than in the event of default.
+30. Prior year adjustment
+The directors have reviewed the documentation related to the deferred capital grants and determined that
+a prior year adjustment is required. This adjustment arises from the fact that the grants were linked to
+: properties previously sold and subsequently repurchased, meaning no clawback obligation exists on the
+original grant. As a result, the adjustment has impacted the reserves position by £1,884,941 with a
+restatement to deferred income amounting to £1,884,941 and other operating income amounting to
+£74,308 in the prior year.
+As restated
+2023 2023
+The Sheffield United Football Club Limited £ £
+Deferred income - Deferred capital grant - (1,884,941)
+Other operating income - Other grants released - 74,308
+Capital and reserves - Profit and loss account (71,585,857) (73,470,798)
+. : Page 54
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8DB8-5B93316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+
+31. Post balance sheet events ,
+After the year end, the Club made several changes to its first team squad. A successful summer 2024
+transfer market resulted in a profit on disposal of player registrations of £22.3 million, following the sale of
+Daniel Jebbison to AFC Bournemouth, Cameron Archer, back to Aston Villa, William Osula to Newcastle
+United, Levis Pitan to Gliwicki Klub Sportoway Piast SA, Bénie Traoré to FC Basel 1893 AG, Jayden
+Bogle to Leeds United and Auston Trusty to Celtic. Harrison Burrows from Peterborough United, Michael
+Cooper from Plymouth Argyle and Keiffer Moore from AFC Bournemouth were recruited in place of these
+players, at a total acquisition cost of £6.9 million.
+An administrative exercise was undertaken in July 2024 in order to redeem a class of shares for which the
+tights had expired. All 204 holders of the £0.01 deferred share and all 477 holder of the £100 deferred -
+shares were advised in writing that on the 31 July 2024 the Club would be redeeming each of these
+shares for the price of £1 per share. These shares were redeemed in full, in accordance with the Articles
+of Association on the 31st July 2024.
+On 23 August 2024, The DoubleTree by Hilton Sheffield City hotel opened became operational following a
+full redevelopment and refurbishment. The hotel will be operated by leaf HOSPITALITY, the UK based
+Hote! Management company, who manage a number of Hilton properties across the UK, and under a :
+Franchise Agreement with Hilton Worldwide Holdings Inc.
+On 29 August 2024, the sale of the Hathersage Road site (previously HSBC Sports Ground) was
+completed. The addition of the site offers the Club the opportunity to create a state-of-the-art training
+facility that will allow the Club the opportunity to expand both its First Team, and Academy operations.
+On 23 December 2024, a change of control occurred in respect of the Blades Leisure Group, the parent of
+The Sheffield United Football Club Limited. COH Bidco Limited, a company registered in England in 2024,
+acquired 100% of the share capital in Blades Leisure Limited. The ultimate parent company of the Blades
+Leisure Group is now COH Sports United LLC, a company registered in Delaware, United States of
+America. This entity is jointly controlled by the trusts of Steven Harlan Rosen and Helmy Atef Eltoukhy.
+
+32. Contingent transfer fees payable
+Under the terms of certain contracts with other’ football clubs in respect of player transfers, certain
+additional amounts would be payable by the company if conditions as to future team selection or
+performance are met. The maximum that could be payable is £11,553,813 (2023: £11,686,355). This
+amount is not provided in the financial statements as payment is not yet probable.
+
+33. Liability limitation agreement with the auditor
+The company has entered into a liability limitation agreement with Grant Thornton UK LLP, the statutory
+auditors, in respect of the statutory audit for the year ended 30 June 2024. The proportionate liability
+agreement follows the standard terms in Appendix B to the Financial Reporting Council's June 2008
+Guidance on Auditors Liability Agreements, and was approved by the shareholders on 31 July 2024.
+
+, . Page 55
+Docusign Envelope ID: 7A2D6F5D-81F8-4F 19-8D88-5893316FFD53
+THE SHEFFIELD UNITED FOOTBALL CLUB LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2024
+34. Ultimate parent and controlling party
+The directors consider that the immediate parent of this company is Blades Leisure Limited located at
+Bramall Lane, Cherry Street, Sheffield, Yorkshire, S2 45U, a company incorporated in England and Wales
+. by virtue of its 100% shareholding. For the period covered in the financial statements, Blades Leisure
+Limited is a wholly owned subsidiary of United World Holding Limited located at Elizabeth House, Les
+Ruettes Brayes, St Peter Port, Guernsey, GY1 1EW, a Guernsey registered company.
+HRH Prince Abdullah Bin Mossad Bin Abdulaziz Al Saud is the ultimate beneficiary of the Blades Leisure
+Limited group of companies.
+Page 56
 

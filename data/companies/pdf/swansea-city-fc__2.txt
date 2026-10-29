@@ -2,7 +2,7 @@ source: Companies House filing, swansea-city-fc__2.pdf
 document: Hug2LeOKSX8UP4n2bd9CVfJknha7yY_8NJxz53y1SpU
 made_up_date: 2024-06-30
 method: ocr
-pages_read: 12 of 39
+pages_read: 39 of 39
 
 "+ Docusign Envelope ID; 865488FC-1F3C-4A1D-A7EA-A2238D65CCB1
 Registered number: 00123414
@@ -433,4 +433,1005 @@ Date: 20th December 2024
 MHA is the trading name of Macintyre Hudson LLP, a limited liability partnership in England and Wales (registered number
 0C312313)
 Page 9
+, + Decusigni&invelope 1D: 865488FC-1F3C-4A 10-A7EA-A2238D65CCB4
+v
+SWANSEA CITY ASSOCIATION FOOTBALL CLUB LIMITED (THE)
+STATEMENT OF COMPREHENSIVE INCOME
+FOR THE PERIOD ENDED 30 JUNE 2024
+Period ended Year ended
+30 June 2024 31 July 2023
+Operations Player
+excluding amortisation
+player & trading
+amortisation &
+trading £ £
+Note
+Turnover 4 21,541,219 - 21,541,219 21,574,908
+Operating expenses (42,713,226) (4,295,353) (47,008,579) (42,936,658)
+Other operating income 270,498 - 270,498 79,439
+Operating loss before profit .
+on disposal of player oo ooo
+registrations 5 (20,901,509) (4,295,353) (25,196,862) (21,282,311)
+Profit on disposal of player
+registrations - 10,465,675 10,465,675 4,519,450
+(Loss)/profit on ordinary
+activities before interest and ——- KF
+taxation (20,901,509) 6,170,322 (14,731,187) (16,762,861)
+Interest receivable and similar
+income 9 546,506 464,157
+Interest payable and similar
+expenses 10 (1,006,291) (1,630,088)
+Loss before tax (15,190,972) (17,928,792)
+Tax on loss 11 804,999 1,950,975
+Loss for the financial year {14,385,973) (15,977,817,
+The notes on pages 14 to 36 form part of these financial statements.
+The Statement of Comprehensive Income has been prepared on the basis that all operations are continuing
+operations. -
+Page 10
+i b
+%
+Docusign Envelope ID: 865488FC-1F3C-4A1D-A7EA-A2238D65CCB1
+SWANSEA CITY ASSOCIATION FOOTBALL CLUB LIMITED (THE)
+REGISTERED NUMBER: 00123414
+BALANCE SHEET
+AS AT 30 JUNE 2024
+30 June 31 July
+2024 2023
+Note £ £
+Fixed assets
+Intangible assets 12 9,267,396 8,667,487
+Tangible assets 13 18,118,664 17,691,487
+Investments 50,001 50,001
+27,436,061 26,408,975
+Current assets
+Stocks 15 871,999 861,157
+Debtors: amounts falling due after more than one
+: year 16 1,711,648 505,498
+Debtors: amounts falling due within one year 16 9,873,699 10,779,941
+Cash at bank and in hand §,307,222 12,876,618
+17,764,568 25,023,214
+Creditors: amounts falling due within one year 17 (11,149,432) (16,482,783)
+Net current assets 6,615,136 8,540,431
+Total assets less current liabilities 34,051,197 34,949,406
+Creditors: amounts falling due after more than
+one year 18 (7,710,553) (7,162,752)
+Accruals and deferred income 22 (3,119,573) (6,726,659)
+Net assets 23,221,071 21,059,995
+Capital and reserves
+Called up share capital 23 62,408,936 45,861,887
+Profit and loss account (39,187,865) (24,801,892)
+23,221,071 21,059,995
+Page 11
+‘ . Docusign Envelope ID: 865488FC-1F3C-4A1D-A7EA-A2238D65CCB1
+SWANSEA CITY ASSOCIATION FOOTBALL CLUB LIMITED (THE)
+
+: REGISTERED NUMBER: 00123414
+es
+BALANCE SHEET (CONTINUED)
+
+AS AT 30 JUNE 2024
+The financial statements were approved and authorised for issue by the board and were signed on its behalf on
+December 20, 2024
+Mr. A D Coleman
+Director 4S
+The notes on pages 14 to 36 form part of these financial statements.
+Page 12
+: Docusign Envelope ID: 865488FC-1F3C-4A1D-A7EA-A2238D65CCB1
+SWANSEA CITY ASSOCIATION FOOTBALL CLUB LIMITED (THE)
+STATEMENT OF CHANGES IN EQUITY
+FOR THE PERIOD ENDED 30 JUNE 2024
+Called up Profit and
+share capital loss account Total equity
+: £ £ £
+At 1 August 2022 4,699,989 (8,824,075) (4,124,086)
+Loss for the year - (15,977,817) | (15,977,817)
+Contributions by and distributions to owners
+Shares issued during the year 41,161,898 - 41,161,898
+At 1 August 2023 45,861,887 (24,801 892) 21,059,995
+Less for the period - (14,385,973) (14,385,973) ;
+Shares issued during the period 16,547,049 - 16,547,049
+At 30 June 2024 62,408,936 (39,187,865) 23,221,071
+The notes on pages 14 to 36 form part of these financial statements.
+Page 13
+Docusign Envelope ID: 865488FC-1F3C-4A1D-A7EA-A2238D65CCB1
+SWANSEA CITY ASSOCIATION FOOTBALL CLUB LIMITED (THE)
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE PERIOD ENDED 30 JUNE 2024
+1. General information .
+Swansea City Association Football Club Limited (The) is a private company limited by shares incorporated
+in England and Wales. The registered office is Swansea.com Stadium, Landore, Swansea, Wales, SA‘
+2FA.
+The presentation currency of the financial statements is the Pound Sterling (£). .
+2. Accounting policies
+2.1 Basis of preparation of financial statements
+These financial statements have been prepared in accordance with FRS 102 "The Financial
+Reporting Standard applicable in the UK and Reupblic of treland" (FRS 102) and the requirements of
+the Companies Act 2006.
+The financial statements have been prepared under the historical cost convention unless otherwise
+specified within these accounting policies and in accordance with Financial Reporting Standard 102,
+the Financial Reporting Standard applicable in the UK and the Republic of Ireland and the
+Companies Act 2006.
+The preparation of financial statements in compliance with FRS 102 requires the use of certain
+critical accounting estimates. It also requires management to exercise judgment in applying the
+Company's accounting policies (see note 3).
+This company is a qualifying entity for the purposes of FRS 102, being a member of a group where
+the parent of that group prepares publicly available consolidated financial statements, including this
+company, which are intended to give a true and fair view of the assets, liabilities, financial position
+and profit or loss of the group.
+The company has therefore taken advantage of exemptions from the following disclosure
+requirements:
++ Section 4 ‘Statement of Financial Position’: Reconciliation of the opening and closing
+number of shares;
+* Section 7 ‘Statement of Cash Flows’: Presentation of a statement of cash flow and related
+notes and disclosures;
+* Section 11 ‘Basic Financial Instruments’ and Section 12 ‘Other Financial Instrument Issues’:
+Carrying amounts, interest income/expense and net gains/losses for each category of
+financial instrument; basis of determining fair values; details of collateral, loan defaults or
+breaches, details of hedges, hedging fair value changes recognised in profit or loss and in
+other comprehensive income;
+The financial instruments of the company are consolidated in the financial statements of the parent
+undertaking, Swansea City Football 2002 Limited. These consolidated financial statements are
+available to the public and may be obtained from the Registrar at Companies House, Crown Way,
+Cardiff, CF 14 3UZ.
+Further the company has taken advantage of the exemption under section 400 of the Companies Act
+2006 not to prepare consolidated accounts. The financial statements present information about the
+company as an individual entity and not about its group.
+Disclosure of long or short period
+The entity has shortened its financial year to 30 June 2024 and therefore the reporting period length
+for these financial statements cover a 11-month period from 1 August 2023 to 30 June 2024. As
+such, the information given in the financial satements is not directly comparable.
+a Page 14
+Docusign Envelope ID: 865488FC-1F3C-4A1D-A7EA-A2238D65CCB1
+SWANSEA CITY ASSOCIATION FOOTBALL CLUB LIMITED (THE)
+NOTES TO THE FINANCIAL STATEMENTS 5
+FOR THE PERIOD ENDED 30 JUNE 2024
+2. Accounting policies (continued)
+2.2 Going concern
+These financial statements are prepared on a going concern basis. The directors have a reasonable
+expectation that the company will continue in operational existence for the foreseeable future.
+However, the directors are aware of certain uncertainties which may cause doubt on the company's
+ability to continue as a going concern. The directors acknowledge the difficult financial and
+operational conditions the company, along with other Championship football clubs, are experiencing.
+The Championship division is extremely competitive, with Championship Clubs seeking to assemble
+a squad of players capable of achieving promotion to the Premier League. Consequently, player
+costs are driven up, placing considerable pressure on operational cash flows. The Club mitigates this
+pressure to some extent by following a player trading business model, with a track record of
+generating significant profits on disposals of player registrations. However, player trading alone is not
+sufficient to sustain the company in the long term; and the company is reliant on ownership funding
+and other external sources of finance in order to satisfy liquidity requirements.
+The directors ensure that the company’s financial position is continually monitored by preparing
+detailed profit and loss, balance sheet and cashflow forecasts each financial year considering a
+range of reasonably foreseeable scenarios in relation to income and costs. Forecasts and budgets
+are continually monitored and updated throughout the year, to ensure that the directors can respond
+in a timely manner to any funding needs.
+Based on these forecasts, which include expectations for net player trading, agreed ownership
+funding support and the expected availability and use of external funding, the directors remain
+confident the company will generate sufficient resources to meet its liabilities as they fall due and the
+board has concluded it is appropriate for the financial statements to be prepared on a going concern
+basis.
+2.3 Turnover
+
+Turnover is recognised at the fair value of the consideration received or receivable for goods and
+services provided in the normal course of business, and is shown net of VAT and other sales related
+taxes. Principal sources of income include broadcasting and media, match day income, commercial
+activities and grants. Revenue is recognised when the underlying event or service takes place.
+Advanced season ticket sales, broadcasting/media and advertising/sponsorship income is included
+within deferred income and is recognised as turnover in the relevant season.
+In the instance of merchandise sales, revenue is recognised on the transfer of goods to customers,
+which is usually on delivery or on-site purchase.
+Income arising from the temporary transfer of a player registration is recognised over the period of
+the temporary transfer.
+
+Page 15
+: ‘
+a)
+Docusign Envelope ID: 865488FC-1F3C-4A1D-A7EA-A2238D65CCB1
+SWANSEA CITY ASSOCIATION FOOTBALL CLUB LIMITED (THE)
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE PERIOD ENDED 30 JUNE 2024
+2. Accounting policies (continued)
+2.4 Intangible fixed assets other than goodwill
+Trademarks
+Trademarks owned by the company are capitalised as intangible fixed assets and measured at cost
+less amortisation.
+Players’ registration fees
+The costs associated with the acquisition of players' registrations are capitalised as intangible fixed
+assets, with cost discounted to present value where payments are deferred. Cost of players’
+registrations are comprised of transfer fees, transfer levies, intermediary fees and solidarity
+payments. These costs are fully amortised in equal instalments over the period of the players’
+individual contracts. Where a player's contract is extended beyond its initial period, amortisation is
+calculated over the period of the extended contract from the date the extension is signed. Player's
+registrations are written down for impairment in certain circumstances when the carrying amount is
+assessed as exceeding the amount recoverable through use of sale.
+The profit or loss on disposal of a player's registration is calculated as the difference between the
+present value of the transfer fee receivable less the net book value at the date of sale and less any
+direct costs of the transfer. Receipts of transfer fees based on the future performance of the
+transferred player or the buying club are recognised when the future criteria are met or are virtually
+certain to be met. Similarly, payments of transfer fees based on future performance criteria are
+recognised when the criteria are assessed as being probable that they will be met.
+Signing-on fees
+Players contracts of employment may include a signing on fee payable in equal instalments over the
+period of the contract. Where a players registration is transferred, any signing on fees payable in
+respect of future periods may be effectively cancelled. Therefore, such fees are charged to the .
+statement of comprehensive income as they fall due under the terms of the contract.
+The estimated useful lives range as follows: :
+Trademarks - 10 years
+Players’ registration costs - in accordance with terms of the contract
+2.5 Tangible fixed assets
+
+Tangible fixed assets under the cost model are stated at historical cost less accumulated
+depreciation and any accumulated impairment losses. Historical cost includes expenditure that is
+directly attributable to bringing the asset to the location and condition necessary for it to be capable of
+operating in the manner intended by management. ,
+
+. Page 16
+‘ a
+Docusign Envelope ID: 865488FC-1F3C-4A1D-A7EA-A2238D65CCB1
+SWANSEA CITY ASSOCIATION FOOTBALL CLUB LIMITED (THE)
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE. PERIOD ENDED 30 JUNE 2024
+2. Accounting policies (continued)
+
+2.5 Tangible fixed assets (continued) ,
+Land is not depreciated. Depreciation on other assets is charged so as to allocate the cost of assets
+less their residual value over their estimated useful lives, using the straight-line method.
+
+The estimated useful lives range as follows:
+
+Land - Not depreciated
+
+Buildings - 25-50 years
+
+Stadium Fittings - 25 years
+
+Plant and equipment - 5 years
+
+Fixtures and fittings - 5 years .
+The assets’ residual values, useful lives and depreciation methods are reviewed, and adjusted
+prospectively if appropriate, or if there is an indication of a significant change since the last reporting
+date.
+Gains and losses on disposals are determined by comparing the proceeds with the carrying amount
+and are recognised in profit or loss.
+
+2.6 Fixed Asset Investments
+Interests in subsidiaries, associates and jointly controlled entities are initially measured at cost and
+subsequently measured at cost less any accumulated impairment losses. The investments are
+assessed for impairment at each reporting date and any impairment losses or reversals of
+impairment losses are recognised immediately in profit or loss.
+
+2.7 Impairment of fixed assets
+At each reporting period end date, the company reviews the carrying amounts of its tangible and
+intangible assets to determine where there is any indication that those assets have suffered any
+impairment loss. If any such indication exists, the recoverable amount of the asset is estimated in
+
+: order to determine the extent of the impairment loss (if any). Where it is not possible to estimate the
+recoverable amount of an individual asset, the company estimates the recoverable amount of the
+cash-generating unit to which the asset belongs.
+
+. The directors do not consider it possible to determine the value.in use of an individual player in
+isolation, as that player cannot generate cash flows independently. However, in circumstances where
+it is apparent that as at the end period the player would not be available for selection to play for the
+Club, the player is taken outside of the wider cash generating-unit (“CGU") and valued on the
+recoverable amount basis being the directors best estimates of the players fair value less cost to sell,
+with any resulting impairment charge being made in operating expenses.
+
+Recoverable amount is the higher of fair value less costs to sell and value in use. In assessing value
+in use, the estimated future cash flows are discounted to their present value using a pre-tax discount
+rate that reflects current market assessments of the time value of money and the risks specific to the
+asset for which the estimates of future cash flows have not been adjusted.
+If the recoverable amount of an asset (or cash-generating unit) is estimated to be less than its
+carrying amount, the carrying amount of the asset (or cash-generating unit) is reduced to its
+recoverable amount. An impairment loss is recognised immediately in profit or loss, unless the
+relevant asset is carried at a revalued amount, in which case the impairment loss is treated as
+revaluation decrease.
+
+Page 17
+‘ Docusign Envelope ID: 865488F.C-1F3C-4A1D-A7EA-A2238D65CCB1
+SWANSEA CITY ASSOCIATION FOOTBALL CLUB LIMITED (THE)
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE PERIOD ENDED 30 JUNE 2024
+2. Accounting policies (continued)
+Recognised impairment losses are reversed if, and only if, the reasons for the impairment toss have
+ceased to apply. Where an impairment loss subsequently reserves, the carrying amount of the asset
+(or cash-generating unit) is increased to the revised estimate of its recoverable amount, but so that
+the increased carrying amount does not exceed the carrying amount that would have been
+determined had no impairment loss been recognised for the asset (or cash-generating unit) in prior
+years. A reversal of an impairment loss is recognised immediately in profit or loss, unless the relevant
+asset is carried at a revalued amount, in which case the reversal of the impairment loss is treated as
+a revaluation increase.
+Where there is an impairment of a particular players’ registration costs, consideration is given to
+whether there is simultaneously an onerous contract arising. Where onerous contracts exist, a
+provision is recognised equal to the minimum net cost of practically exiting from the contract.
+2.8 Stocks
+Stocks are stated at the lower of cost and net realisable value. Cost comprises purchase price less
+discounts where applicable. Net realisable value is based on estimate selling price.
+Provision is made for obsolete and slow moving items where appropriate.
+2.9 Cash and cash equivalents
+Cash and cash equivalents are basic financial assets and include cash in hand, deposits held at call
+with banks, other short-term liquid investments with original maturities of three months or less, and
+bank overdrafts. Bank overdrafts are shown within borrowings in current liabilities.
+2.10 Financial instruments
+The company has elected to apply the provisions of Section 11 ‘Basic Financial Instruments’ and
+Section 12 ‘Other Financial Instruments Issues’ of FRS 102 to all of its financial instruments.
+Financial instruments are recognised in the company’s balance sheet when the company becomes
+party to the contractual provisions of the instrument.
+Financial assets and liabilities are offset, with the net amounts presented in the financial statements,
+when there is a legally enforceable right to set off the recognised amounts and there is an intention to
+settle on a net basis or to realise the asset and settle the liability simultaneously.
+All financial assets and liabilities are initially measured at transaction price {including transaction
+costs), except for those financial assets classified as at fair value through profit and loss, which are
+initially measured at fair value (which is normally the transaction price excluding transaction costs),
+unless the arrangement constitues a financing transaction. If an arrangement constitues a financing
+transaction, the financial asset or liability is measured at the present value of the future payments
+discounted at a market rate of interest for a similar debt instrument.
+Debt instruments that are classified as payable or receivable within one year are measured at the
+undiscounted amount of the cash or other consideration expected to be received or paid, net of
+impairment.
+Financial assets are derecognised when and only when the contractual rights to the cash flows from
+the financial asset expire or are settled, the company transfers to another party substantially all of the
+risks and rewards of ownership of the financial asset, or the company, despite having retained some
+significant risks and rewards of ownership, has transferred control of the asset to another party and
+Page 18
+Docusign Envelope ID: 865488FC-1F3C-4A1D-A7EA-A2238D65CCB1
+: SWANSEA CITY ASSOCIATION FOOTBALL CLUB LIMITED (THE)
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE PERIOD ENDED 30 JUNE 2024
+2. Accounting policies (continued)
+the other party has the practical ability to sell the asset in it entirety to another unrelated third party
+and is able to exercise that ability unilaterally and without the need to impose additional restriction
+on the transfer.
+Financial liabilities are derecognised only when the obligation specified in the contract is discharged,
+cancelled or expires. :
+2.11 Equity instruments
+Equity instruments issued by the company are recorded at the proceeds received, net of transaction
+costs. Dividends payable on equity instruments are recognised as liabilities once they are no longer
+at the discretion of the company.
+2.12 Taxation
+The tax expense represents the sum of the tax currently payable and deferred tax.
+Current tax
+. The tax currently payable is based on taxable profit for the year. Taxable profit differs from net profit
+as reported in the profit and loss account because it excludes items of income or expenses that are
+taxable or deductible in other years and it further excludes items that are never taxable or deductible.
+The company’s liability for current tax is calculated using tax rates that have been enacted or
+substantively enacted by the reporting end date.
+Deferred tax
+Deferred tax labilities are generally recognised for all timing differences and deferred tax assets are
+recognised to the extent that it is probable that they will be recovered against reversal of deferred tax
+liabilities or other future taxable profits. Such assets and liabilities are not recognised if the timing
+difference arises from goodwill or from the initial recognition of other assets and liabilities in a
+. transaction that affects neither the tax profit nor the accounting profit.
+The carrying amount of deferred tax assets is reviewed at each reporting end date and reduced to
+the extent that is no longer probable that sufficient taxable profits will be available to allow all or part
+of the asset to be recovered. Deferred tax is calculated at the tax rates that are expected to apply in
+the period when the liability is settled or the asset is realised. Deferred tax is charged or credited in
+the profit or loss account, except when it relates to items charged or credited. directly to equity, in
+which case the deferred tax is also dealt with in equity. Deferred tax assets and liabilities are offset
+when the company has a legally enforceable right to offset current tax assets and liabilities and the
+deferred tax assets and liabilities relate to taxes levied by the same tax authority.
+2.13 Provisions
+Provisions are recognised when the company has a legal or constructive present obligation as a
+result of a past event, it is probable that the company will be required to settle that obligation and a
+reliable estimate can be made of the amount of the obligation.
+The amount recognised as a provision is the best estimate of the consideration required to settle the
+present obligation at the reporting end date, taking into account the risks and uncertainties
+surrounding the obligation. Where the effect of the time value of money is material, the amount
+expected to be required to settle the obligation is recognised at present value. When a provision is
+measured as present value, the unwinding of the discount is recognised as a finance cost in profit or
+loss in the period in which it arises.
+Page 19
+. 4
+ay
+Docusign Envelope ID: 865488F C-1F3C-4A1D-A7EA-A2238D65CCB1
+SWANSEA CITY ASSOCIATION FOOTBALL CLUB LIMITED (THE)
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE PERIOD ENDED 30 JUNE 2024
+2. Accounting policies (continued)
+
+2.14 Employee Benefits
+The costs of short-term employee benefits are recognised as a liability and an expense, unless those
+costs are required to be recognised as part of the costs of stock or fixed assets. The cost of any
+unused holiday entitlement is recognised in the period in which the employee's services are received.
+Termination benefits are recognised immediately as an expense when the company is demonstrably
+committed to terminate the employment of an employee or to provide termination benefits.
+
+2.15 Retirement benefits
+Payments to defined contribution retirement benefit schemes are charged as an expense as they fall
+due.
+Where the company participates in a defined benefit plan, which is a multi-employer pian that is
+accounted for as if the plan were a defined contribution plan, and the Company has entered into an
+agreement with the multi-employer plan that determines how the Company will fund a deficit, the
+Company recognises a liability for the contributions payable that arise from the agreement and a
+resulting expense in the Statement of Comprehensive Income.
+A provision has also been made to cover the Company's share of the liabilities of the Football League
+Limited Pension and Life Assurance Scheme. This is a defined benefit scheme which has been
+closed to new contributions since 31 August 1995.
+
+2.16 Leases
+Leases are classified as finance leases whenever the terms of the lease transfer substantially all the
+
+- risks and rewards of ownership to the lessees. All other leases are classified as operating leases.
+
+Assets held under finance leases are recognised as assets at the lower of the assets fair value at the
+date of inception and the present value of the minimum lease payments. The related liability is
+included in the balance sheet as a finance lease obligation. Lease payments are treated as
+consisting of capital and interest elements. The interest is charged to profit or loss so as to produce a
+constant periodic rate of interest on the remaining balance of liability.
+Rentals payable under operating leases, including any lease incentive received, are charged to profit
+or loss on a straight line basis over the term of the relevant lease except where another more
+systematics basis is more representative of the time pattern in which economic benefits from the
+leased asset are consumed.
+
+2.17 Government grants
+Government grants are recognised at the fair value of the asset received or receivable when there is
+reasonable assurance that the grant conditions will be met and the grants will be received.
+A grant that specifies performance conditions is recognised in income when the performance
+conditions are met. Where a grant does not specify performance conditions it is recognised in income
+when the proceeds are received or receivable. A grant received before the recognition criteria are
+satisfied is recognised as a liability.
+
+Page 20
+) a
+Docusign Envelope ID: 865488FC-1F3C-4A1D-A7EA-A2238D65CCB1
+SWANSEA CITY ASSOCIATION FOOTBALL CLUB LIMITED (THE)
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE PERIOD ENDED 30 JUNE 2024
+2. Accounting policies (continued)
+2.18 Foreign exchange
+Transactions in currencies other than pounds sterling are recorded at rates of exchange prevailing at
+the dates of the transactions. At each reporting end date, monetary assets and liabilities that are
+denominated in foreign currencies are retranstated at the rates prevailing on the reporting end date.
+Gains and losses arising on translation in the period are included in profit or loss.
+2.19 Deferred income
+Deferred income compromises amounts received on sales of season tickets, sponsorship,
+broadcasting and other commercial contracts prior to the period end in respect of future football
+seasons. These amounts will be released to the Statement of Comprehensive Income over the
+period to which the income relates.
+3. Judgments and key sources of estimation uncertainty ,
+
+In application of the company’s accounting policies, the directors are required to make judgements,
+
+estimates and assumptions about the carrying amount of assets and liabilities that are not readily
+
+apparent from other sources. The estimates and associated assumptions are based on historical
+experience and other factors that are considered to be relevant. Actual results may differ from these
+estimates.
+
+The estimates and underlying assumptions are reviewed on an ongoing basis. Revisions to accounting
+
+estimates are recognised in the period in which the estimate is revised where the revision affects only that
+
+period, or in the period of the revision and future periods where the revision affects both current and future
+periods.
+* Critical judgement
+: The following judgments (apart from those involving estimates) have had the most significant effect on
+amounts recognised in the financial statements.
+
+Impairment of Capitalised Player Registration Costs
+
+The carrying values of capitatised player registration costs, where removed from the wider football club
+
+CGU, are subject to impairment tests on a player-by-player basis. On performing the individual tests of
+
+. impairment, the Company primarily considers the following factors:
+
+. Injury - Where the medical opinion provided suggests that a player has suffered a career ending
+injury then an impairment loss will be recognised in full less any anticipated insurance receivable,
+against the carrying value of that particular player. Career threatening injuries may also result in
+impairment losses depending on the medical opinion received and other external factors.
+
+° Loss of player form — The assessment of player form is considered to be highly subjective and
+accordingly it is unlikely that the loss of player form will result in an impairment loss unless there is
+firm intention to release the player without further first team performance subsequent to the period
+end for a fee less than his carrying amount.
+
+. Transfer of a player's registration after the end of an accounting period — Where a player is sold
+after the end of an accounting period, consistent with managements intentions at the year end date,
+without further first team action for an amount lower than the carrying value, this is a strong
+indicator of impairment and accordingly an impairment loss will be recognised in the accounting
+period if there is sufficient evidence that the underlying impairment existed as at the accounting
+period end date.
+
+Page 21
+: mm
+,
+Docusign Envelope ID: 865488FC-1F3C-4A1D-A7EA-A2238D65CCB1
+SWANSEA CITY ASSOCIATION FOOTBALL CLUB LIMITED (THE)
+SSE... 03.0
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE PERIOD ENDED 30 JUNE 2024
+
+3. Judgments in applying accounting policies (continued)
+Revenue recognition
+The company's primary source of revenue during the financial period ended 30 June 2024 was the
+English Football League (EFL). The quantum of income received directly from the EFL each year is set
+out in the EFL annual budget which is revised periodically throughout the financial year. Any additional
+income is only recognised either on receipt of cash consideration, or when the entitlement to additional
+income is formally communicated by the EFL in a Shareholders Meeting of the EFL or can otherwise be :
+reliably measured at the financial reporting period end date. In the event of the EFL needing to recover
+revenue which was previously distributed, then provision is made for the full value of the recovery as soon
+as the intention is notified by the EFL. Where the fundamental event which triggered the recovery can be
+established, then provision is made in the period in which the fundamental event occurred.
+Leases
+Determining whether leases entered into by the company either as a lessor or a lessee are operating or
+finance leases. These decisions depend on an assessment of whether the risks and rewards of ownership
+have been transferred from the lessor to the lessee on a lease by lease basis.
+Key sources of estimation uncertainty ,
+The estimates and assumptions which have a significant risk of causing a material adjustment to the
+carrying amount of assets and liabilities are as follows.
+Tangible Fixed Assets
+Tangible fixed assets are depreciated over their useful lives taking into account residual values, where
+appropriate. The actual lives of the assets and residual values are assessed annually and may vary
+depending on a number of factors. In re-assessing asset lives, factors such as technological innovation,
+product life cycles and maintenance programmes are taken into account. Residual value assessments
+consider issues such as future market conditions, the remaining life of the asset and projected disposal
+values.
+Player registrations and impairment
+In accordance with the accounting policy, the Directors have continued to amortise the cost of player
+registrations on a straight line basis over the period of their respective contracts.
+Player impairment is considered annually by the Directors. The Directors have considered factors such as
+players age, injury record and whether the player is likely to contribute to future cashflows in giving their
+assessment of player impairments.
+
+Page 22
+1 n
+Docusign Envelope ID: 865488FC-1F3C-4A1D-A7EA-A2238D65CCB1
+SWANSEA CITY ASSOCIATION FOOTBALL CLUB LIMITED (THE)
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE.PERIOD ENDED 30 JUNE 2024
+4. Turnover
+Turnover analysed by class of business
+30 June 31 July
+2024 2023
+£ £
+Sales of goods
+Commercial 1,874,188 3,180,285
+Rendering of services
+Media 9,705,700 8,671,069
+Match 3,991,736 3,531,629
+Commercial 4,570,389 3,892,540
+Other 1,399,206 2,299,385
+21,541,219 21,574,908
+The whole of the turnover is attributable to the principal activity of the company and wholly undertaken in the United
+Kingdom.
+Other significant revenue
+2024 2023
+£ £
+Interest income . $46,506 464,157
+5. Operating loss
+The operating loss is stated after charging/(crediting):
+Period ended Year ended
+30 June 31 July
+2024 2023
+£ £
+Exchange differences (103,130) 108,552
+Depreciation of owned tangible fixed assets 652,861 748,196
+Depreciation of tangible fixed assets held under finance leases 238,658 104,759
+Amortisation of intangible assets : 4,297,955 3,239,831
+Profit on disposal of intangible assets (10,465,675) (4,519,450)
+Operating lease charges 145,902 91,156
+Inventory recognised as an expense 1,111,922 1,249,195
+Page 23
+: on
+Docusign Envelope ID: 865488FC-1F3C-4A1D-A7EA-A2238D65CCB1
+SWANSEA CITY ASSOCIATION FOOTBALL CLUB LIMITED (THE)
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE PERIOD ENDED 30 JUNE 2024
+6. Auditor's remuneration
+Fees payable to the company's auditor and associates:
+30 June 31 July
+2024 2023
+£ £
+: For audit services
+Audit of the financial statements of the company 19,000 18,200
+30 June 31 July
+. . 2024 2023
+£ £
+For other services
+Audit-related assurance services 7,800 7,800
+Taxation compliance services 6,500 1,750
+Other taxation services 4,460 -
+18,760 9,550
+Page 24
+Docusign Envelope ID: 865488FC-1F3C-4A1D-A7EA-A2238D65CCB1 .
+SWANSEA CITY ASSOCIATION FOOTBALL CLUB LIMITED (THE) .
+NOTES TO THE FINANCIAL STATEMENTS
+.FOR THE PERIOD ENDED 30 JUNE 2024
+7. Employees
+Staff costs, including directors' remuneration, were as follows:
+Period ended Year ended
+30 June 31 July
+2024 2023
+£ £
+Wages and salaries 23,400,906 21,215,660
+Social security costs 3,847,768 3,541,033
+Pension costs 98,755 94,030
+27,347,429 24,850,723
+The average monthly number of employees, including the directors, during the period was as follows:
+Period Year
+ended ended
+30 June 31 July
+2024 2023
+No. No.
+Football, Stadium and Maintenance 257 239
+Administrative (including directors) 26 22
+Commercial 46 45
+Media 12 1
+Catering - 136
+344 - 453
+8. Directors’ remuneration
+Period ended Year ended
+30 June 31 July
+. 2024 . 2023
+: £ £
+Remuneration for qualifying services : 388,446 364,000
+, Company contributions to defined contribution pension schemes 19,623 19,359
+408,069 383,359
+During the period retirement benefits were accruing to 2 directors (2023 - 2) in respect of defined contribution
+pension schemes.
+The highest paid director received remuneration of £177,696 (2023 - £185,000).
+Page 25
+n
+Docusign Envelope ID: 865488FC-1F3C-4A1D-A7EA-A2238D65CCB1
+SWANSEA CITY ASSOCIATION FOOTBALL CLUB LIMITED (THE)
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE PERIOD ENDED 30 JUNE 2024
+9. Interest receivable and similar income
+2024 2023
+£ £
+Interest on bank deposits . 321,089 107,859
+Finance income on unwinding of discount of player receivables 225,417 356,298
+546,506 464,157
+10. Interest payable and similar expenses
+Period ended Year ended
+30 June 31 July
+2024 2023
+. £ £
+Bank interest payable 8,622 19,611
+Other loan interest payable 603,280 1,468,762
+Finance Jeases and hire purchase contracts 53,677 20,267
+Finance charges on unwinding of discount on player liabilities 340,712 121,448
+1,006,291 1,630,088
+: 41. Taxation
+Period ended Year ended
+30 June 31 July
+2024 2023
+£ £
+Corporation tax
+Adjustments in respect of previous periods (804,999) -
+(804,999) -
+Deferred tax liability released - (1,950,975)
+Total deferred tax . - (1,950,975)
+Tax on loss (804,999) (1,950,975)
+Page 26
+pk
+Docusign Envelope ID: 865488FC-1F3C-4A1D-A7EA-A2238D65CCB1
+SWANSEA CITY ASSOCIATION FOOTBALL CLUB LIMITED (THE)
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE PERIOD ENDED 30 JUNE 2024
+11. Taxation (continued) .
+Factors affecting tax charge for the period/year
+The tax assessed for the period/year is higher than (2023 - higher than) the standard rate of corporation tax in the
+UK of 25% (2023 - 21.01%). The differences are explained below:
+Period ended Year ended
+30 June 31 July
+2024 2023
+£ £
+Loss on ordinary activities before tax (15,190,973) (17,928,792) .
+Loss on ordinary activities multiplied by standard rate of corporation tax in the UK
+of 25% (2023 - 21.01%) (3,797,743) (3,406,470)
+Effects of:
+Expenses not deductible for tax purposes 100,671 129,376
+Capital allowances for period/year in excess of depreciation 4,820 3,300
+‘Fixed asset differences 94,265 (3,666)
+Rate changes (3,534,915) (1,263, 155)
+Deferred tax asset not recognised 7,132,902 4,540,615
+Adjustments to tax charge in respect of prior periods (804,999) (1,950,975)
+Total tax charge for the period/year (804,999) (1,950,975)
+A deferred tax asset of £7,132,902 (2023: £4,540,615) relating to losses has not been recognised due to
+: - uncertainty over the future recoverability of the asset. An increase in the UK Corporation Tax rate to 25%
+for profits arising on or after 1 April 2023 as set out in the Finance Bill 2021 was substantively enacted on
+24 May 2021. The calculation of the unrecognised deferred tax liability as at 30 June 2024 reflects this
+rate.
+Page 27
+Oocusign Envelope ID: 865488FC-1F3C-4A1D-A7EA-A2238D65CCB1
+SWANSEA CITY ASSOCIATION FOOTBALL CLUB LIMITED (THE) :
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE PERIOD ENDED 30 JUNE 2024
+12. — Intangible assets
+Player
+registrations Trademarks Total
+£ £ £
+Cost .
+At 1 August 2023 13,643,792 58,990 13,702,782
+Additions 5,966,192 - 5,966,192
+Disposals (2,698,122) - (2,698,122)
+At 30 June 2024 16,911,862 58,990 16,970,852
+Amortisation
+At 1 August 2023 4,988,412 46,883 5,035,295
+Charge for the period on owned assets 4,295,353 2,602 4,297,955
+On disposals (1,629,794) - (1,629,794)
+At 30 June 2024 : 7,653,971 49,485 7,703,456
+Net book value
+At 30 June 2024 9,257,891 9,505 9,267,396
+At 31 July 2023 8,655,380 12,107 8,667,487
+Page 28
+Docusign Envelope ID: 865488FC-1F3C-4A1D-A7EA-A2238D65CCB1 .
+SWANSEA CITY ASSOCIATION FOOTBALL CLUB LIMITED (THE)
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE PERIOD ENDED 30 JUNE 2024
+13. Tangible fixed assets
+Leasehold
+Freehold land land and Plant and Fixtures and Stadium
+and buildings buildings equipment fittings fittings Total
+£ £ £ £ £ £
+Cost or valuation
+: At 1 August 2023 8,885,062 11,278,861 5,854,817 678,222 1,122,536 27,819,498
+Additions = 7 1,153,628 165,069 - 1,318,697
+At 30 June 2024 8,885,062 11,278,861 7,008,445 843,291 1,122,536 29,138,195
+Depreciation
+At 1 August 2023 2,022,890 2,068,606 5,212,277 547,255 276,984 10,128,012
+Charge for the period on owned assets 194,537 227,814 405,009 41,958 22,201 891,519
+At 30 June 2024 2,217,427 2,296,420 5,617,286 589,213 299,185 11,019,531
+Net book value
+At 30 June 2024 6,667,635 8,982,441 1,391,159 254,078 823,351 18,118,664
+At 31 July 2023 6,862,172 9,210,255 642,540 130,967 845,553 17,691,487
+The net book value of assets held under finance leases or hire purchase contracts, included above, are as follows:
+30 June 31 July
+Page 29
+io
+Docusign Envelope ID: 865488FC-1F3C-4A1D-A7EA-A2238D65CCB1
+SWANSEA CITY ASSOCIATION FOOTBALL CLUB LIMITED (THE)
+NOTES TO THE FINANCIAL STATEMENTS
+: FOR THE PERIOD ENDED 30 JUNE 2024
+13. Tangible fixed assets (continued)
+2024 2023
+£ £
+Plant and Equipment 941,693 326,700
+14. Fixed asset investments
+30 June 31 July
+2024 2023
+. £ £
+Investments in subsidiaries 50,000 50,000
+Investments in associates 1 1
+. 50,001 50,001
+Subsidiaries
+Swansea Stadium Management Company Limited
+Registered office: Swansea.com Stadium, Landore, Swansea, SA1 2FA
+Nature of business: Stadium management company
+%
+Class of shares: holding
+Ordinary 100.00
+2024 2023
+£ £
+Aggregate capital and reserves 185,599 160,116
+Profit / (Loss) for the year: 25,484 (371,497)
+, Associates
+. Swansea Stadium Permier Club Limited .
+, Registered office: Swansea.com Stadium, Landore, Swansea; SA1 2FA
+Nature of business: Dormant
+%
+Class of shares: holding
+Ordinary 50.00
+15. Stocks
+30 June 31 July
+2024 2023
+£ £
+Finished goods and goods for resale 871,999 861,157
+Page 30
+ra
+Docusign Envelope ID: 865488FC-1F3C-4A1D-A7EA-A2238D65CCB1
+SWANSEA CITY ASSOCIATION FOOTBALL CLUB LIMITED (THE)
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE PERIOD ENDED 30 JUNE 2024
+, 16. Debtors
+
+30 June 37 July
+2024 2023
+£ £
+
+Due after more than one year
+Other debtors 1,711,648 505,498
+1,711,648 505,498
+30 June 31 July
+2024 2023
+£ £
+
+Due within one year
+Trade debtors 794,912 733,026
+Amounts owed by group undertakings 2,601,327 1,455,513
+Other debtors 5,030,763 6,852,020
+Prepayments and accrued income 1,446,697 1,739,382
+9,873,699 10,779,941 |
+17. | Creditors: Amounts falling due within one year
+30 June 31 July
+2024 2023
+£ £
+Other borrowings - 8,312,555
+Trade creditors 3,179,238 910,410
+Corporation tax - 804,999
+Other taxation and social security 890,024 1,155,327
+Obligations under finance lease and hire purchase contracts 217,637 144,568
+Other creditors 6,862,533 5,154,924
+11,149,432 16,482,783
+Page 31
+io
+Docusign Envelope ID: 865488FC-1F3C-4A1D-A7EA-A2238D65CCB1
+SWANSEA CITY ASSOCIATION FOOTBALL CLUB LIMITED (THE)
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE PERIOD ENDED 30 JUNE 2024
+18. Creditors: Amounts falling due after more than one year
+30 June 31 July
+: 2024 2023
+£ £
+Other borrowings 3,688,872 3,544,871
+Obligations under finance leases 286,743 12,022
+Other creditors 3,734,938 3,605,859
+7,710,553 7,162,752
+The following liabilities were secured:
+30 June 31 July
+2024 2023
+£ £
+Obligations under finance leases 504,380 156,590
+504,380 156,590
+Details of security provided:
+‘Hire purchase contract liabilities are secured on the underlying fixed assets.
+See note 20 for details relating to the security over other borrowings.
+19. Finance lease obligations
+2024 2023
+£ £
+Within one year 217,637 144,568
+In two to five years 286,743 12,022
+504,380 156,590
+Page 32
+an)
+Docusign Envelope ID: 865488FC-1F3C-4A1D-A7EA-A2238D65CCB1
+SWANSEA CITY ASSOCIATION FOOTBALL CLUB LIMITED (THE)
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE PERIOD ENDED 30 JUNE 2024
+20. Loans and overdrafts
+2024 2023
+£ £
+Loans from group undertakings 3,688,872 3,544,871
+Other loans - 8,312,555
+3,688,872 11,857,426
+2024 2023
+£ £
+Payable within one year - 8,312,555
+Payable after one year 3,688,872 3,544,871
+During 2020 the company applied for a loan made available by the English Football League. At 30 June 2024 the
+amount payable was £nil (2023: £194,800). An interest rate of 2% above base rate is applied but only if the
+company was to default on any repayments.
+
+During 2021 the company applied for a further loan made available by the English Football League. At 30 June
+2024 the amount payable was Eni! (2023: £1,388,335). Interest is only payable if the Company wish to extend the
+loan beyond the Termination Date.
+
+During 2021 and 2022 finance has been raised in the parent company Swansea City Football 2002 Ltd by way of
+convertible loan notes. As a result, this company received loans from its parent company which incur interest at 5%
+per annum. As at 30 June 2024 a balance of £3,688,872 (2023: £3,544,871) is outstanding and includes interest
+charged of £541,524 (2023: £397,523).
+During 2022 the company entered into a loan with Macquarie Bank Limited. The loan is secured against the
+amounts receivable on disposal of player registrations and incurs interest at 4.3% per annum. At 30 June 2024 the
+amount payable was fnil (2023: £2,716,371) and includes interest charged of £nil (2023: £378,488).
+During 2022 the company entered into a loan agreement with Fasanara Securitisation SA. The loan was repaid in
+July 2023. Subsequently in July 2023, the company entered into a new loan agreement with Fasanara
+Securitisation SA which was secured against cash reserves held by the company. Interest is currently charged at
+5.5% plus Euribor 3 month rate per annum. At 30 June 2024 the amount payable was £nil (2023: £4,013,249) and
+included interest charged of £nil (2023: Enil). The loan was repaid in full in October 2023.
+
+Page 33
+2
+.
+Docusign Envelope ID: 865488FC-1F3C-4A1D-A7EA-A2238D65CCB1-
+SWANSEA CITY ASSOCIATION FOOTBALL CLUB LIMITED (THE)
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE PERIOD ENDED 30 JUNE 2024
+21. Deferred taxation
+2024 ~ 2023
+£ £
+At beginning of year - (1,950,975)
+Release to profit and loss - 1,950,975
+At end of year - .
+The provision for deferred taxation is made up as follows:
+2024 2023
+£ £
+Accelerated capital allowances (1,464,206) (1,031,049)
+Trading losses 1,441,356 1,008,617
+Other short term timing differences 22,850 22,432
+22. Accruals and deferred income
+30 June 31 July
+2024 2023
+£ £
+Deferred income 3,119,573 6,726,659
+3,119,573 6,726,659
+Page 34
+>
+s .
+Docusign Envelope ID: 865488FC-1F3C-4A1D-A7EA-A2238D65CCB1
+SWANSEA CITY ASSOCIATION FOOTBALL CLUB LIMITED (THE)
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE PERIOD ENDED 30 JUNE 2024
+23. Share capital ;
+30 June 31 July
+2024 2023
+£ £
+Allotted, called up and fully paid :
+124,817,872 (2023 - 91,723,774) Ordinary shares of £0.50 each 62,408,936 45,861,887
+The holders of ordinary shares are entitled to receive dividends as declared from time to time and are
+entitled to one vote per share at meetings of the company.
+24. Financial commitments, guarantees and contingent liabilities
+Under the terms of certain contracts for the purchase of players’ registration, future payments may be due,
+dependant on the future success of the team and/or the future team selection and pérformance of
+individual players. As at 30 June 2024, the maximum that could be payable is £5,633,830 (2023:
+£6,389,891). Signing on fees of £754,000 (2023: £789,500) will become due to certain players if they are
+still in the service of the Company on specific future dates. In accordance with the Company's stated
+accounting policies these amounts have not been recognised as liabilities as at 30 June 2024.
+25. Operating lease commitments
+2024 2023
+£ £
+Within one year 102,618 98,906
+Between two and five years 110,482 177,226
+213,100 276,132
+26. Pension commitments .
+Certain members of the playing squad are members of The Professional Footballers Pension Scheme.
+This scheme is compulsory for all members of the Professional Footballers Association, unless the
+member decides to opt-out of the scheme. The company does not make any contributions into the
+scheme and does not share in any of the scheme's assets or liabilities. Accordingly, no provision for the
+scheme is made in these financial statements.
+In addition, certain former staff of the Company were members of the Football League Limited Pension
+and Life Assurance Schemes (FLLPLAS), a funded multi-employer defined benefit scheme, with 92
+participating employers, and where members may have periods of service attributable to several
+participating employers. The FLLPLAS comprises both defined benefit and defined contribution sections.
+Following a review of the Minimum funding requirements (MFR) of the FLLPLAS, accrual of benefits of the
+final salary section of the scheme was suspended as at 31 August 1999. The company is unable to
+identify its share of the assets and the liabilities of the FLLPLAS and therefore accounts for its
+contributions as if they were paid to a defined contribution scheme. The amount owed by the company at
+the balance sheet date was £15,648 (2023: £8,008). During the period, contributions of £6,703 (2023:
+£6,968) have been made to the scheme.
+Page 35
+‘
+pa)
+*
+Docusign Envelope ID: 865488FC-1F3C-4A1D-A7EA-A2238D65CCB1
+SWANSEA CITY ASSOCIATION FOOTBALL CLUB LIMITED (THE)
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE PERIOD ENDED 30 JUNE 2024
+27. Events after the reporting date
+Subsequent to the balance sheet date, the Company sold certain player registrations for a total
+consideration of £3,045,931 (2023: £9,890,845). In addition, the Company acquired new player
+registrations and extended the registrations of existing players for a total consideration of £6,330,328
+(2023: £3,039,292). The company also acquired tangible fixed assets for a total consideration of £671,000
+(2023: £702,201). The company also acquired further funding (£5,000,000) from its parent company.
+: Further subsequent to the balance sheet date the company issued 42,058,434 ordinary shares at par
+value of £0.50 per share.
+28. Related party transactions
+Total compensation of key management personnel (including the directors) in the period amounted to £538,177
+(2023: £458,801).
+Purchases Purchases
+Sales 2024 Sales 2023 2024 2023
+£ £ £ £
+Entities over which the entity has control, joint
+control or significant influence 7,441,509 7,017,598 5,256,416 3,850,089
+Key management personnel 7,909 1,236 - -
+Other related parties 18,327 136,883 83,508 64,085
+7,467,745 7,155,717 5,339,924 3,914,174
+Receivables outstanding Creditors outstanding
+2024 2023 2024 2023
+£ £ £ £
+Entities with control, joint control or significant
+influence over the company - - 3,688,872 3,544,871
+Entities over which the entity has control, joint
+control or significant influence 2,601,327 1,455,512 - -
+Key management personnel 378 15,058 - -
+Other related parties 28,982 133,090 642 3,091
+29. Controlling party
+In the opinion of the directors, the Company's ultimate parent company is Swansea Football LLC, a
+company incorporated in the United States of America. Swansea Football LLC is the parent company of
+the largest group which includes the company. The parent undertaking of the smallest such group is
+Swansea City Football 2002 Limited. The consolidated financial statements of the Swansea City Football
+2002 Limited are available from the Registrar at Companies House, Crown Way, Cardiff, CF14 3UZ. The
+ultimate controlling parties are considered to be Mr A D Coleman, Mr J Cohen and Mr B S Cravatt by
+virtue of their combined controlling interest in the parent undertaking. The previous ultimate controlling
+party, Mr J Levien, ceased to act as such on 22 November 2024.
+Page 36
 

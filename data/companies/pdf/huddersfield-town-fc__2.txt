@@ -2,7 +2,7 @@ source: Companies House filing, huddersfield-town-fc__2.pdf
 document: N-25PrYf_0jJhy9rZfj_xfiJ_S5KwRHGXMO3LAWt6Ig
 made_up_date: 2024-06-30
 method: ocr
-pages_read: 12 of 45
+pages_read: 45 of 45
 
 : Company registration number 01771361 (England and Wales)
 The Huddersfield Town Association Football Club Limited ,
@@ -434,4 +434,1171 @@ Huddersfield
 HD1 3AG
 
 - 9 -
+The Huddersfield Town Association Football Club Limited
+Group statement of comprehensive income
+For the year ended 30 June 2024
+2024 2023
+as restated
+Notes £ £
+Turnover 3 18,163,046 18,120,141
+Cost of sales (30,625,844) (29,086,113)
+Gross loss (12,462,798) (10,965,972)
+Administrative expenses (6,382,551) (5,026,643)
+Other operating income 3 1,182,500 1,037,500
+Profit on sale of players' registrations 4 4,365,581 8,884,088
+Financing gains 4 38,495 1,393,767
+Operating loss 5 (13,258,773) (4,677,260)
+Income from participating interests (541,010) (442,600)
+Other interest receivable and similar income 845,153 908,999
+Interest payable and similar expenses 8 (2,046,645) (2,216,639)
+Loss before taxation (15,001,275) (6,427,500)
+Tax on loss 9 25,422 5,235
+Loss for the financial year 25 (14,975,853) (6,422,265)
+Loss for the financial year is-all attributable to the owners of the parent company. :
+Total comprehensive income for the year is all attributable to the owners of the parent company. :
+- 10 -
+The Huddersfield Town Association Football Club Limited
+Group balance sheet
+As at 30 June 2024
+2024 2023
+as restated
+Notes £ £ £ £
+Fixed assets
+Goodwill 10 2,844 5,950
+Other intangible assets 10 4,928,400 2,274,410
+Total intangible assets 4,931,244 2,280,360
+Tangible assets 11 7,313,528 7,441,342
+Investments 12 2,878,304 3,419,314
+15,123,076 13,141,016
+: Current assets
+Stocks 17 341,220 297,632
+Debtors falling due after more than one
+year 18 6,945,000 8,527,919
+Debtors falling due within one year 18 12,707,064 11,345,758
+Cash at bank and in hand 4,867,082 4,448,087
+24,860,366 24,619,396
+Creditors: amounts falling due within
+one year 19 (60,811,754) (44,249,565)
+Net current liabilities (35,951,388) (19,630,169)
+. Total assets less current liabilities (20,828,312) (6,489,153).
+Creditors: amounts falling due after
+more than one year 20 (19,121,672) (18,484,978)
+Net liabilities , (39,949,984) (24,974,131)
+Capital and reserves
+Called up share capital 23 7,125,000 7,125,000
+Share premium account 24 375,000 375,000
+Profit and loss reserves 25 (47,449,984) (32,474,131)
+Total equity (39,949,984) (24,974,131)
+-11-
+The Huddersfield Town Association Football Club Limited
+Group balance sheet (continued)
+As at 30 June 2024
+The financial statements were approved by the board of directors and authorised for issue on
+.. 27/12/2024. ........ and are signed on its behalf by:
+
+Kevin Nagle
+KM Nagle * :
+Director
+Company registration number 01771361 (England and Wales)
+
+-12-
+The Huddersfield Town Association Football Club Limited
+Company balance sheet
+As at 30 June 2024
+2024 2023
+as restated
+Notes £ £ £ £
+’ Fixed assets
+Intangible assets 10 4,928,400 2,274,410
+Tangible assets 11 7,313,528 7,441,342
+Investments 12 106,694 106,691
+12,348,619 9,822,443
+Current assets
+Stocks 17 341,220 297,632
+Debtors falling due after more than one
+year 18 6,945,000 8,527,919
+Debtors falling due within one year 18 12,707,064 11,345,758
+Cash at bank and in hand 4,867,082 4,448,087
+24,860,366 24,619,396
+Creditors: amounts falling due within
+one year 19 (60,836,898) (44,274,709)
+Net current liabilities (35,976,532) (19,655,313)
+Total assets less current liabilities (23,627,913) (9,832,870)
+Creditors: amounts falling due after
+more than one year 20 (19,121,672) . (18,484,978)
+Net liabilities (42,749,585) (28,317,848)
+Capital and reserves
+Called up share capital 23 7,125,000 7,125,000
+Share premium account 24 375,000 375,000
+Profit and loss reserves 25 (50,249,585) (35,817,848)
+Total equity (42,749,585) (28,317,848)
+As permitted by s408 Companies Act 2006, the company has not presented its own profit and loss account
+and related notes. The company’s loss for the year was £14,431,737 (2023 - £5,963,553 loss (as
+restated)).
+-13-
+The Huddersfield Town Association Football Club Limited
+Company balance sheet (continued) .
+' As at 30 June 2024 :
+T jal statements were approved by the board of directors and authorised for issue on
+We and are signed on its behalf by:
+Kevin Nagle
+Cine
+Director
+Company registration number 01771361 (England and Wales)
+-14-
+The Huddersfield Town Association Football Club Limited
+Group statement of changes in equity ;
+For the year ended 30 June 2024
+
+Share Share Capital Profit and Total
+
+capital premium contribution loss
+
+account reserve reserves
+: £ £ £ £ £
+
+As restated for the period
+ended 30 June 2023:
+Balance at 1 July 2022 7,125,000 375,000 9,189,317 (37,655,634) (20,966,317)
+Year ended 30 June 2023:
+Loss and total comprehensive
+income - - - (6,422,265) (6,422,265)
+Transfers - - 2,414,451 - 2,414,451
+Other movements - - (11,603,768) 11,603,768 -
+Balance at 30 June 2023 7,125,000 375,000 - (32,474,131) (24,974,131)
+Year ended 30 June 2024:
+Loss and total comprehensive
+income - - - (14,975,853) (14,975,853)
+Balance at 30 June 2024 7,125,000 375,000 - (47,449,984) (39,949,984)
+
+- 15 -
+The Huddersfield Town Association Football Club Limited
+. Company statement of changes in equity
+For the year ended 30 June 2024
+Share Share Capital Profit and Total
+. capital premium contribution loss
+account reserve reserves
+£ Fr £ £ £
+As restated for the period :
+ended 30 June 2023:
+Balance at 1 July 2022 7,125,000 375,000 9,189,317 (41,458,063) (24,768,746)
+Year ended 30 June 2023:
+Loss and total comprehensive
+income for the year - - - (5,963,553) (5,963,553)
+Transfers - - 2,414,451 - 2,414,451
+Other movements - - (11,603,768) 11,603,768 -
+‘Balance at 30 June 2023 7,125,000 375,000 - (35,817,848) (28,317,848)
+Year ended 30 June 2024:
+Loss and total comprehensive
+income - - - (14,431,737) (14,431,737)
+Balance at 30 June 2024 7,125,000 375,000 - (50,249,585) (42,749,585)
+-16-
+The Huddersfield Town Association Football Club Limited
+Group statement of cash flows
+For the year ended 30 June 2024
+2024 2023
+: as restated
+
+Notes £ _€ £ £
+Cash flows from operating activities
+Cash absorbed by operations 32 (16,009,266) (12,102,777)
+Interest received 109,689 . 41,573
+Interest paid (22,300) (2,413)
+Tax paid . 136,015 381,906
+Net cash outflow from operating activities . (15,785,862) (11,681,711)
+Investing activities
+Purchase of intangible assets (3,289,198) (2,335,853)
+Proceeds from disposal of intangibles 6,103,951 7,660,794
+Purchase of tangible fixed assets (1,326,659) (79,077)
+Interest received 475,340 564,287
+Net cash generated from investing
+activities 1,963,434 5,810,151
+Financing activities .
+Proceeds from borrowings 16,900,000 16,500,000
+Repayment of borrowings (2,537,555) (7,317,741)
+Interest paid (121,022) (193,030)
+Net cash generated from financing
+activities 14,241,423 8,989,229
+Net increase in cash and cash equivalents 418,995 3,117,669
+Cash and cash equivalents at beginning of year 4,448,087 1,330,418
+Cash and cash equivalents at end of year 4,867,082 4,448,087
+
+-17-
+The Huddersfield Town Association Football Club Limited
+
+Notes to the group financial statements
+
+For the year ended 30 June 2024 _ i.
+
+1 Accounting policies
+
+1.1 Accounting convention
+These financial statements have been prepared in accordance with FRS 102 “The Financial Reporting
+Standard applicable in the UK and Republic of Ireland” (“FRS 102”) and the requirements of the
+Companies Act 2006.
+The financial statements are prepared in sterling, which is the functional currency of the company.
+Monetary amounts in these financial statements are rounded to the nearest £.
+The financial statements have been prepared under the historical cost convention. The principal
+accounting policies adopted are set out below.
+
+1.2 Basis of consolidation
+The consolidated group financial statements consist of the financial statements of the parent
+company The Huddersfield Town Association Football Club Limited together with all entities controlled
+by the parent company (its subsidiaries) and the group’s share of its interests in joint ventures and
+associates.
+No adjustments are necessary to the financial statements of subsidiaries to bring the accounting
+policies used into line with those used by other members of the group.
+
+. All intra-group transactions, balances and unrealised gains on transactions between group companies
+are eliminated on consolidation. Unrealised losses are also eliminated unless the transaction provides
+evidence of an impairment of the asset transferred.
+
+Subsidiaries are consolidated in the group’s financial statements from the date that control
+commences until the date that control ceases.
+Entities in which the group holds an interest and which are jointly controlled by the group and one or
+more other venturers under a contractual arrangement are treated as joint ventures. In the group
+financial statements, joint ventures are accounted for using the equity method.
+
+1.3. Going concern
+The group is reliant on the support of Kevin M Nagle. The nature of the group's business is such that
+there can be considerable unpredictable variation in the timing of cash inflows. The directors have
+prepared projected cash flow information for the period ending 12 months from the date of signature
+on the Balance Sheet. Kevin M Nagle has indicated that he intends to continue to support the group
+by introducing funds where required via the parent company Town FC LLC. On this basis, the
+directors consider it appropriate to prepare the financial statements on the going concern basis.
+
+1.4 Turnover .
+Turnover is measured at the fair value of the consideration received or receivable, net of discounts
+and value added taxes.
+Matchday and associated income is recognised in line with games played. TV & League income is
+recognised in the accounting period that includes the football season to which the income relates.
+Season tickets are recognised in the season to which they relate and any sold in advance are
+deferred. Commercia! income is recognised in line with contracted terms. Retail income is recognised
+at the point of sale to the customer. Lotteries income is recognised in line with the related prize
+draws.
+Other operating income is recognised on activities not included within the normal course of business
+of the football club and is recognised at the fair value of the consideration received or receivable.
+
+-18-
+The Huddersfield Town Association Football Club Limited
+
+Notes to the group financial statements (continued)
+
+For the year ended 30 June 2024
+
+1 Accounting policies (Continued)
+
+1.5 Intangible fixed assets - goodwill
+Goodwill represents the excess of the cost of acquisition of a business over the fair value of net
+assets acquired. It is initially recognised as an asset at cost and is subsequently measured at cost
+less accumulated amortisation and accumulated impairment losses. Goodwill is considered to have a
+finite useful life and is amortised on a systematic basis over its expected life, which is 15 years.
+
+1.6 Intangible fixed assets other than goodwill
+The costs associated with the acquisition of players' registrations or extending their contracts,
+including agents' fees, are capitalised as intangible fixed assets. These costs are amortised in equal
+annual instalments and charged to cost of sales expenses in the Group Statement of Comprehensive
+Income on the following basis:
+Players’ registrations player contract period
+Where a contract life is renegotiated the unamortised costs, together with the new costs relating to
+the contract extension, are amortised over the new contract period. Players' registrations are written
+down for impairment, for example following a career threatening injury, when the carrying amount
+exceeds the amount recoverable through use or sale.
+Under the conditions of certain transfer agreements, further fees will be payable in the event of the
+players concerned making a certain number of First Team appearances or on the occurrence of
+certain other specified events. Liabilities in respect of these additional fees are accounted for when it
+becomes probable that the number of appearances will be achieved or the specified future events will
+occur
+
+1.7 Tangible fixed assets
+Tangible fixed assets are initially measured at cost and subsequently measured at cost or valuation, :
+net of depreciation and any impairment losses. .
+Depreciation is recognised so as to write off the cost or valuation of assets less their residual values
+over their useful lives on the following bases:
+Short leasehold over lease term
+Leasehold property over lease term and 9% and 10% on cost
+Plant and machinery 20% on cost
+Trophies 25% on cost
+Fixtures, fittings and computer equipment 33% on cost and 20% on cost
+Motor vehicles 25% on cost
+
+- The gain or loss arising on the disposal of an asset is determined as the difference between the sale
+
+proceeds and the carrying value of the asset, and is recognised in the profit and loss account.
+
+1.8 Fixed asset investments
+Equity investments are measured at fair value through profit or loss, except for those equity
+investments that are not publicly traded and whose fair value cannot otherwise be measured reliably,
+which are recognised at cost less impairment until a reliable measure of fair value becomes available.
+In the parent company financial statements, investments in subsidiaries, associates and jointly
+controlled entities are initially measured at cost and subsequently measured at cost less any
+accumulated impairment losses.
+A subsidiary is an entity controlled by the group. Control is the power to govern the financial and
+operating policies of the entity so as to obtain benefits from its activities.
+
+-19-
+The Huddersfield Town Association Football Club Limited
+
+Notes to the group financial statements (continued)
+
+For the year ended 30 June 2024
+
+1 Accounting policies (Continued)
+Entities in which the ‘group has a long term interest and shares control under a contractual
+arrangement are classified as jointly controlled entities.
+
+1.9 Stocks
+Stocks are stated at the lower of cost and estimated selling price less costs to complete and sell. Cost
+comprises direct materials costs incurred in bringing the stocks to their present location and
+condition.
+At each reporting date, an assessment is made for impairment. Any excess of the carrying amount of
+stocks over its estimated selling price less costs to complete and sell is recognised as an impairment
+loss in cost of sales. Reversals of impairment losses are also recognised in cost of sales.
+
+1.10 Cash and cash equivalents
+Cash and cash equivalents are basic financial assets and include cash in hand and deposits held at
+call with banks.
+
+1.11 Financial instruments
+The group has elected to apply the provisions of Section 11 ‘Basic Financial Instruments’ and Section
+12 ‘Other Financial Instruments Issues’ of FRS 102 to all of its financial instruments.
+Financial instruments are recognised in the group's balance sheet when the group becomes party to
+the contractual provisions of the instrument.
+Financial assets and liabilities are offset and the net amounts presented in the financial statements
+when there is a legally enforceable right to set off the recognised amounts and there is an intention
+to settle on a net basis or to reatise the asset and settle the liability simultaneously.
+Basic financial assets
+Basic financial assets, which include debtors and cash and bank balances, are initially measured at
+transaction price including transaction costs and are subsequently carried at amortised cost using the
+effective interest method unless the arrangement constitutes a financing transaction, where the
+transaction is measured at the present value of the future receipts discounted at a market rate of
+interest.
+Other financial assets
+Other financial assets, including investments in equity instruments which are not subsidiaries,
+associates or joint ventures, are initially measured at fair value, which is normally the transaction
+price. Such assets are subsequently carried at fair value and the changes in fair value are recognised
+in profit or loss, except that investments in equity instruments that are not publicly traded and whose
+fair values cannot be measured reliably are measured at cost less impairment.
+
+- 20 -
+The Huddersfield Town Association Football Club Limited
+
+Notes to the group financial statements (continued)
+
+For the year ended 30 June 2024
+
+1 Accounting policies (Continued)
+Impairment of financial assets
+Financial assets, other than those held at fair value through profit and loss, are assessed for
+indicators of impairment at each reporting end date.
+Financial assets are impaired where there is objective evidence that, as a result of one or more
+events that occurred after the initial recognition of the financial asset, the estimated future cash
+flows have been affected. If an asset is impaired, the impairment loss is the difference between the
+carrying amount and the present value of the estimated cash flows discounted at the asset’s original
+effective interest rate. The impairment loss is recognised in profit or loss.
+If there is a decrease in the impairment loss arising from an event occurring after the impairment
+was recognised, the impairment is reversed. The reversal is such that the current carrying amount
+does not exceed what the carrying amount would have been, had the impairment not previously been
+recognised. The impairment reversal is recognised in profit or loss.
+Derecognition of financial assets
+Financial assets are derecognised only when the contractual rights to the cash flows from the asset
+expire or are settled, or when the group transfers the financial asset and substantially all the risks
+and rewards of ownership to another entity, or if some significant risks and rewards of ownership are
+retained but control of the asset has transferred to another party that is able to sell the asset in its -
+
+: entirety to an unrelated third party.
+
+Classification of financial liabilities
+Financial liabilities and equity instruments are classified according to the substance of the contractual
+arrangements entered into. An equity instrument is any contract that evidences a residual interest in
+the assets of the group after deducting all of its liabilities.
+Basic financial liabilities
+Basic financial liabilities, including creditors and loans from parent companies, are initially recognised
+at transaction price unless the arrangement constitutes a financing transaction, where the debt
+instrument is measured at the present value of the future payments discounted at a market rate of
+interest.
+Debt instruments are subsequently carried at amortised cost, using the effective interest rate
+method.
+Trade creditors are obligations to pay for goods or services that have been acquired in the ordinary
+course of business from suppliers. Amounts payable are classified as current liabilities if payment is
+due within one year or less. If not, they are presented as non-current liabilities. Trade creditors are
+recognised initially at transaction price and subsequently measured at amortised cost using the
+effective interest method unless the arrangement constitutes a financing transaction.
+Other financial liabilities
+Debt instruments that do not meet the conditions in FRS 102 paragraph 11.9 are subsequently
+measured at fair value through profit or loss.
+Derecognition of financial liabilities
+Financial liabilities are derecognised when the group's contractual obligations expire or are
+discharged or cancelled.
+
+1.12 Taxation
+The tax expense represents the sum of the tax currently payable and deferred tax.
+
+-21-
+The Huddersfield Town Association Football Club Limited
+
+Notes to the group financial statements (continued)
+
+For the year ended 30 June 2024
+
+1 Accounting policies (Continued)
+Current tax
+The tax currently payable is based on taxable profit for the year. Taxable profit differs from net profit
+as reported in the profit and loss account because it excludes items of income or expense that are
+taxable or deductible in other years and it further excludes items that are never taxable or
+deductible. The group’s liability for current tax is calculated using tax rates that have been enacted or
+substantively enacted by the reporting end date.
+Deferred tax
+Deferred tax liabilities are generally recognised for all timing differences and deferred tax assets are
+recognised to the extent that it is probable that they will be recovered against the reversal of
+deferred tax liabilities or other future taxable profits. Such assets and liabilities are not recognised if
+the timing difference arises from goodwill or from the initial recognition of other assets and liabilities
+in a transaction that affects neither the tax profit nor the accounting profit.
+The carrying amount of deferred tax assets is reviewed at each reporting end date and reduced to
+the extent that it is no longer probable that sufficient taxable profits will be available to allow all or
+part of the asset to be recovered. Deferred tax is calculated at the tax rates that are expected to
+apply in the period when the liability is settled or the asset is realised. Deferred tax is charged or
+credited in the profit and loss account, except when it relates to items charged or credited directly to
+equity, in which case the deferred tax is also dealt with in equity. Deferred tax assets and liabilities
+are offset if, and only if, there is a legally enforceable right to offset current tax assets and liabilities
+and the deferred tax assets and liabilities relate to taxes levied by the same tax authority.
+
+1.13 Employee benefits
+The costs of short-term employee benefits are recognised as a liability and an expense, unless those
+costs are required to be recognised as part of the cost of stock or fixed assets.
+The cost of any unused holiday entitlement is recognised in the period in which the employee’s
+services are received.
+Termination benefits are recognised immediately as an expense when the company is demonstrably
+committed to terminate the employment of an employee or to provide termination benefits.
+
+- Signing on fees are taken, as part of cost of sales, to the Group Statement of Comprehensive Income
+
+in the year in which they are incurred.
+
+1.14 Retirement benefits
+Payments to defined contribution retirement benefit schemes are charged as an expense as they fail
+due.
+
+1.15 Leases
+Rentals payable under operating leases, including any lease incentives received, are charged to profit
+or loss on a straight line basis over the term of the relevant lease.
+
+1.16 Foreign exchange
+Assets and liabilities in foreign currencies are translated into sterling at the rates of exchange ruling
+at the balance sheet date. Transactions in foreign currencies are translated into sterling at the rate of
+exchange ruling at the date of transaction. Exchange differences are taken into account in arriving at
+the operating result.
+
+1.17 Company information
+The company is a private company limited by shares and is incorporated in England and Wales,
+company registration number 01771361. The address of its principal place of business is The John
+Smith's Stadium, Stadium Way, Leeds Road, Huddersfield, West Yorkshire, HD1 6PX.
+
+-22-
+The Huddersfield Town Association Football Club Limited
+
+Notes to the group financial statements (continued)
+
+For the year ended 30 June 2024
+
+2 Judgements and key sources of estimation uncertainty
+In the application of the group’s accounting policies, the directors are required to make judgements,
+estimates and assumptions about the carrying amount of assets and liabilities that are not readily
+apparent from other sources. The estimates and associated assumptions are based on historical
+experience and other factors that are considered to be relevant. Actual results may differ from these
+estimates.
+The estimates and underlying assumptions are reviewed on an ongoing basis. Revisions to accounting
+estimates are recognised in the period in which the estimate is revised where the revision affects
+only that period, or in the period of the revision and future periods where the revision affects both
+current and future periods.
+Critical judgements
+The following judgements (apart from those involving estimates) have had the most significant effect
+on amounts recognised in the financial statements.
+Joint venture
+The group controls 40% of the share capital of Kirklees Stadium Development Limited. The entity is
+accounted for as a joint venture due to the terms of the contractual agreement between
+shareholders.
+Profit on sale of players' registrations
+The profit on sale of players’ registrations can have a material impact on the group's financial
+statements each year. These are disclosed separately on the face of the Group Statement of
+Comprehensive Income to provide further understanding of the financial performance of the group.
+Loans
+Included within other loans are loans which would be required to be measured at fair value through
+profit or loss; however, it is deemed that a reliable measure of fair value is not available. The
+repayments of these loans are conditional on specific events occurring in the future. It is considered
+that the range of reasonable fair value estimates of these loans is significant, and that the
+probabilities of the various estimates cannot be reasonably assessed. The loans have therefore been
+accounted for at discounted cost.
+Where the final repayments of loans are conditional on future events occurring the discounting and
+ageing of these repayments have been based on either the earliest or most likely date that the event
+could occur.
+Effective interest rate
+The company makes a judgement that the effective interest rate used to discount long term credit
+arrangements is a market rate of interest.
+
+-23-
+The Huddersfield Town Association Football Club Limited
+Notes to the group financial statements (continued)
+For the year ended 30 June 2024
+2 Judgements and key sources of estimation uncertainty (Continued)
+Key sources of estimation uncertainty
+. The estimates and assumptions which have a significant risk of causing a material adjustment to the .
+carrying amount of assets and liabilities are as follows.
+Useful economic lives of tangible assets
+The annual depreciation charge for tangible assets is sensitive to changes in the estimated useful
+economic lives and residual values of the assets, which are re-assessed annually. They are amended
+when necessary to reflect current estimates, based on technological advancement, future
+investments, economic utilisation and the physical condition of the assets.
+Player registrations
+The annual amortisation charge for player registrations is sensitive to changes in the estimated useful
+economic lives of the assets which are reassessed annually. They are amended where necessary to
+reflect current estimates based on renewal of player contracts or triggering of extension clauses.
+Impairment of debtors
+The group makes an estimate of the recoverable value of trade and other debtors. When assessing
+impairment, management considers factors including the ageing profile and recent correspondence
+with the debtors and historical experience. Impairment losses are recognised in administrative
+expenses.
+Long term credit arrangements
+The effective interest method is used to measure long term credit arrangements. The financial asset
+or liability is measured at the present value of future payments discounted at an estimate of a
+market rate of interest based on the rates paid on other similar debt instruments. The discounting
+and ageing of some of these repayments has been based on either the earliest or most likely date
+that a future event could occur.
+Deferred taxation 7
+The group has significant tax losses available to carry forward against future trading profits. A
+deferred tax asset has not been recognised in the current year based on forecasts for the coming
+year.
+Termination benefits
+Termination benefits are recognised when the group has committed to providing them to employees.
+They are measured at the best estimate required to settle the obligation at the reporting date.
+3 Turnover and other revenue
+2024 2023
+£ £
+Turnover analysed by class of business
+Matchday 4,121,961 3,862,303
+TV & League 9,547,911 9,063,734
+Other commercial activities 3,552,446 4,203,115
+Retail 940,728 990,989
+18,163,046 18,120,141
+-24-
+The Huddersfield Town Association Football Club Limited
+Notes to the group financial statements (continued)
+For the year ended 30 June 2024
+3 Turnover and other revenue (Continued)
+2024 2023
+. £ £
+Other revenue
+Interest receivable and similar income 845,153 908,999
+The whole of the turnover is attributable to work arising from the running of a professional football
+club.
+All turnover arose in the United Kingdom.
+Included within interest receivable and similar income is £109,689 (2023 - £41,573) of other interest
+and £735,464 (2023 - £867,426) of unwinding of discounting on player sales.
+Included within other operating income is £1,037,500 (2023 - £1,037,500) in relation to an insurance
+claim.
+4 Exceptional item
+2024 2023
+. £ £
+Profit on sale of players’ registrations (4,365,581) (8,884,088)
+Financing gains (38,495) (1,393,767)
+(4,404,076) (10,277,855)
+The profit on sale of players’ registrations includes profits of £4,368,518 (2023 - £9,005,493), losses
+of £2,937 (2023 - £25,581) and impairments of ENil (2023 - £95,824).
+There is a financing gain of £38,495 arising from changes to the interest rates of an existing loan.
+In the prior year, there was a financing gain of £1,013,373 which related to a substantial modification
+of the terms of an existing loan which resulted in a difference between the carrying amount of the
+liability and the amount transferred to another party.
+There was also a financing gain of £380,394 on new loans negotiated during the prior year with this
+arising from the difference between the amount loaned and the present value of the loan calculated
+using an effective interest rate.
+-25-
+The Huddersfield Town Association Football Club Limited
+Notes to the group financial statements (continued) —
+For the year ended 30 June 2024 ,
+5 Operating loss ;
+2024 2023
+£ £
+Operating loss for the year is stated after charging/(crediting):
+Exchange gains (5,564) (22,583)
+, Fees payable to the group's auditor for the audit of the group's financial
+statements 61,750 47,875
+Depreciation of owned tangible fixed assets 1,693,188 1,791,386
+Amortisation of intangible assets 2,156,386 1,277,150
+Impairment of intangible assets : . - 95,299
+Operating lease charges 1,401,786 1,249,914
+6 Employees
+The average monthly number of persons (including directors) employed by the group and company
+during the year was: .
+Group Company
+2024 2023 2024 2023
+Number Number Number Number
+: Players 63 77 63 77
+Staff 166 157 166 157
+Total 229 234 229 234
+Their aggregate remuneration comprised:
+Group Company
+2024 2023 2024 2023
+£ £ £ £
+Wages and salaries 20,232,219 18,902,760 20,232,219 18,902,760
+Social security costs 2,623,601 2,461,818 2,623,601 2,461,818
+Pension costs 175,710 157,503 175,710 157,503
+23,031,530 21,522,081 23,031,530 21,522,081
+The average number of employees by undertakings that were proportionately consolidated during the .
+year was 340 (2023 - 312).
+- 26- :
+The Huddersfield Town Association Football Club Limited
+Notes to the group financial statements (continued)
+For the year ended 30 June 2024
+7 Directors' remuneration
+2024 2023
+. £ £
+Remuneration for qualifying services 510,223 345,062
+Company pension contributions to defined contribution schemes 19,698 11,663
+Compensation for loss of office 103,585 -
+633,506 356,725
+The number of directors for whom retirement benefits are accruing under defined contribution
+schemes amounted to 3 (2023 - 4).
+Remuneration disclosed above includes the following amounts paid to the highest paid director:
+2024 2023
+£ £
+Remuneration for qualifying services 395,500 150,000 :
+Company pension contributions to defined contribution schemes 15,291 4,000
+8 Interest payable and similar expenses
+2024 2023
+£ £
+Interest on financial liabilities
+Interest on bank overdrafts and loans - 18,384
+Other interest on financial liabilities 2,046,645 2,198,255
+2,046,645 2,216,639
+: Other interest on financial liabilities includes £299,902 (2023 - £234,948) of unwinding of discounting
+on player transactions, £1,717,114 (2023 - £1,954,512) of unwinding discount on loans, £7,329
+(2023 - £6,111) of other loan interest and £22,300 (2023 - £2,684) of other interest.
+9 = Taxation
+2024 2023
+£ £
+Current tax
+Adjustments in respect of prior periods (25,422) (5,235)
+- 27 -
+The Huddersfield Town Association Football Club Limited
+Notes to the group financial statements (continued)
+For the year ended 30 June 2024
+9 Taxation (Continued)
+The actual credit for the year can be reconciled to the expected credit for the year based on the profit
+or loss and the standard rate of tax as follows:
+2024 2023
+as restated
+£ £
+Loss before taxation (15,001,275) (6,427,500)
+Expected tax credit based on the standard rate of corporation tax in the
+UK of 25.00% (2023: 25.00%) (3,750,319) (1,606,875)
+Tax effect of expenses that are not deductible in determining taxable
+profit 120,296 1,829,717
+Adjustments in respect of prior years (25,422) (5,235)
+Depreciation in excess of capital allowances 216,054 213,598
+Tax losses for which no deferred tax is recognised 3,413,969 (436,440) ~
+Taxation credit (25,422) (5,235)
+The group has losses of approximately £66.3m (2023 - £52.7m) available to carry forward against
+future trading profits. A deferred tax asset of £16.5m (2023 - £13.1m) has not been recognised as it
+is not deemed prudent given the potential volatility of future financial performance based on the on
+field results.
+From 1 April 2023, the main rate of Corporation Tax increased to 25%. The deferred tax has been
+calculated on this basis.
+10 Intangible fixed assets
+Group Goodwill Players’ Total
+registrations
+£ £ £
+Cost
+At 1 July 2023 2,422,227 4,284,673 6,706,900
+Additions - 5,255,286 5,255,286
+Disposals - (1,161,352) (1,161,352)
+At 30 June 2024 2,422,227 8,378,607 10,800,834
+Amortisation and impairment ;
+At 1 July 2023 2,416,277 2,010,263 4,426,540
+Amortisation charged for the year 3,106 2,153,280 2,156,386
+Disposals - (713,336) (713,336)
+At 30 June 2024 2,419,383 3,450,207 5,869,590
+-28-
+The Huddersfield Town Association Football Club Limited
+
+Notes to the group financial statements (continued)
+
+For the year ended 30 June 2024
+
+10 Intangible fixed assets (Continued)
+Carrying amount
+At 30 June 2024 2,844 4,928,400 4,931,244
+At 30 June 2023 5,950 2,274,410 2,280,360
+Company Goodwill Players’ Total
+
+registrations
+£ £ £
+Cost
+At 1 July 2023 2,375,640 4,284,673 6,660,313
+Additions - 5,255,286 5,255,286
+Disposals - (1,161,352) (1,161,352)
+At 30 June 2024 2,375,640 8,378,607 10,754,247
+Amortisation and impairment
+At 1 July 2023 2,375,640 2,010,263 4,385,903
+Amortisation charged for the year - 2,153,280 2,153,280
+Disposals - (713,336) (713,336)
+At 30 June 2024 2,375,640 3,450,207 5,825,847
+Carrying amount
+At 30 June 2024 - 4,928,400 4,928,400
+At 30 June 2023 - 2,274,410 2,274,410
+-29-
+The Huddersfield Town Association Football Club Limited
+
+Notes to the group financial statements (continued)
+
+For the year ended 30 June 2024
+
+11 Tangible fixed assets 1
+Group Short Leasehold Plantand = Trophies _Fixtures, Motor Total
+
+leasehold property machinery fittings and vehicles
+computer
+equipment
+£ £ £ £ £ £ £
+Cost zi
+At 1 July 2023 650,000 15,848,098 386,069 306,190 2,365,703 25,950 19,582,010
+Additions - 1,089,345 - 6,182 469,847 - 1,565,374
+Disposals - = (386,069) = (381,403) - (767,472)
+At 30 June 2024 650,000 16,937,443 - 312,372 2,454,147 25,950 20,379,912
+Depreciation and impairment
+At 1 July 2023 429,725 8,740,405 386,069 306,190 2,252,329 25,950 12,140,668
+Depreciation charged in the year 21,667 = 1,562,112 - 1,288 108,121 > 1,693,188
+Eliminated in respect of disposals = = (386,069) - (381,403) 7 (767,472)
+At 30 June 2024 451,392 10,302,517 - 307,478 1,979,047 25,950 13,066,384
+Carrying amount
+At 30 June 2024 198,608 6,634,926 - 4,894 475,100 - 7,313,528
+At 30 June 2023 220,275 7,107,693 - - 113,374 > 7,441,342
+-30-
+The Huddersfield Town Association Football Club Limited
+Notes to the group financial statements (continued)
+For the year ended 30 June 2024
+Company Short Leasehold Trophies Fixtures, Motor Total
+leasehold property fittings and vehicles
+computer
+equipment
+£ £ £ . £ £ £
+Cost
+At 1 July 2023 650,000 15,848,098 306,190 2,365,703 25,950 19,195,941
+Additions - 1,089,345 6,182 469,847 - 1,565,374
+Disposals - - - (381,403) - (381,403)
+At 30 June 2024 650,000 16,937,443 312,372 2,454,147 25,950 20,379,912
+Depreciation and
+impairment
+At 1 July 2023 429,725 8,740,405 306,190 2,252,329 25,950 11,754,599
+Depreciation charged in .
+the year 21,667 1,562,112 1,288 108,121 - 1,693,188
+Eliminated in respect of
+disposals - - - (381,403) - (381,403)
+At 30 June 2024 451,392 10,302,517 307,478 1,979,047 25,950 13,066,384
+Carrying amount
+At 30 June 2024 198,608 6,634,926 4,894 475,100 - 7,313,528
+At 30 June 2023 220,275 7,107,693 - 113,374 - 7,441,342
+Group and company
+All of the tangible fixed assets are pledged as security against other loans.
+12 Fixed asset investments ,
+Group Company
+2024 2023 2024 2023
+Notes £ £ £ £
+Investments in subsidiaries 13 - - 46,688 46,688
+Investments in joint ventures 15 2,878,302 3,419,312 60,001 60,001
+Unlisted investments 2 2 2 2
+2,878,304 3,419,314 106,691 106,691
+-31-
+The Huddersfield Town Association Football Club Limited
+Notes to the group financial statements (continued)
+For the year ended 30 June 2024
+12 Fixed asset investments (Continued)
+Movements in fixed asset investments
+Group Shares in joint Other Total
+ventures investments
+£ £ £
+Cost or valuation
+At 1 July 2023 : 3,419,312 2 3,419,314
+Share of profit/(loss) (541,010) - (541,010)
+At 30 June 2024 2,878,302 2 2,878,304
+Carrying amount
+At 30 June 2024 2,878,302 2 2,878,304
+At 30 June 2023 3,419,312 2 3,419,314
+Interest in joint venture
+Income from participating interests includes depreciation charges of £289,768 (2023 - £285,788).
+Movements in fixed asset investments
+Company Shares in Other Total
+subsidiaries investments
+and joint
+ventures
+: £ £ £
+, Cost or valuation
+At 1 July 2023 and 30 June 2024 106,689 2 106,691
+Carrying amount
+At 30 June 2024 106,689 2 106,691
+At 30 June 2023 106,689 2 106,691
+: 13 Subsidiaries
+Details of the company's subsidiaries at 30 June 2024 are as follows:
+Name of undertaking Registered office Class of %
+Held
+shares held Direct
+Huddersfield Canalside Limited The John Smith's Stadium, Stadium Way, A Ordinary 100.00
+Leeds Road, Huddersfield, HD1 6PX
+B Ordinary 100.00
+-32-
+The Huddersfield Town Association Football Club Limited
+Notes to the group financial statements (continued)
+For the year ended 30 June 2024
+13 Subsidiaries (Continued)
+The subsidiary is non-trading.
+The company also holds 75,000 preference shares of £1 each.
+The shareholding in A Ordinary and B Ordinary shares represents 100% of voting rights.
+14 Associates
+Details of associates at 30 June 2024 are as follows: .
+Name of undertaking Registered office Class of % Held
+shares held DirectIndirect
+The HDOne Kirklees Limited Huddersfield Road, Elland, Halifax, England, HXS. A shares - 40
+SBW
+B shares - -
+HLD (Huddersfield) Limited Arncliffe Cottage Back Lane, Arnside, Carnforth, Ordinary - 20
+England, LAS OBS
+The principal activity of The HDOne Kirklees Limited is development of building projects. HLD
+(Huddersfield) Limited is dormant.
+15 Joint ventures
+Details of joint ventures at 30 June 2024 are as follows:
+Name of undertaking Registered office Interest % Held
+held DirectIndirect
+Kirklees Stadium The John Smith's Stadium, Stadium Way, Leeds Ordinary 40.00 -
+Development Limited Road, Huddersfield, HD1 6PX
+KSDL Land Limited The John Smith's Stadium, Stadium Way, Leeds Ordinary - 40.00
+Road, Huddersfield, HD1 6PX
+The principal activity of Kirklees Stadium Development Limited is running of a sports stadium. The
+principal activity of KSDL Land Limited is holding an investment property.
+Kirklees Stadium Development Limited and KSDL Land Limited have accounting year ends of 31 July
+2024. The consolidated accounts only include the results of the joint ventures up to 30 June 2024.
+16 Financial instruments
+Included within other loans are £22.9m (2023 - £25.3m) of loans which would be required to be
+measured at fair value through profit or loss; however, it is deemed that a reliable measure of fair
+value is not available. The repayments of these loans are conditional on specific events occurring in
+the future. It is considered that the range of reasonable fair value estimates of these loans is
+significant, and that the probabilities of the various estimates cannot be reasonably assessed. The
+loans have therefore been accounted for at discounted cost and have a carrying value at the year end
+of £18,458,931 (2023 - £19,094,182).
+-33- ;
+The Huddersfield Town Association Football Club Limited
+Notes to the group financial statements (continued)
+For the year ended 30 June 2024
+17 Stocks
+Group Company
+2024 2023 2024 2023
+£ £ £ £
+Finished goods and goods for resale 341,220 297,632 341,220 297,632
+Finished goods are stated after provisions for impairment of £91,389 (2023 - £89,853).
+Consumables, changes in finished goods and provisions for impairment are recognised as a cost of
+sale. The write-down of stocks to net realisable value amounted to £1,536 (2023 - £18,790 credit).
+18 Debtors
+Group Company
+2024 2023 2024 2023
+as restated as restated
+Amounts falling due within one year: £ £ £ £
+Trade debtors 7,110,370 5,800,927 7,110,370 5,800,927
+Corporation tax recoverable - 110,593 - 110,593
+Other debtors 2,479,973 2,933,501 2,479,973 2,933,501
+Prepayments and accrued income 3,116,721 2,500,737 3,116,721 2,500,737
+12,707,064 11,345,758 12,707,064 11,345,758
+Amounts falling due after more than one year:
+Trade debtors 6,945,000 8,527,919 6,945,000 8,527,919
+Total debtors 19,652,064 19,873,677 19,652,064 19,873,677
+Trade debtors are stated after provisions for impairment of £26,933 (2023 - £26,933). The bad debt
+expense recognised in the year is ENil (2023 - £461,227 gain).
+Amounts owed by group undertakings of ENil (2023 - ENil) are stated after provision for impairment
+of £2,253,728 (2023 - £2,253,728).
+-34- :
+The Huddersfield Town Association Football Club Limited
+Notes to the group financial statements (continued)
+For the year ended 30 June 2024
+19 Creditors: amounts falling due within one year
+Group Company
+2024 2023 2024 2023
+Notes £ £ £ £
+Other borrowings 21 49,636,682 33,482,005 49,636,682 33,482,005
+Trade creditors 4,479,625 — 3,164,714 4,479,625 3,164,714
+Amounts owed to group undertakings - - 25,144 25,144
+Other taxation and social security 1,500,325 1,126,610 1,500,325 1,126,610
+Deferred season ticket income 2,236,801 2,376,512 2,236,801 2,376,512
+Other creditors 362,402 68,143 362,402 68,143
+Accruals and deferred income 2,595,919 4,031,581 2,595,919 4,031,581
+60,811,754 44,249,565 60,836,898 44,274,709
+Accruals and deferred income include amounts totaling £790,254 (2023 - £1,390,940) relating to
+termination benefits.
+20 Creditors: amounts falling due after more than one
+year
+. Group Company
+2024 2023 2024 2023
+Notes £ £ £ £
+Other borrowings 21 16,781,854 16,895,467 16,781,854 16,895,467
+Trade creditors 2,016,693 943,261 2,016,693 943,261
+Accruals and deferred income 323,125 646,250 323,125 646,250
+19,121,672 18,484,978 19,121,672 18,484,978
+21° ~=Loans and overdrafts
+Group Company
+2024 2023 2024 2023
+£ £ £ £
+Loans from parent undertakings 47,382,651 30,482,651 47,382,651 30,482,651
+Other loans 19,035,885 19,894,821 19,035,885 19,894,821
+66,418,536 50,377,472 66,418,536 50,377,472
+Payable within one year 49,636,682 33,482,005 49,636,682 33,482,005
+Payable after one year 16,781,854 16,895,467 16,781,854 16,895,467
+- 35 -
+_ The Huddersfield Town Association Football Club Limited
+Notes to the group financial statements (continued)
+For the year ended 30 June 2024
+21 °=~Loans and overdrafts (Continued)
+Amounts shown as due to parent undertakings relate to loans due to Town FC LLC, an entity under
+the ultimate beneficial ownership of Mr. K Nagle. The loans are non-interest bearing.
+Included within other loans are non-interest bearing loans with set repayment terms which have
+therefore been discounted as financing transactions at 5% plus base rate. This includes an amount of
+£15.0m, discounted to £12.2m (2023 - £15.0m discounted to £11.1m), where payment is contingent
+on the event of the Football Club being promoted to the Premier League, if this trigger event is not
+met then the loan becomes payable to the parent undertaking Town FC LLC. There are a further
+£7.9m, discounted to £6.2m (2023 - £10.3m discounted to £8.0m), where the final repayments of
+these loans are conditional on future events occurring. If these trigger events are not met then the
+loans becomes payable to the parent undertaking Town FC LLC. The discounting and ageing of these
+: repayments have been based on either the earliest or most likely date that the event could occur, all
+of which has been deemed to be within 5 years.
+22 Secured debts
+Group and Company ;
+Included within creditors are other loans of £18,458,931 (2023 - £19,094,182) which are secured.
+Of the other loans, £22.9m (2023 - £25.3m) is included within creditors at a discounted value as it
+has been accounted for as a financing transaction.
+The amount of other loans secured at the year end is £22.9m (2023 - £25.3m). These loans are
+included within creditors at a discounted value of £18,458,931 (2023 - £19,094,182) as they have
+been accounted for as financing transactions. They are secured by a debenture dated 3 July 2019
+which creates a fixed charge over all the tangible fixed assets, investments, bank accounts and debts
+of the football club and a floating charge over the other assets of the club.
+23 Share capital
+Group and company . 2024 2023 2024 2023
+Ordinary share capital Number Number £ £
+Issued and fully paid
+Ordinary 10p shares of 10p each 69,166,667 69,166,667 6,916,667 6,916,667
+Ordinary 5p shares of Sp each 4,166,666 4,166,666 208,333 208,333
+73,333,333 73,333,333 7,125,000 7,125,000
+There are two classes of ordinary shares which hold equal rights. There are no restrictions on the
+distribution of dividends or the repayment of capital.
+24 Share premium account
+Group Company
+2024 2023 2024 2023
+£ £ £ £
+At the beginning and end of the year 375,000 375,000 375,000 375,000
+Share premium - includes any premiums received on issue of share capital.
+-36-
+The Huddersfield Town Association Football Club Limited
+Notes to the group financial statements (continued)
+For the year ended 30 June 2024
+25 Profit and loss reserves
+Group Company
+2024 2023 2024 2023
+as restated as restated
+£ £ £ £
+At the beginning of the year (32,674,131) (37,655,634) (36,017,848) (41,458,063)
+Prior year adjustment 200,000 - 200,000 -
+As restated (32,474,131) (37,655,634) (35,817,848) (41,458,063)
+Loss for the year (14,975,853) (6,422,265) (14,431,737) (5,963,553)
+Other movements - 11,603,768 - 11,603,768
+At the end of the year (47,449,984) (32,474,131) (50,249,585) (35,817,848)
+Retained earnings - includes all current and prior period retained profits and losses.
+26 Contingent Liabilities
+Group and company
+Under the terms of certain contracts for the purchase of players' registrations future payments may
+be due, dependent on the future success of the team and the future team selection of individual
+players. As of 30 June 2024 the maximum that could be payable is £4.30m (2023 - £3.56m).
+Under the terms of certain player contracts future agent fees may be due if the player is still
+registered with the Club. As of 30 June 2024 the maximum that could be payable is £0.34m (2023 -
+£0.45m).
+In addition to this future payments may be due relating to sell on clauses to previous clubs
+dependent on the sale price achieved.
+27 Operating lease commitments .
+Lessee
+At the reporting end date the group had outstanding commitments for future minimum lease
+payments under non-cancellable operating leases, which fall due as follows:
+Group Company
+2024 2023 2024 2023
+£ £ £ £
+Within one year 319,070 303,877 319,070 303,877
+Between two and five years 1,443,995 1,375,233 1,443,995 1,375,233
+In over five years 3,878,320 4,266,152 3,878,320 4,266,152
+5,641,385 5,945,262 5,641,385 5,945,262
+- 37 -
+The Huddersfield Town Association Football Club Limited
+Notes to the group financial statements (continued) ,
+For the year ended 30 June 2024
+27 Operating lease commitments (Continued)
+Group and company
+Rent relating to the lease commitments has continued to be waived throughout the year. The value of
+rent waived during the financial year was £303,877 (2023 - £289,406). There is a formal agreement
+in place in which the rental lease will continue to be waived, conditiona! on the basis that amounts
+included within other loans are repaid in line with the agreement. All amounts have been waived up
+to the date of signing. .
+In addition to the above, the group had an annual commitment under a non-cancellable operating
+lease in respect of the stadium that expires in May 2143. The annual commitment is calculated by
+reference to the number of spectators at matches and similarly of the other tenant. The amount paid
+during the year was £1,326,270 (2023 - £1,209,075).
+28 Events after the reporting date
+Following the year end, the Club acquired the player registrations of four players. The fees for these
+players, excluding future contingent fees, amounts to £537,000.
+The Club has disposed of the player registrations of nine players. The loss on disposal arising from
+these transactions is £239,730.
+29 Related party transactions .
+Remuneration of key management personnel
+The remuneration of key management personnel is as follows.
+2024 2023
+£ £
+Aggregate compensation 707,410 401,900
+Other information
+The company has taken advantage of exemption, under the terms of Financial Reporting Standard
+102 ‘The Financial Reporting Standard applicable in the UK and Republic of Ireland’, not to disclose
+related party transactions with wholly owned subsidiaries within the group.
+Entities with control, joint control or significant influence over the entity
+Group and company
+During the year, ENil (2023 - £26,482,651) of other loans were transferred from key management
+personnel to entities with control over the group.
+Further loans of £16,900,000 (2023 - £4,000,000) were received from related parties in the year. .
+These loans are interest free and repayable on demand and as such are included within other loans
+due in less than 1 year. The amount due to related parties at the year end is £47,382,651 (2023 -
+£30,482,651).
+- 38 -
+The Huddersfield Town Association Football Club Limited
+
+Notes to the group financial statements (continued)
+
+For the year ended 30 June 2024
+
+29 Related party transactions (Continued)
+Entities over which the entity has control, joint control or significant influence
+Group and company
+During the year, sales were made to related parties of £8,163 (2023 - £21,276). There were also
+purchases from related parties of £1,679,014 (2023 - £1,564,802) and recharges from related
+parties of £347,030 (2023 - £319,531).
+Loan capital of £28,885 (2023 - £21,349) and interest of £7,327 (2023 - £6,111) was repaid to
+related parties during the year.
+At the year end, there are amounts due from related parties of £1,773,709 (2023 - £721,965) and
+amounts due to related parties of £102,632 (2023 - £130,180).
+Key management personnel of the entity or its parent (in the aggregate)
+Group and company
+During the year, ENil (2023 - £26,482,651) of other loans were transferred to entities with control
+over the group.
+Further loans of ENil (2023 - £12,500,000) were received from related parties in the year. There were
+also loan repayments of ENil (2023 - £5,252,177). The arnount due to related parties at the year end
+is ENil (2023 - £25,250,000).
+In the prior year, there were interest-free loans of £25.3m which were accounted for as financing
+transactions and discounted at 5% plus base rate. The final repayments of these loans were
+conditional on future events occurring. The discounting and ageing of these repayments were based
+on either the earliest or most likely date that the event could occur. The present value of the loans at
+the prior year end was £19,094,182 with notional interest of £1,954,783 being charged. In the
+current year these loans are no longer with key management personnel of the entity.
+Other related parties
+Other related parties relate to companies which are significantly influenced by key management
+personnel.
+During the year, there were purchases of £32,500 (2023 - ENil) from related parties. The amount due
+to related parties at the year end is £10,833 (2023 - ENil).
+Amounts of £Nil (2023 - £289,406) relating to rental leases were waived by other related parties
+during the year.
+
+30 Controlling party
+Kevin M Nagle was deemed the ultimate controlling party at the year end.
+
+31 Ultimate parent company
+Town FC LLC is regarded by the directors as being the company's ultimate parent company.
+Town FC LLC is a company organised in California, USA. The company's registered address is 4370
+Town Center Blvd, Suite #230, El Dorado Hills, CA, 95762.
+
+-39-
+The Huddersfield Town Association Football Club Limited
+
+Notes to the group financial statements (continued)
+
+For the year ended 30 June 2024 : ;
+
+. 32 Cash absorbed by group operations .
+2024 2023
+as restated
+; ; £ £
+Loss for the year after tax (14,975,853) (6,422,265)
+Adjustments for:
+Taxation credited (25,422) (5,235)
+Finance costs 2,046,645 2,216,639
+Finance income (304,143) (466,399)
+° Profit on sale of players less amounts written off (4,339,180) (8,884,088)
+Financing gains (38,495) (1,393,767)
+Amortisation and impairment of intangible assets 2,156,386 1,277,150 ~
+Depreciation and impairment of tangible fixed assets 1,693,188 1,791,386
+Movements in working capital:
+
+. Increase in stocks (43,588) (39,847)
+Increase in debtors (1,307,378) (1,393,878)
+(Decrease)/increase in creditors (871,426) 1,217,527
+Cash absorbed by operations (16,009,266) (12,102,777)
+
+33 Analysis of changes in net debt - group
+1 July 2023 Cash flows Other non- 30 June 2024
+cash changes
+£ £ £ £
+Cash at bank and in hand 4,448,087 418,995 - 4,867,082
+Borrowings excluding overdrafts (50,377,472) (14,362,445) (1,678,619) (66,418,536)
+(45,929,385) (13,943,450) (1,678,619) (61,551,454)
+34 Cash and cash equivalents
+The amounts disclosed on the Consolidated Cash Flow Statement in respect of cash and cash
+equivalents are in agreement with the amounts disclosed as cash at bank on the Consolidated
+Balance Sheet.
+35 Major non-cash transactions
+Included within the other non-cash changes in note 33 is £1,717,114 of notional interest charged due
+to the discounting of debts treated as financing transactions.
+Other non-cash changes also includes £38,495 of financing gains, which are detailed in note 4.
+- 40 -
+The Huddersfield Town Association Football Club Limited
+Notes to the group financial statements (continued)
+For the year ended 30 June 2024
+36 Prior period adjustment
+Reconciliation of changes in equity - group
+1 July 30 June
+2022 2023
+£ £
+Adjustments to prior year
+Restatement of non-company expenses as a debtor - 200,000
+Equity as previously reported (20,966,317) (25,174,131)
+Equity as adjusted (20,966,317) (24,974,131)
+Analysis of the effect upon equity
+Profit and loss reserves - 200,000
+Reconciliation of changes in loss for the previous financial period
+2023
+£
+Adjustments to prior year
+Restatement of non-company expenses as a debtor 200,000
+Loss as previously reported (6,622,265)
+Loss as adjusted (6,422,265)
+Reconciliation of changes in equity - company
+1 July 30 June
+2022 2023
+£ £
+Adjustments to prior year
+Restatement of non-company expenses as a debtor - 200,000
+Equity as previously reported (24,768,746) (28,517,848)
+Equity as adjusted (24,768,746) (28,317,848)
+Analysis of the effect upon equity
+Profit and loss reserves - 200,000
+; -41-
+The Huddersfield Town Association Football Club Limited
+Notes to the group financial statements (continued)
+For the year ended 30 June 2024 ;
+36 Prior period adjustment (Continued)
+Reconciliation of changes in loss for the previous financial period ,
+2023
+£
+Adjustments to prior year
+Restatement of non-company expenses as a debtor 200,000
+Loss as previously reported (6,163,553)
+Loss as adjusted (5,963,553)
+Notes to reconciliation
+The prior period adjustment of £200k relates to the restatement of amounts previously included
+within expenses which were not company costs. These amounts were reclassified to other debtors.
+; - 42 -
 

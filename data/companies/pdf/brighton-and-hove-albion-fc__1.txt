@@ -2,7 +2,7 @@ source: Companies House filing, brighton-and-hove-albion-fc__1.pdf
 document: BV7NkrroApFEo-y-Z9EWulxWgRvWte5F1LzFjZbY0zY
 made_up_date: 2025-06-30
 method: ocr
-pages_read: 12 of 37
+pages_read: 37 of 37
 
 Registration number: 00081077
 . The Brighton and Hove Albion Football Club
@@ -429,4 +429,1056 @@ position of the company and enable them to ensure that the financial statements 
 Companies Act 2006. They are also responsible for safeguarding the assets of the company and
 hence for taking reasonable steps for the prevention and detection of fraud and other irregularities.
 Page 10
+. The Brighton and Hove Albion Football Club Limited
+Independent Auditor's Report to the Members of The Brighton and Hove
+Albion Football Club Limited
+
+Opinion on the financial statements
+
+In our opinion the financial statements:
+
+* give a true and fair view of the state of the company's affairs as at 30 June 2025 and of its loss for :
+the year then ended;
+
++ have been properly prepared in accordance with United Kingdom Generally Accepted Accounting
+Practice; and .
+
++ have been prepared in accordance with the requirements of the Companies Act 2006.
+
+We have audited the financial statements of The Brighton and Hove Albion Football Club Limited (the
+
+‘company') for the year ended 30 June 2025, which comprise the Statement of Comprehensive :
+
+Income, the Statement of Financial Position, the Statement of Changes in Equity, and Notes to the
+
+Financial Statements, including a summary of significant accounting policies. The financial reporting
+
+framework that has been applied in their preparation is applicable law and United Kingdom
+
+Accounting Standards, including Financial Reporting Standard 102 The Financial Reporting Standard
+
+applicable in the UK and Republic of Ireland (United Kingdom Generally Accepted Accounting
+
+Practice). ,
+
+Basis for opinion
+
+We conducted our audit in accordance with International Standards on Auditing (UK) (ISAs (UK)) and
+
+applicable Jaw. Our responsibilities under those standards are further described in the auditor's
+
+responsibilities for the audit of the financial statements section of our report. We believe that the audit
+
+evidence we have obtained is sufficient and appropriate to provide a basis for our opinion.
+
+Independence
+
+We are independent of the company in accordance with the ethical requirements that are relevant to
+
+our audit of the financial statements in the UK, Includiny tle FRC’s Ethical Standard, and we have
+
+fulfilled our other ethical responsibilities in accordance with these requirements.
+
+Conclusions relating to going concern :
+
+In auditing the financial statements, we have concluded that the directors' use of the going concern
+
+basis of accounting in the preparation of the financial statements is appropriate.
+
+Based on the work we have performed, we have not identified any material uncertainties tetating to
+
+events or conditions that, individually or collectively, may cast significant doubt on the company's
+
+ability to continue as a going concern for a period of at least twelve months from when the financial
+
+statements are authorised for issue.
+
+Our responsibilities and the responsibilities of the directors with respect to going concern are
+
+described in the relevant sections of this report.
+
+; , Page 11
+The Brighton and Hove Albion Football Club Limited
+Independent Auditor's Report to the Members of The Brighton and Hove
+Albion Football Club Limited (continued)
+Other information
+The directors are responsible for the other information. The other information comprises the
+information included in the annual report, other than the financial statements and our auditor's report
+thereon. Our opinion on the financial statements does not cover the other information and, except to
+the extent otherwise explicitly stated in our report, we do not express any form of assurance
+conclusion thereon.
+Our responsibility is to read the other information and, in doing so, consider whether the other
+information is materially inconsistent with the financial statements or our knowledge obtained in the
+. course of the audit or otherwise appears to be materially misstated. If we identify such material
+
+inconsistencies or apparent material misstatements, we are required to determine whether this gives
+rise to a material misstatement in the financial statements themselves. If, based on the work we have
+performed, we conclude that there is a material misstatement of this other information, we are
+required to report that fact.
+We have nothing to report in this regard.
+Other Companies Act 2006 reporting
+In our opinion, based on the work undertaken in the course of the audit:
+* the information given in the Strategic Report and Directors' Report for the financial year for which
+
+the financial statements are prepared is consistent with the financial statements; and
+* the Strategic Report and Directors’ Report have been prepared in accordance with applicable legal
+
+requirements. ,
+In the light of the knowledge and understanding of the company and its environment obtained in the
+course of the audit, we have not identified material misstatements in the Strategic Report or the
+Directors' Report.
+We have nothing to report in respect of the following tnalters in relation to which the Companies Act
+2006 requires us to report to you if, in our opinion:
+* adequate accounting records have not been kept, or returns adequate for our audit have not been
+
+received from branches not visited by us; or
++ the financial statements are not in agreement with the accounting records and returns; or
+* certain disclosures of directors’ remuneration specified by law are not made; or
++ we have not received all the information and explanations we require for our audit.
+Responsibilities of directors
+As explained more fully in the Statement of Directors’ Responsibilities, the directors are responsible
+for the preparation of the financial statements and for being satisfied that they give a true and fair
+view, and for such internal control as the directors determine is necessary to enable the preparation of
+financial statements that are free from material misstatement, whether due to fraud or error.
+In preparing the financial statements, the directors are responsible for assessing the company's ability
+to continue as a going concern, disclosing, as applicable, matters related to going concern and using
+the going concern basis of accounting unless the directors either intend to liquidate the company or to
+cease operations, or have no realistic alternative but to do so.
+
+Page 12
+The Brighton and Hove Albion Football Club Limited
+Independent Auditor's Report to the Members of The Brighton and Hove
+Albion Football Club Limited (continued)
+
+Auditor's responsibilities for the audit of the financial statements
+
+Our objectives are to obtain reasonable assurance about whether the financial statements as a whole
+
+are free from material misstatement, whether due to fraud or error, and to issue an auditor's report
+
+that includes our opinion. Reasonable assurance is a high level of assurance, but is not a guarantee
+
+that an audit conducted in accordance with ISAs (UK) will always detect a material misstatement
+: when it exists. Misstatements can arise from fraud or error and are considered material if,. individually
+
+or in the aggregate, they could reasonably be expected to influence the economic decisions of users
+
+taken on the basis of these financial statements.
+
+Extent to which the audit was capable of detecting irregularities, including fraud :
+
+Irregularities, including fraud, are instances of non-compliance with laws and regulations. We design
+
+procedures in line with our responsibilities, outlined above, to detect material misstatements in respect
+
+of irregularities, including fraud. The extent to which our procedures are capable of detecting
+
+irregularities, including fraud is detailed below:
+
+Non-compliance with laws and regulations
+
+Based on: :
+
+* Our understanding of the Company and the industry in which it operates;
+
++ Discussion with management and those charged with governance; and
+
+* Obtaining an understanding of the Company's policies and procedures regarding compliance with
+
+jaws and regulations
+
+we considered the significant laws and regulations to be UK GAAP and the Companies Act 2006.
+
+. The Company is also subject to laws and regulations where the consequence of non-compliance
+could have a material effect on the amount or disclosures in the financial statements, for example
+through the imposition of fines or litigations. We identified such laws and regulations to be the health
+and safety legislation and the Bribery Act 2010, as well as compliance with UEFA Financial Fair Play,
+the Premier League Handbook and the Football Association rules.
+
+Our procedures in respect of the above included:
++ Review of minutes of meetings of those charged with governance for any instances of
+non-compliance with laws and regulations;
+. * Review of correspondence with tax authorities for any instances of non-compliance with laws and
+regulations;
+. ¢ Review of financial statement disclosures and agreeing to supporting documentation; and
+: + Review of legal expenditure accounts to understand the nature of expenditure incurred.
+: Fraud
+We assessed the susceptibility of the financial statements to material misstatement, including fraud.
+Our risk assessment procedures included:
++ Enquiry with management and those charged with governance regarding any known or suspected
+instances of fraud;
+* Obtaining an understanding of the Company's policies and procedures relating to:
+- Detecting and responding to the risks of fraud; and
+- Internal controls established to mitigate risks related to fraud.
+Page 13
+; The Brighton and Hove Albion Football Club Limited
+Independent Auditor's Report to the Members of The Brighton and Hove
+Albion Football Club Limited (continued)
+
++ Review of minutes of meetings of those charged with governance for any known or suspected :
+instances of fraud;
+
++ Discussion amongst the engagement team as to how and where fraud might occur in the financial
+statements;
+
+* Performing analytical procedures to identify any unusual or unexpected relationships that may
+indicate risks of material misstatement due to fraud; and
+
+* Considering remuneration incentive schemes and performance targets and the related financial
+statement areas impacted by these.
+
+Based on our risk assessment, we considered the areas most susceptible to fraud to be management ,
+
+override of controls.
+
+Our procedures in respect of the above included:
+
+* Testing a sample of journal entries throughout the year that met a defined risk criteria, and an
+additional subset of journal entries from the residual population, by agreeing to supporting
+documentation; and
+
++ Assessing significant estimates made by management for bias.
+
+We also communicated relevant identified laws and regulations and potential fraud risks to ail
+
+engagement team members who were all deemed to have appropriate competence and capabilities
+
+and remained alert to any indications of fraud or non-compliance with laws and regulations throughout
+the audit.
+
+Our audit procedures were designed to respond to risks of material misstatement in the financial
+
+statements, recognising that the risk of not detecting a material misstatement due to fraud is higher :
+
+than the risk of not detecting one resulting from error, as fraud may involve deliberate concealment
+
+by, for example, forgery, misrepresentations or through collusion. There are inherent limitations in the
+
+audit procedures performed and the further removed non-compliance with laws and regulations ie
+
+from the events and transactions reflected in the financial statements, the less likely we are to
+
+become aware of it.
+
+A further description of our responsibilities is available on the Financial Reporting Council's website
+
+at: www. fre.org.uk/auditorsresponsibilities. This description forms part of our auditor's report.
+
+Page 14
+‘ The Brighton and Hove Albion Football Club Limited
+Independent Auditor's Report to the Members of The Brighton and Hove
+Albion Football Ciub Limited (continued)
+Use of our report
+This report is made solely to the company’s members, as a body, in accordance with Chapter 3 of
+Part 16 of the Companies Act 2006. Our audit work has been undertaken so that we might state to the
+company’s members those matters we are required to state to them in an auditor's report and for no
+other purpose. To the fullest extent permitted by law, we do not accept or assume responsibility to
+anyone other than the company and the company’s members as a body, for our audit work, for this
+report, or for the opinions we have formed.
+DocuSigned by:
+lan Clayden (Senior Statutory Auditor)
+For and on.behalf of BDO LLP, Statutory Auditor
+London, UK
+Date: 17 January 2026 ,
+BDO LLP is a limited liability partnership registered in England and Wales (with registered number
+0C305127). .
+Page 15
+The Brighton and Hove Albion Football Club Limited
+Statement of Comprehensive Income for the Year Ended 30 June 2025
+Operations
+excluding (As restated)
+player Player
+trading trading Total Total
+2025 2025 2025 2024
+Note £000 £000 £000 £000
+, Turnover 3 221,063 - 221,063 221,293
+Cost of sales (6,625) - (6,625) (6,681)
+Gross profit 214,438 - 214,438 214,612
+Operating expenses (225,814) (81,840) (307,654) (242,644)
+Player trading - 56,911 56,911 110,295
+Other operating income 4 5,000 : 5,000 2,450
+Operating (loss)/profit
+before interest and
+taxation 5 (6,376) (24,929) (31,305) 84,713
+Interest receivable and
+similar income 9 1,803 4,314 6,117 7,289
+Interest payable and similar
+‘ expenses 10 (534) (6,283) (6,817) (3.745)
+1,269 (1,969) (700) 3,544
+'(Loss)/profit before - 7
+taxation (6,107) (26,898) (32,005) 88,257
+Tax on (loss)/profit 11 3,400 : 3,400 (14,888)
+(Loss)/profit after taxation (1,707) (26,898) (28,605) 73,369
+Other comprehensive
+income : - -—
+Total comprehensive .
+income for the year (1,707) (26,898) (28,605) 73,369
+The above results were derived from continuing operations.
+The company has no recognised gains or losses for the year or comparative period other than those
+included in the statement of comprehensive income.
+The notes on pages 19 to 35 form an integral part of these financial statements.
+Page 16
+The Brighton and Hove Albion Football Club Limited
+(Registration number: 00081077)
+Statement of Financial Position as at 30 June 2025
+Note
+(As restated) (As restated)
+2025 2025 2024 2024
+£000 £000 £000 £000
+Fixed assets
+Intangible assets 12 288,910 167,896
+Tangible assets 13 3,853 2,909
+292,763 170,805
+Current assets ;
+Stocks “14 3,383 574
+Debtors: amounts falling due
+after more than one year 15 16,170 26,443
+Debtors: amounts falling due
+within one year 15 185,381 187,233
+Cash at bank and in hand 16 39,836 14,966
+244,770 229,216
+Creditors: Amounts falling :
+due within one year 17 (494,357) (369,466)
+Net current liabilities (249,587) (140,250)
+Total assets less current
+liabilities 43,176 30,555
+Creditors: Amounts falling
+due after more than one
+year 17 (61,579) (16,953)
+Provisions for liabilities 20 (10,970) (14,370)
+Net liabilities (29,373) (768)
+Capital and reserves
+Called up share capital 18 105 7 105
+Capital redemption reserve 19 8 8
+Retained earnings 419 (29,486) (881) ,
+Shareholders’ deficit (29,373) (768)
+Approved and authorised by the Board on 7 January 2026 and signed on its behalf by:
+Director
+The notes on pages 19 to 35 form an integral part of these financial statements.
+Page 17
+The Brighton and Hove Albion Football Club Limited
+Statement of Changes in Equity for the Year Ended 30 June 2025
+Capital
+redemption Retained
+Share capital reserve earnings Total
+£000 £000 £000 £000
+At 1 July 2024 105 8 (23,778) (23,665)
+Prior period adjustment (note
+27) - : 22,897 22,897
+At 1 July 2024 (As restated) 105 8 (881) (768)
+Loss for the year - - (28,605) (28,605)
+At 30 June 2025 105 8 (29,486) (29,373)
+Capital
+redemption Retained
+Share capital reserve earnings Total
+£000 £000 £000 £000
+At 1 July 2023 105 8 (79,843) (79,730)
+Prior period adjustment (note
+27) : - §,593 5,593
+At 1 July 2023 (As restated) 105 8 (74,250) (74,137)
+Profit for the year - - 73,369 73,369
+At 30 June 2024 105 8 (881) (768)
+The notes on pages 19 to 35 form an integral part of these financial statements.
+Page 18
+The Brighton and Hove Albion Football Club Limited
+Notes to the Financial Statements for the Year Ended 30 June 2025
+1 Accounting policies
+The Brighton and Hove Albion Football Club Limited is a private company limited by share capital,
+incorporated in England and Wales under the Companies Act. The address of the registered office is
+given on the contents page and the nature of the company's operations and its principal activities are
+set out in the strategic report. The financial statements have been prepared in accordance with FRS
+102, the Financial Reporting Standard applicable in the United Kingdom and the Republic of Ireland.
+These financial statements are presented in Pounds Sterling as this is the currency of the primary
+economic environment in which the company operates and is rounded to the nearest thousand.
+The preparation of financial statements in compliance with FRS 102 requires the use of certain critical
+accounting estimates. It also requires management to exercise judgement in applying the company's
+accounting policies (see note 2).
+The following principal accounting policies have been applied:
+Financial reporting standard 102 - reduced disclosure exemptions , ,
+The company has taken advantage of the following disclosure exemptions in preparing these financial
+statements, as permitted by the FRS 102 “The Financial Reporting Standard applicable in the UK and
+Republic of Ireland”: :
+- the requirements of Section 4 Statement of Financial Position paragraph 4.12(a)(iv);
+- the requirements of Section 7 Statement of Cash Flows;
+- the requirements of Section 3 Financial Statement Presentation paragraph 3.17(d);
+- the requirements of Section 11 Financial Instruments paragraphs 11.41(b), 11.41(c), 11.41(e),
+11.41(f), 11.42, 11.44 to 11.46, 11.47, 11.48(a)(iii), 11.48(a)(iv), 11.48(b) and 11.48(0);
+- the requirements of Section 12 Other Financial Instruments paragraphs 12.26 to 12.27, 12.29(a),
+12.29(b) and 12.29A; and
+- the requirements of Section 33 Related Party Disclosures paragraph 33.7.
+This information is included in the consolidated financial statements of Brighton and Hove Aibion
+Holdings Limited as at 30 June 2025 and these financial statements may be obtained from
+Companies House.
+. Page 19
+The Brighton and Hove Albion Football Ciub Limited
+Notes to the Financial Statements for the Year Ended 30 June 2025 (continued)
+1 Accounting policies (continued)
+Going concern
+For the year ended 30 June 2025 the company made a loss after tax of £28.6m and has net current
+liabilities of £249.6m and net liabilities of £29.4m, including £336.1m owing to the parent undertaking.
+In assessing the appropriateness of the going concern assumption, the Directors have produced a
+detailed base case and severe but reasonably plausible downside scenario cash flow forecast which
+extend to no less than June 2027. The Club's 2025/26 season is expected to consolidate the
+continued good work that is being produced on and off the pitch, whilst aspiring to break even both
+before and after player trading. :
+The Club made significant player disposals in the 2023/24 and 2024/25 seasons which, because of
+the timing of deferred consideration, aid cash flows moving forwards. The 2024/25 season and
+2025/26 season to date have seen the Club investing heavily in the playing squad to continue to push
+for sustained Top 10 finishes in the Premier League and further European campaigns if possible.
+Albeit discretionary, this, together with the consistent investment in the infrastructure and general
+staffing of the business does put pressure on cash flows and as such the Club continues to model
+longer term scenarios for many different outcomes.
+The Club benefits from the support of the principal shareholder of its parent undertaking and the
+Board of the parent company have received a committed letter of support from Mr Bloom expressing
+his intention to continue to provide such support, in the form of non-recall of existing loans and the
+provision of additional funding if required. Management forecasts do indicate the potential need for
+further funding from Mr Bloom during the going concern review period depending on various as yet
+unknown outcomes. In light of this financial commitment, and the Board’s own considerations with
+regard to the availability of such support. the directors have not identified a material uncertainty that
+may cast significant doubt over the Club's ability to continue as a going concern for the foreseeable
+future. .
+With Premier League activities ongoing, the Directors remain confident that the club continues to be
+operated within the financial means and intentions of its owner. As such, the Directors have
+concluded that it is appropriate for the financial statements to be prepared on the going concern basis.
+
+Page 20
+The Brighton and Hove Albion Football Club Limited
+Notes to the Financial Statements for the Year Ended 30 June 2025 (continued)
+1 Accounting policies (continued)
+Revenue recognition
+Revenue is recognised to the extent that it is probable that the economic benefits will flow to the
+company and the revenue can be reliably measured. Revenue is measured as the fair value of the
+consideration received or receivable, excluding discounts, rebates, value added tax and other sales
+taxes.
+Match day revenue is recognised on the day the games are played. The revenue received in advance
+for season tickets is deferred and released in the season the ticket was purchased for, in line with
+home games played.
+Sponsorship and similar commercial income is recognised over the duration of the respective
+contracts in line with goods and services provided.
+Retail revenue and catering income is recognised at the point goods and services are delivered to the
+customer.
+Facility fees for live television coverage of games are recognised when earned.
+Premier League and central distribution revenue is recognised on an accruals basis in line with games
+played.
+Revenue generated from players on loan to other clubs is included in other income.
+
+Page 21
+The Brighton and Hove Albion Football Club Limited
+
+Notes to the Financial Statements for the Year Ended 30 June 2025 (continued)
+
+1 Accounting policies (continued)
+
+Intangible assets
+
+Player registrations
+
+The costs associated with the acquisition of players’ registrations are capitalised as intangible fixed
+
+assets, with cost discounted to present value at an appropriate market rate for leveraged player.
+
+receivables, where payments are deferred beyond 12 months of the acquisition date.
+
+Costs of players’ registrations comprise transfer fees and solidarity payments. Payments of transfer
+
+fees based on future performance criteria are recognised when the criteria are assessed as being
+
+probable that they will be met. In most cases this is when the condition has been met. Player
+
+registration costs are fully amortised in equal instalments over the period of the players’ individual
+
+contracts. Where a player's contract is extended beyond its initial period, amortisation is calculated
+
+over the period of the extended contract from the date on which it is signed. All amortisation is
+
+tecognised within operating expenses in the statement of comprehensive income. Players’
+
+registrations are written down for impairment in certain circumstances when the carrying amount is
+
+assessed as exceeding the amount recoverable through use or sale. See below for accounting policy
+
+relating to impairment.
+
+The profit or loss on disposal of a player's registration is calculated as the difference between the
+
+present vaiue of the transfer fee received less the net book value at the date of sale and less any
+
+direct costs of the transfer. Receipts of transfer fees based on the future performance of the
+: transferred player or the buying club are recognised when the future criteria are met or are virtually
+
+certain to be met.
+
+Impairment of player registrations
+
+The carrying amounts of player registration costs are reviewed at each reporting date to determine
+
+whether there is any indication of impairment. If any such indication exists, then the asset's
+
+recoverable amount is estimated.
+
+The directors do not consider it possible to determine the value in use of an individual player in
+
+isolation, as individual players cannot generate cash flows independently. However, in circumstances
+
+where it is apparent that, as at the period end date, the player would not be available for selection to
+
+play for the Club, such as permanent injury or a firm intention to sell or loan the player (without further
+
+selection), the player is taken outside of the wider football club cash generating-unit (“CGU”) and
+
+valued on a recoverable amount basis, being the directors’ best estimate of the player's fair value less
+
+cost to sell. In the case of a permanent injury the recoverable amount is assessed with reference to
+
+insurance values. Any resulting impairment charge is made in operating expenses. An impairment
+
+loss is reversed if and only if the reasons for the impairment have ceased to apply.
+
+Where there is an impairment of a particular player's registration costs consideration is given to .
+
+whether there is simultaneously an onerous contract arising. Where onerous contracts exist, a
+
+provision is recognised equal to the net cost of exiting from the contract.
+
+Page 22
+The Brighton and Hove Albion Football Club Limited
+Notes to the Financial Statements for the Year Ended 30 June 2025 (continued)
+1 Accounting policies (continued)
+Tangible assets
+Tangible fixed assets under the cost model are stated at historical cost less accumulated depreciation
+and any accumulated impairment losses. Historical cost includes expenditure that is directly
+attributable to bringing the asset to the location and condition necessary for it to be capable of
+operating in the manner intended by management.
+At each reporting date the company assesses whether there is any indication of impairment. If such
+indication exists, the recoverable amount of the asset is determined which is the higher of its fair value
+less costs to sell and its value in use. An impairment loss is recognised where the carrying amount
+exceeds the recoverable amount.
+Depreciation is charged so as to allocate the cost of assets less their residual value over their
+estimated useful lives, using the straight-line method.
+Depreciation is provided on the following basis:
+Motor vehicles 25% straight line
+Fixtures, fittings and equipment : 20-33% straight line
+The assets’ residual values, useful lives and depreciation methods are reviewed, and adjusted |
+prospectively if appropriate, if there is an indication of a significant change since the last reporting
+date.
+Gains and losses on disposals are determined by comparing the proceeds with the carrying amount
+and are recognised in the Statement of Comprehensive Income.
+Stocks :
+Stock is stated at the lower of cost and net realisable value. Cost is based on the cost of purchase on
+a first in, first out basis.
+At each reporting date, stock is assessed for impairment. If stock is impaired, the carrying amount is’
+reduced to its selling price less costs to complete and sell. The impairment loss is recognised
+immediately in the Statement of Comprehensive Income.
+Debtors
+Short term debtors are measured at transaction price, less any impairment. Loans receivable are
+measured initially at fair value, net of transaction costs, and are measured subsequently at amortised
+cost using the effective interest method, less any impairment.
+Cash and cash equivalents
+Cash is represented by cash in hand and deposits with financial institutions repayable without penalty
+on notice of not more than 24 hours. Cash equivalents are highly liquid investments that mature in no
+more than three months from the date of acquisition and that are readily convertible to known
+amounts of cash with insignificant risk of change in value.
+
+Page 23
+; The Brighton and Hove Albion Football Club Limited
+
+Notes to the Financial Statements for the Year Ended 30 June 2025 (continued)
+
+1 Accounting policies (continued)
+
+Financial instruments
+
+The Company only enters into basic financial instrument transactions that result in the recognition of
+
+financial assets and liabilities like trade and other accounts receivable and payable, loans from banks
+
+and other third parties and loans from related parties. ‘
+
+Debt instruments (other than those wholly repayable or receivable within one year), including loans
+
+and other accounts receivable and payable, are initially measured at present value of the future cash
+
+flows and subsequently at amortised cost using the effective interest method. Debt instruments that
+
+are payable or receivable within one year, typically trade debtors and creditors, are measured, initially
+
+and subsequently, at the undiscounted amount of the cash or other consideration expected to be paid
+
+or received. However, if the arrangements of a short-term instrument constitute a financing
+
+transaction, like the payment of a trade debt deferred beyond normal business terms or financed at a
+
+rate of interest that is not a market rate or in case of an out-right short-term loan not at market rate,
+
+the financial asset or liability is measured, initially, at the present value of the future cash flow
+
+discounted at a market rate of interest for a similar debt instrument and subsequently at amortised
+
+cost.
+
+Financial assets that are measured at cost and amortised cost are assessed at the end of each
+
+reporting period for objective evidence of impairment. If objective evidence of impairment is found, an
+
+impairment loss is recognised in the Statement of Comprehensive Income.
+
+For financial assets measured at amortised cost, the impairment loss is measured as the difference
+
+between an asset's carrying amount and the present value of estimated cash flows discounted at the
+
+asset's original effective interest rate. If a financial asset has a variable interest rate, the discount rate
+
+for measuring any impairment loss is the current effective interest rate determined under the contract
+
+For financial assets measured at cost less impairment, the impairment loss is measured as the
+
+difference between an asset's carrying amount and best estimate of the recoverable amount, which is
+
+an approximation of the amount that the Company would receive for the asset if it were to be sold at
+
+the reporting date.
+
+Financial assets and liabilities are offset and the net amount reported in the Statement of Financial
+
+Position when there is an enforceable right to set off the recognised amounts and there is an intention
+
+to settle on a net basis or to realise the asset and settle the liability simultaneously.
+
+Creditors
+
+Short term creditors are measured at the transaction price. Other financial liabilities, including bank
+
+loans, are measured initially at fair value, net of transaction costs, and are measured subsequently at
+. amortised cost using the effective interest method.
+
+Defined contribution pension obligation
+
+The Company operates a defined contribution plan for its employees. A defined contribution pian is a
+
+pension plan under which the Company pays fixed contributions into a separate entity. Once the
+
+contributions have been paid the Company has no further payment obligations.
+
+The contributions are recognised as an expense in the Statement of Comprehensive income when
+
+they fall due. Amounts not paid are shown in accruals as a liability in the Statement of Financial
+
+Position. The assets of the plan are held separately from the Company in independently administered
+
+funds.
+
+Page 24
+The Brighton and Hove Albion Football Club Limited
+
+Notes to the Financial Statements for the Year Ended 30 June 2025 (continued)
+
+1 Accounting policies (continued)
+
+Provisions
+
+Provisions are made where an event has taken place that gives the company a legal or constructive
+
+obligation that probably requires settlement by a transfer of economic benefit, and a reliable estimate
+
+can be made of the amount of the obligation.
+
+Provisions are charged as an expense to the Statement of Comprehensive Income in the year that the
+
+company becomes aware of the obligation and are measured at the best estimate at the Statement of
+
+Financial Position date of the expenditure required to settle the obligation, taking into account relevant
+
+risks and uncertainties.
+
+When payments are eventually made, they are charged to the provision carried in the Statement of
+
+Financial Position.
+
+Interest income
+
+Interest income is recognised in the Statement of Comprehensive Income using the effective interest
+
+method.
+
+Tax
+
+Tax is recognised in the Statement of Comprehensive Income, except that a charge attributable to an
+
+item of income and expense recognised as other comprehensive income or to an item recognised
+
+directly in equity is also recognised in other comprehensive income or directly in equity respectively.
+
+The current income tax charge is calculated on the basis of tax rates and laws that have been
+
+enacted or substantively enacted by the reporting date in the countries where the Company operates
+
+and generates income.
+
+Deferred tax balances are recognised in respect of all timing differences that have originated but not
+
+reversed by the Statement of Financial Position date, except that:
+
+- the recognition of deferred tax assets is limited to the extent that it is probable that they will be
+
+recovered against the reversal of deferred tax liabilities or other future taxable profits; and
+
+- any deferred tax balances are reversed if and when all conditions for retaining associated tax .
+
+allowances have been met.
+
+Deferred tax balances are not recognised in respect of permanent differences except in respect of
+
+business combinations, when deferred tax is recognised on the differences between the fair values of
+
+assets acquired and the future tax deductions available for them and the differences between the fair :
+
+values of liabilities acquired and the amount that will be assessed for tax. Deferred tax is determined
+
+using tax rates and laws that have been enacted or substantively enacted by the reporting date.
+
+Player remuneration
+
+Signing on fees in respect of players contracts are expensed to the Statement of Comprehensive
+
+Income over the term of their contract. Remuneration of players is charged in accordance with the
+. terms of the applicable contractual arrangements. Bonuses and other short term benefits are
+
+recognised when services are rendered and there is a constructive or legal obligation to pay them.
+
+Page 25
+The Brighton and Hove Albion Football Club Limited
+Notes to the Financial Statements for the Year Ended 30 June 2025 (continued)
+2 Judgements in applying accounting policies and key sources of estimation uncertainty
+The preparation of the financial statements requires of management to make judgements, estimates
+and assumptions that affect the reported amounts in the financial statements. Management evaluates
+its estimates and judgements with reference to historical experience and expectations of future events
+and current market conditions.
+In preparing these financial statements, the directors have had to make the following judgements:
+Determine whether there are indicators of impairment of the company's tangible and intangible
+assets. Factors taken into consideration in reaching such a decision include the economic viability and
+expected future financial performance of the asset and where it is a component of a larger cash
+generating unit, the viability and expected future performance of that unit. Considerations relevant to
+the impairment of player registrations are described in note 1.
+3. Turnover
+The analysis of the company's turnover for the year by class of business is as follows:
+2025 2024
+£000 £000
+Matchday : 27,534 27,722
+Broadcasting 150,638 163,478
+Commercial 22,414 20,188
+Other 20,477 9,905
+221,063 221,293
+All turnover arose in the UK.
+4 Other operating income
+The analysis of the company's other operating income for the year is as follows:
+2025 2024
+£000 £000
+Other income 5,000 2,450
+5 Operating (loss)/profit
+Arrived at after charging
+2025 2024
+£000 £000
+Depreciation expense 1,410 1,397
+Amortisation expense 81,840 39,342
+Impairment loss - 2,784
+Pension and other post-employment benefit costs 456 539
+Operating lease expense | 1,449 1,422
+Page 26
+The Brighton and Hove Albion Football Club Limited
+Notes to the Financial Statements for the Year Ended 30 June 2025 (continued)
+6 Auditors’ remuneration
+: 2025 2024
+£000 £000
+Audit of the financial statements 71 68
+Other fees to auditors
+All other services 28 14
+7 = Staff costs
+The aggregate payroll costs (including directors’ remuneration) were as follows: . ;
+2025 2024
+£000 £000
+Wages and salaries 139,300 125,300
+Social security costs 18,923 16,396
+Pension costs, defined contribution scheme 456 539
+158,679 142,235
+The average number of persons employed by the company (including directors) during the year,
+analysed by category was as follows:
+2025 2024
+No. No.
+Player staff 93 97
+Non-playing staff - 939 1,063
+1,032 1,160
+Included in non-playing staff are 624 (2024 - 773) staff who are employed on a part-time basis.
+Page 27
+The Brighton and Hove Albion Football Club Limited
+Notes to the Financial Statements for the Year Ended 30 June 2025 (continued)
+8 Directors' remuneration :
+The directors’ remuneration for the year was as follows:
+2025 2024
+£000 £000 :
+Remuneration 3,463 3,784
+Contributions paid to money purchase schemes 63 60
+3,526 3,844
+During the year retirement benefits were accruing to 4 directors (2024 - 3) in respect of defined
+contribution pension schemes.
+In respect of the highest paid director:
+2025 2024
+£000 £000
+Remuneration - 2,657 3,195
+Company contributions to money purchase pension schemes 10 10
+Remuneration included base salary and both performance-related and long-term loyalty bonuses.
+9 Interest receivable and similar income
+2025 2024
+#00 . £000 _
+Interest income on bank deposits 1,803 1,428
+Unwinding of discount on transfer fees receivable 4,314 5,861
+8117,
+10 Interest payable and similar expenses
+2025 2024
+. £000 £000 .
+Interest on bank overdrafts and borrowings 534 976 7
+Unwinding of discount on transfer fees payable 6,283 2,769
+6,817 3,745
+Page 28
+The Brighton and Hove Albion Football Club Limited
+Notes to the Financial Statements for the Year Ended 30 June 2025 (continued)
+11. Taxation
+Tax charged/(credited) in the statement of comprehensive income
+(As restated)
+2025 2024 .
+£000 £000
+* Current taxation
+. UK corporation tax adjustment to prior periods - 518
+Deferred taxation :
+Arising from origination and reversal of timing differences (3,400) 14,370
+Tax (receipt)/expense in the income statement (3,400) 14,888
+The tax on profit before tax for the year is the same as the standard rate of corporation tax in the UK
+(2024 - higher than the standard rate of corporation tax in the UK) of 25% (2024 - 25%).
+The differences are reconciled below:
+2025 2024
+£000 £000
+(Loss)/profit before tax ‘ (32,005) 88,257
+Corporation tax at standard rate (8,001) 22,064
+Fixed asset differences 127 (201) - .
+Expenses not deductible for tax purposes — : 57 100
+Group relief (832) (2,256)
+Adjustment to tax charge in previous period - current tax - 518
+Deferred tax not recognised - -(14,310)
+Reinvestment relief on player disposals 141 10,460
+Movement on unutilised tax losses 5,108 (1,487)
+Total tax (credit)/charge (3,400) 14,888
+At 30 June 2025, the company had approximately £207.3m (2024 - £200.5m) of trading losses to
+. carry forward.
+Page 29
+The Brighton and Hove Albion Football Club Limited
+Notes to the Financial Statements for the Year Ended 30 June 2025 (continued)
+12 Intangible assets
+Player
+registration
+£000
+Cost or valuation
+At1 July 2024 266,417
+Additions 210,155
+Disposals (34,988)
+At 30 June 2025 441,584
+Amortisation
+At 1 July 2024 98,521
+Amortisation charge 81,840
+Amortisation eliminated on disposals (27,687)
+At 30 June 2025 152,674
+Carrying amount ,
+. At 30 June 2025 288,910
+: At 30 June 2024 167,896 :
+13 Tangible assets :
+Fixtures and
+fittings
+£000
+Cost or valuation
+At 1 July 2024 . 15,522
+Additions 2,354
+At 30 June 2025 17,876
+Depreciation
+At 1 July 2024 12,613
+Charge for the year 1,410
+At 30 June 2025 14,023
+Carrying amount .
+At 30 June 2025 3,853
+At 30 June 2024 2,909
+Page 30
+The Brighton and Hove Albion Football Club Limited
+Notes to the Financial Statements for the Year Ended 30 June 2025 (continued)
+14 Stocks
+2025 2024
+£000 £000
+Goods for resale 3,383 574
+15 Debtors
+2025 2024
+Amounts falling due within one year £000 £000
+Trade debtors 16,690 14,528
+Transfers receivable within one year 47,894 86,207
+Amounts owed by related parties 117,071 79,631
+Other debtors 316 3,503
+Prepayments 3,411 3,364.
+185,381 187,233
+2025 2024
+Amounts falling due after more than one year £000 £000
+Transfers receivable after more than one year 16,170 26,443
+16,170 26,443
+Amounts owed by group undertakings are interest free and repayable on demand
+16 Cash and cash equivalents
+2025 2024
+£000 £000
+Cash at bank 39,836 14,966
+Page 31
+The Brighton and Hove Albion Football Club Limited
+Notes to the Financial Statements for the Year Ended 30 June 2025 (continued)
+17 Creditors ;
+2025 2024
+. . £000 £000
+Amounts falling due within one year
+Trade creditors 2,929 1,621
+Transfers payable 90,112 86,676
+Amounts due to related parties 336,069 229,200
+Social security and other taxes 16,003 6,698
+Other payables 765 875
+Accruals and deferred income 48,479 44,396
+494,357 369,466
+Amounts falling due after more than one year
+Transfers payable 61,579 16,953
+Amounts owed to group undertakings are interest free and repayable on demand *
+18 Share capital
+Allotted, called up and fully paid shares
+2025 2024
+. : No. 000 £000 No. 000 — £000
+, Ordinary shares of £0.25 each 320,932 80 320,932 80
+Ordinary A shares of £1 each 25,000 25 25,000 25
+345,932 105 345,932 105
+Rights, preferences and restrictions
+The rights to each class of share are the same.
+19 Reserves
+Capital redemption reserve
+The reserve represents the equity instruments of issued and subsequently reacquired treasury
+shares.
+Profit and loss account
+/ This reserve represents the cumulative losses of the company.
+Page 32
+: The Brighton and Hove Albion Football Club Limited
+Notes to the Financial Statements for the Year Ended 30 June 2025 (continued)
+20 Provisions for liabilities
+Deferred tax
+: (As restated)
+2025 2024
+£000 £000
+At beginning of year (14,370) -
+Charge for year 3,400 (14,370)
+Provision at end of year (10,970) (14,370)
+Deferred tax liabilities
+- The deferred tax liability is made up as follows:
+2025 2024
+: £000 £000
+Fixed asset timing differences 30,009 38,517
+Losses and other deductions (19,039) (24,147)
+10,970 14,370
+21 Commitments under operating leases
+At 30 June the company had future minimum lease payments under non-cancellable operating leases
+as follows:
+2025 2024
+£000 £000
+Not later than one year 1,352 1,350
+Later than one year and not later than five years 5,532 5,376
+Later than five years 142,842 144,175
+149,726 150,901
+22 Contingencies
+Under the terms of contracts with other football clubs in regard to player transfers, additional fees
+could become receivable and payable if certain defined performance criteria are fulfilled. The
+maximum that could be receivable is £48,917,000 (2024 - £58,408,000) and the maximum that could
+become payable is £64,991,000 (2024 - £56,383,000).
+Additionally, no provision is included in the accounts for signing on fees, as at 30 June 2025, of
+£8,846,000 (2024 - £6,702,000) which would become due to certain players if certain conditions are
+met.
+Page 33
+The Brighton and Hove Albion Football Club Limited
+
+Notes to the Financial Statements for the Year Ended 30 June 2025 (continued)
+
+23 Pension and other schemes
+
+The company operates a defined contribution pension scheme. The assets of the scheme are held
+
+separately from those of the company in an independently administered fund. The pension cost
+
+charge for the year represents contributions payable by the company to the scheme and amounted to
+
+£456,000 (2024 - £539,000). Contributions totalling ENil (2024 - Nil) were payable to the fund at the
+
+balance sheet date.
+
+24 Related party transactions . .
+Brighton & Hove Albion Holdings Limited
+
+At the year end, the company owed £336,069,000 (2024 - £229,200,000) to its parent company.
+
+The Community Stadium Limited
+
+The company rents the American Express Community Stadium and the American Express Elite
+
+Football Performance Centre for a rent of £1,333,000 (2024 - £1,333,000) per annum from a fellow
+
+subsidiary, The Community Stadium Limited. At the year end The Community Stadium Limited owed
+
+the company £89,958,000 (2024 - £59,941,000).
+
+Brighton & Hove Albion Women's Football Club Limited
+
+The company pays costs on behalf of a fellow subsidiary, Brighton & Hove Albion Women's Football
+
+Club Limited. At the year end, Brighton & Hove Albion Women's Football Club Limited owed the
+
+company £27,113,000 (2024 -£19,688,000).
+
+Brighton and Hove Albion FC Foundation (formerly Albion in the Community)
+
+The company has a charitable arm, Brighton and Hove Albion FC Foundation (formerly Albion in the
+
+Community). At the year end, the charity owed the company £179,000 (2024 - £64,000), and the
+
+company owed the charity £166,000 (2024 - £33,000). :
+CCI Accountants
+
+The company uses CCI Accountants, a firm in which RF Comer (director) is a partner, for advisory
+
+services relating to capital projects. During the year, the company paid CCI Accountants £7,750 (2024
+
+- ENil) for these services. At the year end, CCI Accountants were owed £9,300 (2024 - ENil) by the
+
+company. ; ;
+25 Controlling party
+
+. The company's immediate parent and ultimate parent company is Brighton & Hove Albion Holdings
+
+Limited, a company incorporated in England and Wales, by virtue of its 99.98% holding of the
+
+Company's issued share capital. As at 30 June 2025, The ultimate controlling party is A Bloom by
+
+virtue of his 96.92% shareholding in the parent company. ;
+The financial statements of Brighton & Hove Albion Holdings Limited, the group that include the
+
+results of the company may be obtained from the Registrar of Companies, Companies House, Crown
+
+Way, Cardiff, CF 14 3UZ.
+. Page 34
+The Brighton and Hove Albion Football Club Limited
+Notes to the Financial Statements for the Year Ended 30 June 2025 (continued)
+26 Post balance sheet events
+Since the year end, the company has entered into transfer agreements for confirmed contracted net
+transfer fees receivable of £55.1m.
+27 Prior period adjustment
+The company had not recognised a deferred tax asset of £22,897k as at 30 June 2024 (2023:
+£5,593k) for historic losses that would be available for offset against deferred tax liabilities on rolled
+over gains on disposal of player registrations. Upon review, and notwithstanding the inherent
+uncertainty as to whether these losses will be utilised against existing and expected rollover claims, it
+is concluded that an error occurred and these assets should have been recognised. Accordingly, the
+above assets have been recognised as at the above dates. The impact on the FY24 income
+statement has been to credit the tax charge by £17,304k.
+
+Page 35 :
 

@@ -2,7 +2,7 @@ source: Companies House filing, blackburn-rovers-fc__1.pdf
 document: 562CJRCG_TdJBUyKhcBBwTh_RdNQKGtXWpMPHQaPlhc
 made_up_date: 2025-06-30
 method: ocr
-pages_read: 12 of 33
+pages_read: 33 of 33
 
 ‘
 THE BLACKBURN ROVERS FOOTBALL AND ATHLETIC LIMITED
@@ -395,4 +395,806 @@ We Identify and assess the risks of material misstatement of the financial state
 then design and perform audit procedures responsive to those risks, including obtaining audit evidence that is sufficient
 and appropriate to provide a basis for our opinion.
 ee
+Page 11
+INDEPENDENT AUDITORS’ REPORT TO THE MEMBERS OF THE BLACKBURN ROVERS FOOTBALL AND ATHLETIC
+LIMITED - continued
+Identifying and assessing potential risks related to irregularities
+In identifying and assessing risks of material misstatement in respect of irregularities, including fraud and non-compliance
+with laws and regulations, we have considered the following:
+« the nature of the industry and sector, control environment and business performance including the design of the
+company's remuneration policies, key drivers for directors’ remuneration, bonus levels and performance targets;
+* — results of our enquiries of management about their own identification and assessment of the risks of irregularities;
+« the matters discussed among the audit engagement team and relevant specialists regarding how and where fraud :
+might occur in the financial statements and any potential indicators of fraud;
+* any matters we identified having obtained anu reviewed the company's documentation of their policies procedures
+relating to:
+« identifying, evaluating and complying with laws and regulations and whether they were aware of any instances of
+non-compliance;
+* detecting and responding to the risks of fraud and whether they have knowledge of any actual, suspected or
+alleged fraud;
+«the internal controls established to mitigate risks of fraud or non-compliance with laws and regulations.
+Asa result of these procedures, we considered the opportunities and incentives that may exist within the organisation for
+fraud and identified the greatest potential for fraud in the following areas: timing of recognition of commercial income,
+posting of unusual journals and complex transactions; and manipulating the company's performance profit measures and
+other key performance indicators ta meet remuneration targets and externally communicated targets, and English Footbali
+League Profit and Sustainability requirements. In common with all audits under ISAs (UK), we are also required to perform
+specific procedures to respond to the risk of management override.
+t
+: We also obtained an understanding of the legal and regulatory frameworks that the company operates in, focusing on
+: provisions of those laws and regulations that had a direct effect on the determination of material amounts and disclosures
+in the financial statements. The key laws and regulations we considered in this context included UK Companies Act,
+employment law, health and safety, pensions legislation, tax legislation and football governing body regulations.
+Audit response to risks identified
+Our procedures to respond to risks identified included the following:
+© reviewing the financial statement disclosures and testing to supporting documentation to assess compliance with
+provisions of relevant laws and regulations described as having a direct effect on the financial statements;
+« — enquiring of management concerning actual and potential litigation and claims;
+* — performing analytical procedures te identify any unusual or unexpected relationships that may indicate risks of
+material misstatement due to fraud;
+¢ reading minutes of meetings of those charged with governance and reviewing correspondence with HMRC; and
+¢ in addressing the identified risks of fraud through management override of controls, testing the appropriateness of
+journal entries and other adjustments; assessing whether the judgements made in making accounting estimates are
+Indicative of a potential bias; and evaluating the business rationale of any significant transactions that are unusual or
+outside the normal course of business.
+Owing to the inherent limitations of an audit, there is an unavoidable risk that we may not have detected some material
+misstatements in the financial statements, even though we have properly planned and performed our audit in accordance
+with auditing standards. For example, the further removed non-compliance with laws and regulations (irregularities) is
+from the events and transactions reflected in the financial statements, the less likely the inherently limited procedures
+required by auditing standards would identify it. In addition, as with any audit, there remained a higher risk of non-
+detection of irregularities, as these may involve collusion, forgery, intentional omissions, misrepresentations, or the
+override of internal controls. We are not responsible for preventing non-compliance and cannot be expected to detect
+non-compliance with all faws and regulations.
+oe
+Page 12
+INDEPENDENT AUDITORS’ REPORT TO THE MEMBERS OF THE BLACKBURN ROVERS FOOTBALL AND ATHLETIC
+LIMITED - continued
+A further description of our responsibilities is available on the Financial Reporting Councils website at:
+https://www.fre.org.uk/auditorsrespansibilities. This description forms part of our auditor's report.
+Use of our report
+This report is made solely to the company’s members, as a body, in accordance with Chapter 3 of Part 16 of the
+Companies Act 2006. Our audit work has been undertaken so that we might state to the company’s members those
+matters we are required to state to them in an auditor's report and for no other purpose. To the fullest extent
+permitted by law, we do not accept or assume responsibility to anyone other than the company and the company’s
+members, as a body, for our audit work, for this report, or for the opinions we have formed.
+PM+M Solu&as fr Beciness CLP
+Simon Read BA (Hons) BFP ACA
+. (Senior Statutory Auditor)
+For and on behalf of PM+M Solutions for Business LLP
+: Chartered Accountants
+. Statutory Auditor
+3D _pecember 2025 :
+New Century House
+Greenbank Technology Park
+Challenge Way :
+Blackburn
+Lancashire
+8B1SQB
+a
+THE BLACKBURN ROVERS FOOTBALL AND ATHLETIC LIMITED Page 13
+STATEMENT OF COMPREHENSIVE INCOME
+YEAR ENDED 30 JUNE 2025. . _. . a
+Note 2025 2025 2025 2024
+£ £ £ £
+. Operations
+excluding
+trading of Trading of
+. tangibte/ tanglble/ ,
+intangible Intangible
+fixed assets fixed assets Total Total
+TURNOVER 4 23,697,198 . 23,697,198 21,395,497
+Operating expenses - non exceptional 42,685,707 2,421,226 45,106,933 40,891,947
+: OPERATING LOSS 5 (18,988,509) ( 2,421,226} (21,409,735) = ( 19,496,450}
+Profit on disposal of intangible fixed assets ; 8 : 13,020,422 13,020,422 23,561,842
+(LOSS) / PROFIT BEFORE INTEREST AND TAXATION (28,988,509) 10,599,196 (8,389,313) 4,065,392
+Interest payable 9 (2,040,660) (839,728)
+Interest receivable , 9 6,785" 108,574
+(LOSS) / PROFIT BEFORE TAXATION { 10,423,188) 3,334,238
+Taxation 10 oo. : :
+{LOSS) / PROFIT FOR THE YEAR (10,423,188). 3,334,238
+The notes on pages 17 to 31 form an integral part of these financial statements.
+a E
+THE BLACKBURN ROVERS FOOTBALL AND ATHLETIC LIMITED Page 14
+BALANCE SHEET
+AS AT 30 JUNE 2025 _
+Note 2025 2025 2024 2024
+£ £ £ £
+FIXED ASSETS
+Intangible fixed assets 11 4,730,324 3,183,432
+Tangible fixed assets 12 22,265,304 23,017,335
+Investments 13 100 100
+26,995,728 26,200,867
+: CURRENT ASSETS
+Stock 14 885,442 833,689
+Debtors - amounts falling due within one year 15- 6,502,724 2,902,964
++ amounts falling due after one year 16 2,997,716 12,290,000
+Cash at bank and in hand 7 263,666 582,607
+10,649,548 16,609,260
+CREDITORS:
+
+- amounts falling due within one year 18 — (164,272,999) (159,131,685).
+
+NET CURRENT LIABILITIES (153,623,451) { 142,522,425)
+TOTAL CURRENT ASSETS LESS CURRENT LIABILITIES { 126,627,723) (116,321,558)
+CREDITORS:
+
+-amounts falling due after one year 19 ( 1,279,766) (1,091,422)
+DEFERRED GRANTS 2 .__. (646,271) ; (717,592)
+NET LIABILITIES (128,553,760)
+CAPITAL AND RESERVES
+Called up share capital 23 198,227,484 198,227,484
+Revaluation reserve 24 1,295,825 1,295,825
+Profit and loss account 24 { 328,077,069) ( 317,653,881}
+
+SHAREHOLDERS’ DEFICIT { 128,553,760} (118,130,572)
+The financial statements were approved by the board on 29” December 2025 and signed on its behatf by:
+
+ma Director
+
+The Blackburn Rovers Football and Athletic Limited (Registered no. 53482)
+
+The notes on pages 17 to 31 form an integral part of these financial statements.
+THE BLACKBURN ROVERS FOOTBALL AND ATHLETIC LIMITED Page 15
+STATEMENT OF CHANGES IN EQUITY
+YEAR ENDED 30 JUNE 2025 =
+Share Revaluation Proft and Loss Total
+Note capital reserve account equity
+: € € £ £
+At L July 2024 . 198,227,484 1,295,825 (317,653,881) (118,130,572)
+Comprehensive lass for the year
+Loss for the year os - (10,423,188) (10,423,188)
+At 30 June 2025 198,227,484 _ 1,295,825 _ (328,077,069) __( 128,553,760)
+Share Revaluation Proft and Loss Total
+capital feserve account equity
+€ £ £ £
+At 1 July 2023 198,227,484 1,295,825 (320,988,119) { 121,464,810)
+Comprehensive loss for the year
+Profit for the year - - 3,334,238 3,334,238
+At 30 June 2024 198,227,484 __ 1,295,825 _ (317,653,881) _( 118,130,572)
+The notes on pages 17 to 31 form an integral part of these financial statements.
+a
+THE BLACKBURN ROVERS FOOTBALL AND ATHLETIC LIMITED Page 16
+STATEMENT OF CASH FLOWS
+YEAR ENDED 30 JUNE 2025 :
+2025 2024
+£ £
+CASH FLOWS FROM OPERATING ACTIVITIES
+(Loss) / Profit for the financial year (10,423,188) 3,334,238
+Adjustments for:
+Amortisation of intangible fixed assets 2,421,226 2,302,540
+; Profit on sale of intangible fixed assets (13,020,422) = ( 23,561,842)
+Depreciation of tangible fixed assets 1,128,915 1,135,880
+(Profit) on sale of tangible fixed assets (1,361) ( 4,875}
+Release of deferred grants (114,264) (98,346)
+Interest received (6,785) { 108,574}
+interest paid 2,040,660 839,728
+: (Increase) in stock ($1,753) (501,079)
+Decrease in amounts owed by group undertaking 7 6,343,682
+Decrease / (Increase) in debtors 721,931 (1,291,439)
+(Decrease} in creditors (877,462) (1,139,609)
+Net cash outflow from operations (18,182,503) — ( 12,749,696)
+Net Interest (paid) _ (2,033,875) (731,154)
+Net cash outflow fram operating activities (20,216,378) _ (13,480,850)
+CASH FLOWS FROM INVESTING ACTIVITIES
+Payments to acquire intangible fixed assets (3,213,201) ({ 2,453,480)
+Payments to acquire tangible fixed assets (323,852) (352,123)
+Payments to dispose of intangible fixed assets (280,320) ( 29,379)
+Grant received 42,943 77,380
+Receipts from disposal of intanglble fixed assets 19,373,293 10,979,234
+Receipts from disposal of tangible fixed assets 4,619 4,875
+Net cash Inflow fram Investing activities 15,713,582 8,226,507
+CASH FLOWS FROM FINANCING ACTIVITIES
+Increase in amounts owed to group undertakings 4,790,000 10,988,700
+increase in other taans . -
+Repayment of other loans and hire purchase creditor (218,138) (3,403,487)
+Net cash inflow / (outflow) from financing activities , . 4,571,862 7,585,213
+Increase / (decrease) in cash and cash equivalents __ 330,870
+MOVEMENT IN CASH AND CASH EQUIVALENTS IN THE YEAR
+increase / (Decrease) In cash and cash equivalents 69,066 2,330,870
+At 1 July 2024 ._ (22,635,600) —_( 14,966,470)
+At30 June 2025 (22,566,534) —_( 12,635,600)
+The notes on pages 17 to 31 form an integral part of these financial statements,
+eS
+THE BLACKBURN ROVERS FOOTBALL AND ATHLETIC LIMITED Page 17
+NOTES TO THE FINANCIAL STATEMENTS
+YEAR ENDED 30 JUNE 2025 .
+1 COMPANY INFORMATION
+The company is a private company, limited by shares and incorporated in England and Wales. The registered
+office is Ewood Park, Blackburn, BB2 4JF. The principal activity is that of a professional football club with related
+commercial activities.
+: 2 ACCOUNTING POLICIES ;
+Basis of preparation of the financial statements .
+The financial statements have been prepared under the historical cost convention, as modified by the revaluation
+of freehold property and In accordance with Financial Reporting Standard 102, the Financial Reporting Standard
+applicable in the United Kingdom and the Republic of Ireland and the Companies Act 2006.
+} The financial statements are prepared in sterling which is the functional currency of the company. Monetary
+amounts in these financial statements are rounded to the nearest £.
+The preparation of financial statements in compliance with FRS 102 requires the use of certain critical accounting
+estimates. It also requires management to exercise judgment in applying the company's accounting policies (see
+note 3).
+The financial statements contain information about The Blackburn Ravers Football and Athletic Limited as an
+individual company and do not contain consolidated financial information as the parent company of a group. The
+company has taken advantage of the exemption available to it under s400 of the Companies Act 2005 from the
+requirement to prepare consolidated financial statements as it and its subsidiary undertaking are included within
+the consolidated financial statements of Venkys London Limited.
+The principal accounting policies applied by the company are described below.
+Going concern
+As at 30 June 2025, the company had net current liabilities of £153,623,451 and reported an operating loss,
+before changes in intangible fixed assets, of £18,988,509 for the year. In common with many football clubs, the
+company may continue to make operating losses and incur net cash outflows depending on a number of variables,
+including the success of the team in league and cup competitions and the level of transfer activity.
+The company is funded through a bank overdraft facility and a shareholder joan, and in view of the current
+: financial position, the company remains reliant on its ability to maintain existing and obtain additional funding as
+necessary.
+In managing the finances of the company, the directors remain mindful of the need to ensure the company will
+comply with the Championship Profitability and Sustainability rules.
+As part of the directors' assessment of going concern they have prepared detailed cash flow forecasts for the
+period to the end of June 2028. These forecasts indicate that the company will require significant funding in
+addition to the current facilities available to the company.
+The amount of additional funding required will be dependent on the net proceeds of any player trading, on field
+performance, and availability of bank facilities. In view of this the directors have received confirmation fram the
+ultimate parent company, Venkateshwara Hatcheries Private Limited (“VHPL”}, that it has sufficient funds and is
+willing to provide such additional financing as may be required to fund the company, to the extent necessary for
+the company to continue to trade and to pay its liabilities as and when they become due, for the 12 months
+, following approval of these accounts and thereafter for the foreseeable future even in the event of the bank
+facility not being renewed.
+On
+THE BLACKBURN ROVERS FOOTBALL AND ATHLETIC LIMITED Page 18
+NOTES TO THE FINANCIAL STATEMENTS
+YEAR ENDED 30JUNE 2025.
+2. ACCOUNTING POLICIES - cantinued
+Going concern (continued)
+Further, the parent company, Venky’s London Limited (VLL), has confirmed that it will not recall the amount
+outstanding of £138,762,098, included in creditors due in less than one year, within twelve months from the date
+of approval of these financial statements.
+The directors would like to bring to the attention of readers of these financial statements an ongoing legal matter
+involving the ultimate parent company Venkateshwara Hatcheries Private Limited (VHPL) and the Directorate of
+Enforcement (“ED”) in india, whereby the ED have queried the application of funds remitted by VHPL to one of its .
+: subsidiaries. It is important to note that this does not include remittances made to this company (“BRFC’}.
+The matter has resulted in temporary restrictions by the ED of remittances of funds to all the overseas
+subsidiaries of VHPL, including BRFC through its intermediate holding company, VLL.
+The ED issued 4 No Objection Certificate, dated 12 March 2024, which confirmed that VHPL has been granted
+permission to make a remittance of £15 million ta its wholly owned subsidiary, namely VLL, the immediate parent
+of BR&C. This permission is subject to certain conditions which have been met already or that will be met prior and
+subsequent to the remittance being made.
+On receipt of the remittance by VLL, that company is able to remit those funds onwards to BRFC without
+restriction or conditions imposed. The directors can confirm that remittances have been made ta BRFC under this
+arrangement during the year and subsequent to the year end.
+Based upon the latest position of the legal matter, at the date of approval of these financial statements the
+directors remain optimistic that the matter should reach a formal conclusion in the coming months, which should
+then allow the free remittance of funds to resume, without any conditions imposed. In the event of a delay to the
+conclusion of the legal matter, the directors are satisfied that another No Objection Certification to remit
+additional funds could be granted, based upon the previous precedent, were this to be necessary.
+However, until the legal matter is formally concluded, there still remains a possibility that developments in the
+matter could lead to a future restriction in the remittance of funds to the company. The directors consider that
+the ongoing legal matter therefore creates a material uncertainty which may cast significant doubt on the
+company’s ability to remain a going concern.
+Despite this, the directors wish to reiterate that there have been no issues with the remittance of funds thus far,
+including significant post year end remittances (totalling €7.795m at the date of signing of the accounts), but still
+await the formal conclusion of the legal matter.
+Subject to the matter outlined above, based on the forecasts prepared, and including the remittances expected to
+be received, the directors are satisfied that the company will have sufficient available funds to meet liabilities as
+they fall due for the foreseeable future and have therefore prepared these financial statements on a going
+concern basis.
+Foreign currencies :
+Transactions in foreign currencies are recorded using the rate of exchange ruling at the date of the transaction. 1
+Monetary assets and liabilities denominated in foreign currencies are translated using the rate of exchange ruling
+at the balance sheet date and the gains or losses on transtation are Included in the profit and loss account.
+Turnover and incame recognition
+Turnover is stated net of Value Added Tax and armounts due to the Premier League, Football League, Football
+Association and visiting football! cluds. It includes gate receipts, executive boxes, sponsorships, merchandising,
+advertising, television fees, Football / Premier League poot and sundry related income.
+a
+THE BLACKBURN ROVERS FOOTBALL AND ATHLETIC UMITED Page 19
+NOTES TO THE FINANCIAL STATEMENTS - continued
+YEAR ENDED 30 JUNE 2025 .
+2 ACCOUNTING POLICIES — continued
+Turnover and Incame recognitian - continued
+Gate receipts and other match day revenue is recognised over a football season as the matches occur.
+Merchandising income is recognised at the point of sale. Other revenue comprising media and commercial income
+is apportioned evenly over the football season or contract term as appropriate.
+Revenue is recognised to the extent that it is probable that the economic benefits will flow to the company and
+the revenue can be reliably measured. Revenue is measured as the fair value of the consideration received or
+t receivable, excluding discounts, rebates, value added tax and other sales taxes.
+'
+Intangible fixed assets :
+The costs associated with the acquisition of new players’ registrations are capitalised as intangible fixed assets.
+These costs are fully amortised, in equal annual instalments, over the period of the player's initial contract. The
+external costs of securing the extension or renewal of an existing contract both for internally produced and
+externally purchased players are capitalised and amortised over the period of the players’ new contract.
+Signing on fees and other contingent fees payable to players as a result of the occurrence af one ar more
+uncertain future events are expensed when they occur.
+Impairment
+The carrying amounts of the company’s assets are reviewed for impairment when events or changes In
+circumstances indicate that the carrying amount of the asset may not be recoverable. If any such indication exists,
+the asset’s recoverable amount is estimated.
+An impairment loss is recognised whenever the carrying amount of an asset or its income-generating unit exceeds
+its recoverable amount. Impairment losses are recognised in the profit and loss account.
+impairment losses recognised in respect of income-generating units are allocated to the carrying amount of the
+intangible fixed assets in the unit on a pro rata or more appropriate basis. An income generating unit is the
+smallest identifiable group of assets that generates income that is largely independent of the income streams
+from other assets or groups of assets.
+The recaverable amount of fixed assets is the greater of their net realisable value and value in use. In assessing
+value in use, the expected future cash flows are discounted to their present value using a pre-tax discount rate that
+teflects current market assessments of the rate of return expected on an equally risky investment. For an asset that
+does not generate largely independent income streams, the recoverable amount is determined for the income-
+generating unit to which the asset belongs.
+Tangible fixed assets and depreciation
+Tangibie fixed assets are stated at cost or valuation less depreciation. Depreciation is provided at rates calculated
+to write off the cost or valuation of fixed assets, less their estimated residual value, over their expected useful
+economic lives on the following bases:
+Motor vehicles : 25% per annum on cost
+Fixtures and fittings : 10% per annum on cost
+Computer equipment : 20% per annum on cost
+Freehold buildings - 2% per annum on cost
+No depreciation has been provided on freehold land.
+ce
+THE BLACKBURN ROVERS FOOTBALL AND ATHLETIC LIMITED Page 20
+NOTES TO THE FINANCIAL STATEMENTS - continued
+YEAR ENDED 30 JUNE 2025 ; . :
+2 ACCOUNTING POLICIES - continued
+Revaluation of tangible fixed assets
+As permitted by the provisions of FRS 102 the company has elected not to adopt a policy of revaluation of tangible
+fixed assets. The company will retain the book value of land and buildings, previously revalued in 1995 and will not
+update that valuation,
+Fixed asset Investments
+Investment in subsidiary is measured at cost less any accumulated impairment losses. A subsidiary is an entity
+contratied by the group. Control is the power to govern the financial and operating policies of the entity so as to
+obtain benefits from its activities.
+: Stock
+|
+‘ Stock is valued at the lower of cost and net realisable value after making allowance far obsalete and slow-moving
+stock.
+Debtors
+Short term debtors are measured at transaction price, less any impairment. Loans receivable are measured
+initially at fair value, net of transaction costs, and are measured subsequently at amortised cost using the
+effective interest methad, less any impairment.
+Cash and cash equivalents
+Cash is represented by cash in hand and deposits with financial institutions repayable without penalty on notice of
+not more than 24 hours. Cash equivalents are highly liquid investments that mature in no more than three
+months from the date of acquisition and that are readily convertible to known amounts of cash with insignificant
+risk of change in value.
+In the statement of cash flows, cash and cash equivalents are shown net of bank overdrafts that are repayable on
+demand and form an integral part of the company's cash management.
+Creditors
+Short term creditors are measured at the transaction price. Other financial liabilities, including bank loans, are
+measured initially at fair value, net of transaction costs, and are measured subsequently at amortised cost using
+the effective interest methad.
+Financial instruments
+The company only enters into basic financial instruments transactions that result in the recognition of financial
+assets and liabilities like trade and other accounts receivable and payable, loans from banks and other third
+parties, loans to related parties and investments in non-puttable ordinary shares,
+Debt instruments (other than those wholly repayable or receivable within one year), Including foans and other
+accounts receivable and payable, are initially measured at present value of the future cash flows and
+subsequently at amortised cost using the effective interest method. Debt instruments that are payable or
+receivable within one year, typically trade payables or receivables, are measured, initially and subsequently, at the
+undiscounted amount of the cash or other consideration expected to be paid or received. However, if the
+arrangements of a short-term instrument constitute a financing transaction, such as the payment of a trade debt
+deferred beyond narmal business terms or financed at a rate of interest that is not a market rate or in case of an
+out-right short-term loan not at market rate, the financial asset or liability is measured Initially at the present
+value of the future cash flow discounted at a market rate of interest for a similar debt instrument and
+subsequently at amortisad cost.
+a
+THE BLACKBURN ROVERS FOOTBALL AND ATHLETIC LIMITED Page 21
+NOTES TO THE FINANCIAL STATEMENTS - continued
+YEAR ENDED 30JUNE 2025. Lo.
+2 ACCOUNTING POLICIES - continued
+Financial instruments (continued)
+Financial assets that are measured at cost and amortised cost are assessed at the end of each reporting period for
+objective evidence of impairment. (f objective evidence of impairment is found, an impairment toss is recognised
+in the profit and loss account.
+For financial assets measured at cost less impairment, the impairment loss is measured as the difference between
+an asset's carrying amount and best estimate, which is an approximation of the amount that the company would
+receive for the asset if it were to be sold at the balance sheet date.
+Leases
+Assets acquired under finance leases are capitalised and the outstanding future lease obligations are shown in
+creditors. Operating lease rentals are charged to the profit and loss account on a straight line basis over the
+period of the lease.
+Grants
+i
+' Grants are accounted for under the accruals model as permitted by FRS 102.
+Revenue grants are credited to profit and loss account in the same period in which the revenue expenditure to
+which they relate is charged. Capital based grants are credited to revenue aver the life of the asset to which they
+relate. The deferred element of grants is included as deferred income.
+The useful tives are as follows:
+Freehold buildings 50 years
+Fixtures and fittings 10 years
+Taxation
+The charge for taxation is based on the loss for the year and takes into account taxation deferred because of
+timing differences between the treatment of certain items for taxation and accounting purposes.
+Deferred tax is recognised, without discounting, in respect of all timing differences between the treatment of
+certain items for taxation and accounting purposes which have arisen but not reversed by the balance sheet date,
+except as otherwise required by FRS 102.
+A deferred tax asset is recognised only if it can be regarded as more likely than not that there will be suitable
+taxable profits from which the future reversal of the underlying timing differences can be deducted.
+Pensions
+The company is making contributions in respect of its share of the deficit of the defined benefit section of the
+Football League Pension and Life Assurance Scheme (the “Scheme”).
+Under the provisions of FRS 102 the Scheme is treated as a defined benefit multi-employer scheme. The financial
+statements provide for the company's estimated share of the Football League Limited Pension and Life Assurance
+deficit. The value provided is based on the current actuarial valuation dated 31 August 2023. Contributions are
+made as advised by the scheme actuary.
+THE BLACKBURN ROVERS FOOTBALL AND ATHLETIC LIMITED Page 22
+
+NOTES TO THE FINANCIAL STATEMENTS - continued
+
+YEAR ENDED 30 JUNE 2025 :
+
+2 ACCOUNTING POLICIES - continued
+Pensions - continued
+The company also makes contributions to defined contribution pension schemes for certain employees. The
+employer's contributions are charged to the profit and loss account in the year in which the liability to pay arises.
+Differences between contributions payable in the year and contributions actually paid are shown as accruals or
+prepayments in the balance sheet.
+Borrowing costs
+All borrowing costs are recognised in the profit and loss account in the year in which they are incurred.
+
+i
+\ Operating Costs
+
+The directors consider that all operating costs incurred can most accurately be categorised as administration
+costs.
+
+3. JUDGMENT IN APPLYING ACCOUNTING POLICIES AND KEY SOURCES OF ESTIMATION UNCERTAINTY
+In the process of applying the company's accounting policies, which are described above, management has made
+some judgments that have a significant effect on the amounts recognised in the financial statements. These also
+include key assumptions concerning the future, and other key sources of estimation uncertainty at the balance
+sheet date. The main areas of judgement that have a significant risk of causing a material adjustment to the
+carrying amounts of assets and liabilities within the next financial year are in relation to revenue recognition of
+central distributions from football authorities and impairment of fixed assets.
+
+a
+THE BLACKBURN ROVERS FOOTBALL AND ATHLETIC LIMITED Page 23
+NOTES TO THE FINANCIAL STATEMENTS - continued
+YEAR ENDED 30 JUNE 2025
+4 TURNOVER
+An analysis of turnover by class of business Is given below:
+2025 2024
+£ £
+Matchday : 4,464,414 4,937,365
+Media 11,500,850 9,481,450
+Commercial 7,187,924 6,942,919
+Other $44,010 33,763
+' 23,697,198 21,395,497
+S OPERATING LOSS
+The operating loss Is stated after charging / (crediting):
+2025 2024
+£ £
+Amortisation of intangible fixed assets 2,421,226 2,302,540
+Depreciation of tangible fixed assets: owned by the company 1,017,424 1,060,736
+under hire purchase 111,491 75,144
+Profit on disposal of tangible fixed assets (1,361) (4,875)
+Auditors’ remuneration: audit work 39,650 34,000
+non audit work 16,561 8,625
+Operating lease payments 391,508 382,967
+Deferred grants release ( 114,264} {98,346}
+6 STAFE COSTS
+” 2025 2024
+£ £
+Wages and salaries 24,602,778 21,981,656
+Social security costs 3,393,623 2,978,274
+Other pension costs _ 223,318 483,441
+. 28,219,719 25,443,371
+The average number of empicyees, Including directors, during the year was as foliows:
+2025 2024
+No, . No.
+Senior football players and management 85 80
+Academy football players and management 73 71
+Commercial, sponsorship, media and merchandising . 23 20
+Administration 21 21
+Building, ground and pitch maintenance 30 30
+232 222
+THE BLACKBURN ROVERS FOOTBALL AND ATHLETIC LIMITED Page 24
+NOTES TO THE FINANCIAL STATEMENTS - continued
+YEAR ENDEO 30 JUNE 2025
+7 ~DIRECTORS' REMUNERATION
+Emoluments for services as directors: :
+Salaries Pension Benefits Total
+E £ £ —
+Executive directors:
+2025 607,236 47,286 27,404 681,926
+2024 571,392 165,752 29,096 766,240
+Ouring the year 1 director was a member of a money purchase pension scheme (2024 - 2).
+Remuneration disclosed abave Includes the following amounts paid to the highest paid director: .
+2025 2024
+£ £
+; Remuneration for qualifying services $93,036 433,028
+Company pension contributions ; 47,286 159,002
+Sa ee
+8 TRANSFER FEES AND ASSOCIATED COSTS
+2025 2024
+€ £
+Amortisation of intangible fixed assets { 2,421,226) ( 2,302,540)
+Profit on disposal of intangible fixed assets 13,020,422 23,561,842
+10,599,196 - 21,259,302
+we ee
+9 NET INTEREST PAYABLE
+2025 2024
+£ £
+interest receivable
+Short term deposits and other interest . 6,785 108,574
+Interest payable
+On bank overdrafts and other loans (1,997,723) { 798,618)
+Hire purchase interest ( 42,937) ( 41,110)
+{ 2,040,660) ( 839,728).
+Net interest payable (2,033,875) . (732,154) .
+THE BLACKBURN ROVERS FOOTBALL AND ATHLETIC UMITED Page 25
+NOTES TO THE FINANCIAL STATEMENTS - continued
+NEARENDED 30 JUNE 2025
+10 TAXATION
+2025 2024
+£ £
+The tax credit comprises:
+UK corporation tax * -
+Adjustment in respect of prior year a
+Tax on loss on ordinary activities . * . >
+EE SE
+The actual tax charge for the current year differs fram the standard rate of 25% (2024 - 25%) for the reasons set out In
+i the following reconciliation:
+H
+Loss on ordinary activities before tax ( 10,423,188) 3,334,238
+Tax on loss/prafit on ordinary activities at 25% (2024 - 25%) { 2,605,797) 833,560
+Effects of :
+Expenses not deductible for corporation tax purposes 4,679 7,230
+Non-taxable income ( 28,565) ( 24,587)
+Adjustment in respect of prior years - -
+Chargeable gain indexation - -
+Oeferred tax not recognised 2,627,709 (819,214)
+Other permanent difference . 1,975 . 3,011
+Total amount of tax - -
+we
+Taxable losses from previous years are available for offset against future taxable profits. A deferred tax asset has not been
+recognised in respect of those losses as the company does not anticipate taxable profits to arise within the foreseeable future.
+The estimated value of the deferred tax asset not recognised, measured at a standard rate of 25% (2024 - 25%) is £76m
+(2024 - £74m),
+11 INTANGIBLE FIXED ASSETS
+Player
+registrations
+£
+Cost At 1 July 2024 13,151,157
+Additions 5,070,767
+Oisposals ( 8,347,416)
+At 30 June 2025 9,874,508
+. Amortisation . At 1 July 2024 9,967,725
+Charge for the year 2,421,226
+On disposals { 7,244,767}
+At 30 June 2025 5,144,184
+Net book value At 30 June 2025 4,730,324
+San
+At 1 July 2024 3,183,432
+Oe
+THE BLACKBURN ROVERS FOOTBALL AND ATHLETIC LIMITED Page 26
+NOTES TO THE FINANCIAL STATEMENTS - continued
+YEAR ENDED 30 JUNE 2025
+12 TANGIBLE FIXED ASSETS
+Freehold Fixtures, fittings
+land and and computer Motor
+bulidings equipment vehicles Total
+£ £ £ Lf,
+Cost or valuatlan .
+At 1 July 2024 39,747,667 10,544,437 283,307 $0,575,411
+: Additions 13,358 302,798 63,990 380,146
+‘ Disposals ( 45,062) (77,593) { 21,836) ( 144,491)
+At 30 june 2025 39,715,963 10,769,642 325,461 50,811,066
+RR RE | ee
+At cost 4,640,963 10,769,642 325,461 15,736,066
+At valuation - 1995 35,075,000 - : _ 35,075,000
+39,715,963 10,769,642 325,461 50,811,066
+ee
+Depreciation
+At 1 July 2024 18,233,532 9,086,202 238,342 27,558,076
+Charge far the year 783,120 308,602 37,193 1,128,915
+On disposals (45,062) (77,593) (18,574) (141,229)
+At 30 June 2025 18,971,590 9,317,221 256,961 28,545,762
+"Net book value
+At 30 June 2025 20,744,373 1,452,431 68,500 22;265,304
+At 1 July 2024 21,514,135 1,458,235 44,965 23,017,335
+The net book value of assets held under hire purchase contracts is £566,841 (2024 - £617,517). Depreciation far the year
+on assets held under hire purchase contracts was £113,971 (2024 - £111,492). Included within freehold tand and bulldings
+is land at a value of £2,645,000 which has not been depreciated.
+On the historical cost basis, land and buildings Included at valuation would have been included as follows:
+2025 2024
+£ £
+Deemed historical cost of revalued assets 34,099,059 34,099,059
+Cumulative depreciation based on deemed historicat cost { 17,620,207} ( 16,961,052)
+Deemed historical cost net book value 16,478,853 17,138,007
+a
+THE BLACKBURN ROVERS FOOTBALL AND ATHLETIC LIMITED Page 27
+NOTES TO THE FINANCIAL STATEMENTS - continued ,
+YEAR ENDED 30 JUNE 2025 .
+13 FIXED ASSET INVESTMENT
+Shares in Group
+Undertakings
+£
+Cost . 100
+At 30 June 2025 100
+The investment represents 100% of the ordinary share capital of Blackburn Rovers Women Football Club Limited,
+registered In the UK. The subsidiary Is a professional football club.
+14 STOCK
+2025 2024
+£ £
+Goods held for resale 885,442 833,689
+The difference between purchase price or production cost of stocks and their replacement cost is not material.
+Stock recognised in cost of sales during the year as an expense was £1,079,659 (2024 - £774,038).
+15 DEBTORS - amounts falling due within one year
+2025 2024
+£ £
+Trade debtors $56,586 906,195
+Football related debtors 4,927,634 605,943
+Other debtors 94,716 249,864
+Social security and other taxes 181,626 - .
+Prepayments and accrued income 742,162 _ _ 1,140,962
+6,502,724 2,902,964
+See note 29 for details of repayment terms attaching to amounts owed by group undertaking.
+16 DEBTORS - amounts falling due after more than one year
+2028 2024
+£ £
+Football related debtors 2,997,716 12,290,000
+2,997,716 __12,290,000_
+17 CASH AND CASH EQUIVALENTS ‘
+2025 2024
+é £
+Cash at bank and In hand 263,666 582,607
+Bank overdraft { 12,830,200) (13,218,207)
+a
+THE BLACKBURN ROVERS FOOTBALL AND ATHLETIC LIMITED Page 28
+NOTES TO THE FINANCIAL STATEMENTS - continued
+YEAR ENDED 30 JUNE 2025 :
+18 CREDITORS - amounts falling due within one year
+2025 2024
+£ €
+Bank overdraft 12,830,200 13,218,207
+Amounts awed to parent undertaking 138,762,098 133,977,098
+Trade creditors 2,855,885 2,583,565
+Football related creditors 4,012,957 2,520,961
+Social security and other taxes 1,829,744 1,737,799
+Other creditors $0,203 269,552
+Pension deficit 111,517 138,848 .
+: Hire purchase creditors 224,032 215,376
+Accruals and deferred income 3,586,363 4,475,279 _
+164,272,999 159,131,685
+ee See
+The amounts due to the parent company of £138,762,098 (2024 - £133,972,098) nave been treated as falling due within one
+vear as this is the technical legal status of the loans at the balance sheet date. As described in note 2, subsequent to the
+year end the parent company has confirmed that, as in previous years, it will provide sufficlent financing to support the
+campany for the twelve months following approval of these accounts and will not recall the amount included in creditors
+due In less than one year, within 212 months of the date of approval of these financial statements.
+The amounts owed to the parent undertaking above are interest free with no fixed date for repayment.
+The bank overdraft facility expires on 20 May 2026. The directors believe the facility will be renewed on acceptable
+terms and conditions as in previous years.
+Please refer to the strategic report for more detail on the directors’ assessment of going concern.
+The bank overdraft is secured by a corporate guarantee from the holding company, Venkys London Limited. Interest is .
+paid upon the facility at 2.0% over BOE base rate.
+Hire purchase creditors are secured on the assets to which they relate.
+19 CREDITORS - amounts falling due after more than one year 2025 “2024
+£ £
+Other Loans - 116,131
+Hire purchase creditors 198,337 358,841
+Football related creditors 1,081,429 616,450
+1,279,766 ; 1,091,422
+qo ee
+Hire purchase creditors are secured.on the assets to which they relate.
+a
+THE BLACKBURN ROVERS FOOTBALL AND ATHLETIC LIMITED Page 23
+NOTES TO THE FINANCIAL STATEMENTS - continued
+YEAR ENDED 30 JUNE 2025 ;
+20 FINANCIAL INSTRUMENTS ;
+2025 2024
+£ €
+Financial assets measured at fair value through profit or loss 263,666 582,607
+Financial assets that are debt instruments measured at amortised cost 8,576,652 14,052,002
+, 8,840,318 14,634,609
+oe
+Financial liabilities measured at amortised cost 163,723,021 ____ 458,369,177
+Financial assets measured at fair value through profit or loss comprise cash and bank balances.
+Financial assets measured at amortised cost comprise trade and other debtors.
+Financial liabilities measured at amortised cost comprise creditors, excluding deferred government grants and tax
+and social security.
+21 HIRE PURCHASE CREDITORS
+Minimum lease payments under hire purchase fall due as follows:
+2025 2024
+£ £
+Within 1 year 224,032 215,376
+Between 1 and 2 years 141,536 207,459
+Between 2 and 5 years 56,801 . 151,382
+422,369 __574,217
+22 DEFERRED GRANTS
+: 2025 2024
+£ £
+Outstanding at beginning of year 717,592 738,558
+Grant received 42,943 77,380
+Released to profit and loss account in the year { 114,264) { 98,346)
+Outstanding at end of year 646,271 717,592,
+oe
+Amount to be released within one year _ 112,086 96,660
+23 CALLED UP SHARE CAPITAL .
+2025 2024
+£ £
+Allotted, cailed up - fully paid
+198,227,484 ordinary shares of £1 each 198,227,484 198,227,484
+eames 06 Gee
+.
+THE BLACKBURN ROVERS FOOTBALL AND ATHLETIC LIMITED , Page 30
+NOTES TO THE FINANCIAL STATEMENTS - continued
+YEAR ENDEO 30 JUNE 2025 .
+24 RESERVES
+Profit and loss reserve:
+The profit and loss reserve represents cumulative profits or losses. The current year profit and loss reserve amounts to a
+deficit of £328,077,069 (2024 - £317,653,881)
+Revaluation reserve:
+The revaluation reserve represents the cumulative effect of revaluations of freehold land and buitdings. The current year
+revaluation reserve amounts to £1,295,825 (2024 - £1,295,825)
+, .
+25 PENSIONS
+Pension contributions are paid by the company into the personal pension schemes of certain employees. The assets of
+their schemes are held separately from those of the company in independently administered funds. The contributions
+paid during the year amounted to £223,318 (2024 - £483,441), of which £48,684 (2024 - £181,478) was outstanding at
+year end. .
+The company is a participating employer in the Football League Limited Pension and Life Assurance Scheme (the “Scheme”).
+Accrual of benefits under a final salary basis was suspended with effect from 31 August 1999 following an actuarial review,
+which revealed a substantial deficit. The company was advised of its share of the deficit in the Scheme and the contributions
+required to make good that deficit, based on the latest actuarial valuation at 1 September 2023. The increase in the deficit
+in the year, which has been charged as an expense, amounted to £0 (2024 - £0}. The company’s share of this deficit
+is currently estimated to be £111,517 (2024 - £254,979). This deficit has been provided for in these accounts and is
+included in creditors.
+26 POTENTIAL FUTURE PLAYER REGISTRATION PAYMENTS
+Under the terms of certain contracts for the purchase of players' registrations, future payments may be due, dependent
+upon the success of the team and/or the individual players. Similar terms exist in contracts for sales of players’
+registrations.
+Any amount payable in relation to playing appearance and team performances are recognised when the event occurs. The
+maximum potential quantifiable payment for amounts due to football clubs and other third parties for first team players
+is £3.1m (2024 - £6.5m)}. Any amounts receivable in relation to playing appearances and team performances are
+recognised when the event occurs. The maximum quantifiable potential receipt for amounts due from football clubs and
+other third parties for first team players is £10.5m (2024 - £5.6m).
+27 CAPITAL COMMITMENTS
+At 30June 2025 the company had capital commitments as follows:
+2025 2024
+£ £
+Contracted for but not provided in these accounts
+net of grants receivable . 165,720 244,754
+ee
+a
+»
+
+THE BLACKBURN ROVERS FOOTBALL AND ATHLETIC LIMITED Page 31
+
+NOTES TO THE FINANCIAL STATEMENTS - continued
+
+YEAR ENDED 30 JUNE 2025 ; .
+
+28 OTHER COMMITMENTS
+At 30 June 2025 the company had future minimum lease payments under non cancellable operating leases as follows:
+
+2025 2024
+£ £
+Within 1 year 224,032 378,243
+Between 1 and 5 years , 198,337 19,777
+——ee ee
+29 RELATEO PARTY TRANSACTIONS
+|
+j During the year the company entered into the following transactions with related parties:
+
+The company received rent and other income of £256,051 (2024 - £364,261) from Blackburn Rovers Community
+Trust. In addition certain expenses were incurred and recharged to Blackburn Rovers Community Trust. At the
+balance sheet date an amount of £62,369 was owed by the Trust to the company (2024 - £241,766) in respect of
+these transactions, and is disclosed within other creditors / debtors. At 30 June 2025 Blackburn Rovers Community Trust
+had 6 trustees, of which none were directors of The Blackburn Rovers Foatball and Athletic Limited.
+In June 2021 the company sold the Senior training ground and related property for £17,300,000 to Venkateshwara
+London Limited, a subsidiary of the ultimate parent company, Venkateshwara Hatcheries Pvt. Ltd. The praceeds
+carried interest at 4% above the State Bank of India base rate and interest arising on the loan in the period was nit
+(2024 - £88,887). The company has entered into a lease to continue to use the Senior training ground and rent of
+£356,004 arose for the period to 30 June 2025 (2024 - £356,004). The loan was repaid in full in October 2023.
+
+30 PARENT COMPANY
+The company is a subsidiary undertaking of Venkys London Limited, with Venkateshwara Hatcheries Pvt. Ltd. being the
+ultimate parent company, which is incorporated in india. Ultimate control is held by Mrs Anuradha } Desai,
+Mr B Venkatesh Rao and Mr 6 Balaji Rao.
+The largest group in which the publicly available results of the company are consolidated is that headed by Venkys
+London Limited, incorporated in the United Kingdom. The consolidated financial statements of this group are available
+to the public and obtainable from Companies House.
+
+31 POST BALANCE SHEET EVENTS
+Since the balance sheet date the company has entered into transfer agreements amounting to net transfer fees receivable of
+£2.3m (2024 - £12.4m receivable}.
+
+a
 

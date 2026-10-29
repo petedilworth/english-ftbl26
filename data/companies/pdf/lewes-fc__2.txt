@@ -2,7 +2,7 @@ source: Companies House filing, lewes-fc__2.pdf
 document: 5dkdfLbt_OkmnoHbUngx5edtng0D1NIc8pWQhJ36Q_g
 made_up_date: 2024-05-31
 method: ocr
-pages_read: 12 of 17
+pages_read: 17 of 17
 
 . : Company registration number-03790979-(England and-Wales) © ;
 ; Ce ; .. LEWES 2000:F.C., LIMITED a
@@ -544,4 +544,271 @@ incurred'in bringing the stocks to their present location and condition.
 Stocks Held for distribution at no or nominal consideration are measured at the lower of cost and
 i replacement cost, adjusted where applicable for any loss of service potential.
 | -10-
+: 1
+
+LEWES 2000-F.C: LIMITED. , . /
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED) oe re _
+
+FOR THE YEAR ENDED 31 MAY 2024 i
+
+1 = Accounting policies (Continued) |
+
+At each reporting date; an assessment is made for impairment. Any excess of the carrying amount of stocks :
+
+over its estimated seélling price less costs to complete and sell is recognised as an impairment loss in profit or |
+
+loss. Reversals of impairment losses are also recognised in profit or loss. :
+
+. 1.7. ‘Cash and cash equivalents
+- Cash and cash equivalents are basic financial assets and include cash in hand; deposits held at call with :
+
+banks, other short-term liquid investments with original maturities of three months or: less, and bank i
+
+. overdrafts. Bank overdrafts are shown within borrowings in current liabilities. . i
+
+:
+
+1.8 Financial instruments ; , :
+The company has elected to apply the provisions of Section 11 ‘Basic Financial Instruments’ and Section 12 i
+
+‘Other Financial Instruments Issues’ of FRS 102 to all of its financial instruments.
+
+- ‘Financial instruments are recognised in the company's balance sheet when the company becomes party to :
+
+___ the contractual provisions of the instrument. '
+
+: -_- Financial assets and liabilities are offset, with the net amounts presented in the financial statements, when
+_ there is a-legally enforceable right to set off the recognised amounts and there is an intention tosettle on a i
+
+: . net basis or to realise the asset and settle the liability simultaneously. i
+. i
+
+--” Basie financial assets:
+
+_g Basic financial assets, which include debtors and cash and bank balances, are initially measured at i
+
+ahs : .ga transaction price.including transaction costs and are subsequently carried at. amortised cost using the H
+ced effective interest method unless the arrangement constitutes a financing transaction, where the transaction :
+is measured at the present value of the future receipts discounted at a market rate of interest. Financial i
+
+. assets classified as receivable within one year are not amortised. i
+
+1
+
+Classification of financial liabilities ; i
+
+‘Financial liabilities and equity instruments are classified according to the substance of the contractual i
+arrangements entered into. An equity instrument is any contract that evidences a residua! interest in the |
+
+assets of the company after deducting all of its liabilities. :
+
+Basic financial liabilities. /
+
+' Basic financial liabilities, including creditors, bank-loans, loans from fellow group-‘companies and preference i
+"shares that are classified as debt, are initially recognised at transaction price unless the arrangement :
+‘constitutes a financing transaction, where the debt instrument is measured at the present value of the i
+
+future payments discounted at a market rate of interest. Financia! liabilities classified as payable within one :
+
+year are not amortised. mo . ot : : i
+
+i
+
+Debt instruments are subsequently carried at amortised cost, using the effective interest rate method. aa
+
+Trade creditors are obligations to pay for goods or services that have been acquired in the ordinary course of i
+
+. business’ from. suppliers. Amounts payable are classified as current liabilities if payment is due within one '
+
+year or less. If not, they are presented as non-current liabilities. Trade creditors are recognised initially at !
+
+transaction price and subsequently measured at amortised cost using the effective interest method. :
+
+{
+
+: |
+LEWES 2000-F.¢::LIMITED co. Sd
+
+NOTES TO THE FINANCIAL STATEMENTS (CONTINUED)
+
+FOR THE YEAR'ENDED 31MAY2024. .. . . te . i
+
+1 = Accountiiig. policies : (Continued) i
+
+1.9 Equity instriiments. / . _ a . i
+
+Equity instruments isstied by the company are recorded at the proceeds réceived, net-of transaction costs. i
+
+: Dividends*.payable on equity instruments are recognised as liabilities once they are no longer at the - :
+
+discretion’ofthe company. — . lee a . : :
+
+1.10 Employee:betiefits - “ ; oo 2
+
+: The costs‘of sHort-térm-employee benefits-are recognised as a liability and an expense, unless those costs H
+
+are required to be recognised as part of the cost of stock or fixed assets. - . :
+
+The cost of any unused holiday entitlement is recognised in the period in which the: émployee’s Services are !
+
+‘received. ~ ; : ; : ; H
+
+. Termination: ‘betiefits aré -recognised immediately as an expense when the company is demonstrably :
+
+“.committed-to.terminate the employment of an employee or to provide termination benefits. i
+
+. Rentals payable under operating leases, including any lease incentives received, are charged to profit or loss ;
+
+on a Straight-line basis over the term of the relevant lease except where another more systematic basis is :
+
+. more represéntative of the time pattern in which economic benefits from the leases asset are consumed. .
+
+" 4,12°Governmént-grants ; ; son, °
+
+Government: grants’ are’ recognised at the fair value of the asset received or receivable when there is :
+reasonable‘assurance that the grant conditions will be met and the grants will be received. tO
+
+> A grant that specifies:performance conditions is recognised in income when the-performance conditions are i
+
+met. Where a:grant does not specify performance conditions it is recognised in income when the proceeds :
+
+“are received or receivable. A grant received before the recognition criteria are satisfied is recognised as a
+
+liability. : i
+
+4.43 Foreign:éxchange :
+
+. Transactions in currencies other than pounds sterling are recorded at the rates of exchange prevailing at the i
+
+- -dates of the transactions. At each reporting end date, monetary assets and liabilities that are denominated i
+
+. ‘in foreign currencies are retranslated at the rates prevailing on the reporting end-date. Gains and losses :
+
+: arising on'translation in the period are included in profit or loss. }
+
+2°. Employees”. . . , ; :
+
+_ The average rionthly ‘number of persons (including directors)-employed by the company during the year
+
+"was! . i
+
+. a ; . 2024 2023 i
+
+; OF - : . “Number Number :
+
+“Totah oo a) 56
+|
+. {
+LEWES 2000 EC. LIMITED’ ; :
+_NOTES'TO THEFINANCIAL STATEMENTS (CONTINUED)
+FOR THE YEARENDED 31: MAY 2024 oe |
+3 Tangible‘fixed’assets - . :
+Leasehold land Plant and ‘Motor vehicles _ Total i
+. and bulldings ~ equipment “4
+- Atidune'2023 ; 672,733 «125,497 52,275 850,505 :
+Additions: "207,332 13,250 - 220,582 L
+. -Disposdls = * a ; -, - (41,575) (41,575) :
+At B1May'2024.. oo 880,065 138,747 —«-10,700 ‘1,029,512 i
+_-- Depréctatioi anid'impairment i
+; At1 June 2023 574,284 47,740 27,638. «649,662 i
+"Depreciation charged in the year ' . 35,376 5,020 6,159 46,555 . :
+/ Eliminated in respéct’of disposals - - (23,548) (23,548) i
+_ _ AL31-May:2024..— - ; 609,660 52,760 10,249 «672,669 :
+_ “Carrying amount a
+"ALB May.2024. 0° = :. _ 270;405 85,987" _ 451 356,843 8
+7 AtBaMay'2023 -. 98,449 77,787 24,637 —- 200,843 :
+4 Debtors
+a, oe 2024 2023
+} "”. ” Amounts *falling-dueWithin one-year: - wl £ £
+— Tradé’debtors = 7. 80:68. 3,901
+Other debtors’ 5 ; ° 7,323 13,850
+_ "> Prépaynients and.accrued income / 95,185 6,223
+ae Be 7 , 183,146 23,974
+, 3 Creditéés: amounts falling due within one year , . . ;
+. : . : 2024 2023
+“ -Otherborrowings "290,000 -
+Tradé creditors oo ; ; 58,464 6,862
+o -. Taxation‘aiid-social security - 62,224 21,630
+Other créditors "326,766 261,043
+a ; | 687,454 289,535
+LEWES 2000 F:C."EIMITED. - . .
+NOTES TO THE FINANCIAL'STATEMENTS (CONTINUED) : a a co
+
+FOR THE YEARENDED 31 MAY 2024 Ss ° '
+
+°° 6 Creditorsi:arounts falling due after more than one year oe / . , i
+. 2024 2023 :
+
+. | Notes. an 3 £
+: a ‘Other’ borrowings _ 7 . . ae a , : 45,090 - 45,090 |
+Government and othéf grants _ “+ 112,799 37,241 i
+
+a CO ‘ "157,889 82,331 |
+- _pll-idatis “arévunsecured: and interest freé, except for £30,880: of loans received to fund the solar panel i
+
+.- installation: Interest is paid on these loans equivalent to an agreed share of the Feed In Tariff received from i
+
+: electricity generation. . |
+
+7: ‘Audit reportinformation - i
+
+, As thé ivicoiie ‘statérment- has been omitted from. the filing copy of the financial statements, the following |
+
+: information in relation to the audit report on thé statutory financial statements is provided in accordance |
+: with $444(5B) of the Companies Act 2006: i
+i
+
+7. The auditor's -report.was, unqualified, but included-a materia! uncertainty in relation to the-going concern :
+
+’ “disclosure: : :
+
+* 'Senior'statutory:Auiditor: , Mark Curimins FCCA oo :
+
+. Statutory:Auditor: . TC Group : , i
+
+. Date of audit report: . Date! ccccccscessesesesnsnesesesesevereas |
+
+8 | Operatingtease céminitiniénts- : : . i
+‘Lessee | : . : i
+
+_ + At the feporting:end:date the company had outstanding commitments for future mifiimum lease payments i
+
+: . under non-cancellable operating leases, as follows: ;
+: : 2024 2023 i
+TT ; —— 5500  —-5,500 7
+
+. -14- . - :
+|
+LEWES 2000 F.C. LIMITED
+. NOTES TO THE FINANCIAL STATEMENTS (CONTINUED) /
+FOR THE YEAR ENDED 31 MAY 2024 .
+9 Related-party-transactions . :
+. During the year-the company made the following related party transactions: .
+Lewes:Community Football Club Limited (Parent company} - coe
+The club-received donations from its parent company totalling £139,585 (2023 - £30,042). At the balance :
+sheet date the amount due to Lewes Community Football Club Limited was Enil (2023 - £nil). : i
+: ‘Lewes FC'Worrien Limited (Subsidiary company) - :
+‘The club recharged expenses to its fellow subsidiary ‘company totalling £491,971 (2023 - £501,197). At the i
+balance sheet date the amount due from Lewes FC Women Limited was Enil (2023 - £nil). :
+- EJ Ramsden (Former-director of the company)
+. During the. year the director made donations of £nil (2023 - £600,000) to assist cash flow. At the balance !
+sheet date the amount owed to him was £nil (2023 - Enil). ;
+C Dobres‘{Former director of the company) ; ‘
+During the year-the director made donations of £100,000 to the group (2023 - £108;000) to assist cash flow. |
+: At the balance sheet ‘date the amount owed to him was £nil (2023 - Enil). i
+T Wells (director of the: company) ; : i
+_ During the year the director made donations of £nil to the group (2023 - £15,100) to assist cash flow. At the - i
+
+balance sheet date the amount owed to him was £nil (2023 - fnil).
+
+10 Parent cormpany :
+
+Lewes Community Football Club Limited is the company's ultimate parent company. Consolidated accounts
+are available at the registered office of The Dripping Pan, Mountfield Road, Lewes, East Sussex, BN7 2XA. i
+. . The ultimate‘controlling party is no one party.
+. : :
+: i
+i
+{
+MON i
 

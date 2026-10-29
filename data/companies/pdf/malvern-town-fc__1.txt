@@ -2,7 +2,7 @@ source: Companies House filing, malvern-town-fc__1.pdf
 document: -lQ0Xt7SCI_2b6FJoObs4WWyCj6YD0JkmWfFZKAVZRM
 made_up_date: 2025-06-30
 method: ocr
-pages_read: 12 of 13
+pages_read: 13 of 13
 
 Company Registration No 08755456 (England and Wales)
 MALVERN TOWN FOOTBALL CLUB CIC
@@ -411,4 +411,27 @@ of assets other than for full consideration has been made” below
 ‘
 No transfer of assets other than for full consideration has been made.
 (Please continue on separate continuation sheet tf necessary )
+i
+PART 5 — SIGNATORY
+The original report
+director of the
+company
+Please note that it is a legal requirement for the date format to be
+provided in full throughout the CIC34 report.
+Applications will be rejected if this information is incorrect.
+You do not have to give any contact | Mr Christopher Pinder
+information in the box opposite but if
+you do, it will help the Registrar of 28 St Anns Road, Malvern, WR14 4RG
+Companies to contact you if there ts
+information that you give will be Email Tel 07826 524337
+visible to searchers of the public
+record, DX Number DX Exchange
+When you have completed the form, please attach it to the accounts and send both |
+documents to the Registrar of Companies at: |
+For companies registered in England, Scotland, Wales and Northern Ireland
+Companies House, Crown Way, Cardiff, CF14 3UZ
+DX 33050 Cardiff
+|
+Please ensure the company name is consistent with the company name entered on the
+accounts. (N.B. Please enclose a cheque for £15 payable to Companies House).
 

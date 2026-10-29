@@ -2,7 +2,7 @@ source: Companies House filing, exeter-city-fc__1.pdf
 document: oEuTiIhI48YdvRIBHuSBn1RZRXGBCLFURpZRJKFJxxI
 made_up_date: 2025-06-30
 method: ocr
-pages_read: 12 of 50
+pages_read: 50 of 50
 
 | REVISED
 f rump
@@ -372,4 +372,1101 @@ Reporting Council's website at: www.frc.org.uk/auditorsresponsibilities. This de
 Auditors’ report.
 
 : Page 9
+EXETER CITY A.F.C. LIMITED
+INDEPENDENT AUDITORS’ REPORT TO THE MEMBERS OF EXETER CITY A.F.C. LIMITED
+(CONTINUED)
+Use of our report
+This report is made solely to the Company's members, as a body, in accordance with Chapter 3 of Part 16 of
+the Companies Act 2006. Our audit work has been undertaken so that we might state to the Company's
+members those matters we are required to state to them in an Auditors’ report and for no other purpose. To the
+fullest extent permitted by law, we do not accept or assume responsibility to anyone other than the Company
+and the Company's members, as a body, for our audit work, for this report, or for the opinions we have formed.
+Misty Nickells FCA (Senior statutory auditor)
+for and on behalf of
+. Griffin
+Chartered Accountants
+Courtenay House
+Pynes Hill
+Exeter
+EX2 5AZ ;
+Date: 24r (oF />
+Page 10
+EXETER CITY A.F.C. LIMITED
+CONSOLIDATED STATEMENT OF INCOME AND RETAINED EARNINGS
+FOR THE YEAR ENDED 30 JUNE 2025
+2025 2024
+Note £ £
+Turnover 5 8,212,878 6,568,952
+Cost of sales (9,082,874) (7,263,363)
+Gross loss ; (869,996) (694,411)
+Administrative expenses (4,137,513) (2,780,431)
+Other operating income 6 622,373 527,708
+Operating loss : 7 (4,385,136) (2,947, 134)
+Transfer revenue 4,929,505 3, 108, 463
+Profit on ordinary activities before interest 544,369 161,329
+interest receivable and similar income 12 11,190 32,143
+: Interest payable and similar expenses 13 (28,922) (11,400)
+Profit before tax 526,637 182,072
+Tax on profit 14 (178,423) (83,883)
+Profit after tax 348,214 98,189
+Retained earnings at the beginning of the year . 5,993,688 5,895, 499
+5,993,688 5,895,499
+Profit for the year attributable to the owners of the parent 348,214 98,189
+Retained earnings at the end of the year 6,341,902 5,993, 688
+Non-controlling interest at the end of the year
+The notes on pages 19 to 47 form part of these financial statements. - - _ ~ - oe
+. Page 11
+EXETER CITY A.F.C. LIMITED
+REGISTERED NUMBER:00097808
+CONSOLIDATED BALANCE SHEET
+AS AT 30 JUNE 2025
+2025 2024
+Note £ £
+Fixed assets
+Intangible assets 15 231,003 95,423
+Tangible assets 16 5,121,630 5,046,325
+5,352,633 5,141,748
+Current assets
+Stocks 18 108,801 129,755
+Debtors 19 4,776,126 3,501,678
+Cash at bank and in hand 347,103 317,573
+5,232,030 3,949,006
+Creditors: amounts failing due within one
+year (3,028,300) (2,658,812) .
+Net current assets 2,203,730 1,290, 194
+Total assets less current liabilities 7,556,363 6,431,942
+Creditors: amounts falling due after more
+than one year (961,653) (265,056)
+Provisions for liabilities
+Deferred tax 23 (213,125) (133,515)
+(213,125) (133,515)
+Net assets 6,381,585 6,033,371
+Capital and reserves
+Called up share capital 36,973 36,973
+Capital redemption reserve 25 2,710 2,710
+Profit and loss account 25 6,341,902 5,993,688
+a es 6,384,585 6,033,371 ,
+Page 12
+EXETER CITY A.F.C. LIMITED
+REGISTERED NUMBER:00097808
+: CONSOLIDATED BALANCE SHEET (CONTINUED)
+‘ AS AT 30 JUNE 2025
+
+The financial statements were approved and authorised for issue by the board and were signed on its behalf on
+
+23/04/2026
+
+Haunrence Ovenrend
+
+. Uoverend ee
+Director
+The notes on pages 19 to 47 form part of these financial statements. :
+Page 13
+: “EXETER CITY A.F.C. LIMITED
+REGISTERED NUMBER:00097808
+COMPANY BALANCE SHEET
+AS AT 30 JUNE 2025
+2025 2024
+Note £ £
+Fixed assets
+Intangible assets 15 231,003 95,423
+. Tangible assets 16 5,418,316 5,046,325
+Investments 17 100 -
+5,349,419 5,141,748
+Current assets \
+Stocks 18 108,801 129,755
+Debtors 19 5,056,829 3,501,678
+Cash at bank and in hand 307,336 317,573 ,
+5,472,966 3,949,006
+Creditors: amounts falling due within one
+year 20 (2,968,486) (2,658,812)
+Net current assets 2,504,480 1,290,194
+Total assets less current liabilities 7,853,899 6,431,942
+Creditors: amounts falling due after more
+than one year . ; (961,653) (265,056)
+Provisions for liabilities
+Deferred taxation 23 (213,125) (133,515)
+(213,125) (133,515)
+Net assets 6,679,121 6,033,371
+Capital and reserves ,
+Cailed up share capital 24 36,973 36,973
+Capital redemption reserve 2,710 2,710
+Profit and loss account brought forward 5,993,688 5,895,499
+‘~~ ------Profit for the year : mo a ~ ++ 645;750--— - ~----- 98,189 . --
+Profit and loss account carried forward 6,639,438 5,993,688 —
+6,679,121 6,033,371
+Page 14
+EXETER CITY A.F.C. LIMITED
+REGISTERED NUMBER:00097808
+COMPANY BALANCE SHEET (CONTINUED)
+AS AT 30 JUNE 2025
+The financial statements were approved and authorised for issue by the board and were signed on its behalf on
+23/04/2026
+
+Naunence Overend.
+
+One sees ccsessaeenaneeenens
+
+Director
+
+The notes on pages 19 to 47 form part of these financial statements.
+Page 15
+EXETER CITY A.F.C. LIMITED
+CONSOLIDATED STATEMENT OF CASH FLOWS
+FOR THE YEAR ENDED 30 JUNE 2025
+
+2025 2024
+£ £
+
+Cash flows from operating activities
+Profit for the financial year 348,214 98,189
+
+Adjustments for:
+Amortisation of intangible assets 112,409 86,672
+Depreciation of tangible assets 412,755 367,706
+, Profit on disposal of intangible assets (1,553,333) -
+
+(Profit)/Loss on disposal of tangible assets “475 (19,625)
+Interest paid 28,922 11,400
+Interest received (11,190) (32,143)
+Taxation charge 178,423 83,883
+Decrease/(increase) in stocks 20,954 (88,225)
+(increase) in debtors (1,311,198) (7,901,848)
+Increase in creditors 577,702 1,136,714
+Net cash generated from operating activities (1,196,167) (257,277)
+Page 16
+EXETER CITY A.F.C. LIMITED
+CONSOLIDATED STATEMENT OF CASH FLOWS (CONTINUED)
+FOR THE YEAR ENDED 30 JUNE 2025
+2025 2024
+£ £
+Cash flows from investing activities
+Purchase of intangible fixed assets (280,000) (140,095)
+Sale of intangible assets 1,600,000 35,000
+Purchase of tangible fixed assets (488,527) (370,521)
+Sale of tangible fixed assets 292 19,625
+Interest received 11,190 32,143
+HP interest paid - (11,400)
+Cash Acquired with Subsidiary (OTR) 42,811 -
+Net cash from investing activities 885,766 (435,248)
+Cash flows from financing activities
+Other new loans 593,136 3,079
+Repayment of other loans (3,079) -
+Repayment of/new finance leases (250,126) (48,600)
+Net cash used in financing activities 339,931 (45,521)
+Net increase/(decrease) in cash and cash equivalents 29,530 (738,046)
+Cash and cash equivalents at beginning of year 317,573 1,055,619
+Cash and cash equivalents at the end of year 347,103 317,573
+Cash and cash equivalents at the end of year comprise:
+Cash at bank and in hand 347,103 317,573
+347,103 317,573
+The notes on pages 19 to 47 form part of these financial statements.
+Page 17
+EXETER CITY A.F.C. LIMITED
+: CONSOLIDATED ANALYSIS OF NET DEBT
+FOR THE YEAR ENDED 30 JUNE 2025
+Acquisition
+and Other non- :
+
+At 1 July disposal of cash At 30 June
+2024 Cash flows subsidiaries changes 2025
+£ £ £ £ . £
+Cash at bank and in hand 317,573 (13,281) 42,811 - 347,103
+
+Debt due within 1 year (3,079) 3,079 - - -
+
+Finance leases (236,400) 250,126 - (13,726) -
+78,094 239,924 42,811 (13,726) 347,103
+
+The notes on pages 19 to 47 form part of these financial statements.
+
+Page 18
+EXETER CITY A.F.C. LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+1. General information
+Exeter City A.F.C. Limited is a private company, limited by shares, registered in England and Wales,
+company number 00097808. The registered office is St James Park, Stadium Way, Exeter, Devon, EX4
+6PX.
+2. Statement of compliance
+These financial statements have been prepared in accordance with Financial Reporting Standard 102
+"The Financial Reporting Standard applicable in the UK and Republic of Ireland" and the Companies Act
+: 2006. :
+3. Accounting policies
+3.1 Basis of preparation of financial statements
+. The financial statements have been prepared under.the historical cost convention unless otherwise
+specified within these accounting policies and in accordance with Financial Reporting Standard 102,
+the Financial Reporting Standard applicable in the UK and the Republic of Ireland and the
+Companies Act 2006.
+The preparation of financial statements in compliance with FRS 102 requires the use of certain
+critical accounting estimates. It also requires Group management to exercise judgment in applying
+the Group's accounting policies (see note 4).
+The Company has taken advantage of the exemption allowed under section 408 of the Companies
+Act 2006 and has not presented its own Statement of income and retained earnings in these
+financial statements.
+The following principal accounting policies have been applied:
+3.2 Basis of consolidation
+The consolidated financial statements present the results of the Company and its own subsidiaries
+("the Group") as if they form a single entity. intercompany transactions and balances between group
+companies are therefore eliminated in full.
+The consolidated financial statements incorporate the results of business combinations using the
+purchase method. In the Balance sheet, the acquiree's identifiable assets, liabilities and contingent
+liabilities are initially recognised at their fair values at the acquisition date. The results of acquired
+: operations are included in the Consolidated statement of income and retained earnings from the
+date on which control is obtained. They are deconsolidated from the date control ceases.
+Audit exemption for subsidiaries
+For the year ended 30 June 2025, the following subsidiaries of the Group were entitled to exemption
+from audit of their individual accounts under Section 479A of the Companies Act 2006 relating to
+subsidiary companies.
+Subsidiary name Registration number
+ECWFC Limited 15820071
+OTR (Exeter) Limited 03567252
+. Page 19
+EXETER CITY A.F.C. LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+3. Accounting policies (continued)
+3.3. Going concern
+Although the accounts show a profit of £348,214 due to transfer revenue, with the removal of this, it
+shows a loss of £4,581,291, £281,388 of this loss relates to the women’s team, and £1,492 of this
+loss relates to OTR (Exeter) Limited, with the remaining loss attributable to the men’s team. The
+position of the company looks more favourable due to transfer revenue, but these are paid in
+instalments across many years, meaning that this still creates an ongoing issue with cashflow.
+The directors have considered the going concern basis of the Company taking into account the
+recent events affecting the club’s finances. The directors have considered all aspects of the
+Company's business when looking at the going concern basis.
+Whilst the Company has posted a profit for the year ended 30th June 2025, it needed to seek a joan
+of £400k from its majority shareholder Exeter City Supporters Trust to meet its obligations related to
+the June 2025 payroll. A further loan was needed in November 2025 of £200k again to meet its
+: payroll obligations.
+
+In early December 2025 the Company arranged an advance of funds of £1m in relation to
+instalments of player transfer fees that were not due to be received until July 2026, July 2027 and
+July 2028.
+Following a review of the Company's finances, several steps were taken to reduce costs including
+employee redundancies. In addition, a full cashflow analysis was carried out to manage the income
+and costs through to the end of the current season (2025-26). Further cashflows and budgets have
+been prepared for the 2026-27 season running different scenarios, which sees the continued need
+to reduce costs and increase income where possible in order for the Company to operate. These
+budgets are in the first instance challenging and rely on the continued financial support of the
+Supporters’ Trust, however, there are significant items of potential contingent income relating to past
+players that would make this more manageable.
+The directors acknowledge that due to the uncertainty of the future contingent income and the
+teliance on the Supporters Trust, there exists a material uncertainty regarding going concern,
+however, the preparation of the accounts on a going concern basis is still deemed appropriate.
+Material uncertainty exists due to factors that may affect the flow of future cash and the entities
+ability to pay creditors as they fall due. These factors are such as:
+« Reliance on the support from the Supporters Trust
+« The need to reduce the playing budget substantially
+e The overall competitiveness of the squad post reduction of the playing budget, and the effect
+
+thereof on: .
+
+° League standings - potential relegation from league one
+
+° Attendances on matchdays due to a potentially lessor performing squad.
+e Potential future external investment
+e Reliance on player sales and contingent clauses
+
+Page 20
+EXETER CITY A.F.C. LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+3. Accounting policies (continued)
+
+3.4 Foreign currency translation
+Functional and presentation currency
+The Company's functional and presentational currency is GBP.
+Transactions and balances :
+Foreign currency transactions are translated into the functional currency using the spot exchange
+rates at the dates of the transactions.
+At each period end foreign currency monetary items are translated using the closing rate. Non-
+monetary items measured at historical cost are translated using the exchange rate at the date of the
+transaction and non-monetary items measured at fair value are measured using the exchange rate
+when fair value was determined.
+Foreign exchange gains and losses resulting from the settlement of transactions and from the
+translation at period-end exchange rates of monetary assets and liabilities denominated in foreign
+currencies are recognised in profit or loss except when deferred in other comprehensive income as
+qualifying cash flow hedges. .
+
+3.5 Revenue
+Revenue is recognised to the extent that it is probable that the economic benefits will flow to the
+Group and the revenue can be reliably measured. Revenue is measured as the fair value of the
+consideration received or receivable, excluding discounts, rebates, value added tax and other sales
+taxes. The following criteria must also be met before revenue is recognised:
+Turnover represents income from television rights, gate receipts, catering and bar sales, club shop
+and other commercial activities, exclusive of VAT.
+Season tickets sold in advance of the following season are included in deferred income and
+accounted for as turnover in the season to which they relate.
+Parachute payments by the Football League are included as turnover in the year of relegation.
+Also included in turnover is the income for the support of the youth training academy, Exeter City
+Centres of Excellence. .
+Transfer fees are only included when there is a contractual certainty as to their receipt and are
+disclosed separately in the income statement.
+
+3.6 Operating leases: the Group as lessee
+Rentals paid under operating leases are charged to profit or loss on a straight-line basis over the
+lease term.
+
+3.7 Interest income
+Interest income is recognised in profit or loss using the effective interest method.
+
+Page 21
+EXETER CITY A.F.C. LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+3. Accounting policies (continued)
+3.8 Finance costs
+Finance costs are charged to profit or loss over the term of the debt using the effective interest
+method so that the amount charged is at a constant rate on the carrying amount. Issue costs are
+initially recognised as a reduction in the proceeds of the associated capital instrument.
+: 3.9 Borrowing costs ;
+All borrowing costs are recognised in profit or loss in the year in which they are incurred.
+3.10 Pensions
+Defined contribution pension plan
+The Group operates a defined contribution plan for its employees. A defined contribution plan is a
+pension plan under which the Group pays fixed contributions into a separate entity. Once the
+contributions have been paid the Group has no further payment obligations.
+The contributions are recognised as an expense in profit or loss when they fall due. Amounts not
+paid are shown in accruals as a liability in the Balance sheet. The assets of the plan are held
+separately from the Group in independently administered funds.
+_3.11 Current and deferred taxation
+The tax expense for the year comprises current and deferred tax. Tax is recognised in profit or loss
+except that a charge attributable to an item of income and expense recognised as other
+comprehensive income or to an item recognised directly in equity is also recognised in other
+comprehensive income or directly in equity respectively.
+The current income tax charge is calculated on the basis of tax rates and laws that have been
+enacted or substantively enacted by the balance sheet date in the countries where the Company and
+the Group operate and generate income.
+Deferred tax balances are recognised in respect of all timing differences that have originated but not
+reversed by the balance sheet date, except that:
+. The recognition of deferred tax assets is limited to the extent that it is probable that they will
+be recovered against the reversal of deferred tax liabilities or other future taxable profits; and
+. Any deferred tax balances are reversed if and when all conditions for retaining associated tax .
+allowances have been met.
+
+Deferred tax balances are not recognised in respect of permanent differences except in respect of
+business combinations, when deferred tax is recognised on the differences between the fair values
+of assets acquired and the future tax deductions available for them and the differences between the
+fair values of liabilities acquired and the amount that will be assessed for tax. Deferred tax is
+determined using tax rates and laws that have been enacted or substantively enacted by the balance
+sheet date.
+
+Page 22
+EXETER CITY A.F.C. LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+, 3. Accounting policies (continued)
+
+3.12 Intangible assets ,
+Intangible assets are initially recognised at cost. After recognition, under the cost model, intangible
+assets are measured at cost less any accumulated amortisation and any accumulated impairment
+losses.
+All intangible assets are considered to have a finite useful life. If a reliable estimate of the useful life
+cannot be made, the useful life shall not exceed ten years.
+
+3.13 Player costs included as intangible assets
+The costs associated with acquiring players’ registrations or extending their contracts, including
+agents’ fees, are capitalised and amortised, in equal instalments, over the period of the respective
+players’ contracts.
+Under the conditions of certain transfer agreements or contract renegotiations, further fees will be
+payable in the events of the occurrence of certain other specified future events. Liabilities in respect
+of these additional fees are accounted for, as provisions, when it becomes probable that the number
+of appearances will be achieved or the specified future events will occur. The additional costs are :
+capitalised and amortised as set out above.
+Profits or losses on the sale of players represent the transfer fee receivable, net of any transaction
+costs, less the unamortised cost of the applicable player's registration.
+Remuneration of players is charged in accordance with the terms of the applicable contractual
+arrangements and any discretionary bonuses when there is a legal or constructive obligation.
+
+3.14 Tangible fixed assets
+Tangible fixed assets under the cost model are stated at historical cost less accumulated
+depreciation and any accumulated impairment losses. Historical cost includes expenditure that is
+directly attributable to bringing the asset to the location and condition necessary for it to be capable :
+of operating in the manner intended by management.
+At each reporting date the Group assesses whether there is any indication of impairment. If such
+indication exists, the recoverable amount of the asset is determined which is the higher of its fair
+value less costs to sell and its value in use. An impairment loss is recognised where the carrying
+amount exceeds the recoverable amount.
+
+, Page 23
+EXETER CITY A.F.C. LIMITED
+, NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+3. Accounting policies (continued)
+
+3.14 Tangible fixed assets (continued)
+
+Depreciation is charged so as to allocate the cost of assets less their residual value over their
+estimated useful lives, using the straight-line method.
+Depreciation is provided on the following basis:
+
+Freehold buildings - 10 - 50 years straight line
+
+Leasehold buildings - over term of lease
+
+Land - not depreciated
+
+Plant and machinery - 33% straight line
+
+Motor vehicles - 33% straight line
+
+. Fixtures and fittings - 33% straight line
+
+Football pitches - 10 - 20 years straight line
+
+Computer equipment - 33% straight line
+The OTR building included within Leasehold property is not depreciated due to Exeter City
+maintaining the property is a good condition. Various improvement work has been carried out on the
+property, and therefore the purchase price is reflective of the value of the property.
+The assets’ residual values, useful lives and depreciation methods are reviewed, and adjusted
+prospectively if appropriate, or if there is an indication of a significant change since the last reporting
+date.
+Gains and losses on disposals are determined by comparing the proceeds with the carrying amount
+
+. and are recognised in profit or loss.
+
+3.15 Valuation of investments
+Investments in subsidiaries are measured at cost less accumulated impairment.
+
+3.16 Stocks .
+
+Stocks are stated at the lower of cost and net realisable value, being the estimated selling price less
+costs to complete and sell. Cost is based on the cost of purchase on a weighted average basis.
+
+At each balance sheet date, stocks are assessed for impairment. If stock is impaired, the carrying
+amount is reduced to its selling price less costs to complete and sell. The impairment loss is
+recognised immediately in profit or loss.
+
+3.17 Debtors .
+Short-term debtors are measured at transaction price, less any impairment. Loans receivable are
+measured initially at fair value, net of transaction costs, and are measured subsequently at
+amortised cost using the effective interest method, less any impairment.
+
+Page 24
+EXETER CITY A.F.C. LIMITED
+NOTES TO THE FINANCIAL STATEMENTS :
+FOR THE YEAR ENDED 30 JUNE 2025
+3. Accounting policies (continued)
+3.18 Cash and cash equivalents
+Cash is represented by cash in hand and deposits with financial institutions repayable without
+penalty on notice of not more than 24 hours. Cash equivalents are highly liquid investments that
+mature in no more than three months from the date of acquisition and that are readily convertible to
+known amounts of cash with insignificant risk of change in value.
+In the Consolidated statement of cash flows, cash and cash equivalents are shown net of bank
+overdrafts that are repayable on demand and form an integral part of the Group's cash
+management.
+3.19 Creditors
+Short-term creditors are measured at the transaction price. Other financial liabilities, including bank
+loans, are measured initially at fair value, net of transaction costs, and are measured subsequently
+at amortised cost using the effective interest method.
+3.20 Provisions for liabilities .
+Provisions are recognised when an event has taken place that gives rise to a legal or constructive
+obligation, a transfer of economic benefits is probable and a reliable estimate can be made.
+Provisions are measured as the best estimate of the amount required to settle the obligation, taking
+into account the related risks and uncertainties.
+Increases in provisions are generally charged as an expense to profit or loss.
+3.21 Financial instruments
+The Group has elected to apply the provisions of Section 11 “Basic Financial Instruments” of FRS
+102 to all of its financial instruments.
+The Group has elected to apply the recognition and measurement provisions of IFRS 9 Financial
+Instruments (as adopted by the UK Endorsement Board) with the disclosure requirements of
+Sections 11 and 12 and the other presentation requirements of FRS 102.
+Financial instruments are recognised in the Group's Balance sheet when the Group becomes party
+to the contractual provisions of the instrument.
+Financial assets and liabilities are offset, with the net amounts presented in the financial
+statements, when there is a legally enforceable right to set aff the recognised amounts and there is
+an intentloh to settle on a net basis or to realise the asset and settle the liability simultaneously.
+Basic financial assets
+Basic financial assets, which include trade and other debtors, cash and bank balances, are initially
+measured at their transaction price (adjusted for transaction costs except in the initial measurement
+of financial assets that are subsequently measured at fair value through profit and loss) and are
+subsequently carried at their amortised cost using the effective interest method, less any provision
+for impairment, unless the arrangement constitutes a financing transaction, where the transaction is
+measured at the present value of the future receipts discounted at a market rate of interest.
+Page 25
+EXETER CITY A.F.C. LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+3. Accounting policies (continued)
+3.21 Financial instruments (continued)
+
+Discounting is omitted where the effect of discounting is immaterial. The Group's cash and cash
+equivalents, trade and most other debtors due with the operating cycle fall into this category of
+financial instruments.
+Other financial assets
+Other financial assets, which includes investments in equity instruments which are not classified as
+subsidiaries, associates or joint ventures, are initially measured at fair value, which is normally the
+recognised transaction price. Such assets are subsequently measured at fair value with the changes
+in fair value being recognised in the profit or loss. Where other financial assets are not publicly
+traded, hence their fair value cannot be measured reliably, they are measured at cost less
+impairment.
+impairment of financial assets
+
+. At the end of each reporting period financial assets measured at amortised cost are assessed for
+objective evidence of impairment. If an asset is impaired the impairment loss is the difference
+between the carrying amount and the present value of the estimated cash flows discounted at the
+asset's original effective interest rate. The impairment loss is recognised in profit or loss.
+Financial assets are impaired when events, subsequent to their initial recognition, indicate the
+estimated future cash flows derived from the financial asset(s) have been adversely impacted. The
+impairment loss will be the difference between the current carrying amount and the present value of
+the future cash flows at the asset(s) original effective interest rate.
+lf there is a favourable change in relation to the events surrounding the impairment loss then the :
+impairment can be reviewed for possible reversal. The reversal will not cause the current carrying
+amount to exceed the original carrying amount had the impairment not been recognised. The
+impairment reversal is recognised in the profit or loss.
+Financial liabilities
+Financial liabilities and equity instruments are classified according to the substance of the
+contractual arrangements entered into. An equity instrument is any contract that evidences a
+residual interest in the assets of the Group after the deduction of all its liabilities.
+Basic financial liabilities, which include trade and other creditors, bank loans, other loans and loans
+due to fellow group companies are initially measured at their transaction price (adjusting for
+transaction costs except in the initial measurement of financial liabilities that are subsequently
+measured at fair value through profit and loss). When this constitutes a financing transaction,
+whereby the debt instrument is measured at the present value of the future payments discounted at
+a market rate of interest, discounting is omitted where the effect of discounting is immaterial.
+Debt instruments are subsequently carried at their amortised cost using the effective interest rate
+method.
+Trade creditors are obligations to pay for goods and services that have been acquired in the ordinary
+course of business from suppliers. Trade creditors are classified as current liabilities if the payment
+is due within one year. If not, they represent non-current liabilities. Trade creditors are initially
+recognised at their transaction price and subsequently are measured at amortised cost using the
+
+Page 26
+EXETER CITY A.F.C. LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+3. Accounting policies (continued)
+3.21 Financial instruments (continued)
+effective interest method. Discounting is omitted where the effect of discounting is immaterial.
+3.22 Capital grants
+The Football Foundation Grant is a contribution towards capital expenditure on leasehold property.
+The grant is included in the profit and loss account over the remaining term of the lease, so as to
+match it with the depreciation of the leasehold property improvements, to which it relates.
+
+3.23 Income from The Exeter City AFC Supporters Society Limited
+
+Income received from the supporters’ society was treated historically as a donation to Exeter City
+A.F.C. Limited. However since the year ended 30 June 2024, the income is treated as a loan
+repayable by Exeter City A.F.C. Limited. This is included within note 20, under other creditors.
+
+4. Judgments in applying accounting policies and key sources of estimation uncertainty
+
+The preparation of financial statements in compliance with FRS 102 requires the use of certain critical
+
+accounting estimates. It also requires management to exercise judgement in applying the Company's
+
+accounting policies.
+
+The financial statements contain significant judgements and estimates as follows:
+
+_ * Depreciation - Assets are carried at cost, less accumulated depreciation and any subsequent
+accumulated impairment loss. This requires an estimation in the depreciation rates of assets, so that
+the cost is recognised over their useful economic life.
+
+e Player sell on clauses - A significant estimate is in place for the future recoverability of income that is
+generated from sell on clauses included in a transfer agreement. This requires significant estimation
+regarding the likelihood of a player to achieve such clauses and how far through the completion of
+these clauses the player is at the year end, and therefore whether it is deemed correct to recognise
+the income for this in the year.
+
+5. Turnover
+An analysis of turnover by class of business is as follows: ,
+. 2025 2024
+. £ £
+. Gates 1,361,318 1,454,880
+
+Season ticket sales 808,738 800,090
+
+Commercial activities 2,436,251 1,838,941
+
+Football League 2,710,542 1,811,351
+
+Television income 10,000 10,000
+
+Food and drink sales 886,029 653,690
+
+8,212,878 6,568,952
+Page 27
+; EXETER CITY A.F.C. LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+6. Other operating income
+2025 2024
+£ £
+Grants and donations : 615,898 503,118
+Insurance claims receivable 6,475 24,590
+: 622,373 527,708
+7. Operating loss
+The operating loss is stated after charging:
+2025 2024
+£ £
+Operating leases 53,715 28,898
+Depreciation 405,905 367,706
+Profit and loss on disposal 175 (19,625)
+Player registration costs amortisation 97,753 86,672
+Auditors remuneration 15,500 9,100
+8. Transfer fees
+Transfer fees for the transfer of registration of players have been disclosed separately in the profit and
+loss account to provide a more true and fair view.
+9. Auditors’ remuneration
+During the year, the Group obtained the following services from the Company's auditors:
+2025 2024
+. £ £
+Fees payable to the Company's auditors for the audit of the consolidated
+and parent Company's financial statements 15,500 9,100
+Page 28
+EXETER CITY A.F.C. LIMITED
+NOTES TO THE FINANCIAL STATEMENTS .
+FOR THE YEAR ENDED 30 JUNE 2025
+10. Employees
+Staff costs were as follows: ;
+Group Group Company Company
+2025 2024 2025 2024
+£ £ £ £
+Wages and salaries * 6,170,478 4,646,869 6,170,478 4,646, 869
+Social security costs 651,402 439,773 651,402 439,773
+Cost of defined contribution scheme 57,783 46,321 57,783 46,321
+6,879,663 5,132,963 6,879,663 5,132,963
+The average monthly number of employees, including the directors, during the year was as follows:
+Group Group Company Company
+2025 2024 2025 2024
+No. No. No. No.
+: Players 67 45 67 45
+Other staff 237 354 237 354
+304 399 304 399
+11. Directors’ remuneration
+The highest paid director received remuneration of £6,000 (2024: £31,500).
+12. Interest receivable
+2025 2024
+£ £
+Other interest receivable 11,190 32,143
+. - - . 11,190 32,143 -
+Page 29
+EXETER CITY A.F.C. LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+_ FOR THE YEAR ENDED 30 JUNE 2025 .
+13. Interest payable and similar expenses
+2025 2024
+, £ £
+Bank interest payable 225 -
+Finance leases and hire purchase contracts : 11,400
+Other interest payable 28,697 -
+28,922 11,400
+14. Taxation
+2025 2024
+£ £
+Corporation tax
+. Current tax on profits for the year 98,813 -
+Adjustments in respect of previous periods - (62,561)
+98,813 (62,561)
+Total current tax 98,813 (62,561)
+Deferred tax
+Origination and reversal of timing differences 79,610 146,444
+Total deferred tax 79,610 146,444
+Tax on profit 178,423 83,883
+Page 30
+EXETER CITY A.F.C. LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+14. Taxation (continued)
+Factors affecting tax charge for the year
+The tax assessed for the year is the same as (2024 - the same as) the standard rate of corporation tax in
+the UK of 25% (2024 - 25%) as set out below:
+2025 2024
+£ £
+Profit on ordinary activities before tax 820,598 182,072
+Profit on ordinary activities multiplied by standard rate of corporation tax in
+the UK of 25% (2024 - 25%) 205,150 45,518
+Effects of:
+Expenses not deductible for tax purposes, other than goodwill amortisation
+and impairment 5,718 19,640
+Capital allowances for year in excess of depreciation (7,116) 1,165
+Utilisation of tax losses (37,879) (66,323)
+Remeasurement of deferred tax for changes in tax rate 79,610 146,444
+Adjustments to tax charge in respect of prior periods - (62,561)
+Adjustments for tax charge in subsidiary company 3,575 oof
+Group relief (70,635) -
+Total tax charge for the year 178,423 83,883
+Factors that may affect future tax charges
+There were no factors that may affect future tax charges.
+Page 31
+. EXETER CITY A.F.C. LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+15. Intangible assets
+Group
+Player
+registration
+costs Goodwill Total
+£ £ £
+Cost
+At 1 July 2024 192,595 - 192,595
+Additions 280,000 - 280,000
+Disposals (122,500) - (122,500)
+On acquisition of subsidiaries - 14,656 14,656
+At 30 June 2025 350,095 14,656 364,751
+Amortisation
+At 1 July 2024 97,172 - 97,172
+Charge for the year on owned assets 97,753 14,656 112,409
+On disposals (75,833) - (75,833)
+At 30 June 2025 119,092 14,656 133,748
+Net book value
+At 30 June 2025 231,003 - 231,003
+At 30 June 2024 95,423 - 95,423
+: Page 32
+EXETER CITY A.F.C. LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+15. Intangible assets (continued)
+Company
+Player
+registration
+costs
+£
+Cost
+At 1 July 2024 192,595
+Additions 280,000
+Disposals (122,506)
+At 30 June 2025 350,095
+Amortisation
+At 1 July 2024 97,172
+Charge for the year 97,753
+On disposals (75,833)
+At 30 June 2025 119,092
+Net book value
+At 30 June 2025 231,003
+At 30 June 2024 95,423
+Page 33
+EXETER CITY A.F.C. LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+7 FOR THE YEAR ENDED 30 JUNE 2025
+16. Tangible fixed assets
+Group
+Leasehold Freehold Fixtures Player
+land and landand Plant and Motor and Assets under registration Football
+buildings buildings machinery vehicles _ fittings constr. costs pitches Total
+£ £ £ £ £ £ £ £ £
+Cost or valuation
+At 1 July 2024 4,264,949 3,402,916 293,045 48,761 370,238 6,798 - 945,261 9,331,968
+Additions 229,252 28,016 118,836 1,600 109,539 : 1,284 - 488,527
+Disposals - - (700) - - - - - (700)
+Transfers between classes 6,798 - 7 : - (6,798) 7 he i
+At 30 June 2025 4,500,999 3,430,932 411,181 50,361 479,777 - 1,284 945,261 9,819,795
+Page 34
+EXETER CITY A.F.C. LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+16. Tangible fixed assets (continued)
+Depreciation
+At 1 July 2024 3,330,728 159,023 136,140 29,102 253,350 - - 377,300 4,285,643
+Charge for the year on owned
+assets 73,824 91,786 63,704 10,368 118,997 - 424 53,652 412,755
+Disposals : - (233) - - - rf a (233)
+At 30 June 2025 3,404,552 250,809 199,611 39,470 372,347 - 424 430,952 4,698,165
+Net book value
+At 30 June 2025 1,096,447 3,180,123 211,570 10,891 107,430 - 860 514,309 5,121,630
+At 30 June 2024 934,221 3,243,893 156,905 19,659 116,888 6,798 - 567,961 5,046,325
+Page 35
+EXETER CITY A.F.C. LIMITED
+ee
+i NOTES TO THE FINANCIAL STATEMENTS
+: FOR THE YEAR ENDED 30 JUNE 2025
+16. Tangible fixed assets (continued)
+Company
+Long-term
+Freehold leasehold Plant and Motor Fixtures and Office Other fixed
+: property property machinery vehicles fittings equipment assets Total
+£ £ £ £ £ £ £ £
+Cost or valuation
+At 1 July 2024 : 4,264,949 3,402,916 293,045 48,761 370,238 6,798 945,261 9,331,968
+Additions ; 229,252 28,016 115,290 1,600 109,422 - - 483,580
+Disposals - - (700) - - - - (700)
+Transfers between classes 6,798 - - - - (6,798) - -
+At 30 June 2025 4,500,999 3,430,932 407,635 50,361 479,660 - 945,261 9,814,848
+i /JSuanSESEnSnge0e00005000080550505000see065e90nessnssses0e)025i0e0s05ess0s000s05005e5555s0550s5se5iesss0eReeeeennn
+i
+'
+1
+i
+Page 36
+EXETER CITY A.F.C. LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+16. Tangible fixed assets (continued)
+
+Depreciation
+
+At 1 July 2024 3,330,728 159,023 136,140 29,102 253,350 - 377,300 4,285,643
+
+Charge for the year on owned assets. 73,824 91,786 62,534 10,368 118,958 - 53,652 411,122
+
+Disposals - - (233) - - : chee (233)
+
+At 30 June 2025 3,404,552 250,809 198,441 39,470 372,308 - 430,952 4,696,532
+
+Net book value
+
+At 30 June 2025 1,096,447 3,180,123 209,194 10,891 107,352 - 514,309 5,118,316
+is At 30 June 2024 934,221 3,243,893 156,905 19,659 116,888 6,798 567,961 5,046,325
+
+Page 37
+EXETER CITY A.F.C. LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+16. Tangible fixed assets (continued)
+The net book value of assets held under finance leases or hire purchase contracts, included above, are
+as follows:
+2025 2024
+£ £
+Land and buildings , 650,000 650,000
+650,000 650,000
+17. Fixed asset investments
+Company
+Investments
+: in subsidiary
+companies .
+£
+Cost or valuation
+Additions , 100
+At 30 June 2025 100
+Net book value
+At 30 June 2025 . 100
+At 30 June 2024 -
+Page 38
+. EXETER CITY A.F.C. LIMITED
+. NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+17. Fixed asset investments (continued)
+Subsidiary undertakings :
+The following were subsidiary undertakings of the Company:
+Class of
+Name Registered office shares Holding
+ECWFC Limited St. James Park, Stadium Ordinary 100
+Way, Exeter, England,
+EX4 6PX
+OTR (Exeter) Limited St James' Park, Exeter, No share 0
+Devon, EX4 6PX capital
+The aggregate of the share capital and reserves as at 30 June 2025 and the profit-or loss for the year
+ended on that date for the subsidiary undertakings were as follows:
+Aggregate of
+share capital
+Name and reserves Profit/(Loss)
+£ £
+ECWFC Limited (281,288) (281,388)
+OTR (Exeter) Limited (16,148) (1,492)
+18. Stocks
+Group Group Company Company
+2025 2024 2025 2024
+£ £ £ £
+Bar and shop stock 108,801 129,755 108,801 129,755
+. 108,801 129,755 108,801 129,755
+Page 39
+EXETER CITY A.F.C. LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+19. Debtors
+Group Group Company Company
+2025 2024 2025 2024
+£ £ £ £
+Due after more than one year
+Trade debtors 2,645,339 590, 833 2,645,339 590,833
+Amounts owed by group undertakings - - 36,750 -
+Other debtors - 36,750 - 36,750
+2,645,339 627,583 2,682,089 627,583
+Due within one year
+Trade debtors 1,696,864 1,857,537 1,696,864 1,857,537
+Amounts owed by group undertakings - - 293,106 -
+Other debtors 103,108 30,183 53,997 30, 183
+: Prepayments and accrued income 330,815 986,375 330,773 986,375
+4,776,126 3,501,678 5,056,829 3,501,678
+20. Creditors: Amounts falling due within one year
+Group Group Company Company
+2025 2024 2025 2024
+£ £ £ £
+Other loans - 3,079 - 3,079
+Trade creditors 828,454 551,320 826,798 551,320
+Corporation tax 110,674 - 95,238 -
+Other taxation and social security 688,260 274,354 687,536 274,354
+Obligations under finance lease and hire
+purchase contracts - 50,544 - 50,544
+Other creditors 35,954 384,607 35,953 384,607
+Accruals and deferred income 1,364,958 1,394,908 41,322,961 1,394,908
+3,028,300 2,658,812 2,968,486 2,658,812
+Page 40
+EXETER CITY A.F.C. LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+21. Creditors: Amounts falling due after more than one year
+Group Group Company Company
+2025 2024 2025 2024
+£ £ £ £
+Net obligations under finance leases and hire
+purchase contracts - 185,856 - 185,856
+Trade creditors - 79,200 - 79,200
+Other creditors 961,653 - 961,653 -
+961,653 265,056 961,653 265,056
+22. Leases
+Minimum lease payments fall due as follows:
+Group Group Company Company
+2025 2024 2025 2024
+£ £ £ £
+- Within one year 52,270 50,544 52,270 50,544
+Between 1-5 years 196,565 185,856 196,565 185, 856
+248,835 236,400 248,835 236,400
+23. Deferred taxation
+Group
+2025 2024
+£ £
+At beginning of year _ _ oo (133,515) 12,929
+Charged to profit or loss (79,610) (146,444)
+At end of year (213,125) (133,515)
+Page 41
+, EXETER CITY A.F.C. LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+23. Deferred taxation (continued)
+Company
+2025 2024
+£ £
+At beginning of year (133,515) 12,929
+Charged to profit or loss (79,610) (146,444)
+At end of year (213,125) (133,515)
+The deferred taxation balance is made up as follows:
+Group © Group Company Company
+2025 2024 2025 2024
+£ £ £ £
+Fixed asset timing differences (213,125) (199,838) (213,125) (199,838)
+Losses and other deductions - 66,323 - 66,323
+(213,125) (133,515) (213,125) (133,515)
+Page 42
+EXETER CITY A.F.C. LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+24. Share capital
+2025 2024
+£ £
+Allotted, called up and fully paid
+30,941 (2024 - 30,941) Ordinary shares of £1.00 each 30,941 30,941
+6,032 (2024 - 6,032) Non cumulative 5% preference shares of £1.00 each 6,032 6,032 :
+36,973 36,973
+25. Reserves :
+Capital redemption reserve
+The capital redemption reserve reflects the nominal value of own shares which have been repurchased
+and subsequently cancelled.
+Profit and loss account
+The profit and loss reserve reflects cumulative profits and losses net of distributions to shareholders. ,
+Page 43
+EXETER CITY A.F.C. LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+26. Business combinations
+Exeter City AFC Limited became the sole member of OTR (Exeter) Limited on 31st October 2024. OTR
+(Exeter) Limited is a private company limited by guarantee without share capital.
+No consideration was paid for the company. ;
+Acquisition of OTR (Exeter) Limited
+Recognised amounts of identifiable assets acquired and liabilities assumed
+Fair value
+Book value adjustments Fair value
+£ £ £
+Current Assets
+Debtors 246,400 - 246,400
+Cash at bank and in hand 42,814 - 42,811
+Total Assets 289,211 - 289,211
+Creditors
+Due within one year (303,868) - (303,868)
+Total Identifiable net liabilities (14,657) - (14,657)
+Goodwill ; 14,657
+Total purchase consideration -
+The goodwill arising on acquisition is attributable to retained earnings at the date of acquisition.
+The results of OTR (Exeter) Limited since acquisition are as follows:
+-- : - : : - - Current
+period since
+acquisition
+£
+(Loss) for the period since acquisition (1,492)
+Page 44 :
+EXETER CITY A.F.C. LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025 .
+27. Pension commitments
+The Company operates a defined contribution pension scheme. During the year, contributions totalling
+£57,783 (2024: £46,321) were paid into the scheme. At the year end amounts payable to the scheme,
+and recognised in creditors totalled £10,660 (2024: £10,948).
+28. Commitments under operating leases
+At 30 June 2025 the Group and the Company had future minimum lease payments due under non-
+cancellable operating leases for each of the following periods:
+Group Group Company Company
+2025 2024 2025 2024
+£ £ £ £
+Not later than 1 year 52,270 47,350 52,270 47,350
+Later than 1 year and not later than 5 years 196,565 189,400 196,565 189,400
+Later than 5 years 804,950 852,300 804,950 852,300
+1,053,785 1,089,050 1,053,785 1,089,050
+: Page 45
+EXETER CITY A.F.C. LIMITED
+NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+29. Related party transactions
+City Community Trust
+A charity in which J F Tagg, C Harrison and A Rothwell were Trustees during the year.
+Included in the profit and loss account is income from the City Community Trust of £57,370 (2024:
+£55,416) and expenses of £42,596 (2024: £53,818). At the balance sheet date the amount due to the City
+Community Trust is £9,010 (2024: £417) and the amount owed by the City Community Trust is £39,311
+(2024: £38,260).
+A property lease is held with JF Tagg, which is used to accommodate players, typically on loan to the
+Club. The annual rent under the lease is £33,300 and the lease term is one year.
+The following directors claimed reimbursement of expenses:
+- JF Tagg - £3,095
+- C Bawden - £3,347
+- J Hart - £657
+-§ Exley - £523
+- N Hawker - £386
+In all instances, ENil was outstanding at the year end.
+McQueenie Mulholland Limited (Reg No 03567252)
+A private company in which S McQueenie is a director and shareholder.
+Included in the profit and loss account are fees for services of £21,380 (2024: 17,584). The outstanding
+balance at the end of the year is £1,638 (2024: £1,638). This is a rolling contract with McQueenie
+Mulholland for marketing and communication services.
+. Page 46
+& ; .
+EXETER CITY A.F.C. LIMITED
+. NOTES TO THE FINANCIAL STATEMENTS
+FOR THE YEAR ENDED 30 JUNE 2025
+
+Rolls Bridge Holdings Limited (Reg No 10432621) 7
+A private company in which J F Tagg is a director.
+Included in the profit and loss account are fees payable to Rolls Bridge Holdings Limited of £38,201
+(2024: £40,075). At the balance sheet date there was ENil owed to the company (2024: ENil).
+Exeter City AFC Supporters Society Limited (controlling party) (Registered Society, Reg No IP29339R)
+At the balance sheet date there was £947,306 owed to the Exeter City AFC Supporters Society Limited
+(2024: £356,017). No interest is being charged on this balance.
+
+30. Post balance sheet events
+In November 2025, a fire broke out at St James Park and caused approximately £100k worth of damage.
+No adjustment is required for this event, since the damage will be covered by insurance.
+At the year end, there was £2,753,333 included in trade debtors that was owed on the transfer of an
+existing player. Part of this balance has been factored to help with cashflow, with approximately £985k
+received for this debt.
+
+31. Controlling party .
+The company is controlled by Exeter City AFC Supporters Society Limited, whose registered office is at
+St James Park, Stadium Way, Exeter, Devon, EX4 6PX and whose principal place of operation is at the
+offices of the company.
+
+32. Revision to accounts
+These revised financial statements replace the originally filed accounts and are the statutory accounts of
+the company for the financial year ended 30/06/2025.They have been prepared as at the date of the
+original approval and do not deal with events between the original approval date and the date of filing
+these accounts.
+The previously filed financial statements have been revised solely to reflect minor changes in wording to
+the Directors’ report. There has been no change to the figures, accounting policies, disclosures or
+financial position previously reported
+
+Date of Approval of Revision of Report 23/04/2026
+Director(s) Approving
+Tauntncr, Ovvund.
+L Overend ”
+Director
+: Page 47
 

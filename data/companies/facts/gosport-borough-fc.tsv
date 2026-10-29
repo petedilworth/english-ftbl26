@@ -1,4 +1,40 @@
 club_id	company_number	document	filing_date	made_up_date	concept	prefix	kind	period_start	period_end	instant	dimensions	unit	value
+gosport-borough-fc	09548843	HVaZmWfnye1e6vzCQxb8v26an0-2sbc5tPEwpX3OktA	2025-03-31	2024-05-31	AccountingStandardsApplied	uk-bus	text	2023-04-21	2024-05-31		AccountingStandardsDimension=Micro-entities		
+gosport-borough-fc	09548843	HVaZmWfnye1e6vzCQxb8v26an0-2sbc5tPEwpX3OktA	2025-03-31	2024-05-31	AccountsStatusAuditedOrUnaudited	uk-bus	text	2023-04-21	2024-05-31		AccountsStatusDimension=AuditExempt-NoAccountantsReport		
+gosport-borough-fc	09548843	HVaZmWfnye1e6vzCQxb8v26an0-2sbc5tPEwpX3OktA	2025-03-31	2024-05-31	AccountsType	uk-bus	text	2023-04-21	2024-05-31		AccountsTypeDimension=FullAccounts		
+gosport-borough-fc	09548843	HVaZmWfnye1e6vzCQxb8v26an0-2sbc5tPEwpX3OktA	2025-03-31	2024-05-31	AverageNumberEmployeesDuringPeriod	uk-core	num	2022-04-28	2023-04-20			GBP	14
+gosport-borough-fc	09548843	HVaZmWfnye1e6vzCQxb8v26an0-2sbc5tPEwpX3OktA	2025-03-31	2024-05-31	AverageNumberEmployeesDuringPeriod	uk-core	num	2023-04-21	2024-05-31			GBP	14
+gosport-borough-fc	09548843	HVaZmWfnye1e6vzCQxb8v26an0-2sbc5tPEwpX3OktA	2025-03-31	2024-05-31	BalanceSheetDate	uk-bus	text		2024-05-31	1			31 May 2024
+gosport-borough-fc	09548843	HVaZmWfnye1e6vzCQxb8v26an0-2sbc5tPEwpX3OktA	2025-03-31	2024-05-31	Creditors	uk-core	num		2023-04-20	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	1026606
+gosport-borough-fc	09548843	HVaZmWfnye1e6vzCQxb8v26an0-2sbc5tPEwpX3OktA	2025-03-31	2024-05-31	Creditors	uk-core	num		2024-05-31	1	MaturitiesOrExpirationPeriodsDimension=WithinOneYear	GBP	1261444
+gosport-borough-fc	09548843	HVaZmWfnye1e6vzCQxb8v26an0-2sbc5tPEwpX3OktA	2025-03-31	2024-05-31	CurrentAssets	uk-core	num		2023-04-20	1		GBP	30523
+gosport-borough-fc	09548843	HVaZmWfnye1e6vzCQxb8v26an0-2sbc5tPEwpX3OktA	2025-03-31	2024-05-31	CurrentAssets	uk-core	num		2024-05-31	1		GBP	32905
+gosport-borough-fc	09548843	HVaZmWfnye1e6vzCQxb8v26an0-2sbc5tPEwpX3OktA	2025-03-31	2024-05-31	DateAuthorisationFinancialStatementsForIssue	uk-core	text		2024-05-31	1			11 March 2025
+gosport-borough-fc	09548843	HVaZmWfnye1e6vzCQxb8v26an0-2sbc5tPEwpX3OktA	2025-03-31	2024-05-31	DirectorSigningFinancialStatements	uk-core	text	2023-04-21	2024-05-31		EntityOfficersDimension=Director1		
+gosport-borough-fc	09548843	HVaZmWfnye1e6vzCQxb8v26an0-2sbc5tPEwpX3OktA	2025-03-31	2024-05-31	DirectorSigningFinancialStatements	uk-core	text	2023-04-21	2024-05-31		EntityOfficersDimension=Director2		
+gosport-borough-fc	09548843	HVaZmWfnye1e6vzCQxb8v26an0-2sbc5tPEwpX3OktA	2025-03-31	2024-05-31	EndDateForPeriodCoveredByReport	uk-bus	text		2024-05-31	1			2024-05-31
+gosport-borough-fc	09548843	HVaZmWfnye1e6vzCQxb8v26an0-2sbc5tPEwpX3OktA	2025-03-31	2024-05-31	EntityCurrentLegalOrRegisteredName	uk-bus	text	2023-04-21	2024-05-31				GOSPORT BOROUGH FOOTBALL CLUB LIMITED
+gosport-borough-fc	09548843	HVaZmWfnye1e6vzCQxb8v26an0-2sbc5tPEwpX3OktA	2025-03-31	2024-05-31	EntityDormantTruefalse	uk-bus	text	2023-04-21	2024-05-31				false
+gosport-borough-fc	09548843	HVaZmWfnye1e6vzCQxb8v26an0-2sbc5tPEwpX3OktA	2025-03-31	2024-05-31	EntityTradingStatus	uk-bus	text	2023-04-21	2024-05-31				
+gosport-borough-fc	09548843	HVaZmWfnye1e6vzCQxb8v26an0-2sbc5tPEwpX3OktA	2025-03-31	2024-05-31	Equity	uk-core	num		2023-04-20	1		GBP	996083
+gosport-borough-fc	09548843	HVaZmWfnye1e6vzCQxb8v26an0-2sbc5tPEwpX3OktA	2025-03-31	2024-05-31	Equity	uk-core	num		2024-05-31	1		GBP	1228189
+gosport-borough-fc	09548843	HVaZmWfnye1e6vzCQxb8v26an0-2sbc5tPEwpX3OktA	2025-03-31	2024-05-31	FixedAssets	uk-core	num		2023-04-20	1		GBP	0
+gosport-borough-fc	09548843	HVaZmWfnye1e6vzCQxb8v26an0-2sbc5tPEwpX3OktA	2025-03-31	2024-05-31	FixedAssets	uk-core	num		2024-05-31	1		GBP	350
+gosport-borough-fc	09548843	HVaZmWfnye1e6vzCQxb8v26an0-2sbc5tPEwpX3OktA	2025-03-31	2024-05-31	NameEntityOfficer	uk-bus	text	2023-04-21	2024-05-31		EntityOfficersDimension=Director1		I McInnes
+gosport-borough-fc	09548843	HVaZmWfnye1e6vzCQxb8v26an0-2sbc5tPEwpX3OktA	2025-03-31	2024-05-31	NameProductionSoftware	uk-bus	text	2023-04-21	2024-05-31				Companies House
+gosport-borough-fc	09548843	HVaZmWfnye1e6vzCQxb8v26an0-2sbc5tPEwpX3OktA	2025-03-31	2024-05-31	NetAssetsLiabilities	uk-core	num		2023-04-20	1		GBP	996083
+gosport-borough-fc	09548843	HVaZmWfnye1e6vzCQxb8v26an0-2sbc5tPEwpX3OktA	2025-03-31	2024-05-31	NetAssetsLiabilities	uk-core	num		2024-05-31	1		GBP	1228189
+gosport-borough-fc	09548843	HVaZmWfnye1e6vzCQxb8v26an0-2sbc5tPEwpX3OktA	2025-03-31	2024-05-31	NetCurrentAssetsLiabilities	uk-core	num		2023-04-20	1		GBP	996083
+gosport-borough-fc	09548843	HVaZmWfnye1e6vzCQxb8v26an0-2sbc5tPEwpX3OktA	2025-03-31	2024-05-31	NetCurrentAssetsLiabilities	uk-core	num		2024-05-31	1		GBP	1228539
+gosport-borough-fc	09548843	HVaZmWfnye1e6vzCQxb8v26an0-2sbc5tPEwpX3OktA	2025-03-31	2024-05-31	StartDateForPeriodCoveredByReport	uk-bus	text		2024-05-31	1			2023-04-21
+gosport-borough-fc	09548843	HVaZmWfnye1e6vzCQxb8v26an0-2sbc5tPEwpX3OktA	2025-03-31	2024-05-31	StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime	uk-direp	text	2023-04-21	2024-05-31				The accounts have been prepared in accordance with the micro-entity provisions and delivered in accordance with the provisions applicable to companies subject to the small companies regime.
+gosport-borough-fc	09548843	HVaZmWfnye1e6vzCQxb8v26an0-2sbc5tPEwpX3OktA	2025-03-31	2024-05-31	StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies	uk-direp	text	2023-04-21	2024-05-31				For the year ending 31 May 2024 the company was entitled to exemption under section 477 of the Companies Act 2006 relating to small companies.
+gosport-borough-fc	09548843	HVaZmWfnye1e6vzCQxb8v26an0-2sbc5tPEwpX3OktA	2025-03-31	2024-05-31	StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct	uk-direp	text	2023-04-21	2024-05-31				The directors acknowledge their responsibilities for complying with the requirements of the Companies Act 2006 with respect to accounting records and the preparation of accounts.
+gosport-borough-fc	09548843	HVaZmWfnye1e6vzCQxb8v26an0-2sbc5tPEwpX3OktA	2025-03-31	2024-05-31	StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit	uk-direp	text	2023-04-21	2024-05-31				The members have not required the company to obtain an audit in accordance with section 476 of the Companies Act 2006.
+gosport-borough-fc	09548843	HVaZmWfnye1e6vzCQxb8v26an0-2sbc5tPEwpX3OktA	2025-03-31	2024-05-31	TotalAssetsLessCurrentLiabilities	uk-core	num		2023-04-20	1		GBP	996083
+gosport-borough-fc	09548843	HVaZmWfnye1e6vzCQxb8v26an0-2sbc5tPEwpX3OktA	2025-03-31	2024-05-31	TotalAssetsLessCurrentLiabilities	uk-core	num		2024-05-31	1		GBP	1228189
+gosport-borough-fc	09548843	HVaZmWfnye1e6vzCQxb8v26an0-2sbc5tPEwpX3OktA	2025-03-31	2024-05-31	UKCompaniesHouseRegisteredNumber	uk-bus	text	2023-04-21	2024-05-31				09548843
+gosport-borough-fc	09548843	HVaZmWfnye1e6vzCQxb8v26an0-2sbc5tPEwpX3OktA	2025-03-31	2024-05-31	_GoingConcernMaterialUncertainty	derived	text						none found
 gosport-borough-fc	09548843	tFxGk212iJOJbwVVVwYG1QoBv5mmGJcoIq_ktfxGyM0	2026-03-31	2025-05-31	AccountingStandardsApplied	ns10	text	2024-06-01	2025-05-31		AccountingStandardsDimension=SmallEntities		
 gosport-borough-fc	09548843	tFxGk212iJOJbwVVVwYG1QoBv5mmGJcoIq_ktfxGyM0	2026-03-31	2025-05-31	AccountsStatusAuditedOrUnaudited	ns10	text	2024-06-01	2025-05-31		AccountsStatusDimension=AuditExemptWithAccountantsReport		
 gosport-borough-fc	09548843	tFxGk212iJOJbwVVVwYG1QoBv5mmGJcoIq_ktfxGyM0	2026-03-31	2025-05-31	AccountsType	ns10	text	2024-06-01	2025-05-31		AccountsTypeDimension=FullAccounts		
