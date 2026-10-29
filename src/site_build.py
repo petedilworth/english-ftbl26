@@ -111,6 +111,16 @@ def _search_key(name: str) -> str:
     return "".join(c if c.isalnum() else " " for c in name.lower()).strip()
 
 
+def _date_label(iso: str | None) -> str:
+    """2025-06-30 -> 30 June 2025. Blank for anything that is not a date."""
+    import datetime
+    try:
+        d = datetime.date.fromisoformat((iso or "")[:10])
+    except ValueError:
+        return ""
+    return f"{d.day} {d:%B %Y}"
+
+
 def _fmt_money(value: float) -> str:
     """Money at football scale: £661.0m, £8.9m, £450k. Sign kept for losses."""
     sign = "−" if value < 0 else ""
@@ -1503,6 +1513,20 @@ class SiteBuilder:
         rows.append({"label": "Company", "value": Markup(
             f'<a href="{escape(url)}">{escape((reg["company"] or "").title())}</a>'
             f'<span class="finance-rank">{escape(reg["number"])}{escape(status)}</span>')})
+        # The accounts themselves, not only the company: the latest filing
+        # opened as the document, and every accounts filing it has made.
+        latest = next((f for f in self.accounts_filings.get(club_id, [])
+                       if f["company_number"] == reg["number"]), None)
+        parts = []
+        if latest:
+            filed = _date_label(latest["filing_date"])
+            parts.append(
+                f'<a href="{escape(finances.filing_url(reg["number"], latest["transaction_id"]))}">'
+                f'accounts to {escape(_date_label(latest["made_up_date"]))}</a>'
+                + (f'<span class="finance-rank">filed {escape(filed)}'
+                   + (" on paper" if latest["paper_filed"] else "") + "</span>" if filed else ""))
+        parts.append(f'<a href="{escape(finances.accounts_url(reg["number"]))}">every filing</a>')
+        rows.append({"label": "Accounts", "value": Markup(" · ".join(parts))})
         ctl = reg["controller"]
         if ctl["name"]:
             text = escape(ctl["name"])
@@ -4172,6 +4196,17 @@ class SiteBuilder:
             "model_version": model_version,
         }
 
+    @property
+    def accounts_filings(self) -> dict:
+        """data/companies/filings.tsv, loaded once: {club_id: [filing, ...]}."""
+        if getattr(self, "_accounts_filings", None) is None:
+            try:
+                self._accounts_filings = finances.load_filings()
+            except Exception as exc:                          # noqa: BLE001
+                logger.warning("accounts filings index skipped: %s", exc)
+                self._accounts_filings = {}
+        return self._accounts_filings
+
     def _club_finances(self, club_id: str) -> dict | None:
         """
         The finance table for one club's page, or None when the club has
@@ -4185,7 +4220,7 @@ class SiteBuilder:
             """
             SELECT season_end_year, disclosure, turnover, staff_costs,
                    staff_costs_definition, profit_before_tax, net_debt,
-                   entity_name, period_months, source_url, flags
+                   entity_name, period_months, source_url, flags, company_number
             FROM club_finances
             WHERE club_id = ?
             ORDER BY season_end_year DESC
@@ -4214,9 +4249,11 @@ class SiteBuilder:
                 ),
             }
 
+        filings = self.accounts_filings.get(club_id, [])
+        numbers = {f["company_number"] for f in filings}
         for (year, disclosure, turnover, staff_costs, definition,
              profit, net_debt, entity_name, period_months,
-             source_url, flags_json) in raw:
+             source_url, flags_json, company_number) in raw:
             for flag in _parse_flags(flags_json):
                 if flag in FLAG_LABELS:
                     flags_seen.add(flag)
@@ -4228,6 +4265,18 @@ class SiteBuilder:
                 "source_url": source_url,
                 "disclosure_note": DISCLOSURE_NOTES.get(disclosure),
             }
+            # The filed accounts for that season, where the index has them -
+            # but only the company the row is about. A row a person read
+            # from a holding company is not linked to the club company's
+            # filing just because both exist.
+            filing = finances.filing_for_season(filings, year)
+            if filing and (not company_number or company_number == filing["company_number"]):
+                row["filing_url"] = finances.filing_url(filing["company_number"],
+                                                        filing["transaction_id"])
+                # The register's filing-history page as a "source" adds
+                # nothing once the filing itself is linked.
+                if source_url and "company-information.service.gov.uk" in source_url:
+                    row["source_url"] = None
             if disclosure == finances.DISCLOSURE_FULL:
                 row.update({
                     "turnover": _fmt_money(turnover) if turnover is not None else None,
@@ -4256,10 +4305,17 @@ class SiteBuilder:
                     row["period_note"] = f"{period_months}-month period"
             rows.append(row)
 
+        # The company the index names, or failing that the one the rows
+        # name - but only where there is exactly one, since a club read
+        # partly from a holding company has two and neither is "the" one.
+        if not numbers:
+            numbers = {r[11] for r in raw if r[11]}
+        number = next(iter(numbers)) if len(numbers) == 1 else None
         return {
             "rows": rows,
             "notes": [FLAG_LABELS[f] for f in sorted(flags_seen)],
             "chart_links": self._finance_chart_links(seasons_with_value),
+            "accounts_url": finances.accounts_url(number) if number else None,
         }
 
     def _finance_chart_links(self, seasons_with_value: dict) -> list[dict]:

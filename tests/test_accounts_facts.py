@@ -157,7 +157,7 @@ def test_facts_from_a_filing_no_longer_fetched_are_kept(tmp_path):
         "club_id": "marine-fc", "document": "OLD", "concept": "NetAssetsLiabilities",
         "kind": "num", "value": "1"}], facts)
     write(docs, "marine-fc__1.xhtml", SMALL_CLUB)
-    pca.cmd_facts(docs, facts)
+    pca.cmd_facts(docs, facts, tmp_path / "filings.tsv")
     kept = {r["document"] for r in pca.read_facts(facts)}
     assert "OLD" in kept and "marine-fc__1" in kept
 
@@ -166,9 +166,9 @@ def test_the_facts_file_is_byte_identical_when_nothing_changed(tmp_path):
     docs = tmp_path / "docs"; docs.mkdir()
     write(docs, "marine-fc__1.xhtml", SMALL_CLUB)
     facts = tmp_path / "facts"
-    pca.cmd_facts(docs, facts)
+    pca.cmd_facts(docs, facts, tmp_path / "filings.tsv")
     first = (facts / "marine-fc.tsv").read_bytes()
-    pca.cmd_facts(docs, facts)
+    pca.cmd_facts(docs, facts, tmp_path / "filings.tsv")
     assert (facts / "marine-fc.tsv").read_bytes() == first
     assert [p.name for p in facts.iterdir()] == ["marine-fc.tsv"]
 

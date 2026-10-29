@@ -81,6 +81,7 @@ jobs:
             echo "Club accounts read $(date -u +%Y-%m-%d)"
             echo "Documents: $(ls ch-accounts/*.xhtml 2>/dev/null | wc -l) iXBRL, $(ls ch-accounts/*.pdf 2>/dev/null | wc -l) PDF only"
             python scripts/parse_club_accounts.py ch-accounts --apply 2>&1
+            python scripts/parse_club_accounts.py check-links 2>&1
           } | tee data/companies/accounts-report.txt
 
       - name: Read the PDF-only filings
@@ -97,7 +98,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add club_finances.csv data/companies/accounts-report.txt \
-                  data/companies/accounts-concepts.tsv data/companies/facts data/companies/pdf
+                  data/companies/accounts-concepts.tsv data/companies/facts data/companies/pdf \
+                  data/companies/filings.tsv
           git commit -m "Club accounts read from Companies House (fetched by workflow)" || exit 0
           for attempt in 1 2 3 4 5; do
             if git push; then

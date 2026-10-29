@@ -298,6 +298,18 @@ python3 scripts/parse_club_accounts.py rows                 # dry run, reports
 python3 scripts/parse_club_accounts.py rows --apply         # write the CSV
 ```
 
+### Links to the accounts themselves
+
+`data/companies/filings.tsv` lists every accounts filing in the histories the
+workflow fetches, with the transaction id Companies House's public site
+addresses it by. A team page links the latest filing as the document itself,
+and every accounts filing the company has made; each season in its Finances
+table links the filing made up in that year — but only for the company that
+row is about, so a row read from a holding company is never linked to the
+club company's accounts. The links are built from the register's own ids, and
+the workflow opens one of each live every month (`check-links`), because this
+repository's own environment cannot reach the site to confirm the address.
+
 ## The PDF-only filings — the plan
 
 The first run fetched 113 filings that have no iXBRL. The document API offers

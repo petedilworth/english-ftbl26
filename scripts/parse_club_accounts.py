@@ -508,7 +508,85 @@ def mapping(directory: Path | None = None) -> dict[str, dict]:
         return {r["club_id"]: r for r in csv.DictReader(fh, delimiter="\t")}
 
 
-def cmd_facts(directory: Path, facts_path: Path = FACTS) -> dict:
+def write_filings_index(directory: Path, path: Path = finances.FILINGS_INDEX) -> int:
+    """
+    Every accounts filing in the histories the fetch saved, with the
+    transaction id the public register addresses it by - so a team page
+    can link the accounts themselves, not just the company.
+
+    All the accounts filings a history lists, not only the two fetched:
+    the older ones are as real, and their links cost nothing. Rows for a
+    club not fetched this run are kept, as the facts are.
+    """
+    companies = mapping(directory)
+    fetched, rows = set(), []
+    for history in sorted(directory.glob("*__filings.json")):
+        club_id = history.name.split("__", 1)[0]
+        fetched.add(club_id)
+        number = (companies.get(club_id) or {}).get("company_number", "")
+        for n, item in enumerate(_filings(directory, club_id), 1):
+            stem = directory / f"{club_id}__{n}"
+            fmt = "xhtml" if stem.with_suffix(".xhtml").exists() else \
+                "pdf" if stem.with_suffix(".pdf").exists() else ""
+            self_link = (item.get("links") or {}).get("self") or ""
+            rows.append({
+                "club_id": club_id, "company_number": number, "n": str(n),
+                "transaction_id": item.get("transaction_id") or self_link.rstrip("/").rsplit("/", 1)[-1],
+                "document": item["links"]["document_metadata"].rstrip("/").rsplit("/", 1)[-1],
+                "filing_date": item.get("date") or "",
+                "made_up_date": (item.get("description_values") or {}).get("made_up_date") or "",
+                "type": item.get("type") or "",
+                "description": item.get("description") or "",
+                "format": fmt,
+                "paper_filed": "yes" if item.get("paper_filed") else "",
+                "pages": str(item.get("pages") or ""),
+            })
+    if path.exists():
+        with path.open(encoding="utf-8", newline="") as fh:
+            rows += [r for r in csv.DictReader(fh, delimiter="\t") if r["club_id"] not in fetched]
+    rows.sort(key=lambda r: (r["club_id"], int(r["n"] or 0)))
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8", newline="") as fh:
+        writer = csv.DictWriter(fh, finances.FILINGS_COLUMNS, delimiter="\t",
+                                lineterminator="\n", extrasaction="ignore")
+        writer.writeheader()
+        writer.writerows(rows)
+    return len(rows)
+
+
+def check_links(path: Path = finances.FILINGS_INDEX, get=None) -> list[str]:
+    """
+    Open one filing's document link and one company's accounts list on
+    the public register, and say what came back.
+
+    Run in Actions, which can reach Companies House; this repository's
+    own environment cannot, so the address format the team pages use is
+    confirmed where it can be, every month, rather than assumed.
+    """
+    filings = finances.load_filings(path)
+    sample = next((rows[0] for rows in filings.values() if rows), None)
+    if sample is None:
+        return ["link check: no filings indexed"]
+    if get is None:
+        import requests
+
+        def get(url):
+            return requests.get(url, timeout=30, allow_redirects=True, stream=True,
+                                headers={"User-Agent": "english-ftbl26 link check"}).status_code
+    out = []
+    for label, url in (("filing document", finances.filing_url(sample["company_number"],
+                                                                sample["transaction_id"])),
+                       ("accounts list", finances.accounts_url(sample["company_number"]))):
+        try:
+            status = get(url)
+        except Exception as error:                           # noqa: BLE001
+            status = f"failed ({error.__class__.__name__})"
+        out.append(f"link check: {label} HTTP {status} - {url}")
+    return out
+
+
+def cmd_facts(directory: Path, facts_path: Path = FACTS,
+              filings_path: Path = finances.FILINGS_INDEX) -> dict:
     """
     Read every document in `directory` into the facts file.
 
@@ -543,6 +621,8 @@ def cmd_facts(directory: Path, facts_path: Path = FACTS) -> dict:
             continue
         kept.append(row)
     write_facts(kept + fresh, facts_path)
+    filings = write_filings_index(directory, filings_path)
+    logger.info("filings index: %d accounts filings -> %s", filings, filings_path.name)
     logger.info("facts: %d from %d documents read now, %d kept from earlier runs -> %s/",
                 len(fresh), len(done), len(kept), facts_path.name)
     return {"fresh": len(fresh), "kept": len(kept), "documents": len(done), "unread": unread}
@@ -1098,7 +1178,7 @@ def cmd_rows(facts_path: Path = FACTS, apply: bool = False,
 def main():
     logging.basicConfig(level=logging.INFO, format="%(levelname)-8s %(message)s")
     argv = sys.argv[1:]
-    if argv and argv[0] not in ("facts", "rows", "-h", "--help"):
+    if argv and argv[0] not in ("facts", "rows", "check-links", "-h", "--help"):
         argv = ["both"] + argv            # the original invocation: a directory
     parser = argparse.ArgumentParser(description=__doc__,
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -1109,12 +1189,17 @@ def main():
     p = sub.add_parser("rows", help="data/companies/facts/ -> club_finances.csv")
     p.add_argument("--facts", default=str(FACTS))
     p.add_argument("--apply", action="store_true")
+    sub.add_parser("check-links", help="open one filing link on the public register")
     p = sub.add_parser("both", help=argparse.SUPPRESS)
     p.add_argument("directory")
     p.add_argument("--facts", default=str(FACTS))
     p.add_argument("--apply", action="store_true")
     args = parser.parse_args(argv)
 
+    if args.command == "check-links":
+        for line in check_links():
+            logger.info(line)
+        return
     if args.command in ("facts", "both"):
         directory = Path(args.directory)
         result = cmd_facts(directory, Path(args.facts))
