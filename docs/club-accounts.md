@@ -387,6 +387,13 @@ What the build found, beyond the plan:
   comparative column, and that year has its own filing, read separately. Their
   net assets agree in 30 of 32 pairs; the two that differ are restatements,
   marked as such in the later filing.
+- **Group and company side by side.** Some groups print both balance sheets
+  under one heading, in four columns — Arsenal's "Group Company / 2025 2024
+  2025 2024". The first reader took the last two columns, which are the parent
+  company's, and gave the group £30,000 in cash. A heading that names both is
+  now read as the two balance sheets it is; where the four year columns are not
+  there to split it by, the block is refused. A hand row whose level the scan
+  no longer supports loses what the parser wrote to it before.
 
 What is still not read: 23 filings — four in an IFRS layout with no "net
 current" line (Birmingham City, Manchester United), two balance sheets in one

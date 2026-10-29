@@ -1128,29 +1128,40 @@ def build_rows(facts: list[dict], existing: list[dict], pdf: dict | None = None)
             if ours is None:
                 ours = NEW_COLUMNS if marker in flags else []
 
+            check = "ocr_corrected" if d["source"] == "pdf" else "sign_corrected"
+
+            def withdraw():
+                # What an earlier run wrote here from this source, taken
+                # back: the values were the parser's, and the filing no
+                # longer supports them at this row's level.
+                for c in ours:
+                    if c in hand:
+                        hand[c] = ""
+                hand["flags"] = json.dumps([f for f in flags if f not in (marker, check, "does_not_balance")
+                                            and not f.startswith(prefix)])
+
             level = {"club": "company", "group": "group"}.get(hand["consolidation_level"])
             if level is None:
                 if d["has_group"]:
                     mismatched.append(f"{club_id} {season}: group filing, and the row does not "
                                       f"say whether it records the group or the company")
-                    # Withdraw anything an earlier run guessed here: those
-                    # values were the parser's, and are no more knowable now.
-                    for c in ours:
-                        if c in hand:
-                            hand[c] = ""
-                    hand["flags"] = json.dumps(
-                        [f for f in flags if f != marker and not f.startswith(prefix)])
+                    withdraw()
                     continue
                 level = "company"
             if d["source"] == "pdf":
+                # A scan with only the parent's balance sheet readable says
+                # nothing about the group's: Arsenal's 2024 filing once
+                # gave the group £30,000 in cash.
                 chosen = _pdf_level(d["levels"], level)
                 if chosen is None:
+                    withdraw()
                     continue
                 reading = {"ok": True, "fields": d["levels"][chosen]["fields"],
                            "corrected": sorted(d["levels"][chosen]["fixes"]), "unbalanced": []}
             else:
                 reading = derive(d["facts"], d["period_end"], level)
             if not reading["ok"]:
+                withdraw()
                 continue
             values = {f: str(v) for f, v in reading["fields"].items()}
             values.update(accounts_type=d["accounts_type"], audited=d["audited"],
@@ -1173,7 +1184,6 @@ def build_rows(facts: list[dict], existing: list[dict], pdf: dict | None = None)
                     if new:
                         hand[c] = new
                         written.append(c)
-            check = "ocr_corrected" if d["source"] == "pdf" else "sign_corrected"
             flags = [f for f in flags if f not in (marker, check, "does_not_balance")
                      and not f.startswith(prefix)]
             if written:

@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+{% macro club(c) %}<a href="{{ root }}/team/{{ c.club_id }}/index.html">{{ c.name }}</a>{% endmacro %}
+{% macro season(r) %}{% if r.source_url %}<a href="{{ r.source_url }}">{{ season_label(r.season_end_year) }}</a>{% else %}{{ season_label(r.season_end_year) }}{% endif %}{% endmacro %}
+{% macro doubt(r) %}{% if r.doubts %} <abbr class="money-doubt" title="{{ r.doubts | join('; ') }}">†</abbr>{% endif %}{% if r.group %} <span class="status-tag">group</span>{% endif %}{% endmacro %}
+{% macro tiers(before, after) %}{% if before and after and before != after %}{{ before }} → {{ after }}{% else %}{{ after or before or "–" }}{% endif %}{% endmacro %}
+{% block content %}
+<h1>Money</h1>
+<p class="subtitle">What the accounts say, tier by tier: turnover and wages where a club files them, the balance sheet everywhere it can be read. Each club's latest filing, in the tier it played that season.</p>
+
+<div class="stat-cards">
+  {% for s in stats %}<div class="stat-card"><div class="stat-value">{{ s.value }}</div><div class="stat-label">{{ s.label }}</div></div>{% endfor %}
+</div>
+
+<div class="theme-intro">{{ intro_html }}</div>
+
+<h2 id="cliff">The cliff between tiers</h2>
+<p class="subtitle">The median club in each tier. Turnover is published by the large companies only{% if turnover_stops %}, so it runs out after tier {{ turnover_stops }}{% endif %}; the balance sheet does not.</p>
+<div class="yoyo-pair">
+{% for key, title in [("turnover", "Median turnover"), ("net_assets", "Median net assets")] %}
+<div>
+<h3>{{ title }}</h3>
+<div class="chart-holder">
+  <svg viewBox="0 0 {{ pw }} {{ cliff[key].h }}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="{{ title }} by tier">
+    {% if key == "net_assets" %}<line x1="{{ cliff[key].zero }}" x2="{{ cliff[key].zero }}" y1="4" y2="{{ cliff[key].h - 4 }}" stroke="#9aa5b1" stroke-width="1"/>{% endif %}
+    {% for r in cliff[key].rows %}
+    <text x="6" y="{{ r.y + 17 }}" font-size="12" font-weight="600" fill="#17202a">Tier {{ r.tier }}</text>
+    {% if r.label %}
+    <rect x="{{ r.x }}" y="{{ r.y + 5 }}" width="{{ r.w }}" height="16" rx="2" fill="{{ r.color }}"><title>Tier {{ r.tier }}: {{ r.label }}, the median of {{ r.n }} clubs</title></rect>
+    <text x="{{ pw - 6 }}" y="{{ r.y + 17 }}" font-size="12" fill="#17202a" text-anchor="end">{{ r.label }} <tspan fill="#6b7683" font-size="10">of {{ r.n }}</tspan></text>
+    {% else %}
+    <text x="{{ pw - 6 }}" y="{{ r.y + 17 }}" font-size="11" fill="#6b7683" text-anchor="end">{% if r.n %}{{ r.n }} filed – too few{% else %}none filed{% endif %}</text>
+    {% endif %}
+    {% endfor %}
+  </svg>
+</div>
+</div>
+{% endfor %}
+</div>
+{% if parachute %}<p class="finance-note">In the Championship, the {{ parachute.down_n }} clubs relegated from the Premier League in the three seasons before had a median turnover of {{ gbp(parachute.down) }}; the other {{ parachute.rest_n }}, {{ gbp(parachute.rest) }}. The difference is mostly parachute payments.</p>{% endif %}
+<details class="companies-missing">
+<summary>The same figures as a table</summary>
+<div class="table-scroll"><table class="standings">
+  <tr><th class="num">Tier</th><th class="num">Clubs</th><th class="num">Median turnover</th><th class="num">Filed it</th><th class="num">Median wages ÷ turnover</th><th class="num">Median net assets</th><th class="num">Filed it</th><th class="num">Owe more than they own</th></tr>
+  {% for c in cliff_rows %}<tr><td class="num">{{ c.tier }}</td><td class="num">{{ c.clubs }}</td><td class="num">{{ gbp(c.turnover) if c.turnover_n >= 3 else "–" }}</td><td class="num">{{ c.turnover_n }}</td><td class="num">{{ "{:.0%}".format(c.wage_ratio) if c.wage_ratio_n >= 3 else "–" }}</td><td class="num">{{ gbp(c.net_assets) if c.net_assets_n >= 3 else "–" }}</td><td class="num">{{ c.net_assets_n }}</td><td class="num">{{ c.negative }}</td></tr>{% endfor %}
+</table></div>
+</details>
+
+{% if strip %}
+<h2 id="cost-per-point">Cost per point</h2>
+<p class="subtitle">The wage bill divided by the points won on the pitch that season, before any deduction. Full accounts only, tiers 1–3; the scale is logarithmic, each step ten times the last. The dark tick is the tier's median.</p>
+<div class="chart-holder money-strip">
+  <svg viewBox="0 0 {{ strip.w }} {{ strip.h }}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Wages per point won, by club and tier">
+    {% for t in strip.ticks %}<line x1="{{ t.x }}" x2="{{ t.x }}" y1="6" y2="{{ strip.axis_y }}" stroke="#e3e7ec" stroke-width="1"/><text x="{{ t.x }}" y="{{ strip.axis_y + 14 }}" font-size="11" fill="#6b7683" text-anchor="middle">{{ t.label }}</text>{% endfor %}
+    {% for r in strip.rows %}
+    {% set cy = r.y + 28 %}
+    <text x="6" y="{{ cy }}" font-size="12" font-weight="600" fill="#17202a">Tier {{ r.tier }}</text>
+    <text x="6" y="{{ cy + 13 }}" font-size="10" fill="#6b7683">{{ r.n }} clubs</text>
+    {% if r.median %}<line x1="{{ r.median.x }}" x2="{{ r.median.x }}" y1="{{ cy - 18 }}" y2="{{ cy + 11 }}" stroke="#17202a" stroke-width="2"><title>Tier {{ r.tier }} median: {{ r.median.label }} a point</title></line>{% endif %}
+    {% for c in r.dots %}<a href="{{ root }}/team/{{ c.club_id }}/index.html"><circle cx="{{ c.x }}" cy="{{ cy + c.dy }}" r="4.5" fill="#2a78d6" fill-opacity="0.85" stroke="#ffffff" stroke-width="1.5"><title>{{ c.name }}, {{ c.season }}: {{ c.label }} a point, {{ c.points }} points</title></circle></a>{% endfor %}
+    {% for e in r.ends %}<text x="{{ e.x }}" y="{{ cy + e.dy }}" font-size="10.5" fill="{{ '#6b7683' if e.muted else '#17202a' }}" text-anchor="{{ e.anchor }}">{{ e.text }}</text>{% endfor %}
+    {% endfor %}
+  </svg>
+</div>
+<details class="companies-missing">
+<summary>Every club, sortable</summary>
+<div class="table-scroll"><table class="standings sortable">
+  <thead><tr><th>Club</th><th class="num">Tier</th><th class="num">Season</th><th class="num">Wages</th><th class="num">Points</th><th class="num">A point</th></tr></thead>
+  <tbody>
+  {% for r in cost %}<tr><td>{{ club(r) }}{{ doubt(r) }}</td><td class="num" data-sort="{{ r.tier }}">{{ r.tier }}</td><td class="num" data-sort="{{ r.season_end_year }}">{{ season(r) }}</td><td class="num" data-sort="{{ r.staff_costs }}">{{ gbp(r.staff_costs) }}</td><td class="num" data-sort="{{ r.points }}">{{ r.points }}{% if r.deducted %} <span class="status-tag">−{{ r.deducted }} deducted</span>{% endif %}</td><td class="num" data-sort="{{ r.per_point | round | int }}"><b>{{ gbp(r.per_point) }}</b></td></tr>{% endfor %}
+  </tbody>
+</table></div>
+</details>
+{% endif %}
+
+<h2 id="movers">Biggest movers</h2>
+<p class="subtitle">The same company, at the same level, one year against the one before. Where the tier changed between the two, it says so.</p>
+<div>
+{% if ratio_moves %}
+<div>
+<h3>Wages against turnover</h3>
+<div class="table-scroll"><table class="standings">
+  <tr><th>Club</th><th class="num">Tier</th><th class="num">Year</th><th class="num">Before</th><th class="num">After</th><th class="num">Change</th></tr>
+  {% for m in ratio_moves %}<tr><td>{{ club(m) }}</td><td class="num">{{ tiers(m.tier_before, m.tier) }}</td><td class="num">{{ season(m) }}</td><td class="num">{{ "{:.0%}".format(m.before) }}</td><td class="num">{{ "{:.0%}".format(m.after) }}</td><td class="num"><b>{{ "{:+.0f}".format(m.change * 100) | replace("-", "−") }} pts</b></td></tr>{% endfor %}
+</table></div>
+</div>
+{% endif %}
+{% if asset_falls %}
+<div>
+<h3>Net assets</h3>
+<div class="table-scroll"><table class="standings">
+  <tr><th>Club</th><th class="num">Tier</th><th class="num">Year</th><th class="num">Before</th><th class="num">After</th><th class="num">Change</th></tr>
+  {% for m in asset_falls if m.change < 0 %}<tr><td>{{ club(m) }}{{ doubt(m) }}</td><td class="num">{{ tiers(m.tier_before, m.tier) }}</td><td class="num">{{ season(m) }}</td><td class="num">{{ gbp(m.before) }}</td><td class="num">{{ gbp(m.after) }}</td><td class="num"><b>{{ gbp(m.change) }}</b></td></tr>{% endfor %}
+  {% for m in asset_rises if m.change > 0 %}<tr><td>{{ club(m) }}{{ doubt(m) }}</td><td class="num">{{ tiers(m.tier_before, m.tier) }}</td><td class="num">{{ season(m) }}</td><td class="num">{{ gbp(m.before) }}</td><td class="num">{{ gbp(m.after) }}</td><td class="num"><b>+{{ gbp(m.change) }}</b></td></tr>{% endfor %}
+</table></div>
+</div>
+{% endif %}
+</div>
+<p class="finance-note">Net assets move for reasons other than trading: an owner turning a loan into shares adds to them at a stroke, and a revaluation of the ground can do the same. The filing says which.</p>
+
+<h2 id="disclosure">What each club discloses</h2>
+<p class="subtitle">Every club in tiers 1–7 in {{ newest }}, by its latest accounts. A small company may file its balance sheet alone; most of those state that they withhold the profit and loss account under section 444 of the Companies Act. Many clubs further down are community benefit societies, which file with the FCA and are not on the register.</p>
+<div class="chart-holder">
+  <svg viewBox="0 0 {{ dw }} {{ dh }}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="What each club's accounts disclose, by tier">
+    {% for r in disclosure_rows %}
+    <text x="6" y="{{ r.y + 15 }}" font-size="12" font-weight="600" fill="#17202a">Tier {{ r.tier }}</text>
+    <text x="6" y="{{ r.y + 28 }}" font-size="10" fill="#6b7683">{{ r.n }} clubs</text>
+    {% for s in r.segs %}<rect x="{{ s.x }}" y="{{ r.y + 4 }}" width="{{ [s.w - 2, 1] | max }}" height="26" fill="{{ s.color }}"><title>Tier {{ r.tier }}: {{ s.n }} – {{ s.label }}</title></rect>{% if s.w > 22 %}<text x="{{ s.x + s.w / 2 - 1 }}" y="{{ r.y + 21 }}" font-size="11" fill="{{ s.ink }}" text-anchor="middle">{{ s.n }}</text>{% endif %}{% endfor %}
+    {% endfor %}
+  </svg>
+</div>
+<div class="companies-key">{% for k in disclosure_key %}<span><i style="background: {{ k.color }}"></i>{{ k.label }}</span>{% endfor %}</div>
+<details class="companies-missing">
+<summary>Every club and what it filed</summary>
+<div class="table-scroll"><table class="standings sortable">
+  <thead><tr><th>Club</th><th class="num">Tier</th><th>Discloses</th><th class="num">Latest accounts</th><th>Kind</th><th>Audit</th></tr></thead>
+  <tbody>
+  {% for c in every %}<tr><td>{{ club(c) }}</td><td class="num" data-sort="{{ c.tier }}">{{ c.tier }}</td><td>{{ labels[c.category] }}</td><td class="num" data-sort="{{ c.row.season_end_year if c.row else 0 }}">{% if c.row %}{{ season(c.row) }}{% else %}–{% endif %}</td><td>{{ ((c.row.accounts_type or "") | replace("Accounts", "") | lower) if c.row else "" }}</td><td>{% if c.row and c.row.audited %}{{ "audited" if c.row.audited == "Audited" else "accountant's report" if "WithAccountants" in c.row.audited else "neither" if "NoAccountants" in c.row.audited else c.row.audited | lower }}{% endif %}</td></tr>{% endfor %}
+  </tbody>
+</table></div>
+</details>
+
+<h2 id="league">The money league</h2>
+<p class="subtitle">Each club's latest accounts, in the tier it played that season. From the fourth tier down the balance sheet comes first, because it is what there is. Click a heading to sort; the season links to the filing.</p>
+{% for t in league %}
+<details class="money-tier"{% if loop.first %} open{% endif %}>
+<summary>Tier {{ t.tier }} <span class="money-tier-n">{{ t.n }} clubs</span></summary>
+<div class="table-scroll"><table class="standings sortable">
+  <thead><tr><th>Club</th><th class="num">Season</th>{% for key, label in t.columns %}<th class="num">{{ label }}</th>{% endfor %}</tr></thead>
+  <tbody>
+  {% for r in t.rows %}<tr><td>{{ club(r) }}{{ doubt(r) }}</td><td class="num" data-sort="{{ r.season_end_year }}">{{ season(r) }}</td>{% for key, label in t.columns %}<td class="num" data-sort="{{ r[key] if r[key] is not none else '' }}">{{ cell(r, key) }}</td>{% endfor %}</tr>{% endfor %}
+  </tbody>
+</table></div>
+</details>
+{% endfor %}
+
+<h2 id="method">How it is worked out</h2>
+<p class="finance-note">From the accounts each club's company files at Companies House: the tagged electronic accounts read directly, the paper ones from scans, and for the larger clubs results reported when the accounts came out, each row linked to its source. A group's consolidated accounts and the club company's own are kept apart, marked <span class="status-tag">group</span> where the figures are the group's; two years are compared only when they are the same company at the same level. Wages are staff costs as filed, which for most clubs include the players and exclude transfer fees. A balance sheet whose parts do not add up is left out whole{% if flagged.does_not_balance %} ({{ flagged.does_not_balance }} club{{ "s" if flagged.does_not_balance != 1 }}){% endif %}, because which figure is wrong cannot be told. A figure the reader had to correct carries a <abbr class="money-doubt">†</abbr>, with the reason on hover: {% for k, v in doubt_labels.items() %}{{ v }}{% if not loop.last %}; {% endif %}{% endfor %}.</p>
+
+<script src="{{ root }}/static/club-table.js"></script>
+{% endblock %}

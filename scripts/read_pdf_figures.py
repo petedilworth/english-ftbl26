@@ -119,21 +119,47 @@ def numbers(tail: str) -> list[int]:
     return out
 
 
-def _values(line: str, columns: int = 2) -> tuple[str, list[int | None]] | None:
+def _values(line: str, columns: int = 2, pick: int | None = None) -> tuple[str, list[int | None]] | None:
     """
     (label, [current, prior]) - notes precede the values, so the values
     are the last two figures. A labelled line with only one figure keeps
     it as the current year: OCR loses the prior-year column often enough
     ("NET LIABILITIES (128,553,760)") that dropping the line would lose
     the current year with it.
+
+    pick reads a balance sheet printed with the group and the company side
+    by side - four columns, group then company. 0 takes the group's pair,
+    1 the company's. A line with fewer than four figures there cannot say
+    whose they are, so it is not read.
     """
     label, tail = _tail(line)
     nums = numbers(tail)
+    if pick is not None:
+        if len(nums) < 4:
+            return None
+        return label, nums[-4:][2 * pick:2 * pick + 2]
     if len(nums) >= columns:
         return label, nums[-columns:]
     if len(nums) == 1 and _norm(label) and not re.fullmatch(r"\s*\d{1,2}\s*", tail.translate(OCR_DIGITS)):
         return label, [nums[0], None]
     return None
+
+
+def _alternates(line: str, pick: int | None) -> list[list[int]]:
+    """
+    A second reading of a four-column line, for the identities to choose
+    between: OCR leaves a stray dash between the columns ("Shareholders'
+    funds 126,465 127,852 - 147,322 147,520"), and the last four figures
+    are then the wrong four. Offered only where dropping the nils leaves
+    exactly four.
+    """
+    if pick is None:
+        return []
+    nums = numbers(_tail(line)[1])
+    figures = [n for n in nums if n]
+    if len(nums) > 4 and len(figures) == 4:
+        return [figures[2 * pick:2 * pick + 2]]
+    return []
 
 
 # ── what each line is ──────────────────────────────────────────────────────
@@ -179,7 +205,7 @@ COMPONENT = {
 }
 
 
-def parse_block(lines: list[str]) -> dict:
+def parse_block(lines: list[str], pick: int | None = None) -> dict:
     """
     Candidate values, per year column, for every line the identities use.
 
@@ -208,7 +234,7 @@ def parse_block(lines: list[str]) -> dict:
         line = raw.strip()
         if not line:
             continue
-        parsed = _values(line)
+        parsed = _values(line, pick=pick)
         label = _norm(_tail(line)[0])
         if parsed is None:
             # A label carried onto the next line: "Creditors - amounts
@@ -248,6 +274,8 @@ def parse_block(lines: list[str]) -> dict:
             break
         if matched:
             add(matched, vals)
+            for alt in _alternates(line, pick):
+                add(matched, alt)
             # Share capital is a reserves line too: the reserves' sum is
             # what verifies it, so it has to be in the sum.
             if matched == "SC":
@@ -511,7 +539,20 @@ def blocks(text: str) -> list[dict]:
         level = "unlabelled" if unlabelled else \
             "group" if re.search(r"consolidated|group", heading) else \
             "company" if re.search(r"company|parent", heading) else "plain"
-        out.append({"line": head, "level": level, "years": years[:2], "scale": scale, "body": body})
+        block = {"line": head, "level": level, "years": years[:2], "scale": scale, "body": body}
+        # Group and company side by side under one heading - Arsenal's
+        # "Group Company / 2025 2024 2025 2024". Read as the two balance
+        # sheets it is; the last two columns alone are the parent's, and
+        # were once taken for the group's.
+        if re.search(r"(?i)\bgroup\b", header) and re.search(r"(?i)\bcompany\b", header) \
+                and level in ("plain", "unlabelled"):
+            if len(years) >= 4:
+                out.append(dict(block, level="group", pick=0))
+                out.append(dict(block, level="company", pick=1))
+            else:
+                out.append(dict(block, level="mixed"))
+            continue
+        out.append(block)
     return out
 
 
@@ -551,11 +592,14 @@ def read_text(text: str, made_up_year: int | None) -> dict:
         if b["level"] == "unlabelled" and len(found) > 1:
             out["rejected"].append("unlabelled block beside another - level unknown")
             continue
+        if b["level"] == "mixed":
+            out["rejected"].append("group and company columns that cannot be told apart")
+            continue
         # The block must be for the year these accounts are made up to.
         if made_up_year and b["years"] and b["years"][0] != made_up_year:
             out["rejected"].append(f"{b['level']} block for {b['years'][0]}, not {made_up_year}")
             continue
-        parsed = parse_block(b["body"])
+        parsed = parse_block(b["body"], b.get("pick"))
         if not parsed["cands"]:
             continue
         def column(i):

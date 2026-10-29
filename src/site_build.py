@@ -38,6 +38,7 @@ import storylines as storylines_mod  # noqa: E402  (this week, on the home page)
 import deprivation as deprivation_mod  # noqa: E402  (deprivation around the ground)
 import sources as sources_mod  # noqa: E402  (where every page's data comes from)
 import companies as companies_mod  # noqa: E402  (behind the club: the register)
+import money as money_mod  # noqa: E402  (the Money page)
 import divisions
 divisions_mod = divisions
 import finances  # noqa: E402  (disclosure states for the club finances table)
@@ -2582,7 +2583,8 @@ class SiteBuilder:
         "fallen-giants": ["value"], "natural-level": ["value"], "luck": ["safe-thresholds"],
         "catchment": ["fallen-giants", "income", "value"], "income": ["deprivation", "value"],
         "deprivation": ["value"], "capacity": ["value"], "behind-the-club": ["grounds", "value"],
-        "grounds": ["value"], "finances": ["boom-and-bust", "value"], "boom-and-bust": ["value"],
+        "grounds": ["value"], "finances": ["money", "boom-and-bust"], "money": ["boom-and-bust", "value"],
+        "boom-and-bust": ["value"],
         "rivalries": ["hatred"], "hatred": ["value"],
     }
 
@@ -2672,6 +2674,10 @@ class SiteBuilder:
         if finance_path:
             why.append(story("finances", "Club finances", "Revenue, wages, profit and debt against where clubs finish",
                              "why", path=finance_path))
+        if have("money"):
+            why.append(story("money", "Money",
+                             "Turnover, wages and the balance sheet, tier by tier – and what each club's accounts leave out",
+                             "why"))
         if boom:
             why.append(story("boom-and-bust", "Boom and bust", "Why the same clubs keep falling into financial trouble", "why"))
         # The theme tables sit here now, each its own tile: the owners and the trouble, club by club.
@@ -2754,6 +2760,7 @@ class SiteBuilder:
         self._insight_luck()
         self._insight_deprivation()
         self._insight_companies()
+        self._insight_money()
         self._insight_boom_and_bust(data["boom"])
         self._insight_the_drop(data["movement"])
         self._insight_the_rise(data["movement"])
@@ -3656,6 +3663,179 @@ class SiteBuilder:
             with_debt=d["with_debt"], property_debt=len(d["property_debt"]), lenders=d["lenders"],
             bw=bw, bh=bh, churn_bars=churn_bars, warned=sorted(d["warned"], key=lambda c: (c["tier"] or 99, c["name"])),
             clubs=d["clubs"], unmatched=d["unmatched"], categories=cats,
+        )
+
+    def _insight_money(self) -> None:
+        """
+        Money: the cliff between tiers, cost per point, the biggest movers,
+        what each club discloses, and the money league tier by tier. See
+        src/money.py. Gated on its prose and on club_finances.
+        """
+        import math
+
+        import markdown as md
+        from markupsafe import Markup
+
+        source = PROJECT_ROOT / "content" / "insights" / "money.md"
+        if not source.exists():
+            return
+        try:
+            d = money_mod.assemble(self.conn)
+        except Exception as exc:  # the page must never break the build
+            logger.warning("money page skipped: %s", exc)
+            return
+        if not d or not d["league"]:
+            return
+        gbp = money_mod.money
+
+        # The cliff: one panel per measure, its own scale; a median resting on
+        # fewer than three filings is named, not drawn.
+        pw, left, right, row_h = 380, 64, 96, 30
+
+        def panel(key):
+            shown = [c for c in d["cliff"] if c[f"{key}_n"] >= 3]
+            lo = min([0] + [c[key] for c in shown])
+            hi = max([0] + [c[key] for c in shown])
+            span = (pw - left - right) / ((hi - lo) or 1)
+            zero = left + (0 - lo) * span
+            rows = []
+            for i, c in enumerate(d["cliff"]):
+                v, n = c[key], c[f"{key}_n"]
+                row = {"tier": c["tier"], "y": 6 + i * row_h, "n": n, "value": v}
+                if n >= 3:
+                    end = zero + v * span
+                    row.update(x=round(min(zero, end), 1), w=max(1.0, round(abs(end - zero), 1)),
+                               label=gbp(v), color="#eb6834" if v < 0 else "#2a78d6")
+                rows.append(row)
+            return {"rows": rows, "zero": round(zero, 1), "h": 12 + row_h * len(rows)}
+
+        cliff = {"turnover": panel("turnover"), "net_assets": panel("net_assets")}
+
+        # Cost per point: a strip per tier on a log scale, because the top
+        # flight's points cost twenty times the third tier's.
+        cost = d["cost"]
+        sw, sl, sr, srow = 760, 80, 24, 62
+        strip = None
+        if cost:
+            lo = math.floor(math.log10(min(r["per_point"] for r in cost)))
+            hi = math.ceil(math.log10(max(r["per_point"] for r in cost)))
+            hi = max(hi, lo + 1)
+
+            def sx(v):
+                return round(sl + (math.log10(v) - lo) / (hi - lo) * (sw - sl - sr), 1)
+            tiers = sorted({r["tier"] for r in cost})
+            rows = []
+            for i, t in enumerate(tiers):
+                here = sorted((r for r in cost if r["tier"] == t), key=lambda r: r["per_point"])
+                y = 10 + i * srow
+                dots, lanes = [], {}
+                for r in here:
+                    x = sx(r["per_point"])
+                    # Dots that would touch step up or down a lane instead.
+                    lane = next((k for k in (0, -1, 1, -2, 2) if lanes.get(k, -99) < x - 9), 0)
+                    lanes[lane] = x
+                    dots.append({"x": x, "dy": lane * 8, "name": r["name"], "club_id": r["club_id"],
+                                 "label": gbp(r["per_point"]), "points": r["points"],
+                                 "season": season_label(r["season_end_year"])})
+                # The dearest is named to the right of its dot and the
+                # cheapest to the left, on the dots' own line; where the edge
+                # of the chart leaves no room, above or below instead.
+                ends = []
+                for c, side in ((dots[-1], 1), (dots[0], -1)) if len(dots) > 1 else ((dots[-1], 1),):
+                    text = f"{c['name']} {c['label']}"
+                    width = 5.6 * len(text)
+                    room = c["x"] + 9 + width < sw - 4 if side > 0 else c["x"] - 9 - width > sl
+                    ends.append({"text": text, "x": c["x"] + side * 9 if room else c["x"],
+                                 "dy": 4 if room else (-15 if side > 0 else 21),
+                                 "anchor": ("start" if side > 0 else "end") if room else
+                                           ("end" if side > 0 else "start"),
+                                 "muted": side < 0})
+                med = d["cost_median"].get(t)
+                rows.append({"tier": t, "y": y, "n": len(here), "dots": dots, "ends": ends,
+                             "median": {"x": sx(med), "label": gbp(med)} if med else None})
+            ticks = [{"x": sx(10 ** k), "label": gbp(10 ** k)} for k in range(lo, hi + 1)]
+            strip = {"w": sw, "h": 34 + srow * len(rows), "rows": rows, "ticks": ticks,
+                     "axis_y": 14 + srow * len(rows), "left": sl, "right": sw - sr, "mid": (sl + sw - sr) / 2}
+
+        # What each club discloses: one stacked bar per tier this season.
+        dw, dl, drow = 760, 90, 40
+        disclosure_rows = []
+        for i, t in enumerate(sorted(d["disclosure"])):
+            counts = d["disclosure"][t]
+            n = sum(counts.values())
+            x, segs = dl, []
+            for key, label, color in money_mod.DISCLOSURE_KEY:
+                k = counts[key]
+                if not k:
+                    continue
+                w = round((dw - dl - 10) * k / n, 1)
+                segs.append({"x": x, "w": w, "n": k, "label": label, "color": color,
+                             "ink": money_mod.DISCLOSURE_INK.get(key, "#17202a")})
+                x += w
+            disclosure_rows.append({"tier": t, "n": n, "y": 6 + i * drow, "segs": segs})
+        disclosure_key = [{"key": k, "label": label, "color": color} for k, label, color in money_mod.DISCLOSURE_KEY]
+        labels = {k: label for k, label, _ in money_mod.DISCLOSURE_KEY}
+
+        # The money league, tier by tier: the profit and loss first where
+        # it exists, the balance sheet first below the third tier.
+        pnl = [("turnover", "Turnover"), ("staff_costs", "Wages"), ("wage_ratio", "Wages ÷ turnover"),
+               ("profit_before_tax", "Pre-tax profit")]
+        balance = [("net_assets", "Net assets"), ("cash", "Cash"), ("employees", "Staff")]
+        divisions = dict(self.conn.execute(
+            "SELECT tier, division_name FROM standings WHERE season_end_year = ? GROUP BY tier", (d["newest"],)))
+        league = []
+        for t in sorted(d["league"]):
+            rows = d["league"][t]
+            columns = pnl + balance if t <= 3 else balance + pnl
+            # A column nobody in the tier has is left off rather than shown empty.
+            columns = [c for c in columns if any(r.get(c[0]) is not None for r in rows)]
+            league.append({"tier": t, "division": divisions.get(t, f"Tier {t}"), "rows": rows, "columns": columns,
+                           "n": len(rows)})
+
+        def cell(r, key):
+            v = r.get(key)
+            if v is None:
+                return "–"
+            if key == "wage_ratio":
+                return f"{v:.0%}"
+            if key == "employees":
+                return f"{v:,}"
+            return gbp(v)
+
+        top = next((c for c in d["cliff"] if c["tier"] == 1), None)
+        second = next((c for c in d["cliff"] if c["tier"] == 2), None)
+        with_bs = [r for r in d["latest"].values() if r["tier"] and r.get("net_assets") is not None]
+        negative = sum(1 for r in with_bs if r["net_assets"] < 0)
+        every = d["every"]
+        with_figures = sum(1 for c in every if c["category"] in ("full", "withheld", "small"))
+        stats = []
+        if top and second and top["turnover"] and second["turnover"] and second["turnover_n"] >= 3:
+            stats.append({"value": f"{top['turnover'] / second['turnover']:.0f}×",
+                          "label": f"Median Premier League turnover against the Championship's: "
+                                   f"{gbp(top['turnover'])} to {gbp(second['turnover'])}"})
+        if cost:
+            dear = cost[0]
+            stats.append({"value": gbp(dear["per_point"]),
+                          "label": f"The wages behind each point {dear['name']} won in "
+                                   f"{season_label(dear['season_end_year'])}, the dearest in the top three tiers"})
+        stats.append({"value": f"{negative} of {len(with_bs)}",
+                      "label": "Clubs whose latest balance sheet shows they owe more than they own"})
+        stats.append({"value": f"{with_figures} of {len(every)}",
+                      "label": "Clubs in tiers 1–7 whose accounts give any figures here"})
+
+        out_dir = self.out / "insights" / "money"
+        self.render(
+            "insight_money.html", out_dir / "index.html", 2,
+            title="Money",
+            intro_html=Markup(md.markdown(content.load_theme(source))),
+            stats=stats, gbp=gbp, cell=cell, season_label=season_label, pw=pw, cliff=cliff,
+            turnover_stops=max((c["tier"] for c in d["cliff"] if c["turnover_n"] >= 3), default=None),
+            parachute=d["parachute"], cliff_rows=d["cliff"], strip=strip, cost=cost,
+            ratio_moves=d["ratio_moves"][:12],
+            asset_falls=d["asset_moves"][:10], asset_rises=list(reversed(d["asset_moves"][-10:])),
+            dw=dw, dh=12 + drow * len(disclosure_rows), disclosure_rows=disclosure_rows,
+            disclosure_key=disclosure_key, labels=labels, every=every, league=league,
+            flagged=d["flagged"], doubt_labels=money_mod.DOUBT_LABELS, newest=season_label(d["newest"]),
         )
 
     def _insight_deprivation(self) -> None:
