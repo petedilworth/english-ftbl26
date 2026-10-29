@@ -272,7 +272,7 @@ companies — how a parent company or an owner funds a club — other creditors,
 and the depreciation and amortisation charges from the fixed-asset notes,
 which a small company files even when it files no profit-and-loss.
 
-A second pass added seven more, all from concepts the census showed in dozens
+A second pass added nine more, all from concepts the census showed in dozens
 of filings: tax owed to HMRC (PAYE, national insurance and VAT — the arrears
 behind most winding-up petitions), deferred income where it is on its own line
 and the combined accruals-and-deferred-income line kept apart from it, the
