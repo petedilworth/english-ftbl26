@@ -198,6 +198,24 @@ FIELDS: dict[str, tuple[str, list]] = {
     "net_assets": (INSTANT, [
         ("NetAssetsLiabilities", None), ("Equity", None),
         ("ShareholdersFunds", None)]),
+    # What the creditors and the fixed-asset note say, on the second pass
+    # through the census.
+    "tax_owed": (INSTANT, [*_split_totals("OtherTaxationSocialSecurityPayable"),
+                           *_split_totals("TaxationSocialSecurityPayable")]),
+    "deferred_income": (INSTANT, _split_totals("DeferredIncome")),
+    "accruals_and_deferred_income": (INSTANT, _split_totals("AccruedLiabilitiesDeferredIncome")),
+    "fixed_asset_additions": (DURATION, [
+        ("AdditionsOtherThanThroughBusinessCombinationsPropertyPlantEquipment", None),
+        ("TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment", None)]),
+    "fixed_asset_cost": (INSTANT, [("PropertyPlantEquipmentGrossCost", None)]),
+    "fixed_asset_depreciation": (INSTANT, [
+        ("AccumulatedDepreciationImpairmentPropertyPlantEquipment", None)]),
+    "intangible_additions": (DURATION, [
+        ("AdditionsOtherThanThroughBusinessCombinationsIntangibleAssets", None),
+        ("TotalAdditionsIncludingFromBusinessCombinationsIntangibleAssets", None),
+        ("AdditionsOtherThanThroughBusinessCombinationsIntangibleAssets",
+         "ExternallyAcquiredIntangibleAssets")]),
+    "interest_paid": (DURATION, [("InterestPayableSimilarChargesFinanceCosts", None)]),
     "share_capital": (INSTANT, [
         ("Equity", "ShareCapital"), ("CalledUpShareCapital", None),
         ("CalledUpShareCapitalPaid", None),
@@ -218,6 +236,11 @@ PERIOD_START = "StartDateForPeriodCoveredByReport"
 # Not a tag: read from the document's text, and named so it cannot be
 # mistaken for one. See _going_concern().
 GOING_CONCERN = "_GoingConcernMaterialUncertainty"
+
+# The directors' statement that they have chosen not to file the
+# profit-and-loss account, which section 444 lets a small company do.
+# Legal, and a choice: the figures exist and were not published.
+PNL_WITHHELD = "StatementThatDirectorsHaveElectedNotToDeliverProfitLossAccountUnderSection4445ACompaniesAct2006"
 
 
 # ── stage 1: documents to facts ────────────────────────────────────────────
@@ -842,6 +865,7 @@ def derive(facts: list[dict], made_up: str = "", level: str = "group") -> dict:
     out["audited"] = _text_fact(facts, AUDIT_STATUS)
     gc = next((f["value"] for f in facts if f["concept"] == GOING_CONCERN), "")
     out["going_concern"] = "" if gc in ("", "none found") else gc
+    out["pnl_withheld"] = "yes" if any(f["concept"] == PNL_WITHHELD for f in facts) else ""
 
     if "turnover" in out["fields"]:
         out["disclosure"] = finances.DISCLOSURE_FULL
@@ -912,7 +936,8 @@ def existing_rows(path: Path = FINANCES_CSV) -> set[tuple[str, int]]:
 # Columns a hand row may be topped up with: the ones added after every
 # hand row was written. Nothing a person had the chance to fill.
 NEW_COLUMNS = list(dict.fromkeys(
-    ["operating_profit", "profit_after_tax", "amortisation", "player_sales_profit"]
+    ["operating_profit", "profit_after_tax", "amortisation", "player_sales_profit",
+     "interest_paid"]
     + finances.BALANCE_COLUMNS + finances.STATUS_COLUMNS))
 
 
@@ -964,7 +989,7 @@ def build_rows(facts: list[dict], existing: list[dict]) -> dict:
         values = {f: ("" if (f in PNL_FIELDS and not full) else str(v))
                   for f, v in fields.items()}
         values.update(accounts_type=d["accounts_type"], audited=d["audited"],
-                      going_concern=d["going_concern"])
+                      going_concern=d["going_concern"], pnl_withheld=d["pnl_withheld"])
 
         at = index.get(key)
         if at is not None and "ixbrl_auto" not in _flags(rows[at]["flags"]):
@@ -1008,7 +1033,7 @@ def build_rows(facts: list[dict], existing: list[dict]) -> dict:
                 continue
             values = {f: str(v) for f, v in reading["fields"].items()}
             values.update(accounts_type=d["accounts_type"], audited=d["audited"],
-                          going_concern=d["going_concern"])
+                          going_concern=d["going_concern"], pnl_withheld=d["pnl_withheld"])
 
             # Provenance (read above). The columns this parser wrote are
             # named in the row's flags, so a corrected reading reaches them

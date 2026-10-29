@@ -68,6 +68,7 @@ PNL_COLUMNS = [
     "profit_after_tax",
     "player_sales_profit",
     "net_debt",
+    "interest_paid",
 ]
 
 # The balance sheet and the notes every filing must carry, the
@@ -100,13 +101,31 @@ BALANCE_COLUMNS = [
     "owed_to_group",
     "other_creditors",
     "depreciation",
+    # Owed to HMRC: PAYE, national insurance and VAT. The arrears behind
+    # most winding-up petitions against football clubs.
+    "tax_owed",
+    # Money taken for what has not happened yet - season tickets, chiefly
+    # - where the filing states deferred income on its own line. The
+    # combined accruals line also holds costs not yet invoiced, so it is
+    # kept apart rather than passed off as the same thing.
+    "deferred_income",
+    "accruals_and_deferred_income",
+    # The fixed-asset note: what was spent on the ground and facilities in
+    # the year, what they cost, and how much of that is depreciated away.
+    "fixed_asset_additions",
+    "fixed_asset_cost",
+    "fixed_asset_depreciation",
+    # Additions to intangible assets. For a club this is mostly player
+    # registrations, but software and licences are in it too, which is why
+    # it is not called player purchases.
+    "intangible_additions",
 ]
 
 # Whole numbers: pounds, or for employees a headcount.
 MONEY_COLUMNS = PNL_COLUMNS + BALANCE_COLUMNS
 
 # What the filing says about itself, as text.
-STATUS_COLUMNS = ["accounts_type", "audited", "going_concern"]
+STATUS_COLUMNS = ["accounts_type", "audited", "going_concern", "pnl_withheld"]
 
 REQUIRED_COLUMNS = {"club_id", "season_end_year", "disclosure"}
 
@@ -126,6 +145,9 @@ COLUMNS = [
     "share_capital", "directors_pay",
     "accounts_type", "audited", "going_concern",
     "debtors", "bank_loans", "owed_to_group", "other_creditors", "depreciation",
+    "tax_owed", "deferred_income", "accruals_and_deferred_income",
+    "fixed_asset_additions", "fixed_asset_cost", "fixed_asset_depreciation",
+    "intangible_additions", "interest_paid", "pnl_withheld",
 ]
 assert set(COLUMNS) >= set(PNL_COLUMNS) | set(BALANCE_COLUMNS) | set(STATUS_COLUMNS)
 assert len(COLUMNS) == len(set(COLUMNS))

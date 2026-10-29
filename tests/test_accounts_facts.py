@@ -539,3 +539,57 @@ def test_document_numbering_skips_the_notices_the_fetch_skips(tmp_path):
         {"type": "AA", "description": "accounts-with-accounts-type-small",
          "links": {"document_metadata": "https://d/document/ACCOUNTS"}}]}))
     assert pca.document_meta(tmp_path, tmp_path / "x-fc__1.xhtml")["document"] == "ACCOUNTS"
+
+
+# ── the six from the second pass ───────────────────────────────────────────
+
+def test_tax_owed_is_read_from_the_current_creditors_note():
+    facts = [_f("OtherTaxationSocialSecurityPayable", 48210, CUR)]
+    assert pca.derive(facts, "2025-06-30")["fields"]["tax_owed"] == 48210
+
+
+def test_deferred_income_is_never_the_combined_accruals_line():
+    """
+    Accruals and deferred income together also hold costs not yet
+    invoiced. Season-ticket money is only the deferred part, so the
+    combined line has its own column and never stands in for it.
+    """
+    fields = pca.derive([_f("AccruedLiabilitiesDeferredIncome", 90000, CUR)], "2025-06-30")["fields"]
+    assert "deferred_income" not in fields
+    assert fields["accruals_and_deferred_income"] == 90000
+
+
+def test_the_fixed_asset_note_is_read_whole_not_by_class():
+    facts = [_f("PropertyPlantEquipmentGrossCost", 2_000_000),
+             _f("PropertyPlantEquipmentGrossCost", 1_500_000,
+                "PropertyPlantEquipmentClassesDimension=LandBuildings"),
+             _f("AccumulatedDepreciationImpairmentPropertyPlantEquipment", 800_000),
+             _f("AdditionsOtherThanThroughBusinessCombinationsPropertyPlantEquipment", 120_000,
+                instant="")]
+    fields = pca.derive(facts, "2025-06-30")["fields"]
+    assert fields["fixed_asset_cost"] == 2_000_000
+    assert fields["fixed_asset_depreciation"] == 800_000
+    assert fields["fixed_asset_additions"] == 120_000
+
+
+def test_intangible_additions_take_the_externally_acquired_total():
+    facts = [_f("AdditionsOtherThanThroughBusinessCombinationsIntangibleAssets", 3_400_000,
+                "IntangibleAssetsGenerationTypeDimension=ExternallyAcquiredIntangibleAssets",
+                instant="")]
+    assert pca.derive(facts, "2025-06-30")["fields"]["intangible_additions"] == 3_400_000
+
+
+def test_interest_paid_is_profit_and_loss_and_kept_off_a_small_company_row():
+    assert finances._validate(_row(disclosure="small_company", interest_paid=1), set())
+    assert not finances._validate(_row(disclosure="small_company", tax_owed=1,
+                                       deferred_income=1, fixed_asset_cost=1), set())
+
+
+def test_a_withheld_profit_and_loss_is_recorded_as_a_choice(tmp_path):
+    """Section 444: legal, and a choice. 87 filings make it."""
+    body = (num("core:NetAssetsLiabilities", "1")
+            + text(f"direp:{pca.PNL_WITHHELD}",
+                   "In accordance with Section 444 of the Companies Act 2006, the Income "
+                   "Statement has not been delivered."))
+    result = pca.read_document(write(tmp_path, "m__1.xhtml", doc(body)))
+    assert result["pnl_withheld"] == "yes"
