@@ -173,8 +173,31 @@ def read_all(directory: Path, out: Path, budget_minutes: float) -> list[dict]:
         logger.info("%-34s %-11s %s pages, %s chars", pdf.name, row["method"],
                     row["pages"] or "?", row["chars"])
 
-    with (out / "census.tsv").open("w", encoding="utf-8", newline="") as fh:
-        writer = csv.DictWriter(fh, CENSUS_COLUMNS, delimiter="\t", lineterminator="\n")
+    # Which clubs this run fetched: a run can be limited to a few clubs,
+    # and the others' texts and census rows are still true.
+    fetched = {p.name.split("__", 1)[0] for p in directory.glob("*__filings.json")}
+    current = {pdf.stem for pdf in directory.glob("*.pdf")}
+
+    # A text whose PDF this run no longer has is a filing that has left
+    # the club's two-filing window, or was never accounts at all: the
+    # first run saved the text of twelve AA01 forms - a change of
+    # accounting date - under names that now belong to real accounts.
+    # Removed only for clubs fetched this run.
+    for stale in out.glob("*__*.txt"):
+        if stale.stem.split("__", 1)[0] in fetched and stale.stem not in current:
+            stale.unlink()
+            logger.info("removed %s: no longer one of the club's PDF filings", stale.name)
+
+    census_path = out / "census.tsv"
+    if census_path.exists():
+        with census_path.open(encoding="utf-8", newline="") as fh:
+            rows += [r for r in csv.DictReader(fh, delimiter="\t")
+                     if r["club_id"] not in fetched and r["club_id"] not in
+                     {x["club_id"] for x in rows}]
+    rows.sort(key=lambda r: r["file"])
+    with census_path.open("w", encoding="utf-8", newline="") as fh:
+        writer = csv.DictWriter(fh, CENSUS_COLUMNS, delimiter="\t", lineterminator="\n",
+                                extrasaction="ignore")
         writer.writeheader()
         writer.writerows(rows)
     return rows
