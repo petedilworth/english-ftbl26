@@ -118,6 +118,7 @@ def test_the_page_builds(tmp_path, monkeypatch):
             full.execute("INSERT INTO club_finances (club_id, season_end_year, company_number, disclosure,"
                          " turnover, staff_costs, net_assets, flags) VALUES (?, ?, ?, 'full', ?, ?, ?, '[]')",
                          (club, season, club[:4], 10_000_000, wages, na + season))
+    full.commit()          # an open transaction would hold the backup below forever
     disk = tmp_path / "england.db"
     dst = sqlite3.connect(disk); full.backup(dst); dst.close()
     content_dir = tmp_path / "content" / "insights"
