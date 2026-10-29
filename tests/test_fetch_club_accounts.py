@@ -50,7 +50,12 @@ def test_only_trusted_matches_are_fetched(tmp_path):
 def test_ixbrl_is_preferred_and_a_pdf_is_recorded_as_a_pdf(tmp_path, monkeypatch):
     monkeypatch.setattr(fca.time, "sleep", lambda s: None)
     pages = {"/company/00000001/filing-history": {"items": [
-        {"links": {"document_metadata": DOC}}, {"links": {"document_metadata": DOC + "2"}}]}}
+        # Real filing-history items always say what they are; the fetch now
+        # keeps only accounts, so the fixture has to say so too.
+        {"type": "AA", "description": "accounts-with-accounts-type-small",
+         "links": {"document_metadata": DOC}},
+        {"type": "AA", "description": "accounts-with-accounts-type-small",
+         "links": {"document_metadata": DOC + "2"}}]}}
     docs = {
         (DOC, "application/json"): Resp(200, {"resources": {"application/xhtml+xml": {}, "application/pdf": {}}}),
         (DOC + "/content", "application/xhtml+xml"): Body(b"<html/>"),

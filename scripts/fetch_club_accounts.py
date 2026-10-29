@@ -45,6 +45,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 import companies  # noqa: E402
 from fetch_companies_house import Register  # noqa: E402
+from parse_club_accounts import is_accounts  # noqa: E402
 
 FORMATS = [("application/xhtml+xml", "xhtml"), ("application/xml", "xhtml"), ("application/pdf", "pdf")]
 
@@ -103,7 +104,10 @@ def run(reg: Register, out: Path, clubs: dict[str, dict], filings: int = 2) -> d
     for i, (cid, co) in enumerate(sorted(clubs.items()), 1):
         history = reg.get(f"/company/{co['company_number']}/filing-history", category="accounts",
                           items_per_page=20) or {}
-        items = [x for x in history.get("items") or [] if (x.get("links") or {}).get("document_metadata")]
+        # Accounts only: the category also holds AA01, a change of accounting
+        # date, which displaced a real set of accounts for twelve clubs.
+        items = [x for x in history.get("items") or []
+                 if (x.get("links") or {}).get("document_metadata") and is_accounts(x)]
         (out / f"{cid}__filings.json").write_text(json.dumps(history), encoding="utf-8")
         if not items:
             tally["no_filings"].append(cid)

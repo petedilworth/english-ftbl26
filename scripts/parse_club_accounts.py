@@ -95,16 +95,39 @@ TEXT_CAP = 400
 
 # ── what each field is read from ───────────────────────────────────────────
 #
-# (concept, member) pairs, tried in order. member None means the fact must
-# carry no dimension at all; a string means it must carry exactly one,
-# whose member's name contains that string. Local names only: the prefix
+# (concept, members) pairs, tried in order. Local names only: the prefix
 # varies with the taxonomy version and says nothing useful.
 #
-# A starting set. accounts-concepts.tsv is how it grows.
+#   None             the fact carries no slicing dimension
+#   "Member"         exactly one, with exactly this member - exactly, because
+#                    "Non-currentFinancialInstruments" contains the letters of
+#                    "CurrentFinancialInstruments", and a substring test read
+#                    long-term debt as short-term
+#   ("A", "B")       the sum of the facts with member A and member B, for a
+#                    total the filing states only in its parts: bank loans
+#                    due within a year plus those due after
+#
+# Group/company and original/revised are not slices but qualifiers, and
+# are handled apart - see QUALIFIERS.
+#
+# Every list below was checked against data/companies/accounts-concepts.tsv
+# from the first real run, which is how the current/non-current dimension
+# (used three times as often as the maturity one) was found.
 
 DURATION, INSTANT = "duration", "instant"
 
-FIELDS: dict[str, tuple[str, list[tuple[str, str | None]]]] = {
+CURRENT = ("CurrentFinancialInstruments", "WithinOneYear")
+NON_CURRENT = ("Non-currentFinancialInstruments", "AfterOneYear")
+
+
+def _split_totals(concept: str) -> list:
+    """A concept stated whole, or as current plus non-current, either spelling."""
+    return [(concept, None),
+            (concept, ("CurrentFinancialInstruments", "Non-currentFinancialInstruments")),
+            (concept, ("WithinOneYear", "AfterOneYear"))]
+
+
+FIELDS: dict[str, tuple[str, list]] = {
     # profit and loss
     "turnover": (DURATION, [
         ("TurnoverRevenue", None), ("Turnover", None),
@@ -123,10 +146,6 @@ FIELDS: dict[str, tuple[str, list[tuple[str, str | None]]]] = {
     "profit_after_tax": (DURATION, [
         ("ProfitLoss", None), ("ProfitLossForPeriod", None),
         ("ProfitLossOnOrdinaryActivitiesAfterTax", None)]),
-    "amortisation": (DURATION, [
-        ("AmortisationExpenseIntangibleAssets", None),
-        ("AmortisationIntangibleAssets", None),
-        ("AmortisationImpairmentExpenseIntangibleAssets", None)]),
     "player_sales_profit": (DURATION, [
         ("GainLossOnDisposalIntangibleAssets", None),
         ("GainLossOnDisposalsIntangibleAssets", None),
@@ -138,6 +157,16 @@ FIELDS: dict[str, tuple[str, list[tuple[str, str | None]]]] = {
     "directors_pay": (DURATION, [
         ("DirectorRemuneration", None), ("DirectorsRemuneration", None),
         ("DirectorsEmoluments", None)]),
+    # The charge for the year, from the profit-and-loss where a filing has
+    # one and otherwise from the fixed-asset note, which every filing has.
+    "amortisation": (DURATION, [
+        ("AmortisationExpenseIntangibleAssets", None),
+        ("AmortisationIntangibleAssets", None),
+        ("AmortisationImpairmentExpenseIntangibleAssets", None),
+        ("IncreaseFromAmortisationChargeForYearIntangibleAssets", None)]),
+    "depreciation": (DURATION, [
+        ("DepreciationExpensePropertyPlantEquipment", None),
+        ("IncreaseFromDepreciationChargeForYearPropertyPlantEquipment", None)]),
     # the balance sheet
     "fixed_assets": (INSTANT, [("FixedAssets", None)]),
     "intangible_assets": (INSTANT, [
@@ -145,26 +174,34 @@ FIELDS: dict[str, tuple[str, list[tuple[str, str | None]]]] = {
     "tangible_assets": (INSTANT, [
         ("PropertyPlantEquipment", None), ("TangibleFixedAssets", None)]),
     "current_assets": (INSTANT, [("CurrentAssets", None)]),
+    "debtors": (INSTANT, _split_totals("Debtors")),
     "cash": (INSTANT, [
         ("CashBankOnHand", None), ("CashBankInHand", None),
         ("CashCashEquivalents", None)]),
     "creditors_within_year": (INSTANT, [
-        ("Creditors", "WithinOneYear"),
+        *[("Creditors", m) for m in CURRENT],
         ("CreditorsDueWithinOneYear", None),
         ("CreditorsAmountsFallingDueWithinOneYear", None)]),
     "net_current_assets": (INSTANT, [("NetCurrentAssetsLiabilities", None)]),
     "total_assets_less_current_liabilities": (INSTANT, [
         ("TotalAssetsLessCurrentLiabilities", None)]),
     "creditors_after_year": (INSTANT, [
-        ("Creditors", "AfterOneYear"),
+        *[("Creditors", m) for m in NON_CURRENT],
         ("CreditorsDueAfterOneYear", None),
         ("CreditorsAmountsFallingDueAfterMoreThanOneYear", None)]),
+    # What the creditors are, where the notes say. Owed to group is the
+    # one that matters most for football: it is how a parent company or an
+    # owner funds a club, and it does not appear anywhere else.
+    "bank_loans": (INSTANT, [("TotalBorrowings", None), *_split_totals("BankBorrowingsOverdrafts")]),
+    "owed_to_group": (INSTANT, _split_totals("AmountsOwedToGroupUndertakings")),
+    "other_creditors": (INSTANT, _split_totals("OtherCreditors")),
     "net_assets": (INSTANT, [
         ("NetAssetsLiabilities", None), ("Equity", None),
         ("ShareholdersFunds", None)]),
     "share_capital": (INSTANT, [
         ("Equity", "ShareCapital"), ("CalledUpShareCapital", None),
-        ("CalledUpShareCapitalPaid", None)]),
+        ("CalledUpShareCapitalPaid", None),
+        ("Equity", "ShareCapitalOrdinaryShareClass1")]),
 }
 
 PNL_FIELDS = [f for f in FIELDS if f in finances.PNL_COLUMNS]
@@ -302,9 +339,11 @@ def _going_concern(text: str) -> str | None:
         before = text[max(0, match.start() - 80):match.start()]
         if _GC_NEGATION.search(before):
             continue
+        # From the sentence the match is in, on for a paragraph's worth:
+        # the heading alone is followed by a sentence every report shares,
+        # and the part that names the note comes after it.
         start = text.rfind(".", 0, match.start()) + 1
-        end = text.find(".", match.end())
-        return _clean(text[start:end if end != -1 else match.end() + 200])[:TEXT_CAP]
+        return _clean(text[start:start + TEXT_CAP])
     return None
 
 
@@ -365,6 +404,23 @@ def extract(path: Path) -> dict:
     return {"parsed": True, "facts": facts, "reason": None}
 
 
+def is_accounts(item: dict) -> bool:
+    """
+    A set of accounts, as opposed to the other filings Companies House
+    lists under its "accounts" category.
+
+    The one that mattered: AA01, a one-page notice that a company is
+    changing its accounting date. Twelve clubs had one of their two
+    fetched "accounts" displaced by it on the first run. The fetch and the
+    numbering below both use this test, so <club>__2 means the same filing
+    to both.
+    """
+    kind = (item.get("type") or "").upper()
+    if kind == "AA01":
+        return False
+    return kind in ("AA", "AAMD") or (item.get("description") or "").startswith("accounts")
+
+
 def _filings(directory: Path, club_id: str) -> list[dict]:
     """The filing-history items the fetch saved, in the order it numbered them."""
     path = directory / f"{club_id}__filings.json"
@@ -375,7 +431,7 @@ def _filings(directory: Path, club_id: str) -> list[dict]:
     except json.JSONDecodeError:
         return []
     return [x for x in history.get("items") or []
-            if (x.get("links") or {}).get("document_metadata")]
+            if (x.get("links") or {}).get("document_metadata") and is_accounts(x)]
 
 
 def document_meta(directory: Path, path: Path) -> dict:
@@ -494,14 +550,45 @@ def cmd_facts(directory: Path, facts_path: Path = FACTS) -> dict:
 
 # ── stage 2: facts to rows ─────────────────────────────────────────────────
 
+# Dimensions that qualify a figure rather than slice it, and which value
+# of each is wanted. A group filing tags the parent company's figures with
+# no dimension and the consolidated group's with Consolidated - Millwall's
+# net assets read as the holding company's alone until this - and the site
+# reports clubs at group level wherever a group files. A filing that
+# restates a year tags the figures Original and Revised, and the revision
+# is the one that stands; Sheffield Wednesday's 2023 accounts tag every
+# figure Original, and read as empty while this was ignored.
+QUALIFIERS = {
+    "GroupCompanyDataDimension": ["Consolidated", None],
+    "OriginalRevisedDataDimension": ["Revised", None, "Original"],
+}
+
+
+def _dims(fact: dict) -> tuple[dict, dict]:
+    """(slicing dims, qualifier dims) as {dimension: member}."""
+    slices, quals = {}, {}
+    for part in fact["dimensions"].split(";") if fact["dimensions"] else []:
+        dim, _, member = part.partition("=")
+        (quals if dim in QUALIFIERS else slices)[dim] = member
+    return slices, quals
+
+
+def _rank(quals: dict) -> tuple:
+    """Lower is preferred. Unknown qualifier values sort last."""
+    out = []
+    for dim, order in QUALIFIERS.items():
+        value = quals.get(dim)
+        out.append(order.index(value) if value in order else len(order))
+    return tuple(out)
+
+
 def _matches(fact: dict, concept: str, member: str | None) -> bool:
     if fact["concept"] != concept or fact["kind"] != "num":
         return False
-    dims = fact["dimensions"]
+    slices, _ = _dims(fact)
     if member is None:
-        return dims == ""
-    parts = dims.split(";") if dims else []
-    return len(parts) == 1 and member.lower() in parts[0].split("=", 1)[-1].lower()
+        return not slices
+    return len(slices) == 1 and next(iter(slices.values())) == member
 
 
 def _target(facts: list[dict], made_up: str) -> str:
@@ -527,25 +614,56 @@ def _on(fact: dict, kind: str, target: str) -> bool:
     return fact["period_end"] == target
 
 
-def _pick(facts: list[dict], field: str, target: str) -> tuple[int | None, str | None, bool]:
+def _best(hits: list[dict], level: str = "group") -> list[dict]:
     """
-    (value, source, ambiguous) for one field.
+    The hits carrying the most preferred qualifiers, in document order.
 
-    Where a concept carries different values for the same period with no
-    dimension to tell them apart - a group filing tagging both the group
-    and the parent company the same way - the first in document order is
-    taken, which is the primary statement, and the row is flagged so the
-    choice is visible rather than silent.
+    level "company" keeps only the parent company's own figures and drops
+    the consolidated ones entirely - not merely ranks them lower - because
+    a row recorded at company level must never be filled from the group.
+    """
+    if level == "company":
+        hits = [f for f in hits if "GroupCompanyDataDimension" not in _dims(f)[1]]
+    if not hits:
+        return []
+    ranks = [_rank(_dims(f)[1]) for f in hits]
+    top = min(ranks)
+    return [f for f, r in zip(hits, ranks) if r == top]
+
+
+def _pick(facts: list[dict], field: str, target: str,
+          level: str = "group") -> tuple[int | None, str | None, bool, bool]:
+    """
+    (value, source, ambiguous, consolidated) for one field.
+
+    Where a concept still carries different values for the same period
+    after the qualifiers are resolved, the first in document order is
+    taken - the primary statement - and the row is flagged, so the choice
+    is visible rather than silent.
     """
     kind, candidates = FIELDS[field]
-    for concept, member in candidates:
-        hits = [f for f in facts if _matches(f, concept, member) and _on(f, kind, target)]
+    for concept, members in candidates:
+        if isinstance(members, tuple):
+            parts, total, consolidated = [], 0, False
+            for member in members:
+                hits = _best([f for f in facts
+                              if _matches(f, concept, member) and _on(f, kind, target)], level)
+                if hits:
+                    parts.append(member)
+                    total += int(hits[0]["value"])
+                    consolidated |= _dims(hits[0])[1].get("GroupCompanyDataDimension") == "Consolidated"
+            if parts:
+                return total, f"{concept}[{'+'.join(parts)}]", False, consolidated
+            continue
+        hits = _best([f for f in facts if _matches(f, concept, members) and _on(f, kind, target)],
+                     level)
         if not hits:
             continue
         values = list(dict.fromkeys(int(f["value"]) for f in hits))
-        source = concept + (f"[{member}]" if member else "")
-        return values[0], source, len(values) > 1
-    return None, None, False
+        source = concept + (f"[{members}]" if members else "")
+        consolidated = _dims(hits[0])[1].get("GroupCompanyDataDimension") == "Consolidated"
+        return values[0], source, len(values) > 1, consolidated
+    return None, None, False, False
 
 
 def _text_fact(facts: list[dict], names: tuple[str, ...]) -> str:
@@ -558,22 +676,80 @@ def _text_fact(facts: list[dict], names: tuple[str, ...]) -> str:
     return ""
 
 
-def derive(facts: list[dict], made_up: str = "") -> dict:
-    """One document's facts to the row they support, or a stated reason they do not."""
+def _close(a: int, b: int) -> bool:
+    """Equal, allowing for a filer's own rounding of a few pounds."""
+    return abs(a - b) <= max(10, abs(max(abs(a), abs(b))) // 1000)
+
+
+def reconcile(fields: dict) -> tuple[list[str], list[str]]:
+    """
+    Check the balance sheet adds up, and correct the one error the check
+    can decide: a negative figure tagged without its minus sign.
+
+    The first real run found 9 of 202 filings whose net current assets did
+    not equal current assets less short-term creditors, and most were a
+    sign: Folkestone Invicta's £34,334 of current assets against £123,865
+    of creditors can only give net current LIABILITIES of £89,531, and the
+    filing tags it positive. Filing software that prints the brackets
+    outside the tag and omits sign="-" produces exactly this.
+
+    Where flipping the sign makes the identity hold, the identity has
+    decided it, and the figure is corrected and the correction named.
+    Where nothing makes it hold, the figures are left as filed and the
+    failure is named - a balance sheet that does not add up is a reason to
+    doubt every figure on it.
+
+    Returns (corrected fields, identities that fail).
+    """
+    corrected, failed = [], []
+    ca, cl, nca = (fields.get(k) for k in ("current_assets", "creditors_within_year",
+                                            "net_current_assets"))
+    if None not in (ca, cl, nca):
+        if _close(ca - cl, nca):
+            pass
+        elif _close(ca - cl, -nca):
+            fields["net_current_assets"] = nca = -nca
+            corrected.append("net_current_assets")
+        else:
+            failed.append("net_current_assets")
+    fa, talcl = fields.get("fixed_assets"), fields.get("total_assets_less_current_liabilities")
+    if None not in (fa, nca, talcl):
+        if _close(fa + nca, talcl):
+            pass
+        elif _close(fa + nca, -talcl):
+            fields["total_assets_less_current_liabilities"] = -talcl
+            corrected.append("total_assets_less_current_liabilities")
+        else:
+            failed.append("total_assets_less_current_liabilities")
+    return corrected, failed
+
+
+def derive(facts: list[dict], made_up: str = "", level: str = "group") -> dict:
+    """
+    One document's facts to the row they support, or a stated reason they
+    do not. level is "group" - consolidated figures wherever the filing
+    has them, which is how the site reports a club that files as a group -
+    or "company", the reporting entity's own figures only.
+    """
     if not facts:
         return {"ok": False, "reason": "no facts"}
     target = _target(facts, made_up)
     out = {"ok": True, "fields": {}, "sources": {}, "ambiguous": [],
            "period_end": target,
+           "has_group": any("GroupCompanyDataDimension=" in f["dimensions"] for f in facts),
            "concepts": {f["concept"] for f in facts}}
+    consolidated = False
     for field in FIELDS:
-        value, source, ambiguous = _pick(facts, field, target)
+        value, source, ambiguous, group = _pick(facts, field, target, level)
         if value is None:
             continue
         out["fields"][field] = value
         out["sources"][field] = source
+        consolidated |= group
         if ambiguous:
             out["ambiguous"].append(field)
+    out["consolidation_level"] = "group" if consolidated else ""
+    out["corrected"], out["unbalanced"] = reconcile(out["fields"])
 
     start = _text_fact(facts, (PERIOD_START,))[:10]
     if not re.match(r"\d{4}-\d{2}-\d{2}$", start):
@@ -655,8 +831,9 @@ def existing_rows(path: Path = FINANCES_CSV) -> set[tuple[str, int]]:
 
 # Columns a hand row may be topped up with: the ones added after every
 # hand row was written. Nothing a person had the chance to fill.
-NEW_COLUMNS = (["operating_profit", "profit_after_tax", "amortisation", "player_sales_profit"]
-               + finances.BALANCE_COLUMNS + finances.STATUS_COLUMNS)
+NEW_COLUMNS = list(dict.fromkeys(
+    ["operating_profit", "profit_after_tax", "amortisation", "player_sales_profit"]
+    + finances.BALANCE_COLUMNS + finances.STATUS_COLUMNS))
 
 
 def build_rows(facts: list[dict], existing: list[dict]) -> dict:
@@ -686,7 +863,7 @@ def build_rows(facts: list[dict], existing: list[dict]) -> dict:
             unread.append((first["club_id"], doc, "no period end date", []))
             continue
         result.update(club_id=first["club_id"], company_number=first["company_number"],
-                      filing_date=first["filing_date"], document=doc)
+                      filing_date=first["filing_date"], document=doc, facts=doc_facts)
         key = (first["club_id"], season)
         # Two filings for one year is an amendment: the later one stands.
         if key not in derived or result["filing_date"] > derived[key]["filing_date"]:
@@ -719,15 +896,66 @@ def build_rows(facts: list[dict], existing: list[dict]) -> dict:
                 mismatched.append(f"{club_id} {season}: row names {hand['entity_name'] or '?'}, "
                                   f"filing is {d['entity_name'] or '?'}")
                 continue
-            filled = [c for c in NEW_COLUMNS if not hand[c] and values.get(c)]
-            for c in filled:
-                hand[c] = values[c]
-            if filled:
-                flags = _flags(hand["flags"])
-                if "ixbrl_balance_sheet" not in flags:
-                    flags.append("ixbrl_balance_sheet")
-                hand["flags"] = json.dumps(flags)
+            # The same entity files both its own figures and, as a group,
+            # its subsidiaries' with them, and the two differ by a stadium
+            # company: Reading's tangible assets are £131,898 for the
+            # company and £39.8m for the group. The row says which level a
+            # person meant; where it does not and the filing has both, the
+            # level cannot be known and nothing is added.
+            flags = _flags(hand["flags"])
+            ours = next((f[len("ixbrl_fill:"):].split(",") for f in flags
+                         if f.startswith("ixbrl_fill:")), None)
+            if ours is None:
+                ours = NEW_COLUMNS if "ixbrl_balance_sheet" in flags else []
+
+            level = {"club": "company", "group": "group"}.get(hand["consolidation_level"])
+            if level is None:
+                if d["has_group"]:
+                    mismatched.append(f"{club_id} {season}: group filing, and the row does not "
+                                      f"say whether it records the group or the company")
+                    # Withdraw anything an earlier run guessed here: those
+                    # values were the parser's, and are no more knowable now.
+                    for c in ours:
+                        if c in hand:
+                            hand[c] = ""
+                    hand["flags"] = json.dumps(
+                        [f for f in flags if f != "ixbrl_balance_sheet"
+                         and not f.startswith("ixbrl_fill:")])
+                    continue
+                level = "company"
+            reading = derive(d["facts"], d["period_end"], level)
+            if not reading["ok"]:
+                continue
+            values = {f: str(v) for f, v in reading["fields"].items()}
+            values.update(accounts_type=d["accounts_type"], audited=d["audited"],
+                          going_concern=d["going_concern"])
+
+            # Provenance (read above). The columns this parser wrote are
+            # named in the row's flags, so a corrected reading reaches them
+            # next run, while a value a person enters later is never
+            # touched. A row topped up before the list existed was topped
+            # up only in columns that did not exist until then: all of them
+            # are ours.
+            written = []
+            for c in NEW_COLUMNS:
+                if c in ours or not hand[c]:
+                    new = values.get(c, "")
+                    if new and hand[c] != new:
+                        stats[f"topped:{c}"] += 1
+                    if c in ours and not new:
+                        hand[c] = ""
+                    if new:
+                        hand[c] = new
+                        written.append(c)
+            flags = [f for f in flags if f not in ("ixbrl_balance_sheet", "sign_corrected",
+                                                    "does_not_balance")
+                     and not f.startswith("ixbrl_fill:")]
+            if written:
+                flags += ["ixbrl_balance_sheet", "ixbrl_fill:" + ",".join(written)]
+                flags += (["sign_corrected"] if reading["corrected"] else []) \
+                    + (["does_not_balance"] if reading["unbalanced"] else [])
                 stats["hand rows topped up"] += 1
+            hand["flags"] = json.dumps(flags)
             continue
 
         company = companies.get(club_id) or {}
@@ -741,13 +969,17 @@ def build_rows(facts: list[dict], existing: list[dict]) -> dict:
             "period_start": d["period_start"],
             "period_end": d["period_end"],
             "period_months": _months(d["period_start"], d["period_end"]),
+            "consolidation_level": d["consolidation_level"],
             "disclosure": d["disclosure"],
             "staff_costs_definition": ("excl_amortisation" if full and "staff_costs" in fields
                                        else ""),
             "source_url": ("https://find-and-update.company-information.service.gov.uk"
                            f"/company/{d['company_number']}/filing-history"),
             "filing_date": d["filing_date"],
-            "flags": json.dumps(["ixbrl_auto"] + (["ixbrl_ambiguous"] if d["ambiguous"] else [])),
+            "flags": json.dumps(["ixbrl_auto"]
+                                + (["ixbrl_ambiguous"] if d["ambiguous"] else [])
+                                + (["sign_corrected"] if d["corrected"] else [])
+                                + (["does_not_balance"] if d["unbalanced"] else [])),
         })
         if at is not None:
             rows[at] = row
@@ -758,14 +990,20 @@ def build_rows(facts: list[dict], existing: list[dict]) -> dict:
             stats["machine rows added"] += 1
         stats[d["disclosure"]] += 1
 
-    filled = Counter()
+    # What the parser itself put there. A hand row's own turnover is not
+    # counted: the report is about what the filings added.
+    filled, topped = Counter(), Counter()
     for r in rows:
-        if "ixbrl_auto" in _flags(r["flags"]) or "ixbrl_balance_sheet" in _flags(r["flags"]):
+        flags = _flags(r["flags"])
+        if "ixbrl_auto" in flags:
             for c in finances.MONEY_COLUMNS + finances.STATUS_COLUMNS:
                 if r[c]:
                     filled[c] += 1
+    for c, n in stats.items():
+        if c.startswith("topped:"):
+            topped[c[7:]] = n
     return {"rows": rows, "stats": stats, "unread": unread, "mismatched": mismatched,
-            "filled": filled, "derived": derived}
+            "filled": filled, "topped": topped, "derived": derived}
 
 
 def census(facts: list[dict]) -> list[dict]:
@@ -776,7 +1014,8 @@ def census(facts: list[dict]) -> list[dict]:
     reads = {}
     for field, (_kind, candidates) in FIELDS.items():
         for concept, member in candidates:
-            reads.setdefault(concept, []).append(field + (f"[{member}]" if member else ""))
+            tag = "+".join(member) if isinstance(member, tuple) else member
+            reads.setdefault(concept, []).append(field + (f"[{tag}]" if tag else ""))
     docs, count, dimmed, example = defaultdict(set), Counter(), Counter(), {}
     for f in facts:
         c = f["concept"]
@@ -819,10 +1058,15 @@ def cmd_rows(facts_path: Path = FACTS, apply: bool = False,
     for key in ("full", "small_company", "machine rows added", "machine rows rebuilt",
                 "hand rows topped up"):
         logger.info("   %-22s %d", key, stats.get(key, 0))
-    logger.info("   fields filled on machine-read and topped-up rows:")
+    logger.info("   %-38s %8s %8s", "field", "machine", "hand+")
     for c in finances.MONEY_COLUMNS + finances.STATUS_COLUMNS:
-        if result["filled"].get(c):
-            logger.info("      %-38s %d", c, result["filled"][c])
+        a, b = result["filled"].get(c, 0), result["topped"].get(c, 0)
+        if a or b:
+            logger.info("   %-38s %8d %8d", c, a, b)
+    corrected = sum(1 for r in result["rows"] if "sign_corrected" in _flags(r["flags"]))
+    unbalanced = sum(1 for r in result["rows"] if "does_not_balance" in _flags(r["flags"]))
+    logger.info("balance sheet check: %d rows had a missing minus sign corrected, "
+                "%d do not add up and are flagged", corrected, unbalanced)
     if result["mismatched"]:
         logger.info("%d hand rows left alone - the filing is a different entity:",
                     len(result["mismatched"]))

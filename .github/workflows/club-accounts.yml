@@ -43,9 +43,10 @@ concurrency:
 jobs:
   accounts:
     runs-on: ubuntu-latest
-    # The fetch is ~15 minutes; OCR of the scanned PDFs has its own
-    # 40-minute budget inside the script and picks up next run where it stopped.
-    timeout-minutes: 90
+    # The fetch is ~10 minutes; OCR of the scanned PDFs has its own
+    # 70-minute budget inside the script and picks up next run where it
+    # stopped. The first full read is ~3,000 pages, so two runs.
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
 
@@ -89,7 +90,7 @@ jobs:
         run: |
           mkdir -p data/companies/pdf
           python scripts/read_pdf_accounts.py ch-accounts --out data/companies/pdf \
-            --budget-minutes 40 2>&1 | tee data/companies/pdf/report.txt || true
+            --budget-minutes 70 2>&1 | tee data/companies/pdf/report.txt || true
 
       - name: Commit
         run: |
