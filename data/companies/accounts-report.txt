@@ -1,5 +1,6 @@
 Club accounts read 2026-10-29
 Documents: 278 iXBRL, 101 PDF only
+INFO     filings index: 3101 accounts filings -> filings.tsv
 INFO     facts: 40519 from 278 documents read now, 0 kept from earlier runs -> facts/
 WARNING  101 filings are PDF only and carry no tagged figures
 INFO     rows: 275 club-seasons read from 278 documents
@@ -78,3 +79,5 @@ INFO           42 filings  OtherDisposalsIntangibleAssets
 INFO           41 filings  FinanceLeaseLiabilitiesPresentValueTotal
 INFO           41 filings  FinishedGoodsGoodsForResale
 INFO     wrote 377 rows to club_finances.csv
+INFO     link check: filing document HTTP 200 - https://find-and-update.company-information.service.gov.uk/company/01287721/filing-history/MzUxMjk0MjMwN2FkaXF6a2N4/document?format=pdf&download=0
+INFO     link check: accounts list HTTP 200 - https://find-and-update.company-information.service.gov.uk/company/01287721/filing-history?category=accounts
