@@ -1,0 +1,1198 @@
+club_id	file	document	made_up_date	level	field	value	fixes	checks	scale	from_contents
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	document	_disclosure	small_company				
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	document	_pnl_withheld					
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	document	_going_concern					
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	plain	cash	31000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	plain	creditors_after_year	18171000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	plain	creditors_within_year	1957000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	plain	current_assets	137391000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	plain	debtors	137360000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	plain	employees	871		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	plain	fixed_assets	30059000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	plain	intangible_assets	0		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	plain	net_assets	147322000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	plain	net_current_assets	135434000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	plain	staff_costs	346804000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	plain	tangible_assets	0		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	plain	total_assets_less_current_liabilities	165493000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	document	_disclosure	full				
+arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	document	_pnl_withheld					
+arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	document	_going_concern					
+arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	plain	cash	30000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	plain	creditors_after_year	17677000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	plain	creditors_within_year	1816000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	plain	current_assets	136954000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	plain	debtors	136924000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	plain	employees	826		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	plain	fixed_assets	30059000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	plain	intangible_assets	0		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	plain	net_assets	147520000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	plain	net_current_assets	135138000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	plain	staff_costs	327822000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	plain	tangible_assets	0		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	plain	total_assets_less_current_liabilities	165197000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+aston-villa-fc	aston-villa-fc__1	cYMDcfOjfzznPppvjkdJpXEAGPa4z4j5L8CHsq2HEnE	2025-06-30	document	_disclosure	full				
+aston-villa-fc	aston-villa-fc__1	cYMDcfOjfzznPppvjkdJpXEAGPa4z4j5L8CHsq2HEnE	2025-06-30	document	_pnl_withheld					
+aston-villa-fc	aston-villa-fc__1	cYMDcfOjfzznPppvjkdJpXEAGPa4z4j5L8CHsq2HEnE	2025-06-30	document	_going_concern					
+aston-villa-fc	aston-villa-fc__1	cYMDcfOjfzznPppvjkdJpXEAGPa4z4j5L8CHsq2HEnE	2025-06-30	unlabelled	cash	6299000		I1,I2,I3,I4,employees:sum of 4	1000	
+aston-villa-fc	aston-villa-fc__1	cYMDcfOjfzznPppvjkdJpXEAGPa4z4j5L8CHsq2HEnE	2025-06-30	unlabelled	creditors_after_year	110571000		I1,I2,I3,I4,employees:sum of 4	1000	
+aston-villa-fc	aston-villa-fc__1	cYMDcfOjfzznPppvjkdJpXEAGPa4z4j5L8CHsq2HEnE	2025-06-30	unlabelled	creditors_within_year	282564000		I1,I2,I3,I4,employees:sum of 4	1000	
+aston-villa-fc	aston-villa-fc__1	cYMDcfOjfzznPppvjkdJpXEAGPa4z4j5L8CHsq2HEnE	2025-06-30	unlabelled	current_assets	312264000		I1,I2,I3,I4,employees:sum of 4	1000	
+aston-villa-fc	aston-villa-fc__1	cYMDcfOjfzznPppvjkdJpXEAGPa4z4j5L8CHsq2HEnE	2025-06-30	unlabelled	debtors	301947000		I1,I2,I3,I4,employees:sum of 4	1000	
+aston-villa-fc	aston-villa-fc__1	cYMDcfOjfzznPppvjkdJpXEAGPa4z4j5L8CHsq2HEnE	2025-06-30	unlabelled	employees	793		I1,I2,I3,I4,employees:sum of 4	1000	
+aston-villa-fc	aston-villa-fc__1	cYMDcfOjfzznPppvjkdJpXEAGPa4z4j5L8CHsq2HEnE	2025-06-30	unlabelled	fixed_assets	86760000		I1,I2,I3,I4,employees:sum of 4	1000	
+aston-villa-fc	aston-villa-fc__1	cYMDcfOjfzznPppvjkdJpXEAGPa4z4j5L8CHsq2HEnE	2025-06-30	unlabelled	net_assets	5889000		I1,I2,I3,I4,employees:sum of 4	1000	
+aston-villa-fc	aston-villa-fc__1	cYMDcfOjfzznPppvjkdJpXEAGPa4z4j5L8CHsq2HEnE	2025-06-30	unlabelled	net_current_assets	29700000		I1,I2,I3,I4,employees:sum of 4	1000	
+aston-villa-fc	aston-villa-fc__1	cYMDcfOjfzznPppvjkdJpXEAGPa4z4j5L8CHsq2HEnE	2025-06-30	unlabelled	tangible_assets	86760000		I1,I2,I3,I4,employees:sum of 4	1000	
+aston-villa-fc	aston-villa-fc__1	cYMDcfOjfzznPppvjkdJpXEAGPa4z4j5L8CHsq2HEnE	2025-06-30	unlabelled	total_assets_less_current_liabilities	116460000		I1,I2,I3,I4,employees:sum of 4	1000	
+aston-villa-fc	aston-villa-fc__2	MWZRAHHZS5U0Iwyz88nt5qBSPwAX6DwU7EZ4gii6hp0	2024-06-30	document	_disclosure	full				
+aston-villa-fc	aston-villa-fc__2	MWZRAHHZS5U0Iwyz88nt5qBSPwAX6DwU7EZ4gii6hp0	2024-06-30	document	_pnl_withheld					
+aston-villa-fc	aston-villa-fc__2	MWZRAHHZS5U0Iwyz88nt5qBSPwAX6DwU7EZ4gii6hp0	2024-06-30	document	_going_concern					
+aston-villa-fc	aston-villa-fc__2	MWZRAHHZS5U0Iwyz88nt5qBSPwAX6DwU7EZ4gii6hp0	2024-06-30	plain	cash	6505000		I1,I2,I3	1000	
+aston-villa-fc	aston-villa-fc__2	MWZRAHHZS5U0Iwyz88nt5qBSPwAX6DwU7EZ4gii6hp0	2024-06-30	plain	creditors_within_year	263331000		I1,I2,I3	1000	
+aston-villa-fc	aston-villa-fc__2	MWZRAHHZS5U0Iwyz88nt5qBSPwAX6DwU7EZ4gii6hp0	2024-06-30	plain	current_assets	172313000		I1,I2,I3	1000	
+aston-villa-fc	aston-villa-fc__2	MWZRAHHZS5U0Iwyz88nt5qBSPwAX6DwU7EZ4gii6hp0	2024-06-30	plain	debtors	165742000		I1,I2,I3	1000	
+aston-villa-fc	aston-villa-fc__2	MWZRAHHZS5U0Iwyz88nt5qBSPwAX6DwU7EZ4gii6hp0	2024-06-30	plain	fixed_assets	26725000		I1,I2,I3	1000	
+aston-villa-fc	aston-villa-fc__2	MWZRAHHZS5U0Iwyz88nt5qBSPwAX6DwU7EZ4gii6hp0	2024-06-30	plain	net_assets	-64293000		I1,I2,I3	1000	
+aston-villa-fc	aston-villa-fc__2	MWZRAHHZS5U0Iwyz88nt5qBSPwAX6DwU7EZ4gii6hp0	2024-06-30	plain	net_current_assets	-91018000		I1,I2,I3	1000	
+aston-villa-fc	aston-villa-fc__2	MWZRAHHZS5U0Iwyz88nt5qBSPwAX6DwU7EZ4gii6hp0	2024-06-30	plain	share_capital	594690000		I1,I2,I3	1000	
+aston-villa-fc	aston-villa-fc__2	MWZRAHHZS5U0Iwyz88nt5qBSPwAX6DwU7EZ4gii6hp0	2024-06-30	plain	tangible_assets	26725000		I1,I2,I3	1000	
+aston-villa-fc	aston-villa-fc__2	MWZRAHHZS5U0Iwyz88nt5qBSPwAX6DwU7EZ4gii6hp0	2024-06-30	plain	total_assets_less_current_liabilities	-64293000		I1,I2,I3	1000	
+basingstoke-town-fc	basingstoke-town-fc__1	wzyfe6KdtQaFSG7LzC13Hhz0dJMOdnWKWt4s2wWAQgg	2025-05-31	document	_disclosure	small_company				
+basingstoke-town-fc	basingstoke-town-fc__1	wzyfe6KdtQaFSG7LzC13Hhz0dJMOdnWKWt4s2wWAQgg	2025-05-31	document	_pnl_withheld					
+basingstoke-town-fc	basingstoke-town-fc__1	wzyfe6KdtQaFSG7LzC13Hhz0dJMOdnWKWt4s2wWAQgg	2025-05-31	document	_going_concern					
+basingstoke-town-fc	basingstoke-town-fc__1	wzyfe6KdtQaFSG7LzC13Hhz0dJMOdnWKWt4s2wWAQgg	2025-05-31	plain	creditors_after_year	0		I1,I2,I3,I4	1	
+basingstoke-town-fc	basingstoke-town-fc__1	wzyfe6KdtQaFSG7LzC13Hhz0dJMOdnWKWt4s2wWAQgg	2025-05-31	plain	creditors_within_year	962578		I1,I2,I3,I4	1	
+basingstoke-town-fc	basingstoke-town-fc__1	wzyfe6KdtQaFSG7LzC13Hhz0dJMOdnWKWt4s2wWAQgg	2025-05-31	plain	current_assets	731763		I1,I2,I3,I4	1	
+basingstoke-town-fc	basingstoke-town-fc__1	wzyfe6KdtQaFSG7LzC13Hhz0dJMOdnWKWt4s2wWAQgg	2025-05-31	plain	fixed_assets	0		I1,I2,I3,I4	1	
+basingstoke-town-fc	basingstoke-town-fc__1	wzyfe6KdtQaFSG7LzC13Hhz0dJMOdnWKWt4s2wWAQgg	2025-05-31	plain	net_assets	-230815		I1,I2,I3,I4	1	
+basingstoke-town-fc	basingstoke-town-fc__1	wzyfe6KdtQaFSG7LzC13Hhz0dJMOdnWKWt4s2wWAQgg	2025-05-31	plain	net_current_assets	-230815		I1,I2,I3,I4	1	
+basingstoke-town-fc	basingstoke-town-fc__1	wzyfe6KdtQaFSG7LzC13Hhz0dJMOdnWKWt4s2wWAQgg	2025-05-31	plain	share_capital	256900		I1,I2,I3,I4	1	
+basingstoke-town-fc	basingstoke-town-fc__1	wzyfe6KdtQaFSG7LzC13Hhz0dJMOdnWKWt4s2wWAQgg	2025-05-31	plain	tangible_assets	0		I1,I2,I3,I4	1	
+basingstoke-town-fc	basingstoke-town-fc__1	wzyfe6KdtQaFSG7LzC13Hhz0dJMOdnWKWt4s2wWAQgg	2025-05-31	plain	total_assets_less_current_liabilities	-230815		I1,I2,I3,I4	1	
+blackburn-rovers-fc	blackburn-rovers-fc__1	562CJRCG_TdJBUyKhcBBwTh_RdNQKGtXWpMPHQaPlhc	2025-06-30	document	_disclosure	full				
+blackburn-rovers-fc	blackburn-rovers-fc__1	562CJRCG_TdJBUyKhcBBwTh_RdNQKGtXWpMPHQaPlhc	2025-06-30	document	_pnl_withheld					
+blackburn-rovers-fc	blackburn-rovers-fc__1	562CJRCG_TdJBUyKhcBBwTh_RdNQKGtXWpMPHQaPlhc	2025-06-30	document	_going_concern	"Material uncertainty related to going concern We draw attention to note 2 of the financial statements, which describes an ongoing legal matter involving the wider group and the potential impact this could have on Venkateshwara Hatcheries Private Limited’s (“VHPL"") ability to freely remit funds to its overseas subsidiaries, including this company. Until such time as the legal matter is concluded s"				
+blackburn-rovers-fc	blackburn-rovers-fc__1	562CJRCG_TdJBUyKhcBBwTh_RdNQKGtXWpMPHQaPlhc	2025-06-30	plain	creditors_after_year	1279766		I1,I2,I3,I4	1	
+blackburn-rovers-fc	blackburn-rovers-fc__1	562CJRCG_TdJBUyKhcBBwTh_RdNQKGtXWpMPHQaPlhc	2025-06-30	plain	creditors_within_year	164272999		I1,I2,I3,I4	1	
+blackburn-rovers-fc	blackburn-rovers-fc__1	562CJRCG_TdJBUyKhcBBwTh_RdNQKGtXWpMPHQaPlhc	2025-06-30	plain	current_assets	10649548		I1,I2,I3,I4	1	
+blackburn-rovers-fc	blackburn-rovers-fc__1	562CJRCG_TdJBUyKhcBBwTh_RdNQKGtXWpMPHQaPlhc	2025-06-30	plain	fixed_assets	26995728		I1,I2,I3,I4	1	
+blackburn-rovers-fc	blackburn-rovers-fc__1	562CJRCG_TdJBUyKhcBBwTh_RdNQKGtXWpMPHQaPlhc	2025-06-30	plain	intangible_assets	4730324		I1,I2,I3,I4	1	
+blackburn-rovers-fc	blackburn-rovers-fc__1	562CJRCG_TdJBUyKhcBBwTh_RdNQKGtXWpMPHQaPlhc	2025-06-30	plain	net_assets	-128553760		I1,I2,I3,I4	1	
+blackburn-rovers-fc	blackburn-rovers-fc__1	562CJRCG_TdJBUyKhcBBwTh_RdNQKGtXWpMPHQaPlhc	2025-06-30	plain	net_current_assets	-153623451		I1,I2,I3,I4	1	
+blackburn-rovers-fc	blackburn-rovers-fc__1	562CJRCG_TdJBUyKhcBBwTh_RdNQKGtXWpMPHQaPlhc	2025-06-30	plain	share_capital	198227484		I1,I2,I3,I4	1	
+blackburn-rovers-fc	blackburn-rovers-fc__1	562CJRCG_TdJBUyKhcBBwTh_RdNQKGtXWpMPHQaPlhc	2025-06-30	plain	tangible_assets	22265304		I1,I2,I3,I4	1	
+blackburn-rovers-fc	blackburn-rovers-fc__1	562CJRCG_TdJBUyKhcBBwTh_RdNQKGtXWpMPHQaPlhc	2025-06-30	plain	total_assets_less_current_liabilities	-126627723		I1,I2,I3,I4	1	
+blackburn-rovers-fc	blackburn-rovers-fc__2	HhxA-8on5LTDITWberXzHeietohLh_hpZKMeNNXLIR8	2024-06-30	document	_disclosure	full				
+blackburn-rovers-fc	blackburn-rovers-fc__2	HhxA-8on5LTDITWberXzHeietohLh_hpZKMeNNXLIR8	2024-06-30	document	_pnl_withheld					
+blackburn-rovers-fc	blackburn-rovers-fc__2	HhxA-8on5LTDITWberXzHeietohLh_hpZKMeNNXLIR8	2024-06-30	document	_going_concern					
+blackburn-rovers-fc	blackburn-rovers-fc__2	HhxA-8on5LTDITWberXzHeietohLh_hpZKMeNNXLIR8	2024-06-30	plain	creditors_after_year	1091422		I1,I2,I3,I4,employees:sum of 5	1	
+blackburn-rovers-fc	blackburn-rovers-fc__2	HhxA-8on5LTDITWberXzHeietohLh_hpZKMeNNXLIR8	2024-06-30	plain	creditors_within_year	159131685		I1,I2,I3,I4,employees:sum of 5	1	
+blackburn-rovers-fc	blackburn-rovers-fc__2	HhxA-8on5LTDITWberXzHeietohLh_hpZKMeNNXLIR8	2024-06-30	plain	current_assets	16609260		I1,I2,I3,I4,employees:sum of 5	1	
+blackburn-rovers-fc	blackburn-rovers-fc__2	HhxA-8on5LTDITWberXzHeietohLh_hpZKMeNNXLIR8	2024-06-30	plain	employees	222		I1,I2,I3,I4,employees:sum of 5	1	
+blackburn-rovers-fc	blackburn-rovers-fc__2	HhxA-8on5LTDITWberXzHeietohLh_hpZKMeNNXLIR8	2024-06-30	plain	fixed_assets	26200867		I1,I2,I3,I4,employees:sum of 5	1	
+blackburn-rovers-fc	blackburn-rovers-fc__2	HhxA-8on5LTDITWberXzHeietohLh_hpZKMeNNXLIR8	2024-06-30	plain	intangible_assets	3183432		I1,I2,I3,I4,employees:sum of 5	1	
+blackburn-rovers-fc	blackburn-rovers-fc__2	HhxA-8on5LTDITWberXzHeietohLh_hpZKMeNNXLIR8	2024-06-30	plain	net_assets	-118130572		I1,I2,I3,I4,employees:sum of 5	1	
+blackburn-rovers-fc	blackburn-rovers-fc__2	HhxA-8on5LTDITWberXzHeietohLh_hpZKMeNNXLIR8	2024-06-30	plain	net_current_assets	-142522425		I1,I2,I3,I4,employees:sum of 5	1	
+blackburn-rovers-fc	blackburn-rovers-fc__2	HhxA-8on5LTDITWberXzHeietohLh_hpZKMeNNXLIR8	2024-06-30	plain	tangible_assets	23017335		I1,I2,I3,I4,employees:sum of 5	1	
+blackburn-rovers-fc	blackburn-rovers-fc__2	HhxA-8on5LTDITWberXzHeietohLh_hpZKMeNNXLIR8	2024-06-30	plain	total_assets_less_current_liabilities	-116321558		I1,I2,I3,I4,employees:sum of 5	1	
+bournemouth-fc	bournemouth-fc__2	MPF74c50YFaapFAWPj-gxcUtt6aySxnS1Z_LUtY3CjI	2024-06-30	document	_disclosure	full				
+bournemouth-fc	bournemouth-fc__2	MPF74c50YFaapFAWPj-gxcUtt6aySxnS1Z_LUtY3CjI	2024-06-30	document	_pnl_withheld					
+bournemouth-fc	bournemouth-fc__2	MPF74c50YFaapFAWPj-gxcUtt6aySxnS1Z_LUtY3CjI	2024-06-30	document	_going_concern					
+bournemouth-fc	bournemouth-fc__2	MPF74c50YFaapFAWPj-gxcUtt6aySxnS1Z_LUtY3CjI	2024-06-30	plain	cash	7104000		I1,I2,I3,I4,employees:sum of 3,staff_costs:sum of 3	1000	
+bournemouth-fc	bournemouth-fc__2	MPF74c50YFaapFAWPj-gxcUtt6aySxnS1Z_LUtY3CjI	2024-06-30	plain	creditors_after_year	116666000		I1,I2,I3,I4,employees:sum of 3,staff_costs:sum of 3	1000	
+bournemouth-fc	bournemouth-fc__2	MPF74c50YFaapFAWPj-gxcUtt6aySxnS1Z_LUtY3CjI	2024-06-30	plain	creditors_within_year	196080000		I1,I2,I3,I4,employees:sum of 3,staff_costs:sum of 3	1000	
+bournemouth-fc	bournemouth-fc__2	MPF74c50YFaapFAWPj-gxcUtt6aySxnS1Z_LUtY3CjI	2024-06-30	plain	current_assets	16781000		I1,I2,I3,I4,employees:sum of 3,staff_costs:sum of 3	1000	
+bournemouth-fc	bournemouth-fc__2	MPF74c50YFaapFAWPj-gxcUtt6aySxnS1Z_LUtY3CjI	2024-06-30	plain	debtors	9275000		I1,I2,I3,I4,employees:sum of 3,staff_costs:sum of 3	1000	
+bournemouth-fc	bournemouth-fc__2	MPF74c50YFaapFAWPj-gxcUtt6aySxnS1Z_LUtY3CjI	2024-06-30	plain	employees	807		I1,I2,I3,I4,employees:sum of 3,staff_costs:sum of 3	1000	
+bournemouth-fc	bournemouth-fc__2	MPF74c50YFaapFAWPj-gxcUtt6aySxnS1Z_LUtY3CjI	2024-06-30	plain	fixed_assets	257952000		I1,I2,I3,I4,employees:sum of 3,staff_costs:sum of 3	1000	
+bournemouth-fc	bournemouth-fc__2	MPF74c50YFaapFAWPj-gxcUtt6aySxnS1Z_LUtY3CjI	2024-06-30	plain	intangible_assets	220416000		I1,I2,I3,I4,employees:sum of 3,staff_costs:sum of 3	1000	
+bournemouth-fc	bournemouth-fc__2	MPF74c50YFaapFAWPj-gxcUtt6aySxnS1Z_LUtY3CjI	2024-06-30	plain	net_assets	-38025000		I1,I2,I3,I4,employees:sum of 3,staff_costs:sum of 3	1000	
+bournemouth-fc	bournemouth-fc__2	MPF74c50YFaapFAWPj-gxcUtt6aySxnS1Z_LUtY3CjI	2024-06-30	plain	net_current_assets	-179299000		I1,I2,I3,I4,employees:sum of 3,staff_costs:sum of 3	1000	
+bournemouth-fc	bournemouth-fc__2	MPF74c50YFaapFAWPj-gxcUtt6aySxnS1Z_LUtY3CjI	2024-06-30	plain	staff_costs	136170000		I1,I2,I3,I4,employees:sum of 3,staff_costs:sum of 3	1000	
+bournemouth-fc	bournemouth-fc__2	MPF74c50YFaapFAWPj-gxcUtt6aySxnS1Z_LUtY3CjI	2024-06-30	plain	tangible_assets	37536000		I1,I2,I3,I4,employees:sum of 3,staff_costs:sum of 3	1000	
+bournemouth-fc	bournemouth-fc__2	MPF74c50YFaapFAWPj-gxcUtt6aySxnS1Z_LUtY3CjI	2024-06-30	plain	total_assets_less_current_liabilities	78653000		I1,I2,I3,I4,employees:sum of 3,staff_costs:sum of 3	1000	
+bradford-city-fc	bradford-city-fc__1	l_bzpgwOA7i_9Dc_alM8PaQ9zFDJHSB8Nhl37-CzkcQ	2025-06-30	document	_disclosure	full				
+bradford-city-fc	bradford-city-fc__1	l_bzpgwOA7i_9Dc_alM8PaQ9zFDJHSB8Nhl37-CzkcQ	2025-06-30	document	_pnl_withheld					
+bradford-city-fc	bradford-city-fc__1	l_bzpgwOA7i_9Dc_alM8PaQ9zFDJHSB8Nhl37-CzkcQ	2025-06-30	document	_going_concern					
+bradford-city-fc	bradford-city-fc__1	l_bzpgwOA7i_9Dc_alM8PaQ9zFDJHSB8Nhl37-CzkcQ	2025-06-30	plain	cash	166569		I1,I2,I3,I4	1	
+bradford-city-fc	bradford-city-fc__1	l_bzpgwOA7i_9Dc_alM8PaQ9zFDJHSB8Nhl37-CzkcQ	2025-06-30	plain	creditors_after_year	5399982		I1,I2,I3,I4	1	
+bradford-city-fc	bradford-city-fc__1	l_bzpgwOA7i_9Dc_alM8PaQ9zFDJHSB8Nhl37-CzkcQ	2025-06-30	plain	creditors_within_year	5700810		I1,I2,I3,I4	1	
+bradford-city-fc	bradford-city-fc__1	l_bzpgwOA7i_9Dc_alM8PaQ9zFDJHSB8Nhl37-CzkcQ	2025-06-30	plain	current_assets	3611126		I1,I2,I3,I4	1	
+bradford-city-fc	bradford-city-fc__1	l_bzpgwOA7i_9Dc_alM8PaQ9zFDJHSB8Nhl37-CzkcQ	2025-06-30	plain	debtors	3443229		I1,I2,I3,I4	1	
+bradford-city-fc	bradford-city-fc__1	l_bzpgwOA7i_9Dc_alM8PaQ9zFDJHSB8Nhl37-CzkcQ	2025-06-30	plain	fixed_assets	2013255		I1,I2,I3,I4	1	
+bradford-city-fc	bradford-city-fc__1	l_bzpgwOA7i_9Dc_alM8PaQ9zFDJHSB8Nhl37-CzkcQ	2025-06-30	plain	intangible_assets	314752		I1,I2,I3,I4	1	
+bradford-city-fc	bradford-city-fc__1	l_bzpgwOA7i_9Dc_alM8PaQ9zFDJHSB8Nhl37-CzkcQ	2025-06-30	plain	net_assets	-5476411		I1,I2,I3,I4	1	
+bradford-city-fc	bradford-city-fc__1	l_bzpgwOA7i_9Dc_alM8PaQ9zFDJHSB8Nhl37-CzkcQ	2025-06-30	plain	net_current_assets	-2089684		I1,I2,I3,I4	1	
+bradford-city-fc	bradford-city-fc__1	l_bzpgwOA7i_9Dc_alM8PaQ9zFDJHSB8Nhl37-CzkcQ	2025-06-30	plain	share_capital	3000003		I1,I2,I3,I4	1	
+bradford-city-fc	bradford-city-fc__1	l_bzpgwOA7i_9Dc_alM8PaQ9zFDJHSB8Nhl37-CzkcQ	2025-06-30	plain	tangible_assets	1698403		I1,I2,I3,I4	1	
+bradford-city-fc	bradford-city-fc__1	l_bzpgwOA7i_9Dc_alM8PaQ9zFDJHSB8Nhl37-CzkcQ	2025-06-30	plain	total_assets_less_current_liabilities	-76429		I1,I2,I3,I4	1	
+bradford-city-fc	bradford-city-fc__2	z0KG1nrV8fEXTvxoaQ0K7XbJALDM9PJJUU4ivJXajeg	2024-06-30	document	_disclosure	full				
+bradford-city-fc	bradford-city-fc__2	z0KG1nrV8fEXTvxoaQ0K7XbJALDM9PJJUU4ivJXajeg	2024-06-30	document	_pnl_withheld					
+bradford-city-fc	bradford-city-fc__2	z0KG1nrV8fEXTvxoaQ0K7XbJALDM9PJJUU4ivJXajeg	2024-06-30	document	_going_concern					
+bradford-city-fc	bradford-city-fc__2	z0KG1nrV8fEXTvxoaQ0K7XbJALDM9PJJUU4ivJXajeg	2024-06-30	plain	creditors_after_year	2949928		I1,I2,I3,I4	1	
+bradford-city-fc	bradford-city-fc__2	z0KG1nrV8fEXTvxoaQ0K7XbJALDM9PJJUU4ivJXajeg	2024-06-30	plain	creditors_within_year	4535647		I1,I2,I3,I4	1	
+bradford-city-fc	bradford-city-fc__2	z0KG1nrV8fEXTvxoaQ0K7XbJALDM9PJJUU4ivJXajeg	2024-06-30	plain	current_assets	3338297		I1,I2,I3,I4	1	
+bradford-city-fc	bradford-city-fc__2	z0KG1nrV8fEXTvxoaQ0K7XbJALDM9PJJUU4ivJXajeg	2024-06-30	plain	fixed_assets	1663825		I1,I2,I3,I4	1	
+bradford-city-fc	bradford-city-fc__2	z0KG1nrV8fEXTvxoaQ0K7XbJALDM9PJJUU4ivJXajeg	2024-06-30	plain	intangible_assets	211291		I1,I2,I3,I4	1	
+bradford-city-fc	bradford-city-fc__2	z0KG1nrV8fEXTvxoaQ0K7XbJALDM9PJJUU4ivJXajeg	2024-06-30	plain	net_assets	-2483453		I1,I2,I3,I4	1	
+bradford-city-fc	bradford-city-fc__2	z0KG1nrV8fEXTvxoaQ0K7XbJALDM9PJJUU4ivJXajeg	2024-06-30	plain	net_current_assets	-1197350		I1,I2,I3,I4	1	
+bradford-city-fc	bradford-city-fc__2	z0KG1nrV8fEXTvxoaQ0K7XbJALDM9PJJUU4ivJXajeg	2024-06-30	plain	share_capital	3000003		I1,I2,I3,I4	1	
+bradford-city-fc	bradford-city-fc__2	z0KG1nrV8fEXTvxoaQ0K7XbJALDM9PJJUU4ivJXajeg	2024-06-30	plain	tangible_assets	1452434		I1,I2,I3,I4	1	
+bradford-city-fc	bradford-city-fc__2	z0KG1nrV8fEXTvxoaQ0K7XbJALDM9PJJUU4ivJXajeg	2024-06-30	plain	total_assets_less_current_liabilities	466475		I1,I2,I3,I4	1	
+brentford-fc	brentford-fc__1	76_RRrRfd1JcGRzoRpDAb_D1a-JC9MrxQHpGjj6C3AE	2025-06-30	document	_disclosure	full				
+brentford-fc	brentford-fc__1	76_RRrRfd1JcGRzoRpDAb_D1a-JC9MrxQHpGjj6C3AE	2025-06-30	document	_pnl_withheld					
+brentford-fc	brentford-fc__1	76_RRrRfd1JcGRzoRpDAb_D1a-JC9MrxQHpGjj6C3AE	2025-06-30	document	_going_concern					
+brentford-fc	brentford-fc__1	76_RRrRfd1JcGRzoRpDAb_D1a-JC9MrxQHpGjj6C3AE	2025-06-30	group	cash	1977000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__1	76_RRrRfd1JcGRzoRpDAb_D1a-JC9MrxQHpGjj6C3AE	2025-06-30	group	creditors_after_year	96629000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__1	76_RRrRfd1JcGRzoRpDAb_D1a-JC9MrxQHpGjj6C3AE	2025-06-30	group	creditors_within_year	205680000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__1	76_RRrRfd1JcGRzoRpDAb_D1a-JC9MrxQHpGjj6C3AE	2025-06-30	group	current_assets	69092000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__1	76_RRrRfd1JcGRzoRpDAb_D1a-JC9MrxQHpGjj6C3AE	2025-06-30	group	debtors	65578000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__1	76_RRrRfd1JcGRzoRpDAb_D1a-JC9MrxQHpGjj6C3AE	2025-06-30	group	fixed_assets	304971000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__1	76_RRrRfd1JcGRzoRpDAb_D1a-JC9MrxQHpGjj6C3AE	2025-06-30	group	intangible_assets	184028000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__1	76_RRrRfd1JcGRzoRpDAb_D1a-JC9MrxQHpGjj6C3AE	2025-06-30	group	net_assets	60031000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__1	76_RRrRfd1JcGRzoRpDAb_D1a-JC9MrxQHpGjj6C3AE	2025-06-30	group	net_current_assets	-136588000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__1	76_RRrRfd1JcGRzoRpDAb_D1a-JC9MrxQHpGjj6C3AE	2025-06-30	group	share_capital	38487000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__1	76_RRrRfd1JcGRzoRpDAb_D1a-JC9MrxQHpGjj6C3AE	2025-06-30	group	tangible_assets	120943000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__1	76_RRrRfd1JcGRzoRpDAb_D1a-JC9MrxQHpGjj6C3AE	2025-06-30	group	total_assets_less_current_liabilities	168383000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__1	76_RRrRfd1JcGRzoRpDAb_D1a-JC9MrxQHpGjj6C3AE	2025-06-30	company	cash	1954000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__1	76_RRrRfd1JcGRzoRpDAb_D1a-JC9MrxQHpGjj6C3AE	2025-06-30	company	creditors_after_year	96629000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__1	76_RRrRfd1JcGRzoRpDAb_D1a-JC9MrxQHpGjj6C3AE	2025-06-30	company	creditors_within_year	205081000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__1	76_RRrRfd1JcGRzoRpDAb_D1a-JC9MrxQHpGjj6C3AE	2025-06-30	company	current_assets	65319000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__1	76_RRrRfd1JcGRzoRpDAb_D1a-JC9MrxQHpGjj6C3AE	2025-06-30	company	debtors	61828000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__1	76_RRrRfd1JcGRzoRpDAb_D1a-JC9MrxQHpGjj6C3AE	2025-06-30	company	fixed_assets	305785000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__1	76_RRrRfd1JcGRzoRpDAb_D1a-JC9MrxQHpGjj6C3AE	2025-06-30	company	intangible_assets	184028000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__1	76_RRrRfd1JcGRzoRpDAb_D1a-JC9MrxQHpGjj6C3AE	2025-06-30	company	net_assets	57671000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__1	76_RRrRfd1JcGRzoRpDAb_D1a-JC9MrxQHpGjj6C3AE	2025-06-30	company	net_current_assets	-139762000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__1	76_RRrRfd1JcGRzoRpDAb_D1a-JC9MrxQHpGjj6C3AE	2025-06-30	company	tangible_assets	121704000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__1	76_RRrRfd1JcGRzoRpDAb_D1a-JC9MrxQHpGjj6C3AE	2025-06-30	company	total_assets_less_current_liabilities	166023000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__2	qUUn3g9Zqc_hRaRgofltqMUP6IoLKFzqw4KK5TNF8RA	2024-06-30	document	_disclosure	full				
+brentford-fc	brentford-fc__2	qUUn3g9Zqc_hRaRgofltqMUP6IoLKFzqw4KK5TNF8RA	2024-06-30	document	_pnl_withheld					
+brentford-fc	brentford-fc__2	qUUn3g9Zqc_hRaRgofltqMUP6IoLKFzqw4KK5TNF8RA	2024-06-30	document	_going_concern					
+brentford-fc	brentford-fc__2	qUUn3g9Zqc_hRaRgofltqMUP6IoLKFzqw4KK5TNF8RA	2024-06-30	group	cash	7470000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__2	qUUn3g9Zqc_hRaRgofltqMUP6IoLKFzqw4KK5TNF8RA	2024-06-30	group	creditors_after_year	72487000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__2	qUUn3g9Zqc_hRaRgofltqMUP6IoLKFzqw4KK5TNF8RA	2024-06-30	group	creditors_within_year	160305000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__2	qUUn3g9Zqc_hRaRgofltqMUP6IoLKFzqw4KK5TNF8RA	2024-06-30	group	current_assets	65654000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__2	qUUn3g9Zqc_hRaRgofltqMUP6IoLKFzqw4KK5TNF8RA	2024-06-30	group	debtors	56927000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__2	qUUn3g9Zqc_hRaRgofltqMUP6IoLKFzqw4KK5TNF8RA	2024-06-30	group	fixed_assets	259977000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__2	qUUn3g9Zqc_hRaRgofltqMUP6IoLKFzqw4KK5TNF8RA	2024-06-30	group	intangible_assets	139350000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__2	qUUn3g9Zqc_hRaRgofltqMUP6IoLKFzqw4KK5TNF8RA	2024-06-30	group	net_assets	77700000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__2	qUUn3g9Zqc_hRaRgofltqMUP6IoLKFzqw4KK5TNF8RA	2024-06-30	group	net_current_assets	-94651000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__2	qUUn3g9Zqc_hRaRgofltqMUP6IoLKFzqw4KK5TNF8RA	2024-06-30	group	share_capital	38487000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__2	qUUn3g9Zqc_hRaRgofltqMUP6IoLKFzqw4KK5TNF8RA	2024-06-30	group	tangible_assets	120627000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__2	qUUn3g9Zqc_hRaRgofltqMUP6IoLKFzqw4KK5TNF8RA	2024-06-30	group	total_assets_less_current_liabilities	165326000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__2	qUUn3g9Zqc_hRaRgofltqMUP6IoLKFzqw4KK5TNF8RA	2024-06-30	company	cash	7374000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__2	qUUn3g9Zqc_hRaRgofltqMUP6IoLKFzqw4KK5TNF8RA	2024-06-30	company	creditors_after_year	72487000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__2	qUUn3g9Zqc_hRaRgofltqMUP6IoLKFzqw4KK5TNF8RA	2024-06-30	company	creditors_within_year	154494000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__2	qUUn3g9Zqc_hRaRgofltqMUP6IoLKFzqw4KK5TNF8RA	2024-06-30	company	current_assets	65558000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__2	qUUn3g9Zqc_hRaRgofltqMUP6IoLKFzqw4KK5TNF8RA	2024-06-30	company	debtors	56927000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__2	qUUn3g9Zqc_hRaRgofltqMUP6IoLKFzqw4KK5TNF8RA	2024-06-30	company	fixed_assets	257439000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__2	qUUn3g9Zqc_hRaRgofltqMUP6IoLKFzqw4KK5TNF8RA	2024-06-30	company	intangible_assets	139350000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__2	qUUn3g9Zqc_hRaRgofltqMUP6IoLKFzqw4KK5TNF8RA	2024-06-30	company	net_assets	80877000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__2	qUUn3g9Zqc_hRaRgofltqMUP6IoLKFzqw4KK5TNF8RA	2024-06-30	company	net_current_assets	-88936000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__2	qUUn3g9Zqc_hRaRgofltqMUP6IoLKFzqw4KK5TNF8RA	2024-06-30	company	tangible_assets	118036000		I1,I2,I3,I4	1000	
+brentford-fc	brentford-fc__2	qUUn3g9Zqc_hRaRgofltqMUP6IoLKFzqw4KK5TNF8RA	2024-06-30	company	total_assets_less_current_liabilities	168503000		I1,I2,I3,I4	1000	
+brighton-and-hove-albion-fc	brighton-and-hove-albion-fc__1	BV7NkrroApFEo-y-Z9EWulxWgRvWte5F1LzFjZbY0zY	2025-06-30	document	_disclosure	full				
+brighton-and-hove-albion-fc	brighton-and-hove-albion-fc__1	BV7NkrroApFEo-y-Z9EWulxWgRvWte5F1LzFjZbY0zY	2025-06-30	document	_pnl_withheld					
+brighton-and-hove-albion-fc	brighton-and-hove-albion-fc__1	BV7NkrroApFEo-y-Z9EWulxWgRvWte5F1LzFjZbY0zY	2025-06-30	document	_going_concern					
+brighton-and-hove-albion-fc	brighton-and-hove-albion-fc__1	BV7NkrroApFEo-y-Z9EWulxWgRvWte5F1LzFjZbY0zY	2025-06-30	plain	creditors_after_year	61579000		I1,I2,I3,I4,employees:sum of 2	1000	
+brighton-and-hove-albion-fc	brighton-and-hove-albion-fc__1	BV7NkrroApFEo-y-Z9EWulxWgRvWte5F1LzFjZbY0zY	2025-06-30	plain	creditors_within_year	494357000		I1,I2,I3,I4,employees:sum of 2	1000	
+brighton-and-hove-albion-fc	brighton-and-hove-albion-fc__1	BV7NkrroApFEo-y-Z9EWulxWgRvWte5F1LzFjZbY0zY	2025-06-30	plain	current_assets	244770000		I1,I2,I3,I4,employees:sum of 2	1000	
+brighton-and-hove-albion-fc	brighton-and-hove-albion-fc__1	BV7NkrroApFEo-y-Z9EWulxWgRvWte5F1LzFjZbY0zY	2025-06-30	plain	employees	1032		I1,I2,I3,I4,employees:sum of 2	1000	
+brighton-and-hove-albion-fc	brighton-and-hove-albion-fc__1	BV7NkrroApFEo-y-Z9EWulxWgRvWte5F1LzFjZbY0zY	2025-06-30	plain	fixed_assets	292763000		I1,I2,I3,I4,employees:sum of 2	1000	
+brighton-and-hove-albion-fc	brighton-and-hove-albion-fc__1	BV7NkrroApFEo-y-Z9EWulxWgRvWte5F1LzFjZbY0zY	2025-06-30	plain	intangible_assets	288910000		I1,I2,I3,I4,employees:sum of 2	1000	
+brighton-and-hove-albion-fc	brighton-and-hove-albion-fc__1	BV7NkrroApFEo-y-Z9EWulxWgRvWte5F1LzFjZbY0zY	2025-06-30	plain	net_assets	-29373000		I1,I2,I3,I4,employees:sum of 2	1000	
+brighton-and-hove-albion-fc	brighton-and-hove-albion-fc__1	BV7NkrroApFEo-y-Z9EWulxWgRvWte5F1LzFjZbY0zY	2025-06-30	plain	net_current_assets	-249587000		I1,I2,I3,I4,employees:sum of 2	1000	
+brighton-and-hove-albion-fc	brighton-and-hove-albion-fc__1	BV7NkrroApFEo-y-Z9EWulxWgRvWte5F1LzFjZbY0zY	2025-06-30	plain	tangible_assets	3853000		I1,I2,I3,I4,employees:sum of 2	1000	
+brighton-and-hove-albion-fc	brighton-and-hove-albion-fc__1	BV7NkrroApFEo-y-Z9EWulxWgRvWte5F1LzFjZbY0zY	2025-06-30	plain	total_assets_less_current_liabilities	43176000		I1,I2,I3,I4,employees:sum of 2	1000	
+brighton-and-hove-albion-fc	brighton-and-hove-albion-fc__2	RaPDHglRPIig0zYdTf3u-74aE4casb-rCOOwFKLcPTA	2024-06-30	document	_disclosure	full				
+brighton-and-hove-albion-fc	brighton-and-hove-albion-fc__2	RaPDHglRPIig0zYdTf3u-74aE4casb-rCOOwFKLcPTA	2024-06-30	document	_pnl_withheld					
+brighton-and-hove-albion-fc	brighton-and-hove-albion-fc__2	RaPDHglRPIig0zYdTf3u-74aE4casb-rCOOwFKLcPTA	2024-06-30	document	_going_concern					
+brighton-and-hove-albion-fc	brighton-and-hove-albion-fc__2	RaPDHglRPIig0zYdTf3u-74aE4casb-rCOOwFKLcPTA	2024-06-30	plain	creditors_after_year	16953000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+brighton-and-hove-albion-fc	brighton-and-hove-albion-fc__2	RaPDHglRPIig0zYdTf3u-74aE4casb-rCOOwFKLcPTA	2024-06-30	plain	creditors_within_year	369466000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+brighton-and-hove-albion-fc	brighton-and-hove-albion-fc__2	RaPDHglRPIig0zYdTf3u-74aE4casb-rCOOwFKLcPTA	2024-06-30	plain	current_assets	229216000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+brighton-and-hove-albion-fc	brighton-and-hove-albion-fc__2	RaPDHglRPIig0zYdTf3u-74aE4casb-rCOOwFKLcPTA	2024-06-30	plain	employees	1160		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+brighton-and-hove-albion-fc	brighton-and-hove-albion-fc__2	RaPDHglRPIig0zYdTf3u-74aE4casb-rCOOwFKLcPTA	2024-06-30	plain	fixed_assets	170805000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+brighton-and-hove-albion-fc	brighton-and-hove-albion-fc__2	RaPDHglRPIig0zYdTf3u-74aE4casb-rCOOwFKLcPTA	2024-06-30	plain	intangible_assets	167896000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+brighton-and-hove-albion-fc	brighton-and-hove-albion-fc__2	RaPDHglRPIig0zYdTf3u-74aE4casb-rCOOwFKLcPTA	2024-06-30	plain	net_assets	-23665000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+brighton-and-hove-albion-fc	brighton-and-hove-albion-fc__2	RaPDHglRPIig0zYdTf3u-74aE4casb-rCOOwFKLcPTA	2024-06-30	plain	net_current_assets	-140250000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+brighton-and-hove-albion-fc	brighton-and-hove-albion-fc__2	RaPDHglRPIig0zYdTf3u-74aE4casb-rCOOwFKLcPTA	2024-06-30	plain	share_capital	105000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+brighton-and-hove-albion-fc	brighton-and-hove-albion-fc__2	RaPDHglRPIig0zYdTf3u-74aE4casb-rCOOwFKLcPTA	2024-06-30	plain	staff_costs	142235000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+brighton-and-hove-albion-fc	brighton-and-hove-albion-fc__2	RaPDHglRPIig0zYdTf3u-74aE4casb-rCOOwFKLcPTA	2024-06-30	plain	tangible_assets	2909000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+brighton-and-hove-albion-fc	brighton-and-hove-albion-fc__2	RaPDHglRPIig0zYdTf3u-74aE4casb-rCOOwFKLcPTA	2024-06-30	plain	total_assets_less_current_liabilities	30555000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+bristol-city-fc	bristol-city-fc__2	TOdUp6oVUo2sbA6qtTM1qbn7vXaKksVmF2PrtyhElVM	2024-06-30	document	_disclosure	full				
+bristol-city-fc	bristol-city-fc__2	TOdUp6oVUo2sbA6qtTM1qbn7vXaKksVmF2PrtyhElVM	2024-06-30	document	_pnl_withheld					
+bristol-city-fc	bristol-city-fc__2	TOdUp6oVUo2sbA6qtTM1qbn7vXaKksVmF2PrtyhElVM	2024-06-30	document	_going_concern					
+bristol-city-fc	bristol-city-fc__2	TOdUp6oVUo2sbA6qtTM1qbn7vXaKksVmF2PrtyhElVM	2024-06-30	group	cash	1604207		I1,I2,I3,I4	1	
+bristol-city-fc	bristol-city-fc__2	TOdUp6oVUo2sbA6qtTM1qbn7vXaKksVmF2PrtyhElVM	2024-06-30	group	creditors_after_year	93205577		I1,I2,I3,I4	1	
+bristol-city-fc	bristol-city-fc__2	TOdUp6oVUo2sbA6qtTM1qbn7vXaKksVmF2PrtyhElVM	2024-06-30	group	creditors_within_year	8734586		I1,I2,I3,I4	1	
+bristol-city-fc	bristol-city-fc__2	TOdUp6oVUo2sbA6qtTM1qbn7vXaKksVmF2PrtyhElVM	2024-06-30	group	current_assets	23472269		I1,I2,I3,I4	1	
+bristol-city-fc	bristol-city-fc__2	TOdUp6oVUo2sbA6qtTM1qbn7vXaKksVmF2PrtyhElVM	2024-06-30	group	debtors	21728256		I1,I2,I3,I4	1	
+bristol-city-fc	bristol-city-fc__2	TOdUp6oVUo2sbA6qtTM1qbn7vXaKksVmF2PrtyhElVM	2024-06-30	group	fixed_assets	60749952		I1,I2,I3,I4	1	
+bristol-city-fc	bristol-city-fc__2	TOdUp6oVUo2sbA6qtTM1qbn7vXaKksVmF2PrtyhElVM	2024-06-30	group	intangible_assets	5461915		I1,I2,I3,I4	1	
+bristol-city-fc	bristol-city-fc__2	TOdUp6oVUo2sbA6qtTM1qbn7vXaKksVmF2PrtyhElVM	2024-06-30	group	net_assets	-21973860		I1,I2,I3,I4	1	
+bristol-city-fc	bristol-city-fc__2	TOdUp6oVUo2sbA6qtTM1qbn7vXaKksVmF2PrtyhElVM	2024-06-30	group	net_current_assets	14737683		I1,I2,I3,I4	1	
+bristol-city-fc	bristol-city-fc__2	TOdUp6oVUo2sbA6qtTM1qbn7vXaKksVmF2PrtyhElVM	2024-06-30	group	tangible_assets	55281837		I1,I2,I3,I4	1	
+bristol-city-fc	bristol-city-fc__2	TOdUp6oVUo2sbA6qtTM1qbn7vXaKksVmF2PrtyhElVM	2024-06-30	group	total_assets_less_current_liabilities	75487635		I1,I2,I3,I4	1	
+bristol-rovers-fc	bristol-rovers-fc__2	dnRKC8aQzrZECpjHCxRjTtqySnkexuJzBVtjFy9cqO0	2024-06-30	document	_disclosure	full				
+bristol-rovers-fc	bristol-rovers-fc__2	dnRKC8aQzrZECpjHCxRjTtqySnkexuJzBVtjFy9cqO0	2024-06-30	document	_pnl_withheld					
+bristol-rovers-fc	bristol-rovers-fc__2	dnRKC8aQzrZECpjHCxRjTtqySnkexuJzBVtjFy9cqO0	2024-06-30	document	_going_concern					
+bristol-rovers-fc	bristol-rovers-fc__2	dnRKC8aQzrZECpjHCxRjTtqySnkexuJzBVtjFy9cqO0	2024-06-30	plain	cash	198576		I1,I4	1	
+bristol-rovers-fc	bristol-rovers-fc__2	dnRKC8aQzrZECpjHCxRjTtqySnkexuJzBVtjFy9cqO0	2024-06-30	plain	creditors_within_year	12061886		I1,I4	1	
+bristol-rovers-fc	bristol-rovers-fc__2	dnRKC8aQzrZECpjHCxRjTtqySnkexuJzBVtjFy9cqO0	2024-06-30	plain	current_assets	1985882		I1,I4	1	
+bristol-rovers-fc	bristol-rovers-fc__2	dnRKC8aQzrZECpjHCxRjTtqySnkexuJzBVtjFy9cqO0	2024-06-30	plain	debtors	1700438		I1,I4	1	
+bristol-rovers-fc	bristol-rovers-fc__2	dnRKC8aQzrZECpjHCxRjTtqySnkexuJzBVtjFy9cqO0	2024-06-30	plain	net_assets	-6461952		I1,I4	1	
+bristol-rovers-fc	bristol-rovers-fc__2	dnRKC8aQzrZECpjHCxRjTtqySnkexuJzBVtjFy9cqO0	2024-06-30	plain	net_current_assets	-10076004		I1,I4	1	
+bristol-rovers-fc	bristol-rovers-fc__2	dnRKC8aQzrZECpjHCxRjTtqySnkexuJzBVtjFy9cqO0	2024-06-30	plain	share_capital	2138734		I1,I4	1	
+cardiff-city-fc	cardiff-city-fc__1	HEECK4xLpLo7MlNNqyXNMk_jkSNbn9UlECOkmJZJZZE	2025-05-31	document	_disclosure	full				
+cardiff-city-fc	cardiff-city-fc__1	HEECK4xLpLo7MlNNqyXNMk_jkSNbn9UlECOkmJZJZZE	2025-05-31	document	_pnl_withheld					
+cardiff-city-fc	cardiff-city-fc__1	HEECK4xLpLo7MlNNqyXNMk_jkSNbn9UlECOkmJZJZZE	2025-05-31	document	_going_concern	This indicates that a material uncertainty exists that may cast significant doubt on the Group's and the Company’s ability to continue as going concerns, and therefore the Group and the Company may be unable to realise their assets and discharge their liabilities in the normal course of business. The Directors have a reasonable expectation that the loans will not be recalled and that the addition				
+cardiff-city-fc	cardiff-city-fc__1	HEECK4xLpLo7MlNNqyXNMk_jkSNbn9UlECOkmJZJZZE	2025-05-31	group	creditors_after_year	2815000		I1,I2,I3,employees:sum of 2,staff_costs:sum of 3	1000	
+cardiff-city-fc	cardiff-city-fc__1	HEECK4xLpLo7MlNNqyXNMk_jkSNbn9UlECOkmJZJZZE	2025-05-31	group	creditors_within_year	161481000		I1,I2,I3,employees:sum of 2,staff_costs:sum of 3	1000	
+cardiff-city-fc	cardiff-city-fc__1	HEECK4xLpLo7MlNNqyXNMk_jkSNbn9UlECOkmJZJZZE	2025-05-31	group	current_assets	8078000		I1,I2,I3,employees:sum of 2,staff_costs:sum of 3	1000	
+cardiff-city-fc	cardiff-city-fc__1	HEECK4xLpLo7MlNNqyXNMk_jkSNbn9UlECOkmJZJZZE	2025-05-31	group	employees	222		I1,I2,I3,employees:sum of 2,staff_costs:sum of 3	1000	
+cardiff-city-fc	cardiff-city-fc__1	HEECK4xLpLo7MlNNqyXNMk_jkSNbn9UlECOkmJZJZZE	2025-05-31	group	fixed_assets	97614000		I1,I2,I3,employees:sum of 2,staff_costs:sum of 3	1000	
+cardiff-city-fc	cardiff-city-fc__1	HEECK4xLpLo7MlNNqyXNMk_jkSNbn9UlECOkmJZJZZE	2025-05-31	group	intangible_assets	11806000		I1,I2,I3,employees:sum of 2,staff_costs:sum of 3	1000	
+cardiff-city-fc	cardiff-city-fc__1	HEECK4xLpLo7MlNNqyXNMk_jkSNbn9UlECOkmJZJZZE	2025-05-31	group	net_assets	-66116000		I1,I2,I3,employees:sum of 2,staff_costs:sum of 3	1000	
+cardiff-city-fc	cardiff-city-fc__1	HEECK4xLpLo7MlNNqyXNMk_jkSNbn9UlECOkmJZJZZE	2025-05-31	group	net_current_assets	-153403000		I1,I2,I3,employees:sum of 2,staff_costs:sum of 3	1000	
+cardiff-city-fc	cardiff-city-fc__1	HEECK4xLpLo7MlNNqyXNMk_jkSNbn9UlECOkmJZJZZE	2025-05-31	group	staff_costs	38955000		I1,I2,I3,employees:sum of 2,staff_costs:sum of 3	1000	
+cardiff-city-fc	cardiff-city-fc__1	HEECK4xLpLo7MlNNqyXNMk_jkSNbn9UlECOkmJZJZZE	2025-05-31	group	tangible_assets	85808000		I1,I2,I3,employees:sum of 2,staff_costs:sum of 3	1000	
+cardiff-city-fc	cardiff-city-fc__1	HEECK4xLpLo7MlNNqyXNMk_jkSNbn9UlECOkmJZJZZE	2025-05-31	group	total_assets_less_current_liabilities	-55788000		I1,I2,I3,employees:sum of 2,staff_costs:sum of 3	1000	
+cardiff-city-fc	cardiff-city-fc__2	DPgEMqG1snJogzFpiMObTswmO2Row9lZnO7ELAmXX8k	2024-05-31	document	_disclosure	full				
+cardiff-city-fc	cardiff-city-fc__2	DPgEMqG1snJogzFpiMObTswmO2Row9lZnO7ELAmXX8k	2024-05-31	document	_pnl_withheld					
+cardiff-city-fc	cardiff-city-fc__2	DPgEMqG1snJogzFpiMObTswmO2Row9lZnO7ELAmXX8k	2024-05-31	document	_going_concern	This indicates that a material uncertainty exists that may cast significant doubt on and the Group's and the Company's ability to continue as going concerns, and therefore the Group and the Company may be unable to realise their assets and discharge their liabilities in the normal course of business. The directors have a reasonable expectation that the loans will not be demanded and that the addi				
+cardiff-city-fc	cardiff-city-fc__2	DPgEMqG1snJogzFpiMObTswmO2Row9lZnO7ELAmXX8k	2024-05-31	group	creditors_after_year	678000		I1,I2,I3,employees:sum of 2,staff_costs:sum of 3	1000	
+cardiff-city-fc	cardiff-city-fc__2	DPgEMqG1snJogzFpiMObTswmO2Row9lZnO7ELAmXX8k	2024-05-31	group	creditors_within_year	137713000		I1,I2,I3,employees:sum of 2,staff_costs:sum of 3	1000	
+cardiff-city-fc	cardiff-city-fc__2	DPgEMqG1snJogzFpiMObTswmO2Row9lZnO7ELAmXX8k	2024-05-31	group	current_assets	16329000		I1,I2,I3,employees:sum of 2,staff_costs:sum of 3	1000	
+cardiff-city-fc	cardiff-city-fc__2	DPgEMqG1snJogzFpiMObTswmO2Row9lZnO7ELAmXX8k	2024-05-31	group	employees	209		I1,I2,I3,employees:sum of 2,staff_costs:sum of 3	1000	
+cardiff-city-fc	cardiff-city-fc__2	DPgEMqG1snJogzFpiMObTswmO2Row9lZnO7ELAmXX8k	2024-05-31	group	fixed_assets	94459000		I1,I2,I3,employees:sum of 2,staff_costs:sum of 3	1000	
+cardiff-city-fc	cardiff-city-fc__2	DPgEMqG1snJogzFpiMObTswmO2Row9lZnO7ELAmXX8k	2024-05-31	group	intangible_assets	7549000		I1,I2,I3,employees:sum of 2,staff_costs:sum of 3	1000	
+cardiff-city-fc	cardiff-city-fc__2	DPgEMqG1snJogzFpiMObTswmO2Row9lZnO7ELAmXX8k	2024-05-31	group	net_assets	-30772000		I1,I2,I3,employees:sum of 2,staff_costs:sum of 3	1000	
+cardiff-city-fc	cardiff-city-fc__2	DPgEMqG1snJogzFpiMObTswmO2Row9lZnO7ELAmXX8k	2024-05-31	group	net_current_assets	-121384000		I1,I2,I3,employees:sum of 2,staff_costs:sum of 3	1000	
+cardiff-city-fc	cardiff-city-fc__2	DPgEMqG1snJogzFpiMObTswmO2Row9lZnO7ELAmXX8k	2024-05-31	group	staff_costs	27857000		I1,I2,I3,employees:sum of 2,staff_costs:sum of 3	1000	
+cardiff-city-fc	cardiff-city-fc__2	DPgEMqG1snJogzFpiMObTswmO2Row9lZnO7ELAmXX8k	2024-05-31	group	tangible_assets	86910000		I1,I2,I3,employees:sum of 2,staff_costs:sum of 3	1000	
+cardiff-city-fc	cardiff-city-fc__2	DPgEMqG1snJogzFpiMObTswmO2Row9lZnO7ELAmXX8k	2024-05-31	group	total_assets_less_current_liabilities	-26925000		I1,I2,I3,employees:sum of 2,staff_costs:sum of 3	1000	
+carlisle-united-fc	carlisle-united-fc__2	SwgbgtK4GWe0EB3updh-SP-QQ9_iNY5B_JCkYLzW18M	2024-06-30	document	_disclosure	full				
+carlisle-united-fc	carlisle-united-fc__2	SwgbgtK4GWe0EB3updh-SP-QQ9_iNY5B_JCkYLzW18M	2024-06-30	document	_pnl_withheld					
+carlisle-united-fc	carlisle-united-fc__2	SwgbgtK4GWe0EB3updh-SP-QQ9_iNY5B_JCkYLzW18M	2024-06-30	document	_going_concern					
+carlisle-united-fc	carlisle-united-fc__2	SwgbgtK4GWe0EB3updh-SP-QQ9_iNY5B_JCkYLzW18M	2024-06-30	plain	creditors_after_year	185017		I1,I2,I3,I4	1	
+carlisle-united-fc	carlisle-united-fc__2	SwgbgtK4GWe0EB3updh-SP-QQ9_iNY5B_JCkYLzW18M	2024-06-30	plain	creditors_within_year	5055546		I1,I2,I3,I4	1	
+carlisle-united-fc	carlisle-united-fc__2	SwgbgtK4GWe0EB3updh-SP-QQ9_iNY5B_JCkYLzW18M	2024-06-30	plain	current_assets	3007792		I1,I2,I3,I4	1	
+carlisle-united-fc	carlisle-united-fc__2	SwgbgtK4GWe0EB3updh-SP-QQ9_iNY5B_JCkYLzW18M	2024-06-30	plain	fixed_assets	14830688		I1,I2,I3,I4	1	
+carlisle-united-fc	carlisle-united-fc__2	SwgbgtK4GWe0EB3updh-SP-QQ9_iNY5B_JCkYLzW18M	2024-06-30	plain	intangible_assets	418590		I1,I2,I3,I4	1	
+carlisle-united-fc	carlisle-united-fc__2	SwgbgtK4GWe0EB3updh-SP-QQ9_iNY5B_JCkYLzW18M	2024-06-30	plain	net_assets	10890099		I1,I2,I3,I4	1	
+carlisle-united-fc	carlisle-united-fc__2	SwgbgtK4GWe0EB3updh-SP-QQ9_iNY5B_JCkYLzW18M	2024-06-30	plain	net_current_assets	-2047754		I1,I2,I3,I4	1	
+carlisle-united-fc	carlisle-united-fc__2	SwgbgtK4GWe0EB3updh-SP-QQ9_iNY5B_JCkYLzW18M	2024-06-30	plain	tangible_assets	14412098		I1,I2,I3,I4	1	
+carlisle-united-fc	carlisle-united-fc__2	SwgbgtK4GWe0EB3updh-SP-QQ9_iNY5B_JCkYLzW18M	2024-06-30	plain	total_assets_less_current_liabilities	12782934		I1,I2,I3,I4	1	
+charlton-athletic-fc	charlton-athletic-fc__1	GxKdapeTrfJvMQNCTyHxphjhgacZD_WeYiLSb62o_SA	2025-06-30	document	_disclosure	full				
+charlton-athletic-fc	charlton-athletic-fc__1	GxKdapeTrfJvMQNCTyHxphjhgacZD_WeYiLSb62o_SA	2025-06-30	document	_pnl_withheld					
+charlton-athletic-fc	charlton-athletic-fc__1	GxKdapeTrfJvMQNCTyHxphjhgacZD_WeYiLSb62o_SA	2025-06-30	document	_going_concern					
+charlton-athletic-fc	charlton-athletic-fc__1	GxKdapeTrfJvMQNCTyHxphjhgacZD_WeYiLSb62o_SA	2025-06-30	plain	creditors_after_year	10383000		I1,I2,I3,I4,staff_costs:sum of 3	1000	
+charlton-athletic-fc	charlton-athletic-fc__1	GxKdapeTrfJvMQNCTyHxphjhgacZD_WeYiLSb62o_SA	2025-06-30	plain	creditors_within_year	39518000		I1,I2,I3,I4,staff_costs:sum of 3	1000	
+charlton-athletic-fc	charlton-athletic-fc__1	GxKdapeTrfJvMQNCTyHxphjhgacZD_WeYiLSb62o_SA	2025-06-30	plain	current_assets	7871000		I1,I2,I3,I4,staff_costs:sum of 3	1000	
+charlton-athletic-fc	charlton-athletic-fc__1	GxKdapeTrfJvMQNCTyHxphjhgacZD_WeYiLSb62o_SA	2025-06-30	plain	fixed_assets	4116000		I1,I2,I3,I4,staff_costs:sum of 3	1000	
+charlton-athletic-fc	charlton-athletic-fc__1	GxKdapeTrfJvMQNCTyHxphjhgacZD_WeYiLSb62o_SA	2025-06-30	plain	intangible_assets	1752000		I1,I2,I3,I4,staff_costs:sum of 3	1000	
+charlton-athletic-fc	charlton-athletic-fc__1	GxKdapeTrfJvMQNCTyHxphjhgacZD_WeYiLSb62o_SA	2025-06-30	plain	net_assets	-38044000		I1,I2,I3,I4,staff_costs:sum of 3	1000	
+charlton-athletic-fc	charlton-athletic-fc__1	GxKdapeTrfJvMQNCTyHxphjhgacZD_WeYiLSb62o_SA	2025-06-30	plain	net_current_assets	-31647000		I1,I2,I3,I4,staff_costs:sum of 3	1000	
+charlton-athletic-fc	charlton-athletic-fc__1	GxKdapeTrfJvMQNCTyHxphjhgacZD_WeYiLSb62o_SA	2025-06-30	plain	staff_costs	15713000		I1,I2,I3,I4,staff_costs:sum of 3	1000	
+charlton-athletic-fc	charlton-athletic-fc__1	GxKdapeTrfJvMQNCTyHxphjhgacZD_WeYiLSb62o_SA	2025-06-30	plain	tangible_assets	2364000		I1,I2,I3,I4,staff_costs:sum of 3	1000	
+charlton-athletic-fc	charlton-athletic-fc__1	GxKdapeTrfJvMQNCTyHxphjhgacZD_WeYiLSb62o_SA	2025-06-30	plain	total_assets_less_current_liabilities	-27531000		I1,I2,I3,I4,staff_costs:sum of 3	1000	
+chelsea-fc	chelsea-fc__1	o-WHjpufx5wgByHQQiSCI3ZiLOuk-HjOGZgVAx-urb4	2025-06-30	document	_disclosure	full				
+chelsea-fc	chelsea-fc__1	o-WHjpufx5wgByHQQiSCI3ZiLOuk-HjOGZgVAx-urb4	2025-06-30	document	_pnl_withheld					
+chelsea-fc	chelsea-fc__1	o-WHjpufx5wgByHQQiSCI3ZiLOuk-HjOGZgVAx-urb4	2025-06-30	document	_going_concern					
+chelsea-fc	chelsea-fc__1	o-WHjpufx5wgByHQQiSCI3ZiLOuk-HjOGZgVAx-urb4	2025-06-30	plain	creditors_after_year	202342000		I1,I2,I3,I4,employees:sum of 2	1000	
+chelsea-fc	chelsea-fc__1	o-WHjpufx5wgByHQQiSCI3ZiLOuk-HjOGZgVAx-urb4	2025-06-30	plain	creditors_within_year	2382480000		I1,I2,I3,I4,employees:sum of 2	1000	
+chelsea-fc	chelsea-fc__1	o-WHjpufx5wgByHQQiSCI3ZiLOuk-HjOGZgVAx-urb4	2025-06-30	plain	current_assets	57736000		I1,I2,I3,I4,employees:sum of 2	1000	
+chelsea-fc	chelsea-fc__1	o-WHjpufx5wgByHQQiSCI3ZiLOuk-HjOGZgVAx-urb4	2025-06-30	plain	employees	626		I1,I2,I3,I4,employees:sum of 2	1000	
+chelsea-fc	chelsea-fc__1	o-WHjpufx5wgByHQQiSCI3ZiLOuk-HjOGZgVAx-urb4	2025-06-30	plain	fixed_assets	1170578000		I1,I2,I3,I4,employees:sum of 2	1000	
+chelsea-fc	chelsea-fc__1	o-WHjpufx5wgByHQQiSCI3ZiLOuk-HjOGZgVAx-urb4	2025-06-30	plain	intangible_assets	1043905000		I1,I2,I3,I4,employees:sum of 2	1000	
+chelsea-fc	chelsea-fc__1	o-WHjpufx5wgByHQQiSCI3ZiLOuk-HjOGZgVAx-urb4	2025-06-30	plain	net_assets	-1380508000		I1,I2,I3,I4,employees:sum of 2	1000	
+chelsea-fc	chelsea-fc__1	o-WHjpufx5wgByHQQiSCI3ZiLOuk-HjOGZgVAx-urb4	2025-06-30	plain	net_current_assets	-2324744000		I1,I2,I3,I4,employees:sum of 2	1000	
+chelsea-fc	chelsea-fc__1	o-WHjpufx5wgByHQQiSCI3ZiLOuk-HjOGZgVAx-urb4	2025-06-30	plain	share_capital	10000		I1,I2,I3,I4,employees:sum of 2	1000	
+chelsea-fc	chelsea-fc__1	o-WHjpufx5wgByHQQiSCI3ZiLOuk-HjOGZgVAx-urb4	2025-06-30	plain	tangible_assets	126673000		I1,I2,I3,I4,employees:sum of 2	1000	
+chelsea-fc	chelsea-fc__1	o-WHjpufx5wgByHQQiSCI3ZiLOuk-HjOGZgVAx-urb4	2025-06-30	plain	total_assets_less_current_liabilities	-1154166000		I1,I2,I3,I4,employees:sum of 2	1000	
+chelsea-fc	chelsea-fc__2	A98hg07v8VR5p-e0h8ni31Wu5ip72VoysIThYMRE0ks	2024-06-30	document	_disclosure	full				
+chelsea-fc	chelsea-fc__2	A98hg07v8VR5p-e0h8ni31Wu5ip72VoysIThYMRE0ks	2024-06-30	document	_pnl_withheld					
+chelsea-fc	chelsea-fc__2	A98hg07v8VR5p-e0h8ni31Wu5ip72VoysIThYMRE0ks	2024-06-30	document	_going_concern					
+chelsea-fc	chelsea-fc__2	A98hg07v8VR5p-e0h8ni31Wu5ip72VoysIThYMRE0ks	2024-06-30	plain	cash	4000		I1,I2,I3,I4,employees:sum of 2	1000	
+chelsea-fc	chelsea-fc__2	A98hg07v8VR5p-e0h8ni31Wu5ip72VoysIThYMRE0ks	2024-06-30	plain	creditors_after_year	219343000		I1,I2,I3,I4,employees:sum of 2	1000	
+chelsea-fc	chelsea-fc__2	A98hg07v8VR5p-e0h8ni31Wu5ip72VoysIThYMRE0ks	2024-06-30	plain	creditors_within_year	2091463000		I1,I2,I3,I4,employees:sum of 2	1000	
+chelsea-fc	chelsea-fc__2	A98hg07v8VR5p-e0h8ni31Wu5ip72VoysIThYMRE0ks	2024-06-30	plain	current_assets	13317000		I1,I2,I3,I4,employees:sum of 2	1000	
+chelsea-fc	chelsea-fc__2	A98hg07v8VR5p-e0h8ni31Wu5ip72VoysIThYMRE0ks	2024-06-30	plain	debtors	13313000		I1,I2,I3,I4,employees:sum of 2	1000	
+chelsea-fc	chelsea-fc__2	A98hg07v8VR5p-e0h8ni31Wu5ip72VoysIThYMRE0ks	2024-06-30	plain	employees	473		I1,I2,I3,I4,employees:sum of 2	1000	
+chelsea-fc	chelsea-fc__2	A98hg07v8VR5p-e0h8ni31Wu5ip72VoysIThYMRE0ks	2024-06-30	plain	fixed_assets	1173681000		I1,I2,I3,I4,employees:sum of 2	1000	
+chelsea-fc	chelsea-fc__2	A98hg07v8VR5p-e0h8ni31Wu5ip72VoysIThYMRE0ks	2024-06-30	plain	intangible_assets	1030709000		I1,I2,I3,I4,employees:sum of 2	1000	
+chelsea-fc	chelsea-fc__2	A98hg07v8VR5p-e0h8ni31Wu5ip72VoysIThYMRE0ks	2024-06-30	plain	net_assets	-1123808000		I1,I2,I3,I4,employees:sum of 2	1000	
+chelsea-fc	chelsea-fc__2	A98hg07v8VR5p-e0h8ni31Wu5ip72VoysIThYMRE0ks	2024-06-30	plain	net_current_assets	-2078146000		I1,I2,I3,I4,employees:sum of 2	1000	
+chelsea-fc	chelsea-fc__2	A98hg07v8VR5p-e0h8ni31Wu5ip72VoysIThYMRE0ks	2024-06-30	plain	share_capital	10000		I1,I2,I3,I4,employees:sum of 2	1000	
+chelsea-fc	chelsea-fc__2	A98hg07v8VR5p-e0h8ni31Wu5ip72VoysIThYMRE0ks	2024-06-30	plain	tangible_assets	142972000		I1,I2,I3,I4,employees:sum of 2	1000	
+chelsea-fc	chelsea-fc__2	A98hg07v8VR5p-e0h8ni31Wu5ip72VoysIThYMRE0ks	2024-06-30	plain	total_assets_less_current_liabilities	-904465000		I1,I2,I3,I4,employees:sum of 2	1000	
+colchester-united-fc	colchester-united-fc__1	sGsGBXxOhm5pMEqRI-PhsMt82k0m4iioOtAR9ChwXHg	2025-06-30	document	_disclosure	small_company				
+colchester-united-fc	colchester-united-fc__1	sGsGBXxOhm5pMEqRI-PhsMt82k0m4iioOtAR9ChwXHg	2025-06-30	document	_pnl_withheld					
+colchester-united-fc	colchester-united-fc__1	sGsGBXxOhm5pMEqRI-PhsMt82k0m4iioOtAR9ChwXHg	2025-06-30	document	_going_concern	: The audit report contained a paragraph in respect to material uncertainty relating to going concern as follows: . - We draw attention to note 2.2 in the financial statements, which indicates that the Company has incurred a . : - loss for the year of £3.6m and is expecting future losses. Furthermore the Company requires funding for these losses and to enable it to meet its liabilities as they fa				
+colchester-united-fc	colchester-united-fc__1	sGsGBXxOhm5pMEqRI-PhsMt82k0m4iioOtAR9ChwXHg	2025-06-30	plain	creditors_within_year	41729699		I1,I2,I3,I4,employees:sentence	1	
+colchester-united-fc	colchester-united-fc__1	sGsGBXxOhm5pMEqRI-PhsMt82k0m4iioOtAR9ChwXHg	2025-06-30	plain	current_assets	1341105		I1,I2,I3,I4,employees:sentence	1	
+colchester-united-fc	colchester-united-fc__1	sGsGBXxOhm5pMEqRI-PhsMt82k0m4iioOtAR9ChwXHg	2025-06-30	plain	employees	332		I1,I2,I3,I4,employees:sentence	1	
+colchester-united-fc	colchester-united-fc__1	sGsGBXxOhm5pMEqRI-PhsMt82k0m4iioOtAR9ChwXHg	2025-06-30	plain	fixed_assets	266943		I1,I2,I3,I4,employees:sentence	1	
+colchester-united-fc	colchester-united-fc__1	sGsGBXxOhm5pMEqRI-PhsMt82k0m4iioOtAR9ChwXHg	2025-06-30	plain	intangible_assets	0		I1,I2,I3,I4,employees:sentence	1	
+colchester-united-fc	colchester-united-fc__1	sGsGBXxOhm5pMEqRI-PhsMt82k0m4iioOtAR9ChwXHg	2025-06-30	plain	net_assets	-40159870		I1,I2,I3,I4,employees:sentence	1	
+colchester-united-fc	colchester-united-fc__1	sGsGBXxOhm5pMEqRI-PhsMt82k0m4iioOtAR9ChwXHg	2025-06-30	plain	net_current_assets	-40388594		I1,I2,I3,I4,employees:sentence	1	
+colchester-united-fc	colchester-united-fc__1	sGsGBXxOhm5pMEqRI-PhsMt82k0m4iioOtAR9ChwXHg	2025-06-30	plain	tangible_assets	266943		I1,I2,I3,I4,employees:sentence	1	
+colchester-united-fc	colchester-united-fc__1	sGsGBXxOhm5pMEqRI-PhsMt82k0m4iioOtAR9ChwXHg	2025-06-30	plain	total_assets_less_current_liabilities	-40121651		I1,I2,I3,I4,employees:sentence	1	
+colchester-united-fc	colchester-united-fc__2	UlKXnaE5W6bM3guW7t77xBgLXHmYhrgod7GScEiaPpw	2024-06-30	document	_disclosure	small_company				
+colchester-united-fc	colchester-united-fc__2	UlKXnaE5W6bM3guW7t77xBgLXHmYhrgod7GScEiaPpw	2024-06-30	document	_pnl_withheld					
+colchester-united-fc	colchester-united-fc__2	UlKXnaE5W6bM3guW7t77xBgLXHmYhrgod7GScEiaPpw	2024-06-30	document	_going_concern	The audit report contained a paragraph in respect to material uncertainty relating to going concern as follows: We draw attention to note 2.2 in the financial statements, which indicates that the Company has incurred a loss for the year of £3.7m and is expecting future losses. Furthermore the Company requires funding for these losses and to enable it to meet its liabilities as they fall due. Comb				
+colchester-united-fc	colchester-united-fc__2	UlKXnaE5W6bM3guW7t77xBgLXHmYhrgod7GScEiaPpw	2024-06-30	plain	creditors_within_year	37963160		I1,I2,I3,I4,employees:sentence	1	
+colchester-united-fc	colchester-united-fc__2	UlKXnaE5W6bM3guW7t77xBgLXHmYhrgod7GScEiaPpw	2024-06-30	plain	current_assets	976831		I1,I2,I3,I4,employees:sentence	1	
+colchester-united-fc	colchester-united-fc__2	UlKXnaE5W6bM3guW7t77xBgLXHmYhrgod7GScEiaPpw	2024-06-30	plain	employees	350		I1,I2,I3,I4,employees:sentence	1	
+colchester-united-fc	colchester-united-fc__2	UlKXnaE5W6bM3guW7t77xBgLXHmYhrgod7GScEiaPpw	2024-06-30	plain	fixed_assets	525285		I1,I2,I3,I4,employees:sentence	1	
+colchester-united-fc	colchester-united-fc__2	UlKXnaE5W6bM3guW7t77xBgLXHmYhrgod7GScEiaPpw	2024-06-30	plain	intangible_assets	101975		I1,I2,I3,I4,employees:sentence	1	
+colchester-united-fc	colchester-united-fc__2	UlKXnaE5W6bM3guW7t77xBgLXHmYhrgod7GScEiaPpw	2024-06-30	plain	net_assets	-36518566		I1,I2,I3,I4,employees:sentence	1	
+colchester-united-fc	colchester-united-fc__2	UlKXnaE5W6bM3guW7t77xBgLXHmYhrgod7GScEiaPpw	2024-06-30	plain	net_current_assets	-36986329		I1,I2,I3,I4,employees:sentence	1	
+colchester-united-fc	colchester-united-fc__2	UlKXnaE5W6bM3guW7t77xBgLXHmYhrgod7GScEiaPpw	2024-06-30	plain	tangible_assets	423310		I1,I2,I3,I4,employees:sentence	1	
+colchester-united-fc	colchester-united-fc__2	UlKXnaE5W6bM3guW7t77xBgLXHmYhrgod7GScEiaPpw	2024-06-30	plain	total_assets_less_current_liabilities	-36461044		I1,I2,I3,I4,employees:sentence	1	
+derby-county-fc	derby-county-fc__1	smg7rT0HdCIhp8JDFeK9st20Xg9vNGxjGsr5Th9GpN0	2025-06-30	document	_disclosure	full				
+derby-county-fc	derby-county-fc__1	smg7rT0HdCIhp8JDFeK9st20Xg9vNGxjGsr5Th9GpN0	2025-06-30	document	_pnl_withheld					
+derby-county-fc	derby-county-fc__1	smg7rT0HdCIhp8JDFeK9st20Xg9vNGxjGsr5Th9GpN0	2025-06-30	document	_going_concern					
+derby-county-fc	derby-county-fc__1	smg7rT0HdCIhp8JDFeK9st20Xg9vNGxjGsr5Th9GpN0	2025-06-30	plain	creditors_after_year	3198395		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1	
+derby-county-fc	derby-county-fc__1	smg7rT0HdCIhp8JDFeK9st20Xg9vNGxjGsr5Th9GpN0	2025-06-30	plain	creditors_within_year	79496016		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1	
+derby-county-fc	derby-county-fc__1	smg7rT0HdCIhp8JDFeK9st20Xg9vNGxjGsr5Th9GpN0	2025-06-30	plain	current_assets	9424408		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1	
+derby-county-fc	derby-county-fc__1	smg7rT0HdCIhp8JDFeK9st20Xg9vNGxjGsr5Th9GpN0	2025-06-30	plain	employees	226		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1	
+derby-county-fc	derby-county-fc__1	smg7rT0HdCIhp8JDFeK9st20Xg9vNGxjGsr5Th9GpN0	2025-06-30	plain	fixed_assets	31538196		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1	
+derby-county-fc	derby-county-fc__1	smg7rT0HdCIhp8JDFeK9st20Xg9vNGxjGsr5Th9GpN0	2025-06-30	plain	intangible_assets	9965207		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1	
+derby-county-fc	derby-county-fc__1	smg7rT0HdCIhp8JDFeK9st20Xg9vNGxjGsr5Th9GpN0	2025-06-30	plain	net_assets	-44867680		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1	
+derby-county-fc	derby-county-fc__1	smg7rT0HdCIhp8JDFeK9st20Xg9vNGxjGsr5Th9GpN0	2025-06-30	plain	net_current_assets	-70071608		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1	
+derby-county-fc	derby-county-fc__1	smg7rT0HdCIhp8JDFeK9st20Xg9vNGxjGsr5Th9GpN0	2025-06-30	plain	staff_costs	31534296		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1	
+derby-county-fc	derby-county-fc__1	smg7rT0HdCIhp8JDFeK9st20Xg9vNGxjGsr5Th9GpN0	2025-06-30	plain	tangible_assets	21572989		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1	
+derby-county-fc	derby-county-fc__1	smg7rT0HdCIhp8JDFeK9st20Xg9vNGxjGsr5Th9GpN0	2025-06-30	plain	total_assets_less_current_liabilities	-38533412		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1	
+derby-county-fc	derby-county-fc__2	no5m_869DyYGSHmt59VZjEUFhUXdMbx6SVgd5YZ1Rnk	2024-06-30	document	_disclosure	full				
+derby-county-fc	derby-county-fc__2	no5m_869DyYGSHmt59VZjEUFhUXdMbx6SVgd5YZ1Rnk	2024-06-30	document	_pnl_withheld					
+derby-county-fc	derby-county-fc__2	no5m_869DyYGSHmt59VZjEUFhUXdMbx6SVgd5YZ1Rnk	2024-06-30	document	_going_concern					
+derby-county-fc	derby-county-fc__2	no5m_869DyYGSHmt59VZjEUFhUXdMbx6SVgd5YZ1Rnk	2024-06-30	plain	creditors_after_year	153944		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1	
+derby-county-fc	derby-county-fc__2	no5m_869DyYGSHmt59VZjEUFhUXdMbx6SVgd5YZ1Rnk	2024-06-30	plain	creditors_within_year	61283334		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1	
+derby-county-fc	derby-county-fc__2	no5m_869DyYGSHmt59VZjEUFhUXdMbx6SVgd5YZ1Rnk	2024-06-30	plain	current_assets	8634329		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1	
+derby-county-fc	derby-county-fc__2	no5m_869DyYGSHmt59VZjEUFhUXdMbx6SVgd5YZ1Rnk	2024-06-30	plain	employees	201		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1	
+derby-county-fc	derby-county-fc__2	no5m_869DyYGSHmt59VZjEUFhUXdMbx6SVgd5YZ1Rnk	2024-06-30	plain	fixed_assets	22141170		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1	
+derby-county-fc	derby-county-fc__2	no5m_869DyYGSHmt59VZjEUFhUXdMbx6SVgd5YZ1Rnk	2024-06-30	plain	intangible_assets	661240		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1	
+derby-county-fc	derby-county-fc__2	no5m_869DyYGSHmt59VZjEUFhUXdMbx6SVgd5YZ1Rnk	2024-06-30	plain	net_assets	-33577857		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1	
+derby-county-fc	derby-county-fc__2	no5m_869DyYGSHmt59VZjEUFhUXdMbx6SVgd5YZ1Rnk	2024-06-30	plain	net_current_assets	-52649005		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1	
+derby-county-fc	derby-county-fc__2	no5m_869DyYGSHmt59VZjEUFhUXdMbx6SVgd5YZ1Rnk	2024-06-30	plain	share_capital	500000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1	
+derby-county-fc	derby-county-fc__2	no5m_869DyYGSHmt59VZjEUFhUXdMbx6SVgd5YZ1Rnk	2024-06-30	plain	staff_costs	21980447		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1	
+derby-county-fc	derby-county-fc__2	no5m_869DyYGSHmt59VZjEUFhUXdMbx6SVgd5YZ1Rnk	2024-06-30	plain	tangible_assets	21479930		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1	
+derby-county-fc	derby-county-fc__2	no5m_869DyYGSHmt59VZjEUFhUXdMbx6SVgd5YZ1Rnk	2024-06-30	plain	total_assets_less_current_liabilities	-30507835		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1	
+everton-fc	everton-fc__1	HE-cxxfLQUbBZxJulEiZTUcwDqduNQyIlDGlaQDLqTU	2025-06-30	document	_disclosure	full				
+everton-fc	everton-fc__1	HE-cxxfLQUbBZxJulEiZTUcwDqduNQyIlDGlaQDLqTU	2025-06-30	document	_pnl_withheld					
+everton-fc	everton-fc__1	HE-cxxfLQUbBZxJulEiZTUcwDqduNQyIlDGlaQDLqTU	2025-06-30	document	_going_concern					
+everton-fc	everton-fc__1	HE-cxxfLQUbBZxJulEiZTUcwDqduNQyIlDGlaQDLqTU	2025-06-30	group	creditors_within_year	286924000		I1,I2,I3,I4	1000	yes
+everton-fc	everton-fc__1	HE-cxxfLQUbBZxJulEiZTUcwDqduNQyIlDGlaQDLqTU	2025-06-30	group	current_assets	172239000		I1,I2,I3,I4	1000	yes
+everton-fc	everton-fc__1	HE-cxxfLQUbBZxJulEiZTUcwDqduNQyIlDGlaQDLqTU	2025-06-30	group	fixed_assets	911876000		I1,I2,I3,I4	1000	yes
+everton-fc	everton-fc__1	HE-cxxfLQUbBZxJulEiZTUcwDqduNQyIlDGlaQDLqTU	2025-06-30	group	intangible_assets	96887000		I1,I2,I3,I4	1000	yes
+everton-fc	everton-fc__1	HE-cxxfLQUbBZxJulEiZTUcwDqduNQyIlDGlaQDLqTU	2025-06-30	group	net_assets	393336000		I1,I2,I3,I4	1000	yes
+everton-fc	everton-fc__1	HE-cxxfLQUbBZxJulEiZTUcwDqduNQyIlDGlaQDLqTU	2025-06-30	group	net_current_assets	-114685000		I1,I2,I3,I4	1000	yes
+everton-fc	everton-fc__1	HE-cxxfLQUbBZxJulEiZTUcwDqduNQyIlDGlaQDLqTU	2025-06-30	group	tangible_assets	814989000		I1,I2,I3,I4	1000	yes
+everton-fc	everton-fc__1	HE-cxxfLQUbBZxJulEiZTUcwDqduNQyIlDGlaQDLqTU	2025-06-30	group	total_assets_less_current_liabilities	797191000		I1,I2,I3,I4	1000	yes
+exeter-city-fc	exeter-city-fc__1	oEuTiIhI48YdvRIBHuSBn1RZRXGBCLFURpZRJKFJxxI	2025-06-30	document	_disclosure	full				
+exeter-city-fc	exeter-city-fc__1	oEuTiIhI48YdvRIBHuSBn1RZRXGBCLFURpZRJKFJxxI	2025-06-30	document	_pnl_withheld					
+exeter-city-fc	exeter-city-fc__1	oEuTiIhI48YdvRIBHuSBn1RZRXGBCLFURpZRJKFJxxI	2025-06-30	document	_going_concern	Material uncertainty related to going concern We draw attention to note 3.3 in the financial statements, which indicates that the company is dependent on future events to maintain adequate cash flows. As disclosed in note 3.3, the Club is reliant on maintaining League One status, the delayed settlement of certain liabilities and on securing additional cash inflows through either the advance recei				
+exeter-city-fc	exeter-city-fc__1	oEuTiIhI48YdvRIBHuSBn1RZRXGBCLFURpZRJKFJxxI	2025-06-30	group	cash	347103		I1,I2,I3	1	
+exeter-city-fc	exeter-city-fc__1	oEuTiIhI48YdvRIBHuSBn1RZRXGBCLFURpZRJKFJxxI	2025-06-30	group	creditors_after_year	961653		I1,I2,I3	1	
+exeter-city-fc	exeter-city-fc__1	oEuTiIhI48YdvRIBHuSBn1RZRXGBCLFURpZRJKFJxxI	2025-06-30	group	creditors_within_year	3028300		I1,I2,I3	1	
+exeter-city-fc	exeter-city-fc__1	oEuTiIhI48YdvRIBHuSBn1RZRXGBCLFURpZRJKFJxxI	2025-06-30	group	current_assets	5232030		I1,I2,I3	1	
+exeter-city-fc	exeter-city-fc__1	oEuTiIhI48YdvRIBHuSBn1RZRXGBCLFURpZRJKFJxxI	2025-06-30	group	debtors	4776126		I1,I2,I3	1	
+exeter-city-fc	exeter-city-fc__1	oEuTiIhI48YdvRIBHuSBn1RZRXGBCLFURpZRJKFJxxI	2025-06-30	group	fixed_assets	5352633		I1,I2,I3	1	
+exeter-city-fc	exeter-city-fc__1	oEuTiIhI48YdvRIBHuSBn1RZRXGBCLFURpZRJKFJxxI	2025-06-30	group	intangible_assets	231003		I1,I2,I3	1	
+exeter-city-fc	exeter-city-fc__1	oEuTiIhI48YdvRIBHuSBn1RZRXGBCLFURpZRJKFJxxI	2025-06-30	group	net_assets	6381585		I1,I2,I3	1	
+exeter-city-fc	exeter-city-fc__1	oEuTiIhI48YdvRIBHuSBn1RZRXGBCLFURpZRJKFJxxI	2025-06-30	group	net_current_assets	2203730		I1,I2,I3	1	
+exeter-city-fc	exeter-city-fc__1	oEuTiIhI48YdvRIBHuSBn1RZRXGBCLFURpZRJKFJxxI	2025-06-30	group	tangible_assets	5121630		I1,I2,I3	1	
+exeter-city-fc	exeter-city-fc__1	oEuTiIhI48YdvRIBHuSBn1RZRXGBCLFURpZRJKFJxxI	2025-06-30	group	total_assets_less_current_liabilities	7556363		I1,I2,I3	1	
+exeter-city-fc	exeter-city-fc__1	oEuTiIhI48YdvRIBHuSBn1RZRXGBCLFURpZRJKFJxxI	2025-06-30	company	cash	307336		I1,I2,I3,I4	1	
+exeter-city-fc	exeter-city-fc__1	oEuTiIhI48YdvRIBHuSBn1RZRXGBCLFURpZRJKFJxxI	2025-06-30	company	creditors_after_year	961653		I1,I2,I3,I4	1	
+exeter-city-fc	exeter-city-fc__1	oEuTiIhI48YdvRIBHuSBn1RZRXGBCLFURpZRJKFJxxI	2025-06-30	company	creditors_within_year	2968486		I1,I2,I3,I4	1	
+exeter-city-fc	exeter-city-fc__1	oEuTiIhI48YdvRIBHuSBn1RZRXGBCLFURpZRJKFJxxI	2025-06-30	company	current_assets	5472966		I1,I2,I3,I4	1	
+exeter-city-fc	exeter-city-fc__1	oEuTiIhI48YdvRIBHuSBn1RZRXGBCLFURpZRJKFJxxI	2025-06-30	company	debtors	5056829		I1,I2,I3,I4	1	
+exeter-city-fc	exeter-city-fc__1	oEuTiIhI48YdvRIBHuSBn1RZRXGBCLFURpZRJKFJxxI	2025-06-30	company	fixed_assets	5349419		I1,I2,I3,I4	1	
+exeter-city-fc	exeter-city-fc__1	oEuTiIhI48YdvRIBHuSBn1RZRXGBCLFURpZRJKFJxxI	2025-06-30	company	net_assets	6679121		I1,I2,I3,I4	1	
+exeter-city-fc	exeter-city-fc__1	oEuTiIhI48YdvRIBHuSBn1RZRXGBCLFURpZRJKFJxxI	2025-06-30	company	net_current_assets	2504480		I1,I2,I3,I4	1	
+exeter-city-fc	exeter-city-fc__1	oEuTiIhI48YdvRIBHuSBn1RZRXGBCLFURpZRJKFJxxI	2025-06-30	company	total_assets_less_current_liabilities	7853899		I1,I2,I3,I4	1	
+forest-green-rovers-fc	forest-green-rovers-fc__2	VQIICCd0qI7lxbGOneQSMyRScC5UNkoz2oYu61T-cAg	2024-06-30	document	_disclosure	full				
+forest-green-rovers-fc	forest-green-rovers-fc__2	VQIICCd0qI7lxbGOneQSMyRScC5UNkoz2oYu61T-cAg	2024-06-30	document	_pnl_withheld					
+forest-green-rovers-fc	forest-green-rovers-fc__2	VQIICCd0qI7lxbGOneQSMyRScC5UNkoz2oYu61T-cAg	2024-06-30	document	_going_concern					
+forest-green-rovers-fc	forest-green-rovers-fc__2	VQIICCd0qI7lxbGOneQSMyRScC5UNkoz2oYu61T-cAg	2024-06-30	plain	cash	455950		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1	
+forest-green-rovers-fc	forest-green-rovers-fc__2	VQIICCd0qI7lxbGOneQSMyRScC5UNkoz2oYu61T-cAg	2024-06-30	plain	creditors_after_year	12170		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1	
+forest-green-rovers-fc	forest-green-rovers-fc__2	VQIICCd0qI7lxbGOneQSMyRScC5UNkoz2oYu61T-cAg	2024-06-30	plain	creditors_within_year	6687187		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1	
+forest-green-rovers-fc	forest-green-rovers-fc__2	VQIICCd0qI7lxbGOneQSMyRScC5UNkoz2oYu61T-cAg	2024-06-30	plain	current_assets	1579068		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1	
+forest-green-rovers-fc	forest-green-rovers-fc__2	VQIICCd0qI7lxbGOneQSMyRScC5UNkoz2oYu61T-cAg	2024-06-30	plain	debtors	1070388		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1	
+forest-green-rovers-fc	forest-green-rovers-fc__2	VQIICCd0qI7lxbGOneQSMyRScC5UNkoz2oYu61T-cAg	2024-06-30	plain	employees	152		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1	
+forest-green-rovers-fc	forest-green-rovers-fc__2	VQIICCd0qI7lxbGOneQSMyRScC5UNkoz2oYu61T-cAg	2024-06-30	plain	fixed_assets	4279237		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1	
+forest-green-rovers-fc	forest-green-rovers-fc__2	VQIICCd0qI7lxbGOneQSMyRScC5UNkoz2oYu61T-cAg	2024-06-30	plain	intangible_assets	201387		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1	
+forest-green-rovers-fc	forest-green-rovers-fc__2	VQIICCd0qI7lxbGOneQSMyRScC5UNkoz2oYu61T-cAg	2024-06-30	plain	net_assets	-1260778		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1	
+forest-green-rovers-fc	forest-green-rovers-fc__2	VQIICCd0qI7lxbGOneQSMyRScC5UNkoz2oYu61T-cAg	2024-06-30	plain	net_current_assets	-5108119		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1	
+forest-green-rovers-fc	forest-green-rovers-fc__2	VQIICCd0qI7lxbGOneQSMyRScC5UNkoz2oYu61T-cAg	2024-06-30	plain	staff_costs	7722704		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1	
+forest-green-rovers-fc	forest-green-rovers-fc__2	VQIICCd0qI7lxbGOneQSMyRScC5UNkoz2oYu61T-cAg	2024-06-30	plain	tangible_assets	4077850		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1	
+forest-green-rovers-fc	forest-green-rovers-fc__2	VQIICCd0qI7lxbGOneQSMyRScC5UNkoz2oYu61T-cAg	2024-06-30	plain	total_assets_less_current_liabilities	-828882		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1	
+fulham-fc	fulham-fc__1	Yh14qvK5k2v1-QXkr1QNkRgpy9xgbKhp_QEg8suEHqg	2025-06-30	document	_disclosure	full				
+fulham-fc	fulham-fc__1	Yh14qvK5k2v1-QXkr1QNkRgpy9xgbKhp_QEg8suEHqg	2025-06-30	document	_pnl_withheld					
+fulham-fc	fulham-fc__1	Yh14qvK5k2v1-QXkr1QNkRgpy9xgbKhp_QEg8suEHqg	2025-06-30	document	_going_concern					
+fulham-fc	fulham-fc__1	Yh14qvK5k2v1-QXkr1QNkRgpy9xgbKhp_QEg8suEHqg	2025-06-30	plain	cash	13172000		I1,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+fulham-fc	fulham-fc__1	Yh14qvK5k2v1-QXkr1QNkRgpy9xgbKhp_QEg8suEHqg	2025-06-30	plain	creditors_within_year	102822000		I1,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+fulham-fc	fulham-fc__1	Yh14qvK5k2v1-QXkr1QNkRgpy9xgbKhp_QEg8suEHqg	2025-06-30	plain	current_assets	78992000		I1,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+fulham-fc	fulham-fc__1	Yh14qvK5k2v1-QXkr1QNkRgpy9xgbKhp_QEg8suEHqg	2025-06-30	plain	debtors	65313000		I1,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+fulham-fc	fulham-fc__1	Yh14qvK5k2v1-QXkr1QNkRgpy9xgbKhp_QEg8suEHqg	2025-06-30	plain	employees	328		I1,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+fulham-fc	fulham-fc__1	Yh14qvK5k2v1-QXkr1QNkRgpy9xgbKhp_QEg8suEHqg	2025-06-30	plain	net_assets	61329000		I1,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+fulham-fc	fulham-fc__1	Yh14qvK5k2v1-QXkr1QNkRgpy9xgbKhp_QEg8suEHqg	2025-06-30	plain	net_current_assets	-23830000		I1,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+fulham-fc	fulham-fc__1	Yh14qvK5k2v1-QXkr1QNkRgpy9xgbKhp_QEg8suEHqg	2025-06-30	plain	share_capital	28942000		I1,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+fulham-fc	fulham-fc__1	Yh14qvK5k2v1-QXkr1QNkRgpy9xgbKhp_QEg8suEHqg	2025-06-30	plain	staff_costs	166507000		I1,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+fulham-fc	fulham-fc__2	E_8V_MlQ2lGZPkp6wQLZ7OnbVMEibKbCWRoiE20fEyI	2024-06-30	document	_disclosure	full				
+fulham-fc	fulham-fc__2	E_8V_MlQ2lGZPkp6wQLZ7OnbVMEibKbCWRoiE20fEyI	2024-06-30	document	_pnl_withheld					
+fulham-fc	fulham-fc__2	E_8V_MlQ2lGZPkp6wQLZ7OnbVMEibKbCWRoiE20fEyI	2024-06-30	document	_going_concern					
+fulham-fc	fulham-fc__2	E_8V_MlQ2lGZPkp6wQLZ7OnbVMEibKbCWRoiE20fEyI	2024-06-30	plain	cash	32768000		I1,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+fulham-fc	fulham-fc__2	E_8V_MlQ2lGZPkp6wQLZ7OnbVMEibKbCWRoiE20fEyI	2024-06-30	plain	creditors_within_year	136459000		I1,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+fulham-fc	fulham-fc__2	E_8V_MlQ2lGZPkp6wQLZ7OnbVMEibKbCWRoiE20fEyI	2024-06-30	plain	current_assets	80145000		I1,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+fulham-fc	fulham-fc__2	E_8V_MlQ2lGZPkp6wQLZ7OnbVMEibKbCWRoiE20fEyI	2024-06-30	plain	debtors	46942000		I1,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+fulham-fc	fulham-fc__2	E_8V_MlQ2lGZPkp6wQLZ7OnbVMEibKbCWRoiE20fEyI	2024-06-30	plain	employees	304		I1,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+fulham-fc	fulham-fc__2	E_8V_MlQ2lGZPkp6wQLZ7OnbVMEibKbCWRoiE20fEyI	2024-06-30	plain	net_assets	33919000		I1,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+fulham-fc	fulham-fc__2	E_8V_MlQ2lGZPkp6wQLZ7OnbVMEibKbCWRoiE20fEyI	2024-06-30	plain	net_current_assets	-56314000		I1,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+fulham-fc	fulham-fc__2	E_8V_MlQ2lGZPkp6wQLZ7OnbVMEibKbCWRoiE20fEyI	2024-06-30	plain	share_capital	19369000		I1,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+fulham-fc	fulham-fc__2	E_8V_MlQ2lGZPkp6wQLZ7OnbVMEibKbCWRoiE20fEyI	2024-06-30	plain	staff_costs	154754000		I1,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+gloucester-city-fc	gloucester-city-fc__1	XyOIl4fYXNLa3t4x1Af-K3q2oLQzAeQIGqbhI8OLmXg	2025-06-30	document	_disclosure	full				
+gloucester-city-fc	gloucester-city-fc__1	XyOIl4fYXNLa3t4x1Af-K3q2oLQzAeQIGqbhI8OLmXg	2025-06-30	document	_pnl_withheld					
+gloucester-city-fc	gloucester-city-fc__1	XyOIl4fYXNLa3t4x1Af-K3q2oLQzAeQIGqbhI8OLmXg	2025-06-30	document	_going_concern					
+gloucester-city-fc	gloucester-city-fc__1	XyOIl4fYXNLa3t4x1Af-K3q2oLQzAeQIGqbhI8OLmXg	2025-06-30	plain	cash	5790	CL,TALCL	I1,I2,I3,employees:sentence	1	
+gloucester-city-fc	gloucester-city-fc__1	XyOIl4fYXNLa3t4x1Af-K3q2oLQzAeQIGqbhI8OLmXg	2025-06-30	plain	creditors_within_year	1977723	CL,TALCL	I1,I2,I3,employees:sentence	1	
+gloucester-city-fc	gloucester-city-fc__1	XyOIl4fYXNLa3t4x1Af-K3q2oLQzAeQIGqbhI8OLmXg	2025-06-30	plain	current_assets	31204	CL,TALCL	I1,I2,I3,employees:sentence	1	
+gloucester-city-fc	gloucester-city-fc__1	XyOIl4fYXNLa3t4x1Af-K3q2oLQzAeQIGqbhI8OLmXg	2025-06-30	plain	debtors	24414	CL,TALCL	I1,I2,I3,employees:sentence	1	
+gloucester-city-fc	gloucester-city-fc__1	XyOIl4fYXNLa3t4x1Af-K3q2oLQzAeQIGqbhI8OLmXg	2025-06-30	plain	employees	14	CL,TALCL	I1,I2,I3,employees:sentence	1	
+gloucester-city-fc	gloucester-city-fc__1	XyOIl4fYXNLa3t4x1Af-K3q2oLQzAeQIGqbhI8OLmXg	2025-06-30	plain	fixed_assets	479078	CL,TALCL	I1,I2,I3,employees:sentence	1	
+gloucester-city-fc	gloucester-city-fc__1	XyOIl4fYXNLa3t4x1Af-K3q2oLQzAeQIGqbhI8OLmXg	2025-06-30	plain	net_assets	-1467441	CL,TALCL	I1,I2,I3,employees:sentence	1	
+gloucester-city-fc	gloucester-city-fc__1	XyOIl4fYXNLa3t4x1Af-K3q2oLQzAeQIGqbhI8OLmXg	2025-06-30	plain	net_current_assets	-1946519	CL,TALCL	I1,I2,I3,employees:sentence	1	
+gloucester-city-fc	gloucester-city-fc__1	XyOIl4fYXNLa3t4x1Af-K3q2oLQzAeQIGqbhI8OLmXg	2025-06-30	plain	share_capital	15000	CL,TALCL	I1,I2,I3,employees:sentence	1	
+gloucester-city-fc	gloucester-city-fc__1	XyOIl4fYXNLa3t4x1Af-K3q2oLQzAeQIGqbhI8OLmXg	2025-06-30	plain	tangible_assets	479078	CL,TALCL	I1,I2,I3,employees:sentence	1	
+gloucester-city-fc	gloucester-city-fc__1	XyOIl4fYXNLa3t4x1Af-K3q2oLQzAeQIGqbhI8OLmXg	2025-06-30	plain	total_assets_less_current_liabilities	-1467441	CL,TALCL	I1,I2,I3,employees:sentence	1	
+gloucester-city-fc	gloucester-city-fc__2	VFkREBcZB-oBTCY0UoVJ8Z5JLUFmJo8afoIllIdoejI	2024-06-30	document	_disclosure	full				
+gloucester-city-fc	gloucester-city-fc__2	VFkREBcZB-oBTCY0UoVJ8Z5JLUFmJo8afoIllIdoejI	2024-06-30	document	_pnl_withheld					
+gloucester-city-fc	gloucester-city-fc__2	VFkREBcZB-oBTCY0UoVJ8Z5JLUFmJo8afoIllIdoejI	2024-06-30	document	_going_concern					
+gloucester-city-fc	gloucester-city-fc__2	VFkREBcZB-oBTCY0UoVJ8Z5JLUFmJo8afoIllIdoejI	2024-06-30	plain	cash	182		I1,I2,I3,employees:sentence	1	
+gloucester-city-fc	gloucester-city-fc__2	VFkREBcZB-oBTCY0UoVJ8Z5JLUFmJo8afoIllIdoejI	2024-06-30	plain	creditors_within_year	1808716		I1,I2,I3,employees:sentence	1	
+gloucester-city-fc	gloucester-city-fc__2	VFkREBcZB-oBTCY0UoVJ8Z5JLUFmJo8afoIllIdoejI	2024-06-30	plain	current_assets	13368		I1,I2,I3,employees:sentence	1	
+gloucester-city-fc	gloucester-city-fc__2	VFkREBcZB-oBTCY0UoVJ8Z5JLUFmJo8afoIllIdoejI	2024-06-30	plain	debtors	12186		I1,I2,I3,employees:sentence	1	
+gloucester-city-fc	gloucester-city-fc__2	VFkREBcZB-oBTCY0UoVJ8Z5JLUFmJo8afoIllIdoejI	2024-06-30	plain	employees	14		I1,I2,I3,employees:sentence	1	
+gloucester-city-fc	gloucester-city-fc__2	VFkREBcZB-oBTCY0UoVJ8Z5JLUFmJo8afoIllIdoejI	2024-06-30	plain	fixed_assets	501461		I1,I2,I3,employees:sentence	1	
+gloucester-city-fc	gloucester-city-fc__2	VFkREBcZB-oBTCY0UoVJ8Z5JLUFmJo8afoIllIdoejI	2024-06-30	plain	net_assets	-1293887		I1,I2,I3,employees:sentence	1	
+gloucester-city-fc	gloucester-city-fc__2	VFkREBcZB-oBTCY0UoVJ8Z5JLUFmJo8afoIllIdoejI	2024-06-30	plain	net_current_assets	-1795348		I1,I2,I3,employees:sentence	1	
+gloucester-city-fc	gloucester-city-fc__2	VFkREBcZB-oBTCY0UoVJ8Z5JLUFmJo8afoIllIdoejI	2024-06-30	plain	share_capital	15000		I1,I2,I3,employees:sentence	1	
+gloucester-city-fc	gloucester-city-fc__2	VFkREBcZB-oBTCY0UoVJ8Z5JLUFmJo8afoIllIdoejI	2024-06-30	plain	tangible_assets	501461		I1,I2,I3,employees:sentence	1	
+gloucester-city-fc	gloucester-city-fc__2	VFkREBcZB-oBTCY0UoVJ8Z5JLUFmJo8afoIllIdoejI	2024-06-30	plain	total_assets_less_current_liabilities	-1293887		I1,I2,I3,employees:sentence	1	
+harrogate-town-afc	harrogate-town-afc__1	O2Dcg8Lx47Yy5uwBgMhLqyI1MtANIj567wOxpY_DX7s	2025-06-30	document	_disclosure	full				
+harrogate-town-afc	harrogate-town-afc__1	O2Dcg8Lx47Yy5uwBgMhLqyI1MtANIj567wOxpY_DX7s	2025-06-30	document	_pnl_withheld					
+harrogate-town-afc	harrogate-town-afc__1	O2Dcg8Lx47Yy5uwBgMhLqyI1MtANIj567wOxpY_DX7s	2025-06-30	document	_going_concern					
+harrogate-town-afc	harrogate-town-afc__1	O2Dcg8Lx47Yy5uwBgMhLqyI1MtANIj567wOxpY_DX7s	2025-06-30	plain	cash	107699		I1,I2,I3,I4	1	
+harrogate-town-afc	harrogate-town-afc__1	O2Dcg8Lx47Yy5uwBgMhLqyI1MtANIj567wOxpY_DX7s	2025-06-30	plain	creditors_after_year	689888		I1,I2,I3,I4	1	
+harrogate-town-afc	harrogate-town-afc__1	O2Dcg8Lx47Yy5uwBgMhLqyI1MtANIj567wOxpY_DX7s	2025-06-30	plain	creditors_within_year	7180588		I1,I2,I3,I4	1	
+harrogate-town-afc	harrogate-town-afc__1	O2Dcg8Lx47Yy5uwBgMhLqyI1MtANIj567wOxpY_DX7s	2025-06-30	plain	current_assets	811083		I1,I2,I3,I4	1	
+harrogate-town-afc	harrogate-town-afc__1	O2Dcg8Lx47Yy5uwBgMhLqyI1MtANIj567wOxpY_DX7s	2025-06-30	plain	debtors	636187		I1,I2,I3,I4	1	
+harrogate-town-afc	harrogate-town-afc__1	O2Dcg8Lx47Yy5uwBgMhLqyI1MtANIj567wOxpY_DX7s	2025-06-30	plain	fixed_assets	5686457		I1,I2,I3,I4	1	
+harrogate-town-afc	harrogate-town-afc__1	O2Dcg8Lx47Yy5uwBgMhLqyI1MtANIj567wOxpY_DX7s	2025-06-30	plain	intangible_assets	43900		I1,I2,I3,I4	1	
+harrogate-town-afc	harrogate-town-afc__1	O2Dcg8Lx47Yy5uwBgMhLqyI1MtANIj567wOxpY_DX7s	2025-06-30	plain	net_assets	-1372936		I1,I2,I3,I4	1	
+harrogate-town-afc	harrogate-town-afc__1	O2Dcg8Lx47Yy5uwBgMhLqyI1MtANIj567wOxpY_DX7s	2025-06-30	plain	net_current_assets	-6369505		I1,I2,I3,I4	1	
+harrogate-town-afc	harrogate-town-afc__1	O2Dcg8Lx47Yy5uwBgMhLqyI1MtANIj567wOxpY_DX7s	2025-06-30	plain	tangible_assets	5642556		I1,I2,I3,I4	1	
+harrogate-town-afc	harrogate-town-afc__1	O2Dcg8Lx47Yy5uwBgMhLqyI1MtANIj567wOxpY_DX7s	2025-06-30	plain	total_assets_less_current_liabilities	-683048		I1,I2,I3,I4	1	
+harrogate-town-afc	harrogate-town-afc__2	08ReIeRR2mY7LVdK5Ey757Y8v_2MQUgja_YTR1EzL6s	2024-06-30	document	_disclosure	full				
+harrogate-town-afc	harrogate-town-afc__2	08ReIeRR2mY7LVdK5Ey757Y8v_2MQUgja_YTR1EzL6s	2024-06-30	document	_pnl_withheld					
+harrogate-town-afc	harrogate-town-afc__2	08ReIeRR2mY7LVdK5Ey757Y8v_2MQUgja_YTR1EzL6s	2024-06-30	document	_going_concern					
+harrogate-town-afc	harrogate-town-afc__2	08ReIeRR2mY7LVdK5Ey757Y8v_2MQUgja_YTR1EzL6s	2024-06-30	plain	cash	80264		I1,I2,I3,I4	1	
+harrogate-town-afc	harrogate-town-afc__2	08ReIeRR2mY7LVdK5Ey757Y8v_2MQUgja_YTR1EzL6s	2024-06-30	plain	creditors_after_year	736485		I1,I2,I3,I4	1	
+harrogate-town-afc	harrogate-town-afc__2	08ReIeRR2mY7LVdK5Ey757Y8v_2MQUgja_YTR1EzL6s	2024-06-30	plain	creditors_within_year	6002019		I1,I2,I3,I4	1	
+harrogate-town-afc	harrogate-town-afc__2	08ReIeRR2mY7LVdK5Ey757Y8v_2MQUgja_YTR1EzL6s	2024-06-30	plain	current_assets	960541		I1,I2,I3,I4	1	
+harrogate-town-afc	harrogate-town-afc__2	08ReIeRR2mY7LVdK5Ey757Y8v_2MQUgja_YTR1EzL6s	2024-06-30	plain	debtors	817973		I1,I2,I3,I4	1	
+harrogate-town-afc	harrogate-town-afc__2	08ReIeRR2mY7LVdK5Ey757Y8v_2MQUgja_YTR1EzL6s	2024-06-30	plain	fixed_assets	6072978		I1,I2,I3,I4	1	
+harrogate-town-afc	harrogate-town-afc__2	08ReIeRR2mY7LVdK5Ey757Y8v_2MQUgja_YTR1EzL6s	2024-06-30	plain	intangible_assets	176841		I1,I2,I3,I4	1	
+harrogate-town-afc	harrogate-town-afc__2	08ReIeRR2mY7LVdK5Ey757Y8v_2MQUgja_YTR1EzL6s	2024-06-30	plain	net_assets	295015		I1,I2,I3,I4	1	
+harrogate-town-afc	harrogate-town-afc__2	08ReIeRR2mY7LVdK5Ey757Y8v_2MQUgja_YTR1EzL6s	2024-06-30	plain	net_current_assets	-5041478		I1,I2,I3,I4	1	
+harrogate-town-afc	harrogate-town-afc__2	08ReIeRR2mY7LVdK5Ey757Y8v_2MQUgja_YTR1EzL6s	2024-06-30	plain	tangible_assets	5896136		I1,I2,I3,I4	1	
+harrogate-town-afc	harrogate-town-afc__2	08ReIeRR2mY7LVdK5Ey757Y8v_2MQUgja_YTR1EzL6s	2024-06-30	plain	total_assets_less_current_liabilities	1031500		I1,I2,I3,I4	1	
+huddersfield-town-fc	huddersfield-town-fc__1	kGGZNZ1b_5-ewFY2lgPiT8eIa9UMTS4PyJodLFrGZxk	2025-06-30	document	_disclosure	full				
+huddersfield-town-fc	huddersfield-town-fc__1	kGGZNZ1b_5-ewFY2lgPiT8eIa9UMTS4PyJodLFrGZxk	2025-06-30	document	_pnl_withheld					
+huddersfield-town-fc	huddersfield-town-fc__1	kGGZNZ1b_5-ewFY2lgPiT8eIa9UMTS4PyJodLFrGZxk	2025-06-30	document	_going_concern					
+huddersfield-town-fc	huddersfield-town-fc__1	kGGZNZ1b_5-ewFY2lgPiT8eIa9UMTS4PyJodLFrGZxk	2025-06-30	group	creditors_after_year	21036008		I1,I2,I3,I4,employees:sentence	1	
+huddersfield-town-fc	huddersfield-town-fc__1	kGGZNZ1b_5-ewFY2lgPiT8eIa9UMTS4PyJodLFrGZxk	2025-06-30	group	creditors_within_year	73977581		I1,I2,I3,I4,employees:sentence	1	
+huddersfield-town-fc	huddersfield-town-fc__1	kGGZNZ1b_5-ewFY2lgPiT8eIa9UMTS4PyJodLFrGZxk	2025-06-30	group	current_assets	15799993		I1,I2,I3,I4,employees:sentence	1	
+huddersfield-town-fc	huddersfield-town-fc__1	kGGZNZ1b_5-ewFY2lgPiT8eIa9UMTS4PyJodLFrGZxk	2025-06-30	group	employees	353		I1,I2,I3,I4,employees:sentence	1	
+huddersfield-town-fc	huddersfield-town-fc__1	kGGZNZ1b_5-ewFY2lgPiT8eIa9UMTS4PyJodLFrGZxk	2025-06-30	group	fixed_assets	16878044		I1,I2,I3,I4,employees:sentence	1	
+huddersfield-town-fc	huddersfield-town-fc__1	kGGZNZ1b_5-ewFY2lgPiT8eIa9UMTS4PyJodLFrGZxk	2025-06-30	group	intangible_assets	6057517		I1,I2,I3,I4,employees:sentence	1	
+huddersfield-town-fc	huddersfield-town-fc__1	kGGZNZ1b_5-ewFY2lgPiT8eIa9UMTS4PyJodLFrGZxk	2025-06-30	group	net_assets	-62335552		I1,I2,I3,I4,employees:sentence	1	
+huddersfield-town-fc	huddersfield-town-fc__1	kGGZNZ1b_5-ewFY2lgPiT8eIa9UMTS4PyJodLFrGZxk	2025-06-30	group	net_current_assets	-58177588		I1,I2,I3,I4,employees:sentence	1	
+huddersfield-town-fc	huddersfield-town-fc__1	kGGZNZ1b_5-ewFY2lgPiT8eIa9UMTS4PyJodLFrGZxk	2025-06-30	group	share_capital	7125000		I1,I2,I3,I4,employees:sentence	1	
+huddersfield-town-fc	huddersfield-town-fc__1	kGGZNZ1b_5-ewFY2lgPiT8eIa9UMTS4PyJodLFrGZxk	2025-06-30	group	tangible_assets	8574753		I1,I2,I3,I4,employees:sentence	1	
+huddersfield-town-fc	huddersfield-town-fc__1	kGGZNZ1b_5-ewFY2lgPiT8eIa9UMTS4PyJodLFrGZxk	2025-06-30	group	total_assets_less_current_liabilities	-41299544		I1,I2,I3,I4,employees:sentence	1	
+huddersfield-town-fc	huddersfield-town-fc__1	kGGZNZ1b_5-ewFY2lgPiT8eIa9UMTS4PyJodLFrGZxk	2025-06-30	company	creditors_after_year	21036008		I1,I2,I3,I4	1	
+huddersfield-town-fc	huddersfield-town-fc__1	kGGZNZ1b_5-ewFY2lgPiT8eIa9UMTS4PyJodLFrGZxk	2025-06-30	company	creditors_within_year	74002725		I1,I2,I3,I4	1	
+huddersfield-town-fc	huddersfield-town-fc__1	kGGZNZ1b_5-ewFY2lgPiT8eIa9UMTS4PyJodLFrGZxk	2025-06-30	company	current_assets	15799993		I1,I2,I3,I4	1	
+huddersfield-town-fc	huddersfield-town-fc__1	kGGZNZ1b_5-ewFY2lgPiT8eIa9UMTS4PyJodLFrGZxk	2025-06-30	company	fixed_assets	14738961		I1,I2,I3,I4	1	
+huddersfield-town-fc	huddersfield-town-fc__1	kGGZNZ1b_5-ewFY2lgPiT8eIa9UMTS4PyJodLFrGZxk	2025-06-30	company	intangible_assets	6057517		I1,I2,I3,I4	1	
+huddersfield-town-fc	huddersfield-town-fc__1	kGGZNZ1b_5-ewFY2lgPiT8eIa9UMTS4PyJodLFrGZxk	2025-06-30	company	net_assets	-64499779		I1,I2,I3,I4	1	
+huddersfield-town-fc	huddersfield-town-fc__1	kGGZNZ1b_5-ewFY2lgPiT8eIa9UMTS4PyJodLFrGZxk	2025-06-30	company	net_current_assets	-58202732		I1,I2,I3,I4	1	
+huddersfield-town-fc	huddersfield-town-fc__1	kGGZNZ1b_5-ewFY2lgPiT8eIa9UMTS4PyJodLFrGZxk	2025-06-30	company	share_capital	7125000		I1,I2,I3,I4	1	
+huddersfield-town-fc	huddersfield-town-fc__1	kGGZNZ1b_5-ewFY2lgPiT8eIa9UMTS4PyJodLFrGZxk	2025-06-30	company	tangible_assets	8574753		I1,I2,I3,I4	1	
+huddersfield-town-fc	huddersfield-town-fc__1	kGGZNZ1b_5-ewFY2lgPiT8eIa9UMTS4PyJodLFrGZxk	2025-06-30	company	total_assets_less_current_liabilities	-43463771		I1,I2,I3,I4	1	
+huddersfield-town-fc	huddersfield-town-fc__2	N-25PrYf_0jJhy9rZfj_xfiJ_S5KwRHGXMO3LAWt6Ig	2024-06-30	document	_disclosure	full				
+huddersfield-town-fc	huddersfield-town-fc__2	N-25PrYf_0jJhy9rZfj_xfiJ_S5KwRHGXMO3LAWt6Ig	2024-06-30	document	_pnl_withheld					
+huddersfield-town-fc	huddersfield-town-fc__2	N-25PrYf_0jJhy9rZfj_xfiJ_S5KwRHGXMO3LAWt6Ig	2024-06-30	document	_going_concern					
+huddersfield-town-fc	huddersfield-town-fc__2	N-25PrYf_0jJhy9rZfj_xfiJ_S5KwRHGXMO3LAWt6Ig	2024-06-30	group	creditors_after_year	19121672		I1,I2,I3,I4	1	
+huddersfield-town-fc	huddersfield-town-fc__2	N-25PrYf_0jJhy9rZfj_xfiJ_S5KwRHGXMO3LAWt6Ig	2024-06-30	group	creditors_within_year	60811754		I1,I2,I3,I4	1	
+huddersfield-town-fc	huddersfield-town-fc__2	N-25PrYf_0jJhy9rZfj_xfiJ_S5KwRHGXMO3LAWt6Ig	2024-06-30	group	current_assets	24860366		I1,I2,I3,I4	1	
+huddersfield-town-fc	huddersfield-town-fc__2	N-25PrYf_0jJhy9rZfj_xfiJ_S5KwRHGXMO3LAWt6Ig	2024-06-30	group	fixed_assets	15123076		I1,I2,I3,I4	1	
+huddersfield-town-fc	huddersfield-town-fc__2	N-25PrYf_0jJhy9rZfj_xfiJ_S5KwRHGXMO3LAWt6Ig	2024-06-30	group	net_assets	-39949984		I1,I2,I3,I4	1	
+huddersfield-town-fc	huddersfield-town-fc__2	N-25PrYf_0jJhy9rZfj_xfiJ_S5KwRHGXMO3LAWt6Ig	2024-06-30	group	net_current_assets	-35951388		I1,I2,I3,I4	1	
+huddersfield-town-fc	huddersfield-town-fc__2	N-25PrYf_0jJhy9rZfj_xfiJ_S5KwRHGXMO3LAWt6Ig	2024-06-30	group	total_assets_less_current_liabilities	-20828312		I1,I2,I3,I4	1	
+huddersfield-town-fc	huddersfield-town-fc__2	N-25PrYf_0jJhy9rZfj_xfiJ_S5KwRHGXMO3LAWt6Ig	2024-06-30	company	creditors_after_year	19121672		I1,I2,I3,I4	1	
+huddersfield-town-fc	huddersfield-town-fc__2	N-25PrYf_0jJhy9rZfj_xfiJ_S5KwRHGXMO3LAWt6Ig	2024-06-30	company	creditors_within_year	60836898		I1,I2,I3,I4	1	
+huddersfield-town-fc	huddersfield-town-fc__2	N-25PrYf_0jJhy9rZfj_xfiJ_S5KwRHGXMO3LAWt6Ig	2024-06-30	company	current_assets	24860366		I1,I2,I3,I4	1	
+huddersfield-town-fc	huddersfield-town-fc__2	N-25PrYf_0jJhy9rZfj_xfiJ_S5KwRHGXMO3LAWt6Ig	2024-06-30	company	fixed_assets	12348619		I1,I2,I3,I4	1	
+huddersfield-town-fc	huddersfield-town-fc__2	N-25PrYf_0jJhy9rZfj_xfiJ_S5KwRHGXMO3LAWt6Ig	2024-06-30	company	net_assets	-42749585		I1,I2,I3,I4	1	
+huddersfield-town-fc	huddersfield-town-fc__2	N-25PrYf_0jJhy9rZfj_xfiJ_S5KwRHGXMO3LAWt6Ig	2024-06-30	company	net_current_assets	-35976532		I1,I2,I3,I4	1	
+huddersfield-town-fc	huddersfield-town-fc__2	N-25PrYf_0jJhy9rZfj_xfiJ_S5KwRHGXMO3LAWt6Ig	2024-06-30	company	share_capital	7125000		I1,I2,I3,I4	1	
+huddersfield-town-fc	huddersfield-town-fc__2	N-25PrYf_0jJhy9rZfj_xfiJ_S5KwRHGXMO3LAWt6Ig	2024-06-30	company	total_assets_less_current_liabilities	-23627913		I1,I2,I3,I4	1	
+leeds-united-fc	leeds-united-fc__1	EmORK3lvzQncaHTIl1bCzfWEYFetaZvx8fpjh93nVcM	2025-06-30	document	_disclosure	full				
+leeds-united-fc	leeds-united-fc__1	EmORK3lvzQncaHTIl1bCzfWEYFetaZvx8fpjh93nVcM	2025-06-30	document	_pnl_withheld					
+leeds-united-fc	leeds-united-fc__1	EmORK3lvzQncaHTIl1bCzfWEYFetaZvx8fpjh93nVcM	2025-06-30	document	_going_concern					
+leeds-united-fc	leeds-united-fc__1	EmORK3lvzQncaHTIl1bCzfWEYFetaZvx8fpjh93nVcM	2025-06-30	group	creditors_after_year	66063846	TALCL	I1,I2,I3,I4,employees:sum of 5	1	
+leeds-united-fc	leeds-united-fc__1	EmORK3lvzQncaHTIl1bCzfWEYFetaZvx8fpjh93nVcM	2025-06-30	group	creditors_within_year	180094869	TALCL	I1,I2,I3,I4,employees:sum of 5	1	
+leeds-united-fc	leeds-united-fc__1	EmORK3lvzQncaHTIl1bCzfWEYFetaZvx8fpjh93nVcM	2025-06-30	group	current_assets	169162629	TALCL	I1,I2,I3,I4,employees:sum of 5	1	
+leeds-united-fc	leeds-united-fc__1	EmORK3lvzQncaHTIl1bCzfWEYFetaZvx8fpjh93nVcM	2025-06-30	group	employees	1415	TALCL	I1,I2,I3,I4,employees:sum of 5	1	
+leeds-united-fc	leeds-united-fc__1	EmORK3lvzQncaHTIl1bCzfWEYFetaZvx8fpjh93nVcM	2025-06-30	group	fixed_assets	122084007	TALCL	I1,I2,I3,I4,employees:sum of 5	1	
+leeds-united-fc	leeds-united-fc__1	EmORK3lvzQncaHTIl1bCzfWEYFetaZvx8fpjh93nVcM	2025-06-30	group	net_assets	45087921	TALCL	I1,I2,I3,I4,employees:sum of 5	1	
+leeds-united-fc	leeds-united-fc__1	EmORK3lvzQncaHTIl1bCzfWEYFetaZvx8fpjh93nVcM	2025-06-30	group	net_current_assets	-10932240	TALCL	I1,I2,I3,I4,employees:sum of 5	1	
+leeds-united-fc	leeds-united-fc__1	EmORK3lvzQncaHTIl1bCzfWEYFetaZvx8fpjh93nVcM	2025-06-30	group	total_assets_less_current_liabilities	111151767	TALCL	I1,I2,I3,I4,employees:sum of 5	1	
+leeds-united-fc	leeds-united-fc__1	EmORK3lvzQncaHTIl1bCzfWEYFetaZvx8fpjh93nVcM	2025-06-30	company	creditors_after_year	66063846		I1,I2,I3,I4	1	
+leeds-united-fc	leeds-united-fc__1	EmORK3lvzQncaHTIl1bCzfWEYFetaZvx8fpjh93nVcM	2025-06-30	company	creditors_within_year	197453061		I1,I2,I3,I4	1	
+leeds-united-fc	leeds-united-fc__1	EmORK3lvzQncaHTIl1bCzfWEYFetaZvx8fpjh93nVcM	2025-06-30	company	current_assets	167958975		I1,I2,I3,I4	1	
+leeds-united-fc	leeds-united-fc__1	EmORK3lvzQncaHTIl1bCzfWEYFetaZvx8fpjh93nVcM	2025-06-30	company	fixed_assets	121620745		I1,I2,I3,I4	1	
+leeds-united-fc	leeds-united-fc__1	EmORK3lvzQncaHTIl1bCzfWEYFetaZvx8fpjh93nVcM	2025-06-30	company	intangible_assets	93211065		I1,I2,I3,I4	1	
+leeds-united-fc	leeds-united-fc__1	EmORK3lvzQncaHTIl1bCzfWEYFetaZvx8fpjh93nVcM	2025-06-30	company	net_assets	26062813		I1,I2,I3,I4	1	
+leeds-united-fc	leeds-united-fc__1	EmORK3lvzQncaHTIl1bCzfWEYFetaZvx8fpjh93nVcM	2025-06-30	company	net_current_assets	-29494086		I1,I2,I3,I4	1	
+leeds-united-fc	leeds-united-fc__1	EmORK3lvzQncaHTIl1bCzfWEYFetaZvx8fpjh93nVcM	2025-06-30	company	tangible_assets	28409675		I1,I2,I3,I4	1	
+leeds-united-fc	leeds-united-fc__1	EmORK3lvzQncaHTIl1bCzfWEYFetaZvx8fpjh93nVcM	2025-06-30	company	total_assets_less_current_liabilities	92126659		I1,I2,I3,I4	1	
+leeds-united-fc	leeds-united-fc__2	cCzUdgtQxcLPLA2OK15SA8dP_8DwTT7FT9VarjdPEtg	2024-06-30	document	_disclosure	full				
+leeds-united-fc	leeds-united-fc__2	cCzUdgtQxcLPLA2OK15SA8dP_8DwTT7FT9VarjdPEtg	2024-06-30	document	_pnl_withheld					
+leeds-united-fc	leeds-united-fc__2	cCzUdgtQxcLPLA2OK15SA8dP_8DwTT7FT9VarjdPEtg	2024-06-30	document	_going_concern					
+leeds-united-fc	leeds-united-fc__2	cCzUdgtQxcLPLA2OK15SA8dP_8DwTT7FT9VarjdPEtg	2024-06-30	group	creditors_after_year	91944318		I1,I2,I3,I4,employees:sum of 5	1	
+leeds-united-fc	leeds-united-fc__2	cCzUdgtQxcLPLA2OK15SA8dP_8DwTT7FT9VarjdPEtg	2024-06-30	group	creditors_within_year	182532026		I1,I2,I3,I4,employees:sum of 5	1	
+leeds-united-fc	leeds-united-fc__2	cCzUdgtQxcLPLA2OK15SA8dP_8DwTT7FT9VarjdPEtg	2024-06-30	group	current_assets	99858014		I1,I2,I3,I4,employees:sum of 5	1	
+leeds-united-fc	leeds-united-fc__2	cCzUdgtQxcLPLA2OK15SA8dP_8DwTT7FT9VarjdPEtg	2024-06-30	group	employees	1406		I1,I2,I3,I4,employees:sum of 5	1	
+leeds-united-fc	leeds-united-fc__2	cCzUdgtQxcLPLA2OK15SA8dP_8DwTT7FT9VarjdPEtg	2024-06-30	group	fixed_assets	160888139		I1,I2,I3,I4,employees:sum of 5	1	
+leeds-united-fc	leeds-united-fc__2	cCzUdgtQxcLPLA2OK15SA8dP_8DwTT7FT9VarjdPEtg	2024-06-30	group	net_assets	-13730191		I1,I2,I3,I4,employees:sum of 5	1	
+leeds-united-fc	leeds-united-fc__2	cCzUdgtQxcLPLA2OK15SA8dP_8DwTT7FT9VarjdPEtg	2024-06-30	group	net_current_assets	-82674012		I1,I2,I3,I4,employees:sum of 5	1	
+leeds-united-fc	leeds-united-fc__2	cCzUdgtQxcLPLA2OK15SA8dP_8DwTT7FT9VarjdPEtg	2024-06-30	group	total_assets_less_current_liabilities	78214127		I1,I2,I3,I4,employees:sum of 5	1	
+leeds-united-fc	leeds-united-fc__2	cCzUdgtQxcLPLA2OK15SA8dP_8DwTT7FT9VarjdPEtg	2024-06-30	company	creditors_after_year	91944318		I1,I2,I3,I4	1	
+leeds-united-fc	leeds-united-fc__2	cCzUdgtQxcLPLA2OK15SA8dP_8DwTT7FT9VarjdPEtg	2024-06-30	company	creditors_within_year	195511182		I1,I2,I3,I4	1	
+leeds-united-fc	leeds-united-fc__2	cCzUdgtQxcLPLA2OK15SA8dP_8DwTT7FT9VarjdPEtg	2024-06-30	company	current_assets	97433398		I1,I2,I3,I4	1	
+leeds-united-fc	leeds-united-fc__2	cCzUdgtQxcLPLA2OK15SA8dP_8DwTT7FT9VarjdPEtg	2024-06-30	company	fixed_assets	162179913		I1,I2,I3,I4	1	
+leeds-united-fc	leeds-united-fc__2	cCzUdgtQxcLPLA2OK15SA8dP_8DwTT7FT9VarjdPEtg	2024-06-30	company	net_assets	-27842189		I1,I2,I3,I4	1	
+leeds-united-fc	leeds-united-fc__2	cCzUdgtQxcLPLA2OK15SA8dP_8DwTT7FT9VarjdPEtg	2024-06-30	company	net_current_assets	-98077784		I1,I2,I3,I4	1	
+leeds-united-fc	leeds-united-fc__2	cCzUdgtQxcLPLA2OK15SA8dP_8DwTT7FT9VarjdPEtg	2024-06-30	company	total_assets_less_current_liabilities	64102129		I1,I2,I3,I4	1	
+leicester-city-fc	leicester-city-fc__2	7ujno_p2awl9gxxsmXPhqdR2F1v-WTyffzptdVJNMv8	2024-06-30	document	_disclosure	full				
+leicester-city-fc	leicester-city-fc__2	7ujno_p2awl9gxxsmXPhqdR2F1v-WTyffzptdVJNMv8	2024-06-30	document	_pnl_withheld					
+leicester-city-fc	leicester-city-fc__2	7ujno_p2awl9gxxsmXPhqdR2F1v-WTyffzptdVJNMv8	2024-06-30	document	_going_concern					
+leicester-city-fc	leicester-city-fc__2	7ujno_p2awl9gxxsmXPhqdR2F1v-WTyffzptdVJNMv8	2024-06-30	group	cash	7088000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+leicester-city-fc	leicester-city-fc__2	7ujno_p2awl9gxxsmXPhqdR2F1v-WTyffzptdVJNMv8	2024-06-30	group	creditors_within_year	257231000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+leicester-city-fc	leicester-city-fc__2	7ujno_p2awl9gxxsmXPhqdR2F1v-WTyffzptdVJNMv8	2024-06-30	group	current_assets	129865000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+leicester-city-fc	leicester-city-fc__2	7ujno_p2awl9gxxsmXPhqdR2F1v-WTyffzptdVJNMv8	2024-06-30	group	debtors	120809000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+leicester-city-fc	leicester-city-fc__2	7ujno_p2awl9gxxsmXPhqdR2F1v-WTyffzptdVJNMv8	2024-06-30	group	employees	505		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+leicester-city-fc	leicester-city-fc__2	7ujno_p2awl9gxxsmXPhqdR2F1v-WTyffzptdVJNMv8	2024-06-30	group	fixed_assets	309270000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+leicester-city-fc	leicester-city-fc__2	7ujno_p2awl9gxxsmXPhqdR2F1v-WTyffzptdVJNMv8	2024-06-30	group	intangible_assets	107061000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+leicester-city-fc	leicester-city-fc__2	7ujno_p2awl9gxxsmXPhqdR2F1v-WTyffzptdVJNMv8	2024-06-30	group	net_assets	57084000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+leicester-city-fc	leicester-city-fc__2	7ujno_p2awl9gxxsmXPhqdR2F1v-WTyffzptdVJNMv8	2024-06-30	group	net_current_assets	-127366000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+leicester-city-fc	leicester-city-fc__2	7ujno_p2awl9gxxsmXPhqdR2F1v-WTyffzptdVJNMv8	2024-06-30	group	share_capital	306993000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+leicester-city-fc	leicester-city-fc__2	7ujno_p2awl9gxxsmXPhqdR2F1v-WTyffzptdVJNMv8	2024-06-30	group	staff_costs	107164000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+leicester-city-fc	leicester-city-fc__2	7ujno_p2awl9gxxsmXPhqdR2F1v-WTyffzptdVJNMv8	2024-06-30	group	tangible_assets	202209000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+leicester-city-fc	leicester-city-fc__2	7ujno_p2awl9gxxsmXPhqdR2F1v-WTyffzptdVJNMv8	2024-06-30	group	total_assets_less_current_liabilities	181904000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+leicester-city-fc	leicester-city-fc__2	7ujno_p2awl9gxxsmXPhqdR2F1v-WTyffzptdVJNMv8	2024-06-30	company	cash	6997000		I1,I2,I3,I4	1000	
+leicester-city-fc	leicester-city-fc__2	7ujno_p2awl9gxxsmXPhqdR2F1v-WTyffzptdVJNMv8	2024-06-30	company	creditors_within_year	256580000		I1,I2,I3,I4	1000	
+leicester-city-fc	leicester-city-fc__2	7ujno_p2awl9gxxsmXPhqdR2F1v-WTyffzptdVJNMv8	2024-06-30	company	current_assets	129411000		I1,I2,I3,I4	1000	
+leicester-city-fc	leicester-city-fc__2	7ujno_p2awl9gxxsmXPhqdR2F1v-WTyffzptdVJNMv8	2024-06-30	company	debtors	120446000		I1,I2,I3,I4	1000	
+leicester-city-fc	leicester-city-fc__2	7ujno_p2awl9gxxsmXPhqdR2F1v-WTyffzptdVJNMv8	2024-06-30	company	fixed_assets	309163000		I1,I2,I3,I4	1000	
+leicester-city-fc	leicester-city-fc__2	7ujno_p2awl9gxxsmXPhqdR2F1v-WTyffzptdVJNMv8	2024-06-30	company	intangible_assets	106985000		I1,I2,I3,I4	1000	
+leicester-city-fc	leicester-city-fc__2	7ujno_p2awl9gxxsmXPhqdR2F1v-WTyffzptdVJNMv8	2024-06-30	company	net_assets	57174000		I1,I2,I3,I4	1000	
+leicester-city-fc	leicester-city-fc__2	7ujno_p2awl9gxxsmXPhqdR2F1v-WTyffzptdVJNMv8	2024-06-30	company	net_current_assets	-127169000		I1,I2,I3,I4	1000	
+leicester-city-fc	leicester-city-fc__2	7ujno_p2awl9gxxsmXPhqdR2F1v-WTyffzptdVJNMv8	2024-06-30	company	share_capital	306993000		I1,I2,I3,I4	1000	
+leicester-city-fc	leicester-city-fc__2	7ujno_p2awl9gxxsmXPhqdR2F1v-WTyffzptdVJNMv8	2024-06-30	company	tangible_assets	202178000		I1,I2,I3,I4	1000	
+leicester-city-fc	leicester-city-fc__2	7ujno_p2awl9gxxsmXPhqdR2F1v-WTyffzptdVJNMv8	2024-06-30	company	total_assets_less_current_liabilities	181994000		I1,I2,I3,I4	1000	
+lewes-fc	lewes-fc__1	S2kWZ5oesaO-etcOkie3eNvk3T2EEh0z4rc01e44RpY	2025-05-31	document	_disclosure	full				
+lewes-fc	lewes-fc__1	S2kWZ5oesaO-etcOkie3eNvk3T2EEh0z4rc01e44RpY	2025-05-31	document	_pnl_withheld					
+lewes-fc	lewes-fc__1	S2kWZ5oesaO-etcOkie3eNvk3T2EEh0z4rc01e44RpY	2025-05-31	document	_going_concern	Material uncertainty related to going concern . We draw attention to Note 1.2 in the financial statements, which indicates that the Company’s ability to continue as a going concern is dependent upon the successful completion of a proposed investment transaction and/or continued financial support from a director. As stated in Note 1.2, these events and conditions indicate that a material uncertain				
+lewes-fc	lewes-fc__1	S2kWZ5oesaO-etcOkie3eNvk3T2EEh0z4rc01e44RpY	2025-05-31	plain	cash	20696		I1,I2,I3,I4	1	
+lewes-fc	lewes-fc__1	S2kWZ5oesaO-etcOkie3eNvk3T2EEh0z4rc01e44RpY	2025-05-31	plain	creditors_after_year	374304		I1,I2,I3,I4	1	
+lewes-fc	lewes-fc__1	S2kWZ5oesaO-etcOkie3eNvk3T2EEh0z4rc01e44RpY	2025-05-31	plain	creditors_within_year	234094		I1,I2,I3,I4	1	
+lewes-fc	lewes-fc__1	S2kWZ5oesaO-etcOkie3eNvk3T2EEh0z4rc01e44RpY	2025-05-31	plain	current_assets	63464		I1,I2,I3,I4	1	
+lewes-fc	lewes-fc__1	S2kWZ5oesaO-etcOkie3eNvk3T2EEh0z4rc01e44RpY	2025-05-31	plain	debtors	39786		I1,I2,I3,I4	1	
+lewes-fc	lewes-fc__1	S2kWZ5oesaO-etcOkie3eNvk3T2EEh0z4rc01e44RpY	2025-05-31	plain	fixed_assets	334181		I1,I2,I3,I4	1	
+lewes-fc	lewes-fc__1	S2kWZ5oesaO-etcOkie3eNvk3T2EEh0z4rc01e44RpY	2025-05-31	plain	net_assets	-210753		I1,I2,I3,I4	1	
+lewes-fc	lewes-fc__1	S2kWZ5oesaO-etcOkie3eNvk3T2EEh0z4rc01e44RpY	2025-05-31	plain	net_current_assets	-170630		I1,I2,I3,I4	1	
+lewes-fc	lewes-fc__1	S2kWZ5oesaO-etcOkie3eNvk3T2EEh0z4rc01e44RpY	2025-05-31	plain	share_capital	400		I1,I2,I3,I4	1	
+lewes-fc	lewes-fc__1	S2kWZ5oesaO-etcOkie3eNvk3T2EEh0z4rc01e44RpY	2025-05-31	plain	tangible_assets	334181		I1,I2,I3,I4	1	
+lewes-fc	lewes-fc__1	S2kWZ5oesaO-etcOkie3eNvk3T2EEh0z4rc01e44RpY	2025-05-31	plain	total_assets_less_current_liabilities	163551		I1,I2,I3,I4	1	
+liverpool-fc	liverpool-fc__1	JKZPvs_rlllObRcY0ZELgLQkCBJwZS3LSrqawquw20o	2025-05-31	document	_disclosure	full				
+liverpool-fc	liverpool-fc__1	JKZPvs_rlllObRcY0ZELgLQkCBJwZS3LSrqawquw20o	2025-05-31	document	_pnl_withheld					
+liverpool-fc	liverpool-fc__1	JKZPvs_rlllObRcY0ZELgLQkCBJwZS3LSrqawquw20o	2025-05-31	document	_going_concern					
+liverpool-fc	liverpool-fc__1	JKZPvs_rlllObRcY0ZELgLQkCBJwZS3LSrqawquw20o	2025-05-31	group	creditors_within_year	490535000		I1,I2,I3,I4,employees:sum of 3	1000	
+liverpool-fc	liverpool-fc__1	JKZPvs_rlllObRcY0ZELgLQkCBJwZS3LSrqawquw20o	2025-05-31	group	current_assets	169155000		I1,I2,I3,I4,employees:sum of 3	1000	
+liverpool-fc	liverpool-fc__1	JKZPvs_rlllObRcY0ZELgLQkCBJwZS3LSrqawquw20o	2025-05-31	group	employees	1083		I1,I2,I3,I4,employees:sum of 3	1000	
+liverpool-fc	liverpool-fc__1	JKZPvs_rlllObRcY0ZELgLQkCBJwZS3LSrqawquw20o	2025-05-31	group	fixed_assets	646453000		I1,I2,I3,I4,employees:sum of 3	1000	
+liverpool-fc	liverpool-fc__1	JKZPvs_rlllObRcY0ZELgLQkCBJwZS3LSrqawquw20o	2025-05-31	group	intangible_assets	334025000		I1,I2,I3,I4,employees:sum of 3	1000	
+liverpool-fc	liverpool-fc__1	JKZPvs_rlllObRcY0ZELgLQkCBJwZS3LSrqawquw20o	2025-05-31	group	net_assets	159541000		I1,I2,I3,I4,employees:sum of 3	1000	
+liverpool-fc	liverpool-fc__1	JKZPvs_rlllObRcY0ZELgLQkCBJwZS3LSrqawquw20o	2025-05-31	group	net_current_assets	-321380000		I1,I2,I3,I4,employees:sum of 3	1000	
+liverpool-fc	liverpool-fc__1	JKZPvs_rlllObRcY0ZELgLQkCBJwZS3LSrqawquw20o	2025-05-31	group	share_capital	174000		I1,I2,I3,I4,employees:sum of 3	1000	
+liverpool-fc	liverpool-fc__1	JKZPvs_rlllObRcY0ZELgLQkCBJwZS3LSrqawquw20o	2025-05-31	group	tangible_assets	312428000		I1,I2,I3,I4,employees:sum of 3	1000	
+liverpool-fc	liverpool-fc__1	JKZPvs_rlllObRcY0ZELgLQkCBJwZS3LSrqawquw20o	2025-05-31	group	total_assets_less_current_liabilities	325073000		I1,I2,I3,I4,employees:sum of 3	1000	
+liverpool-fc	liverpool-fc__1	JKZPvs_rlllObRcY0ZELgLQkCBJwZS3LSrqawquw20o	2025-05-31	company	creditors_within_year	489631000		I1,I2,I3,I4	1000	
+liverpool-fc	liverpool-fc__1	JKZPvs_rlllObRcY0ZELgLQkCBJwZS3LSrqawquw20o	2025-05-31	company	current_assets	174826000		I1,I2,I3,I4	1000	
+liverpool-fc	liverpool-fc__1	JKZPvs_rlllObRcY0ZELgLQkCBJwZS3LSrqawquw20o	2025-05-31	company	fixed_assets	660888000		I1,I2,I3,I4	1000	
+liverpool-fc	liverpool-fc__1	JKZPvs_rlllObRcY0ZELgLQkCBJwZS3LSrqawquw20o	2025-05-31	company	intangible_assets	333792000		I1,I2,I3,I4	1000	
+liverpool-fc	liverpool-fc__1	JKZPvs_rlllObRcY0ZELgLQkCBJwZS3LSrqawquw20o	2025-05-31	company	net_assets	160556000		I1,I2,I3,I4	1000	
+liverpool-fc	liverpool-fc__1	JKZPvs_rlllObRcY0ZELgLQkCBJwZS3LSrqawquw20o	2025-05-31	company	net_current_assets	-314805000		I1,I2,I3,I4	1000	
+liverpool-fc	liverpool-fc__1	JKZPvs_rlllObRcY0ZELgLQkCBJwZS3LSrqawquw20o	2025-05-31	company	share_capital	174000		I1,I2,I3,I4	1000	
+liverpool-fc	liverpool-fc__1	JKZPvs_rlllObRcY0ZELgLQkCBJwZS3LSrqawquw20o	2025-05-31	company	tangible_assets	311206000		I1,I2,I3,I4	1000	
+liverpool-fc	liverpool-fc__1	JKZPvs_rlllObRcY0ZELgLQkCBJwZS3LSrqawquw20o	2025-05-31	company	total_assets_less_current_liabilities	346083000		I1,I2,I3,I4	1000	
+liverpool-fc	liverpool-fc__2	c2N3OZcswVeH0CAXdBhghrN15sGmRVTK7AZA0YUlmzs	2024-05-31	document	_disclosure	full				
+liverpool-fc	liverpool-fc__2	c2N3OZcswVeH0CAXdBhghrN15sGmRVTK7AZA0YUlmzs	2024-05-31	document	_pnl_withheld					
+liverpool-fc	liverpool-fc__2	c2N3OZcswVeH0CAXdBhghrN15sGmRVTK7AZA0YUlmzs	2024-05-31	document	_going_concern					
+liverpool-fc	liverpool-fc__2	c2N3OZcswVeH0CAXdBhghrN15sGmRVTK7AZA0YUlmzs	2024-05-31	group	creditors_within_year	508239000		I1,I2,I3,I4	1000	
+liverpool-fc	liverpool-fc__2	c2N3OZcswVeH0CAXdBhghrN15sGmRVTK7AZA0YUlmzs	2024-05-31	group	current_assets	164211000		I1,I2,I3,I4	1000	
+liverpool-fc	liverpool-fc__2	c2N3OZcswVeH0CAXdBhghrN15sGmRVTK7AZA0YUlmzs	2024-05-31	group	fixed_assets	664117000		I1,I2,I3,I4	1000	
+liverpool-fc	liverpool-fc__2	c2N3OZcswVeH0CAXdBhghrN15sGmRVTK7AZA0YUlmzs	2024-05-31	group	intangible_assets	353706000		I1,I2,I3,I4	1000	
+liverpool-fc	liverpool-fc__2	c2N3OZcswVeH0CAXdBhghrN15sGmRVTK7AZA0YUlmzs	2024-05-31	group	net_assets	151268000		I1,I2,I3,I4	1000	
+liverpool-fc	liverpool-fc__2	c2N3OZcswVeH0CAXdBhghrN15sGmRVTK7AZA0YUlmzs	2024-05-31	group	net_current_assets	-344028000		I1,I2,I3,I4	1000	
+liverpool-fc	liverpool-fc__2	c2N3OZcswVeH0CAXdBhghrN15sGmRVTK7AZA0YUlmzs	2024-05-31	group	share_capital	174000		I1,I2,I3,I4	1000	
+liverpool-fc	liverpool-fc__2	c2N3OZcswVeH0CAXdBhghrN15sGmRVTK7AZA0YUlmzs	2024-05-31	group	tangible_assets	310411000		I1,I2,I3,I4	1000	
+liverpool-fc	liverpool-fc__2	c2N3OZcswVeH0CAXdBhghrN15sGmRVTK7AZA0YUlmzs	2024-05-31	group	total_assets_less_current_liabilities	320089000		I1,I2,I3,I4	1000	
+liverpool-fc	liverpool-fc__2	c2N3OZcswVeH0CAXdBhghrN15sGmRVTK7AZA0YUlmzs	2024-05-31	company	creditors_within_year	507291000		I1,I2,I3,I4	1000	
+liverpool-fc	liverpool-fc__2	c2N3OZcswVeH0CAXdBhghrN15sGmRVTK7AZA0YUlmzs	2024-05-31	company	current_assets	168183000		I1,I2,I3,I4	1000	
+liverpool-fc	liverpool-fc__2	c2N3OZcswVeH0CAXdBhghrN15sGmRVTK7AZA0YUlmzs	2024-05-31	company	fixed_assets	679515000		I1,I2,I3,I4	1000	
+liverpool-fc	liverpool-fc__2	c2N3OZcswVeH0CAXdBhghrN15sGmRVTK7AZA0YUlmzs	2024-05-31	company	intangible_assets	353600000		I1,I2,I3,I4	1000	
+liverpool-fc	liverpool-fc__2	c2N3OZcswVeH0CAXdBhghrN15sGmRVTK7AZA0YUlmzs	2024-05-31	company	net_assets	151592000		I1,I2,I3,I4	1000	
+liverpool-fc	liverpool-fc__2	c2N3OZcswVeH0CAXdBhghrN15sGmRVTK7AZA0YUlmzs	2024-05-31	company	net_current_assets	-339108000		I1,I2,I3,I4	1000	
+liverpool-fc	liverpool-fc__2	c2N3OZcswVeH0CAXdBhghrN15sGmRVTK7AZA0YUlmzs	2024-05-31	company	share_capital	174000		I1,I2,I3,I4	1000	
+liverpool-fc	liverpool-fc__2	c2N3OZcswVeH0CAXdBhghrN15sGmRVTK7AZA0YUlmzs	2024-05-31	company	tangible_assets	310025000		I1,I2,I3,I4	1000	
+liverpool-fc	liverpool-fc__2	c2N3OZcswVeH0CAXdBhghrN15sGmRVTK7AZA0YUlmzs	2024-05-31	company	total_assets_less_current_liabilities	340407000		I1,I2,I3,I4	1000	
+luton-town-fc	luton-town-fc__2	OtwdQLT1i3wunEa8Rrx5-rBCKH8cVVuDsiOSl1Nyfqg	2024-06-30	document	_disclosure	full				
+luton-town-fc	luton-town-fc__2	OtwdQLT1i3wunEa8Rrx5-rBCKH8cVVuDsiOSl1Nyfqg	2024-06-30	document	_pnl_withheld					
+luton-town-fc	luton-town-fc__2	OtwdQLT1i3wunEa8Rrx5-rBCKH8cVVuDsiOSl1Nyfqg	2024-06-30	document	_going_concern					
+luton-town-fc	luton-town-fc__2	OtwdQLT1i3wunEa8Rrx5-rBCKH8cVVuDsiOSl1Nyfqg	2024-06-30	plain	creditors_after_year	1000000		I1,I2,I3,I4,employees:sum of 3	1	
+luton-town-fc	luton-town-fc__2	OtwdQLT1i3wunEa8Rrx5-rBCKH8cVVuDsiOSl1Nyfqg	2024-06-30	plain	creditors_within_year	16993014		I1,I2,I3,I4,employees:sum of 3	1	
+luton-town-fc	luton-town-fc__2	OtwdQLT1i3wunEa8Rrx5-rBCKH8cVVuDsiOSl1Nyfqg	2024-06-30	plain	current_assets	21861077		I1,I2,I3,I4,employees:sum of 3	1	
+luton-town-fc	luton-town-fc__2	OtwdQLT1i3wunEa8Rrx5-rBCKH8cVVuDsiOSl1Nyfqg	2024-06-30	plain	employees	530		I1,I2,I3,I4,employees:sum of 3	1	
+luton-town-fc	luton-town-fc__2	OtwdQLT1i3wunEa8Rrx5-rBCKH8cVVuDsiOSl1Nyfqg	2024-06-30	plain	fixed_assets	24011749		I1,I2,I3,I4,employees:sum of 3	1	
+luton-town-fc	luton-town-fc__2	OtwdQLT1i3wunEa8Rrx5-rBCKH8cVVuDsiOSl1Nyfqg	2024-06-30	plain	intangible_assets	22293438		I1,I2,I3,I4,employees:sum of 3	1	
+luton-town-fc	luton-town-fc__2	OtwdQLT1i3wunEa8Rrx5-rBCKH8cVVuDsiOSl1Nyfqg	2024-06-30	plain	net_assets	27620909		I1,I2,I3,I4,employees:sum of 3	1	
+luton-town-fc	luton-town-fc__2	OtwdQLT1i3wunEa8Rrx5-rBCKH8cVVuDsiOSl1Nyfqg	2024-06-30	plain	net_current_assets	4868063		I1,I2,I3,I4,employees:sum of 3	1	
+luton-town-fc	luton-town-fc__2	OtwdQLT1i3wunEa8Rrx5-rBCKH8cVVuDsiOSl1Nyfqg	2024-06-30	plain	share_capital	18145003		I1,I2,I3,I4,employees:sum of 3	1	
+luton-town-fc	luton-town-fc__2	OtwdQLT1i3wunEa8Rrx5-rBCKH8cVVuDsiOSl1Nyfqg	2024-06-30	plain	tangible_assets	1718311		I1,I2,I3,I4,employees:sum of 3	1	
+luton-town-fc	luton-town-fc__2	OtwdQLT1i3wunEa8Rrx5-rBCKH8cVVuDsiOSl1Nyfqg	2024-06-30	plain	total_assets_less_current_liabilities	28879812		I1,I2,I3,I4,employees:sum of 3	1	
+malvern-town-fc	malvern-town-fc__1	-lQ0Xt7SCI_2b6FJoObs4WWyCj6YD0JkmWfFZKAVZRM	2025-06-30	document	_disclosure	small_company				
+malvern-town-fc	malvern-town-fc__1	-lQ0Xt7SCI_2b6FJoObs4WWyCj6YD0JkmWfFZKAVZRM	2025-06-30	document	_pnl_withheld					
+malvern-town-fc	malvern-town-fc__1	-lQ0Xt7SCI_2b6FJoObs4WWyCj6YD0JkmWfFZKAVZRM	2025-06-30	document	_going_concern					
+malvern-town-fc	malvern-town-fc__1	-lQ0Xt7SCI_2b6FJoObs4WWyCj6YD0JkmWfFZKAVZRM	2025-06-30	plain	cash	2426		I1,I2,I3	1	
+malvern-town-fc	malvern-town-fc__1	-lQ0Xt7SCI_2b6FJoObs4WWyCj6YD0JkmWfFZKAVZRM	2025-06-30	plain	creditors_after_year	0		I1,I2,I3	1	
+malvern-town-fc	malvern-town-fc__1	-lQ0Xt7SCI_2b6FJoObs4WWyCj6YD0JkmWfFZKAVZRM	2025-06-30	plain	creditors_within_year	25686		I1,I2,I3	1	
+malvern-town-fc	malvern-town-fc__1	-lQ0Xt7SCI_2b6FJoObs4WWyCj6YD0JkmWfFZKAVZRM	2025-06-30	plain	current_assets	11374		I1,I2,I3	1	
+malvern-town-fc	malvern-town-fc__1	-lQ0Xt7SCI_2b6FJoObs4WWyCj6YD0JkmWfFZKAVZRM	2025-06-30	plain	debtors	5448		I1,I2,I3	1	
+malvern-town-fc	malvern-town-fc__1	-lQ0Xt7SCI_2b6FJoObs4WWyCj6YD0JkmWfFZKAVZRM	2025-06-30	plain	fixed_assets	6601		I1,I2,I3	1	
+malvern-town-fc	malvern-town-fc__1	-lQ0Xt7SCI_2b6FJoObs4WWyCj6YD0JkmWfFZKAVZRM	2025-06-30	plain	net_assets	-7711		I1,I2,I3	1	
+malvern-town-fc	malvern-town-fc__1	-lQ0Xt7SCI_2b6FJoObs4WWyCj6YD0JkmWfFZKAVZRM	2025-06-30	plain	net_current_assets	-14312		I1,I2,I3	1	
+malvern-town-fc	malvern-town-fc__1	-lQ0Xt7SCI_2b6FJoObs4WWyCj6YD0JkmWfFZKAVZRM	2025-06-30	plain	tangible_assets	6601		I1,I2,I3	1	
+malvern-town-fc	malvern-town-fc__1	-lQ0Xt7SCI_2b6FJoObs4WWyCj6YD0JkmWfFZKAVZRM	2025-06-30	plain	total_assets_less_current_liabilities	-7711		I1,I2,I3	1	
+malvern-town-fc	malvern-town-fc__2	gmDDHjz6TtLVA_yS0XrtJ7hBiX1hNwEBk4sJ3-7pXfo	2025-06-30	document	_disclosure	small_company				
+malvern-town-fc	malvern-town-fc__2	gmDDHjz6TtLVA_yS0XrtJ7hBiX1hNwEBk4sJ3-7pXfo	2025-06-30	document	_pnl_withheld					
+malvern-town-fc	malvern-town-fc__2	gmDDHjz6TtLVA_yS0XrtJ7hBiX1hNwEBk4sJ3-7pXfo	2025-06-30	document	_going_concern					
+malvern-town-fc	malvern-town-fc__2	gmDDHjz6TtLVA_yS0XrtJ7hBiX1hNwEBk4sJ3-7pXfo	2025-06-30	plain	cash	2426		I1,I2,I3,I4	1	
+malvern-town-fc	malvern-town-fc__2	gmDDHjz6TtLVA_yS0XrtJ7hBiX1hNwEBk4sJ3-7pXfo	2025-06-30	plain	creditors_after_year	0		I1,I2,I3,I4	1	
+malvern-town-fc	malvern-town-fc__2	gmDDHjz6TtLVA_yS0XrtJ7hBiX1hNwEBk4sJ3-7pXfo	2025-06-30	plain	creditors_within_year	25686		I1,I2,I3,I4	1	
+malvern-town-fc	malvern-town-fc__2	gmDDHjz6TtLVA_yS0XrtJ7hBiX1hNwEBk4sJ3-7pXfo	2025-06-30	plain	current_assets	11374		I1,I2,I3,I4	1	
+malvern-town-fc	malvern-town-fc__2	gmDDHjz6TtLVA_yS0XrtJ7hBiX1hNwEBk4sJ3-7pXfo	2025-06-30	plain	debtors	5448		I1,I2,I3,I4	1	
+malvern-town-fc	malvern-town-fc__2	gmDDHjz6TtLVA_yS0XrtJ7hBiX1hNwEBk4sJ3-7pXfo	2025-06-30	plain	fixed_assets	6601		I1,I2,I3,I4	1	
+malvern-town-fc	malvern-town-fc__2	gmDDHjz6TtLVA_yS0XrtJ7hBiX1hNwEBk4sJ3-7pXfo	2025-06-30	plain	net_assets	-7711		I1,I2,I3,I4	1	
+malvern-town-fc	malvern-town-fc__2	gmDDHjz6TtLVA_yS0XrtJ7hBiX1hNwEBk4sJ3-7pXfo	2025-06-30	plain	net_current_assets	-14312		I1,I2,I3,I4	1	
+malvern-town-fc	malvern-town-fc__2	gmDDHjz6TtLVA_yS0XrtJ7hBiX1hNwEBk4sJ3-7pXfo	2025-06-30	plain	share_capital	85337		I1,I2,I3,I4	1	
+malvern-town-fc	malvern-town-fc__2	gmDDHjz6TtLVA_yS0XrtJ7hBiX1hNwEBk4sJ3-7pXfo	2025-06-30	plain	tangible_assets	6601		I1,I2,I3,I4	1	
+malvern-town-fc	malvern-town-fc__2	gmDDHjz6TtLVA_yS0XrtJ7hBiX1hNwEBk4sJ3-7pXfo	2025-06-30	plain	total_assets_less_current_liabilities	-7711		I1,I2,I3,I4	1	
+manchester-city-fc	manchester-city-fc__1	WJqzE97ADy9Wln0S8O5NgZc1aNhITsGpm4k-lmj3OYg	2025-06-30	document	_disclosure	small_company				
+manchester-city-fc	manchester-city-fc__1	WJqzE97ADy9Wln0S8O5NgZc1aNhITsGpm4k-lmj3OYg	2025-06-30	document	_pnl_withheld					
+manchester-city-fc	manchester-city-fc__1	WJqzE97ADy9Wln0S8O5NgZc1aNhITsGpm4k-lmj3OYg	2025-06-30	document	_going_concern					
+manchester-city-fc	manchester-city-fc__1	WJqzE97ADy9Wln0S8O5NgZc1aNhITsGpm4k-lmj3OYg	2025-06-30	plain	fixed_assets	1259972000		I2,I3,I4	1000	
+manchester-city-fc	manchester-city-fc__1	WJqzE97ADy9Wln0S8O5NgZc1aNhITsGpm4k-lmj3OYg	2025-06-30	plain	net_assets	858374000		I2,I3,I4	1000	
+manchester-city-fc	manchester-city-fc__1	WJqzE97ADy9Wln0S8O5NgZc1aNhITsGpm4k-lmj3OYg	2025-06-30	plain	net_current_assets	21490000		I2,I3,I4	1000	
+manchester-city-fc	manchester-city-fc__1	WJqzE97ADy9Wln0S8O5NgZc1aNhITsGpm4k-lmj3OYg	2025-06-30	plain	total_assets_less_current_liabilities	1281462000		I2,I3,I4	1000	
+manchester-city-fc	manchester-city-fc__2	zOP14F-fIo7zZC2OTFloR2Q9J6NMp3VXDVxpvSoJ6UY	2024-06-30	document	_disclosure	small_company				
+manchester-city-fc	manchester-city-fc__2	zOP14F-fIo7zZC2OTFloR2Q9J6NMp3VXDVxpvSoJ6UY	2024-06-30	document	_pnl_withheld					
+manchester-city-fc	manchester-city-fc__2	zOP14F-fIo7zZC2OTFloR2Q9J6NMp3VXDVxpvSoJ6UY	2024-06-30	document	_going_concern					
+manchester-city-fc	manchester-city-fc__2	zOP14F-fIo7zZC2OTFloR2Q9J6NMp3VXDVxpvSoJ6UY	2024-06-30	plain	employees	611		I2,I3,I4,employees:sum of 2	1000	
+manchester-city-fc	manchester-city-fc__2	zOP14F-fIo7zZC2OTFloR2Q9J6NMp3VXDVxpvSoJ6UY	2024-06-30	plain	fixed_assets	1020707000		I2,I3,I4,employees:sum of 2	1000	
+manchester-city-fc	manchester-city-fc__2	zOP14F-fIo7zZC2OTFloR2Q9J6NMp3VXDVxpvSoJ6UY	2024-06-30	plain	net_assets	864645000		I2,I3,I4,employees:sum of 2	1000	
+manchester-city-fc	manchester-city-fc__2	zOP14F-fIo7zZC2OTFloR2Q9J6NMp3VXDVxpvSoJ6UY	2024-06-30	plain	net_current_assets	36944000		I2,I3,I4,employees:sum of 2	1000	
+manchester-city-fc	manchester-city-fc__2	zOP14F-fIo7zZC2OTFloR2Q9J6NMp3VXDVxpvSoJ6UY	2024-06-30	plain	share_capital	1339575000		I2,I3,I4,employees:sum of 2	1000	
+manchester-city-fc	manchester-city-fc__2	zOP14F-fIo7zZC2OTFloR2Q9J6NMp3VXDVxpvSoJ6UY	2024-06-30	plain	total_assets_less_current_liabilities	1057651000		I2,I3,I4,employees:sum of 2	1000	
+middlesbrough-fc	middlesbrough-fc__1	HOOAmiOTEt49ca0mJcy2nNKv-6DMYwM7K87JhNoYVms	2025-06-30	document	_disclosure	full				
+middlesbrough-fc	middlesbrough-fc__1	HOOAmiOTEt49ca0mJcy2nNKv-6DMYwM7K87JhNoYVms	2025-06-30	document	_pnl_withheld					
+middlesbrough-fc	middlesbrough-fc__1	HOOAmiOTEt49ca0mJcy2nNKv-6DMYwM7K87JhNoYVms	2025-06-30	document	_going_concern					
+middlesbrough-fc	middlesbrough-fc__1	HOOAmiOTEt49ca0mJcy2nNKv-6DMYwM7K87JhNoYVms	2025-06-30	plain	cash	164000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+middlesbrough-fc	middlesbrough-fc__1	HOOAmiOTEt49ca0mJcy2nNKv-6DMYwM7K87JhNoYVms	2025-06-30	plain	creditors_after_year	8249000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+middlesbrough-fc	middlesbrough-fc__1	HOOAmiOTEt49ca0mJcy2nNKv-6DMYwM7K87JhNoYVms	2025-06-30	plain	creditors_within_year	62220000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+middlesbrough-fc	middlesbrough-fc__1	HOOAmiOTEt49ca0mJcy2nNKv-6DMYwM7K87JhNoYVms	2025-06-30	plain	current_assets	21975000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+middlesbrough-fc	middlesbrough-fc__1	HOOAmiOTEt49ca0mJcy2nNKv-6DMYwM7K87JhNoYVms	2025-06-30	plain	debtors	20828000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+middlesbrough-fc	middlesbrough-fc__1	HOOAmiOTEt49ca0mJcy2nNKv-6DMYwM7K87JhNoYVms	2025-06-30	plain	employees	266		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+middlesbrough-fc	middlesbrough-fc__1	HOOAmiOTEt49ca0mJcy2nNKv-6DMYwM7K87JhNoYVms	2025-06-30	plain	fixed_assets	77638000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+middlesbrough-fc	middlesbrough-fc__1	HOOAmiOTEt49ca0mJcy2nNKv-6DMYwM7K87JhNoYVms	2025-06-30	plain	intangible_assets	25502000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+middlesbrough-fc	middlesbrough-fc__1	HOOAmiOTEt49ca0mJcy2nNKv-6DMYwM7K87JhNoYVms	2025-06-30	plain	net_assets	1871000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+middlesbrough-fc	middlesbrough-fc__1	HOOAmiOTEt49ca0mJcy2nNKv-6DMYwM7K87JhNoYVms	2025-06-30	plain	net_current_assets	-40245000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+middlesbrough-fc	middlesbrough-fc__1	HOOAmiOTEt49ca0mJcy2nNKv-6DMYwM7K87JhNoYVms	2025-06-30	plain	share_capital	65056000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+middlesbrough-fc	middlesbrough-fc__1	HOOAmiOTEt49ca0mJcy2nNKv-6DMYwM7K87JhNoYVms	2025-06-30	plain	staff_costs	36360000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+middlesbrough-fc	middlesbrough-fc__1	HOOAmiOTEt49ca0mJcy2nNKv-6DMYwM7K87JhNoYVms	2025-06-30	plain	tangible_assets	52136000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+middlesbrough-fc	middlesbrough-fc__1	HOOAmiOTEt49ca0mJcy2nNKv-6DMYwM7K87JhNoYVms	2025-06-30	plain	total_assets_less_current_liabilities	37393000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+middlesbrough-fc	middlesbrough-fc__2	wObvgVLIJ-wGB7ZgnhOFBRO22YNdbJC2ArBKwOb2Nws	2024-06-30	document	_disclosure	full				
+middlesbrough-fc	middlesbrough-fc__2	wObvgVLIJ-wGB7ZgnhOFBRO22YNdbJC2ArBKwOb2Nws	2024-06-30	document	_pnl_withheld					
+middlesbrough-fc	middlesbrough-fc__2	wObvgVLIJ-wGB7ZgnhOFBRO22YNdbJC2ArBKwOb2Nws	2024-06-30	document	_going_concern					
+middlesbrough-fc	middlesbrough-fc__2	wObvgVLIJ-wGB7ZgnhOFBRO22YNdbJC2ArBKwOb2Nws	2024-06-30	plain	cash	344000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+middlesbrough-fc	middlesbrough-fc__2	wObvgVLIJ-wGB7ZgnhOFBRO22YNdbJC2ArBKwOb2Nws	2024-06-30	plain	creditors_after_year	12274000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+middlesbrough-fc	middlesbrough-fc__2	wObvgVLIJ-wGB7ZgnhOFBRO22YNdbJC2ArBKwOb2Nws	2024-06-30	plain	creditors_within_year	46283000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+middlesbrough-fc	middlesbrough-fc__2	wObvgVLIJ-wGB7ZgnhOFBRO22YNdbJC2ArBKwOb2Nws	2024-06-30	plain	current_assets	16472000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+middlesbrough-fc	middlesbrough-fc__2	wObvgVLIJ-wGB7ZgnhOFBRO22YNdbJC2ArBKwOb2Nws	2024-06-30	plain	debtors	15256000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+middlesbrough-fc	middlesbrough-fc__2	wObvgVLIJ-wGB7ZgnhOFBRO22YNdbJC2ArBKwOb2Nws	2024-06-30	plain	employees	254		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+middlesbrough-fc	middlesbrough-fc__2	wObvgVLIJ-wGB7ZgnhOFBRO22YNdbJC2ArBKwOb2Nws	2024-06-30	plain	fixed_assets	72444000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+middlesbrough-fc	middlesbrough-fc__2	wObvgVLIJ-wGB7ZgnhOFBRO22YNdbJC2ArBKwOb2Nws	2024-06-30	plain	net_assets	10055000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+middlesbrough-fc	middlesbrough-fc__2	wObvgVLIJ-wGB7ZgnhOFBRO22YNdbJC2ArBKwOb2Nws	2024-06-30	plain	net_current_assets	-29811000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+middlesbrough-fc	middlesbrough-fc__2	wObvgVLIJ-wGB7ZgnhOFBRO22YNdbJC2ArBKwOb2Nws	2024-06-30	plain	share_capital	65056000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+middlesbrough-fc	middlesbrough-fc__2	wObvgVLIJ-wGB7ZgnhOFBRO22YNdbJC2ArBKwOb2Nws	2024-06-30	plain	staff_costs	31394000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+middlesbrough-fc	middlesbrough-fc__2	wObvgVLIJ-wGB7ZgnhOFBRO22YNdbJC2ArBKwOb2Nws	2024-06-30	plain	total_assets_less_current_liabilities	42633000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+millwall-fc	millwall-fc__2	0zaABCdSbU-2IhB8IOw5E5WxtDn_fr5jXYJRe2QthsA	2024-06-30	document	_disclosure	full				
+millwall-fc	millwall-fc__2	0zaABCdSbU-2IhB8IOw5E5WxtDn_fr5jXYJRe2QthsA	2024-06-30	document	_pnl_withheld					
+millwall-fc	millwall-fc__2	0zaABCdSbU-2IhB8IOw5E5WxtDn_fr5jXYJRe2QthsA	2024-06-30	document	_going_concern	Material uncertainty related to going concern We draw attention to note note | to the Group’s and Parent Company's financial statements, which describes how the ability of the Group and Parent Company to continue as a going concern is dependent on additional funding from the shareholder that is no guaranteed. As stated in note note I, these events or conditions indicate that a material uncertaint				
+millwall-fc	millwall-fc__2	0zaABCdSbU-2IhB8IOw5E5WxtDn_fr5jXYJRe2QthsA	2024-06-30	company	creditors_after_year	9667000		I2,I3,I4,employees:sentence	1000	
+millwall-fc	millwall-fc__2	0zaABCdSbU-2IhB8IOw5E5WxtDn_fr5jXYJRe2QthsA	2024-06-30	company	employees	8		I2,I3,I4,employees:sentence	1000	
+millwall-fc	millwall-fc__2	0zaABCdSbU-2IhB8IOw5E5WxtDn_fr5jXYJRe2QthsA	2024-06-30	company	fixed_assets	11518000		I2,I3,I4,employees:sentence	1000	
+millwall-fc	millwall-fc__2	0zaABCdSbU-2IhB8IOw5E5WxtDn_fr5jXYJRe2QthsA	2024-06-30	company	net_assets	1696000		I2,I3,I4,employees:sentence	1000	
+millwall-fc	millwall-fc__2	0zaABCdSbU-2IhB8IOw5E5WxtDn_fr5jXYJRe2QthsA	2024-06-30	company	net_current_assets	-155000		I2,I3,I4,employees:sentence	1000	
+millwall-fc	millwall-fc__2	0zaABCdSbU-2IhB8IOw5E5WxtDn_fr5jXYJRe2QthsA	2024-06-30	company	total_assets_less_current_liabilities	11363000		I2,I3,I4,employees:sentence	1000	
+newcastle-united-fc	newcastle-united-fc__1	YsXD_RyttJGOxK9S_prG5hiMkH_9eTNqiwFXOcFvIvA	2025-06-30	document	_disclosure	full				
+newcastle-united-fc	newcastle-united-fc__1	YsXD_RyttJGOxK9S_prG5hiMkH_9eTNqiwFXOcFvIvA	2025-06-30	document	_pnl_withheld					
+newcastle-united-fc	newcastle-united-fc__1	YsXD_RyttJGOxK9S_prG5hiMkH_9eTNqiwFXOcFvIvA	2025-06-30	document	_going_concern					
+newcastle-united-fc	newcastle-united-fc__1	YsXD_RyttJGOxK9S_prG5hiMkH_9eTNqiwFXOcFvIvA	2025-06-30	group	creditors_within_year	238028000		I1,I2,I3,I4,employees:sum of 2	1000	
+newcastle-united-fc	newcastle-united-fc__1	YsXD_RyttJGOxK9S_prG5hiMkH_9eTNqiwFXOcFvIvA	2025-06-30	group	current_assets	305230000		I1,I2,I3,I4,employees:sum of 2	1000	
+newcastle-united-fc	newcastle-united-fc__1	YsXD_RyttJGOxK9S_prG5hiMkH_9eTNqiwFXOcFvIvA	2025-06-30	group	employees	614		I1,I2,I3,I4,employees:sum of 2	1000	
+newcastle-united-fc	newcastle-united-fc__1	YsXD_RyttJGOxK9S_prG5hiMkH_9eTNqiwFXOcFvIvA	2025-06-30	group	fixed_assets	318905000		I1,I2,I3,I4,employees:sum of 2	1000	
+newcastle-united-fc	newcastle-united-fc__1	YsXD_RyttJGOxK9S_prG5hiMkH_9eTNqiwFXOcFvIvA	2025-06-30	group	intangible_assets	281182000		I1,I2,I3,I4,employees:sum of 2	1000	
+newcastle-united-fc	newcastle-united-fc__1	YsXD_RyttJGOxK9S_prG5hiMkH_9eTNqiwFXOcFvIvA	2025-06-30	group	net_assets	333000000		I1,I2,I3,I4,employees:sum of 2	1000	
+newcastle-united-fc	newcastle-united-fc__1	YsXD_RyttJGOxK9S_prG5hiMkH_9eTNqiwFXOcFvIvA	2025-06-30	group	net_current_assets	67202000		I1,I2,I3,I4,employees:sum of 2	1000	
+newcastle-united-fc	newcastle-united-fc__1	YsXD_RyttJGOxK9S_prG5hiMkH_9eTNqiwFXOcFvIvA	2025-06-30	group	tangible_assets	37723000		I1,I2,I3,I4,employees:sum of 2	1000	
+newcastle-united-fc	newcastle-united-fc__1	YsXD_RyttJGOxK9S_prG5hiMkH_9eTNqiwFXOcFvIvA	2025-06-30	group	total_assets_less_current_liabilities	386107000		I1,I2,I3,I4,employees:sum of 2	1000	
+newcastle-united-fc	newcastle-united-fc__1	YsXD_RyttJGOxK9S_prG5hiMkH_9eTNqiwFXOcFvIvA	2025-06-30	company	creditors_within_year	1233000		I1,I2,I3,I4	1000	
+newcastle-united-fc	newcastle-united-fc__1	YsXD_RyttJGOxK9S_prG5hiMkH_9eTNqiwFXOcFvIvA	2025-06-30	company	current_assets	10018000		I1,I2,I3,I4	1000	
+newcastle-united-fc	newcastle-united-fc__1	YsXD_RyttJGOxK9S_prG5hiMkH_9eTNqiwFXOcFvIvA	2025-06-30	company	debtors	10018000		I1,I2,I3,I4	1000	
+newcastle-united-fc	newcastle-united-fc__1	YsXD_RyttJGOxK9S_prG5hiMkH_9eTNqiwFXOcFvIvA	2025-06-30	company	fixed_assets	512257000		I1,I2,I3,I4	1000	
+newcastle-united-fc	newcastle-united-fc__1	YsXD_RyttJGOxK9S_prG5hiMkH_9eTNqiwFXOcFvIvA	2025-06-30	company	net_assets	521042000		I1,I2,I3,I4	1000	
+newcastle-united-fc	newcastle-united-fc__1	YsXD_RyttJGOxK9S_prG5hiMkH_9eTNqiwFXOcFvIvA	2025-06-30	company	net_current_assets	8785000		I1,I2,I3,I4	1000	
+newcastle-united-fc	newcastle-united-fc__1	YsXD_RyttJGOxK9S_prG5hiMkH_9eTNqiwFXOcFvIvA	2025-06-30	company	share_capital	6655000		I1,I2,I3,I4	1000	
+newcastle-united-fc	newcastle-united-fc__1	YsXD_RyttJGOxK9S_prG5hiMkH_9eTNqiwFXOcFvIvA	2025-06-30	company	total_assets_less_current_liabilities	521042000		I1,I2,I3,I4	1000	
+newcastle-united-fc	newcastle-united-fc__2	wY85DW8nRJcDAED7nM2RosNsRq9KIalVXGGR32pB2xY	2024-06-30	document	_disclosure	full				
+newcastle-united-fc	newcastle-united-fc__2	wY85DW8nRJcDAED7nM2RosNsRq9KIalVXGGR32pB2xY	2024-06-30	document	_pnl_withheld					
+newcastle-united-fc	newcastle-united-fc__2	wY85DW8nRJcDAED7nM2RosNsRq9KIalVXGGR32pB2xY	2024-06-30	document	_going_concern					
+newcastle-united-fc	newcastle-united-fc__2	wY85DW8nRJcDAED7nM2RosNsRq9KIalVXGGR32pB2xY	2024-06-30	group	creditors_within_year	195281000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+newcastle-united-fc	newcastle-united-fc__2	wY85DW8nRJcDAED7nM2RosNsRq9KIalVXGGR32pB2xY	2024-06-30	group	current_assets	169596000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+newcastle-united-fc	newcastle-united-fc__2	wY85DW8nRJcDAED7nM2RosNsRq9KIalVXGGR32pB2xY	2024-06-30	group	employees	525		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+newcastle-united-fc	newcastle-united-fc__2	wY85DW8nRJcDAED7nM2RosNsRq9KIalVXGGR32pB2xY	2024-06-30	group	fixed_assets	437954000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+newcastle-united-fc	newcastle-united-fc__2	wY85DW8nRJcDAED7nM2RosNsRq9KIalVXGGR32pB2xY	2024-06-30	group	intangible_assets	349970000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+newcastle-united-fc	newcastle-united-fc__2	wY85DW8nRJcDAED7nM2RosNsRq9KIalVXGGR32pB2xY	2024-06-30	group	net_assets	248272000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+newcastle-united-fc	newcastle-united-fc__2	wY85DW8nRJcDAED7nM2RosNsRq9KIalVXGGR32pB2xY	2024-06-30	group	net_current_assets	-25685000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+newcastle-united-fc	newcastle-united-fc__2	wY85DW8nRJcDAED7nM2RosNsRq9KIalVXGGR32pB2xY	2024-06-30	group	staff_costs	218738000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+newcastle-united-fc	newcastle-united-fc__2	wY85DW8nRJcDAED7nM2RosNsRq9KIalVXGGR32pB2xY	2024-06-30	group	tangible_assets	87984000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+newcastle-united-fc	newcastle-united-fc__2	wY85DW8nRJcDAED7nM2RosNsRq9KIalVXGGR32pB2xY	2024-06-30	group	total_assets_less_current_liabilities	412269000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+norwich-city-fc	norwich-city-fc__1	-K3ckj71LXWnKI6hY6FPc4zqsuBkbjA1AdS9SvEaMfE	2025-06-30	document	_disclosure	full				
+norwich-city-fc	norwich-city-fc__1	-K3ckj71LXWnKI6hY6FPc4zqsuBkbjA1AdS9SvEaMfE	2025-06-30	document	_pnl_withheld					
+norwich-city-fc	norwich-city-fc__1	-K3ckj71LXWnKI6hY6FPc4zqsuBkbjA1AdS9SvEaMfE	2025-06-30	document	_going_concern					
+norwich-city-fc	norwich-city-fc__1	-K3ckj71LXWnKI6hY6FPc4zqsuBkbjA1AdS9SvEaMfE	2025-06-30	group	creditors_after_year	28348000		I1,I2,I3,I4,staff_costs:sum of 2	1000	yes
+norwich-city-fc	norwich-city-fc__1	-K3ckj71LXWnKI6hY6FPc4zqsuBkbjA1AdS9SvEaMfE	2025-06-30	group	creditors_within_year	89496000		I1,I2,I3,I4,staff_costs:sum of 2	1000	yes
+norwich-city-fc	norwich-city-fc__1	-K3ckj71LXWnKI6hY6FPc4zqsuBkbjA1AdS9SvEaMfE	2025-06-30	group	current_assets	49273000		I1,I2,I3,I4,staff_costs:sum of 2	1000	yes
+norwich-city-fc	norwich-city-fc__1	-K3ckj71LXWnKI6hY6FPc4zqsuBkbjA1AdS9SvEaMfE	2025-06-30	group	fixed_assets	75381000		I1,I2,I3,I4,staff_costs:sum of 2	1000	yes
+norwich-city-fc	norwich-city-fc__1	-K3ckj71LXWnKI6hY6FPc4zqsuBkbjA1AdS9SvEaMfE	2025-06-30	group	intangible_assets	32592000		I1,I2,I3,I4,staff_costs:sum of 2	1000	yes
+norwich-city-fc	norwich-city-fc__1	-K3ckj71LXWnKI6hY6FPc4zqsuBkbjA1AdS9SvEaMfE	2025-06-30	group	net_assets	4692000		I1,I2,I3,I4,staff_costs:sum of 2	1000	yes
+norwich-city-fc	norwich-city-fc__1	-K3ckj71LXWnKI6hY6FPc4zqsuBkbjA1AdS9SvEaMfE	2025-06-30	group	net_current_assets	-40223000		I1,I2,I3,I4,staff_costs:sum of 2	1000	yes
+norwich-city-fc	norwich-city-fc__1	-K3ckj71LXWnKI6hY6FPc4zqsuBkbjA1AdS9SvEaMfE	2025-06-30	group	staff_costs	42487000		I1,I2,I3,I4,staff_costs:sum of 2	1000	yes
+norwich-city-fc	norwich-city-fc__1	-K3ckj71LXWnKI6hY6FPc4zqsuBkbjA1AdS9SvEaMfE	2025-06-30	group	tangible_assets	42789000		I1,I2,I3,I4,staff_costs:sum of 2	1000	yes
+norwich-city-fc	norwich-city-fc__1	-K3ckj71LXWnKI6hY6FPc4zqsuBkbjA1AdS9SvEaMfE	2025-06-30	group	total_assets_less_current_liabilities	35158000		I1,I2,I3,I4,staff_costs:sum of 2	1000	yes
+norwich-city-fc	norwich-city-fc__1	-K3ckj71LXWnKI6hY6FPc4zqsuBkbjA1AdS9SvEaMfE	2025-06-30	company	creditors_after_year	28348000		I1,I2,I3,I4	1000	yes
+norwich-city-fc	norwich-city-fc__1	-K3ckj71LXWnKI6hY6FPc4zqsuBkbjA1AdS9SvEaMfE	2025-06-30	company	creditors_within_year	89429000		I1,I2,I3,I4	1000	yes
+norwich-city-fc	norwich-city-fc__1	-K3ckj71LXWnKI6hY6FPc4zqsuBkbjA1AdS9SvEaMfE	2025-06-30	company	current_assets	49350000		I1,I2,I3,I4	1000	yes
+norwich-city-fc	norwich-city-fc__1	-K3ckj71LXWnKI6hY6FPc4zqsuBkbjA1AdS9SvEaMfE	2025-06-30	company	fixed_assets	75381000		I1,I2,I3,I4	1000	yes
+norwich-city-fc	norwich-city-fc__1	-K3ckj71LXWnKI6hY6FPc4zqsuBkbjA1AdS9SvEaMfE	2025-06-30	company	intangible_assets	32592000		I1,I2,I3,I4	1000	yes
+norwich-city-fc	norwich-city-fc__1	-K3ckj71LXWnKI6hY6FPc4zqsuBkbjA1AdS9SvEaMfE	2025-06-30	company	net_assets	4836000		I1,I2,I3,I4	1000	yes
+norwich-city-fc	norwich-city-fc__1	-K3ckj71LXWnKI6hY6FPc4zqsuBkbjA1AdS9SvEaMfE	2025-06-30	company	net_current_assets	-40079000		I1,I2,I3,I4	1000	yes
+norwich-city-fc	norwich-city-fc__1	-K3ckj71LXWnKI6hY6FPc4zqsuBkbjA1AdS9SvEaMfE	2025-06-30	company	tangible_assets	42789000		I1,I2,I3,I4	1000	yes
+norwich-city-fc	norwich-city-fc__1	-K3ckj71LXWnKI6hY6FPc4zqsuBkbjA1AdS9SvEaMfE	2025-06-30	company	total_assets_less_current_liabilities	35302000		I1,I2,I3,I4	1000	yes
+norwich-city-fc	norwich-city-fc__2	tgerBfeIGzW9gkmfa5Eqox43VLCbAvXnqYyTOFQXpZ4	2024-06-30	document	_disclosure	small_company				
+norwich-city-fc	norwich-city-fc__2	tgerBfeIGzW9gkmfa5Eqox43VLCbAvXnqYyTOFQXpZ4	2024-06-30	document	_pnl_withheld					
+norwich-city-fc	norwich-city-fc__2	tgerBfeIGzW9gkmfa5Eqox43VLCbAvXnqYyTOFQXpZ4	2024-06-30	document	_going_concern					
+norwich-city-fc	norwich-city-fc__2	tgerBfeIGzW9gkmfa5Eqox43VLCbAvXnqYyTOFQXpZ4	2024-06-30	group	creditors_after_year	21938000		I1,I2,I3,I4	1000	yes
+norwich-city-fc	norwich-city-fc__2	tgerBfeIGzW9gkmfa5Eqox43VLCbAvXnqYyTOFQXpZ4	2024-06-30	group	creditors_within_year	112147000		I1,I2,I3,I4	1000	yes
+norwich-city-fc	norwich-city-fc__2	tgerBfeIGzW9gkmfa5Eqox43VLCbAvXnqYyTOFQXpZ4	2024-06-30	group	current_assets	40439000		I1,I2,I3,I4	1000	yes
+norwich-city-fc	norwich-city-fc__2	tgerBfeIGzW9gkmfa5Eqox43VLCbAvXnqYyTOFQXpZ4	2024-06-30	group	fixed_assets	64638000		I1,I2,I3,I4	1000	yes
+norwich-city-fc	norwich-city-fc__2	tgerBfeIGzW9gkmfa5Eqox43VLCbAvXnqYyTOFQXpZ4	2024-06-30	group	intangible_assets	21213000		I1,I2,I3,I4	1000	yes
+norwich-city-fc	norwich-city-fc__2	tgerBfeIGzW9gkmfa5Eqox43VLCbAvXnqYyTOFQXpZ4	2024-06-30	group	net_assets	-31214000		I1,I2,I3,I4	1000	yes
+norwich-city-fc	norwich-city-fc__2	tgerBfeIGzW9gkmfa5Eqox43VLCbAvXnqYyTOFQXpZ4	2024-06-30	group	net_current_assets	-71708000		I1,I2,I3,I4	1000	yes
+norwich-city-fc	norwich-city-fc__2	tgerBfeIGzW9gkmfa5Eqox43VLCbAvXnqYyTOFQXpZ4	2024-06-30	group	tangible_assets	43425000		I1,I2,I3,I4	1000	yes
+norwich-city-fc	norwich-city-fc__2	tgerBfeIGzW9gkmfa5Eqox43VLCbAvXnqYyTOFQXpZ4	2024-06-30	group	total_assets_less_current_liabilities	-7070000		I1,I2,I3,I4	1000	yes
+norwich-city-fc	norwich-city-fc__2	tgerBfeIGzW9gkmfa5Eqox43VLCbAvXnqYyTOFQXpZ4	2024-06-30	company	creditors_after_year	21938000		I1,I2,I3,I4	1000	yes
+norwich-city-fc	norwich-city-fc__2	tgerBfeIGzW9gkmfa5Eqox43VLCbAvXnqYyTOFQXpZ4	2024-06-30	company	creditors_within_year	112077000		I1,I2,I3,I4	1000	yes
+norwich-city-fc	norwich-city-fc__2	tgerBfeIGzW9gkmfa5Eqox43VLCbAvXnqYyTOFQXpZ4	2024-06-30	company	current_assets	40602000		I1,I2,I3,I4	1000	yes
+norwich-city-fc	norwich-city-fc__2	tgerBfeIGzW9gkmfa5Eqox43VLCbAvXnqYyTOFQXpZ4	2024-06-30	company	fixed_assets	64638000		I1,I2,I3,I4	1000	yes
+norwich-city-fc	norwich-city-fc__2	tgerBfeIGzW9gkmfa5Eqox43VLCbAvXnqYyTOFQXpZ4	2024-06-30	company	intangible_assets	21213000		I1,I2,I3,I4	1000	yes
+norwich-city-fc	norwich-city-fc__2	tgerBfeIGzW9gkmfa5Eqox43VLCbAvXnqYyTOFQXpZ4	2024-06-30	company	net_assets	-30981000		I1,I2,I3,I4	1000	yes
+norwich-city-fc	norwich-city-fc__2	tgerBfeIGzW9gkmfa5Eqox43VLCbAvXnqYyTOFQXpZ4	2024-06-30	company	net_current_assets	-71475000		I1,I2,I3,I4	1000	yes
+norwich-city-fc	norwich-city-fc__2	tgerBfeIGzW9gkmfa5Eqox43VLCbAvXnqYyTOFQXpZ4	2024-06-30	company	tangible_assets	43425000		I1,I2,I3,I4	1000	yes
+norwich-city-fc	norwich-city-fc__2	tgerBfeIGzW9gkmfa5Eqox43VLCbAvXnqYyTOFQXpZ4	2024-06-30	company	total_assets_less_current_liabilities	-6837000		I1,I2,I3,I4	1000	yes
+oldham-athletic-fc	oldham-athletic-fc__1	Fs6HOHnp5US0iJzrxlpCMaOafRckv6Iry09cmQhcFwA	2025-06-30	document	_disclosure	small_company				
+oldham-athletic-fc	oldham-athletic-fc__1	Fs6HOHnp5US0iJzrxlpCMaOafRckv6Iry09cmQhcFwA	2025-06-30	document	_pnl_withheld					
+oldham-athletic-fc	oldham-athletic-fc__1	Fs6HOHnp5US0iJzrxlpCMaOafRckv6Iry09cmQhcFwA	2025-06-30	document	_going_concern					
+oldham-athletic-fc	oldham-athletic-fc__1	Fs6HOHnp5US0iJzrxlpCMaOafRckv6Iry09cmQhcFwA	2025-06-30	plain	cash	132034		I1,I2,I3,I4	1	
+oldham-athletic-fc	oldham-athletic-fc__1	Fs6HOHnp5US0iJzrxlpCMaOafRckv6Iry09cmQhcFwA	2025-06-30	plain	creditors_after_year	643357		I1,I2,I3,I4	1	
+oldham-athletic-fc	oldham-athletic-fc__1	Fs6HOHnp5US0iJzrxlpCMaOafRckv6Iry09cmQhcFwA	2025-06-30	plain	creditors_within_year	14111922		I1,I2,I3,I4	1	
+oldham-athletic-fc	oldham-athletic-fc__1	Fs6HOHnp5US0iJzrxlpCMaOafRckv6Iry09cmQhcFwA	2025-06-30	plain	current_assets	1450044		I1,I2,I3,I4	1	
+oldham-athletic-fc	oldham-athletic-fc__1	Fs6HOHnp5US0iJzrxlpCMaOafRckv6Iry09cmQhcFwA	2025-06-30	plain	debtors	1194254		I1,I2,I3,I4	1	
+oldham-athletic-fc	oldham-athletic-fc__1	Fs6HOHnp5US0iJzrxlpCMaOafRckv6Iry09cmQhcFwA	2025-06-30	plain	fixed_assets	952042		I1,I2,I3,I4	1	
+oldham-athletic-fc	oldham-athletic-fc__1	Fs6HOHnp5US0iJzrxlpCMaOafRckv6Iry09cmQhcFwA	2025-06-30	plain	intangible_assets	15000		I1,I2,I3,I4	1	
+oldham-athletic-fc	oldham-athletic-fc__1	Fs6HOHnp5US0iJzrxlpCMaOafRckv6Iry09cmQhcFwA	2025-06-30	plain	net_assets	-12353193		I1,I2,I3,I4	1	
+oldham-athletic-fc	oldham-athletic-fc__1	Fs6HOHnp5US0iJzrxlpCMaOafRckv6Iry09cmQhcFwA	2025-06-30	plain	net_current_assets	-12661878		I1,I2,I3,I4	1	
+oldham-athletic-fc	oldham-athletic-fc__1	Fs6HOHnp5US0iJzrxlpCMaOafRckv6Iry09cmQhcFwA	2025-06-30	plain	share_capital	20200		I1,I2,I3,I4	1	
+oldham-athletic-fc	oldham-athletic-fc__1	Fs6HOHnp5US0iJzrxlpCMaOafRckv6Iry09cmQhcFwA	2025-06-30	plain	tangible_assets	937041		I1,I2,I3,I4	1	
+oldham-athletic-fc	oldham-athletic-fc__1	Fs6HOHnp5US0iJzrxlpCMaOafRckv6Iry09cmQhcFwA	2025-06-30	plain	total_assets_less_current_liabilities	-11709836		I1,I2,I3,I4	1	
+oldham-athletic-fc	oldham-athletic-fc__2	gsfMJcw0NTol2pODIPL3enR7rqQ6id6w-VcbpI31bzk	2024-06-30	document	_disclosure	small_company				
+oldham-athletic-fc	oldham-athletic-fc__2	gsfMJcw0NTol2pODIPL3enR7rqQ6id6w-VcbpI31bzk	2024-06-30	document	_pnl_withheld					
+oldham-athletic-fc	oldham-athletic-fc__2	gsfMJcw0NTol2pODIPL3enR7rqQ6id6w-VcbpI31bzk	2024-06-30	document	_going_concern					
+oldham-athletic-fc	oldham-athletic-fc__2	gsfMJcw0NTol2pODIPL3enR7rqQ6id6w-VcbpI31bzk	2024-06-30	plain	cash	37074		I1,I2,I3,I4	1	
+oldham-athletic-fc	oldham-athletic-fc__2	gsfMJcw0NTol2pODIPL3enR7rqQ6id6w-VcbpI31bzk	2024-06-30	plain	creditors_after_year	870125		I1,I2,I3,I4	1	
+oldham-athletic-fc	oldham-athletic-fc__2	gsfMJcw0NTol2pODIPL3enR7rqQ6id6w-VcbpI31bzk	2024-06-30	plain	creditors_within_year	9178979		I1,I2,I3,I4	1	
+oldham-athletic-fc	oldham-athletic-fc__2	gsfMJcw0NTol2pODIPL3enR7rqQ6id6w-VcbpI31bzk	2024-06-30	plain	current_assets	628970		I1,I2,I3,I4	1	
+oldham-athletic-fc	oldham-athletic-fc__2	gsfMJcw0NTol2pODIPL3enR7rqQ6id6w-VcbpI31bzk	2024-06-30	plain	debtors	418910		I1,I2,I3,I4	1	
+oldham-athletic-fc	oldham-athletic-fc__2	gsfMJcw0NTol2pODIPL3enR7rqQ6id6w-VcbpI31bzk	2024-06-30	plain	fixed_assets	1020125		I1,I2,I3,I4	1	
+oldham-athletic-fc	oldham-athletic-fc__2	gsfMJcw0NTol2pODIPL3enR7rqQ6id6w-VcbpI31bzk	2024-06-30	plain	net_assets	-8400009		I1,I2,I3,I4	1	
+oldham-athletic-fc	oldham-athletic-fc__2	gsfMJcw0NTol2pODIPL3enR7rqQ6id6w-VcbpI31bzk	2024-06-30	plain	net_current_assets	-8550009		I1,I2,I3,I4	1	
+oldham-athletic-fc	oldham-athletic-fc__2	gsfMJcw0NTol2pODIPL3enR7rqQ6id6w-VcbpI31bzk	2024-06-30	plain	share_capital	20200		I1,I2,I3,I4	1	
+oldham-athletic-fc	oldham-athletic-fc__2	gsfMJcw0NTol2pODIPL3enR7rqQ6id6w-VcbpI31bzk	2024-06-30	plain	total_assets_less_current_liabilities	-7529884		I1,I2,I3,I4	1	
+oxford-united-fc	oxford-united-fc__2	7p8Bl3ry3UWND9N1Xyoznc9dsZURrURUDs7a7GL6lxg	2024-06-30	document	_disclosure	full				
+oxford-united-fc	oxford-united-fc__2	7p8Bl3ry3UWND9N1Xyoznc9dsZURrURUDs7a7GL6lxg	2024-06-30	document	_pnl_withheld					
+oxford-united-fc	oxford-united-fc__2	7p8Bl3ry3UWND9N1Xyoznc9dsZURrURUDs7a7GL6lxg	2024-06-30	document	_going_concern					
+oxford-united-fc	oxford-united-fc__2	7p8Bl3ry3UWND9N1Xyoznc9dsZURrURUDs7a7GL6lxg	2024-06-30	plain	cash	470625		I1,I2,I3,I4,employees:sum of 3	1	
+oxford-united-fc	oxford-united-fc__2	7p8Bl3ry3UWND9N1Xyoznc9dsZURrURUDs7a7GL6lxg	2024-06-30	plain	creditors_after_year	194294		I1,I2,I3,I4,employees:sum of 3	1	
+oxford-united-fc	oxford-united-fc__2	7p8Bl3ry3UWND9N1Xyoznc9dsZURrURUDs7a7GL6lxg	2024-06-30	plain	creditors_within_year	47722314		I1,I2,I3,I4,employees:sum of 3	1	
+oxford-united-fc	oxford-united-fc__2	7p8Bl3ry3UWND9N1Xyoznc9dsZURrURUDs7a7GL6lxg	2024-06-30	plain	current_assets	2257864		I1,I2,I3,I4,employees:sum of 3	1	
+oxford-united-fc	oxford-united-fc__2	7p8Bl3ry3UWND9N1Xyoznc9dsZURrURUDs7a7GL6lxg	2024-06-30	plain	debtors	1657490		I1,I2,I3,I4,employees:sum of 3	1	
+oxford-united-fc	oxford-united-fc__2	7p8Bl3ry3UWND9N1Xyoznc9dsZURrURUDs7a7GL6lxg	2024-06-30	plain	employees	254		I1,I2,I3,I4,employees:sum of 3	1	
+oxford-united-fc	oxford-united-fc__2	7p8Bl3ry3UWND9N1Xyoznc9dsZURrURUDs7a7GL6lxg	2024-06-30	plain	fixed_assets	3650562		I1,I2,I3,I4,employees:sum of 3	1	
+oxford-united-fc	oxford-united-fc__2	7p8Bl3ry3UWND9N1Xyoznc9dsZURrURUDs7a7GL6lxg	2024-06-30	plain	intangible_assets	1842820		I1,I2,I3,I4,employees:sum of 3	1	
+oxford-united-fc	oxford-united-fc__2	7p8Bl3ry3UWND9N1Xyoznc9dsZURrURUDs7a7GL6lxg	2024-06-30	plain	net_assets	-42008182		I1,I2,I3,I4,employees:sum of 3	1	
+oxford-united-fc	oxford-united-fc__2	7p8Bl3ry3UWND9N1Xyoznc9dsZURrURUDs7a7GL6lxg	2024-06-30	plain	net_current_assets	-45464450		I1,I2,I3,I4,employees:sum of 3	1	
+oxford-united-fc	oxford-united-fc__2	7p8Bl3ry3UWND9N1Xyoznc9dsZURrURUDs7a7GL6lxg	2024-06-30	plain	tangible_assets	1807742		I1,I2,I3,I4,employees:sum of 3	1	
+oxford-united-fc	oxford-united-fc__2	7p8Bl3ry3UWND9N1Xyoznc9dsZURrURUDs7a7GL6lxg	2024-06-30	plain	total_assets_less_current_liabilities	-41813888		I1,I2,I3,I4,employees:sum of 3	1	
+preston-north-end-fc	preston-north-end-fc__1	aBPSUCpYI5_WFvyaB4qWqNVT8U1XFEU4Yvs4GK_oH9E	2025-06-30	document	_disclosure	full				
+preston-north-end-fc	preston-north-end-fc__1	aBPSUCpYI5_WFvyaB4qWqNVT8U1XFEU4Yvs4GK_oH9E	2025-06-30	document	_pnl_withheld					
+preston-north-end-fc	preston-north-end-fc__1	aBPSUCpYI5_WFvyaB4qWqNVT8U1XFEU4Yvs4GK_oH9E	2025-06-30	document	_going_concern	Material uncertainty related to going concern We draw attention to note | to the financial statements which indicates that the ability of the company to continue as a going concern is dependent on the continued financial support from Grovemoor Limited, its intermediate parent undertaking, and there can be no certainty that this support will continue. These events and conditions, along with the ot				
+preston-north-end-fc	preston-north-end-fc__1	aBPSUCpYI5_WFvyaB4qWqNVT8U1XFEU4Yvs4GK_oH9E	2025-06-30	plain	cash	2372000		I1,I2,I3,I4	1000	
+preston-north-end-fc	preston-north-end-fc__1	aBPSUCpYI5_WFvyaB4qWqNVT8U1XFEU4Yvs4GK_oH9E	2025-06-30	plain	creditors_within_year	8907000		I1,I2,I3,I4	1000	
+preston-north-end-fc	preston-north-end-fc__1	aBPSUCpYI5_WFvyaB4qWqNVT8U1XFEU4Yvs4GK_oH9E	2025-06-30	plain	current_assets	4116000		I1,I2,I3,I4	1000	
+preston-north-end-fc	preston-north-end-fc__1	aBPSUCpYI5_WFvyaB4qWqNVT8U1XFEU4Yvs4GK_oH9E	2025-06-30	plain	debtors	1744000		I1,I2,I3,I4	1000	
+preston-north-end-fc	preston-north-end-fc__1	aBPSUCpYI5_WFvyaB4qWqNVT8U1XFEU4Yvs4GK_oH9E	2025-06-30	plain	fixed_assets	6194000		I1,I2,I3,I4	1000	
+preston-north-end-fc	preston-north-end-fc__1	aBPSUCpYI5_WFvyaB4qWqNVT8U1XFEU4Yvs4GK_oH9E	2025-06-30	plain	intangible_assets	6194000		I1,I2,I3,I4	1000	
+preston-north-end-fc	preston-north-end-fc__1	aBPSUCpYI5_WFvyaB4qWqNVT8U1XFEU4Yvs4GK_oH9E	2025-06-30	plain	net_assets	788000		I1,I2,I3,I4	1000	
+preston-north-end-fc	preston-north-end-fc__1	aBPSUCpYI5_WFvyaB4qWqNVT8U1XFEU4Yvs4GK_oH9E	2025-06-30	plain	net_current_assets	-4791000		I1,I2,I3,I4	1000	
+preston-north-end-fc	preston-north-end-fc__1	aBPSUCpYI5_WFvyaB4qWqNVT8U1XFEU4Yvs4GK_oH9E	2025-06-30	plain	share_capital	373000		I1,I2,I3,I4	1000	
+preston-north-end-fc	preston-north-end-fc__1	aBPSUCpYI5_WFvyaB4qWqNVT8U1XFEU4Yvs4GK_oH9E	2025-06-30	plain	total_assets_less_current_liabilities	1403000		I1,I2,I3,I4	1000	
+preston-north-end-fc	preston-north-end-fc__2	jYRLPD5FZ96f6rz3WDuE4Y0YWJAUhs43sfurTf0Auc4	2024-06-30	document	_disclosure	full				
+preston-north-end-fc	preston-north-end-fc__2	jYRLPD5FZ96f6rz3WDuE4Y0YWJAUhs43sfurTf0Auc4	2024-06-30	document	_pnl_withheld					
+preston-north-end-fc	preston-north-end-fc__2	jYRLPD5FZ96f6rz3WDuE4Y0YWJAUhs43sfurTf0Auc4	2024-06-30	document	_going_concern	Material uncertainty related to going concern - ; We draw attention to note | to the financial statements which indicates that the ability of the company to continue as a going concern is dependent on the continued financial support from Grovemoor Limited, its intermediate parent undertaking, and there can be no certainty that this support will continue. These events and conditions, along with th				
+preston-north-end-fc	preston-north-end-fc__2	jYRLPD5FZ96f6rz3WDuE4Y0YWJAUhs43sfurTf0Auc4	2024-06-30	plain	creditors_within_year	5995000		I1,I2,I3,I4	1000	
+preston-north-end-fc	preston-north-end-fc__2	jYRLPD5FZ96f6rz3WDuE4Y0YWJAUhs43sfurTf0Auc4	2024-06-30	plain	current_assets	2941000		I1,I2,I3,I4	1000	
+preston-north-end-fc	preston-north-end-fc__2	jYRLPD5FZ96f6rz3WDuE4Y0YWJAUhs43sfurTf0Auc4	2024-06-30	plain	fixed_assets	4495000		I1,I2,I3,I4	1000	
+preston-north-end-fc	preston-north-end-fc__2	jYRLPD5FZ96f6rz3WDuE4Y0YWJAUhs43sfurTf0Auc4	2024-06-30	plain	intangible_assets	4495000		I1,I2,I3,I4	1000	
+preston-north-end-fc	preston-north-end-fc__2	jYRLPD5FZ96f6rz3WDuE4Y0YWJAUhs43sfurTf0Auc4	2024-06-30	plain	net_assets	447000		I1,I2,I3,I4	1000	
+preston-north-end-fc	preston-north-end-fc__2	jYRLPD5FZ96f6rz3WDuE4Y0YWJAUhs43sfurTf0Auc4	2024-06-30	plain	net_current_assets	-3054000		I1,I2,I3,I4	1000	
+preston-north-end-fc	preston-north-end-fc__2	jYRLPD5FZ96f6rz3WDuE4Y0YWJAUhs43sfurTf0Auc4	2024-06-30	plain	share_capital	361000		I1,I2,I3,I4	1000	
+preston-north-end-fc	preston-north-end-fc__2	jYRLPD5FZ96f6rz3WDuE4Y0YWJAUhs43sfurTf0Auc4	2024-06-30	plain	total_assets_less_current_liabilities	1441000		I1,I2,I3,I4	1000	
+radcliffe-fc	radcliffe-fc__2	aRUpCdRvDmWoXnLsWleHlD_QKfbRBTu-aZuP8zUmYHs	2024-05-31	document	_disclosure	small_company				
+radcliffe-fc	radcliffe-fc__2	aRUpCdRvDmWoXnLsWleHlD_QKfbRBTu-aZuP8zUmYHs	2024-05-31	document	_pnl_withheld	yes				
+radcliffe-fc	radcliffe-fc__2	aRUpCdRvDmWoXnLsWleHlD_QKfbRBTu-aZuP8zUmYHs	2024-05-31	document	_going_concern					
+radcliffe-fc	radcliffe-fc__2	aRUpCdRvDmWoXnLsWleHlD_QKfbRBTu-aZuP8zUmYHs	2024-05-31	plain	cash	-3		I1,I2,I3,I4	1	
+radcliffe-fc	radcliffe-fc__2	aRUpCdRvDmWoXnLsWleHlD_QKfbRBTu-aZuP8zUmYHs	2024-05-31	plain	creditors_within_year	66448		I1,I2,I3,I4	1	
+radcliffe-fc	radcliffe-fc__2	aRUpCdRvDmWoXnLsWleHlD_QKfbRBTu-aZuP8zUmYHs	2024-05-31	plain	current_assets	-3		I1,I2,I3,I4	1	
+radcliffe-fc	radcliffe-fc__2	aRUpCdRvDmWoXnLsWleHlD_QKfbRBTu-aZuP8zUmYHs	2024-05-31	plain	fixed_assets	52880		I1,I2,I3,I4	1	
+radcliffe-fc	radcliffe-fc__2	aRUpCdRvDmWoXnLsWleHlD_QKfbRBTu-aZuP8zUmYHs	2024-05-31	plain	net_assets	-14371		I1,I2,I3,I4	1	
+radcliffe-fc	radcliffe-fc__2	aRUpCdRvDmWoXnLsWleHlD_QKfbRBTu-aZuP8zUmYHs	2024-05-31	plain	net_current_assets	-66451		I1,I2,I3,I4	1	
+radcliffe-fc	radcliffe-fc__2	aRUpCdRvDmWoXnLsWleHlD_QKfbRBTu-aZuP8zUmYHs	2024-05-31	plain	share_capital	100		I1,I2,I3,I4	1	
+radcliffe-fc	radcliffe-fc__2	aRUpCdRvDmWoXnLsWleHlD_QKfbRBTu-aZuP8zUmYHs	2024-05-31	plain	tangible_assets	52880		I1,I2,I3,I4	1	
+radcliffe-fc	radcliffe-fc__2	aRUpCdRvDmWoXnLsWleHlD_QKfbRBTu-aZuP8zUmYHs	2024-05-31	plain	total_assets_less_current_liabilities	-13571		I1,I2,I3,I4	1	
+solihull-moors-fc	solihull-moors-fc__1	ADiI9EHJXOvS4PkISuLRxwKT9fl2ORUQ89SMNPZs8D4	2025-06-30	document	_disclosure	small_company				
+solihull-moors-fc	solihull-moors-fc__1	ADiI9EHJXOvS4PkISuLRxwKT9fl2ORUQ89SMNPZs8D4	2025-06-30	document	_pnl_withheld					
+solihull-moors-fc	solihull-moors-fc__1	ADiI9EHJXOvS4PkISuLRxwKT9fl2ORUQ89SMNPZs8D4	2025-06-30	document	_going_concern					
+solihull-moors-fc	solihull-moors-fc__1	ADiI9EHJXOvS4PkISuLRxwKT9fl2ORUQ89SMNPZs8D4	2025-06-30	plain	cash	36770		I1,I2,I3,I4	1	
+solihull-moors-fc	solihull-moors-fc__1	ADiI9EHJXOvS4PkISuLRxwKT9fl2ORUQ89SMNPZs8D4	2025-06-30	plain	creditors_after_year	7101677		I1,I2,I3,I4	1	
+solihull-moors-fc	solihull-moors-fc__1	ADiI9EHJXOvS4PkISuLRxwKT9fl2ORUQ89SMNPZs8D4	2025-06-30	plain	creditors_within_year	6182983		I1,I2,I3,I4	1	
+solihull-moors-fc	solihull-moors-fc__1	ADiI9EHJXOvS4PkISuLRxwKT9fl2ORUQ89SMNPZs8D4	2025-06-30	plain	current_assets	581590		I1,I2,I3,I4	1	
+solihull-moors-fc	solihull-moors-fc__1	ADiI9EHJXOvS4PkISuLRxwKT9fl2ORUQ89SMNPZs8D4	2025-06-30	plain	debtors	534079		I1,I2,I3,I4	1	
+solihull-moors-fc	solihull-moors-fc__1	ADiI9EHJXOvS4PkISuLRxwKT9fl2ORUQ89SMNPZs8D4	2025-06-30	plain	fixed_assets	1410177		I1,I2,I3,I4	1	
+solihull-moors-fc	solihull-moors-fc__1	ADiI9EHJXOvS4PkISuLRxwKT9fl2ORUQ89SMNPZs8D4	2025-06-30	plain	intangible_assets	14242		I1,I2,I3,I4	1	
+solihull-moors-fc	solihull-moors-fc__1	ADiI9EHJXOvS4PkISuLRxwKT9fl2ORUQ89SMNPZs8D4	2025-06-30	plain	net_assets	-11613251		I1,I2,I3,I4	1	
+solihull-moors-fc	solihull-moors-fc__1	ADiI9EHJXOvS4PkISuLRxwKT9fl2ORUQ89SMNPZs8D4	2025-06-30	plain	net_current_assets	-5601393		I1,I2,I3,I4	1	
+solihull-moors-fc	solihull-moors-fc__1	ADiI9EHJXOvS4PkISuLRxwKT9fl2ORUQ89SMNPZs8D4	2025-06-30	plain	tangible_assets	1395935		I1,I2,I3,I4	1	
+solihull-moors-fc	solihull-moors-fc__1	ADiI9EHJXOvS4PkISuLRxwKT9fl2ORUQ89SMNPZs8D4	2025-06-30	plain	total_assets_less_current_liabilities	-4191216		I1,I2,I3,I4	1	
+southampton-fc	southampton-fc__1	kGTRKOV5iyHDNFURXZLZt0OcdKswsgRZB7wJqKqy-WU	2025-06-30	document	_disclosure	full				
+southampton-fc	southampton-fc__1	kGTRKOV5iyHDNFURXZLZt0OcdKswsgRZB7wJqKqy-WU	2025-06-30	document	_pnl_withheld					
+southampton-fc	southampton-fc__1	kGTRKOV5iyHDNFURXZLZt0OcdKswsgRZB7wJqKqy-WU	2025-06-30	document	_going_concern	Material uncertainty related to going concern We draw attention to note 2.3 to the financial statements, which indicates that the Company is reliant on financial support provided by the group headed by its parent company St Mary's Football Club Limited (the Group’). Within the Group's forecasts there is a funding requirement from the Group’s shareholders. However, there is no legally binding agre				
+southampton-fc	southampton-fc__1	kGTRKOV5iyHDNFURXZLZt0OcdKswsgRZB7wJqKqy-WU	2025-06-30	plain	creditors_after_year	45490000		I1,I2,I3,employees:sum of 2,staff_costs:sum of 3	1000	
+southampton-fc	southampton-fc__1	kGTRKOV5iyHDNFURXZLZt0OcdKswsgRZB7wJqKqy-WU	2025-06-30	plain	creditors_within_year	241977000		I1,I2,I3,employees:sum of 2,staff_costs:sum of 3	1000	
+southampton-fc	southampton-fc__1	kGTRKOV5iyHDNFURXZLZt0OcdKswsgRZB7wJqKqy-WU	2025-06-30	plain	current_assets	35225000		I1,I2,I3,employees:sum of 2,staff_costs:sum of 3	1000	
+southampton-fc	southampton-fc__1	kGTRKOV5iyHDNFURXZLZt0OcdKswsgRZB7wJqKqy-WU	2025-06-30	plain	employees	347		I1,I2,I3,employees:sum of 2,staff_costs:sum of 3	1000	
+southampton-fc	southampton-fc__1	kGTRKOV5iyHDNFURXZLZt0OcdKswsgRZB7wJqKqy-WU	2025-06-30	plain	fixed_assets	140724000		I1,I2,I3,employees:sum of 2,staff_costs:sum of 3	1000	
+southampton-fc	southampton-fc__1	kGTRKOV5iyHDNFURXZLZt0OcdKswsgRZB7wJqKqy-WU	2025-06-30	plain	intangible_assets	117372000		I1,I2,I3,employees:sum of 2,staff_costs:sum of 3	1000	
+southampton-fc	southampton-fc__1	kGTRKOV5iyHDNFURXZLZt0OcdKswsgRZB7wJqKqy-WU	2025-06-30	plain	net_assets	-113166000		I1,I2,I3,employees:sum of 2,staff_costs:sum of 3	1000	
+southampton-fc	southampton-fc__1	kGTRKOV5iyHDNFURXZLZt0OcdKswsgRZB7wJqKqy-WU	2025-06-30	plain	net_current_assets	-206752000		I1,I2,I3,employees:sum of 2,staff_costs:sum of 3	1000	
+southampton-fc	southampton-fc__1	kGTRKOV5iyHDNFURXZLZt0OcdKswsgRZB7wJqKqy-WU	2025-06-30	plain	staff_costs	113957000		I1,I2,I3,employees:sum of 2,staff_costs:sum of 3	1000	
+southampton-fc	southampton-fc__1	kGTRKOV5iyHDNFURXZLZt0OcdKswsgRZB7wJqKqy-WU	2025-06-30	plain	tangible_assets	23352000		I1,I2,I3,employees:sum of 2,staff_costs:sum of 3	1000	
+southampton-fc	southampton-fc__1	kGTRKOV5iyHDNFURXZLZt0OcdKswsgRZB7wJqKqy-WU	2025-06-30	plain	total_assets_less_current_liabilities	-66028000		I1,I2,I3,employees:sum of 2,staff_costs:sum of 3	1000	
+stoke-city-fc	stoke-city-fc__1	a8GBAGKII-RzLK2PgqXXAXS1avv90N1p4-naETWE67E	2025-05-31	document	_disclosure	full				
+stoke-city-fc	stoke-city-fc__1	a8GBAGKII-RzLK2PgqXXAXS1avv90N1p4-naETWE67E	2025-05-31	document	_pnl_withheld					
+stoke-city-fc	stoke-city-fc__1	a8GBAGKII-RzLK2PgqXXAXS1avv90N1p4-naETWE67E	2025-05-31	document	_going_concern					
+stoke-city-fc	stoke-city-fc__1	a8GBAGKII-RzLK2PgqXXAXS1avv90N1p4-naETWE67E	2025-05-31	plain	cash	25522000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+stoke-city-fc	stoke-city-fc__1	a8GBAGKII-RzLK2PgqXXAXS1avv90N1p4-naETWE67E	2025-05-31	plain	creditors_after_year	528000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+stoke-city-fc	stoke-city-fc__1	a8GBAGKII-RzLK2PgqXXAXS1avv90N1p4-naETWE67E	2025-05-31	plain	creditors_within_year	204246000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+stoke-city-fc	stoke-city-fc__1	a8GBAGKII-RzLK2PgqXXAXS1avv90N1p4-naETWE67E	2025-05-31	plain	current_assets	36286000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+stoke-city-fc	stoke-city-fc__1	a8GBAGKII-RzLK2PgqXXAXS1avv90N1p4-naETWE67E	2025-05-31	plain	debtors	9674000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+stoke-city-fc	stoke-city-fc__1	a8GBAGKII-RzLK2PgqXXAXS1avv90N1p4-naETWE67E	2025-05-31	plain	employees	332		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+stoke-city-fc	stoke-city-fc__1	a8GBAGKII-RzLK2PgqXXAXS1avv90N1p4-naETWE67E	2025-05-31	plain	fixed_assets	12319000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+stoke-city-fc	stoke-city-fc__1	a8GBAGKII-RzLK2PgqXXAXS1avv90N1p4-naETWE67E	2025-05-31	plain	intangible_assets	11650000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+stoke-city-fc	stoke-city-fc__1	a8GBAGKII-RzLK2PgqXXAXS1avv90N1p4-naETWE67E	2025-05-31	plain	net_assets	-156965000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+stoke-city-fc	stoke-city-fc__1	a8GBAGKII-RzLK2PgqXXAXS1avv90N1p4-naETWE67E	2025-05-31	plain	net_current_assets	-167960000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+stoke-city-fc	stoke-city-fc__1	a8GBAGKII-RzLK2PgqXXAXS1avv90N1p4-naETWE67E	2025-05-31	plain	share_capital	35842000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+stoke-city-fc	stoke-city-fc__1	a8GBAGKII-RzLK2PgqXXAXS1avv90N1p4-naETWE67E	2025-05-31	plain	staff_costs	30300000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+stoke-city-fc	stoke-city-fc__1	a8GBAGKII-RzLK2PgqXXAXS1avv90N1p4-naETWE67E	2025-05-31	plain	tangible_assets	669000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+stoke-city-fc	stoke-city-fc__1	a8GBAGKII-RzLK2PgqXXAXS1avv90N1p4-naETWE67E	2025-05-31	plain	total_assets_less_current_liabilities	-155641000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+stoke-city-fc	stoke-city-fc__2	Vkc1JX5X0CmFvghbq_g-z2R2HodQHhat8elTR5Fefbg	2024-05-31	document	_disclosure	full				
+stoke-city-fc	stoke-city-fc__2	Vkc1JX5X0CmFvghbq_g-z2R2HodQHhat8elTR5Fefbg	2024-05-31	document	_pnl_withheld					
+stoke-city-fc	stoke-city-fc__2	Vkc1JX5X0CmFvghbq_g-z2R2HodQHhat8elTR5Fefbg	2024-05-31	document	_going_concern					
+stoke-city-fc	stoke-city-fc__2	Vkc1JX5X0CmFvghbq_g-z2R2HodQHhat8elTR5Fefbg	2024-05-31	plain	cash	6940000		I1,I2,I3,I4,staff_costs:sum of 3	1000	
+stoke-city-fc	stoke-city-fc__2	Vkc1JX5X0CmFvghbq_g-z2R2HodQHhat8elTR5Fefbg	2024-05-31	plain	creditors_after_year	1000		I1,I2,I3,I4,staff_costs:sum of 3	1000	
+stoke-city-fc	stoke-city-fc__2	Vkc1JX5X0CmFvghbq_g-z2R2HodQHhat8elTR5Fefbg	2024-05-31	plain	creditors_within_year	167437000		I1,I2,I3,I4,staff_costs:sum of 3	1000	
+stoke-city-fc	stoke-city-fc__2	Vkc1JX5X0CmFvghbq_g-z2R2HodQHhat8elTR5Fefbg	2024-05-31	plain	current_assets	23231000		I1,I2,I3,I4,staff_costs:sum of 3	1000	
+stoke-city-fc	stoke-city-fc__2	Vkc1JX5X0CmFvghbq_g-z2R2HodQHhat8elTR5Fefbg	2024-05-31	plain	debtors	15438000		I1,I2,I3,I4,staff_costs:sum of 3	1000	
+stoke-city-fc	stoke-city-fc__2	Vkc1JX5X0CmFvghbq_g-z2R2HodQHhat8elTR5Fefbg	2024-05-31	plain	fixed_assets	14651000		I1,I2,I3,I4,staff_costs:sum of 3	1000	
+stoke-city-fc	stoke-city-fc__2	Vkc1JX5X0CmFvghbq_g-z2R2HodQHhat8elTR5Fefbg	2024-05-31	plain	net_assets	-132483000		I1,I2,I3,I4,staff_costs:sum of 3	1000	
+stoke-city-fc	stoke-city-fc__2	Vkc1JX5X0CmFvghbq_g-z2R2HodQHhat8elTR5Fefbg	2024-05-31	plain	net_current_assets	-144206000		I1,I2,I3,I4,staff_costs:sum of 3	1000	
+stoke-city-fc	stoke-city-fc__2	Vkc1JX5X0CmFvghbq_g-z2R2HodQHhat8elTR5Fefbg	2024-05-31	plain	share_capital	35842000		I1,I2,I3,I4,staff_costs:sum of 3	1000	
+stoke-city-fc	stoke-city-fc__2	Vkc1JX5X0CmFvghbq_g-z2R2HodQHhat8elTR5Fefbg	2024-05-31	plain	staff_costs	31764000		I1,I2,I3,I4,staff_costs:sum of 3	1000	
+stoke-city-fc	stoke-city-fc__2	Vkc1JX5X0CmFvghbq_g-z2R2HodQHhat8elTR5Fefbg	2024-05-31	plain	total_assets_less_current_liabilities	-129555000		I1,I2,I3,I4,staff_costs:sum of 3	1000	
+sunderland-afc	sunderland-afc__1	KDDWTCCgoYQxDC9gmqwG1XRJzar7GuxBUsNUjngNENQ	2025-07-31	document	_disclosure	full				
+sunderland-afc	sunderland-afc__1	KDDWTCCgoYQxDC9gmqwG1XRJzar7GuxBUsNUjngNENQ	2025-07-31	document	_pnl_withheld					
+sunderland-afc	sunderland-afc__1	KDDWTCCgoYQxDC9gmqwG1XRJzar7GuxBUsNUjngNENQ	2025-07-31	document	_going_concern					
+sunderland-afc	sunderland-afc__1	KDDWTCCgoYQxDC9gmqwG1XRJzar7GuxBUsNUjngNENQ	2025-07-31	plain	creditors_after_year	101641000		I1,I2,I3,I4	1000	
+sunderland-afc	sunderland-afc__1	KDDWTCCgoYQxDC9gmqwG1XRJzar7GuxBUsNUjngNENQ	2025-07-31	plain	creditors_within_year	174956000		I1,I2,I3,I4	1000	
+sunderland-afc	sunderland-afc__1	KDDWTCCgoYQxDC9gmqwG1XRJzar7GuxBUsNUjngNENQ	2025-07-31	plain	current_assets	73819000		I1,I2,I3,I4	1000	
+sunderland-afc	sunderland-afc__1	KDDWTCCgoYQxDC9gmqwG1XRJzar7GuxBUsNUjngNENQ	2025-07-31	plain	fixed_assets	165405000		I1,I2,I3,I4	1000	
+sunderland-afc	sunderland-afc__1	KDDWTCCgoYQxDC9gmqwG1XRJzar7GuxBUsNUjngNENQ	2025-07-31	plain	net_assets	-37373000		I1,I2,I3,I4	1000	
+sunderland-afc	sunderland-afc__1	KDDWTCCgoYQxDC9gmqwG1XRJzar7GuxBUsNUjngNENQ	2025-07-31	plain	net_current_assets	-101137000		I1,I2,I3,I4	1000	
+sunderland-afc	sunderland-afc__1	KDDWTCCgoYQxDC9gmqwG1XRJzar7GuxBUsNUjngNENQ	2025-07-31	plain	share_capital	1000000		I1,I2,I3,I4	1000	
+sunderland-afc	sunderland-afc__1	KDDWTCCgoYQxDC9gmqwG1XRJzar7GuxBUsNUjngNENQ	2025-07-31	plain	total_assets_less_current_liabilities	64268000		I1,I2,I3,I4	1000	
+sunderland-afc	sunderland-afc__2	xZDkaXKmShUhfPyNv1eapTzT8Jc-Yxq_UiMYvtxmuD4	2024-07-31	document	_disclosure	full				
+sunderland-afc	sunderland-afc__2	xZDkaXKmShUhfPyNv1eapTzT8Jc-Yxq_UiMYvtxmuD4	2024-07-31	document	_pnl_withheld					
+sunderland-afc	sunderland-afc__2	xZDkaXKmShUhfPyNv1eapTzT8Jc-Yxq_UiMYvtxmuD4	2024-07-31	document	_going_concern					
+sunderland-afc	sunderland-afc__2	xZDkaXKmShUhfPyNv1eapTzT8Jc-Yxq_UiMYvtxmuD4	2024-07-31	plain	creditors_after_year	4776000		I2,I3,I4	1000	
+sunderland-afc	sunderland-afc__2	xZDkaXKmShUhfPyNv1eapTzT8Jc-Yxq_UiMYvtxmuD4	2024-07-31	plain	fixed_assets	25605000		I2,I3,I4	1000	
+sunderland-afc	sunderland-afc__2	xZDkaXKmShUhfPyNv1eapTzT8Jc-Yxq_UiMYvtxmuD4	2024-07-31	plain	net_assets	-34094000		I2,I3,I4	1000	
+sunderland-afc	sunderland-afc__2	xZDkaXKmShUhfPyNv1eapTzT8Jc-Yxq_UiMYvtxmuD4	2024-07-31	plain	net_current_assets	-54923000		I2,I3,I4	1000	
+sunderland-afc	sunderland-afc__2	xZDkaXKmShUhfPyNv1eapTzT8Jc-Yxq_UiMYvtxmuD4	2024-07-31	plain	share_capital	1000000		I2,I3,I4	1000	
+sunderland-afc	sunderland-afc__2	xZDkaXKmShUhfPyNv1eapTzT8Jc-Yxq_UiMYvtxmuD4	2024-07-31	plain	total_assets_less_current_liabilities	-29318000		I2,I3,I4	1000	
+swansea-city-fc	swansea-city-fc__1	l1WfV6ONYsH8M5v6RrgQbNDU3Vq5ksKwm7qwB4123UY	2025-06-30	document	_disclosure	full				
+swansea-city-fc	swansea-city-fc__1	l1WfV6ONYsH8M5v6RrgQbNDU3Vq5ksKwm7qwB4123UY	2025-06-30	document	_pnl_withheld					
+swansea-city-fc	swansea-city-fc__1	l1WfV6ONYsH8M5v6RrgQbNDU3Vq5ksKwm7qwB4123UY	2025-06-30	document	_going_concern					
+swansea-city-fc	swansea-city-fc__1	l1WfV6ONYsH8M5v6RrgQbNDU3Vq5ksKwm7qwB4123UY	2025-06-30	plain	creditors_after_year	4684467		I1,I2,I3,I4,staff_costs:sum of 3	1	
+swansea-city-fc	swansea-city-fc__1	l1WfV6ONYsH8M5v6RrgQbNDU3Vq5ksKwm7qwB4123UY	2025-06-30	plain	creditors_within_year	16573110		I1,I2,I3,I4,staff_costs:sum of 3	1	
+swansea-city-fc	swansea-city-fc__1	l1WfV6ONYsH8M5v6RrgQbNDU3Vq5ksKwm7qwB4123UY	2025-06-30	plain	current_assets	17181774		I1,I2,I3,I4,staff_costs:sum of 3	1	
+swansea-city-fc	swansea-city-fc__1	l1WfV6ONYsH8M5v6RrgQbNDU3Vq5ksKwm7qwB4123UY	2025-06-30	plain	fixed_assets	29949427		I1,I2,I3,I4,staff_costs:sum of 3	1	
+swansea-city-fc	swansea-city-fc__1	l1WfV6ONYsH8M5v6RrgQbNDU3Vq5ksKwm7qwB4123UY	2025-06-30	plain	intangible_assets	11844533		I1,I2,I3,I4,staff_costs:sum of 3	1	
+swansea-city-fc	swansea-city-fc__1	l1WfV6ONYsH8M5v6RrgQbNDU3Vq5ksKwm7qwB4123UY	2025-06-30	plain	net_assets	22689949		I1,I2,I3,I4,staff_costs:sum of 3	1	
+swansea-city-fc	swansea-city-fc__1	l1WfV6ONYsH8M5v6RrgQbNDU3Vq5ksKwm7qwB4123UY	2025-06-30	plain	net_current_assets	608664		I1,I2,I3,I4,staff_costs:sum of 3	1	
+swansea-city-fc	swansea-city-fc__1	l1WfV6ONYsH8M5v6RrgQbNDU3Vq5ksKwm7qwB4123UY	2025-06-30	plain	staff_costs	29019531		I1,I2,I3,I4,staff_costs:sum of 3	1	
+swansea-city-fc	swansea-city-fc__1	l1WfV6ONYsH8M5v6RrgQbNDU3Vq5ksKwm7qwB4123UY	2025-06-30	plain	tangible_assets	18054893		I1,I2,I3,I4,staff_costs:sum of 3	1	
+swansea-city-fc	swansea-city-fc__1	l1WfV6ONYsH8M5v6RrgQbNDU3Vq5ksKwm7qwB4123UY	2025-06-30	plain	total_assets_less_current_liabilities	30558091		I1,I2,I3,I4,staff_costs:sum of 3	1	
+swansea-city-fc	swansea-city-fc__2	Hug2LeOKSX8UP4n2bd9CVfJknha7yY_8NJxz53y1SpU	2024-06-30	document	_disclosure	full				
+swansea-city-fc	swansea-city-fc__2	Hug2LeOKSX8UP4n2bd9CVfJknha7yY_8NJxz53y1SpU	2024-06-30	document	_pnl_withheld					
+swansea-city-fc	swansea-city-fc__2	Hug2LeOKSX8UP4n2bd9CVfJknha7yY_8NJxz53y1SpU	2024-06-30	document	_going_concern					
+swansea-city-fc	swansea-city-fc__2	Hug2LeOKSX8UP4n2bd9CVfJknha7yY_8NJxz53y1SpU	2024-06-30	plain	creditors_after_year	7710553		I1,I2,I3,I4,staff_costs:sum of 3	1	
+swansea-city-fc	swansea-city-fc__2	Hug2LeOKSX8UP4n2bd9CVfJknha7yY_8NJxz53y1SpU	2024-06-30	plain	creditors_within_year	11149432		I1,I2,I3,I4,staff_costs:sum of 3	1	
+swansea-city-fc	swansea-city-fc__2	Hug2LeOKSX8UP4n2bd9CVfJknha7yY_8NJxz53y1SpU	2024-06-30	plain	current_assets	17764568		I1,I2,I3,I4,staff_costs:sum of 3	1	
+swansea-city-fc	swansea-city-fc__2	Hug2LeOKSX8UP4n2bd9CVfJknha7yY_8NJxz53y1SpU	2024-06-30	plain	fixed_assets	27436061		I1,I2,I3,I4,staff_costs:sum of 3	1	
+swansea-city-fc	swansea-city-fc__2	Hug2LeOKSX8UP4n2bd9CVfJknha7yY_8NJxz53y1SpU	2024-06-30	plain	intangible_assets	9267396		I1,I2,I3,I4,staff_costs:sum of 3	1	
+swansea-city-fc	swansea-city-fc__2	Hug2LeOKSX8UP4n2bd9CVfJknha7yY_8NJxz53y1SpU	2024-06-30	plain	net_assets	23221071		I1,I2,I3,I4,staff_costs:sum of 3	1	
+swansea-city-fc	swansea-city-fc__2	Hug2LeOKSX8UP4n2bd9CVfJknha7yY_8NJxz53y1SpU	2024-06-30	plain	net_current_assets	6615136		I1,I2,I3,I4,staff_costs:sum of 3	1	
+swansea-city-fc	swansea-city-fc__2	Hug2LeOKSX8UP4n2bd9CVfJknha7yY_8NJxz53y1SpU	2024-06-30	plain	staff_costs	27347429		I1,I2,I3,I4,staff_costs:sum of 3	1	
+swansea-city-fc	swansea-city-fc__2	Hug2LeOKSX8UP4n2bd9CVfJknha7yY_8NJxz53y1SpU	2024-06-30	plain	tangible_assets	18118664		I1,I2,I3,I4,staff_costs:sum of 3	1	
+swansea-city-fc	swansea-city-fc__2	Hug2LeOKSX8UP4n2bd9CVfJknha7yY_8NJxz53y1SpU	2024-06-30	plain	total_assets_less_current_liabilities	34051197		I1,I2,I3,I4,staff_costs:sum of 3	1	
+tranmere-rovers-fc	tranmere-rovers-fc__2	emtrfO7n4M36YxNZFte7Okyih6oYzZbkm1YDxBooznw	2024-06-30	document	_disclosure	full				
+tranmere-rovers-fc	tranmere-rovers-fc__2	emtrfO7n4M36YxNZFte7Okyih6oYzZbkm1YDxBooznw	2024-06-30	document	_pnl_withheld					
+tranmere-rovers-fc	tranmere-rovers-fc__2	emtrfO7n4M36YxNZFte7Okyih6oYzZbkm1YDxBooznw	2024-06-30	document	_going_concern					
+tranmere-rovers-fc	tranmere-rovers-fc__2	emtrfO7n4M36YxNZFte7Okyih6oYzZbkm1YDxBooznw	2024-06-30	group	cash	482674		I1,I2,I3,I4	1	
+tranmere-rovers-fc	tranmere-rovers-fc__2	emtrfO7n4M36YxNZFte7Okyih6oYzZbkm1YDxBooznw	2024-06-30	group	creditors_after_year	6666565		I1,I2,I3,I4	1	
+tranmere-rovers-fc	tranmere-rovers-fc__2	emtrfO7n4M36YxNZFte7Okyih6oYzZbkm1YDxBooznw	2024-06-30	group	creditors_within_year	2557913		I1,I2,I3,I4	1	
+tranmere-rovers-fc	tranmere-rovers-fc__2	emtrfO7n4M36YxNZFte7Okyih6oYzZbkm1YDxBooznw	2024-06-30	group	current_assets	3911877		I1,I2,I3,I4	1	
+tranmere-rovers-fc	tranmere-rovers-fc__2	emtrfO7n4M36YxNZFte7Okyih6oYzZbkm1YDxBooznw	2024-06-30	group	debtors	3203074		I1,I2,I3,I4	1	
+tranmere-rovers-fc	tranmere-rovers-fc__2	emtrfO7n4M36YxNZFte7Okyih6oYzZbkm1YDxBooznw	2024-06-30	group	fixed_assets	26672346		I1,I2,I3,I4	1	
+tranmere-rovers-fc	tranmere-rovers-fc__2	emtrfO7n4M36YxNZFte7Okyih6oYzZbkm1YDxBooznw	2024-06-30	group	intangible_assets	4144		I1,I2,I3,I4	1	
+tranmere-rovers-fc	tranmere-rovers-fc__2	emtrfO7n4M36YxNZFte7Okyih6oYzZbkm1YDxBooznw	2024-06-30	group	net_assets	16305560		I1,I2,I3,I4	1	
+tranmere-rovers-fc	tranmere-rovers-fc__2	emtrfO7n4M36YxNZFte7Okyih6oYzZbkm1YDxBooznw	2024-06-30	group	net_current_assets	1353964		I1,I2,I3,I4	1	
+tranmere-rovers-fc	tranmere-rovers-fc__2	emtrfO7n4M36YxNZFte7Okyih6oYzZbkm1YDxBooznw	2024-06-30	group	tangible_assets	26668202		I1,I2,I3,I4	1	
+tranmere-rovers-fc	tranmere-rovers-fc__2	emtrfO7n4M36YxNZFte7Okyih6oYzZbkm1YDxBooznw	2024-06-30	group	total_assets_less_current_liabilities	28026310		I1,I2,I3,I4	1	
+tranmere-rovers-fc	tranmere-rovers-fc__2	emtrfO7n4M36YxNZFte7Okyih6oYzZbkm1YDxBooznw	2024-06-30	company	cash	394851		I1,I2,I3,I4	1	
+tranmere-rovers-fc	tranmere-rovers-fc__2	emtrfO7n4M36YxNZFte7Okyih6oYzZbkm1YDxBooznw	2024-06-30	company	creditors_after_year	6325739		I1,I2,I3,I4	1	
+tranmere-rovers-fc	tranmere-rovers-fc__2	emtrfO7n4M36YxNZFte7Okyih6oYzZbkm1YDxBooznw	2024-06-30	company	creditors_within_year	2550490		I1,I2,I3,I4	1	
+tranmere-rovers-fc	tranmere-rovers-fc__2	emtrfO7n4M36YxNZFte7Okyih6oYzZbkm1YDxBooznw	2024-06-30	company	current_assets	3764596		I1,I2,I3,I4	1	
+tranmere-rovers-fc	tranmere-rovers-fc__2	emtrfO7n4M36YxNZFte7Okyih6oYzZbkm1YDxBooznw	2024-06-30	company	debtors	3143616		I1,I2,I3,I4	1	
+tranmere-rovers-fc	tranmere-rovers-fc__2	emtrfO7n4M36YxNZFte7Okyih6oYzZbkm1YDxBooznw	2024-06-30	company	fixed_assets	26642525		I1,I2,I3,I4	1	
+tranmere-rovers-fc	tranmere-rovers-fc__2	emtrfO7n4M36YxNZFte7Okyih6oYzZbkm1YDxBooznw	2024-06-30	company	intangible_assets	4144		I1,I2,I3,I4	1	
+tranmere-rovers-fc	tranmere-rovers-fc__2	emtrfO7n4M36YxNZFte7Okyih6oYzZbkm1YDxBooznw	2024-06-30	company	net_assets	16476707		I1,I2,I3,I4	1	
+tranmere-rovers-fc	tranmere-rovers-fc__2	emtrfO7n4M36YxNZFte7Okyih6oYzZbkm1YDxBooznw	2024-06-30	company	net_current_assets	1214106		I1,I2,I3,I4	1	
+tranmere-rovers-fc	tranmere-rovers-fc__2	emtrfO7n4M36YxNZFte7Okyih6oYzZbkm1YDxBooznw	2024-06-30	company	share_capital	6600853		I1,I2,I3,I4	1	
+tranmere-rovers-fc	tranmere-rovers-fc__2	emtrfO7n4M36YxNZFte7Okyih6oYzZbkm1YDxBooznw	2024-06-30	company	tangible_assets	26636700		I1,I2,I3,I4	1	
+tranmere-rovers-fc	tranmere-rovers-fc__2	emtrfO7n4M36YxNZFte7Okyih6oYzZbkm1YDxBooznw	2024-06-30	company	total_assets_less_current_liabilities	27856631		I1,I2,I3,I4	1	
+walsall-fc	walsall-fc__1	S-HUAcuamTSVTwe2mWLXm-3ayEna9LAEMSG54BYMUzo	2025-05-31	document	_disclosure	full				
+walsall-fc	walsall-fc__1	S-HUAcuamTSVTwe2mWLXm-3ayEna9LAEMSG54BYMUzo	2025-05-31	document	_pnl_withheld					
+walsall-fc	walsall-fc__1	S-HUAcuamTSVTwe2mWLXm-3ayEna9LAEMSG54BYMUzo	2025-05-31	document	_going_concern					
+walsall-fc	walsall-fc__1	S-HUAcuamTSVTwe2mWLXm-3ayEna9LAEMSG54BYMUzo	2025-05-31	plain	cash	3000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+walsall-fc	walsall-fc__1	S-HUAcuamTSVTwe2mWLXm-3ayEna9LAEMSG54BYMUzo	2025-05-31	plain	creditors_after_year	9309000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+walsall-fc	walsall-fc__1	S-HUAcuamTSVTwe2mWLXm-3ayEna9LAEMSG54BYMUzo	2025-05-31	plain	creditors_within_year	3138000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+walsall-fc	walsall-fc__1	S-HUAcuamTSVTwe2mWLXm-3ayEna9LAEMSG54BYMUzo	2025-05-31	plain	current_assets	951000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+walsall-fc	walsall-fc__1	S-HUAcuamTSVTwe2mWLXm-3ayEna9LAEMSG54BYMUzo	2025-05-31	plain	debtors	765000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+walsall-fc	walsall-fc__1	S-HUAcuamTSVTwe2mWLXm-3ayEna9LAEMSG54BYMUzo	2025-05-31	plain	employees	132		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+walsall-fc	walsall-fc__1	S-HUAcuamTSVTwe2mWLXm-3ayEna9LAEMSG54BYMUzo	2025-05-31	plain	fixed_assets	13981000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+walsall-fc	walsall-fc__1	S-HUAcuamTSVTwe2mWLXm-3ayEna9LAEMSG54BYMUzo	2025-05-31	plain	intangible_assets	59000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+walsall-fc	walsall-fc__1	S-HUAcuamTSVTwe2mWLXm-3ayEna9LAEMSG54BYMUzo	2025-05-31	plain	net_assets	2485000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+walsall-fc	walsall-fc__1	S-HUAcuamTSVTwe2mWLXm-3ayEna9LAEMSG54BYMUzo	2025-05-31	plain	net_current_assets	-2187000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+walsall-fc	walsall-fc__1	S-HUAcuamTSVTwe2mWLXm-3ayEna9LAEMSG54BYMUzo	2025-05-31	plain	staff_costs	5879000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+walsall-fc	walsall-fc__1	S-HUAcuamTSVTwe2mWLXm-3ayEna9LAEMSG54BYMUzo	2025-05-31	plain	tangible_assets	13922000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+walsall-fc	walsall-fc__1	S-HUAcuamTSVTwe2mWLXm-3ayEna9LAEMSG54BYMUzo	2025-05-31	plain	total_assets_less_current_liabilities	11794000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+walsall-fc	walsall-fc__2	sCHBQQ5V6RVbhb9gwo_TdlKfSvhbPyL975-PFTu8BG4	2024-05-31	document	_disclosure	full				
+walsall-fc	walsall-fc__2	sCHBQQ5V6RVbhb9gwo_TdlKfSvhbPyL975-PFTu8BG4	2024-05-31	document	_pnl_withheld					
+walsall-fc	walsall-fc__2	sCHBQQ5V6RVbhb9gwo_TdlKfSvhbPyL975-PFTu8BG4	2024-05-31	document	_going_concern					
+walsall-fc	walsall-fc__2	sCHBQQ5V6RVbhb9gwo_TdlKfSvhbPyL975-PFTu8BG4	2024-05-31	plain	cash	3000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+walsall-fc	walsall-fc__2	sCHBQQ5V6RVbhb9gwo_TdlKfSvhbPyL975-PFTu8BG4	2024-05-31	plain	creditors_after_year	7781000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+walsall-fc	walsall-fc__2	sCHBQQ5V6RVbhb9gwo_TdlKfSvhbPyL975-PFTu8BG4	2024-05-31	plain	creditors_within_year	2742000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+walsall-fc	walsall-fc__2	sCHBQQ5V6RVbhb9gwo_TdlKfSvhbPyL975-PFTu8BG4	2024-05-31	plain	current_assets	928000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+walsall-fc	walsall-fc__2	sCHBQQ5V6RVbhb9gwo_TdlKfSvhbPyL975-PFTu8BG4	2024-05-31	plain	debtors	803000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+walsall-fc	walsall-fc__2	sCHBQQ5V6RVbhb9gwo_TdlKfSvhbPyL975-PFTu8BG4	2024-05-31	plain	employees	107		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+walsall-fc	walsall-fc__2	sCHBQQ5V6RVbhb9gwo_TdlKfSvhbPyL975-PFTu8BG4	2024-05-31	plain	fixed_assets	14048000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+walsall-fc	walsall-fc__2	sCHBQQ5V6RVbhb9gwo_TdlKfSvhbPyL975-PFTu8BG4	2024-05-31	plain	intangible_assets	23000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+walsall-fc	walsall-fc__2	sCHBQQ5V6RVbhb9gwo_TdlKfSvhbPyL975-PFTu8BG4	2024-05-31	plain	net_assets	4453000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+walsall-fc	walsall-fc__2	sCHBQQ5V6RVbhb9gwo_TdlKfSvhbPyL975-PFTu8BG4	2024-05-31	plain	net_current_assets	-1814000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+walsall-fc	walsall-fc__2	sCHBQQ5V6RVbhb9gwo_TdlKfSvhbPyL975-PFTu8BG4	2024-05-31	plain	staff_costs	5063000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+walsall-fc	walsall-fc__2	sCHBQQ5V6RVbhb9gwo_TdlKfSvhbPyL975-PFTu8BG4	2024-05-31	plain	tangible_assets	14025000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+walsall-fc	walsall-fc__2	sCHBQQ5V6RVbhb9gwo_TdlKfSvhbPyL975-PFTu8BG4	2024-05-31	plain	total_assets_less_current_liabilities	12234000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__1	Id5lFQSJhTOP3dvu69MjY8coATQ8qIoWWcfpGoUXobs	2025-06-30	document	_disclosure	full				
+west-bromwich-albion-fc	west-bromwich-albion-fc__1	Id5lFQSJhTOP3dvu69MjY8coATQ8qIoWWcfpGoUXobs	2025-06-30	document	_pnl_withheld					
+west-bromwich-albion-fc	west-bromwich-albion-fc__1	Id5lFQSJhTOP3dvu69MjY8coATQ8qIoWWcfpGoUXobs	2025-06-30	document	_going_concern					
+west-bromwich-albion-fc	west-bromwich-albion-fc__1	Id5lFQSJhTOP3dvu69MjY8coATQ8qIoWWcfpGoUXobs	2025-06-30	group	cash	482000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__1	Id5lFQSJhTOP3dvu69MjY8coATQ8qIoWWcfpGoUXobs	2025-06-30	group	creditors_after_year	4264000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__1	Id5lFQSJhTOP3dvu69MjY8coATQ8qIoWWcfpGoUXobs	2025-06-30	group	creditors_within_year	74497000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__1	Id5lFQSJhTOP3dvu69MjY8coATQ8qIoWWcfpGoUXobs	2025-06-30	group	current_assets	18971000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__1	Id5lFQSJhTOP3dvu69MjY8coATQ8qIoWWcfpGoUXobs	2025-06-30	group	debtors	17783000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__1	Id5lFQSJhTOP3dvu69MjY8coATQ8qIoWWcfpGoUXobs	2025-06-30	group	fixed_assets	37699000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__1	Id5lFQSJhTOP3dvu69MjY8coATQ8qIoWWcfpGoUXobs	2025-06-30	group	intangible_assets	13318000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__1	Id5lFQSJhTOP3dvu69MjY8coATQ8qIoWWcfpGoUXobs	2025-06-30	group	net_assets	-22091000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__1	Id5lFQSJhTOP3dvu69MjY8coATQ8qIoWWcfpGoUXobs	2025-06-30	group	net_current_assets	-55526000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__1	Id5lFQSJhTOP3dvu69MjY8coATQ8qIoWWcfpGoUXobs	2025-06-30	group	share_capital	96000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__1	Id5lFQSJhTOP3dvu69MjY8coATQ8qIoWWcfpGoUXobs	2025-06-30	group	tangible_assets	23447000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__1	Id5lFQSJhTOP3dvu69MjY8coATQ8qIoWWcfpGoUXobs	2025-06-30	group	total_assets_less_current_liabilities	-17827000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__1	Id5lFQSJhTOP3dvu69MjY8coATQ8qIoWWcfpGoUXobs	2025-06-30	company	cash	12000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__1	Id5lFQSJhTOP3dvu69MjY8coATQ8qIoWWcfpGoUXobs	2025-06-30	company	creditors_after_year	0		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__1	Id5lFQSJhTOP3dvu69MjY8coATQ8qIoWWcfpGoUXobs	2025-06-30	company	creditors_within_year	53551000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__1	Id5lFQSJhTOP3dvu69MjY8coATQ8qIoWWcfpGoUXobs	2025-06-30	company	current_assets	71724000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__1	Id5lFQSJhTOP3dvu69MjY8coATQ8qIoWWcfpGoUXobs	2025-06-30	company	debtors	71712000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__1	Id5lFQSJhTOP3dvu69MjY8coATQ8qIoWWcfpGoUXobs	2025-06-30	company	fixed_assets	12541000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__1	Id5lFQSJhTOP3dvu69MjY8coATQ8qIoWWcfpGoUXobs	2025-06-30	company	net_assets	30714000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__1	Id5lFQSJhTOP3dvu69MjY8coATQ8qIoWWcfpGoUXobs	2025-06-30	company	net_current_assets	18173000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__1	Id5lFQSJhTOP3dvu69MjY8coATQ8qIoWWcfpGoUXobs	2025-06-30	company	share_capital	96000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__1	Id5lFQSJhTOP3dvu69MjY8coATQ8qIoWWcfpGoUXobs	2025-06-30	company	total_assets_less_current_liabilities	30714000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__2	o9ALZ-Tzz_ZXZRkzO-5v_6MvjH71zmP_KWKt6ldKelQ	2024-06-30	document	_disclosure	full				
+west-bromwich-albion-fc	west-bromwich-albion-fc__2	o9ALZ-Tzz_ZXZRkzO-5v_6MvjH71zmP_KWKt6ldKelQ	2024-06-30	document	_pnl_withheld					
+west-bromwich-albion-fc	west-bromwich-albion-fc__2	o9ALZ-Tzz_ZXZRkzO-5v_6MvjH71zmP_KWKt6ldKelQ	2024-06-30	document	_going_concern					
+west-bromwich-albion-fc	west-bromwich-albion-fc__2	o9ALZ-Tzz_ZXZRkzO-5v_6MvjH71zmP_KWKt6ldKelQ	2024-06-30	group	cash	2825000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__2	o9ALZ-Tzz_ZXZRkzO-5v_6MvjH71zmP_KWKt6ldKelQ	2024-06-30	group	creditors_after_year	31036000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__2	o9ALZ-Tzz_ZXZRkzO-5v_6MvjH71zmP_KWKt6ldKelQ	2024-06-30	group	creditors_within_year	27565000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__2	o9ALZ-Tzz_ZXZRkzO-5v_6MvjH71zmP_KWKt6ldKelQ	2024-06-30	group	current_assets	17995000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__2	o9ALZ-Tzz_ZXZRkzO-5v_6MvjH71zmP_KWKt6ldKelQ	2024-06-30	group	debtors	14756000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__2	o9ALZ-Tzz_ZXZRkzO-5v_6MvjH71zmP_KWKt6ldKelQ	2024-06-30	group	fixed_assets	37281000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__2	o9ALZ-Tzz_ZXZRkzO-5v_6MvjH71zmP_KWKt6ldKelQ	2024-06-30	group	intangible_assets	12742000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__2	o9ALZ-Tzz_ZXZRkzO-5v_6MvjH71zmP_KWKt6ldKelQ	2024-06-30	group	net_assets	-3325000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__2	o9ALZ-Tzz_ZXZRkzO-5v_6MvjH71zmP_KWKt6ldKelQ	2024-06-30	group	net_current_assets	-9570000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__2	o9ALZ-Tzz_ZXZRkzO-5v_6MvjH71zmP_KWKt6ldKelQ	2024-06-30	group	share_capital	96000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__2	o9ALZ-Tzz_ZXZRkzO-5v_6MvjH71zmP_KWKt6ldKelQ	2024-06-30	group	tangible_assets	23605000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__2	o9ALZ-Tzz_ZXZRkzO-5v_6MvjH71zmP_KWKt6ldKelQ	2024-06-30	group	total_assets_less_current_liabilities	27711000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__2	o9ALZ-Tzz_ZXZRkzO-5v_6MvjH71zmP_KWKt6ldKelQ	2024-06-30	company	cash	12000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__2	o9ALZ-Tzz_ZXZRkzO-5v_6MvjH71zmP_KWKt6ldKelQ	2024-06-30	company	creditors_after_year	25524000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__2	o9ALZ-Tzz_ZXZRkzO-5v_6MvjH71zmP_KWKt6ldKelQ	2024-06-30	company	creditors_within_year	10222000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__2	o9ALZ-Tzz_ZXZRkzO-5v_6MvjH71zmP_KWKt6ldKelQ	2024-06-30	company	current_assets	52577000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__2	o9ALZ-Tzz_ZXZRkzO-5v_6MvjH71zmP_KWKt6ldKelQ	2024-06-30	company	debtors	52565000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__2	o9ALZ-Tzz_ZXZRkzO-5v_6MvjH71zmP_KWKt6ldKelQ	2024-06-30	company	fixed_assets	12541000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__2	o9ALZ-Tzz_ZXZRkzO-5v_6MvjH71zmP_KWKt6ldKelQ	2024-06-30	company	net_assets	29372000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__2	o9ALZ-Tzz_ZXZRkzO-5v_6MvjH71zmP_KWKt6ldKelQ	2024-06-30	company	net_current_assets	42355000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__2	o9ALZ-Tzz_ZXZRkzO-5v_6MvjH71zmP_KWKt6ldKelQ	2024-06-30	company	share_capital	96000		I1,I2,I3,I4	1000	
+west-bromwich-albion-fc	west-bromwich-albion-fc__2	o9ALZ-Tzz_ZXZRkzO-5v_6MvjH71zmP_KWKt6ldKelQ	2024-06-30	company	total_assets_less_current_liabilities	54896000		I1,I2,I3,I4	1000	
+west-ham-united-fc	west-ham-united-fc__1	_eZ_6JGNlHRyIqp0DfzwozI_ntj0L30QebKSJx0PQ8Y	2025-05-31	document	_disclosure	full				
+west-ham-united-fc	west-ham-united-fc__1	_eZ_6JGNlHRyIqp0DfzwozI_ntj0L30QebKSJx0PQ8Y	2025-05-31	document	_pnl_withheld					
+west-ham-united-fc	west-ham-united-fc__1	_eZ_6JGNlHRyIqp0DfzwozI_ntj0L30QebKSJx0PQ8Y	2025-05-31	document	_going_concern					
+west-ham-united-fc	west-ham-united-fc__1	_eZ_6JGNlHRyIqp0DfzwozI_ntj0L30QebKSJx0PQ8Y	2025-05-31	plain	creditors_after_year	90821000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+west-ham-united-fc	west-ham-united-fc__1	_eZ_6JGNlHRyIqp0DfzwozI_ntj0L30QebKSJx0PQ8Y	2025-05-31	plain	creditors_within_year	415196000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+west-ham-united-fc	west-ham-united-fc__1	_eZ_6JGNlHRyIqp0DfzwozI_ntj0L30QebKSJx0PQ8Y	2025-05-31	plain	current_assets	37455000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+west-ham-united-fc	west-ham-united-fc__1	_eZ_6JGNlHRyIqp0DfzwozI_ntj0L30QebKSJx0PQ8Y	2025-05-31	plain	employees	440		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+west-ham-united-fc	west-ham-united-fc__1	_eZ_6JGNlHRyIqp0DfzwozI_ntj0L30QebKSJx0PQ8Y	2025-05-31	plain	fixed_assets	258616000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+west-ham-united-fc	west-ham-united-fc__1	_eZ_6JGNlHRyIqp0DfzwozI_ntj0L30QebKSJx0PQ8Y	2025-05-31	plain	intangible_assets	223152000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+west-ham-united-fc	west-ham-united-fc__1	_eZ_6JGNlHRyIqp0DfzwozI_ntj0L30QebKSJx0PQ8Y	2025-05-31	plain	net_assets	-216622000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+west-ham-united-fc	west-ham-united-fc__1	_eZ_6JGNlHRyIqp0DfzwozI_ntj0L30QebKSJx0PQ8Y	2025-05-31	plain	net_current_assets	-377741000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+west-ham-united-fc	west-ham-united-fc__1	_eZ_6JGNlHRyIqp0DfzwozI_ntj0L30QebKSJx0PQ8Y	2025-05-31	plain	share_capital	5500000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+west-ham-united-fc	west-ham-united-fc__1	_eZ_6JGNlHRyIqp0DfzwozI_ntj0L30QebKSJx0PQ8Y	2025-05-31	plain	staff_costs	173335000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+west-ham-united-fc	west-ham-united-fc__1	_eZ_6JGNlHRyIqp0DfzwozI_ntj0L30QebKSJx0PQ8Y	2025-05-31	plain	tangible_assets	35464000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+west-ham-united-fc	west-ham-united-fc__1	_eZ_6JGNlHRyIqp0DfzwozI_ntj0L30QebKSJx0PQ8Y	2025-05-31	plain	total_assets_less_current_liabilities	-119125000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+west-ham-united-fc	west-ham-united-fc__2	ri8GjIN__irazjj_H6LM7Cpr6M4DD0a6VuZ7l3WhPog	2024-05-31	document	_disclosure	full				
+west-ham-united-fc	west-ham-united-fc__2	ri8GjIN__irazjj_H6LM7Cpr6M4DD0a6VuZ7l3WhPog	2024-05-31	document	_pnl_withheld					
+west-ham-united-fc	west-ham-united-fc__2	ri8GjIN__irazjj_H6LM7Cpr6M4DD0a6VuZ7l3WhPog	2024-05-31	document	_going_concern					
+west-ham-united-fc	west-ham-united-fc__2	ri8GjIN__irazjj_H6LM7Cpr6M4DD0a6VuZ7l3WhPog	2024-05-31	plain	creditors_after_year	93207000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+west-ham-united-fc	west-ham-united-fc__2	ri8GjIN__irazjj_H6LM7Cpr6M4DD0a6VuZ7l3WhPog	2024-05-31	plain	creditors_within_year	396630000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+west-ham-united-fc	west-ham-united-fc__2	ri8GjIN__irazjj_H6LM7Cpr6M4DD0a6VuZ7l3WhPog	2024-05-31	plain	current_assets	150162000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+west-ham-united-fc	west-ham-united-fc__2	ri8GjIN__irazjj_H6LM7Cpr6M4DD0a6VuZ7l3WhPog	2024-05-31	plain	employees	383		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+west-ham-united-fc	west-ham-united-fc__2	ri8GjIN__irazjj_H6LM7Cpr6M4DD0a6VuZ7l3WhPog	2024-05-31	plain	fixed_assets	240792000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+west-ham-united-fc	west-ham-united-fc__2	ri8GjIN__irazjj_H6LM7Cpr6M4DD0a6VuZ7l3WhPog	2024-05-31	plain	intangible_assets	213949000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+west-ham-united-fc	west-ham-united-fc__2	ri8GjIN__irazjj_H6LM7Cpr6M4DD0a6VuZ7l3WhPog	2024-05-31	plain	net_assets	-108361000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+west-ham-united-fc	west-ham-united-fc__2	ri8GjIN__irazjj_H6LM7Cpr6M4DD0a6VuZ7l3WhPog	2024-05-31	plain	net_current_assets	-246468000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+west-ham-united-fc	west-ham-united-fc__2	ri8GjIN__irazjj_H6LM7Cpr6M4DD0a6VuZ7l3WhPog	2024-05-31	plain	share_capital	5500000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+west-ham-united-fc	west-ham-united-fc__2	ri8GjIN__irazjj_H6LM7Cpr6M4DD0a6VuZ7l3WhPog	2024-05-31	plain	staff_costs	159040000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+west-ham-united-fc	west-ham-united-fc__2	ri8GjIN__irazjj_H6LM7Cpr6M4DD0a6VuZ7l3WhPog	2024-05-31	plain	tangible_assets	26843000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+west-ham-united-fc	west-ham-united-fc__2	ri8GjIN__irazjj_H6LM7Cpr6M4DD0a6VuZ7l3WhPog	2024-05-31	plain	total_assets_less_current_liabilities	-5676000		I1,I2,I3,I4,employees:sum of 2,staff_costs:sum of 3	1000	
+wolverhampton-wanderers-fc	wolverhampton-wanderers-fc__1	_eqEO9Fh6G4YA9PFduC_jhNEsdXoGk7Auxr3bVwxFaU	2025-06-30	document	_disclosure	full				
+wolverhampton-wanderers-fc	wolverhampton-wanderers-fc__1	_eqEO9Fh6G4YA9PFduC_jhNEsdXoGk7Auxr3bVwxFaU	2025-06-30	document	_pnl_withheld					
+wolverhampton-wanderers-fc	wolverhampton-wanderers-fc__1	_eqEO9Fh6G4YA9PFduC_jhNEsdXoGk7Auxr3bVwxFaU	2025-06-30	document	_going_concern					
+wolverhampton-wanderers-fc	wolverhampton-wanderers-fc__1	_eqEO9Fh6G4YA9PFduC_jhNEsdXoGk7Auxr3bVwxFaU	2025-06-30	plain	creditors_after_year	161669000		I1,I2,I3,I4	1000	
+wolverhampton-wanderers-fc	wolverhampton-wanderers-fc__1	_eqEO9Fh6G4YA9PFduC_jhNEsdXoGk7Auxr3bVwxFaU	2025-06-30	plain	creditors_within_year	428765000		I1,I2,I3,I4	1000	
+wolverhampton-wanderers-fc	wolverhampton-wanderers-fc__1	_eqEO9Fh6G4YA9PFduC_jhNEsdXoGk7Auxr3bVwxFaU	2025-06-30	plain	current_assets	235298000		I1,I2,I3,I4	1000	
+wolverhampton-wanderers-fc	wolverhampton-wanderers-fc__1	_eqEO9Fh6G4YA9PFduC_jhNEsdXoGk7Auxr3bVwxFaU	2025-06-30	plain	fixed_assets	172873000		I1,I2,I3,I4	1000	
+wolverhampton-wanderers-fc	wolverhampton-wanderers-fc__1	_eqEO9Fh6G4YA9PFduC_jhNEsdXoGk7Auxr3bVwxFaU	2025-06-30	plain	intangible_assets	167743000		I1,I2,I3,I4	1000	
+wolverhampton-wanderers-fc	wolverhampton-wanderers-fc__1	_eqEO9Fh6G4YA9PFduC_jhNEsdXoGk7Auxr3bVwxFaU	2025-06-30	plain	net_assets	-185964000		I1,I2,I3,I4	1000	
+wolverhampton-wanderers-fc	wolverhampton-wanderers-fc__1	_eqEO9Fh6G4YA9PFduC_jhNEsdXoGk7Auxr3bVwxFaU	2025-06-30	plain	net_current_assets	-193467000		I1,I2,I3,I4	1000	
+wolverhampton-wanderers-fc	wolverhampton-wanderers-fc__1	_eqEO9Fh6G4YA9PFduC_jhNEsdXoGk7Auxr3bVwxFaU	2025-06-30	plain	share_capital	3000000		I1,I2,I3,I4	1000	
+wolverhampton-wanderers-fc	wolverhampton-wanderers-fc__1	_eqEO9Fh6G4YA9PFduC_jhNEsdXoGk7Auxr3bVwxFaU	2025-06-30	plain	tangible_assets	5130000		I1,I2,I3,I4	1000	
+wolverhampton-wanderers-fc	wolverhampton-wanderers-fc__1	_eqEO9Fh6G4YA9PFduC_jhNEsdXoGk7Auxr3bVwxFaU	2025-06-30	plain	total_assets_less_current_liabilities	-20594000		I1,I2,I3,I4	1000	
+wolverhampton-wanderers-fc	wolverhampton-wanderers-fc__2	10wxhCpHJjvL1qpDkyYhvy5IRFNtwzsiYNZyJeJ0ja0	2024-05-31	document	_disclosure	full				
+wolverhampton-wanderers-fc	wolverhampton-wanderers-fc__2	10wxhCpHJjvL1qpDkyYhvy5IRFNtwzsiYNZyJeJ0ja0	2024-05-31	document	_pnl_withheld					
+wolverhampton-wanderers-fc	wolverhampton-wanderers-fc__2	10wxhCpHJjvL1qpDkyYhvy5IRFNtwzsiYNZyJeJ0ja0	2024-05-31	document	_going_concern					
+wolverhampton-wanderers-fc	wolverhampton-wanderers-fc__2	10wxhCpHJjvL1qpDkyYhvy5IRFNtwzsiYNZyJeJ0ja0	2024-05-31	plain	creditors_after_year	152813000		I1,I2,I3,I4,employees:sum of 2	1000	
+wolverhampton-wanderers-fc	wolverhampton-wanderers-fc__2	10wxhCpHJjvL1qpDkyYhvy5IRFNtwzsiYNZyJeJ0ja0	2024-05-31	plain	creditors_within_year	361331000		I1,I2,I3,I4,employees:sum of 2	1000	
+wolverhampton-wanderers-fc	wolverhampton-wanderers-fc__2	10wxhCpHJjvL1qpDkyYhvy5IRFNtwzsiYNZyJeJ0ja0	2024-05-31	plain	current_assets	168999000		I1,I2,I3,I4,employees:sum of 2	1000	
+wolverhampton-wanderers-fc	wolverhampton-wanderers-fc__2	10wxhCpHJjvL1qpDkyYhvy5IRFNtwzsiYNZyJeJ0ja0	2024-05-31	plain	employees	394		I1,I2,I3,I4,employees:sum of 2	1000	
+wolverhampton-wanderers-fc	wolverhampton-wanderers-fc__2	10wxhCpHJjvL1qpDkyYhvy5IRFNtwzsiYNZyJeJ0ja0	2024-05-31	plain	fixed_assets	172792000		I1,I2,I3,I4,employees:sum of 2	1000	
+wolverhampton-wanderers-fc	wolverhampton-wanderers-fc__2	10wxhCpHJjvL1qpDkyYhvy5IRFNtwzsiYNZyJeJ0ja0	2024-05-31	plain	intangible_assets	167067000		I1,I2,I3,I4,employees:sum of 2	1000	
+wolverhampton-wanderers-fc	wolverhampton-wanderers-fc__2	10wxhCpHJjvL1qpDkyYhvy5IRFNtwzsiYNZyJeJ0ja0	2024-05-31	plain	net_assets	-174333000		I1,I2,I3,I4,employees:sum of 2	1000	
+wolverhampton-wanderers-fc	wolverhampton-wanderers-fc__2	10wxhCpHJjvL1qpDkyYhvy5IRFNtwzsiYNZyJeJ0ja0	2024-05-31	plain	net_current_assets	-192332000		I1,I2,I3,I4,employees:sum of 2	1000	
+wolverhampton-wanderers-fc	wolverhampton-wanderers-fc__2	10wxhCpHJjvL1qpDkyYhvy5IRFNtwzsiYNZyJeJ0ja0	2024-05-31	plain	tangible_assets	5725000		I1,I2,I3,I4,employees:sum of 2	1000	
+wolverhampton-wanderers-fc	wolverhampton-wanderers-fc__2	10wxhCpHJjvL1qpDkyYhvy5IRFNtwzsiYNZyJeJ0ja0	2024-05-31	plain	total_assets_less_current_liabilities	-19540000		I1,I2,I3,I4,employees:sum of 2	1000	

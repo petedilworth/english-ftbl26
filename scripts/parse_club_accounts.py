@@ -353,7 +353,11 @@ def _number(element) -> int | None:
 _GC_POSITIVE = re.compile(
     r"material uncertainty (?:related|relating) to going concern"
     r"|(?:indicate|indicates|that) a material uncertainty exists", re.I)
-_GC_NEGATION = re.compile(r"\b(?:no|not|nothing|any|without)\b[^.]{0,60}$", re.I)
+# A conditional is not a finding either. Derby County's auditor's report
+# says "If we conclude that a material uncertainty exists, we are required
+# to draw attention..." - the auditor describing the duty, not reporting it.
+_GC_NEGATION = re.compile(r"\b(?:no|not|nothing|any|without|if|whether|should|would)\b[^.]{0,60}$",
+                          re.I)
 
 
 def _going_concern(text: str) -> str | None:
@@ -941,7 +945,105 @@ NEW_COLUMNS = list(dict.fromkeys(
     + finances.BALANCE_COLUMNS + finances.STATUS_COLUMNS))
 
 
-def build_rows(facts: list[dict], existing: list[dict]) -> dict:
+PDF_FIGURES = PROJECT_ROOT / "data" / "companies" / "pdf" / "figures.tsv"
+COMPANIES_HOUSE = PROJECT_ROOT / "data" / "companies_house.json"
+
+# Machine-read rows, which are rebuilt on every run, and the flags that
+# mark the columns a hand row was topped up with, by source.
+MACHINE = ("ixbrl_auto", "pdf_ocr")
+FILL = {"ixbrl": ("ixbrl_balance_sheet", "ixbrl_fill:"), "pdf": ("pdf_balance_sheet", "pdf_fill:")}
+
+
+def _is_machine(flags: list[str]) -> bool:
+    return any(f in flags for f in MACHINE)
+
+
+def load_pdf_readings(path: Path = PDF_FIGURES) -> dict[str, dict]:
+    """
+    {document: reading} from scripts/read_pdf_figures.py's output: the
+    figures each scanned filing's balance sheet supports at each level,
+    and what the filing says about itself.
+    """
+    if not path.exists():
+        return {}
+    out: dict[str, dict] = {}
+    with path.open(encoding="utf-8", newline="") as fh:
+        for r in csv.DictReader(fh, delimiter="\t"):
+            doc = out.setdefault(r["document"], {"club_id": r["club_id"],
+                                                 "made_up_date": r["made_up_date"],
+                                                 "levels": {}, "doc": {}})
+            if r["level"] == "document":
+                doc["doc"][r["field"]] = r["value"]
+                continue
+            lv = doc["levels"].setdefault(r["level"], {"fields": {}, "fixes": set(),
+                                                       "from_contents": False})
+            lv["fields"][r["field"]] = int(r["value"])
+            lv["fixes"] |= {f for f in r["fixes"].split(",") if f}
+            lv["from_contents"] |= r.get("from_contents") == "yes"
+    return out
+
+
+def _pdf_level(levels: dict, wanted: str | None) -> str | None:
+    """
+    Which of a scan's balance sheets answers for a level. A filer with no
+    group prints one balance sheet - plain - and it is both its company
+    figures and, there being nothing to consolidate, its group ones. An
+    unlabelled block reaches here only as a filing's sole balance sheet.
+    """
+    single = next((lv for lv in ("plain", "unlabelled") if lv in levels), None)
+    if wanted == "group":
+        return "group" if "group" in levels else single
+    if wanted == "company":
+        return "company" if "company" in levels else single
+    return next((lv for lv in ("group", "plain", "unlabelled", "company") if lv in levels), None)
+
+
+def _pdf_entries(readings: dict[str, dict]) -> dict[tuple[str, int], dict]:
+    """The scans' readings in the shape build_rows works with."""
+    companies = {}
+    if COMPANIES_HOUSE.exists():
+        data = json.loads(COMPANIES_HOUSE.read_text(encoding="utf-8")).get("clubs") or {}
+        companies = {cid: (e.get("company") or {}) for cid, e in data.items()}
+    filings = {}
+    for rows in finances.load_filings().values():
+        for f in rows:
+            filings[f["document"]] = f
+    out = {}
+    for document, r in readings.items():
+        season = _season(r["made_up_date"])
+        level = _pdf_level(r["levels"], None)
+        if season is None or level is None:
+            continue
+        company = companies.get(r["club_id"], {})
+        filing = filings.get(document, {})
+        chosen = r["levels"][level]
+        doc = r["doc"]
+        flags = ["pdf_ocr"] + (["ocr_corrected"] if chosen["fixes"] else []) \
+            + (["level_from_contents"] if chosen["from_contents"] else [])
+        entry = {
+            "ok": True, "source": "pdf", "club_id": r["club_id"], "document": document,
+            "company_number": filing.get("company_number") or company.get("number", ""),
+            "entity_name": (company.get("name") or "").title(),
+            "filing_date": filing.get("filing_date", ""),
+            "transaction_id": filing.get("transaction_id", ""),
+            "period_end": r["made_up_date"], "period_start": "",
+            "fields": dict(chosen["fields"]),
+            "disclosure": doc.get("_disclosure") or finances.DISCLOSURE_SMALL_COMPANY,
+            "pnl_withheld": doc.get("_pnl_withheld", ""),
+            "going_concern": doc.get("_going_concern", ""),
+            "accounts_type": "", "audited": "",
+            "consolidation_level": "group" if level == "group" else "",
+            "has_group": "group" in r["levels"] and "company" in r["levels"],
+            "ambiguous": [], "corrected": [], "unbalanced": [],
+            "machine_flags": flags, "levels": r["levels"],
+        }
+        key = (r["club_id"], season)
+        if key not in out or entry["filing_date"] > out[key]["filing_date"]:
+            out[key] = entry
+    return out
+
+
+def build_rows(facts: list[dict], existing: list[dict], pdf: dict | None = None) -> dict:
     """
     Facts plus the current CSV to the new CSV, and what changed.
 
@@ -968,7 +1070,8 @@ def build_rows(facts: list[dict], existing: list[dict]) -> dict:
             unread.append((first["club_id"], doc, "no period end date", []))
             continue
         result.update(club_id=first["club_id"], company_number=first["company_number"],
-                      filing_date=first["filing_date"], document=doc, facts=doc_facts)
+                      filing_date=first["filing_date"], document=doc, facts=doc_facts,
+                      source="ixbrl", machine_flags=["ixbrl_auto"])
         key = (first["club_id"], season)
         # Two filings for one year is an amendment: the later one stands.
         if key not in derived or result["filing_date"] > derived[key]["filing_date"]:
@@ -979,6 +1082,18 @@ def build_rows(facts: list[dict], existing: list[dict]) -> dict:
     for i, r in enumerate(rows):
         if r["season_end_year"]:
             index[(r["club_id"], int(r["season_end_year"]))] = i
+
+    # The scans fill only club-seasons no machine-readable filing covers:
+    # a tagged figure is read, an OCR'd one is reconstructed, and where
+    # both exist the tagged one stands. Nor does a scan replace a row an
+    # earlier run read from iXBRL.
+    for key, entry in _pdf_entries(pdf or {}).items():
+        if key in derived:
+            continue
+        at = index.get(key)
+        if at is not None and "ixbrl_auto" in _flags(rows[at]["flags"]):
+            continue
+        derived[key] = entry
 
     stats = Counter()
     mismatched = []
@@ -992,7 +1107,7 @@ def build_rows(facts: list[dict], existing: list[dict]) -> dict:
                       going_concern=d["going_concern"], pnl_withheld=d["pnl_withheld"])
 
         at = index.get(key)
-        if at is not None and "ixbrl_auto" not in _flags(rows[at]["flags"]):
+        if at is not None and not _is_machine(_flags(rows[at]["flags"])):
             hand = rows[at]
             same = (hand["company_number"] and hand["company_number"] == d["company_number"]) \
                 or (_norm_entity(hand["entity_name"]) and d["entity_name"]
@@ -1008,10 +1123,10 @@ def build_rows(facts: list[dict], existing: list[dict]) -> dict:
             # person meant; where it does not and the filing has both, the
             # level cannot be known and nothing is added.
             flags = _flags(hand["flags"])
-            ours = next((f[len("ixbrl_fill:"):].split(",") for f in flags
-                         if f.startswith("ixbrl_fill:")), None)
+            marker, prefix = FILL[d["source"]]
+            ours = next((f[len(prefix):].split(",") for f in flags if f.startswith(prefix)), None)
             if ours is None:
-                ours = NEW_COLUMNS if "ixbrl_balance_sheet" in flags else []
+                ours = NEW_COLUMNS if marker in flags else []
 
             level = {"club": "company", "group": "group"}.get(hand["consolidation_level"])
             if level is None:
@@ -1024,11 +1139,17 @@ def build_rows(facts: list[dict], existing: list[dict]) -> dict:
                         if c in hand:
                             hand[c] = ""
                     hand["flags"] = json.dumps(
-                        [f for f in flags if f != "ixbrl_balance_sheet"
-                         and not f.startswith("ixbrl_fill:")])
+                        [f for f in flags if f != marker and not f.startswith(prefix)])
                     continue
                 level = "company"
-            reading = derive(d["facts"], d["period_end"], level)
+            if d["source"] == "pdf":
+                chosen = _pdf_level(d["levels"], level)
+                if chosen is None:
+                    continue
+                reading = {"ok": True, "fields": d["levels"][chosen]["fields"],
+                           "corrected": sorted(d["levels"][chosen]["fixes"]), "unbalanced": []}
+            else:
+                reading = derive(d["facts"], d["period_end"], level)
             if not reading["ok"]:
                 continue
             values = {f: str(v) for f, v in reading["fields"].items()}
@@ -1052,12 +1173,12 @@ def build_rows(facts: list[dict], existing: list[dict]) -> dict:
                     if new:
                         hand[c] = new
                         written.append(c)
-            flags = [f for f in flags if f not in ("ixbrl_balance_sheet", "sign_corrected",
-                                                    "does_not_balance")
-                     and not f.startswith("ixbrl_fill:")]
+            check = "ocr_corrected" if d["source"] == "pdf" else "sign_corrected"
+            flags = [f for f in flags if f not in (marker, check, "does_not_balance")
+                     and not f.startswith(prefix)]
             if written:
-                flags += ["ixbrl_balance_sheet", "ixbrl_fill:" + ",".join(written)]
-                flags += (["sign_corrected"] if reading["corrected"] else []) \
+                flags += [marker, prefix + ",".join(written)]
+                flags += ([check] if reading["corrected"] else []) \
                     + (["does_not_balance"] if reading["unbalanced"] else [])
                 stats["hand rows topped up"] += 1
             hand["flags"] = json.dumps(flags)
@@ -1078,10 +1199,12 @@ def build_rows(facts: list[dict], existing: list[dict]) -> dict:
             "disclosure": d["disclosure"],
             "staff_costs_definition": ("excl_amortisation" if full and "staff_costs" in fields
                                        else ""),
-            "source_url": ("https://find-and-update.company-information.service.gov.uk"
+            "source_url": (finances.filing_url(d["company_number"], d["transaction_id"])
+                           if d.get("transaction_id") else
+                           "https://find-and-update.company-information.service.gov.uk"
                            f"/company/{d['company_number']}/filing-history"),
             "filing_date": d["filing_date"],
-            "flags": json.dumps(["ixbrl_auto"]
+            "flags": json.dumps(d["machine_flags"]
                                 + (["ixbrl_ambiguous"] if d["ambiguous"] else [])
                                 + (["sign_corrected"] if d["corrected"] else [])
                                 + (["does_not_balance"] if d["unbalanced"] else [])),
@@ -1100,7 +1223,7 @@ def build_rows(facts: list[dict], existing: list[dict]) -> dict:
     filled, topped = Counter(), Counter()
     for r in rows:
         flags = _flags(r["flags"])
-        if "ixbrl_auto" in flags:
+        if _is_machine(flags):
             for c in finances.MONEY_COLUMNS + finances.STATUS_COLUMNS:
                 if r[c]:
                     filled[c] += 1
@@ -1154,7 +1277,7 @@ def write_census(rows: list[dict], path: Path = CENSUS) -> None:
 def cmd_rows(facts_path: Path = FACTS, apply: bool = False,
              csv_path: Path = FINANCES_CSV) -> dict:
     facts = read_facts(facts_path)
-    result = build_rows(facts, load_csv(csv_path))
+    result = build_rows(facts, load_csv(csv_path), load_pdf_readings())
     write_census(census(facts))
 
     stats = result["stats"]

@@ -358,7 +358,43 @@ balance sheet comes through whole, with the misreads OCR makes — "i)" and "Qo"
 for a zero — and both years pass every identity in step 2, down to net
 liabilities of £230,815.
 
-**Step 2 — read the balance sheet from the text.** A small company's balance
+**Step 2 — built: `scripts/read_pdf_figures.py`.** 78 of the 101 scanned
+filings give a balance sheet that adds up, for 48 clubs. Their figures fill 8
+club-seasons nobody else had and top up 47 hand-collected rows, under the same
+loader and hand-row rules as the iXBRL filings, flagged `pdf_ocr` (and
+`pdf_balance_sheet` / `pdf_fill:` on a topped-up hand row). The workflow runs
+it every month after OCR.
+
+What the build found, beyond the plan:
+
+- **Candidates, not lines.** OCR moves a subtotal onto the line below — West
+  Ham's fixed-asset total comes out on the "Current assets" heading — so each
+  figure keeps every candidate value and the identities choose among them.
+- **The search must be whole.** Correcting one figure at a time, Gloucester
+  City's fixed assets could be nudged to fit a misread total. Searching every
+  combination of up to two one-character corrections shows the total was the
+  misread figure, and a reading is kept only if exactly one balance sheet adds
+  up.
+- **Only checked figures are output.** A figure no identity uses — current
+  assets where no creditors line was read — proves nothing and is left out.
+- **The notes add up too.** Headcount (40 filings) and staff costs (26) come
+  from tables whose items must sum to the total printed under them. Where the
+  same company's hand-collected row has a wage bill, the scans agree to within
+  0.2% for Arsenal, Newcastle, Leicester and Middlesbrough. They differ for
+  Derby County by 6.4% — and the filing's own note adds up to the scan's figure,
+  not the press's.
+- **An independent check.** Each filing prints the year before as its
+  comparative column, and that year has its own filing, read separately. Their
+  net assets agree in 30 of 32 pairs; the two that differ are restatements,
+  marked as such in the later filing.
+
+What is still not read: 23 filings — four in an IFRS layout with no "net
+current" line (Birmingham City, Manchester United), two balance sheets in one
+filing whose headings OCR lost and whose contents page does not settle the
+order, and about a dozen whose identities do not hold within one character a
+figure.
+
+**Step 2 as planned — read the balance sheet from the text.** A small company's balance
 sheet is short and uses the same words in every filing: fixed assets, current
 assets, creditors falling due within one year, net current assets, total assets
 less current liabilities, creditors falling due after more than one year,

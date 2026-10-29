@@ -24,6 +24,7 @@ on:
       - 'scripts/fetch_club_accounts.py'
       - 'scripts/parse_club_accounts.py'
       - 'scripts/read_pdf_accounts.py'
+      - 'scripts/read_pdf_figures.py'
   schedule:
     - cron: '41 4 3 * *'    # monthly, the 3rd, the day after the register snapshot
   workflow_dispatch:
@@ -92,6 +93,18 @@ jobs:
           mkdir -p data/companies/pdf
           python scripts/read_pdf_accounts.py ch-accounts --out data/companies/pdf \
             --budget-minutes 70 2>&1 | tee data/companies/pdf/report.txt || true
+
+      - name: Read figures from the PDF text
+        # The balance sheet, headcount and staff costs out of the OCR text,
+        # accepted only where the identities hold (read_pdf_figures.py), then
+        # the rows rebuilt so this month's scans reach club_finances.csv.
+        shell: bash
+        run: |
+          {
+            echo
+            python scripts/read_pdf_figures.py 2>&1
+            python scripts/parse_club_accounts.py rows --apply 2>&1 | tail -4
+          } | tee -a data/companies/accounts-report.txt
 
       - name: Commit
         run: |
