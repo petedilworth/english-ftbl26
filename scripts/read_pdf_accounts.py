@@ -14,9 +14,9 @@ reading figures from them depends on both:
 
   - whether the PDF has a text layer (an electronic PDF does; a scan
     does not), from pdftotext;
-  - where it does not, the text by OCR, from tesseract, on the first
-    MAX_PAGES pages - a small company's balance sheet is on page two to
-    five, and OCR is the slow part of the whole workflow;
+  - where it does not, the text by OCR, from tesseract, on every page
+    (MAX_PAGES) - most of these are long sets of full accounts, and their
+    balance sheets are twenty pages in;
   - whether the text holds a balance sheet and an employee note at all.
 
 It writes, into the output directory:
@@ -52,7 +52,12 @@ sys.path.insert(0, str(PROJECT_ROOT / "scripts"))
 from parse_club_accounts import document_meta             # noqa: E402
 
 OUT = PROJECT_ROOT / "data" / "companies" / "pdf"
-MAX_PAGES = 12
+# Every page, near enough. This was 12, on the guess that the PDFs were
+# small clubs' short accounts. The first run showed otherwise: 86 of 113
+# are tiers 1 to 4, full audited accounts of 33 to 40 pages filed on
+# paper, and only 1 of 79 long filings had its balance sheet inside the
+# first 12 - Arsenal's contents page puts it on page 23.
+MAX_PAGES = 80
 # A PDF with fewer characters than this per page is a scan with, at most,
 # a stamped header on it.
 TEXT_LAYER_CHARS = 200
@@ -131,8 +136,12 @@ def read_all(directory: Path, out: Path, budget_minutes: float) -> list[dict]:
         body, method = "", ""
         # Read once. A text already on file for the same document is kept,
         # so OCR's time budget is spent only on filings not yet read.
-        if target.exists() and f"document: {meta['document']}\n" in target.read_text(
-                encoding="utf-8", errors="replace")[:400]:
+        cached = target.read_text(encoding="utf-8", errors="replace") if target.exists() else ""
+        read_before = re.search(r"^pages_read: (\d+)", cached[:400], re.M)
+        # Read once - but a filing an earlier, shorter cap only part-read
+        # is read again in full.
+        complete = read_before and int(read_before.group(1)) >= min(n or MAX_PAGES, MAX_PAGES)
+        if cached and f"document: {meta['document']}\n" in cached[:400] and complete:
             body = target.read_text(encoding="utf-8", errors="replace")
             method = re.search(r"^method: (\S+)", body, re.M).group(1) \
                 if re.search(r"^method: (\S+)", body, re.M) else "cached"
@@ -190,7 +199,7 @@ def main():
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("directory")
     parser.add_argument("--out", default=str(OUT))
-    parser.add_argument("--budget-minutes", type=float, default=40.0)
+    parser.add_argument("--budget-minutes", type=float, default=70.0)
     args = parser.parse_args()
     summarise(read_all(Path(args.directory), Path(args.out), args.budget_minutes))
 

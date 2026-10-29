@@ -65,7 +65,6 @@ PNL_COLUMNS = [
     "operating_profit",
     "profit_before_tax",
     "profit_after_tax",
-    "amortisation",
     "player_sales_profit",
     "net_debt",
 ]
@@ -76,8 +75,10 @@ PNL_COLUMNS = [
 # every figure on a row that withheld its profit-and-loss threw away the
 # balance sheet of 192 non-league filings the law required them to file.
 #
-# net_debt stays with the profit-and-loss columns because it is a figure
-# the press derives for the biggest clubs, not one a filing states.
+# Depreciation and amortisation are here, not with the profit-and-loss,
+# because a small company states them in its fixed-asset notes, which it
+# must file. net_debt stays with the profit-and-loss columns because it is
+# a figure the press derives for the biggest clubs, not one a filing states.
 BALANCE_COLUMNS = [
     "employees",
     "fixed_assets",
@@ -92,6 +93,12 @@ BALANCE_COLUMNS = [
     "net_assets",
     "share_capital",
     "directors_pay",
+    "amortisation",
+    "debtors",
+    "bank_loans",
+    "owed_to_group",
+    "other_creditors",
+    "depreciation",
 ]
 
 # Whole numbers: pounds, or for employees a headcount.
@@ -112,9 +119,15 @@ COLUMNS = [
     "revenue_matchday", "revenue_broadcast", "revenue_commercial",
     "profit_before_tax", "net_debt", "source_url", "filing_date", "flags",
     "operating_profit", "profit_after_tax", "amortisation", "player_sales_profit",
-    *BALANCE_COLUMNS,
-    *STATUS_COLUMNS,
+    "employees", "fixed_assets", "intangible_assets", "tangible_assets",
+    "current_assets", "cash", "creditors_within_year", "net_current_assets",
+    "total_assets_less_current_liabilities", "creditors_after_year", "net_assets",
+    "share_capital", "directors_pay",
+    "accounts_type", "audited", "going_concern",
+    "debtors", "bank_loans", "owed_to_group", "other_creditors", "depreciation",
 ]
+assert set(COLUMNS) >= set(PNL_COLUMNS) | set(BALANCE_COLUMNS) | set(STATUS_COLUMNS)
+assert len(COLUMNS) == len(set(COLUMNS))
 
 _INT_COLUMNS = set(MONEY_COLUMNS) | {"season_end_year", "period_months"}
 _NOT_NULL = {"club_id", "season_end_year", "disclosure"}

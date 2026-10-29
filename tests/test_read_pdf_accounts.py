@@ -92,3 +92,19 @@ def test_without_the_tools_every_pdf_is_still_listed(tmp_path, monkeypatch):
     (docs / "any-fc__1.pdf").write_bytes(b"%PDF")
     rpa.read_all(docs, out, budget_minutes=5)
     assert _census(out)["any-fc__1.pdf"]["method"] == "unread"
+
+
+def test_a_filing_an_earlier_cap_only_part_read_is_read_again(tmp_path, tools):
+    """
+    The first run read 12 pages of every scan; the long filings' balance
+    sheets were twenty pages in. A partial text is not a cached one.
+    """
+    docs, out = tmp_path / "docs", tmp_path / "out"
+    docs.mkdir(); out.mkdir()
+    (docs / "scanned-fc__1.pdf").write_bytes(b"%PDF")
+    (out / "scanned-fc__1.txt").write_text(
+        "source: x\ndocument: scanned-fc__1\nmade_up_date: \nmethod: ocr\n"
+        "pages_read: 2 of 6\n\nCover page only")
+    rpa.read_all(docs, out, budget_minutes=5)
+    assert tools["ocr"] == 1
+    assert "pages_read: 6 of 6" in (out / "scanned-fc__1.txt").read_text()

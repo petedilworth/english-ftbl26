@@ -320,3 +320,222 @@ def test_profit_and_loss_figures_never_reach_a_small_company_row(tmp_path):
     assert out["net_assets"] == "254500"
     assert not finances._validate({c: (int(out[c]) if out[c] and c in finances.MONEY_COLUMNS
                                        else (out[c] or None)) for c in finances.COLUMNS}, set())
+
+
+# ── what the first real run taught ─────────────────────────────────────────
+
+def _f(concept, value, dims="", end="2025-06-30", instant="1"):
+    return {"concept": concept, "kind": "num", "value": str(value), "dimensions": dims,
+            "period_end": end, "period_start": "" if instant else "2024-07-01",
+            "instant": instant, "prefix": "core", "unit": "GBP"}
+
+
+CUR = "FinancialInstrumentCurrentNon-currentDimension=CurrentFinancialInstruments"
+NONCUR = "FinancialInstrumentCurrentNon-currentDimension=Non-currentFinancialInstruments"
+GROUP = "GroupCompanyDataDimension=Consolidated"
+
+
+def test_long_term_debt_is_never_read_as_short_term():
+    """
+    "Non-currentFinancialInstruments" contains the letters of
+    "CurrentFinancialInstruments". A substring test took a club's
+    long-term creditors as its short-term ones.
+    """
+    facts = [_f("Creditors", 120000, NONCUR), _f("NetAssetsLiabilities", 1)]
+    fields = pca.derive(facts, "2025-06-30")["fields"]
+    assert "creditors_within_year" not in fields
+    assert fields["creditors_after_year"] == 120000
+
+
+def test_the_current_noncurrent_dimension_is_read_as_the_maturity_one_is():
+    """Three times as common in real filings as the maturity dimension."""
+    facts = [_f("Creditors", 88000, CUR), _f("Creditors", 120000, NONCUR)]
+    fields = pca.derive(facts, "2025-06-30")["fields"]
+    assert fields["creditors_within_year"] == 88000
+    assert fields["creditors_after_year"] == 120000
+
+
+def test_a_group_filing_is_read_at_group_level():
+    """
+    Millwall's filing tags the parent company with no dimension and the
+    group as Consolidated. The site reports clubs at group level wherever
+    a group files.
+    """
+    facts = [_f("NetAssetsLiabilities", 17674000), _f("NetAssetsLiabilities", -51000000, GROUP)]
+    result = pca.derive(facts, "2025-06-30")
+    assert result["fields"]["net_assets"] == -51000000
+    assert result["consolidation_level"] == "group"
+
+
+def test_a_figure_tagged_only_as_original_is_still_read():
+    """Sheffield Wednesday's 2023 accounts tag every figure Original."""
+    facts = [_f("NetAssetsLiabilities", -72078000, "OriginalRevisedDataDimension=Original")]
+    assert pca.derive(facts, "2025-06-30")["fields"]["net_assets"] == -72078000
+
+
+def test_a_revised_figure_wins_over_the_original():
+    facts = [_f("NetAssetsLiabilities", 100, "OriginalRevisedDataDimension=Original"),
+             _f("NetAssetsLiabilities", 90, "OriginalRevisedDataDimension=Revised")]
+    assert pca.derive(facts, "2025-06-30")["fields"]["net_assets"] == 90
+
+
+def test_a_total_stated_only_in_its_parts_is_summed():
+    """Bank loans due within a year plus those due after."""
+    facts = [_f("BankBorrowingsOverdrafts", 30000, CUR),
+             _f("BankBorrowingsOverdrafts", 450000, NONCUR)]
+    result = pca.derive(facts, "2025-06-30")
+    assert result["fields"]["bank_loans"] == 480000
+    assert "+" in result["sources"]["bank_loans"]
+
+
+def test_a_total_stated_whole_is_not_double_counted_with_its_parts():
+    facts = [_f("OtherCreditors", 50000),
+             _f("OtherCreditors", 20000, CUR), _f("OtherCreditors", 30000, NONCUR)]
+    assert pca.derive(facts, "2025-06-30")["fields"]["other_creditors"] == 50000
+
+
+def test_depreciation_from_the_note_reaches_a_small_company_row():
+    """
+    A small company files its fixed-asset note even when it files no
+    profit-and-loss, so the year's charge is a figure it disclosed.
+    """
+    assert not finances._validate(_row(disclosure="small_company", depreciation=4200,
+                                       amortisation=900), set())
+
+
+# ── hand rows, at the level a person recorded ──────────────────────────────
+
+def _group_filing(club="reading-fc"):
+    """The parent's own tangible assets, and the group's with the stadium."""
+    facts = [_f("PropertyPlantEquipment", 131898), _f("PropertyPlantEquipment", 39798405, GROUP),
+             _f("NetAssetsLiabilities", -94126643), _f("NetAssetsLiabilities", -93568476, GROUP)]
+    for f in facts:
+        f.update(club_id=club, company_number="00012345", document=f"{club}-doc",
+                 filing_date="2026-03-01", made_up_date="2025-06-30")
+    facts.append({**facts[0], "concept": pca.ENTITY_NAME, "kind": "text", "dimensions": "",
+                  "value": "The Reading Football Club Limited"})
+    return facts
+
+
+def _reading(**values):
+    return _hand(club_id="reading-fc", entity_name="The Reading Football Club Limited",
+                 **values)
+
+
+def test_a_hand_row_at_club_level_is_filled_from_the_company_not_the_group():
+    out = pca.build_rows(_group_filing(), [_reading(consolidation_level="club")])["rows"][0]
+    assert out["tangible_assets"] == "131898"
+
+
+def test_a_hand_row_at_group_level_is_filled_from_the_group():
+    out = pca.build_rows(_group_filing(), [_reading(consolidation_level="group")])["rows"][0]
+    assert out["tangible_assets"] == "39798405"
+
+
+def test_a_hand_row_that_does_not_say_its_level_gets_nothing_from_a_group_filing():
+    """
+    £131,898 or £39.8m: the row cannot say which a person meant, so
+    neither is added, and the report says why.
+    """
+    result = pca.build_rows(_group_filing(), [_reading()])
+    assert result["rows"][0]["tangible_assets"] == ""
+    assert any("does not say" in m for m in result["mismatched"])
+
+
+def test_a_value_the_parser_wrote_is_corrected_on_the_next_run():
+    stale = _reading(consolidation_level="group", tangible_assets="131898",
+                     flags=json.dumps(["press_reported", "ixbrl_balance_sheet",
+                                       "ixbrl_fill:tangible_assets"]))
+    out = pca.build_rows(_group_filing(), [stale])["rows"][0]
+    assert out["tangible_assets"] == "39798405"
+    assert "press_reported" in json.loads(out["flags"])
+
+
+def test_a_value_a_person_entered_is_never_corrected():
+    """Outside the parser's own list, a filled column is a person's."""
+    mine = _reading(consolidation_level="group", tangible_assets="40000000",
+                    flags=json.dumps(["ixbrl_balance_sheet", "ixbrl_fill:net_assets"]))
+    out = pca.build_rows(_group_filing(), [mine])["rows"][0]
+    assert out["tangible_assets"] == "40000000"
+    assert out["net_assets"] == "-93568476"
+
+
+def test_a_row_topped_up_before_the_list_existed_is_all_the_parser_s():
+    """
+    The first run named no columns. It filled only columns that did not
+    exist until then, so every one of them was the parser's.
+    """
+    legacy = _reading(consolidation_level="group", tangible_assets="131898",
+                      flags=json.dumps(["ixbrl_balance_sheet"]))
+    out = pca.build_rows(_group_filing(), [legacy])["rows"][0]
+    assert out["tangible_assets"] == "39798405"
+    assert any(f.startswith("ixbrl_fill:") for f in json.loads(out["flags"]))
+
+
+def test_a_guess_from_an_earlier_run_is_withdrawn_when_the_level_is_unknowable():
+    legacy = _reading(tangible_assets="131898", flags=json.dumps(["press_reported",
+                                                                  "ixbrl_balance_sheet"]))
+    out = pca.build_rows(_group_filing(), [legacy])["rows"][0]
+    assert out["tangible_assets"] == ""
+    assert json.loads(out["flags"]) == ["press_reported"]
+    assert out["turnover"] == "900000"
+
+
+# ── the balance sheet adds up ──────────────────────────────────────────────
+
+def test_a_missing_minus_sign_is_corrected_where_the_identity_decides_it():
+    """Folkestone Invicta's 2024 filing, as tagged."""
+    fields = {"current_assets": 34334, "creditors_within_year": 123865,
+              "net_current_assets": 89531}
+    corrected, failed = pca.reconcile(fields)
+    assert fields["net_current_assets"] == -89531
+    assert corrected == ["net_current_assets"] and not failed
+
+
+def test_a_balance_sheet_that_does_not_add_up_is_flagged_not_fixed():
+    fields = {"current_assets": 309751, "creditors_within_year": 212349,
+              "net_current_assets": 100735}
+    corrected, failed = pca.reconcile(fields)
+    assert fields["net_current_assets"] == 100735
+    assert failed == ["net_current_assets"] and not corrected
+
+
+def test_a_filer_s_own_rounding_is_not_a_failure():
+    """Poole Town's 2025 figures are £10 apart; the filer rounded."""
+    fields = {"fixed_assets": 25010, "net_current_assets": 32740,
+              "total_assets_less_current_liabilities": 57740}
+    assert pca.reconcile(fields) == ([], [])
+
+
+def test_the_corrected_sign_reaches_the_row_and_says_so():
+    facts = [_f("CurrentAssets", 34334), _f("Creditors", 123865, CUR),
+             _f("NetCurrentAssetsLiabilities", 89531)]
+    for f in facts:
+        f.update(club_id="folkestone-invicta-fc", company_number="1", document="d",
+                 filing_date="2025-01-01", made_up_date="2025-06-30")
+    out = pca.build_rows(facts, [])["rows"][0]
+    assert out["net_current_assets"] == "-89531"
+    assert "sign_corrected" in json.loads(out["flags"])
+
+
+@pytest.mark.parametrize("item,expected", [
+    ({"type": "AA", "description": "accounts-with-accounts-type-small"}, True),
+    ({"type": "AAMD", "description": "accounts-amended-with-made-up-date"}, True),
+    ({"type": "AA01", "description": "change-account-reference-date-company-previous-extended"},
+     False),
+])
+def test_a_change_of_accounting_date_is_not_a_set_of_accounts(item, expected):
+    """
+    Companies House files AA01 under "accounts". It displaced a real set
+    of accounts for twelve clubs on the first run.
+    """
+    assert pca.is_accounts(item) is expected
+
+
+def test_document_numbering_skips_the_notices_the_fetch_skips(tmp_path):
+    (tmp_path / "x-fc__filings.json").write_text(json.dumps({"items": [
+        {"type": "AA01", "description": "change-account-reference-date",
+         "links": {"document_metadata": "https://d/document/NOTICE"}},
+        {"type": "AA", "description": "accounts-with-accounts-type-small",
+         "links": {"document_metadata": "https://d/document/ACCOUNTS"}}]}))
+    assert pca.document_meta(tmp_path, tmp_path / "x-fc__1.xhtml")["document"] == "ACCOUNTS"

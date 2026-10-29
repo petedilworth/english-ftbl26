@@ -243,13 +243,47 @@ auditor reported a **material uncertainty over going concern**. Every clean
 audit report contains those words negated ("we have not identified any material
 uncertainty"), so a match preceded by a negation is not a flag.
 
+### What the first real run corrected
+
+The concept lists were a starting guess, and `accounts-concepts.tsv` from the
+first run showed where they were wrong:
+
+- **Creditors are mostly split by a current / non-current dimension**, three
+  times as often as by the maturity dimension the list expected. And matching
+  members by substring read long-term debt as short-term, because
+  "Non-currentFinancialInstruments" contains the letters of
+  "CurrentFinancialInstruments". Members now match exactly.
+- **Group filings tag the parent company with no dimension and the group as
+  `Consolidated`.** Millwall's net assets read as the holding company's alone.
+  Machine-read rows now take the group figures wherever a group files.
+- **Restated filings tag figures `Original` and `Revised`.** Sheffield
+  Wednesday's 2023 accounts tag every figure Original and read as empty. The
+  revision now wins, and an original stands on its own.
+- **Some filers drop the minus sign** on a negative figure. The balance sheet
+  identities decide the sign uniquely, so it is corrected and flagged
+  `sign_corrected`; a balance sheet that still does not add up is flagged
+  `does_not_balance` and kept as filed. On the first run, 3 were corrected and
+  8 of about 200 do not add up.
+- **Totals stated only in their parts** — bank loans within a year plus after —
+  are summed, and a total stated whole is never added to its own parts.
+
+Six fields came from the census: debtors, bank loans, money owed to group
+companies — how a parent company or an owner funds a club — other creditors,
+and the depreciation and amortisation charges from the fixed-asset notes,
+which a small company files even when it files no profit-and-loss.
+
 ### Rules that do not bend
 
 - **Nothing a person collected is overwritten.** A hand row keeps every value
   it has. It gains only the columns added after it was written — the balance
-  sheet, the headcount — only where blank, and only from a filing by **the
-  entity the row names**, because a holding company and the club company under
-  it report different money. Such a row gains the flag `ixbrl_balance_sheet`.
+  sheet, the headcount — only where blank, only from a filing by **the entity
+  the row names**, and only **at the level the row records**. Reading's
+  tangible assets are £131,898 for the company and £39.8m for the group with
+  the stadium, so a row marked `club` is filled from the company, one marked
+  `group` from the group, and one that does not say gets nothing from a group
+  filing. Such a row gains `ixbrl_balance_sheet`, and `ixbrl_fill:` names the
+  columns the parser wrote, so a corrected reading reaches them next run while a
+  value a person enters later is never touched.
 - **Machine-read rows carry `ixbrl_auto` and are rebuilt on every run.** The
   first version skipped any club-season already written, so its turnover-only
   rows could never gain a field. Now they are regenerated from the facts.
@@ -266,19 +300,42 @@ python3 scripts/parse_club_accounts.py rows --apply         # write the CSV
 
 ## The PDF-only filings — the plan
 
-109 of the filings fetched have no iXBRL. The document API offers them as a PDF
-and nothing else, so they carry no tagged figures. Most are small clubs, and
-most of those filed on paper, which Companies House scans: the PDF is a picture
-of a page with no text in it.
+The first run fetched 113 filings that have no iXBRL. The document API offers
+them as a PDF and nothing else, so they carry no tagged figures. Its census
+(`data/companies/pdf/census.tsv`) overturned the assumption this plan started
+from — that they were small clubs' short accounts:
 
-**Step 1 — find out what they are (in the workflow now).**
-`scripts/read_pdf_accounts.py` records, for each PDF, its page count, whether it
-has a text layer, and whether it was filed on paper. It gets the text out — from
-the text layer where there is one, by OCR (tesseract) where there is not — and
-commits it to `data/companies/pdf/`, with `census.tsv` saying what each filing
-is and whether its text holds a balance sheet and an employee note. OCR has a
-40-minute budget per run; a filing it does not reach is listed as such, and the
-next run continues from it.
+| | |
+|---|---|
+| PDF-only filings | 113, from 67 clubs |
+| scanned paper filings, no text layer | 101 |
+| one-page PDFs with a text layer | 12 — not accounts at all, see below |
+| tiers 1–4 | 86, median 33 to 40 pages: full audited accounts filed on paper |
+| tiers 5–7 | 27, median 5 to 8 pages |
+
+So most of what OCR is for is **big clubs' full accounts**, with a profit-and-loss
+account, not small clubs' balance sheets. Many of those clubs already have
+press-reported figures here; the scans add the balance sheet, the notes and,
+for the clubs with nothing else, the profit-and-loss.
+
+The 12 one-page PDFs were **AA01 forms** — a notice that a company is changing
+its accounting date, which Companies House lists under "accounts". Each
+displaced a real set of accounts from a club's two fetched filings. The fetch
+now skips them.
+
+**Step 1 — get the text out (in the workflow).**
+`scripts/read_pdf_accounts.py` records each PDF's pages, whether it has a text
+layer and whether it was filed on paper, then gets its text: the text layer
+where there is one, tesseract OCR where there is not. The first run read 12
+pages of each, and **only 1 of the 79 long filings had its balance sheet inside
+them** — Arsenal's contents page puts it on page 23. It now reads every page,
+and re-reads any filing an earlier run only part-read: about 3,000 pages at
+1.75 seconds each, so two runs of its 70-minute budget.
+
+The OCR is good enough to read figures from. Basingstoke Town's scanned
+balance sheet comes through whole, with the misreads OCR makes — "i)" and "Qo"
+for a zero — and both years pass every identity in step 2, down to net
+liabilities of £230,815.
 
 **Step 2 — read the balance sheet from the text.** A small company's balance
 sheet is short and uses the same words in every filing: fixed assets, current
@@ -307,9 +364,12 @@ page are checked, which doubles the evidence.
 rather than `ixbrl_auto`, under the same loader rules and the same protection
 for hand-collected rows.
 
-**What stays out.** Profit-and-loss figures from PDFs: small companies do not
-file one, and the few that do would need their own arithmetic check (turnover
-less costs equals operating profit) before any figure is trusted.
+**Step 4 — the profit-and-loss of the long filings.** These are full accounts,
+so they have one. Its own arithmetic decides acceptance the same way: turnover
+less cost of sales is gross profit, gross profit less administrative expenses
+and other items is operating profit, and operating profit less net interest is
+profit before tax. Staff costs and the average headcount come from the notes,
+where every full set of accounts states them.
 
 **Beyond Companies House.** Many fan-owned clubs are Community Benefit
 Societies, which file annual returns and accounts with the FCA's Mutuals Public
