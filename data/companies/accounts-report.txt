@@ -15,6 +15,7 @@ INFO        staff_costs                                   1        0
 INFO        operating_profit                              3        0
 INFO        profit_before_tax                             3        0
 INFO        profit_after_tax                              3        0
+INFO        interest_paid                                 3        0
 INFO        employees                                   198        0
 INFO        fixed_assets                                 95        0
 INFO        intangible_assets                            29        0
@@ -34,9 +35,17 @@ INFO        bank_loans                                   62        0
 INFO        owed_to_group                                25        0
 INFO        other_creditors                             113        0
 INFO        depreciation                                117        0
+INFO        tax_owed                                    116        0
+INFO        deferred_income                               8        0
+INFO        accruals_and_deferred_income                 38        0
+INFO        fixed_asset_additions                       107        0
+INFO        fixed_asset_cost                            117        0
+INFO        fixed_asset_depreciation                    122        0
+INFO        intangible_additions                          7        0
 INFO        accounts_type                               204        0
 INFO        audited                                     204        0
 INFO        going_concern                                 3        0
+INFO        pnl_withheld                                 81        0
 INFO     balance sheet check: 4 rows had a missing minus sign corrected, 9 do not add up and are flagged
 INFO     11 hand rows left alone - the filing is a different entity:
 INFO         bristol-rovers-fc 2025: row names BRFC (1883) Ltd, filing is BRISTOL ROVERS FOOTBALL CLUB LIMITED
@@ -53,31 +62,31 @@ INFO         tranmere-rovers-fc 2025: group filing, and the row does not say whe
 WARNING  1 documents gave no row:
 WARNING      avro-fc                      tagged, but nothing recognised in it - saw AccountingStandardsApplied, AccountsStatusAuditedOrUnaudited, AccountsType, BalanceSheetDate, CountryFormationOrIncorporation, DateAuthorisationFinancialStatementsForIssue, DescriptionPrincipalActivities, DirectorSigningFinancialStatements
 INFO     most common numeric concepts no field reads (see accounts-concepts.tsv):
-INFO          219 filings  PropertyPlantEquipmentGrossCost
-INFO          217 filings  AccumulatedDepreciationImpairmentPropertyPlantEquipment
 INFO          198 filings  TradeCreditorsTradePayables
 INFO          181 filings  TradeDebtorsTradeReceivables
 INFO          171 filings  OtherDebtors
-INFO          143 filings  OtherTaxationSocialSecurityPayable
 INFO          123 filings  TotalInventories
 INFO           99 filings  IntangibleAssetsGrossCost
 INFO           98 filings  AccumulatedAmortisationImpairmentIntangibleAssets
-INFO           98 filings  AdditionsOtherThanThroughBusinessCombinationsPropertyPlantEquipment
-INFO           96 filings  TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment
-INFO           95 filings  AccruedLiabilitiesDeferredIncome
 INFO           91 filings  PrepaymentsAccruedIncome
 INFO           78 filings  OtherRemainingBorrowings
 INFO           74 filings  ParValueShare
 INFO           64 filings  NumberSharesIssuedFullyPaid
 INFO           60 filings  FutureMinimumLeasePaymentsUnderNon-cancellableOperatingLeases
 INFO           53 filings  TaxTaxCreditOnProfitOrLossOnOrdinaryActivities
-INFO           48 filings  InterestPayableSimilarChargesFinanceCosts
 INFO           47 filings  AdministrativeExpenses
-INFO           45 filings  TaxationSocialSecurityPayable
-INFO           44 filings  AdditionsOtherThanThroughBusinessCombinationsIntangibleAssets
 INFO           42 filings  OtherDisposalsIntangibleAssets
 INFO           41 filings  FinanceLeaseLiabilitiesPresentValueTotal
 INFO           41 filings  FinishedGoodsGoodsForResale
+INFO           41 filings  OtherDisposalsDecreaseInAmortisationImpairmentIntangibleAssets
+INFO           41 filings  WagesSalaries
+INFO           40 filings  CostSales
+INFO           38 filings  OtherInterestReceivableSimilarIncomeFinanceIncome
+INFO           37 filings  InvestmentsFixedAssets
+INFO           37 filings  PensionOtherPost-employmentBenefitCostsOtherPensionCosts
+INFO           35 filings  BankBorrowings
+INFO           35 filings  TaxExpenseCreditApplicableTaxRate
+INFO           34 filings  ComprehensiveIncomeExpense
 INFO     wrote 377 rows to club_finances.csv
 INFO     link check: filing document HTTP 200 - https://find-and-update.company-information.service.gov.uk/company/01287721/filing-history/MzUxMjk0MjMwN2FkaXF6a2N4/document?format=pdf&download=0
 INFO     link check: accounts list HTTP 200 - https://find-and-update.company-information.service.gov.uk/company/01287721/filing-history?category=accounts
