@@ -108,3 +108,31 @@ def test_a_filing_an_earlier_cap_only_part_read_is_read_again(tmp_path, tools):
     rpa.read_all(docs, out, budget_minutes=5)
     assert tools["ocr"] == 1
     assert "pages_read: 6 of 6" in (out / "scanned-fc__1.txt").read_text()
+
+
+def test_text_for_a_filing_no_longer_fetched_is_removed_for_that_club(tmp_path, tools):
+    """
+    The first run kept the text of twelve AA01 forms under names that
+    later belonged to real accounts.
+    """
+    docs, out = tmp_path / "docs", tmp_path / "out"
+    docs.mkdir(); out.mkdir()
+    (docs / "worcester-city-fc__filings.json").write_text('{"items": []}')
+    (out / "worcester-city-fc__1.txt").write_text("AA01 Change of accounting reference date")
+    rpa.read_all(docs, out, budget_minutes=5)
+    assert not (out / "worcester-city-fc__1.txt").exists()
+
+
+def test_a_run_limited_to_some_clubs_keeps_the_others(tmp_path, tools):
+    docs, out = tmp_path / "docs", tmp_path / "out"
+    docs.mkdir(); out.mkdir()
+    (docs / "a-fc__filings.json").write_text('{"items": []}')
+    (docs / "a-fc__1.pdf").write_bytes(b"%PDF")
+    (out / "b-fc__1.txt").write_text("someone else's accounts")
+    with (out / "census.tsv").open("w", newline="") as fh:
+        w = csv.DictWriter(fh, rpa.CENSUS_COLUMNS, delimiter="\t")
+        w.writeheader()
+        w.writerow({c: "" for c in rpa.CENSUS_COLUMNS} | {"club_id": "b-fc", "file": "b-fc__1.pdf"})
+    rpa.read_all(docs, out, budget_minutes=5)
+    assert (out / "b-fc__1.txt").exists()
+    assert set(_census(out)) == {"a-fc__1.pdf", "b-fc__1.pdf"}
