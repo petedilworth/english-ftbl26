@@ -2,35 +2,47 @@ club_id	file	document	made_up_date	level	field	value	fixes	checks	scale	from_con
 arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	document	_disclosure	small_company				
 arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	document	_pnl_withheld					
 arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	document	_going_concern					
-arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	plain	cash	31000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
-arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	plain	creditors_after_year	18171000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
-arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	plain	creditors_within_year	1957000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
-arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	plain	current_assets	137391000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
-arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	plain	debtors	137360000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
-arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	plain	employees	871		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
-arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	plain	fixed_assets	30059000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
-arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	plain	intangible_assets	0		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
-arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	plain	net_assets	147322000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
-arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	plain	net_current_assets	135434000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
-arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	plain	staff_costs	346804000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
-arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	plain	tangible_assets	0		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
-arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	plain	total_assets_less_current_liabilities	165493000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	group	creditors_after_year	442506000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	group	creditors_within_year	402591000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	group	current_assets	242693000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	group	employees	871		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	group	fixed_assets	786809000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	group	intangible_assets	399008000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	group	net_assets	126465000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	group	net_current_assets	-159898000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	group	share_capital	62000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	group	staff_costs	346804000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	group	tangible_assets	387801000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	group	total_assets_less_current_liabilities	626911000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	company	cash	31000		I1,I2,I3,I4	1000	
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	company	creditors_after_year	18171000		I1,I2,I3,I4	1000	
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	company	creditors_within_year	1957000		I1,I2,I3,I4	1000	
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	company	current_assets	137391000		I1,I2,I3,I4	1000	
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	company	debtors	137360000		I1,I2,I3,I4	1000	
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	company	fixed_assets	30059000		I1,I2,I3,I4	1000	
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	company	intangible_assets	0		I1,I2,I3,I4	1000	
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	company	net_assets	147322000		I1,I2,I3,I4	1000	
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	company	net_current_assets	135434000		I1,I2,I3,I4	1000	
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	company	share_capital	62000		I1,I2,I3,I4	1000	
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	company	tangible_assets	0		I1,I2,I3,I4	1000	
+arsenal-fc	arsenal-fc__1	Pgdw9n85ygFC3xHStc-WVjMW-TkPflerHqka_D4zzzc	2025-05-31	company	total_assets_less_current_liabilities	165493000		I1,I2,I3,I4	1000	
 arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	document	_disclosure	full				
 arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	document	_pnl_withheld					
 arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	document	_going_concern					
-arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	plain	cash	30000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
-arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	plain	creditors_after_year	17677000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
-arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	plain	creditors_within_year	1816000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
-arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	plain	current_assets	136954000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
-arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	plain	debtors	136924000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
-arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	plain	employees	826		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
-arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	plain	fixed_assets	30059000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
-arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	plain	intangible_assets	0		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
-arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	plain	net_assets	147520000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
-arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	plain	net_current_assets	135138000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
-arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	plain	staff_costs	327822000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
-arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	plain	tangible_assets	0		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
-arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	plain	total_assets_less_current_liabilities	165197000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	company	cash	30000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	company	creditors_after_year	17677000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	company	creditors_within_year	1816000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	company	current_assets	136954000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	company	debtors	136924000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	company	employees	826		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	company	fixed_assets	30059000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	company	intangible_assets	0		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	company	net_assets	147520000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	company	net_current_assets	135138000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	company	share_capital	62000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	company	staff_costs	327822000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	company	tangible_assets	0		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
+arsenal-fc	arsenal-fc__2	mE4Us0C6l2FtWajCEYtik4wyuDe_8-mgDZniQDc0toE	2024-05-31	company	total_assets_less_current_liabilities	165197000		I1,I2,I3,I4,employees:sum of 4,staff_costs:sum of 3	1000	
 aston-villa-fc	aston-villa-fc__1	cYMDcfOjfzznPppvjkdJpXEAGPa4z4j5L8CHsq2HEnE	2025-06-30	document	_disclosure	full				
 aston-villa-fc	aston-villa-fc__1	cYMDcfOjfzznPppvjkdJpXEAGPa4z4j5L8CHsq2HEnE	2025-06-30	document	_pnl_withheld					
 aston-villa-fc	aston-villa-fc__1	cYMDcfOjfzznPppvjkdJpXEAGPa4z4j5L8CHsq2HEnE	2025-06-30	document	_going_concern					

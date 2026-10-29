@@ -1095,3 +1095,10 @@ details.division .table-scroll { margin-top: 8px; }
 .page-sources dt { color: var(--muted); }
 .page-sources dd { margin: 0; overflow-wrap: anywhere; }
 @media (max-width: 540px) { .page-sources { grid-template-columns: minmax(0, 1fr); } .page-sources dd { margin-bottom: 6px; } }
+
+/* Money */
+.money-doubt { color: var(--muted); text-decoration: none; cursor: help; }
+.money-tier summary { cursor: pointer; font-weight: 600; margin: 14px 0 8px; }
+.money-tier-n { font-weight: 400; color: var(--muted); font-size: 13px; margin-left: 6px; }
+.money-strip { overflow-x: auto; }
+.money-strip svg { min-width: 640px; }

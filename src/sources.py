@@ -81,9 +81,11 @@ SOURCES = {
         "name": "Club accounts (club_finances.csv)",
         "url": "https://find-and-update.company-information.service.gov.uk",
         "what": "Turnover, wages, profit, net debt and revenue streams, read from accounts filed at Companies "
-                "House and from results clubs publish, each row with its source link.",
+                "House and from results clubs publish, each row with its source link; the balance sheet and "
+                "headcount read from the filings themselves - the tagged electronic accounts, and scans of the "
+                "paper ones.",
         "licence": "Companies House filings are Crown copyright under the Open Government Licence.",
-        "refresh": "By hand, as accounts are filed.",
+        "refresh": "Monthly from the register, with hand-collected rows for the clubs it cannot read.",
     },
     "grounds": {
         "name": "Ground ownership research (content/grounds.yml)",
@@ -200,6 +202,8 @@ PAGES = [
          ["ons-population", "ons-geography", "wikipedia-clubs", "models"], ""),
         ("Behind the club", "insights/behind-the-club/index.html", ["companies-house", "club-companies"],
          "Control, charges, directors and warning lights from the register."),
+        ("Money", "insights/money/index.html", ["finances", "companies-house", "club-companies"] + RESULTS,
+         "Turnover, wages and the balance sheet, tier by tier, and what each club's accounts disclose."),
         ("Who owns the ground", "insights/grounds/index.html", ["grounds"], ""),
         ("Which club to buy", "insights/value/index.html",
          RESULTS + ["grounds", "finances", "club-facts", "ons-population", "ons-income", "models"], ""),

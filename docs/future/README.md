@@ -14,4 +14,4 @@ re-verify the specifics before acting on one.
 | Plan | Status |
 |---|---|
 | [`tier-6.md`](tier-6.md) — adding tier 6 as an N-division tier | Paused before implementation |
-| [`money.md`](money.md) — the Money page, and the financial comparisons the accounts now support | Data in place; page not started |
+| [`money.md`](money.md) — the Money page, and the financial comparisons the accounts now support | Page built; the single comparisons and joins still to do |

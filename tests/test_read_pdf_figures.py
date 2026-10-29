@@ -137,6 +137,61 @@ def test_a_balance_sheet_for_another_year_is_not_taken():
     assert any("not 2024" in r for r in result["rejected"])
 
 
+# Arsenal's 2025 filing: the group and the parent side by side, with a
+# stray dash on the shareholders' funds line.
+ARSENAL = """BALANCE SHEET
+As at 31 May 2025 ;
+. Group Company.
+2025 2024 2025 2024
+Note £000 £7000 £000 £000
+Fixed assets ;
+Tangible assets 9 387,801 388,874 - -
+Intangible assets 10 399,008 486,643 - -
+Investments at - - — 30,059 30,059
+786,809 875,517 30,059 30,059
+Current assets
+Stock - development properties 12 8,208 7,355 - -
+Stock - retail merchandise 15,476 11,546 - - .
+Debtors - due within one year 13 114,633 71,314 137,360 136,924
+- due after one year 13 48,382 17,046 - -
+, Cash at bank and in hand 14 55,994 66,819 31 30
+242,693 174,080 137,391 136,954
+Creditors: amounts falling due
+within one year 15 (402,591) (418,041) (1,957) (1,816)
+Net current (liabilities)/assets (159,898) (243,961) 135,434 135,138
+Total assets less current liabilities 626,911 631,556 165,493 165,197
+Creditors: amounts falling due after
+more than one year 16 (442,506) (455,772) (18,171) (17,677)
+Provisions for liabilities 19 (57,940) (47,932) - -
+Net assets 126,465 127,852 147,322 147,520
+Capital and reserves
+Called up share capital 20 62 62 62 62
+Share premium account 29,997 29,997 29,997 29,997
+Profit and loss account 64,338 65,725 117,263 117,461
+Shareholders’ funds 126,465 127,852 - 147,322 147,520
+"""
+
+
+def test_group_and_company_side_by_side_are_read_as_two_balance_sheets():
+    """
+    The last two columns alone are the parent's, and were once taken for
+    the group's: Arsenal showed £31,000 in cash.
+    """
+    levels = rpf.read_text(ARSENAL, 2025)["levels"]
+    assert levels["group"]["fields"]["net_assets"] == 126_465_000
+    assert levels["group"]["fields"]["intangible_assets"] == 399_008_000
+    assert levels["company"]["fields"]["net_assets"] == 147_322_000
+    assert levels["company"]["fields"]["cash"] == 31_000
+    assert "plain" not in levels
+
+
+def test_group_and_company_columns_that_cannot_be_split_are_refused():
+    text = ARSENAL.replace("2025 2024 2025 2024", "2025 2024")
+    result = rpf.read_text(text, 2025)
+    assert not result["levels"]
+    assert any("cannot be told apart" in r for r in result["rejected"])
+
+
 def test_the_narrative_is_never_read_as_a_balance_sheet():
     text = ("As at 30 June 2025, the company had net current liabilities of £153,623,451.\n"
             "The directors consider the company a going concern.\n")

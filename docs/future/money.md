@@ -49,6 +49,9 @@ plan in `docs/club-accounts.md`.
 
 ## The page
 
+Built: `insights/money/`, from `src/money.py`. The five sections below are on
+it; what follows them is still to do.
+
 1. **The money league, per tier.** A sortable table: turnover, wages, wages ÷
    turnover, profit, net assets, cash, headcount. Below the third tier it leads
    with the balance sheet, because that is what exists.
