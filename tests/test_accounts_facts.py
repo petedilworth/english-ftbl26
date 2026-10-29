@@ -133,6 +133,9 @@ def test_a_long_text_fact_is_capped_not_dropped(tmp_path):
     ("We have not identified any material uncertainties relating to events or conditions "
      "that may cast significant doubt on the company's ability to continue as a going "
      "concern.", False),
+    # Derby County's: the auditor describing the duty, not a finding.
+    ("If we conclude that a material uncertainty exists, we are required to draw attention "
+     "in our report to the related disclosures.", False),
 ])
 def test_a_going_concern_warning_is_read_and_its_negation_is_not(tmp_path, sentence, flagged):
     """

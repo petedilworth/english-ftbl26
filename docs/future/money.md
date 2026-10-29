@@ -35,6 +35,18 @@ clubs on revenue and wages, and every club on the balance sheet. The 101
 scanned filings (tiers 1–4 mostly) are the next coverage gain — see the PDF
 plan in `docs/club-accounts.md`.
 
+## What blocks the rest of the coverage
+
+- **Fifteen hand-collected rows name no company.** Preston, Stoke,
+  Southampton, Ipswich, Carlisle, Newport and others: a row that does not say
+  which entity its figures came from cannot be matched to a filing, so neither
+  the iXBRL nor the scans can top it up. Recording the entity on each unlocks
+  its balance sheet.
+- **Six name no level.** A group filing whose hand row does not say "club" or
+  "group" gives nothing — Cheltenham, Exeter, Reading, Shrewsbury.
+- **23 scanned filings did not read.** See the PDF section of
+  `docs/club-accounts.md` for why each kind fails.
+
 ## The page
 
 1. **The money league, per tier.** A sortable table: turnover, wages, wages ÷
