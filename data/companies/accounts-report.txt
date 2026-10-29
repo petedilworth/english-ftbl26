@@ -5,37 +5,37 @@ WARNING  101 filings are PDF only and carry no tagged figures
 INFO     rows: 275 club-seasons read from 278 documents
 INFO        full                   3
 INFO        small_company          201
-INFO        machine rows added     6
-INFO        machine rows rebuilt   198
+INFO        machine rows added     0
+INFO        machine rows rebuilt   204
 INFO        hand rows topped up    60
 INFO        field                                   machine    hand+
 INFO        turnover                                      3        0
 INFO        staff_costs                                   1        0
 INFO        operating_profit                              3        0
 INFO        profit_before_tax                             3        0
-INFO        profit_after_tax                              3        2
-INFO        employees                                   198        2
-INFO        fixed_assets                                 95        2
-INFO        intangible_assets                            29        2
-INFO        tangible_assets                             145        2
-INFO        current_assets                              184        2
-INFO        cash                                        159        2
-INFO        creditors_within_year                       168        2
-INFO        net_current_assets                          188        2
-INFO        total_assets_less_current_liabilities       176        2
-INFO        creditors_after_year                        121        2
-INFO        net_assets                                  201        2
-INFO        share_capital                               135        2
+INFO        profit_after_tax                              3        0
+INFO        employees                                   198        0
+INFO        fixed_assets                                 95        0
+INFO        intangible_assets                            29        0
+INFO        tangible_assets                             145        0
+INFO        current_assets                              184        0
+INFO        cash                                        159        0
+INFO        creditors_within_year                       168        0
+INFO        net_current_assets                          188        0
+INFO        total_assets_less_current_liabilities       176        0
+INFO        creditors_after_year                        121        0
+INFO        net_assets                                  201        0
+INFO        share_capital                               135        0
 INFO        directors_pay                                 1        0
-INFO        amortisation                                  9        1
-INFO        debtors                                     157        2
+INFO        amortisation                                  9        0
+INFO        debtors                                     157        0
 INFO        bank_loans                                   62        0
-INFO        owed_to_group                                25        1
-INFO        other_creditors                             113        2
-INFO        depreciation                                117        2
-INFO        accounts_type                               204        2
-INFO        audited                                     204        2
-INFO        going_concern                                 3       14
+INFO        owed_to_group                                25        0
+INFO        other_creditors                             113        0
+INFO        depreciation                                117        0
+INFO        accounts_type                               204        0
+INFO        audited                                     204        0
+INFO        going_concern                                 3        0
 INFO     balance sheet check: 4 rows had a missing minus sign corrected, 9 do not add up and are flagged
 INFO     11 hand rows left alone - the filing is a different entity:
 INFO         bristol-rovers-fc 2025: row names BRFC (1883) Ltd, filing is BRISTOL ROVERS FOOTBALL CLUB LIMITED
