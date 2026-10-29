@@ -1,37 +1,59 @@
 #!/usr/bin/env python3
 """
-Read figures out of the iXBRL accounts fetched in stage 2.
+Read everything the iXBRL accounts say, then the figures the site uses.
 
-WHAT iXBRL IS, AND WHY IT IS WORTH THIS. A set of accounts filed at
-Companies House is an XHTML document with the figures tagged inline:
+TWO STAGES, BECAUSE ONLY ONE OF THEM NEEDS THE DOCUMENTS.
+
+    facts   documents -> data/companies/facts/<club_id>.tsv
+            Every tagged fact in every filing: the concept, the period it
+            covers, any dimensions on it, the unit and the value. Nothing
+            is chosen here and nothing is thrown away.
+
+    rows    data/companies/facts/ -> club_finances.csv
+            The headline figures, picked out of those facts by concept name.
+
+The split exists because the documents do not survive. They are fetched in
+Actions, which can reach Companies House, and discarded when the job ends.
+The first version of this parser read four concepts out of 270 filings and
+kept nothing else, so every field added since would have meant fetching
+all of them again. Now the facts are committed as plain text, and adding a
+field - or correcting the concept a field is read from - is a re-run of
+`rows`, here or anywhere, with no fetch at all.
+
+WHAT iXBRL IS. A set of accounts filed at Companies House is an XHTML
+document with the figures tagged inline:
 
     <ix:nonFraction name="core:TurnoverRevenue" contextRef="d2024"
                     unitRef="GBP" scale="3" sign="-">1,234</ix:nonFraction>
 
 The tag says which concept the number is, the context says what period it
-covers, and scale and sign say how to read it. So the turnover is
-readable without anyone deciding which number on the page is turnover -
-which is the difference between this and transcribing a PDF, and the
-reason only iXBRL filings are parsed here at all.
+covers - and, through dimensions, which slice of it: creditors due within
+one year are core:Creditors with a maturity dimension, not a concept of
+their own - and scale and sign say how to read the number on the page.
 
-WHAT IT DOES NOT SOLVE. Which concept name a filer used. The FRC
-taxonomies have changed repeatedly and a small company's software may tag
-turnover as core:TurnoverRevenue, uk-gaap:TurnoverGrossOperatingRevenue,
-or not at all. So each field carries a CANDIDATE SET, and - this is the
-important part - every file where none of them matched is REPORTED rather
-than filled with the nearest number on the page. A parser that guesses is
-worse than one that says it could not read something, because the guess
-arrives as a figure on a club page with nothing to mark it as doubtful.
+WHAT IT DOES NOT SETTLE is which concept a filer used. The FRC taxonomies
+have been renamed repeatedly and filing software differs, so each field
+carries a candidate list, and data/companies/accounts-concepts.tsv counts
+every concept seen and marks which field, if any, reads it. The unmapped
+concepts that appear in the most filings are the list of spellings to add.
 
-WHAT IT REFUSES TO DO. Overwrite anything collected by hand. The rows
-already in club_finances.csv were read from filings by a person and carry
-notes and judgements a parser cannot reproduce; a machine-read row fills
-a club-season that is blank, and never replaces a researched one. Every
-row this writes carries the flag `ixbrl_auto`, so which is which stays
-answerable forever rather than for as long as anyone remembers.
+THE SMALL-COMPANY RULE, CORRECTED. A small or micro-entity filing may omit
+the profit-and-loss account and must not omit the balance sheet or the
+average number of employees. The first version recorded such a filing as
+small_company and kept none of it; the loader now refuses profit-and-loss
+figures on those rows and accepts the balance sheet (src/finances.py).
 
-    python3 scripts/parse_club_accounts.py DIRECTORY_OF_DOCUMENTS
-    python3 scripts/parse_club_accounts.py DIRECTORY --apply
+WHAT IT REFUSES TO DO. Overwrite anything a person collected. A hand row
+is never changed except to fill a column that did not exist when it was
+written - the balance sheet, the headcount - and then only from a filing
+by the same entity the row names, because a holding company and the club
+company under it report different money (finances.py, first paragraph).
+Every machine-read row carries ixbrl_auto and is rebuilt from the facts on
+each run; a topped-up hand row carries ixbrl_balance_sheet.
+
+    python3 scripts/parse_club_accounts.py facts DIRECTORY_OF_DOCUMENTS
+    python3 scripts/parse_club_accounts.py rows [--apply]
+    python3 scripts/parse_club_accounts.py DIRECTORY [--apply]   # both
 """
 
 import argparse
@@ -40,6 +62,7 @@ import json
 import logging
 import re
 import sys
+from collections import Counter, defaultdict
 from pathlib import Path
 from xml.etree import ElementTree
 
@@ -50,70 +73,203 @@ import finances                                          # noqa: E402
 
 FINANCES_CSV = PROJECT_ROOT / "club_finances.csv"
 MAPPING = PROJECT_ROOT / "data" / "club-companies.tsv"
+# One file per club rather than one for everything: a Premier League group
+# filing tags thousands of facts, and a single file for every club would
+# approach the size at which GitHub refuses a push. Per club, a month in
+# which three clubs filed changes three files.
+FACTS = PROJECT_ROOT / "data" / "companies" / "facts"
+CENSUS = PROJECT_ROOT / "data" / "companies" / "accounts-concepts.tsv"
 
 logger = logging.getLogger("parse_club_accounts")
 
-# The concept names each figure might be tagged under, most specific
-# first. Local names only: the prefix varies with the taxonomy version
-# and says nothing useful.
+FACT_COLUMNS = [
+    "club_id", "company_number", "document", "filing_date", "made_up_date",
+    "concept", "prefix", "kind", "period_start", "period_end", "instant",
+    "dimensions", "unit", "value",
+]
+
+# Text facts are capped. Numbers are kept whole; a text fact is usually a
+# name, a date or a flag, and the few that are paragraphs of accounting
+# policy are not worth a megabyte a month of repository.
+TEXT_CAP = 400
+
+# ── what each field is read from ───────────────────────────────────────────
 #
-# These are a starting set, not a closed one. The point of reporting
-# unmatched files is that this list is expected to grow when real filings
-# show a spelling it does not have.
-CONCEPTS = {
-    "turnover": [
-        "TurnoverRevenue",
-        "Turnover",
-        "TurnoverGrossOperatingRevenue",
-        "RevenueFromContractsWithCustomers",
-    ],
-    "staff_costs": [
-        "StaffCostsEmployeeBenefitsExpense",
-        "StaffCosts",
-        "WagesSalaries",
-        "EmployeeBenefitsExpense",
-    ],
-    "profit_before_tax": [
-        "ProfitLossOnOrdinaryActivitiesBeforeTax",
-        "ProfitLossBeforeTax",
-    ],
-    "net_assets": [
-        "NetAssetsLiabilities",
-        "ShareholdersFunds",
-        "Equity",
-    ],
+# (concept, member) pairs, tried in order. member None means the fact must
+# carry no dimension at all; a string means it must carry exactly one,
+# whose member's name contains that string. Local names only: the prefix
+# varies with the taxonomy version and says nothing useful.
+#
+# A starting set. accounts-concepts.tsv is how it grows.
+
+DURATION, INSTANT = "duration", "instant"
+
+FIELDS: dict[str, tuple[str, list[tuple[str, str | None]]]] = {
+    # profit and loss
+    "turnover": (DURATION, [
+        ("TurnoverRevenue", None), ("Turnover", None),
+        ("TurnoverGrossOperatingRevenue", None), ("Revenue", None),
+        ("RevenueFromContractsWithCustomers", None)]),
+    # Staff costs and nothing narrower. WagesSalaries was a candidate here
+    # and it is not the same quantity: it leaves out social security and
+    # pensions, which is a fifth of a wage bill.
+    "staff_costs": (DURATION, [
+        ("StaffCostsEmployeeBenefitsExpense", None), ("StaffCosts", None),
+        ("EmployeeBenefitsExpense", None)]),
+    "operating_profit": (DURATION, [
+        ("OperatingProfitLoss", None), ("ProfitLossFromOperatingActivities", None)]),
+    "profit_before_tax": (DURATION, [
+        ("ProfitLossOnOrdinaryActivitiesBeforeTax", None), ("ProfitLossBeforeTax", None)]),
+    "profit_after_tax": (DURATION, [
+        ("ProfitLoss", None), ("ProfitLossForPeriod", None),
+        ("ProfitLossOnOrdinaryActivitiesAfterTax", None)]),
+    "amortisation": (DURATION, [
+        ("AmortisationExpenseIntangibleAssets", None),
+        ("AmortisationIntangibleAssets", None),
+        ("AmortisationImpairmentExpenseIntangibleAssets", None)]),
+    "player_sales_profit": (DURATION, [
+        ("GainLossOnDisposalIntangibleAssets", None),
+        ("GainLossOnDisposalsIntangibleAssets", None),
+        ("ProfitLossOnDisposalIntangibleAssets", None)]),
+    # the notes every filing carries
+    "employees": (DURATION, [
+        ("AverageNumberEmployeesDuringPeriod", None),
+        ("AverageNumberEmployees", None)]),
+    "directors_pay": (DURATION, [
+        ("DirectorRemuneration", None), ("DirectorsRemuneration", None),
+        ("DirectorsEmoluments", None)]),
+    # the balance sheet
+    "fixed_assets": (INSTANT, [("FixedAssets", None)]),
+    "intangible_assets": (INSTANT, [
+        ("IntangibleAssets", None), ("IntangibleAssetsIncludingGoodwill", None)]),
+    "tangible_assets": (INSTANT, [
+        ("PropertyPlantEquipment", None), ("TangibleFixedAssets", None)]),
+    "current_assets": (INSTANT, [("CurrentAssets", None)]),
+    "cash": (INSTANT, [
+        ("CashBankOnHand", None), ("CashBankInHand", None),
+        ("CashCashEquivalents", None)]),
+    "creditors_within_year": (INSTANT, [
+        ("Creditors", "WithinOneYear"),
+        ("CreditorsDueWithinOneYear", None),
+        ("CreditorsAmountsFallingDueWithinOneYear", None)]),
+    "net_current_assets": (INSTANT, [("NetCurrentAssetsLiabilities", None)]),
+    "total_assets_less_current_liabilities": (INSTANT, [
+        ("TotalAssetsLessCurrentLiabilities", None)]),
+    "creditors_after_year": (INSTANT, [
+        ("Creditors", "AfterOneYear"),
+        ("CreditorsDueAfterOneYear", None),
+        ("CreditorsAmountsFallingDueAfterMoreThanOneYear", None)]),
+    "net_assets": (INSTANT, [
+        ("NetAssetsLiabilities", None), ("Equity", None),
+        ("ShareholdersFunds", None)]),
+    "share_capital": (INSTANT, [
+        ("Equity", "ShareCapital"), ("CalledUpShareCapital", None),
+        ("CalledUpShareCapitalPaid", None)]),
 }
 
-# A balance sheet exists in every filing, including the small-company
-# ones that carry no profit-and-loss at all. Finding one of these and no
-# turnover is what distinguishes "filed, discloses nothing" from "could
-# not be read" - two very different findings.
-BALANCE_SHEET_CONCEPTS = set(CONCEPTS["net_assets"]) | {
-    "FixedAssets", "CurrentAssets", "TotalAssetsLessCurrentLiabilities",
-    "CalledUpShareCapital",
-}
+PNL_FIELDS = [f for f in FIELDS if f in finances.PNL_COLUMNS]
 
+# Text the filing states about itself. These are often carried as an
+# empty fact whose context names the answer as a dimension member - the
+# accounts type is a member, not a string - so both are looked at.
+ENTITY_NAME = "EntityCurrentLegalOrRegisteredName"
+ACCOUNTS_TYPE = ("AccountsTypeFullOrAbbreviated", "AccountsType")
+AUDIT_STATUS = ("AccountsStatusAuditedOrUnaudited",)
+PERIOD_END = "EndDateForPeriodCoveredByReport"
+PERIOD_START = "StartDateForPeriodCoveredByReport"
+
+# Not a tag: read from the document's text, and named so it cannot be
+# mistaken for one. See _going_concern().
+GOING_CONCERN = "_GoingConcernMaterialUncertainty"
+
+
+# ── stage 1: documents to facts ────────────────────────────────────────────
 
 def _local(tag: str) -> str:
     return tag.rsplit("}", 1)[-1]
 
 
-def _concept(name: str) -> str:
-    """core:TurnoverRevenue -> TurnoverRevenue."""
-    return (name or "").rsplit(":", 1)[-1]
+def _split(qname: str | None) -> tuple[str, str]:
+    """core:TurnoverRevenue -> ("core", "TurnoverRevenue")."""
+    qname = (qname or "").strip()
+    if ":" in qname:
+        prefix, name = qname.split(":", 1)
+        return prefix, name
+    return "", qname
+
+
+def _clean(text: str) -> str:
+    return re.sub(r"\s+", " ", text or "").strip()
+
+
+def _contexts(root) -> dict[str, dict]:
+    """
+    {context id: {"start", "end", "instant", "dims"}}.
+
+    dims is "Dimension=Member;..." in local names, sorted, so the same
+    slice reads the same in every filing. A typed member keeps its value.
+    """
+    out = {}
+    for element in root.iter():
+        if _local(element.tag) != "context":
+            continue
+        cid = element.get("id")
+        start = end = instant = None
+        dims = []
+        for child in element.iter():
+            name = _local(child.tag)
+            if name == "startDate":
+                start = _clean(child.text)
+            elif name == "endDate":
+                end = _clean(child.text)
+            elif name == "instant":
+                instant = _clean(child.text)
+            elif name == "explicitMember":
+                dims.append(f"{_split(child.get('dimension'))[1]}={_split(child.text)[1]}")
+            elif name == "typedMember":
+                dims.append(f"{_split(child.get('dimension'))[1]}={_clean(''.join(child.itertext()))}")
+        if cid:
+            out[cid] = {
+                "start": start or "",
+                "end": end or instant or "",
+                "instant": instant is not None and end is None,
+                "dims": ";".join(sorted(dims)),
+            }
+    return out
+
+
+def _units(root) -> dict[str, str]:
+    """{unit id: "GBP" | "pure" | "shares" | ...}."""
+    out = {}
+    for element in root.iter():
+        if _local(element.tag) != "unit":
+            continue
+        measures = [_split(_clean(m.text))[1] for m in element.iter()
+                    if _local(m.tag) == "measure"]
+        if element.get("id"):
+            out[element.get("id")] = "/".join(measures)
+    return out
 
 
 def _number(element) -> int | None:
     """
-    The value of one tagged fact, in whole pounds.
+    The value of one tagged figure, in whole units.
 
-    Three modifiers, all of which change the answer by orders of
-    magnitude or by its sign, and all of which are attributes rather than
-    anything visible in the text: scale is a power of ten the displayed
-    figure was divided by, sign="-" means the displayed figure is
-    negative, and the text itself is formatted for humans.
+    Four things change the answer and none is visible in the rendered
+    number: scale is the power of ten the figure was divided by, sign="-"
+    makes it negative, a bracketed figure is negative, and the format
+    attribute says how to read the text - including that a dash is a
+    zero, not a blank (ixt:zerodash, ixt:fixed-zero).
     """
+    nil = element.get("{http://www.w3.org/2001/XMLSchema-instance}nil")
+    if nil in ("true", "1"):
+        return None
+    fmt = _split(element.get("format"))[1].lower()
     text = "".join(element.itertext()).strip()
+    if "zero" in fmt or (text in ("-", "–", "—") and fmt):
+        return 0
+    if "comma-decimal" in fmt or "numcommadecimal" in fmt:
+        text = text.replace(".", "").replace(",", ".")
     text = re.sub(r"[,\s ]", "", text)
     if text in ("", "-", "–", "—"):
         return None
@@ -129,133 +285,157 @@ def _number(element) -> int | None:
     return int(round(value))
 
 
-def _contexts(root) -> dict[str, dict]:
-    """{context id: {"end": date, "instant": bool}} for every context."""
-    out = {}
-    for element in root.iter():
-        if _local(element.tag) != "context":
+# The auditor's report says "material uncertainty related to going
+# concern" under its own heading only when one exists. The same words
+# appear, negated, in every clean report - "we have not identified any
+# material uncertainties relating to events or conditions..." - which is
+# why each match is checked for a negation just before it.
+_GC_POSITIVE = re.compile(
+    r"material uncertainty (?:related|relating) to going concern"
+    r"|(?:indicate|indicates|that) a material uncertainty exists", re.I)
+_GC_NEGATION = re.compile(r"\b(?:no|not|nothing|any|without)\b[^.]{0,60}$", re.I)
+
+
+def _going_concern(text: str) -> str | None:
+    """The sentence that flags a material uncertainty, or None."""
+    for match in _GC_POSITIVE.finditer(text):
+        before = text[max(0, match.start() - 80):match.start()]
+        if _GC_NEGATION.search(before):
             continue
-        cid = element.get("id")
-        end = instant = None
-        for child in element.iter():
-            name = _local(child.tag)
-            if name == "endDate":
-                end = (child.text or "").strip()
-            elif name == "instant":
-                instant = (child.text or "").strip()
-        if cid:
-            out[cid] = {"end": end or instant, "instant": end is None}
-    return out
+        start = text.rfind(".", 0, match.start()) + 1
+        end = text.find(".", match.end())
+        return _clean(text[start:end if end != -1 else match.end() + 200])[:TEXT_CAP]
+    return None
 
 
-def facts(path: Path) -> dict:
+def extract(path: Path) -> dict:
     """
-    Every tagged fact in one document, as
-    {concept: [(period_end, value), ...]}, plus the concepts seen.
+    Every fact in one document. {"parsed", "facts", "reason"}.
 
-    Returns an empty reading rather than raising on a document that will
-    not parse: a filing that is a scanned PDF renamed, or truncated by a
-    failed download, is a thing to report and move past.
+    Duplicates are dropped: a filing tags the same figure in the balance
+    sheet and again in a note, with the same context and value, and
+    counting it twice would make every census figure wrong.
     """
     try:
         root = ElementTree.fromstring(path.read_bytes())
     except ElementTree.ParseError as error:
-        logger.debug("%s: not parseable XML (%s)", path.name, error)
-        return {"values": {}, "concepts": set(), "parsed": False}
+        return {"parsed": False, "facts": [], "reason": f"not parseable as XML ({error})"}
 
     contexts = _contexts(root)
-    values: dict[str, list[tuple[str | None, int]]] = {}
-    seen = set()
+    units = _units(root)
+    facts, seen = [], set()
     for element in root.iter():
-        if _local(element.tag) not in ("nonFraction", "nonNumeric"):
+        tag = _local(element.tag)
+        if tag not in ("nonFraction", "nonNumeric"):
             continue
-        concept = _concept(element.get("name"))
-        seen.add(concept)
-        if _local(element.tag) != "nonFraction":
-            continue
-        value = _number(element)
-        if value is None:
-            continue
-        end = (contexts.get(element.get("contextRef")) or {}).get("end")
-        values.setdefault(concept, []).append((end, value))
-    return {"values": values, "concepts": seen, "parsed": True}
+        prefix, concept = _split(element.get("name"))
+        ctx = contexts.get(element.get("contextRef")) or {}
+        if tag == "nonFraction":
+            value = _number(element)
+            if value is None:
+                continue
+            kind, value = "num", str(value)
+        else:
+            kind, value = "text", _clean("".join(element.itertext()))
+            if len(value) > TEXT_CAP:
+                value = value[:TEXT_CAP - 1] + "…"
+        fact = {
+            "concept": concept, "prefix": prefix, "kind": kind,
+            "period_start": ctx.get("start", "") if not ctx.get("instant") else "",
+            "period_end": ctx.get("end", ""),
+            "instant": "1" if ctx.get("instant") else "",
+            "dimensions": ctx.get("dims", ""),
+            "unit": units.get(element.get("unitRef") or "", "") if kind == "num" else "",
+            "value": value,
+        }
+        key = tuple(fact.values())
+        if key not in seen:
+            seen.add(key)
+            facts.append(fact)
+
+    if not facts:
+        return {"parsed": True, "facts": [], "reason": "no iXBRL tags - probably not a tagged filing"}
+
+    gc = _going_concern(_clean(" ".join(root.itertext())))
+    facts.append({
+        "concept": GOING_CONCERN, "prefix": "derived", "kind": "text",
+        "period_start": "", "period_end": "", "instant": "", "dimensions": "",
+        "unit": "", "value": gc or "none found",
+    })
+    return {"parsed": True, "facts": facts, "reason": None}
 
 
-def _pick(reading: dict, field: str) -> tuple[int | None, str | None, str | None]:
+def _filings(directory: Path, club_id: str) -> list[dict]:
+    """The filing-history items the fetch saved, in the order it numbered them."""
+    path = directory / f"{club_id}__filings.json"
+    if not path.exists():
+        return []
+    try:
+        history = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return []
+    return [x for x in history.get("items") or []
+            if (x.get("links") or {}).get("document_metadata")]
+
+
+def document_meta(directory: Path, path: Path) -> dict:
     """
-    One field's value, its period end, and the concept it came from.
-
-    Where a concept appears for several periods - accounts show the prior
-    year beside the current one - the latest period wins, which is the
-    year the filing is actually for.
+    Which filing a document is: its id at the document API, filing date,
+    the date its accounts are made up to, and whether it was filed on
+    paper. The fetch numbers documents in filing-history order, so
+    <club>__2.xhtml is the second accounts filing that has a document.
     """
-    for concept in CONCEPTS[field]:
-        entries = reading["values"].get(concept)
-        if not entries:
-            continue
-        end, value = max(entries, key=lambda e: (e[0] or ""))
-        return value, end, concept
-    return None, None, None
+    club_id, _, n = path.stem.partition("__")
+    items = _filings(directory, club_id)
+    try:
+        item = items[int(n) - 1]
+    except (ValueError, IndexError):
+        return {"club_id": club_id, "document": path.stem, "filing_date": "",
+                "made_up_date": "", "paper_filed": "", "type": ""}
+    meta_url = item["links"]["document_metadata"]
+    return {
+        "club_id": club_id,
+        "document": meta_url.rstrip("/").rsplit("/", 1)[-1],
+        "filing_date": item.get("date") or "",
+        "made_up_date": (item.get("description_values") or {}).get("made_up_date") or "",
+        "paper_filed": "yes" if item.get("paper_filed") else "",
+        "type": item.get("type") or "",
+        "pages": item.get("pages") or "",
+    }
 
 
-def read_document(path: Path) -> dict:
-    """One document to the row it supports, or a stated reason it cannot."""
-    reading = facts(path)
-    if not reading["parsed"]:
-        return {"ok": False, "reason": "not parseable as XML"}
-    if not reading["concepts"]:
-        return {"ok": False, "reason": "no iXBRL tags - probably not a tagged filing"}
-
-    out = {"ok": True, "concepts": reading["concepts"], "fields": {}, "sources": {}}
-    for field in CONCEPTS:
-        value, end, concept = _pick(reading, field)
-        if value is not None:
-            out["fields"][field] = value
-            out["sources"][field] = concept
-            out.setdefault("period_end", end)
-    # period_end from the profit-and-loss where there is one: a balance
-    # sheet date is an instant and can sit a day either side of it.
-    for field in ("turnover", "profit_before_tax", "staff_costs"):
-        value, end, _ = _pick(reading, field)
-        if value is not None and end:
-            out["period_end"] = end
-            break
-
-    if "turnover" in out["fields"]:
-        out["disclosure"] = finances.DISCLOSURE_FULL
-    elif out["fields"] or reading["concepts"] & BALANCE_SHEET_CONCEPTS:
-        # Something was read and it was not turnover. That is the
-        # small-company or abridged regime doing exactly what it permits -
-        # a balance sheet, sometimes a profit, and no revenue line.
-        # Recorded as a state rather than as a gap, because a club that
-        # discloses nothing is a fact about the club, and because the
-        # figures that ARE here cannot be published beside it: the loader
-        # refuses money on a non-full disclosure, and is right to.
-        out["disclosure"] = finances.DISCLOSURE_SMALL_COMPANY
-    else:
-        return {"ok": False,
-                "reason": "tagged, but nothing recognised in it",
-                "concepts": reading["concepts"]}
+def read_facts(path: Path = FACTS) -> list[dict]:
+    """Every fact on file, from the per-club files under `path`."""
+    if not path.exists():
+        return []
+    out = []
+    for club_file in sorted(path.glob("*.tsv")):
+        with club_file.open(encoding="utf-8", newline="") as fh:
+            out.extend(csv.DictReader(fh, delimiter="\t"))
     return out
 
 
-def _season(period_end: str | None) -> int | None:
+def write_facts(rows: list[dict], path: Path = FACTS) -> None:
     """
-    The season a set of accounts belongs to, by the calendar year its
-    period ends in - which is what the hand-collected rows already do:
-    2024-05-31 and 2024-06-30 are both 2024.
+    One sorted file per club, so a month with no new filings writes
+    byte-identical files and git records nothing. A club with no facts
+    left loses its file.
     """
-    match = re.match(r"(\d{4})-(\d{2})", period_end or "")
-    return int(match.group(1)) if match else None
-
-
-def existing_rows() -> set[tuple[str, int]]:
-    """(club_id, season) already in club_finances.csv - never overwritten."""
-    if not FINANCES_CSV.exists():
-        return set()
-    with FINANCES_CSV.open(encoding="utf-8") as fh:
-        return {(r["club_id"], int(r["season_end_year"]))
-                for r in csv.DictReader(fh) if r.get("season_end_year")}
+    by_club: dict[str, list[dict]] = defaultdict(list)
+    for r in rows:
+        by_club[r["club_id"]].append(r)
+    path.mkdir(parents=True, exist_ok=True)
+    for stale in path.glob("*.tsv"):
+        if stale.stem not in by_club:
+            stale.unlink()
+    for club_id, club_rows in by_club.items():
+        club_rows.sort(key=lambda r: (r["document"], r["concept"], r["period_end"],
+                                      r["dimensions"], r["value"]))
+        with (path / f"{club_id}.tsv").open("w", encoding="utf-8", newline="") as fh:
+            writer = csv.DictWriter(fh, FACT_COLUMNS, delimiter="\t", lineterminator="\n",
+                                    extrasaction="ignore")
+            writer.writeheader()
+            writer.writerows(club_rows)
 
 
 def mapping(directory: Path | None = None) -> dict[str, dict]:
@@ -272,99 +452,435 @@ def mapping(directory: Path | None = None) -> dict[str, dict]:
         return {r["club_id"]: r for r in csv.DictReader(fh, delimiter="\t")}
 
 
-def main():
-    logging.basicConfig(level=logging.INFO, format="%(levelname)-8s %(message)s")
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("directory", help="directory of fetched documents")
-    parser.add_argument("--apply", action="store_true",
-                        help="append the rows to club_finances.csv")
-    args = parser.parse_args()
+def cmd_facts(directory: Path, facts_path: Path = FACTS) -> dict:
+    """
+    Read every document in `directory` into the facts file.
 
-    directory = Path(args.directory)
+    Facts from documents NOT fetched this time are kept: the fetch takes
+    the two latest filings, so each new year's accounts push the oldest
+    out of the window, and the facts already read from it are still
+    true. They are dropped only when the club is now matched to a
+    different company, because then they are another company's figures.
+    """
     companies = mapping(directory)
-    taken = existing_rows()
-
-    rows, unread, pdf_only, duplicates = [], [], [], []
+    fresh, unread, documents = [], [], []
     for path in sorted(directory.glob("*.xhtml")):
-        club_id = path.stem.split("__", 1)[0]
-        company = companies.get(club_id, {})
-        result = read_document(path)
+        meta = document_meta(directory, path)
+        result = extract(path)
+        if not result["facts"]:
+            unread.append((path.name, result["reason"]))
+            continue
+        company = (companies.get(meta["club_id"]) or {}).get("company_number", "")
+        documents.append(meta["document"])
+        for fact in result["facts"]:
+            fresh.append({**fact, "club_id": meta["club_id"], "company_number": company,
+                          "document": meta["document"], "filing_date": meta["filing_date"],
+                          "made_up_date": meta["made_up_date"]})
+
+    done = set(documents)
+    kept = []
+    for row in read_facts(facts_path):
+        if row["document"] in done:
+            continue
+        current = (companies.get(row["club_id"]) or {}).get("company_number")
+        if companies and current and row["company_number"] and current != row["company_number"]:
+            continue
+        kept.append(row)
+    write_facts(kept + fresh, facts_path)
+    logger.info("facts: %d from %d documents read now, %d kept from earlier runs -> %s/",
+                len(fresh), len(done), len(kept), facts_path.name)
+    return {"fresh": len(fresh), "kept": len(kept), "documents": len(done), "unread": unread}
+
+
+# ── stage 2: facts to rows ─────────────────────────────────────────────────
+
+def _matches(fact: dict, concept: str, member: str | None) -> bool:
+    if fact["concept"] != concept or fact["kind"] != "num":
+        return False
+    dims = fact["dimensions"]
+    if member is None:
+        return dims == ""
+    parts = dims.split(";") if dims else []
+    return len(parts) == 1 and member.lower() in parts[0].split("=", 1)[-1].lower()
+
+
+def _target(facts: list[dict], made_up: str) -> str:
+    """
+    The date the accounts are made up to. The filing history states it,
+    and that is used where present; otherwise the filing's own tagged end
+    date; otherwise the latest period end any fact carries.
+    """
+    if made_up:
+        return made_up
+    for f in facts:
+        if f["concept"] == PERIOD_END and re.match(r"\d{4}-\d{2}-\d{2}", f["value"]):
+            return f["value"][:10]
+    ends = [f["period_end"] for f in facts if f["period_end"]]
+    return max(ends) if ends else ""
+
+
+def _on(fact: dict, kind: str, target: str) -> bool:
+    if kind == INSTANT and fact["instant"] != "1":
+        return False
+    if kind == DURATION and fact["instant"] == "1":
+        return False
+    return fact["period_end"] == target
+
+
+def _pick(facts: list[dict], field: str, target: str) -> tuple[int | None, str | None, bool]:
+    """
+    (value, source, ambiguous) for one field.
+
+    Where a concept carries different values for the same period with no
+    dimension to tell them apart - a group filing tagging both the group
+    and the parent company the same way - the first in document order is
+    taken, which is the primary statement, and the row is flagged so the
+    choice is visible rather than silent.
+    """
+    kind, candidates = FIELDS[field]
+    for concept, member in candidates:
+        hits = [f for f in facts if _matches(f, concept, member) and _on(f, kind, target)]
+        if not hits:
+            continue
+        values = list(dict.fromkeys(int(f["value"]) for f in hits))
+        source = concept + (f"[{member}]" if member else "")
+        return values[0], source, len(values) > 1
+    return None, None, False
+
+
+def _text_fact(facts: list[dict], names: tuple[str, ...]) -> str:
+    for f in facts:
+        if f["concept"] in names:
+            if f["value"]:
+                return f["value"]
+            if f["dimensions"]:
+                return f["dimensions"].split(";")[0].split("=", 1)[-1]
+    return ""
+
+
+def derive(facts: list[dict], made_up: str = "") -> dict:
+    """One document's facts to the row they support, or a stated reason they do not."""
+    if not facts:
+        return {"ok": False, "reason": "no facts"}
+    target = _target(facts, made_up)
+    out = {"ok": True, "fields": {}, "sources": {}, "ambiguous": [],
+           "period_end": target,
+           "concepts": {f["concept"] for f in facts}}
+    for field in FIELDS:
+        value, source, ambiguous = _pick(facts, field, target)
+        if value is None:
+            continue
+        out["fields"][field] = value
+        out["sources"][field] = source
+        if ambiguous:
+            out["ambiguous"].append(field)
+
+    start = _text_fact(facts, (PERIOD_START,))[:10]
+    if not re.match(r"\d{4}-\d{2}-\d{2}$", start):
+        starts = [f["period_start"] for f in facts
+                  if f["period_start"] and f["period_end"] == target]
+        start = min(starts) if starts else ""
+    out["period_start"] = start
+    out["entity_name"] = _text_fact(facts, (ENTITY_NAME,))
+    out["accounts_type"] = _text_fact(facts, ACCOUNTS_TYPE)
+    out["audited"] = _text_fact(facts, AUDIT_STATUS)
+    gc = next((f["value"] for f in facts if f["concept"] == GOING_CONCERN), "")
+    out["going_concern"] = "" if gc in ("", "none found") else gc
+
+    if "turnover" in out["fields"]:
+        out["disclosure"] = finances.DISCLOSURE_FULL
+    elif out["fields"]:
+        # A balance sheet, a headcount, perhaps a profit, and no revenue
+        # line: the small-company regime doing what it permits.
+        out["disclosure"] = finances.DISCLOSURE_SMALL_COMPANY
+    else:
+        return {"ok": False, "reason": "tagged, but nothing recognised in it",
+                "concepts": out["concepts"]}
+    return out
+
+
+def read_document(path: Path) -> dict:
+    """One document straight to its row - extract and derive in one step."""
+    result = extract(path)
+    if not result["facts"]:
+        return {"ok": False, "reason": result["reason"]}
+    return derive(result["facts"])
+
+
+def _season(period_end: str | None) -> int | None:
+    """
+    The season a set of accounts belongs to, by the calendar year its
+    period ends in - which is what the hand-collected rows already do:
+    2024-05-31 and 2024-06-30 are both 2024.
+    """
+    match = re.match(r"(\d{4})-(\d{2})", period_end or "")
+    return int(match.group(1)) if match else None
+
+
+def _months(start: str, end: str) -> str:
+    m1, m2 = re.match(r"(\d{4})-(\d{2})", start or ""), re.match(r"(\d{4})-(\d{2})", end or "")
+    if not (m1 and m2):
+        return ""
+    months = (int(m2.group(1)) - int(m1.group(1))) * 12 + int(m2.group(2)) - int(m1.group(2)) + 1
+    return str(months) if 1 <= months <= 24 else ""
+
+
+def _norm_entity(name: str) -> str:
+    text = re.sub(r"[^a-z0-9 ]", " ", (name or "").lower().replace("&", " and "))
+    text = re.sub(r"\b(the|limited|ltd|plc|public limited company|company|co)\b", " ", text)
+    return " ".join(text.split())
+
+
+def _flags(raw: str) -> list[str]:
+    try:
+        value = json.loads(raw or "[]")
+        return value if isinstance(value, list) else []
+    except json.JSONDecodeError:
+        return []
+
+
+def load_csv(path: Path = FINANCES_CSV) -> list[dict]:
+    """Every row, with every column the loader now knows, blank where absent."""
+    if not path.exists():
+        return []
+    with path.open(encoding="utf-8", newline="") as fh:
+        return [{c: (r.get(c) or "") for c in finances.COLUMNS} for r in csv.DictReader(fh)]
+
+
+def existing_rows(path: Path = FINANCES_CSV) -> set[tuple[str, int]]:
+    """(club_id, season) already in club_finances.csv."""
+    return {(r["club_id"], int(r["season_end_year"]))
+            for r in load_csv(path) if r.get("season_end_year")}
+
+
+# Columns a hand row may be topped up with: the ones added after every
+# hand row was written. Nothing a person had the chance to fill.
+NEW_COLUMNS = (["operating_profit", "profit_after_tax", "amortisation", "player_sales_profit"]
+               + finances.BALANCE_COLUMNS + finances.STATUS_COLUMNS)
+
+
+def build_rows(facts: list[dict], existing: list[dict]) -> dict:
+    """
+    Facts plus the current CSV to the new CSV, and what changed.
+
+    Machine-read rows are rebuilt from the facts on every run, which is
+    what lets a field added to FIELDS reach the rows already written. A
+    hand row keeps every value it has; it gains only NEW_COLUMNS, only
+    where blank, and only from a filing by the entity it names.
+    """
+    by_doc: dict[str, list[dict]] = defaultdict(list)
+    for f in facts:
+        by_doc[f["document"]].append(f)
+
+    derived: dict[tuple[str, int], dict] = {}
+    unread = []
+    for doc, doc_facts in by_doc.items():
+        first = doc_facts[0]
+        result = derive(doc_facts, first["made_up_date"])
         if not result["ok"]:
-            unread.append((path.name, result["reason"],
+            unread.append((first["club_id"], doc, result["reason"],
                            sorted(result.get("concepts", ()))[:8]))
             continue
-
-        season = _season(result.get("period_end"))
+        season = _season(result["period_end"])
         if season is None:
-            unread.append((path.name, "no period end date", []))
+            unread.append((first["club_id"], doc, "no period end date", []))
             continue
-        if (club_id, season) in taken:
-            duplicates.append(f"{club_id} {season}")
-            continue
-        taken.add((club_id, season))
+        result.update(club_id=first["club_id"], company_number=first["company_number"],
+                      filing_date=first["filing_date"], document=doc)
+        key = (first["club_id"], season)
+        # Two filings for one year is an amendment: the later one stands.
+        if key not in derived or result["filing_date"] > derived[key]["filing_date"]:
+            derived[key] = result
 
-        fields = result["fields"]
-        full = result["disclosure"] == finances.DISCLOSURE_FULL
+    companies = mapping()
+    rows, index = [dict(r) for r in existing], {}
+    for i, r in enumerate(rows):
+        if r["season_end_year"]:
+            index[(r["club_id"], int(r["season_end_year"]))] = i
+
+    stats = Counter()
+    mismatched = []
+    for key, d in sorted(derived.items()):
+        club_id, season = key
+        fields = d["fields"]
+        full = d["disclosure"] == finances.DISCLOSURE_FULL
+        values = {f: ("" if (f in PNL_FIELDS and not full) else str(v))
+                  for f, v in fields.items()}
+        values.update(accounts_type=d["accounts_type"], audited=d["audited"],
+                      going_concern=d["going_concern"])
+
+        at = index.get(key)
+        if at is not None and "ixbrl_auto" not in _flags(rows[at]["flags"]):
+            hand = rows[at]
+            same = (hand["company_number"] and hand["company_number"] == d["company_number"]) \
+                or (_norm_entity(hand["entity_name"]) and d["entity_name"]
+                    and _norm_entity(hand["entity_name"]) == _norm_entity(d["entity_name"]))
+            if not same:
+                mismatched.append(f"{club_id} {season}: row names {hand['entity_name'] or '?'}, "
+                                  f"filing is {d['entity_name'] or '?'}")
+                continue
+            filled = [c for c in NEW_COLUMNS if not hand[c] and values.get(c)]
+            for c in filled:
+                hand[c] = values[c]
+            if filled:
+                flags = _flags(hand["flags"])
+                if "ixbrl_balance_sheet" not in flags:
+                    flags.append("ixbrl_balance_sheet")
+                hand["flags"] = json.dumps(flags)
+                stats["hand rows topped up"] += 1
+            continue
+
+        company = companies.get(club_id) or {}
         row = {c: "" for c in finances.COLUMNS}
+        row.update(values)
         row.update({
             "club_id": club_id,
-            "season_end_year": season,
-            "company_number": company.get("company_number", ""),
-            "entity_name": company.get("entity_name", ""),
-            "period_end": result.get("period_end", ""),
-            "disclosure": result["disclosure"],
-            # The loader refuses figures on anything but a full
-            # disclosure, and it is right to: a club that published no
-            # profit-and-loss cannot also have a turnover.
-            "turnover": fields.get("turnover", "") if full else "",
-            "staff_costs": fields.get("staff_costs", "") if full else "",
-            "staff_costs_definition": (
-                "excl_amortisation" if full and "staff_costs" in fields else ""),
-            "profit_before_tax": fields.get("profit_before_tax", "") if full else "",
-            "source_url": (
-                f"https://find-and-update.company-information.service.gov.uk"
-                f"/company/{company.get('company_number','')}/filing-history"),
-            "flags": json.dumps(["ixbrl_auto"]),
+            "season_end_year": str(season),
+            "company_number": d["company_number"] or company.get("company_number", ""),
+            "entity_name": (d["entity_name"] or company.get("entity_name", "")).strip(),
+            "period_start": d["period_start"],
+            "period_end": d["period_end"],
+            "period_months": _months(d["period_start"], d["period_end"]),
+            "disclosure": d["disclosure"],
+            "staff_costs_definition": ("excl_amortisation" if full and "staff_costs" in fields
+                                       else ""),
+            "source_url": ("https://find-and-update.company-information.service.gov.uk"
+                           f"/company/{d['company_number']}/filing-history"),
+            "filing_date": d["filing_date"],
+            "flags": json.dumps(["ixbrl_auto"] + (["ixbrl_ambiguous"] if d["ambiguous"] else [])),
         })
-        rows.append(row)
+        if at is not None:
+            rows[at] = row
+            stats["machine rows rebuilt"] += 1
+        else:
+            index[key] = len(rows)
+            rows.append(row)
+            stats["machine rows added"] += 1
+        stats[d["disclosure"]] += 1
 
-    for path in sorted(directory.glob("*.pdf")):
-        pdf_only.append(path.name)
+    filled = Counter()
+    for r in rows:
+        if "ixbrl_auto" in _flags(r["flags"]) or "ixbrl_balance_sheet" in _flags(r["flags"]):
+            for c in finances.MONEY_COLUMNS + finances.STATUS_COLUMNS:
+                if r[c]:
+                    filled[c] += 1
+    return {"rows": rows, "stats": stats, "unread": unread, "mismatched": mismatched,
+            "filled": filled, "derived": derived}
 
-    logger.info("%d rows read from %d documents", len(rows),
-                len(list(directory.glob("*.xhtml"))))
-    by_state = {}
-    for row in rows:
-        by_state[row["disclosure"]] = by_state.get(row["disclosure"], 0) + 1
-    logger.info("   by disclosure: %s", by_state or "none")
-    logger.info("   clubs: %d", len({r["club_id"] for r in rows}))
-    if duplicates:
-        logger.info("%d already collected by hand, left alone: %s",
-                    len(duplicates), ", ".join(duplicates[:6]))
-    if pdf_only:
-        logger.warning("%d filings are PDF only and carry no tagged figures",
-                       len(pdf_only))
 
-    # The whole point. A file this could not read is named, with the
-    # concepts it DID find, because that is what says which spelling to
-    # add to CONCEPTS.
-    if unread:
-        logger.warning("%d documents could not be read:", len(unread))
-        for name, reason, concepts in unread[:25]:
-            logger.warning("    %-34s %s %s", name, reason,
-                           ("- saw " + ", ".join(concepts)) if concepts else "")
+def census(facts: list[dict]) -> list[dict]:
+    """
+    Every concept seen, how many filings carry it, and which field reads
+    it. The unmapped concepts in the most filings are what to add next.
+    """
+    reads = {}
+    for field, (_kind, candidates) in FIELDS.items():
+        for concept, member in candidates:
+            reads.setdefault(concept, []).append(field + (f"[{member}]" if member else ""))
+    docs, count, dimmed, example = defaultdict(set), Counter(), Counter(), {}
+    for f in facts:
+        c = f["concept"]
+        docs[c].add(f["document"])
+        count[c] += 1
+        if f["dimensions"]:
+            dimmed[c] += 1
+        example.setdefault(c, f)
+    out = []
+    for c in sorted(docs, key=lambda c: (-len(docs[c]), c)):
+        e = example[c]
+        out.append({"concept": c, "prefix": e["prefix"], "kind": e["kind"],
+                    "documents": len(docs[c]), "facts": count[c],
+                    "with_dimensions": dimmed[c],
+                    "read_as": ",".join(reads.get(c, [])),
+                    "example": f"{e['club_id']}: {e['value'][:60]}"
+                               + (f" [{e['dimensions'][:60]}]" if e["dimensions"] else "")})
+    return out
 
-    if not args.apply:
-        logger.info("dry run - pass --apply to append to club_finances.csv")
-        return
 
-    if not rows:
-        logger.info("nothing to write")
-        return
-    with FINANCES_CSV.open("a", encoding="utf-8", newline="") as fh:
-        writer = csv.DictWriter(fh, finances.COLUMNS, lineterminator="\n")
+def write_census(rows: list[dict], path: Path = CENSUS) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8", newline="") as fh:
+        writer = csv.DictWriter(fh, ["concept", "prefix", "kind", "documents", "facts",
+                                     "with_dimensions", "read_as", "example"],
+                                delimiter="\t", lineterminator="\n")
+        writer.writeheader()
         writer.writerows(rows)
-    logger.info("appended %d rows to %s", len(rows), FINANCES_CSV.name)
+
+
+def cmd_rows(facts_path: Path = FACTS, apply: bool = False,
+             csv_path: Path = FINANCES_CSV) -> dict:
+    facts = read_facts(facts_path)
+    result = build_rows(facts, load_csv(csv_path))
+    write_census(census(facts))
+
+    stats = result["stats"]
+    logger.info("rows: %d club-seasons read from %d documents",
+                len(result["derived"]), len({f["document"] for f in facts}))
+    for key in ("full", "small_company", "machine rows added", "machine rows rebuilt",
+                "hand rows topped up"):
+        logger.info("   %-22s %d", key, stats.get(key, 0))
+    logger.info("   fields filled on machine-read and topped-up rows:")
+    for c in finances.MONEY_COLUMNS + finances.STATUS_COLUMNS:
+        if result["filled"].get(c):
+            logger.info("      %-38s %d", c, result["filled"][c])
+    if result["mismatched"]:
+        logger.info("%d hand rows left alone - the filing is a different entity:",
+                    len(result["mismatched"]))
+        for line in result["mismatched"][:20]:
+            logger.info("    %s", line)
+    if result["unread"]:
+        logger.warning("%d documents gave no row:", len(result["unread"]))
+        for club, doc, reason, concepts in result["unread"][:25]:
+            logger.warning("    %-28s %s%s", club, reason,
+                           (" - saw " + ", ".join(concepts)) if concepts else "")
+
+    unmapped = [c for c in census(facts) if not c["read_as"] and c["kind"] == "num"]
+    if unmapped:
+        logger.info("most common numeric concepts no field reads (see %s):", CENSUS.name)
+        for c in unmapped[:25]:
+            logger.info("    %4d filings  %s", c["documents"], c["concept"])
+
+    if apply:
+        with csv_path.open("w", encoding="utf-8", newline="") as fh:
+            writer = csv.DictWriter(fh, finances.COLUMNS, lineterminator="\n")
+            writer.writeheader()
+            writer.writerows(result["rows"])
+        logger.info("wrote %d rows to %s", len(result["rows"]), csv_path.name)
+    else:
+        logger.info("dry run - pass --apply to write %s", csv_path.name)
+    return result
+
+
+def main():
+    logging.basicConfig(level=logging.INFO, format="%(levelname)-8s %(message)s")
+    argv = sys.argv[1:]
+    if argv and argv[0] not in ("facts", "rows", "-h", "--help"):
+        argv = ["both"] + argv            # the original invocation: a directory
+    parser = argparse.ArgumentParser(description=__doc__,
+                                     formatter_class=argparse.RawDescriptionHelpFormatter)
+    sub = parser.add_subparsers(dest="command", required=True)
+    p = sub.add_parser("facts", help="documents -> data/companies/facts/")
+    p.add_argument("directory")
+    p.add_argument("--facts", default=str(FACTS))
+    p = sub.add_parser("rows", help="data/companies/facts/ -> club_finances.csv")
+    p.add_argument("--facts", default=str(FACTS))
+    p.add_argument("--apply", action="store_true")
+    p = sub.add_parser("both", help=argparse.SUPPRESS)
+    p.add_argument("directory")
+    p.add_argument("--facts", default=str(FACTS))
+    p.add_argument("--apply", action="store_true")
+    args = parser.parse_args(argv)
+
+    if args.command in ("facts", "both"):
+        directory = Path(args.directory)
+        result = cmd_facts(directory, Path(args.facts))
+        pdfs = sorted(directory.glob("*.pdf"))
+        if pdfs:
+            logger.warning("%d filings are PDF only and carry no tagged figures", len(pdfs))
+        for name, reason in result["unread"][:25]:
+            logger.warning("    %-34s %s", name, reason)
+    if args.command in ("rows", "both"):
+        cmd_rows(Path(args.facts), apply=getattr(args, "apply", False))
 
 
 if __name__ == "__main__":

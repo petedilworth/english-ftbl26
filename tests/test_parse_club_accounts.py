@@ -29,6 +29,13 @@ def ixbrl(facts, contexts=None):
         ('<xbrli:context id="prior"><xbrli:period>'
          '<xbrli:startDate>2022-07-01</xbrli:startDate>'
          '<xbrli:endDate>2023-06-30</xbrli:endDate></xbrli:period></xbrli:context>'),
+        # A balance sheet is a position on a date, and XBRL says so: its
+        # concepts are defined as instants, and a filing that tags one
+        # against a year fails validation before Companies House takes it.
+        ('<xbrli:context id="bs"><xbrli:period>'
+         '<xbrli:instant>2024-06-30</xbrli:instant></xbrli:period></xbrli:context>'),
+        ('<xbrli:context id="bs-prior"><xbrli:period>'
+         '<xbrli:instant>2023-06-30</xbrli:instant></xbrli:period></xbrli:context>'),
     ]
     return (
         '<html xmlns="http://www.w3.org/1999/xhtml" '
@@ -114,7 +121,7 @@ def test_a_filing_with_no_turnover_is_a_small_company_not_a_gap(tmp_path):
     profit-and-loss. That is a finding about the club, and the site
     already renders it as one.
     """
-    path = write(tmp_path, "a__1.xhtml", ixbrl([fact("core:NetAssetsLiabilities", "42,000")]))
+    path = write(tmp_path, "a__1.xhtml", ixbrl([fact("core:NetAssetsLiabilities", "42,000", context="bs")]))
     result = pca.read_document(path)
     assert result["ok"]
     assert result["disclosure"] == finances.DISCLOSURE_SMALL_COMPANY
@@ -164,7 +171,7 @@ def test_a_figure_is_never_carried_on_a_row_that_disclosed_nothing(tmp_path):
     filing under the small-company regime cannot also have a turnover.
     """
     path = write(tmp_path, "a__1.xhtml", ixbrl([
-        fact("core:NetAssetsLiabilities", "42,000"),
+        fact("core:NetAssetsLiabilities", "42,000", context="bs"),
         fact("core:StaffCostsEmployeeBenefitsExpense", "9,000"),
     ]))
     result = pca.read_document(path)

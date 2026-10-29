@@ -7,8 +7,14 @@ name: Club accounts
 # each row flagged ixbrl_auto. The daily Refresh loads the CSV into the
 # database; the site picks it up from there.
 #
-# Also commits data/companies/accounts-report.txt: what was read, what was
-# a scanned PDF, and which documents carried no tag the parser knows.
+# Also commits, under data/companies/:
+#   facts/<club_id>.tsv   every tagged fact in every filing, so a field can
+#                         be added or corrected without fetching again
+#   accounts-concepts.tsv every concept seen, and which field reads it
+#   accounts-report.txt   what was read, and what was not
+#   pdf/                  the PDF-only filings: what each is, and its text
+#                         (text layer, or OCR for a scan) - see
+#                         scripts/read_pdf_accounts.py
 
 on:
   push:
@@ -17,6 +23,7 @@ on:
       - '.github/workflows/club-accounts.yml'
       - 'scripts/fetch_club_accounts.py'
       - 'scripts/parse_club_accounts.py'
+      - 'scripts/read_pdf_accounts.py'
   schedule:
     - cron: '41 4 3 * *'    # monthly, the 3rd, the day after the register snapshot
   workflow_dispatch:
@@ -36,7 +43,9 @@ concurrency:
 jobs:
   accounts:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    # The fetch is ~15 minutes; OCR of the scanned PDFs has its own
+    # 40-minute budget inside the script and picks up next run where it stopped.
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
 
@@ -46,6 +55,9 @@ jobs:
 
       - name: Install dependencies
         run: pip install -r requirements.txt
+
+      - name: Install the PDF tools
+        run: sudo apt-get update -q && sudo apt-get install -y -q poppler-utils tesseract-ocr
 
       - name: Fetch the filings
         env:
@@ -59,6 +71,9 @@ jobs:
           fi
 
       - name: Read the figures
+        # bash, not the default sh: pipefail, so a parser that crashes fails
+        # the job instead of tee reporting success and committing nothing.
+        shell: bash
         run: |
           mkdir -p data/companies
           {
@@ -67,11 +82,21 @@ jobs:
             python scripts/parse_club_accounts.py ch-accounts --apply 2>&1
           } | tee data/companies/accounts-report.txt
 
+      - name: Read the PDF-only filings
+        shell: bash
+        # Never blocks the figures above: a failure here is reported in
+        # report.txt and the commit goes ahead without it.
+        run: |
+          mkdir -p data/companies/pdf
+          python scripts/read_pdf_accounts.py ch-accounts --out data/companies/pdf \
+            --budget-minutes 40 2>&1 | tee data/companies/pdf/report.txt || true
+
       - name: Commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add club_finances.csv data/companies/accounts-report.txt
+          git add club_finances.csv data/companies/accounts-report.txt \
+                  data/companies/accounts-concepts.tsv data/companies/facts data/companies/pdf
           git commit -m "Club accounts read from Companies House (fetched by workflow)" || exit 0
           for attempt in 1 2 3 4 5; do
             if git push; then

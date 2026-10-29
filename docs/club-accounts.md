@@ -197,18 +197,124 @@ Each field therefore carries a candidate set, and every file where none of them
 matched is **reported by name, with the concepts it did find**, rather than
 filled with the nearest number. That report is what says which spelling to add.
 
-Two rules that do not bend:
+### Everything in the filing, not four figures from it
 
-- **Nothing hand-collected is overwritten.** The existing rows were read from
-  filings by a person and carry notes a parser cannot reproduce. A machine-read
-  row fills a club-season that is blank and never replaces a researched one.
-- **Every machine-read row carries the flag `ixbrl_auto`**, so which is which
-  stays answerable forever rather than for as long as anyone remembers.
+The first version read four concepts out of 270 filings and kept nothing else.
+The documents are discarded when the Actions job ends, so every field added
+after that would have meant fetching them all again. The parser now runs in
+two stages:
+
+| stage | reads | writes | needs the documents |
+|---|---|---|---|
+| `facts` | the fetched filings | `data/companies/facts/<club_id>.tsv` — every tagged fact: concept, period, dimensions, unit, value | yes |
+| `rows` | the facts files | `club_finances.csv` | no |
+
+So adding a field, or correcting which concept one is read from, is a re-run of
+`rows` anywhere, with no fetch. `data/companies/accounts-concepts.tsv` counts
+every concept seen and marks which field reads it; the unread concepts carried
+by the most filings are the spellings to add next.
+
+Dimensions matter here, and were invisible before. In the current FRC taxonomy
+"creditors due within one year" is not a concept of its own: it is
+`core:Creditors` with a maturity dimension, and the same concept with a
+different member is the long-term debt. Share capital is `core:Equity` with a
+share-capital member, and reading `core:Equity` without checking the member
+would put £100 where a club's £254,500 of net assets belongs.
+
+### The small-company rule, corrected
+
+A small-company or micro-entity filing may omit the profit-and-loss account. It
+may not omit the balance sheet or the average number of employees. The first
+version recorded such a filing as `small_company` and refused every figure on
+it, which discarded the balance sheets of 192 non-league filings the law
+required them to publish.
+
+The loader (`src/finances.py`) now splits the columns. **Profit-and-loss**
+columns are still refused on a `small_company` row. **Balance-sheet and
+headcount** columns are accepted on one: employees, fixed, intangible and
+tangible assets, current assets, cash, creditors within and after one year, net
+current assets, total assets less current liabilities, net assets, share
+capital and directors' pay. A row for a club that did not file, or no longer
+exists, still carries no figures at all.
+
+Each row also records what the filing says about itself: the accounts type,
+whether it was audited, and — read from the text, not a tag — whether the
+auditor reported a **material uncertainty over going concern**. Every clean
+audit report contains those words negated ("we have not identified any material
+uncertainty"), so a match preceded by a negation is not a flag.
+
+### Rules that do not bend
+
+- **Nothing a person collected is overwritten.** A hand row keeps every value
+  it has. It gains only the columns added after it was written — the balance
+  sheet, the headcount — only where blank, and only from a filing by **the
+  entity the row names**, because a holding company and the club company under
+  it report different money. Such a row gains the flag `ixbrl_balance_sheet`.
+- **Machine-read rows carry `ixbrl_auto` and are rebuilt on every run.** The
+  first version skipped any club-season already written, so its turnover-only
+  rows could never gain a field. Now they are regenerated from the facts.
+- **Facts from a filing no longer fetched are kept.** Each new year's accounts
+  push the oldest filing out of the two-filing window, and what was read from it
+  is still true. They are dropped only if the club is now matched to a
+  different company.
 
 ```bash
-python3 scripts/parse_club_accounts.py ch-accounts          # dry run, reports
-python3 scripts/parse_club_accounts.py ch-accounts --apply  # append the rows
+python3 scripts/parse_club_accounts.py facts ch-accounts    # documents -> facts
+python3 scripts/parse_club_accounts.py rows                 # dry run, reports
+python3 scripts/parse_club_accounts.py rows --apply         # write the CSV
 ```
+
+## The PDF-only filings — the plan
+
+109 of the filings fetched have no iXBRL. The document API offers them as a PDF
+and nothing else, so they carry no tagged figures. Most are small clubs, and
+most of those filed on paper, which Companies House scans: the PDF is a picture
+of a page with no text in it.
+
+**Step 1 — find out what they are (in the workflow now).**
+`scripts/read_pdf_accounts.py` records, for each PDF, its page count, whether it
+has a text layer, and whether it was filed on paper. It gets the text out — from
+the text layer where there is one, by OCR (tesseract) where there is not — and
+commits it to `data/companies/pdf/`, with `census.tsv` saying what each filing
+is and whether its text holds a balance sheet and an employee note. OCR has a
+40-minute budget per run; a filing it does not reach is listed as such, and the
+next run continues from it.
+
+**Step 2 — read the balance sheet from the text.** A small company's balance
+sheet is short and uses the same words in every filing: fixed assets, current
+assets, creditors falling due within one year, net current assets, total assets
+less current liabilities, creditors falling due after more than one year,
+provisions, net assets, called-up share capital, capital and reserves, and the
+average number of employees. Each line carries this year's figure and last
+year's, brackets for negatives.
+
+**The acceptance rule is arithmetic, not OCR confidence.** A reading is kept
+only if the balance sheet adds up:
+
+- fixed assets + current assets − creditors within one year = total assets less
+  current liabilities
+- current assets − creditors within one year = net current assets
+- total assets less current liabilities − creditors after one year − provisions
+  = net assets
+- net assets = capital and reserves
+
+A single misread digit breaks at least one of these, so a filing whose figures
+balance is very unlikely to be misread, and one that does not balance is
+recorded as "read, did not balance" rather than half-used. Both years on the
+page are checked, which doubles the evidence.
+
+**Step 3 — load them like any other machine-read row,** flagged `pdf_ocr`
+rather than `ixbrl_auto`, under the same loader rules and the same protection
+for hand-collected rows.
+
+**What stays out.** Profit-and-loss figures from PDFs: small companies do not
+file one, and the few that do would need their own arithmetic check (turnover
+less costs equals operating profit) before any figure is trusted.
+
+**Beyond Companies House.** Many fan-owned clubs are Community Benefit
+Societies, which file annual returns and accounts with the FCA's Mutuals Public
+Register rather than with Companies House. That is a separate source with its
+own matching problem — club to society number — and a separate piece of work.
 
 ## The ceiling, stated here rather than discovered later
 

@@ -52,52 +52,96 @@ STAFF_COSTS_DEFINITIONS = {"excl_amortisation", "incl_amortisation"}
 
 CONSOLIDATION_LEVELS = {"club", "group"}
 
-MONEY_COLUMNS = [
+# The profit-and-loss account. A small-company or micro-entity filing is
+# legally allowed to omit it, so these are refused on any row whose
+# disclosure is not full: a club that published no profit-and-loss cannot
+# also have a turnover, and one of the two would be wrong.
+PNL_COLUMNS = [
     "turnover",
     "staff_costs",
     "revenue_matchday",
     "revenue_broadcast",
     "revenue_commercial",
+    "operating_profit",
     "profit_before_tax",
+    "profit_after_tax",
+    "amortisation",
+    "player_sales_profit",
     "net_debt",
 ]
 
+# The balance sheet and the notes every filing must carry, the
+# small-company and micro-entity regimes included. These are ALLOWED on a
+# small_company row, and that is the point of separating them: refusing
+# every figure on a row that withheld its profit-and-loss threw away the
+# balance sheet of 192 non-league filings the law required them to file.
+#
+# net_debt stays with the profit-and-loss columns because it is a figure
+# the press derives for the biggest clubs, not one a filing states.
+BALANCE_COLUMNS = [
+    "employees",
+    "fixed_assets",
+    "intangible_assets",
+    "tangible_assets",
+    "current_assets",
+    "cash",
+    "creditors_within_year",
+    "net_current_assets",
+    "total_assets_less_current_liabilities",
+    "creditors_after_year",
+    "net_assets",
+    "share_capital",
+    "directors_pay",
+]
+
+# Whole numbers: pounds, or for employees a headcount.
+MONEY_COLUMNS = PNL_COLUMNS + BALANCE_COLUMNS
+
+# What the filing says about itself, as text.
+STATUS_COLUMNS = ["accounts_type", "audited", "going_concern"]
+
 REQUIRED_COLUMNS = {"club_id", "season_end_year", "disclosure"}
 
-CREATE_CLUB_FINANCES_SQL = """
-CREATE TABLE IF NOT EXISTS club_finances (
-    club_id                TEXT NOT NULL,
-    season_end_year        INT  NOT NULL,
-    company_number         TEXT,
-    entity_name            TEXT,
-    consolidation_level    TEXT,
-    period_start           TEXT,
-    period_end             TEXT,
-    period_months          INT,
-    disclosure             TEXT NOT NULL,
-    turnover               INT,
-    staff_costs            INT,
-    staff_costs_definition TEXT,
-    revenue_matchday       INT,
-    revenue_broadcast      INT,
-    revenue_commercial     INT,
-    profit_before_tax      INT,
-    net_debt               INT,
-    source_url             TEXT,
-    filing_date            TEXT,
-    flags                  TEXT,
-    PRIMARY KEY (club_id, season_end_year)
-);
-"""
-
 # Column order used for the INSERT; also the canonical CSV column order.
+# New columns go at the END, so a CSV written before they existed still
+# reads, and the hand-collected rows keep their shape.
 COLUMNS = [
     "club_id", "season_end_year", "company_number", "entity_name",
     "consolidation_level", "period_start", "period_end", "period_months",
     "disclosure", "turnover", "staff_costs", "staff_costs_definition",
     "revenue_matchday", "revenue_broadcast", "revenue_commercial",
     "profit_before_tax", "net_debt", "source_url", "filing_date", "flags",
+    "operating_profit", "profit_after_tax", "amortisation", "player_sales_profit",
+    *BALANCE_COLUMNS,
+    *STATUS_COLUMNS,
 ]
+
+_INT_COLUMNS = set(MONEY_COLUMNS) | {"season_end_year", "period_months"}
+_NOT_NULL = {"club_id", "season_end_year", "disclosure"}
+
+CREATE_CLUB_FINANCES_SQL = (
+    "CREATE TABLE IF NOT EXISTS club_finances (\n"
+    + ",\n".join(
+        f"    {c} {'INT' if c in _INT_COLUMNS else 'TEXT'}"
+        + (" NOT NULL" if c in _NOT_NULL else "")
+        for c in COLUMNS)
+    + ",\n    PRIMARY KEY (club_id, season_end_year)\n);"
+)
+
+
+def _migrate(conn: sqlite3.Connection) -> None:
+    """
+    Add any column a database built before it existed is missing.
+
+    england.db is committed and refreshed daily, so its club_finances was
+    created long before the balance-sheet columns, and CREATE TABLE IF NOT
+    EXISTS leaves an old table exactly as it was.
+    """
+    have = {r[1] for r in conn.execute("PRAGMA table_info(club_finances)")}
+    for col in COLUMNS:
+        if col not in have:
+            kind = "INT" if col in _INT_COLUMNS else "TEXT"
+            conn.execute(f"ALTER TABLE club_finances ADD COLUMN {col} {kind}")
 
 
 def _int_or_none(value: str) -> int | None:
@@ -135,12 +179,17 @@ def _validate(row: dict, club_ids: set[str]) -> list[str]:
     # A club that didn't disclose can't also have figures - one of the two
     # is wrong, and silently keeping both would misattribute real money to
     # a club that never published any.
-    if disclosure != DISCLOSURE_FULL:
-        present = [c for c in MONEY_COLUMNS if row.get(c) is not None]
-        if present:
-            problems.append(
-                f"disclosure is {disclosure!r} but carries figures: {', '.join(present)}"
-            )
+    #
+    # Which figures that rules out depends on what the regime omits. A
+    # small-company filing omits the profit-and-loss and keeps the balance
+    # sheet; a club that has not filed, or no longer exists, has neither.
+    refused = (PNL_COLUMNS if disclosure == DISCLOSURE_SMALL_COMPANY
+               else MONEY_COLUMNS if disclosure != DISCLOSURE_FULL else [])
+    present = [c for c in refused if row.get(c) is not None]
+    if present:
+        problems.append(
+            f"disclosure is {disclosure!r} but carries figures: {', '.join(present)}"
+        )
 
     if row.get("staff_costs") is not None and not row.get("staff_costs_definition"):
         problems.append("staff_costs given without staff_costs_definition")
@@ -182,6 +231,7 @@ def seed_club_finances(conn: sqlite3.Connection, csv_path: Path) -> int:
     rows loaded.
     """
     conn.execute(CREATE_CLUB_FINANCES_SQL)
+    _migrate(conn)
     conn.commit()
 
     if not csv_path.exists():
