@@ -1,0 +1,1440 @@
+{
+  "edition": "preview",
+  "date": "2026-10-30",
+  "subject": "The week ahead \u2014 58 fixtures across 5 divisions from 30 October",
+  "claims": [
+    {
+      "fixture": {
+        "div": "E0",
+        "tier": 1,
+        "division_name": "Premier League",
+        "date": "2026-10-31",
+        "time": "15:00",
+        "home_name": "Hull",
+        "away_name": "Ipswich",
+        "home_id": "hull-city-fc",
+        "away_id": "ipswich-town-fc"
+      },
+      "speed": "long",
+      "score": 18.48,
+      "reasons": [
+        [
+          "above_level",
+          1
+        ],
+        [
+          "neighbours"
+        ],
+        [
+          "yo_yo"
+        ],
+        [
+          "moved",
+          "Hull City",
+          "Play-off Promoted"
+        ]
+      ],
+      "snapshot": {
+        "home": {
+          "club_id": "hull-city-fc",
+          "name": "Hull City",
+          "tier": 1,
+          "position": 10,
+          "points": 10,
+          "played": 8,
+          "form": "DLDLD",
+          "streak_seasons_in_tier": 1,
+          "natural_level_gap": -1
+        },
+        "away": {
+          "club_id": "ipswich-town-fc",
+          "name": "Ipswich Town",
+          "tier": 1,
+          "position": 12,
+          "points": 10,
+          "played": 8,
+          "form": "DLWLW",
+          "streak_seasons_in_tier": 1,
+          "natural_level_gap": -1
+        }
+      }
+    },
+    {
+      "fixture": {
+        "div": "E2",
+        "tier": 3,
+        "division_name": "League One",
+        "date": "2026-10-31",
+        "time": "15:00",
+        "home_name": "Leicester",
+        "away_name": "Stevenage",
+        "home_id": "leicester-city-fc",
+        "away_id": "stevenage-fc"
+      },
+      "speed": "long",
+      "score": 16.44,
+      "reasons": [
+        [
+          "fallen_giant",
+          "Leicester City"
+        ],
+        [
+          "below_level",
+          2
+        ],
+        [
+          "above_level",
+          1
+        ],
+        [
+          "neighbours"
+        ],
+        [
+          "yo_yo"
+        ],
+        [
+          "moved",
+          "Leicester City",
+          "Relegated"
+        ]
+      ],
+      "snapshot": {
+        "home": {
+          "club_id": "leicester-city-fc",
+          "name": "Leicester City",
+          "tier": 3,
+          "position": 11,
+          "points": 18,
+          "played": 12,
+          "form": "WLWWL",
+          "streak_seasons_in_tier": 1,
+          "natural_level_gap": 2
+        },
+        "away": {
+          "club_id": "stevenage-fc",
+          "name": "Stevenage",
+          "tier": 3,
+          "position": 13,
+          "points": 15,
+          "played": 11,
+          "form": "LWLWL",
+          "streak_seasons_in_tier": 4,
+          "natural_level_gap": -1
+        }
+      }
+    },
+    {
+      "fixture": {
+        "div": "E0",
+        "tier": 1,
+        "division_name": "Premier League",
+        "date": "2026-10-31",
+        "time": "15:00",
+        "home_name": "Man City",
+        "away_name": "Brighton",
+        "home_id": "manchester-city-fc",
+        "away_id": "brighton-and-hove-albion-fc"
+      },
+      "speed": "long",
+      "score": 14.45,
+      "reasons": [
+        [
+          "top_clash"
+        ],
+        [
+          "above_level",
+          1
+        ]
+      ],
+      "snapshot": {
+        "home": {
+          "club_id": "manchester-city-fc",
+          "name": "Manchester City",
+          "tier": 1,
+          "position": 1,
+          "points": 21,
+          "played": 8,
+          "form": "LWWWW",
+          "streak_seasons_in_tier": 25,
+          "natural_level_gap": 0
+        },
+        "away": {
+          "club_id": "brighton-and-hove-albion-fc",
+          "name": "Brighton & Hove Albion",
+          "tier": 1,
+          "position": 3,
+          "points": 16,
+          "played": 8,
+          "form": "LWWWW",
+          "streak_seasons_in_tier": 10,
+          "natural_level_gap": -1
+        }
+      }
+    },
+    {
+      "fixture": {
+        "div": "E0",
+        "tier": 1,
+        "division_name": "Premier League",
+        "date": "2026-10-31",
+        "time": "15:00",
+        "home_name": "Coventry",
+        "away_name": "Sunderland",
+        "home_id": "coventry-city-fc",
+        "away_id": "sunderland-afc"
+      },
+      "speed": "long",
+      "score": 14.43,
+      "reasons": [
+        [
+          "above_level",
+          1
+        ],
+        [
+          "neighbours"
+        ],
+        [
+          "yo_yo"
+        ],
+        [
+          "moved",
+          "Coventry City",
+          "Champions"
+        ]
+      ],
+      "snapshot": {
+        "home": {
+          "club_id": "coventry-city-fc",
+          "name": "Coventry City",
+          "tier": 1,
+          "position": 19,
+          "points": 6,
+          "played": 8,
+          "form": "LLWWL",
+          "streak_seasons_in_tier": 1,
+          "natural_level_gap": 0
+        },
+        "away": {
+          "club_id": "sunderland-afc",
+          "name": "Sunderland",
+          "tier": 1,
+          "position": 20,
+          "points": 5,
+          "played": 8,
+          "form": "DLLLL",
+          "streak_seasons_in_tier": 2,
+          "natural_level_gap": -1
+        }
+      }
+    },
+    {
+      "fixture": {
+        "div": "E1",
+        "tier": 2,
+        "division_name": "Championship",
+        "date": "2026-10-31",
+        "time": "15:00",
+        "home_name": "West Ham",
+        "away_name": "West Brom",
+        "home_id": "west-ham-united-fc",
+        "away_id": "west-bromwich-albion-fc"
+      },
+      "speed": "long",
+      "score": 13.38,
+      "reasons": [
+        [
+          "below_level",
+          1
+        ],
+        [
+          "neighbours"
+        ],
+        [
+          "yo_yo"
+        ],
+        [
+          "moved",
+          "West Ham United",
+          "Relegated"
+        ]
+      ],
+      "snapshot": {
+        "home": {
+          "club_id": "west-ham-united-fc",
+          "name": "West Ham United",
+          "tier": 2,
+          "position": 4,
+          "points": 22,
+          "played": 12,
+          "form": "LWWDD",
+          "streak_seasons_in_tier": 1,
+          "natural_level_gap": 1
+        },
+        "away": {
+          "club_id": "west-bromwich-albion-fc",
+          "name": "West Bromwich Albion",
+          "tier": 2,
+          "position": 6,
+          "points": 21,
+          "played": 12,
+          "form": "DWWLL",
+          "streak_seasons_in_tier": 6,
+          "natural_level_gap": 1
+        }
+      }
+    },
+    {
+      "fixture": {
+        "div": "E1",
+        "tier": 2,
+        "division_name": "Championship",
+        "date": "2026-10-31",
+        "time": "12:30",
+        "home_name": "Lincoln",
+        "away_name": "Birmingham",
+        "home_id": "lincoln-city-fc",
+        "away_id": "birmingham-city-fc"
+      },
+      "speed": "long",
+      "score": 12.48,
+      "reasons": [
+        [
+          "above_level",
+          2
+        ],
+        [
+          "yo_yo"
+        ],
+        [
+          "moved",
+          "Lincoln City",
+          "Champions"
+        ]
+      ],
+      "snapshot": {
+        "home": {
+          "club_id": "lincoln-city-fc",
+          "name": "Lincoln City",
+          "tier": 2,
+          "position": 15,
+          "points": 15,
+          "played": 12,
+          "form": "WDLLL",
+          "streak_seasons_in_tier": 1,
+          "natural_level_gap": -2
+        },
+        "away": {
+          "club_id": "birmingham-city-fc",
+          "name": "Birmingham City",
+          "tier": 2,
+          "position": 7,
+          "points": 20,
+          "played": 12,
+          "form": "LWWWD",
+          "streak_seasons_in_tier": 2,
+          "natural_level_gap": 0
+        }
+      }
+    },
+    {
+      "fixture": {
+        "div": "E2",
+        "tier": 3,
+        "division_name": "League One",
+        "date": "2026-10-31",
+        "time": "15:00",
+        "home_name": "Wigan",
+        "away_name": "Bromley",
+        "home_id": "wigan-athletic-fc",
+        "away_id": "bromley-fc"
+      },
+      "speed": "medium",
+      "score": 12.47,
+      "reasons": [
+        [
+          "fallen_giant",
+          "Wigan Athletic"
+        ],
+        [
+          "above_level",
+          2
+        ],
+        [
+          "neighbours"
+        ],
+        [
+          "moved",
+          "Bromley",
+          "Champions"
+        ]
+      ],
+      "snapshot": {
+        "home": {
+          "club_id": "wigan-athletic-fc",
+          "name": "Wigan Athletic",
+          "tier": 3,
+          "position": 24,
+          "points": 7,
+          "played": 12,
+          "form": "LLLWL",
+          "streak_seasons_in_tier": 4,
+          "natural_level_gap": 0
+        },
+        "away": {
+          "club_id": "bromley-fc",
+          "name": "Bromley",
+          "tier": 3,
+          "position": 22,
+          "points": 9,
+          "played": 12,
+          "form": "LDLLL",
+          "streak_seasons_in_tier": 1,
+          "natural_level_gap": -2
+        }
+      }
+    },
+    {
+      "fixture": {
+        "div": "E0",
+        "tier": 1,
+        "division_name": "Premier League",
+        "date": "2026-10-31",
+        "time": "15:00",
+        "home_name": "Bournemouth",
+        "away_name": "Leeds",
+        "home_id": "bournemouth-fc",
+        "away_id": "leeds-united-fc"
+      },
+      "speed": "medium",
+      "score": 12.34,
+      "reasons": [
+        [
+          "above_level",
+          2
+        ],
+        [
+          "yo_yo"
+        ]
+      ],
+      "snapshot": {
+        "home": {
+          "club_id": "bournemouth-fc",
+          "name": "Bournemouth",
+          "tier": 1,
+          "position": 13,
+          "points": 9,
+          "played": 8,
+          "form": "WWLLD",
+          "streak_seasons_in_tier": 5,
+          "natural_level_gap": -2
+        },
+        "away": {
+          "club_id": "leeds-united-fc",
+          "name": "Leeds United",
+          "tier": 1,
+          "position": 7,
+          "points": 11,
+          "played": 8,
+          "form": "DDLDW",
+          "streak_seasons_in_tier": 2,
+          "natural_level_gap": 0
+        }
+      }
+    },
+    {
+      "fixture": {
+        "div": "E0",
+        "tier": 1,
+        "division_name": "Premier League",
+        "date": "2026-10-31",
+        "time": "15:00",
+        "home_name": "Brentford",
+        "away_name": "Nott'm Forest",
+        "home_id": "brentford-fc",
+        "away_id": "nottingham-forest-fc"
+      },
+      "speed": "medium",
+      "score": 12.34,
+      "reasons": [
+        [
+          "above_level",
+          2
+        ],
+        [
+          "yo_yo"
+        ]
+      ],
+      "snapshot": {
+        "home": {
+          "club_id": "brentford-fc",
+          "name": "Brentford",
+          "tier": 1,
+          "position": 6,
+          "points": 11,
+          "played": 8,
+          "form": "DLDWD",
+          "streak_seasons_in_tier": 6,
+          "natural_level_gap": -2
+        },
+        "away": {
+          "club_id": "nottingham-forest-fc",
+          "name": "Nottingham Forest",
+          "tier": 1,
+          "position": 18,
+          "points": 6,
+          "played": 8,
+          "form": "DLLLW",
+          "streak_seasons_in_tier": 5,
+          "natural_level_gap": 0
+        }
+      }
+    },
+    {
+      "fixture": {
+        "div": "E0",
+        "tier": 1,
+        "division_name": "Premier League",
+        "date": "2026-10-31",
+        "time": "17:30",
+        "home_name": "Tottenham",
+        "away_name": "Crystal Palace",
+        "home_id": "tottenham-hotspur-fc",
+        "away_id": "crystal-palace-fc"
+      },
+      "speed": "medium",
+      "score": 12.28,
+      "reasons": [
+        [
+          "above_level",
+          1
+        ],
+        [
+          "neighbours"
+        ],
+        [
+          "yo_yo"
+        ]
+      ],
+      "snapshot": {
+        "home": {
+          "club_id": "tottenham-hotspur-fc",
+          "name": "Tottenham Hotspur",
+          "tier": 1,
+          "position": 14,
+          "points": 9,
+          "played": 8,
+          "form": "WWDLD",
+          "streak_seasons_in_tier": 49,
+          "natural_level_gap": 0
+        },
+        "away": {
+          "club_id": "crystal-palace-fc",
+          "name": "Crystal Palace",
+          "tier": 1,
+          "position": 17,
+          "points": 7,
+          "played": 8,
+          "form": "LLWDL",
+          "streak_seasons_in_tier": 14,
+          "natural_level_gap": -1
+        }
+      }
+    },
+    {
+      "fixture": {
+        "div": "EC",
+        "tier": 5,
+        "division_name": "National League",
+        "date": "2026-10-30",
+        "time": "19:45",
+        "home_name": "Fylde",
+        "away_name": "Hornchurch",
+        "home_id": "fylde-afc",
+        "away_id": "hornchurch-fc"
+      },
+      "speed": "medium",
+      "score": 11.53,
+      "reasons": [
+        [
+          "above_level",
+          2
+        ],
+        [
+          "yo_yo"
+        ]
+      ],
+      "snapshot": {
+        "home": {
+          "club_id": "fylde-afc",
+          "name": "AFC Fylde",
+          "tier": 5,
+          "position": 7,
+          "points": 26,
+          "played": 15,
+          "form": "WLWLL",
+          "streak_seasons_in_tier": 1,
+          "natural_level_gap": -1
+        },
+        "away": {
+          "club_id": "hornchurch-fc",
+          "name": "Hornchurch",
+          "tier": 5,
+          "position": 13,
+          "points": 21,
+          "played": 15,
+          "form": "LLWLW",
+          "streak_seasons_in_tier": 1,
+          "natural_level_gap": -2
+        }
+      }
+    },
+    {
+      "fixture": {
+        "div": "E2",
+        "tier": 3,
+        "division_name": "League One",
+        "date": "2026-10-31",
+        "time": "15:00",
+        "home_name": "Stockport",
+        "away_name": "AFC Wimbledon",
+        "home_id": "stockport-county-fc",
+        "away_id": "afc-wimbledon"
+      },
+      "speed": "medium",
+      "score": 11.42,
+      "reasons": [
+        [
+          "above_level",
+          1
+        ],
+        [
+          "yo_yo"
+        ]
+      ],
+      "snapshot": {
+        "home": {
+          "club_id": "stockport-county-fc",
+          "name": "Stockport County",
+          "tier": 3,
+          "position": 2,
+          "points": 23,
+          "played": 13,
+          "form": "LDWWW",
+          "streak_seasons_in_tier": 3,
+          "natural_level_gap": -1
+        },
+        "away": {
+          "club_id": "afc-wimbledon",
+          "name": "AFC Wimbledon",
+          "tier": 3,
+          "position": 17,
+          "points": 13,
+          "played": 12,
+          "form": "DLLLD",
+          "streak_seasons_in_tier": 2,
+          "natural_level_gap": -1
+        }
+      }
+    },
+    {
+      "fixture": {
+        "div": "E3",
+        "tier": 4,
+        "division_name": "League Two",
+        "date": "2026-10-31",
+        "time": "15:00",
+        "home_name": "Fleetwood Town",
+        "away_name": "Bristol Rvs",
+        "home_id": "fleetwood-town-fc",
+        "away_id": "bristol-rovers-fc"
+      },
+      "speed": "medium",
+      "score": 11.38,
+      "reasons": [
+        [
+          "below_level",
+          1
+        ],
+        [
+          "neighbours"
+        ],
+        [
+          "yo_yo"
+        ]
+      ],
+      "snapshot": {
+        "home": {
+          "club_id": "fleetwood-town-fc",
+          "name": "Fleetwood Town",
+          "tier": 4,
+          "position": 18,
+          "points": 14,
+          "played": 13,
+          "form": "LLWDL",
+          "streak_seasons_in_tier": 3,
+          "natural_level_gap": 1
+        },
+        "away": {
+          "club_id": "bristol-rovers-fc",
+          "name": "Bristol Rovers",
+          "tier": 4,
+          "position": 15,
+          "points": 16,
+          "played": 13,
+          "form": "DLLLL",
+          "streak_seasons_in_tier": 2,
+          "natural_level_gap": 1
+        }
+      }
+    },
+    {
+      "fixture": {
+        "div": "E3",
+        "tier": 4,
+        "division_name": "League Two",
+        "date": "2026-10-31",
+        "time": "15:00",
+        "home_name": "Shrewsbury",
+        "away_name": "Gillingham",
+        "home_id": "shrewsbury-town-fc",
+        "away_id": "gillingham-fc"
+      },
+      "speed": "medium",
+      "score": 11.37,
+      "reasons": [
+        [
+          "below_level",
+          1
+        ],
+        [
+          "neighbours"
+        ],
+        [
+          "yo_yo"
+        ]
+      ],
+      "snapshot": {
+        "home": {
+          "club_id": "shrewsbury-town-fc",
+          "name": "Shrewsbury Town",
+          "tier": 4,
+          "position": 10,
+          "points": 18,
+          "played": 13,
+          "form": "DWWLW",
+          "streak_seasons_in_tier": 2,
+          "natural_level_gap": 1
+        },
+        "away": {
+          "club_id": "gillingham-fc",
+          "name": "Gillingham",
+          "tier": 4,
+          "position": 12,
+          "points": 17,
+          "played": 13,
+          "form": "LDLWD",
+          "streak_seasons_in_tier": 5,
+          "natural_level_gap": 1
+        }
+      }
+    }
+  ],
+  "table": {
+    "arsenal-fc": {
+      "tier": 1,
+      "position": 2,
+      "points": 21,
+      "played": 8
+    },
+    "aston-villa-fc": {
+      "tier": 1,
+      "position": 9,
+      "points": 11,
+      "played": 8
+    },
+    "bournemouth-fc": {
+      "tier": 1,
+      "position": 13,
+      "points": 9,
+      "played": 8
+    },
+    "brentford-fc": {
+      "tier": 1,
+      "position": 6,
+      "points": 11,
+      "played": 8
+    },
+    "brighton-and-hove-albion-fc": {
+      "tier": 1,
+      "position": 3,
+      "points": 16,
+      "played": 8
+    },
+    "chelsea-fc": {
+      "tier": 1,
+      "position": 5,
+      "points": 13,
+      "played": 8
+    },
+    "coventry-city-fc": {
+      "tier": 1,
+      "position": 19,
+      "points": 6,
+      "played": 8
+    },
+    "crystal-palace-fc": {
+      "tier": 1,
+      "position": 17,
+      "points": 7,
+      "played": 8
+    },
+    "everton-fc": {
+      "tier": 1,
+      "position": 11,
+      "points": 10,
+      "played": 8
+    },
+    "fulham-fc": {
+      "tier": 1,
+      "position": 15,
+      "points": 8,
+      "played": 8
+    },
+    "hull-city-fc": {
+      "tier": 1,
+      "position": 10,
+      "points": 10,
+      "played": 8
+    },
+    "ipswich-town-fc": {
+      "tier": 1,
+      "position": 12,
+      "points": 10,
+      "played": 8
+    },
+    "leeds-united-fc": {
+      "tier": 1,
+      "position": 7,
+      "points": 11,
+      "played": 8
+    },
+    "liverpool-fc": {
+      "tier": 1,
+      "position": 4,
+      "points": 15,
+      "played": 8
+    },
+    "manchester-city-fc": {
+      "tier": 1,
+      "position": 1,
+      "points": 21,
+      "played": 8
+    },
+    "manchester-united-fc": {
+      "tier": 1,
+      "position": 16,
+      "points": 7,
+      "played": 8
+    },
+    "newcastle-united-fc": {
+      "tier": 1,
+      "position": 8,
+      "points": 11,
+      "played": 8
+    },
+    "nottingham-forest-fc": {
+      "tier": 1,
+      "position": 18,
+      "points": 6,
+      "played": 8
+    },
+    "sunderland-afc": {
+      "tier": 1,
+      "position": 20,
+      "points": 5,
+      "played": 8
+    },
+    "tottenham-hotspur-fc": {
+      "tier": 1,
+      "position": 14,
+      "points": 9,
+      "played": 8
+    },
+    "birmingham-city-fc": {
+      "tier": 2,
+      "position": 7,
+      "points": 20,
+      "played": 12
+    },
+    "blackburn-rovers-fc": {
+      "tier": 2,
+      "position": 10,
+      "points": 18,
+      "played": 12
+    },
+    "bolton-wanderers-fc": {
+      "tier": 2,
+      "position": 18,
+      "points": 14,
+      "played": 12
+    },
+    "bristol-city-fc": {
+      "tier": 2,
+      "position": 14,
+      "points": 15,
+      "played": 12
+    },
+    "burnley-fc": {
+      "tier": 2,
+      "position": 22,
+      "points": 8,
+      "played": 12
+    },
+    "cardiff-city-fc": {
+      "tier": 2,
+      "position": 16,
+      "points": 14,
+      "played": 12
+    },
+    "charlton-athletic-fc": {
+      "tier": 2,
+      "position": 19,
+      "points": 14,
+      "played": 12
+    },
+    "derby-county-fc": {
+      "tier": 2,
+      "position": 23,
+      "points": 7,
+      "played": 12
+    },
+    "lincoln-city-fc": {
+      "tier": 2,
+      "position": 15,
+      "points": 15,
+      "played": 12
+    },
+    "middlesbrough-fc": {
+      "tier": 2,
+      "position": 1,
+      "points": 25,
+      "played": 12
+    },
+    "millwall-fc": {
+      "tier": 2,
+      "position": 13,
+      "points": 15,
+      "played": 12
+    },
+    "norwich-city-fc": {
+      "tier": 2,
+      "position": 20,
+      "points": 12,
+      "played": 12
+    },
+    "portsmouth-fc": {
+      "tier": 2,
+      "position": 11,
+      "points": 18,
+      "played": 12
+    },
+    "preston-north-end-fc": {
+      "tier": 2,
+      "position": 24,
+      "points": 5,
+      "played": 12
+    },
+    "queens-park-rangers-fc": {
+      "tier": 2,
+      "position": 8,
+      "points": 20,
+      "played": 12
+    },
+    "sheffield-united-fc": {
+      "tier": 2,
+      "position": 12,
+      "points": 16,
+      "played": 12
+    },
+    "southampton-fc": {
+      "tier": 2,
+      "position": 2,
+      "points": 24,
+      "played": 12
+    },
+    "stoke-city-fc": {
+      "tier": 2,
+      "position": 9,
+      "points": 20,
+      "played": 12
+    },
+    "swansea-city-fc": {
+      "tier": 2,
+      "position": 3,
+      "points": 23,
+      "played": 12
+    },
+    "watford-fc": {
+      "tier": 2,
+      "position": 21,
+      "points": 11,
+      "played": 12
+    },
+    "west-bromwich-albion-fc": {
+      "tier": 2,
+      "position": 6,
+      "points": 21,
+      "played": 12
+    },
+    "west-ham-united-fc": {
+      "tier": 2,
+      "position": 4,
+      "points": 22,
+      "played": 12
+    },
+    "wolverhampton-wanderers-fc": {
+      "tier": 2,
+      "position": 5,
+      "points": 21,
+      "played": 12
+    },
+    "wrexham-fc": {
+      "tier": 2,
+      "position": 17,
+      "points": 14,
+      "played": 12
+    },
+    "afc-wimbledon": {
+      "tier": 3,
+      "position": 17,
+      "points": 13,
+      "played": 12
+    },
+    "barnsley-fc": {
+      "tier": 3,
+      "position": 23,
+      "points": 8,
+      "played": 11
+    },
+    "blackpool-fc": {
+      "tier": 3,
+      "position": 20,
+      "points": 11,
+      "played": 11
+    },
+    "bradford-city-fc": {
+      "tier": 3,
+      "position": 4,
+      "points": 22,
+      "played": 12
+    },
+    "bromley-fc": {
+      "tier": 3,
+      "position": 22,
+      "points": 9,
+      "played": 12
+    },
+    "burton-albion-fc": {
+      "tier": 3,
+      "position": 12,
+      "points": 17,
+      "played": 13
+    },
+    "cambridge-united-fc": {
+      "tier": 3,
+      "position": 7,
+      "points": 21,
+      "played": 13
+    },
+    "doncaster-rovers-fc": {
+      "tier": 3,
+      "position": 18,
+      "points": 12,
+      "played": 12
+    },
+    "huddersfield-town-fc": {
+      "tier": 3,
+      "position": 1,
+      "points": 25,
+      "played": 12
+    },
+    "leicester-city-fc": {
+      "tier": 3,
+      "position": 11,
+      "points": 18,
+      "played": 12
+    },
+    "leyton-orient-fc": {
+      "tier": 3,
+      "position": 16,
+      "points": 14,
+      "played": 12
+    },
+    "luton-town-fc": {
+      "tier": 3,
+      "position": 8,
+      "points": 20,
+      "played": 12
+    },
+    "mansfield-town-fc": {
+      "tier": 3,
+      "position": 10,
+      "points": 18,
+      "played": 11
+    },
+    "mk-dons-fc": {
+      "tier": 3,
+      "position": 14,
+      "points": 15,
+      "played": 12
+    },
+    "notts-county-fc": {
+      "tier": 3,
+      "position": 19,
+      "points": 11,
+      "played": 11
+    },
+    "oxford-united-fc": {
+      "tier": 3,
+      "position": 3,
+      "points": 22,
+      "played": 11
+    },
+    "peterborough-united-fc": {
+      "tier": 3,
+      "position": 21,
+      "points": 10,
+      "played": 12
+    },
+    "plymouth-argyle-fc": {
+      "tier": 3,
+      "position": 5,
+      "points": 22,
+      "played": 13
+    },
+    "reading-fc": {
+      "tier": 3,
+      "position": 6,
+      "points": 21,
+      "played": 12
+    },
+    "sheffield-wednesday-fc": {
+      "tier": 3,
+      "position": 9,
+      "points": 19,
+      "played": 12
+    },
+    "stevenage-fc": {
+      "tier": 3,
+      "position": 13,
+      "points": 15,
+      "played": 11
+    },
+    "stockport-county-fc": {
+      "tier": 3,
+      "position": 2,
+      "points": 23,
+      "played": 13
+    },
+    "wigan-athletic-fc": {
+      "tier": 3,
+      "position": 24,
+      "points": 7,
+      "played": 12
+    },
+    "wycombe-wanderers-fc": {
+      "tier": 3,
+      "position": 15,
+      "points": 15,
+      "played": 12
+    },
+    "accrington-stanley-fc": {
+      "tier": 4,
+      "position": 9,
+      "points": 18,
+      "played": 13
+    },
+    "barnet-fc": {
+      "tier": 4,
+      "position": 2,
+      "points": 25,
+      "played": 12
+    },
+    "bristol-rovers-fc": {
+      "tier": 4,
+      "position": 15,
+      "points": 16,
+      "played": 13
+    },
+    "cheltenham-town-fc": {
+      "tier": 4,
+      "position": 3,
+      "points": 21,
+      "played": 13
+    },
+    "chesterfield-fc": {
+      "tier": 4,
+      "position": 7,
+      "points": 19,
+      "played": 13
+    },
+    "colchester-united-fc": {
+      "tier": 4,
+      "position": 21,
+      "points": 12,
+      "played": 12
+    },
+    "crawley-town-fc": {
+      "tier": 4,
+      "position": 24,
+      "points": 6,
+      "played": 11
+    },
+    "crewe-alexandra-fc": {
+      "tier": 4,
+      "position": 4,
+      "points": 21,
+      "played": 13
+    },
+    "exeter-city-fc": {
+      "tier": 4,
+      "position": 8,
+      "points": 19,
+      "played": 13
+    },
+    "fleetwood-town-fc": {
+      "tier": 4,
+      "position": 18,
+      "points": 14,
+      "played": 13
+    },
+    "gillingham-fc": {
+      "tier": 4,
+      "position": 12,
+      "points": 17,
+      "played": 13
+    },
+    "grimsby-town-fc": {
+      "tier": 4,
+      "position": 11,
+      "points": 17,
+      "played": 13
+    },
+    "newport-county-fc": {
+      "tier": 4,
+      "position": 16,
+      "points": 15,
+      "played": 13
+    },
+    "northampton-town-fc": {
+      "tier": 4,
+      "position": 19,
+      "points": 13,
+      "played": 11
+    },
+    "oldham-athletic-fc": {
+      "tier": 4,
+      "position": 20,
+      "points": 12,
+      "played": 12
+    },
+    "port-vale-fc": {
+      "tier": 4,
+      "position": 23,
+      "points": 12,
+      "played": 11
+    },
+    "rochdale-fc": {
+      "tier": 4,
+      "position": 17,
+      "points": 15,
+      "played": 13
+    },
+    "rotherham-united-fc": {
+      "tier": 4,
+      "position": 22,
+      "points": 12,
+      "played": 13
+    },
+    "salford-city-fc": {
+      "tier": 4,
+      "position": 1,
+      "points": 28,
+      "played": 13
+    },
+    "shrewsbury-town-fc": {
+      "tier": 4,
+      "position": 10,
+      "points": 18,
+      "played": 13
+    },
+    "swindon-town-fc": {
+      "tier": 4,
+      "position": 14,
+      "points": 16,
+      "played": 13
+    },
+    "tranmere-rovers-fc": {
+      "tier": 4,
+      "position": 13,
+      "points": 16,
+      "played": 13
+    },
+    "walsall-fc": {
+      "tier": 4,
+      "position": 6,
+      "points": 19,
+      "played": 12
+    },
+    "york-city-fc": {
+      "tier": 4,
+      "position": 5,
+      "points": 20,
+      "played": 13
+    },
+    "aldershot-town-fc": {
+      "tier": 5,
+      "position": 16,
+      "points": 18,
+      "played": 15
+    },
+    "altrincham-fc": {
+      "tier": 5,
+      "position": 6,
+      "points": 28,
+      "played": 15
+    },
+    "barrow-afc": {
+      "tier": 5,
+      "position": 8,
+      "points": 24,
+      "played": 14
+    },
+    "boreham-wood-fc": {
+      "tier": 5,
+      "position": 1,
+      "points": 41,
+      "played": 15
+    },
+    "boston-united-fc": {
+      "tier": 5,
+      "position": 21,
+      "points": 15,
+      "played": 15
+    },
+    "carlisle-united-fc": {
+      "tier": 5,
+      "position": 9,
+      "points": 23,
+      "played": 15
+    },
+    "eastleigh-fc": {
+      "tier": 5,
+      "position": 17,
+      "points": 18,
+      "played": 15
+    },
+    "forest-green-rovers-fc": {
+      "tier": 5,
+      "position": 15,
+      "points": 18,
+      "played": 13
+    },
+    "fylde-afc": {
+      "tier": 5,
+      "position": 7,
+      "points": 26,
+      "played": 15
+    },
+    "gateshead-fc": {
+      "tier": 5,
+      "position": 24,
+      "points": 4,
+      "played": 14
+    },
+    "fc-halifax-town": {
+      "tier": 5,
+      "position": 10,
+      "points": 21,
+      "played": 15
+    },
+    "harrogate-town-afc": {
+      "tier": 5,
+      "position": 2,
+      "points": 31,
+      "played": 15
+    },
+    "hartlepool-united-fc": {
+      "tier": 5,
+      "position": 20,
+      "points": 15,
+      "played": 15
+    },
+    "hornchurch-fc": {
+      "tier": 5,
+      "position": 13,
+      "points": 21,
+      "played": 15
+    },
+    "kidderminster-harriers-fc": {
+      "tier": 5,
+      "position": 11,
+      "points": 21,
+      "played": 15
+    },
+    "scunthorpe-united-fc": {
+      "tier": 5,
+      "position": 22,
+      "points": 10,
+      "played": 14
+    },
+    "solihull-moors-fc": {
+      "tier": 5,
+      "position": 23,
+      "points": 10,
+      "played": 15
+    },
+    "southend-united-fc": {
+      "tier": 5,
+      "position": 3,
+      "points": 29,
+      "played": 15
+    },
+    "sutton-united-fc": {
+      "tier": 5,
+      "position": 12,
+      "points": 21,
+      "played": 15
+    },
+    "tamworth-fc": {
+      "tier": 5,
+      "position": 18,
+      "points": 17,
+      "played": 14
+    },
+    "wealdstone-fc": {
+      "tier": 5,
+      "position": 19,
+      "points": 15,
+      "played": 15
+    },
+    "woking-fc": {
+      "tier": 5,
+      "position": 14,
+      "points": 18,
+      "played": 15
+    },
+    "worthing-fc": {
+      "tier": 5,
+      "position": 5,
+      "points": 28,
+      "played": 15
+    },
+    "yeovil-town-fc": {
+      "tier": 5,
+      "position": 4,
+      "points": 28,
+      "played": 15
+    }
+  }
+}
