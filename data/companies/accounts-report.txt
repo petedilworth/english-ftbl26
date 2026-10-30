@@ -1,4 +1,4 @@
-Club accounts read 2026-10-29
+Club accounts read 2026-10-30
 Documents: 278 iXBRL, 101 PDF only
 INFO     filings index: 3101 accounts filings -> filings.tsv
 INFO     facts: 40519 from 278 documents read now, 0 kept from earlier runs -> facts/
@@ -8,7 +8,7 @@ INFO        full                   6
 INFO        small_company          206
 INFO        machine rows added     0
 INFO        machine rows rebuilt   212
-INFO        hand rows topped up    107
+INFO        hand rows topped up    106
 INFO        field                                   machine    hand+
 INFO        turnover                                      3        0
 INFO        staff_costs                                   1        0
