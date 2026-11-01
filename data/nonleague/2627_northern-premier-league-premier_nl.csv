@@ -1,6 +1,7 @@
 Div,Date,HomeTeam,AwayTeam,FTHG,FTAG,FTR
 northern-premier-league-premier,,Alfreton Town,Avro,3,0,H
 northern-premier-league-premier,,Alfreton Town,Bury,2,3,A
+northern-premier-league-premier,,Alfreton Town,Emley,2,1,H
 northern-premier-league-premier,,Alfreton Town,FC United of Manchester,1,0,H
 northern-premier-league-premier,,Alfreton Town,Gainsborough Trinity,2,1,H
 northern-premier-league-premier,,Alfreton Town,Guiseley,1,0,H
@@ -13,6 +14,7 @@ northern-premier-league-premier,,Ashton United,Gainsborough Trinity,1,2,A
 northern-premier-league-premier,,Ashton United,Ilkeston Town,1,1,D
 northern-premier-league-premier,,Ashton United,Lancaster City,4,1,H
 northern-premier-league-premier,,Ashton United,Redcar Athletic,1,2,A
+northern-premier-league-premier,,Ashton United,Warrington Rylands 1906,1,2,A
 northern-premier-league-premier,,Ashton United,Whitby Town,2,0,H
 northern-premier-league-premier,,Avro,Ashton United,3,2,H
 northern-premier-league-premier,,Avro,Guiseley,0,1,A
@@ -35,7 +37,9 @@ northern-premier-league-premier,,Bury,Ilkeston Town,7,0,H
 northern-premier-league-premier,,Bury,Lancaster City,0,1,A
 northern-premier-league-premier,,Bury,Leek Town,5,3,H
 northern-premier-league-premier,,Bury,Warrington Rylands 1906,1,0,H
+northern-premier-league-premier,,Bury,Workington,1,2,A
 northern-premier-league-premier,,Cleethorpes Town,Alfreton Town,2,1,H
+northern-premier-league-premier,,Cleethorpes Town,Avro,1,0,H
 northern-premier-league-premier,,Cleethorpes Town,Bamber Bridge,2,0,H
 northern-premier-league-premier,,Cleethorpes Town,Curzon Ashton,1,3,A
 northern-premier-league-premier,,Cleethorpes Town,Hyde United,1,0,H
@@ -47,6 +51,7 @@ northern-premier-league-premier,,Curzon Ashton,Ashton United,2,0,H
 northern-premier-league-premier,,Curzon Ashton,Bamber Bridge,2,2,D
 northern-premier-league-premier,,Curzon Ashton,Guiseley,1,2,A
 northern-premier-league-premier,,Curzon Ashton,Hyde United,2,0,H
+northern-premier-league-premier,,Curzon Ashton,Leek Town,2,1,H
 northern-premier-league-premier,,Curzon Ashton,Redcar Athletic,3,1,H
 northern-premier-league-premier,,Emley,Ashton United,1,1,D
 northern-premier-league-premier,,Emley,Curzon Ashton,2,1,H
@@ -58,12 +63,14 @@ northern-premier-league-premier,,Emley,Workington,1,3,A
 northern-premier-league-premier,,FC United of Manchester,Avro,3,4,A
 northern-premier-league-premier,,FC United of Manchester,Emley,1,1,D
 northern-premier-league-premier,,FC United of Manchester,Gainsborough Trinity,0,3,A
+northern-premier-league-premier,,FC United of Manchester,Lancaster City,0,0,D
 northern-premier-league-premier,,FC United of Manchester,Leek Town,1,1,D
 northern-premier-league-premier,,FC United of Manchester,Quorn,1,1,D
 northern-premier-league-premier,,FC United of Manchester,Warrington Town,4,1,H
 northern-premier-league-premier,,FC United of Manchester,Whitby Town,4,2,H
 northern-premier-league-premier,,FC United of Manchester,Workington,1,2,A
 northern-premier-league-premier,,Gainsborough Trinity,Avro,0,2,A
+northern-premier-league-premier,,Gainsborough Trinity,Bamber Bridge,1,1,D
 northern-premier-league-premier,,Gainsborough Trinity,Bury,0,1,A
 northern-premier-league-premier,,Gainsborough Trinity,Cleethorpes Town,0,3,A
 northern-premier-league-premier,,Gainsborough Trinity,Curzon Ashton,0,3,A
@@ -87,6 +94,7 @@ northern-premier-league-premier,,Hyde United,Whitby Town,1,3,A
 northern-premier-league-premier,,Ilkeston Town,Avro,2,0,H
 northern-premier-league-premier,,Ilkeston Town,Cleethorpes Town,0,3,A
 northern-premier-league-premier,,Ilkeston Town,Guiseley,0,2,A
+northern-premier-league-premier,,Ilkeston Town,Hyde United,1,0,H
 northern-premier-league-premier,,Ilkeston Town,Quorn,0,2,A
 northern-premier-league-premier,,Ilkeston Town,Redcar Athletic,0,5,A
 northern-premier-league-premier,,Ilkeston Town,Stockton Town,1,0,H
@@ -111,6 +119,7 @@ northern-premier-league-premier,,Quorn,Ashton United,2,2,D
 northern-premier-league-premier,,Quorn,Cleethorpes Town,0,5,A
 northern-premier-league-premier,,Quorn,Gainsborough Trinity,2,2,D
 northern-premier-league-premier,,Quorn,Redcar Athletic,1,1,D
+northern-premier-league-premier,,Quorn,Warrington Town,3,2,H
 northern-premier-league-premier,,Quorn,Whitby Town,3,6,A
 northern-premier-league-premier,,Quorn,Workington,3,0,H
 northern-premier-league-premier,,Redcar Athletic,Alfreton Town,3,1,H
@@ -118,6 +127,7 @@ northern-premier-league-premier,,Redcar Athletic,Avro,3,1,H
 northern-premier-league-premier,,Redcar Athletic,Bury,0,0,D
 northern-premier-league-premier,,Redcar Athletic,Emley,0,0,D
 northern-premier-league-premier,,Redcar Athletic,FC United of Manchester,3,2,H
+northern-premier-league-premier,,Redcar Athletic,Guiseley,2,2,D
 northern-premier-league-premier,,Redcar Athletic,Lancaster City,3,1,H
 northern-premier-league-premier,,Redcar Athletic,Leek Town,3,2,H
 northern-premier-league-premier,,Stockton Town,Alfreton Town,2,0,H
@@ -149,6 +159,7 @@ northern-premier-league-premier,,Whitby Town,Gainsborough Trinity,2,6,A
 northern-premier-league-premier,,Whitby Town,Guiseley,0,2,A
 northern-premier-league-premier,,Whitby Town,Ilkeston Town,2,0,H
 northern-premier-league-premier,,Whitby Town,Lancaster City,1,2,A
+northern-premier-league-premier,,Whitby Town,Stockton Town,0,5,A
 northern-premier-league-premier,,Whitby Town,Warrington Town,0,5,A
 northern-premier-league-premier,,Workington,Cleethorpes Town,1,1,D
 northern-premier-league-premier,,Workington,Guiseley,2,2,D

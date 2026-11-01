@@ -12,6 +12,7 @@ southern-league-premier-south,,Bath City,Hanworth Villa,1,0,H
 southern-league-premier-south,,Bath City,Havant & Waterlooville,1,0,H
 southern-league-premier-south,,Bath City,Malvern Town,2,1,H
 southern-league-premier-south,,Bath City,Plymouth Parkway,1,1,D
+southern-league-premier-south,,Bath City,Poole Town,1,0,H
 southern-league-premier-south,,Bath City,Uxbridge,1,2,A
 southern-league-premier-south,,Berkhamsted,Hanwell Town,1,0,H
 southern-league-premier-south,,Berkhamsted,Hanworth Villa,1,2,A
@@ -26,6 +27,7 @@ southern-league-premier-south,,Bracknell Town,Hanworth Villa,1,4,A
 southern-league-premier-south,,Bracknell Town,Havant & Waterlooville,2,1,H
 southern-league-premier-south,,Bracknell Town,Malvern Town,0,0,D
 southern-league-premier-south,,Bracknell Town,Sholing,3,1,H
+southern-league-premier-south,,Chertsey Town,Basingstoke Town,4,3,H
 southern-league-premier-south,,Chertsey Town,Berkhamsted,4,1,H
 southern-league-premier-south,,Chertsey Town,Chippenham Town,2,2,D
 southern-league-premier-south,,Chertsey Town,Evesham United,2,0,H
@@ -47,24 +49,28 @@ southern-league-premier-south,,Chippenham Town,Poole Town,1,4,A
 southern-league-premier-south,,Chippenham Town,Yate Town,1,1,D
 southern-league-premier-south,,Evesham United,Bath City,0,2,A
 southern-league-premier-south,,Evesham United,Berkhamsted,0,0,D
+southern-league-premier-south,,Evesham United,Bracknell Town,3,2,H
 southern-league-premier-south,,Evesham United,Chichester City,3,0,H
 southern-league-premier-south,,Evesham United,Chippenham Town,2,0,H
 southern-league-premier-south,,Evesham United,Frome Town,0,4,A
 southern-league-premier-south,,Evesham United,Plymouth Parkway,1,3,A
 southern-league-premier-south,,Evesham United,Taunton Town,1,4,A
 southern-league-premier-south,,Frome Town,Bath City,1,0,H
+southern-league-premier-south,,Frome Town,Chichester City,2,3,A
 southern-league-premier-south,,Frome Town,Gosport Borough,1,2,A
 southern-league-premier-south,,Frome Town,Hanwell Town,2,2,D
 southern-league-premier-south,,Frome Town,Sholing,1,1,D
 southern-league-premier-south,,Frome Town,Taunton Town,2,2,D
 southern-league-premier-south,,Frome Town,Wimborne Town,2,0,H
 southern-league-premier-south,,Gloucester City,Basingstoke Town,1,1,D
+southern-league-premier-south,,Gloucester City,Berkhamsted,2,2,D
 southern-league-premier-south,,Gloucester City,Chertsey Town,0,1,A
 southern-league-premier-south,,Gloucester City,Evesham United,1,2,A
 southern-league-premier-south,,Gloucester City,Hanwell Town,1,0,H
 southern-league-premier-south,,Gloucester City,Plymouth Parkway,1,1,D
 southern-league-premier-south,,Gosport Borough,Basingstoke Town,4,0,H
 southern-league-premier-south,,Gosport Borough,Bracknell Town,1,1,D
+southern-league-premier-south,,Gosport Borough,Hanwell Town,3,2,H
 southern-league-premier-south,,Gosport Borough,Hanworth Villa,0,1,A
 southern-league-premier-south,,Gosport Borough,Malvern Town,4,2,H
 southern-league-premier-south,,Gosport Borough,Poole Town,1,3,A
@@ -81,6 +87,7 @@ southern-league-premier-south,,Hanworth Villa,Chichester City,2,1,H
 southern-league-premier-south,,Hanworth Villa,Chippenham Town,1,1,D
 southern-league-premier-south,,Hanworth Villa,Evesham United,4,1,H
 southern-league-premier-south,,Hanworth Villa,Gloucester City,1,3,A
+southern-league-premier-south,,Hanworth Villa,Plymouth Parkway,4,2,H
 southern-league-premier-south,,Hanworth Villa,Taunton Town,2,0,H
 southern-league-premier-south,,Hanworth Villa,Yate Town,2,3,A
 southern-league-premier-south,,Havant & Waterlooville,Basingstoke Town,4,1,H
@@ -89,6 +96,7 @@ southern-league-premier-south,,Havant & Waterlooville,Gloucester City,3,3,D
 southern-league-premier-south,,Havant & Waterlooville,Hanwell Town,1,1,D
 southern-league-premier-south,,Havant & Waterlooville,Hanworth Villa,2,2,D
 southern-league-premier-south,,Havant & Waterlooville,Poole Town,0,1,A
+southern-league-premier-south,,Havant & Waterlooville,Taunton Town,1,0,H
 southern-league-premier-south,,Havant & Waterlooville,Uxbridge,0,2,A
 southern-league-premier-south,,Malvern Town,Chippenham Town,1,2,A
 southern-league-premier-south,,Malvern Town,Frome Town,2,0,H
@@ -113,6 +121,7 @@ southern-league-premier-south,,Sholing,Berkhamsted,2,0,H
 southern-league-premier-south,,Sholing,Chertsey Town,2,4,A
 southern-league-premier-south,,Sholing,Chichester City,2,3,A
 southern-league-premier-south,,Sholing,Gosport Borough,1,0,H
+southern-league-premier-south,,Sholing,Malvern Town,4,2,H
 southern-league-premier-south,,Sholing,Plymouth Parkway,1,3,A
 southern-league-premier-south,,Taunton Town,Basingstoke Town,4,3,H
 southern-league-premier-south,,Taunton Town,Bath City,1,3,A
@@ -127,8 +136,10 @@ southern-league-premier-south,,Uxbridge,Evesham United,1,0,H
 southern-league-premier-south,,Uxbridge,Malvern Town,3,0,H
 southern-league-premier-south,,Uxbridge,Taunton Town,5,4,H
 southern-league-premier-south,,Uxbridge,Wimborne Town,0,0,D
+southern-league-premier-south,,Uxbridge,Yate Town,2,0,H
 southern-league-premier-south,,Wimborne Town,Bracknell Town,2,0,H
 southern-league-premier-south,,Wimborne Town,Chichester City,0,1,A
+southern-league-premier-south,,Wimborne Town,Chippenham Town,2,0,H
 southern-league-premier-south,,Wimborne Town,Gloucester City,1,1,D
 southern-league-premier-south,,Wimborne Town,Gosport Borough,3,0,H
 southern-league-premier-south,,Wimborne Town,Hanworth Villa,0,0,D
