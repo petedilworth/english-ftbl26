@@ -1,0 +1,317 @@
+{
+  "edition": "review-top",
+  "date": "2026-11-02",
+  "subject": "The weekend reviewed \u2014 Premier League and Championship: 43 results",
+  "claims": [],
+  "table": {
+    "arsenal-fc": {
+      "tier": 1,
+      "position": 1,
+      "points": 24,
+      "played": 9
+    },
+    "aston-villa-fc": {
+      "tier": 1,
+      "position": 9,
+      "points": 12,
+      "played": 9
+    },
+    "bournemouth-fc": {
+      "tier": 1,
+      "position": 7,
+      "points": 12,
+      "played": 9
+    },
+    "brentford-fc": {
+      "tier": 1,
+      "position": 6,
+      "points": 14,
+      "played": 9
+    },
+    "brighton-and-hove-albion-fc": {
+      "tier": 1,
+      "position": 3,
+      "points": 19,
+      "played": 9
+    },
+    "chelsea-fc": {
+      "tier": 1,
+      "position": 4,
+      "points": 16,
+      "played": 9
+    },
+    "coventry-city-fc": {
+      "tier": 1,
+      "position": 16,
+      "points": 9,
+      "played": 9
+    },
+    "crystal-palace-fc": {
+      "tier": 1,
+      "position": 18,
+      "points": 7,
+      "played": 9
+    },
+    "everton-fc": {
+      "tier": 1,
+      "position": 14,
+      "points": 10,
+      "played": 8
+    },
+    "fulham-fc": {
+      "tier": 1,
+      "position": 15,
+      "points": 9,
+      "played": 9
+    },
+    "hull-city-fc": {
+      "tier": 1,
+      "position": 10,
+      "points": 11,
+      "played": 9
+    },
+    "ipswich-town-fc": {
+      "tier": 1,
+      "position": 13,
+      "points": 11,
+      "played": 9
+    },
+    "leeds-united-fc": {
+      "tier": 1,
+      "position": 11,
+      "points": 11,
+      "played": 9
+    },
+    "liverpool-fc": {
+      "tier": 1,
+      "position": 5,
+      "points": 15,
+      "played": 9
+    },
+    "manchester-city-fc": {
+      "tier": 1,
+      "position": 2,
+      "points": 21,
+      "played": 9
+    },
+    "manchester-united-fc": {
+      "tier": 1,
+      "position": 17,
+      "points": 7,
+      "played": 9
+    },
+    "newcastle-united-fc": {
+      "tier": 1,
+      "position": 12,
+      "points": 11,
+      "played": 8
+    },
+    "nottingham-forest-fc": {
+      "tier": 1,
+      "position": 19,
+      "points": 6,
+      "played": 9
+    },
+    "sunderland-afc": {
+      "tier": 1,
+      "position": 20,
+      "points": 5,
+      "played": 9
+    },
+    "tottenham-hotspur-fc": {
+      "tier": 1,
+      "position": 8,
+      "points": 12,
+      "played": 9
+    },
+    "birmingham-city-fc": {
+      "tier": 2,
+      "position": 6,
+      "points": 23,
+      "played": 13
+    },
+    "blackburn-rovers-fc": {
+      "tier": 2,
+      "position": 13,
+      "points": 18,
+      "played": 13
+    },
+    "bolton-wanderers-fc": {
+      "tier": 2,
+      "position": 19,
+      "points": 14,
+      "played": 13
+    },
+    "bristol-city-fc": {
+      "tier": 2,
+      "position": 14,
+      "points": 18,
+      "played": 13
+    },
+    "burnley-fc": {
+      "tier": 2,
+      "position": 22,
+      "points": 9,
+      "played": 13
+    },
+    "cardiff-city-fc": {
+      "tier": 2,
+      "position": 17,
+      "points": 14,
+      "played": 13
+    },
+    "charlton-athletic-fc": {
+      "tier": 2,
+      "position": 20,
+      "points": 14,
+      "played": 13
+    },
+    "derby-county-fc": {
+      "tier": 2,
+      "position": 23,
+      "points": 7,
+      "played": 13
+    },
+    "lincoln-city-fc": {
+      "tier": 2,
+      "position": 16,
+      "points": 15,
+      "played": 13
+    },
+    "middlesbrough-fc": {
+      "tier": 2,
+      "position": 1,
+      "points": 28,
+      "played": 13
+    },
+    "millwall-fc": {
+      "tier": 2,
+      "position": 12,
+      "points": 18,
+      "played": 13
+    },
+    "norwich-city-fc": {
+      "tier": 2,
+      "position": 15,
+      "points": 15,
+      "played": 13
+    },
+    "portsmouth-fc": {
+      "tier": 2,
+      "position": 11,
+      "points": 19,
+      "played": 13
+    },
+    "preston-north-end-fc": {
+      "tier": 2,
+      "position": 24,
+      "points": 5,
+      "played": 13
+    },
+    "queens-park-rangers-fc": {
+      "tier": 2,
+      "position": 9,
+      "points": 20,
+      "played": 13
+    },
+    "sheffield-united-fc": {
+      "tier": 2,
+      "position": 10,
+      "points": 19,
+      "played": 13
+    },
+    "southampton-fc": {
+      "tier": 2,
+      "position": 2,
+      "points": 27,
+      "played": 13
+    },
+    "stoke-city-fc": {
+      "tier": 2,
+      "position": 7,
+      "points": 23,
+      "played": 13
+    },
+    "swansea-city-fc": {
+      "tier": 2,
+      "position": 3,
+      "points": 26,
+      "played": 13
+    },
+    "watford-fc": {
+      "tier": 2,
+      "position": 21,
+      "points": 11,
+      "played": 13
+    },
+    "west-bromwich-albion-fc": {
+      "tier": 2,
+      "position": 5,
+      "points": 24,
+      "played": 13
+    },
+    "west-ham-united-fc": {
+      "tier": 2,
+      "position": 8,
+      "points": 22,
+      "played": 13
+    },
+    "wolverhampton-wanderers-fc": {
+      "tier": 2,
+      "position": 4,
+      "points": 24,
+      "played": 13
+    },
+    "wrexham-fc": {
+      "tier": 2,
+      "position": 18,
+      "points": 14,
+      "played": 13
+    }
+  },
+  "covered": [
+    "2026-10-23|bolton-wanderers-fc|middlesbrough-fc",
+    "2026-10-23|ipswich-town-fc|nottingham-forest-fc",
+    "2026-10-24|arsenal-fc|everton-fc",
+    "2026-10-24|aston-villa-fc|manchester-city-fc",
+    "2026-10-24|blackburn-rovers-fc|wrexham-fc",
+    "2026-10-24|cardiff-city-fc|birmingham-city-fc",
+    "2026-10-24|charlton-athletic-fc|norwich-city-fc",
+    "2026-10-24|chelsea-fc|tottenham-hotspur-fc",
+    "2026-10-24|coventry-city-fc|fulham-fc",
+    "2026-10-24|lincoln-city-fc|burnley-fc",
+    "2026-10-24|portsmouth-fc|millwall-fc",
+    "2026-10-24|preston-north-end-fc|west-bromwich-albion-fc",
+    "2026-10-24|queens-park-rangers-fc|swansea-city-fc",
+    "2026-10-24|sheffield-united-fc|derby-county-fc",
+    "2026-10-24|stoke-city-fc|bristol-city-fc",
+    "2026-10-24|west-ham-united-fc|southampton-fc",
+    "2026-10-24|wolverhampton-wanderers-fc|watford-fc",
+    "2026-10-25|crystal-palace-fc|newcastle-united-fc",
+    "2026-10-25|hull-city-fc|brentford-fc",
+    "2026-10-25|liverpool-fc|brighton-and-hove-albion-fc",
+    "2026-10-25|manchester-united-fc|bournemouth-fc",
+    "2026-10-25|sunderland-afc|leeds-united-fc",
+    "2026-10-30|sheffield-united-fc|wrexham-fc",
+    "2026-10-31|aston-villa-fc|fulham-fc",
+    "2026-10-31|bolton-wanderers-fc|bristol-city-fc",
+    "2026-10-31|bournemouth-fc|leeds-united-fc",
+    "2026-10-31|brentford-fc|nottingham-forest-fc",
+    "2026-10-31|burnley-fc|portsmouth-fc",
+    "2026-10-31|chelsea-fc|manchester-united-fc",
+    "2026-10-31|coventry-city-fc|sunderland-afc",
+    "2026-10-31|hull-city-fc|ipswich-town-fc",
+    "2026-10-31|lincoln-city-fc|birmingham-city-fc",
+    "2026-10-31|manchester-city-fc|brighton-and-hove-albion-fc",
+    "2026-10-31|middlesbrough-fc|charlton-athletic-fc",
+    "2026-10-31|millwall-fc|derby-county-fc",
+    "2026-10-31|norwich-city-fc|watford-fc",
+    "2026-10-31|southampton-fc|queens-park-rangers-fc",
+    "2026-10-31|stoke-city-fc|preston-north-end-fc",
+    "2026-10-31|swansea-city-fc|blackburn-rovers-fc",
+    "2026-10-31|tottenham-hotspur-fc|crystal-palace-fc",
+    "2026-10-31|west-ham-united-fc|west-bromwich-albion-fc",
+    "2026-10-31|wolverhampton-wanderers-fc|cardiff-city-fc",
+    "2026-11-01|liverpool-fc|arsenal-fc"
+  ]
+}
