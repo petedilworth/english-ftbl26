@@ -881,7 +881,7 @@
     "type": "ltd"
    },
    "match": "auto",
-   "why": "registered office 0 miles from the ground (score 105, lead 36)"
+   "why": "registered office 0 miles from the ground (score 165, lead 96)"
   },
   "afc-totton-fc": {
    "company": {
@@ -2049,7 +2049,7 @@
       "appointed": "2022-09-01",
       "name": "LUBY, Mark Peter John",
       "nationality": "British",
-      "residence": "United Kingdom",
+      "residence": "England",
       "resigned": "2025-01-21",
       "role": "director"
      },
@@ -2667,7 +2667,7 @@
     "type": "private-limited-guarant-nsc"
    },
    "match": "auto",
-   "why": "registered office 3 miles from the ground (score 124, lead 124)"
+   "why": "registered office 3 miles from the ground (score 184, lead 184)"
   },
   "anstey-nomads-fc": {
    "company": {
@@ -4056,7 +4056,7 @@
       "appointed": "2007-01-29",
       "name": "CUNNAH, Michael Graeme",
       "nationality": "British",
-      "residence": "England",
+      "residence": "United Kingdom",
       "resigned": "2008-05-23",
       "role": "director"
      },
@@ -4246,8 +4246,8 @@
      }
     ],
     "confirmation": {
-     "next_due": "2026-08-13",
-     "overdue": true
+     "next_due": "2027-08-13",
+     "overdue": false
     },
     "created": "2014-03-17",
     "filings": [
@@ -4408,7 +4408,7 @@
     "officers": [
      {
       "appointed": "2025-06-15",
-      "name": "BAMBRIDGE, Liam",
+      "name": "BAMBRIDGE, Liam Charles",
       "nationality": "British",
       "residence": "England",
       "resigned": null,
@@ -4653,7 +4653,7 @@
     ],
     "confirmation": {
      "next_due": "2026-10-24",
-     "overdue": false
+     "overdue": true
     },
     "created": "2002-10-25",
     "filings": [
@@ -5366,7 +5366,7 @@
     "type": "ltd"
    },
    "match": "auto",
-   "why": "registered office 0 miles from the ground; a charge names the ground; a director or controller matches the club's owner (score 219, lead 110)"
+   "why": "registered office 0 miles from the ground; a charge names the ground; a director or controller matches the club's owner (score 300, lead 191)"
   },
   "basingstoke-town-fc": {
    "company": {
@@ -5787,8 +5787,8 @@
        "Christopher Coles"
       ],
       "particulars": "Twerton park, twerton park, bath, BA2 1DB with title number ST327100.",
-      "satisfied": null,
-      "status": "outstanding"
+      "satisfied": "2026-10-07",
+      "status": "fully-satisfied"
      },
      {
       "classification": "Legal charge",
@@ -6015,6 +6015,14 @@
       "role": "director"
      },
      {
+      "appointed": "2025-07-28",
+      "name": "MCDONAGH, David Adam",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": null,
+      "role": "director"
+     },
+     {
       "appointed": "2026-09-10",
       "name": "RIVLIN, Richard Alan",
       "nationality": "British",
@@ -6027,14 +6035,6 @@
       "name": "STALBOW, Andrew",
       "nationality": "American",
       "residence": "United States",
-      "resigned": null,
-      "role": "director"
-     },
-     {
-      "appointed": "2013-12-24",
-      "name": "WILLIAMS, Paul",
-      "nationality": "British",
-      "residence": "England",
       "resigned": null,
       "role": "director"
      },
@@ -6279,14 +6279,6 @@
       "role": "director"
      },
      {
-      "appointed": "2025-07-28",
-      "name": "MCDONAGH, David Adam",
-      "nationality": "British",
-      "residence": "England",
-      "resigned": "2026-09-10",
-      "role": "director"
-     },
-     {
       "appointed": "2012-02-15",
       "name": "MORGAN, Shane Lee",
       "nationality": "English",
@@ -6495,6 +6487,14 @@
       "role": "director"
      },
      {
+      "appointed": "2013-12-24",
+      "name": "WILLIAMS, Paul",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2026-09-10",
+      "role": "director"
+     },
+     {
       "appointed": "2001-12-17",
       "name": "WILLIAMS, Paul",
       "nationality": "British",
@@ -6635,7 +6635,7 @@
      }
     ],
     "confirmation": {
-     "next_due": "2026-11-13",
+     "next_due": "2027-11-13",
      "overdue": false
     },
     "created": "2000-10-30",
@@ -10349,7 +10349,7 @@
      }
     ],
     "confirmation": {
-     "next_due": "2026-11-02",
+     "next_due": "2027-11-02",
      "overdue": false
     },
     "created": "1935-07-29",
@@ -12670,7 +12670,7 @@
      }
     ],
     "confirmation": {
-     "next_due": "2026-10-15",
+     "next_due": "2027-10-15",
      "overdue": false
     },
     "created": "1998-10-01",
@@ -14907,14 +14907,6 @@
     },
     "officers": [
      {
-      "appointed": "2024-03-09",
-      "name": "JTC (UK) LIMITED",
-      "nationality": null,
-      "residence": null,
-      "resigned": null,
-      "role": "corporate-secretary"
-     },
-     {
       "appointed": "2023-08-11",
       "name": "AL-SAEED, Abdullatif",
       "nationality": "Kuwaiti",
@@ -14945,6 +14937,14 @@
       "residence": null,
       "resigned": "2016-02-18",
       "role": "secretary"
+     },
+     {
+      "appointed": "2024-03-09",
+      "name": "JTC (UK) LIMITED",
+      "nationality": null,
+      "residence": null,
+      "resigned": "2026-02-18",
+      "role": "corporate-secretary"
      },
      {
       "appointed": "2016-02-18",
@@ -15873,7 +15873,7 @@
      }
     ],
     "confirmation": {
-     "next_due": "2026-10-14",
+     "next_due": "2027-10-14",
      "overdue": false
     },
     "created": "2012-12-18",
@@ -18802,7 +18802,7 @@
     ],
     "confirmation": {
      "next_due": "2026-10-17",
-     "overdue": false
+     "overdue": true
     },
     "created": "2000-08-01",
     "filings": [
@@ -20507,7 +20507,7 @@
     "type": "ltd"
    },
    "match": "auto",
-   "why": "registered office 1 miles from the ground; a charge names the ground (score 150, lead 150)"
+   "why": "registered office 1 miles from the ground; a charge names the ground (score 210, lead 210)"
   },
   "charlton-athletic-fc": {
    "company": {
@@ -22150,7 +22150,7 @@
         "residence": "United States"
        },
        {
-        "ceased": null,
+        "ceased": "2026-09-16",
         "country": null,
         "kind": "individual",
         "legal_form": null,
@@ -23893,6 +23893,20 @@
     ],
     "psc": [
      {
+      "ceased": "2026-10-15",
+      "country": null,
+      "kind": "individual",
+      "legal_form": null,
+      "name": "Mr Roger Gilbert Payne",
+      "nationality": "British",
+      "natures": [
+       "voting-rights-25-to-50-percent"
+      ],
+      "notified": "2016-04-06",
+      "number": null,
+      "residence": "United Kingdom"
+     },
+     {
       "ceased": "2023-09-20",
       "country": null,
       "kind": "individual",
@@ -23905,20 +23919,6 @@
       "notified": "2016-04-06",
       "number": null,
       "residence": "England"
-     },
-     {
-      "ceased": null,
-      "country": null,
-      "kind": "individual",
-      "legal_form": null,
-      "name": "Mr Roger Gilbert Payne",
-      "nationality": "British",
-      "natures": [
-       "voting-rights-25-to-50-percent"
-      ],
-      "notified": "2016-04-06",
-      "number": null,
-      "residence": "United Kingdom"
      }
     ],
     "sic": [
@@ -24124,7 +24124,7 @@
     "type": "ltd"
    },
    "match": "auto",
-   "why": "registered office 2 miles from the ground; a charge names the ground (score 169, lead 60)"
+   "why": "registered office 2 miles from the ground; a charge names the ground (score 250, lead 141)"
   },
   "chorley-fc": {
    "company": {
@@ -26046,7 +26046,7 @@
     "type": "ltd"
    },
    "match": "auto",
-   "why": "registered office 0 miles from the ground; a director or controller matches the club's owner (score 159, lead 50)"
+   "why": "registered office 0 miles from the ground; a director or controller matches the club's owner (score 240, lead 131)"
   },
   "derby-county-fc": {
    "company": {
@@ -28308,6 +28308,686 @@
    },
    "match": "reviewed",
    "why": "SIC 93120 (sport club); active; named a football club; every word of the club's name"
+  },
+  "ebbsfleet-united-fc": {
+   "company": {
+    "accounts": {
+     "last_made_up_to": "2024-05-29",
+     "last_type": "total-exemption-full",
+     "next_due": "2026-08-28",
+     "overdue": true
+    },
+    "chain": [],
+    "charges": [
+     {
+      "classification": "A registered charge",
+      "created": "2023-01-23",
+      "lenders": [
+       "Faithdean PLC"
+      ],
+      "particulars": "Ebbsfleet united football club limited, stonebridge road, northfleet, gravesend, kent DA11 9GN (registered at the land registry with title number K829241).",
+      "satisfied": null,
+      "status": "outstanding"
+     },
+     {
+      "classification": "A registered charge",
+      "created": "2021-07-20",
+      "lenders": [
+       "Faithdean PLC (Crn 01389235)"
+      ],
+      "particulars": "Ebbsfleet united football club limited stonebridge road northfleet gravesend kent DA11 9GN (title number K829241).",
+      "satisfied": null,
+      "status": "outstanding"
+     },
+     {
+      "classification": "A registered charge",
+      "created": "2021-05-11",
+      "lenders": [
+       "Faithdean PLC (Crn 01389235)"
+      ],
+      "particulars": "Ebbsfleet united football club limited stonebridge road northfleet gravesend kent DA11 9GN registered at h m land registry under title number K829241.",
+      "satisfied": null,
+      "status": "outstanding"
+     },
+     {
+      "classification": "A registered charge",
+      "created": "2021-05-11",
+      "lenders": [
+       "The English Sports Council"
+      ],
+      "particulars": "",
+      "satisfied": null,
+      "status": "outstanding"
+     },
+     {
+      "classification": "A registered charge",
+      "created": "2020-11-23",
+      "lenders": [
+       "Faithdean PLC (Crn 01389235)"
+      ],
+      "particulars": "Freehold property known as ebbsfleet united football club limited stonebridge road northfleet gravesend kent DA11 9GN (title number K829241).",
+      "satisfied": null,
+      "status": "outstanding"
+     },
+     {
+      "classification": "A registered charge",
+      "created": "2018-03-20",
+      "lenders": [
+       "Faithdean PLC"
+      ],
+      "particulars": "Freehold property known as ebbsfleet united football club stonebridge road northfleet gravesend kent DA11 9GN (title number K829241).",
+      "satisfied": null,
+      "status": "outstanding"
+     },
+     {
+      "classification": "A registered charge",
+      "created": "2018-03-20",
+      "lenders": [
+       "Faithdean PLC"
+      ],
+      "particulars": "Freehold property known as ebbsfleet united football club stonebridge road northfleet gravesend kent DA11 9GN (title number K829241).",
+      "satisfied": null,
+      "status": "outstanding"
+     },
+     {
+      "classification": "A registered charge",
+      "created": "2016-05-17",
+      "lenders": [
+       "Gravesham Borough Council"
+      ],
+      "particulars": "All that freehold property at northfleet football ground, stonebridge road, northfleet. Gravesend, kent DA11 9GN registered at the land registry with title absolute under title number K829241.",
+      "satisfied": null,
+      "status": "outstanding"
+     }
+    ],
+    "confirmation": {
+     "next_due": "2027-09-01",
+     "overdue": false
+    },
+    "created": "1946-06-03",
+    "filings": [
+     {
+      "date": "2026-05-28",
+      "made_up_to": "2025-05-29",
+      "type": "AA01"
+     },
+     {
+      "date": "2025-08-29",
+      "made_up_to": "2024-05-29",
+      "type": "AA"
+     },
+     {
+      "date": "2025-05-29",
+      "made_up_to": "2024-05-30",
+      "type": "AA01"
+     },
+     {
+      "date": "2024-06-26",
+      "made_up_to": "2023-05-30",
+      "type": "AA"
+     },
+     {
+      "date": "2023-07-14",
+      "made_up_to": "2022-05-30",
+      "type": "AA"
+     },
+     {
+      "date": "2022-05-31",
+      "made_up_to": "2021-05-30",
+      "type": "AA"
+     },
+     {
+      "date": "2021-07-17",
+      "made_up_to": "2020-05-30",
+      "type": "AA"
+     },
+     {
+      "date": "2020-07-23",
+      "made_up_to": "2019-05-30",
+      "type": "AA"
+     },
+     {
+      "date": "2020-02-25",
+      "made_up_to": "2019-05-31",
+      "type": "AA01"
+     },
+     {
+      "date": "2019-06-13",
+      "made_up_to": "2018-05-31",
+      "type": "AA"
+     }
+    ],
+    "insolvency": [],
+    "name": "EBBSFLEET UNITED FOOTBALL CLUB LIMITED",
+    "number": "00412018",
+    "office": {
+     "locality": "Gravesend",
+     "postcode": "DA11 9GN"
+    },
+    "officers": [
+     {
+      "appointed": "2026-08-18",
+      "name": "O'LEARY, John",
+      "nationality": "Irish",
+      "residence": "Ireland",
+      "resigned": null,
+      "role": "director"
+     },
+     {
+      "appointed": null,
+      "name": "BONNEYWELL, Trevor",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "1995-12-21",
+      "role": "secretary"
+     },
+     {
+      "appointed": "2013-06-04",
+      "name": "BUTLER-GALLIE, Stuart",
+      "nationality": null,
+      "residence": null,
+      "resigned": "2018-05-29",
+      "role": "secretary"
+     },
+     {
+      "appointed": "1995-12-21",
+      "name": "COMLEY, David John",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "1998-09-30",
+      "role": "secretary"
+     },
+     {
+      "appointed": "1999-11-08",
+      "name": "EDWARDS, Roland",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "2009-06-26",
+      "role": "secretary"
+     },
+     {
+      "appointed": "1998-09-30",
+      "name": "SEARS, Michael Alan",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "2000-01-14",
+      "role": "secretary"
+     },
+     {
+      "appointed": "2009-06-30",
+      "name": "WANLESS, Cheryl Ann",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "2013-06-04",
+      "role": "secretary"
+     },
+     {
+      "appointed": "2003-08-01",
+      "name": "AITKEN, Glenn Leslie",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "2004-10-25",
+      "role": "director"
+     },
+     {
+      "appointed": "2013-06-04",
+      "name": "AL HUMAIDI, Abdulla, Dr",
+      "nationality": "Kuwaiti",
+      "residence": "Kuwait",
+      "resigned": "2023-12-20",
+      "role": "director"
+     },
+     {
+      "appointed": "2018-10-29",
+      "name": "AL HUMAIDI, Dherar",
+      "nationality": "Kuwaiti",
+      "residence": "Kuwait",
+      "resigned": "2025-07-23",
+      "role": "director"
+     },
+     {
+      "appointed": "2017-06-01",
+      "name": "AL HUMAIDI, Dherar",
+      "nationality": "Kuwaiti",
+      "residence": "Kuwait",
+      "resigned": "2018-05-14",
+      "role": "director"
+     },
+     {
+      "appointed": null,
+      "name": "ALDOUS, Alan Frank",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "1994-05-12",
+      "role": "director"
+     },
+     {
+      "appointed": "2023-11-28",
+      "name": "ALHAMIDI, Abdulrahman Aaaf",
+      "nationality": "Kuwaiti",
+      "residence": "Kuwait",
+      "resigned": "2026-08-18",
+      "role": "director"
+     },
+     {
+      "appointed": "2023-11-28",
+      "name": "ALHUMAIDI, Abdullah Aaaf",
+      "nationality": "Kuwaiti",
+      "residence": "Kuwait",
+      "resigned": "2026-08-18",
+      "role": "director"
+     },
+     {
+      "appointed": "2018-10-29",
+      "name": "ALMEAJEL, Abdullah Hamed",
+      "nationality": "Kuwaiti",
+      "residence": "Kuwait",
+      "resigned": "2020-10-01",
+      "role": "director"
+     },
+     {
+      "appointed": "2018-10-29",
+      "name": "ARCHER, David Ronald",
+      "nationality": "British",
+      "residence": "United Kingdom",
+      "resigned": "2019-10-17",
+      "role": "director"
+     },
+     {
+      "appointed": "2017-06-01",
+      "name": "ARCHER, David Ronald",
+      "nationality": "British",
+      "residence": "United Kingdom",
+      "resigned": "2018-01-05",
+      "role": "director"
+     },
+     {
+      "appointed": "1992-06-18",
+      "name": "BALL, Lionel Richard Henry",
+      "nationality": "English",
+      "residence": null,
+      "resigned": "1997-05-31",
+      "role": "director"
+     },
+     {
+      "appointed": null,
+      "name": "BALL, Lionel",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "1997-05-31",
+      "role": "director"
+     },
+     {
+      "appointed": null,
+      "name": "BONNEYWELL, Trevor",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "1995-12-21",
+      "role": "director"
+     },
+     {
+      "appointed": "2000-02-21",
+      "name": "BOTLEY, Jason",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2008-02-19",
+      "role": "director"
+     },
+     {
+      "appointed": "2013-06-04",
+      "name": "BUTLER-GALLIE, Stuart",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2018-05-29",
+      "role": "director"
+     },
+     {
+      "appointed": "1994-07-14",
+      "name": "COMLEY, David John",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "1998-02-10",
+      "role": "director"
+     },
+     {
+      "appointed": "1999-05-19",
+      "name": "COSSOM, Paul",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "2001-10-10",
+      "role": "director"
+     },
+     {
+      "appointed": "2008-09-23",
+      "name": "DAVIS, David Alan",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "2009-04-16",
+      "role": "director"
+     },
+     {
+      "appointed": "1997-01-02",
+      "name": "DEAN, Peter",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "2000-05-17",
+      "role": "director"
+     },
+     {
+      "appointed": "1997-02-27",
+      "name": "DEAN, Timothy William",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2000-06-15",
+      "role": "director"
+     },
+     {
+      "appointed": "2013-06-04",
+      "name": "DUNPHY, John Fenlon",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2016-06-30",
+      "role": "director"
+     },
+     {
+      "appointed": "1998-08-01",
+      "name": "EDWARDS, Roland",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2006-11-27",
+      "role": "director"
+     },
+     {
+      "appointed": "2004-03-22",
+      "name": "FELSTEAD, Adrian",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "2008-02-19",
+      "role": "director"
+     },
+     {
+      "appointed": "1997-10-16",
+      "name": "FUGGLE, John Anthony Edward",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "2000-05-17",
+      "role": "director"
+     },
+     {
+      "appointed": "2000-08-03",
+      "name": "GRINDLEY, Robert",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "2003-04-04",
+      "role": "director"
+     },
+     {
+      "appointed": "1999-11-08",
+      "name": "GUNTON, Robert William",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "2007-06-21",
+      "role": "director"
+     },
+     {
+      "appointed": "1991-12-19",
+      "name": "HARRIS, John Walter Francis",
+      "nationality": "English",
+      "residence": null,
+      "resigned": "1993-10-14",
+      "role": "director"
+     },
+     {
+      "appointed": "1997-05-29",
+      "name": "HILLS, Michael John",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "1999-05-19",
+      "role": "director"
+     },
+     {
+      "appointed": null,
+      "name": "HOCKLEY, David Frederick",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "1995-05-18",
+      "role": "director"
+     },
+     {
+      "appointed": "2009-08-03",
+      "name": "HOLT, Duncan Geoffrey",
+      "nationality": "British",
+      "residence": "United Kingdom",
+      "resigned": "2011-01-31",
+      "role": "director"
+     },
+     {
+      "appointed": "2006-05-15",
+      "name": "HOLT, Duncan Geoffrey",
+      "nationality": "British",
+      "residence": "United Kingdom",
+      "resigned": "2008-02-19",
+      "role": "director"
+     },
+     {
+      "appointed": "1993-04-15",
+      "name": "HORNBY, William",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "1996-12-19",
+      "role": "director"
+     },
+     {
+      "appointed": null,
+      "name": "JONES, Stephen Vaughan",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "1992-11-26",
+      "role": "director"
+     },
+     {
+      "appointed": "1997-02-27",
+      "name": "JOY, David",
+      "nationality": "British",
+      "residence": "United Kingdom",
+      "resigned": "1997-11-20",
+      "role": "director"
+     },
+     {
+      "appointed": "1999-11-08",
+      "name": "KILCULLEN, Brian Vincent",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2010-12-07",
+      "role": "director"
+     },
+     {
+      "appointed": "2011-05-01",
+      "name": "LANE, Spenser",
+      "nationality": "British",
+      "residence": "United Kingdom",
+      "resigned": "2011-06-28",
+      "role": "director"
+     },
+     {
+      "appointed": "2008-02-19",
+      "name": "LEVINE, Joshua",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "2008-11-20",
+      "role": "director"
+     },
+     {
+      "appointed": "2002-07-02",
+      "name": "LINDOP, Mark Richard",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2005-07-29",
+      "role": "director"
+     },
+     {
+      "appointed": "2010-06-01",
+      "name": "MCQUEEN, Jessica Mary",
+      "nationality": "British",
+      "residence": "United Kingdom",
+      "resigned": "2013-12-13",
+      "role": "director"
+     },
+     {
+      "appointed": "2008-09-23",
+      "name": "MOULES, John Anthony",
+      "nationality": "British",
+      "residence": "United Kingdom",
+      "resigned": "2009-07-09",
+      "role": "director"
+     },
+     {
+      "appointed": null,
+      "name": "NORMAN, Morris",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "2003-09-23",
+      "role": "director"
+     },
+     {
+      "appointed": "2018-01-05",
+      "name": "POOLEY, Dean",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2018-11-21",
+      "role": "director"
+     },
+     {
+      "appointed": "2000-03-09",
+      "name": "RAMSELL, Brent",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "2002-12-09",
+      "role": "director"
+     },
+     {
+      "appointed": null,
+      "name": "ROLLS, Eric",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "1999-03-13",
+      "role": "director"
+     },
+     {
+      "appointed": "1995-04-13",
+      "name": "SEARS, Michael Alan",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "1999-11-08",
+      "role": "director"
+     },
+     {
+      "appointed": null,
+      "name": "SIDWELL, Carol",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "1993-07-01",
+      "role": "director"
+     },
+     {
+      "appointed": "2009-11-20",
+      "name": "SONSARA, Philip Joseph",
+      "nationality": "British",
+      "residence": "Surrey",
+      "resigned": "2013-06-04",
+      "role": "director"
+     },
+     {
+      "appointed": null,
+      "name": "STEVENS, David John Lancaster",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "1997-10-16",
+      "role": "director"
+     },
+     {
+      "appointed": "2013-06-04",
+      "name": "TESTA, David Alan",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2017-02-01",
+      "role": "director"
+     },
+     {
+      "appointed": "2013-06-04",
+      "name": "VARNEY, Peter Derek",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2018-01-06",
+      "role": "director"
+     },
+     {
+      "appointed": "1997-10-16",
+      "name": "VINCENT, Geoffrey Charles",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "1999-10-01",
+      "role": "director"
+     },
+     {
+      "appointed": "2005-09-01",
+      "name": "WALTER, Francis Alexander",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2007-01-03",
+      "role": "director"
+     },
+     {
+      "appointed": "1999-11-08",
+      "name": "WARD, Michael John",
+      "nationality": "British",
+      "residence": null,
+      "resigned": "2008-02-19",
+      "role": "director"
+     }
+    ],
+    "psc": [
+     {
+      "ceased": null,
+      "country": null,
+      "kind": "individual",
+      "legal_form": null,
+      "name": "Mr John O'Leary",
+      "nationality": "Irish",
+      "natures": [
+       "ownership-of-shares-75-to-100-percent",
+       "voting-rights-75-to-100-percent",
+       "right-to-appoint-and-remove-directors"
+      ],
+      "notified": "2026-08-18",
+      "number": null,
+      "residence": "Ireland"
+     },
+     {
+      "ceased": "2026-08-18",
+      "country": "England And Wales",
+      "kind": "corporate-entity",
+      "legal_form": "Limited By Shares",
+      "name": "Keh Sports Limited",
+      "nationality": null,
+      "natures": [
+       "ownership-of-shares-75-to-100-percent",
+       "voting-rights-75-to-100-percent",
+       "right-to-appoint-and-remove-directors"
+      ],
+      "notified": "2016-04-06",
+      "number": "08509864",
+      "residence": null
+     }
+    ],
+    "sic": [
+     "93120"
+    ],
+    "status": "active",
+    "type": "ltd"
+   },
+   "match": "reviewed",
+   "why": "SIC 93120 (sport club); active; named a football club; matches the entity these accounts were read from; every word of the club's name"
   },
   "enfield-fc": {
    "company": {
@@ -31436,7 +32116,7 @@
     "type": "ltd"
    },
    "match": "auto",
-   "why": "registered office 3 miles from the ground (score 109, lead 109)"
+   "why": "registered office 3 miles from the ground (score 190, lead 190)"
   },
   "forest-green-rovers-fc": {
    "company": {
@@ -32169,7 +32849,7 @@
     "type": "ltd"
    },
    "match": "auto",
-   "why": "registered office 0 miles from the ground (score 90, lead 56)"
+   "why": "registered office 0 miles from the ground (score 150, lead 116)"
   },
   "fulham-fc": {
    "company": {
@@ -35493,7 +36173,7 @@
     "type": "ltd"
    },
    "match": "auto",
-   "why": "registered office 1 miles from the ground; a charge names the ground (score 184, lead 75)"
+   "why": "registered office 1 miles from the ground; a charge names the ground (score 244, lead 135)"
   },
   "gosport-borough-fc": {
    "company": {
@@ -38049,7 +38729,45 @@
      "next_due": "2027-03-31",
      "overdue": false
     },
-    "chain": [],
+    "chain": [
+     {
+      "name": "FC COMPANY HOLDINGS LIMITED",
+      "number": "17325674",
+      "psc": [
+       {
+        "ceased": null,
+        "country": null,
+        "kind": "individual",
+        "legal_form": null,
+        "name": "Mr Jonathan Blezard",
+        "nationality": "British",
+        "natures": [
+         "ownership-of-shares-50-to-75-percent",
+         "voting-rights-50-to-75-percent"
+        ],
+        "notified": "2026-07-07",
+        "number": null,
+        "residence": "England"
+       },
+       {
+        "ceased": null,
+        "country": null,
+        "kind": "individual",
+        "legal_form": null,
+        "name": "Mr Simon Daniel Weaver",
+        "nationality": "British",
+        "natures": [
+         "ownership-of-shares-25-to-50-percent",
+         "voting-rights-25-to-50-percent"
+        ],
+        "notified": "2026-07-07",
+        "number": null,
+        "residence": "England"
+       }
+      ],
+      "status": "active"
+     }
+    ],
     "charges": [
      {
       "classification": "A registered charge",
@@ -38113,7 +38831,7 @@
      }
     ],
     "confirmation": {
-     "next_due": "2027-08-13",
+     "next_due": "2027-11-02",
      "overdue": false
     },
     "created": "1990-07-19",
@@ -38186,8 +38904,8 @@
       "role": "secretary"
      },
      {
-      "appointed": "2002-07-12",
-      "name": "MATTHEWS, Howard John",
+      "appointed": "2026-10-16",
+      "name": "BLEZARD, Jonathan",
       "nationality": "British",
       "residence": "England",
       "resigned": null,
@@ -38214,6 +38932,14 @@
       "name": "WEAVER, Richard Irving",
       "nationality": "British",
       "residence": "United Kingdom",
+      "resigned": null,
+      "role": "director"
+     },
+     {
+      "appointed": "2026-10-16",
+      "name": "WEAVER, Simon Daniel",
+      "nationality": "British",
+      "residence": "England",
       "resigned": null,
       "role": "director"
      },
@@ -38335,6 +39061,14 @@
       "nationality": "British",
       "residence": "England",
       "resigned": "2019-10-16",
+      "role": "director"
+     },
+     {
+      "appointed": "2002-07-12",
+      "name": "MATTHEWS, Howard John",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": "2026-10-16",
       "role": "director"
      },
      {
@@ -38461,6 +39195,21 @@
     "psc": [
      {
       "ceased": null,
+      "country": "England",
+      "kind": "corporate-entity",
+      "legal_form": "Private Company Limited By Shares",
+      "name": "Fc Company Holdings Limited",
+      "nationality": null,
+      "natures": [
+       "ownership-of-shares-75-to-100-percent",
+       "voting-rights-75-to-100-percent"
+      ],
+      "notified": "2026-10-16",
+      "number": "17325674",
+      "residence": null
+     },
+     {
+      "ceased": "2026-10-16",
       "country": null,
       "kind": "individual",
       "legal_form": null,
@@ -39167,14 +39916,6 @@
       "role": "director"
      },
      {
-      "appointed": "2008-08-28",
-      "name": "HEWITT, Adrian Brian",
-      "nationality": "British",
-      "residence": "United Kingdom",
-      "resigned": null,
-      "role": "director"
-     },
-     {
       "appointed": "2014-11-14",
       "name": "MELLOR, Timothy Kenneth",
       "nationality": "British",
@@ -39308,6 +40049,14 @@
       "nationality": "British",
       "residence": null,
       "resigned": "2009-02-16",
+      "role": "director"
+     },
+     {
+      "appointed": "2008-08-28",
+      "name": "HEWITT, Adrian Brian",
+      "nationality": "British",
+      "residence": "United Kingdom",
+      "resigned": "2026-05-11",
       "role": "director"
      },
      {
@@ -43278,9 +44027,9 @@
   "leatherhead-fc": {
    "company": {
     "accounts": {
-     "last_made_up_to": "2025-04-30",
+     "last_made_up_to": "2026-04-30",
      "last_type": "micro-entity",
-     "next_due": "2027-01-31",
+     "next_due": "2028-01-31",
      "overdue": false
     },
     "chain": [],
@@ -43302,6 +44051,11 @@
     },
     "created": "1995-06-12",
     "filings": [
+     {
+      "date": "2026-10-08",
+      "made_up_to": "2026-04-30",
+      "type": "AA"
+     },
      {
       "date": "2025-09-12",
       "made_up_to": "2025-04-30",
@@ -43345,11 +44099,6 @@
      {
       "date": "2018-01-27",
       "made_up_to": "2017-04-30",
-      "type": "AA"
-     },
-     {
-      "date": "2017-01-29",
-      "made_up_to": "2016-04-30",
       "type": "AA"
      }
     ],
@@ -43869,6 +44618,14 @@
      "postcode": "LS11 0ES"
     },
     "officers": [
+     {
+      "appointed": "2026-03-31",
+      "name": "DRACOPOULOS, Andreas",
+      "nationality": "Greek",
+      "residence": "United States",
+      "resigned": null,
+      "role": "director"
+     },
      {
       "appointed": "2025-05-09",
       "name": "EVANS, Robert",
@@ -44765,7 +45522,7 @@
     "type": "ltd"
    },
    "match": "auto",
-   "why": "registered office 4 miles from the ground; a charge names the ground (score 184, lead 70)"
+   "why": "registered office 4 miles from the ground; a charge names the ground (score 244, lead 130)"
   },
   "leicester-city-fc": {
    "company": {
@@ -46014,7 +46771,7 @@
       "appointed": "2004-06-07",
       "name": "POWELL, Kevin Stephen",
       "nationality": "British",
-      "residence": "United Kingdom",
+      "residence": "England",
       "resigned": "2008-11-03",
       "role": "director"
      },
@@ -46194,7 +46951,7 @@
     "type": "ltd"
    },
    "match": "auto",
-   "why": "registered office 0 miles from the ground; a director or controller matches the club's owner (score 159, lead 87)"
+   "why": "registered office 0 miles from the ground; a director or controller matches the club's owner (score 240, lead 168)"
   },
   "leyton-orient-fc": {
    "company": {
@@ -48525,7 +49282,7 @@
      {
       "appointed": "2025-09-01",
       "name": "BAMBER, Jonathan Albert",
-      "nationality": "British",
+      "nationality": "English",
       "residence": "England",
       "resigned": null,
       "role": "director"
@@ -53328,7 +54085,7 @@
      }
     ],
     "confirmation": {
-     "next_due": "2026-10-31",
+     "next_due": "2027-10-31",
      "overdue": false
     },
     "created": "1989-03-06",
@@ -53468,14 +54225,6 @@
       "role": "director"
      },
      {
-      "appointed": "2007-03-28",
-      "name": "KOUVARIS, Demos, Mr.",
-      "nationality": "American",
-      "residence": "United States",
-      "resigned": null,
-      "role": "director"
-     },
-     {
       "appointed": "2010-03-30",
       "name": "PRESS, Richard Stern",
       "nationality": "American",
@@ -53609,6 +54358,14 @@
       "nationality": "British",
       "residence": "England",
       "resigned": "2024-05-24",
+      "role": "director"
+     },
+     {
+      "appointed": "2007-03-28",
+      "name": "KOUVARIS, Demos, Mr.",
+      "nationality": "American",
+      "residence": "United States",
+      "resigned": "2026-10-09",
       "role": "director"
      },
      {
@@ -54053,8 +54810,8 @@
      }
     ],
     "confirmation": {
-     "next_due": "2026-09-26",
-     "overdue": true
+     "next_due": "2027-09-26",
+     "overdue": false
     },
     "created": "1927-09-30",
     "filings": [
@@ -56143,7 +56900,7 @@
     "type": "ltd"
    },
    "match": "auto",
-   "why": "registered office 0 miles from the ground; a director or controller matches the club's owner (score 159, lead 90)"
+   "why": "registered office 0 miles from the ground; a director or controller matches the club's owner (score 244, lead 175)"
   },
   "northampton-town-fc": {
    "company": {
@@ -57229,7 +57986,7 @@
     ],
     "confirmation": {
      "next_due": "2026-10-25",
-     "overdue": false
+     "overdue": true
     },
     "created": "1919-04-02",
     "filings": [
@@ -61097,7 +61854,7 @@
     ],
     "confirmation": {
      "next_due": "2026-10-21",
-     "overdue": false
+     "overdue": true
     },
     "created": "1934-08-01",
     "filings": [
@@ -61161,6 +61918,14 @@
     },
     "officers": [
      {
+      "appointed": "2026-10-26",
+      "name": "BARR, Gregory Maxwell",
+      "nationality": "Irish",
+      "residence": "United States",
+      "resigned": null,
+      "role": "director"
+     },
+     {
       "appointed": "2024-01-22",
       "name": "CRAWFORD, Iain Robert",
       "nationality": "British",
@@ -61189,6 +61954,14 @@
       "name": "GORE, Dawn Ann",
       "nationality": "British",
       "residence": "England",
+      "resigned": null,
+      "role": "director"
+     },
+     {
+      "appointed": "2026-10-26",
+      "name": "GRAHAM, Gary Clifton",
+      "nationality": "American",
+      "residence": "United States",
       "resigned": null,
       "role": "director"
      },
@@ -61691,7 +62464,7 @@
     ],
     "confirmation": {
      "next_due": "2026-10-18",
-     "overdue": false
+     "overdue": true
     },
     "created": "2011-10-04",
     "filings": [
@@ -61921,7 +62694,7 @@
       ],
       "notified": "2016-04-06",
       "number": null,
-      "residence": "United Kingdom"
+      "residence": "England"
      },
      {
       "ceased": "2019-05-31",
@@ -61936,7 +62709,7 @@
       ],
       "notified": "2016-04-06",
       "number": null,
-      "residence": "United Kingdom"
+      "residence": "England"
      },
      {
       "ceased": "2019-05-31",
@@ -64294,7 +65067,7 @@
     "type": "ltd"
    },
    "match": "auto",
-   "why": "registered office 8 miles from the ground (score 102, lead 102)"
+   "why": "registered office 8 miles from the ground (score 162, lead 162)"
   },
   "radcliffe-fc": {
    "company": {
@@ -64616,7 +65389,7 @@
     "type": "ltd"
    },
    "match": "auto",
-   "why": "registered office 2 miles from the ground; a charge names the ground (score 115, lead 71)"
+   "why": "registered office 2 miles from the ground; a charge names the ground (score 175, lead 131)"
   },
   "reading-fc": {
    "company": {
@@ -67802,6 +68575,16 @@
     "charges": [
      {
       "classification": "A registered charge",
+      "created": "2026-10-17",
+      "lenders": [
+       "Msd Investment. Corp as Security Agent"
+      ],
+      "particulars": "The security document includes fixed security over land and buildings at bramall lane and the sheffield united hotel (title numbers SYK457849, SYK683080, SYK587505, SYK610691, SYK566753, SYK168119, SYK610695, SYK521171, SYK585223, SYK611066, SYK491863, SYK584456, SYK614457, SYK111564 and SYK110970).",
+      "satisfied": null,
+      "status": "outstanding"
+     },
+     {
+      "classification": "A registered charge",
       "created": "2026-04-28",
       "lenders": [
        "Santander UK PLC"
@@ -69575,7 +70358,7 @@
     ],
     "confirmation": {
      "next_due": "2026-10-17",
-     "overdue": false
+     "overdue": true
     },
     "created": "1936-06-24",
     "filings": [
@@ -72721,7 +73504,7 @@
       "appointed": "2025-05-01",
       "name": "MALONE, Kieran Michael",
       "nationality": "British",
-      "residence": "United Kingdom",
+      "residence": "England",
       "resigned": null,
       "role": "director"
      },
@@ -73614,7 +74397,7 @@
     "type": "private-limited-guarant-nsc"
    },
    "match": "auto",
-   "why": "registered office 0 miles from the ground; a charge names the ground (score 174, lead 174)"
+   "why": "registered office 0 miles from the ground; a charge names the ground (score 234, lead 234)"
   },
   "st-albans-city-fc": {
    "company": {
@@ -74112,7 +74895,7 @@
       "appointed": "2022-01-01",
       "name": "BAKER, Richard Andrew",
       "nationality": "British",
-      "residence": "United Kingdom",
+      "residence": "England",
       "resigned": null,
       "role": "director"
      },
@@ -75864,6 +76647,21 @@
       "number": "03189630",
       "psc": [
        {
+        "ceased": null,
+        "country": null,
+        "kind": "corporate-entity",
+        "legal_form": "Limited Company",
+        "name": "Mercator Investments Limited",
+        "nationality": null,
+        "natures": [
+         "ownership-of-shares-75-to-100-percent",
+         "voting-rights-75-to-100-percent"
+        ],
+        "notified": "2021-02-18",
+        "number": null,
+        "residence": null
+       },
+       {
         "ceased": "2021-02-18",
         "country": "England And Wales",
         "kind": "corporate-entity",
@@ -76302,8 +77100,8 @@
      }
     ],
     "confirmation": {
-     "next_due": "2026-09-27",
-     "overdue": true
+     "next_due": "2027-09-27",
+     "overdue": false
     },
     "created": "1896-08-12",
     "filings": [
@@ -77230,7 +78028,7 @@
     "type": "ltd"
    },
    "match": "auto",
-   "why": "registered office 0 miles from the ground; a charge names the ground; a director or controller matches the club's owner (score 262, lead 153)"
+   "why": "registered office 0 miles from the ground; a charge names the ground; a director or controller matches the club's owner (score 322, lead 213)"
   },
   "swansea-city-fc": {
    "company": {
@@ -77764,7 +78562,7 @@
       "appointed": "2023-09-13",
       "name": "MELLER, Paul David",
       "nationality": "British",
-      "residence": "Wales",
+      "residence": "United Kingdom",
       "resigned": null,
       "role": "director"
      },
@@ -80707,6 +81505,14 @@
       "role": "director"
      },
      {
+      "appointed": "2026-10-26",
+      "name": "WINDEATT, Sean Anthony",
+      "nationality": "British",
+      "residence": "England",
+      "resigned": null,
+      "role": "director"
+     },
+     {
       "appointed": "2025-02-27",
       "name": "WYATT, Danielle Nicole",
       "nationality": "British",
@@ -80900,7 +81706,7 @@
      },
      {
       "appointed": "2006-10-12",
-      "name": "GIORDANO, Giuseppe, Dr",
+      "name": "GIORDANO, Giuseppe",
       "nationality": "British",
       "residence": "England",
       "resigned": "2007-05-24",
@@ -81808,7 +82614,7 @@
      }
     ],
     "confirmation": {
-     "next_due": "2026-10-14",
+     "next_due": "2027-10-14",
      "overdue": false
     },
     "created": "1983-03-14",
@@ -86212,14 +87018,6 @@
     },
     "officers": [
      {
-      "appointed": "2012-12-07",
-      "name": "MOLLETT, Andrew John",
-      "nationality": null,
-      "residence": null,
-      "resigned": null,
-      "role": "secretary"
-     },
-     {
       "appointed": "2021-01-11",
       "name": "CUNNINGHAM, Daniel",
       "nationality": "British",
@@ -86248,14 +87046,6 @@
       "name": "MITKA, Peter",
       "nationality": "Czech",
       "residence": "Czech Republic",
-      "resigned": null,
-      "role": "director"
-     },
-     {
-      "appointed": "2012-12-07",
-      "name": "MOLLETT, Andrew John",
-      "nationality": "British",
-      "residence": "United Kingdom",
       "resigned": null,
       "role": "director"
      },
@@ -86337,6 +87127,14 @@
       "nationality": "British",
       "residence": null,
       "resigned": "1999-12-20",
+      "role": "secretary"
+     },
+     {
+      "appointed": "2012-12-07",
+      "name": "MOLLETT, Andrew John",
+      "nationality": null,
+      "residence": null,
+      "resigned": "2026-10-27",
       "role": "secretary"
      },
      {
@@ -86537,6 +87335,14 @@
       "nationality": "British",
       "residence": "England",
       "resigned": "2006-12-01",
+      "role": "director"
+     },
+     {
+      "appointed": "2012-12-07",
+      "name": "MOLLETT, Andrew John",
+      "nationality": "British",
+      "residence": "United Kingdom",
+      "resigned": "2026-10-27",
       "role": "director"
      },
      {
@@ -88413,7 +89219,7 @@
     "type": "ltd"
    },
    "match": "auto",
-   "why": "registered office 0 miles from the ground; a director or controller matches the club's owner (score 174, lead 44)"
+   "why": "registered office 0 miles from the ground; a director or controller matches the club's owner (score 234, lead 104)"
   },
   "wolverhampton-wanderers-fc": {
    "company": {
@@ -89772,8 +90578,8 @@
      }
     ],
     "confirmation": {
-     "next_due": "2026-09-28",
-     "overdue": true
+     "next_due": "2027-09-28",
+     "overdue": false
     },
     "created": "1992-07-08",
     "filings": [
@@ -91268,7 +92074,7 @@
     "type": "ltd"
    },
    "match": "auto",
-   "why": "registered office 4 miles from the ground (score 109, lead 109)"
+   "why": "registered office 4 miles from the ground (score 190, lead 190)"
   },
   "yeovil-town-fc": {
    "company": {
@@ -91648,8 +92454,8 @@
      }
     ],
     "confirmation": {
-     "next_due": "2026-09-21",
-     "overdue": true
+     "next_due": "2027-09-21",
+     "overdue": false
     },
     "created": "2003-03-06",
     "filings": [
@@ -92039,8 +92845,8 @@
    "why": "sport-adjacent SIC 93199; active; named a football club; matches the entity these accounts were read from; every word of the club's name"
   }
  },
- "fetched": "2026-10-06",
- "requests": 2484,
+ "fetched": "2026-11-02",
+ "requests": 2520,
  "unmatched": {
   "afc-wimbledon": {
    "candidates": [
@@ -92240,6 +93046,11 @@
      "score": 109
     },
     {
+     "name": "CLEETHORPES BOROUGH SPORTS CLUB CIC",
+     "number": "17538323",
+     "score": 72
+    },
+    {
      "name": "EAST COAST PADEL CLEETHORPES LIMITED",
      "number": "16976814",
      "score": 69
@@ -92247,7 +93058,7 @@
    ],
    "name": "Cleethorpes Town",
    "tier": 7,
-   "why": "best was GRIMSBY AND CLEETHORPES YACHT CLUB LIMITED at 109, lead 40: registered office 1 miles from the ground"
+   "why": "best was GRIMSBY AND CLEETHORPES YACHT CLUB LIMITED at 109, lead 37: registered office 1 miles from the ground"
   },
   "crawley-town-fc": {
    "candidates": [
@@ -92620,6 +93431,12 @@
    "name": "South Shields",
    "tier": 6,
    "why": "best was SOUTH SHIELDS FOOTBALL CLUB 1888 LIMITED at 124, lead 12: registered office 1 miles from the ground"
+  },
+  "stanway-rovers-community-fc": {
+   "candidates": [],
+   "name": "Stanway Rovers Community",
+   "tier": 7,
+   "why": "no active candidate"
   },
   "stockport-county-fc": {
    "candidates": [
