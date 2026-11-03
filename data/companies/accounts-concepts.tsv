@@ -1,89 +1,89 @@
 concept	prefix	kind	documents	facts	with_dimensions	read_as	example
-AccountingStandardsApplied	bus	text	278	279	279		accrington-stanley-fc:  [AccountingStandardsDimension=FRS102]
-AccountsStatusAuditedOrUnaudited	bus	text	278	278	278		accrington-stanley-fc:  [AccountsStatusDimension=Audited]
-BalanceSheetDate	bus	text	278	317	11		accrington-stanley-fc: 30 June 2024
-DateAuthorisationFinancialStatementsForIssue	core	text	278	279	2		accrington-stanley-fc: 26 March 2025
-DirectorSigningFinancialStatements	core	text	278	329	329		accrington-stanley-fc:  [EntityOfficersDimension=Director1]
-EndDateForPeriodCoveredByReport	bus	text	278	298	3		accrington-stanley-fc: 2024-06-30
-EntityCurrentLegalOrRegisteredName	bus	text	278	278	3		accrington-stanley-fc: ACCRINGTON STANLEY FOOTBALL CLUB LIMITED
-EntityDormantTruefalse	bus	text	278	278	1		accrington-stanley-fc: false
-EntityTradingStatus	bus	text	278	278	9		accrington-stanley-fc: 
-StartDateForPeriodCoveredByReport	bus	text	278	283	2		accrington-stanley-fc: 2023-07-01
-UKCompaniesHouseRegisteredNumber	bus	text	278	278	0		accrington-stanley-fc: 01287721
-_GoingConcernMaterialUncertainty	derived	text	278	278	0		accrington-stanley-fc: none found
-AccountsType	bus	text	277	277	277		accrington-stanley-fc:  [AccountsTypeDimension=FullAccounts]
-AverageNumberEmployeesDuringPeriod	core	num	270	531	14	employees	accrington-stanley-fc: 148
-Equity	core	num	270	2116	1596	net_assets,share_capital[ShareCapital],share_capital[ShareCapitalOrdinaryShareClass1]	accrington-stanley-fc: 1568698
-NameEntityOfficer	bus	text	270	1187	1187		accrington-stanley-fc: Mr A M Holt [EntityOfficersDimension=Director1]
-NameProductionSoftware	bus	text	270	270	0		accrington-stanley-fc: CCH Software
-Creditors	core	num	261	1147	1125	creditors_within_year[CurrentFinancialInstruments],creditors_within_year[WithinOneYear],creditors_after_year[Non-currentFinancialInstruments],creditors_after_year[AfterOneYear]	accrington-stanley-fc: 6426173 [FinancialInstrumentCurrentNon-currentDimension=CurrentFinanc]
-StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct	direp	text	255	255	2		afc-telford-united-fc: The directors acknowledge their responsibilities for complyi
-NetCurrentAssetsLiabilities	core	num	254	502	4	net_current_assets	accrington-stanley-fc: -5466668
-CurrentAssets	core	num	251	496	4	current_assets	accrington-stanley-fc: 959505
-LegalFormEntity	bus	text	249	303	303		accrington-stanley-fc:  [LegalFormEntityDimension=PrivateLimitedCompanyLtd]
-TotalAssetsLessCurrentLiabilities	core	num	243	481	4	total_assets_less_current_liabilities	accrington-stanley-fc: 2242344
-NetAssetsLiabilities	core	num	242	484	12	net_assets	accrington-stanley-fc: 1568698
-VersionProductionSoftware	bus	text	232	232	0		accrington-stanley-fc: CCH Accounts Production 2024.310
-StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime	direp	text	229	229	0		accrington-stanley-fc: These financial statements have been prepared and delivered 
-CashBankOnHand	core	num	228	458	12	cash	accrington-stanley-fc: 98901
-Debtors	core	num	228	706	315	debtors,debtors[CurrentFinancialInstruments+Non-currentFinancialInstruments],debtors[WithinOneYear+AfterOneYear]	accrington-stanley-fc: 818805
-ReportTitle	bus	text	221	221	3		accrington-stanley-fc: FINANCIAL STATEMENTS
-PropertyPlantEquipmentGrossCost	core	num	219	1593	1234	fixed_asset_cost	accrington-stanley-fc: 9227258
-AccumulatedDepreciationImpairmentPropertyPlantEquipment	core	num	217	1569	1209	fixed_asset_depreciation	accrington-stanley-fc: 1520747
-PropertyPlantEquipment	core	num	216	1643	1228	tangible_assets	accrington-stanley-fc: 7706511
-IncreaseFromDepreciationChargeForYearPropertyPlantEquipment	core	num	214	801	628	depreciation	accrington-stanley-fc: 289839
-CountryFormationOrIncorporation	bus	text	206	206	125		accrington-stanley-fc: 
-StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit	direp	text	202	202	0		afc-telford-united-fc: The members have not required the company to obtain an audit
-StatementComplianceWithApplicableReportingFramework	core	text	199	199	3		accrington-stanley-fc: These financial statements have been prepared in accordance 
-TradeCreditorsTradePayables	core	num	198	437	429		accrington-stanley-fc: 215535 [FinancialInstrumentCurrentNon-currentDimension=CurrentFinanc]
-StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies	direp	text	194	194	0		afc-telford-united-fc: For the year ending 30 June 2024 the company was entitled to
-OtherCreditors	core	num	189	486	478	other_creditors,other_creditors[CurrentFinancialInstruments+Non-currentFinancialInstruments],other_creditors[WithinOneYear+AfterOneYear]	accrington-stanley-fc: 1279256 [FinancialInstrumentCurrentNon-currentDimension=CurrentFinanc]
-DescriptionPrincipalActivities	bus	text	185	185	2		accrington-stanley-fc: No description of principal activity
-TradeDebtorsTradeReceivables	core	num	181	409	341		accrington-stanley-fc: 692178 [FinancialInstrumentCurrentNon-currentDimension=CurrentFinanc]
-OtherDebtors	core	num	171	344	282		accrington-stanley-fc: 126627 [MaturitiesOrExpirationPeriodsDimension=WithinOneYear]
-RevenueRecognitionPolicy	core	text	169	169	2		accrington-stanley-fc: Turnover represents income from gate receipts and season tic
-InventoriesPolicy	core	text	167	167	2		accrington-stanley-fc: Stock is valued at the lower of cost and net realisable valu
-FixedAssets	core	num	158	312	4	fixed_assets	accrington-stanley-fc: 7709012
-ApplicableLegislation	bus	text	157	210	210		accrington-stanley-fc:  [ApplicableLegislationDimension=SmallCompaniesRegimeForAccoun]
-DescriptionDepreciationMethodForPropertyPlantEquipment	core	text	157	614	530		accrington-stanley-fc: Depreciation is recognised so as to write off the cost or va
+AccountingStandardsApplied	bus	text	280	281	281		accrington-stanley-fc:  [AccountingStandardsDimension=FRS102]
+AccountsStatusAuditedOrUnaudited	bus	text	280	280	280		accrington-stanley-fc:  [AccountsStatusDimension=Audited]
+BalanceSheetDate	bus	text	280	319	11		accrington-stanley-fc: 30 June 2024
+DateAuthorisationFinancialStatementsForIssue	core	text	280	281	2		accrington-stanley-fc: 26 March 2025
+DirectorSigningFinancialStatements	core	text	280	331	331		accrington-stanley-fc:  [EntityOfficersDimension=Director1]
+EndDateForPeriodCoveredByReport	bus	text	280	300	3		accrington-stanley-fc: 2024-06-30
+EntityCurrentLegalOrRegisteredName	bus	text	280	280	3		accrington-stanley-fc: ACCRINGTON STANLEY FOOTBALL CLUB LIMITED
+EntityDormantTruefalse	bus	text	280	280	1		accrington-stanley-fc: false
+EntityTradingStatus	bus	text	280	280	9		accrington-stanley-fc: 
+StartDateForPeriodCoveredByReport	bus	text	280	285	2		accrington-stanley-fc: 2023-07-01
+UKCompaniesHouseRegisteredNumber	bus	text	280	280	0		accrington-stanley-fc: 01287721
+_GoingConcernMaterialUncertainty	derived	text	280	280	0		accrington-stanley-fc: none found
+AccountsType	bus	text	279	279	279		accrington-stanley-fc:  [AccountsTypeDimension=FullAccounts]
+AverageNumberEmployeesDuringPeriod	core	num	272	535	14	employees	accrington-stanley-fc: 148
+Equity	core	num	272	2136	1612	net_assets,share_capital[ShareCapital],share_capital[ShareCapitalOrdinaryShareClass1]	accrington-stanley-fc: 1568698
+NameEntityOfficer	bus	text	272	1195	1195		accrington-stanley-fc: Mr A M Holt [EntityOfficersDimension=Director1]
+NameProductionSoftware	bus	text	272	272	0		accrington-stanley-fc: CCH Software
+Creditors	core	num	263	1159	1137	creditors_within_year[CurrentFinancialInstruments],creditors_within_year[WithinOneYear],creditors_after_year[Non-currentFinancialInstruments],creditors_after_year[AfterOneYear]	accrington-stanley-fc: 6426173 [FinancialInstrumentCurrentNon-currentDimension=CurrentFinanc]
+StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct	direp	text	257	257	2		afc-telford-united-fc: The directors acknowledge their responsibilities for complyi
+NetCurrentAssetsLiabilities	core	num	256	506	4	net_current_assets	accrington-stanley-fc: -5466668
+CurrentAssets	core	num	253	500	4	current_assets	accrington-stanley-fc: 959505
+LegalFormEntity	bus	text	251	305	305		accrington-stanley-fc:  [LegalFormEntityDimension=PrivateLimitedCompanyLtd]
+TotalAssetsLessCurrentLiabilities	core	num	245	485	4	total_assets_less_current_liabilities	accrington-stanley-fc: 2242344
+NetAssetsLiabilities	core	num	244	488	12	net_assets	accrington-stanley-fc: 1568698
+VersionProductionSoftware	bus	text	234	234	0		accrington-stanley-fc: CCH Accounts Production 2024.310
+StatementThatAccountsHaveBeenPreparedInAccordanceWithProvisionsSmallCompaniesRegime	direp	text	231	231	0		accrington-stanley-fc: These financial statements have been prepared and delivered 
+CashBankOnHand	core	num	230	462	12	cash	accrington-stanley-fc: 98901
+Debtors	core	num	230	714	319	debtors,debtors[CurrentFinancialInstruments+Non-currentFinancialInstruments],debtors[WithinOneYear+AfterOneYear]	accrington-stanley-fc: 818805
+ReportTitle	bus	text	223	223	3		accrington-stanley-fc: FINANCIAL STATEMENTS
+PropertyPlantEquipmentGrossCost	core	num	221	1605	1242	fixed_asset_cost	accrington-stanley-fc: 9227258
+AccumulatedDepreciationImpairmentPropertyPlantEquipment	core	num	219	1581	1217	fixed_asset_depreciation	accrington-stanley-fc: 1520747
+PropertyPlantEquipment	core	num	218	1655	1236	tangible_assets	accrington-stanley-fc: 7706511
+IncreaseFromDepreciationChargeForYearPropertyPlantEquipment	core	num	216	807	632	depreciation	accrington-stanley-fc: 289839
+CountryFormationOrIncorporation	bus	text	208	208	125		accrington-stanley-fc: 
+StatementThatMembersHaveNotRequiredCompanyToObtainAnAudit	direp	text	204	204	0		afc-telford-united-fc: The members have not required the company to obtain an audit
+StatementComplianceWithApplicableReportingFramework	core	text	201	201	3		accrington-stanley-fc: These financial statements have been prepared in accordance 
+TradeCreditorsTradePayables	core	num	200	441	433		accrington-stanley-fc: 215535 [FinancialInstrumentCurrentNon-currentDimension=CurrentFinanc]
+StatementThatCompanyEntitledToExemptionFromAuditUnderSection477CompaniesAct2006RelatingToSmallCompanies	direp	text	196	196	0		afc-telford-united-fc: For the year ending 30 June 2024 the company was entitled to
+OtherCreditors	core	num	191	494	486	other_creditors,other_creditors[CurrentFinancialInstruments+Non-currentFinancialInstruments],other_creditors[WithinOneYear+AfterOneYear]	accrington-stanley-fc: 1279256 [FinancialInstrumentCurrentNon-currentDimension=CurrentFinanc]
+DescriptionPrincipalActivities	bus	text	187	187	2		accrington-stanley-fc: No description of principal activity
+TradeDebtorsTradeReceivables	core	num	183	413	345		accrington-stanley-fc: 692178 [FinancialInstrumentCurrentNon-currentDimension=CurrentFinanc]
+OtherDebtors	core	num	173	348	286		accrington-stanley-fc: 126627 [MaturitiesOrExpirationPeriodsDimension=WithinOneYear]
+RevenueRecognitionPolicy	core	text	171	171	2		accrington-stanley-fc: Turnover represents income from gate receipts and season tic
+InventoriesPolicy	core	text	169	169	2		accrington-stanley-fc: Stock is valued at the lower of cost and net realisable valu
+FixedAssets	core	num	160	316	4	fixed_assets	accrington-stanley-fc: 7709012
+ApplicableLegislation	bus	text	159	212	212		accrington-stanley-fc:  [ApplicableLegislationDimension=SmallCompaniesRegimeForAccoun]
+DescriptionDepreciationMethodForPropertyPlantEquipment	core	text	159	620	534		accrington-stanley-fc: Depreciation is recognised so as to write off the cost or va
+ScopeAccounts	bus	text	153	153	11		accrington-stanley-fc: 
 AddressLine1	uk-bus	text	151	157	144		afc-telford-united-fc: Afc Telford Learning Centre [EntityContactTypeDimension=RegisteredOffice]
-ScopeAccounts	bus	text	151	151	11		accrington-stanley-fc: 
 PostalCodeZip	bus	text	150	156	140		accrington-stanley-fc: BB5 5BX [EntityContactTypeDimension=RegisteredOffice]
 PrincipalLocation-CityOrTown	bus	text	148	154	141		accrington-stanley-fc: Accrington [EntityContactTypeDimension=RegisteredOffice]
-OtherTaxationSocialSecurityPayable	core	num	143	289	289	tax_owed,tax_owed[CurrentFinancialInstruments+Non-currentFinancialInstruments],tax_owed[WithinOneYear+AfterOneYear]	accrington-stanley-fc: 123024 [FinancialInstrumentCurrentNon-currentDimension=CurrentFinanc]
+OtherTaxationSocialSecurityPayable	core	num	145	293	293	tax_owed,tax_owed[CurrentFinancialInstruments+Non-currentFinancialInstruments],tax_owed[WithinOneYear+AfterOneYear]	accrington-stanley-fc: 123024 [FinancialInstrumentCurrentNon-currentDimension=CurrentFinanc]
 FinancialStatementsArePreparedOnGoing-concernBasisTruefalse	core	text	139	139	1		accrington-stanley-fc: The company continues on a going concern basis due to the fi
-DescriptionMeasurementBasisForPropertyPlantEquipment	core	text	132	142	11		accrington-stanley-fc: Tangible fixed assets
+DescriptionMeasurementBasisForPropertyPlantEquipment	core	text	134	144	11		accrington-stanley-fc: Tangible fixed assets
 AddressLine2	bus	text	130	135	122		accrington-stanley-fc: Livingstone Road [EntityContactTypeDimension=RegisteredOffice]
-GeneralDescriptionBasisMeasurementUsedInPreparingFinancialStatements	core	text	127	127	2		accrington-stanley-fc: The financial statements have been prepared under the histor
+GeneralDescriptionBasisMeasurementUsedInPreparingFinancialStatements	core	text	129	129	2		accrington-stanley-fc: The financial statements have been prepared under the histor
 TotalInventories	core	num	123	240	4		afc-telford-united-fc: 10025
-DefinedContributionPensionsPolicy	core	text	118	118	1		accrington-stanley-fc: Payments to defined contribution retirement benefit schemes 
-ReportIncludesDetailedProfitLossStatementTruefalse	bus	text	118	118	0		accrington-stanley-fc: false
-ReportAnAmendedRevisedVersionPreviouslyFiledReportTruefalse	bus	text	116	116	0		accrington-stanley-fc: false
-TaxPolicy	core	text	116	116	2		accrington-stanley-fc: The tax expense represents the sum of the tax currently paya
-DateAuditorsReport	aurep	text	111	114	6		accrington-stanley-fc: 26 March 2025
+DefinedContributionPensionsPolicy	core	text	120	120	1		accrington-stanley-fc: Payments to defined contribution retirement benefit schemes 
+ReportIncludesDetailedProfitLossStatementTruefalse	bus	text	120	120	0		accrington-stanley-fc: false
+ReportAnAmendedRevisedVersionPreviouslyFiledReportTruefalse	bus	text	118	118	0		accrington-stanley-fc: false
+TaxPolicy	core	text	118	118	2		accrington-stanley-fc: The tax expense represents the sum of the tax currently paya
+DateAuditorsReport	aurep	text	113	116	6		accrington-stanley-fc: 26 March 2025
 CountyRegion	bus	text	108	110	108		accrington-stanley-fc: Lancashire [EntityContactTypeDimension=RegisteredOffice]
-IntangibleAssets	core	num	100	471	330	intangible_assets	accrington-stanley-fc: 2501
-CashCashEquivalentsPolicy	core	text	99	99	1		accrington-stanley-fc: Cash and cash equivalents
-IntangibleAssetsGrossCost	core	num	99	322	271		accrington-stanley-fc: 79500 [IntangibleAssetClassesDimension=Non-standardIntangibleAssetC]
-AccumulatedAmortisationImpairmentIntangibleAssets	core	num	98	314	264		accrington-stanley-fc: 76999 [IntangibleAssetClassesDimension=Non-standardIntangibleAssetC]
+CashCashEquivalentsPolicy	core	text	101	101	1		accrington-stanley-fc: Cash and cash equivalents
+IntangibleAssets	core	num	101	475	332	intangible_assets	accrington-stanley-fc: 2501
+IntangibleAssetsGrossCost	core	num	100	324	273		accrington-stanley-fc: 79500 [IntangibleAssetClassesDimension=Non-standardIntangibleAssetC]
+AccumulatedAmortisationImpairmentIntangibleAssets	core	num	99	316	266		accrington-stanley-fc: 76999 [IntangibleAssetClassesDimension=Non-standardIntangibleAssetC]
+DeferredTaxPolicy	core	text	99	99	2		accrington-stanley-fc: Deferred tax liabilities are generally recognised for all ti
+EntityHasTakenExemptionUnderCompaniesActInNotPublishingItsOwnProfitLossAccountTruefalse	direp	text	99	99	1		accrington-stanley-fc: The directors of the company have elected not to include a c
 AdditionsOtherThanThroughBusinessCombinationsPropertyPlantEquipment	core	num	98	427	338	fixed_asset_additions	alvechurch-fc: 245
 DescriptionBodyAuthorisingFinancialStatements	core	text	98	98	1		afc-telford-united-fc: board of directors
-DeferredTaxPolicy	core	text	97	97	2		accrington-stanley-fc: Deferred tax liabilities are generally recognised for all ti
-EntityHasTakenExemptionUnderCompaniesActInNotPublishingItsOwnProfitLossAccountTruefalse	direp	text	97	97	1		accrington-stanley-fc: The directors of the company have elected not to include a c
-TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment	core	num	96	303	222	fixed_asset_additions	accrington-stanley-fc: 110539
+TotalAdditionsIncludingFromBusinessCombinationsPropertyPlantEquipment	core	num	98	309	226	fixed_asset_additions	accrington-stanley-fc: 110539
 AccruedLiabilitiesDeferredIncome	core	num	95	245	233	accruals_and_deferred_income,accruals_and_deferred_income[CurrentFinancialInstruments+Non-currentFinancialInstruments],accruals_and_deferred_income[WithinOneYear+AfterOneYear]	aveley-fc: 1900 [MaturitiesOrExpirationPeriodsDimension=WithinOneYear]
 NameEntityAuditors	bus	text	93	95	5		accrington-stanley-fc: Pierce C A Limited
 PrepaymentsAccruedIncome	core	num	91	203	188		aveley-fc: 35550
 PropertyPlantEquipmentPolicy	core	text	89	89	2		afc-telford-united-fc: Tangible assets are initially recorded at cost, and subseque
 StatementThatDirectorsHaveElectedNotToDeliverProfitLossAccountUnderSection4445ACompaniesAct2006	direp	text	87	87	0		afc-telford-united-fc: In accordance with section 444 of the Companies Act 2006, th
-IncreaseFromAmortisationChargeForYearIntangibleAssets	core	num	85	156	127	amortisation	accrington-stanley-fc: 2501 [IntangibleAssetClassesDimension=Non-standardIntangibleAssetC]
-BankBorrowingsOverdrafts	core	num	84	291	291	bank_loans,bank_loans[CurrentFinancialInstruments+Non-currentFinancialInstruments],bank_loans[WithinOneYear+AfterOneYear]	afc-telford-united-fc: 39269 [MaturitiesOrExpirationPeriodsDimension=AfterOneYear]
-PrincipalCurrencyUsedInBusinessReport	uk-bus	text	79	79	73		afc-telford-united-fc:  [CurrenciesDimension=PoundSterling]
+IncreaseFromAmortisationChargeForYearIntangibleAssets	core	num	86	157	128	amortisation	accrington-stanley-fc: 2501 [IntangibleAssetClassesDimension=Non-standardIntangibleAssetC]
+BankBorrowingsOverdrafts	core	num	85	293	293	bank_loans,bank_loans[CurrentFinancialInstruments+Non-currentFinancialInstruments],bank_loans[WithinOneYear+AfterOneYear]	afc-telford-united-fc: 39269 [MaturitiesOrExpirationPeriodsDimension=AfterOneYear]
+PrincipalCurrencyUsedInBusinessReport	uk-bus	text	80	80	73		afc-telford-united-fc:  [CurrenciesDimension=PoundSterling]
 OtherRemainingBorrowings	core	num	78	324	276		accrington-stanley-fc: 61200
+EmployeeBenefitsPolicy	core	text	76	76	1		accrington-stanley-fc: The costs of short-term employee benefits are recognised as 
 OpinionAuditorsOnEntity	aurep	text	76	76	5		accrington-stanley-fc: Opinion of auditors on entity
 ProfitLoss	ns5	num	76	254	122	profit_after_tax	altrincham-fc: -997960
 DescriptionShareType	bus	text	75	104	104		afc-whyteleafe-fc: Ordinary [EntityShareClassesDimension=OrdinaryShareClass1]
-EmployeeBenefitsPolicy	core	text	74	74	1		accrington-stanley-fc: The costs of short-term employee benefits are recognised as 
 NameSeniorStatutoryAuditor	aurep	text	74	74	5		accrington-stanley-fc: Linda Wilkinson
 ParValueShare	core	num	74	98	98		afc-whyteleafe-fc: 0 [EntityShareClassesDimension=OrdinaryShareClass1]
 CompanyHasPublishedCommitmentToUKEffectiveStewardshipCodeTruefalse	direp	text	73	73	1		afc-telford-united-fc: false
@@ -91,61 +91,61 @@ DateSigningDirectorsReport	direp	text	73	73	7		afc-whyteleafe-fc: 13 February 20
 InvestmentEntityRequiredToApplyExceptionFromConsolidationTruefalse	core	text	73	73	1		afc-telford-united-fc: false
 DirectorSigningDirectorsReport	ns20	text	72	76	76		barnsley-fc:  [EntityOfficersDimension=Director1]
 EntityHasClaimedExemptionFromReportingDisclosureRelatedPartyTransactionsForWholly-ownedEntitiesTruefalse	core	text	70	70	1		afc-telford-united-fc: false
-ImpairmentNon-financialAssetsPolicy	core	text	67	69	1		accrington-stanley-fc: At each reporting
+ImpairmentNon-financialAssetsPolicy	core	text	69	71	1		accrington-stanley-fc: At each reporting
+FinancialInstrumentsClassificationPolicy	core	text	66	66	2		accrington-stanley-fc: The company has elected to apply the provisions of Section 1
 ReportPeriod	ns10	text	66	66	2		afc-totton-fc: 
-FinancialInstrumentsClassificationPolicy	core	text	64	64	2		accrington-stanley-fc: The company has elected to apply the provisions of Section 1
 NumberSharesIssuedFullyPaid	core	num	64	167	159		afc-whyteleafe-fc: 10000 [EntityShareClassesDimension=OrdinaryShareClass1]
 DefinedBenefitPlanMulti-employerPlanTruefalse	ns5	text	63	63	1		altrincham-fc: false
-FutureMinimumLeasePaymentsUnderNon-cancellableOperatingLeases	core	num	60	341	248		afc-whyteleafe-fc: 22917
+FutureMinimumLeasePaymentsUnderNon-cancellableOperatingLeases	core	num	61	343	248		afc-whyteleafe-fc: 22917
 NameEntityAccountants	bus	text	57	57	7		afc-whyteleafe-fc: Tax Innovations Limited [ThirdPartyAgentStatusDimension=Agent1]
 StatementOnQualityCompletenessInformationProvidedToAuditors	ns20	text	57	57	3		barnsley-fc: So far as the directors are aware, there is no relevant audi
+CurrentIncomeTaxPolicy	core	text	56	56	1		accrington-stanley-fc: The tax currently payable is based on taxable profit for the
 TotalBorrowings	core	num	56	249	219	bank_loans	accrington-stanley-fc: 61200 [FinancialInstrumentCurrentNon-currentDimension=CurrentFinanc]
-CurrentIncomeTaxPolicy	core	text	54	54	1		accrington-stanley-fc: The tax currently payable is based on taxable profit for the
 AmountsOwedToGroupUndertakings	core	num	53	121	121	owed_to_group,owed_to_group[CurrentFinancialInstruments+Non-currentFinancialInstruments],owed_to_group[WithinOneYear+AfterOneYear]	accrington-stanley-fc: 4808282 [FinancialInstrumentCurrentNon-currentDimension=CurrentFinanc]
 TaxTaxCreditOnProfitOrLossOnOrdinaryActivities	ns5	num	53	116	28		barnsley-fc: 0
 ProfitLossOnOrdinaryActivitiesBeforeTax	ns5	num	50	105	12	profit_before_tax	barnsley-fc: -4008082
+ForeignCurrencyTranslationOperationsPolicy	ns5	text	49	49	2		barnsley-fc: Assets and liabilities in foreign currencies are translated 
 IntangibleAssetsPolicy	core	text	48	56	42		aldershot-town-fc: Intangible fixed assets are measured at cost less accumulati
 InterestPayableSimilarChargesFinanceCosts	ns5	num	48	102	24	interest_paid	barnsley-fc: 0
 AdministrativeExpenses	ns5	num	47	100	22		barnsley-fc: 2844737
-ForeignCurrencyTranslationOperationsPolicy	ns5	text	47	47	2		barnsley-fc: Assets and liabilities in foreign currencies are translated 
 LeasesPolicy	ns5	text	47	47	1		barnsley-fc: Assets obtained under hire purchase contracts or finance lea
 TaxationSocialSecurityPayable	uk-core	num	45	88	78	tax_owed,tax_owed[CurrentFinancialInstruments+Non-currentFinancialInstruments],tax_owed[WithinOneYear+AfterOneYear]	afc-totton-fc: 33666 [MaturitiesOrExpirationPeriodsDimension=WithinOneYear]
 AdditionsOtherThanThroughBusinessCombinationsIntangibleAssets	core	num	44	98	95	intangible_additions,intangible_additions[ExternallyAcquiredIntangibleAssets]	accrington-stanley-fc: 80577 [IntangibleAssetClassesDimension=Non-standardIntangibleAssetC]
-DescriptionRecognitionBasisMeasurementIntangibleAssets	core	text	43	43	37		accrington-stanley-fc: Intangible assets, including player registrations, acquired  [IntangibleAssetClassesDimension=IntangibleAssetsOtherThanGoo]
+DescriptionRecognitionBasisMeasurementIntangibleAssets	core	text	44	44	38		accrington-stanley-fc: Intangible assets, including player registrations, acquired  [IntangibleAssetClassesDimension=IntangibleAssetsOtherThanGoo]
+LessorOperatingLeasePolicy	core	text	43	43	0		accrington-stanley-fc: Rentals payable under operating leases,
 OtherDisposalsIntangibleAssets	core	num	42	84	72		accrington-stanley-fc: 79500 [IntangibleAssetClassesDimension=Non-standardIntangibleAssetC]
 FinanceLeaseLiabilitiesPresentValueTotal	core	num	41	175	167		bristol-city-fc: 23210 [FinanceLeaseContractTypeDimension=HirePurchaseContracts;Fina]
 FinishedGoodsGoodsForResale	uk-core	num	41	93	12		afc-totton-fc: -7627
-LessorOperatingLeasePolicy	core	text	41	41	0		accrington-stanley-fc: Rentals payable under operating leases,
 OtherDisposalsDecreaseInAmortisationImpairmentIntangibleAssets	core	num	41	83	71		accrington-stanley-fc: 79500 [IntangibleAssetClassesDimension=Non-standardIntangibleAssetC]
 StaffCostsEmployeeBenefitsExpense	ns5	num	41	95	20	staff_costs	barnsley-fc: 9277755
 WagesSalaries	ns5	num	41	95	20		barnsley-fc: 8329385
 CostSales	ns5	num	40	80	14		barnsley-fc: 12552247
-GovernmentGrantsOtherGovernmentAssistancePolicy	core	text	39	39	1		accrington-stanley-fc: Government grants are recognised at the fair value of the as
+GovernmentGrantsOtherGovernmentAssistancePolicy	core	text	40	40	1		accrington-stanley-fc: Government grants are recognised at the fair value of the as
+DescriptionAmortisationMethodForIntangibleAssets	core	text	39	83	51		blackpool-fc: Over the remaining term of the contract [IntangibleAssetClassesDimension=Non-standardIntangibleAssetC]
+InvestmentsFixedAssets	core	num	39	78	3		ashton-united-fc: 133
 StatementOnMattersOnWhichAuditorReportsByException	aurep	text	39	39	1		blackpool-fc: In the light of the knowledge and understanding of the compa
-DescriptionAmortisationMethodForIntangibleAssets	core	text	38	81	50		blackpool-fc: Over the remaining term of the contract [IntangibleAssetClassesDimension=Non-standardIntangibleAssetC]
 FunctionalPresentationCurrencyPolicy	core	text	38	38	0		afc-telford-united-fc: The financial statements are prepared in sterling, which is 
 OtherInterestReceivableSimilarIncomeFinanceIncome	ns5	num	38	79	16		barnsley-fc: 3479
-InvestmentsFixedAssets	core	num	37	74	3		ashton-united-fc: 133
 PensionOtherPost-employmentBenefitCostsOtherPensionCosts	ns5	num	37	87	18		barnsley-fc: 93152
 BankBorrowings	core	num	35	127	103		aldershot-town-fc: 404000 [MaturitiesOrExpirationPeriodsDimension=AfterOneYear]
 FinancialInstrumentsRecognitionMeasurementPolicy	core	text	35	35	3		afc-telford-united-fc: A financial asset or a financial liability is recognised onl
+NameParentEntity	core	text	35	35	1		accrington-stanley-fc: The company is a subsidiary of 0404 Investments Limited, a c
+OtherDisposalsPropertyPlantEquipment	core	num	35	173	142		accrington-stanley-fc: 826614
 TaxExpenseCreditApplicableTaxRate	core	num	35	69	52		blackpool-fc: -53247 [TaxJurisdictionDimension=UKTax]
 ComprehensiveIncomeExpense	ns5	num	34	123	65		barnsley-fc: -4008082
-OtherDisposalsPropertyPlantEquipment	core	num	34	170	140		accrington-stanley-fc: 826614
 StatementOnRespectiveResponsibilitiesDirectorsAuditors	aurep	text	34	34	0		blackpool-fc: As explained more fully in the directors'
 EntityHasClaimedExemptionFromReportingDisclosureKeyManagementPersonnelCompensationTruefalse	core	text	33	33	1		afc-telford-united-fc: false
-NameParentEntity	core	text	33	33	1		accrington-stanley-fc: The company is a subsidiary of 0404 Investments Limited, a c
 StatementAuditorsResponsibilitiesRelatingToOtherInformation	aurep	text	33	33	1		blackpool-fc: The other information comprises the information included in 
 BasisForOpinionAuditorsOnEntity	aurep	text	32	32	0		blackpool-fc: We conducted our audit in accordance with International Stan
 NameUltimateParentGroupIfNotParentEntity	core	text	32	32	1		blackpool-fc: The ultimate controlling party is Mr S P Sadler, shareholder
 ProvisionsForLiabilitiesBalanceSheetSubtotal	core	num	32	62	0		afc-telford-united-fc: 0
 CashCashEquivalentsCashFlowValue	ns5	num	31	66	6		barnsley-fc: 1957847
+OtherDisposalsDecreaseInDepreciationImpairmentPropertyPlantEquipment	core	num	31	149	121		accrington-stanley-fc: 767763
 PurchasePropertyPlantEquipment	ns5	num	31	58	6		barnsley-fc: -78957
 AmountsOwedByGroupUndertakings	core	num	30	60	60		blackpool-fc: 2427912 [FinancialInstrumentCurrentNon-currentDimension=CurrentFinanc]
 DisposalsPropertyPlantEquipment	core	num	30	83	57		afc-telford-united-fc: 31690
 ImpairmentFinancialAssetsPolicy	core	text	30	30	1		afc-telford-united-fc: Financial assets that are measured at cost or amortised cost
-OtherDisposalsDecreaseInDepreciationImpairmentPropertyPlantEquipment	core	num	30	146	119		accrington-stanley-fc: 767763
-TotalAdditionsIncludingFromBusinessCombinationsIntangibleAssets	ns5	num	29	41	33	intangible_additions	barnsley-fc: 1342667 [IntangibleAssetClassesDimension=PatentsTrademarksLicencesCon]
+TotalAdditionsIncludingFromBusinessCombinationsIntangibleAssets	ns5	num	30	42	34	intangible_additions	barnsley-fc: 1342667 [IntangibleAssetClassesDimension=PatentsTrademarksLicencesCon]
 AuditFeesExpenses	aurep	num	28	54	2		blackpool-fc: 9200
 IncreaseDecreaseInCashCashEquivalentsBeforeForeignExchangeDifferencesChangesInConsolidation	ns5	num	28	56	6		barnsley-fc: 951726
 PropertyPlantEquipmentFree-textComment	ns5	text	28	28	1		barrow-afc: Freehold property has not been depreciated which is a depart
@@ -153,13 +153,13 @@ TaxIncreaseDecreaseFromEffectExpensesNotDeductibleInDeterminingTaxableProfitOrLo
 DisposalsDecreaseInDepreciationImpairmentPropertyPlantEquipment	core	num	26	77	53		afc-telford-united-fc: 0
 EntityHasClaimedExemptionFromPresentingCashFlowStatementNotesInLineWithFRS1021.12bTruefalse	core	text	26	26	0		afc-telford-united-fc: false
 GainLossInCashFlowsFromChangeInDebtorsTradeOtherReceivables	ns5	num	26	47	4		barnsley-fc: 204967
+GeneralDescriptionCriticalEstimatesJudgements	core	text	26	26	0		alvechurch-fc: The preparation of the financial statements requires managem
 IssueEquityInstruments	ns5	num	26	122	85		barnsley-fc: 5987499
 NetCashGeneratedFromOperations	ns5	num	26	48	13		barnsley-fc: 5974238
 OtherOperatingIncomeFormat1	d	num	26	53	10		burton-albion-fc: 128848
 TradeReceivablesPolicy	core	text	26	26	0		afc-whyteleafe-fc: Trade debtors are amounts due from customers for merchandise
 AddressLine3	bus	text	25	25	25		bristol-rovers-fc: Horfield [EntityContactTypeDimension=RegisteredOffice]
 FurtherItemTaxIncreaseDecreaseComponentAdjustingItems	core	num	25	102	102		blackpool-fc: -7688 [X-AnalysisDimension=1]
-GeneralDescriptionCriticalEstimatesJudgements	core	text	25	25	0		alvechurch-fc: The preparation of the financial statements requires managem
 InterestPaidClassifiedAsOperatingActivities	ns5	num	25	49	14		barnsley-fc: 0
 TradePayablesPolicy	core	text	25	25	0		afc-whyteleafe-fc: Trade creditors are obligations to pay for goods or services
 PurchaseIntangibleAssets	ns5	num	24	47	6		barnsley-fc: -692886
@@ -179,6 +179,7 @@ DirectorRemuneration	ns20	num	21	46	10	directors_pay	barnsley-fc: 347048
 EmploymentDisabledPersonsPolicy	direp	text	21	21	1		bristol-city-fc: Full and fair consideration is given to the employment of di [GroupCompanyDataDimension=Consolidated]
 RecoverableAmountSpecificIntangibleAssetBasedValueInUseTruefalse	ns5	text	21	21	21		barnsley-fc: false [X-SpecificMaterialImpairmentLossOrReversalIntangibleAssetsGr]
 TurnoverRevenue	ns5	num	21	172	134	turnover	barnsley-fc: 9538666
+BalancesAmountsOwedToRelatedParties	core	num	20	43	42		afc-whyteleafe-fc: 283810 [RelatedPartiesDimension=KeyManagementPersonnelCloseFamilyMem]
 GrossProfitLoss	ns5	num	20	40	2		barnsley-fc: -3013581
 PercentageClassShareHeldInSubsidiary	core	num	20	40	40		crewe-alexandra-fc: 1 [SubsidiariesDimension=Subsidiary1;X-DetailsSharesHeldInSubsi]
 PrepaymentsAccruedIncomeNotExpressedWithinCurrentAssetSubtotal	core	num	20	39	6		afc-telford-united-fc: 0
@@ -189,7 +190,6 @@ NetFinanceIncomeCosts	core	num	19	36	10		bristol-rovers-fc: 1567
 PaymentsFinanceLeaseLiabilitiesClassifiedAsFinancingActivities	core	num	19	33	4		bristol-city-fc: -40508 [GroupCompanyDataDimension=Consolidated]
 ReportIncludesStrategicReportTruefalse	ns10	text	19	19	1		barnsley-fc: true
 StatementThatCompanyHasPreparedAccountsUnderProvisionsRelatingToMedium-sizedCompanies	ns20	text	19	19	0		barnsley-fc: These accounts have been prepared in accordance with the pro
-BalancesAmountsOwedToRelatedParties	core	num	18	23	22		afc-whyteleafe-fc: 283810 [RelatedPartiesDimension=KeyManagementPersonnelCloseFamilyMem]
 DepreciationExpensePropertyPlantEquipment	ns5	num	18	38	26	depreciation	barnsley-fc: 102321 [OwnershipAssetsDimension=OwnedAssets]
 DisposalsDecreaseInAmortisationImpairmentIntangibleAssets	ns5	num	18	27	20		barnsley-fc: 3307386 [IntangibleAssetClassesDimension=PatentsTrademarksLicencesCon]
 DisposalsIntangibleAssets	ns5	num	18	27	20		barnsley-fc: 3508150 [IntangibleAssetClassesDimension=PatentsTrademarksLicencesCon]
@@ -223,6 +223,8 @@ InterestIncomeOnBankDeposits	core	num	15	29	6		bristol-rovers-fc: 1567
 NetCashFlowsFromUsedInFinancingActivities	ns5	num	15	29	4		barnsley-fc: -5176917
 ProceedsFromSalesIntangibleAssets	ns5	num	15	28	6		barnsley-fc: -2515744
 TaxIncreaseDecreaseFromEffectCapitalAllowancesDepreciation	core	num	15	30	8		burnley-fc: 262000 [GroupCompanyDataDimension=Consolidated]
+DescriptionMethodsUsedToAccountForInvestmentsInSubsidiariesAssociatesJointVenturesInSeparateFinancialStatements	core	text	14	14	0		ashton-united-fc: Interests in subsidiaries, associates and jointly controlled
+DescriptionMethodsUsedToAccountForInvestmentsInSubsidiariesInSeparateFinancialStatements	core	text	14	14	0		ashton-united-fc: A subsidiary is an entity controlled by the company
 EmployeeInformationFree-textComment	core	text	14	14	0		billericay-town-fc: 
 InvestmentsInSubsidiaries	core	num	14	51	33		bristol-city-fc: 7500000 [InvestmentsMovementsDimension=AdditionsToInvestments]
 ProceedsFromIssuingShares	ns5	num	14	27	4		barnsley-fc: -5987489
@@ -234,14 +236,13 @@ DescriptionEventAfterReportingDate	core	text	13	14	14		bristol-city-fc: Since th
 DescriptionNatureBusinessSubsidiary	core	text	13	26	25		bristol-city-fc: that of running a professional football club. [GroupCompanyDataDimension=Consolidated;SubsidiariesDimension]
 DirectorRemunerationBenefitsIncludingPaymentsToThirdParties	direp	num	13	25	0		blackpool-fc: 354193
 NameIndividualSegment	ns5	text	13	71	71		barnsley-fc: Football League distributions [OperatingSegmentsDimension=ReportableOperatingSegment1]
-DescriptionMethodsUsedToAccountForInvestmentsInSubsidiariesAssociatesJointVenturesInSeparateFinancialStatements	core	text	12	12	0		ashton-united-fc: Interests in subsidiaries, associates and jointly controlled
-DescriptionMethodsUsedToAccountForInvestmentsInSubsidiariesInSeparateFinancialStatements	core	text	12	12	0		ashton-united-fc: A subsidiary is an entity controlled by the company
 FurtherItemCreditorsComponentTotalCreditors	core	num	12	30	30		ipswich-town-fc: 517000 [FinancialInstrumentCurrentNon-currentDimension=Non-currentFi]
 NameEntityBankers	ns10	text	12	12	5		barnsley-fc: Barclays Bank Plc
 TaxationIncludingDeferredTaxationBalanceSheetSubtotal	frs-core	num	12	25	6		boreham-wood-fc: 12836
 AccountingStandardsAppliedMatchesTaxonomyEntry-pointTruefalse	frs-bus	text	11	11	0		avro-fc: true
 EndDateForPriorPeriod	frs-bus	text	11	11	0		avro-fc: 31 July 2024
 GainLossOnDisposalsPropertyPlantEquipment	ns5	num	11	23	6		barnsley-fc: 1667 [ExceptionalsDimension=Exceptional]
+InvestmentsInGroupUndertakingsParticipatingInterests	core	num	11	24	4		ebbsfleet-united-fc: 20
 Merchandise	ns5	num	11	22	2		chorley-fc: 4500
 StartDateForPriorPeriod	frs-bus	text	11	11	0		avro-fc: 8 June 2023
 CalledUpShareCapitalNotPaidNotExpressedAsCurrentAsset	uk-core	num	10	20	0		bromsgrove-rovers-fc: 100
@@ -263,7 +264,6 @@ FinancialLiabilities	core	num	9	23	21		bristol-city-fc: 2766251 [FinancialInstru
 GainLossOnDisposalAssetsIncomeStatementSubtotal	ns5	num	9	18	2		barnsley-fc: 1667
 IncomeTaxesPaidRefundClassifiedAsOperatingActivities	core	num	9	15	7		burnley-fc: 3685000 [GroupCompanyDataDimension=Consolidated]
 InvestmentEntitiesPolicy	core	text	9	9	1		bristol-city-fc: Investments in subsidiaries where fair value cannot be relia [GroupCompanyDataDimension=Consolidated]
-InvestmentsInGroupUndertakingsParticipatingInterests	core	num	9	20	4		northampton-town-fc: 1000
 OtherInterestExpense	core	num	9	18	1		coventry-city-fc: 2127397
 OtherInterestIncome	core	num	9	18	0		bristol-rovers-fc: 0
 ShareCapitalFree-textComment	ns5	text	9	9	0		gillingham-fc: Ordinary shares are non-redeemable and have full rights rela
@@ -316,10 +316,13 @@ BusinessCombinationsPolicy	core	text	5	5	0		oxford-city-fc: Business combination
 CompanyContributionsToMoneyPurchasePlansDirectors	ns20	num	5	16	8		barnsley-fc: 16250
 ConsolidationPolicy	core	text	5	5	1		bristol-city-fc: The consolidated financial statements consolidate the financ [GroupCompanyDataDimension=Consolidated]
 ContentOtherSpecificCriticalEstimateJudgement	ns5	text	5	5	5		gillingham-fc: In preparing these financial statements, the directors have  [X-OtherSpecificCriticalEstimateJudgementGroupingDimension=1]
+DescriptionMethodsUsedToAccountForInvestmentsInAssociatesInSeparateFinancialStatements	core	text	5	5	0		ashton-united-fc: An associate is an entity, being neither a subsidiary nor a 
+DescriptionMethodsUsedToAccountForInvestmentsInJointVenturesInSeparateFinancialStatements	core	text	5	5	0		ashton-united-fc: Entities in which the company has a long term interest and s
 DescriptionRelationshipsBetweenEntityParentsIncludingAnyChanges	core	text	5	5	0		burnley-fc: At the balance sheet date, the Company's immediate parent un
 FurtherItemDebtorsComponentTotalDebtors	core	num	5	20	20		plymouth-argyle-fc: 0 [FinancialInstrumentCurrentNon-currentDimension=CurrentFinanc]
 FurtherItemOperatingExpenseLossIncomeStatementItemComponentOperatingProfitLoss	core	num	5	11	11		oxford-united-fc: 593313 [ExceptionalsDimension=Exceptional;X-AnalysisDimension=1]
 GeneralDescriptionAnyOff-balanceSheetArrangementsIncludingNaturePurposeFinancialImpactOnEntity	core	text	5	5	0		afc-telford-united-fc: No
+GoingConcernCriticalEstimatesJudgements	ns5	text	5	5	0		dover-athletic-fc: The financial statements have been prepared on a going conce
 IncreaseDecreaseDueToTransfersBetweenClassesPropertyPlantEquipment	core	num	5	19	14		afc-telford-united-fc: 0
 IncreaseFromImpairmentLossRecognisedInProfitOrLossIntangibleAssets	d	num	5	7	6		burton-albion-fc: 257750 [IntangibleAssetClassesDimension=PatentsTrademarksLicencesCon]
 InterestExpenseOnLoanCapital	ns5	num	5	9	0		barnsley-fc: 0
@@ -327,6 +330,7 @@ InterestPaidClassifiedAsFinancingActivities	core	num	5	9	2		bristol-city-fc: -60
 InvestmentsInGroupUndertakings	ns5	num	5	15	6		lincoln-city-fc: 3
 JointVentureNotAccountedForUsingEquityMethodTruefalse	core	text	5	5	0		hemel-hempstead-town-fc: true
 KeyManagementPersonnelCompensationTotal	core	num	5	10	2		bristol-city-fc: 2386385 [GroupCompanyDataDimension=Consolidated]
+NameOrDescriptionRelatedPartyIfNotDefinedByAnotherTag	core	text	5	14	12		braintree-town-fc: During the year, monies were loaned to the Company by the Di
 RawMaterialsConsumables	core	num	5	10	2		bristol-city-fc: 139806 [GroupCompanyDataDimension=Consolidated]
 TaxIncreaseDecreaseFromEffectExpensesNotDeductibleForTaxPurposesOtherThanGoodwillAmortisationImpairment	d	num	5	10	0		burton-albion-fc: 699
 TotalCurrentTaxExpenseCredit	e	num	5	10	0		burton-albion-fc: -111929
@@ -336,7 +340,6 @@ DescriptionMattersGivingRiseToAnyModifiedAuditOpinion	aurep	text	4	4	0		cheltenh
 DescriptionWhyEntityNotGoing-concernOrUncertaintiesOverGoing-concernStatus	core	text	4	4	0		afc-whyteleafe-fc: The financial statements have been prepared on a going conce
 FurtherOperatingExpenseItemComponentTotalOperatingExpenses	ns5	num	4	10	10		barnsley-fc: 131039 [X-AnalysisDimension=11]
 GainLossOnRevaluationPropertyPlantEquipmentBeforeTaxInOtherComprehensiveIncome	core	num	4	5	2		afc-telford-united-fc: 0
-GoingConcernCriticalEstimatesJudgements	ns5	text	4	4	0		dover-athletic-fc: The financial statements have been prepared on a going conce
 ImpairmentLossIntangibleAssets	core	num	4	12	6		ipswich-town-fc: 0
 IncomeFromRelatedParties	core	num	4	26	26		bristol-city-fc: 15855247 [GroupCompanyDataDimension=Consolidated;RelatedPartiesDimensi]
 IncomeTaxExpenseCreditOnComponentsOtherComprehensiveIncome	core	num	4	23	18		ipswich-town-fc: 51000
@@ -361,12 +364,11 @@ ValuationFinancialInstrumentsPolicy	core	text	4	4	0		rochdale-fc: The company on
 AdministrationSupportAverageNumberEmployees	core	num	3	6	2		bristol-city-fc: 169 [GroupCompanyDataDimension=Consolidated]
 AmountsOwedToGroupUndertakingsParticipatingInterests	core	num	3	5	5		bury-fc: 20000 [MaturitiesOrExpirationPeriodsDimension=WithinOneYear]
 AmountsOwedToRelatedParties	core	num	3	8	8		bristol-city-fc: 488012 [FinancialInstrumentCurrentNon-currentDimension=CurrentFinanc]
+BalancesAmountsOwedByRelatedParties	core	num	3	22	22		bristol-city-fc: 2238973 [GroupCompanyDataDimension=Consolidated;RelatedPartiesDimensi]
 BankingArrangementsClassifiedAsCashCashEquivalents	core	num	3	6	6		nottingham-forest-fc: -11492000 [MaturitiesOrExpirationPeriodsDimension=WithinOneYear]
 ConvertibleBondsInIssue	core	num	3	6	6		dorking-wanderers-fc: 0 [FinancialInstrumentCurrentNon-currentDimension=Non-currentFi]
 CurrentAssetInvestments	core	num	3	6	0		darlington-fc: 0
 DescriptionFinancialCommitmentsOtherThanCapitalCommitments	ns5	text	3	3	0		leyton-orient-fc: The company has entered into an operating lease agreement fo
-DescriptionMethodsUsedToAccountForInvestmentsInAssociatesInSeparateFinancialStatements	core	text	3	3	0		ashton-united-fc: An associate is an entity, being neither a subsidiary nor a 
-DescriptionMethodsUsedToAccountForInvestmentsInJointVenturesInSeparateFinancialStatements	core	text	3	3	0		ashton-united-fc: Entities in which the company has a long term interest and s
 DescriptionReasonsForSpecificShareIssue	ns5	text	3	3	3		barrow-afc: for cash [EntityShareClassesDimension=OrdinaryShareClass1;X-Individual]
 ExceptionalItemsFree-textComment	ns5	text	3	3	0		barnsley-fc: Trading of intangible assets30.6.2431.5.23££Profit on player
 FinanceIncomeCostsPolicy	e	text	3	3	0		cambridge-united-fc: Finance costs are charged to profit or loss over the term of
@@ -385,7 +387,6 @@ InterestPaidToGroupUndertakings	core	num	3	6	0		oxford-united-fc: 83576
 InvestmentPropertyPolicy	e	text	3	3	0		cambridge-united-fc: Investment property is carried at fair value determined annu
 MinimumOperatingLeasePaymentsRecognisedAsExpense	core	num	3	6	2		bristol-city-fc: 63393 [GroupCompanyDataDimension=Consolidated]
 NameIndividualAuditor	aurep	text	3	3	0		reading-fc: David Hynes (Senior Statutory Auditor)
-NameOrDescriptionRelatedPartyIfNotDefinedByAnotherTag	core	text	3	4	2		braintree-town-fc: During the year, monies were loaned to the Company by the Di
 NominalValueSharesIssuedSpecificShareIssue	ns5	num	3	3	3		barrow-afc: 1 [EntityShareClassesDimension=OrdinaryShareClass1;X-Individual]
 NumberDirectorsAccruingBenefitsUnderMoneyPurchaseScheme	ns20	num	3	6	2		barnsley-fc: 2
 OtherRemainingOperatingExpense	d	num	3	6	0		burton-albion-fc: -15600
@@ -474,7 +475,6 @@ AmountsOwedToJointVentures	d	num	1	2	2		mansfield-town-fc: 210565 [FinancialInst
 AmountsOwedToParentEntities	core	num	1	2	2		hampton-and-richmond-borough-fc: 350601 [FinancialInstrumentCurrentNon-currentDimension=CurrentFinanc]
 AssetsAcquired	c	num	1	1	1		exeter-city-fc: 289211 [BusinessCombinationsDimension=SpecificBusinessCombination1]
 AssociatesAccountingConsolidationPolicy	core	text	1	1	1		bristol-city-fc:  [GroupCompanyDataDimension=Consolidated]
-BalancesAmountsOwedByRelatedParties	core	num	1	2	2		bristol-city-fc: 2238973 [GroupCompanyDataDimension=Consolidated;RelatedPartiesDimensi]
 CapitalisedBorrowingCostsRelatedToPropertyPlantEquipment	frs-core	num	1	2	2		morecambe-fc: 7031 [PropertyPlantEquipmentClassesDimension=MotorVehicles]
 CashCashEquivalentsAcquired	c	num	1	1	1		exeter-city-fc: 42811 [BusinessCombinationsDimension=SpecificBusinessCombination1]
 CashFlowsFromDisposalOrReductionInControlOverSubsidiariesOrOtherBusinesses	core	num	1	2	0		tranmere-rovers-fc: 1680
@@ -498,6 +498,7 @@ DescriptionNatureBusinessAssociate	core	text	1	1	1		bristol-city-fc: that of arc
 DescriptionSpecificBankLoanIncludingRateRepaymentDate	core	text	1	1	1		bristol-city-fc: The bank overdraft is denominated in sterling with a nominal [GroupCompanyDataDimension=Consolidated;X-MaterialBankLoanGro]
 DescriptionWhyAnEntityWithSubsidiariesHasNotPreparedGroupAccounts	direp	text	1	1	0		shrewsbury-town-fc: The company is exempt from the requirement to prepare consol
 DirectorsRemunerationFree-textComment	frs-direp	text	1	1	0		morecambe-fc: The number of directors for whom retirement benefits are acc
+DividendPolicy	core	text	1	1	0		ebbsfleet-united-fc: Equity instruments issued by the company are recorded at the
 DividendsPaid	ns5	num	1	2	1		gillingham-fc: 13460000
 DividendsPaidClassifiedAsFinancingActivities	ns5	num	1	2	0		gillingham-fc: -13460000
 DividendsPaidOnSharesInterim	ns5	num	1	2	2		gillingham-fc: 13460000 [EntityShareClassesDimension=OrdinaryShareClass1]

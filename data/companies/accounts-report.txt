@@ -1,14 +1,14 @@
-Club accounts read 2026-10-30
-Documents: 278 iXBRL, 101 PDF only
-INFO     filings index: 3101 accounts filings -> filings.tsv
-INFO     facts: 40519 from 278 documents read now, 0 kept from earlier runs -> facts/
+Club accounts read 2026-11-03
+Documents: 280 iXBRL, 101 PDF only
+INFO     filings index: 3118 accounts filings -> filings.tsv
+INFO     facts: 40857 from 280 documents read now, 0 kept from earlier runs -> facts/
 WARNING  101 filings are PDF only and carry no tagged figures
-INFO     rows: 351 club-seasons read from 278 documents
+INFO     rows: 353 club-seasons read from 280 documents
 INFO        full                   6
-INFO        small_company          206
-INFO        machine rows added     0
+INFO        small_company          207
+INFO        machine rows added     1
 INFO        machine rows rebuilt   212
-INFO        hand rows topped up    106
+INFO        hand rows topped up    107
 INFO        field                                   machine    hand+
 INFO        turnover                                      3        0
 INFO        staff_costs                                   1        0
@@ -16,34 +16,34 @@ INFO        operating_profit                              3        0
 INFO        profit_before_tax                             3        0
 INFO        profit_after_tax                              3        0
 INFO        interest_paid                                 3        0
-INFO        employees                                   200        0
-INFO        fixed_assets                                103        0
-INFO        intangible_assets                            31        0
-INFO        tangible_assets                             153        0
-INFO        current_assets                              192        0
-INFO        cash                                        166        0
-INFO        creditors_within_year                       176        0
-INFO        net_current_assets                          196        0
-INFO        total_assets_less_current_liabilities       184        0
+INFO        employees                                   201        1
+INFO        fixed_assets                                104        1
+INFO        intangible_assets                            31        1
+INFO        tangible_assets                             154        1
+INFO        current_assets                              193        1
+INFO        cash                                        167        1
+INFO        creditors_within_year                       177        1
+INFO        net_current_assets                          197        1
+INFO        total_assets_less_current_liabilities       185        1
 INFO        creditors_after_year                        126        0
-INFO        net_assets                                  209        0
-INFO        share_capital                               141        0
+INFO        net_assets                                  210        1
+INFO        share_capital                               142        1
 INFO        directors_pay                                 1        0
 INFO        amortisation                                  9        0
-INFO        debtors                                     163        0
-INFO        bank_loans                                   62        0
+INFO        debtors                                     164        1
+INFO        bank_loans                                   62        1
 INFO        owed_to_group                                25        0
-INFO        other_creditors                             113        0
-INFO        depreciation                                117        0
-INFO        tax_owed                                    116        0
+INFO        other_creditors                             114        1
+INFO        depreciation                                118        1
+INFO        tax_owed                                    117        1
 INFO        deferred_income                               8        0
 INFO        accruals_and_deferred_income                 38        0
-INFO        fixed_asset_additions                       107        0
-INFO        fixed_asset_cost                            117        0
-INFO        fixed_asset_depreciation                    122        0
+INFO        fixed_asset_additions                       108        1
+INFO        fixed_asset_cost                            118        1
+INFO        fixed_asset_depreciation                    123        1
 INFO        intangible_additions                          7        0
-INFO        accounts_type                               204        0
-INFO        audited                                     204        0
+INFO        accounts_type                               205        1
+INFO        audited                                     205        1
 INFO        going_concern                                 4        0
 INFO        pnl_withheld                                 82        0
 INFO     balance sheet check: 4 rows had a missing minus sign corrected, 9 do not add up and are flagged
@@ -71,17 +71,17 @@ INFO         southampton-fc 2025: row names ?, filing is Southampton Football Cl
 WARNING  1 documents gave no row:
 WARNING      avro-fc                      tagged, but nothing recognised in it - saw AccountingStandardsApplied, AccountsStatusAuditedOrUnaudited, AccountsType, BalanceSheetDate, CountryFormationOrIncorporation, DateAuthorisationFinancialStatementsForIssue, DescriptionPrincipalActivities, DirectorSigningFinancialStatements
 INFO     most common numeric concepts no field reads (see accounts-concepts.tsv):
-INFO          198 filings  TradeCreditorsTradePayables
-INFO          181 filings  TradeDebtorsTradeReceivables
-INFO          171 filings  OtherDebtors
+INFO          200 filings  TradeCreditorsTradePayables
+INFO          183 filings  TradeDebtorsTradeReceivables
+INFO          173 filings  OtherDebtors
 INFO          123 filings  TotalInventories
-INFO           99 filings  IntangibleAssetsGrossCost
-INFO           98 filings  AccumulatedAmortisationImpairmentIntangibleAssets
+INFO          100 filings  IntangibleAssetsGrossCost
+INFO           99 filings  AccumulatedAmortisationImpairmentIntangibleAssets
 INFO           91 filings  PrepaymentsAccruedIncome
 INFO           78 filings  OtherRemainingBorrowings
 INFO           74 filings  ParValueShare
 INFO           64 filings  NumberSharesIssuedFullyPaid
-INFO           60 filings  FutureMinimumLeasePaymentsUnderNon-cancellableOperatingLeases
+INFO           61 filings  FutureMinimumLeasePaymentsUnderNon-cancellableOperatingLeases
 INFO           53 filings  TaxTaxCreditOnProfitOrLossOnOrdinaryActivities
 INFO           47 filings  AdministrativeExpenses
 INFO           42 filings  OtherDisposalsIntangibleAssets
@@ -90,13 +90,13 @@ INFO           41 filings  FinishedGoodsGoodsForResale
 INFO           41 filings  OtherDisposalsDecreaseInAmortisationImpairmentIntangibleAssets
 INFO           41 filings  WagesSalaries
 INFO           40 filings  CostSales
+INFO           39 filings  InvestmentsFixedAssets
 INFO           38 filings  OtherInterestReceivableSimilarIncomeFinanceIncome
-INFO           37 filings  InvestmentsFixedAssets
 INFO           37 filings  PensionOtherPost-employmentBenefitCostsOtherPensionCosts
 INFO           35 filings  BankBorrowings
+INFO           35 filings  OtherDisposalsPropertyPlantEquipment
 INFO           35 filings  TaxExpenseCreditApplicableTaxRate
-INFO           34 filings  ComprehensiveIncomeExpense
-INFO     wrote 385 rows to club_finances.csv
+INFO     wrote 386 rows to club_finances.csv
 INFO     link check: filing document HTTP 200 - https://find-and-update.company-information.service.gov.uk/company/01287721/filing-history/MzUxMjk0MjMwN2FkaXF6a2N4/document?format=pdf&download=0
 INFO     link check: accounts list HTTP 200 - https://find-and-update.company-information.service.gov.uk/company/01287721/filing-history?category=accounts
 
@@ -128,6 +128,6 @@ INFO         tottenham-hotspur-fc__2              company: does not balance: I1,
 INFO         truro-city-fc__1                     plain: only 1 identity checkable
 INFO         truro-city-fc__2                     plain: only 1 identity checkable
 INFO           35 filings  BankBorrowings
+INFO           35 filings  OtherDisposalsPropertyPlantEquipment
 INFO           35 filings  TaxExpenseCreditApplicableTaxRate
-INFO           34 filings  ComprehensiveIncomeExpense
-INFO     wrote 385 rows to club_finances.csv
+INFO     wrote 386 rows to club_finances.csv
