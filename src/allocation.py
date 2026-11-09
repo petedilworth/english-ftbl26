@@ -286,6 +286,32 @@ def allocate(idx: dict, data: dict, born: datetime.date, names: dict[str, str] |
     }
 
 
+def match_on(data: dict, date: datetime.date, club: str) -> dict:
+    """
+    What a club did on the day itself: how many league matches were played
+    that day, and its own if it had one, as {home, opponent, f, a}. This is
+    where the notice's most quotable sentence comes from - "they lost 6-0
+    away to Crystal Palace that day" - so it is checked against the
+    matches table like everything else.
+    """
+    day = (date - _date(data["first"])).days
+    number = data["clubs"].index(club)
+    played, mine = 0, None
+    m = data["m"]
+    for k in range(0, len(m), 5):
+        when, home, away, hg, ag = m[k:k + 5]
+        if when > day:
+            break
+        if when != day:
+            continue
+        played += 1
+        if home == number:
+            mine = {"home": True, "opponent": data["clubs"][away], "f": hg, "a": ag}
+        if away == number:
+            mine = {"home": False, "opponent": data["clubs"][home], "f": ag, "a": hg}
+    return {"played": played, "match": mine}
+
+
 def process_date(idx: dict, born: datetime.date) -> datetime.date:
     """The date the process actually uses: the birth date, clamped into the record at both ends."""
     if born < _date(idx["epoch"]):

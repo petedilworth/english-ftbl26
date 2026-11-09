@@ -44,7 +44,7 @@ CARD = "#ffffff"
 INK = "#15181c"
 MUTED = "#5d6672"
 LINE = "#e6e1d6"
-SPOT = "#d4401f"      # vermillion: the present tense, wherever it appears
+SPOT = "#cc3a1a"      # vermillion: the present tense, wherever it appears
 LINK = "#1d4f91"
 
 

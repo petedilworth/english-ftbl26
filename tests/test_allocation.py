@@ -246,6 +246,39 @@ def test_the_first_day_of_the_record_and_one_ordinary_saturday(record):
     assert saturday["club"] == "birmingham-city-fc" and saturday["division"] == "Second Division"
 
 
+@needs_record
+def test_what_a_club_did_on_the_day_is_what_the_matches_table_says(record):
+    """
+    "They lost 6-0 away to Crystal Palace that day" is a claim about a real
+    match, read from the season file. Every match on a spread of days is
+    checked against the table the file was made from, from both sides.
+    """
+    conn, idx, _names, files = record
+    checked = 0
+    for season in (1959, 1977, 1987, 1996, 2004, 2020, idx["seasons"][-1][0]):
+        data = files[season]
+        days = [r[0] for r in conn.execute(
+            "SELECT DISTINCT match_date FROM matches WHERE season_end_year = ? AND tier <= 4 ORDER BY match_date",
+            (season,))]
+        for iso in days[::9]:
+            rows = conn.execute(
+                "SELECT home_club_id, away_club_id, fthg, ftag FROM matches"
+                " WHERE season_end_year = ? AND tier <= 4 AND match_date = ?", (season, iso)).fetchall()
+            for home, away, hg, ag in rows:
+                at_home = al.match_on(data, D.fromisoformat(iso), home)
+                away_day = al.match_on(data, D.fromisoformat(iso), away)
+                assert at_home == {"played": len(rows), "match": {"home": True, "opponent": away, "f": hg, "a": ag}}
+                assert away_day["match"] == {"home": False, "opponent": home, "f": ag, "a": hg}
+                checked += 1
+    assert checked > 500
+    # The one the README quotes.
+    saturday = al.match_on(files[1987], D(1987, 3, 14), "birmingham-city-fc")
+    assert saturday["match"] == {"home": False, "opponent": "crystal-palace-fc", "f": 0, "a": 6}
+    # A club with the day off, and a day with no football at all.
+    assert al.match_on(files[1987], D(1987, 3, 16), "birmingham-city-fc")["match"] is None
+    assert al.match_on(files[1987], D(1986, 12, 25), "birmingham-city-fc") == {"played": 0, "match": None}
+
+
 # ── The browser's copy ────────────────────────────────────────────────────
 
 NODE = shutil.which("node")
@@ -258,7 +291,9 @@ const out = read("dates.json").map(born => {
   const used = P.processDate(idx, born), season = P.seasonFor(idx, used);
   cache[season] = cache[season] || read(season + ".json");
   const a = P.allocate(idx, cache[season], born, names);
-  return [born, a.used, a.standIn, a.day, a.clubs, a.place, a.club, a.tier, a.position, a.row.points, a.row.played];
+  const on = P.matchOn(cache[season], a.used, cache[season].clubs.indexOf(a.club));
+  return [born, a.used, a.standIn, a.day, a.clubs, a.place, a.club, a.tier, a.position, a.row.points, a.row.played,
+          on.played, on.match];
 });
 process.stdout.write(JSON.stringify(out));
 """
@@ -278,9 +313,11 @@ def _both(tmp_path, idx, names, files, dates):
     theirs = json.loads(done.stdout)
     ours = []
     for born in dates:
-        a = al.allocate(idx, files[al.season_for(idx, al.process_date(idx, born))], born, names)
+        data = files[al.season_for(idx, al.process_date(idx, born))]
+        a = al.allocate(idx, data, born, names)
+        on = al.match_on(data, D.fromisoformat(a["used"]), a["club"])
         ours.append([a["born"], a["used"], a["stand_in"], a["day"], a["clubs"], a["place"], a["club"], a["tier"],
-                     a["position"], a["row"]["points"], a["row"]["played"]])
+                     a["position"], a["row"]["points"], a["row"]["played"], on["played"], on["match"]])
     return ours, theirs
 
 

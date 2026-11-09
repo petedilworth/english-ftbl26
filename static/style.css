@@ -19,7 +19,8 @@
   --muted: #5d6672;
   --line: #e6e1d6;
   --accent: #1d4f91;   /* links, and anything that can be pressed */
-  --spot: #d4401f;     /* vermillion: the present tense, wherever it appears */
+  --spot: #cc3a1a;     /* vermillion: the present tense, wherever it appears. 4.8:1 on the
+                          paper, so it can be small text as well as a headline. */
   --bg: #fbf9f4;
   --bg-soft: #ffffff;  /* cards sit on the paper like index cards */
   --up: #1a7f3c;
@@ -1304,7 +1305,7 @@ details.division .table-scroll { margin-top: 8px; }
   font: 600 20px/1 var(--sans); font-variant-numeric: tabular-nums; color: var(--ink);
   border: 1.5px solid var(--ink); border-radius: 8px; background: var(--bg);
 }
-.alloc-fields input::placeholder { color: #b9b4a8; font-weight: 400; }
+.alloc-fields input::placeholder { color: #a39d92; font-weight: 400; }
 .alloc-fields input:focus { outline: 3px solid #f6d5c8; border-color: var(--spot); }
 .alloc-year input { width: 4.5em; }
 .alloc-fields .btn { height: 48px; flex: 1 1 9em; }

@@ -380,7 +380,7 @@
       var tierNow = a && b ? a.tier + (b.tier - a.tier) * move : (a || b) ? (a || b).tier : null;
       if (tierNow != null) {
         sctx.beginPath(); sctx.arc(now, sy(tierNow), 4, 0, Math.PI * 2);
-        sctx.fillStyle = token("--spot", "#d4401f"); sctx.fill();
+        sctx.fillStyle = token("--spot", "#cc3a1a"); sctx.fill();
         sctx.lineWidth = 1.5; sctx.strokeStyle = PAPER; sctx.stroke();
       }
     }
