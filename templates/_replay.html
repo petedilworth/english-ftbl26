@@ -1,0 +1,30 @@
+{# The Replay, as a block any page can carry. The caller sets
+   replay_follow (a club id), replay_from (a season by the year it ended),
+   replay_hash (keep the view in the URL), replay_loop and replay_yours
+   (follow the visitor's assigned club) before including this; all are
+   optional. static/replay.js does the rest, and a page with
+   the script switched off keeps the sentence and the link to the Matrix. #}
+<section class="replay" id="{{ replay_id | default('replay') }}" data-src="{{ root }}/data/pyramid.json" data-root="{{ root }}"{% if replay_follow %} data-follow="{{ replay_follow }}"{% endif %}{% if replay_from %} data-from="{{ replay_from }}"{% endif %}{% if replay_hash %} data-hash{% endif %}{% if replay_loop %} data-loop{% endif %}{% if replay_yours %} data-yours{% endif %}>
+  <div class="replay-head">
+    <span class="replay-year">{{ replay_first_label }}</span>
+    <p class="replay-caption">Every club in the record, {{ replay_first_label }} to {{ replay_last_label }}.</p>
+  </div>
+  <canvas class="replay-canvas" role="img" aria-label="Every club in the record as a dot in its kit colours, arranged by tier and league position, moving season by season."></canvas>
+  <div class="replay-controls">
+    <button class="replay-play" type="button" aria-label="Play" aria-pressed="false"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path class="icon-play" d="M8 5.5v13l11-6.5z"/><path class="icon-pause" d="M7 5h4v14H7zm6 0h4v14h-4z"/></svg></button>
+    <div class="replay-track">
+      {# The followed club's tiers, drawn above the slider it shares an axis with. #}
+      <canvas class="replay-strip" aria-hidden="true"></canvas>
+      <span class="replay-hint">Tap a dot to follow one club.</span>
+      <input class="replay-scrub" type="range" min="0" max="1" value="0" aria-label="Season">
+    </div>
+    <button class="replay-speed" type="button" aria-label="Speed: 1×">1×</button>
+  </div>
+  <div class="replay-follow">
+    <input class="replay-find search-input" type="search" list="{{ replay_id | default('replay') }}-clubs" placeholder="Follow a club…" autocomplete="off" aria-label="Follow a club">
+    <datalist class="replay-clubs" id="{{ replay_id | default('replay') }}-clubs"></datalist>
+    <button class="chip replay-clear" type="button" hidden>Stop following</button>
+    <a class="replay-club-link" href="#" hidden></a>
+  </div>
+  <noscript><p class="home-note">This is an animation and needs JavaScript. <a href="{{ root }}/matrix/index.html">The Matrix</a> is the same record as a table.</p></noscript>
+</section>

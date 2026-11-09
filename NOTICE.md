@@ -7,6 +7,12 @@ Three kinds of thing live in this repository, under three kinds of terms.
 Everything that runs: `src/`, `scripts/`, `templates/`, `static/`, `tests/`
 and `.github/`. Reuse it under the MIT licence in [`LICENSE`](LICENSE).
 
+One file in `static/` is not this project's: the headline typeface,
+`static/fonts/newsreader-display.woff2`, is Newsreader by Production Type,
+cut down to one optical size and the Latin alphabet. It is under the SIL
+Open Font License 1.1, whose text sits beside it in
+[`static/fonts/OFL.txt`](static/fonts/OFL.txt).
+
 ## The writing and research – CC BY 4.0
 
 The club stories and their facts (`content/*.md`), the insight essays
@@ -15,10 +21,12 @@ ownership research (`content/grounds.yml`), the dislike research
 (`content/hatred.yml`), the points-deduction record (`points_deductions.csv`),
 the club accounts table (`club_finances.csv`), the takeover research
 (`club_prospects.csv`, `docs/`) and the archived emails (`content/digests/`)
-are licensed under
+and the images of the site in `docs/img/` are licensed under
 [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/).
-Reuse them with credit to "English Football History
-(github.com/petedilworth/english-ftbl26)" and a link to the licence. Every
+Reuse them with credit to "As It Stands
+(github.com/petedilworth/english-ftbl26)" and a link to the licence. The
+project was called "English Football History" until November 2026; a credit
+given under that name stands. Every
 source those files cite keeps its own terms; the licence covers this
 project's words and arrangement, not the facts or pages behind them.
 

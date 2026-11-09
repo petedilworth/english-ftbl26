@@ -10,20 +10,48 @@
   </div>
   <div class="hero-card">
     <div class="kit"><span style="background: {{ hero.colour or '#888' }}"></span><span style="background: {{ hero.colour2 or '#ddd' }}"></span></div>
+    {# The fall, drawn as it is read: the line runs from the title to the present and the last dot lands when it gets there. #}
     <svg viewBox="0 0 {{ hero.spark.w }} {{ hero.spark.h }}" role="img" aria-label="{{ hero.name }}'s tier each season from {{ hero.first - 1 }}/{{ "%02d" % (hero.first % 100) }} to {{ current_label }}">
-      {% for t, y in hero.spark.grid %}<line x1="20" y1="{{ y }}" x2="{{ hero.spark.w - 10 }}" y2="{{ y }}" stroke="#eef1f4"></line><text x="14" y="{{ y + 4 }}" font-size="10" fill="#6b7683" text-anchor="end">{{ t }}</text>{% endfor %}
-      <text x="20" y="{{ hero.spark.h - 4 }}" font-size="10" fill="#6b7683">{{ hero.first - 1 }}/{{ "%02d" % (hero.first % 100) }}</text>
-      <text x="{{ hero.spark.w - 10 }}" y="{{ hero.spark.h - 4 }}" font-size="10" fill="#6b7683" text-anchor="end">{{ current_label }}</text>
-      <polyline fill="none" stroke="#eb6834" stroke-width="2.5" stroke-linejoin="round" points="{{ hero.spark.line }}"></polyline>
-      {% if hero.spark.start %}<circle cx="{{ hero.spark.start[0] }}" cy="{{ hero.spark.start[1] }}" r="3.5" fill="#17202a"></circle>{% endif %}
-      {% if hero.spark.end %}<circle cx="{{ hero.spark.end[0] }}" cy="{{ hero.spark.end[1] }}" r="3.5" fill="#eb6834"></circle>{% endif %}
+      {% for t, y in hero.spark.grid %}<line class="spark-grid" x1="20" y1="{{ y }}" x2="{{ hero.spark.w - 10 }}" y2="{{ y }}"></line><text class="spark-label" x="14" y="{{ y + 4 }}" text-anchor="end">{{ t }}</text>{% endfor %}
+      <text class="spark-label" x="20" y="{{ hero.spark.h - 4 }}">{{ hero.first - 1 }}/{{ "%02d" % (hero.first % 100) }}</text>
+      <text class="spark-label" x="{{ hero.spark.w - 10 }}" y="{{ hero.spark.h - 4 }}" text-anchor="end">{{ current_label }}</text>
+      <polyline class="spark-line" pathLength="1" points="{{ hero.spark.line }}"></polyline>
+      {% if hero.spark.start %}<circle class="spark-start" cx="{{ hero.spark.start[0] }}" cy="{{ hero.spark.start[1] }}" r="3.5"></circle>{% endif %}
+      {% if hero.spark.end %}<circle class="spark-end" cx="{{ hero.spark.end[0] }}" cy="{{ hero.spark.end[1] }}" r="3.5"></circle>{% endif %}
     </svg>
     {% if hero.form %}<div class="hero-form">Last {{ hero.form | length }}: <span class="form">{% for r in hero.form %}<i class="f-{{ r | lower }}">{{ r }}</i>{% endfor %}</span> · {{ hero.points_now }} pts from {{ hero.played }}</div>{% endif %}
   </div>
 </section>
 {% else %}
-<h1>English Football History</h1>
+<h1>{{ brand.name }}</h1>
 <p class="subtitle">Standings, stories and trajectories across Tiers 1–7 — the top five from 1958/59, the sixth and seventh from 2012/13.</p>
+{% endif %}
+
+{% if has_allocation %}
+{# The way in for someone with no club: one date, and the site is about them.
+   The form hands the date to the allocation page rather than running here. #}
+<section class="home-alloc" aria-labelledby="home-alloc-title">
+  <div class="home-alloc-text">
+    <p class="kicker">No club of your own</p>
+    <h2 id="home-alloc-title">A club will be assigned. <span class="hero-now">There is no appeals process.</span></h2>
+    <p>Give a date of birth. The process finds the league table as it stood that day and hands over one of its ninety-two clubs, with everything that has happened to it since.</p>
+  </div>
+  {% set alloc_go = root ~ "/allocation/index.html" %}
+  {% include "_allocate_form.html" %}
+</section>
+{% endif %}
+
+{% if has_replay %}
+<h2 class="band">The whole pyramid, {{ replay_first_label }} to now</h2>
+<p class="band-sub">Every club in the record as a dot in its own colours; a row is a tier and left is top. Tap a dot to follow it. <a href="{{ root }}/replay/index.html">The Replay, full size →</a></p>
+{% set replay_loop = true %}
+{% set replay_yours = true %}
+{% include "_replay.html" %}
+{% if journeys %}
+<div class="chip-row map-chips journey-chips">
+  {% for j in journeys %}<a class="chip" href="{{ root }}/replay/index.html#c={{ j.club_id }}&amp;y={{ j.from }}" data-replay-club="{{ j.club_id }}" data-replay-from="{{ j.from }}">{{ j.tag }}: {{ j.name }}</a>{% endfor %}
+</div>
+{% endif %}
 {% endif %}
 
 {% if week %}
@@ -83,6 +111,7 @@
 <p class="explore">
   <a href="{{ root }}/teams/index.html">Browse all {{ team_count }} clubs</a> ·
   <a href="{{ root }}/compare/index.html">Compare two clubs</a> ·
+  {% if has_replay %}<a href="{{ root }}/replay/index.html">The Replay</a> · {% endif %}
   <a href="{{ root }}/matrix/index.html">The Matrix</a> ·
   {% if has_map %}<a href="{{ root }}/map/index.html">Groundhop Map</a> · {% endif %}
   <a href="{{ root }}/seasons/index.html">{{ season_count }} seasons</a> ·
@@ -92,4 +121,7 @@
 </p>
 
 <script src="{{ root }}/static/home-search.js"></script>
+{% if has_replay %}<script src="{{ root }}/static/replay.js"></script>{% endif %}
+{% if has_allocation %}<script src="{{ root }}/static/allocation-process.js"></script>
+<script src="{{ root }}/static/allocation.js"></script>{% endif %}
 {% endblock %}

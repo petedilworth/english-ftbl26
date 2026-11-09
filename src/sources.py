@@ -187,6 +187,12 @@ PAGES = [
         ("Themes", "themes/index.html", ["club-facts", "deductions", "finances"] + RESULTS[:2], ""),
     ]),
     ("Maps and grids", [
+        ("The Replay", "replay/index.html", RESULTS + ["wikipedia-clubs", "fa-nls"],
+         "Every club-season in the record, in the clubs' kit colours."),
+        ("The allocation", "allocation/index.html",
+         ["football-data", "engsoccerdata", "deductions", "wikipedia-clubs", "models"],
+         "The league table on any day since 23 August 1958, worked out from dated results in the top four "
+         "divisions. The date of birth it is given stays in the browser."),
         ("The Matrix", "matrix/index.html", RESULTS, ""),
         ("Groundhop Map", "map/index.html", ["wikipedia-clubs", "ons-geography", "osm"] + RESULTS[:2],
          "Clubs without a surveyed ground are placed at their town's population centre."),

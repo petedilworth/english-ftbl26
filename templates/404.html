@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<p class="kicker">404</p>
+<h1 class="alloc-title">This page is not in the record. <span class="hero-now">Which is noted.</span></h1>
+<p class="subtitle">The record begins on {{ epoch_label }} and has no row for this address. It may have moved when the site was rebuilt, or it may never have existed.</p>
+<p class="notice-actions" style="padding: 0">
+  <a class="btn btn-primary" href="{{ root }}/index.html">The front page</a>
+  <a class="btn" href="{{ root }}/teams/index.html">Find a club</a>
+  {% if has_allocation %}<a class="btn" href="{{ root }}/allocation/index.html">Be assigned one</a>{% endif %}
+</p>
+{% endblock %}

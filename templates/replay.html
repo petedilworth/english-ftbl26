@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>The Replay</h1>
+<p class="subtitle">{{ season_count }} seasons, {{ club_count }} clubs, and every one of them a dot in its own colours. A row is a tier and left is top. Press play, or tap a dot to follow one club through all of it.</p>
+
+{% set replay_hash = true %}
+{% include "_replay.html" %}
+
+{% if journeys %}
+<h2 class="band">Journeys worth following</h2>
+<p class="band-sub">Picked by the record, not by hand: the furthest anyone has fallen, climbed, or gone and come back.</p>
+<div class="journeys">
+  {% for j in journeys %}
+  <a class="journey" href="#c={{ j.club_id }}&amp;y={{ j.from }}" data-replay-club="{{ j.club_id }}" data-replay-from="{{ j.from }}">
+    <span class="tag">{{ j.tag }}</span>
+    <strong>{{ j.name }}</strong>
+    <span class="journey-sub">{{ j.sub }}</span>
+  </a>
+  {% endfor %}
+</div>
+{% endif %}
+
+<h2 class="band">How to read it</h2>
+<ul class="replay-notes">
+  <li>Each band is a level of the pyramid, the top flight first. Its name is the name it had that season: the First Division becomes the Premier League in 1992/93.</li>
+  <li>Inside a band the clubs are in table order, first place on the left. Where a level is several divisions wide it is ranked across all of them on points, as <a href="{{ root }}/matrix/index.html">the Matrix</a> does.</li>
+  <li>A dot that changes band is ringed green on the way up and red on the way down.</li>
+  <li>The lower bands are empty in the early years because the record does not reach them, not because nobody played. <a href="{{ root }}/insights/coverage/index.html">What this site knows</a> says where it stops.</li>
+  <li>The same record as a table: <a href="{{ root }}/matrix/index.html">the Matrix</a>.{% if has_map %} On a map: <a href="{{ root }}/map/index.html">the Groundhop Map</a>.{% endif %}</li>
+</ul>
+
+<script src="{{ root }}/static/hash-state.js"></script>
+<script src="{{ root }}/static/replay.js"></script>
+{% endblock %}

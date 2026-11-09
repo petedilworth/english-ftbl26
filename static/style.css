@@ -1,10 +1,27 @@
+/* The display face: Newsreader, by Production Type, under the SIL Open
+   Font License (static/fonts/OFL.txt). One file, 39 KB: the optical size
+   is pinned at 48pt because this face is only ever a headline here, and
+   carrying the whole optical-size axis for body sizes nobody sets cost
+   three times the bytes. Weights 400 to 800 are all in it. swap, so a slow
+   connection reads the headline in the fallback instead of waiting. */
+@font-face {
+  font-family: "Newsreader Display";
+  src: url("fonts/newsreader-display.woff2") format("woff2");
+  font-weight: 400 800;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  --ink: #17202a;
-  --muted: #6b7683;
-  --line: #e4e8ec;
-  --accent: #1a5c9a;
-  --bg: #ffffff;
-  --bg-soft: #f6f8fa;
+  /* Paper, ink and one spot colour. src/brand.py holds the same values
+     for the link preview cards, and a test keeps the two in step. */
+  --ink: #15181c;
+  --muted: #5d6672;
+  --line: #e6e1d6;
+  --accent: #1d4f91;   /* links, and anything that can be pressed */
+  --spot: #d4401f;     /* vermillion: the present tense, wherever it appears */
+  --bg: #fbf9f4;
+  --bg-soft: #ffffff;  /* cards sit on the paper like index cards */
   --up: #1a7f3c;
   --down: #b3261e;
   --story: #8a3ffc;   /* theme event markers — distinct from promotion/relegation */
@@ -25,31 +42,77 @@
   --tier-6: #6d4c41;
   --tier-7: #546e7a;
   --tier-out: #9aa3ab;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --serif: "Newsreader Display", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  --shadow: 0 1px 2px rgba(21, 24, 28, 0.04), 0 4px 14px rgba(21, 24, 28, 0.05);
 }
 
 * { box-sizing: border-box; }
 
+/* Moving between pages cross-fades instead of flashing white, where the
+   browser can do it. Nothing depends on it. */
+@view-transition { navigation: auto; }
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; }
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: var(--sans);
   color: var(--ink);
   background: var(--bg);
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
+
+::selection { background: #f6d5c8; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.skip-link {
+  position: absolute; left: 8px; top: -48px; z-index: 1000;
+  background: var(--ink); color: var(--bg); padding: 8px 12px; border-radius: 6px;
+  font-size: 14px; text-decoration: none;
+}
+.skip-link:focus { top: 8px; }
 
 .site-header {
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
-  gap: 12px 20px;
-  padding: 14px 16px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 20px;
+  padding: 12px 16px;
   border-bottom: 1px solid var(--line);
+  background: var(--bg);
 }
-.brand { font-weight: 700; font-size: 17px; color: var(--ink); text-decoration: none; }
-.site-header nav { display: flex; gap: 16px; flex-wrap: wrap; align-items: baseline; }
-.site-header nav a { color: var(--muted); text-decoration: none; font-size: 14px; }
-.site-header nav a:hover { color: var(--accent); }
+.brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; }
+.brand-mark { display: block; flex: 0 0 auto; }
+.brand-name { font-family: var(--serif); font-weight: 750; font-size: 22px; letter-spacing: -0.015em; line-height: 1; white-space: nowrap; }
+.brand-stop { color: var(--spot); }
+.site-header nav { display: flex; gap: 4px 18px; flex-wrap: wrap; align-items: center; }
+.site-header nav a { color: var(--muted); text-decoration: none; font-size: 14px; padding: 6px 0; }
+.site-header nav a:hover { color: var(--ink); }
+/* The visitor's own club, once the process has assigned one: nav.js swaps
+   the label for the club's name and sets the two kit colours. */
+.site-header nav a.nav-club {
+  color: var(--ink); font-weight: 600; white-space: nowrap;
+  display: inline-block; max-width: 11.5em; overflow: hidden; text-overflow: ellipsis; vertical-align: bottom;
+}
+.nav-club::before {
+  content: ""; display: inline-block; width: 9px; height: 9px; border-radius: 50%;
+  margin-right: 6px; vertical-align: 0;
+  background: linear-gradient(90deg, var(--club-a, var(--spot)) 50%, var(--club-b, var(--spot)) 50%);
+  box-shadow: 0 0 0 1px rgba(21, 24, 28, 0.25);
+}
+.nav-narrow { display: none; }
+@media (max-width: 620px) {
+  .site-header { padding: 10px 16px 6px; }
+  .site-header nav { width: 100%; justify-content: space-between; gap: 4px 14px; }
+  .nav-wide { display: none; }
+  .nav-narrow { display: block; }
+}
 
 /* "Browse" disclosure — the one-dimensional index pages, kept a click away
    so the header leads with the views that actually get used. */
@@ -59,38 +122,45 @@ body {
   cursor: pointer;
   color: var(--muted);
   font-size: 14px;
+  padding: 6px 0;
 }
 .nav-more > summary::-webkit-details-marker { display: none; }
 .nav-more > summary::after { content: " ›"; display: inline-block; transform: rotate(90deg); }
 .nav-more[open] > summary,
-.nav-more > summary:hover { color: var(--accent); }
+.nav-more > summary:hover { color: var(--ink); }
 .nav-more-menu {
   position: absolute;
   right: 0;
-  top: calc(100% + 8px);
-  z-index: 20;
+  top: calc(100% + 6px);
+  z-index: 600;   /* above the compare page's sticky strip and the map */
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  min-width: 140px;
-  padding: 12px 14px;
-  background: var(--bg);
+  gap: 2px;
+  min-width: 160px;
+  padding: 8px 14px;
+  background: var(--bg-soft);
   border: 1px solid var(--line);
-  border-radius: 8px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
 }
+.site-header .nav-more-menu a { padding: 7px 0; font-size: 15px; }
 
 main { max-width: 860px; margin: 0 auto; padding: 20px 16px 48px; }
 /* Pages whose content is inherently wide (the matrix) opt out of the
    reading-width cap rather than being squeezed into it. */
 main.wide { max-width: none; }
 
-h1 { font-size: 26px; margin: 8px 0 4px; }
-h2 { font-size: 19px; margin: 28px 0 8px; }
+/* Headlines are set in the serif, like a broadsheet's; everything that is
+   a label, a figure or a control stays in the sans. h3 stays sans too: on
+   these pages it is usually a card's title, and a card is a control. */
+h1, h2 { font-family: var(--serif); letter-spacing: -0.012em; text-wrap: balance; font-synthesis: none; }
+h1 { font-size: 34px; font-weight: 700; line-height: 1.1; margin: 10px 0 6px; }
+h2 { font-size: 23px; font-weight: 650; line-height: 1.2; margin: 30px 0 8px; }
 h3 { font-size: 16px; margin: 20px 0 6px; }
-.subtitle { color: var(--muted); margin: 0 0 16px; font-size: 14px; }
+.subtitle { color: var(--muted); margin: 0 0 16px; font-size: 15px; max-width: 68ch; }
 
-a { color: var(--accent); }
+a { color: var(--accent); text-underline-offset: 2px; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
 
 table.standings {
   width: 100%;
@@ -166,12 +236,14 @@ table.standings tr.status-relegated, table.standings tr.status-play-off-relegate
   padding: 6px 0 6px 14px;
   margin-bottom: 8px;
 }
-.club-header h1 { margin: 0; }
-.nickname { color: var(--muted); font-weight: 400; font-style: italic; font-size: 0.65em; }
+.club-header h1 { margin: 0; font-size: clamp(32px, 7vw, 44px); font-weight: 800; }
+/* In the sans: the headline face has no italic, and a slanted roman is not one. */
+.nickname { color: var(--muted); font-family: var(--sans); font-weight: 400; font-style: italic; font-size: 0.5em; letter-spacing: 0; }
 
 .stat-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  /* 150px, not 130: "Championship" is a value here, and at 130 it ran into the card's edge. */
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 10px;
   margin: 14px 0;
 }
@@ -569,7 +641,8 @@ table.matrix.compact .matrix-highlight {
 .distance-panel { margin-top: 16px; }
 
 @media (max-width: 540px) {
-  h1 { font-size: 22px; }
+  h1 { font-size: 28px; }
+  h2 { font-size: 21px; }
   table.standings { font-size: 12px; }
   table.standings th, table.standings td { padding: 5px 6px; }
 }
@@ -1041,20 +1114,58 @@ tr.wages-over td:nth-child(7) { font-weight: 600; }
 @media (max-width: 700px) { .giants-speed td { white-space: normal; } .giants-bar { display: none; } }
 
 /* Home: the hero sentence, this week's lines, the collapsed divisions */
-.hero { display: grid; grid-template-columns: minmax(0, 1fr) 260px; gap: 24px; align-items: end; padding: 6px 0 22px; border-bottom: 1px solid var(--line); margin-bottom: 8px; }
-.hero .kicker { font-size: 11px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
-.hero-line { font-size: clamp(24px, 4vw, 38px); line-height: 1.15; font-weight: 400; letter-spacing: -.01em; margin: 0; text-wrap: balance; }
+.hero { display: grid; grid-template-columns: minmax(0, 1fr) 260px; gap: 24px; align-items: end; padding: 10px 0 24px; border-bottom: 1px solid var(--line); margin-bottom: 8px; }
+.kicker { font-size: 11px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin: 0 0 8px; }
+.hero-line { font-size: clamp(31px, 6.6vw, 54px); line-height: 1.04; font-weight: 400; letter-spacing: -.018em; margin: 0; text-wrap: balance; }
 .hero-line a { color: var(--ink); font-weight: 800; text-decoration: none; }
-.hero-line a:hover { text-decoration: underline; }
-.hero-line .hero-now { color: #c4521f; }
-.hero-sub { color: var(--muted); font-size: 14px; margin: 10px 0 0; }
-.hero-card { border: 1px solid var(--line); border-radius: 8px; overflow: hidden; min-width: 0; }
-.hero-card .kit { height: 7px; display: grid; grid-template-columns: 1fr 1fr; }
+.hero-line a:hover { text-decoration: underline; text-decoration-thickness: 2px; }
+.hero-now { color: var(--spot); }
+.hero-sub { color: var(--muted); font-size: 15px; margin: 12px 0 0; max-width: 46ch; }
+.hero-card { border: 1px solid var(--line); border-radius: 10px; overflow: hidden; min-width: 0; background: var(--bg-soft); box-shadow: var(--shadow); }
+.hero-card .kit { height: 8px; display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid var(--line); }
 .hero-card svg { width: 100%; height: auto; display: block; padding: 8px 8px 0; }
+.spark-grid { stroke: var(--line); }
+.spark-label { font-size: 10px; fill: var(--muted); }
+.spark-start { fill: var(--ink); }
+.spark-end { fill: var(--spot); }
+.spark-line { fill: none; stroke: var(--spot); stroke-width: 2.5; stroke-linejoin: round; stroke-linecap: round; }
+/* The line draws itself once, left to right, and the last dot lands as it
+   arrives. pathLength="1" on the polyline is what lets one rule do this
+   for a line of any length. */
+@media (prefers-reduced-motion: no-preference) {
+  .spark-line { stroke-dasharray: 1; stroke-dashoffset: 1; animation: spark-draw 1.5s 0.35s cubic-bezier(0.6, 0, 0.3, 1) forwards; }
+  .spark-end { transform-box: fill-box; transform-origin: center; transform: scale(0); animation: spark-land 0.35s 1.75s cubic-bezier(0.2, 1.6, 0.4, 1) forwards; }
+}
+@keyframes spark-draw { to { stroke-dashoffset: 0; } }
+@keyframes spark-land { to { transform: scale(1); } }
 .hero-form { font-size: 12px; color: var(--muted); padding: 4px 12px 10px; }
 .form i { font-style: normal; font-weight: 700; letter-spacing: .08em; }
 .form .f-w { color: var(--up); } .form .f-l { color: var(--down); }
-@media (max-width: 640px) { .hero { grid-template-columns: minmax(0, 1fr); } .hero-card { max-width: 320px; } }
+/* On a phone the card lies on its side - the line on the left, the form
+   beside it - because the date-of-birth boxes below have to be on the
+   first screen, and a tall card was what pushed them off it. */
+@media (max-width: 640px) {
+  .hero { grid-template-columns: minmax(0, 1fr); gap: 14px; padding: 6px 0 16px; }
+  .hero-card { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); align-items: center; }
+  .hero-card .kit { grid-column: 1 / -1; height: 6px; }
+  .hero-card svg { padding: 6px 0 4px 6px; }
+  .hero-form { padding: 4px 10px 4px 8px; line-height: 1.5; }
+  .hero-sub { font-size: 14px; margin-top: 10px; }
+}
+
+/* Home: the allocation, as a box of its own directly under the hero. */
+.home-alloc { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 8px 28px; align-items: center; padding: 22px 0 20px; border-bottom: 1px solid var(--line); }
+.home-alloc h2 { font-size: clamp(24px, 4.6vw, 32px); font-weight: 400; line-height: 1.1; margin: 0 0 8px; }
+.home-alloc-text p:last-child { color: var(--muted); font-size: 15px; margin: 0; max-width: 44ch; }
+.home-alloc .alloc-form { margin: 0; }
+@media (max-width: 720px) {
+  .home-alloc { grid-template-columns: minmax(0, 1fr); padding: 16px 0 18px; }
+  .home-alloc .alloc-form { margin-top: 4px; }
+  /* The form says what it wants; the paragraph is for a screen with room. */
+  .home-alloc-text p:last-child { display: none; }
+  .home-alloc h2 { margin-bottom: 4px; }
+}
+.journey-chips { margin-top: 2px; }
 
 h2.band { margin: 26px 0 2px; }
 .band-sub { color: var(--muted); font-size: 14px; margin: 0 0 12px; }
@@ -1102,3 +1213,173 @@ details.division .table-scroll { margin-top: 8px; }
 .money-tier-n { font-weight: 400; color: var(--muted); font-size: 13px; margin-left: 6px; }
 .money-strip { overflow-x: auto; }
 .money-strip svg { min-width: 640px; }
+
+/* ── The Replay ───────────────────────────────────────────────────────────
+   The canvas is drawn by static/replay.js; everything a person presses or
+   reads is ordinary markup around it. Controls are 44px because the page
+   is opened from a link on a phone more often than anywhere else. */
+.replay { margin: 14px 0 10px; }
+.replay-head { display: flex; align-items: baseline; gap: 6px 14px; margin-bottom: 6px; }
+.replay-year {
+  font-family: var(--serif); font-weight: 800; font-size: 38px; line-height: 1; letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums lining-nums; min-width: 5.3ch;
+}
+/* Always two lines tall, whatever it says. When its height followed its
+   length the whole pyramid moved down a line each time the champions had
+   a long name: Arsenal, then Wolverhampton Wanderers, then Arsenal again. */
+.replay-caption { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.45; min-height: 2.9em; flex: 1 1 auto; min-width: 0; }
+@media (max-width: 640px) { .replay-head { flex-direction: column; gap: 4px; } }
+.replay.is-following .replay-caption { color: var(--ink); font-weight: 600; }
+.replay-canvas { display: block; width: 100%; height: 280px; touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
+.replay-controls { display: flex; align-items: flex-end; gap: 10px; margin-top: 2px; }
+.replay-track { position: relative; flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; }
+.replay-strip { display: block; width: 100%; height: 34px; }
+.replay-hint { position: absolute; left: 0; right: 0; top: 9px; text-align: center; font-size: 12.5px; color: var(--muted); pointer-events: none; }
+.replay-hint[hidden] { display: none; }
+.replay-play {
+  flex: 0 0 auto; width: 44px; height: 44px; border-radius: 50%; border: 0; padding: 0;
+  display: grid; place-items: center; cursor: pointer;
+  background: var(--ink); color: var(--bg);
+}
+.replay-play:hover { background: var(--spot); }
+.replay-play svg { fill: currentColor; display: block; }
+.replay .icon-pause, .replay.is-playing .icon-play { display: none; }
+.replay.is-playing .icon-pause { display: block; }
+.replay-scrub { flex: 1 1 auto; min-width: 0; height: 44px; margin: 0; accent-color: var(--spot); cursor: pointer; }
+.replay-speed {
+  flex: 0 0 auto; min-width: 48px; height: 36px; margin-bottom: 4px; border: 1px solid var(--line); border-radius: 999px;
+  background: var(--bg-soft); color: var(--ink); font-weight: 600; font-size: 13px; cursor: pointer;
+}
+.replay-follow { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; margin-top: 6px; font-size: 14px; }
+.replay-find.search-input { margin: 0; max-width: 250px; padding: 9px 12px; }
+.replay.is-broken .replay-canvas, .replay.is-broken .replay-controls, .replay.is-broken .replay-follow { display: none; }
+.replay.is-broken .replay-caption::after { content: " The animation could not be loaded."; }
+.replay-notes { padding-left: 1.2em; max-width: 68ch; font-size: 15px; }
+.replay-notes li { margin: 6px 0; }
+
+.journeys { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; margin: 0 0 8px; }
+.journey {
+  display: flex; flex-direction: column; gap: 3px; padding: 12px 14px; min-width: 0;
+  border: 1px solid var(--line); border-radius: 10px; background: var(--bg-soft);
+  color: var(--ink); text-decoration: none;
+}
+.journey:hover { border-color: var(--ink); }
+.journey .tag { font-size: 10.5px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--spot); }
+.journey strong { font-family: var(--serif); font-size: 19px; font-weight: 700; line-height: 1.15; }
+.journey-sub { font-size: 13px; color: var(--muted); }
+
+/* Buttons: the few things on the site that do something rather than go
+   somewhere. 44px tall, because a thumb is. */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 18px;
+  border: 1.5px solid var(--ink); border-radius: 999px; background: transparent; color: var(--ink);
+  font: 600 15px/1 var(--sans); cursor: pointer; text-decoration: none; white-space: nowrap;
+}
+.btn:hover { background: var(--ink); color: var(--bg); }
+.btn-primary { background: var(--ink); color: var(--bg); }
+.btn-primary:hover { background: var(--spot); border-color: var(--spot); color: #fff; }
+.btn[disabled] { opacity: 0.5; cursor: progress; }
+.btn[hidden] { display: none; }
+
+/* ── The allocation ───────────────────────────────────────────────────────
+   A form with three boxes, and the notice it produces. The notice is laid
+   out to survive being screenshotted on a phone: one column, the club's
+   name as large as it will go, nothing that needs the page around it. */
+.alloc-title { font-size: clamp(30px, 6.4vw, 48px); font-weight: 400; line-height: 1.08; margin: 0 0 10px; }
+.alloc-title a { color: inherit; font-weight: 800; text-decoration: none; }
+.alloc-title a:hover { text-decoration: underline; text-decoration-thickness: 2px; }
+.alloc-lede { font-family: var(--serif); font-size: clamp(19px, 4.6vw, 24px); line-height: 1.2; margin: 0 0 10px; }
+
+.alloc-form {
+  margin: 18px 0 10px; padding: 16px 16px 14px; max-width: 560px;
+  border: 1.5px solid var(--ink); border-radius: 12px; background: var(--bg-soft); box-shadow: var(--shadow);
+}
+.alloc-form fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
+.alloc-form legend { font-size: 11px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); padding: 0; margin-bottom: 8px; }
+.alloc-fields { display: flex; flex-wrap: wrap; gap: 8px; align-items: flex-end; }
+.alloc-fields label { display: flex; flex-direction: column; gap: 3px; font-size: 12px; color: var(--muted); }
+/* 20px, and never under 16: below that iOS zooms the page on focus. */
+.alloc-fields input {
+  width: 3.3em; height: 48px; padding: 0 6px; text-align: center;
+  font: 600 20px/1 var(--sans); font-variant-numeric: tabular-nums; color: var(--ink);
+  border: 1.5px solid var(--ink); border-radius: 8px; background: var(--bg);
+}
+.alloc-fields input::placeholder { color: #b9b4a8; font-weight: 400; }
+.alloc-fields input:focus { outline: 3px solid #f6d5c8; border-color: var(--spot); }
+.alloc-year input { width: 4.5em; }
+.alloc-fields .btn { height: 48px; flex: 1 1 9em; }
+.alloc-error { color: var(--down); font-weight: 600; font-size: 14px; margin: 10px 0 0; }
+.alloc-privacy { color: var(--muted); font-size: 12.5px; margin: 10px 0 0; }
+.alloc-form.is-working .btn { opacity: 0.5; pointer-events: none; }
+
+.alloc-result { max-width: 560px; }
+.alloc-onfile { margin: 12px 2px; font-size: 14px; color: var(--muted); }
+.alloc-steps { list-style: none; padding: 0; margin: 14px 2px; color: var(--muted); font-size: 14px; }
+.alloc-steps li { animation: step-in 0.25s ease both; }
+@keyframes step-in { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+
+.notice {
+  position: relative; margin: 16px 0 10px; overflow: hidden; outline: none;
+  border: 1.5px solid var(--ink); border-radius: 12px; background: var(--bg-soft); box-shadow: var(--shadow);
+  animation: notice-in 0.5s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+@keyframes notice-in { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+/* The rule under the kit band is for white: half the league plays in it,
+   and on a white card a white half is no band at all. */
+.notice-kit { display: grid; grid-template-columns: 1fr 1fr; height: 10px; border-bottom: 1px solid var(--ink); }
+.notice-kit span:first-child { background: var(--club-a, #8a929c); }
+.notice-kit span:last-child { background: var(--club-b, var(--club-a, #8a929c)); }
+.notice > :not(.notice-kit) { padding-left: 18px; padding-right: 18px; }
+.notice-head { position: relative; padding-top: 14px; }
+.notice-head .kicker { margin-bottom: 4px; }
+/* Kept clear of the stamp, which sits over the top right corner. */
+.notice-born { margin: 0; color: var(--muted); font-size: 13.5px; max-width: 30em; padding-right: 96px; min-height: 2.8em; }
+.notice.is-plain .notice-born { padding-right: 0; min-height: 0; }
+.notice-stamp {
+  position: absolute; right: 14px; top: 14px; transform: rotate(-6deg); max-width: 92px; text-align: center; line-height: 1.25;
+  border: 2px solid var(--spot); border-radius: 4px; padding: 3px 8px; color: var(--spot); background: var(--bg-soft);
+  font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase;
+}
+.notice-stamp.is-dismissed { animation: stamp 0.4s cubic-bezier(0.2, 1.4, 0.4, 1) both; }
+@keyframes stamp { from { transform: rotate(-6deg) scale(2.2); opacity: 0; } to { transform: rotate(-6deg) scale(1); opacity: 1; } }
+.notice-pre { margin: 18px 0 2px; font-size: 14px; color: var(--muted); }
+.notice-name { font-size: clamp(34px, 9.4vw, 54px); font-weight: 800; line-height: 1.02; letter-spacing: -0.02em; margin: 0; }
+.notice-name a { color: inherit; text-decoration: none; }
+.notice-name a:hover { text-decoration: underline; text-decoration-thickness: 2px; }
+.notice-rule { font-family: var(--serif); font-size: clamp(20px, 5.2vw, 27px); line-height: 1.15; color: var(--spot); margin: 4px 0 0; }
+.notice-section { margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--line); }
+.notice-section h3 { font-size: 11px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
+.notice-section p { margin: 0 0 4px; font-size: 15px; }
+.notice-section p.notice-verdict { font-family: var(--serif); font-size: 20px; line-height: 1.25; margin-top: 8px; }
+.notice-stairs { display: block; width: 100%; height: auto; margin: 2px 0 8px; }
+.stairs-grid { stroke: var(--line); stroke-width: 1; }
+.stairs-label { font: 9px var(--sans); fill: var(--muted); }
+.stairs-line { fill: none; stroke: var(--spot); stroke-width: 2.25; stroke-linejoin: round; stroke-linecap: round; }
+.stairs-start { fill: var(--ink); }
+.stairs-end { fill: var(--spot); }
+.notice-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.notice-actions .btn { flex: 1 1 auto; padding: 0 14px; }
+.notice-outcome { min-height: 1.5em; margin: 8px 0 0; font-size: 14px; font-weight: 600; overflow-wrap: anywhere; }
+.notice-links { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 14px; margin: 4px 0 14px; }
+.notice-more { border-top: 1px solid var(--line); padding-top: 10px; padding-bottom: 10px; }
+.notice-more summary { cursor: pointer; font-weight: 600; font-size: 14px; }
+.notice-tables { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0 18px; }
+table.notice-table tr.is-mine { background: #fff1ea; font-weight: 700; box-shadow: inset 3px 0 0 var(--spot); }
+.notice-working { padding-left: 1.2em; font-size: 14px; margin: 8px 0 4px; }
+.notice-working li { margin: 4px 0; }
+@media (prefers-reduced-motion: reduce) {
+  .notice, .alloc-steps li, .notice-stamp.is-dismissed { animation: none; }
+}
+
+/* The page a shared notice lands on: the sender's club, then the form. */
+.shared { position: relative; overflow: hidden; margin-bottom: 14px; padding: 0 18px 4px; border: 1px solid var(--line); border-radius: 12px; background: var(--bg-soft); }
+.shared .notice-kit { margin: 0 -18px 14px; }
+.alloc-method { padding-left: 1.2em; max-width: 68ch; font-size: 15px; }
+.alloc-method li { margin: 6px 0; }
+
+/* The foot of every page: the name again, then the small print. */
+.site-footer { max-width: 860px; margin: 0 auto; padding: 22px 16px 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+.site-footer p { margin: 0 0 10px; max-width: 72ch; }
+.footer-brand { display: flex; align-items: center; gap: 10px; color: var(--ink); font-size: 14px; }
+.footer-brand .brand-mark { width: 22px; height: 22px; }
+.footer-brand strong { font-family: var(--serif); font-size: 17px; font-weight: 750; letter-spacing: -0.01em; }

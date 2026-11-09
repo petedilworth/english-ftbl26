@@ -1,0 +1,22 @@
+{# The three boxes. Three, not a date picker: nobody enjoys scrolling a
+   calendar back to 1987, and three numeric boxes bring up the number pad
+   on a phone. static/allocation.js does the rest. With alloc_go set (the
+   home page) the form hands the date to the allocation page instead of
+   running here; either way the date is never put in an address. The line
+   under the button says what does leave the device: a request for one
+   season's results, which tells the host a year and nothing nearer. #}
+<form class="alloc-form" id="alloc-form" novalidate
+      data-root="{{ root }}" data-index="{{ root }}/allocation/data/index.json" data-pyramid="{{ root }}/data/pyramid.json"{% if alloc_go %} data-go="{{ alloc_go }}"{% endif %}>
+  <fieldset>
+    <legend>Date of birth</legend>
+    <div class="alloc-fields">
+      <label><span>Day</span><input name="day" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="10" autocomplete="bday-day" placeholder="DD"></label>
+      <label><span>Month</span><input name="month" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="2" autocomplete="bday-month" placeholder="MM"></label>
+      <label class="alloc-year"><span>Year</span><input name="year" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="4" autocomplete="bday-year" placeholder="YYYY"></label>
+      <button class="btn btn-primary" type="submit">Assign a club</button>
+    </div>
+  </fieldset>
+  <p class="alloc-error" role="alert" hidden></p>
+  <p class="alloc-privacy">The date stays on this device. The page fetches that season's results and does the arithmetic here.</p>
+  <noscript><p class="alloc-error">The process runs in the browser and needs JavaScript.</p></noscript>
+</form>

@@ -1,12 +1,39 @@
-# English Football Historical Database
+# As It Stands
 
-SQLite database of English football league standings — Tiers 1–4 from 1958/59, Tier 5 from 1979/80, and Tiers 6–7 for 2012/13–2018/19, through to the present, plus a weekly fixture-preview email digest and a static website.
+**English football since 1958, and where everyone has ended up.**
+
+Every club in the top seven tiers, every season since 1958/59: the tables, the falls, the money, and a club assigned to you by date of birth. There is no appeals process.
+
+**[Open the site](https://petedilworth.github.io/english-ftbl26/)** · [Be assigned a club](https://petedilworth.github.io/english-ftbl26/allocation/) · [Watch the Replay](https://petedilworth.github.io/english-ftbl26/replay/)
+
+![The home page, an allocation notice and the Replay, on a phone](docs/img/front-window.png)
+
+## Three things to try first
+
+1. **Be assigned a club.** Give a date of birth. The site works out the league table as it stood at the end of that day – any day since 23 August 1958 – counts down it, and hands over one of the ninety-two clubs, with everything that has happened to it since. *"They lost 6–0 away to Crystal Palace that day, which is noted."* The date never leaves the device: the page fetches that season's results, does the arithmetic in the browser, and a shared notice carries the club's name and nothing else.
+2. **Watch the Replay.** Every club is a dot in its own colours; a row is a tier and left is top. Press play and 69 seasons go by in half a minute. Tap a dot to follow one club through all of it.
+3. **Read this week's line.** The home page opens on one sentence the data wrote after the last round of matches: a club's past, then where it stands.
+
+![The pyramid, season by season, 1958/59 to now](docs/img/replay.gif)
+
+Links to the site arrive as pictures. Each page that deserves one has its own preview card, drawn at build time – the home card is this week's sentence, and a shared notice shows the sender's club:
+
+<img src="docs/img/card-home.png" alt="The home page's preview card" width="49%"> <img src="docs/img/card-assigned.png" alt="A shared notice's preview card" width="49%">
+
+## What is underneath
+
+- A SQLite database of nearly 200,000 results and 9,150 club-seasons across 356 clubs, rebuilt every morning: tiers 1–4 from 1958/59, tier 5 from 1979/80, tiers 6–7 from 2012/13.
+- A static site of some 670 pages built from it by one Python script, with no server, no framework, no cookies and no analytics.
+- Five emails a week written from the same database, in the voice set out in [`docs/voice.md`](docs/voice.md).
+- More than 850 tests. One of them adds up every result in every finished season and checks the table against the record; another runs two thousand dates of birth through the Python and the browser's JavaScript and fails if they disagree about a single club.
+
+The project was called *English Football History* until November 2026. The name, the address and the colours now live in one file, [`src/brand.py`](src/brand.py).
 
 ## The website (Phase 3)
 
 `src/site_build.py` renders the whole database into a static site (`site/`), deployed to GitHub Pages by `.github/workflows/deploy-site.yml` — weekly after the digest updates the data, and on any push that changes content or code.
 
-Pages: home (one sentence in the voice, this week's lines computed from the season in progress, and the current tables) · one page per season · one page per division · teams index with live search, A–Z and by-division listings · a page per club (kit-colour header, key stats, position-history chart, season-by-season record, club facts from the register, and a narrative section) · Compare (any two clubs side by side) · the Matrix (every division × every season, tap a club to highlight its journey) · The story (the insight pages in reading order: what moved, then why, each ending with the next page and the pages it feeds) · the theme tables (administration, points deductions, phoenix clubs, fan-owned clubs, ground grading) · the Groundhop Map (every ground, season slider, story filters, postcode distances) · the Sources page · an archive of the emails.
+Pages: home (one sentence in the voice, the allocation form, the Replay, this week's lines computed from the season in progress, and the current tables) · the allocation (a club for a date of birth, and a page per club for shared notices) · the Replay (every club-season, animated) · one page per season · one page per division · teams index with live search, A–Z and by-division listings · a page per club (kit-colour header, key stats, position-history chart, season-by-season record, club facts from the register, and a narrative section) · Compare (any two clubs side by side) · the Matrix (every division × every season, tap a club to highlight its journey) · The story (the insight pages in reading order: what moved, then why, each ending with the next page and the pages it feeds) · the theme tables (administration, points deductions, phoenix clubs, fan-owned clubs, ground grading) · the Groundhop Map (every ground, season slider, story filters, postcode distances) · the Sources page · an archive of the emails.
 
 **Enable it once:** repo Settings → Pages → Source: **GitHub Actions**. Then run the "Deploy Site" workflow (or push to main).
 
@@ -16,6 +43,24 @@ Pages: home (one sentence in the voice, this week's lines computed from the seas
 ```bash
 python src/site_build.py && python -m http.server -d site 8000
 ```
+Add `--no-charts` to skip the club charts and the preview cards, which is most of the build time.
+
+### The front window
+
+Four modules sit in front of the rest, each with its reasons written at the top of the file:
+
+| File | What it does |
+|---|---|
+| `src/brand.py` | The name, tagline, address and colours. Templates, cards and tests all read it. |
+| `src/allocation.py` | The rule that turns a date of birth into a club, and the league table on any day. `static/allocation-process.js` is the same arithmetic for the browser; a test holds the two together. |
+| `src/pyramid.py` | Every club-season as one file (`data/pyramid.json`, about 37 KB compressed), read by the Replay and by the allocation notice. |
+| `src/cards.py` | The link preview cards and icons, drawn with Pillow from the site's own font. |
+
+**The allocation's rule**, in full: count the days from 23 August 1958 to the date of birth; take the top four divisions as they stood at the end of that day; divide the day count by the number of clubs, and the remainder, counted down from the top, is a place in that table. Mid-season tables are the results so far under that season's rules (two points for a win before 1981/82, goal average before 1976/77). Points deductions are applied only when a season ends, because the record holds the season of a deduction and not its day. Someone born before the record begins gets the same day of the year in its first season.
+
+**Straight tone.** A date or club listed in `content/straight-dates.yml` gets a notice with the same facts and none of the remarks. The file is empty, as `docs/voice.md` intends; the allocation is the first page where a visitor chooses the date, so it is worth deciding which anniversaries belong in it.
+
+**The address.** Preview cards need absolute URLs, so the site reads `SITE_URL` (default `https://petedilworth.github.io/english-ftbl26`), the same variable the emails use. Set it in the deploy workflow for a fork or a custom domain.
 
 ## The editions (Phase 2)
 
@@ -57,6 +102,8 @@ The second form reads fixtures from a CSV in football-data.co.uk's
 `fixtures.csv` layout instead of the network.
 
 ## Phase 1 — the database
+
+The database is where the project began, when it was called the English Football Historical Database.
 
 ## Data source
 
@@ -109,6 +156,13 @@ src/
   trajectory.py Builds derived club_trajectory table
   finances.py   Loads club_finances from CSV (accounts data)
   pipeline.py   Orchestrates all steps end-to-end
+  site_build.py Builds the static site
+  brand.py      The name, the address and the colours
+  allocation.py A club for a date of birth; the table on any day
+  pyramid.py    Every club-season, for the Replay
+  cards.py      Link preview cards and icons
+static/         Stylesheet, scripts and the headline font
+templates/      Jinja templates, one per kind of page
 club_master.csv Canonical club list — manually maintained seed file
 club_finances.csv Club accounts by season — manually maintained seed file
 ```

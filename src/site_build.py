@@ -26,6 +26,7 @@ _SRC = Path(__file__).parent
 sys.path.insert(0, str(_SRC))
 
 import aggregate  # noqa: E402  (points-era boundary for records tables)
+import brand  # noqa: E402  (the name on the door, and the address)
 import content  # noqa: E402  (needs _SRC on the path first)
 import hatred as hatred_mod  # noqa: E402  (the most disliked clubs)
 import value as value_mod  # noqa: E402  (which club to buy)
@@ -44,6 +45,9 @@ divisions_mod = divisions
 import finances  # noqa: E402  (disclosure states for the club finances table)
 import historical  # noqa: E402
 import themes as themes_mod  # noqa: E402  (the theme pages' membership and tables)  (why a backfilled table is flagged not-final)
+import pyramid as pyramid_mod  # noqa: E402  (every club-season, for the Replay)
+import allocation as allocation_mod  # noqa: E402  (a club for a date of birth)
+import cards as cards_mod  # noqa: E402  (what a link looks like before it is opened)
 
 PROJECT_ROOT = _SRC.parent
 
@@ -538,8 +542,23 @@ def _row_dict(r) -> dict:
 
 class SiteBuilder:
     def __init__(self, db_path: Path, out_dir: Path, charts_enabled: bool = True,
-                 fixtures: list[dict] | None = None):
+                 fixtures: list[dict] | None = None, cards_enabled: bool | None = None):
         self.conn = sqlite3.connect(db_path)
+        self.brand = brand.context()
+        # The link preview cards are images, like the charts, and cost
+        # about as long to draw; a build that skips one skips the other
+        # unless it says otherwise.
+        self.cards_enabled = charts_enabled if cards_enabled is None else cards_enabled
+        # Set in build(), before the first page renders: every page's
+        # header links to these two, so every page has to know whether
+        # this database can make them.
+        self.has_allocation = False
+        self.has_replay = False
+        # The map needs grounds with coordinates; the header used to link
+        # to it whether or not this database had any.
+        self.has_map = False
+        self.pyramid: dict | None = None
+        self.allocation_index: dict | None = None
         # The coming week's fixtures, fetched by main() - never by the
         # builder itself, so a build (and every test) works offline. None
         # or [] just means no fixtures page and no fixture chips.
@@ -626,7 +645,28 @@ class SiteBuilder:
         return self.colors.get(club_id, DEFAULT_COLOR)
 
     def render(self, template: str, out_path: Path, depth: int, **ctx) -> None:
-        ctx["root"] = "/".join([".."] * depth) if depth else "."
+        # Relative, so the site works under any base path - unless the page
+        # says otherwise: the 404 page is served at every depth at once and
+        # has to be told the absolute address.
+        ctx.setdefault("root", "/".join([".."] * depth) if depth else ".")
+        # The name, and what a link to this page looks like before anyone
+        # opens it. A page that says nothing gets the site's description
+        # and the home card; a card is only offered when this build draws
+        # them, or the tag would point at a file that is not there.
+        ctx["brand"] = self.brand
+        ctx.setdefault("has_allocation", self.has_allocation)
+        ctx.setdefault("has_replay", self.has_replay)
+        ctx.setdefault("has_map", self.has_map)
+        ctx.setdefault("has_icons", self.cards_enabled)
+        if out_path.is_relative_to(self.out):
+            ctx.setdefault("canonical", brand.page_url(out_path.relative_to(self.out).as_posix()))
+        if self.cards_enabled:
+            ctx.setdefault("og_image", "cards/home.png")
+        else:
+            ctx["og_image"] = None
+        if self.pyramid:
+            ctx.setdefault("replay_first_label", season_label(self.pyramid["first"]))
+            ctx.setdefault("replay_last_label", season_label(self.pyramid["last"]))
         # A story page's stat card is its headline on the index - the first
         # unless STORY_STAT says the finding is a later one - and every
         # story page carries its place in the reading order.
@@ -774,6 +814,9 @@ class SiteBuilder:
         self.render(
             "home.html", self.out / "index.html", 0,
             title="Home",
+            # In a browser tab and on a link preview the front page is the
+            # site's name, not the word "Home".
+            page_title=f"{brand.NAME} — {brand.STRAPLINE}",
             current_label=season_label(current), current_season=current,
             divisions=divisions,
             season_note=self._season_progress_note(divisions),
@@ -782,6 +825,7 @@ class SiteBuilder:
             has_map=self._has_grounds(),
             season_count=len(self.seasons),
             team_count=team_count,
+            journeys=self._journeys() if self.has_replay else [],
         )
 
     # ── Home page ──────────────────────────────────────────────────────────
@@ -1646,6 +1690,9 @@ class SiteBuilder:
             self.render(
                 "team.html", out_dir / "index.html", 2,
                 title=t["canonical_name"],
+                description=(f"{t['canonical_name']}: {self._tagline(t)}. {self._club_now(club_id)} "
+                             f"Every season on record, the money, the ground and who they have played."),
+                og_image=f"cards/team/{club_id}.png" if self.cards_enabled else None,
                 name=t["canonical_name"],
                 club_id=club_id,
                 next_fixture=next((f for f in self.fixtures if club_id in (f["home_id"], f["away_id"])), None),
@@ -6469,6 +6516,309 @@ class SiteBuilder:
             title="Edition archive", groups=groups,
         )
 
+    # ── The Replay and the allocation ─────────────────────────────────────
+
+    def _prime_showpieces(self) -> None:
+        """
+        Decide, before the first page renders, whether this database can
+        make the Replay and the allocation - every page's header links to
+        both, and a link to a page that was not built is worse than no
+        link. Neither is allowed to stop a build: they are the front
+        window, not the shop.
+        """
+        try:
+            self.pyramid = pyramid_mod.assemble(self.conn, pages=self.club_pages)
+        except Exception as exc:
+            logger.warning("Replay skipped: %s", exc)
+            self.pyramid = None
+        self.has_replay = bool(self.pyramid)
+        try:
+            self.allocation_index = allocation_mod.index(self.conn) if self.pyramid else None
+        except Exception as exc:
+            logger.warning("Allocation skipped: %s", exc)
+            self.allocation_index = None
+        self.has_allocation = bool(self.allocation_index)
+        self.has_map = self._has_grounds()
+        if self.cards_enabled:
+            # Asked once, here: a page must not name a card this machine cannot draw.
+            self.cards_enabled = cards_mod.available()
+
+    def _pyramid_rows(self) -> list[list[tuple]]:
+        """The present pyramid as rows of (colour, colour2), twenty-four to a row: the Replay's first frame."""
+        data = self.pyramid
+        flat, width = data["seasons"][-1], data["row"]
+        by_tier: dict[int, list[tuple]] = {}
+        for i in range(0, len(flat), width):
+            club = data["clubs"][flat[i]]
+            by_tier.setdefault(flat[i + 1], []).append((club[2], club[3]))
+        rows = []
+        for tier in sorted(by_tier):
+            members = by_tier[tier]
+            rows.extend(members[k:k + 24] for k in range(0, len(members), 24))
+        return rows
+
+    def build_not_found(self) -> None:
+        """
+        404.html, which GitHub Pages serves for any address it has no file
+        for. It cannot know how deep that address was, so unlike every
+        other page its links are absolute.
+        """
+        first = self.conn.execute("SELECT MIN(match_date) FROM matches WHERE match_date IS NOT NULL").fetchone() \
+            if self._has_table("matches") else None
+        self.render(
+            "404.html", self.out / "404.html", 0,
+            title="Not in the record", root=brand.SITE_URL, canonical=None, noindex=True,
+            epoch_label=_date_label(first[0]) if first and first[0] else f"the {season_label(self.seasons[0])} season",
+        )
+
+    def build_cards(self) -> None:
+        """
+        The link preview cards and the icons (src/cards.py): what a link to
+        this site looks like in a message before anyone opens it. Last in
+        the build, because the home card is this week's hero sentence.
+        Nothing here may stop a deploy - a site without its cards is still
+        the site.
+        """
+        if not self.cards_enabled:
+            return
+        out = self.out / "cards"
+        try:
+            current = self.seasons[-1]
+            kit = "m.color_primary, m.color_secondary" if "color_primary" in self.master_cols else "NULL, NULL"
+            league = self.conn.execute(
+                f"SELECT s.club_id, {kit} FROM standings s LEFT JOIN club_master m ON m.club_id = s.club_id"
+                " WHERE s.season_end_year = ? AND s.tier <= 4 ORDER BY s.tier, s.position", (current,)).fetchall()
+            cards_mod.home_card(out / "home.png", getattr(self, "story_hero", None), [tuple(r) for r in league])
+            names = dict(self.conn.execute("SELECT club_id, canonical_name FROM club_trajectory"))
+            if self.has_allocation:
+                cards_mod.allocation_card(out / "allocation.png")
+                for club_id in allocation_mod.allocatable(self.conn):
+                    if club_id in self.club_pages:
+                        cards_mod.assigned_card(out / "allocation" / f"{club_id}.png",
+                                                names.get(club_id, club_id), *self._kit(club_id))
+            if self.pyramid:
+                cards_mod.replay_card(out / "replay.png", self._pyramid_rows(),
+                                      len(self.seasons), len(self.pyramid["clubs"]))
+            tiers: dict[str, list[tuple[int, int]]] = {}
+            for club_id, season, tier in self.conn.execute(
+                    "SELECT club_id, season_end_year, tier FROM standings WHERE club_id IS NOT NULL"
+                    " ORDER BY club_id, season_end_year"):
+                tiers.setdefault(club_id, []).append((season, tier))
+            for club_id in sorted(self.club_pages):
+                cards_mod.club_card(out / "team" / f"{club_id}.png", names.get(club_id, club_id),
+                                    *self._kit(club_id), self._club_now(club_id), tiers.get(club_id, []),
+                                    self.seasons[0], current)
+            cards_mod.write_icons(self.out)
+            (self.out / "site.webmanifest").write_text(json.dumps({
+                "name": brand.NAME, "short_name": brand.NAME, "description": brand.TAGLINE,
+                "start_url": "./index.html", "scope": "./", "display": "minimal-ui",
+                "background_color": brand.PAPER, "theme_color": brand.PAPER,
+                "icons": [{"src": "icon-192.png", "sizes": "192x192", "type": "image/png"},
+                          {"src": "icon-512.png", "sizes": "512x512", "type": "image/png"}],
+            }, indent=1), encoding="utf-8")
+        except Exception as exc:
+            logger.warning("Link preview cards incomplete: %s", exc)
+
+    def _journeys(self) -> list[dict]:
+        """
+        Clubs worth following on the Replay, chosen by the record rather
+        than by anyone's taste: this week's hero, then the furthest fall,
+        climb and round trip, and the longest run of going up and down.
+        Each is a club and the season to start watching from.
+        """
+        out, used = [], set()
+
+        def add(tag, club_id, name, sub, start):
+            if club_id in used or club_id not in self.club_pages:
+                return
+            used.add(club_id)
+            out.append({"tag": tag, "club_id": club_id, "name": name, "sub": sub,
+                        "from": max(self.seasons[0], start)})
+
+        hero = getattr(self, "story_hero", None)
+        if hero:
+            add("This week", hero["club_id"], hero["name"], f"{hero['past']} {hero['present']}", hero["first"])
+        try:
+            hall = yoyo_mod.assemble(self.conn).get("hall", {})
+        except Exception as exc:
+            logger.warning("Replay journeys skipped: %s", exc)
+            hall = {}
+        w = storylines_mod.word
+
+        def span(a, b):
+            n = b - a
+            return f"in {w(n)} season{'s' if n != 1 else ''}, {season_label(a)} to {season_label(b)}"
+
+        for c in hall.get("falls", [])[:2]:
+            tiers, a, b = c["fastest"]["fall"]
+            add("Fastest fall", c["club_id"], c["name"], f"{w(tiers).capitalize()} divisions down {span(a, b)}.", a - 1)
+        for c in hall.get("climbs", [])[:2]:
+            tiers, a, b = c["fastest"]["climb"]
+            add("Fastest climb", c["club_id"], c["name"], f"{w(tiers).capitalize()} divisions up {span(a, b)}.", a - 1)
+        for c in hall.get("round_trips", [])[:2]:
+            tiers, peak, trough, back = c["round_trip"]
+            add("There and back", c["club_id"], c["name"],
+                f"{w(tiers).capitalize()} divisions down by {season_label(trough)}, and back by {season_label(back)}.",
+                peak - 1)
+        for c in hall.get("runs", [])[:1]:
+            run = c["longest"]
+            moves = ", ".join("promoted" if k == "P" else "relegated" for k in run["pattern"])
+            add("Longest bounce", c["club_id"], c["name"],
+                f"{moves.capitalize()}: {w(run['length'])} seasons running from {season_label(run['start'])}.",
+                run["start"] - 1)
+        return out
+
+    def build_replay(self) -> None:
+        """
+        The Replay: the whole record as one animation (static/replay.js),
+        and the file it and the allocation notice both read. Written even
+        when only the home page uses it.
+        """
+        if not self.pyramid:
+            return
+        data_dir = self.out / "data"
+        data_dir.mkdir(parents=True, exist_ok=True)
+        (data_dir / "pyramid.json").write_text(
+            json.dumps(self.pyramid, separators=(",", ":")), encoding="utf-8")
+        self.render(
+            "replay.html", self.out / "replay" / "index.html", 1,
+            title="The Replay",
+            description=(f"Every club in English football's top seven tiers as a dot in its own colours, "
+                         f"moving season by season from {season_label(self.pyramid['first'])} to now. "
+                         f"Tap one to follow it."),
+            og_image="cards/replay.png" if self.cards_enabled else None,
+            season_count=len(self.seasons), club_count=len(self.pyramid["clubs"]),
+            journeys=self._journeys(),
+        )
+
+    def _straight_entries(self) -> list[dict]:
+        """
+        content/straight-dates.yml as the allocation page reads it: a
+        month and day, or none, and the clubs it covers. The notice for a
+        date or club listed there states its facts and makes no remark
+        (docs/voice.md, "Suppression").
+        """
+        try:
+            from editions import tone
+            entries = tone.load()
+        except Exception as exc:
+            logger.warning("straight-dates.yml not read: %s", exc)
+            return []
+        out = []
+        for e in entries:
+            when = e.get("date")
+            if isinstance(when, str):
+                try:
+                    when = datetime.date.fromisoformat(when)
+                except ValueError:
+                    continue
+            out.append({"md": f"{when.month:02d}-{when.day:02d}" if when else None,
+                        "clubs": list(e.get("clubs") or [])})
+        return out
+
+    def _club_now(self, club_id: str) -> str:
+        """Where a club stands, as one sentence: for the page a shared notice points at."""
+        current = self.seasons[-1]
+        row = self.conn.execute(
+            "SELECT division_name, position FROM standings WHERE club_id = ? AND season_end_year = ?",
+            (club_id, current)).fetchone()
+        if row and row[1]:
+            return f"As it stands: {storylines_mod.ordinal(row[1])} in {storylines_mod._div(row[0])}."
+        last = self.conn.execute(
+            "SELECT division_name, position, season_end_year FROM standings WHERE club_id = ?"
+            " ORDER BY season_end_year DESC LIMIT 1", (club_id,)).fetchone()
+        if last and last[1]:
+            return (f"Last seen {storylines_mod.ordinal(last[1])} in {storylines_mod._div(last[0])}, "
+                    f"{season_label(last[2])}.")
+        return "Not in the record this season."
+
+    def build_allocation(self) -> None:
+        """
+        The allocation: a date of birth in, a club out (src/allocation.py
+        for the rule, static/allocation.js for the page). This writes what
+        the browser needs - an index of seasons and one small file per
+        season - then the page itself, and one more page per club that can
+        be assigned, which is what a shared notice links to: the club's
+        name is in the address and on the preview card, the date of birth
+        is in neither.
+        """
+        index = self.allocation_index
+        if not index or not self.pyramid:
+            return
+        out_dir = self.out / "allocation"
+        data_dir = out_dir / "data"
+        data_dir.mkdir(parents=True, exist_ok=True)
+        seasons = []
+        for entry in index["seasons"]:
+            data = allocation_mod.season_data(self.conn, entry[0])
+            if not data:
+                continue
+            (data_dir / f"{entry[0]}.json").write_text(json.dumps(data, separators=(",", ":")), encoding="utf-8")
+            seasons.append(entry)
+        if not seasons:
+            return
+        (data_dir / "index.json").write_text(json.dumps(
+            dict(index, seasons=seasons, straight=self._straight_entries()), separators=(",", ":")), encoding="utf-8")
+
+        tiers = ",".join(str(t) for t in allocation_mod.LEAGUE_TIERS)
+        match_count = self.conn.execute(
+            f"SELECT COUNT(*) FROM matches WHERE tier IN ({tiers}) AND match_date IS NOT NULL").fetchone()[0]
+        # The two rule changes the tables have to respect, read from the
+        # code that applies them rather than written into the page: if
+        # aggregate.py is ever corrected, the sentence follows.
+        span = range(seasons[0][0], seasons[-1][0] + 1)
+        notes = []
+        three = next((y for y in span if aggregate.points_for_win(y) == 3), None)
+        if three and three > span[0]:
+            notes.append(f"two points for a win before {season_label(three)}")
+        difference = next((y for y in span if aggregate.tiebreak_rule(1, y) != "goal_average"), None)
+        if difference and difference > span[0]:
+            notes.append(f"goal average before {season_label(difference)}")
+        common = {
+            "epoch_label": _date_label(index["epoch"]),
+            "first_season_label": season_label(seasons[0][0]),
+            "match_count": f"{match_count:,}",
+            "rule_notes": ", ".join(notes),
+        }
+        self.render(
+            "allocation.html", out_dir / "index.html", 1,
+            title="A club will be assigned",
+            og_title="A club will be assigned. There is no appeals process.",
+            description=("Give a date of birth. The process finds the league table as it stood that day and "
+                         "assigns one of its ninety-two clubs. There is no appeals process."),
+            og_image="cards/allocation.png" if self.cards_enabled else None,
+            shared=None, **common,
+        )
+        names = dict(self.conn.execute("SELECT club_id, canonical_name FROM club_master"))
+        for club_id in allocation_mod.allocatable(self.conn):
+            if club_id not in self.club_pages:
+                continue
+            name = names.get(club_id, club_id)
+            primary, secondary = self._kit(club_id)
+            self.render(
+                "allocation.html", out_dir / club_id / "index.html", 2,
+                title=f"Assigned: {name}",
+                og_title=f"Assigned: {name}. There is no appeals process.",
+                description=(f"Someone you know has been assigned {name} by date of birth. "
+                             f"Give a date and the process assigns you a club too."),
+                og_image=f"cards/allocation/{club_id}.png" if self.cards_enabled else None,
+                shared={"club_id": club_id, "name": name, "colour": primary, "colour2": secondary,
+                        "where": self._club_now(club_id)},
+                # One hundred and twenty pages that differ by a name: for
+                # people following a link, not for a search index.
+                noindex=True,
+                **common,
+            )
+
+    def _kit(self, club_id: str) -> tuple[str, str]:
+        """A club's two kit colours, with a neutral where the register has none."""
+        if "color_primary" not in self.master_cols:
+            return ("#8a929c", "#8a929c")
+        row = self.conn.execute(
+            "SELECT color_primary, color_secondary FROM club_master WHERE club_id = ?", (club_id,)).fetchone()
+        primary = (row[0] if row else None) or "#8a929c"
+        return (primary, (row[1] if row else None) or primary)
+
     def build(self) -> None:
         if self.out.exists():
             shutil.rmtree(self.out)
@@ -6476,6 +6826,7 @@ class SiteBuilder:
         shutil.copytree(PROJECT_ROOT / "static", self.out / "static")
         (self.out / ".nojekyll").write_text("")
 
+        self._prime_showpieces()  # before anything renders: every header links to them
         self._prime_themes()  # before build_teams: the chips need membership
         self.build_seasons()
         self.build_divisions()
@@ -6491,6 +6842,10 @@ class SiteBuilder:
         self.build_compare()   # after build_teams: reuses self.club_facts
         self.build_fixtures()
         self.build_digest_archive()
+        self.build_replay()
+        self.build_allocation()
+        self.build_not_found()
+        self.build_cards()     # last: the home card is this week's hero
 
         page_count = sum(1 for _ in self.out.rglob("index.html"))
         logger.info("Site built: %d pages in %s", page_count, self.out)

@@ -3,23 +3,59 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{ title }} — English Football History</title>
+<title>{{ page_title or (title ~ ' — ' ~ brand.name) }}</title>
+{# What a link to this page looks like before anyone opens it. A page says
+   its own piece in `description` and `og_image`; one that says nothing gets
+   the site's. The image address has to be absolute: the apps that draw
+   the preview fetch it from outside, with no page to be relative to. #}
+<meta name="description" content="{{ description or brand.description }}">
+{% if noindex %}<meta name="robots" content="noindex">{% endif %}
+{% if canonical %}<link rel="canonical" href="{{ canonical }}">{% endif %}
+<meta property="og:site_name" content="{{ brand.name }}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ og_title or page_title or (title ~ ' — ' ~ brand.name) }}">
+<meta property="og:description" content="{{ description or brand.description }}">
+{% if canonical %}<meta property="og:url" content="{{ canonical }}">{% endif %}
+{% if og_image %}<meta property="og:image" content="{{ brand.site_url }}/{{ og_image }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">{% endif %}
+<meta name="theme-color" content="{{ brand.paper }}">
+<link rel="icon" href="{{ root }}/static/favicon.svg" type="image/svg+xml">
+{% if has_icons %}<link rel="apple-touch-icon" href="{{ root }}/apple-touch-icon.png">
+<link rel="manifest" href="{{ root }}/site.webmanifest">{% endif %}
+<link rel="preload" href="{{ root }}/static/fonts/newsreader-display.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{{ root }}/static/style.css">
+{# Pages cross-fade into one another where the browser can do it (the
+   @view-transition rule in style.css). When it decides not to - the tab
+   is hidden, the frame is being captured - it rejects a promise nobody
+   is holding, which lands in the console as an error about nothing.
+   This takes hold of it. It has to be here, before the first paint. #}
+<script>addEventListener("pagereveal",function(e){var t=e.viewTransition;if(t){t.ready.catch(function(){});t.finished.catch(function(){})}});</script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to the page</a>
 <header class="site-header">
-  <a class="brand" href="{{ root }}/index.html">English Football History</a>
-  <nav>
-    {# Home first, where this week lives; then the story and the two visual
-       tools. Browse keeps the rest, the theme tables among them: they sit
-       inside the story's "Why" section now rather than beside it. #}
-    <a href="{{ root }}/index.html">Home</a>
+  <a class="brand" href="{{ root }}/index.html" aria-label="{{ brand.name }}: home">{% include "_mark.svg" %}<span class="brand-name">{{ brand.name }}<span class="brand-stop">.</span></span></a>
+  <nav aria-label="Main">
+    {# Home first, where this week lives; then the visitor's own club, the
+       story and the visual tools. On a phone the row has room for four, so
+       Home, Matrix and Map step down into Browse (the mark is already a
+       way home). Browse keeps the rest, the theme tables among them: they
+       sit inside the story's "Why" section rather than beside it. #}
+    <a class="nav-wide" href="{{ root }}/index.html">Home</a>
+    {% if has_allocation %}<a class="nav-club" id="nav-club" href="{{ root }}/allocation/index.html">Your club</a>{% endif %}
     <a href="{{ root }}/insights/index.html">The story</a>
-    <a href="{{ root }}/matrix/index.html">Matrix</a>
-    <a href="{{ root }}/map/index.html">Map</a>
+    {% if has_replay %}<a href="{{ root }}/replay/index.html">Replay</a>{% endif %}
+    <a class="nav-wide" href="{{ root }}/matrix/index.html">Matrix</a>
+    {% if has_map %}<a class="nav-wide" href="{{ root }}/map/index.html">Map</a>{% endif %}
     <details class="nav-more">
       <summary>Browse</summary>
       <div class="nav-more-menu">
+        <a class="nav-narrow" href="{{ root }}/index.html">Home</a>
+        <a class="nav-narrow" href="{{ root }}/matrix/index.html">Matrix</a>
+        {% if has_map %}<a class="nav-narrow" href="{{ root }}/map/index.html">Map</a>{% endif %}
+        {% if has_allocation %}<a href="{{ root }}/allocation/index.html">Allocation</a>{% endif %}
         <a href="{{ root }}/seasons/index.html">Seasons</a>
         <a href="{{ root }}/teams/index.html">Teams</a>
         <a href="{{ root }}/division/index.html">Divisions</a>
@@ -32,7 +68,7 @@
     </details>
   </nav>
 </header>
-<main class="{{ main_class | default('') }}">
+<main id="main" class="{{ main_class | default('') }}">
 {% block content %}{% endblock %}
 {% if story_nav %}
 {# Every story page says where it sits: the next page in reading order, and the pages that use what this one found. #}
@@ -44,13 +80,15 @@
 {% endif %}
 </main>
 <footer class="site-footer">
+  <p class="footer-brand">{% include "_mark.svg" %}<span><strong>{{ brand.name }}.</strong> {{ brand.tagline }}</span></p>
   <p>Tiers 1–7 of English football: 1958/59 to today at the top five,
      2012/13 onwards at the sixth and seventh. Results data from
   <a href="https://www.football-data.co.uk">football-data.co.uk</a>.
   <a href="{{ root }}/sources/index.html">Every source, page by page</a>.
   The writing here is <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
-  and the code <a href="https://github.com/petedilworth/english-ftbl26/blob/main/LICENSE">MIT</a>;
-  data from others keeps its own terms (<a href="https://github.com/petedilworth/english-ftbl26/blob/main/NOTICE.md">licences</a>).</p>
+  and the code <a href="{{ brand.repo_url }}/blob/main/LICENSE">MIT</a>;
+  data from others keeps its own terms (<a href="{{ brand.repo_url }}/blob/main/NOTICE.md">licences</a>).
+  No cookies, no tracking, nothing to accept.</p>
 </footer>
 <script src="{{ root }}/static/nav.js"></script>
 </body>
