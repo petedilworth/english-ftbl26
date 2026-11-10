@@ -1,6 +1,8 @@
-// Live filter for the teams index. No dependencies.
+// Live filter for a list: the teams index, and the index of all pages.
+// The input is #team-search or anything marked data-live-filter; the items
+// are .searchable li, each with what it matches in data-name. No dependencies.
 (function () {
-  var input = document.getElementById("team-search");
+  var input = document.getElementById("team-search") || document.querySelector("[data-live-filter]");
   if (!input) return;
 
   var items = Array.prototype.slice.call(

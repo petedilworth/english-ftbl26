@@ -189,10 +189,6 @@ PAGES = [
     ("Maps and grids", [
         ("The Replay", "replay/index.html", RESULTS + ["wikipedia-clubs", "fa-nls"],
          "Every club-season in the record, in the clubs' kit colours."),
-        ("The allocation", "allocation/index.html",
-         ["football-data", "engsoccerdata", "deductions", "wikipedia-clubs", "models"],
-         "The league table on any day since 23 August 1958, worked out from dated results in the top four "
-         "divisions. The date of birth it is given stays in the browser."),
         ("The Matrix", "matrix/index.html", RESULTS, ""),
         ("Groundhop Map", "map/index.html", ["wikipedia-clubs", "ons-geography", "osm"] + RESULTS[:2],
          "Clubs without a surveyed ground are placed at their town's population centre."),
@@ -211,7 +207,7 @@ PAGES = [
         ("Money", "insights/money/index.html", ["finances", "companies-house", "club-companies"] + RESULTS,
          "Turnover, wages and the balance sheet, tier by tier, and what each club's accounts disclose."),
         ("Who owns the ground", "insights/grounds/index.html", ["grounds"], ""),
-        ("Which club to buy", "insights/value/index.html",
+        ("Club value", "insights/value/index.html",
          RESULTS + ["grounds", "finances", "club-facts", "ons-population", "ons-income", "models"], ""),
         ("The most disliked clubs", "insights/hatred/index.html",
          RESULTS + ["hatred", "finances", "ons-population", "models"], ""),

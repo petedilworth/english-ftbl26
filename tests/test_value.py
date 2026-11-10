@@ -1,4 +1,4 @@
-"""Which club to buy: the levers, the index, and the page."""
+"""Club value - which club to buy: the levers, the index, and the page."""
 
 import sqlite3
 import sys
@@ -131,4 +131,4 @@ def test_the_page_builds_with_equal_sliders_and_the_accounts_box(tmp_path, monke
     assert 'class="index-bar" data-club=' in page
     assert 'id="value-discount"' in page and "Stand-outs in each tier" in page
     assert (out / "insights" / "value" / "value-data.js").exists()
-    assert "Which club to buy" in (out / "insights" / "index.html").read_text(encoding="utf-8")
+    assert "Club value" in (out / "insights" / "index.html").read_text(encoding="utf-8")

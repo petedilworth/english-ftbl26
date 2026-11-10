@@ -1,4 +1,4 @@
-"""The link preview cards: the right size, small, on the right paper, and never a reason to fail a build."""
+"""The link preview cards: the right size, small, on the pitch, and never a reason to fail a build."""
 
 import sys
 from pathlib import Path
@@ -22,45 +22,54 @@ def _rgb(hex_colour):
     return tuple(int(hex_colour[i:i + 2], 16) for i in (1, 3, 5))
 
 
+def _near(a, b, by=4):
+    return all(abs(p - q) <= by for p, q in zip(a, b))
+
+
 def _check(path):
     img = Image.open(path)
     assert img.size == (cards.W, cards.H) == (1200, 630)
     assert img.mode == "P", "cards are palette PNGs: as truecolour they outweigh the site"
     assert path.stat().st_size < 120_000
-    # The corner is paper, and still the paper's colour after the palette was chosen.
-    corner = img.convert("RGB").getpixel((6, cards.H - 6))
-    assert all(abs(a - b) <= 3 for a, b in zip(corner, _rgb(brand.PAPER))), corner
-    return img.convert("RGB")
+    # The card is the pitch: the bottom corners are grass, one stripe each,
+    # and still the right greens after the palette was chosen.
+    rgb = img.convert("RGB")
+    assert _near(rgb.getpixel((6, cards.H - 6)), _rgb(brand.PITCH)), rgb.getpixel((6, cards.H - 6))
+    assert _near(rgb.getpixel((cards.STRIPE + 6, cards.H - 6)), _rgb(brand.PITCH_LIGHT))
+    return rgb
 
 
 def test_every_kind_of_card_draws(tmp_path):
     cards.home_card(tmp_path / "home.png", HERO, LEAGUE)
     cards.home_card(tmp_path / "plain.png", None, None)            # a database with no hero still gets a card
-    cards.allocation_card(tmp_path / "allocation.png")
-    cards.assigned_card(tmp_path / "assigned.png", "Walsall", "#E31B23", "#FFFFFF")
     cards.replay_card(tmp_path / "replay.png", [[("#EF0107", "#FFFFFF")] * 20, [(None, None)] * 24], 69, 359)
     cards.club_card(tmp_path / "club.png", "Luton Town", "#F78F1E", "#002D62", "As it stands: fourth in League One.",
                     [(1959, 1), (1960, 1), (1961, 2), (1963, 3), (2027, 3)], 1959, 2027)
-    for name in ("home", "plain", "allocation", "assigned", "replay", "club"):
+    for name in ("home", "plain", "replay", "club"):
         _check(tmp_path / f"{name}.png")
+    assert not hasattr(cards, "allocation_card") and not hasattr(cards, "assigned_card")
+
+
+def test_the_words_on_a_card_are_white_and_the_one_that_matters_is_yellow(tmp_path):
+    cards.home_card(tmp_path / "home.png", HERO, LEAGUE)
+    colours = {c for _n, c in Image.open(tmp_path / "home.png").convert("RGB").getcolors(maxcolors=1200 * 630)}
+    assert any(_near(c, _rgb(brand.CHALK), 2) for c in colours), "the headline is white"
+    assert any(_near(c, _rgb(brand.FLAG), 6) for c in colours), "the present tense is yellow"
 
 
 def test_the_longest_names_are_shrunk_to_fit_rather_than_cut_off(tmp_path):
-    # Ink within the margin on the right would mean a name ran off the card.
+    # Anything white in the margin on the right would mean a name ran off the card.
     for i, name in enumerate(("Brighton & Hove Albion", "Hampton & Richmond Borough", "Wolverhampton Wanderers",
                               "Northern Premier League Premier Division Athletic")):
-        cards.assigned_card(tmp_path / f"a{i}.png", name, "#0057B8", "#FFFFFF")
         cards.club_card(tmp_path / f"c{i}.png", name, "#0057B8", None, "Not in the record this season.", [], 1959, 2027)
-        for kind in ("a", "c"):
-            img = _check(tmp_path / f"{kind}{i}.png")
-            edge = img.crop((cards.W - 24, 140, cards.W, 500))
-            paper = _rgb(brand.PAPER)
-            colours = [c for _n, c in edge.getcolors(maxcolors=edge.width * edge.height)]
-            assert all(abs(c[k] - paper[k]) <= 6 for c in colours for k in range(3)), (kind, name)
+        img = _check(tmp_path / f"c{i}.png")
+        edge = img.crop((cards.W - 24, 140, cards.W, 500))
+        colours = [c for _n, c in edge.getcolors(maxcolors=edge.width * edge.height)]
+        assert all(min(c) < 150 for c in colours), name      # grass and markings only: nothing near white
 
 
 def test_a_club_with_no_colours_or_bad_ones_still_gets_a_card(tmp_path):
-    cards.assigned_card(tmp_path / "none.png", "Nameless Town", None, None)
+    cards.club_card(tmp_path / "none.png", "Nameless Town", None, None, "Not in the record this season.", [], 1959, 2027)
     cards.club_card(tmp_path / "bad.png", "Odd FC", "not-a-colour", "#12", "Last seen twenty-fourth in League Two, 1961/62.",
                     [(1962, 4)], 1959, 2027)
     _check(tmp_path / "none.png")
@@ -81,4 +90,4 @@ def test_the_icons_are_the_sizes_a_phone_asks_for(tmp_path):
     for name, size in (("apple-touch-icon.png", 180), ("icon-192.png", 192), ("icon-512.png", 512)):
         img = Image.open(tmp_path / name).convert("RGB")
         assert img.size == (size, size)
-        assert img.getpixel((2, 2)) == _rgb(brand.INK)             # full bleed: the phone rounds the corners
+        assert img.getpixel((2, 2)) == _rgb(brand.DEEP)            # full bleed: the phone rounds the corners

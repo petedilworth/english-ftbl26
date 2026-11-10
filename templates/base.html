@@ -20,7 +20,7 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">{% endif %}
-<meta name="theme-color" content="{{ brand.paper }}">
+<meta name="theme-color" content="{{ brand.theme }}">
 <link rel="icon" href="{{ root }}/static/favicon.svg" type="image/svg+xml">
 {% if has_icons %}<link rel="apple-touch-icon" href="{{ root }}/apple-touch-icon.png">
 <link rel="manifest" href="{{ root }}/site.webmanifest">{% endif %}
@@ -35,39 +35,47 @@
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to the page</a>
+{# The pitch: the green at the top of every page. A page may put more on it
+   through the `pitch` block - the home page puts its hero there - and
+   everything after it is the light page. #}
+<div class="pitch">
 <header class="site-header">
   <a class="brand" href="{{ root }}/index.html" aria-label="{{ brand.name }}: home">{% include "_mark.svg" %}<span class="brand-name">{{ brand.name }}<span class="brand-stop">.</span></span></a>
   <nav aria-label="Main">
-    {# Home first, where this week lives; then the visitor's own club, the
-       story and the visual tools. On a phone the row has room for four, so
-       Home, Matrix and Map step down into Browse (the mark is already a
-       way home). Browse keeps the rest, the theme tables among them: they
-       sit inside the story's "Why" section rather than beside it. #}
+    {# Home first, where this week lives; then the story, the visual tools
+       and the index of everything. On a phone the row has room for four,
+       so Home, Matrix and Map step down into Browse (the mark is already
+       a way home). Browse keeps the indexes and the tools people ask for
+       by name; "All pages" is the list with nothing left off it. #}
     <a class="nav-wide" href="{{ root }}/index.html">Home</a>
-    {% if has_allocation %}<a class="nav-club" id="nav-club" href="{{ root }}/allocation/index.html">Your club</a>{% endif %}
     <a href="{{ root }}/insights/index.html">The story</a>
     {% if has_replay %}<a href="{{ root }}/replay/index.html">Replay</a>{% endif %}
     <a class="nav-wide" href="{{ root }}/matrix/index.html">Matrix</a>
     {% if has_map %}<a class="nav-wide" href="{{ root }}/map/index.html">Map</a>{% endif %}
+    <a href="{{ root }}/pages/index.html">All pages</a>
     <details class="nav-more">
       <summary>Browse</summary>
       <div class="nav-more-menu">
         <a class="nav-narrow" href="{{ root }}/index.html">Home</a>
         <a class="nav-narrow" href="{{ root }}/matrix/index.html">Matrix</a>
         {% if has_map %}<a class="nav-narrow" href="{{ root }}/map/index.html">Map</a>{% endif %}
-        {% if has_allocation %}<a href="{{ root }}/allocation/index.html">Allocation</a>{% endif %}
         <a href="{{ root }}/seasons/index.html">Seasons</a>
         <a href="{{ root }}/teams/index.html">Teams</a>
         <a href="{{ root }}/division/index.html">Divisions</a>
         <a href="{{ root }}/fixtures/index.html">Fixtures</a>
         <a href="{{ root }}/compare/index.html">Compare</a>
+        {% if has_value %}<a href="{{ root }}/insights/value/index.html">Club value</a>{% endif %}
         <a href="{{ root }}/themes/index.html">Themes</a>
         <a href="{{ root }}/digest/index.html">Emails</a>
         <a href="{{ root }}/sources/index.html">Sources</a>
+        <hr>
+        <a href="{{ root }}/pages/index.html">All pages</a>
       </div>
     </details>
   </nav>
 </header>
+{% block pitch %}{% endblock %}
+</div>
 <main id="main" class="{{ main_class | default('') }}">
 {% block content %}{% endblock %}
 {% if story_nav %}
@@ -84,7 +92,8 @@
   <p>Tiers 1–7 of English football: 1958/59 to today at the top five,
      2012/13 onwards at the sixth and seventh. Results data from
   <a href="https://www.football-data.co.uk">football-data.co.uk</a>.
-  <a href="{{ root }}/sources/index.html">Every source, page by page</a>.
+  <a href="{{ root }}/sources/index.html">Every source, page by page</a>;
+  <a href="{{ root }}/pages/index.html">every page, by type</a>.
   The writing here is <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
   and the code <a href="{{ brand.repo_url }}/blob/main/LICENSE">MIT</a>;
   data from others keeps its own terms (<a href="{{ brand.repo_url }}/blob/main/NOTICE.md">licences</a>).

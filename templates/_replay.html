@@ -1,10 +1,9 @@
 {# The Replay, as a block any page can carry. The caller sets
    replay_follow (a club id), replay_from (a season by the year it ended),
-   replay_hash (keep the view in the URL), replay_loop and replay_yours
-   (follow the visitor's assigned club) before including this; all are
-   optional. static/replay.js does the rest, and a page with
+   replay_hash (keep the view in the URL) and replay_loop before including
+   this; all are optional. static/replay.js does the rest, and a page with
    the script switched off keeps the sentence and the link to the Matrix. #}
-<section class="replay" id="{{ replay_id | default('replay') }}" data-src="{{ root }}/data/pyramid.json" data-root="{{ root }}"{% if replay_follow %} data-follow="{{ replay_follow }}"{% endif %}{% if replay_from %} data-from="{{ replay_from }}"{% endif %}{% if replay_hash %} data-hash{% endif %}{% if replay_loop %} data-loop{% endif %}{% if replay_yours %} data-yours{% endif %}>
+<section class="replay" id="{{ replay_id | default('replay') }}" data-src="{{ root }}/data/pyramid.json" data-root="{{ root }}"{% if replay_follow %} data-follow="{{ replay_follow }}"{% endif %}{% if replay_from %} data-from="{{ replay_from }}"{% endif %}{% if replay_hash %} data-hash{% endif %}{% if replay_loop %} data-loop{% endif %}>
   <div class="replay-head">
     <span class="replay-year">{{ replay_first_label }}</span>
     <p class="replay-caption">Every club in the record, {{ replay_first_label }} to {{ replay_last_label }}.</p>

@@ -1,9 +1,8 @@
 """
 The whole pyramid, season by season, as one small file for the browser.
 
-The Replay page moves every club through every season it has a row for,
-and the allocation notice draws a club's life from the same rows. Both
-need what the Matrix page has - who was where, in what order - but as
+The Replay page moves every club through every season it has a row for.
+It needs what the Matrix page has - who was where, in what order - but as
 data rather than as a table of ten thousand spans, so it is assembled
 here once and written to data/pyramid.json.
 
@@ -27,7 +26,7 @@ import aggregate
 import level as level_mod
 
 # How a season ended for a club, as the browser gets it. The order is the
-# file format: static/replay.js and static/allocation.js index into it.
+# file format: static/replay.js indexes into it.
 KINDS = ["Stayed", "Champions", "Promoted", "Play-off Promoted", "Relegated",
          "Play-off Relegated", "In progress"]
 KIND_CODE = {name: i for i, name in enumerate(KINDS)}
@@ -133,14 +132,3 @@ def assemble(conn: sqlite3.Connection, pages: set[str] | None = None) -> dict | 
         "seasons": seasons,
     }
 
-
-def history(data: dict, club: int) -> list[tuple[int, int, int, int, int, int]]:
-    """One club's rows as (season, tier, rank, division, position, kind), oldest first."""
-    out = []
-    width = data["row"]
-    for offset, flat in enumerate(data["seasons"]):
-        for i in range(0, len(flat), width):
-            if flat[i] == club:
-                out.append((data["first"] + offset, *flat[i + 1:i + width]))
-                break
-    return out

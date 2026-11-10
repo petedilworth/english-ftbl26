@@ -7,22 +7,21 @@ this site had none, so its links arrived as bare addresses. The picture
 is the first impression and often the only one, so it is drawn here, at
 build time, one PNG per page that deserves its own:
 
-    home                 this week's hero sentence, and where that club
-                         sits among the ninety-two
-    allocation           the offer: a date of birth in, a club out
-    allocation/<club>    "Assigned: Walsall" - what a shared notice shows,
-                         so the person receiving it sees the sender's club
-                         before they open anything
-    replay               the pyramid as it stands
-    team/<club>          the club, where it stands, and its tiers since
-                         the record began
+    home           this week's hero sentence, and where that club sits
+                   among the ninety-two
+    replay         the pyramid as it stands
+    team/<club>    the club, where it stands, and its tiers since the
+                   record began
+
+Every card is the pitch the site's own pages open on: mown stripes, the
+centre circle, white words, and yellow for the one that matters.
 
 WHY PILLOW AND NOT A BROWSER. A headless browser would draw these from the
 real stylesheet, and would add a browser to every build. Pillow is already
 here (matplotlib brings it), reads the site's own font file, and draws
-five hundred cards in about the time the charts take. The cost is that
+four hundred cards in about the time the charts take. The cost is that
 the layout is arithmetic rather than CSS, which is why it is kept simple:
-a few sizes of one typeface, two colours of ink, and the clubs' own.
+a few sizes of one typeface, white and one yellow, and the clubs' own.
 
 WHY THEY ARE PALETTE PNGs. Flat colour and text compress to a few
 kilobytes once the image is reduced to a palette; as truecolour the set
@@ -50,7 +49,12 @@ FONT_PATH = PROJECT_ROOT / "static" / "fonts" / "newsreader-display.woff2"
 W, H = 1200, 630          # what every large link preview is cropped to
 S = 2                     # drawn at twice the size, then scaled down
 MARGIN = 64
+STRIPE = 100              # one pass of the mower, in card pixels: twelve across
 NEUTRAL = "#b8bec6"       # a club with no colours on the register
+# What the pitch's own markings and the quiet text are drawn in: white let
+# down with grass, mixed here because Pillow draws opaque.
+MARKING = "#3f8a5a"       # the centre circle and the rules: about a fifth white
+SOFT = "#dcebe1"          # labels and small print: white, a little green in it
 
 
 def available() -> bool:
@@ -82,11 +86,18 @@ def _hex(colour: str | None, fallback: str = NEUTRAL) -> str:
 
 
 class Card:
-    """A sheet of paper at twice the size, with the few things these cards draw."""
+    """A piece of pitch at twice the size, with the few things these cards draw."""
 
     def __init__(self):
-        self.img = Image.new("RGB", (W * S, H * S), brand.PAPER)
+        self.img = Image.new("RGB", (W * S, H * S), brand.PITCH)
         self.draw = ImageDraw.Draw(self.img)
+        # The mower's stripes, then the centre circle and the halfway line
+        # behind everything else, as on the site's own pages.
+        for i in range(1, W // STRIPE + 1, 2):
+            self.draw.rectangle([i * STRIPE * S, 0, (i + 1) * STRIPE * S, H * S], fill=brand.PITCH_LIGHT)
+        cx, cy, r = W / 2, H / 2, 250
+        self.draw.ellipse([(cx - r) * S, (cy - r) * S, (cx + r) * S, (cy + r) * S], outline=MARKING, width=3 * S)
+        self.draw.line([cx * S, 0, cx * S, H * S], fill=MARKING, width=3 * S)
 
     # ── Text ──────────────────────────────────────────────────────────────
 
@@ -94,12 +105,12 @@ class Card:
         return self.draw.textlength(text, font=_font(size, weight)) / S
 
     def text(self, x: float, y: float, text: str, size: int, weight: int = 400,
-             fill: str = brand.INK, anchor: str = "ls") -> float:
+             fill: str = brand.CHALK, anchor: str = "ls") -> float:
         """Draw one run on a baseline; returns the x it ended at."""
         self.draw.text((x * S, y * S), text, font=_font(size, weight), fill=fill, anchor=anchor)
         return x + self.width(text, size, weight)
 
-    def label(self, x: float, y: float, text: str, size: int = 22, fill: str = brand.MUTED,
+    def label(self, x: float, y: float, text: str, size: int = 22, fill: str = SOFT,
               tracking: float = 0.14, weight: int = 650, right: bool = False) -> float:
         """Small capitals, letterspaced: the kicker above a headline. Pillow has no tracking, so it is done by hand."""
         text = text.upper()
@@ -163,67 +174,52 @@ class Card:
                                     outline=outline, width=int(width * S))
 
     def bead(self, x: float, y: float, r: float, a: str | None, b: str | None, ring: str | None = None):
-        """A club: a disc in its two kit colours, outlined so a white kit shows on paper."""
+        """A club: a disc in its two kit colours, outlined in white so a green kit shows on grass."""
         a = _hex(a)
         box = [(x - r) * S, (y - r) * S, (x + r) * S, (y + r) * S]
         self.draw.ellipse(box, fill=a)
         if b and _hex(b, a) != a:
             self.draw.pieslice(box, -90, 90, fill=_hex(b, a))
-        self.draw.ellipse(box, outline="#8f8a80", width=max(1, int(0.8 * S)))
+        self.draw.ellipse(box, outline=SOFT, width=max(1, int(0.8 * S)))
         if ring:
             g = r + 5
             self.draw.ellipse([(x - g) * S, (y - g) * S, (x + g) * S, (y + g) * S], outline=ring, width=int(3 * S))
 
     def mark(self, x: float, y: float, size: float = 56):
-        """The logo: four steps on a dark tile, the top one in the spot colour (static/favicon.svg)."""
+        """The logo: four steps on a dark green tile, the top one yellow (static/favicon.svg)."""
         u = size / 32
-        self.rect(x, y, size, size, brand.INK, radius=7 * u)
-        for bx, by, bw, colour in ((12, 4.4, 8, brand.SPOT), (9, 10.8, 14, brand.PAPER),
-                                   (6, 17.2, 20, brand.PAPER), (3, 23.6, 26, brand.PAPER)):
+        self.rect(x, y, size, size, brand.DEEP, radius=7 * u)
+        for bx, by, bw, colour in ((12, 4.4, 8, brand.FLAG), (9, 10.8, 14, brand.CHALK),
+                                   (6, 17.2, 20, brand.CHALK), (3, 23.6, 26, brand.CHALK)):
             self.rect(x + bx * u, y + by * u, bw * u, 4 * u, colour, radius=u)
 
     def masthead(self, y: float = MARGIN):
         """Top left: the mark and the name, as they are in the site's header."""
         self.mark(MARGIN, y, 52)
         end = self.text(MARGIN + 68, y + 39, brand.NAME, 40, 750)
-        self.text(end, y + 39, ".", 40, 750, brand.SPOT)
+        self.text(end, y + 39, ".", 40, 750, brand.FLAG)
 
     def footer(self, text: str = "English football since 1958"):
-        self.rect(MARGIN, H - 84, W - 2 * MARGIN, 1.5, brand.LINE)
+        """The touchline, and the small print under it."""
+        self.rect(MARGIN, H - 84, W - 2 * MARGIN, 2, brand.CHALK)
         self.label(MARGIN, H - 48, text, 20)
 
     def kit(self, a: str | None, b: str | None, height: float = 26):
-        """A band across the top in the club's two colours, ruled off below for the white ones."""
+        """A band across the top in the club's two colours, ruled off in white below."""
         a = _hex(a)
         self.rect(0, 0, W / 2, height, a)
         self.rect(W / 2, 0, W / 2, height, _hex(b, a))
-        self.rect(0, height, W, 2, brand.INK)
-
-    def stamp(self, text: str, cx: float, cy: float, angle: float = 7, size: int = 30):
-        """A rubber stamp: outlined, letterspaced, and not quite straight."""
-        text = text.upper()
-        gap = size * 0.14
-        tw = sum(self.width(ch, size, 800) for ch in text) + gap * (len(text) - 1)
-        pw, ph = int((tw + 44) * S), int((size + 30) * S)
-        layer = Image.new("RGBA", (pw, ph), (0, 0, 0, 0))
-        d = ImageDraw.Draw(layer)
-        d.rounded_rectangle([2 * S, 2 * S, pw - 2 * S, ph - 2 * S], radius=8 * S, outline=brand.SPOT, width=4 * S)
-        x = 22 * S
-        for ch in text:
-            d.text((x, ph / 2), ch, font=_font(size, 800), fill=brand.SPOT, anchor="lm")
-            x += (self.width(ch, size, 800) + gap) * S
-        layer = layer.rotate(angle, expand=True, resample=Image.Resampling.BICUBIC)
-        self.img.paste(layer, (int(cx * S - layer.width / 2), int(cy * S - layer.height / 2)), layer)
+        self.rect(0, height, W, 3, brand.CHALK)
 
     # ── Out ───────────────────────────────────────────────────────────────
 
     def save(self, path: Path) -> None:
         """
         Halved, reduced to a palette, written. Each step is the cheap one
-        on purpose: there are five hundred of these in a build. reduce() is
+        on purpose: there are four hundred of these in a build. reduce() is
         an exact two-by-two average, which is all a halving needs; the
         octree palette is a fifth of the time of median cut and keeps the
-        paper its colour, where max-coverage turned it white; and the
+        background its colour, where max-coverage washed it out; and the
         optimiser bought six per cent for as long as the drawing took.
         """
         path.parent.mkdir(parents=True, exist_ok=True)
@@ -244,11 +240,11 @@ def home_card(path: Path, hero: dict | None, league: list[tuple] | None = None) 
     c = Card()
     c.masthead()
     if hero:
-        blocks = [[(f"{hero['name']}.", 800, brand.INK), (hero["past"], 400, brand.INK)],
-                  [(hero["present"], 400, brand.SPOT)]]
+        blocks = [[(f"{hero['name']}.", 800, brand.CHALK), (hero["past"], 400, brand.CHALK)],
+                  [(hero["present"], 400, brand.FLAG)]]
     else:
-        blocks = [[("English football since 1958,", 800, brand.INK)],
-                  [("and where everyone has ended up.", 400, brand.SPOT)]]
+        blocks = [[("English football since 1958,", 800, brand.CHALK)],
+                  [("and where everyone has ended up.", 400, brand.FLAG)]]
     box_w, box_h = W - 2 * MARGIN, 300
     size = c.fit(blocks, box_w, box_h)
     y = 150 + size * 0.86
@@ -270,52 +266,12 @@ def home_card(path: Path, hero: dict | None, league: list[tuple] | None = None) 
             c.bead(x, base, r, a, b)
         if where:
             i, x = where
-            c.bead(x, base, r * 1.7, hero.get("colour"), hero.get("colour2"), ring=brand.INK)
+            c.bead(x, base, r * 1.7, hero.get("colour"), hero.get("colour2"), ring=brand.CHALK)
             note = f"{_ordinal(i + 1)} of {n}"
             tw = sum(c.width(ch, 18, 650) for ch in note.upper()) + 18 * 0.14 * (len(note) - 1)
-            c.label(min(max(MARGIN, x - tw / 2), W - MARGIN - tw), base - 26, note, 18, brand.INK)
+            c.label(min(max(MARGIN, x - tw / 2), W - MARGIN - tw), base - 26, note, 18, brand.CHALK)
     c.footer()
-    c.label(W - MARGIN, H - 48, "As it stands", 20, brand.SPOT, right=True)
-    c.save(path)
-
-
-def allocation_card(path: Path) -> None:
-    """The offer, with the form drawn on it: three boxes and a button are the whole instruction."""
-    c = Card()
-    c.masthead()
-    blocks = [[("A club will be assigned.", 800, brand.INK)], [("There is no appeals process.", 400, brand.SPOT)]]
-    size = c.fit(blocks, W - 2 * MARGIN, 190)
-    y = 150 + size * 0.86
-    for runs in blocks:
-        y = c.paragraph(MARGIN, y, runs, size, W - 2 * MARGIN)
-    top = 388
-    c.label(MARGIN, top - 14, "Date of birth", 20)
-    x = MARGIN
-    for text, w in (("DD", 120), ("MM", 120), ("YYYY", 170)):
-        c.rect(x, top, w, 84, brand.CARD, radius=12, outline=brand.INK, width=2.5)
-        tw = c.width(text, 36, 500)
-        c.text(x + (w - tw) / 2, top + 55, text, 36, 500, "#b9b4a8")
-        x += w + 14
-    c.rect(x + 8, top, 330, 84, brand.INK, radius=42)
-    tw = c.width("Assign a club", 34, 650)
-    c.text(x + 8 + (330 - tw) / 2, top + 53, "Assign a club", 34, 650, brand.PAPER)
-    c.footer("One date of birth. One club. For life.")
-    c.save(path)
-
-
-def assigned_card(path: Path, name: str, a: str | None, b: str | None) -> None:
-    """What a shared notice shows: the sender's club, stamped, and the rule."""
-    c = Card()
-    c.kit(a, b)
-    c.masthead(MARGIN + 6)
-    c.label(MARGIN, 196, "Notice of allocation", 22)
-    c.text(MARGIN, 250, "Someone you know has been assigned", 38, 400, brand.MUTED)
-    blocks = [[(f"{name}.", 800, brand.INK)]]
-    size = c.fit(blocks, W - 2 * MARGIN, 150, sizes=(132, 120, 108, 96, 86, 76, 68, 60, 54))
-    y = c.paragraph(MARGIN, 262 + size * 0.9, blocks[0], size, W - 2 * MARGIN, leading=1.0)
-    c.paragraph(MARGIN, y + 8, [("There is no appeals process.", 400, brand.SPOT)], 52, W - 2 * MARGIN)
-    c.stamp("Allocated", W - MARGIN - 130, 112)
-    c.footer("Which club do you get?")
+    c.label(W - MARGIN, H - 48, "As it stands", 20, brand.FLAG, right=True)
     c.save(path)
 
 
@@ -324,8 +280,8 @@ def replay_card(path: Path, rows: list[list[tuple]], seasons: int, clubs: int) -
     c = Card()
     c.masthead()
     y = 150 + 84 * 0.86
-    y = c.paragraph(MARGIN, y, [("The Replay.", 800, brand.INK)], 84, 520)
-    c.paragraph(MARGIN, y + 4, [(f"{seasons} seasons and {clubs} clubs, every one a dot in its own colours.", 400, brand.INK)],
+    y = c.paragraph(MARGIN, y, [("The Replay.", 800, brand.CHALK)], 84, 520)
+    c.paragraph(MARGIN, y + 4, [(f"{seasons} seasons and {clubs} clubs, every one a dot in its own colours.", 400, brand.CHALK)],
                 40, 470, leading=1.14)
     widest = max((len(r) for r in rows), default=1)
     pitch = min(24.0, 560 / widest, 420 / max(1, len(rows)))
@@ -345,12 +301,12 @@ def club_card(path: Path, name: str, a: str | None, b: str | None, where: str,
     c = Card()
     c.kit(a, b)
     c.masthead(MARGIN + 6)
-    blocks = [[(f"{name}.", 800, brand.INK)]]
+    blocks = [[(f"{name}.", 800, brand.CHALK)]]
     size = c.fit(blocks, W - 2 * MARGIN, 130, sizes=(116, 104, 94, 84, 76, 68, 60, 54))
     y = c.paragraph(MARGIN, 150 + size * 0.9, blocks[0], size, W - 2 * MARGIN, leading=1.0)
     # paragraph() hands back the next baseline at the headline's own size;
     # the line under it is a third of that size and sits closer.
-    y = c.paragraph(MARGIN, y - size + 66, [(where, 400, brand.SPOT)], 42, W - 2 * MARGIN, leading=1.1)
+    y = c.paragraph(MARGIN, y - size + 66, [(where, 400, brand.FLAG)], 42, W - 2 * MARGIN, leading=1.1)
 
     # Tier by season: up is up, one step a division, gaps where the record has none.
     if history and last > first:
@@ -363,20 +319,20 @@ def club_card(path: Path, name: str, a: str | None, b: str | None, where: str,
         def sy(tier): return top + (tier - 1) / (deepest - 1) * (bottom - top)
 
         for tier in range(1, deepest + 1):
-            c.rect(left, sy(tier), right - left, 1, brand.LINE)
-            c.text(MARGIN, sy(tier) + 6, str(tier), 18, 500, brand.MUTED)
+            c.rect(left, sy(tier), right - left, 1.5, MARKING)
+            c.text(MARGIN, sy(tier) + 6, str(tier), 18, 500, SOFT)
         prev = None
         for season, tier in history:
             x0, x1, yy = sx(season), sx(season) + step, sy(tier)
             if prev and prev[0] == season - 1 and prev[1] != tier:
-                c.draw.line([x0 * S, sy(prev[1]) * S, x0 * S, yy * S], fill=brand.INK, width=int(3.5 * S))
-            c.draw.line([x0 * S, yy * S, x1 * S, yy * S], fill=brand.INK, width=int(3.5 * S))
+                c.draw.line([x0 * S, sy(prev[1]) * S, x0 * S, yy * S], fill=brand.CHALK, width=int(3.5 * S))
+            c.draw.line([x0 * S, yy * S, x1 * S, yy * S], fill=brand.CHALK, width=int(3.5 * S))
             prev = (season, tier)
         if prev:
             x, yy = sx(prev[0]) + step, sy(prev[1])
-            c.draw.ellipse([(x - 8) * S, (yy - 8) * S, (x + 8) * S, (yy + 8) * S], fill=brand.SPOT)
+            c.draw.ellipse([(x - 8) * S, (yy - 8) * S, (x + 8) * S, (yy + 8) * S], fill=brand.FLAG)
     c.footer(f"{first - 1}/{first % 100:02d} to {last - 1}/{last % 100:02d}")
-    c.label(W - MARGIN, H - 48, "As it stands", 20, brand.SPOT, right=True)
+    c.label(W - MARGIN, H - 48, "As it stands", 20, brand.FLAG, right=True)
     c.save(path)
 
 
@@ -395,13 +351,13 @@ def write_icons(out_dir: Path) -> None:
     put there. Full-bleed, because iOS rounds the corners itself.
     """
     for name, size in (("apple-touch-icon.png", 180), ("icon-192.png", 192), ("icon-512.png", 512)):
-        big = Image.new("RGB", (size * 4, size * 4), brand.INK)
+        big = Image.new("RGB", (size * 4, size * 4), brand.DEEP)
         d = ImageDraw.Draw(big)
         u = size * 4 / 32
         inset = 3.2   # the steps drawn a little smaller than on the tile, clear of the rounded mask
         k = (32 - 2 * inset) / 32
-        for bx, by, bw, colour in ((12, 4.4, 8, brand.SPOT), (9, 10.8, 14, brand.PAPER),
-                                   (6, 17.2, 20, brand.PAPER), (3, 23.6, 26, brand.PAPER)):
+        for bx, by, bw, colour in ((12, 4.4, 8, brand.FLAG), (9, 10.8, 14, brand.CHALK),
+                                   (6, 17.2, 20, brand.CHALK), (3, 23.6, 26, brand.CHALK)):
             x0, y0 = (inset + bx * k) * u, (inset + by * k) * u
             d.rounded_rectangle([x0, y0, x0 + bw * k * u, y0 + 4 * k * u], radius=k * u, fill=colour)
         big.resize((size, size), Image.Resampling.LANCZOS).save(out_dir / name, optimize=True)

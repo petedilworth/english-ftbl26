@@ -19,6 +19,10 @@ def _token(name):
 def test_the_stylesheet_and_the_cards_use_the_same_colours():
     # The cards are drawn by Pillow, which cannot read a stylesheet, so the
     # values exist twice. This is what stops them drifting.
+    assert _token("pitch") == brand.PITCH
+    assert _token("pitch-light") == brand.PITCH_LIGHT
+    assert _token("pitch-deep") == brand.DEEP
+    assert _token("flag") == brand.FLAG
     assert _token("bg") == brand.PAPER
     assert _token("ink") == brand.INK
     assert _token("muted") == brand.MUTED
@@ -26,8 +30,37 @@ def test_the_stylesheet_and_the_cards_use_the_same_colours():
     assert _token("spot") == brand.SPOT
     assert _token("accent") == brand.LINK
     mark = (ROOT / "static" / "favicon.svg").read_text()
-    assert brand.INK in mark and brand.SPOT in mark and brand.PAPER in mark
+    assert brand.DEEP in mark and brand.FLAG in mark and brand.CHALK in mark
     assert (ROOT / "templates" / "_mark.svg").read_text().count("<rect") == mark.count("<rect")
+    assert brand.DEEP in (ROOT / "templates" / "_mark.svg").read_text()
+
+
+def _contrast(a, b):
+    def lum(h):
+        parts = [int(h[i:i + 2], 16) / 255 for i in (1, 3, 5)]
+        r, g, bl = (c / 12.92 if c <= 0.03928 else ((c + 0.055) / 1.055) ** 2.4 for c in parts)
+        return 0.2126 * r + 0.7152 * g + 0.0722 * bl
+    hi, lo = sorted((lum(a), lum(b)), reverse=True)
+    return (hi + 0.05) / (lo + 0.05)
+
+
+def test_the_palette_can_be_read():
+    """
+    A green theme is only worth having if the words on it can be read.
+    4.5:1 is the mark for ordinary text and 3:1 for headlines; the yellow
+    is held to the headline mark because that is the only size it is used
+    at, and the test says so in case someone uses it smaller.
+    """
+    for stripe in (brand.PITCH, brand.PITCH_LIGHT):
+        assert _contrast(brand.CHALK, stripe) >= 4.5, "white words on the grass"
+        assert _contrast(brand.FLAG, stripe) >= 3.0, "the yellow headline on the grass"
+    assert _contrast(brand.FLAG, brand.PITCH_LIGHT) < 4.5, "if this ever passes, the yellow may be used small"
+    for paper in (brand.PAPER, brand.CARD):
+        assert _contrast(brand.INK, paper) >= 7
+        assert _contrast(brand.MUTED, paper) >= 4.5
+        assert _contrast(brand.LINK, paper) >= 4.5
+        assert _contrast(brand.SPOT, paper) >= 4.5
+    assert _contrast(brand.CHALK, brand.DEEP) >= 7
 
 
 def test_a_page_has_one_address_and_it_is_the_one_a_person_would_copy():

@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>All pages</h1>
+<p class="subtitle">Every type of page on the site: {{ kinds }} kinds, {{ total }} pages. The list is made from what the last build wrote, so a page cannot exist and be missing from it.</p>
+
+<input class="search-input" type="search" data-live-filter placeholder="Find a page…" autocomplete="off" aria-label="Find a page">
+
+{# One item per kind of page. data-name is what the box above matches:
+   the title, the line under it and any other words people use for it. #}
+<div class="searchable">
+{% for section in sections %}
+<h2 class="band">{{ section.name }}</h2>
+<ul class="page-index">
+  {% for e in section.entries %}
+  <li data-name="{{ e.search }}">
+    <a class="page-index-title" href="{{ root }}/{{ e.path }}">{{ e.title }}</a>
+    <span class="page-index-sub">{{ e.sub }}</span>
+    {% if e.count %}
+    <span class="page-index-count">
+      {% if e.each == "page" %}Plus {{ e.count }} more page{{ "s" if e.count != 1 }} in the same set, reached from the first.
+      {% else %}Plus {{ e.count }} page{{ "s" if e.count != 1 }}, one for each {{ e.each }}{% if e.example %}: for example, <a href="{{ root }}/{{ e.example.path }}">{{ e.example.name }}</a>{% endif %}.{% endif %}
+    </span>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endfor %}
+{% if others %}
+{# Pages no kind in src/pageindex.py claims. Listed anyway, so nothing is hidden; a test asks for them to be given a kind. #}
+<h2 class="band">{{ elsewhere }}</h2>
+<ul class="page-index">
+  {% for o in others %}
+  <li data-name="{{ o.search }}"><a class="page-index-title" href="{{ root }}/{{ o.path }}">{{ o.title }}</a><span class="page-index-sub">{{ o.path }}</span></li>
+  {% endfor %}
+</ul>
+{% endif %}
+</div>
+
+<script src="{{ root }}/static/search.js"></script>
+{% endblock %}

@@ -39,8 +39,6 @@
  *   data-from     the season (by the year it ended) to start at
  *   data-hash     keep the followed club and the season in the URL
  *   data-loop     start again a few seconds after reaching the present
- *   data-yours    follow the club the allocation assigned this visitor,
- *                 if it has assigned one and nothing else was asked for
  */
 (function () {
   "use strict";
@@ -160,14 +158,6 @@
     }
     var startIndex = clamp(fromSeason - data.first, 0, prep.n - 1);
     t = startIndex;
-    if (!startFollow && root.hasAttribute("data-yours")) {
-      // The allocation page keeps the club it assigned (never the date).
-      // Shared storage is not trusted: the id has to be one of ours.
-      try {
-        var yours = JSON.parse(localStorage.getItem("ais.club") || "null");
-        if (yours && byId[yours.id] !== undefined) startFollow = yours.id;
-      } catch (e) { /* private mode, or not JSON */ }
-    }
     if (startFollow && byId[startFollow] !== undefined) follow = byId[startFollow];
 
     if (elList) {

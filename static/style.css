@@ -13,16 +13,21 @@
 }
 
 :root {
-  /* Paper, ink and one spot colour. src/brand.py holds the same values
-     for the link preview cards, and a test keeps the two in step. */
+  /* A football pitch on top, a light page under it. src/brand.py holds
+     the same values for the link preview cards, and a test keeps the two
+     in step. */
+  --pitch: #1b6b37;        /* the grass, and the darker of the mower's two stripes */
+  --pitch-light: #1f7740;  /* the lighter stripe. White text is 5.6:1 on it, 6.3:1 on the other */
+  --pitch-deep: #0f4226;   /* the logo's tile, and a button being pressed */
+  --flag: #ffe169;         /* corner-flag yellow: the present tense, on the pitch only, and only
+                              at headline size - it is 4.3:1 on the lighter stripe */
   --ink: #15181c;
-  --muted: #5d6672;
-  --line: #e6e1d6;
-  --accent: #1d4f91;   /* links, and anything that can be pressed */
-  --spot: #cc3a1a;     /* vermillion: the present tense, wherever it appears. 4.8:1 on the
-                          paper, so it can be small text as well as a headline. */
-  --bg: #fbf9f4;
-  --bg-soft: #ffffff;  /* cards sit on the paper like index cards */
+  --muted: #5a655d;
+  --line: #dfe5d9;
+  --accent: #14633a;   /* links, and anything that can be pressed */
+  --spot: #1b6b37;     /* the highlight on the light page: the pitch's own green, 5.9:1 on the paper */
+  --bg: #f7f9f4;
+  --bg-soft: #ffffff;  /* cards sit on the page like index cards */
   --up: #1a7f3c;
   --down: #b3261e;
   --story: #8a3ffc;   /* theme event markers — distinct from promotion/relegation */
@@ -68,7 +73,9 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-::selection { background: #f6d5c8; }
+::selection { background: #cfe6d5; }
+/* Sliders and tick boxes take the pitch's green rather than the browser's blue. */
+input { accent-color: var(--pitch); }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
 .skip-link {
@@ -78,57 +85,58 @@ body {
 }
 .skip-link:focus { top: 8px; }
 
+/* ── The pitch ────────────────────────────────────────────────────────────
+   The top of every page: mown stripes, a white line near the bottom edge
+   for the touchline, and white words on the grass. On the home page the
+   hero sits on the same piece of turf (.hero-band); everywhere else the
+   pitch is the header and nothing more, because below it people read
+   tables, and nobody reads a table off a lawn. */
+.pitch {
+  color: #fff;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)) left 0 bottom 7px / 100% 2px no-repeat,
+    repeating-linear-gradient(90deg, var(--pitch) 0 84px, var(--pitch-light) 84px 168px);
+}
+.pitch :focus-visible { outline-color: #fff; }
+
 .site-header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 8px 20px;
-  padding: 12px 16px;
-  border-bottom: 1px solid var(--line);
-  background: var(--bg);
+  padding: 12px 16px 20px;
 }
-.brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; }
+.brand { display: inline-flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; }
 .brand-mark { display: block; flex: 0 0 auto; }
 .brand-name { font-family: var(--serif); font-weight: 750; font-size: 22px; letter-spacing: -0.015em; line-height: 1; white-space: nowrap; }
-.brand-stop { color: var(--spot); }
+.brand-stop { color: var(--flag); }
 .site-header nav { display: flex; gap: 4px 18px; flex-wrap: wrap; align-items: center; }
-.site-header nav a { color: var(--muted); text-decoration: none; font-size: 14px; padding: 6px 0; }
-.site-header nav a:hover { color: var(--ink); }
-/* The visitor's own club, once the process has assigned one: nav.js swaps
-   the label for the club's name and sets the two kit colours. */
-.site-header nav a.nav-club {
-  color: var(--ink); font-weight: 600; white-space: nowrap;
-  display: inline-block; max-width: 11.5em; overflow: hidden; text-overflow: ellipsis; vertical-align: bottom;
-}
-.nav-club::before {
-  content: ""; display: inline-block; width: 9px; height: 9px; border-radius: 50%;
-  margin-right: 6px; vertical-align: 0;
-  background: linear-gradient(90deg, var(--club-a, var(--spot)) 50%, var(--club-b, var(--spot)) 50%);
-  box-shadow: 0 0 0 1px rgba(21, 24, 28, 0.25);
-}
+.site-header nav a { color: rgba(255, 255, 255, 0.92); text-decoration: none; font-size: 14px; padding: 6px 0; }
+.site-header nav a:hover { color: #fff; text-decoration: underline; text-underline-offset: 5px; }
 .nav-narrow { display: none; }
 @media (max-width: 620px) {
-  .site-header { padding: 10px 16px 6px; }
+  .site-header { padding: 10px 16px 16px; }
   .site-header nav { width: 100%; justify-content: space-between; gap: 4px 14px; }
   .nav-wide { display: none; }
   .nav-narrow { display: block; }
 }
 
 /* "Browse" disclosure — the one-dimensional index pages, kept a click away
-   so the header leads with the views that actually get used. */
+   so the header leads with the views that actually get used. The menu
+   itself is a white card: it hangs over the page, not the pitch. */
 .nav-more { position: relative; }
 .nav-more > summary {
   list-style: none;
   cursor: pointer;
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.92);
   font-size: 14px;
   padding: 6px 0;
 }
 .nav-more > summary::-webkit-details-marker { display: none; }
 .nav-more > summary::after { content: " ›"; display: inline-block; transform: rotate(90deg); }
 .nav-more[open] > summary,
-.nav-more > summary:hover { color: var(--ink); }
+.nav-more > summary:hover { color: #fff; }
 .nav-more-menu {
   position: absolute;
   right: 0;
@@ -137,14 +145,17 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2px;
-  min-width: 160px;
+  min-width: 170px;
   padding: 8px 14px;
   background: var(--bg-soft);
   border: 1px solid var(--line);
   border-radius: 10px;
   box-shadow: var(--shadow);
 }
-.site-header .nav-more-menu a { padding: 7px 0; font-size: 15px; }
+.site-header .nav-more-menu a { padding: 7px 0; font-size: 15px; color: var(--ink); }
+.site-header .nav-more-menu a:hover { color: var(--accent); text-decoration: none; }
+.nav-more-menu :focus-visible { outline-color: var(--accent); }
+.nav-more-menu hr { width: 100%; border: 0; border-top: 1px solid var(--line); margin: 4px 0; }
 
 main { max-width: 860px; margin: 0 auto; padding: 20px 16px 48px; }
 /* Pages whose content is inherently wide (the matrix) opt out of the
@@ -1114,15 +1125,33 @@ tr.wages-over td:nth-child(7) { font-weight: 600; }
 .yoyo-pair > div { min-width: 0; }
 @media (max-width: 700px) { .giants-speed td { white-space: normal; } .giants-bar { display: none; } }
 
-/* Home: the hero sentence, this week's lines, the collapsed divisions */
-.hero { display: grid; grid-template-columns: minmax(0, 1fr) 260px; gap: 24px; align-items: end; padding: 10px 0 24px; border-bottom: 1px solid var(--line); margin-bottom: 8px; }
+/* Home: the hero sentence on the pitch, this week's lines, the collapsed divisions.
+   The band carries the centre circle and the halfway line, faint enough
+   to sit behind a headline. */
+.hero-band { position: relative; overflow: hidden; }
+.hero-band::before {
+  content: ""; position: absolute; left: 50%; top: 50%;
+  width: min(78vw, 470px); aspect-ratio: 1; transform: translate(-50%, -50%);
+  border: 2px solid rgba(255, 255, 255, 0.17); border-radius: 50%;
+}
+.hero-band::after {
+  content: ""; position: absolute; left: 50%; top: 0; bottom: 9px; width: 2px; margin-left: -1px;
+  background: rgba(255, 255, 255, 0.17);
+}
+.hero {
+  position: relative; z-index: 1; max-width: 860px; margin: 0 auto; padding: 16px 16px 44px;
+  display: grid; grid-template-columns: minmax(0, 1fr) 260px; gap: 24px; align-items: end;
+}
 .kicker { font-size: 11px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin: 0 0 8px; }
-.hero-line { font-size: clamp(31px, 6.6vw, 54px); line-height: 1.04; font-weight: 400; letter-spacing: -.018em; margin: 0; text-wrap: balance; }
-.hero-line a { color: var(--ink); font-weight: 800; text-decoration: none; }
+.pitch .kicker { color: rgba(255, 255, 255, 0.92); }
+.hero-line { font-size: clamp(31px, 6.6vw, 54px); line-height: 1.04; font-weight: 400; letter-spacing: -.018em; margin: 0; text-wrap: balance; color: #fff; }
+.hero-line a { color: #fff; font-weight: 800; text-decoration: none; }
 .hero-line a:hover { text-decoration: underline; text-decoration-thickness: 2px; }
 .hero-now { color: var(--spot); }
-.hero-sub { color: var(--muted); font-size: 15px; margin: 12px 0 0; max-width: 46ch; }
-.hero-card { border: 1px solid var(--line); border-radius: 10px; overflow: hidden; min-width: 0; background: var(--bg-soft); box-shadow: var(--shadow); }
+.pitch .hero-now { color: var(--flag); }
+.hero-sub { color: rgba(255, 255, 255, 0.94); font-size: 15px; margin: 12px 0 0; max-width: 46ch; }
+.hero-sub a { color: #fff; }
+.hero-card { border: 1px solid rgba(255, 255, 255, 0.6); border-radius: 10px; overflow: hidden; min-width: 0; background: var(--bg-soft); color: var(--ink); box-shadow: 0 6px 22px rgba(8, 40, 20, 0.28); }
 .hero-card .kit { height: 8px; display: grid; grid-template-columns: 1fr 1fr; border-bottom: 1px solid var(--line); }
 .hero-card svg { width: 100%; height: auto; display: block; padding: 8px 8px 0; }
 .spark-grid { stroke: var(--line); }
@@ -1143,10 +1172,10 @@ tr.wages-over td:nth-child(7) { font-weight: 600; }
 .form i { font-style: normal; font-weight: 700; letter-spacing: .08em; }
 .form .f-w { color: var(--up); } .form .f-l { color: var(--down); }
 /* On a phone the card lies on its side - the line on the left, the form
-   beside it - because the date-of-birth boxes below have to be on the
-   first screen, and a tall card was what pushed them off it. */
+   beside it - so the sentence, the card and the top of the Replay all
+   fit on the first screen. */
 @media (max-width: 640px) {
-  .hero { grid-template-columns: minmax(0, 1fr); gap: 14px; padding: 6px 0 16px; }
+  .hero { grid-template-columns: minmax(0, 1fr); gap: 14px; padding: 8px 16px 34px; }
   .hero-card { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); align-items: center; }
   .hero-card .kit { grid-column: 1 / -1; height: 6px; }
   .hero-card svg { padding: 6px 0 4px 6px; }
@@ -1154,18 +1183,6 @@ tr.wages-over td:nth-child(7) { font-weight: 600; }
   .hero-sub { font-size: 14px; margin-top: 10px; }
 }
 
-/* Home: the allocation, as a box of its own directly under the hero. */
-.home-alloc { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 8px 28px; align-items: center; padding: 22px 0 20px; border-bottom: 1px solid var(--line); }
-.home-alloc h2 { font-size: clamp(24px, 4.6vw, 32px); font-weight: 400; line-height: 1.1; margin: 0 0 8px; }
-.home-alloc-text p:last-child { color: var(--muted); font-size: 15px; margin: 0; max-width: 44ch; }
-.home-alloc .alloc-form { margin: 0; }
-@media (max-width: 720px) {
-  .home-alloc { grid-template-columns: minmax(0, 1fr); padding: 16px 0 18px; }
-  .home-alloc .alloc-form { margin-top: 4px; }
-  /* The form says what it wants; the paragraph is for a screen with room. */
-  .home-alloc-text p:last-child { display: none; }
-  .home-alloc h2 { margin-bottom: 4px; }
-}
 .journey-chips { margin-top: 2px; }
 
 h2.band { margin: 26px 0 2px; }
@@ -1196,7 +1213,7 @@ details.division .table-scroll { margin-top: 8px; }
 .story-tile .fig { font-size: 24px; font-weight: 800; line-height: 1.1; letter-spacing: -.01em; }
 .story-tile .fig small { font-size: 11px; font-weight: 500; color: var(--muted); letter-spacing: 0; }
 .story-tile .live { font-size: 12.5px; margin-top: 4px; padding-top: 6px; border-top: 1px dashed var(--line); }
-.story-tile .live::before { content: "This week"; font-size: 10px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: #c4521f; margin-right: 6px; }
+.story-tile .live::before { content: "This week"; font-size: 10px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--spot); margin-right: 6px; }
 .reference { font-size: 13px; color: var(--muted); padding-top: 12px; border-top: 1px solid var(--line); line-height: 2; }
 .story-nav-label { font-size: 10.5px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-right: 6px; }
 .story-nav { margin-top: 36px; padding-top: 14px; border-top: 1px solid var(--line); font-size: 14px; }
@@ -1240,9 +1257,9 @@ details.division .table-scroll { margin-top: 8px; }
 .replay-play {
   flex: 0 0 auto; width: 44px; height: 44px; border-radius: 50%; border: 0; padding: 0;
   display: grid; place-items: center; cursor: pointer;
-  background: var(--ink); color: var(--bg);
+  background: var(--pitch); color: #fff;
 }
-.replay-play:hover { background: var(--spot); }
+.replay-play:hover { background: var(--pitch-deep); }
 .replay-play svg { fill: currentColor; display: block; }
 .replay .icon-pause, .replay.is-playing .icon-play { display: none; }
 .replay.is-playing .icon-pause { display: block; }
@@ -1273,116 +1290,35 @@ details.division .table-scroll { margin-top: 8px; }
    somewhere. 44px tall, because a thumb is. */
 .btn {
   display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 18px;
-  border: 1.5px solid var(--ink); border-radius: 999px; background: transparent; color: var(--ink);
+  border: 1.5px solid var(--pitch); border-radius: 999px; background: transparent; color: var(--accent);
   font: 600 15px/1 var(--sans); cursor: pointer; text-decoration: none; white-space: nowrap;
 }
-.btn:hover { background: var(--ink); color: var(--bg); }
-.btn-primary { background: var(--ink); color: var(--bg); }
-.btn-primary:hover { background: var(--spot); border-color: var(--spot); color: #fff; }
+.btn:hover { background: var(--pitch); color: #fff; }
+.btn-primary { background: var(--pitch); color: #fff; }
+.btn-primary:hover { background: var(--pitch-deep); border-color: var(--pitch-deep); color: #fff; }
 .btn[disabled] { opacity: 0.5; cursor: progress; }
 .btn[hidden] { display: none; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 0; }
 
-/* ── The allocation ───────────────────────────────────────────────────────
-   A form with three boxes, and the notice it produces. The notice is laid
-   out to survive being screenshotted on a phone: one column, the club's
-   name as large as it will go, nothing that needs the page around it. */
-.alloc-title { font-size: clamp(30px, 6.4vw, 48px); font-weight: 400; line-height: 1.08; margin: 0 0 10px; }
-.alloc-title a { color: inherit; font-weight: 800; text-decoration: none; }
-.alloc-title a:hover { text-decoration: underline; text-decoration-thickness: 2px; }
-.alloc-lede { font-family: var(--serif); font-size: clamp(19px, 4.6vw, 24px); line-height: 1.2; margin: 0 0 10px; }
-
-.alloc-form {
-  margin: 18px 0 10px; padding: 16px 16px 14px; max-width: 560px;
-  border: 1.5px solid var(--ink); border-radius: 12px; background: var(--bg-soft); box-shadow: var(--shadow);
-}
-.alloc-form fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
-.alloc-form legend { font-size: 11px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); padding: 0; margin-bottom: 8px; }
-.alloc-fields { display: flex; flex-wrap: wrap; gap: 8px; align-items: flex-end; }
-.alloc-fields label { display: flex; flex-direction: column; gap: 3px; font-size: 12px; color: var(--muted); }
-/* 20px, and never under 16: below that iOS zooms the page on focus. */
-.alloc-fields input {
-  width: 3.3em; height: 48px; padding: 0 6px; text-align: center;
-  font: 600 20px/1 var(--sans); font-variant-numeric: tabular-nums; color: var(--ink);
-  border: 1.5px solid var(--ink); border-radius: 8px; background: var(--bg);
-}
-.alloc-fields input::placeholder { color: #a39d92; font-weight: 400; }
-.alloc-fields input:focus { outline: 3px solid #f6d5c8; border-color: var(--spot); }
-.alloc-year input { width: 4.5em; }
-.alloc-fields .btn { height: 48px; flex: 1 1 9em; }
-.alloc-error { color: var(--down); font-weight: 600; font-size: 14px; margin: 10px 0 0; }
-.alloc-privacy { color: var(--muted); font-size: 12.5px; margin: 10px 0 0; }
-.alloc-form.is-working .btn { opacity: 0.5; pointer-events: none; }
-
-.alloc-result { max-width: 560px; }
-.alloc-onfile { margin: 12px 2px; font-size: 14px; color: var(--muted); }
-.alloc-steps { list-style: none; padding: 0; margin: 14px 2px; color: var(--muted); font-size: 14px; }
-.alloc-steps li { animation: step-in 0.25s ease both; }
-@keyframes step-in { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
-
-.notice {
-  position: relative; margin: 16px 0 10px; overflow: hidden; outline: none;
-  border: 1.5px solid var(--ink); border-radius: 12px; background: var(--bg-soft); box-shadow: var(--shadow);
-  animation: notice-in 0.5s cubic-bezier(0.2, 0.7, 0.2, 1) both;
-}
-@keyframes notice-in { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
-/* The rule under the kit band is for white: half the league plays in it,
-   and on a white card a white half is no band at all. */
-.notice-kit { display: grid; grid-template-columns: 1fr 1fr; height: 10px; border-bottom: 1px solid var(--ink); }
-.notice-kit span:first-child { background: var(--club-a, #8a929c); }
-.notice-kit span:last-child { background: var(--club-b, var(--club-a, #8a929c)); }
-.notice > :not(.notice-kit) { padding-left: 18px; padding-right: 18px; }
-.notice-head { position: relative; padding-top: 14px; }
-.notice-head .kicker { margin-bottom: 4px; }
-/* Kept clear of the stamp, which sits over the top right corner. */
-.notice-born { margin: 0; color: var(--muted); font-size: 13.5px; max-width: 30em; padding-right: 96px; min-height: 2.8em; }
-.notice.is-plain .notice-born { padding-right: 0; min-height: 0; }
-.notice-stamp {
-  position: absolute; right: 14px; top: 14px; transform: rotate(-6deg); max-width: 92px; text-align: center; line-height: 1.25;
-  border: 2px solid var(--spot); border-radius: 4px; padding: 3px 8px; color: var(--spot); background: var(--bg-soft);
-  font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase;
-}
-.notice-stamp.is-dismissed { animation: stamp 0.4s cubic-bezier(0.2, 1.4, 0.4, 1) both; }
-@keyframes stamp { from { transform: rotate(-6deg) scale(2.2); opacity: 0; } to { transform: rotate(-6deg) scale(1); opacity: 1; } }
-.notice-pre { margin: 18px 0 2px; font-size: 14px; color: var(--muted); }
-/* The floor is 28px for one word: "Wolverhampton", which at 34 was a few
-   pixels wider than the card on a 320px phone. */
-.notice-name { font-size: clamp(28px, 9.4vw, 54px); font-weight: 800; line-height: 1.02; letter-spacing: -0.02em; margin: 0; overflow-wrap: anywhere; }
-.notice-name a { color: inherit; text-decoration: none; }
-.notice-name a:hover { text-decoration: underline; text-decoration-thickness: 2px; }
-.notice-rule { font-family: var(--serif); font-size: clamp(20px, 5.2vw, 27px); line-height: 1.15; color: var(--spot); margin: 4px 0 0; }
-.notice-section { margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--line); }
-.notice-section h3 { font-size: 11px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
-.notice-section p { margin: 0 0 4px; font-size: 15px; }
-.notice-section p.notice-verdict { font-family: var(--serif); font-size: 20px; line-height: 1.25; margin-top: 8px; }
-.notice-stairs { display: block; width: 100%; height: auto; margin: 2px 0 8px; }
-.stairs-grid { stroke: var(--line); stroke-width: 1; }
-.stairs-label { font: 9px var(--sans); fill: var(--muted); }
-.stairs-line { fill: none; stroke: var(--spot); stroke-width: 2.25; stroke-linejoin: round; stroke-linecap: round; }
-.stairs-start { fill: var(--ink); }
-.stairs-end { fill: var(--spot); }
-.notice-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
-.notice-actions .btn { flex: 1 1 auto; padding: 0 14px; }
-.notice-outcome { min-height: 1.5em; margin: 8px 0 0; font-size: 14px; font-weight: 600; overflow-wrap: anywhere; }
-.notice-links { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 14px; margin: 4px 0 14px; }
-.notice-more { border-top: 1px solid var(--line); padding-top: 10px; padding-bottom: 10px; }
-.notice-more summary { cursor: pointer; font-weight: 600; font-size: 14px; }
-.notice-tables { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0 18px; }
-table.notice-table tr.is-mine { background: #fff1ea; font-weight: 700; box-shadow: inset 3px 0 0 var(--spot); }
-.notice-working { padding-left: 1.2em; font-size: 14px; margin: 8px 0 4px; }
-.notice-working li { margin: 4px 0; }
-@media (prefers-reduced-motion: reduce) {
-  .notice, .alloc-steps li, .notice-stamp.is-dismissed { animation: none; }
-}
-
-/* The page a shared notice lands on: the sender's club, then the form. */
-.shared { position: relative; overflow: hidden; margin-bottom: 14px; padding: 0 18px 4px; border: 1px solid var(--line); border-radius: 12px; background: var(--bg-soft); }
-.shared .notice-kit { margin: 0 -18px 14px; }
-.alloc-method { padding-left: 1.2em; max-width: 68ch; font-size: 15px; }
-.alloc-method li { margin: 6px 0; }
+/* A page that opens on a sentence rather than a title: the 404. */
+.lead-title { font-size: clamp(30px, 6.4vw, 48px); font-weight: 400; line-height: 1.08; margin: 0 0 10px; }
 
 /* The foot of every page: the name again, then the small print. */
-.site-footer { max-width: 860px; margin: 0 auto; padding: 22px 16px 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+.site-footer { max-width: 860px; margin: 0 auto; padding: 22px 16px 40px; border-top: 3px solid var(--pitch); color: var(--muted); font-size: 13px; }
 .site-footer p { margin: 0 0 10px; max-width: 72ch; }
 .footer-brand { display: flex; align-items: center; gap: 10px; color: var(--ink); font-size: 14px; }
 .footer-brand .brand-mark { width: 22px; height: 22px; }
 .footer-brand strong { font-family: var(--serif); font-size: 17px; font-weight: 750; letter-spacing: -0.01em; }
+
+/* The index of every type of page: a name, what it is, and how many there
+   are of it. Two columns where there is room, so the names can be run down
+   like a contents page; one on a phone. */
+.page-index { list-style: none; padding: 0; margin: 0 0 6px; }
+.page-index li { display: grid; grid-template-columns: minmax(9em, 15em) minmax(0, 1fr); gap: 2px 18px; padding: 11px 0; border-bottom: 1px solid var(--line); }
+.page-index-title { font-weight: 600; font-size: 16px; }
+.page-index-sub { font-size: 14.5px; }
+.page-index-count { grid-column: 2; color: var(--muted); font-size: 13px; }
+@media (max-width: 620px) {
+  .page-index li { grid-template-columns: minmax(0, 1fr); }
+  .page-index-count { grid-column: 1; }
+}

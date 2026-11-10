@@ -1,8 +1,11 @@
 {% extends "base.html" %}
-{% block content %}
+{% block pitch %}
 {% if hero %}
-{# One sentence in the voice: the club's past, then its present. The gap does the work. #}
-<section class="hero">
+{# One sentence in the voice: the club's past, then its present. The gap
+   does the work. It sits on the pitch, under the header, on the centre
+   circle. #}
+<section class="hero-band">
+<div class="hero">
   <div class="hero-text">
     <div class="kicker">{{ current_label }}{% if hero.played %} · {{ hero.played }} game{{ "s" if hero.played != 1 }} in{% endif %}</div>
     <h1 class="hero-line"><a href="{{ root }}/team/{{ hero.club_id }}/index.html">{{ hero.name }}.</a> {{ hero.past }} <span class="hero-now">{{ hero.present }}</span></h1>
@@ -21,31 +24,20 @@
     </svg>
     {% if hero.form %}<div class="hero-form">Last {{ hero.form | length }}: <span class="form">{% for r in hero.form %}<i class="f-{{ r | lower }}">{{ r }}</i>{% endfor %}</span> · {{ hero.points_now }} pts from {{ hero.played }}</div>{% endif %}
   </div>
+</div>
 </section>
-{% else %}
+{% endif %}
+{% endblock %}
+{% block content %}
+{% if not hero %}
 <h1>{{ brand.name }}</h1>
 <p class="subtitle">Standings, stories and trajectories across Tiers 1–7 — the top five from 1958/59, the sixth and seventh from 2012/13.</p>
-{% endif %}
-
-{% if has_allocation %}
-{# The way in for someone with no club: one date, and the site is about them.
-   The form hands the date to the allocation page rather than running here. #}
-<section class="home-alloc" aria-labelledby="home-alloc-title">
-  <div class="home-alloc-text">
-    <p class="kicker">No club of your own</p>
-    <h2 id="home-alloc-title">A club will be assigned. <span class="hero-now">There is no appeals process.</span></h2>
-    <p>Give a date of birth. The process finds the league table as it stood that day and hands over one of its ninety-two clubs, with everything that has happened to it since.</p>
-  </div>
-  {% set alloc_go = root ~ "/allocation/index.html" %}
-  {% include "_allocate_form.html" %}
-</section>
 {% endif %}
 
 {% if has_replay %}
 <h2 class="band">The whole pyramid, {{ replay_first_label }} to now</h2>
 <p class="band-sub">Every club in the record as a dot in its own colours; a row is a tier and left is top. Tap a dot to follow it. <a href="{{ root }}/replay/index.html">The Replay, full size →</a></p>
 {% set replay_loop = true %}
-{% set replay_yours = true %}
 {% include "_replay.html" %}
 {% if journeys %}
 <div class="chip-row map-chips journey-chips">
@@ -111,6 +103,7 @@
 <p class="explore">
   <a href="{{ root }}/teams/index.html">Browse all {{ team_count }} clubs</a> ·
   <a href="{{ root }}/compare/index.html">Compare two clubs</a> ·
+  <a href="{{ root }}/pages/index.html">Every page, by type</a> ·
   {% if has_replay %}<a href="{{ root }}/replay/index.html">The Replay</a> · {% endif %}
   <a href="{{ root }}/matrix/index.html">The Matrix</a> ·
   {% if has_map %}<a href="{{ root }}/map/index.html">Groundhop Map</a> · {% endif %}
@@ -122,6 +115,4 @@
 
 <script src="{{ root }}/static/home-search.js"></script>
 {% if has_replay %}<script src="{{ root }}/static/replay.js"></script>{% endif %}
-{% if has_allocation %}<script src="{{ root }}/static/allocation-process.js"></script>
-<script src="{{ root }}/static/allocation.js"></script>{% endif %}
 {% endblock %}

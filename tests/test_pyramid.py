@@ -1,4 +1,4 @@
-"""The pyramid file: every club-season, flat, as the Replay and the allocation notice read it."""
+"""The pyramid file: every club-season, flat, as the Replay reads it."""
 
 import sqlite3
 import sys
@@ -16,6 +16,12 @@ def _rows(data, season):
     return [flat[i:i + w] for i in range(0, len(flat), w)]
 
 
+def _history(data, club):
+    """One club's rows as (season, tier, rank, division, position, kind), oldest first."""
+    return [(season, *row[1:]) for season in range(data["first"], data["last"] + 1)
+            for row in _rows(data, season) if row[0] == club]
+
+
 def test_a_row_is_six_numbers_and_two_lookups():
     data = pyramid.assemble(_make_db())
     assert (data["first"], data["last"], data["row"]) == (2022, 2025, 6) == (2022, 2025, len(pyramid.ROW))
@@ -26,7 +32,7 @@ def test_a_row_is_six_numbers_and_two_lookups():
     row = next(r for r in _rows(data, 2022) if r[0] == giant)
     assert row[1:3] == [1, 20] and data["divisions"][row[3]] == "League One" and row[4] == 20
     assert data["kinds"][row[5]] == "Relegated"
-    assert pyramid.history(data, giant) == [(2022, 1, 20, row[3], 20, 4), (2023, 2, 23, row[3], 23, 4),
+    assert _history(data, giant) == [(2022, 1, 20, row[3], 20, 4), (2023, 2, 23, row[3], 23, 4),
                                             (2024, 3, 10, row[3], 10, 0), (2025, 3, 8, row[3], 8, 0)]
     assert data["clubs"][giant][1] == "Giant FC" and not data["live"]
 
