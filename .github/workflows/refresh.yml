@@ -2,7 +2,7 @@ name: Refresh
 
 # Pulls the current season's results and rebuilds standings and the
 # trajectory table, then commits england.db. Runs every morning before
-# any edition sends (Editions is at 07:17 UTC), so each email reads a
+# any edition sends (Editions runs when this finishes), so each email reads a
 # database that is at most a day old.
 
 on:

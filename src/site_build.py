@@ -12,6 +12,7 @@ present. Links are relative so the site works at any base path
 
 import argparse
 import datetime
+import html as html_mod
 import json
 import logging
 import math
@@ -6479,6 +6480,32 @@ class SiteBuilder:
         "audit": ("Picker audit", "How the match-selection scorer did"),
     }
 
+    # An archived edition is the email's body and nothing else: no doctype,
+    # no viewport, no title. A phone laid it out 980px wide and shrank it
+    # until nobody could read it. The site's copy gets a page around it;
+    # the copy under content/digests/ stays exactly as sent. An outermost
+    # table wider than the screen scrolls on its own, so the page does not.
+    ARCHIVED_EMAIL_PAGE = (
+        '<!doctype html>\n<html lang="en-GB">\n<head>\n<meta charset="utf-8">\n'
+        '<meta name="viewport" content="width=device-width, initial-scale=1">\n'
+        '<title>{title} — {brand}</title>\n'
+        '<style>body{{margin:0;padding:12px 16px;background:#fff}}'
+        'img{{max-width:100%;height:auto}}'
+        'table:not(table table){{display:block;max-width:100%;overflow-x:auto}}'
+        '.back{{font:13px/1.4 system-ui,sans-serif;max-width:680px;margin:0 auto 12px}}'
+        '.back a{{color:{link}}}</style>\n</head>\n<body>\n'
+        '<p class="back"><a href="../../index.html">← Every edition</a></p>\n'
+        '{body}\n</body>\n</html>\n'
+    )
+
+    def _wrap_archived_email(self, page: Path, title: str) -> None:
+        body = page.read_text(encoding="utf-8")
+        if body.lstrip()[:15].lower().startswith(("<!doctype", "<html")):
+            return
+        page.write_text(self.ARCHIVED_EMAIL_PAGE.format(
+            title=html_mod.escape(title), brand=html_mod.escape(brand.NAME),
+            link=brand.LINK, body=body), encoding="utf-8")
+
     def build_digest_archive(self) -> None:
         archive_src = PROJECT_ROOT / "content" / "digests"
         groups = []
@@ -6505,6 +6532,9 @@ class SiteBuilder:
                         name = datetime.date.fromisoformat(item.name).strftime("%d %B %Y")
                     except ValueError:
                         name = item.name
+                    self._wrap_archived_email(
+                        self.out / "digest" / stream.name / item.name / "index.html",
+                        sub or f"{self.EDITION_LABELS.get(stream.name, (stream.name,))[0]}, {name}")
                     entries.append({"path": f"digest/{stream.name}/{item.name}/index.html",
                                     "name": name, "sub": sub})
                 if entries:

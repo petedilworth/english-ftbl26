@@ -72,7 +72,7 @@ catchment, Thursday finance and the monthly picker audit follow.
 Two workflows:
 - `.github/workflows/refresh.yml` — every morning, refreshes the current
   season's results, rebuilds standings and trajectory, commits `england.db`.
-- `.github/workflows/editions.yml` — every weekday at 07:17 UTC, runs
+- `.github/workflows/editions.yml` — after each Refresh (09:17 UTC on weekdays as a fallback), runs
   `python src/edition.py auto`. The runner looks up which edition today is
   (`WEEKDAY_EDITIONS` in `src/editions/registry.py`) and builds it, or
   exits if none is scheduled. Sends via [Resend](https://resend.com),

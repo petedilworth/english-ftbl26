@@ -201,3 +201,27 @@ def test_the_scripts_and_the_data_agree_on_the_file_format():
     words = re.search(r"var KIND_WORDS = \[(.*?)\];", replay, re.S).group(1)
     assert len(re.findall(r'"[^"]*"', words)) == len(pyramid.KINDS)
     assert pyramid.KINDS.index("In progress") == 6 and pyramid.KINDS.index("Champions") == 1
+
+
+# ── The archived emails, on a phone ───────────────────────────────────────
+
+def test_an_archived_email_is_a_page_a_phone_can_read(site):
+    """
+    The archive under content/digests/ holds each email's body exactly as
+    sent: no doctype and no viewport, so a phone drew it 980px wide and
+    shrank it. The site's copy is wrapped in a page; the source is not
+    touched.
+    """
+    pages = sorted((site / "digest").glob("*/*/index.html"))
+    assert pages, "the archive has editions and none were built"
+    for page in pages:
+        text = page.read_text(encoding="utf-8")
+        rel = page.relative_to(site).as_posix()
+        assert text.startswith("<!doctype html>"), rel
+        assert text.count("<!doctype") == 1 and text.count("<meta name=\"viewport\"") == 1, rel
+        assert '<meta name="viewport" content="width=device-width, initial-scale=1">' in text, rel
+        assert re.search(rf"<title>[^<]+ — {re.escape(brand.NAME)}</title>", text), rel
+        assert 'href="../../index.html"' in text, rel
+        source = ROOT / "content" / "digests" / page.parent.parent.name / page.parent.name / "index.html"
+        assert source.read_text(encoding="utf-8") in text, rel
+        assert "<!doctype" not in source.read_text(encoding="utf-8").lower()[:200]
