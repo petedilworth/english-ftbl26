@@ -1,6 +1,7 @@
 <!--
-Status: PAUSED before any implementation. Nothing in this plan has been
-built. Written 2026-08-25 against main @ 43adc58.
+Status: BUILT. Tiers 6 and 7 are in the database from 2012/13; how the
+data was sourced is in docs/tier-6-7.md. This plan is kept for its
+reasoning. Written 2026-08-25 against main @ 43adc58.
 
 Every file path, line number and code claim below was verified against the
 repository at that commit. They will drift — re-check before acting on
