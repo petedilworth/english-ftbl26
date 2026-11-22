@@ -14,6 +14,7 @@ national-league-north,,Bedford Town,Hednesford Town,1,0,H
 national-league-north,,Bedford Town,Hereford,1,1,D
 national-league-north,,Bedford Town,Macclesfield,0,3,A
 national-league-north,,Bedford Town,Radcliffe,1,0,H
+national-league-north,,Bedford Town,South Shields,2,4,A
 national-league-north,,Bedford Town,Spennymoor Town,3,1,H
 national-league-north,,Brackley Town,Chester,0,1,A
 national-league-north,,Brackley Town,Harborough Town,1,0,H
@@ -27,6 +28,7 @@ national-league-north,,Buxton,Brackley Town,5,0,H
 national-league-north,,Buxton,Chester,3,1,H
 national-league-north,,Buxton,Harborough Town,3,0,H
 national-league-north,,Buxton,Hebburn Town,1,2,A
+national-league-north,,Buxton,Hednesford Town,1,3,A
 national-league-north,,Buxton,Hereford,2,1,H
 national-league-north,,Buxton,Marine,4,2,H
 national-league-north,,Buxton,Merthyr Town,2,1,H
@@ -34,6 +36,7 @@ national-league-north,,Buxton,Worksop Town,2,2,D
 national-league-north,,Chester,Bedford Town,1,0,H
 national-league-north,,Chester,Hednesford Town,0,1,A
 national-league-north,,Chester,King's Lynn Town,2,0,H
+national-league-north,,Chester,Macclesfield,6,1,H
 national-league-north,,Chester,Marine,2,1,H
 national-league-north,,Chester,Merthyr Town,0,1,A
 national-league-north,,Chester,Morecambe,0,1,A
@@ -66,6 +69,7 @@ national-league-north,,Hebburn Town,Chester,1,1,D
 national-league-north,,Hebburn Town,Harborough Town,1,1,D
 national-league-north,,Hebburn Town,Hednesford Town,2,1,H
 national-league-north,,Hebburn Town,King's Lynn Town,4,2,H
+national-league-north,,Hebburn Town,Marine,2,2,D
 national-league-north,,Hebburn Town,Oxford City,0,3,A
 national-league-north,,Hebburn Town,Scarborough Athletic,0,2,A
 national-league-north,,Hebburn Town,Southport,3,1,H
@@ -80,6 +84,7 @@ national-league-north,,Hednesford Town,Southport,2,2,D
 national-league-north,,Hednesford Town,Spalding United,2,0,H
 national-league-north,,Hereford,AFC Telford United,0,1,A
 national-league-north,,Hereford,Chester,1,1,D
+national-league-north,,Hereford,Darlington,2,0,H
 national-league-north,,Hereford,Hednesford Town,0,1,A
 national-league-north,,Hereford,King's Lynn Town,0,3,A
 national-league-north,,Hereford,Marine,1,0,H
@@ -121,6 +126,7 @@ national-league-north,,Morecambe,Brackley Town,3,0,H
 national-league-north,,Morecambe,Buxton,4,0,H
 national-league-north,,Morecambe,Darlington,1,0,H
 national-league-north,,Morecambe,Hereford,2,2,D
+national-league-north,,Morecambe,King's Lynn Town,1,0,H
 national-league-north,,Morecambe,Scarborough Athletic,2,0,H
 national-league-north,,Morecambe,South Shields,0,1,A
 national-league-north,,Morecambe,Spennymoor Town,1,1,D
@@ -131,7 +137,9 @@ national-league-north,,Oxford City,Harborough Town,1,1,D
 national-league-north,,Oxford City,Macclesfield,1,3,A
 national-league-north,,Oxford City,Merthyr Town,3,0,H
 national-league-north,,Oxford City,Morecambe,1,1,D
+national-league-north,,Oxford City,Scarborough Athletic,2,1,H
 national-league-north,,Oxford City,South Shields,1,3,A
+national-league-north,,Radcliffe,AFC Telford United,2,4,A
 national-league-north,,Radcliffe,Chorley,0,3,A
 national-league-north,,Radcliffe,Darlington,0,1,A
 national-league-north,,Radcliffe,Hebburn Town,5,1,H
@@ -157,6 +165,7 @@ national-league-north,,South Shields,Southport,5,1,H
 national-league-north,,South Shields,Spalding United,1,1,D
 national-league-north,,Southport,AFC Telford United,1,2,A
 national-league-north,,Southport,Bedford Town,4,1,H
+national-league-north,,Southport,Brackley Town,1,1,D
 national-league-north,,Southport,Buxton,1,1,D
 national-league-north,,Southport,Hereford,0,1,A
 national-league-north,,Southport,Morecambe,2,1,H
@@ -167,11 +176,13 @@ national-league-north,,Spalding United,Brackley Town,2,2,D
 national-league-north,,Spalding United,Darlington,3,2,H
 national-league-north,,Spalding United,Hebburn Town,0,0,D
 national-league-north,,Spalding United,Macclesfield,0,0,D
+national-league-north,,Spalding United,Merthyr Town,2,1,H
 national-league-north,,Spalding United,Oxford City,0,1,A
 national-league-north,,Spalding United,Southport,2,0,H
 national-league-north,,Spalding United,Worksop Town,3,1,H
 national-league-north,,Spennymoor Town,Chester,0,5,A
 national-league-north,,Spennymoor Town,Chorley,2,0,H
+national-league-north,,Spennymoor Town,Harborough Town,1,1,D
 national-league-north,,Spennymoor Town,Hednesford Town,1,1,D
 national-league-north,,Spennymoor Town,Macclesfield,1,1,D
 national-league-north,,Spennymoor Town,Merthyr Town,2,1,H
@@ -181,6 +192,7 @@ national-league-north,,Spennymoor Town,Spalding United,1,3,A
 national-league-north,,Worksop Town,AFC Telford United,2,1,H
 national-league-north,,Worksop Town,Bedford Town,1,2,A
 national-league-north,,Worksop Town,Brackley Town,0,1,A
+national-league-north,,Worksop Town,Chorley,2,1,H
 national-league-north,,Worksop Town,Hereford,0,3,A
 national-league-north,,Worksop Town,King's Lynn Town,5,0,H
 national-league-north,,Worksop Town,Morecambe,2,1,H

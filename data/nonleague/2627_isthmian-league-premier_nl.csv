@@ -36,6 +36,7 @@ isthmian-league-premier,,Burgess Hill Town,Enfield Town,0,6,A
 isthmian-league-premier,,Burgess Hill Town,Leatherhead,2,2,D
 isthmian-league-premier,,Burgess Hill Town,Maldon & Tiptree,4,1,H
 isthmian-league-premier,,Burgess Hill Town,Ramsgate,2,2,D
+isthmian-league-premier,,Carshalton Athletic,Aveley,0,2,A
 isthmian-league-premier,,Carshalton Athletic,Brentwood Town,2,0,H
 isthmian-league-premier,,Carshalton Athletic,Cheshunt,4,2,H
 isthmian-league-premier,,Carshalton Athletic,Cray Wanderers,2,1,H
@@ -49,6 +50,7 @@ isthmian-league-premier,,Chatham Town,Burgess Hill Town,1,1,D
 isthmian-league-premier,,Chatham Town,Dulwich Hamlet,3,1,H
 isthmian-league-premier,,Chatham Town,Leatherhead,0,1,A
 isthmian-league-premier,,Chatham Town,Lewes,3,2,H
+isthmian-league-premier,,Chatham Town,Maldon & Tiptree,3,3,D
 isthmian-league-premier,,Chatham Town,Three Bridges,3,1,H
 isthmian-league-premier,,Chatham Town,Welling United,3,2,H
 isthmian-league-premier,,Chatham Town,Wingate & Finchley,2,3,A
@@ -65,9 +67,11 @@ isthmian-league-premier,,Cray Wanderers,Lewes,1,2,A
 isthmian-league-premier,,Cray Wanderers,St Albans City,3,3,D
 isthmian-league-premier,,Cray Wanderers,Three Bridges,2,0,H
 isthmian-league-premier,,Cray Wanderers,Welling United,4,1,H
+isthmian-league-premier,,Cray Wanderers,Whitehawk,2,1,H
 isthmian-league-premier,,Dartford,Brentwood Town,1,0,H
 isthmian-league-premier,,Dartford,Chatham Town,1,0,H
 isthmian-league-premier,,Dartford,Eastbourne Borough,4,1,H
+isthmian-league-premier,,Dartford,Leatherhead,3,0,H
 isthmian-league-premier,,Dartford,Ramsgate,1,2,A
 isthmian-league-premier,,Dartford,Three Bridges,1,0,H
 isthmian-league-premier,,Dartford,Welling United,0,3,A
@@ -81,6 +85,7 @@ isthmian-league-premier,,Dulwich Hamlet,Cheshunt,2,0,H
 isthmian-league-premier,,Dulwich Hamlet,Lewes,2,3,A
 isthmian-league-premier,,Dulwich Hamlet,Maldon & Tiptree,6,0,H
 isthmian-league-premier,,Dulwich Hamlet,Three Bridges,2,2,D
+isthmian-league-premier,,Dulwich Hamlet,Welling United,2,2,D
 isthmian-league-premier,,Eastbourne Borough,Brentwood Town,3,2,H
 isthmian-league-premier,,Eastbourne Borough,Chatham Town,2,1,H
 isthmian-league-premier,,Eastbourne Borough,Cheshunt,3,0,H
@@ -95,6 +100,7 @@ isthmian-league-premier,,Enfield Town,Chatham Town,4,0,H
 isthmian-league-premier,,Enfield Town,Cray Wanderers,3,2,H
 isthmian-league-premier,,Enfield Town,Dartford,0,2,A
 isthmian-league-premier,,Enfield Town,Dulwich Hamlet,3,0,H
+isthmian-league-premier,,Enfield Town,Eastbourne Borough,4,4,D
 isthmian-league-premier,,Enfield Town,Lewes,2,0,H
 isthmian-league-premier,,Enfield Town,Ramsgate,3,2,H
 isthmian-league-premier,,Enfield Town,St Albans City,1,2,A
@@ -131,9 +137,11 @@ isthmian-league-premier,,Ramsgate,Aveley,4,0,H
 isthmian-league-premier,,Ramsgate,Carshalton Athletic,2,3,A
 isthmian-league-premier,,Ramsgate,Cray Wanderers,2,3,A
 isthmian-league-premier,,Ramsgate,Leatherhead,1,2,A
+isthmian-league-premier,,Ramsgate,Lewes,4,1,H
 isthmian-league-premier,,Ramsgate,Maldon & Tiptree,2,0,H
 isthmian-league-premier,,Ramsgate,St Albans City,4,0,H
 isthmian-league-premier,,Ramsgate,Stanway Rovers,2,0,H
+isthmian-league-premier,,St Albans City,AFC Whyteleafe,3,4,A
 isthmian-league-premier,,St Albans City,Burgess Hill Town,3,1,H
 isthmian-league-premier,,St Albans City,Chatham Town,3,1,H
 isthmian-league-premier,,St Albans City,Lewes,0,2,A
@@ -141,6 +149,7 @@ isthmian-league-premier,,St Albans City,Stanway Rovers,4,1,H
 isthmian-league-premier,,St Albans City,Three Bridges,4,0,H
 isthmian-league-premier,,St Albans City,Welling United,1,3,A
 isthmian-league-premier,,Stanway Rovers,Aveley,0,2,A
+isthmian-league-premier,,Stanway Rovers,Burgess Hill Town,2,2,D
 isthmian-league-premier,,Stanway Rovers,Carshalton Athletic,1,2,A
 isthmian-league-premier,,Stanway Rovers,Cheshunt,3,0,H
 isthmian-league-premier,,Stanway Rovers,Enfield Town,1,2,A
@@ -150,6 +159,7 @@ isthmian-league-premier,,Stanway Rovers,Whitehawk,0,0,D
 isthmian-league-premier,,Three Bridges,Aveley,1,5,A
 isthmian-league-premier,,Three Bridges,Brentwood Town,1,1,D
 isthmian-league-premier,,Three Bridges,Carshalton Athletic,3,2,H
+isthmian-league-premier,,Three Bridges,Cheshunt,2,1,H
 isthmian-league-premier,,Three Bridges,Dartford,2,3,A
 isthmian-league-premier,,Three Bridges,Eastbourne Borough,0,2,A
 isthmian-league-premier,,Three Bridges,Enfield Town,3,3,D
@@ -173,6 +183,7 @@ isthmian-league-premier,,Whitehawk,Ramsgate,1,4,A
 isthmian-league-premier,,Whitehawk,St Albans City,1,3,A
 isthmian-league-premier,,Whitehawk,Three Bridges,3,2,H
 isthmian-league-premier,,Whitehawk,Welling United,2,2,D
+isthmian-league-premier,,Wingate & Finchley,Brentwood Town,1,2,A
 isthmian-league-premier,,Wingate & Finchley,Burgess Hill Town,1,1,D
 isthmian-league-premier,,Wingate & Finchley,Carshalton Athletic,4,2,H
 isthmian-league-premier,,Wingate & Finchley,Cray Wanderers,1,1,D
